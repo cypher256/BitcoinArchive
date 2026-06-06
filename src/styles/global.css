@@ -504,7 +504,12 @@ blockquote[data-speaker="satoshi"] {
   border: 1px solid var(--color-border);
   border-radius: 0.2em 0.8em 0.8em 0.8em;
   background: var(--color-bg-alt);
-  font-style: normal;
+  /* Italic + 0.95em is the original thread verbatim-panel look, now
+     shared by individual pages too via this single common rule. */
+  font-style: italic;
+  font-size: 0.95em;
+  /* Quote body text reads a touch softer than the surrounding prose. */
+  color: color-mix(in srgb, var(--color-text) 68%, var(--color-text-muted));
 }
 .entry-content blockquote[data-speaker="satoshi"],
 .message-body blockquote[data-speaker="satoshi"] {
@@ -961,33 +966,14 @@ th {
   margin-bottom: 0;
 }
 
-/* Nested verbatim blockquote inside a conversation message.
-   Sits one nesting level below `.message`, which now uses
-   `--color-bg-alt`. Use `--color-bg-quote` (= `--color-source-bg`)
-   so the blockquote reads as a distinct verbatim panel against
-   the bubble in both modes (light: a slightly cooler off-white
-   panel inside an off-white bubble; dark: a slightly cooler
-   navy panel inside a navy bubble). Body text uses the same
-   `--color-text` as the rest of the message — verbatim source
-   content should be at full reading contrast, the "this is
-   quoted" signal lives in the indent + left rule + bg. */
-.conversation-thread .message-body blockquote {
-  margin: 0.75em 0;
-  padding: 0.5em 1em;
-  border-left: 2px solid var(--color-border);
-  background: var(--color-bg-quote);
-  color: var(--color-text);
-  font-size: 0.95em;
-  font-style: italic;
-}
-
-/* Preserve speaker accent colour inside thread message bodies (matches
-   individual-page rule but with higher specificity to override the
-   .conversation-thread .message-body blockquote default). Applies to
-   both top-level and nested blockquotes that carry data-speaker. */
-.conversation-thread .message-body blockquote[data-speaker="satoshi"] {
-  border-left-color: var(--color-satoshi);
-}
+/* Thread message-body quotes share the SAME styling as entry-body quotes:
+   the unified speaker bubble defined by `.entry-content blockquote,
+   .message-body blockquote` above (rounded outline, alt surface, upright
+   text, data-speaker accent). Individual pages and thread pages now show
+   quotes identically — there is no thread-specific override. Previously
+   this block re-styled thread quotes as an italic verbatim panel, which
+   left individual pages (upright) and thread pages (italic) inconsistent;
+   that split was an oversight, not a deliberate design. */
 
 .conversation-thread .thread-connector {
   width: 4px;
