@@ -23,7 +23,8 @@ import BitcoinForkGenealogy from '../../components/BitcoinForkGenealogy.astro';
 import SupplyCurveComparison from '../../components/SupplyCurveComparison.astro';
 import DesignSeriesNav from '../../components/DesignSeriesNav.astro';
 import { getCollection, render } from 'astro:content';
-import { useTranslations, localePath, absoluteUrl } from '../../i18n/utils';
+import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from '../../i18n/utils';
+import { resolveAvatar } from '../../data/avatars';
 import { resolveThreadId } from '../../data/threads';
 import { renderEditorNote } from '../../lib/editor-note';
 import gitDates from '../../data/git-dates.json';
@@ -40,6 +41,9 @@ export async function getStaticPaths() {
 
 const lang = 'en';
 const t = useTranslations(lang);
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
 const { entry, hasJa } = Astro.props;
 const { Content } = await render(entry);
 
@@ -105,6 +109,11 @@ const ogModifiedTime = updatedAt ?? entry.data.date;
 // metadata cite the actual writer of the content, not the subject.
 const isEditorialType = entry.data.type === 'article' || entry.data.type === 'analysis' || entry.data.type === 'design';
 const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
+// Title avatar: Bitcoin Institute for editorial types (article /
+// analysis / design), else the byline participant. null when no
+// participant resolves (then no avatar shows before the title).
+const titleAvatarParticipant = findAuthorParticipant(entry.data.author, entry.data.participants);
+const titleAvatarSlug = isEditorialType ? 'bitcoin-institute' : titleAvatarParticipant?.slug;
 ---
 
 <BaseLayout
@@ -133,7 +142,10 @@ const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
       )}
     </nav>
     <header class="entry-header">
-      <h1>{entry.data.title}</h1>
+      <div class="entry-title-row">
+        {titleAvatarSlug && <img class="entry-author-avatar" src={resolveAvatar(titleAvatarSlug, base)} alt="" width="48" height="48" />}
+        <h1>{entry.data.title}</h1>
+      </div>
       <EntryMeta
         date={entry.data.date}
         author={entry.data.author}
@@ -296,6 +308,23 @@ const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
   .entry-header h1 {
     margin: 0 0 0.75rem;
     font-size: 2rem;
+  }
+  .entry-title-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .entry-title-row h1 {
+    margin: 0;
+  }
+  .entry-author-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: var(--color-bg-alt);
   }
   .editor-note {
     display: block;

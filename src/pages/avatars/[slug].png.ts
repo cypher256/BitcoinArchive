@@ -27,12 +27,22 @@ export const getStaticPaths: GetStaticPaths = async () => {
     }
   }
 
-  return [...nameMap.entries()]
+  const paths = [...nameMap.entries()]
     .filter(([slug]) => !hasAvatarPhoto(slug))
     .map(([slug, name]) => ({
       params: { slug },
       props: { slug, name },
     }));
+  // Bitcoin Institute is the editorial author, not a participant, so it
+  // is not in nameMap. Add it explicitly so editorial entries get the
+  // "BI" navy avatar (avatarBackground special-cases the colour).
+  if (!hasAvatarPhoto('bitcoin-institute')) {
+    paths.push({
+      params: { slug: 'bitcoin-institute' },
+      props: { slug: 'bitcoin-institute', name: 'Bitcoin Institute' },
+    });
+  }
+  return paths;
 };
 
 export const GET: APIRoute = async ({ props }) => {

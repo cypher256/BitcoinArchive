@@ -941,7 +941,7 @@ th {
 
 .conversation-thread .message-header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 0.75rem;
   flex-wrap: wrap;
   font-family: var(--font-heading);
@@ -950,6 +950,15 @@ th {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--color-border);
   color: var(--color-text-muted);
+}
+/* Author avatar before the name in each thread message header. */
+.conversation-thread .message-header .message-avatar {
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--color-bg-alt);
 }
 
 .conversation-thread .message-header .author-name {

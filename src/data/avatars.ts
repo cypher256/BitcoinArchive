@@ -72,6 +72,10 @@ export function avatarBackground(slug: string): string {
   // baked PNG can't follow the theme, but a transparent PNG + CSS fill
   // can. See global.css and src/pages/avatars/[slug].png.ts.
   if (slug === 'satoshi-nakamoto') return 'transparent';
+  // Bitcoin Institute is the editorial author (article / analysis /
+  // design). It gets the site's navy accent so editorial entries read as
+  // "by the Institute" at a glance — a special subject like Satoshi.
+  if (slug === 'bitcoin-institute') return '#1f3a5f';
   return `hsl(${avatarHue(slug)}, 42%, 42%)`;
 }
 

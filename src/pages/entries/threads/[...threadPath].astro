@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, formatDate, formatDateMaybeTime, localePath, findAuthorParticipant, absoluteUrl } from '../../../i18n/utils';
 import { deriveThreadTitle, resolveThreadId } from '../../../data/threads';
+import { resolveAvatar } from '../../../data/avatars';
 import commentariesData from '../../../data/derived-commentaries.json';
 
 const commentariesMap = commentariesData as Record<string, { id: string }[]>;
@@ -59,6 +60,9 @@ export async function getStaticPaths() {
 }
 
 const lang = 'en';
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
 const t = useTranslations(lang);
 const { messages, threadTitle, hasJa, prevThread, nextThread } = Astro.props;
 
@@ -140,10 +144,14 @@ const breadcrumbs = [
                 const isSatoshiAuthor =
                   ap?.slug === 'satoshi-nakamoto' ||
                   entry.data.author.toLowerCase() === 'satoshi nakamoto';
+                const authorSlug = ap?.slug || entry.data.author;
                 return (
-                  <a href={localePath(`/participants/${ap?.slug || entry.data.author}/`, lang)} class:list={["author-name", { satoshi: isSatoshiAuthor }]}>
-                    {displayName}{showHandle && <span class="author-handle"> ({entry.data.author})</span>}
-                  </a>
+                  <>
+                    <img class="message-avatar" src={resolveAvatar(authorSlug, base)} alt="" width="38" height="38" loading="lazy" />
+                    <a href={localePath(`/participants/${authorSlug}/`, lang)} class:list={["author-name", { satoshi: isSatoshiAuthor }]}>
+                      {displayName}{showHandle && <span class="author-handle"> ({entry.data.author})</span>}
+                    </a>
+                  </>
                 );
               })()}
               <span class="message-date">{formatDateMaybeTime(entry.data.date, lang)}</span>
