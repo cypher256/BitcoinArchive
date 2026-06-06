@@ -34,7 +34,7 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-attack-types"
 ---
 
-Responding to Trammell's detailed MITM analysis, Satoshi introduced a classification framework for attacks that would become influential in security thinking about Bitcoin:
+Responding to Trammell's detailed MITM analysis, Satoshi introduced the classification he used for attacks:
 
 <!-- quote: q1 -->
 > I group attacks into two classes:

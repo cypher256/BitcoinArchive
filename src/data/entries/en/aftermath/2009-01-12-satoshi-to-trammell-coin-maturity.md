@@ -38,11 +38,11 @@ In this reply to Dustin Trammell, Satoshi thanked him for the timestamp service 
 <!-- quote: q1 -->
 > the credit field stays 0.00 until it matures, then it'll be 50.00.
 
-Satoshi asked Trammell whether it would be clearer to leave the credit field blank until maturity instead of displaying 0.00, showing his attention to usability in the earliest days of the software.
+Satoshi asked Trammell whether it would be clearer to leave the credit field blank until maturity instead of displaying 0.00.
 
 Satoshi recommended that Trammell upgrade to version 0.1.3, noting:
 
 <!-- speaker: Satoshi Nakamoto -->
 > This version has really stabilized things.
 
-This exchange reveals Satoshi's responsiveness to early user feedback and his iterative approach to improving the software. Version 0.1.3 had fixed a communications bug that prevented nodes from properly broadcasting blocks to each other, which was critical for the network's early functioning.
+Version 0.1.3 had fixed a communications bug that prevented nodes from properly broadcasting blocks to each other, which was critical for the network's early functioning.

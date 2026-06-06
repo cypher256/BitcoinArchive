@@ -22,4 +22,4 @@ Satoshi Nakamoto registered the "bitcoin" project on SourceForge.net on November
 
 SourceForge served as the primary hosting platform for the Bitcoin project, providing source code version control (SVN), file release hosting, and the bitcoin-list mailing list. The project page at sourceforge.net/projects/bitcoin/ became the central hub for Bitcoin's early development and distribution.
 
-The registration of the project on SourceForge marked a critical step in transitioning Bitcoin from a theoretical proposal described in the whitepaper to an actual software project with public infrastructure for collaboration and distribution. All early Bitcoin releases, from v0.1 through v0.3.19, were distributed through SourceForge's file hosting system.
+Every Bitcoin release from v0.1 (January 2009) through v0.3.19 (December 2010) was distributed as a file from that SourceForge page — the project lived there for the whole of Satoshi's active development.
