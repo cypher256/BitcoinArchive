@@ -222,7 +222,7 @@ In eras 0–3, the subsidy constituted over 95% of the average block reward. Fee
 
 ## 6. The fee-only future
 
-Around the year 2140, the block subsidy reaches zero. From that point forward, miners' sole revenue source is transaction fees. Whether fees alone can sustain sufficient proof-of-work security is the subject of ongoing debate — the most important open question in Bitcoin's long-term monetary design.
+Around the year 2140, the block subsidy reaches zero. From that point forward, miners' sole revenue source is transaction fees. Whether fees alone can sustain sufficient proof-of-work security is the subject of ongoing debate — a central open question in Bitcoin's long-term monetary design.
 
 ### The security-budget question
 
