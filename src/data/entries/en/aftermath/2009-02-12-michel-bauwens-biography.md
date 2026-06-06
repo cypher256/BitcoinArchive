@@ -46,4 +46,4 @@ Satoshi replied:
 > "It's fully operational and the network is growing. If you try the software, e-mail me your Bitcoin address and I'll send you a few coins."
 
 ### Significance
-As founder of the P2P Foundation — the platform where Satoshi also announced Bitcoin through a [separate forum post](/BitcoinArchive/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/) — Bauwens provided an important early channel for Bitcoin's exposure to the broader peer-to-peer research community. His question about operational readiness prompted one of Satoshi's most direct early statements confirming that Bitcoin was fully functional and available for public use.
+Satoshi's reply was less a status report than a recruitment pitch: try the software, e-mail me your address, and I'll send you a few coins. Two days after announcing Bitcoin to the P2P research world — and on the [P2P Foundation forum](/BitcoinArchive/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/) the same week — its creator was still seeding the network one volunteer at a time, by hand.

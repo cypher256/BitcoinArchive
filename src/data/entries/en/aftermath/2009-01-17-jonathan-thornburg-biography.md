@@ -45,4 +45,4 @@ Second, botnet exploitation: "But if each machine in a million-node botnet sends
 He also raised concerns about botnets burning through pay-per-send email filters and botnet operators profiting from Bitcoin mining.
 
 ### Significance
-Thornburg's criticisms represented the mainstream security community's initial skepticism toward Bitcoin. His concerns about government regulation proved prescient — governments worldwide have since imposed extensive cryptocurrency regulations. His botnet concerns also materialized, as cryptocurrency mining malware became widespread in subsequent years. Satoshi responded to his concerns directly on the mailing list.
+Thornburg got the pressures right and the conclusion wrong. The regulation and the botnet abuse he warned of both arrived — but his bottom line, that "no major government is likely to allow Bitcoin in its present form to operate on a large scale," did not. Bitcoin grew into the large-scale system he doubted governments would tolerate, regulation and all.

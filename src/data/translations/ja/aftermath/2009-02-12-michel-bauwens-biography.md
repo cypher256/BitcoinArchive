@@ -47,4 +47,4 @@ translationStatus: complete
 > 「完全に稼働しており、ネットワークは成長している。ソフトウェアを試してくれれば、あなたのビットコインアドレスにコインを送る。」
 
 ### 意義
-サトシが[別のフォーラム投稿](/BitcoinArchive/ja/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/)でもビットコインを発表した P2P Foundation の創設者として、バウエンスはビットコインをより広いピアツーピア研究コミュニティに公開するための重要な初期チャネルを提供した。稼働状況に関する彼の質問は、ビットコインが完全に機能し公に利用可能であることを確認するサトシの最も直接的な初期声明の一つを引き出した。
+サトシの返信は、状況報告というより勧誘だった——ソフトを試して、アドレスを送ってくれれば、コインを送る、と。サトシが P2P リサーチでビットコインを発表したわずか二日後、しかも同じ週に [P2P Foundation のフォーラム](/BitcoinArchive/ja/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/)でも告知しながら、その作者はなお、ネットワークを一人ずつ手作業で広げていた。

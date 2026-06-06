@@ -45,4 +45,4 @@ This was the first time Satoshi publicly stated the 21 million coin limit outsid
 In a follow-up exchange on February 13, van Steenbergen asked about Ripple, protocol specifications, and whether Bitcoin could support self-organizing monetary models. Satoshi responded by describing Bitcoin as "a foundation and first step" for programmable P2P social currencies, and discussed Bitcoin's relationship to Pekunio and reputation-based systems.
 
 ### Significance
-Van Steenbergen's direct question about money supply elicited one of Satoshi's most frequently quoted statements about Bitcoin's fundamental design. His questions helped draw out important early explanations of Bitcoin's monetary policy and vision for the future of programmable currencies.
+The question came from an agile coach, not a cryptographer — and from a peer-to-peer research list, not a cypherpunk venue. Barely a month after Bitcoin's first release, its monetary design was already being probed from well outside the circles where it started, and it was a plain question like his that pushed Satoshi to state in public what had until then lived only in the source code.
