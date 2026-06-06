@@ -67,9 +67,9 @@ translationStatus: complete
 <!-- speaker: Hal Finney -->
 > 「身体が外側で死につつあっても、内側では生き続けていられるんだ。」
 
-ハル・フィニーは 2009 年 10 月、ALS と診断された 2 か月後にこう書いた — その同じ年、彼自身が後年述べたとおり、サトシ以外で最初にビットコインを動かしたとされる人物となっていた。2009 年 1 月 11 日、二語のツイート[「Running bitcoin」](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)は、ソフトウェア稼働を公に言及した最初の記録。翌日、サトシは彼に[ブロック 170 で 10 BTC を送信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金。彼はそれから 5 年間、進行する麻痺の中でコードを書き続けた。最終的にはアイトラッキングソフトウェアで、以前の 1/50 程度の速度で。[2014 年 8 月 28 日に逝去](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/)。アルコー延命財団が 128 番目の患者として冷凍保存した。
+ハル・フィニーがこう書いたのは 2009 年 10 月、ALS の診断から 2 か月後だった。同じ年、彼はサトシ以外で初めてビットコインを動かした人物になっていた。少なくとも、本人は後にそう振り返っている。2009 年 1 月 11 日の[「Running bitcoin」](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)、たった二語のツイートが、ソフトウェアの稼働に触れた最初の公開記録になった。その翌日、サトシが彼へ[ブロック 170 で 10 BTC を送る](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)。人から人へビットコインが渡った、史上初の記録である。それから 5 年、進む麻痺のなかで彼はコードを書き続けた。最後はアイトラッキングで、かつての 1/50 ほどの速さで、それでも書いた。[2014 年 8 月 28 日に逝去](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/)。アルコー延命財団が 128 番目の患者として冷凍保存した。
 
-サイファーパンクとしての経歴、2004 年の Reusable Proof-of-Work、人類初のビットコイン取引の受領、ドリアン・ナカモトへの地理的近接性 — これらが組み合わさり、最も多く議論されるサトシ正体候補の一人となった。詳細は[ハル・フィニー = サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)を参照。主要な反証は [2009 年 4 月 18 日のレース当日アリバイ](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/)および Patoshi 規模の不整合。
+だから彼の名は、サトシ候補として今もいちばんよく挙がる。話は出来すぎている。古参のサイファーパンク、2004 年の Reusable Proof-of-Work、人類最初の個人間ビットコイン送金の受領、そしてドリアン・ナカモトの近所という立地。出来すぎているからこそ、疑う価値がある。振り払いにくい反証が二つある。[2009 年 4 月 18 日のレース当日アリバイ](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/)と、Patoshi の採掘規模が彼の活動量と合わないことだ。説の全体は[ハル・フィニー = サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)に詳しい。
 
 ハロルド・トーマス・フィニー二世は 1956年5月4日、カリフォルニア州コアリンガに生まれ、アーケイディアで育った。1974年にアーケイディア高校を首席で卒業し、1979年にカリフォルニア工科大学（Caltech）でエンジニアリングの理学士号を取得した。
 
@@ -109,11 +109,11 @@ timeline
 
 ### ALS と最後の年月
 
-2009 年 8 月、フィニーは筋萎縮性側索硬化症（ALS）と診断された。2011 年初頭に PGP 社（シマンテック）を退職。2013 年 3 月 19 日、BitcoinTalk に[「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/)を投稿。診断後の生活 — 麻痺、管栄養、アイトラッカー越しの操作 — の中でも、プログラミングは続けていた:
+2009 年 8 月、ALS — 筋萎縮性側索硬化症の診断が下る。2011 年初頭、PGP 社（シマンテック）を退職。それでも手は止めなかった。2013 年 3 月 19 日、BitcoinTalk に[「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/)を投稿する。麻痺し、管で栄養を取り、アイトラッカーで画面を操る — その暮らしのなかでも、彼はまだプログラミングを続けていた:
 
 <!-- speaker: Hal Finney -->
 > 「最近、コードを書くこともできると分かったんだ。非常に遅く、以前の 50倍は遅いだろう。でもプログラミングは今でも大好きで、目標を与えてくれる。」
 
-ハル・フィニーは 2014 年 8 月 28 日午前 8 時 50 分、アリゾナ州スコッツデールで死去。アルコー延命財団により 128 番目の患者（会員 A-1436）として冷凍保存された。妻[フラン](/BitcoinArchive/ja/participants/fran-finney/)、息子ジェイソン、娘エリンが遺された。
+ハル・フィニーは 2014 年 8 月 28 日午前 8 時 50 分、アリゾナ州スコッツデールで世を去った。アルコー延命財団が 128 番目の患者（会員 A-1436）として冷凍保存した。妻[フラン](/BitcoinArchive/ja/participants/fran-finney/)、息子ジェイソン、娘エリンが遺された。
 
 *[補足：ハル・フィニーは、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』で、「Running bitcoin」のツイートで主人公のシステムが彼ひとりのものではなくなったと告げる第二のノード運用者として登場する ― 後の冷凍保存は、記録された生涯を越えた持続性という並行モチーフを担う。]*
