@@ -27,7 +27,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の返信には、ビットコインの初期の脆弱さを最も如実に示す告白の一つが含まれていた。
+[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の返信は、ネットワークがどれほど薄くなっていたかについて率直だった。
 
 <!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
@@ -36,4 +36,4 @@ translationStatus: complete
 <!-- speaker: narrator -->
 彼は[ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)の IP アドレスが変わったかどうかを尋ね、新しいユーザーがソフトウェアを起動した際に少なくとも一つのノードに接続できるよう、サーバーをオンラインに保つことを勧めた。
 
-このやり取りは、2009年7月のビットコインの危うい存在を鮮明に描いている。ローンチから約 6ヶ月後、ネットワークは極めて小規模であり、サトシは他にアクティブなノードが存在しない可能性を本気で心配していた。この時期のビットコインの存続は、ボーム、[ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)といった少数の献身的な初期採用者がノードを稼働し続けることにかかっていた。
+ローンチから約 6ヶ月後、ビットコインの稼働は、ボーム、[ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)といった少数の初期採用者がノードをオンラインに保ち、新規ユーザーがソフトウェアを起動したときに接続先が見つかるようにしていたことにかかっていた。

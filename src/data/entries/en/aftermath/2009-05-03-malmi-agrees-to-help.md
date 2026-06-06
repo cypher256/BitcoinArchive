@@ -27,5 +27,3 @@ secondarySources:
 Malmi replied to Satoshi agreeing to take on the website and FAQ development. In this email, he also proposed a feature idea: a UI tool for creating password-protected private keys with backup capabilities. He reported that he was already actively running a Bitcoin node 24 hours a day, 7 days a week.
 
 Later that same day, Satoshi responded by granting Malmi developer access to the Bitcoin SourceForge project. Satoshi endorsed the private key encryption feature as "absolutely essential" for future security. He also provided Malmi with an extensive compilation of Q&A material addressing common inquiries about blockchain mechanics, transaction confirmation times, the 21-million coin limit, and scaling.
-
-This rapid exchange demonstrated the productive dynamic that would characterize their working relationship over the next two years.

@@ -45,8 +45,8 @@ In one of the final exchanges in April 2011, Satoshi [wrote to Hearn](/BitcoinAr
 <!-- quote: q1 -->
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 
-This was among the last known private communications from Satoshi before his complete disappearance. The email confirmed that Satoshi viewed [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) as the appropriate successor to lead Bitcoin's development, and indicated a deliberate and voluntary withdrawal from the project rather than any sudden or forced departure.
+It was among the last known private messages from Satoshi before he went silent.
 
-Hearn would later [publish these emails in full in August 2017](/BitcoinArchive/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/), providing one of the most valuable primary sources for understanding Satoshi's technical vision and his state of mind as he left the project.
+Hearn [published the full correspondence in August 2017](/BitcoinArchive/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/).
 
 This April 23, 2011 exchange is treated as the upstream record by [the Satoshi final-known-email entry](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/), which pairs the April 23 Hearn farewell with the April 26 Andresen alert-key transfer as the documented 'farewell pair' that closes Satoshi's public correspondence.

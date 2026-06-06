@@ -36,7 +36,7 @@ On October 12, 2009, [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) 
 
 One week earlier, on October 5, 2009, NewLibertyStandard had [published the first-ever Bitcoin exchange rate](/BitcoinArchive/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/) ($1 = 1,309.03 BTC) and launched a rudimentary exchange website. Malmi's motivation was to help bootstrap the market: someone had to be the first seller for a market to exist.
 
-Malmi, a 20-year-old computer science student at the Helsinki University of Technology, had been Satoshi's closest collaborator since May 2009. He ported Bitcoin to Linux, built the `bitcoin.org` website, wrote the FAQ, and founded the BitcoinTalk forums. He was the first to sell — not for profit, but to prove that Bitcoin could function as a medium of exchange.
+Malmi, a 20-year-old computer science student at the Helsinki University of Technology, had been Satoshi's closest collaborator since May 2009. He ported Bitcoin to Linux, built the `bitcoin.org` website, wrote the FAQ, and founded the BitcoinTalk forums.
 
 The transaction established Bitcoin's first real-world price: approximately $0.001 per BTC.
 

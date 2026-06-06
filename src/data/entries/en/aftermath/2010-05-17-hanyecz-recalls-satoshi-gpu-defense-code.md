@@ -45,6 +45,6 @@ Hanyecz noted that his own GPU code actually performed better than Satoshi's ver
 <!-- audit:quote-skip -->
 > And I got the feeling, that part of it was that he didn't want to prematurely optimize it because he didn't want to run up the difficulty on the network.
 
-This exchange reveals a fascinating aspect of Satoshi's strategic thinking: he was simultaneously discouraging public GPU mining to protect accessibility while privately maintaining GPU mining capability as insurance against adversarial attacks. It demonstrates that Satoshi had thought deeply about potential attack vectors and had prepared defensive measures well in advance.
+The contrast is the point: in public Satoshi was slowing GPU mining down to keep ordinary CPUs in the game, while in private he kept a GPU miner ready — and deliberately un-optimized — as something to deploy only if the network ever needed defending against a 51% attack.
 
 Keeping this capability private depended on the public stance recorded in [Satoshi's pushback on Hanyecz's May 10 GPU-mining announcement](/BitcoinArchive/entries/aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback/), where — again per Hanyecz's recall — he asked Hanyecz to slow down so ordinary CPU miners would not be discouraged from participating.

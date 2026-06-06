@@ -29,10 +29,10 @@ relatedEntries:
   - aftermath/2010-06-11-gavin-andresen-biography
 ---
 
-Gavin Andresen, a software developer based in Amherst, Massachusetts, discovered Bitcoin in May 2010, approximately eighteen months after Satoshi published [the whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/). He quickly became fascinated by the project and began corresponding with Satoshi via email and through the Bitcointalk forum.
+Gavin Andresen, a software developer based in Amherst, Massachusetts, discovered Bitcoin in May 2010, roughly eighteen months after Satoshi published [the whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/). He began corresponding with Satoshi by email and on the Bitcointalk forum.
 
 After chatting with Satoshi about Bitcoin and its potential, Andresen identified a key barrier to adoption: new users needed a way to obtain coins without having to mine them. His solution was the Bitcoin Faucet -- a website that gave away free bitcoins (initially 5 BTC per visitor) to anyone who completed a CAPTCHA.
 
-Andresen announced his "really dumb" idea on the Bitcointalk forum on June 11, 2010. Over the lifetime of the faucet, he gave away approximately 19,700 BTC. Far from being dumb, the faucet became one of the most effective tools for early Bitcoin adoption, allowing newcomers to experience the technology firsthand.
+Andresen announced his self-described "really dumb" idea on the Bitcointalk forum on June 11, 2010, and over the faucet's life gave away roughly 19,700 BTC — for many newcomers, their first coins, obtained without having to mine.
 
-Andresen quickly proved himself as a capable and prolific developer, regularly submitting code to improve the Bitcoin software. His technical competence and responsible approach to development caught Satoshi's attention, leading to an increasingly close working relationship throughout 2010.
+He paired the faucet with steady code contributions through 2010 — the track record that, by December, led Satoshi to hand him the project.

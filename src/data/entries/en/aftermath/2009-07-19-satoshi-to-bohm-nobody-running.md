@@ -25,7 +25,7 @@ secondarySources:
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 ---
 
-[Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/)'s reply contained one of the most revealing admissions about Bitcoin's early fragility:
+[Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/)'s reply was blunt about how thin the network had become:
 
 <!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
@@ -33,4 +33,4 @@ secondarySources:
 
 He asked whether [Bohm](/BitcoinArchive/participants/nicholas-bohm/)'s IP address had changed, and encouraged Bohm to keep his server online so that new users would have at least one node to connect to when they started the software.
 
-This exchange paints a stark picture of Bitcoin's precarious existence in July 2009 — roughly six months after launch, the network was so small that Satoshi genuinely worried there might be no other active nodes. The survival of Bitcoin through this period depended on a handful of dedicated early adopters like Bohm, [Dustin Trammell](/BitcoinArchive/participants/dustin-trammell/), and [Hal Finney](/BitcoinArchive/participants/hal-finney/) keeping their nodes running.
+Roughly six months after launch, Bitcoin's continued operation depended on a handful of early adopters — Bohm, [Dustin Trammell](/BitcoinArchive/participants/dustin-trammell/), and [Hal Finney](/BitcoinArchive/participants/hal-finney/) — keeping their nodes online so that a newcomer starting the software would find someone to connect to.

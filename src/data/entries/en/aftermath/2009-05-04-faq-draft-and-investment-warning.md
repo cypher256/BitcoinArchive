@@ -27,10 +27,10 @@ secondarySources:
 
 On May 4, 2009, Malmi submitted his initial FAQ draft to Satoshi, covering topics including Bitcoin's definition, how to acquire bitcoins, how the system works, and security considerations.
 
-Satoshi praised the FAQ but raised a critical concern about how Bitcoin was being positioned. In one of the most historically significant statements from these emails, Satoshi wrote:
+Satoshi praised the FAQ but raised a critical concern about how Bitcoin was being positioned. He wrote:
 
 <!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > There are a lot of things you can say on the sourceforge site that I can't say on my own site ... Even so, I'm uncomfortable with explicitly saying 'consider it an investment'. That's a dangerous thing to say and you should delete that bullet point. It's OK if they come to that conclusion on their own, but we can't pitch it as that.
 
-This exchange reveals Satoshi's careful approach to regulatory risk and his deliberate effort to position Bitcoin as a technology and payment system rather than as a speculative investment vehicle. This stance has been widely cited in discussions about Bitcoin's intended purpose and the cryptocurrency regulatory landscape.
+It is an early, explicit instance of Satoshi steering Bitcoin away from a "consider it an investment" pitch toward a payment-system framing, and of his caution about regulatory exposure.

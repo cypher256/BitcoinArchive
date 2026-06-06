@@ -33,6 +33,6 @@ On July 11, 2010, Slashdot published an article titled "Bitcoin Releases Version
 
 The "Slashdot effect" was immediate and dramatic. Bitcoin software downloads surged from approximately 3,000 in June to over 20,000 in July 2010. New users flooded the network, and Bitcoin's price increased sharply in the following days.
 
-This was both a milestone and a challenge. The sudden influx of users tested the network's capacity, exposing scalability limitations that had previously been theoretical. Satoshi and other developers worked to optimize the software, addressing bandwidth constraints, memory management, and transaction processing bottlenecks.
+The sudden influx of users tested the network's capacity, exposing scalability limitations that had previously been theoretical. Satoshi and other developers worked to optimize the software, addressing bandwidth constraints, memory management, and transaction processing bottlenecks.
 
 The Slashdot article also attracted unwanted attention. Along with curious technologists came speculators, critics, and — as events would soon prove — attackers. One month later, the network would face its most serious crisis: the [value overflow incident of August 15, 2010](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/).
