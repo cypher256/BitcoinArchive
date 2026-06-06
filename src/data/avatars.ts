@@ -65,16 +65,9 @@ export function avatarHue(slug: string): number {
  * legible in both light and dark themes.
  */
 export function avatarBackground(slug: string): string {
-  // Satoshi's avatar uses a TRANSPARENT background; the fill is applied
-  // in CSS (img[src$="satoshi-nakamoto.png"] { background:
-  // var(--color-satoshi) }) so it tracks the bubble-outline colour in
-  // BOTH themes (light #c2410c orange / dark #fbbf24 amber). A single
-  // baked PNG can't follow the theme, but a transparent PNG + CSS fill
-  // can. See global.css and src/pages/avatars/[slug].png.ts.
-  if (slug === 'satoshi-nakamoto') return 'transparent';
   // Bitcoin Institute is the editorial author (article / analysis /
   // design). It gets the site's navy accent so editorial entries read as
-  // "by the Institute" at a glance — a special subject like Satoshi.
+  // "by the Institute" at a glance.
   if (slug === 'bitcoin-institute') return '#1f3a5f';
   return `hsl(${avatarHue(slug)}, 42%, 42%)`;
 }

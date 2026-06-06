@@ -12,8 +12,7 @@ import { avatarBackground, avatarInitials, hasAvatarPhoto } from '../../data/ava
 //
 // Unlike OG images, this route is NOT gated behind CI / GENERATE_OG:
 // getStaticPaths only enumerates slugs (cheap), and the expensive satori
-// render happens in GET, which dev runs on demand — so the avatar
-// layout comparison page can be previewed locally without a full build.
+// render happens in GET, which dev runs on demand.
 export const getStaticPaths: GetStaticPaths = async () => {
   const enEntries = await getCollection('entries');
 
@@ -28,7 +27,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 
   const paths = [...nameMap.entries()]
-    .filter(([slug]) => !hasAvatarPhoto(slug))
+    // Satoshi renders as a CSS span (Avatar.astro / avatarTag), not a baked
+    // PNG, so no generated avatar image is needed for that slug.
+    .filter(([slug]) => !hasAvatarPhoto(slug) && slug !== 'satoshi-nakamoto')
     .map(([slug, name]) => ({
       params: { slug },
       props: { slug, name },
@@ -58,11 +59,7 @@ export const GET: APIRoute = async ({ props }) => {
   const { slug, name } = props as { slug: string; name: string };
   const initials = avatarInitials(name);
   const background = avatarBackground(slug);
-  // Satoshi's avatar is transparent (filled by CSS with --color-satoshi),
-  // so its initial must stay legible on both the light-orange and
-  // dark-amber fill — a dark semi-transparent ink reads on both. Every
-  // other avatar keeps a white initial on its coloured disc.
-  const initialColor = slug === 'satoshi-nakamoto' ? 'rgba(0, 0, 0, 0.6)' : '#ffffff';
+  const initialColor = '#ffffff';
   const size = 256;
 
   const svg = await satori(
