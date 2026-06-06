@@ -1,20 +1,19 @@
 #!/usr/bin/env node
 /**
- * check-registry.mjs — verify the inspection-script ledger (scripts/CHECKS.md)
- * matches reality (files in scripts/, ports in package.json).
+ * check-registry.mjs — verify the script ledger (scripts/CHECKS.md) matches
+ * reality (files in scripts/, ports in package.json).
  *
- * Convention (full text in scripts/CHECKS.md):
- *   - check-* = gate. Deterministic or suppression-equipped (skip/ignore).
- *     Wired into `npm run check` (and usually `build`) via a `check`-named
- *     port, or via a git hook. Stops the build on failure.
- *   - audit-* = manual, explicitly invoked. Heuristic; false positives
- *     expected. Exposes an `audit:<name>` port. Never stops the build.
+ * The ledger catalogues EVERY standalone script in scripts/ so its identity
+ * and tier are readable without forensic investigation:
+ *   - check-*     = gate (deterministic / suppression-equipped; check port or hook)
+ *   - audit-*     = manual heuristic (audit: port)
+ *   - operational = pipeline (run by dev/build/check) or manual tool
  *
  * Checks (deterministic — exits 1 on any violation, no false positives):
- *   1. unregistered — every check- / audit- script is listed in CHECKS.md
- *   2. ghost        — every script CHECKS.md lists actually exists in scripts/
- *   3. wiring       — audit-* has an `audit:` port; check-* has a `check`-named
- *                     port (or git-hook wiring)
+ *   1. coverage — every scripts/*.mjs and scripts/*.sh is listed in CHECKS.md
+ *   2. ghost    — every script filename CHECKS.md lists actually exists
+ *   3. wiring   — check-* has a check port (or hook); audit-* has an audit: port
+ *                 (operational scripts need only be catalogued, no wiring)
  */
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import path from 'node:path';
@@ -26,27 +25,28 @@ const SCRIPTS = path.join(ROOT, 'scripts');
 const CHECKS_MD = path.join(SCRIPTS, 'CHECKS.md');
 const SELF = path.basename(fileURLToPath(import.meta.url));
 
-// Naming exceptions: established names managed as check-equivalents in the
-// ledger (the archive currently has none; the novel repo grandfathers
-// measure-prose.py). Map filename -> tier ("check" | "audit").
+// Naming exceptions managed as check-equivalents in the ledger (the archive
+// has none; the novel repo grandfathers measure-prose.py). filename -> tier.
 const GRANDFATHERED = {};
 
-const NAME_RE = /(?:check|audit)-[\w-]+\.mjs/g;
+// Standalone-script filename token (.mjs or .sh). Used both to read the ledger
+// and to enforce coverage. scripts/lib/ modules are not standalone scripts.
+const SCRIPT_RE = /[\w-]+\.(?:mjs|sh)/g;
 
-function verificationFiles() {
+function scriptFiles() {
   const out = {};
   for (const f of readdirSync(SCRIPTS).sort()) {
-    if (!f.endsWith('.mjs')) continue;
+    if (!f.endsWith('.mjs') && !f.endsWith('.sh')) continue;
     if (f.startsWith('check-')) out[f] = 'check';
     else if (f.startsWith('audit-')) out[f] = 'audit';
-    else if (f in GRANDFATHERED) out[f] = GRANDFATHERED[f];
+    else out[f] = GRANDFATHERED[f] ?? 'operational';
   }
   return out;
 }
 
 function registeredInMd() {
   if (!existsSync(CHECKS_MD)) return null;
-  return new Set(readFileSync(CHECKS_MD, 'utf8').match(NAME_RE) ?? []);
+  return new Set(readFileSync(CHECKS_MD, 'utf8').match(SCRIPT_RE) ?? []);
 }
 
 function npmScripts() {
@@ -55,9 +55,8 @@ function npmScripts() {
 
 function hookText() {
   // Archive hooks live in local .git/hooks (commit-msg / post-commit) and are
-  // not committed; check-registry for the archive is wired into check/build,
-  // not a hook. Read any committed .githooks dir defensively for parity with
-  // the novel repo's pre-commit wiring.
+  // not committed; check-registry is wired into check/build, not a hook. Read
+  // any committed .githooks dir defensively for parity with the novel repo.
   const dir = path.join(ROOT, '.githooks');
   if (!existsSync(dir)) return '';
   return readdirSync(dir)
@@ -72,7 +71,7 @@ function hookText() {
 }
 
 function main() {
-  const files = verificationFiles();
+  const files = scriptFiles();
   const registered = registeredInMd();
   if (registered === null) {
     console.error(`check-registry: CHECKS.md not found (${CHECKS_MD})`);
@@ -82,18 +81,19 @@ function main() {
   const hook = hookText();
   const errors = [];
 
-  // 1. unregistered
+  // 1. coverage — every script catalogued
   for (const f of Object.keys(files)) {
-    if (!registered.has(f)) errors.push(`unregistered: scripts/${f} is missing from CHECKS.md`);
+    if (!registered.has(f)) errors.push(`uncatalogued: scripts/${f} is missing from CHECKS.md`);
   }
-  // 2. ghost
+  // 2. ghost — every catalogued script exists
   for (const r of registered) {
     if (!existsSync(path.join(SCRIPTS, r))) {
       errors.push(`ghost: CHECKS.md lists ${r} but it does not exist in scripts/`);
     }
   }
-  // 3. wiring
+  // 3. wiring — gates must be reachable (operational scripts: catalogued only)
   for (const [f, tier] of Object.entries(files)) {
+    if (tier === 'operational') continue;
     const refs = Object.entries(ports)
       .filter(([, cmd]) => cmd.includes(f))
       .map(([name]) => name);
@@ -102,8 +102,6 @@ function main() {
         errors.push(`wiring: scripts/${f} (audit-) has no audit: port`);
       }
     } else {
-      // check-*: a check-named port (incl. the `check`/`build` aggregates) or
-      // a git hook, or check-registry itself.
       const wired = refs.some((n) => n.startsWith('check')) || hook.includes(f) || f === SELF;
       if (!wired) {
         errors.push(`wiring: scripts/${f} (check-) has no check: port / hook wiring`);
@@ -112,11 +110,11 @@ function main() {
   }
 
   if (errors.length) {
-    console.error('Inspection ledger (scripts/CHECKS.md) is inconsistent:');
+    console.error('Script ledger (scripts/CHECKS.md) is inconsistent:');
     for (const e of errors) console.error(`  - ${e}`);
     process.exit(1);
   }
-  console.log(`check-registry: OK (${Object.keys(files).length} scripts consistent with the ledger)`);
+  console.log(`check-registry: OK (${Object.keys(files).length} scripts catalogued and consistent)`);
 }
 
 main();

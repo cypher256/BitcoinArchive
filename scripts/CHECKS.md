@@ -1,10 +1,11 @@
 # Inspection Scripts Ledger (CHECKS.md) — BitcoinArchive
 
-Single source of truth for this repository's verification scripts.
+Single source of truth for **every standalone script** in `scripts/`.
 `scripts/check-registry.mjs` validates this ledger against reality (the
 files in `scripts/` and the ports in `package.json`) on every
-`npm run check` and `npm run build`: it fails on an unregistered script,
-a ghost entry, or a prefix/wiring mismatch.
+`npm run check` and `npm run build`: it fails on an uncatalogued script,
+a ghost entry, or a prefix/wiring mismatch. So "what is this script, can
+I delete it?" is answerable from this file — no forensic investigation.
 
 This ledger owns only the **tier and wiring** of each script (which
 prefix, which port, where it runs). The editorial rule a check enforces
@@ -23,9 +24,12 @@ of truth; the role column below is a one-line pointer, not a restatement.
   positives are expected. Always exposes an `audit:<name>` port.
   **Never stops the build** — a human / AI triages the output.
 - The prefix *is* the tier; no other staging (T1–T4 etc.) is used.
-- Generation / fetch / fix / migration tools (`generate-*`, `fetch-*`,
-  `fix-*`, `migrate-*`, `convert-*`, `create-*`, …) are operational
-  tooling, **outside this ledger**.
+- Everything else is **operational** tooling — `pipeline` (run
+  automatically by `dev` / `build` / `check`; removing one breaks the
+  build) or a manual `tool` (`generate-*`, `fetch-*`, `fix-*`,
+  `fill-*`, `verify-*`, …). Not gates, but **still catalogued below**
+  so every script is identifiable without investigation;
+  `check-registry` enforces that no script is left out.
 - The extension follows the repo's language (archive = `.mjs`). The
   novel repo (private) keeps a parallel `scripts/CHECKS.md` (Japanese)
   + `scripts/check-registry.py`; prefix, placement, and port rules are
@@ -90,6 +94,47 @@ of truth; the role column below is a one-line pointer, not a restatement.
 | `audit-seo.mjs` | SEO / AIO / readability survey | `audit:seo` |
 | `audit-untranslated-ja-blockquotes.mjs` | JA blockquotes that look untranslated | `audit:untranslated-ja-blockquotes` |
 | `audit-visual-density.mjs` | Editorial visual-density ratio | `audit:visual-density` |
+
+## Registry — operational (not gates; catalogued for identifiability)
+
+`pipeline` = run automatically by `dev` / `build` / `check` (removing one
+breaks the build). `tool` = manual, run on demand — reusable, not spent.
+
+| Script | Role | Status |
+|---|---|---|
+| `algolia-index.mjs` | Push EN/JA entries to the Algolia full-text index | pipeline (build) |
+| `generate-derived-related.mjs` | Build `derived-related.json` (auto-derived relatedEntries) | pipeline (dev/build/check) |
+| `generate-derived-commentaries.mjs` | Build `derived-commentaries.json` (reverse commentary index) | pipeline (dev/build/check) |
+| `generate-git-dates.mjs` | Build `git-dates.json` (per-locale created/updated from git) | pipeline (dev/build/check; post-commit) |
+| `generate-keyword-index.mjs` | Build `keyword-index.json` (auto-link keywords) | pipeline (dev/build/check) |
+| `sync-content.mjs` | Run `astro sync` (content-collection types) | pipeline (check) |
+| `apply-dead-link-fixes.mjs` | Apply dead-link fixes to frontmatter `url` / `sourceUrl` | tool |
+| `enrich-dead-links-with-wayback.mjs` | Replace dead links with Wayback URLs | tool |
+| `create-ja-stubs.mjs` | Create JA translation stub files from EN entries | tool |
+| `extract-quotes.mjs` | Read-only: propose `quotes[]` + body markers from EN attribution patterns | tool · `extract:quotes` |
+| `fetch-btc-prices.mjs` | Fetch the BTC price series for the price-chart page | tool |
+| `fetch-context-posts.mjs` | Fetch BitcoinTalk context-post replies | tool |
+| `fetch-github-satoshi-mentions.mjs` | Fetch GitHub Issue/PR threads mentioning Satoshi | tool |
+| `fetch-replies-to-satoshi.mjs` | Fetch BitcoinTalk replies to Satoshi (see STYLE_GUIDE_JA_OPS.md) | tool |
+| `fetch-sni-posts.mjs` | Fetch Satoshi Nakamoto Institute archive posts | tool |
+| `fetch-thread-starters.mjs` | Fetch BitcoinTalk thread-starter posts | tool |
+| `fill-person-slug.mjs` | Backfill `quotes[].personSlug` (see STYLE_GUIDE_JA.md § II.4) | tool |
+| `fill-source-entry-id.mjs` | Backfill `quotes[].sourceEntryId` | tool |
+| `fix-ja-ascii-spacing.mjs` | Insert missing JA × ASCII half-width spaces | tool |
+| `fix-ja-link-spacing.mjs` | Remove JA × JA spaces around markdown-link boundaries | tool |
+| `fix-ja-reply-titles.mjs` | Cascade JA forum reply titles from the starter (see STYLE_GUIDE.md) | tool |
+| `fix-quote-visual-divergence.mjs` | Fix visual-only JA quote divergence (audit-quote-translation-consistency category) | tool |
+| `generate-quote-fix-candidates.mjs` | Build a quote-fix review queue from audit-quote-translation-consistency | tool |
+| `generate-satoshi-timeline.mjs` | Generate Satoshi timeline data from `isSatoshi` entries | tool |
+| `scan-all-mermaid.mjs` | Survey every mermaid block across the corpus | tool |
+| `verify-rule-ab.mjs` | Verify fetch-replies rule A/B coverage | tool |
+| `verify-no-regression.sh` | SHA-1 snapshot regression check after data-modifying scripts (see STYLE_GUIDE_JA_OPS.md) | tool |
+| `verify-translations.sh` | Verify a batch of JA translations | tool |
+| `verify-fetch-replies-complete.sh` | Disk consistency check for fetch-replies | tool |
+| `verify-rule-b-authoritative.sh` | Authoritative rule-B completeness via dry-run fetch | tool |
+
+`scripts/lib/` holds shared modules imported by the scripts above, not
+standalone entry points; it is not catalogued.
 
 ## Notes
 
