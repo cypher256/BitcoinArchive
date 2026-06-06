@@ -44,7 +44,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-2011年4月26日、サトシ・ナカモトは最後の既知のメールとなるものを送信した。件名「alert key」でギャビン・アンドレセン宛てに送られたこのメッセージは、サトシによる最後の権限移譲と、自身が作り上げたプロジェクトへの別れを示すものであった。
+2011年4月26日、サトシ・ナカモトは最後の既知のメールとなるものを送信した。件名「alert key」でギャビン・アンドレセン宛てに送られたこのメールは、ネットワークのアラートキーを引き渡し、離脱を告げるものだった。
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
@@ -73,9 +73,6 @@ translationStatus: complete
 
 <!-- speaker: narrator -->
 CAlert キーは、その保持者がネットワーク上のすべてのビットコインクライアントに緊急メッセージをブロードキャストし、重大なセキュリティ問題や必要なアップグレードについて警告できる強力なツールであった。このキーを移譲することで、サトシはリーダーシップ引き継ぎの最後のピースを完成させた。
-
-このメールは、関与の最後の日々におけるサトシの考え方のいくつかの重要な側面を明らかにしている：個人的な注目への不快感、ビットコインが一人の謎めいた個人の創造物としてではなく協力的なオープンソースプロジェクトとして認識されることへの願望、そしてプロジェクトが自分なしでも持続できるという確信である。
-
 サトシはアンドレセンのその後の返信に決して応答しなかった。
 
 本引き継ぎは、密集した最終週コーパスの中に位置する: 同日のアンドレセン返信 ([アンドレセン → サトシ CIA 訪問](/BitcoinArchive/ja/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/))、二ヶ月前の bitcoin-list メールマンパスワード引き継ぎ ([サトシ最後の既知メール to マルッティ・マルミ](/BitcoinArchive/ja/entries/aftermath/2011-02-22-satoshi-final-email-to-malmi/))、そしてその数日前に撤退を加速させたとされる [Forbes 暗号通貨記事](/BitcoinArchive/ja/entries/aftermath/2011-04-20-forbes-crypto-currency/)。 [ギャビン・アンドレセン伝記](/BitcoinArchive/ja/participants/gavin-andresen/)は本引き継ぎを通じてアンドレセンのリード保守者の歩みを追う。 2011 年以降の身元同定コーパス ― [サトシ自己発言インベントリ](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)、 [サスマン身元仮説](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)、そして[最後の既知メールエントリ](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)に代表される公的消失の枠組み ― はいずれも本メールを記録上の撤退点として扱う。

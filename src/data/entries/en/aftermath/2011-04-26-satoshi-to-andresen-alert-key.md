@@ -42,7 +42,7 @@ relatedEntries:
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
 ---
 
-On April 26, 2011, Satoshi Nakamoto sent what would become his last known private email. Addressed to Gavin Andresen with the subject line "alert key," this message marked Satoshi's final transfer of authority and his farewell from the project he created.
+On April 26, 2011, Satoshi Nakamoto sent what would become his last known private email. Addressed to Gavin Andresen with the subject line "alert key," it handed over the network alert key and announced his departure.
 
 <!-- quote: q1 -->
 
@@ -59,9 +59,6 @@ Finally, he transferred the critical network alert key:
 > Here's the CAlert key and broadcast code in case you need it. You should probably give it to at least one or two other people. There are a few long time users who are always around all the time.
 
 The CAlert key was a powerful tool that enabled its holder to broadcast emergency messages to all Bitcoin clients on the network, warning of critical security issues or required upgrades. By transferring this key, Satoshi was completing the final piece of the leadership handover.
-
-This email reveals several important aspects of Satoshi's thinking in his final days of involvement: his discomfort with personal attention, his desire for Bitcoin to be recognized as a collaborative open source project rather than the creation of one mysterious individual, and his conviction that the project could sustain itself without him.
-
 Satoshi never replied to Andresen's subsequent response.
 
 This handover sits inside a tightly clustered final-week corpus: Andresen's reply on the same day ([Andresen → Satoshi on the CIA visit](/BitcoinArchive/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/)), [Satoshi's final known email to Martti Malmi](/BitcoinArchive/entries/aftermath/2011-02-22-satoshi-final-email-to-malmi/) two months earlier handing over the bitcoin-list mailman password, and the [Forbes crypto-currency story](/BitcoinArchive/entries/aftermath/2011-04-20-forbes-crypto-currency/) days before that arguably accelerated the withdrawal. The [Gavin Andresen biography](/BitcoinArchive/participants/gavin-andresen/) tracks Andresen's lead-maintainer arc through this handover. The post-2011 identification corpus — the [Satoshi self-statements inventory](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), the [Sassaman identity hypothesis](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/), and the broader public-disappearance frame represented by the [final-known-email entry](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/) — all treat this email as the documented departure point.

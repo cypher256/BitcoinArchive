@@ -47,4 +47,4 @@ The opcode compares a value on the script stack against the transaction's nLockT
 
 **Significance:**
 
-BIP 65 was deployed as a consensus-level soft fork. It was one of the building blocks that enabled more sophisticated Bitcoin smart contracts, including the payment channels that would later underpin the Lightning Network. Along with BIP 125 (Replace-by-Fee), it represents Peter Todd's most impactful contribution to the Bitcoin protocol.
+BIP 65 was deployed as a consensus-level soft fork. Its time-locked outputs became a building block for non-interactive payment channels — the mechanism the Lightning Network would later be built on.

@@ -72,7 +72,7 @@ Maxwell summarized the conclusion in the Bitcoin Magazine article: "OpenSSL is n
 
 **Significance:**
 
-libsecp256k1 represented the most consequential replacement of a dependency that Satoshi had originally chosen. Satoshi's v0.1 used OpenSSL because it was the obvious choice in 2008 — it was the standard cryptographic library for C++ projects on Windows. By 2016, the Bitcoin Core developers had concluded that "obvious" was not "correct" for a consensus system, and had spent three years building a purpose-made replacement.
+libsecp256k1 replaced OpenSSL in Bitcoin's consensus signature verification — the code path where every node must reach the same verdict, or the chain splits. Satoshi's v0.1 used OpenSSL because it was the obvious choice in 2008 — it was the standard cryptographic library for C++ projects on Windows. By 2016, the Bitcoin Core developers had concluded that "obvious" was not "correct" for a consensus system, and had spent three years building a purpose-made replacement.
 
 This pattern — Satoshi's design choices being progressively superseded by Bitcoin-specific implementations as the codebase matured — is one of the recurring themes in Bitcoin Core's evolution. See also [PR #4641 (laanwj, 2014)](/BitcoinArchive/entries/forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style/) which began the systematic removal of Satoshi's Hungarian-notation variable naming style from new Bitcoin Core code.
 

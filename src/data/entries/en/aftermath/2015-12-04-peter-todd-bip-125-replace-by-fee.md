@@ -64,8 +64,8 @@ Transactions signal replaceability by setting any input's nSequence number below
 
 **Controversy:**
 
-RBF was one of the most contentious changes in Bitcoin's history. Critics argued it broke "zero-confirmation" transactions that merchants relied on. Supporters countered that zero-confirmation transactions were never truly secure and that RBF aligned with Bitcoin's fee market design. The opt-in approach was a compromise — only transactions explicitly signaling replaceability could be replaced.
+RBF was a deeply contentious change. Critics argued it broke "zero-confirmation" transactions that merchants relied on. Supporters countered that zero-confirmation transactions were never truly secure and that RBF aligned with Bitcoin's fee market design. The opt-in approach was a compromise — only transactions explicitly signaling replaceability could be replaced.
 
 **Significance:**
 
-BIP 125 completed what Satoshi had started. The original transaction replacement was removed as unsafe; Todd's opt-in version made it practical. Whether this represents a developer finishing a predecessor's work or — as the [HBO documentary "Money Electric"](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) controversially suggested — the same mind returning to complete an unfinished design, remains one of Bitcoin's most debated questions.
+BIP 125 completed what Satoshi had started. The original transaction replacement was removed as unsafe; Todd's opt-in version made it practical. Whether this represents a developer finishing a predecessor's work or — as the [HBO documentary "Money Electric"](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) controversially suggested — the same mind returning to complete an unfinished design, remains an open question.

@@ -43,7 +43,7 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651"
 ---
 
-Gavin Andresen first discovered Bitcoin in 2010 and quickly became one of the most active contributors. Satoshi Nakamoto recognized his talent and commitment, eventually giving him access to the Bitcoin source code repository and naming him lead developer.
+Gavin Andresen discovered Bitcoin in 2010 and quickly became one of its most active contributors. Satoshi Nakamoto gave him access to the Bitcoin source code repository and put him forward as lead developer.
 
 **On how Satoshi made him the leader:**
 
@@ -71,6 +71,6 @@ In an [email to Mike Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/ho
 
 Gavin's involvement was critical during the transition period. Satoshi's last public BitcoinTalk post was on December 12, 2010, and Andresen [publicly assumed project management on December 19, 2010](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/). Andresen was the last known person to exchange emails with Satoshi before Satoshi's final known communication in April 2011. Gavin disclosed his CIA / In-Q-Tel speaking invitation in his April 26, 2011 reply to Satoshi's alert-key email; no reply from Satoshi is known after that message.
 
-Gavin Andresen was a key figure in Bitcoin's early development. After Satoshi's departure, he served as Bitcoin's lead developer and later Chief Scientist of the Bitcoin Foundation. His background included work at Silicon Graphics on virtual reality and founding Wasabi Software. Despite his pivotal role, he preferred to remain modest, once describing himself as simply a "geek" interested in technical details.
+After Satoshi's departure, Andresen served as Bitcoin's lead developer and later Chief Scientist of the Bitcoin Foundation. His background included work at Silicon Graphics on virtual reality and founding Wasabi Software. He described himself as simply a "geek" interested in technical details.
 
 This 2016 retrospective is anchored in [the Gavin Andresen biography](/BitcoinArchive/participants/gavin-andresen/), which treats this interview as one of its principal first-person sources for Andresen's perspective on the handover and the early collaboration with Satoshi — returning to it across the timeline, the "Satoshi's successor" section, and the closing-paragraph link back to this entry.

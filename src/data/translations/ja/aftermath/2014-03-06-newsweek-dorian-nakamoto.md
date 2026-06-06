@@ -45,6 +45,6 @@ translationStatus: complete
 
 翌日の 2014年3月7日、[サトシ・ナカモトの P2P Foundation アカウント](/BitcoinArchive/ja/entries/forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency/)に「私はドリアン・ナカモトではない」というシンプルなメッセージが投稿された。この投稿の真正性は議論が分かれており、サトシの P2P Foundation アカウントが不正アクセスされていた可能性もある。
 
-ビットコインコミュニティはドリアンを支持し、67BTC 以上の寄付金を彼のために集めた。この事件は、サトシの正体に関する無責任な報道と、憶測に巻き込まれた無関係な個人への影響について、教訓的な事例となった。
+ビットコインコミュニティはドリアンを支持し、67BTC 以上の寄付金を彼のために集めた。
 
 本 Newsweek 記事は、 [ドリアン・ナカモト伝記](/BitcoinArchive/ja/participants/dorian-nakamoto/)と [Greenberg Forbes 追従記事「ナカモトの隣人」](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/)から事件発端として、 [サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)と[同定非対称性分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/)からジャーナリスティック同定失敗の典型事例として、そして[サトシの P2P Foundation 復活エントリ](/BitcoinArchive/ja/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/)から翌日の「私はドリアン・ナカモトではない」投稿の引き金として参照される。

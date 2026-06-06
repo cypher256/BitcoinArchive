@@ -30,4 +30,4 @@ The login activity was visible through the platform's user interface, which disp
 
 No new posts or messages were made from the account at this time. The P2P Foundation platform, built on the Ning social network, did not offer two-factor authentication and used relatively basic security measures, making it plausible that the account could have been compromised.
 
-The incident highlighted the ongoing fascination with any potential sign of activity from Bitcoin's pseudonymous creator. Since Satoshi's last confirmed email in April 2011, every instance of apparent activity on accounts associated with the Satoshi Nakamoto identity has drawn intense scrutiny from the community.
+Since Satoshi's last confirmed email in April 2011, every instance of apparent activity on accounts associated with the Satoshi Nakamoto identity has drawn intense scrutiny from the community.

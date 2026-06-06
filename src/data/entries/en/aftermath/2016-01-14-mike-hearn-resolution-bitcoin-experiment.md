@@ -86,7 +86,7 @@ Prior to this post, Hearn had developed Bitcoin XT — an alternative Bitcoin cl
 
 **Aftermath:**
 
-The blog post caused an immediate media firestorm. Bitcoin's price briefly dropped, and the post became one of the most widely cited criticisms of Bitcoin's governance. Hearn subsequently joined R3, a blockchain consortium, where he co-led the development of Corda, an enterprise distributed ledger platform.
+The blog post caused an immediate media firestorm. Bitcoin's price briefly dropped, and the post became a widely cited criticism of Bitcoin's governance. Hearn subsequently joined R3, a blockchain consortium, where he co-led the development of Corda, an enterprise distributed ledger platform.
 
 In a historical irony, Bitcoin's price would rise dramatically in the years following Hearn's departure — reaching nearly $20,000 by December 2017, and eventually exceeding $60,000. Technologies such as Segregated Witness (SegWit) and the Lightning Network were introduced to address the scaling challenge through alternative approaches.
 
