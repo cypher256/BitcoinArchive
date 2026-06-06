@@ -501,7 +501,10 @@ blockquote[data-speaker="satoshi"] {
    plugins on the speaker's blockquotes, chip or no chip). */
 .entry-content blockquote,
 .message-body blockquote {
-  border: 1px solid var(--color-border);
+  /* A touch stronger than --color-border (which is very faint) so the
+     non-Satoshi quote outline is clearly visible in both themes. Satoshi
+     quotes override border-color below, so this only affects the rest. */
+  border: 1px solid color-mix(in srgb, var(--color-text-muted) 35%, transparent);
   border-radius: 0.2em 0.8em 0.8em 0.8em;
   background: var(--color-bg-alt);
   /* Italic + 0.95em is the original thread verbatim-panel look, now
@@ -514,6 +517,20 @@ blockquote[data-speaker="satoshi"] {
 .entry-content blockquote[data-speaker="satoshi"],
 .message-body blockquote[data-speaker="satoshi"] {
   border-color: var(--color-satoshi);
+}
+/* Dark mode: keep the amber hue but soften Satoshi's quote outline a
+   touch via alpha (per request). Both dark triggers are covered — the OS
+   preference without a manual light override, and an explicit
+   data-mode="dark" — mirroring how --color-satoshi itself is themed. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-mode="light"]) .entry-content blockquote[data-speaker="satoshi"],
+  :root:not([data-mode="light"]) .message-body blockquote[data-speaker="satoshi"] {
+    border-color: color-mix(in srgb, var(--color-satoshi) 78%, transparent);
+  }
+}
+:root[data-mode="dark"] .entry-content blockquote[data-speaker="satoshi"],
+:root[data-mode="dark"] .message-body blockquote[data-speaker="satoshi"] {
+  border-color: color-mix(in srgb, var(--color-satoshi) 78%, transparent);
 }
 /* The chip sits directly above its bubble (no gap). The bubble keeps the
    text's left edge so a chip-led quote lines up with the chip-less
