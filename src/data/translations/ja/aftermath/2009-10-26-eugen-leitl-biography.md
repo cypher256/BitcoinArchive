@@ -38,4 +38,4 @@ relatedEntries:
 2009年10月26日、ライトルは bitcoin-list メーリングリストの[「Bitcoin は Windows でクラッシュしますか？」](/BitcoinArchive/ja/entries/emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows/)というスレッドに返信した。このスレッドでは[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が Liberty Standard の Wine 上でのクラッシュ報告に回答していた。ライトルはサトシの「bitcoin.sourceforge.net は今は正常に見えます」という発言を引用し、自分が確認した時にはサイトが動作していなかったと報告した。また「まだ Bitcoin の Deb パッケージはないのですか？」と質問し、ソフトウェアの Linux パッケージ化への早期の需要を示した。
 
 ### 意義
-ライトルの参加は、ビットコインがリリースから数ヶ月以内にサイファーパンクおよびトランスヒューマニストコミュニティの注目を集めていたことを示している。Debian パッケージへの要望は、ビットコインの実行に関心がありつつも便利なインストール方法がなかった初期の Linux 志向のユーザー層を反映している。
+スレッドのクラッシュは Wine 上で起きていた。ライトルが .deb パッケージを尋ねたのは、その裏返しだった——リリースから 10 か月近く経っても、ビットコインを Linux に載せる手軽な道はまだなかった。暗号学メーリングリストの外にまで関心が及んでいたにもかかわらず、である。

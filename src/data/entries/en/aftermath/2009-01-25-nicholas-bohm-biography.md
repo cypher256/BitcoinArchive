@@ -33,4 +33,4 @@ Bohm is a British commercial lawyer with experience in a major City of London so
 On January 25, 2009 — just two weeks after [Bitcoin v0.1 was released](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) — Bohm posted to the bitcoin-list mailing list on SourceForge reporting problems running the software. He asked whether the list was an appropriate place to report issues. [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) replied the same day, asking for details and requesting that Bohm send his debug.log file directly for diagnosis.
 
 ### Significance
-Bohm's bug report represents one of the earliest documented interactions with Bitcoin from someone outside the immediate cryptography mailing list community. His prompt engagement with the software, within days of its release, illustrates the early reach of Bitcoin among technically-oriented professionals with an interest in cryptography and electronic commerce.
+A London commercial lawyer filing a bug report two weeks after release is a small measure of how fast Bitcoin had already spread past the cryptography mailing list.
