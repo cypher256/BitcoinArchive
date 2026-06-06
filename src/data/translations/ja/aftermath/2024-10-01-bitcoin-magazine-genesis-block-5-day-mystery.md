@@ -32,7 +32,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2024年10月1日、Bitcoin Magazine のピート・リゾが、ビットコインの最も永続的な技術的謎の一つについての調査を発表した：[ジェネシスブロック](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)（ブロック 0、2009年1月3日 18:15:05 UTC）とブロック 1（2009年1月9日 02:54:25 UTC）の間の約 5日8時間の空白である。
+2024年10月1日、Bitcoin Magazine のピート・リゾが、長年の技術的謎についての調査を発表した：[ジェネシスブロック](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)（ブロック 0、2009年1月3日 18:15:05 UTC）とブロック 1（2009年1月9日 02:54:25 UTC）の間の約 5日8時間の空白である。
 
 **謎：**
 

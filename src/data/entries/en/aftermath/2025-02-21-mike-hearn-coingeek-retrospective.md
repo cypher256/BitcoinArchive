@@ -54,7 +54,7 @@ Hearn noted that Satoshi was "interested in payments and novel uses for the tech
 <!-- audit:quote-skip -->
 > "When evangelical personalities showed up, he appeared to grow frustrated and understandably disappeared."
 
-This characterization — that Satoshi was driven away not by external threats but by the zealotry of his own community — is one of the most direct assessments from someone who knew Satoshi personally through their correspondence.
+This characterization — that Satoshi was driven away not by external threats but by the zealotry of his own community — is a first-hand assessment from someone who corresponded with Satoshi directly.
 
 ### Who the "evangelical personalities" were — the WikiLeaks "bring it on" thread
 
@@ -83,4 +83,4 @@ Hearn said that if he could go back, he "would have pushed back harder against s
 
 He also regretted adopting the term "Bitcoin Core," suggesting the naming reinforced an unhealthy power dynamic within the project.
 
-By the time of this interview, Hearn had left R3 in 2021, founded Hydraulic Software, and was preparing to join Oracle as a software architect. Despite his [2016 departure from Bitcoin](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/), he remained one of the most historically significant witnesses to Bitcoin's earliest period.
+By the time of this interview, Hearn had left R3 in 2021, founded Hydraulic Software, and was preparing to join Oracle as a software architect — well after [his 2016 departure from Bitcoin](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/).

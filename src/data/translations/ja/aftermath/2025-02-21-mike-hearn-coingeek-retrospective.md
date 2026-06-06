@@ -55,7 +55,7 @@ CoinGeek Weekly Livestream のインタビューで、[サトシ・ナカモト]
 <!-- audit:quote-skip -->
 > 「福音主義的な人物たちが現れると、彼は苛立ちを覚えたようで、理解できることだが姿を消した」
 
-この評価 — サトシが外部からの脅威ではなく、自身のコミュニティ内の狂信性によって立ち去った — は、メールを通じてサトシを直接知る人物からの最も直接的な証言の一つである。
+この評価 — サトシが外部からの脅威ではなく、自身のコミュニティ内の狂信性によって立ち去った — は、サトシと直接メールを交わした人物による一次証言である。
 
 ### 「福音主義的な人物」とは誰を指すか — WikiLeaks 「bring it on」スレッド
 
@@ -84,4 +84,4 @@ CoinGeek Weekly Livestream のインタビューで、[サトシ・ナカモト]
 
 「Bitcoin Core」という名称の採用も後悔しているとし、その命名がプロジェクト内の不健全な権力構造を強化したと指摘した。
 
-このインタビューの時点で、ハーンは 2021 年に R3 を退社し、Hydraulic Software を設立し、Oracle でのソフトウェアアーキテクト職に就く準備をしていた。[2016 年のビットコインからの離脱](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)にもかかわらず、ハーンはビットコインの最初期を証言する歴史的に最も重要な人物の一人であり続けている。
+このインタビューの時点で、ハーンは 2021 年に R3 を退社し、Hydraulic Software を設立し、Oracle でのソフトウェアアーキテクト職に就く準備をしていた — [2016 年のビットコインからの離脱](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)からかなり後のことだ。

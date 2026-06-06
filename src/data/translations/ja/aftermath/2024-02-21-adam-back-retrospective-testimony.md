@@ -80,6 +80,6 @@ translationStatus: complete
 
 [COPA 対クレイグ・ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)で、バックはロンドン高等法院で直接証言し、サトシとの完全な 5 通のメールチェーンを証拠として提出した。2008年8月20日以降のメールが初めて公開された。
 
-バックは 2014 年に Blockstream を設立し、最も著名なビットコインインフラ企業の一つとなった。早期に関与しなかったことへの後悔にもかかわらず、彼の Hashcash の発明はビットコインのプルーフ・オブ・ワーク合意メカニズムの基本的な構成要素であり続けている。
+バックは 2014 年に、著名なビットコインインフラ企業である Blockstream を設立した。早期に関与しなかったことへの後悔にもかかわらず、彼の Hashcash の発明はビットコインのプルーフ・オブ・ワーク合意メカニズムの基本的な構成要素であり続けている。
 
 本宣誓証言は三つの後続読解において根拠的な一次証拠として扱われる。 [アダム・バック伝記](/BitcoinArchive/ja/participants/adam-back/)は本証言を「証言とメール公開」専用節で再訪し、参加者年表でも明示された節目の一つとして錨を下ろす。 [アダム・バック同定仮説](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)は §3.2 の反証を本証言に置く ― 仮説に対して下された宣誓陳述として ― そして §1 では公的記録における中心的証拠として位置付ける。 [2026 年ニューヨーク・タイムズのカレイロウ取材](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)は「既存アーカイブ文脈」節で本証言を引き、ニューヨーク・タイムズ取材でのバックの否認が宣誓下で繰り返されているパターンとして扱う。
