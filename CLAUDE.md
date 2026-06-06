@@ -79,6 +79,10 @@ via empty commit `e488690c`.
 pages). Use `npm run check` for validation; it runs in seconds. Full
 builds run only in CI (GitHub Actions).
 
+The verification scripts `check` / `build` run — their tier (`check-*`
+gate vs `audit-*` manual), ports, and where each runs — are catalogued
+in `scripts/CHECKS.md`, kept honest by `check-registry`.
+
 ## Editorial Rules
 
 All editorial rules: see STYLE_GUIDE.md and STYLE_GUIDE_JA.md

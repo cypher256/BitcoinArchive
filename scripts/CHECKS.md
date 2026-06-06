@@ -6,6 +6,12 @@ files in `scripts/` and the ports in `package.json`) on every
 `npm run check` and `npm run build`: it fails on an unregistered script,
 a ghost entry, or a prefix/wiring mismatch.
 
+This ledger owns only the **tier and wiring** of each script (which
+prefix, which port, where it runs). The editorial rule a check enforces
+— thresholds, what counts as a violation, exceptions — stays in
+`STYLE_GUIDE.md` / `STYLE_GUIDE_JA.md`, which remain its single source
+of truth; the role column below is a one-line pointer, not a restatement.
+
 ## Convention (shared across repos — two prefixes only)
 
 - **`check-*`** — gate. Deterministic, or equipped with a committed
@@ -55,7 +61,7 @@ a ghost entry, or a prefix/wiring mismatch.
 | `check-ja-block-notation.mjs` | JA block notation (half-width space before the number) | none | check + build · `check:ja-block-notation` |
 | `check-ja-spacing.mjs` | JA × ASCII half-width spacing convention | none | check + build · `check:ja-spacing` |
 | `check-ja-glossary.mjs` | JA terminology glossary + trailing long-vowel | none (`.ja-glossary-ignore`) | check + build · `check:ja-glossary` |
-| `check-description-length.mjs` | `description` length cap (EN 200 / JA 100) | none | check + build (`--strict`) · `check:description-length` |
+| `check-description-length.mjs` | `description` length cap (per STYLE_GUIDE.md Description Policy) | none | check + build (`--strict`) · `check:description-length` |
 | `check-source-duplication.mjs` | `sourceUrl` not duplicated in `secondarySources[]` | none | check + build (`--strict`) · `check:source-duplication` |
 | `check-quotes.mjs` | Quote attribution chain (markers ↔ `quotes[]`) | none | check + build · `check:quotes` |
 | `check-tweet-metadata.mjs` | Tweet `xHandle` invariants | none | check + build (aggregate) |
