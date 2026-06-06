@@ -25,6 +25,7 @@
  */
 import { visit } from 'unist-util-visit';
 import { participantDisplayNamesJaBySlug } from '../i18n/participants.ts';
+import { resolveAvatar } from '../data/avatars.ts';
 import { MIRROR_BASE } from '../../site-config.mjs';
 
 const QUOTE_MARKER_RE = /^<!--\s*quote:\s*(\w+)\s*-->$/;
@@ -155,11 +156,16 @@ function formatAttribution(quote, locale, base) {
     text = date ? `Quote from: ${name} on ${date}` : (name ? `Quote from: ${name}` : 'Quote');
   }
 
-  // The chip itself stays neutral; speaker identification happens on
-  // the associated <blockquote> via data-speaker (set in the visitor
-  // below), matching the existing blockquote[data-speaker] convention.
+  // Avatar (real photo or auto-generated) so the speaker is
+  // identifiable at a glance. Quotes without a personSlug (rare) get no
+  // avatar. Speaker accent is still carried by the associated
+  // <blockquote> via data-speaker (set in the visitor below), matching
+  // the existing blockquote[data-speaker] convention.
+  const avatar = quote.personSlug
+    ? `<img class="quote-avatar" src="${resolveAvatar(quote.personSlug, base)}" alt="" width="28" height="28" loading="lazy" />`
+    : '';
   const inner = entryPath ? `<a href="${entryPath}">${text}</a>` : text;
-  return `<cite class="quote-attribution">${inner}</cite>`;
+  return `<cite class="quote-attribution">${avatar}${inner}</cite>`;
 }
 
 /**

@@ -460,30 +460,73 @@ blockquote[data-speaker="satoshi"] {
   border-left-color: var(--color-satoshi);
 }
 
-/* Quote attribution chip rendered by remark-quote-blocks. Sits as a
-   <cite> immediately before the blockquote and links to the cited
-   primary-source entry (or the participant biography as fallback).
-   The chip itself is a quiet caption with a normal-looking link;
-   speaker identification (e.g. Satoshi's accent colour) is carried by
-   the associated <blockquote>'s left border via data-speaker, which
-   the remark plugin sets from the quote's personSlug. */
+/* Quote attribution chip rendered by remark-quote-blocks: an avatar
+   (real photo or auto-generated) plus the speaker caption, sitting
+   above the quoted blockquote. The avatar makes the speaker
+   identifiable at a glance; the blockquote below reads as that
+   speaker's bubble. Speaker accent is also carried by the blockquote's
+   data-speaker, which the remark plugin sets from the quote's
+   personSlug. */
 .quote-attribution {
-  display: block;
-  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-style: normal;
   font-size: 0.9em;
   margin-top: 1.5em;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.35em;
   color: var(--color-text-muted);
+}
+.quote-attribution .quote-avatar {
+  width: 1.75em;
+  height: 1.75em;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--color-bg-alt);
 }
 .quote-attribution a {
   color: var(--color-link);
 }
-/* Collapse the gap between the chip and its associated blockquote so
-   they read as a single attributed quote unit instead of two stacked
-   blocks. Without this, the blockquote's default margin-top would
-   re-open the visual gap. */
+/* Quoted blockquotes in entry bodies AND thread message bodies render
+   as speaker "bubbles": rounded, outlined, on the alt surface, upright
+   text. Both containers are listed because the same quoted content
+   renders on the entry page (.entry-content) and the thread page
+   (.message-body). This covers the WHOLE quote run, not just the
+   chip-led first quote — same-speaker continuation quotes that omit the
+   `<!-- quote -->` chip, nested quotes, and quotes whose attribution is
+   missing all become bubbles, so a multi-quote exchange reads as one
+   consistent thread instead of a mix of bubbles and plain left-border
+   quotes. data-speaker tints the outline for Satoshi (set by the remark
+   plugins on the speaker's blockquotes, chip or no chip). */
+.entry-content blockquote,
+.message-body blockquote {
+  border: 1px solid var(--color-border);
+  border-radius: 0.2em 0.8em 0.8em 0.8em;
+  background: var(--color-bg-alt);
+  font-style: normal;
+}
+.entry-content blockquote[data-speaker="satoshi"],
+.message-body blockquote[data-speaker="satoshi"] {
+  border-color: var(--color-satoshi);
+}
+/* The chip sits directly above its bubble (no gap). The bubble keeps the
+   text's left edge so a chip-led quote lines up with the chip-less
+   continuation quotes from the same speaker. */
 .quote-attribution + blockquote {
   margin-top: 0;
+}
+/* Satoshi's avatar is generated with a transparent background; the fill
+   is applied here so it tracks --color-satoshi in both light and dark
+   themes, matching the bubble outline exactly. Matched by src so every
+   avatar slot (quote chip, participant page, dossier card) picks it up
+   without per-call classes. !important overrides each component's
+   placeholder background (.quote-avatar / .participant-avatar /
+   .character-avatar set background: var(--color-bg-alt) in scoped
+   styles, which would otherwise win on Astro's scope-attribute
+   specificity). */
+img[src$="/avatars/satoshi-nakamoto.png"] {
+  background: var(--color-satoshi) !important;
 }
 
 code {

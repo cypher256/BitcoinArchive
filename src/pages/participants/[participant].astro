@@ -4,6 +4,7 @@ import EntryCard from '../../components/EntryCard.astro';
 import { render } from 'astro:content';
 import { useTranslations, getEntries, getBiographyForParticipant, localePath, absoluteUrl } from '../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
+import { resolveAvatar } from '../../data/avatars';
 
 export async function getStaticPaths() {
   const { getEntries, getDisplayEntries } = await import('../../i18n/utils');
@@ -47,6 +48,9 @@ export async function getStaticPaths() {
 
 const lang = 'en';
 const t = useTranslations(lang);
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
 const { participantSlug, participantName, prevParticipant, nextParticipant, hasJa } = Astro.props;
 const entries = await getEntries(lang);
 const filtered = entries.filter((e) =>
@@ -117,8 +121,13 @@ const structuredData = [
         <a href={localePath(`/participants/${nextParticipant.slug}/`, lang)} class="nav-next">{nextParticipant.name} &rarr;</a>
       ) : <span />}
     </nav>
-    <h1>{participantName}{lifeDates && <span class="life-dates"> {lifeDates}</span>}</h1>
-    {bioSubtitle && <p class="bio-subtitle">{bioSubtitle}</p>}
+    <div class="participant-head">
+      <img class="participant-avatar" src={resolveAvatar(participantSlug, base)} alt="" width="72" height="72" />
+      <div class="participant-head-text">
+        <h1>{participantName}{lifeDates && <span class="life-dates"> {lifeDates}</span>}</h1>
+        {bioSubtitle && <p class="bio-subtitle">{bioSubtitle}</p>}
+      </div>
+    </div>
 
     {calloutTarget && calloutSpec && (
       <a class="hypothesis-callout" href={localePath(`/entries/${calloutTarget.id}/`, lang)}>
@@ -180,7 +189,9 @@ const structuredData = [
     color: var(--color-text-muted);
   }
   .bio-subtitle {
-    margin: 0 0 1.5rem 0;
+    /* No bottom margin here — it lives on .participant-head so it does
+       not shift the avatar's vertical centre (see .participant-head). */
+    margin: 0.15rem 0 0;
     font-size: 1.1rem;
     line-height: 1.5;
     color: var(--color-text-muted);
@@ -243,5 +254,29 @@ const structuredData = [
   }
   .nav-next {
     margin-left: auto;
+  }
+  .participant-head {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    /* The avatar is centred against the whole name + subtitle block, so
+       the bottom gap that used to sit on .bio-subtitle is moved here —
+       a margin on the subtitle would extend the text block's margin-box
+       and pull the vertical centre (and the avatar) downward. */
+    margin-bottom: 1.5rem;
+  }
+  .participant-avatar {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: var(--color-bg-alt);
+  }
+  .participant-head-text {
+    min-width: 0;
+  }
+  .participant-head-text h1 {
+    margin: 0;
   }
 </style>
