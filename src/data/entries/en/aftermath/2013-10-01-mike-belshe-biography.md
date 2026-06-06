@@ -45,7 +45,7 @@ Belshe served as CEO from founding onward (with intermittent shifts in formal ti
 
 ## New York Agreement and SegWit2x (2017)
 
-Belshe was one of the principal signatories of the [New York Agreement](https://en.wikipedia.org/wiki/SegWit2x) on May 23, 2017 at the Consensus 2017 conference. The agreement bundled two protocol commitments: activating Segregated Witness on the Bitcoin main chain (which shipped in August 2017), followed three months later by a hard-fork increase to a 2 MB block-size limit (the "2x" component). Belshe was particularly visible in the second half — the SegWit2x hard fork — as a representative of the major Bitcoin businesses that had signed the agreement.
+Belshe was one of the principal signatories of the New York Agreement on May 23, 2017 at the Consensus 2017 conference. The agreement bundled two protocol commitments: activating Segregated Witness on the Bitcoin main chain (which shipped in August 2017), followed three months later by a hard-fork increase to a 2 MB block-size limit (the "2x" component). Belshe was particularly visible in the second half — the SegWit2x hard fork — as a representative of the major Bitcoin businesses that had signed the agreement.
 
 By October 2017 it was clear that the SegWit2x hard fork would not have community-wide support. Bitcoin Core developers had been publicly opposed throughout, the user-activated soft fork (UASF) movement had demonstrated that node operators could enforce protocol rules independently of mining hashrate, and several major exchanges signaled they would not list a SegWit2x chain.
 

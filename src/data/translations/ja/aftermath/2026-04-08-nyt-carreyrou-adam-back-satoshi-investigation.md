@@ -61,7 +61,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2026 年 4 月 8 日、[ジョン・カレイロウ](https://en.wikipedia.org/wiki/John_Carreyrou) — Theranos 事件を暴いたピューリッツァー賞受賞ジャーナリスト — は、約 1 万語のニューヨーク・タイムズ調査記事で、Blockstream の CEO で Hashcash の発明者である[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の仮名の中の人として最も可能性が高いと結論づけた。バックは正体を否定した。
+2026 年 4 月 8 日、ジョン・カレイロウ — Theranos 事件を暴いたピューリッツァー賞受賞ジャーナリスト — は、約 1 万語のニューヨーク・タイムズ調査記事で、Blockstream の CEO で Hashcash の発明者である[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の仮名の中の人として最も可能性が高いと結論づけた。バックは正体を否定した。
 
 **調査の方法論：**
 
@@ -83,7 +83,7 @@ translationStatus: complete
 
 **バックの応答：**
 
-公開後の Yahoo Finance による [2026 年 4 月 10 日のインタビュー](https://finance.yahoo.com/markets/crypto/article/adam-back-explains-why-hes-not-bitcoin-creator-satoshi-nakamoto-172837820.html)で、バックは方法論への異議を明確に述べた：
+公開後の Yahoo Finance による 2026 年 4 月 10 日のインタビューで、バックは方法論への異議を明確に述べた：
 
 <!-- audit:quote-skip -->
 > 「確証バイアスの要素が含まれている」
@@ -113,7 +113,7 @@ translationStatus: complete
 
 **批判的評価：**
 
-ビットコイン関連メディアでの報道は、特定への懐疑が大勢を占めた。[Fortune](https://fortune.com/2026/04/08/who-is-the-real-inventor-of-bitcoin-satoshi-nakamoto/) は調査が「サトシを発見したかもしれない」と表現し、断定を避けた。[Unchained](https://unchainedcrypto.com/nyt-names-adam-back-as-satoshi-nakamoto-he-denies-it-and-the-crypto-community-agrees-with-him-unchained/) はビットコインコミュニティの大半がバックの否定に同意していると報じた。方法論はビットコインコミュニティの応答で「示唆的だが決定的ではない」と広く位置づけられた — カフィエロ自身が結果を「不確定」と評し、フィニーがほぼ並んだという事実が大きい。
+ビットコイン関連メディアでの報道は、特定への懐疑が大勢を占めた。Fortune は調査が「サトシを発見したかもしれない」と表現し、断定を避けた。Unchained はビットコインコミュニティの大半がバックの否定に同意していると報じた。方法論はビットコインコミュニティの応答で「示唆的だが決定的ではない」と広く位置づけられた — カフィエロ自身が結果を「不確定」と評し、フィニーがほぼ並んだという事実が大きい。
 
 *[編者注：カレイロウの調査は、主流メディアにおいて公開された文体計量ベースのサトシ特定のうち、最も目立つもの。2014 年の Newsweek による[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の特定は名前一致と物理的状況証拠に依拠していた。2024 年の [HBO ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)による[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)の特定は、単一のフォーラム投稿のタイミング論に依拠していた。カレイロウの方法論 — 定義された母集団に対する文体計量比較と独立した言語学的レビュー — は構造的にはより厳密だが、本人が委託したレビュアー自身が「不確定」と評している点は本記事の固有の特徴である。]*
 

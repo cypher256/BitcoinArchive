@@ -52,7 +52,7 @@ timeline
 ```
 
 ### Winny (2002)
-While serving as a research associate in the Graduate School of Information Science and Technology at the University of Tokyo, Kaneko released a P2P file-sharing system called **Winny** on the [2channel forum](https://en.wikipedia.org/wiki/2channel) in May 2002. Winny used a routing scheme designed to make the origin of each shared file deniable, and grew at peak to a network of millions of Japanese users. Its design drew on Freenet, Gnutella, and the anonymous-routing literature.
+While serving as a research associate in the Graduate School of Information Science and Technology at the University of Tokyo, Kaneko released a P2P file-sharing system called **Winny** on the 2channel forum in May 2002. Winny used a routing scheme designed to make the origin of each shared file deniable, and grew at peak to a network of millions of Japanese users. Its design drew on Freenet, Gnutella, and the anonymous-routing literature.
 
 Kaneko posted his development announcement anonymously to the 2channel download-software board and continued to develop the software in dialogue with users on that thread. His first post on the thread carried sequence number 47, which the users adopted as his handle — from that point until his real name was disclosed, he was known to the Winny community as **「47 氏」** ("Mr. 47").
 

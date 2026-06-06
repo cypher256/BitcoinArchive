@@ -30,14 +30,14 @@ relatedEntries:
   - aftermath/2013-10-01-mike-belshe-biography
 ---
 
-On November 8, 2017, [Mike Belshe](https://en.wikipedia.org/wiki/SegWit2x) announced on the `bitcoin-segwit2x@lists.linuxfoundation.org` mailing list that the SegWit2x hard fork — scheduled for block 494784, approximately one week later — was being suspended. The full message:
+On November 8, 2017, Mike Belshe announced on the `bitcoin-segwit2x@lists.linuxfoundation.org` mailing list that the SegWit2x hard fork — scheduled for block 494784, approximately one week later — was being suspended. The full message:
 
 <!-- audit:quote-skip -->
 > "Our goal has always been a smooth upgrade for Bitcoin. Although we strongly believe in the need for a larger block size, there is something we believe is even more important: keeping the community together. Unfortunately, it is clear that we have not built sufficient consensus for a clean blocksize upgrade at this time. Continuing on the current path could divide the community and be a setback to Bitcoin's growth. This was never the goal of Segwit2x."
 
 The post was co-signed by Belshe, Wences Casares, Jihan Wu, Jeff Garzik, Peter Smith, and Erik Voorhees — five of the original signatories of the New York Agreement.
 
-SegWit2x had been the central commitment of the [New York Agreement](https://en.wikipedia.org/wiki/SegWit2x) (NYA), reached at the Consensus 2017 conference on May 23, 2017 by representatives of 58 major Bitcoin businesses and miners. The agreement bundled two protocol changes:
+SegWit2x had been the central commitment of the New York Agreement (NYA), reached at the Consensus 2017 conference on May 23, 2017 by representatives of 58 major Bitcoin businesses and miners. The agreement bundled two protocol changes:
 
 - **First half:** Activate Segregated Witness (BIP 141) on the main chain via the BIP 91 lock-in mechanism. This shipped on August 24, 2017.
 - **Second half:** Hard-fork the Bitcoin protocol to a 2 MB block size limit, three months after SegWit activation. This was the half cancelled on November 8.

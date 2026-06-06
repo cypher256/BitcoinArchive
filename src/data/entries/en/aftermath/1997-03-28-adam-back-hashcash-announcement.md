@@ -71,7 +71,7 @@ From the *How does this fit in with digicash* section (verbatim):
 >    * Hashcash is free, all you've got to do is burn some cycles on your PC. It is in keeping with net culture of free discourse, where the financially challenged can duke it out with millionaires, retired government officials, etc on equal terms.
 >    * Hashcash may provide us with a fall back method for controling spam if digicash goes sour (gets outlawed or required to escrow user identities)."
 
-This places Hashcash, from the day of its public announcement, as a complement to digital-cash infrastructure — explicitly modelled against David Chaum's [DigiCash / Ecash](https://en.wikipedia.org/wiki/Ecash) (then the most-developed digital-cash system) — rather than as a fully separate technical category.
+This places Hashcash, from the day of its public announcement, as a complement to digital-cash infrastructure — explicitly modelled against David Chaum's DigiCash / Ecash (then the most-developed digital-cash system) — rather than as a fully separate technical category.
 
 ## The minting metaphor: 1997 implementation, 2002 paper
 

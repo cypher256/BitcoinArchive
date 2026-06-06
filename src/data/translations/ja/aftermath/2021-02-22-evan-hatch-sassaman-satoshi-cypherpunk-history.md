@@ -46,7 +46,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2021 年 2 月 22 日、**エヴァン・ハッチ** — 暗号通貨ゲーミングプラットフォーム Worlds.org の創業者 — が Medium に[「レン・サッサマンとサトシ：サイファーパンク史」](https://evanhatch.medium.com/len-sassaman-and-satoshi-e483c85c2b10)を公開した。本記事は[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)仮名の中の人物だったとする仮説の最も多く引用される公的定式化であり、後続のジャーナリズムにおいて本仮説の基礎参照源であり続けている。
+2021 年 2 月 22 日、**エヴァン・ハッチ** — 暗号通貨ゲーミングプラットフォーム Worlds.org の創業者 — が Medium に「レン・サッサマンとサトシ：サイファーパンク史」を公開した。本記事は[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)仮名の中の人物だったとする仮説の最も多く引用される公的定式化であり、後続のジャーナリズムにおいて本仮説の基礎参照源であり続けている。
 
 **ハッチが提示する論拠：**
 
@@ -80,7 +80,7 @@ translationStatus: complete
 
 **サッサマンの未亡人の応答：**
 
-[メレディス・パターソン](https://en.wikipedia.org/wiki/Meredith_L._Patterson) — レン・サッサマンの未亡人であり自身もセキュリティ研究者 — は、亡夫がサトシ・ナカモトであったとの説を公的に否定している。否定は彼女の公開発信および取材を通じ一貫している。
+メレディス・パターソン — レン・サッサマンの未亡人であり自身もセキュリティ研究者 — は、亡夫がサトシ・ナカモトであったとの説を公的に否定している。否定は彼女の公開発信および取材を通じ一貫している。
 
 **方法論的位置づけ：**
 

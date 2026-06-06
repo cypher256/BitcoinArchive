@@ -50,6 +50,8 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Blockstream"
   - name: "Wikipedia — Bitmain"
     url: "https://en.wikipedia.org/wiki/Bitmain"
+  - name: "CoinJournal — Bitcoin Foundation 'effectively bankrupt' (April 2015)"
+    url: "https://coinjournal.net/news/recently-elected-board-member-olivier-janssens-reveals-all-bitcoin-foundation-broke-gavin-seems-to-confirm/"
 relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
@@ -115,7 +117,7 @@ gantt
 >
 > — マイク・ハーン、[「ビットコイン実験の決着」](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) (2016 年 1 月 14 日)
 
-[アンドレセンのリードメンテナ就任表明](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) (2010 年 12 月 19 日) はサトシの沈黙より 4 か月前のもので、対象はコードベースであってプロトコルではなかった。2011 年以後、コードベースには保守者がいたが、プロトコルには誰もいなかった。ビットコイン財団 (2012 年 9 月設立) はその役割を引き受けようとしたが、[2015 年までに財政的に破綻している](https://coinjournal.net/news/recently-elected-board-member-olivier-janssens-reveals-all-bitcoin-foundation-broke-gavin-seems-to-confirm/)。コードベースの保守者 (アンドレセン、続いて 2014 年 4 月以降の[ヴラディミール・ヴァン・デア・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/)) は事実上の決定者だったが、その権威は慣習的なものであって、指名されたものではなかった。
+[アンドレセンのリードメンテナ就任表明](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) (2010 年 12 月 19 日) はサトシの沈黙より 4 か月前のもので、対象はコードベースであってプロトコルではなかった。2011 年以後、コードベースには保守者がいたが、プロトコルには誰もいなかった。ビットコイン財団 (2012 年 9 月設立) はその役割を引き受けようとしたが、2015 年までに財政的に破綻している。コードベースの保守者 (アンドレセン、続いて 2014 年 4 月以降の[ヴラディミール・ヴァン・デア・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/)) は事実上の決定者だったが、その権威は慣習的なものであって、指名されたものではなかった。
 
 これがあとで起きたすべての前提である。語彙の非対称、経済的重み、三層構造は、この真空に流れ込んだものである。
 
@@ -124,9 +126,9 @@ gantt
 [Bitcoin XT 立ち上げ (2015 年 8 月 15 日)](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/) の頃には、ビットコインの経済的表面積は趣味プロジェクトと呼べる規模を遥かに超えていた:
 
 - **価格**。2015 年 8 月でおよそ 230 ドル、2013 年末には 1,000 ドル超のピークがあった。
-- **採掘**。ASIC 機材が GPU・CPU 採掘を駆逐していた。[Bitmain](https://en.wikipedia.org/wiki/Bitmain) (2013 年 10 月設立、共同設立者[ジハン・ウー](/BitcoinArchive/ja/participants/jihan-wu/)) が支配的な ASIC 製造業者だった。採掘は資本集約的・地理的に集約された産業活動になっており、規則の継続性に経済的に依存していた。
+- **採掘**。ASIC 機材が GPU・CPU 採掘を駆逐していた。Bitmain (2013 年 10 月設立、共同設立者[ジハン・ウー](/BitcoinArchive/ja/participants/jihan-wu/)) が支配的な ASIC 製造業者だった。採掘は資本集約的・地理的に集約された産業活動になっており、規則の継続性に経済的に依存していた。
 - **取引所と保管**。主要取引所 (Bitfinex, Coinbase, Kraken) は機関投資家の資金フローを扱っていた。保管サービスは大きな残高を守っていた。BitGo (2013 年設立、最高経営責任者[マイク・ベルシェ](/BitcoinArchive/ja/participants/mike-belshe/)、後の 2017 年 [SegWit2x](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) 署名者の一人) が代表例。
-- **保守側の企業圏**。[Blockstream](https://en.wikipedia.org/wiki/Blockstream) (2014 年 11 月設立、[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)、[グレゴリー・マクスウェル](/BitcoinArchive/ja/participants/gregory-maxwell/)、ピーター・ウィレ、ホルヘ・ティモン、マット・コラロ等が共同設立) は複数の Bitcoin Core 貢献者を雇用し、研究と周辺ツール開発 (サイドチェーン、ライトニング、Liquid) を進めていた。
+- **保守側の企業圏**。Blockstream (2014 年 11 月設立、[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)、[グレゴリー・マクスウェル](/BitcoinArchive/ja/participants/gregory-maxwell/)、ピーター・ウィレ、ホルヘ・ティモン、マット・コラロ等が共同設立) は複数の Bitcoin Core 貢献者を雇用し、研究と周辺ツール開発 (サイドチェーン、ライトニング、Liquid) を進めていた。
 - **拡大派の企業圏**。[ロジャー・ヴァー](/BitcoinArchive/ja/participants/roger-ver/)の bitcoin.com は拡大派と整合した最も目立つ商業的拠点だった。Bitmain のハッシュレート占有はオンチェーン拡張と商業的に整合していた。後に [nChain](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/) (カルヴィン・エアー、クレイグ・ライト) が BSV 分岐の企業基盤を提供する。
 
 これらの条件のもとで鍵となるパラメーター (ブロックサイズ、手数料市場、ソフトフォーク有効化方針) が議論されると、「純粋な技術判断」は収益、ハッシュレートの整合、資産評価から切り離せなくなる。各陣営は一貫した技術的論拠を提示でき、しかもその一貫した技術的論拠は商業的立場と整合していた。この整合自体は失格の理由ではない — それは、プロジェクトが経済的に大きくなったときに起きることである。ただし、この整合は、「参加者は技術的に正しいことだけを議論していた」という前提を取り去る。

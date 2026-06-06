@@ -50,6 +50,8 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Blockstream"
   - name: "Wikipedia — Bitmain"
     url: "https://en.wikipedia.org/wiki/Bitmain"
+  - name: "CoinJournal — Bitcoin Foundation 'effectively bankrupt' (April 2015)"
+    url: "https://coinjournal.net/news/recently-elected-board-member-olivier-janssens-reveals-all-bitcoin-foundation-broke-gavin-seems-to-confirm/"
 relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
@@ -115,7 +117,7 @@ There was no public successor announcement, no legal entity holding the project,
 >
 > — Mike Hearn, ["The resolution of the Bitcoin experiment"](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) (January 14, 2016)
 
-[Andresen's lead-maintainer announcement](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) (December 19, 2010) preceded Satoshi's silence by four months and was scoped to the codebase, not the protocol. After 2011 the codebase had a maintainer; the protocol had no one. The Bitcoin Foundation (founded September 2012) attempted that role and [collapsed financially by 2015](https://coinjournal.net/news/recently-elected-board-member-olivier-janssens-reveals-all-bitcoin-foundation-broke-gavin-seems-to-confirm/). The codebase maintainers (Andresen, then [Wladimir van der Laan](/BitcoinArchive/participants/wladimir-van-der-laan/) from April 2014) were de facto deciders, but their authority was conventional, not designated.
+[Andresen's lead-maintainer announcement](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) (December 19, 2010) preceded Satoshi's silence by four months and was scoped to the codebase, not the protocol. After 2011 the codebase had a maintainer; the protocol had no one. The Bitcoin Foundation (founded September 2012) attempted that role and collapsed financially by 2015. The codebase maintainers (Andresen, then [Wladimir van der Laan](/BitcoinArchive/participants/wladimir-van-der-laan/) from April 2014) were de facto deciders, but their authority was conventional, not designated.
 
 This is the precondition that everything else fills. The naming asymmetry, the economic weight, and the three-layer structure are what flowed in.
 
@@ -124,9 +126,9 @@ This is the precondition that everything else fills. The naming asymmetry, the e
 By the time of the [Bitcoin XT launch (August 15, 2015)](/BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/), Bitcoin's economic surface had grown well past anything resembling a hobby project:
 
 - **Price.** Approximately $230 in August 2015, with prior peaks above $1,000 in late 2013.
-- **Mining.** ASIC hardware had displaced GPU and CPU mining. [Bitmain](https://en.wikipedia.org/wiki/Bitmain) (founded October 2013, [Jihan Wu](/BitcoinArchive/participants/jihan-wu/) co-founder) was the dominant ASIC manufacturer. Mining had become an industrial activity — capital-intensive, geographically clustered, and economically dependent on rule continuity.
+- **Mining.** ASIC hardware had displaced GPU and CPU mining. Bitmain (founded October 2013, [Jihan Wu](/BitcoinArchive/participants/jihan-wu/) co-founder) was the dominant ASIC manufacturer. Mining had become an industrial activity — capital-intensive, geographically clustered, and economically dependent on rule continuity.
 - **Exchanges and custody.** Major exchanges (Bitfinex, Coinbase, Kraken) carried institutional flow. Custody services protected significant balances; BitGo (founded 2013, [Mike Belshe](/BitcoinArchive/participants/mike-belshe/) CEO, later a 2017 [SegWit2x](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) signatory) was a representative example.
-- **Corporate orbit on the conservative side.** [Blockstream](https://en.wikipedia.org/wiki/Blockstream) (founded November 2014, co-founded by [Adam Back](/BitcoinArchive/participants/adam-back/), [Gregory Maxwell](/BitcoinArchive/participants/gregory-maxwell/), Pieter Wuille, Jorge Timón, Matt Corallo, and others) employed several Bitcoin Core contributors on a research-and-tooling agenda (sidechains, Lightning, Liquid).
+- **Corporate orbit on the conservative side.** Blockstream (founded November 2014, co-founded by [Adam Back](/BitcoinArchive/participants/adam-back/), [Gregory Maxwell](/BitcoinArchive/participants/gregory-maxwell/), Pieter Wuille, Jorge Timón, Matt Corallo, and others) employed several Bitcoin Core contributors on a research-and-tooling agenda (sidechains, Lightning, Liquid).
 - **Corporate orbit on the larger-block side.** [Roger Ver](/BitcoinArchive/participants/roger-ver/)'s bitcoin.com was the most visible commercial property aligned with the larger-block faction. Bitmain's hashrate position aligned commercially with on-chain scaling. Later, [nChain](/BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/) (Calvin Ayre, Craig Wright) provided the corporate base for the BSV split.
 
 When a load-bearing parameter (block size, fee market, soft-fork activation policy) is debated under these conditions, "purely technical" judgment is no longer separable from revenue, hashrate alignment, and asset valuation. Each side could point to a coherent technical argument, and each side's coherent technical argument also happened to align with its commercial position. That alignment is not by itself a disqualification — it is what happens when a project becomes economically large. It does, however, remove the assumption that participants were arguing only about what was technically right.

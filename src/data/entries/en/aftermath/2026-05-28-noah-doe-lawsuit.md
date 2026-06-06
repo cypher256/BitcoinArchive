@@ -54,7 +54,7 @@ flowchart TD
     class J,E,X gap
 ```
 
-In May 2026, Galaxy Digital's research head Alex Thorn published an analysis classifying the 39,069 defendant addresses against [Sergio Demian Lerner's Patoshi nonce signature](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/). After excluding addresses linked to the [Bitfinex 2016 hack](https://en.wikipedia.org/wiki/2016_Bitfinex_hack) and known exchange wallets, Thorn identified **21,923 addresses (56% of the defendants) as carrying the Patoshi pattern** — approximately 1.096 million BTC, in alignment with Lerner's earlier estimate of ~1.1M BTC mined by the single early miner widely understood to be Satoshi Nakamoto himself.
+In May 2026, Galaxy Digital's research head Alex Thorn published an analysis classifying the 39,069 defendant addresses against [Sergio Demian Lerner's Patoshi nonce signature](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/). After excluding addresses linked to the [Bitfinex 2016 hack](/BitcoinArchive/entries/aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest/) and known exchange wallets, Thorn identified **21,923 addresses (56% of the defendants) as carrying the Patoshi pattern** — approximately 1.096 million BTC, in alignment with Lerner's earlier estimate of ~1.1M BTC mined by the single early miner widely understood to be Satoshi Nakamoto himself.
 
 The remaining 17,146 addresses likely belong to other early miners or are unclassified. None of the defendant addresses have moved coins since the dormancy thresholds applied in the complaint.
 

@@ -24,7 +24,7 @@ relatedEntries:
   - aftermath/2011-03-17-pieter-wuille-biography
 ---
 
-CoinJoin and Confidential Transactions are the two best-known proposals for Bitcoin privacy that the base layer never adopted; both are designs from Gregory Maxwell. CoinJoin (2013) lets multiple users combine payments into a single transaction to break input-to-output heuristics. Confidential Transactions (2015) hides transaction amounts behind Pedersen commitments while preserving verifiable conservation of value. Neither runs on Bitcoin's main chain, but they shaped a generation of privacy work — Wasabi, JoinMarket, [Liquid](https://en.wikipedia.org/wiki/Blockstream) — and the broader cryptocurrency-privacy literature.
+CoinJoin and Confidential Transactions are the two best-known proposals for Bitcoin privacy that the base layer never adopted; both are designs from Gregory Maxwell. CoinJoin (2013) lets multiple users combine payments into a single transaction to break input-to-output heuristics. Confidential Transactions (2015) hides transaction amounts behind Pedersen commitments while preserving verifiable conservation of value. Neither runs on Bitcoin's main chain, but they shaped a generation of privacy work — Wasabi, JoinMarket, Liquid — and the broader cryptocurrency-privacy literature.
 
 Maxwell (known online as **gmaxwell**) is a long-time Bitcoin Core contributor. He joined [Pieter Wuille](/BitcoinArchive/participants/pieter-wuille/)'s [libsecp256k1](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) effort in March 2013, co-founded Blockstream with [Adam Back](/BitcoinArchive/participants/adam-back/) and Wuille in 2014, and remains a major reviewer of the modern Bitcoin protocol stack.
 

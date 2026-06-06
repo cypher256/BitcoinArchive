@@ -41,7 +41,7 @@ The Kaneko-as-Satoshi hypothesis is the only major Satoshi-identity claim that e
 
 ## 1. Who Kaneko was
 
-For readers outside Japan, brief background (per [Kaneko's Wikipedia entry](https://en.wikipedia.org/wiki/Isamu_Kaneko) and the [Winny Wikipedia entry](https://en.wikipedia.org/wiki/Winny); for full biographical and trial-timeline coverage see the [Isamu Kaneko biography](/BitcoinArchive/participants/isamu-kaneko/). This hypothesis entry covers the hypothesis only and is not a substitute for the biography):
+For readers outside Japan, brief background (per Kaneko's Wikipedia entry and the Winny Wikipedia entry; for full biographical and trial-timeline coverage see the [Isamu Kaneko biography](/BitcoinArchive/participants/isamu-kaneko/). This hypothesis entry covers the hypothesis only and is not a substitute for the biography):
 
 Isamu Kaneko (金子勇, 1970–2013) was a Japanese researcher and software developer. He served as a research assistant at the University of Tokyo's Graduate School of Information Science and Technology and was the developer of **Winny**, a peer-to-peer file-sharing system released on the 2channel forum in May 2002. His first post on the announcement thread carried sequence number 47, and the community knew him as [**「47 氏」** ("Mr. 47")](/BitcoinArchive/participants/isamu-kaneko/) — he sustained that anonymous handle through the entire Winny development cycle until his real name was disclosed (origin detail in the biography). Winny used a routing scheme designed for plausible deniability of who originated each piece of content, and at peak the network had on the order of millions of users in Japan.
 

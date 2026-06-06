@@ -59,7 +59,7 @@ relatedEntries:
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
 ---
 
-On April 8, 2026, [John Carreyrou](https://en.wikipedia.org/wiki/John_Carreyrou) — the Pulitzer Prize–winning journalist who broke the Theranos story — published a roughly 10,000-word New York Times investigation identifying [Adam Back](/BitcoinArchive/participants/adam-back/), CEO of Blockstream and inventor of Hashcash, as the most likely person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym. Back denied the identification.
+On April 8, 2026, John Carreyrou — the Pulitzer Prize–winning journalist who broke the Theranos story — published a roughly 10,000-word New York Times investigation identifying [Adam Back](/BitcoinArchive/participants/adam-back/), CEO of Blockstream and inventor of Hashcash, as the most likely person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym. Back denied the identification.
 
 **The investigation:**
 
@@ -81,7 +81,7 @@ Carreyrou met Back in person in El Salvador (where Back currently lives) for a t
 
 **Back's responses:**
 
-In a follow-up Yahoo Finance [interview on April 10, 2026](https://finance.yahoo.com/markets/crypto/article/adam-back-explains-why-hes-not-bitcoin-creator-satoshi-nakamoto-172837820.html), Back articulated his objections to the methodology:
+In a follow-up Yahoo Finance interview on April 10, 2026, Back articulated his objections to the methodology:
 
 <!-- audit:quote-skip -->
 > "There's an element of confirmation bias in it."
@@ -111,7 +111,7 @@ The archive holds primary-source material that bears directly on the NYT claim:
 
 **Critical reception:**
 
-Coverage in cryptocurrency-focused media was mixed but largely skeptical of the identification. [Fortune](https://fortune.com/2026/04/08/who-is-the-real-inventor-of-bitcoin-satoshi-nakamoto/) emphasized that the investigation "may have" found Satoshi rather than that it had. [Unchained](https://unchainedcrypto.com/nyt-names-adam-back-as-satoshi-nakamoto-he-denies-it-and-the-crypto-community-agrees-with-him-unchained/) reported community consensus aligning with Back's denial. The methodology was widely framed in Bitcoin community responses as suggestive but not dispositive — particularly given Cafiero's own "inconclusive" characterization and the near-tie with Finney.
+Coverage in cryptocurrency-focused media was mixed but largely skeptical of the identification. Fortune emphasized that the investigation "may have" found Satoshi rather than that it had. Unchained reported community consensus aligning with Back's denial. The methodology was widely framed in Bitcoin community responses as suggestive but not dispositive — particularly given Cafiero's own "inconclusive" characterization and the near-tie with Finney.
 
 *[Context: Carreyrou's investigation is the most prominent stylometrically-based Satoshi identification published in mainstream press to date. The earlier Newsweek 2014 identification of [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) relied on name-match and physical-circumstance evidence; the 2024 [HBO documentary](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) identification of [Peter Todd](/BitcoinArchive/participants/peter-todd/) relied on a single forum-post-timing argument. Carreyrou's methodology — stylometric comparison against a defined population, with independent linguistic review — is structurally more rigorous, though it remains, on its own author's commissioned reviewer's account, inconclusive.]*
 

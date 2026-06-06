@@ -118,7 +118,7 @@ What is *not* present in the public record:
 - knightmb has not published a first-person statement confirming the identification.
 - Within knightmb's BitcoinTalk posts catalogued in this Archive, there is no mention of Tennessee, no real-name signature, and no biographical detail that maps onto a specific U.S. resident — across the entire catalogued set, the handle is operationally clean of personal identifiers.
 
-The identification has been picked up by [secondary news aggregators](https://trakx.io/resources/insights/who-is-knightmb-bitcoin-pioneer/), at least one [academic survey paper](https://arxiv.org/abs/2206.02871), and AI-generated biographical profiles. None of those sources, on inspection, traces back to a primary document — court record or first-person attestation — that closes the inferential gap.
+The identification has been picked up by secondary news aggregators, at least one [academic survey paper](https://arxiv.org/abs/2206.02871), and AI-generated biographical profiles. None of those sources, on inspection, traces back to a primary document — court record or first-person attestation — that closes the inferential gap.
 
 This Archive's [biographical entry on knightmb](/BitcoinArchive/participants/knightmb/) retains the conservative wording: "His real name has not been publicly disclosed." The material in this section is presented for context, not for endorsement.
 

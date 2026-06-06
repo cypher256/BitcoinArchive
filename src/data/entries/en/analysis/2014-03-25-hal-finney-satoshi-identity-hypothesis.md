@@ -149,7 +149,7 @@ The objection: this profile applies to several senior cypherpunks of the period 
 
 ### 3.1 The April 18, 2009 race-day alibi
 
-The strongest archive-internal counter-evidence is a chronological alibi first reported by Andy Greenberg in the [2014 Forbes feature](https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/) and formalized by [Jameson Lopp in 2023](/BitcoinArchive/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/). On Saturday April 18, 2009, Finney was running a 10-mile race in Santa Barbara, California, while Satoshi was active on the Bitcoin network.
+The strongest archive-internal counter-evidence is a chronological alibi first reported by Andy Greenberg in the [2014 Forbes feature](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) and formalized by [Jameson Lopp in 2023](/BitcoinArchive/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/). On Saturday April 18, 2009, Finney was running a 10-mile race in Santa Barbara, California, while Satoshi was active on the Bitcoin network.
 
 | Time (Pacific) | Hal Finney | Satoshi |
 |---|---|---|

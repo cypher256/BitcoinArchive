@@ -194,7 +194,9 @@ What an editorial body should contain:
 - Short blockquote excerpts of the subject's words (per the quotation
   form rules below), each anchored to a `quotes[]` entry.
 - Markdown links to participants, related archive entries, and external
-  references that support the reading.
+  sources that support the reading. Inline external (`https://`) links in
+  editorial prose are governed by the editorial-body external-link policy
+  below (§ "Editorial prose body external links").
 - Visual structure (Mermaid timelines, tables, d3 components) where
   the content shape calls for it
   (see [§ Visual Representation](#visual-representation)).
@@ -249,6 +251,26 @@ remain clickable. Internal archive links (`/BitcoinArchive/...`) and
 editor-note blocks (`*[Editor: ...]*` / `*[Context: ...]*` /
 `*[編者注：...]*` / `*[補足：...]*`) are exempt and remain clickable
 in either position.
+
+#### Editorial prose body external links
+
+Inline `https://` links in editorial prose (outside blockquotes and
+editor-notes — the positions the de-link rule above leaves clickable) are
+not free-form. A clickable external link in editorial prose is kept only
+when it exhibits the source itself; otherwise it is removed:
+
+- **An internal archive entry exists** (the URL is some entry's
+  `sourceUrl`) → link to the internal entry (`/BitcoinArchive/...`)
+  instead. Enforced by `npm run audit:external-link-redundancy`.
+- **Source exhibit** — code / repo, paper, spec, CVE, or a primary-record
+  archive that the sentence cites as evidence → keep inline.
+- **Reportage** — a news article that covered the event → move the URL to
+  `secondarySources`; leave the article name as plain text in prose.
+- **Concept reference** — a Wikipedia / encyclopaedia link explaining a
+  term or person in passing → de-link; keep the word as plain text.
+
+Verbatim entries and in-blockquote URLs are unaffected (the renderer
+de-links them; see above).
 
 ### Frontmatter `author` semantics
 

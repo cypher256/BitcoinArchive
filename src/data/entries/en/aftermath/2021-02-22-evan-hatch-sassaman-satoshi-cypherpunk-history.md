@@ -45,7 +45,7 @@ relatedEntries:
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
 ---
 
-On February 22, 2021, **Evan Hatch** — founder of the Worlds.org cryptocurrency gaming platform — published ["Len Sassaman and Satoshi: a Cypherpunk history"](https://evanhatch.medium.com/len-sassaman-and-satoshi-e483c85c2b10) on Medium. The piece is the most-cited public articulation of the hypothesis that [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) was the person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym, and it remains the foundational reference for that hypothesis in subsequent journalism.
+On February 22, 2021, **Evan Hatch** — founder of the Worlds.org cryptocurrency gaming platform — published "Len Sassaman and Satoshi: a Cypherpunk history" on Medium. The piece is the most-cited public articulation of the hypothesis that [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) was the person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym, and it remains the foundational reference for that hypothesis in subsequent journalism.
 
 **The case as Hatch presents it:**
 
@@ -79,7 +79,7 @@ A counter-analysis tradition has also developed — most prominently Peter Mille
 
 **Sassaman's widow's response:**
 
-[Meredith Patterson](https://en.wikipedia.org/wiki/Meredith_L._Patterson), Len Sassaman's widow and herself a security researcher, has publicly denied that her late husband was Satoshi Nakamoto. The denial is consistent across her public posts and interviews.
+Meredith Patterson, Len Sassaman's widow and herself a security researcher, has publicly denied that her late husband was Satoshi Nakamoto. The denial is consistent across her public posts and interviews.
 
 **Methodological framing:**
 

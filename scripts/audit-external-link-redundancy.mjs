@@ -60,7 +60,24 @@ const EXCLUDE_URLS = new Set([
   // project's published data). Body links from the aftermath to the GitHub
   // page should remain external (linking out to the source).
   'https://github.com/basvandorst/where-is-satoshi',
+  // trottier/original-bitcoin is the v0.1.0 source itself — a source
+  // exhibit cited as evidence in bitcoin-time-warp-attack, not a link
+  // that should redirect to the genesis-block-hardcode analysis entry.
+  'https://github.com/trottier/original-bitcoin',
+  // The Wayback snapshot of Satoshi's P2P Foundation profile is the
+  // primary record of the profile fields (birth date / nationality /
+  // location) in satoshi-self-statements; the internal entries sharing
+  // this sourceUrl are the 2014 return / 2016 login events, not the
+  // profile artifact itself.
+  'https://web.archive.org/web/20151225125440/http://p2pfoundation.ning.com/profile/SatoshiNakamoto',
 ]);
+
+// Verbatim entries (forum / correspondence / emails / BIP) have ALL their
+// body external links de-linked at render time by
+// rehype-strip-archive-links.mjs, so a body link there is not a live
+// navigation target and is not subject to the internal-redirect rule.
+// Mirror that plugin's directory whitelist.
+const VERBATIM_DIRS = ['/forum/', '/correspondence/', '/emails/', '/bip/'];
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -126,6 +143,8 @@ const LINK_RE = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
 
 const findings = [];
 for (const f of allFiles) {
+  // Verbatim entries: body links are de-linked at render, so skip them.
+  if (VERBATIM_DIRS.some((d) => f.replace(/\\/g, '/').includes(d))) continue;
   const c = readFileSync(f, 'utf-8');
   const fmEnd = c.indexOf('\n---\n', 4);
   const bodyStart = fmEnd > 0 ? fmEnd + 5 : 0;

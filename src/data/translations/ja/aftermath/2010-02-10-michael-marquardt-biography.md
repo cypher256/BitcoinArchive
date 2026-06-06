@@ -28,7 +28,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-今日 [BitcoinTalk](https://bitcointalk.org) が公開のまま残っていること —— サトシの 575 件の投稿、最初の商業ビットコイン取引、初期プロトコルを形成した技術議論のすべてが保持された状態で —— の大部分は **theymos** によるものである。このハンドル名でオンラインで知られるマイケル・マーカートは、2010 年末から 2011 年初頭にかけてのサトシの段階的撤退の中で、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)からビットコイン・フォーラムの管理権を受け継いだ。2011 年 8 月 1 日、[bitcoin.org/smf から bitcointalk.org への移行を完了](/BitcoinArchive/ja/entries/aftermath/2011-08-01-bitcointalk-org-migration/)、すべての投稿・スレッド・アカウントを保存した。
+今日 BitcoinTalk が公開のまま残っていること —— サトシの 575 件の投稿、最初の商業ビットコイン取引、初期プロトコルを形成した技術議論のすべてが保持された状態で —— の大部分は **theymos** によるものである。このハンドル名でオンラインで知られるマイケル・マーカートは、2010 年末から 2011 年初頭にかけてのサトシの段階的撤退の中で、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)からビットコイン・フォーラムの管理権を受け継いだ。2011 年 8 月 1 日、[bitcoin.org/smf から bitcointalk.org への移行を完了](/BitcoinArchive/ja/entries/aftermath/2011-08-01-bitcointalk-org-migration/)、すべての投稿・スレッド・アカウントを保存した。
 
 マーカートはアメリカのソフトウェア開発者である。[2010 年 2 月 10 日に BitcoinTalk への最初の投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-48/2010-02-10-whats-with-this-odd-generation/)を行い、予期せぬ 50.44 BTC のブロック報酬について質問した —— この質問がコインベースにトランザクション手数料が加算される仕組みについての最も早い公開説明の一つを引き出した。Bitcoin Wiki の長年の管理者でもある。
 

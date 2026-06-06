@@ -46,7 +46,7 @@ quotes:
     date: "2011-05-28T00:00:00Z"
 ---
 
-Published on Szabo's [Unenumerated](https://unenumerated.blogspot.com/) blog on May 28, 2011, this is the first long-form public statement Szabo wrote about Bitcoin after its launch. The timing is significant — it appeared roughly a month after [Satoshi's final private email to Gavin Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) and during the year Bitcoin first reached parity with the US dollar. The post operates on two levels: a retrospective on why the digital-cash idea took thirteen years to ship between [bit gold](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) (1998) and Bitcoin (2009), and an architectural comparison between bit gold and Bitcoin written by the closest known living designer of a precursor system.
+Published on Szabo's Unenumerated blog on May 28, 2011, this is the first long-form public statement Szabo wrote about Bitcoin after its launch. The timing is significant — it appeared roughly a month after [Satoshi's final private email to Gavin Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) and during the year Bitcoin first reached parity with the US dollar. The post operates on two levels: a retrospective on why the digital-cash idea took thirteen years to ship between [bit gold](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) (1998) and Bitcoin (2009), and an architectural comparison between bit gold and Bitcoin written by the closest known living designer of a precursor system.
 
 **The "why so long" argument.** Szabo's first claim is that the difficulty was sociological, not technical:
 
