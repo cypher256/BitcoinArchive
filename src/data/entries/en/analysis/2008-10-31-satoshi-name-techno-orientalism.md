@@ -74,7 +74,4 @@ Three analytic facts follow without requiring an intent claim:
 
 ## 5. Summary
 
-- Independent of intent, the "Satoshi Nakamoto" pseudonym lands inside the techno-orientalist symbolic field of the 1980s-90s assembled by *Blade Runner*, *Neuromancer*, *AKIRA*, *Ghost in the Shell*, and *Mondo 2000*-era cyberpunk discourse.
-- This is a structural observation about reception, not evidence of Japanese authorship or any specific identity.
-- Three analytic consequences follow without an intent claim: pre-shaped reception, biased identity-hypothesis evaluation, and an independent layer of cultural meaning carried by the pseudonym.
-- The entry contributes a description of what symbolic space the name inhabits. It makes no claim about Satoshi's identity, country, or background. The companion entry [Independent arrival at the cypherpunk core](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) addresses the intellectual position from which the system was designed.
+The observation is narrow by design: it describes the symbolic space the name occupies, not the person who chose it. That space was real and, by 2008, dense enough that any Japanese pseudonym on a deep-net cryptographic project would have landed inside it — which is exactly why it carries one operational consequence worth keeping in view: identity research has to net out the field's pull rather than be moved by it. The companion entry, [Independent arrival at the cypherpunk core](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), takes up the intellectual position from which the system was built.

@@ -93,7 +93,7 @@ The combination — no VCS, no tests, no issue tracker, `.rar` distribution — 
 
 ## 3. Implementation choices and the Windows-centric development environment
 
-The implementation-style and personal-environment evidence — Hungarian-notation variable naming, the OpenSSL dependency that Bitcoin Core later replaced with libsecp256k1, Visual C++ 6.0 as the build toolchain, and the GnuPG MingW32 / WinPT 1.2.0 PGP signature footer on Satoshi's last known emails — is treated separately in [the Windows-centric development environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/). That entry also documents Satoshi's own "much more Linux capable than me" self-positioning relative to Gavin Andresen, and the eight-month pre-SVN solo development period that overlaps with the distribution choices examined in this entry.
+The [Windows-centric development environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) carries the implementation-style evidence in full, along with Satoshi's own "much more Linux capable than me" self-positioning relative to Gavin Andresen and the eight-month pre-SVN solo period that overlaps with the distribution choices examined here.
 
 The relevant point for the Warez-scene reading: the Windows-only first release (v0.1 – v0.1.5) is one of the matching conventions in the table above, and it is consistent with the picture documented in that separate entry — not an independent surprise.
 
@@ -118,8 +118,6 @@ The picture across §1–§4 is unusual on two axes, and each axis is unusual on
 |---|---|---|
 | Security architecture | Remarkably foresighted — all nine Kaminsky-attempted exploits pre-blocked | Most informal solo developers do not pre-block sophisticated cryptographic attacks they have not personally been targeted by |
 | Implementation process | Informal — no VCS, no test suite, no issue tracker, `.rar` distribution | Most developers with documented security foresight work within teams, with version control, and with formal test infrastructure |
-
-Personal-environment markers — Hungarian notation, OpenSSL dependency, Visual C++ 6.0, MingW32 PGP footer — sit on a different axis and are collected in [Satoshi's Windows-only development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/).
 
 The combination supports a structural reading: Satoshi clearly thought hard about *what could go wrong with the system itself*, but did not work within the conventions of professional collaborative software engineering. The two competencies developed independently. This is not impossible — solo cryptographic systems builders with non-standard process backgrounds exist — but it is unusual enough to be worth naming as a distinguishing trait.
 
