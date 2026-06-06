@@ -21,8 +21,8 @@ quotes:
   - id: "q1"
     person: "Hal Finney"
     personSlug: "hal-finney"
-    date: "2008-11-07T23:40:12Z"
-    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney"
+    date: "2008-11-13T16:24:18Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney"
 ---
 
 I wanted to let you know, I just released the full implementation of the paper I sent you a few months ago, [Bitcoin v0.1](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/). Details, download and screenshots are at www.bitcoin.org

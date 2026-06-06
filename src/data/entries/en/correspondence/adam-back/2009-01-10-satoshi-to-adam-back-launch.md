@@ -28,8 +28,8 @@ quotes:
   - id: "q1"
     person: "Hal Finney"
     personSlug: "hal-finney"
-    date: "2008-11-07T23:40:12Z"
-    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney"
+    date: "2008-11-13T16:24:18Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney"
 ---
 
 Thanks for the pointers you gave to my Wei Dai's b-money paper and others.
