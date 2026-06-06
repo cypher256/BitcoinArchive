@@ -53,7 +53,7 @@ Trammell revealed that he did not immediately start mining because the feature w
 <!-- audit:quote-skip -->
 > "So I didn't actually start mining until four or five days later."
 
-This detail is significant for understanding the early network dynamics. Despite being one of the first users, Trammell was not mining for several days after first connecting, meaning the network's early hash power was even more concentrated in Satoshi's hands than previously understood.
+Despite being one of the first users, Trammell was not mining for several days after first connecting, meaning the network's early hash power was even more concentrated in Satoshi's hands than previously understood.
 
 **Speculation about being the second node:**
 

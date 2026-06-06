@@ -31,4 +31,4 @@ The attackers collected approximately 12.86 BTC (worth roughly $121,000 at the t
 
 The breach was traced to a social engineering attack on Twitter employees with access to internal tools. In July 2021, Graham Ivan Clark, a 17-year-old from Tampa, Florida, was sentenced to three years in prison after pleading guilty. Two co-conspirators, Nima Fazeli and Mason Sheppard, also faced federal charges.
 
-The incident brought renewed attention to Bitcoin's role in online fraud, but also demonstrated the transparency of the Bitcoin blockchain -- the scam addresses were immediately identified and tracked by the community. The hack highlighted both the vulnerabilities of centralized social media platforms and the traceability of on-chain Bitcoin transactions.
+The incident brought renewed attention to Bitcoin's role in online fraud, but also demonstrated the transparency of the Bitcoin blockchain -- the scam addresses were immediately identified and tracked by the community.

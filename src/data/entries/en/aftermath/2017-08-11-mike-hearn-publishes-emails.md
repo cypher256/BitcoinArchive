@@ -37,4 +37,4 @@ In August 2017, [Mike Hearn](/BitcoinArchive/participants/mike-hearn/)'s complet
 - Satoshi's thoughts on the alert system
 - The transition of project leadership
 
-These emails are among the most important primary sources for understanding Satoshi's long-term vision for Bitcoin.
+These emails are an important primary source for understanding Satoshi's long-term vision for Bitcoin.

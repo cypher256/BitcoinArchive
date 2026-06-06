@@ -43,4 +43,4 @@ BitMEX Research conducted an independent review of Lerner's methodology in 2018,
 
 Whale Alert, a blockchain tracking service, published its own analysis corroborating an estimate of approximately 1.1 million BTC.
 
-A critical observation across all analyses is that the vast majority of these coins have never been moved from their original mining addresses. As of early 2021, with Bitcoin's price surpassing $40,000 for the first time, Satoshi's estimated holdings were valued at over $40 billion, making the pseudonymous creator one of the wealthiest individuals in the world -- on paper, at least. The untouched nature of these coins has become one of the most remarkable aspects of Bitcoin's history.
+A critical observation across all analyses is that the vast majority of these coins have never been moved from their original mining addresses. As of early 2021, with Bitcoin's price surpassing $40,000 for the first time, Satoshi's estimated holdings were valued at over $40 billion, making the pseudonymous creator one of the wealthiest individuals in the world -- on paper, at least.

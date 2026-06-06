@@ -38,7 +38,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-On August 22, 2020, [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) published "The Patoshi Mining Machine" on his blog Bitslog — the most technically rigorous analysis of the hardware and software behind [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/)'s mining operation. The article appeared one month after Whale Alert's "The Satoshi Fortune" report, which had claimed Satoshi used approximately 48 computers.
+On August 22, 2020, [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) published "The Patoshi Mining Machine" on his blog Bitslog — a detailed technical reconstruction of the hardware and software behind [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/)'s mining operation. The article appeared one month after Whale Alert's "The Satoshi Fortune" report, which had claimed Satoshi used approximately 48 computers.
 
 **Re-mining simulation:**
 
