@@ -29,7 +29,7 @@ relatedEntries:
   - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
 ---
 
-『Bitcoin Magazine』 は 2012 年、ミハイ・アリシエと[ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/)によって共同創刊され、初の印刷版は 2012 年 5 月に発行された。ビットコインに特化した最初の印刷媒体であり、業界で最長期に運営されているビットコイン専門ジャーナリズム媒体の一つ。
+『Bitcoin Magazine』は 2012 年、ミハイ・アリシエと[ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/)によって共同創刊され、初の印刷版は 2012 年 5 月に発行された。ビットコインに特化した最初の印刷媒体であり、業界で最長期に運営されているビットコイン専門ジャーナリズム媒体の一つ。
 
 媒体の系譜は、アリシエが運営していた以前のブログ Bitcoin Weekly に遡る。ブテリンは 2011 年から 1 記事約 5 BTC (当時のレートで約 3.50 米ドル) で同ブログに寄稿していた。Bitcoin Weekly の小規模ながら熱心な読者層から、長文形式の継続的なビットコインジャーナリズムへの需要があるとアリシエは判断し、ブログから雑誌への展開 ─ オンラインと印刷の両形式 ─ に踏み切った。
 

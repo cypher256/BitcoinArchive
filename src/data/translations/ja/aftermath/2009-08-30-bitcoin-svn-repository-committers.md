@@ -73,4 +73,4 @@ translationStatus: complete
 
 **注目すべき不在：** ジェフ・ガージックとピーター・ウィーユは SourceForge プロジェクトメンバーとして登録されているが、SVN コミットは一度も行っていない。彼らのコミットアクセスは GitHub から始まった。
 
-本 SVN リポジトリ履歴は[サトシ Windows 専一開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)において根拠的な証拠として扱われている。 同分析は本エントリを複数の節で参照する ― §2.1 のツールチェーン錨、 §2.4 のチーム開発ツール不在、 §3 における SVN 改訂 252 件のうち 160 件がサトシによるものという非対称性、 そして §3 の相互参照対比表 ― SVN コミッター記録を、 Windows 専一論証が拠り所とする Visual C++ 6.0 ツールチェーンの「移植側からの確認」 として用いるためである。
+本 SVN リポジトリ履歴は[サトシ Windows 専一開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)において根拠的な証拠として扱われている。同分析は本エントリを複数の節で参照する ― §2.1 のツールチェーン錨、 §2.4 のチーム開発ツール不在、 §3 における SVN 改訂 252 件のうち 160 件がサトシによるものという非対称性、そして §3 の相互参照対比表 ― SVN コミッター記録を、 Windows 専一論証が拠り所とする Visual C++ 6.0 ツールチェーンの「移植側からの確認」として用いるためである。

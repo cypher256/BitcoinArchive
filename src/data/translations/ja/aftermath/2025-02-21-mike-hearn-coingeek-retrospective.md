@@ -57,7 +57,7 @@ CoinGeek Weekly Livestream のインタビューで、[サトシ・ナカモト]
 
 この評価 — サトシが外部からの脅威ではなく、自身のコミュニティ内の狂信性によって立ち去った — は、メールを通じてサトシを直接知る人物からの最も直接的な証言の一つである。
 
-### 「福音主義的な人物」 とは誰を指すか — WikiLeaks 「bring it on」 スレッド
+### 「福音主義的な人物」とは誰を指すか — WikiLeaks 「bring it on」スレッド
 
 ハーンが指す具体的な事例として、サトシ最終公開投稿のわずか 7 日前、2010 年 12 月 4〜5 日に BitcoinTalk で展開された WikiLeaks 募金スレッド (topic-1735) がある。
 
@@ -71,9 +71,9 @@ CoinGeek Weekly Livestream のインタビューで、[サトシ・ナカモト]
 <!-- quote: q2 -->
 > 違う、挑発するな。... もたらす火種は、この段階で我々を破壊しかねない。
 
-サトシの反論から 7 日後の 2010 年 12 月 12 日、サトシは[最終公開 BitcoinTalk 投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)で「バトンを渡す予定だ」 と告げ、その後私的メールを 4 か月続けた末に姿を消した。皮肉にも、サトシ撤退から 6 か月後の [2011 年 6 月、WikiLeaks はサトシの反対を押し切ってビットコイン寄付を受け付け始めた](/BitcoinArchive/ja/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/)。
+サトシの反論から 7 日後の 2010 年 12 月 12 日、サトシは[最終公開 BitcoinTalk 投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)で「バトンを渡す予定だ」と告げ、その後私的メールを 4 か月続けた末に姿を消した。皮肉にも、サトシ撤退から 6 か月後の [2011 年 6 月、WikiLeaks はサトシの反対を押し切ってビットコイン寄付を受け付け始めた](/BitcoinArchive/ja/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/)。
 
-ハーンの 2025 年証言と照合すると、この時系列は偶然ではなく、福音主義的圧力へのサトシの疲労を文書化した一次資料として読める。RHorning 単独ではなく、当時の BitcoinTalk 全体に同型の声が大量にあった (ビットコインを金本位主義者・ハイエク信奉者・アナルコキャピタリスト・運動家のための道具として運用しようとする声) — ハーンが後段で「Bitcoin Core」 命名や Bitcoin Foundation の扱いを後悔したのも同質、実験を運動に変える方向への抵抗である。
+ハーンの 2025 年証言と照合すると、この時系列は偶然ではなく、福音主義的圧力へのサトシの疲労を文書化した一次資料として読める。RHorning 単独ではなく、当時の BitcoinTalk 全体に同型の声が大量にあった (ビットコインを金本位主義者・ハイエク信奉者・アナルコキャピタリスト・運動家のための道具として運用しようとする声) — ハーンが後段で「Bitcoin Core」命名や Bitcoin Foundation の扱いを後悔したのも同質、実験を運動に変える方向への抵抗である。
 
 **もし過去に戻れたら：**
 

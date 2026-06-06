@@ -14,6 +14,6 @@ tags: []
 translationStatus: complete
 ---
 
-おお！ とても良い出来だ。😎
+おお！とても良い出来だ。😎
 
 GNU GPL に加えて、Creative Commons ライセンス http://creativecommons.org/ も付けたらどうか。プロジェクトアドレスを参照して、複製に対して Bitcoin での寄付を依頼できる。😊

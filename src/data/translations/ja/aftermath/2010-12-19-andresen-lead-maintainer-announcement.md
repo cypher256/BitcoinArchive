@@ -50,7 +50,7 @@ translationStatus: complete
 >
 > 皆さん、どうか我慢してほしい。スタートアップでのプロジェクト管理の経験はそれなりにあるが、規模のあるオープンソースプロジェクトに関わるのは今回が初めてだ。
 
-（一次資料：[BitcoinTalk topic 2367 msg31651『Development process straw-man』](https://bitcointalk.org/index.php?topic=2367.msg31651#msg31651)。[ウィキペディア「ギャビン・アンドレセン」 記事](https://en.wikipedia.org/wiki/Gavin_Andresen)および [CoinMarketCap「サトシ・ファイル：ギャビン・アンドレセン」 記事](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)でも二次的に引用されているが、いずれも上記の原文の文言から軽微な意訳がある。）
+（一次資料：[BitcoinTalk topic 2367 msg31651『Development process straw-man』](https://bitcointalk.org/index.php?topic=2367.msg31651#msg31651)。[ウィキペディア「ギャビン・アンドレセン」記事](https://en.wikipedia.org/wiki/Gavin_Andresen)および [CoinMarketCap「サトシ・ファイル：ギャビン・アンドレセン」記事](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)でも二次的に引用されているが、いずれも上記の原文の文言から軽微な意訳がある。）
 
 同日、ギャビンは [`bitcoin/bitcoin` GitHub リポジトリ](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)を作成した — 9 か月にわたる SVN／GitHub 並列開発期間の始まりであり、SVN が 2011 年 9 月に廃止されるまで続いた。
 
@@ -70,13 +70,13 @@ translationStatus: complete
 公的記録に残るのは以下の要素：
 
 - サトシによる [2010 年 12 月 3 日のマルティ・マルミ宛のメールでの推薦](/BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/)と、[12 月 12 日の SVN アクセス譲渡](/BitcoinArchive/ja/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/)。
-- 本エントリーで扱う 12 月 19 日の告知で、アンドレセン自身が「ビットコインのプロジェクト管理にもっと積極的に関わっていく」 と宣言したこと（同日付の英文原文に "more active project management" の表現あり）。
+- 本エントリーで扱う 12 月 19 日の告知で、アンドレセン自身が「ビットコインのプロジェクト管理にもっと積極的に関わっていく」と宣言したこと（同日付の英文原文に "more active project management" の表現あり）。
 - 他開発者・ユーザーによる継続的な参加、および反対表明や対抗主張が（本アーカイブの調査範囲では）記録に残っていないこと。
 
-これらの要素を「前任者の祝福 + 自己宣言 + 暗黙の受容 → de facto に役職が成立」 と読むことは可能だが、これは編集的な再構成であり、直接観察された制度プロセスではない。当時の参加者たちが具体的にどのように「リードメンテナー」 を理解・受容したか — 明示的に受け入れたのか、なし崩し的に流れ込んだのか、コミット権を持つ者が新しいメンテナーになったと暗黙に前提して仕事を続けただけなのか — は、本アーカイブが直接観察できる範囲を超えている。
+これらの要素を「前任者の祝福 + 自己宣言 + 暗黙の受容 → de facto に役職が成立」と読むことは可能だが、これは編集的な再構成であり、直接観察された制度プロセスではない。当時の参加者たちが具体的にどのように「リードメンテナー」を理解・受容したか — 明示的に受け入れたのか、なし崩し的に流れ込んだのか、コミット権を持つ者が新しいメンテナーになったと暗黙に前提して仕事を続けただけなのか — は、本アーカイブが直接観察できる範囲を超えている。
 
 この役割は 2012 年 9 月の Bitcoin Foundation 設立に伴い、アンドレセンが同財団のチーフサイエンティストに就任した時点で制度化された。
 
-のちの記録は、 この 12 月 19 日告知を三つの異なる文脈で錨として用いる。 [ギャビン・アンドレセン伝記](/BitcoinArchive/ja/participants/gavin-andresen/)は本告知を参加者年表、 「サトシの後継者 ― 段階的引き継ぎ」 対比表、 そして専用のリードメンテナー節で繰り返し参照する。 [2010 年 9 月 1 日のアンドレセン宛「他のプロジェクトに取り組む」 通知](/BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/)は 9 月のシグナルを撤退連鎖の時系列的な起点として枠付け、 12 月 19 日告知をその公的な終結点として位置付ける。 そして [2016 年のアンドレセン自身によるサトシ回顧](/BitcoinArchive/ja/entries/aftermath/2016-05-02-gavin-andresen-satoshi-retrospective/)は本告知の BitcoinTalk 上の文面 (「サトシの祝福を受けて……」 の冒頭) を錨となる引用の一つとして引き、 結びの段落で本エントリへとリンクを戻す。
+のちの記録は、この 12 月 19 日告知を三つの異なる文脈で錨として用いる。 [ギャビン・アンドレセン伝記](/BitcoinArchive/ja/participants/gavin-andresen/)は本告知を参加者年表、「サトシの後継者 ― 段階的引き継ぎ」対比表、そして専用のリードメンテナー節で繰り返し参照する。 [2010 年 9 月 1 日のアンドレセン宛「他のプロジェクトに取り組む」通知](/BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/)は 9 月のシグナルを撤退連鎖の時系列的な起点として枠付け、 12 月 19 日告知をその公的な終結点として位置付ける。そして [2016 年のアンドレセン自身によるサトシ回顧](/BitcoinArchive/ja/entries/aftermath/2016-05-02-gavin-andresen-satoshi-retrospective/)は本告知の BitcoinTalk 上の文面 (「サトシの祝福を受けて……」の冒頭) を錨となる引用の一つとして引き、結びの段落で本エントリへとリンクを戻す。
 
 *[編者注：本エントリーは 2010 年 12 月 19 日の公式告知を独立した移行イベントとして記録するためのもの。一次資料の投稿は[併走するフォーラムエントリー](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651/)に保全されており、本 aftermath エントリーは編集的な読解として並走させる。]*

@@ -41,7 +41,7 @@ translationStatus: complete
 
 （といっても、まだ 1 コインも生成できていない。bitcoin を 4 コアで丸一日動かすことはなくて、1 コアでさえそうしていないのだが……）
 
-@Joozero — Intel i7 860 は 2.8 Ghz だったよな？ 自分の Phenom II は 3 Ghz だから、それも重要な事実だと思う。同じマシンの Windows 7 でも後で bitcoin を試してみる。
+@Joozero — Intel i7 860 は 2.8 Ghz だったよな？自分の Phenom II は 3 Ghz だから、それも重要な事実だと思う。同じマシンの Windows 7 でも後で bitcoin を試してみる。
 
 /edit
 

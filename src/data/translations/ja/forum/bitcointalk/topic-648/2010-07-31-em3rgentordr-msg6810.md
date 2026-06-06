@@ -29,4 +29,4 @@ patching file makefile.unix
 Hunk #1 FAILED at 45.
 Hunk #2 FAILED at 58.
 
-linux では正しくはどういうコマンドを打てばいいんだ？ それとも、linux 用のバイナリはあるか？
+linux では正しくはどういうコマンドを打てばいいんだ？それとも、linux 用のバイナリはあるか？

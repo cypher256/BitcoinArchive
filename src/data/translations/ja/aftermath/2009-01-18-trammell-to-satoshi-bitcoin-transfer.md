@@ -11,7 +11,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "トランメルが自身の 2 つのビットコインインスタンス間で送った 100BTC について混乱を報告。トランザクションに「Satoshi」 ラベルが現れ、サトシの送金かブロック生成由来かを疑問視した。"
+description: "トランメルが自身の 2 つのビットコインインスタンス間で送った 100BTC について混乱を報告。トランザクションに「Satoshi」ラベルが現れ、サトシの送金かブロック生成由来かを疑問視した。"
 isSatoshi: false
 tags:
   - "correspondence"

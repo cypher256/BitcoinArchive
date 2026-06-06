@@ -14,7 +14,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "レイキャビク大学が Patoshi パターンに関する最初の査読論文を PLOS ONE に発表。「P 異常」 と「Z 異常」 を特定し、P 異常が最初の 64 ブロックすべてに出現することを示した。"
+description: "レイキャビク大学が Patoshi パターンに関する最初の査読論文を PLOS ONE に発表。「P 異常」と「Z 異常」を特定し、P 異常が最初の 64 ブロックすべてに出現することを示した。"
 isSatoshi: false
 tags:
   - "patoshi"
@@ -43,7 +43,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2021年9月30日、レイキャビク大学コンピューターサイエンス学部のマリア・オスカルスドッティルとジャッキー・マレットは、PLOS ONE に『Strangely mined bitcoins: Empirical analysis of anomalies in the bitcoin blockchain transaction network』 を発表した（DOI: 10.1371/journal.pone.0258001）。これは、[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)が 2013年にブログで最初に特定した [Patoshi マイニングパターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)を正式に分析した、最初の査読付き学術論文であった。
+2021年9月30日、レイキャビク大学コンピューターサイエンス学部のマリア・オスカルスドッティルとジャッキー・マレットは、PLOS ONE に『Strangely mined bitcoins: Empirical analysis of anomalies in the bitcoin blockchain transaction network』を発表した（DOI: 10.1371/journal.pone.0258001）。これは、[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)が 2013年にブログで最初に特定した [Patoshi マイニングパターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)を正式に分析した、最初の査読付き学術論文であった。
 
 **2 つの独立した異常の特定：**
 
@@ -67,4 +67,4 @@ PLOS ONE の発見は、ブロック 12 が ExtraNonce パターンとは異な�
 
 Patoshi マイニングに関する最初の査読付き学術研究として、この論文はブログ投稿やコミュニティ分析からの議論を正式な学術文献に格上げした。最初の 64 ブロックすべてが Patoshi ナンスの指紋を共有するという発見は、初期の非 Patoshi ブロック（ExtraNonce 分類による）が依然としてサトシによってマイニングされたものであり、他の参加者によるものではないという主張を強化した。
 
-本 2021 年の査読付き研究は [2013 年のパトシ・パターン分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)で初めて文書化された経験的パターンを学術文献へと形式化したものである ― 以前のブログおよびコミュニティ作業の所見を、 ラーナーが最初に同定したのと同じナンス指紋シグナルを用いて、 本 PLOS ONE 論文が査読を経た扱いに置き直す。
+本 2021 年の査読付き研究は [2013 年のパトシ・パターン分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)で初めて文書化された経験的パターンを学術文献へと形式化したものである ― 以前のブログおよびコミュニティ作業の所見を、ラーナーが最初に同定したのと同じナンス指紋シグナルを用いて、本 PLOS ONE 論文が査読を経た扱いに置き直す。

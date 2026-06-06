@@ -14,4 +14,4 @@ tags: []
 translationStatus: complete
 ---
 
-なぜ手数料が必要なんだ？ 手数料不要が bitcoin の利点の一つだと思っていたが！？
+なぜ手数料が必要なんだ？手数料不要が bitcoin の利点の一つだと思っていたが！？

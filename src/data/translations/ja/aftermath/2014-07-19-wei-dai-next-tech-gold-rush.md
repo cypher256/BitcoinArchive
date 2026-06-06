@@ -57,4 +57,4 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > 「EMHが、わざわざ探さなかった理由です…しかし100倍から1000倍のリターン（年率100%から500%）の資産に2回も偶然出くわした後では、少し信念を更新すべき時です」
 
-この見過ごした接触へのダイの後悔は、 [2013 年のビットコインの金融政策批判](/BitcoinArchive/ja/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/)と通じている。 そこで彼は、 2008 年にサトシから草稿への意見を求められた際に返信していれば、 固定供給の設計を思いとどまらせられたかもしれないと振り返っている。
+この見過ごした接触へのダイの後悔は、 [2013 年のビットコインの金融政策批判](/BitcoinArchive/ja/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/)と通じている。そこで彼は、 2008 年にサトシから草稿への意見を求められた際に返信していれば、固定供給の設計を思いとどまらせられたかもしれないと振り返っている。

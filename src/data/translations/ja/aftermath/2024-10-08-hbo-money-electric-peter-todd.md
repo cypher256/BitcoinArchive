@@ -88,7 +88,7 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > 「もちろん、私はサトシではない」
 
-ドキュメンタリー本編でホーバックから「あなたがサトシか」 と問われた際、トッドは皮肉で返した:
+ドキュメンタリー本編でホーバックから「あなたがサトシか」と問われた際、トッドは皮肉で返した:
 
 <!-- speaker: Peter Todd -->
 <!-- audit:quote-skip -->
@@ -105,12 +105,12 @@ translationStatus: complete
 <!-- speaker: narrator -->
 トッドは後にこの作品の手法を「偶然の一致に基づく陰謀論的思考だろ」と切り捨てた。
 
-このドキュメンタリーは、ホーバックにとって匿名のインターネット上の人物を追跡する 2 作目の調査だった。1 作目の「Q: Into the Storm」（2021 年、QAnon 運動を追ったシリーズ）は概ね好評だったが、「Money Electric」 はビットコインコミュニティと主流メディアの双方から否定的に受け止められた。
+このドキュメンタリーは、ホーバックにとって匿名のインターネット上の人物を追跡する 2 作目の調査だった。1 作目の「Q: Into the Storm」（2021 年、QAnon 運動を追ったシリーズ）は概ね好評だったが、「Money Electric」はビットコインコミュニティと主流メディアの双方から否定的に受け止められた。
 
 <!-- speaker: narrator -->
-本作は、 2024 年以降に相次いだ主要メディアによるサトシ特定の波の先頭に位置する。 続く流れは 3 件 ― [2026 年ニューヨーク・タイムズのカレイロウ調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)はアダム・バックを文体計量で名指しした。 [サトシ複数人説 ― 『Finding Satoshi』 ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)はハル・フィニーとレン・サッサマンを共作者として提示した。 [サトシ政府機関説 ― Murphy 対 DHS FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)は DHS 捜査官の 2019 年「ビットコイン創設者 4 名と面談」 発言の記録開示を求めるもの。 どれも根拠の経路は別々であり、 暗号学的確認は得られていない。
+本作は、 2024 年以降に相次いだ主要メディアによるサトシ特定の波の先頭に位置する。続く流れは 3 件 ― [2026 年ニューヨーク・タイムズのカレイロウ調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)はアダム・バックを文体計量で名指しした。 [サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)はハル・フィニーとレン・サッサマンを共作者として提示した。 [サトシ政府機関説 ― Murphy 対 DHS FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)は DHS 捜査官の 2019 年「ビットコイン創設者 4 名と面談」発言の記録開示を求めるもの。どれも根拠の経路は別々であり、暗号学的確認は得られていない。
 
 <!-- speaker: narrator -->
 トッド＝サトシ正体仮説そのものの分析的な扱い（ドキュメンタリーが提示した根拠を、トッドの年齢・OCAD 在学期間・2012 年以前のサイファーパンク参加記録・文体変遷・開発活動タイムラインに照らして検証する作業）については、[ピーター・トッド＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)を参照。
 
-映画が依拠する 2010 年 12 月のスレッドを補う隣接記録が二つある。 [トッドの BitcoinTalk 初投稿](/BitcoinArchive/ja/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/) — サトシへの返信の 3 日前に登録された「retep」 名義の Diaspora 招待リクエスト — はドキュメンタリーが依拠するアカウントの挙動を記録し、 [BIP 125 Replace-by-Fee の記事](/BitcoinArchive/ja/entries/aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee/)は、 映画がトッドによるサトシ設計の完成と見なす 2015 年の正式化を扱う。
+映画が依拠する 2010 年 12 月のスレッドを補う隣接記録が二つある。 [トッドの BitcoinTalk 初投稿](/BitcoinArchive/ja/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/) — サトシへの返信の 3 日前に登録された「retep」名義の Diaspora 招待リクエスト — はドキュメンタリーが依拠するアカウントの挙動を記録し、 [BIP 125 Replace-by-Fee の記事](/BitcoinArchive/ja/entries/aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee/)は、映画がトッドによるサトシ設計の完成と見なす 2015 年の正式化を扱う。

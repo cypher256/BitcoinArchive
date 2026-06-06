@@ -10,7 +10,7 @@ participants:
     slug: "adam-back"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "バックがサトシにロン・リベストの 1996年 MicroMint 論文（k-way ハッシュ衝突）を紹介。バックはこの時点でサトシの添付論文を未読、後に「人生最大の失敗」 と振り返ることになる。"
+description: "バックがサトシにロン・リベストの 1996年 MicroMint 論文（k-way ハッシュ衝突）を紹介。バックはこの時点でサトシの添付論文を未読、後に「人生最大の失敗」と振り返ることになる。"
 isSatoshi: false
 tags:
   - "hashcash"
@@ -34,7 +34,7 @@ translationStatus: complete
 ---
 
 
-メールチェーンの 4 通目で、アダム・バックは関連する別の論文として、ロン・リベストとアディ・シャミアによる『PayWord and MicroMint』（1996年）を紹介した。この論文は、Hashcash やビットコインが用いる部分的プリイメージではなく、デジタルコインの希少性のために k-way ハッシュ衝突の抽出を提案するものだった。バック自身が後に Cointelegraph のインタビューで「おそらく人生最大の失敗だった」 と振り返ることになる、中核的な自己告白の一文は次の通り。
+メールチェーンの 4 通目で、アダム・バックは関連する別の論文として、ロン・リベストとアディ・シャミアによる『PayWord and MicroMint』（1996年）を紹介した。この論文は、Hashcash やビットコインが用いる部分的プリイメージではなく、デジタルコインの希少性のために k-way ハッシュ衝突の抽出を提案するものだった。バック自身が後に Cointelegraph のインタビューで「おそらく人生最大の失敗だった」と振り返ることになる、中核的な自己告白の一文は次の通り。
 
 <!-- quote: q1 -->
 <!-- speaker: Adam Back -->

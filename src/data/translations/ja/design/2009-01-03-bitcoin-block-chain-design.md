@@ -273,4 +273,4 @@ flowchart TD
 - **ストレージとチェーン状態** — 検証済みブロックのディスクへの永続化方法（ブロックファイル、取消データ）と UTXO 集合の LevelDB での管理方法。
 - **SPV クライアントの実装** — 軽量ウォレットによるマークル証明の実用的な使用（本ページはマークルツリー構造を記述する。SPV プロトコル自体はネットワーク層のトピック）。
 
-本ブロック・チェーン設計は、 二つの兄弟設計書エントリが依拠する構造的基盤である。 [ストレージ設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/)はブロック形式とチェーン状態の範囲をすべて本エントリへ委ねる。 [コンセンサス設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)は本エントリで文書化されたチェーン構造を、 最長チェーン規則が動作する基盤として扱う。
+本ブロック・チェーン設計は、二つの兄弟設計書エントリが依拠する構造的基盤である。 [ストレージ設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/)はブロック形式とチェーン状態の範囲をすべて本エントリへ委ねる。 [コンセンサス設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)は本エントリで文書化されたチェーン構造を、最長チェーン規則が動作する基盤として扱う。

@@ -33,7 +33,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2020年7月、ブロックチェーン追跡サービス Whale Alert は『The Satoshi Fortune』 を発表した。[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)の先行 Patoshi 研究を概ね裏付ける独立分析であるが、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)のマイニング環境について独自の解釈を打ち出した。
+2020年7月、ブロックチェーン追跡サービス Whale Alert は『The Satoshi Fortune』を発表した。[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)の先行 Patoshi 研究を概ね裏付ける独立分析であるが、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)のマイニング環境について独自の解釈を打ち出した。
 
 **主要な発見：**
 

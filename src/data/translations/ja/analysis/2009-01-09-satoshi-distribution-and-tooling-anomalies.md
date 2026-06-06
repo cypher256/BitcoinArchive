@@ -49,7 +49,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-Bitcoin v0.1 は SourceForge 上で `.rar` アーカイブとして公開された —— オープンソースリリースよりも IRC/XDCC の Warez シーン配布で一般的なフォーマット。バージョン管理システムは使われなかった。本エントリは配布側とツール不在の観察をまとまった集合として読み、 ダン・カミンスキーが [2011 年のセキュリティ監査](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)で v0.1 のセキュリティ・アーキテクチャを別側面から検証したものと並べる。 個人開発環境の証拠 (ハンガリアン記法、 OpenSSL 依存、 Visual C++ 6.0 ツールチェーン、 PGP MingW32 署名末尾) は別エントリー [Windows 中心の開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)で扱う。
+Bitcoin v0.1 は SourceForge 上で `.rar` アーカイブとして公開された —— オープンソースリリースよりも IRC/XDCC の Warez シーン配布で一般的なフォーマット。バージョン管理システムは使われなかった。本エントリは配布側とツール不在の観察をまとまった集合として読み、ダン・カミンスキーが [2011 年のセキュリティ監査](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)で v0.1 のセキュリティ・アーキテクチャを別側面から検証したものと並べる。個人開発環境の証拠 (ハンガリアン記法、 OpenSSL 依存、 Visual C++ 6.0 ツールチェーン、 PGP MingW32 署名末尾) は別エントリー [Windows 中心の開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)で扱う。
 
 ## 1. 配布: `.rar` パッケージングの選択
 
@@ -93,13 +93,13 @@ Bitcoin v0.1 はバージョン管理の履歴を持たないまま配布され�
 
 ## 3. 実装選択と Windows 中心の開発環境
 
-実装スタイル・個人環境の証拠 ― ハンガリアン記法による変数命名、 Bitcoin Core が後に libsecp256k1 で置き換えた OpenSSL 依存、 ビルドツールチェーンとしての Visual C++ 6.0、 サトシ最後期メールに付いた GnuPG MingW32 / WinPT 1.2.0 の PGP 署名末尾 ― は別エントリー [Windows 中心の開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)で扱われている。 同エントリーはサトシ自身がギャビン・アンドレセンに対して「私よりずっと Linux に長けている」 と自己位置づけた発言、 および本エントリーで扱う配布選択と重なる SVN 以前 8 か月のソロ開発期間も記録する。
+実装スタイル・個人環境の証拠 ― ハンガリアン記法による変数命名、 Bitcoin Core が後に libsecp256k1 で置き換えた OpenSSL 依存、ビルドツールチェーンとしての Visual C++ 6.0、サトシ最後期メールに付いた GnuPG MingW32 / WinPT 1.2.0 の PGP 署名末尾 ― は別エントリー [Windows 中心の開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)で扱われている。同エントリーはサトシ自身がギャビン・アンドレセンに対して「私よりずっと Linux に長けている」と自己位置づけた発言、および本エントリーで扱う配布選択と重なる SVN 以前 8 か月のソロ開発期間も記録する。
 
-Warez シーンの読みにとって関係する点: Windows 専用初版 (v0.1 〜 v0.1.5) は上表の一致項目の一つであり、 別エントリーが記録する像と整合する ― 独立した驚きではない。
+Warez シーンの読みにとって関係する点: Windows 専用初版 (v0.1 〜 v0.1.5) は上表の一致項目の一つであり、別エントリーが記録する像と整合する ― 独立した驚きではない。
 
 ## 4. セキュリティ・アーキテクチャ: カミンスキー監査
 
-[ダン・カミンスキー](/BitcoinArchive/ja/participants/dan-kaminsky/)の [2011 年の監査](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)は 『The New Yorker』 誌で報じられ、批判と称賛の両面を含んでいた。
+[ダン・カミンスキー](/BitcoinArchive/ja/participants/dan-kaminsky/)の [2011 年の監査](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)は『The New Yorker』誌で報じられ、批判と称賛の両面を含んでいた。
 
 フォーマットと可読性についてカミンスキーは、コードを「密度が高く難解」と評し、「フォーマットの仕方が異常だった。世界で最も妄想的で几帳面なコーダーでなければ、ミスを避けることはできなかっただろう」と述べた。
 
@@ -138,4 +138,4 @@ Warez シーンの読みにとって関係する点: Windows 専用初版 (v0.1 
 - 先見的セキュリティと非形式的プロセスの組み合わせが本エントリの主な観察である: サトシはシステムそのものについて慎重な敵対的思考を持っていたが、標準的な共同工学の慣習の中では作業していなかった
 - 読みはサトシの作業 *環境* と *実践パターン* を特徴づける。それらの実践パターンが自然に許容する範囲を超えて身元・地理・職業を制約するものではない
 
-本配布およびツール異常分析は[サトシ Windows 専一開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)から、 Phase 1 ツールチェーン読解を補完する「消費者側 Windows 配布の一貫性」 の記録として参照される。
+本配布およびツール異常分析は[サトシ Windows 専一開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)から、 Phase 1 ツールチェーン読解を補完する「消費者側 Windows 配布の一貫性」の記録として参照される。

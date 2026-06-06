@@ -46,6 +46,6 @@ SegWit2x は[ニューヨーク合意](https://en.wikipedia.org/wiki/SegWit2x) (
 
 SegWit2x の中止により、2015 年 8 月の [Bitcoin XT のリリース](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/)以来続いていたブロックサイズ戦争の本体チェーン側が閉じた。より大きなブロックを望んだ陣営は 2017 年 8 月 1 日に[ビットコインキャッシュ](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)として既に分離していた。SegWit2x の中止は、本体チェーンが争いの起こるハードフォークを経験せずに済むことを意味した。11 月 8 日以降、本体チェーンでは新たなハードフォークの試みは組織されていない。プロトコルはソフトフォーク (Taproot、2021 年 11 月) で進化してきた。
 
-ベルシェのメーリングリスト投稿は、ニューヨーク合意の文字通りの終結である。中止メッセージへの署名は元の NYA 署名者の全員ではないが、他の署名者から反対の署名付き声明が出されなかったこと自体が、コミュニティ全体の中止承認として機能した。 中止が戦争の段階と派閥のどこに位置するかは[ブロックサイズ戦争総括](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)に、 広いフォーク系譜は[ビットコイン系譜の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)に記録されている。
+ベルシェのメーリングリスト投稿は、ニューヨーク合意の文字通りの終結である。中止メッセージへの署名は元の NYA 署名者の全員ではないが、他の署名者から反対の署名付き声明が出されなかったこと自体が、コミュニティ全体の中止承認として機能した。中止が戦争の段階と派閥のどこに位置するかは[ブロックサイズ戦争総括](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)に、広いフォーク系譜は[ビットコイン系譜の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)に記録されている。
 
-本 2017 年 11 月の中止は[ブロックサイズ戦争 2015〜2017 総括](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)から、 ニューヨーク合意の文字通りの終結として、 そして記録された段階別再構成における戦争の定義的段階遷移の一つとして扱われる。
+本 2017 年 11 月の中止は[ブロックサイズ戦争 2015〜2017 総括](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)から、ニューヨーク合意の文字通りの終結として、そして記録された段階別再構成における戦争の定義的段階遷移の一つとして扱われる。

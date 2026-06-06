@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "ラーナー「The Return of the Deniers and the Revenge of Patoshi」 公開。「Patoshi」 を命名しタイムスタンプ逆転ゼロで単一 PC を証明。"
+description: "ラーナー「The Return of the Deniers and the Revenge of Patoshi」公開。「Patoshi」を命名しタイムスタンプ逆転ゼロで単一 PC を証明。"
 isSatoshi: false
 tags:
   - "patoshi"
@@ -37,7 +37,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2019年4月16日、[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)は『The Return of the Deniers and the Revenge of Patoshi』 を発表した。6年間の研究成果を統合し、今や標準的となった「Patoshi」という用語を導入した重要な更新論文である。
+2019年4月16日、[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)は『The Return of the Deniers and the Revenge of Patoshi』を発表した。6年間の研究成果を統合し、今や標準的となった「Patoshi」という用語を導入した重要な更新論文である。
 
 **「Patoshi」の命名:**
 
@@ -66,4 +66,4 @@ translationStatus: complete
 
 この 2019年の論文は、Patoshi 研究を経験的観測の集合からほぼ確実性へと変えた：一つのエンティティが、単一のコンピューター上のカスタムマイニングソフトウェアを使い、ビットコインの総供給量の約 5%を蓄積し — そしてそれを一度も使わなかった。
 
-本 2019 年のパトシ命名エントリは [2013 年のパトシ・パターン分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)の方法論的継続として扱われる。 2013 年エントリが経験的観察を枠付け、 本 2019 年エントリは精緻化したナンス LSB と ExtraNonce 方法論によって、 観察を「パトシ」 と名指される確度の高い結論へと形式化した記録となる。
+本 2019 年のパトシ命名エントリは [2013 年のパトシ・パターン分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)の方法論的継続として扱われる。 2013 年エントリが経験的観察を枠付け、本 2019 年エントリは精緻化したナンス LSB と ExtraNonce 方法論によって、観察を「パトシ」と名指される確度の高い結論へと形式化した記録となる。

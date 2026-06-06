@@ -56,11 +56,11 @@ translationStatus: complete
 
 2 か月後、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)は b-money を参考文献 [1] として引用した。Bitcoin v0.1 はダイの [Crypto++ ライブラリ](https://www.cryptopp.com/)を SHA-256 実装に採用 —— ダイのコードは最初のリリースからビットコインの直接的な依存となった。
 
-2014 年 1 月、LessWrong で「サトシは暗号学やサイファーパンクのコミュニティで知られた人物ではないか」 と問われたとき、ダイはこう答えた:
+2014 年 1 月、LessWrong で「サトシは暗号学やサイファーパンクのコミュニティで知られた人物ではないか」と問われたとき、ダイはこう答えた:
 
 > 「私の推測では、彼は暗号学やサイファーパンクコミュニティで以前活動していた人物ではないと思います。そうでなければ、文体やコーディングスタイルで特定されているはずです」
 
-ウェイ・ダイはコンピューターサイエンティスト・暗号学者で、ワシントン大学でコンピューターサイエンスを学び、Microsoft で働いた。ホワイトペーパー参考文献 [1] としての b-money 引用、Crypto++ のコードベース依存、サトシの公開前接触 —— これらの組み合わせから繰り返しサトシ正体候補となってきた。詳細は[専用の正体仮説エントリ](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)。[上記の回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)が主要な自己否定として扱われる。暗号通貨[イーサリアム](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/)の最小単位「wei」 はウェイ・ダイに敬意を表して名付けられた。
+ウェイ・ダイはコンピューターサイエンティスト・暗号学者で、ワシントン大学でコンピューターサイエンスを学び、Microsoft で働いた。ホワイトペーパー参考文献 [1] としての b-money 引用、Crypto++ のコードベース依存、サトシの公開前接触 —— これらの組み合わせから繰り返しサトシ正体候補となってきた。詳細は[専用の正体仮説エントリ](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)。[上記の回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)が主要な自己否定として扱われる。暗号通貨[イーサリアム](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/)の最小単位「wei」はウェイ・ダイに敬意を表して名付けられた。
 
 ```mermaid
 timeline
@@ -89,7 +89,7 @@ timeline
 Crypto++ 5.6.0 の SSE2 アセンブリ最適化版 SHA-256 はバージョン 0.3.6（2010年7月29日リリース）で統合された。一次資料による時系列：
 
 - 2010-07-25：BitcoinTalk のメンバー「BlackEye」が [Crypto++ 5.6.0 SHA-256 の SSE2 アセンブリ統合を実演](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774/) — 「SSE2 アセンブリコードを使ったこれまでで最速の SHA256」。
-- 2010-07-26：サトシが[応答](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-501/2010-07-26-re-bitcoin-x64-for-windows/) — 「それはまだ Crypto++ から始まっているのか？ メインのソースコードに取り込もう」。
+- 2010-07-26：サトシが[応答](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-501/2010-07-26-re-bitcoin-x64-for-windows/) — 「それはまだ Crypto++ から始まっているのか？メインのソースコードに取り込もう」。
 - 2010-07-27（SVN rev 114）：サトシが[ライブラリサブセットを追加したと確認](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-572/2010-07-27-sni282-re-bitcoin-x86-for-windows/) — 「I added a subset of the Crypto++ 5.6.0 library to the SVN. I stripped it down to just SHA and 11 general dependency files... The combined speedup is about 2.5x faster than version 0.3.3. This is SVN rev 114」。
 - 2010-07-29：[v0.3.6 リリースアラート](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-0-3-6/) — サトシは BlackEye を Crypto++ ASM SHA-256 で、tcatm を midstate キャッシュ最適化でクレジット：「生成全体で 2.4 倍の高速化」。
 - 2010-08-09：サトシが[明示的に](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-765/2010-08-09-version-0-3-8-1-update-for-linux-64-bit/) — 「バージョン 0.3.6 で Crypto++ 5.6.0 SHA-256 に切り替えたとき、Linux 64-bit ビルドで生成が壊れた」。

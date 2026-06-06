@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシが bitcoin-list と Cryptography を CC に加え、電子通貨観と「普及した場合に備えて少し持っておくのは理にかなう」 を語る。"
+description: "サトシが bitcoin-list と Cryptography を CC に加え、電子通貨観と「普及した場合に備えて少し持っておくのは理にかなう」を語る。"
 isSatoshi: true
 tags:
   - "correspondence"

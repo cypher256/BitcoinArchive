@@ -10,7 +10,7 @@ participants:
     slug: "nick-szabo"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "2014 年 4 月、アストン大学法言語学センターが「Project Bitcoin」 を発表。グリーヴ博士指導下で学生がサトシ候補 11 名を文体計量比較し、ニック・サボを最有力候補とした。"
+description: "2014 年 4 月、アストン大学法言語学センターが「Project Bitcoin」を発表。グリーヴ博士指導下で学生がサトシ候補 11 名を文体計量比較し、ニック・サボを最有力候補とした。"
 isSatoshi: false
 tags:
   - "nick-szabo"
@@ -49,9 +49,9 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2014 年 4 月、英国バーミンガムの**アストン大学法言語学センター**が「**Project Bitcoin**」 の結果を発表した。当時法言語学の講師だった**ジャック・グリーヴ博士**の指導下で、法言語学を専攻する最終学年の学生 40 名から成るチームが実施した文体計量研究である。本研究は、検討した 11 名の候補のうち[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)がビットコイン白書の著者として最も可能性が高いと結論づけた。結果は [2014 年 4 月 16 日 CoinDesk により報じられ](https://www.coindesk.com/markets/2014/04/16/linguistic-researchers-name-nick-szabo-as-author-of-bitcoin-whitepaper)、続く数日のうちに ScienceDaily、Slate、Sci.News、Phys.org、Cointelegraph に取り上げられた。
+2014 年 4 月、英国バーミンガムの**アストン大学法言語学センター**が「**Project Bitcoin**」の結果を発表した。当時法言語学の講師だった**ジャック・グリーヴ博士**の指導下で、法言語学を専攻する最終学年の学生 40 名から成るチームが実施した文体計量研究である。本研究は、検討した 11 名の候補のうち[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)がビットコイン白書の著者として最も可能性が高いと結論づけた。結果は [2014 年 4 月 16 日 CoinDesk により報じられ](https://www.coindesk.com/markets/2014/04/16/linguistic-researchers-name-nick-szabo-as-author-of-bitcoin-whitepaper)、続く数日のうちに ScienceDaily、Slate、Sci.News、Phys.org、Cointelegraph に取り上げられた。
 
-本研究は、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)著者性に関する最初の複数候補横断的な学術側文体計量検討であった。[2013 年 12 月の Skye Grey による LikeInAMirror 調査](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)を踏まえ、同じ首位候補（サボ）に到達し、後に[ナサニエル・ポパーの 2015 年『ニューヨーク・タイムズ』 調査記事](/BitcoinArchive/ja/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/)および書籍『デジタル・ゴールド』 で引用されることになる。
+本研究は、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)著者性に関する最初の複数候補横断的な学術側文体計量検討であった。[2013 年 12 月の Skye Grey による LikeInAMirror 調査](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)を踏まえ、同じ首位候補（サボ）に到達し、後に[ナサニエル・ポパーの 2015 年『ニューヨーク・タイムズ』調査記事](/BitcoinArchive/ja/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/)および書籍『デジタル・ゴールド』で引用されることになる。
 
 **候補者集合：**
 
@@ -60,7 +60,7 @@ translationStatus: complete
 | 候補 | 採用根拠 |
 |---|---|
 | ニック・サボ | 既存の言説リスト。本研究で最大規模のコーパス（個人サイトに公開されている 40 本以上の学術論文 + Unenumerated ブログ投稿の相当量） |
-| ドリアン・S・ナカモト | 2014 年 3 月の『Newsweek』 記事で名指し |
+| ドリアン・S・ナカモト | 2014 年 3 月の『Newsweek』記事で名指し |
 | ヴィリ・レードンヴィルタ | それまでのジャーナリズム／フォーラム言説 |
 | マイケル・クリア | それまでのジャーナリズム／フォーラム言説 |
 | 公開されていない他 7 名 | 広く挙げられるサトシ候補リストから抽出 |
@@ -97,9 +97,9 @@ translationStatus: complete
 
 **その後の批判的後続報道：**
 
-「Project Bitcoin」 の方法論的制約 — 授業課題規模の標本サイズ、過去の言説から固定された候補者集合、査読の不在、生数値データの非公開 — は、その後の批判的論評の対象となった。最も多く引用される批判は[デイヴィッド・ジェラードの 2018 年 12 月記事『No, Nick Szabo wasn't Satoshi Nakamoto in 2014 either』](https://davidgerard.co.uk/blockchain/2018/12/16/no-nick-szabo-wasnt-satoshi-in-2014-either/)であり、話題的に重なる候補集合（デジタルキャッシュ・P2P ネットワーク・暗号学について書いた書き手）に対する文体計量分析は、共有された主題語彙と共有された個人スタイルを構造的に混同してしまうと主張する。
+「Project Bitcoin」の方法論的制約 — 授業課題規模の標本サイズ、過去の言説から固定された候補者集合、査読の不在、生数値データの非公開 — は、その後の批判的論評の対象となった。最も多く引用される批判は[デイヴィッド・ジェラードの 2018 年 12 月記事『No, Nick Szabo wasn't Satoshi Nakamoto in 2014 either』](https://davidgerard.co.uk/blockchain/2018/12/16/no-nick-szabo-wasnt-satoshi-in-2014-either/)であり、話題的に重なる候補集合（デジタルキャッシュ・P2P ネットワーク・暗号学について書いた書き手）に対する文体計量分析は、共有された主題語彙と共有された個人スタイルを構造的に混同してしまうと主張する。
 
-この方法論的観察は、フロリアン・カフィエロが [2026 年カレイロウ『ニューヨーク・タイムズ』 調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)について提起した同じ留保や、[バス・ヴァン・ドルストの 2024 年『Where is Satoshi?』 オープンソースコーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)が明示的にカタログ化した限界とも並行する — すなわち、文体計量による著者帰属は、候補者の事前選定・距離指標・コーパス境界に対して感受性が高く、これらの要素が首位の名前を変える。
+この方法論的観察は、フロリアン・カフィエロが [2026 年カレイロウ『ニューヨーク・タイムズ』調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)について提起した同じ留保や、[バス・ヴァン・ドルストの 2024 年『Where is Satoshi?』オープンソースコーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)が明示的にカタログ化した限界とも並行する — すなわち、文体計量による著者帰属は、候補者の事前選定・距離指標・コーパス境界に対して感受性が高く、これらの要素が首位の名前を変える。
 
 **サトシ著者性に関する文体計量の系譜上の位置づけ：**
 
@@ -114,4 +114,4 @@ translationStatus: complete
 
 ニック・サボ＝サトシ仮説の分析的検討（本研究の根拠を、[2008 年 4 月の Unenumerated ブログでの Bit Gold 実装協力要請コメント](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)、[2011 年 5 月の三人称表現](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/)、2007〜2008 年を通したサボの Unenumerated 上の継続的可視性、繰り返しの否定発言と照合する）については、[ニック・サボ＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)を参照。
 
-本アストン大学研究は[ニック・サボ同定仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)によって、 根拠的な文体計量の柱の一つとして扱われる。 同仮説は本研究を Skye Grey 2013 とは独立に 11 候補中でサボを首位と位置付けた学術的定量研究として参照し、 仮説の論証が拠り所とする「法医学的整合性のシグナル」 の記録の一部として、 支持証拠の各節で繰り返し戻ってくる。
+本アストン大学研究は[ニック・サボ同定仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)によって、根拠的な文体計量の柱の一つとして扱われる。同仮説は本研究を Skye Grey 2013 とは独立に 11 候補中でサボを首位と位置付けた学術的定量研究として参照し、仮説の論証が拠り所とする「法医学的整合性のシグナル」の記録の一部として、支持証拠の各節で繰り返し戻ってくる。

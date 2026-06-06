@@ -11,7 +11,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "トランメルが、混乱の原因の「Satoshi」 ラベルが自身の受信アドレスに付けられていたと気づき、自宅に複数アドレスありと確認。設定した覚えがないため「Satoshi」 がデフォルトかと尋ねた。"
+description: "トランメルが、混乱の原因の「Satoshi」ラベルが自身の受信アドレスに付けられていたと気づき、自宅に複数アドレスありと確認。設定した覚えがないため「Satoshi」がデフォルトかと尋ねた。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -37,7 +37,7 @@ translationStatus: complete
 
 <!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
-> ああ！ それが自宅の自分のアドレスだとすら気付いていなかった、そのとおりだ (: 自宅では複数のアドレスを作っていたので、結びつかなかったのだ。
+> ああ！それが自宅の自分のアドレスだとすら気付いていなかった、そのとおりだ (: 自宅では複数のアドレスを作っていたので、結びつかなかったのだ。
 
 <!-- speaker: narrator -->
 トランメルは、「Satoshi」が Change ボタン配下のアドレスに確かに関連付けられていることを確認したが、新たな疑問を提起した：

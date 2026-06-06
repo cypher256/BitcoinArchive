@@ -18,4 +18,4 @@ translationStatus: complete
 
 「Warning :Check your system data and time , you may not be able to generate or receive the most recent blocks !」という警告が表示される。
 
-これはどういう意味なのか？ 接続はわずか 2 つで、ブロック数は 500 しかない。
+これはどういう意味なのか？接続はわずか 2 つで、ブロック数は 500 しかない。

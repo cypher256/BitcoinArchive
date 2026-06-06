@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシがビットコインを表現するため「暗号通貨（cryptocurrency）」 という言葉の使用を提案し、サイトから投資に関する表現を削除するようマルミに求めた。ブランディング史の重要瞬間。"
+description: "サトシがビットコインを表現するため「暗号通貨（cryptocurrency）」という言葉の使用を提案し、サイトから投資に関する表現を削除するようマルミに求めた。ブランディング史の重要瞬間。"
 isSatoshi: true
 tags:
   - "correspondence"

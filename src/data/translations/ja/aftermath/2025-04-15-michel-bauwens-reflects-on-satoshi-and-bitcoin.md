@@ -63,6 +63,6 @@ translationStatus: complete
 
 ミシェル・バウエンスは、ビットコインを単純な「反資本主義」ではなく、より高次の仕組みに資本主義を埋め込むための「ポスト資本主義的な発明」と位置づけた。一方で、ローカルな生産やコモンズ的実践との結びつきがまだ弱いとも述べている。
 
-本 2025 年バウエンス・インタビューは[サトシ活動年表](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-activity-timeline/)から、 2014 年の唯一の P2P Foundation 投稿に対する記録された文脈として扱われる。 同年表はバウエンスによる「サトシは私的にもドリアン・ナカモトであることを否定した」 という回想を、 年表中の孤立した 2014 年の点に対する欠落した文脈として用いる。
+本 2025 年バウエンス・インタビューは[サトシ活動年表](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-activity-timeline/)から、 2014 年の唯一の P2P Foundation 投稿に対する記録された文脈として扱われる。同年表はバウエンスによる「サトシは私的にもドリアン・ナカモトであることを否定した」という回想を、年表中の孤立した 2014 年の点に対する欠落した文脈として用いる。
 
 *[編者注：このインタビューは、2009年2月に [P2P Foundation](/BitcoinArchive/ja/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/) / [P2P Research](/BitcoinArchive/ja/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/) 系列でサトシと接点を持ったミシェル・バウエンスが、その接触を後年どう理解していたかを示す一次証言として重要である。特に、サトシがミシェル・バウエンスにビットコインを送ろうとしていたことと、論文掲載の意図を直接説明していたことが、より具体的に語られている。]*

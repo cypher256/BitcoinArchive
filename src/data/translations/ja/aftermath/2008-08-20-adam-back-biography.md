@@ -48,7 +48,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2008 年 8 月 20 日、アダム・バックの受信箱に 1 通のメールが届いた。送信者は自らを[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と名乗り、近く公開する「新しい電子キャッシュシステム」 の論文向けに Hashcash の引用形式を尋ねた。11 年前の 1997 年 3 月、バックはサイファーパンクメーリングリストで [Hashcash を発表](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/)していた。翌日、バックは引用情報を返し、続けて[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money を紹介した。同日、サトシは返信した:
+2008 年 8 月 20 日、アダム・バックの受信箱に 1 通のメールが届いた。送信者は自らを[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と名乗り、近く公開する「新しい電子キャッシュシステム」の論文向けに Hashcash の引用形式を尋ねた。11 年前の 1997 年 3 月、バックはサイファーパンクメーリングリストで [Hashcash を発表](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/)していた。翌日、バックは引用情報を返し、続けて[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money を紹介した。同日、サトシは返信した:
 
 <!-- speaker: Satoshi Nakamoto -->
 > 「ありがとう。b-moneyは読んだことがなかったが、私のアイデアはまさにその出発点から始まっている。私のシステムが追加した主なものは、分散タイムスタンプサーバーを支えるためにプルーフ・オブ・ワークを使うことだ。」
@@ -80,7 +80,7 @@ timeline
 
 ### サトシからの最初の連絡
 
-2008 年 8 月のやり取りは 3 日間に渡る: [サトシのバック宛メール](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) (8 月 20 日、 引用形式の問い合わせ)、 [バックの返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/) (8 月 21 日、 Hashcash 引用情報と b-money 紹介)、 サトシの同日返信での、 公開前の設計・コーディング期間中に b-money を知らなかったとの自認 (冒頭引用)、 翌日の[サトシのウェイ・ダイ宛メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) (ホワイトペーパー引用のため b-money 公開日を尋ねるもの)。 この連鎖は、 バックの紹介時点でビットコインの設計がほぼ完了していたことを示し、 [サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の一次資料的根拠となっている。
+2008 年 8 月のやり取りは 3 日間に渡る: [サトシのバック宛メール](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) (8 月 20 日、引用形式の問い合わせ)、 [バックの返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/) (8 月 21 日、 Hashcash 引用情報と b-money 紹介)、サトシの同日返信での、公開前の設計・コーディング期間中に b-money を知らなかったとの自認 (冒頭引用)、翌日の[サトシのウェイ・ダイ宛メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) (ホワイトペーパー引用のため b-money 公開日を尋ねるもの)。この連鎖は、バックの紹介時点でビットコインの設計がほぼ完了していたことを示し、 [サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の一次資料的根拠となっている。
 
 ### 証言とメールの公開
 バックのサトシとのメールのやり取りは Bitcoin Magazine により公開され、ビットコインの最初期の概念段階に関する重要な一次資料を提供している。2024年2月、バックはロンドンでの [COPA 対ライト裁判で証言し](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)、サトシとのやり取りとビットコイン誕生のタイムラインについて直接の証言を提供した。
@@ -91,4 +91,4 @@ timeline
 ### 意義
 バックのビットコインへの貢献は、具体的にはプルーフ・オブ・ワーク概念 — 計算コストが希少で検証可能なリソースとして機能しうるというアイデア — であった。Hashcash はこのメカニズムを提供したが、通貨の設計、ピアツーピア決済システム、金融政策は別の革新である。サトシが最初に連絡を取った人物としての位置づけは、彼をビットコインの記録された創造史の冒頭に置いている。
 
-*[補足：アダム・バックは、 小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』 で、 主人公が 2008 年 8 月に最初に Hashcash の引用形式について連絡を取るサイファーパンクとして登場する ― 後の b-money 発見と、 ホワイトペーパーの参考文献 [1] への橋となる人物。]*
+*[補足：アダム・バックは、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』で、主人公が 2008 年 8 月に最初に Hashcash の引用形式について連絡を取るサイファーパンクとして登場する ― 後の b-money 発見と、ホワイトペーパーの参考文献 [1] への橋となる人物。]*

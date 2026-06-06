@@ -40,7 +40,7 @@ translationStatus: complete
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #2 — トランザクション設計** である。トランザクション層を端から端まで解説する。価値がどのように表現され、転送され、ロックされ、アンロックされるかを扱う。ビットコインのすべて — マイニングのインセンティブ、ブロック重量、手数料市場、ウォレットの使い勝手 — がここに記述される構造に依存している。
 
-これらの概念がはじめての方は、 [ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)が UTXO・Bitcoin Script・トランザクションを図と一緒に、 事前知識ゼロで紹介している。 本ページは同じトランザクション層を設計文書として扱う。
+これらの概念がはじめての方は、 [ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)が UTXO・Bitcoin Script・トランザクションを図と一緒に、事前知識ゼロで紹介している。本ページは同じトランザクション層を設計文書として扱う。
 
 トランザクション層は 3 つの問いに答える:
 
@@ -313,4 +313,4 @@ flowchart TB
 - **Lightning Network とペイメントチャネル** — ここで説明したトランザクション基本要素の上に構築されるレイヤー 2 構成。
 - **ウォレットの鍵導出** — ロックスクリプトで使用されるアドレスを生成する BIP 32/44/84/86 の HD 鍵ツリーとディスクリプターウォレット。
 
-本エントリが扱うトランザクション層は、 設計文書群の中継拠点である: [ブロックチェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)はトランザクションをブロック内容として、 [暗号設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)は署名・ハッシュの消費者として、 [通貨設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)はコインベース・手数料機構として、 [P2P ネットワーク設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)は inv/tx 伝播ペイロードとして、 [保管設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/)は UTXO セット更新単位として、 [ウォレット設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-wallet-design/)は構築・署名対象として、 [エコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)は手数料市場・ライトニングネットワークエコシステムの動作単位として、 それぞれトランザクションを読む。
+本エントリが扱うトランザクション層は、設計文書群の中継拠点である: [ブロックチェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)はトランザクションをブロック内容として、 [暗号設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)は署名・ハッシュの消費者として、 [通貨設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)はコインベース・手数料機構として、 [P2P ネットワーク設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)は inv/tx 伝播ペイロードとして、 [保管設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/)は UTXO セット更新単位として、 [ウォレット設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-wallet-design/)は構築・署名対象として、 [エコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)は手数料市場・ライトニングネットワークエコシステムの動作単位として、それぞれトランザクションを読む。

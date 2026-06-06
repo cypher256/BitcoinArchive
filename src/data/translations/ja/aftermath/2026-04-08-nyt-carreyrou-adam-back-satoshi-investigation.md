@@ -67,7 +67,7 @@ translationStatus: complete
 
 カレイロウは 18 か月にわたり、NYT の AI 専門家のディラン・フリードマンと協働で本調査を実施した。サイファーパンク時代の文章を文体計量比較するのが中心的方法だった：
 
-- 1992 年から 2008 年頃までのサイファーパンクメーリングリスト 3 件の通信を収集：**Cypherpunks** リスト、**Cryptography** リスト（metzdowd.com）、**Hashcash** メーリングリスト。3 番目の Hashcash は**アダム・バック本人が 1997 年に提案した Proof of Work 方式の告知・議論リスト**であり、バックの執筆量がこのリスト上で構造的に多くなることは「バックがサトシかどうか」 とは無関係の事実である。バックは方法論上の異議を公に唱えている。すなわち、同時期に他の多くの寄稿者よりはるかに多く Hashcash・サイファーパンクのリストに投稿してきたため、パターンマッチングシステムが学習できるバック本人の文章量が突出しており、バックのコーパスへの最高一致は「サトシ本人を特定した」 というより「バックの執筆量を反映した」 結果になりやすい、という指摘である。
+- 1992 年から 2008 年頃までのサイファーパンクメーリングリスト 3 件の通信を収集：**Cypherpunks** リスト、**Cryptography** リスト（metzdowd.com）、**Hashcash** メーリングリスト。3 番目の Hashcash は**アダム・バック本人が 1997 年に提案した Proof of Work 方式の告知・議論リスト**であり、バックの執筆量がこのリスト上で構造的に多くなることは「バックがサトシかどうか」とは無関係の事実である。バックは方法論上の異議を公に唱えている。すなわち、同時期に他の多くの寄稿者よりはるかに多く Hashcash・サイファーパンクのリストに投稿してきたため、パターンマッチングシステムが学習できるバック本人の文章量が突出しており、バックのコーパスへの最高一致は「サトシ本人を特定した」というより「バックの執筆量を反映した」結果になりやすい、という指摘である。
 - ビットコイン公開（2008 年）以前に暗号学メーリングリストに 10 件以上の投稿を行った 620 人の書き手に絞り込み。
 - 各書き手の文体的指紋をサトシの既知の文章と比較。
 - バックの文章がサトシのものと特徴的に一致する 3 つの指標を特定：句点後の二重スペース、英国式綴り（サトシと同じく英米混在のパターン）、特定の種類のハイフン誤用。
@@ -75,7 +75,7 @@ translationStatus: complete
 
 委託先の言語学者のフロリアン・カフィエロによる独立した文体計量分析は、12 名の候補のうちバックを最上位に位置づけたが、カフィエロ自身は結果を不確定と評した — [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)がバックとほぼ並ぶ位置を占めた。
 
-調査はまた、本調査が「目立つ空白」 と呼ぶバックのオンライン活動の特徴を指摘する：バックは何年もサイファーパンクのデジタルキャッシュ議論に従事していたが、ビットコインが告知された 2008 年末頃に投稿が静かになった。
+調査はまた、本調査が「目立つ空白」と呼ぶバックのオンライン活動の特徴を指摘する：バックは何年もサイファーパンクのデジタルキャッシュ議論に従事していたが、ビットコインが告知された 2008 年末頃に投稿が静かになった。
 
 **エルサルバドルでのインタビュー：**
 
@@ -107,18 +107,18 @@ translationStatus: complete
 
 本アーカイブは NYT の主張に直接関わる一次資料を保有している：
 
-- サトシとバックの間の [2008 年 8 月 20〜22 日のメール通信](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) — [8 月 21 日のバックがサトシにウェイ・ダイの b-money を見るよう示唆した返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/)、[8 月 22 日のサトシの返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)で「b-money のページは知らなかった」 と述べ同日付で[ウェイ・ダイにメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送ったこと。
+- サトシとバックの間の [2008 年 8 月 20〜22 日のメール通信](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) — [8 月 21 日のバックがサトシにウェイ・ダイの b-money を見るよう示唆した返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/)、[8 月 22 日のサトシの返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)で「b-money のページは知らなかった」と述べ同日付で[ウェイ・ダイにメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送ったこと。
 - バックの [2024 年 2 月の COPA 対ライト裁判での証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — 上記メールを証人証拠として提出し、宣誓のもとサトシを別人として扱った。
-- [ウェイ・ダイの 2014 年回想](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)（AALWA スレッド）— サトシは開発期間中、可視のサイファーパンクコミュニティで「以前から積極的に活動していた人物ではない」 と論じている。これは 2007〜2008 年にサイファーパンクメーリングリストで可視に活動していた候補に対する反証として作用するが、まさにこの母集団が NYT の文体計量分析の選択対象である。
+- [ウェイ・ダイの 2014 年回想](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)（AALWA スレッド）— サトシは開発期間中、可視のサイファーパンクコミュニティで「以前から積極的に活動していた人物ではない」と論じている。これは 2007〜2008 年にサイファーパンクメーリングリストで可視に活動していた候補に対する反証として作用するが、まさにこの母集団が NYT の文体計量分析の選択対象である。
 
 **批判的評価：**
 
-ビットコイン関連メディアでの報道は、特定への懐疑が大勢を占めた。[Fortune](https://fortune.com/2026/04/08/who-is-the-real-inventor-of-bitcoin-satoshi-nakamoto/) は調査が「サトシを発見したかもしれない」 と表現し、断定を避けた。[Unchained](https://unchainedcrypto.com/nyt-names-adam-back-as-satoshi-nakamoto-he-denies-it-and-the-crypto-community-agrees-with-him-unchained/) はビットコインコミュニティの大半がバックの否定に同意していると報じた。方法論はビットコインコミュニティの応答で「示唆的だが決定的ではない」 と広く位置づけられた — カフィエロ自身が結果を「不確定」 と評し、フィニーがほぼ並んだという事実が大きい。
+ビットコイン関連メディアでの報道は、特定への懐疑が大勢を占めた。[Fortune](https://fortune.com/2026/04/08/who-is-the-real-inventor-of-bitcoin-satoshi-nakamoto/) は調査が「サトシを発見したかもしれない」と表現し、断定を避けた。[Unchained](https://unchainedcrypto.com/nyt-names-adam-back-as-satoshi-nakamoto-he-denies-it-and-the-crypto-community-agrees-with-him-unchained/) はビットコインコミュニティの大半がバックの否定に同意していると報じた。方法論はビットコインコミュニティの応答で「示唆的だが決定的ではない」と広く位置づけられた — カフィエロ自身が結果を「不確定」と評し、フィニーがほぼ並んだという事実が大きい。
 
-*[編者注：カレイロウの調査は、主流メディアにおいて公開された文体計量ベースのサトシ特定のうち、最も目立つもの。2014 年の Newsweek による[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の特定は名前一致と物理的状況証拠に依拠していた。2024 年の [HBO ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)による[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)の特定は、単一のフォーラム投稿のタイミング論に依拠していた。カレイロウの方法論 — 定義された母集団に対する文体計量比較と独立した言語学的レビュー — は構造的にはより厳密だが、本人が委託したレビュアー自身が「不確定」 と評している点は本記事の固有の特徴である。]*
+*[編者注：カレイロウの調査は、主流メディアにおいて公開された文体計量ベースのサトシ特定のうち、最も目立つもの。2014 年の Newsweek による[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の特定は名前一致と物理的状況証拠に依拠していた。2024 年の [HBO ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)による[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)の特定は、単一のフォーラム投稿のタイミング論に依拠していた。カレイロウの方法論 — 定義された母集団に対する文体計量比較と独立した言語学的レビュー — は構造的にはより厳密だが、本人が委託したレビュアー自身が「不確定」と評している点は本記事の固有の特徴である。]*
 
-カレイロウの調査は、 2024-2026 年の主要メディア／ドキュメンタリーによるサトシ特定 4 件の一角を占める。 [2024 年の HBO ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)はピーター・トッドをフォーラム投稿のタイミング論で名指しした。 [サトシ複数人説 ― 『Finding Satoshi』 ドキュメンタリー (2026 年 4 月)](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)はハル・フィニーとレン・サッサマンを共作者として提示した。 [サトシ政府機関説 ― Murphy 対 DHS FOIA 訴訟 (2025 年 4 月)](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)は同じ問いを政府文書開示の経路で追っている。 4 件のうち暗号学的確認に到達したものは無い。
+カレイロウの調査は、 2024-2026 年の主要メディア／ドキュメンタリーによるサトシ特定 4 件の一角を占める。 [2024 年の HBO ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)はピーター・トッドをフォーラム投稿のタイミング論で名指しした。 [サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー (2026 年 4 月)](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)はハル・フィニーとレン・サッサマンを共作者として提示した。 [サトシ政府機関説 ― Murphy 対 DHS FOIA 訴訟 (2025 年 4 月)](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)は同じ問いを政府文書開示の経路で追っている。 4 件のうち暗号学的確認に到達したものは無い。
 
 アダム・バック＝サトシ仮説の分析的扱い（本調査の証拠を 2008 年 8 月のメール通信、2024 年の COPA 証言、より広い公開記録と比較して衡量する作業）については、[アダム・バック＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)を参照。
 
-本調査は、 より広い同定コーパスの中に位置付ける複数の隣接記録から参照されている: [アダム・バック伝記](/BitcoinArchive/ja/participants/adam-back/)は本調査を直近のジャーナリスティック同定試行として記録する。 文体計量記録 ― [2014 年 Aston 大学サボ研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)、 [van Dorst 2024 年コーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)、 [2026 年 van Dorst コーパス候補別再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) ― はカレイロウを定量手法と対比すべき直近のジャーナリスティック同定として扱う。 ジャーナリスティック・文体計量同定の上流枠組み ― [サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)・[同定非対称性分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) ― はいずれもカレイロウ調査を、 本アーカイブの構造的読みが意味付けの対象とする 2024 年以降の波の典型事例として位置付ける。
+本調査は、より広い同定コーパスの中に位置付ける複数の隣接記録から参照されている: [アダム・バック伝記](/BitcoinArchive/ja/participants/adam-back/)は本調査を直近のジャーナリスティック同定試行として記録する。文体計量記録 ― [2014 年 Aston 大学サボ研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)、 [van Dorst 2024 年コーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)、 [2026 年 van Dorst コーパス候補別再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) ― はカレイロウを定量手法と対比すべき直近のジャーナリスティック同定として扱う。ジャーナリスティック・文体計量同定の上流枠組み ― [サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)・[同定非対称性分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) ― はいずれもカレイロウ調査を、本アーカイブの構造的読みが意味付けの対象とする 2024 年以降の波の典型事例として位置付ける。

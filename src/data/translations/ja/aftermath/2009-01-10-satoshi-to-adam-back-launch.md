@@ -44,7 +44,7 @@ translationStatus: complete
 
 <!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
-> 論文のオープンソース実装、 Bitcoin v0.1 をリリースした。 詳細、 ダウンロード、 スクリーンショットは www.bitcoin.org にある。
+> 論文のオープンソース実装、 Bitcoin v0.1 をリリースした。詳細、ダウンロード、スクリーンショットは www.bitcoin.org にある。
 
 <!-- speaker: narrator -->
 プロジェクトがどう受け止められているかを示すため、サトシは暗号学メーリングリストの議論から[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の応答の一部を転送した。フィニーの発言は metzdowd.com の暗号学メーリングリストアーカイブとして独立に公開されており、正典は[フィニーの応答エントリ（2008-11-07）](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/)にある。サトシがバックに見せるために特に転送した二行は次の通り。

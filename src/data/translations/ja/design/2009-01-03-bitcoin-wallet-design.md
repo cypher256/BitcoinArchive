@@ -388,4 +388,4 @@ flowchart LR
 - **サードパーティーウォレット** — Electrum、Sparrow、ハードウェアウォレット、モバイルウォレットは Bitcoin Core リファレンス実装の外部のアプリケーション層ソフトウェア。
 - **Lightning Network** — ここで記述したトランザクションと PSBT の基本要素の上に構築されるが、別のプロトコルで動作するレイヤー 2 決済チャネル。
 
-本ウォレット設計は[トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)から、 同設計が文書化するトランザクションを生み出す利用者向けの層 ― 構築物の層 ― として位置付けられる。
+本ウォレット設計は[トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)から、同設計が文書化するトランザクションを生み出す利用者向けの層 ― 構築物の層 ― として位置付けられる。

@@ -55,4 +55,4 @@ translationStatus: complete
 
 本記事は 2017 年 9 月 20 日に LinkedIn に公開され、翌 9 月 21 日に Hacker News のトップページに達し、329 ポイントと 86 件のコメントを獲得した。
 
-ディリンジャーはここでハル・フィニーとの分業を概観しているが、 その監査のより深い技術的中身 — 浮動小数点による会計の発見と satoshi 精度の設計判断 — は、 [ティム・スワンソンによる 2018 年のインタビュー](/BitcoinArchive/ja/entries/aftermath/2018-10-01-ray-dillinger-interview/)で詳しく語られている。
+ディリンジャーはここでハル・フィニーとの分業を概観しているが、その監査のより深い技術的中身 — 浮動小数点による会計の発見と satoshi 精度の設計判断 — は、 [ティム・スワンソンによる 2018 年のインタビュー](/BitcoinArchive/ja/entries/aftermath/2018-10-01-ray-dillinger-interview/)で詳しく語られている。

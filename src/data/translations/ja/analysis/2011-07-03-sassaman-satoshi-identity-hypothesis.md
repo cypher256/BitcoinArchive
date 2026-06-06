@@ -54,7 +54,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-2011 年 4 月 26 日、[サトシは最後の既知のメール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)を送った。68 日後の 2011 年 7 月 3 日、サイファーパンクの暗号学者レン・サッサマンがベルギーで自死した。この 2 つの日付の近接性が「サッサマン＝サトシ」 仮説の中核観察である —— Mixmaster 匿名リメイラーの仕事、サイファーパンクとしての経歴、2011 年 8 月のダン・カミンスキーによる[ブロックチェーン追悼](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/)が補強する。本エントリは[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)＝サトシ仮説、支持論者の論じ方、そして反証を同じ詳細度で並べる。 2026 年 4 月公開の[サトシ複数人説 ― 『Finding Satoshi』 ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、 この単独仮説を共作仮説に拡張し、 サッサマンをハル・フィニーと並ぶ共作者として提示している (主張と反証はリンク先を参照)。
+2011 年 4 月 26 日、[サトシは最後の既知のメール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)を送った。68 日後の 2011 年 7 月 3 日、サイファーパンクの暗号学者レン・サッサマンがベルギーで自死した。この 2 つの日付の近接性が「サッサマン＝サトシ」仮説の中核観察である —— Mixmaster 匿名リメイラーの仕事、サイファーパンクとしての経歴、2011 年 8 月のダン・カミンスキーによる[ブロックチェーン追悼](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/)が補強する。本エントリは[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)＝サトシ仮説、支持論者の論じ方、そして反証を同じ詳細度で並べる。 2026 年 4 月公開の[サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、この単独仮説を共作仮説に拡張し、サッサマンをハル・フィニーと並ぶ共作者として提示している (主張と反証はリンク先を参照)。
 
 ## 1. 仮説が主張する内容
 
@@ -117,11 +117,11 @@ Mixmaster 等の匿名性システムにおけるサッサマンの記録され�
 
 ### 3.3 KU ルーヴェン大学での研究負荷
 
-サッサマンは 2008–2011 年 — ビットコインの開発と初期運用の期間 — を通じて、 KU ルーヴェン大学の活動的な博士課程在籍者であった。 約 18 か月にわたるビットコイン集中コーディング期 (2007 年半ばから v0.1 リリースの 2009 年 1 月まで — 実装作業は 2008 年 8 月までに実質的に完了、 [サトシ自身の文書化された年表より](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)) は、 サトシが後に「2007 年から」「リリース前に 2 年間の開発」 と述べた約 2 年のリリース前作業の中で行われたものであり、 COSIC の博士課程在籍者であれば学究生活で最も負荷の高い時期と通常は重なる。 仮説は、 サッサマンが両方を — 博士課程の研究 *と* 約 2 年にわたる集中的なビットコイン開発を — 同時並行で行ったことを要求する。 可能ではあるが、 タダではない。
+サッサマンは 2008–2011 年 — ビットコインの開発と初期運用の期間 — を通じて、 KU ルーヴェン大学の活動的な博士課程在籍者であった。約 18 か月にわたるビットコイン集中コーディング期 (2007 年半ばから v0.1 リリースの 2009 年 1 月まで — 実装作業は 2008 年 8 月までに実質的に完了、 [サトシ自身の文書化された年表より](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)) は、サトシが後に「2007 年から」「リリース前に 2 年間の開発」と述べた約 2 年のリリース前作業の中で行われたものであり、 COSIC の博士課程在籍者であれば学究生活で最も負荷の高い時期と通常は重なる。仮説は、サッサマンが両方を — 博士課程の研究 *と* 約 2 年にわたる集中的なビットコイン開発を — 同時並行で行ったことを要求する。可能ではあるが、タダではない。
 
 ## 4. 公的記録全体の中での位置
 
-公的な記録が支えるサトシ自身に関する最も強い主張は、サトシがビットコインの開発期間中に[可視のサイファーパンクコミュニティの構造的に外側にいた](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)こと — ウェイ・ダイの 2014 年の識別性論、加えてサトシ自身の「開発時には b-money を知らなかった」 という告白の二つが、「2007–2008 年に可視のサイファーパンクとして活動していた人物ではない」 という読解を支持する。
+公的な記録が支えるサトシ自身に関する最も強い主張は、サトシがビットコインの開発期間中に[可視のサイファーパンクコミュニティの構造的に外側にいた](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)こと — ウェイ・ダイの 2014 年の識別性論、加えてサトシ自身の「開発時には b-money を知らなかった」という告白の二つが、「2007–2008 年に可視のサイファーパンクとして活動していた人物ではない」という読解を支持する。
 
 この読解はサッサマンを否定はしないが、選択もしない。2007–2008 年に可視のサイファーパンク議論で *目に見えて* 活動していたあらゆる候補を否定する方向に作用する。サッサマンの 2007–2008 年の公的活動は [Wikipedia 項目](https://en.wikipedia.org/wiki/Len_Sassaman)および学会記録で確認できる：
 
@@ -131,7 +131,7 @@ Mixmaster 等の匿名性システムにおけるサッサマンの記録され�
 | 2007-12 | 24C3（ベルリン） | 講演：『2015 年の匿名性』 |
 | 2008-05 | バート・プレニールとの共著 | 論文：『ビザンチン郵便配達人問題』 |
 
-これら講演および論文は匿名性ネットワークの専門領域に属し、デジタルキャッシュ議論ではない。この程度の公的な匿名性研究の可視性が、ウェイ・ダイの識別性論が否定する方向に作用する「サイファーパンクのデジタルキャッシュ議論での可視性」 と同じものに当たるかは別問題である — サッサマンは開発期間中に不可視だったわけではないが、可視だった活動領域は議論が名指す領域とは別の専門だった。
+これら講演および論文は匿名性ネットワークの専門領域に属し、デジタルキャッシュ議論ではない。この程度の公的な匿名性研究の可視性が、ウェイ・ダイの識別性論が否定する方向に作用する「サイファーパンクのデジタルキャッシュ議論での可視性」と同じものに当たるかは別問題である — サッサマンは開発期間中に不可視だったわけではないが、可視だった活動領域は議論が名指す領域とは別の専門だった。
 
 [テクノオリエンタリスト署名分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)は、固有名候補の仮説とは独立しており、仮名の背後の人物がサッサマンであっても、別の人物であっても、グループであっても、等しく適用される。
 
@@ -143,6 +143,6 @@ Mixmaster 等の匿名性システムにおけるサッサマンの記録され�
 - 本エントリーは「最も蓋然性の高いサトシ候補」を指名しない。
 - 新たな証拠 — 直接的な文書上の繋がり、v0.1 コードに残るサッサマンの他の公開コードと一致する技術的指紋、パターソンや他の証人による発言 — が出現すれば、本エントリーは更新されるべきである。
 
-本仮説は[レン・サスマン伝記](/BitcoinArchive/ja/participants/len-sassaman/) (仮説の対象人物)、 [アダム・バック身元仮説](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)・[サボ身元仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)・[金子勇身元仮説](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) (同じ候補ランドスケープの並列仮説)、 そして [2026 年 van Dorst コーパス候補別再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) (サスマン枠組みを定量的文体計量と対比) から参照される。
+本仮説は[レン・サスマン伝記](/BitcoinArchive/ja/participants/len-sassaman/) (仮説の対象人物)、 [アダム・バック身元仮説](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)・[サボ身元仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)・[金子勇身元仮説](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) (同じ候補ランドスケープの並列仮説)、そして [2026 年 van Dorst コーパス候補別再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) (サスマン枠組みを定量的文体計量と対比) から参照される。
 
 *[編者注：本エントリーは分析セクションの中で最も推論寄りのエントリーである。枠組みは意図的に保守的にしてある：仮説を提示し、支持論者の論じ方をそのまま描写し、反証を同じ詳細度で示す。本エントリーは仮説の真偽について編集的な結論を引かない。明確な判定を求める読者は本エントリーには見出さないが、判断のための材料は両側に並べて提示する。]*

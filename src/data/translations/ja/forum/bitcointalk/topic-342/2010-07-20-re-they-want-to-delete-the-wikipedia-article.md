@@ -9,7 +9,7 @@ participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 description: "Wikipedia 記事の削除議論にサトシが助言。b-money と Bitgold の実装と述べる。bit gold の関連付けは 2008-11 にハル・フィニーが先に公的に提示。"
-editorNote: "サトシはここで Bitcoin を b-money と Bitgold の「実装」 と述べている。一次資料の系譜：アダム・バックが 2008 年 8 月にウェイ・ダイの b-money をサトシに紹介 (サトシ自身の 2008-08-22 ウェイ・ダイ宛メールで確認:「アダム・バックが類似性に気づいて私を [b-money] サイトに案内した」)、Bitcoin whitepaper (2008-10-31) は b-money [1] と Hashcash [6] を引用するが bit gold は引用なし、ハル・フィニーが 2008-11-07 に暗号学メーリングリストで Bitcoin whitepaper への返信として bit gold との関連付けを公的に最初に提示 (「ニック・サボが何年も前に『bit gold』と呼ぶものについて書いていた。これはその概念の実装と言えるだろう」)、サトシは 2010 年 7 月の本投稿でハルの枠組みを反映。サトシ自身がいつ bit gold を知ったかは本アーカイブの一次資料では直接的に証言されていない。"
+editorNote: "サトシはここで Bitcoin を b-money と Bitgold の「実装」と述べている。一次資料の系譜：アダム・バックが 2008 年 8 月にウェイ・ダイの b-money をサトシに紹介 (サトシ自身の 2008-08-22 ウェイ・ダイ宛メールで確認:「アダム・バックが類似性に気づいて私を [b-money] サイトに案内した」)、Bitcoin whitepaper (2008-10-31) は b-money [1] と Hashcash [6] を引用するが bit gold は引用なし、ハル・フィニーが 2008-11-07 に暗号学メーリングリストで Bitcoin whitepaper への返信として bit gold との関連付けを公的に最初に提示 (「ニック・サボが何年も前に『bit gold』と呼ぶものについて書いていた。これはその概念の実装と言えるだろう」)、サトシは 2010 年 7 月の本投稿でハルの枠組みを反映。サトシ自身がいつ bit gold を知ったかは本アーカイブの一次資料では直接的に証言されていない。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

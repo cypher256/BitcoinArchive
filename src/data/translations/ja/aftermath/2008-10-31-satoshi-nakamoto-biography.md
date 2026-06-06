@@ -57,9 +57,9 @@ translationStatus: complete
 
 2008年10月31日、サトシ・ナカモトはビットコインホワイトペーパーを発表した。2年半後、最後の既知のメールを送信して消えた。最初の数か月に単一の協調的なパターンでマイニングされた約 110 万 BTC は、その後一度も動いていない。
 
-「サトシ・ナカモト」 は仮名である。その背後にいる個人またはグループは、これまで特定されていない —— [サトシ正体仮説の横断比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)が、 10 人の名指し候補をここにまとめた記録に照らして検証している問いである。
+「サトシ・ナカモト」は仮名である。その背後にいる個人またはグループは、これまで特定されていない —— [サトシ正体仮説の横断比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)が、 10 人の名指し候補をここにまとめた記録に照らして検証している問いである。
 
-*ビットコインがはじめての方は、 [ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)から ― 8 章 30 用語を図と一緒に、 事前知識ゼロでも読める。*
+*ビットコインがはじめての方は、 [ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)から ― 8 章 30 用語を図と一緒に、事前知識ゼロでも読める。*
 
 ```mermaid
 timeline
@@ -91,7 +91,7 @@ timeline
 
 ### ローンチ
 
-2009年1月3日、サトシは[ブロック 0](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/) のパラメーターを定義した。そのコインベース欄に埋め込まれていたのは、当日付の『タイムズ』 紙一面の見出し：
+2009年1月3日、サトシは[ブロック 0](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/) のパラメーターを定義した。そのコインベース欄に埋め込まれていたのは、当日付の『タイムズ』紙一面の見出し：
 
 > 「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」
 
@@ -103,7 +103,7 @@ timeline
 
 ### 移行と消失
 
-2010年9月時点で、サトシはギャビン・アンドレセンに「[他のプロジェクトに取り組んでいる](/BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/)」 と私的に伝えていた —— 公開記録上最も早い撤退シグナル。続く数か月のあいだに、ビットコインソースリポジトリの管理権とネットワーク警告キーをアンドレセンへ移譲し、メールでは少数の開発者と 2011年初頭まで通信を続けた。
+2010年9月時点で、サトシはギャビン・アンドレセンに「[他のプロジェクトに取り組んでいる](/BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/)」と私的に伝えていた —— 公開記録上最も早い撤退シグナル。続く数か月のあいだに、ビットコインソースリポジトリの管理権とネットワーク警告キーをアンドレセンへ移譲し、メールでは少数の開発者と 2011年初頭まで通信を続けた。
 
 [最後の公開 BitcoinTalk 投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)は 2010年12月12日：
 
@@ -126,7 +126,7 @@ timeline
 
 ### プロフィール
 
-P2P Foundation プロフィールは生年月日を 1975年4月5日、所在地を日本と記載していた —— 未確認、かつ架空のものと広く考えられている。サトシの英語は流暢で、英国または英連邦の慣習に一致する。投稿タイムスタンプの分析からはさまざまなタイムゾーンが推測されてきたが、所在地の決定的な特定には至っていない。「サトシ・ナカモト」 という仮名は 1980〜90 年代のテクノオリエンタリズム的な象徴空間の内側に収まる —— 作者の意図とは独立な、受容についての構造的観察として[仮名と『AKIRA』 についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)で扱う。サトシのサイファーパンク運動との関係および公開記録上の実践と思想核との整合は、[サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で別途扱う。
+P2P Foundation プロフィールは生年月日を 1975年4月5日、所在地を日本と記載していた —— 未確認、かつ架空のものと広く考えられている。サトシの英語は流暢で、英国または英連邦の慣習に一致する。投稿タイムスタンプの分析からはさまざまなタイムゾーンが推測されてきたが、所在地の決定的な特定には至っていない。「サトシ・ナカモト」という仮名は 1980〜90 年代のテクノオリエンタリズム的な象徴空間の内側に収まる —— 作者の意図とは独立な、受容についての構造的観察として[仮名と『AKIRA』についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)で扱う。サトシのサイファーパンク運動との関係および公開記録上の実践と思想核との整合は、[サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で別途扱う。
 
 ### 開発環境
 
@@ -137,11 +137,11 @@ Bitcoin v0.1 は Windows 上で Microsoft Visual C++ 6.0 SP6 と MinGW GCC 3.4.5
 <!-- speaker: Satoshi Nakamoto -->
 > 「そこは自分の専門外だから助かる」
 
-2010年12月のアンドレセン宛メールでは、アンドレセンを「技術的に自分よりはるかに Linux に精通している」 と評している。Mac 対応はラズロ・ハニエツが全面的に貢献した —— サトシにはテスト用の Mac がなかった。BSD の知識はソケットの起源など概念的なもので、実践的ではなかった。2010年を通じて、コミュニティからのパッチを取り込みながら Linux、macOS、FreeBSD のクロスプラットフォーム対応が拡大した。[サトシのソースコードの統計的分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)が、コーディングスタイル、コミット時間帯パターン、v0.1.0 から v0.3.19 までのコード進化を扱う。
+2010年12月のアンドレセン宛メールでは、アンドレセンを「技術的に自分よりはるかに Linux に精通している」と評している。Mac 対応はラズロ・ハニエツが全面的に貢献した —— サトシにはテスト用の Mac がなかった。BSD の知識はソケットの起源など概念的なもので、実践的ではなかった。2010年を通じて、コミュニティからのパッチを取り込みながら Linux、macOS、FreeBSD のクロスプラットフォーム対応が拡大した。[サトシのソースコードの統計的分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)が、コーディングスタイル、コミット時間帯パターン、v0.1.0 から v0.3.19 までのコード進化を扱う。
 
 ### ビットコイン保有量
 
-ビットコイン最初の数か月に、単一の協調的なパターンでマイニングされたビットコインは約 110 万 BTC ——「[Patoshi パターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)」 と呼ばれ、サトシのものと考えられている。これらのコインは一度も動いていない。
+ビットコイン最初の数か月に、単一の協調的なパターンでマイニングされたビットコインは約 110 万 BTC ——「[Patoshi パターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)」と呼ばれ、サトシのものと考えられている。これらのコインは一度も動いていない。
 
 ---
 
@@ -153,8 +153,8 @@ Bitcoin v0.1 は Windows 上で Microsoft Visual C++ 6.0 SP6 と MinGW GCC 3.4.5
 
 サトシはメーリングリストとフォーラム上で設計判断を説明し、技術的反論に応答し、運用判断を下した —— 2010年12月の WikiLeaks 寄付推進の辞退、2010年末から 2011年初頭にかけてのソースリポジトリのコミット権限とネットワーク警告キーのアンドレセンへの引き渡し。
 
-サトシが設計した思想史的系譜 ― ハイエク 1976 年『貨幣発行自由化論』、 1990 年代のエクストロピアン環境、 サイファーパンク運動、 そして一次資料が支持する直接影響の限界 ― は[ハイエク=エクストロピアン系譜エントリー](/BitcoinArchive/ja/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/)と姉妹分析[サトシ・ナカモトはサイファーパンクではなかった](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で扱う。
+サトシが設計した思想史的系譜 ― ハイエク 1976 年『貨幣発行自由化論』、 1990 年代のエクストロピアン環境、サイファーパンク運動、そして一次資料が支持する直接影響の限界 ― は[ハイエク=エクストロピアン系譜エントリー](/BitcoinArchive/ja/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/)と姉妹分析[サトシ・ナカモトはサイファーパンクではなかった](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で扱う。
 
-本伝記は[サトシ自己発言一覧](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)と対をなして読まれる。 同分析はサトシが自分自身を文の主語にした全箇所を整理し、 サトシが自分について何を述べたかを単一の証拠群として読む ― 本エントリで集約された伝記的な記録に対する補完軸として、 である。
+本伝記は[サトシ自己発言一覧](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)と対をなして読まれる。同分析はサトシが自分自身を文の主語にした全箇所を整理し、サトシが自分について何を述べたかを単一の証拠群として読む ― 本エントリで集約された伝記的な記録に対する補完軸として、である。
 
-*[補足：本伝記は、 小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』 の主人公の記録的根拠となる ― 主人公が関わるあらゆる日付事象は、 ここに集約された一次資料に固定されている。]*
+*[補足：本伝記は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』の主人公の記録的根拠となる ― 主人公が関わるあらゆる日付事象は、ここに集約された一次資料に固定されている。]*

@@ -11,7 +11,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "トランメルが誤ラベルは自分のミスと認め、「Received with」 を「Received payment to」 に変更する提案を行い、複数受信アドレスに最も近い例として PayPal を挙げた。"
+description: "トランメルが誤ラベルは自分のミスと認め、「Received with」を「Received payment to」に変更する提案を行い、複数受信アドレスに最も近い例として PayPal を挙げた。"
 isSatoshi: false
 tags:
   - "correspondence"

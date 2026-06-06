@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "サトシが Berkeley DB の「Bad file descriptor」 例外への回避策を持ち、エラーが発生する DB ファイルの特定を Liberty Standard に依頼。"
+description: "サトシが Berkeley DB の「Bad file descriptor」例外への回避策を持ち、エラーが発生する DB ファイルの特定を Liberty Standard に依頼。"
 isSatoshi: true
 tags:
   - "correspondence"
@@ -42,7 +42,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> データディレクトリを SSD カードに戻して、 bitcoin test 6 を起動した。 今日、 ログに Db::open が出るかたちでセグメンテーション違反が発生した。 720p mkv 動画を見ている間、 設定をプロセッサー / コア 1 つだけ使うように変えていた。 セグメンテーション違反には、 映画が終わってから気付いた。
+> データディレクトリを SSD カードに戻して、 bitcoin test 6 を起動した。今日、ログに Db::open が出るかたちでセグメンテーション違反が発生した。 720p mkv 動画を見ている間、設定をプロセッサー / コア 1 つだけ使うように変えていた。セグメンテーション違反には、映画が終わってから気付いた。
 >
 <!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->

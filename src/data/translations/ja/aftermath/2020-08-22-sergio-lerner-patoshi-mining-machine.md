@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "ラーナー「The Patoshi Mining Machine」 発表。再マイニングシミュレーションで、サトシが 50 台超ではなく 5 並列スレッド単一高性能 CPU でマイニングしたと実証。"
+description: "ラーナー「The Patoshi Mining Machine」発表。再マイニングシミュレーションで、サトシが 50 台超ではなく 5 並列スレッド単一高性能 CPU でマイニングしたと実証。"
 isSatoshi: false
 tags:
   - "patoshi"
@@ -64,4 +64,4 @@ translationStatus: complete
 
 この分析は Whale Alert の約 48 台の独立したコンピューターという主張を直接否定した。この区別は重要である：カスタムソフトウェアを実行する単一の PC は、ネットワークを立ち上げる一人の個人と整合するが、48 台のマシンによるオペレーションは組織的なリソースを示唆する。ラーナーの発見は、サトシが消費者向けハードウェアで単独に作業する技術的に優れた個人であるという像を強化した。
 
-このハードウェアの結論は、 ラーナーの先行する二つの発見の上に直接築かれている。 ExtraNonce フィールドから単一マイナーの信号を最初に切り出した [2013 年の Patoshi パターン分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)と、 本再マイニング・シミュレーションが再現するナンス分割の指紋を確立した [2013 年のナンス LSB 発見](/BitcoinArchive/ja/entries/aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery/)である。
+このハードウェアの結論は、ラーナーの先行する二つの発見の上に直接築かれている。 ExtraNonce フィールドから単一マイナーの信号を最初に切り出した [2013 年の Patoshi パターン分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)と、本再マイニング・シミュレーションが再現するナンス分割の指紋を確立した [2013 年のナンス LSB 発見](/BitcoinArchive/ja/entries/aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery/)である。

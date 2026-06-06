@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがハル・フィニーのボットネット指摘に応答し、偽メールボックスがスパマーの POW トークンを回収する「リバース・スパミング」 案を提示。e-gold の「ダスティング」 問題にも言及。"
+description: "サトシがハル・フィニーのボットネット指摘に応答し、偽メールボックスがスパマーの POW トークンを回収する「リバース・スパミング」案を提示。e-gold の「ダスティング」問題にも言及。"
 isSatoshi: true
 tags:
   - "correspondence"

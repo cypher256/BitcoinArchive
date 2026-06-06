@@ -45,10 +45,18 @@ function walkFiles(dir) {
   return out;
 }
 
-// Japanese letter classes. Excludes JA punctuation (「」、。 etc.) since
-// the issue is letters-with-stranded-space, not punctuation.
-const JA_LETTER = '[\\u3040-\\u309F\\u30A0-\\u30FF\\u4E00-\\u9FFF\\u3005\\u30FC]';
-const JA_JA_SPACE = new RegExp(`(${JA_LETTER}) (${JA_LETTER})`, 'gu');
+// Japanese character classes. JA_LETTER is kana/kanji only and drives the
+// JA × ASCII boundary checks below (where JA punctuation is neither side).
+const JA_INNER = '\\u3040-\\u309F\\u30A0-\\u30FF\\u4E00-\\u9FFF\\u3005\\u30FC';
+const JA_LETTER = `[${JA_INNER}]`;
+// For the JA × JA stranded-space rule, "Japanese" also includes JA
+// punctuation (、。「」『』（）etc.): a half-width space touching punctuation is
+// just as stray as one between two letters (e.g. "なるほど、 「同じ」 トラン…").
+// The spaced em / horizontal-bar dash ( — / ― ) is a sanctioned clause bridge
+// (STYLE_GUIDE_JA "禁止句読点") and is deliberately NOT in this class.
+const JA_PUNCT_INNER = '、。，．・「」『』（）〔〕【】〈〉《》！？：；';
+const JA_ANY = `[${JA_INNER}${JA_PUNCT_INNER}]`;
+const JA_JA_SPACE = new RegExp(`(${JA_ANY}) (${JA_ANY})`, 'gu');
 
 // Inverse-direction patterns — JA × ASCII / ASCII × JA missing
 // half-width space. Per STYLE_GUIDE_JA.md "Half-width space
@@ -361,7 +369,7 @@ if (violations.length > 0) {
       console.error(`    "${v.found}" → "${v.suggested}"  (drop the space)`);
       console.error('');
     }
-    console.error('Manual fix required (no auto-fix).');
+    console.error('Auto-fix: `node scripts/fix-ja-punct-spacing.mjs --apply`');
     console.error('');
   }
 

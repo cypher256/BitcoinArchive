@@ -122,6 +122,7 @@ breaks the build). `tool` = manual, run on demand — reusable, not spent.
 | `fill-source-entry-id.mjs` | Backfill `quotes[].sourceEntryId` | tool |
 | `fix-ja-ascii-spacing.mjs` | Insert missing JA × ASCII half-width spaces | tool |
 | `fix-ja-link-spacing.mjs` | Remove JA × JA spaces around markdown-link boundaries | tool |
+| `fix-ja-punct-spacing.mjs` | Remove half-width spaces stranded between JA chars incl. punctuation (、。「」) | tool |
 | `fix-ja-reply-titles.mjs` | Cascade JA forum reply titles from the starter (see STYLE_GUIDE.md) | tool |
 | `fix-quote-visual-divergence.mjs` | Fix visual-only JA quote divergence (audit-quote-translation-consistency category) | tool |
 | `generate-quote-fix-candidates.mjs` | Build a quote-fix review queue from audit-quote-translation-consistency | tool |

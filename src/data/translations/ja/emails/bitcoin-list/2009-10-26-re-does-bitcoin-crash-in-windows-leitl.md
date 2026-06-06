@@ -4,14 +4,14 @@ date: 2009-10-26T12:46:27Z
 type: "mailing-list"
 source: "bitcoin-list"
 sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/threads/10/"
-sourceNote: "SourceForge の bitcoin-list への投稿。 サトシ・ナカモト研究所のスレッドページが現存する正典写し。 この返信には個別の永続リンクが存在しない。"
+sourceNote: "SourceForge の bitcoin-list への投稿。サトシ・ナカモト研究所のスレッドページが現存する正典写し。この返信には個別の永続リンクが存在しない。"
 author: "Eugen Leitl"
 participants:
   - name: "Eugen Leitl"
     slug: "eugen-leitl"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "オイゲン・ライトルが、 bitcoin.sourceforge.net は正常というサトシの発言に反論し、 まだ落ちていると報告。 Debian (.deb) の有無も尋ねる。"
+description: "オイゲン・ライトルが、 bitcoin.sourceforge.net は正常というサトシの発言に反論し、まだ落ちていると報告。 Debian (.deb) の有無も尋ねる。"
 isSatoshi: false
 tags:
   - "mailing-list"
@@ -26,7 +26,7 @@ quotes:
 translationStatus: complete
 ---
 
-2009 年 10 月 24 日 ( 土 ) 00:55:06 +0100、 サトシ・ナカモトは次のように書いている。
+2009 年 10 月 24 日 ( 土 ) 00:55:06 +0100、サトシ・ナカモトは次のように書いている。
 
 <!-- quote: q1 -->
 > bitcoin.sourceforge.net は今は正常に見える。 sourceforge が何か
