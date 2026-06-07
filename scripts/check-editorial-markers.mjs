@@ -91,7 +91,7 @@ function maskNonProse(body) {
   return out;
 }
 
-const F_TYPES = new Set(['forum-post', 'mailing-list', 'correspondence']);
+const F_TYPES = new Set(['forum-post', 'mailing-list', 'correspondence', 'blog-post']);
 
 const CANONICAL_LABELS = {
   en: ['Editor:', 'Context:'],
@@ -281,7 +281,7 @@ if (REPORT_F) {
     const k = `${x.type}::${x.lang}`;
     byTypeLang[k] = (byTypeLang[k] || 0) + 1;
   }
-  for (const t of ['forum-post', 'mailing-list', 'correspondence']) {
+  for (const t of ['forum-post', 'mailing-list', 'correspondence', 'blog-post']) {
     r += `| ${t} | ${byTypeLang[`${t}::en`] || 0} | ${byTypeLang[`${t}::ja`] || 0} |\n`;
   }
 

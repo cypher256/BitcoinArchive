@@ -163,7 +163,7 @@ const titleAvatarSlug = isEditorialType ? 'bitcoin-institute' : titleAvatarParti
       />
     </header>
 
-    {['correspondence', 'mailing-list', 'forum-post', 'bip', 'whitepaper', 'court-document', 'tweet'].includes(entry.data.type) && (
+    {['correspondence', 'mailing-list', 'forum-post', 'bip', 'whitepaper', 'court-document', 'tweet', 'blog-post'].includes(entry.data.type) && (
       <CommentaryLinks lang={lang} entryId={entry.id} entryType={entry.data.type} />
     )}
 

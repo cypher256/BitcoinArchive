@@ -64,7 +64,7 @@ const COLLECTIONS = [
 ];
 
 const VERBATIM_DIRS = [
-  '/forum/', '/correspondence/', '/emails/', '/sourceforge/', '/bip/',
+  '/forum/', '/correspondence/', '/emails/', '/sourceforge/', '/blog/', '/bip/',
 ];
 
 const INDEX_PATH = path.join(ROOT, 'src/data/keyword-index.json');
