@@ -31,6 +31,18 @@ quotes:
 <!-- quote: q1 -->
 > We very, very much need such a system, but the way I understand your
 > proposal, it does not seem to scale to the required size.
+>
+> For transferable proof of work tokens to have value, they must have
+> monetary value. To have monetary value, they must be transferred within
+> a very large network - for example a file trading network akin to
+> bittorrent.
+>
+> To detect and reject a double spending event in a timely manner, one
+> must have most past transactions of the coins in the transaction, which,
+> naively implemented, requires each peer to have most past
+> transactions, or most past transactions that occurred recently. If
+> hundreds of millions of people are doing transactions, that is a lot of
+> bandwidth - each must know all, or a substantial part thereof.
 
 Long before the network gets anywhere near as large as that, it would be
 safe for users to use Simplified Payment Verification (section 8) to check

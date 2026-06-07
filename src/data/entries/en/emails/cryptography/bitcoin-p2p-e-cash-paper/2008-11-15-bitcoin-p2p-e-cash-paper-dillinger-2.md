@@ -36,8 +36,16 @@ On Sat, 2008-11-15 at 12:43 +0800, Satoshi Nakamoto wrote:
 > to serve as a reference to help clear up all these implementation
 > questions.
 
+<!-- speaker: Ray Dillinger -->
+> > When a coin is spent, the buyer and seller digitally sign a (blinded)
+> > transaction record.
+
 <!-- speaker: Satoshi Nakamoto -->
 > Only the buyer signs, and there's no blinding.
+
+<!-- speaker: Ray Dillinger -->
+> > If someone double spends, then the transaction record
+> > can be unblinded revealing the identity of the cheater.
 
 <!-- speaker: Satoshi Nakamoto -->
 > Identities are not used, and there's no reliance on recourse. It's all prevention.
@@ -62,6 +70,11 @@ And what you say next seems to confirm this:
 Note, even though this doesn't involve identity per se, it still makes the agent doing the spend linkable to the agent who earlier recieved the coin, so these transactions are linkable. In order to counteract this, the owner of the coin needs to make a transaction, indistinguishable to others from any normal transaction, in which he creates a new key pair and transfers the coin to its posessor (ie, has one sock puppet "spend" it to another). No change in real-world identity of the owner, but the transaction "linkable" to the agent who spent the coin is unlinked. For category-three unlinkability, this has to be done a random number of times - maybe one to six times?
 
 BTW, could you please learn to use carriage returns?? Your lines are scrolling stupidly off to the right and I have to scroll to see what the heck you're saying, then edit to add carriage returns before I respond.
+
+<!-- speaker: Ray Dillinger -->
+> > If it contains a double spend, then they create a "transaction"
+> > which is a proof of double spending, add it to their pool A,
+> > broadcast it, and continue work.
 
 <!-- speaker: Satoshi Nakamoto -->
 > There's no need for reporting of "proof of double spending" like
@@ -109,11 +122,20 @@ The consumers won't do this if they spend their coin and it takes an hour to cle
 
 So there's a possibility of an early catch when the broadcasts of the initial simultaneous spends interfere with each other. I assume here that the broadcasts are done by the sellers, since the buyer has a possible disincentive to broadly disseminate spends.
 
+<!-- speaker: Ray Dillinger -->
+> > If the new chain is accepted, then they give up on adding their
+> > current link ... and start work again trying to extend the new
+> > chain.
+
 <!-- speaker: Satoshi Nakamoto -->
 > Right. They also refresh whenever a new transaction comes in,
 > so L pretty much contains everything in A all the time.
 
 Okay, that's a big difference between a proof of work that takes a huge set number of CPU cycles and a proof of work that takes a tiny number of CPU cycles but has a tiny chance of success. You can change the data set while working, and it doesn't mean you need to start over. This is good in this case, as it means nobody has to hold recently recieved transactions out of the link they're working on.
+
+<!-- speaker: Ray Dillinger -->
+> > Is there a mechanism to make sure that the "chain" does not consist
+> > solely of links added by just the 3 or 4 fastest nodes?
 
 <!-- speaker: Satoshi Nakamoto -->
 > If you're thinking of it as a CPU-intensive digital signing, then
