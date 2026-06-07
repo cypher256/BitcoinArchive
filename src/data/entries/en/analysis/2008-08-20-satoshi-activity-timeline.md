@@ -41,11 +41,15 @@ translationStatus: complete
 
 Every documented Satoshi Nakamoto event in this archive — private email, mailing-list post, BitcoinTalk thread, P2P Foundation message, SourceForge release — plotted on a single time axis. The first dot is the [August 20, 2008 email to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/). The last is the [April 26, 2011 alert-key handover email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) to Gavin Andresen. Between those points, Satoshi posted, replied, released code, and corresponded for thirty-two months. After the last point, nothing verified.
 
-**What is included:** every Archive entry attributed to Satoshi as the author — private correspondence, mailing-list posts (cryptography, bitcoin-list, p2p-research), BitcoinTalk and P2P Foundation forum posts, and SourceForge releases. The timeline does not include third-party writing about Satoshi.
+## 1. What is included
 
-**How to read the chart:** each dot is one event. The horizontal axis is time (August 2008 to early 2014). The vertical lanes are communication channels. Hover any dot to see the title and date; click to open the source entry. The dot density per lane shows where Satoshi spent attention at each moment; the gaps show silences.
+Every Archive entry attributed to Satoshi as the author — private correspondence, mailing-list posts (cryptography, bitcoin-list, p2p-research), BitcoinTalk and P2P Foundation forum posts, and SourceForge releases. The timeline does not include third-party writing about Satoshi.
 
-**What the shape reveals at a glance:**
+## 2. How to read the chart
+
+Each dot is one event. The horizontal axis is time (August 2008 to early 2014). The vertical lanes are communication channels. Hover any dot to see the title and date; click to open the source entry. The dot density per lane shows where Satoshi spent attention at each moment; the gaps show silences.
+
+## 3. What the shape reveals at a glance
 
 - The pre-launch ramp on the cryptography mailing list and Bitcoin-list (October 2008 – January 2009).
 - The explosion of BitcoinTalk activity from late 2009 through 2010 — the densest stretch of Satoshi's documented life.
