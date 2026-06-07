@@ -517,6 +517,7 @@ const PRIMARY_SOURCE_TYPES = new Set([
   'whitepaper',
   'court-document',
   'tweet',
+  'blog-post',
 ]);
 
 // Derive the entry id for a given file path, matching the convention

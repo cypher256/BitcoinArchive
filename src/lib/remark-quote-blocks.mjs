@@ -124,6 +124,7 @@ function getJaSourceTypeLabel(sourceEntryId) {
   if (sourceEntryId.startsWith('correspondence/')) return 'メール';
   if (sourceEntryId.startsWith('forum/github/')) return 'コメント';
   if (sourceEntryId.startsWith('bip/')) return '提案';
+  if (sourceEntryId.startsWith('blog/')) return 'ブログ';
   return '投稿';
 }
 

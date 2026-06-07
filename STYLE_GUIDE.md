@@ -154,10 +154,18 @@ references.
 
 The archive's entry types split into two groups:
 
-- **Primary-source types** (7) — `correspondence`, `mailing-list`,
-  `forum-post`, `bip`, `whitepaper`, `court-document`, `tweet`. The
-  body holds the verbatim source content. Rules in
+- **Primary-source types** (8) — `correspondence`, `mailing-list`,
+  `forum-post`, `bip`, `whitepaper`, `court-document`, `tweet`,
+  `blog-post`. The body holds the verbatim source content. Rules in
   [§ Primary-Source Entries](#primary-source-entries) apply.
+  `blog-post` is a participant's own self-published web writing (blog
+  post / comment, personal-site essay or page), reproduced verbatim —
+  e.g. Nick Szabo's bit gold, Wei Dai's b-money. Judge it on the same
+  verbatim-vs-editorial axis as the other primary types (is the body
+  the source document, or Bitcoin Institute's reading?), not on
+  "contemporaneous vs retrospective": a participant's retrospective
+  blog, reproduced verbatim, is still `blog-post`; third-party coverage
+  (journalist, encyclopedia) of a participant stays editorial.
 - **Editorial types** (4) — `article`, `analysis`, `biography`, `design`. The
   body is Bitcoin Institute's own writing about the subject. This
   section governs them.
@@ -833,7 +841,7 @@ but no `<!-- quote: qN -->`), and the legacy-pattern checks.
 
 A `quotes[].sourceEntryId` must point at a primary-source entry —
 `correspondence`, `mailing-list`, `forum-post`, `bip`, `whitepaper`,
-or `court-document`. It must NOT point at:
+`court-document`, `tweet`, or `blog-post`. It must NOT point at:
 
 1. **The entry itself** (self-link) — clicking the chip just
    reloads the same page; the chip-to-source contract is broken.

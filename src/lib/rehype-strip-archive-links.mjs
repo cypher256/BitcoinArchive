@@ -68,6 +68,7 @@ const VERBATIM_DIRS = [
   '/forum/',
   '/correspondence/',
   '/emails/',
+  '/blog/',
   '/bip/',
 ];
 

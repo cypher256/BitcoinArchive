@@ -9,6 +9,7 @@ const typeEnum = z.enum([
   'whitepaper',
   'bip',
   'tweet',
+  'blog-post',
   'article',
   'biography',
   'court-document',
