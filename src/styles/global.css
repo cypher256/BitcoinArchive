@@ -383,6 +383,23 @@ h4 { font-size: 1.1rem; font-weight: 600; }
   border-bottom: 1px solid var(--color-border);
 }
 
+/* Body paragraph rhythm. The reading column runs wide (~120 char EN /
+   ~65 JA per line), so paragraphs take a slightly larger bottom gap than
+   the UA 1em default to keep the long lines trackable: the leading (1.8)
+   does the in-line work, this margin separates the blocks. Bottom-only,
+   so the first paragraph still sits close under its heading (proximity).
+   Direct children only — quote / list / figure paragraphs are untouched. */
+.entry-content > p {
+  margin: 0 0 1.4em;
+}
+
+/* Section headings get extra space above so each section reads as its
+   own block when scanning a long analysis. The base 1.5em-top /
+   0.5em-bottom ratio (heading hugs its body) is kept for other levels. */
+.entry-content h2 {
+  margin-top: 2.4em;
+}
+
 a {
   color: var(--color-link);
   text-decoration: none;
@@ -860,6 +877,15 @@ th {
   border-color: var(--color-accent);
 }
 
+/* Keyboard focus ring. :focus drops the outline for mouse users (the
+   border-color shift is enough there); :focus-visible restores a clear
+   ring for keyboard navigation so the focused control is unmistakable. */
+.filter-input:focus-visible,
+.sort-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
 .sort-controls {
   display: flex;
   flex: 0 0 auto;
@@ -1160,7 +1186,7 @@ p:has(> strong:only-child):has(+ .figure-outer:has([data-kind="mermaid"])) {
 /* Responsive — see STYLE_GUIDE.md § Layout Width Policy
    ≥1200: containers at fixed max-width
    768–1199: containers fluid to viewport, padding 1.5rem
-   <768: full-width, padding 1rem, font-size 15px */
+   <768: full-width, padding 1rem, base font-size 16px */
 @media (max-width: 1199px) {
   /* `.container-wide` (1200px) needs the 100% override below 1200px;
      `.container` (1000px) does not — its max-width naturally caps
@@ -1173,7 +1199,11 @@ p:has(> strong:only-child):has(+ .figure-outer:has([data-kind="mermaid"])) {
   }
 }
 @media (max-width: 767px) {
-  html { font-size: 15px; }
+  /* Keep the 16px desktop base on small screens too. The earlier 15px
+     was an unexamined initial-commit carryover; 16px reads better on
+     small displays and avoids iOS input auto-zoom. Scales all rem-based
+     UI up slightly, which is intended. */
+  html { font-size: 16px; }
   h1 { font-size: 1.6rem; }
   h2 { font-size: 1.3rem; }
   .container, .container-wide {
