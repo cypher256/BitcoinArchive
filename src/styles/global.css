@@ -383,16 +383,17 @@ h4 { font-size: 1.1rem; font-weight: 600; }
   border-bottom: 1px solid var(--color-border);
 }
 
-/* Breathing room above the body, on the universal entry-detail body
-   wrapper so it is uniform across every entry type (EN + JA). The element
-   directly above .entry-content varies by type — the meta header for
-   analysis / article, the CommentaryLinks block for correspondence /
-   forum / mailing-list / bip / etc., DesignSeriesNav for design — so
-   owning the gap here (not on the header) reaches all types. padding,
-   not margin, so it never collapses with whatever precedes it. (Thread
-   pages use .message-body and participant pages .biography-content, which
-   are separate templates and intentionally keep their own spacing.) */
-.entry-content {
+/* Breathing room above the body, on the page-level body wrappers so it
+   is uniform across entry-detail pages (every entry type, EN + JA) and
+   participant biography pages. The element directly above varies — the
+   meta header for analysis / article, the CommentaryLinks block for
+   correspondence / forum / mailing-list / bip / etc., DesignSeriesNav for
+   design, the participant-head block for biographies — so owning the gap
+   on the body wrapper keeps it uniform. padding, not margin, so it never
+   collapses with whatever precedes it. (Thread pages use .message-body,
+   which keeps its own per-message spacing.) */
+.entry-content,
+.biography-content {
   padding-top: 1.5rem;
 }
 
