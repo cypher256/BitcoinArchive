@@ -47,7 +47,6 @@
   --max-width-prose: 640px;          /* prose paragraph readability (env/lang-independent) */
   --max-width-read: 1000px;          /* reading-tier page (single document) */
   --max-width-wide: 1200px;          /* dashboard-tier page (lists, viz) */
-  --max-width: var(--max-width-read); /* alias for backward compat */
 
   /* ---- Semantic color aliases (only the consumed ones remain) ---- */
   --color-bg-quote: var(--color-source-bg);
@@ -818,7 +817,7 @@ th {
 
 /* Utility */
 .container {
-  max-width: var(--max-width);
+  max-width: var(--max-width-read);
   margin: 0 auto;
   padding: 0 1.5rem;
 }

@@ -2085,8 +2085,8 @@ Defined at `:root` in `src/styles/global.css`:
 |---|---|---|
 | `.novel-page` | 720px | `/novel/` and `/ja/novel/` only. The novel intro is denser prose where 720px reads as a published essay rather than a documentation column. |
 
-`--max-width` is kept as an alias for `--max-width-read` for backward
-compatibility. Prefer the tier-specific tokens in new code.
+Use the tier-specific tokens directly. (The former `--max-width` alias
+for `--max-width-read` was removed once it had no remaining consumers.)
 
 **Why fixed `px`, not `ch`?** The `ch` unit measures the width of the
 "0" glyph in the active font. It is environment-dependent (different
