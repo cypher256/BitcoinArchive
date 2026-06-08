@@ -30,15 +30,6 @@ relatedEntries:
   - "aftermath/2009-01-12-first-bitcoin-transaction"
 ---
 
-*[Editor: header fields as preserved by Bitcoin.com's Satoshi Archive. The recipient address and Satoshi's sending address are redacted in the source.]*
-
-<!-- speaker: Satoshi Nakamoto -->
-<!-- audit:quote-skip -->
-> From: Satoshi Nakamoto
-> To: Hal Finney
-> Date: Thursday, January 8, 2009, 20:54:55 -0800 (PST)
-> Subject: Bitcoin v0.1
-
 Thought you'd like to know, the Bitcoin v0.1 release with EXE and full source code is up on Sourceforge;
 
 http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar
