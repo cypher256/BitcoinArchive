@@ -497,7 +497,7 @@ blockquote[data-speaker="satoshi"] {
      non-Satoshi quote outline is clearly visible in both themes. Satoshi
      quotes override border-color below, so this only affects the rest. */
   border: 1px solid color-mix(in srgb, var(--color-text-muted) 35%, transparent);
-  border-radius: 0.2em 0.8em 0.8em 0.8em;
+  border-radius: 0 0.8em 0.8em 0.8em;
   background: var(--color-bg-alt);
   /* Italic + 0.95em is the original thread verbatim-panel look, now
      shared by individual pages too via this single common rule. */
