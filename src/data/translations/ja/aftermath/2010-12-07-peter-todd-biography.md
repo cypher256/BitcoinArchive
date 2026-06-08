@@ -88,22 +88,22 @@ timeline
     %% link: /BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/
 ```
 
-### Bitcoin Core への貢献
+## Bitcoin Core への貢献
 
 トッドは 2012年4月から Bitcoin Core の活発な貢献者となり、最終的に Bitcoin Core の GitHub リポジトリで 11番目に多い貢献者となった。プロトコルレベルのセキュリティ、トランザクションポリシー、ネットワークの耐障害性に注力した。
 
-### BIP 65: OP_CHECKLOCKTIMEVERIFY（2014年10月）
+## BIP 65: OP_CHECKLOCKTIMEVERIFY（2014年10月）
 トッドは [BIP 65](/BitcoinArchive/ja/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/) を提案し、トランザクション出力を指定された将来の時点まで使用不能にする新しいオペコードを導入した。ソフトフォークとしてデプロイされ、ペイメントチャネルおよび Lightning Network の構成要素となった。
 
-### Replace-by-Fee（RBF）— BIP 125（2015年12月）
+## Replace-by-Fee（RBF）— BIP 125（2015年12月）
 トッドが最も知られているのは Replace-by-Fee（RBF）の推進である。未確認トランザクションを手数料の高い新しいバージョンに置き換えることを可能にする仕組みで、[BIP 125](/BitcoinArchive/ja/entries/bip/2015-11-03-bip-0125/) としてデイヴィッド・A・ハーディングとの共著で正式に策定された。BIP の Rationale（根拠）は、サトシ・ナカモトのオリジナルのトランザクション置換メカニズムに概念を明示的に辿っている。
 
-### [OpenTimestamps](/BitcoinArchive/ja/entries/aftermath/2016-09-15-peter-todd-opentimestamps-announcement/)（2016年9月）
+## [OpenTimestamps](/BitcoinArchive/ja/entries/aftermath/2016-09-15-peter-todd-opentimestamps-announcement/)（2016年9月）
 トッドは OpenTimestamps を開発した。ビットコインブロックチェーンを利用して改ざん不可能なタイムスタンプを作成するオープンソースプロジェクトで、特定の時点で文書が存在していたことを証明できる。サトシがビットコインのコア設計に組み込んだタイムスタンプ機能を一般化したプロジェクトである。
 
-### Zcash トラステッドセットアップセレモニー（2016年10月）
+## Zcash トラステッドセットアップセレモニー（2016年10月）
 トッドは Zcash のトラステッドセットアップセレモニーの 6人の参加者の 1人だった。ブリティッシュコロンビア州をドライブしながら計算を実行し、ラップトップをファラデーケージで遮蔽し、終了後にハードウェアをプロパントーチで破壊した。参加したにもかかわらず、プロセスを批判し、参加者間の共謀は証明不可能であり、未監査の決定論的ビルドのもとではセレモニーは「暗号学的な見かけだけのもの」にすぎないと述べた。
 
-### その他の役職
+## その他の役職
 トッドは Mastercoin および Dark Wallet でチーフサイエンティストを務め、プライバシー強化のためのステルスアドレス（BIP 63、未実装）の設計にも貢献した。2014年7月から Coinkite のコンサルタントとして勤務した。
 

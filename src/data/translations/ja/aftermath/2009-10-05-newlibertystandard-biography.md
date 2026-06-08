@@ -44,21 +44,22 @@ translationStatus: complete
 
 NewLibertyStandard の実世界での身元はこれまで公に明かされたことがない。BitcoinTalk ユーザー#26（2010 年 1 月 19 日登録）で、2012 年 12 月までフォーラムで活動していた。[2010 年 2 月 5 日](/BitcoinArchive/ja/entries/aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal/)にタイ・バーツの記号（฿）と 3 文字通貨コード「BTC」の採用を提案 —— BTC ティッカーが標準となった。
 
-### 最初のビットコイン為替レート
+## 最初のビットコイン為替レート
 [2009年10月5日](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/)、NewLibertyStandard は最初の既知のビットコイン-米ドル為替レートを公開した：$1.00 = 1,309.03 BTC（1 ビットコインあたり約$0.00076）。このレートはビットコインのマイニングに必要な電力に基づく生産コスト計算式を使用して算出された。NewLibertyStandard の wetpaint 為替レートページ（後に wikifoundry にミラー）に記述されているように、計算式はコンピューターを高 CPU 負荷で稼働させる年間平均電力コストを 12 ヶ月で割り、過去 30 日間にマイニングされたビットコイン数で割ったものである。これはビットコインにドル建ての価格が付けられた最初の機会だった。
 
-### 初のビットコイン-法定通貨取引
+## 初のビットコイン-法定通貨取引
 [2009年10月12日](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)、フィンランドの開発者[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)が 5,050 BTC を NewLibertyStandard に$5.02 で PayPal 経由で売却した。これはビットコインと法定通貨の最初の既知の交換として広く認識されており、ビットコインを現実世界の金銭的価値を持つ経済財として確立した。
 
-### New Liberty Standard 取引所
+## New Liberty Standard 取引所
 NewLibertyStandard はウェブサイト（newlibertystandard.wikifoundry.com）を運営し、PayPal 経由で米ドルでビットコインの売買を提供した。従来型のマッチングオーダーブックを持つ取引所ではなく、NewLibertyStandard が固定価格を設定し手動で取引を処理した。最初期の既知のビットコイン取引サービスだった。
 
-### BTC ティッカーの提案
+## BTC ティッカーの提案
 [2010年2月5日](/BitcoinArchive/ja/entries/aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal/)、NewLibertyStandard は BitcoinTalk（スレッド#41）にタイバーツの通貨記号（฿）と 3 文字の通貨コード「BTC」のビットコインへの採用を提案する投稿をした。記号については議論されたが、BTC ティッカーコードは普遍的に採用される標準となった。
 
-### サトシによる言及
+## サトシによる言及
 Bitcoin 0.2 のリリースアナウンス（2009年12月）で、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はこう書いた。
 
+<!-- speaker: Satoshi Nakamoto -->
 > 「マルッティ（sirius-m）の開発作業すべて、そしてNew Liberty StandardのLinuxバージョンのテストへの協力に深く感謝する」
 
 この言及は、NewLibertyStandard をサトシが個人的に貢献を認めた少数の人物グループに位置付けている。

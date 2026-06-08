@@ -42,17 +42,17 @@ On May 22, 2010, Laszlo Hanyecz paid 10,000 BTC for two Papa John's pizzas. At t
 
 Hanyecz is a software developer based in Jacksonville, Florida. Before the pizza purchase, he had already [ported the Bitcoin client to macOS](/BitcoinArchive/entries/aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence/) (the first non-Windows version) and become the first person known to have mined Bitcoin with a GPU. He corresponded directly with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) on both.
 
-### macOS Port
+## macOS Port
 In early 2010, Hanyecz [ported the Bitcoin client to macOS](/BitcoinArchive/entries/aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence/), making the software available on Apple's platform for the first time. He communicated with Satoshi Nakamoto about the port, and their correspondence reveals Satoshi's guidance on cross-platform compatibility and mining architecture.
 
-### GPU Mining Pioneer
+## GPU Mining Pioneer
 Hanyecz was the first person known to have successfully used a GPU (graphics processing unit) to mine Bitcoin, dramatically increasing mining efficiency compared to CPU-only mining. He discussed this development directly with Satoshi, who expressed concern about an "arms race" in mining hardware, preferring that mining remain accessible to ordinary computers for as long as possible.
 
-### Bitcoin Pizza Day
+## Bitcoin Pizza Day
 
 On May 18, 2010, Hanyecz [posted on the BitcoinTalk forum](/BitcoinArchive/entries/forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original/) offering 10,000 BTC for two large pizzas. Four days later, on May 22, 2010, a user named jercos (Jeremy Sturdivant) accepted the offer and ordered two Papa John's pizzas delivered to Hanyecz's home.
 
-### Later Years
+## Later Years
 
 In February 2018, Hanyecz made another symbolic pizza purchase — this time using the Lightning Network, Bitcoin's layer-2 scaling solution. Asked years later by Cointelegraph whether he regretted the original transaction, he answered:
 

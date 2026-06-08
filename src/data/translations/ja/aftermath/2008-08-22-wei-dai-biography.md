@@ -80,10 +80,10 @@ timeline
     %% link: /BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/
 ```
 
-### b-money（1998年）
+## b-money（1998年）
 1998年11月、ダイは匿名の分散型電子キャッシュシステムの提案[「b-money」](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)をサイファーパンクスメーリングリストに公開した。b-money 提案は、参加者が計算パズルの解を放送することで貨幣を作成できるシステムを記述した — ビットコインの後のプルーフ・オブ・ワーク・マイニングによく似ている。論文では 2 つのプロトコルを概説した：1 つは同期的なブロードキャストチャネルを必要とするもの、もう 1 つは残高を追跡するサーバー群を使用するものである。b-money は実装されなかったが、ビットコインの主要な知的先駆者の一つとなった。
 
-### Crypto++
+## Crypto++
 ダイは Crypto++を作成・保守した。オープンソースの C++暗号ライブラリである。ビットコインは最初からこれに頼っていた：v0.1.3 ALPHA（2009年初頭）の`src/sha.cpp`および`src/sha.h`には、ルーチンが「Crypto++ Version 5.5.2（2007年9月24日リリース）からスタンドアロンのファイルとして切り出された」旨のヘッダーコメントが付いている — これはビットコインが設計されていた時期（2007年中頃以降）に利用可能だった Crypto++の最新版。
 
 Crypto++ 5.6.0 の SSE2 アセンブリ最適化版 SHA-256 はバージョン 0.3.6（2010年7月29日リリース）で統合された。一次資料による時系列：
@@ -96,13 +96,13 @@ Crypto++ 5.6.0 の SSE2 アセンブリ最適化版 SHA-256 はバージョン 0
 
 ダイのビットコインへのコード貢献は二つある：知的先駆者としての b-money と、現存する最も古いリリースの時点で既にコードベースの直接的な依存関係になっていた Crypto++である。
 
-### サトシの最初の接触
+## サトシの最初の接触
 2008年8月22日、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は[ダイに直接メールを送り](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、ダイの b-money のアイデアを拡張する論文を発表する準備をしていると書いた。サトシはダイに b-money の発表年を尋ね、適切に引用するためだった。このメールは、2日前に[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)に送られた同様のメールとともに、サトシがビットコインホワイトペーパーの発表前に以前から活動していた暗号学者に接触した最も初期の既知の証拠である。2008年10月31日に発表された[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)は、b-money を最初の参考文献として引用している。
 
-### その後のやり取り
+## その後のやり取り
 2009 年 1 月、ローンチ後、二人はさらにメールを交わした。サトシは[ダイにメールを送り](/BitcoinArchive/ja/entries/correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai/)、[ダイは応答して](/BitcoinArchive/ja/entries/correspondence/wei-dai/2009-01-10-wei-dai-to-satoshi/)ビットコインの設計を — b-money と重なる点、分かれる点を — 述べた。
 
-### 意義
+## 意義
 
 ダイの 2014 年の回顧と、サトシ自身の [2008 年 8 月 21 日のアダム・バック宛 b-money 不知応答](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)は、[サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の根拠となっている —— 二つの独立した観察が、開発期間中にサトシがサイファーパンクのコミュニティに対してどこに立っていたかという同じ像に収束する。
 <!-- /tone-skip -->

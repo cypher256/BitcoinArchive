@@ -58,7 +58,7 @@ timeline
     %% link: /BitcoinArchive/entries/aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history/
 ```
 
-### Cypherpunk and cryptography work
+## Cypherpunk and cryptography work
 Sassaman was active in the cypherpunk community from his teenage years and contributed to a series of privacy-focused projects spanning roughly a decade and a half:
 
 - **Mixmaster anonymous remailer** — Sassaman became the lead developer and maintainer of Mixmaster, a Type-II anonymous remailer designed to defeat traffic analysis. The project was a continuation of Lance Cottrell's original work and a central artifact of cypherpunk-era anonymity tooling.
@@ -67,13 +67,13 @@ Sassaman was active in the cypherpunk community from his teenage years and contr
 - **CodeCon** — co-founded the conference series with Bram Cohen (BitTorrent), focused on running-code presentations of new privacy and security technology.
 - **KU Leuven COSIC** — at the time of his death, was a PhD candidate at the Computer Security and Industrial Cryptography (COSIC) research group at KU Leuven in Belgium, working on remailer design and cryptographic protocols.
 
-### Marriage
+## Marriage
 Sassaman was married to the cryptographer and computer scientist Meredith L. Patterson, herself an active researcher in language-theoretic security and parser-related vulnerabilities.
 
-### Death
+## Death
 Len Sassaman died in Belgium on July 3, 2011. Patterson stated publicly that the death was "unambiguously suicide." He was 31.
 
-### Posthumous Bitcoin connection
+## Posthumous Bitcoin connection
 The Bitcoin-relevant context for this archive is entirely posthumous:
 
 1. On July 30, 2011, [Dan Kaminsky publicly announced](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) an ASCII-art tribute to Sassaman that he had embedded into the Bitcoin blockchain. The tribute was revealed at Black Hat USA 2011.

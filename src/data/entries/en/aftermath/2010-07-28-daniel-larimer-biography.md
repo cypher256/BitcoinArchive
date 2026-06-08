@@ -30,8 +30,8 @@ In the same post he proposed **"bit-banks"** — trusted institutions that would
 
 Daniel Larimer (born 1980) is an American software developer. He resigned as EOS CTO on January 10, 2021.
 
-### Later Projects
+## Later Projects
 Between 2013 and 2016, Larimer worked on **BitShares**, a decentralized exchange platform built on DPoS. In 2016 he moved to **Steem**, a blockchain-based social media platform. In 2017 he co-founded **EOS.IO** with Brendan Blumer at Block.one, and served as its CTO until announcing his resignation on January 10, 2021. Each project pursued the same premise: high-throughput consensus by concentrating block production in a rotating set of elected validators.
 
-### Significance
+## Significance
 Larimer's 2010 BitcoinTalk posts are among the earliest public arguments that Bitcoin's base layer would not by itself serve micropayments or retail-speed commerce. History validated both sides of that argument in different ways — Bitcoin layered solutions (Lightning, Liquid) followed exactly the "off-chain instant, on-chain settlement" pattern he sketched, while his own projects pursued it by sacrificing the open validator set for higher throughput. Either way, his 2010 objection marks the point where a coherent counter-vision to pure Nakamoto consensus enters the public record.

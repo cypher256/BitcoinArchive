@@ -51,7 +51,7 @@ timeline
     %% link: /BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/
 ```
 
-### Winny (2002)
+## Winny (2002)
 While serving as a research associate in the Graduate School of Information Science and Technology at the University of Tokyo, Kaneko released a P2P file-sharing system called **Winny** on the 2channel forum in May 2002. Winny used a routing scheme designed to make the origin of each shared file deniable, and grew at peak to a network of millions of Japanese users. Its design drew on Freenet, Gnutella, and the anonymous-routing literature.
 
 Kaneko posted his development announcement anonymously to the 2channel download-software board and continued to develop the software in dialogue with users on that thread. His first post on the thread carried sequence number 47, which the users adopted as his handle — from that point until his real name was disclosed, he was known to the Winny community as **「47 氏」** ("Mr. 47").
@@ -65,7 +65,7 @@ The opening post on the thread ([thread log archive](https://winny.info/2ch/47.h
 
 The closing phrase 「少しまちなー」 ("hang on a bit") recurs across Mr. 47's later posts in the same thread — a recognizable tic that gave the anonymous handle a stable voice through the development cycle.
 
-### Contributory copyright-infringement trial (2004–2011)
+## Contributory copyright-infringement trial (2004–2011)
 In May 2004, Kyoto Prefectural Police arrested Kaneko on charges of aiding copyright infringement. The prosecution argued that by developing and distributing Winny he had aided the infringement carried out by users who shared copyrighted content using it.
 
 | Date | Event |
@@ -77,13 +77,13 @@ In May 2004, Kyoto Prefectural Police arrested Kaneko on charges of aiding copyr
 
 The trial is widely cited in Japanese tech-policy discussion as a landmark precedent on the criminal liability of tool developers.
 
-### After the trial
+## After the trial
 Following the final acquittal, Kaneko returned to commercial software development. In 2012 he joined Dreamboat Inc. and contributed to SAMURAI, a content-distribution platform.
 
-### Death
+## Death
 Kaneko died of myocardial infarction on July 6, 2013, at the age of 42.
 
-### Posthumous association with the Satoshi-identity question
+## Posthumous association with the Satoshi-identity question
 All of the archive's Bitcoin-relevant context for Kaneko is posthumous. In Japanese-language venues — particularly 2channel / 5channel derivative threads and Japanese technical media — Kaneko has recurringly been discussed as a possible Satoshi-identity candidate. The arguments cite the fit of "Satoshi Nakamoto" as a Japanese name, the P2P-protocol capability demonstrated by Winny, his Japanese-English bilingual ability as a Tokyo University research associate, and his anti-establishment stance during the Winny trial.
 
 The principal counter-evidence: (a) the social scrutiny he was under as a defendant on appeal during the 2007–2008 Bitcoin development window, (b) the absence of any documented presence in Bitcoin's intellectual lineage (Hashcash, b-money, Bit Gold), (c) the absence of any Japanese-language trace in Bitcoin v0.1 source, (d) the divergence between Satoshi's English register and Kaneko's documented academic English, and (e) the roughly two-year interval between Satoshi's last known email (April 2011) and Kaneko's death (July 2013), during which Kaneko engaged in further public technical work including commercial software development.

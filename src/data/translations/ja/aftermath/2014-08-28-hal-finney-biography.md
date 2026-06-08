@@ -95,19 +95,19 @@ timeline
     %% link: /BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/
 ```
 
-### 暗号学と PGP
+## 暗号学と PGP
 1991年、フィニーはフィル・ジマーマンの Pretty Good Privacy（PGP）プロジェクトに無償でコードを書くボランティアとして参加。PGP 2.0 の主要開発者の一人となった。1996年にジマーマンが PGP 社を設立した際、最初期の従業員として雇用された（後にシマンテックに買収）。
 
-### エクストロピアニズムとクライオニクス
+## エクストロピアニズムとクライオニクス
 フィニーはエクストロピー研究所のクライオニクス、延命、宇宙移住、ナノテクノロジー、人工知能に関する議論の積極的な参加者だった。Caltech 在学中の 1年生の時からクライオニクスに興味を持っていた。1992年10月15日、妻フランとともにカリフォルニア州リバーサイドでアルコー・クライオニクスの会員登録書類に署名。以後 20年以上アルコー会員だった。
 
-### Reusable Proof-of-Work
+## Reusable Proof-of-Work
 2004年、フィニーは最初の Reusable Proof-of-Work（RPOW）システムを構築した — ビットコインのプルーフ・オブ・ワーク機構の先行概念である。サイファーパンク運動のデジタルキャッシュ構想に深く関与していた。アダム・バックの Hashcash から、ウェイ・ダイの b-money、ニック・サボの Bit Gold、そして RPOW を経てビットコインへと至る技術系譜は、サトシ自身がその運動に対してどのような位置にいたかという問いとあわせて、[サイファーパンク核心とサトシの知的位置についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で精査されている。
 
-### ビットコイン
+## ビットコイン
 2009年1月9日、フィニーはリリース当日に [Bitcoin v0.1](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/) をダウンロードし、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)以外で最初にビットコインノードを稼働させたとされる人物となった。ブロック 70 付近からマイニングを開始。2009年1月11日、[「Running bitcoin」とツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — ソフトウェアの稼働を公に言及した最初の記録である。2009年1月12日、[ブロック 170 でサトシから 10 BTC を受信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金だった。
 
-### ALS と最後の年月
+## ALS と最後の年月
 
 2009 年 8 月、ALS — 筋萎縮性側索硬化症の診断が下る。2011 年初頭、PGP 社（シマンテック）を退職。それでも手は止めなかった。2013 年 3 月 19 日、BitcoinTalk に[「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/)を投稿する。麻痺し、管で栄養を取り、アイトラッカーで画面を操る — その暮らしのなかでも、彼はまだプログラミングを続けていた:
 

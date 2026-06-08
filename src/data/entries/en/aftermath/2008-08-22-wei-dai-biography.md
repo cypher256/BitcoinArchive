@@ -78,10 +78,10 @@ timeline
     %% link: /BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/
 ```
 
-### b-money (1998)
+## b-money (1998)
 In November 1998, Dai published ["b-money"](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/), a proposal for an anonymous, distributed electronic cash system, on the cypherpunks mailing list. The b-money proposal described a system where participants could create money by broadcasting the solution to a computational puzzle — much like Bitcoin's later proof-of-work mining. The paper outlined two protocols: one requiring a synchronous broadcast channel, and another using a set of servers to keep track of balances. B-money was never implemented, but it became one of the key intellectual precursors to Bitcoin.
 
-### Crypto++
+## Crypto++
 Dai also wrote and maintained Crypto++, an open-source C++ cryptography library. Bitcoin leaned on it from the start: the earliest archived release, Bitcoin v0.1.3 ALPHA (early 2009), carries `src/sha.cpp` and `src/sha.h` with a header note that the routines were "extracted as a standalone file from Crypto++ Version 5.5.2 (9/24/2007)" — the latest Crypto++ release available when Bitcoin was being designed (mid-2007 onward).
 
 The Crypto++ 5.6.0 SSE2-assembly-optimized SHA-256 was integrated into Bitcoin in version 0.3.6 (July 29, 2010 release). Primary-source timeline:
@@ -94,12 +94,12 @@ The Crypto++ 5.6.0 SSE2-assembly-optimized SHA-256 was integrated into Bitcoin i
 
 Dai's code contributions to Bitcoin are twofold: b-money as an intellectual precursor, and Crypto++ as a direct codebase dependency from the earliest released version.
 
-### Satoshi's First Contact
+## Satoshi's First Contact
 On August 22, 2008, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) [emailed Dai directly](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), writing that he was preparing to publish a paper expanding on Dai's b-money ideas. Satoshi asked Dai for the year of b-money's publication to properly cite it. This email, along with [a similar one](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) sent to [Adam Back](/BitcoinArchive/participants/adam-back/) two days earlier, represents the earliest known evidence of Satoshi reaching out to existing cryptographers before publishing the Bitcoin white paper. The [white paper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/), published on October 31, 2008, cites b-money as its first reference.
 
-### Later Correspondence
+## Later Correspondence
 In January 2009, after the launch, the two exchanged more email. Satoshi [wrote to Dai](/BitcoinArchive/entries/correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai/) about the coming release; [Dai replied](/BitcoinArchive/entries/correspondence/wei-dai/2009-01-10-wei-dai-to-satoshi/) with notes on Bitcoin's design — where it matched b-money and where it diverged.
 
-### Significance
+## Significance
 
 Dai's 2014 retrospective combined with Satoshi's own [August 21, 2008 b-money disclaimer to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/) anchors [the cypherpunk independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — two independent observations converging on the same picture of where Satoshi stood relative to the cypherpunk community during development.

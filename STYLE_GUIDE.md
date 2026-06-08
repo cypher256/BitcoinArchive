@@ -186,6 +186,23 @@ in a primary-source type. Mixing them in a single entry violates
 entries instead, linked via `relatedEntries` and
 `quotes[].sourceEntryId`.
 
+### Body section heading levels — start at `##`
+
+Editorial body sections start at `##` (h2), never `###` as the top
+level. The body mounts under the page's single `<h1>` — the entry
+title on an entry-detail page, the participant name on a biography's
+participant page (`/participants/<slug>/`) — so a top-level `###`
+skips h2 and breaks the heading outline (a screen-reader / SEO /
+table-of-contents defect). Use `##` for top-level sections; reserve
+`###` for genuine subsections nested under an `##`. Applies to every
+editorial type (`article`, `analysis`, `biography`, `design`).
+
+Biographies are the historical trap. An earlier pass converted
+bold-with-colon section markers (`**White Paper:**`) to `###` to make
+them real headings — right about heading-vs-bold, wrong about level:
+under the participant-page `<h1>` it produced an H1 → H3 skip across
+the whole biography set. The corrected convention is `##`.
+
 ### Body content: Bitcoin Institute writes the body, not the subject
 
 The body of an editorial entry is Bitcoin Institute's editorial

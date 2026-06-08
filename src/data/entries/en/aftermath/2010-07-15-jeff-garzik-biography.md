@@ -42,20 +42,20 @@ In July 2010, a Red Hat Linux kernel developer named Jeff Garzik read a [Slashdo
 
 Garzik studied computer science at Georgia Institute of Technology and built his early career on Linux-kernel work at Red Hat. His kernel-level systems experience translated directly to Bitcoin's C++ codebase.
 
-### Discovery of Bitcoin
+## Discovery of Bitcoin
 The [July 2010 Slashdot post](/BitcoinArchive/entries/aftermath/2010-07-11-slashdot-bitcoin-article/) that reached Garzik covered Bitcoin's v0.3 release — a traffic surge early developers later called "the Great Slashdotting," and the moment a wave of programmers first found the project. Garzik was one of them, and his kernel background let him start reading and patching the C++ code right away.
 
-### Bitcoin Core Contributions
+## Bitcoin Core Contributions
 Garzik became one of the top three contributors to Bitcoin Core by commit count — behind only [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) — and was among the earliest developers granted commit access to the repository. His first major work went after the part of the client that hurt new users most: he rewrote the initial blockchain download to run [10x to 100x faster](/BitcoinArchive/entries/aftermath/2018-10-29-jeff-garzik-retrospective/).
 
-### cpuminer
+## cpuminer
 Garzik created cpuminer, a widely-used open-source CPU mining software for Bitcoin. The tool was one of the first standalone mining applications, enabling users to mine without running the full Bitcoin client.
 
-### Interaction with Satoshi
+## Interaction with Satoshi
 The working relationship ran by email and patch: Garzik would write a change, test it, turn it into a patch, and send it to Satoshi; if Satoshi accepted it, the code went into the project's Subversion repository. Garzik [later described](/BitcoinArchive/entries/aftermath/2018-10-29-jeff-garzik-retrospective/) Satoshi as "practical and sane, which made interactions very easy and comfortable" — a collaborator who, by his account, "never used his voice at all — no video, no voice chat, no casual conversations."
 
-### Bitcoin Improvement Proposals
+## Bitcoin Improvement Proposals
 Garzik authored multiple Bitcoin Improvement Proposals (BIPs), including BIP 100, which proposed a dynamic block size limit determined by miner voting. His scaling proposals were part of the broader debate about Bitcoin's transaction capacity that became a central issue in the Bitcoin community.
 
-### Later Career
+## Later Career
 In 2015 Garzik co-founded Bloq, an enterprise blockchain firm, and later led Hemi Network. His scaling work — BIP 100 above all — kept him in the larger-block, throughput-first camp of the capacity debate that dominated Bitcoin's middle years.

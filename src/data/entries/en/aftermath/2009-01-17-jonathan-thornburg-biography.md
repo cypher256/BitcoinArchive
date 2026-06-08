@@ -35,7 +35,7 @@ On January 17, 2009, eight days after [Bitcoin v0.1 was released](/BitcoinArchiv
 
 Both have substantially materialised in the years since — extensive cryptocurrency regulation, widespread mining malware. [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) responded directly on the mailing list.
 
-### Mailing List Criticism
+## Mailing List Criticism
 On January 17, 2009, Thornburg [posted a detailed response](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/) to Satoshi's email about Bitcoin's potential uses. He raised two fundamental concerns that would echo through Bitcoin's history:
 
 First, government regulation: "In the modern world, no major government wants to allow untracable international financial transactions above some fairly modest size thresholds." He cited the standard regulatory arguments — money laundering, tax evasion, and terrorism financing.
@@ -44,5 +44,5 @@ Second, botnet exploitation: "But if each machine in a million-node botnet sends
 
 He also raised concerns about botnets burning through pay-per-send email filters and botnet operators profiting from Bitcoin mining.
 
-### Significance
+## Significance
 Thornburg got the pressures right and the conclusion wrong. The regulation and the botnet abuse he warned of both arrived — but his bottom line, that "no major government is likely to allow Bitcoin in its present form to operate on a large scale," did not. Bitcoin grew into the large-scale system he doubted governments would tolerate, regulation and all.

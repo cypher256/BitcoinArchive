@@ -78,14 +78,14 @@ timeline
     2018 : Fortune 10 周年 特集 - 肯定的扱い
 ```
 
-### スマートコントラクト
+## スマートコントラクト
 1994年、サボは「スマートコントラクト」という用語を提唱した——契約条件がコードに直接記述された自己実行型の契約である。この発想を実際に動かせる基盤が現れるまで二十年かかった——[イーサリアム](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/)である。
 
-### Bit Gold
+## Bit Gold
 1998年、サボはプルーフ・オブ・ワークに基づく分散型デジタル通貨システム、Bit Gold を構想した。2005年12月29日、ブログ「Unenumerated」で完全な設計を公開した。Bit Gold は、信頼できる第三者なしにデジタル希少性を実現するという根本的な問題——ビットコインが後に解決するのと同じ問題——に取り組んだ。サボは後に振り返っている。「この一般的なアイデアを聞いたほとんど全員が、非常に悪いアイデアだと思ったのだ」。
 
 Bit Gold はビットコインと重要な概念を共有していた——プルーフ・オブ・ワーク、連鎖するパズル、分散型検証——しかし重大なセキュリティ上の弱点があった。単一の主体がノードの過半数を支配することを防ぐ問題を解決していなかった。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はこの設計を改良した。
 
-### ビットコインとの関係
+## ビットコインとの関係
 
 [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)は、2008 年 11 月 7 日に暗号学メーリングリストでサトシのホワイトペーパー告知に[応答した際](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/)、ビットコインはサボの Bit Gold 構想の「実装と言える」と指摘した —— この系譜が公的に最初に提示された瞬間である。サトシ自身がいつ Bit Gold を知ったかは、本アーカイブの一次資料では直接的に証言されていない。ホワイトペーパーの引用文献は b-money を挙げるが Bit Gold は挙げていない。

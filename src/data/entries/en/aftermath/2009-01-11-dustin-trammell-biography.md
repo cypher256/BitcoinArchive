@@ -55,11 +55,11 @@ On January 11, 2009, three days after Bitcoin v0.1's [public release](/BitcoinAr
 
 Trammell is a cybersecurity researcher based in Austin, Texas, known in the infosec community for vulnerability and exploit-development work.
 
-### First Contact with Satoshi
+## First Contact with Satoshi
 On January 11, 2009 — three days after [Bitcoin v0.1 was released](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) — Trammell [emailed Satoshi Nakamoto](/BitcoinArchive/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/) after downloading and running the software. He reported his experience and asked questions about the system's design. Satoshi responded the same day, beginning a brief but significant email correspondence.
 
-### Early Mining and Bitcoin Transfer
+## Early Mining and Bitcoin Transfer
 Trammell began mining Bitcoin in its earliest days, potentially operating one of the first nodes on the network alongside [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) and [Hal Finney](/BitcoinArchive/participants/hal-finney/). On January 14, 2009, Satoshi [sent Trammell 25 BTC](/BitcoinArchive/entries/aftermath/2009-01-13-satoshi-to-trammell-send-coins/) as a test transaction, making it one of the earliest known person-to-person bitcoin transfers (following the [10 BTC Satoshi sent to Hal Finney on January 12](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/)). In their correspondence, Satoshi discussed technical details including coin maturity rules and how the system handled new blocks.
 
-### Significance
+## Significance
 Trammell's early adoption and his direct correspondence with Satoshi place him among the very first Bitcoin users. His emails with Satoshi — preserved by the Satoshi Nakamoto Institute — date from the weeks when the entire network was a handful of nodes.

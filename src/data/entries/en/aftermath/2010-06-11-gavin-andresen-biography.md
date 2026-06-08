@@ -73,7 +73,7 @@ timeline
     2014 : Steps down as lead maintainer, role passes to Wladimir van der Laan (Apr)
 ```
 
-### Satoshi's successor — handover in stages (2010–2011)
+## Satoshi's successor — handover in stages (2010–2011)
 The handover from Satoshi to Andresen was not a single appointment but a gradual transfer of operational authority over seven months, recorded across the following archive entries:
 
 | Date | Event | Scope |
@@ -92,7 +92,7 @@ Andresen recalled the gradual nature of this transition in a [2016 retrospective
 
 > "Eventually, he pulled a fast one on me because he asked me if it'd be OK if he put my email address on the Bitcoin homepage, and I said yes, not realizing that when he put my email address there, he'd take his away. ... Satoshi started stepping back as leader of project and pushing me forward as the leader of the project."
 
-### Lead Maintainer (December 2010 – April 2014)
+## Lead Maintainer (December 2010 – April 2014)
 [Andresen's December 19, 2010 announcement](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) opened with:
 
 > "With Satoshi's blessing, and with great reluctance, I will begin to do more active project management for Bitcoin."
@@ -109,7 +109,7 @@ Three days later, the [last known private email](/BitcoinArchive/entries/afterma
 
 Andresen later became the Chief Scientist of the Bitcoin Foundation when it was established in September 2012.
 
-### CIA Visit
+## CIA Visit
 
 On June 14, 2011, Andresen presented about Bitcoin at CIA headquarters in Langley, Virginia, as part of an In-Q-Tel conference on emerging technologies. He posted to Twitter that evening:
 
@@ -117,7 +117,7 @@ On June 14, 2011, Andresen presented about Bitcoin at CIA headquarters in Langle
 
 Andresen had disclosed the invitation in his April 26 reply to Satoshi's alert-key email, six weeks before the talk; no reply from Satoshi is known after that message.
 
-### Later Years
+## Later Years
 On April 8, 2014, Andresen stepped down as lead maintainer, passing the role to Wladimir van der Laan. He continued to contribute to Bitcoin development and advocated for increasing the block size limit to improve transaction capacity.
 
 *[Context: Gavin Andresen appears in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) as the successor named in the protagonist's farewell email — the one to whom the project is "in good hands" after the protagonist's disappearance.]*

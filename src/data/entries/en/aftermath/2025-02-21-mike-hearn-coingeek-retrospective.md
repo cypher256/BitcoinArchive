@@ -56,7 +56,7 @@ Hearn noted that Satoshi was "interested in payments and novel uses for the tech
 
 This characterization — that Satoshi was driven away not by external threats but by the zealotry of his own community — is a first-hand assessment from someone who corresponded with Satoshi directly.
 
-### Who the "evangelical personalities" were — the WikiLeaks "bring it on" thread
+## Who the "evangelical personalities" were — the WikiLeaks "bring it on" thread
 
 A concrete example of what Hearn describes is the WikiLeaks donations thread (BitcoinTalk topic-1735), which ran on December 4-5, 2010 — just seven days before Satoshi's final public post.
 

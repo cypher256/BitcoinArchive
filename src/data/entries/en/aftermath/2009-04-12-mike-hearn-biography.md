@@ -73,11 +73,11 @@ timeline
     %% link: /BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/
 ```
 
-### Correspondence with Satoshi
+## Correspondence with Satoshi
 
 Between April 2009 and April 2011, Hearn and Satoshi exchanged sustained technical email. Topics included how the system could scale, how simplified payment verification (SPV) clients would work, and how Satoshi envisioned the evolution of mining from CPUs to specialized hardware. Hearn was among the very first people outside the initial cypherpunk circle to take a serious technical interest in Bitcoin, and the published archive of his correspondence with Satoshi documents the technical thinking Satoshi never spelled out in public posts.
 
-### Departure from Bitcoin
+## Departure from Bitcoin
 
 The January 2016 "Bitcoin has failed" essay cited two principal grievances: the inability of the development community to reach consensus on raising the 1-megabyte block size limit, and what Hearn described as systemically important institutions emerging within what was supposed to be a decentralised system. He sold his coins concurrent with publication.
 

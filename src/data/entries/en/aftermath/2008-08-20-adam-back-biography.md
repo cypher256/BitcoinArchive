@@ -74,20 +74,20 @@ timeline
     %% link: /BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/
 ```
 
-### Hashcash (1997)
+## Hashcash (1997)
 In March 1997, Back proposed Hashcash, a proof-of-work system originally designed to combat email spam and denial-of-service attacks. The system required senders to compute a partial hash collision — a computationally expensive operation — before sending an email, making mass spam economically impractical. Hashcash was not a digital currency or payment system — it was purely a computational cost mechanism. Bitcoin later adopted its proof-of-work concept as the basis for mining and consensus, but the monetary and payment aspects of Bitcoin came from other intellectual lineages, including Wei Dai's b-money and Nick Szabo's bit gold. The [Bitcoin white paper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) cites Hashcash as one of its key references.
 
-### First Contact from Satoshi
+## First Contact from Satoshi
 
 The August 2008 exchange runs across three days: [Satoshi's email to Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) (Aug 20, citation request), [Back's reply](/BitcoinArchive/entries/aftermath/2008-08-21-adam-back-to-satoshi/) with the Hashcash citation and the b-money referral (Aug 21), Satoshi's same-day acknowledgment of not having seen b-money during the pre-disclosure period of his design and coding work (above), and Satoshi's [email to Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) the next day asking for b-money's publication date for the whitepaper citation. The chain places Bitcoin's design substantially complete before Back's referral and serves as a primary-source anchor for [the cypherpunk independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
-### Testimony and Email Publication
+## Testimony and Email Publication
 Bitcoin Magazine later published Back's correspondence with Satoshi — one of the few primary records of Bitcoin's earliest conceptual phase. In February 2024, Back [testified under oath in the COPA v Wright trial](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) in London, recounting his exchanges with Satoshi and the timeline of Bitcoin's creation.
 
-### Blockstream
+## Blockstream
 In 2014, Back co-founded Blockstream and became its CEO. The company builds Bitcoin infrastructure — the Liquid Network sidechain, satellite broadcasting of the blockchain, and related protocol work.
 
-### Significance
+## Significance
 Back's contribution to Bitcoin was specifically the proof-of-work concept — the idea that computational cost can serve as a scarce, verifiable resource. Hashcash provided this mechanism; the currency design, peer-to-peer payment system, and monetary policy were separate innovations. His position as the first person Satoshi contacted places him at the very beginning of Bitcoin's documented creation history.
 
 *[Context: Adam Back appears in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) as the cypherpunk the protagonist contacts first about Hashcash citation in August 2008 — the bridge that leads to the b-money discovery and to the whitepaper's reference [1].]*

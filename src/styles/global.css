@@ -403,14 +403,19 @@ h4 { font-size: 1.1rem; font-weight: 600; }
    does the in-line work, this margin separates the blocks. Bottom-only,
    so the first paragraph still sits close under its heading (proximity).
    Direct children only — quote / list / figure paragraphs are untouched. */
-.entry-content > p {
+.entry-content > p,
+.biography-content > p {
   margin: 0 0 1.4em;
 }
 
 /* Section headings get extra space above so each section reads as its
-   own block when scanning a long analysis. The base 1.5em-top /
-   0.5em-bottom ratio (heading hugs its body) is kept for other levels. */
-.entry-content h2 {
+   own block when scanning a long analysis or biography. The base
+   1.5em-top / 0.5em-bottom ratio (heading hugs its body) is kept for
+   other levels. Both editorial body wrappers share the rule:
+   .entry-content (entry-detail pages) and .biography-content
+   (participant biography pages). */
+.entry-content h2,
+.biography-content h2 {
   margin-top: 2.4em;
 }
 
@@ -470,19 +475,21 @@ blockquote[data-speaker="satoshi"] {
 .quote-attribution a {
   color: var(--color-link);
 }
-/* Quoted blockquotes in entry bodies AND thread message bodies render
-   as speaker "bubbles": rounded, outlined, on the alt surface, upright
-   text. Both containers are listed because the same quoted content
-   renders on the entry page (.entry-content) and the thread page
-   (.message-body). This covers the WHOLE quote run, not just the
-   chip-led first quote — same-speaker continuation quotes that omit the
-   `<!-- quote -->` chip, nested quotes, and quotes whose attribution is
-   missing all become bubbles, so a multi-quote exchange reads as one
-   consistent thread instead of a mix of bubbles and plain left-border
-   quotes. data-speaker tints the outline for Satoshi (set by the remark
-   plugins on the speaker's blockquotes, chip or no chip). */
+/* Quoted blockquotes in entry bodies, thread message bodies, AND
+   participant biography bodies render as speaker "bubbles": rounded,
+   outlined, on the alt surface, upright text. All three containers are
+   listed because the same quoted content renders on the entry page
+   (.entry-content), the thread page (.message-body), and the participant
+   biography page (.biography-content). This covers the WHOLE quote run,
+   not just the chip-led first quote — same-speaker continuation quotes
+   that omit the `<!-- quote -->` chip, nested quotes, and quotes whose
+   attribution is missing all become bubbles, so a multi-quote exchange
+   reads as one consistent thread instead of a mix of bubbles and plain
+   left-border quotes. data-speaker tints the outline for Satoshi (set by
+   the remark plugins on the speaker's blockquotes, chip or no chip). */
 .entry-content blockquote,
-.message-body blockquote {
+.message-body blockquote,
+.biography-content blockquote {
   /* A touch stronger than --color-border (which is very faint) so the
      non-Satoshi quote outline is clearly visible in both themes. Satoshi
      quotes override border-color below, so this only affects the rest. */
@@ -497,7 +504,8 @@ blockquote[data-speaker="satoshi"] {
   color: color-mix(in srgb, var(--color-text) 68%, var(--color-text-muted));
 }
 .entry-content blockquote[data-speaker="satoshi"],
-.message-body blockquote[data-speaker="satoshi"] {
+.message-body blockquote[data-speaker="satoshi"],
+.biography-content blockquote[data-speaker="satoshi"] {
   border-color: var(--color-satoshi);
 }
 /* Dark mode: keep the amber hue but soften Satoshi's quote outline a
@@ -506,12 +514,14 @@ blockquote[data-speaker="satoshi"] {
    data-mode="dark" — mirroring how --color-satoshi itself is themed. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-mode="light"]) .entry-content blockquote[data-speaker="satoshi"],
-  :root:not([data-mode="light"]) .message-body blockquote[data-speaker="satoshi"] {
+  :root:not([data-mode="light"]) .message-body blockquote[data-speaker="satoshi"],
+  :root:not([data-mode="light"]) .biography-content blockquote[data-speaker="satoshi"] {
     border-color: color-mix(in srgb, var(--color-satoshi) 78%, transparent);
   }
 }
 :root[data-mode="dark"] .entry-content blockquote[data-speaker="satoshi"],
-:root[data-mode="dark"] .message-body blockquote[data-speaker="satoshi"] {
+:root[data-mode="dark"] .message-body blockquote[data-speaker="satoshi"],
+:root[data-mode="dark"] .biography-content blockquote[data-speaker="satoshi"] {
   border-color: color-mix(in srgb, var(--color-satoshi) 78%, transparent);
 }
 /* The chip sits directly above its bubble (no gap). The bubble keeps the

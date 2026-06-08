@@ -77,14 +77,14 @@ timeline
     2018 : Fortune 10th anniversary feature - affirmative coverage
 ```
 
-### Smart Contracts
+## Smart Contracts
 In 1994, Szabo coined the term "smart contracts" — self-executing agreements with the terms directly written into code. The idea waited two decades for a chain that could actually run it: [Ethereum](/BitcoinArchive/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/).
 
-### Bit Gold
+## Bit Gold
 In 1998, Szabo conceived Bit Gold, a decentralized digital currency system based on proof-of-work. He published the full design on his Unenumerated blog on December 29, 2005. Bit Gold addressed the fundamental problem of creating digital scarcity without a trusted third party — the same problem Bitcoin would solve. Szabo later reflected: "Nearly everybody who heard the general idea thought it was a very bad idea."
 
 Bit Gold shared key concepts with Bitcoin — proof-of-work, chained puzzles, and decentralized verification — but had a significant security weakness: it did not solve the problem of preventing a single party from controlling the majority of nodes. [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) improved on this design.
 
-### Relationship to Bitcoin
+## Relationship to Bitcoin
 
 [Hal Finney](/BitcoinArchive/participants/hal-finney/), in his [November 7, 2008 reply](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/) to Satoshi's whitepaper announcement on the cryptography mailing list, noted that Bitcoin "could be an implementation" of Szabo's Bit Gold concept — the first public framing of the lineage. When Satoshi himself first became aware of Bit Gold is not directly attested in any primary source available to this archive; the whitepaper's reference list cites b-money but not Bit Gold.

@@ -72,13 +72,13 @@ timeline
     %% link: /BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/
 ```
 
-### Withdrawal
+## Withdrawal
 
 The December 2015 [Wired and Gizmodo investigations](/BitcoinArchive/entries/aftermath/2015-12-08-wired-gizmodo-craig-wright-claims/) had preceded the May 2016 claim — the journalists had been the first to suggest Wright as a possible Satoshi candidate, citing materials later shown to be fabricated. After the May 2016 "proof" collapsed under scrutiny, Wright promised further evidence but never delivered. He instead posted:
 
 > "I believed that I could put the years of anonymity and hiding behind me. But I can't."
 
-### Whitepaper Lawsuit
+## Whitepaper Lawsuit
 In February 2021, Wright [sued](/BitcoinArchive/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/) the pseudonymous operator of bitcoin.org ([Cobra](/BitcoinArchive/participants/cobra/)) over Bitcoin whitepaper copyright. On June 28, 2021, the court issued a default judgment in Wright's favor — not because the claim had merit, but because Cobra chose to protect his anonymity rather than reveal his identity to defend himself.
 
 Wright's identity claims rested on signing with the keys to early blocks (1–9) but never extended to the genesis-block coinbase key — the single demonstration that would be dispositive, which [the genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) notes has never been performed, by Wright or anyone.

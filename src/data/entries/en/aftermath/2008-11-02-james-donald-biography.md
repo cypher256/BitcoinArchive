@@ -35,12 +35,12 @@ Two days after [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/
 
 His skepticism pulled some of Satoshi's most detailed early architectural explanations into the public record — simplified payment verification, what Donald himself called "bitcoin banks," the trust and double-spend model. Donald is a cryptographer and libertarian commentator long active in the cypherpunk community; he maintained the website jim.com on cryptography, political philosophy, and economics.
 
-### First Response to the Bitcoin White Paper
+## First Response to the Bitcoin White Paper
 
 Donald argued in his November 1 reply that the system would require every node to process every transaction, making it impractical for widespread use.
 
-### Technical Exchange with Satoshi
+## Technical Exchange with Satoshi
 Donald's skepticism prompted a series of exchanges with Satoshi on the mailing list throughout November 2008. Satoshi responded by explaining how the system could scale through simplified payment verification (SPV) and how not every node would need to process every transaction. Donald also introduced the concept of a "bitcoin bank" — trusted intermediaries that would hold bitcoin on behalf of users — which anticipated the role that cryptocurrency exchanges would later play. He pushed Satoshi to clarify how the system would handle trust and double-spending, leading Satoshi to provide some of his most detailed early explanations of Bitcoin's design.
 
-### Significance
+## Significance
 Donald's critical engagement with the white paper forced Satoshi to articulate Bitcoin's scalability model and trust assumptions in a public forum. He stayed skeptical of Bitcoin's feasibility — but a doubter asking the first hard questions is exactly why some of Bitcoin's earliest design rationale sits in the public record at all.
