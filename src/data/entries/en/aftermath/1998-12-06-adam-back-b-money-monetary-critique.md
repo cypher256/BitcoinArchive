@@ -1,5 +1,5 @@
 ---
-title: "Adam Back's b-money critique: seven monetary-design issues identified ten years before Bitcoin"
+title: "\"To create value you burn CPU time\" — Adam Back's seven monetary-design issues in b-money"
 date: 1998-12-06T00:48:42Z
 type: "article"
 source: "cypherpunks-mailing-list"
