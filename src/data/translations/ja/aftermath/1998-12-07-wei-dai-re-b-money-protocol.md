@@ -26,6 +26,9 @@ secondarySources:
   - name: "Bitcoin Magazine — The Genesis Files: Wei Dai's B-Money"
     url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it"
 relatedEntries:
+  - "emails/cypherpunks/b-money-protocol/1998-12-08-wei-dai-re-b-money-protocol"
+  - "emails/cypherpunks/b-money-protocol/1998-12-07-wei-dai-re-b-money-protocol"
+  - "emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique"
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "aftermath/2008-08-22-wei-dai-biography"
@@ -33,23 +36,31 @@ relatedEntries:
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Wei Dai"
+    personSlug: "wei-dai"
+    date: "1998-12-08T00:12:21Z"
+    sourceEntryId: "emails/cypherpunks/b-money-protocol/1998-12-08-wei-dai-re-b-money-protocol"
 ---
 
 *サイファーパンクメーリングリスト（cypherpunks@cyberpass.net）より、1998年12月7日：*
 
 *件名: Re: Wei Dei's "b-money" protocol*
 
-[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)は、b-money プロトコルに関する[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の議論に返信し、計算リソースの浪費への懸念と提案の実用的な範囲について論じた：
+[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)は、b-money プロトコルに関する[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の[批評](/BitcoinArchive/ja/entries/emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique/)に返信し、計算リソースの浪費への懸念と提案の実用的な範囲について論じた：
 
 **政府の暴力独占について：**
 
-<!-- audit:quote-skip -->
+<!-- quote: q1 -->
 > 「今では、政府の暴力独占は差し引きでプラスだと思うようになりました」
 
 **b-money の限定的な範囲について：**
 
-<!-- audit:quote-skip -->
-> 「b-moneyはせいぜいニッチな通貨/契約執行メカニズムにしかなりません。政府が提供するものを使いたくない、あるいは使えない人々のためのものです」
+<!-- speaker: Wei Dai -->
+> 「b-money はせいぜい、政府公認の仕組みを使いたくない、あるいは使えない人々に向けた、ニッチな通貨／契約執行メカニズムにとどまります」
+
+<!-- speaker: reset -->
 
 **大規模普及のための未解決問題について：**
 

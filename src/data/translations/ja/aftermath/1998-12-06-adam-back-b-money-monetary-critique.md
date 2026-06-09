@@ -29,6 +29,7 @@ secondarySources:
   - name: "Bitcoin Magazine — Bitcoin, Adam Back and the Quest for Digital Cash"
     url: "https://bitcoinmagazine.com/culture/bitcoin-adam-back-and-digital-cash"
 relatedEntries:
+  - "emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique"
   - "analysis/1976-10-25-hayek-extropians-bitcoin-lineage"
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
@@ -41,6 +42,12 @@ relatedEntries:
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Adam Back"
+    personSlug: "adam-back"
+    date: "1998-12-06T00:48:42Z"
+    sourceEntryId: "emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique"
 ---
 
 *サイファーパンクメーリングリスト（cypherpunks@cyberpass.net）より、1998 年 12 月 6 日（00:48:42 UTC）：*
@@ -49,12 +56,12 @@ translationStatus: complete
 
 *差出人：アダム・バック &lt;aba@dcs.ex.ac.uk&gt;*
 
-[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)は[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)に対し、貨幣設計上の批評で返信した。バックは提案上の 7 つの個別論点を指摘し、同時に自身の [Hashcash](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) を当該システムの鋳造機構の候補として明示的に提案した。
+[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)は[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)に対し、サイファーパンクに投稿した[貨幣設計上の批評](/BitcoinArchive/ja/entries/emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique/)で返信した。バックは提案上の 7 つの個別論点を指摘し、同時に自身の [Hashcash](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) を当該システムの鋳造機構の候補として明示的に提案した。
 
 **Hashcash を b-money の鋳造機構として：**
 
-<!-- audit:quote-skip -->
-> 価値を創造するには CPU 時間を燃やす — Hashcash と同じように。
+<!-- quote: q1 -->
+> 価値を創造するには CPU 時間を燃やす — hashcash と同じだ。
 
 この一文は、ビットコインが後に実現する組合せ — プルーフ・オブ・ワーク基本要素（Hashcash）を分散型デジタルキャッシュシステム（b-money）の鋳造機構として用いる — を明示的に提案した、ビットコイン以前の一次資料である。バックは候補として提案した。実装はしていない。
 

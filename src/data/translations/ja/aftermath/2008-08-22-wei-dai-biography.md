@@ -49,7 +49,7 @@ translationStatus: complete
 ---
 <!-- tone-skip -->
 
-1998 年 11 月、ウェイ・ダイは匿名の分散型電子キャッシュシステムの提案 [b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) をサイファーパンクメーリングリストに公開した。それから 10 年後、2008 年 8 月 22 日、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は[ダイに直接メールを送った](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/):
+1998 年 11 月、ウェイ・ダイは匿名の分散型電子キャッシュシステムの提案 [b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) を[サイファーパンクメーリングリスト](/BitcoinArchive/ja/entries/threads/emails/cypherpunks/b-money-protocol/)に公開した。それから 10 年後、2008 年 8 月 22 日、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は[ダイに直接メールを送った](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/):
 
 <!-- speaker: Satoshi Nakamoto -->
 > 「b-moneyのページを興味深く読んだ。あなたのアイデアを発展させて、完全に動作するシステムにした論文を発表しようとしている。アダム・バックが類似性に気づいて、あなたのサイトを教えてくれた。論文で引用するため、発表年を教えてほしい。」

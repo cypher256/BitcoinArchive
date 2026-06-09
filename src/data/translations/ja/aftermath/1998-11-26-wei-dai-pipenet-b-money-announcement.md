@@ -26,6 +26,8 @@ secondarySources:
   - name: "Bitcoin Magazine — The Genesis Files: Wei Dai's B-Money"
     url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it"
 relatedEntries:
+  - "emails/cypherpunks/1998-11-26-wei-dai-pipenet-b-money"
+  - "emails/cypherpunks/b-money-protocol/1998-12-05-adam-back-b-money-protocol-repost"
   - "analysis/1976-10-25-hayek-extropians-bitcoin-lineage"
   - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
@@ -38,17 +40,23 @@ relatedEntries:
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
 translationStatus: complete
+quotes:
+  - id: "q1"
+    person: "Wei Dai"
+    personSlug: "wei-dai"
+    date: "1998-11-26T00:07:43Z"
+    sourceEntryId: "emails/cypherpunks/1998-11-26-wei-dai-pipenet-b-money"
 ---
 <!-- tone-skip -->
 
 *サイファーパンクメーリングリストより、1998年11月26日：*
 
-<!-- audit:quote-skip -->
-> 「オリジナルのPipeNetの設計に対するいくつかの攻撃を発見した。新しいプロトコル、PipeNet 1.1はこの弱点を修正するはずだ。PipeNet 1.1はレイヤード・シーケンス番号とMACを使用する。これにより、受信者とスイッチの一部が共謀して、パケットの改変やスワップを行い、ガベージを監視することで発信者を追跡することを防止する。
+<!-- quote: q1 -->
+> オリジナルの PipeNet 設計に対するいくつかの攻撃を見つけました。新しいプロトコル PipeNet 1.1 は、その弱点を修正するはずです。PipeNet 1.1 は階層化されたシーケンス番号と MAC を用います。これにより、受信者とスイッチの一部が結託し、パケットを改変または入れ替えてからゴミデータを監視することで発信者を追跡する、という攻撃を防げます。
 >
-> PipeNet 1.1の説明は http://www.eskimo.com/~weidai で閲覧できる。
+> PipeNet 1.1 の説明は http://www.eskimo.com/~weidai にあります。
 >
-> また同じ場所に、b-moneyの説明も掲載している。仮名による貨幣交換と契約執行のための新しいプロトコルだ。」
+> 同じ場所には、仮名のための金銭的交換と契約執行のための新しいプロトコル、b-money の説明もあります。
 
 後にビットコインの最も重要な先駆けの一つとなる b-money の提案は、主に PipeNet（匿名ルーティングプロトコル）に関する投稿の末尾、わずか一文で紹介された。当時の[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の主な関心は PipeNet であり、デジタル通貨ではなかったことが明らかだ。
 <!-- /tone-skip -->

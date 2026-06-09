@@ -26,6 +26,8 @@ secondarySources:
   - name: "Bitcoin Magazine — The Genesis Files: Wei Dai's B-Money"
     url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it"
 relatedEntries:
+  - "emails/cypherpunks/1998-11-26-wei-dai-pipenet-b-money"
+  - "emails/cypherpunks/b-money-protocol/1998-12-05-adam-back-b-money-protocol-repost"
   - "analysis/1976-10-25-hayek-extropians-bitcoin-lineage"
   - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
@@ -37,11 +39,17 @@ relatedEntries:
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
+quotes:
+  - id: "q1"
+    person: "Wei Dai"
+    personSlug: "wei-dai"
+    date: "1998-11-26T00:07:43Z"
+    sourceEntryId: "emails/cypherpunks/1998-11-26-wei-dai-pipenet-b-money"
 ---
 
 *From the Cypherpunks mailing list, November 26, 1998:*
 
-<!-- audit:quote-skip -->
+<!-- quote: q1 -->
 > "I've discovered some attacks against the original PipeNet design. The new protocol, PipeNet 1.1, should fix the weaknesses. PipeNet 1.1 uses layered sequence numbers and MACs. This prevents a collusion between a receiver and a subset of switches from tracing the caller by modifying or swapping packets and then watching for garbage.
 >
 > A description of PipeNet 1.1 is available at http://www.eskimo.com/~weidai.

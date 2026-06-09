@@ -56,6 +56,10 @@ const threadMeta: Record<string, { en: string; ja: string }> = {
     en: 'Bitcoin open source implementation of P2P currency',
     ja: 'ビットコイン：P2P通貨のオープンソース実装',
   },
+  'emails/cypherpunks/b-money-protocol': {
+    en: "Wei Dai's b-money protocol — Cypherpunks design discussion (December 1998)",
+    ja: 'ウェイ・ダイの b-money プロトコル — サイファーパンクでの設計議論（1998 年 12 月）',
+  },
   'correspondence/adam-back': {
     en: 'Satoshi ↔ Adam Back Correspondence',
     ja: 'サトシ ↔ アダム・バック メール',

@@ -26,29 +26,40 @@ secondarySources:
   - name: "Bitcoin Magazine — The Genesis Files: Wei Dai's B-Money"
     url: "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it"
 relatedEntries:
+  - "emails/cypherpunks/b-money-protocol/1998-12-08-wei-dai-re-b-money-protocol"
+  - "emails/cypherpunks/b-money-protocol/1998-12-07-wei-dai-re-b-money-protocol"
+  - "emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique"
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "aftermath/2008-08-22-wei-dai-biography"
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
+quotes:
+  - id: "q1"
+    person: "Wei Dai"
+    personSlug: "wei-dai"
+    date: "1998-12-08T00:12:21Z"
+    sourceEntryId: "emails/cypherpunks/b-money-protocol/1998-12-08-wei-dai-re-b-money-protocol"
 ---
 
 *From the Cypherpunks mailing list (cypherpunks@cyberpass.net), December 7, 1998:*
 
 *Subject: Re: Wei Dei's "b-money" protocol*
 
-[Wei Dai](/BitcoinArchive/participants/wei-dai/) replied to [Adam Back](/BitcoinArchive/participants/adam-back/)'s discussion of the b-money protocol, addressing concerns about computational resource waste and the practical scope of the proposal:
+[Wei Dai](/BitcoinArchive/participants/wei-dai/) replied to [Adam Back](/BitcoinArchive/participants/adam-back/)'s [critique of the b-money protocol](/BitcoinArchive/entries/emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique/), addressing concerns about computational resource waste and the practical scope of the proposal:
 
 **On government monopoly of force:**
 
-<!-- audit:quote-skip -->
+<!-- quote: q1 -->
 > "I now tend to think that the government monopoly of force is a net benefit."
 
 **On b-money's limited scope:**
 
-<!-- audit:quote-skip -->
+<!-- speaker: Wei Dai -->
 > "b-money will at most be a niche currency/contract enforcement mechanism, serving those who don't want to or can't use government sponsored ones."
+
+<!-- speaker: reset -->
 
 **On open questions for mainstream adoption:**
 

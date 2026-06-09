@@ -29,6 +29,7 @@ secondarySources:
   - name: "Bitcoin Magazine — Bitcoin, Adam Back and the Quest for Digital Cash"
     url: "https://bitcoinmagazine.com/culture/bitcoin-adam-back-and-digital-cash"
 relatedEntries:
+  - "emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique"
   - "analysis/1976-10-25-hayek-extropians-bitcoin-lineage"
   - "aftermath/1997-03-28-adam-back-hashcash-announcement"
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
@@ -40,6 +41,12 @@ relatedEntries:
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
+quotes:
+  - id: "q1"
+    person: "Adam Back"
+    personSlug: "adam-back"
+    date: "1998-12-06T00:48:42Z"
+    sourceEntryId: "emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique"
 ---
 
 *From the Cypherpunks mailing list (cypherpunks@cyberpass.net), December 6, 1998 (00:48:42 UTC):*
@@ -48,11 +55,11 @@ relatedEntries:
 
 *From: Adam Back &lt;aba@dcs.ex.ac.uk&gt;*
 
-[Adam Back](/BitcoinArchive/participants/adam-back/) replied to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) with a substantive monetary-design critique. Back identified seven distinct issues in the proposal as it stood, while explicitly proposing his own [Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) as the candidate minting mechanism for the system.
+[Adam Back](/BitcoinArchive/participants/adam-back/) replied to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) with a [substantive monetary-design critique](/BitcoinArchive/entries/emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique/) posted to the Cypherpunks list. Back identified seven distinct issues in the proposal as it stood, while explicitly proposing his own [Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) as the candidate minting mechanism for the system.
 
 **Hashcash as b-money's minting mechanism:**
 
-<!-- audit:quote-skip -->
+<!-- quote: q1 -->
 > "to create value you burn CPU time, just like with hashcash"
 
 This sentence is the explicit pre-Bitcoin proposal of the configuration Bitcoin would later realize: a proof-of-work primitive (Hashcash) used as the minting mechanism for a decentralized digital-cash system (b-money). Back proposed it as a candidate; he did not implement it.

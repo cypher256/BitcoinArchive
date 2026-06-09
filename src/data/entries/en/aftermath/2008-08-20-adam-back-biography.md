@@ -47,7 +47,7 @@ relatedEntries:
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
 ---
 
-On August 20, 2008, an email arrived in Adam Back's inbox. The sender called himself [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and asked about Hashcash citation format for an upcoming paper on a "new electronic cash system." Eleven years earlier, in March 1997, Back had announced [Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) on the cypherpunks mailing list. He answered the next day with the citation, then referred Satoshi to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money. Same day, Satoshi replied:
+On August 20, 2008, an email arrived in Adam Back's inbox. The sender called himself [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and asked about Hashcash citation format for an upcoming paper on a "new electronic cash system." Eleven years earlier, in March 1997, Back had announced [Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) on the cypherpunks mailing list. He answered the next day with the citation, then referred Satoshi to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s [b-money](/BitcoinArchive/entries/threads/emails/cypherpunks/b-money-protocol/). Same day, Satoshi replied:
 
 <!-- speaker: Satoshi Nakamoto -->
 > "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."

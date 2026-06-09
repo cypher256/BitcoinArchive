@@ -120,7 +120,7 @@ The objection: this profile applies to many senior cypherpunks of the period. It
 
 Distinct from §2.2 (the Hashcash-author = Bitcoin-author forensic-fit argument) and §2.3 (cypherpunk credentials), this subsection collects the specific primary-source record of Back framing Hashcash within the digital-cash conversation, and engaging substantively with monetary-system design, before Bitcoin's 2008 launch.
 
-**Mapping Back's 1998-12-06 b-money critique to Bitcoin's design ten years later:**
+**Mapping Back's [1998-12-06 b-money critique](/BitcoinArchive/entries/emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique/) to Bitcoin's design ten years later:**
 
 | Back 1998-12-06 issue | Bitcoin's resolution |
 |---|---|
