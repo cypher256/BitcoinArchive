@@ -79,6 +79,6 @@ translationStatus: complete
 
 この事件は根本的なパラドックスを露呈した。分散型システムが中央集権的な意思決定によって救われたのだ。緊急対応の中でコミュニティは独立した検証を経ずに修正クライアントを採用し、サトシの判断を信頼した。非中央集権を掲げる設計と、危機対応における単一の権威への依存という矛盾が、このとき初めて可視化された。
 
-本事件は隣接する複数の記録の中核参照となる: [構造的パラドックス分析](/BitcoinArchive/ja/entries/analysis/2010-08-15-overflow-incident-structure-and-paradox/)は同 5 時間復旧を分散 vs 集中緊張の典型事例として読む。 [ナイトエムビーのスナップショットと伝説分析](/BitcoinArchive/ja/entries/analysis/2010-08-15-knightmb-snapshot-and-legend/)は復旧パッチが依存した事件直前のブロックチェーンスナップショットを提供した貢献者を扱う。直近の事件前文脈は [Slashdot ビットコイン記事 (2010 年 7 月)](/BitcoinArchive/ja/entries/aftermath/2010-07-11-slashdot-bitcoin-article/)と[ナイトエムビー伝記](/BitcoinArchive/ja/participants/knightmb/)。 [Mt. Gox 倒産エントリ](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/)は保管崩壊議論で「プロトコルは生き残った」の初期反例として本事件を扱う。
+本事件は隣接する複数の記録の中核参照となる: [構造的パラドックス分析](/BitcoinArchive/ja/entries/analysis/2010-08-15-overflow-incident-structure-and-paradox/)は同 5 時間復旧を分散 vs 集中緊張の典型事例として読む。 [knightmb のスナップショットと伝説分析](/BitcoinArchive/ja/entries/analysis/2010-08-15-knightmb-snapshot-and-legend/)は復旧パッチが依存した事件直前のブロックチェーンスナップショットを提供した貢献者を扱う。直近の事件前文脈は [Slashdot ビットコイン記事 (2010 年 7 月)](/BitcoinArchive/ja/entries/aftermath/2010-07-11-slashdot-bitcoin-article/)と [knightmb 伝記](/BitcoinArchive/ja/participants/knightmb/)。 [Mt. Gox 倒産エントリ](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/)は保管崩壊議論で「プロトコルは生き残った」の初期反例として本事件を扱う。
 
 *[補足：2010 年 8 月 15 日の 5 時間パッチ投入は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』で名指しで描かれる場面の一つ ― 1844 億 BTC の連鎖崩壊に主人公が直面し、ネットワーク分裂が起きる前にソフトフォークをリリースする ― として扱われる。]*
