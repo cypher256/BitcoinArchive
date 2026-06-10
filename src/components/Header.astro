@@ -13,19 +13,21 @@ const t = useTranslations(lang);
 
 <header class="site-header">
   <div class="container-wide header-inner">
-    <a href={localePath('/', lang)} class="site-title">
-      <strong>{t('site.title')}</strong>
-    </a>
-    <button
-      type="button"
-      class="mobile-menu-toggle"
-      aria-expanded="false"
-      aria-controls="site-nav"
-      aria-label={t('nav.menu' as any)}
-    >
-      <span class="menu-icon menu-icon-open" aria-hidden="true">☰</span>
-      <span class="menu-icon menu-icon-close" aria-hidden="true">✕</span>
-    </button>
+    <div class="header-bar">
+      <a href={localePath('/', lang)} class="site-title">
+        <strong>{t('site.title')}</strong>
+      </a>
+      <button
+        type="button"
+        class="mobile-menu-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label={t('nav.menu' as any)}
+      >
+        <span class="menu-icon menu-icon-open" aria-hidden="true">☰</span>
+        <span class="menu-icon menu-icon-close" aria-hidden="true">✕</span>
+      </button>
+    </div>
     <nav class="main-nav" id="site-nav">
       <a href={localePath('/entries/', lang)}>{t('nav.entries')}</a>
       <details class="nav-dropdown">
@@ -88,6 +90,13 @@ const t = useTranslations(lang);
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     gap: 1rem;
+  }
+  /* タイトルとハンバーガーを束ねる行。デスクトップではタイトルだけ
+     （ハンバーガーは非表示）で、従来どおり左端に置かれる。 */
+  .header-bar {
+    display: flex;
+    align-items: center;
+    min-width: 0;
   }
   .site-title {
     font-family: var(--font-heading);
@@ -254,10 +263,26 @@ const t = useTranslations(lang);
       align-items: center;
       gap: 0.5rem;
     }
+    /* タイトル＋ハンバーガーで 1 行を占有し（折り返さない）、ナビだけを
+       下の行へ送る。タイトルは縮め、ハンバーガーは縮ませないので、どんな
+       狭い幅でもハンバーガーはタイトルの右に留まる。 */
+    .header-bar {
+      flex: 1 1 100%;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    /* タイトルは縮められるようにし、ハンバーガーは縮ませない。
+       極端に狭い幅でのみタイトル末尾を省略する。 */
+    .site-title {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
     .mobile-menu-toggle {
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      flex-shrink: 0;
     }
     /* モバイルではナビを畳む（ハンバーガーで開閉） */
     .main-nav {
@@ -298,6 +323,14 @@ const t = useTranslations(lang);
     .nav-dropdown-menu a {
       padding: 0.4rem 0.5rem;
       border-radius: 4px;
+    }
+  }
+
+  /* 320px 級の狭い端末では、ブランド名全体とハンバーガーを 1 行に
+     収めるためタイトルをわずかに縮める。 */
+  @media (max-width: 360px) {
+    .site-title {
+      font-size: 0.9rem;
     }
   }
 </style>
