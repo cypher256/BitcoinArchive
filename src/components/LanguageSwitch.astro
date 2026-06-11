@@ -21,13 +21,7 @@ const targetLang: Lang = lang === 'en' ? 'ja' : 'en';
 const targetPath = getAlternatePath(targetLang);
 ---
 
-<a
-  href={targetPath}
-  class="lang-switch"
-  lang={targetLang}
-  data-lang={targetLang}
-  onclick="try{localStorage.setItem('lang',this.dataset.lang)}catch(e){}"
->
+<a href={targetPath} class="lang-switch" lang={targetLang}>
   {languages[targetLang]}
 </a>
 

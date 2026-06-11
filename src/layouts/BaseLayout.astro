@@ -26,56 +26,13 @@ interface Props {
 }
 
 const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType, publishedTime, modifiedTime, author, noindex, ogImage, breadcrumbs, structuredData } = Astro.props;
-const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
-// First-visit language-redirect script. Built here (not inline) so the
-// base path is interpolated server-side; injected via set:html below.
-const langRedirectScript = `(function () {
-  try {
-    var base = ${JSON.stringify(basePath)};
-    var p = location.pathname;
-    var isJa = p === base + '/ja' || p.indexOf(base + '/ja/') === 0;
-    var saved = null;
-    try { saved = localStorage.getItem('lang'); } catch (e) {}
-    if (!saved) {
-      var prefJa = (navigator.language || '').toLowerCase().slice(0, 2) === 'ja';
-      try { localStorage.setItem('lang', prefJa ? 'ja' : 'en'); } catch (e) {}
-      if (prefJa && !isJa) {
-        var rest = p.slice(base.length);
-        location.replace(base + '/ja' + (rest && rest !== '/' ? rest : '/'));
-        return;
-      }
-      if (!prefJa && isJa) {
-        var enRest = p.slice(base.length).slice(3);
-        location.replace(base + (enRest && enRest !== '/' ? enRest : '/'));
-        return;
-      }
-    }
-  } catch (e) {}
-})();`;
 ---
 
 <!doctype html>
 <html lang={lang}>
   <head>
     {/*
-      First-visit language redirect. Runs before the theme script and
-      before paint. ONLY on the very first visit (no localStorage.lang)
-      does it auto-redirect: when the browser's preferred language and
-      the page's language differ, the visitor is sent to the same page
-      in the browser's language -- a Japanese browser on an English page
-      goes to the /ja/ equivalent, and an English browser on a Japanese
-      page goes to the English equivalent. The resolved language is then
-      recorded. Once localStorage.lang exists -- set here on the first
-      visit or by a LanguageSwitch click -- NO auto-redirect fires again;
-      the page is shown as-is. This avoids redirect loops and lets a
-      manual switch stick. Trade-off: a shared cross-language link is
-      rewritten to the visitor's browser language on their first visit.
-    */}
-    <script is:inline set:html={langRedirectScript}></script>
-
-    {/*
-      Head-early inline blocking theme script (runs right after the
-      language-redirect script above). It MUST run before any
+      Head-early inline blocking theme script. It MUST run before any
       stylesheet or font <link> resolves. It does three things:
 
       1. Read `localStorage.mode` and apply `data-mode` to <html>
