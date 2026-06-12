@@ -1,6 +1,6 @@
 ---
 title: "潜在的な災害シナリオ"
-date: 2010-08-14T03:43:54.000Z
+date: "2010-08-14T12:43:54.000Z"
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=813.msg9186#msg9186"

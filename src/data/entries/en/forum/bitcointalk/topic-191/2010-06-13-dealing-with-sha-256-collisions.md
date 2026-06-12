@@ -1,6 +1,6 @@
 ---
 title: "Dealing with SHA-256 Collisions"
-date: 2010-06-13T16:01:11.000Z
+date: "2010-06-14T01:01:11.000Z"
 type: "forum-post"
 source: "bitcointalk"
 sourceUrl: "https://bitcointalk.org/index.php?topic=191.msg1555#msg1555"

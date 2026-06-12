@@ -45,7 +45,7 @@ quotes:
   - id: "q2"
     person: "Laszlo Hanyecz"
     personSlug: "laszlo-hanyecz"
-    date: "2010-05-22"
+    date: "2010-05-22T19:17:26.000Z"
     sourceEntryId: "forum/bitcointalk/topic-137/2010-05-22-laszlo-msg1195"
 ---
 
