@@ -28,7 +28,7 @@ quotes:
 > バグと思われるものを見つけた：ユーザー名とパスワードの組み合わせが十分長いと、bitcoindのBase64エンコーダーが以下のようなAuthorizationヘッダーを生成する：
 >
 > ```
-> Code:...
+> ...
 > Authorization: Basic YWJiYWJiYWFiYmE6aGVsbG93b3JsZGhlbGxvd29ybGRoZWxsb3dvcmxkaGVsbG93
 > b3JsZGhlbGxvd29ybGRoZWxsb3dvcmxk
 > ```
@@ -36,7 +36,7 @@ quotes:
 >
 > これはBase64Encode関数の末尾で改行を除去すれば解決できる：
 > ```cpp
-> Code:result.erase(std::remove(result.begin(), result.end(), '
+> result.erase(std::remove(result.begin(), result.end(), '
 > '), result.end());
 > result.erase(std::remove(result.begin(), result.end(), '
 > '), result.end());

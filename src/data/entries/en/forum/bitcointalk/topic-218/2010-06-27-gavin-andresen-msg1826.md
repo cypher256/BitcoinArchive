@@ -21,13 +21,23 @@ quotes:
 
 <!-- quote: q1 -->
 > When I run,
-> Quote./bitcoind getaddressesbylabel ""
+>
+> ```
+> ./bitcoind getaddressesbylabel ""
 > [
 > ]
+> ```
+>
 > Is it normal for it to give nothing, or what?
 
 Hmm, yeah, it's probably normal; I THOUGHT the default address was given an empty label; I'm wrong, they're given the label "Your Address".
-So:  Code:./bitcoind getaddressesbylabel "Your Address" should work.
+So:
+
+```
+./bitcoind getaddressesbylabel "Your Address"
+```
+
+should work.
 
 Or just generate a new address, either with or without a label:
 

@@ -24,15 +24,13 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> 以下のアップデート：
+> ```
+> cpu family	: 6
+> model		: 26
+> model name	: Genuine Intel(R) CPU             000  @ 3.20GHz
+> stepping	: 4
+> ```
 <!-- /tone-skip -->
-
-```
-cpu family : 6
-model  : 26
-model name : Genuine Intel(R) CPU             000  @ 3.20GHz
-stepping : 4
-```
 
 cpu family 6 model 26 stepping 4 は Intel Core i7 だ。<br>
 `-4way` で 23%の高速化、`-4way` + ハイパースレッディングで合計 63%の高速化だ。<br>

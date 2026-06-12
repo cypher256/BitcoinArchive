@@ -23,7 +23,8 @@ translationStatus: complete
 ArtForz ありがとう！ ^_^
 
 <!-- quote: q1 -->
-> Code:import struct
+> ```python
+> import struct
 >
 > def SetCompact(nCompact):
 > 	"""convert bc compact uint to number"""
@@ -37,11 +38,13 @@ ArtForz ありがとう！ ^_^
 > 		tbuf += chr((nCompact >> 0) & 0xFF)
 > 		tbuf += "\x00" * (nSize - 3)
 > 	return mpi2num(tbuf)
+> ```
 
 ```python
 def uint256_from_compact(c):
 	nbytes = (c >> 24) & 0xFF
 	v = (c & 0xFFFFFFL) << (8 * (nbytes - 3))
 	return v
-これら両方が0x1d00ffffを使ったとき同じ出力を生成することを改めて確認した
 ```
+
+これら両方が 0x1d00ffff を使ったとき同じ出力を生成することを改めて確認した

@@ -27,10 +27,9 @@ Perl の LWP モジュールは間違いなく Content-Length ヘッダーを設
 
 少し格闘した末に、CPAN の最初の JSON::RPC ライブラリで動かすことができた：
 
-```
+```perl
 use JSON::RPC::Client;
 use Data::Dumper;
-```
 
 my $client = new JSON::RPC::Client;
 
@@ -43,7 +42,7 @@ print "@foo\n";
 my $uri = 'http://localhost:8332/';
 my $obj = {
     method  => 'getinfo',
-    params  => ],
+    params  => [],
  };
 
 my $res = $client->call( $uri, $obj );
@@ -59,4 +58,6 @@ if($res){
 else {
     print $client->status_line;
 }
+```
+
 苦労したのは realm を 'jsonrpc' に設定する点だ（ここがうるさい）。これは wiki にドキュメントとして書いておく。

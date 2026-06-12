@@ -18,13 +18,19 @@ Bitcoin が JSON RPC over HTTP の仕様に準拠し、JSON-RPC 1.1/2.0 の仕�
 
 JSON-RPC コールで直接 Bitcoin と通信している場合、新しい HTTP ステータスコードと JSON レスポンスの'error'メンバーの新しいフォーマットを認識するようにコードを変更する必要があるかもしれない。例えば：
 
-変更前：{"id":"123", "method": "nosuchmethod", "params": &#91;] } を送信した場合のレスポンス：
+変更前：{"id":"123", "method": "nosuchmethod", "params": [] } を送信した場合のレスポンス：
 
 ```
 HTTP/1.1 500 Internal Server Error
 ...
 
-{"result":null,"error":"Method not found.","id":"123"}変更後：Code:HTTP/1.1 404 
+{"result":null,"error":"Method not found.","id":"123"}
+```
+
+変更後：
+
+```
+HTTP/1.1 404 
 ...
 
 {"result":null,"error":{"code":-32601,"message":"Method not found"},"id":"123"}

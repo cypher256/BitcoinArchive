@@ -22,10 +22,13 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-> Code:cpu family : 6
+> ```
+> cpu family	: 6
+> model		: 26
+> model name	: Genuine Intel(R) CPU             000  @ 3.20GHz
+> stepping	: 4
+> ```
 
-model  : 26
-model name : Genuine Intel(R) CPU             000  @ 3.20GHz
-stepping : 4cpu family 6 model 26 stepping 4 is an Intel Core i7.
+cpu family 6 model 26 stepping 4 is an Intel Core i7.
 That's a 23% speedup with -4way, 63% total speedup with -4way + hyperthreading.
 33% faster with hyperthreading than without it.

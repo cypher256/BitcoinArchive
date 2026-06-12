@@ -23,14 +23,24 @@ quotes:
 <!-- quote: q1 -->
 <!-- tone-skip -->
 > 実行すると、
-> Quote./bitcoind getaddressesbylabel ""
+>
+> ```
+> ./bitcoind getaddressesbylabel ""
 > [
 > ]
+> ```
+>
 > 何も返ってこないのは正常だろうか？
 <!-- /tone-skip -->
 
 うーん、おそらく正常だ。デフォルトのアドレスには空のラベルが付いていると思っていたが、間違いだった。`Your Address` というラベルが付けられている。
-なので：`./bitcoind getaddressesbylabel "Your Address"` でうまくいくはずだ。
+なので：
+
+```
+./bitcoind getaddressesbylabel "Your Address"
+```
+
+でうまくいくはずだ。
 
 または、ラベル付きでもなしでも新しいアドレスを生成すればいい：
 

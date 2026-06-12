@@ -26,10 +26,9 @@ Perl's LWP module definitely sets the Content-Length header.  I would've been su
 
 After some struggle, I got the first JSON::RPC library at CPAN to work:
 
-```
+```perl
 use JSON::RPC::Client;
 use Data::Dumper;
-```
 
 my $client = new JSON::RPC::Client;
 
@@ -42,7 +41,7 @@ print "@foo\n";
 my $uri = 'http://localhost:8332/';
 my $obj = {
     method  => 'getinfo',
-    params  => ],
+    params  => [],
  };
 
 my $res = $client->call( $uri, $obj );
@@ -58,4 +57,6 @@ if($res){
 else {
     print $client->status_line;
 }
+```
+
 The struggle was setting the realm to 'jsonrpc' (it is fussy about that).  I'll document that on the wiki.

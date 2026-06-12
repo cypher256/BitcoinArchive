@@ -58,17 +58,18 @@ Available wxWidgets profiles:
   [2]   gtk2-unicode-2.9 *
   [3]   gtk2-unicode-release-2.6
   [4]   gtk2-unicode-release-2.8
-```
 
 $ /usr/bin/wx-config --version
 2.9.1
 
-\# eselect wxwidgets set 1
+# eselect wxwidgets set 1
 
 Setting wxWidgets profile to gtk2-ansi-release-2.6
 
 $ /usr/bin/wx-config --version
 2.6.4
+```
+
 I'm not sure about other distros though.
 
 <!-- quote: q2 -->
