@@ -16,7 +16,7 @@ quotes:
     person: "lfm"
     personSlug: "lfm"
     date: "2010-08-05T14:52:32.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-287/2010-08-05-lfm-msg7675"
+    sourceEntryId: "forum/bitcointalk/topic-287/2010-08-05-lfm-msg7674"
 translationStatus: complete
 ---
 

@@ -15,7 +15,7 @@ quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
-    date: "2009-12-16T00:00:00Z"
+    date: "2009-12-16T22:45:36.000Z"
     sourceEntryId: "forum/bitcointalk/topic-16/2009-12-16-bitcoin-0-2-released"
 ---
 

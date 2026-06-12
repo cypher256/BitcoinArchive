@@ -41,7 +41,7 @@ quotes:
   - id: "q1"
     person: "Laszlo Hanyecz"
     personSlug: "laszlo-hanyecz"
-    date: "2010-05-18"
+    date: "2010-05-18T00:35:20.000Z"
     sourceEntryId: "forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original"
   - id: "q2"
     person: "Laszlo Hanyecz"
