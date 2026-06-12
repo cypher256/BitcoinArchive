@@ -889,6 +889,52 @@ unrecoverable; "primary entry not yet created" is not a
 - `quote-non-primary-target` (error) — `sourceEntryId` resolves to
   an entry whose `type` is not in the primary-source set above.
 
+### `quotes[].person` is the verbatim attribution label — it may differ from the source author
+
+`quotes[].person` records the speaker's name **as it appeared in the
+quoting context** — the `Quote from: NAME` box on a BitcoinTalk post,
+the `NAME wrote:` line in a mailing-list reply, the attribution on the
+reply that carried the excerpt. It is kept verbatim, exactly as the
+top-level `author` field keeps a source-platform handle
+(see [§ Participant Slug Convention](#participant-slug-convention)).
+
+It is therefore **not required to match the `author` of the entry
+`sourceEntryId` points to**, and the two legitimately diverge. This is
+faithful preservation of the historical record, **not a data error**:
+
+- **Account rename.** BitcoinTalk (SMF) shows the poster's *current*
+  handle on the post itself, but a quote box preserves the handle the
+  account carried *when the quote was made*. A poster who later renamed
+  appears under the old handle in every quote box and under the new
+  handle on the source post. Example: 2010 reply quote boxes attribute
+  a post to `witchspace`; the source post
+  (`forum/bitcointalk/topic-1931/2010-11-25-laanwj-msg24352`) is
+  `author: laanwj` (Wladimir van der Laan). Same person, two handles —
+  the quote box holds the older one.
+- **Identity-form variant.** `person` may be an email address
+  (`mmalmi@cc.hut.fi`), an old screen name, or another display form of
+  the same person reached through `sourceEntryId`.
+
+**The `sourceEntryId` link is the source of truth for who the speaker
+actually was; `person` is the verbatim historical label.** When a
+participant page exists, `personSlug` maps `person` to the canonical
+participant for display (katakana in the JA edition — see
+`STYLE_GUIDE_JA.md § I.4`), so the visible chip can read with the old
+handle while the link still resolves to the canonical person.
+
+**Do not "correct" `person` to match the source entry's author.** That
+erases the handle the quote historically carried — the same loss the
+verbatim-`author` and preserved-source-filename rules guard against
+([§ Participant Slug Convention](#participant-slug-convention), rule 5).
+The divergence is expected; leave it.
+
+This preservation covers the **attribution label only**. A
+`quotes[].date` that disagrees with the `sourceEntryId` target's date
+is a separate matter: BitcoinTalk timestamps are UTC (see the About
+page timestamp policy), so a `quotes[].date` offset from the source
+post's canonical time *is* a data error to repair toward the source
+time — unlike `person`, it is not preserved.
+
 ### Do not repeat `<!-- quote: qN -->` for the same source in one file
 
 When the entry author (typically Satoshi) quotes **multiple
