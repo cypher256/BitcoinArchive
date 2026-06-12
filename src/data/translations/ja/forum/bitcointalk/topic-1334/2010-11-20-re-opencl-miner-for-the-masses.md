@@ -18,12 +18,12 @@ quotes:
   - id: "q1"
     person: "m0mchil"
     personSlug: "m0mchil"
-    date: "2010-11-20T01:16:19.000Z"
+    date: "2010-11-20T10:16:19.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1334/2010-11-20-m0mchil-msg23018"
   - id: "q2"
     person: "m0mchil"
     personSlug: "m0mchil"
-    date: "2010-11-16T01:30:41.000Z"
+    date: "2010-11-16T10:30:41.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1334/2010-11-16-m0mchil-msg22251"
 ---
 

@@ -16,7 +16,7 @@ quotes:
   - id: "q1"
     person: "Jeff Garzik"
     personSlug: "jeff-garzik"
-    date: "2010-08-13T11:13:30.000Z"
+    date: "2010-08-13T20:13:30.000Z"
     sourceEntryId: "forum/bitcointalk/topic-807/2010-08-13-jgarzik-msg9090"
 ---
 <!-- quote: q1 -->

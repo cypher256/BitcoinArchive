@@ -17,12 +17,12 @@ quotes:
   - id: "q1"
     person: "llama"
     personSlug: "llama"
-    date: "2010-07-17T12:56:25.000Z"
+    date: "2010-07-17T21:56:25.000Z"
     sourceEntryId: "forum/bitcointalk/topic-437/2010-07-17-llama-msg3810"
   - id: "q2"
     person: "llama"
     personSlug: "llama"
-    date: "2010-07-17T12:56:25.000Z"
+    date: "2010-07-17T21:56:25.000Z"
     sourceEntryId: "forum/bitcointalk/topic-437/2010-07-17-llama-msg3810"
 ---
 

@@ -17,7 +17,7 @@ quotes:
   - id: "q1"
     person: "nimnul"
     personSlug: "nimnul"
-    date: "2010-08-03T08:51:15.000Z"
+    date: "2010-08-03T17:51:15.000Z"
     sourceEntryId: "forum/bitcointalk/topic-454/2010-08-03-nimnul-msg7282"
 ---
 

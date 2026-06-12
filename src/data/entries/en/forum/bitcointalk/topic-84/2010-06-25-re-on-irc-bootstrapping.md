@@ -17,7 +17,7 @@ quotes:
   - id: "q1"
     person: "Laszlo Hanyecz"
     personSlug: "laszlo-hanyecz"
-    date: "2010-06-14T09:30:58.000Z"
+    date: "2010-06-14T18:30:58.000Z"
     sourceEntryId: "forum/bitcointalk/topic-84/2010-06-14-laszlo-msg1580"
 ---
 

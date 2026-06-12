@@ -16,7 +16,7 @@ quotes:
   - id: "q1"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
-    date: "2009-12-09T09:45:10.000Z"
+    date: "2009-12-09T18:45:10.000Z"
     sourceEntryId: "forum/bitcointalk/topic-12/2009-12-09-satoshi-msg41"
 ---
 

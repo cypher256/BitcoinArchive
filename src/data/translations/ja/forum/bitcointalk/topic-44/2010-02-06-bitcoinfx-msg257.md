@@ -16,7 +16,7 @@ quotes:
   - id: "q1"
     person: "BlueSky"
     personSlug: "bluesky"
-    date: "2010-02-06T04:26:39.000Z"
+    date: "2010-02-06T13:26:39.000Z"
     sourceEntryId: "forum/bitcointalk/topic-44/2010-02-06-bluesky-msg255"
 ---
 

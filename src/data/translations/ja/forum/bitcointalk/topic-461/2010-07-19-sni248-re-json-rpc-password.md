@@ -18,7 +18,7 @@ quotes:
   - id: "q1"
     person: "gavinandresen"
     personSlug: "gavin-andresen"
-    date: "2010-07-19T03:02:39.000Z"
+    date: "2010-07-19T12:02:39.000Z"
     sourceEntryId: "forum/bitcointalk/topic-461/2010-07-19-gavin-andresen-msg4215"
 ---
 

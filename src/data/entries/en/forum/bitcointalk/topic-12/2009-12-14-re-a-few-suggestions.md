@@ -16,7 +16,7 @@ secondarySources:
 quotes:
   - id: "q1"
     person: "madhatter2"
-    date: "2009-12-14T06:01:39.000Z"
+    date: "2009-12-14T15:01:39.000Z"
     sourceEntryId: "forum/bitcointalk/topic-12/2009-12-14-the-madhatter-msg66"
 ---
 

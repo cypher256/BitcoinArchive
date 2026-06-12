@@ -15,7 +15,7 @@ quotes:
   - id: "q1"
     person: "Babylon"
     personSlug: "babylon"
-    date: "2010-07-16T23:42:30.000Z"
+    date: "2010-07-17T08:42:30.000Z"
     sourceEntryId: "forum/bitcointalk/topic-423/2010-07-17-babylon-msg3709"
 ---
 

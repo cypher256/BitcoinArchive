@@ -16,7 +16,7 @@ quotes:
   - id: "q1"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
-    date: "2010-06-21T19:01:53.000Z"
+    date: "2010-06-22T04:01:53.000Z"
     sourceEntryId: "forum/bitcointalk/topic-199/2010-06-22-0-3-almost-ready-please-test-the-mac-version"
 ---
 

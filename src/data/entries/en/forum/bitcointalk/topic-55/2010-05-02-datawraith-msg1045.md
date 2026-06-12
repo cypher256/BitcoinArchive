@@ -15,7 +15,7 @@ quotes:
   - id: "q1"
     person: "Karmicads"
     personSlug: "karmicads"
-    date: "2010-05-01T17:15:51.000Z"
+    date: "2010-05-02T02:15:51.000Z"
     sourceEntryId: "forum/bitcointalk/topic-55/2010-05-02-karmicads-msg1041"
 ---
 

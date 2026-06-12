@@ -18,7 +18,7 @@ quotes:
   - id: "q1"
     person: "nelisky"
     personSlug: "nelisky"
-    date: "2010-08-26T16:21:09.000Z"
+    date: "2010-08-27T01:21:09.000Z"
     sourceEntryId: "forum/bitcointalk/topic-921/2010-08-27-nelisky-msg11346"
 ---
 

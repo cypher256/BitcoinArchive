@@ -18,7 +18,7 @@ quotes:
   - id: "q1"
     person: "BitLex"
     personSlug: "bitlex"
-    date: "2010-07-25T11:45:38.000Z"
+    date: "2010-07-25T20:45:38.000Z"
     sourceEntryId: "forum/bitcointalk/topic-461/2010-07-25-bitlex-msg5753"
 ---
 

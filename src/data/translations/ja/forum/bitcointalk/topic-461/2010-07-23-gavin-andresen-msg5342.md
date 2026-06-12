@@ -16,7 +16,7 @@ quotes:
   - id: "q1"
     person: "satoshi"
     personSlug: "satoshi-nakamoto"
-    date: "2010-07-23T08:07:40.000Z"
+    date: "2010-07-23T17:07:40.000Z"
     sourceEntryId: "forum/bitcointalk/topic-461/2010-07-23-re-json-rpc-password"
 ---
 

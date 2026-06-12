@@ -18,7 +18,7 @@ quotes:
   - id: "q1"
     person: "teknohog"
     personSlug: "teknohog"
-    date: "2010-09-09T10:32:05.000Z"
+    date: "2010-09-09T19:32:05.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1007/2010-09-09-teknohog-msg12336"
 ---
 

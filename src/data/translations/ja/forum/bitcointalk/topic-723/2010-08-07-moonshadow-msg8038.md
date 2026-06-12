@@ -16,11 +16,11 @@ quotes:
   - id: "q1"
     person: "NewLibertyStandard"
     personSlug: "newlibertystandard"
-    date: "2010-08-06T14:55:47.000Z"
+    date: "2010-08-06T23:55:47.000Z"
     sourceEntryId: "forum/bitcointalk/topic-723/2010-08-06-newlibertystandard-msg8021"
   - id: "q2"
     person: "creighto"
-    date: "2010-08-06T14:42:31.000Z"
+    date: "2010-08-06T23:42:31.000Z"
     sourceEntryId: "forum/bitcointalk/topic-723/2010-08-06-moonshadow-msg8019"
     parent: "q1"
 ---

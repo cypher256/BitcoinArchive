@@ -18,7 +18,7 @@ quotes:
   - id: "q1"
     person: "ByteCoin"
     personSlug: "bytecoin"
-    date: "2010-11-13T14:55:11.000Z"
+    date: "2010-11-13T23:55:11.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1668/2010-11-13-bytecoin-msg21899"
 ---
 

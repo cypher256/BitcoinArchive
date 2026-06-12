@@ -18,7 +18,7 @@ quotes:
   - id: "q1"
     person: "Olipro"
     personSlug: "olipro"
-    date: "2010-07-25T21:39:17.000Z"
+    date: "2010-07-26T06:39:17.000Z"
     sourceEntryId: "forum/bitcointalk/topic-501/2010-07-26-olipro-msg5815"
 ---
 

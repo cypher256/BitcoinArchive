@@ -18,12 +18,12 @@ quotes:
   - id: "q1"
     person: "gavinandresen"
     personSlug: "gavin-andresen"
-    date: "2010-06-17T10:58:14.000Z"
+    date: "2010-06-17T19:58:14.000Z"
     sourceEntryId: "forum/bitcointalk/topic-195/2010-06-17-gavin-andresen-msg1613"
   - id: "q2"
     person: "Laszlo Hanyecz"
     personSlug: "laszlo-hanyecz"
-    date: "2010-06-17T09:50:31.000Z"
+    date: "2010-06-17T18:50:31.000Z"
     sourceEntryId: "forum/bitcointalk/topic-195/2010-06-17-laszlo-msg1612"
 ---
 

@@ -17,7 +17,7 @@ quotes:
   - id: "q1"
     person: "sgtstein"
     personSlug: "sgtstein"
-    date: "2010-08-03T08:30:37.000Z"
+    date: "2010-08-03T17:30:37.000Z"
     sourceEntryId: "forum/bitcointalk/topic-685/2010-08-03-sgtstein-msg7275"
 ---
 

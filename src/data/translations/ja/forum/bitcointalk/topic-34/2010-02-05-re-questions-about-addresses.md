@@ -18,7 +18,7 @@ quotes:
   - id: "q1"
     person: "Sabunir"
     personSlug: "sabunir"
-    date: "2010-02-05T08:31:30.000Z"
+    date: "2010-02-05T17:31:30.000Z"
     sourceEntryId: "forum/bitcointalk/topic-34/2010-02-05-sabunir-msg246"
 ---
 

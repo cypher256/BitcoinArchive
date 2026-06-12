@@ -17,7 +17,7 @@ quotes:
   - id: "q1"
     person: "Xunie"
     personSlug: "xunie"
-    date: "2010-05-14T12:52:53.000Z"
+    date: "2010-05-14T21:52:53.000Z"
     sourceEntryId: "forum/bitcointalk/topic-129/2010-05-14-xunie-msg1124"
 ---
 

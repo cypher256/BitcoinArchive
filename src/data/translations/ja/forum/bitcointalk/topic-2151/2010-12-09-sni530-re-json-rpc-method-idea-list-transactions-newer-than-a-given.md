@@ -18,12 +18,12 @@ quotes:
   - id: "q1"
     person: "Jeff Garzik"
     personSlug: "jeff-garzik"
-    date: "2010-12-08T15:58:05.000Z"
+    date: "2010-12-09T00:58:05.000Z"
     sourceEntryId: "forum/bitcointalk/topic-2151/2010-12-09-jgarzik-msg28330"
   - id: "q2"
     person: "Jeff Garzik"
     personSlug: "jeff-garzik"
-    date: "2010-12-09T07:13:50.000Z"
+    date: "2010-12-09T16:13:50.000Z"
     sourceEntryId: "forum/bitcointalk/topic-2151/2010-12-09-jgarzik-msg28572"
 ---
 

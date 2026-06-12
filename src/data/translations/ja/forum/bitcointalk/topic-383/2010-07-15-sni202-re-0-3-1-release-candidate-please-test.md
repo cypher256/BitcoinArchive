@@ -18,7 +18,7 @@ quotes:
   - id: "q1"
     person: "db"
     personSlug: "db"
-    date: "2010-07-15T11:39:08.000Z"
+    date: "2010-07-15T20:39:08.000Z"
     sourceEntryId: "forum/bitcointalk/topic-383/2010-07-15-db-msg3278"
 ---
 

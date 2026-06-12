@@ -18,7 +18,7 @@ quotes:
   - id: "q1"
     person: "NewLibertyStandard"
     personSlug: "newlibertystandard"
-    date: "2010-07-17T13:22:09.000Z"
+    date: "2010-07-17T22:22:09.000Z"
     sourceEntryId: "forum/bitcointalk/topic-419/2010-07-17-newlibertystandard-msg3817"
 ---
 

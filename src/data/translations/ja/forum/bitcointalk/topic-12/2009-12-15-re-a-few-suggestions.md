@@ -17,7 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "madhatter2"
-    date: "2009-12-14T20:21:09.000Z"
+    date: "2009-12-15T05:21:09.000Z"
     sourceEntryId: "forum/bitcointalk/topic-12/2009-12-15-the-madhatter-msg68"
 ---
 

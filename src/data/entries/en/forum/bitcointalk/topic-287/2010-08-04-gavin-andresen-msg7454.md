@@ -15,7 +15,7 @@ quotes:
   - id: "q1"
     person: "bytemaster"
     personSlug: "daniel-larimer"
-    date: "2010-08-03T21:22:56.000Z"
+    date: "2010-08-04T06:22:56.000Z"
     sourceEntryId: "forum/bitcointalk/topic-287/2010-08-04-bytemaster-msg7443"
 ---
 

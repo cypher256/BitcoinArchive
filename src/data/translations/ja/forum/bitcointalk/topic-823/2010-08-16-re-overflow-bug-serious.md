@@ -18,7 +18,7 @@ quotes:
   - id: "q1"
     person: "Ground Loop"
     personSlug: "ground-loop"
-    date: "2010-08-15T15:29:55.000Z"
+    date: "2010-08-16T00:29:55.000Z"
     sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-ground-loop-msg9609"
 ---
 

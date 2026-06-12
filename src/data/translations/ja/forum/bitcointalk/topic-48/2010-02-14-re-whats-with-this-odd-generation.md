@@ -18,12 +18,12 @@ quotes:
   - id: "q1"
     person: "theymos"
     personSlug: "michael-marquardt"
-    date: "2010-02-11T23:31:52.000Z"
+    date: "2010-02-12T08:31:52.000Z"
     sourceEntryId: "forum/bitcointalk/topic-48/2010-02-12-theymos-msg318"
   - id: "q2"
     person: "SmokeTooMuch"
     personSlug: "smoketoomuch"
-    date: "2010-02-12T04:11:09.000Z"
+    date: "2010-02-12T13:11:09.000Z"
     sourceEntryId: "forum/bitcointalk/topic-48/2010-02-12-smoketoomuch-msg319"
 ---
 

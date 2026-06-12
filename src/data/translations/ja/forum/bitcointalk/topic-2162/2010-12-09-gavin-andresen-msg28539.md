@@ -16,7 +16,7 @@ quotes:
   - id: "q1"
     person: "chaord"
     personSlug: "chaord"
-    date: "2010-12-08T22:17:12.000Z"
+    date: "2010-12-09T07:17:12.000Z"
     sourceEntryId: "forum/bitcointalk/topic-2162/2010-12-09-chaord-msg28448"
 ---
 

@@ -16,7 +16,7 @@ quotes:
   - id: "q1"
     person: "Brre"
     personSlug: "brre"
-    date: "2010-07-29T02:20:33.000Z"
+    date: "2010-07-29T11:20:33.000Z"
     sourceEntryId: "forum/bitcointalk/topic-615/2010-07-29-brre-msg6361"
 ---
 

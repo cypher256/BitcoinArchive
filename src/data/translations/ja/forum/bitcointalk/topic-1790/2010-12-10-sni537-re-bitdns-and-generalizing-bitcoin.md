@@ -18,7 +18,7 @@ quotes:
   - id: "q1"
     person: "Hal"
     personSlug: "hal-finney"
-    date: "2010-12-10T10:14:04.000Z"
+    date: "2010-12-10T19:14:04.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1790/2010-12-10-hal-msg28938"
 ---
 

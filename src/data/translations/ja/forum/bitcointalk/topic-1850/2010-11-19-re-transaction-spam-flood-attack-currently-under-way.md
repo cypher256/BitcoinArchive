@@ -17,12 +17,12 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "creighto"
-    date: "2010-11-19T11:29:12.000Z"
+    date: "2010-11-19T20:29:12.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1850/2010-11-19-moonshadow-msg22896"
   - id: "q2"
     person: "FreeMoney"
     personSlug: "freemoney"
-    date: "2010-11-19T08:39:44.000Z"
+    date: "2010-11-19T17:39:44.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1842/2010-11-19-freemoney-msg22844"
 ---
 

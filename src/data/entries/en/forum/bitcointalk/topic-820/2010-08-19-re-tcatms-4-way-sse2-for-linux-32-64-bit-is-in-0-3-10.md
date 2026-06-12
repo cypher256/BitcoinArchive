@@ -17,12 +17,12 @@ quotes:
   - id: "q1"
     person: "Ground Loop"
     personSlug: "ground-loop"
-    date: "2010-08-18T14:14:26.000Z"
+    date: "2010-08-18T23:14:26.000Z"
     sourceEntryId: "forum/bitcointalk/topic-820/2010-08-18-ground-loop-msg10167"
   - id: "q2"
     person: "nelisky"
     personSlug: "nelisky"
-    date: "2010-08-18T14:02:25.000Z"
+    date: "2010-08-18T23:02:25.000Z"
     sourceEntryId: "forum/bitcointalk/topic-820/2010-08-18-nelisky-msg10164"
 ---
 

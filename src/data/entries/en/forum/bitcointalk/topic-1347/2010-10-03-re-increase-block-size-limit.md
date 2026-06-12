@@ -21,7 +21,7 @@ quotes:
   - id: "q1"
     person: "theymos"
     personSlug: "michael-marquardt"
-    date: "2010-10-03T11:28:39.000Z"
+    date: "2010-10-03T20:28:39.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1347/2010-10-03-theymos-msg15126"
 relatedEntries:
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment

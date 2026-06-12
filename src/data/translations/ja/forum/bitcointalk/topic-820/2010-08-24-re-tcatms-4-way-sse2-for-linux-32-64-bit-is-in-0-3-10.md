@@ -18,7 +18,7 @@ quotes:
   - id: "q1"
     person: "ArtForz"
     personSlug: "artforz"
-    date: "2010-08-21T07:56:31.000Z"
+    date: "2010-08-21T16:56:31.000Z"
     sourceEntryId: "forum/bitcointalk/topic-820/2010-08-21-artforz-msg10609"
 ---
 

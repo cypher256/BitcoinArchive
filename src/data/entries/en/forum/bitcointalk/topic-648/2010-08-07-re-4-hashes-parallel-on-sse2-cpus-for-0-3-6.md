@@ -17,7 +17,7 @@ quotes:
   - id: "q1"
     person: "impossible7"
     personSlug: "impossible7"
-    date: "2010-08-06T02:37:20.000Z"
+    date: "2010-08-06T11:37:20.000Z"
     sourceEntryId: "forum/bitcointalk/topic-648/2010-08-06-impossible7-msg7838"
 ---
 

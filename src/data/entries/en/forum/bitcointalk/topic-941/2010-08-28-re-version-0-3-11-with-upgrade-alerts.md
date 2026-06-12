@@ -17,12 +17,12 @@ quotes:
   - id: "q1"
     person: "torservers"
     personSlug: "torservers"
-    date: "2010-08-28T04:00:37.000Z"
+    date: "2010-08-28T13:00:37.000Z"
     sourceEntryId: "forum/bitcointalk/topic-941/2010-08-28-torservers-msg11499"
   - id: "q2"
     person: "pavelo"
     personSlug: "pavelo"
-    date: "2010-08-27T22:36:07.000Z"
+    date: "2010-08-28T07:36:07.000Z"
     sourceEntryId: "forum/bitcointalk/topic-941/2010-08-28-pavelo-msg11481"
 ---
 

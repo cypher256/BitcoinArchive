@@ -16,7 +16,7 @@ quotes:
   - id: "q1"
     person: "gridecon"
     personSlug: "gridecon"
-    date: "2010-08-06T10:30:32.000Z"
+    date: "2010-08-06T19:30:32.000Z"
     sourceEntryId: "forum/bitcointalk/topic-721/2010-08-06-gridecon-msg7938"
 ---
 

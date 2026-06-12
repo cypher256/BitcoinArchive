@@ -17,7 +17,7 @@ quotes:
   - id: "q1"
     person: "nanotube"
     personSlug: "nanotube"
-    date: "2010-12-09T12:20:40.000Z"
+    date: "2010-12-09T21:20:40.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1790/2010-12-09-nanotube-msg28700"
 ---
 

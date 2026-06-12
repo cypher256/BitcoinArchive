@@ -17,7 +17,7 @@ quotes:
   - id: "q1"
     person: "singpolyma"
     personSlug: "singpolyma"
-    date: "2010-07-17T13:19:48.000Z"
+    date: "2010-07-17T22:19:48.000Z"
     sourceEntryId: "forum/bitcointalk/topic-400/2010-07-17-singpolyma-msg3815"
 ---
 
