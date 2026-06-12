@@ -22,4 +22,6 @@ quotes:
 Great! *download*
 
 <!-- quote: q1 -->
-> Multi-processor support for coin generationGreat, now i create much more coins than before ^^
+> Multi-processor support for coin generation
+
+Great, now i create much more coins than before ^^
