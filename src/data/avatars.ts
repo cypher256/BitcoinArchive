@@ -16,7 +16,7 @@
  * verifiable source URL, an author credit, and a re-distributable
  * licence (Wikimedia Commons CC BY / CC BY-SA / public domain, or an
  * image the subject themselves published). See
- * todo/0606_人物アイコン導入プラン.md for the collection policy.
+ * todo/20260606_人物アイコン導入プラン.md for the collection policy.
  */
 
 export interface AvatarPhoto {
