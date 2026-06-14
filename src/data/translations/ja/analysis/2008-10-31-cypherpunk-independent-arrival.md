@@ -61,6 +61,7 @@ relatedEntries:
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - aftermath/2008-08-20-satoshi-to-adam-back
   - aftermath/2008-08-21-adam-back-to-satoshi
+  - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
   - analysis/2008-08-20-satoshi-activity-timeline
@@ -208,6 +209,8 @@ D9 の「作業の大部分は設計であり、コーディングはそれよ�
 - (c) サトシの公開記録上の実践は、サイファーパンクの思想核に一対一で対応する（§3 の整合）
 
 (a)+(b)+(c) を組み合わせた最も簡素な読みは **独立到達** である: サトシは思想核を表明したコミュニティに参加してではなく、同じ問題（信頼できる仲介者なしのデジタル通貨）に同じ制約（暗号学的な基本構成要素、敵対的な分散環境）の下で取り組み、同じ答えに収束することで、サイファーパンクの核心に到達した。ウェイ・ダイ自身の b-money も、重なる領域で行われた独立到達の一例である。サトシの b-money 不知の自認は、構造的には同じ自認を一世代後に繰り返したものとも読める。
+
+同じ型は、思想核よりも解像度の高い水準でも成り立つ。ビットコインが実現する具体的な組合せ ── Hashcash 型のプルーフ・オブ・ワークを、分散型デジタルキャッシュの**鋳造**機構として用いる ── は、その 10 年前にアダム・バック本人が名指ししていた。バックは[サイファーパンクのリストでウェイ・ダイに返信した 1998 年 12 月 6 日のメール](/BitcoinArchive/ja/entries/emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique/)で、Hashcash を b-money の鋳造関数として提案している ── *「価値を創造するには CPU 時間を燃やす — hashcash と同じだ」* ── [候補として提案しただけで、実装はしていない](/BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/)配置だ。だがその言明は b-money の議論の中にあり、それはサトシが「知らなかった」と記録されているまさにその経路である。サトシはこの組合せを、すでに名指ししていた人物から受け継いだのではない。彼はそこに到達し、しかも**実装**した ── バックが指摘したムーアの法則によるインフレ問題を[難易度調整で解決し、バックの一行のスケッチに欠けていた台帳・合意・2,100 万枚上限を付け加えた](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)。したがって独立到達は、サイファーパンクの思想核だけでなく、PoW を価値に結びつける具体的な機構についても成り立つ。それをすでに言語化していた唯一の経路を通らずに到達したのだ。下記の「受動的な読み手」留保はここにも当てはまる: 公開記録はバックの 1998 年の言い回しを、サトシが知らなかった議論の中に置くが、受動的な接触まで排除するものではない。
 
 ただし、この読みは一つの主張に圧縮するのではなく、3 段に分けて持つべきである:
 

@@ -61,6 +61,7 @@ relatedEntries:
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - aftermath/2008-08-20-satoshi-to-adam-back
   - aftermath/2008-08-21-adam-back-to-satoshi
+  - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
   - analysis/2008-08-20-satoshi-activity-timeline
@@ -207,6 +208,8 @@ Three observations now sit on the table:
 - (c) Satoshi's documented practice maps point-by-point onto the cypherpunk philosophical core (§3 alignment).
 
 Combining (a)+(b)+(c), the most parsimonious reading is **independent arrival**: Satoshi reached the cypherpunk core not by participating in the community that articulated it, but by working through the same problem (digital cash without trusted intermediaries) under the same constraints (cryptographic primitives, distributed adversarial environment) and converging on the same answers. Wei Dai's b-money is itself an instance of independent arrival on overlapping ground; Satoshi's b-money disclaimer is structurally the same admission, one generation later.
+
+The same pattern holds at a sharper resolution than the philosophical core. The specific configuration Bitcoin realizes — a Hashcash-style proof-of-work used as the *minting* mechanism for a decentralized digital cash — had been named a decade earlier by Adam Back himself. [Replying to Wei Dai on the Cypherpunks list on December 6, 1998](/BitcoinArchive/entries/emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique/), Back proposed Hashcash as b-money's minting function — *"to create value you burn CPU time, just like with hashcash"* — a configuration [he proposed as a candidate but did not implement](/BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/). But that articulation sits inside the b-money discussion — the same channel Satoshi documented not knowing. Satoshi did not inherit the configuration from the person who had already named it; he reached it and *implemented* it — resolving the Moore's-law inflation problem Back flagged via [difficulty adjustment, and adding the ledger, consensus, and 21-million cap](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) that Back's one-line sketch lacked. The independent arrival is therefore not only of the cypherpunk philosophical core but of the specific proof-of-work-as-value mechanism, reached without the one channel that had already articulated it. The open-reader caveat below applies here too: the documented record places Back's 1998 phrasing inside a discussion Satoshi did not know, but does not foreclose passive exposure.
 
 But the reading should be held in three tiers, not collapsed into a single claim:
 
