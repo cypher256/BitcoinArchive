@@ -550,6 +550,7 @@ blockquote[data-speaker="satoshi"] {
 .participant-avatar { --avatar-size: 4.5rem; }
 .entry-author-avatar { --avatar-size: 3rem; }
 .message-avatar { --avatar-size: 1.9rem; }
+.card-author-avatar { --avatar-size: 1.5rem; }
 /* Satoshi's avatar is drawn in CSS (a <span class="avatar <size-class>
    satoshi-av">SN</span>), not a baked PNG, so the "SN" colour can follow
    the theme: white on the light-mode amber-orange, dark ink on the lighter

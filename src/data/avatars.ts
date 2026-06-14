@@ -112,6 +112,7 @@ export const AVATAR_PX: Record<string, number> = {
   'participant-avatar': 72,
   'entry-author-avatar': 48,
   'message-avatar': 30,
+  'card-author-avatar': 24,
 };
 
 /**
