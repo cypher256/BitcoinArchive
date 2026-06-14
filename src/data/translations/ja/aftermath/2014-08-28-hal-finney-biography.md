@@ -96,16 +96,16 @@ timeline
 ```
 
 ## 暗号学と PGP
-1991年、フィニーはフィル・ジマーマンの Pretty Good Privacy（PGP）プロジェクトに無償でコードを書くボランティアとして参加。PGP 2.0 の主要開発者の一人となった。1996年にジマーマンが PGP 社を設立した際、最初期の従業員として雇用された（後にシマンテックに買収）。
+フィニーの仕事人生は、その終わり方と同じように、コードを無償で差し出すことから始まった。1991 年、彼はフィル・ジマーマンの Pretty Good Privacy（PGP）に無償のボランティアとして加わり、PGP 2.0 の主要開発者の一人になった。1996 年にジマーマンが PGP 社を設立すると、フィニーは最初期の従業員に名を連ねた。同社は後にシマンテックの一部となった。
 
 ## エクストロピアニズムとクライオニクス
-フィニーはエクストロピー研究所のクライオニクス、延命、宇宙移住、ナノテクノロジー、人工知能に関する議論の積極的な参加者だった。Caltech 在学中の 1年生の時からクライオニクスに興味を持っていた。1992年10月15日、妻フランとともにカリフォルニア州リバーサイドでアルコー・クライオニクスの会員登録書類に署名。以後 20年以上アルコー会員だった。
+ALS があの冒頭の一行に重みを与えるよりずっと前から、フィニーは身体を越えて生き延びることに賭けていた。クライオニクスへの関心は Caltech 在学中、1 年生の頃からのものだ。エクストロピー研究所の延命・宇宙移住・ナノテクノロジー・人工知能をめぐる議論でも、活発に発言する一人だった。1992 年 10 月 15 日、彼は妻フランとともにカリフォルニア州リバーサイドでアルコー・クライオニクスの会員登録書類に署名した。その会員資格は、アルコーが彼を引き取るまでの二十年あまり続いた。
 
 ## Reusable Proof-of-Work
-2004年、フィニーは最初の Reusable Proof-of-Work（RPOW）システムを構築した — ビットコインのプルーフ・オブ・ワーク機構の先行概念である。サイファーパンク運動のデジタルキャッシュ構想に深く関与していた。アダム・バックの Hashcash から、ウェイ・ダイの b-money、ニック・サボの Bit Gold、そして RPOW を経てビットコインへと至る技術系譜は、サトシ自身がその運動に対してどのような位置にいたかという問いとあわせて、[サイファーパンク核心とサトシの知的位置についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で精査されている。
+2004 年、彼は Reusable Proof-of-Work（RPOW）を構築した。これもまた、世に手放した。RPOW は、一度きりしか使えないプルーフ・オブ・ワークのトークンであるアダム・バックの Hashcash を、使い回せる形にした。使い、戻し、次へ渡せる仕事だ。しかも RPOW は動いた。ウェイ・ダイの b-money とニック・サボの Bit Gold が提案のままだったのに対し、RPOW は現に動くシステムだった。この系譜（Hashcash、b-money、Bit Gold、そしてビットコイン）の中で RPOW がどこに座り、サトシがその系譜のどこに立っていたかは、[サイファーパンク核心についての別の読み解き](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で扱う。
 
 ## ビットコイン
-2009年1月9日、フィニーはリリース当日に [Bitcoin v0.1](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/) をダウンロードし、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)以外で最初にビットコインノードを稼働させたとされる人物となった。ブロック 70 付近からマイニングを開始。2009年1月11日、[「Running bitcoin」とツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — ソフトウェアの稼働を公に言及した最初の記録である。2009年1月12日、[ブロック 170 でサトシから 10 BTC を受信](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — 史上初の個人間ビットコイン送金だった。
+彼は初日からそこにいた。2009 年 1 月 9 日、[Bitcoin v0.1](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/) の公開日に、フィニーはそれをダウンロードしてノードを起動した。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)本人を除けば、ビットコインノードを動かした最初の人物として知られている。そしてブロック 70 付近からマイニングを始めた。[「Running bitcoin」](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)のツイートは 11 日、[サトシからの 10 BTC（ブロック 170）](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)は 12 日のことだ。
 
 ## ALS と最後の年月
 

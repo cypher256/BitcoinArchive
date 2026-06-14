@@ -95,16 +95,16 @@ timeline
 ```
 
 ## Cryptography and PGP
-In 1991, Finney began volunteering for Phil Zimmermann's Pretty Good Privacy (PGP) project, writing code for free. He became one of the principal developers of PGP 2.0. When Zimmermann founded PGP Inc. in 1996, Finney was hired as one of the first employees (the company later became part of Symantec through acquisitions).
+Finney's working life began the way it would end — giving the code away. In 1991 he volunteered for Phil Zimmermann's Pretty Good Privacy (PGP), writing it for free, and became one of PGP 2.0's principal developers. When Zimmermann incorporated PGP Inc. in 1996, Finney was among the first hired; the company later became part of Symantec.
 
 ## Extropianism and Cryonics
-Finney was an active participant in the Extropy Institute's discussions on cryonics, life extension, space colonization, nanotechnology, and artificial intelligence. He became interested in cryonics during his freshman year at Caltech. On October 15, 1992, he and his wife Fran signed their Alcor cryonics membership paperwork in Riverside, California. He remained an Alcor member for over 20 years.
+Long before ALS gave that opening line its weight, Finney had bet on outlasting the body. He had been drawn to cryonics since his freshman year at Caltech, and was an active voice in the Extropy Institute's debates on life extension, space colonization, nanotechnology, and artificial intelligence. On October 15, 1992, he and his wife Fran signed their Alcor cryonics membership in Riverside, California, and held it for the more than two decades until Alcor received him.
 
 ## Reusable Proof-of-Work
-In 2004, Finney created the first Reusable Proof-of-Work (RPOW) system — a precursor concept to Bitcoin's proof-of-work mechanism. He was deeply engaged with the cypherpunk movement's goal of creating digital cash. The technical lineage from Adam Back's Hashcash through Wei Dai's b-money, Nick Szabo's Bit Gold, and RPOW into Bitcoin is examined alongside the question of Satoshi's own position relative to that movement in [an analysis of the cypherpunk core and Satoshi's intellectual location](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
+In 2004 he built Reusable Proof-of-Work (RPOW), and gave that away too. It took Adam Back's Hashcash — a proof-of-work token good for a single use — and made it reusable: work that could be spent, returned, and handed on. And it ran: where Wei Dai's b-money and Nick Szabo's Bit Gold stayed proposals, RPOW was a working system. Where it sits in that line — Hashcash, b-money, Bit Gold, then Bitcoin — and where Satoshi stood relative to it is the subject of [a separate reading of the cypherpunk core](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
 ## Bitcoin
-On January 9, 2009, Finney downloaded [Bitcoin v0.1](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) on its release day and became the first known person other than [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) to run a Bitcoin node. He began mining around Block 70. On January 11, 2009, he [tweeted "Running bitcoin"](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) — the first public mention of running the software. On January 12, 2009, he [received 10 BTC from Satoshi in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) — the first person-to-person Bitcoin transaction in history.
+He was there on the first day. On January 9, 2009 — release day for [Bitcoin v0.1](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) — Finney downloaded it and ran a node, the first known besides [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) himself, and began mining around Block 70. The ["Running bitcoin"](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) tweet came on the 11th, and [10 BTC from Satoshi in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/) on the 12th.
 
 ## ALS and Final Years
 
