@@ -256,6 +256,23 @@ const t = useTranslations(lang);
   .mobile-menu-toggle[aria-expanded="true"] .menu-icon-close {
     display: inline;
   }
+  /* 言語不一致時: ハンバーガー☰ にも注意ドット。モバイルではトグルが
+     メニュー内に隠れるため、開く前に気づかせる。デスクトップでは ☰ 自体が
+     非表示なので出ない。色は link 色を避けた注意色 (amber)。 */
+  .mobile-menu-toggle.lang-mismatch {
+    position: relative;
+  }
+  .mobile-menu-toggle.lang-mismatch::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-satoshi);
+    border: 1px solid var(--color-bg);
+  }
 
   @media (max-width: 768px) {
     .header-inner {
@@ -385,6 +402,29 @@ const t = useTranslations(lang);
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   }
+
+  // 言語サジェスト: ブラウザの優先言語と表示言語 (<html lang>) が異なり、
+  // かつ代替言語版が実在する (hreflang クラスタが出ている) 場合のみ、言語
+  // 切替トグルを強調する。モバイルではトグルがメニュー内に隠れるため、
+  // ハンバーガー☰ にもドットを付けて開く前に気づかせる。
+  // 自動リダイレクトはしない (SEO/UX の罠) — 気づきを促すだけ。
+  try {
+    var pageLang = (document.documentElement.lang || 'en').toLowerCase().slice(0, 2);
+    var prefs = navigator.languages || [navigator.language || ''];
+    var prefersJa = Array.prototype.some.call(prefs, function (l) {
+      return /^ja(-|$)/i.test(l);
+    });
+    var browserLang = prefersJa ? 'ja' : 'en';
+    var target = pageLang === 'ja' ? 'en' : 'ja';
+    var alternateExists = !!document.querySelector(
+      'link[rel="alternate"][hreflang="' + target + '"]'
+    );
+    if (browserLang !== pageLang && alternateExists) {
+      var langSwitch = document.querySelector('.lang-switch');
+      if (langSwitch) langSwitch.classList.add('lang-mismatch');
+      if (toggle) toggle.classList.add('lang-mismatch');
+    }
+  } catch (_) { /* navigator 不在等は無視 */ }
 
   // Browse ドロップダウン: クリック外で閉じる
   document.addEventListener('click', function(e) {

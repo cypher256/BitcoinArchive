@@ -40,4 +40,23 @@ const targetPath = getAlternatePath(targetLang);
     border-color: var(--color-text-muted);
     text-decoration: none;
   }
+  /* ブラウザの優先言語と表示言語が異なり、かつ代替版が実在するとき、
+     Header の inline script が .lang-mismatch を付与してトグルを強調する。
+     ドットは link 色ではなく注意色 (amber = --color-satoshi) を使う
+     (STYLE_GUIDE Link-color confusion 規約: 非リンク要素に link 色を使わない)。 */
+  .lang-switch.lang-mismatch {
+    position: relative;
+    border-color: var(--color-satoshi);
+    color: var(--color-satoshi);
+  }
+  .lang-switch.lang-mismatch::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-satoshi);
+  }
 </style>
