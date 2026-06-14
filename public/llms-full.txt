@@ -37,40 +37,40 @@ Languages: English, Japanese
 
 ## Entry Categories
 
-### Correspondence (337 entries)
+### Correspondence (336 entries)
 Private email exchanges between Satoshi and key participants:
-- **Martti Malmi** (260 entries): Finnish developer who helped with Bitcoin's website and early development. Extensive correspondence about project direction.
+- **Martti Malmi** (255 entries): Finnish developer who helped with Bitcoin's website and early development. Extensive correspondence about project direction.
 - **Mike Hearn** (33 entries): Google engineer. Satoshi shared unpublished ideas about smart contracts and payment channels. Received Satoshi's farewell message.
 - **Dustin Trammell** (20 entries): Early Bitcoin miner and security researcher.
-- **Nicholas Bohm** (5 entries): British lawyer. Discussed legal and regulatory implications of Bitcoin.
-- **Adam Back** (5 entries): Creator of Hashcash, the proof-of-work system that inspired Bitcoin's mining.
-- **Hal Finney** (4 entries): First Bitcoin user besides Satoshi. Received the first BTC transaction. Discussed early bugs and improvements.
-- **Gavin Andresen** (4 entries): Took over as lead developer. Received network alert key and repository access.
+- **NewLibertyStandard** (12 entries): Ran the first published Bitcoin/USD exchange rate and an early exchange.
+- **Gavin Andresen** (6 entries): Took over as lead developer. Received network alert key and repository access.
+- **Adam Back** (5 entries): Creator of Hashcash, the proof-of-work primitive Bitcoin's mining reuses.
 - **Wei Dai** (3 entries): Creator of b-money. Satoshi contacted him after independently reinventing similar concepts.
-- **Laszlo Hanyecz** (3 entries): Made the first real-world Bitcoin purchase (pizza transaction).
+- **Hal Finney** (2 entries): First Bitcoin user besides Satoshi. Received the first BTC transaction. Discussed early bugs and improvements.
 
-### Forum Posts (2,609 entries)
-- **BitcoinTalk** (2,531 posts): Satoshi's posts and context posts from other participants — technical discussions, announcements, bug reports, and community interactions from November 2009 to December 2010
+### Forum Posts (2,616 entries)
+- **BitcoinTalk** (2,545 posts): Satoshi's posts and context posts from other participants — technical discussions, announcements, bug reports, and community interactions from November 2009 to December 2010
 - **GitHub PRs** (64 posts): Bitcoin Core pull-request threads relevant to Satoshi's design choices and their later supersession
-- **SourceForge** (9 posts): Key development milestones from Bitcoin's SourceForge project
-- **P2P Foundation** (4 posts): Bitcoin announcement and early discussions
+- **P2P Foundation** (7 posts): Bitcoin announcement and early discussions
 
-### Mailing List Emails (46 entries)
-- **Cryptography mailing list** (28 emails): Whitepaper announcement and technical debates
-- **Bitcoin-list** (16 emails): Development announcements
-- **P2P Research** (4 emails): Peer-to-peer technology discussions
+### Mailing List Emails (64 entries)
+- **Cryptography mailing list** (31 emails): Whitepaper announcement and technical debates
+- **Bitcoin-list** (20 emails): Development announcements
+- **P2P Research** (7 emails): Peer-to-peer technology discussions
+- **Cypherpunks** (5 emails): Pre-Bitcoin digital-cash discussions (Hashcash, b-money)
+- **Linux Foundation** (1 email): Development-related message
 
-### Articles (73 entries)
+### Articles (164 entries)
 Media coverage, research articles, and post-disappearance historical analysis from various sources including Bitcoin Magazine, CoinDesk, Wired, Forbes, and academic publications.
 
-### Biographies (32 entries)
+### Biographies (41 entries)
 Biographical profiles of key participants compiled from multiple public sources. These are not direct transcriptions of any single document.
 
-### Bitcoin Improvement Proposals (11 entries)
+### Bitcoin Improvement Proposals (9 entries)
 BIPs relevant to Satoshi's original design and vision.
 
-### Analysis (8 entries)
-Editorial readings authored under the Bitcoin Institute byline. Each analysis is explicitly labeled as interpretation; claims are sourced individually. Current entries:
+### Analysis (37 entries)
+Editorial readings authored under the Bitcoin Institute byline. Each analysis is explicitly labeled as interpretation; claims are sourced individually. Examples include:
 - **Independent arrival at the cypherpunk core**: Satoshi's documented relationship to the cypherpunk movement built from three converging primary-source observations (Satoshi's b-money disclaimer to Adam Back, Wei Dai's identifiability argument, and the alignment between Satoshi's documented practice and Eric Hughes's 1993 Cypherpunk's Manifesto).
 - **The "Satoshi Nakamoto" pseudonym and AKIRA**: a descriptive techno-orientalist reading of the symbolic field the pseudonym lands inside (Blade Runner, Neuromancer, AKIRA, Ghost in the Shell, Mondo 2000-era cyberpunk discourse). Explicitly does not claim authorial intent.
 - **Satoshi self-statements (2008-2011)**: inventory of every documented Satoshi self-reference across identity claims, design-process disclosures, operational/expertise self-disclosures, departure statements, and authenticity-disputed material; each anchored to primary source.
@@ -83,8 +83,17 @@ Editorial readings authored under the Bitcoin Institute byline. Each analysis is
 ### Whitepapers (2 entries)
 Bitcoin whitepaper draft (October 3, 2008) and final version (October 31, 2008).
 
-### Court Documents (3 entries)
+### Court Documents (2 entries)
 COPA v Wright trial materials including testimony and ruling.
+
+### Design (12 entries)
+System-overview and architecture readings of Bitcoin's protocol (for example, the Bitcoin v0.1 system-design overview).
+
+### Tweets (5 entries)
+Historically significant X / Twitter posts archived verbatim with the original handle.
+
+### Blog posts (1 entry)
+A participant's self-published web writing, reproduced verbatim.
 
 ## Key Participants
 

@@ -6,17 +6,20 @@ Bitcoin Institute is a bilingual (English/Japanese) reference site that collects
 
 ## Contents
 
-The archive contains 3,100+ entries organized by type:
+The archive contains 3,200+ entries organized by type:
 
-- **Forum Posts** (2,609): BitcoinTalk (2,531), GitHub PRs (64), SourceForge (9), P2P Foundation (4), including Satoshi's posts and context posts from other participants
-- **Correspondence** (337): Private emails between Satoshi and 9 key participants — Adam Back, Dustin Trammell, Gavin Andresen, Hal Finney, Laszlo Hanyecz, Martti Malmi, Mike Hearn, Nicholas Bohm, Wei Dai
-- **Articles** (73): Media coverage, research, and post-disappearance historical analysis
-- **Mailing List** (46): Cryptography mailing list (28), Bitcoin-list (16), P2P Research (4)
-- **Biographies** (32): Biographical profiles of key participants compiled from public sources
-- **BIPs** (11): Bitcoin Improvement Proposals relevant to Satoshi's design
-- **Analysis** (8): Editorial readings by Bitcoin Institute on Satoshi's intellectual position relative to the cypherpunk movement, the techno-orientalist symbolic field of the "Satoshi Nakamoto" pseudonym, the chronological activity timeline 2008-2014, the genesis block hardcode mechanism, the v0.1 source code, the launch-period operational environment, distribution and tooling anomalies, and Satoshi's self-statements 2008-2011
-- **Court Documents** (3): COPA v Wright trial materials
+- **Forum Posts** (2,616): BitcoinTalk (2,545), GitHub PRs (64), P2P Foundation (7), including Satoshi's posts and context posts from other participants
+- **Correspondence** (336): Private emails between Satoshi and 8 key participants — Adam Back, Dustin Trammell, Gavin Andresen, Hal Finney, Martti Malmi, Mike Hearn, NewLibertyStandard, Wei Dai
+- **Articles** (164): Media coverage, research, and post-disappearance historical analysis
+- **Mailing List** (64): cryptography mailing list (31), Bitcoin-list (20), P2P Research (7), Cypherpunks (5), Linux Foundation (1)
+- **Biographies** (41): Biographical profiles of key participants compiled from public sources
+- **Analysis** (37): Editorial readings by Bitcoin Institute — Satoshi-identity hypotheses for the named candidates, the Bitcoin design lineage and cypherpunk independent-arrival, the 2008–2014 activity timeline, the genesis-block and v0.1 source-code analyses, and monetary-policy readings, each labeled as interpretation and individually sourced
+- **Design** (12): System-overview and architecture readings of Bitcoin's protocol (e.g. the v0.1 system-design overview)
+- **BIPs** (9): Bitcoin Improvement Proposals relevant to Satoshi's design
+- **Tweets** (5): Historically significant X / Twitter posts archived verbatim with the original handle
+- **Court Documents** (2): COPA v Wright trial materials
 - **Whitepapers** (2): Bitcoin whitepaper draft and final version
+- **Blog posts** (1): A participant's self-published web writing, reproduced verbatim
 
 ## Key Pages
 
