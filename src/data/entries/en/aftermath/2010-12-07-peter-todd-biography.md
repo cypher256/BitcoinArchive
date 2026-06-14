@@ -89,7 +89,7 @@ timeline
 
 ## Bitcoin Core Contributions
 
-Todd became an active Bitcoin Core contributor starting in April 2012, eventually becoming the 11th most prolific contributor to Bitcoin Core's GitHub repository. He focused on protocol-level security, transaction policy, and network resilience.
+From April 2012, Todd's Bitcoin Core work concentrated on the adversarial edge of the protocol — transaction policy, transaction replacement, network resilience: the parts where the requirement is set by an attacker rather than a user. By commit count he became the repository's 11th most prolific contributor.
 
 ## BIP 65: OP_CHECKLOCKTIMEVERIFY (October 2014)
 Todd proposed [BIP 65](/BitcoinArchive/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/), introducing a new opcode that allows transaction outputs to remain unspendable until a specified future time. Deployed as a soft fork, it became a building block for payment channels and the Lightning Network.

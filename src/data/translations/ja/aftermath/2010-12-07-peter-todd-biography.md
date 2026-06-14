@@ -90,7 +90,7 @@ timeline
 
 ## Bitcoin Core への貢献
 
-トッドは 2012年4月から Bitcoin Core の活発な貢献者となり、最終的に Bitcoin Core の GitHub リポジトリで 11番目に多い貢献者となった。プロトコルレベルのセキュリティ、トランザクションポリシー、ネットワークの耐障害性に注力した。
+2012 年 4 月以降、トッドの Bitcoin Core での仕事は、プロトコルの中でも要件をユーザーではなく攻撃者が決める領域 —— トランザクションポリシー、トランザクション置換、ネットワークの耐障害性 —— に集中していた。コミット数では、リポジトリで 11 番目に多い貢献者になった。
 
 ## BIP 65: OP_CHECKLOCKTIMEVERIFY（2014年10月）
 トッドは [BIP 65](/BitcoinArchive/ja/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/) を提案し、トランザクション出力を指定された将来の時点まで使用不能にする新しいオペコードを導入した。ソフトフォークとしてデプロイされ、ペイメントチャネルおよび Lightning Network の構成要素となった。

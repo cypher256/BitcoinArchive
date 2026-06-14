@@ -40,7 +40,7 @@ His skepticism pulled some of Satoshi's most detailed early architectural explan
 Donald argued in his November 1 reply that the system would require every node to process every transaction, making it impractical for widespread use.
 
 ## Technical Exchange with Satoshi
-Donald's skepticism prompted a series of exchanges with Satoshi on the mailing list throughout November 2008. Satoshi responded by explaining how the system could scale through simplified payment verification (SPV) and how not every node would need to process every transaction. Donald also introduced the concept of a "bitcoin bank" — trusted intermediaries that would hold bitcoin on behalf of users — which anticipated the role that cryptocurrency exchanges would later play. He pushed Satoshi to clarify how the system would handle trust and double-spending, leading Satoshi to provide some of his most detailed early explanations of Bitcoin's design.
+Across November 2008, Satoshi answered the scaling objection point by point: not every node need process every transaction — simplified payment verification would let lightweight clients confirm payments without storing the full chain. Donald's own coinage in the thread, the "bitcoin bank" — a trusted intermediary holding coins for users — anticipated the exchanges that would later dominate. Pressed on trust and double-spending, Satoshi spelled out the model in unusual detail.
 
 ## Significance
 Donald's critical engagement with the white paper forced Satoshi to articulate Bitcoin's scalability model and trust assumptions in a public forum. He stayed skeptical of Bitcoin's feasibility — but a doubter asking the first hard questions is exactly why some of Bitcoin's earliest design rationale sits in the public record at all.
