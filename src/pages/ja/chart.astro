@@ -95,6 +95,8 @@ const halvings = await import('../../data/btc-chart/halvings.json').then(m => m.
         </table>
       </div>
     </section>
+
+    <p class="chart-disclaimer">{t('chart.disclaimer' as any)}</p>
   </div>
 </BaseLayout>
 
@@ -373,6 +375,13 @@ const halvings = await import('../../data/btc-chart/halvings.json').then(m => m.
   /* Predictions table */
   .predictions-section {
     margin-bottom: 3rem;
+  }
+  .chart-disclaimer {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    border-top: 1px solid var(--color-border);
+    padding-top: 1rem;
   }
   .predictions-table-wrap {
     overflow-x: auto;

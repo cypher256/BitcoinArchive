@@ -214,6 +214,7 @@ export const ui = {
     'chart.range5Y': '5Y',
     'chart.rangeAll': 'All',
     'chart.models': 'Models',
+    'chart.disclaimer': 'The price predictions and theoretical models on this page are presented as a record of past statements and as reference information, not as investment advice or a recommendation of any financial product.',
   },
   ja: {
     'site.title': 'ビットコイン・インスティテュート',
@@ -418,5 +419,6 @@ export const ui = {
     'chart.range5Y': '5年',
     'chart.rangeAll': '全期間',
     'chart.models': '理論モデル',
+    'chart.disclaimer': '本ページに掲載する価格予測・理論モデルは、過去の発言の記録および参考情報として示すものであり、投資助言や金融商品の推奨ではありません。',
   },
 } as const;
