@@ -78,10 +78,6 @@ flowchart LR
   end
 ```
 
-<!-- audit:quote-skip -->
-> **Node** — a computer running Bitcoin software, connected to other Bitcoin nodes. Anyone can run one.
-> **Peer-to-peer (P2P)** — a network where computers talk to each other directly, with no central server in the middle.
-
 The rules of the system are defined by a short paper [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) published in 2008, the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/). The software was released two months later, in January 2009, and has been running continuously ever since.
 
 One refinement before we move on. The node described above — the kind that stores the entire blockchain and independently verifies every rule — is called a **full node**. A lighter variant called a **light node**, or **SPV** client (for *simplified payment verification*), only downloads a tiny summary at the top of each block (the **block header**) and asks full nodes whether specific transactions exist. Many phone wallets run on SPV; many others use a still simpler model — querying a central server API operated by the wallet provider — which is even lighter but trusts the provider for everything. The whitepaper's § 8 sketches the SPV idea; the production engineering came years later, driven largely by [Mike Hearn's bitcoinj work](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/). For the rest of this entry, "node" means full node unless stated otherwise.
