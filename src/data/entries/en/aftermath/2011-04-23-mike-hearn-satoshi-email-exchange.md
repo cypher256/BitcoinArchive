@@ -30,6 +30,11 @@ relatedEntries:
   - aftermath/2017-08-11-mike-hearn-publishes-emails
 quotes:
   - id: "q1"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    date: "2011-04-20T13:55:00Z"
+    sourceEntryId: "correspondence/mike-hearn/holding-coins/2011-04-20-hearn-to-satoshi-contracts-wiki"
+  - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     date: "2011-04-23T15:40:00Z"
@@ -40,9 +45,14 @@ quotes:
 
 In their correspondence, Satoshi discussed technical aspects of Bitcoin's future, including how the system could scale, how simplified payment verification (SPV) clients would work, and how he envisioned the evolution of mining from CPUs to more specialized hardware.
 
-In one of the final exchanges in April 2011, Satoshi [wrote to Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/):
+On April 20, 2011, Hearn [asked Satoshi directly](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-20-hearn-to-satoshi-contracts-wiki/):
 
 <!-- quote: q1 -->
+> "...are you planning on rejoining the community at some point (eg for code reviews), or is your plan to permanently step back from the limelight?"
+
+Three days later, Satoshi [replied](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/):
+
+<!-- quote: q2 -->
 > "I've moved on to other things. It's in good hands with Gavin and everyone."
 
 It was among the last known private messages from Satoshi before he went silent.

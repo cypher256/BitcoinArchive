@@ -30,6 +30,11 @@ relatedEntries:
   - aftermath/2017-08-11-mike-hearn-publishes-emails
 quotes:
   - id: "q1"
+    person: "Mike Hearn"
+    personSlug: "mike-hearn"
+    date: "2011-04-20T13:55:00Z"
+    sourceEntryId: "correspondence/mike-hearn/holding-coins/2011-04-20-hearn-to-satoshi-contracts-wiki"
+  - id: "q2"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     date: "2011-04-23T15:40:00Z"
@@ -41,9 +46,17 @@ Google のエンジニアで初期のビットコイン貢献者となった[マ
 
 彼らのやり取りの中で、サトシはビットコインの将来に関する技術的な側面について議論した。システムのスケーリング方法、簡易決済検証（SPV）クライアントの仕組み、そしてマイニングが CPU からより専門的なハードウェアへと進化していくことについての展望などが含まれていた。
 
-2011年4月の最後のやり取りの一つで、サトシは[ハーンにこう書いた](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)。
+2011年4月20日、ハーンは[サトシに直接こう尋ねた](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-20-hearn-to-satoshi-contracts-wiki/)。
 
 <!-- quote: q1 -->
+<!-- tone-skip -->
+> 「コミュニティに（例えばコードレビューのために）いつか戻ってくるつもりはないか？それとも永久に表舞台から退くつもりなのか？」
+
+<!-- /tone-skip -->
+
+その三日後、サトシは[こう返した](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)。
+
+<!-- quote: q2 -->
 <!-- tone-skip -->
 > 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
 
