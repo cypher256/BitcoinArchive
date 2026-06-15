@@ -1,9 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Avatar from '../../components/Avatar.astro';
 import { useTranslations, getDisplayEntries, localePath, absoluteUrl } from '../../i18n/utils';
 
 const lang = 'en';
 const t = useTranslations(lang);
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
 const entries = await getDisplayEntries(lang);
 
 const participantCounts = new Map<string, { name: string; slug: string; count: number }>();
@@ -59,8 +63,9 @@ const structuredData = {
     <ul class="participant-list" id="sort-list">
       {participants.map((p) => (
         <li data-name={p.name} data-count={p.count}>
-          <a href={localePath(`/participants/${p.slug}/`, lang)}>
-            {p.name}
+          <a href={localePath(`/participants/${p.slug}/`, lang)} class="participant-link">
+            <Avatar slug={p.slug} sizeClass="character-avatar" base={base} />
+            <span class="participant-name">{p.name}</span>
           </a>
           <span class="count">({p.count})</span>
         </li>
@@ -149,9 +154,18 @@ const structuredData = {
     padding: 0;
   }
   .participant-list li {
-    padding: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0;
     border-bottom: 1px solid var(--color-border);
     font-size: 1.1rem;
+  }
+  .participant-link {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    min-width: 0;
   }
   .count {
     color: var(--color-text-muted);
