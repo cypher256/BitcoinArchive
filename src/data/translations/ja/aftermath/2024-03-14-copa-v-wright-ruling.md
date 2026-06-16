@@ -4,8 +4,10 @@ date: 2024-03-14T00:00:00Z
 type: "court-document"
 source: "uk-judiciary"
 sourceUrl: "https://www.judiciary.uk/judgments/copa-v-wright/"
-author: "Justice Mellor"
+author: "James Mellor"
 participants:
+  - name: "James Mellor"
+    slug: "james-mellor"
   - name: "Craig Wright"
     slug: "craig-wright"
   - name: "COPA"

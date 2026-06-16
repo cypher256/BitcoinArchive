@@ -33,6 +33,7 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   'jacky-mallett': 'ジャッキー・マレット',
   'jackson-palmer': 'ジャクソン・パーマー',
   'james-donald': 'ジェームズ・A・ドナルド',
+  'james-mellor': 'ジェームズ・メラー',
   'jameson-lopp': 'ジェイムソン・ロップ',
   'jeff-garzik': 'ジェフ・ガージック',
   'jihan-wu': 'ジハン・ウー',
