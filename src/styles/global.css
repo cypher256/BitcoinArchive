@@ -1237,6 +1237,21 @@ p:has(> strong:only-child):has(+ .figure-outer:has([data-kind="mermaid"])) {
   .conversation-thread .message {
     padding: 0.75rem 1rem;
   }
+  /* Deeply nested quote threads (e.g. the 11-level Malmi/Satoshi bitcoind
+     debugging exchange) accumulate one level of horizontal padding per
+     nesting depth. On narrow screens that crushes the innermost quote to a
+     sliver where its text wraps one character per line. Zero the right
+     padding on nested quotes — it only adds waste; the nesting cue is the
+     left indent plus the outlined bubble, not the right gap — and shrink the
+     left indent so depth still reads without eating the whole width. The
+     top-level quote (not matched by `blockquote blockquote`) keeps its full
+     padding. */
+  .entry-content blockquote blockquote,
+  .message-body blockquote blockquote,
+  .biography-content blockquote blockquote {
+    padding-left: 0.6em;
+    padding-right: 0;
+  }
 }
 
 /* Verbatim archive entries (forum/correspondence/emails) — external
