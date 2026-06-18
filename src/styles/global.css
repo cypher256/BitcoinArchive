@@ -1252,6 +1252,29 @@ p:has(> strong:only-child):has(+ .figure-outer:has([data-kind="mermaid"])) {
     padding-left: 0.6em;
     padding-right: 0;
   }
+  /* Entry title (article / analysis / design and every entry-detail page):
+     let a long title wrap around the author avatar instead of being trapped
+     in the narrow column beside it. The desktop flex row centres the avatar
+     and <h1> side by side; on a narrow screen that pins the title to the
+     sliver left of the avatar, wrapping it many lines deep with dead space
+     under the icon. Float the avatar so the title flows around it — first
+     lines beside the icon, the rest back to full width underneath — and
+     enlarge it a touch (3rem -> 3.75rem) so it anchors those first lines.
+     `flow-root` contains the float so the meta line below clears it even
+     when the title is short. The page's scoped `.entry-title-row { display:
+     flex }` has effective specificity 0,2,0 (class + astro-cid attribute) and
+     would tie-and-win on source order, and a flex container ignores `float`
+     on its items entirely — so the override must out-specify it. The
+     `.container` ancestor (the entry `<article class="container">`) lifts
+     these to 0,3,0 / 0,4,0 so they win regardless of stylesheet order. */
+  .container .entry-header .entry-title-row {
+    display: flow-root;
+  }
+  .container .entry-header .entry-title-row .entry-author-avatar {
+    float: left;
+    --avatar-size: 3.75rem;
+    margin: 0.15rem 0.9rem 0.3rem 0;
+  }
 }
 
 /* Verbatim archive entries (forum/correspondence/emails) — external
