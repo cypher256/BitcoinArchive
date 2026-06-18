@@ -238,4 +238,27 @@ const cardAvatarSlug = isEditorialType ? 'bitcoin-institute' : authorParticipant
     margin: 0;
     line-height: 1.6;
   }
+  /* On narrow screens let a long card title wrap around the author avatar
+     instead of being trapped in the column beside it — the same fix as the
+     entry-header title row. Float the avatar and switch the row to
+     flow-root so the title flows around it (first line beside the icon, the
+     rest full width underneath). The card avatar is already small, so it is
+     not enlarged here. flow-root contains the float so the byline row below
+     clears it.
+
+     No vertical margin: the avatar (24px) is a hair shorter than one title
+     line (line-height 1.4 x 1.15rem = 25.76px), so with zero top/bottom
+     margin its float box stays within line 1 and the second line wraps back
+     to full width underneath. Any vertical margin pushed the float box past
+     one line-height and dragged line 2 in beside the avatar too. At this
+     size the avatar also reads as vertically centred on line 1 on its own. */
+  @media (max-width: 767px) {
+    .card-title-row {
+      display: flow-root;
+    }
+    .card-title-row :global(.card-author-avatar) {
+      float: left;
+      margin: 0 0.5rem 0 0;
+    }
+  }
 </style>
