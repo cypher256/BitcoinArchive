@@ -137,6 +137,31 @@ function generateMidDotVariants(canonical) {
 const MID_DOT_VARIANTS = generateMidDotVariants(ALL_CANONICAL_JA);
 
 // -------------------------------------------------------------------------
+// Known katakana misspellings that are NOT middle-dot variants.
+//
+// generateMidDotVariants only permutes middle dots (・), so a phonetic
+// drift — a dropped 促音「ッ」, a long-vowel slip, etc. — is never
+// generated and slips through until a human catches it.
+//
+// Past incident (2026-06-19): 「サスマン」 was used for Len Sassaman in 6
+// places across 4 JA files while the canonical entry in participants.ts is
+// 「サッサマン」 (the 促音「ッ」 was dropped). Both forms are katakana and
+// neither is a middle-dot variant of the other, so nothing flagged it.
+//
+// Curate such variants here as [variant, canonical]. Each entry is folded
+// into MID_DOT_VARIANTS and detected by the same body scan (which strips
+// every canonical name from the line first, so a correct 「サッサマン」 on
+// the line never false-fires on its 「サマン」 tail).
+// -------------------------------------------------------------------------
+const KNOWN_MISSPELLINGS = [
+  ['サスマン', 'サッサマン'], // Len Sassaman — dropped 促音「ッ」
+];
+for (const [variant, canonical] of KNOWN_MISSPELLINGS) {
+  if (ALL_CANONICAL_JA.has(variant)) continue; // never flag a real name
+  if (!MID_DOT_VARIANTS.has(variant)) MID_DOT_VARIANTS.set(variant, canonical);
+}
+
+// -------------------------------------------------------------------------
 // First-name detection map
 //
 // Catches the case where JA prose uses a bare first name (e.g., "Gavin が…")

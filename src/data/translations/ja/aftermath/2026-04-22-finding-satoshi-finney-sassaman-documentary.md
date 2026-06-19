@@ -74,6 +74,6 @@ translationStatus: complete
 
 個別の構成仮説は別エントリで展開している: [ハル・フィニー＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)と[レン・サッサマン＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)。共作という読みは、フィニーとサッサマンの間で成立していたとされる協力関係 ― 記録上の書面に残っていない ― を説明する追加負担を伴うもので、本作固有の主張部分はそこにある。
 
-本 2026 年ドキュメンタリーは[サスマン同定仮説エントリ](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)から、同仮説が秤にかける「サスマン・フィニー対」についての最新のジャーナリスト的提唱として参照される。
+本 2026 年ドキュメンタリーは[サッサマン同定仮説エントリ](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)から、同仮説が秤にかける「サッサマン・フィニー対」についての最新のジャーナリスト的提唱として参照される。
 
 *[編者注：制作会社、配信プラットフォーム、上映時間等の情報は本記事執筆時点で未確認。二次資料の Decrypt 要約と The Block / IMDb の補助参照を起点に、後続の報道で逐次補強する予定。]*

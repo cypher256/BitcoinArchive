@@ -49,10 +49,10 @@ DHS が記録を出さなかったため、マーフィーは 2025 年 4 月 7 �
 
 **サトシ特定の系譜上の位置づけ:**
 
-本件は 2024 年以降に相次いだジャーナリズム / ドキュメンタリー系のサトシ特定とは性質が異なる。 [2024 年 HBO ドキュメンタリーによるピーター・トッド特定](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)、 [2026 年ニューヨーク・タイムズのカレイロウ調査によるアダム・バック特定](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)、 [2026 年映画『Finding Satoshi』のフィニー=サスマン仮説](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、いずれも文体計量や状況証拠を根拠に候補を名指す形であり、存命の当事者はそろって、自分は本人ではないと否定した。一方マーフィーの FOIA 訴訟は、政府機関職員自身による公の場での発言という別種の手がかりを起点とし、連邦 FOIA の枠組みを使って関連内部文書の開示を強制的に求める。サウドが示唆した通りの記録が DHS に存在し、裁判所命令で開示されれば、文体計量による推論を経ずに 2019 年面談の具体的な事実関係が判明する可能性がある。
+本件は 2024 年以降に相次いだジャーナリズム / ドキュメンタリー系のサトシ特定とは性質が異なる。 [2024 年 HBO ドキュメンタリーによるピーター・トッド特定](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)、 [2026 年ニューヨーク・タイムズのカレイロウ調査によるアダム・バック特定](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)、 [2026 年映画『Finding Satoshi』のフィニー=サッサマン仮説](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、いずれも文体計量や状況証拠を根拠に候補を名指す形であり、存命の当事者はそろって、自分は本人ではないと否定した。一方マーフィーの FOIA 訴訟は、政府機関職員自身による公の場での発言という別種の手がかりを起点とし、連邦 FOIA の枠組みを使って関連内部文書の開示を強制的に求める。サウドが示唆した通りの記録が DHS に存在し、裁判所命令で開示されれば、文体計量による推論を経ずに 2019 年面談の具体的な事実関係が判明する可能性がある。
 
 2026 年半ばの時点で本件は初期段階の訴訟にとどまり、文書の強制開示には至っていない。開示請求が認められるかは、連邦地裁が FOIA 法と、 DHS が主張しうる国家安全保障 / 個人情報保護例外との関係をどう読み解くかにかかっている。
 
-本 FOIA 訴訟は [2026 年「Finding Satoshi」フィニー・サスマンドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)から、同ドキュメンタリーの構成が拠り所とする 2024 年以降のサトシ同定問題の証拠経路の一つ ― 政府記録に対する FOIA 召喚経路 ― として参照される。
+本 FOIA 訴訟は [2026 年「Finding Satoshi」フィニー・サッサマンドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)から、同ドキュメンタリーの構成が拠り所とする 2024 年以降のサトシ同定問題の証拠経路の一つ ― 政府記録に対する FOIA 召喚経路 ― として参照される。
 
 *[編者注：本エントリーは裁判の進行に合わせて更新する。 2019 年のサウド発言、 2025 年 2 月 12 日の FOIA 請求、 2025 年 4 月 7 日の提訴は本記事の二次資料に記録されているが、面談対象とされた 4 名の身元は公開報道では一切明らかにされていない。]*
