@@ -857,6 +857,40 @@ th {
   margin: 0;
 }
 
+/* Horizontal-scroll affordance (tables, mermaid, code blocks).
+   iOS and Android hide the scrollbar until you actually drag, so an
+   overflowing block gives no standing hint that there's more to the side.
+   The inline script in BaseLayout tags each scroller with
+   `data-scroll="right|left|both|none"` from its scroll position; here we
+   fade the edge(s) that still have content off-screen, so the content
+   visibly dissolves toward the scrollable side and the cue clears the
+   moment that end is reached. A mask (not a margin or extra element) leaves
+   layout, borders box model and the entry-title wrap untouched. Pure CSS
+   can't answer "is there more this way" without the scroll position, hence
+   the JS-set attribute; with no JS the attribute is absent, no mask
+   applies, and the block scrolls plainly as before. Charts (d3) are
+   excluded — they size to the container and never scroll horizontally. */
+.figure-block[data-kind="mermaid"],
+.figure-block[data-kind="table"],
+pre {
+  --scroll-fade: 28px;
+}
+.figure-block[data-scroll="right"],
+pre[data-scroll="right"] {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - var(--scroll-fade)), transparent);
+          mask-image: linear-gradient(to right, #000 calc(100% - var(--scroll-fade)), transparent);
+}
+.figure-block[data-scroll="left"],
+pre[data-scroll="left"] {
+  -webkit-mask-image: linear-gradient(to left, #000 calc(100% - var(--scroll-fade)), transparent);
+          mask-image: linear-gradient(to left, #000 calc(100% - var(--scroll-fade)), transparent);
+}
+.figure-block[data-scroll="both"],
+pre[data-scroll="both"] {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 var(--scroll-fade), #000 calc(100% - var(--scroll-fade)), transparent);
+          mask-image: linear-gradient(to right, transparent, #000 var(--scroll-fade), #000 calc(100% - var(--scroll-fade)), transparent);
+}
+
 /* Utility */
 .container {
   max-width: var(--max-width-read);

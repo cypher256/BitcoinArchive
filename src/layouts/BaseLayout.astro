@@ -160,5 +160,60 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
       <slot />
     </main>
     <Footer lang={lang} />
+    {/*
+      Horizontal-scroll affordance. iOS/Android hide the scrollbar until you
+      drag, so an overflowing table / mermaid / code block gives no hint that
+      there's more to the side. Tag each scroller with
+      data-scroll=right|left|both|none from its scroll position; global.css
+      then fades the edge(s) that still have off-screen content. Progressive
+      enhancement: with no JS the attribute is absent and the block scrolls
+      plainly. Charts (d3) are excluded — they size to fit and never scroll.
+    */}
+    <script>
+      (() => {
+        const sel =
+          '.figure-block[data-kind="mermaid"], .figure-block[data-kind="table"], pre';
+        const update = (el) => {
+          const max = el.scrollWidth - el.clientWidth;
+          if (max <= 2) {
+            el.setAttribute('data-scroll', 'none');
+            return;
+          }
+          const x = el.scrollLeft;
+          el.setAttribute(
+            'data-scroll',
+            x <= 2 ? 'right' : x >= max - 2 ? 'left' : 'both',
+          );
+        };
+        const els = Array.from(document.querySelectorAll(sel));
+        if (!els.length) return;
+        const ro =
+          'ResizeObserver' in window
+            ? new ResizeObserver((entries) =>
+                entries.forEach((e) => update(e.target)),
+              )
+            : null;
+        for (const el of els) {
+          update(el);
+          let ticking = false;
+          el.addEventListener(
+            'scroll',
+            () => {
+              if (ticking) return;
+              ticking = true;
+              requestAnimationFrame(() => {
+                ticking = false;
+                update(el);
+              });
+            },
+            { passive: true },
+          );
+          ro && ro.observe(el);
+        }
+        addEventListener('resize', () => els.forEach(update), { passive: true });
+        // Tables can reflow once web fonts load; re-measure when ready.
+        if (document.fonts) document.fonts.ready.then(() => els.forEach(update));
+      })();
+    </script>
   </body>
 </html>
