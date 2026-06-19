@@ -303,6 +303,10 @@ const titleAvatarSlug = isEditorialType ? 'bitcoin-institute' : titleAvatarParti
       )}
     </nav>
   </article>
+
+  {isEditorialType && (
+    <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-embeds.js'}></script>
+  )}
 </BaseLayout>
 
 <style>
