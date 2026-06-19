@@ -1,5 +1,5 @@
 ---
-title: "Was Adam Back Satoshi? Examining the Hashcash inventor hypothesis"
+title: "Was Adam Back Satoshi? — Hashcash's inventor, Satoshi's first contact, the NYT's top stylometric match"
 date: 2026-04-08T00:00:00Z
 type: "analysis"
 source: "wikipedia"

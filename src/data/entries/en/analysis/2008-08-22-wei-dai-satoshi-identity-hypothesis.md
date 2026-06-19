@@ -1,5 +1,5 @@
 ---
-title: "Was Wei Dai Satoshi? Examining the b-money author and Crypto++ creator hypothesis"
+title: "Was Wei Dai Satoshi? — author of b-money, his Crypto++ shipped inside Bitcoin v0.1"
 date: 2008-08-22T00:00:00Z
 type: "analysis"
 source: "wikipedia"

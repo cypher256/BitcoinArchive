@@ -1,5 +1,5 @@
 ---
-title: "ニック・サボはサトシだったのか — Bit Gold の系譜と文体計量論点を検証する"
+title: "ニック・サボはサトシだったのか — Bit Gold を構想し、サトシ登場の数か月前に実装者を募った男"
 date: 2013-12-05T00:00:00Z
 type: "analysis"
 source: "wikipedia"

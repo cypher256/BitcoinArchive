@@ -1,5 +1,5 @@
 ---
-title: "Was Hal Finney Satoshi? Examining the RPOW author and first-recipient hypothesis"
+title: "Was Hal Finney Satoshi? — RPOW's author, with a real Satoshi Nakamoto living blocks from his door"
 date: 2014-03-25T00:00:00Z
 type: "analysis"
 source: "wikipedia"

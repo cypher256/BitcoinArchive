@@ -1,5 +1,5 @@
 ---
-title: "Was Nick Szabo Satoshi? Examining the Bit Gold lineage and stylometric arguments"
+title: "Was Nick Szabo Satoshi? — Bit Gold's architect, who asked for coding help months before Satoshi appeared"
 date: 2013-12-05T00:00:00Z
 type: "analysis"
 source: "wikipedia"

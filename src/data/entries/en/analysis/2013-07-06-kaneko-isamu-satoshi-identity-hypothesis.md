@@ -1,5 +1,5 @@
 ---
-title: "Was Kaneko Isamu Satoshi? Examining the Winny developer hypothesis"
+title: "Was Kaneko Isamu Satoshi? — the only Japanese-named candidate, who built Winny, an anonymous file-sharing network"
 date: 2013-07-06T00:00:00Z
 type: "analysis"
 source: "wikipedia"

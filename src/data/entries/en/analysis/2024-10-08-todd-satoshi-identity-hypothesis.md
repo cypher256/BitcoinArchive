@@ -1,5 +1,5 @@
 ---
-title: "Was Peter Todd Satoshi? Examining HBO's 2024 documentary claim"
+title: "Was Peter Todd Satoshi? — a reply that seemed to finish Satoshi's thought, two days before Satoshi vanished"
 date: 2024-10-08T00:00:00Z
 type: "analysis"
 source: "hbo"

@@ -1,5 +1,5 @@
 ---
-title: "アダム・バックはサトシだったのか — Hashcash 発明者をめぐる正体仮説"
+title: "アダム・バックはサトシだったのか — Hashcash を発明し、サトシが最初に連絡した相手、NYT が文体最有力に挙げた男"
 date: 2026-04-08T00:00:00Z
 type: "analysis"
 source: "wikipedia"
