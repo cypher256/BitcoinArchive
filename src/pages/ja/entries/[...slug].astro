@@ -21,6 +21,7 @@ import NlsExchangeRate from '../../../components/NlsExchangeRate.astro';
 import StylometricDistanceHistogram from '../../../components/StylometricDistanceHistogram.astro';
 import BitcoinForkGenealogy from '../../../components/BitcoinForkGenealogy.astro';
 import SupplyCurveComparison from '../../../components/SupplyCurveComparison.astro';
+import SupplyCurveAnimated from '../../../components/SupplyCurveAnimated.astro';
 import DesignSeriesNav from '../../../components/DesignSeriesNav.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from '../../../i18n/utils';
@@ -191,6 +192,10 @@ const titleAvatarSlug = isEditorialType ? 'bitcoin-institute' : titleAvatarParti
 
     {entry.id.includes('fixed-supply-vs-adjustable-money') && (
       <SupplyCurveComparison lang={lang} />
+    )}
+
+    {entry.id.includes('bitcoin-monetary-design') && (
+      <SupplyCurveAnimated lang={lang} />
     )}
 
     {entry.data.type === 'design' && (

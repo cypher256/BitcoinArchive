@@ -43,6 +43,7 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
 
     <section class="detail-section">
       <h2>{t('chart.supplyTitle' as any)}</h2>
+      <div class="supply-chart-controls"><button id="supply-replay" class="replay-btn" type="button">↻ Replay</button></div>
       <div id="supply-chart" class="supply-chart-container"></div>
       <script type="application/json" id="supply-data" set:html={JSON.stringify(supply)} />
     </section>
@@ -101,6 +102,7 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
 </BaseLayout>
 
 <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 
 <script is:inline>
 (function() {
@@ -114,7 +116,29 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
     var data = JSON.parse(dataEl.textContent);
     var schedule = data.schedule;
 
-    function draw() {
+    function findPeriod(year) {
+      for (var i = schedule.length - 1; i >= 0; i--) {
+        if (year >= schedule[i].year) return schedule[i];
+      }
+      return schedule[0];
+    }
+    function interpSupply(year) {
+      for (var i = 0; i < schedule.length - 1; i++) {
+        if (year >= schedule[i].year && year <= schedule[i + 1].year) {
+          var t = (year - schedule[i].year) / (schedule[i + 1].year - schedule[i].year);
+          return schedule[i].cumulativeSupply + t * (schedule[i + 1].cumulativeSupply - schedule[i].cumulativeSupply);
+        }
+      }
+      return schedule[schedule.length - 1].cumulativeSupply;
+    }
+
+    function draw(domEnd, interactive) {
+      domEnd = (domEnd == null) ? 2140 : domEnd;
+      function supUpTo(de) {
+        var a = schedule.filter(function(d) { return d.year <= de; }).map(function(d) { return { year: d.year, cumulativeSupply: d.cumulativeSupply }; });
+        a.push({ year: de, cumulativeSupply: interpSupply(de) });
+        return a;
+      }
       container.innerHTML = '';
       var rect = container.getBoundingClientRect();
       var W = rect.width || 600;
@@ -126,7 +150,7 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
       var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-      var x = d3.scaleLinear().domain([2009, 2140]).range([0, w]);
+      var x = d3.scaleLinear().domain([2009, domEnd]).range([0, w]);
       var y = d3.scaleLinear().domain([0, 21000000]).range([h, 0]);
       var yReward = d3.scaleLog().domain([0.00000001, 50]).range([h, 0]).clamp(true);
 
@@ -174,25 +198,25 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
       gradient.append('stop').attr('offset', '0%').attr('stop-color', '#b45309').attr('stop-opacity', 0.25);
       gradient.append('stop').attr('offset', '100%').attr('stop-color', '#b45309').attr('stop-opacity', 0.02);
 
-      g.append('path').datum(schedule).attr('fill', 'url(#supply-gradient)').attr('d', area);
+      g.append('path').datum(supUpTo(domEnd)).attr('fill', 'url(#supply-gradient)').attr('d', area);
 
       var line = d3.line()
         .x(function(d) { return x(d.year); })
         .y(function(d) { return y(d.cumulativeSupply); })
         .curve(d3.curveMonotoneX);
 
-      g.append('path').datum(schedule)
+      g.append('path').datum(supUpTo(domEnd))
         .attr('fill', 'none').attr('stroke', '#b45309').attr('stroke-width', 2).attr('d', line);
 
       // Block reward step line (right Y axis)
-      var rewardData = schedule.filter(function(d) { return d.reward > 0; });
+      var rewardData = schedule.filter(function(d) { return d.reward > 0 && d.year <= domEnd; });
       var rewardSteps = [];
       for (var i = 0; i < rewardData.length; i++) {
         rewardSteps.push({ year: rewardData[i].year, reward: rewardData[i].reward });
         if (i + 1 < rewardData.length) {
           rewardSteps.push({ year: rewardData[i + 1].year, reward: rewardData[i].reward });
         } else {
-          rewardSteps.push({ year: 2140, reward: rewardData[i].reward });
+          rewardSteps.push({ year: domEnd, reward: rewardData[i].reward });
         }
       }
 
@@ -211,7 +235,8 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
           .attr('r', 3.5).attr('fill', '#6366f1').attr('stroke', '#fff').attr('stroke-width', 1);
       });
 
-      // Interactive overlay + tooltip
+      // Interactive overlay + tooltip: only after the animation (disabled while animating)
+      if (interactive) {
       container.style.position = 'relative';
       var tooltip = d3.select(container).append('div')
         .style('position', 'absolute').style('pointer-events', 'none').style('opacity', 0)
@@ -224,23 +249,6 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
         .attr('y1', 0).attr('y2', h)
         .attr('stroke', 'var(--color-text-muted)').attr('stroke-dasharray', '3,3')
         .attr('stroke-opacity', 0).attr('pointer-events', 'none');
-
-      function findPeriod(year) {
-        for (var i = schedule.length - 1; i >= 0; i--) {
-          if (year >= schedule[i].year) return schedule[i];
-        }
-        return schedule[0];
-      }
-
-      function interpSupply(year) {
-        for (var i = 0; i < schedule.length - 1; i++) {
-          if (year >= schedule[i].year && year <= schedule[i + 1].year) {
-            var t = (year - schedule[i].year) / (schedule[i + 1].year - schedule[i].year);
-            return schedule[i].cumulativeSupply + t * (schedule[i + 1].cumulativeSupply - schedule[i].cumulativeSupply);
-          }
-        }
-        return schedule[schedule.length - 1].cumulativeSupply;
-      }
 
       g.append('rect').attr('width', w).attr('height', h).attr('fill', 'transparent')
         .style('cursor', 'crosshair')
@@ -272,6 +280,7 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
           crosshair.attr('stroke-opacity', 0);
           tooltip.style('opacity', 0);
         });
+      }
 
       // Current year marker
       var now = new Date().getFullYear();
@@ -283,11 +292,30 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
         .attr('font-size', '10px').attr('fill', '#059669').text(now);
     }
 
-    draw();
+    // Stretch the x domain from 2009 to 2140 and play once on scroll-in (shared runtime A).
+    // interactive=false while animating (tooltip disabled); interactive=true on completion.
+    var replayFn = null;
+    function play() {
+      replayFn = window.BAChartAnim.playOnScroll(container, {
+        duration: 5600,
+        onFrame: function(p) {
+          if (p >= 1) { draw(2140, true); return; }
+          draw(2009 + Math.pow(p, 1.8) * (2140 - 2009), false); // spend more time on the early steep rise
+        },
+      });
+    }
+    draw(2140, true); // default: the full, completed chart (self-contained, no regression)
+    (function arm(n) {
+      if (window.BAChartAnim) play();
+      else if ((n || 0) < 40) setTimeout(function() { arm((n || 0) + 1); }, 50);
+    })();
+    var replayBtn = document.getElementById('supply-replay');
+    if (replayBtn) replayBtn.addEventListener('click', function() { if (replayFn) replayFn(); });
+
     var timer;
     window.addEventListener('resize', function() {
       clearTimeout(timer);
-      timer = setTimeout(draw, 250);
+      timer = setTimeout(function() { draw(2140, true); }, 250);
     });
   }
   initSupplyChart();
@@ -315,6 +343,21 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
     border-bottom: 1px solid var(--color-border);
     padding-bottom: 0.5rem;
   }
+  .supply-chart-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.4rem;
+  }
+  .replay-btn {
+    padding: 3px 12px;
+    font-size: 0.78rem;
+    background: var(--color-bg);
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .replay-btn:hover { color: var(--color-text); }
   .supply-chart-container {
     border: 1px solid var(--color-border);
     border-radius: 4px;
