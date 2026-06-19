@@ -125,6 +125,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
 <div class="satoshi-timeline">
   <h2>{l.title}</h2>
   <p class="subtitle">{l.subtitle}</p>
+  <div class="st-controls"><button class="st-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
 
   <section>
     <h3>{l.swimlaneTitle}</h3>
@@ -159,6 +160,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     eventsSuffix: l.eventsSuffix,
   })} />
   <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
 <style>
@@ -198,6 +200,21 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
   margin-top: 0.8em;
   font-style: italic;
 }
+.satoshi-timeline .st-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5em;
+}
+.satoshi-timeline .st-replay-btn {
+  padding: 3px 10px;
+  font-size: 0.78rem;
+  background: var(--color-bg);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-divider);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.satoshi-timeline .st-replay-btn:hover { color: var(--color-text); }
 </style>
 
 <script is:inline>
@@ -666,6 +683,63 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     // call render() which clears each panel before redrawing, so we never
     // accumulate stale SVG layers.
     render();
+
+    // --- Reveal: a left-to-right time-cursor wipe across all three panels,
+    // played once on scroll-in (shared runtime A, public/scripts/chart-anim.js).
+    // A background-coloured curtain retracts rightward behind an accent
+    // playhead, so dots, lanes and the cumulative curve surface in time order.
+    // render() is untouched: curtains are overlaid afterward and removed on
+    // completion, so the default and post-animation states are the full chart.
+    var PANEL_IDS = ['satoshi-timeline-swimlane', 'satoshi-timeline-recipients', 'satoshi-timeline-cumulative'];
+    var replayFn = null;
+    var curtains = null;
+    function buildCurtains() {
+      var t = readTokens();
+      var built = [];
+      PANEL_IDS.forEach(function(id) {
+        var c = document.getElementById(id);
+        if (!c) return;
+        var svg = d3.select(c).select('svg');
+        if (svg.empty()) return;
+        var vb = (svg.attr('viewBox') || '').split(/\s+/).map(Number);
+        var W = vb[2] || c.clientWidth || 320;
+        var H = vb[3] || 200;
+        var bg = getComputedStyle(c).backgroundColor || t.tooltipBg;
+        var curtain = svg.append('rect').attr('class', 'reveal-curtain').attr('x', 0).attr('y', 0).attr('width', W).attr('height', H).attr('fill', bg);
+        var playhead = svg.append('line').attr('class', 'reveal-playhead').attr('y1', 0).attr('y2', H)
+          .attr('stroke', t.accent).attr('stroke-width', 1.5).attr('opacity', 0.9);
+        built.push({ W: W, playhead: playhead, curtain: curtain });
+      });
+      return built;
+    }
+    function clearCurtains() {
+      if (!curtains) return;
+      curtains.forEach(function(c) { c.curtain.remove(); c.playhead.remove(); });
+      curtains = null;
+    }
+    function frame(p) {
+      if (!curtains) curtains = buildCurtains();
+      if (p >= 1) { clearCurtains(); return; }
+      curtains.forEach(function(c) {
+        var px = p * c.W;
+        c.curtain.attr('x', px).attr('width', Math.max(0, c.W - px));
+        c.playhead.attr('x1', px).attr('x2', px);
+      });
+    }
+    function play() {
+      if (!window.BAChartAnim) return;
+      var anchor = document.getElementById(PANEL_IDS[0]);
+      if (!anchor) return;
+      clearCurtains();
+      replayFn = window.BAChartAnim.playOnScroll(anchor, { duration: 5200, onFrame: frame });
+    }
+    (function arm(n) {
+      if (window.BAChartAnim) play();
+      else if ((n || 0) < 40) setTimeout(function() { arm((n || 0) + 1); }, 50);
+    })();
+    var stReplay = document.querySelector('.satoshi-timeline [data-replay]');
+    if (stReplay) stReplay.addEventListener('click', function() { if (replayFn) replayFn(); });
+
     if (typeof window.matchMedia === 'function') {
       var mql = window.matchMedia('(prefers-color-scheme: dark)');
       if (mql.addEventListener) mql.addEventListener('change', render);
