@@ -1,5 +1,5 @@
 ---
-title: "Gavin Andresen recalls working with Satoshi"
+title: "Gavin Andresen recalls how Satoshi 'pulled a fast one' to make him Bitcoin's leader"
 date: 2016-05-02T00:00:00Z
 type: "article"
 source: "gavin-andresen-blog"

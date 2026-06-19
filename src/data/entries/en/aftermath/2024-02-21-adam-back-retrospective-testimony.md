@@ -1,5 +1,5 @@
 ---
-title: "Adam Back's retrospective on his early interaction with Satoshi"
+title: "Adam Back's biggest regret — he skimmed the Bitcoin whitepaper and ignored it until 2013"
 date: 2024-02-21T00:00:00Z
 type: "article"
 source: "cointelegraph"

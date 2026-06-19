@@ -1,5 +1,5 @@
 ---
-title: "サトシ・ナカモトの P2P Foundation アカウントにログイン活動（2016年） — ハッキングか本人か"
+title: "サトシの P2P Foundation アカウントが 2016 年にログインを表示 — 新規投稿はなく、2FA も無い旧アカウント"
 date: 2016-12-12T00:00:00Z
 type: "article"
 source: "p2pfoundation"

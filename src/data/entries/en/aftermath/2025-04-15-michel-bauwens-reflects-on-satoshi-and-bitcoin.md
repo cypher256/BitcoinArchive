@@ -1,5 +1,5 @@
 ---
-title: "Michel Bauwens reflects on Satoshi, Bitcoin, and the path not taken"
+title: "Michel Bauwens recalls the bitcoins Satoshi offered him — and the reply he never sent"
 date: 2025-04-15T00:00:00Z
 type: "article"
 source: "uncommons"
