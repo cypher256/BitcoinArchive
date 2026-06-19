@@ -56,6 +56,8 @@ The total supply is:
 
 The last satoshi of new issuance enters circulation around block 6,929,999 (approximately year 2140). After that block, the subsidy is zero and miners earn only transaction fees.
 
+<!-- chart: supply-animated -->
+
 ### Halving timeline
 
 ```mermaid
