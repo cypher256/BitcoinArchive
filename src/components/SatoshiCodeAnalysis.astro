@@ -55,6 +55,7 @@ const traits = analysisData.codingTraits[lang];
   <section class="analysis-section">
     <h3>{l.heatmapTitle}</h3>
     <p class="analysis-desc">{l.heatmapSub}</p>
+    <div class="ba-replay-controls"><button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
     <div id="commit-heatmap" class="chart-container"></div>
   </section>
 
@@ -102,6 +103,7 @@ const traits = analysisData.codingTraits[lang];
 
   <script type="application/json" id="satoshi-analysis-data" set:html={JSON.stringify({ ...analysisData, labels: l })} />
   <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
 <script is:inline>
@@ -424,6 +426,16 @@ const traits = analysisData.codingTraits[lang];
     } // end render()
 
     render();
+
+    // Reveal: per-panel time-cursor wipe on scroll-in (chart-anim.js wipeReveal).
+    var replayFn = null;
+    (function arm(n) {
+      if (window.BAChartAnim) {
+        replayFn = window.BAChartAnim.wipeReveal(['commit-heatmap', 'monthly-commits', 'code-growth'], { duration: 5000 });
+      } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }
+    })();
+    var rb = document.querySelector('.satoshi-analysis [data-replay]');
+    if (rb) rb.addEventListener('click', function() { if (replayFn) replayFn(); });
 
     // Theme/mode listeners — repaint all three panels on theme/mode
     // change. Each panel wipes its own container.innerHTML in render()

@@ -67,7 +67,8 @@
       }).filter(Boolean);
       if (!els.length) return function () {};
 
-      var curtains = null;
+      var self = this;
+      var duration = opts.duration || 5000;
       function solidBg(el) {
         var bg = getComputedStyle(el).backgroundColor;
         if (!bg || bg === 'transparent' || bg === 'rgba(0, 0, 0, 0)') {
@@ -84,18 +85,19 @@
           H: has ? vb[3] : (parseFloat(svg.getAttribute('height')) || rect.height || 200),
         };
       }
-      function build() {
-        var out = [];
-        els.forEach(function (el) {
+      // Each panel is wired independently so it reveals when ITS OWN element
+      // scrolls into view (panels can be spread far apart on the page).
+      function wireOne(el) {
+        var state = null;
+        function build() {
           var svg = el.querySelector('svg');
-          if (!svg) return;
+          if (!svg) return null;
           var d = dims(svg);
-          var bg = solidBg(el);
           var curtain = document.createElementNS(NS, 'rect');
           curtain.setAttribute('class', 'reveal-curtain');
           curtain.setAttribute('x', '0'); curtain.setAttribute('y', '0');
           curtain.setAttribute('width', d.W); curtain.setAttribute('height', d.H);
-          curtain.setAttribute('fill', bg);
+          curtain.setAttribute('fill', solidBg(el));
           var ph = document.createElementNS(NS, 'line');
           ph.setAttribute('class', 'reveal-playhead');
           ph.setAttribute('y1', '0'); ph.setAttribute('y2', d.H);
@@ -104,33 +106,31 @@
           ph.setAttribute('opacity', '0.9');
           svg.appendChild(curtain);
           svg.appendChild(ph);
-          out.push({ W: d.W, curtain: curtain, ph: ph });
+          return { curtain: curtain, ph: ph, W: d.W };
+        }
+        function clear() {
+          if (!state) return;
+          if (state.curtain.parentNode) state.curtain.parentNode.removeChild(state.curtain);
+          if (state.ph.parentNode) state.ph.parentNode.removeChild(state.ph);
+          state = null;
+        }
+        var replay = self.playOnScroll(el, {
+          duration: duration,
+          onFrame: function (p) {
+            if (!state) state = build();
+            if (!state) return;
+            if (p >= 1) { clear(); return; }
+            var px = p * state.W;
+            state.curtain.setAttribute('x', px);
+            state.curtain.setAttribute('width', Math.max(0, state.W - px));
+            state.ph.setAttribute('x1', px);
+            state.ph.setAttribute('x2', px);
+          },
         });
-        return out;
+        return function () { clear(); replay(); };
       }
-      function clear() {
-        if (!curtains) return;
-        curtains.forEach(function (c) {
-          if (c.curtain.parentNode) c.curtain.parentNode.removeChild(c.curtain);
-          if (c.ph.parentNode) c.ph.parentNode.removeChild(c.ph);
-        });
-        curtains = null;
-      }
-      var replay = this.playOnScroll(els[0], {
-        duration: opts.duration || 5000,
-        onFrame: function (p) {
-          if (!curtains) curtains = build();
-          if (p >= 1) { clear(); return; }
-          curtains.forEach(function (c) {
-            var px = p * c.W;
-            c.curtain.setAttribute('x', px);
-            c.curtain.setAttribute('width', Math.max(0, c.W - px));
-            c.ph.setAttribute('x1', px);
-            c.ph.setAttribute('x2', px);
-          });
-        },
-      });
-      return function () { clear(); replay(); };
+      var replays = els.map(wireOne);
+      return function () { replays.forEach(function (r) { r(); }); };
     },
   };
 })();
