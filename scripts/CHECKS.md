@@ -67,6 +67,7 @@ of truth; the role column below is a one-line pointer, not a restatement.
 | `check-ja-glossary.mjs` | JA terminology glossary + trailing long-vowel | none (`.ja-glossary-ignore`) | check + build · `check:ja-glossary` |
 | `check-description-length.mjs` | `description` length cap (per STYLE_GUIDE.md Description Policy) | none | check + build (`--strict`) · `check:description-length` |
 | `check-source-duplication.mjs` | `sourceUrl` not duplicated in `secondarySources[]` | none | check + build (`--strict`) · `check:source-duplication` |
+| `check-halving-consistency.mjs` | Embed's self-contained halving array (chart-embeds.js) matches `halvings.json` | none | check + build · `check:halving-consistency` |
 | `check-quotes.mjs` | Quote attribution chain (markers ↔ `quotes[]`) | none | check + build · `check:quotes` |
 | `check-tweet-metadata.mjs` | Tweet `xHandle` invariants | none | check + build (aggregate) |
 | `check-duplicate-ids.mjs` | Real duplicate-id collisions within a collection | none | check + build · `check:duplicate-ids` |

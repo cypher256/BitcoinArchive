@@ -1,0 +1,62 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+// Single data source: the named halving schedule. The shared drawer
+// (public/scripts/supply-curve.js) derives the full issuance schedule to ~2140
+// and is the SAME drawer the in-body embed uses — one implementation, one data
+// source. Only date + reward are needed by the drawer.
+const halvings = await import('../data/btc-chart/halvings.json').then(m => m.default);
+const halvingData = (halvings as any[]).map((h) => ({ date: h.date, reward: h.reward }));
+
+const labels = {
+  en: { replay: '↻ Replay', cap: '21,000,000 BTC (cap)' },
+  ja: { replay: '↻ リプレイ', cap: '21,000,000 BTC（上限）' },
+};
+const l = labels[lang];
+---
+
+<div class="ba-replay-controls"><button id="supply-replay" class="ba-replay-btn" type="button">{l.replay}</button></div>
+<div id="supply-chart" class="supply-chart-container"></div>
+<script type="application/json" id="supply-data" set:html={JSON.stringify({ halvings: halvingData, labels: { cap: l.cap } })} />
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
+<script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/supply-curve.js'}></script>
+
+<script is:inline>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined' || !window.BAChartAnim || !window.BASupplyCurve) { setTimeout(init, 50); return; }
+    var dataEl = document.getElementById('supply-data');
+    var container = document.getElementById('supply-chart');
+    if (!dataEl || !container) return;
+    var data = JSON.parse(dataEl.textContent);
+    window.BASupplyCurve.mount(container, {
+      halvings: data.halvings,
+      labels: data.labels,
+      replayBtn: document.getElementById('supply-replay'),
+    });
+  }
+  init();
+})();
+</script>
+
+<style>
+  .supply-chart-container {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+  .supply-chart-container :global(svg) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+</style>

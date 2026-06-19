@@ -125,7 +125,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
 <div class="satoshi-timeline">
   <h2>{l.title}</h2>
   <p class="subtitle">{l.subtitle}</p>
-  <div class="st-controls"><button class="st-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
+  <div class="ba-replay-controls"><button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
 
   <section>
     <h3>{l.swimlaneTitle}</h3>
@@ -200,21 +200,6 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
   margin-top: 0.8em;
   font-style: italic;
 }
-.satoshi-timeline .st-controls {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 0.5em;
-}
-.satoshi-timeline .st-replay-btn {
-  padding: 3px 10px;
-  font-size: 0.78rem;
-  background: var(--color-bg);
-  color: var(--color-text-muted);
-  border: 1px solid var(--color-divider);
-  border-radius: 4px;
-  cursor: pointer;
-}
-.satoshi-timeline .st-replay-btn:hover { color: var(--color-text); }
 </style>
 
 <script is:inline>

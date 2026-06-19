@@ -63,7 +63,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
         <button class="range-btn" data-range="5y">{t('chart.range5Y' as any)}</button>
         <button class="range-btn active" data-range="all">{t('chart.rangeAll' as any)}</button>
       </div>
-      <button class="chart-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button>
+      <button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button>
     </div>
   )}
   <div id={chartId} class:list={['chart-container', { mini }]}></div>
@@ -912,22 +912,6 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
   }
   .scale-btn + .scale-btn, .range-btn + .range-btn {
     border-left: 1px solid var(--color-border);
-  }
-
-  .chart-replay-btn {
-    padding: 0.25rem 0.7rem;
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    background: transparent;
-    font-family: var(--font-heading);
-    font-size: 0.78rem;
-    cursor: pointer;
-    color: var(--color-text-muted);
-    transition: all 0.15s;
-  }
-  .chart-replay-btn:hover {
-    background: var(--color-accent-bg);
-    color: var(--color-text);
   }
 
   @media (max-width: 768px) {

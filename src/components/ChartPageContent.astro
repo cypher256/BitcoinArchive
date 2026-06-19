@@ -1,0 +1,280 @@
+---
+import type { Lang } from '../i18n/ui';
+import BtcPriceChart from './BtcPriceChart.astro';
+import SupplyScheduleChart from './SupplyScheduleChart.astro';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+// Shared body for the EN + JA /chart/ pages. Both pages render this one
+// component (translations + per-card text resolve from `lang`), so the page
+// markup and CSS live in exactly one place.
+const predictions = await import('../data/btc-chart/predictions.json').then(m => m.default);
+const halvings = await import('../data/btc-chart/halvings.json').then(m => m.default);
+---
+
+<div class="container-wide chart-page">
+  <h1>{t('chart.title' as any)}</h1>
+  <p class="page-description">{t('chart.description' as any)}</p>
+
+  <section class="chart-section">
+    <BtcPriceChart lang={lang} />
+  </section>
+
+  <section class="detail-section">
+    <h2>{t('chart.halvings' as any)}</h2>
+    <div class="halvings-cards">
+      {halvings.map((h: any) => (
+        <div class:list={['halving-card', { estimated: h.estimated }]}>
+          <div class="halving-card-reward">{h.reward} <span>BTC</span></div>
+          <div class="halving-card-label">{h.label[lang]}</div>
+          <div class="halving-card-meta">
+            <span>{h.date}</span>
+            <span>#{h.block.toLocaleString()}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="detail-section">
+    <h2>{t('chart.supplyTitle' as any)}</h2>
+    <SupplyScheduleChart lang={lang} />
+  </section>
+
+  <section class="detail-section predictions-section">
+    <h2>{t('chart.predictionsTitle' as any)}</h2>
+    <div class="predictions-table-wrap">
+      <table class="predictions-table">
+        <thead>
+          <tr>
+            <th>{t('chart.predictedBy' as any)}</th>
+            <th class="pred-col-date">{t('chart.date' as any)}</th>
+            <th class="th-price">
+              <span class="th-price-line">{t('chart.target' as any)}</span>
+              <span class="th-price-line">{t('chart.actual' as any)}</span>
+            </th>
+            <th>{t('chart.hit' as any)}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {predictions.map((p: any) => {
+            const status = p.hit === null ? 'pending' : p.hit ? 'hit' : 'miss';
+            return (
+              <tr class={`pred-${status} ${p.bearish ? 'pred-bearish' : ''}`}>
+                <td>
+                  <strong>{p.predictor}</strong>
+                  <span class="pred-date-inline">
+                    {p.date.slice(0, 7)}
+                    <span class="pred-arrow">&rarr;</span>
+                    {p.targetDate.slice(0, 7)}
+                  </span>
+                  <span class="pred-quote">"{p.quote[lang]}"</span>
+                </td>
+                <td class="pred-col-date pred-date">
+                  <span>{p.date.slice(0, 7)}</span>
+                  <span class="pred-arrow">&rarr;</span>
+                  <span>{p.targetDate.slice(0, 7)}</span>
+                </td>
+                <td class="pred-price-cell">
+                  <span class="pred-price-value">${p.targetPrice.toLocaleString()}</span>
+                  <span class="pred-price-actual">{p.actualPrice ? '$' + p.actualPrice.toLocaleString() : '—'}</span>
+                </td>
+                <td class={`pred-status pred-status-${status}`}>
+                  {status === 'pending' ? t('chart.hitPending' as any) : status === 'hit' ? t('chart.hitYes' as any) : t('chart.hitNo' as any)}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="chart-disclaimer">{t('chart.disclaimer' as any)}</p>
+</div>
+
+<style>
+  .chart-page h1 {
+    margin-top: 2rem;
+  }
+  .page-description {
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+  }
+  .chart-section {
+    margin-bottom: 3rem;
+  }
+  .detail-section {
+    margin-bottom: 3rem;
+  }
+  .detail-section h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Halvings cards */
+  .halvings-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+  }
+  .halving-card {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    background: var(--color-bg);
+    text-align: center;
+    font-family: var(--font-heading);
+    transition: box-shadow 0.15s;
+  }
+  .halving-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  .halving-card.estimated {
+    opacity: 0.6;
+    border-style: dashed;
+  }
+  .halving-card-reward {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    line-height: 1.2;
+  }
+  .halving-card-reward span {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .halving-card-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin: 0.4rem 0;
+    color: var(--color-text);
+  }
+  .halving-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    font-size: 0.72rem;
+    color: var(--color-text-muted);
+  }
+
+  /* Predictions table */
+  .predictions-section {
+    margin-bottom: 3rem;
+  }
+  .chart-disclaimer {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    border-top: 1px solid var(--color-border);
+    padding-top: 1rem;
+  }
+  .predictions-table-wrap {
+    overflow-x: auto;
+  }
+  .predictions-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+  }
+  .predictions-table th {
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 2px solid var(--color-border);
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
+  .predictions-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+  }
+  .pred-quote {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-top: 0.2rem;
+  }
+  .pred-date-inline {
+    display: none;
+  }
+  .pred-date {
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+  .pred-arrow {
+    margin: 0 0.2rem;
+    color: var(--color-text-muted);
+  }
+  .predictions-table .th-price {
+    text-align: right;
+  }
+  .th-price-line {
+    display: block;
+  }
+  .pred-price-cell {
+    text-align: right;
+    white-space: nowrap;
+  }
+  .pred-price-value,
+  .pred-price-actual {
+    display: block;
+    font-weight: 600;
+  }
+  .pred-price-actual {
+    color: var(--color-text-muted);
+  }
+
+  @media (max-width: 768px) {
+    .pred-col-date {
+      display: none;
+    }
+    .pred-date-inline {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      margin-top: 0.15rem;
+    }
+  }
+  .pred-status {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .pred-status-hit { color: #059669; }
+  .pred-status-miss { color: #9ca3af; }
+  .pred-status-pending { color: #6366f1; }
+  .pred-bearish td:first-child strong::after {
+    content: ' (bearish)';
+    color: #dc2626;
+    font-weight: 400;
+    font-size: 0.75rem;
+  }
+
+  @media (max-width: 600px) {
+    .halvings-cards {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.5rem;
+    }
+    .halving-card {
+      padding: 0.75rem 0.5rem;
+    }
+    .halving-card-reward {
+      font-size: 1.1rem;
+    }
+    .pred-date {
+      white-space: normal;
+    }
+  }
+</style>
