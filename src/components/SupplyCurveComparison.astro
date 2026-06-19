@@ -62,6 +62,7 @@ const localized = {
         <button class="scale-btn active" data-scale="linear">{l.scaleLinear}</button>
         <button class="scale-btn" data-scale="log">{l.scaleLog}</button>
       </div>
+      <button class="sc-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button>
     </div>
 
     <div id="supply-curve-chart" class="chart-container"></div>
@@ -72,6 +73,7 @@ const localized = {
   <script type="application/json" id="supply-curve-data" set:html={JSON.stringify(localized)} />
   <script type="application/json" id="supply-curve-labels" set:html={JSON.stringify(l)} />
   <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
 <script is:inline>
@@ -110,7 +112,12 @@ const localized = {
 
     function seriesColor(s) { return token(s.colorVar) || '#888'; }
 
-    function draw() {
+    // animEnd: a year to reveal the curves up to (the reveal animation drives
+    // this); null draws the complete chart. While animating the x-domain stretches
+    // to animEnd, the y-domain stays fixed (computed from all points), and the
+    // hover layer is skipped.
+    function draw(animEnd) {
+      var animating = (animEnd != null);
       container.innerHTML = '';
       var T = readTokens();
 
@@ -129,7 +136,7 @@ const localized = {
       var yearRange = data.yearRange;
       var visibleSeries = data.series.filter(function(s) { return !state.hidden[s.id]; });
 
-      var x = d3.scaleLinear().domain(yearRange).range([0, w]);
+      var x = d3.scaleLinear().domain([yearRange[0], animating ? animEnd : yearRange[1]]).range([0, w]);
 
       var allValues = [];
       visibleSeries.forEach(function(s) { s.points.forEach(function(p) { allValues.push(p.index); }); });
@@ -153,6 +160,7 @@ const localized = {
 
       // Annotation vertical reference lines (1971, 2009, 2022)
       data.annotations.forEach(function(a) {
+        if (animating && a.year > animEnd) return;
         var ax = x(a.year);
         g.append('line')
           .attr('x1', ax).attr('x2', ax)
@@ -199,19 +207,24 @@ const localized = {
 
       visibleSeries.forEach(function(s) {
         var color = seriesColor(s);
+        // While animating, draw each series only up to animEnd so it grows in
+        // as the year axis sweeps past its first datapoint.
+        var pts = animating ? s.points.filter(function(p) { return p.year <= animEnd; }) : s.points;
+        if (pts.length === 0) return;
         g.append('path')
-          .datum(s.points)
+          .datum(pts)
           .attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2)
           .attr('d', line);
         // Dots at each datapoint
-        g.selectAll('.dot-' + s.id).data(s.points).enter().append('circle')
+        g.selectAll('.dot-' + s.id).data(pts).enter().append('circle')
           .attr('class', 'dot-' + s.id)
           .attr('cx', function(d) { return x(d.year); })
           .attr('cy', function(d) { return y(state.scale === 'log' && d.index <= 0 ? 0.5 : Math.max(0.5, d.index)); })
           .attr('r', 2.5).attr('fill', color);
       });
 
-      // Hover layer: crosshair + tooltip
+      // Hover layer: crosshair + tooltip — skipped during the reveal animation
+      if (!animating) {
       var tooltip = d3.select(container).append('div').attr('class', 'sc-tooltip')
         .style('position', 'absolute').style('pointer-events', 'none')
         .style('background', T.tooltipBg).style('color', T.tooltipFg)
@@ -255,6 +268,7 @@ const localized = {
           tooltip.style('opacity', 0);
           crosshair.attr('opacity', 0);
         });
+      }
     }
 
     function drawLegend() {
@@ -295,8 +309,31 @@ const localized = {
     bindControls();
     draw();
 
+    // Reveal animation: stretch the year axis from yearRange[0] to yearRange[1]
+    // and play once on scroll-in (shared runtime A, public/scripts/chart-anim.js).
+    // Each series appears as the sweep passes its first datapoint.
+    var replayFn = null;
+    function play() {
+      if (!window.BAChartAnim) return;
+      var y0 = data.yearRange[0], y1 = data.yearRange[1];
+      if (!(y1 > y0)) return;
+      replayFn = window.BAChartAnim.playOnScroll(container, {
+        duration: 4800,
+        onFrame: function(p) {
+          if (p >= 1) { draw(); return; }
+          draw(y0 + p * (y1 - y0));
+        },
+      });
+    }
+    (function arm(n) {
+      if (window.BAChartAnim) play();
+      else if ((n || 0) < 40) setTimeout(function() { arm((n || 0) + 1); }, 50);
+    })();
+    var replayBtn = container.parentElement.querySelector('[data-replay]');
+    if (replayBtn) replayBtn.addEventListener('click', function() { if (replayFn) replayFn(); });
+
     var timer;
-    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
+    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(function() { draw(); }, 250); });
 
     if (typeof window.matchMedia === 'function') {
       var mql = window.matchMedia('(prefers-color-scheme: dark)');
@@ -329,8 +366,19 @@ const localized = {
   .chart-controls {
     display: flex;
     justify-content: flex-end;
+    gap: 0.5rem;
     margin-bottom: 0.4rem;
   }
+  .sc-replay-btn {
+    padding: 3px 10px;
+    font-size: 0.78rem;
+    background: var(--color-bg);
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .sc-replay-btn:hover { color: var(--color-text); background: var(--color-accent-bg); }
   .chart-scale-btns {
     display: flex;
     gap: 0;
