@@ -1,0 +1,90 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  raceId: string;
+}
+
+const { lang, raceId } = Astro.props;
+
+// One component, many races: each race's data + bilingual labels live in a JSON
+// under src/data/races/. The shared runtime (public/scripts/bar-chart-race.js)
+// does the drawing. Add a race = add a JSON + inject <BarChartRace raceId=.../>.
+const races = import.meta.glob('../data/races/*.json', { eager: true });
+const race = (races[`../data/races/${raceId}.json`] as any)?.default;
+if (!race) throw new Error(`BarChartRace: no race data for "${raceId}"`);
+
+const l = race.labels[lang];
+const series = race.series.map((s: any) => ({ name: s.name[lang], colorToken: s.colorToken, values: s.values }));
+const chartData = { dates: race.dates, series, topN: race.topN || 8, format: 'usd-b' };
+const containerId = `race-${raceId}`;
+---
+
+<div class="ba-race">
+  <h3 class="ba-race-title">{l.title}</h3>
+  <p class="ba-race-sub">{l.subtitle}</p>
+  <div class="ba-replay-controls"><button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
+  <div id={containerId} class="ba-race-chart"></div>
+  <p class="ba-race-note">{l.note}</p>
+  <script type="application/json" id={`${containerId}-data`} is:inline set:html={JSON.stringify(chartData)} />
+</div>
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
+<script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/bar-chart-race.js'}></script>
+
+<script is:inline define:vars={{ containerId }}>
+(function() {
+  function init() {
+    if (typeof d3 === 'undefined' || !window.BAChartAnim || !window.BABarRace) { setTimeout(init, 50); return; }
+    var container = document.getElementById(containerId);
+    var dataEl = document.getElementById(containerId + '-data');
+    if (!container || !dataEl) return;
+    var data = JSON.parse(dataEl.textContent);
+    var wrap = container.closest('.ba-race');
+    window.BABarRace.mount(container, {
+      dates: data.dates,
+      series: data.series,
+      topN: data.topN,
+      format: data.format,
+      replayBtn: wrap ? wrap.querySelector('[data-replay]') : null,
+    });
+  }
+  init();
+})();
+</script>
+
+<style>
+  .ba-race {
+    margin: 2rem 0;
+  }
+  .ba-race-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .ba-race-sub {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .ba-race-chart {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-bg);
+    overflow: hidden;
+    padding: 0.5rem 0;
+  }
+  .ba-race-chart :global(svg) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .ba-race-note {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-top: 0.6rem;
+  }
+</style>

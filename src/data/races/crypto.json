@@ -1,0 +1,27 @@
+{
+  "topN": 8,
+  "labels": {
+    "en": {
+      "title": "Cryptocurrencies by market cap (2014 → 2026)",
+      "subtitle": "The top crypto assets by market value, racing year by year — Bitcoin out in front the whole way, the field behind it churning as Ethereum arrives, XRP endures, and BNB, Solana, Tether and Hyperliquid climb in.",
+      "note": "June 1 snapshot each year; market caps in USD. Data: CoinGecko, “Top 10 Cryptos 2014–2026.” A coin shown at $0 in a given year sat outside that year’s leaders."
+    },
+    "ja": {
+      "title": "時価総額で見る仮想通貨（2014〜2026）",
+      "subtitle": "時価総額上位の仮想通貨を年ごとに並べた順位争い。ビットコインが終始首位、その後ろはイーサリアムの登場、XRP の生き残り、BNB・ソラナ・テザー・Hyperliquid の台頭で入れ替わり続ける。",
+      "note": "各年 6 月 1 日時点、時価総額は米ドル。データ: CoinGecko「Top 10 Cryptos 2014–2026」。その年に $0 の銘柄は上位圏外。"
+    }
+  },
+  "dates": [2014, 2016, 2018, 2021, 2024, 2026],
+  "series": [
+    { "name": { "en": "Bitcoin", "ja": "ビットコイン" }, "colorToken": "--color-satoshi", "values": [8.09, 8.42, 127.3, 699.1, 1330, 1470] },
+    { "name": { "en": "Ethereum", "ja": "イーサリアム" }, "colorToken": "--chart-color-2", "values": [0, 1.12, 57.1, 314.5, 452.8, 241.8] },
+    { "name": { "en": "XRP", "ja": "XRP" }, "colorToken": "--chart-color-3", "values": [0.032, 0.203, 24.0, 48.1, 28.8, 82.5] },
+    { "name": { "en": "Tether", "ja": "テザー" }, "colorToken": "--chart-color-4", "values": [0, 0, 0, 0, 111.9, 188.2] },
+    { "name": { "en": "BNB", "ja": "BNB" }, "colorToken": "--chart-color-5", "values": [0, 0, 0, 54.6, 91.5, 95.5] },
+    { "name": { "en": "Solana", "ja": "ソラナ" }, "colorToken": "--chart-color-6", "values": [0, 0, 0, 0, 76.3, 47.5] },
+    { "name": { "en": "Cardano", "ja": "カルダノ" }, "colorToken": "--chart-negative", "values": [0, 0, 5.82, 55.9, 0, 0] },
+    { "name": { "en": "Dogecoin", "ja": "ドージコイン" }, "colorToken": "--chart-warning", "values": [0.032, 0, 0, 42.4, 23.0, 0] },
+    { "name": { "en": "Litecoin", "ja": "ライトコイン" }, "colorToken": "--chart-color-1", "values": [0.322, 0.218, 6.66, 0, 0, 0] }
+  ]
+}

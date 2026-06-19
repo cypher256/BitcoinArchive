@@ -1,0 +1,26 @@
+{
+  "topN": 8,
+  "labels": {
+    "en": {
+      "title": "The world’s wealthiest — and where Satoshi would rank (2013 → 2026)",
+      "subtitle": "Gates leads early, then Bezos, then Musk rockets to the first-ever trillion-dollar fortune on SpaceX’s June 2026 IPO. Alongside them the orange bar shows where Satoshi Nakamoto’s untouched holding would rank if valued at the market price.",
+      "note": "Net worth in US$ — Forbes / Bloomberg, approximate year-end. *Satoshi: the ~1,100,000 BTC mined by the Patoshi miner, valued at that year’s bitcoin price. These coins have never moved and were never spent; this is an illustrative valuation, not realised or accessible wealth."
+    },
+    "ja": {
+      "title": "世界の富豪たち ― そしてサトシの順位（2013〜2026）",
+      "subtitle": "初期はゲイツが先頭、やがてベゾス、そしてマスクが 2026 年 6 月のスペースX上場で史上初の兆ドル資産へ駆け上がる。その傍らでオレンジのバーは、サトシ・ナカモトの未使用の保有を市場価格で換算したらどの順位に入るかを示す。",
+      "note": "純資産は米ドル ― Forbes / Bloomberg のおおよその年末値。*サトシ: Patoshi マイナーが採掘した約 110 万 BTC をその年のビットコイン価格で換算したもの。これらのコインは一度も動かされず使われていない。実現した資産でも引き出せる資産でもない、あくまで参考換算。"
+    }
+  },
+  "dates": [2013, 2016, 2019, 2021, 2023, 2025, 2026],
+  "series": [
+    { "name": { "en": "Elon Musk", "ja": "イーロン・マスク" }, "colorToken": "--chart-color-2", "values": [2, 12, 22, 151, 180, 430, 1050] },
+    { "name": { "en": "Jeff Bezos", "ja": "ジェフ・ベゾス" }, "colorToken": "--chart-color-3", "values": [25, 45, 131, 177, 114, 230, 290] },
+    { "name": { "en": "Larry Ellison", "ja": "ラリー・エリソン" }, "colorToken": "--chart-negative", "values": [43, 44, 62, 93, 107, 200, 247] },
+    { "name": { "en": "Larry Page", "ja": "ラリー・ペイジ" }, "colorToken": "--chart-color-6", "values": [23, 36, 51, 92, 80, 160, 328] },
+    { "name": { "en": "Mark Zuckerberg", "ja": "マーク・ザッカーバーグ" }, "colorToken": "--chart-color-1", "values": [13, 45, 62, 97, 65, 210, 225] },
+    { "name": { "en": "Bernard Arnault", "ja": "ベルナール・アルノー" }, "colorToken": "--chart-color-4", "values": [29, 34, 76, 150, 211, 180, 164] },
+    { "name": { "en": "Bill Gates", "ja": "ビル・ゲイツ" }, "colorToken": "--chart-color-5", "values": [67, 75, 97, 124, 104, 110, 110] },
+    { "name": { "en": "Satoshi*", "ja": "サトシ*" }, "colorToken": "--color-satoshi", "values": [1, 1, 8, 51, 46, 105, 81] }
+  ]
+}

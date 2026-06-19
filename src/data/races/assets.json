@@ -1,0 +1,28 @@
+{
+  "topN": 10,
+  "labels": {
+    "en": {
+      "title": "Bitcoin among the world’s largest assets (2013 → 2026)",
+      "subtitle": "Gold towers over the field the whole way. Watch Nvidia rocket up on the AI boom, SpaceX burst in at its 2026 IPO, and Bitcoin climb from a rounding error to the company of nations’ oil giants and Big Tech.",
+      "note": "Approximate year-end market capitalisation in US$ (SpaceX shown at its private tender valuation before its June 12, 2026 Nasdaq IPO). Data: companiesmarketcap.com, 8marketcap.com, World Gold Council, CoinGecko."
+    },
+    "ja": {
+      "title": "世界の主要資産の中のビットコイン（2013〜2026）",
+      "subtitle": "金が終始すべてを圧倒する。AI ブームでエヌビディアが急騰し、スペースXが 2026 年の上場で躍り出て、ビットコインが誤差のような規模から産油大手や巨大テックと並ぶまで順位を駆け上がる。",
+      "note": "各年末のおおよその時価総額（米ドル）。スペースXは 2026 年 6 月 12 日のナスダック上場前は相対取引での評価額。データ: companiesmarketcap.com、8marketcap.com、World Gold Council、CoinGecko。"
+    }
+  },
+  "dates": [2013, 2016, 2019, 2021, 2023, 2025, 2026],
+  "series": [
+    { "name": { "en": "Gold", "ja": "金" }, "colorToken": "--color-hero-subtitle", "values": [9100, 7500, 8300, 11300, 13000, 20800, 29400] },
+    { "name": { "en": "Silver", "ja": "銀" }, "colorToken": "--chart-color-6", "values": [1300, 900, 1100, 1400, 1300, 1900, 5300] },
+    { "name": { "en": "Nvidia", "ja": "エヌビディア" }, "colorToken": "--chart-color-2", "values": [9, 37, 125, 730, 1200, 4000, 5100] },
+    { "name": { "en": "Apple", "ja": "アップル" }, "colorToken": "--chart-color-1", "values": [490, 600, 1300, 2900, 3000, 3900, 4500] },
+    { "name": { "en": "Alphabet", "ja": "Alphabet" }, "colorToken": "--chart-color-5", "values": [380, 540, 920, 1900, 1750, 2400, 4600] },
+    { "name": { "en": "Microsoft", "ja": "マイクロソフト" }, "colorToken": "--chart-color-4", "values": [310, 480, 1200, 2500, 2800, 3500, 3100] },
+    { "name": { "en": "Amazon", "ja": "アマゾン" }, "colorToken": "--chart-warning", "values": [180, 360, 920, 1700, 1570, 2400, 2870] },
+    { "name": { "en": "SpaceX", "ja": "スペースX" }, "colorToken": "--chart-color-3", "values": [0, 0, 0, 0, 0, 400, 2100] },
+    { "name": { "en": "Saudi Aramco", "ja": "サウジアラムコ" }, "colorToken": "--chart-negative", "values": [0, 0, 1700, 1900, 2100, 1800, 1700] },
+    { "name": { "en": "Bitcoin", "ja": "ビットコイン" }, "colorToken": "--color-satoshi", "values": [10, 14, 130, 900, 830, 1900, 1470] }
+  ]
+}

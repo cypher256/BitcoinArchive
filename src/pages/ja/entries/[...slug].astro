@@ -22,6 +22,7 @@ import StylometricDistanceHistogram from '../../../components/StylometricDistanc
 import BitcoinForkGenealogy from '../../../components/BitcoinForkGenealogy.astro';
 import SupplyCurveComparison from '../../../components/SupplyCurveComparison.astro';
 import DesignSeriesNav from '../../../components/DesignSeriesNav.astro';
+import BarChartRace from '../../../components/BarChartRace.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from '../../../i18n/utils';
 import Avatar from '../../../components/Avatar.astro';
@@ -247,6 +248,18 @@ const titleAvatarSlug = isEditorialType ? 'bitcoin-institute' : titleAvatarParti
 
     {entry.id.includes('newlibertystandard-first-exchange-rate') && (
       <NlsExchangeRate lang={lang} />
+    )}
+
+    {entry.id.includes('bitcoin-fork-and-altcoin-genealogy') && (
+      <BarChartRace lang={lang} raceId="crypto" />
+    )}
+
+    {entry.id.includes('bitcoin-digital-gold-structural-features') && (
+      <BarChartRace lang={lang} raceId="assets" />
+    )}
+
+    {entry.id.includes('whale-alert-satoshi-fortune') && (
+      <BarChartRace lang={lang} raceId="wealth" />
     )}
 
     {threadId && threadMessages >= 2 && (
