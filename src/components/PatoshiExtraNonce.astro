@@ -70,6 +70,7 @@ const l = labels[lang];
   <section class="analysis-section">
     <h3>{l.title}</h3>
     <p class="analysis-desc">{l.subtitle}</p>
+    <div class="ba-replay-controls"><button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
     <div id="extranonce-chart" class="chart-container"></div>
     <div class="legend">
       <span class="legend-item"><span class="legend-swatch swatch-patoshi"></span>{l.patoshi}</span>
@@ -80,6 +81,7 @@ const l = labels[lang];
 
   <script type="application/json" id="extranonce-data" set:html={JSON.stringify({ patoshiPoints, nonPatoshiPoints, labels: l })} />
   <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
 <script is:inline>
@@ -161,6 +163,18 @@ const l = labels[lang];
         .attr('r', 2.5).attr('fill', T.patoshi).attr('opacity', 0.75);
     }
     draw();
+
+    // Reveal: block-order wipe on scroll-in (chart-anim.js wipeReveal); block
+    // height is monotonic in time, so points surface in mining order.
+    var replayFn = null;
+    (function arm(n) {
+      if (window.BAChartAnim) {
+        replayFn = window.BAChartAnim.wipeReveal(['extranonce-chart'], { duration: 5000 });
+      } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }
+    })();
+    var rb = document.querySelector('.patoshi-extranonce [data-replay]');
+    if (rb) rb.addEventListener('click', function() { if (replayFn) replayFn(); });
+
     var timer;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
 
