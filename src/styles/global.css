@@ -1274,6 +1274,15 @@ p:has(> strong:only-child):has(+ .figure-outer:has([data-kind="mermaid"])) {
     float: left;
     --avatar-size: 3.75rem;
     margin: 0.15rem 0.9rem 0.3rem 0;
+    /* The floated avatar's top sits at the line-box top (above the cap line),
+       so the large circle reads a touch high against the title beside it.
+       Nudge it down visually with relative positioning, NOT margin: a relative
+       offset leaves the float's exclusion box in place, so the title wraps
+       exactly as before (first lines beside the icon, the rest underneath).
+       Extra top margin would instead push the exclusion box down and change
+       the wrap. */
+    position: relative;
+    top: 4px;
   }
 }
 

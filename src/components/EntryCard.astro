@@ -259,6 +259,13 @@ const cardAvatarSlug = isEditorialType ? 'bitcoin-institute' : authorParticipant
     .card-title-row :global(.card-author-avatar) {
       float: left;
       margin: 0 0.5rem 0 0;
+      /* Centre the icon on the title's first line. The float pins its top to
+         the line-box top (above the caps), so it reads a hair high; a small
+         relative nudge lowers it without moving the float's exclusion box, so
+         the wrap is unchanged. Vertical margin here would instead push line 2
+         in beside the avatar (see the no-vertical-margin note above). */
+      position: relative;
+      top: 1px;
     }
   }
 </style>
