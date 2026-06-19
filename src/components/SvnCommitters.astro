@@ -47,6 +47,7 @@ const l = labels[lang];
   <section class="analysis-section">
     <h3>{l.barTitle}</h3>
     <p class="analysis-desc">{l.barSub}</p>
+    <div class="ba-replay-controls"><button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
     <div id="svn-bar-chart" class="chart-container"></div>
   </section>
 
@@ -58,6 +59,7 @@ const l = labels[lang];
 
   <script type="application/json" id="svn-committers-data" set:html={JSON.stringify({ ...svnData, labels: l })} />
   <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
 <script is:inline>
@@ -226,6 +228,17 @@ const l = labels[lang];
     }
 
     rerender();
+
+    // Reveal: per-panel time-cursor wipe on scroll-in (chart-anim.js wipeReveal).
+    var replayFn = null;
+    (function arm(n) {
+      if (window.BAChartAnim) {
+        replayFn = window.BAChartAnim.wipeReveal(['svn-bar-chart', 'svn-timeline-chart'], { duration: 4600 });
+      } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }
+    })();
+    var rb = document.querySelector('.svn-committers [data-replay]');
+    if (rb) rb.addEventListener('click', function() { if (replayFn) replayFn(); });
+
     var timer;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(rerender, 250); });
 
