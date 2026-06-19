@@ -82,6 +82,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
 <div class="fork-genealogy">
   <h3>{l.title}</h3>
   <p class="chart-sub">{l.subtitle}</p>
+  <div class="ba-replay-controls"><button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
   <div class="figure-outer">
     <figure class="figure-block" data-kind="chart">
       <div id="fork-genealogy-chart" class="chart-container"></div>
@@ -97,6 +98,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     linkBase,
   })} />
   <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
 <script is:inline>
@@ -432,6 +434,17 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
       });
     }
     draw();
+
+    // Reveal: time-cursor wipe on scroll-in (chart-anim.js wipeReveal).
+    var replayFn = null;
+    (function arm(n) {
+      if (window.BAChartAnim) {
+        replayFn = window.BAChartAnim.wipeReveal(['fork-genealogy-chart'], { duration: 5200 });
+      } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }
+    })();
+    var rb = document.querySelector('.fork-genealogy [data-replay]');
+    if (rb) rb.addEventListener('click', function() { if (replayFn) replayFn(); });
+
     var timer;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 200); });
 

@@ -69,12 +69,18 @@
 
       var self = this;
       var duration = opts.duration || 5000;
+      // The curtain must match whatever the chart actually sits on. Chart
+      // containers are often transparent inside a tinted <figure> or card, so
+      // walk up to the nearest painted ancestor (works in light and dark mode)
+      // before falling back to the page background.
       function solidBg(el) {
-        var bg = getComputedStyle(el).backgroundColor;
-        if (!bg || bg === 'transparent' || bg === 'rgba(0, 0, 0, 0)') {
-          bg = getComputedStyle(document.body).backgroundColor || '#ffffff';
+        var node = el;
+        while (node && node !== document.documentElement) {
+          var bg = getComputedStyle(node).backgroundColor;
+          if (bg && bg !== 'transparent' && bg !== 'rgba(0, 0, 0, 0)') return bg;
+          node = node.parentElement;
         }
-        return bg;
+        return getComputedStyle(document.body).backgroundColor || '#ffffff';
       }
       function dims(svg) {
         var vb = (svg.getAttribute('viewBox') || '').split(/[\s,]+/).map(Number);
