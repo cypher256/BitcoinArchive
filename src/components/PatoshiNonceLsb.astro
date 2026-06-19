@@ -44,6 +44,7 @@ const l = labels[lang];
   <section class="analysis-section">
     <h3>{l.title}</h3>
     <p class="analysis-desc">{l.subtitle}</p>
+    <div class="ba-replay-controls"><button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
     <div id="nonce-lsb-chart" class="chart-container"></div>
     <div class="legend">
       <span class="legend-item"><span class="legend-swatch swatch-patoshi"></span>{l.range0_9}</span>
@@ -55,6 +56,7 @@ const l = labels[lang];
 
   <script type="application/json" id="nonce-lsb-data" set:html={JSON.stringify({ distribution: nonceLsbData.distribution, labels: l })} />
   <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
 <script is:inline>
@@ -207,6 +209,18 @@ const l = labels[lang];
     }
 
     draw();
+
+    // Reveal: left-to-right wipe on scroll-in (chart-anim.js wipeReveal); the
+    // nonce-LSB bars surface in value order behind the playhead.
+    var replayFn = null;
+    (function arm(n) {
+      if (window.BAChartAnim) {
+        replayFn = window.BAChartAnim.wipeReveal(['nonce-lsb-chart'], { duration: 4600 });
+      } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }
+    })();
+    var rb = document.querySelector('.patoshi-nonce-lsb [data-replay]');
+    if (rb) rb.addEventListener('click', function() { if (replayFn) replayFn(); });
+
     var timer;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
 
