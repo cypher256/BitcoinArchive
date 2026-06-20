@@ -105,6 +105,7 @@ breaks the build). `tool` = manual, run on demand — reusable, not spent.
 | Script | Role | Status |
 |---|---|---|
 | `algolia-index.mjs` | Push EN/JA entries to the Algolia full-text index | pipeline (build) |
+| `indexnow-submit.mjs` | After a Cloudflare deploy, ping IndexNow (Bing/Yandex/etc. — not Google) with the sitemap URLs | tool (CI: cloudflare deploy) |
 | `generate-derived-related.mjs` | Build `derived-related.json` (auto-derived relatedEntries) | pipeline (dev/build/check) |
 | `generate-derived-commentaries.mjs` | Build `derived-commentaries.json` (reverse commentary index) | pipeline (dev/build/check) |
 | `generate-git-dates.mjs` | Build `git-dates.json` (per-locale created/updated from git) | pipeline (dev/build/check; post-commit) |

@@ -57,3 +57,9 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy dist --project-name=bitcoin-institute --branch=main
+
+      - name: Ping IndexNow (Bing / Yandex / Seznam / Naver - not Google)
+        # Best-effort: the script exits 0 even on failure, so a ping problem
+        # never reddens an already-successful deploy. Reads the key from
+        # public/<key>.txt and the URLs from the built dist/ sitemap.
+        run: node scripts/indexnow-submit.mjs
