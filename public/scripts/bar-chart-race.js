@@ -26,6 +26,21 @@
     return '$' + v.toFixed(1) + 'B';
   }
 
+  // USD billions -> Japanese yen (oku / cho). The display rate is NOT defined
+  // here: it is passed in via opts.jpyRate so the rate lives in exactly one
+  // place (the BarChartRace component), used for both this conversion and the
+  // on-chart note. 1B USD = rate * 10 oku-yen; 1 cho = 10,000 oku.
+  function makeJpy(rate) {
+    return function (v) {
+      var oku = v * rate * 10;
+      if (oku >= 10000) {
+        var cho = oku / 10000;
+        return (cho >= 100 ? Math.round(cho).toLocaleString('ja-JP') : cho.toFixed(1)) + '兆円';
+      }
+      return Math.round(oku).toLocaleString('ja-JP') + '億円';
+    };
+  }
+
   window.BABarRace = {
     mount: function (container, opts) {
       opts = opts || {};
@@ -33,7 +48,8 @@
       var series = opts.series || [];
       var topN = opts.topN || 10;
       var duration = opts.duration || 14000;
-      var fmt = typeof opts.format === 'function' ? opts.format : usdB;
+      var fmt = typeof opts.format === 'function' ? opts.format
+        : (opts.format === 'jpy' && opts.jpyRate) ? makeJpy(opts.jpyRate) : usdB;
       var dateFmt = typeof opts.dateFormat === 'function' ? opts.dateFormat : function (d) { return String(Math.round(d)); };
       var N = dates.length;
       if (!N || !series.length) return function () {};
@@ -75,8 +91,22 @@
         series.forEach(function (s) { s._color = token(s.colorToken || '--chart-color-1') || '#888'; });
         W = Math.max(300, container.getBoundingClientRect().width || 680);
         narrow = W < 460;
-        if (narrow) { margin.left = 96; margin.right = 60; barH = 20; rowGap = 6; barStep = barH + rowGap; }
-        else { margin.left = 132; margin.right = 78; barH = 24; rowGap = 7; barStep = barH + rowGap; }
+        if (narrow) { margin.right = 56; barH = 20; rowGap = 6; }
+        else { margin.right = 78; barH = 24; rowGap = 7; }
+        barStep = barH + rowGap;
+        // Auto-size the left name column to the widest label so long names
+        // (e.g. マーク・ザッカーバーグ / Bernard Arnault) never clip; cap at 45%.
+        var nameFs = narrow ? 11 : 13;
+        var probe = d3.select(container).append('svg').attr('width', 0).attr('height', 0)
+          .style('position', 'absolute').style('visibility', 'hidden');
+        var maxNameW = 0;
+        series.forEach(function (s) {
+          var node = probe.append('text').attr('font-size', nameFs + 'px').attr('font-weight', 600).text(s.name).node();
+          var w = node.getComputedTextLength ? node.getComputedTextLength() : (String(s.name).length * nameFs * 0.6);
+          if (w > maxNameW) maxNameW = w;
+        });
+        probe.remove();
+        margin.left = Math.max(60, Math.min(W * 0.45, Math.ceil(maxNameW) + 14));
         iw = W - margin.left - margin.right;
         ih = topN * barStep;
         H = ih + margin.top + margin.bottom;

@@ -15,10 +15,17 @@ const races = import.meta.glob('../data/races/*.json', { eager: true });
 const race = (races[`../data/races/${raceId}.json`] as any)?.default;
 if (!race) throw new Error(`BarChartRace: no race data for "${raceId}"`);
 
+// Fixed USD->JPY display rate for the JA edition. Defined ONCE here, then used
+// both for the on-chart note text and (via chartData.jpyRate) for the value
+// formatting in the runtime — so the rate can never drift between the two.
+const JPY_PER_USD = 160;
+const isJa = lang === 'ja';
+
 const l = race.labels[lang];
 const series = race.series.map((s: any) => ({ name: s.name[lang], colorToken: s.colorToken, values: s.values }));
-const chartData = { dates: race.dates, series, topN: race.topN || 8, format: 'usd-b' };
+const chartData = { dates: race.dates, series, topN: race.topN || 8, format: isJa ? 'jpy' : 'usd-b', jpyRate: isJa ? JPY_PER_USD : null };
 const containerId = `race-${raceId}`;
+const note = isJa ? `${l.note}（1ドル＝${JPY_PER_USD}円の固定換算。各年の実勢レートではない）` : l.note;
 ---
 
 <div class="ba-race">
@@ -26,7 +33,7 @@ const containerId = `race-${raceId}`;
   <p class="ba-race-sub">{l.subtitle}</p>
   <div class="ba-replay-controls"><button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
   <div id={containerId} class="ba-race-chart"></div>
-  <p class="ba-race-note">{l.note}</p>
+  <p class="ba-race-note">{note}</p>
   <script type="application/json" id={`${containerId}-data`} is:inline set:html={JSON.stringify(chartData)} />
 </div>
 
@@ -48,6 +55,7 @@ const containerId = `race-${raceId}`;
       series: data.series,
       topN: data.topN,
       format: data.format,
+      jpyRate: data.jpyRate,
       replayBtn: wrap ? wrap.querySelector('[data-replay]') : null,
     });
   }
