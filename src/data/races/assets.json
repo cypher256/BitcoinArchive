@@ -12,6 +12,10 @@
       "note": "各年末のおおよその時価総額。スペースXは 2026 年 6 月 12 日のナスダック上場前は相対取引での評価額。データ: companiesmarketcap.com、8marketcap.com、World Gold Council、CoinGecko。"
     }
   },
+  "related": [
+    { "entry": "analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy", "anchor": "race-crypto", "label": { "en": "cryptocurrencies", "ja": "仮想通貨" } },
+    { "entry": "aftermath/2020-07-20-whale-alert-satoshi-fortune", "anchor": "race-wealth", "label": { "en": "the wealthiest people", "ja": "世界の富豪" } }
+  ],
   "dates": [2013, 2016, 2019, 2021, 2023, 2025, 2026],
   "series": [
     { "name": { "en": "Gold", "ja": "金" }, "colorToken": "--color-hero-subtitle", "values": [9100, 7500, 8300, 11300, 13000, 20800, 29400] },

@@ -12,6 +12,10 @@
       "note": "各年 6 月 1 日時点の時価総額。データ: CoinGecko「Top 10 Cryptos 2014–2026」。その年に値ゼロの銘柄は上位圏外。"
     }
   },
+  "related": [
+    { "entry": "analysis/2008-10-31-bitcoin-digital-gold-structural-features", "anchor": "race-assets", "label": { "en": "world’s largest assets", "ja": "世界の主要資産" } },
+    { "entry": "aftermath/2020-07-20-whale-alert-satoshi-fortune", "anchor": "race-wealth", "label": { "en": "the wealthiest people", "ja": "世界の富豪" } }
+  ],
   "dates": [2014, 2016, 2018, 2021, 2024, 2026],
   "series": [
     { "name": { "en": "Bitcoin", "ja": "ビットコイン" }, "colorToken": "--color-satoshi", "values": [8.09, 8.42, 127.3, 699.1, 1330, 1470] },

@@ -31,6 +31,11 @@ const note = isJa ? `${l.note}（1ドル＝${JPY_PER_USD}円の固定換算。�
 <div class="ba-race">
   <h3 class="ba-race-title">{l.title}</h3>
   <p class="ba-race-sub">{l.subtitle}</p>
+  {race.related && race.related.length > 0 && (
+    <p class="ba-race-related">{lang === 'ja' ? '関連レース: ' : 'Related races: '}{race.related.map((r: any, i: number) => (
+      <Fragment>{i > 0 ? ' · ' : ''}<a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${lang === 'ja' ? 'ja/' : ''}entries/${r.entry}/#${r.anchor}`}>{r.label[lang]}</a></Fragment>
+    ))}</p>
+  )}
   <div class="ba-replay-controls"><button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
   <div id={containerId} class="ba-race-chart"></div>
   <p class="ba-race-note">{note}</p>
@@ -75,6 +80,12 @@ const note = isJa ? `${l.note}（1ドル＝${JPY_PER_USD}円の固定換算。�
     font-size: 0.88rem;
     color: var(--color-text-muted);
     margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .ba-race-related {
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+    margin-top: -0.6rem;
     margin-bottom: 1rem;
   }
   .ba-race-chart {
