@@ -16,6 +16,10 @@
  *              so the key lives in exactly one place.
  *   - urls   : the generated sitemap in dist/ (already built with that origin)
  *
+ * Before submitting it waits (briefly, best-effort) until the key file is
+ * actually reachable at keyLocation, so a brand-new key on the first deploy is
+ * not rejected with 403 before the edge has finished propagating it.
+ *
  * Flags:
  *   --dry-run   resolve key + URLs and print the payload, but send nothing.
  */
@@ -72,6 +76,25 @@ function chunk(arr, n) {
   return out;
 }
 
+// Poll keyLocation until it serves the key (HTTP 200, body === key), so we only
+// submit once the engines could validate ownership. After a deploy the
+// production alias can lag a few seconds before serving a brand-new key file;
+// submitting first returns 403 and wastes the round. Best-effort: give up after
+// ~90s and let the caller skip rather than block the deploy.
+async function waitForKeyLive(keyLocation, key) {
+  const deadline = Date.now() + 90000;
+  let delay = 2000;
+  for (;;) {
+    try {
+      const res = await fetch(keyLocation, { cache: 'no-store' });
+      if (res.status === 200 && (await res.text()).trim() === key) return true;
+    } catch { /* transient network error — retry until the deadline */ }
+    if (Date.now() >= deadline) return false;
+    await new Promise((r) => setTimeout(r, delay));
+    delay = Math.min(Math.round(delay * 1.5), 10000);
+  }
+}
+
 async function main() {
   const key = findKey();
   if (!key) {
@@ -87,6 +110,11 @@ async function main() {
   });
   if (!urlList.length) {
     console.warn('indexnow: no sitemap URLs in dist/ — skipping (run this after the build).');
+    return;
+  }
+
+  if (!DRY && !(await waitForKeyLive(keyLocation, key))) {
+    console.warn(`indexnow: key file ${keyLocation} not reachable yet — skipping (best-effort).`);
     return;
   }
 
