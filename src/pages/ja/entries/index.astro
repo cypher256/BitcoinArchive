@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
-import { useTranslations, getDisplayEntries, absoluteUrl, findAuthorParticipant } from '../../../i18n/utils';
+import { useTranslations, getDisplayEntries, getEntries, absoluteUrl, findAuthorParticipant, translateParticipantName } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 import { existsSync, readFileSync } from 'fs';
 import { join } from 'path';
@@ -25,17 +25,34 @@ for (const entry of displayEntries) {
 const typeFacets = Array.from(typeCounts.entries()).sort((a, b) => b[1] - a[1]);
 const sourceFacets = Array.from(sourceCounts.entries()).sort((a, b) => b[1] - a[1]);
 
-// 著者名 → 参加者 slug。クライアント側の全文検索結果カードが一覧カードと
-// 同じアバターを描けるようにする (Algolia 索引は著者名のみ保持)。editorial 型は
-// クライアント側で 'bitcoin-institute' に解決する。
-const authorToSlug: Record<string, string> = {};
-for (const e of entries) {
-  const a = (e.data as any).author;
-  if (!a || authorToSlug[a] !== undefined) continue;
-  if (['article', 'analysis', 'design'].includes((e.data as any).type)) continue;
-  const ap = findAuthorParticipant(a, (e.data as any).participants || []);
-  if (ap && ap.slug) authorToSlug[a] = ap.slug;
+// クライアントに渡すマップ。全文検索結果カードを一覧カード (EntryCard) と
+// 同じ著者行・バッジで描くため (Algolia 索引は EN 形の著者名・参加者名のみ保持。
+// カタカナ表記とラベルはここで解決する)。一覧から除外される人物紹介も全文検索の
+// 対象なので、全エントリー (人物紹介を含む) から構築する。
+const allEntries = await getEntries(lang);
+// 著者文字列 → { slug, name }。slug は解決済み参加者 (findAuthorParticipant、
+// ハンドル別名込み)、name は表示形 (JA はカタカナ)。editorial エントリーも対象
+// (アバターは Bitcoin Institute に固定だが、著者行は対象人物名を出す)。
+const authorMeta: Record<string, { slug: string; name: string }> = {};
+// 参加者 slug → 表示名 (JA はカタカナ)。「↔」 の共参加者用。
+const slugToName: Record<string, string> = {};
+// エントリー種別 → ローカライズしたバッジラベル。
+const typeLabels: Record<string, string> = {};
+for (const e of allEntries) {
+  const d = e.data as any;
+  if (d.author && authorMeta[d.author] === undefined) {
+    const ap = findAuthorParticipant(d.author, d.participants || []);
+    authorMeta[d.author] = {
+      slug: ap?.slug ?? '',
+      name: translateParticipantName(ap?.name ?? d.author, ap?.slug, lang),
+    };
+  }
+  for (const p of (d.participants || [])) {
+    if (slugToName[p.slug] === undefined) slugToName[p.slug] = translateParticipantName(p.name, p.slug, lang);
+  }
+  if (d.type && typeLabels[d.type] === undefined) typeLabels[d.type] = t(`type.${d.type}` as any) || d.type;
 }
+const uiLabels = { event: t('entry.event' as any), updated: t('entry.updated' as any), biography: t('entry.biography' as any) };
 
 // Load git dates (generated at build time). git-dates.json keys each entry by id
 // and stores per-language records (en / ja). EN and JA are usually edited together
@@ -155,6 +172,12 @@ const structuredData = {
       <button type="button" id="clear-filters" class="clear-filters" hidden>絞り込みを解除</button>
     </div>
 
+    <script is:inline>
+      // Pre-paint hide: if we arrived with ?q= (Back / refresh / shared link),
+      // hide the SSR browse list before it flashes. See `.entries-searching` CSS.
+      try { if (new URLSearchParams(location.search).get('q')) document.documentElement.classList.add('entries-searching'); } catch (e) {}
+    </script>
+
     <div id="entries-list">
       {displayEntries.map((entry: any) => {
         const tid = resolveThreadId(entry);
@@ -192,7 +215,7 @@ const structuredData = {
 </BaseLayout>
 
 <script is:inline src="https://cdn.jsdelivr.net/npm/algoliasearch@4.24.0/dist/algoliasearch-lite.umd.js"></script>
-<script is:inline define:vars={{ basePath: import.meta.env.BASE_URL.replace(/\/$/, ''), indexName: 'bitcoin_archive_ja', locale: 'ja', authorToSlug }}>
+<script is:inline define:vars={{ basePath: import.meta.env.BASE_URL.replace(/\/$/, ''), indexName: 'bitcoin_archive_ja', locale: 'ja', authorMeta, slugToName, typeLabels, uiLabels }}>
 (function() {
   // ONE list, ONE set of controls — no modes, no seams.
   //   • Empty box  → browse the SSR cards (filter + sort + paginate, no Algolia).
@@ -285,27 +308,75 @@ const structuredData = {
     if (satoshiOnly && satoshiOnly.checked) f.push(['isSatoshi:true']);
     return f;
   }
+  // Match the browse EntryCard's date format (toLocaleDateString, UTC, long month).
+  function fmtDate(d) {
+    try {
+      return new Date(d).toLocaleDateString(L ? 'ja-JP' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+    } catch (e) { return ''; }
+  }
+  // A participant-page link, matching EntryCard's localePath('/participants/<slug>/').
+  function participantLink(slug, name, cls) {
+    return '<a class="' + cls + '" href="' + basePath + (L ? '/ja' : '') + '/participants/' + slug + '/">' + esc(name) + '</a>';
+  }
+  // A full-text result card. Emits EntryCard's exact markup and class names so
+  // the shared .entry-card rules in global.css render it identically to a browse
+  // card: header (date-axis label + date + type badge), avatar + title, author
+  // ↔ co-participants byline, description, and — only when the body itself
+  // matched — the highlighted .ft-snippet excerpt.
   function hitCard(h) {
     var hr = h._highlightResult || {}, sr = h._snippetResult || {};
     // Merge adjacent <mark> runs (kuromoji wraps each Japanese morpheme in its
-    // own <mark>) into one continuous highlight, so a matched phrase reads as a
-    // single block instead of a string of fragmented marks.
+    // own <mark>) into one continuous highlight.
     var title = ((hr.title && hr.title.value) || esc(h.title)).replace(/<\/mark>\s*<mark>/g, '');
-    var snip = ((sr.body && sr.body.value) || '').replace(/<\/mark>\s*<mark>/g, '');
-    var isSat = h.author && String(h.author).toLowerCase() === 'satoshi nakamoto';
-    var meta = '<span class="ft-author' + (isSat ? ' satoshi' : '') + '">' + esc(h.author) + '</span>';
-    if (h.date) meta += ' · ' + new Date(h.date).toLocaleDateString(L ? 'ja-JP' : 'en-US');
-    var avSlug = (h.type === 'article' || h.type === 'analysis' || h.type === 'design')
-      ? 'bitcoin-institute' : (authorToSlug[h.author] || '');
+    var type = h.type || '';
+    var isAnalysis = type === 'analysis' || type === 'design';
+    var isEditorial = isAnalysis || type === 'article';
+    // Date axis mirrors EntryCard: analysis/design show the editorial updated
+    // date (fallback to event date); every other type shows the event date.
+    var rawDate = isAnalysis ? (h.updatedTs || h.date) : h.date;
+    var dateStr = rawDate ? fmtDate(rawDate) : '';
+    var dateLabel = isAnalysis ? uiLabels.updated : uiLabels.event;
+    var typeLabel = typeLabels[type] || type;
+    // Byline: server-built authorMeta already ran findAuthorParticipant (incl.
+    // handle aliases) and resolved the katakana display name.
+    var am = authorMeta[h.author] || { slug: '', name: String(h.author == null ? '' : h.author) };
+    var isSat = am.slug === 'satoshi-nakamoto' || String(h.author || '').toLowerCase() === 'satoshi nakamoto';
+    var others = (h.participants || []).filter(function(p) {
+      return am.slug ? p.slug !== am.slug : p.name !== h.author;
+    });
+    // Avatar: Bitcoin Institute for editorial types, else the byline participant.
+    var avSlug = isEditorial ? 'bitcoin-institute' : am.slug;
     var avatar = !avSlug ? ''
       : avSlug === 'satoshi-nakamoto'
         ? '<span class="avatar card-author-avatar satoshi-av" aria-hidden="true">SN</span>'
         : '<img class="avatar card-author-avatar" src="' + basePath + '/avatars/' + avSlug + '.png" alt="" width="24" height="24" loading="lazy" />';
-    return '<a class="ft-hit" href="' + basePath + h.url + '">'
-      + '<div class="ft-title-row">' + avatar + '<span class="ft-title">' + title + '</span></div>'
-      + '<div class="ft-meta">' + meta + '</div>'
-      + (snip ? '<div class="ft-snippet">' + snip + '</div>' : '')
-      + '</a>';
+    // Body: always the description (same as the browse card). Add the matched
+    // body snippet only when the body itself matched — a title/description-only
+    // match then reads exactly like a browse card.
+    var snipMatched = sr.body && sr.body.matchLevel && sr.body.matchLevel !== 'none';
+    var snip = snipMatched ? String(sr.body.value).replace(/<\/mark>\s*<mark>/g, '') : '';
+    var header = '<div class="card-header">'
+      + (dateStr ? '<span class="card-date-label">' + esc(dateLabel) + '</span><time>' + esc(dateStr) + '</time>' : '')
+      + (typeLabel ? '<span class="source-badge">' + esc(typeLabel) + '</span>' : '')
+      + (type === 'biography' ? '<span class="biography-badge">' + esc(uiLabels.biography) + '</span>' : '')
+      + '</div>';
+    var authorEl = am.slug
+      ? participantLink(am.slug, am.name, 'author-link' + (isSat ? ' satoshi' : ''))
+      : '<span' + (isSat ? ' class="satoshi"' : '') + '>' + esc(am.name) + '</span>';
+    var withEl = others.length
+      ? '<span class="participants-with">&harr; ' + others.map(function(p) { return participantLink(p.slug, slugToName[p.slug] || p.name, 'participant-link'); }).join(', ') + '</span>'
+      : '';
+    var body = (h.description ? '<p class="card-description">' + esc(h.description) + '</p>' : '')
+      + (snip ? '<p class="ft-snippet">' + snip + '</p>' : '');
+    var href = basePath + h.url;
+    return '<article class="entry-card">'
+      + '<a href="' + href + '" class="card-link">'
+        + header
+        + '<div class="card-title-row">' + avatar + '<h3 class="card-title">' + title + '</h3></div>'
+      + '</a>'
+      + '<p class="card-author">' + authorEl + withEl + '</p>'
+      + (body ? '<a href="' + href + '" class="card-link">' + body + '</a>' : '')
+      + '</article>';
   }
   function renderSearch() {
     if (!hits) return;
@@ -419,6 +490,8 @@ const structuredData = {
 
   // Restore the query from the URL (Back / refresh / shared link).
   try { var q0 = new URLSearchParams(location.search).get('q'); if (q0) input.value = q0; } catch (e) {}
+  // Hand off the pre-paint hide: visibility is now owned by setMode()/list.hidden.
+  try { document.documentElement.classList.remove('entries-searching'); } catch (e) {}
   update();
 })();
 </script>
@@ -588,6 +661,14 @@ const structuredData = {
      keep the class but stay visible: count changes, list doesn't). */
   :global(.entry-card.filtered-out), :global(.entry-card.paged-out) { display: none; }
 
+  /* Pre-paint browse-list hide. The early inline script just above
+     #entries-list adds `.entries-searching` to <html> when the page loads with
+     ?q= (Back / refresh / shared link), so the SSR browse list is hidden before
+     it can paint — the cached search results render in its place with no
+     browse-list flash. The main controller then removes the class and governs
+     visibility via list.hidden, so this rule only bites on the first paint. */
+  :global(html.entries-searching #entries-list) { display: none; }
+
   .browse-more { margin-top: 1rem; text-align: center; }
   .show-more {
     padding: 0.5em 1.4em;
@@ -602,25 +683,12 @@ const structuredData = {
   .show-more:hover { border-color: var(--color-text-muted); }
   .no-results { color: var(--color-text-muted); }
 
-  /* Full-text result cards, styled to match EntryCard. Injected at runtime,
-     so they need :global() (no Astro scoped data-astro-cid attribute). */
-  :global(.ft-hit) {
-    display: block;
-    padding: 1.25rem 0;
-    border-bottom: 1px solid var(--color-border);
-    text-decoration: none;
-    color: inherit;
-  }
-  :global(.ft-hit:last-child) { border-bottom: none; }
-  :global(.ft-hit:hover .ft-title) { color: var(--color-link); }
-  :global(.ft-title-row) { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.2rem; }
-  :global(.ft-title) { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
-  :global(.ft-meta) { font-family: var(--font-heading); font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 0.3rem; }
-  :global(.ft-meta .satoshi) { color: var(--color-satoshi); font-weight: 600; }
-  :global(.ft-snippet) { font-size: 0.9rem; color: var(--color-text); line-height: 1.6; }
-  /* No padding: Japanese (kuromoji) wraps each morpheme in its own <mark>, so
-     any side padding stacks into fake gaps between characters. Background only. */
-  :global(.ft-title mark), :global(.ft-snippet mark) { background: var(--color-accent-bg); color: inherit; }
+  /* Full-text result cards reuse EntryCard's markup + class names, so their
+     look is the single shared source of truth — the `.entry-card` section in
+     global.css (styling both the SSR browse cards and these runtime-injected
+     search cards). The only page-level hook still needed is for the injected
+     "no results" message: the scoped `.no-results` above cannot reach
+     runtime-injected nodes, so a :global() copy targets them. */
   :global(#search-results .no-results) { color: var(--color-text-muted); }
 
   @media (max-width: 600px) {

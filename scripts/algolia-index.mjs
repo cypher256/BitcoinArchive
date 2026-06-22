@@ -32,6 +32,51 @@ const client = algoliasearch(APP_ID, ADMIN_KEY);
 const EN_DIR = 'src/data/entries/en';
 const JA_DIR = 'src/data/translations/ja';
 
+// Per-entry git dates (createdAt / updatedAt), produced by
+// generate-git-dates.mjs earlier in the build, keyed by entry id (dots
+// PRESERVED — unlike the URL slug, which strips them) then by language.
+// They let a full-text result card render the same date axis as the browse
+// EntryCard: analysis/design show "Updated <updatedAt>", others "Event <date>".
+const GIT_DATES = (() => {
+  try {
+    return JSON.parse(readFileSync('src/data/git-dates.json', 'utf8'));
+  } catch {
+    return {};
+  }
+})();
+
+// Parse the `participants:` YAML block into [{ name, slug }]. The index needs
+// these so a full-text result card can render the same byline as the browse
+// EntryCard (author resolved to a participant, co-participants after "↔",
+// katakana-resolved client-side). Handles both inline `- name: "X"` and the
+// `slug:` continuation line; tolerates name/slug in either order.
+function parseParticipants(fm) {
+  const lines = fm.split('\n');
+  let i = lines.findIndex((l) => /^participants:\s*$/.test(l));
+  if (i < 0) return [];
+  const out = [];
+  let cur = null;
+  const grabName = (s) => { const m = s.match(/name:\s*"?([^"\n]*?)"?\s*$/); if (m) cur.name = m[1].trim(); };
+  const grabSlug = (s) => { const m = s.match(/slug:\s*"?([^"\n]*?)"?\s*$/); if (m) cur.slug = m[1].trim(); };
+  for (i++; i < lines.length; i++) {
+    const line = lines[i];
+    if (/^\S/.test(line)) break; // dedent to the next top-level key ends the block
+    const item = line.match(/^\s*-\s*(.*)$/);
+    if (item) {
+      if (cur && cur.slug) out.push(cur);
+      cur = { name: '', slug: '' };
+      grabName(item[1]);
+      grabSlug(item[1]);
+      continue;
+    }
+    if (!cur) continue;
+    grabName(line);
+    grabSlug(line);
+  }
+  if (cur && cur.slug) out.push(cur);
+  return out;
+}
+
 function readEntries(baseDir, lang) {
   const entries = [];
 
@@ -61,10 +106,14 @@ function readEntries(baseDir, lang) {
         const source = get('source');
         const description = get('description');
         const isSatoshi = get('isSatoshi') === 'true';
+        const participants = parseParticipants(fm);
 
-        // Build URL path (match Astro's slug generation: dots are removed)
-        const slug = relPath + '/' + item.name.replace('.md', '').replaceAll('.', '');
+        // Entry id keeps dots (matches git-dates.json keys); the URL slug
+        // strips them (matches Astro's slug generation).
+        const entryId = relPath + '/' + item.name.replace(/\.md$/, '');
+        const slug = entryId.replaceAll('.', '');
         const langPrefix = lang === 'ja' ? '/ja' : '';
+        const gd = (GIT_DATES[entryId] && GIT_DATES[entryId][lang]) || {};
 
         // Biographies link to participant page instead of entry page
         const participantSlug = type === 'biography'
@@ -104,6 +153,9 @@ function readEntries(baseDir, lang) {
           description,
           body: truncatedBody,
           isSatoshi,
+          participants,
+          createdTs: gd.createdAt || '',
+          updatedTs: gd.updatedAt || '',
           url,
           lang,
         });
@@ -136,7 +188,7 @@ async function main() {
     indexSettings: {
       searchableAttributes: ['title', 'description', 'body', 'author'],
       attributesForFaceting: ['author', 'type', 'source', 'isSatoshi'],
-      attributesToRetrieve: ['title', 'date', 'author', 'url', 'description', 'type', 'isSatoshi'],
+      attributesToRetrieve: ['title', 'date', 'author', 'url', 'description', 'type', 'isSatoshi', 'participants', 'createdTs', 'updatedTs'],
       attributesToHighlight: ['title', 'body', 'description'],
       attributesToSnippet: ['body:40'],
       ranking: ['typo', 'geo', 'words', 'filters', 'proximity', 'attribute', 'exact', 'custom'],
@@ -159,7 +211,7 @@ async function main() {
     indexSettings: {
       searchableAttributes: ['title', 'description', 'body', 'author'],
       attributesForFaceting: ['author', 'type', 'source', 'isSatoshi'],
-      attributesToRetrieve: ['title', 'date', 'author', 'url', 'description', 'type', 'isSatoshi'],
+      attributesToRetrieve: ['title', 'date', 'author', 'url', 'description', 'type', 'isSatoshi', 'participants', 'createdTs', 'updatedTs'],
       attributesToHighlight: ['title', 'body', 'description'],
       attributesToSnippet: ['body:40'],
       ranking: ['typo', 'geo', 'words', 'filters', 'proximity', 'attribute', 'exact', 'custom'],
