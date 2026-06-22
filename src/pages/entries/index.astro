@@ -12,6 +12,17 @@ const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const displayEntries = collapseThreads(entries, threadCounts, threadStarters).reverse();
 
+// Facet counts over the cards actually rendered (one per thread/standalone).
+// These drive the Type / Source filter menus; counts match the visible list.
+const typeCounts = new Map<string, number>();
+const sourceCounts = new Map<string, number>();
+for (const entry of displayEntries) {
+  typeCounts.set(entry.data.type, (typeCounts.get(entry.data.type) || 0) + 1);
+  sourceCounts.set(entry.data.source, (sourceCounts.get(entry.data.source) || 0) + 1);
+}
+const typeFacets = Array.from(typeCounts.entries()).sort((a, b) => b[1] - a[1]);
+const sourceFacets = Array.from(sourceCounts.entries()).sort((a, b) => b[1] - a[1]);
+
 // Load git dates (generated at build time). git-dates.json keys each entry by id
 // and stores per-language records (en / ja). EN and JA are usually edited together
 // so the two updatedAt values are typically identical, but they diverge legitimately
@@ -69,19 +80,65 @@ const structuredData = {
 >
   <div class="container-wide">
     <h1>{t('nav.entries')}</h1>
-    <p class="page-lead">Every primary-source record in this archive, sorted chronologically. Filter by tag, type, or source to narrow.</p>
-    <div class="entries-header">
-      <p class="entry-count">{entries.length} entries</p>
-      <div class="sort-controls">
-        <button class="sort-btn active" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
-        {hasGitDates && (
-          <>
-            <button class="sort-btn" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
-            <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
-          </>
-        )}
+    <p class="page-lead">Every primary-source record in this archive. Filter by title or person, narrow by type and source, and sort — all on this page. For full-text body search, use <a href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/search/`}>{t('nav.search')}</a>.</p>
+
+    <div class="browse-toolbar">
+      <input
+        type="search"
+        id="entry-filter"
+        class="browse-search"
+        placeholder="Filter by title, person, or keyword…"
+        autocomplete="off"
+        aria-label="Filter entries by title, person, or keyword"
+      />
+      <div class="browse-row">
+        <div class="facet-group">
+          <details class="facet">
+            <summary>Type<span class="facet-badge" data-badge="type" hidden></span><span class="facet-chevron" aria-hidden="true">▾</span></summary>
+            <div class="facet-menu">
+              {typeFacets.map(([type, count]) => (
+                <label class="facet-opt">
+                  <input type="checkbox" class="facet-check" data-facet="type" value={type} />
+                  <span class="facet-label">{t(`type.${type}` as any) || type}</span>
+                  <span class="facet-count">{count}</span>
+                </label>
+              ))}
+            </div>
+          </details>
+          <details class="facet">
+            <summary>Source<span class="facet-badge" data-badge="source" hidden></span><span class="facet-chevron" aria-hidden="true">▾</span></summary>
+            <div class="facet-menu">
+              {sourceFacets.map(([source, count]) => (
+                <label class="facet-opt">
+                  <input type="checkbox" class="facet-check" data-facet="source" value={source} />
+                  <span class="facet-label">{t(`source.${source}` as any) || source}</span>
+                  <span class="facet-count">{count}</span>
+                </label>
+              ))}
+            </div>
+          </details>
+          <label class="facet-toggle">
+            <input type="checkbox" id="satoshi-only" />
+            <span>Satoshi only</span>
+          </label>
+        </div>
+        <div class="sort-controls">
+          <button class="sort-btn active" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+          {hasGitDates && (
+            <>
+              <button class="sort-btn" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+              <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
+            </>
+          )}
+        </div>
       </div>
     </div>
+
+    <div class="browse-status">
+      <p class="entry-count"><span id="result-count">{displayEntries.length}</span> entries</p>
+      <button type="button" id="clear-filters" class="clear-filters" hidden>Clear filters</button>
+    </div>
+
     <div id="entries-list">
       {displayEntries.map((entry: any) => {
         const tid = resolveThreadId(entry);
@@ -102,76 +159,172 @@ const structuredData = {
             threadCount={isThread ? msgCount : undefined}
             participants={entry.data.participants}
             entryType={entry.data.type}
+            tags={entry.data.tags}
             createdAt={gd?.createdAt}
             updatedAt={gd?.updatedAt}
           />
         );
       })}
     </div>
+    <div class="browse-more">
+      <button type="button" id="show-more" class="show-more" hidden>Show more</button>
+      <p id="no-results" class="no-results" hidden>No entries match these filters.</p>
+    </div>
   </div>
 </BaseLayout>
 
 <script is:inline>
 (function() {
-  var STORAGE_KEY = 'entries-sort';
+  var PAGE_SIZE = 60;
+  var SORT_KEY = 'entries-sort';
+
   var list = document.getElementById('entries-list');
-  var btns = document.querySelectorAll('.sort-btn');
-  if (!list || !btns.length) return;
+  var cards = list ? Array.prototype.slice.call(list.querySelectorAll('.entry-card')) : [];
+  if (!list || !cards.length) return;
 
-  function getLabel(btn) {
-    return btn.textContent.replace(/\s*[↑↓]$/, '');
+  var searchInput = document.getElementById('entry-filter');
+  var facetChecks = Array.prototype.slice.call(document.querySelectorAll('.facet-check'));
+  var satoshiOnly = document.getElementById('satoshi-only');
+  var sortBtns = Array.prototype.slice.call(document.querySelectorAll('.sort-btn'));
+  var resultCount = document.getElementById('result-count');
+  var showMore = document.getElementById('show-more');
+  var noResults = document.getElementById('no-results');
+  var clearBtn = document.getElementById('clear-filters');
+
+  var shown = PAGE_SIZE;
+  var sortState = { key: 'date', order: 'desc' };
+
+  // --- sort ---
+  function sortLabel(btn) { return btn.textContent.replace(/\s*[↑↓]$/, ''); }
+  function cardValue(card, key) {
+    if (key === 'created') return card.dataset.created || '';
+    if (key === 'updated') return card.dataset.updated || '';
+    return card.dataset.date || '';
+  }
+  function compareCards(a, b) {
+    var av = cardValue(a, sortState.key), bv = cardValue(b, sortState.key);
+    return sortState.order === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
   }
 
-  function applySort(key, order) {
-    var cards = Array.from(list.querySelectorAll('.entry-card'));
-    cards.sort(function(a, b) {
-      var av, bv;
-      if (key === 'date') { av = a.dataset.date || ''; bv = b.dataset.date || ''; }
-      else if (key === 'created') { av = a.dataset.created || ''; bv = b.dataset.created || ''; }
-      else { av = a.dataset.updated || ''; bv = b.dataset.updated || ''; }
-      return order === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+  // --- filter state ---
+  function selectedFacet(facet) {
+    var set = {};
+    facetChecks.forEach(function(c) {
+      if (c.dataset.facet === facet && c.checked) set[c.value] = true;
     });
-    cards.forEach(function(card) { list.appendChild(card); });
+    return set;
+  }
+  function isEmpty(set) { for (var k in set) { return false; } return true; }
+
+  function matches(card, tokens, types, sources, satoshi) {
+    if (satoshi && card.dataset.satoshi !== '1') return false;
+    if (!isEmpty(types) && !types[card.dataset.type]) return false;
+    if (!isEmpty(sources) && !sources[card.dataset.source]) return false;
+    if (tokens.length) {
+      var hay = card.dataset.filter || '';
+      for (var i = 0; i < tokens.length; i++) {
+        if (hay.indexOf(tokens[i]) === -1) return false;
+      }
+    }
+    return true;
   }
 
-  function activateBtn(key, order) {
-    btns.forEach(function(b) { b.classList.remove('active'); });
-    btns.forEach(function(b) {
+  function anyFilterActive(tokens, types, sources, satoshi) {
+    return tokens.length > 0 || !isEmpty(types) || !isEmpty(sources) || satoshi;
+  }
+
+  function recompute() {
+    var q = (searchInput && searchInput.value || '').trim().toLowerCase();
+    var tokens = q ? q.split(/\s+/) : [];
+    var types = selectedFacet('type');
+    var sources = selectedFacet('source');
+    var satoshi = !!(satoshiOnly && satoshiOnly.checked);
+
+    var matching = [];
+    cards.forEach(function(card) {
+      var ok = matches(card, tokens, types, sources, satoshi);
+      card.classList.toggle('filtered-out', !ok);
+      if (ok) matching.push(card);
+    });
+
+    matching.sort(compareCards);
+    matching.forEach(function(card) { list.appendChild(card); });
+    matching.forEach(function(card, i) { card.classList.toggle('paged-out', i >= shown); });
+
+    if (resultCount) resultCount.textContent = String(matching.length);
+    if (showMore) showMore.hidden = matching.length <= shown;
+    if (noResults) noResults.hidden = matching.length !== 0;
+
+    var active = anyFilterActive(tokens, types, sources, satoshi);
+    if (clearBtn) clearBtn.hidden = !active;
+
+    // Facet badge: show count of active refinements per facet group.
+    document.querySelectorAll('[data-badge]').forEach(function(badge) {
+      var facet = badge.getAttribute('data-badge');
+      var n = facet === 'type' ? Object.keys(types).length : Object.keys(sources).length;
+      if (n > 0) { badge.textContent = ' (' + n + ')'; badge.hidden = false; }
+      else { badge.hidden = true; }
+    });
+  }
+
+  function resetPageAndRecompute() { shown = PAGE_SIZE; recompute(); }
+
+  // --- events ---
+  if (searchInput) searchInput.addEventListener('input', resetPageAndRecompute);
+  facetChecks.forEach(function(c) { c.addEventListener('change', resetPageAndRecompute); });
+  if (satoshiOnly) satoshiOnly.addEventListener('change', resetPageAndRecompute);
+
+  if (showMore) showMore.addEventListener('click', function() {
+    shown += PAGE_SIZE;
+    recompute();
+  });
+
+  if (clearBtn) clearBtn.addEventListener('click', function() {
+    if (searchInput) searchInput.value = '';
+    facetChecks.forEach(function(c) { c.checked = false; });
+    if (satoshiOnly) satoshiOnly.checked = false;
+    resetPageAndRecompute();
+  });
+
+  function activateSort(key, order) {
+    sortState.key = key; sortState.order = order;
+    sortBtns.forEach(function(b) {
+      b.classList.remove('active');
       if (b.dataset.sort === key) {
         b.classList.add('active');
         b.dataset.order = order;
-        b.textContent = getLabel(b) + (order === 'asc' ? ' ↑' : ' ↓');
+        b.textContent = sortLabel(b) + (order === 'asc' ? ' ↑' : ' ↓');
+      } else {
+        b.textContent = sortLabel(b) + (b.dataset.order === 'asc' ? ' ↑' : ' ↓');
       }
     });
   }
 
-  // Restore saved sort
-  try {
-    var saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY));
-    if (saved && saved.key) {
-      activateBtn(saved.key, saved.order);
-      applySort(saved.key, saved.order);
-    }
-  } catch(e) {}
-
-  btns.forEach(function(btn) {
+  sortBtns.forEach(function(btn) {
     btn.addEventListener('click', function() {
       var key = btn.dataset.sort;
       var order = btn.dataset.order;
-      var isActive = btn.classList.contains('active');
-
-      if (isActive) {
+      if (btn.classList.contains('active')) {
         order = order === 'asc' ? 'desc' : 'asc';
-        btn.dataset.order = order;
-      } else {
-        btns.forEach(function(b) { b.classList.remove('active'); });
-        btn.classList.add('active');
       }
+      activateSort(key, order);
+      try { sessionStorage.setItem(SORT_KEY, JSON.stringify({ key: key, order: order })); } catch (e) {}
+      recompute();
+    });
+  });
 
-      btn.textContent = getLabel(btn) + (order === 'asc' ? ' ↑' : ' ↓');
-      applySort(key, order);
+  // restore saved sort
+  try {
+    var saved = JSON.parse(sessionStorage.getItem(SORT_KEY));
+    if (saved && saved.key) activateSort(saved.key, saved.order);
+  } catch (e) {}
 
-      try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify({key: key, order: order})); } catch(e) {}
+  recompute();
+
+  // Close facet dropdowns on outside click.
+  document.addEventListener('click', function(e) {
+    document.querySelectorAll('details.facet[open]').forEach(function(d) {
+      if (!d.contains(e.target)) d.removeAttribute('open');
     });
   });
 })();
@@ -182,20 +335,112 @@ const structuredData = {
   .page-lead {
     color: var(--color-text-muted);
     font-size: 0.95rem;
-    margin: 0 0 0.75rem 0;
+    margin: 0 0 1rem 0;
   }
-  .entries-header {
+
+  .browse-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+  .browse-search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.55rem 0.75rem;
+    font: inherit;
+    color: var(--color-text);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+  }
+  .browse-search::placeholder { color: var(--color-text-muted); opacity: 1; }
+  .browse-search:focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
+    border-color: var(--color-accent);
+  }
+
+  .browse-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
   }
-  .entry-count {
+  .facet-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.6rem;
     font-family: var(--font-heading);
-    font-size: 0.9rem;
-    color: var(--color-text-muted);
-    margin: 0;
+    font-size: 0.85rem;
   }
+
+  .facet { position: relative; }
+  .facet > summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.15rem;
+    cursor: pointer;
+    padding: 0.3em 0.6em;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    list-style: none;
+  }
+  .facet > summary::-webkit-details-marker { display: none; }
+  .facet > summary::marker { content: ''; }
+  .facet > summary:hover { color: var(--color-text); border-color: var(--color-text-muted); }
+  .facet[open] > summary { color: var(--color-text); border-color: var(--color-text-muted); }
+  .facet-chevron { font-size: 0.7em; transition: transform 0.15s; }
+  .facet[open] .facet-chevron { transform: rotate(180deg); }
+  .facet-badge { color: var(--color-text); font-weight: 600; }
+
+  .facet-menu {
+    position: absolute;
+    top: calc(100% + 0.35rem);
+    left: 0;
+    z-index: 30;
+    min-width: 200px;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 0.35rem;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .facet-opt {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 0.45rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--color-text);
+  }
+  .facet-opt:hover { background: var(--color-bg-alt); }
+  .facet-label { flex: 1 1 auto; }
+  .facet-count { color: var(--color-text-muted); font-variant-numeric: tabular-nums; }
+
+  .facet-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3em 0.6em;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .facet-toggle:hover { color: var(--color-text); border-color: var(--color-text-muted); }
+
   .sort-controls {
     display: flex;
     gap: 0.25rem;
@@ -211,24 +456,57 @@ const structuredData = {
     cursor: pointer;
     font-family: inherit;
     font-size: inherit;
+    white-space: nowrap;
   }
-  .sort-btn:hover {
+  .sort-btn:hover { color: var(--color-text); border-color: var(--color-text-muted); }
+  .sort-btn.active { color: var(--color-text); font-weight: 600; border-color: var(--color-text); }
+  .sort-btn:focus-visible, .facet > summary:focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
+  }
+
+  .browse-status {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .entry-count {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+  .clear-filters {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--color-link);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .clear-filters:hover { color: var(--color-link-hover); }
+
+  .entry-card.filtered-out, .entry-card.paged-out { display: none; }
+
+  .browse-more { margin-top: 1rem; text-align: center; }
+  .show-more {
+    padding: 0.5em 1.4em;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
     color: var(--color-text);
-    border-color: var(--color-text-muted);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    cursor: pointer;
   }
-  .sort-btn.active {
-    color: var(--color-text);
-    font-weight: 600;
-    border-color: var(--color-text);
-  }
-  @media (max-width: 480px) {
-    .entries-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.4rem;
-    }
-    .sort-controls {
-      flex-wrap: wrap;
-    }
+  .show-more:hover { border-color: var(--color-text-muted); }
+  .no-results { color: var(--color-text-muted); }
+
+  @media (max-width: 600px) {
+    .browse-row { flex-direction: column; align-items: stretch; }
+    .sort-controls { flex-wrap: wrap; }
   }
 </style>

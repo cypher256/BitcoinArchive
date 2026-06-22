@@ -33,9 +33,10 @@ interface Props {
   entryType?: string;
   createdAt?: string;
   updatedAt?: string;
+  tags?: string[];
 }
 
-const { id, title, date, author, source, description, isSatoshi, lang, threadId, threadCount, participants = [], entryType, createdAt, updatedAt } = Astro.props;
+const { id, title, date, author, source, description, isSatoshi, lang, threadId, threadCount, participants = [], entryType, createdAt, updatedAt, tags = [] } = Astro.props;
 // Avatar base (trailing slash so resolveAvatar can append `avatars/...`).
 // Derived here so the 16 listing callers don't each have to pass it.
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
@@ -76,6 +77,13 @@ const isSatoshiAuthor =
 // the byline participant. Decorative — the name beside it carries the link.
 const isEditorialType = entryType === 'article' || entryType === 'analysis' || entryType === 'design';
 const cardAvatarSlug = isEditorialType ? 'bitcoin-institute' : authorParticipant?.slug;
+// Lowercased haystack for the client-side quick-filter on /entries. Covers
+// the title, byline, description, and co-participant display names so a
+// reader typing a person or keyword narrows the visible list instantly,
+// without an Algolia round-trip. Full-text body search stays on Algolia.
+const filterText = [title, displayAuthor, description, ...participants.map((p) => translateParticipantName(p.name, p.slug, lang))]
+  .join(' ')
+  .toLowerCase();
 ---
 
 <article
@@ -83,6 +91,11 @@ const cardAvatarSlug = isEditorialType ? 'bitcoin-institute' : authorParticipant
   data-date={date.toISOString()}
   data-created={createdAt ?? ''}
   data-updated={updatedAt ?? ''}
+  data-type={entryType ?? ''}
+  data-source={source}
+  data-satoshi={isSatoshi ? '1' : '0'}
+  data-tags={tags.join('|')}
+  data-filter={filterText}
 >
   <a href={href} class="card-link">
     <div class="card-header">
