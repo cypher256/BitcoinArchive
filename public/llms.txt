@@ -29,7 +29,7 @@ The archive contains 3,200+ entries organized by type:
 - Sources: https://bitcoin-institute.pages.dev/sources/
 - Participants: https://bitcoin-institute.pages.dev/participants/
 - Tags: https://bitcoin-institute.pages.dev/tags/
-- Search: https://bitcoin-institute.pages.dev/search/
+- Search: https://bitcoin-institute.pages.dev/entries/
 - About: https://bitcoin-institute.pages.dev/about/
 - Price Chart: https://bitcoin-institute.pages.dev/chart/
 
@@ -38,7 +38,7 @@ The archive contains 3,200+ entries organized by type:
 - Home: https://bitcoin-institute.pages.dev/ja/
 - All Entries: https://bitcoin-institute.pages.dev/ja/entries/
 - Analyses: https://bitcoin-institute.pages.dev/ja/types/analysis/
-- Search: https://bitcoin-institute.pages.dev/ja/search/
+- Search: https://bitcoin-institute.pages.dev/ja/entries/
 - Price Chart: https://bitcoin-institute.pages.dev/ja/chart/
 
 ## Key Facts
