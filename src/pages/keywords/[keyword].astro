@@ -50,7 +50,7 @@ const definitionEntry = definitionKind === 'concept' && definitionTarget
   ? entries.find((e) => e.id === definitionTarget)
   : undefined;
 
-const searchHref = `${localePath('/search/', lang)}?q=${encodeURIComponent(keyword)}`;
+const searchHref = `${localePath('/entries/', lang)}?q=${encodeURIComponent(keyword)}`;
 
 const pageDescription =
   `Backlinks and search results for the keyword "${keyword}" — ` +

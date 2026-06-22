@@ -40,7 +40,13 @@ const t = useTranslations(lang);
         </div>
       </details>
       <a href={localePath('/about/', lang)}>{t('nav.about')}</a>
-      <a href={localePath('/search/', lang)}>{t('nav.search')}</a>
+      <a href={localePath('/entries/', lang)} class="nav-search">
+        <svg class="nav-search-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" />
+          <path d="M21 21l-4.35-4.35" />
+        </svg>
+        {t('nav.search')}
+      </a>
       <LanguageSwitch lang={lang} />
       {/*
         3-way mode toggle (light → dark → system → light …).
@@ -125,6 +131,14 @@ const t = useTranslations(lang);
     color: var(--color-text);
     text-decoration: none;
   }
+  /* Search gets a magnifying-glass icon so it reads as the find affordance,
+     distinct from the plain-text browse links. */
+  .nav-search {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .nav-search-icon { flex: 0 0 auto; }
 
   /* Browse ドロップダウン */
   .nav-dropdown {

@@ -36,7 +36,7 @@ const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
 const displayEntries = collapseThreads(filtered, threadCounts, threadStarters).reverse();
 const tagLabel = translateTag(tag, lang);
 
-const searchHref = `${localePath('/search/', lang)}?q=${encodeURIComponent(tagLabel)}`;
+const searchHref = `${localePath('/entries/', lang)}?q=${encodeURIComponent(tagLabel)}`;
 
 const pageDescription = `「${tagLabel}」タグの付いたエントリー。ビットコイン黎明期のサトシ・ナカモトの投稿・メール・関連する歴史的記録を、このトピックの下に集約。`;
 

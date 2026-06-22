@@ -35,7 +35,7 @@ const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, 
 const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
 const displayEntries = collapseThreads(filtered, threadCounts, threadStarters).reverse();
 
-const searchHref = `${localePath('/search/', lang)}?q=${encodeURIComponent(tag.replace(/-/g, ' '))}`;
+const searchHref = `${localePath('/entries/', lang)}?q=${encodeURIComponent(tag.replace(/-/g, ' '))}`;
 
 const pageDescription = `Entries tagged "${tag}" — Satoshi Nakamoto's posts, emails, and related historical records from Bitcoin's earliest days, surfaced under this topic.`;
 
