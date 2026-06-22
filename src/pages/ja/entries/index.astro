@@ -170,6 +170,10 @@ const structuredData = {
     <div class="browse-status">
       <p class="entry-count"><span id="result-count">{displayEntries.length}</span><span id="count-unit"> 件</span></p>
       <button type="button" id="clear-filters" class="clear-filters" hidden>絞り込みを解除</button>
+      <a class="algolia-attribution" href="https://www.algolia.com/" target="_blank" rel="noopener" aria-label="Algolia による検索">
+        <img class="algolia-logo algolia-logo--light" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/algolia/Algolia-logo-blue.svg`} alt="" width="79" height="18" loading="lazy" />
+        <img class="algolia-logo algolia-logo--dark" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/algolia/Algolia-logo-white.svg`} alt="" width="79" height="18" loading="lazy" />
+      </a>
     </div>
 
     <script is:inline>

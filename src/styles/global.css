@@ -722,6 +722,28 @@ blockquote[data-speaker="satoshi"] {
   }
 }
 
+/* Algolia attribution (Algolia Build plan requires the Algolia logo shown
+   next to the search results). The official 2022 logo is used unmodified: the
+   Xenon (blue) wordmark on light surfaces, the white wordmark on dark. Only
+   the height is fixed (width: auto) so the aspect ratio is never distorted,
+   and the colours are never changed -- per the Algolia brand guidance. */
+.algolia-attribution {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  opacity: 0.8;
+}
+.algolia-attribution:hover { opacity: 1; }
+.algolia-logo { height: 18px; width: auto; display: block; }
+.algolia-logo--dark { display: none; }
+:root[data-mode="dark"] .algolia-logo--light { display: none; }
+:root[data-mode="dark"] .algolia-logo--dark { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-mode="light"]) .algolia-logo--light { display: none; }
+  :root:not([data-mode="light"]) .algolia-logo--dark { display: block; }
+}
+
 code {
   font-family: var(--font-mono);
   font-size: 0.9em;
@@ -1246,7 +1268,8 @@ a[href^="//"]::after {
 .auto-linked-name::after,
 .footer-links a::after,
 nav a::after,
-.participant-link::after {
+.participant-link::after,
+.algolia-attribution::after {
   display: none !important;
 }
 
