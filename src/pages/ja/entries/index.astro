@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
-import { useTranslations, getDisplayEntries, absoluteUrl } from '../../../i18n/utils';
+import { useTranslations, getDisplayEntries, absoluteUrl, findAuthorParticipant } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 import { existsSync, readFileSync } from 'fs';
 import { join } from 'path';
@@ -24,6 +24,18 @@ for (const entry of displayEntries) {
 }
 const typeFacets = Array.from(typeCounts.entries()).sort((a, b) => b[1] - a[1]);
 const sourceFacets = Array.from(sourceCounts.entries()).sort((a, b) => b[1] - a[1]);
+
+// 著者名 → 参加者 slug。クライアント側の全文検索結果カードが一覧カードと
+// 同じアバターを描けるようにする (Algolia 索引は著者名のみ保持)。editorial 型は
+// クライアント側で 'bitcoin-institute' に解決する。
+const authorToSlug: Record<string, string> = {};
+for (const e of entries) {
+  const a = (e.data as any).author;
+  if (!a || authorToSlug[a] !== undefined) continue;
+  if (['article', 'analysis', 'design'].includes((e.data as any).type)) continue;
+  const ap = findAuthorParticipant(a, (e.data as any).participants || []);
+  if (ap && ap.slug) authorToSlug[a] = ap.slug;
+}
 
 // Load git dates (generated at build time). git-dates.json keys each entry by id
 // and stores per-language records (en / ja). EN and JA are usually edited together
@@ -82,17 +94,19 @@ const structuredData = {
 >
   <div class="container-wide">
     <h1>{t('nav.entries')}</h1>
-    <p class="page-lead">このアーカイブの全一次資料。タイトル・人物での絞り込み、種類・ソースでの絞り込み、並べ替えがこのページで完結します。本文の全文検索は <a href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/ja/search/`}>{t('nav.search')}</a> をご利用ください。</p>
+    <p class="page-lead">このアーカイブの全一次資料。入力すると本文を全文検索、種類・ソース・サトシで絞り込み、並べ替えも — すべてこのページの 1 つの一覧で行えます。</p>
 
     <div class="browse-toolbar">
-      <input
-        type="search"
-        id="entry-filter"
-        class="browse-search"
-        placeholder="タイトル・人物・キーワードで絞り込み…"
-        autocomplete="off"
-        aria-label="タイトル・人物・キーワードでエントリーを絞り込む"
-      />
+      <form id="search-form" class="browse-searchform" role="search">
+        <input
+          type="search"
+          id="entry-filter"
+          class="browse-search"
+          placeholder="本文を全文検索 — 人名・語句・本文中のことばで…"
+          autocomplete="off"
+          aria-label="全エントリーの本文を全文検索"
+        />
+      </form>
       <div class="browse-row">
         <div class="facet-group">
           <details class="facet">
@@ -124,7 +138,7 @@ const structuredData = {
             <span>サトシのみ</span>
           </label>
         </div>
-        <div class="sort-controls">
+        <div class="sort-controls" id="sort-controls">
           <button class="sort-btn active" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
           {hasGitDates && (
             <>
@@ -137,7 +151,7 @@ const structuredData = {
     </div>
 
     <div class="browse-status">
-      <p class="entry-count"><span id="result-count">{displayEntries.length}</span> 件</p>
+      <p class="entry-count"><span id="result-count">{displayEntries.length}</span><span id="count-unit"> 件</span></p>
       <button type="button" id="clear-filters" class="clear-filters" hidden>絞り込みを解除</button>
     </div>
 
@@ -168,120 +182,209 @@ const structuredData = {
         );
       })}
     </div>
+    <!-- 検索結果 (Algolia 本文全文) はここに描画。一覧と同じカード見た目。 -->
+    <div id="search-results"></div>
     <div class="browse-more">
       <button type="button" id="show-more" class="show-more" hidden>もっと見る</button>
-      <p id="no-results" class="no-results" hidden>条件に合うエントリーがありません。</p>
+      <p id="no-results" class="no-results" hidden>一致するものがありません。語数を減らすか絞り込みを解除してください。</p>
     </div>
   </div>
 </BaseLayout>
 
-<script is:inline>
+<script is:inline src="https://cdn.jsdelivr.net/npm/algoliasearch@4.24.0/dist/algoliasearch-lite.umd.js"></script>
+<script is:inline define:vars={{ basePath: import.meta.env.BASE_URL.replace(/\/$/, ''), indexName: 'bitcoin_archive_ja', locale: 'ja', authorToSlug }}>
 (function() {
-  var PAGE_SIZE = 60;
+  // ONE list, ONE set of controls — no modes, no seams.
+  //   • Empty box  → browse the SSR cards (filter + sort + paginate, no Algolia).
+  //   • Typing     → full-text search via Algolia: fetch ALL matches in one
+  //                  request, then the SAME facets (sent as facetFilters) and the
+  //                  SAME sort (applied client-side over the fetched hits) keep
+  //                  working. So Type/Source/Satoshi AND sort affect the results
+  //                  in both states; nothing visible is ever inert.
+  var BROWSE_PAGE = 60;
+  var FT_FETCH = 1000;
+  var MIN = 2;
   var SORT_KEY = 'entries-sort';
 
   var list = document.getElementById('entries-list');
   var cards = list ? Array.prototype.slice.call(list.querySelectorAll('.entry-card')) : [];
-  if (!list || !cards.length) return;
-
-  var searchInput = document.getElementById('entry-filter');
+  var input = document.getElementById('entry-filter');
+  var form = document.getElementById('search-form');
   var facetChecks = Array.prototype.slice.call(document.querySelectorAll('.facet-check'));
   var satoshiOnly = document.getElementById('satoshi-only');
   var sortBtns = Array.prototype.slice.call(document.querySelectorAll('.sort-btn'));
   var resultCount = document.getElementById('result-count');
+  var countUnit = document.getElementById('count-unit');
   var showMore = document.getElementById('show-more');
   var noResults = document.getElementById('no-results');
   var clearBtn = document.getElementById('clear-filters');
+  var searchResults = document.getElementById('search-results');
+  if (!list || !input) return;
 
-  var shown = PAGE_SIZE;
+  var L = locale === 'ja';
+  var shown = BROWSE_PAGE;
   var sortState = { key: 'date', order: 'desc' };
+  var algolia = (typeof algoliasearch !== 'undefined')
+    ? algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425') : null;
+  var hits = null, nbHits = 0;
+  var debounceTimer = null;
 
-  function sortLabel(btn) { return btn.textContent.replace(/\s*[↑↓]$/, ''); }
-  function cardValue(card, key) {
-    if (key === 'created') return card.dataset.created || '';
-    if (key === 'updated') return card.dataset.updated || '';
-    return card.dataset.date || '';
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function(c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
   }
-  function compareCards(a, b) {
-    var av = cardValue(a, sortState.key), bv = cardValue(b, sortState.key);
+  function selectedFacet(facet) {
+    var set = {};
+    facetChecks.forEach(function(c) { if (c.dataset.facet === facet && c.checked) set[c.value] = true; });
+    return set;
+  }
+  function isEmpty(o) { for (var k in o) { return false; } return true; }
+  function anyRefinement() {
+    return !isEmpty(selectedFacet('type')) || !isEmpty(selectedFacet('source')) || !!(satoshiOnly && satoshiOnly.checked);
+  }
+
+  function sortLabel(b) { return b.textContent.replace(/\s*[↑↓]$/, ''); }
+  function valOf(rec, k) {
+    if (k === 'created') return rec.createdTs || rec.dataset && rec.dataset.created || rec.date || '';
+    if (k === 'updated') return rec.updatedTs || rec.dataset && rec.dataset.updated || rec.date || '';
+    return (rec.dataset && rec.dataset.date) || rec.date || '';
+  }
+  function cmp(a, b) {
+    var av = String(valOf(a, sortState.key)), bv = String(valOf(b, sortState.key));
     return sortState.order === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
   }
 
-  function selectedFacet(facet) {
-    var set = {};
-    facetChecks.forEach(function(c) {
-      if (c.dataset.facet === facet && c.checked) set[c.value] = true;
-    });
-    return set;
-  }
-  function isEmpty(set) { for (var k in set) { return false; } return true; }
-
-  function matches(card, tokens, types, sources, satoshi) {
-    if (satoshi && card.dataset.satoshi !== '1') return false;
+  function matchBrowse(card, types, sources, sat) {
+    if (sat && card.dataset.satoshi !== '1') return false;
     if (!isEmpty(types) && !types[card.dataset.type]) return false;
     if (!isEmpty(sources) && !sources[card.dataset.source]) return false;
-    if (tokens.length) {
-      var hay = card.dataset.filter || '';
-      for (var i = 0; i < tokens.length; i++) {
-        if (hay.indexOf(tokens[i]) === -1) return false;
-      }
-    }
     return true;
   }
-
-  function anyFilterActive(tokens, types, sources, satoshi) {
-    return tokens.length > 0 || !isEmpty(types) || !isEmpty(sources) || satoshi;
-  }
-
-  function recompute() {
-    var q = (searchInput && searchInput.value || '').trim().toLowerCase();
-    var tokens = q ? q.split(/\s+/) : [];
-    var types = selectedFacet('type');
-    var sources = selectedFacet('source');
-    var satoshi = !!(satoshiOnly && satoshiOnly.checked);
-
+  function renderBrowse() {
+    var types = selectedFacet('type'), sources = selectedFacet('source'), sat = !!(satoshiOnly && satoshiOnly.checked);
     var matching = [];
     cards.forEach(function(card) {
-      var ok = matches(card, tokens, types, sources, satoshi);
+      var ok = matchBrowse(card, types, sources, sat);
       card.classList.toggle('filtered-out', !ok);
       if (ok) matching.push(card);
     });
+    matching.sort(cmp);
+    matching.forEach(function(c) { list.appendChild(c); });
+    matching.forEach(function(c, i) { c.classList.toggle('paged-out', i >= shown); });
+    resultCount.textContent = String(matching.length);
+    if (countUnit) countUnit.textContent = L ? ' 件' : (matching.length === 1 ? ' entry' : ' entries');
+    showMore.hidden = matching.length <= shown;
+    noResults.hidden = matching.length !== 0;
+  }
 
-    matching.sort(compareCards);
-    matching.forEach(function(card) { list.appendChild(card); });
-    matching.forEach(function(card, i) { card.classList.toggle('paged-out', i >= shown); });
-
-    if (resultCount) resultCount.textContent = String(matching.length);
-    if (showMore) showMore.hidden = matching.length <= shown;
-    if (noResults) noResults.hidden = matching.length !== 0;
-
-    var active = anyFilterActive(tokens, types, sources, satoshi);
-    if (clearBtn) clearBtn.hidden = !active;
-
-    document.querySelectorAll('[data-badge]').forEach(function(badge) {
-      var facet = badge.getAttribute('data-badge');
-      var n = facet === 'type' ? Object.keys(types).length : Object.keys(sources).length;
-      if (n > 0) { badge.textContent = ' (' + n + ')'; badge.hidden = false; }
-      else { badge.hidden = true; }
+  function facetFilters() {
+    var f = [];
+    var tk = Object.keys(selectedFacet('type')); if (tk.length) f.push(tk.map(function(t) { return 'type:' + t; }));
+    var sk = Object.keys(selectedFacet('source')); if (sk.length) f.push(sk.map(function(s) { return 'source:' + s; }));
+    if (satoshiOnly && satoshiOnly.checked) f.push(['isSatoshi:true']);
+    return f;
+  }
+  function hitCard(h) {
+    var hr = h._highlightResult || {}, sr = h._snippetResult || {};
+    // Merge adjacent <mark> runs (kuromoji wraps each Japanese morpheme in its
+    // own <mark>) into one continuous highlight, so a matched phrase reads as a
+    // single block instead of a string of fragmented marks.
+    var title = ((hr.title && hr.title.value) || esc(h.title)).replace(/<\/mark>\s*<mark>/g, '');
+    var snip = ((sr.body && sr.body.value) || '').replace(/<\/mark>\s*<mark>/g, '');
+    var isSat = h.author && String(h.author).toLowerCase() === 'satoshi nakamoto';
+    var meta = '<span class="ft-author' + (isSat ? ' satoshi' : '') + '">' + esc(h.author) + '</span>';
+    if (h.date) meta += ' · ' + new Date(h.date).toLocaleDateString(L ? 'ja-JP' : 'en-US');
+    var avSlug = (h.type === 'article' || h.type === 'analysis' || h.type === 'design')
+      ? 'bitcoin-institute' : (authorToSlug[h.author] || '');
+    var avatar = !avSlug ? ''
+      : avSlug === 'satoshi-nakamoto'
+        ? '<span class="avatar card-author-avatar satoshi-av" aria-hidden="true">SN</span>'
+        : '<img class="avatar card-author-avatar" src="' + basePath + '/avatars/' + avSlug + '.png" alt="" width="24" height="24" loading="lazy" />';
+    return '<a class="ft-hit" href="' + basePath + h.url + '">'
+      + '<div class="ft-title-row">' + avatar + '<span class="ft-title">' + title + '</span></div>'
+      + '<div class="ft-meta">' + meta + '</div>'
+      + (snip ? '<div class="ft-snippet">' + snip + '</div>' : '')
+      + '</a>';
+  }
+  function renderSearch() {
+    if (!hits) return;
+    var sorted = hits.slice().sort(cmp);
+    var page = sorted.slice(0, shown);
+    searchResults.innerHTML = page.length ? page.map(hitCard).join('') : '';
+    resultCount.textContent = String(nbHits);
+    var capped = nbHits > hits.length;
+    if (countUnit) countUnit.textContent = L
+      ? (capped ? ' 件（本文検索・上位 ' + hits.length + ' 件を表示）' : ' 件（本文検索）')
+      : (capped ? ' results (showing first ' + hits.length + ')' : (nbHits === 1 ? ' full-text result' : ' full-text results'));
+    showMore.hidden = hits.length <= shown;
+    noResults.hidden = nbHits !== 0;
+  }
+  function fetchSearch(q) {
+    var ff = JSON.stringify(facetFilters());
+    // Serve from the per-tab cache when the same query + refinements were just
+    // run — so Back from a result (or re-typing the same word) renders instantly
+    // without spending another Algolia request.
+    try {
+      var c = JSON.parse(sessionStorage.getItem('ftcache:' + indexName) || 'null');
+      if (c && c.q === q && c.ff === ff) { hits = c.hits; nbHits = c.nbHits; renderSearch(); return; }
+    } catch (e) {}
+    if (!algolia) { hits = []; renderSearch(); return; }
+    algolia.search([{ indexName: indexName, query: q, params: {
+      hitsPerPage: FT_FETCH, facetFilters: facetFilters(),
+      attributesToSnippet: ['body:35'], highlightPreTag: '<mark>', highlightPostTag: '</mark>', snippetEllipsisText: '…'
+    } }]).then(function(r) {
+      hits = r.results[0].hits || [];
+      nbHits = r.results[0].nbHits || hits.length;
+      try { sessionStorage.setItem('ftcache:' + indexName, JSON.stringify({ q: q, ff: ff, hits: hits, nbHits: nbHits })); } catch (e) {}
+      renderSearch();
+    }).catch(function() {
+      hits = [];
+      searchResults.innerHTML = '<p class="no-results">' + (L ? '検索でエラーが発生しました。' : 'Search error.') + '</p>';
+      resultCount.textContent = '0';
     });
   }
 
-  function resetPageAndRecompute() { shown = PAGE_SIZE; recompute(); }
+  function setMode(searching) {
+    list.hidden = searching;
+    searchResults.hidden = !searching;
+  }
+  function update() {
+    var q = input.value.trim();
+    // Keep the query in the URL so Back / refresh / bookmark restore the search.
+    try { history.replaceState(null, '', q ? (location.pathname + '?q=' + encodeURIComponent(q)) : location.pathname); } catch (e) {}
+    if (clearBtn) clearBtn.hidden = !(q || anyRefinement());
+    document.querySelectorAll('[data-badge]').forEach(function(b) {
+      var f = b.getAttribute('data-badge');
+      var n = Object.keys(selectedFacet(f)).length;
+      if (n > 0) { b.textContent = ' (' + n + ')'; b.hidden = false; } else b.hidden = true;
+    });
+    if (q.length >= MIN) {
+      setMode(true);
+      searchResults.innerHTML = '<p class="no-results">' + (L ? '検索中…' : 'Searching…') + '</p>';
+      fetchSearch(q);
+    } else {
+      hits = null;
+      setMode(false);
+      renderBrowse();
+    }
+  }
+  function resetAndUpdate() { shown = BROWSE_PAGE; update(); }
+  function debounced() { clearTimeout(debounceTimer); debounceTimer = setTimeout(resetAndUpdate, 300); }
 
-  if (searchInput) searchInput.addEventListener('input', resetPageAndRecompute);
-  facetChecks.forEach(function(c) { c.addEventListener('change', resetPageAndRecompute); });
-  if (satoshiOnly) satoshiOnly.addEventListener('change', resetPageAndRecompute);
-
+  input.addEventListener('input', debounced);
+  if (form) form.addEventListener('submit', function(e) { e.preventDefault(); clearTimeout(debounceTimer); resetAndUpdate(); });
+  facetChecks.forEach(function(c) { c.addEventListener('change', resetAndUpdate); });
+  if (satoshiOnly) satoshiOnly.addEventListener('change', resetAndUpdate);
   if (showMore) showMore.addEventListener('click', function() {
-    shown += PAGE_SIZE;
-    recompute();
+    shown += BROWSE_PAGE;
+    if (hits) renderSearch(); else renderBrowse();
   });
-
   if (clearBtn) clearBtn.addEventListener('click', function() {
-    if (searchInput) searchInput.value = '';
+    input.value = '';
     facetChecks.forEach(function(c) { c.checked = false; });
     if (satoshiOnly) satoshiOnly.checked = false;
-    resetPageAndRecompute();
+    resetAndUpdate();
   });
 
   function activateSort(key, order) {
@@ -297,32 +400,26 @@ const structuredData = {
       }
     });
   }
-
   sortBtns.forEach(function(btn) {
     btn.addEventListener('click', function() {
-      var key = btn.dataset.sort;
-      var order = btn.dataset.order;
-      if (btn.classList.contains('active')) {
-        order = order === 'asc' ? 'desc' : 'asc';
-      }
+      var key = btn.dataset.sort, order = btn.dataset.order;
+      if (btn.classList.contains('active')) order = order === 'asc' ? 'desc' : 'asc';
       activateSort(key, order);
       try { sessionStorage.setItem(SORT_KEY, JSON.stringify({ key: key, order: order })); } catch (e) {}
-      recompute();
+      if (hits) renderSearch(); else renderBrowse();
     });
   });
-
-  try {
-    var saved = JSON.parse(sessionStorage.getItem(SORT_KEY));
-    if (saved && saved.key) activateSort(saved.key, saved.order);
-  } catch (e) {}
-
-  recompute();
+  try { var saved = JSON.parse(sessionStorage.getItem(SORT_KEY)); if (saved && saved.key) activateSort(saved.key, saved.order); } catch (e) {}
 
   document.addEventListener('click', function(e) {
     document.querySelectorAll('details.facet[open]').forEach(function(d) {
       if (!d.contains(e.target)) d.removeAttribute('open');
     });
   });
+
+  // Restore the query from the URL (Back / refresh / shared link).
+  try { var q0 = new URLSearchParams(location.search).get('q'); if (q0) input.value = q0; } catch (e) {}
+  update();
 })();
 </script>
 
@@ -340,6 +437,7 @@ const structuredData = {
     gap: 0.6rem;
     margin-bottom: 0.75rem;
   }
+  .browse-searchform { display: flex; }
   .browse-search {
     width: 100%;
     box-sizing: border-box;
@@ -485,7 +583,10 @@ const structuredData = {
   }
   .clear-filters:hover { color: var(--color-link-hover); }
 
-  .entry-card.filtered-out, .entry-card.paged-out { display: none; }
+  /* .entry-card belongs to EntryCard's scope, not this page's — so these
+     must be :global() or the display:none never applies (filtered cards
+     keep the class but stay visible: count changes, list doesn't). */
+  :global(.entry-card.filtered-out), :global(.entry-card.paged-out) { display: none; }
 
   .browse-more { margin-top: 1rem; text-align: center; }
   .show-more {
@@ -500,6 +601,27 @@ const structuredData = {
   }
   .show-more:hover { border-color: var(--color-text-muted); }
   .no-results { color: var(--color-text-muted); }
+
+  /* Full-text result cards, styled to match EntryCard. Injected at runtime,
+     so they need :global() (no Astro scoped data-astro-cid attribute). */
+  :global(.ft-hit) {
+    display: block;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--color-border);
+    text-decoration: none;
+    color: inherit;
+  }
+  :global(.ft-hit:last-child) { border-bottom: none; }
+  :global(.ft-hit:hover .ft-title) { color: var(--color-link); }
+  :global(.ft-title-row) { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.2rem; }
+  :global(.ft-title) { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
+  :global(.ft-meta) { font-family: var(--font-heading); font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 0.3rem; }
+  :global(.ft-meta .satoshi) { color: var(--color-satoshi); font-weight: 600; }
+  :global(.ft-snippet) { font-size: 0.9rem; color: var(--color-text); line-height: 1.6; }
+  /* No padding: Japanese (kuromoji) wraps each morpheme in its own <mark>, so
+     any side padding stacks into fake gaps between characters. Background only. */
+  :global(.ft-title mark), :global(.ft-snippet mark) { background: var(--color-accent-bg); color: inherit; }
+  :global(#search-results .no-results) { color: var(--color-text-muted); }
 
   @media (max-width: 600px) {
     .browse-row { flex-direction: column; align-items: stretch; }
