@@ -10,7 +10,26 @@ const lang = 'en';
 const t = useTranslations(lang);
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
-const displayEntries = collapseThreads(entries, threadCounts, threadStarters).reverse();
+
+// git dates (build-time generated). Loaded here because the browse list now
+// defaults to "recently added" order — newest createdAt first — so opening
+// /entries/ surfaces what was most recently added to the archive. Records are
+// per language (en / ja); this page reads its own language's createdAt, falling
+// back to the event date when a record is missing, and to plain event-date
+// order when git-dates.json is absent entirely.
+const gitDatesPath = join(process.cwd(), 'src/data/git-dates.json');
+type LangDate = { createdAt: string; updatedAt: string };
+type GitDateRecord = { en?: LangDate; ja?: LangDate };
+const gitDates: Record<string, GitDateRecord> = existsSync(gitDatesPath)
+  ? JSON.parse(readFileSync(gitDatesPath, 'utf-8'))
+  : {};
+const hasGitDates = Object.keys(gitDates).length > 0;
+
+const createdKey = (e: any): string => gitDates[e.id]?.[lang]?.createdAt ?? e.data.date.toISOString();
+const collapsed = collapseThreads(entries, threadCounts, threadStarters);
+const displayEntries = hasGitDates
+  ? collapsed.slice().sort((a, b) => createdKey(b).localeCompare(createdKey(a)))
+  : collapsed.reverse();
 
 // Facet counts over the cards actually rendered (one per thread/standalone).
 // These drive the Type / Source filter menus; counts match the visible list.
@@ -54,19 +73,6 @@ for (const e of allEntries) {
 }
 const uiLabels = { event: t('entry.event' as any), updated: t('entry.updated' as any), biography: t('entry.biography' as any) };
 
-// Load git dates (generated at build time). git-dates.json keys each entry by id
-// and stores per-language records (en / ja). EN and JA are usually edited together
-// so the two updatedAt values are typically identical, but they diverge legitimately
-// when only one side is touched (e.g. a JA-only translation pass) — each language
-// page reads its own record so the displayed date reflects what was actually edited
-// in that language.
-const gitDatesPath = join(process.cwd(), 'src/data/git-dates.json');
-type LangDate = { createdAt: string; updatedAt: string };
-type GitDateRecord = { en?: LangDate; ja?: LangDate };
-const gitDates: Record<string, GitDateRecord> = existsSync(gitDatesPath)
-  ? JSON.parse(readFileSync(gitDatesPath, 'utf-8'))
-  : {};
-const hasGitDates = Object.keys(gitDates).length > 0;
 const pageDescription = "Complete chronological archive of Satoshi Nakamoto and early Bitcoin contributors' communications — forum posts, mailing-list discussions, private correspondence, and primary historical records, all with original sources preserved.";
 
 const structuredData = {
@@ -156,10 +162,10 @@ const structuredData = {
           </label>
         </div>
         <div class="sort-controls" id="sort-controls">
-          <button class="sort-btn active" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+          <button class:list={["sort-btn", { active: !hasGitDates }]} data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
           {hasGitDates && (
             <>
-              <button class="sort-btn" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+              <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
               <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
             </>
           )}
@@ -180,6 +186,11 @@ const structuredData = {
       // Pre-paint hide: if we arrived with ?q= (Back / refresh / shared link),
       // hide the SSR browse list before it flashes. See `.entries-searching` CSS.
       try { if (new URLSearchParams(location.search).get('q')) document.documentElement.classList.add('entries-searching'); } catch (e) {}
+      // Same idea for sort: a saved non-default sort is restored only after the
+      // main script runs, so the SSR list (created-date order) would paint first
+      // and then visibly jump. Hide it now; the main script reveals it again
+      // right after the first sort+render. ('entries-sort' = SORT_KEY.)
+      try { if (sessionStorage.getItem('entries-sort')) document.documentElement.classList.add('entries-presort'); } catch (e) {}
     </script>
 
     <div id="entries-list">
@@ -250,7 +261,11 @@ const structuredData = {
 
   var L = locale === 'ja';
   var shown = BROWSE_PAGE;
-  var sortState = { key: 'date', order: 'desc' };
+  // Default sort mirrors the SSR list order: "recently added" (created desc)
+  // when git dates exist, else post-date desc. Kept in sync with the server so
+  // the first paint and the first client render agree (no reflow on load).
+  var hasCreatedBtn = sortBtns.some(function(b) { return b.dataset.sort === 'created'; });
+  var sortState = hasCreatedBtn ? { key: 'created', order: 'desc' } : { key: 'date', order: 'desc' };
   var algolia = (typeof algoliasearch !== 'undefined')
     ? algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425') : null;
   var hits = null, nbHits = 0; // current full-text hit set (null = browse mode); nbHits = true total
@@ -518,6 +533,8 @@ const structuredData = {
   // Hand off the pre-paint hide: visibility is now owned by setMode()/list.hidden.
   try { document.documentElement.classList.remove('entries-searching'); } catch (e) {}
   update();
+  // First sort+render is done; reveal the list hidden by the pre-paint guard.
+  try { document.documentElement.classList.remove('entries-presort'); } catch (e) {}
 })();
 </script>
 
@@ -693,6 +710,12 @@ const structuredData = {
      browse-list flash. The main controller then removes the class and governs
      visibility via list.hidden, so this rule only bites on the first paint. */
   :global(html.entries-searching #entries-list) { display: none; }
+
+  /* Sort pre-paint guard: hide the list (keeping its layout box) until the first
+     client sort, so a restored non-default sort never flashes the SSR order. The
+     entries script removes this class right after the first render. visibility
+     (not display) preserves height so Back/forward scroll restoration still works. */
+  :global(html.entries-presort #entries-list) { visibility: hidden; }
 
   .browse-more { margin-top: 1rem; text-align: center; }
   .show-more {
