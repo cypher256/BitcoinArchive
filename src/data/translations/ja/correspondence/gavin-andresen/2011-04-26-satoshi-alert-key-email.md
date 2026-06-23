@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "サトシからギャビン・アンドレセン宛、最後の既知の私信。ビットコインネットワークのアラートキーを移譲し、他のことに移ったと宣言した。"
+description: "サトシからギャビン・アンドレセン宛、最後の既知のメール。ビットコインネットワークのアラートキーを移譲し、他のことに移ったと宣言した。"
 isSatoshi: true
 tags:
   - "correspondence"

@@ -125,7 +125,7 @@ export const characters: CharacterBio[] = [
     name: { ja: 'マイク・ハーン', en: 'Mike Hearn' },
     epithet: { ja: '去った実装者', en: 'The Departed Implementer' },
     bio: {
-      ja: 'Googleの上級ソフトウェアエンジニアを辞めて、ビットコイン開発に専念した男。2011年4月23日、サトシ最後の私信「I\'ve moved on to other things」を受け取った一人。2016年1月、ブロックサイズ戦争の末に「Bitcoin has failed」を宣言、全コインを売却して立ち去った。',
+      ja: 'Googleの上級ソフトウェアエンジニアを辞めて、ビットコイン開発に専念した男。2011年4月23日、サトシ最後のメール「I\'ve moved on to other things」を受け取った一人。2016年1月、ブロックサイズ戦争の末に「Bitcoin has failed」を宣言、全コインを売却して立ち去った。',
       en: 'He left a senior engineering job at Google to work on Bitcoin full time. On April 23, 2011, he was one of the last people to receive a private email from Satoshi: "I\'ve moved on to other things." In January 2016, after the block size wars, he declared Bitcoin had failed, sold every coin he owned, and walked away.',
     },
     quote: {

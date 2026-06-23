@@ -61,7 +61,11 @@ for (let i = 0; i < args.length; i++) {
 }
 const TARGETS = explicitPaths.length > 0
   ? explicitPaths
-  : ['src/data/translations/ja', 'src/components'];
+  // src/pages: reader-facing JA prose in .astro pages (page leads, meta
+  // descriptions, the JA homepage / novel landing). maskAstro keeps the JA
+  // strings visible (masks only comments / URLs). Previously unscanned, which
+  // let deprecated forms (e.g. 「私信」, no-長音 spellings) slip into pages.
+  : ['src/data/translations/ja', 'src/components', 'src/pages'];
 
 // Rule types:
 //   'literal' — plain substring match
