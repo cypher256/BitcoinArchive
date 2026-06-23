@@ -67,7 +67,7 @@ const gitDates: Record<string, GitDateRecord> = existsSync(gitDatesPath)
   ? JSON.parse(readFileSync(gitDatesPath, 'utf-8'))
   : {};
 const hasGitDates = Object.keys(gitDates).length > 0;
-const pageDescription = "サトシ・ナカモトと初期ビットコイン貢献者によるコミュニケーションの完全な時系列アーカイブ。フォーラム投稿、メーリングリスト、私信、一次資料を、原典を保持した形で収録。";
+const pageDescription = "サトシ・ナカモトと初期ビットコイン貢献者によるコミュニケーションの完全な時系列アーカイブ。フォーラム投稿、メーリングリスト、個人メール、一次資料を、原典を保持した形で収録。";
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -111,7 +111,7 @@ const structuredData = {
 >
   <div class="container-wide">
     <h1>{t('nav.entries')}</h1>
-    <p class="page-lead">このアーカイブの全一次資料。入力すると本文を全文検索、種類・ソース・サトシで絞り込み、並べ替えも — すべてこのページの 1 つの一覧で行えます。</p>
+    <p class="page-lead">サトシ・ナカモトと初期ビットコインの全一次資料 — フォーラム投稿・メーリングリスト・個人メール・BIP・後日談を、原典のまま収録。</p>
 
     <div class="browse-toolbar">
       <form id="search-form" class="browse-searchform" role="search">
