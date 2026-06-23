@@ -1,5 +1,5 @@
 ---
-title: "セルジオ・デミアン・ラーナーがサトシのマイニングに第二の指紋を発見 — ノンス LSB パターン"
+title: "セルジオ・デミアン・ラーナーがサトシのマイニングに第二の指紋を発見 — ナンス LSB パターン"
 date: 2013-09-03T00:00:00Z
 type: "article"
 source: "bitslog"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "ExtraNonce 分析の 5 か月後、ラーナーがサトシのノンス LSB 分布の非ランダム性（256 中約 50 値に限定）を発見。独自マイニングソフトウェアの第二の指紋。"
+description: "ExtraNonce 分析の 5 か月後、ラーナーがサトシのナンス LSB 分布の非ランダム性（256 中約 50 値に限定）を発見。独自マイニングソフトウェアの第二の指紋。"
 isSatoshi: false
 tags:
   - "patoshi"

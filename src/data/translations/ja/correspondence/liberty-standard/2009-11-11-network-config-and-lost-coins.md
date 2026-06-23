@@ -4,7 +4,7 @@ date: 2009-11-11T13:08:00Z
 type: "correspondence"
 source: "malmi-email-archive"
 sourceUrl: "https://mmalmi.github.io/satoshi/"
-sourceNote: "Satoshi と Martti Malmi の往復メール内に引用返信として保存。 2024 年 2 月、 COPA 対 Wright 訴訟での Malmi の証言として GitHub で公開。 Satoshi のメール内引用ヘッダ「On Wed, Nov 11, 2009 at 8:08 AM, Liberty Standard」の 8:08 を米国現地時刻と解釈し、概ね 13:08 UTC として換算した。"
+sourceNote: "Satoshi と Martti Malmi の往復メール内に引用返信として保存。 2024 年 2 月、 COPA 対 Wright 訴訟での Malmi の証言として GitHub で公開。 Satoshi のメール内引用ヘッダー「On Wed, Nov 11, 2009 at 8:08 AM, Liberty Standard」の 8:08 を米国現地時刻と解釈し、概ね 13:08 UTC として換算した。"
 author: "Liberty Standard"
 participants:
   - name: "Liberty Standard"

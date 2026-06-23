@@ -265,10 +265,42 @@ if (IGNORE_FILE && existsSync(IGNORE_FILE)) {
 
 // Strip out contexts that are not Japanese body prose before running
 // glossary rules. Per STYLE_GUIDE_JA § I.2 (What Stays In English),
-// the following surfaces are Category 4 (stays English): frontmatter,
-// code blocks, inline code spans, markdown link URLs, raw URLs. We blank
-// them out with spaces so line/column numbers stay aligned for error
-// reporting.
+// the following surfaces are Category 4 (stays English): the *structural*
+// frontmatter fields (slug / source / URL / tags / participants &
+// secondarySources `name` etc.), code blocks, inline code spans, markdown
+// link URLs, raw URLs. We blank them out with spaces so line/column
+// numbers stay aligned for error reporting.
+//
+// EXCEPTION — reader-facing JA prose fields inside frontmatter ARE scanned:
+// `title`, `description`, `sourceNote`, `note` (secondarySources child),
+// `editorNote`, and `label` (callout child). Per STYLE_GUIDE_JA § I.2 these
+// are "edited Japanese text" (タイトル・description・編者注・解説文), so the
+// glossary applies to them exactly like body prose. Only the key prefix is
+// blanked; the value is kept and run through the shared inline maskers, so a
+// slug like ".../lerner-nonce-lsb" inside an editorNote link does not
+// false-positive.
+const FRONTMATTER_PROSE_FIELDS =
+  /^(\s*)(title|description|sourceNote|note|editorNote|label):(\s*)(.*)$/;
+
+// Mask inline contexts that can appear inside a single prose line (body line
+// or a frontmatter prose value): inline `code`, markdown link URLs, raw URLs,
+// and the fixed genesis coinbase headline (which must escape the
+// "The Times → タイムズ" rule). Length is preserved so column numbers stay
+// aligned for error reporting.
+function maskInline(s) {
+  let masked = s.replace(/`[^`]*`/g, (m) => ' '.repeat(m.length));
+  masked = masked.replace(
+    /\]\(([^)]+)\)/g,
+    (m) => ']' + '(' + ' '.repeat(m.length - 3) + ')',
+  );
+  masked = masked.replace(/https?:\/\/\S+/g, (m) => ' '.repeat(m.length));
+  masked = masked.replace(
+    /The Times 03\/Jan\/2009(?: Chancellor on brink of second bailout for banks)?/g,
+    (m) => ' '.repeat(m.length),
+  );
+  return masked;
+}
+
 function maskNonProse(content) {
   const out = content.split('\n');
   let inFrontmatter = false;
@@ -286,8 +318,19 @@ function maskNonProse(content) {
       if (line === '---') {
         inFrontmatter = false;
         frontmatterEnded = true;
+        out[i] = ' '.repeat(line.length);
+        continue;
       }
-      out[i] = ' '.repeat(line.length);
+      const fm = line.match(FRONTMATTER_PROSE_FIELDS);
+      if (fm) {
+        // Reader-facing JA prose field: keep the value, blank only the key
+        // prefix (indent + key + ':' + spaces), then mask inline URLs/code
+        // inside the value the same way body prose is masked.
+        const prefixLen = fm[1].length + fm[2].length + 1 + fm[3].length;
+        out[i] = ' '.repeat(prefixLen) + maskInline(fm[4]);
+      } else {
+        out[i] = ' '.repeat(line.length);
+      }
       continue;
     }
     if (!frontmatterEnded && i > 0) {
@@ -322,27 +365,8 @@ function maskNonProse(content) {
       out[i] = ' '.repeat(line.length);
       continue;
     }
-    // Mask inline code `...` spans
-    let masked = line.replace(/`[^`]*`/g, (m) => ' '.repeat(m.length));
-    // Mask markdown link URLs: [text](URL)
-    masked = masked.replace(
-      /\]\(([^)]+)\)/g,
-      (m) => ']' + '(' + ' '.repeat(m.length - 3) + ')',
-    );
-    // Mask raw URLs (http:// or https://)
-    masked = masked.replace(
-      /https?:\/\/\S+/g,
-      (m) => ' '.repeat(m.length),
-    );
-    // Mask the literal Bitcoin genesis coinbase headline (full form, and the
-    // short date-prefix form often used as a chart header label). Both are
-    // fixed historical quotations and must escape the
-    // "The Times → タイムズ" rule.
-    masked = masked.replace(
-      /The Times 03\/Jan\/2009(?: Chancellor on brink of second bailout for banks)?/g,
-      (m) => ' '.repeat(m.length),
-    );
-    out[i] = masked;
+    // Mask inline code / markdown link URLs / raw URLs / the genesis headline.
+    out[i] = maskInline(line);
   }
   return out.join('\n');
 }
