@@ -35,6 +35,7 @@ relatedEntries:
   - aftermath/2017-11-08-segwit2x-cancellation
   - aftermath/2015-01-01-amaury-sechet-biography
   - aftermath/2011-08-01-jihan-wu-biography
+  - analysis/2014-11-01-blockstream-centralization-claim
 translationStatus: complete
 ---
 

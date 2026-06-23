@@ -25,6 +25,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2017-08-01-bitcoin-cash-fork
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - analysis/2014-11-01-blockstream-centralization-claim
 ---
 
 2024 年 4 月 30 日、スペイン当局は米国の引き渡し要請を受けてロジャー・ヴァーを逮捕した。米司法省の起訴状によると、ヴァーが 2014 年に米国市民権を放棄した時点でビットコイン保有額を過少申告し、約 4,800 万ドルの出国税義務を脱税した疑いがあるという。

@@ -40,6 +40,7 @@ relatedEntries:
   - aftermath/2011-04-26-satoshi-final-known-email
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-architecture-evolution
+  - analysis/2014-11-01-blockstream-centralization-claim
 translationStatus: complete
 ---
 

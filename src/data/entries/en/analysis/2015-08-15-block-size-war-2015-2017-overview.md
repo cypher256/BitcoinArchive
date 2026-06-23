@@ -35,6 +35,7 @@ relatedEntries:
   - aftermath/2017-11-08-segwit2x-cancellation
   - aftermath/2015-01-01-amaury-sechet-biography
   - aftermath/2011-08-01-jihan-wu-biography
+  - analysis/2014-11-01-blockstream-centralization-claim
 ---
 
 Between August 2015 and November 2017, Bitcoin's open-source process was tested by a sustained dispute over a single parameter: the 1 MB block-size limit that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) had added in September 2010 as a temporary anti-spam measure. The dispute produced four successive fork attempts on the main chain, one persistent chain split, the activation of Segregated Witness, and a permanent change in how Bitcoin protocol upgrades reach consensus. This entry collates the documented sequence by phase, faction, and turning point.

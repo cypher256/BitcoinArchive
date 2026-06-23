@@ -22,6 +22,7 @@ tags:
 relatedEntries:
   - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
   - aftermath/2011-03-17-pieter-wuille-biography
+  - analysis/2014-11-01-blockstream-centralization-claim
 ---
 
 CoinJoin and Confidential Transactions are the two best-known proposals for Bitcoin privacy that the base layer never adopted; both are designs from Gregory Maxwell. CoinJoin (2013) lets multiple users combine payments into a single transaction to break input-to-output heuristics. Confidential Transactions (2015) hides transaction amounts behind Pedersen commitments while preserving verifiable conservation of value. Neither runs on Bitcoin's main chain, but they shaped a generation of privacy work — Wasabi, JoinMarket, Liquid — and the broader cryptocurrency-privacy literature.

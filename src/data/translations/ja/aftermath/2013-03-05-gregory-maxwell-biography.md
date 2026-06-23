@@ -22,6 +22,7 @@ tags:
 relatedEntries:
   - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
   - aftermath/2011-03-17-pieter-wuille-biography
+  - analysis/2014-11-01-blockstream-centralization-claim
 translationStatus: complete
 ---
 

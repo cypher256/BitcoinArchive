@@ -25,6 +25,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2017-08-01-bitcoin-cash-fork
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - analysis/2014-11-01-blockstream-centralization-claim
 ---
 
 On April 30, 2024, Spanish authorities arrested Roger Ver on a U.S. extradition request. The DOJ indictment alleges he under-reported the value of his Bitcoin holdings when he renounced U.S. citizenship in 2014, evading approximately $48 million in exit-tax obligations.

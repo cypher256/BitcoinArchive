@@ -37,6 +37,7 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2015-08-15-bitcoin-xt-launch
   - analysis/2026-05-24-satoshi-design-vs-current-reality
+  - analysis/2014-11-01-blockstream-centralization-claim
 ---
 
 On January 14, 2016, [Mike Hearn](/BitcoinArchive/participants/mike-hearn/) — one of the earliest Bitcoin contributors and a developer who had corresponded directly with Satoshi Nakamoto — published a lengthy blog post titled "The resolution of the Bitcoin experiment" on his personal blog (blog.plan99.net, hosted on Medium).
