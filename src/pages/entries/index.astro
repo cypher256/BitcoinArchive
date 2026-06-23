@@ -500,6 +500,19 @@ const structuredData = {
     });
   });
 
+  // Back/forward restore (especially mobile bfcache) does NOT re-run this
+  // script, and some browsers drop the search input's value while keeping the
+  // rendered results. On a cache restore, re-sync the input from the URL so the
+  // query stays visible (and re-render from the sessionStorage cache if it
+  // diverged). Normal loads fire pageshow with persisted=false and are skipped.
+  window.addEventListener('pageshow', function(e) {
+    if (!e.persisted) return;
+    try {
+      var qp = new URLSearchParams(location.search).get('q') || '';
+      if (input.value !== qp) { input.value = qp; resetAndUpdate(); }
+    } catch (err) {}
+  });
+
   // Restore the query from the URL (Back / refresh / shared link).
   try { var q0 = new URLSearchParams(location.search).get('q'); if (q0) input.value = q0; } catch (e) {}
   // Hand off the pre-paint hide: visibility is now owned by setMode()/list.hidden.
