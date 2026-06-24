@@ -127,9 +127,13 @@ timeline
 
 Today Core is supported by roughly thirteen organizations, Blockstream among them: Chaincode Labs, MIT DCI, Spiral, Brink, OpenSats, the Human Rights Foundation, Btrust, and more. The very people the charge names have moved on to different places. Co-founder Matt Corallo became Spiral's first hire in 2019; Wuille moved to Chaincode Labs. The talent once gathered in one company has scattered across separately funded homes. Whatever "Blockstream controls Bitcoin" pointed to in 2016 has been shrinking year by year.
 
-## 4. The same suspicion, turned on the critics
+## 4. "Just talking its book" cuts both ways
 
-The charge treats Blockstream's technical case as "just talking its own book." Run that test, and the same doubt lands on the people making the charge. It is the doubt the [fork-wars analysis](/BitcoinArchive/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/) turns the other way. The large-block side was not disinterested either. [Jihan Wu](/BitcoinArchive/participants/jihan-wu/)'s Bitmain had a stake, through hashrate and hardware, in more on-chain transactions. [Roger Ver](/BitcoinArchive/participants/roger-ver/)'s bitcoin.com had a stake, in brand and traffic, in the large-block chain it called "the real Bitcoin." If a commercial interest voids a technical position, it voids both sides; if it does not, both stand. Dismissing only one side as "paid to say it" is just declining to hold the same yardstick to yourself.
+The charge has a second pillar, separate from the chain of fact that broke in §3: the motive claim that Blockstream's technical case is just the company talking its own book. This pillar is about motive, not fact, so weigh it on its own.
+
+That move — a commercial interest voids a technical position — swings back on whoever makes it with equal force. [Jihan Wu](/BitcoinArchive/participants/jihan-wu/)'s Bitmain had a stake, through hashrate and hardware, in more on-chain transactions. [Roger Ver](/BitcoinArchive/participants/roger-ver/)'s bitcoin.com had a stake, in brand and traffic, in the large-block chain it called "the real Bitcoin." If a commercial interest can void the other side's technical case, it voids the accusers' own by the same logic. Carry the test all the way through and nothing anyone argued is left standing.
+
+So the interest is worth noting as a reason to doubt a motive — not as evidence of "broke it on purpose." Here too the charge leans on motive in place of the fact that gave way, and that motive lands on the accuser as hard as on the accused. This is not a both-sides draw. It is one more pillar of the charge giving way.
 
 ## 5. The verdict the record supports
 
