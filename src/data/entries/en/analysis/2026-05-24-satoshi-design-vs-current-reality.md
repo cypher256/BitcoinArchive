@@ -28,6 +28,7 @@ inlineLinkKeywords:
   - "self-custody"
   - "custodial"
 relatedEntries:
+  - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - aftermath/2014-02-28-mt-gox-bankruptcy

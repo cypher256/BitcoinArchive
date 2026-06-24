@@ -155,6 +155,7 @@ const MID_DOT_VARIANTS = generateMidDotVariants(ALL_CANONICAL_JA);
 // -------------------------------------------------------------------------
 const KNOWN_MISSPELLINGS = [
   ['サスマン', 'サッサマン'], // Len Sassaman — dropped 促音「ッ」
+  ['ハニェツ', 'ハニエツ'], // Laszlo Hanyecz — ェ vs エ phonetic variant
 ];
 for (const [variant, canonical] of KNOWN_MISSPELLINGS) {
   if (ALL_CANONICAL_JA.has(variant)) continue; // never flag a real name

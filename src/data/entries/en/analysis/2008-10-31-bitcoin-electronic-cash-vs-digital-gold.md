@@ -1,5 +1,5 @@
 ---
-title: "Does Bitcoin dream of electronic cash? — the whitepaper's title and Satoshi's own metaphor of gold"
+title: "Does Bitcoin dream of electronic cash?"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "bitcoin-pdf"
@@ -17,7 +17,6 @@ tags:
   - "monetary-policy"
   - "design-intent"
   - "digital-gold"
-  - "store-of-value"
   - "scaling"
 secondarySources:
   - name: "Satoshi Nakamoto Institute — 'Bitcoin does NOT violate Mises' Regression Theorem' (Aug 27, 2010)"
@@ -29,14 +28,8 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2015-08-15-block-size-war-2015-2017-overview
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
-  - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
-  - analysis/2008-08-20-satoshi-self-statements
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
-  - forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem
-  - aftermath/2010-05-22-bitcoin-pizza-day
   - aftermath/2017-08-01-bitcoin-cash-fork
-  - aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique
-  - design/2009-01-03-bitcoin-monetary-design
 inlineLinkKeywords:
   - "electronic cash"
   - "dream of electronic cash"
@@ -75,7 +68,7 @@ The reach is not isolated. It matches the whitepaper's own section 6, and it mat
 
 None of that makes the cash a fiction. It had a body and a date. On May 22, 2010, [Laszlo Hanyecz paid 10,000 BTC for two Papa John's pizzas](/BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/) — about $41 at the time, the first known purchase of a physical good with Bitcoin, proof the thing could function as a medium of exchange. Hanyecz kept going, spending roughly 79,000 BTC across that summer. People used Bitcoin as money because the whitepaper invited them to, and for a while the invitation held.
 
-What the pizza also marks, in retrospect, is the exchange rate at which the two readings collide. Ten thousand coins for two pizzas is a sentence that only stings if you price the coins as gold. The transaction that proves Bitcoin was cash is the same transaction the world now quotes to prove you should have held. The cash use and the gold valuation were already pulling against each other in 2010, inside a single order of pizza.
+What the pizza also marks, in retrospect, is the exchange rate at which the two readings collide. Ten thousand coins for two pizzas is a sentence that only stings if you price the coins as gold; seen as cash, it was just buying pizza. The transaction that proves Bitcoin was cash is the same transaction the world now quotes to prove you should have held. Spend it and let it go, or hold it and wait for it to climb? The cash use and the gold valuation were already pulling against each other in 2010, inside a single order of pizza.
 
 ## The fork that chose between them
 

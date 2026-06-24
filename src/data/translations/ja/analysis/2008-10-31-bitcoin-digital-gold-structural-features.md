@@ -17,6 +17,7 @@ tags:
   - "decentralization"
   - "digital-gold"
 relatedEntries:
+  - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy

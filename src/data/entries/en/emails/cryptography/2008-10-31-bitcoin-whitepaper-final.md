@@ -27,6 +27,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/bitcoin.pdf"
 relatedEntries:
+  - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - emails/cryptography/2008-10-03-bitcoin-whitepaper-draft
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
   - aftermath/2008-10-31-satoshi-nakamoto-biography

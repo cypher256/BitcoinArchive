@@ -30,6 +30,7 @@ tags:
   - "uasf"
   - "governance"
 relatedEntries:
+  - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - aftermath/2015-08-15-bitcoin-xt-launch
   - aftermath/2017-08-01-bitcoin-cash-fork
   - aftermath/2017-11-08-segwit2x-cancellation

@@ -26,6 +26,7 @@ secondarySources:
   - name: "Bitcoin Cash — block 478558 explorer view"
     url: "https://blockchair.com/bitcoin-cash/block/478558"
 relatedEntries:
+  - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - analysis/2015-08-15-block-size-war-2015-2017-overview
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
