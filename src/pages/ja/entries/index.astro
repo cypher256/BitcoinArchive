@@ -507,16 +507,20 @@ const structuredData = {
     });
   });
 
-  // Back/forward restore (especially mobile bfcache) does NOT re-run this
-  // script, and some browsers drop the search input's value while keeping the
-  // rendered results. On a cache restore, re-sync the input from the URL so the
-  // query stays visible (and re-render from the sessionStorage cache if it
-  // diverged). Normal loads fire pageshow with persisted=false and are skipped.
+  // Back/forward restore (especially mobile bfcache) does NOT re-run this script.
+  // iOS Safari restores the *display* state (the visible "clear" button, a stale
+  // search-results render, the "full-text" count) but DROPS the form field values
+  // (the search box and the facet checkboxes). Re-syncing only the search box left
+  // the page inconsistent — the clear button showing while the box was empty, a
+  // stale "search error" frozen on screen. So rebuild the whole view from the URL:
+  // put the query back (empty if the URL has none), then resetAndUpdate re-derives
+  // the mode, the list, and the clear button from the current inputs, leaving
+  // nothing half-restored. Normal loads fire pageshow(persisted=false) and skip.
   window.addEventListener('pageshow', function(e) {
     if (!e.persisted) return;
     try {
-      var qp = new URLSearchParams(location.search).get('q') || '';
-      if (input.value !== qp) { input.value = qp; resetAndUpdate(); }
+      input.value = new URLSearchParams(location.search).get('q') || '';
+      resetAndUpdate();
     } catch (err) {}
   });
 
