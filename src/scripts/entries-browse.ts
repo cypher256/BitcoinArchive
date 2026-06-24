@@ -304,32 +304,52 @@ export function initEntriesBrowse() {
 
   // Back/forward restore (especially mobile bfcache) does NOT re-run this script.
   // iOS Safari restores the *display* state (the visible "clear" button, a stale
-  // search-results render, the "full-text" count) but DROPS the form field values
-  // (the search box and the facet checkboxes). Re-syncing only the search box left
-  // the page inconsistent — the clear button showing while the box was empty, a
-  // stale "search error" frozen on screen. So rebuild the whole view from the URL:
-  // put the query back (empty if the URL has none), then resetAndUpdate re-derives
-  // the mode, the list, and the clear button from the current inputs, leaving
-  // nothing half-restored. Normal loads fire pageshow(persisted=false) and skip.
+  // search-results render, the count) but DROPS the form field values (the search
+  // box, the facet checkboxes). That used to leave the search word gone "sometimes"
+  // on Back. Two distinct failures, fixed together:
+  //
+  //   1. Where to recover the query FROM. The URL is unreliable: iOS reverts it to
+  //      its pre-replaceState form on restore, dropping the ?q= we added while
+  //      searching. The ftcache only holds queries that completed (tap a result
+  //      before the request returns and that word was never cached). So persist the
+  //      box's value on pagehide — it fires right before the page enters bfcache and
+  //      captures the exact text the user left behind, surviving the restore. Use
+  //      that verbatim (empty means the box WAS empty — do not resurrect a stale
+  //      query); fall back to URL / ftcache only if we never got to save it.
+  //   2. Keeping it visible. iOS may blank the field with its OWN form restore AFTER
+  //      this handler runs, at a non-deterministic time — a single setTimeout re-set
+  //      loses that race intermittently. So re-assert across a short window: while
+  //      the box sits empty, put the query back; the moment the user types something
+  //      else, stop (real input is never overwritten).
+  var LASTQ_KEY = 'entries-lastq:' + indexName;
+  window.addEventListener('pagehide', function() {
+    try { sessionStorage.setItem(LASTQ_KEY, input.value); } catch (e) {}
+  });
+  function reassertQuery(qp) {
+    if (!qp) return;
+    var tries = 0;
+    var id = setInterval(function() {
+      tries++;
+      if (input.value === '') input.value = qp;                   // iOS blanked it → restore
+      else if (input.value !== qp) { clearInterval(id); return; } // user is typing → leave it
+      if (tries >= 12) clearInterval(id);                         // ~600ms window, then give up
+    }, 50);
+  }
   window.addEventListener('pageshow', function(e) {
     if (!e.persisted) return;
     try {
-      var qp = new URLSearchParams(location.search).get('q') || '';
-      // The URL is NOT a reliable source on restore: iOS Safari's bfcache reverts
-      // the URL to its pre-replaceState form, dropping the ?q= we added while
-      // searching — so reading only the URL (as the first version did) yields an
-      // empty query and an empty box even though search had run. The ftcache
-      // (sessionStorage, which survives bfcache) still holds the last query; fall
-      // back to it when the URL has lost the ?q=.
-      if (!qp) {
-        var cached = JSON.parse(sessionStorage.getItem('ftcache:' + indexName) || 'null');
-        if (cached && cached.q) qp = cached.q;
+      var qp = null;
+      try { qp = sessionStorage.getItem(LASTQ_KEY); } catch (e2) {}
+      if (qp === null) {
+        qp = new URLSearchParams(location.search).get('q') || '';
+        if (!qp) {
+          var cached = JSON.parse(sessionStorage.getItem('ftcache:' + indexName) || 'null');
+          if (cached && cached.q) qp = cached.q;
+        }
       }
       input.value = qp;
       resetAndUpdate();
-      // iOS may also blank the field with its own form restore after this handler;
-      // re-assert once on the next task so the recovered query stays visible.
-      setTimeout(function() { if (qp && input.value !== qp) input.value = qp; }, 0);
+      reassertQuery(qp);
     } catch (err) {}
   });
 
