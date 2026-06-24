@@ -63,7 +63,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-「Blockstream がビットコインを支配している」。[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)が残した批判のなかで、この一文がいちばん長く生き延びている。Bitcoin Core の開発者を多く抱えるその一社が、自社の売るセカンドレイヤーを欠かせないものにするために、基盤層をわざと不便なまま据え置いた。中心を持たないはずのものを、一社が握った。そういう話だ。
+「Blockstream がビットコインを支配している」。[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)が残した批判のなかで、この一文がいちばん長く生き延びている。Bitcoin Core の開発者を多く抱えるその一社が、自社の売るセカンドレイヤーを欠かせないものにするために、基盤層をわざと不便なまま据え置いた、という。中心を持たないはずのものを、一社が握った。
 
 最初にこの一文を口にしたのは、Blockstream を憎む誰かではなかった。プロジェクトを去っていく開発者、[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)だった。
 
