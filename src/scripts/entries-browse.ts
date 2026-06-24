@@ -303,28 +303,49 @@ export function initEntriesBrowse() {
   });
 
   // Back/forward restore (especially mobile bfcache) does NOT re-run this script.
-  // iOS Safari restores the *display* state (the visible "clear" button, a stale
-  // search-results render, the count) but DROPS the form field values (the search
-  // box, the facet checkboxes). That used to leave the search word gone "sometimes"
-  // on Back. Two distinct failures, fixed together:
+  // iOS Safari keeps the *display* (clear button, a stale results render, the count)
+  // but DROPS the form field values — the search box AND the facet checkboxes
+  // (type / source / Satoshi). Restoring only the query is not enough: resetAndUpdate
+  // then reads the blanked checkboxes as the truth and silently rebuilds the list
+  // with the refinements gone — same word, different result set. So save and restore
+  // the WHOLE input state.
   //
-  //   1. Where to recover the query FROM. The URL is unreliable: iOS reverts it to
-  //      its pre-replaceState form on restore, dropping the ?q= we added while
-  //      searching. The ftcache only holds queries that completed (tap a result
-  //      before the request returns and that word was never cached). So persist the
-  //      box's value on pagehide — it fires right before the page enters bfcache and
-  //      captures the exact text the user left behind, surviving the restore. Use
-  //      that verbatim (empty means the box WAS empty — do not resurrect a stale
-  //      query); fall back to URL / ftcache only if we never got to save it.
-  //   2. Keeping it visible. iOS may blank the field with its OWN form restore AFTER
-  //      this handler runs, at a non-deterministic time — a single setTimeout re-set
-  //      loses that race intermittently. So re-assert across a short window: while
-  //      the box sits empty, put the query back; the moment the user types something
-  //      else, stop (real input is never overwritten).
-  var LASTQ_KEY = 'entries-lastq:' + indexName;
+  //   • Truth source: on pagehide (fires right before the page enters bfcache) save
+  //     query + selected type/source facets + Satoshi flag — the exact state left
+  //     behind, which survives the restore. Facets aren't in the URL, so this saved
+  //     state is the ONLY place they can come back from. Fall back to URL / ftcache
+  //     for the query alone only if we never got to save (e.g. no prior pagehide).
+  //   • Keep the query visible: iOS may re-blank the search box with its OWN form
+  //     restore AFTER this handler, at a non-deterministic time — a single re-set
+  //     loses that race intermittently ("sometimes the word is gone"). Re-assert the
+  //     query across a short window: while the box sits empty, put it back; the
+  //     moment the user types something else, stop (real input is never overwritten).
+  //   • Facets are restored ONCE here; no blank-and-restore loop is applied to them,
+  //     because an unchecked box can't be told apart from the user un-checking it on
+  //     return — a loop would fight the user. (The query loop is safe: empty vs a new
+  //     word IS distinguishable.) If devices are seen to also late-drop checkboxes,
+  //     revisit with a user-interaction guard rather than a blind loop.
+  var STATE_KEY = 'entries-state:' + indexName;
   window.addEventListener('pagehide', function() {
-    try { sessionStorage.setItem(LASTQ_KEY, input.value); } catch (e) {}
+    try {
+      sessionStorage.setItem(STATE_KEY, JSON.stringify({
+        q: input.value,
+        type: Object.keys(selectedFacet('type')),
+        source: Object.keys(selectedFacet('source')),
+        sat: !!(satoshiOnly && satoshiOnly.checked)
+      }));
+    } catch (e) {}
   });
+  function applyFacets(st) {
+    var typeSet = {}, srcSet = {};
+    (st.type || []).forEach(function(v) { typeSet[v] = true; });
+    (st.source || []).forEach(function(v) { srcSet[v] = true; });
+    facetChecks.forEach(function(c) {
+      if (c.dataset.facet === 'type') c.checked = !!typeSet[c.value];
+      else if (c.dataset.facet === 'source') c.checked = !!srcSet[c.value];
+    });
+    if (satoshiOnly) satoshiOnly.checked = !!st.sat;
+  }
   function reassertQuery(qp) {
     if (!qp) return;
     var tries = 0;
@@ -338,17 +359,22 @@ export function initEntriesBrowse() {
   window.addEventListener('pageshow', function(e) {
     if (!e.persisted) return;
     try {
-      var qp = null;
-      try { qp = sessionStorage.getItem(LASTQ_KEY); } catch (e2) {}
-      if (qp === null) {
+      var st = null;
+      try { st = JSON.parse(sessionStorage.getItem(STATE_KEY) || 'null'); } catch (e2) {}
+      var qp;
+      if (st) {
+        qp = st.q || '';
+        input.value = qp;
+        applyFacets(st);            // bring type/source/Satoshi back, not just the word
+      } else {
         qp = new URLSearchParams(location.search).get('q') || '';
         if (!qp) {
           var cached = JSON.parse(sessionStorage.getItem('ftcache:' + indexName) || 'null');
           if (cached && cached.q) qp = cached.q;
         }
+        input.value = qp;
       }
-      input.value = qp;
-      resetAndUpdate();
+      resetAndUpdate();             // rebuild the view from the now-restored inputs
       reassertQuery(qp);
     } catch (err) {}
   });
