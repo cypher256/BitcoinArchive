@@ -16,6 +16,7 @@ participants:
     slug: "knightmb"
 description: "Structural reading of the 2010-08-15 overflow incident — soft-fork rescue mechanics, why a 5-hour response was only achievable then, transaction-shape forensics, and the centralization paradox."
 isSatoshi: false
+homeOrder: 7
 tags:
   - "overflow-bug"
   - "block-74638"

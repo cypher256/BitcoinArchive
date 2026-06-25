@@ -20,6 +20,7 @@ participants:
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
 isSatoshi: false
+homeOrder: 8
 description: "クリスマス挨拶、 1 枚 1,000 万ドル予測、体調を案じる言葉 ― これらに対しサトシの返信は技術話で始まり、戻ってこなかった。 5 パターン分類で読む。"
 tags:
   - "satoshi-identity"

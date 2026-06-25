@@ -12,6 +12,7 @@ participants:
     slug: "adam-back"
 description: "Which Bitcoin assets are at risk from a cryptographically relevant quantum computer, and what the timeline and migration debate around post-quantum cryptography looks like."
 isSatoshi: false
+homeOrder: 9
 tags:
   - "quantum-computing"
   - "quantum-resistance"

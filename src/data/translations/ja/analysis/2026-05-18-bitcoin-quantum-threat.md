@@ -12,6 +12,7 @@ participants:
     slug: "adam-back"
 description: "暗号学的に意味のある量子コンピューターに対して、ビットコインのどの資産が実際に脅威にさらされるのか。NIST 標準化の制度的記録と、到来時期・移行手段をめぐる論争の輪郭を整理する。"
 isSatoshi: false
+homeOrder: 9
 tags:
   - "quantum-computing"
   - "quantum-resistance"

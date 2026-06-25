@@ -20,6 +20,7 @@ participants:
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
 isSatoshi: false
+homeOrder: 8
 description: "When correspondents wished Satoshi merry Christmas, predicted Bitcoin at $10M per coin, or hoped he was doing well, his replies opened on the technical topic and never returned. Five-pattern audit."
 tags:
   - "satoshi-identity"
