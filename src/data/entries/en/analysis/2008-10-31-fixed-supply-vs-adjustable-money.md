@@ -39,6 +39,12 @@ secondarySources:
     url: "https://eips.ethereum.org/EIPS/eip-1559"
   - name: "Carlsten, Kalodner, Weinberg, Narayanan — 'On the Instability of Bitcoin Without the Block Reward' (ACM CCS 2016)"
     url: "https://www.cs.princeton.edu/~arvindn/publications/mining_CCS.pdf"
+  - name: "Monero — Tail Emission (Moneropedia)"
+    url: "https://www.getmonero.org/resources/moneropedia/tail-emission.html"
+  - name: "Ethereum — Understanding ETH supply and issuance"
+    url: "https://ethereum.org/en/eth/supply/"
+  - name: "Dogecoin — supply, issuance, and the removed cap (Wikipedia)"
+    url: "https://en.wikipedia.org/wiki/Dogecoin"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
@@ -190,9 +196,9 @@ The distribution across this table reads as a *spectrum* rather than a consensus
 
 The combined effect — no hard cap, but dynamic supply that responds to network usage — is closer to b-money's *responsive-to-conditions* principle than to Bitcoin's *fixed-by-schedule* principle, but the response variable is network demand rather than basket-price stability. Ethereum's own community vocabulary ("Ultra Sound Money", a play on Bitcoin's "Sound Money" framing) makes the contrast explicit.
 
-## 8. The argument map: hard-money vs flexible-policy
+## 8. Why a cap, why none — the monetary bet each design makes
 
-The full landscape, positioned on two axes — fixed-vs-discretionary supply on the horizontal, human-vs-algorithmic enforcement on the vertical:
+The difference between supply designs is not a ranking. It is a set of different answers to one question: what is money *for*? A fixed cap and an uncapped, variable supply each fear a different failure, and each picks its mechanism to avoid the failure it fears. The full landscape, positioned on two axes — fixed-vs-discretionary supply on the horizontal, human-vs-algorithmic enforcement on the vertical:
 
 ```mermaid
 quadrantChart
@@ -217,30 +223,27 @@ quadrantChart
     "Gold": [0.80, 0.20]
 ```
 
-The 15 years since Bitcoin's launch have not produced a consensus on which supply-design archetype is correct. The two main argument lines, in summary form:
+Behind that distribution sit several monetary worldviews that do not reconcile.
 
-**Hard-money / sound-money line (Bitcoin-aligned):**
-- Discretionary issuance, given political incentives, tends to inflate over time; a credible hard cap is the only durable defense against debasement.
-- Predictable issuance supports long-horizon planning and savings; volatility from monetary policy is a worse cost than volatility from market pricing.
-- The historical record of fiat regimes (hyperinflations, currency debasements, post-1971 cumulative USD inflation ~85%) is treated as the dominant evidence.
-- Wei Dai's price-volatility criticism is acknowledged but treated as a transitional issue that resolves as the asset's market capitalization grows.
+**Hard cap = sound money (Bitcoin, Litecoin, Cardano, Bitcoin Cash, Ethereum Classic).** What it fears is discretion. Leave issuance to human judgment, the argument runs, and political pressure bends it toward inflation sooner or later — and §5's record of fiat is the evidence: hyperinflations, and the roughly 85% the dollar has lost to cumulative inflation since 1971. So a scarcity that cannot be reprinted is burned into the code and treated as the one durable defense against debasement. Satoshi's 21-million cap is the original form of this bet; the hard-cap coins that followed either inherited it or kept it while changing the scale.
 
-**Flexible-policy line (b-money / Ethereum / fiat-aligned):**
-- A monetary system whose purchasing power is left to market forces will experience price volatility that imposes real costs on users (Wei Dai's 2013 point); a system that targets *price stability* serves transactional use better.
-- Fixed supply with growing demand produces deflationary pressure, which incentivizes hoarding over spending; this is a known argument against gold-standard regimes that the hard-cap design inherits.
-- Discretionary tools allow counter-cyclical response to shocks (recessions, financial crises); a hard-capped system has no such tool and must absorb shocks through price.
-- Hyperinflations are political failures of central-bank independence, not inherent failures of the discretionary tool.
+**Tail emission = security budget (Monero).** Here the fear is the one the hard cap did not carry. After new issuance falls to zero, can the network's security be paid for by fees alone? That is the question the [mining-reward-exhaustion analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/) raises — its theoretical spine is Carlsten et al. (ACM CCS 2016) on the instability of a fee-only equilibrium. Monero bet on "no." Since May 2022 it issues a flat 0.6 XMR per block, forever, so miner rewards never come to rest on fees alone. The security budget that sound money gave up for the sake of scarcity, Monero keeps buying with a gentle, permanent issuance.
 
-The two lines have been articulated at length on both sides; the documentary record (Wei Dai 2013, [Adam Back's monetary writings](/BitcoinArchive/participants/adam-back/), various Ethereum and Solana foundation publications) preserves them as live positions rather than settled questions.
+**Dynamic response + burn = usage-linked (Ethereum).** As §7 lays out, Ethereum sets no cap, holds issuance down to what validator security needs, and burns the base fee under EIP-1559. The aim is a scarcity that runs the opposite way from a hard cap: the more the network is used, the more supply shrinks. The community's own term — "ultrasound money," a jab at Bitcoin's "sound money" — states the bet out loud: make scarcity out of usage, not out of a ceiling.
 
-The [security-budget literature](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/) — Carlsten et al. (ACM CCS 2016) and follow-ups — adds a third axis the early debate did not explicitly engage: whether a fixed-supply regime can sustain proof-of-work security after issuance ends, or whether the fee-only equilibrium is unstable. This is a *consequence* question downstream of the supply-design choice rather than a position in the original debate.
+**Fixed-rate inflation = a spending currency that resists hoarding (Dogecoin).** The scarcity sound money counts as a virtue, this design counts as a defect: a thing worth more tomorrow gets held, not spent — which, for a currency, is death. So Dogecoin removed its cap in 2014 and issues 10,000 DOGE per block, about 5 billion a year, forever — a mild inflation that nudges spending over hoarding and keeps fees low. The bet is on "a currency you use," not "an asset you hold."
 
-## 9. Limits of this entry
+**Elastic supply = price stability (b-money).** As §2 shows, the first cypherpunk design never aimed at a fixed supply at all. It adjusted issuance against the cost of living to hold purchasing power steady. When Wei Dai, thirteen years later (§4), named Bitcoin's fixed supply a failure of monetary policy, he was standing on that starting point.
 
-- **No verdict.** This entry does not assert that fixed supply, elastic supply, or central-bank discretion is the correct design. It records that the three approaches exist, that named designers have advocated each, and that the 15-year cryptocurrency landscape distributes itself across the spectrum.
-- **No prediction.** What the cryptocurrency landscape will look like in 2050 is not knowable from the documentary record this entry summarizes. The hard-cap vs flexible-policy debate is unresolved; the entry does not pretend otherwise.
-- **Comparable data caveats.** The supply numbers in §6 reflect protocol rules as of mid-2026. Several protocols (Ethereum, Solana, Cosmos, Polkadot) have governance processes that can change issuance; the table records the current state rather than a frozen future. Bitcoin's hard cap is the most credibly fixed, because changing it would be a backwards-incompatible consensus change requiring broad coordination across node operators and the wider economic actors of the network — and that network's conservative-consensus tradition has rejected far smaller parameter changes.
-- **Stablecoins are a separate category.** USDT, USDC, DAI and similar tokens inherit the monetary properties of their backing (fiat reserves for USDT/USDC, on-chain collateral for DAI). They appear in the table for completeness, but their supply policy is downstream of someone else's monetary policy, not a primary design choice.
+What this reveals is not a ranking but a chain of bets reacting to one another's failures. Sound money reacts to the debasement fiat discretion produced; the variable-supply designs — tail emission, dynamic response, fixed-rate inflation, elastic supply — react to the different failures a hard cap produces: hoarding, the [erosion of cash use](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/), and the thinning security budget after issuance ends. Every design looks at the price another is visibly paying in the record and tries to avoid it. Fifteen years on, no consensus has formed about which is right — not because no one asked in earnest, but because each camp saw exactly what the others pay, and chose a different cost.
+
+## 9. What the record supports, and what stays open
+
+This is as far as the record reaches. How to decide supply was a genuinely open fork in 2008 — Wei Dai, whom Bitcoin cited, calls fixed supply "a particular design decision that could have been argued out of it" (§4). And each side of the fork reacts to the other's real harm, not to a hypothetical: the hard cap to the debasement fiat discretion produced; the variable-supply designs — dynamic response, tail emission, elastic supply, fixed-rate inflation — to the hoarding, the eroded cash use, and the thinning post-issuance security budget a hard cap produces. Each looked at the cost the other is visibly paying in the record, and chose a different cost. This is not a both-sides draw. It is the shape of distinct monetary worldviews, each internally consistent, each avoiding a different failure.
+
+One question stays open past that. Which worldview lasts is not something the record so far can yield. This is not the safe, opening "we can't know"; it is the residue left after weighing each design's cost and still not settling. Whether a hard cap's security budget holds after issuance ends, whether Ethereum's dynamic-response scarcity survives the swings of usage, whether an elastic supply can actually be implemented in a decentralized way — each is a question that 2140, or the decades before it, will answer, and fifteen years of record cannot.
+
+Two notes on scope. **Comparable data** — the supply figures in §6 are protocol rules as of mid-2026; several chains (Ethereum, Solana, Cosmos, Polkadot) have governance that can change issuance, so the table is a current state, not a frozen future. Bitcoin's cap is the most credibly fixed because changing it would be a backwards-incompatible consensus change, and that network's conservative tradition has rejected far smaller changes. **Stablecoins** (USDT, USDC, DAI) are a separate category — their supply policy sits downstream of their backing's monetary policy, not a primary design choice; they appear in §6's table for completeness.
 
 The Hayekian framing of the hard-cap-vs-adjustable debate — Hayek's 1976 *Denationalisation of Money* argued for *competing adjustable* private issuance, which Bitcoin replaces with a *single algorithmic fixed* schedule — is treated as a longer ideological-lineage analysis in [the Hayek-Extropian lineage entry](/BitcoinArchive/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/).
 
