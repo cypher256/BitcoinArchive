@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "ホワイトペーパーのタイトル『電子キャッシュ』は決済の仕組み。第 6 節の金は発行のたとえだ。サトシは硬い発行＋現金という一つの設計を書いた。その希少性ゆえ後年デジタルゴールドへ寄った経緯を読む。"
+description: "ホワイトペーパーのタイトル『電子キャッシュ』は決済の仕組み。第 6 節の金は発行のたとえだ。サトシは増やせない発行＋現金という一つの設計を書いた。その希少性ゆえ後年デジタルゴールドへ寄った経緯を読む。"
 isSatoshi: false
 homeOrder: 6
 tags:
