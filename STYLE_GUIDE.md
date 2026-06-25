@@ -697,6 +697,40 @@ the JA/EN canonical pairs use locale-specific punctuation:
 - The label and the note text are separated by exactly one half-width
   space, in both locales (e.g. `*[Editor: text]*`, `*[編者注：text]*`).
 
+## Native Fluency in Every Locale
+
+A translated entry must read as if written natively in its target
+language — never as a word-for-word calque of the source. This holds
+in **both directions**: an entry rendered into Japanese must read as
+natural Japanese, and an entry rendered into English must read as
+natural English. The two language versions are siblings that agree on
+facts, sources, and structure; they are not transliterations of each
+other's sentence shapes.
+
+The failure mode is carrying the source language's structure — word
+order, demonstratives, abstract-noun stacks, doubled negations — into
+the target, producing prose that parses but reads foreign. It happens
+whichever language is drafted first: an English-first draft calqued
+into Japanese breaks the Japanese, and a Japanese-first draft calqued
+into English breaks the English. Drafting one language first is fine;
+treating that first version as a mold to pour the second into is not.
+
+Procedure, applied independently per locale:
+
+1. Write each language version in that language's own idiom — not by
+   pouring the other version into a translation mold.
+2. Read each sentence and ask whether a native reader of that language
+   would find it natural.
+3. If a sentence still reads foreign, set the other version aside and
+   rewrite the thought from scratch in the target language.
+4. Keep the two versions aligned on **facts, sources, and structure**
+   (section order, the stake the entry argues) — not on sentence syntax.
+
+The Japanese-specific elaboration, with worked before/after examples,
+lives in [`STYLE_GUIDE_JA.md` § I.9](STYLE_GUIDE_JA.md) (直訳禁止 —
+自然な日本語の優先). The same standard governs English prose drafted
+from a Japanese-first source.
+
 ## Consistency Rule
 
 - Do not rewrite untouched legacy material just for stylistic cleanup.
