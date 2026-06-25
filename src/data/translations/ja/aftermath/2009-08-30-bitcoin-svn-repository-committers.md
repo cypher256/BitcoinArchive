@@ -57,7 +57,7 @@ translationStatus: complete
 | laszloh | [ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/) | r123（2010-08-04） | r123 | 1 |
 | gavinandresen | [ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/) | r165（2010-10-11） | r252（2011-09-13） | 81 |
 
-**マルッティ・マルミ（sirius-m）** は r1 の"First commit"で SVN リポジトリを作成した。サトシが Visual C++ 6.0 を使用して Windows 上で開発したコードベースを Linux に移植し、56 リビジョンまでに 21 のコミットを行った。
+**マルッティ・マルミ（sirius-m）** は r1 の"First commit"で SVN リポジトリを作成した。サトシが Visual C++ 6.0 を使用して Windows 上で開発したコードベースを Linux に移植し、21 のコミットを行ったのち、第一線の開発から退いた。
 
 **サトシ・ナカモト（s_nakamoto）** のコミット数は 252 リビジョン中およそ 160件と圧倒的に多い（[コード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)ではユニークコミット 160 件として扱う。164 という値もミラー側の数え方として流通している — 集計対象がブランチを含むか・ミラー由来の重複をどう扱うかで差が出る）。最後のリリースコミットは r201（"version 0.3.19 release"、2010年12月13日）。その 2日後、小さな修正をもう 1件 — r202（"get external ip from irc"、2010年12月15日）を入れた。r202 以降に s_nakamoto のコミットはない。
 

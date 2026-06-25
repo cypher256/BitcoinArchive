@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Nicholas Bohm"
     slug: "nicholas-bohm"
-description: "ボームの接続問題に対するサトシの率直な回答。他にノードを実行する人がいないかもしれないと認めた。IP アドレスが変わったかを尋ね、新ユーザーが接続できるよう IP を保つよう勧めた。"
+description: "ボームの接続問題に対するサトシの率直な回答。他にノードを実行する人がいないかもしれないと認めた。IP アドレスが変わったかを尋ね、新ユーザーが接続できるよう、サーバーをオンラインに保つよう勧めた。"
 isSatoshi: true
 tags:
   - "correspondence"
