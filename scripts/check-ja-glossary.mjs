@@ -84,7 +84,7 @@ const RULES = [
   { type: 'trailing-choon', deprecated: 'ブラウザ', canonical: 'ブラウザー' },
   { type: 'trailing-choon', deprecated: 'アダプタ', canonical: 'アダプター' },
   { type: 'trailing-choon', deprecated: 'ヘッダ', canonical: 'ヘッダー' },
-  { type: 'trailing-choon', deprecated: 'フィルタ', canonical: 'フィルター' },
+  { type: 'trailing-choon', deprecated: 'フィルタ', canonical: 'フィルター', except: ['リング'] },
   { type: 'trailing-choon', deprecated: 'レジスタ', canonical: 'レジスター' },
   { type: 'trailing-choon', deprecated: 'コンパイラ', canonical: 'コンパイラー' },
   { type: 'trailing-choon', deprecated: 'デバッガ', canonical: 'デバッガー' },
@@ -406,7 +406,13 @@ function findViolations(content, rule, file, jaRanges) {
     // Match deprecated NOT followed by ー, and not preceded by a
     // katakana letter (which would mean the match is a substring of a
     // longer unrelated word — e.g. センサ inside コンセンサス).
-    pattern = new RegExp('(?<![\\u30A0-\\u30FF])' + rule.deprecated + '(?!ー)', 'g');
+    // `rule.except` lists katakana suffixes that form a legitimate longer
+    // word in which the short form is correct and is NOT a 末尾長音 omission
+    // (e.g. フィルタ + リング = 「フィルタリング」, the canonical JA for
+    // "filtering" — the medial フィルタ must not be "corrected" to フィルター).
+    // Such suffixes extend the negative lookahead so the longer word passes.
+    const exceptAlt = (rule.except || []).map((e) => '|' + e).join('');
+    pattern = new RegExp('(?<![\\u30A0-\\u30FF])' + rule.deprecated + '(?!ー' + exceptAlt + ')', 'g');
   } else if (rule.type === 'word') {
     // Word-boundary match so lowercase English terms like "nonce" are
     // caught in prose ("nonce 探索") but not inside camelCase code
