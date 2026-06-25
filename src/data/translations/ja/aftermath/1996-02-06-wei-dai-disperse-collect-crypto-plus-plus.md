@@ -8,7 +8,7 @@ author: "Wei Dai"
 participants:
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "サイファーパンクメーリングリストでの Disperse/Collect 1.0 発表。自作の Crypto++ライブラリ使用と明記し、ダイが理論家ではなく実装者であったことを示す。"
+description: "サイファーパンクメーリングリストでの Disperse/Collect 1.0 発表。自作の Crypto++ライブラリ使用と明記し、ダイが実際に手を動かす実装者でもあったことを示す。"
 isSatoshi: false
 tags:
   - "wei-dai"

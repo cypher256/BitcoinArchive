@@ -41,7 +41,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2008年4月、[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)が自身のブログ「Unenumerated」のコメント欄で、ビットゴールドの実装協力を公に呼びかけた。
+2008年4月、[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)が自身のブログ「Unenumerated」で、ビットゴールドの実装協力を公に呼びかけた。
 
 <!-- quote: q1 -->
 > ビットゴールドはデモ——実験的な市場（例えば、本物のシステムに必要な複雑なセキュリティの代わりに信頼できる第三者を置いたもの）があれば、大いに役立つのだが。誰かコードを書くのを手伝ってくれないか？
