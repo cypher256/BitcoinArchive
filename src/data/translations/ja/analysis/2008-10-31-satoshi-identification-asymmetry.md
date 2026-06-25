@@ -12,7 +12,7 @@ participants:
     slug: "gavin-andresen"
 description: "サトシ識別の非対称性 — 公開された追跡試行、残存材料、続く不明状態 — の対比を記述的に整理。身元仮説総覧と匿名性アーキテクチャの対エントリ。"
 isSatoshi: false
-homeOrder: 4
+homeOrder: 6
 tags:
   - "satoshi-identity"
   - "satoshi-anonymity"

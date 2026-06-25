@@ -26,7 +26,6 @@ participants:
     slug: "vitalik-buterin"
 description: "Genealogy of every Bitcoin protocol fork that left a separate chain alive (Bitcoin Cash, SV, Gold) and the adjacent cryptocurrencies derived from Bitcoin (Namecoin, Litecoin, Dogecoin)."
 isSatoshi: false
-homeOrder: 10
 tags:
   - "fork"
   - "altcoin"

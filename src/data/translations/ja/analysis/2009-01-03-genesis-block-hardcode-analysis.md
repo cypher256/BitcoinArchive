@@ -12,7 +12,6 @@ participants:
     slug: "craig-wright"
 description: "Bitcoin v0.1 ソースから見たジェネシスブロックの技術分析: ハードコード自動構築、5 日空白のタイムスタンプ・アーティファクト解釈、認識論／存在論の二層作者論、PoW 余裕、秘密鍵保有性。"
 isSatoshi: false
-homeOrder: 12
 tags:
   - "genesis-block"
   - "source-code"

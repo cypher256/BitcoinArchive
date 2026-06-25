@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Beginner's visual guide to Bitcoin — 30 terms across 8 chapters, each with a diagram. Coins as UTXOs, transactions as flows, blocks chained by hashes, mining, mempool, longest-chain consensus."
 isSatoshi: false
-homeOrder: 2
+homeOrder: 4
 tags:
   - "beginner-guide"
   - "terminology"

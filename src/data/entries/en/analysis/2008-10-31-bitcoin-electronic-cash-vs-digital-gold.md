@@ -12,7 +12,7 @@ participants:
     slug: "wei-dai"
 description: "The whitepaper's title names a payment system; section 6's gold is an issuance analogy. Satoshi designed one thing — hard issuance, cash use — whose scarcity later tilted it toward digital gold."
 isSatoshi: false
-homeOrder: 6
+homeOrder: 3
 tags:
   - "analysis"
   - "monetary-policy"

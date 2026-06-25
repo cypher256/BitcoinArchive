@@ -12,7 +12,6 @@ participants:
     slug: "hal-finney"
 description: "Editorial forensic reading of Satoshi's operational environment during Bitcoin v0.1 launch week (Jan 8-12, 2009): \"from where I am\" in the Jan 10 email to Finney, and dense activity cadence."
 isSatoshi: false
-homeOrder: 14
 tags:
   - "analysis"
   - "satoshi-identity"

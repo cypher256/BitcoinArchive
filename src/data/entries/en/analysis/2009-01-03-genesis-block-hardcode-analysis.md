@@ -12,7 +12,6 @@ participants:
     slug: "craig-wright"
 description: "Technical analysis of Bitcoin's genesis block from v0.1 source: hardcode auto-construction, the five-day gap as timestamp artifact, two-layer authorship reading, PoW headroom, key possession."
 isSatoshi: false
-homeOrder: 12
 tags:
   - "genesis-block"
   - "source-code"

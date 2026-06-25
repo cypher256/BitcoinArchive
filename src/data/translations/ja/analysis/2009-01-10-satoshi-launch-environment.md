@@ -12,7 +12,6 @@ participants:
     slug: "hal-finney"
 description: "Bitcoin v0.1 リリース週（2009 年 1 月 8〜12 日）のサトシ運用環境を 2 一次資料から読む: 1 月 10 日のフィニー宛「from where I am」、同週の活動密度。"
 isSatoshi: false
-homeOrder: 14
 tags:
   - "analysis"
   - "satoshi-identity"
