@@ -52,7 +52,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 BIP の Rationale（根拠）は、ナカモトのオリジナルの Bitcoin 実装にあった nSequence 番号を使用したトランザクション置換メカニズムから概念を明示的に辿っている。サトシは 2010年12月に BitcoinTalk でこの概念を説明し、送信者がより高い手数料でトランザクションを更新できる方法を述べた。この機能は DoS 攻撃の懸念から Bitcoin Core から削除された。
 
-**2010年12月の接続：**
+**2010年12月のつながり：**
 
 2010年12月10日、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)（当時[「retep」](/BitcoinArchive/ja/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/)として投稿）はサトシのトランザクション置換の説明に対して技術的な指摘で返信した：
 

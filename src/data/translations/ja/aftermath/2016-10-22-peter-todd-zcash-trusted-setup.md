@@ -36,7 +36,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)は、2016年10月22〜23日に行われた Zcash のトラステッドセットアップセレモニーに、6人の参加者の 1人として参加した。Zcash 共同創設者のズーコ・ウィルコックスが 9月26日に Twitter DM で参加を依頼し、トッドは会話を Signal に移すよう求めた。このような依頼自体が「かなり大きな脅威」にさらされることだと指摘した。
+[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)は、2016年10月22〜23日に行われた Zcash のトラステッドセットアップセレモニーに、6人の参加者の 1人として参加した。Zcash 共同創設者のズーコ・ウィルコックスが 9月26日に Twitter DM で参加を依頼し、トッドは会話を Signal に移すよう求めた。この役割を誰かに依頼すること自体が、その人物を重大な脅威にさらすのだと指摘した。
 
 **セレモニーの目的：**
 
