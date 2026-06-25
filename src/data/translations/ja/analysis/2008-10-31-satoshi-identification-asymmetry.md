@@ -205,7 +205,7 @@ COPA 判決は、サトシ身元の自己主張に対する公的に最も長く
 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | 3 通 | Gwern アーカイブ |
 | [ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)、[ニコラス・ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)、その他 | 小規模な通信 | (各種) |
 
-このフォレンジック・サーフェスは、不在の人物が残す痕跡ではない。敵対的帰属研究が通常依拠するすべてのカテゴリ — 大量の長文プロース、プログラミングスタイル、タイムゾーン的な特徴、バージョン管理履歴、言語語調の不一致 — がサトシに関する公開記録上に存在する。（このサーフェスがいかにして持続的な匿名性と共存したかの層別の全体像は[匿名性アーキテクチャ分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)に記載。）
+このフォレンジック・サーフェスは、不在の人物が残す痕跡ではない。敵対的帰属研究が通常依拠するすべてのカテゴリ — 大量の長文の散文、プログラミングスタイル、タイムゾーン的な特徴、バージョン管理履歴、言語語調の不一致 — がサトシに関する公開記録上に存在する。（このサーフェスがいかにして持続的な匿名性と共存したかの層別の全体像は[匿名性アーキテクチャ分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)に記載。）
 
 ## 3. 続く不明状態
 

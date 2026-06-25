@@ -83,7 +83,7 @@ BitcoinTalk の記録における knightmb のもう一つの定型は、ハー�
 
 複数の二次情報源が、knightmb は一時期およそ 371,000 BTC——初期ビットコイン供給量のおよそ 10%——を保有していたと述べている。この主張は古いブログ記事、学術論文、AI 生成のプロフィールなどに広がっている。本アーカイブの一次資料はこれを支持しない。それどころか、直接矛盾する材料を含んでいる。
 
-由来は誤帰属である可能性が高い。[2010 年 7 月 18 日](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-431/2010-07-18-knightmb-msg3952/)、wobber というユーザーが、約 1,000 コアでマイニングする初期マイナーがいて、wobber の見積もりではそのマイナーが既に流通している全 BTC のおよそ 10% を生成しているはずだ、と投稿した。wobber は対象を明示している——William Pitock (ハンドル名「Nenolod」)、Twitter リンク付き——でその人物を特定していた。
+由来は誤帰属である可能性が高い。[2010 年 7 月 18 日](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-431/2010-07-18-knightmb-msg3952/)、wobber というユーザーが、約 1,000 コアでマイニングする初期マイナーがいて、wobber の見積もりではそのマイナーが既に流通している全 BTC のおよそ 10% を生成しているはずだ、と投稿した。wobber は対象を明示していた——William Pitock (ハンドル名「Nenolod」)、Twitter リンク付き。
 
 knightmb はこれに対し、wobber の主張を引用したうえで否定する形で返信した:
 
