@@ -169,9 +169,9 @@ function tagWeight(count: number, max: number): number {
       </div>
       <p class="analyses-subtitle">{t('home.analysesSubtitle' as any)}</p>
       <div class="analyses-grid">
-        {homeAnalyses.map((entry: any) => (
+        {homeAnalyses.map(({ entry, updatedAt }: any) => (
           <a href={localePath(`/entries/${entry.id}/`, lang)} class="analysis-card">
-            <span class="analysis-date">{new Date(entry.data.date).toISOString().slice(0, 10)}</span>
+            <span class="analysis-date">{t('entry.updated' as any)} {new Date(updatedAt ?? entry.data.date).toISOString().slice(0, 10)}</span>
             <span class="analysis-title">{entry.data.title}</span>
             <span class="analysis-desc">{entry.data.description}</span>
           </a>
