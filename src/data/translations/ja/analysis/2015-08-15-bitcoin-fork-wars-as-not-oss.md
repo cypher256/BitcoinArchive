@@ -118,7 +118,7 @@ gantt
 >
 > — マイク・ハーン、[「ビットコイン実験の決着」](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) (2016 年 1 月 14 日)
 
-[アンドレセンのリードメンテナ就任表明](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) (2010 年 12 月 19 日) はサトシの沈黙より 4 か月前のもので、対象はコードベースであってプロトコルではなかった。2011 年以後、コードベースには保守者がいたが、プロトコルには誰もいなかった。ビットコイン財団 (2012 年 9 月設立) はその役割を引き受けようとしたが、2015 年までに財政的に破綻している。コードベースの保守者 (アンドレセン、続いて 2014 年 4 月以降の[ヴラディミール・ヴァン・デア・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/)) は事実上の決定者だったが、その権威は慣習的なものであって、指名されたものではなかった。
+[アンドレセンのリードメンテナ就任表明](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) (2010 年 12 月 19 日) はサトシの沈黙より 4 か月前のもので、対象はコードベースであってプロトコルではなかった。2011 年以後、コードベースには保守者がいたが、プロトコルには誰もいなかった。ビットコイン財団 (2012 年 9 月設立) はその役割を引き受けようとしたが、2015 年までに財政的に破綻している。コードベースの保守者 (アンドレセン、続いて 2014 年 4 月以降の[ウラジミール・ファン・デル・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/)) は事実上の決定者だったが、その権威は慣習的なものであって、指名されたものではなかった。
 
 これがあとで起きたすべての前提である。語彙の非対称、経済的重み、三層構造は、この真空に流れ込んだものである。
 
@@ -202,6 +202,6 @@ flowchart LR
 
 §1-§4 の読みはひとつの読みとして提示するものである。主張するのは次の一点だけである — 参加者自身の枠付け (権威・名前・真空・アイデンティティ) は、コードの上に乗った実在の荷重を記述したものであって、普通のオープンソースの意見対立を誤認したものではない。
 
-本「フォーク戦争はオープンソースの話ではない」分析は、本分析が位置付ける 2015〜2016 年の一次記録のうち二件によって参照される。 [2015 年 8 月の Bitcoin XT 公開エントリ](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/)は本分析の構造的読解を、 XT 事件が含まれるより広い文脈として読む。 [マイク・ハーン「決着」エッセイ](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)は本分析を、再ブランディングとフォーク戦争が何になり果てたかについての統治失敗事例研究として引用する。
+本「フォーク戦争はオープンソースの話ではない」分析は、ここで文脈づける 2015〜2016 年の一次記録のうち二件から参照されている。 [2015 年 8 月の Bitcoin XT 公開エントリ](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/)は本分析の構造的読解を、 XT 事件が含まれるより広い文脈として読む。 [マイク・ハーン「決着」エッセイ](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)は本分析を、再ブランディングとフォーク戦争が何になり果てたかについての統治失敗事例研究として引用する。
 
 *[編者注：本記事は 2014-2017 年のビットコインに揃っていた 3 つの構造的条件を集め、それらを系として読む。特定の人物の動機についての主張は意図的に避けた。主張するのは構造であって、心理ではない。語彙の軸については [Bitcoin Core 改称が権威構造に与えた影響の考察](/BitcoinArchive/ja/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/)、出来事の連鎖については[ビットコインの家系図](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)を参照。]*
