@@ -53,7 +53,7 @@ translationStatus: complete
 <!-- speaker: Satoshi Nakamoto -->
 > 「ありがとう。b-moneyは読んだことがなかったが、私のアイデアはまさにその出発点から始まっている。私のシステムが追加した主なものは、分散タイムスタンプサーバーを支えるためにプルーフ・オブ・ワークを使うことだ。」
 
-2026 年 4 月、[NYT とカフィエロ・カレイロウは、フォーラム投稿とメールの文体計量解析でバックをサトシの最有力候補](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)と名指した。バックは公的に否定した。この仮説は[専用の正体仮説分析](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)で複数階層のうちの一つとして扱われている。
+2026 年 4 月、[NYT と記者カレイロウは、フォーラム投稿とメールの文体計量解析でバックをサトシの最有力候補](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)と名指した。バックは公的に否定した。この仮説は[専用の正体仮説分析](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)で複数階層のうちの一つとして扱われている。
 
 アダム・バック（1970 年、英国生まれ）は暗号学者、サイファーパンク。エクセター大学でコンピューターサイエンスの博士号を取得。2014 年に Blockstream を共同設立し、同社の CEO を務めている。
 

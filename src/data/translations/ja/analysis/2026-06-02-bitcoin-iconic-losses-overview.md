@@ -83,7 +83,7 @@ flowchart TD
 
 | 事案 | 年 | 数量 | 失敗モード |
 |---|---|---|---|
-| [Mt. Gox 倒産](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/) | 2014 年 | 約 85 万 BTC (後に約 65 万 BTC へ修正) | 長期のトランザクション順応性悪用による窃盗 + 運用上の管理失敗、 2024 年に債権者への部分返済が開始 (10 年後) |
+| [Mt. Gox 倒産](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/) | 2014 年 | 約 85 万 BTC (後に約 65 万 BTC へ修正) | 長期にわたるトランザクション展性の悪用による窃盗 + 運用上の管理失敗、 2024 年に債権者への部分返済が開始 (10 年後) |
 | [QuadrigaCX 崩壊 / コットン死去](/BitcoinArchive/ja/entries/aftermath/2019-04-08-quadrigacx-gerald-cotten-death/) | 2018-19 年 | 約 2.5 億カナダドル | 単独保管者の CEO が死去、後に OSC が「長期にわたる詐欺」と認定、債権者回収は約 13% |
 | [FTX 倒産](/BitcoinArchive/ja/entries/aftermath/2022-11-11-ftx-collapse/) | 2022 年 | 顧客資金約 80 億ドル | 創業者サム・バンクマン=フリードによる大規模不正流用、 25 年の禁固刑、部分回収が進行中 |
 
