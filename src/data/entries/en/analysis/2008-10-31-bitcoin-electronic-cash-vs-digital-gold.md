@@ -86,7 +86,7 @@ This is where the page joins its two neighbours. The [digital-gold structural-fe
 
 ## So does it still dream of electronic cash?
 
-So the title's question stands in the present tense, not the past. Now that it is held as gold, does Bitcoin still reach for the use it was designed for — electronic cash? The Lightning Network, El Salvador's legal-tender experiment, the on-chain-cash efforts — the hand is still out. The cash face of the design did not vanish; it is only covered by the gold one. It was not built to be hoarded. It was built hard, and the hardness made it hoardable. And still it dreams of being spent.
+So this question stands in the present tense, not the past. Now that it is held as gold, does Bitcoin still reach for the use it was designed for — electronic cash? The Lightning Network, El Salvador's legal-tender experiment, the on-chain-cash efforts — the hand is still out. The cash face of the design did not vanish; it is only covered by the gold one. It was not built to be hoarded. It was built hard, and the hardness made it hoardable. And still it dreams of being spent.
 
 ## Limits of this reading
 
