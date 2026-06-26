@@ -87,7 +87,12 @@ export function remarkEditorialMarker() {
           children: [{ type: 'text', value: labelText }],
         },
         { type: 'text', value: ' ' },
-        ...bodyHast,
+        {
+          type: 'element',
+          tagName: 'span',
+          properties: { className: ['editorial-note-body'] },
+          children: bodyHast,
+        },
       ];
     });
   };
