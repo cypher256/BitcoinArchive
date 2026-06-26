@@ -60,7 +60,7 @@ translationStatus: complete
 
 ## なぜ価値を持つのか——サトシの答え
 
-ビットコインのようなものが、そもそもなぜ価値を持つのか。その最も明快な言葉は、ホワイトペーパーではなく、[2010 年 8 月 27 日の BitcoinTalk 投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/)にある。ビットコインはミーゼスの回帰定理に反するのか、と争うスレッドで、サトシは思考実験で答えた。
+ビットコインのようなものが、そもそもなぜ価値を持つのか。その最も明快な言葉は、ホワイトペーパーではなく、[2010 年 8 月 27 日の BitcoinTalk 投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/)にある。ミーゼスの回帰定理は、貨幣の価値は元をたどれば貨幣になる前の用途——金なら装飾や工業——に行き着く、と説く。その前史を持たないビットコインは、定理どおりなら貨幣になれない。それでも価値はついた。回帰定理に反するように見えるこのパラドックスをめぐるスレッドで、サトシは思考実験で答えた。
 
 <!-- quote: q1 -->
 > 思考実験として、金と同じくらい希少だが以下の性質を持つ卑金属があると想像してほしい……そして一つの特別で魔法のような性質：通信チャネルを通じて転送できる。

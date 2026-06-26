@@ -60,7 +60,7 @@ And yet today Bitcoin is called "digital gold," rarely spent, mostly held. This 
 
 ## Why it has value at all — Satoshi's answer
 
-The clearest statement of why a thing like Bitcoin could have value is not in the whitepaper. It is a [BitcoinTalk post from August 27, 2010](/BitcoinArchive/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/), in a thread arguing whether Bitcoin violated the Mises regression theorem. Satoshi answered with a thought experiment:
+The clearest statement of why a thing like Bitcoin could have value is not in the whitepaper. It is a [BitcoinTalk post from August 27, 2010](/BitcoinArchive/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/). The Mises regression theorem holds that a money's value traces back to some use the good had before it was money — for gold, ornament and industry. Bitcoin had no such prior use, so by the theorem it could never have become money. And yet it did. That apparent paradox — Bitcoin seeming to defy the theorem — is what the thread argued over, and Satoshi answered it with a thought experiment:
 
 <!-- quote: q1 -->
 > "As a thought experiment, imagine there was a base metal as scarce as gold but ... not useful for any practical or ornamental purpose ... and one special, magical property: can be transported over a communications channel."
