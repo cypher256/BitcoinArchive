@@ -28,7 +28,7 @@ participants:
     slug: "peter-todd"
   - name: "Isamu Kaneko"
     slug: "isamu-kaneko"
-description: "Recurring Satoshi candidates aligned across four independent layers — profile match, stylometric attribution, direct correspondence, and development environment. Names no leading candidate."
+description: "Recurring Satoshi candidates aligned across four independent layers — profile match, stylometric attribution, direct correspondence, and development environment."
 isSatoshi: false
 homeOrder: 1
 tags:
@@ -98,9 +98,7 @@ Ten named candidates, seven dimensions of Satoshi's documented public-record out
 - the approximately 18-month intensive coding window from mid-2007 through the v0.1 release in January 2009 (implementation work substantially complete by August 2008; whitepaper written after the code was substantially complete, per Satoshi to Hal Finney on November 10, 2008), within the approximately 2-year pre-release work Satoshi later put at "Since 2007" / "2 years of development before release";
 - the April 2011 withdrawal.
 
-The four structural layers are not interchangeable; each narrows the candidate space differently and none selects a unique person. Candidates with dedicated hypothesis entries in this archive are treated more deeply there (see the "Entry" column in each table); the other candidates are treated within this entry.
-
-This entry does not name "the most likely Satoshi candidate."
+The four structural layers are not interchangeable; each narrows the candidate space differently. Candidates with dedicated hypothesis entries in this archive are treated more deeply there (see the "Entry" column in each table); the other candidates are treated within this entry.
 
 **The 2024-2026 identification wave.** Four major-press / documentary identifications have appeared since late 2024, each resting on a different evidence base: the [HBO Money Electric documentary on Peter Todd](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (October 2024, forum-post-timing argument); the [NYT Carreyrou investigation of Adam Back](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (April 2026, stylometric, single candidate); the [Finding Satoshi multi-person reading](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) (April 2026, activity-window + family testimony — the co-authorship naming, argument, and counter-evidence are in §8.1); and the [Murphy v DHS FOIA action](/BitcoinArchive/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) (April 2025, government-record subpoena route, a different evidence channel — argument and counter-evidence in §8.2). None has produced cryptographic confirmation. The dimensions in the comparison tables below incorporate this wave's evidence where it affects a candidate's status.
 
@@ -205,7 +203,7 @@ Stylometric Satoshi-identification work is a separate methodological tradition f
 
 ### 3.2 Reading the table
 
-**Reading the stylometric layer:** Szabo emerges as the most-frequently-top-ranked candidate — three of the four investigations place Szabo highest among the named candidates: Skye Grey 2013 (named), Aston 2014 (named), and the [Bitcoin Institute reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) of van Dorst's published data (Szabo top of 5). Cafiero / Carreyrou 2026 is the outlier in naming Adam Back, with Cafiero describing that result as inconclusive (Hal Finney near tie). The convergence is partial, however: [van Dorst's full 75,000-author corpus](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) contains 594 unnamed authors closer to Satoshi than Szabo, and van Dorst himself declines to name a leading candidate. Stylometric attribution narrows the candidate space but does not select a unique person.
+**Reading the stylometric layer:** Szabo emerges as the most-frequently-top-ranked candidate — three of the four investigations place Szabo highest among the named candidates: Skye Grey 2013 (named), Aston 2014 (named), and the [Bitcoin Institute reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) of van Dorst's published data (Szabo top of 5). Cafiero / Carreyrou 2026 is the outlier in naming Adam Back, with Cafiero describing that result as inconclusive (Hal Finney near tie). The convergence is partial, however: [van Dorst's full 75,000-author corpus](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) contains 594 unnamed authors closer to Satoshi than Szabo, and van Dorst himself declines to name a leading candidate.
 
 ## 4. Layer 3 — Direct correspondence
 
@@ -252,7 +250,7 @@ Broken down by **type of contact**, the structure differs:
 - **Contact exists** can also serve as evidence that Satoshi treated them as third parties — Satoshi's pre-launch emails to Back and Wei Dai function as the central counter-evidence in both hypotheses (Back-as-Satoshi, Wei-Dai-as-Satoshi) (see [Satoshi identification asymmetry](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) §2).
 - **No contact** splits into two readings — successful concealment or non-overlap of activity. Szabo was active in public discourse but had no direct exchange with Satoshi; Sassaman and Kaneko were active in adjacent but non-overlapping technical fields; Dorian, Wright, and Le Roux are name-match or self-claim with no operational presence.
 
-The presence-or-absence of correspondence does not by itself select a hypothesis, but combined with the §2 profile match and the §3 stylometric layer it functions as a third structural layer that locates each candidate's position in the candidate space.
+Combined with the §2 profile match and the §3 stylometric layer, correspondence functions as a third structural layer that locates each candidate's position in the candidate space.
 
 ## 5. Layer 4 — Development environment
 
@@ -316,7 +314,7 @@ Each observation below is anchored in one or more of the four layers (§2 profil
 ## 7. Overall limits
 
 - This entry does not present new evidence. It compiles publicly available material into one comparison.
-- This entry does not name "the most likely Satoshi candidate." Each of the four layers is necessary but not sufficient; external status is in some cases decisive.
+- Each of the four layers is necessary but not sufficient; external status is in some cases decisive.
 - **The color-coded labels in §2 and §5 are not interchangeable, even though both tables use 🟢 / 🟡 / 🔴.** §2's scale measures match against the seven profile dimensions; §5's scale measures alignment against Phase 1's Windows-MSVC-C++ shipping profile. Read each table with its own section's legend. In both cases the labels are qualitative summaries, not numerical scores. They visualize judgments stated elsewhere (in individual hypothesis entries, or in widely-held readings of the public record). Different qualified readers may place individual cells differently.
 - **The four layers (§2 profile match, §3 stylometric, §4 direct correspondence, §5 development environment) are not interchangeable.** Each narrows the candidate space differently. A candidate ruled out by one layer is not necessarily ruled out by another, and convergence across layers does not establish identification. See §6 for the multi-layer convergence observation.
 - This entry assumes the public record is the relevant evidence base. Hypotheses based on private channels, claimed unverifiable communications, or unsourced personal recollection are not addressed here.
