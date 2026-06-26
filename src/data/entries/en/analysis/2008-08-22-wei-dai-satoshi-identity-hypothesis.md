@@ -198,7 +198,6 @@ For comparison with other named-candidate hypotheses, see the [Satoshi-identity 
 ## 5. Limits of this entry
 
 - This entry does not present new evidence. It compiles material from the August 2008 email exchange, Wei Dai's January 2014 AALWA retrospective, the Crypto++ inclusion record, the Bitcoin Institute reanalysis of van Dorst's corpus, and the standing public discussion of Wei Dai as a Satoshi candidate.
-- This entry does not name "the most likely Satoshi candidate."
 - Wei Dai's hypothesis differs from candidates with a single triggering articulation (Greenberg 2014 for Hal Finney, NYT 2026 for Adam Back, HBO 2024 for Todd) — Wei Dai has been a structural candidate from before Bitcoin's launch by virtue of the whitepaper citation, with no single major-press articulation. The entry uses the August 22, 2008 contact date as its anchor because that is when the structural conditions for the hypothesis were established.
 - If new evidence surfaces — direct documentary links beyond the three-email correspondence, technical fingerprints in Bitcoin v0.1 matching Wei Dai's other code beyond the standard Crypto++ inclusion, or comments by Wei Dai that contradict the 2014 retrospective — this entry should be updated.
 

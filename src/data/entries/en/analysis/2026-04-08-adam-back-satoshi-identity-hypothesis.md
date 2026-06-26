@@ -191,7 +191,6 @@ For comparison with other named-candidate hypotheses, see the [Satoshi-identity 
 ## 5. Limits of this entry
 
 - This entry does not present new evidence. It compiles material from the 2026 NYT investigation, Back's responses, and existing archive material on the August 2008 email exchange and the 2024 COPA testimony.
-- This entry does not name "the most likely Satoshi candidate."
 - Cafiero's "Hal Finney nearly tied" outcome is treated as material evidence against the *uniqueness* of the Back identification (see the [Hal Finney = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) and the documented [race-day alibi](/BitcoinArchive/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/) that argues against Finney specifically).
 - If new evidence surfaces — direct documentary links beyond the August 2008 emails, technical fingerprints in Bitcoin v0.1 matching Back's other published code, or comments by Back contradicting his prior public position — this entry should be updated.
 

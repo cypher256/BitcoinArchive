@@ -234,7 +234,6 @@ For comparison with other named-candidate Satoshi-identity hypotheses, see the [
 ## 5. Limits of this entry
 
 - This entry does not present new evidence. It compiles publicly available material and frames the case at the same level of detail on both sides.
-- This entry does not name "the most likely Satoshi candidate."
 - Skye Grey's pseudonymous status means the stylometric analysis itself is not subject to the verification a named author's analysis would be. The 2014 Aston University study is more verifiable but its methodology has been contested by later commentators.
 - If new evidence surfaces — direct documentary links, technical fingerprints in the v0.1 code matching Szabo's other published code, or comments by Szabo contradicting his prior public position — this entry should be updated.
 

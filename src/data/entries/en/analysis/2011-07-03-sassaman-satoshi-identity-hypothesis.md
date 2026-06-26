@@ -155,7 +155,6 @@ For comparison with other named-candidate Satoshi-identity hypotheses, see the [
 ## 5. Limits of this entry
 
 - This entry does not present new evidence. It compiles publicly available material and frames the case at the same level of detail on both sides.
-- This entry does not name "the most likely Satoshi candidate."
 - If new evidence surfaces — direct documentary links, technical fingerprints in the v0.1 code matching Sassaman's other published code, comments by Patterson or other witnesses — this entry should be updated.
 
 This hypothesis is referenced from the [Len Sassaman biography](/BitcoinArchive/participants/len-sassaman/) (the subject of the hypothesis), [the Adam Back identity hypothesis](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) and [the Szabo identity hypothesis](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) and [the Isamu Kaneko identity hypothesis](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) (as one of the peers in the same candidate landscape), and [the 2026 van-Dorst-corpus reanalysis on named candidates](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) (which weighs the Sassaman framing against quantitative stylometric methods).

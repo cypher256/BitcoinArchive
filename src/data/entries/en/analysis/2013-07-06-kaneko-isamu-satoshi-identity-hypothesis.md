@@ -147,7 +147,6 @@ For comparison with other named-candidate Satoshi-identity hypotheses, see the [
 ## 6. Limits of this entry
 
 - This entry does not present new evidence. It compiles publicly available material and frames the case at the same level of detail on both sides.
-- This entry does not name "the most likely Satoshi candidate."
 - This entry does not engage with statements made by Kaneko's surviving family. The editorial choice is to keep family commentary out of the hypothesis frame; if those statements eventually become part of the documentary public record on the identity question (rather than personal recollection), that decision should be revisited.
 - This entry does not draw any narrative connection between Kaneko's death and the Bitcoin-authorship question. The cause of death (myocardial infarction) is documented, the timing relative to Satoshi's silence is two years, and the entry does not treat the death as material to the hypothesis.
 
