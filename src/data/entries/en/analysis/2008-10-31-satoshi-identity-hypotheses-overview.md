@@ -413,4 +413,20 @@ Each observation below is anchored in one or more of the four layers (§2 profil
 - The set of named candidates is not closed. Hypotheses involving other named persons or groups exist in public discourse; this entry covers the ten most-discussed.
 - For full treatment of candidates with dedicated entries, see the "Entry" column in §2.1's table. Other candidates do not have dedicated hypothesis entries in this archive.
 
+## 9. Hypotheses beyond a single candidate
+
+§2–§6 treat hypotheses that name a single individual. But "Satoshi was a single person" is itself a hypothesis, and public discourse holds readings beyond the single-candidate frame. This section treats them under the same record discipline (primary sources, sourced claims). As with the named candidates, the set of forms here is not closed.
+
+### 9.1 Multiple-person theory
+
+The [April 2026 documentary *Finding Satoshi*](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) presents Satoshi Nakamoto as a collaboration between [Hal Finney](/BitcoinArchive/participants/hal-finney/) (the implementation) and [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) (drafting the whitepaper), drawing on activity-time analysis, family testimony, and a motive reading from a former FBI profiler. Finney and Sassaman are treated as separate single candidates in §2–§6; this reading binds them into one co-authorship hypothesis. The counter-evidence overlaps with the single-candidate entries — Jameson Lopp and Adam Back point to the timing conflict with Finney's April 18, 2009 race-day alibi, the mismatch between Sassaman's KU Leuven tenure and the proposed activity window, and the absence of Patoshi-scale balances in either estate. The co-authorship reading carries the added burden of explaining a Finney–Sassaman collaboration that left no documentary trace.
+
+### 9.2 Organization / government-agency theory
+
+The [Murphy v DHS FOIA lawsuit (April 2025)](/BitcoinArchive/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) seeks internal records behind a 2019 on-stage statement by DHS special agent Rana Saoud that DHS agents had traveled to California and met "the four people behind the creation of Bitcoin." The four are unidentified in public reporting; if the records are released, they could establish the facts of the 2019 meeting without recourse to stylometric inference. As related context, Satoshi disappeared shortly after Gavin Andresen, replying to Satoshi's final email (April 26, 2011), [disclosed an invitation from In-Q-Tel (the CIA-linked strategic investment firm) to present Bitcoin](/BitcoinArchive/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/) — a sequence often cited in government-involvement discussion (though the counter-argument notes Satoshi's withdrawal was already gradual over the preceding months).
+
+### 9.3 Other forms
+
+Readings that fit neither a single individual, multiple people, nor an organization — such as the pseudonym being a construct rather than one person — also circulate in public discourse. This archive holds no dedicated treatment of them at present. As verifiable primary sources appear for a given form, it is added here.
+
 This identity-hypotheses overview is the upstream framing for [the Wei Dai identity hypothesis](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/). The Wei Dai entry references this overview across multiple sections — the §2.1 candidate grouping, the §2.4 methodology authority, and the §4 comparison anchor — relying on the overview's Group A taxonomy and necessary-but-not-sufficient evaluation framework as the structural scaffold its own argument is built on.
