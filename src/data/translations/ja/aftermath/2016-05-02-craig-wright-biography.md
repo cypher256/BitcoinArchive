@@ -27,6 +27,8 @@ secondarySources:
     url: "https://www.bbc.co.uk/news/technology-36168863"
   - name: "Wired — Is Craig Wright Satoshi Nakamoto? (December 8, 2015)"
     url: "https://www.wired.com/2015/12/bitcoins-creator-satoshi-nakamoto-is-probably-this-unknown-australian-genius/"
+  - name: "Law Gazette — 'Fake Satoshi' hit with costs bill over AI evidence (March 2025)"
+    url: "https://www.lawgazette.co.uk/news/fake-satoshi-hit-with-costs-bill-over-ai-evidence/5122587.article"
 relatedEntries:
   - "aftermath/2015-12-08-wired-gizmodo-craig-wright-claims"
   - "aftermath/2016-05-02-craig-wright-bbc-economist-claim"
@@ -71,6 +73,7 @@ timeline
     %% link: /BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/
          : メラー判事 大規模偽造認定 ライト敗訴 (3月14日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/
+    2025 : 控訴失敗 控訴裁が AI の不適切使用で 22 万 5000 ポンドの費用命令 (3月7日)
 ```
 
 ## 撤回
@@ -83,4 +86,8 @@ timeline
 2021年2月、ライトは bitcoin.org の匿名運営者（[Cobra](/BitcoinArchive/ja/participants/cobra/)）をビットコインホワイトペーパーの著作権侵害で[提訴した](/BitcoinArchive/ja/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/)。2021年6月28日、裁判所はライトに有利な欠席判決を下した——主張に根拠があったからではなく、Cobra が身元を明かすよりも匿名性の保護を選んだためである。
 
 ライトの正体主張は初期ブロック (1 ~ 9) の鍵による署名に依拠していたが、ジェネシスブロックのコインベース鍵には決して及ばなかった —— [ジェネシスブロックハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)が指摘するとおり、決定打となるその唯一の実演を、ライトを含め誰も行っていない。
+
+## 控訴の失敗
+
+ライトは COPA 判決への控訴を求めたが、認められなかった。2025 年 3 月 7 日、控訴裁判所はライトに 22 万 5000 ポンドの訴訟費用 —— COPA へ 10 万ポンド、ライトが同じく訴えていたビットコイン開発者側へ 12 万 5000 ポンド —— の支払いを命じた。AI ツールで作成した提出書面が、実在しない判例を引用し、一審の手続きについて虚偽の陳述を含んでおり、裁判所を著しく誤導する恐れがあったと認定したためである。英国の民事裁判所が訴訟当事者の AI 不適切使用を理由に費用負担を命じたのは、報道によれば初めてだという。
 

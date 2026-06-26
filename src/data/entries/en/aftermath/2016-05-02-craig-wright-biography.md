@@ -27,6 +27,8 @@ secondarySources:
     url: "https://www.bbc.co.uk/news/technology-36168863"
   - name: "Wired — Is Craig Wright Satoshi Nakamoto? (December 8, 2015)"
     url: "https://www.wired.com/2015/12/bitcoins-creator-satoshi-nakamoto-is-probably-this-unknown-australian-genius/"
+  - name: "Law Gazette — 'Fake Satoshi' hit with costs bill over AI evidence (March 2025)"
+    url: "https://www.lawgazette.co.uk/news/fake-satoshi-hit-with-costs-bill-over-ai-evidence/5122587.article"
 relatedEntries:
   - "aftermath/2015-12-08-wired-gizmodo-craig-wright-claims"
   - "aftermath/2016-05-02-craig-wright-bbc-economist-claim"
@@ -70,6 +72,7 @@ timeline
     %% link: /BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/
          : Justice Mellor rules industrial-scale forgery; Wright loses (Mar 14)
     %% link: /BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/
+    2025 : Appeal fails; Court of Appeal orders £225,000 costs for AI-fabricated submissions (Mar 7)
 ```
 
 ## Withdrawal
@@ -82,4 +85,8 @@ The December 2015 [Wired and Gizmodo investigations](/BitcoinArchive/entries/aft
 In February 2021, Wright [sued](/BitcoinArchive/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/) the pseudonymous operator of bitcoin.org ([Cobra](/BitcoinArchive/participants/cobra/)) over Bitcoin whitepaper copyright. On June 28, 2021, the court issued a default judgment in Wright's favor — not because the claim had merit, but because Cobra chose to protect his anonymity rather than reveal his identity to defend himself.
 
 Wright's identity claims rested on signing with the keys to early blocks (1–9) but never extended to the genesis-block coinbase key — the single demonstration that would be dispositive, which [the genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) notes has never been performed, by Wright or anyone.
+
+## The failed appeal
+
+Wright sought permission to appeal the COPA ruling, and lost. On March 7, 2025, the Court of Appeal ordered him to pay £225,000 in costs — £100,000 to COPA and £125,000 to the Bitcoin developers he had also sued — after finding that his written submissions, prepared with an AI tool, cited non-existent cases and made false statements about the trial that risked seriously misleading the court. It is reported as the first time a UK civil court has ordered costs over a litigant's misuse of AI.
 
