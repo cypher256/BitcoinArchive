@@ -22,6 +22,19 @@
  * The function returns a string that is safe to pass to Astro's `set:html`.
  */
 
+import { MIRROR_BASE } from '../../site-config.mjs';
+
+// editorNote links are authored with the GitHub Pages mirror prefix
+// (`/BitcoinArchive/...`), the same convention as body markdown. The remark
+// base-rewrite plugin only rewrites the markdown body, not frontmatter fields,
+// so these links must be rewritten here too — otherwise they 404 on Cloudflare
+// Pages (base `/`). Mirrors src/lib/remark-rewrite-base.mjs.
+const MIRROR_PREFIX = `${MIRROR_BASE}/`;
+function rewriteMirrorBase(url: string): string {
+  const base = process.env.CF_PAGES ? '/' : MIRROR_PREFIX;
+  return url.startsWith(MIRROR_PREFIX) ? base + url.slice(MIRROR_PREFIX.length) : url;
+}
+
 const HTML_ESCAPES: Record<string, string> = {
   '&': '&amp;',
   '<': '&lt;',
@@ -52,8 +65,9 @@ export function renderEditorNote(input: string): string {
     /\[([^\]]+)\]\(([^)\s]+)\)/g,
     (match, label, url) => {
       if (!isAllowedUrl(url)) return match;
-      // `url` and `label` are already HTML-escaped at this point.
-      return `<a href="${url}">${label}</a>`;
+      // `url` and `label` are already HTML-escaped at this point. Rewrite the
+      // mirror base prefix so internal links resolve on both deployments.
+      return `<a href="${rewriteMirrorBase(url)}">${label}</a>`;
     },
   );
 }

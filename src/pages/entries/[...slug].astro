@@ -28,6 +28,7 @@ import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from 
 import Avatar from '../../components/Avatar.astro';
 import { resolveThreadId } from '../../data/threads';
 import { renderEditorNote } from '../../lib/editor-note';
+import { LABELS as EDITORIAL_LABELS } from '../../lib/remark-editorial-marker.mjs';
 import gitDates from '../../data/git-dates.json';
 
 export async function getStaticPaths() {
@@ -169,9 +170,9 @@ const titleAvatarSlug = isEditorialType ? 'bitcoin-institute' : titleAvatarParti
     )}
 
     {entry.data.editorNote && (
-      <aside class="editor-note">
-        <span class="editor-note-label">📝 Editor's note (Bitcoin Institute)</span>
-        <p set:html={renderEditorNote(entry.data.editorNote)}></p>
+      <aside class="editorial-note editorial-note--editor">
+        <span class="editorial-note-label">{EDITORIAL_LABELS['editor:en']}</span>
+        <span class="editorial-note-body" set:html={renderEditorNote(entry.data.editorNote)}></span>
       </aside>
     )}
 
@@ -334,28 +335,6 @@ const titleAvatarSlug = isEditorialType ? 'bitcoin-institute' : titleAvatarParti
   }
   .entry-title-row h1 {
     margin: 0;
-  }
-  .editor-note {
-    display: block;
-    font-size: 0.9rem;
-    color: var(--color-text-muted);
-    line-height: 1.6;
-    margin: 0 0 2rem;
-    padding: 0.75rem 1rem;
-    border-left: 3px solid var(--color-border);
-    background: var(--color-bg-alt);
-  }
-  .editor-note p {
-    margin: 0;
-  }
-  .editor-note-label {
-    display: inline-block;
-    font-family: var(--font-heading);
-    font-size: 0.8rem;
-    color: var(--color-accent);
-    margin-right: 0.5em;
-    margin-bottom: 0.25em;
-    font-weight: 600;
   }
   .entry-content {
     line-height: 1.8;

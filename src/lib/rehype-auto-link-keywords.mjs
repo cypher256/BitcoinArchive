@@ -24,7 +24,7 @@
  *   - Inside `<code>` or `<pre>` (don't auto-link identifiers)
  *   - Inside a `<blockquote>` (primary-source quote — same convention
  *     used by `rehype-strip-archive-links` for verbatim block detection)
- *   - Inside `<aside class="editor-inline">` (editor notes from
+ *   - Inside `<aside class="editorial-note">` (editor notes from
  *     `remark-editorial-marker.mjs` — these are editorial overlay; we
  *     keep their links manual to preserve the editor's intent)
  *   - File path matches `VERBATIM_DIRS` (forum / correspondence /
@@ -227,7 +227,7 @@ function isInsideEditorNote(ancestors) {
     const node = ancestors[i];
     if (node.type !== 'element' || node.tagName !== 'aside') continue;
     const cls = node.properties?.className;
-    if (Array.isArray(cls) && cls.includes('editor-inline')) return true;
+    if (Array.isArray(cls) && cls.includes('editorial-note')) return true;
   }
   return false;
 }

@@ -8,14 +8,14 @@
  * span.
  *
  * Recognizes (canonical forms only):
- *   *[Editor: ...]*    -> class editor-inline editor-inline--editor
+ *   *[Editor: ...]*    -> class editorial-note editorial-note--editor
  *   *[編者注：...]*    -> same
- *   *[Context: ...]*   -> class editor-inline editor-inline--context
+ *   *[Context: ...]*   -> class editorial-note editorial-note--context
  *   *[補足：...]*      -> same
  *
  * Output (per paragraph):
- *   <aside class="editor-inline editor-inline--editor">
- *     <span class="editor-inline-label">📝 Editor's note (Bitcoin Institute)</span>
+ *   <aside class="editorial-note editorial-note--editor">
+ *     <span class="editorial-note-label">📝 Editor's note (Bitcoin Institute)</span>
  *     ...body text with inline links preserved...
  *   </aside>
  *
@@ -34,7 +34,7 @@ const PREFIXES = [
   { test: /^\[補足[：:]/,    strip: /^\[補足[：:]/,    kind: 'context', lang: 'ja' },
 ];
 
-const LABELS = {
+export const LABELS = {
   'editor:en':  "📝 Editor's note (Bitcoin Institute)",
   'editor:ja':  '📝 編者注（ビットコイン・インスティテュート）',
   'context:en': '📋 Context (Bitcoin Institute)',
@@ -66,7 +66,7 @@ export function remarkEditorialMarker() {
       const labelText = LABELS[labelKey];
 
       // Convert the (now bracket-less) emphasis children directly to hast,
-      // and prepend a structured <span class="editor-inline-label">. We use
+      // and prepend a structured <span class="editorial-note-label">. We use
       // hChildren rather than mdast `type: 'html'` so the output does not
       // depend on `allowDangerousHtml` being enabled in the host pipeline.
       const bodyHast = em.children
@@ -77,13 +77,13 @@ export function remarkEditorialMarker() {
       node.data.hName = 'aside';
       node.data.hProperties = {
         ...(node.data.hProperties || {}),
-        className: ['editor-inline', `editor-inline--${matched.kind}`],
+        className: ['editorial-note', `editorial-note--${matched.kind}`],
       };
       node.data.hChildren = [
         {
           type: 'element',
           tagName: 'span',
-          properties: { className: ['editor-inline-label'] },
+          properties: { className: ['editorial-note-label'] },
           children: [{ type: 'text', value: labelText }],
         },
         { type: 'text', value: ' ' },
