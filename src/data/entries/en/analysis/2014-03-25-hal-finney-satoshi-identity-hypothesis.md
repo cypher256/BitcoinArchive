@@ -229,11 +229,10 @@ For comparison with other named-candidate hypotheses, see the [Satoshi-identity 
 ## 5. Limits of this entry
 
 - This entry does not present new evidence. It compiles material from the 2014 Forbes feature, the 2023 Lopp analysis, Finney's 2013 *Bitcoin and Me* essay, the 2026 NYT investigation and Cafiero analysis, the Bitcoin Institute reanalysis of van Dorst, the Patoshi-pattern literature, and Fran Finney's interview record.
-- This entry sets out the hypothesis fairly and the counter-evidence fairly, leaving the reader to weigh.
 - This entry does not name "the most likely Satoshi candidate."
 - Cafiero's "Hal Finney nearly tied" outcome is treated as material toward the *uniqueness* question, not as confirmation of either Finney or Adam Back specifically. See the [Adam Back hypothesis entry](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) for the symmetric treatment from the other side.
 - If new evidence surfaces — a private writing or correspondence by Finney that contradicts his 2013 framing, a reconciliation of the race-day alibi with Satoshi-network activity that does not require fabrication, or a documented connection between Patoshi-scale holdings and Finney's estate — this entry should be updated.
 
 This Hal Finney identity hypothesis is placed by [the satoshi-identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) within its Group A candidate taxonomy and used as one of the principal comparison anchors in the overview's necessary-but-not-sufficient evaluation framework.
 
-*[Editor: this entry uses the March 25, 2014 Forbes article as the prominent public articulation of a longstanding hypothesis. The framing is deliberately conservative: the hypothesis is laid out, supporting arguments are described as their advocates make them, and counter-evidence is set out at equal detail. The entry does not draw an editorial conclusion about whether the hypothesis is more likely true or false; readers who want a direct verdict will not find one.]*
+*[Editor: this entry uses the March 25, 2014 Forbes article as the prominent public articulation of a longstanding hypothesis.]*
