@@ -96,6 +96,6 @@ translationStatus: complete
 - 「希少性が現金の使い方をすり減らす」は、デフレ的な資産は使われず退蔵される、という古典的な議論の延長にある。
 - ライトニング、エルサルバドル等は現在進行中だ。日々の支払いが戻る未来は、この読みを覆さないが、その時制を変える。
 
-本ページの読みは、アーカイブにある二つの貨幣の分析のあいだに置かれる。[デジタルゴールドの構造的特徴の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)から「設計としての金」を、[設計意図と現状の分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)から「現金から決済層へ」を受け取り、その二つが間に残す一つの問い——ビットコインを金にした性質と、その現金の使い道を奪った性質は、もとは一つだったのではないか——を、一次資料から読む。
+本ページの読みは、アーカイブの二つの貨幣の分析——[デジタルゴールドの構造的特徴の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)と[設計意図と現状の分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)——のあいだに置かれる。その二つが残す一つの問いを、一次資料から読む。ビットコインを金にした性質と、その現金の使い道を奪った性質は、もとは一つだったのではないか。
 
 *[補足：本記事が読み取る緊張——一つの設計が持つ、金の顔と現金の顔——は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』を貫いている。小説は、その設計の背後にいる創設者を想像する。]*
