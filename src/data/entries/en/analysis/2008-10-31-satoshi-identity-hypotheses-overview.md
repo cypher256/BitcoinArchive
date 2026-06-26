@@ -102,7 +102,7 @@ The four structural layers are not interchangeable; each narrows the candidate s
 
 This entry does not name "the most likely Satoshi candidate."
 
-**The 2024-2026 identification wave.** Four major-press / documentary identifications have appeared since late 2024, each resting on a different evidence base: the [HBO Money Electric documentary on Peter Todd](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (October 2024, forum-post-timing argument); the [NYT Carreyrou investigation of Adam Back](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (April 2026, stylometric, single candidate); the [Finding Satoshi multi-person reading](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) naming Hal Finney and Len Sassaman as co-creators (April 2026, activity-window + family testimony); and the [Murphy v DHS FOIA action](/BitcoinArchive/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) (April 2025, government-record subpoena route — a different evidence channel than the others). None has produced cryptographic confirmation. The dimensions in the comparison tables below incorporate this wave's evidence where it affects a candidate's status.
+**The 2024-2026 identification wave.** Four major-press / documentary identifications have appeared since late 2024, each resting on a different evidence base: the [HBO Money Electric documentary on Peter Todd](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (October 2024, forum-post-timing argument); the [NYT Carreyrou investigation of Adam Back](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (April 2026, stylometric, single candidate); the [Finding Satoshi multi-person reading](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) (April 2026, activity-window + family testimony — the co-authorship naming, argument, and counter-evidence are in §8.1); and the [Murphy v DHS FOIA action](/BitcoinArchive/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) (April 2025, government-record subpoena route, a different evidence channel — argument and counter-evidence in §8.2). None has produced cryptographic confirmation. The dimensions in the comparison tables below incorporate this wave's evidence where it affects a candidate's status.
 
 ## 1. Candidates
 
@@ -112,7 +112,7 @@ The ten named candidates fall into three groups by how they entered Satoshi-iden
 - **B. Cypherpunks with capability fit** — Hal Finney, Nick Szabo, Len Sassaman
 - **C. Third-party discovery, self-claim, or name-match** — Dorian Prentice Satoshi Nakamoto, Craig Wright, Peter Todd, Isamu Kaneko, Paul Le Roux
 
-Per-candidate background and external status are in §6 (Candidate profiles). The four layers (§2 — §5) compare the candidates against Satoshi's documented public-record outline along independent axes. Cross-cutting observations across the four layers are in §7; combined limits in §8.
+Per-candidate background is in each biography (linked from the §2.1 table), and external status is in the §2.1 table's *External status* column. Candidates with a dedicated hypothesis entry link to it from the table's *Entry* column; the three without one (Dorian, Wright, Le Roux — in the archive only because of the Satoshi suspicion) have their case carried by their biography. The four layers (§2 — §5) compare the candidates against Satoshi's documented public-record outline along independent axes. Cross-cutting observations across the four layers are in §6; combined limits in §7.
 
 ## 2. Layer 1 — Profile match
 
@@ -131,7 +131,7 @@ Per-candidate background and external status are in §6 (Candidate profiles). Th
 | [Peter Todd](/BitcoinArchive/participants/peter-todd/) | [Identity](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
 | [Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/) | [Identity](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | Open |
 
-**Color meaning (this table only):** 🟢 matches Satoshi's documented profile; 🔴 does not; 🟡 mixed or partial fit. Per-dimension criteria are in §2.2. Section §5 reuses the same three glyphs on a separately-defined Phase 1 alignment scale; the two scales are not interchangeable (see §5.3 for §5's legend and §8 for the overall caveat).
+**Color meaning (this table only):** 🟢 matches Satoshi's documented profile; 🔴 does not; 🟡 mixed or partial fit. Per-dimension criteria are in §2.2. Section §5 reuses the same three glyphs on a separately-defined Phase 1 alignment scale; the two scales are not interchangeable (see §5.3 for §5's legend and §7 for the overall caveat).
 
 **How to read the table:**
 
@@ -148,7 +148,7 @@ Per-candidate background and external status are in §6 (Candidate profiles). Th
 - *Implementation capability*: documented lifetime track record of shipping software at a scale comparable to Bitcoin v0.1's 19,901-line C++ codebase — cryptographic libraries, P2P systems, anonymity networks, or complete shipping applications of similar size and engineering complexity. The dimension is specifically about *Bitcoin-source-level* capability, not general programming literacy. Lifetime rather than strictly pre-2008: Satoshi-as-pseudonym hides any pre-2008 implementation work the actual person had done, so demonstrated post-launch capability (in Bitcoin Core, related cryptographic projects, or major engineering positions) counts as evidence of the underlying capability. The dimension distinguishes candidates with a documented multi-thousand-line shipping record from theorists, scholars, or small-scale contributors.
 - *Monetary system design*: documented thinking about digital-cash / monetary-system mechanisms — proof-of-work tokens, scarcity mechanisms, fee markets, mining incentives, distributed issuance schemes. Bitcoin v0.1 required not only cryptographic and distributed-systems engineering (covered by Implementation) but also coherent thinking about monetary mechanism design; this dimension separates that aspect. A theorist who designed a monetary mechanism without shipping code (Szabo with Bit Gold, for example) scores 🟢 here even with 🔴 on Implementation; an implementer with no monetary-system work in their record (Sassaman with Mixmaster, Le Roux with E4M, Kaneko with Winny) scores the inverse.
 - *Near-native English register*: idiom, register-shift, and literary fluency comparable to Satoshi's white paper, BitcoinTalk posts, and email correspondence.
-- *Tight timing vs Satoshi's silence*: closeness of a documented major life event (death, retirement, etc.) to Satoshi's last known correspondence (April 26, 2011 email to Gavin Andresen). This anchor brackets the disputed 2014 P2P Foundation activity, which is treated as a separate cross-cutting question in §7.
+- *Tight timing vs Satoshi's silence*: closeness of a documented major life event (death, retirement, etc.) to Satoshi's last known correspondence (April 26, 2011 email to Gavin Andresen). This anchor brackets the disputed 2014 P2P Foundation activity, which is treated as a separate cross-cutting question in §6.
 - *Low public visibility during 2007–2008 development*: degree to which the candidate could plausibly have undertaken the approximately 2-year pre-release effort (about 18 months of intensive coding from mid-2007, within the pre-release work Satoshi later put at "Since 2007" / "2 years of development before release") without leaving public traces in their documented activity.
 
 **Two-group structure.** The seven dimensions split into two groups that pull against each other:
@@ -158,11 +158,11 @@ Per-candidate background and external status are in §6 (Candidate profiles). Th
 
 The more visibly active a candidate was as a cypherpunk thinker (group 1), the less plausibly they could also have been hidden enough to escape identification (group 2). Reading the comparison requires holding the two groups separately rather than summing green counts. An "all-🟢" candidate is structurally rare: someone simultaneously deeply embedded in cypherpunk capability *and* completely invisible during the development window.
 
-**Profile-match is necessary but not sufficient.** Profile-match alone never decides a hypothesis. The *External status* column (self-denials, court rulings, technical disproofs) operates independently and is in some cases decisive. Cross-cutting observations on how profile-match and external status combine for individual candidates are in §7.
+**Profile-match is necessary but not sufficient.** Profile-match alone never decides a hypothesis. The *External status* column (self-denials, court rulings, technical disproofs) operates independently and is in some cases decisive. Cross-cutting observations on how profile-match and external status combine for individual candidates are in §6.
 
 ### 2.3 Capability vs covertness map
 
-Each candidate plotted in the 2D space of capability score (x-axis) vs covertness score (y-axis). **Coordinates are approximate visual placements**, not exact averages of the §2.1 cells — pure averages (🟢 = 1, 🟡 = 0.5, 🔴 = 0) put several candidates on the chart boundary (Wei Dai's capability = 1.0; Hal Finney's and Kaneko's covertness = 0) or on top of each other (Le Roux and Todd both at [0.5, 0.5]), where mermaid's quadrantChart renders labels overlapping the axis titles or each other. Each point is nudged inward by ≈ 0.02 – 0.12 so the labels stay readable; the relative ordering (who is right of whom, who is above whom) matches the table. The map makes the §7 cross-cutting observations spatial: most cypherpunk-cited candidates (Adam Back, Wei Dai, Hal Finney, Szabo) cluster in the high-capability strip, mostly at low covertness; Sassaman is the only candidate sitting in the high-capability + high-covertness quadrant; Wright, Dorian Nakamoto, and Kaneko sit in the low-capability regions.
+Each candidate plotted in the 2D space of capability score (x-axis) vs covertness score (y-axis). **Coordinates are approximate visual placements**, not exact averages of the §2.1 cells — pure averages (🟢 = 1, 🟡 = 0.5, 🔴 = 0) put several candidates on the chart boundary (Wei Dai's capability = 1.0; Hal Finney's and Kaneko's covertness = 0) or on top of each other (Le Roux and Todd both at [0.5, 0.5]), where mermaid's quadrantChart renders labels overlapping the axis titles or each other. Each point is nudged inward by ≈ 0.02 – 0.12 so the labels stay readable; the relative ordering (who is right of whom, who is above whom) matches the table. The map makes the §6 cross-cutting observations spatial: most cypherpunk-cited candidates (Adam Back, Wei Dai, Hal Finney, Szabo) cluster in the high-capability strip, mostly at low covertness; Sassaman is the only candidate sitting in the high-capability + high-covertness quadrant; Wright, Dorian Nakamoto, and Kaneko sit in the low-capability regions.
 
 **Candidate profiles, capability vs covertness**
 
@@ -187,7 +187,7 @@ quadrantChart
     "Isamu Kaneko": [0.2, 0.05]
 ```
 
-The cluster pattern is the same observation §7 makes in prose: capability and covertness pull against each other, so the high-capability + high-covertness quadrant is structurally hard to populate. Sassaman is in that quadrant because of specialty-separation (visible in anonymity research, invisible in digital-cash); Wei Dai approaches it through specialty-shift (mailing-list active 1990s, Crypto++ maintenance during 2007 - 2008). Most candidates pay the trade-off more directly.
+The cluster pattern is the same observation §6 makes in prose: capability and covertness pull against each other, so the high-capability + high-covertness quadrant is structurally hard to populate. Sassaman is in that quadrant because of specialty-separation (visible in anonymity research, invisible in digital-cash); Wei Dai approaches it through specialty-shift (mailing-list active 1990s, Crypto++ maintenance during 2007 - 2008). Most candidates pay the trade-off more directly.
 
 ## 3. Layer 2 — Stylometric attribution
 
@@ -285,7 +285,7 @@ The most diagnostic comparison is against **Phase 1**, when the entire architect
 
 ### 5.3 Reading and color meaning
 
-**Color meaning (this table only — Phase 1 alignment column):** 🟢 high alignment with Phase 1's Windows + MSVC + C++ shipping profile; 🟡 partial, surface-level, or mixed; 🔴 documented misalignment, or no shipping codebase at v0.1 scale. This scale is **separate from §2's profile-match scale** even though the same glyphs are used; the overall caveat is in §8.
+**Color meaning (this table only — Phase 1 alignment column):** 🟢 high alignment with Phase 1's Windows + MSVC + C++ shipping profile; 🟡 partial, surface-level, or mixed; 🔴 documented misalignment, or no shipping codebase at v0.1 scale. This scale is **separate from §2's profile-match scale** even though the same glyphs are used; the overall caveat is in §7.
 
 **Reading the development-environment layer:**
 
@@ -301,97 +301,7 @@ The most diagnostic comparison is against **Phase 1**, when the entire architect
 - Bitcoin v0.1's Windows-only release could in principle have been an intentional misdirection by a developer whose primary environment was Mac or Linux.
 - Phase 2 and Phase 3 show Satoshi's OS profile shifting toward Linux capability, so a candidate whose primary OS was Linux ([Peter Todd](/BitcoinArchive/participants/peter-todd/), [Len Sassaman](/BitcoinArchive/participants/len-sassaman/)) is more consistent with Phase 3 than with Phase 1 — but Phase 1 is the construction period and the more diagnostic comparison.
 
-## 6. Candidate profiles
-
-Each profile shares the same micro-structure: background and external status. For candidates with a dedicated hypothesis entry (linked from the "Entry" column in §2.1), the profile here keeps only background and external status — the full claim / arguments / counter-evidence / broader-record treatment is in the dedicated entry, which follows the same template (§1 claim → §2 arguments → §3 counter-evidence → §4 broader documentary record → §5 limits) at greater depth.
-
-### A. Cypherpunks Satoshi explicitly cited
-
-#### Adam Back
-
-**Background.** British cryptographer (born 1970), PhD in computer science from the University of Exeter, inventor of *Hashcash* (1997). Co-founder and CEO of Blockstream (2014). The first known person Satoshi contacted about Bitcoin (August 20, 2008).
-
-**External status.** Self-denied (most prominently via [February 2024 COPA v Wright testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) submitting his Satoshi correspondence as witness evidence under oath); the pre-launch correspondence reads as third-party reception. → See [Adam Back = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) for the Hashcash authorship-correlation argument, the August 2008 email-structure counter-evidence, and the [April 2026 NYT stylometric investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) treatment.
-
-#### Wei Dai
-
-**Background.** Chinese-American cryptographer, author of the Crypto++ library (a widely-deployed open-source cryptographic library), designer of *b-money* (1998), the digital-cash proposal Bitcoin's whitepaper cites alongside Hashcash. Active cypherpunk-mailing-list presence in the late 1990s.
-
-**External status.** Self-denied (most prominently via the [January 2014 AALWA retrospective on LessWrong](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) explicitly distinguishing himself from Satoshi); the August 2008 pre-launch correspondence reads as third-party reception; the 2014 retrospective's "not previously active" framing is inconsistent with Wei Dai's own candidacy. → See [Wei Dai = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) for the b-money conceptual-proximity argument, the Crypto++ codebase-dependency argument, the August 2008 email-structure counter-evidence, and the broader-corpus stylometric distance (Wei Dai ranks at top 22.99% of the 12,739-author corpus, the most distant of the named candidates) at full detail.
-
-### B. Cypherpunks with capability fit
-
-#### Hal Finney
-
-**Background.** Cypherpunk (Harold Thomas Finney II, May 4, 1956 – August 28, 2014), Caltech engineering graduate, principal developer of PGP 2.0, creator of Reusable Proof-of-Work (RPOW). On January 9, 2009 (Bitcoin v0.1 release day) Finney downloaded the software and became the first known person other than Satoshi to run a Bitcoin node; on January 11, 2009 he tweeted "Running bitcoin"; on January 12, 2009 he received 10 BTC from Satoshi in Block 170 — the first person-to-person Bitcoin transaction. He lived for almost a decade in Temple City, California — the same town where Newsweek would later identify Dorian Prentice Satoshi Nakamoto, "blocks apart."
-
-**External status.** Self-denied (March 2013 [*Bitcoin and Me*](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) treats Satoshi as a separate person); [Patoshi mining-pattern](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) inconsistent with Finney's modest documented holdings; April 18, 2009 race-day alibi documented contemporaneously. → See [Hal Finney = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) for the RPOW-precursor argument, the race-day alibi (originally reported in [Greenberg's 2014 Forbes feature](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) and formalized by [Lopp 2023](/BitcoinArchive/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/)), the *Bitcoin and Me* third-party framing, the Patoshi-scale inconsistency, and the August 2010 Singularity Summit / ALS-progression alibi at full detail.
-
-#### Nick Szabo
-
-**Background.** Computer scientist, legal scholar, and cryptographer (born 1964). Coined the term "smart contracts" (1994). Designer of [*Bit Gold*](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/), a decentralized digital-currency proposal based on proof-of-work conceived in 1998 and published in full on his Unenumerated blog on December 29, 2005.
-
-**External status.** Self-denied (multiple times: Frisby email 2014, NYT/Popper email response 2015, Tim Ferriss Show 2017). → See the [Szabo = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) for the Bit Gold conceptual-proximity argument, stylometric analyses (Skye Grey 2013, Aston University 2014, NYT/Popper 2015), circumstantial pattern matches (April 5 birthday coincidence, Hungarian descent, Tim Ferriss "I designed bitcoi…gold" slip), and the counter-evidence (the April 2008 Bit Gold implementation-request comment, the May 2011 "Nakamoto improved my design" blog, continuous Unenumerated activity during 2007–2008, and the absence of a C++ shipping record).
-
-#### Len Sassaman
-
-**Background.** Cypherpunk cryptographer (1980–2011), lead developer of the Mixmaster anonymous remailer, KU Leuven PhD candidate. Died by suicide on July 3, 2011 — three months after Satoshi's last documented private email.
-
-**External status.** Open. → See the [Sassaman = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) for the timing argument, the cypherpunk-credentials argument, and the counter-evidence (no direct documentary link, KU Leuven workload, Patterson's silence on the identity question, and the post-2011 Satoshi-account activity that would rule him out if genuine).
-
-### C. Third-party discovery, self-claim, or name-match
-
-#### Dorian Prentice Satoshi Nakamoto
-
-**Background.** Japanese-American engineer (born 1949 in Beppu, Japan; immigrated to the United States 1959) with a defense-systems background. Lived in Temple City, California, a few blocks from Hal Finney.
-
-**The hypothesis.** [Newsweek (Leah McGrath Goodman, March 6, 2014)](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) identified Dorian Nakamoto as a Satoshi candidate primarily on name match.
-
-**Argument for.** Name match (literally "Satoshi Nakamoto"). Defense-systems engineering background. Geographic proximity to Hal Finney could support a pseudonym-source theory.
-
-**Argument against.** No technical evidence connects him to the codebase. No cypherpunk credentials, no BTC-adjacent intellectual lineage, no documented programming work at Bitcoin v0.1 scale. Dorian Nakamoto firmly and repeatedly denied any involvement with Bitcoin in interviews after the Newsweek article (he retained a lawyer and gave a detailed interview to the Associated Press reaffirming his denial); he said he had misunderstood Goodman's doorstep question and thought she was asking about his prior classified defense work. The day after the Newsweek piece, [the Satoshi p2pfoundation account briefly returned to post "I am not Dorian Nakamoto"](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/) (post authenticity remains debated; the account may have been compromised). The Bitcoin community raised over 67 BTC in donations for Dorian Nakamoto.
-
-**External status.** Self-denied; p2pfoundation return.
-
-#### Craig Wright
-
-**Background.** Australian computer-security figure.
-
-**The hypothesis.** Wright began claiming to be Satoshi in late 2015 / 2016 ([initial Wired and Gizmodo identification, December 2015](/BitcoinArchive/entries/aftermath/2015-12-08-wired-gizmodo-craig-wright-claims/); [BBC and *The Economist* self-claim, May 2016](/BitcoinArchive/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/)). The hypothesis rests entirely on self-claim — there is no other line of evidence supporting it.
-
-**Argument for.** Self-claim (no other supporting evidence).
-
-**Argument against.** Wright's attempted [cryptographic 'proof' (May 2016)](/BitcoinArchive/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/) was quickly debunked — he had reused a signature from a 2009 transaction rather than producing a new one. The [COPA v Wright trial (UK High Court, judgment by Justice Mellor, March 14, 2024)](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) ruled four findings: Wright is not the author of the Bitcoin whitepaper, not the person operating as Satoshi 2008–2011, not the creator of the Bitcoin system, and not the author of the initial Bitcoin software. The judgment concluded Wright had engaged in "deliberate and extensive forgery of documents to support his false claim of being Satoshi Nakamoto." No documented cypherpunk-mailing-list presence in the 1990s; no pre-2008 BTC-adjacent intellectual work in his public record.
-
-**External status.** COPA v Wright (2024) ruled against on four findings; deliberate document forgery established by court; debunked cryptographic proof.
-
-#### Peter Todd
-
-**Background.** Canadian Bitcoin Core developer (born 1985), contributor since around 2012, known for Replace-by-Fee (RBF) and other Core protocol work. OCAD University graduate (Integrated Media, 2011). Joined BitcoinTalk on December 7, 2010 as "retep".
-
-**External status.** Self-denied (post-HBO); community critique of evidence as circumstantial. → See the [Peter Todd = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) for the analytical treatment of the [HBO 2024 documentary's claims](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/).
-
-#### Isamu Kaneko
-
-**Background.** Japanese researcher (1970–2013), developer of the *Winny* P2P file-sharing system (2002), defendant in a high-profile criminal case from 2004 to 2011 (acquitted by the Supreme Court of Japan, December 2011). Died of myocardial infarction on July 6, 2013.
-
-**External status.** Open. → See the [Kaneko Isamu = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) for the analytical treatment.
-
-#### Paul Le Roux
-
-*[Context: This archive holds the [Le Roux biography](/BitcoinArchive/participants/paul-le-roux/), but no further dedicated Le Roux primary-source entries (E4M cypherpunks announcement, criminal-case court documents, or Mastermind chapter excerpts). The summary below is drawn from external sources — primarily journalist Evan Ratliff's *The Mastermind* (Random House, 2019) and accompanying Atavist long-form journalism — and from public records. Treat the specific dates and claims as externally sourced rather than archive-verified.]*
-
-**Background.** South African / Zimbabwean ex-encryption-software developer (creator of *E4M* open-source disk encryption in 1999, later forked into TrueCrypt). Transitioned around 2002 to running an international criminal enterprise (online pharmacies, weapons trafficking, methamphetamine production). Arrested by US authorities in September 2012; serving a long federal prison sentence per public reporting.
-
-**The hypothesis.** Identified as a possible Satoshi candidate primarily through journalist Evan Ratliff's investigation in *The Mastermind* (Random House, 2019) and accompanying Atavist long-form journalism.
-
-**Argument for.** Technical-skill match: open-source encryption software experience (E4M). Public reporting documents cypherpunks-mailing-list presence in 1999 (E4M announcement) and broader Usenet encryption-discussion activity in the late 1990s. Low public visibility during the development period (operating covertly), fitting "structurally outside the visible cypherpunk community" during 2007–2008. Possible motive: separating his cryptographic past from his criminal present.
-
-**Argument against.** Cypherpunks-mailing-list presence in 1999 was limited compared to long-tenure cypherpunks like Adam Back or Hal Finney — single E4M announcement and a few discussions, not sustained participation (per public reporting). No documented monetary-design work in his record. His criminal operations from 2002 onwards focused on logistics and operations, not cryptographic engineering — no public Bitcoin-source-level shipping after E4M. The hypothesis rests on capability + covertness + motive alignment, all circumstantial. No documentary link, no leaked correspondence.
-
-**External status.** Open (incarcerated). Le Roux has not publicly addressed the hypothesis from prison.
-
-## 7. Cross-cutting observations
+## 6. Cross-cutting observations
 
 Each observation below is anchored in one or more of the four layers (§2 profile match, §3 stylometric, §4 direct correspondence, §5 development environment).
 
@@ -403,30 +313,30 @@ Each observation below is anchored in one or more of the four layers (§2 profil
 - **Profile-match is necessary but not sufficient.** No candidate is ruled in by §2 profile-match alone, and no candidate is ruled out by §2 profile-match alone. The combination of all four layers with external status (and, for low-scoring candidates, the absence of supporting evidence) is what determines current discourse standing.
 - **Post-2011 Satoshi-account activity bears on every pre-2014 timing fit.** The Timing dimension anchors on the April 26, 2011 email, but a [Satoshi-account post denying the Dorian Nakamoto identification](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/) appeared in March 2014, and [P2P Foundation founder Michel Bauwens](/BitcoinArchive/entries/aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin/) recalled private Satoshi email in the same period. If that activity is genuine, it places the author alive three years past Sassaman's 2011 death and eight months past Kaneko's 2013 death, contradicting both timing fits directly; its authenticity is disputed (the account lacked two-factor authentication, and a December 2016 login left no post), so it constrains rather than decides. It reaches exactly the candidates whose qualifying life event precedes 2014 — Sassaman and Kaneko — and not Finney, who died in August 2014, after the post.
 
-## 8. Overall limits
+## 7. Overall limits
 
 - This entry does not present new evidence. It compiles publicly available material into one comparison.
 - This entry does not name "the most likely Satoshi candidate." Each of the four layers is necessary but not sufficient; external status is in some cases decisive.
 - **The color-coded labels in §2 and §5 are not interchangeable, even though both tables use 🟢 / 🟡 / 🔴.** §2's scale measures match against the seven profile dimensions; §5's scale measures alignment against Phase 1's Windows-MSVC-C++ shipping profile. Read each table with its own section's legend. In both cases the labels are qualitative summaries, not numerical scores. They visualize judgments stated elsewhere (in individual hypothesis entries, or in widely-held readings of the public record). Different qualified readers may place individual cells differently.
-- **The four layers (§2 profile match, §3 stylometric, §4 direct correspondence, §5 development environment) are not interchangeable.** Each narrows the candidate space differently. A candidate ruled out by one layer is not necessarily ruled out by another, and convergence across layers does not establish identification. See §7 for the multi-layer convergence observation.
+- **The four layers (§2 profile match, §3 stylometric, §4 direct correspondence, §5 development environment) are not interchangeable.** Each narrows the candidate space differently. A candidate ruled out by one layer is not necessarily ruled out by another, and convergence across layers does not establish identification. See §6 for the multi-layer convergence observation.
 - This entry assumes the public record is the relevant evidence base. Hypotheses based on private channels, claimed unverifiable communications, or unsourced personal recollection are not addressed here.
 - The set of named candidates is not closed. Hypotheses involving other named persons or groups exist in public discourse; this entry covers the ten most-discussed.
 - For full treatment of candidates with dedicated entries, see the "Entry" column in §2.1's table. Other candidates do not have dedicated hypothesis entries in this archive.
 
-## 9. Hypotheses beyond a single candidate
+## 8. Hypotheses beyond a single candidate
 
-§2–§6 treat hypotheses that name a single individual. But "Satoshi was a single person" is itself a hypothesis, and public discourse holds readings beyond the single-candidate frame. This section treats them under the same record discipline (primary sources, sourced claims). As with the named candidates, the set of forms here is not closed.
+§2–§5 treat hypotheses that name a single individual. But "Satoshi was a single person" is itself a hypothesis, and public discourse holds readings beyond the single-candidate frame. This section treats them under the same record discipline (primary sources, sourced claims). As with the named candidates, the set of forms here is not closed.
 
-### 9.1 Multiple-person theory
+### 8.1 Multiple-person theory
 
-The [April 2026 documentary *Finding Satoshi*](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) presents Satoshi Nakamoto as a collaboration between [Hal Finney](/BitcoinArchive/participants/hal-finney/) (the implementation) and [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) (drafting the whitepaper), drawing on activity-time analysis, family testimony, and a motive reading from a former FBI profiler. Finney and Sassaman are treated as separate single candidates in §2–§6; this reading binds them into one co-authorship hypothesis. The counter-evidence overlaps with the single-candidate entries — Jameson Lopp and Adam Back point to the timing conflict with Finney's April 18, 2009 race-day alibi, the mismatch between Sassaman's KU Leuven tenure and the proposed activity window, and the absence of Patoshi-scale balances in either estate. The co-authorship reading carries the added burden of explaining a Finney–Sassaman collaboration that left no documentary trace.
+The [April 2026 documentary *Finding Satoshi*](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) presents Satoshi Nakamoto as a collaboration between [Hal Finney](/BitcoinArchive/participants/hal-finney/) (the implementation) and [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) (drafting the whitepaper), drawing on activity-time analysis, family testimony, and a motive reading from a former FBI profiler. Finney and Sassaman are treated as separate single candidates in §2–§5; this reading binds them into one co-authorship hypothesis. The counter-evidence overlaps with the single-candidate entries — Jameson Lopp and Adam Back point to the timing conflict with Finney's April 18, 2009 race-day alibi, the mismatch between Sassaman's KU Leuven tenure and the proposed activity window, and the absence of Patoshi-scale balances in either estate. The co-authorship reading carries the added burden of explaining a Finney–Sassaman collaboration that left no documentary trace.
 
-### 9.2 Organization / government-agency theory
+### 8.2 Organization / government-agency theory
 
 The [Murphy v DHS FOIA lawsuit (April 2025)](/BitcoinArchive/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) seeks internal records behind a 2019 on-stage statement by DHS special agent Rana Saoud that DHS agents had traveled to California and met "the four people behind the creation of Bitcoin." The four are unidentified in public reporting; if the records are released, they could establish the facts of the 2019 meeting without recourse to stylometric inference. As related context, Satoshi disappeared shortly after Gavin Andresen, replying to Satoshi's final email (April 26, 2011), [disclosed an invitation from In-Q-Tel (the CIA-linked strategic investment firm) to present Bitcoin](/BitcoinArchive/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/) — a sequence often cited in government-involvement discussion (though the counter-argument notes Satoshi's withdrawal was already gradual over the preceding months).
 
-### 9.3 Other forms
+### 8.3 Other forms
 
 Readings that fit neither a single individual, multiple people, nor an organization — such as the pseudonym being a construct rather than one person — also circulate in public discourse. This archive holds no dedicated treatment of them at present. As verifiable primary sources appear for a given form, it is added here.
 
-This identity-hypotheses overview is the upstream framing for [the Wei Dai identity hypothesis](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/). The Wei Dai entry references this overview across multiple sections — the §2.1 candidate grouping, the §2.4 methodology authority, and the §4 comparison anchor — relying on the overview's Group A taxonomy and necessary-but-not-sufficient evaluation framework as the structural scaffold its own argument is built on.
+This identity-hypotheses overview is the upstream framing for [the Wei Dai identity hypothesis](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/). The Wei Dai entry references this overview across multiple sections — the §2.1 candidate grouping, the §2.2 methodology authority, and the §4 comparison anchor — relying on the overview's Group A taxonomy and necessary-but-not-sufficient evaluation framework as the structural scaffold its own argument is built on.
