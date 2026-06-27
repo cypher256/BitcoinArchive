@@ -251,7 +251,7 @@ Broken down by **type of contact**, the structure differs:
 
 **Reading the direct-correspondence layer:** the presence or absence of correspondence is double-edged for hypothesis evaluation:
 - **Contact exists** can also serve as evidence that Satoshi treated them as third parties — Satoshi's pre-launch emails to Back and Wei Dai function as the central counter-evidence in both hypotheses (Back-as-Satoshi, Wei-Dai-as-Satoshi) (see [Satoshi identification asymmetry](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) §2).
-- **No contact** splits into two readings — successful concealment or non-overlap of activity. Szabo was active in public discourse but had no direct exchange with Satoshi; Sassaman and Kaneko were active in adjacent but non-overlapping technical fields; Dorian, Wright, and Le Roux are name-match or self-claim with no operational presence.
+- **No contact** splits into two readings — [successful concealment](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/) or non-overlap of activity. Szabo was active in public discourse but had no direct exchange with Satoshi; Sassaman and Kaneko were active in adjacent but non-overlapping technical fields; Dorian, Wright, and Le Roux are name-match or self-claim with no operational presence.
 
 Combined with the §2 profile match and the §3 stylometric layer, correspondence functions as a third structural layer that locates each candidate's position in the candidate space.
 
@@ -322,6 +322,7 @@ Each observation below is anchored in one or more of the four layers (§2 profil
 - **The four layers (§2 profile match, §3 stylometric, §4 direct correspondence, §5 development environment) are not interchangeable.** Each narrows the candidate space differently. A candidate ruled out by one layer is not necessarily ruled out by another, and convergence across layers does not establish identification. See §6 for the multi-layer convergence observation.
 - This entry assumes the public record is the relevant evidence base. Hypotheses based on private channels, claimed unverifiable communications, or unsourced personal recollection are not addressed here.
 - The set of named candidates is not closed. Hypotheses involving other named persons or groups exist in public discourse; this entry covers the ten most-discussed.
+- The Japanese form of the "Satoshi Nakamoto" pseudonym bears on the identity question independently of any single candidate; it is treated in [the techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/).
 - For full treatment of each candidate, see the "Entry" column in §2.1's table; all ten named candidates have a dedicated hypothesis entry.
 
 ## 8. Hypotheses beyond a single candidate
