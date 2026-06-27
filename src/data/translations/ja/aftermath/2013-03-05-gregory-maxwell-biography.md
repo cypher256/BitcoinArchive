@@ -36,7 +36,7 @@ timeline
          : CoinJoin 提案 (8月、 入力結合 プライバシー手法)
     2014 : Blockstream 共同創業 — アダム・バック、 ウィーユらと
     2015 : Confidential Transactions 設計 (Pedersen コミットメント)
-    2016 : libsecp256k1 が v0.12 デフォルト として出荷 (1月15日)
+    2016 : libsecp256k1 が v0.12 デフォルトに採用 (1月15日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/
          : Liquid サイドチェーン Blockstream から リリース
     2017 : SegWit 有効化への 主要レビュアー
@@ -44,7 +44,7 @@ timeline
 ```
 
 ## libsecp256k1
-[ピーター・ウィーユ](/BitcoinArchive/ja/participants/pieter-wuille/)が 2013年3月5日に [libsecp256k1 ライブラリー](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/)を開始した直後、マクスウェルはこの取り組みに参加した。二人の共同作業のもとで、ライブラリーは性能実験から、OpenSSL の secp256k1 実装を専用に置き換える存在へと拡大し、2016年1月15日に Bitcoin Core v0.12 のデフォルトバックエンドとして出荷された。
+[ピーター・ウィーユ](/BitcoinArchive/ja/participants/pieter-wuille/)が 2013年3月5日に [libsecp256k1 ライブラリー](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/)を開始した直後、マクスウェルはこの取り組みに参加した。二人の共同作業のもとで、ライブラリーは性能実験から、OpenSSL の secp256k1 実装を専用に置き換える存在へと拡大し、2016年1月15日に Bitcoin Core v0.12 のデフォルトバックエンドとして採用された。
 
 ## CoinJoin と Confidential Transactions
 マクスウェルが最も広く引用されるプライバシー関連の貢献は、**CoinJoin** 構成──複数ユーザーの支払いを 1 つのトランザクションに結合することで、単純な入力→出力ヒューリスティックを無効化する手法──と、**Confidential Transactions**──Pedersen コミットメントの背後にトランザクション金額を隠しつつ、価値保存の検証可能性を維持するスキーム──である。いずれもビットコインのベースレイヤーには実装されていないが、Wasabi、JoinMarket、Liquid など一世代分のビットコインプライバシー関連の仕事と、より広い暗号通貨プライバシー研究を方向づけた。

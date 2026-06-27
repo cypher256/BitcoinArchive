@@ -41,7 +41,7 @@ timeline
          : GitHub コミット権限 付与、 4 人目の メンテナー (6月5日)
     2014 : アンドレセン後継、 リードメンテナー就任 (4月8日)
     2015 : ブロックサイズ論争 開始
-    2016 : libsecp256k1 が v0.12 デフォルト として出荷 (1月15日)
+    2016 : libsecp256k1 が v0.12 デフォルトに採用 (1月15日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/
     2017 : SegWit 有効化
     2022 : リードメンテナー退任、 燃え尽きと 分散ガバナンス志向 (8月)

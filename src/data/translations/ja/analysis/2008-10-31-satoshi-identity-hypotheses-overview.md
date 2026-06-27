@@ -266,7 +266,7 @@ gantt
 
 ### 5.1 サトシの三段階 OS ツールチェーン像
 
-ビットコイン v0.1 は Windows 専用の `.rar` アーカイブとして出荷され、Visual C++ 6.0 SP6 と MinGW GCC 3.4.5 でビルドされ、ハンガリアン記法の識別子（`nValue`、`strHash`、`vTransactions`）を用い、wxWidgets、Boost、OpenSSL、Berkeley DB に依存していた。法医学的な全痕跡は[サトシの Windows 開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)に記録されており、同分析はサトシの OS ツールチェーン像が三段階に遷移したことも記述している：
+ビットコイン v0.1 は Windows 専用の `.rar` アーカイブとして配布され、Visual C++ 6.0 SP6 と MinGW GCC 3.4.5 でビルドされ、ハンガリアン記法の識別子（`nValue`、`strHash`、`vTransactions`）を用い、wxWidgets、Boost、OpenSSL、Berkeley DB に依存していた。法医学的な全痕跡は[サトシの Windows 開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)に記録されており、同分析はサトシの OS ツールチェーン像が三段階に遷移したことも記述している：
 
 | 段階 | 期間 | OS 像 |
 |---|---|---|
@@ -278,37 +278,37 @@ gantt
 
 ### 5.2 比較表
 
-| 候補 | Phase 1 との整合 | 主に使用した OS | 主要言語 | 公開出荷の記録あるコードベース |
+| 候補 | Phase 1 との整合 | 主に使用した OS | 主要言語 | 公開実績のあるコードベース |
 |---|---|---|---|---|
 | [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | 🟡 中間 ― 言語は重なるが OS は特定されていない | アーカイブ記録なし（Microsoft 勤務歴あり） | Perl（短行記法で著名）、C / C++ | Hashcash 仕様と小規模な参考実装 |
-| [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | 🟢 高い整合 ― Windows-MSVC が重なり、数千行規模の暗号ライブラリ出荷実績がある | Windows（Microsoft 勤務歴、MSVC 主体） | C++ | **Crypto++** ― 多プラットフォーム対応の C++ クラスライブラリ、当初は Windows-MSVC 起点 |
+| [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | 🟢 高い整合 ― Windows-MSVC が重なり、数千行規模の暗号ライブラリ公開実績がある | Windows（Microsoft 勤務歴、MSVC 主体） | C++ | **Crypto++** ― 多プラットフォーム対応の C++ クラスライブラリ、当初は Windows-MSVC 起点 |
 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | 🔴 不整合 ― Mac 主体。公開コードはスネークケース＋タブで、サトシの空白インデント＋ハンガリアン記法のキャメルケースと異なる | Mac（長期、記録あり） | C / C++ | PGP 2.0、RPOW |
-| [ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/) | 🔴 v0.1 規模の出荷コードベースの記録なし | アーカイブ記録なし | アーカイブ記録なし | jim.com での暗号・経済の執筆。出荷コードベースの記録なし |
+| [ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/) | 🔴 v0.1 規模の公開コードベースの記録なし | アーカイブ記録なし | アーカイブ記録なし | jim.com での暗号・経済の執筆。公開コードベースの記録なし |
 | [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | 🔴 不整合 ― 全て Linux、Windows の痕跡なし | Linux（2008〜2011 の GitHub リポジトリは一貫して Linux：FHS パス、Unix シェバン、PyGTK） | C / Python | Linux ネイティブのハードウェア／ファームウェア開発ツール |
-| [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | 🔴 不整合 ― v0.1 規模の C++ 出荷記録なし | アーカイブ記録なし | C++ 出荷実績なし | Bit Gold 提案（紙のみ）。[2008 年 4 月に実装協力者を明示的に募集](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) |
+| [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | 🔴 不整合 ― v0.1 規模の C++ 公開実績なし | アーカイブ記録なし | C++ 公開実績なし | Bit Gold 提案（紙のみ）。[2008 年 4 月に実装協力者を明示的に募集](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) |
 | [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | 🔴 不整合 ― Unix 主体、Windows 第一の開発記録なし | Unix / Linux 主体（Mixmaster 保守者、KU Leuven の研究環境） | C | Mixmaster（C、*BSD / Linux 主体で Windows 移植版あり） |
-| [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | 🔴 不整合 ― C++ 出荷記録なし | アーカイブ記録なし（機密の防衛系統工学に従事） | 物理学・電子工学の背景 | 公開コードベースなし |
+| [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | 🔴 不整合 ― C++ 公開実績なし | アーカイブ記録なし（機密の防衛系統工学に従事） | 物理学・電子工学の背景 | 公開コードベースなし |
 | [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | ― 該当せず（COPA 対ライト 2024 判決） | ― | ― | ― |
-| [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | 🟡 表層は整合 ― Windows + C++ + 暗号出荷を満たすが、公開出荷記録は 1999 年で途切れる | Windows NT / 9x | C++ | **E4M**（Windows 専用ディスク暗号、1999 年。後に TrueCrypt に派生） |
-| [イーロン・マスク](/BitcoinArchive/ja/participants/elon-musk/) | 🔴 サイファーパンク・暗号の出荷記録なし | アーカイブ記録なし | 商用ソフトウェア | ビットコイン関連のコードベースなし |
+| [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | 🟡 表層は整合 ― Windows + C++ + 暗号ソフト公開を満たすが、ソフト公開の記録は 1999 年で途切れる | Windows NT / 9x | C++ | **E4M**（Windows 専用ディスク暗号、1999 年。後に TrueCrypt に派生） |
+| [イーロン・マスク](/BitcoinArchive/ja/participants/elon-musk/) | 🔴 サイファーパンク・暗号ソフトの公開実績なし | アーカイブ記録なし | 商用ソフトウェア | ビットコイン関連のコードベースなし |
 | [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | 🟡 部分整合 ― OS / 言語は一致するが、Winny ソースは日本語識別子とコメントを含む。ビットコイン v0.1 ソースは英語のみ | Windows | C++ | Winny（Windows 向け P2P、C++） |
 
 ### 5.3 読み方と色の意味
 
-**色の意味（この表のみ — Phase 1 との整合列）：** 🟢 Phase 1 の Windows + MSVC + C++ 出荷像と高度に整合／🟡 部分的、表層的、または混在／🔴 文書上の不整合、または v0.1 規模の出荷コードベースが存在しない。同じ絵文字を使うが、本スケールは **§2 のプロファイル整合スケールとは別物**である。全体的な注意は §7 を参照。
+**色の意味（この表のみ — Phase 1 との整合列）：** 🟢 Phase 1 の Windows + MSVC + C++ 公開実績像と高度に整合／🟡 部分的、表層的、または混在／🔴 文書上の不整合、または v0.1 規模の公開コードベースが存在しない。同じ絵文字を使うが、本スケールは **§2 のプロファイル整合スケールとは別物**である。全体的な注意は §7 を参照。
 
 **開発環境レイヤの読み方：**
 
-- **Phase 1 の「Windows + MSVC + C++ 出荷」像と整合する候補は 2 名。** [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)による Crypto++ ― 当初 Windows-MSVC 起点の C++ 暗号クラスライブラリ ― はビットコイン v0.1 の暗号ライブラリ依存構造と最も直接に重なる。[ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/)は 1999 年に E4M（Windows 専用 C++ ディスク暗号）を出荷したが、公開出荷の記録はその時点で途切れる。
+- **Phase 1 の「Windows + MSVC + C++ 公開実績」像と整合する候補は 2 名。** [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)による Crypto++ ― 当初 Windows-MSVC 起点の C++ 暗号クラスライブラリ ― はビットコイン v0.1 の暗号ライブラリ依存構造と最も直接に重なる。[ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/)は 1999 年に E4M（Windows 専用 C++ ディスク暗号）を公開したが、ソフト公開の記録はその時点で途切れる。
 - **3 名は Phase 1 と OS が直接不整合。** [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)（長期 Mac、スネークケース＋タブ）、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)（GitHub 一貫して Linux）、[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)（Unix 主体のツール環境）はいずれも Windows 以外の主要環境が記録されている。
-- **5 名は v0.1 規模の出荷コードベースの記録なし。** [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)は 2008 年 4 月に実装協力者を求めた。[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の機密防衛業務は公開コードを生まなかった。[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)が示した証拠は英国高等法院により捏造と判定されている。[イーロン・マスク](/BitcoinArchive/ja/participants/elon-musk/)に暗号の出荷記録はなく、[ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/)は出荷コードベースの記録のない評論家である。
-- **[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の個人 OS はアーカイブ記録に存在しない。** Hashcash は Perl と C / C++ の参考実装にまたがるが、それらの参考実装とビットコイン v0.1 の 19,901 行 C++ コードベースとの規模差は、Crypto++ や E4M クラスの出荷実績を持つ候補と比べて大きい。
+- **5 名は v0.1 規模の公開コードベースの記録なし。** [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)は 2008 年 4 月に実装協力者を求めた。[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の機密防衛業務は公開コードを生まなかった。[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)が示した証拠は英国高等法院により捏造と判定されている。[イーロン・マスク](/BitcoinArchive/ja/participants/elon-musk/)に暗号ソフトの公開実績はなく、[ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/)は公開コードベースの記録のない評論家である。
+- **[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の個人 OS はアーカイブ記録に存在しない。** Hashcash は Perl と C / C++ の参考実装にまたがるが、それらの参考実装とビットコイン v0.1 の 19,901 行 C++ コードベースとの規模差は、Crypto++ や E4M クラスの公開実績を持つ候補と比べて大きい。
 - **[金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/)の Winny は OS とプラットフォーム（Windows + C++）の水準では一致する**が、Winny ソースは日本語識別子とコメントを含む ― ビットコイン v0.1 ソースが示さない記法である。
 
 ### 5.4 本レイヤの限界
 
 - 候補が Windows-MSVC でビットコインを開発しながら、その環境を公開コードに残さなかった可能性はある ― 痕跡の不在は不在の証明にはならない。
-- ビットコイン v0.1 が Windows 専用で出荷されたという事実は、原理的には、主要環境が Mac や Linux である開発者が意図的に誤誘導した結果である可能性もある。
+- ビットコイン v0.1 が Windows 専用で配布されたという事実は、原理的には、主要環境が Mac や Linux である開発者が意図的に誤誘導した結果である可能性もある。
 - Phase 2、Phase 3 ではサトシの OS 像が Linux 寄りに移行している。主要 OS が Linux である候補（[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)、[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)）は Phase 1 よりも Phase 3 と整合的だが、設計が行われた時期は Phase 1 であり、判別の比較対象としてはこちらの方が決め手になる。
 
 ## 6. 横断的な観察
@@ -319,7 +319,7 @@ gantt
 - **サッサマンは §2 で外部的論破がない唯一の高スコア候補 — そのパターンは専門領域分離の副産物。** 彼の 2007〜2008 年の公的活動は匿名性研究専門（Mixmaster、KU ルーヴェン、24C3 と Black Hat 2007 の匿名性関連の講演）にあり、ビットコインのデジタルキャッシュ専門とは隣接しつつ別物。彼は自分の領域では可視だが、ビットコイン領域では不可視でいられた。多くの候補はこの専門領域分離の恩恵を受けず、能力 vs 隠匿性のトレードオフをより直接受ける。
 - **§2 で「全 🟢」候補は構造的に稀。** 能力 vs 隠匿性の対立は、サイファーパンクの活動に深く関わりながら *かつ* 開発期間中は完全に不可視だった、という像をほぼ不可能にする。ウェイ・ダイは専門領域の移行で近づく（1990 年代後半の活発なメーリングリスト参加、2007〜2008 年の Crypto++ メンテへの撤退）。サッサマンは専門領域の分離で近づく（匿名性研究で可視、デジタルキャッシュで不可視）。
 - **名前一致（ドリアン）と自称（ライト）は両方とも公的に論破された。** C 群で最も注目された二つの主張は構造的に同じパターンを共有する：両方とも単一の証拠系統（名前または自称）に依拠し、技術的・知的整合の裏付けがなかった。Newsweek の特定はドリアンの繰り返しの否定（弁護士・AP 通信インタビュー）、p2pfoundation アカウントの「私はドリアン・ナカモトではない」投稿、ジャーナリズム手法への広範な批判によって粉砕された。ライトの自称は COPA 対ライト判決で粉砕された。C 群で未決着の候補（ルルー、金子、トッド）は、自称ではなく能力＋隠匿性の論点で議論される。
-- **複数レイヤ間の収束は部分的。** ウェイ・ダイは §2（7 次元中 🟢 が 6）と §5（Windows-MSVC の C++ 出荷として Crypto++）の両方で最も整合的な候補。[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)はレイヤ間の不一致が最も鋭い：§2 のプロファイル整合次元は概ね 🟢 だが、§5 は直接の OS 不整合を記録する（長期 Mac、スネークケース＋タブ）。多くの候補は複数レイヤで似た位置に来る ― これらのレイヤが相関した能力指標を測っているため ― が、分離する候補（フィニー、サッサマン、トッド）はその分離が構造的（雑音ではない）。レイヤ間の収束は単独で同定を成立させない ― 各レイヤは必要だが十分ではない ― が、レイヤ間の不一致それ自体が手がかりになる。
+- **複数レイヤ間の収束は部分的。** ウェイ・ダイは §2（7 次元中 🟢 が 6）と §5（Windows-MSVC の C++ 公開実績として Crypto++）の両方で最も整合的な候補。[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)はレイヤ間の不一致が最も鋭い：§2 のプロファイル整合次元は概ね 🟢 だが、§5 は直接の OS 不整合を記録する（長期 Mac、スネークケース＋タブ）。多くの候補は複数レイヤで似た位置に来る ― これらのレイヤが相関した能力指標を測っているため ― が、分離する候補（フィニー、サッサマン、トッド）はその分離が構造的（雑音ではない）。レイヤ間の収束は単独で同定を成立させない ― 各レイヤは必要だが十分ではない ― が、レイヤ間の不一致それ自体が手がかりになる。
 - **プロファイル整合は必要だが十分ではない。** §2 のプロファイル整合だけで肯定される候補も、否定される候補もない。4 レイヤすべてと外部的状況の組合せ（および低スコア候補については支持証拠の不在）が、現在の議論における各候補の位置を決める。
 - **2011 年以降のサトシ名義の活動は、2014 年以前に途絶えた全候補のタイミング適合に波及する。** タイミング次元は 2011 年 4 月 26 日のメールを基準にするが、[ドリアン・ナカモト同定を否定するサトシ名義の投稿](/BitcoinArchive/ja/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/)が 2014 年 3 月に現れ、[P2P Foundation 創設者ミシェル・バウエンス](/BitcoinArchive/ja/entries/aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin/)も同時期にサトシからのメールがあったと回想している。この活動が真正なら、原著者はサッサマンの 2011 年の死から 3 年後、金子の 2013 年の死から 8 か月後にも生きていたことになり、両者のタイミング適合を直接否定する。真偽は係争中で（アカウントは二要素認証を欠き、2016 年 12 月のログインは投稿を伴わなかった）、決定づけるのではなく制約する。波及するのは、人生上の出来事が 2014 年より前にある候補 ― サッサマンと金子 ― だけであり、2014 年 8 月（投稿より後）に死去したフィニーには及ばない。
 
@@ -327,7 +327,7 @@ gantt
 
 - 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を一つの比較として整理したものである。
 - 4 つのレイヤはそれぞれ必要だが十分ではなく、外部的状況がいくつかの候補では決定的である。
-- **§2 と §5 で同じ 🟢／🟡／🔴 を使うが、両者のスケールは互換ではない。** §2 のスケールは 7 つのプロファイル次元との整合を測る。§5 のスケールは Phase 1 の Windows-MSVC-C++ 出荷像との整合を測る。各表は同じセクションの凡例とともに読まれたい。どちらの場合も、ラベルは定性的な要約であり、数値的な得点ではない。個別の仮説エントリー、または公的記録の最も広く受け入れられた読みに既に書かれている判定を視覚化したもの。読み手によって個別セルの配置は異なり得る。
+- **§2 と §5 で同じ 🟢／🟡／🔴 を使うが、両者のスケールは互換ではない。** §2 のスケールは 7 つのプロファイル次元との整合を測る。§5 のスケールは Phase 1 の Windows-MSVC-C++ 公開実績像との整合を測る。各表は同じセクションの凡例とともに読まれたい。どちらの場合も、ラベルは定性的な要約であり、数値的な得点ではない。個別の仮説エントリー、または公的記録の最も広く受け入れられた読みに既に書かれている判定を視覚化したもの。読み手によって個別セルの配置は異なり得る。
 - **4 つのレイヤ（§2 プロファイル整合、§3 文体計量、§4 直接通信、§5 開発環境）は互いに置換可能ではない。** 各レイヤは候補空間を異なる方向で絞り込む。あるレイヤで除外された候補が別のレイヤで除外されるとは限らず、レイヤ間の収束も同定を成立させない。複数レイヤの収束に関する観察は §6 を参照。
 - 本エントリーは公的記録を関連証拠基盤と仮定する。非公開の経路、検証不能と称される通信、出典未明な個人的回想に基づく仮説は、本エントリーでは扱わない。
 - 固有名候補の集合は閉じていない。他の固有名人物やグループに関する仮説も公的議論には存在する。本エントリーは最も多く議論される十二を扱う。

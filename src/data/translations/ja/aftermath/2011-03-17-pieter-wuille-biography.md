@@ -47,7 +47,7 @@ timeline
     2014 : Blockstream 共同創業
          : Bitcoin Core 組み込み SHA-256/SHA-512 実装追加 (4月20日)
     2015 : BIP-141 SegWit 共著 (12月)
-    2016 : libsecp256k1 が v0.12 デフォルト として出荷 (1月15日)
+    2016 : libsecp256k1 が v0.12 デフォルトに採用 (1月15日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/
     2020 : BIP-340 シュノア署名 / BIP-341 Taproot
     2021 : Taproot 有効化 (11月)
@@ -65,7 +65,7 @@ timeline
 - **[BIP-341](/BitcoinArchive/ja/entries/bip/2020-01-19-bip-0341/)**（2020年）— Taproot。2021年11月に有効化。
 
 ## libsecp256k1
-2013年3月5日、ウィーユは当初 GLV 手法エンドモーフィズムの性能実験として [libsecp256k1](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) を開始した。まもなく[グレゴリー・マクスウェル](/BitcoinArchive/ja/participants/gregory-maxwell/)が参加し、ライブラリーは OpenSSL の secp256k1 実装を目的別にフルリプレースするものへと成長した。2016年1月15日、Bitcoin Core v0.12 でデフォルトのバックエンドとして出荷された。
+2013年3月5日、ウィーユは当初 GLV 手法エンドモーフィズムの性能実験として [libsecp256k1](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) を開始した。まもなく[グレゴリー・マクスウェル](/BitcoinArchive/ja/participants/gregory-maxwell/)が参加し、ライブラリーは OpenSSL の secp256k1 実装を目的別にフルリプレースするものへと成長した。2016年1月15日、Bitcoin Core v0.12 でデフォルトのバックエンドとして採用された。
 
 ## Blockstream と Chaincode Labs
 ウィーユは 2014年、グレゴリー・マクスウェルらとともに Blockstream を共同創業し、後に Chaincode Labs にも参画した。一貫して Bitcoin Core の最も継続的なレビュアーであり、暗号設計者でもあり続けている。

@@ -148,7 +148,7 @@ Bitcoin Institute がここで自ら立てる反論：サトシ投稿から 1 �
 
 ### 3.4 Windows 専一の Bitcoin v0.1 開発環境との OS 非整合
 
-[Bitcoin v0.1 の開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)は Phase 1 / Phase 2 / Phase 3 の全期間にわたって Windows 専一だった ― v0.1 の readme.txt は対応コンパイラーとして「Microsoft Visual C++ 6.0 SP6」と「MinGW GCC (v3.4.5)」を明記し、ソースはマイクロソフトのハンガリアン記法、 v0.1.x シリーズは Windows 専用 `.rar` で出荷、 2011 年 2 月のサトシ最終メールにも `GnuPG v1.4.7 (MingW32) - WinPT 1.2.0` の Windows 専用 PGP 署名末尾が残る。トッド自身の同時期 GitHub リポジトリ (§2 上記) は一様に Linux を指す: ハードコードされた `/usr/share/` Linux FHS パス、 Unix シェバン、 PyGTK (GNOME/Linux ネイティブの GUI ツールキット)、 Windows 関連ファイル・パス・ツールはどのリポジトリにも現れない。仮説は、トッドが「サトシ」名義で可視化された全環境を Windows で、自分の名義で可視化された全環境を Linux で、 2007–2011 年の全期間にわたって並列運用していたこと、しかもその二重環境がいかなる同時期の個人リポジトリにも現れないことを要求する。
+[Bitcoin v0.1 の開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)は Phase 1 / Phase 2 / Phase 3 の全期間にわたって Windows 専一だった ― v0.1 の readme.txt は対応コンパイラーとして「Microsoft Visual C++ 6.0 SP6」と「MinGW GCC (v3.4.5)」を明記し、ソースはマイクロソフトのハンガリアン記法、 v0.1.x シリーズは Windows 専用 `.rar` で配布、 2011 年 2 月のサトシ最終メールにも `GnuPG v1.4.7 (MingW32) - WinPT 1.2.0` の Windows 専用 PGP 署名末尾が残る。トッド自身の同時期 GitHub リポジトリ (§2 上記) は一様に Linux を指す: ハードコードされた `/usr/share/` Linux FHS パス、 Unix シェバン、 PyGTK (GNOME/Linux ネイティブの GUI ツールキット)、 Windows 関連ファイル・パス・ツールはどのリポジトリにも現れない。仮説は、トッドが「サトシ」名義で可視化された全環境を Windows で、自分の名義で可視化された全環境を Linux で、 2007–2011 年の全期間にわたって並列運用していたこと、しかもその二重環境がいかなる同時期の個人リポジトリにも現れないことを要求する。
 
 ### 3.5 ビットコインコミュニティの技術的批判
 
