@@ -37,7 +37,7 @@ inlineLinkKeywords:
   - "Kaneko = Satoshi"
 ---
 
-The Kaneko-as-Satoshi hypothesis is the only major Satoshi-identity claim that exists almost entirely in Japanese-language discourse — extensive in 2ch / 5ch forums and Japanese tech press, essentially absent from English-language Bitcoin coverage. Its subject, Isamu Kaneko (1970–2013), was a University of Tokyo research associate who released the Winny peer-to-peer file-sharing system on 2channel in May 2002, spent seven and a half years (2004–2011) as the defendant in a Japanese criminal trial that became a landmark on the criminal liability of tool-developers, and died of a myocardial infarction in July 2013, two years after his Supreme Court acquittal. This entry lays out the [Kaneko = Satoshi](/BitcoinArchive/participants/isamu-kaneko/) hypothesis, the supporting arguments as their Japanese-language advocates make them, and the counter-evidence at the same level of detail. For comparison with other named candidates see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
+The Kaneko-as-Satoshi hypothesis is the only major Satoshi-identity claim that exists almost entirely in Japanese-language discourse — extensive in 2ch / 5ch forums and Japanese tech press, essentially absent from English-language Bitcoin coverage. Its subject, Isamu Kaneko (1970–2013), was a University of Tokyo research associate who released the Winny peer-to-peer file-sharing system on 2channel in May 2002, spent seven and a half years (2004–2011) as the defendant in a Japanese criminal trial that became a landmark on the criminal liability of tool-developers, and died of a myocardial infarction in July 2013, two years after his Supreme Court acquittal. For comparison with other named candidates see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
 
 ## 1. Who Kaneko was
 
@@ -146,7 +146,7 @@ For comparison with other named-candidate Satoshi-identity hypotheses, see the [
 
 ## 6. Limits of this entry
 
-- This entry does not present new evidence. It compiles publicly available material and frames the case at the same level of detail on both sides.
+- This entry does not present new evidence. It compiles publicly available material.
 - This entry does not engage with statements made by Kaneko's surviving family. The editorial choice is to keep family commentary out of the hypothesis frame; if those statements eventually become part of the documentary public record on the identity question (rather than personal recollection), that decision should be revisited.
 - This entry does not draw any narrative connection between Kaneko's death and the Bitcoin-authorship question. The cause of death (myocardial infarction) is documented, the timing relative to Satoshi's silence is two years, and the entry does not treat the death as material to the hypothesis.
 

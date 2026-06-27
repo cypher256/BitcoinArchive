@@ -54,7 +54,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-2011 年 4 月 26 日、[サトシは最後の既知のメール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)を送った。68 日後の 2011 年 7 月 3 日、サイファーパンクの暗号学者レン・サッサマンがベルギーで自死した。この 2 つの日付の近接性が「サッサマン＝サトシ」仮説の中核観察である —— Mixmaster 匿名リメイラーの仕事、サイファーパンクとしての経歴、2011 年 8 月のダン・カミンスキーによる[ブロックチェーン追悼](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/)が補強する。本エントリは[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)＝サトシ仮説、支持論者の論じ方、そして反証を同じ詳細度で並べる。 2026 年 4 月公開の[サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、この単独仮説を共作仮説に拡張し、サッサマンをハル・フィニーと並ぶ共作者として提示している (主張と反証はリンク先を参照)。
+2011 年 4 月 26 日、[サトシは最後の既知のメール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)を送った。68 日後の 2011 年 7 月 3 日、サイファーパンクの暗号学者レン・サッサマンがベルギーで自死した。この 2 つの日付の近接性が「サッサマン＝サトシ」仮説の中核観察である —— Mixmaster 匿名リメイラーの仕事、サイファーパンクとしての経歴、2011 年 8 月のダン・カミンスキーによる[ブロックチェーン追悼](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/)が補強する。 2026 年 4 月公開の[サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、この単独仮説を共作仮説に拡張し、サッサマンをハル・フィニーと並ぶ共作者として提示している (主張と反証はリンク先を参照)。
 
 ## 1. 仮説が主張する内容
 
@@ -155,7 +155,7 @@ Mixmaster 等の匿名性システムにおけるサッサマンの記録され�
 
 ## 5. 本エントリーの限界
 
-- 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理し、両側を同じ詳細度で枠組みづける。
+- 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
 - 新たな証拠 — 直接的な文書上の繋がり、v0.1 コードに残るサッサマンの他の公開コードと一致する技術的指紋、パターソンや他の証人による発言 — が出現すれば、本エントリーは更新されるべきである。
 
 本仮説は[レン・サッサマン伝記](/BitcoinArchive/ja/participants/len-sassaman/) (仮説の対象人物)、 [アダム・バック身元仮説](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)・[サボ身元仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)・[金子勇身元仮説](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) (同じ候補ランドスケープの並列仮説)、そして [2026 年 van Dorst コーパス候補別再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) (サッサマン枠組みを定量的文体計量と対比) から参照される。

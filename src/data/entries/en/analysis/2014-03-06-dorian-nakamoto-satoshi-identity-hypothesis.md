@@ -33,7 +33,7 @@ inlineLinkKeywords:
   - "Dorian Nakamoto = Satoshi"
 ---
 
-On March 6, 2014, [Newsweek's cover story "The Face Behind Bitcoin"](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) announced that the magazine had found Satoshi Nakamoto, and named a 64-year-old engineer in Temple City, California: Dorian Prentice Satoshi Nakamoto. The identification rested on a single load-bearing fact — the man's birth name was, literally, Satoshi Nakamoto — and it came apart within a day. This entry lays out the [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) = Satoshi case as Newsweek made it, and the counter-evidence at the same level of detail. Full biographical and timeline coverage is in the [Dorian Nakamoto biography](/BitcoinArchive/participants/dorian-nakamoto/); this entry covers the hypothesis only.
+On March 6, 2014, [Newsweek's cover story "The Face Behind Bitcoin"](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) announced that the magazine had found Satoshi Nakamoto, and named a 64-year-old engineer in Temple City, California: Dorian Prentice Satoshi Nakamoto. The identification rested on a single load-bearing fact — the man's birth name was, literally, Satoshi Nakamoto — and it came apart within a day. Full biographical and timeline coverage is in the [Dorian Nakamoto biography](/BitcoinArchive/participants/dorian-nakamoto/); this entry covers the hypothesis only.
 
 ## 1. What the hypothesis claims
 
@@ -92,7 +92,7 @@ The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/200
 
 ## 5. Limits of this entry
 
-- This entry does not present new evidence. It compiles publicly available material and frames the case at the same level of detail on both sides.
+- This entry does not present new evidence. It compiles publicly available material.
 - Full biographical detail — Nakamoto's life, career, the donation drive the Bitcoin community raised for him, and the geographic-coincidence reporting — is in the [Dorian Nakamoto biography](/BitcoinArchive/participants/dorian-nakamoto/); this entry is the hypothesis treatment only.
 
 This hypothesis entry is referenced from the [Dorian Nakamoto biography](/BitcoinArchive/participants/dorian-nakamoto/) (the subject of the hypothesis) and the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), which places Dorian Nakamoto in its Group C taxonomy within the necessary-but-not-sufficient evaluation framework.

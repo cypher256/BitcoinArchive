@@ -74,7 +74,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-2026 年 4 月 8 日、ニューヨーク・タイムズが[ジョン・カレイロウの調査記事](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)を公開し、ビットコイン公開以前に暗号学メーリングリストに 10 件以上投稿した 620 人の書き手のうち、[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)をサトシ・ナカモトに文体上最も近いと特定した。ピューリッツァー賞受賞のカレイロウの文体計量分析は、他の状況証拠と一連で位置づけられた —— バックの Hashcash 発明（1997 年、ホワイトペーパーで参考文献 [6] として引用）、サトシが最初に接触した既知の人物としての立場（2008 年 8 月 20 日）、その後の Blockstream CEO としての役割。バックは複数のインタビューで特定を否定した。本エントリは主張、支持論者の論じ方、そして反証を同じ詳細度で並べる。
+2026 年 4 月 8 日、ニューヨーク・タイムズが[ジョン・カレイロウの調査記事](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)を公開し、ビットコイン公開以前に暗号学メーリングリストに 10 件以上投稿した 620 人の書き手のうち、[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)をサトシ・ナカモトに文体上最も近いと特定した。ピューリッツァー賞受賞のカレイロウの文体計量分析は、他の状況証拠と一連で位置づけられた —— バックの Hashcash 発明（1997 年、ホワイトペーパーで参考文献 [6] として引用）、サトシが最初に接触した既知の人物としての立場（2008 年 8 月 20 日）、その後の Blockstream CEO としての役割。バックは複数のインタビューで特定を否定した。
 
 ## 1. 仮説が主張する内容
 

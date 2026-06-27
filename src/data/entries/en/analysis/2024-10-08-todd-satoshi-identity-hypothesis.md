@@ -48,7 +48,7 @@ inlineLinkKeywords:
   - "Peter Todd hypothesis"
 ---
 
-"retep" is "peter" spelled backwards. Bitcoin Core developer Gregory Maxwell took nearly a decade to notice. The handle belonged to an account that registered on BitcoinTalk on December 7, 2010 and, three days later, replied to a Satoshi thread on transaction-replacement fees. Two days after that, [Satoshi posted his last public message](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/). HBO's 2024 documentary [*Money Electric: The Bitcoin Mystery*](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (directed by Cullen Hoback, released October 8, 2024) used that December 2010 sequence as its central evidence and named [Peter Todd](/BitcoinArchive/participants/peter-todd/) as Satoshi. Todd answered the documentary on camera sarcastically — "It's ludicrous. But I'll say, yeah, of course I'm Satoshi" — and on the day of broadcast told CoinDesk directly: "Of course, I'm not Satoshi." This entry lays out the documentary's argument, the supporting interpretation as the film makes it, and the counter-evidence at the same level of detail.
+"retep" is "peter" spelled backwards. Bitcoin Core developer Gregory Maxwell took nearly a decade to notice. The handle belonged to an account that registered on BitcoinTalk on December 7, 2010 and, three days later, replied to a Satoshi thread on transaction-replacement fees. Two days after that, [Satoshi posted his last public message](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/). HBO's 2024 documentary [*Money Electric: The Bitcoin Mystery*](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (directed by Cullen Hoback, released October 8, 2024) used that December 2010 sequence as its central evidence and named [Peter Todd](/BitcoinArchive/participants/peter-todd/) as Satoshi. Todd answered the documentary on camera sarcastically — "It's ludicrous. But I'll say, yeah, of course I'm Satoshi" — and on the day of broadcast told CoinDesk directly: "Of course, I'm not Satoshi."
 
 ## 1. What the hypothesis claims
 
@@ -165,7 +165,7 @@ For comparison with other named-candidate Satoshi-identity hypotheses (Sassaman,
 
 ## 5. Limits of this entry
 
-- This entry does not present new evidence. It compiles publicly available material and frames the case at the same level of detail on both sides.
+- This entry does not present new evidence. It compiles publicly available material.
 - If new evidence surfaces — direct documentary links, technical fingerprints in the v0.1 code matching Todd's other published code, comments by Todd or other witnesses that contradict the public record — this entry should be updated.
 
 This Peter Todd identity hypothesis is anchored by two adjacent records. [The HBO Money Electric documentary entry](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) is the prominent public articulation this hypothesis takes as its starting point. [The satoshi-identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places this hypothesis within its Group C taxonomy and uses it as one of the principal comparison anchors in the necessary-but-not-sufficient evaluation framework.

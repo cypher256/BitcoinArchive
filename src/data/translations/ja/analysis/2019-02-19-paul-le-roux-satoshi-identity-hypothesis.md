@@ -34,7 +34,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-[ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/)は、ビットコインとの関連が完全に外部からのものである候補だ。サトシ・ナカモトとの記録された接触はなく、ルルー自身による問題への言及もなく、公的記録上の彼によるビットコイン関連資料も存在しない。彼が候補ランドスケープに入ったのは、ジャーナリストのエヴァン・ラトリフが 2019 年に著した『The Mastermind』を通じてで、能力＋隠蔽性＋動機の議論によって有力なサトシ候補として名指しされた。本エントリは、ルルー＝サトシの論と反証を同じ詳細度で並べる。彼の生涯の全体 —— E4M、犯罪組織、逮捕 —— は[ポール・ルルー伝記](/BitcoinArchive/ja/participants/paul-le-roux/)にある。
+[ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/)は、ビットコインとの関連が完全に外部からのものである候補だ。サトシ・ナカモトとの記録された接触はなく、ルルー自身による問題への言及もなく、公的記録上の彼によるビットコイン関連資料も存在しない。彼が候補ランドスケープに入ったのは、ジャーナリストのエヴァン・ラトリフが 2019 年に著した『The Mastermind』を通じてで、能力＋隠蔽性＋動機の議論によって有力なサトシ候補として名指しされた。彼の生涯の全体 —— E4M、犯罪組織、逮捕 —— は[ポール・ルルー伝記](/BitcoinArchive/ja/participants/paul-le-roux/)にある。
 
 ## 1. 仮説が主張する内容
 
@@ -91,7 +91,7 @@ translationStatus: complete
 
 ## 5. 本エントリーの限界
 
-- 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理し、両側を同じ詳細度で枠組みづける。
+- 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
 - 本アーカイブはルルーに関する一次資料のエントリー（E4M サイファーパンク告知、刑事訴訟関連文書、『The Mastermind』抜粋）を保持していない。ここでの具体的な日付・主張は外部ソース —— 主にラトリフ（2019）、『The Atavist Magazine』（2016）、Wikipedia —— に基づくものでアーカイブ内検証済みではなく、生涯の全体は[ポール・ルルー伝記](/BitcoinArchive/ja/participants/paul-le-roux/)にある。
 
 本仮説エントリーは[ポール・ルルー伝記](/BitcoinArchive/ja/participants/paul-le-roux/)（仮説の対象人物）と[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)から参照される。総覧は、必要だが十分ではないという評価枠組みの中で、ポール・ルルーを C 群に位置づけている。

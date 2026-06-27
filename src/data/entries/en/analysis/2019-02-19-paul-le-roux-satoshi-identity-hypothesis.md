@@ -33,7 +33,7 @@ inlineLinkKeywords:
   - "Paul Le Roux = Satoshi"
 ---
 
-[Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) is the candidate whose connection to Bitcoin is entirely external. There is no documented contact with Satoshi Nakamoto, no statement by Le Roux on the question, and no Bitcoin-related material from him in the public record. He entered the candidate landscape through journalist Evan Ratliff's 2019 book *The Mastermind*, which named him as a possible Satoshi on a capability-plus-covertness-plus-motive argument. This entry lays out the Le Roux = Satoshi case and the counter-evidence at the same level of detail; his full life — E4M, the criminal enterprise, the arrest — is in the [Paul Le Roux biography](/BitcoinArchive/participants/paul-le-roux/).
+[Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) is the candidate whose connection to Bitcoin is entirely external. There is no documented contact with Satoshi Nakamoto, no statement by Le Roux on the question, and no Bitcoin-related material from him in the public record. He entered the candidate landscape through journalist Evan Ratliff's 2019 book *The Mastermind*, which named him as a possible Satoshi on a capability-plus-covertness-plus-motive argument. His full life — E4M, the criminal enterprise, the arrest — is in the [Paul Le Roux biography](/BitcoinArchive/participants/paul-le-roux/).
 
 ## 1. What the hypothesis claims
 
@@ -90,7 +90,7 @@ Le Roux fits the one condition the public record most strongly supports about Sa
 
 ## 5. Limits of this entry
 
-- This entry does not present new evidence. It compiles publicly available material and frames the case at the same level of detail on both sides.
+- This entry does not present new evidence. It compiles publicly available material.
 - This archive holds no dedicated Le Roux primary-source entries (the E4M cypherpunks announcement, criminal-case court documents, *Mastermind* excerpts). The specific dates and claims here are externally sourced — primarily Ratliff (2019), *The Atavist Magazine* (2016), and Wikipedia — rather than archive-verified, and the full life is in the [Paul Le Roux biography](/BitcoinArchive/participants/paul-le-roux/).
 
 This hypothesis entry is referenced from the [Paul Le Roux biography](/BitcoinArchive/participants/paul-le-roux/) (the subject of the hypothesis) and the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), which places Paul Le Roux in its Group C taxonomy within the necessary-but-not-sufficient evaluation framework.

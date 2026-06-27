@@ -53,7 +53,7 @@ inlineLinkKeywords:
   - "Sassaman = Satoshi"
 ---
 
-On April 26, 2011, [Satoshi sent his last known email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/). Sixty-eight days later, on July 3, 2011, cypherpunk cryptographer Len Sassaman died by suicide in Belgium. The proximity of those two dates is the load-bearing observation under the Sassaman-as-Satoshi hypothesis — supplemented by his Mixmaster anonymous-remailer work, his cypherpunk credentials, and Dan Kaminsky's August 2011 [blockchain tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/). This entry lays out the [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) = Satoshi hypothesis, the supporting arguments as their advocates make them, and the counter-evidence at the same level of detail. The April 2026 [Finding Satoshi documentary](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) extends this individual hypothesis into a multi-person reading, naming Sassaman alongside Hal Finney as co-creators (the documentary's claims and Adam Back's counter-evidence are treated at the linked entry).
+On April 26, 2011, [Satoshi sent his last known email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/). Sixty-eight days later, on July 3, 2011, cypherpunk cryptographer Len Sassaman died by suicide in Belgium. The proximity of those two dates is the load-bearing observation under the Sassaman-as-Satoshi hypothesis — supplemented by his Mixmaster anonymous-remailer work, his cypherpunk credentials, and Dan Kaminsky's August 2011 [blockchain tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/). The April 2026 [Finding Satoshi documentary](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) extends this individual hypothesis into a multi-person reading, naming Sassaman alongside Hal Finney as co-creators (the documentary's claims and Adam Back's counter-evidence are treated at the linked entry).
 
 ## 1. What the hypothesis claims
 
@@ -154,7 +154,7 @@ For comparison with other named-candidate Satoshi-identity hypotheses, see the [
 
 ## 5. Limits of this entry
 
-- This entry does not present new evidence. It compiles publicly available material and frames the case at the same level of detail on both sides.
+- This entry does not present new evidence. It compiles publicly available material.
 - If new evidence surfaces — direct documentary links, technical fingerprints in the v0.1 code matching Sassaman's other published code, comments by Patterson or other witnesses — this entry should be updated.
 
 This hypothesis is referenced from the [Len Sassaman biography](/BitcoinArchive/participants/len-sassaman/) (the subject of the hypothesis), [the Adam Back identity hypothesis](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) and [the Szabo identity hypothesis](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) and [the Isamu Kaneko identity hypothesis](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) (as one of the peers in the same candidate landscape), and [the 2026 van-Dorst-corpus reanalysis on named candidates](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) (which weighs the Sassaman framing against quantitative stylometric methods).

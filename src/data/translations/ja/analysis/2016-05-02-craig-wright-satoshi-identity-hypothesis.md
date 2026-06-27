@@ -38,7 +38,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-他のすべての固有名候補の仮説は、ある人物に *ついて* なされた主張だ。これだけは、本人 *によって* なされた。2016 年 5 月 2 日、クレイグ・ライトは [BBC・The Economist・GQ との連携インタビュー](/BitcoinArchive/ja/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/)で、自分がサトシ・ナカモトであると宣言し、決着をつけるための暗号学的証明を提示した。証明は数時間で崩れ、8 年後に英国高等法院が [COPA 対ライト](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)で、彼はサトシではなく、その主張を裏付けるために大規模に文書を偽造した、と認定した。本エントリは[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)＝サトシの主張、依拠した論点、そして反証を並べる。出来事の全体と年表は[クレイグ・ライト伝記](/BitcoinArchive/ja/participants/craig-wright/)にある。
+他のすべての固有名候補の仮説は、ある人物に *ついて* なされた主張だ。これだけは、本人 *によって* なされた。2016 年 5 月 2 日、クレイグ・ライトは [BBC・The Economist・GQ との連携インタビュー](/BitcoinArchive/ja/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/)で、自分がサトシ・ナカモトであると宣言し、決着をつけるための暗号学的証明を提示した。証明は数時間で崩れ、8 年後に英国高等法院が [COPA 対ライト](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)で、彼はサトシではなく、その主張を裏付けるために大規模に文書を偽造した、と認定した。出来事の全体と年表は[クレイグ・ライト伝記](/BitcoinArchive/ja/participants/craig-wright/)にある。
 
 ## 1. 仮説が主張する内容
 
@@ -95,7 +95,7 @@ translationStatus: complete
 
 ## 5. 本エントリーの限界
 
-- 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理し、両側を同じ詳細度で枠組みづける。
+- 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
 - 出来事の全体 —— 2016 年の宣言、Wired／Gizmodo の先行報道、Cobra へのホワイトペーパー訴訟、裁判、控訴 —— は[クレイグ・ライト伝記](/BitcoinArchive/ja/participants/craig-wright/)にある。本エントリーは仮説の論述のみを扱う。
 
 本仮説エントリーは[クレイグ・ライト伝記](/BitcoinArchive/ja/participants/craig-wright/)（仮説の対象人物）と[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)から参照される。総覧は、必要だが十分ではないという評価枠組みの中で、クレイグ・ライトを C 群に位置づけている。

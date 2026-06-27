@@ -55,7 +55,7 @@ inlineLinkKeywords:
 <!-- audit:quote-skip -->
 > "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
 
-This entry lays out the recurring hypothesis that [Wei Dai](/BitcoinArchive/participants/wei-dai/) is Satoshi, the arguments its advocates marshal, and the counter-evidence — Wei Dai's own denial above among the principal pieces. The hypothesis sits in Group A (Satoshi explicitly cited his work) and has surfaced in cryptography journalism since at least 2010.
+The recurring hypothesis that [Wei Dai](/BitcoinArchive/participants/wei-dai/) is Satoshi — with Wei Dai's own denial above among the principal counter-pieces — sits in Group A (Satoshi explicitly cited his work) and has surfaced in cryptography journalism since at least 2010.
 
 ## 1. What the hypothesis claims
 
