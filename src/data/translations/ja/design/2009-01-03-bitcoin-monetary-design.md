@@ -23,6 +23,8 @@ relatedEntries:
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
+  - aftermath/1998-12-06-adam-back-b-money-monetary-critique
 inlineLinkKeywords:
   - "ビットコイン供給上限"
   - "半減スケジュール"

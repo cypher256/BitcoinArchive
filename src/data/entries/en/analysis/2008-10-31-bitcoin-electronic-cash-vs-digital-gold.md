@@ -29,8 +29,12 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2015-08-15-block-size-war-2015-2017-overview
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
+  - design/2009-01-03-bitcoin-monetary-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - aftermath/2017-08-01-bitcoin-cash-fork
+  - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
+  - aftermath/1998-12-06-adam-back-b-money-monetary-critique
+  - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
 inlineLinkKeywords:
   - "electronic cash"
   - "dream of electronic cash"
@@ -47,7 +51,7 @@ translationStatus: complete
 
 "Bitcoin: A Peer-to-Peer Electronic Cash System." The [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)'s title says it plainly: money you spend, a payment system. Section 1 is entirely about letting two parties pay each other directly, with no trusted third party in between.
 
-So what is section 6's line that "the steady addition of new coins is analogous to gold miners expending resources to add gold to circulation"? It is about **issuance** — how coins come into being. Like gold, they are dug out by spending resources, and the supply runs to a cap and stops. It is not about how you use them.
+So what is section 6's line that "the steady addition of new coins is analogous to gold miners expending resources to add gold to circulation"? It is about **issuance** — how coins come into being. Like gold, they are dug out by spending resources, and [the supply runs to a cap and stops](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/). It is not about how you use them.
 
 So Satoshi did not write two things in conflict. He wrote **one new thing**. The issuance is hard, like gold — no one can print it; the use is cash — you pay with it directly. Different axes, so they hold at once, without contradiction.
 

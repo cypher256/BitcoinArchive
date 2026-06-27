@@ -29,8 +29,12 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2015-08-15-block-size-war-2015-2017-overview
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
+  - design/2009-01-03-bitcoin-monetary-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - aftermath/2017-08-01-bitcoin-cash-fork
+  - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
+  - aftermath/1998-12-06-adam-back-b-money-monetary-critique
+  - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
 inlineLinkKeywords:
   - "電子キャッシュ"
   - "電子キャッシュの夢"
@@ -47,7 +51,7 @@ translationStatus: complete
 
 「ビットコイン：ピアツーピアの電子キャッシュシステム」。[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)のタイトルは、使うためのお金——支払いの仕組みだと、はっきり言っている。第 1 節も丸ごと、信頼できる第三者を介さずに二者が直接払い合う話だ。
 
-では、第 6 節の「新規コインの安定的な追加は、金のマイナーが資源を費やして金を流通に追加するのに似ている」は何か。これは**発行**の話だ。コインがどう生まれるか——金が掘り出されるように、資源を費やして採掘され、やがて上限に達して増えなくなる。使い方の話ではない。
+では、第 6 節の「新規コインの安定的な追加は、金のマイナーが資源を費やして金を流通に追加するのに似ている」は何か。これは**発行**の話だ。コインがどう生まれるか——金が掘り出されるように、資源を費やして採掘され、[やがて上限に達して増えなくなる](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)。使い方の話ではない。
 
 だからサトシが書いたのは、ぶつかり合う二つではない。**一つの新しいもの**だ。発行は金のように増やせず（誰も勝手に刷れない）、使い方は現金（じかに払う）。別の軸の話だから、矛盾なく同時に成り立つ。
 

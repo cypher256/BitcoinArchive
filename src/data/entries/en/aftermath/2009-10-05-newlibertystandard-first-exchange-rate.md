@@ -25,6 +25,8 @@ relatedEntries:
   - aftermath/2009-10-05-newlibertystandard-biography
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
   - aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal
+  - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
+  - aftermath/1998-12-06-adam-back-b-money-monetary-critique
 ---
 
 On October 5, 2009, [NewLibertyStandard](/BitcoinArchive/participants/newlibertystandard/) published the first-ever exchange rate for Bitcoin.

@@ -51,6 +51,7 @@ relatedEntries:
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
+  - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
 inlineLinkKeywords:
   - "Hayek lineage"
   - "Denationalisation of Money"

@@ -42,6 +42,9 @@ relatedEntries:
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
+  - "analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold"
+  - "design/2009-01-03-bitcoin-monetary-design"
+  - "aftermath/2009-10-05-newlibertystandard-first-exchange-rate"
 translationStatus: complete
 quotes:
   - id: "q1"
