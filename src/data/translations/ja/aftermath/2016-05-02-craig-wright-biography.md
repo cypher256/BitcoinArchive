@@ -11,8 +11,8 @@ participants:
 description: "クレイグ・スティーブン・ライト（1970–）：2016 年 5 月にサトシを公言したオーストラリアの計算機科学者。2024 年 3 月 COPA 対ライト裁判で英国高等法院は大規模捏造を認定。"
 isSatoshi: false
 callout:
-  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
-  label: "サトシ正体仮説の総覧"
+  entry: "analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis"
+  label: "サトシ正体仮説"
 tags:
   - "craig-wright"
   - "biography"
@@ -30,6 +30,7 @@ secondarySources:
   - name: "Law Gazette — 'Fake Satoshi' hit with costs bill over AI evidence (March 2025)"
     url: "https://www.lawgazette.co.uk/news/fake-satoshi-hit-with-costs-bill-over-ai-evidence/5122587.article"
 relatedEntries:
+  - "analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis"
   - "aftermath/2015-12-08-wired-gizmodo-craig-wright-claims"
   - "aftermath/2016-05-02-craig-wright-bbc-economist-claim"
   - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"
@@ -52,7 +53,7 @@ translationStatus: complete
 > 3. ライト博士はビットコインシステムを創設した人物ではない。
 > 4. ライト博士はビットコインソフトウェアの初期バージョンを開発した人物ではない。
 
-判事はライトを極めて不誠実な証人と評し、サトシ・ナカモトを名乗る偽りの主張を裏付けるために、意図的かつ大規模な文書の偽造を行ったと結論づけた。
+判事はライトを極めて不誠実な証人と評し、サトシ・ナカモトを名乗る偽りの主張を裏付けるために、意図的かつ大規模な文書の偽造を行ったと結論づけた。この自称、それが依拠した論点、そして反証は、[クレイグ・ライトはサトシだったのか](/BitcoinArchive/ja/entries/analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis/)にサトシ正体仮説として並べてある。
 
 クレイグ・スティーブン・ライトは、1970 年 10 月にオーストラリア・ブリスベンで生まれたコンピューター科学者・実業家である。
 

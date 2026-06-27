@@ -11,8 +11,8 @@ participants:
 description: "ポール・カルダー・ルルー（1972–）：E4M（TrueCrypt 前身）開発者で国際犯罪組織の長。2012年逮捕、2019年『The Mastermind』でサトシ候補に挙げられた。"
 isSatoshi: false
 callout:
-  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
-  label: "サトシ正体仮説の総覧"
+  entry: "analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis"
+  label: "サトシ正体仮説"
 tags:
   - "paul-le-roux"
   - "biography"
@@ -28,6 +28,7 @@ secondarySources:
   - name: "Wikipedia — E4M (Encryption for the Masses)"
     url: "https://en.wikipedia.org/wiki/E4M"
 relatedEntries:
+  - "analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
@@ -66,6 +67,6 @@ timeline
 
 ## サトシ正体問題との外部的な関連付け
 
-ルルーとサトシ正体問題の関連は完全に外部からのものである — サトシ・ナカモトとの記録された接触はなく、ルルー自身による問題への言及もなく、公的記録上の彼によるビットコイン関連資料も存在しない。サトシ候補として挙げられたのは主にラトリフの 2019年『The Mastermind』と付随ジャーナリズムによるもので、能力 + 隠蔽性 + 動機の整合という議論に依拠している（E4M の暗号工学経験、2007〜2008年のビットコイン開発期に犯罪組織運営に伴う公的可視性の低さ、暗号学者としての過去を犯罪者としての現在から切り離す動機の可能性）。仮説の賛否 — 賛成論と反対論（限定的なサイファーパンク参加歴、貨幣設計業務の不在、E4M 以後のビットコイン v0.1 規模出荷不在、状況証拠のみ）— は本バイオが扱う。[サトシ正体仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)では §2.1 の候補比較表に位置づけられる。[2026-05-03 ヴァン・ドルスト・コーパス再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)はルルーを名指し候補集合から明示的に除外している（ドリアン・ナカモト、クレイグ・ライト、ピーター・トッド、金子勇とともに）— ルルーの暗号学活動が同コーパスの対象とする 1992〜2000 年の暗号学メーリングリスト期に該当しないためである。同分析からはサトシに対するルルーの文体距離は得られていない。
+ルルーとサトシ正体問題の関連は完全に外部からのものである — サトシ・ナカモトとの記録された接触はなく、ルルー自身による問題への言及もなく、公的記録上の彼によるビットコイン関連資料も存在しない。サトシ候補として挙げられたのは主にラトリフの 2019 年『The Mastermind』と付随ジャーナリズムによるもので、能力 + 隠蔽性 + 動機の整合という議論に依拠している。賛否の論、および [2026-05-03 ヴァン・ドルスト・コーパス再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)が彼を文体計量の候補集合から除外していることは、[ポール・ルルー＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis/)に並べてある。[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)では §2.1 の候補比較表に位置づけられる。
 
 *[編者注：本アーカイブはルルーに関する一次資料のエントリ（E4M サイファーパンク告知、刑事訴訟関連文書、Mastermind 章抜粋）を保持していない。本バイオの具体的な日付・主張は外部ソース — 主にラトリフ（2019）、Atavist Magazine（2016）、Wikipedia — に基づいており、アーカイブ内検証済みではない。サトシ正体問題との関連付けは公的議論の記録のために含めたものであり、本バイオが仮説を支持するものではない。]*

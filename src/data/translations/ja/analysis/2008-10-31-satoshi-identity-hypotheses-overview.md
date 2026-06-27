@@ -74,6 +74,9 @@ relatedEntries:
   - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
+  - analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis
+  - analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis
+  - analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - aftermath/2013-07-06-isamu-kaneko-biography
@@ -91,7 +94,7 @@ relatedEntries:
 - 約 18 か月の集中的なコーディング期間 (2007 年半ばから v0.1 リリースの 2009 年 1 月まで、実装作業は 2008 年 8 月までに実質的に完了。ホワイトペーパーはコードが実質的に完了した後に書かれた ― サトシからハル・フィニーへの 2008 年 11 月 10 日のメールによる)。これは、サトシが後に「2007 年から」「リリース前に 2 年間の開発」と述べた約 2 年のリリース前作業の中にある
 - 2011 年 4 月の撤退
 
-4 つの構造的レイヤは互いに置換可能ではない。それぞれが候補空間を異なる方向で絞り込む。個別の仮説エントリーがある候補については、深い扱いはそちらに譲る（各表の「個別」列を参照）。それ以外の候補は本エントリー内で扱う。
+4 つの構造的レイヤは互いに置換可能ではない。それぞれが候補空間を異なる方向で絞り込む。各名指し候補には個別の仮説エントリーがあり、深い扱いはそちらに譲る（各表の「個別」列を参照）。
 
 **2024-2026 年のサトシ特定の波。** 2024 年後半以降、主要メディア / ドキュメンタリーによる特定が 4 件相次いだ。それぞれ依拠する根拠が違う ― [HBO『Money Electric』によるピーター・トッド特定](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (2024 年 10 月、フォーラム投稿のタイミング論)、 [NYT カレイロウのアダム・バック調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (2026 年 4 月、文体計量による単独候補名指し)、 [サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) (2026 年 4 月、活動時刻と遺族証言にもとづく ― 共作者の同定・論拠・反証は §8.1)、そして他とは経路の違う[サトシ政府機関説 ― Murphy 対 DHS FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) (2025 年 4 月、政府文書開示請求 ― 論拠・反証は §8.2)。いずれも暗号学的確認は得られていない。以下の比較表は、この波で出た証拠が候補の状況を動かす範囲で取り込んでいる。
 
@@ -103,7 +106,7 @@ relatedEntries:
 - **B. 能力整合の高いサイファーパンク** — ハル・フィニー、ニック・サボ、レン・サッサマン
 - **C. 第三者発掘・自称・名前一致で浮上した候補** — ドリアン・プレンティス・サトシ・ナカモト、クレイグ・ライト、ピーター・トッド、金子勇、ポール・ルルー
 
-候補ごとの経歴はバイオ（§2.1 表の人名リンク）、外部的状況は §2.1 表の「外部的状況」列にまとめる。正体ページのある候補は同表「個別」列から各エントリーへ、正体ページのない候補（ドリアン／ライト／ルルー — サトシ疑惑そのものが記録理由の人物）は各バイオが論述場所を兼ねる。4 つのレイヤ（§2 〜 §5）は、サトシに関する公的記録の輪郭に対して各候補を独立した観点から比較する。4 レイヤを跨いだ横断的観察は §6、組み合わせた限界は §7 で扱う。
+候補ごとの経歴はバイオ（§2.1 表の人名リンク）、外部的状況は §2.1 表の「外部的状況」列にまとめる。各候補は同表「個別」列から専用の正体ページへリンクし、そこで論述が全面的に展開される。4 つのレイヤ（§2 〜 §5）は、サトシに関する公的記録の輪郭に対して各候補を独立した観点から比較する。4 レイヤを跨いだ横断的観察は §6、組み合わせた限界は §7 で扱う。
 
 ## 2. レイヤ 1 — プロファイル整合
 
@@ -115,9 +118,9 @@ relatedEntries:
 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | [正体](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 自己否定／公開前通信は第三者応答として読める |
 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | [正体](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 自己否定／Patoshi 不一致／レース日のアリバイ |
 | [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | [正体](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | 自己否定 |
-| [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | 自己否定／p2pfoundation 復帰 |
-| [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA 対ライト（2024）敗訴 |
-| [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | — | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 未決着（2012 年〜服役中） |
+| [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | [正体](/BitcoinArchive/ja/entries/analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | 自己否定／p2pfoundation 復帰 |
+| [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | [正体](/BitcoinArchive/ja/entries/analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA 対ライト（2024）敗訴 |
+| [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | [正体](/BitcoinArchive/ja/entries/analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis/) | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 未決着（2012 年〜服役中） |
 | [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | [正体](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | 未決着 |
 | [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | [正体](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 自己否定（HBO 2024 ドキュメンタリー） |
 | [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | [正体](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 未決着 |
@@ -128,7 +131,7 @@ relatedEntries:
 
 - 次元は二つのグループに分かれて互いに引っ張り合う（背景・能力 vs 隠匿性）。**🟢 数を全列で単純合計して「サトシ度」として扱うのは誤解を招く**。詳しくは §2.2 を参照。
 - プロファイル比較は *必要だが十分ではない* 条件。「外部的状況」列は外部的証拠（自己否定、判決、技術的論破）を示し、プロファイル比較とは独立に候補を除外する場合がある。
-- 本アーカイブに個別の仮説エントリーがない候補のセルは、公的記録の最も広く受け入れられた読みに基づく配置である。
+- セルの色の配置は公的記録の最も広く受け入れられた読みに基づく。各候補の専用の正体ページ（「個別」列のリンク）が、プロファイルを詳しく論じる。
 
 ### 2.2 方法論
 
@@ -312,7 +315,7 @@ gantt
 - **4 つのレイヤ（§2 プロファイル整合、§3 文体計量、§4 直接通信、§5 開発環境）は互いに置換可能ではない。** 各レイヤは候補空間を異なる方向で絞り込む。あるレイヤで除外された候補が別のレイヤで除外されるとは限らず、レイヤ間の収束も同定を成立させない。複数レイヤの収束に関する観察は §6 を参照。
 - 本エントリーは公的記録を関連証拠基盤と仮定する。非公開の経路、検証不能と称される通信、出典未明な個人的回想に基づく仮説は、本エントリーでは扱わない。
 - 固有名候補の集合は閉じていない。他の固有名人物やグループに関する仮説も公的議論には存在する。本エントリーは最も多く議論される十を扱う。
-- 個別エントリーがある候補の詳細な扱いは、§2.1 の表の「個別」列のリンクを参照されたい。他の候補は本アーカイブに個別の仮説エントリーを持たない。
+- 各候補の詳細な扱いは、§2.1 の表の「個別」列のリンクを参照されたい。10 人の名指し候補すべてが個別の仮説エントリーを持つ。
 
 ## 8. 単体候補以外の仮説
 

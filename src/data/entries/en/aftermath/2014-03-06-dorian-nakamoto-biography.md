@@ -11,8 +11,8 @@ participants:
 description: "Dorian Prentice Satoshi Nakamoto (1949–): Japanese-American engineer in Temple City, CA. Falsely identified by Newsweek (2014) as Bitcoin's creator. Self-denied. Community raised 67+ BTC for him."
 isSatoshi: false
 callout:
-  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
-  label: "Identity hypotheses overview"
+  entry: "analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis"
+  label: "Identity hypothesis"
 tags:
   - "dorian-nakamoto"
   - "biography"
@@ -23,6 +23,7 @@ secondarySources:
   - name: "Greenberg (Forbes) — 'Nakamoto's Neighbor' (March 25, 2014)"
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"
 relatedEntries:
+  - "analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis"
   - "aftermath/2014-03-06-newsweek-dorian-nakamoto"
   - "aftermath/2014-03-07-satoshi-p2p-foundation-return"
   - "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"
@@ -67,4 +68,4 @@ Dorian Nakamoto's address in Temple City placed him a few blocks from [Hal Finne
 
 ## Hypothesis Status
 
-Dorian Nakamoto remains in the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) as a documented candidate primarily for completeness — the candidacy rests on name match alone, with no technical evidence connecting him to the Bitcoin codebase, no cypherpunk credentials, no documented programming work at Bitcoin v0.1 scale, and no monetary-system design history. The Bitcoin community responded to the Newsweek identification by raising over 67 BTC in donations for him.
+Dorian Nakamoto's candidacy as Satoshi rests on the name match alone — there is no technical evidence connecting him to the Bitcoin codebase, no cypherpunk credentials, no documented programming work at Bitcoin v0.1 scale, and no monetary-system design history. The full case Newsweek made and the counter-evidence are laid out in the [Dorian Nakamoto = Satoshi hypothesis](/BitcoinArchive/entries/analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis/); the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places him among the named candidates.

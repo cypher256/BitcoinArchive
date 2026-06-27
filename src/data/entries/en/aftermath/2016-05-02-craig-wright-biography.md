@@ -11,8 +11,8 @@ participants:
 description: "Craig Steven Wright (born 1970): Australian computer scientist who publicly claimed to be Satoshi in May 2016. UK High Court (COPA v Wright, March 2024) found he fabricated evidence on a grand scale."
 isSatoshi: false
 callout:
-  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
-  label: "Identity hypotheses overview"
+  entry: "analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis"
+  label: "Identity hypothesis"
 tags:
   - "craig-wright"
   - "biography"
@@ -30,6 +30,7 @@ secondarySources:
   - name: "Law Gazette — 'Fake Satoshi' hit with costs bill over AI evidence (March 2025)"
     url: "https://www.lawgazette.co.uk/news/fake-satoshi-hit-with-costs-bill-over-ai-evidence/5122587.article"
 relatedEntries:
+  - "analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis"
   - "aftermath/2015-12-08-wired-gizmodo-craig-wright-claims"
   - "aftermath/2016-05-02-craig-wright-bbc-economist-claim"
   - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"
@@ -51,7 +52,7 @@ Eight years later, on March 14, 2024, Justice Mellor of the UK High Court delive
 > 3. Dr. Wright is not the person who created the Bitcoin System.
 > 4. Dr. Wright did not author the initial versions of the Bitcoin software.
 
-The judge characterised Wright as an extremely dishonest witness and concluded he had engaged in deliberate and extensive forgery of documents to support his false claim of being Satoshi Nakamoto.
+The judge characterised Wright as an extremely dishonest witness and concluded he had engaged in deliberate and extensive forgery of documents to support his false claim of being Satoshi Nakamoto. The self-claim, the arguments it rested on, and the counter-evidence are laid out as a Satoshi-identity hypothesis in [Was Craig Wright Satoshi?](/BitcoinArchive/entries/analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis/)
 
 Craig Steven Wright is an Australian computer scientist and businessman, born in October 1970 in Brisbane, Australia.
 

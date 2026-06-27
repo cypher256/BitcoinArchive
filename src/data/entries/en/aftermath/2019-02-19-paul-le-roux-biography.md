@@ -11,8 +11,8 @@ participants:
 description: "Paul Calder Le Roux (1972–): E4M (TrueCrypt precursor) author who built an international criminal empire. Arrested 2012, named as Satoshi candidate in Evan Ratliff's The Mastermind (2019)."
 isSatoshi: false
 callout:
-  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
-  label: "Identity hypotheses overview"
+  entry: "analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis"
+  label: "Identity hypothesis"
 tags:
   - "paul-le-roux"
   - "biography"
@@ -28,6 +28,7 @@ secondarySources:
   - name: "Wikipedia — E4M (Encryption for the Masses)"
     url: "https://en.wikipedia.org/wiki/E4M"
 relatedEntries:
+  - "analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
@@ -65,6 +66,6 @@ In September 2012 Le Roux was arrested by US authorities in Liberia after being 
 
 ## Posthumous-style association with the Satoshi-identity question
 
-Le Roux's connection to the Satoshi-identity question is entirely external — there is no documented contact with Satoshi Nakamoto, no statement by Le Roux on the question, and no Bitcoin-related material in the public record from him. He was named as a Satoshi candidate primarily through Evan Ratliff's 2019 *The Mastermind* and accompanying journalism, on a capability-plus-covertness-plus-motive argument (E4M cryptographic work, low public visibility during the 2007–2008 Bitcoin development window consistent with covert criminal operations, possible motive of separating his cryptographic past from his criminal present). The hypothesis for and against (limited cypherpunks footprint, no monetary-design work, no Bitcoin-source-level shipping after E4M, circumstantial alignment only) is carried by this biography; the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places Le Roux in its §2.1 comparison table. The [2026-05-03 van Dorst corpus reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) explicitly excludes Le Roux from its named-candidate set (alongside Dorian Nakamoto, Craig Wright, Peter Todd, and Isamu Kaneko) on the grounds that his cryptographic activity falls outside the 1992–2000 cryptography mailing-list window the corpus covers; no stylometric reading of Le Roux against Satoshi is available from that work.
+Le Roux's connection to the Satoshi-identity question is entirely external — there is no documented contact with Satoshi Nakamoto, no statement by Le Roux on the question, and no Bitcoin-related material in the public record from him. He was named as a Satoshi candidate primarily through Evan Ratliff's 2019 *The Mastermind* and accompanying journalism, on a capability-plus-covertness-plus-motive argument. The case for and against, and the [2026-05-03 van Dorst corpus reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) that excludes him from its stylometric candidate set, are laid out in the [Paul Le Roux = Satoshi hypothesis](/BitcoinArchive/entries/analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis/); the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places Le Roux in its §2.1 comparison table.
 
 *[Editor: This archive does not hold dedicated Le Roux primary-source entries (E4M cypherpunks announcement, criminal-case court documents, Mastermind chapter excerpts). Specific dates and claims in this biography are externally sourced — primarily Ratliff (2019), Atavist Magazine (2016), and Wikipedia — rather than archive-verified. The Satoshi-identity association is included to record the public discussion; the biography does not endorse the hypothesis.]*

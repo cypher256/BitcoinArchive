@@ -75,6 +75,9 @@ relatedEntries:
   - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
+  - analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis
+  - analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis
+  - analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - aftermath/2013-07-06-isamu-kaneko-biography
@@ -98,7 +101,7 @@ Ten named candidates, seven dimensions of Satoshi's documented public-record out
 - the approximately 18-month intensive coding window from mid-2007 through the v0.1 release in January 2009 (implementation work substantially complete by August 2008; whitepaper written after the code was substantially complete, per Satoshi to Hal Finney on November 10, 2008), within the approximately 2-year pre-release work Satoshi later put at "Since 2007" / "2 years of development before release";
 - the April 2011 withdrawal.
 
-The four structural layers are not interchangeable; each narrows the candidate space differently. Candidates with dedicated hypothesis entries in this archive are treated more deeply there (see the "Entry" column in each table); the other candidates are treated within this entry.
+The four structural layers are not interchangeable; each narrows the candidate space differently. Each named candidate has a dedicated hypothesis entry treating it more deeply (see the "Entry" column in each table).
 
 **The 2024-2026 identification wave.** Four major-press / documentary identifications have appeared since late 2024, each resting on a different evidence base: the [HBO Money Electric documentary on Peter Todd](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (October 2024, forum-post-timing argument); the [NYT Carreyrou investigation of Adam Back](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (April 2026, stylometric, single candidate); the [Finding Satoshi multi-person reading](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) (April 2026, activity-window + family testimony — the co-authorship naming, argument, and counter-evidence are in §8.1); and the [Murphy v DHS FOIA action](/BitcoinArchive/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) (April 2025, government-record subpoena route, a different evidence channel — argument and counter-evidence in §8.2). None has produced cryptographic confirmation. The dimensions in the comparison tables below incorporate this wave's evidence where it affects a candidate's status.
 
@@ -110,7 +113,7 @@ The ten named candidates fall into three groups by how they entered Satoshi-iden
 - **B. Cypherpunks with capability fit** — Hal Finney, Nick Szabo, Len Sassaman
 - **C. Third-party discovery, self-claim, or name-match** — Dorian Prentice Satoshi Nakamoto, Craig Wright, Peter Todd, Isamu Kaneko, Paul Le Roux
 
-Per-candidate background is in each biography (linked from the §2.1 table), and external status is in the §2.1 table's *External status* column. Candidates with a dedicated hypothesis entry link to it from the table's *Entry* column; the three without one (Dorian, Wright, Le Roux — in the archive only because of the Satoshi suspicion) have their case carried by their biography. The four layers (§2 — §5) compare the candidates against Satoshi's documented public-record outline along independent axes. Cross-cutting observations across the four layers are in §6; combined limits in §7.
+Per-candidate background is in each biography (linked from the §2.1 table), and external status is in the §2.1 table's *External status* column. Each candidate has a dedicated hypothesis entry, linked from the table's *Entry* column, where the case is argued in full. The four layers (§2 — §5) compare the candidates against Satoshi's documented public-record outline along independent axes. Cross-cutting observations across the four layers are in §6; combined limits in §7.
 
 ## 2. Layer 1 — Profile match
 
@@ -122,9 +125,9 @@ Per-candidate background is in each biography (linked from the §2.1 table), and
 | [Wei Dai](/BitcoinArchive/participants/wei-dai/) | [Identity](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | Self-denied; pre-launch correspondence reads third-party |
 | [Hal Finney](/BitcoinArchive/participants/hal-finney/) | [Identity](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | Self-denied; Patoshi mismatch; race-day alibi |
 | [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | [Identity](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | Self-denied |
-| [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Self-denied; p2pfoundation return |
-| [Craig Wright](/BitcoinArchive/participants/craig-wright/) | — | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
-| [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) | — | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | Open (incarcerated 2012–) |
+| [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | [Identity](/BitcoinArchive/entries/analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | Self-denied; p2pfoundation return |
+| [Craig Wright](/BitcoinArchive/participants/craig-wright/) | [Identity](/BitcoinArchive/entries/analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA v Wright (2024) ruled against |
+| [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) | [Identity](/BitcoinArchive/entries/analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis/) | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | Open (incarcerated 2012–) |
 | [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | [Identity](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | Open |
 | [Peter Todd](/BitcoinArchive/participants/peter-todd/) | [Identity](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | Self-denied (HBO 2024 doc) |
 | [Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/) | [Identity](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | Open |
@@ -135,7 +138,7 @@ Per-candidate background is in each biography (linked from the §2.1 table), and
 
 - The dimensions split into two groups that pull against each other (background-and-capability vs covertness). Counting 🟢 across all columns and treating the total as a single Satoshi-likeness score is misleading. See §2.2.
 - Profile-comparison is *necessary but not sufficient*. The *External status* column shows external evidence (self-denials, court rulings, technical disproofs) that can rule out a candidate independently of the profile comparison.
-- Cells corresponding to candidates without a dedicated hypothesis entry in this archive reflect the most widely-held reading of the public record.
+- Cell color assignments reflect the most widely-held reading of the public record; each candidate's dedicated hypothesis entry (linked in the *Entry* column) argues the profile in full.
 
 ### 2.2 Methodology
 
@@ -319,7 +322,7 @@ Each observation below is anchored in one or more of the four layers (§2 profil
 - **The four layers (§2 profile match, §3 stylometric, §4 direct correspondence, §5 development environment) are not interchangeable.** Each narrows the candidate space differently. A candidate ruled out by one layer is not necessarily ruled out by another, and convergence across layers does not establish identification. See §6 for the multi-layer convergence observation.
 - This entry assumes the public record is the relevant evidence base. Hypotheses based on private channels, claimed unverifiable communications, or unsourced personal recollection are not addressed here.
 - The set of named candidates is not closed. Hypotheses involving other named persons or groups exist in public discourse; this entry covers the ten most-discussed.
-- For full treatment of candidates with dedicated entries, see the "Entry" column in §2.1's table. Other candidates do not have dedicated hypothesis entries in this archive.
+- For full treatment of each candidate, see the "Entry" column in §2.1's table; all ten named candidates have a dedicated hypothesis entry.
 
 ## 8. Hypotheses beyond a single candidate
 

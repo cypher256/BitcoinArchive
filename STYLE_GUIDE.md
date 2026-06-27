@@ -1852,8 +1852,8 @@ When `callout` is omitted, no callout renders.
   understanding of the person.** A callout surfaces under "more about
   this person" — the target must be participant-centric (a hypothesis
   page, a profile-shaped reading) or a topic page that prominently
-  covers this person (the identity-hypotheses overview, used by
-  Satoshi-candidate bios without a dedicated hypothesis page). Do not
+  covers this person (the identity-hypotheses overview, used by the
+  Satoshi Nakamoto biography itself). Do not
   point a bio's callout at an event-centric analysis (incident
   structure, technical postmortem) just because the person was an
   actor in the event.
@@ -1864,7 +1864,7 @@ When `callout` is omitted, no callout renders.
 |---|---|
 | Satoshi Nakamoto | identity-hypotheses overview |
 | Wei Dai, Hal Finney, Adam Back, Nick Szabo, Len Sassaman, Isamu Kaneko, Peter Todd | their dedicated identity-hypothesis page |
-| Dorian Nakamoto, Craig Wright, Paul Le Roux | identity-hypotheses overview (no dedicated page) |
+| Dorian Nakamoto, Craig Wright, Paul Le Roux | their dedicated identity-hypothesis page |
 | knightmb | knightmb snapshot-and-legend analysis |
 
 ### Audit

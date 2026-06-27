@@ -11,8 +11,8 @@ participants:
 description: "ドリアン・プレンティス・サトシ・ナカモト（1949–）：カリフォルニア州テンプル市の日系米国人エンジニア。Newsweek 2014 に誤特定。本人否定後、コミュニティが 67BTC 寄付。"
 isSatoshi: false
 callout:
-  entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
-  label: "サトシ正体仮説の総覧"
+  entry: "analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis"
+  label: "サトシ正体仮説"
 tags:
   - "dorian-nakamoto"
   - "biography"
@@ -23,6 +23,7 @@ secondarySources:
   - name: "Greenberg (Forbes) — 'Nakamoto's Neighbor' (March 25, 2014)"
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"
 relatedEntries:
+  - "analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis"
   - "aftermath/2014-03-06-newsweek-dorian-nakamoto"
   - "aftermath/2014-03-07-satoshi-p2p-foundation-return"
   - "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"
@@ -68,4 +69,4 @@ timeline
 
 ## 仮説としての位置付け
 
-ドリアン・ナカモトは[サトシ正体仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)に主に網羅性のため候補として記載され続けている — 候補性は名前一致のみに依拠し、ビットコインのコードベースとの技術的繋がり、サイファーパンクとしての実績、ビットコイン v0.1 規模のプログラミング業務、貨幣設計の検討履歴、いずれも文書として存在しない。Newsweek の特定への対応として、ビットコインコミュニティは 67 BTC 超の寄付を彼に集めた。
+ドリアン・ナカモトのサトシ候補としての位置は、名前一致のみに依拠する — ビットコインのコードベースとの技術的繋がり、サイファーパンクとしての実績、ビットコイン v0.1 規模のプログラミング業務、貨幣設計の検討履歴、いずれも文書として存在しない。Newsweek が立てた論とその反証は[ドリアン・ナカモト＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis/)に並べてある。[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は彼を固有名候補の中に位置づけている。
