@@ -12,6 +12,7 @@ participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 description: "サトシの帯域論への返信。ドナルドは新しい通貨は既存網と正面から競えないとし、ビットコインを土台に銀行と口座マネーの層を重ねる構想を示し、後の取引所を先取りした。"
+inReplyTo: "emails/cryptography/2008-11-02-re-bitcoin-p2p-e-cash-paper-satoshi-1"
 isSatoshi: false
 tags:
   - "mailing-list"

@@ -12,6 +12,7 @@ participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
 description: "Replying to Satoshi on bandwidth, James A. Donald argues a new currency must serve markets Visa ignores, and proposes 'binks' — bitcoin banks settling in bitcoin beneath a layer of account money."
+inReplyTo: "emails/cryptography/2008-11-02-re-bitcoin-p2p-e-cash-paper-satoshi-1"
 isSatoshi: false
 tags:
   - "mailing-list"
