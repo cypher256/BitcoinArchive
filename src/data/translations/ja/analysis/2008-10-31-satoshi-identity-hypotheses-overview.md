@@ -1,5 +1,5 @@
 ---
-title: "サトシ・ナカモトは誰か：10 人の天才と世紀のミステリー"
+title: "サトシ・ナカモトは誰か：12 人の天才と世紀のミステリー"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "wikipedia"
@@ -14,18 +14,22 @@ participants:
     slug: "wei-dai"
   - name: "Hal Finney"
     slug: "hal-finney"
+  - name: "James A. Donald"
+    slug: "james-donald"
+  - name: "Peter Todd"
+    slug: "peter-todd"
   - name: "Nick Szabo"
     slug: "nick-szabo"
+  - name: "Len Sassaman"
+    slug: "len-sassaman"
   - name: "Dorian Nakamoto"
     slug: "dorian-nakamoto"
   - name: "Craig Wright"
     slug: "craig-wright"
   - name: "Paul Le Roux"
     slug: "paul-le-roux"
-  - name: "Len Sassaman"
-    slug: "len-sassaman"
-  - name: "Peter Todd"
-    slug: "peter-todd"
+  - name: "Elon Musk"
+    slug: "elon-musk"
   - name: "Isamu Kaneko"
     slug: "isamu-kaneko"
 description: "繰り返し挙げられるサトシ候補を、プロファイル整合・文体計量・直接通信・開発環境の 4 つの独立したレイヤで比較する。「個別」列は各候補の仮説ページにリンク。"
@@ -56,6 +60,8 @@ relatedEntries:
   - aftermath/2014-03-06-dorian-nakamoto-biography
   - aftermath/2016-05-02-craig-wright-biography
   - aftermath/2019-02-19-paul-le-roux-biography
+  - aftermath/2017-11-22-elon-musk-biography
+  - aftermath/2008-11-02-james-donald-biography
   - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - aftermath/2014-03-06-newsweek-dorian-nakamoto
@@ -77,6 +83,8 @@ relatedEntries:
   - analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis
   - analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis
   - analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis
+  - analysis/2017-11-22-elon-musk-satoshi-identity-hypothesis
+  - analysis/2008-11-02-james-donald-satoshi-identity-hypothesis
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - aftermath/2013-07-06-isamu-kaneko-biography
@@ -84,7 +92,7 @@ relatedEntries:
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
 ---
 
-10 人の名指し候補、サトシの公的記録から導かれる 7 つの次元。どの候補も 7 つすべてに合致しない —— それぞれが少なくとも 1 つの次元で破綻する。本エントリーは名指し候補を 4 つの独立した構造的レイヤ —— プロファイル整合（§2）、文体計量による帰属（§3）、直接通信（§4）、開発環境（§5）—— に並列比較し、各プロフィールがどこで破綻するかを記す。各候補は、以下の[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に関する公的記録から導かれる輪郭に照らして比較する：
+12 人の名指し候補、サトシの公的記録から導かれる 7 つの次元。どの候補も 7 つすべてに合致しない —— それぞれが少なくとも 1 つの次元で破綻する。本エントリーは名指し候補を 4 つの独立した構造的レイヤ —— プロファイル整合（§2）、文体計量による帰属（§3）、直接通信（§4）、開発環境（§5）—— に並列比較し、各プロフィールがどこで破綻するかを記す。各候補は、以下の[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に関する公的記録から導かれる輪郭に照らして比較する：
 
 - ホワイトペーパーで明示的に引用された Hashcash と b-money
 - 2008 年 8 月のアダム・バックとウェイ・ダイとの公開前通信
@@ -100,11 +108,11 @@ relatedEntries:
 
 ## 1. 候補一覧
 
-10 人の名指し候補は、サトシ正体問題の議論にどう登場したかで 3 群に分かれる：
+12 人の名指し候補は、サトシ正体問題の議論にどう登場したかで 3 群に分かれる：
 
 - **A. サトシがホワイトペーパーで明示的に引用したサイファーパンク** — アダム・バック、ウェイ・ダイ
 - **B. 能力整合の高いサイファーパンク** — ハル・フィニー、ニック・サボ、レン・サッサマン
-- **C. 第三者発掘・自称・名前一致で浮上した候補** — ドリアン・プレンティス・サトシ・ナカモト、クレイグ・ライト、ピーター・トッド、金子勇、ポール・ルルー
+- **C. 第三者発掘・自称・名前一致で浮上した候補** — ドリアン・プレンティス・サトシ・ナカモト、クレイグ・ライト、ピーター・トッド、金子勇、ポール・ルルー、イーロン・マスク、ジェームズ・A・ドナルド
 
 候補ごとの経歴はバイオ（§2.1 表の人名リンク）、外部的状況は §2.1 表の「外部的状況」列にまとめる。各候補は同表「個別」列から専用の正体ページへリンクし、そこで論述が全面的に展開される。4 つのレイヤ（§2 〜 §5）は、サトシに関する公的記録の輪郭に対して各候補を独立した観点から比較する。4 レイヤを跨いだ横断的観察は §6、組み合わせた限界は §7 で扱う。
 
@@ -117,12 +125,14 @@ relatedEntries:
 | [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | [正体](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🟡 | 自己否定（NYT 2026 調査） |
 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | [正体](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🔴 | 🟢 | 自己否定／公開前通信は第三者応答として読める |
 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | [正体](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🟢 | 🟡 | 🟢 | 🔴 | 🔴 | 自己否定／Patoshi 不一致／レース日のアリバイ |
+| [ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/) | [正体](/BitcoinArchive/ja/entries/analysis/2008-11-02-james-donald-satoshi-identity-hypothesis/) | 🟢 | 🟡 | 🔴 | 🟡 | 🟢 | 🔴 | 🔴 | サトシが第三者扱い／ウォレス除外 |
+| [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | [正体](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 自己否定（HBO 2024 ドキュメンタリー） |
 | [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | [正体](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) | 🟢 | 🟢 | 🔴 | 🟢 | 🟢 | 🔴 | 🟡 | 自己否定 |
+| [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | [正体](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | 未決着 |
 | [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | [正体](/BitcoinArchive/ja/entries/analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟡 | 🔴 | 🟢 | 自己否定／p2pfoundation 復帰 |
 | [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | [正体](/BitcoinArchive/ja/entries/analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🟢 | COPA 対ライト（2024）敗訴 |
 | [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | [正体](/BitcoinArchive/ja/entries/analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis/) | 🟡 | 🔴 | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 未決着（2012 年〜服役中） |
-| [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | [正体](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) | 🟢 | 🔴 | 🟢 | 🔴 | 🟢 | 🟢 | 🟡 | 未決着 |
-| [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | [正体](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🟡 | 🟢 | 🔴 | 🟢 | 自己否定（HBO 2024 ドキュメンタリー） |
+| [イーロン・マスク](/BitcoinArchive/ja/participants/elon-musk/) | [正体](/BitcoinArchive/ja/entries/analysis/2017-11-22-elon-musk-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 本人否定（2017） |
 | [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | [正体](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) | 🔴 | 🔴 | 🟢 | 🔴 | 🔴 | 🔴 | 🔴 | 未決着 |
 
 **色の意味（この表のみ）：** 🟢＝サトシの公的プロファイルと整合／🔴＝整合しない／🟡＝部分的または混在する整合。各列の判定基準は §2.2 を参照。§5 は同じ 3 つの絵文字を別の Phase 1 整合スケールで使用する。両スケールは互換ではない（§5.3 に §5 の凡例、§7 に全体的な注意がある）。
@@ -179,6 +189,8 @@ quadrantChart
     "クレイグ・ライト": [0.2, 0.4]
     "ドリアン・ナカモト": [0.1, 0.6]
     "金子勇": [0.2, 0.05]
+    "イーロン・マスク": [0.1, 0.12]
+    "ジェームズ・A・ドナルド": [0.42, 0.28]
 ```
 
 クラスタの形は §6 が文章で述べる観察と同じ：能力と隠匿性は引っ張り合うため、能力高・隠匿性高の象限は構造的に埋まりにくい。サッサマンがその象限に位置するのは専門領域の分離（匿名性研究で可視、デジタルキャッシュで不可視）のため。ウェイ・ダイは専門領域の移行で近づく（1990 年代はメーリングリスト活動的、2007〜2008 年は Crypto++ 保守）。他の候補はこのトレードオフを直接受けることになる。
@@ -203,7 +215,7 @@ quadrantChart
 
 ## 4. レイヤ 3 — 直接通信
 
-サトシが各候補と実際にどの程度通信したかは、能力プロファイルや文体計量とは独立した観察可能な事実として記録できる。アーカイブ収録の通信を候補ごとに集計すると、対比が明確になる：4 名の候補が何らかの形で記録された通信を持ち（うち 1 名はサトシ・スレッドへの返信のみ）、6 名の候補はサトシとの直接接触の記録が一切ない。
+サトシが各候補と実際にどの程度通信したかは、能力プロファイルや文体計量とは独立した観察可能な事実として記録できる。アーカイブ収録の通信を候補ごとに集計すると、対比が明確になる：5 名の候補が何らかの形で記録された通信を持ち（うち 1 名はサトシ・スレッドへの返信のみ）、7 名の候補はサトシとの直接接触の記録が一切ない。
 
 ### 4.1 通信記録タイムライン
 
@@ -226,6 +238,7 @@ gantt
     ハル・フィニー （メール + 公開 ML + BitcoinTalk 計 10+） :2008-11-07, 2010-03-31
 
     section 候補プロファイル群 C
+    ジェームズ・ドナルド （公開ML スケーリング論争） :2008-11-02, 2008-11-15
     ピーター・トッド （サトシ・スレッドへ 1 返信） :2010-12-09, 2010-12-13
 ```
 
@@ -238,12 +251,13 @@ gantt
 | **メール往復** | アダム・バック、ウェイ・ダイ | サトシがホワイトペーパー公開直前に「先行研究を引用したい」旨で第三者として接触 |
 | **メール＋公開言論** | ハル・フィニー | RPOW 経験者として技術応答を継続。メール＋暗号学メーリングリスト返信＋BitcoinTalk 投稿にわたる |
 | **公開フォーラム<br>スレッドへの返信** | ピーター・トッド | retep アカウントでサトシ提案スレッドに 1 返信。「直接接触」ではないが [HBO ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)が特定根拠とした |
-| **通信記録なし** | ニック・サボ、レン・サッサマン、金子勇、ドリアン・ナカモト、クレイグ・ライト、ポール・ルルー | サトシは公開前に**バック → ウェイ・ダイ** 経由で先行研究系譜を確認したのみで、これら 6 名のいずれにも接触しなかった |
+| **公開メーリング<br>リストでの往復** | ジェームズ・ドナルド | 白書告知に最初に応答し、サトシが暗号学リストで彼のスケーリング異議に逐一回答した公開の往復。サトシは彼を外部の質問者として扱った |
+| **通信記録なし** | ニック・サボ、レン・サッサマン、金子勇、ドリアン・ナカモト、クレイグ・ライト、ポール・ルルー、イーロン・マスク | サトシは公開前に**バック → ウェイ・ダイ** 経由で先行研究系譜を確認したのみで、これら 7 名のいずれにも接触しなかった |
 
 ### 4.3 表の読み方
 
 **直接通信レイヤの読み方：** 通信があったか否かは仮説評価に対して両刃である：
-- **接触あり** はサトシが第三者として扱った証拠でもあり得る — バックとウェイ・ダイへの公開前メールは、両仮説（バック＝サトシ、ウェイ・ダイ＝サトシ）に対する主要な反証材料として機能する（[サトシ識別の非対称性](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) §2 参照）
+- **接触あり** はサトシが第三者として扱った証拠でもあり得る — バックとウェイ・ダイへの公開前メール、そしてジェームズ・ドナルドのスケーリング異議へのサトシの公開回答は、それぞれの仮説に対する主要な反証材料として機能する（[サトシ識別の非対称性](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) §2 参照）
 - **接触なし** は[隠匿成功](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)または接触対象外の二通りの読みに分かれる — サボは公開言論で活動していたが直接通信なし、サッサマン・金子は活動領域が異なり通信なし、ドリアン・ライト・ル・ルーは身元主張または名前一致のみで実体的接触なし
 
 通信記録は、§2 のプロファイル整合と §3 の文体計量と組み合わせて読むとき、候補の構造的位置を絞り込む第三のレイヤとして働く。
@@ -269,12 +283,14 @@ gantt
 | [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | 🟡 中間 ― 言語は重なるが OS は特定されていない | アーカイブ記録なし（Microsoft 勤務歴あり） | Perl（短行記法で著名）、C / C++ | Hashcash 仕様と小規模な参考実装 |
 | [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | 🟢 高い整合 ― Windows-MSVC が重なり、数千行規模の暗号ライブラリ出荷実績がある | Windows（Microsoft 勤務歴、MSVC 主体） | C++ | **Crypto++** ― 多プラットフォーム対応の C++ クラスライブラリ、当初は Windows-MSVC 起点 |
 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | 🔴 不整合 ― Mac 主体。公開コードはスネークケース＋タブで、サトシの空白インデント＋ハンガリアン記法のキャメルケースと異なる | Mac（長期、記録あり） | C / C++ | PGP 2.0、RPOW |
+| [ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/) | 🔴 v0.1 規模の出荷コードベースの記録なし | アーカイブ記録なし | アーカイブ記録なし | jim.com での暗号・経済の執筆。出荷コードベースの記録なし |
+| [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | 🔴 不整合 ― 全て Linux、Windows の痕跡なし | Linux（2008〜2011 の GitHub リポジトリは一貫して Linux：FHS パス、Unix シェバン、PyGTK） | C / Python | Linux ネイティブのハードウェア／ファームウェア開発ツール |
 | [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | 🔴 不整合 ― v0.1 規模の C++ 出荷記録なし | アーカイブ記録なし | C++ 出荷実績なし | Bit Gold 提案（紙のみ）。[2008 年 4 月に実装協力者を明示的に募集](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) |
+| [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | 🔴 不整合 ― Unix 主体、Windows 第一の開発記録なし | Unix / Linux 主体（Mixmaster 保守者、KU Leuven の研究環境） | C | Mixmaster（C、*BSD / Linux 主体で Windows 移植版あり） |
 | [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | 🔴 不整合 ― C++ 出荷記録なし | アーカイブ記録なし（機密の防衛系統工学に従事） | 物理学・電子工学の背景 | 公開コードベースなし |
 | [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | ― 該当せず（COPA 対ライト 2024 判決） | ― | ― | ― |
 | [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | 🟡 表層は整合 ― Windows + C++ + 暗号出荷を満たすが、公開出荷記録は 1999 年で途切れる | Windows NT / 9x | C++ | **E4M**（Windows 専用ディスク暗号、1999 年。後に TrueCrypt に派生） |
-| [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | 🔴 不整合 ― Unix 主体、Windows 第一の開発記録なし | Unix / Linux 主体（Mixmaster 保守者、KU Leuven の研究環境） | C | Mixmaster（C、*BSD / Linux 主体で Windows 移植版あり） |
-| [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | 🔴 不整合 ― 全て Linux、Windows の痕跡なし | Linux（2008〜2011 の GitHub リポジトリは一貫して Linux：FHS パス、Unix シェバン、PyGTK） | C / Python | Linux ネイティブのハードウェア／ファームウェア開発ツール |
+| [イーロン・マスク](/BitcoinArchive/ja/participants/elon-musk/) | 🔴 サイファーパンク・暗号の出荷記録なし | アーカイブ記録なし | 商用ソフトウェア | ビットコイン関連のコードベースなし |
 | [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | 🟡 部分整合 ― OS / 言語は一致するが、Winny ソースは日本語識別子とコメントを含む。ビットコイン v0.1 ソースは英語のみ | Windows | C++ | Winny（Windows 向け P2P、C++） |
 
 ### 5.3 読み方と色の意味
@@ -285,7 +301,7 @@ gantt
 
 - **Phase 1 の「Windows + MSVC + C++ 出荷」像と整合する候補は 2 名。** [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)による Crypto++ ― 当初 Windows-MSVC 起点の C++ 暗号クラスライブラリ ― はビットコイン v0.1 の暗号ライブラリ依存構造と最も直接に重なる。[ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/)は 1999 年に E4M（Windows 専用 C++ ディスク暗号）を出荷したが、公開出荷の記録はその時点で途切れる。
 - **3 名は Phase 1 と OS が直接不整合。** [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)（長期 Mac、スネークケース＋タブ）、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)（GitHub 一貫して Linux）、[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)（Unix 主体のツール環境）はいずれも Windows 以外の主要環境が記録されている。
-- **3 名は v0.1 規模の出荷コードベースの記録なし。** [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)は 2008 年 4 月に実装協力者を求めた。[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の機密防衛業務は公開コードを生まなかった。[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)が示した証拠は英国高等法院により捏造と判定されている。
+- **5 名は v0.1 規模の出荷コードベースの記録なし。** [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)は 2008 年 4 月に実装協力者を求めた。[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の機密防衛業務は公開コードを生まなかった。[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)が示した証拠は英国高等法院により捏造と判定されている。[イーロン・マスク](/BitcoinArchive/ja/participants/elon-musk/)に暗号の出荷記録はなく、[ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/)は出荷コードベースの記録のない評論家である。
 - **[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の個人 OS はアーカイブ記録に存在しない。** Hashcash は Perl と C / C++ の参考実装にまたがるが、それらの参考実装とビットコイン v0.1 の 19,901 行 C++ コードベースとの規模差は、Crypto++ や E4M クラスの出荷実績を持つ候補と比べて大きい。
 - **[金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/)の Winny は OS とプラットフォーム（Windows + C++）の水準では一致する**が、Winny ソースは日本語識別子とコメントを含む ― ビットコイン v0.1 ソースが示さない記法である。
 
@@ -314,9 +330,9 @@ gantt
 - **§2 と §5 で同じ 🟢／🟡／🔴 を使うが、両者のスケールは互換ではない。** §2 のスケールは 7 つのプロファイル次元との整合を測る。§5 のスケールは Phase 1 の Windows-MSVC-C++ 出荷像との整合を測る。各表は同じセクションの凡例とともに読まれたい。どちらの場合も、ラベルは定性的な要約であり、数値的な得点ではない。個別の仮説エントリー、または公的記録の最も広く受け入れられた読みに既に書かれている判定を視覚化したもの。読み手によって個別セルの配置は異なり得る。
 - **4 つのレイヤ（§2 プロファイル整合、§3 文体計量、§4 直接通信、§5 開発環境）は互いに置換可能ではない。** 各レイヤは候補空間を異なる方向で絞り込む。あるレイヤで除外された候補が別のレイヤで除外されるとは限らず、レイヤ間の収束も同定を成立させない。複数レイヤの収束に関する観察は §6 を参照。
 - 本エントリーは公的記録を関連証拠基盤と仮定する。非公開の経路、検証不能と称される通信、出典未明な個人的回想に基づく仮説は、本エントリーでは扱わない。
-- 固有名候補の集合は閉じていない。他の固有名人物やグループに関する仮説も公的議論には存在する。本エントリーは最も多く議論される十を扱う。
+- 固有名候補の集合は閉じていない。他の固有名人物やグループに関する仮説も公的議論には存在する。本エントリーは最も多く議論される十二を扱う。
 - 「サトシ・ナカモト」という仮名の日本的な形は、いずれの単独候補とも独立に正体の問いに関わる論点であり、[テクノオリエンタリスト署名分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)で扱う。
-- 各候補の詳細な扱いは、§2.1 の表の「個別」列のリンクを参照されたい。10 人の名指し候補すべてが個別の仮説エントリーを持つ。
+- 各候補の詳細な扱いは、§2.1 の表の「個別」列のリンクを参照されたい。12 人の名指し候補すべてが個別の仮説エントリーを持つ。
 
 ## 8. 単体候補以外の仮説
 

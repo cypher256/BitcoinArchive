@@ -19,6 +19,7 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   'doncho-karaivanov': 'ドンチョ・カライヴァノフ',
   'dorian-nakamoto': 'ドリアン・ナカモト',
   'dustin-trammell': 'ダスティン・トランメル',
+  'elon-musk': 'イーロン・マスク',
   'eric-hughes': 'エリック・ヒューズ',
   'eric-lombrozo': 'エリック・ロンブロゾ',
   'ethan-heilman': 'イーサン・ハイルマン',
