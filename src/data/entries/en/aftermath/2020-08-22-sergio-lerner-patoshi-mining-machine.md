@@ -40,11 +40,11 @@ translationStatus: complete
 
 On August 22, 2020, [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) published "The Patoshi Mining Machine" on his blog Bitslog — a detailed technical reconstruction of the hardware and software behind [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/)'s mining operation. The article appeared one month after Whale Alert's "The Satoshi Fortune" report, which had claimed Satoshi used approximately 48 computers.
 
-**Re-mining simulation:**
+## Re-mining simulation
 
 Lerner conducted a re-mining experiment, simulating the Patoshi mining algorithm against the actual blockchain data. This allowed him to test competing hypotheses about Satoshi's hardware configuration.
 
-**Key findings:**
+## Key findings
 
 - The Patoshi miner divided the nonce search space into **5 subranges**: each subrange covered approximately 655 million nonce values
 - Within each subrange, nonces were scanned **sequentially from high to low** (the "Inner Negative" algorithm)
@@ -52,7 +52,7 @@ Lerner conducted a re-mining experiment, simulating the Patoshi mining algorithm
 - The 5 subranges were scanned in **parallel**, consistent with 5 threads on a single multi-core CPU
 - The mining software was **not the stock Bitcoin v0.1 client** but a custom-built tool, likely with SSE2 optimizations for SHA-256
 
-**Single PC, not a network:**
+## Single PC, not a network
 
 Lerner concluded that the Patoshi miner used a **single high-end CPU with multi-threading** — not 50+ networked computers. Multiple lines of evidence supported this:
 
@@ -60,7 +60,7 @@ Lerner concluded that the Patoshi miner used a **single high-end CPU with multi-
 2. **Timestamp coherence**: Zero timestamp inversions across 22,000+ Patoshi blocks (established in his 2019 analysis) proves a single system clock
 3. **Hash rate**: The machine appeared approximately **4.3 times faster** than any other early miner, consistent with a quad-core CPU running 5 threads with SSE2 optimization versus the standard client's single-threaded, unoptimized mining
 
-**Implications:**
+## Implications
 
 This analysis directly refuted Whale Alert's claim of ~48 separate computers. The distinction matters: a single PC running custom software is consistent with a lone individual bootstrapping the network, while a 48-machine operation would suggest organizational resources. Lerner's findings reinforced the picture of Satoshi as a technically skilled individual working alone on consumer hardware.
 

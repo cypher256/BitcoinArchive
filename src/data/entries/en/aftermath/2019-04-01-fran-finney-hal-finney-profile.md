@@ -34,21 +34,19 @@ relatedEntries:
 
 In the 2nd Quarter 2019 issue of Cryonics Magazine (published by the Alcor Life Extension Foundation), an extensive profile of [Hal Finney](/BitcoinArchive/participants/hal-finney/) was published based primarily on interviews with his wife, Fran Finney. The profile was subsequently adapted by Dan Held and republished on 21ideas.org on March 30, 2020.
 
-**On meeting Hal at Caltech:**
 Fran met Hal during her junior year at Caltech, during "rotation week" in his freshman semester: "I saw him in the middle of being lifted and carried by [upperclassmen]." She recalled: "People would cluster around and get into all these philosophical discussions... When he spoke, what he said was usually worth listening to."
 
-**On [Bitcoin's launch](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/) in January 2009:**
-Fran described Hal's reaction:
+On [Bitcoin's launch](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/) in January 2009, Fran described Hal's reaction:
 
 <!-- audit:quote-skip -->
 > "This is cool. This is a fun game. Look! This is actually working!"
 
-**On Hal's ALS and cognitive decline:**
+On Hal's ALS and cognitive decline, Fran was direct:
 
 <!-- audit:quote-skip -->
 > "It's not a normal kind of dementia, but the brain is involved. Hal felt that it was affecting his ability to do his fast thinking, to do his mental math. He felt like he was losing that, and he would lose more."
 
-**On Hal's worldview:**
+On Hal's worldview, she put it simply:
 
 <!-- audit:quote-skip -->
 > "He did not believe in God. He believed in the future."
@@ -56,13 +54,12 @@ Fran described Hal's reaction:
 <!-- audit:quote-skip -->
 > "I know Hal wanted to be around. He wanted to experience the future. He was very excited about change... It seemed like he was happier with each and every change. Each change was great! He embraced it, and he was always looking forward to more."
 
-**On death and cryonics:**
 "He was not afraid of death." Regarding his motivation for cryonics:
 
 <!-- audit:quote-skip -->
 > "I think that was a lot of his motivation for getting involved with cryonics in the first place. He just wanted to be able to see what the world turned into, because it was going to be such an amazing, wondrous place."
 
-**On Hal as a father:**
+On Hal as a father, her summary was brief:
 
 <!-- audit:quote-skip -->
 > "A very easygoing father."

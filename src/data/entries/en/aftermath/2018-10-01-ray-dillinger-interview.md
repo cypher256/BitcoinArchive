@@ -38,13 +38,13 @@ relatedEntries:
 
 ---
 
-**On his code review of Bitcoin:**
+## On his code review of Bitcoin
 
 [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) sent me the proof chain code for examination. I found it solid.
 
 I was interested in Bitcoin for four reasons: it was a digital cash protocol addressing challenges I'd long contemplated; it used a central proof chain (now called blockchain); Satoshi eventually convinced me he wasn't a scammer; and absolutely the clincher — it was very very INTERESTING, with an entirely new paradigm containing no Trusted Roles, something nobody had EVER come up with before.
 
-**On the floating-point discovery:**
+## On the floating-point discovery
 
 I freaked out when I discovered the code used a floating-point type rather than an integer type for accounting — a combination with a long and horrible history.
 
@@ -52,11 +52,11 @@ Satoshi's explanation: he was designing for JavaScript compatibility, where no o
 
 I would have preferred: screw Javascript, I want rounding errors to be impossible, and used integers.
 
-**On [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s perspective:**
+## On [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s perspective
 
 Hal Finney, who had experience with exact math in floating point formats from PGP crypto work, was less concerned than I was. We discussed Bitcoin's divisibility: whether to enlarge satoshis for rounding-error cushion or keep them near precision limits so errors fail immediately, detectably, and hard.
 
-**On finding no rounding errors:**
+## On finding no rounding errors
 
 I examined the accounting code with a fine-toothed comb for rounding errors and found none — more than a little bit astonishing, since numeric-methods errors are so ubiquitous nobody even notices them.
 
@@ -64,7 +64,7 @@ The smallest accounting unit (satoshi) was selected right above the bit precisio
 
 To cause satoshi rounding in Bitcoin, someone would have to be adding or subtracting more than 21 million Bitcoins.
 
-**On deflation and hoarding:**
+## On deflation and hoarding
 
 In a fixed-supply economy, holding coins is a risk-free investment guaranteed to rise at the market average rate, so rational investors hoard rather than invest in productive businesses.
 
@@ -72,7 +72,7 @@ This is what happened to ancient Rome. They used metals (gold and silver and bro
 
 It's a millennium-and-a-half later and we are STILL finding stashes of Roman coins!
 
-**On ASICs and mining centralization:**
+## On ASICs and mining centralization
 
 I'm pretty sure Satoshi didn't think of miners in places with artificially low subsidized rates for electricity outcompeting all other miners, driving the concentration of the vast majority of hashing power into just one country where it's subject to the orders and whims of just one government.
 

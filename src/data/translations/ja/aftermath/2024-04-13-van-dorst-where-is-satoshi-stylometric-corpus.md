@@ -41,13 +41,13 @@ translationStatus: complete
 
 2024 年 4 月 13 日、**バス・ヴァン・ドルスト**が[「Where is Satoshi?」](https://github.com/basvandorst/where-is-satoshi)を公開した。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の執筆コーパスを 75,000 人を超える暗号学関連メーリングリストの書き手および 70,000 人を超える Reddit /r/Bitcoin の書き手と比較する大規模オープンソース文体計量プロジェクトである。本プロジェクトは、コーパス規模の点でも、データ公開の透明性の点でも、サトシの著者性に関する数値的な多候補文体計量資源として、公開記録上最も厳格である。
 
-**コーパス：**
+## コーパス
 
 - **メーリングリストコーパス：** 暗号学関連メーリングリスト 10 件以上における 1992〜2000 年の投稿 500,000 件以上。書き手 75,000 人以上を網羅。
 - **Reddit コーパス：** /r/Bitcoin の 2005〜2019 年のコメント 7,500,000 件以上。書き手 70,000 人以上を網羅。
 - **サトシコーパス：** [ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)、[BitcoinTalk フォーラム投稿](/BitcoinArchive/ja/participants/satoshi-nakamoto/)、[メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、[v0.1 ソース公開](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)のコードコメントを含む 81,500 語。
 
-**文体計量指標：**
+## 文体計量指標
 
 書き手と時間窓のすべての組について、本プロジェクトは以下を計算する：
 
@@ -62,7 +62,7 @@ translationStatus: complete
 | 人称代名詞使用 | 一人称単数 vs 複数、有無のパターン |
 | 英米綴り変異 | サトシの執筆に見られる英国式綴りの特徴。複数の特定仮説の根拠となってきた指標 |
 
-**データ公開：**
+## データ公開
 
 完全な数値出力はダウンロード可能なスプレッドシートとして公開されている：
 
@@ -71,7 +71,7 @@ translationStatus: complete
 
 これは公開記録上、サトシ対候補者の文体計量比較として最大規模の数値データセットである。本分野で唯一、独立した再分析を可能にする資源でもある：別の距離指標や別の候補者刈り込み戦略を持つ研究者は、同じ基底データに対して自分の順位付けを実行できる。
 
-**著者の枠組み：**
+## 著者の枠組み
 
 ヴァン・ドルストは首位候補の指名を意図的に避けている：
 
@@ -85,7 +85,7 @@ translationStatus: complete
 
 大規模データセット・完全な数値公開・特定主張の不在 — この組み合わせは、特定の候補者を名指しした物語的な文体計量論考（[Skye Grey 2013 のサボ論](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)、[Aston University 2014 のサボ研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)、[カレイロウ 2026 NYT 調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)におけるカフィエロの分析）よりも方法論的に厳格である。
 
-**著者が述べる方法論的留意点：**
+## 著者が述べる方法論的留意点
 
 - 「高い相関は類似した言語パターンを示すだけである → 高い相関は因果を含意しない」。同じ技術的話題について同じ時代に書く 2 人の著者は、同一人物であろうとなかろうと、語彙と文構造を共有する。
 - ビットコインが 2009 年に公開された後にのみ生じた用語の存在により、n-gram 解析は複雑化する。2010 年以降の暗号通貨関連執筆との比較は、ビットコイン特有の語彙によって紛れる可能性がある — 情報を持つ書き手なら誰でも採用するためである。
@@ -94,7 +94,7 @@ translationStatus: complete
 
 これらの留意点は、すべての文体計量によるサトシ特定研究を制約する構造的限界と同じものである。本プロジェクトの価値は、それらを明示的に述べた上で、批判的検証を可能にする生の数値データを提供している点にある。
 
-**文体計量の系譜上の位置づけ：**
+## 文体計量の系譜上の位置づけ
 
 特定候補を名指しした文体計量の系譜と本コーパスの対照：
 
@@ -107,7 +107,7 @@ translationStatus: complete
 
 ヴァン・ドルストが候補を公的に指名せず、物語的研究は指名している事実 — そして名指し候補研究を Bitcoin Institute による再分析と併せて読むと、4 件のうち 3 件がサボに収束し、カフィエロ／カレイロウのみがアダム・バックを首位とする外れ値である事実 — は、それ自体が方法論的観察である：サトシの文体計量による特定はコーパス選定・距離指標・候補者の事前選定に感受性を持つ一方、手法を横断して最も持続する信号は名指し候補内でサボを最上位に置く。
 
-**本コーパスからの候補別値（Bitcoin Institute による再分析）：**
+## 本コーパスからの候補別値（Bitcoin Institute による再分析）
 
 ヴァン・ドルストは順位の公表を拒否しているが、基底の数値データは公開されており、名指しのサトシ正体候補をその中で特定することは可能である。[Bitcoin Institute による再分析（2026 年 5 月）](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は、公開された `comparison.xlsx` から最も多く引用されるサトシ正体候補 5 名のバローズ・デルタ値を抽出し、コーパス内の「執筆量 10 チャンク以上の著者」 12,739 名に対して順位付けし、データに照らしてヴァン・ドルストの「100% 確信できない」留保を読み解いた：ニック・サボが上位 4.67% で名指し候補内首位、ハル・フィニーとアダム・バックが 0.85 標準偏差以内で続き、サボより近い無名著者が 594 人 — コーパスの見かけ上の最近接マッチの大半は精査するとノイズ（EC アカウント、匿名リメイラー転送、使い捨てアカウント）であって信号ではない。候補別表、コーパス Top 20 ノイズの議論、ヴァン・ドルストの名前公表拒否がデータに対して誠実な立場である理由の 4 通りの読み解きについては、[分析エントリー](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)を参照。
 

@@ -43,7 +43,7 @@ translationStatus: complete
 
 On September 16, 2022, Jameson Lopp published "Was Satoshi a Greedy Miner?" on his blog, directly challenging the narrative that [Bitcoin's creator](/BitcoinArchive/participants/satoshi-nakamoto/) selfishly hoarded coins during the network's early days.
 
-**Key data points:**
+## Key data points
 
 - Satoshi mined approximately **1,100,000 BTC** (~5% of total supply) across ~22,000 blocks over 14 months
 - Maximum hashrate capacity: **6 Mhps** — actual observed rate: **4.35 Mhps**
@@ -51,7 +51,7 @@ On September 16, 2022, Jameson Lopp published "Was Satoshi a Greedy Miner?" on h
 - Only **0.09%** of Satoshi's blocks were ever spent
 - Fewer than 5 minutes elapsed between Satoshi's consecutive blocks, suggesting intentional pausing between mining rounds
 
-**Counterfactual analysis:**
+## Counterfactual analysis
 
 Lopp models two alternative scenarios:
 1. **Full capacity (no pauses):** Mining continuously at observed 4.35 Mhps would have yielded ~**31,783 blocks / ~1.59 million BTC** — approximately 1.5× the actual amount

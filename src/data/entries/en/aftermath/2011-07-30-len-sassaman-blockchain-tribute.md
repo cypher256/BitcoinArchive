@@ -35,11 +35,11 @@ Within weeks, [Dan Kaminsky](/BitcoinArchive/participants/dan-kaminsky/) — the
 
 According to the Wikipedia citation and the Black Hat USA 2011 presentation materials, the inscription was encoded across transaction outputs so that the data persists in every full Bitcoin node's copy of the ledger. The technique pre-dates the formal `OP_RETURN` mechanism, which was added to Bitcoin Core in 2014 as a sanctioned way to embed small payloads. Specific block heights, transaction hashes, and the full inscribed ASCII-art content have not been independently verified by this archive; the technique is described at the level the secondary sources support.
 
-**Context:**
+## Context
 
 - The tribute pre-dates the formal `OP_RETURN` mechanism added to Bitcoin Core in March 2014.
 - The event connected two streams of Bitcoin's early environment: Kaminsky as the most prominent external-security reviewer of v0.1, and Sassaman as a senior figure in the cypherpunk movement whose work on remailers and anonymity tooling had run for roughly two decades.
 
-**On the Satoshi-identity question:**
+## On the Satoshi-identity question
 
 The blockchain tribute itself is independent of any speculation about Satoshi's identity. Kaminsky's inscription is a memorial by a colleague (and cryptographic peer) in the cypherpunk community; it carries no implicit claim about whether Sassaman had any role in Bitcoin's design. The separate identity hypothesis (Sassaman as Satoshi) was first proposed in public years later (BitcoinTalk thread March 2013; Evan Hatch article 2021) and is documented separately in the [editorial analysis of the Sassaman = Satoshi hypothesis](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/). This entry records only the memorial event itself.

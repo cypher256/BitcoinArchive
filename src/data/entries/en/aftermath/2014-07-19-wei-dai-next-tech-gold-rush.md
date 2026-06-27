@@ -31,27 +31,27 @@ relatedEntries:
 
 [Wei Dai](/BitcoinArchive/participants/wei-dai/) — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998) and cited as reference [1] in the Bitcoin [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — described how he nearly missed Bitcoin entirely:
 
-**On Satoshi's direct outreach:**
+Dai recalled that Satoshi had reached him directly, and that he let it pass:
 
 <!-- audit:quote-skip -->
 > "In early 2009, someone named Satoshi Nakamoto [emailed me personally](/BitcoinArchive/entries/correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai/) with an announcement that he had published version 0.1 of Bitcoin. I didn't pay much attention at the time (I was more interested in Less Wrong than Cypherpunks at that point), but then in early 2011 I saw a LW article about Bitcoin, which prompted me to start mining it."
 
-**On his return from mining:**
+The small stake he eventually put in had grown enormously:
 
 <!-- audit:quote-skip -->
 > "That approximately $200 investment (plus maybe another $100 in electricity) is also worth around six figures today."
 
-**On the broader lesson:**
+He drew a broader lesson from the episode:
 
 <!-- audit:quote-skip -->
 > "Clearly, technological advances can sometimes create gold rush-like situations... it's possible to stumble into them without even trying. Which makes me think, maybe we should be trying?"
 
-**On why he didn't act in 2009 (comment, July 23):**
+Asked why he had not acted in 2009, Dai pointed to his orthodox monetary views (comment, July 23):
 
 <!-- audit:quote-skip -->
 > "My monetary policy views were firmly mainstream, which considers rapid unpredictable changes in prices... to be a really bad thing for a currency."
 
-**On updating beliefs about market efficiency (comment, July 19):**
+And he conceded that twice stumbling into outsized returns had shaken his faith in market efficiency (comment, July 19):
 
 <!-- audit:quote-skip -->
 > "EMH is the reason I didn't bother looking... But after stumbling into assets with returns in the 100x-1000x range (or 100% to 500% annualized), twice, it seems time to update a bit."

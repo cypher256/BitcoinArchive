@@ -36,7 +36,7 @@ translationStatus: complete
 
 On September 3, 2013, [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) published "A New Mystery about [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) Hidden in the Bitcoin Block-Chain," revealing a second, independent fingerprint in Satoshi's early mining — beyond the [ExtraNonce slope analysis he had published five months earlier](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/).
 
-**The discovery:**
+## The discovery
 
 Lerner analyzed the least significant byte (LSB) of nonce values across the first 36,288 blocks. In a standard mining implementation, nonce bytes should be uniformly distributed. Instead, Satoshi's blocks showed a striking non-random pattern:
 
@@ -47,15 +47,15 @@ Lerner analyzed the least significant byte (LSB) of nonce values across the firs
 
 The pattern was exclusive to unspent coinbases (Satoshi's blocks) and absent from blocks mined by other early participants.
 
-**Significance:**
+## Significance
 
 This LSB restriction to approximately **50 out of 256 possible values** ([0..9] ∪ [19..58]) was a completely independent line of evidence from the ExtraNonce analysis. It proved the dominant miner used custom software that partitioned the nonce search space — assigning different LSB ranges to different threads or processes to avoid duplicate work.
 
-**Initial hypotheses:**
+## Initial hypotheses
 
 Lerner proposed four explanations: a parsing error, specialized hardware using gray codes, a SHA-2 vulnerability, or an intentional fingerprint. Community member "Eyal0" quickly proposed the correct answer: Satoshi ran approximately 50 parallel mining threads, each assigned unique LSB identifiers to prevent nonce collision.
 
-**Follow-up (September 4, 2013):**
+## Follow-up (September 4, 2013)
 
 In "Satoshi's Machine," Lerner confirmed the LSB-ExtraNonce connection and determined that Satoshi's computer appeared approximately **4.3 times faster** than any other early miner's machine — consistent with a single high-end CPU running dozens of parallel threads rather than multiple networked computers.
 

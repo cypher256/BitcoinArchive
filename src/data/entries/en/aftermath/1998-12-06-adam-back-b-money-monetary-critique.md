@@ -61,14 +61,14 @@ quotes:
 
 [Adam Back](/BitcoinArchive/participants/adam-back/) replied to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) with a [substantive monetary-design critique](/BitcoinArchive/entries/emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique/) posted to the Cypherpunks list. Back identified seven distinct issues in the proposal as it stood, while explicitly proposing his own [Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) as the candidate minting mechanism for the system.
 
-**Hashcash as b-money's minting mechanism:**
+Back's central proposal named Hashcash as the minting mechanism:
 
 <!-- quote: q1 -->
 > "to create value you burn CPU time, just like with hashcash"
 
 This sentence is the explicit pre-Bitcoin proposal of the configuration Bitcoin would later realize: a proof-of-work primitive (Hashcash) used as the minting mechanism for a decentralized digital-cash system (b-money). Back proposed it as a candidate; he did not implement it.
 
-**Seven monetary-design issues identified by Back**
+## Seven monetary-design issues identified by Back
 
 The seven issues below are the editor's structured summary of Back's analysis. The original message is available in full at the cryptoanarchy.wiki archive linked under `sourceUrl`; readers checking specific phrasing should consult the archived original.
 
@@ -80,11 +80,11 @@ The seven issues below are the editor's structured summary of Back's analysis. T
 6. **Fiat off-ramp identity exposure.** The symmetric problem at the exit: cashing out to fiat ("force-monopoly money") without revealing identity is "difficult."
 7. **Resource-waste overhead.** Operating the system imposes overhead "equivalent to the value of b-money in circulation" — the energy-consumption critique that would later attach to Bitcoin's proof-of-work.
 
-**Wei Dai's reply (December 7):**
+## Wei Dai's reply (December 7)
 
 Wei Dai [replied to Back's critique on December 7, 1998](/BitcoinArchive/entries/aftermath/1998-12-07-wei-dai-re-b-money-protocol/), conceding that "b-money will at most be a niche currency/contract enforcement mechanism" and revealing a partial retreat from earlier crypto-anarchist positions: "I now tend to think that the government monopoly of force is a net benefit." Dai also raised price stability, business cycles, and optimal inflation rates as open questions for any wider-adoption monetary system.
 
-**Mapping Back's 1998 issues to Bitcoin's design ten years later**
+## Mapping Back's 1998 issues to Bitcoin's design ten years later
 
 The table below is the editor's structured comparison.
 

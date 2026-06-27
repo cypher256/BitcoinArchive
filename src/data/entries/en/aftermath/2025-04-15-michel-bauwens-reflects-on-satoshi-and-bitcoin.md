@@ -35,8 +35,6 @@ relatedEntries:
 
 In an interview published by Uncommons on April 15, 2025, P2P Foundation founder [Michel Bauwens](/BitcoinArchive/participants/michel-bauwens/) looked back on his brief but direct contact with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/).
 
-**On Satoshi's emails:**
-
 Bauwens said the exchange was limited but memorable:
 
 <!-- audit:quote-skip -->
@@ -49,16 +47,12 @@ According to Bauwens, one message explained why Satoshi wanted to publish the Bi
 
 Bauwens also recalled that Satoshi later wrote to deny being "the Japanese guy" identified in the press, and at one point promised to write again but never followed up.
 
-**On Bitcoin's significance:**
-
 Although Bauwens said he was not enthusiastic about Bitcoin's energy requirements, he described its historical importance in much stronger terms:
 
 <!-- audit:quote-skip -->
 > "It was the first globally scalable, socially-sovereign currency that was not created by a firm, nor by the state."
 
 He also argued that Bitcoin introduced a new kind of universal ledger, moving accounting from closed institutional systems toward open ecosystems.
-
-**On his broader retrospective view:**
 
 Bauwens framed Bitcoin as a post-capitalist invention rather than a simply anti-capitalist one. In his view, Bitcoin created a new coordination layer for value, but still lacked a strong connection to productive, local, commons-based reality.
 

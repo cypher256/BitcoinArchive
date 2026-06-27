@@ -49,19 +49,17 @@ quotes:
 
 [Wei Dai](/BitcoinArchive/participants/wei-dai/) replied to [Adam Back](/BitcoinArchive/participants/adam-back/)'s [critique of the b-money protocol](/BitcoinArchive/entries/emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique/), addressing concerns about computational resource waste and the practical scope of the proposal:
 
-**On government monopoly of force:**
+On the state's monopoly on force, Dai had shifted ground:
 
 <!-- quote: q1 -->
 > "I now tend to think that the government monopoly of force is a net benefit."
 
-**On b-money's limited scope:**
+On b-money's likely scope, he was modest:
 
 <!-- speaker: Wei Dai -->
 > "b-money will at most be a niche currency/contract enforcement mechanism, serving those who don't want to or can't use government sponsored ones."
 
 <!-- speaker: reset -->
-
-**On open questions for mainstream adoption:**
 
 Dai raised questions about what would be needed for broader adoption, including price stability, business cycles, and optimal inflation rates.
 

@@ -29,21 +29,17 @@ secondarySources:
 
 On October 23, 2021, [Dustin D. Trammell](/BitcoinArchive/participants/dustin-trammell/) appeared on the Stephan Livera Podcast (Episode 314: "The 2nd Node On The Bitcoin Network? The Early Days of Bitcoin") to provide the most detailed account of his experience as one of Bitcoin's very first users.
 
-**The "one other node" experience:**
-
 Trammell described his first moments on the Bitcoin network after downloading and running the software shortly after [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/)'s January 8, 2009 [announcement on the Cryptography mailing list](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/):
 
 <!-- audit:quote-skip -->
 > "When it first started, it connected to one other node and that was it. It just sat there with one connection for about four to six hours, and then it started making other connections and other nodes began to come online."
 
-**Bootstrap mechanism:**
+Trammell described the bootstrap mechanism:
 
 <!-- audit:quote-skip -->
 > "If it was the first time it started, it would bootstrap to a known IP address and try to get a peer list and then connect to up to eight peers."
 
 The single connection he observed was likely Satoshi's own node — the only other machine running Bitcoin at that point.
-
-**Mining disabled by default:**
 
 Trammell revealed that he did not immediately start mining because the feature was not enabled by default in the software:
 
@@ -55,16 +51,14 @@ Trammell revealed that he did not immediately start mining because the feature w
 
 Despite being one of the first users, Trammell was not mining for several days after first connecting, meaning the network's early hash power was even more concentrated in Satoshi's hands than previously understood.
 
-**Speculation about being the second node:**
+As for being the second node, Trammell was careful to hedge:
 
 <!-- audit:quote-skip -->
 > "I think I may have been the second node on the network, but that's entirely speculative based on the behavior that I saw in the software at the time."
 
 Trammell was careful to note this was based on observed behavior (a single peer connection bootstrapping to a known IP) rather than definitive proof. However, his [January 11, 2009 email to Satoshi](/BitcoinArchive/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/) — just two days after the v0.1 release — documenting "Generated" messages with 0.00 credit confirms he was running the software by that date.
 
-**Earlier account (Cointelegraph, March 2021):**
-
-In an earlier interview with Cointelegraph, Trammell provided additional context:
+In an earlier interview with Cointelegraph (March 2021), Trammell provided additional context:
 
 <!-- audit:quote-skip -->
 > "Mining was incredibly easy, although I did not realize for the first few days that you had to go into the settings and specifically turn mining on."

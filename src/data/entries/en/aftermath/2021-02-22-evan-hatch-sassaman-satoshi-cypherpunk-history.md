@@ -47,7 +47,7 @@ relatedEntries:
 
 On February 22, 2021, **Evan Hatch** — founder of the Worlds.org cryptocurrency gaming platform — published "Len Sassaman and Satoshi: a Cypherpunk history" on Medium. The piece is the most-cited public articulation of the hypothesis that [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) was the person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym, and it remains the foundational reference for that hypothesis in subsequent journalism.
 
-**The case as Hatch presents it:**
+## The case as Hatch presents it
 
 Hatch's argument is structurally circumstantial — he combines biographical, linguistic, technical, and timing alignments without claiming forensic proof:
 
@@ -58,7 +58,7 @@ Hatch's argument is structurally circumstantial — he combines biographical, li
 - **Academic register.** The Bitcoin whitepaper's LaTeX formatting and citation style match the academic-paper register Sassaman produced as a PhD researcher at KU Leuven's COSIC group, working under David Chaum, 2004–2011.
 - **Final-message-to-death timing.** Satoshi's last verified message dates to May 2011. Sassaman died on [July 3, 2011](/BitcoinArchive/participants/len-sassaman/) of suicide. Hatch treats the roughly two-month gap as suggestive without claiming it is dispositive.
 
-**Hatch's framing:**
+## Hatch's framing
 
 The piece is explicitly speculative, not a forensic identification. Hatch's strongest assertion is conditional:
 
@@ -67,7 +67,7 @@ The piece is explicitly speculative, not a forensic identification. Hatch's stro
 
 Earlier in the piece Hatch writes "I hesitate to speculate about Satoshi's identity," signaling that the article is not making a definitive identification — it is constructing an inferential case. The framing was preserved in subsequent press coverage that cited the article: most reports describe the Sassaman hypothesis as a *cypherpunk-community speculation* rather than a stylometrically proved identification (which is the formally distinct posture taken by, for example, Skye Grey 2013 for Nick Szabo or the 2026 Carreyrou NYT investigation for Adam Back).
 
-**Subsequent amplification:**
+## Subsequent amplification
 
 Hatch's article became the canonical citation for the Sassaman hypothesis. Subsequent coverage that built on or referenced it includes:
 
@@ -77,11 +77,11 @@ Hatch's article became the canonical citation for the Sassaman hypothesis. Subse
 
 A counter-analysis tradition has also developed — most prominently Peter Miller's April 2026 Medium piece "Len Sassaman was not Satoshi Nakamoto" and David Z. Morris's Substack response — both of which treat Hatch's article as the canonical case the counter-argument is responding to.
 
-**Sassaman's widow's response:**
+## Sassaman's widow's response
 
 Meredith Patterson, Len Sassaman's widow and herself a security researcher, has publicly denied that her late husband was Satoshi Nakamoto. The denial is consistent across her public posts and interviews.
 
-**Methodological framing:**
+## Methodological framing
 
 Hatch's case is biographical-circumstantial rather than algorithmic or stylometric. No code, no key, no email metadata, and no financial trail were tied to Sassaman. The hypothesis rests on Sassaman's cypherpunk-network embedding, his European residence during Bitcoin's development, and the language and technical-interest overlaps Hatch enumerates. As with all post-mortem identifications, Sassaman cannot confirm or deny — but Patterson has done so on his behalf, and a cypherpunk-community counter-tradition rejects the identification on independent grounds (timing, technical-fingerprint mismatches, Sassaman's documented other commitments during the development window).
 

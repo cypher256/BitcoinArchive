@@ -34,25 +34,25 @@ relatedEntries:
 
 On September 15, 2016, [Peter Todd](/BitcoinArchive/participants/peter-todd/) announced OpenTimestamps, a system for creating cryptographic proofs that data existed at a specific point in time by anchoring timestamps to the Bitcoin blockchain.
 
-**How it works:**
+## How it works
 
 OpenTimestamps uses Merkle tree aggregation to combine an unlimited number of document hashes into a single Bitcoin transaction. Each individual timestamp is simply the path through the Merkle tree to the Bitcoin block header. Public calendar servers collect pending hashes and periodically merge them into trees, making timestamps free and nearly instant (under one second).
 
-**Design principles:**
+## Design principles
 
 - **Trust-minimized:** No reliance on centralized authorities — Bitcoin's publicly auditable blockchain serves as the time attestation
 - **Scalable:** An unlimited number of timestamps per transaction through aggregation
 - **Convenient:** Timestamps can be created in about a second without waiting for block confirmation
 - **Verifiable:** Anyone with a Bitcoin node can independently verify timestamps offline
 
-**Use cases:**
+## Use cases
 
 - Verifying record integrity after security breaches
 - Validating software signatures when developer keys are revoked
 - Establishing when website snapshots were created
 - Git commit timestamping for provable development history
 
-**Funding and development:**
+## Funding and development
 
 The project was funded by Verisart (art provenance) and BTCC (Bitcoin mining firm). Todd noted the project was a rewrite of his earlier 2012 timestamping work. In 2017, he demonstrated the system by "carbon dating" the Internet Archive, timestamping large portions of the Wayback Machine.
 

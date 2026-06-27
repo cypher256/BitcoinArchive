@@ -56,18 +56,16 @@ translationStatus: complete
 <!-- speaker: narrator -->
 2011年11月、ジャーナリストのベンジャミン・ウォレスが Wired 誌（19.12 号）に『The Rise and Fall of Bitcoin』を発表した。主要メディアによるビットコインの本格的な特集記事としては最初期のものの一つだった。記事はサトシ・ナカモトの[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)から、マイニングブーム、価格の急騰、そしてハッキングや詐欺、幻滅に至るまで、ビットコインの全軌跡を追った。
 
-**ビットコインへの初期の評価：**
+ビットコインが初期に集めた評価について、記事は名だたる声を並べた：
 
 <!-- speaker: narrator -->
 <!-- audit:quote-skip -->
 > [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)（b-moneyの発明者）はビットコインを「非常に重要」と呼び、[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)（ビットゴールドの考案者）は「世界への偉大な貢献」と称え、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)（RPOWを手がけた著名な暗号学者）は「世界を変える可能性がある」と述べた。
 
-**初期コミュニティの精神：**
-
 <!-- speaker: narrator -->
 記事は、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が 1 万 BTC を 50 ドルで購入し Bitcoin Faucet を作って無料配布したこと、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)が[史上初の実世界ビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)として 1 万 BTC でピザ 2枚を購入したことを描写した。
 
-**サトシの正体について：**
+サトシの正体について、記事はいくつかの説を取り上げた：
 
 <!-- speaker: narrator -->
 <!-- audit:quote-skip -->
@@ -79,14 +77,12 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > 「サトシっていう人とメールを何通かやり取りしたんだけどさ。本物の人間じゃないような感じがずっとしてたんだよね。返信も2週間おきくらいで、たまに誰かがチェックしてるような感じだった。ビットコインって、一人で作ったにしてはよくできすぎてるんだよ」
 
-**[サトシの Wikileaks への嘆願](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/)（2010年12月5日）：**
-
-サトシ・ナカモト：
+[サトシの Wikileaks への嘆願](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/)（2010 年 12 月 5 日）について、記事はその拒絶を引いた：
 
 <!-- quote: q1 -->
 > 「違う、挑発するな。プロジェクトは徐々に成長する必要がある。その過程でソフトウェアを強化できるように。WikiLeaksへ訴える。ビットコインを使うのはやめてくれ。ビットコインはまだ小さなベータコミュニティであり、黎明期にある。集まるのは小銭程度だ。それなのに、もたらす火種は、この段階で我々を破壊しかねない」
 
-**サトシの消失：**
+サトシの消失について、ウォレスはこう書いた：
 
 <!-- speaker: narrator -->
 <!-- audit:quote-skip -->
@@ -105,7 +101,7 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > その後、ナカモトはアンドレセンのメールにすら返信しなくなった。ビットコイナーたちは嘆くように問うた。なぜ彼は去ったのか。だがその頃には、彼の創造物は独自の生命を持ち始めていた。
 
-**サトシの[コーディングスタイル](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)と年齢：**
+サトシの[コーディングスタイル](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)と推定年齢について、記事は憶測を集めた。
 
 アミール・ターキ：
 
@@ -119,15 +115,13 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > 「サトシは金融機関の小さなチームだと思う。直感的にそう感じる。クオンツが友人の何人かと組んでやったのだろう」
 
-**神義論的問い：**
+その底に横たわる問いについて、ウォレスは内省的になった：
 
 <!-- speaker: narrator -->
 <!-- audit:quote-skip -->
 > しかし、パラノイアと内紛の下に、もっと脆いものが潜んでいた。神義論的ともいえる失望だ。ビットコイナーたちが本当に問うていたのはこうだった——なぜナカモトはこの世界を創り出しておきながら、見捨てたのか。
 
-**信頼とセキュリティの破綻：**
-
-[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)：
+信頼とセキュリティの破綻について、[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)は率直だった：
 
 <!-- speaker: Jeff Garzik -->
 <!-- audit:quote-skip -->
@@ -139,13 +133,13 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > 「高い電気代と熱気と騒音にうんざりし始めている」
 
-**ステファン・トーマスによるタイムスタンプ分析：**
+ステファン・トーマスのタイムスタンプ分析について、記事はこう記した：
 
 <!-- speaker: narrator -->
 <!-- audit:quote-skip -->
 > スイスのコーダーでコミュニティの活発なメンバーだったステファン・トーマスが、ナカモトの500件以上のフォーラム投稿のタイムスタンプをグラフ化した。グラフは、グリニッジ標準時の午前5時から11時の間に投稿がほぼ消滅することを示していた。
 
-**締めくくり——ガージック、サトシの正体について：**
+締めくくりに、記事はサトシの正体をめぐるガージックの言葉に戻った：
 
 <!-- speaker: Jeff Garzik -->
 <!-- speaker: narrator -->

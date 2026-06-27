@@ -34,10 +34,10 @@ relatedEntries:
 
 On October 6, 2022, security researcher SerHack published "The Story Behind the Alternative Genesis Block of Bitcoin," analyzing a pre-release version of Bitcoin's genesis block that predated the official launch by nearly four months.
 
-**Discovery:**
+## Discovery
 On December 23, 2013, BitcoinTalk user "Cryddit" ([Ray Dillinger](/BitcoinArchive/participants/ray-dillinger/), aka Bear) posted source code that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) had shared with him privately in November 2008 for a security audit. Dillinger reviewed the blockchain code while [Hal Finney](/BitcoinArchive/participants/hal-finney/) reviewed the scripting language. The code contained a genesis block with entirely different parameters from the one that launched on January 3, 2009.
 
-**The Pre-Release Genesis Block:**
+## The Pre-Release Genesis Block
 
 | Parameter | Pre-Release (Sept 2008) | Official (Jan 2009) |
 |---|---|---|
@@ -47,8 +47,8 @@ On December 23, 2013, BitcoinTalk user "Cryddit" ([Ray Dillinger](/BitcoinArchiv
 | Nonce | 141,755 | 2,083,236,893 |
 | Block Reward | 10,000 units ("cents") | 50 BTC |
 
-**Connection to the Financial Crisis:**
+## Connection to the Financial Crisis
 The pre-release genesis block's timestamp of September 10, 2008, coincides with the day Lehman Brothers announced approximately $3.9 billion in quarterly losses. Lehman Brothers filed for bankruptcy five days later on September 15, 2008. This suggests Satoshi was developing Bitcoin with the unfolding financial crisis as direct motivation — even before the whitepaper's publication on October 31, 2008.
 
-**Other Pre-Release Differences:**
+## Other Pre-Release Differences
 The November 2008 code also contained an early IRC client framework, a peer-to-peer marketplace, and a virtual poker game — features that were removed before the January 2009 public release. The total supply under the pre-release parameters (10,000 units per block) would have been approximately 1.99 billion bitcoin.

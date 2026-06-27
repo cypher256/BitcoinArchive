@@ -42,19 +42,19 @@ relatedEntries:
 
 Wei Dai — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998), cited as reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — shared his reflections on Satoshi Nakamoto:
 
-**On independent invention:**
+On independent invention, Dai recounted:
 
 <!-- audit:quote-skip -->
 > "My understanding is that the creator of Bitcoin, who goes by the name Satoshi Nakamoto, didn't even read my article before reinventing the idea himself. He learned about it afterward and credited me in his paper."
 
-**On Satoshi's background:**
+On Satoshi's likely background, Dai offered a guess:
 
 <!-- audit:quote-skip -->
 > "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
 
 *[Editor: Wei Dai's testimony here — that Satoshi was not previously active in the cypherpunk community — is one of three converging primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).]*
 
-**On Satoshi's motivation:**
+On Satoshi's motivation, Dai read it as conviction over profit:
 
 <!-- audit:quote-skip -->
 > "I think he is not motivated mainly to personally make money, but to change the world and to solve an interesting technical problem."
@@ -67,31 +67,31 @@ Wei Dai also expressed that Satoshi "might have been motivated more by a distrus
 
 *From the same AALWA thread, March 15, 2014:*
 
-In response to a question about why he never implemented b-money, Dai explained:
+In response to a question about why he never implemented b-money, Dai gave several reasons.
 
-**On b-money's incomplete design:**
+Part of it was that b-money was never a finished design:
 
 <!-- audit:quote-skip -->
 > "Part of it was because b-money wasn't a complete practical design yet."
 
-**On disillusionment with crypto-anarchy:**
+By the time he wrote it up, he had also soured on crypto-anarchy:
 
 <!-- audit:quote-skip -->
 > "I didn't continue to work on the design because I had actually grown somewhat disillusioned with cryptoanarchy by the time I finished writing up b-money."
 
-**On underestimating demand:**
+And he had not foreseen the demand such a system could attract:
 
 <!-- audit:quote-skip -->
 > "I didn't foresee that a system like it, once implemented, could attract so much attention and use beyond a small group of hardcore cypherpunks."
 
 *From the same thread, March 17, 2014:*
 
-**On Bitcoin's unexpected success:**
+On Bitcoin's unexpected success, Dai admitted he was still at a loss:
 
 <!-- audit:quote-skip -->
 > "To be honest I didn't initially expect Bitcoin to make as much impact as it has, and I'm still at a bit of a loss to explain why it has succeeded to the extent that it has."
 
-**On crypto-anarchy after Bitcoin:**
+On what Bitcoin changed in his own views, Dai found little had shifted:
 
 <!-- audit:quote-skip -->
 > "My views haven't changed very much, since the main surprise of Bitcoin to me is that people find such a system useful for reasons other than crypto-anarchy."

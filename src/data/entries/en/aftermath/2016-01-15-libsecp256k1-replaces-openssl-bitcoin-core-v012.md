@@ -47,13 +47,13 @@ relatedEntries:
 
 On January 15, 2016, [Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) shipped with libsecp256k1 as the default backend for consensus-critical ECDSA signature verification, replacing OpenSSL — a dependency that had been part of Bitcoin since [Satoshi's original v0.1 release](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) seven years earlier.
 
-**Background:**
+## Background
 
 The libsecp256k1 project was started by [Pieter Wuille](/BitcoinArchive/participants/pieter-wuille/) on March 5, 2013. The initial motivation was performance — Wuille wanted to test whether the GLV-method endomorphism could deliver a meaningful speedup over OpenSSL's general-purpose elliptic-curve code. Within one week, the library could verify the entire Bitcoin blockchain (block height ~225,000 at the time).
 
 [Gregory Maxwell](/BitcoinArchive/participants/gregory-maxwell/) joined the effort and the project expanded from a performance experiment into a full replacement for OpenSSL's secp256k1 implementation, focused entirely on Bitcoin's needs.
 
-**Why replace OpenSSL:**
+## Why replace OpenSSL
 
 By 2014, the team had identified several concrete problems with using OpenSSL for consensus-critical code:
 
@@ -65,12 +65,12 @@ In November 2014, Wuille discovered and reported [CVE-2014-3570](https://cve.mit
 
 Maxwell summarized the conclusion in the Bitcoin Magazine article: "OpenSSL is not a suitable library for a consensus-critical system like Bitcoin."
 
-**Rollout:**
+## Rollout
 
 - **Bitcoin Core v0.10** (February 2015): libsecp256k1 became the default for wallet signing.
 - **Bitcoin Core v0.12** (January 15, 2016): libsecp256k1 became the default for consensus-critical ECDSA signature verification.
 
-**Significance:**
+## Significance
 
 libsecp256k1 replaced OpenSSL in Bitcoin's consensus signature verification — the code path where every node must reach the same verdict, or the chain splits. Satoshi's v0.1 used OpenSSL because it was the obvious choice in 2008 — it was the standard cryptographic library for C++ projects on Windows. By 2016, the Bitcoin Core developers had concluded that "obvious" was not "correct" for a consensus system, and had spent three years building a purpose-made replacement.
 

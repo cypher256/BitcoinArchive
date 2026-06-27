@@ -48,13 +48,13 @@ translationStatus: complete
 
 2016年1月15日、[Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) が合意クリティカルな ECDSA 署名検証の標準バックエンドとして libsecp256k1 を採用し、OpenSSL を置き換えた。OpenSSL は[サトシのオリジナル v0.1 リリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)以来 7年間、ビットコインの依存ライブラリーであり続けていた。
 
-**背景：**
+## 背景
 
 libsecp256k1 プロジェクトは 2013年3月5日、[ピーター・ウィーユ](/BitcoinArchive/ja/participants/pieter-wuille/)によって開始された。当初の動機は性能で、ウィーユは GLV-method endomorphism によって OpenSSL の汎用楕円曲線コードを上回る速度向上が得られるか確かめたかった。1 週間でライブラリーはビットコインの全ブロックチェーンを検証可能になった（当時のブロック高は約 225,000）。
 
 [グレゴリー・マクスウェル](/BitcoinArchive/ja/participants/gregory-maxwell/)が参加し、プロジェクトは性能実験から、OpenSSL の secp256k1 実装を完全に置き換えるビットコイン専用ライブラリーへと拡大していった。
 
-**OpenSSL を置換する理由：**
+## OpenSSL を置換する理由
 
 2014年までに、合意クリティカルなコードで OpenSSL を使用することの具体的な問題が複数特定されていた：
 
@@ -66,12 +66,12 @@ libsecp256k1 プロジェクトは 2013年3月5日、[ピーター・ウィー�
 
 マクスウェルは Bitcoin Magazine の記事で結論をこうまとめた。「OpenSSL はビットコインのような合意クリティカルなシステムには適さないライブラリーだ」
 
-**展開：**
+## 展開
 
 - **Bitcoin Core v0.10**（2015年2月）: ウォレット署名の標準として libsecp256k1 を採用。
 - **Bitcoin Core v0.12**（2016年1月15日）: 合意クリティカルな ECDSA 署名検証の標準として libsecp256k1 を採用。
 
-**意義：**
+## 意義
 
 libsecp256k1 が OpenSSL を置き換えたのは、合意の署名検証だった。すべてのノードが同じ判定に達しなければチェーンが分裂する経路である。サトシの v0.1 が OpenSSL を採用したのは、2008年当時としては自明な選択だった——Windows 上の C++ プロジェクト向け標準暗号ライブラリーだったからだ。2016年までに、Bitcoin Core 開発者たちは、合意システムにとって「自明」と「正しい」は同じではないと結論し、3年かけてビットコイン専用の置換実装を作り上げた。
 

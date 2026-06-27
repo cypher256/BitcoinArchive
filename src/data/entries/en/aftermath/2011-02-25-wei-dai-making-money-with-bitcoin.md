@@ -32,24 +32,24 @@ relatedEntries:
 
 [Wei Dai](/BitcoinArchive/participants/wei-dai/) — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998) and cited as reference [1] in the Bitcoin [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — joined a discussion about Bitcoin's investment potential. His comments clarify his relationship to Bitcoin and reveal his first steps as a miner.
 
-**On his connection to Bitcoin (responding to a direct question):**
+Responding to a direct question about his connection to Bitcoin, Dai wrote:
 
 <!-- audit:quote-skip -->
 > "Hi Clippy, what made you think that I might be able to?"
 
 Dai clarified that he did not create Bitcoin — he only described similar concepts over a decade prior, and Satoshi Nakamoto independently reinvented the idea and later credited his work.
 
-**On direct purchase vs. mining:**
+On buying versus mining, his advice was blunt:
 
 <!-- audit:quote-skip -->
 > "If you value 1 BTC at $25, you should just buy BTC with cash directly."
 
-**On Bitcoin's security:**
+On the protocol's security, Dai was candid about how little had been tested:
 
 <!-- audit:quote-skip -->
 > "I have not analyzed the security of the protocol... not many other cryptographers have analyzed its security either, and in my experience these kinds of protocols often have flaws that are not found until that has happened."
 
-**On the purpose of cryptographic currency:**
+On the purpose of a cryptographic currency, Dai put it simply:
 
 <!-- audit:quote-skip -->
 > "The point of my idea or Bitcoin is that such trust can be obviated with the appropriate cryptography."

@@ -61,7 +61,7 @@ relatedEntries:
 
 On April 8, 2026, John Carreyrou — the Pulitzer Prize–winning journalist who broke the Theranos story — published a roughly 10,000-word New York Times investigation identifying [Adam Back](/BitcoinArchive/participants/adam-back/), CEO of Blockstream and inventor of Hashcash, as the most likely person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym. Back denied the identification.
 
-**The investigation:**
+## The investigation
 
 Carreyrou spent 18 months on the investigation, working with NYT AI expert Dylan Freedman. The methodology centered on stylometric comparison of cypherpunk-era writing:
 
@@ -75,11 +75,11 @@ Independent stylometric analysis by linguist Florian Cafiero, commissioned for t
 
 Carreyrou also identified what the investigation calls a "conspicuous gap" in Back's online activity: although Back had been engaged in cypherpunk discussions about electronic cash for years, his online posting went quiet in the period around Bitcoin's late-2008 announcement.
 
-**The El Salvador interview:**
+## The El Salvador interview
 
 Carreyrou met Back in person in El Salvador (where Back currently lives) for a two-hour interview, during which Back declined the identification more than six times.
 
-**Back's responses:**
+## Back's responses
 
 In a follow-up Yahoo Finance interview on April 10, 2026, Back articulated his objections to the methodology:
 
@@ -101,7 +101,7 @@ He argued that Satoshi's continued anonymity is structurally beneficial to Bitco
 
 Back also denied the claim on social media, consistent with his prior public position across multiple interviews and conference talks. The denial pattern matches his [February 2024 sworn testimony in COPA v Wright](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/), where he submitted his complete email correspondence with Satoshi as witness evidence under oath.
 
-**Pre-existing archive context relevant to the investigation:**
+## Pre-existing archive context relevant to the investigation
 
 The archive holds primary-source material that bears directly on the NYT claim:
 
@@ -109,7 +109,7 @@ The archive holds primary-source material that bears directly on the NYT claim:
 - Back's [February 2024 COPA v Wright testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) submitting these emails as witness evidence, treating Satoshi as a separate person under oath.
 - [Wei Dai's 2014 retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) on the AALWA thread, which argues Satoshi was "not previously active" in the visible cypherpunk community during the development period — a framing that selects against any candidate visibly active in cypherpunk-list discussion during 2007–2008, which is exactly the population the NYT stylometric analysis selects within.
 
-**Critical reception:**
+## Critical reception
 
 Coverage in cryptocurrency-focused media was mixed but largely skeptical of the identification. Fortune emphasized that the investigation "may have" found Satoshi rather than that it had. Unchained reported community consensus aligning with Back's denial. The methodology was widely framed in Bitcoin community responses as suggestive but not dispositive — particularly given Cafiero's own "inconclusive" characterization and the near-tie with Finney.
 

@@ -51,7 +51,7 @@ quotes:
 
 [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s final known private communications took place over two emails in April 2011.
 
-**April 23, 2011 — to Mike Hearn:**
+## April 23, 2011 — to Mike Hearn
 
 Satoshi [wrote to](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) [Mike Hearn](/BitcoinArchive/participants/mike-hearn/), a Google engineer who had been corresponding with him since April 2009:
 
@@ -60,7 +60,7 @@ Satoshi [wrote to](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coi
 
 He also expressed hope that Hearn's BitcoinJ project would continue to be developed as an alternative client.
 
-**April 26, 2011 — to Gavin Andresen:**
+## April 26, 2011 — to Gavin Andresen
 
 Three days later, Satoshi sent what is believed to be his absolute [final email, addressed to Gavin Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) with the subject line "alert key." He wrote:
 

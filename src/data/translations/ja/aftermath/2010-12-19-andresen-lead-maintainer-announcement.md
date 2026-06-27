@@ -63,7 +63,7 @@ translationStatus: complete
 
 サトシは[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)との[メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode/)を 12 月末まで続けたが、BitcoinTalk での公的活動は 12 月 12 日で終わっている。メール側は 4 か月後の 2011 年 4 月 26 日に[ギャビンへの最終メール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)（alert key 引き渡し）で閉じる。
 
-**リードメンテナーの地位はどう確立されたか（編集的な読解）：**
+## リードメンテナーの地位はどう確立されたか（編集的な読解）
 
 形式的なガバナンス・プロセス — メンテナー選挙、コミュニティ投票、リーダーシップ確認のための組織化されたスレッド — は、本アーカイブの調査範囲では見つかっていない。2010 年末のビットコインコミュニティ（フォーラム参加者は数百人規模）にそうした構造は存在しなかった。
 

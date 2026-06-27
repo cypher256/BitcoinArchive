@@ -32,7 +32,7 @@ translationStatus: complete
 
 2022年11月11日、FTX Trading Ltd.は — Alameda Research および 130 以上の関連会社と共に — 米国破産裁判所に連邦破産法第 11 章の適用を申請した。創業者サム・バンクマン＝フリード（SBF）は CEO を辞任した。
 
-**タイムライン：**
+## タイムライン
 - **2022年11月2日：** CoinDesk が Alameda Research のバランスシートの大部分が FTT（FTX の独自トークン）で構成されていると報道
 - **2022年11月6日：** Binance CEO チャンポン・ジャオが Binance の FTT 保有分を売却すると発表
 - **2022年11月8日：** FTX が顧客出金を停止、Binance が FTX 買収の拘束力のない意向書に署名

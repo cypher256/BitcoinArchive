@@ -39,7 +39,7 @@ Before the trial, Bohm was publicly known mainly from a January 25, 2009 bitcoin
 
 That detail matters because it shows that a participant first visible on the public mailing list was also corresponding privately with Satoshi for months afterward.
 
-**What the newly disclosed emails show:**
+## What the newly disclosed emails show
 
 The trial exhibits indicate that Bohm and Satoshi exchanged direct emails about real node-operation issues during 2009:
 

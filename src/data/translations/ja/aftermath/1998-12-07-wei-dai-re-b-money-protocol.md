@@ -50,19 +50,17 @@ quotes:
 
 [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)は、b-money プロトコルに関する[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の[批評](/BitcoinArchive/ja/entries/emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique/)に返信し、計算リソースの浪費への懸念と提案の実用的な範囲について論じた：
 
-**政府の暴力独占について：**
+国家の暴力独占について、ダイの立場は変わっていた：
 
 <!-- quote: q1 -->
 > 「今では、政府の暴力独占は差し引きでプラスだと思うようになりました」
 
-**b-money の限定的な範囲について：**
+b-money の射程について、ダイは控えめだった：
 
 <!-- speaker: Wei Dai -->
 > 「b-money はせいぜい、政府公認の仕組みを使いたくない、あるいは使えない人々に向けた、ニッチな通貨／契約執行メカニズムにとどまります」
 
 <!-- speaker: reset -->
-
-**大規模普及のための未解決問題について：**
 
 ダイは、より広範な普及に必要な条件として、価格安定性、景気循環、最適なインフレ率などの問題を提起した。
 

@@ -36,11 +36,11 @@ relatedEntries:
 
 [Peter Todd](/BitcoinArchive/participants/peter-todd/) was one of six participants in the Zcash trusted setup ceremony held October 22–23, 2016. Zooko Wilcox (Zcash co-founder) had contacted him via Twitter DM on September 26, asking him to serve as a "Human Witness." Todd insisted the conversation move to Signal, noting that soliciting someone for this role exposed them to significant threats.
 
-**The ceremony's purpose:**
+## The ceremony's purpose
 
 Zcash's zk-SNARK protocol required generating cryptographic parameters — a process that also produced "toxic waste" secret keys. If any single party retained these keys, they could counterfeit Zcash at will. The multi-party computation was designed so that the secret would only leak if all six participants colluded or were compromised.
 
-**Todd's criticisms before participating:**
+## Todd's criticisms before participating
 
 Despite agreeing to participate, Todd outlined fundamental objections:
 
@@ -55,19 +55,19 @@ Despite agreeing to participate, Todd outlined fundamental objections:
 
 He also questioned the experimental nature of zk-SNARKs, noting disagreement between experts about security parameters, and criticized Zcash's founders' reward as creating conflicts of interest.
 
-**The mobile ceremony:**
+## The mobile ceremony
 
 Rather than using a stationary location, Todd conceived a novel approach: conducting his computation while driving across British Columbia's interior. A moving target made physical surveillance and electromagnetic side-channel attacks harder. He purchased equipment with cash, used dummy airline tickets, kept his phone in airplane mode wrapped in aluminum foil, and built a Faraday cage from foil-lined cardboard for the compute node.
 
-**Execution (October 22–23):**
+## Execution (October 22–23)
 
 Todd drove north from Hope through the BC interior toward Prince George, processing cryptographic computations at rest stops and motels along the way. The longest computation (Disc C) took 90 minutes. He completed the final upload at the Prince George visitors center.
 
-**Destruction:**
+## Destruction
 
 On October 24, Todd systematically destroyed the compute hardware — disassembling the laptop and heating all electronic components with a propane torch in a metal pan at a remote logging site. He preserved the destroyed components and GoPro surveillance footage as forensic evidence.
 
-**Aftermath:**
+## Aftermath
 
 Todd later stated his participation "should not be construed as an endorsement" of Zcash. He described the ceremony as ultimately pointless, saying he didn't think "the Zcash trusted setup should be called a multiparty computation." In 2022, it was revealed that Edward Snowden was also among the six participants.
 

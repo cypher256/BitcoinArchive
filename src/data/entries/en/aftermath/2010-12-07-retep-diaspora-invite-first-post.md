@@ -39,17 +39,17 @@ relatedEntries:
 
 Peter Todd's first-ever post on BitcoinTalk. Nine words. Posted on December 7, 2010 at 09:14:28 AM — one minute after registering under the username "retep" (Peter spelled backwards).
 
-**Context:**
+## Context
 
 The thread was a marketplace for Diaspora invitations. Diaspora was an open-source, decentralized social network that launched in 2010 as a privacy-focused alternative to Facebook. It was invite-only at the time, and invites were being traded on BitcoinTalk's Marketplace board.
 
 Other buyers in the thread offered 0.5–2 BTC per invite. Todd offered $2 USD — a fiat currency price on a Bitcoin forum. Whether this reflects unfamiliarity with BTC pricing, a deliberate choice, or something else is unknowable.
 
-**Writing style:**
+## Writing style
 
 The post is maximally terse: no subject ("I"), no full word ("msg" for "message"), no personality. It reads like a classified ad — the kind of text designed to leave zero stylistic fingerprint. Compare this to Todd's later writing, which is characterized by self-deprecating humor, profanity, and casual-technical mixing, and to Satoshi's measured, precise style. This post is neither.
 
-**Timeline significance:**
+## Timeline significance
 
 - December 7, 09:13:47 — Account "retep" registered
 - December 7, 09:14:28 — First post (this Diaspora invite request) — 41 seconds later
@@ -58,7 +58,7 @@ The post is maximally terse: no subject ("I"), no full word ("msg" for "message"
 
 The 41-second gap between registration and first post suggests the message was composed in advance — or the account was created specifically to post it.
 
-**Username change:**
+## Username change
 
 The username "retep" was changed to "Peter Todd" years later at Todd's own request (BitcoinTalk requires users to ask an administrator to change usernames). The exact timing is unknown but is estimated to be around 2012–2013, when Todd began actively contributing to Bitcoin Core. Few people realized at the time that "retep" was "Peter" reversed. Bitcoin Core developer Gregory Maxwell commented on Hacker News in October 2024 that "it took me nearly a decade to realize retep was peter backwards." Todd himself addressed the username change in a 2024 Bloomberg interview, arguing that the "retep" handle had no public association with him in December 2010, and that if he had accidentally posted from a Satoshi-linked account the predictable response would have been to abandon the handle entirely rather than retitle it to his real name years later. (The Bloomberg piece is paywalled and not preserved in a publicly fetchable mirror; the framing here reflects the published summary rather than a verbatim transcript.)
 

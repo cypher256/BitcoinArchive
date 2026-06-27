@@ -41,7 +41,7 @@ relatedEntries:
 
 On October 21, 2023, Bitcoin researcher Jameson Lopp published "Hal Finney Was Not Satoshi Nakamoto" on his blog, presenting a detailed multi-pronged argument against the long-running speculation that [Hal Finney](/BitcoinArchive/participants/hal-finney/) was the pseudonym behind Bitcoin's creation. The full hypothesis-side / counter-evidence treatment is in the [Hal Finney = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/); this article documents Lopp's specific contribution to the counter-evidence side.
 
-**The race-day alibi (April 18, 2009):**
+## The race-day alibi (April 18, 2009)
 
 Lopp's central piece of evidence is a chronological alibi. According to Lopp, on Saturday April 18, 2009 at 8:00 AM Pacific time, Finney — an avid distance runner — began a 10-mile race in Santa Barbara, California. Lopp documents the race with timing-chip data, the race photographer's images, and an additional photograph taken by Hal's wife Fran. Lopp reports that Finney finished the race approximately 78 minutes later, around 9:18 AM Pacific.
 
@@ -51,7 +51,7 @@ The Archive holds the [related Satoshi-to-Hearn email from April 18, 2009](/Bitc
 
 *[Editor: Andy Greenberg's 2014 Forbes feature ["Nakamoto's Neighbor"](/BitcoinArchive/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) reported being shown race photographs by Fran Finney during an in-person visit; this archive treats the Greenberg piece as the early-press record of that material. Lopp's 2023 analysis revisits the timing question with explicit timestamp tables and adds independent corroborating arguments. The two pieces are complementary: Greenberg surfaced the human and photographic record; Lopp formalized the timestamp argument into a structured analysis.]*
 
-**Other arguments Lopp presents:**
+## Other arguments Lopp presents
 
 - **IP-address analysis** — Lopp examines IP addresses recorded in early Bitcoin debug logs and reports they are inconsistent with Finney's known infrastructure.
 - **Satoshi's reference to Hal in a separate email** — Lopp cites a Satoshi-to-[Martti Malmi](/BitcoinArchive/participants/martti-malmi/) email in which Satoshi refers to "Hal" in a way Lopp reads as third-party reference rather than self-reference.
@@ -59,10 +59,10 @@ The Archive holds the [related Satoshi-to-Hearn email from April 18, 2009](/Bitc
 - **Activity-pattern differences** — Lopp notes that Satoshi's active periods do not align with gaps and resumptions in Hal Finney's separately documented activity.
 - **Persona inconsistencies** — Lopp points to topics that Finney engaged with publicly (CO₂ concerns, prior knowledge of bit gold, etc.) and contrasts them with Satoshi's recorded persona.
 
-**The "Nakamoto's neighbor" framing:**
+## The "Nakamoto's neighbor" framing
 
 Hal Finney lived for almost a decade in Temple City, California — the same town where Newsweek had, weeks before Greenberg's 2014 article, [identified Dorian Nakamoto](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) as a Satoshi candidate. The geographic coincidence — Finney and Dorian Nakamoto living "blocks apart" — is what gave Greenberg's original article its title, and it is part of why Finney attracted Satoshi-identity speculation in the first place. Lopp's analysis treats this coincidence as exactly that — a coincidence — and argues the question must be answered by activity records rather than by geography.
 
-**Conclusion:**
+## Conclusion
 
 Lopp's stated position is that the combination of the race-day alibi and the supporting evidence makes it implausible that Finney was Satoshi. The piece does not propose an alternative candidate; it is a focused argument against one specific identity hypothesis.

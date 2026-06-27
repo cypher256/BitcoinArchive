@@ -32,17 +32,17 @@ relatedEntries:
 
 Wei Dai — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998), cited as reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — commented on Bitcoin's monetary design and his own role in its history:
 
-**On Bitcoin's monetary policy failure:**
+On Bitcoin's monetary policy, Dai's verdict was unsparing:
 
 <!-- audit:quote-skip -->
 > "I would consider Bitcoin to have failed with regard to its monetary policy (because the policy causes high price volatility which imposes a heavy cost on its users, who have to either take undesirable risks or engage in costly hedging in order to use the currency)."
 
-**On the risk of Bitcoin precluding better alternatives:**
+He also flagged a larger risk, that Bitcoin might foreclose a better alternative:
 
 <!-- audit:quote-skip -->
 > "One possible impact of Bitcoin might be that due to its deficient monetary policy and associated price volatility it can't grow to very large scales, and by taking over the cryptocurrency niche, it has precluded a future where a cryptocurrency does grow to very large scales."
 
-**On not responding to Satoshi's email:**
+And he took part of the blame himself, for never answering Satoshi's email:
 
 <!-- audit:quote-skip -->
 > "This may have been partially my fault because when Satoshi wrote to me asking for comments on his draft paper, I never got back to him. Otherwise perhaps I could have dissuaded him (or them) from the 'fixed supply of money' idea."

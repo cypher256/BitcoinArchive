@@ -52,7 +52,7 @@ In April 2014, the **Aston University Centre for Forensic Linguistics** (Birming
 
 This was the first multi-candidate academic stylometric examination of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) authorship. It built on the [December 2013 Skye Grey LikeInAMirror investigation](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/), arrived at the same leading candidate (Szabo), and was subsequently cited in [Nathaniel Popper's 2015 *New York Times* investigation](/BitcoinArchive/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/) and *Digital Gold* book.
 
-**The candidate set:**
+## The candidate set
 
 The 11 candidates examined were drawn from earlier journalistic and forum-community speculation. The four publicly named candidates:
 
@@ -66,7 +66,7 @@ The 11 candidates examined were drawn from earlier journalistic and forum-commun
 
 The Aston team considered hundreds of writing samples per candidate, with the largest sample for Szabo as noted above.
 
-**Methodology:**
+## Methodology
 
 The Aston study applied **forensic linguistic / stylometric analysis** — the same family of methods used in document examination cases for litigation, threat-attribution, and historical authorship disputes. Variables examined:
 
@@ -78,7 +78,7 @@ The Aston study applied **forensic linguistic / stylometric analysis** — the s
 | Hyphenation | Hyphenation conventions, compound-word formation |
 | Discourse markers | Recurring stylistic tells across multiple writing-context types |
 
-**The reported conclusion:**
+## The reported conclusion
 
 Dr. Grieve's reported summary statement at release:
 
@@ -87,20 +87,20 @@ Dr. Grieve's reported summary statement at release:
 
 The hedge in the second sentence is methodologically important: Grieve does not assert sole authorship, and explicitly leaves open the possibility of multi-author contribution while naming Szabo as the principal match.
 
-**Methodological caveats noted at release:**
+## Methodological caveats noted at release
 
 A spokesperson for Aston University acknowledged at the time of release that:
 
 - The report had not been peer reviewed and was not scheduled for peer review in the near future.
 - The study had been undertaken as a final-year forensic-linguistics class project rather than as a faculty-led research output.
 
-**Subsequent critical follow-up:**
+## Subsequent critical follow-up
 
 The methodological constraints of "Project Bitcoin" — class-project sample size, fixed candidate set drawn from prior speculation, no peer review, no released numerical data — have been the subject of subsequent critical commentary. The most cited critique is David Gerard's December 2018 piece "No, Nick Szabo wasn't Satoshi Nakamoto in 2014 either", which argues that stylometric analyses on candidate sets pre-selected by topical overlap (writers who wrote about digital cash, P2P networks, or cryptography) inherently confound shared subject-matter vocabulary with shared individual style.
 
 This methodological observation parallels — and predates — the same caveat raised by Florian Cafiero about [the 2026 Carreyrou *New York Times* investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) and the limitations explicitly cataloged by [Bas van Dorst's 2024 'Where is Satoshi?' open-source corpus](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) — namely that stylometric attribution is sensitive to candidate pre-selection, distance metric, and corpus boundaries in ways that affect which name comes out at the top.
 
-**Position in the stylometric record on Satoshi authorship:**
+## Position in the stylometric record on Satoshi authorship
 
 | Study | Date | Candidate scope | Top match | Numerical data public |
 |---|---|---|---|---|

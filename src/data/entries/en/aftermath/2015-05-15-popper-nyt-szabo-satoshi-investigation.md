@@ -45,7 +45,7 @@ relatedEntries:
 
 On May 15, 2015, the *New York Times* published "Decoding the Enigma of Satoshi Nakamoto and the Birth of Bitcoin" by Nathaniel Popper, the paper's cryptocurrency reporter. The article was an excerpt from Popper's book *Digital Gold: Bitcoin and the Inside Story of the Misfits and Millionaires Trying to Reinvent Money*, published the same month by Harper. The piece concluded that [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) — the cypherpunk-era cryptographer who designed Bit Gold (1998 conceived, fully published December 29, 2005) and coined the term "smart contracts" (1994) — was the most likely individual behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym.
 
-**The reporting:**
+## The reporting
 
 Popper had spent roughly two years on the book, interviewing dozens of figures across the early Bitcoin and cypherpunk communities. The Szabo-identification line of reasoning, as presented in the article, rested on three principal threads:
 
@@ -53,11 +53,11 @@ Popper had spent roughly two years on the book, interviewing dozens of figures a
 - **Stylometric and intellectual fingerprint.** Popper drew on the prior pseudonymous-blogger Skye Grey investigation (December 2013) and on his own reading of Szabo's writing across the Unenumerated blog and earlier mailing-list posts, finding what he described as a recurring overlap of phrasing, reference, and analytical register with the Satoshi corpus.
 - **Polymath profile fit.** Szabo's combination of computer science, cryptography, monetary economics (he had explicitly engaged with Austrian-school monetary theory), and legal scholarship matched the unusually wide skill range visible in Satoshi's writing and code.
 
-**Szabo's denial:**
+## Szabo's denial
 
 Popper contacted Szabo during the reporting. Szabo denied the identification by email. The denial is widely cited in subsequent coverage on Wikipedia and in journalism follow-ups; the substance of the denial included the position that other people — specifically [Wei Dai](/BitcoinArchive/participants/wei-dai/) and [Hal Finney](/BitcoinArchive/participants/hal-finney/) — were the candidates Szabo himself thought more plausible, given who in his circle was both intellectually engaged with the digital-cash problem and technically capable of implementation.
 
-**Reception:**
+## Reception
 
 The Popper piece marked the point at which the Szabo-as-Satoshi hypothesis crossed from cypherpunk-community discussion ([Skye Grey's December 2013 LikeInAMirror article](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/), the [April 2014 Aston University forensic-linguistic study](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)) into the mainstream U.S. paper of record. *Digital Gold* itself became the standard journalistic history of Bitcoin's origin period. The book's framing of Szabo as the most plausible Satoshi candidate has been cited continuously since, including in:
 
@@ -65,7 +65,7 @@ The Popper piece marked the point at which the Szabo-as-Satoshi hypothesis cross
 - Hannah Murphy / *Fortune*, "Is There Any Doubt This Man Created Bitcoin?" (October 31, 2018).
 - Tim Ferriss Show #244 (June 4, 2017), the most extensive Szabo audio interview in the public record.
 
-**Pre-existing archive context relevant to the article:**
+## Pre-existing archive context relevant to the article
 
 The archive holds primary-source material that bears directly on Popper's identification and on Szabo's denial:
 
@@ -73,7 +73,7 @@ The archive holds primary-source material that bears directly on Popper's identi
 - [Szabo's May 28, 2011 Unenumerated post "Bitcoin, what took ye so long?"](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/), in which Szabo wrote "Nakamoto improved a significant security shortcoming that my design had" — discussing Nakamoto in the third person while crediting himself with Bit Gold's design.
 - [The Szabo biography page](/BitcoinArchive/participants/nick-szabo/) covering the full Unenumerated and Bit Gold record.
 
-**Methodological framing:**
+## Methodological framing
 
 Popper's identification, like Skye Grey's before it, was stylometric and circumstantial rather than forensic. No code, no key, no email metadata, and no financial trail were tied to Szabo. The hypothesis rests on conceptual proximity (Bit Gold → Bitcoin) and pattern matches in writing and biography. Szabo's denial is the disposition of record from the named individual; the structural arguments against the identification are laid out in the [analytical entry](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/).
 

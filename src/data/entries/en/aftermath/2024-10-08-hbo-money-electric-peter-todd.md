@@ -55,7 +55,7 @@ quotes:
 
 On October 8, 2024, HBO released "Money Electric: The Bitcoin Mystery," a documentary directed by Cullen Hoback (known for "Q: Into the Storm"). The film named Bitcoin Core developer [Peter Todd](/BitcoinArchive/participants/peter-todd/) as a candidate for Bitcoin's pseudonymous creator, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/).
 
-**The forum post theory:**
+## The forum post theory
 
 The documentary's central piece of evidence was a December 2010 exchange on BitcoinTalk. Satoshi had described a concept for transaction replacement — what would later become Replace-by-Fee (RBF). Approximately 1.5 hours later, Todd (posting under the username ["retep,"](/BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/) his name spelled backwards) replied with a technical correction:
 
@@ -64,17 +64,17 @@ The documentary's central piece of evidence was a December 2010 exchange on Bitc
 
 This was only Todd's second post on BitcoinTalk, made three days after registering. Hoback argued that Todd had accidentally posted from his own account instead of Satoshi's — that the reply was a continuation of Satoshi's thought, not a response to it. Both accounts fell silent in the days that followed. [Satoshi's last public post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) came two days later, on December 12, 2010.
 
-**The RBF connection:**
+## The RBF connection
 
 The documentary drew a line from this exchange to Todd's later work formalizing Replace-by-Fee in [BIP 125](/BitcoinArchive/entries/bip/2015-11-03-bip-0125/) (2015), arguing that Todd completed what Satoshi had started — because they were the same person. Hoback also noted that Todd had previously used an alternate persona to submit an RBF patch, suggesting a pattern of operating under different identities.
 
-**Additional circumstantial evidence:**
+## Additional circumstantial evidence
 
 - Todd was pursuing a fine arts degree at OCAD University (graduating 2011) when Bitcoin launched in 2008–2009
 - Todd's alignment with [Adam Back](/BitcoinArchive/participants/adam-back/) and Gregory Maxwell at Blockstream
 - An alleged 2014 email from Satoshi's address during the block size debate
 
-**Todd's response:**
+## Todd's response
 
 Todd dismissed the allegations with sarcasm and anger. To CoinDesk on the day of broadcast he was direct, calling the filmmaker "grasping at straws":
 
@@ -88,7 +88,7 @@ In the documentary itself, asked by Hoback whether he was Satoshi, Todd answered
 
 He called the documentary "irresponsible" and said it put his safety at risk, noting that identifying someone as the holder of an estimated $70 billion in Bitcoin could make them a target. Todd stated he did not begin working on Bitcoin until 2014 — six years after Nakamoto's disappearance.
 
-**Critical reception:**
+## Critical reception
 
 The documentary was widely criticized by the Bitcoin community. Bitcoin Magazine called it "An Insult to Bitcoin — Cynical, Stupid, and Dangerous." Critics noted that the film relied entirely on circumstantial evidence and coincidence-based reasoning, with no cryptographic proof, no writing style analysis, and no explanation for how an art student could have designed a novel consensus mechanism.
 

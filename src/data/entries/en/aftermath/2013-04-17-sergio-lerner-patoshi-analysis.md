@@ -48,22 +48,22 @@ relatedEntries:
 
 On April 17, 2013, Argentine Bitcoin researcher [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) published "The Well Deserved Fortune of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/), Bitcoin creator, Visionary and Genius" on his blog Bitslog. The post presented the first systematic analysis of Bitcoin's earliest mining patterns.
 
-**Method:**
+## Method
 Lerner tracked the ExtraNonce field in coinbase transactions across blocks 0 through 36,288 (January 2009 to January 2010), using it as a "slow realtime clock" to identify when a miner's client was restarted. He found a single entity mining with consistent slope segments, restarting roughly every ~100 hours.
 
-**Key findings:**
+## Key findings
 - A single entity mined approximately **1,000,000 BTC** in the first year (refined to ~980,000 BTC in a follow-up post on April 24, 2013)
 - Of 1,814,400 total BTC awarded in that period, 1,148,800 BTC remained unspent
 - Block 1 was the first mined by this entity; Block 12 was the first mined by a different user
 - Only about 100 BTC (two block rewards) from this entity appeared to have been spent
 
-**The Nonce Mystery (September 2013):**
+## The Nonce Mystery (September 2013)
 Lerner discovered that the entity's nonce values were restricted to specific byte ranges — the least significant byte was limited to values [0..9] ∪ [19..58], roughly 50 out of 256 possible values. This nonce space reduction explained why the entity appeared to mine ~4.3× faster than other miners.
 
-**The "Patoshi" Pattern (April 2019):**
+## The "Patoshi" Pattern (April 2019)
 In "The Return of the Deniers and the Revenge of Patoshi," Lerner coined the term "Patoshi" for the pattern and updated his estimate to **~22,000 blocks / ~1.1 million BTC**. He provided new evidence: zero timestamp inversions between consecutive Patoshi blocks (versus 224 inversions among non-Patoshi blocks), proving the miner used a single PC clock.
 
-**The Mining Machine (August 2020):**
+## The Mining Machine (August 2020)
 In "The Patoshi Mining Machine," Lerner concluded that Patoshi used a **single high-end CPU with multi-threading** — not 50+ networked computers. The nonce space was divided into 5 subranges scanned by parallel threads, using a modified mining client (not stock Bitcoin v0.1) with likely SSE2 optimizations.
 
 The Patoshi analysis remains one of the most significant pieces of blockchain forensics ever conducted. It established that Satoshi Nakamoto accumulated roughly 5% of Bitcoin's total 21 million supply — and chose never to spend it.

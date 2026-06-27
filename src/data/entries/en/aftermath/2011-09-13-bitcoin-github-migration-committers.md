@@ -48,18 +48,18 @@ relatedEntries:
 
 The Bitcoin GitHub repository (`bitcoin/bitcoin`) was created on **December 19, 2010**, while the [SourceForge SVN repository](/BitcoinArchive/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/) was still in active use. For approximately nine months, development occurred in parallel across both platforms. On September 13, 2011, [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) made the final SVN commit (r252) with the message: "Development has moved to github."
 
-**Migration timeline:**
+## Migration timeline
 - **2010-12-19:** GitHub repository `bitcoin/bitcoin` created — the same day Andresen [publicly assumed project management](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/).
 - **2011-01 to 2011-09:** Parallel development on both SVN and GitHub.
 - **2011-09-13:** Final SVN commit (r252) with the message "Development has moved to github." GitHub becomes the sole repository.
 
-**The migration decision (what the documented record shows):**
+## The migration decision (what the documented record shows)
 
 What the archive can confirm: (1) the GitHub repository `bitcoin/bitcoin` was created on December 19, 2010; (2) the nine-month parallel-development period occurred; (3) the final SVN commit on September 13, 2011 carried the message "Development has moved to github."; (4) no public BitcoinTalk thread or bitcoin-list mailing list message that explicitly discusses or announces the migration has been recovered for this archive.
 
 What the archive cannot directly confirm: whether the migration decision was deliberated privately among multiple developers, whether community consultation occurred through channels not preserved in this archive (private email, IRC, etc.), or whether the migration was a unilateral developer-side decision. Inferring "unilateral decision" or "no community deliberation" from the absence of recovered public discussion is plausible but is reasoning from absence of evidence rather than from direct documentary proof. If documentation of an explicit public announcement or private deliberation surfaces in future research, this entry should be updated to reflect it.
 
-**GitHub commit access grants in 2011:**
+## GitHub commit access grants in 2011
 
 With Satoshi's departure ([last known email: April 26, 2011](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/)), Gavin Andresen — who held both the repository access and the network alert key — began granting commit access to trusted contributors. The following developers received GitHub commit access in 2011:
 

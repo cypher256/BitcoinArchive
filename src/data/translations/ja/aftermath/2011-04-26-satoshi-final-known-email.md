@@ -52,7 +52,7 @@ translationStatus: complete
 
 [サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の最後の既知のメールは、2011年4月に送られた 2 通のメールである。
 
-**2011年4月23日 — マイク・ハーン宛：**
+## 2011年4月23日 — マイク・ハーン宛
 
 サトシは、2009年4月からメールを交わしていた Google エンジニアの[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)に[こう書いた](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)。
 
@@ -61,7 +61,7 @@ translationStatus: complete
 
 ハーンの BitcoinJ プロジェクトが代替クライアントとして開発され続けることへの期待も述べた。
 
-**2011年4月26日 — ギャビン・アンドレセン宛：**
+## 2011年4月26日 — ギャビン・アンドレセン宛
 
 3日後、サトシは[ギャビン・アンドレセンに、最後の既知のメールとされるものを送った](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)。件名は「alert key」だった。
 

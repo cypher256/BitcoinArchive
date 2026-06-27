@@ -44,7 +44,7 @@ relatedEntries:
 
 On September 30, 2021, Maria Oskarsdottir and Jacky Mallett of Reykjavik University's Department of Computer Science published "Strangely mined bitcoins: Empirical analysis of anomalies in the bitcoin blockchain transaction network" in PLOS ONE (DOI: 10.1371/journal.pone.0258001). This was the first peer-reviewed academic paper to formally analyze the [Patoshi mining pattern](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) originally identified by [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) on his blog in 2013.
 
-**Two distinct anomalies identified:**
+## Two distinct anomalies identified
 
 The paper identified two independent nonce anomalies in Bitcoin's coinbase transactions:
 
@@ -52,17 +52,17 @@ The paper identified two independent nonce anomalies in Bitcoin's coinbase trans
 
 2. **Z Anomaly (Zerononce anomaly):** The penultimate position of the nonce shows an abnormal number of zeros in the first 18 months of mining.
 
-**Critical finding — the first 64 blocks:**
+## Critical finding — the first 64 blocks
 
 The paper's most significant finding for the Patoshi debate was that **the extended Patoshi anomaly in the first nibble of the nonce appears in ALL of the first 64 blocks mined**. This is notable because Lerner's original 2013 ExtraNonce-based classification identified Block 12 as the first block mined by a "different user" based on its divergent ExtraNonce slope.
 
 The PLOS ONE finding means Block 12 exhibits the Patoshi nonce signature despite having a different ExtraNonce pattern. This is most consistently explained by [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) running both the custom Patoshi mining software and the standard [Bitcoin v0.1 client](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) simultaneously — the nonce partitioning signature persists across both configurations, while the ExtraNonce increment behavior differs.
 
-**Scale of the anomalies:**
+## Scale of the anomalies
 
 The paper found that approximately one third of all coins mined at the first difficulty level came from blocks exhibiting these anomalies. Across the full study period extending through 2018, well over 3 million bitcoins were obtained from blocks with distinguishing nonce features (this larger number includes the Z anomaly and extended periods beyond the original Patoshi analysis scope).
 
-**Significance:**
+## Significance
 
 As the first peer-reviewed academic study of Patoshi mining, this paper elevated the discussion from blog posts and community analysis to formal academic literature. Its finding that all 64 initial blocks share the Patoshi nonce fingerprint strengthened the case that the early non-Patoshi blocks (by ExtraNonce classification) were still mined by Satoshi, not by other participants.
 

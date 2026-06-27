@@ -62,7 +62,7 @@ This announcement closes the public-facing arc of the leadership transition. The
 
 Satoshi continued private correspondence with [Mike Hearn](/BitcoinArchive/participants/mike-hearn/) into [late December](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode/), but his public BitcoinTalk activity had ended on December 12. The April 26, 2011 [final email to Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) (alert-key handover) closed the private side four months later.
 
-**How the Lead Maintainer status was established (editorial reading):**
+## How the Lead Maintainer status was established (editorial reading)
 
 No formal governance process — maintainer election, community vote, organized leadership-confirmation thread — has been recovered for this archive. The Bitcoin community in late 2010 (a few hundred forum participants) did not have such structures.
 

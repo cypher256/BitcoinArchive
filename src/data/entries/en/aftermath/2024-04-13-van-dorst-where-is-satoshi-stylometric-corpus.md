@@ -40,13 +40,13 @@ relatedEntries:
 
 On April 13, 2024, **Bas van Dorst** released ["Where is Satoshi?"](https://github.com/basvandorst/where-is-satoshi) — a large-scale, open-source stylometric comparison of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s writing corpus against more than 75,000 cryptography mailing-list authors and over 70,000 Reddit /r/Bitcoin commenters. The project is, by corpus size and by data-release transparency, the most rigorous numerical multi-candidate stylometric resource on Satoshi authorship in the public record.
 
-**Corpus:**
+## Corpus
 
 - **Mailing-list corpus:** 500,000+ posts across 10+ cryptography-related mailing lists, covering 75,000+ authors writing between 1992 and 2000.
 - **Reddit corpus:** 7,500,000+ comments from /r/Bitcoin, covering 70,000+ authors between 2005 and 2019.
 - **Satoshi corpus:** 81,500 words across the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/), the [BitcoinTalk forum posts](/BitcoinArchive/participants/satoshi-nakamoto/), [private email correspondence](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), and code comments from the [v0.1 source release](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/).
 
-**Stylometric metrics:**
+## Stylometric metrics
 
 For every (author, time-window) pair the project computes:
 
@@ -61,7 +61,7 @@ For every (author, time-window) pair the project computes:
 | Personal pronoun usage | First-person singular vs. plural, presence/absence patterns |
 | British vs. American spelling variants | Including the British-spelling tells in Satoshi's writing that have driven multiple identification hypotheses |
 
-**Data release:**
+## Data release
 
 The complete numerical output is released as downloadable spreadsheets:
 
@@ -70,7 +70,7 @@ The complete numerical output is released as downloadable spreadsheets:
 
 This is the largest publicly-released numerical dataset of Satoshi-vs-candidates stylometric comparison. It is the only resource in the field that allows independent re-analysis: a researcher with a different distance metric or a different candidate-pruning strategy can run their own ranking against the same underlying numbers.
 
-**Author's framing:**
+## Author's framing
 
 Van Dorst explicitly refrains from naming a leading candidate:
 
@@ -84,7 +84,7 @@ He is also transparent about personal interest:
 
 The combination — large dataset, full numerical release, no identification push — is methodologically more rigorous than the narrative-driven stylometric pieces that have named specific candidates ([Skye Grey 2013 for Szabo](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/), the [Aston University 2014 study for Szabo](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/), Cafiero's analysis in [Carreyrou's 2026 NYT investigation for Adam Back](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)).
 
-**Methodological caveats stated by the author:**
+## Methodological caveats stated by the author
 
 - "High correlation only shows similar language patterns → high correlation does not imply causation." Two authors writing about the same technical subject in the same era will share vocabulary and sentence structures regardless of whether they are the same person.
 - N-gram analysis is complicated by terminology emerging only after Bitcoin's 2009 release. Comparisons to post-2010 writing on cryptocurrency topics can be confounded by Bitcoin-specific vocabulary that any informed writer will have adopted.
@@ -93,7 +93,7 @@ The combination — large dataset, full numerical release, no identification pus
 
 These caveats are the same structural limitations that constrain all stylometric Satoshi-identification work; the project's value is in stating them explicitly and providing the raw numerical data that lets a critic test them.
 
-**Position in the stylometric record:**
+## Position in the stylometric record
 
 Cross-referencing this corpus against the named-candidate stylometric tradition:
 
@@ -106,7 +106,7 @@ Cross-referencing this corpus against the named-candidate stylometric tradition:
 
 The fact that van Dorst declines to publicly name a candidate while the narrative-driven studies do — and the fact that the named-candidate studies, when read alongside the Bitcoin Institute reanalysis, mostly converge on Szabo (3 of 4) with Cafiero / Carreyrou as the Adam Back outlier — is itself a methodological observation: stylometric Satoshi identification is sensitive to corpus selection, distance metric, and candidate pre-selection, but the most persistent signal across methods places Szabo highest among the named candidates.
 
-**Per-candidate values from this corpus (Bitcoin Institute reanalysis):**
+## Per-candidate values from this corpus (Bitcoin Institute reanalysis)
 
 Although van Dorst declines to publish a ranking, the underlying numerical data is downloadable and the named identity-hypothesis candidates can be located in it. The [Bitcoin Institute reanalysis (May 2026)](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) extracts Burrows' Delta values for the five most-cited Satoshi-identity named candidates from the published `comparison.xlsx`, ranks each against the 12,739 authors in the corpus with at least 10 chunks of writing, and reads van Dorst's "I'm not 100% sure" caveat against the data: Nick Szabo leads the named group at top 4.67%, Hal Finney and Adam Back follow within 0.85 standard deviations, and 594 unnamed authors rank closer than Szabo — most of the corpus' apparent top matches turn out on inspection to be noise (e-commerce accounts, anonymous remailer relays, disposable accounts) rather than signal. See the [analysis entry](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) for the per-candidate table, the corpus' top-20 noise discussion, and the four-reading interpretation of why van Dorst's silence on names is the data-honest position.
 

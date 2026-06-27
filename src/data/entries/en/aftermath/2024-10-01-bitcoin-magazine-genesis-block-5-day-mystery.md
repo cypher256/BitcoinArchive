@@ -34,11 +34,11 @@ translationStatus: complete
 
 On October 1, 2024, Bitcoin Magazine's Pete Rizzo published an investigation into a long-standing technical mystery: the approximately 5 days and 8 hours that elapsed between the [Genesis Block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/) (Block 0, January 3, 2009 at 18:15:05 UTC) and Block 1 (January 9, 2009 at 02:54:25 UTC).
 
-**The mystery:**
+## The mystery
 
 Under normal mining conditions with [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) as the sole miner, the expected time between blocks would have been approximately 10 minutes. Yet the gap between Block 0 and Block 1 is roughly 750 times longer than expected. No blocks from this interval exist on the blockchain.
 
-**Prevailing theories:**
+## Prevailing theories
 
 1. **Deliberate reset** — Satoshi mined the Genesis Block, tested the system, then reset and restarted the network fresh on January 9. The Genesis Block's timestamp may reflect when it was hardcoded into the source code rather than when mining actually began. That pre-release test genesis blocks existed is directly documented: [SerHack identified an alternative pre-release genesis block dated September 10, 2008](/BitcoinArchive/entries/aftermath/2022-10-06-serhack-alternative-genesis-block/) in source code Satoshi shared privately.
 

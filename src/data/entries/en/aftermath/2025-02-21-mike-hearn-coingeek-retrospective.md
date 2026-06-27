@@ -43,13 +43,11 @@ quotes:
 
 In a CoinGeek Weekly Livestream interview, [Mike Hearn](/BitcoinArchive/participants/mike-hearn/) — one of the few people who [corresponded directly with](/BitcoinArchive/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/) [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) — offered rare personal reflections on Bitcoin's creator and the project's evolution.
 
-**On Satoshi's personality:**
-
 Hearn described Satoshi as someone interested in "experimenting and discussing possibilities." Satoshi "was always happy to explain how Bitcoin could be used for other people's ideas," suggesting an open, collaborative mindset rather than a rigid ideologue.
 
 Hearn noted that Satoshi was "interested in payments and novel uses for the technology" — not a "gold bug or Hayek fan" as many in the later community would portray him.
 
-**On why Satoshi disappeared:**
+On why Satoshi disappeared, Hearn was blunt:
 
 <!-- audit:quote-skip -->
 > "When evangelical personalities showed up, he appeared to grow frustrated and understandably disappeared."
@@ -74,7 +72,7 @@ Seven days after Satoshi's reply, on December 12, 2010, his [final public Bitcoi
 
 Read against Hearn's 2025 reflection, the sequence is documentary evidence rather than coincidence: a primary-source record of Satoshi's exhaustion with evangelical pressure. RHorning was one voice among many — BitcoinTalk in 2010-2011 carried a steady stream of the same register (gold-bug, Hayek-purist, anarcho-capitalist, movement-evangelist framings of Bitcoin as a vehicle rather than an experiment). Hearn's later regrets in this same interview — the "Bitcoin Core" naming, the Bitcoin Foundation handling — point to the same pattern: resistance to turning an experiment into a movement.
 
-**On what he would have done differently:**
+Asked what he would have done differently, Hearn started with the social side:
 
 <!-- audit:quote-skip -->
 > "The tech is still interesting, but I now have a greater appreciation for the social side of things. Solving the computer science problems is not enough."

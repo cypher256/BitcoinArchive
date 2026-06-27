@@ -46,7 +46,7 @@ translationStatus: complete
 
 2015 年 5 月 15 日、*ニューヨーク・タイムズ*は同紙の暗号通貨記者ナサニエル・ポパーによる「サトシ・ナカモトの謎とビットコイン誕生を読み解く」を掲載した。本記事はポパーの著書『デジタル・ゴールド：マネー再発明を試みた変人と億万長者たちの内幕』（Harper、同月刊行）からの抜粋であり、サイファーパンク時代の暗号学者で Bit Gold（1998 年構想、2005 年 12 月 29 日に Unenumerated ブログで完全公開）を設計し、1994 年に「スマートコントラクト」という用語を命名した[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)仮名の中の人物として最も可能性が高い、と結論づけた。
 
-**取材の方法：**
+## 取材の方法
 
 ポパーは本書執筆におよそ 2 年を費やし、初期のビットコインおよびサイファーパンク社会の数十名の関係者に取材した。記事に提示されたサボ特定の論理は、主に以下の三本柱から成る：
 
@@ -54,11 +54,11 @@ translationStatus: complete
 - **文体および知的指紋。** ポパーは、先行する匿名ブロガーの Skye Grey による調査（2013 年 12 月）に依拠しつつ、Unenumerated ブログおよび初期メーリングリスト投稿でのサボの執筆を自身で読み込み、サトシのコーパスとの間に表現・参照・分析的語調の繰り返し重なりがあると報告した。
 - **博識家プロフィールの整合。** サボの計算機科学・暗号学・金融経済学（オーストリア学派の貨幣理論にも明示的に取り組んでいた）・法学にまたがる組み合わせは、サトシの執筆および実装コードに見える異例に広い技能範囲と整合した。
 
-**サボの否定：**
+## サボの否定
 
 ポパーは取材中にサボに接触した。サボはメールで特定を否定した。否定はその後の Wikipedia 各種記事およびジャーナリズムの追跡記事で広く引用されている。否定の趣旨には、デジタル現金問題に知的に取り組んでおり、かつ実装の技術的素養もあったとサボ自身が考える候補は他にいた — 具体的には[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)と[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) — という主張が含まれていた。
 
-**反響：**
+## 反響
 
 ポパーの記事は、サボ＝サトシ仮説がサイファーパンク社会内の議論（[Skye Grey の 2013 年 12 月の LikeInAMirror 記事](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)、[2014 年 4 月の Aston University による法言語学的研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)）から、米国主流大手紙へ越境した転換点となった。書籍の『デジタル・ゴールド』はビットコイン創成期の標準的ジャーナリズム史として定着した。本書がサボを最も妥当なサトシ候補と位置づけた枠組みは、以後継続して参照されており、以下の媒体を含む：
 
@@ -66,7 +66,7 @@ translationStatus: complete
 - ハンナ・マーフィー / 『Fortune』『Is There Any Doubt This Man Created Bitcoin?』（2018 年 10 月 31 日）。
 - ティム・フェリス・ショー第 244 回（2017 年 6 月 4 日）— 公開記録上最も長尺なサボ単独音声インタビュー。
 
-**本記事に直接関係する既収蔵のアーカイブ資料：**
+## 本記事に直接関係する既収蔵のアーカイブ資料
 
 本アーカイブは、ポパーの特定とサボの否定の双方に直接関わる一次資料を保持している：
 
@@ -74,7 +74,7 @@ translationStatus: complete
 - [サボの 2011 年 5 月 28 日 Unenumerated 投稿『Bitcoin, what took ye so long?』](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) — その中でサボは「ナカモトは私の設計が抱えていた重要な安全上の欠陥を改善した（Nakamoto improved a significant security shortcoming that my design had）」と書いており、Bit Gold の設計を自身の功として認めつつ、ナカモトを三人称で論じている。
 - [サボのプロフィールページ](/BitcoinArchive/ja/participants/nick-szabo/) — Unenumerated および Bit Gold の全記録を含む。
 
-**方法論的な位置づけ：**
+## 方法論的な位置づけ
 
 ポパーの特定は、先行する Skye Grey と同様、文体計量的・状況証拠的なものであり、法的鑑定的なものではない。コード・鍵・メールメタデータ・資金経路のいずれもサボに紐づけられていない。本仮説は概念的近接（Bit Gold → ビットコイン）と、執筆および経歴上のパターン一致に依拠する。サボの否定は名指しされた本人の公式見解である。特定に対する構造的な反論は[分析エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)で示されている。
 

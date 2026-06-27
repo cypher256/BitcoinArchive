@@ -45,11 +45,11 @@ quotes:
 
 On December 4, 2015, David A. Harding and Peter Todd published BIP 125: "Opt-in Full Replace-by-Fee Signaling." The proposal established a standard for Bitcoin transactions to signal their willingness to be replaced by higher-fee versions while still unconfirmed — formalizing a concept that Satoshi Nakamoto had first described five years earlier.
 
-**Origin in Satoshi's design:**
+## Origin in Satoshi's design
 
 The BIP's rationale explicitly traces the concept to Nakamoto's original Bitcoin implementation, which included a transaction replacement mechanism using nSequence numbers. Satoshi described this concept on BitcoinTalk in December 2010, explaining how senders could update transactions with higher fees. The feature was later removed from Bitcoin Core due to denial-of-service concerns.
 
-**The December 2010 connection:**
+## The December 2010 connection
 
 On December 10, 2010, [Peter Todd](/BitcoinArchive/participants/peter-todd/) (then posting as ["retep"](/BitcoinArchive/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/)) replied to Satoshi's description of transaction replacement with a technical correction:
 
@@ -58,14 +58,14 @@ On December 10, 2010, [Peter Todd](/BitcoinArchive/participants/peter-todd/) (th
 
 This was Todd's second-ever post on BitcoinTalk, made three days after registration. [Satoshi's last public forum post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) came two days later. Five years afterward, Todd formalized the very concept Satoshi had been describing.
 
-**How BIP 125 works:**
+## How BIP 125 works
 
 Transactions signal replaceability by setting any input's nSequence number below (0xffffffff - 1). Replacement transactions must: only have unconfirmed inputs from original transactions, pay higher absolute fees, meet minimum relay fee rates, and evict no more than 100 transactions total.
 
-**Controversy:**
+## Controversy
 
 RBF was a deeply contentious change. Critics argued it broke "zero-confirmation" transactions that merchants relied on. Supporters countered that zero-confirmation transactions were never truly secure and that RBF aligned with Bitcoin's fee market design. The opt-in approach was a compromise — only transactions explicitly signaling replaceability could be replaced.
 
-**Significance:**
+## Significance
 
 BIP 125 completed what Satoshi had started. The original transaction replacement was removed as unsafe; Todd's opt-in version made it practical. Whether this represents a developer finishing a predecessor's work or — as the [HBO documentary "Money Electric"](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) controversially suggested — the same mind returning to complete an unfinished design, remains an open question.

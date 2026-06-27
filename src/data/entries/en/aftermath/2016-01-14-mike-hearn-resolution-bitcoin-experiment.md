@@ -49,16 +49,14 @@ In the post, Hearn declared:
 
 He announced that he had sold all of his bitcoins and was leaving the project entirely. At the time, Bitcoin was trading at approximately $400.
 
-**On why Bitcoin had failed:**
+On why it had failed, Hearn was blunt:
 
 <!-- audit:quote-skip -->
 > "What was meant to be a new, decentralised form of money that lacked 'systemically important institutions' and 'too big to fail' has become something even worse: a system completely controlled by just a handful of people."
 
 Hearn argued that an "entirely artificial capacity cap of one megabyte per block, put in place as a temporary kludge a long time ago, has not been removed," and that the failure to increase the block size had rendered Bitcoin incapable of scaling.
 
-**On Satoshi's original vision for scaling:**
-
-Hearn quoted Satoshi's response to early bandwidth concerns:
+On scaling, Hearn quoted Satoshi's response to early bandwidth concerns:
 
 <!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
@@ -66,9 +64,7 @@ Hearn quoted Satoshi's response to early bandwidth concerns:
 
 He also noted that Satoshi had told him directly that Bitcoin "never really hits a scale ceiling."
 
-**On the leadership handover:**
-
-Hearn described how Satoshi's departure left an unplanned governance vacuum:
+On the handover, Hearn described how Satoshi's departure left an unplanned governance vacuum:
 
 <!-- audit:quote-skip -->
 > "When Satoshi left, he handed over the reins of the program we now call Bitcoin Core to [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/), an early contributor."
@@ -81,11 +77,11 @@ After praising Gavin's judgement — calling it one of the reasons Hearn had qui
 <!-- audit:quote-skip -->
 > "So the first thing Gavin did was grant four other developers access to the code as well. These developers were chosen quickly in order to ensure the project could easily continue if anything happened to him. They were, essentially, whoever was around and making themselves useful at the time."
 
-**Bitcoin XT:**
+## Bitcoin XT
 
 Prior to this post, Hearn had developed Bitcoin XT — an alternative Bitcoin client that proposed increasing the block size from 1 MB to 8 MB initially, doubling every two years until reaching 8 GB. The project failed to gain sufficient adoption, which Hearn cited as evidence that the governance model was broken.
 
-**Aftermath:**
+## Aftermath
 
 The blog post caused an immediate media firestorm. Bitcoin's price briefly dropped, and the post became a widely cited criticism of Bitcoin's governance. Hearn subsequently joined R3, a blockchain consortium, where he co-led the development of Corda, an enterprise distributed ledger platform.
 

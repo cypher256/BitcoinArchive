@@ -55,7 +55,7 @@ On November 26, 2020, CoinDesk published "Previously Unpublished Emails of Satos
 
 **Chain of custody:** In March 2014, Fran Finney (Hal's widow) sent journalist Nathaniel Popper files from Hal's personal computer for his book *Digital Gold*. Popper later shared the email files with Kapilkov. CoinDesk confirmed the chain of custody directly with Fran Finney.
 
-**Email 1: [November 19, 2008](/BitcoinArchive/entries/aftermath/2008-11-19-finney-to-satoshi-scalability/) (Finney → Satoshi)**
+## Email 1: [November 19, 2008](/BitcoinArchive/entries/aftermath/2008-11-19-finney-to-satoshi-scalability/) (Finney → Satoshi)
 Finney thanked Satoshi for corrections and asked about network scalability:
 
 <!-- quote: q1 -->
@@ -63,7 +63,7 @@ Finney thanked Satoshi for corrections and asked about network scalability:
 
 This was during the pre-release code review period, two months before Bitcoin's public launch.
 
-**Email 2: [January 8, 2009](/BitcoinArchive/entries/aftermath/2009-01-08-satoshi-to-finney-release/) (Satoshi → Finney)**
+## Email 2: [January 8, 2009](/BitcoinArchive/entries/aftermath/2009-01-08-satoshi-to-finney-release/) (Satoshi → Finney)
 Subject: "Bitcoin v0.1." Sent Thursday, January 8, 2009, at 20:54:55 PST — just hours after the [public announcement on the Cryptography Mailing List](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/):
 
 <!-- quote: q2 -->
@@ -71,7 +71,7 @@ Subject: "Bitcoin v0.1." Sent Thursday, January 8, 2009, at 20:54:55 PST — jus
 
 This email was sent from `satoshi@vistomail.com`.
 
-**Email 3: [January 10 (or 12), 2009](/BitcoinArchive/entries/aftermath/2009-01-10-satoshi-to-finney-connections/) (Satoshi → Finney)**
+## Email 3: [January 10 (or 12), 2009](/BitcoinArchive/entries/aftermath/2009-01-10-satoshi-to-finney-connections/) (Satoshi → Finney)
 A follow-up after Bitcoin's launch:
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -80,7 +80,7 @@ A follow-up after Bitcoin's launch:
 
 The phrase "from where I am" is examined alongside the cadence of Satoshi's launch-week activity in a [forensic reading of his launch-period environment](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/).
 
-**The Timezone Mystery:**
+## The Timezone Mystery
 Satoshi's January 2009 email headers showed a timezone **eight hours ahead of GMT (UTC+8)** — inconsistent with Japan's UTC+9 offset. This initially fueled speculation about Satoshi's location. However, Doncho Karaivanov of Chain Bulletin argued the UTC+8 timestamp came from AnonymousSpeech.com's email server (based in Tokyo since 1996), not Satoshi's local machine. When using webmail, the Date header timezone reflects the server, not the user's location.
 
 Finney himself recalled this email correspondence with Satoshi in his 2013 essay ["Bitcoin and Me"](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/), where he described reporting bugs to Satoshi in the days following the v0.1 release.

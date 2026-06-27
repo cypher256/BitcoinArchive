@@ -34,17 +34,17 @@ relatedEntries:
 
 On October 1, 2014, Peter Todd proposed BIP 65, introducing a new opcode called OP_CHECKLOCKTIMEVERIFY to Bitcoin's scripting system. The proposal redefined the existing NOP2 opcode to enable time-locked transaction outputs — outputs that cannot be spent until a specified block height or timestamp.
 
-**How it works:**
+## How it works
 
 The opcode compares a value on the script stack against the transaction's nLockTime field. If the nLockTime hasn't been reached, the script fails and the transaction is rejected. This allows scripts to enforce that funds remain locked until a future point in time.
 
-**Use cases:**
+## Use cases
 
 - **Escrow with delayed access:** A lawyer in a three-party escrow arrangement can only access funds after a timeout, preventing immediate theft
 - **Two-factor wallets:** Services holding coins in 2-of-2 multisig can implement automatic refunds if the service disappears
 - **Payment channels:** Non-interactive refund mechanisms that don't rely on transaction malleability workarounds
 - **Fund freezing:** Users can provably lock bitcoins until a specified time, reducing duress or confiscation risks
 
-**Significance:**
+## Significance
 
 BIP 65 was deployed as a consensus-level soft fork. Its time-locked outputs became a building block for non-interactive payment channels — the mechanism the Lightning Network would later be built on.

@@ -34,7 +34,7 @@ On August 6, 2024, the cybersecurity researcher known as Forensicxs published "B
 
 **Scope:** Forensicxs analyzed the Bitcoin v0.1 codebase as **31,794 lines** across 31 files, written in C++ and released under the MIT X11 license. Note that this archive's own source-code analysis treats the v0.1 C++/header line count from the local primary source as approximately 19,901 lines, growing to 31,909 lines by v0.3.19. The 31,794 figure is therefore Forensicxs's count for that article and not this archive's reference value (the difference reflects which files / blank lines / comments / wxWidgets headers each count includes).
 
-**Key findings:**
+## Key findings
 
 - **Code distribution:** The wxWidgets GUI implementation accounted for approximately 18,000 lines (the largest single component). Blockchain operations, database management, networking, and scripting comprised the remaining ~13,000 lines.
 

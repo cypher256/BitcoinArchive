@@ -56,7 +56,7 @@ translationStatus: complete
 
 **入手経路:** 2014年3月、フラン・フィニー（ハルの未亡人）がジャーナリストのナサニエル・ポッパーに著書『Digital Gold』のためハルのパーソナルコンピューターからファイルを送付。ポッパーはそのメールファイルをカピルコフと共有した。CoinDesk はフラン・フィニーに直接確認した。
 
-**メール 1：[2008年11月19日](/BitcoinArchive/ja/entries/aftermath/2008-11-19-finney-to-satoshi-scalability/)（フィニー → サトシ）**
+## メール 1：[2008年11月19日](/BitcoinArchive/ja/entries/aftermath/2008-11-19-finney-to-satoshi-scalability/)（フィニー → サトシ）
 フィニーはサトシに修正への感謝を述べ、ネットワークの拡張性について質問した：
 
 <!-- quote: q1 -->
@@ -64,7 +64,7 @@ translationStatus: complete
 
 これはビットコイン公開ローンチの 2 か月前、リリース前のコードレビュー期間中のことだった。
 
-**メール 2：[2009年1月8日](/BitcoinArchive/ja/entries/aftermath/2009-01-08-satoshi-to-finney-release/)（サトシ → フィニー）**
+## メール 2：[2009年1月8日](/BitcoinArchive/ja/entries/aftermath/2009-01-08-satoshi-to-finney-release/)（サトシ → フィニー）
 件名：「Bitcoin v0.1」。2009年1月8日木曜日20:54:55 PST — [暗号学メーリングリストでの公開発表](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)のわずか数時間後に送信：
 
 <!-- quote: q2 -->
@@ -72,7 +72,7 @@ translationStatus: complete
 
 このメールは`satoshi@vistomail.com`から送信された。
 
-**メール 3：[2009年1月10日（または 12日）](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/)（サトシ → フィニー）**
+## メール 3：[2009年1月10日（または 12日）](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/)（サトシ → フィニー）
 ビットコインローンチ後のフォローアップ：
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -81,7 +81,7 @@ translationStatus: complete
 
 「今いる場所」という表現は、リリース週におけるサトシの公開活動の濃密さと併せて、[サトシのリリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)で検討されている。
 
-**タイムゾーンの謎：**
+## タイムゾーンの謎
 サトシの 2009年1月のメールヘッダーは GMT の **8時間先（UTC+8）** のタイムゾーンを示していた — 日本の UTC+9 のオフセットとは不一致。これはサトシの所在地に関する推測を呼んだ。しかし Chain Bulletin のドンチョ・カライヴァノフは、UTC+8 のタイムスタンプはサトシのローカルマシンではなく AnonymousSpeech.com のメールサーバー（1996年以来東京に拠点）からのものだと主張した。ウェブメール使用時、Date ヘッダーのタイムゾーンはユーザーの所在地ではなくサーバーの場所を反映する。
 
 フィニー自身は、 2013 年のエッセイ[「Bitcoin and Me」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/)でこのサトシとのメールのやり取りを回想し、 v0.1 リリース後の数日間にバグを報告したことを述べている。
