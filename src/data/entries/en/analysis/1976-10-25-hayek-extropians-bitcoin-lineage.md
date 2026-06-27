@@ -66,7 +66,7 @@ inlineLinkKeywords:
 
 Bitcoin's 2009 launch is sometimes read against a single immediate cause — the September 2008 financial crisis and the *Times* "Chancellor on brink of second bailout" headline embedded in the [genesis block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/). That reading captures the proximate symbolism but not the longer ideological span the system was built into. A separate intellectual lineage — Friedrich Hayek's 1976 *Denationalisation of Money*, the 1990s Extropian and cypherpunk circles that kept Hayek's competing-currency framing alive, and Bitcoin's 2009 realisation — predates the crisis by more than three decades and is documented in independent secondary sources.
 
-This entry traces that lineage carefully. It separates **the ideological transmission** (well-supported in the secondary literature) from **direct individual-to-individual influence** (much more constrained by the primary-source record). The companion entry [Satoshi was not a cypherpunk](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) addresses Satoshi's intellectual position relative to the cypherpunk channel of that transmission; this entry adds the Hayek-to-Extropian leg that sits earlier in the chain.
+The companion entry [Satoshi was not a cypherpunk](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) addresses Satoshi's intellectual position relative to the cypherpunk channel of that transmission; this entry adds the Hayek-to-Extropian leg that sits earlier in the chain.
 
 ## 1. Hayek 1976: the competing-currency thesis
 

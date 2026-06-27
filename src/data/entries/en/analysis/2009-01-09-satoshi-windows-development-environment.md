@@ -201,7 +201,7 @@ Version: GnuPG v1.4.7 (MingW32) - WinPT 1.2.0
 
 ## 5. Cypherpunk-era context — limited claims
 
-Was a Windows-only stack unusual for an individual cryptographer in 2008–2009? The Archive does not contain a systematic survey of operating-system preferences in the cypherpunks community, and this entry will not pretend to settle the question. What it can do is collect what the Archive records for several adjacent figures:
+Was a Windows-only stack unusual for an individual cryptographer in 2008–2009? The Archive does not contain a systematic survey of operating-system preferences in the cypherpunks community. What it can do is collect what the Archive records for several adjacent figures:
 
 - **Hal Finney** worked at PGP Corporation (later Symantec) until his 2011 retirement. PGP / GnuPG ecosystem development of that era was multi-platform but with heavy Windows orientation. His [2004 Reusable Proof-of-Work (RPOW)](/BitcoinArchive/participants/hal-finney/) targeted IBM 4758 secure coprocessors with Windows-side host code. Finney is one of the more directly comparable cases to Satoshi's profile.
 

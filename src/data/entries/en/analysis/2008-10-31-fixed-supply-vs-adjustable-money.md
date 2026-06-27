@@ -67,10 +67,7 @@ inlineLinkKeywords:
   - "hard money"
 ---
 
-How much new money should exist next year, and who decides? Bitcoin's answer — a hard cap of about 21 million coins, written into consensus code and enforced by every full node — is one specific position in a debate that long predates Bitcoin, runs through the cypherpunk monetary-design literature of the 1990s, and continues today across both the cryptocurrency landscape and the central-banking world. This entry reads the position as one answer among several, alongside the alternatives that existed before it and the variants that emerged after.
-
-The entry takes no view on whether Bitcoin's choice was correct. It records what the choice was, what the documented critique of it looks like, what fiat money does instead, and how the post-2009 cryptocurrency landscape distributed itself across the same axis.
-
+How much new money should exist next year, and who decides? Bitcoin's answer — a hard cap of about 21 million coins, written into consensus code and enforced by every full node — is one specific position in a debate that long predates Bitcoin, runs through the cypherpunk monetary-design literature of the 1990s, and continues today across both the cryptocurrency landscape and the central-banking world.
 ## 1. The question: who and how decides the money supply
 
 Any monetary system has to answer two questions:

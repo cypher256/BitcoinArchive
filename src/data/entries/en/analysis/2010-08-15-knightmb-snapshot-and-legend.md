@@ -35,9 +35,6 @@ relatedEntries:
 On August 15, 2010, Bitcoin's blockchain briefly contained 184 billion BTC — about nine thousand times the system's intended total supply. The exploit took roughly five hours to neutralize, and one of the things the recovery rested on was a clean snapshot of the chain held by a forum regular who went by the name "knightmb."
 
 Within hours that snapshot would be embedded in the recovery patch. Within years the man behind the handle would be embedded — in secondary sources, at least — in a different chain of events: a federal extortion conviction in Tennessee, a still-circulating claim that he had once held a tenth of all Bitcoin, and a public identification that no court document and no first-person statement actually confirms. This entry collects what the Archive's primary record shows about knightmb, and what the secondary record has done with him.
-
-Each section flags its evidentiary weight: items drawn from BitcoinTalk posts and other primary sources are described as fact; items drawn from secondary aggregators or court records that don't directly link to the handle are documented as such, with counter-evidence where the Archive has it.
-
 ## 1. The snapshot that saved Bitcoin's worst day
 
 The single sentence that anchors knightmb's place in the technical record sits in [Gavin Andresen's emergency patch announcement on August 15, 2010](/BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/):
@@ -129,7 +126,7 @@ This Archive's [biographical entry on knightmb](/BitcoinArchive/participants/kni
 | Biographical detail in knightmb's BitcoinTalk posts mapping to Tennessee or a specific US resident | Across the catalogued set: no real name, no city, no employer |
 | Circumstantial points cited by secondary sources | US-based + early Bitcoin (matches both); 2012 Bitcoin-specific ransom demand (era-unusual); alleged Timekoin association (not documented with primary sources) |
 
-The reader can weigh whether the circumstantial chain is strong enough to count as an identification, or whether — as in the 10%-holder case — secondary-source convergence has outpaced the primary-source evidence.
+Whether the circumstantial chain is strong enough to count as an identification, or whether — as in the 10%-holder case — secondary-source convergence has outpaced the primary-source evidence, is laid out in the evidence above.
 
 ## 6. Timekoin and after
 

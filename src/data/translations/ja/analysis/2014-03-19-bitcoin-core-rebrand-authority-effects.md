@@ -54,7 +54,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-本エントリは一つの出来事 — 2013 年 12 月 16 日にマージされた[プルリクエスト #3408](https://github.com/bitcoin/bitcoin/pull/3408) (Bitcoin-Qt から「Bitcoin Core」への改名) と、2014 年 3 月 19 日にバージョン 0.9.0 として公開された改名 — を中心に文書化された記録を整理し、後の三つの証言 ([ハーン 2016](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)、[ハーン 2024 COPA](/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/)、[ハーン 2025 CoinGeek](/BitcoinArchive/ja/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/)) と照合する。当時は曖昧さの解消として提示された改名が、後により重要な意味を持つようになったかを問う。
+2013 年 12 月 16 日、[プルリクエスト #3408](https://github.com/bitcoin/bitcoin/pull/3408) が Bitcoin-Qt を「Bitcoin Core」に改名し、2014 年 3 月 19 日にバージョン 0.9.0 として公開された。当時は曖昧さの解消として提示されたこの改名は、後の三つの証言 ([ハーン 2016](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)、[ハーン 2024 COPA](/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/)、[ハーン 2025 CoinGeek](/BitcoinArchive/ja/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/)) に照らすと違って見える — より重要な意味を持つようになったのか。
 
 ここで提示する読みでは、答えは「然り」である。ただし主張は字面ほど広くはない。**語彙的主張**は、選ばれた名称「Bitcoin Core」が「リファレンスクライアント」の同義語として機能していない、という点である。「Bitcoin-Qt」が持たなかった求心力的な重みを、この名称は持つ。改名が後の効果を引き起こしたのか、それとも既に存在していた構造に名前を与えただけなのかは、別個でより難しい問いである (§6)。
 

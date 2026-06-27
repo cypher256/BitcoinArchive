@@ -63,8 +63,6 @@ Across thirty-two months of documented public record, Satoshi Nakamoto referred 
 
 **Exclusion criterion:** pure business announcements with no self-reference (e.g., a request for the correct citation of a paper, a release announcement of new code, an explanation of a protocol mechanism). These appear elsewhere in the Archive but are not collected here.
 
-The entry does not assert any identity hypothesis. It separates *what Satoshi said about himself* from *what the documented behavioral record shows* — two different categories of evidence with different verification paths.
-
 ## 1. The complete inventory of self-references
 
 Five subcategories, in chronological order within each. "Status" indicates how the statement holds up against independently verifiable evidence — not whether the statement was sincerely meant.

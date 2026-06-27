@@ -50,7 +50,7 @@ On January 10, 2009, Satoshi wrote to [Hal Finney](/BitcoinArchive/participants/
 <!-- audit:quote-skip -->
 > "Unfortunately, I can't receive incoming connections from where I am, which has made things more difficult."
 
-The clause "from where I am" — location-contingent, implicitly not a permanent property of Satoshi's setup — combined with the unusually dense cadence of his Bitcoin work during the January 8–12, 2009 launch week, is the converging evidence this analysis reads. The reading is editorial: it does not establish Satoshi's location or identity, and the primary sources underdetermine the conclusion in multiple ways noted below.
+The clause "from where I am" — location-contingent, implicitly not a permanent property of Satoshi's setup — combined with the unusually dense cadence of his Bitcoin work during the January 8–12, 2009 launch week, is the converging evidence this analysis reads. The reading is editorial.
 
 This entry is time-adjacent to the [Genesis Block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/), which covers the structural question of Block 0 and the Jan 3 → Jan 9 gap. Theme-wise the two are separate: that entry is about Block 0 as an object; this entry is about Satoshi's environment as a person during the Jan 8-12 window.
 
@@ -191,6 +191,6 @@ What this analysis *does* contribute is a concrete forensic reading of a passage
 - Primary source: Satoshi → Finney private email, sent mid-January 2009 (date disputed between 2009-01-10 and 2009-01-12 — both fall within the launch window this analysis addresses), first published in CoinDesk's November 2020 article.
 - Operative phrase: **"from where I am"** — read here as location-contingent, not as a permanent property of Satoshi's everyday setup.
 - Combined with Jan 8-12 activity intensity (three releases in four days), this is consistent with Satoshi operating from a temporary location with dedicated time during the launch week.
-- The reading is editorial. It narrows the space of compatible environments without determining any specific one, and makes no claim about Satoshi's identity, country, profession, or personal history.
+- The reading is editorial. It narrows the space of compatible environments without determining any specific one.
 
 This launch-environment analysis is read in parallel with [the Satoshi anonymity-architecture analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/), which uses this entry's launch-day environmental reading as one of the documented practice-pattern observations that complement the six-layer anonymity structure.

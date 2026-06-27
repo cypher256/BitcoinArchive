@@ -74,7 +74,7 @@ Two days later, Satoshi's reply began:
 
 No "Happy Christmas." No "thanks." No "you too." The reply opened with SPV client-mode design, walked through eight paragraphs of technical detail, and ended without ever circling back to the season's greeting. This is not an isolated incident. Across roughly two and a half years of recorded correspondence (April 2009 to April 2011), Satoshi's responses to non-technical content from his correspondents follow a small number of identifiable patterns — and from one of them in particular almost never deviate.
 
-This entry catalogues the observed cases, classifies them into five patterns, and reads the resulting communication discipline as a layer of Satoshi's anonymity architecture distinct from the technical layer (Tor, anonymising email, metadata stripping) treated in [Satoshi's anonymity architecture](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/). The technical layer keeps the *channel* opaque. This layer keeps the *content* opaque.
+The resulting communication discipline reads as a layer of Satoshi's anonymity architecture distinct from the technical layer (Tor, anonymising email, metadata stripping) treated in [Satoshi's anonymity architecture](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/). The technical layer keeps the *channel* opaque. This layer keeps the *content* opaque.
 
 ## 1. Catalogue of observed cases
 
