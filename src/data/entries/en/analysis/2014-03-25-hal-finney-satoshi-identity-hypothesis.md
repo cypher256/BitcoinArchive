@@ -35,6 +35,7 @@ secondarySources:
     note: "A 2026 synthesis that consolidates Lopp 2023 plus several supplementary observations: the August 14–15, 2010 Singularity Summit attendance overlap with Satoshi's high activity (4 SVN check-ins + 17 forum posts in the same window); Hal's progressive ALS (wheelchair by August 2010, typing speed dropped from ~120 WPM to a finger-peck) vs. Satoshi's continued high-volume output; Hal's Mac use vs. Satoshi's Windows-only releases; British vs. American spelling divergence in the writing register. Miller himself characterizes the article as 'minimal novel analysis' atop Lopp 2023."
   - name: "Satoshi Nakamoto Institute — RPOW"
     url: "https://nakamotoinstitute.org/finney/rpow/"
+partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis

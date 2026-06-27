@@ -28,6 +28,7 @@ secondarySources:
     note: "An earlier public articulation naming Donald."
   - name: "WIRED Japan — interview with Benjamin Wallace (2025)"
     url: "https://wired.jp/article/benjamin-wallace-interview-satoshi-nakamoto/"
+partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - aftermath/2008-11-02-james-donald-biography
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview

@@ -1,0 +1,106 @@
+---
+/**
+ * ParentLink.astro — Renders a breadcrumb-style "part of" link near the
+ * top of an entry page, pointing up to the parent / hub entry declared
+ * in frontmatter as `partOf`.
+ *
+ * Symmetric counterpart to the participant-page `callout` (see
+ * RelatedEntries.astro and the STYLE_GUIDE "Participant-Page Callout"
+ * section): the bio callout points a person's page *down* to their
+ * analysis; `partOf` points a child analysis *up* to the hub it belongs
+ * to. Concretely, each of the Satoshi-candidate identity-hypothesis
+ * pages declares `partOf: analysis/2008-10-31-satoshi-identity-hypotheses-overview`
+ * so a reader landing on one candidate can return to the full
+ * comparison from the top of the page (the overview already lists every
+ * candidate in the reverse direction).
+ *
+ * Declared per-entry — one line, no central list — so adding a new
+ * candidate page needs only `partOf: <hub-id>` on that page and no
+ * structural change (extension-resistance: the candidate set is not
+ * hardcoded anywhere). Renders nothing when `partOf` is unset or does
+ * not resolve.
+ *
+ * Wired in via src/pages/entries/[...slug].astro and
+ * src/pages/ja/entries/[...slug].astro, immediately after the entry
+ * header.
+ */
+import { getCollection } from 'astro:content';
+import { useTranslations, localePath } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  partOf: string | null;
+}
+
+const { lang, partOf } = Astro.props;
+const t = useTranslations(lang);
+
+let target: { title: string; href: string } | null = null;
+
+if (partOf) {
+  const collectionName = lang === 'ja' ? 'entries_ja' : 'entries';
+  const all = await getCollection(collectionName as 'entries');
+  const parent = all.find((e) => e.id === partOf);
+  if (parent) {
+    // Biographies live at /participants/{slug}/, every other type at
+    // /entries/{id}/ — mirror RelatedEntries' href resolution.
+    let href: string | null;
+    if (parent.data.type === 'biography') {
+      const primarySlug = parent.data.participants?.[0]?.slug;
+      href = primarySlug ? localePath(`/participants/${primarySlug}/`, lang) : null;
+    } else {
+      href = localePath(`/entries/${parent.id}/`, lang);
+    }
+    if (href) {
+      target = { title: parent.data.title, href };
+    }
+  }
+}
+---
+
+{target && (
+  <a class="parent-link" href={target.href}>
+    <span class="parent-link-arrow" aria-hidden="true">&uarr;</span>
+    <span class="parent-link-eyebrow">{t('entry.partOf' as any)}</span>
+    <span class="parent-link-title">{target.title}</span>
+  </a>
+)}
+
+<style>
+  .parent-link {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin: 0 0 1.5rem;
+    padding: 0.5rem 0.9rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 4px 4px 0;
+    text-decoration: none;
+    color: inherit;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .parent-link:hover .parent-link-title {
+    color: var(--color-link);
+    text-decoration: underline;
+  }
+  .parent-link-arrow {
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+  }
+  .parent-link-eyebrow {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+  }
+  .parent-link-title {
+    color: var(--color-link);
+  }
+</style>

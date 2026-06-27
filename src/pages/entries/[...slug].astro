@@ -22,6 +22,7 @@ import StylometricDistanceHistogram from '../../components/StylometricDistanceHi
 import BitcoinForkGenealogy from '../../components/BitcoinForkGenealogy.astro';
 import SupplyCurveComparison from '../../components/SupplyCurveComparison.astro';
 import DesignSeriesNav from '../../components/DesignSeriesNav.astro';
+import ParentLink from '../../components/ParentLink.astro';
 import BarChartRace from '../../components/BarChartRace.astro';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from '../../i18n/utils';
@@ -164,6 +165,8 @@ const titleAvatarSlug = isEditorialType ? 'bitcoin-institute' : titleAvatarParti
         createdAt={createdAt}
       />
     </header>
+
+    <ParentLink lang={lang} partOf={entry.data.partOf} />
 
     {['correspondence', 'mailing-list', 'forum-post', 'bip', 'whitepaper', 'court-document', 'tweet', 'blog-post'].includes(entry.data.type) && (
       <CommentaryLinks lang={lang} entryId={entry.id} entryType={entry.data.type} />

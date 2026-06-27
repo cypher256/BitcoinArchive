@@ -48,6 +48,7 @@ secondarySources:
   - name: "Cullen Hoback (X) — 'The Case Against Nick Szabo as Bitcoin's Creator (and Other Clues)' (October 2024)"
     url: "https://x.com/CullenHoback/status/1845508385170686415"
     note: "Recent contemporary commentary against the Szabo identification, by the director of the HBO Money Electric documentary (which advanced the [Peter Todd hypothesis](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/))."
+partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - aftermath/2005-12-29-nick-szabo-biography
   - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request

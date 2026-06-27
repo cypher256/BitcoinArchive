@@ -33,6 +33,7 @@ secondarySources:
   - name: "本仮説に言及した BitcoinTalk スレッド（2013 年 3 月 15 日）"
     url: "https://bitcointalk.org/"
     note: "Wikipedia は、サッサマン＝サトシ仮説に関する公的議論として、出典で復元できる最古のものとして 2013 年 3 月 15 日の BitcoinTalk スレッドを特定している。具体的なトピック URL は本アーカイブの記録には残っていない。"
+partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary

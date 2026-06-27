@@ -71,6 +71,15 @@ const entrySchema = z.object({
   ]).optional(),
   quotes: z.array(quoteSchema).default([]),
   relatedEntries: z.array(z.string()).default([]),
+  // Optional pointer to a parent / hub entry. Renders a breadcrumb-style
+  // "part of" link near the top of the entry page (see ParentLink.astro),
+  // letting a child page return to the hub it belongs to — e.g. each
+  // Satoshi-candidate identity-hypothesis page → the identity-hypotheses
+  // overview. Symmetric to the bio `callout` (which points the other way,
+  // from a person down to their analysis). One line per child entry, no
+  // central list, so adding a candidate needs no structural change. When
+  // unset or unresolved, no link renders.
+  partOf: z.string().nullable().default(null),
   inlineLinkKeywords: z.array(z.string()).optional(),
   // Single recommended-analysis callout rendered near the top of a
   // participant page. Set on the biography entry only. The bio

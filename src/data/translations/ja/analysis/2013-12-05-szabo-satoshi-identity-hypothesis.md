@@ -48,6 +48,7 @@ secondarySources:
   - name: "カレン・ホーバック（X）— 「The Case Against Nick Szabo as Bitcoin's Creator (and Other Clues)」（2024 年 10 月）"
     url: "https://x.com/CullenHoback/status/1845508385170686415"
     note: "サボ特定に対する近年の反対論点を整理。HBO ドキュメンタリー『Money Electric』監督によるもので、同作は[ピーター・トッド仮説](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)を提唱。"
+partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - aftermath/2005-12-29-nick-szabo-biography
   - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request

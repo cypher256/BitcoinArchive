@@ -24,6 +24,7 @@ secondarySources:
     note: "マスクの否定を伝える。"
   - name: "The Register — 'Elon Musk says he's not Satoshi Nakamoto and is pretty rubbish at Bitcoin' (November 29, 2017)"
     url: "https://www.theregister.com/2017/11/29/elon_musk_says_he_is_not_satoshi_nakamoto/"
+partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - aftermath/2017-11-22-elon-musk-biography
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview

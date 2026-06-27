@@ -35,6 +35,7 @@ secondarySources:
     note: "ロップ 2023 を統合し補足観察を加えた 2026 年の合成: 2010 年 8 月 14-15 日の特異点サミット出席とサトシ高活動（同期間 4 SVN チェックイン + 17 フォーラム投稿）の重なり、ハルの ALS 進行（2010 年 8 月時点で車椅子、タイピング 120 WPM が指でつつく程度に低下）対サトシの高ボリューム継続、ハルの Mac 利用対サトシの Windows 専用リリース、英米綴りの違い。ミラー本人が記事を「ロップ 2023 への最小限の独自分析」と特徴づけている。"
   - name: "Satoshi Nakamoto Institute — RPOW"
     url: "https://nakamotoinstitute.org/finney/rpow/"
+partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis

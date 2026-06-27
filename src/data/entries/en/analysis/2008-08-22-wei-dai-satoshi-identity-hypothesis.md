@@ -31,6 +31,7 @@ secondarySources:
     note: "Three documented emails: Satoshi → Wei Dai (August 22, 2008); Wei Dai → Satoshi (date not specified, response with b-money publication history); Satoshi → Wei Dai (January 10, 2009). Satoshi's January 2009 message: 'achieves nearly all the goals you set out to solve in your b-money paper.'"
   - name: "Crypto++ Library"
     url: "https://www.cryptopp.com/"
+partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - aftermath/2008-08-22-wei-dai-biography
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement

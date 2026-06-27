@@ -29,6 +29,7 @@ secondarySources:
     url: "https://www.wired.com/2015/12/bitcoins-creator-satoshi-nakamoto-is-probably-this-unknown-australian-genius/"
   - name: "Law Gazette — 'Fake Satoshi' hit with costs bill over AI evidence (March 2025)"
     url: "https://www.lawgazette.co.uk/news/fake-satoshi-hit-with-costs-bill-over-ai-evidence/5122587.article"
+partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - aftermath/2016-05-02-craig-wright-biography
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview

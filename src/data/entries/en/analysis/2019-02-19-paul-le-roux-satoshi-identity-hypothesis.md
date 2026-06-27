@@ -25,6 +25,7 @@ secondarySources:
     url: "https://magazine.atavist.com/the-mastermind/"
   - name: "Wikipedia — E4M (Encryption for the Masses)"
     url: "https://en.wikipedia.org/wiki/E4M"
+partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - aftermath/2019-02-19-paul-le-roux-biography
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview

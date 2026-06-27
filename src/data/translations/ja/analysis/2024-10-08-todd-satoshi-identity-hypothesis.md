@@ -28,6 +28,7 @@ secondarySources:
     url: "https://web.archive.org/web/20250720202155/https://cointelegraph.com/news/hbo-documentary-peter-todd-satoshi-nakamoto"
   - name: "Wikidata — Peter Todd (Q130523424)"
     url: "https://www.wikidata.org/wiki/Q130523424"
+partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2024-10-08-hbo-money-electric-peter-todd

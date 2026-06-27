@@ -1878,6 +1878,43 @@ When adding or changing a `callout`:
 4. The participant page renders the callout in `npm run dev` (visit
    `/participants/<slug>/` and `/ja/participants/<slug>/`).
 
+## Parent Link (`partOf`)
+
+An entry may declare a parent / hub entry via the `partOf` frontmatter
+field. The entry page then renders a breadcrumb-style "Part of" link near
+the top (below the title, above the body — see `ParentLink.astro`)
+pointing up to that hub.
+
+This is the structural counterpart to the [Participant-Page
+Callout](#participant-page-callout): the bio callout points a person's
+page *down* to their analysis; `partOf` points a child page *up* to the
+hub it belongs to. Each of the Satoshi-candidate identity-hypothesis
+pages declares:
+
+```yaml
+partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
+```
+
+so a reader landing on one candidate can return to the full comparison
+from the top of the page. The overview already lists every candidate in
+the reverse direction (via `relatedEntries` and its comparison table),
+so the relation is two-way without a central list to maintain.
+
+### Rules
+
+- **One line per child, no central registry.** The candidate set is not
+  hardcoded anywhere; adding a candidate page is a single `partOf` line
+  on that page, with no structural change.
+- **Set on the child, in both locales.** The EN and JA mirrors of a child
+  entry both declare the same `partOf` id (a language-neutral entry id;
+  the visible link text is the parent's own title, resolved per locale).
+- **Target a hub, not a sibling.** `partOf` is a one-level child → hub
+  relation. Peer relations stay in `relatedEntries`; a reading order
+  within a curated series uses a dedicated series component (see
+  `DesignSeriesNav.astro`).
+- **Graceful when unresolved.** If `partOf` is unset or does not resolve
+  to an entry, no link renders.
+
 ## Auto-Link Keywords (concept and person)
 
 Analysis, aftermath, and biography pages carry interpretive value that
