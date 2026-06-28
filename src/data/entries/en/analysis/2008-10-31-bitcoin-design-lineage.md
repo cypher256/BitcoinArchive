@@ -12,7 +12,7 @@ participants:
     slug: "adam-back"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "Bitcoin v0.1 reuses one cypherpunk primitive (PoW from Hashcash), borrows general CS components (Merkle trees, linked timestamping), and synthesizes the rest (UTXO, mining, 21M cap, P2P, ECDSA)."
+description: "Bitcoin v0.1 reuses one cypherpunk primitive (PoW from Hashcash), borrows general CS components (Merkle trees, linked timestamping, ECDSA), and synthesizes the rest (UTXO, mining, 21M cap, P2P)."
 isSatoshi: false
 tags:
   - "bitcoin"
@@ -68,7 +68,7 @@ On November 10, 2008, ten days after publishing the Bitcoin whitepaper, Satoshi 
 <!-- speaker: Satoshi Nakamoto -->
 > "I appreciate your questions. I actually did this kind of backwards. I had to write all the code before I could convince myself that I could solve every problem, then I wrote the paper. I think I will be able to release the code sooner than I could write a detailed spec."
 
-The whitepaper came *after* the working code. Its eight references were assembled to anchor a finished implementation in existing literature — but they do not all play the same role. Bitcoin v0.1 reuses one cryptographic primitive (proof-of-work) from a cited cypherpunk-era scheme (Hashcash), borrows several general-purpose computer-science components (Merkle trees, linked timestamping, probability theory) without inheriting them from any single cited reference, and synthesizes the rest (decentralized consensus, the UTXO model, mining-reward issuance, the 21-million monetary cap, P2P propagation, ECDSA-based transactions, difficulty adjustment) as new design. This entry walks through what Bitcoin actually contains and where each component came from, separating documented contemporaneous use from post-hoc citation from general-knowledge reuse from novel synthesis.
+The whitepaper came *after* the working code. Its eight references were assembled to anchor a finished implementation in existing literature — but they do not all play the same role. Bitcoin v0.1 reuses one cryptographic primitive (proof-of-work) from a cited cypherpunk-era scheme (Hashcash), borrows several general-purpose computer-science components (Merkle trees, linked timestamping, probability theory, ECDSA signatures) without inheriting them from any single cited reference, and synthesizes the rest (decentralized consensus, the UTXO model, mining-reward issuance, the 21-million monetary cap, P2P propagation, difficulty adjustment) as new design. This entry walks through what Bitcoin actually contains and where each component came from, separating documented contemporaneous use from post-hoc citation from general-knowledge reuse from novel synthesis.
 
 ## 1. Citation categories
 

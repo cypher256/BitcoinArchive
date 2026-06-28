@@ -105,7 +105,7 @@ Legend: ✅ originated by this design · 🔄 reused (originated elsewhere) · �
 | Difficulty adjustment | ❌ | ✅ | — |
 | 21-million supply cap | ❌ | ✅ | — |
 | Mining-reward block-subsidy issuance | ❌ | ✅ | — |
-| ECDSA-based transactions | ❌ | ✅ | (standard ECDSA primitive) |
+| ECDSA-based transactions | ❌ | 🔄 | ECDSA / secp256k1 (SEC standard) |
 | Operational P2P network | ❌ | ✅ | — |
 | Working implementation | ❌ — concept never built | ✅ — 19,901 lines of C++ | — |
 
@@ -222,7 +222,7 @@ Self-denial is not by itself dispositive — Wright self-claimed and was demonst
 
 ### 3.5 The architectural gap between Bit Gold and Bitcoin v0.1, and the absence of a C++ shipping record
 
-Bit Gold remained a conceptual proposal. It lacks key Bitcoin v0.1 components: difficulty adjustment, the longest-chain consensus rule, the UTXO model, mining-reward block-subsidy issuance, the 21-million supply cap, ECDSA-based transactions, and the operational P2P network. The [Bitcoin design lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) catalogs these as Bitcoin's novel contributions, not inheritable from Bit Gold. And as §2.1's table shows, even the components Bit Gold did contain are mostly common-ancestor primitives (🔄) rather than Szabo's own. Szabo's documented work pattern is conceptual writing, not codebase shipping — his April 2008 admission (§3.1) that he had not implemented Bit Gold in a decade is the diagnostic signature of that pattern.
+Bit Gold remained a conceptual proposal. It lacks key Bitcoin v0.1 components: difficulty adjustment, the longest-chain consensus rule, the UTXO model, mining-reward block-subsidy issuance, the 21-million supply cap, and the operational P2P network. The [Bitcoin design lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) catalogs these as Bitcoin's novel contributions, not inheritable from Bit Gold. And as §2.1's table shows, even the components Bit Gold did contain are mostly common-ancestor primitives (🔄) rather than Szabo's own. Szabo's documented work pattern is conceptual writing, not codebase shipping — his April 2008 admission (§3.1) that he had not implemented Bit Gold in a decade is the diagnostic signature of that pattern.
 
 The capability gap is structural, not just probabilistic. Szabo has **no documented record of shipping a multi-thousand-line C++ cryptographic codebase** under his own name. His public record is essays (Unenumerated blog), conceptual papers (smart contracts 1996, Bit Gold 2005), and legal scholarship — not engineering output at the scale of Bitcoin v0.1. Critics have repeatedly observed that the absence of any C++ project under Szabo's name argues against him as the Bitcoin author, since Bitcoin v0.1 is a 19,901-line C++ codebase with idiosyncratic style ([Hungarian notation](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies/), Visual C++ on Windows, custom build chain) that would normally manifest in some prior or parallel codebase.
 
