@@ -92,22 +92,24 @@ The objection: forensic fit on a single dimension does not select uniquely. The 
 
 **Component-level comparison.** What Bit Gold contains and what Bitcoin v0.1 added:
 
-| Bitcoin component | Bit Gold (1998 / 2005) | Bitcoin (2009) | Origin of the primitive |
-|---|---|---|---|
-| Proof of work | ✅ | ✅ | Hashcash (Adam Back, 1997) — not Szabo |
-| Chained PoW (linked solved puzzles) | ✅ — concept | ✅ | Haber-Stornetta linking; Bit Gold applied it to PoW |
-| Decentralized timestamping | ✅ — concept | ✅ | Haber-Stornetta (1991) — not Szabo |
-| Anti-trust monetary framing | ✅ | ✅ | Hayek / cypherpunk milieu — not Szabo |
-| Longest-chain consensus rule | ❌ | ✅ | Satoshi — novel |
-| UTXO model | ❌ | ✅ | Satoshi — novel |
-| Difficulty adjustment | ❌ | ✅ | Satoshi — novel |
-| 21-million supply cap | ❌ | ✅ | Satoshi — novel |
-| Mining-reward block-subsidy issuance | ❌ | ✅ | Satoshi — novel |
-| ECDSA-based transactions | ❌ | ✅ | Satoshi — novel (standard ECDSA primitive) |
-| Operational P2P network | ❌ | ✅ | Satoshi — novel |
-| Working implementation | ❌ — concept never built | ✅ — 19,901 lines of C++ | Satoshi — novel |
+Legend: ✅ originated by this design · 🔄 reused (originated elsewhere) · ❌ not present.
 
-The conceptual overlap (top section of the table) is what the forensic-fit argument rests on — but the origin column qualifies it. The shared rows are primitives both designs drew from common ancestors — proof-of-work from Hashcash, linked timestamping and chain-ordering from Haber-Stornetta, the anti-trust frame from Hayek and the cypherpunk milieu — catalogued in [Bitcoin design lineage](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) as reused rather than invented, not components Bitcoin took from Bit Gold. What is distinctly Szabo's is the synthesis — chaining proof-of-work into scarce, ownership-tracked units (his "unforgeable costliness") — a concept Bit Gold never implemented, which Bitcoin re-realized through the consensus machinery in the bottom rows, all Satoshi's novel contributions.
+| Bitcoin component | Bit Gold (1998 / 2005) | Bitcoin (2009) | Borrowed from |
+|---|---|---|---|
+| Proof of work | 🔄 | 🔄 | Hashcash (Adam Back) |
+| Chained PoW (linked solved puzzles) | 🔄 | 🔄 | Haber-Stornetta linking |
+| Decentralized timestamping | 🔄 | 🔄 | Haber-Stornetta (1991) |
+| Anti-trust monetary framing | 🔄 | 🔄 | Hayek / cypherpunk milieu |
+| Longest-chain consensus rule | ❌ | ✅ | — |
+| UTXO model | ❌ | ✅ | — |
+| Difficulty adjustment | ❌ | ✅ | — |
+| 21-million supply cap | ❌ | ✅ | — |
+| Mining-reward block-subsidy issuance | ❌ | ✅ | — |
+| ECDSA-based transactions | ❌ | ✅ | (standard ECDSA primitive) |
+| Operational P2P network | ❌ | ✅ | — |
+| Working implementation | ❌ — concept never built | ✅ — 19,901 lines of C++ | — |
+
+The conceptual overlap (top section of the table) is what the forensic-fit argument rests on — but the reuse markers (🔄) qualify it. Those top rows are reused by both designs from common ancestors — proof-of-work from Hashcash, linked timestamping and chain-ordering from Haber-Stornetta, the anti-trust frame from Hayek and the cypherpunk milieu — catalogued in [Bitcoin design lineage](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) as reused rather than invented, not components Bitcoin took from Bit Gold. Bit Gold carries no ✅ in the table at all: what is distinctly Szabo's is the synthesis — chaining proof-of-work into scarce, ownership-tracked units (his "unforgeable costliness") — a synthesis that stayed on paper; Bit Gold was never implemented. What Bitcoin shipped is a different synthesis — the ✅ bottom rows (longest-chain consensus and the rest), all Satoshi's novel contributions, not Bit Gold's design.
 
 A reception-side trace of that conceptual proximity survives in the whitepaper's first days on the cryptography mailing list, where the earliest responders reflexively reached for Bit Gold's name: James A. Donald wrote of "who owns what bitgold coins," and Hal Finney, who [proposed Bitcoin "could be an implementation"](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/) of Bit Gold, [mentioned "a sourceforge project set up for bitgold"](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney/). But the name they were merging labels a shared framing, not a Szabo-specific design, and the conflation came from third parties reacting to Satoshi's announcement, not from Szabo.
 
@@ -157,7 +159,7 @@ The objection: profile-match selects a population, not an individual. The argume
 
 Szabo is a long-tenure cypherpunk: documented mailing-list presence in the 1990s, presence on the libtech private list where Bit Gold was discussed alongside b-money, decades of public writing on the philosophical foundations of digital cash. The whitepaper's intellectual lineage (Hashcash, b-money, the chained-hash structure, anti-trust framing) overlaps closely with the topical space Szabo has documented his own thinking in.
 
-The objection: this argument applies broadly to several long-tenure cypherpunks (Adam Back, Wei Dai, Hal Finney, etc.). It narrows the candidate set substantially but does not select Szabo specifically. And as §2.1's origin column shows, the shared lineage primitives (proof-of-work, linked timestamping) are themselves common-ancestor inheritance, not Szabo-originated.
+The objection: this argument applies broadly to several long-tenure cypherpunks (Adam Back, Wei Dai, Hal Finney, etc.). It narrows the candidate set substantially but does not select Szabo specifically. And as §2.1's table shows, the shared lineage primitives (proof-of-work, linked timestamping) are themselves common-ancestor inheritance (🔄 on both columns), not Szabo-originated.
 
 ### 2.5 Circumstantial pattern matches
 
@@ -220,7 +222,7 @@ Self-denial is not by itself dispositive — Wright self-claimed and was demonst
 
 ### 3.5 The architectural gap between Bit Gold and Bitcoin v0.1, and the absence of a C++ shipping record
 
-Bit Gold remained a conceptual proposal. It lacks key Bitcoin v0.1 components: difficulty adjustment, the longest-chain consensus rule, the UTXO model, mining-reward block-subsidy issuance, the 21-million supply cap, ECDSA-based transactions, and the operational P2P network. The [Bitcoin design lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) catalogs these as Bitcoin's novel contributions, not inheritable from Bit Gold. And as §2.1's origin column notes, even the components Bit Gold did contain are mostly common-ancestor primitives rather than Szabo's own. Szabo's documented work pattern is conceptual writing, not codebase shipping — his April 2008 admission (§3.1) that he had not implemented Bit Gold in a decade is the diagnostic signature of that pattern.
+Bit Gold remained a conceptual proposal. It lacks key Bitcoin v0.1 components: difficulty adjustment, the longest-chain consensus rule, the UTXO model, mining-reward block-subsidy issuance, the 21-million supply cap, ECDSA-based transactions, and the operational P2P network. The [Bitcoin design lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) catalogs these as Bitcoin's novel contributions, not inheritable from Bit Gold. And as §2.1's table shows, even the components Bit Gold did contain are mostly common-ancestor primitives (🔄) rather than Szabo's own. Szabo's documented work pattern is conceptual writing, not codebase shipping — his April 2008 admission (§3.1) that he had not implemented Bit Gold in a decade is the diagnostic signature of that pattern.
 
 The capability gap is structural, not just probabilistic. Szabo has **no documented record of shipping a multi-thousand-line C++ cryptographic codebase** under his own name. His public record is essays (Unenumerated blog), conceptual papers (smart contracts 1996, Bit Gold 2005), and legal scholarship — not engineering output at the scale of Bitcoin v0.1. Critics have repeatedly observed that the absence of any C++ project under Szabo's name argues against him as the Bitcoin author, since Bitcoin v0.1 is a 19,901-line C++ codebase with idiosyncratic style ([Hungarian notation](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies/), Visual C++ on Windows, custom build chain) that would normally manifest in some prior or parallel codebase.
 
