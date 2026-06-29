@@ -127,7 +127,7 @@ timeline
 
 **集計バローズ・デルタによるサトシ最近接 20 名は、いかなる意味でも文体計量的「マッチ」ではない — コーパスのノイズである。**
 
-Top 20 には以下が含まれる：
+上位 20 名には以下が含まれる：
 
 - **イタリア／スペインの EC・公共サービスのアカウントテキスト：** `verba_rol_it`、`info_giganetstore_com`、`apoio_giganetstore_com`、`gianluigi_euro_net`。距離指標が低くなっているのは、これらのアカウントがサトシの参照プロファイルとの共通単語の重なりが少ないためであり、本物のスタイル一致によるものではない。
 - **匿名リメイラー出力：** `an250888_anon_penet_fi`、`cypherpunks_alqaeda_net`、`nobody_squirrel_owl_de`、`anonremailer_utopia_hacktic_nl`、`anonymous_freezone_remailer`。単一の人間への著者性帰属は名目的にすぎない — これらの行は同じリメイラーを経由した多人数のトラフィックを混在させている。
