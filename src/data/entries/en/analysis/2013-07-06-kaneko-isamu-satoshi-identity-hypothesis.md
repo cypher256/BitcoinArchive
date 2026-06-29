@@ -137,9 +137,9 @@ A second timing problem compounds the first. Kaneko died on July 6, 2013, eight 
 
 ## 5. Within the broader documentary record
 
-The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin development period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), wrote near-native English, and worked from the Hashcash / b-money / Bit Gold intellectual lineage.
+The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin development period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), wrote near-native English, and worked from the Hashcash / b-money intellectual lineage.
 
-Kaneko fits the "outside the visible cypherpunk community" condition (he was not in those forums) but does not fit the "near-native English" or "Hashcash / b-money / Bit Gold lineage" conditions on the documentary evidence available.
+Kaneko fits the "outside the visible cypherpunk community" condition (he was not in those forums) but does not fit the "near-native English" or "Hashcash / b-money lineage" conditions on the documentary evidence available.
 
 The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) is independent of any specific identity hypothesis and applies regardless of whether the person behind the pseudonym was Japanese, used a Japanese-form pseudonym deliberately, or some other configuration.
 

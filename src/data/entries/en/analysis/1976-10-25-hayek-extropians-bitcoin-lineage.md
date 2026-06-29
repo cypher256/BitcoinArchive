@@ -139,7 +139,43 @@ timeline
   2009 : Bitcoin v0.1 + genesis block (January 3 / January 9)
 ```
 
-### 3.2 What Bitcoin realises from the Hayek thesis
+### 3.2 The structure of the lineage
+
+Where the §3.1 timeline orders events by date, this view shows the same chain as a flow of influence — making legible what a single time axis cannot: the branch from Hayek into the 1990s milieu, and how Bitcoin rose out of that milieu's digital-cash design space.
+
+The line styles track the evidence tiers of §4. A solid edge marks something concretely made or used: Hashcash, used during development, and the Hayeks thought experiment, produced by the Extropians. A dashed edge marks a real but indirect link: upstream ideological influence, community overlap, or a post-hoc citation. b-money is the post-hoc citation — Satoshi was unaware of it until Adam Back pointed him to it and did not use it in development, yet he cited it in the white paper. Hashcash, note, is not a currency but an anti-spam proof-of-work; Bitcoin reused only that mechanism (see [the Hashcash announcement](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/)), which is why it sits apart from the digital-cash proposals (b-money, Bit Gold, RPOW). Bit Gold and RPOW are not cited in the white paper at all; conceptually close as Bit Gold is, neither is a development-time input or a citation, so they stay among the proposals with no edge to Bitcoin. The implementation-level lineage is the subject of the sibling entry, [Bitcoin's design lineage](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/).
+
+```mermaid
+flowchart LR
+  HAYEK["Hayek 1976<br/>Denationalisation of Money"]
+
+  subgraph MILIEU["1990s milieu<br/>(overlapping, distinct)"]
+    EXT["Extropians<br/>(1988/1991)"]
+    HAYEKS["Hayeks thought<br/>experiment (1995)"]
+    CP["Cypherpunks<br/>(1992)"]
+    EXT --> HAYEKS
+  end
+
+  HC["Hashcash<br/>(Back 1997)"]
+
+  subgraph PROP["Digital-cash proposals"]
+    BM["b-money<br/>(Wei Dai 1998)"]
+    BG["Bit Gold<br/>(Szabo 1998)"]
+    RPOW["RPOW<br/>(Finney 2004)"]
+  end
+
+  BTC(("Bitcoin<br/>2008/2009"))
+
+  HAYEK -.->|normative case| EXT
+  EXT -.-|overlap| CP
+  HAYEKS -.-> PROP
+  CP -.-> HC
+  CP -.-> PROP
+  HC --> BTC
+  BM -.-> BTC
+```
+
+### 3.3 What Bitcoin realises from the Hayek thesis
 
 Bitcoin's design choices map onto Hayek's five claims (§1.1) with mixed fit — some are realised directly, others are reframed, others are absent. The mapping is not engineered after the fact; the correspondences are visible in Bitcoin's own design documents.
 
@@ -153,7 +189,7 @@ Bitcoin's design choices map onto Hayek's five claims (§1.1) with mixed fit —
 
 The closest direct realisation is the rejection of state issuance monopoly (❶) and the cross-border concurrent operation (❹). The reframing of competition (❷) is the most distinctive divergence: Hayek envisioned competing *private banks*; Bitcoin substitutes algorithmic commitment for banking judgement. The companion entry [Fixed supply vs adjustable money](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) treats this divergence at length, noting that [Wei Dai's b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) and [Adam Back's 1998 b-money critique](/BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/) had already explored more Hayekian (adjustable-supply) alternatives — which Bitcoin chose not to take.
 
-### 3.3 The genesis-block headline in this longer frame
+### 3.4 The genesis-block headline in this longer frame
 
 The famous coinbase message in [Bitcoin's genesis block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/) — *"The Times 03/Jan/2009 Chancellor on brink of second bailout for banks"* — has often been read as a 2008-crisis-specific protest. Read against the Hayekian lineage, it is also a continuation of a much older argument: state monetary intermediation produces the bailouts that Hayek's 1976 monograph already named as the inevitable consequence of issuance monopoly. The 2008 headline made the case proximate and concrete; it did not invent the case.
 
