@@ -101,9 +101,11 @@ In 2004, Finney built [Reusable Proof-of-Work (RPOW)](/BitcoinArchive/entries/af
 
 The objection: RPOW is server-mediated. The architectural distance to Bitcoin is large.
 
+Legend: ✅ originated by this design · 🔄 reused (originated elsewhere) · ❌ not present.
+
 | Component | RPOW (2004) | Bitcoin (2009) |
 |---|---|---|
-| Proof of work | ✅ | ✅ |
+| Proof of work | 🔄 | 🔄 |
 | Transferable tokens | ✅ | ✅ |
 | Trusted issuer (IBM 4758 secure coprocessor) | ✅ — required | ❌ — eliminated |
 | Distributed ledger | ❌ | ✅ |
