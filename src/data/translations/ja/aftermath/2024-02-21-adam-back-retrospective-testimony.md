@@ -1,6 +1,6 @@
 ---
 title: "アダム・バックの最大の後悔 — 白書を斜め読みし、2013 年までビットコインを素通りした"
-date: 2024-02-22T00:00:00Z
+date: 2024-02-21T00:00:00Z
 type: "article"
 source: "cointelegraph"
 sourceUrl: "https://web.archive.org/web/20260216001524/https://cointelegraph.com/news/adam-back-on-satoshi-emails-privacy-concerns-and-bitcoins-early-days"

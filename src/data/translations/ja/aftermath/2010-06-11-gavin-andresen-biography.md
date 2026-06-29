@@ -71,7 +71,7 @@ timeline
     %% link: /BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/
          : CIA / In-Q-Tel カンファレンス、 サトシ沈黙後 (6月)
     2012 : Bitcoin Foundation 共同設立 - アンドレセンは チーフサイエンティスト 就任 (9月)
-    2014 : リードメンテナー退任 - ヴラディーミル・ ヴァン・デア・ラーンへ 引き継ぎ (4月)
+    2014 : リードメンテナー退任 - ウラジミール・ ファン・デル・ラーンへ 引き継ぎ (4月)
 ```
 
 ## サトシの後継者 — 段階的な引き継ぎ（2010–2011 年）
