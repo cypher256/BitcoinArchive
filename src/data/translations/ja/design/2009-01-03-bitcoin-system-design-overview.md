@@ -267,7 +267,7 @@ mindmap
 | 4 | [**合意形成**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/) | PoW の仕組み、難易度調整、ブロック検証、フォーク種別、有効化メカニズム、ファイナリティモデル |
 | 5 | [**通貨**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/) | 2,100 万枚上限の算術、半減期スケジュール、手数料市場、マイナーのインセンティブ、手数料のみの将来 |
 | 6 | [**暗号**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/) | secp256k1、ECDSA/シュノア、SHA-256d、アドレス導出、HD ウォレット、量子耐性 |
-| 7 | [**ストレージ**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/) | ブロックファイル、UTXO データベース (LevelDB)、チェーン状態、メモリープール、枝刈り、assumeUTXO |
+| 7 | [**ストレージ**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/) | ブロックファイル、UTXO データベース (LevelDB)、チェーン状態、メモリープール、剪定、assumeUTXO |
 | 8 | [**ウォレット / RPC**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-wallet-design/) | ディスクリプターウォレット、コイン選択、PSBT、手数料推定、RPC/REST/ZMQ インターフェース |
 
 ### L2 — 横断的深掘り
