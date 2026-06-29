@@ -53,6 +53,19 @@ export function initEntriesBrowse() {
   // the first paint and the first client render agree (no reflow on load).
   var hasCreatedBtn = sortBtns.some(function(b) { return b.dataset.sort === 'created'; });
   var sortState = hasCreatedBtn ? { key: 'created', order: 'desc' } : { key: 'date', order: 'desc' };
+  // The card's visible date axis follows the active sort, but only AFTER the
+  // reader picks one. Until then every card keeps its SSR type-meaningful date
+  // (event date for primary sources, updated date for analysis — see the date
+  // axis note in EntryCard.astro). `coupled` flips true on the first sort click
+  // (or when a saved sort from a prior visit is restored) and stays on, so from
+  // then on the visible date always explains the order.
+  var coupled = false;
+  // sort key -> { attr: card data-* suffix to read, label: date-axis label }.
+  function axisInfo(key) {
+    if (key === 'created') return { attr: 'created', label: uiLabels.created };
+    if (key === 'updated') return { attr: 'updated', label: uiLabels.updated };
+    return { attr: 'date', label: uiLabels.event };
+  }
   var algolia = (typeof algoliasearch !== 'undefined')
     ? algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425') : null;
   var hits = null, nbHits = 0; // current full-text hit set (null = browse mode); nbHits = true total
@@ -101,6 +114,20 @@ export function initEntriesBrowse() {
       if (ok) matching.push(card);
     });
     matching.sort(cmp);
+    if (coupled) {
+      // Rewrite each card's date + label to the active sort axis (idempotent;
+      // fmtDate matches the SSR formatDate exactly, so this never alters text
+      // for a card already on that axis). Fall back to the event date when a
+      // git date is missing — same fallback the sort uses.
+      var info = axisInfo(sortState.key);
+      matching.forEach(function(c) {
+        var iso = c.dataset[info.attr] || c.dataset.date;
+        var labelEl = c.querySelector('.card-date-label');
+        var timeEl = c.querySelector('.card-header time');
+        if (labelEl) labelEl.textContent = info.label;
+        if (timeEl && iso) { timeEl.textContent = fmtDate(iso); timeEl.setAttribute('datetime', iso); }
+      });
+    }
     matching.forEach(function(c) { list.appendChild(c); });
     matching.forEach(function(c, i) { c.classList.toggle('paged-out', i >= shown); });
     resultCount.textContent = String(matching.length);
@@ -140,11 +167,23 @@ export function initEntriesBrowse() {
     var type = h.type || '';
     var isAnalysis = type === 'analysis' || type === 'design';
     var isEditorial = isAnalysis || type === 'article';
-    // Date axis mirrors EntryCard: analysis/design show the editorial updated
-    // date (fallback to event date); every other type shows the event date.
-    var rawDate = isAnalysis ? (h.updatedTs || h.date) : h.date;
+    // Date axis: once the reader has picked a sort, every result shows that
+    // axis (event / created / updated) so the visible date explains the order.
+    // Before any sort, mirror EntryCard's type-meaningful default — analysis/
+    // design show the editorial updated date (fallback to event), every other
+    // type shows the event date.
+    var rawDate, dateLabel;
+    if (coupled) {
+      var ai = axisInfo(sortState.key);
+      rawDate = ai.attr === 'created' ? (h.createdTs || h.date)
+              : ai.attr === 'updated' ? (h.updatedTs || h.date)
+              : h.date;
+      dateLabel = ai.label;
+    } else {
+      rawDate = isAnalysis ? (h.updatedTs || h.date) : h.date;
+      dateLabel = isAnalysis ? uiLabels.updated : uiLabels.event;
+    }
     var dateStr = rawDate ? fmtDate(rawDate) : '';
-    var dateLabel = isAnalysis ? uiLabels.updated : uiLabels.event;
     var typeLabel = typeLabels[type] || type;
     // Byline: server-built authorMeta already ran findAuthorParticipant (incl.
     // handle aliases) and resolved the katakana display name.
@@ -289,12 +328,13 @@ export function initEntriesBrowse() {
     btn.addEventListener('click', function() {
       var key = btn.dataset.sort, order = btn.dataset.order;
       if (btn.classList.contains('active')) order = order === 'asc' ? 'desc' : 'asc';
+      coupled = true; // reader picked a sort -> couple the card dates to it
       activateSort(key, order);
       try { sessionStorage.setItem(SORT_KEY, JSON.stringify({ key: key, order: order })); } catch (e) {}
       if (hits) renderSearch(); else renderBrowse();
     });
   });
-  try { var saved = JSON.parse(sessionStorage.getItem(SORT_KEY)); if (saved && saved.key) activateSort(saved.key, saved.order); } catch (e) {}
+  try { var saved = JSON.parse(sessionStorage.getItem(SORT_KEY)); if (saved && saved.key) { coupled = true; activateSort(saved.key, saved.order); } } catch (e) {}
 
   document.addEventListener('click', function(e) {
     document.querySelectorAll('details.facet[open]').forEach(function(d) {
