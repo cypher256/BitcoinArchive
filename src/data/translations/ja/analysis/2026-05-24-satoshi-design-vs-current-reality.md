@@ -165,4 +165,4 @@ flowchart TB
 
 [ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)は、ホワイトペーパーと初期設計から読めるプロトコルの基本形を記述する。本稿はその対となる記事である: プロトコルは実在し、動いている。その上に立ち上がっている運用上の現実もまた実在し、同じものではない。
 
-本設計対現状分析は[ビットコイン・デジタルゴールド構造的特徴分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)によって根拠的な参照点として扱われる。同分析は本エントリを、サトシのプロトコル設計とその上に構築された運用上の現実との間の乖離を記録した文書として用いる。
+本設計対現状分析は[ビットコイン・デジタルゴールド構造的特徴分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)によって中核的な参照点として扱われる。同分析は本エントリを、サトシのプロトコル設計とその上に構築された運用上の現実との間の乖離を記録した文書として用いる。

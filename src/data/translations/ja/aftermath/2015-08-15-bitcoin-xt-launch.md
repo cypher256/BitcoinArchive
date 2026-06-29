@@ -45,4 +45,4 @@ Bitcoin XT は 2015 年末に約 1,000 ノードを一時的に集めたが、75
 
 XT のリリースは、論争の公開フォーク段階の時系列上の起点である。それ以前にもメーリングリストや BitcoinTalk スレッドに不一致は存在したが、2015 年 8 月 15 日は、Bitcoin Core のフォークが、インストール可能なバイナリと公開された有効化スケジュールを伴って製品ソフトウェアとしてリリースされた日付である。
 
-本 XT 公開は二つの後続読解においてブロックサイズ戦争の開幕事件として扱われる。 [マイク・ハーン「決着」エッセイ](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)は本公開をハーン離脱の直近文脈として読む ― その崩壊が 2016 年 1 月の判決を引き起こした生産フォーク公開として、である。 [「フォーク戦争はオープンソースの話ではない分析」](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)は同じ 8 月 15 日の公開を、 Bitcoin Core のフォークが生産ソフトウェアの閾値を越えた日として扱い、統治失敗事例研究の論拠が依拠する日付の錨として用いる。
+本 XT 公開は二つの後続読解においてブロックサイズ戦争の開幕事件として扱われる。 [マイク・ハーン「決着」エッセイ](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)は本公開をハーン離脱の直近文脈として読む ― その崩壊が 2016 年 1 月の判決を引き起こした製品フォーク公開として、である。 [「フォーク戦争はオープンソースの話ではない分析」](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)は同じ 8 月 15 日の公開を、 Bitcoin Core のフォークが製品ソフトウェアの閾値を越えた日として扱い、統治失敗事例研究の論拠が依拠する日付として用いる。

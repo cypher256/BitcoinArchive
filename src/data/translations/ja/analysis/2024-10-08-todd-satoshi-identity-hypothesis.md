@@ -169,4 +169,4 @@ Bitcoin Institute がここで自ら立てる反論：サトシ投稿から 1 �
 - 本エントリーは新しい証拠を提示しない。公的に利用可能な資料を整理する。
 - 新しい証拠（直接の文書での接続、v0.1 コード内の技術的指紋でトッドの他の公開コードと一致するもの、トッドや関係者による公的記録と矛盾する発言など）が出現した場合、本エントリーは更新されるべきである。
 
-本ピーター・トッド同定仮説は二つの隣接記録に錨を下ろされている。 [HBO『Money Electric』ドキュメンタリーエントリ](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)は本仮説が出発点とする目立つ公的提唱である。 [サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は本仮説を Group C 分類に置き、「必要だが十分でない」評価枠組みの主要比較錨の一つとして用いる。
+本ピーター・トッド同定仮説は二つの隣接記録に根拠を置かれている。 [HBO『Money Electric』ドキュメンタリーエントリ](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)は本仮説が出発点とする目立つ公的提唱である。 [サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は本仮説を Group C 分類に置き、「必要だが十分でない」評価枠組みの主要な比較対象の一つとして用いる。

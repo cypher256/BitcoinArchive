@@ -101,4 +101,4 @@ flowchart TD
 
 上に挙げたのは、最も頻繁に引用される象徴的事例。ビットコインの記録された損失全体はもっと広く、初期のフォーラム損失報告 (2010 年 8 月の [BitcoinTalk topic-782 スレッド「Lost large number of bitcoins」](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-782/2010-08-11-re-lost-large-number-of-bitcoins/) は代表的な初期事例) や、メール往復レベルの損失報告 (Liberty Standard の [2009 年 11 月の失われたコイン群](/BitcoinArchive/ja/entries/correspondence/liberty-standard/2009-11-10-lost-six-sets-of-coins/)など) も含まれる。本横断ページは、新しい事案が公的記録に入るたびに ― 新たなハードウェアウォレット失敗、新たな保管者崩壊、既存の長期忘却事案の再発見など ― 個別エントリを `aftermath/` に新規追加し、上記の機構別表に 1 行追加するだけで拡張できる設計にしてある。骨格 (3 機構分類と不可逆性原理) は安定、事案リストだけが伸びていく。
 
-本象徴的損失横断ページは Mt. Gox 倒産に錨を下ろされる ― 損失目録における代表的な運用失敗機構として、 [Mt. Gox 倒産エントリ](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/)が本横断ページの各所で繰り返し参照される。
+本象徴的損失横断ページは Mt. Gox 倒産に根拠を置かれる ― 損失目録における代表的な運用失敗機構として、 [Mt. Gox 倒産エントリ](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/)が本横断ページの各所で繰り返し参照される。

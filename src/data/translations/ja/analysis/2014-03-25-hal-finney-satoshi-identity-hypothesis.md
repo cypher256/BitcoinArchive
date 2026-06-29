@@ -59,7 +59,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-ハル・フィニーは、日系米国人エンジニアのドリアン・サトシ・ナカモトから数ブロック離れた場所に住んでいた。Caltech で訓練を受けた暗号学者、[RPOW（Reusable Proof-of-Work、2004 年）](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/)の考案者、サトシ以外で最初にビットコインを稼働させたとされる人物、人類初の個人間ビットコイン取引（10 BTC、2009 年 1 月 12 日）の受領者である。地理的・経歴的な収束が[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)＝サトシ仮説の中核 —— [2014 年 3 月 25 日のアンディ・グリーンバーグによる Forbes 特集「Nakamoto's Neighbor」](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) が最も顕著に提唱し、同時にフラン・フィニーのレース当日の写真を主要な反証として提示した。仮説は[ジョン・カレイロウのニューヨーク・タイムズ・アダム・バック調査のためにフロリアン・カフィエロが 2026 年に実施した文体計量分析](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)でも再浮上し、フィニーは最近接マッチでアダム・バックとほぼ同点と報告された。さらに 2026 年 4 月公開の[サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、ハル・フィニーをレン・サッサマンと並ぶ共作者として提示している (主張と反証はリンク先を参照)。
+ハル・フィニーは、日系米国人エンジニアのドリアン・サトシ・ナカモトから数ブロック離れた場所に住んでいた。Caltech で訓練を受けた暗号学者、[RPOW（Reusable Proof-of-Work、2004 年）](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/)の考案者、サトシ以外で最初にビットコインを稼働させたとされる人物、人類初の個人間ビットコイン取引（10 BTC、2009 年 1 月 12 日）の受領者である。地理的・経歴的な一致が[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)＝サトシ仮説の中核 —— [2014 年 3 月 25 日のアンディ・グリーンバーグによる Forbes 特集「Nakamoto's Neighbor」](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/) が最も顕著に提唱し、同時にフラン・フィニーのレース当日の写真を主要な反証として提示した。仮説は[ジョン・カレイロウのニューヨーク・タイムズ・アダム・バック調査のためにフロリアン・カフィエロが 2026 年に実施した文体計量分析](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)でも再浮上し、フィニーは最近接マッチでアダム・バックとほぼ同点と報告された。さらに 2026 年 4 月公開の[サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、ハル・フィニーをレン・サッサマンと並ぶ共作者として提示している (主張と反証はリンク先を参照)。
 
 ## 1. 仮説の主張
 
@@ -183,7 +183,7 @@ timeline
 <!-- audit:quote-skip -->
 > 私はサトシ以外で最初にビットコインを動かした人物だったと思う。
 
-仮説が真であるためには、このエッセイは病床から、彼が 4 年間関わってきたビットコインコミュニティに宛てて、瀕死の人物が書いた持続的な自己欺瞞でなければならず、観客への利益も妥当な動機もない。シンプルな読みは、フィニーがサトシを彼が関わった人物 — その正体は彼にとっても謎のままだった人物 — として回想している、ということ。
+仮説が真であるためには、このエッセイは病床から、彼が 4 年間関わってきたビットコインコミュニティに宛てて、瀕死の人物が書いた持続的な自己欺瞞でなければならず、見せる相手もなく、妥当な動機もない。シンプルな読みは、フィニーがサトシを彼が関わった人物 — その正体は彼にとっても謎のままだった人物 — として回想している、ということ。
 
 [他候補に適用される自己記述枠組み](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)と比較して、フィニーの記述は異常に明確である: ビットコイン公開期についての彼の語り全体が、サトシを別人として扱っている候補である。
 
@@ -204,9 +204,9 @@ timeline
 
 ### 3.4 識別性論
 
-[ウェイ・ダイの 2014 年 AALWA スレッド回想](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)は、サトシが開発期間中に可視のサイファーパンクコミュニティで「以前から積極的に活動していた人物ではない」と論じる — これは 2007〜2008 年にサイファーパンク議論で可視に活動していた候補に対する反証として作用する読みである。フィニーはこの期間中、サイファーパンクコミュニティで継続的に可視だった: 匿名リメイラーを運営し、エクストロピー研究所と LessWrong に投稿し、自身の名前で冷凍保存と寿命延長コミュニティに関与していた。LessWrong での [2009 年 10 月の「Dying Outside」](/BitcoinArchive/ja/entries/aftermath/2009-10-05-hal-finney-dying-outside/) エッセイは、2008〜2009 年の開発・公開期間中の彼の活動の公的記録の一部である。
+[ウェイ・ダイの 2014 年 AALWA スレッド回想](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)は、サトシが開発期間中に可視のサイファーパンクコミュニティで「以前から積極的に活動していた人物ではない」と論じる — これは 2007〜2008 年にサイファーパンク議論で表立って活動していた候補に対する反証として作用する読みである。フィニーはこの期間中、サイファーパンクコミュニティで継続的に表に出ていた: 匿名リメイラーを運営し、エクストロピー研究所と LessWrong に投稿し、自身の名前で冷凍保存と寿命延長コミュニティに関与していた。LessWrong での [2009 年 10 月の「Dying Outside」](/BitcoinArchive/ja/entries/aftermath/2009-10-05-hal-finney-dying-outside/) エッセイは、2008〜2009 年の開発・公開期間中の彼の活動の公的記録の一部である。
 
-[識別性論](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)のもとで、フィニーの継続的な可視のサイファーパンク活動は、アダム・バック、サッサマン、その他の当該時期の可視に活動していた候補に当てはまるのと構造的に同じ問題である。
+[識別性論](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)のもとで、フィニーの継続的かつ表立ったサイファーパンク活動は、アダム・バック、サッサマン、その他の当該時期に表立って活動していた候補に当てはまるのと構造的に同じ問題である。
 
 ### 3.5 ALS 進行と 2010 年 8 月の特異点サミット
 
@@ -236,6 +236,6 @@ timeline
 - カフィエロの「ハル・フィニーがほぼ同点」結果は、フィニーまたはアダム・バックのいずれかの確認ではなく、*一意性*の問いに関する材料として扱われる。対称的な取り扱いについては[アダム・バック仮説エントリー](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)を参照。
 - 新しい証拠が浮上した場合 — フィニーの 2013 年枠組みと矛盾する非公開の執筆や通信、レース当日アリバイをサトシのネットワーク活動と偽造を必要としない形で和解させるもの、Patoshi 規模の保有とフィニーの遺産との記録された繋がり等 — 本エントリーは更新されるべきである。
 
-本ハル・フィニー同定仮説は[サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)によって Group B 候補分類の中に置かれ、総覧の「必要だが十分でない」評価枠組みの主要比較錨の一つとして用いられる。
+本ハル・フィニー同定仮説は[サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)によって Group B 候補分類の中に置かれ、総覧の「必要だが十分でない」評価枠組みの主要な比較対象の一つとして用いられる。
 
 *[編者注：本エントリーは 2014 年 3 月 25 日 Forbes 記事を、長期にわたる仮説の最も目立つ公的提唱として用いる。]*

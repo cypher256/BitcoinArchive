@@ -196,6 +196,6 @@ NYT 調査への応答としてバック自身が 2026 年 4 月に X に投稿�
 - カフィエロの「ハル・フィニーがほぼ並んだ」結果は、バック特定の*一意性*に対する実質的な反証として扱われる（[ハル・フィニーの概観プロファイル](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)と、フィニーを特定的に否定する[レース当日アリバイ](/BitcoinArchive/ja/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/)を参照）。
 - 新たな証拠が出現した場合 — 2008 年 8 月のメール通信を超える直接の文書接続、ビットコイン v0.1 にバックの他の公開コードと一致する技術的指紋、バックがそれまでの公的立場と矛盾する発言 — 本エントリーは更新されるべきである。
 
-本アダム・バック同定仮説は二つの一次資料記録に錨を下ろされている。 [2024 年 2 月のアダム・バック回顧的証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)は、本仮説の §3.2 が根拠的反証として構築する宣誓証言記録である。 [2026 年 4 月のニューヨーク・タイムズ・カレイロウ取材](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)は本仮説が出発点とするジャーナリスト的提唱であり、 §3.1 で 2008 年 8 月のメールチェーンに照らして秤にかけられる。
+本アダム・バック同定仮説は二つの一次資料記録に根拠を置かれている。 [2024 年 2 月のアダム・バック回顧的証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)は、本仮説の §3.2 が決定的な反証として構築する宣誓証言記録である。 [2026 年 4 月のニューヨーク・タイムズ・カレイロウ取材](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)は本仮説が出発点とするジャーナリスト的提唱であり、 §3.1 で 2008 年 8 月のメールチェーンに照らして秤にかけられる。
 
 *[編者注：本エントリーは 2026 年 4 月の NYT 調査を、長年の仮説の最も目立つ近年の定式化として扱う。]*
