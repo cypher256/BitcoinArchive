@@ -61,7 +61,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2026 年 4 月 8 日、ジョン・カレイロウ — Theranos 事件を暴いたピューリッツァー賞受賞ジャーナリスト — は、約 1 万語のニューヨーク・タイムズ調査記事で、Blockstream の CEO で Hashcash の発明者である[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の仮名の中の人として最も可能性が高いと結論づけた。バックは正体を否定した。
+2026 年 4 月 8 日、ジョン・カレイロウ — Theranos 事件を暴いたピューリッツァー賞受賞ジャーナリスト — は、約 1 万語のニューヨーク・タイムズ調査記事で、Blockstream の CEO で Hashcash の発明者である[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の仮名の中の人物として最も可能性が高いと結論づけた。バックは正体を否定した。
 
 ## 調査の方法論
 
@@ -121,4 +121,4 @@ translationStatus: complete
 
 アダム・バック＝サトシ仮説の分析的扱い（本調査の証拠を 2008 年 8 月のメール通信、2024 年の COPA 証言、より広い公開記録と比較して衡量する作業）については、[アダム・バック＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)を参照。
 
-本調査は、より広い同定コーパスの中に位置付ける複数の隣接記録から参照されている: [アダム・バック伝記](/BitcoinArchive/ja/participants/adam-back/)は本調査を直近のジャーナリスティック同定試行として記録する。文体計量記録 ― [2014 年 Aston 大学サボ研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)、 [van Dorst 2024 年コーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)、 [2026 年 van Dorst コーパス候補別再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) ― はカレイロウを定量手法と対比すべき直近のジャーナリスティック同定として扱う。ジャーナリスティック・文体計量同定の上流枠組み ― [サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)・[同定非対称性分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) ― はいずれもカレイロウ調査を、本アーカイブの構造的読みが意味付けの対象とする 2024 年以降の波の典型事例として位置付ける。
+本調査は、より広い同定コーパスの中に位置付ける複数の隣接記録から参照されている: [アダム・バック伝記](/BitcoinArchive/ja/participants/adam-back/)は本調査を直近の報道による同定の試みとして記録する。文体計量記録 ― [2014 年 Aston 大学サボ研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)、 [van Dorst 2024 年コーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)、 [2026 年 van Dorst コーパス候補別再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) ― はカレイロウを定量手法と対比すべき直近の報道による同定として扱う。報道と文体計量による同定の上流枠組み ― [サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)・[同定非対称性分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) ― はいずれもカレイロウ調査を、本アーカイブの構造的読みが意味付けの対象とする 2024 年以降の波の典型事例として位置付ける。

@@ -49,4 +49,4 @@ timeline
 
 ## サトシ候補としての位置
 
-マスクのサトシ候補としての立ち位置は、物証を欠いた 2017 年のブログ投稿一本と、能力・物腰の類似だけに依拠する —— サイファーパンクの記録も、暗号学的な繋がりも、候補の各次元でのプロファイル適合も無い。論とその反証は[イーロン・マスク＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2017-11-22-elon-musk-satoshi-identity-hypothesis/)に並べてある。[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、印象だけで組み立てられた説の最も明瞭な例として、彼を固有名候補の中に位置づけている。
+マスクのサトシ候補としての立ち位置は、物証を欠いた 2017 年のブログ投稿一本と、能力・物腰の類似だけに依拠する —— サイファーパンクの記録も、暗号学的な繋がりも、候補の各次元でのプロファイルの一致も無い。論とその反証は[イーロン・マスク＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2017-11-22-elon-musk-satoshi-identity-hypothesis/)に並べてある。[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、印象だけで組み立てられた説の最も明瞭な例として、彼を固有名候補の中に位置づけている。
