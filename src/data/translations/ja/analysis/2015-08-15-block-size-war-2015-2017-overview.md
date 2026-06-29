@@ -89,8 +89,8 @@ flowchart TD
 
 | 派閥 | 主要人物 | 中心主張 | 帰結 |
 |---|---|---|---|
-| **大ブロック派** | [マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)、 [ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)、 [ロジャー・バー](/BitcoinArchive/ja/participants/roger-ver/)、 [ジハン・ウー](/BitcoinArchive/ja/participants/jihan-wu/)、 [アモリー・セシェ](/BitcoinArchive/ja/participants/amaury-sechet/) | 1 MB は暫定措置であり撤廃必須、オンチェーン容量こそ唯一の拡張手段、オフチェーン層は仲介者リスクを再導入する | Bitcoin XT・ Bitcoin Classic・ Bitcoin Unlimited はいずれも起動失敗。 [ビットコインキャッシュ](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)が 2017 年 8 月 1 日に別チェーンとして分岐 |
-| **Core 開発者派** | グレゴリー・マクスウェル、ピーター・ヴイユ、ウラジミール・ファン・デル・ラーン | 争いのあるハードフォークはネットワークを分裂させる、ノードの分散性を保つ必要、拡張は SegWit + Lightning + ソフトフォークで達成可能 | SegWit は 2017 年 8 月 24 日に主鎖で起動。以降の主鎖更新 (2021 年タップルート) もソフトフォーク経路を踏襲。 Core レポジトリは支配的実装として継続 |
+| **大ブロック派** | [マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)、 [ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)、 [ロジャー・ヴァー](/BitcoinArchive/ja/participants/roger-ver/)、 [ジハン・ウー](/BitcoinArchive/ja/participants/jihan-wu/)、 [アモリー・セシェ](/BitcoinArchive/ja/participants/amaury-sechet/) | 1 MB は暫定措置であり撤廃必須、オンチェーン容量こそ唯一の拡張手段、オフチェーン層は仲介者リスクを再導入する | Bitcoin XT・ Bitcoin Classic・ Bitcoin Unlimited はいずれも起動失敗。 [ビットコインキャッシュ](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)が 2017 年 8 月 1 日に別チェーンとして分岐 |
+| **Core 開発者派** | グレゴリー・マクスウェル、ピーター・ウィーユ、ウラジミール・ファン・デル・ラーン | 争いのあるハードフォークはネットワークを分裂させる、ノードの分散性を保つ必要、拡張は SegWit + Lightning + ソフトフォークで達成可能 | SegWit は 2017 年 8 月 24 日に主鎖で起動。以降の主鎖更新 (2021 年タップルート) もソフトフォーク経路を踏襲。 Core レポジトリは支配的実装として継続 |
 | **NYA 折衷派** | [マイク・ベルシェ](/BitcoinArchive/ja/participants/mike-belshe/)、ジェフ・ガージック、ウェンセス・カサレス、エリック・ヴォーヒース、ピーター・スミス、ジハン・ウー | 業界主導の交渉により、 Core の選好する SegWit と、小幅なハードフォーク (2 MB) を抱き合わせ、中間案を提示 | 第一段 (SegWit) は 2017 年 8 月 24 日に実装。第二段 (2 MB ハードフォーク) は [11 月 8 日にベルシェが中止](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/)、予定起動ブロック 494784 の約 1 週間前 |
 
 派閥分類は事後的な整理で、当人たちの自己定義ではない。 2 年間に複数のアクターが派閥間を移動した ― 例えばジハン・ウーは NYA に署名しつつ、合意の第一段の期間中にビットコインキャッシュのフォークを支援した。上記の参加者は各派閥の主要提案発足時の代表的人物。その背後の支持層 (マイナー・取引所・フルノード運用者・個人保有者) は異質で揺れ動く立場を持っていた。
