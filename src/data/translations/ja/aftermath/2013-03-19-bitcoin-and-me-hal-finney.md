@@ -44,7 +44,7 @@ translationStatus: complete
 
 サトシが[暗号学メーリングリスト](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)でビットコインを発表した時、受けた反応はせいぜい懐疑的なものだった。暗号学者たちは、無知な素人による壮大な計画を数多く見てきたからね。彼らは条件反射的に拒絶する傾向があるんだ。
 
-私はもっと前向きだったよ。暗号通貨による決済システムに長い間興味を持っていたんだ。さらに幸運なことに、ビットコインで実現されるアイデアを生み出したとされる[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)にも[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)にも会い、長くやり取りを続けてこられたんだ。本当に幸運だったと思う。私自身もプルーフ・オブ・ワークに基づく通貨、[RPOW](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/) の作成を試みたことがある。だからビットコインは魅力的だと思ったんだ。
+私はもっと前向きだったよ。暗号技術による決済システムに長い間興味を持っていたんだ。さらに幸運なことに、ビットコインで実現されるアイデアを生み出したとされる[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)にも[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)にも会い、長くやり取りを続けてこられたんだ。本当に幸運だったと思う。私自身もプルーフ・オブ・ワークに基づく通貨、[RPOW](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/) の作成を試みたことがある。だからビットコインは魅力的だと思ったんだ。
 
 サトシがソフトウェアの最初のリリースを発表した時、すぐに入手したよ。サトシ以外でビットコインを動かした最初の人間は私だったと思う。ブロック 70番台のいくつかをマイニングし、[最初のビットコイン取引](/BitcoinArchive/ja/entries/tweets/hal-finney/2009-01-11-running-bitcoin/)の受取人になったんだ。サトシがテストとして 10 コインを私に送ってくれた。その後数日間、サトシとメールでやり取りした。主に私がバグを報告し、サトシがそれを修正するという内容だったよ。
 

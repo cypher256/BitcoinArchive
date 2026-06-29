@@ -57,7 +57,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 2024年10月8日、HBO がドキュメンタリー『Money Electric: The Bitcoin Mystery』を公開した。監督はカレン・ホーバック（『Q: Into the Storm』で知られる）。作品は Bitcoin Core 開発者[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)を、ビットコインの匿名の創設者[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の候補として名指しした。
 
-## フォーラム投稿理論
+## フォーラム投稿説
 
 <!-- speaker: narrator -->
 ドキュメンタリーの中心的な証拠は、2010年12月の BitcoinTalk でのやり取りだった。サトシがトランザクション置換——後に Replace-by-Fee（RBF）として知られる概念——を説明した。その約 1時間半後、トッド（ユーザー名[「retep」](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/)、Peter の逆綴り）が技術的な指摘で返信した。
@@ -68,7 +68,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 これはトッドの BitcoinTalk での 2回目の投稿で、登録からわずか 3日後だった。ホーバックは、トッドがサトシのアカウントではなく自分のアカウントから誤って投稿した——つまり返信ではなくサトシの投稿の続きだった——と主張した。両方のアカウントはその後沈黙し、[サトシの最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)は 2日後の 12月12日だった。
 
-## RBF との接続
+## RBF とのつながり
 
 <!-- speaker: narrator -->
 ドキュメンタリーは、このやり取りからトッドが後に [BIP 125](/BitcoinArchive/ja/entries/bip/2015-11-03-bip-0125/)（2015年）で Replace-by-Fee を正式化した事実への線を引き、トッドはサトシが始めたことを完成させた——同一人物だから——と論じた。ホーバックはまた、トッドが以前 RBF パッチを別名義で提出していたことにも言及し、異なる正体で活動するパターンがあると示唆した。
@@ -103,7 +103,7 @@ translationStatus: complete
 ドキュメンタリーはビットコインコミュニティから広く批判された。Bitcoin Magazine は「ビットコインへの侮辱——皮肉で、愚かで、危険」と題した記事を掲載した。批評家たちは、暗号学的証明も、文体分析も、美術系の学生がどうやって新しいコンセンサスメカニズムを設計できたかの説明もなく、状況証拠と偶然の一致に完全に依存していると指摘した。
 
 <!-- speaker: narrator -->
-トッドは後にこの作品の手法を「偶然の一致に基づく陰謀論的思考だろ」と切り捨てた。
+トッドは後にこの作品の手法を「偶然の一致に基づく陰謀論的思考」と切り捨てた。
 
 このドキュメンタリーは、ホーバックにとって匿名のインターネット上の人物を追跡する 2 作目の調査だった。1 作目の「Q: Into the Storm」（2021 年、QAnon 運動を追ったシリーズ）は概ね好評だったが、「Money Electric」はビットコインコミュニティと主流メディアの双方から否定的に受け止められた。
 

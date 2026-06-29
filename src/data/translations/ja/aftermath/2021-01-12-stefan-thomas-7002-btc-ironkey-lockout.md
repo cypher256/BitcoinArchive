@@ -1,5 +1,5 @@
 ---
-title: "ステファン・トーマス 7,002 BTC IronKey ロックアウト ― 残り 2 回でロック確定、数億ドルが凍結された記憶忘却の象徴"
+title: "ステファン・トーマス 7,002 BTC IronKey ロックアウト ― 残り 2 回でロック確定、数億ドルが凍結"
 date: 2021-01-12T00:00:00Z
 type: "article"
 source: "new-york-times"

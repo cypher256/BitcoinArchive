@@ -85,7 +85,7 @@ translationStatus: complete
 
 <!-- speaker: Mike Hearn -->
 <!-- audit:quote-skip -->
-> 「ただ一つ小さな問題があった。サトシはギャビンに実際にその仕事を引き受けたいかどうか尋ねたことはなく、実際、ギャビンは引き受けたくなかったのだ」
+> 「ただ一つ小さな問題があった。サトシはギャビンに、その仕事を引き受けたいかどうか実際には尋ねておらず、事実、一度も尋ねなかったのだ」
 
 <!-- speaker: Mike Hearn -->
 <!-- audit:quote-skip -->
