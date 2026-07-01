@@ -31,6 +31,7 @@ relatedEntries:
   - aftermath/2014-03-07-satoshi-p2p-foundation-return
   - aftermath/2014-03-06-newsweek-dorian-nakamoto
   - analysis/2008-08-20-satoshi-activity-timeline
+  - aftermath/2011-04-26-satoshi-final-known-email
 ---
 
 In an interview published by Uncommons on April 15, 2025, P2P Foundation founder [Michel Bauwens](/BitcoinArchive/participants/michel-bauwens/) looked back on his brief but direct contact with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/).
@@ -45,7 +46,7 @@ According to Bauwens, one message explained why Satoshi wanted to publish the Bi
 <!-- audit:quote-skip -->
 > "And offering me a few bitcoins. Unfortunately I didn't answer that proposal."
 
-Bauwens also recalled that Satoshi later wrote to deny being "the Japanese guy" identified in the press, and at one point promised to write again but never followed up.
+Bauwens also recalled that Satoshi later wrote to deny being "the Japanese guy" identified in the press, and at one point promised to write again but never followed up. This private message postdates [Satoshi's final known email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/) of April 2011, but the corresponding email itself is not preserved in the Archive, leaving it as a secondhand account.
 
 Although Bauwens said he was not enthusiastic about Bitcoin's energy requirements, he described its historical importance in much stronger terms:
 

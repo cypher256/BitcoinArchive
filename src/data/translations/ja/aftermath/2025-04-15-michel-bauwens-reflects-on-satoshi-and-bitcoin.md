@@ -31,6 +31,7 @@ relatedEntries:
   - aftermath/2014-03-07-satoshi-p2p-foundation-return
   - aftermath/2014-03-06-newsweek-dorian-nakamoto
   - analysis/2008-08-20-satoshi-activity-timeline
+  - aftermath/2011-04-26-satoshi-final-known-email
 translationStatus: complete
 ---
 
@@ -46,7 +47,7 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > 「それに、数ビットコインを送ろうという提案もあった。残念ながら、その提案には返事をしなかった」
 
-またミシェル・バウエンスは、後年に報道で「日本人のあの人物」がサトシだとされた際、サトシ本人が「自分はその人物ではない」と書いてきたこと、さらに「また書く」と言ったものの、その約束は果たされなかったことも回想している。
+またミシェル・バウエンスは、後年に報道で「日本人のあの人物」がサトシだとされた際、サトシ本人が「自分はその人物ではない」と書いてきたこと、さらに「また書く」と言ったものの、その約束は果たされなかったことも回想している。サトシがそう書いてきたのは 2011 年 4 月の[サトシの最後の既知のメール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)より後にあたるが、その文面自体はアーカイブに残っておらず、二次証言にとどまる。
 
 ミシェル・バウエンスは、ビットコインのエネルギー消費には当時から懐疑的だったとしつつ、その歴史的意義は高く評価した。
 
