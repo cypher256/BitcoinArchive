@@ -23,10 +23,13 @@ secondarySources:
     url: "https://www.coindesk.com/markets/2014/09/16/assange-bitcoin-and-wikileaks-helped-keep-each-other-alive"
   - name: "Bitbo Calendar — WikiLeaks Bypasses Sanctions Using Bitcoin"
     url: "https://bitbo.io/calendar/wikileaks-bypasses-sanctions/"
+  - name: "Cypherpunks Mailing List Archive — Julian Assange (proff@iq.org)"
+    url: "https://mailing-list-archive.cryptoanarchy.wiki/authors/julian_assange_proff_at_iq_org_/"
 relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
   - tweets/wikileaks/2011-06-14-accepts-bitcoin
+  - analysis/2008-10-31-cypherpunk-independent-arrival
 quotes:
   - id: "q1"
     person: "WikiLeaks"
@@ -63,3 +66,5 @@ Bitcoin proved to be WikiLeaks' lifeline. By 2016, the organization had raised o
 > "The American government forced us to invest in Bitcoin — thanks to the financial blockade. We got a 50,000% return."
 
 It was Bitcoin's first high-profile turn as censorship-resistant money — and it came only after the one person who had asked WikiLeaks to stay away, Satoshi, was no longer around to object.
+
+Assange himself had been an early cypherpunks mailing-list participant, posting under the pseudonym "Proff" from December 1995 — a decade before founding WikiLeaks. Satoshi, by contrast, reached the same movement's core principles with [no documented mailing-list history of his own](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).

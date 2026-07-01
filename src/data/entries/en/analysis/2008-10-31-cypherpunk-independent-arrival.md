@@ -66,6 +66,7 @@ relatedEntries:
   - analysis/2008-08-20-satoshi-activity-timeline
   - aftermath/2013-07-06-isamu-kaneko-biography
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
+  - aftermath/2011-06-14-wikileaks-accepts-bitcoin
 inlineLinkKeywords:
   - "Cypherpunk's Manifesto"
   - "independent arrival"

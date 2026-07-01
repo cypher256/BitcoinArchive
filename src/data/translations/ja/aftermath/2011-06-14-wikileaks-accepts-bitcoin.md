@@ -23,10 +23,13 @@ secondarySources:
     url: "https://www.coindesk.com/markets/2014/09/16/assange-bitcoin-and-wikileaks-helped-keep-each-other-alive"
   - name: "Bitbo Calendar — WikiLeaks Bypasses Sanctions Using Bitcoin"
     url: "https://bitbo.io/calendar/wikileaks-bypasses-sanctions/"
+  - name: "Cypherpunks Mailing List Archive — Julian Assange (proff@iq.org)"
+    url: "https://mailing-list-archive.cryptoanarchy.wiki/authors/julian_assange_proff_at_iq_org_/"
 relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
   - tweets/wikileaks/2011-06-14-accepts-bitcoin
+  - analysis/2008-10-31-cypherpunk-independent-arrival
 quotes:
   - id: "q1"
     person: "WikiLeaks"
@@ -64,3 +67,5 @@ WikiLeaks はサトシの懸念を尊重し採用を延期した — 注目す�
 > 「アメリカ政府は我々にビットコインへの投資を強制した — 金融封鎖のおかげで。我々は50,000%のリターンを得た。」
 
 これはビットコインが検閲耐性のある通貨として広く注目を浴びた最初の場面だった。しかもそれが起きたのは、WikiLeaks に使わないでくれと頼んだ当のサトシが、もう異を唱えられなくなってからのことだった。
+
+アサンジ自身、WikiLeaks 創設の 10年前にあたる 1995年12月から、サイファーパンクのメーリングリストに「Proff」の名で投稿していた初期参加者だった。一方サトシは、[同じ思想の核心に独自にたどり着きながら、このメーリングリストへの参加記録は残っていない](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)。
