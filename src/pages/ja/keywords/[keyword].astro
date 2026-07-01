@@ -4,6 +4,11 @@ import EntryCard from '../../../components/EntryCard.astro';
 import { useTranslations, getEntries, localePath, absoluteUrl } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 import { keywordIndex } from '../../../lib/keyword-index';
+import gitDates from '../../../data/git-dates.json';
+
+type LangDate = { createdAt: string; updatedAt: string };
+type GitDateRecord = { en?: LangDate; ja?: LangDate };
+const gitDateMap = gitDates as Record<string, GitDateRecord>;
 
 export async function getStaticPaths() {
   const out: Array<{ params: { keyword: string }; props: { keyword: string; enSlug?: string } }> = [];
@@ -80,12 +85,22 @@ const pageDescription =
       </div>
     )}
 
-    <p class="entry-count">
-      {displayBacklinks.length === 0
-        ? 'このキーワードを本文で言及しているエントリーはまだありません。'
-        : `${displayBacklinks.length} 件のエントリーがこのキーワードを本文で言及しています。`}
-    </p>
+    <div class="list-header">
+      <p class="entry-count">
+        {displayBacklinks.length === 0
+          ? 'このキーワードを本文で言及しているエントリーはまだありません。'
+          : `${displayBacklinks.length} 件のエントリーがこのキーワードを本文で言及しています。`}
+      </p>
+      {displayBacklinks.length > 0 && (
+        <div class="sort-controls">
+          <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+          <button class="sort-btn" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+          <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
+        </div>
+      )}
+    </div>
 
+    <div id="keyword-entries-list">
     {displayBacklinks.map((entry) => {
       const tid = resolveThreadId(entry);
       const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
@@ -104,9 +119,16 @@ const pageDescription =
           threadId={isThread ? tid : undefined}
           threadCount={isThread ? msgCount : undefined}
           participants={entry.data.participants}
+          createdAt={gitDateMap[entry.id]?.ja?.createdAt}
+          updatedAt={gitDateMap[entry.id]?.ja?.updatedAt}
         />
       );
     })}
+    </div>
+    <script>
+      import { initListSort } from '../../../scripts/list-sort';
+      initListSort('keyword-entries-list');
+    </script>
 
     <aside class="search-cta">
       <p>
@@ -125,6 +147,13 @@ const pageDescription =
 
 <style>
   h1 { margin-bottom: 0.25rem; word-break: break-word; }
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
   .page-lead {
     color: var(--color-text-muted);
     font-size: 0.95rem;

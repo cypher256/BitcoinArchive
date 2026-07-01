@@ -3,6 +3,7 @@ import { useTranslations, formatDate, formatDateMaybeTime, localePath, translate
 import { slugifyKeyword } from '../lib/keyword-slug.mjs';
 import type { Lang } from '../i18n/ui';
 import { keywordCounts } from '../lib/keyword-index';
+import { isEditorialPlacement } from '../lib/dateAxis';
 
 // Backlink-count lookup for `inlineLinkKeywords` display, sourced from
 // the shared `src/lib/keyword-index.ts` helper (which Vite resolves at
@@ -73,7 +74,7 @@ const { date, author, entryType, source, lang, participants = [], tags = [], inl
 // readers into thinking the editorial piece itself is dated to that
 // day. See temp/0518_一覧並び順と日付表示計画.md and
 // STYLE_GUIDE.md "Entry Dates" for the full rule.
-const isAnalysis = entryType === 'analysis' || entryType === 'design';
+const isAnalysis = isEditorialPlacement(entryType);
 const createdFallback = createdAt ?? updatedAt ?? date;
 const updatedFallback = updatedAt ?? date;
 const showDefinesRow = inlineLinkKeywords.length > 0 && (entryType === 'analysis' || entryType === 'article' || entryType === 'design');

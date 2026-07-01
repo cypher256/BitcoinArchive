@@ -2,16 +2,13 @@
 import { formatDate, localePath, translateParticipantName, findAuthorParticipant, useTranslations } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 import Avatar from './Avatar.astro';
+import { resolveDateAxis } from '../lib/dateAxis';
 
-// Card date axis:
-//   - analysis / design → updatedAt (editorial; "this is when it was
-//                  last revised"). Falls back to frontmatter.date if
-//                  git history is missing.
-//   - all other → frontmatter.date (historical anchor for the entry).
-// A short label ("Event" / "Updated" / "事象" / "更新") is rendered
-// before the date so the axis is visible. See
-// temp/0518_一覧並び順と日付表示計画.md and the EntryMeta page-level
-// rule of the same name.
+// Card date axis: see src/lib/dateAxis.ts for the type → axis mapping
+// (analysis/design default to updatedAt; every other type to
+// frontmatter.date). A short label ("Event" / "Added" / "Updated" /
+// "事象" / "登録" / "更新") is rendered before the date so the axis is
+// visible. See the EntryMeta page-level rule of the same name.
 
 interface Participant {
   name: string;
@@ -41,16 +38,10 @@ const { id, title, date, author, source, description, isSatoshi, lang, threadId,
 // Derived here so the 16 listing callers don't each have to pass it.
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 const isBiography = entryType === 'biography';
-const isAnalysis = entryType === 'analysis' || entryType === 'design';
 const t = useTranslations(lang);
-// Pick the date axis for the card. Analyses render the editorial
-// updatedAt (with a fallback chain so a missing git record never
-// breaks rendering); other types render the frontmatter event date.
-const updatedDate = updatedAt ? new Date(updatedAt) : undefined;
-const cardDate = isAnalysis ? (updatedDate ?? date) : date;
-const cardDateLabel = isAnalysis
-  ? t('entry.updated' as any)
-  : t('entry.event' as any);
+const dateAxis = resolveDateAxis(entryType, { dateIso: date.toISOString(), createdAtIso: createdAt, updatedAtIso: updatedAt });
+const cardDate = new Date(dateAxis.iso);
+const cardDateLabel = t(`entry.${dateAxis.labelKey}` as any);
 const typeLabel = entryType ? (t(`type.${entryType}` as any) || entryType) : (t(`source.${source}` as any) || source);
 const href = threadId
   ? localePath(`/entries/threads/${threadId}/`, lang)

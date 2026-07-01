@@ -11,6 +11,8 @@
 // deferred module, to hide the list early).
 //
 // `algoliasearch` is provided as a global by the UMD <script> the page loads.
+import { defaultDateAxis } from '../lib/dateAxis';
+
 export function initEntriesBrowse() {
   var cfgEl = document.getElementById('entries-config');
   if (!cfgEl) return;
@@ -62,7 +64,7 @@ export function initEntriesBrowse() {
   var coupled = false;
   // sort key -> { attr: card data-* suffix to read, label: date-axis label }.
   function axisInfo(key) {
-    if (key === 'created') return { attr: 'created', label: uiLabels.created };
+    if (key === 'created') return { attr: 'created', label: uiLabels.added };
     if (key === 'updated') return { attr: 'updated', label: uiLabels.updated };
     return { attr: 'date', label: uiLabels.event };
   }
@@ -165,13 +167,12 @@ export function initEntriesBrowse() {
     // own <mark>) into one continuous highlight.
     var title = ((hr.title && hr.title.value) || esc(h.title)).replace(/<\/mark>\s*<mark>/g, '');
     var type = h.type || '';
-    var isAnalysis = type === 'analysis' || type === 'design';
-    var isEditorial = isAnalysis || type === 'article';
+    var isEditorial = type === 'analysis' || type === 'design' || type === 'article';
     // Date axis: once the reader has picked a sort, every result shows that
     // axis (event / created / updated) so the visible date explains the order.
-    // Before any sort, mirror EntryCard's type-meaningful default — analysis/
-    // design show the editorial updated date (fallback to event), every other
-    // type shows the event date.
+    // Before any sort, mirror EntryCard's type-meaningful default (see
+    // src/lib/dateAxis.ts): analysis/design show the editorial updated date
+    // (fallback to event), every other type shows the event date.
     var rawDate, dateLabel;
     if (coupled) {
       var ai = axisInfo(sortState.key);
@@ -180,8 +181,9 @@ export function initEntriesBrowse() {
               : h.date;
       dateLabel = ai.label;
     } else {
-      rawDate = isAnalysis ? (h.updatedTs || h.date) : h.date;
-      dateLabel = isAnalysis ? uiLabels.updated : uiLabels.event;
+      var defAxis = defaultDateAxis(type);
+      rawDate = defAxis === 'updated' ? (h.updatedTs || h.date) : h.date;
+      dateLabel = uiLabels[defAxis];
     }
     var dateStr = rawDate ? fmtDate(rawDate) : '';
     var typeLabel = typeLabels[type] || type;

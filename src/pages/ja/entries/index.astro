@@ -71,7 +71,7 @@ for (const e of allEntries) {
   }
   if (d.type && typeLabels[d.type] === undefined) typeLabels[d.type] = t(`type.${d.type}` as any) || d.type;
 }
-const uiLabels = { event: t('entry.event' as any), created: t('entry.created' as any), updated: t('entry.updated' as any), biography: t('entry.biography' as any) };
+const uiLabels = { event: t('entry.event' as any), added: t('entry.added' as any), updated: t('entry.updated' as any), biography: t('entry.biography' as any) };
 
 const pageDescription = "サトシ・ナカモトと初期ビットコイン貢献者によるコミュニケーションの完全な時系列アーカイブ。フォーラム投稿、メーリングリスト、個人メール、一次資料を、原典を保持した形で収録。";
 
@@ -162,10 +162,10 @@ const structuredData = {
           </label>
         </div>
         <div class="sort-controls" id="sort-controls">
-          <button class:list={["sort-btn", { active: !hasGitDates }]} data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+          <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
           {hasGitDates && (
             <>
-              <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+              <button class="sort-btn" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
               <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
             </>
           )}

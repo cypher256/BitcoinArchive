@@ -3,6 +3,11 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
 import { useTranslations, getDisplayEntries, absoluteUrl } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
+import gitDates from '../../../data/git-dates.json';
+
+type LangDate = { createdAt: string; updatedAt: string };
+type GitDateRecord = { en?: LangDate; ja?: LangDate };
+const gitDateMap = gitDates as Record<string, GitDateRecord>;
 
 export async function getStaticPaths() {
   const { getDisplayEntries } = await import('../../../i18n/utils');
@@ -81,36 +86,58 @@ const structuredData = {
   <div class="container-wide">
     <h1>{sourceLabel}</h1>
     <p class="page-lead">この経路（ソース）に由来するエントリー。ソース軸を辿ると、サトシたちが当時使った場の変遷が見えます。</p>
-    <p class="entry-count">
-      {rawEntryCount} エントリー
-      {threadCount > 0 && <> / {threadCount} スレッド</>}
-    </p>
-    {displayEntries.map((entry) => {
-      const tid = resolveThreadId(entry);
-      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
-      const isThread = msgCount >= 2;
-      return (
-        <EntryCard
-          id={entry.id}
-          title={isThread ? threadTitles.get(tid!) || entry.data.title : entry.data.title}
-          date={entry.data.date}
-          author={entry.data.author}
-          entryType={entry.data.type}
-          source={entry.data.source}
-          description={entry.data.description}
-          isSatoshi={entry.data.isSatoshi}
-          lang={lang}
-          threadId={isThread ? tid : undefined}
-          threadCount={isThread ? msgCount : undefined}
-          participants={entry.data.participants}
-        />
-      );
-    })}
+    <div class="list-header">
+      <p class="entry-count">
+        {rawEntryCount} エントリー
+        {threadCount > 0 && <> / {threadCount} スレッド</>}
+      </p>
+      <div class="sort-controls">
+        <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+        <button class="sort-btn" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+        <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
+      </div>
+    </div>
+    <div id="source-entries-list">
+      {displayEntries.map((entry) => {
+        const tid = resolveThreadId(entry);
+        const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+        const isThread = msgCount >= 2;
+        return (
+          <EntryCard
+            id={entry.id}
+            title={isThread ? threadTitles.get(tid!) || entry.data.title : entry.data.title}
+            date={entry.data.date}
+            author={entry.data.author}
+            entryType={entry.data.type}
+            source={entry.data.source}
+            description={entry.data.description}
+            isSatoshi={entry.data.isSatoshi}
+            lang={lang}
+            threadId={isThread ? tid : undefined}
+            threadCount={isThread ? msgCount : undefined}
+            participants={entry.data.participants}
+            createdAt={gitDateMap[entry.id]?.ja?.createdAt}
+            updatedAt={gitDateMap[entry.id]?.ja?.updatedAt}
+          />
+        );
+      })}
+    </div>
+    <script>
+      import { initListSort } from '../../../scripts/list-sort';
+      initListSort('source-entries-list');
+    </script>
   </div>
 </BaseLayout>
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
   .page-lead {
     color: var(--color-text-muted);
     font-size: 0.95rem;
