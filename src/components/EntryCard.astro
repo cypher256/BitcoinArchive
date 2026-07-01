@@ -4,11 +4,11 @@ import type { Lang } from '../i18n/ui';
 import Avatar from './Avatar.astro';
 import { resolveDateAxis } from '../lib/dateAxis';
 
-// Card date axis: see src/lib/dateAxis.ts for the type → axis mapping
-// (analysis/design default to updatedAt; every other type to
-// frontmatter.date). A short label ("Event" / "Added" / "Updated" /
-// "事象" / "登録" / "更新") is rendered before the date so the axis is
-// visible. See the EntryMeta page-level rule of the same name.
+// Card date axis: every list surface starts coupled to the "created"
+// (registered/登録) axis, matching the sort button that starts active on
+// every list — see src/lib/dateAxis.ts. A short label ("Event" / "Added" /
+// "Updated" / "事象" / "登録" / "更新") is rendered before the date so the
+// axis is visible.
 
 interface Participant {
   name: string;
@@ -39,7 +39,7 @@ const { id, title, date, author, source, description, isSatoshi, lang, threadId,
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 const isBiography = entryType === 'biography';
 const t = useTranslations(lang);
-const dateAxis = resolveDateAxis(entryType, { dateIso: date.toISOString(), createdAtIso: createdAt, updatedAtIso: updatedAt });
+const dateAxis = resolveDateAxis({ dateIso: date.toISOString(), createdAtIso: createdAt, updatedAtIso: updatedAt });
 const cardDate = new Date(dateAxis.iso);
 const cardDateLabel = t(`entry.${dateAxis.labelKey}` as any);
 const typeLabel = entryType ? (t(`type.${entryType}` as any) || entryType) : (t(`source.${source}` as any) || source);

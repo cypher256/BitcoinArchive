@@ -4,7 +4,6 @@ import EntryCard from '../../components/EntryCard.astro';
 import { useTranslations, getDisplayEntries, absoluteUrl } from '../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
 import gitDates from '../../data/git-dates.json';
-import { isEditorialPlacement } from '../../lib/dateAxis';
 
 type LangDate = { createdAt: string; updatedAt: string };
 type GitDateRecord = { en?: LangDate; ja?: LangDate };
@@ -28,31 +27,14 @@ const { type, hasJa } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.type === type);
-// `analysis` is editorial — sort by content updatedAt (git history) so
-// the most recently edited or newly added analysis surfaces first.
-// All other types are anchored to historical events; the event date
-// remains the meaningful ordering axis (a recent edit on an old
-// primary-source entry should not push it to the top). See
-// temp/0518_一覧並び順と日付表示計画.md.
-function entryUpdatedTs(id: string, fallback: Date): number {
-  // Fallback chain matches the plan: git updatedAt -> git createdAt
-  // -> frontmatter.date. Without the createdAt middle step, a
-  // brand-new analysis whose first commit hasn't yet flowed into
-  // git-dates.json would drop to its frontmatter.date (the date of
-  // the historical event), which on the analysis listing would
-  // sink it below much older but recently-revised analyses. The
-  // createdAt step keeps the listing coherent for the brief window
-  // between first commit and next git-dates regeneration.
-  const rec = gitDateMap[id]?.en;
-  const ts = rec?.updatedAt ?? rec?.createdAt;
-  return ts ? new Date(ts).getTime() : fallback.getTime();
-}
-const isAnalysisType = isEditorialPlacement(type);
-const displayEntries = isAnalysisType
-  ? collapseThreads(filtered, threadCounts, threadStarters)
-      .slice()
-      .sort((a, b) => entryUpdatedTs(b.id, b.data.date) - entryUpdatedTs(a.id, a.data.date))
-  : collapseThreads(filtered, threadCounts, threadStarters).reverse();
+// Default order is "recently added" (created desc), same axis as /entries —
+// see NovelBitCoin src/archive/todo/20260701_日付メタデータとソートUI_体系再設計.md.
+// Every list surface starts on this one axis regardless of type, so the
+// "登録" sort button can start active and match what every card displays.
+const createdKey = (id: string, fallback: Date): string => gitDateMap[id]?.en?.createdAt ?? fallback.toISOString();
+const displayEntries = collapseThreads(filtered, threadCounts, threadStarters)
+  .slice()
+  .sort((a, b) => createdKey(b.id, b.data.date).localeCompare(createdKey(a.id, a.data.date)));
 const typeLabel = t(`type.${type}` as any) || type;
 
 const pageDescription = `${typeLabel} entries — Satoshi Nakamoto and early Bitcoin contributors' communications captured in this format, with original sources preserved.`;
@@ -104,7 +86,7 @@ const structuredData = {
       <p class="entry-count">{displayEntries.length} entries</p>
       <div class="sort-controls">
         <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
-        <button class="sort-btn" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+        <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
         <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
       </div>
     </div>

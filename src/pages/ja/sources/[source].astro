@@ -27,7 +27,12 @@ const { source, hasEn } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.source === source);
-const displayEntries = collapseThreads(filtered, threadCounts, threadStarters).reverse();
+// Default order is "recently added" (created desc), same axis as /entries.
+// See NovelBitCoin src/archive/todo/20260701_日付メタデータとソートUI_体系再設計.md.
+const createdKey = (id: string, fallback: Date): string => gitDateMap[id]?.ja?.createdAt ?? fallback.toISOString();
+const displayEntries = collapseThreads(filtered, threadCounts, threadStarters)
+  .slice()
+  .sort((a, b) => createdKey(b.id, b.data.date).localeCompare(createdKey(a.id, a.data.date)));
 const sourceLabel = t(`source.${source}` as any) || source;
 
 // Card vs entry: collapseThreads bundles same-thread messages into a single
@@ -93,7 +98,7 @@ const structuredData = {
       </p>
       <div class="sort-controls">
         <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
-        <button class="sort-btn" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+        <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
         <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
       </div>
     </div>

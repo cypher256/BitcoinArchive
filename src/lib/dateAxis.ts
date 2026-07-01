@@ -1,7 +1,9 @@
 // Single source of truth for which entry types treat `frontmatter.date` as a
-// verifiable historical fact vs an editorial placement anchor, and which date
-// axis (event / created / updated) a card defaults to before a reader picks a
-// sort. See NovelBitCoin src/archive/todo/20260701_日付メタデータとソートUI_体系再設計.md
+// verifiable historical fact vs an editorial placement anchor (used only by
+// the entry-detail page, EntryMeta.astro, to pick which date-field pair to
+// show), and for resolving which date value + label an entry card shows on
+// list surfaces. See
+// NovelBitCoin src/archive/todo/20260701_日付メタデータとソートUI_体系再設計.md
 // for the full reasoning. No Astro dependency — safe to import from both
 // server components (.astro) and the client bundle (src/scripts/*.ts).
 
@@ -17,14 +19,6 @@ export function isEditorialPlacement(entryType: string | undefined): boolean {
 }
 
 export type DateAxisKey = 'event' | 'created' | 'updated';
-
-// The axis a card shows before the reader has touched sort (and on pages
-// with no sort UI at all): editorial-placement types default to the
-// "updated" axis (their frontmatter.date isn't the meaningful anchor);
-// every other type defaults to "event".
-export function defaultDateAxis(entryType: string | undefined): DateAxisKey {
-  return isEditorialPlacement(entryType) ? 'updated' : 'event';
-}
 
 // entry.<labelKey> is always the right i18n lookup for the label — the three
 // DateAxisKey values ('event' | 'created' | 'updated') were picked to match
@@ -48,19 +42,17 @@ export interface DateAxisResult {
   labelKey: DateAxisLabelKey;
 }
 
-// Resolve which date value + label an entry card shows. `sortKey`, when
-// given, is the reader's active sort axis on a page that offers sort
-// controls; omit it to get the type-meaningful default.
+// Resolve which date value + label an entry card shows. `sortKey` is the
+// list's active sort axis; every list surface now starts already coupled to
+// "created" (the registered/登録 axis — see the plan doc's "always one of
+// the 3 buttons" decision), so every card, regardless of type, shows the
+// same axis until the reader picks a different one. Omitting sortKey falls
+// back to that same "created" default for callers with no sort UI.
 export function resolveDateAxis(
-  entryType: string | undefined,
   dates: DateAxisDates,
-  sortKey?: 'date' | 'created' | 'updated',
+  sortKey: 'date' | 'created' | 'updated' = 'created',
 ): DateAxisResult {
-  const axis: DateAxisKey =
-    sortKey === 'created' ? 'created' :
-    sortKey === 'updated' ? 'updated' :
-    sortKey === 'date' ? 'event' :
-    defaultDateAxis(entryType);
+  const axis: DateAxisKey = sortKey === 'date' ? 'event' : sortKey === 'updated' ? 'updated' : 'created';
   if (axis === 'created') return { iso: dates.createdAtIso ?? dates.dateIso, labelKey: 'added' };
   if (axis === 'updated') return { iso: dates.updatedAtIso ?? dates.dateIso, labelKey: 'updated' };
   return { iso: dates.dateIso, labelKey: 'event' };

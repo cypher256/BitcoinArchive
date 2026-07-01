@@ -4,7 +4,6 @@ import EntryCard from '../../../components/EntryCard.astro';
 import { useTranslations, getDisplayEntries, absoluteUrl } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 import gitDates from '../../../data/git-dates.json';
-import { isEditorialPlacement } from '../../../lib/dateAxis';
 
 type LangDate = { createdAt: string; updatedAt: string };
 type GitDateRecord = { en?: LangDate; ja?: LangDate };
@@ -31,21 +30,13 @@ const { type, hasEn } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.type === type);
-// Analysis listings sort by editorial updatedAt (git history); other
-// types stay on frontmatter.date descending. See EN mirror
-// src/pages/types/[type].astro and temp/0518_一覧並び順と日付表示計画.md.
-function entryUpdatedTs(id: string, fallback: Date): number {
-  // Fallback chain matches the EN mirror (see comment there).
-  const rec = gitJa(id);
-  const ts = rec?.updatedAt ?? rec?.createdAt;
-  return ts ? new Date(ts).getTime() : fallback.getTime();
-}
-const isAnalysisType = isEditorialPlacement(type);
-const displayEntries = isAnalysisType
-  ? collapseThreads(filtered, threadCounts, threadStarters)
-      .slice()
-      .sort((a, b) => entryUpdatedTs(b.id, b.data.date) - entryUpdatedTs(a.id, a.data.date))
-  : collapseThreads(filtered, threadCounts, threadStarters).reverse();
+// Default order is "recently added" (created desc), same axis as /entries.
+// See EN mirror src/pages/types/[type].astro and
+// NovelBitCoin src/archive/todo/20260701_日付メタデータとソートUI_体系再設計.md.
+const createdKey = (id: string, fallback: Date): string => gitJa(id)?.createdAt ?? fallback.toISOString();
+const displayEntries = collapseThreads(filtered, threadCounts, threadStarters)
+  .slice()
+  .sort((a, b) => createdKey(b.id, b.data.date).localeCompare(createdKey(a.id, a.data.date)));
 const typeLabel = t(`type.${type}` as any) || type;
 
 const pageDescription = `${typeLabel}形式のエントリー。サトシ・ナカモトと初期ビットコイン貢献者によるこの形式の通信を、原典とともにアーカイブから集約。`;
@@ -97,7 +88,7 @@ const structuredData = {
       <p class="entry-count">{displayEntries.length} エントリー</p>
       <div class="sort-controls">
         <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
-        <button class="sort-btn" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+        <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
         <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
       </div>
     </div>

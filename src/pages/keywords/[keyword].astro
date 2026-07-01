@@ -48,8 +48,11 @@ const backlinkIds = localeData.backlinks[keyword] ?? [];
 const entries = await getEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const backlinks = entries.filter((e) => backlinkIds.includes(e.id));
+// Default order is "recently added" (created desc), same axis as /entries.
+// See NovelBitCoin src/archive/todo/20260701_日付メタデータとソートUI_体系再設計.md.
+const createdKey = (id: string, fallback: Date): string => gitDateMap[id]?.en?.createdAt ?? fallback.toISOString();
 const displayBacklinks = collapseThreads(backlinks, threadCounts, threadStarters)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+  .sort((a, b) => createdKey(b.id, b.data.date).localeCompare(createdKey(a.id, a.data.date)));
 
 const definitionEntry = definitionKind === 'concept' && definitionTarget
   ? entries.find((e) => e.id === definitionTarget)
@@ -96,7 +99,7 @@ const pageDescription =
       {displayBacklinks.length > 0 && (
         <div class="sort-controls">
           <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
-          <button class="sort-btn" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+          <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
           <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
         </div>
       )}

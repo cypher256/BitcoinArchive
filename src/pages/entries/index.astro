@@ -162,10 +162,10 @@ const structuredData = {
           </label>
         </div>
         <div class="sort-controls" id="sort-controls">
-          <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+          <button class:list={["sort-btn", { active: !hasGitDates }]} data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
           {hasGitDates && (
             <>
-              <button class="sort-btn" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+              <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
               <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
             </>
           )}
