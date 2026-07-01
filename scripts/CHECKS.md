@@ -49,6 +49,11 @@ of truth; the role column below is a one-line pointer, not a restatement.
 - **`check-bios-rendering`** is a manual visual gate
   (`check:bios-rendering`, needs `npm run dev` + Playwright); not in CI.
 - **`audit-*`** run on demand via their `audit:<name>` ports.
+- **`npm run check`** is wrapped by `with-lock.mjs`, which refuses to
+  start a second concurrent `check` run (multiple sessions working on
+  this repo can otherwise launch `check` around the same time and race
+  on the same generated files). The real gate chain lives in
+  `check:run`; `check` itself is just `with-lock.mjs` + `check:run`.
 
 ## Registry — `check-*` (gates)
 
@@ -111,6 +116,7 @@ breaks the build). `tool` = manual, run on demand — reusable, not spent.
 | `generate-git-dates.mjs` | Build `git-dates.json` (per-locale created/updated from git) | pipeline (dev/build/check; post-commit) |
 | `generate-keyword-index.mjs` | Build `keyword-index.json` (auto-link keywords) | pipeline (dev/build/check) |
 | `sync-content.mjs` | Run `astro sync` (content-collection types) | pipeline (check) |
+| `with-lock.mjs` | Refuse a second concurrent `npm run check:run` (PID lock in the OS temp dir; dead/stale locks reclaimed) | pipeline (check) |
 | `apply-dead-link-fixes.mjs` | Apply dead-link fixes to frontmatter `url` / `sourceUrl` | tool |
 | `enrich-dead-links-with-wayback.mjs` | Replace dead links with Wayback URLs | tool |
 | `create-ja-stubs.mjs` | Create JA translation stub files from EN entries | tool |
