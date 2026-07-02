@@ -994,6 +994,29 @@ th {
   overflow-y: hidden;
 }
 
+/* Nodes wrapped in <a> by rehype-mermaid-link.mjs (`%% link: URL`
+   comments) are real navigable links, but mermaid's own renderer never
+   marks them "clickable" — the wrapping happens after render, as a
+   rehype pass, specifically to survive static SSR (see that file's
+   docstring). So the linked node gets no native affordance at all.
+   Only SOME nodes in a diagram carry a link (selective linking is a
+   documented feature of that plugin), so the cue must target linked
+   nodes only, not the whole diagram. A stroke outline (not a text or
+   fill color) works regardless of each node's own theme fill, is
+   visible at rest without :hover (mobile has no hover), and reuses
+   --mermaid-link — a token already reserved for exactly this ("clickable
+   ... fill", see the token block above) but never applied anywhere. */
+.figure-block[data-kind="mermaid"] a { cursor: pointer; }
+.figure-block[data-kind="mermaid"] a .node-bkg,
+.figure-block[data-kind="mermaid"] a rect.task {
+  stroke: var(--mermaid-link);
+  stroke-width: 2px;
+}
+.figure-block[data-kind="mermaid"] a:hover .node-bkg,
+.figure-block[data-kind="mermaid"] a:hover rect.task {
+  filter: brightness(1.15);
+}
+
 /* Tables already carry per-cell borders that define the figure's
    visual area; an outer block border + background creates a
    visible double border. Strip the wrapper styling for tables —
