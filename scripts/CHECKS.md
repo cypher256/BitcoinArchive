@@ -54,6 +54,11 @@ of truth; the role column below is a one-line pointer, not a restatement.
   this repo can otherwise launch `check` around the same time and race
   on the same generated files). The real gate chain lives in
   `check:run`; `check` itself is just `with-lock.mjs` + `check:run`.
+  `check:run` runs `scripts/run-check-parallel.mjs`, which executes the
+  same scripts as a flat `&&` chain used to, but concurrently within each
+  dependency phase (registry → generators → validators → content sync)
+  instead of one script at a time — see that file's header for the
+  phase/dependency reasoning.
 
 ## Registry — `check-*` (gates)
 
@@ -74,7 +79,7 @@ of truth; the role column below is a one-line pointer, not a restatement.
 | `check-source-duplication.mjs` | `sourceUrl` not duplicated in `secondarySources[]` | none | check + build (`--strict`) · `check:source-duplication` |
 | `check-halving-consistency.mjs` | Embed's self-contained halving array (chart-embeds.js) matches `halvings.json` | none | check + build · `check:halving-consistency` |
 | `check-quotes.mjs` | Quote attribution chain (markers ↔ `quotes[]`) | none | check + build · `check:quotes` |
-| `check-tweet-metadata.mjs` | Tweet `xHandle` invariants | none | check + build (aggregate) |
+| `check-tweet-metadata.mjs` | Tweet `xHandle` invariants | none | check + build · `check:tweet-metadata` |
 | `check-duplicate-ids.mjs` | Real duplicate-id collisions within a collection | none | check + build · `check:duplicate-ids` |
 | `check-internal-links.mjs` | Internal markdown link targets resolve | none | check + build · `check:internal-links` (also `audit:inline-reference-gaps`) |
 | `check-inline-link-coverage.mjs` | Auto-link keyword coverage | none | check only · `check:inline-link-coverage` (also `audit:inline-link-coverage`) |
@@ -117,6 +122,7 @@ breaks the build). `tool` = manual, run on demand — reusable, not spent.
 | `generate-keyword-index.mjs` | Build `keyword-index.json` (auto-link keywords) | pipeline (dev/build/check) |
 | `sync-content.mjs` | Run `astro sync` (content-collection types) | pipeline (check) |
 | `with-lock.mjs` | Refuse a second concurrent `npm run check:run` (PID lock in the OS temp dir; dead/stale locks reclaimed) | pipeline (check) |
+| `run-check-parallel.mjs` | Run `check:run`'s scripts in dependency-ordered phases (registry → generators → validators → content sync), concurrently within each phase instead of one at a time | pipeline (check) |
 | `apply-dead-link-fixes.mjs` | Apply dead-link fixes to frontmatter `url` / `sourceUrl` | tool |
 | `enrich-dead-links-with-wayback.mjs` | Replace dead links with Wayback URLs | tool |
 | `create-ja-stubs.mjs` | Create JA translation stub files from EN entries | tool |
