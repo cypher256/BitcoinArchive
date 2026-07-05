@@ -42,6 +42,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2009-01-09-satoshi-windows-development-environment
+  - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
 inlineLinkKeywords:
   - "Todd hypothesis"
   - "Todd = Satoshi"
@@ -152,7 +153,7 @@ A self-denial is not by itself dispositive — Wright self-claimed and the COPA 
 
 ### 3.5 Bitcoin community technical critique
 
-The documentary was widely criticized by the Bitcoin technical community within days of release. Bitcoin Magazine called it "An Insult to Bitcoin — Cynical, Stupid, and Dangerous." Cointelegraph catalogued specific factual errors. Critics noted that the film relied entirely on circumstantial evidence and coincidence-based reasoning, with no cryptographic proof, no formal stylometric analysis, and no explanation for how an undergraduate fine-arts student could have designed a novel consensus mechanism.
+The documentary was widely criticized by the Bitcoin technical community within days of release. Bitcoin Magazine called it "An Insult to Bitcoin — Cynical, Stupid, and Dangerous." Cointelegraph catalogued specific factual errors. Critics noted that the film relied entirely on circumstantial evidence and coincidence-based reasoning, with no cryptographic proof, no formal stylometric analysis, and no explanation for how an undergraduate fine-arts student could have designed a novel consensus mechanism. That quantitative gap remains open — [Bitcoin Institute's reanalysis of van Dorst's stylometric corpus](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) ranks five other named candidates against 12,739 mailing-list authors, but Todd himself was not active in the 1992–2000 cryptography-mailing-list community that corpus covers and so has never been given the same quantitative treatment.
 
 The technical-community rejection of the documentary's evidence does not by itself rule out the underlying hypothesis — community sentiment is not evidence. But it does mean that the documentary's specific evidentiary case has not survived expert review.
 

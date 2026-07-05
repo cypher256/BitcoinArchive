@@ -57,6 +57,7 @@ relatedEntries:
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
   - "analysis/2013-12-05-szabo-satoshi-identity-hypothesis"
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
+  - analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
@@ -169,7 +170,7 @@ NYT 調査への応答としてバック自身が 2026 年 4 月に X に投稿�
 
 ### 3.2 2024 年 2 月 COPA 対ライト裁判での宣誓証言
 
-[2024 年 2 月、バックはロンドンの COPA 対ライト裁判で証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)し、サトシとの完全なメール通信を宣誓のもと証人証拠として提出した。証言は法廷での主要な知的財産訴訟の一部として行われた。バックは複数のインタビュー・講演・法的手続を通じて、サトシは別人であると一貫して公的に主張してきた。
+[2024 年 2 月、バックはロンドンの COPA 対ライト裁判で証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)し、サトシとの完全なメール通信を宣誓のもと証人証拠として提出した。証言は法廷での主要な知的財産訴訟の一部として行われた。バックは複数のインタビュー・講演・法的手続を通じて、サトシは別人であると一貫して公的に主張してきた。同じ COPA 対ライト裁判は、2024 年 3 月にクレイグ・ライトの対抗するサトシ主張を退ける判決も生んでおり、ライトが証拠を偽造していたとする裁判所の認定は[クレイグ・ライト仮説のエントリー](/BitcoinArchive/ja/entries/analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis/)で扱われている。
 
 仮説が真であるためには、2024 年の証言は偽証であり、宣誓のもとの法廷手続における持続的な欺瞞であり、さらに「サトシ」と「バック」のメール通信がそうした瞬間に備えて 16 年前に偽造または自作自演されたものでなければならない、ということになる。
 

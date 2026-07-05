@@ -33,6 +33,7 @@ partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - aftermath/2016-05-02-craig-wright-biography
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+  - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
 inlineLinkKeywords:
   - "Craig Wright hypothesis"
   - "Craig Wright = Satoshi"
@@ -79,7 +80,7 @@ The May 2016 demonstration was the claim's only affirmative evidence, and it fai
 
 ### 3.2 The COPA v Wright ruling
 
-On March 14, 2024, [Justice Mellor of the UK High Court ruled](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) in the case brought by the Crypto Open Patent Alliance, finding on four separate counts that Wright is not the author of the white paper, was not the person who operated under the Satoshi pseudonym in 2008–2011, did not create the Bitcoin system, and did not author the initial versions of the Bitcoin software. The ruling followed a full trial that heard testimony from early participants including [Martti Malmi](/BitcoinArchive/entries/aftermath/2024-02-21-copa-trial-malmi-testimony/) and [Mike Hearn](/BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/).
+On March 14, 2024, [Justice Mellor of the UK High Court ruled](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) in the case brought by the Crypto Open Patent Alliance, finding on four separate counts that Wright is not the author of the white paper, was not the person who operated under the Satoshi pseudonym in 2008–2011, did not create the Bitcoin system, and did not author the initial versions of the Bitcoin software. The ruling followed a full trial that heard testimony from early participants including [Martti Malmi](/BitcoinArchive/entries/aftermath/2024-02-21-copa-trial-malmi-testimony/) and [Mike Hearn](/BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/), as well as sworn testimony from Adam Back — whose own candidacy as Satoshi is examined in [a separate hypothesis entry](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) built on that same testimony.
 
 ### 3.3 The forgery finding
 

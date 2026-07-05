@@ -33,6 +33,7 @@ partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - aftermath/2016-05-02-craig-wright-biography
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+  - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
 inlineLinkKeywords:
   - "クレイグ・ライト仮説"
   - "クレイグ・ライト＝サトシ"
@@ -80,7 +81,7 @@ translationStatus: complete
 
 ### 3.2 COPA 対ライト判決
 
-2024 年 3 月 14 日、[英国高等法院のメラー判事は](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)、暗号オープン特許アライアンス（COPA）が提起した訴訟で、4 つの別個の点について、ライトはホワイトペーパーの著者ではなく、2008〜2011 年にサトシの仮名で活動した人物でもなく、ビットコインシステムを創設してもおらず、ビットコインソフトウェアの初期バージョンを開発してもいない、と認定した。判決は、[マルッティ・マルミ](/BitcoinArchive/ja/entries/aftermath/2024-02-21-copa-trial-malmi-testimony/)や[マイク・ハーン](/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/)を含む初期参加者の証言を聴いた本裁判の後に下された。
+2024 年 3 月 14 日、[英国高等法院のメラー判事は](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)、暗号オープン特許アライアンス（COPA）が提起した訴訟で、4 つの別個の点について、ライトはホワイトペーパーの著者ではなく、2008〜2011 年にサトシの仮名で活動した人物でもなく、ビットコインシステムを創設してもおらず、ビットコインソフトウェアの初期バージョンを開発してもいない、と認定した。判決は、[マルッティ・マルミ](/BitcoinArchive/ja/entries/aftermath/2024-02-21-copa-trial-malmi-testimony/)や[マイク・ハーン](/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/)を含む初期参加者の証言を聴いた本裁判の後に下された。同裁判ではアダム・バックの宣誓証言も提出されており、バック自身のサトシ候補説は[別の仮説エントリー](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)で検討されている。
 
 ### 3.3 偽造の認定
 

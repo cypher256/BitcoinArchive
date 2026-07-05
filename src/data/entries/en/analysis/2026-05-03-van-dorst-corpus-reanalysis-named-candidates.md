@@ -45,6 +45,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2024-10-08-todd-satoshi-identity-hypothesis
 inlineLinkKeywords:
   - "van Dorst per-candidate reanalysis"
   - "Bitcoin Institute reanalysis"
@@ -188,7 +189,7 @@ It *does not* show:
 
 - The reanalysis aggregates van Dorst's per-row data in one specific way (chunk-weighted mean across all sources, filtered to authors with at least 10 chunks). Other aggregation choices — median, source-stratified, weighted by chunk-quality — would produce slightly different rankings. The numerical findings are stable but not unique.
 - Author identification by email-substring matching may miss writers who participated under handles that do not include their public-facing names. If, for example, Satoshi himself (or any candidate) participated in the cypherpunks list under an unrecorded pseudonym in 1992–2000, that activity is not captured here.
-- The named-candidate list is the same five candidates that recur across the cited stylometric studies. Other widely-discussed identity-hypothesis candidates (Dorian Nakamoto, Craig Wright, Paul Le Roux, Peter Todd, Isamu Kaneko) are not analyzed here because they were not active in the 1992–2000 cryptography mailing-list community that van Dorst's mailing-list corpus covers.
+- The named-candidate list is the same five candidates that recur across the cited stylometric studies. Other widely-discussed identity-hypothesis candidates (Dorian Nakamoto, Craig Wright, Paul Le Roux, Peter Todd, Isamu Kaneko) are not analyzed here because they were not active in the 1992–2000 cryptography mailing-list community that van Dorst's mailing-list corpus covers — for Todd specifically, this leaves open the same evidentiary gap noted in [the Peter Todd identity hypothesis](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/), which observes that his candidacy has never been tested against a quantitative stylometric corpus.
 - The Burrows' Delta values reported are aggregates across all sources where the author appeared. Source-stratified analysis (Adam Back's distance to Satoshi *only* on the cryptography list versus *only* on cypherpunks-cpunks1, for example) would expose additional structure that is averaged away here.
 
 For the analytical treatment of stylometric methods in Satoshi identification, see the relevant identity-hypothesis entries: [Nick Szabo](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/), [Adam Back](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/), [Len Sassaman](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/), and the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).

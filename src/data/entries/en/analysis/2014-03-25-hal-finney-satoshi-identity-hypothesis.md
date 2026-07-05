@@ -54,6 +54,7 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2010-08-15-overflow-incident-structure-and-paradox
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
+  - analysis/2009-01-10-satoshi-launch-environment
 inlineLinkKeywords:
   - "Hal Finney hypothesis"
   - "Finney = Satoshi"
@@ -169,7 +170,7 @@ The alibi requires that Finney's race photographs and timing-chip data were genu
 
 Lopp's 2023 analysis and Peter Miller's 2026 follow-up add four further structural observations against the hypothesis:
 
-- **IP address divergence.** The January 10, 2009 Bitcoin debug log records Finney's IRC node at IP `207.71.226.132`, while Satoshi's IP appears as `68.164.57.219` — different ISPs and different geographic regions. If Finney were Satoshi, the two endpoints would not appear simultaneously as distinct peers in the same debug log.
+- **IP address divergence.** The January 10, 2009 Bitcoin debug log records Finney's IRC node at IP `207.71.226.132`, while Satoshi's IP appears as `68.164.57.219` — different ISPs and different geographic regions. If Finney were Satoshi, the two endpoints would not appear simultaneously as distinct peers in the same debug log. The same week's network environment is examined from a different angle — activity cadence and the "from where I am" phrasing in Satoshi's email to Finney — in [Satoshi's launch-environment analysis](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/).
 - **Coding-style divergence.** Finney's published code uses tabs for indentation and `snake_case` for identifiers; Satoshi's Bitcoin v0.1 source uses spaces and `camelCase` (with Hungarian-notation prefixes typical of Visual C++ on Windows). Comment formatting and function-naming conventions also diverge systematically.
 - **British vs. American spelling.** Satoshi's writing consistently uses British / Commonwealth spellings (`colour`, `favour`, `optimise`, `maths`); Finney's writing is American throughout. Stylometric comparison of Satoshi's email register against Hal's writing finds the email register matches the whitepaper better than Hal does.
 - **Operating-system divergence.** Bitcoin v0.1 was released as a Windows-only `.rar` archive built with Visual C++ 6.0, and Satoshi's documented December 2010 self-statement to Andresen — *"[Gavin is] technically much more Linux capable than me"* — confirms a Windows-centered work environment (the full chronological record across the design, release, and final periods is in [Satoshi's Windows-only development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/)). Finney was a documented long-term Mac user. The development-environment record points to two different machines.

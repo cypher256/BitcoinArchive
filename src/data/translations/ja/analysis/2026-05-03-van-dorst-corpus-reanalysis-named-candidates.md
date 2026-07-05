@@ -45,6 +45,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2024-10-08-todd-satoshi-identity-hypothesis
 inlineLinkKeywords:
   - "ヴァン・ドルスト候補別再分析"
   - "Bitcoin Institute 再分析"
@@ -189,7 +190,7 @@ README 自身が帰属に関する 2 つの構造的問題に注意を払って�
 
 - 本再分析はヴァン・ドルストの行ごとデータを 1 つの特定の方法（出典横断のチャンク数加重平均、チャンク数 10 以上の著者に絞り込み）で集計している。他の集計選択（中央値、出典層別、チャンク品質加重）は若干異なる順位を生む。数値所見は安定的だが一意ではない。
 - メールアドレスの部分文字列照合による著者特定は、公の名前を含まないハンドルで参加していた書き手を見落とす可能性がある。例えば、サトシ自身（あるいはいずれかの候補）が 1992〜2000 年のサイファーパンクメーリングリストに記録されていない仮名で参加していた場合、その活動はここに捕捉されない。
-- 名指し候補のリストは、引用された文体計量研究で繰り返し現れる同じ 5 名である。広く議論される他のサトシ正体候補（ドリアン・ナカモト、クレイグ・ライト、ポール・ルルー、ピーター・トッド、金子勇）はここで分析していない — 彼らはヴァン・ドルストのメーリングリストコーパスが対象とする 1992〜2000 年の暗号学メーリングリスト共同体で活動していなかったためである。
+- 名指し候補のリストは、引用された文体計量研究で繰り返し現れる同じ 5 名である。広く議論される他のサトシ正体候補（ドリアン・ナカモト、クレイグ・ライト、ポール・ルルー、ピーター・トッド、金子勇）はここで分析していない — 彼らはヴァン・ドルストのメーリングリストコーパスが対象とする 1992〜2000 年の暗号学メーリングリスト共同体で活動していなかったためである。トッドについて言えば、この空白は[ピーター・トッド同定仮説](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)が指摘する論点と同じものである――彼の擁立論はいまだ定量的な文体計量コーパスによる検証を経ていない。
 - 報告されたバローズ・デルタ値は、当該著者が出現したすべての出典にわたる集計である。出典層別分析（例：アダム・バックの cryptography リスト*のみ*での距離 vs. cypherpunks-cpunks1 *のみ*での距離）は、ここで平均化されている追加の構造を露出させる。
 
 サトシ特定における文体計量手法の分析的扱いについては、関連する正体仮説エントリーを参照：[ニック・サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[レン・サッサマン](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)、[正体仮説の概観](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)。

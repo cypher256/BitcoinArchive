@@ -39,6 +39,7 @@ relatedEntries:
   - aftermath/2009-01-11-dustin-trammell-biography
   - aftermath/2014-08-28-fran-finney-biography
   - aftermath/2014-08-28-hal-finney-biography
+  - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
 inlineLinkKeywords:
   - "from where I am"
   - "リリース期環境"
@@ -52,7 +53,7 @@ translationStatus: complete
 
 「今いる場所からは」 —— 場所依存的、サトシのセットアップの恒久的特性ではないことを示唆する表現 —— と、2009 年 1 月 8〜12 日のリリース週におけるサトシの異例に濃密な作業ペースが、本分析が読み取る、互いに符合する 2 つの手がかりである。読みは編者による推論である。
 
-本エントリは[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)と時期的に重なる。ただし対象は分離している: 前者はブロック 0 という**対象物**の構造分析で、本エントリは同週のサトシという**人物**の環境読みである。
+本エントリは[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)と時期的に重なる。ただし対象は分離している: 前者はブロック 0 という**対象物**の構造分析で、本エントリは同週のサトシという**人物**の環境読みである。同じ 2009 年 1 月 10 日のビットコインデバッグログに記録された、フィニーとサトシそれぞれのノードの IP アドレスの相違という別角度から同じ週を読み解くのが[ハル・フィニー同定仮説分析](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)である。
 
 ## 1. 二つの手がかり
 

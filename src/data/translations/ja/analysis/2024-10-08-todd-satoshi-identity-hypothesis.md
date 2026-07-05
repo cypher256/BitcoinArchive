@@ -42,6 +42,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2009-01-09-satoshi-windows-development-environment
+  - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
 inlineLinkKeywords:
   - "トッド仮説"
   - "トッド＝サトシ"
@@ -152,7 +153,7 @@ Bitcoin Institute がここで自ら立てる反論：サトシ投稿から 1 �
 
 ### 3.5 ビットコインコミュニティの技術的批判
 
-ドキュメンタリーは公開後数日のうちに、ビットコイン技術コミュニティから広く批判された。Bitcoin Magazine は「ビットコインへの侮辱 — 皮肉で、愚かで、危険」と題した記事を掲載した。Cointelegraph は具体的な事実誤認を整理した。批評家たちは、暗号学的証明も、形式的な文体分析も、美術系の学部生がどうやって新しいコンセンサスメカニズムを設計できたかの説明もなく、状況証拠と偶然の一致に完全に依存していると指摘した。
+ドキュメンタリーは公開後数日のうちに、ビットコイン技術コミュニティから広く批判された。Bitcoin Magazine は「ビットコインへの侮辱 — 皮肉で、愚かで、危険」と題した記事を掲載した。Cointelegraph は具体的な事実誤認を整理した。批評家たちは、暗号学的証明も、形式的な文体分析も、美術系の学部生がどうやって新しいコンセンサスメカニズムを設計できたかの説明もなく、状況証拠と偶然の一致に完全に依存していると指摘した。この定量的な空白は今も埋まっていない――[ヴァン・ドルストの文体計量コーパスに対する Bitcoin Institute の再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は 12,739 人のメーリングリスト著者に対して他の名指し候補 5 名を順位付けしているが、トッド自身はこのコーパスが対象とする 1992〜2000 年の暗号学メーリングリスト共同体で活動していなかったため、同じ定量分析の対象にはなっていない。
 
 技術コミュニティによる根拠の否定は、それ自体で仮説を排除するものではない — コミュニティの感情は証拠ではない。ただし、ドキュメンタリーが提示した具体的な根拠の集合が、専門家の検証を通過しなかったことを意味する。
 

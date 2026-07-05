@@ -57,6 +57,7 @@ relatedEntries:
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
   - "analysis/2013-12-05-szabo-satoshi-identity-hypothesis"
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
+  - analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
@@ -168,7 +169,7 @@ If Back were the person behind the Satoshi pseudonym, the structure does not nat
 
 ### 3.2 February 2024 COPA v Wright sworn testimony
 
-In [February 2024, Back testified in COPA v Wright in London](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) and submitted his complete email correspondence with Satoshi as witness evidence under oath. The testimony was given in a court of law as part of a major intellectual-property trial. Back has consistently and publicly maintained that Satoshi is a separate person from himself across multiple interviews, conference talks, and the legal proceeding.
+In [February 2024, Back testified in COPA v Wright in London](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) and submitted his complete email correspondence with Satoshi as witness evidence under oath. The testimony was given in a court of law as part of a major intellectual-property trial. Back has consistently and publicly maintained that Satoshi is a separate person from himself across multiple interviews, conference talks, and the legal proceeding. That same COPA v Wright trial produced the March 2024 ruling against the rival Craig Wright Satoshi claim, documented in [the Craig Wright hypothesis entry](/BitcoinArchive/entries/analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis/), which examines the court's findings that Wright forged evidence to support his own claim.
 
 For the hypothesis to be true, the 2024 testimony would have to have been perjury — a sustained deception in courtroom proceedings under oath, with the additional constraint that the relevant emails between "Satoshi" and "Back" must have been fabricated or self-staged 16 years earlier in anticipation of such a moment.
 

@@ -54,6 +54,7 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2010-08-15-overflow-incident-structure-and-paradox
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
+  - analysis/2009-01-10-satoshi-launch-environment
 inlineLinkKeywords:
   - "ハル・フィニー仮説"
   - "フィニー = サトシ"
@@ -170,7 +171,7 @@ timeline
 
 ロップ 2023 およびピーター・ミラー 2026 の追加分析は、仮説に対する 4 つの構造的観察を加える:
 
-- **IP アドレスの相違**: 2009 年 1 月 10 日のビットコインデバッグログにフィニーの IRC ノードが IP `207.71.226.132` で記録され、サトシの IP は `68.164.57.219` と異なる ISP・地理的領域に現れる。フィニーがサトシだったなら、両端点が同じデバッグログで同時に別ピアとして現れない。
+- **IP アドレスの相違**: 2009 年 1 月 10 日のビットコインデバッグログにフィニーの IRC ノードが IP `207.71.226.132` で記録され、サトシの IP は `68.164.57.219` と異なる ISP・地理的領域に現れる。フィニーがサトシだったなら、両端点が同じデバッグログで同時に別ピアとして現れない。同じ週のサトシの通信環境を、活動ペースとフィニー宛メールの「今いる場所からは」という言い回しという別角度から読み解いたのが[サトシのリリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)である。
 - **コーディングスタイルの相違**: フィニーの公開コードはインデントにタブ・識別子に `snake_case` を用いる。サトシのビットコイン v0.1 ソースはスペースと `camelCase`（Visual C++ on Windows 典型のハンガリアン記法プレフィックス付き）を用いる。コメント形式と関数名規則も体系的に異なる。
 - **英米綴りの相違**: サトシの執筆は一貫して英国・連邦の綴り（`colour`、`favour`、`optimise`、`maths`）を用いる。フィニーの執筆は全体を通して米国式である。サトシのメール語調をハルの執筆と比べる文体計量比較では、メール語調はハルよりホワイトペーパーに近い。
 - **OS 環境の相違**: ビットコイン v0.1 は Windows 専用 `.rar` アーカイブとして Visual C++ 6.0 でビルドされて公開された。サトシの 2010 年 12 月のアンドレセン宛自己記述「[ギャビンは]私より Linux にずっと詳しい」は Windows 中心の作業環境を裏付ける（設計・公開・最終期間にわたる時系列の全記録は[サトシの Windows 専一の開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)を参照）。フィニーは記録された長期 Mac ユーザーだった。開発環境の記録は 2 台の異なるマシンを示す。
