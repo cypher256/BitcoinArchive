@@ -25,13 +25,16 @@ secondarySources:
     url: "https://www.coindesk.com/"
   - name: "Satoshi Nakamoto Institute — Cryptography Mailing List Emails"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/"
+  - name: "cryddit (Ray Dillinger) — BitcoinTalk post on the 1MB limit's origin (February 2015)"
+    url: "https://bitcointalk.org/index.php?topic=946236.msg10388435#msg10388435"
 relatedEntries:
   - aftermath/2017-09-20-ray-dillinger-if-id-known
   - aftermath/2018-10-01-ray-dillinger-interview
   - aftermath/2009-01-09-bitcoin-v01-released
+  - analysis/2015-08-15-block-size-war-2015-2017-overview
 ---
 
-Before Bitcoin v0.1 was released to the public in January 2009, only two people are known to have audited its source code: [Hal Finney](/BitcoinArchive/participants/hal-finney/) and Ray Dillinger. Dillinger spent roughly two weeks examining the code for vulnerabilities and attack vectors. He has also been connected to the origin of Bitcoin's 1 MB block size limit, recalling early discussions in which the cap was added to prevent spam transactions from overwhelming the network — a parameter that would later become the center of the 2015–2017 block-size war.
+Before Bitcoin v0.1 was released to the public in January 2009, only two people are known to have audited its source code: [Hal Finney](/BitcoinArchive/participants/hal-finney/) and Ray Dillinger. Dillinger spent roughly two weeks examining the code for vulnerabilities and attack vectors. He has also described a role in the origin of Bitcoin's 1 MB block size limit — a parameter that would later become the center of the 2015–2017 block-size war — though his account of when the limit was adopted conflicts with the documented commit history.
 
 Dillinger is a computer scientist known by his online handles **bear** and **cryddit**. He studied computer science at the University of Kansas and has been active in the cryptography and cypherpunk communities for decades.
 
@@ -39,7 +42,7 @@ Dillinger is a computer scientist known by his online handles **bear** and **cry
 In late 2008, Satoshi Nakamoto shared Bitcoin's source code privately with a small number of people before the [public release in January 2009](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/). Dillinger conducted a security audit of the code, examining it for potential vulnerabilities and attack vectors. Hal Finney simultaneously reviewed the code from a different perspective. In a later BitcoinTalk post, Dillinger recalled spending approximately two weeks reviewing the code, focusing on ways the system might be exploited. In a [2018 interview marking the whitepaper's tenth anniversary](/BitcoinArchive/entries/aftermath/2018-10-01-ray-dillinger-interview/), he gave the technical substance of that review — the floating-point-versus-integer accounting discovery and the satoshi-precision analysis.
 
 ## Block Size Limit
-Dillinger has been connected to the origin of Bitcoin's 1 MB block size limit, one of the most debated parameters in Bitcoin's history. In later public statements, he described how early discussions about potential denial-of-service attacks led to consideration of limiting block size to prevent spam transactions from overwhelming the network.
+In a February 2015 BitcoinTalk post, Dillinger described the origin of the 1 MB block size limit — one of the most debated parameters in Bitcoin's history — as Hal Finney's idea, prompted by Finney's concern about a potential denial-of-service attack; Dillinger recalled that he and Satoshi both objected the cap would not scale, but all three agreed a temporary limit was needed. By Dillinger's account, "the 1MB limit was there by the time Bitcoin launched" in January 2009. That timing conflicts with the documented history: source-code and blockchain records show Satoshi added the 1 MB limit unilaterally, without announcement, in September 2010 — roughly twenty months after launch. See [the block-size war overview](/BitcoinArchive/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/) for the documented September 2010 origin and the dispute the limit later provoked. The discrepancy between Dillinger's recollection and the commit-history record remains unresolved.
 
 ## Mailing List Participation
 Dillinger participated in the cryptography mailing list discussion about Bitcoin in November 2008, posting under the name "Ray Dillinger." His posts engaged with the technical details of Bitcoin's design, including questions about the incentive structure and security model.

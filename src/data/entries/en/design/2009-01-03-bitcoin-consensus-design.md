@@ -26,6 +26,7 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2010-08-15-value-overflow-incident
   - aftermath/2017-08-01-bitcoin-cash-fork
+  - analysis/2009-01-09-bitcoin-time-warp-attack
 inlineLinkKeywords:
   - "proof of work"
   - "difficulty adjustment"
@@ -108,11 +109,11 @@ flowchart LR
 
 ### Satoshi-era bugs
 
-Two known issues in the original difficulty adjustment code have persisted as consensus rules because fixing them would require a hard fork:
+Two known issues in the original difficulty adjustment code have persisted as consensus rules for the network's entire history:
 
 - **Off-by-one error.** The retarget calculation uses the timestamp of block N (the first block of the window) and block N+2,015 (the last), measuring across 2,015 intervals rather than 2,016. The actual retarget window is therefore one block shorter than intended. At a 10-minute target, this produces a systematic bias of roughly 0.05%.
 
-- **Timewarp vulnerability.** Because the adjustment algorithm only examines the timestamps of two blocks (first and last in the window), a majority-hash-rate miner can manipulate the timestamp of the last block in each window to make the chain appear slower than it actually is, gradually reducing difficulty while producing blocks faster than the target rate. This attack is theoretical against an honest majority but becomes feasible for a sustained >50% attacker. A fix (the "timewarp attack mitigation") has been proposed in the [Great Consensus Cleanup](https://github.com/bitcoin/bips/blob/master/bip-XXXX.mediawiki) but has not yet been activated.
+- **Timewarp vulnerability.** Because the adjustment algorithm only examines the timestamps of two blocks (first and last in the window), a majority-hash-rate miner can manipulate the timestamp of the last block in each window to make the chain appear slower than it actually is, gradually reducing difficulty while producing blocks faster than the target rate. This attack is theoretical against an honest majority but becomes feasible for a sustained >50% attacker. A soft-fork fix (the "timewarp attack mitigation") has been proposed as part of the [Great Consensus Cleanup](https://github.com/bitcoin/bips/blob/master/bip-0388.mediawiki) — see [the time-warp attack analysis](/BitcoinArchive/entries/analysis/2009-01-09-bitcoin-time-warp-attack/) for the full mechanics — but the proposal has not yet gained the operator consensus needed to activate.
 
 ## 3. Block validation rules
 

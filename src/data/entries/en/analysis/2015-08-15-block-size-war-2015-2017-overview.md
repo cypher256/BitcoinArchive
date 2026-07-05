@@ -39,9 +39,10 @@ relatedEntries:
   - aftermath/2011-03-17-pieter-wuille-biography
   - analysis/2014-11-01-blockstream-centralization-claim
   - design/2009-01-03-bitcoin-block-chain-design
+  - aftermath/2008-11-06-ray-dillinger-biography
 ---
 
-Between August 2015 and November 2017, Bitcoin's open-source process was tested by a sustained dispute over a single parameter: the 1 MB block-size limit that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) had added in September 2010 as a temporary anti-spam measure. The dispute produced four successive fork attempts on the main chain, one persistent chain split, the activation of Segregated Witness, and a permanent change in how Bitcoin protocol upgrades reach consensus. This entry collates the documented sequence by phase, faction, and turning point.
+Between August 2015 and November 2017, Bitcoin's open-source process was tested by a sustained dispute over a single parameter: the 1 MB block-size limit that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) had added in September 2010 as a temporary anti-spam measure — though [Ray Dillinger](/BitcoinArchive/participants/ray-dillinger/) has recalled a different, pre-launch origin for the same limit, a discrepancy the documented commit history does not resolve in his favor. The dispute produced four successive fork attempts on the main chain, one persistent chain split, the activation of Segregated Witness, and a permanent change in how Bitcoin protocol upgrades reach consensus. This entry collates the documented sequence by phase, faction, and turning point.
 
 ## Timeline
 

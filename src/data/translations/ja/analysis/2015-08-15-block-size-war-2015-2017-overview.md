@@ -39,10 +39,11 @@ relatedEntries:
   - aftermath/2011-03-17-pieter-wuille-biography
   - analysis/2014-11-01-blockstream-centralization-claim
   - design/2009-01-03-bitcoin-block-chain-design
+  - aftermath/2008-11-06-ray-dillinger-biography
 translationStatus: complete
 ---
 
-2015 年 8 月から 2017 年 11 月までの間、ビットコインのオープンソース運営は、たった一つのパラメーターをめぐる長期にわたる論争で試された ― [サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が 2010 年 9 月に反スパム暫定措置として追加した 1 MB のブロックサイズ上限である。この論争は主鎖上で 4 連続のフォーク試行を生み、 1 件の恒久的なチェーン分裂、 Segregated Witness の起動、そしてビットコインのプロトコル更新が合意に到達する方法の恒久的変化をもたらした。本エントリは記録された一連の流れを段階・派閥・転換点別に整理する。
+2015 年 8 月から 2017 年 11 月までの間、ビットコインのオープンソース運営は、たった一つのパラメーターをめぐる長期にわたる論争で試された ― [サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が 2010 年 9 月に反スパム暫定措置として追加した 1 MB のブロックサイズ上限である —— もっとも[レイ・ディリンジャー](/BitcoinArchive/ja/participants/ray-dillinger/)は同じ上限について異なるローンチ前起源を回想しており、記録されているコミット履歴は彼の説明を裏付けていない。この論争は主鎖上で 4 連続のフォーク試行を生み、 1 件の恒久的なチェーン分裂、 Segregated Witness の起動、そしてビットコインのプロトコル更新が合意に到達する方法の恒久的変化をもたらした。本エントリは記録された一連の流れを段階・派閥・転換点別に整理する。
 
 ## 時系列
 

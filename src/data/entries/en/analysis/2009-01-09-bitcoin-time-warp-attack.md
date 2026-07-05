@@ -28,6 +28,7 @@ secondarySources:
     url: "https://github.com/bitcoin/bips/blob/master/bip-0388.mediawiki"
 relatedEntries:
   - analysis/2009-01-09-satoshi-code-analysis
+  - design/2009-01-03-bitcoin-consensus-design
 ---
 
 Bitcoin's difficulty-adjustment algorithm contains a long-known off-by-one bug in Satoshi's original code. The retarget window is documented as 2,016 blocks — two weeks at 10-minute block intervals — but the code that actually computes the elapsed-time delta measures the gap between **block 0 and block 2,015** of each window. The first block of every retarget window is therefore not included in the timing calculation. The bug is small, the consequences are not.
@@ -59,7 +60,7 @@ Examination of the v0.1.0 source — preserved in [trottier/original-bitcoin](ht
 
 ## 3. The Great Consensus Cleanup
 
-[Antoine Poinsot](https://github.com/darosior) has championed a soft-fork proposal known as the **Great Consensus Cleanup** that bundles a fix for the time-warp bug with several other long-known protocol curiosities. The proposal would constrain the timestamp of the first block of each retarget window so that the off-by-one cannot be exploited regardless of hashrate share. As of 2026 the proposal remains in active community discussion: it has support from several Bitcoin Core developers but has not reached the level of operator consensus that triggered SegWit (BIP148) or Taproot (BIP341).
+[Antoine Poinsot](https://github.com/darosior) has championed a soft-fork proposal known as the **Great Consensus Cleanup** that bundles a fix for the time-warp bug with several other long-known protocol curiosities. The proposal would constrain the timestamp of the first block of each retarget window so that the off-by-one cannot be exploited regardless of hashrate share. As of 2026 the proposal remains in active community discussion: it has support from several Bitcoin Core developers but has not reached the level of operator consensus that triggered SegWit (BIP148) or Taproot (BIP341). The bug this proposal targets is documented as one of two known quirks in [the consensus design's difficulty-adjustment section](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/), alongside the related off-by-one in the retarget window count.
 
 The pace of activation reflects Bitcoin's institutional caution. Soft-fork changes to the consensus rules require both broad developer agreement and clear miner / node-operator readiness, and the bar for a "cleanup" fork — one that does not deliver any new user-facing feature — is higher than for capability-adding forks. The community has thus been content to leave a known but expensive-to-exploit bug in place rather than mobilize a fork that, in absolute terms, only closes an attack vector that has never been used.
 
