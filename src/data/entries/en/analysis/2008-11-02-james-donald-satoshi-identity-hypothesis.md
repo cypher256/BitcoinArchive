@@ -1,5 +1,5 @@
 ---
-title: "Was James A. Donald Satoshi? The first responder, the stylometric lead, and a journalist's in-person no"
+title: "Was James A. Donald Satoshi? The first responder, and a stylometric lead strong enough to send a journalist to meet him"
 date: 2008-11-02T00:00:00Z
 type: "analysis"
 source: "wikipedia"

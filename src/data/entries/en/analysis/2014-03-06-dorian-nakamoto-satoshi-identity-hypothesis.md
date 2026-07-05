@@ -1,5 +1,5 @@
 ---
-title: "Was Dorian Nakamoto Satoshi? The 2014 Newsweek name-match and its unraveling"
+title: "Was Dorian Nakamoto Satoshi? The man whose legal name was, literally, Satoshi Nakamoto"
 date: 2014-03-06T00:00:00Z
 type: "analysis"
 source: "newsweek"

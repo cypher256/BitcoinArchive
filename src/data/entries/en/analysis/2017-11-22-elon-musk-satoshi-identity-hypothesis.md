@@ -1,5 +1,5 @@
 ---
-title: "Was Elon Musk Satoshi? The 2017 blog claim and its same-week denial"
+title: "Was Elon Musk Satoshi? A viral 2017 theory built on personality alone, with no forensic thread at all"
 date: 2017-11-22T00:00:00Z
 type: "analysis"
 source: "medium"

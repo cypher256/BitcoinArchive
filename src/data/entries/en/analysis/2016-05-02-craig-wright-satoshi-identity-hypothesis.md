@@ -1,5 +1,5 @@
 ---
-title: "Was Craig Wright Satoshi? The self-claim the UK High Court ruled was fabricated"
+title: "Was Craig Wright Satoshi? The only hypothesis its subject made about himself"
 date: 2016-05-02T00:00:00Z
 type: "analysis"
 source: "wikipedia"
