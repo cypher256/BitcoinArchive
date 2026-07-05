@@ -140,6 +140,7 @@ breaks the build). `tool` = manual, run on demand — reusable, not spent.
 | `fix-ja-punct-spacing.mjs` | Remove half-width spaces stranded between JA chars incl. punctuation (、。「」) | tool |
 | `fix-ja-reply-titles.mjs` | Cascade JA forum reply titles from the starter (see STYLE_GUIDE.md) | tool |
 | `fix-quote-visual-divergence.mjs` | Fix visual-only JA quote divergence (audit-quote-translation-consistency category) | tool |
+| `generate-hero-banners.mjs` | Regenerate the entry-page hero backdrop (`public/images/hero-banners/atmosphere.jpg`) — one wide gradient+grain image shared by every entry (panned to a different crop per entry via `heroBannerPosition()` in `src/lib/heroBanner.ts`); only needs re-running when the design itself changes | tool |
 | `generate-quote-fix-candidates.mjs` | Build a quote-fix review queue from audit-quote-translation-consistency | tool |
 | `generate-satoshi-timeline.mjs` | Generate Satoshi timeline data from `isSatoshi` entries | tool |
 | `scan-all-mermaid.mjs` | Survey every mermaid block across the corpus | tool |

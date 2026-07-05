@@ -575,6 +575,19 @@ blockquote[data-speaker="satoshi"] {
   }
 }
 
+/* The entry-detail title row (src/pages/entries, src/pages/ja/entries)
+   sits on a fixed-dark hero banner regardless of site theme. .avatar's
+   own background above (var(--color-bg-alt)) shows through the circular
+   clip's edge anti-aliasing — normally invisible since it sits on the
+   page's own theme-matching background, but against the always-dark
+   banner the light-mode near-white fallback shows as a pale ring. Pin
+   it to the banner's own base tone instead. Lives here, not in a
+   per-page scoped <style>, because Avatar.astro is a separate
+   component — a scoped rule in the page never reaches its <img>. */
+.entry-title-row .avatar {
+  background: #0d0e12;
+}
+
 /* ── Entry card (browse list + full-text search results) ──────────────
    Single source of truth for the card look. Used by EntryCard.astro
    (server-rendered browse cards) AND by the runtime-injected full-text
