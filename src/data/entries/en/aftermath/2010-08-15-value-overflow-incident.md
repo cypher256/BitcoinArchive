@@ -62,7 +62,7 @@ A single transaction in Block 74638 had created **184,467,440,737.09551616 BTC**
 1. Each individual output must not exceed MAX_MONEY (21,000,000 BTC)
 2. The sum of all outputs must not exceed MAX_MONEY
 
-[Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) tested an independent emergency patch in parallel using a clean blockchain snapshot pre-published by the forum participant [knightmb](/BitcoinArchive/participants/knightmb/), which served as the recovery starting point.
+[Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) tested an independent emergency patch in parallel using a clean blockchain snapshot previously published by the forum participant [knightmb](/BitcoinArchive/participants/knightmb/), which served as the recovery starting point.
 
 Satoshi released v0.3.10 with the overflow patch the same day and announced it on BitcoinTalk under the subject [Version 0.3.10 - block 74638 overflow PATCH!](/BitcoinArchive/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/), pointing readers at the discussion thread for the bug itself.
 

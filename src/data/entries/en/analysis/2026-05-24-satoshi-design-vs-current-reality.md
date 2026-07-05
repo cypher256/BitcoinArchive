@@ -42,9 +42,10 @@ relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-architecture-evolution
   - analysis/2014-11-01-blockstream-centralization-claim
+  - aftermath/2008-11-02-james-donald-biography
 ---
 
-Bitcoin's protocol still runs almost unchanged from the rules [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) wrote down in 2008. But the *user experience*, the *economic structure*, and the *governance reality* of the system have drifted considerably from the early design picture. Reading the [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) or the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) gives a faithful picture of the protocol but a misleading picture of what most users actually touch. This entry walks four axes where the gap is largest, with pointers to the records.
+Bitcoin's protocol still runs almost unchanged from the rules [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) wrote down in 2008. But the *user experience*, the *economic structure*, and the *governance reality* of the system have drifted considerably from the early design picture. Reading the [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) or the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) gives a faithful picture of the protocol but a misleading picture of what most users actually touch. This entry walks through four axes where the gap is largest, with pointers to the records.
 
 | Axis | Early design picture | Current reality | Drift started |
 |---|---|---|---|
@@ -156,7 +157,7 @@ flowchart TB
 
 **The reality.** Bitcoin's 1 MB historical block size limit caps the chain at roughly 7 transactions per second (much less under realistic transaction sizes). Routine retail payments cannot fit; even if they could, fees would price them out during peak load. The actual scaling path has been two-layer: SegWit (BIP 141, activated 2017) made room for the Lightning Network, where payments move off chain and only periodic settlements touch the base layer. Custodial exchanges *also* function as scaling layers — internal transfers between two Coinbase accounts never reach the chain.
 
-**The drift began** with the block-size discussion in 2010 (Satoshi's own provisional 1 MB cap, intended as anti-spam) and crystallised through the 2015 – 2017 [fork wars](/BitcoinArchive/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/). For most everyday use today, Bitcoin functions less like the direct P2P cash the whitepaper invites a reader to imagine and more like a settlement layer beneath several stacked payment systems of varying trust.
+**The drift began** with the block-size discussion in 2010 (Satoshi's own provisional 1 MB cap, intended as anti-spam) and crystallised through the 2015 – 2017 [fork wars](/BitcoinArchive/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/). For most everyday use today, Bitcoin functions less like the direct P2P cash the whitepaper invites a reader to imagine and more like a settlement layer beneath several stacked payment systems of varying trust — the outcome [James A. Donald anticipated by name in November 2008](/BitcoinArchive/entries/aftermath/2008-11-02-james-donald-biography/), when he coined "bink" for a bitcoin bank and cast bitcoins as sitting beneath account money the way gold sat beneath the gold standard.
 
 ## What this is not
 

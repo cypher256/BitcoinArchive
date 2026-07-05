@@ -46,6 +46,7 @@ relatedEntries:
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
   - analysis/2009-01-09-satoshi-windows-development-environment
+  - aftermath/1996-02-06-wei-dai-disperse-collect-crypto-plus-plus
 inlineLinkKeywords:
   - "Wei Dai hypothesis"
   - "Wei Dai = Satoshi"
@@ -56,7 +57,7 @@ inlineLinkKeywords:
 <!-- audit:quote-skip -->
 > "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
 
-The recurring hypothesis that [Wei Dai](/BitcoinArchive/participants/wei-dai/) is Satoshi — with Wei Dai's own denial above among the principal counter-pieces — sits in Group A (Satoshi explicitly cited his work) and has surfaced in cryptography journalism since at least 2010.
+The recurring hypothesis that [Wei Dai](/BitcoinArchive/participants/wei-dai/) is Satoshi — with Wei Dai's own denial above among the principal counterarguments — sits in Group A (Satoshi explicitly cited his work) and has surfaced in cryptography journalism since at least 2010.
 
 ## 1. What the hypothesis claims
 
@@ -89,6 +90,8 @@ Wei Dai created and maintained [Crypto++](https://www.cryptopp.com/), a free ope
 | v0.1 | 2009-01-09 | Bundled Crypto++ 5.5.2 SHA-256 as standalone files (`sha.cpp`, `sha.h`) |
 | v0.3.6 | 2010-07-29 | Integrated Crypto++ 5.6.0 SSE2-optimized SHA-256 (~2.5× speedup) |
 | v0.5.0 | 2011-11-20 | [Crypto++ subset removed; replaced by OpenSSL SHA-256](/BitcoinArchive/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/) (Nils Schneider commit, merged by Gavin Andresen) |
+
+Wei Dai's own [1996 announcement of Disperse/Collect](/BitcoinArchive/entries/aftermath/1996-02-06-wei-dai-disperse-collect-crypto-plus-plus/), built from that same Crypto++ library more than a decade before Bitcoin existed, is the earliest public record of the codebase Bitcoin would later depend on.
 
 The codebase dependency had a 22-month operational window (v0.1 January 2009 through v0.4.x) and ended approximately six months after Satoshi's April 2011 departure. The argument below applies to that window, not to running Bitcoin Core today. This is the only direct codebase-level dependency Bitcoin v0.1 has on a named candidate's published code. The argument: combining (a) b-money cited as reference [1], (b) Crypto++ providing Bitcoin's hash primitive, (c) the fact that Wei Dai is the sole common author of both, places him in a structural position no other candidate occupies.
 
@@ -186,7 +189,7 @@ Wei Dai has consistently denied being Satoshi:
 - **Long-form interviews and forum posts** since 2014 — Wei Dai treats Satoshi as a separate person throughout, often crediting Satoshi's specific design contributions (the longest-chain consensus rule, the difficulty-adjustment algorithm) in language that would be self-praise if he were Satoshi.
 - **Continued Crypto++ and LessWrong activity** under his own name through the 2010s and 2020s — a sustained public profile that would require parallel decoy work if he were also Satoshi during the same period.
 
-Wei Dai's self-denial is structurally similar to Nick Szabo's (the "Nakamoto improved my design" framing in [Szabo's 2011 blog post](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) that crediting Nakamoto with a specific improvement to his own work): a sustained public framing that treats Satoshi as a different, named-but-separate person. Both denials, to be undone by the hypothesis, require sustained voluntary public self-deception.
+Wei Dai's self-denial is structurally similar to Nick Szabo's (the "Nakamoto improved my design" framing in [Szabo's 2011 blog post](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) that credits Nakamoto with a specific improvement to his own work): a sustained public framing that treats Satoshi as a different, named-but-separate person. Both denials, to be undone by the hypothesis, require sustained voluntary public self-deception.
 
 ## 4. Within the broader documentary record
 

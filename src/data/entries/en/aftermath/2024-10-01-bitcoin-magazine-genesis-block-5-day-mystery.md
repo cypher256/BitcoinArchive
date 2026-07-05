@@ -40,7 +40,7 @@ Under normal mining conditions with [Satoshi](/BitcoinArchive/participants/satos
 
 ## Prevailing theories
 
-1. **Deliberate reset** — Satoshi mined the Genesis Block, tested the system, then reset and restarted the network fresh on January 9. The Genesis Block's timestamp may reflect when it was hardcoded into the source code rather than when mining actually began. That pre-release test genesis blocks existed is directly documented: [SerHack identified an alternative pre-release genesis block dated September 10, 2008](/BitcoinArchive/entries/aftermath/2022-10-06-serhack-alternative-genesis-block/) in source code Satoshi shared privately.
+1. **Deliberate reset** — Satoshi mined the Genesis Block, tested the system, then reset and restarted the network fresh on January 9. The Genesis Block's timestamp may reflect when it was hardcoded into the source code rather than when mining actually began. Pre-release test genesis blocks are known to have existed: [SerHack identified an alternative pre-release genesis block dated September 10, 2008](/BitcoinArchive/entries/aftermath/2022-10-06-serhack-alternative-genesis-block/) in source code Satoshi shared privately.
 
 2. **The Times headline theory** — The Genesis Block's embedded message ("The Times 03/Jan/2009 Chancellor on brink of second bailout for banks") proves it could not have been created before January 3. Satoshi may have waited for a symbolically significant headline before finalizing the block.
 

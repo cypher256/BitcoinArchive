@@ -38,7 +38,7 @@ Responding to Trammell's concerns about data loss and wallet backup, Satoshi dis
 <!-- quote: q1 -->
 > The files are in "%appdata%\Bitcoin", that's the directory to backup. The data is stored in a transactional database DBM, so it should be safe from loss if there's a crash or power failure.
 
-He noted that %appdata% was the per-user directory that modern programs like Firefox used for settings, despite Microsoft changing its name with every Windows release, being full of spaces, and running off the screen.
+He noted that %appdata% was the per-user directory that modern programs like Firefox used for settings, even though Microsoft renamed it with every Windows release, and the resulting path was full of spaces and ran off the screen.
 
 Regarding the unclean socket closure Trammell had reported:
 

@@ -145,7 +145,7 @@ The novel components are not in the whitepaper's reference list because no one h
 
 Satoshi's [August 20, 2008 email to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) asked specifically about the correct citation format for Hashcash. The email body describes Bitcoin's mechanism in detail and references Hashcash as an existing primitive Satoshi was reusing in the code. This places Hashcash usage *during* development, not *after* it.
 
-The "cash" in *Hashcash* is a computational-postage metaphor (Back's 1997 anti-spam denial-of-service counter-measure), not a currency. The system contains only the proof-of-work primitive — no ledger, no transfers, no consensus, no monetary supply. Bitcoin reuses the primitive and builds the rest separately; see the [Adam Back hypothesis entry §2.2](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) for the implications for the Hashcash-author-equals-Bitcoin-author argument.
+The "cash" in *Hashcash* is a computational-postage metaphor (Back's 1997 anti-spam denial-of-service counter-measure), not a currency. The system contains only the proof-of-work primitive — no ledger, no transfers, no consensus, no monetary supply. Bitcoin reuses the primitive and builds the rest separately; see the [Adam Back hypothesis entry §2.2](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) for what this implies for the Hashcash-author-equals-Bitcoin-author argument.
 
 ### 3.2 b-money: cited post-hoc
 
@@ -165,7 +165,7 @@ Decentralized consensus by longest-chain rule weighted by proof-of-work, the UTX
 
 The component-level breakdown bears directly on identity-hypothesis weighting. Two specific implications:
 
-- **Authoring Hashcash means designing one of Bitcoin's many components.** The PoW primitive is one cited contribution in a system that contains many novel components. The forensic-fit argument that "Hashcash author = Bitcoin author" can therefore weight Hashcash as a partial contribution but not as the whole. See the [Adam Back = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/).
+- **Authoring Hashcash means designing one of Bitcoin's many components.** The PoW primitive is one cited contribution in a system that contains many novel components. The forensic-fit argument that "Hashcash author = Bitcoin author" can therefore credit Hashcash as a partial contribution but not as the whole. See the [Adam Back = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/).
 - **Authoring b-money similarly does not mean authoring Bitcoin's design.** The b-money citation was added after Satoshi learned of it from Adam Back's referral; b-money's concepts did not influence Bitcoin's design during the development period. See the [hypotheses overview's Wei Dai profile](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
 
 Other named-candidate hypotheses (Sassaman, Kaneko, Todd, Wright, etc.) are not directly tied to whitepaper-reference authorship and are evaluated on different grounds (timing, capability, visibility, external denials). See the [hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).

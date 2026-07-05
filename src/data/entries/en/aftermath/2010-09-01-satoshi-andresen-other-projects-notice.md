@@ -40,7 +40,7 @@ According to Wikipedia's account of [Gavin Andresen](/BitcoinArchive/participant
 
 This September 2010 communication is the earliest documented signal of Satoshi's intent to step back from active leadership of Bitcoin. The exact date within September is not preserved in the public record, and the message itself has not been published verbatim. The fact is referenced in Andresen's later interviews; the [biographical entry on Andresen](/BitcoinArchive/participants/gavin-andresen/) in this archive likewise notes that "by approximately September–October 2010, Satoshi granted him commit access to the Bitcoin source code repository on SourceForge, along with the network alert key."
 
-The September signal preceded by three months the more visible transition events:
+The September signal preceded the more visible transition events by three months:
 
 - **December 3, 2010**: Satoshi recommended Andresen to [Martti Malmi](/BitcoinArchive/entries/aftermath/2010-12-03-handover-to-gavin/) — "It should be Gavin. I trust him, he's responsible, professional…"
 - **December 12, 2010**: [Formal SVN handover](/BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/) and Satoshi's [last public BitcoinTalk post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) closing with "I plan to pass the baton."

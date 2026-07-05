@@ -54,7 +54,7 @@ flowchart TD
     M3 ==> OUT
 ```
 
-The three mechanisms differ in the location of the failure (the user, the physical world, the intermediary) but are identical from the chain's perspective: the resulting UTXO is undisturbed, the transactional rules around it unchanged, and the coins are functionally outside circulation until an unbounded future date.
+The three mechanisms differ in the location of the failure (the user, the physical world, the intermediary) but are identical from the chain's perspective: the resulting UTXO is undisturbed, the transactional rules around it unchanged, and the coins are functionally outside circulation until some indefinite future date.
 
 ### 1. Forgotten password
 

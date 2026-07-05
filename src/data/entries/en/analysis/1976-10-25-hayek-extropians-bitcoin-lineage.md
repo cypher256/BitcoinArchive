@@ -195,7 +195,7 @@ The famous coinbase message in [Bitcoin's genesis block](/BitcoinArchive/entries
 
 ## 4. Direct influence vs. ideological lineage: what the evidence supports
 
-The temptation in tracing intellectual lineages is to collapse "ideological transmission" into "individual influence." The primary-source record disciplines this lineage into two distinct claims, only one of which the evidence supports strongly.
+The temptation in tracing intellectual lineages is to collapse "ideological transmission" into "individual influence." The primary-source record narrows this lineage to two distinct claims, only one of which the evidence supports strongly.
 
 | Claim | Evidence status | Notes |
 |---|---|---|

@@ -87,7 +87,7 @@ This is not hindsight. [Wei Dai](/BitcoinArchive/participants/wei-dai/), cited a
 
 ## Two faces of one coin
 
-This is where the page joins its two neighbours. The [digital-gold structural-features reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) argues that the gold status comes from design — fixed supply and the rest. The [design-vs-current-reality reading](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) records the use sliding from cash to a settlement layer. The primary record ties them together: **the scarcity that made Bitcoin digital gold is the same scarcity that wore down its cash use.** Satoshi did not set out to "make gold." He made it hard — and the hardness had a gold face on one side and an unspent cash on the other. "Digital gold" is not the intent; it is that face winning, later.
+This is where the page joins its two neighbours. The [digital-gold structural-features reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) argues that the gold status comes from design — fixed supply and the rest. The [design-vs-current-reality reading](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) records the use sliding from cash to a settlement layer. The primary record ties them together: **the scarcity that made Bitcoin digital gold is the same scarcity that wore down its cash use.** Satoshi did not set out to "make gold." He made it hard — and the hardness had a gold face on one side and an unspent-cash face on the other. "Digital gold" is not the intent; it is that face winning, later.
 
 ## So does it still dream of electronic cash?
 

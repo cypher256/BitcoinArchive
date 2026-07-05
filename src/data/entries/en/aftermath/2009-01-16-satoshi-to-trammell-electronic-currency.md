@@ -38,7 +38,7 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-electronic-currency"
 ---
 
-This email was CC'd to both bitcoin-list@lists.sourceforge.net and the Cryptography mailing list at metzdowd.com, making it a public message. It was a polished version of Satoshi's earlier private email to Trammell (threadPosition 9), with some content reorganized and a key addition.
+This email was CC'd to both bitcoin-list@lists.sourceforge.net and the Cryptography mailing list at metzdowd.com, making it a public message. It was a polished version of Satoshi's earlier private email to Trammell, with some content reorganized and a key addition.
 
 Satoshi quoted Trammell's earlier observation about valuing bitcoins and shared his vision:
 

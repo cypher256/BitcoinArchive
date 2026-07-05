@@ -43,4 +43,4 @@ He explained the address book labeling system:
 <!-- speaker: Satoshi Nakamoto -->
 > It doesn't know any names other than what you tell it. The name printed there is what's associated in your address book for that address, either under the Address Book button or the "Change..." button to the right of your Bitcoin address.
 
-This email contains one of the earliest explanations of Bitcoin's pseudonymous nature — the protocol has no concept of sender identity, and the best practice for identifying payers is to create unique receiving addresses for each counterparty. This concept would become fundamental to Bitcoin privacy best practices.
+This email contains one of the earliest explanations of Bitcoin's pseudonymous nature — the protocol has no concept of sender identity, and the best way to identify payers is to create unique receiving addresses for each counterparty. This approach would become a cornerstone of Bitcoin privacy practice.

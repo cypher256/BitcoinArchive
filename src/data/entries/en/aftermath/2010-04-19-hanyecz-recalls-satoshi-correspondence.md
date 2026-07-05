@@ -40,4 +40,4 @@ Hanyecz also recalled in interviews that Satoshi frequently emailed development 
 
 Hanyecz described Satoshi's communication style as "paranoid," "bossy," and "a little bit weird," though he continued to contribute significant development work to the project, including the macOS port and early experimentation with GPU mining.
 
-This correspondence record is treated as foundational primary evidence by [the Laszlo Hanyecz biography](/BitcoinArchive/participants/laszlo-hanyecz/), which anchors its narrative of Hanyecz's pre-pizza-day macOS-port and GPU-mining contributions on Satoshi's documented guidance recorded here.
+This correspondence record is treated as foundational primary evidence by [the Laszlo Hanyecz biography](/BitcoinArchive/participants/laszlo-hanyecz/), which anchors its account of Hanyecz's macOS port and GPU-mining work, before Pizza Day, on Satoshi's guidance recorded here.

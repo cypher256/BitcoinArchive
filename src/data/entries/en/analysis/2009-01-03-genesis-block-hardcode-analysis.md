@@ -147,7 +147,7 @@ The "backdate hypothesis," the "retroactive timestamp aligned to the *Times* hea
 
 ### 3.2 Inverting Q1: why was 2009-01-03 missed?
 
-Inverted, Q1 becomes a more substantive question — *why was the release not ready by January 3?* Choosing the January 3 timestamp implicitly set January 3 as the target. Actual release was January 8, and Block 1 was mined January 9 at 02:54:25 UTC (on-chain `nTime`; Satoshi's node must have started some minutes earlier, though this is not recorded on chain). The five-day slip is a developer's slip against his own target date.
+Inverted, Q1 becomes a more substantive question — *why was the release not ready by January 3?* Choosing the January 3 timestamp implicitly set January 3 as the target. Actual release was January 8, and Block 1 was mined January 9 at 02:54:25 UTC (on-chain `nTime`; Satoshi's node must have started some minutes earlier, though this is not recorded on chain). The five-day gap is a developer's slip against his own target date.
 
 The public signals — only about seven and a half hours between the January 8 19:27:40 UTC mailing list announcement ([metzdowd.com archive](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)) and the January 9 02:54:25 UTC Block 1 mining — weakly suggest "tight finish" over "generously buffered plan." This is speculative and cannot be decided from source code or chain data alone.
 

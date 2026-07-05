@@ -52,6 +52,7 @@ relatedEntries:
   - aftermath/2009-01-03-genesis-block
   - aftermath/2009-01-09-bitcoin-v01-released
   - aftermath/2008-08-20-satoshi-to-adam-back
+  - aftermath/2011-06-14-wikileaks-accepts-bitcoin
 ---
 
 On October 31, 2008, Satoshi Nakamoto published the Bitcoin whitepaper. Two and a half years later, he sent his last known email and stopped. Approximately 1.1 million BTC mined under a single coordinated pattern in those first months have not moved since.
@@ -150,10 +151,10 @@ Approximately 1.1 million BTC were mined under a single coordinated pattern in B
 - **Cypherpunk position**: Satoshi's documented absence from the cypherpunk community despite the alignment of his practice with the cypherpunk philosophical core is treated in [the independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 - **Signature reading**: the techno-orientalist symbolic field that the "Satoshi Nakamoto" pseudonym lands inside is treated in [the pseudonym-and-AKIRA analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/).
 
-Across mailing-list and forum messages, Satoshi explained design choices, responded to technical objections, and made operational decisions — declining the WikiLeaks donation push in December 2010, handing source-repository commit rights and the network alert key to Andresen in late 2010 and early 2011.
+Across mailing-list and forum messages, Satoshi explained design choices, responded to technical objections, and made operational decisions — declining [the WikiLeaks donation push](/BitcoinArchive/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/) in December 2010, handing source-repository commit rights and the network alert key to Andresen in late 2010 and early 2011.
 
 For the ideological lineage Satoshi designed inside — Hayek's 1976 *Denationalisation of Money*, the 1990s Extropian milieu, the cypherpunk movement, and the bounded direct-influence claims supported by the primary record — see [the Hayek-Extropian lineage entry](/BitcoinArchive/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/) and the companion analysis [Satoshi was not a cypherpunk](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
-This biography is read in companion with [the Satoshi self-statements inventory](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), which catalogues every place where Satoshi was the subject of his own sentence and reads them as a single body of evidence about what Satoshi said about himself — a complementary axis to the biographical documentary record collated here.
+This biography should be read alongside [the Satoshi self-statements inventory](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), which catalogues every place where Satoshi was the subject of his own sentence and reads them as a single body of evidence about what Satoshi said about himself — a complementary axis to the biographical documentary record collated here.
 
 *[Context: This biography is the documentary basis for the protagonist of the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — every dated event the protagonist participates in is anchored to the primary records compiled here.]*

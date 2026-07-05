@@ -152,7 +152,7 @@ The README itself flags two structural problems with attribution:
 1. *"Some authors were active under multiple names and/or mail addresses and/or used remailer services (to post anonymously)."* In our extraction Adam Back appears as both `aba_dcs_ex_ac_uk.txt` (top 8.57%) and `adam_cypherspace_org.txt` (top 7.87%). Two of his rows have been identified, presumably the same person. How many invisible aliasings exist for other authors, including potentially candidates not in our named-candidate list? Unknown.
 2. *"No guarantee that texts fully belong to the author"* (mail-thread reply extraction). Quoted text from earlier replies is hard to strip cleanly. Some chunks attributed to author X may contain language that author Y wrote in a previous message X is replying to.
 
-Both problems lossy-aggregate the per-author distance values, in directions the methodology cannot correct.
+Both problems introduce lossy aggregation into the per-author distance values, in directions the methodology cannot correct.
 
 ### 4.3 Subject-matter overlap dominates individual style
 

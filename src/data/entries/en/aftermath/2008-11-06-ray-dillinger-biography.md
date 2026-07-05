@@ -31,7 +31,7 @@ relatedEntries:
   - aftermath/2009-01-09-bitcoin-v01-released
 ---
 
-Before Bitcoin v0.1 was released to the public in January 2009, only two people are known to have audited its source code: [Hal Finney](/BitcoinArchive/participants/hal-finney/), and Ray Dillinger. Dillinger spent roughly two weeks examining the code for vulnerabilities and attack vectors. He has also been connected to the origin of Bitcoin's 1 MB block size limit, recalling early discussions in which the cap was added to prevent spam transactions from overwhelming the network — a parameter that would later become the center of the 2015–2017 block-size war.
+Before Bitcoin v0.1 was released to the public in January 2009, only two people are known to have audited its source code: [Hal Finney](/BitcoinArchive/participants/hal-finney/) and Ray Dillinger. Dillinger spent roughly two weeks examining the code for vulnerabilities and attack vectors. He has also been connected to the origin of Bitcoin's 1 MB block size limit, recalling early discussions in which the cap was added to prevent spam transactions from overwhelming the network — a parameter that would later become the center of the 2015–2017 block-size war.
 
 Dillinger is a computer scientist known by his online handles **bear** and **cryddit**. He studied computer science at the University of Kansas and has been active in the cryptography and cypherpunk communities for decades.
 

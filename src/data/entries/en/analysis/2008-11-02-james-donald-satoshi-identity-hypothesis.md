@@ -47,7 +47,7 @@ The hypothesis is that Donald — a cryptographer and anarcho-capitalist writer 
 
 ### 2.1 The first responder
 
-Donald was not a third-party Satoshi reached out to; he stepped forward on his own, two days after the announcement, with the sharpest early technical objection. The hypothesis reads that immediacy and engagement as the author hiding in plain sight as his own interlocutor.
+Donald was not a third-party Satoshi reached out to; he stepped forward on his own, two days after the announcement, with the sharpest early technical objection. The hypothesis reads that immediacy and engagement as evidence of the author hiding in plain sight, posing as his own interlocutor.
 
 The objection: being first to reply is a fact about attention, not authorship. The cryptography mailing list was a small expert venue; a long-active cypherpunk replying quickly to a digital-cash paper is expected, not anomalous.
 

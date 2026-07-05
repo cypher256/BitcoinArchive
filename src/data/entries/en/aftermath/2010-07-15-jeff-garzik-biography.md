@@ -49,10 +49,10 @@ The [July 2010 Slashdot post](/BitcoinArchive/entries/aftermath/2010-07-11-slash
 Garzik became one of the top three contributors to Bitcoin Core by commit count — behind only [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) — and was among the earliest developers granted commit access to the repository. His first major work went after the part of the client that hurt new users most: he rewrote the initial blockchain download to run [10x to 100x faster](/BitcoinArchive/entries/aftermath/2018-10-29-jeff-garzik-retrospective/).
 
 ## cpuminer
-Garzik created cpuminer, a widely-used open-source CPU mining software for Bitcoin. The tool was one of the first standalone mining applications, enabling users to mine without running the full Bitcoin client.
+Garzik created cpuminer, widely used open-source software for CPU mining Bitcoin. The tool was one of the first standalone mining applications, enabling users to mine without running the full Bitcoin client.
 
 ## Interaction with Satoshi
-The working relationship ran by email and patch: Garzik would write a change, test it, turn it into a patch, and send it to Satoshi; if Satoshi accepted it, the code went into the project's Subversion repository. Garzik [later described](/BitcoinArchive/entries/aftermath/2018-10-29-jeff-garzik-retrospective/) Satoshi as "practical and sane, which made interactions very easy and comfortable" — a collaborator who, by his account, "never used his voice at all — no video, no voice chat, no casual conversations."
+The working relationship played out over email and patch submissions: Garzik would write a change, test it, turn it into a patch, and send it to Satoshi; if Satoshi accepted it, the code went into the project's Subversion repository. Garzik [later described](/BitcoinArchive/entries/aftermath/2018-10-29-jeff-garzik-retrospective/) Satoshi as "practical and sane, which made interactions very easy and comfortable" — a collaborator who, by his account, "never used his voice at all — no video, no voice chat, no casual conversations."
 
 ## Bitcoin Improvement Proposals
 Garzik authored multiple Bitcoin Improvement Proposals (BIPs), including BIP 100, which proposed a dynamic block size limit determined by miner voting. His scaling proposals were part of the broader debate about Bitcoin's transaction capacity that became a central issue in the Bitcoin community.

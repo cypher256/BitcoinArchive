@@ -30,7 +30,7 @@ relatedEntries:
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
 ---
 
-On December 3, 2010, Malmi asked Satoshi whether they should recruit someone to take over more Bitcoin-related development and management activities. By this point, Satoshi was becoming increasingly less active and appeared to be preparing for his departure from the project.
+On December 3, 2010, Malmi asked Satoshi whether someone should be recruited to take on more of Bitcoin's development and management work. By this point, Satoshi was becoming increasingly less active and appeared to be preparing for his departure from the project.
 
 Satoshi's response was clear and decisive:
 
@@ -44,4 +44,4 @@ Satoshi's explicit recommendation of [Gavin Andresen](/BitcoinArchive/participan
 
 The comment about Linux capability is also revealing - it confirms that Satoshi primarily worked on Windows and relied on others, particularly Malmi and later Andresen, for Linux-related development. Bitcoin had been initially released as a Windows-only application, with Linux support added in version 0.2 largely through Malmi's work.
 
-This December 3 recommendation sits at the centre of three surrounding records that form the transition sequence. [The September 1, 2010 "other projects" notice to Andresen](/BitcoinArchive/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/) is the earliest signal that this December 3 conversation formalises into a public recommendation. [The December 12 SVN handover](/BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/) is the documented administrative transfer nine days later that gave Andresen actual commit access — its argument quotes this December 3 message verbatim as evidentiary foundation. And [Andresen's December 19 lead-maintainer announcement](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) treats this December 3 exchange as the precursor that made the public role acceptance possible.
+This December 3 recommendation sits at the centre of a three-part sequence of records documenting the transition. [The September 1, 2010 "other projects" notice to Andresen](/BitcoinArchive/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/) is the earliest signal that this December 3 conversation formalises into a public recommendation. [The December 12 SVN handover](/BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/) is the documented administrative transfer nine days later that gave Andresen actual commit access — its argument quotes this December 3 message verbatim as evidentiary foundation. And [Andresen's December 19 lead-maintainer announcement](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) treats this December 3 exchange as the precursor that made the public role acceptance possible.

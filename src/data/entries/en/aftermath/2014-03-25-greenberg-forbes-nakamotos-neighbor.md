@@ -43,11 +43,11 @@ On March 25, 2014, Forbes senior writer Andy Greenberg published *"Nakamoto's Ne
 
 ## Geographic proximity to Dorian Nakamoto
 
-The article's title and central narrative hook is a geographic coincidence: Hal Finney lived for almost a decade in Temple City, California, the same town in which [Newsweek had identified Dorian Prentice Satoshi Nakamoto](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) as a Satoshi candidate three weeks earlier (March 6, 2014). Finney and Dorian Nakamoto had lived "blocks apart." Greenberg's framing — that Bitcoin's creator might have constructed a pseudonym from a real person's name living a few blocks away — gave the piece its title and its motivating question.
+The article's title and central narrative hook are both drawn from a geographic coincidence: Hal Finney lived for almost a decade in Temple City, California, the same town in which [Newsweek had identified Dorian Prentice Satoshi Nakamoto](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) as a Satoshi candidate three weeks earlier (March 6, 2014). Finney and Dorian Nakamoto had lived "blocks apart." Greenberg's framing — that Bitcoin's creator might have constructed a pseudonym from a real person's name living a few blocks away — gave the piece its title and its motivating question.
 
 ## The home visit
 
-Greenberg traveled to Temple City and met Hal and Fran Finney at their home. Hal was by 2014 essentially paralyzed by ALS and communicated through eye-tracking software. Fran spoke for him in much of the conversation. Greenberg's portrait — a brilliant cryptographer working on Bitcoin code with eye-trackers from a wheelchair, "blocks apart" from a man who shared the Satoshi name by accident of birth — is the longest-form journalism portrait of Hal Finney in the public record.
+Greenberg traveled to Temple City and met Hal and Fran Finney at their home. Hal was by 2014 essentially paralyzed by ALS and communicated through eye-tracking software. Fran spoke for him in much of the conversation. Greenberg's portrait — a brilliant cryptographer working on Bitcoin code with eye-trackers from a wheelchair, "blocks apart" from a man who shared the Satoshi name by accident of birth — is the most extensive long-form journalism portrait of Hal Finney in the public record.
 
 ## The race-day photographs
 

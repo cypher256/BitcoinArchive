@@ -33,7 +33,7 @@ On October 5, 2009, [NewLibertyStandard](/BitcoinArchive/participants/newliberty
 
 **$1 = 1,309.03 BTC** ($0.000764 per BTC)
 
-The methodology: divide $1.00 by the average amount of electricity required to run a computer with high CPU for a year (1,331.5 kWh), multiplied by the average residential cost of electricity in the United States for the previous year ($0.1136), divided by 12 months, divided by the number of bitcoins generated over the past 30 days.
+The methodology: divide $1.00 by the average amount of electricity required to run a computer at high CPU usage for a year (1,331.5 kWh), multiplied by the average residential cost of electricity in the United States for the previous year ($0.1136), divided by 12 months, divided by the number of bitcoins generated over the past 30 days.
 
 In other words, Bitcoin's first price was a cost-of-production figure — the electricity to mine a coin — not a market price set by buyers and sellers.
 

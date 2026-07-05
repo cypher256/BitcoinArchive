@@ -42,7 +42,7 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651"
 ---
 
-On December 19, 2010, four days after Satoshi's last source-code commit (the v0.3.19 release of December 15) and seven days after the [SVN access handover](/BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) posted to the BitcoinTalk forum the public acceptance of the leadership role:
+On December 19, 2010, four days after Satoshi's last source-code commit (the v0.3.19 release of December 15) and seven days after the [SVN access handover](/BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) posted his public acceptance of the leadership role to the BitcoinTalk forum:
 
 <!-- quote: q1 -->
 > With Satoshi's blessing, and with great reluctance, I'm going to start doing more active project management for bitcoin.

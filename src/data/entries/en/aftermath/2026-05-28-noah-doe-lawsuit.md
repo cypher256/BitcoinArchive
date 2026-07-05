@@ -37,7 +37,7 @@ On March 11, 2026, an anonymous plaintiff using the pseudonym "Noah Doe," joined
 
 Counsel of record is Lewis & Lin LLC. The novel legal theory rests on **Article 7-B of New York's Personal Property Law**, the state's lost-property statute traditionally applied to physical objects. Plaintiff's argument: dormant Bitcoin meets the statutory definition of mislaid or abandoned personal property, and a finder who has "publicly maintained" possession through some yet-to-be-disclosed mechanism is entitled to ownership transfer through court order.
 
-The legal innovation is significant. New York courts have applied Article 7-B to physical chattels — wallets, jewelry, motor vehicles — but never to digital assets recorded on a public blockchain. The pleading therefore frames a question of first impression: whether the statutory category of "personal property" extends to UTXO-controlled coins whose control private key has been lost, forgotten, or destroyed.
+The legal innovation is significant. New York courts have applied Article 7-B to physical chattels — wallets, jewelry, motor vehicles — but never to digital assets recorded on a public blockchain. The pleading therefore frames a question of first impression: whether the statutory category of "personal property" extends to UTXO-controlled coins whose controlling private key has been lost, forgotten, or destroyed.
 
 ```mermaid
 flowchart TD

@@ -39,9 +39,9 @@ Wu studied economics and journalism at Peking University before working as a fin
 
 ## Bitmain (2013–2018)
 
-In 2013 Wu co-founded Bitmain Technologies with Micree Zhan, a chip designer. Bitmain's first commercial product — the Antminer S1 ASIC, released in late 2013 — entered a market dominated by Avalon and BFL. Through subsequent generations (S3, S5, S7, S9) Bitmain became the dominant Bitcoin ASIC manufacturer of the 2015–2018 era, controlling a majority share of new mining hardware shipments at peak. Bitmain also operated AntPool, which became the largest Bitcoin mining pool by hashrate during the same period.
+In 2013 Wu co-founded Bitmain Technologies with Micree Zhan, a chip designer. Bitmain's first commercial product — the Antminer S1 ASIC, released in late 2013 — entered a market dominated by Avalon and BFL. Through subsequent generations (S3, S5, S7, S9) Bitmain became the dominant Bitcoin ASIC manufacturer of the 2015–2018 era, controlling a majority share of new mining hardware shipments at its peak. Bitmain also operated AntPool, which became the largest Bitcoin mining pool by hashrate during the same period.
 
-Wu's role through this period was the public-facing co-CEO; Zhan was the chip-engineering side. The two co-founders' division of responsibilities — Wu external/business/community, Zhan internal/engineering — would become structurally significant in the later leadership conflict.
+Wu served as the public-facing co-CEO, while Zhan handled the chip-engineering side. The two co-founders' division of responsibilities — Wu external/business/community, Zhan internal/engineering — would become structurally significant in the later leadership conflict.
 
 ## Block-size war and Bitcoin Cash (2015–2017)
 
@@ -49,7 +49,7 @@ Wu was a vocal proponent of larger Bitcoin blocks throughout the 2015–2017 [bl
 
 ## Bitmain leadership conflict and post-2018 ventures
 
-Through 2018-2019 a public conflict developed between Wu and Zhan over Bitmain's strategic direction (in particular its expansion into AI chips and the abortive 2018 Hong Kong IPO). The dispute briefly produced parallel leadership claims and corporate-governance disputes that played out in Chinese and international press. The eventual resolution — after multiple rounds of management changes — left Zhan in control of Bitmain proper while Wu spun off into separate ventures.
+Through 2018-2019 a public conflict developed between Wu and Zhan over Bitmain's strategic direction (in particular its expansion into AI chips and the abortive 2018 Hong Kong IPO). The dispute briefly produced parallel leadership claims and corporate-governance disputes that played out in Chinese and international press. The eventual resolution — after multiple rounds of management changes — left Zhan in control of Bitmain proper while Wu moved on to separate ventures.
 
 Post-Bitmain, Wu founded **Matrixport** (2019, a Bitcoin financial services / custody platform) and **Bitdeer** (originally a Bitmain-internal cloud-mining service spun off in 2018, later operating independently with Wu in leadership). Both remain Bitcoin-centric businesses; Wu continues to be active in Bitcoin mining and adjacent infrastructure.
 

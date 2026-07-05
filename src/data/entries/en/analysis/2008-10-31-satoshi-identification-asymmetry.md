@@ -225,7 +225,7 @@ Putting §1, §2, and §3 next to each other yields an empirical observation tha
 
 - The attempts (§1) are not few in number, nor concentrated in one venue, nor confined to one method. They span journalism, litigation, statistical forensics, peer-reviewed academic methodology, and recorded institutional attention from multiple states.
 - The material (§2) is, by the standards of attribution research on real-world figures, abundant. 575 long-form forum posts; ~300 published emails; almost 32 thousand lines of authored code; metadata; a multi-year operational pattern.
-- The result (§3) is a candidate field where every named name has been ruled out or is hedged with reasonable counter-evidence.
+- The result (§3) is a candidate field where every named candidate has been ruled out or is hedged with reasonable counter-evidence.
 
 The asymmetry is between the visible work spent on the question and the visible result. It is not, in this entry's framing, an asymmetry between Satoshi and "the world's adversaries" — that framing requires conjecture about the size of off-record pursuit, which the entry does not adopt.
 

@@ -53,9 +53,9 @@ Hatch's argument is structurally circumstantial — he combines biographical, li
 
 - **Timezone and activity alignment.** Satoshi's posting cadence — late-night Bay Area / business-day European hours — matches Sassaman's residence in Belgium during Bitcoin's development. Hatch points to overlap with Sassaman's documented tweet timestamps in the same window.
 - **Language patterns.** Satoshi's writing carried British-spelling tells ("bloody," "maths," British/American mixed pattern, occasional Euro references) inconsistent with a purely American author but consistent with an American who had been living in Europe — Sassaman's pattern.
-- **Technical overlap.** Sassaman was a working developer on remailers, PGP/cryptography, and P2P networking, and had researched Byzantine-fault-tolerance problems — the precise technical territory the Bitcoin whitepaper integrates.
+- **Technical overlap.** Sassaman was a working developer on remailers, PGP/cryptography, and P2P networking, and had researched Byzantine-fault-tolerance problems — the precise technical territory the Bitcoin whitepaper draws on.
 - **Cypherpunk-network embedding.** Sassaman had documented working relationships with [Hal Finney](/BitcoinArchive/participants/hal-finney/), [Adam Back](/BitcoinArchive/participants/adam-back/), and Bram Cohen — the same Bay Area cypherpunk network from which Bitcoin emerged.
-- **Academic register.** The Bitcoin whitepaper's LaTeX formatting and citation style match the academic-paper register Sassaman produced as a PhD researcher at KU Leuven's COSIC group, working under David Chaum, 2004–2011.
+- **Academic register.** The Bitcoin whitepaper's LaTeX formatting and citation style match the academic-paper register of the work Sassaman produced as a PhD researcher at KU Leuven's COSIC group, working under David Chaum, 2004–2011.
 - **Final-message-to-death timing.** Satoshi's last verified message dates to May 2011. Sassaman died on [July 3, 2011](/BitcoinArchive/participants/len-sassaman/) of suicide. Hatch treats the roughly two-month gap as suggestive without claiming it is dispositive.
 
 ## Hatch's framing

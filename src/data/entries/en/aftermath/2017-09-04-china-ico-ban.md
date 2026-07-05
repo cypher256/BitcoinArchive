@@ -27,7 +27,7 @@ relatedEntries:
 
 On September 4, 2017, seven Chinese central government regulators — led by the People's Bank of China (PBOC) — jointly issued the "Announcement on Preventing Financial Risks from Initial Coin Offerings," effectively banning all ICOs and cryptocurrency exchange operations in China.
 
-ICOs were declared illegal fundraising mechanisms. All funds raised via ICOs were ordered returned to investors. Financial institutions were barred from providing services to ICO activities. By the end of September 2017, all major domestic cryptocurrency exchanges — including OKCoin, Huobi, and BTC China — had ceased operations.
+ICOs were declared illegal fundraising mechanisms. All funds raised via ICOs were ordered returned to investors. Financial institutions were barred from providing services related to ICO activities. By the end of September 2017, all major domestic cryptocurrency exchanges — including OKCoin, Huobi, and BTC China — had ceased operations.
 
 The impact appeared devastating. China had been the dominant force in Bitcoin: Chinese exchanges handled the majority of global Bitcoin trading volume, and Chinese mining operations controlled a significant share of the network's hash rate. Bitcoin's price dropped sharply on the news.
 

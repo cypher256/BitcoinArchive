@@ -30,7 +30,7 @@ relatedEntries:
 
 On April 30, 2024, Spanish authorities arrested Roger Ver on a U.S. extradition request. The DOJ indictment alleges he under-reported the value of his Bitcoin holdings when he renounced U.S. citizenship in 2014, evading approximately $48 million in exit-tax obligations.
 
-Thirteen years earlier, in 2011, Ver had been one of Bitcoin's earliest angel investors — putting seed money into BitInstant, Blockchain.info, Kraken, Bitpay, Bitcoin Magazine, and Ripple. His Silicon Valley computer-parts company Memory Dealers became one of the first established retailers to accept Bitcoin. The nickname "Bitcoin Jesus" — sometimes self-applied, sometimes journalist-affixed — emerged from his evangelistic conference style. By 2017 he had become the most visible advocate of the [Bitcoin Cash hard fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/), framing BCH as "the real Bitcoin Satoshi described" on the bitcoin.com domain he had acquired.
+Thirteen years earlier, in 2011, Ver had been one of Bitcoin's earliest angel investors — putting seed money into BitInstant, Blockchain.info, Kraken, Bitpay, Bitcoin Magazine, and Ripple. His Silicon Valley computer-parts company Memory Dealers became one of the first established retailers to accept Bitcoin. The nickname "Bitcoin Jesus" — sometimes self-applied, sometimes given to him by journalists — emerged from his evangelistic conference style. By 2017 he had become the most visible advocate of the [Bitcoin Cash hard fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/), framing BCH as "the real Bitcoin Satoshi described" on the bitcoin.com domain he had acquired.
 
 Roger Keith Ver was born January 27, 1979 in San Jose, California. He renounced U.S. citizenship in 2014 and acquired citizenship from Saint Kitts and Nevis. He disputes the 2024 charges.
 
@@ -51,13 +51,13 @@ Through 2011-2014 Ver was an early investor in many of the foundational Bitcoin 
 | Bitcoin Magazine | Media |
 | Ripple | Payments protocol (then separate) |
 
-At the time he was widely characterized as the "angel investor of Bitcoin," and the nickname "Bitcoin Jesus" — sometimes self-applied, sometimes journalist-affixed — emerged from his evangelistic style at conferences and YouTube videos.
+At the time he was widely characterized as the "angel investor of Bitcoin," and the nickname "Bitcoin Jesus" — sometimes self-applied, sometimes bestowed on him by journalists — emerged from his evangelistic style at conferences and YouTube videos.
 
 In 2014 Ver renounced his US citizenship and acquired citizenship from Saint Kitts and Nevis, citing tax and political reasons. The renunciation event later became a structural element of the 2024 US tax-fraud charges (see below).
 
 ## Block-size war and Bitcoin Cash (2015–2017)
 
-By 2015 Ver had positioned bitcoin.com (the domain) as a public platform advocating for larger block sizes. Through the [block-size war](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) Ver was one of the loudest voices arguing that Bitcoin's then-1 MB cap was preventing the chain from serving as everyday payments. When [Bitcoin XT](/BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015) and Bitcoin Classic (2016) failed to activate, and the [SegWit2x](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) compromise collapsed, the larger-block faction split off via the [Bitcoin Cash hard fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) on August 1, 2017. Ver was the most visible public advocate; bitcoin.com became the principal outlet promoting BCH, and Ver's framing of BCH as "the real Bitcoin Satoshi described" generated sustained controversy in the broader Bitcoin community.
+By 2015 Ver had positioned bitcoin.com (the domain) as a public platform advocating for larger block sizes. Through the [block-size war](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) Ver was one of the loudest voices arguing that Bitcoin's then-1 MB cap was preventing the chain from serving as an everyday payment method. When [Bitcoin XT](/BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015) and Bitcoin Classic (2016) failed to activate, and the [SegWit2x](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) compromise collapsed, the larger-block faction split off via the [Bitcoin Cash hard fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) on August 1, 2017. Ver was the most visible public advocate; bitcoin.com became the principal outlet promoting BCH, and Ver's framing of BCH as "the real Bitcoin Satoshi described" generated sustained controversy in the broader Bitcoin community.
 
 ## US tax-fraud charges (2024)
 

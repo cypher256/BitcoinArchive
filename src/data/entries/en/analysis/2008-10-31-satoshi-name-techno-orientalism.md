@@ -50,7 +50,7 @@ Representative works in the assemblage:
 | 1995 | *Ghost in the Shell* (Oshii film, Nov 1995) | Networked intelligences without bodies, operating from a Japanese urban substrate |
 | 1989-93 | *Mondo 2000* cyberpunk discourse | Japanese loanwords (sōkaiya, salaryman, otaku) and Tokyo as the emblematic future city |
 
-By the time Bitcoin was designed (mid-2007 onward), this assemblage had been settled cultural background for a generation. The symbolic claim it carried was specific: *the deep network is opaque, anonymous, intelligent, and reads as Japanese*.
+By the time Bitcoin was designed (mid-2007 onward), this assemblage had already settled into the cultural background for a generation. The symbolic claim it carried was specific: *the deep network is opaque, anonymous, intelligent, and reads as Japanese*.
 
 ## 2. What the pseudonym lands inside
 

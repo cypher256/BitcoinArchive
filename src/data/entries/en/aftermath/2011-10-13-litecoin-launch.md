@@ -38,7 +38,7 @@ Litecoin was a Bitcoin-codebase fork with four parameter changes:
 
 Each parameter was scaled by a factor of four against Bitcoin's, producing a chain that was internally consistent — the block reward, halving schedule, and supply ceiling all stayed in proportion.
 
-Lee positioned Litecoin publicly as **"the silver to Bitcoin's gold"** — a framing that survived as marketing language for the chain into the late 2010s and 2020s. The metaphor captured Lee's positioning intent: Litecoin was not a replacement for Bitcoin but a complementary, faster, cheaper-fee chain for everyday transactions, with Bitcoin reserved for store-of-value usage.
+Lee positioned Litecoin publicly as **"the silver to Bitcoin's gold"** — a framing that survived as marketing language for the chain into the late 2010s and 2020s. The metaphor captured Lee's positioning intent: Litecoin was not a replacement for Bitcoin but a complementary, faster, lower-fee chain for everyday transactions, with Bitcoin reserved for store-of-value usage.
 
 The Scrypt proof-of-work choice did not produce the long-term ASIC resistance Lee anticipated. Scrypt ASICs (most prominently from KnCMiner and later Bitmain's Antminer L-series) shipped from 2014 onward, and Litecoin mining became as ASIC-dominated as Bitcoin's by 2015–2016. The "ASIC-resistant" framing was retired without explicit retraction; the chain continued operating on Scrypt regardless.
 

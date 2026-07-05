@@ -62,7 +62,7 @@ From the early 2000s Le Roux's operational focus shifted from open-source crypto
 
 ## Arrest and Cooperation
 
-In September 2012 Le Roux was arrested by US authorities in Liberia after being lured there in a sting operation. He immediately became a DEA cooperator, providing extensive evidence against members of his own organization. He was sentenced to 25 years in US federal prison in 2020 — substantially reduced for cooperation against the originally maximum possible life sentence. He has not made public statements while incarcerated, including on the Satoshi-identity question.
+In September 2012 Le Roux was arrested by US authorities in Liberia after being lured there in a sting operation. He immediately became a DEA cooperator, providing extensive evidence against members of his own organization. He was sentenced to 25 years in US federal prison in 2020 — substantially reduced, in exchange for his cooperation, from the maximum possible sentence of life imprisonment. He has not made public statements while incarcerated, including on the Satoshi-identity question.
 
 ## Posthumous-style association with the Satoshi-identity question
 

@@ -216,7 +216,7 @@ Before going into mining itself, three terms that sound similar but are not the 
 - A **miner** is a node that *also* spends compute power racing to produce the next block.
 - A **wallet** is software that manages your keys and builds transactions; it can live inside a node, talk to a node, or sit on a phone with no full node at all.
 
-Mining is a strictly added activity on top of being a node. A wallet is a separate concern again — a phone wallet usually talks to someone else's node, often via SPV (chapter 1). Bitcoin Core ships all three roles in one program, which is the most common reason these terms get conflated.
+Mining is a separate, optional activity layered on top of being a node. A wallet is a separate concern again — a phone wallet usually talks to someone else's node, often via SPV (chapter 1). Bitcoin Core ships all three roles in one program, which is the most common reason these terms get conflated.
 
 ```mermaid
 flowchart TB

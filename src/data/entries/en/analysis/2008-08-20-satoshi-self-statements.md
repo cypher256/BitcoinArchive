@@ -172,13 +172,13 @@ This sparseness is itself a notable observation: in an age of vocal cypherpunk a
 
 ### 2.5 Departure statements
 
-The departure trajectory spans seven months in the public record. The earliest documented signal is the September 2010 private message to Gavin Andresen ("working on other projects"); the public turning point is the December 12, 2010 BitcoinTalk post closing with "I'm doing a few more things, then I plan to pass the baton" — Satoshi's last known public statement. The 2011 April farewells (Hearn 2011-04-23, Gavin 2011-04-26) are the formal close of a process that had already been visible for months.
+The departure trajectory spans seven months in the public record. The earliest documented signal is the September 2010 private message to Gavin Andresen ("working on other projects"); the public turning point is the December 12, 2010 BitcoinTalk post closing with "I'm doing a few more things, then I plan to pass the baton" — Satoshi's last known public statement. The April 2011 farewells (Hearn 2011-04-23, Gavin 2011-04-26) are the formal close of a process that had already been visible for months.
 
 The 2011 sequence itself is consistent and brief:
 
 - An assertion of completion: leadership transferred, project in good hands.
 - A specific request: do not frame me as "a mysterious shadowy figure."
-- A forward statement: "moved on to other things and will probably be unavailable."
+- A forward-looking statement: "moved on to other things and will probably be unavailable."
 
 The disputed 2014 P2P Foundation post is the single ambiguous addition: brief, contextually responsive (to the Newsweek Dorian story), and authentically Satoshi only if the original profile credentials were still in use.
 

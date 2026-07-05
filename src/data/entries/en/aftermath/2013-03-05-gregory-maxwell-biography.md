@@ -43,7 +43,7 @@ timeline
 ```
 
 ## libsecp256k1
-Shortly after [Pieter Wuille](/BitcoinArchive/participants/pieter-wuille/) started the [libsecp256k1 library](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) on March 5, 2013, Maxwell joined the effort. Under their joint work the library expanded from a performance experiment into a purpose-built replacement for OpenSSL's secp256k1 implementation, shipping as the default backend in Bitcoin Core v0.12 on January 15, 2016.
+Shortly after [Pieter Wuille](/BitcoinArchive/participants/pieter-wuille/) started the [libsecp256k1 library](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) on March 5, 2013, Maxwell joined the effort. Working together, they expanded the library from a performance experiment into a purpose-built replacement for OpenSSL's secp256k1 implementation, shipping as the default backend in Bitcoin Core v0.12 on January 15, 2016.
 
 ## CoinJoin and Confidential Transactions
 Maxwell's most widely cited privacy contributions are the **CoinJoin** construction — a method for combining multiple users' payments into one transaction to break simple input-to-output heuristics — and **Confidential Transactions**, a scheme that hides transaction amounts behind Pedersen commitments while preserving verifiability of conservation of value. Neither design has been deployed on Bitcoin's base layer, but they have informed a generation of Bitcoin privacy work (Wasabi, JoinMarket, Liquid) and the broader cryptocurrency-privacy literature.

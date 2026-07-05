@@ -28,7 +28,7 @@ relatedEntries:
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
 ---
 
-In early 2011, programmer and IRC enthusiast **Stefan Thomas** was paid roughly 7,002 BTC by an early Bitcoin user for producing the popular animated explainer video *What is Bitcoin?*. He stored the wallet's private key on an **IronKey** encrypted USB drive — a device designed for high-assurance enterprise key storage, with the property that after **ten consecutive incorrect password attempts** the device's onboard controller auto-encrypts and erases the protected payload, making the contents cryptographically unrecoverable.
+In early 2011, programmer and IRC enthusiast **Stefan Thomas** was paid roughly 7,002 BTC by an early Bitcoin user for producing the popular animated explainer video *What is Bitcoin?*. He stored the wallet's private key on an **IronKey** encrypted USB drive — a device designed for high-assurance enterprise key storage: after **ten consecutive incorrect password attempts**, its onboard controller auto-encrypts and erases the protected payload, making the contents cryptographically unrecoverable.
 
 Thomas wrote the IronKey's master password down on a piece of paper. He lost the paper.
 
@@ -49,7 +49,7 @@ flowchart LR
 
 **The 2021 New York Times disclosure.** In a January 12, 2021 article titled "Lost Passwords Lock Millionaires Out of Their Bitcoin Fortunes," New York Times reporter Nathaniel Popper documented Thomas's situation. By that date Thomas had exhausted **eight of the ten password attempts**. Two attempts remain before the IronKey wipes itself. At publication BTC was trading near $33,000 / coin, putting the locked value above $220 million; later Bitcoin price levels have pushed the nominal value of the locked wallet into multi-hundred-millions of dollars and at times above $700 million.
 
-**Thomas's professional standing.** Thomas has been continuously active in the cryptocurrency engineering community across the period of the lockout. He was an early Ripple engineer (Chief Technology Officer of Ripple Labs through 2018) and later founded the micropayment / web-monetization startup **Coil**. The lockout has not impaired his career; it is, by his own framing, a personal artifact rather than a financial crisis.
+**Thomas's professional standing.** Thomas has remained continuously active in the cryptocurrency engineering community throughout the lockout. He was an early Ripple engineer (Chief Technology Officer of Ripple Labs through 2018) and later founded the micropayment / web-monetization startup **Coil**. The lockout has not impaired his career; it is, by his own framing, a personal artifact rather than a financial crisis.
 
 **Public recovery offers.** In late 2023 the cybersecurity firm **Unciphered** publicly announced a method for breaking IronKey models in the family of Thomas's device and offered to recover the wallet. Thomas declined the offer publicly, stating that he had committed earlier to two other recovery teams under prior agreements and could not unilaterally bring in a third. As of mid-2026 the device remains locked, no public report confirms a successful recovery, and Thomas reports keeping the IronKey "in a secure location" while consciously not making further password guesses.
 

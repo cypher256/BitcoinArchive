@@ -45,12 +45,15 @@ relatedEntries:
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
+  - "aftermath/2008-08-21-satoshi-to-adam-back-b-money"
 ---
 
-On August 20, 2008, an email arrived in Adam Back's inbox. The sender called himself [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and asked about Hashcash citation format for an upcoming paper on a "new electronic cash system." Eleven years earlier, in March 1997, Back had announced [Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) on the cypherpunks mailing list. He answered the next day with the citation, then referred Satoshi to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s [b-money](/BitcoinArchive/entries/threads/emails/cypherpunks/b-money-protocol/). Same day, Satoshi replied:
+On August 20, 2008, an email arrived in Adam Back's inbox. The sender called himself [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and asked about Hashcash citation format for an upcoming paper on a "new electronic cash system." Eleven years earlier, in March 1997, Back had announced [Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) on the cypherpunks mailing list. He answered the next day with the citation, then referred Satoshi to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s [b-money](/BitcoinArchive/entries/threads/emails/cypherpunks/b-money-protocol/). The same day, Satoshi replied:
 
 <!-- speaker: Satoshi Nakamoto -->
 > "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
+
+This reply is examined in full in [its own dedicated entry](/BitcoinArchive/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/), which reads it as one of the primary-source anchors for Satoshi's independent arrival at Bitcoin's design.
 
 In April 2026, [the NYT and journalist Carreyrou named Back as the strongest stylometric candidate](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) for Satoshi in their analysis of forum and email corpora. Back denied it publicly. The hypothesis is treated as one tier among several in [a dedicated identity analysis](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/).
 
@@ -79,7 +82,7 @@ In March 1997, Back proposed Hashcash, a proof-of-work system originally designe
 
 ## First Contact from Satoshi
 
-The August 2008 exchange runs across three days: [Satoshi's email to Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) (Aug 20, citation request), [Back's reply](/BitcoinArchive/entries/aftermath/2008-08-21-adam-back-to-satoshi/) with the Hashcash citation and the b-money referral (Aug 21), Satoshi's same-day acknowledgment of not having seen b-money during the pre-disclosure period of his design and coding work (above), and Satoshi's [email to Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) the next day asking for b-money's publication date for the whitepaper citation. The chain places Bitcoin's design substantially complete before Back's referral and serves as a primary-source anchor for [the cypherpunk independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
+The August 2008 exchange runs across three days: [Satoshi's email to Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) (Aug 20, citation request), [Back's reply](/BitcoinArchive/entries/aftermath/2008-08-21-adam-back-to-satoshi/) with the Hashcash citation and the b-money referral (Aug 21), Satoshi's same-day acknowledgment of not having seen b-money during the pre-disclosure period of his design and coding work (above), and Satoshi's [email to Wei Dai](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) the next day asking for b-money's publication date for the whitepaper citation. The chain shows Bitcoin's design was substantially complete before Back's referral and serves as a primary-source anchor for [the cypherpunk independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
 ## Testimony and Email Publication
 Bitcoin Magazine later published Back's correspondence with Satoshi — one of the few primary records of Bitcoin's earliest conceptual phase. In February 2024, Back [testified under oath in the COPA v Wright trial](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) in London, recounting his exchanges with Satoshi and the timeline of Bitcoin's creation.

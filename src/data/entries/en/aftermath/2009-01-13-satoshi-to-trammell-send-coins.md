@@ -38,7 +38,7 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address"
 ---
 
-In this email, Satoshi discussed a communications bug that had been fixed in version 0.1.3 which had prevented nodes from properly broadcasting blocks. He then offered to send Trammell some coins:
+In this email, Satoshi discussed a communications bug, now fixed in version 0.1.3, that had prevented nodes from properly broadcasting blocks. He then offered to send Trammell some coins:
 
 <!-- quote: q1 -->
 > This is all fixed in 0.1.3. If you give me your IP, I'll send you some coins.
