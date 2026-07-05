@@ -48,6 +48,32 @@
   --max-width-read: 1000px;          /* reading-tier page (single document) */
   --max-width-wide: 1200px;          /* dashboard-tier page (lists, viz) */
 
+  /* ---- Vertical rhythm tokens.
+     Single source of truth for the outer margin of every block-level
+     entry-page component below the prose: the ~15 special analysis /
+     chart components (WhaleAlertFortune, BarChartRace,
+     SatoshiActivityTimeline, etc.), .thread-banner (entry templates),
+     .related-entries (RelatedEntries.astro), and .source-citation
+     (SourceCitation.astro). Each originally carried its own unexamined
+     value (mostly 2rem/2em, a few 2.5rem/2.5em) picked independently
+     when that component was first authored — none tied to each other or
+     to the article's own established rhythm (~1.4–1.5em for
+     paragraphs/figures/quotes, see src/archive/todo/
+     20260608_モダンWebデザイン_余白可読性_調査と案.md in the novel repo).
+     Two tiers, not one — these are different roles:
+       --rhythm-block   entering/leaving the group: prose or a chart
+                         component next to the first/last boxed callout.
+       --rhythm-cluster  inside the group: one boxed callout directly
+                         against another (.thread-banner ×N, then
+                         .related-entries, then .source-citation) — they
+                         share one visual language, so they read as one
+                         cluster and stay close together regardless of
+                         how far --rhythm-block is opened up. See the
+                         .thread-banner + ... rules below for how the
+                         tighter value is applied only between them. */
+  --rhythm-block: 4rem;
+  --rhythm-cluster: 1.25rem;
+
   /* ---- Semantic color aliases (only the consumed ones remain) ---- */
   --color-bg-quote: var(--color-source-bg);
   --color-divider: var(--color-border);
@@ -394,7 +420,11 @@ h4 { font-size: 1.1rem; font-weight: 600; }
    design, the participant-head block for biographies — so owning the gap
    on the body wrapper keeps it uniform. padding, not margin, so it never
    collapses with whatever precedes it. (Thread pages use .message-body,
-   which keeps its own per-message spacing.) */
+   which keeps its own per-message spacing.) No matching padding-bottom:
+   what follows the body (special chart components, thread-banner,
+   RelatedEntries, SourceCitation) already collapses cleanly against it
+   via each one's own margin-top — see --rhythm-block near the top of
+   this file. */
 .entry-content,
 .biography-content {
   padding-top: 1.5rem;
@@ -586,6 +616,35 @@ blockquote[data-speaker="satoshi"] {
    component — a scoped rule in the page never reaches its <img>. */
 .entry-title-row .avatar {
   background: #0d0e12;
+}
+
+/* .thread-banner (entry templates), RelatedEntries.astro, and
+   SourceCitation.astro are the same visual language — dark box, left
+   accent border, rounded corner — and sit in the same end-of-article
+   position (a page can stack several: multiple .thread-banners when it
+   relates to more than one thread, then RelatedEntries, then
+   SourceCitation). Each uses --rhythm-block as its own default margin
+   (see above) for when it sits next to prose or a chart component.
+   When two of them land back-to-back, that's a different situation —
+   they're one visual cluster, not separately-spaced callouts — so the
+   boundary between them tightens to --rhythm-cluster instead. Adjacent
+   sibling margins collapse to the LARGER side, so both sides need the
+   override; cross-component (a scoped rule in one can't reach another's
+   class) and !important, because each component's own scoped rule
+   carries Astro's scope-attribute selector, tying specificity with this
+   one and winning on source order alone otherwise (same reason
+   .avatar.satoshi-av above needs !important). */
+.thread-banner + .thread-banner,
+.thread-banner + .related-entries,
+.thread-banner + .source-citation,
+.related-entries + .source-citation {
+  margin-top: var(--rhythm-cluster) !important;
+}
+.thread-banner:has(+ .thread-banner),
+.thread-banner:has(+ .related-entries),
+.thread-banner:has(+ .source-citation),
+.related-entries:has(+ .source-citation) {
+  margin-bottom: var(--rhythm-cluster) !important;
 }
 
 /* ── Entry card (browse list + full-text search results) ──────────────

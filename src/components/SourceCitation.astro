@@ -78,7 +78,10 @@ const secondaryLabel = isDerivativeType ? 'entry.relatedSources' : 'entry.second
 
 <style>
   .source-citation {
-    margin-top: 2.5rem;
+    /* --rhythm-block (global.css): shared with .thread-banner and
+       .related-entries so end-of-article spacing collapses uniformly
+       everywhere, not three independently-authored magic numbers. */
+    margin-top: var(--rhythm-block);
     padding: 1.25rem;
     border: 1px solid var(--color-border);
     border-left: 3px solid var(--color-accent);

@@ -169,7 +169,10 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenT
 
 <style>
   .related-entries {
-    margin: 2.5rem 0;
+    /* --rhythm-block (global.css): shared with .thread-banner and
+       .source-citation so end-of-article spacing collapses uniformly
+       everywhere, not three independently-authored magic numbers. */
+    margin: var(--rhythm-block) 0;
     padding: 1.25rem 1.5rem;
     background: var(--color-bg-alt);
     border-left: 3px solid var(--color-accent);
