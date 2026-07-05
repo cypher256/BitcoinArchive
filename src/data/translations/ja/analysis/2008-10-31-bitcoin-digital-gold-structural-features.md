@@ -22,6 +22,7 @@ relatedEntries:
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
+  - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - design/2009-01-03-bitcoin-monetary-design
   - design/2009-01-03-bitcoin-consensus-design
@@ -112,7 +113,7 @@ flowchart TB
 
 違いは一目で分かる。比較表のビットコイン以外のすべてのプロジェクトについて、関心のある読み手は次を名指しできる: 発言が価格を動かす人物、プロトコル開発を資金支援する組織、企業判断がチェーンのロードマップを形作る会社。ビットコインの対応欄は空白で、その状態は 10 年以上、何度もの議論を呼んだアップグレードサイクルを通じて保たれてきた。
 
-注記: 「Bitcoin Foundation」は存在した (2012 年設立、2015 年までに実質休眠)。それは 501(c)(6) の擁護・教育団体であり、プロトコルガバナンス組織ではなかった。Bitcoin Core 開発プロジェクトは、単一の企業スポンサーや形式的なガバナンス階層を持たない貢献者の緩い連合体であり、これは 2014 年のリブランドが露呈させた[権威パターン](/BitcoinArchive/ja/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/)で、その後も続いている。
+注記: 「Bitcoin Foundation」は存在した (2012 年設立、2015 年までに実質休眠)。それは 501(c)(6) の擁護・教育団体であり、プロトコルガバナンス組織ではなかった。Bitcoin Core 開発プロジェクトは、単一の企業スポンサーや形式的なガバナンス階層を持たない貢献者の緩い連合体であり、これは 2014 年のリブランドが露呈させた[権威パターン](/BitcoinArchive/ja/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/)で、その後も続いている。同じ制度的空白は、[フォーク戦争はオープンソースの話ではない、という考察](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)が 2015〜2017 年のブロックサイズ戦争を読み解く前提でもあり、同分析は財団の 2015 年破綻を、規則をめぐる対立をアイデンティティ争奪戦に変えた真空の一角として位置づけている。
 
 ### 3. 公正な配分 — プレマインなし
 

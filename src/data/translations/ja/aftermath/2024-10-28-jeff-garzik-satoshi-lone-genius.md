@@ -28,6 +28,7 @@ relatedEntries:
   - aftermath/2010-07-15-jeff-garzik-biography
   - aftermath/2018-10-29-jeff-garzik-retrospective
   - analysis/2009-01-09-satoshi-windows-development-environment
+  - analysis/2008-08-20-satoshi-self-statements
 translationStatus: complete
 ---
 
@@ -37,4 +38,4 @@ translationStatus: complete
 
 サトシはビットコイン以外の話題に逸れることは決してなかった。個人的な情報を一切漏らさなかった。気分も、時刻も、何も。常に 100%ビットコインの話だけだった。
 
-これらの発言は、2024 年 10 〜 11 月に[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)が公開した動画シリーズより。ビットコイン初期のコア開発者（2010 〜 2017 年）としての経験を振り返ったものである。ガージックは、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が既知の暗号技術をそのまま流用し、新しい方法で組み合わせたが、モジュール化やユニットテストといった正規のコンピューターサイエンス教育で学ぶ基本が欠けていたと指摘した。[サトシの Windows 専一の開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)は、ソースコードとコミット履歴そのものから同じ読みに達している ― 27 か月にわたるバージョン管理なし、テストスイートなし、課題追跡なし、第二レビュアーなし。
+これらの発言は、2024 年 10 〜 11 月に[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)が公開した動画シリーズより。ビットコイン初期のコア開発者（2010 〜 2017 年）としての経験を振り返ったものである。ガージックは、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が既知の暗号技術をそのまま流用し、新しい方法で組み合わせたが、モジュール化やユニットテストといった正規のコンピューターサイエンス教育で学ぶ基本が欠けていたと指摘した。[サトシの Windows 専一の開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)は、ソースコードとコミット履歴そのものから同じ読みに達している ― 27 か月にわたるバージョン管理なし、テストスイートなし、課題追跡なし、第二レビュアーなし。個人情報を一切漏らさなかったというガージックの証言は、[サトシの自己言及の一覧](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)が公開記録全体で示す非対称性 ― 技術的・運用的な開示には寛大だが、個人的な開示はほぼ皆無 ― と重なる。

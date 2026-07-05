@@ -28,6 +28,7 @@ relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
+  - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
 quotes:
   - id: "q1"
     person: "RHorning"
@@ -46,7 +47,7 @@ CoinGeek Weekly Livestream のインタビューで、[サトシ・ナカモト]
 
 ハーンはサトシを「実験と可能性の議論」に関心を持つ人物だったと述べた。サトシは「ビットコインが他の人のアイデアにどう使えるか、いつも喜んで説明していた」と語り、硬直したイデオローグではなく、開放的で協力的な姿勢の持ち主だったことを示唆した。
 
-ハーンはまた、サトシは「決済と技術の新しい使い方」に関心があったと指摘し、後のコミュニティが描くような「金本位主義者」や「ハイエク信奉者」ではなかったと述べた。
+ハーンはまた、サトシは「決済と技術の新しい使い方」に関心があったと指摘し、後のコミュニティが描くような「金本位主義者」や「ハイエク信奉者」ではなかったと述べた。この一次証言は、サトシが個人的にハイエク的な貨幣観を抱いていたかどうか — [ハイエクからビットコインへの思想史的系譜を辿る分析](/BitcoinArchive/ja/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/)がなお未決としている論点 — に直接触れるものだ。
 
 サトシが姿を消した理由について、ハーンの見立ては率直だった：
 

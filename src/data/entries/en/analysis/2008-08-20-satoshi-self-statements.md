@@ -53,6 +53,7 @@ relatedEntries:
   - aftermath/2014-03-07-satoshi-p2p-foundation-return
   - aftermath/2009-07-22-bitcoin-exchange-proposal
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
+  - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius
 inlineLinkKeywords:
   - "Satoshi's self-statements"
   - "self-statements inventory"
@@ -203,7 +204,7 @@ The disputed 2014 P2P Foundation post is the single ambiguous addition: brief, c
 - Motivation in detail (Satoshi gave a high-level anti-trust frame and very little more)
 - Why the disappearance (only that it happened)
 
-The asymmetry is structural: Satoshi was *generous* with technical and operational self-disclosure and *minimal* with biographical or motivational self-disclosure. This is not random. It is the disclosure pattern of someone protecting an identity while collaboratively building a system.
+The asymmetry is structural: Satoshi was *generous* with technical and operational self-disclosure and *minimal* with biographical or motivational self-disclosure. This is not random. It is the disclosure pattern of someone protecting an identity while collaboratively building a system. [Jeff Garzik's firsthand account](/BitcoinArchive/entries/aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius/) of working alongside Satoshi corroborates the same pattern from a collaborator's vantage point: Satoshi would discuss nothing but Bitcoin and never let slip any personal detail.
 
 ## 4. Convergence and divergence with the documented behavioral record
 

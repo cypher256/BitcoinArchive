@@ -22,6 +22,7 @@ relatedEntries:
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
+  - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - design/2009-01-03-bitcoin-monetary-design
   - design/2009-01-03-bitcoin-consensus-design
@@ -114,7 +115,7 @@ This is the central thesis of the page. Compared on Layer 2, the picture for top
 
 The contrast is not subtle. For every project in the comparison except Bitcoin, an interested reader can name the person whose announcements move price, the organization whose treasury funds protocol development, and the company whose corporate decisions shape the chain's roadmap. For Bitcoin the corresponding fields are empty, and the emptiness is durable — it has held for over a decade across multiple contentious upgrade cycles.
 
-Note that "Bitcoin Foundation" existed (founded 2012, effectively dormant by 2015). It was a 501(c)(6) advocacy and education body, not a protocol-governance organ. The Bitcoin Core development project is a loose coalition of contributors with no single corporate sponsor and no formal governance hierarchy; this is the [authority pattern](/BitcoinArchive/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/) the 2014 rebrand exposed and that has held since.
+Note that "Bitcoin Foundation" existed (founded 2012, effectively dormant by 2015). It was a 501(c)(6) advocacy and education body, not a protocol-governance organ. The Bitcoin Core development project is a loose coalition of contributors with no single corporate sponsor and no formal governance hierarchy; this is the [authority pattern](/BitcoinArchive/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/) the 2014 rebrand exposed and that has held since. The same institutional absence is the precondition [the fork-wars-as-not-OSS analysis](/BitcoinArchive/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/) traces through the 2015–2017 block-size war, reading the Foundation's 2015 collapse as one leg of the vacuum that turned a rule dispute into an identity contest.
 
 ### 3. Fair launch — no premine
 

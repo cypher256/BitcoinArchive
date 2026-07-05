@@ -50,6 +50,7 @@ relatedEntries:
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - aftermath/2025-02-21-mike-hearn-coingeek-retrospective
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
 inlineLinkKeywords:
@@ -205,7 +206,7 @@ flowchart LR
 | **ほぼすべての初期ビットコイン貢献者がエクストロピアンだった** | **支持されない** | この強度の主張は一部の二次論説で提示されてきたが、一次資料の記録はそれを確立しない。 [サトシ自身の発言](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)は彼を可視のサイファーパンク共同体の外側に置く ([サトシ・ナカモトはサイファーパンクではなかった分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/))。 [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)、 [アダム・バック](/BitcoinArchive/ja/participants/adam-back/)、 [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)について類似のエクストロピアン参加主張は本アーカイブの一次資料では支持されない |
 | **サトシはビットコイン開発期にハイエクの本書を個人的に読んでいた** | **未決** | 公的記録にはサトシのハイエクに関する発言はどちらの方向にも存在しない。サトシの設計はハイエク命題の要素を実現しているが、本書を引用していない |
 
-この区別が重要なのは、強い個人参加主張こそが、ハイエク－エクストロピアン－ビットコインの系譜が大衆向けの解説で最もよく流通する形態だからである。査読資料と一次資料が支えるのはより弱い「思想史的系譜」の主張であり、強い「個人参加」の主張までは支えない。
+この区別が重要なのは、強い個人参加主張こそが、ハイエク－エクストロピアン－ビットコインの系譜が大衆向けの解説で最もよく流通する形態だからである。査読資料と一次資料が支えるのはより弱い「思想史的系譜」の主張であり、強い「個人参加」の主張までは支えない。サトシ個人の思想という、より狭いこの未決の論点については、[マイク・ハーンの 2025 年回顧](/BitcoinArchive/ja/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/)が貴重な一次証言を残している ― ハーンの記憶では、サトシは「金本位主義者」や「ハイエク信奉者」ではなく、決済と技術の新しい使い方に関心を持つ人物だった。
 
 ## 5. 限界と反対の読み
 

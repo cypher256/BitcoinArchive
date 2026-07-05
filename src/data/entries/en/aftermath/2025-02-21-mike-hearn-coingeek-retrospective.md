@@ -28,6 +28,7 @@ relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
+  - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
 quotes:
   - id: "q1"
     person: "RHorning"
@@ -45,7 +46,7 @@ In a CoinGeek Weekly Livestream interview, [Mike Hearn](/BitcoinArchive/particip
 
 Hearn described Satoshi as someone interested in "experimenting and discussing possibilities." Satoshi "was always happy to explain how Bitcoin could be used for other people's ideas," suggesting an open, collaborative mindset rather than a rigid ideologue.
 
-Hearn noted that Satoshi was "interested in payments and novel uses for the technology" — not a "gold bug or Hayek fan" as many in the later community would portray him.
+Hearn noted that Satoshi was "interested in payments and novel uses for the technology" — not a "gold bug or Hayek fan" as many in the later community would portray him. This first-hand account bears directly on a question the [Hayek-to-Bitcoin ideological lineage analysis](/BitcoinArchive/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/) leaves open: whether Satoshi personally held Hayekian monetary views.
 
 On why Satoshi disappeared, Hearn was blunt:
 

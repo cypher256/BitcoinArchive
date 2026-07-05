@@ -55,6 +55,7 @@ secondarySources:
 relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2025-02-21-mike-hearn-coingeek-retrospective
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
   - aftermath/2015-08-15-bitcoin-xt-launch
@@ -118,7 +119,7 @@ gantt
 >
 > — マイク・ハーン、[「ビットコイン実験の決着」](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) (2016 年 1 月 14 日)
 
-[アンドレセンのリードメンテナ就任表明](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) (2010 年 12 月 19 日) はサトシの沈黙より 4 か月前のもので、対象はコードベースであってプロトコルではなかった。2011 年以後、コードベースには保守者がいたが、プロトコルには誰もいなかった。ビットコイン財団 (2012 年 9 月設立) はその役割を引き受けようとしたが、2015 年までに財政的に破綻している。コードベースの保守者 (アンドレセン、続いて 2014 年 4 月以降の[ウラジミール・ファン・デル・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/)) は事実上の決定者だったが、その権威は慣習的なものであって、指名されたものではなかった。
+[アンドレセンのリードメンテナ就任表明](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) (2010 年 12 月 19 日) はサトシの沈黙より 4 か月前のもので、対象はコードベースであってプロトコルではなかった。2011 年以後、コードベースには保守者がいたが、プロトコルには誰もいなかった。ビットコイン財団 (2012 年 9 月設立) はその役割を引き受けようとしたが、2015 年までに財政的に破綻している — この同じ制度的不在を、[デジタルゴールドの構造的特徴を扱う考察](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)は、ビットコインを財団統治型の後発チェーンから分ける 6 つの構造的特徴の一つとして数えている。コードベースの保守者 (アンドレセン、続いて 2014 年 4 月以降の[ウラジミール・ファン・デル・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/)) は事実上の決定者だったが、その権威は慣習的なものであって、指名されたものではなかった。
 
 これがあとで起きたすべての前提である。語彙の非対称、経済的重み、三層構造は、この真空に流れ込んだものである。
 

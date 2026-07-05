@@ -55,6 +55,7 @@ secondarySources:
 relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2025-02-21-mike-hearn-coingeek-retrospective
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
   - aftermath/2015-08-15-bitcoin-xt-launch
@@ -118,7 +119,7 @@ There was no public successor announcement, no legal entity holding the project,
 >
 > — Mike Hearn, ["The resolution of the Bitcoin experiment"](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) (January 14, 2016)
 
-[Andresen's lead-maintainer announcement](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) (December 19, 2010) preceded Satoshi's silence by four months and was scoped to the codebase, not the protocol. After 2011 the codebase had a maintainer; the protocol had no one. The Bitcoin Foundation (founded September 2012) attempted that role and collapsed financially by 2015. The codebase maintainers (Andresen, then [Wladimir van der Laan](/BitcoinArchive/participants/wladimir-van-der-laan/) from April 2014) were de facto deciders, but their authority was conventional, not designated.
+[Andresen's lead-maintainer announcement](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) (December 19, 2010) preceded Satoshi's silence by four months and was scoped to the codebase, not the protocol. After 2011 the codebase had a maintainer; the protocol had no one. The Bitcoin Foundation (founded September 2012) attempted that role and collapsed financially by 2015 — the same institutional absence [the digital-gold structural-features analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) counts as one of the six structural features that distinguish Bitcoin from foundation-governed successor chains. The codebase maintainers (Andresen, then [Wladimir van der Laan](/BitcoinArchive/participants/wladimir-van-der-laan/) from April 2014) were de facto deciders, but their authority was conventional, not designated.
 
 This is the precondition that everything else fills. The naming asymmetry, the economic weight, and the three-layer structure are what flowed in.
 
