@@ -25,6 +25,7 @@ secondarySources:
 relatedEntries:
   - "aftermath/2011-02-25-wei-dai-making-money-with-bitcoin"
   - "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique"
+  - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
 ---
 
 *LessWrong post "Look for the Next Tech Gold Rush?", July 19, 2014:*
@@ -56,4 +57,4 @@ And he conceded that twice stumbling into outsized returns had shaken his faith 
 <!-- audit:quote-skip -->
 > "EMH is the reason I didn't bother looking... But after stumbling into assets with returns in the 100x-1000x range (or 100% to 500% annualized), twice, it seems time to update a bit."
 
-Dai's regret over this missed contact echoes his [2013 critique of Bitcoin's monetary policy](/BitcoinArchive/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/), where he reflected that replying to Satoshi's 2008 request for comments on the draft paper might have let him dissuade the fixed-supply design.
+Dai's regret over this missed contact echoes his [2013 critique of Bitcoin's monetary policy](/BitcoinArchive/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/), where he reflected that replying to Satoshi's 2008 request for comments on the draft paper might have let him dissuade the fixed-supply design. The same January 10, 2009 email is examined from the opposite angle in [an analysis weighing whether Wei Dai was Satoshi](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/), which treats Satoshi's contact with Dai as evidence bearing on that identity hypothesis.

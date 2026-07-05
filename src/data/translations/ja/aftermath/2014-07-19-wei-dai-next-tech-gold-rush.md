@@ -25,6 +25,7 @@ secondarySources:
 relatedEntries:
   - "aftermath/2011-02-25-wei-dai-making-money-with-bitcoin"
   - "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique"
+  - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
 translationStatus: complete
 ---
 
@@ -57,4 +58,4 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > 「EMHが、わざわざ探さなかった理由です…しかし100倍から1000倍のリターン（年率100%から500%）の資産に2回も偶然出くわした後では、少し信念を更新すべき時です」
 
-この見過ごした接触へのダイの後悔は、 [2013 年のビットコインの金融政策批判](/BitcoinArchive/ja/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/)と通じている。そこで彼は、 2008 年にサトシから草稿への意見を求められた際に返信していれば、固定供給の設計を思いとどまらせられたかもしれないと振り返っている。
+この見過ごした接触へのダイの後悔は、 [2013 年のビットコインの金融政策批判](/BitcoinArchive/ja/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/)と通じている。そこで彼は、 2008 年にサトシから草稿への意見を求められた際に返信していれば、固定供給の設計を思いとどまらせられたかもしれないと振り返っている。同じ 2009 年 1 月 10 日のメールは逆の角度からも論じられており、[ウェイ・ダイ = サトシ説を検討する分析](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)は、この接触を仮説の当否を測る材料として扱っている。

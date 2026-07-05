@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2017-09-20-ray-dillinger-if-id-known
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - analysis/2026-05-24-satoshi-design-vs-current-reality
+  - aftermath/2017-09-04-china-ico-ban
 ---
 
 *Interviewer: Tim Swanson (Great Wall of Numbers)*
@@ -75,5 +76,7 @@ It's a millennium-and-a-half later and we are STILL finding stashes of Roman coi
 ## On ASICs and mining centralization
 
 I'm pretty sure Satoshi didn't think of miners in places with artificially low subsidized rates for electricity outcompeting all other miners, driving the concentration of the vast majority of hashing power into just one country where it's subject to the orders and whims of just one government.
+
+That risk had already materialized a year earlier: [China's 2017 ICO and exchange ban](/BitcoinArchive/entries/aftermath/2017-09-04-china-ico-ban/) put the significant share of Bitcoin's hash rate then based in the country at the mercy of a single government, until miners relocated abroad.
 
 This interview supplies the technical substance behind the pre-release audit summarised in the [Ray Dillinger biography](/BitcoinArchive/participants/ray-dillinger/), and complements his first-person retrospective ["If I'd known then what I know now"](/BitcoinArchive/entries/aftermath/2017-09-20-ray-dillinger-if-id-known/), which gives the who, when, and why of the same November 2008 review this interview documents in technical detail.

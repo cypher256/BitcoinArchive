@@ -47,6 +47,7 @@ relatedEntries:
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
   - analysis/2009-01-09-satoshi-windows-development-environment
   - aftermath/1996-02-06-wei-dai-disperse-collect-crypto-plus-plus
+  - aftermath/2014-07-19-wei-dai-next-tech-gold-rush
 inlineLinkKeywords:
   - "Wei Dai hypothesis"
   - "Wei Dai = Satoshi"
@@ -61,7 +62,7 @@ The recurring hypothesis that [Wei Dai](/BitcoinArchive/participants/wei-dai/) i
 
 ## 1. What the hypothesis claims
 
-The hypothesis is that Wei Dai is the person behind the Satoshi Nakamoto pseudonym, and that his documented public-record interactions with "Satoshi" — including the [August 22, 2008 email from Satoshi](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), Wei Dai's response with b-money publication history, and Satoshi's January 10, 2009 follow-up ("achieves nearly all the goals you set out to solve in your b-money paper") — were stagecraft to maintain the pseudonym. Under this reading, Wei Dai operated as Satoshi from the development phase (mid-2007 onward) through the 2011 withdrawal while continuing his Crypto++ maintenance and other public scholarship as a public-record decoy, and his [January 2014 AALWA retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) was a calculated public denial.
+The hypothesis is that Wei Dai is the person behind the Satoshi Nakamoto pseudonym, and that his documented public-record interactions with "Satoshi" — including the [August 22, 2008 email from Satoshi](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), Wei Dai's response with b-money publication history, and Satoshi's January 10, 2009 follow-up ("achieves nearly all the goals you set out to solve in your b-money paper") — were stagecraft to maintain the pseudonym. Under this reading, Wei Dai operated as Satoshi from the development phase (mid-2007 onward) through the 2011 withdrawal while continuing his Crypto++ maintenance and other public scholarship as a public-record decoy, and his [January 2014 AALWA retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) was a calculated public denial. Dai's own account of that January 10, 2009 email — [describing how he set it aside at the time and only began mining Bitcoin two years later](/BitcoinArchive/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/) — is the third-party-reception reading the hypothesis must overturn.
 
 ## 2. The arguments the hypothesis rests on
 

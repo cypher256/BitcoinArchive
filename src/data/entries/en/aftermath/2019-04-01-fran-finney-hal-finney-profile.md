@@ -30,6 +30,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2014-08-28-fran-finney-biography
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
+  - aftermath/2013-03-19-bitcoin-and-me-hal-finney
 ---
 
 In the 2nd Quarter 2019 issue of Cryonics Magazine (published by the Alcor Life Extension Foundation), an extensive profile of [Hal Finney](/BitcoinArchive/participants/hal-finney/) was published based primarily on interviews with his wife, Fran Finney. The profile was subsequently adapted by Dan Held and republished on 21ideas.org on March 30, 2020.
@@ -41,7 +42,7 @@ On [Bitcoin's launch](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-r
 <!-- audit:quote-skip -->
 > "This is cool. This is a fun game. Look! This is actually working!"
 
-On Hal's ALS and cognitive decline, Fran was direct:
+On Hal's ALS and cognitive decline, Fran was direct — complementing the physical progression of the disease that Hal himself chronicled in [his 2013 essay "Bitcoin and Me"](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/):
 
 <!-- audit:quote-skip -->
 > "It's not a normal kind of dementia, but the brain is involved. Hal felt that it was affecting his ability to do his fast thinking, to do his mental math. He felt like he was losing that, and he would lose more."

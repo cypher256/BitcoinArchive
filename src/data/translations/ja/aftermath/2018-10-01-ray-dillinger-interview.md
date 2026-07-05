@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2017-09-20-ray-dillinger-if-id-known
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - analysis/2026-05-24-satoshi-design-vs-current-reality
+  - aftermath/2017-09-04-china-ico-ban
 translationStatus: complete
 ---
 
@@ -76,5 +77,7 @@ translationStatus: complete
 ## ASIC とマイニングの集中化について
 
 サトシは、人為的に低い補助金付き電力料金のある場所のマイナーが他のすべてのマイナーを凌駕し、ハッシュパワーの大部分をたった一つの国に集中させ、たった一つの政府の命令と気まぐれに従わせることになるとは考えていなかったと俺は確信しているよ。
+
+この懸念は絵空事ではなく、実際に一年前には現実のものとなっていた。[2017年の中国による ICO・取引所禁止](/BitcoinArchive/ja/entries/aftermath/2017-09-04-china-ico-ban/)では、当時ハッシュレートの大きな割合を占めていた中国のマイナーが、たった一つの政府の意向次第という立場に置かれ、その後マイナーは国外へ移転していった。
 
 本インタビューは、 [レイ・ディリンジャー伝記](/BitcoinArchive/ja/participants/ray-dillinger/)が要約する公開前監査の技術的な中身を補うものである。また一人称の回顧[「今わかっていることを当時知っていたら」](/BitcoinArchive/ja/entries/aftermath/2017-09-20-ray-dillinger-if-id-known/)とも対をなし、そちらは本インタビューが技術的に記録する 2008 年 11 月の同じレビューについて、誰が・いつ・なぜ関わったかを語っている。

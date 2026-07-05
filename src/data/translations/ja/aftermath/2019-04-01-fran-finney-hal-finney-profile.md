@@ -30,6 +30,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2014-08-28-fran-finney-biography
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
+  - aftermath/2013-03-19-bitcoin-and-me-hal-finney
 translationStatus: complete
 ---
 
@@ -42,7 +43,7 @@ Cryonics Magazine（Alcor Life Extension Foundation 発行）の 2019年第 2 �
 <!-- audit:quote-skip -->
 > 「これはクールだ。これは楽しいゲームだ。見て！本当に動いてる！」
 
-ハルの ALS と認知機能の変化について、フランは率直だった：
+ハルの ALS と認知機能の変化について、フランは率直だった — ハル自身が[エッセイ「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/)で綴ったのは身体面の衰えの進行だったが、フランの証言はそこに認知面の変化も伴っていたことを明かしている：
 
 <!-- audit:quote-skip -->
 > 「普通の認知症とは違うんですが、脳も影響を受けるんです。ハルは素早い思考ができなくなっている、暗算ができなくなっていると感じていました。それを失いつつあると感じていて、もっと失うだろうと。」

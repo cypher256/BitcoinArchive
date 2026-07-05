@@ -47,6 +47,7 @@ relatedEntries:
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
   - analysis/2009-01-09-satoshi-windows-development-environment
   - aftermath/1996-02-06-wei-dai-disperse-collect-crypto-plus-plus
+  - aftermath/2014-07-19-wei-dai-next-tech-gold-rush
 inlineLinkKeywords:
   - "ウェイ・ダイ仮説"
   - "ウェイ・ダイ = サトシ"
@@ -62,7 +63,7 @@ translationStatus: complete
 
 ## 1. 仮説の主張
 
-仮説は、ウェイ・ダイがサトシ・ナカモト仮名の主体であり、彼が記録した「サトシ」との公的な関わり — [2008 年 8 月 22 日のサトシからのメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、ウェイ・ダイの b-money 公開履歴での返答、サトシの 2009 年 1 月 10 日のフォローアップ（「b-money 論文で解決しようとしていた目標のほぼ全てを達成している」） — はすべて仮名を維持するための演出だったとする。この読みのもとでは、ウェイ・ダイは開発期（2007 年央以降）から 2011 年の撤退までサトシとして活動した人物であり、Crypto++ の保守やその他の公的執筆を公開記録上のデコイとして並行させ、[2014 年 1 月の AALWA 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)は計算された公的否定だった、ということになる。
+仮説は、ウェイ・ダイがサトシ・ナカモト仮名の主体であり、彼が記録した「サトシ」との公的な関わり — [2008 年 8 月 22 日のサトシからのメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、ウェイ・ダイの b-money 公開履歴での返答、サトシの 2009 年 1 月 10 日のフォローアップ（「b-money 論文で解決しようとしていた目標のほぼ全てを達成している」） — はすべて仮名を維持するための演出だったとする。この読みのもとでは、ウェイ・ダイは開発期（2007 年央以降）から 2011 年の撤退までサトシとして活動した人物であり、Crypto++ の保守やその他の公的執筆を公開記録上のデコイとして並行させ、[2014 年 1 月の AALWA 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)は計算された公的否定だった、ということになる。この 2009 年 1 月 10 日のメールについて、ダイ本人は当時ほとんど注意を払わず 2 年後にようやくマイニングを始めたと[振り返っている](/BitcoinArchive/ja/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/) — 仮説が覆さなければならない第三者応答の読みは、まさにこの本人の回想に基づいている。
 
 ## 2. 仮説を支える論点
 
