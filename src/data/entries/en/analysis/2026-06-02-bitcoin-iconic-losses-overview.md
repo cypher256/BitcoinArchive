@@ -31,6 +31,7 @@ relatedEntries:
   - aftermath/2014-02-28-mt-gox-bankruptcy
   - aftermath/2022-11-11-ftx-collapse
   - aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest
+  - analysis/2026-05-24-satoshi-design-vs-current-reality
 ---
 
 Bitcoin's protocol has no recovery mechanism. There is no support line, no court order, no master key, and no central authority that can re-issue a UTXO whose private key has been destroyed, lost, or never existed in transferable form. This is not a defect: it is a deliberate design choice that flows directly from the whitepaper's elimination of trusted third parties. The cost of that choice is that human losses — through carelessness, through hostile environments, or through fraud — are permanent.
@@ -86,7 +87,7 @@ The user did not hold the key directly. They entrusted it to an intermediary (an
 | [QuadrigaCX collapse / Cotten death](/BitcoinArchive/entries/aftermath/2019-04-08-quadrigacx-gerald-cotten-death/) | 2018–19 | ~C$250M | Sole-custodian CEO died; later determined by OSC to have been operating a long-running fraud; ~13% creditor recovery |
 | [FTX bankruptcy](/BitcoinArchive/entries/aftermath/2022-11-11-ftx-collapse/) | 2022 | ~$8B customer funds | Large-scale misappropriation by founder Sam Bankman-Fried; multi-year imprisonment; partial creditor recovery in progress |
 
-Custody-collapse is the loss mode with the most variety in underlying fault: pure operational failure (Mt. Gox in part), individual fraud disguised as custody (QuadrigaCX, FTX), and external theft against custodian (Mt. Gox in part). Despite the variety in upstream cause, the chain-level outcome is the same — coins moved out of customer control without the customer being able to retrieve them.
+Custody-collapse is the loss mode with the most variety in underlying fault: pure operational failure (Mt. Gox in part), individual fraud disguised as custody (QuadrigaCX, FTX), and external theft against custodian (Mt. Gox in part). Despite the variety in upstream cause, the chain-level outcome is the same — coins moved out of customer control without the customer being able to retrieve them. The Mt. Gox and FTX failures documented above are also the two anchor custody-collapse cases in [Satoshi's design intent vs Bitcoin's current reality](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/), which reads the same facts through a design-drift lens — the gap between Satoshi's each-user-holds-their-own-keys picture and the exchange-IOU reality that let both collapses happen.
 
 ## Contrast: recovered cases
 

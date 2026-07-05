@@ -40,6 +40,7 @@ relatedEntries:
   - aftermath/2010-07-15-jeff-garzik-biography
   - aftermath/2010-07-11-slashdot-bitcoin-article
   - aftermath/2014-02-28-mt-gox-bankruptcy
+  - design/2009-01-03-bitcoin-consensus-design
 quotes:
   - id: "q1"
     person: "Jeff Garzik"
@@ -66,7 +67,7 @@ A single transaction in Block 74638 had created **184,467,440,737.09551616 BTC**
 
 Satoshi released v0.3.10 with the overflow patch the same day and announced it on BitcoinTalk under the subject [Version 0.3.10 - block 74638 overflow PATCH!](/BitcoinArchive/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/), pointing readers at the discussion thread for the bug itself.
 
-**The resolution:** The corrected chain overtook the invalid chain at Block 74691, approximately 15 hours after the incident. The 184 billion BTC were effectively erased from the blockchain's accepted history.
+**The resolution:** The corrected chain overtook the invalid chain at Block 74691, approximately 15 hours after the incident. The 184 billion BTC were effectively erased from the blockchain's accepted history. The general mechanism this episode exercised — an emergency soft fork whose corrected chain nodes adopt once it becomes the most-work chain — is documented in detail in [the consensus design entry](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/).
 
 **Incident or exploit?** A natural question: did this happen by accident, or was it a deliberate exploit? Analysis of the v0.3 source and the transaction structure gives a firm answer on one point and leaves another open.
 

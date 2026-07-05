@@ -24,6 +24,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-monetary-design
   - design/2009-01-03-bitcoin-security-model
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - aftermath/2010-08-15-value-overflow-incident
 inlineLinkKeywords:
   - "プルーフオブワーク"
   - "難易度調整"
@@ -186,6 +187,8 @@ flowchart TD
 | **SegWit (BIP 141)** | 2017 | ソフトフォーク | BIP 9 バージョンビット | 証人ディスカウント導入、改ざん性修正、スクリプトバージョニング有効化 |
 | **ブロックサイズ → ビットコインキャッシュ** | 2017 | ハードフォーク | スケーリング方針の対立 | ビットコインキャッシュが分裂。非互換の 8 MB ブロックサイズ規則が恒久的チェーン分岐を生む |
 | **Taproot (BIP 341)** | 2021 | ソフトフォーク | Speedy Trial（修正 BIP 9） | シュノア署名、Tapscript、MAST を追加 |
+
+上表の値オーバーフロー事件は、この緊急ソフトフォークという仕組みが実際に機能した最も明確な事例である――パッチが配信され無効なブロックが数時間で孤立化するに至った経緯は[事件の詳細記事](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/)に譲る。
 
 ### チェーン選択規則
 

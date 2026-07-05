@@ -31,6 +31,7 @@ secondarySources:
     url: "https://coingape.com/anonymous-bitcoin-lawsuit-noah-doe-3-8-million-btc-claim/"
 relatedEntries:
   - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
+  - "aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary"
 translationStatus: complete
 ---
 
@@ -55,7 +56,7 @@ flowchart TD
     class J,E,X warn
 ```
 
-2026 年 5 月、 Galaxy Digital のリサーチ責任者アレックス・ソーンが、 [セルジオ・デミアン・ラーナーが特定した Patoshi ナンス指紋](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)を物差しに、被告 39,069 アドレスを分類した。 2016 年の Bitfinex ハック関連や既知の取引所ウォレットを除外したうえで、 **被告の 56% にあたる 21,923 件が Patoshi の特徴を備える**と判定 ― およそ 109.6 万 BTC。ラーナーが従来から提示してきた「約 110 万 BTC を単独の初期マイナー (サトシ・ナカモト本人と広く理解されている人物) が掘った」という推定とちょうど噛み合う数字だ。
+2026 年 5 月、 Galaxy Digital のリサーチ責任者アレックス・ソーンが、 [セルジオ・デミアン・ラーナーが特定した Patoshi ナンス指紋](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)を物差しに、被告 39,069 アドレスを分類した。 2016 年の Bitfinex ハック関連や既知の取引所ウォレットを除外したうえで、 **被告の 56% にあたる 21,923 件が Patoshi の特徴を備える**と判定 ― およそ 109.6 万 BTC。ラーナーが従来から提示してきた「約 110 万 BTC を単独の初期マイナー (サトシ・ナカモト本人と広く理解されている人物) が掘った」という推定とちょうど噛み合う数字だ。この同じ Patoshi パターン残高が、フィニー家にもサッサマン家にも渡っていないという事実は、共作説への反証として[『Finding Satoshi』](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)でも取り上げられている。
 
 残る 17,146 件は他の初期マイナーのものか、分類不能。いずれの被告アドレスも、訴状が定める休眠期間が始まって以降、一度もコインを動かしていない。
 

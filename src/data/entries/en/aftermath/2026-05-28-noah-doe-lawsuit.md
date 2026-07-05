@@ -31,6 +31,7 @@ secondarySources:
     url: "https://coingape.com/anonymous-bitcoin-lawsuit-noah-doe-3-8-million-btc-claim/"
 relatedEntries:
   - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
+  - "aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary"
 ---
 
 On March 11, 2026, an anonymous plaintiff using the pseudonym "Noah Doe," joined by two Wyoming LLCs (ABC Company and XYZ Company), filed suit in the Supreme Court of the State of New York under Index No. 153119/2026. The suit names 39,069 dormant Bitcoin addresses as defendants and claims ownership of the approximately 3.8 million BTC they hold — valued at roughly $293 billion at filing.
@@ -54,7 +55,7 @@ flowchart TD
     class J,E,X gap
 ```
 
-In May 2026, Galaxy Digital's research head Alex Thorn published an analysis classifying the 39,069 defendant addresses against [Sergio Demian Lerner's Patoshi nonce signature](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/). After excluding addresses linked to the [Bitfinex 2016 hack](/BitcoinArchive/entries/aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest/) and known exchange wallets, Thorn identified **21,923 addresses (56% of the defendants) as carrying the Patoshi pattern** — approximately 1.096 million BTC, in alignment with Lerner's earlier estimate of ~1.1M BTC mined by the single early miner widely understood to be Satoshi Nakamoto himself.
+In May 2026, Galaxy Digital's research head Alex Thorn published an analysis classifying the 39,069 defendant addresses against [Sergio Demian Lerner's Patoshi nonce signature](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/). After excluding addresses linked to the [Bitfinex 2016 hack](/BitcoinArchive/entries/aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest/) and known exchange wallets, Thorn identified **21,923 addresses (56% of the defendants) as carrying the Patoshi pattern** — approximately 1.096 million BTC, in alignment with Lerner's earlier estimate of ~1.1M BTC mined by the single early miner widely understood to be Satoshi Nakamoto himself. These are the same Patoshi-pattern reserves whose absence from the Finney and Sassaman family holdings was raised as counter-evidence against the co-creators theory in [the Finding Satoshi documentary](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/).
 
 The remaining 17,146 addresses likely belong to other early miners or are unclassified. None of the defendant addresses have moved coins since the dormancy thresholds applied in the complaint.
 

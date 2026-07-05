@@ -24,6 +24,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-monetary-design
   - design/2009-01-03-bitcoin-security-model
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - aftermath/2010-08-15-value-overflow-incident
 inlineLinkKeywords:
   - "proof of work"
   - "difficulty adjustment"
@@ -185,6 +186,8 @@ flowchart TD
 | **SegWit (BIP 141)** | 2017 | Soft fork | BIP 9 versionbits | Introduced witness discount, fixed malleability, enabled script versioning |
 | **Block size → BCH** | 2017 | Hard fork | Disagreement on scaling path | Bitcoin Cash split; incompatible 8 MB block-size rule created a permanent chain divergence |
 | **Taproot (BIP 341)** | 2021 | Soft fork | Speedy Trial (modified BIP 9) | Added Schnorr signatures, Tapscript, and MAST |
+
+The value overflow incident above is the clearest real-world instance of this emergency-soft-fork mechanism in action — see [the incident write-up](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) for how the patch was deployed and the invalid block orphaned within hours.
 
 ### Chain selection rule
 

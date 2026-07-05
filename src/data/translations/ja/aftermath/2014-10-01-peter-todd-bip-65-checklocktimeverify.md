@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
+  - design/2009-01-03-bitcoin-ecosystem-design
 translationStatus: complete
 ---
 
@@ -52,4 +53,4 @@ translationStatus: complete
 ## 意義
 
 <!-- speaker: narrator -->
-BIP 65 はコンセンサスレベルのソフトフォークとしてデプロイされた。そのタイムロック出力は、非対話型ペイメントチャネル――後に Lightning Network が築かれる土台となる仕組み――の構成要素となった。
+BIP 65 はコンセンサスレベルのソフトフォークとしてデプロイされた。そのタイムロック出力は、非対話型ペイメントチャネル――後に Lightning Network が築かれる土台となる仕組み――の構成要素となった。Lightning Network のチャネル構造全体や、ビットコインの基盤層の上に築かれたサイドチェーン・マイニングプールなどのエコシステムについては、[ビットコインのエコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)で詳しく扱っている。

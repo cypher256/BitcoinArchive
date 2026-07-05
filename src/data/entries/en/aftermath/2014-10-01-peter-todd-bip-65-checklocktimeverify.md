@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
+  - design/2009-01-03-bitcoin-ecosystem-design
 ---
 
 On October 1, 2014, Peter Todd proposed BIP 65, introducing a new opcode called OP_CHECKLOCKTIMEVERIFY to Bitcoin's scripting system. The proposal redefined the existing NOP2 opcode to enable time-locked transaction outputs — outputs that cannot be spent until a specified block height or timestamp.
@@ -47,4 +48,4 @@ The opcode compares a value on the script stack against the transaction's nLockT
 
 ## Significance
 
-BIP 65 was deployed as a consensus-level soft fork. Its time-locked outputs became a building block for non-interactive payment channels — the mechanism the Lightning Network would later be built on.
+BIP 65 was deployed as a consensus-level soft fork. Its time-locked outputs became a building block for non-interactive payment channels — the mechanism the Lightning Network would later be built on. The Lightning Network's full channel architecture, alongside the sidechains and mining-pool infrastructure built atop Bitcoin's base layer, is covered in [Bitcoin's ecosystem design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-ecosystem-design/).

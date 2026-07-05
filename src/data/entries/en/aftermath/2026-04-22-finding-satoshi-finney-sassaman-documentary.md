@@ -45,6 +45,7 @@ relatedEntries:
   - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-08-20-satoshi-self-statements
+  - aftermath/2026-05-28-noah-doe-lawsuit
 translationStatus: complete
 ---
 
@@ -67,7 +68,7 @@ Before settling on the Finney + Sassaman pair, the film also considered [Adam Ba
 ## Critical counterpoints
 
 - **Jameson Lopp** (CTO of Casa) flagged a timing discrepancy that overlaps with the race-day alibi already documented on the [Finney hypothesis page](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/): on April 18, 2009 Satoshi sent developer email and broadcast a transaction while Hal was running a 10-mile race in Santa Barbara — a direct temporal conflict between the documentary's claim and Hal's recorded activity.
-- **Adam Back** — himself the subject of [the 2026 NYT Carreyrou investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) — publicly objected on three grounds: Sassaman's KU Leuven affiliation (2004–2011) does not align with the documentary's PST-window evidence; Hal Finney's Santa Barbara race-day participation overlaps with documented Satoshi activity; and neither family ever came into possession of any portion of the documented Patoshi-pattern early Bitcoin reserves.
+- **Adam Back** — himself the subject of [the 2026 NYT Carreyrou investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) — publicly objected on three grounds: Sassaman's KU Leuven affiliation (2004–2011) does not align with the documentary's PST-window evidence; Hal Finney's Santa Barbara race-day participation overlaps with documented Satoshi activity; and neither family ever came into possession of any portion of the documented Patoshi-pattern early Bitcoin reserves — the same ~1.096M BTC cache targeted by the [Noah Doe dormant-Bitcoin lawsuit](/BitcoinArchive/entries/aftermath/2026-05-28-noah-doe-lawsuit/).
 
 ## Position in the broader Satoshi-identification record
 

@@ -31,6 +31,7 @@ relatedEntries:
   - aftermath/2014-02-28-mt-gox-bankruptcy
   - aftermath/2022-11-11-ftx-collapse
   - aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest
+  - analysis/2026-05-24-satoshi-design-vs-current-reality
 translationStatus: complete
 ---
 
@@ -87,7 +88,7 @@ flowchart TD
 | [QuadrigaCX 崩壊 / コットン死去](/BitcoinArchive/ja/entries/aftermath/2019-04-08-quadrigacx-gerald-cotten-death/) | 2018-19 年 | 約 2.5 億カナダドル | 単独保管者の CEO が死去、後に OSC が「長期にわたる詐欺」と認定、債権者回収は約 13% |
 | [FTX 倒産](/BitcoinArchive/ja/entries/aftermath/2022-11-11-ftx-collapse/) | 2022 年 | 顧客資金約 80 億ドル | 創業者サム・バンクマン=フリードによる大規模不正流用、 25 年の禁固刑、部分回収が進行中 |
 
-保管崩壊は上流の故障原因に最もばらつきがある損失モード ― 純粋な運用失敗 (Mt. Gox の一部)、保管に偽装した個人詐欺 (QuadrigaCX、 FTX)、外部からの保管者への盗難 (Mt. Gox の一部)。上流原因が多様でも、チェーン側の結末は同じ ― コインが顧客の支配下から動かされ、顧客は取り戻せない。
+保管崩壊は上流の故障原因に最もばらつきがある損失モード ― 純粋な運用失敗 (Mt. Gox の一部)、保管に偽装した個人詐欺 (QuadrigaCX、 FTX)、外部からの保管者への盗難 (Mt. Gox の一部)。上流原因が多様でも、チェーン側の結末は同じ ― コインが顧客の支配下から動かされ、顧客は取り戻せない。ここで扱った Mt. Gox と FTX の破綻は、[サトシの設計意図とビットコインの現状の乖離](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)でもカストディ軸の乖離を裏づける中核事例として扱われており、同じ事実を「鍵は自分で持つ」という設計像から「取引所 IOU」への移行という切り口で読み解いている。
 
 ## 対照事例: 回収できた損失
 

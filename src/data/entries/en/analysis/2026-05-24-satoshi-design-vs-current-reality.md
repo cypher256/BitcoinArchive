@@ -44,6 +44,7 @@ relatedEntries:
   - analysis/2014-11-01-blockstream-centralization-claim
   - aftermath/2008-11-02-james-donald-biography
   - aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback
+  - analysis/2026-06-02-bitcoin-iconic-losses-overview
 ---
 
 Bitcoin's protocol still runs almost unchanged from the rules [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) wrote down in 2008. But the *user experience*, the *economic structure*, and the *governance reality* of the system have drifted considerably from the early design picture. Reading the [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) or the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) gives a faithful picture of the protocol but a misleading picture of what most users actually touch. This entry walks through four axes where the gap is largest, with pointers to the records.
@@ -102,7 +103,7 @@ flowchart LR
 
 **The institutional limit: spot ETFs.** The trend went further in January 2024 when the US SEC approved the first spot Bitcoin ETFs (BlackRock IBIT, Fidelity FBTC, etc.). ETF shareholders hold no bitcoin at all — only equity in a fund whose custodian holds bitcoin on their behalf. Within months these ETFs collectively held several hundred thousand BTC. This is the custody axis taken to its institutional limit: the "peer-to-peer electronic cash" of the whitepaper has, for most retail and institutional money, become a traditional asset class accessed through brokerage plumbing.
 
-**Why it matters.** When the custodian fails, the IOU does not pay out. The [Mt. Gox bankruptcy in February 2014](/BitcoinArchive/entries/aftermath/2014-02-28-mt-gox-bankruptcy/) lost roughly 850,000 BTC of customer holdings; the [FTX collapse in November 2022](/BitcoinArchive/entries/aftermath/2022-11-11-ftx-collapse/) repeated the pattern with a different generation of operators. In each case the affected users had no protocol-level claim on any coin — they had a contractual claim against an insolvent company. This is the bank-failure mode Bitcoin was designed to make impossible at the protocol level, recreated above the protocol by user choice and product design.
+**Why it matters.** When the custodian fails, the IOU does not pay out. The [Mt. Gox bankruptcy in February 2014](/BitcoinArchive/entries/aftermath/2014-02-28-mt-gox-bankruptcy/) lost roughly 850,000 BTC of customer holdings; the [FTX collapse in November 2022](/BitcoinArchive/entries/aftermath/2022-11-11-ftx-collapse/) repeated the pattern with a different generation of operators. In each case the affected users had no protocol-level claim on any coin — they had a contractual claim against an insolvent company. This is the bank-failure mode Bitcoin was designed to make impossible at the protocol level, recreated above the protocol by user choice and product design. Both collapses are catalogued in more detail — alongside the other iconic Bitcoin loss cases, grouped by loss mechanism — in [Lost Bitcoin: Thomas, Howells, QuadrigaCX, Mt. Gox, FTX and the irreversibility lesson](/BitcoinArchive/entries/analysis/2026-06-02-bitcoin-iconic-losses-overview/).
 
 ## 3. Governance — distributed consensus → core developers + large miners
 

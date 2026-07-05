@@ -45,6 +45,7 @@ relatedEntries:
   - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-08-20-satoshi-self-statements
+  - aftermath/2026-05-28-noah-doe-lawsuit
 translationStatus: complete
 ---
 
@@ -67,7 +68,7 @@ translationStatus: complete
 ## 反論
 
 - **ジェイムソン・ロップ** (`Casa` の CTO) は、既存[ハル・フィニー仮説ページ](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)に記録済みのレース当日アリバイと重なる時間矛盾を指摘した: 2009 年 4 月 18 日、ハルがサンタバーバラで 10 マイルレースを走っていた同じ時間帯に、サトシは開発者宛てにメールを送り、取引をブロードキャストしていた。ドキュメンタリーの主張とハルの記録された活動が時間的にぶつかる事例。
-- **アダム・バック** ― [2026 年ニューヨーク・タイムズのカレイロウ調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)で名指しされた本人 ― は、本作の読みに対して 3 点の反論を公にした: サッサマンの KU ルーヴェン大学所属 (2004-2011) は PST 時間帯の根拠と合わない、ハル・フィニーのサンタバーバラ・レース参加は記録上のサトシ活動と矛盾する、どちらの家族にも、記録に残る Patoshi パターンの初期ビットコイン残高は確認されていない。
+- **アダム・バック** ― [2026 年ニューヨーク・タイムズのカレイロウ調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)で名指しされた本人 ― は、本作の読みに対して 3 点の反論を公にした: サッサマンの KU ルーヴェン大学所属 (2004-2011) は PST 時間帯の根拠と合わない、ハル・フィニーのサンタバーバラ・レース参加は記録上のサトシ活動と矛盾する、どちらの家族にも、記録に残る Patoshi パターンの初期ビットコイン残高は確認されていない ― この約 109.6 万 BTC の残高こそ、 [ノア・ドゥの休眠ビットコイン訴訟](/BitcoinArchive/ja/entries/aftermath/2026-05-28-noah-doe-lawsuit/)が法的所有権を主張する対象である。
 
 ## サトシ特定の系譜上の位置づけ
 

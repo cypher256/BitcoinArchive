@@ -44,6 +44,7 @@ relatedEntries:
   - analysis/2014-11-01-blockstream-centralization-claim
   - aftermath/2008-11-02-james-donald-biography
   - aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback
+  - analysis/2026-06-02-bitcoin-iconic-losses-overview
 translationStatus: complete
 ---
 
@@ -103,7 +104,7 @@ flowchart LR
 
 **機関投資の極み: 現物 ETF**。この潮流は 2024 年 1 月、米国 SEC が初の現物 Bitcoin ETF (BlackRock IBIT、 Fidelity FBTC 等) を承認したことでさらに進んだ。 ETF 投資家は一切ビットコインを保有しない ― 保有するのは、保管業者を介してビットコインを保有するファンドの株式だけだ。数か月のうちに、これらの ETF は合計数十万 BTC を保有するに至った。これがカストディ軸の機関投資的な極みである: ホワイトペーパーの「ピアツーピア電子現金」は、個人投資家・機関投資家のマネーの大半にとって、既存の証券会社のインフラを通じてアクセスする伝統的な資産クラスになった。
 
-**なぜ重要か**。カストディ業者が破綻すると、 IOU は支払われない。 [2014 年 2 月の Mt. Gox 破綻](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/)は約 850,000 BTC の顧客保有を失った。 [2022 年 11 月の FTX 崩壊](/BitcoinArchive/ja/entries/aftermath/2022-11-11-ftx-collapse/)は別世代の運営者で同じパターンを繰り返した。いずれの場合も、被害ユーザーはプロトコルレベルで何のコインに対する請求権も持たなかった ― 持っていたのは破綻企業に対する契約上の請求権だけだった。これはビットコインがプロトコルレベルで不可能にするよう設計した銀行破綻モードを、ユーザーの選択とサービス設計の上層で再現したものである。
+**なぜ重要か**。カストディ業者が破綻すると、 IOU は支払われない。 [2014 年 2 月の Mt. Gox 破綻](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/)は約 850,000 BTC の顧客保有を失った。 [2022 年 11 月の FTX 崩壊](/BitcoinArchive/ja/entries/aftermath/2022-11-11-ftx-collapse/)は別世代の運営者で同じパターンを繰り返した。いずれの場合も、被害ユーザーはプロトコルレベルで何のコインに対する請求権も持たなかった ― 持っていたのは破綻企業に対する契約上の請求権だけだった。これはビットコインがプロトコルレベルで不可能にするよう設計した銀行破綻モードを、ユーザーの選択とサービス設計の上層で再現したものである。この 2 つの破綻は、損失の機構別に象徴的事例を整理した[失われたビットコイン ― トーマス、ハウエルズ、 QuadrigaCX、 Mt. Gox、 FTX と「不可逆性」の教訓](/BitcoinArchive/ja/entries/analysis/2026-06-02-bitcoin-iconic-losses-overview/)でも、より詳しく取り上げられている。
 
 ## 3. ガバナンス ― 分散合意 → コア開発者 + 大手マイナー
 

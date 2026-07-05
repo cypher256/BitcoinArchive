@@ -19,6 +19,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-transaction-design
   - design/2009-01-03-bitcoin-p2p-network-design
+  - aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify
 inlineLinkKeywords:
   - "Lightning Network"
   - "payment channel"
@@ -156,6 +157,8 @@ The Lightning Network could not operate on Satoshi's v0.1 implementation. It dep
 | **SegWit** | BIP 141 | 2017 | Fixes transaction malleability — child transactions (commitment txs) can reference the funding txid before it confirms, without risk of the txid changing |
 | **CLTV** | BIP 65 | 2015 | `OP_CHECKLOCKTIMEVERIFY` enforces absolute timelocks in HTLC refund paths |
 | **CSV** | BIP 68/112 | 2016 | `OP_CHECKSEQUENCEVERIFY` enforces relative timelocks for revocation delay windows |
+
+CLTV was not devised specifically for Lightning — see [Peter Todd's BIP 65 proposal](/BitcoinArchive/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/) for the original specification of `OP_CHECKLOCKTIMEVERIFY`, later adopted as the timelock primitive non-interactive payment channels depend on.
 
 ## 3. Sidechains: Liquid and federated pegs
 

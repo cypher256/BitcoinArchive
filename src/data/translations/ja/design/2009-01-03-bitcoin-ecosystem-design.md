@@ -19,6 +19,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-transaction-design
   - design/2009-01-03-bitcoin-p2p-network-design
+  - aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify
 inlineLinkKeywords:
   - "Lightning Network"
   - "ペイメントチャネル"
@@ -157,6 +158,8 @@ Lightning Network はサトシの v0.1 実装上では動作できなかった�
 | **SegWit** | BIP 141 | 2017 | トランザクション展性を修正 — 子トランザクション（コミットメントトランザクション）がファンディング txid を確認前に参照でき、txid が変更されるリスクがない |
 | **CLTV** | BIP 65 | 2015 | `OP_CHECKLOCKTIMEVERIFY` が HTLC 返金パスで絶対タイムロックを強制 |
 | **CSV** | BIP 68/112 | 2016 | `OP_CHECKSEQUENCEVERIFY` が失効遅延ウィンドウの相対タイムロックを強制 |
+
+CLTV のオペコードは Lightning 専用に考案されたものではない — 元々の仕様は[ピーター・トッドによる BIP 65 の提案](/BitcoinArchive/ja/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/)で規定され、後に非対話型のペイメントチャネルが依拠するタイムロックの基盤技術として採用された。
 
 ## 3. サイドチェーン: Liquid と連合型ペグ
 

@@ -40,6 +40,7 @@ relatedEntries:
   - aftermath/2010-07-15-jeff-garzik-biography
   - aftermath/2010-07-11-slashdot-bitcoin-article
   - aftermath/2014-02-28-mt-gox-bankruptcy
+  - design/2009-01-03-bitcoin-consensus-design
 quotes:
   - id: "q1"
     person: "Jeff Garzik"
@@ -67,7 +68,7 @@ translationStatus: complete
 
 サトシは同日中にオーバーフロー修正を取り込んだ v0.3.10 をリリースし、BitcoinTalk で[バージョン 0.3.10 - ブロック 74638 オーバーフローパッチ！](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/) として告知し、読者をバグそのものの議論スレッドへ誘導した。
 
-**結果:** 修正チェーンは事件発生から約 15時間後のブロック 74691 で無効なチェーンを追い越した。1,840 億 BTC はブロックチェーンの承認済み履歴から事実上消去された。
+**結果:** 修正チェーンは事件発生から約 15時間後のブロック 74691 で無効なチェーンを追い越した。1,840 億 BTC はブロックチェーンの承認済み履歴から事実上消去された。この事件が体現した一般的な仕組み――緊急ソフトフォークで修正されたチェーンを、ノードが最大作業量チェーンとして受理していく過程――は、[コンセンサス設計のエントリ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)で詳しく解説されている。
 
 **偶発か悪用か？** 自然な問い: これは偶発的に起きたのか、それとも意図的な悪用だったのか。v0.3 のソースコードとトランザクション構造を分析すると、一点は確定でき、もう一点は不確定のまま残る。
 
