@@ -38,6 +38,7 @@ relatedEntries:
   - aftermath/2011-08-01-jihan-wu-biography
   - aftermath/2011-03-17-pieter-wuille-biography
   - analysis/2014-11-01-blockstream-centralization-claim
+  - design/2009-01-03-bitcoin-block-chain-design
 ---
 
 Between August 2015 and November 2017, Bitcoin's open-source process was tested by a sustained dispute over a single parameter: the 1 MB block-size limit that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) had added in September 2010 as a temporary anti-spam measure. The dispute produced four successive fork attempts on the main chain, one persistent chain split, the activation of Segregated Witness, and a permanent change in how Bitcoin protocol upgrades reach consensus. This entry collates the documented sequence by phase, faction, and turning point.
@@ -144,7 +145,7 @@ The November 8 message is the formal close of the block-size war on the main cha
 
 **The soft-fork-only norm.** Since November 2017, no contested hard fork has been attempted on the Bitcoin main chain. Soft forks (Taproot, future drivechains, future quantum-resistance migrations) are the implicit default. The block-size war's signal lesson, internalized by all subsequent upgrade campaigns, is that a contested hard fork requires coalition support across miners, developers, exchanges, and the node-operator long tail — and that coalition has proven unreachable for any change that part of the community treats as Bitcoin-altering rather than Bitcoin-extending.
 
-**The 1 MB-equivalent legacy.** The base block-size limit remains nominally 1 MB; SegWit's weight-based accounting effectively raises it to around 2–4 MB depending on transaction-type mix. The on-chain capacity question — whether even this is enough as Bitcoin grows — recurs in 2024–2026 debates about further block-weight expansions, but no proposal of that kind has gained the multi-stakeholder coalition support that all post-2017 main-chain changes have required.
+**The 1 MB-equivalent legacy.** The base block-size limit remains nominally 1 MB; SegWit's weight-based accounting effectively raises it to around 2–4 MB depending on transaction-type mix — see [the block-and-chain design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-block-chain-design/) for the weight-unit mechanics behind that figure. The on-chain capacity question — whether even this is enough as Bitcoin grows — recurs in 2024–2026 debates about further block-weight expansions, but no proposal of that kind has gained the multi-stakeholder coalition support that all post-2017 main-chain changes have required.
 
 ## Position in Bitcoin's governance corpus
 

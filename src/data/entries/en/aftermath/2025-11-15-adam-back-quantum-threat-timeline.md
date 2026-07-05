@@ -25,6 +25,7 @@ secondarySources:
 relatedEntries:
   - analysis/2026-05-18-bitcoin-quantum-threat
   - tweets/adam-back/2025-11-15-quantum-threat-timeline
+  - design/2009-01-03-bitcoin-security-model
 quotes:
   - id: "q1"
     person: "Adam Back"
@@ -38,6 +39,6 @@ Responding to a question about whether advancing quantum research puts Bitcoin a
 <!-- quote: q1 -->
 > Probably not for 20-40 years, if then. And there are quantum secure signatures, NIST standardized SLH-DSA last year. Bitcoin can add over time, as the evaluation continues and be quantum ready, long before cryptographically relevant quantum computers arrive.
 
-Back reframed the quantum threat as a solvable engineering problem with a multi-decade runway. Bitcoin Improvement Proposal 360 (BIP-360), drafted by Jameson Lopp, outlines a gradual transition to post-quantum-resistant outputs using NIST-standardized algorithms. As of 2025, the highest-capacity quantum systems remain far below the threshold needed to run Shor's algorithm against Bitcoin's elliptic curve signatures.
+Back reframed the quantum threat as a solvable engineering problem with a multi-decade runway. Bitcoin Improvement Proposal 360 (BIP-360), drafted by Jameson Lopp, outlines a gradual transition to post-quantum-resistant outputs using NIST-standardized algorithms. As of 2025, the highest-capacity quantum systems remain far below the threshold needed to run Shor's algorithm against Bitcoin's elliptic curve signatures. This 20–40 year estimate is the timeline figure cited in [the security model's quantum threat section](/BitcoinArchive/entries/design/2009-01-03-bitcoin-security-model/).
 
 This Adam Back quantum-threat statement is treated by [the bitcoin quantum threat analysis](/BitcoinArchive/entries/analysis/2026-05-18-bitcoin-quantum-threat/) as one of its two anchor data points for the §4 timeline argument (alongside the NSA-2035 institutional line) and re-cited in §6 as one of the two best-documented points on the named-cryptographer-adjacent timeline.

@@ -37,9 +37,10 @@ relatedEntries:
   - aftermath/2011-04-01-roger-ver-biography
   - aftermath/2011-08-01-jihan-wu-biography
   - aftermath/2015-01-01-amaury-sechet-biography
+  - design/2009-01-03-bitcoin-consensus-design
 ---
 
-2017 年 8 月 1 日、ビットコインのチェーンが分裂した。12:37 UTC 頃に ViaBTC マイニングプールが採掘したブロック 478558 で、Bitcoin ABC ソフトウェアを動かしていたクライアント群が 1 MB サイズ制限を超えるブロックを受け入れ、ビットコイン本体チェーンから分岐した新しいチェーンを作った。新しいチェーンはビットコインキャッシュ (BCH) と名付けられた。
+2017 年 8 月 1 日、ビットコインのチェーンが分裂した。12:37 UTC 頃に ViaBTC マイニングプールが採掘したブロック 478558 で、Bitcoin ABC ソフトウェアを動かしていたクライアント群が 1 MB サイズ制限を超えるブロックを受け入れ、ビットコイン本体チェーンから分岐した新しいチェーンを作った。新しいチェーンはビットコインキャッシュ (BCH) と名付けられた。[コンセンサス設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)の分類では、これはハードフォークにあたる。旧規則で動くノードは肥大化したブロックを完全に拒否したため、二つのチェーンは和解することなく恒久的に分岐した。
 
 この分裂は、2015 年 8 月の [Bitcoin XT のリリース](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/)以来積み上がってきたブロックサイズ戦争の、長く予想されていた決裂だった。二年にわたる有効化失敗 (XT、Classic、Unlimited) と崩壊した妥協案 (ニューヨーク合意) の後、より大きなブロックを望んだ陣営は、本体チェーンで争い続けるのではなく独自のチェーンに分かれた。
 

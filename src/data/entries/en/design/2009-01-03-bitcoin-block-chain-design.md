@@ -23,6 +23,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-consensus-design
   - design/2009-01-03-bitcoin-p2p-network-design
   - design/2009-01-03-bitcoin-storage-design
+  - analysis/2015-08-15-block-size-war-2015-2017-overview
 inlineLinkKeywords:
   - "block structure"
   - "Merkle tree"
@@ -201,7 +202,7 @@ flowchart TD
 
 ## 5. Block size and weight
 
-Satoshi's v0.1 had no explicit block-size limit. A 1 MB maximum block size was added in 2010 (initially as an anti-spam measure). SegWit (BIP 141, activated August 2017) replaced the byte-size cap with a **weight** system that discounts witness data, effectively raising the maximum block capacity while maintaining backward compatibility.
+Satoshi's v0.1 had no explicit block-size limit. A 1 MB maximum block size was added in 2010 (initially as an anti-spam measure). SegWit (BIP 141, activated August 2017) replaced the byte-size cap with a **weight** system that discounts witness data, effectively raising the maximum block capacity while maintaining backward compatibility. The multi-year dispute that preceded this change is documented in [the block-size war overview](/BitcoinArchive/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/).
 
 ### Legacy size vs SegWit weight
 

@@ -25,6 +25,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-security-model
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2010-08-15-value-overflow-incident
+  - aftermath/2017-08-01-bitcoin-cash-fork
 inlineLinkKeywords:
   - "プルーフオブワーク"
   - "難易度調整"
@@ -189,6 +190,8 @@ flowchart TD
 | **Taproot (BIP 341)** | 2021 | ソフトフォーク | Speedy Trial（修正 BIP 9） | シュノア署名、Tapscript、MAST を追加 |
 
 上表の値オーバーフロー事件は、この緊急ソフトフォークという仕組みが実際に機能した最も明確な事例である――パッチが配信され無効なブロックが数時間で孤立化するに至った経緯は[事件の詳細記事](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/)に譲る。
+
+上表に挙げた 2017 年 8 月のビットコインキャッシュ分裂は、本節で述べたハードフォークのパターンを体現する具体例であり、そのブロック高やローンチ仕様、その後の経緯は[ビットコインキャッシュのフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)のエントリーで詳しく扱っている。
 
 ### チェーン選択規則
 

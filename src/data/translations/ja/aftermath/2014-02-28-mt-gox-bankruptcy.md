@@ -29,6 +29,7 @@ relatedEntries:
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
+  - design/2009-01-03-bitcoin-transaction-design
 translationStatus: complete
 ---
 
@@ -41,7 +42,7 @@ translationStatus: complete
 
 記者会見でカルプレスは約 **85 万 BTC** が消失したことを明らかにした — 顧客分75 万 BTC と自社分10 万 BTC — 当時の価値で約 4 億 5,000 万ドル。2014年3月20日、Mt. Gox は古いウォレットから 199,999.99 BTC を発見したと報告し、損失総額は約 65 万 BTC に減少した。
 
-この崩壊は、トランザクション展性を悪用した長期的な窃盗に起因するとされたが、その後の調査でより複雑な実態 — 内部管理の不備の可能性を含む — が明らかになった。規模の面で、この危機は [2010年のバリュー・オーバーフロー事件](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/) — これまでで最大のビットコイン関連事件 — をはるかに上回った。
+この崩壊は、[トランザクション展性](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)を悪用した長期的な窃盗に起因するとされたが、その後の調査でより複雑な実態 — 内部管理の不備の可能性を含む — が明らかになった。規模の面で、この危機は [2010年のバリュー・オーバーフロー事件](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/) — これまでで最大のビットコイン関連事件 — をはるかに上回った。
 
 メディアはビットコインの死を宣告した：「ビットコインは終わった。」「最初から詐欺だった。」ビットコインの価格は暴落した。しかしプロトコル自体は影響を受けなかった — Mt. Gox は中央集権型の取引所であり、ビットコインの分散型ネットワークの欠陥ではなかった。
 

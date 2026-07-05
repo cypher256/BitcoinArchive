@@ -20,6 +20,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-cryptography-design
   - design/2009-01-03-bitcoin-p2p-network-design
   - analysis/2026-05-18-bitcoin-quantum-threat
+  - aftermath/2025-11-15-adam-back-quantum-threat-timeline
 inlineLinkKeywords:
   - "security model"
   - "51% attack"
@@ -323,7 +324,7 @@ Quantum computing represents a potential future threat to Bitcoin's cryptographi
 
 **Exposure window.** Funds are only vulnerable to a quantum ECDLP attack when the public key is exposed on-chain. Unspent outputs behind a never-revealed public-key hash (addresses that have received but never sent) are protected by the hash function, not the signature scheme. Spent-from addresses — and Pay-to-Public-Key (P2PK) outputs from the early Satoshi era — have their public keys permanently visible on-chain and would be the first targets.
 
-**Migration path.** BIP 360 (P2MR / QuBit) proposes a post-quantum address type. Any migration requires a network-wide soft fork and a transition period during which users move funds from quantum-vulnerable to quantum-resistant addresses. The timeline depends on advances in quantum hardware — estimates range from 20 to 40 years for a cryptographically relevant quantum computer (Adam Back, November 2025) — but the protocol must design the migration mechanism well before the threat materializes.
+**Migration path.** BIP 360 (P2MR / QuBit) proposes a post-quantum address type. Any migration requires a network-wide soft fork and a transition period during which users move funds from quantum-vulnerable to quantum-resistant addresses. The timeline depends on advances in quantum hardware — estimates range from 20 to 40 years for a cryptographically relevant quantum computer (Adam Back, November 2025) — but the protocol must design the migration mechanism well before the threat materializes. See [Adam Back's quantum-threat-timeline statement](/BitcoinArchive/entries/aftermath/2025-11-15-adam-back-quantum-threat-timeline/) for the full context of that estimate.
 
 ## 8. Attack vs defense comparison
 

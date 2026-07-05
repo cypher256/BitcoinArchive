@@ -25,6 +25,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-security-model
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2010-08-15-value-overflow-incident
+  - aftermath/2017-08-01-bitcoin-cash-fork
 inlineLinkKeywords:
   - "proof of work"
   - "difficulty adjustment"
@@ -188,6 +189,8 @@ flowchart TD
 | **Taproot (BIP 341)** | 2021 | Soft fork | Speedy Trial (modified BIP 9) | Added Schnorr signatures, Tapscript, and MAST |
 
 The value overflow incident above is the clearest real-world instance of this emergency-soft-fork mechanism in action — see [the incident write-up](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) for how the patch was deployed and the invalid block orphaned within hours.
+
+The August 2017 Bitcoin Cash split listed above is the fully-documented instance of the hard-fork pattern described in this section — see [the Bitcoin Cash fork entry](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) for the block height, launch parameters, and aftermath of that specific divergence.
 
 ### Chain selection rule
 

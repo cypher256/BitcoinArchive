@@ -27,6 +27,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-storage-design
   - design/2009-01-03-bitcoin-wallet-design
   - design/2009-01-03-bitcoin-ecosystem-design
+  - aftermath/2014-02-28-mt-gox-bankruptcy
 inlineLinkKeywords:
   - "transaction design"
   - "Bitcoin Script"
@@ -217,7 +218,7 @@ sequenceDiagram
 
 ## 5. SegWit and Taproot
 
-SegWit (Segregated Witness, 2017) and Taproot (2021) are the two major structural changes to Bitcoin's transaction format since its creation. Both are backward-compatible soft forks.
+SegWit (Segregated Witness, 2017) and Taproot (2021) are the two major structural changes to Bitcoin's transaction format since its creation. Both are backward-compatible soft forks. The malleability fix below closed the vector exploited in the theft behind [the Mt. Gox bankruptcy](/BitcoinArchive/entries/aftermath/2014-02-28-mt-gox-bankruptcy/), Bitcoin's largest custodial collapse.
 
 ### Structural comparison
 

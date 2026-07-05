@@ -23,6 +23,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-consensus-design
   - design/2009-01-03-bitcoin-p2p-network-design
   - design/2009-01-03-bitcoin-storage-design
+  - analysis/2015-08-15-block-size-war-2015-2017-overview
 inlineLinkKeywords:
   - "ブロック構造"
   - "マークルツリー"
@@ -202,7 +203,7 @@ flowchart TD
 
 ## 5. ブロックサイズと重量
 
-サトシの v0.1 には明示的なブロックサイズ上限がなかった。2010 年に 1 MB の最大ブロックサイズが追加された（当初はスパム対策として）。SegWit (BIP 141、2017 年 8 月有効化) はバイトサイズの上限を証人データにディスカウントを適用する**重量**システムに置き換え、後方互換性を保ちつつ最大ブロック容量を実質的に引き上げた。
+サトシの v0.1 には明示的なブロックサイズ上限がなかった。2010 年に 1 MB の最大ブロックサイズが追加された（当初はスパム対策として）。SegWit (BIP 141、2017 年 8 月有効化) はバイトサイズの上限を証人データにディスカウントを適用する**重量**システムに置き換え、後方互換性を保ちつつ最大ブロック容量を実質的に引き上げた。この変更に先立つ数年にわたる論争は[ブロックサイズ戦争総括](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)で記録されている。
 
 ### 従来のサイズと SegWit 重量の比較
 
