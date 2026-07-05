@@ -71,7 +71,7 @@
                          how far --rhythm-block is opened up. See the
                          .thread-banner + ... rules below for how the
                          tighter value is applied only between them. */
-  --rhythm-block: 4rem;
+  --rhythm-block: 5rem;
   --rhythm-cluster: 1.25rem;
 
   /* ---- Semantic color aliases (only the consumed ones remain) ---- */
