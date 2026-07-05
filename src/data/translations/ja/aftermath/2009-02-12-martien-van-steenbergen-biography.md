@@ -8,7 +8,7 @@ author: "Martien van Steenbergen"
 participants:
   - name: "Martien van Steenbergen"
     slug: "martien-van-steenbergen"
-description: "オランダ人アジャイルコーチ、AardRock 創業者。P2P Research メーリングリストでの質問に応じ、サトシは 5 週間前に公表済みだった 2,100 万枚の発行上限を、直接の質問への回答として改めて確認した。"
+description: "オランダ人アジャイルコーチ、AardRock 創業者。P2P Research での質問に応じ、サトシは既に公表済みだった 2,100 万枚の発行上限を、直接の回答として改めて確認した。"
 isSatoshi: false
 tags:
   - "martien-van-steenbergen"
@@ -33,7 +33,7 @@ translationStatus: complete
 <!-- speaker: Satoshi Nakamoto -->
 > 「通貨供給量には上限がある。流通量は 21,000,000 コインだ。取引は所有権を移転するだけだ。」
 
-サトシは同じ 2,100 万枚の上限を、これより 5 週間前の[2009 年 1 月 8 日のリリース告知](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)(「総発行量は 2,100 万コインになる」)で既に述べていた。今回の返信は、供給に上限があるのかどうかを直接尋ねられて確認した、という点で初めてだった。ファン・ステーンベルゲンはオランダのアジャイル・リーントレーナーで、組織変革コンサルティング企業 AardRock の創業者。
+サトシは同じ 2,100 万枚の上限を、これより 5 週間前の [2009 年 1 月 8 日のリリース告知](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)(「総発行量は 2,100 万コインになる」)で既に述べていた。今回の返信は、供給に上限があるのかどうかを直接尋ねられて確認した、という点で初めてだった。ファン・ステーンベルゲンはオランダのアジャイル・リーントレーナーで、組織変革コンサルティング企業 AardRock の創業者。
 
 ## サトシとのやり取り
 2009年2月12日、ファン・ステーンベルゲンは[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の [P2P Research メーリングリストでのビットコイン発表](/BitcoinArchive/ja/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/)に対し、二つの重要な技術的質問で返信した。ビットコインがデビッド・チャウムの匿名デジタルマネーシステムに似ているかどうか、そしてビットコインに通貨供給量の上限があるのか、それとも取引時に通貨が生成されるのかという質問である。

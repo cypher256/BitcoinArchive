@@ -51,6 +51,6 @@ translationStatus: complete
 >
 > 「チームで作ったか、天才の仕業だ」
 
-カミンスキーは 2011 年 8 月の Black Hat USA 2011（ラスベガス）でもビットコインの分析を発表した。同じ Black Hat の場で、3 か月前に亡くなった[レン・サッサマンへの ASCII アート追悼をビットコインのブロックチェーンに埋め込んだ件](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/)も別途公開している。2013 年には CoinDesk に対し「コア技術は実際に機能しており、誰もが予測したわけではない程度にまで機能し続けている」と語った。The New Yorker が伝えた「約3万1000行」という行数は、後に[Forensicxs が2024年に行った v0.1 コードベースの独自集計](/BitcoinArchive/ja/entries/aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough/)でも31,794行として裏付けられた。
+カミンスキーは 2011 年 8 月の Black Hat USA 2011（ラスベガス）でもビットコインの分析を発表した。同じ Black Hat の場で、3 か月前に亡くなった[レン・サッサマンへの ASCII アート追悼をビットコインのブロックチェーンに埋め込んだ件](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/)も別途公開している。2013 年には CoinDesk に対し「コア技術は実際に機能しており、誰もが予測したわけではない程度にまで機能し続けている」と語った。The New Yorker が伝えた「約 3 万 1000 行」という行数は、後に [Forensicxs が 2024年に行った v0.1 コードベースの独自集計](/BitcoinArchive/ja/entries/aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough/)でも 31,794 行として裏付けられた。
 
 カミンスキーは 2008 年に重大な DNS 脆弱性を発見したことで有名だった。2021 年 4 月 23 日に亡くなった。

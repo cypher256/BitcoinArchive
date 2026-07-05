@@ -44,7 +44,7 @@ translationStatus: complete
 - うち使用済みはわずか **50 ブロック（907 BTC）** のみ。残りの **1,122,693 BTC** は未使用のまま
 - 発表時点の推定価値：少なくとも **109 億ドル**
 
-これらの数値は、セルジオ・ラーナーが前年に発表した[2019 年の Patoshi 命名論文](/BitcoinArchive/ja/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/)が示した推定 — タイムスタンプ逆転分析により独立に導いた約 110 万 BTC・約 22,000 ブロック — とほぼ一致していた。
+これらの数値は、セルジオ・ラーナーが前年に発表した [2019 年の Patoshi 命名論文](/BitcoinArchive/ja/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/)が示した推定 — タイムスタンプ逆転分析により独立に導いた約 110 万 BTC・約 22,000 ブロック — とほぼ一致していた。
 
 ## マイニング行動
 

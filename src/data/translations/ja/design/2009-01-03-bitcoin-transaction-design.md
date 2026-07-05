@@ -219,7 +219,7 @@ sequenceDiagram
 
 ## 5. SegWit と Taproot
 
-SegWit（Segregated Witness、2017 年）と Taproot（2021 年）は、ビットコインのトランザクション形式に対する誕生以来最大の 2 つの構造的変更である。どちらも後方互換性のあるソフトフォークである。以下で述べる展性の修正は、ビットコイン最大の保管崩壊事案である[Mt. Gox 倒産](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/)の背景にあった窃盗で悪用された経路を塞いだものである。
+SegWit（Segregated Witness、2017 年）と Taproot（2021 年）は、ビットコインのトランザクション形式に対する誕生以来最大の 2 つの構造的変更である。どちらも後方互換性のあるソフトフォークである。以下で述べる展性の修正は、ビットコイン最大の保管崩壊事案である [Mt. Gox 倒産](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/)の背景にあった窃盗で悪用された経路を塞いだものである。
 
 ### 構造比較
 

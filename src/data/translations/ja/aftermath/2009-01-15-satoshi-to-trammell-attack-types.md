@@ -61,4 +61,4 @@ translationStatus: complete
 > 一つの解決策は、送金時にIPとビットコインアドレスの両方を使用すること（例えば1.2.3.4-1Kn8iojk...）で、受信者がビットコインアドレスの公開鍵を使って新しい公開鍵に署名し、送金先が意図した相手であることを証明する方法である。
 
 <!-- speaker: narrator -->
-また、ビットコインアドレスへの送金は受信者が発見できるようにトランザクションをブロックチェーンに記録する仕組みであることを確認し、ウォレット暗号化を将来の機能として言及した ―― この案は後に、[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)が[4 か月後に独立に提案した際](/BitcoinArchive/ja/entries/aftermath/2009-05-03-malmi-agrees-to-help/)にサトシが「絶対に不可欠」として支持することになる。
+また、ビットコインアドレスへの送金は受信者が発見できるようにトランザクションをブロックチェーンに記録する仕組みであることを確認し、ウォレット暗号化を将来の機能として言及した ―― この案は後に、[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)が [4 か月後に独立に提案した際](/BitcoinArchive/ja/entries/aftermath/2009-05-03-malmi-agrees-to-help/)にサトシが「絶対に不可欠」として支持することになる。

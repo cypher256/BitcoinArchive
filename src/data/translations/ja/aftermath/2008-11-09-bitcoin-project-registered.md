@@ -24,4 +24,4 @@ relatedEntries:
 
 SourceForge は、ビットコインプロジェクトの主要なホスティングプラットフォームとして機能し、ソースコードのバージョン管理（SVN）、ファイルリリースホスティング、そして bitcoin-list メーリングリストを提供した。sourceforge.net/projects/bitcoin/ にあるプロジェクトページは、ビットコインの初期の開発と配布の中心的なハブとなった。
 
-v0.1（2009年1月）から[v0.3.19（2010年12月）](/BitcoinArchive/ja/entries/aftermath/2010-12-15-bitcoin-v0319-released/) ― サトシの最後のリリース ― まで、サトシが出したすべてのリリースはこの SourceForge ページからファイルとして配布された。サトシの活動期間を通じて、プロジェクトはここに置かれていた。
+v0.1（2009年1月）から [v0.3.19（2010年12月）](/BitcoinArchive/ja/entries/aftermath/2010-12-15-bitcoin-v0319-released/) ― サトシの最後のリリース ― まで、サトシが出したすべてのリリースはこの SourceForge ページからファイルとして配布された。サトシの活動期間を通じて、プロジェクトはここに置かれていた。
