@@ -139,7 +139,7 @@ flowchart LR
 | **Maturity** | Coinbase outputs cannot be spent until 100 confirmations have passed | Prevents chain reorganizations from invalidating already-spent newly minted coins |
 | **Height in coinbase** (BIP 34) | The coinbase scriptSig must start with the serialized block height | Activated 2013; ensures every coinbase transaction is unique, preventing txid collisions |
 
-A miner may claim **less** than the full reward. Any unclaimed fees are permanently destroyed — they reduce the effective supply. Several early blocks (mined by Satoshi and early miners) have coinbase outputs below the maximum, either by accident or by design. The mechanism was opaque enough to puzzle early users: [an unexplained 50.44 BTC reward prompted a February 2010 BitcoinTalk forum post](/BitcoinArchive/entries/aftermath/2010-02-10-michael-marquardt-biography/) that became one of the earliest public explanations of how fees are appended to the subsidy.
+A miner may claim **less** than the full reward. Any unclaimed fees are permanently destroyed — they reduce the effective supply. Several early blocks (mined by Satoshi and early miners) have coinbase outputs below the maximum, either by accident or by design. The mechanism was opaque enough to puzzle early users: [an unexplained 50.44 BTC reward prompted a February 2010 BitcoinTalk forum post](/BitcoinArchive/participants/michael-marquardt/) that became one of the earliest public explanations of how fees are appended to the subsidy.
 
 ## 3. Fee market design
 

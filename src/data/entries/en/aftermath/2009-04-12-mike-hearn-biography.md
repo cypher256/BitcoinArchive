@@ -42,7 +42,7 @@ relatedEntries:
   - aftermath/2009-05-01-martti-malmi-biography
 ---
 
-On April 12, 2009, a Google engineer named Mike Hearn read the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) and [emailed Satoshi Nakamoto](/BitcoinArchive/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/). Over the next two years they exchanged sustained technical correspondence — scaling, simplified payment verification, the long-run shape of mining. Hearn received one of the last private emails Satoshi ever sent, coming almost exactly two months after [the last known email to Martti Malmi](/BitcoinArchive/entries/aftermath/2009-05-01-martti-malmi-biography/):
+On April 12, 2009, a Google engineer named Mike Hearn read the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) and [emailed Satoshi Nakamoto](/BitcoinArchive/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/). Over the next two years they exchanged sustained technical correspondence — scaling, simplified payment verification, the long-run shape of mining. Hearn received one of the last private emails Satoshi ever sent, coming almost exactly two months after [the last known email to Martti Malmi](/BitcoinArchive/participants/martti-malmi/):
 
 <!-- speaker: Satoshi Nakamoto -->
 > "I've moved on to other things. It's in good hands with Gavin and everyone."

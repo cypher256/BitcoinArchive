@@ -68,6 +68,6 @@ WikiLeaks はサトシの懸念を尊重し採用を延期した — 注目す�
 <!-- quote: q3 -->
 > 「アメリカ政府は我々にビットコインへの投資を強制した — 金融封鎖のおかげで。我々は50,000%のリターンを得た。」
 
-これはビットコインが検閲耐性のある通貨として広く注目を浴びた最初の場面だった。しかもそれが起きたのは、WikiLeaks に使わないでくれと頼んだ当の[サトシ](/BitcoinArchive/ja/entries/aftermath/2008-10-31-satoshi-nakamoto-biography/)が、もう異を唱えられなくなってからのことだった。
+これはビットコインが検閲耐性のある通貨として広く注目を浴びた最初の場面だった。しかもそれが起きたのは、WikiLeaks に使わないでくれと頼んだ当の[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が、もう異を唱えられなくなってからのことだった。
 
 アサンジ自身、WikiLeaks 創設の 10年前にあたる 1995年12月から、サイファーパンクのメーリングリストに「Proff」の名で投稿していた初期参加者だった。一方サトシは、[同じ思想の核心に独自にたどり着きながら、このメーリングリストへの参加記録は残っていない](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)。

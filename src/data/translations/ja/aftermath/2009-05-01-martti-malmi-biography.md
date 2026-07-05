@@ -93,7 +93,7 @@ timeline
 このメールのやり取りが、[2010 年 12 月 12 日のギャビンへの SVN 正式引き継ぎ](/BitcoinArchive/ja/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/)と、[2010 年 12 月 19 日のギャビンによるプロジェクト管理引き受けの公的告知](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)の基盤となった。
 
 ## その後
-マルミは 2011 年初頭まで、サトシと折に触れてやり取りを続けた。[サトシからマルミへの最後の既知のメールは 2011 年 2 月 22 日](/BitcoinArchive/ja/entries/aftermath/2011-02-22-satoshi-final-email-to-malmi/) — [マイク・ハーン](/BitcoinArchive/ja/entries/aftermath/2009-04-12-mike-hearn-biography/)およびギャビン・アンドレセンとのサトシ最後のメールの 2 か月前である。マルミは 2011 年頃、他の開発者がより大きな役割を担うようになるにつれて、ビットコイン開発への関与を徐々に減らした。その後フィンランドのテクノロジー業界で働いている。
+マルミは 2011 年初頭まで、サトシと折に触れてやり取りを続けた。[サトシからマルミへの最後の既知のメールは 2011 年 2 月 22 日](/BitcoinArchive/ja/entries/aftermath/2011-02-22-satoshi-final-email-to-malmi/) — [マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)およびギャビン・アンドレセンとのサトシ最後のメールの 2 か月前である。マルミは 2011 年頃、他の開発者がより大きな役割を担うようになるにつれて、ビットコイン開発への関与を徐々に減らした。その後フィンランドのテクノロジー業界で働いている。
 <!-- /tone-skip -->
 
 *[補足：マルッティ・マルミは、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』で、主人公に最初に加わる開発者として登場する ― Linux 移植、 SVN リポジトリ、 bitcoin.org を構築し、後に主人公の引継ぎメモを受け取るヘルシンキの学生。]*

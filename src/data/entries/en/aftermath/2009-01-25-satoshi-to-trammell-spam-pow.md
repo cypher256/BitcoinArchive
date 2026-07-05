@@ -36,7 +36,7 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-25-satoshi-to-trammell-spam-pow"
 ---
 
-In the final email of the Satoshi-Trammell correspondence, sent nearly a week after the previous exchange, Satoshi discussed the economics of spam in a system where proof-of-work tokens have value — the same botnet-driven pay-per-send abuse [Jonathan Thornburg had warned about](/BitcoinArchive/entries/aftermath/2009-01-17-jonathan-thornburg-biography/) eight days earlier. He quoted [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s observation that valuable POW tokens would make botnet infections more noticeable to computer owners.
+In the final email of the Satoshi-Trammell correspondence, sent nearly a week after the previous exchange, Satoshi discussed the economics of spam in a system where proof-of-work tokens have value — the same botnet-driven pay-per-send abuse [Jonathan Thornburg had warned about](/BitcoinArchive/participants/jonathan-thornburg/) eight days earlier. He quoted [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s observation that valuable POW tokens would make botnet infections more noticeable to computer owners.
 
 Satoshi then proposed a novel economic counter-mechanism — "reverse-spamming":
 

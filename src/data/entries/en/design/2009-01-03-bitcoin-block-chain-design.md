@@ -24,6 +24,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-p2p-network-design
   - design/2009-01-03-bitcoin-storage-design
   - analysis/2015-08-15-block-size-war-2015-2017-overview
+  - aftermath/2009-01-12-trammell-to-satoshi-upgrade-issues
 inlineLinkKeywords:
   - "block structure"
   - "Merkle tree"

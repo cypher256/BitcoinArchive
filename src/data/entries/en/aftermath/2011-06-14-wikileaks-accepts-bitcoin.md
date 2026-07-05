@@ -67,6 +67,6 @@ Bitcoin proved to be WikiLeaks' lifeline. By 2016, the organization had raised o
 <!-- quote: q3 -->
 > "The American government forced us to invest in Bitcoin — thanks to the financial blockade. We got a 50,000% return."
 
-It was Bitcoin's first high-profile turn as censorship-resistant money — and it came only after the one person who had asked WikiLeaks to stay away, [Satoshi](/BitcoinArchive/entries/aftermath/2008-10-31-satoshi-nakamoto-biography/), was no longer around to object.
+It was Bitcoin's first high-profile turn as censorship-resistant money — and it came only after the one person who had asked WikiLeaks to stay away, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/), was no longer around to object.
 
 Assange himself had been an early cypherpunks mailing-list participant, posting under the pseudonym "Proff" from December 1995 — a decade before founding WikiLeaks. Satoshi, by contrast, reached the same movement's core principles with [no documented mailing-list history of his own](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).

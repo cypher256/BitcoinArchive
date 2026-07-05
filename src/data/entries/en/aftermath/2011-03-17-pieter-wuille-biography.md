@@ -60,7 +60,7 @@ Wuille's first contribution to bitcoin/bitcoin is [PR #122 on March 17, 2011](/B
 ## Bitcoin Improvement Proposals
 Wuille authored or co-authored four BIPs that between them cover a remarkable share of Bitcoin's post-Satoshi evolution:
 
-- **[BIP-32](/BitcoinArchive/entries/bip/2012-02-11-bip-0032/)** (2012) — Hierarchical Deterministic Wallets. Eliminated the "frequent wallet backup" problem by deriving an entire key tree from a single master seed. The foundation of every modern Bitcoin wallet. An early independent implementation of the standard appeared in Vitalik Buterin's pybitcointools library — see [his biography](/BitcoinArchive/entries/aftermath/2011-09-01-vitalik-buterin-biography/) for that project.
+- **[BIP-32](/BitcoinArchive/entries/bip/2012-02-11-bip-0032/)** (2012) — Hierarchical Deterministic Wallets. Eliminated the "frequent wallet backup" problem by deriving an entire key tree from a single master seed. The foundation of every modern Bitcoin wallet. An early independent implementation of the standard appeared in Vitalik Buterin's pybitcointools library — see [his biography](/BitcoinArchive/participants/vitalik-buterin/) for that project.
 - **[BIP-141](/BitcoinArchive/entries/bip/2015-12-21-bip-0141/)** (2015, with Eric Lombrozo and Johnson Lau) — Segregated Witness. Fixed transaction malleability, enabled Lightning, and raised effective block capacity.
 - **[BIP-340](/BitcoinArchive/entries/bip/2020-01-19-bip-0340/)** (2020) — Schnorr signatures for secp256k1.
 - **[BIP-341](/BitcoinArchive/entries/bip/2020-01-19-bip-0341/)** (2020) — Taproot, activated November 2021.

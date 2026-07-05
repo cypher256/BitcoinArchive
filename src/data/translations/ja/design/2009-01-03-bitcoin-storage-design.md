@@ -20,6 +20,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-transaction-design
   - design/2009-01-03-bitcoin-block-chain-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - aftermath/2009-01-16-satoshi-to-trammell-wallet-location
 inlineLinkKeywords:
   - "UTXO セット"
   - "LevelDB"

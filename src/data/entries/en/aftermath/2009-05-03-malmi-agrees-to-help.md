@@ -24,8 +24,9 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 relatedEntries:
   - aftermath/2009-01-15-satoshi-to-trammell-attack-types
+  - aftermath/2009-05-01-martti-malmi-biography
 ---
 
-Malmi replied to Satoshi agreeing to take on the website and FAQ development. In this email, he also proposed a feature idea: a UI tool for creating password-protected private keys with backup capabilities. He reported that he was already actively running a Bitcoin node 24 hours a day, 7 days a week.
+[Malmi](/BitcoinArchive/participants/martti-malmi/) replied to Satoshi agreeing to take on the website and FAQ development. In this email, he also proposed a feature idea: a UI tool for creating password-protected private keys with backup capabilities. He reported that he was already actively running a Bitcoin node 24 hours a day, 7 days a week.
 
 Later that same day, Satoshi responded by granting Malmi developer access to the Bitcoin SourceForge project. Satoshi endorsed the private key encryption feature as "absolutely essential" for future security — an idea he had already floated, as a future feature, [to Dustin Trammell four months earlier](/BitcoinArchive/entries/aftermath/2009-01-15-satoshi-to-trammell-attack-types/). He also provided Malmi with an extensive compilation of Q&A material addressing common inquiries about blockchain mechanics, transaction confirmation times, the 21-million coin limit, and scaling.

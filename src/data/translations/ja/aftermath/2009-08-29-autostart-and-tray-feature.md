@@ -24,7 +24,7 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 relatedEntries:
-  - aftermath/2009-12-16-bitcoin-v0.2-released
+  - aftermath/2009-12-16-bitcoin-v02-released
 translationStatus: complete
 ---
 
@@ -37,4 +37,4 @@ translationStatus: complete
 
 2009年9月16日までに、マルミはタスクトレイ最小化機能を実装したコードを SVN ブランチにコミットしたと報告した。10月までに、自動起動とタスクトレイ最小化の両方の機能を備えた Windows インストーラーを作成した。
 
-これらの機能は Linux サポートも含む [2009年12月リリースのビットコインバージョン 0.2](/BitcoinArchive/ja/entries/aftermath/2009-12-16-bitcoin-v0.2-released/) に含まれた。サトシはリリースノートの中でマルミの貢献を公に認めた：「マルッティ（Sirius-m）のすべての開発作業に深く感謝する。」
+これらの機能は Linux サポートも含む [2009年12月リリースのビットコインバージョン 0.2](/BitcoinArchive/ja/entries/aftermath/2009-12-16-bitcoin-v02-released/) に含まれた。サトシはリリースノートの中でマルミの貢献を公に認めた：「マルッティ（Sirius-m）のすべての開発作業に深く感謝する。」

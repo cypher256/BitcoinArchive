@@ -43,7 +43,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2009 年 4 月 12 日、Google のエンジニアだったマイク・ハーンは[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)を読み、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に[メールを送った](/BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/)。その後 2 年間で技術的なメールが続いた —— スケーリング、簡易決済検証、長期的なマイニングの形。ハーンはサトシが送信した最後の私的メールの一つを受け取った相手であり、それは[マルッティ・マルミへの最後の既知メール](/BitcoinArchive/ja/entries/aftermath/2009-05-01-martti-malmi-biography/)からほぼちょうど 2 か月後だった:
+2009 年 4 月 12 日、Google のエンジニアだったマイク・ハーンは[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)を読み、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に[メールを送った](/BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/)。その後 2 年間で技術的なメールが続いた —— スケーリング、簡易決済検証、長期的なマイニングの形。ハーンはサトシが送信した最後の私的メールの一つを受け取った相手であり、それは[マルッティ・マルミへの最後の既知メール](/BitcoinArchive/ja/participants/martti-malmi/)からほぼちょうど 2 か月後だった:
 
 <!-- speaker: Satoshi Nakamoto -->
 > 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」

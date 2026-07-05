@@ -28,12 +28,12 @@ relatedEntries:
   - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original
   - aftermath/2010-05-22-bitcoin-pizza-day
   - aftermath/2010-05-22-laszlo-hanyecz-biography
-  - aftermath/2010-07-06-bitcoin-v0.3-released
+  - aftermath/2010-07-06-bitcoin-v03-released
 ---
 
 *[Editor: this entry is a recollection-based article, not a primary-source private email record. The full private email correspondence between Hanyecz and Satoshi has not been publicly released. All quoted material attributed to Satoshi here is paraphrase or recall reported by Hanyecz in later interviews (Bitcoin Magazine, CoinDesk 2025, Cointelegraph, and others), not text taken from the primary email record. The verifiable primary-source elements are Hanyecz's macOS port (April 19, 2010, traceable via Bitcointalk and the SourceForge / GitHub commit history) and Hanyecz's GPU mining announcement on Bitcointalk (May 10, 2010). The framing here is the historical pattern of correspondence as Hanyecz himself described it years later.]*
 
-[Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/), a software developer from Jacksonville, Florida, became one of Bitcoin's most important early contributors. He registered on the Bitcointalk forum shortly before creating the first macOS client for Bitcoin Core on April 19, 2010 — a contribution that [shipped formally as the Mac OS X version in the v0.3 release](/BitcoinArchive/entries/aftermath/2010-07-06-bitcoin-v0.3-released/) that July.
+[Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/), a software developer from Jacksonville, Florida, became one of Bitcoin's most important early contributors. He registered on the Bitcointalk forum shortly before creating the first macOS client for Bitcoin Core on April 19, 2010 — a contribution that [shipped formally as the Mac OS X version in the v0.3 release](/BitcoinArchive/entries/aftermath/2010-07-06-bitcoin-v03-released/) that July.
 
 Per Hanyecz's later interview accounts, he and Satoshi Nakamoto exchanged hundreds of emails during Bitcoin's early days — making their correspondence, on Hanyecz's account, one of the most extensive private communications Satoshi had with any individual. Hanyecz characterized the exchanges as "mostly weird," noting that Satoshi would not respond to emails for weeks and then answer everything at once, often on Fridays.
 
