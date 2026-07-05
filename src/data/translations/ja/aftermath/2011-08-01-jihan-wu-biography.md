@@ -27,6 +27,8 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - analysis/2026-05-24-satoshi-design-vs-current-reality
+  - aftermath/2011-10-13-litecoin-launch
+  - aftermath/2013-10-01-mike-belshe-biography
 ---
 
 2011 年、中国の経済学・ジャーナリズム卒業生ジハン・ウーがサトシのビットコイン白書を中国語に翻訳した。2 年後、チップ設計者ミクリー・ザン（Micree Zhan）と共同で **Bitmain Technologies** を設立、2015〜2018 年には Bitmain がビットコイン ASIC の支配的製造業者となり、新規マイニングハードウェア出荷の過半を握った。Bitmain は同時期にハッシュレート最大のビットコインマイニングプール AntPool を運営。2017 年 8 月 1 日、ウーは Bitmain 系列のハッシュレートを[ビットコインキャッシュのハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)に投じた —— BCH が初期の難易度調整期間中にブロック生成を維持できた決定的要因の一つだった。
@@ -39,13 +41,13 @@ relatedEntries:
 
 ## Bitmain (2013 ~ 2018 年)
 
-2013 年、ウーはチップ設計者ミクリー・ザンと Bitmain Technologies を共同創業した。Bitmain 最初の商用製品 ─ 2013 年末リリースの Antminer S1 ASIC ─ は当時 Avalon や BFL が支配する市場に参入した。後続世代 (S3、S5、S7、S9) を経て、Bitmain は 2015 ~ 2018 年期のビットコイン ASIC 製造で支配的地位を確立し、ピーク時には新規採掘ハードウェア出荷の過半を占めた。Bitmain は AntPool も運営し、同期間にハッシュレートで最大のビットコイン採掘プールとなった。
+2013 年、ウーはチップ設計者ミクリー・ザンと Bitmain Technologies を共同創業した。Bitmain 最初の商用製品 ─ 2013 年末リリースの Antminer S1 ASIC ─ は当時 Avalon や BFL が支配する市場に参入した。後続世代 (S3、S5、S7、S9) を経て、Bitmain は 2015 ~ 2018 年期のビットコイン ASIC 製造で支配的地位を確立し、ピーク時には新規採掘ハードウェア出荷の過半を占めた。Bitmain は AntPool も運営し、同期間にハッシュレートで最大のビットコイン採掘プールとなった。Bitmain のハードウェア支配はビットコインの SHA-256 に留まらず、2014 年から出荷された Antminer L シリーズの Scrypt 採掘機は、[ライトコイン](/BitcoinArchive/ja/entries/aftermath/2011-10-13-litecoin-launch/)が前提としていた ASIC 耐性という設計思想を突き崩した。
 
 この期間のウーの役割は対外面の共同 CEO で、ザンはチップエンジニアリング側を担当した。共同創業者間の役割分担 ─ ウーが対外 / 事業 / コミュニティ、ザンが内部 / エンジニアリング ─ は、後の経営権抗争で構造的に重要な意味を持つことになる。
 
 ## ブロックサイズ戦争とビットコインキャッシュ (2015 ~ 2017 年)
 
-ウーは 2015 ~ 2017 年の[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)を通して、より大きなブロックを推進する声高な提唱者だった。[Bitcoin XT](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015 年)、Bitcoin Classic (2016 年)、Bitcoin Unlimited (2016 年) を順次支持し、ニューヨーク合意 (2017 年 5 月) に署名、[SegWit2x](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) の妥協が崩壊した後、2017 年 8 月 1 日の[ビットコインキャッシュフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)に Bitmain 系列のハッシュレートを投じた。Bitmain のハッシュ力は、難易度アルゴリズムが調整中だった BCH 初期において、ブロック生成を維持できるかどうかを決める要素だった。
+ウーは 2015 ~ 2017 年の[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)を通して、より大きなブロックを推進する声高な提唱者だった。[Bitcoin XT](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015 年)、Bitcoin Classic (2016 年)、Bitcoin Unlimited (2016 年) を順次支持し、ニューヨーク合意 (2017 年 5 月) に署名、[SegWit2x](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) の妥協が崩壊した後、2017 年 8 月 1 日の[ビットコインキャッシュフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)に Bitmain 系列のハッシュレートを投じた。この SegWit2x 中止告知を起草したのは、同じくニューヨーク合意に署名した BitGo 共同創業者兼 CEO のマイク・ベルシェであり、[ベルシェの伝記エントリー](/BitcoinArchive/ja/entries/aftermath/2013-10-01-mike-belshe-biography/)はウーを共同署名者の一人として挙げている。Bitmain のハッシュ力は、難易度アルゴリズムが調整中だった BCH 初期において、ブロック生成を維持できるかどうかを決める要素だった。
 
 ## Bitmain 経営権抗争と 2018 年以降の事業
 

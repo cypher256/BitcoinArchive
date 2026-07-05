@@ -23,6 +23,7 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2011-04-18-namecoin-launch
   - aftermath/2013-12-06-dogecoin-launch
+  - aftermath/2011-08-01-jihan-wu-biography
 inlineLinkKeywords:
   - "Litecoin"
 ---
@@ -40,7 +41,7 @@ Each parameter was scaled by a factor of four against Bitcoin's, producing a cha
 
 Lee positioned Litecoin publicly as **"the silver to Bitcoin's gold"** — a framing that survived as marketing language for the chain into the late 2010s and 2020s. The metaphor captured Lee's positioning intent: Litecoin was not a replacement for Bitcoin but a complementary, faster, lower-fee chain for everyday transactions, with Bitcoin reserved for store-of-value usage.
 
-The Scrypt proof-of-work choice did not produce the long-term ASIC resistance Lee anticipated. Scrypt ASICs (most prominently from KnCMiner and later Bitmain's Antminer L-series) shipped from 2014 onward, and Litecoin mining became as ASIC-dominated as Bitcoin's by 2015–2016. The "ASIC-resistant" framing was retired without explicit retraction; the chain continued operating on Scrypt regardless.
+The Scrypt proof-of-work choice did not produce the long-term ASIC resistance Lee anticipated. Scrypt ASICs (most prominently from KnCMiner and later Bitmain's Antminer L-series) shipped from 2014 onward, and Litecoin mining became as ASIC-dominated as Bitcoin's by 2015–2016. Bitmain, the manufacturer behind those Scrypt units, is profiled in [Jihan Wu's biography](/BitcoinArchive/entries/aftermath/2011-08-01-jihan-wu-biography/), which traces the company's parallel rise to dominance in Bitcoin's own SHA-256 ASIC market. The "ASIC-resistant" framing was retired without explicit retraction; the chain continued operating on Scrypt regardless.
 
 Litecoin survived the early-altcoin era when most contemporaries (Solidcoin, IXCoin, Tenebrix) faded. By 2013 it was the second-largest cryptocurrency by market capitalization, a position it held intermittently through 2017 before the broader altcoin proliferation crowded the rankings. Charlie Lee left Coinbase in 2017 to focus on Litecoin Foundation work, and disclosed selling his personal LTC holdings the same year on the grounds that his comments on price moved markets unfairly.
 

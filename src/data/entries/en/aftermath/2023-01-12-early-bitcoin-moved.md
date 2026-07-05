@@ -19,12 +19,15 @@ tags:
 secondarySources:
   - name: "BTCparser Patoshi pattern tracker"
     url: "https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/"
+relatedEntries:
+  - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
+  - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
 ---
 
 In early 2023, blockchain observers detected movement of bitcoins that had been mined in January 2009, during the very first weeks of Bitcoin's existence. The transaction moved coins from a block reward that had remained dormant for approximately 14 years, immediately sparking speculation across the cryptocurrency community about whether [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) was finally spending coins.
 
 Any movement of coins from Bitcoin's earliest blocks generates intense scrutiny because Satoshi Nakamoto is estimated to have been the dominant miner during this period. However, Satoshi was not the only miner active in January 2009. [Hal Finney](/BitcoinArchive/participants/hal-finney/) began running Bitcoin on January 10, 2009, and other early participants also mined blocks in Bitcoin's first weeks.
 
-Analysts applied [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/)'s Patoshi pattern analysis to determine whether the moved coins originated from blocks attributed to Satoshi's distinctive mining pattern. The analysis indicated that the coins in question did not match the Patoshi pattern, suggesting they were mined by an early participant other than Satoshi.
+Analysts applied [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/)'s Patoshi pattern analysis to determine whether the moved coins originated from blocks attributed to Satoshi's distinctive mining pattern. The analysis indicated that the coins in question did not match the Patoshi pattern, suggesting they were mined by an early participant other than Satoshi. That pattern — [Lerner's 2013 analysis linking roughly 1.1 million BTC of early mining to a single entity](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) — is the same forensic signature applied here to rule Satoshi out rather than in.
 
-Nevertheless, the event drew widespread media attention and demonstrated the ongoing vigilance with which the community monitors early Bitcoin addresses. Every movement of coins from Bitcoin's earliest days is treated as a potential signal from its pseudonymous creator. None of the coins attributed to the Patoshi pattern -- Satoshi's estimated 1.1 million BTC -- have ever been spent.
+Nevertheless, the event drew widespread media attention and demonstrated the ongoing vigilance with which the community monitors early Bitcoin addresses. Every movement of coins from Bitcoin's earliest days is treated as a potential signal from its pseudonymous creator. The Patoshi-attributed allocation -- Satoshi's estimated 1.1 million BTC -- has remained overwhelmingly unspent, though sources differ on the small spent fraction: Lerner's original analysis found roughly 100 BTC (two block rewards) had moved, while [Jameson Lopp's 2022 quantitative recount](/BitcoinArchive/entries/aftermath/2022-09-16-lopp-was-satoshi-greedy-miner/) puts the figure at 0.09% of blocks.

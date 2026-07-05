@@ -52,6 +52,7 @@ relatedEntries:
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
+  - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
 ---
 
 In December 2010, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) handed Gavin Andresen the keys to Bitcoin — source-repository access on December 12, the [network alert key on April 26, 2011](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/). In his [same-day reply](/BitcoinArchive/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/) to that alert-key email, Andresen disclosed that he had been invited to present Bitcoin at CIA headquarters in Langley. No reply from Satoshi is known after that message. Andresen gave the talk on June 14, 2011.
@@ -86,7 +87,7 @@ The handover from Satoshi to Andresen was not a single appointment but a gradual
 | 2011-04-23 | [Email to Mike Hearn: "It's in good hands with Gavin"](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) | Departure statement endorsing Andresen (private email; published later) |
 | 2011-04-26 10:29 UTC | [Last known private email: CAlert key transfer](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) | Network emergency-shutdown authority |
 
-What did *not* transfer with the role: the ~1.1 million BTC attributed to Patoshi mining patterns (no on-chain movement since 2010), the Satoshi identity itself, and the genesis-block coinbase address private keys.
+What did *not* transfer with the role: the ~1.1 million BTC attributed to [Patoshi mining patterns](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/) (no on-chain movement since 2010), the Satoshi identity itself, and the genesis-block coinbase address private keys.
 
 Andresen recalled the gradual nature of this transition in a [2016 retrospective](/BitcoinArchive/entries/aftermath/2016-05-02-gavin-andresen-satoshi-retrospective/):
 

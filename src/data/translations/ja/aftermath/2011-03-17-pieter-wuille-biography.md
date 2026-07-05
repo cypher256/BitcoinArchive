@@ -31,6 +31,7 @@ relatedEntries:
   - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
   - aftermath/2011-09-13-bitcoin-github-migration-committers
   - aftermath/2011-09-01-vitalik-buterin-biography
+  - analysis/2015-08-15-block-size-war-2015-2017-overview
 translationStatus: complete
 ---
 
@@ -64,6 +65,8 @@ timeline
 - **[BIP-141](/BitcoinArchive/ja/entries/bip/2015-12-21-bip-0141/)**（2015年、エリック・ロンブロゾ、ジョンソン・ラウと共著）— Segregated Witness（SegWit）。トランザクションの展性を修正し、Lightning を可能にし、実効ブロック容量を増加。
 - **[BIP-340](/BitcoinArchive/ja/entries/bip/2020-01-19-bip-0340/)**（2020年）— secp256k1 曲線上のシュノア署名。
 - **[BIP-341](/BitcoinArchive/ja/entries/bip/2020-01-19-bip-0341/)**（2020年）— Taproot。2021年11月に有効化。
+
+2015年から2017年にかけてのブロックサイズ紛争では、ウィーユは大ブロック提案に対抗した Core 開発者派を代表する三人の中心人物の一人として名指しされている ― 詳しい経緯は [ブロックサイズ戦争の総覧](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)にまとめられている。
 
 ## libsecp256k1
 2013年3月5日、ウィーユは当初 GLV 手法エンドモーフィズムの性能実験として [libsecp256k1](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) を開始した。まもなく[グレゴリー・マクスウェル](/BitcoinArchive/ja/participants/gregory-maxwell/)が参加し、ライブラリーは OpenSSL の secp256k1 実装を目的別にフルリプレースするものへと成長した。2016年1月15日、Bitcoin Core v0.12 でデフォルトのバックエンドとして採用された。

@@ -31,6 +31,7 @@ relatedEntries:
   - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
   - aftermath/2011-09-13-bitcoin-github-migration-committers
   - aftermath/2011-09-01-vitalik-buterin-biography
+  - analysis/2015-08-15-block-size-war-2015-2017-overview
 ---
 
 Hierarchical deterministic wallets. Segregated Witness. Schnorr signatures. Taproot. The four BIPs that define how every modern Bitcoin wallet derives keys, how every modern transaction escapes malleability, how block capacity expanded, and how Taproot's privacy and script flexibility work — all four were authored or co-authored by **Pieter Wuille** (known on GitHub and IRC as **sipa**). He also started [libsecp256k1](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) in 2013, the purpose-built elliptic-curve library that replaced OpenSSL as Bitcoin Core's signature backend.
@@ -63,6 +64,8 @@ Wuille authored or co-authored four BIPs that between them cover a remarkable sh
 - **[BIP-141](/BitcoinArchive/entries/bip/2015-12-21-bip-0141/)** (2015, with Eric Lombrozo and Johnson Lau) — Segregated Witness. Fixed transaction malleability, enabled Lightning, and raised effective block capacity.
 - **[BIP-340](/BitcoinArchive/entries/bip/2020-01-19-bip-0340/)** (2020) — Schnorr signatures for secp256k1.
 - **[BIP-341](/BitcoinArchive/entries/bip/2020-01-19-bip-0341/)** (2020) — Taproot, activated November 2021.
+
+During the 2015–2017 block-size war, Wuille was named as one of three lead figures of the "Core developers" faction that opposed the large-block proposals in favor of SegWit and Lightning — see [the block-size war overview](/BitcoinArchive/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/) for the full account of that dispute.
 
 ## libsecp256k1
 On March 5, 2013, Wuille started [libsecp256k1](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/), initially as a performance experiment around the GLV-method endomorphism. [Gregory Maxwell](/BitcoinArchive/participants/gregory-maxwell/) soon joined, and the library grew into a full purpose-built replacement for OpenSSL's secp256k1 implementation. It shipped as the default backend in Bitcoin Core v0.12 on January 15, 2016.

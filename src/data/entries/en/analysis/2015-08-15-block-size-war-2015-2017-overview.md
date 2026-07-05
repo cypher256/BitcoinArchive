@@ -36,6 +36,7 @@ relatedEntries:
   - aftermath/2017-11-08-segwit2x-cancellation
   - aftermath/2015-01-01-amaury-sechet-biography
   - aftermath/2011-08-01-jihan-wu-biography
+  - aftermath/2011-03-17-pieter-wuille-biography
   - analysis/2014-11-01-blockstream-centralization-claim
 ---
 
@@ -91,6 +92,8 @@ The three loss-points: (a) whether the constraint is throughput or decentralizat
 | **Large-blockers** | [Mike Hearn](/BitcoinArchive/participants/mike-hearn/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/), [Roger Ver](/BitcoinArchive/participants/roger-ver/), [Jihan Wu](/BitcoinArchive/participants/jihan-wu/), [Amaury Séchet](/BitcoinArchive/participants/amaury-sechet/) | The 1 MB limit was a temporary measure that must be lifted; on-chain capacity is the only credible scaling lever; off-chain layers reintroduce intermediary risk | Bitcoin XT / Classic / Unlimited all failed to activate. [Bitcoin Cash](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) split off as a separate chain on August 1, 2017 |
 | **Core developers** | Gregory Maxwell, Pieter Wuille, Wladimir van der Laan | A contentious hard fork splits the network; node decentralization must be preserved; scaling is achievable via SegWit + Lightning + soft forks | SegWit activated on the main chain on August 24, 2017. Subsequent main-chain upgrades (Taproot 2021) followed the soft-fork path. The Core repository remained the dominant implementation |
 | **NYA compromise group** | [Mike Belshe](/BitcoinArchive/participants/mike-belshe/), Jeff Garzik, Wences Casares, Erik Voorhees, Peter Smith, Jihan Wu | Industry-led negotiation can bundle SegWit (Core's preferred path) with a small hard-fork block-size increase, splitting the difference | First half (SegWit) shipped on August 24, 2017. Second half (2 MB hard fork) [cancelled by Belshe on November 8, 2017](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/), about a week before the scheduled block 494784 activation |
+
+Pieter Wuille — one of the three Core-developer figures named above — is profiled in more detail in [his biography entry](/BitcoinArchive/entries/aftermath/2011-03-17-pieter-wuille-biography/), which documents the BIP authorship (BIP-32, SegWit, Taproot) and libsecp256k1 work underlying the Core-developer position summarized here, though it does not itself narrate this dispute.
 
 The faction labels are post-hoc and not self-identifications. Several actors crossed between factions over the two-year span — Jihan Wu, for example, signed the New York Agreement, then supported the Bitcoin Cash fork that occurred during the agreement's first-half window. The participants list above names the most prominent figures associated with each faction at the launch of their respective proposals; the underlying constituencies (miners, exchanges, full-node operators, individual holders) had heterogeneous and shifting positions.
 

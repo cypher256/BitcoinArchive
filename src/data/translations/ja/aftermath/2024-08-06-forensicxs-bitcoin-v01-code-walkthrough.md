@@ -28,6 +28,7 @@ relatedEntries:
   - "analysis/2009-01-03-genesis-block-hardcode-analysis"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
+  - "aftermath/2011-10-10-dan-kaminsky-bitcoin-security"
 translationStatus: complete
 ---
 
@@ -48,4 +49,4 @@ translationStatus: complete
 
 - **v0.1 にハードコードされた技術パラメーター:** コインベース成熟度100 ブロック、難易度調整幅 25%〜400%、目標ブロック間隔 10分。
 
-31,794 行というコード行数は、The New Yorker の 2011年10月の記事でジョシュア・デイヴィスがダン・カミンスキーのコード分析で記述した「roughly 31,000 lines」と一致している。
+31,794 行というコード行数は、The New Yorker の 2011年10月の記事でジョシュア・デイヴィスが[ダン・カミンスキーによるコード分析](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)をもとに記述した「roughly 31,000 lines」と一致している――カミンスキーも同じコードベースを独自に検証し、悪用可能な欠陥を見つけられなかった一人だ。

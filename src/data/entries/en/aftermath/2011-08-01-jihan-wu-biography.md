@@ -27,6 +27,8 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - analysis/2026-05-24-satoshi-design-vs-current-reality
+  - aftermath/2011-10-13-litecoin-launch
+  - aftermath/2013-10-01-mike-belshe-biography
 ---
 
 In 2011, a Chinese economics-and-journalism graduate named Jihan Wu translated Satoshi's Bitcoin whitepaper into Chinese. Two years later he co-founded **Bitmain Technologies** with chip designer Micree Zhan, and by 2015–2018 Bitmain had become the dominant Bitcoin ASIC manufacturer, controlling a majority share of new mining-hardware shipments. Bitmain also operated AntPool, the largest Bitcoin mining pool by hashrate through the same period. On August 1, 2017, Wu committed Bitmain-aligned hashpower to the [Bitcoin Cash hard fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) — a critical factor in BCH maintaining block production through the early difficulty-tuning days.
@@ -39,13 +41,13 @@ Wu studied economics and journalism at Peking University before working as a fin
 
 ## Bitmain (2013–2018)
 
-In 2013 Wu co-founded Bitmain Technologies with Micree Zhan, a chip designer. Bitmain's first commercial product — the Antminer S1 ASIC, released in late 2013 — entered a market dominated by Avalon and BFL. Through subsequent generations (S3, S5, S7, S9) Bitmain became the dominant Bitcoin ASIC manufacturer of the 2015–2018 era, controlling a majority share of new mining hardware shipments at its peak. Bitmain also operated AntPool, which became the largest Bitcoin mining pool by hashrate during the same period.
+In 2013 Wu co-founded Bitmain Technologies with Micree Zhan, a chip designer. Bitmain's first commercial product — the Antminer S1 ASIC, released in late 2013 — entered a market dominated by Avalon and BFL. Through subsequent generations (S3, S5, S7, S9) Bitmain became the dominant Bitcoin ASIC manufacturer of the 2015–2018 era, controlling a majority share of new mining hardware shipments at its peak. Bitmain also operated AntPool, which became the largest Bitcoin mining pool by hashrate during the same period. Bitmain's hardware dominance extended beyond Bitcoin's SHA-256 algorithm: its Antminer L-series Scrypt miners, shipping from 2014, undermined the ASIC-resistance design that [Litecoin](/BitcoinArchive/entries/aftermath/2011-10-13-litecoin-launch/) had been built around.
 
 Wu served as the public-facing co-CEO, while Zhan handled the chip-engineering side. The two co-founders' division of responsibilities — Wu external/business/community, Zhan internal/engineering — would become structurally significant in the later leadership conflict.
 
 ## Block-size war and Bitcoin Cash (2015–2017)
 
-Wu was a vocal proponent of larger Bitcoin blocks throughout the 2015–2017 [block-size war](/BitcoinArchive/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/). He supported [Bitcoin XT](/BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015), Bitcoin Classic (2016), and Bitcoin Unlimited (2016) in turn, signed the New York Agreement (May 2017), and after the [SegWit2x](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) compromise collapsed, committed Bitmain-aligned hashpower to the [Bitcoin Cash fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) on August 1, 2017. Bitmain's hashpower was a critical factor in BCH's ability to maintain block production through the early days of the split when the chain's difficulty algorithm was still being tuned.
+Wu was a vocal proponent of larger Bitcoin blocks throughout the 2015–2017 [block-size war](/BitcoinArchive/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/). He supported [Bitcoin XT](/BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015), Bitcoin Classic (2016), and Bitcoin Unlimited (2016) in turn, signed the New York Agreement (May 2017), and after the [SegWit2x](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) compromise collapsed, committed Bitmain-aligned hashpower to the [Bitcoin Cash fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) on August 1, 2017. The SegWit2x cancellation announcement itself was authored by fellow NYA signatory Mike Belshe, the BitGo co-founder and CEO, whose [biography entry](/BitcoinArchive/entries/aftermath/2013-10-01-mike-belshe-biography/) names Wu among its co-signatories. Bitmain's hashpower was a critical factor in BCH's ability to maintain block production through the early days of the split when the chain's difficulty algorithm was still being tuned.
 
 ## Bitmain leadership conflict and post-2018 ventures
 

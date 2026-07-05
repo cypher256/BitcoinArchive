@@ -24,6 +24,7 @@ secondarySources:
 relatedEntries:
   - "aftermath/2011-02-25-wei-dai-making-money-with-bitcoin"
   - "aftermath/2014-07-19-wei-dai-next-tech-gold-rush"
+  - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
 translationStatus: complete
@@ -50,4 +51,4 @@ translationStatus: complete
 
 ダイのコメントは、[2008 年 8 月 22 日にサトシが彼に送ったメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)に言及している。そのメールにはビットコインホワイトペーパーのリリース前の草稿が含まれていた。この直接的な働きかけを受けたにもかかわらず、ダイは論文の設計についてフィードバックを返すことはなかった。
 
-ダイはこの逸機の主題に翌年も立ち返っている。 [2014 年 7 月の LessWrong 投稿](/BitcoinArchive/ja/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/)では、 2009 年初頭のビットコイン v0.1 公開を告げるサトシのメールも、当時サイファーパンクより LessWrong に関心が向いていたために見過ごしたと振り返っている。
+ダイはこの逸機の主題に翌年も立ち返っている。 [2014 年 7 月の LessWrong 投稿](/BitcoinArchive/ja/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/)では、 2009 年初頭のビットコイン v0.1 公開を告げるサトシのメールも、当時サイファーパンクより LessWrong に関心が向いていたために見過ごしたと振り返っている。2014年1月のLessWrong Q&Aでも、この不作為の裏返しとなる話をしている — サトシもまた、ダイのb-money論文を読まないまま同じ着想に独自にたどり着き、事後になって初めて彼の名を挙げて謝辞を記したという逸話で、詳しくは[ウェイ・ダイのサトシとb-moneyに関する回顧的発言](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)にまとめられている。

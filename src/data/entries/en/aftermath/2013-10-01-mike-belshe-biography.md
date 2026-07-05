@@ -27,6 +27,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2017-11-08-segwit2x-cancellation
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - aftermath/2011-08-01-jihan-wu-biography
 ---
 
 On November 8, 2017, Mike Belshe [authored the announcement that cancelled SegWit2x](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) — the planned hard fork that would double Bitcoin's block-size limit, negotiated at the May 2017 New York Agreement. The cancellation, citing insufficient community consensus, ended the largest coordinated attempt at a contentious Bitcoin protocol change since the network's launch. Belshe was uniquely positioned to write it: as co-founder and CEO of **BitGo** (the institutional Bitcoin custody firm whose 2-of-3 multisignature SDK had become standard infrastructure for the exchange industry), he had been one of the principal NYA signatories.
@@ -49,7 +50,7 @@ Belshe was one of the principal signatories of the New York Agreement on May 23,
 
 By October 2017 it was clear that the SegWit2x hard fork would not have community-wide support. Bitcoin Core developers had been publicly opposed throughout, the user-activated soft fork (UASF) movement had demonstrated that node operators could enforce protocol rules independently of mining hashrate, and several major exchanges signaled they would not list a SegWit2x chain.
 
-On November 8, 2017 — about a week before the planned activation at block 494784 — Belshe posted the [SegWit2x cancellation message](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) to the `bitcoin-segwit2x@lists.linuxfoundation.org` mailing list. The message was co-signed by five other principal signatories (Wences Casares, Jihan Wu, Jeff Garzik, Peter Smith, Erik Voorhees). The cancellation effectively ended the New York Agreement and closed the main-chain side of the [block-size war](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/).
+On November 8, 2017 — about a week before the planned activation at block 494784 — Belshe posted the [SegWit2x cancellation message](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) to the `bitcoin-segwit2x@lists.linuxfoundation.org` mailing list. The message was co-signed by five other principal signatories (Wences Casares, Jihan Wu, Jeff Garzik, Peter Smith, Erik Voorhees). Wu — Bitmain's co-founder, who had signed the same New York Agreement and would commit Bitmain's hashpower to the Bitcoin Cash fork after SegWit2x's collapse — is profiled in [his own biography entry](/BitcoinArchive/entries/aftermath/2011-08-01-jihan-wu-biography/). The cancellation effectively ended the New York Agreement and closed the main-chain side of the [block-size war](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/).
 
 ## Career timeline
 

@@ -31,6 +31,7 @@ relatedEntries:
   - "aftermath/2008-08-22-wei-dai-biography"
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
+  - "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique"
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
@@ -46,6 +47,8 @@ On independent invention, Dai recounted:
 
 <!-- audit:quote-skip -->
 > "My understanding is that the creator of Bitcoin, who goes by the name Satoshi Nakamoto, didn't even read my article before reinventing the idea himself. He learned about it afterward and credited me in his paper."
+
+Dai's own account of that exchange — that he never answered Satoshi's August 2008 email asking for comments on the whitepaper draft, a lapse he later called partly his own fault — appears in a separate LessWrong comment from the previous year; see [Wei Dai's critique of Bitcoin's monetary policy](/BitcoinArchive/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/).
 
 On Satoshi's likely background, Dai offered a guess:
 

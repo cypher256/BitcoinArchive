@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2011-04-20-forbes-crypto-currency
   - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
+  - aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough
 ---
 
 *From "The Crypto-Currency" by Joshua Davis, The New Yorker, October 10, 2011:*
@@ -49,6 +50,6 @@ relatedEntries:
 >
 > "Either there's a team of people who worked on this," he said, "or this guy is a genius."
 
-Kaminsky also presented his Bitcoin analysis at Black Hat USA 2011 in Las Vegas, where he separately revealed an [ASCII-art memorial to Len Sassaman that he had embedded in the Bitcoin blockchain](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) following Sassaman's death three months earlier. In 2013, he told CoinDesk that "the core technology actually works, and has continued to work, to a degree not everyone predicted."
+Kaminsky also presented his Bitcoin analysis at Black Hat USA 2011 in Las Vegas, where he separately revealed an [ASCII-art memorial to Len Sassaman that he had embedded in the Bitcoin blockchain](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) following Sassaman's death three months earlier. In 2013, he told CoinDesk that "the core technology actually works, and has continued to work, to a degree not everyone predicted." The New Yorker's estimate of roughly 31,000 lines for the codebase was independently corroborated in 2024, when [Forensicxs's line-by-line walkthrough of the Bitcoin v0.1 source](/BitcoinArchive/entries/aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough/) tallied 31,794 lines across the same code.
 
 Kaminsky was famous for discovering a critical DNS vulnerability in 2008. He passed away on April 23, 2021.

@@ -31,6 +31,7 @@ relatedEntries:
   - "aftermath/2008-08-22-wei-dai-biography"
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
+  - "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique"
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
@@ -47,6 +48,8 @@ translationStatus: complete
 
 <!-- audit:quote-skip -->
 > 「私の理解では、サトシ・ナカモトという名前のビットコインの作成者は、私の論文を読まずにアイデアを独自に再発明したようです。後で知って、論文で言及しました」
+
+このやり取りについてのダイ自身の説明 — ホワイトペーパー草稿へのコメントを求める2008年8月のサトシのメールに結局返信しなかったこと、それを後に自らの落ち度と認めたこと — は、前年のLessWrongコメントに残されている。詳しくは[ウェイ・ダイによるビットコインの金融政策批判](/BitcoinArchive/ja/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/)を参照。
 
 サトシの経歴について、ダイは一つの推測を述べた：
 

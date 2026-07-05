@@ -24,6 +24,7 @@ secondarySources:
 relatedEntries:
   - "aftermath/2011-02-25-wei-dai-making-money-with-bitcoin"
   - "aftermath/2014-07-19-wei-dai-next-tech-gold-rush"
+  - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
 ---
@@ -49,4 +50,4 @@ And he took part of the blame himself, for never answering Satoshi's email:
 
 Dai's comment references the [email Satoshi sent him on August 22, 2008](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), which included a pre-release draft of the Bitcoin whitepaper. Despite receiving this direct outreach, Dai never replied with feedback on the paper's design.
 
-Dai returned to this missed-opportunity theme the following year in ["Look for the Next Tech Gold Rush?"](/BitcoinArchive/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/), recounting how he had also ignored an earlier Satoshi email — the early-2009 announcement of Bitcoin v0.1 — because he was more focused on Less Wrong than Cypherpunks at the time.
+Dai returned to this missed-opportunity theme the following year in ["Look for the Next Tech Gold Rush?"](/BitcoinArchive/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/), recounting how he had also ignored an earlier Satoshi email — the early-2009 announcement of Bitcoin v0.1 — because he was more focused on Less Wrong than Cypherpunks at the time. A similar admission surfaces in a January 2014 LessWrong Q&A, where Dai recalled the flip side of that same non-engagement — that Satoshi likewise never read his b-money article before independently reinventing its core idea, crediting him only after the fact — as detailed in [Wei Dai's retrospective on Satoshi and b-money](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/).

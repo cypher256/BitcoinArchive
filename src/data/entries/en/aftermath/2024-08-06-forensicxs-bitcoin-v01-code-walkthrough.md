@@ -28,6 +28,7 @@ relatedEntries:
   - "analysis/2009-01-03-genesis-block-hardcode-analysis"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style"
+  - "aftermath/2011-10-10-dan-kaminsky-bitcoin-security"
 ---
 
 On August 6, 2024, the cybersecurity researcher known as Forensicxs published "Bitcoin Core v0.1: a code walkthrough" — a comprehensive analysis of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s original Bitcoin source code [released on January 9, 2009](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/).
@@ -47,4 +48,4 @@ On August 6, 2024, the cybersecurity researcher known as Forensicxs published "B
 
 - **Technical parameters hardcoded in v0.1:** Coinbase maturity of 100 blocks; difficulty adjustment constrained to 25%–400% range; 10-minute target block interval.
 
-The line count of 31,794 is consistent with the "roughly 31,000 lines" described by Joshua Davis in The New Yorker's October 2011 profile, which featured Dan Kaminsky's analysis of the same codebase.
+The line count of 31,794 is consistent with the "roughly 31,000 lines" described by Joshua Davis in The New Yorker's October 2011 profile, which featured [Dan Kaminsky's security analysis](/BitcoinArchive/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/) of the same codebase — Kaminsky, too, came away unable to find an exploitable flaw.

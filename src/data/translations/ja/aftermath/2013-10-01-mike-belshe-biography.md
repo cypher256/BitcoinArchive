@@ -27,6 +27,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2017-11-08-segwit2x-cancellation
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - aftermath/2011-08-01-jihan-wu-biography
 ---
 
 2017 年 11 月 8 日、マイク・ベルシェが [SegWit2x の中止を告知する文書を起草した](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) —— 2017 年 5 月のニューヨーク合意で交渉されていた、ビットコインのブロックサイズ上限を倍にするハードフォーク計画である。十分なコミュニティ合意がないことを理由にしたこの中止は、ネットワーク立ち上げ以降で最大規模の論争的プロトコル変更の試みを終わらせた。ベルシェが起草するのに特に適していたのは、機関向けビットコイン保管企業 **BitGo**（その 2-of-3 マルチシグ SDK は取引所業界の標準インフラとなっていた）の共同創業者・CEO として、彼自身が NYA の主要署名者の一人だったからである。
@@ -49,7 +50,7 @@ relatedEntries:
 
 2017 年 10 月までには、SegWit2x ハードフォークがコミュニティ全体の支持を得られないことが明らかになった。Bitcoin Core 開発者は当初から公的に反対しており、ユーザー有効化ソフトフォーク (UASF) 運動はノード運営者がマイニングハッシュレートに依存せずプロトコルルールを強制できることを実証していたし、複数の主要取引所は SegWit2x チェーンを上場しないことを表明していた。
 
-2017 年 11 月 8 日 ─ ブロック 494784 での有効化予定の約 1 週間前 ─ ベルシェは `bitcoin-segwit2x@lists.linuxfoundation.org` メーリングリストに [SegWit2x 中止メッセージ](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/)を投稿した。投稿は他の主要署名者 5 名 (ウェンセス・カサレス、ジハン・ウー、ジェフ・ガージック、ピーター・スミス、エリック・ヴォーヒース) との連名だった。中止により、ニューヨーク合意は事実上終結し、[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)の本体チェーン側が閉じた。
+2017 年 11 月 8 日 ─ ブロック 494784 での有効化予定の約 1 週間前 ─ ベルシェは `bitcoin-segwit2x@lists.linuxfoundation.org` メーリングリストに [SegWit2x 中止メッセージ](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/)を投稿した。投稿は他の主要署名者 5 名 (ウェンセス・カサレス、ジハン・ウー、ジェフ・ガージック、ピーター・スミス、エリック・ヴォーヒース) との連名だった。ウー ─ Bitmain 共同創業者で、同じニューヨーク合意に署名し、SegWit2x 崩壊後には Bitmain 系列のハッシュレートをビットコインキャッシュに投じることになる人物 ─ については、[ウー自身の伝記エントリー](/BitcoinArchive/ja/entries/aftermath/2011-08-01-jihan-wu-biography/)で詳しく扱っている。中止により、ニューヨーク合意は事実上終結し、[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)の本体チェーン側が閉じた。
 
 ## キャリア時系列
 
