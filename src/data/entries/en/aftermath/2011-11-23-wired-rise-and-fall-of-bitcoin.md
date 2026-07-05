@@ -46,6 +46,7 @@ relatedEntries:
   - aftermath/2011-04-20-forbes-crypto-currency
   - aftermath/2010-06-11-andresen-bitcoin-faucet
   - aftermath/2011-08-01-bitcointalk-org-migration
+  - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -124,6 +125,8 @@ On Stefan Thomas's timestamp analysis, the article noted:
 
 <!-- audit:quote-skip -->
 > Stefan Thomas, a Swiss coder and active community member, graphed the time stamps for each of Nakamoto's 500-plus bitcoin forum posts; the resulting chart showed a steep decline to almost no posts between the hours of 5 am and 11 am Greenwich Mean Time.
+
+Chain Bulletin would revisit this same GMT-based approach nearly a decade later, drawing on a far larger dataset of 742 timestamped forum posts, commits, and emails to reach a similar conclusion — see [Chain Bulletin's 2020 London hypothesis analysis](/BitcoinArchive/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/).
 
 In closing, the article returned to Garzik on Satoshi's identity:
 

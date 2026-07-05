@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Sergio Demian Lerner"
     slug: "sergio-demian-lerner"
-description: "複数のブロックチェーン分析により、サトシ・ナカモトがビットコインの最初期に約 110 万ビットコインをマイニングし、それらのコインが一度も使われていないことが推定された。"
+description: "複数のブロックチェーン分析により、サトシ・ナカモトがビットコインの最初期に約 110 万ビットコインをマイニングし、その大半が一度も使われていないことが推定された。"
 isSatoshi: false
 tags:
   - "satoshi-nakamoto"

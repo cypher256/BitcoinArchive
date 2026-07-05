@@ -67,6 +67,6 @@ Lerner calculated the probability that all 27,680 blocks in set M could have non
 
 ## Conclusion
 
-This 2019 paper transformed the Patoshi research from a set of empirical observations into a near-certainty: one entity, using custom mining software on a single computer, accumulated approximately 5% of Bitcoin's total supply — and never spent it.
+This 2019 paper transformed the Patoshi research from a set of empirical observations into a near-certainty: one entity, using custom mining software on a single computer, accumulated approximately 5% of Bitcoin's total supply — and left 99.9% of it unspent.
 
 This 2019 Patoshi-naming entry is treated as the methodological continuation of [the 2013 Patoshi-pattern analysis](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/). The earlier entry frames the empirical observation; this 2019 entry records its formalisation into the named "Patoshi" pattern with refined nonce-LSB and ExtraNonce methodology.

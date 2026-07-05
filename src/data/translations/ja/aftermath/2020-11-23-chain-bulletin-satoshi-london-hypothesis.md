@@ -30,6 +30,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2009-01-09-satoshi-code-analysis
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
+  - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
 translationStatus: complete
 ---
 
@@ -46,7 +47,7 @@ translationStatus: complete
 - SourceForge コミット 169件（2009年10月〜2010年12月）
 - メーリングリストメール 34件（2008年10月〜2010年12月）
 
-すべてのタイムスタンプを UTC から 3 つの候補タイムゾーン（GMT/ロンドン、米国東部、米国太平洋）に変換した。総合分析は GMT ベースのスケジュールと一致するパターンを示したが、観察された夜型行動パターンにより、単独ではタイムゾーンの特定がやや曖昧であった。カライヴァノフは後に同じ手法を別の謎にも応用しており――[CoinDesk が報じた未公開のサトシ・フィニー間メール](/BitcoinArchive/ja/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/)では、サトシのメールに現れた UTC+8 というヘッダーはサトシ本人の所在地ではなく送信メールサーバー側の設定によるものだと指摘している。
+すべてのタイムスタンプを UTC から 3 つの候補タイムゾーン（GMT/ロンドン、米国東部、米国太平洋）に変換した。総合分析は GMT ベースのスケジュールと一致するパターンを示したが、観察された夜型行動パターンにより、単独ではタイムゾーンの特定がやや曖昧であった。同様に GMT を根拠とした投稿時間帯の空白は、約10年前にも指摘されている — [Wired誌による2011年の特集記事](/BitcoinArchive/ja/entries/aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin/)では、ステファン・トーマスが作成したグラフが、グリニッジ標準時の午前5時から11時にかけて投稿がほぼ途絶える様子をすでに示していた。カライヴァノフは後に同じ手法を別の謎にも応用しており――[CoinDesk が報じた未公開のサトシ・フィニー間メール](/BitcoinArchive/ja/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/)では、サトシのメールに現れた UTC+8 というヘッダーはサトシ本人の所在地ではなく送信メールサーバー側の設定によるものだと指摘している。
 
 ## 言語学的特徴
 

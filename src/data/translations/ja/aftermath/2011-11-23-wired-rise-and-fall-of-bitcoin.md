@@ -46,6 +46,7 @@ relatedEntries:
   - aftermath/2011-04-20-forbes-crypto-currency
   - aftermath/2010-06-11-andresen-bitcoin-faucet
   - aftermath/2011-08-01-bitcointalk-org-migration
+  - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -142,6 +143,8 @@ translationStatus: complete
 <!-- speaker: narrator -->
 <!-- audit:quote-skip -->
 > スイスのコーダーでコミュニティの活発なメンバーだったステファン・トーマスが、ナカモトの500件以上のフォーラム投稿のタイムスタンプをグラフ化した。グラフは、グリニッジ標準時の午前5時から11時の間に投稿がほぼ消滅することを示していた。
+
+この GMT を根拠とした手法は、約10年後にも別の形で繰り返されることになる——[Chain Bulletin による2020年のロンドン仮説分析](/BitcoinArchive/ja/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/)は、投稿・コミット・メール742件というはるかに大規模なデータセットから、同様の結論に達している。
 
 締めくくりに、記事はサトシの正体をめぐるガージックの言葉に戻った：
 
