@@ -36,6 +36,7 @@ relatedEntries:
   - aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback
   - aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
+  - aftermath/2009-10-12-martti-malmi-first-btc-sale
 quotes:
   - id: "q1"
     person: "Laszlo Hanyecz"
@@ -59,7 +60,7 @@ On May 22, 2010, 19-year-old Jeremy Sturdivant (forum handle "jercos") accepted 
 <!-- quote: q2 -->
 > "I just want to report that I successfully traded 10,000 bitcoins for pizza."
 
-At the time, 10,000 BTC was worth approximately $41. This was the first known purchase of a physical good with Bitcoin. Previous Bitcoin transactions had been digital-only — exchange rate calculations and peer-to-peer transfers. The pizza transaction proved that Bitcoin could function as a real-world medium of exchange.
+At the time, 10,000 BTC was worth approximately $41. This was the first known purchase of a physical good with Bitcoin. Previous Bitcoin transactions had been digital-only — exchange rate calculations and peer-to-peer transfers, such as [Martti Malmi's October 2009 sale of 5,050 BTC for $5.02](/BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/), the first known Bitcoin-to-fiat exchange. The pizza transaction proved that Bitcoin could function as a real-world medium of exchange.
 
 Hanyecz, a pioneer of [GPU mining](/BitcoinArchive/entries/aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback/), continued ordering pizzas with Bitcoin throughout the summer, spending approximately 79,000 BTC in total. Asked years later by Cointelegraph whether he regretted the trade now that 10,000 BTC was worth tens of millions of dollars, Hanyecz answered:
 

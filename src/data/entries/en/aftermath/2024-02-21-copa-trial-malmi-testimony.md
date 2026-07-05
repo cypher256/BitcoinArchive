@@ -34,11 +34,12 @@ relatedEntries:
   - aftermath/2016-05-02-craig-wright-biography
   - aftermath/2024-03-14-copa-v-wright-ruling
   - aftermath/2009-05-01-martti-malmi-biography
+  - aftermath/2011-02-22-satoshi-final-email-to-malmi
 ---
 
 On February 21, 2024, during Day 13 of the COPA v. Craig Wright trial at the UK High Court of Justice, [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) testified via video link.
 
-Malmi — Bitcoin's first administrator of bitcoin.org and Satoshi's earliest known collaborator — submitted a compilation of 260 emails with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) as evidence. The emails totaled approximately 140,000 words and spanned from May 2009 to February 2011.
+Malmi — Bitcoin's first administrator of bitcoin.org and Satoshi's earliest known collaborator — submitted a compilation of 260 emails with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) as evidence. The emails totaled approximately 140,000 words and spanned from May 2009 to February 2011. Among the correspondence was [Satoshi's final known email in the Malmi archive](/BitcoinArchive/entries/aftermath/2011-02-22-satoshi-final-email-to-malmi/), a February 2011 message handing off the bitcoin-list mailing list password to Gavin Andresen with Malmi copied in.
 
 Malmi stated in court:
 

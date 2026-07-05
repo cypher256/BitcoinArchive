@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2009-05-01-martti-malmi-biography
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
   - aftermath/2011-02-22-satoshi-final-email-to-malmi
+  - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
 translationStatus: complete
 ---
 
@@ -45,4 +46,4 @@ translationStatus: complete
 bitcointalk.org への移行は、フォーラムを bitcoin.org ドメインから独立した組織として確立する必要性から行われた。既存の投稿、スレッド、ユーザーアカウントはすべて移行時に保存された。フォーラムは引き続き SMF ソフトウェアを使用し、同じ構造とコミュニティを維持した。
 
 ## レガシー
-2009年11月から 2010年12月にわたるサトシ・ナカモトの 575件のフォーラム投稿がサイトに保存されており、あわせてビットコインのマイニングや取引に関する最古の公開議論、そして最初の商業的ビットコイン取引として知られる [2010年5月22日にラズロ・ハニエツが 10,000 BTC でピザ 2枚を購入した記録](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)も残されている。
+2009年11月から 2010年12月にわたるサトシ・ナカモトの 575件のフォーラム投稿がサイトに保存されており、あわせてビットコインのマイニングや取引に関する最古の公開議論、そして最初の商業的ビットコイン取引として知られる [2010年5月22日にラズロ・ハニエツが 10,000 BTC でピザ 2枚を購入した記録](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)も残されている。この投稿数について、[Wired誌による2011年のビットコイン特集記事](/BitcoinArchive/ja/entries/aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin/)は、ステファン・トーマスのタイムスタンプ分析をもとに「500件以上」と紹介している。

@@ -36,6 +36,7 @@ relatedEntries:
   - aftermath/2018-10-29-jeff-garzik-retrospective
   - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius
   - aftermath/2010-08-15-value-overflow-incident
+  - aftermath/2010-12-08-bitcoin-v0.3.18-released
 translationStatus: complete
 ---
 
@@ -63,7 +64,7 @@ timeline
 ガージックを引き寄せた [2010 年 7 月の Slashdot 投稿](/BitcoinArchive/ja/entries/aftermath/2010-07-11-slashdot-bitcoin-article/)は、ビットコイン v0.3 のリリースを取り上げたものだった——初期の開発者が後に「Great Slashdotting」と呼んだアクセス殺到であり、多くのプログラマーが初めてこのプロジェクトを知った瞬間でもあった。ガージックもその一人で、カーネル開発の素地のおかげで、すぐに C++ コードを読みパッチを当て始めた。
 
 ## Bitcoin Core への貢献
-ガージックは、コミット数で[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)に次ぐ Bitcoin Core 第 3 位の貢献者となった。リポジトリへのコミットアクセスを得た最初期の開発者の一人でもある。最初の大きな仕事は、新規ユーザーが最も苦しむ部分に向けられた——彼はブロックチェーンの初回ダウンロードを書き直し、その速度を [10〜100 倍](/BitcoinArchive/ja/entries/aftermath/2018-10-29-jeff-garzik-retrospective/)に引き上げた。
+ガージックは、コミット数で[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)に次ぐ Bitcoin Core 第 3 位の貢献者となった。リポジトリへのコミットアクセスを得た最初期の開発者の一人でもある。最初の大きな仕事は、新規ユーザーが最も苦しむ部分に向けられた——彼はブロックチェーンの初回ダウンロードを書き直し、その速度を [10〜100 倍](/BitcoinArchive/ja/entries/aftermath/2018-10-29-jeff-garzik-retrospective/)に引き上げた――もっとも、同時期の[v0.3.18 の SourceForge リリースノート](/BitcoinArchive/ja/entries/aftermath/2010-12-08-bitcoin-v0.3.18-released/)では、同種の作業について「初期ブロックダウンロードを若干高速化する」程度の控えめな表現にとどまっている。
 
 ## cpuminer
 ガージックは、ビットコイン用の広く使用されたオープンソース CPU マイニングソフトウェアである cpuminer を作成した。このツールは最初のスタンドアロンマイニングアプリケーションの一つで、フルビットコインクライアントを実行せずにマイニングを可能にした。

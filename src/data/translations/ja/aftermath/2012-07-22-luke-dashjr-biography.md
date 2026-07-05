@@ -20,6 +20,7 @@ tags:
   - "historic"
 relatedEntries:
   - forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re
+  - aftermath/2011-07-30-len-sassaman-blockchain-tribute
 translationStatus: complete
 ---
 
@@ -44,7 +45,7 @@ timeline
 ダッシュジュニアは bitcoin/bitcoin リポジトリーに 2012年7月22日、bitcoin-qt のウィンドウタイトルに関する [PR #1620](/BitcoinArchive/ja/entries/forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re/) を開く形で登場する。2010年代初頭から継続的に Bitcoin Core の貢献者であり、パッチのレビュー、改善の提案、そしてビットコインの原意と一致しないと判断した変更への反論を続けてきた。2013年3月、v0.8 のコンセンサスバグによってビットコインが 2 つの非互換なチェーンに分裂した際、彼はノードを v0.7 互換の挙動に戻してチェーンを再統合するコミュニティの対応を調整する役割を担った。
 
 ## Bitcoin Knots
-ダッシュジュニアは **Bitcoin Knots** を維持している。これは Bitcoin Core の派生クライアントで、追加の設定可能性──特にメンプールのフィルタリングと `OP_RETURN` データ搬送出力に対する制限──を備える。Bitcoin Knots は、ビットコインノードが非金融データをどの程度中継することを許容すべきかというコミュニティ内の継続的な議論のなかで、くり返し参照される位置を占めてきた。
+ダッシュジュニアは **Bitcoin Knots** を維持している。これは Bitcoin Core の派生クライアントで、追加の設定可能性──特にメンプールのフィルタリングと `OP_RETURN` データ搬送出力に対する制限──を備える。Bitcoin Knots は、ビットコインノードが非金融データをどの程度中継することを許容すべきかというコミュニティ内の継続的な議論のなかで、くり返し参照される位置を占めてきた。この論争には先例があり、`OP_RETURN` 制定前の 2011 年にダン・カミンスキーがレン・サッサマンを追悼して[ビットコインブロックチェーンに埋め込んだデータ刻印技法](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/)はその一例である。
 
 ## Ocean マイニングプール
 2023年、ダッシュジュニアは **Ocean** マイニングプールを共同創業した。掲げた目的は、ブロックテンプレートを透明に公開し、マイナーがマイニングするトランザクション集合に対する制御権を持てるようにすることで、ビットコインのマイニングを分散化することである。

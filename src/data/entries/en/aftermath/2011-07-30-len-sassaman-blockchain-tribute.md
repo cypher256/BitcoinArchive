@@ -27,13 +27,14 @@ relatedEntries:
   - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
   - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
+  - aftermath/2012-07-22-luke-dashjr-biography
 ---
 
 [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) — cypherpunk, cryptographer, lead developer of the Mixmaster anonymous remailer, and PhD candidate at KU Leuven — [died on July 3, 2011](/BitcoinArchive/participants/len-sassaman/). His widow, the cryptographer and researcher Meredith Patterson, confirmed the death was suicide.
 
 Within weeks, [Dan Kaminsky](/BitcoinArchive/participants/dan-kaminsky/) — the security researcher who had earlier [reviewed the Bitcoin v0.1 code and concluded "either there's a team of people who worked on this, or this guy is a genius"](/BitcoinArchive/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/) — embedded an ASCII-art memorial to Sassaman directly into the Bitcoin blockchain. The tribute was announced on July 30, 2011, and publicly revealed at the Black Hat USA 2011 conference in Las Vegas.
 
-According to the Wikipedia citation and the Black Hat USA 2011 presentation materials, the inscription was encoded across transaction outputs so that the data persists in every full Bitcoin node's copy of the ledger. The technique pre-dates the formal `OP_RETURN` mechanism, which was added to Bitcoin Core in 2014 as a sanctioned way to embed small payloads. Specific block heights, transaction hashes, and the full inscribed ASCII-art content have not been independently verified by this archive; the technique is described at the level the secondary sources support.
+According to the Wikipedia citation and the Black Hat USA 2011 presentation materials, the inscription was encoded across transaction outputs so that the data persists in every full Bitcoin node's copy of the ledger. The technique pre-dates the formal `OP_RETURN` mechanism, which was added to Bitcoin Core in 2014 as a sanctioned way to embed small payloads. That later mechanism became the focus of a recurring restriction fight — documented in [Luke Dashjr's biography](/BitcoinArchive/entries/aftermath/2012-07-22-luke-dashjr-biography/), whose Bitcoin Knots client filters OP_RETURN-style data-carrying outputs more aggressively than Bitcoin Core. Specific block heights, transaction hashes, and the full inscribed ASCII-art content have not been independently verified by this archive; the technique is described at the level the secondary sources support.
 
 ## Context
 

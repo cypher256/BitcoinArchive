@@ -34,12 +34,13 @@ relatedEntries:
   - aftermath/2016-05-02-craig-wright-biography
   - aftermath/2024-03-14-copa-v-wright-ruling
   - aftermath/2009-05-01-martti-malmi-biography
+  - aftermath/2011-02-22-satoshi-final-email-to-malmi
 translationStatus: complete
 ---
 
 2024年2月21日、英国高等法院での COPA 対クレイグ・ライト裁判の第 13日、[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)がビデオリンクで証言した。
 
-マルミ — bitcoin.org の最初の管理者であり、サトシの最初期の協力者 — は、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)との 260 通のメールを証拠として提出した。メールは合計約 14 万語に及び、2009年5月から 2011年2月までの期間をカバーしていた。
+マルミ — bitcoin.org の最初の管理者であり、サトシの最初期の協力者 — は、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)との 260 通のメールを証拠として提出した。メールは合計約 14 万語に及び、2009年5月から 2011年2月までの期間をカバーしていた。その中には、[マルミアーカイブにおけるサトシ最後のメール](/BitcoinArchive/ja/entries/aftermath/2011-02-22-satoshi-final-email-to-malmi/)も含まれており、2011年2月にメーリングリストの管理者パスワードをギャビン・アンドレセンへ引き継ぐ内容で、マルッティも同報されていた。
 
 マルミは法廷で述べた：
 

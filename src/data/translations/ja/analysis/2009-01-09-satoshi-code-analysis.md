@@ -44,6 +44,7 @@ relatedEntries:
   - "design/2009-01-03-bitcoin-system-design-overview"
   - "design/2009-01-03-bitcoin-architecture-evolution"
   - "analysis/2009-01-09-bitcoin-time-warp-attack"
+  - "aftermath/2010-12-15-bitcoin-v0.3.19-released"
 inlineLinkKeywords:
   - "サトシのコーディングスタイル"
   - "コーディングスタイルの指紋"
@@ -65,7 +66,7 @@ translationStatus: complete
 - **コミット活動期間（SVN）:** 420日間（2009年10月〜2010年12月）、109日間にコミット
 - **コーディングスタイル:** ハンガリアン記法の変種、四重スラッシュ（`////`）TODO マーカー、独自マクロ（`loop`、`foreach`、`CRITICAL_BLOCK`）、Windows 中心開発の一貫した使用（時系列の開発環境記録は[サトシの Windows 専一の開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)、配布・ツール不在の読解は[ビットコイン v0.1 の配布・開発環境異例分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies/)）
 - **コード成長:** 14ヶ月で 19,901 行→31,909 行（+60%）
-- **最終活動:** セキュリティ強化、DoS 対策、中央集権的セーフモードの除去 — プロジェクトの引き渡しを準備する者の特徴的な作業
+- **最終活動:** セキュリティ強化、DoS 対策、中央集権的セーフモードの除去 — プロジェクトの引き渡しを準備する者の特徴的な作業であり、この組み合わせはサトシ最後のリリースとなった[ビットコイン v0.3.19](/BitcoinArchive/ja/entries/aftermath/2010-12-15-bitcoin-v0.3.19-released/)で実際に出荷された変更そのものである
 
 ## 3. 75日間の空白（2010年3月〜5月）
 

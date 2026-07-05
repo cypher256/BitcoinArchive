@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2009-05-01-martti-malmi-biography
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
   - aftermath/2011-02-22-satoshi-final-email-to-malmi
+  - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
 ---
 
 In August 2011, the Bitcoin Forum completed its migration from its original location at bitcoin.org/smf to the independent domain bitcointalk.org.
@@ -44,4 +45,4 @@ Satoshi transferred administrative control of the forum to Theymos (Michael Marq
 The move to bitcointalk.org was driven by the need to establish the forum as an independent entity, separate from the bitcoin.org domain. All existing posts, threads, and user accounts were preserved in the migration. The forum continued to use SMF software and maintained the same structure and community.
 
 ## Legacy
-Satoshi Nakamoto's 575 forum posts, from November 2009 to December 2010, are preserved on the site, alongside the earliest public discussions of Bitcoin mining and trading and the first known commercial Bitcoin transaction — [the purchase of two pizzas for 10,000 BTC by Laszlo Hanyecz on May 22, 2010](/BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/).
+Satoshi Nakamoto's 575 forum posts, from November 2009 to December 2010, are preserved on the site, alongside the earliest public discussions of Bitcoin mining and trading and the first known commercial Bitcoin transaction — [the purchase of two pizzas for 10,000 BTC by Laszlo Hanyecz on May 22, 2010](/BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/). Stefan Thomas's timestamp analysis, cited in [Wired's 2011 feature on Bitcoin's rise and fall](/BitcoinArchive/entries/aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin/), had put the count at "500-plus."

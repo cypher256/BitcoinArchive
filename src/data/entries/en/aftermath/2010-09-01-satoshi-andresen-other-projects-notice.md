@@ -25,6 +25,7 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2010-06-11-gavin-andresen-biography
+  - aftermath/2010-09-07-bitcoin-v0.3.12-released
   - aftermath/2010-12-03-handover-to-gavin
   - aftermath/2010-12-12-satoshi-handover-to-andresen
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
@@ -38,7 +39,7 @@ According to Wikipedia's account of [Gavin Andresen](/BitcoinArchive/participant
 
 — [Wikipedia — Gavin Andresen](https://en.wikipedia.org/wiki/Gavin_Andresen)
 
-This September 2010 communication is the earliest documented signal of Satoshi's intent to step back from active leadership of Bitcoin. The exact date within September is not preserved in the public record, and the message itself has not been published verbatim. The fact is referenced in Andresen's later interviews; the [biographical entry on Andresen](/BitcoinArchive/participants/gavin-andresen/) in this archive likewise notes that "by approximately September–October 2010, Satoshi granted him commit access to the Bitcoin source code repository on SourceForge, along with the network alert key."
+This September 2010 communication is the earliest documented signal of Satoshi's intent to step back from active leadership of Bitcoin. The exact date within September is not preserved in the public record, and the message itself has not been published verbatim. The fact is referenced in Andresen's later interviews; the [biographical entry on Andresen](/BitcoinArchive/participants/gavin-andresen/) in this archive likewise notes that "by approximately September–October 2010, Satoshi granted him commit access to the Bitcoin source code repository on SourceForge, along with the network alert key." Satoshi nonetheless kept shipping software under his own name for months afterward, including [Bitcoin v0.3.12](/BitcoinArchive/entries/aftermath/2010-09-07-bitcoin-v0.3.12-released/), released that same September.
 
 The September signal preceded the more visible transition events by three months:
 

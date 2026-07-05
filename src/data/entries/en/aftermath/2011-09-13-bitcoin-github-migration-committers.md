@@ -44,6 +44,7 @@ relatedEntries:
   - "aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012"
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
+  - "aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency"
 ---
 
 The Bitcoin GitHub repository (`bitcoin/bitcoin`) was created on **December 19, 2010**, while the [SourceForge SVN repository](/BitcoinArchive/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/) was still in active use. For approximately nine months, development occurred in parallel across both platforms. On September 13, 2011, [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) made the final SVN commit (r252) with the message: "Development has moved to github."
@@ -77,6 +78,6 @@ With Satoshi's departure ([last known email: April 26, 2011](/BitcoinArchive/ent
 
 **Wladimir van der Laan (laanwj)** initially created a separate `bitcoin-qt` repository (May 15, 2011) for the Qt-based GUI client, which was later merged into the main repository. He received commit access to `bitcoin/bitcoin` on June 5, 2011, and eventually succeeded Gavin Andresen as lead maintainer in 2014.
 
-**Nils Schneider (tcatm)** had the shortest sustained access among those granted in 2011, with his access ending on May 31, 2012.
+**Nils Schneider (tcatm)** had the shortest sustained access among those granted in 2011, with his access ending on May 31, 2012. Schneider had received that GitHub commit access on September 19, 2011; eight days later, on September 27, 2011, he authored the `no-cryptopp` branch's substantive commit that [removed Bitcoin's Crypto++ SHA-256 dependency in favor of OpenSSL](/BitcoinArchive/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/), merged into the main repository by Andresen on October 5, 2011.
 
 **The transition of authority:** Satoshi had entrusted the project to Gavin Andresen alone. As development grew, Andresen distributed commit access to capable developers — a gradual decentralization of the development process itself. By the end of 2011, Bitcoin Core had six developers with commit access, compared to the four who had ever committed to the SVN repository.

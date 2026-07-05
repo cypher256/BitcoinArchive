@@ -25,6 +25,7 @@ secondarySources:
     url: "https://web.archive.org/web/20260219032610/https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
 relatedEntries:
   - aftermath/2009-01-15-trammell-to-satoshi-mitm-attack
+  - aftermath/2011-04-20-forbes-crypto-currency
 ---
 
 Satoshi warned Malmi about how Bitcoin's privacy properties were being described on the website and in promotional materials:
@@ -39,6 +40,6 @@ Satoshi elaborated on the potential consequences of overpromising privacy:
 <!-- audit:quote-skip -->
 > If someone digs through the transaction history and starts exposing information people thought was anonymous, the backlash will be much worse if we haven't prepared expectations by warning in advance that you have to take precautions.
 
-Satoshi drew the line between anonymity (complete identity concealment) and pseudonymity (an alternate identity that analysis can still link back to a real one) — and the warning held up: blockchain analysis became a major industry, and many early users who assumed they were anonymous had their transactions traced.
+Satoshi drew the line between anonymity (complete identity concealment) and pseudonymity (an alternate identity that analysis can still link back to a real one) — and the warning held up: blockchain analysis became a major industry, and many early users who assumed they were anonymous had their transactions traced. That same misplaced assumption resurfaced the following year in the mainstream press — see [Forbes' 2011 profile of Bitcoin, which called it potentially untraceable, an assessment its author later acknowledged was incorrect](/BitcoinArchive/entries/aftermath/2011-04-20-forbes-crypto-currency/).
 
 The note about "sending by IP" refers to an early Bitcoin feature where transactions could be sent directly to an IP address — a feature [Dustin Trammell had flagged as vulnerable to man-in-the-middle interception](/BitcoinArchive/entries/aftermath/2009-01-15-trammell-to-satoshi-mitm-attack/) a year and a half earlier. As the network shifted to address-based transactions, the privacy model changed in ways Satoshi felt needed to be clearly communicated.

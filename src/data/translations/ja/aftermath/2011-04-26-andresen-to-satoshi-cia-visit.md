@@ -30,6 +30,7 @@ relatedEntries:
   - correspondence/gavin-andresen/2011-04-26-satoshi-alert-key-email
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2010-06-11-gavin-andresen-biography
+  - aftermath/2011-04-20-forbes-crypto-currency
 quotes:
   - id: "q1"
     person: "Gavin Andresen"
@@ -40,7 +41,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-[サトシの「アラートキー」メール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)への返信で、ギャビン・アンドレセンはいくつかの点に言及した。Forbes の記事を読んだことを認め、「海賊通貨」という枠組みが問題であることに同意した。他の開発貢献者にもっと功績を認めるというサトシの提案を受け入れた。
+[サトシの「アラートキー」メール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)への返信で、ギャビン・アンドレセンはいくつかの点に言及した。[Forbes の「Crypto Currency」記事](/BitcoinArchive/ja/entries/aftermath/2011-04-20-forbes-crypto-currency/)を読んだことを認め、「海賊通貨」という枠組みが問題であることに同意した。他の開発貢献者にもっと功績を認めるというサトシの提案を受け入れた。
 
 アンドレセンはアラートキーの責任も引き受けたが、それを共有する信頼できる受け取り手の特定について懸念を表明した。
 

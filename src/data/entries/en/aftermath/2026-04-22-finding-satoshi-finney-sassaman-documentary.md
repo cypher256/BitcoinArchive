@@ -44,6 +44,7 @@ relatedEntries:
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+  - analysis/2008-08-20-satoshi-self-statements
 translationStatus: complete
 ---
 
@@ -55,7 +56,7 @@ The film's central claim is that Satoshi Nakamoto fronted a collaboration betwee
 
 ## Lines of evidence presented
 
-- **Activity-window analysis by Alyssa Blackburn.** Data scientist Alyssa Blackburn analyzed online activity histories of the principal suspects and reportedly found a 6am–10pm PST posting window that fits the Finney + Sassaman pair more closely than any single individual in the field.
+- **Activity-window analysis by Alyssa Blackburn.** Data scientist Alyssa Blackburn analyzed online activity histories of the principal suspects and reportedly found a 6am–10pm PST posting window that fits the Finney + Sassaman pair more closely than any single individual in the field. A separate statistical read on Satoshi's posting timestamps — cited in [the self-statements inventory](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/) — reaches a related but more general conclusion (hours falling outside a Japan timezone) without specifying a PST window, and this entry does not adjudicate between the two readings.
 - **Family testimony.** Hal's widow Fran Finney conceded in the film that her husband "probably played a role in Bitcoin's creation." Sassaman's widow Meredith L. Patterson also appears on record.
 - **Motivation profile by Kathleen Puckett.** Former FBI profiler Kathleen Puckett (known for her Unabomber investigation work) contributed a motivational reading supporting the two-person framing.
 

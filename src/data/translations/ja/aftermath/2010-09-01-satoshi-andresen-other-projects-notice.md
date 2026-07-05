@@ -25,6 +25,7 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2010-06-11-gavin-andresen-biography
+  - aftermath/2010-09-07-bitcoin-v0.3.12-released
   - aftermath/2010-12-03-handover-to-gavin
   - aftermath/2010-12-12-satoshi-handover-to-andresen
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
@@ -39,7 +40,7 @@ translationStatus: complete
 
 — [Wikipedia — Gavin Andresen](https://en.wikipedia.org/wiki/Gavin_Andresen)
 
-2010 年 9 月のこの通知は、サトシがビットコインの第一線から退く意思を示した公開記録上もっとも早いシグナルである。9 月のうち正確な日付は公開記録上保存されておらず、メッセージ本文も逐語では公開されていない。本事実はギャビンの後年のインタビューで言及されており、本アーカイブの[ギャビン・アンドレセン伝](/BitcoinArchive/ja/participants/gavin-andresen/)も同様に「2010 年 9 月から 10 月頃、サトシはギャビンに SourceForge のコードリポジトリへのコミット権と、ネットワーク警報鍵を付与した」と記している。
+2010 年 9 月のこの通知は、サトシがビットコインの第一線から退く意思を示した公開記録上もっとも早いシグナルである。9 月のうち正確な日付は公開記録上保存されておらず、メッセージ本文も逐語では公開されていない。本事実はギャビンの後年のインタビューで言及されており、本アーカイブの[ギャビン・アンドレセン伝](/BitcoinArchive/ja/participants/gavin-andresen/)も同様に「2010 年 9 月から 10 月頃、サトシはギャビンに SourceForge のコードリポジトリへのコミット権と、ネットワーク警報鍵を付与した」と記している。それでもサトシは、その後も数か月にわたり自らの名でソフトウェアをリリースし続けており、同じ 9 月には[ビットコイン v0.3.12](/BitcoinArchive/ja/entries/aftermath/2010-09-07-bitcoin-v0.3.12-released/)も公開されている。
 
 9 月のシグナルは、より目に見える 12 月の移行イベント群に 3 か月先行していた:
 

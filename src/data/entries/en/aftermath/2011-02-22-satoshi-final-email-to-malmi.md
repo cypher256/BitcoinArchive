@@ -34,6 +34,7 @@ relatedEntries:
   - aftermath/2009-05-01-martti-malmi-biography
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
   - aftermath/2011-08-01-bitcointalk-org-migration
+  - aftermath/2024-02-21-copa-trial-malmi-testimony
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -55,4 +56,4 @@ This was among the last known communications from Satoshi before his complete wi
 
 The Satoshi-Malmi correspondence, spanning from May 2009 to February 2011, encompasses approximately 260 emails and represents one of the most extensive records of direct communication with Bitcoin's creator. The correspondence covers nearly the entire period of Satoshi's active involvement with Bitcoin, from the early days when there were only a handful of users to the point where the project had grown into a functioning open-source community with multiple developers.
 
-Malmi kept these emails private for over a decade, explaining in 2024 that he "did not feel comfortable sharing private correspondence earlier" but decided to publish them for the COPA v. Wright trial in the UK where he served as a witness. The full archive was published on GitHub on February 23, 2024.
+Malmi kept these emails private for over a decade, explaining in 2024 that he "did not feel comfortable sharing private correspondence earlier" but decided to publish them for the COPA v. Wright trial in the UK where he served as a witness. The full archive was published on GitHub on February 23, 2024. Malmi's video testimony explaining that decision is recounted in [his COPA v. Wright trial testimony](/BitcoinArchive/entries/aftermath/2024-02-21-copa-trial-malmi-testimony/).

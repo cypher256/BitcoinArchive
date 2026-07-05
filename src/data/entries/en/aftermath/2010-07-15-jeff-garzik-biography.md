@@ -36,6 +36,7 @@ relatedEntries:
   - aftermath/2018-10-29-jeff-garzik-retrospective
   - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius
   - aftermath/2010-08-15-value-overflow-incident
+  - aftermath/2010-12-08-bitcoin-v0.3.18-released
 ---
 
 In July 2010, a Red Hat Linux kernel developer named Jeff Garzik read a [Slashdot post about Bitcoin](/BitcoinArchive/entries/aftermath/2010-07-11-slashdot-bitcoin-article/), pulled the codebase, and started sending patches. Within months he had become the top non-Satoshi commit-count contributor, ranking just behind Satoshi and [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/). He wrote cpuminer (one of the first standalone Bitcoin mining tools), authored multiple BIPs including the [BIP 100 dynamic-block-size proposal](https://github.com/bitcoin/bips), and co-founded the enterprise-blockchain firm Bloq in 2015.
@@ -46,7 +47,7 @@ Garzik studied computer science at Georgia Institute of Technology and built his
 The [July 2010 Slashdot post](/BitcoinArchive/entries/aftermath/2010-07-11-slashdot-bitcoin-article/) that reached Garzik covered Bitcoin's v0.3 release — a traffic surge early developers later called "the Great Slashdotting," and the moment a wave of programmers first found the project. Garzik was one of them, and his kernel background let him start reading and patching the C++ code right away.
 
 ## Bitcoin Core Contributions
-Garzik became one of the top three contributors to Bitcoin Core by commit count — behind only [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) — and was among the earliest developers granted commit access to the repository. His first major work went after the part of the client that hurt new users most: he rewrote the initial blockchain download to run [10x to 100x faster](/BitcoinArchive/entries/aftermath/2018-10-29-jeff-garzik-retrospective/).
+Garzik became one of the top three contributors to Bitcoin Core by commit count — behind only [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) — and was among the earliest developers granted commit access to the repository. His first major work went after the part of the client that hurt new users most: he rewrote the initial blockchain download to run [10x to 100x faster](/BitcoinArchive/entries/aftermath/2018-10-29-jeff-garzik-retrospective/) — though the contemporaneous [v0.3.18 SourceForge release notes](/BitcoinArchive/entries/aftermath/2010-12-08-bitcoin-v0.3.18-released/) describe this same category of work more modestly, as speeding up the initial block download only "a little."
 
 ## cpuminer
 Garzik created cpuminer, widely used open-source software for CPU mining Bitcoin. The tool was one of the first standalone mining applications, enabling users to mine without running the full Bitcoin client.

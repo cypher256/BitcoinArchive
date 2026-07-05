@@ -33,6 +33,7 @@ relatedEntries:
   - aftermath/2012-05-01-bitcoin-magazine-launch
   - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
+  - aftermath/2011-03-17-pieter-wuille-biography
 ---
 
 2011 年、17 歳のロシア系カナダ人ヴィタリック・ブテリンは、ビットコインを購入することも採掘することもできなかったので、代わりに記事を書いた —— ミハイ・アリシエの『Bitcoin Weekly』に 1 記事あたり 5 BTC（当時のレートで約 3.50 米ドル）で寄稿。執筆経験を経て[『Bitcoin Magazine』](/BitcoinArchive/ja/entries/aftermath/2012-05-01-bitcoin-magazine-launch/) を 2012 年に共同創刊し、2014 年まで数十本の長文記事をビットコインのプロトコル機構について執筆した。2013 年後半にイーサリアムのホワイトペーパーを執筆、2015 年 7 月 30 日にネットワークのメインネットを 21 歳で立ち上げた。
@@ -47,7 +48,7 @@ relatedEntries:
 
 ブテリンの Bitcoin Weekly への寄稿は、ミハイ・アリシエとの本格的な協業へとつながった。両者は『Bitcoin Magazine』を共同創設する ─ 当初オンラインで開始し、初の印刷版は 2012 年 5 月に発行された。ブテリンは 2014 年まで同誌の主筆を務め、ビットコインプロトコルの仕組み、採掘経済の分析、アルトコインプロジェクトの紹介 (Mastercoin や初期のカラードコインシステムを含む)、ブロックサイズ問題に関する論評、ビットコイン開発者へのインタビュー等、長文記事を多数執筆した。`secondarySources` にリンクする Bitcoin Magazine の著者アーカイブが彼の記事一覧を保存している。
 
-ブテリンは同期間にオープンソースのビットコインソフトウェアにも寄稿した。最も引用されるのが **pybitcointools** (GitHub `vbuterin/pybitcointools`) ─ ビットコイン取引の構築、ECDSA 署名、BIP32 階層的決定性ウォレット、マークルツリーのプリミティブを実装した純 Python ライブラリ。2013 ~ 2015 年期に教育者や小規模ツール開発者の間で広く用いられ、現在もビットコインプロトコル学習の参考実装として残っている。
+ブテリンは同期間にオープンソースのビットコインソフトウェアにも寄稿した。最も引用されるのが **pybitcointools** (GitHub `vbuterin/pybitcointools`) ─ ビットコイン取引の構築、ECDSA 署名、BIP32 階層的決定性ウォレット、マークルツリーのプリミティブを実装した純 Python ライブラリ。BIP32 規格そのものを策定したのはピーター・ウィーユであり、その経緯は[ウィーユの伝記](/BitcoinArchive/ja/entries/aftermath/2011-03-17-pieter-wuille-biography/)に詳しい。2013 ~ 2015 年期に教育者や小規模ツール開発者の間で広く用いられ、現在もビットコインプロトコル学習の参考実装として残っている。
 
 BitcoinTalk のプロフィール (`secondarySources` にリンク、ハンドル `vbuterin`) には 2011 年 10 月以降の投稿が記録されており、2014 年まで活動が集中している。
 

@@ -52,6 +52,7 @@ relatedEntries:
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2014-03-07-satoshi-p2p-foundation-return
   - aftermath/2009-07-22-bitcoin-exchange-proposal
+  - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
 inlineLinkKeywords:
   - "Satoshi's self-statements"
   - "self-statements inventory"
@@ -146,7 +147,7 @@ What none of D1–D11 establishes: a calendar start date with month precision, a
 The three claims that locate Satoshi as a person — Japanese, born April 5, 1975, living in Japan — appear together on a single artifact: the P2P Foundation profile. They appear nowhere else in the documented record. The widespread consensus that this set is fictitious rests on three independent counter-observations:
 
 - **Language**: Satoshi's English shows consistent British/Commonwealth conventions (favouring "favour," "colour"; "maths" rather than "math"), inconsistent with native-Japanese composition.
-- **Posting timestamps**: Statistical analyses (most notably by Doncho Karaivanov at *Chain Bulletin*) place Satoshi's active hours far outside what would be natural for someone in Japan time.
+- **Posting timestamps**: Statistical analyses (most notably by Doncho Karaivanov at *Chain Bulletin*) place Satoshi's active hours far outside what would be natural for someone in Japan time. A separate posting-timestamp analysis — Alyssa Blackburn's activity-window study cited in [the Finding Satoshi documentary entry](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) — narrows this further to a specific 6am–10pm PST window said to fit a US-based Finney + Sassaman pairing; this inventory does not adjudicate between the two readings.
 - **Behavioral pattern**: The profile fields are the *only* identity-locating claims in the entire corpus. A person living a normal life in the claimed country and age bracket would typically leak more incidental detail across years of correspondence; Satoshi did not.
 
 The profile claims are best read as **declared identity material that the rest of the record does not confirm** — not as "Satoshi's actual biography."

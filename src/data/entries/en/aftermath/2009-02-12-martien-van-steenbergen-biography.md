@@ -8,7 +8,7 @@ author: "Martien van Steenbergen"
 participants:
   - name: "Martien van Steenbergen"
     slug: "martien-van-steenbergen"
-description: "Dutch agile coach and AardRock founder whose questions on the P2P Research list prompted Satoshi to first publicly state Bitcoin's fixed supply of 21,000,000 coins."
+description: "Dutch agile coach and AardRock founder whose questions on the P2P Research list prompted Satoshi to confirm, in direct response, the 21,000,000-coin supply cap he had first stated publicly five weeks earlier."
 isSatoshi: false
 tags:
   - "martien-van-steenbergen"

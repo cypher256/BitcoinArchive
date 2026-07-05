@@ -27,11 +27,12 @@ secondarySources:
 relatedEntries:
   - forum/bitcointalk/topic-183/2010-06-11-gavin-andresen-msg1488
   - aftermath/2010-06-11-gavin-andresen-biography
+  - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
 ---
 
 Gavin Andresen, a software developer based in Amherst, Massachusetts, discovered Bitcoin in May 2010, roughly eighteen months after Satoshi published [the whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/). He began corresponding with Satoshi by email and on the Bitcointalk forum.
 
-After chatting with Satoshi about Bitcoin and its potential, Andresen identified a key barrier to adoption: new users needed a way to obtain coins without having to mine them. His solution was the Bitcoin Faucet -- a website that gave away free bitcoins (initially 5 BTC per visitor) to anyone who completed a CAPTCHA.
+After chatting with Satoshi about Bitcoin and its potential, Andresen identified a key barrier to adoption: new users needed a way to obtain coins without having to mine them. His solution was the Bitcoin Faucet -- a website that gave away free bitcoins (initially 5 BTC per visitor) to anyone who completed a CAPTCHA. Wired's 2011 retrospective on Bitcoin's rise and fall adds a funding detail absent here — reporting that Andresen bought 10,000 bitcoins for $50 to seed the giveaway; see [Wired's feature on Bitcoin's rise and fall](/BitcoinArchive/entries/aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin/) for that account.
 
 Andresen announced his self-described "really dumb" idea on the Bitcointalk forum on June 11, 2010, and over the faucet's life gave away roughly 19,700 BTC — for many newcomers, their first coins, obtained without having to mine.
 

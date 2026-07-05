@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2009-05-01-martti-malmi-biography
   - aftermath/2011-02-22-satoshi-final-email-to-malmi
   - aftermath/2011-08-01-bitcointalk-org-migration
+  - aftermath/2010-05-22-bitcoin-pizza-day
 translationStatus: complete
 ---
 <!-- tone-skip -->
@@ -40,7 +41,7 @@ translationStatus: complete
 
 マルミは当時 20 歳のヘルシンキ工科大学のコンピューターサイエンス学生で、2009 年 5 月以降サトシの最も親密な協力者だった。彼はビットコインの Linux 移植、`bitcoin.org` ウェブサイトの構築、FAQ 執筆、BitcoinTalk フォーラムの創設を行った。
 
-この取引でビットコイン初の実世界価格が確立された — 1BTC あたり約 0.001 ドル。
+この取引でビットコイン初の実世界価格が確立された — 1BTC あたり約 0.001 ドル。この約 7 か月後に起きた[ラズロ・ハニエツによるビットコインピザデーの購入](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)――ビットコインによる初の物理的商品の購入として知られる――とは異なり、マルミの取引はあくまで為替レートに基づく交換であり、商品との交換ではなかった。
 
 2025年の 10 万ドル超の価格では、5,050 ビットコインは 5 億ドル以上の価値がある。
 <!-- /tone-skip -->

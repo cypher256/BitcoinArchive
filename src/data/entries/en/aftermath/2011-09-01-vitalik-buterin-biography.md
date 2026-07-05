@@ -33,6 +33,7 @@ relatedEntries:
   - aftermath/2012-05-01-bitcoin-magazine-launch
   - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
+  - aftermath/2011-03-17-pieter-wuille-biography
 ---
 
 In 2011, a 17-year-old Russian-Canadian named Vitalik Buterin couldn't afford to buy or mine bitcoin, so he wrote articles for it instead — five bitcoins per article (roughly $3.50 each at the time) at Mihai Alisie's *Bitcoin Weekly*. The writing led him to co-found [*Bitcoin Magazine*](/BitcoinArchive/entries/aftermath/2012-05-01-bitcoin-magazine-launch/) in 2012 and to author dozens of long-form pieces on Bitcoin's protocol mechanics through 2014. In late 2013 he wrote the Ethereum whitepaper, launching the network's mainnet on July 30, 2015 at age 21.
@@ -47,7 +48,7 @@ According to Buterin's own published accounts (reproduced across many interviews
 
 Buterin's writing for Bitcoin Weekly led to a deeper collaboration with Mihai Alisie. The two co-founded *Bitcoin Magazine* — initially online, with the first print issue in May 2012. Buterin served as lead writer for the magazine through 2014, producing dozens of long-form articles on Bitcoin protocol mechanics, mining-economics analyses, profiles of altcoin projects (including Mastercoin and other early coloured-coin systems), commentary on the block-size question, and interviews with Bitcoin developers. The Bitcoin Magazine author archive linked under `secondarySources` preserves his article catalogue.
 
-Buterin also contributed open-source Bitcoin software during this period. His most-cited contribution is **pybitcointools** (`vbuterin/pybitcointools` on GitHub) — a pure-Python library implementing Bitcoin transaction construction, ECDSA signatures, BIP32 hierarchical deterministic wallets, and Merkle-tree primitives. The library was widely used by educators and small-scale tooling builders during the 2013–2015 era and remains a reference for people learning the Bitcoin protocol.
+Buterin also contributed open-source Bitcoin software during this period. His most-cited contribution is **pybitcointools** (`vbuterin/pybitcointools` on GitHub) — a pure-Python library implementing Bitcoin transaction construction, ECDSA signatures, BIP32 hierarchical deterministic wallets, and Merkle-tree primitives. The BIP32 standard itself was authored by Pieter Wuille — see [his biography](/BitcoinArchive/entries/aftermath/2011-03-17-pieter-wuille-biography/) for the standard's origin. The library was widely used by educators and small-scale tooling builders during the 2013–2015 era and remains a reference for people learning the Bitcoin protocol.
 
 His BitcoinTalk profile (linked under `secondarySources`, handle `vbuterin`) shows posts beginning in October 2011 and concentrated activity through 2014.
 

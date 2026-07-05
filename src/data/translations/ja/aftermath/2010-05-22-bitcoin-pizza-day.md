@@ -36,6 +36,7 @@ relatedEntries:
   - aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback
   - aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
+  - aftermath/2009-10-12-martti-malmi-first-btc-sale
 translationStatus: complete
 quotes:
   - id: "q1"
@@ -62,7 +63,7 @@ quotes:
 <!-- speaker: Laszlo Hanyecz -->
 > 「1 万ビットコインでピザの取引に成功したことを報告したい」
 
-当時の 10,000 BTC は約 41 ドルだった。これはビットコインによる最初の物理的商品の購入として知られている。それ以前のビットコイン取引はデジタルのみ — 為替レート計算や P2P 送金 — だった。ピザ取引は、ビットコインが実世界の交換媒体として機能できることを証明した。
+当時の 10,000 BTC は約 41 ドルだった。これはビットコインによる最初の物理的商品の購入として知られている。それ以前のビットコイン取引はデジタルのみ — 為替レート計算や P2P 送金 — にとどまっており、たとえば[マルッティ・マルミが 2009年10月に 5,050 BTC を 5.02 ドルで売却した、ビットコイン初の法定通貨交換](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)もその一例である。ピザ取引は、ビットコインが実世界の交換媒体として機能できることを証明した。
 
 ハニエツは [GPU マイニング](/BitcoinArchive/ja/entries/aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback/)の先駆者であり、夏の間もビットコインでピザを注文し続け、合計約 79,000 BTC を使った。1 万 BTC が数千万ドルの価値を持つようになった後年、Cointelegraph の取材で当時の取引を後悔しているか問われた際、ハニエツはこう答えた。
 

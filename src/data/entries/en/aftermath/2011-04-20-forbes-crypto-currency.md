@@ -24,6 +24,8 @@ relatedEntries:
   - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
+  - aftermath/2011-04-26-andresen-to-satoshi-cia-visit
+  - aftermath/2010-07-06-anonymity-and-pseudonymity
 ---
 
 *From Forbes, published online April 20, 2011 (print edition May 9, 2011):*
@@ -39,6 +41,6 @@ relatedEntries:
 
 The article described Bitcoin developers as Gavin's "underground cadre of cypherpunks" working on anonymous money. [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) reportedly objected to this characterization.
 
-The article also described Bitcoin as potentially untraceable — an assessment Greenberg later acknowledged was incorrect, as cryptocurrency proved to be extremely traceable through blockchain analysis.
+The article also described Bitcoin as potentially untraceable — an assessment Greenberg later acknowledged was incorrect, as cryptocurrency proved to be extremely traceable through blockchain analysis. Satoshi himself had anticipated this months earlier, cautioning that Bitcoin was pseudonymous rather than truly anonymous — see [Satoshi's July 2010 warning to Martti Malmi on anonymity and pseudonymity](/BitcoinArchive/entries/aftermath/2010-07-06-anonymity-and-pseudonymity/).
 
-*[Editor: This article ran in the week leading up to Satoshi's disappearance from public communication in late April 2011. The mainstream media attention it generated, and the association with illegal activity, may have contributed to Satoshi's decision to withdraw. In his [final known email to Gavin Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) on April 26, 2011, Satoshi wrote: "I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle."]*
+*[Editor: This article ran in the week leading up to Satoshi's disappearance from public communication in late April 2011. The mainstream media attention it generated, and the association with illegal activity, may have contributed to Satoshi's decision to withdraw. In his [final known email to Gavin Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) on April 26, 2011, Satoshi wrote: "I wish you wouldn't keep talking about me as a mysterious shadowy figure, the press just turns that into a pirate currency angle." Days later, in his own reply about the CIA visit disclosure, Gavin Andresen likewise agreed this "pirate currency" framing was problematic — see [Andresen's reply to Satoshi's final email](/BitcoinArchive/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/) for that exchange.]*

@@ -30,6 +30,7 @@ relatedEntries:
   - correspondence/gavin-andresen/2011-04-26-satoshi-alert-key-email
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2010-06-11-gavin-andresen-biography
+  - aftermath/2011-04-20-forbes-crypto-currency
 quotes:
   - id: "q1"
     person: "Gavin Andresen"
@@ -38,7 +39,7 @@ quotes:
     sourceEntryId: "correspondence/gavin-andresen/2011-04-26-andresen-cia-visit-reply"
 ---
 
-In his reply to [Satoshi's "alert key" email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/), Gavin Andresen addressed several points. He acknowledged reading a Forbes article and agreed that the "pirate currency" framing was problematic. He accepted Satoshi's suggestion to give more credit to other developer contributors.
+In his reply to [Satoshi's "alert key" email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/), Gavin Andresen addressed several points. He acknowledged reading [Forbes' "Crypto Currency" article](/BitcoinArchive/entries/aftermath/2011-04-20-forbes-crypto-currency/) and agreed that the "pirate currency" framing was problematic. He accepted Satoshi's suggestion to give more credit to other developer contributors.
 
 Andresen also accepted responsibility for the alert key, though he expressed concern about identifying trustworthy recipients to share it with.
 

@@ -8,7 +8,7 @@ author: "Martien van Steenbergen"
 participants:
   - name: "Martien van Steenbergen"
     slug: "martien-van-steenbergen"
-description: "オランダ人アジャイルコーチ、AardRock 創業者。P2P Research メーリングリストでの質問が、サトシに 2,100 万枚の発行上限を初めて公に明言させた。"
+description: "オランダ人アジャイルコーチ、AardRock 創業者。P2P Research メーリングリストでの質問に応じ、サトシは 5 週間前に公表済みだった 2,100 万枚の発行上限を、直接の質問への回答として改めて確認した。"
 isSatoshi: false
 tags:
   - "martien-van-steenbergen"
