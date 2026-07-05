@@ -25,6 +25,7 @@ relatedEntries:
   - emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency
   - forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation
   - aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin
+  - aftermath/2009-01-13-satoshi-to-trammell-send-coins
 translationStatus: complete
 ---
 
@@ -57,4 +58,4 @@ timeline
 サトシの返信は、冒頭に引用した提案だった。
 
 ## 意義
-サトシの返信は、状況報告というより勧誘だった。サトシが P2P リサーチでビットコインを発表したわずか二日後、しかも同じ週に [P2P Foundation のフォーラム](/BitcoinArchive/ja/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/)でも告知しながら、その作者はなお、ネットワークを一人ずつ手作業で広げていた。
+サトシの返信は、状況報告というより勧誘だった。サトシが P2P リサーチでビットコインを発表したわずか二日後、しかも同じ週に [P2P Foundation のフォーラム](/BitcoinArchive/ja/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/)でも告知しながら、その作者はなお、[1 か月前にダスティン・トランメルに対してしたのと同じように](/BitcoinArchive/ja/entries/aftermath/2009-01-13-satoshi-to-trammell-send-coins/)、ネットワークを一人ずつ手作業で広げていた。

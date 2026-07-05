@@ -25,6 +25,8 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
+  - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
+  - aftermath/2010-02-10-michael-marquardt-biography
 inlineLinkKeywords:
   - "Bitcoin supply cap"
   - "halving schedule"
@@ -137,7 +139,7 @@ flowchart LR
 | **Maturity** | Coinbase outputs cannot be spent until 100 confirmations have passed | Prevents chain reorganizations from invalidating already-spent newly minted coins |
 | **Height in coinbase** (BIP 34) | The coinbase scriptSig must start with the serialized block height | Activated 2013; ensures every coinbase transaction is unique, preventing txid collisions |
 
-A miner may claim **less** than the full reward. Any unclaimed fees are permanently destroyed — they reduce the effective supply. Several early blocks (mined by Satoshi and early miners) have coinbase outputs below the maximum, either by accident or by design.
+A miner may claim **less** than the full reward. Any unclaimed fees are permanently destroyed — they reduce the effective supply. Several early blocks (mined by Satoshi and early miners) have coinbase outputs below the maximum, either by accident or by design. The mechanism was opaque enough to puzzle early users: [an unexplained 50.44 BTC reward prompted a February 2010 BitcoinTalk forum post](/BitcoinArchive/entries/aftermath/2010-02-10-michael-marquardt-biography/) that became one of the earliest public explanations of how fees are appended to the subsidy.
 
 ## 3. Fee market design
 
@@ -258,7 +260,7 @@ This question is explored in depth in the [mining reward exhaustion analysis](/B
 | **Coinbase height** | Not required | Required (BIP 34, activated 2013) — block height serialized in coinbase scriptSig |
 | **Fee behavior** | Most transactions free; priority based on coin age | Fee-rate auction (sat/vB); coin-age priority removed |
 | **Fee estimation** | None — fees were negligible | `estimatesmartfee` — bucket-based mempool fee estimation |
-| **Replace-by-Fee** | Not implemented; first-seen policy | Opt-in RBF (BIP 125, v0.12); **full RBF default since v28.0** |
+| **Replace-by-Fee** | Implemented via nSequence in v0.1, but Satoshi disabled it in August 2010 over denial-of-service concerns; first-seen policy afterward | Opt-in RBF ([BIP 125](/BitcoinArchive/entries/aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee/), v0.12); **full RBF default since v28.0** |
 | **CPFP** | Not implemented | Ancestor-aware mempool; package evaluation for mining |
 | **Package relay** | Not applicable | Under deployment (v28+) — relay parent+child as unit |
 | **Block template** | Internal miner; trivial ordering | `getblocktemplate` (BIP 22/23); fee-rate-sorted mempool; SegWit weight accounting |

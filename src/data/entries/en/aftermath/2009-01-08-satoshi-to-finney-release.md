@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2009-01-09-bitcoin-v01-released
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
   - aftermath/2009-01-12-first-bitcoin-transaction
+  - aftermath/2013-03-19-bitcoin-and-me-hal-finney
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -50,4 +51,4 @@ Sent from satoshi@vistomail.com on Thursday, January 8, 2009 at 20:54:55 PST —
 
 Finney downloaded the software and, on January 11, 2009, posted his famous ["Running bitcoin" tweet](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/). The next day, January 12, Satoshi sent him 10 BTC in block 170 — the [first known person-to-person Bitcoin transaction](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/).
 
-Hal Finney later recalled in his "Bitcoin and me" post (March 2013): "I carried on an email conversation with Satoshi over the next few days, mostly me reporting bugs and him fixing them."
+Hal Finney later recalled in his ["Bitcoin and me" post](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) (March 2013): "I carried on an email conversation with Satoshi over the next few days, mostly me reporting bugs and him fixing them."

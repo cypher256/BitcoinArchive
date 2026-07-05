@@ -26,6 +26,7 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-upgrade-issues
   - aftermath/2009-01-11-dustin-trammell-biography
+  - design/2009-01-03-bitcoin-block-chain-design
 quotes:
   - id: "q1"
     person: "Dustin Trammell"
@@ -44,4 +45,4 @@ More concerning was the loss of his generated coins:
 <!-- speaker: Dustin Trammell -->
 > Upon opening version 0.1.3, all four of my transaction entries still say 'unconfirmed', but now the Descriptions say 'Generated (not accepted)'. Does this mean that some other node had extended the chain first and my coins were generated in a dead branch? If so, why did the previous instance of the software not detect this immediately and begin generating coins in the winning branch? Bug in 0.1.0?
 
-Trammell had correctly diagnosed the problem — the communications bug in v0.1.0 had prevented his node from broadcasting blocks to the network, causing all his mined blocks to be orphaned. Satoshi confirmed this in his next reply.
+Trammell had correctly diagnosed the problem — the communications bug in v0.1.0 had prevented his node from broadcasting blocks to the network, causing all his mined blocks to be orphaned (the [block and chain design entry](/BitcoinArchive/entries/design/2009-01-03-bitcoin-block-chain-design/) documents the underlying mechanics, including the modern distinction between orphan and stale blocks). Satoshi confirmed this in his next reply.

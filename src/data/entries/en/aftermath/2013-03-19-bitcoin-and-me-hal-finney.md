@@ -25,6 +25,8 @@ secondarySources:
     url: "https://academy.bit2me.com/en/bitcoin-and-me-hal-finney/"
 relatedEntries:
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
+  - aftermath/2009-01-08-satoshi-to-finney-release
+  - aftermath/2009-01-10-satoshi-to-finney-connections
   - aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor
   - aftermath/2009-10-05-hal-finney-dying-outside
   - aftermath/2014-08-28-hal-finney-passes-away
@@ -68,4 +70,4 @@ And of course the price gyrations of bitcoins are entertaining to me. I have ski
 That's my story. I'm pretty lucky overall. Even with the ALS, my life is very satisfying. But my life expectancy is limited. Those discussions about inheriting your bitcoins are of more than academic interest. My bitcoins are stored in our safe deposit box, and my son and daughter are tech savvy. I think they're safe enough. I'm comfortable with my legacy.
 [edited slightly]
 
-This 2013 essay was among Finney's last long-form writing; he [died of ALS in August 2014](/BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/). The Satoshi correspondence he describes here — running v0.1, receiving the first transaction, and reporting bugs — was partly made public in 2020, when CoinDesk published [previously unseen Satoshi–Finney emails](/BitcoinArchive/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/) obtained from his widow Fran Finney.
+This 2013 essay was among Finney's last long-form writing; he [died of ALS in August 2014](/BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/). The Satoshi correspondence he describes here — [Satoshi's personal notification of the v0.1 release](/BitcoinArchive/entries/aftermath/2009-01-08-satoshi-to-finney-release/), [the connectivity troubleshooting that followed](/BitcoinArchive/entries/aftermath/2009-01-10-satoshi-to-finney-connections/), receiving the first transaction, and reporting bugs — was partly made public in 2020, when CoinDesk published [previously unseen Satoshi–Finney emails](/BitcoinArchive/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/) obtained from his widow Fran Finney.

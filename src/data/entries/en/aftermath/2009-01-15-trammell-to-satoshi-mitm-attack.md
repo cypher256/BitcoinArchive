@@ -26,6 +26,7 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-mitm-attack
   - aftermath/2009-01-11-dustin-trammell-biography
+  - aftermath/2010-07-06-anonymity-and-pseudonymity
 quotes:
   - id: "q1"
     person: "Dustin Trammell"
@@ -50,4 +51,4 @@ Trammell's recommendation was clear:
 
 He also proposed an alternative: a network-based resolution service where nodes could look up the IP address associated with a Bitcoin address, using the key pairs already in place for authentication.
 
-This email is significant as one of the earliest security audits of the Bitcoin software. The send-to-IP feature was eventually removed from Bitcoin, partly informed by security concerns like those raised by Trammell.
+This email is significant as one of the earliest security audits of the Bitcoin software. The send-to-IP feature was eventually removed from Bitcoin, partly informed by security concerns like those raised by Trammell — by mid-2010, [Satoshi himself was telling Martti Malmi that address-based sending had already displaced it](/BitcoinArchive/entries/aftermath/2010-07-06-anonymity-and-pseudonymity/).

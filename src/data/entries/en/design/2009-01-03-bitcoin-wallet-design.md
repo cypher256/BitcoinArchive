@@ -20,6 +20,8 @@ relatedEntries:
   - design/2009-01-03-bitcoin-transaction-design
   - design/2009-01-03-bitcoin-cryptography-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - aftermath/2010-09-07-bitcoin-v0.3.12-released
+  - aftermath/2010-07-06-bitcoin-v0.3-released
 inlineLinkKeywords:
   - "descriptor wallet"
   - "PSBT"
@@ -83,15 +85,15 @@ graph TB
 
 ### Satoshi-era architecture
 
-In v0.1, the wallet was embedded in the node binary with no interface boundary. The GUI, the key store, the miner, and the validation engine all shared a single process and a single Berkeley DB file (`wallet.dat`). There was no RPC server at initial release; JSON-RPC was added within the first weeks of operation.
+In v0.1, the wallet was embedded in the node binary with no interface boundary. The GUI, the key store, the miner, and the validation engine all shared a single process and a single Berkeley DB file (`wallet.dat`). There was no RPC server at initial release. JSON-RPC did not arrive until [v0.2.6 (February 2010)](/BitcoinArchive/entries/forum/bitcointalk/topic-63/2010-02-23-command-line-and-json-rpc/) — about thirteen months after launch — and was promoted to a headline feature only with the [v0.3 release](/BitcoinArchive/entries/aftermath/2010-07-06-bitcoin-v0.3-released/) that July.
 
 ## 2. Key management
 
 Key management is the wallet's most critical responsibility. Losing a private key means losing the funds it controls — permanently, with no recovery authority to appeal to.
 
-### Legacy key pool (v0.1–v0.20)
+### Legacy key pool (v0.3.14–v0.20)
 
-Satoshi's v0.1 wallet generated keys independently: each private key was a fresh random number stored in `wallet.dat`. A pre-generated pool of 100 keys (the "keypool") provided lookahead so that a backup taken today could cover addresses generated in the near future. But any key created after the last backup was lost if the wallet file was destroyed.
+Satoshi's wallet originally generated keys independently: each private key was a fresh random number stored in `wallet.dat`, with no lookahead — any key created after the last backup was lost if the wallet file was destroyed. That gap persisted through [v0.3.12 (September 2010)](/BitcoinArchive/entries/aftermath/2010-09-07-bitcoin-v0.3.12-released/), whose only backup aid was a new `backupwallet` RPC command for copying the file by hand. Satoshi closed the gap properly the following month, in v0.3.14 (October 2010), with a pre-generated pool of 100 keys (the "keypool") that provided lookahead so a backup taken today could cover addresses generated in the near future. The gap was not merely theoretical: [Dustin Trammell had flagged exactly this risk to Satoshi in January 2009](/BitcoinArchive/entries/aftermath/2009-01-15-trammell-to-satoshi-address-verification/), nearly two years before the keypool closed it.
 
 ### Descriptor wallets (v0.21+, default in v23+)
 
@@ -346,7 +348,7 @@ flowchart LR
 | Feature | Satoshi era (v0.1, Jan 2009) | Modern Bitcoin Core, v27+ baseline |
 |---|---|---|
 | **Architecture** | Wallet embedded in single-binary node | Logically separated; experimental multiprocess separation in progress |
-| **Key generation** | Random key pool (100 independent keys) | Descriptor wallets: deterministic derivation from master seed |
+| **Key generation** | Independent random keys at launch; 100-key lookahead pool added in v0.3.14 (Oct 2010) | Descriptor wallets: deterministic derivation from master seed |
 | **Key storage** | Berkeley DB (`wallet.dat`) | SQLite (`wallet.dat` in new format) |
 | **Backup model** | Export file after every new key; new keys after backup are unrecoverable | Descriptor backup covers all derived keys (raw BIP 32 seed, not BIP 39) |
 | **Address types** | P2PK, P2PKH only | P2PKH, P2SH, P2WPKH, P2WSH, P2TR |
@@ -356,7 +358,7 @@ flowchart LR
 | **Multi-device signing** | Not supported | PSBT workflow: create → update → sign → combine → finalize |
 | **Fee estimation** | None (most transactions were free) | Bucket-based mempool tracking; economical and conservative modes |
 | **Fee bumping** | Not available | Replace-by-Fee (`bumpfee`), CPFP |
-| **Interfaces** | None at launch; basic JSON-RPC added shortly after | JSON-RPC (full), REST (read-only), ZMQ (push notifications) |
+| **Interfaces** | None at launch; JSON-RPC added in v0.2.6 (Feb 2010), 13 months in | JSON-RPC (full), REST (read-only), ZMQ (push notifications) |
 | **Multi-wallet** | One wallet per node | Multiple wallets loaded simultaneously; `loadwallet` / `unloadwallet` |
 | **Encryption** | Not available | `encryptwallet` — AES-256-CBC encryption of private keys at rest |
 | **Watch-only** | Not supported | Any descriptor with `xpub` only (no private key) |

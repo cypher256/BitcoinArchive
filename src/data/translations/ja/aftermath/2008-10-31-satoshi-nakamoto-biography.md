@@ -52,6 +52,7 @@ relatedEntries:
   - aftermath/2009-01-03-genesis-block
   - aftermath/2009-01-09-bitcoin-v01-released
   - aftermath/2008-08-20-satoshi-to-adam-back
+  - aftermath/2011-06-14-wikileaks-accepts-bitcoin
 translationStatus: complete
 ---
 
@@ -151,7 +152,7 @@ Bitcoin v0.1 は Windows 上で Microsoft Visual C++ 6.0 SP6 と MinGW GCC 3.4.5
 - **サイファーパンクとの位置関係**: コミュニティへの参加痕跡がないにもかかわらず実践がサイファーパンク思想核と一致する点は[独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で扱う
 - **署名の読解**: 「サトシ・ナカモト」という仮名が落ちるテクノオリエンタリズム的な象徴空間は[仮名と『AKIRA』についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)で扱う
 
-サトシはメーリングリストとフォーラム上で設計判断を説明し、技術的反論に応答し、運用判断を下した —— 2010年12月の WikiLeaks 寄付推進の辞退、2010年末から 2011年初頭にかけてのソースリポジトリのコミット権限とネットワーク警告キーのアンドレセンへの引き渡し。
+サトシはメーリングリストとフォーラム上で設計判断を説明し、技術的反論に応答し、運用判断を下した —— 2010年12月の[WikiLeaks 寄付推進の辞退](/BitcoinArchive/ja/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/)、2010年末から 2011年初頭にかけてのソースリポジトリのコミット権限とネットワーク警告キーのアンドレセンへの引き渡し。
 
 サトシが設計した思想史的系譜 ― ハイエク 1976 年『貨幣発行自由化論』、 1990 年代のエクストロピアン環境、サイファーパンク運動、そして一次資料が支持する直接影響の限界 ― は[ハイエク=エクストロピアン系譜エントリー](/BitcoinArchive/ja/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/)と姉妹分析[サトシ・ナカモトはサイファーパンクではなかった](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で扱う。
 

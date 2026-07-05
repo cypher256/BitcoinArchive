@@ -43,6 +43,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-architecture-evolution
   - analysis/2014-11-01-blockstream-centralization-claim
   - aftermath/2008-11-02-james-donald-biography
+  - aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback
 ---
 
 Bitcoin's protocol still runs almost unchanged from the rules [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) wrote down in 2008. But the *user experience*, the *economic structure*, and the *governance reality* of the system have drifted considerably from the early design picture. Reading the [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) or the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) gives a faithful picture of the protocol but a misleading picture of what most users actually touch. This entry walks through four axes where the gap is largest, with pointers to the records.
@@ -73,7 +74,7 @@ timeline
 
 **The reality.** Mining moved off PCs onto purpose-built chips called **ASICs** in 2013. Bitcoin's first commercial ASIC was the Avalon ASIC (January 2013); [Bitmain](/BitcoinArchive/participants/jihan-wu/), founded later that year, became the dominant manufacturer through the 2015 – 2018 era. A modern ASIC computes Bitcoin's hash function tens of millions of times faster per kilowatt-hour than any general-purpose computer, which means a PC running against ASIC competition burns electricity and produces nothing. Mining today is a heavy-industrial activity concentrated in a handful of pools and a handful of geographies, not a participatory side-activity of running a node.
 
-**When the drift started.** GPU mining started in May 2010 (Laszlo Hanyecz, the same developer who later paid 10,000 BTC for pizza). Satoshi expressed unease at the time, asking Hanyecz to slow down — see [Laszlo Hanyecz's biography](/BitcoinArchive/participants/laszlo-hanyecz/) for the recorded conversation. FPGA mining followed in 2011, and ASIC mining in 2013. Satoshi disappeared in April 2011, so the entire ASIC era is post-Satoshi. The chronology is documented; the *reason* for the departure is not (no surviving Satoshi statement ties leaving to the mining-hardware drift specifically).
+**When the drift started.** GPU mining started in May 2010 (Laszlo Hanyecz, the same developer who later paid 10,000 BTC for pizza). Satoshi expressed unease at the time, asking Hanyecz to slow down — see [Hanyecz's account of the exchange](/BitcoinArchive/entries/aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback/) for the recorded conversation. FPGA mining followed in 2011, and ASIC mining in 2013. Satoshi disappeared in April 2011, so the entire ASIC era is post-Satoshi. The chronology is documented; the *reason* for the departure is not (no surviving Satoshi statement ties leaving to the mining-hardware drift specifically).
 
 **The centralisation consequence.** Worked through in [Ray Dillinger's 2018 interview](/BitcoinArchive/entries/aftermath/2018-10-01-ray-dillinger-interview/) and in [the mining-reward exhaustion analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/).
 

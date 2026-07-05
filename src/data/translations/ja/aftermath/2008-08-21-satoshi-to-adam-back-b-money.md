@@ -29,6 +29,7 @@ relatedEntries:
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
+  - "aftermath/2008-08-20-adam-back-biography"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -48,4 +49,4 @@ translationStatus: complete
 <!-- speaker: narrator -->
 この一文は、[サイファーパンクからの独立した到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)と[ビットコインの設計系譜分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)の双方を支える一次資料の一つである。サトシは独自に設計空間に到達しており、b-money の存在は前日のアダム・バックの紹介を通じて初めて知った。
 
-同じメールには、引用年を確認するためにサトシがウェイ・ダイに直接連絡する予定であることも書かれていた。その連絡は翌日に送信されることになる（[2008年8月22日サトシ → ウェイ・ダイ](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)）。b-money はその後、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)の参考文献 [1] として加えられた。
+同じメールには、引用年を確認するためにサトシがウェイ・ダイに直接連絡する予定であることも書かれていた。その連絡は翌日に送信されることになる（[2008年8月22日サトシ → ウェイ・ダイ](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)）。b-money はその後、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)の参考文献 [1] として加えられた。この一文は[アダム・バックの伝記](/BitcoinArchive/ja/entries/aftermath/2008-08-20-adam-back-biography/)でも、伝記上の重要な場面として引用されている。

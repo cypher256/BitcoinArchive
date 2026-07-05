@@ -27,6 +27,7 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-use-cases
   - aftermath/2009-01-11-dustin-trammell-biography
+  - aftermath/2009-05-04-faq-draft-and-investment-warning
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -37,7 +38,7 @@ quotes:
 
 In this email, Satoshi noted that at least one node on the network had a frequently changing IP address within the same class B range, which he hadn't anticipated. He asked Trammell's permission to CC the conversation to bitcoin-list or the Cryptography mailing list, and shared the bitcoin-list subscription details.
 
-Satoshi then referenced [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s earlier suggestion about Bitcoin as an investment:
+Satoshi then referenced [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s earlier suggestion about Bitcoin as an investment — a framing he would [explicitly forbid in public-facing material four months later](/BitcoinArchive/entries/aftermath/2009-05-04-faq-draft-and-investment-warning/):
 
 <!-- quote: q1 -->
 > Hal sort of alluded to the possibility that it could be seen as a long-odds investment. I would be surprised if 10 years from now we're not using electronic currency in some way, now that we know a way to do it that won't inevitably get dumbed down when the TTP gets cold feet.

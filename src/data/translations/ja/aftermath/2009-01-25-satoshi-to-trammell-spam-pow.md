@@ -27,6 +27,7 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-25-satoshi-to-trammell-spam-pow
   - aftermath/2009-01-11-dustin-trammell-biography
+  - aftermath/2009-01-17-jonathan-thornburg-biography
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -37,7 +38,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: narrator -->
-サトシとトランメルのやり取りにおける最後のメールで、前回のやり取りから約 1 週間後に送信された。サトシはプルーフ・オブ・ワークトークンに価値がある場合のスパムの経済学について論じた。[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)が、価値のある POW トークンはボットネット感染をコンピューターの所有者にとってより気づきやすいものにするだろうと指摘した観察を引用した。
+サトシとトランメルのやり取りにおける最後のメールで、前回のやり取りから約 1 週間後に送信された。サトシはプルーフ・オブ・ワークトークンに価値がある場合のスパムの経済学について論じた —— 8 日前に[ジョナサン・ソーンバーグが警告していた](/BitcoinArchive/ja/entries/aftermath/2009-01-17-jonathan-thornburg-biography/)のと同じ、ボットネット主導の送信課金型メール悪用である。[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)が、価値のある POW トークンはボットネット感染をコンピューターの所有者にとってより気づきやすいものにするだろうと指摘した観察を引用した。
 
 サトシはその後、新しい経済的対抗メカニズムである「リバース・スパミング」を提案した：
 

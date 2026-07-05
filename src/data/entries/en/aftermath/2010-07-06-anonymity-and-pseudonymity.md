@@ -23,6 +23,8 @@ tags:
 secondarySources:
   - name: "Cointelegraph - Newly released Satoshi emails"
     url: "https://web.archive.org/web/20260219032610/https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
+relatedEntries:
+  - aftermath/2009-01-15-trammell-to-satoshi-mitm-attack
 ---
 
 Satoshi warned Malmi about how Bitcoin's privacy properties were being described on the website and in promotional materials:
@@ -39,4 +41,4 @@ Satoshi elaborated on the potential consequences of overpromising privacy:
 
 Satoshi drew the line between anonymity (complete identity concealment) and pseudonymity (an alternate identity that analysis can still link back to a real one) — and the warning held up: blockchain analysis became a major industry, and many early users who assumed they were anonymous had their transactions traced.
 
-The note about "sending by IP" refers to an early Bitcoin feature where transactions could be sent directly to an IP address. As the network shifted to address-based transactions, the privacy model changed in ways Satoshi felt needed to be clearly communicated.
+The note about "sending by IP" refers to an early Bitcoin feature where transactions could be sent directly to an IP address — a feature [Dustin Trammell had flagged as vulnerable to man-in-the-middle interception](/BitcoinArchive/entries/aftermath/2009-01-15-trammell-to-satoshi-mitm-attack/) a year and a half earlier. As the network shifted to address-based transactions, the privacy model changed in ways Satoshi felt needed to be clearly communicated.

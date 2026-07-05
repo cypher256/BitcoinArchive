@@ -43,6 +43,7 @@ relatedEntries:
   - "bip/2020-01-19-bip-0341"
   - "analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies"
   - "aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency"
+  - design/2009-01-03-bitcoin-cryptography-design
 ---
 
 On January 15, 2016, [Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) shipped with libsecp256k1 as the default backend for consensus-critical ECDSA signature verification, replacing OpenSSL — a dependency that had been part of Bitcoin since [Satoshi's original v0.1 release](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) seven years earlier.
@@ -69,6 +70,8 @@ Maxwell summarized the conclusion in the Bitcoin Magazine article: "OpenSSL is n
 
 - **Bitcoin Core v0.10** (February 2015): libsecp256k1 became the default for wallet signing.
 - **Bitcoin Core v0.12** (January 15, 2016): libsecp256k1 became the default for consensus-critical ECDSA signature verification.
+
+The [cryptography design entry](/BitcoinArchive/entries/design/2009-01-03-bitcoin-cryptography-design/) covers the same two-stage rollout as part of its broader account of Bitcoin's signature-scheme evolution.
 
 ## Significance
 

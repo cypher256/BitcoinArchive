@@ -47,6 +47,7 @@ relatedEntries:
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - design/2009-01-03-bitcoin-architecture-evolution
+  - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius
 translationStatus: complete
 ---
 
@@ -126,6 +127,8 @@ v0.1 全体で変数名はマイクロソフトのハンガリアン記法 (型�
 ### 2.4 チーム開発ツール一切なしの 8 か月
 
 Phase 1 のうち、リリース後の 7 か月 (2009 年 1〜8 月) は途切れないソロ開発パターンと重なる: バージョン管理なし、テストスイートなし、課題追跡なし、第二レビュアー過程なし。各リリースは現状ソースツリーの新規 `.rar`。公開コミット履歴はマルミが Phase 1 と Phase 2 の境目で SVN リポジトリを開いたときに初めて始まる。 [SVN 履歴エントリー](/BitcoinArchive/ja/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/)はツールチェーン遷移を記録する: 2009 年 8 月にチーム開発基盤が現れたのはマルミが構築したから。
+
+ジェフ・ガージックは 2010 年からサトシと共に働いた初期のコア開発者で、後にコードの外側からこの不在を指摘している ― サトシは既知の暗号技術をそのまま流用し、新しい方法で組み合わせたが、モジュール化やユニットテストといった正規のコンピューターサイエンス教育で学ぶ基本が欠けていた、と ([ガージックの回顧録](/BitcoinArchive/ja/entries/aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius/)参照)。
 
 4 件の独立観察 ― ビルドツールチェーンの Visual C++ 6.0、コード全体のハンガリアン記法、 `.rar` Windows 専用パッケージング、チーム開発ツール一切なし ― はすべて、 27 か月の全期間にわたって Windows 環境で単独作業する開発者像で収束する。
 

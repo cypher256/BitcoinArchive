@@ -30,6 +30,7 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-electronic-currency
   - aftermath/2009-01-11-dustin-trammell-biography
+  - analysis/2010-12-27-satoshi-non-technical-silence
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -52,4 +53,4 @@ The email contains what became one of Satoshi's most famous lines:
 <!-- speaker: Satoshi Nakamoto -->
 > It might make sense just to get some in case it catches on. If enough people think the same way, that becomes a self fulfilling prophecy. Once it gets bootstrapped, there are so many applications if you could effortlessly pay a few cents to a website as easily as dropping coins in a vending machine.
 
-This public email, originating from Satoshi's private correspondence with Trammell, became one of the most frequently cited Satoshi writings in Bitcoin history.
+This public email, originating from Satoshi's private correspondence with Trammell, became one of the most frequently cited Satoshi writings in Bitcoin history. The same reply is also read, in [an analysis of Satoshi's communication patterns](/BitcoinArchive/entries/analysis/2010-12-27-satoshi-non-technical-silence/), as the moment Satoshi engaged Hal Finney's earlier $10-million-per-coin speculation only obliquely — reaching the topic without ever directly acknowledging Finney's specific prediction.

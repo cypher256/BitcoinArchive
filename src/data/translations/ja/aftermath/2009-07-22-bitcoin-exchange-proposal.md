@@ -22,16 +22,19 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - analysis/2008-08-20-satoshi-self-statements
+  - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
 translationStatus: complete
 ---
 
 <!-- tone-skip -->
 <!-- speaker: narrator -->
-2009年7月21日、サトシは 18ヶ月間の継続的なビットコイン開発の後に「休息」が必要だと述べ、ビットコインの成長に役立つブートストラップアプリケーションのアイデアをマルミに求めた。
+2009年7月21日、サトシは 18ヶ月間の継続的なビットコイン開発の後に「休息」が必要だと述べた ―― [記録に残る中で唯一の明示的な疲労表明](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)であり、後から見れば 2011 年の撤退を先取りするものと読める ―― そして、ビットコインの成長に役立つブートストラップアプリケーションのアイデアをマルミに求めた。
 
 翌日、マルミは提案で応じた：ユーロ建てのビットコイン交換サービスの設立を提案したのである。彼の提案はビットコインの初期の通貨流動性を確立するための価格算定式と収益メカニズムを詳述していた。
 
-2009年8月24日、サトシは取引所の提案に対して詳細なフィードバックを提供し、価格設定は純粋なオークション方式ではなく生産コストに裏打ちされるべきだと強調し、より多くのユーザーが取引に参加するよう促すための最小取引額を提案した。
+2009年8月24日、サトシは取引所の提案に対して詳細なフィードバックを提供し、価格設定は純粋なオークション方式ではなく生産コストに裏打ちされるべきだと強調し、より多くのユーザーが取引に参加するよう促すための最小取引額を提案した ―― これと同じ生産コストの原理を、[NewLibertyStandard が 6 週間後に独立に適用した](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/)、ビットコイン初の為替レート公開において。
 
 マルミはその後、最も初期のビットコイン取引所の一つである Bitcoinexchange.com を作成・運営した。新たに公開されたメールは、サトシが単なる受動的な傍観者ではなく、取引所の開発全体を通じて重要なアドバイザーであったことを明らかにした。
 

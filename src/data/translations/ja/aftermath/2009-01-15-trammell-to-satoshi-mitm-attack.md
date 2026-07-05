@@ -26,6 +26,7 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-mitm-attack
   - aftermath/2009-01-11-dustin-trammell-biography
+  - aftermath/2010-07-06-anonymity-and-pseudonymity
 quotes:
   - id: "q1"
     person: "Dustin Trammell"
@@ -55,4 +56,4 @@ translationStatus: complete
 <!-- speaker: narrator -->
 また、代替案として、ノードがビットコインアドレスに関連付けられた IP アドレスを検索できるネットワークベースの名前解決サービスを提案した。認証には既存の鍵ペアを用いる。
 
-このメールは、ビットコインソフトウェアに対する最も初期のセキュリティ監査の一つとして重要である。IP 送金機能はトランメルが提起したようなセキュリティ上の懸念も一因となり、最終的にビットコインから削除された。
+このメールは、ビットコインソフトウェアに対する最も初期のセキュリティ監査の一つとして重要である。IP 送金機能はトランメルが提起したようなセキュリティ上の懸念も一因となり、最終的にビットコインから削除された —— 2010 年半ばには、[サトシ自身がマルッティ・マルミに、アドレスベースの送金が既にそれに取って代わったと伝えている](/BitcoinArchive/ja/entries/aftermath/2010-07-06-anonymity-and-pseudonymity/)。

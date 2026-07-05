@@ -167,6 +167,8 @@ flowchart LR
 | **Orphan block** | A block arrives before its parent. The node cannot validate it because the chain of hashes is incomplete. | The node stores it temporarily. When the parent arrives and validates, the orphan is reconnected. In v27+ baseline, the term "orphan" refers specifically to blocks whose parent is unknown, distinct from stale blocks. |
 | **Deliberate fork (soft/hard fork)** | A protocol upgrade changes consensus rules, causing nodes running different software to disagree on block validity. | Soft fork: old nodes still accept new-rule blocks. Hard fork: the chain splits permanently unless one side abandons its fork. |
 
+A documented real-world instance of blocks losing the race for the chain tip: in January 2009, [Dustin Trammell reported four mined blocks marked "Generated (not accepted)"](/BitcoinArchive/entries/aftermath/2009-01-12-trammell-to-satoshi-upgrade-issues/) after a v0.1.0 communications bug prevented his node from broadcasting them in time to compete for the winning chain.
+
 ## 4. Chain selection rule
 
 Bitcoin's chain selection rule is the **most-work chain rule**: among all valid chains a node is aware of, the node follows the chain with the greatest total accumulated proof-of-work. This is commonly — and inaccurately — called the "longest chain rule." Chain length (block count) and chain work are not the same: if the difficulty adjusts between blocks, two chains of the same height can have different total work. The protocol selects on work, not height.

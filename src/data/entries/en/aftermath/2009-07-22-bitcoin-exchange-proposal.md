@@ -22,13 +22,16 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - analysis/2008-08-20-satoshi-self-statements
+  - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
 ---
 
-On July 21, 2009, Satoshi had mentioned that he needed a "break" after 18 months of continuous Bitcoin development and asked Malmi for ideas about bootstrap applications that could help Bitcoin grow.
+On July 21, 2009, Satoshi had mentioned that he needed a "break" after 18 months of continuous Bitcoin development — [the only explicit fatigue self-statement in the documented record](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), read in retrospect as an early foreshadowing of the 2011 departure — and asked Malmi for ideas about bootstrap applications that could help Bitcoin grow.
 
 The following day, Malmi responded with a proposal: he suggested establishing a Bitcoin exchange service for euros. His proposal detailed pricing formulas and profit mechanisms to establish initial currency liquidity for Bitcoin.
 
-On August 24, 2009, Satoshi provided detailed feedback on the exchange proposal, emphasizing that pricing should be backed by production cost rather than pure auction mechanics, and suggested minimum transaction sizes to encourage more user participation in trading.
+On August 24, 2009, Satoshi provided detailed feedback on the exchange proposal, emphasizing that pricing should be backed by production cost rather than pure auction mechanics, and suggested minimum transaction sizes to encourage more user participation in trading — the same cost-of-production principle [NewLibertyStandard applied independently six weeks later](/BitcoinArchive/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/) in publishing Bitcoin's first exchange rate.
 
 Malmi went on to create and operate Bitcoinexchange.com, one of the earliest Bitcoin exchanges. The newly published emails revealed that Satoshi had been a key advisor throughout the exchange's development, not merely a passive observer.
 

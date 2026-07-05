@@ -28,6 +28,8 @@ secondarySources:
 relatedEntries:
   - analysis/2009-01-10-satoshi-launch-environment
   - analysis/2008-08-20-satoshi-self-statements
+  - aftermath/2013-03-19-bitcoin-and-me-hal-finney
+  - aftermath/2009-06-05-satoshi-to-bohm-port-forwarding
 ---
 
 In this email, sent in the earliest days of the Bitcoin network, Satoshi disclosed a technical constraint:
@@ -36,8 +38,8 @@ In this email, sent in the earliest days of the Bitcoin network, Satoshi disclos
 <!-- audit:quote-skip -->
 > Unfortunately, I can't receive incoming connections from where I am, which has made things more difficult.
 
-This admission reveals that Satoshi was operating behind a firewall or NAT that blocked incoming TCP connections on port 8333, making his own node dependent on outgoing connections to other peers. This would have complicated debugging and testing the network in its infancy when there were only a handful of nodes. The phrase "from where I am" is examined more broadly as a [forensic reading of Satoshi's launch-period environment](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/) alongside the cadence of his public activity during the launch week.
+This admission reveals that Satoshi was operating behind a firewall or NAT that blocked incoming TCP connections on port 8333, making his own node dependent on outgoing connections to other peers — [the same inbound-connectivity chokepoint he would help another user diagnose five months later](/BitcoinArchive/entries/aftermath/2009-06-05-satoshi-to-bohm-port-forwarding/). This would have complicated debugging and testing the network in its infancy when there were only a handful of nodes. The phrase "from where I am" is examined more broadly as a [forensic reading of Satoshi's launch-period environment](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/) alongside the cadence of his public activity during the launch week.
 
 The email headers contained a timezone of UTC+8, which triggered speculation about Satoshi's location. However, Chain Bulletin journalist Doncho Karaivanov demonstrated that the UTC+8 timestamp originated from AnonymousSpeech.com's email relay server (based in Tokyo since 1996, using Asia/Hong_Kong timezone), not from Satoshi's local machine.
 
-This email is part of the private correspondence recovered from Hal Finney's personal computer files. Finney described the broader exchange in his "Bitcoin and me" post: "I carried on an email conversation with Satoshi over the next few days, mostly me reporting bugs and him fixing them." Only three of these private emails have been published; the remainder presumably exist in the files Fran Finney provided to journalist Nathaniel Popper in March 2014.
+This email is part of the private correspondence recovered from Hal Finney's personal computer files. Finney described the broader exchange in his ["Bitcoin and me" post](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/): "I carried on an email conversation with Satoshi over the next few days, mostly me reporting bugs and him fixing them." Only three of these private emails have been published; the remainder presumably exist in the files Fran Finney provided to journalist Nathaniel Popper in March 2014.

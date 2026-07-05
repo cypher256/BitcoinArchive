@@ -55,6 +55,7 @@ relatedEntries:
   - correspondence/martti-malmi/2009-05-02-malmi-initial-contact
   - correspondence/martti-malmi/2009-05-02-bitcoin-001
   - correspondence/gavin-andresen/2011-01-06-writing-about-bitcoin
+  - aftermath/2009-01-16-satoshi-to-trammell-electronic-currency
 inlineLinkKeywords:
   - "サトシの技術以外への沈黙"
   - "メリークリスマス、サトシ"
@@ -84,7 +85,7 @@ translationStatus: complete
 | 日付 | 送信元 → 宛先 | 相手の非技術的発話 | サトシ返信の冒頭 | 非技術発話への扱い | パターン |
 |---|---|---|---|---|---|
 | 2010-12-27 → 12-29 | [マイク・ハーン → サトシ](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions/) | 「メリークリスマス、サトシ。君が世界のどこにいるのかも、祝う習慣があるのかも分からないけど :-)」 | 「論文における簡易支払い検証 (SPV) は、 ...」 | **一切触れない** | 1. 完全な沈黙 |
-| 2009-01-10 → 01-16 | [ハル・フィニー → 暗号学メーリングリスト](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-10-re-bitcoin-v0-1-released-finney/) | 「面白い思考実験として、ビットコインが成功して世界の支配的な決済システムになったと想像してみよう ... 1 枚あたりおよそ 1,000 万ドル ... 1 億分の 1 の確率」 | [後続投稿 015014 はダスティン・トランメル宛で、フィニー宛ではない](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-16-sni17-bitcoin-v0-1-released/) | **個別返信なし**。同じスレッド内の後続投稿で抽象的に「広まる場合に備えて少し持っておくのは理にかなうかもしれない。十分多くの人が同じように考えれば、それは自己実現予言になる」と述べるのみで、フィニーの「1,000 万ドル」数値や「1 億分の 1」確率には一切触れない | 2. 間接的一般論 |
+| 2009-01-10 → 01-16 | [ハル・フィニー → 暗号学メーリングリスト](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-10-re-bitcoin-v0-1-released-finney/) | 「面白い思考実験として、ビットコインが成功して世界の支配的な決済システムになったと想像してみよう ... 1 枚あたりおよそ 1,000 万ドル ... 1 億分の 1 の確率」 | [後続投稿 015014 はダスティン・トランメル宛で、フィニー宛ではない](/BitcoinArchive/ja/entries/aftermath/2009-01-16-satoshi-to-trammell-electronic-currency/) | **個別返信なし**。同じスレッド内の後続投稿で抽象的に「広まる場合に備えて少し持っておくのは理にかなうかもしれない。十分多くの人が同じように考えれば、それは自己実現予言になる」と述べるのみで、フィニーの「1,000 万ドル」数値や「1 億分の 1」確率には一切触れない | 2. 間接的一般論 |
 | 2009-04-12 → 04-12 | [マイク・ハーン → サトシ](/BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/) | 「質問がたくさんで :) でも本当に革命的なアイデアに出会うのはまれだ。こんなにワクワクした新しい貨幣案は、リップルを見つけて以来だよ」 | [サトシ: 「やあマイク、質問があれば喜んで答えるよ」](/BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-12-satoshi-to-hearn-scalability/) | **形式的挨拶のみ**。「革命的」「ワクワクした」「リップル発見の瞬間」は感情的には扱われず、リップルは最後に技術的比較対象として 1 文だけ触れられる | 3. 最低限挨拶での受け流し |
 | 2011-03-07 → 03-09 | [マイク・ハーン → サトシ](/BitcoinArchive/ja/entries/correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release/) | 「お元気にしているといいけれど ... 早く戻ってきてほしい！ ... ネットワークにとってワクワクする時期だ！」 + `BitcoinJ` オープンソース公開の告知 | [サトシ: 「素晴らしいニュースだ！ ... 喜んで質問に答えるよ」](/BitcoinArchive/ja/entries/correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts/) | **技術的告知への 1 句の承認のみ**。「お元気に」「戻ってきて」「ワクワクする時期」はすべて回避され、残りはマークルブランチ、シーケンス番号、 `nLockTime`、契約の濃密な技術議論 | 3. 最低限挨拶での受け流し |
 | 2011-01-06 → 01-06 | [ギャビン・アンドレセン → サトシ](/BitcoinArchive/ja/entries/correspondence/gavin-andresen/2011-01-06-writing-about-bitcoin/) | 「サトシ、君は記者対応・広報・取材はやりたくないと察しているけど?」 ― 技術質問ではなく個人的志向の質問 | サトシ返信 (マルミ集 #254): **「True」** | **一語のみ**。理由なし、懸念なし、心情なし。志向の確認は記録されたが、志向そのものは展開されない | 4. 一語の事実確認 |

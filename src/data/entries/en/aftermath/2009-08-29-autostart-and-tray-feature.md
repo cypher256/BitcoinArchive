@@ -23,6 +23,8 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - aftermath/2009-12-16-bitcoin-v0.2-released
 ---
 
 In a series of emails from late August 2009, Satoshi and Malmi discussed critical UI improvements for the Bitcoin client. Malmi had successfully compiled Bitcoin using wxPack and was working on new features.
@@ -33,4 +35,4 @@ Satoshi emphasized that autostart with system tray minimization was "a must-have
 
 By September 16, 2009, Malmi reported that he had committed code implementing the minimize-to-tray features to SVN branches. By October, he had created a Windows installer with both autostart and minimize-to-tray functionality.
 
-These features were included in Bitcoin version 0.2, released in December 2009, which also included Linux support. Satoshi publicly acknowledged Malmi's contribution in the release notes: "Many thanks to Martti (Sirius-m) for all his development work."
+These features were included in [Bitcoin version 0.2](/BitcoinArchive/entries/aftermath/2009-12-16-bitcoin-v0.2-released/), released in December 2009, which also included Linux support. Satoshi publicly acknowledged Malmi's contribution in the release notes: "Many thanks to Martti (Sirius-m) for all his development work."

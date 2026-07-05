@@ -30,6 +30,7 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-electronic-currency
   - aftermath/2009-01-11-dustin-trammell-biography
+  - analysis/2010-12-27-satoshi-non-technical-silence
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -57,4 +58,4 @@ translationStatus: complete
 > 流行った場合に備えて、いくらか手に入れておくのは理にかなっているかもしれない。十分な数の人が同じように考えれば、それは自己実現的予言となる。一度軌道に乗れば、自動販売機にコインを入れるように簡単にウェブサイトに数セントを支払えるなら、非常に多くの用途がある。
 
 <!-- speaker: narrator -->
-サトシとトランメルのメールのやり取りから生まれたこの公開メールは、ビットコインの歴史において最も頻繁に引用されるサトシの文章の一つとなった。
+サトシとトランメルのメールのやり取りから生まれたこの公開メールは、ビットコインの歴史において最も頻繁に引用されるサトシの文章の一つとなった。同じ返信は、[サトシのコミュニケーションパターンについての分析](/BitcoinArchive/ja/entries/analysis/2010-12-27-satoshi-non-technical-silence/)では、ハル・フィニーの先の「1 枚 1,000 万ドル」という推測にサトシが間接的にしか応じなかった瞬間としても読まれている――フィニーの具体的な予測に直接触れることなく話題に達している。

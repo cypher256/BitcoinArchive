@@ -25,6 +25,7 @@ relatedEntries:
   - emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency
   - forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation
   - aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin
+  - aftermath/2009-01-13-satoshi-to-trammell-send-coins
 ---
 
 On February 13, 2009, P2P Foundation founder Michel Bauwens asked [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) a simple question — and got a now-iconic offer in reply:
@@ -56,4 +57,4 @@ On February 13, Bauwens asked Satoshi directly:
 Satoshi's reply was the offer quoted above.
 
 ## Significance
-Satoshi's reply was less a status report than a recruitment pitch. Two days after announcing Bitcoin to the P2P research world — and on the [P2P Foundation forum](/BitcoinArchive/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/) the same week — its creator was still seeding the network one volunteer at a time, by hand.
+Satoshi's reply was less a status report than a recruitment pitch. Two days after announcing Bitcoin to the P2P research world — and on the [P2P Foundation forum](/BitcoinArchive/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/) the same week — its creator was still seeding the network one volunteer at a time, by hand, [just as he had done for Dustin Trammell a month earlier](/BitcoinArchive/entries/aftermath/2009-01-13-satoshi-to-trammell-send-coins/).

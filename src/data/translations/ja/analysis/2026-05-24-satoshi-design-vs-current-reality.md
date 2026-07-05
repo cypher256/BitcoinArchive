@@ -42,6 +42,8 @@ relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-architecture-evolution
   - analysis/2014-11-01-blockstream-centralization-claim
+  - aftermath/2008-11-02-james-donald-biography
+  - aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback
 translationStatus: complete
 ---
 
@@ -73,7 +75,7 @@ timeline
 
 **現状**。 2013 年にマイニングは PC を離れ、専用設計のチップ ― **ASIC** に移行した。ビットコイン初の商用 ASIC は 2013 年 1 月の Avalon ASIC、同年に設立された [Bitmain](/BitcoinArchive/ja/participants/jihan-wu/) が 2015 ~ 2018 年に支配的製造業者となった。現代の ASIC は同じキロワット時の電力で、汎用コンピューターより数千万倍多くのハッシュ計算を処理できる。 ASIC を相手にして PC でマイニングしても電気代を浪費するだけで何も生まない。現代のマイニングは少数のプールと少数の地理に集中した重工業であり、ノードを動かすことに付随する参加型副業ではない。
 
-**乖離の起点**。 GPU マイニングは 2010 年 5 月に始まった (後に 10,000 BTC でピザを買ったラズロ・ハニエツが先駆者)。サトシは当時これに難色を示し、ハニエツに「ゆっくりやってくれないか」と頼んだ ― 記録されたやり取りは[ラズロ・ハニエツのバイオグラフィー](/BitcoinArchive/ja/participants/laszlo-hanyecz/)参照。 FPGA マイニングは 2011 年、 ASIC マイニングは 2013 年に続いた。サトシは 2011 年 4 月に消失したため、 **ASIC 時代全体はサトシ後**である。時系列は文書化されているが、 *消失の理由*は文書化されていない (マイニングハードウェアの乖離を離脱理由として結びつけるサトシの発言は現存しない)。
+**乖離の起点**。 GPU マイニングは 2010 年 5 月に始まった (後に 10,000 BTC でピザを買ったラズロ・ハニエツが先駆者)。サトシは当時これに難色を示し、ハニエツに「ゆっくりやってくれないか」と頼んだ ― 記録されたやり取りは[ハニエツによる回想](/BitcoinArchive/ja/entries/aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback/)を参照。 FPGA マイニングは 2011 年、 ASIC マイニングは 2013 年に続いた。サトシは 2011 年 4 月に消失したため、 **ASIC 時代全体はサトシ後**である。時系列は文書化されているが、 *消失の理由*は文書化されていない (マイニングハードウェアの乖離を離脱理由として結びつけるサトシの発言は現存しない)。
 
 **集中化の帰結**。 [レイ・ディリンジャー 2018 年インタビュー](/BitcoinArchive/ja/entries/aftermath/2018-10-01-ray-dillinger-interview/)と[マイニング報酬枯渇分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)で詳述。
 
@@ -157,7 +159,7 @@ flowchart TB
 
 **現状**。ビットコインの 1 MB ブロックサイズ上限は、チェーンを約 7 トランザクション/秒に制限する (現実的なトランザクションサイズではもっと少ない)。日常の小売決済はおさまらない。仮におさまったとしても、ピーク時には手数料で締め出される。実際のスケーリング経路は二層化だった: SegWit (BIP 141、 2017 年有効化) が Lightning Network のための余地を作り、決済はチェーン外に移って定期的な決済時のみベース層に触れる。カストディアル取引所も*スケーリング層として*機能している ― Coinbase アカウント間の内部送金はチェーンに一切到達しない。
 
-**乖離の起点**は 2010 年のブロックサイズ議論 (サトシ自身が暫定的に置いた 1 MB 上限、元々はスパム対策) で、 2015 ~ 2017 年の[フォーク戦争](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)を経て結晶化した。今日の日常利用の大半において、ビットコインはホワイトペーパーが描く直接 P2P 現金像というよりも、信頼度の異なる複数の決済システムが積み重なった、その最下層の決済層に近い形で使われている。
+**乖離の起点**は 2010 年のブロックサイズ議論 (サトシ自身が暫定的に置いた 1 MB 上限、元々はスパム対策) で、 2015 ~ 2017 年の[フォーク戦争](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)を経て結晶化した。今日の日常利用の大半において、ビットコインはホワイトペーパーが描く直接 P2P 現金像というよりも、信頼度の異なる複数の決済システムが積み重なった、その最下層の決済層に近い形で使われている ― これは[2008 年 11 月にジェームズ・A・ドナルドが名指しで予見した帰結](/BitcoinArchive/ja/entries/aftermath/2008-11-02-james-donald-biography/)である。彼はビットコイン銀行を「bink」と名付け、金本位制で金が紙幣を支えたように、ビットコインを口座マネーの下に位置づけた。
 
 ## 本稿が主張していないこと
 

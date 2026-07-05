@@ -26,6 +26,7 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-address-verification
   - aftermath/2009-01-11-dustin-trammell-biography
+  - design/2009-01-03-bitcoin-wallet-design
 quotes:
   - id: "q1"
     person: "Dustin Trammell"
@@ -41,7 +42,7 @@ Trammell continued the security discussion, arguing that Bitcoin addresses had a
 
 He endorsed Satoshi's proposed combined IP+Bitcoin address solution, noting that regular transacting parties would already have each other's Bitcoin addresses in their address books.
 
-Trammell then raised an important concern about data loss — one of the earliest discussions of wallet backup:
+Trammell then raised an important concern about data loss — one of the earliest discussions of [wallet backup](/BitcoinArchive/entries/design/2009-01-03-bitcoin-wallet-design/):
 
 <!-- speaker: Dustin Trammell -->
 > One thing that came to mind on this topic is the potential for BitCoin loss if you have a system failure. The application doesn't seem to store any data in the directory that it runs in, so I assume it's stored in the registry and other places ... so it may be a good idea to have the application be able to export everything that it needs for recovery to a file that could be backed up off of the system.

@@ -23,6 +23,8 @@ tags:
 secondarySources:
   - name: "Cointelegraph - Newly released Satoshi emails"
     url: "https://web.archive.org/web/20260219032610/https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
+relatedEntries:
+  - aftermath/2009-01-15-trammell-to-satoshi-mitm-attack
 translationStatus: complete
 ---
 
@@ -41,4 +43,4 @@ translationStatus: complete
 
 サトシは匿名性（完全な身元の隠蔽）と仮名性（分析によって実際の身元と結びつけられうる代替的な身元）の境界を引いた——そして警告は当たった。ブロックチェーン分析は後に大きな産業となり、完全な匿名だと思い込んでいた多くの初期ユーザーのトランザクションが追跡された。
 
-「IP 送金」についての言及は、トランザクションを IP アドレスに直接送信できた初期のビットコイン機能を指している。ネットワークがアドレスベースのトランザクションに移行するにつれて、プライバシーモデルは変化し、サトシはその変化を明確に伝える必要があると感じていた。
+「IP 送金」についての言及は、トランザクションを IP アドレスに直接送信できた初期のビットコイン機能を指している —— この機能について、[ダスティン・トランメルはその 1 年半前に、中間者攻撃に対する脆弱性を指摘していた](/BitcoinArchive/ja/entries/aftermath/2009-01-15-trammell-to-satoshi-mitm-attack/)。ネットワークがアドレスベースのトランザクションに移行するにつれて、プライバシーモデルは変化し、サトシはその変化を明確に伝える必要があると感じていた。

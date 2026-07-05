@@ -46,6 +46,7 @@ relatedEntries:
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency
   - analysis/2009-01-09-satoshi-windows-development-environment
+  - aftermath/1996-02-06-wei-dai-disperse-collect-crypto-plus-plus
 inlineLinkKeywords:
   - "ウェイ・ダイ仮説"
   - "ウェイ・ダイ = サトシ"
@@ -90,6 +91,8 @@ translationStatus: complete
 | v0.1 | 2009-01-09 | Crypto++ 5.5.2 SHA-256 をスタンドアロン (`sha.cpp`、`sha.h`) としてバンドル |
 | v0.3.6 | 2010-07-29 | Crypto++ 5.6.0 SSE2 最適化 SHA-256 を統合 (約 2.5 倍高速化) |
 | v0.5.0 | 2011-11-20 | [Crypto++ サブセット撤去、OpenSSL SHA-256 に置換](/BitcoinArchive/ja/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/) (ニルス・シュナイダーのコミットをギャビン・アンドレセンがマージ) |
+
+ウェイ・ダイ本人による[1996 年の Disperse/Collect 発表](/BitcoinArchive/ja/entries/aftermath/1996-02-06-wei-dai-disperse-collect-crypto-plus-plus/) — ビットコインが存在する 10 年以上前に、同じ Crypto++ ライブラリから作られたもの — が、ビットコインが後に依存することになるこのコードベースの、公開記録上もっとも古い記録である。
 
 このコードベース依存は 22 か月の稼働期間 (v0.1 2009 年 1 月〜v0.4.x) を持ち、サトシの 2011 年 4 月離脱から約 6 か月後に終了した。下記の論点はこの期間に対して有効であり、現在稼働中の Bitcoin Core には及ばない。これはビットコイン v0.1 が名指し候補の公開コードに対して持つ唯一の直接的なコードベースレベルの依存である。論点: (a) b-money が参考文献 [1]、(b) Crypto++ がビットコインのハッシュ基本要素を提供、(c) ウェイ・ダイが両者の唯一の共著者 — これらの組合せが、他のどの候補も占めない構造的位置にウェイ・ダイを置く。
 

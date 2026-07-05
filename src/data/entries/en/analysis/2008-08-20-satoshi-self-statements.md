@@ -51,6 +51,7 @@ relatedEntries:
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2014-03-07-satoshi-p2p-foundation-return
+  - aftermath/2009-07-22-bitcoin-exchange-proposal
 inlineLinkKeywords:
   - "Satoshi's self-statements"
   - "self-statements inventory"
@@ -162,7 +163,7 @@ These are the most evidentially valuable self-references because they are casual
 
 - The "from where I am" disclosure (Hal Finney 2009-01-10) is operational rather than identity-locating — analyzed in [the launch-environment entry](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/).
 - The Linux-expertise self-acknowledgments (the December 2009 forum "less expertise" remark and the December 2010 Gavin email comparing himself to Gavin's Linux skill) corroborate the [code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) finding of a Windows-centered development environment.
-- The "need a break from it after 18 months development" disclosure (Malmi 2009-07-21) is the only explicit fatigue self-statement in the corpus; in retrospect it foreshadows the 2011 departure.
+- The "need a break from it after 18 months development" disclosure (Malmi 2009-07-21) is the only explicit fatigue self-statement in the corpus; in retrospect it foreshadows the 2011 departure. The same email is [the entry for the bootstrap-application proposal it triggered](/BitcoinArchive/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/), which led directly to Bitcoin's first exchange.
 
 ### 2.4 Motivational statements (notably sparse)
 

@@ -30,6 +30,8 @@ relatedEntries:
   - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
   - tweets/wikileaks/2011-06-14-accepts-bitcoin
   - analysis/2008-10-31-cypherpunk-independent-arrival
+  - analysis/2008-10-31-satoshi-anonymity-architecture
+  - aftermath/2008-10-31-satoshi-nakamoto-biography
 quotes:
   - id: "q1"
     person: "WikiLeaks"
@@ -59,13 +61,13 @@ translationStatus: complete
 <!-- quote: q2 -->
 > 「プロジェクトは徐々に成長する必要がある。その過程でソフトウェアを強化できるように。WikiLeaksへ訴える。ビットコインを使うのはやめてくれ。」
 
-WikiLeaks はサトシの懸念を尊重し採用を延期した — 注目すべきは、この発表が[サトシの最終的な退場](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)から 2 か月後だったことだ。
+WikiLeaks はサトシの懸念を尊重し採用を延期した — 注目すべきは、この発表が[サトシの最終的な退場](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)から 2 か月後だったことだ。この 12 月 5 日の反対表明は、サトシの段階的撤退の一過程として[サトシ匿名性のアーキテクチャ分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)でも扱われている。
 
 ビットコインは WikiLeaks の生命線となった。2016年までに、同組織はビットコイン寄付を通じて 4,000 BTC 以上を集めた。ジュリアン・アサンジは後にこう述べた。
 
 <!-- quote: q3 -->
 > 「アメリカ政府は我々にビットコインへの投資を強制した — 金融封鎖のおかげで。我々は50,000%のリターンを得た。」
 
-これはビットコインが検閲耐性のある通貨として広く注目を浴びた最初の場面だった。しかもそれが起きたのは、WikiLeaks に使わないでくれと頼んだ当のサトシが、もう異を唱えられなくなってからのことだった。
+これはビットコインが検閲耐性のある通貨として広く注目を浴びた最初の場面だった。しかもそれが起きたのは、WikiLeaks に使わないでくれと頼んだ当の[サトシ](/BitcoinArchive/ja/entries/aftermath/2008-10-31-satoshi-nakamoto-biography/)が、もう異を唱えられなくなってからのことだった。
 
 アサンジ自身、WikiLeaks 創設の 10年前にあたる 1995年12月から、サイファーパンクのメーリングリストに「Proff」の名で投稿していた初期参加者だった。一方サトシは、[同じ思想の核心に独自にたどり着きながら、このメーリングリストへの参加記録は残っていない](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)。

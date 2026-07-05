@@ -22,6 +22,7 @@ relatedEntries:
   - analysis/2026-05-18-bitcoin-quantum-threat
   - design/2009-01-03-bitcoin-wallet-design
   - design/2009-01-03-bitcoin-security-model
+  - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
 inlineLinkKeywords:
   - "secp256k1"
   - "ECDSA"
@@ -146,10 +147,10 @@ sequenceDiagram
 | **Provable security** | Requires the generic group model or additional assumptions | Provably secure under the discrete logarithm assumption in the random oracle model |
 | **Malleability** | Signature malleable (third party can produce a different valid signature for the same message) | Non-malleable by construction |
 | **Sighash scheme** | Legacy sighash (quadratic hashing for large transactions) | BIP 341 sighash (linear, epoch-tagged) |
-| **Cryptography library** | OpenSSL (v0.1–v0.9); libsecp256k1 (v0.10+) | libsecp256k1 Schnorr module |
+| **Cryptography library** | OpenSSL (consensus-critical through v0.11); libsecp256k1 (wallet signing from v0.10, consensus verification from v0.12) | libsecp256k1 Schnorr module |
 | **Script context** | `OP_CHECKSIG`, `OP_CHECKMULTISIG` | `OP_CHECKSIG` (tapscript variant), `OP_CHECKSIGADD` |
 
-**The OpenSSL exit.** Satoshi's v0.1 relied on OpenSSL for all cryptographic operations — ECDSA signing, ECDSA verification, SHA-256, and random number generation. By v0.10 (2015), Bitcoin Core had migrated ECDSA to libsecp256k1, a purpose-built library offering constant-time operations (side-channel resistance), deterministic nonce generation (RFC 6979), and significantly faster batch verification. The migration also eliminated a class of consensus bugs caused by OpenSSL version differences in DER signature parsing — the motivation behind the BIP 66 strict-DER soft fork.
+**The OpenSSL exit.** Satoshi's v0.1 relied on OpenSSL for all cryptographic operations — ECDSA signing, ECDSA verification, SHA-256, and random number generation. Bitcoin Core's move to libsecp256k1, a purpose-built library offering constant-time operations (side-channel resistance), deterministic nonce generation (RFC 6979), and significantly faster batch verification, happened in two stages, [detailed in a dedicated entry](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/): v0.10 (February 2015) made it the default for wallet signing, but consensus-critical ECDSA verification stayed on OpenSSL until v0.12 (January 2016) — the change that actually eliminated the class of consensus bugs caused by OpenSSL version differences in DER signature parsing, a risk the BIP 66 strict-DER soft fork had patched around in the interim.
 
 ## 4. Address derivation
 

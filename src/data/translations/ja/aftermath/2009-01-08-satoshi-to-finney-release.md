@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2009-01-09-bitcoin-v01-released
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
   - aftermath/2009-01-12-first-bitcoin-transaction
+  - aftermath/2013-03-19-bitcoin-and-me-hal-finney
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -54,4 +55,4 @@ translationStatus: complete
 <!-- speaker: narrator -->
 フィニーはソフトウェアをダウンロードし、2009年1月11日に有名な[「Running bitcoin」ツイート](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)を投稿した。翌日の 1月12日、サトシはブロック 170 でフィニーに 10 BTC を送金した——これが知られている[最初の個人間ビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)である。
 
-ハル・フィニーは後に『Bitcoin and me』の投稿（2013年3月）で次のように回想している。「その後数日間、サトシとメールのやり取りを続けた。主に私がバグを報告し、彼がそれを修正するという内容だった。」
+ハル・フィニーは後に[『Bitcoin and me』の投稿](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/)（2013年3月）で次のように回想している。「その後数日間、サトシとメールのやり取りを続けた。主に私がバグを報告し、彼がそれを修正するという内容だった。」

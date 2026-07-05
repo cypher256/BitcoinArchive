@@ -35,6 +35,7 @@ relatedEntries:
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - bip/2015-11-03-bip-0125
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
+  - design/2009-01-03-bitcoin-monetary-design
 quotes:
   - id: "q1"
     person: "Peter Todd"
@@ -47,7 +48,7 @@ On December 4, 2015, David A. Harding and Peter Todd published BIP 125: "Opt-in 
 
 ## Origin in Satoshi's design
 
-The BIP's rationale explicitly traces the concept to Nakamoto's original Bitcoin implementation, which included a transaction replacement mechanism using nSequence numbers. Satoshi described this concept on BitcoinTalk in December 2010, explaining how senders could update transactions with higher fees. The feature was later removed from Bitcoin Core due to denial-of-service concerns.
+The BIP's rationale explicitly traces the concept to Nakamoto's original Bitcoin implementation, which included a transaction replacement mechanism using nSequence numbers. Satoshi described this concept on BitcoinTalk in December 2010, explaining how senders could update transactions with higher fees. The feature was later removed from Bitcoin Core due to denial-of-service concerns — Satoshi himself disabled it in August 2010, and the dead code was finally deleted in November 2013; the [monetary design entry](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/) tracks this fee-mechanism history in full.
 
 ## The December 2010 connection
 

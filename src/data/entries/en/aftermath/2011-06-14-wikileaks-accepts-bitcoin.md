@@ -30,6 +30,8 @@ relatedEntries:
   - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
   - tweets/wikileaks/2011-06-14-accepts-bitcoin
   - analysis/2008-10-31-cypherpunk-independent-arrival
+  - analysis/2008-10-31-satoshi-anonymity-architecture
+  - aftermath/2008-10-31-satoshi-nakamoto-biography
 quotes:
   - id: "q1"
     person: "WikiLeaks"
@@ -58,13 +60,13 @@ Six months earlier, on December 5, 2010, Satoshi Nakamoto had [warned the commun
 <!-- quote: q2 -->
 > "The project needs to grow gradually so the software can be strengthened along the way. I make this appeal to WikiLeaks not to try to use Bitcoin."
 
-WikiLeaks respected Satoshi's concern and delayed adoption — notably, the announcement came two months after [Satoshi's final departure](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/).
+WikiLeaks respected Satoshi's concern and delayed adoption — notably, the announcement came two months after [Satoshi's final departure](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/). This December 5 objection is also catalogued as a step in Satoshi's staged withdrawal in [the Satoshi anonymity-architecture analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/).
 
 Bitcoin proved to be WikiLeaks' lifeline. By 2016, the organization had raised over 4,000 BTC through Bitcoin donations. Julian Assange later stated:
 
 <!-- quote: q3 -->
 > "The American government forced us to invest in Bitcoin — thanks to the financial blockade. We got a 50,000% return."
 
-It was Bitcoin's first high-profile turn as censorship-resistant money — and it came only after the one person who had asked WikiLeaks to stay away, Satoshi, was no longer around to object.
+It was Bitcoin's first high-profile turn as censorship-resistant money — and it came only after the one person who had asked WikiLeaks to stay away, [Satoshi](/BitcoinArchive/entries/aftermath/2008-10-31-satoshi-nakamoto-biography/), was no longer around to object.
 
 Assange himself had been an early cypherpunks mailing-list participant, posting under the pseudonym "Proff" from December 1995 — a decade before founding WikiLeaks. Satoshi, by contrast, reached the same movement's core principles with [no documented mailing-list history of his own](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).

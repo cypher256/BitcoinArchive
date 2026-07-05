@@ -17,10 +17,11 @@ tags:
 translationStatus: complete
 relatedEntries:
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
+  - aftermath/2010-12-15-bitcoin-v0.3.19-released
 ---
 
 サトシ・ナカモトは 2008年11月9日に SourceForge.net に「bitcoin」プロジェクトを登録した。これは、2008年10月31日に暗号学メーリングリストにビットコインのホワイトペーパーを公開してからわずか 9日後のことであった。
 
 SourceForge は、ビットコインプロジェクトの主要なホスティングプラットフォームとして機能し、ソースコードのバージョン管理（SVN）、ファイルリリースホスティング、そして bitcoin-list メーリングリストを提供した。sourceforge.net/projects/bitcoin/ にあるプロジェクトページは、ビットコインの初期の開発と配布の中心的なハブとなった。
 
-v0.1（2009年1月）から v0.3.19（2010年12月）まで、サトシが出したすべてのリリースはこの SourceForge ページからファイルとして配布された。サトシの活動期間を通じて、プロジェクトはここに置かれていた。
+v0.1（2009年1月）から[v0.3.19（2010年12月）](/BitcoinArchive/ja/entries/aftermath/2010-12-15-bitcoin-v0.3.19-released/) ― サトシの最後のリリース ― まで、サトシが出したすべてのリリースはこの SourceForge ページからファイルとして配布された。サトシの活動期間を通じて、プロジェクトはここに置かれていた。

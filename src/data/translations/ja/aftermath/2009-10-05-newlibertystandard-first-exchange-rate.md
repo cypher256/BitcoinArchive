@@ -27,6 +27,7 @@ relatedEntries:
   - aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
+  - aftermath/2009-07-22-bitcoin-exchange-proposal
 translationStatus: complete
 ---
 
@@ -36,7 +37,7 @@ translationStatus: complete
 
 計算方法：1.00 ドルを CPU 高負荷のコンピューターを 1年間稼働させるのに必要な平均電力量（1,331.5 kWh）で割り、前年のアメリカの平均住宅用電気料金（0.1136 ドル/kWh）を掛け、12ヶ月で割り、過去 30日間に生成されたビットコイン数で割る。
 
-つまり、ビットコインの最初の価格は生産コスト——コインをマイニングする電気代——であって、買い手と売り手が決める市場価格ではなかった。
+つまり、ビットコインの最初の価格は生産コスト——コインをマイニングする電気代——であって、買い手と売り手が決める市場価格ではなかった。これは、[サトシ自身が 6 週間前に説いていた](/BitcoinArchive/ja/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/)のと同じ価格算定の原理である。マルッティ・マルミの取引所提案へのフィードバックとしてのことだった。
 
 その直後の 2009年10月12日、[マルッティ・マルミが NewLibertyStandard に PayPal 経由で 5,050 BTC を 5.02 ドルで売却した](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/) — ビットコインと法定通貨の最初の既知の交換だった。
 

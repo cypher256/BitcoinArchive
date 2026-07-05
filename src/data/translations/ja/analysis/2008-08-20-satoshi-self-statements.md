@@ -51,6 +51,7 @@ relatedEntries:
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2014-03-07-satoshi-p2p-foundation-return
+  - aftermath/2009-07-22-bitcoin-exchange-proposal
 inlineLinkKeywords:
   - "サトシの自己言及"
   - "サトシ自身の言葉"
@@ -162,7 +163,7 @@ D1〜D11 のいずれも確定させないこと: 月単位の精度でのコー
 
 - 「今いる場所からは」の自己開示 (ハル・フィニー 2009-01-10) は、身元の位置づけではなく運用上のもの — [リリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)で扱う
 - Linux 能力の自己認識（2009 年 12 月のフォーラム「専門外」発言、2010 年 12 月のギャビン宛で自分の Linux 能力をギャビンと比較）は、Windows 中心の開発環境という[コード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)の観察と整合する
-- 「18 か月の開発の後で休みが必要だ」の自己開示（マルミ 2009-07-21）はコーパス内で唯一の明示的な疲労表明である。後から見ると 2011 年の撤退の前兆となる
+- 「18 か月の開発の後で休みが必要だ」の自己開示（マルミ 2009-07-21）はコーパス内で唯一の明示的な疲労表明である。後から見ると 2011 年の撤退の前兆となる。同じメールは、[それが引き金となったブートストラップ・アプリケーション提案のエントリー](/BitcoinArchive/ja/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/)でもあり、ビットコイン初の取引所へと直接つながった
 
 ### 2.4 動機表明（特に乏しい）
 

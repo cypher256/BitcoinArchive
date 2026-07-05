@@ -73,6 +73,7 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-10-satoshi-launch-environment
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - aftermath/2011-06-14-wikileaks-accepts-bitcoin
 inlineLinkKeywords:
   - "匿名性のアーキテクチャ"
   - "サトシ匿名性のアーキテクチャ"
@@ -193,7 +194,7 @@ v0.1 コードベース・配布アーカイブ・バージョン管理履歴の
 |---|---|---|
 | 2010 年 9 月 | サトシ → ギャビン・アンドレセンへメール「他のプロジェクトに取り組んでいる」。具体的な日付・媒体は公開記録になく、アンドレセンの後年の回想からの再構成。 | ギャビン・アンドレセンのインタビュー ([CoinMarketCap「Satoshi Files: ギャビン・アンドレセン」](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)) |
 | 2010 年 12 月 3 日 | サトシ → マルッティ・マルミ「ギャビンが適任だ。彼は信頼できる。責任感があり、プロフェッショナルだ。Linux に関しては、技術的に私よりずっと上だ。」 (アンドレセンが適任である理由として信頼性・責任感・プロフェッショナリズム・Linux 能力を挙げる) | [`mmalmi.github.io/satoshi` 公開メール](/BitcoinArchive/ja/entries/aftermath/2009-05-02-first-contact-satoshi-reply/) |
-| 2010 年 12 月 5 日 | BitcoinTalk「Bring it on」スレッドへのサトシの公的反対投稿: 「いや、『bring it on』ではない。プロジェクトは段階的に成長させる必要があり、その過程でソフトウェアも強化されていく」 | [BitcoinTalk スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2216/2010-12-11-re-wikileaks-hornet-nest/) |
+| 2010 年 12 月 5 日 | BitcoinTalk「Bring it on」スレッドへのサトシの公的反対投稿: 「いや、『bring it on』ではない。プロジェクトは段階的に成長させる必要があり、その過程でソフトウェアも強化されていく」 | [BitcoinTalk スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/)、詳細は[ウィキリークスとビットコインのエントリー](/BitcoinArchive/ja/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/)で扱う |
 | 2010 年 12 月 12 日 | サトシ → アンドレセン、SourceForge リポジトリへのコミット権を正式譲渡 (メール)。同日公開側: BitcoinTalk の DDoS 緩和スレッドにて最終公開投稿、結びは「あといくつかのことを行ったら、バトンを渡す予定だ。」 | COPA v Wright 公開証拠資料、[BitcoinTalk スレッド](https://bitcointalk.org/index.php?topic=2228.msg29699#msg29699) |
 | 2010 年 12 月 15 日 | サトシ最終 SVN コミット (revision 202) — IRC 経由の外部 IP 取得処理の小さな修正。 | SourceForge SVN 履歴 |
 | 2010 年 12 月 19 日 | アンドレセンがリードメンテナーとしての就任を公式に発表。同日、GitHub `bitcoin/bitcoin` リポジトリ作成。 | BitcoinTalk アナウンスメント |

@@ -25,6 +25,7 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-wallet-location
   - aftermath/2009-01-11-dustin-trammell-biography
+  - design/2009-01-03-bitcoin-storage-design
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -45,4 +46,4 @@ Regarding the unclean socket closure Trammell had reported:
 <!-- speaker: Satoshi Nakamoto -->
 > Just now added code to the next release for that.
 
-This brief exchange demonstrates Satoshi's rapid development cycle in Bitcoin's earliest days — Trammell reported a bug and Satoshi had already coded a fix by the time he replied. The DBM (Berkeley DB) database choice would later prove significant when a database lock limit issue caused a chain fork in March 2013.
+This brief exchange demonstrates Satoshi's rapid development cycle in Bitcoin's earliest days — Trammell reported a bug and Satoshi had already coded a fix by the time he replied. The DBM (Berkeley DB) database choice would later prove significant when [a database lock limit issue caused a chain fork in March 2013](/BitcoinArchive/entries/design/2009-01-03-bitcoin-storage-design/).

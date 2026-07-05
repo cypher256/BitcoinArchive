@@ -35,6 +35,7 @@ relatedEntries:
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - bip/2015-11-03-bip-0125
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
+  - design/2009-01-03-bitcoin-monetary-design
 quotes:
   - id: "q1"
     person: "Peter Todd"
@@ -50,7 +51,7 @@ translationStatus: complete
 ## サトシの設計に起源
 
 <!-- speaker: narrator -->
-BIP の Rationale（根拠）は、ナカモトのオリジナルの Bitcoin 実装にあった nSequence 番号を使用したトランザクション置換メカニズムから概念を明示的に辿っている。サトシは 2010年12月に BitcoinTalk でこの概念を説明し、送信者がより高い手数料でトランザクションを更新できる方法を述べた。この機能は DoS 攻撃の懸念から Bitcoin Core から削除された。
+BIP の Rationale（根拠）は、ナカモトのオリジナルの Bitcoin 実装にあった nSequence 番号を使用したトランザクション置換メカニズムから概念を明示的に辿っている。サトシは 2010年12月に BitcoinTalk でこの概念を説明し、送信者がより高い手数料でトランザクションを更新できる方法を述べた。この機能は DoS 攻撃の懸念から Bitcoin Core から削除された — サトシ自身が 2010 年 8 月に無効化し、残っていた不要コードは 2013 年 11 月に最終的に削除された。この手数料機構の歴史は[通貨設計エントリー](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)で通しで追える。
 
 ## 2010年12月のつながり
 

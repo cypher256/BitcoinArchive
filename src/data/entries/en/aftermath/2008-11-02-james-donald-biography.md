@@ -32,20 +32,22 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald"
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
+  - aftermath/2009-01-03-genesis-block
+  - analysis/2026-05-24-satoshi-design-vs-current-reality
 ---
 
 Two days after [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) [posted the Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) to the cryptography mailing list on October 31, 2008, James A. Donald [became the first person to publicly respond](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald/):
 
 > "We very, very much need such a system, but the way I understand your proposal, it does not seem to scale to the required size."
 
-His skepticism pulled some of Satoshi's most detailed early architectural explanations into the public record — simplified payment verification, the trust and double-spend model. Donald is a cryptographer and libertarian commentator long active in the cypherpunk community; he maintained the website jim.com on cryptography, political philosophy, and economics.
+His skepticism pulled some of Satoshi's most detailed early architectural explanations into the public record — simplified payment verification, the trust and double-spend model — including the reply the [genesis-block entry](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/) treats as Satoshi's closest registered moment of personal conviction. Donald is a cryptographer and libertarian commentator long active in the cypherpunk community; he maintained the website jim.com on cryptography, political philosophy, and economics.
 
 ## First Response to the Bitcoin White Paper
 
 Donald argued in his November 2 reply that the system would require every node to process every transaction, making it impractical for widespread use.
 
 ## Technical Exchange with Satoshi
-Across November 2008, Satoshi answered the scaling objection point by point: not every node need process every transaction — simplified payment verification would let lightweight clients confirm payments without storing the full chain. Days later, in a [November 9 message](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-09-james-donald-bitcoin-p2p-e-cash-paper/), Donald coined a name for a bitcoin bank — a "bink" — and cast bitcoins as a settlement layer beneath account money, the way gold sat beneath the gold standard; it anticipated the exchanges and custodians that would later dominate. Pressed on trust and double-spending, Satoshi spelled out the model in unusual detail.
+Across November 2008, Satoshi answered the scaling objection point by point: not every node need process every transaction — simplified payment verification would let lightweight clients confirm payments without storing the full chain. Days later, in a [November 9 message](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-09-james-donald-bitcoin-p2p-e-cash-paper/), Donald coined a name for a bitcoin bank — a "bink" — and cast bitcoins as a settlement layer beneath account money, the way gold sat beneath the gold standard; it anticipated the exchanges and custodians that would later dominate. The archive's own [reading of how Bitcoin's custody and scaling reality has drifted from the whitepaper](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) independently describes the same outcome — Bitcoin functioning as a settlement layer beneath stacked exchange, ETF, and Lightning custodians. Pressed on trust and double-spending, Satoshi spelled out the model in unusual detail.
 
 ## Significance
 Donald's critical engagement with the white paper forced Satoshi to articulate Bitcoin's scalability model and trust assumptions in a public forum. He stayed skeptical of Bitcoin's feasibility — but a doubter asking the first hard questions is exactly why some of Bitcoin's earliest design rationale sits in the public record at all.

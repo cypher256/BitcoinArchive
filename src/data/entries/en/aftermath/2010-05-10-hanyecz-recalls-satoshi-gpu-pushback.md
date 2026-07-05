@@ -27,6 +27,7 @@ relatedEntries:
   - aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code
   - aftermath/2010-05-22-laszlo-hanyecz-biography
   - aftermath/2010-05-22-bitcoin-pizza-day
+  - analysis/2026-05-24-satoshi-design-vs-current-reality
 ---
 
 *[Editor: this entry is a recollection-based article, not a primary-source private email record. The verifiable primary-source element is Hanyecz's GPU mining announcement on Bitcointalk (May 10, 2010, on the public forum record). The Satoshi side of the exchange — the private emails quoted below — is from Hanyecz's later interview accounts. The original email text has not been publicly released; what appears below is Hanyecz's recall of phrasing and content as shared in interviews with CoinDesk (2025), Bitcoin Magazine, and Cointelegraph.]*
@@ -49,4 +50,4 @@ Hanyecz later recalled feeling guilty about the impact of his discovery. In a 20
 
 This exchange — as Hanyecz recounts it — is editorially revealing because the recalled Satoshi was not opposed to GPU mining on ideological grounds. He explicitly (per Hanyecz) said he did not care about wealth concentration. The concern as Hanyecz frames it was purely strategic: premature GPU adoption would harm early network growth by removing the incentive for ordinary users to participate. Whether the original emails carried this exact framing, or whether the recall has reshaped it in retrospect, cannot be determined from the present record.
 
-The other half of this recalled exchange appears a week later in [Satoshi's reciprocal sharing of his own defensive GPU code](/BitcoinArchive/entries/aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code/): the same public discouragement described here is what Satoshi paired — per Hanyecz — with privately keeping a GPU miner ready as insurance against a 51% attack.
+The other half of this recalled exchange appears a week later in [Satoshi's reciprocal sharing of his own defensive GPU code](/BitcoinArchive/entries/aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code/): the same public discouragement described here is what Satoshi paired — per Hanyecz — with privately keeping a GPU miner ready as insurance against a 51% attack. This same episode is independently cited, from the opposite end of Bitcoin's history, as [the starting point of the mining-hardware centralization drift](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) from Satoshi's "one-CPU-one-vote" design intent.

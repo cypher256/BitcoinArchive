@@ -23,6 +23,7 @@ secondarySources:
     url: "https://www.brainpreservation.org/team/eugen-leitl/"
 relatedEntries:
   - emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows
+  - aftermath/2009-12-16-bitcoin-v0.2-released
 ---
 
 On October 26, 2009, German cryobiologist and transhumanist Eugen Leitl asked the bitcoin-list mailing list:
@@ -37,4 +38,4 @@ Leitl is a computer scientist who has long taken part in discussions on anonymit
 On October 26, 2009, Leitl replied to a thread on the bitcoin-list mailing list titled ["Does Bitcoin Crash in Windows?"](/BitcoinArchive/entries/emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows/) in which [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) had responded to Liberty Standard's report of crashes under Wine. Leitl quoted Satoshi's remark that "bitcoin.sourceforge.net looks fine now" and noted that the site was not working when he checked. He also asked: "Still no .deb packages for Bitcoin?" — highlighting early demand for Linux packaging of the software.
 
 ## Significance
-The thread's crashes were happening under Wine, and Leitl's request for `.deb` packages was another symptom of the same gap: nearly ten months after release, Bitcoin still had no easy path onto Linux — even as it drew interest well beyond the cryptography mailing list.
+The thread's crashes were happening under Wine, and Leitl's request for `.deb` packages was another symptom of the same gap: nearly ten months after release, Bitcoin still had no easy path onto Linux — even as it drew interest well beyond the cryptography mailing list. The gap closed seven weeks later, when [Bitcoin v0.2 shipped a Linux build tested on Ubuntu](/BitcoinArchive/entries/aftermath/2009-12-16-bitcoin-v0.2-released/).

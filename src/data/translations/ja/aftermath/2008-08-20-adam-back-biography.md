@@ -45,6 +45,7 @@ relatedEntries:
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
+  - "aftermath/2008-08-21-satoshi-to-adam-back-b-money"
 translationStatus: complete
 ---
 
@@ -52,6 +53,8 @@ translationStatus: complete
 
 <!-- speaker: Satoshi Nakamoto -->
 > 「ありがとう。b-moneyは読んだことがなかったが、私のアイデアはまさにその出発点から始まっている。私のシステムが追加した主なものは、分散タイムスタンプサーバーを支えるためにプルーフ・オブ・ワークを使うことだ。」
+
+この返信は[専用のエントリー](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)で詳しく扱われており、サトシがビットコインの設計に独自に到達したことを示す一次資料の一つとして読まれている。
 
 2026 年 4 月、[NYT と記者カレイロウは、フォーラム投稿とメールの文体計量解析でバックをサトシの最有力候補](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)と名指した。バックは公的に否定した。この仮説は[専用の正体仮説分析](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)で複数階層のうちの一つとして扱われている。
 

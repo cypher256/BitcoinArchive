@@ -73,6 +73,7 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-10-satoshi-launch-environment
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - aftermath/2011-06-14-wikileaks-accepts-bitcoin
 inlineLinkKeywords:
   - "anonymity architecture"
   - "Satoshi anonymity architecture"
@@ -190,7 +191,7 @@ Satoshi's withdrawal from the project does not occur as a single event. The docu
 |---|---|---|
 | September 2010 | Satoshi tells Gavin Andresen privately that he is "moving on to other projects." Exact date and medium not in the public record; reconstructed from Andresen's later recollection. | Gavin Andresen interview ([CoinMarketCap "Satoshi Files: Gavin Andresen"](https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen)) |
 | December 3, 2010 | Satoshi → Martti Malmi: "It should be Gavin [Andresen]. I trust him, he's responsible, professional, and technically much more Linux capable than me." | [`mmalmi.github.io/satoshi` released correspondence](/BitcoinArchive/entries/aftermath/2009-05-02-first-contact-satoshi-reply/) |
-| December 5, 2010 | WikiLeaks-related thread "Bring it on" on BitcoinTalk; Satoshi posts public objection: "No, don't 'bring it on'. The project needs to grow gradually so the software can be strengthened along the way." | [BitcoinTalk thread](/BitcoinArchive/entries/forum/bitcointalk/topic-2216/2010-12-11-re-wikileaks-hornet-nest/) |
+| December 5, 2010 | WikiLeaks-related thread "Bring it on" on BitcoinTalk; Satoshi posts public objection: "No, don't 'bring it on'. The project needs to grow gradually so the software can be strengthened along the way." | [BitcoinTalk thread](/BitcoinArchive/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/), examined in full in [the WikiLeaks-and-Bitcoin entry](/BitcoinArchive/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/) |
 | December 12, 2010 | Satoshi grants Andresen formal commit access to the SourceForge repository (private). Public-side: Satoshi's final BitcoinTalk post (in a DDoS-mitigation thread) closes with "I'm doing a few more things, then I plan to pass the baton." | COPA v Wright public exhibits; [BitcoinTalk thread](https://bitcointalk.org/index.php?topic=2228.msg29699#msg29699) |
 | December 15, 2010 | Satoshi's final SVN commit (revision 202) — a small change to IRC external-IP retrieval. | SourceForge SVN history |
 | December 19, 2010 | Andresen publicly announces lead-maintainer role. Same day, the GitHub `bitcoin/bitcoin` repository is created. | BitcoinTalk announcement |

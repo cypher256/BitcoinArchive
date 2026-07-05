@@ -27,6 +27,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2010-07-15-jeff-garzik-biography
   - aftermath/2018-10-29-jeff-garzik-retrospective
+  - analysis/2009-01-09-satoshi-windows-development-environment
 ---
 
 Satoshi as a coder, he's more the "A Beautiful Mind" type lone genius.
@@ -35,4 +36,4 @@ He was a self-taught programmer. He was humble about his limitations.
 
 Satoshi would never stray from that topic. He would never let slip any personal information whatsoever, never talk about his mood, the time of day. It was always 100% all about Bitcoin.
 
-These remarks come from a series of videos released by [Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/) in October–November 2024, reflecting on his experience as one of Bitcoin's earliest core developers (2010–2017). Garzik noted that [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) pulled well-known cryptographic solutions "off the shelf" and combined them in a novel way, but lacked formal computer science training in areas like modularity and unit testing.
+These remarks come from a series of videos released by [Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/) in October–November 2024, reflecting on his experience as one of Bitcoin's earliest core developers (2010–2017). Garzik noted that [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) pulled well-known cryptographic solutions "off the shelf" and combined them in a novel way, but lacked formal computer science training in areas like modularity and unit testing. [Satoshi's Windows-only development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) reaches the same reading from the source code and commit history directly: twenty-seven months without version control, a test suite, an issue tracker, or a second reviewer.

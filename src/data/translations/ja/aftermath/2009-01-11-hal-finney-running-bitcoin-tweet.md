@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
   - "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release"
+  - aftermath/2014-08-28-hal-finney-passes-away
 quotes:
   - id: "q1"
     person: "Hal Finney"
@@ -54,6 +55,6 @@ translationStatus: complete
 
 2 日後、2009 年 1 月 12 日、[最初のビットコイン送金](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)がネットワーク上を渡った。サトシは自分のノードからフィニーのノードへ 10 BTC を送金した (TX `f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16`)。ツイートはその送金の前提条件 ― 2 番目の運用者、その名前、到達可能性、同じソフトウェアが動いていること ― を可視化したのであって、送金自体を引き起こしたのではない。
 
-ツイートは 2 語だった。フィニーがビットコインに関わった記録は、その瞬間から 5 年半続き、2014 年に ALS による彼の死で終わった。非サトシ参加者がシステムについて発した最短の宣言は、ビットコイン初期の歴史における最も長く、最も詳細に記録された関与の一つの入り口に置かれている。
+ツイートは 2 語だった。フィニーがビットコインに関わった記録は、その瞬間から 5 年半続き、[2014 年に ALS による彼の死](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/)で終わった。非サトシ参加者がシステムについて発した最短の宣言は、ビットコイン初期の歴史における最も長く、最も詳細に記録された関与の一つの入り口に置かれている。
 
 *[補足：ハル・フィニーの「Running bitcoin」は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』で名指しで描かれる場面の一つ ― 第二のノード運用者からの最初の合図、主人公のシステムが彼ひとりのものではなくなった瞬間 ― として扱われる。]*

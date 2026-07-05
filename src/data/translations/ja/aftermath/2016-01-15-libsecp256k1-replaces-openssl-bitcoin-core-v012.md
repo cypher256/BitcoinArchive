@@ -43,6 +43,7 @@ relatedEntries:
   - "bip/2020-01-19-bip-0341"
   - "analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies"
   - "aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency"
+  - design/2009-01-03-bitcoin-cryptography-design
 translationStatus: complete
 ---
 
@@ -70,6 +71,8 @@ libsecp256k1 プロジェクトは 2013年3月5日、[ピーター・ウィー�
 
 - **Bitcoin Core v0.10**（2015年2月）: ウォレット署名の標準として libsecp256k1 を採用。
 - **Bitcoin Core v0.12**（2016年1月15日）: 合意クリティカルな ECDSA 署名検証の標準として libsecp256k1 を採用。
+
+[暗号設計エントリー](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)も、ビットコインの署名方式の変遷を扱う中でこの 2 段階の展開を記述している。
 
 ## 意義
 

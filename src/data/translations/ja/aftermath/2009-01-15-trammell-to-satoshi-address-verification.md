@@ -26,6 +26,7 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-address-verification
   - aftermath/2009-01-11-dustin-trammell-biography
+  - design/2009-01-03-bitcoin-wallet-design
 quotes:
   - id: "q1"
     person: "Dustin Trammell"
@@ -45,7 +46,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 サトシが提案した IP とビットコインアドレスを組み合わせた解決策を支持し、定期的に取引する相手は既にアドレス帳に互いのビットコインアドレスを持っているだろうと指摘した。
 
-続いてトランメルはデータ喪失について重要な懸念を提起した――ウォレットバックアップに関する最も初期の議論の一つである。
+続いてトランメルはデータ喪失について重要な懸念を提起した――[ウォレットバックアップ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-wallet-design/)に関する最も初期の議論の一つである。
 
 <!-- speaker: Dustin Trammell -->
 > この話題で思い浮かんだことが一つある。システム障害が発生した場合のビットコイン喪失の可能性だ。アプリケーションは実行ディレクトリにデータを保存していないようなので、レジストリやその他の場所に保存されていると思うが……復旧に必要なすべてのデータをシステム外にバックアップできるファイルにエクスポートする機能があると良いんじゃないか。

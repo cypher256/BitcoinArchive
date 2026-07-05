@@ -38,6 +38,9 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-code-analysis
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2008-08-20-satoshi-self-statements
+  - aftermath/2009-04-12-mike-hearn-biography
+  - aftermath/2009-05-03-malmi-agrees-to-help
+  - aftermath/2009-01-15-satoshi-to-trammell-attack-types
 ---
 
 In May 2009, a 20-year-old Helsinki computer-science student wrote to Satoshi Nakamoto offering to help. Over the next two years they exchanged roughly 260 emails — the largest known volume of correspondence between Satoshi and any single individual. Malmi kept the archive private for thirteen years. In February 2024 he submitted it as evidence in the [COPA v Wright trial](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/).
@@ -85,6 +88,6 @@ On [December 3, 2010](/BitcoinArchive/entries/aftermath/2010-12-03-handover-to-g
 This private exchange anchored the [formal SVN handover to Andresen on December 12, 2010](/BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/) and [Andresen's public assumption of project management on December 19, 2010](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/).
 
 ## Later Years
-Malmi continued occasional correspondence with Satoshi into early 2011. The [final known email Satoshi sent to Malmi was on February 22, 2011](/BitcoinArchive/entries/aftermath/2011-02-22-satoshi-final-email-to-malmi/) — two months before Satoshi's last private exchanges with Mike Hearn and Gavin Andresen. Malmi gradually reduced his involvement in Bitcoin development around 2011 as other developers took on larger roles. He went on to work in the technology industry in Finland.
+Malmi continued occasional correspondence with Satoshi into early 2011. The [final known email Satoshi sent to Malmi was on February 22, 2011](/BitcoinArchive/entries/aftermath/2011-02-22-satoshi-final-email-to-malmi/) — two months before Satoshi's last private exchanges with [Mike Hearn](/BitcoinArchive/entries/aftermath/2009-04-12-mike-hearn-biography/) and Gavin Andresen. Malmi gradually reduced his involvement in Bitcoin development around 2011 as other developers took on larger roles. He went on to work in the technology industry in Finland.
 
 *[Context: Martti Malmi appears in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) as the first developer to join the protagonist — the Helsinki student who builds the Linux port, the SVN repository, and bitcoin.org, and who later receives the protagonist's parting handover note.]*

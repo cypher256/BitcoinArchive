@@ -38,6 +38,8 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
+  - aftermath/2008-08-21-adam-back-to-satoshi-micromint
+  - aftermath/2009-01-10-satoshi-to-adam-back-launch
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -63,7 +65,7 @@ On his biggest regret, Back was candid:
 <!-- audit:quote-skip -->
 > "I initially failed to read the Bitcoin whitepaper carefully. That was probably my biggest mistake."
 
-Back opened the attached whitepaper, gave it a cursory glance, typed back a brief response suggesting Wei Dai's b-money, and closed his laptop. He didn't begin actively using or promoting Bitcoin until around 2013.
+Back opened the attached whitepaper, gave it a cursory glance, typed back a brief response suggesting Wei Dai's b-money, and closed his laptop. That contemporaneous brush-off is on the record in his own words — "Sorry still not read your paper yet" — in [the MicroMint email](/BitcoinArchive/entries/aftermath/2008-08-21-adam-back-to-satoshi-micromint/). He didn't begin actively using or promoting Bitcoin until around 2013, the same gap [Satoshi's final email to Back](/BitcoinArchive/entries/aftermath/2009-01-10-satoshi-to-adam-back-launch/) closes out from the other end.
 
 On his early doubts about Bitcoin, Back later told CoinShares:
 

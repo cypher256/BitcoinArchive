@@ -20,6 +20,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-transaction-design
   - design/2009-01-03-bitcoin-block-chain-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - aftermath/2009-01-16-satoshi-to-trammell-wallet-location
 inlineLinkKeywords:
   - "UTXO set"
   - "LevelDB"
@@ -304,7 +305,7 @@ assumeUTXO does not change the consensus rules. It changes the **order** in whic
 | **Initial block download** | Minutes (few blocks existed) | Hours to >1 day without assumeUTXO; minutes with assumeUTXO snapshot |
 | **On-disk size** | Negligible (chain was tiny) | ~650+ GB archival; ~10 GB pruned; ~7 GB coins database |
 
-**The BDB → LevelDB migration (v0.8, March 2013).** Satoshi's original implementation stored everything — block data, transaction index, UTXO state — in a single Berkeley DB database. As the chain grew, BDB's lock limits and memory characteristics became bottlenecks. The v0.8 release replaced BDB with LevelDB for the UTXO set and block index, and moved block data to the flat-file format still in use today. This migration was not without incident: a consensus-splitting fork occurred on March 11, 2013, when nodes running v0.7 (BDB) and v0.8 (LevelDB) disagreed on block validity due to a BDB lock-count limit that LevelDB did not share. The fork was resolved by coordinated miner action to abandon the longer v0.8 chain — one of the few deliberate chain reorganizations in Bitcoin's history.
+**The BDB → LevelDB migration (v0.8, March 2013).** Satoshi's original implementation stored everything — block data, transaction index, UTXO state — in a single Berkeley DB database, a choice [he explained directly to an early user in January 2009](/BitcoinArchive/entries/aftermath/2009-01-16-satoshi-to-trammell-wallet-location/) as "a transactional database DBM, so it should be safe from loss if there's a crash or power failure." As the chain grew, BDB's lock limits and memory characteristics became bottlenecks. The v0.8 release replaced BDB with LevelDB for the UTXO set and block index, and moved block data to the flat-file format still in use today. This migration was not without incident: a consensus-splitting fork occurred on March 11, 2013, when nodes running v0.7 (BDB) and v0.8 (LevelDB) disagreed on block validity due to a BDB lock-count limit that LevelDB did not share. The fork was resolved by coordinated miner action to abandon the longer v0.8 chain — one of the few deliberate chain reorganizations in Bitcoin's history.
 
 ## 9. Limits of this page
 

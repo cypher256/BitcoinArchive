@@ -25,6 +25,8 @@ secondarySources:
     note: "2024年2月、ロンドンで行われた COPA 対クレイグ・ライト裁判において証拠として提出された。アダム・バックの第二証人陳述書（文書 C/21）に 5 通の完全なメールチェーンが含まれていた"
   - name: "Bitstamp - Who is Adam Back?"
     url: "https://www.bitstamp.net/learn/people-profiles/adam-back/"
+relatedEntries:
+  - aftermath/2024-02-21-adam-back-retrospective-testimony
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -54,4 +56,4 @@ translationStatus: complete
 > ビットコインは非常に有望なアイデアに思える。誠実な参加者の CPU 能力が攻撃者のそれを上回るという仮定にセキュリティの基盤を置く発想が気に入った。
 
 <!-- speaker: narrator -->
-このメールが、サトシとアダム・バックの間で知られている最後の直接的なやり取りである。バックはこの時点でビットコインに関与せず、積極的に参加するようになったのは 2013 年以降で、2014 年に Blockstream 社を設立した。2008年 8 月 20 日から 2009年 1 月 10 日にかけての 5 通のメールチェーンは、Hashcash の考案者へのサトシの働きかけ、それを介したウェイ・ダイの b-money の発見、そして稼働するシステムの公開報告までを記録している。
+このメールが、サトシとアダム・バックの間で知られている最後の直接的なやり取りである。バックはこの時点でビットコインに関与せず、積極的に参加するようになったのは 2013 年以降で、2014 年に Blockstream 社を設立した — バック自身が後に[2024年の回顧](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)で「おそらく私の最大の失敗だった」と振り返る空白である。2008年 8 月 20 日から 2009年 1 月 10 日にかけての 5 通のメールチェーンは、Hashcash の考案者へのサトシの働きかけ、それを介したウェイ・ダイの b-money の発見、そして稼働するシステムの公開報告までを記録している。

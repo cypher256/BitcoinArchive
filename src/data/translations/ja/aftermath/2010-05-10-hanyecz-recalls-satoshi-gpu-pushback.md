@@ -27,6 +27,7 @@ relatedEntries:
   - aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code
   - aftermath/2010-05-22-laszlo-hanyecz-biography
   - aftermath/2010-05-22-bitcoin-pizza-day
+  - analysis/2026-05-24-satoshi-design-vs-current-reality
 translationStatus: complete
 ---
 
@@ -53,4 +54,4 @@ translationStatus: complete
 
 このやり取り — ハニエツが回想する形では — は編集的に示唆に富んでいる。回想されるサトシは、イデオロギー的な理由で GPU マイニングに反対していたわけではない。富の集中は気にしないとも明言していた、とハニエツは伝えている。ハニエツの枠組みでは、サトシの懸念は純粋に戦略的なもので、GPU の早すぎる普及は一般ユーザーが参加するインセンティブを奪うことで初期のネットワーク成長を阻害する、というものだった。元のメールがこの枠組みを正確にもっていたのか、それとも回想の過程で枠組みが整理されたのかは、現在の記録では分離不能である。
 
-この回想されたやり取りのもう半分は、 1 週間後の[サトシによる自作の防衛用 GPU コードの返礼的な共有](/BitcoinArchive/ja/entries/aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code/)に現れる。ここで述べた公の抑制と、 51% 攻撃への保険として私的に GPU マイナーを準備しておいたこと — ハニエツによれば、サトシはこの両方を併せ持っていたという。
+この回想されたやり取りのもう半分は、 1 週間後の[サトシによる自作の防衛用 GPU コードの返礼的な共有](/BitcoinArchive/ja/entries/aftermath/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code/)に現れる。ここで述べた公の抑制と、 51% 攻撃への保険として私的に GPU マイナーを準備しておいたこと — ハニエツによれば、サトシはこの両方を併せ持っていたという。この同じ出来事は、ビットコイン史の反対側の端からも独立に引用されている ―― サトシの「1 CPU = 1 票」という設計意図からの[マイニングハードウェア集中化という乖離の起点](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)として。

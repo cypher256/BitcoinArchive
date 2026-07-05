@@ -22,6 +22,7 @@ relatedEntries:
   - analysis/2026-05-18-bitcoin-quantum-threat
   - design/2009-01-03-bitcoin-wallet-design
   - design/2009-01-03-bitcoin-security-model
+  - aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012
 inlineLinkKeywords:
   - "secp256k1"
   - "ECDSA"
@@ -147,10 +148,10 @@ sequenceDiagram
 | **証明可能な安全性** | 汎用群モデルまたは追加の仮定が必要 | ランダムオラクルモデルにおける離散対数仮定の下で証明可能な安全性 |
 | **改竄可能性** | 署名の改竄が可能（第三者が同じメッセージに対して異なる有効な署名を生成可能） | 構成上改竄不能 |
 | **sighash 方式** | レガシー sighash（大規模トランザクションでは二乗的ハッシュ計算） | BIP 341 sighash（線形、エポックタグ付き） |
-| **暗号ライブラリー** | OpenSSL（v0.1〜v0.9）; libsecp256k1（v0.10 以降） | libsecp256k1 シュノアモジュール |
+| **暗号ライブラリー** | OpenSSL（合意検証は v0.11 まで）; libsecp256k1（ウォレット署名は v0.10 以降、合意検証は v0.12 以降） | libsecp256k1 シュノアモジュール |
 | **スクリプトコンテキスト** | `OP_CHECKSIG`、`OP_CHECKMULTISIG` | `OP_CHECKSIG`（tapscript 版）、`OP_CHECKSIGADD` |
 
-**OpenSSL からの離脱。** サトシの v0.1 はすべての暗号演算 — ECDSA 署名、ECDSA 検証、SHA-256、乱数生成 — を OpenSSL に依存していた。v0.10（2015 年）までに Bitcoin Core は ECDSA を libsecp256k1 に移行した。これは定時間演算（サイドチャネル耐性）、決定性ナンス生成（RFC 6979）、大幅に高速なバッチ検証を提供する専用ライブラリーである。この移行はまた、OpenSSL バージョン間の DER 署名解析の差異に起因する合意形成バグのクラスを排除した — BIP 66 の厳密 DER ソフトフォークの動機となったものである。
+**OpenSSL からの離脱。** サトシの v0.1 はすべての暗号演算 — ECDSA 署名、ECDSA 検証、SHA-256、乱数生成 — を OpenSSL に依存していた。Bitcoin Core が libsecp256k1(定時間演算によるサイドチャネル耐性、決定性ナンス生成 RFC 6979、大幅に高速なバッチ検証を提供する専用ライブラリー)へ移行したのは 2 段階に分かれる([専用エントリーで詳述](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/)): v0.10(2015 年 2 月)でウォレット署名の標準となったが、合意クリティカルな ECDSA 検証は OpenSSL のまま残り、v0.12(2016 年 1 月)になって初めて標準となった。OpenSSL バージョン間の DER 署名解析の差異に起因する合意形成バグのクラスを実際に排除したのはこの v0.12 の変更であり、それまでの間は BIP 66 の厳密 DER ソフトフォークが応急処置として機能していた。
 
 ## 4. アドレス導出
 
