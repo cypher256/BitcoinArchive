@@ -38,6 +38,7 @@ relatedEntries:
   - analysis/2009-01-10-satoshi-launch-environment
   - analysis/2008-08-20-satoshi-self-statements
   - aftermath/2019-04-01-fran-finney-hal-finney-profile
+  - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
 quotes:
   - id: "q1"
     person: "Hal Finney"
@@ -81,6 +82,6 @@ A follow-up after Bitcoin's launch:
 The phrase "from where I am" is examined alongside the cadence of Satoshi's launch-week activity in a [forensic reading of his launch-period environment](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/).
 
 ## The Timezone Mystery
-Satoshi's January 2009 email headers showed a timezone **eight hours ahead of GMT (UTC+8)** — inconsistent with Japan's UTC+9 offset. This initially fueled speculation about Satoshi's location. However, Doncho Karaivanov of Chain Bulletin argued the UTC+8 timestamp came from AnonymousSpeech.com's email server (based in Tokyo since 1996), not Satoshi's local machine. When using webmail, the Date header timezone reflects the server, not the user's location.
+Satoshi's January 2009 email headers showed a timezone **eight hours ahead of GMT (UTC+8)** — inconsistent with Japan's UTC+9 offset. This initially fueled speculation about Satoshi's location. However, Doncho Karaivanov of Chain Bulletin argued the UTC+8 timestamp came from AnonymousSpeech.com's email server (based in Tokyo since 1996), not Satoshi's local machine. When using webmail, the Date header timezone reflects the server, not the user's location. Karaivanov had separately built [a broader case for a London-based Satoshi](/BitcoinArchive/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/) from 742 timestamped BitcoinTalk posts, SourceForge commits, and mailing-list emails converted to GMT — a GMT-consistent pattern this UTC+8 email header does not contradict, since it traces to the mail server rather than to Satoshi himself.
 
 Finney himself recalled this email correspondence with Satoshi in his 2013 essay ["Bitcoin and Me"](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/), where he described reporting bugs to Satoshi in the days following the v0.1 release.

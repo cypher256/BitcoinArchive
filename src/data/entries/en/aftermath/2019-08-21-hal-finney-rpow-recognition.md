@@ -32,6 +32,7 @@ relatedEntries:
   - aftermath/2014-08-28-hal-finney-passes-away
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
+  - aftermath/2009-01-12-first-bitcoin-transaction
 ---
 
 [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s Reusable Proofs of Work (RPOW) system, first announced on August 15, 2004, has received growing posthumous recognition as a direct precursor to Bitcoin. Five years after [Finney's death from ALS in August 2014](/BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/), the cryptographic community increasingly acknowledged RPOW's significance in the lineage of digital cash systems.
@@ -42,4 +43,4 @@ Finney built RPOW explicitly to create a form of digital cash, drawing on ideas 
 
 The Satoshi Nakamoto Institute preserved and documented RPOW as part of the historical record of digital cash development. Finney himself wrote about the connection in his celebrated 2013 Bitcointalk post "Bitcoin and me," noting: "I had made an attempt to create my own proof of work based currency, called RPOW. So I found Bitcoin facinating."
 
-Finney's contribution was twofold: he built a Bitcoin precursor in RPOW, and he was the first known person besides Satoshi to run Bitcoin, mine blocks, and receive a Bitcoin transaction.
+Finney's contribution was twofold: he built a Bitcoin precursor in RPOW, and he was the first known person besides Satoshi to run Bitcoin, mine blocks, and receive a Bitcoin transaction -- [the payment Satoshi sent him in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/), the first person-to-person transfer in Bitcoin's history.

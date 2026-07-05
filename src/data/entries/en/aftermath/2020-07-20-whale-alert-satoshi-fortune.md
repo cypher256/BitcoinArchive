@@ -29,7 +29,9 @@ secondarySources:
   - name: "Sergio Demian Lerner — The Patoshi Mining Machine (August 22, 2020)"
     url: "https://bitslog.com/2020/08/22/the-patoshi-mining-machine/"
 relatedEntries:
+  - aftermath/2019-04-16-sergio-lerner-patoshi-naming
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
 translationStatus: complete
 ---
 
@@ -41,6 +43,8 @@ In July 2020, blockchain tracking service Whale Alert published "The Satoshi For
 - **22,503** of the first 54,316 blocks were mined by the Patoshi miner
 - Of these, only **50 blocks (907 BTC)** had ever been spent; the remaining **1,122,693 BTC** were untouched
 - Estimated value at the time of publication: at least **$10.9 billion**
+
+These totals closely matched the estimates Sergio Lerner had already published in his [2019 Patoshi-naming update](/BitcoinArchive/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/) — roughly 1.1 million BTC across about 22,000 blocks, derived independently through timestamp-inversion analysis.
 
 ## Mining behavior
 
@@ -54,4 +58,4 @@ The analysis identified a pattern of deliberate hashrate reduction over time. As
 
 ## Conclusion
 
-The report concluded: "The timing of the shutdown, the mining behavior, the systematic decrease in mining speed and the lack of spending strongly suggest that Satoshi was only interested in growing and protecting the young network." None of the 1,125,150 BTC have ever been spent, reinforcing the interpretation that Satoshi mined to bootstrap the network — not for personal enrichment.
+The report concluded: "The timing of the shutdown, the mining behavior, the systematic decrease in mining speed and the lack of spending strongly suggest that Satoshi was only interested in growing and protecting the young network." None of the 1,125,150 BTC have ever been spent, reinforcing the interpretation that Satoshi mined to bootstrap the network — not for personal enrichment. This figure was later folded into a wider survey of Satoshi's likely holdings that cross-checked it against Lerner's and BitMEX Research's independent estimates — see [Analyses estimate Satoshi Nakamoto's Bitcoin holdings at approximately 1.1 million BTC](/BitcoinArchive/entries/aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis/).

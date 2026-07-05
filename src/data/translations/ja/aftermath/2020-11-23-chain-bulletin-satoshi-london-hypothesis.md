@@ -29,6 +29,7 @@ relatedEntries:
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2009-01-09-satoshi-code-analysis
+  - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
 translationStatus: complete
 ---
 
@@ -45,7 +46,7 @@ translationStatus: complete
 - SourceForge コミット 169件（2009年10月〜2010年12月）
 - メーリングリストメール 34件（2008年10月〜2010年12月）
 
-すべてのタイムスタンプを UTC から 3 つの候補タイムゾーン（GMT/ロンドン、米国東部、米国太平洋）に変換した。総合分析は GMT ベースのスケジュールと一致するパターンを示したが、観察された夜型行動パターンにより、単独ではタイムゾーンの特定がやや曖昧であった。
+すべてのタイムスタンプを UTC から 3 つの候補タイムゾーン（GMT/ロンドン、米国東部、米国太平洋）に変換した。総合分析は GMT ベースのスケジュールと一致するパターンを示したが、観察された夜型行動パターンにより、単独ではタイムゾーンの特定がやや曖昧であった。カライヴァノフは後に同じ手法を別の謎にも応用しており――[CoinDesk が報じた未公開のサトシ・フィニー間メール](/BitcoinArchive/ja/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/)では、サトシのメールに現れた UTC+8 というヘッダーはサトシ本人の所在地ではなく送信メールサーバー側の設定によるものだと指摘している。
 
 ## 言語学的特徴
 

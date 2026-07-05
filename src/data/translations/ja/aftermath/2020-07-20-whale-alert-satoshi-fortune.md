@@ -29,7 +29,9 @@ secondarySources:
   - name: "Sergio Demian Lerner — The Patoshi Mining Machine (August 22, 2020)"
     url: "https://bitslog.com/2020/08/22/the-patoshi-mining-machine/"
 relatedEntries:
+  - aftermath/2019-04-16-sergio-lerner-patoshi-naming
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
 translationStatus: complete
 ---
 
@@ -41,6 +43,8 @@ translationStatus: complete
 - 最初の 54,316 ブロックのうち **22,503 ブロック** が Patoshi マイナーによるもの
 - うち使用済みはわずか **50 ブロック（907 BTC）** のみ。残りの **1,122,693 BTC** は未使用のまま
 - 発表時点の推定価値：少なくとも **109 億ドル**
+
+これらの数値は、セルジオ・ラーナーが前年に発表した[2019 年の Patoshi 命名論文](/BitcoinArchive/ja/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/)が示した推定 — タイムスタンプ逆転分析により独立に導いた約 110 万 BTC・約 22,000 ブロック — とほぼ一致していた。
 
 ## マイニング行動
 
@@ -54,4 +58,4 @@ Whale Alert の分析によると、サトシはネットワークの成長に�
 
 ## 結論
 
-報告書は結論として述べている：「停止のタイミング、マイニング行動、体系的なマイニング速度の低下、そして支出の欠如は、サトシが若いネットワークの成長と保護にのみ関心を持っていたことを強く示唆している。」1,125,150 BTC は一度も使われておらず、サトシが個人的利益のためではなくネットワークの立ち上げのためにマイニングしていたという解釈を強化している。
+報告書は結論として述べている：「停止のタイミング、マイニング行動、体系的なマイニング速度の低下、そして支出の欠如は、サトシが若いネットワークの成長と保護にのみ関心を持っていたことを強く示唆している。」1,125,150 BTC は一度も使われておらず、サトシが個人的利益のためではなくネットワークの立ち上げのためにマイニングしていたという解釈を強化している。この数値は後に、ラーナーや BitMEX Research による独立推定と突き合わせる形で、サトシの保有量をめぐるより広範な調査にも組み込まれた――詳細は[サトシの保有量を約 110 万 BTC と推定する分析エントリー](/BitcoinArchive/ja/entries/aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis/)を参照。

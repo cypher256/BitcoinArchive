@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2013-04-17-sergio-demian-lerner-biography
   - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
   - aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery
+  - aftermath/2020-07-20-whale-alert-satoshi-fortune
   - aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
   - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
@@ -48,6 +49,8 @@ translationStatus: complete
 - Patoshi パターンに帰属する **~22,000 ブロック**（27,680 のナンス制限ブロック「セット M」の中に含まれる）
 - **~110 万 BTC** — 2013年の当初推定~100 万 BTC から上方修正
 - Patoshi ブロックの **99.9%** が未使用のまま（他の初期ブロックでは約 10%のみ）
+
+この更新後の推定値は、翌年に発表された[Whale Alert による 2020 年の独立分析](/BitcoinArchive/ja/entries/aftermath/2020-07-20-whale-alert-satoshi-fortune/)でも、独自の手法により導き出された 1,125,150 BTC・22,503 ブロックというほぼ同一の数値として裏付けられることになる。
 
 ## タイムスタンプ逆転分析
 

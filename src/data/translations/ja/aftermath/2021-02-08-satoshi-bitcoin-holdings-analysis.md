@@ -28,6 +28,7 @@ relatedEntries:
   - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
   - aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery
   - aftermath/2019-04-16-sergio-lerner-patoshi-naming
+  - aftermath/2020-07-20-whale-alert-satoshi-fortune
   - aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine
   - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
@@ -42,6 +43,6 @@ translationStatus: complete
 
 BitMEX Research は 2018年にラーナーの方法論の独立したレビューを実施し、パターンを概ね確認したが、Patoshi パターンに帰属するすべてのブロックを単一のマイナーに確定的に帰属させることはできないと指摘し、やや低めの推定を示唆した。
 
-ブロックチェーン追跡サービスの Whale Alert も独自の分析を公表し、約 110 万 BTC という推定を裏付けた。
+ブロックチェーン追跡サービスの Whale Alert も[独自の分析](/BitcoinArchive/ja/entries/aftermath/2020-07-20-whale-alert-satoshi-fortune/)を公表し、約 110 万 BTC という推定を裏付けた。
 
 すべての分析に共通する重要な観察は、これらのコインの大多数が元のマイニングアドレスから一度も移動されていないということである。2021年初頭、ビットコインの価格が初めて 40,000 ドルを超えた時点で、サトシの推定保有量は 400 億ドル以上の価値があり、この匿名の創設者は――少なくとも帳簿上は――世界で最も裕福な個人の一人となった。

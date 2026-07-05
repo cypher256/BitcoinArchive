@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2013-04-17-sergio-demian-lerner-biography
   - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
   - aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery
+  - aftermath/2020-07-20-whale-alert-satoshi-fortune
   - aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
   - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
@@ -48,6 +49,8 @@ Lerner coined the term **"Patoshi"** — a portmanteau of "Pattern" and "Satoshi
 - **~22,000 blocks** attributed to the Patoshi pattern (within a larger set of 27,680 nonce-restricted blocks, called "set M")
 - **~1.1 million BTC** — revised upward from the original 2013 estimate of ~1 million BTC
 - **99.9%** of Patoshi blocks remain unspent, versus only ~10% of other early blocks
+
+These updated figures were independently corroborated the following year by [Whale Alert's 2020 analysis](/BitcoinArchive/entries/aftermath/2020-07-20-whale-alert-satoshi-fortune/), which used its own blockchain-tracking methodology to arrive at a nearly identical 1,125,150 BTC across 22,503 blocks.
 
 ## Timestamp inversion analysis
 

@@ -29,6 +29,7 @@ relatedEntries:
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2009-01-09-satoshi-code-analysis
+  - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
 translationStatus: complete
 ---
 
@@ -45,7 +46,7 @@ The study analyzed **742 activity instances**:
 - 169 SourceForge commits (October 2009 – December 2010)
 - 34 mailing list emails (October 2008 – December 2010)
 
-All timestamps were converted from UTC to three candidate time zones: GMT (London), US Eastern, and US Pacific. The combined analysis revealed patterns consistent with a GMT-based schedule, though the night-owl behavior observed made timezone attribution somewhat ambiguous when viewed in isolation.
+All timestamps were converted from UTC to three candidate time zones: GMT (London), US Eastern, and US Pacific. The combined analysis revealed patterns consistent with a GMT-based schedule, though the night-owl behavior observed made timezone attribution somewhat ambiguous when viewed in isolation. Karaivanov later applied the same timezone-forensics approach to a separate puzzle — see [the CoinDesk report on previously unpublished Satoshi-Finney emails](/BitcoinArchive/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/), where he attributed a UTC+8 header found on one of Satoshi's emails to the sending mail server rather than to Satoshi's own location.
 
 ## Linguistic markers
 

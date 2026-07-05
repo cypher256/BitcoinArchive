@@ -28,6 +28,7 @@ relatedEntries:
   - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
   - aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery
   - aftermath/2019-04-16-sergio-lerner-patoshi-naming
+  - aftermath/2020-07-20-whale-alert-satoshi-fortune
   - aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine
   - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
@@ -41,6 +42,6 @@ The original 2013 analysis estimated Satoshi's holdings at approximately 1 milli
 
 BitMEX Research conducted an independent review of Lerner's methodology in 2018, broadly confirming the pattern but suggesting a somewhat lower estimate, noting that not all blocks attributed to the Patoshi pattern could be conclusively attributed to a single miner.
 
-Whale Alert, a blockchain tracking service, published its own analysis corroborating an estimate of approximately 1.1 million BTC.
+Whale Alert, a blockchain tracking service, published [its own analysis](/BitcoinArchive/entries/aftermath/2020-07-20-whale-alert-satoshi-fortune/) corroborating an estimate of approximately 1.1 million BTC.
 
 A critical observation across all analyses is that the vast majority of these coins have never been moved from their original mining addresses. As of early 2021, with Bitcoin's price surpassing $40,000 for the first time, Satoshi's estimated holdings were valued at over $40 billion, making the pseudonymous creator one of the wealthiest individuals in the world -- on paper, at least.
