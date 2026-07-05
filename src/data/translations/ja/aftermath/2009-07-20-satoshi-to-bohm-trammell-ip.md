@@ -22,6 +22,8 @@ tags:
 secondarySources:
   - name: "Decashed - Node IP Disclosed in COPA Case Likely Belonged to Dustin Trammell"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
+relatedEntries:
+  - aftermath/2021-10-23-dustin-trammell-second-node-testimony
 translationStatus: complete
 ---
 
@@ -35,6 +37,6 @@ translationStatus: complete
 <!-- speaker: narrator -->
 彼は、[ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)がこの IP に接続できていないのであれば、問題はボーム側にあり、発信接続もできない状態であると指摘した。
 
-IP アドレス 70.113.114.209 は、後に研究者によって（Decashed の分析で文書化）、テキサス州ラウンドロック/オースティン地域に拠点を置いていた[ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)のものである可能性が高いと特定された。これは、トランメルがこの時期に最も安定して稼働していた初期のビットコインノード運用者の一人であったという知見と一致している。
+IP アドレス 70.113.114.209 は、後に研究者によって（Decashed の分析で文書化）、テキサス州ラウンドロック/オースティン地域に拠点を置いていた[ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)のものである可能性が高いと特定された。これは、トランメルがこの時期に最も安定して稼働していた初期のビットコインノード運用者の一人であったという知見と一致している。トランメル自身も後年、この時期のネットワークの様子を振り返っている——2021年のインタビューで、最初の接続後に他のノードが一つしか見えなかったことから、自分がネットワーク上で2番目のノードだったかもしれないと語った。詳細は[トランメル本人による2021年の証言](/BitcoinArchive/ja/entries/aftermath/2021-10-23-dustin-trammell-second-node-testimony/)を参照。
 
 このやり取りは、2009年7月のビットコインネットワークの運用状況のスナップショットである。サトシ自身のノードは、たった一つの他のピアにのみ接続していた——ネットワーク全体で残り数台のアクティブなノードの一つであった。

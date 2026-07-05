@@ -25,6 +25,8 @@ secondarySources:
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
   - name: "Bitcoin Magazine — Dustin Trammell On The Original White Paper Day (October 30, 2022)"
     url: "https://bitcoinmagazine.com/culture/trammell-on-satoshi-bitcoin-white-paper-day"
+relatedEntries:
+  - aftermath/2009-07-20-satoshi-to-bohm-trammell-ip
 ---
 
 On October 23, 2021, [Dustin D. Trammell](/BitcoinArchive/participants/dustin-trammell/) appeared on the Stephan Livera Podcast (Episode 314: "The 2nd Node On The Bitcoin Network? The Early Days of Bitcoin") to provide the most detailed account of his experience as one of Bitcoin's very first users.
@@ -56,7 +58,7 @@ As for being the second node, Trammell was careful to hedge:
 <!-- audit:quote-skip -->
 > "I think I may have been the second node on the network, but that's entirely speculative based on the behavior that I saw in the software at the time."
 
-Trammell was careful to note this was based on observed behavior (a single peer connection bootstrapping to a known IP) rather than definitive proof. However, his [January 11, 2009 email to Satoshi](/BitcoinArchive/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/) — just two days after the v0.1 release — documenting "Generated" messages with 0.00 credit confirms he was running the software by that date.
+Trammell was careful to note this was based on observed behavior (a single peer connection bootstrapping to a known IP) rather than definitive proof. However, his [January 11, 2009 email to Satoshi](/BitcoinArchive/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/) — just two days after the v0.1 release — documenting "Generated" messages with 0.00 credit confirms he was running the software by that date. A separate piece of evidence corroborates the pattern he described: in a July 20, 2009 email, Satoshi reported his own node was down to just one connected peer, an IP address later identified as likely belonging to Trammell — see [Satoshi's network status update to Nicholas Bohm](/BitcoinArchive/entries/aftermath/2009-07-20-satoshi-to-bohm-trammell-ip/) for that exchange.
 
 In an earlier interview with Cointelegraph (March 2021), Trammell provided additional context:
 

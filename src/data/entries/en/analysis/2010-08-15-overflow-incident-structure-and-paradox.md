@@ -47,6 +47,7 @@ relatedEntries:
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
   - analysis/2010-08-15-knightmb-snapshot-and-legend
+  - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
 translationStatus: complete
 ---
 
@@ -99,7 +100,7 @@ gantt
 
 ## 2. The 5-hour response window and why it was unrepeatable
 
-[Garzik's first-warning post](/BitcoinArchive/entries/forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474/) on BitcoinTalk topic-822 was timestamped 18:08 UTC. Satoshi's [bitcoin-0.3.10 release announcement](/BitcoinArchive/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/) on topic-827 was timestamped 23:48 UTC. That is a 5h 40m turnaround from public discovery to a built, signed, downloadable, soft-forking release — across SourceForge binaries for Windows, Linux, and macOS.
+[Garzik's first-warning post](/BitcoinArchive/entries/forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474/) on BitcoinTalk topic-822 was timestamped 18:08 UTC. Satoshi's [bitcoin-0.3.10 release announcement](/BitcoinArchive/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/) on topic-827 was timestamped 23:48 UTC. That is a 5h 40m turnaround from public discovery to a built, signed, downloadable, soft-forking release — across SourceForge binaries for Windows, Linux, and macOS. This same August 14–15 stretch of Satoshi's code check-ins and forum posts is cited as alibi-class evidence in [the Hal Finney identity hypothesis](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/), which weighs it against Finney's own ALS-limited Singularity Summit attendance during the same two days.
 
 This window was possible in 2010 for a particular reason that is no longer reproducible: the production code path was effectively a single author plus two trusted reviewers.
 

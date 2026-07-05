@@ -52,6 +52,8 @@ relatedEntries:
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
   - aftermath/2014-03-06-dorian-nakamoto-biography
   - analysis/2009-01-09-satoshi-windows-development-environment
+  - analysis/2010-08-15-overflow-incident-structure-and-paradox
+  - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
 inlineLinkKeywords:
   - "ハル・フィニー仮説"
   - "フィニー = サトシ"
@@ -126,7 +128,7 @@ timeline
 
 ### 2.3 2026 年文体計量での僅差と広範コーパスでの順位
 
-フロリアン・カフィエロの [2026 年ニューヨーク・タイムズ調査向け文体計量レビュー](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)は、12 候補中フィニーがアダム・バックとほぼ同点と報告した。カフィエロ自身は結果を不確定と評した。[Bitcoin Institute によるバス・ヴァン・ドルストの 75,000 人著者コーパスの再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は、フィニーの執筆を上位 6.89%（12,739 人中 878 位）に位置づける — ニック・サボに次ぐ第 2 位である。
+フロリアン・カフィエロの [2026 年ニューヨーク・タイムズ調査向け文体計量レビュー](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)は、12 候補中フィニーがアダム・バックとほぼ同点と報告した。カフィエロ自身は結果を不確定と評した。Bitcoin Institute による[バス・ヴァン・ドルストの 75,000 人著者コーパス](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)の[再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は、フィニーの執筆を上位 6.89%（12,739 人中 878 位）に位置づける — ニック・サボに次ぐ第 2 位である。
 
 | 文体計量研究 | ハル・フィニーの結果 |
 |---|---|
@@ -212,7 +214,7 @@ timeline
 
 第 2 のアリバイ的観察はより長い時間帯を覆う。フィニーの ALS 診断は 2009 年 8 月に確定した。2010 年 8 月 — 15 か月後 — までに病状は目に見えて進行していた。フラン・フィニーの 2010 年 8 月 22 日の公開投稿は、ハルとフランが 2010 年 8 月 14-15 日にサンフランシスコでの特異点サミットに出席したことを記録する。同期間、当時の記述とハル自身の[「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) は、彼のタイピング速度が 120 WPM の速射から指でつつく程度に低下し、一日の多くを電動車椅子で過ごしていたことを文書化している。
 
-同じ 2010 年 8 月 14-15 日の時間帯、サトシはオンラインで高活動だった: 4 つの SVN コードチェックインと 17 の BitcoinTalk フォーラム投稿。活動は通常のサトシ多忙期間のフットプリント — 実質的な技術的関与、持続的なタイピング量、[匿名化アーキテクチャエントリー](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)が記録する西海岸時間帯パターン（午前 10 時頃ピーク、正午頃低下）と整合する投稿時刻 — である。
+同じ 2010 年 8 月 14-15 日の時間帯、サトシはオンラインで高活動だった: 4 つの SVN コードチェックインと 17 の BitcoinTalk フォーラム投稿。活動は通常のサトシ多忙期間のフットプリント — 実質的な技術的関与、持続的なタイピング量、[匿名化アーキテクチャエントリー](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)が記録する西海岸時間帯パターン（午前 10 時頃ピーク、正午頃低下）と整合する投稿時刻 — である。同じ 8 月 15 日の活動には、サトシがバリュー・オーバーフロー事件に応急パッチをリリースした 5 時間の対応も含まれている — その活動の詳細なフォレンジック読み解きは[オーバーフロー事件の構造分析](/BitcoinArchive/ja/entries/analysis/2010-08-15-overflow-incident-structure-and-paradox/)を参照。
 
 仮説は、ハルが両方をやっていたことを要求する: 指でつつくタイピング速度でサンフランシスコの数日間カンファレンスに物理的に出席しながら、同じ時間帯にビットコイン設計問題について 4 つのコミット + 17 の長文フォーラム投稿を生み出す。組み合わせは「サトシ」ハンドルの下で活動する第二の人物なしには実現しない — これは §1 で導入した仮説の共著者変種に帰着する。
 

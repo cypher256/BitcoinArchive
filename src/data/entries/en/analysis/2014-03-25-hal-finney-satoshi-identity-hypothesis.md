@@ -52,6 +52,8 @@ relatedEntries:
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
   - aftermath/2014-03-06-dorian-nakamoto-biography
   - analysis/2009-01-09-satoshi-windows-development-environment
+  - analysis/2010-08-15-overflow-incident-structure-and-paradox
+  - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
 inlineLinkKeywords:
   - "Hal Finney hypothesis"
   - "Finney = Satoshi"
@@ -125,7 +127,7 @@ The objection: Temple City is a small suburb in the San Gabriel Valley with a po
 
 ### 2.3 The 2026 stylometric near-tie and broader-corpus rank
 
-Florian Cafiero's [2026 stylometric review for the New York Times investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) reported Finney as nearly tied with Adam Back among 12 candidates. Cafiero himself characterized the result as inconclusive. The [Bitcoin Institute reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) of Bas van Dorst's 75,000-author corpus places Finney's writing at top 6.89% (rank 878 of 12,739) — second-highest of the five most-cited named candidates after Nick Szabo.
+Florian Cafiero's [2026 stylometric review for the New York Times investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) reported Finney as nearly tied with Adam Back among 12 candidates. Cafiero himself characterized the result as inconclusive. The [Bitcoin Institute reanalysis](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) of [Bas van Dorst's 75,000-author corpus](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) places Finney's writing at top 6.89% (rank 878 of 12,739) — second-highest of the five most-cited named candidates after Nick Szabo.
 
 | Stylometric study | Hal Finney's result |
 |---|---|
@@ -211,7 +213,7 @@ Under the [identifiability argument](/BitcoinArchive/entries/analysis/2008-10-31
 
 A second alibi-class observation covers a longer window. Finney's ALS diagnosis was confirmed in August 2009; by August 2010 — fifteen months later — the disease had progressed visibly. Fran Finney's August 22, 2010 public post records that Hal and Fran attended the Singularity Summit in San Francisco on August 14–15, 2010. By that period, contemporaneous accounts and Hal's own description in [*Bitcoin and Me*](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) document that his typing speed had dropped from a rapid-fire 120 WPM to a slow finger-peck, and he was spending much of his day in a power wheelchair.
 
-During the same August 14–15, 2010 window, Satoshi was highly active online: 4 SVN code check-ins and 17 BitcoinTalk forum posts. The activity is a normal Satoshi-busy-period footprint — substantive technical engagement, sustained typing volume, and posting times consistent with the West Coast diurnal pattern (peak around 10 AM, dip around noon) the [anonymity architecture entry](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/) documents.
+During the same August 14–15, 2010 window, Satoshi was highly active online: 4 SVN code check-ins and 17 BitcoinTalk forum posts. The activity is a normal Satoshi-busy-period footprint — substantive technical engagement, sustained typing volume, and posting times consistent with the West Coast diurnal pattern (peak around 10 AM, dip around noon) the [anonymity architecture entry](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/) documents. That same August 15 stretch includes Satoshi's five-hour patch-and-release response to the value-overflow incident — see [the overflow incident's structural analysis](/BitcoinArchive/entries/analysis/2010-08-15-overflow-incident-structure-and-paradox/) for the forensic account of what that activity actually was.
 
 The hypothesis would require Hal to have been doing both — physically attending a multi-day conference in San Francisco while finger-pecking, and producing 4 commits + 17 long-form forum posts on Bitcoin design issues in the same window. The combination is implausible without a second person operating under the Satoshi handle, which collapses into the co-author variant of the hypothesis introduced in §1.
 

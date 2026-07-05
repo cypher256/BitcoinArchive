@@ -25,6 +25,8 @@ secondarySources:
     url: "https://en.bitcoin.it/wiki/Source:Trammell/Nakamoto_emails"
   - name: "Bitcoin Magazine — Dustin Trammell On The Original White Paper Day (October 30, 2022)"
     url: "https://bitcoinmagazine.com/culture/trammell-on-satoshi-bitcoin-white-paper-day"
+relatedEntries:
+  - aftermath/2009-07-20-satoshi-to-bohm-trammell-ip
 translationStatus: complete
 ---
 
@@ -57,7 +59,7 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > 「ネットワーク上の2番目のノードだったかもしれないと思うが、それは当時のソフトウェアで見た動作に基づく完全な推測だ。」
 
-トランメルは、これが確定的な証拠ではなく観察された動作（既知の IP へのブートストラップによる単一のピア接続）に基づいていることを慎重に述べた。しかし、v0.1 リリースからわずか 2日後の [2009年1月11日にサトシに送ったメール](/BitcoinArchive/ja/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/)で、クレジット 0.00 の `Generated` メッセージを文書化しており、その日までにソフトウェアを実行していたことが確認されている。
+トランメルは、これが確定的な証拠ではなく観察された動作（既知の IP へのブートストラップによる単一のピア接続）に基づいていることを慎重に述べた。しかし、v0.1 リリースからわずか 2日後の [2009年1月11日にサトシに送ったメール](/BitcoinArchive/ja/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/)で、クレジット 0.00 の `Generated` メッセージを文書化しており、その日までにソフトウェアを実行していたことが確認されている。この様子を裏付ける別の記録も残っている——2009年7月20日、サトシは自身のノードがちょうど一つのピアにしか接続していないと報告しており、その IP アドレスは後にトランメルのものである可能性が高いと特定された。詳細は[サトシがニコラス・ボームに送ったネットワーク状況報告](/BitcoinArchive/ja/entries/aftermath/2009-07-20-satoshi-to-bohm-trammell-ip/)を参照。
 
 Cointelegraph との以前のインタビュー（2021年3月）で、トランメルは追加の文脈を提供した：
 

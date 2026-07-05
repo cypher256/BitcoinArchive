@@ -47,6 +47,7 @@ relatedEntries:
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
   - analysis/2010-08-15-knightmb-snapshot-and-legend
+  - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
 translationStatus: complete
 ---
 
@@ -99,7 +100,7 @@ gantt
 
 ## 2. 5 時間対応窓 — それは再現できない条件下でのみ成立した
 
-[ガージックの第一警告投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474/)は BitcoinTalk topic-822 で 18:08 UTC 付。サトシの [bitcoin-0.3.10 リリース告知](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/)は topic-827 で 23:48 UTC 付。公開発見からビルド済み・署名済み・ダウンロード可能なソフトフォーク・リリースまで 5 時間 40 分 — Windows・Linux・macOS 各 SourceForge バイナリつきで。
+[ガージックの第一警告投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474/)は BitcoinTalk topic-822 で 18:08 UTC 付。サトシの [bitcoin-0.3.10 リリース告知](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/)は topic-827 で 23:48 UTC 付。公開発見からビルド済み・署名済み・ダウンロード可能なソフトフォーク・リリースまで 5 時間 40 分 — Windows・Linux・macOS 各 SourceForge バイナリつきで。この 8 月 14〜15 日にサトシが残したコードチェックインとフォーラム投稿は、[ハル・フィニー同一人物説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)ではアリバイ的な反証材料として扱われ、同じ 2 日間にフィニーが ALS で衰弱しつつ特異点サミットに出席していた事実と突き合わされている。
 
 この期間が 2010 年に可能だったのには特定の理由があり、その理由は今や再現不能である: プロダクションコード経路が実質的に**単一の作者プラス信頼された 2 名のレビュアー**だった。
 
