@@ -53,4 +53,4 @@ Satoshi proposed a combined approach for the future:
 <!-- speaker: Satoshi Nakamoto -->
 > One solution would be to use both the IP and Bitcoin addresses when sending (maybe 1.2.3.4-1Kn8iojk...), where the recipient uses the public key of the Bitcoin address to sign the new public key to prove that you're sending to who you think you are.
 
-He also confirmed that sending to a Bitcoin address worked by computing the transaction into the blockchain for the recipient to discover, and mentioned wallet encryption as a future feature.
+He also confirmed that sending to a Bitcoin address worked by recording the transaction on the blockchain for the recipient to discover, and mentioned wallet encryption as a future feature.
