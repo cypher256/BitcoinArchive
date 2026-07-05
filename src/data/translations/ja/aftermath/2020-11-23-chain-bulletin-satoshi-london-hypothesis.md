@@ -31,6 +31,7 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-code-analysis
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
+  - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
 translationStatus: complete
 ---
 
@@ -55,6 +56,8 @@ translationStatus: complete
 - 英国式綴り：「organise」「colour」「neighbour」
 - 英国口語表現：「bloody」の使用
 - これらのパターンは英国出身または英国での長期居住を示唆する
+
+この「bloody」という英国口語表現は、別の仮説でも独立に言語的根拠として引用されている――[エヴァン・ハッチによるサッサマン＝サトシ仮説](/BitcoinArchive/ja/entries/aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history/)は、同じ表現を、レン・サッサマンがビットコイン開発期にベルギーに居住していたことを示す証拠として挙げている。
 
 ## 結論
 

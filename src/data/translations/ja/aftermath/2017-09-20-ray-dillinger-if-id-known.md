@@ -30,6 +30,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2008-11-06-ray-dillinger-biography
   - aftermath/2018-10-01-ray-dillinger-interview
+  - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
 translationStatus: complete
 ---
 
@@ -56,3 +57,5 @@ translationStatus: complete
 本記事は 2017 年 9 月 20 日に LinkedIn に公開され、翌 9 月 21 日に Hacker News のトップページに達し、329 ポイントと 86 件のコメントを獲得した。
 
 ディリンジャーはここでハル・フィニーとの分業を概観しているが、その監査のより深い技術的中身 — 浮動小数点による会計の発見と satoshi 精度の設計判断 — は、 [ティム・スワンソンによる 2018 年のインタビュー](/BitcoinArchive/ja/entries/aftermath/2018-10-01-ray-dillinger-interview/)で詳しく語られている。
+
+ここでディリンジャーが語った「サトシは約 100 万 BTC を採掘しながら一切売らなかった」という証言は、5 年後に発表された [ジェイムソン・ロップの 2022 年のデータ分析](/BitcoinArchive/ja/entries/aftermath/2022-09-16-lopp-was-satoshi-greedy-miner/)によって裏付けられ、数値としても示されている — ロップの試算では、サトシの実際の採掘量はフル稼働時に得られたはずの量のおよそ半分にとどまっていたという。

@@ -43,6 +43,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
+  - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
 ---
 
 On February 22, 2021, **Evan Hatch** — founder of the Worlds.org cryptocurrency gaming platform — published "Len Sassaman and Satoshi: a Cypherpunk history" on Medium. The piece is the most-cited public articulation of the hypothesis that [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) was the person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym, and it remains the foundational reference for that hypothesis in subsequent journalism.
@@ -57,6 +58,8 @@ Hatch's argument is structurally circumstantial — he combines biographical, li
 - **Cypherpunk-network embedding.** Sassaman had documented working relationships with [Hal Finney](/BitcoinArchive/participants/hal-finney/), [Adam Back](/BitcoinArchive/participants/adam-back/), and Bram Cohen — the same Bay Area cypherpunk network from which Bitcoin emerged.
 - **Academic register.** The Bitcoin whitepaper's LaTeX formatting and citation style match the academic-paper register of the work Sassaman produced as a PhD researcher at KU Leuven's COSIC group, working under David Chaum, 2004–2011.
 - **Final-message-to-death timing.** Satoshi's last verified message dates to May 2011. Sassaman died on [July 3, 2011](/BitcoinArchive/participants/len-sassaman/) of suicide. Hatch treats the roughly two-month gap as suggestive without claiming it is dispositive.
+
+The same British colloquialism is cited independently elsewhere: [Chain Bulletin's Satoshi-in-London analysis](/BitcoinArchive/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/) treats Satoshi's use of "bloody" as evidence for a London-based Satoshi, a distinct geographic conclusion from the Belgium-based Sassaman proposed here.
 
 ## Hatch's framing
 

@@ -31,6 +31,7 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-code-analysis
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
+  - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
 translationStatus: complete
 ---
 
@@ -55,6 +56,8 @@ The article identifies British English conventions in Satoshi's writing:
 - British spellings: "organise," "colour," "neighbour"
 - British colloquialisms: use of "bloody"
 - These patterns suggest British authorship or extended residency in the UK
+
+The same "bloody" usage is also read as linguistic evidence for a different candidate in [Evan Hatch's Sassaman = Satoshi hypothesis](/BitcoinArchive/entries/aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history/), which cites the identical British colloquialism as evidence for Len Sassaman's residence in Belgium during Bitcoin's development.
 
 ## Conclusion
 

@@ -30,6 +30,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2008-11-06-ray-dillinger-biography
   - aftermath/2018-10-01-ray-dillinger-interview
+  - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
 ---
 
 In November of 2008, I did a code review and security audit for the block chain portion of the Bitcoin source code.
@@ -55,3 +56,5 @@ Many ICOs resemble blatant stock price manipulation and insider trading. Legitim
 This piece was published on LinkedIn on September 20, 2017, and reached the front page of Hacker News on September 21, 2017, receiving 329 points and 86 comments.
 
 Dillinger sketches the division of review labour with Hal Finney here; the deeper technical substance of that audit — the floating-point accounting discovery and the satoshi-precision design choice — is drawn out at length in his [2018 interview with Tim Swanson](/BitcoinArchive/entries/aftermath/2018-10-01-ray-dillinger-interview/).
+
+Dillinger's claim here — that Satoshi mined roughly a million bitcoins and never sold any of them — is corroborated and quantified five years later by [Jameson Lopp's 2022 data analysis](/BitcoinArchive/entries/aftermath/2022-09-16-lopp-was-satoshi-greedy-miner/), which finds Satoshi's actual mining output was only about half of what his hardware could have produced running at full capacity.

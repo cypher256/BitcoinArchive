@@ -43,6 +43,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
+  - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
 translationStatus: complete
 ---
 
@@ -58,6 +59,8 @@ translationStatus: complete
 - **サイファーパンク社会への組み込み。** サッサマンは[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)・[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)・ブラム・コーエンとの記録された協働関係を持っていた — ビットコインが生まれたまさにそのベイエリア・サイファーパンク社会である。
 - **学術的語調。** ビットコイン白書の LaTeX 整形と引用形式は、サッサマンがルーヴェン・カトリック大学 COSIC グループで 2004〜2011 年にデイヴィッド・チャウムの指導下に博士研究員として作成していた学術論文の語調と一致する。
 - **最終投稿と死亡の時系列。** サトシの最終確認可能投稿は 2011 年 5 月。サッサマンは [2011 年 7 月 3 日](/BitcoinArchive/ja/participants/len-sassaman/)に自死で亡くなった。ハッチは約 2 か月の間隔を「示唆的」と扱うが「決定的」とは主張しない。
+
+この「bloody」という英国口語表現は、別の場所でも独立に証拠として引用されている――[Chain Bulletin によるサトシのロンドン居住説](/BitcoinArchive/ja/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/)は、同じ表現を、本稿が示すベルギー在住のサッサマンではなく、ロンドン在住のサトシを裏付ける証拠として扱っている。
 
 ## ハッチの枠組み
 
