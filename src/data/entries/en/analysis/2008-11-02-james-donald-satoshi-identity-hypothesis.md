@@ -41,7 +41,7 @@ On November 2, 2008, [James A. Donald](/BitcoinArchive/participants/james-donald
 
 ## 1. What the hypothesis claims
 
-The hypothesis is that Donald — a cryptographer and anarcho-capitalist writer who ran the website jim.com and was long active in cypherpunk circles — was the person behind the Satoshi pseudonym, present from the earliest days of the public record as his own first respondent. It was articulated publicly by [Gerald Votta in 2021](https://medium.com/quantum-economics/i-know-who-satoshi-nakamoto-is-a3059ef02c34) and became the leading lead in Benjamin Wallace's fifteen-year investigation, published as *The Mysterious Mr. Nakamoto* (2025).
+The hypothesis is that Donald — a cryptographer and anarcho-capitalist writer who ran the website jim.com and was long active in cypherpunk circles — was the person behind the Satoshi pseudonym, present from the earliest days of the public record as his own first respondent. It was articulated publicly by Gerald Votta in 2021 and became the leading lead in Benjamin Wallace's fifteen-year investigation, published as *The Mysterious Mr. Nakamoto* (2025).
 
 ## 2. The arguments the hypothesis rests on
 

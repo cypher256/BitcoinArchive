@@ -188,7 +188,7 @@ In the same 2025 CoinGeek interview, Hearn pairs his Bitcoin Core regret with a 
 |---|---|
 | September 27, 2012 | Founded by Gavin Andresen, Peter Vessenes, Mark Karpeles, Charlie Shrem, Patrick Murck, Jon Matonis |
 | April 2014 | Mt. Gox bankruptcy; Karpeles resigns from board |
-| April 2015 | Olivier Janssens, newly elected board member, [publicly states the Foundation is "effectively bankrupt"](https://coinjournal.net/news/recently-elected-board-member-olivier-janssens-reveals-all-bitcoin-foundation-broke-gavin-seems-to-confirm/), confirmed by Gavin Andresen and Patrick Murck |
+| April 2015 | Olivier Janssens, newly elected board member, publicly states the Foundation is "effectively bankrupt", confirmed by Gavin Andresen and Patrick Murck |
 | 2015-2022 | Effectively defunct; 501(c)(6) status revoked May 15, 2022 |
 
 Read alongside the rebrand, the Foundation has the same structural property: it converted an experimental software project into a single institutional locus. Once that locus existed, "Bitcoin policy" had a venue. That the Foundation was financially fragile and managed poorly (the Janssens charge) is contingent. That it existed at all, as a single representative body, was the structural choice. Hearn pairs the two regrets because, on his reading, both were premature institutional crystallizations — naming the experimental in a way that locked in a center.

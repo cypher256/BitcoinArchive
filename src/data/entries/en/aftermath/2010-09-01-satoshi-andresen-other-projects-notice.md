@@ -37,7 +37,7 @@ According to Wikipedia's account of [Gavin Andresen](/BitcoinArchive/participant
 <!-- audit:quote-skip -->
 > In September 2010, Nakamoto told Andresen he was working on other projects, and over the next few months, he gave Andresen control of the SourceForge code repository, and the project's "alert key" as well.
 
-— [Wikipedia — Gavin Andresen](https://en.wikipedia.org/wiki/Gavin_Andresen)
+— Wikipedia — Gavin Andresen
 
 This September 2010 communication is the earliest documented signal of Satoshi's intent to step back from active leadership of Bitcoin. The exact date within September is not preserved in the public record, and the message itself has not been published verbatim. The fact is referenced in Andresen's later interviews; the [biographical entry on Andresen](/BitcoinArchive/participants/gavin-andresen/) in this archive likewise notes that "by approximately September–October 2010, Satoshi granted him commit access to the Bitcoin source code repository on SourceForge, along with the network alert key." Satoshi nonetheless kept shipping software under his own name for months afterward, including [Bitcoin v0.3.12](/BitcoinArchive/entries/aftermath/2010-09-07-bitcoin-v0312-released/), released that same September.
 

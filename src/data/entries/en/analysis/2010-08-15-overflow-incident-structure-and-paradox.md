@@ -112,7 +112,7 @@ The actors of the response, in the public record:
 
 That is the entire production-path participant set for the 5-hour rescue. Three names, one decision-maker, no governance process, no review queue, no merge gating, no test-suite gate other than what the developer ran at home. The release path from "Satoshi has a fix on his disk" to "binaries are downloadable on SourceForge" had no intervening institutions.
 
-By 2018, when the analogous-class bug ([CVE-2018-17144](https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures#CVE-2018-17144), an inflation bug allowing duplicate input spending) was discovered in Bitcoin Core, the response infrastructure looked different: a coordinated multi-developer disclosure, a quiet-fix release labeled as a regular maintenance bump, a delayed public disclosure, and an explicit post-mortem. The 2018 fix took longer in clock time and engaged more people because it had to. The system that produced 2018's response was strictly more robust than the system that produced 2010's response — but the 2010 response window was only achievable in the institutional vacuum that 2010 still had.
+By 2018, when the analogous-class bug (CVE-2018-17144, an inflation bug allowing duplicate input spending) was discovered in Bitcoin Core, the response infrastructure looked different: a coordinated multi-developer disclosure, a quiet-fix release labeled as a regular maintenance bump, a delayed public disclosure, and an explicit post-mortem. The 2018 fix took longer in clock time and engaged more people because it had to. The system that produced 2018's response was strictly more robust than the system that produced 2010's response — but the 2010 response window was only achievable in the institutional vacuum that 2010 still had.
 
 The structural point is not that the 2010 response was better. It is that the 2010 response was a one-actor release path, and that path was exactly what made 5 hours feasible. The same vulnerability discovered in any subsequent year would not have a 5-hour public-release-to-recovery window, because no subsequent year has had a single author with single-handed deploy authority over a globally consensus-relevant codebase.
 
@@ -173,7 +173,7 @@ Two CVEs in Bitcoin's first decade reach the level of "the system could have sto
 | Year | CVE | Class | Time-to-patch | Time-to-canonical-recovery |
 |---|---|---|---|---|
 | 2010 | CVE-2010-5139 | Integer overflow on output sum, 184 billion BTC printable | 5h 40m | ~15 hours |
-| 2018 | [CVE-2018-17144](https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures#CVE-2018-17144) | Duplicate input check missing, allowing inflation via double-spend in same transaction | Disclosed-and-fixed in coordinated release; not exploited on mainnet | N/A (never used in attack) |
+| 2018 | CVE-2018-17144 | Duplicate input check missing, allowing inflation via double-spend in same transaction | Disclosed-and-fixed in coordinated release; not exploited on mainnet | N/A (never used in attack) |
 
 The pair is structurally informative because the 2018 bug *was not exploited*. Its severity was assessed in private during the responsible disclosure window, and a fix shipped before any exploitation. By the time the public record acknowledged the bug's existence, there was no recovery to perform.
 

@@ -50,7 +50,7 @@ translationStatus: complete
 >
 > 皆さん、どうか我慢してほしい。スタートアップでのプロジェクト管理の経験はそれなりにあるが、規模のあるオープンソースプロジェクトに関わるのは今回が初めてだ。
 
-（一次資料：[BitcoinTalk topic 2367 msg31651『Development process straw-man』](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651/)。[ウィキペディア「ギャビン・アンドレセン」記事](https://en.wikipedia.org/wiki/Gavin_Andresen)および CoinMarketCap「サトシ・ファイル：ギャビン・アンドレセン」記事でも二次的に引用されているが、いずれも上記の原文の文言から軽微な意訳がある。）
+（一次資料：[BitcoinTalk topic 2367 msg31651『Development process straw-man』](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651/)。ウィキペディア「ギャビン・アンドレセン」記事および CoinMarketCap「サトシ・ファイル：ギャビン・アンドレセン」記事でも二次的に引用されているが、いずれも上記の原文の文言から軽微な意訳がある。）
 
 同日、ギャビンは [`bitcoin/bitcoin` GitHub リポジトリ](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)を作成した — 9 か月にわたる SVN／GitHub 並列開発期間の始まりであり、SVN が 2011 年 9 月に廃止されるまで続いた。
 

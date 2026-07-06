@@ -60,7 +60,7 @@ On April 26, 2011, [Satoshi sent his last known email](/BitcoinArchive/entries/a
 
 The hypothesis is that Sassaman was the person behind the Satoshi Nakamoto pseudonym, withdrew from the project shortly before his death, and that the [final email to Gavin Andresen on April 26, 2011](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) — three months before Sassaman's suicide — was the closing of his Bitcoin life rather than a step away from one of many concurrent projects.
 
-The earliest public discussion identified in this archive's research is a [BitcoinTalk thread from March 15, 2013](https://bitcointalk.org/) (per Wikipedia). The most prominent later articulation is [Evan Hatch's February 22, 2021 Medium article *"Len Sassaman and Satoshi: a Cypherpunk history"*](/BitcoinArchive/entries/aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history/), which Wikipedia cites and which received coverage in cryptocurrency-focused media.
+The earliest public discussion identified in this archive's research is a BitcoinTalk thread from March 15, 2013 (per Wikipedia). The most prominent later articulation is [Evan Hatch's February 22, 2021 Medium article *"Len Sassaman and Satoshi: a Cypherpunk history"*](/BitcoinArchive/entries/aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history/), which Wikipedia cites and which received coverage in cryptocurrency-focused media.
 
 ## 2. The arguments the hypothesis rests on
 
@@ -139,7 +139,7 @@ Patterson's silence on the identity claim is information. If she knew the hypoth
 
 The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin development period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — Wei Dai's 2014 identifiability argument, plus Satoshi's own admission of not having known b-money during development, support a "not a visibly active cypherpunk during 2007–2008" reading.
 
-That reading does not rule out Sassaman, but it does not select him either. It selects against any candidate who was *visibly* active in cypherpunk discussion during 2007–2008. Sassaman's 2007–2008 public activity is documented in his [Wikipedia entry](https://en.wikipedia.org/wiki/Len_Sassaman) and in conference proceedings:
+That reading does not rule out Sassaman, but it does not select him either. It selects against any candidate who was *visibly* active in cypherpunk discussion during 2007–2008. Sassaman's 2007–2008 public activity is documented in his Wikipedia entry and in conference proceedings:
 
 | Date | Venue | Output |
 |---|---|---|

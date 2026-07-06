@@ -117,7 +117,7 @@ flowchart TD
 
 ブロック 0 のタイムスタンプは 2009-01-03 18:15:05 UTC、ブロック 1 は 2009-01-09 02:54:25 UTC。間隔は 5日 8時間 39分で、想定されている 10 分間隔の約 770 倍に相当する。
 
-この空白をめぐって [Bitcoin Wiki](https://en.bitcoin.it/wiki/Genesis_block) や[ピート・リゾの 2024 年 Bitcoin Magazine 記事](/BitcoinArchive/ja/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/)等で様々な説が語られてきた — バックデート説、天地創造説、美しいハッシュ説、プレネット仮説、ピア発見要件説。だが、これらを同じリストに並べて「ギャップの原因の選択肢」として扱うのはカテゴリーの誤りである。技術的には問いが二つ混在している:
+この空白をめぐって Bitcoin Wiki や[ピート・リゾの 2024 年 Bitcoin Magazine 記事](/BitcoinArchive/ja/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/)等で様々な説が語られてきた — バックデート説、天地創造説、美しいハッシュ説、プレネット仮説、ピア発見要件説。だが、これらを同じリストに並べて「ギャップの原因の選択肢」として扱うのはカテゴリーの誤りである。技術的には問いが二つ混在している:
 
 - **Q1. ギャップそのものは、なぜ存在するのか。**
 - **Q2. その 5 日間に、サトシは何をしていたのか。**

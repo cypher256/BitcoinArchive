@@ -49,7 +49,7 @@ On December 19, 2010, four days after Satoshi's last source-code commit (the v0.
 >
 > Everybody please be patient with me; I've had a lot of project management experience at startups, but this is the first open source project of any size I've been involved with.
 
-(Original post: [BitcoinTalk topic 2367 msg31651, "Development process straw-man"](/BitcoinArchive/entries/forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651/). Also quoted secondarily in [Wikipedia — Gavin Andresen](https://en.wikipedia.org/wiki/Gavin_Andresen) and CoinMarketCap's "Satoshi Files: Gavin Andresen" — both with slight paraphrasing of the verbatim text shown above.)
+(Original post: [BitcoinTalk topic 2367 msg31651, "Development process straw-man"](/BitcoinArchive/entries/forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651/). Also quoted secondarily in Wikipedia — Gavin Andresen and CoinMarketCap's "Satoshi Files: Gavin Andresen" — both with slight paraphrasing of the verbatim text shown above.)
 
 The same day, Andresen created the [`bitcoin/bitcoin` GitHub repository](/BitcoinArchive/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/) — the start of nine months of parallel SVN/GitHub development before SVN was retired in September 2011.
 

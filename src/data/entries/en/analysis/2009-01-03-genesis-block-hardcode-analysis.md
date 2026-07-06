@@ -116,7 +116,7 @@ Practical consequences:
 
 Block 0 is timestamped 2009-01-03 18:15:05 UTC. Block 1 is timestamped 2009-01-09 02:54:25 UTC. The gap is 5 days, 8 hours, 39 minutes — roughly 770× the intended 10-minute block interval.
 
-Various hypotheses have been surveyed on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Genesis_block) and in [Pete Rizzo's 2024 Bitcoin Magazine article](/BitcoinArchive/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/): backdate, genesis narrative, vanity hash, private testnet, peer-discovery requirement. Treating these as parallel options for "what caused the gap" is a category error. Technically, two distinct questions are conflated:
+Various hypotheses have been surveyed on the Bitcoin Wiki and in [Pete Rizzo's 2024 Bitcoin Magazine article](/BitcoinArchive/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/): backdate, genesis narrative, vanity hash, private testnet, peer-discovery requirement. Treating these as parallel options for "what caused the gap" is a category error. Technically, two distinct questions are conflated:
 
 - **Q1. Why does the gap exist at all?**
 - **Q2. What was Satoshi doing during those five days?**
