@@ -11,7 +11,9 @@ const t = useTranslations(lang);
 ---
 
 <footer class="site-footer">
-  <p class="footer-text">{t('footer.description')}</p>
+  <p class="footer-text">
+    <a href={localePath('/', lang)} class="footer-home-link">{t('footer.description')}</a>
+  </p>
   <p class="footer-links">
     <a href={localePath('/novel/', lang)} class="novel-link">
       {t('footer.novel')}
@@ -39,6 +41,12 @@ const t = useTranslations(lang);
   }
   .footer-text {
     margin: 0 0 0.5rem;
+  }
+  .footer-home-link {
+    color: var(--color-text-muted);
+  }
+  .footer-home-link:hover {
+    color: var(--color-text);
   }
   .footer-links {
     margin: 0;
