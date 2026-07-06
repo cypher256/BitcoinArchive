@@ -27,6 +27,7 @@ relatedEntries:
   - "aftermath/2021-06-28-cobra-biography"
   - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"
   - "tweets/cobra/2021-06-28-whitepaper-ruling-response"
+  - "aftermath/2016-05-02-craig-wright-biography"
 quotes:
   - id: "q1"
     person: "Cobra"

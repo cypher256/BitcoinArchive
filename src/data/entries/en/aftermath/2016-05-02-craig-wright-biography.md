@@ -34,6 +34,7 @@ relatedEntries:
   - "aftermath/2015-12-08-wired-gizmodo-craig-wright-claims"
   - "aftermath/2016-05-02-craig-wright-bbc-economist-claim"
   - "aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit"
+  - "aftermath/2021-06-28-cobra-response-to-whitepaper-ruling"
   - "aftermath/2024-03-14-copa-v-wright-ruling"
   - "aftermath/2024-02-21-copa-trial-malmi-testimony"
   - "aftermath/2024-02-22-mike-hearn-copa-trial-testimony"
@@ -83,7 +84,7 @@ The December 2015 [Wired and Gizmodo investigations](/BitcoinArchive/entries/aft
 > "I believed that I could put the years of anonymity and hiding behind me. But I can't."
 
 ## Whitepaper Lawsuit
-In February 2021, Wright [sued](/BitcoinArchive/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/) the pseudonymous operator of bitcoin.org ([Cobra](/BitcoinArchive/participants/cobra/)) over Bitcoin whitepaper copyright. On June 28, 2021, the court issued a default judgment in Wright's favor — not because the claim had merit, but because Cobra chose to protect his anonymity rather than reveal his identity to defend himself.
+In February 2021, Wright [sued](/BitcoinArchive/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/) the pseudonymous operator of bitcoin.org ([Cobra](/BitcoinArchive/participants/cobra/)) over Bitcoin whitepaper copyright. On June 28, 2021, the court issued a default judgment in Wright's favor — not because the claim had merit, but because Cobra chose to protect his anonymity rather than reveal his identity to defend himself. Hours later, Cobra [posted a public rebuttal](/BitcoinArchive/entries/aftermath/2021-06-28-cobra-response-to-whitepaper-ruling/) declaring cryptographic rules superior to rules a court can buy.
 
 Wright's identity claims rested on signing with the keys to early blocks (1–9) but never extended to the genesis-block coinbase key — the single demonstration that would be dispositive, which [the genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) notes has never been performed by anyone, including Wright.
 
