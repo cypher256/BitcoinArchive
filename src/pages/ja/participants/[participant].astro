@@ -6,6 +6,7 @@ import { useTranslations, getEntries, getBiographyForParticipant, localePath, tr
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 import Avatar from '../../../components/Avatar.astro';
 import gitDates from '../../../data/git-dates.json';
+import { hasParticipantHero, resolveParticipantHero, participantHeroes } from '../../../data/participantHeroes';
 
 type LangDate = { createdAt: string; updatedAt: string };
 type GitDateRecord = { en?: LangDate; ja?: LangDate };
@@ -131,6 +132,16 @@ const structuredData = [
         <a href={localePath(`/participants/${nextParticipant.slug}/`, lang)} class="nav-next">{nextParticipant.name} &rarr;</a>
       ) : <span />}
     </nav>
+    {hasParticipantHero(participantSlug) && (
+      <img
+        class="participant-hero"
+        src={resolveParticipantHero(participantSlug, base)}
+        alt=""
+        width={participantHeroes[participantSlug].width}
+        height={participantHeroes[participantSlug].height}
+        loading="eager"
+      />
+    )}
     <div class="participant-head">
       <Avatar slug={participantSlug} sizeClass="participant-avatar" base={base} />
       <div class="participant-head-text">
@@ -211,6 +222,14 @@ const structuredData = [
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  .participant-hero {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+  }
   .list-header {
     display: flex;
     justify-content: space-between;
