@@ -8,6 +8,9 @@ import { getHomeAnalyses } from '../../lib/homeAnalyses';
 
 const lang = 'ja';
 const t = useTranslations(lang);
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
 const jaEntries = await getDisplayEntries(lang);
 const enEntries = await getDisplayEntries('en');
 const entries = jaEntries.length > 0 ? jaEntries : enEntries;
@@ -130,6 +133,14 @@ function tagWeight(count: number, max: number): number {
 >
   <div class="container-wide">
     <section class="hero">
+      <img
+        class="hero-image"
+        src={`${base}images/homepage-hero.jpg`}
+        alt=""
+        width="1600"
+        height="873"
+        loading="eager"
+      />
       <h1>Bitcoin Institute</h1>
       <p class="subtitle">{t('site.subtitle')}</p>
       <p class="description" set:html={t('site.description')} />
@@ -384,6 +395,15 @@ function tagWeight(count: number, max: number): number {
     text-align: center;
     padding: 2.5rem 0 1.5rem;
     margin-bottom: 0;
+  }
+  .hero-image {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto 1.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
   }
   .hero h1 {
     margin: 0;
