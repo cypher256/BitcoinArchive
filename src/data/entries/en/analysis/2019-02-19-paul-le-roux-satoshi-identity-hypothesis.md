@@ -23,12 +23,15 @@ secondarySources:
     url: "https://www.penguinrandomhouse.com/books/238295/the-mastermind-by-evan-ratliff/"
   - name: "The Atavist Magazine — The Mastermind (Evan Ratliff long-form series, 2016)"
     url: "https://magazine.atavist.com/the-mastermind/"
+  - name: "WIRED — Was Bitcoin Created by This International Drug Dealer? Maybe! (Evan Ratliff, July 16, 2019)"
+    url: "https://www.wired.com/story/was-bitcoin-created-by-this-international-drug-dealer-maybe/"
   - name: "Wikipedia — E4M (Encryption for the Masses)"
     url: "https://en.wikipedia.org/wiki/E4M"
 partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - aftermath/2019-02-19-paul-le-roux-biography
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+  - analysis/2008-10-31-cypherpunk-independent-arrival
 inlineLinkKeywords:
   - "Paul Le Roux hypothesis"
   - "Paul Le Roux = Satoshi"
@@ -38,15 +41,15 @@ inlineLinkKeywords:
 
 ## 1. What the hypothesis claims
 
-The hypothesis is that Le Roux — who released the open-source disk-encryption package E4M in 1999 before building one of the largest international criminal enterprises of the 2000s — was the person behind the Satoshi Nakamoto pseudonym. It was articulated in [Ratliff's *The Mastermind*](https://magazine.atavist.com/the-mastermind/) (2019) and accompanying journalism. Le Roux has been incarcerated and cooperating with US authorities since his 2012 arrest, and has made no public statement on the identity question, so the hypothesis stands as an externally-argued, open one — neither advanced nor denied by its subject.
+The hypothesis is that Le Roux — who released the open-source disk-encryption package E4M in 1999 before building one of the largest international criminal enterprises of the 2000s — was the person behind the Satoshi Nakamoto pseudonym. It was articulated in Ratliff's *The Mastermind* (2019) and accompanying journalism. Le Roux has been incarcerated and cooperating with US authorities since his 2012 arrest, and has made no public statement on the identity question, so the hypothesis stands as an externally-argued, open one — neither advanced nor denied by its subject.
 
 ## 2. The arguments the hypothesis rests on
 
 ### 2.1 Cryptographic capability
 
-Le Roux's [E4M](https://en.wikipedia.org/wiki/E4M) (Encryption for the Masses, 1999) was a real open-source disk-encryption package, circulated on the cypherpunks mailing list, and its codebase was forked into TrueCrypt in 2002. This is a documented record of shipping cryptographic software — the kind of capability Bitcoin's creator would need.
+Le Roux's E4M (Encryption for the Masses, 1999) was a real open-source disk-encryption package, circulated on the cypherpunks mailing list, and its codebase was forked into TrueCrypt in 2002. This is a documented record of shipping cryptographic software — the kind of capability Bitcoin's creator would need. The venue lines up too: E4M's 1999 announcement went out on the cypherpunks mailing list, and that list's own successor, [cryptography@metzdowd.com](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), is where Satoshi posted the Bitcoin whitepaper announcement in October 2008 — the same list lineage carrying two cryptographic-software launches nine years apart.
 
-The objection: E4M is a disk-encryption system, not a digital-cash or distributed-ledger system; the two design spaces share primitives but diverge in architecture. And Le Roux's public shipping record stops in 1999 — nearly a decade before Bitcoin v0.1 — with no documented monetary-system or distributed-systems work in the interval. Capability with disk encryption in 1999 does not entail capability with, or interest in, a 2008 cryptocurrency.
+The objection: E4M is a disk-encryption system, not a digital-cash or distributed-ledger system; the two design spaces share primitives but diverge in architecture. And Le Roux's public shipping record stops in 1999 — nearly a decade before Bitcoin v0.1 — with no documented monetary-system or distributed-systems work in the interval. Capability with disk encryption in 1999 does not entail capability with, or interest in, a 2008 cryptocurrency. The venue overlap fares no better as a discriminator: thousands of people read or posted to the cypherpunks list and its cryptography-list successor across the decade between the two, so shared venue selects a large population, not a specific candidate.
 
 ### 2.2 Covertness fit
 
@@ -59,6 +62,12 @@ The objection: this is covertness by circumstance, and it places Le Roux inside 
 Ratliff's framing supplies a motive: a reason to keep a cryptographic past sealed off from a criminal present.
 
 The objection: motive is the weakest evidentiary class in the candidate landscape. It can explain why a given person *might* have acted, but it selects no one — many capable people of the period had reasons to stay hidden, and a plausible motive is not a documentary link.
+
+### 2.4 A contemporaneous account of digital-currency discussion
+
+An unnamed source who oversaw Le Roux's facilities in the Philippines told Ratliff that Le Roux kept a team of Romanian programmers in a Manila office who discussed "online currency" in 2007–2008, before Bitcoin's release — placing a digital-currency conversation inside Le Roux's orbit during Bitcoin's actual development window.
+
+The objection: the account is anonymous, secondhand, and dated only to a two-year window; "online currency" does not specify Bitcoin, proof-of-work, or any design element distinguishing it from the various digital-payment and e-gold discussions already circulating at the time. It places a topic, not a document or a name, inside the development window.
 
 ## 3. The counter-evidence
 
@@ -92,6 +101,6 @@ Le Roux fits the one condition the public record most strongly supports about Sa
 ## 5. Limits of this entry
 
 - This entry does not present new evidence. It compiles publicly available material.
-- This archive holds no dedicated Le Roux primary-source entries (the E4M cypherpunks announcement, criminal-case court documents, *Mastermind* excerpts). The specific dates and claims here are externally sourced — primarily Ratliff (2019), *The Atavist Magazine* (2016), and Wikipedia — rather than archive-verified, and the full life is in the [Paul Le Roux biography](/BitcoinArchive/participants/paul-le-roux/).
+- This archive holds no dedicated Le Roux primary-source entries (the E4M cypherpunks announcement, criminal-case court documents, *Mastermind*/WIRED excerpts). The specific dates and claims here are externally sourced — primarily Ratliff's 2019 book, his 2019 WIRED feature, *The Atavist Magazine* (2016), and Wikipedia — rather than archive-verified, and the full life is in the [Paul Le Roux biography](/BitcoinArchive/participants/paul-le-roux/).
 
 This hypothesis entry is referenced from the [Paul Le Roux biography](/BitcoinArchive/participants/paul-le-roux/) (the subject of the hypothesis) and the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), which places Paul Le Roux in its Group C taxonomy within the necessary-but-not-sufficient evaluation framework.

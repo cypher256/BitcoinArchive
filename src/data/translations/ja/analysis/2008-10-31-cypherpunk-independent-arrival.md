@@ -45,6 +45,7 @@ relatedEntries:
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
   - analysis/2008-10-31-bitcoin-design-lineage
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
+  - analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
