@@ -159,7 +159,6 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     linkBase,
     eventsSuffix: l.eventsSuffix,
   })} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
@@ -202,13 +201,78 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
 }
 </style>
 
-<script is:inline>
+<script>
+// Real ES-module script (no is:inline) so Vite bundles it and tree-shakes
+// d3 down to the submodules actually used here, instead of shipping the
+// full d3 CDN bundle.
+import { select } from 'd3-selection';
+import { extent } from 'd3-array';
+import { scaleTime, scaleBand, scaleOrdinal, scaleLinear } from 'd3-scale';
+import { axisBottom, axisLeft } from 'd3-axis';
+import { timeYear, timeMonth } from 'd3-time';
+import { timeFormat } from 'd3-time-format';
+// Renamed on import: the component already has a local variable named
+// `line` (the d3-shape line generator instance configured in Panel 3),
+// which would otherwise shadow this binding within its own scope.
+import { line as d3line, curveStepAfter } from 'd3-shape';
+
+// One Satoshi event, as serialized into `#satoshi-timeline-data` by the
+// frontmatter above (see `l.channels`/`timelineData.events` there).
+interface TimelineEvent {
+  date: string;
+  channel: string;
+  slug: string;
+  title: string;
+}
+interface Milestone {
+  date: string;
+  label: string;
+  slug?: string;
+}
+interface TimelineDataJson {
+  events: TimelineEvent[];
+  channelOrder: string[];
+  channelLabels: Record<string, string>;
+  milestones: Milestone[];
+  recipientLabels: Record<string, string>;
+  otherRecipientsLabel: string;
+  linkBase: string;
+  eventsSuffix: string;
+}
+// Panel 2 only: private-email events tagged with their recipient slug.
+// `lane` is assigned after construction (top-N recipient or the
+// "other" bucket), so it stays optional here.
+interface PrivateEvent {
+  date: string;
+  title: string;
+  slug: string;
+  recipient: string;
+  lane?: string;
+}
+// Panel 3 only: one point on the cumulative-count curve.
+interface CumulativePoint {
+  date: Date;
+  n: number;
+}
+interface ChartTokens {
+  palette: Record<string, string>;
+  muted: string;
+  grid: string;
+  laneA: string;
+  laneB: string;
+  accent: string;
+  emphasis: string;
+  negative: string;
+  text: string;
+  tooltipBg: string;
+  tooltipFg: string;
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
-    var dataEl = document.getElementById('satoshi-timeline-data');
+    var dataEl = document.getElementById('satoshi-timeline-data') as HTMLElement | null;
     if (!dataEl) return;
-    var data = JSON.parse(dataEl.textContent);
+    var data = JSON.parse(dataEl.textContent as string) as TimelineDataJson;
     var events = data.events;
     var channelOrder = data.channelOrder;
     var channelLabels = data.channelLabels;
@@ -220,11 +284,11 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     // by `src/styles/global.css` (see Group A `:root` block); a missing
     // value here means the stylesheet failed to load, and the chart
     // dropping to default `fill` is the right loud failure mode.
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
 
-    function readTokens() {
+    function readTokens(): ChartTokens {
       return {
         // Channel palette: 9 series → chart-color-1..9. Mapped to channels
         // in declaration order so each channel keeps a stable identity
@@ -253,14 +317,15 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
       };
     }
 
-    function escapeHtml(s) {
+    function escapeHtml(s: string) {
+      var entities: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
       return String(s).replace(/[&<>"']/g, function(c) {
-        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+        return entities[c];
       });
     }
 
-    function makeTooltip(container, t) {
-      return d3.select(container).append('div')
+    function makeTooltip(container: HTMLElement, t: ChartTokens) {
+      return select(container).append('div')
         .style('position', 'absolute')
         .style('background', t.tooltipBg)
         .style('color', t.tooltipFg)
@@ -274,13 +339,13 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         .style('z-index', 10);
     }
 
-    function moveTooltip(tooltip, container, event) {
+    function moveTooltip(tooltip: ReturnType<typeof makeTooltip>, container: HTMLElement, event: MouseEvent) {
       var rect = container.getBoundingClientRect();
       tooltip.style('left', (event.clientX - rect.left + 12) + 'px')
              .style('top', (event.clientY - rect.top + 12) + 'px');
     }
 
-    function jitter(seed) {
+    function jitter(seed: number) {
       var r = Math.sin(seed * 9301 + 49297) * 233280;
       return r - Math.floor(r);
     }
@@ -288,13 +353,21 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     function render() {
       var t = readTokens();
 
-      var dateExtent = d3.extent(events, function(d) { return new Date(d.date); });
+      // Cast: `events` is never empty in practice (the archive always has
+      // at least one recorded Satoshi event), so `extent` always resolves
+      // to a real [Date, Date] pair rather than the [undefined, undefined]
+      // the type also allows for an empty input.
+      var dateExtent = extent(events, function(d) { return new Date(d.date); }) as [Date, Date];
       dateExtent[0] = new Date(dateExtent[0].getTime() - 15 * 86400000);
       dateExtent[1] = new Date(dateExtent[1].getTime() + 15 * 86400000);
 
       // ---- Panel 1: Swimlane + Milestones ----
       (function() {
-        var container = document.getElementById('satoshi-timeline-swimlane');
+        // Asserted non-null: the runtime check right below returns early if
+        // the lookup failed, but that guard doesn't narrow the type inside
+        // functions declared further down (the .on('mousemove', ...)
+        // handler, etc.), so the type itself has to already say "non-null".
+        var container = document.getElementById('satoshi-timeline-swimlane') as HTMLElement;
         if (!container) return;
         container.innerHTML = '';
 
@@ -304,12 +377,12 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         var width = container.clientWidth;
         if (width < 320) width = 320;
 
-        var x = d3.scaleTime().domain(dateExtent).range([margin.left, width - margin.right]);
-        var y = d3.scaleBand().domain(channelOrder)
+        var x = scaleTime().domain(dateExtent).range([margin.left, width - margin.right]);
+        var y = scaleBand().domain(channelOrder)
           .range([margin.top, margin.top + laneHeight * channelOrder.length])
           .padding(0.15);
 
-        var svg = d3.select(container).append('svg')
+        var svg = select(container).append('svg')
           .attr('viewBox', '0 0 ' + width + ' ' + height)
           .attr('width', '100%')
           .style('display', 'block');
@@ -317,17 +390,19 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         // Lane backgrounds — alternating tint via theme tokens.
         svg.selectAll('.lane-bg').data(channelOrder).enter().append('rect')
           .attr('x', margin.left)
-          .attr('y', function(c) { return y(c); })
+          // Non-null: every `c` comes from `channelOrder`, the same array
+          // used as the scale's domain, so it always resolves.
+          .attr('y', function(c) { return y(c) as number; })
           .attr('width', width - margin.left - margin.right)
           .attr('height', y.bandwidth())
           .attr('fill', function(_c, i) { return i % 2 === 0 ? t.laneA : t.laneB; });
 
         // Lane labels with counts
-        var channelTotals = {};
+        var channelTotals: Record<string, number> = {};
         events.forEach(function(e) { channelTotals[e.channel] = (channelTotals[e.channel] || 0) + 1; });
         svg.selectAll('.lane-label').data(channelOrder).enter().append('text')
           .attr('x', margin.left - 8)
-          .attr('y', function(c) { return y(c) + y.bandwidth() / 2; })
+          .attr('y', function(c) { return (y(c) as number) + y.bandwidth() / 2; })
           .attr('text-anchor', 'end')
           .attr('dominant-baseline', 'central')
           .style('font-size', '11px')
@@ -338,7 +413,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         var laneTopY = margin.top;
         var laneBottomY = margin.top + laneHeight * channelOrder.length;
 
-        function estimateLabelWidth(text) {
+        function estimateLabelWidth(text: string) {
           var w = 0;
           for (var ci = 0; ci < text.length; ci++) {
             var code = text.charCodeAt(ci);
@@ -350,7 +425,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         var chartLeftX = margin.left;
         var chartRightX = width - margin.right;
         var sortedMs = milestones.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
-        var rows = [];
+        var rows: Array<{ x1: number; x2: number }[]> = [];
         var msLayout = sortedMs.map(function(m) {
           var px = x(new Date(m.date));
           var labelW = estimateLabelWidth(m.label);
@@ -410,12 +485,15 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         });
 
         // X axis
-        var xAxis = d3.axisBottom(x).ticks(d3.timeYear.every(1)).tickFormat(d3.timeFormat('%Y'));
+        // Explicit <Date>: left to inference, Domain would widen to the
+        // scale's full call-signature parameter type (Date | NumberValue),
+        // which timeFormat('%Y') (a (date: Date) => string) can't satisfy.
+        var xAxis = axisBottom<Date>(x).ticks(timeYear.every(1)).tickFormat(timeFormat('%Y'));
         svg.append('g')
           .attr('transform', 'translate(0,' + laneBottomY + ')')
           .call(xAxis)
           .selectAll('text').style('font-size', '11px').style('fill', t.text);
-        var monthAxis = d3.axisBottom(x).ticks(d3.timeMonth.every(3)).tickSize(4).tickFormat(function() { return ''; });
+        var monthAxis = axisBottom(x).ticks(timeMonth.every(3)).tickSize(4).tickFormat(function() { return ''; });
         svg.append('g')
           .attr('transform', 'translate(0,' + laneBottomY + ')')
           .call(monthAxis)
@@ -426,7 +504,9 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         svg.selectAll('.event-dot').data(events).enter().append('circle')
           .attr('cx', function(d) { return x(new Date(d.date)); })
           .attr('cy', function(d, i) {
-            var laneTop = y(d.channel);
+            // Non-null: `d.channel` is always one of `channelOrder`, the
+            // scale's domain, so it always resolves.
+            var laneTop = y(d.channel) as number;
             var bw = y.bandwidth();
             var offset = (jitter(i + 1) - 0.5) * bw * 0.7;
             return laneTop + bw / 2 + offset;
@@ -436,20 +516,21 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
           .attr('fill-opacity', 0.7)
           .style('cursor', 'pointer')
           .on('mouseover', function(_event, d) {
-            d3.select(this).attr('r', 5).attr('fill-opacity', 1);
+            select(this).attr('r', 5).attr('fill-opacity', 1);
             var dateStr = new Date(d.date).toISOString().slice(0, 10);
             tooltip.style('opacity', 1).html(
               '<strong>' + dateStr + '</strong> · ' + (channelLabels[d.channel] || d.channel) +
               '<br/>' + escapeHtml(d.title));
           })
           .on('mousemove', function(event) { moveTooltip(tooltip, container, event); })
-          .on('mouseout', function() { d3.select(this).attr('r', 2.6).attr('fill-opacity', 0.7); tooltip.style('opacity', 0); })
+          .on('mouseout', function() { select(this).attr('r', 2.6).attr('fill-opacity', 0.7); tooltip.style('opacity', 0); })
           .on('click', function(_event, d) { window.location.href = linkBase + d.slug + '/'; });
       })();
 
       // ---- Panel 2: Per-recipient swimlane (private email only) ----
       (function() {
-        var container = document.getElementById('satoshi-timeline-recipients');
+        // Asserted non-null: see Panel 1's container above.
+        var container = document.getElementById('satoshi-timeline-recipients') as HTMLElement;
         if (!container) return;
         container.innerHTML = '';
 
@@ -457,7 +538,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         var otherLabel = data.otherRecipientsLabel;
 
         // Filter to private email and tag with recipient slug from path
-        var privateEvents = [];
+        var privateEvents: PrivateEvent[] = [];
         events.forEach(function(e) {
           if (e.channel !== 'private-email') return;
           var parts = e.slug.split('/');
@@ -466,13 +547,13 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         });
 
         // Count per recipient
-        var counts = {};
+        var counts: Record<string, number> = {};
         privateEvents.forEach(function(e) { counts[e.recipient] = (counts[e.recipient] || 0) + 1; });
 
         // Top N recipients by count, others bucketed
         var sortedRecipients = Object.keys(counts).sort(function(a, b) { return counts[b] - counts[a]; });
         var TOP_N = 7;
-        var topSet = {};
+        var topSet: Record<string, boolean> = {};
         sortedRecipients.slice(0, TOP_N).forEach(function(r) { topSet[r] = true; });
         var otherKey = '__other__';
         var otherCount = 0;
@@ -487,7 +568,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         });
         if (otherCount > 0) laneOrder.push(otherKey);
 
-        function laneDisplay(key) {
+        function laneDisplay(key: string) {
           if (key === otherKey) return otherLabel + ' (' + otherCount + ')';
           var name = recipientLabels[key] || key;
           return name + ' (' + counts[key] + ')';
@@ -499,12 +580,12 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         var width = container.clientWidth;
         if (width < 320) width = 320;
 
-        var x = d3.scaleTime().domain(dateExtent).range([margin.left, width - margin.right]);
-        var y = d3.scaleBand().domain(laneOrder)
+        var x = scaleTime().domain(dateExtent).range([margin.left, width - margin.right]);
+        var y = scaleBand().domain(laneOrder)
           .range([margin.top, margin.top + laneHeight * laneOrder.length])
           .padding(0.18);
 
-        var svg = d3.select(container).append('svg')
+        var svg = select(container).append('svg')
           .attr('viewBox', '0 0 ' + width + ' ' + height)
           .attr('width', '100%')
           .style('display', 'block');
@@ -512,7 +593,8 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         // Lane backgrounds
         svg.selectAll('.lane-bg-r').data(laneOrder).enter().append('rect')
           .attr('x', margin.left)
-          .attr('y', function(k) { return y(k); })
+          // Non-null: every `k` comes from `laneOrder`, the scale's domain.
+          .attr('y', function(k) { return y(k) as number; })
           .attr('width', width - margin.left - margin.right)
           .attr('height', y.bandwidth())
           .attr('fill', function(_k, i) { return i % 2 === 0 ? t.laneA : t.laneB; });
@@ -520,7 +602,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         // Lane labels
         svg.selectAll('.lane-label-r').data(laneOrder).enter().append('text')
           .attr('x', margin.left - 8)
-          .attr('y', function(k) { return y(k) + y.bandwidth() / 2; })
+          .attr('y', function(k) { return (y(k) as number) + y.bandwidth() / 2; })
           .attr('text-anchor', 'end')
           .attr('dominant-baseline', 'central')
           .style('font-size', '11px')
@@ -534,16 +616,19 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
           t.palette['p2p-research-ml'], t.palette['p2pfoundation'], t.palette['sourceforge'],
           t.palette['github'], t.palette['bitcointalk'],
         ];
-        var recipColor = d3.scaleOrdinal().domain(laneOrder).range(recipPalette);
+        var recipColor = scaleOrdinal<string, string>().domain(laneOrder).range(recipPalette);
 
         // X axis (year + minor quarter ticks)
         var laneBottomY = margin.top + laneHeight * laneOrder.length;
-        var xAxis = d3.axisBottom(x).ticks(d3.timeYear.every(1)).tickFormat(d3.timeFormat('%Y'));
+        // Explicit <Date>: left to inference, Domain would widen to the
+        // scale's full call-signature parameter type (Date | NumberValue),
+        // which timeFormat('%Y') (a (date: Date) => string) can't satisfy.
+        var xAxis = axisBottom<Date>(x).ticks(timeYear.every(1)).tickFormat(timeFormat('%Y'));
         svg.append('g')
           .attr('transform', 'translate(0,' + laneBottomY + ')')
           .call(xAxis)
           .selectAll('text').style('font-size', '11px').style('fill', t.text);
-        var monthAxis = d3.axisBottom(x).ticks(d3.timeMonth.every(3)).tickSize(4).tickFormat(function() { return ''; });
+        var monthAxis = axisBottom(x).ticks(timeMonth.every(3)).tickSize(4).tickFormat(function() { return ''; });
         svg.append('g')
           .attr('transform', 'translate(0,' + laneBottomY + ')')
           .call(monthAxis)
@@ -561,46 +646,49 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         svg.selectAll('.r-event-dot').data(privateEvents).enter().append('circle')
           .attr('cx', function(d) { return x(new Date(d.date)); })
           .attr('cy', function(d, i) {
-            var laneTop = y(d.lane);
+            // Non-null: `lane` is assigned to every privateEvents entry
+            // above, before this selection is built.
+            var laneTop = y(d.lane as string) as number;
             var bw = y.bandwidth();
             var offset = (jitter(i + 1) - 0.5) * bw * 0.7;
             return laneTop + bw / 2 + offset;
           })
           .attr('r', 2.6)
-          .attr('fill', function(d) { return recipColor(d.lane); })
+          .attr('fill', function(d) { return recipColor(d.lane as string); })
           .attr('fill-opacity', 0.75)
           .style('cursor', 'pointer')
           .on('mouseover', function(_event, d) {
-            d3.select(this).attr('r', 5).attr('fill-opacity', 1);
+            select(this).attr('r', 5).attr('fill-opacity', 1);
             var dateStr = new Date(d.date).toISOString().slice(0, 10);
-            var who = d.lane === otherKey ? (recipientLabels[d.recipient] || d.recipient) : (recipientLabels[d.lane] || d.lane);
+            var who = d.lane === otherKey ? (recipientLabels[d.recipient] || d.recipient) : (recipientLabels[d.lane as string] || d.lane);
             tooltip.style('opacity', 1).html(
               '<strong>' + dateStr + '</strong> · → ' + who +
               '<br/>' + escapeHtml(d.title));
           })
           .on('mousemove', function(event) { moveTooltip(tooltip, container, event); })
-          .on('mouseout', function() { d3.select(this).attr('r', 2.6).attr('fill-opacity', 0.75); tooltip.style('opacity', 0); })
+          .on('mouseout', function() { select(this).attr('r', 2.6).attr('fill-opacity', 0.75); tooltip.style('opacity', 0); })
           .on('click', function(_event, d) { window.location.href = linkBase + d.slug + '/'; });
       })();
 
       // ---- Panel 3: Cumulative curve ----
       (function() {
-        var container = document.getElementById('satoshi-timeline-cumulative');
+        // Asserted non-null: see Panel 1's container above.
+        var container = document.getElementById('satoshi-timeline-cumulative') as HTMLElement;
         if (!container) return;
         container.innerHTML = '';
 
         var sorted = events.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
-        var cumulative = sorted.map(function(e, i) { return { date: new Date(e.date), n: i + 1 }; });
+        var cumulative: CumulativePoint[] = sorted.map(function(e, i) { return { date: new Date(e.date), n: i + 1 }; });
 
         var margin = { top: 20, right: 20, bottom: 50, left: 60 };
         var height = 220;
         var width = container.clientWidth;
         if (width < 320) width = 320;
 
-        var x = d3.scaleTime().domain(dateExtent).range([margin.left, width - margin.right]);
-        var y = d3.scaleLinear().domain([0, cumulative[cumulative.length - 1].n]).range([height - margin.bottom, margin.top]);
+        var x = scaleTime().domain(dateExtent).range([margin.left, width - margin.right]);
+        var y = scaleLinear().domain([0, cumulative[cumulative.length - 1].n]).range([height - margin.bottom, margin.top]);
 
-        var svg = d3.select(container).append('svg')
+        var svg = select(container).append('svg')
           .attr('viewBox', '0 0 ' + width + ' ' + height)
           .attr('width', '100%')
           .style('display', 'block');
@@ -624,10 +712,10 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
 
         // Curve — uses chart-color-9 (slate) for a calm "background fact"
         // line that doesn't compete with the per-channel dots above.
-        var line = d3.line()
+        var line = d3line<CumulativePoint>()
           .x(function(d) { return x(d.date); })
           .y(function(d) { return y(d.n); })
-          .curve(d3.curveStepAfter);
+          .curve(curveStepAfter);
 
         svg.append('path')
           .datum(cumulative)
@@ -637,14 +725,17 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
           .attr('d', line);
 
         // X axis
-        var xAxis = d3.axisBottom(x).ticks(d3.timeYear.every(1)).tickFormat(d3.timeFormat('%Y'));
+        // Explicit <Date>: left to inference, Domain would widen to the
+        // scale's full call-signature parameter type (Date | NumberValue),
+        // which timeFormat('%Y') (a (date: Date) => string) can't satisfy.
+        var xAxis = axisBottom<Date>(x).ticks(timeYear.every(1)).tickFormat(timeFormat('%Y'));
         svg.append('g')
           .attr('transform', 'translate(0,' + (height - margin.bottom) + ')')
           .call(xAxis)
           .selectAll('text').style('font-size', '11px').style('fill', t.text);
 
         // Y axis
-        var yAxis = d3.axisLeft(y).ticks(5);
+        var yAxis = axisLeft(y).ticks(5);
         svg.append('g')
           .attr('transform', 'translate(' + margin.left + ',0)')
           .call(yAxis)
@@ -671,8 +762,8 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
 
     // Reveal: shared left-to-right time-cursor wipe across all three panels
     // (chart-anim.js wipeReveal). Plays once on scroll-in; render() is untouched.
-    var replayFn = null;
-    (function arm(n) {
+    var replayFn: (() => void) | null = null;
+    (function arm(n?: number) {
       if (window.BAChartAnim) {
         replayFn = window.BAChartAnim.wipeReveal(
           ['satoshi-timeline-swimlane', 'satoshi-timeline-recipients', 'satoshi-timeline-cumulative'],

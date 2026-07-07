@@ -56,15 +56,18 @@
     "build:fresh": "npm run clean:cache && npm run build"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.9",
     "@astrojs/sitemap": "^3.7.0",
     "algoliasearch": "^5.50.1",
     "astro": "^5.17.1",
     "budoux": "^0.8.4",
+    "d3": "^7.9.0",
     "instantsearch.js": "^4.93.0",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
     "satori": "^0.25.0",
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
     "@mermaid-js/mermaid-cli": "^11.14.0",

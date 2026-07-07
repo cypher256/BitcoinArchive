@@ -55,24 +55,54 @@ const l = labels[lang];
   </section>
 
   <script type="application/json" id="nls-data" set:html={JSON.stringify(l)} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no define:vars, no is:inline) so Vite bundles it
+// and tree-shakes d3 down to the single submodule actually used here,
+// instead of shipping the ~92KB full d3 CDN bundle for ~1KB of API surface.
+import { select } from 'd3-selection';
+
+// Mirrors the shape of the `labels[lang]` object built server-side in
+// this file's frontmatter and serialized into the `#nls-data` JSON
+// script block below — there's no shared lib module for it (unlike
+// NetworkGraph's GraphNode/GraphEdge) since this component is the only
+// consumer of this exact shape.
+interface NlsLabels {
+  title: string;
+  subtitle: string;
+  kwhLabel: string;
+  costLabel: string;
+  monthsLabel: string;
+  btcLabel: string;
+  resultLabel: string;
+  formula: string;
+  kwh: string;
+  cost: string;
+  months: string;
+  mined: string;
+  priceBtc: string;
+  priceBtcFull: string;
+  priceUsd: string;
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
-
-    var dataEl = document.getElementById('nls-data');
+    // Asserted non-null: the runtime checks right below return early if
+    // either lookup actually failed, but that guard doesn't narrow the
+    // type inside draw() (declared further down and called from this
+    // same scope), so the type itself has to already say "non-null" for
+    // that call site to type-check.
+    var dataEl = document.getElementById('nls-data') as HTMLElement;
     if (!dataEl) return;
-    var l = JSON.parse(dataEl.textContent);
+    var l = JSON.parse(dataEl.textContent as string) as NlsLabels;
 
-    var container = document.getElementById('nls-formula');
+    var container = document.getElementById('nls-formula') as HTMLElement;
     if (!container) return;
 
     // Resolve a CSS custom property against :root. Reading at draw()
     // time lets the formula diagram repaint cleanly on theme swap.
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
     function readTokens() {
@@ -101,7 +131,7 @@ const l = labels[lang];
       var W = rect.width || 700;
       var H = 320;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g');
 
       // Define the flow: 4 input boxes → operation → result
@@ -191,7 +221,7 @@ const l = labels[lang];
         .text('(' + l.priceUsd + ')');
     }
     draw();
-    var timer;
+    var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
 
     // Theme/mode listeners — repaint on theme/mode toggle.

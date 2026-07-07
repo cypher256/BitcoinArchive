@@ -102,22 +102,91 @@ const traits = analysisData.codingTraits[lang];
   </section>
 
   <script type="application/json" id="satoshi-analysis-data" set:html={JSON.stringify({ ...analysisData, labels: l })} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no define:vars, no is:inline) so Vite bundles it
+// and tree-shakes d3 down to the submodules actually used here, instead
+// of shipping the ~92KB full d3 CDN bundle for the small API surface below.
+import { select } from 'd3-selection';
+import { scaleSequential, scaleBand, scaleLinear, scaleTime } from 'd3-scale';
+import { interpolateYlOrRd } from 'd3-scale-chromatic';
+import { range, max, extent } from 'd3-array';
+import { axisBottom, axisLeft } from 'd3-axis';
+import { timeFormat } from 'd3-time-format';
+import { format } from 'd3-format';
+// Renamed on import: the component already has local variables named
+// `area` and `line` (the generator instances configured below), which
+// would otherwise shadow these bindings within their own scope.
+import { area as d3area, line as d3line, curveMonotoneX } from 'd3-shape';
+
+// Shape of src/data/satoshi-analysis/commit-data.json (plus the
+// server-rendered `labels` block appended alongside it — see the JSON
+// script tag above).
+type HeatmapCell = [number, number, number]; // [dayOfWeek(1-7), hour(0-23), commitCount]
+interface MonthlyDatum {
+  month: string;
+  commits: number;
+}
+interface CodeGrowthDatum {
+  version: string;
+  date: string;
+  lines: number;
+  files: number;
+}
+interface HourlyDatum {
+  hour: number;
+  commits: number;
+}
+interface TraitDatum {
+  trait: string;
+  desc: string;
+  category: string;
+}
+interface AnalysisLabels {
+  heatmapTitle: string;
+  heatmapSub: string;
+  monthlyTitle: string;
+  monthlySub: string;
+  growthTitle: string;
+  growthSub: string;
+  traitsTitle: string;
+  traitsSub: string;
+  commits: string;
+  lines: string;
+  files: string;
+  days: string[];
+  categories: Record<string, string>;
+  timezoneNote: string;
+  timezoneDesc: string;
+}
+interface AnalysisData {
+  heatmap: HeatmapCell[];
+  monthly: MonthlyDatum[];
+  hourly: HourlyDatum[];
+  codeGrowth: CodeGrowthDatum[];
+  codingTraits: { en: TraitDatum[]; ja: TraitDatum[] };
+  labels: AnalysisLabels;
+}
+// Derived per-point shape for the code-growth chart (parseDate() turns the
+// raw "YYYY-MM" string into a Date up front, alongside the other fields).
+interface CodeGrowthPoint {
+  date: Date;
+  lines: number;
+  version: string;
+  files: number;
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
-
     var dataEl = document.getElementById('satoshi-analysis-data');
     if (!dataEl) return;
-    var data = JSON.parse(dataEl.textContent);
+    var data = JSON.parse(dataEl.textContent as string) as AnalysisData;
     var l = data.labels;
 
     // Resolve a CSS custom property against :root.
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
     function readTokens() {
@@ -158,14 +227,14 @@ const traits = analysisData.codingTraits[lang];
       var width = cellSize * 24 + margin.left + margin.right;
       var height = cellSize * 7 + margin.top + margin.bottom;
 
-      var svg = d3.select(container).append('svg')
+      var svg = select(container).append('svg')
         .attr('viewBox', '0 0 ' + width + ' ' + height)
         .attr('width', '100%');
 
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
       // Build lookup
-      var lookup = {};
+      var lookup: Record<string, number> = {};
       var maxVal = 0;
       data.heatmap.forEach(function(d) {
         var key = d[0] + '-' + d[1];
@@ -173,7 +242,7 @@ const traits = analysisData.codingTraits[lang];
         if (d[2] > maxVal) maxVal = d[2];
       });
 
-      var color = d3.scaleSequential(d3.interpolateYlOrRd).domain([0, maxVal]);
+      var color = scaleSequential(interpolateYlOrRd).domain([0, maxVal]);
 
       // Day labels
       g.selectAll('.day-label')
@@ -189,7 +258,7 @@ const traits = analysisData.codingTraits[lang];
 
       // Hour labels
       g.selectAll('.hour-label')
-        .data(d3.range(24))
+        .data(range(24))
         .enter().append('text')
         .attr('x', function(d) { return d * cellSize + cellSize / 2; })
         .attr('y', -8)
@@ -199,7 +268,7 @@ const traits = analysisData.codingTraits[lang];
         .text(function(d) { return d; });
 
       // Cells
-      var tooltip = d3.select(container).append('div')
+      var tooltip = select(container).append('div')
         .style('position', 'absolute')
         .style('background', T.tooltipBg)
         .style('color', T.tooltipFg)
@@ -223,7 +292,7 @@ const traits = analysisData.codingTraits[lang];
             .attr('data-hour', hour)
             .attr('data-val', val)
             .on('mouseover', function() {
-              var d = d3.select(this);
+              var d = select(this);
               var v = +d.attr('data-val');
               var h = +d.attr('data-hour');
               var dy = +d.attr('data-day');
@@ -263,7 +332,7 @@ const traits = analysisData.codingTraits[lang];
       var width = container.clientWidth;
       var height = 280;
 
-      var svg = d3.select(container).append('svg')
+      var svg = select(container).append('svg')
         .attr('viewBox', '0 0 ' + width + ' ' + height)
         .attr('width', '100%');
 
@@ -272,19 +341,22 @@ const traits = analysisData.codingTraits[lang];
       var innerW = width - margin.left - margin.right;
       var innerH = height - margin.top - margin.bottom;
 
-      var x = d3.scaleBand()
+      var x = scaleBand()
         .domain(data.monthly.map(function(d) { return d.month; }))
         .range([0, innerW])
         .padding(0.15);
 
-      var y = d3.scaleLinear()
-        .domain([0, d3.max(data.monthly, function(d) { return d.commits; })])
+      // max() can return undefined for an empty iterable; data.monthly is
+      // always non-empty in practice (fixed monthly-commit JSON), so 0
+      // here is an unreachable fallback, not a behavior change.
+      var y = scaleLinear()
+        .domain([0, max(data.monthly, function(d) { return d.commits; }) ?? 0])
         .nice()
         .range([innerH, 0]);
 
       g.append('g')
         .attr('transform', 'translate(0,' + innerH + ')')
-        .call(d3.axisBottom(x))
+        .call(axisBottom(x))
         .selectAll('text')
         .attr('transform', 'rotate(-45)')
         .style('text-anchor', 'end')
@@ -292,15 +364,20 @@ const traits = analysisData.codingTraits[lang];
         .style('fill', T.text);
 
       g.append('g')
-        .call(d3.axisLeft(y).ticks(6))
+        .call(axisLeft(y).ticks(6))
         .selectAll('text')
         .style('font-size', '11px')
         .style('fill', T.text);
 
+      // ScaleBand's call signature returns `number | undefined` (undefined
+      // only if the key isn't in the domain). The domain here is built from
+      // this same data.monthly array, so every d.month is guaranteed
+      // present; cast rather than fall back to 0 so a real bug wouldn't
+      // render at x=0 unnoticed.
       g.selectAll('.bar')
         .data(data.monthly)
         .enter().append('rect')
-        .attr('x', function(d) { return x(d.month); })
+        .attr('x', function(d) { return x(d.month) as number; })
         .attr('y', function(d) { return y(d.commits); })
         .attr('width', x.bandwidth())
         .attr('height', function(d) { return innerH - y(d.commits); })
@@ -317,7 +394,7 @@ const traits = analysisData.codingTraits[lang];
       g.selectAll('.bar-label')
         .data(data.monthly)
         .enter().append('text')
-        .attr('x', function(d) { return x(d.month) + x.bandwidth() / 2; })
+        .attr('x', function(d) { return (x(d.month) as number) + x.bandwidth() / 2; })
         .attr('y', function(d) { return y(d.commits) - 4; })
         .attr('text-anchor', 'middle')
         .style('font-size', '10px')
@@ -335,7 +412,7 @@ const traits = analysisData.codingTraits[lang];
       var width = container.clientWidth;
       var height = 280;
 
-      var svg = d3.select(container).append('svg')
+      var svg = select(container).append('svg')
         .attr('viewBox', '0 0 ' + width + ' ' + height)
         .attr('width', '100%');
 
@@ -344,26 +421,35 @@ const traits = analysisData.codingTraits[lang];
       var innerW = width - margin.left - margin.right;
       var innerH = height - margin.top - margin.bottom;
 
-      var parseDate = function(s) {
+      var parseDate = function(s: string) {
         var parts = s.split('-');
         return new Date(+parts[0], +parts[1] - 1);
       };
 
-      var cg = data.codeGrowth.map(function(d) {
+      var cg: CodeGrowthPoint[] = data.codeGrowth.map(function(d) {
         return { date: parseDate(d.date), lines: d.lines, version: d.version, files: d.files };
       });
 
-      var x = d3.scaleTime()
-        .domain(d3.extent(cg, function(d) { return d.date; }))
+      // extent() types its result as [Date, Date] | [undefined, undefined]
+      // to cover the empty-array case; cg is always non-empty (the fixed
+      // code-growth JSON always has entries), so the cast is safe here.
+      var x = scaleTime()
+        .domain(extent(cg, function(d) { return d.date; }) as [Date, Date])
         .range([0, innerW]);
 
-      var y = d3.scaleLinear()
+      var y = scaleLinear()
         .domain([0, 35000])
         .range([innerH, 0]);
 
+      // Explicit <Date> generic: left to inference, axisBottom(x) resolves
+      // Domain to `Date | NumberValue` (scaleTime's call signature accepts
+      // either), which then rejects timeFormat's `(date: Date) => string`
+      // as too narrow for `tickFormat`. Pinning Domain to Date matches how
+      // `x` is actually used (cg's dates are all Date) and satisfies both
+      // the AxisScale<Date> and tickFormat's `(d: Date) => string` shape.
       g.append('g')
         .attr('transform', 'translate(0,' + innerH + ')')
-        .call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat('%Y-%m')))
+        .call(axisBottom<Date>(x).ticks(6).tickFormat(timeFormat('%Y-%m')))
         .selectAll('text')
         .attr('transform', 'rotate(-45)')
         .style('text-anchor', 'end')
@@ -371,7 +457,7 @@ const traits = analysisData.codingTraits[lang];
         .style('fill', T.text);
 
       g.append('g')
-        .call(d3.axisLeft(y).ticks(5).tickFormat(function(d) { return d3.format(',')(d); }))
+        .call(axisLeft(y).ticks(5).tickFormat(function(d) { return format(',')(d); }))
         .selectAll('text')
         .style('font-size', '11px')
         .style('fill', T.text);
@@ -379,11 +465,11 @@ const traits = analysisData.codingTraits[lang];
       // Area — semitransparent line tone so it reads as "fill below
       // the curve" without competing with the line itself. Uses
       // chart-color-2 family throughout for visual continuity.
-      var area = d3.area()
+      var area = d3area<CodeGrowthPoint>()
         .x(function(d) { return x(d.date); })
         .y0(innerH)
         .y1(function(d) { return y(d.lines); })
-        .curve(d3.curveMonotoneX);
+        .curve(curveMonotoneX);
 
       g.append('path')
         .datum(cg)
@@ -392,10 +478,10 @@ const traits = analysisData.codingTraits[lang];
         .attr('d', area);
 
       // Line
-      var line = d3.line()
+      var line = d3line<CodeGrowthPoint>()
         .x(function(d) { return x(d.date); })
         .y(function(d) { return y(d.lines); })
-        .curve(d3.curveMonotoneX);
+        .curve(curveMonotoneX);
 
       g.append('path')
         .datum(cg)
@@ -421,15 +507,15 @@ const traits = analysisData.codingTraits[lang];
         .attr('y', function(d) { return y(d.lines) - 8; })
         .style('font-size', '10px')
         .style('fill', T.muted)
-        .text(function(d) { return d.version + ' (' + d3.format(',')(d.lines) + ')'; });
+        .text(function(d) { return d.version + ' (' + format(',')(d.lines) + ')'; });
     })();
     } // end render()
 
     render();
 
     // Reveal: per-panel time-cursor wipe on scroll-in (chart-anim.js wipeReveal).
-    var replayFn = null;
-    (function arm(n) {
+    var replayFn: (() => void) | null = null;
+    (function arm(n?: number) {
       if (window.BAChartAnim) {
         replayFn = window.BAChartAnim.wipeReveal(['commit-heatmap', 'monthly-commits', 'code-growth'], { duration: 5000 });
       } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }

@@ -68,35 +68,100 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
   )}
   <div id={chartId} class:list={['chart-container', { mini }]}></div>
   <script type="application/json" id={`${chartId}-data`} set:html={JSON.stringify(chartData)} />
+  <script
+    type="application/json"
+    id={`${chartId}-meta`}
+    set:html={JSON.stringify({
+      chartId,
+      mini,
+      lang,
+      labels: {
+        price: t('chart.price' as any),
+        date: t('chart.date' as any),
+        reward: t('chart.reward' as any),
+        block: t('chart.block' as any),
+        predictedBy: t('chart.predictedBy' as any),
+        target: t('chart.target' as any),
+        actual: t('chart.actual' as any),
+        hitYes: t('chart.hitYes' as any),
+        hitNo: t('chart.hitNo' as any),
+        hitPending: t('chart.hitPending' as any),
+      },
+    })}
+  />
 </div>
 
-<script is:inline define:vars={{ chartId, mini, lang, labels: {
-  price: t('chart.price' as any),
-  date: t('chart.date' as any),
-  reward: t('chart.reward' as any),
-  block: t('chart.block' as any),
-  predictedBy: t('chart.predictedBy' as any),
-  target: t('chart.target' as any),
-  actual: t('chart.actual' as any),
-  hitYes: t('chart.hitYes' as any),
-  hitNo: t('chart.hitNo' as any),
-  hitPending: t('chart.hitPending' as any),
-} }}>
-(function() {
-  function initChart() {
-    if (typeof d3 === 'undefined') { setTimeout(initChart, 50); return; }
+<script>
+// Real ES-module script (no define:vars, no is:inline) so Vite bundles it and
+// tree-shakes d3 to the ~13 functions actually used, instead of the ~92KB
+// full CDN bundle. define:vars would force Astro to treat this as is:inline
+// — see the sibling `#<chartId>-meta` JSON block above for how the
+// server-side values (chartId/mini/lang/labels) now cross into this script.
+// `area`/`line` are aliased on import since this file already has local
+// variables with those names (the configured d3 shape generators).
+import { select, pointer } from 'd3-selection';
+import { scaleTime, scaleLog, scaleLinear } from 'd3-scale';
+import { axisLeft, axisBottom } from 'd3-axis';
+import { area as d3area, line as d3line, curveMonotoneX } from 'd3-shape';
+import { extent, min, max, bisector } from 'd3-array';
+import { format } from 'd3-format';
 
-    var container = document.getElementById(chartId);
-    var dataEl = document.getElementById(chartId + '-data');
+// Data shapes below are typed loosely (`any` on nested fields, esp. the
+// datum callback parameters passed to d3 .attr()/.text() etc.) rather than
+// modeling every prediction/event/model field precisely: the goal here is
+// catching real mistakes elsewhere in this file (typos, wrong argument
+// counts, undefined access), not exhaustively describing chart JSON shapes
+// that already have a single source of truth in src/data/btc-chart/*.json.
+interface PricePoint {
+  date: Date;
+  price: number;
+}
+interface ChartMeta {
+  chartId: string;
+  mini: boolean;
+  lang: string;
+  labels: Record<string, string>;
+}
+interface ChartJsonData {
+  prices: Array<{ date: string; price: number }>;
+  halvings: any[];
+  events: any[];
+  predictions: any[];
+  supply: any;
+  models: any[];
+}
+
+(function() {
+  // chartId is always exactly one of these two literal values (see the
+  // frontmatter above). This module script is deduplicated by Astro/Vite
+  // if the component is ever used twice on one page (unlike the old
+  // is:inline copy, which duplicated verbatim per instance) — iterating
+  // both possible ids here means both a full and a mini instance on the
+  // same page would still each get initialized correctly.
+  ['btc-price-chart', 'btc-mini-chart'].forEach(function (id) {
+    var metaEl = document.getElementById(id + '-meta');
+    if (metaEl) initChart(JSON.parse(metaEl.textContent as string) as ChartMeta);
+  });
+
+  function initChart(meta: ChartMeta) {
+    var chartId = meta.chartId, mini = meta.mini, lang = meta.lang, labels = meta.labels;
+
+    // Asserted non-null: the runtime check right below returns early if
+    // either lookup actually failed, but that guard doesn't narrow the type
+    // inside functions declared further down (draw(), etc.), so the
+    // declared type itself has to already say "non-null" for those call
+    // sites to type-check (same pattern as NetworkGraph.astro).
+    var container = document.getElementById(chartId) as HTMLElement;
+    var dataEl = document.getElementById(chartId + '-data') as HTMLElement;
     if (!container || !dataEl) return;
 
-    var data = JSON.parse(dataEl.textContent);
-    var prices = data.prices.map(function(d) { return { date: new Date(d.date), price: d.price }; });
+    var data = JSON.parse(dataEl.textContent as string) as ChartJsonData;
+    var prices: PricePoint[] = data.prices.map(function(d) { return { date: new Date(d.date), price: d.price }; });
 
     // Resolve a CSS custom property against :root. Tokens are guaranteed
     // by `src/styles/global.css`; reading them at draw() time is what
     // allows the chart to repaint when the theme/mode changes.
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
     function readTokens() {
@@ -134,8 +199,8 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
     var showPredictions = !mini;
     var showModels = !mini;
     var rangeMode = 'all';
-    var replayFn = null;   // re-run the reveal animation (set once armed)
-    var fullExtent = null; // [startDate, endDate] of the completed chart, for the animation driver
+    var replayFn: (() => void) | null = null;   // re-run the reveal animation (set once armed)
+    var fullExtent: [Date, Date] | null = null; // [startDate, endDate] of the completed chart, for the animation driver
 
     function getFilteredPrices() {
       if (rangeMode === 'all') return prices;
@@ -150,7 +215,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
     // null/undefined draws the complete, interactive chart. While animating, the
     // x-domain stretches to animEnd, the y-domain stays fixed at the final range,
     // and the expensive model + hover layers are skipped for smoothness.
-    function draw(animEnd) {
+    function draw(animEnd?: Date) {
       var animating = !!animEnd;
       container.innerHTML = '';
       var T = readTokens();
@@ -167,18 +232,20 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg')
+      var svg = select(container).append('svg')
         .attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-      // Scales
-      var xExtent = d3.extent(filteredPrices, function(d) { return d.date; });
+      // Scales. filteredPrices is non-empty (checked above), so extent/min/max
+      // are asserted non-null rather than threading `| undefined` through
+      // every downstream use — they can only be undefined on an empty array.
+      var xExtent = extent(filteredPrices, function(d) { return d.date; }) as [Date, Date];
 
       // Extend X axis to show model projections into the future
       if (showModels && !mini && data.models && rangeMode === 'all') {
         var modelMaxDate = new Date(xExtent[1]);
         data.models.forEach(function(model) {
-          model.data.forEach(function(d) {
+          model.data.forEach(function(d: any) {
             var md = new Date(d.date);
             if (md > modelMaxDate) modelMaxDate = md;
           });
@@ -190,11 +257,11 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       // driver knows the start/end dates to sweep between.
       if (!animating) fullExtent = [xExtent[0], xExtent[1]];
       // domEnd is the current right edge: animEnd while animating, full extent otherwise.
-      var domEnd = animating ? animEnd : xExtent[1];
-      var x = d3.scaleTime().domain([xExtent[0], domEnd]).range([0, w]);
+      var domEnd = animating ? animEnd! : xExtent[1];
+      var x = scaleTime().domain([xExtent[0], domEnd]).range([0, w]);
 
-      var priceMin = d3.min(filteredPrices, function(d) { return d.price; });
-      var priceMax = d3.max(filteredPrices, function(d) { return d.price; });
+      var priceMin = min(filteredPrices, function(d) { return d.price; }) as number;
+      var priceMax = max(filteredPrices, function(d) { return d.price; }) as number;
 
       // When models are visible, extend Y max to include model curves
       // Cap at 10x actual price max so extreme models (S2F) don't crush the chart
@@ -202,7 +269,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       if (showModels && !mini && data.models) {
         var modelCap = actualPriceMax * 10;
         data.models.forEach(function(model) {
-          model.data.forEach(function(d) {
+          model.data.forEach(function(d: any) {
             var md = new Date(d.date);
             if (md >= xExtent[0] && md <= xExtent[1]) {
               var capped = Math.min(d.price, modelCap);
@@ -212,15 +279,15 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
         });
       }
 
-      var y;
+      var y: any;
       if (useLog) {
-        y = d3.scaleLog().domain([Math.max(0.01, priceMin * 0.8), priceMax * 1.3]).range([h, 0]).clamp(true);
+        y = scaleLog().domain([Math.max(0.01, priceMin * 0.8), priceMax * 1.3]).range([h, 0]).clamp(true);
       } else {
-        y = d3.scaleLinear().domain([0, priceMax * 1.15]).range([h, 0]);
+        y = scaleLinear().domain([0, priceMax * 1.15]).range([h, 0]);
       }
 
       // Y-axis tick values
-      var yTickValues;
+      var yTickValues: number[] | undefined;
       if (useLog) {
         // Explicit log scale ticks to avoid overlapping labels
         var allLogTicks = [0.01, 0.1, 1, 10, 100, 1000, 10000, 100000, 1000000];
@@ -229,7 +296,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       }
 
       // Grid lines
-      var gridAxis = d3.axisLeft(y).tickSize(-w).tickFormat('');
+      var gridAxis = axisLeft(y).tickSize(-w).tickFormat(function() { return ''; });
       if (yTickValues) gridAxis.tickValues(yTickValues);
       else gridAxis.ticks(mini ? 4 : 8);
       g.append('g').attr('class', 'grid').call(gridAxis)
@@ -237,18 +304,18 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       g.selectAll('.grid .domain').remove();
 
       // Axes
-      var xAxis = mini ? d3.axisBottom(x).ticks(4) : d3.axisBottom(x).ticks(w > 600 ? 12 : 6);
+      var xAxis = mini ? axisBottom(x).ticks(4) : axisBottom(x).ticks(w > 600 ? 12 : 6);
       g.append('g').attr('transform', 'translate(0,' + h + ')').call(xAxis)
         .selectAll('text').attr('font-family', 'var(--font-heading)').attr('font-size', mini ? '9px' : '11px');
 
       var yFormat = useLog
-        ? function(d) {
-            if (d >= 1000) return '$' + d3.format(',.0f')(d);
+        ? function(d: number) {
+            if (d >= 1000) return '$' + format(',.0f')(d);
             if (d >= 1) return '$' + d;
             return '$' + d;
           }
-        : function(d) { return '$' + d3.format(',.0f')(d); };
-      var yAxis = d3.axisLeft(y).tickFormat(yFormat);
+        : function(d: number) { return '$' + format(',.0f')(d); };
+      var yAxis = axisLeft(y).tickFormat(yFormat as any);
       if (yTickValues) yAxis.tickValues(yTickValues);
       else yAxis.ticks(mini ? 4 : 8);
       g.append('g').call(yAxis)
@@ -257,20 +324,20 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       // Price line with gradient fill. While animating, draw only up to animEnd
       // so the line grows left-to-right as the x-domain stretches (the reveal).
       var revealPrices = animating
-        ? filteredPrices.filter(function(d) { return d.date <= animEnd; })
+        ? filteredPrices.filter(function(d) { return d.date <= animEnd!; })
         : filteredPrices;
       if (revealPrices.length === 0) revealPrices = filteredPrices.slice(0, 1);
 
-      var area = d3.area()
+      var area = d3area<PricePoint>()
         .x(function(d) { return x(d.date); })
         .y0(h)
         .y1(function(d) { return y(d.price); })
-        .curve(d3.curveMonotoneX);
+        .curve(curveMonotoneX);
 
-      var line = d3.line()
+      var line = d3line<PricePoint>()
         .x(function(d) { return x(d.date); })
         .y(function(d) { return y(d.price); })
-        .curve(d3.curveMonotoneX);
+        .curve(curveMonotoneX);
 
       var gradient = svg.append('defs').append('linearGradient')
         .attr('id', chartId + '-gradient')
@@ -298,20 +365,20 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
           .attr('font-size', '14px')
           .attr('font-weight', '700')
           .attr('fill', T.accent)
-          .text('$' + d3.format(',.0f')(last.price));
+          .text('$' + format(',.0f')(last.price));
         return;
       }
 
       // Tooltip (shared by all interactive elements)
-      var tooltip = d3.select(container).append('div')
+      var tooltip = select(container).append('div')
         .attr('class', 'chart-tooltip').style('opacity', 0);
 
       // Position tooltip, flipping to left/above if near edges
-      function positionTooltip(event) {
+      function positionTooltip(event: MouseEvent) {
         var cRect = container.getBoundingClientRect();
         var tipNode = tooltip.node();
-        var tipW = tipNode.offsetWidth || 200;
-        var tipH = tipNode.offsetHeight || 80;
+        var tipW = tipNode ? tipNode.offsetWidth || 200 : 200;
+        var tipH = tipNode ? tipNode.offsetHeight || 80 : 80;
         var ex = event.offsetX;
         var ey = event.offsetY;
         var left = (ex + 15 + tipW > cRect.width) ? ex - tipW - 15 : ex + 15;
@@ -349,17 +416,17 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       // Skipped during the reveal animation: model labels force getBBox reflows
       // (expensive per frame) and the curves are future projections that only
       // matter at the completed state.
-      var modelElements = [];
+      var modelElements: any[] = [];
       if (showModels && data.models && !animating) {
-        var modelLine = d3.line()
+        var modelLine = d3line<PricePoint>()
           .x(function(d) { return x(d.date); })
           .y(function(d) { return y(Math.max(y.domain()[0], Math.min(y.domain()[1], d.price))); })
-          .curve(d3.curveMonotoneX);
+          .curve(curveMonotoneX);
 
-        data.models.forEach(function(model) {
-          var pts = model.data
-            .map(function(d) { return { date: new Date(d.date), price: d.price }; })
-            .filter(function(d) { return d.date >= xExtent[0] && d.date <= xExtent[1]; });
+        data.models.forEach(function(model: any) {
+          var pts: PricePoint[] = model.data
+            .map(function(d: any) { return { date: new Date(d.date), price: d.price }; })
+            .filter(function(d: PricePoint) { return d.date >= xExtent[0] && d.date <= xExtent[1]; });
           if (pts.length < 2) return;
 
           // Visible line
@@ -397,20 +464,20 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
             .attr('fill', model.color)
             .text(model.name);
           // Size bg rect to text
-          var bbox = labelTxt.node().getBBox();
+          var bbox = labelTxt.node()!.getBBox();
           labelBg.attr('x', bbox.x - 2).attr('y', bbox.y - 1)
             .attr('width', bbox.width + 4).attr('height', bbox.height + 2);
 
           var entry = { path: path, label: labelNode, model: model, pts: pts };
           modelElements.push(entry);
 
-          function highlightModel(event) {
+          function highlightModel(event: MouseEvent) {
             // Dim all others
             modelElements.forEach(function(e) {
               if (e === entry) {
                 e.path.attr('stroke-width', 3.5).attr('stroke-opacity', 1);
                 e.label.select('text').attr('font-size', '13px');
-                var bb = e.label.select('text').node().getBBox();
+                var bb = e.label.select('text').node()!.getBBox();
                 e.label.select('rect').attr('x', bb.x - 2).attr('y', bb.y - 1)
                   .attr('width', bb.width + 4).attr('height', bb.height + 2);
               } else {
@@ -431,7 +498,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
               e.path.attr('stroke-width', 2).attr('stroke-opacity', 0.55);
               e.label.attr('opacity', 1);
               e.label.select('text').attr('font-size', '11px');
-              var bb = e.label.select('text').node().getBBox();
+              var bb = e.label.select('text').node()!.getBBox();
               e.label.select('rect').attr('x', bb.x - 2).attr('y', bb.y - 1)
                 .attr('width', bb.width + 4).attr('height', bb.height + 2);
             });
@@ -472,14 +539,14 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
 
       // --- Layer 3: Prediction dashed lines (background) ---
       if (showPredictions) {
-        data.predictions.forEach(function(pred) {
+        data.predictions.forEach(function(pred: any) {
           var predDate = new Date(pred.date);
           var targetDate = new Date(pred.targetDate);
           if (targetDate < xExtent[0] || predDate > domEnd) return;
 
           var targetY = y(Math.max(y.domain()[0], Math.min(y.domain()[1], pred.targetPrice)));
-          var targetX = x(Math.min(targetDate, domEnd));
-          var predX = x(Math.max(predDate, xExtent[0]));
+          var targetX = x(Math.min(targetDate.getTime(), domEnd.getTime()));
+          var predX = x(Math.max(predDate.getTime(), xExtent[0].getTime()));
 
           var isFuture = pred.hit === null;
           var color = pred.bearish ? T.predBearish : isFuture ? T.predPending : pred.hit ? T.predHit : T.predMissed;
@@ -494,7 +561,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
 
       // --- Layer 3: Price crosshair + hover (below markers) — skipped during the reveal ---
       if (!animating) {
-      var bisect = d3.bisector(function(d) { return d.date; }).left;
+      var bisect = bisector<PricePoint, Date>(function(d) { return d.date; }).left;
       var focusLine = g.append('line')
         .attr('stroke', T.accent).attr('stroke-opacity', 0.4)
         .attr('stroke-width', 1).attr('stroke-dasharray', '4,3')
@@ -506,19 +573,19 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       // Invisible rect for price hover — pointer-events: all but sits below markers
       var hoverRect = g.append('rect').attr('width', w).attr('height', h)
         .attr('fill', 'transparent')
-        .on('mousemove', function(event) {
-          var coords = d3.pointer(event, this);
+        .on('mousemove', function(this: SVGRectElement, event: MouseEvent) {
+          var coords = pointer(event, this);
           var xDate = x.invert(coords[0]);
           var idx = bisect(filteredPrices, xDate, 1);
           var d0 = filteredPrices[idx - 1];
           var d1 = filteredPrices[idx] || d0;
-          var d = (xDate - d0.date > d1.date - xDate) ? d1 : d0;
+          var d = (xDate.getTime() - d0.date.getTime() > d1.date.getTime() - xDate.getTime()) ? d1 : d0;
 
           focusLine.attr('x1', x(d.date)).attr('x2', x(d.date)).style('opacity', 1);
           focusDot.attr('cx', x(d.date)).attr('cy', y(d.price)).style('opacity', 1);
 
           var dateStr = d.date.toLocaleDateString(lang === 'ja' ? 'ja-JP' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' });
-          tooltip.html('<strong>$' + d3.format(',.2f')(d.price) + '</strong><br>' + dateStr)
+          tooltip.html('<strong>$' + format(',.2f')(d.price) + '</strong><br>' + dateStr)
             .style('opacity', 1)
           positionTooltip(event);
         })
@@ -531,12 +598,12 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
 
       // --- Layer 4: Event markers (above hover rect) ---
       if (showEvents) {
-        var eventPriceMap = {};
+        var eventPriceMap: Record<string, number> = {};
         filteredPrices.forEach(function(d) {
           eventPriceMap[d.date.toISOString().slice(0, 10)] = d.price;
         });
 
-        data.events.forEach(function(ev) {
+        data.events.forEach(function(ev: any) {
           var evDate = new Date(ev.date);
           if (evDate < xExtent[0] || evDate > domEnd) return;
 
@@ -544,7 +611,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
           var closestPrice = eventPriceMap[evDateStr];
           if (!closestPrice) {
             var nearest = filteredPrices.reduce(function(best, d) {
-              var diff = Math.abs(d.date - evDate);
+              var diff = Math.abs(d.date.getTime() - evDate.getTime());
               return diff < best.diff ? { diff: diff, price: d.price } : best;
             }, { diff: Infinity, price: 0 });
             closestPrice = nearest.price;
@@ -563,18 +630,18 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
             .attr('r', 6).attr('fill', color).attr('stroke', T.surface).attr('stroke-width', 1.5)
             .attr('fill-opacity', 0.9);
 
-          marker.on('mouseover', function(event) {
-            d3.select(this).select('circle').attr('r', 8);
+          marker.on('mouseover', function(this: SVGGElement, event: MouseEvent) {
+            select(this).select('circle').attr('r', 8);
             tooltip.html(
               '<strong>' + ev.label + '</strong><br>' +
               evDate.toLocaleDateString(lang === 'ja' ? 'ja-JP' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' }) +
-              '<br>$' + d3.format(',.0f')(closestPrice)
+              '<br>$' + format(',.0f')(closestPrice)
             )
             .style('opacity', 1)
           positionTooltip(event);
           })
-          .on('mouseout', function() {
-            d3.select(this).select('circle').attr('r', 6);
+          .on('mouseout', function(this: SVGGElement) {
+            select(this).select('circle').attr('r', 6);
             tooltip.style('opacity', 0);
           });
         });
@@ -583,16 +650,16 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       // --- Layer 5: Prediction markers with labels (topmost) ---
       if (showPredictions) {
         // Collect prediction markers for overlap avoidance
-        var predMarkers = [];
+        var predMarkers: Array<{ pred: any; x: number; y: number; color: string }> = [];
 
-        data.predictions.forEach(function(pred) {
+        data.predictions.forEach(function(pred: any) {
           var predDate = new Date(pred.date);
           var targetDate = new Date(pred.targetDate);
           if (targetDate < xExtent[0] || predDate > domEnd) return;
 
           var targetPrice = pred.targetPrice;
           var targetY = y(Math.max(y.domain()[0], Math.min(y.domain()[1], targetPrice)));
-          var targetX = x(Math.min(targetDate, domEnd));
+          var targetX = x(Math.min(targetDate.getTime(), domEnd.getTime()));
 
           var isFuture = pred.hit === null;
           var color = pred.bearish ? T.predBearish : isFuture ? T.predPending : pred.hit ? T.predHit : T.predMissed;
@@ -633,13 +700,13 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
 
           // Hover: show full details
           markerG.on('mouseover', function(event) {
-            d3.select(this).select('rect').attr('width', 12).attr('height', 12).attr('x', -6).attr('y', -6);
+            select(this).select('rect').attr('width', 12).attr('height', 12).attr('x', -6).attr('y', -6);
             var pred = pm.pred;
             var html = '<strong>' + pred.predictor + '</strong><br>';
             html += '"' + pred.quote + '"<br>';
-            html += labels.target + ': $' + d3.format(',.0f')(pred.targetPrice) + ' (' + pred.targetDate.slice(0, 7) + ')';
+            html += labels.target + ': $' + format(',.0f')(pred.targetPrice) + ' (' + pred.targetDate.slice(0, 7) + ')';
             if (pred.actualPrice) {
-              html += '<br>' + labels.actual + ': $' + d3.format(',.0f')(pred.actualPrice);
+              html += '<br>' + labels.actual + ': $' + format(',.0f')(pred.actualPrice);
             }
             var status = pred.hit === null ? labels.hitPending : pred.hit ? labels.hitYes : labels.hitNo;
             html += '<br>' + status;
@@ -648,7 +715,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
             positionTooltip(event);
           })
           .on('mouseout', function() {
-            d3.select(this).select('rect').attr('width', 10).attr('height', 10).attr('x', -5).attr('y', -5);
+            select(this).select('rect').attr('width', 10).attr('height', 10).attr('x', -5).attr('y', -5);
             tooltip.style('opacity', 0);
           });
         });
@@ -707,7 +774,10 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
 
     // Controls (full chart only)
     if (!mini) {
-      var wrapper = container.parentElement;
+      // Asserted non-null: this branch only runs for the full (non-mini)
+      // chart, whose markup (see the frontmatter above) always wraps the
+      // container in `.btc-chart-wrapper`.
+      var wrapper = container.parentElement as HTMLElement;
 
       // Toggle buttons
       wrapper.querySelectorAll('[data-toggle]').forEach(function(btn) {
@@ -737,7 +807,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
         btn.addEventListener('click', function() {
           wrapper.querySelectorAll('[data-range]').forEach(function(b) { b.classList.remove('active'); });
           btn.classList.add('active');
-          rangeMode = btn.getAttribute('data-range');
+          rangeMode = btn.getAttribute('data-range') || 'all';
           draw();
         });
       });
@@ -751,16 +821,16 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
         var t0 = fullExtent[0].getTime();
         var t1 = fullExtent[1].getTime();
         if (!(t1 > t0)) return;
-        replayFn = window.BAChartAnim.playOnScroll(container, {
+        replayFn = window.BAChartAnim!.playOnScroll(container, {
           duration: 5200,
-          onFrame: function(p) {
+          onFrame: function(p: number) {
             if (p >= 1) { draw(); return; }
             var frac = Math.pow(p, 1.25); // ease: linger on the long, flat early years
             draw(new Date(t0 + frac * (t1 - t0)));
           },
         });
       }
-      (function arm(n) {
+      (function arm(n?: number) {
         if (window.BAChartAnim && fullExtent) play();
         else if ((n || 0) < 40) setTimeout(function() { arm((n || 0) + 1); }, 50);
       })();
@@ -771,7 +841,7 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
     }
 
     // Resize
-    var resizeTimer;
+    var resizeTimer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(function() { draw(); }, 250);
@@ -793,8 +863,6 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
       });
     }
   }
-
-  initChart();
 })();
 </script>
 

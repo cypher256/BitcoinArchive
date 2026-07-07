@@ -77,8 +77,7 @@ const labels = {
   },
 };
 
-// @ts-ignore — lang is 'en' | 'ja' but TS may not infer correctly through Astro.props
-const l = labels[lang as 'en' | 'ja'] || labels.en;
+const l = labels[lang];
 
 // Color per candidate — token names (not hex) so the chart picks up
 // theme-level palette overrides at draw time. Fixed assignment so each
@@ -118,16 +117,94 @@ const candidateColorTokens: Record<string, string> = {
     candidateColorTokens,
     labels: l,
   })} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no define:vars, no is:inline) so Vite bundles it
+// and tree-shakes d3 down to the four submodules actually used here,
+// instead of shipping the ~92KB full d3 CDN bundle for a handful of calls.
+import { select } from 'd3-selection';
+import { max } from 'd3-array';
+import { scaleLinear } from 'd3-scale';
+import { axisBottom, axisLeft } from 'd3-axis';
+
+// Shapes below are derived directly from what this component's server-side
+// frontmatter JSON.stringify()s into the #stylometric-hist-data script tag
+// (see the JSON.parse() call in init() below), not copied from another
+// chart component — each chart's data shape is its own.
+interface Bin {
+  x0: number;
+  x1: number;
+  count: number;
+}
+
+interface Stats {
+  totalAuthors: number;
+  mean: number;
+  median: number;
+  stdev: number;
+  min: number;
+  max: number;
+  binCount: number;
+  binWidth: number;
+}
+
+interface NamedCandidate {
+  label: string;
+  file: string;
+  key: string;
+  burrow: number;
+  chunks: number;
+  rank: number;
+  totalAuthors: number;
+  percentile: number;
+}
+
+// Dedupe (see dedupe() below) stamps two extra fields onto each surviving
+// candidate at draw() time for label layout; they don't exist on the raw
+// JSON records, hence optional.
+interface NamedCandidateDisplay extends NamedCandidate {
+  _cy?: number;
+  _labelY?: number;
+}
+
+interface Labels {
+  title: string;
+  subtitle: string;
+  xLabel: string;
+  yLabel: string;
+  meanLabel: string;
+  medianLabel: string;
+  namedLabel: string;
+  directionLabel: string;
+  tooltipBin: string;
+  tooltipCount: string;
+  tooltipBurrow: string;
+  tooltipRank: string;
+  tooltipChunks: string;
+  statsLine: string;
+  insightHeading: string;
+  insight1: string;
+  insight2: string;
+  insight3: string;
+  candidateNames: Record<string, string>;
+}
+
+interface ChartData {
+  bins: Bin[];
+  stats: Stats;
+  namedCandidates: NamedCandidate[];
+  candidateColorTokens: Record<string, string>;
+  labels: Labels;
+}
+
 (function() {
+  // d3 is a static import now (bundled, not a CDN global), so it's
+  // already available by the time this module runs — no more polling for it.
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
     var dataEl = document.getElementById('stylometric-hist-data');
     if (!dataEl) return;
-    var data = JSON.parse(dataEl.textContent);
+    var data = JSON.parse(dataEl.textContent as string) as ChartData;
     var bins = data.bins;
     var stats = data.stats;
     // Dedupe named candidates by label for chart display: when one author has
@@ -136,8 +213,8 @@ const candidateColorTokens: Record<string, string> = {
     // account (lowest Burrows Δ). The detailed per-account breakdown lives in
     // the entry's table — the chart's job is to place the named candidates
     // visually in the distribution, where one row per author is clearer.
-    var named = (function dedupe(list) {
-      var byLabel = {};
+    var named = (function dedupe(list: NamedCandidate[]): NamedCandidateDisplay[] {
+      var byLabel: Record<string, NamedCandidateDisplay> = {};
       list.forEach(function(c) {
         var prev = byLabel[c.label];
         if (!prev || c.burrow < prev.burrow) byLabel[c.label] = c;
@@ -147,18 +224,22 @@ const candidateColorTokens: Record<string, string> = {
     var colorTokens = data.candidateColorTokens;
     var l = data.labels;
 
-    var container = document.getElementById('stylometric-hist-chart');
+    // Asserted non-null: the runtime check right below returns early if the
+    // lookup failed, but that guard doesn't narrow the type inside draw(),
+    // declared further down (same pattern as NetworkGraph.astro), so the
+    // type itself has to already say "non-null" for those call sites.
+    var container = document.getElementById('stylometric-hist-chart') as HTMLElement;
     if (!container) return;
     container.style.position = 'relative';
 
     // Resolve a CSS custom property against :root. Tokens are guaranteed
     // by `src/styles/global.css`. Reading at draw() time is what allows
     // the chart to repaint when the theme/mode flips.
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
     function readColors() {
-      var resolved = {};
+      var resolved: Record<string, string> = {};
       Object.keys(colorTokens).forEach(function(k) { resolved[k] = token(colorTokens[k]); });
       return resolved;
     }
@@ -191,7 +272,7 @@ const candidateColorTokens: Record<string, string> = {
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg')
+      var svg = select(container).append('svg')
         .attr('width', W).attr('height', H)
         .attr('viewBox', '0 0 ' + W + ' ' + H);
 
@@ -204,7 +285,7 @@ const candidateColorTokens: Record<string, string> = {
       // mean − 1.0σ), all comfortably inside the zoomed range.
       var yMin = stats.mean - 2.5 * stats.stdev;
       var yMax = stats.mean + 2.5 * stats.stdev;
-      var y = d3.scaleLinear()
+      var y = scaleLinear()
         .domain([yMin, yMax])
         .range([0, h]);
 
@@ -215,8 +296,12 @@ const candidateColorTokens: Record<string, string> = {
         return b.x1 > yMin && b.x0 < yMax;
       });
 
-      var maxCount = d3.max(visibleBins, function(b) { return b.count; });
-      var x = d3.scaleLinear()
+      // max() returns undefined only for an empty iterable; visibleBins is
+      // never empty for real corpus data (the mean ± 2.5σ window always
+      // contains bins), the ?? 0 fallback just satisfies the type for that
+      // pathological case without changing behavior for actual data.
+      var maxCount = max(visibleBins, function(b) { return b.count; }) ?? 0;
+      var x = scaleLinear()
         .domain([0, maxCount * 1.1])
         .range([0, w]);
 
@@ -224,7 +309,7 @@ const candidateColorTokens: Record<string, string> = {
       // vertically positioned at y(bin.x0)..y(bin.x1). Clamp the bin's Δ
       // edges to [yMin, yMax] so bins straddling the visible boundary stop
       // exactly at the chart edge instead of leaking into the X-axis area.
-      g.selectAll('.bar')
+      var bars = g.selectAll<SVGRectElement, Bin>('.bar')
         .data(visibleBins)
         .enter().append('rect')
         .attr('class', 'bar')
@@ -283,17 +368,21 @@ const candidateColorTokens: Record<string, string> = {
       });
 
       // Candidate horizontal lines (drawn first, behind labels).
+      // _cy is always set by the forEach just above, immediately before this
+      // one runs; the ?? 0 only satisfies the optional-field type, it never
+      // actually applies at runtime.
       sorted.forEach(function(c) {
         var color = colors[c.label] || T.muted;
+        var cy = c._cy ?? 0;
         g.append('line')
-          .attr('y1', c._cy).attr('y2', c._cy)
+          .attr('y1', cy).attr('y2', cy)
           .attr('x1', 0).attr('x2', w)
           .attr('stroke', color).attr('stroke-width', 1.5)
           .attr('opacity', 0.7);
 
         // Triangle marker pointing right, at left edge of plot area
         g.append('path')
-          .attr('d', 'M0,' + c._cy + ' L-7,' + (c._cy - 5) + ' L-7,' + (c._cy + 5) + ' Z')
+          .attr('d', 'M0,' + cy + ' L-7,' + (cy - 5) + ' L-7,' + (cy + 5) + ' Z')
           .attr('fill', color);
       });
 
@@ -311,7 +400,7 @@ const candidateColorTokens: Record<string, string> = {
         var labelText = displayName + ' (' + c.percentile + '%)';
 
         g.append('text')
-          .attr('x', labelRightX).attr('y', c._labelY)
+          .attr('x', labelRightX).attr('y', c._labelY ?? 0)
           .attr('text-anchor', 'end')
           .attr('fill', color).attr('font-size', '11px').attr('font-weight', '600')
           .text(labelText);
@@ -320,12 +409,15 @@ const candidateColorTokens: Record<string, string> = {
       // Y axis (tick numbers only, no rotated axis label — the chart
       // description above explains the axis).
       g.append('g').attr('class', 'axis y')
-        .call(d3.axisLeft(y).ticks(6).tickFormat(function(d) { return d.toFixed(4); }));
+        // d3-scale types tick values as NumberValue (number | { valueOf(): number })
+        // since a scale's domain isn't always plain numbers (e.g. scaleTime);
+        // valueOf() recovers the number this scale actually produces.
+        .call(axisLeft(y).ticks(6).tickFormat(function(d) { return d.valueOf().toFixed(4); }));
 
       // X axis
       g.append('g').attr('class', 'axis x')
         .attr('transform', 'translate(0,' + h + ')')
-        .call(d3.axisBottom(x).ticks(6));
+        .call(axisBottom(x).ticks(6));
 
       // X label
       svg.append('text')
@@ -334,13 +426,13 @@ const candidateColorTokens: Record<string, string> = {
         .text(l.xLabel);
 
       // Tooltip on bars (still useful for hovering specific bins)
-      var tooltip = d3.select(container).append('div')
+      var tooltip = select(container).append('div')
         .style('position', 'absolute').style('pointer-events', 'none').style('opacity', 0)
         .style('background', T.tooltipBg).style('color', T.tooltipFg)
         .style('padding', '7px 10px').style('border-radius', '4px')
         .style('font-size', '12px').style('white-space', 'nowrap').style('z-index', '10');
 
-      g.selectAll('.bar')
+      bars
         .on('mousemove', function(event, d) {
           tooltip.html(
             '<b>' + l.tooltipBin + ': ' + d.x0.toFixed(5) + '–' + d.x1.toFixed(5) + '</b><br>' +
@@ -356,7 +448,7 @@ const candidateColorTokens: Record<string, string> = {
     }
 
     draw();
-    var timer;
+    var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 200); });
 
     // Theme/mode listeners — repaint on data-theme/data-mode mutation

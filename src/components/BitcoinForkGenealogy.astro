@@ -97,17 +97,79 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     statusHalted: l.statusHalted,
     linkBase,
   })} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no is:inline) so Vite bundles it and tree-shakes
+// d3 down to the submodules actually used here, instead of shipping the
+// full d3 CDN bundle. See NetworkGraph.astro for the pattern this mirrors.
+import { select } from 'd3-selection';
+import { scaleTime, scaleBand } from 'd3-scale';
+import { axisBottom } from 'd3-axis';
+import { timeYear, timeMonth } from 'd3-time';
+import { timeFormat } from 'd3-time-format';
+
+// Shape of one entry in the `chains` array embedded in the #fork-genealogy-data
+// JSON block (see the labels.en.chains / labels.ja.chains literals above).
+interface Chain {
+  id: string;
+  name: string;
+  launch: string;
+  halt: string | null;
+  parent: string | null;
+  status: 'active' | 'halted';
+  slug: string | null;
+}
+
+// Shape of one entry in the `milestones` array (same JSON block).
+interface Milestone {
+  date: string;
+  label: string;
+  slug: string | null;
+}
+
+interface ChartData {
+  chains: Chain[];
+  milestones: Milestone[];
+  todayLabel: string;
+  statusActive: string;
+  statusHalted: string;
+  linkBase: string;
+}
+
+// Return shape of readTokens() below — the resolved CSS custom properties
+// used throughout draw().
+interface Tokens {
+  chain: Record<string, string>;
+  muted: string;
+  text: string;
+  textMuted: string;
+  link: string;
+  linkHover: string;
+  accent: string;
+  positive: string;
+  negative: string;
+  grid: string;
+  laneA: string;
+  laneB: string;
+  surface: string;
+  tooltipBg: string;
+  tooltipFg: string;
+}
+
+// A horizontal pixel span already claimed by a milestone label on a given
+// stacked row, used by the collision-avoidance layout below.
+interface LabelRange {
+  x1: number;
+  x2: number;
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
-    var dataEl = document.getElementById('fork-genealogy-data');
+    var dataEl = document.getElementById('fork-genealogy-data') as HTMLElement;
     if (!dataEl) return;
-    var data = JSON.parse(dataEl.textContent);
+    var data = JSON.parse(dataEl.textContent as string) as ChartData;
     var chains = data.chains;
     var milestones = data.milestones;
     var linkBase = data.linkBase;
@@ -115,37 +177,41 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     var statusActive = data.statusActive;
     var statusHalted = data.statusHalted;
 
-    var container = document.getElementById('fork-genealogy-chart');
+    var container = document.getElementById('fork-genealogy-chart') as HTMLElement;
     if (!container) return;
 
     // Resolve a CSS custom property against :root. Tokens are guaranteed
     // by `src/styles/global.css`; an empty result means the stylesheet
     // is missing entirely, in which case loud SVG default fill is the
     // appropriate failure mode.
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
 
-    function readTokens() {
+    function readTokens(): Tokens {
       var muted = token('--chart-color-6');
       // Chain palette — 10 chains; halted forks share the muted neutral
       // because their identity comes from the row label, not hue, and
       // visually grouping all three "halted contender" chains in one
       // tone reads as "the failed-XT family". Active chains rotate
       // through chart-color-1..9 + accent so each picks a stable hue.
+      // Typed as Record<string, string> (rather than an object literal
+      // with only these 10 keys) so t.chain[c.id] below — indexed by an
+      // arbitrary Chain.id string — doesn't need a cast at each call site.
+      var chainColors: Record<string, string> = {
+        'main':              token('--color-accent'),
+        'namecoin':          token('--chart-color-8'),
+        'litecoin':          token('--chart-color-9'),
+        'dogecoin':          token('--chart-color-1'),
+        'bitcoin-xt':        muted,
+        'bitcoin-classic':   muted,
+        'bitcoin-unlimited': muted,
+        'bitcoin-cash':      token('--chart-color-3'),
+        'bitcoin-gold':      token('--chart-color-8'),
+        'bitcoin-sv':        token('--chart-color-1'),
+      };
       return {
-        chain: {
-          'main':              token('--color-accent'),
-          'namecoin':          token('--chart-color-8'),
-          'litecoin':          token('--chart-color-9'),
-          'dogecoin':          token('--chart-color-1'),
-          'bitcoin-xt':        muted,
-          'bitcoin-classic':   muted,
-          'bitcoin-unlimited': muted,
-          'bitcoin-cash':      token('--chart-color-3'),
-          'bitcoin-gold':      token('--chart-color-8'),
-          'bitcoin-sv':        token('--chart-color-1'),
-        },
+        chain: chainColors,
         muted: muted,
         text: token('--color-text'),
         textMuted: token('--color-text-muted'),
@@ -163,14 +229,15 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
       };
     }
 
-    function escapeHtml(s) {
-      return String(s).replace(/[&<>"']/g, function(c) {
-        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    function escapeHtml(s: string) {
+      return String(s).replace(/[&<>"']/g, function(c: string) {
+        var map: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+        return map[c];
       });
     }
 
-    function makeTooltip(parent, t) {
-      return d3.select(parent).append('div')
+    function makeTooltip(parent: Element, t: Tokens) {
+      return select(parent).append('div')
         .style('position', 'absolute')
         .style('background', t.tooltipBg)
         .style('color', t.tooltipFg)
@@ -184,7 +251,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         .style('z-index', 10);
     }
 
-    function moveTooltip(tooltip, parent, event) {
+    function moveTooltip(tooltip: ReturnType<typeof makeTooltip>, parent: Element, event: MouseEvent) {
       var rect = parent.getBoundingClientRect();
       tooltip.style('left', (event.clientX - rect.left + 12) + 'px')
              .style('top', (event.clientY - rect.top + 12) + 'px');
@@ -220,12 +287,12 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
       var containerWidth = container.clientWidth || 800;
       var chartWidth = Math.max(containerWidth, 1080);
 
-      var x = d3.scaleTime().domain(dateExtent).range([margin.left, chartWidth - margin.right]);
-      var y = d3.scaleBand().domain(chains.map(function(c) { return c.id; }))
+      var x = scaleTime().domain(dateExtent).range([margin.left, chartWidth - margin.right]);
+      var y = scaleBand().domain(chains.map(function(c) { return c.id; }))
         .range([margin.top, margin.top + laneHeight * chains.length])
         .padding(0.35);
 
-      var svg = d3.select(container).append('svg')
+      var svg = select(container).append('svg')
         .attr('width', chartWidth)
         .attr('height', chartHeight)
         .style('display', 'block')
@@ -234,19 +301,24 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
       // Lane backgrounds (alternating tint)
       svg.selectAll('.lane-bg').data(chains).enter().append('rect')
         .attr('x', margin.left)
-        .attr('y', function(c) { return y(c.id) - y.bandwidth() * 0.25; })
+        .attr('y', function(c) { return (y(c.id) as number) - y.bandwidth() * 0.25; })
         .attr('width', chartWidth - margin.left - margin.right)
         .attr('height', laneHeight)
         .attr('fill', function(_c, i) { return i % 2 === 0 ? t.laneA : t.laneB; });
 
       // X axis (years on top of chart-bottom)
       var laneBottomY = margin.top + laneHeight * chains.length;
-      var xAxis = d3.axisBottom(x).ticks(d3.timeYear.every(1)).tickFormat(d3.timeFormat('%Y'));
+      // Domain pinned to <Date> explicitly: left to inference it resolves to
+      // `Date | NumberValue` (from the AxisScale<Domain> structural match
+      // against ScaleTime's call signature), which then rejects
+      // timeFormat()'s `(date: Date) => string` and confuses the axis
+      // Selection.call() overload below.
+      var xAxis = axisBottom<Date>(x).ticks(timeYear.every(1)).tickFormat(timeFormat('%Y'));
       svg.append('g')
         .attr('transform', 'translate(0,' + laneBottomY + ')')
         .call(xAxis)
         .selectAll('text').style('font-size', '11px').style('fill', t.text);
-      var monthAxis = d3.axisBottom(x).ticks(d3.timeMonth.every(3)).tickSize(4).tickFormat(function() { return ''; });
+      var monthAxis = axisBottom<Date>(x).ticks(timeMonth.every(3)).tickSize(4).tickFormat(function() { return ''; });
       svg.append('g')
         .attr('transform', 'translate(0,' + laneBottomY + ')')
         .call(monthAxis)
@@ -267,7 +339,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
       // Milestone overlay (vertical dashed lines + stacked labels above).
       // Uses --chart-negative so milestones read as "important pivot
       // moments" against the calmer palette of chain bars.
-      function estimateLabelWidth(text) {
+      function estimateLabelWidth(text: string) {
         var w = 0;
         for (var ci = 0; ci < text.length; ci++) {
           w += (text.charCodeAt(ci) > 127) ? 11 : 5.8;
@@ -275,7 +347,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         return w + 8;
       }
       var sortedMs = milestones.slice().sort(function(a, b) { return a.date.localeCompare(b.date); });
-      var rows = [];
+      var rows: LabelRange[][] = [];
       var msLayout = sortedMs.map(function(m) {
         var px = x(new Date(m.date));
         var labelW = estimateLabelWidth(m.label);
@@ -322,7 +394,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
           .text(item.milestone.label);
       });
 
-      var chainById = {};
+      var chainById: Record<string, Chain> = {};
       chains.forEach(function(c) { chainById[c.id] = c; });
 
       // Chain row labels (left margin, clickable when slug exists).
@@ -332,7 +404,7 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
       // underline above the visible glyphs in some browsers. Click
       // affordance comes from cursor: pointer plus a hover color shift.
       chains.forEach(function(c) {
-        var cy = y(c.id) + y.bandwidth() / 2;
+        var cy = (y(c.id) as number) + y.bandwidth() / 2;
         var tooltipDate = new Date(c.launch).toISOString().slice(0, 10);
         var tooltipText = c.name + ' · ' + (c.status === 'active' ? statusActive : statusHalted) + ' · ' + tooltipDate;
         var fill = c.slug ? t.link : (c.status === 'halted' ? t.textMuted : t.text);
@@ -351,8 +423,8 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
           .text(c.name)
           .append('title').text(tooltipText);
         if (c.slug) {
-          label.on('mouseover', function() { d3.select(this).style('fill', t.linkHover).style('text-decoration', 'underline'); })
-               .on('mouseout', function() { d3.select(this).style('fill', fill).style('text-decoration', 'none'); });
+          label.on('mouseover', function() { select(this).style('fill', t.linkHover).style('text-decoration', 'underline'); })
+               .on('mouseout', function() { select(this).style('fill', fill).style('text-decoration', 'none'); });
         }
       });
 
@@ -362,8 +434,8 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
         var parent = chainById[c.parent];
         if (!parent) return;
         var px = x(new Date(c.launch));
-        var py = y(parent.id) + y.bandwidth() / 2;
-        var cy = y(c.id) + y.bandwidth() / 2;
+        var py = (y(parent.id) as number) + y.bandwidth() / 2;
+        var cy = (y(c.id) as number) + y.bandwidth() / 2;
         svg.append('path')
           .attr('d', 'M' + px + ',' + py + ' L' + px + ',' + cy)
           .attr('stroke', t.chain[c.id] || t.muted)
@@ -372,14 +444,19 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
           .attr('opacity', c.status === 'halted' ? 0.55 : 0.9);
       });
 
-      // Tooltip surface
-      var tooltip = makeTooltip(container.parentNode || container, t);
+      // Tooltip surface. container.parentNode is typed as ParentNode | null
+      // by lib.dom (Element is the actual runtime value — the .figure-block
+      // wrapper — so the cast is accurate); computed once here and reused
+      // below instead of repeating the same `|| container` fallback at each
+      // makeTooltip/moveTooltip call site.
+      var tooltipParent: Element = (container.parentNode as Element) || container;
+      var tooltip = makeTooltip(tooltipParent, t);
 
       // Chain bars (operational range)
       chains.forEach(function(c) {
         var startX = x(new Date(c.launch));
         var endX = c.halt ? x(new Date(c.halt)) : x(today);
-        var cy = y(c.id) + y.bandwidth() / 2;
+        var cy = (y(c.id) as number) + y.bandwidth() / 2;
         var color = t.chain[c.id] || t.muted;
         var barHeight = c.status === 'halted' ? 4 : 6;
 
@@ -426,9 +503,9 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
               ? statusActive + ' · ' + new Date(c.launch).toISOString().slice(0, 10) + ' → ' + todayLabel
               : statusHalted + ' · ' + new Date(c.launch).toISOString().slice(0, 10) + ' → ' + (c.halt ? new Date(c.halt).toISOString().slice(0, 10) : '');
             tooltip.style('opacity', 1).html('<strong>' + escapeHtml(c.name) + '</strong><br/>' + statusText);
-            moveTooltip(tooltip, container.parentNode || container, event);
+            moveTooltip(tooltip, tooltipParent, event);
           })
-          .on('mousemove', function(event) { moveTooltip(tooltip, container.parentNode || container, event); })
+          .on('mousemove', function(event) { moveTooltip(tooltip, tooltipParent, event); })
           .on('mouseout', function() { tooltip.style('opacity', 0); })
           .on('click', function() { if (c.slug) window.location.href = linkBase + c.slug + '/'; });
       });
@@ -436,16 +513,16 @@ const linkBase = lang === 'ja' ? `${MIRROR_BASE}/ja/entries/` : `${MIRROR_BASE}/
     draw();
 
     // Reveal: time-cursor wipe on scroll-in (chart-anim.js wipeReveal).
-    var replayFn = null;
-    (function arm(n) {
+    var replayFn: (() => void) | null = null;
+    (function arm(n: number) {
       if (window.BAChartAnim) {
         replayFn = window.BAChartAnim.wipeReveal(['fork-genealogy-chart'], { duration: 5200 });
-      } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }
-    })();
+      } else if (n < 40) { setTimeout(function() { arm(n + 1); }, 50); }
+    })(0);
     var rb = document.querySelector('.fork-genealogy [data-replay]');
     if (rb) rb.addEventListener('click', function() { if (replayFn) replayFn(); });
 
-    var timer;
+    var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 200); });
 
     // Theme/mode listeners — repaint when the user toggles theme,

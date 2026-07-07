@@ -24,19 +24,64 @@ const t = useTranslations(lang);
     </div>
   </div>
   <script type="application/json" id="graph-data" set:html={JSON.stringify(graphData)} />
+  <script
+    type="application/json"
+    id="graph-meta"
+    set:html={JSON.stringify({
+      lang,
+      basePath: `${import.meta.env.BASE_URL.replace(/\/$/, '')}${lang === 'ja' ? '/ja' : ''}`,
+      entriesLabel: t('network.entries' as any),
+      coLabel: t('network.coOccurrences' as any),
+    })}
+  />
 </div>
 
-<script is:inline define:vars={{ lang, basePath: `${import.meta.env.BASE_URL.replace(/\/$/, '')}${lang === 'ja' ? '/ja' : ''}`, entriesLabel: t('network.entries' as any), coLabel: t('network.coOccurrences' as any) }}>
-(function() {
-  var container = document.getElementById('network-graph');
-  var dataEl = document.getElementById('graph-data');
-  if (!container || !dataEl) return;
+<script>
+// Real ES-module script (no define:vars, no is:inline) so Vite bundles it
+// and tree-shakes d3 down to the four submodules actually used here,
+// instead of shipping the ~92KB full d3 CDN bundle for ~4KB of API surface.
+// define:vars would force Astro to treat this as is:inline (no import
+// processing) — see the sibling `#graph-meta` JSON block above for how
+// server-side values now cross into this script instead.
+import { select } from 'd3-selection';
+// Renamed on import: the component already has local variables named
+// `drag` and `zoom` (the d3 behavior instances configured below), which
+// would otherwise shadow these bindings within their own scope.
+import { drag as d3drag } from 'd3-drag';
+import { zoom as d3zoom, zoomIdentity } from 'd3-zoom';
+import { forceSimulation, forceLink, forceManyBody, forceCenter, forceCollide, forceX, forceY } from 'd3-force';
+import type { SimulationNodeDatum, SimulationLinkDatum } from 'd3-force';
+import type { GraphNode, GraphEdge } from '../lib/graphData';
 
-  var data = JSON.parse(dataEl.textContent);
+// d3-force mutates each datum in place, adding x/y/vx/vy/fx/fy (SimulationNodeDatum)
+// as the simulation runs; SimulationLinkDatum resolves source/target from the
+// plain string ids in GraphEdge to full node object references at runtime.
+interface SimNode extends GraphNode, SimulationNodeDatum {}
+interface SimEdge extends SimulationLinkDatum<SimNode> {
+  weight: number;
+}
+
+(function() {
+  // Asserted non-null: the runtime check right below returns early if any
+  // of these three lookups actually failed, but that guard doesn't narrow
+  // the type inside functions declared further down (draw(), etc.), so the
+  // type itself has to already say "non-null" for those call sites to
+  // type-check.
+  var container = document.getElementById('network-graph') as HTMLElement;
+  var dataEl = document.getElementById('graph-data') as HTMLElement;
+  var metaEl = document.getElementById('graph-meta') as HTMLElement;
+  if (!container || !dataEl || !metaEl) return;
+
+  var data = JSON.parse(dataEl.textContent as string) as { nodes: GraphNode[]; edges: GraphEdge[] };
   var nodes = data.nodes;
   var edges = data.edges;
+  var meta = JSON.parse(metaEl.textContent as string) as { lang: string; basePath: string; entriesLabel: string; coLabel: string };
+  var lang = meta.lang;
+  var basePath = meta.basePath;
+  var entriesLabel = meta.entriesLabel;
+  var coLabel = meta.coLabel;
 
-  function token(name) {
+  function token(name: string) {
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   }
   function readTokens() {
@@ -53,7 +98,7 @@ const t = useTranslations(lang);
     };
   }
 
-  var abortCtrl = null;
+  var abortCtrl: AbortController | null = null;
   function draw() {
     container.innerHTML = '';
     var T = readTokens();
@@ -80,13 +125,13 @@ const t = useTranslations(lang);
       if (edges[i].weight > maxWeight) maxWeight = edges[i].weight;
     }
 
-    function nodeRadius(count) {
+    function nodeRadius(count: number) {
       if (maxCount <= 1) return 8;
       var t = Math.log(count) / Math.log(maxCount);
       return 5 + t * 30;
     }
 
-    function edgeWidth(weight) {
+    function edgeWidth(weight: number) {
       if (maxWeight <= 1) return 1;
       var t = Math.log(weight) / Math.log(maxWeight);
       return 0.75 + t * 5.25;
@@ -94,19 +139,19 @@ const t = useTranslations(lang);
 
     // viewBox で固定空間を定義、SVG は常にコンテナ幅にフィット
     var margin = 0;
-    var svg = d3.select(container).append('svg')
+    var svg = select(container).append('svg')
       .attr('width', '100%')
       .attr('viewBox', (-margin) + ' ' + (-margin) + ' ' + (simW + margin * 2) + ' ' + (simH + margin * 2))
       .attr('preserveAspectRatio', 'xMidYMid meet');
 
     var g = svg.append('g');
 
-    var slider = document.getElementById('zoom-slider');
+    var slider = document.getElementById('zoom-slider') as HTMLInputElement | null;
     var zoomIn = document.getElementById('zoom-in');
     var zoomOut = document.getElementById('zoom-out');
     var zoomReset = document.getElementById('zoom-reset');
 
-    var zoom = d3.zoom()
+    var zoom = d3zoom<SVGSVGElement, unknown>()
       .scaleExtent([0.3, 5])
       .on('zoom', function(event) {
         g.attr('transform', event.transform);
@@ -116,9 +161,10 @@ const t = useTranslations(lang);
 
     var signal = abortCtrl.signal;
     if (slider) {
-      slider.value = 1;
-      slider.addEventListener('input', function() {
-        svg.transition().duration(100).call(zoom.scaleTo, parseFloat(slider.value));
+      var sliderEl: HTMLInputElement = slider;
+      sliderEl.value = '1';
+      sliderEl.addEventListener('input', function() {
+        svg.transition().duration(100).call(zoom.scaleTo, parseFloat(sliderEl.value));
       }, { signal: signal });
     }
     if (zoomIn) {
@@ -133,15 +179,15 @@ const t = useTranslations(lang);
     }
     if (zoomReset) {
       zoomReset.addEventListener('click', function() {
-        svg.transition().duration(300).call(zoom.transform, d3.zoomIdentity);
+        svg.transition().duration(300).call(zoom.transform, zoomIdentity);
       }, { signal: signal });
     }
 
-    var tooltip = d3.select(container).append('div')
+    var tooltip = select(container).append('div')
       .attr('class', 'graph-tooltip')
       .style('opacity', 0);
 
-    var adjMap = {};
+    var adjMap: Record<string, string[]> = {};
     for (var i = 0; i < nodes.length; i++) adjMap[nodes[i].id] = [];
     for (var i = 0; i < edges.length; i++) {
       adjMap[edges[i].source] = adjMap[edges[i].source] || [];
@@ -150,10 +196,10 @@ const t = useTranslations(lang);
       adjMap[edges[i].target].push(edges[i].source);
     }
 
-    var simNodes = nodes.map(function(n) {
+    var simNodes: SimNode[] = nodes.map(function(n) {
       return { id: n.id, name: n.name, count: n.count, isSatoshi: n.isSatoshi };
     });
-    var simEdges = edges.map(function(e) {
+    var simEdges: SimEdge[] = edges.map(function(e) {
       return { source: e.source, target: e.target, weight: e.weight };
     });
 
@@ -161,14 +207,14 @@ const t = useTranslations(lang);
     simNodes.sort(function(a, b) { return a.count - b.count; });
 
     var cx = simW / 2, cy = simH / 2;
-    var simulation = d3.forceSimulation(simNodes)
-      .force('link', d3.forceLink(simEdges).id(function(d) { return d.id; })
+    var simulation = forceSimulation(simNodes)
+      .force('link', forceLink<SimNode, SimEdge>(simEdges).id(function(d) { return d.id; })
         .distance(function(d) { return 120 / Math.log(d.weight + 1); }))
-      .force('charge', d3.forceManyBody().strength(function(d) { return d.isSatoshi ? -400 : -120; }))
-      .force('center', d3.forceCenter(cx, cy))
-      .force('collide', d3.forceCollide().radius(function(d) { return nodeRadius(d.count) + 4; }))
-      .force('gravityX', d3.forceX(cx).strength(function(d) { return d.isSatoshi ? 0.3 : 0.05; }))
-      .force('gravityY', d3.forceY(cy).strength(function(d) { return d.isSatoshi ? 0.3 : 0.05; }));
+      .force('charge', forceManyBody<SimNode>().strength(function(d) { return d.isSatoshi ? -400 : -120; }))
+      .force('center', forceCenter(cx, cy))
+      .force('collide', forceCollide<SimNode>().radius(function(d) { return nodeRadius(d.count) + 4; }))
+      .force('gravityX', forceX<SimNode>(cx).strength(function(d) { return d.isSatoshi ? 0.3 : 0.05; }))
+      .force('gravityY', forceY<SimNode>(cy).strength(function(d) { return d.isSatoshi ? 0.3 : 0.05; }));
 
     var link = g.append('g')
       .selectAll('line')
@@ -207,16 +253,17 @@ const t = useTranslations(lang);
       .style('opacity', function(d) { return d.count > 3 ? 1 : d.count >= 2 ? 0.5 : 0.3; });
 
     // Highlight helper (shared by hover and drag)
-    function highlightNode(d) {
+    function highlightNode(d: SimNode) {
       var neighbors = adjMap[d.id] || [];
-      var neighborSet = {};
+      var neighborSet: Record<string, boolean> = {};
       for (var i = 0; i < neighbors.length; i++) neighborSet[neighbors[i]] = true;
 
       node.attr('opacity', function(n) {
         return n.id === d.id || neighborSet[n.id] ? 1 : 0.15;
       });
       link.attr('stroke-opacity', function(l) {
-        return (l.source.id === d.id || l.target.id === d.id) ? 0.9 : 0.05;
+        var s = l.source as SimNode, t = l.target as SimNode;
+        return (s.id === d.id || t.id === d.id) ? 0.9 : 0.05;
       });
       label.style('opacity', function(n) {
         return n.id === d.id || neighborSet[n.id] ? 1 : 0.1;
@@ -230,7 +277,7 @@ const t = useTranslations(lang);
     }
 
     // Drag
-    var drag = d3.drag()
+    var drag = d3drag<SVGCircleElement, SimNode>()
       .on('start', function(event, d) {
         if (!event.active) simulation.alphaTarget(0.3).restart();
         d.fx = d.x; d.fy = d.y;
@@ -253,7 +300,8 @@ const t = useTranslations(lang);
 
       var html = '<strong>' + d.name + '</strong><br>' + d.count + ' ' + entriesLabel;
       var connEdges = simEdges.filter(function(e) {
-        return e.source.id === d.id || e.target.id === d.id;
+        var s = e.source as SimNode, t = e.target as SimNode;
+        return s.id === d.id || t.id === d.id;
       });
       if (connEdges.length > 0) {
         connEdges.sort(function(a, b) { return b.weight - a.weight; });
@@ -263,7 +311,8 @@ const t = useTranslations(lang);
         // --color-text on the parent for the headline.
         html += '<br><span style="font-size:0.8em;color:var(--color-text-muted)">';
         for (var i = 0; i < top.length; i++) {
-          var other = top[i].source.id === d.id ? top[i].target : top[i].source;
+          var s = top[i].source as SimNode, t = top[i].target as SimNode;
+          var other = s.id === d.id ? t : s;
           html += other.name + ': ' + top[i].weight + ' ' + coLabel;
           if (i < top.length - 1) html += '<br>';
         }
@@ -292,26 +341,23 @@ const t = useTranslations(lang);
 
     simulation.on('tick', function() {
       link
-        .attr('x1', function(d) { return d.source.x; })
-        .attr('y1', function(d) { return d.source.y; })
-        .attr('x2', function(d) { return d.target.x; })
-        .attr('y2', function(d) { return d.target.y; });
+        .attr('x1', function(d) { return (d.source as SimNode).x ?? 0; })
+        .attr('y1', function(d) { return (d.source as SimNode).y ?? 0; })
+        .attr('x2', function(d) { return (d.target as SimNode).x ?? 0; })
+        .attr('y2', function(d) { return (d.target as SimNode).y ?? 0; });
       node
-        .attr('cx', function(d) { return d.x; })
-        .attr('cy', function(d) { return d.y; });
+        .attr('cx', function(d) { return d.x ?? 0; })
+        .attr('cy', function(d) { return d.y ?? 0; });
       label
-        .attr('x', function(d) { return d.x; })
-        .attr('y', function(d) { return d.y; });
+        .attr('x', function(d) { return d.x ?? 0; })
+        .attr('y', function(d) { return d.y ?? 0; });
     });
   }
 
-  // Wait for D3 to load, then draw
+  // d3 is a static import now (bundled, not a CDN global), so it's already
+  // available by the time this module runs — no more polling for it.
   function init() {
-    if (typeof d3 !== 'undefined') {
-      draw();
-    } else {
-      setTimeout(init, 50);
-    }
+    draw();
   }
 
   // Lazy: defer rendering until the graph is about to enter the viewport.
@@ -340,12 +386,12 @@ const t = useTranslations(lang);
     startOnce();
   }
 
-  var resizeTimer;
+  var resizeTimer: ReturnType<typeof setTimeout>;
   window.addEventListener('resize', function() {
     if (!started) return;
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function() {
-      if (typeof d3 !== 'undefined') draw();
+      draw();
     }, 250);
   });
 
@@ -354,7 +400,7 @@ const t = useTranslations(lang);
   // graph only renders when scrolled into view).
   function rerenderIfStarted() {
     if (!started) return;
-    if (typeof d3 !== 'undefined') draw();
+    draw();
   }
   if (typeof window.matchMedia === 'function') {
     var mql = window.matchMedia('(prefers-color-scheme: dark)');

@@ -80,26 +80,56 @@ const l = labels[lang];
   </section>
 
   <script type="application/json" id="extranonce-data" set:html={JSON.stringify({ patoshiPoints, nonPatoshiPoints, labels: l })} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no define:vars, no is:inline) so Vite bundles it
+// and tree-shakes d3 down to the submodules actually used here, instead of
+// shipping the ~92KB full d3 CDN bundle for a handful of calls.
+import { select } from 'd3-selection';
+import { max } from 'd3-array';
+import { scaleLinear } from 'd3-scale';
+import { axisBottom, axisLeft } from 'd3-axis';
+
+// Shape of the JSON blob written by the server-side JSON.stringify above
+// (patoshiPoints / nonPatoshiPoints / labels for the current lang).
+interface ScatterPoint {
+  x: number;
+  y: number;
+}
+interface ChartLabels {
+  title: string;
+  subtitle: string;
+  xLabel: string;
+  yLabel: string;
+  patoshi: string;
+  nonPatoshi: string;
+  note: string;
+}
+interface ChartData {
+  patoshiPoints: ScatterPoint[];
+  nonPatoshiPoints: ScatterPoint[];
+  labels: ChartLabels;
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
-
     var dataEl = document.getElementById('extranonce-data');
     if (!dataEl) return;
-    var data = JSON.parse(dataEl.textContent);
+    var data = JSON.parse(dataEl.textContent as string) as ChartData;
     var l = data.labels;
     var patoshi = data.patoshiPoints;
     var nonPatoshi = data.nonPatoshiPoints;
 
-    var container = document.getElementById('extranonce-chart');
+    // Asserted non-null: the runtime check right below returns early if the
+    // lookup failed, but that guard doesn't narrow the type inside the
+    // nested draw() function declared further down, so the type itself has
+    // to already say "non-null" for those call sites to type-check.
+    var container = document.getElementById('extranonce-chart') as HTMLElement;
     if (!container) return;
 
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
     function readTokens() {
@@ -124,22 +154,25 @@ const l = labels[lang];
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-      var x = d3.scaleLinear().domain([0, 36288]).range([0, w]);
-      var maxY = d3.max([].concat(patoshi, nonPatoshi), function(d) { return d.y; });
-      var y = d3.scaleLinear().domain([0, maxY]).nice().range([h, 0]);
+      var x = scaleLinear().domain([0, 36288]).range([0, w]);
+      var maxY = max(patoshi.concat(nonPatoshi), function(d) { return d.y; });
+      var y = scaleLinear().domain([0, maxY ?? 1]).nice().range([h, 0]);
 
       // Axes
+      // axisBottom(x)'s domain type is d3's NumberValue (number | { valueOf(): number }),
+      // not a plain number, so the tick value needs an explicit numeric conversion
+      // before the arithmetic below.
       g.append('g').attr('transform', 'translate(0,' + h + ')')
-        .call(d3.axisBottom(x).ticks(6).tickFormat(function(d) { return (d / 1000) + 'k'; }))
+        .call(axisBottom(x).ticks(6).tickFormat(function(d) { return (Number(d) / 1000) + 'k'; }))
         .selectAll('text').attr('font-size', '10px').style('fill', T.text);
       g.append('text').attr('x', w / 2).attr('y', h + 40)
         .attr('text-anchor', 'middle').attr('font-size', '11px')
         .attr('fill', T.muted).text(l.xLabel);
 
-      g.append('g').call(d3.axisLeft(y).ticks(5))
+      g.append('g').call(axisLeft(y).ticks(5))
         .selectAll('text').attr('font-size', '10px').style('fill', T.text);
       g.append('text').attr('transform', 'rotate(-90)')
         .attr('x', -h / 2).attr('y', -45)
@@ -166,8 +199,8 @@ const l = labels[lang];
 
     // Reveal: block-order wipe on scroll-in (chart-anim.js wipeReveal); block
     // height is monotonic in time, so points surface in mining order.
-    var replayFn = null;
-    (function arm(n) {
+    var replayFn: (() => void) | null = null;
+    (function arm(n?: number) {
       if (window.BAChartAnim) {
         replayFn = window.BAChartAnim.wipeReveal(['extranonce-chart'], { duration: 5000 });
       } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }
@@ -175,7 +208,7 @@ const l = labels[lang];
     var rb = document.querySelector('.patoshi-extranonce [data-replay]');
     if (rb) rb.addEventListener('click', function() { if (replayFn) replayFn(); });
 
-    var timer;
+    var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
 
     if (typeof window.matchMedia === 'function') {

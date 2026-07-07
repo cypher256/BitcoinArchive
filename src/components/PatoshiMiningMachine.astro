@@ -73,22 +73,71 @@ const l = labels[lang];
   </section>
 
   <script type="application/json" id="mining-machine-data" set:html={JSON.stringify({ ...machineData, labels: l })} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no define:vars, no is:inline) so Vite bundles it
+// and tree-shakes d3 down to the three submodules actually used here,
+// instead of shipping the ~92KB full d3 CDN bundle for a fraction of the
+// API surface.
+import { select } from 'd3-selection';
+import { scaleBand, scaleLinear } from 'd3-scale';
+import { axisBottom, axisLeft } from 'd3-axis';
+
+// Shape of src/data/patoshi/mining-machine.json, plus the `labels` object
+// the Astro frontmatter appends before serializing (see the
+// `{ ...machineData, labels: l }` JSON script block above).
+interface Subrange {
+  id: number;
+  start: number;
+  end: number;
+  highBias: number;
+}
+interface Comparison {
+  patoshiHashrate: number;
+  otherHashrate: number;
+  stockClientThreads: number;
+  patoshiThreads: number;
+  scanDirection: string;
+  highValueBias: number;
+  expectedIfRandom: number;
+}
+interface Labels {
+  subrangeTitle: string;
+  subrangeSub: string;
+  biasTitle: string;
+  biasSub: string;
+  hashrateTitle: string;
+  hashrateSub: string;
+  thread: string;
+  nonceRange: string;
+  scanDir: string;
+  observed: string;
+  expected: string;
+  patoshi: string;
+  others: string;
+  mhps: string;
+  threads: string;
+  faster: string;
+}
+interface MiningMachineData {
+  description: string;
+  source: string;
+  subranges: Subrange[];
+  comparison: Comparison;
+  labels: Labels;
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
-
     var dataEl = document.getElementById('mining-machine-data');
     if (!dataEl) return;
-    var data = JSON.parse(dataEl.textContent);
+    var data = JSON.parse(dataEl.textContent as string) as MiningMachineData;
     var l = data.labels;
     var subranges = data.subranges;
     var comp = data.comparison;
 
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
     function readTokens() {
@@ -126,11 +175,11 @@ const l = labels[lang];
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
       var maxNonce = 4294967296;
-      var x = d3.scaleLinear().domain([0, maxNonce]).range([0, w]);
+      var x = scaleLinear().domain([0, maxNonce]).range([0, w]);
 
       subranges.forEach(function(sr, i) {
         var x1 = x(sr.start);
@@ -179,7 +228,7 @@ const l = labels[lang];
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
       var items = [
@@ -187,22 +236,22 @@ const l = labels[lang];
         { label: l.expected, value: comp.expectedIfRandom, color: T.expected },
       ];
 
-      var y = d3.scaleBand().domain(items.map(function(d) { return d.label; })).range([0, h]).padding(0.35);
-      var x = d3.scaleLinear().domain([0, 100]).range([0, w]);
+      var y = scaleBand().domain(items.map(function(d) { return d.label; })).range([0, h]).padding(0.35);
+      var x = scaleLinear().domain([0, 100]).range([0, w]);
 
-      g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+      g.append('g').call(axisLeft(y).tickSizeOuter(0))
         .selectAll('text').attr('font-size', '12px').style('fill', T.text);
       g.append('g').attr('transform', 'translate(0,' + h + ')')
-        .call(d3.axisBottom(x).ticks(5).tickFormat(function(d) { return d + '%'; }))
+        .call(axisBottom(x).ticks(5).tickFormat(function(d) { return d + '%'; }))
         .selectAll('text').attr('font-size', '10px').style('fill', T.text);
 
       items.forEach(function(item) {
         g.append('rect')
-          .attr('y', y(item.label)).attr('x', 0)
+          .attr('y', y(item.label) ?? 0).attr('x', 0)
           .attr('height', y.bandwidth()).attr('width', x(item.value))
           .attr('fill', item.color).attr('rx', 2);
         g.append('text')
-          .attr('y', y(item.label) + y.bandwidth() / 2)
+          .attr('y', (y(item.label) ?? 0) + y.bandwidth() / 2)
           .attr('x', x(item.value) + 6)
           .attr('dominant-baseline', 'central')
           .attr('font-size', '13px').attr('font-weight', '700')
@@ -224,7 +273,7 @@ const l = labels[lang];
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
       var items = [
@@ -232,12 +281,12 @@ const l = labels[lang];
         { label: l.others + '\n(1 ' + l.threads + ')', value: comp.otherHashrate, color: T.expected },
       ];
 
-      var y = d3.scaleBand().domain(items.map(function(d) { return d.label; })).range([0, h]).padding(0.35);
-      var x = d3.scaleLinear().domain([0, 5]).range([0, w]);
+      var y = scaleBand().domain(items.map(function(d) { return d.label; })).range([0, h]).padding(0.35);
+      var x = scaleLinear().domain([0, 5]).range([0, w]);
 
-      g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+      g.append('g').call(axisLeft(y).tickSizeOuter(0))
         .selectAll('text').attr('font-size', '11px').style('fill', T.text).each(function() {
-          var text = d3.select(this);
+          var text = select(this);
           var lines = text.text().split('\n');
           if (lines.length > 1) {
             text.text('');
@@ -247,16 +296,16 @@ const l = labels[lang];
         });
 
       g.append('g').attr('transform', 'translate(0,' + h + ')')
-        .call(d3.axisBottom(x).ticks(5).tickFormat(function(d) { return d + ' ' + l.mhps; }))
+        .call(axisBottom(x).ticks(5).tickFormat(function(d) { return d + ' ' + l.mhps; }))
         .selectAll('text').attr('font-size', '10px').style('fill', T.text);
 
       items.forEach(function(item) {
         g.append('rect')
-          .attr('y', y(item.label)).attr('x', 0)
+          .attr('y', y(item.label) ?? 0).attr('x', 0)
           .attr('height', y.bandwidth()).attr('width', x(item.value))
           .attr('fill', item.color).attr('rx', 2);
         g.append('text')
-          .attr('y', y(item.label) + y.bandwidth() / 2)
+          .attr('y', (y(item.label) ?? 0) + y.bandwidth() / 2)
           .attr('x', x(item.value) + 6)
           .attr('dominant-baseline', 'central')
           .attr('font-size', '13px').attr('font-weight', '700')
@@ -274,7 +323,7 @@ const l = labels[lang];
     }
 
     rerender();
-    var timer;
+    var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(rerender, 250); });
 
     if (typeof window.matchMedia === 'function') {

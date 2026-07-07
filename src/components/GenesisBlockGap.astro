@@ -50,23 +50,49 @@ const l = labels[lang];
   </section>
 
   <script type="application/json" id="genesis-gap-data" set:html={JSON.stringify(l)} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no is:inline) so Vite bundles it and tree-shakes
+// d3 down to the four submodules actually used here, instead of shipping
+// the ~92KB full d3 CDN bundle for ~4KB of API surface.
+import { select } from 'd3-selection';
+import { scaleTime } from 'd3-scale';
+import { axisBottom } from 'd3-axis';
+import { timeFormat } from 'd3-time-format';
+
+// Shape of the JSON blob the frontmatter serializes into #genesis-gap-data
+// (mirrors the `labels.en` / `labels.ja` object above, one-to-one).
+interface Labels {
+  title: string;
+  subtitle: string;
+  block0: string;
+  block0time: string;
+  block1: string;
+  block1time: string;
+  gap: string;
+  expected: string;
+  ratio: string;
+  timesHeader: string;
+  v01release: string;
+  v01date: string;
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+    // Asserted non-null: the runtime check right below returns early if
+    // either lookup actually failed, but that guard doesn't narrow the
+    // type inside functions declared further down (draw(), etc.), so the
+    // type itself has to already say "non-null" for those call sites to
+    // type-check.
+    var dataEl = document.getElementById('genesis-gap-data') as HTMLElement;
+    var container = document.getElementById('genesis-gap-chart') as HTMLElement;
+    if (!dataEl || !container) return;
 
-    var dataEl = document.getElementById('genesis-gap-data');
-    if (!dataEl) return;
-    var l = JSON.parse(dataEl.textContent);
+    var l = JSON.parse(dataEl.textContent as string) as Labels;
 
-    var container = document.getElementById('genesis-gap-chart');
-    if (!container) return;
-
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
     function readTokens() {
@@ -98,18 +124,24 @@ const l = labels[lang];
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
       var t0 = new Date('2009-01-03T18:15:05Z');
       var t1 = new Date('2009-01-09T02:54:25Z');
       var tEnd = new Date('2009-01-10T00:00:00Z');
 
-      var x = d3.scaleTime().domain([t0, tEnd]).range([0, w]);
+      var x = scaleTime().domain([t0, tEnd]).range([0, w]);
 
       // Axis
+      // Explicit <Date> generic: left to inference, axisBottom(x) resolves
+      // Domain to `Date | NumberValue` (scaleTime's call signature accepts
+      // either), which then rejects timeFormat's `(date: Date) => string`
+      // as too narrow for `tickFormat`. Pinning Domain to Date matches how
+      // `x` is actually used (t0/t1/tEnd are all Date) and satisfies both
+      // the AxisScale<Date> and tickFormat's `(d: Date) => string` shape.
       g.append('g').attr('transform', 'translate(0,' + (h + 5) + ')')
-        .call(d3.axisBottom(x).ticks(7).tickFormat(d3.timeFormat('%b %d')))
+        .call(axisBottom<Date>(x).ticks(7).tickFormat(timeFormat('%b %d')))
         .selectAll('text').attr('font-size', '10px').style('fill', T.text);
 
       // Gap bar
@@ -169,16 +201,20 @@ const l = labels[lang];
     draw();
 
     // Reveal: time-cursor wipe on scroll-in (chart-anim.js wipeReveal).
-    var replayFn = null;
-    (function arm(n) {
+    var replayFn: (() => void) | null = null;
+    // `n` typed explicitly and the initial call passes 0: left implicit,
+    // the no-arg initial invocation makes TS infer the parameter type as
+    // `undefined`, which then rejects the recursive `arm((n || 0) + 1)`
+    // call (a number).
+    (function arm(n: number) {
       if (window.BAChartAnim) {
         replayFn = window.BAChartAnim.wipeReveal(['genesis-gap-chart'], { duration: 4200 });
       } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }
-    })();
+    })(0);
     var rb = document.querySelector('.genesis-block-gap [data-replay]');
     if (rb) rb.addEventListener('click', function() { if (replayFn) replayFn(); });
 
-    var timer;
+    var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
 
     if (typeof window.matchMedia === 'function') {

@@ -68,21 +68,51 @@ const scenarios = [
   </section>
 
   <script type="application/json" id="lopp-data" set:html={JSON.stringify({ scenarios, labels: l })} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no is:inline) so Vite bundles it and tree-shakes
+// d3 down to the submodules actually used here, instead of shipping the
+// full d3 CDN bundle.
+import { select } from 'd3-selection';
+import { scaleBand, scaleLinear } from 'd3-scale';
+import { axisLeft, axisBottom } from 'd3-axis';
+import { format } from 'd3-format';
+
+// Shape of the JSON payload embedded by the frontmatter above
+// (`{ scenarios, labels: l }`) — one entry per bar / label set.
+interface Scenario {
+  label: string;
+  blocks: number;
+  btc: number;
+  mhps: number;
+  colorToken: string;
+}
+interface Labels {
+  title: string;
+  subtitle: string;
+  actual: string;
+  fullCapacity: string;
+  maxCapacity: string;
+  blocks: string;
+  btc: string;
+  mhps: string;
+  hashrateTitle: string;
+  hashrateSub: string;
+  used: string;
+  available: string;
+  pctUsed: string;
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
-
     var dataEl = document.getElementById('lopp-data');
     if (!dataEl) return;
-    var data = JSON.parse(dataEl.textContent);
+    var data = JSON.parse(dataEl.textContent) as { scenarios: Scenario[]; labels: Labels };
     var scenarios = data.scenarios;
     var l = data.labels;
 
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
     function readTokens() {
@@ -111,32 +141,32 @@ const scenarios = [
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-      var y = d3.scaleBand().domain(scenarios.map(function(s) { return s.label; })).range([0, h]).padding(0.3);
-      var x = d3.scaleLinear().domain([0, 2300000]).range([0, w]);
+      var y = scaleBand().domain(scenarios.map(function(s) { return s.label; })).range([0, h]).padding(0.3);
+      var x = scaleLinear().domain([0, 2300000]).range([0, w]);
 
-      g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+      g.append('g').call(axisLeft(y).tickSizeOuter(0))
         .selectAll('text').attr('font-size', '11px').style('fill', T.text);
       g.append('g').attr('transform', 'translate(0,' + h + ')')
-        .call(d3.axisBottom(x).ticks(4).tickFormat(function(d) { return (d / 1000000).toFixed(1) + 'M ' + l.btc; }))
+        .call(axisBottom(x).ticks(4).tickFormat(function(d) { return (d.valueOf() / 1000000).toFixed(1) + 'M ' + l.btc; }))
         .selectAll('text').attr('font-size', '10px').style('fill', T.text);
 
       scenarios.forEach(function(s) {
         var color = token(s.colorToken);
         g.append('rect')
-          .attr('y', y(s.label)).attr('x', 0)
+          .attr('y', y(s.label) ?? 0).attr('x', 0)
           .attr('height', y.bandwidth()).attr('width', x(s.btc))
           .attr('fill', color).attr('rx', 2).attr('opacity', 0.85);
 
         g.append('text')
-          .attr('y', y(s.label) + y.bandwidth() / 2)
+          .attr('y', (y(s.label) ?? 0) + y.bandwidth() / 2)
           .attr('x', x(s.btc) + 6)
           .attr('dominant-baseline', 'central')
           .attr('font-size', '12px').attr('font-weight', '700')
           .attr('fill', color)
-          .text(d3.format(',')(s.btc) + ' ' + l.btc);
+          .text(format(',')(s.btc) + ' ' + l.btc);
       });
     }
 
@@ -153,7 +183,7 @@ const scenarios = [
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
       // Background bar (full capacity track)
@@ -184,7 +214,7 @@ const scenarios = [
     }
 
     rerender();
-    var timer;
+    var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(rerender, 250); });
 
     if (typeof window.matchMedia === 'function') {

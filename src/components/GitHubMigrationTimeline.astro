@@ -53,25 +53,51 @@ const l = labels[lang];
   </section>
 
   <script type="application/json" id="github-timeline-data" set:html={JSON.stringify({ committers, labels: l })} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no define:vars, no is:inline) so Vite bundles it
+// and tree-shakes d3 down to the submodules actually used here, instead
+// of shipping the ~92KB full d3 CDN bundle for a small slice of API surface.
+import { select } from 'd3-selection';
+import { scaleTime, scaleBand } from 'd3-scale';
+import { axisBottom, axisLeft } from 'd3-axis';
+import { timeParse, timeFormat } from 'd3-time-format';
+
+interface Committer {
+  name: string;
+  username: string;
+  start: string;
+  end: string | null;
+  colorToken: string;
+}
+interface Labels {
+  title: string;
+  subtitle: string;
+  granted: string;
+  ended: string;
+  active: string;
+  finalSvn: string;
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
-
-    var dataEl = document.getElementById('github-timeline-data');
+    // Asserted non-null: the runtime checks right below return early if
+    // either lookup actually failed, but that guard doesn't narrow the
+    // type inside the nested draw() function declared further down, so
+    // the type itself has to already say "non-null" for that call site
+    // to type-check.
+    var dataEl = document.getElementById('github-timeline-data') as HTMLElement;
     if (!dataEl) return;
-    var data = JSON.parse(dataEl.textContent);
+    var data = JSON.parse(dataEl.textContent as string) as { committers: Committer[]; labels: Labels };
     var committers = data.committers;
     var l = data.labels;
 
-    var container = document.getElementById('github-timeline');
+    var container = document.getElementById('github-timeline') as HTMLElement;
     if (!container) return;
 
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
     function readTokens() {
@@ -93,48 +119,66 @@ const l = labels[lang];
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-      var parseDate = d3.timeParse('%Y-%m-%d');
+      var parseDate = timeParse('%Y-%m-%d');
+      // Non-null: every string passed to parseDate() below is either a
+      // literal ISO date (the axis domain, the SVN-commit marker) or a
+      // committer's start/end field (curated in the frontmatter array
+      // above), so the parse always succeeds — the `Date | null` return
+      // type only covers malformed input.
+      function parseD(s: string): Date {
+        return parseDate(s) as Date;
+      }
       var today = new Date();
-      var x = d3.scaleTime()
-        .domain([parseDate('2010-12-01'), parseDate('2012-07-01')])
+      var x = scaleTime()
+        .domain([parseD('2010-12-01'), parseD('2012-07-01')])
         .range([0, w]);
-      var y = d3.scaleBand().domain(committers.map(function(c) { return c.name; })).range([0, h]).padding(0.3);
+      var y = scaleBand().domain(committers.map(function(c) { return c.name; })).range([0, h]).padding(0.3);
 
       g.append('g').attr('transform', 'translate(0,' + h + ')')
-        .call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat('%Y-%m')))
+        // <Date>: scaleTime's call signature accepts d3's generic
+        // Date | NumberValue, so Domain would otherwise infer as that
+        // union and timeFormat's `(date: Date) => string` couldn't
+        // satisfy tickFormat's callback shape. Pinning Domain to Date
+        // here (valid since x.domain() always returns Date[]) keeps it.
+        .call(axisBottom<Date>(x).ticks(6).tickFormat(timeFormat('%Y-%m')))
         .selectAll('text').attr('font-size', '10px').style('fill', T.text);
 
-      g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+      g.append('g').call(axisLeft(y).tickSizeOuter(0))
         .selectAll('text').attr('font-size', '11px').style('fill', T.text);
 
       // Final SVN commit reference line — accent so it threads
       // visually with the related Satoshi-departure narrative.
       g.append('line')
-        .attr('x1', x(parseDate('2011-09-13'))).attr('x2', x(parseDate('2011-09-13')))
+        .attr('x1', x(parseD('2011-09-13'))).attr('x2', x(parseD('2011-09-13')))
         .attr('y1', 0).attr('y2', h)
         .attr('stroke', T.accent).attr('stroke-width', 1).attr('stroke-dasharray', '4,3').attr('stroke-opacity', 0.6);
       g.append('text')
-        .attr('x', x(parseDate('2011-09-13'))).attr('y', -5)
+        .attr('x', x(parseD('2011-09-13'))).attr('y', -5)
         .attr('text-anchor', 'middle').attr('font-size', '9px')
         .attr('fill', T.accent).text(l.finalSvn);
 
       committers.forEach(function(c) {
-        var x1 = x(parseDate(c.start));
-        var x2 = c.end ? x(parseDate(c.end)) : w;
+        var x1 = x(parseD(c.start));
+        var x2 = c.end ? x(parseD(c.end)) : w;
         var isActive = !c.end;
         var color = token(c.colorToken);
+        // Non-null: c.name is always a member of y's domain (built from
+        // this same committers array a few lines up), so scaleBand
+        // always resolves it here — the `number | undefined` in its
+        // return type only covers lookups outside the domain.
+        var yPos = y(c.name) as number;
 
         g.append('rect')
-          .attr('x', x1).attr('y', y(c.name))
+          .attr('x', x1).attr('y', yPos)
           .attr('width', x2 - x1).attr('height', y.bandwidth())
           .attr('fill', color).attr('rx', 3).attr('opacity', isActive ? 0.85 : 0.6);
 
         if (isActive) {
           g.append('text')
-            .attr('x', x2 - 5).attr('y', y(c.name) + y.bandwidth() / 2)
+            .attr('x', x2 - 5).attr('y', yPos + y.bandwidth() / 2)
             .attr('text-anchor', 'end').attr('dominant-baseline', 'central')
             .attr('font-size', '10px').attr('fill', T.bg).attr('font-weight', '600')
             .text('→ ' + l.active);
@@ -142,11 +186,11 @@ const l = labels[lang];
 
         // Endpoint dots — surface stroke for halo against the bar fill.
         g.append('circle')
-          .attr('cx', x1).attr('cy', y(c.name) + y.bandwidth() / 2)
+          .attr('cx', x1).attr('cy', yPos + y.bandwidth() / 2)
           .attr('r', 4).attr('fill', color).attr('stroke', T.bg).attr('stroke-width', 1.5);
         if (!isActive) {
           g.append('circle')
-            .attr('cx', x2).attr('cy', y(c.name) + y.bandwidth() / 2)
+            .attr('cx', x2).attr('cy', yPos + y.bandwidth() / 2)
             .attr('r', 4).attr('fill', color).attr('stroke', T.bg).attr('stroke-width', 1.5);
         }
       });
@@ -154,8 +198,8 @@ const l = labels[lang];
     draw();
 
     // Reveal: time-cursor wipe on scroll-in (chart-anim.js wipeReveal).
-    var replayFn = null;
-    (function arm(n) {
+    var replayFn: (() => void) | null = null;
+    (function arm(n?: number) {
       if (window.BAChartAnim) {
         replayFn = window.BAChartAnim.wipeReveal(['github-timeline'], { accent: token('--color-accent'), duration: 4200 });
       } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }
@@ -163,7 +207,7 @@ const l = labels[lang];
     var rb = document.querySelector('.github-migration [data-replay]');
     if (rb) rb.addEventListener('click', function() { if (replayFn) replayFn(); });
 
-    var timer;
+    var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
 
     if (typeof window.matchMedia === 'function') {

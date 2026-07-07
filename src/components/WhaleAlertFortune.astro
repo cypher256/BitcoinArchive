@@ -88,20 +88,62 @@ const chartData = {
   </section>
 
   <script type="application/json" id="whale-data" set:html={JSON.stringify(chartData)} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no define:vars, no is:inline) so Vite bundles it
+// and tree-shakes d3 down to the two submodules actually used here,
+// instead of shipping the ~92KB full d3 CDN bundle for ~2KB of API surface.
+import { select } from 'd3-selection';
+// Renamed on import: the component already has local variables named
+// `arc` and `pie` (the d3 generator instances configured below), which
+// would otherwise shadow these bindings within their own scope.
+import { arc as d3arc, pie as d3pie } from 'd3-shape';
+import type { PieArcDatum } from 'd3-shape';
+
+// Mirrors the server-side `labels.en` / `labels.ja` shape built in the
+// frontmatter above (all fields are strings) and the `chartData` object
+// serialized into the `#whale-data` JSON script tag.
+interface ChartLabels {
+  blocksTitle: string;
+  blocksSub: string;
+  spentTitle: string;
+  spentSub: string;
+  patoshi: string;
+  other: string;
+  spent: string;
+  unspent: string;
+  btc: string;
+  blocks: string;
+  centerPct: string;
+  centerRatio: string;
+  barUnspentLabel: string;
+  barSpentLabel: string;
+}
+interface WhaleChartData {
+  totalBlocks: number;
+  patoshiBlocks: number;
+  totalMined: number;
+  spent: number;
+  unspent: number;
+  unspentPctNumeric: number;
+  labels: ChartLabels;
+}
+// Datum shape for the donut's pie/arc generators.
+interface PieSlice {
+  label: string;
+  value: number;
+  color: string;
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
-
     var dataEl = document.getElementById('whale-data');
     if (!dataEl) return;
-    var data = JSON.parse(dataEl.textContent);
+    var data = JSON.parse(dataEl.textContent as string) as WhaleChartData;
     var l = data.labels;
 
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
     function readTokens() {
@@ -130,19 +172,19 @@ const chartData = {
       var W = rect.width || 600;
       var H = 260;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + W / 2 + ',' + H / 2 + ')');
 
       var radius = Math.min(W, H) / 2 - 30;
       var innerRadius = radius * 0.55;
 
-      var pieData = [
+      var pieData: PieSlice[] = [
         { label: l.patoshi, value: data.patoshiBlocks, color: T.focus },
         { label: l.other, value: data.totalBlocks - data.patoshiBlocks, color: T.comparator },
       ];
 
-      var pie = d3.pie().value(function(d) { return d.value; }).sort(null);
-      var arc = d3.arc().innerRadius(innerRadius).outerRadius(radius);
+      var pie = d3pie<PieSlice>().value(function(d) { return d.value; }).sort(null);
+      var arc = d3arc<PieArcDatum<PieSlice>>().innerRadius(innerRadius).outerRadius(radius);
 
       // Slice stroke is --color-bg so the divider between slices reads
       // as "bg-toned hairline", inverting cleanly on dark themes.
@@ -164,7 +206,7 @@ const chartData = {
         .text(l.centerRatio);
 
       // Labels on slices — place outside slice with leader line
-      var labelArc = d3.arc().innerRadius(radius + 10).outerRadius(radius + 10);
+      var labelArc = d3arc<PieArcDatum<PieSlice>>().innerRadius(radius + 10).outerRadius(radius + 10);
       pieData.forEach(function(d, i) {
         var slice = pie(pieData)[i];
         var pos = labelArc.centroid(slice);
@@ -193,7 +235,7 @@ const chartData = {
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
       var pctUnspent = data.unspentPctNumeric;
@@ -231,7 +273,7 @@ const chartData = {
     }
 
     rerender();
-    var timer;
+    var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(rerender, 250); });
 
     if (typeof window.matchMedia === 'function') {

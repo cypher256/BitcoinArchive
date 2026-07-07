@@ -48,24 +48,53 @@ const l = labels[lang];
   </section>
 
   <script type="application/json" id="overflow-timeline-data" set:html={JSON.stringify(l)} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no is:inline) so Vite bundles it and tree-shakes
+// d3 down to the three submodules actually used here, instead of shipping
+// the ~92KB full d3 CDN bundle for a handful of calls.
+import { select } from 'd3-selection';
+import { scaleLinear } from 'd3-scale';
+import { axisBottom } from 'd3-axis';
+
+// The astro frontmatter above serializes `labels[lang]` into the
+// #overflow-timeline-data JSON script tag; this interface describes
+// that same shape so JSON.parse's result is properly typed below.
+interface TimelineEvent {
+  time: string;
+  offset: number;
+  label: string;
+  type: 'alert' | 'crisis' | 'fix' | 'resolved';
+}
+
+interface TimelineData {
+  title: string;
+  subtitle: string;
+  hours: string;
+  events: TimelineEvent[];
+  blockReorg: string;
+  duration: string;
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
+    // Asserted non-null at declaration (not just after the runtime
+    // guard right below): draw() is defined further down in this same
+    // scope and reads `container`, but a plain `if (!x) return` doesn't
+    // narrow the type inside a function declared later in the same
+    // scope — the type itself has to already say "non-null" for
+    // draw()'s body to type-check. The runtime check stays as the
+    // actual safety net.
+    var dataEl = document.getElementById('overflow-timeline-data') as HTMLElement;
+    var container = document.getElementById('overflow-timeline') as HTMLElement;
+    if (!dataEl || !container) return;
 
-    var dataEl = document.getElementById('overflow-timeline-data');
-    if (!dataEl) return;
-    var l = JSON.parse(dataEl.textContent);
+    var l = JSON.parse(dataEl.textContent as string) as TimelineData;
     var events = l.events;
 
-    var container = document.getElementById('overflow-timeline');
-    if (!container) return;
-
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
     function readTokens() {
@@ -88,7 +117,7 @@ const l = labels[lang];
     function draw() {
       container.innerHTML = '';
       var T = readTokens();
-      var typeColors = { alert: T.alert, crisis: T.crisis, fix: T.fix, resolved: T.resolved };
+      var typeColors: Record<TimelineEvent['type'], string> = { alert: T.alert, crisis: T.crisis, fix: T.fix, resolved: T.resolved };
       var rect = container.getBoundingClientRect();
       var W = rect.width || 600;
       var margin = { top: 50, right: 80, bottom: 40, left: 80 };
@@ -96,15 +125,15 @@ const l = labels[lang];
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
       var maxOffset = 19;
-      var x = d3.scaleLinear().domain([0, maxOffset]).range([0, w]);
+      var x = scaleLinear().domain([0, maxOffset]).range([0, w]);
 
       // Axis
       g.append('g').attr('transform', 'translate(0,' + (h - 10) + ')')
-        .call(d3.axisBottom(x).ticks(6).tickFormat(function(d) { return '+' + d + l.hours; }))
+        .call(axisBottom(x).ticks(6).tickFormat(function(d) { return '+' + d + l.hours; }))
         .selectAll('text').attr('font-size', '10px').style('fill', T.text);
 
       // Timeline bar
@@ -153,7 +182,7 @@ const l = labels[lang];
           .attr('text-anchor', 'middle').attr('font-size', '9px')
           .attr('fill', T.muted)
           .each(function() {
-            var text = d3.select(this);
+            var text = select(this);
             var words = ev.label.split(' ');
             var maxChars = 25;
             var line1 = '';
@@ -174,8 +203,8 @@ const l = labels[lang];
     draw();
 
     // Reveal: time-cursor wipe on scroll-in (chart-anim.js wipeReveal).
-    var replayFn = null;
-    (function arm(n) {
+    var replayFn: (() => void) | null = null;
+    (function arm(n?: number) {
       if (window.BAChartAnim) {
         replayFn = window.BAChartAnim.wipeReveal(['overflow-timeline'], { duration: 4600 });
       } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }
@@ -183,7 +212,7 @@ const l = labels[lang];
     var rb = document.querySelector('.value-overflow-timeline [data-replay]');
     if (rb) rb.addEventListener('click', function() { if (replayFn) replayFn(); });
 
-    var timer;
+    var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
 
     if (typeof window.matchMedia === 'function') {

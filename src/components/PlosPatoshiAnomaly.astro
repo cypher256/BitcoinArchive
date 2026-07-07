@@ -70,25 +70,58 @@ const l = labels[lang];
   </section>
 
   <script type="application/json" id="plos-data" set:html={JSON.stringify({ distribution: firstNibbleDistribution, labels: l })} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no is:inline) so Vite bundles it and tree-shakes
+// d3 down to the submodules actually used here, instead of shipping the
+// full d3 CDN bundle for a handful of scale/axis/array calls.
+import { select } from 'd3-selection';
+import { scaleBand, scaleLinear } from 'd3-scale';
+import { max } from 'd3-array';
+import { axisBottom, axisLeft } from 'd3-axis';
+
+// Shape of the JSON payload embedded in the sibling #plos-data script block
+// above: server-rendered from firstNibbleDistribution + the active-locale
+// labels object, so this describes what JSON.parse actually returns here.
+interface PlosDistribution {
+  patoshi: number[];
+  uniform: number[];
+}
+interface PlosLabels {
+  pTitle: string;
+  pSub: string;
+  zTitle: string;
+  zSub: string;
+  patoshi: string;
+  uniform: string;
+  blockNum: string;
+  nibble: string;
+  frequency: string;
+  hasAnomaly: string;
+  allBlocks: string;
+  block12Note: string;
+}
+interface PlosData {
+  distribution: PlosDistribution;
+  labels: PlosLabels;
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
-
-    var dataEl = document.getElementById('plos-data');
+    // d3 is a static import now (bundled, not a CDN global), so it's
+    // already available by the time this module runs — no more polling.
+    var dataEl = document.getElementById('plos-data') as HTMLElement;
     if (!dataEl) return;
-    var data = JSON.parse(dataEl.textContent);
+    var data = JSON.parse(dataEl.textContent as string) as PlosData;
     var dist = data.distribution;
     var l = data.labels;
 
     var hexLabels = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
 
     // Resolve a CSS custom property against :root.
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
     function readTokens() {
@@ -126,21 +159,24 @@ const l = labels[lang];
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-      var x = d3.scaleBand().domain(hexLabels).range([0, w]).padding(0.2);
-      var y = d3.scaleLinear().domain([0, d3.max(dist.patoshi) * 1.1]).nice().range([h, 0]);
+      var x = scaleBand().domain(hexLabels).range([0, w]).padding(0.2);
+      // dist.patoshi always has 16 entries (one per hex nibble), so max()
+      // never actually falls through to the `?? 0` fallback at runtime —
+      // it's there only to satisfy the `number | undefined` return type.
+      var y = scaleLinear().domain([0, (max(dist.patoshi) ?? 0) * 1.1]).nice().range([h, 0]);
 
       // Axes
       g.append('g').attr('transform', 'translate(0,' + h + ')')
-        .call(d3.axisBottom(x).tickSizeOuter(0))
+        .call(axisBottom(x).tickSizeOuter(0))
         .selectAll('text').attr('font-size', '11px').style('fill', T.text);
       g.append('text').attr('x', w / 2).attr('y', h + 40)
         .attr('text-anchor', 'middle').attr('font-size', '11px')
         .attr('fill', T.muted).text(l.nibble);
 
-      g.append('g').call(d3.axisLeft(y).ticks(5).tickFormat(function(d) { return d + '%'; }))
+      g.append('g').call(axisLeft(y).ticks(5).tickFormat(function(d) { return d + '%'; }))
         .selectAll('text').attr('font-size', '10px').style('fill', T.text);
       g.append('text').attr('transform', 'rotate(-90)')
         .attr('x', -h / 2).attr('y', -42)
@@ -155,10 +191,14 @@ const l = labels[lang];
         .attr('stroke-dasharray', '6,4');
 
       // Patoshi bars
+      // x(...) is typed `number | undefined` (ScaleBand returns undefined
+      // only for a value outside its domain); every i here indexes hexLabels
+      // itself, which *is* x's domain, so the `?? 0` fallback never actually
+      // triggers — it only satisfies the type checker.
       g.selectAll('.bar')
         .data(dist.patoshi)
         .enter().append('rect')
-        .attr('x', function(d, i) { return x(hexLabels[i]); })
+        .attr('x', function(d, i) { return x(hexLabels[i]) ?? 0; })
         .attr('y', function(d) { return y(d); })
         .attr('width', x.bandwidth())
         .attr('height', function(d) { return h - y(d); })
@@ -169,7 +209,7 @@ const l = labels[lang];
       g.selectAll('.label')
         .data(dist.patoshi)
         .enter().append('text')
-        .attr('x', function(d, i) { return x(hexLabels[i]) + x.bandwidth() / 2; })
+        .attr('x', function(d, i) { return (x(hexLabels[i]) ?? 0) + x.bandwidth() / 2; })
         .attr('y', function(d) { return y(d) - 4; })
         .attr('text-anchor', 'middle')
         .attr('font-size', '10px')
@@ -192,7 +232,7 @@ const l = labels[lang];
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
       var cols = 16;
@@ -246,8 +286,8 @@ const l = labels[lang];
     rerender();
 
     // Reveal: per-panel left-to-right wipe on scroll-in (chart-anim.js wipeReveal).
-    var replayFn = null;
-    (function arm(n) {
+    var replayFn: (() => void) | null = null;
+    (function arm(n?: number) {
       if (window.BAChartAnim) {
         replayFn = window.BAChartAnim.wipeReveal(['p-anomaly-chart', 'block-coverage-chart'], { duration: 4800 });
       } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }
@@ -255,7 +295,7 @@ const l = labels[lang];
     var rb = document.querySelector('.plos-patoshi-anomaly [data-replay]');
     if (rb) rb.addEventListener('click', function() { if (replayFn) replayFn(); });
 
-    var timer;
+    var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() {
       clearTimeout(timer);
       timer = setTimeout(rerender, 250);

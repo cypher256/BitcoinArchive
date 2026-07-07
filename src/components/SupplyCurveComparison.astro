@@ -72,30 +72,86 @@ const localized = {
 
   <script type="application/json" id="supply-curve-data" set:html={JSON.stringify(localized)} />
   <script type="application/json" id="supply-curve-labels" set:html={JSON.stringify(l)} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no define:vars, no is:inline) so Vite bundles it
+// and tree-shakes d3 down to the submodules actually used here, instead of
+// shipping the ~92KB full d3 CDN bundle for the handful of APIs below.
+import { select } from 'd3-selection';
+import { scaleLinear, scaleLog } from 'd3-scale';
+import type { ScaleContinuousNumeric } from 'd3-scale';
+import { axisBottom, axisLeft } from 'd3-axis';
+import { max } from 'd3-array';
+import { format } from 'd3-format';
+// Renamed on import: the component already has a local variable named
+// `line` (the d3 line-generator instance built below), which would
+// otherwise shadow this binding within its own scope.
+import { line as d3line, curveMonotoneX } from 'd3-shape';
+
+// Data shapes mirror src/data/supply-curves/series.json after the
+// frontmatter above localizes each series/annotation label to `lang`
+// (see the `localized` object above) — one lang-agnostic structure crosses
+// into this script via the #supply-curve-data JSON block.
+interface SeriesPoint {
+  year: number;
+  index: number;
+  absolute: string;
+}
+interface Series {
+  id: string;
+  label: string;
+  colorVar: string;
+  points: SeriesPoint[];
+}
+interface Annotation {
+  year: number;
+  label: string;
+}
+interface ChartData {
+  baselineYear: number;
+  yearRange: [number, number];
+  annotations: Annotation[];
+  series: Series[];
+}
+interface Labels {
+  title: string;
+  subtitle: string;
+  yLabel: string;
+  xLabel: string;
+  scaleLinear: string;
+  scaleLog: string;
+  hoverYear: string;
+  legendHint: string;
+}
+interface ChartState {
+  scale: string;
+  hidden: Record<string, boolean>; // seriesId -> true if hidden
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
-
-    var container = document.getElementById('supply-curve-chart');
-    var legendEl  = document.getElementById('supply-curve-legend');
-    var dataEl    = document.getElementById('supply-curve-data');
-    var labelsEl  = document.getElementById('supply-curve-labels');
+    // Asserted non-null: the runtime check right below returns early if any
+    // of these four lookups actually failed, but that guard doesn't narrow
+    // the type inside functions declared further down (draw(), etc.), so
+    // the type itself has to already say "non-null" for those call sites
+    // to type-check.
+    var container = document.getElementById('supply-curve-chart') as HTMLElement;
+    var legendEl  = document.getElementById('supply-curve-legend') as HTMLElement;
+    var dataEl    = document.getElementById('supply-curve-data') as HTMLElement;
+    var labelsEl  = document.getElementById('supply-curve-labels') as HTMLElement;
     if (!container || !legendEl || !dataEl || !labelsEl) return;
 
-    var data   = JSON.parse(dataEl.textContent);
-    var labels = JSON.parse(labelsEl.textContent);
+    var data   = JSON.parse(dataEl.textContent as string) as ChartData;
+    var labels = JSON.parse(labelsEl.textContent as string) as Labels;
 
-    var state = {
+    var state: ChartState = {
       scale: 'linear',
       hidden: {}, // seriesId -> true if hidden
     };
 
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
 
@@ -110,13 +166,13 @@ const localized = {
       };
     }
 
-    function seriesColor(s) { return token(s.colorVar) || '#888'; }
+    function seriesColor(s: Series) { return token(s.colorVar) || '#888'; }
 
     // animEnd: a year to reveal the curves up to (the reveal animation drives
-    // this); null draws the complete chart. While animating the x-domain stretches
-    // to animEnd, the y-domain stays fixed (computed from all points), and the
-    // hover layer is skipped.
-    function draw(animEnd) {
+    // this); undefined draws the complete chart. While animating the x-domain
+    // stretches to animEnd, the y-domain stays fixed (computed from all
+    // points), and the hover layer is skipped.
+    function draw(animEnd?: number) {
       var animating = (animEnd != null);
       container.innerHTML = '';
       var T = readTokens();
@@ -128,26 +184,35 @@ const localized = {
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg')
+      var svg = select(container).append('svg')
         .attr('width', W).attr('height', H)
         .attr('viewBox', '0 0 ' + W + ' ' + H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
       var yearRange = data.yearRange;
+      // Resolved end-year for this frame: yearRange[1] when not animating,
+      // otherwise the in-progress sweep position. Kept as a plain number so
+      // every numeric comparison below (which only actually applies while
+      // `animating` is true) type-checks without re-testing animEnd's
+      // optionality at each call site.
+      var animEndYear = animEnd != null ? animEnd : yearRange[1];
       var visibleSeries = data.series.filter(function(s) { return !state.hidden[s.id]; });
 
-      var x = d3.scaleLinear().domain([yearRange[0], animating ? animEnd : yearRange[1]]).range([0, w]);
+      var x = scaleLinear().domain([yearRange[0], animEndYear]).range([0, w]);
 
-      var allValues = [];
+      var allValues: number[] = [];
       visibleSeries.forEach(function(s) { s.points.forEach(function(p) { allValues.push(p.index); }); });
-      var yMax = allValues.length ? d3.max(allValues) * 1.08 : 100;
+      // Cast: allValues.length is checked in the ternary below, so max() is
+      // only ever invoked on a non-empty array and can't actually return
+      // undefined.
+      var yMax = allValues.length ? (max(allValues) as number) * 1.08 : 100;
 
-      var y;
+      var y: ScaleContinuousNumeric<number, number>;
       if (state.scale === 'log') {
         // log scale needs strictly positive domain; bump 0-values to 0.5
-        y = d3.scaleLog().domain([0.5, Math.max(10, yMax)]).range([h, 0]).clamp(true);
+        y = scaleLog().domain([0.5, Math.max(10, yMax)]).range([h, 0]).clamp(true);
       } else {
-        y = d3.scaleLinear().domain([0, yMax]).range([h, 0]).nice();
+        y = scaleLinear().domain([0, yMax]).range([h, 0]).nice();
       }
 
       // Gridlines (horizontal)
@@ -160,7 +225,7 @@ const localized = {
 
       // Annotation vertical reference lines (1971, 2009, 2022)
       data.annotations.forEach(function(a) {
-        if (animating && a.year > animEnd) return;
+        if (animating && a.year > animEndYear) return;
         var ax = x(a.year);
         g.append('line')
           .attr('x1', ax).attr('x2', ax)
@@ -173,13 +238,13 @@ const localized = {
       });
 
       // Axes
-      var xAxis = d3.axisBottom(x).tickFormat(d3.format('d')).ticks(8);
+      var xAxis = axisBottom(x).tickFormat(format('d')).ticks(8);
       g.append('g').attr('transform', 'translate(0,' + h + ')').call(xAxis)
         .selectAll('text').attr('fill', T.muted).attr('font-size', '11px');
 
       var yAxis = state.scale === 'log'
-        ? d3.axisLeft(y).tickValues([1, 10, 100, 1000]).tickFormat(d3.format('~s'))
-        : d3.axisLeft(y).tickFormat(d3.format('~s')).ticks(6);
+        ? axisLeft(y).tickValues([1, 10, 100, 1000]).tickFormat(format('~s'))
+        : axisLeft(y).tickFormat(format('~s')).ticks(6);
       g.append('g').call(yAxis)
         .selectAll('text').attr('fill', T.muted).attr('font-size', '11px');
 
@@ -197,19 +262,19 @@ const localized = {
         .text(labels.yLabel);
 
       // Lines
-      var line = d3.line()
+      var line = d3line<SeriesPoint>()
         .x(function(d) { return x(d.year); })
         .y(function(d) {
           if (state.scale === 'log' && d.index <= 0) return y(0.5);
           return y(Math.max(0.5, d.index));
         })
-        .curve(d3.curveMonotoneX);
+        .curve(curveMonotoneX);
 
       visibleSeries.forEach(function(s) {
         var color = seriesColor(s);
         // While animating, draw each series only up to animEnd so it grows in
         // as the year axis sweeps past its first datapoint.
-        var pts = animating ? s.points.filter(function(p) { return p.year <= animEnd; }) : s.points;
+        var pts = animating ? s.points.filter(function(p) { return p.year <= animEndYear; }) : s.points;
         if (pts.length === 0) return;
         g.append('path')
           .datum(pts)
@@ -225,7 +290,7 @@ const localized = {
 
       // Hover layer: crosshair + tooltip — skipped during the reveal animation
       if (!animating) {
-      var tooltip = d3.select(container).append('div').attr('class', 'sc-tooltip')
+      var tooltip = select(container).append('div').attr('class', 'sc-tooltip')
         .style('position', 'absolute').style('pointer-events', 'none')
         .style('background', T.tooltipBg).style('color', T.tooltipFg)
         .style('padding', '6px 9px').style('border-radius', '4px')
@@ -241,7 +306,9 @@ const localized = {
         .attr('width', w).attr('height', h)
         .attr('fill', 'transparent')
         .on('mousemove', function(event) {
-          var rect = svg.node().getBoundingClientRect();
+          // Asserted non-null: this SVG node was just appended above via
+          // `select(container).append('svg')`, so it's always attached.
+          var rect = (svg.node() as SVGSVGElement).getBoundingClientRect();
           var mx = event.clientX - rect.left - margin.left;
           if (mx < 0 || mx > w) return;
           var hoverYear = Math.round(x.invert(mx));
@@ -294,12 +361,18 @@ const localized = {
     }
 
     function bindControls() {
-      var btns = container.parentElement.querySelectorAll('.scale-btn');
+      // Asserted non-null: `container` (queried above) is always rendered
+      // with a parent element in this component's markup (the enclosing
+      // <section>), so `.parentElement` is never null here at runtime.
+      var btns = (container.parentElement as HTMLElement).querySelectorAll('.scale-btn');
       btns.forEach(function(btn) {
         btn.addEventListener('click', function() {
           btns.forEach(function(b) { b.classList.remove('active'); });
           btn.classList.add('active');
-          state.scale = btn.getAttribute('data-scale');
+          // Both buttons this handler is bound to carry a hardcoded
+          // data-scale="linear"/"log" attribute in the markup above, so the
+          // lookup is never actually null.
+          state.scale = btn.getAttribute('data-scale') as string;
           draw();
         });
       });
@@ -312,7 +385,7 @@ const localized = {
     // Reveal animation: stretch the year axis from yearRange[0] to yearRange[1]
     // and play once on scroll-in (shared runtime A, public/scripts/chart-anim.js).
     // Each series appears as the sweep passes its first datapoint.
-    var replayFn = null;
+    var replayFn: (() => void) | null = null;
     function play() {
       if (!window.BAChartAnim) return;
       var y0 = data.yearRange[0], y1 = data.yearRange[1];
@@ -325,14 +398,14 @@ const localized = {
         },
       });
     }
-    (function arm(n) {
+    (function arm(n?: number) {
       if (window.BAChartAnim) play();
       else if ((n || 0) < 40) setTimeout(function() { arm((n || 0) + 1); }, 50);
     })();
-    var replayBtn = container.parentElement.querySelector('[data-replay]');
+    var replayBtn = (container.parentElement as HTMLElement).querySelector('[data-replay]');
     if (replayBtn) replayBtn.addEventListener('click', function() { if (replayFn) replayFn(); });
 
-    var timer;
+    var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(function() { draw(); }, 250); });
 
     if (typeof window.matchMedia === 'function') {

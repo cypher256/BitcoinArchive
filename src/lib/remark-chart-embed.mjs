@@ -6,7 +6,7 @@
  * into an empty placeholder element at that exact position:
  *   <div class="chart-embed" data-chart="NAME"></div>
  *
- * The client runtime (public/scripts/chart-embeds.js) scans
+ * The client runtime (src/components/ChartEmbedRuntime.astro) scans
  * `.chart-embed[data-chart]` and fills each one with a registered drawer. This
  * lets a chart sit at the right place within the prose, instead of being pinned
  * to the fixed top/bottom slots of the [...slug] template. Same family as the

@@ -47,24 +47,47 @@ const l = labels[lang];
   </section>
 
   <script type="application/json" id="holdings-data" set:html={JSON.stringify({ estimates, labels: l })} />
-  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 </div>
 
-<script is:inline>
+<script>
+// Real ES-module script (no define:vars, no is:inline) so Vite bundles it
+// and tree-shakes d3 down to the two submodules actually used here,
+// instead of shipping the ~92KB full d3 CDN bundle for a small API surface.
+import { select } from 'd3-selection';
+import { scaleBand, scaleLinear } from 'd3-scale';
+import { axisBottom, axisLeft } from 'd3-axis';
+
+interface Estimate {
+  source: string;
+  btc: number;
+  year: number;
+  colorToken: string;
+}
+interface Labels {
+  title: string;
+  subtitle: string;
+  btc: string;
+  convergence: string;
+  unspent: string;
+}
+
 (function() {
   function init() {
-    if (typeof d3 === 'undefined') { setTimeout(init, 50); return; }
-
-    var dataEl = document.getElementById('holdings-data');
+    // Asserted non-null: the runtime checks right below return early if
+    // either lookup actually failed, but that guard doesn't narrow the
+    // type inside the nested draw() function declared further down, so
+    // the type itself has to already say "non-null" for that call site
+    // to type-check.
+    var dataEl = document.getElementById('holdings-data') as HTMLElement;
     if (!dataEl) return;
-    var data = JSON.parse(dataEl.textContent);
+    var data = JSON.parse(dataEl.textContent as string) as { estimates: Estimate[]; labels: Labels };
     var estimates = data.estimates;
     var l = data.labels;
 
-    var container = document.getElementById('holdings-chart');
+    var container = document.getElementById('holdings-chart') as HTMLElement;
     if (!container) return;
 
-    function token(name) {
+    function token(name: string) {
       return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
     function readTokens() {
@@ -85,16 +108,22 @@ const l = labels[lang];
       var w = W - margin.left - margin.right;
       var h = H - margin.top - margin.bottom;
 
-      var svg = d3.select(container).append('svg').attr('width', W).attr('height', H);
+      var svg = select(container).append('svg').attr('width', W).attr('height', H);
       var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-      var y = d3.scaleBand().domain(estimates.map(function(d) { return d.source; })).range([0, h]).padding(0.3);
-      var x = d3.scaleLinear().domain([0, 1300000]).range([0, w]);
+      var y = scaleBand().domain(estimates.map(function(d) { return d.source; })).range([0, h]).padding(0.3);
+      var x = scaleLinear().domain([0, 1300000]).range([0, w]);
 
-      g.append('g').call(d3.axisLeft(y).tickSizeOuter(0))
+      g.append('g').call(axisLeft(y).tickSizeOuter(0))
         .selectAll('text').attr('font-size', '11px').style('fill', T.text);
       g.append('g').attr('transform', 'translate(0,' + h + ')')
-        .call(d3.axisBottom(x).ticks(5).tickFormat(function(d) { return (d / 1000000).toFixed(1) + 'M'; }))
+        // <number>: scaleLinear's call signature accepts d3's generic
+        // NumberValue (number | { valueOf(): number }), so Domain would
+        // otherwise infer as NumberValue and the tickFormat callback's
+        // `d` couldn't be divided directly. Pinning Domain to number
+        // here (valid since number satisfies NumberValue) keeps `d` a
+        // plain number below.
+        .call(axisBottom<number>(x).ticks(5).tickFormat(function(d) { return (d / 1000000).toFixed(1) + 'M'; }))
         .selectAll('text').attr('font-size', '10px').style('fill', T.text);
 
       // Consensus marker at 1.1M — accent so it threads with the
@@ -106,13 +135,18 @@ const l = labels[lang];
 
       estimates.forEach(function(e) {
         var color = token(e.colorToken);
+        // Non-null: e.source is always a member of y's domain (built
+        // from this same estimates array a few lines up), so scaleBand
+        // always resolves it here — the `number | undefined` in its
+        // return type only covers lookups outside the domain.
+        var yPos = y(e.source) as number;
         g.append('rect')
-          .attr('y', y(e.source)).attr('x', 0)
+          .attr('y', yPos).attr('x', 0)
           .attr('height', y.bandwidth()).attr('width', x(e.btc))
           .attr('fill', color).attr('rx', 2).attr('opacity', 0.85);
 
         g.append('text')
-          .attr('y', y(e.source) + y.bandwidth() / 2)
+          .attr('y', yPos + y.bandwidth() / 2)
           .attr('x', x(e.btc) + 6)
           .attr('dominant-baseline', 'central')
           .attr('font-size', '12px').attr('font-weight', '700')
@@ -121,7 +155,7 @@ const l = labels[lang];
       });
     }
     draw();
-    var timer;
+    var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
 
     if (typeof window.matchMedia === 'function') {
