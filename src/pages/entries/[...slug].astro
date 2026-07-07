@@ -32,6 +32,7 @@ import { renderEditorNote } from '../../lib/editor-note';
 import { heroBannerPosition } from '../../lib/heroBanner';
 import { LABELS as EDITORIAL_LABELS } from '../../lib/remark-editorial-marker.mjs';
 import gitDates from '../../data/git-dates.json';
+import ChartEmbedRuntime from '../../components/ChartEmbedRuntime.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries');
@@ -50,6 +51,10 @@ const base = import.meta.env.BASE_URL.endsWith('/')
   : import.meta.env.BASE_URL + '/';
 const { entry, hasJa } = Astro.props;
 const { Content } = await render(entry);
+// Only a handful of entries (the whitepaper drafts) contain $$ math blocks.
+// Gates the sitewide KaTeX <link> in BaseLayout so it isn't fetched on
+// every other entry page for a feature this one mostly doesn't use.
+const hasMath = /\$\$/.test(entry.body ?? '');
 
 const allEntries = await getCollection('entries');
 const sorted = allEntries.filter((e) => e.data.type !== 'biography').sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
@@ -132,6 +137,7 @@ const heroBannerOffset = heroBannerPosition(entry.id);
   author={ogAuthor}
   ogImage={`/og/${entry.id}.png`}
   breadcrumbs={breadcrumbs}
+  hasMath={hasMath}
 >
   <article class="container">
     <nav class="entry-nav entry-nav-top">
@@ -318,9 +324,7 @@ const heroBannerOffset = heroBannerPosition(entry.id);
     </nav>
   </article>
 
-  {isEditorialType && (
-    <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-embeds.js'}></script>
-  )}
+  {isEditorialType && <ChartEmbedRuntime />}
 </BaseLayout>
 
 <style>

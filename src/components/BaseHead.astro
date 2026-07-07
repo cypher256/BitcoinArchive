@@ -74,17 +74,14 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
 
 
 <!-- Web font: Inter (Modern A's default body + heading face).
-     Loaded via Google Fonts CDN with `display=swap` so prose paints
-     immediately in the system fallback (`-apple-system` / Segoe UI)
-     and re-paints in Inter once the file arrives, never blocking
-     first paint. Preconnect hints shave the TLS / DNS round trips on
-     first navigation. Weights 400/500/600/700 cover body, medium ui,
-     semibold h2-h4, and bold h1. Strategy α (CDN) per
-     temp/temp_0510_モダン化リデザイン計画.md § 6.2-2; can migrate
-     to self-host later without touching components. -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+     Self-hosted (`src/assets/fonts/inter/`, @font-face in global.css) as of
+     the migration noted below — was Google Fonts CDN (`display=swap`, two
+     preconnect origins) per temp/temp_0510_モダン化リデザイン計画.md § 6.2-2,
+     which explicitly named self-host as the planned later step ("Strategy α
+     (CDN)... can migrate to self-host later without touching components").
+     Removes ~817ms of render-blocking cross-origin connection setup that
+     Lighthouse flagged sitewide; `font-display: swap` in the @font-face
+     rules keeps the same never-block-first-paint behaviour. -->
 
 <!-- Google Analytics (GA4) -->
 <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-ZQNXSHB5ER"></script>

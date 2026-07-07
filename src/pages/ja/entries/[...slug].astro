@@ -33,6 +33,7 @@ import { heroBannerPosition } from '../../../lib/heroBanner';
 import { loadDefaultJapaneseParser } from 'budoux';
 import { LABELS as EDITORIAL_LABELS } from '../../../lib/remark-editorial-marker.mjs';
 import gitDates from '../../../data/git-dates.json';
+import ChartEmbedRuntime from '../../../components/ChartEmbedRuntime.astro';
 
 export async function getStaticPaths() {
   const jaEntries = await getCollection('entries_ja');
@@ -51,6 +52,10 @@ const base = import.meta.env.BASE_URL.endsWith('/')
   : import.meta.env.BASE_URL + '/';
 const { entry, hasEn } = Astro.props;
 const { Content } = await render(entry);
+// Only a handful of entries (the whitepaper drafts) contain $$ math blocks.
+// Gates the sitewide KaTeX <link> in BaseLayout so it isn't fetched on
+// every other entry page for a feature this one mostly doesn't use.
+const hasMath = /\$\$/.test(entry.body ?? '');
 
 const allEntries = await getCollection('entries_ja');
 const sorted = allEntries.filter((e) => e.data.type !== 'biography').sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
@@ -137,6 +142,7 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
   author={ogAuthor}
   ogImage={`/og/ja/${entry.id}.png`}
   breadcrumbs={breadcrumbs}
+  hasMath={hasMath}
 >
   <article class="container">
     <nav class="entry-nav entry-nav-top">
@@ -315,9 +321,7 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
     </nav>
   </article>
 
-  {isEditorialType && (
-    <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-embeds.js'}></script>
-  )}
+  {isEditorialType && <ChartEmbedRuntime />}
 </BaseLayout>
 
 <style>

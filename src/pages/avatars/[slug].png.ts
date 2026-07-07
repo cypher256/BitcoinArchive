@@ -60,7 +60,13 @@ export const GET: APIRoute = async ({ props }) => {
   const initials = avatarInitials(name);
   const background = avatarBackground(slug);
   const initialColor = '#ffffff';
-  const size = 256;
+  // 144 = 2x the largest on-site display size (.participant-avatar,
+  // --avatar-size: 4.5rem = 72px) — covers retina at every usage site
+  // (.character-avatar 35px, .entry-author-avatar 48px, etc. all need
+  // less). Was 256px, ~94% wasted bytes at the 35px usage per Lighthouse;
+  // 144 keeps a real 2x margin instead of serving one fixed size for
+  // every context regardless of how small it renders.
+  const size = 144;
 
   const svg = await satori(
     {
@@ -76,7 +82,9 @@ export const GET: APIRoute = async ({ props }) => {
           color: initialColor,
           fontFamily: '"Noto Sans JP"',
           fontWeight: 700,
-          fontSize: initials.length > 1 ? '108px' : '140px',
+          // Proportional to `size` (was 108/140 at the old 256px canvas;
+          // 256 * 0.422 = 108, 256 * 0.547 = 140).
+          fontSize: initials.length > 1 ? `${Math.round(size * 0.422)}px` : `${Math.round(size * 0.547)}px`,
           letterSpacing: '-0.02em',
         },
         children: initials,

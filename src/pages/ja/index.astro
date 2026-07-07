@@ -1,16 +1,15 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import NetworkGraph from '../../components/NetworkGraph.astro';
 import CharacterIntro from '../../components/CharacterIntro.astro';
 import { useTranslations, getDisplayEntries, localePath, translateParticipantName, translateTag, absoluteUrl } from '../../i18n/utils';
 import { computeGraphData } from '../../lib/graphData';
 import { getHomeAnalyses } from '../../lib/homeAnalyses';
+import heroImage from '../../assets/images/homepage-hero.jpg';
 
 const lang = 'ja';
 const t = useTranslations(lang);
-const base = import.meta.env.BASE_URL.endsWith('/')
-  ? import.meta.env.BASE_URL
-  : import.meta.env.BASE_URL + '/';
 const jaEntries = await getDisplayEntries(lang);
 const enEntries = await getDisplayEntries('en');
 const entries = jaEntries.length > 0 ? jaEntries : enEntries;
@@ -136,13 +135,14 @@ function tagWeight(count: number, max: number): number {
       <h1>Bitcoin Institute</h1>
       <p class="subtitle">{t('site.subtitle')}</p>
       <p class="description" set:html={t('site.description')} />
-      <img
+      <Image
         class="hero-image"
-        src={`${base}images/homepage-hero.jpg`}
+        src={heroImage}
         alt=""
-        width="1600"
-        height="873"
+        widths={[400, 800, 1200, 1600]}
+        sizes="(max-width: 1200px) 100vw, 1200px"
         loading="eager"
+        fetchpriority="high"
       />
     </section>
 
@@ -278,8 +278,6 @@ function tagWeight(count: number, max: number): number {
 
   </div>
 </BaseLayout>
-
-<script is:inline src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 
 <style>
   .network-section {
@@ -516,9 +514,17 @@ function tagWeight(count: number, max: number): number {
     background: rgba(180, 83, 9, 0.22);
     color: #6b3a10;
   }
+  .tag-tile[data-weight="1"] .tile-count {
+    /* The shared 0.7 opacity above blends --color-text-muted down below
+       WCAG AA 4.5:1 against the dark-theme page background (measured
+       3.98:1). Full opacity alone clears 4.5:1 in both themes, so this
+       weight tier gets the same per-tier override pattern weight 4 already
+       uses below, rather than changing the shared rule for every tier. */
+    opacity: 1;
+  }
   .tag-tile[data-weight="4"] {
     background: var(--color-accent);
-    color: #fff;
+    color: var(--color-accent-contrast);
   }
   .tag-tile[data-weight="4"] .tile-count {
     opacity: 0.85;
