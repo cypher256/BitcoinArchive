@@ -44,7 +44,7 @@ export interface DateAxisResult {
 
 // Resolve which date value + label an entry card shows. `sortKey` is the
 // list's active sort axis; every list surface now starts already coupled to
-// "created" (the registered/登録 axis — see the plan doc's "always one of
+// "created" (the registered/登録日 axis — see the plan doc's "always one of
 // the 3 buttons" decision), so every card, regardless of type, shows the
 // same axis until the reader picks a different one. Omitting sortKey falls
 // back to that same "created" default for callers with no sort UI.
