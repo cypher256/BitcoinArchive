@@ -2178,7 +2178,7 @@ Entries must withstand review by readers familiar with the material they describ
 - Internal consistency (no contradictions across an entry or between related entries)
 - Arithmetic (elapsed times, BTC quantities, conversion rates, block heights — anything that can be cross-checked)
 - Category integrity (don't list propositions of different kinds under one heading — e.g., "causes" and "period-of-activity" questions are distinct; don't mix them in a single list of "hypotheses")
-- Fact vs interpretation (interpretive framings must be labeled as such, not asserted as history; use hedges like "under this reading", "on this view")
+- Fact vs interpretation (interpretive framings must be labeled as such, not asserted as history. Prefer labels that name the reading or its holder — an attributed "X's argument that ...", "the claim is that ...", or a dedicated readings / counter-evidence section whose heading does the labeling. Phrase-level hedges like "under this reading" / "on this view" belong where explicitly labeled readings are being compared; do not append them to sentences whose labeling is already carried by the section or the attribution, and do not use them to soften the entry's own thesis)
 - Source attribution (claims traceable to sources cited in `secondarySources` / `sourceUrl`)
 
 **Out of scope (handled elsewhere, not this rule):**
