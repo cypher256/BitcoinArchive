@@ -27,6 +27,8 @@ tags:
   - "media"
   - "investigation"
 secondarySources:
+  - name: "The New York Times — My Quest to Solve Bitcoin's Great Mystery（2026 年 4 月 8 日）"
+    url: "https://www.nytimes.com/2026/04/08/business/bitcoin-satoshi-nakamoto-identity-adam-back.html"
   - name: "Yahoo Finance — Adam Back explains why he's not bitcoin creator Satoshi Nakamoto（2026 年 4 月 10 日）"
     url: "https://finance.yahoo.com/markets/crypto/article/adam-back-explains-why-hes-not-bitcoin-creator-satoshi-nakamoto-172837820.html"
   - name: "TechCrunch — British cryptographer Adam Back denies NYT report（2026 年 4 月 8 日）"
@@ -41,6 +43,8 @@ secondarySources:
     url: "https://fortune.com/2026/04/08/who-is-the-real-inventor-of-bitcoin-satoshi-nakamoto/"
   - name: "Unchained — NYT Names Adam Back as Satoshi Nakamoto. He Denies It — and the Crypto Community Agrees with Him."
     url: "https://unchainedcrypto.com/nyt-names-adam-back-as-satoshi-nakamoto-he-denies-it-and-the-crypto-community-agrees-with-him-unchained/"
+  - name: "文春オンライン — 本調査の日本語報道（2026 年 7 月）"
+    url: "https://bunshun.jp/articles/-/89580"
 relatedEntries:
   - aftermath/2008-08-20-adam-back-biography
   - aftermath/2008-08-20-satoshi-to-adam-back
@@ -61,7 +65,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-2026 年 4 月 8 日、ジョン・カレイロウ — Theranos 事件を暴いたピューリッツァー賞受賞ジャーナリスト — は、約 1 万語のニューヨーク・タイムズ調査記事で、Blockstream の CEO で Hashcash の発明者である[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の仮名の中の人物として最も可能性が高いと結論づけた。バックは正体を否定した。
+2026 年 4 月 8 日、ジョン・カレイロウ — Theranos 事件を暴いたピューリッツァー賞受賞ジャーナリスト — は、約 1 万語のニューヨーク・タイムズ調査記事「My Quest to Solve Bitcoin's Great Mystery」で、Blockstream の CEO で Hashcash の発明者である[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の仮名の中の人物として最も可能性が高いと結論づけた。バックは正体を否定した。
 
 ## 調査の方法論
 
@@ -72,14 +76,42 @@ translationStatus: complete
 - 各書き手の文体的指紋をサトシの既知の文章と比較。
 - バックの文章がサトシのものと特徴的に一致する 3 つの指標を特定：句点後の二重スペース、英国式綴り（サトシと同じく英米混在のパターン）、特定の種類のハイフン誤用。
 - サトシの文章中の非標準ハイフン使用 325 件を目録化したところ、バックの文章はそのうち 67 件で同じ誤りを示しており、次点の候補を大きく上回った。
+- 公表された癖の目録はさらに広い。両者とも「backup」「bugfix」を 1 語で、「half way」「down side」を 2 語で書き、「cheque」と「check」、「e-mail」と「email」の表記を行き来し、「partial pre-image」「burning the money」、ハイフン入りの「proof-of-work」という同じ特徴的な言い回しを使っていた。記事によれば、バックには「it's」と「its」を混同し、文末に「also」を置く癖もあった。
 
 委託先の言語学者のフロリアン・カフィエロによる独立した文体計量分析は、12 名の候補のうちバックを最上位に位置づけたが、カフィエロ自身は結果を不確定と評した — [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)がバックとほぼ並ぶ位置を占めた。
 
-調査はまた、本調査が「目立つ空白」と呼ぶバックのオンライン活動の特徴を指摘する：バックは何年もサイファーパンクのデジタルキャッシュ議論に従事していたが、ビットコインが告知された 2008 年末頃に投稿が静かになった。
+文体計量の外側でも、調査は状況証拠となる時系列上の主張を積み上げている：
+
+- **1997 年の電子キャッシュ構想。** 1997 年 4 月 30 日、バックはサイファーパンクメーリングリストで、銀行システムから「完全に切り離された」電子キャッシュシステムを提案した。支払人と受取人のプライバシー、ネットワーク化されたコンピューターへの分散、組み込みの希少性、個人にも銀行にも信頼を置かない設計という 4 つの属性に、2 日後には 5 つ目として公開検証可能なプロトコルが加わる。記事はこの 5 つすべてを後のビットコインの設計に対応づけている。
+- **「目立つ空白」。** バックは何年もサイファーパンクのデジタルキャッシュ議論に従事していたが、ビットコインが告知された 2008 年末頃に投稿が静かになり、サトシが活動を続けた約 2 年半のあいだ沈黙が続いた。カレイロウは NPR でこの符合を漫画の比喩で要約した —「ブルース・ウェインとバットマンのようなものだ。バットマンが現れるとき、ブルース・ウェインはどこにもいない」。
+- **鏡写しの復帰。** [サトシの最後の既知のメール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)は 2011 年 4 月 26 日付。その 6 週間後の 2011 年 6 月、バックは同じ暗号学メーリングリスト上でビットコインについて初めて公に発言した。2013 年 4 月 17 日には BitcoinTalk に参加し — [セルジオ・ラーナーの Patoshi 分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)がサトシ初期マイニング由来の資産額を公の数字にした直後にあたる — 2 週間のうちに Wikipedia へサトシ・ナカモト単独ページの復元を要求していた。
+- **HBO の場面。** カレイロウの記述は、バックに注目した端緒の一つを [2024 年の HBO ドキュメンタリー「Money Electric」](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)の一場面に求めている：自分の名前が挙がった途端、バックは身を強張らせ、サトシであることを強く否定し、会話をオフレコにするよう求めた。
 
 ## エルサルバドルでのインタビュー
 
-カレイロウは現在エルサルバドル在住のバックを訪ね、2 時間の対面インタビューを実施した。その中でバックは正体を 6 回以上にわたって否定した。
+カレイロウは 2026 年 1 月下旬、サンサルバドルで開かれたビットコインカンファレンスの折に、エルサルバドル在住のバックを訪ね、ホテルの一室で 2 時間の対面インタビューを行い、証拠を一つずつ提示した。バックは正体を 6 回以上にわたって否定し、積み重なった一致を偶然として退けた：
+
+<!-- audit:quote-skip -->
+> 「結局のところ、何も証明していない。請け合ってもいい、本当に私ではない」
+
+公開された記事は、この否定と並べて、バックの挙動をめぐるカレイロウ自身の一人称の描写を記している：
+
+<!-- audit:quote-skip -->
+> 「しかし時折、ボディランゲージは別の物語を語っていた。言い逃れの難しい事柄を突きつけられると、顔が赤くなり、椅子の上で落ち着かなげに身じろぎした」
+
+### カレイロウが「口を滑らせた」と聞いたやり取り
+
+インタビュー後に録音を聞き返したカレイロウは、一つのやり取りに目を留めた。カレイロウが[サトシの 2008 年 11 月の一節](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-14-sni12-bitcoin-p2p-e-cash-paper/)「言葉よりコードの方が得意」に触れたのに対し、バックはこう答えていた：
+
+<!-- audit:quote-skip -->
+> 「それにしても、ずいぶん喋った方だと思うが、つまり…その、言葉がうまいと言うつもりはないが、実際、あのリストでは相当お喋りに書き込んでいたからね」
+
+カレイロウはこの返答を、バックがサトシのメーリングリスト上の文章を自分のものとして語った瞬間と聞いた — 記事の言葉を借りれば、バックは数秒のあいだ「仮面を落とし、サトシになった」。数日後にメールで問われたバックは、うっかり口を滑らせたのではないと否定した：
+
+<!-- audit:quote-skip -->
+> 「技術畑の人間は文章よりもコードで考えを表現する方が楽だと感じることが多い、という一般的な観察に、会話の流れで応じただけだ」
+
+記事はこのやり取りで締めくくられる — カレイロウは、この人物で間違いないという心証に「なお残っていた疑い」がこれで消えたと書き、公開 5 日後の NPR インタビューでは自らの確信を「99 から 100% の間」と述べた。挙動の読みも口滑りの読みも、バックが意味を争う発言に対する記者側の解釈である。
 
 ## バックの応答
 

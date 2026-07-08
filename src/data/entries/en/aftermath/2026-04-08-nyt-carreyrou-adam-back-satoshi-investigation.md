@@ -26,6 +26,8 @@ tags:
   - "media"
   - "investigation"
 secondarySources:
+  - name: "The New York Times — My Quest to Solve Bitcoin's Great Mystery (April 8, 2026)"
+    url: "https://www.nytimes.com/2026/04/08/business/bitcoin-satoshi-nakamoto-identity-adam-back.html"
   - name: "Yahoo Finance — Adam Back explains why he's not bitcoin creator Satoshi Nakamoto (April 10, 2026)"
     url: "https://finance.yahoo.com/markets/crypto/article/adam-back-explains-why-hes-not-bitcoin-creator-satoshi-nakamoto-172837820.html"
   - name: "TechCrunch — British cryptographer Adam Back denies NYT report (April 8, 2026)"
@@ -40,6 +42,8 @@ secondarySources:
     url: "https://fortune.com/2026/04/08/who-is-the-real-inventor-of-bitcoin-satoshi-nakamoto/"
   - name: "Unchained — NYT Names Adam Back as Satoshi Nakamoto. He Denies It — and the Crypto Community Agrees with Him."
     url: "https://unchainedcrypto.com/nyt-names-adam-back-as-satoshi-nakamoto-he-denies-it-and-the-crypto-community-agrees-with-him-unchained/"
+  - name: "文春オンライン (Bunshun Online) — Japanese coverage of the investigation (July 2026)"
+    url: "https://bunshun.jp/articles/-/89580"
 relatedEntries:
   - aftermath/2008-08-20-adam-back-biography
   - aftermath/2008-08-20-satoshi-to-adam-back
@@ -59,7 +63,7 @@ relatedEntries:
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
 ---
 
-On April 8, 2026, John Carreyrou — the Pulitzer Prize–winning journalist who broke the Theranos story — published a roughly 10,000-word New York Times investigation identifying [Adam Back](/BitcoinArchive/participants/adam-back/), CEO of Blockstream and inventor of Hashcash, as the most likely person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym. Back denied the identification.
+On April 8, 2026, John Carreyrou — the Pulitzer Prize–winning journalist who broke the Theranos story — published a roughly 10,000-word New York Times investigation, "My Quest to Solve Bitcoin's Great Mystery," identifying [Adam Back](/BitcoinArchive/participants/adam-back/), CEO of Blockstream and inventor of Hashcash, as the most likely person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym. Back denied the identification.
 
 ## The investigation
 
@@ -70,14 +74,42 @@ Carreyrou spent 18 months on the investigation, working with NYT AI expert Dylan
 - Ran per-writer stylistic-fingerprint comparisons against Satoshi's known writing.
 - Identified three markers where Back's writing matched Satoshi's distinctively: double-spacing after periods, British spellings (with Satoshi's same mixed British/American pattern), and a specific class of hyphenation misuse.
 - Catalogued 325 instances of nonstandard hyphenation in Satoshi's writing; Back's writing matched 67 of those exact errors — far above the next-closest match.
+- Published a wider inventory of shared habits: both wrote "backup" and "bugfix" as one word and "half way" and "down side" as two, both alternated between "cheque" and "check" and between "e-mail" and "email," and both used the same distinctive phrases — "partial pre-image," "burning the money," and "proof-of-work" with the hyphen. Back, the article adds, often confused "it's" and "its" and had a habit of ending sentences with "also."
 
 Independent stylometric analysis by linguist Florian Cafiero, commissioned for the investigation, ranked Back highest among 12 candidates but Cafiero himself described the result as inconclusive. [Hal Finney](/BitcoinArchive/participants/hal-finney/) nearly tied with Back for the top spot in Cafiero's ranking.
 
-Carreyrou also identified what the investigation calls a "conspicuous gap" in Back's online activity: although Back had been engaged in cypherpunk discussions about electronic cash for years, his online posting went quiet in the period around Bitcoin's late-2008 announcement.
+Beyond the stylometry, the investigation assembled a set of circumstantial timeline claims:
+
+- **A 1997 electronic-cash blueprint.** On April 30, 1997, Back proposed on the cypherpunks list an electronic cash system "entirely disconnected" from the banking system, with four attributes — privacy for payer and recipient, distribution across networked computers, built-in scarcity, and no trusted individuals or banks — plus a fifth added two days later, a publicly verifiable protocol. The article maps all five onto Bitcoin's eventual design.
+- **A "conspicuous gap."** Although Back had been engaged in cypherpunk discussions about electronic cash for years, his online posting went quiet in the period around Bitcoin's late-2008 announcement and stayed quiet for the roughly two and a half years Satoshi remained active. Summarizing the pattern on NPR, Carreyrou reached for a comic-book image: "It's like Bruce Wayne and Batman. When Batman comes out, Bruce Wayne is nowhere to be seen."
+- **A mirrored return.** [Satoshi's last known email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/) is dated April 26, 2011; six weeks later, in June 2011, Back made his first public comment about Bitcoin, on the same cryptography mailing list. He joined BitcoinTalk on April 17, 2013 — in the immediate wake of [Sergio Lerner's Patoshi analysis](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/), which had just put a public figure on the fortune attributable to Satoshi's early mining — and within two weeks was demanding that Wikipedia restore its stand-alone Satoshi Nakamoto page.
+- **The HBO scene.** Carreyrou's account traces part of his initial focus on Back to a scene in the [2024 HBO documentary "Money Electric"](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/): at the mention of his own name, Back tensed up, strenuously denied being Satoshi, and asked that the conversation be kept off the record.
 
 ## The El Salvador interview
 
-Carreyrou met Back in person in El Salvador (where Back currently lives) for a two-hour interview, during which Back declined the identification more than six times.
+Carreyrou put the evidence to Back in person in late January 2026, in a two-hour hotel-room interview on the sidelines of a Bitcoin conference in San Salvador (Back lives in El Salvador). Back declined the identification more than six times, attributing the accumulated matches to coincidence:
+
+<!-- audit:quote-skip -->
+> "Ultimately, it doesn't prove anything. And I will reassure you, it's really not me."
+
+The published account pairs those denials with Carreyrou's first-person reading of Back's demeanor:
+
+<!-- audit:quote-skip -->
+> "But at times, his body language told a different story. His face reddened and he shifted uncomfortably in his seat when confronted with things that were harder to explain away."
+
+### The recorded remark Carreyrou heard as a slip
+
+Listening back to his interview recording afterward, Carreyrou fixed on one moment. He had brought up [Satoshi's November 2008 line](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-14-sni12-bitcoin-p2p-e-cash-paper/) "I'm better with code than with words"; Back had answered:
+
+<!-- audit:quote-skip -->
+> "I did a lot of talking though for somebody, I mean … I mean, I'm not saying I'm good with words but I sure did a lot of yakking on these lists actually."
+
+Carreyrou heard the reply as Back speaking of Satoshi's mailing-list writing as his own — in the article's words, a few seconds in which Back "had let the mask fall and turned into Satoshi." Confronted by email a few days later, Back denied any slip:
+
+<!-- audit:quote-skip -->
+> "I was just responding conversationally to a general observation about technical people often feeling more comfortable expressing ideas in code than in prose."
+
+The article closes on this exchange — Carreyrou writes that it removed "any lingering doubt" in his mind that he had the right man, and in the NPR interview five days after publication he described himself as "somewhere between 99 and 100% certain." Both the demeanor reading and the slip reading are the reporter's interpretation of a remark whose meaning Back disputes.
 
 ## Back's responses
 
