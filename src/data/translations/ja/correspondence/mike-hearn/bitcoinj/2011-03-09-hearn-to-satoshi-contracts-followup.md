@@ -29,16 +29,6 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2011-03-09T17:15:00Z"
     sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts"
-  - id: "q2"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2011-03-09T17:15:00Z"
-    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts"
-  - id: "q3"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2011-03-09T17:15:00Z"
-    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-satoshi-to-hearn-contracts"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -51,7 +41,6 @@ quotes:
 おっしゃる通りだ。入力の検証について話していたのだが、すべてのオープントランザクションを把握しなければ確かに意味がない。したがって、CMerkleTx を取得できることは重要ではない。
 
 <!-- speaker: Satoshi Nakamoto -->
-<!-- quote: q2 -->
 <!-- tone-skip -->
 > 攻撃対象領域を減らすためだけだ。トランザクション手数料の引き上げには役立たない。トランザクションはnLockTimeから有効になる。ある時点で有効でなくなるトランザクションは機能しない。一度有効になったトランザクションは、永久に有効でなければならない。
 >
@@ -64,7 +53,6 @@ quotes:
 なるほど。つまり現在、手数料は事前に決めなければならないため厄介で、低すぎた場合にトランザクションを修正する方法がなく、ネットワークはいずれ忘れるものの、ウォレットにはコインを使ったと記録されたままになる。これはすでに起こり始めている。
 
 <!-- speaker: Satoshi Nakamoto -->
-<!-- quote: q3 -->
 <!-- tone-skip -->
 > コントラクトのためだ。
 <!-- /tone-skip -->

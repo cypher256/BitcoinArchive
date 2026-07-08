@@ -27,16 +27,6 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2010-12-29T22:42:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
-  - id: "q2"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2010-12-29T22:42:00Z"
-    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
-  - id: "q3"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2010-12-29T22:42:00Z"
-    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
 relatedEntries:
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
 ---
@@ -58,12 +48,12 @@ So as long as the relay nodes are unhacked, this system should give enough trust
 
 Indeed, there's no point in client-only implementations implementing EvalScript because they can't verify transactions aren't being double spent without storing and indexing the entire block chain. My code parses the scripts and then relies on them having a standard structure, but doesn't actually run them.
 
-<!-- quote: q2 -->
+<!-- speaker: Satoshi Nakamoto -->
 > Educated guess, and the maths work out to round numbers. I wanted something that would be not too low if it was very popular and not too high if it wasn't.
 
 It'd be interesting to see the working for this. In some sense the number of coins is arbitrary as the nanocoin representation means the issuance is so huge it's practically infinite.
 
-<!-- quote: q3 -->
+<!-- speaker: Satoshi Nakamoto -->
 > A higher limit can be phased in once we have actual use closer to the limit and make sure it's working OK.
 
 It'd be worth implementing some kind of more robust auto update mechanism, or a schedule for the phase in of this, if only because when people evaluate "is BitCoin worth my time and effort" a solid plan for scaling up is good to have written down.

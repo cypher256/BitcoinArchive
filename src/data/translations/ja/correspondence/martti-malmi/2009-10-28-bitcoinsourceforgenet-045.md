@@ -26,16 +26,6 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2009-10-27T04:45:47Z"
     sourceEntryId: "correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044"
-  - id: "q2"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2009-10-27T04:45:47Z"
-    sourceEntryId: "correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044"
-  - id: "q3"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2009-10-27T04:45:47Z"
-    sourceEntryId: "correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -50,7 +40,6 @@ quotes:
 現在のバージョンの Bitweaver では不可能です。Bitweaver の wiki とフォーラムパッケージはそれほど高度ではありません。SF ホスティングにも、時々遅くなることやメーラーやユーザー IP 取得ができないなどの欠点があります。後で取引所サービスに使うために、prq.se（Wikileaks や Pirate Bay などをホストしている）からウェブホスティングを購入することを検討しています。セキュリティを高めるために別のユーザーアカウントで、プロジェクトサイトもそこにホストできるかもしれません。そこでは Drupal や TikiWiki をセットアップできます。これらはより高度で、Bitweaver よりもずっと大きく活発な開発者/ユーザーコミュニティがあります。
 
 <!-- speaker: Satoshi Nakamoto -->
-<!-- quote: q2 -->
 <!-- tone-skip -->
 > Linux への移植がしたくてうずうずしている？一度やってしまうと、テストとビルドの作業量が倍になるから、軽々しく決められることではない。ただ、Liberty の Wine クラッシュは心配だ。
 >
@@ -68,7 +57,6 @@ quotes:
 はい。Windows のスレッドとソケットライブラリのインクルードをそれらの POSIX 版に置き換えたところ、エラーが少しだけ出るようになりました。主に svn/branches に入れましたが、公式リリースである必要はまだありません。
 
 <!-- speaker: Satoshi Nakamoto -->
-<!-- quote: q3 -->
 <!-- tone-skip -->
 > セットアップでスタートアップフォルダーのアイコンをアンインストールするようにできる？通常のプログラムグループにアイコンをインストール・アンインストールして、スタートアップフォルダーのものはアンインストールだけすればいいと思う。スタートアップフォルダーのアイコンをインストール・アンインストール両方するか、アンインストールだけするかは、そこまで大きな問題ではないけど。
 <!-- /tone-skip -->

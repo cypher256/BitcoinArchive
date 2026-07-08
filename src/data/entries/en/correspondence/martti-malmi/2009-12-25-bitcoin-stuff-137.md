@@ -25,11 +25,6 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2009-12-23T17:53:18Z"
     sourceEntryId: "correspondence/martti-malmi/2009-12-23-bitcoin-stuff-136"
-  - id: "q2"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2009-12-23T17:53:18Z"
-    sourceEntryId: "correspondence/martti-malmi/2009-12-23-bitcoin-stuff-136"
 ---
 
 <!-- quote: q1 -->
@@ -38,7 +33,7 @@ quotes:
 The VPS has 320MB RAM, 50MB of which is currently free. There's also  
 500MB swap space.
 
-<!-- quote: q2 -->
+<!-- speaker: Satoshi Nakamoto -->
 > Bitcoin necessarily takes a
 > fair bit of memory; about 75MB on Windows.  Is that a problem?
 

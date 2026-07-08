@@ -27,11 +27,6 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2010-12-02T22:00:56Z"
     sourceEntryId: "correspondence/martti-malmi/2010-12-02-what-was-the-bitcoinorg-outage-239"
-  - id: "q2"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2010-12-02T22:00:56Z"
-    sourceEntryId: "correspondence/martti-malmi/2010-12-02-what-was-the-bitcoinorg-outage-239"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -44,7 +39,6 @@ quotes:
 原因は分かりません。再起動したら復旧しました。Bitcoin に関する Reddit の投稿による高負荷が原因だったのではないかという意見がありました。ログを調べれば有益でしょうが、今はあまり時間がありません。
 
 <!-- speaker: Satoshi Nakamoto -->
-<!-- quote: q2 -->
 <!-- tone-skip -->
 > davidonpda にミラーバックアップの件で返事はしたか？とても良いアイデアだと思う。バックアップは取っているか、それとも VPS が自動的にバックアップしてくれるか？
 <!-- /tone-skip -->

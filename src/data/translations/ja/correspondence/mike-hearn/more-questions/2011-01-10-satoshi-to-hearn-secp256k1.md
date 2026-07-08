@@ -29,11 +29,6 @@ quotes:
     personSlug: "mike-hearn"
     date: "2011-01-10T16:48:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-10-hearn-to-satoshi-secp256k1"
-  - id: "q2"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2011-01-10T16:48:00Z"
-    sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-10-hearn-to-satoshi-secp256k1"
 ---
 
 <!-- speaker: Mike Hearn -->
@@ -50,7 +45,6 @@ quotes:
 はい、彼だ。Cryptography メーリングリストで支持的で、最初のノードの一つを運用していた。
 
 <!-- speaker: Mike Hearn -->
-<!-- quote: q2 -->
 <!-- tone-skip -->
 > この曲線はランダムな曲線よりも攻撃のリスクが高いと考えているようだ。パフォーマンスの改善のためにsecp256k1を選んだのか？
 <!-- /tone-skip -->

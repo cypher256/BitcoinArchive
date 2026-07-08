@@ -26,11 +26,6 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2010-06-22T17:36:22Z"
     sourceEntryId: "correspondence/martti-malmi/2010-06-22-030-rc1-quickie-download-link-193"
-  - id: "q2"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2010-06-22T17:36:22Z"
-    sourceEntryId: "correspondence/martti-malmi/2010-06-22-030-rc1-quickie-download-link-193"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -43,7 +38,6 @@ quotes:
 了解です、監視しておきます。帯域幅は今のところ問題になっていません ― 月に最大 2 GB（0.5 ドル）程度です。その他のコストは月約 15 ドルです。
 
 <!-- speaker: Satoshi Nakamoto -->
-<!-- quote: q2 -->
 <!-- tone-skip -->
 > ところで、近いうちにウェブホストの費用やあなたの取引所サービスの支援などのための資金を、郵送の現金という形で確保できそうだ。受け取って、プロジェクトの会計係を務めてもらえるか？
 <!-- /tone-skip -->

@@ -30,16 +30,6 @@ quotes:
     personSlug: "mike-hearn"
     date: "2011-03-09T17:39:00Z"
     sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-hearn-to-satoshi-contracts-followup"
-  - id: "q2"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2011-03-09T17:39:00Z"
-    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-hearn-to-satoshi-contracts-followup"
-  - id: "q3"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2011-03-09T17:39:00Z"
-    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-09-hearn-to-satoshi-contracts-followup"
 ---
 
 <!-- speaker: Mike Hearn -->
@@ -64,7 +54,6 @@ quotes:
 処理速度の不確実性を心配するユーザーは、手数料を含めることへの動機付けと考えるべきだ。
 
 <!-- speaker: Mike Hearn -->
-<!-- quote: q2 -->
 <!-- tone-skip -->
 > プロトコルには publisher/subscriber チャネルを設定するための未完成の部分があり、ネットワークを介した分散ルーティングを扱っている。これの目的は何だったのか？P2P マーケットのアイデアだったのか、それとも予想されるトランザクション手数料のブロードキャストなど、何かもっと低レベルの機能だったのか？
 <!-- /tone-skip -->
@@ -75,7 +64,6 @@ quotes:
 これは最も技術的に要求の厳しいユースケースを探索し、ブロックチェーンが開始された後のルールのロックイン性を考慮して、将来必要になる可能性のあるすべてをビットコインがサポートできることを確認するためのコード作成の一部だった。
 
 <!-- speaker: Mike Hearn -->
-<!-- quote: q3 -->
 <!-- tone-skip -->
 > 数ヶ月前にBitCoinを一般化することについて興味深い議論があったが、あなたがそれをどのように達成しようとしていたかを完全に理解するのは難しかった。複数の独立したチェーンの上に別のマークルツリーを配置するという概念は理解できたと思う：
 >

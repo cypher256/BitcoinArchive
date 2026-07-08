@@ -26,11 +26,6 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2009-12-23T17:53:18Z"
     sourceEntryId: "correspondence/martti-malmi/2009-12-23-bitcoin-stuff-136"
-  - id: "q2"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2009-12-23T17:53:18Z"
-    sourceEntryId: "correspondence/martti-malmi/2009-12-23-bitcoin-stuff-136"
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -42,7 +37,6 @@ quotes:
 VPS には 320MB の RAM があり、そのうち 50MB が現在空いています。500MB のスワップ領域もありますよ。
 
 <!-- speaker: Satoshi Nakamoto -->
-<!-- quote: q2 -->
 <!-- tone-skip -->
 > Bitcoinはそれなりにメモリーを必要とする。
 > Windowsでは約75MBだ。問題になるか？

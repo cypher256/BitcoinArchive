@@ -29,21 +29,6 @@ quotes:
     personSlug: "mike-hearn"
     date: "2010-12-27T20:21:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
-  - id: "q2"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2010-12-27T20:21:00Z"
-    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
-  - id: "q3"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2010-12-27T20:21:00Z"
-    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
-  - id: "q4"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2010-12-27T20:21:00Z"
-    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
 relatedEntries:
   - analysis/2010-12-27-satoshi-non-technical-silence
 ---
@@ -71,17 +56,17 @@ If the initial block download becomes too long, we'll want client mode as an opt
 
 Client-only re-implementations would not need to implement EvalScript at all, or at most just implement the five ops used by the standard transaction templates."
 
-<!-- quote: q2 -->
+<!-- speaker: Mike Hearn -->
 > Specifically, BitCoin has a variety of magic numbers and neither the code nor the paper explain where they came from. For example, the fact that inflation ceases when 21 million coins have been issued. This number must have been arrived at somehow, but I can't see how.
 
 Educated guess, and the maths work out to round numbers. I wanted something that would be not too low if it was very popular and not too high if it wasn't.
 
-<!-- quote: q3 -->
+<!-- speaker: Mike Hearn -->
 > Another is the 10 minute block target. I understand this was chosen to allow transactions to propagate through the network. However existing large P2P networks like BGP can propagate new data worldwide in <1 minute.
 
 If propagation is 1 minute, then 10 minutes was a good guess. Then nodes are only losing 10% of their work (1 minute/10 minutes). If the CPU time wasted by latency was a more significant share, there may be weaknesses I haven't thought of. An attacker would not be affected by latency, since he's chaining his own blocks, so he would have an advantage. The chain would temporarily fork more often due to latency.
 
-<!-- quote: q4 -->
+<!-- speaker: Mike Hearn -->
 > The final number I'm interested in is the 500kb limit on block sizes. According to Wikipedia, Visa alone processed 62 billion transactions in 2009. Dividing through we get an average of 2000 transactions per second, so peak rate is probably around double that at 4000 transactions/sec. With a ten minute block target, at peak a block might need to contain 2.4 million transactions, which just won't fit into 500kb. Is this 500kb a temporary limitation that will be slowly removed over time from the official client or something more fundamental?
 
 A higher limit can be phased in once we have actual use closer to the limit and make sure it's working OK.

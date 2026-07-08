@@ -846,6 +846,37 @@ function checkFile(filePath, locale) {
     }
   }
 
+  // 4c. Flat duplicate sources: several PARENT-LESS qN entries pointing at
+  // the same (canonical person, sourceEntryId) are one source message
+  // minted as many ids (0522-migration leftovers). Canonical form is ONE
+  // qN + <!-- speaker --> continuations; the renderer already collapses
+  // the duplicates' display (repeat chips demote to speaker tags), so
+  // merging them is a pure data cleanup with identical rendered output.
+  // Parent-LINKED entries sharing a source are EXEMPT by design: an
+  // interleaved reply chain nests the same message at several depths and
+  // needs one qN per level for the parent references (e.g. the
+  // alternating malmi/satoshi chains). Warn while the cleanup is in
+  // flight; promote to error once the corpus is clean.
+  {
+    const flatBySource = new Map();
+    for (const q of quotes) {
+      if (!q?.person || !q.sourceEntryId || q.parent) continue;
+      const key = `${canonicalizePersonName(q.person)}|${q.sourceEntryId}`;
+      const list = flatBySource.get(key) || [];
+      list.push(q.id);
+      flatBySource.set(key, list);
+    }
+    for (const [key, ids] of flatBySource) {
+      if (ids.length < 2) continue;
+      violations.push({
+        file: rel,
+        check: 'quote-duplicate-source',
+        level: 'warn',
+        msg: `quotes[] defines ${ids.length} parent-less entries (${ids.join(', ')}) for the same source (${key.split('|')[1]}). Keep the first, drop the rest, and continue with <!-- speaker --> markers.`,
+      });
+    }
+  }
+
   // 5. Blockquote reachability (check that markers have an associated blockquote)
   //
   // A `<!-- quote: qN -->` marker is "reachable" if a blockquote follows it,

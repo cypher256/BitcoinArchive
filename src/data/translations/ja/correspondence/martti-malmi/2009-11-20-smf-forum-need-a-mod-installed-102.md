@@ -27,16 +27,6 @@ quotes:
     personSlug: "martti-malmi"
     date: "2009-11-20T07:05:34Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-100"
-  - id: "q2"
-    person: "Martti Malmi"
-    personSlug: "martti-malmi"
-    date: "2009-11-20T07:05:34Z"
-    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-100"
-  - id: "q3"
-    person: "Martti Malmi"
-    personSlug: "martti-malmi"
-    date: "2009-11-20T07:05:34Z"
-    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-100"
 ---
 
 <!-- speaker: Martti Malmi -->
@@ -58,7 +48,6 @@ bitcoin.org の情報をあなたのサイトのコンテンツと統合して�
 
 <!-- speaker: Martti Malmi -->
 
-<!-- quote: q2 -->
 <!-- tone-skip -->
 > Linux ビルドが動くようになって良かったです。新しいリリースとフォーラムで物事が動き出すのを見るのは楽しみです。自分の取引所を立ち上げて、（ウェブ）ビジネス関係者に通貨を宣伝し始めるのもそう遠くないでしょう。
 <!-- /tone-skip -->
@@ -69,7 +58,6 @@ Linux 版、セットアップ exe、Tor オプション、改善されたウェ
 
 <!-- speaker: Martti Malmi -->
 
-<!-- quote: q3 -->
 <!-- tone-skip -->
 > NewLibertyStandard はコインが枯渇しないように、価格を市場価格（つまり、人々が買いたい・売りたいと思う価格）に変更すべきかもしれません。
 <!-- /tone-skip -->

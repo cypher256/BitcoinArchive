@@ -26,16 +26,6 @@ quotes:
     personSlug: "martti-malmi"
     date: "2009-11-20T07:05:34Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-100"
-  - id: "q2"
-    person: "Martti Malmi"
-    personSlug: "martti-malmi"
-    date: "2009-11-20T07:05:34Z"
-    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-100"
-  - id: "q3"
-    person: "Martti Malmi"
-    personSlug: "martti-malmi"
-    date: "2009-11-20T07:05:34Z"
-    sourceEntryId: "correspondence/martti-malmi/2009-11-20-smf-forum-need-a-mod-installed-100"
 ---
 
 <!-- quote: q1 -->
@@ -56,7 +46,7 @@ isn't necessary unless we want it that way for looks.
 Have you decided on the CMS to use?  I should research Drupal and other 
 CMSes and see what's the most popular.
 
-<!-- quote: q2 -->
+<!-- speaker: Martti Malmi -->
 > Great that the Linux build works now. It's exciting to see how things 
 > will start rolling with the new release and the forum. Not too long 
 > until I can set up my own exchange and start promoting the currency to 
@@ -67,7 +57,7 @@ all increase the percentage of visitors who can use it, and the
 autostart and minimize to tray will increase how many keep running it. 
 All those factors multiply together.
 
-<!-- quote: q3 -->
+<!-- speaker: Martti Malmi -->
 > NewLibertyStandard should perhaps change his pricing to the market price 
 > (i.e. what people are willing to buy and sell for) so that he doesn't 
 > run out of coins.

@@ -27,11 +27,6 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2009-01-08T19:27:40Z"
     sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released"
-  - id: "q2"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2009-01-08T19:27:40Z"
-    sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released"
 relatedEntries:
   - analysis/2010-12-27-satoshi-non-technical-silence
 ---
@@ -49,7 +44,7 @@ relatedEntries:
 Congratulations to Satoshi on this first alpha release. I am looking
 forward to trying it out.
 
-<!-- quote: q2 -->
+<!-- speaker: Satoshi Nakamoto -->
 > Total circulation will be 21,000,000 coins.  It'll be distributed
 > to network nodes when they make blocks, with the amount cut in half
 > every 4 years.

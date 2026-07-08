@@ -27,11 +27,6 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2009-01-08T19:27:40Z"
     sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released"
-  - id: "q2"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2009-01-08T19:27:40Z"
-    sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released"
 translationStatus: complete
 relatedEntries:
   - analysis/2010-12-27-satoshi-non-technical-silence
@@ -51,7 +46,6 @@ relatedEntries:
 <!-- speaker: Hal Finney -->
 最初のアルファ版リリースおめでとう、サトシ。試してみるのが楽しみなんだ。
 
-<!-- quote: q2 -->
 <!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
 > 総発行量は 2100 万枚。ブロックを生成したノードに配布され、4年ごとに半減する。

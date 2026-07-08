@@ -25,11 +25,6 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2010-06-22T17:36:22Z"
     sourceEntryId: "correspondence/martti-malmi/2010-06-22-030-rc1-quickie-download-link-193"
-  - id: "q2"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2010-06-22T17:36:22Z"
-    sourceEntryId: "correspondence/martti-malmi/2010-06-22-030-rc1-quickie-download-link-193"
 ---
 
 <!-- quote: q1 -->
@@ -44,7 +39,7 @@ Ok, I'll monitor it. Bandwidth hasn't been a problem so far - it's
 been about 2 GB (0.5 dollars) per month at most. Other costs are about  
 15$ a month.
 
-<!-- quote: q2 -->
+<!-- speaker: Satoshi Nakamoto -->
 > BTW, it's looking like I may be able to get us some money soon to cover
 > web host costs, back your exchange service, etc, in the form of cash in
 > the mail.  Can you receive it and act as the project's treasurer?

@@ -26,11 +26,6 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2010-12-02T22:00:56Z"
     sourceEntryId: "correspondence/martti-malmi/2010-12-02-what-was-the-bitcoinorg-outage-239"
-  - id: "q2"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2010-12-02T22:00:56Z"
-    sourceEntryId: "correspondence/martti-malmi/2010-12-02-what-was-the-bitcoinorg-outage-239"
 ---
 
 <!-- quote: q1 -->
@@ -42,7 +37,7 @@ Someone suggested it might have been the heavy load from a Reddit post
 about Bitcoin. Inspecting the logs would be useful, but I don't have  
 much time now.
 
-<!-- quote: q2 -->
+<!-- speaker: Satoshi Nakamoto -->
 > Did you get back to davidonpda about his doing a mirror backup?  I
 > think that's a really good idea.  Do you do any backups, or the VPS do
 > any for you automatically?

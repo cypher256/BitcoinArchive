@@ -30,21 +30,6 @@ quotes:
     personSlug: "mike-hearn"
     date: "2010-12-27T20:21:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
-  - id: "q2"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2010-12-27T20:21:00Z"
-    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
-  - id: "q3"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2010-12-27T20:21:00Z"
-    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
-  - id: "q4"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2010-12-27T20:21:00Z"
-    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
 relatedEntries:
   - analysis/2010-12-27-satoshi-non-technical-silence
 ---
@@ -77,7 +62,6 @@ fClient=true では、ヘッダーのみの初期ダウンロードのみテス�
 クライアント専用の再実装は EvalScript を全く実装する必要がないか、せいぜい標準トランザクションテンプレートで使用される 5 つのオペコードだけを実装すれば十分だ。」
 
 <!-- speaker: Mike Hearn -->
-<!-- quote: q2 -->
 <!-- tone-skip -->
 > 具体的には、BitCoin にはさまざまなマジックナンバーがあり、コードにも論文にもその由来が説明されていない。例えば、2100 万枚のコインが発行されるとインフレーションが停止するという事実。この数字は何らかの方法で導き出されたはずだが、どのようにして決められたのか分からない。
 <!-- /tone-skip -->
@@ -86,7 +70,6 @@ fClient=true では、ヘッダーのみの初期ダウンロードのみテス�
 経験に基づく推測で、計算するときりのいい数字になる。非常に普及した場合に低すぎず、そうでない場合に高すぎないものが欲しかったのだ。
 
 <!-- speaker: Mike Hearn -->
-<!-- quote: q3 -->
 <!-- tone-skip -->
 > もう一つは 10分間のブロック目標だ。これはトランザクションがネットワーク全体に伝播できるように選ばれたと理解している。しかし、BGP のような既存の大規模 P2P ネットワークは、新しいデータを 1分未満で世界中に伝播できる。
 <!-- /tone-skip -->
@@ -95,7 +78,6 @@ fClient=true では、ヘッダーのみの初期ダウンロードのみテス�
 伝播に 1分かかるなら、10分は良い推測だった。ノードは作業の 10%しか失わない（1分/10分）。レイテンシによって無駄になる CPU 時間の割合がもっと大きければ、私が考えていない弱点があるかもしれない。攻撃者は自分のブロックを連鎖させているためレイテンシの影響を受けず、有利になる。レイテンシにより、チェーンは一時的により頻繁にフォークするだろう。
 
 <!-- speaker: Mike Hearn -->
-<!-- quote: q4 -->
 <!-- tone-skip -->
 > 最後に気になる数字は、ブロックサイズの 500kb 制限だ。Wikipedia によると、Visa だけで 2009年に 620 億件の取引を処理した。割り算すると平均で毎秒2000 トランザクション、ピーク時はおそらくその倍の毎秒4000 トランザクションになる。10分間のブロック目標では、ピーク時にブロックは 240 万トランザクションを含む必要があるが、これは 500kb には収まらない。この 500kb は公式クライアントから徐々に撤廃される一時的な制限なのか、それともより根本的なものなのか？
 <!-- /tone-skip -->

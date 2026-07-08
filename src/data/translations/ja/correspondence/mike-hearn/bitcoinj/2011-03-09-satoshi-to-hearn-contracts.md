@@ -32,36 +32,6 @@ quotes:
     personSlug: "mike-hearn"
     date: "2011-03-07T14:13:00Z"
     sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
-  - id: "q2"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2011-03-07T14:13:00Z"
-    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
-  - id: "q3"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2011-03-07T14:13:00Z"
-    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
-  - id: "q4"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2011-03-07T14:13:00Z"
-    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
-  - id: "q5"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2011-03-07T14:13:00Z"
-    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
-  - id: "q6"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2011-03-07T14:13:00Z"
-    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
-  - id: "q7"
-    person: "Mike Hearn"
-    personSlug: "mike-hearn"
-    date: "2011-03-07T14:13:00Z"
-    sourceEntryId: "correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release"
 relatedEntries:
   - analysis/2010-12-27-satoshi-non-technical-silence
 ---
@@ -78,7 +48,6 @@ relatedEntries:
 素晴らしいニュースだ。クライアント要件のみのクリーンな書き直しでは多くの複雑さを省くことができるし、Java の開発者にも門戸を開くことになる。
 
 <!-- speaker: Mike Hearn -->
-<!-- quote: q2 -->
 <!-- tone-skip -->
 > 忙しいところ申し訳ないが、いくつか質問に答えてもらえないだろうか。
 <!-- /tone-skip -->
@@ -87,7 +56,6 @@ relatedEntries:
 喜んで質問に答える。
 
 <!-- speaker: Mike Hearn -->
-<!-- quote: q3 -->
 <!-- tone-skip -->
 > 完全なSPVの実装の一環として、プロトコルにgetmerklebranchメッセージを追加することを考えている。これはトランザクションハッシュを指定すると{blockhash, branch}のペアのセットを返すもので、
 <!-- /tone-skip -->
@@ -96,7 +64,6 @@ relatedEntries:
 それは CMerkleTx だ。
 
 <!-- speaker: Mike Hearn -->
-<!-- quote: q4 -->
 <!-- tone-skip -->
 > フルチェーンを保存せずにブロードキャストされたトランザクションをブロックに組み込まれる前に検証できるようにするものだ。このアプローチについてどう思うか？
 <!-- /tone-skip -->
@@ -113,7 +80,6 @@ relatedEntries:
 存在するすべてのトランザクションを知らない場合、2)をどうやって実現するか分からない。他のノードを信頼するしかないだろう。その信頼は複数のノードに分散させることができる。ノードは有効と認めるトランザクションのみをリレーする。接続しているすべてのノードからトランザクションの inv メッセージを受信した場合、それらのノードはそのトランザクションが有効であり、最初に見た支出であることを証明している。
 
 <!-- speaker: Mike Hearn -->
-<!-- quote: q5 -->
 <!-- tone-skip -->
 > また、最近さまざまなトランザクションタイプの探求を考えている。例えばtestnetでIsStandard()チェックを削除するなどだ。
 <!-- /tone-skip -->
@@ -122,7 +88,6 @@ relatedEntries:
 非常に良いアイデアだ。-testnet では間違いなく許可すべきだ。
 
 <!-- speaker: Mike Hearn -->
-<!-- quote: q6 -->
 <!-- tone-skip -->
 > 単純なコインの移動以外のトランザクションについて、あなたが事前に多くの思考を費やしたことは明らかだが、残念ながらそのいずれも論文やコード内に文書化されていない。エスクロー、マルチペイなどはいずれも興味深いが、スクリプト言語で何ができるかのアイデアリストをまとめてもらえないだろうか。
 >
@@ -137,7 +102,6 @@ http://www.bitcoin.org/smf/index.php?topic=1786.msg22119#msg22119<br>
 http://www.bitcoin.org/smf/index.php?topic=2181.msg28729#msg28729
 
 <!-- speaker: Mike Hearn -->
-<!-- quote: q7 -->
 <!-- tone-skip -->
 > シーケンス番号がトランザクション自体ではなくトランザクション入力のプロパティである理由も完全には理解できていない。
 <!-- /tone-skip -->

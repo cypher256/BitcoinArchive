@@ -28,16 +28,6 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2010-12-29T22:42:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
-  - id: "q2"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2010-12-29T22:42:00Z"
-    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
-  - id: "q3"
-    person: "Satoshi Nakamoto"
-    personSlug: "satoshi-nakamoto"
-    date: "2010-12-29T22:42:00Z"
-    sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode"
 relatedEntries:
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
 ---
@@ -65,7 +55,6 @@ v2 では、安全でロックダウンされたリレーノードを実行し�
 確かに、クライアント専用の実装が EvalScript を実装する意味はない。ブロックチェーン全体を保存しインデックス化しなければ、トランザクションが二重支払いされていないことを検証できないからだ。私のコードはスクリプトを解析し、標準的な構造であることに依存しているが、実際には実行しない。
 
 <!-- speaker: Satoshi Nakamoto -->
-<!-- quote: q2 -->
 <!-- tone-skip -->
 > 経験に基づく推測で、計算するときりのいい数字になる。非常に普及した場合に低すぎず、そうでない場合に高すぎないものが欲しかったのだ。
 <!-- /tone-skip -->
@@ -74,7 +63,6 @@ v2 では、安全でロックダウンされたリレーノードを実行し�
 この計算過程を見てみたいものだ。ある意味、コインの数は任意だ。nanocoin の表現により、発行量は事実上無限と言えるほど膨大だからだ。
 
 <!-- speaker: Satoshi Nakamoto -->
-<!-- quote: q3 -->
 <!-- tone-skip -->
 > 実際の使用量が制限に近づき、正常に動作していることを確認してから、より高い制限を段階的に導入できる。
 <!-- /tone-skip -->
