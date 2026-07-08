@@ -146,7 +146,7 @@ flowchart LR
 
 サトシの [2008 年 8 月 20 日のアダム・バック宛メール](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)は Hashcash の正しい引用形式を質問している。本文ではビットコインの仕組みを詳しく述べ、Hashcash を「コードで再利用している既存の基本要素」として参照している。これは Hashcash の使用が**開発中**であって**開発後**ではないことを位置づける。
 
-「Hashcash」の `cash` は計算コストとしての対価の比喩（バック 1997 年のスパム対策・サービス拒否対抗策）であって通貨ではない。Hashcash の中身はプルーフ・オブ・ワーク基本要素のみで、台帳・送金・合意形成・通貨供給はない。ビットコインは PoW のみを再利用し、それ以外を別途構築する。「Hashcash の作者＝ビットコインの作者」論点への含意については[アダム・バック仮説 § 2.2](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) を参照。
+「Hashcash」の `cash` は計算コストとしての対価の比喩（バック 1997 年のスパム対策・サービス拒否対抗策）であって通貨ではない。Hashcash の中身はプルーフ・オブ・ワーク基本要素のみで、台帳・送金・合意形成・通貨供給はない。ビットコインは PoW のみを再利用し、それ以外を別途構築する。「Hashcash の作者＝ビットコインの作者」論点への含意については[アダム・バック仮説 § 1.2](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) を参照。
 
 ### 3.2 b-money：設計後に引用追加
 

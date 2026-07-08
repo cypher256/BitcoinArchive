@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "The hypothesis that Nick Szabo (Bit Gold creator, \"smart contracts\" coiner) was Satoshi. Frame: Skye Grey 2013 stylometric article. Counter: Szabo's 2008 Bit Gold help request and self-denials."
+description: "He conceived Bit Gold, and three of the four most-cited stylometric studies place him first. The evidence for Nick Szabo as Satoshi, weighed."
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -72,21 +72,19 @@ inlineLinkKeywords:
   - "Szabo = Satoshi"
 ---
 
-On April 27, 2008, [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) [wrote on his blog](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/): "Bit gold would greatly benefit from a demo, an experimental market. Anybody want to help me code one up?" Four months later, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) sent his first known Bitcoin email to Adam Back. In May 2011 Szabo wrote that ["Nakamoto improved a significant security shortcoming that my design had"](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/). The Szabo-as-Satoshi hypothesis sits on those three points — the Bit Gold conceptual proximity (1998 conceived, 2005 published, 1994 "smart contracts" terminology), the April 2008 implementation request a few months before Satoshi's first known activity, and the prolific Unenumerated writing throughout the design window — reinforced by stylometric analyses since 2013. Szabo has consistently denied the identification ("I'm afraid you got it wrong").
+On April 27, 2008, [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) [wrote on his blog](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/): "Bit gold would greatly benefit from a demo, an experimental market. Anybody want to help me code one up?" Four months later, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) sent his first known Bitcoin email to Adam Back. In May 2011 Szabo wrote that ["Nakamoto improved a significant security shortcoming that my design had"](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/). The Szabo-as-Satoshi claim sits on those three points — the Bit Gold conceptual proximity (1998 conceived, 2005 published, 1994 "smart contracts" terminology), the April 2008 implementation request a few months before Satoshi's first known activity, and the prolific Unenumerated writing throughout the design window — reinforced by stylometric analyses since 2013.
 
-## 1. What the hypothesis claims
+## 1. The evidence
 
-The hypothesis is that Szabo is the person behind the Satoshi Nakamoto pseudonym, and that his continuously documented public-record interactions with Bitcoin — including the [April 2008 Unenumerated comment asking for help implementing Bit Gold](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) and the [May 2011 blog post acknowledging "Nakamoto improved a significant security shortcoming that my design had"](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) — were stagecraft to maintain the pseudonym. Under this reading, Szabo has been the person operating as Satoshi from the development phase (mid-2007 onward) through the 2011 withdrawal, while continuing his Unenumerated blog and public scholarship as a public-record decoy.
+Szabo is the person behind the Satoshi Nakamoto pseudonym. His continuously documented public-record interactions with Bitcoin — the [April 2008 Unenumerated comment asking for help implementing Bit Gold](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) and the [May 2011 blog post acknowledging "Nakamoto improved a significant security shortcoming that my design had"](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) alike — were stagecraft to maintain the pseudonym. He operated as Satoshi from the development phase (mid-2007 onward) through the 2011 withdrawal, while running his Unenumerated blog and public scholarship as a public-record decoy.
 
 The earliest prominent stylometric articulation is the [December 2013 LikeInAMirror.com article *"Satoshi Nakamoto is (probably) Nick Szabo"* by pseudonymous blogger Skye Grey, given mainstream coverage by TechCrunch on December 5, 2013](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/). It was reinforced by an [April 2014 forensic-linguistic study at Aston University](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/) reported by CoinDesk and ScienceDaily.
 
-## 2. The arguments the hypothesis rests on
-
-### 2.1 Bit Gold's conceptual proximity to Bitcoin
+### 1.1 Bit Gold's conceptual proximity to Bitcoin
 
 Bit Gold is the closest pre-Bitcoin design to Bitcoin's mechanism conceptually. Both reuse proof-of-work as the source of digital scarcity, both chain solved puzzles into a verifiable history, both attempt to substitute decentralized verification for a trusted issuer, and both situate the design within an explicit anti-trust monetary frame. Szabo published the Bit Gold concept on his Unenumerated blog on December 29, 2005, but reports that he conceived it in 1998 — the same year Wei Dai independently produced [b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/), via a private mailing list (libtech) that Szabo and Dai both participated in.
 
-The argument: among all pre-Bitcoin proposals, Bit Gold maps onto Bitcoin's design space most tightly. The forensic-fit reading is that the person who conceived Bit Gold is the natural candidate for the person who built Bitcoin.
+The evidence: among all pre-Bitcoin proposals, Bit Gold maps onto Bitcoin's design space most tightly. The forensic-fit reading is that the person who conceived Bit Gold is the natural candidate for the person who built Bitcoin.
 
 The objection: forensic fit on a single dimension does not select uniquely. The whitepaper cites Hashcash and b-money but does not cite Bit Gold — which is the awkward fact for the Szabo-as-Satoshi reading, since Szabo would not need to omit citing himself but would have an incentive to cite Bit Gold as a self-misdirection. The omission cuts either way and does not by itself decide.
 
@@ -113,9 +111,9 @@ The conceptual overlap (top section of the table) is what the forensic-fit argum
 
 A reception-side trace of that conceptual proximity survives in the whitepaper's first days on the cryptography mailing list, where the earliest responders reflexively reached for Bit Gold's name: James A. Donald wrote of "who owns what bitgold coins," and Hal Finney, who [proposed Bitcoin "could be an implementation"](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/) of Bit Gold, [mentioned "a sourceforge project set up for bitgold"](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney/). But the name they were merging labels a shared framing, not a Szabo-specific design, and the conflation came from third parties reacting to Satoshi's announcement, not from Szabo.
 
-Whether the conceptual overlap is decisive depends on whether the reader counts "Bit Gold conceived" as the same kind of capability as "Bitcoin shipped" — the §3.5 architectural-gap argument expands on this.
+Whether the conceptual overlap is decisive depends on whether the reader counts "Bit Gold conceived" as the same kind of capability as "Bitcoin shipped" — the §2.5 architectural-gap argument expands on this.
 
-### 2.2 Stylometric analyses and mainstream press coverage (Skye Grey 2013, Aston University 2014, NYT/Popper 2015)
+### 1.2 Stylometric analyses and mainstream press coverage (Skye Grey 2013, Aston University 2014, NYT/Popper 2015)
 
 Pseudonymous blogger **Skye Grey** published *"Satoshi Nakamoto is (probably) Nick Szabo"* on LikeInAMirror.com in December 2013. The methodology:
 
@@ -142,7 +140,7 @@ The objection: Skye Grey's analysis is a self-published blog post by a pseudonym
 
 Across the four investigations, Szabo is named top in three (Skye Grey, Aston, Bitcoin Institute reanalysis). The fourth (Cafiero / Carreyrou 2026) places Adam Back top — but Cafiero himself qualified the result as inconclusive, and the NYT investigation's candidate pool design was the methodological inverse of the broader-corpus reanalysis that places Szabo first.
 
-### 2.3 Polymath profile fit
+### 1.3 Polymath profile fit
 
 Bitcoin v0.1 required an unusual combination of skills: cryptographic protocol design, distributed-systems engineering, monetary-mechanism design, and a writing register that combines technical precision with anti-trust monetary framing. Szabo's documented record covers all of these:
 
@@ -151,19 +149,19 @@ Bitcoin v0.1 required an unusual combination of skills: cryptographic protocol d
 - Monetary economics and legal scholarship (extensive Unenumerated writing on the history and structure of money, the gold standard, central-banking critiques).
 - Anti-trust / institutional-distrust framing (the Unenumerated blog's explicit anti-central-banking posture).
 
-The argument: very few documented persons combine all of these, and Szabo is one of them. The match on the polymath dimension narrows the candidate set substantially.
+The evidence: very few documented persons combine all of these, and Szabo is one of them. The match on the polymath dimension narrows the candidate set substantially.
 
-The objection: profile-match selects a population, not an individual. The argument applies to several other documented polymath figures with overlapping skill profiles. The candidate set narrows but does not collapse to one person; profile-match is necessary but not sufficient (per the [hypotheses overview methodology](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)).
+The objection: profile-match selects a population, not an individual. This evidence applies to several other documented polymath figures with overlapping skill profiles. The candidate set narrows but does not collapse to one person; profile-match is necessary but not sufficient (per the [hypotheses overview methodology](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)).
 
-### 2.4 Cypherpunk credentials and intellectual lineage
+### 1.4 Cypherpunk credentials and intellectual lineage
 
 Szabo is a long-tenure cypherpunk: documented mailing-list presence in the 1990s — his [archived cypherpunks-list posts](https://mailing-list-archive.cryptoanarchy.wiki/authors/szabo_at_netcom_com_nick_szabo_/) run from 1993 to 1996 — presence on the libtech private list where Bit Gold was discussed alongside b-money, decades of public writing on the philosophical foundations of digital cash. The whitepaper's intellectual lineage (Hashcash, b-money, the chained-hash structure, anti-trust framing) overlaps closely with the topical space Szabo has documented his own thinking in.
 
-The objection: this argument applies broadly to several long-tenure cypherpunks (Adam Back, Wei Dai, Hal Finney, etc.). It narrows the candidate set substantially but does not select Szabo specifically. And as §2.1's table shows, the shared lineage primitives (proof-of-work, linked timestamping) are themselves common-ancestor inheritance (🔄 on both columns), not Szabo-originated. The register of that presence also matters: his archived posts cluster on digital-cash economics, micropayments, reputation and anonymity systems, and crypto policy — design and argument rather than source code or implementation — consistent with the engineering-output gap detailed in §3.5.
+The objection: this evidence applies broadly to several long-tenure cypherpunks (Adam Back, Wei Dai, Hal Finney, etc.). It narrows the candidate set substantially but does not select Szabo specifically. And as §1.1's table shows, the shared lineage primitives (proof-of-work, linked timestamping) are themselves common-ancestor inheritance (🔄 on both columns), not Szabo-originated. The register of that presence also matters: his archived posts cluster on digital-cash economics, micropayments, reputation and anonymity systems, and crypto policy — design and argument rather than source code or implementation — consistent with the engineering-output gap detailed in §2.5.
 
-### 2.5 Circumstantial pattern matches
+### 1.5 Circumstantial pattern matches
 
-Four often-cited circumstantial indicators are repeatedly raised by hypothesis advocates. None is decisive on its own; their cumulative weight depends on whether the reader treats coincidences as evidence or as coincidences.
+Four often-cited circumstantial indicators are repeatedly raised by advocates of the claim. None is decisive on its own; their cumulative weight depends on whether the reader treats coincidences as evidence or as coincidences.
 
 - **April 5 birthday coincidence.** Szabo was born on April 5, 1964. Satoshi's [P2P Foundation profile](/BitcoinArchive/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/) listed April 5, 1975 as Satoshi's birth date — same month and day, 11 years apart. The April 5 date carries additional symbolic load in monetary-policy history: April 5, 1933 was the date Franklin D. Roosevelt signed Executive Order 6102, making private gold ownership illegal in the United States. The anti-statist symbolism of the date aligns with Bitcoin's anti-trust framing. The objection: Satoshi's profile is widely read as designed to mislead (see [self-statements analysis](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/)); a deliberately-chosen symbolic date for the profile does not require Satoshi to actually share that date with one specific candidate. The argument-back: a deliberately-chosen symbolic date that *also* matches a real candidate's actual birthday is a coincidence with an additional dimension of fit.
 
@@ -173,9 +171,9 @@ Four often-cited circumstantial indicators are repeatedly raised by hypothesis a
 
 - **Bit Gold blog timestamp anomaly.** Some commentators have flagged that the original Bit Gold blog post's date metadata appears to have been modified — variously reported as either backdated (December 2005 → earlier) or forward-dated (some interpretations claim April 2008 → December 2008). The aftermath entry [Anybody want to help me code one up?](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) notes this anomaly: "Szabo's original bit gold blog post was dated December 2005, but the blog's timestamps were later found to have been modified, complicating the precise chronology." The hypothesis-advocate reading is that this is evidence of timeline manipulation. The skeptical reading: in August 2008 Szabo publicly announced he was running "reruns" of favorite Unenumerated entries, providing an innocent explanation for republished posts with shifted dates. The evidence is ambiguous and cuts both ways.
 
-## 3. The counter-evidence
+## 2. The counter-evidence
 
-### 3.1 The April 2008 "Anybody want to help me code one up?" comment
+### 2.1 The April 2008 "Anybody want to help me code one up?" comment
 
 The strongest archive-internal counter-evidence is Szabo's own [April 27, 2008 comment on his Unenumerated blog](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/), where he wrote:
 
@@ -186,11 +184,11 @@ Six months later, Satoshi Nakamoto published the [Bitcoin whitepaper](/BitcoinAr
 
 Read normally, the April 2008 comment says: in April 2008, Szabo could not himself implement Bit Gold and was publicly seeking volunteer help to do it. This is a direct capability signal. Szabo is the conceptual originator of Bit Gold; he had been thinking about the design for ten years (1998–2008) without producing an implementation; what he asks for, in plain English, is *"help me code one up."* Implementing Bit Gold is a strictly easier engineering task than implementing Bitcoin — Bit Gold has no longest-chain rule, no UTXO model, no difficulty adjustment, no integrated P2P network (per [Bitcoin design lineage](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/), all of these are Bitcoin's novel contributions, not inheritable from Bit Gold). The person who in April 2008 cannot implement the easier predecessor system is not, by ordinary reasoning, the person who in October 2008 publishes the whitepaper for the harder successor system and ships it as a 19,901-line C++ codebase by January 2009. This is the strongest single piece of counter-evidence in the entry: a direct capability admission six months before Bitcoin's public release.
 
-The hypothesis-side reading would have to recast the comment as stagecraft — Szabo asking for help in public while privately months into building Bitcoin under the Satoshi pseudonym. There are two problems with that reading. First, there is no audience for such stagecraft in April 2008: the Bit Gold blog was not a high-traffic venue, the comment received no public response at the time, and stagecraft only functions for an audience that interprets it as cover. Second, the stagecraft requires Szabo to have already developed the implementation skill that the comment publicly disclaims, which inverts the natural interpretation of the comment without any external evidence supporting the inversion. The simpler reading is that the comment is what it appears to be — Szabo, a thinker and writer rather than a shipping engineer, asking for help with an implementation he had not done in a decade and was unlikely to do himself.
+To save the claim, the comment has to be recast as stagecraft — Szabo asking for help in public while privately months into building Bitcoin under the Satoshi pseudonym. There are two problems with that reading. First, there is no audience for such stagecraft in April 2008: the Bit Gold blog was not a high-traffic venue, the comment received no public response at the time, and stagecraft only functions for an audience that interprets it as cover. Second, the stagecraft requires Szabo to have already developed the implementation skill that the comment publicly disclaims, which inverts the natural interpretation of the comment without any external evidence supporting the inversion. The simpler reading is that the comment is what it appears to be — Szabo, a thinker and writer rather than a shipping engineer, asking for help with an implementation he had not done in a decade and was unlikely to do himself.
 
 The contrast with Satoshi is sharpest here, and it is one of **capability and output**, not style. Satoshi shipped the harder system and worked code-first — *"I had to write all the code before I could convince myself that I could solve every problem, then I wrote the paper"* (to Hal Finney, [November 10, 2008](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/)) — unwilling to trust the design until it ran. Szabo, a decade after conceiving the simpler system and on record that it "would greatly benefit from a demo," had still built none of it and was asking others to code it. One could not finish the paper until the code already ran; the other never shipped the code at all.
 
-### 3.2 The May 2011 "Nakamoto improved my design" blog post
+### 2.2 The May 2011 "Nakamoto improved my design" blog post
 
 The second strongest archive-internal counter-evidence is Szabo's [May 28, 2011 Unenumerated post *"Bitcoin, what took ye so long?"*](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/). Szabo writes:
 
@@ -202,13 +200,13 @@ The second strongest archive-internal counter-evidence is Szabo's [May 28, 2011 
 
 Szabo distinguishes himself from Nakamoto, lists himself alongside Wei Dai and Hal Finney as "the only people I know of who liked the idea... until Nakamoto," and credits Nakamoto with a specific design improvement to Bit Gold. The post is parenthetically explicit about the identity hedge — *"assuming Nakamoto is not really Finney or Dai"* — but conspicuously does not include Szabo himself in that hedge. If Szabo were Satoshi, the post would constitute a sustained, public, voluntary self-deception covering both the credit ("Nakamoto improved my design") and the implicit denial (the hedge omits Szabo). The simpler reading: Szabo treats Nakamoto as a different person because Nakamoto is a different person.
 
-### 3.3 Continuous visible Unenumerated activity during 2007–2008
+### 2.3 Continuous visible Unenumerated activity during 2007–2008
 
 [Wei Dai's 2014 retrospective on the AALWA thread](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) argues that Satoshi was *not* "previously active" in the visible cypherpunk community during the development period — a framing that selects against any candidate visibly active in cypherpunk discussion during 2007–2008. Szabo's Unenumerated blog was actively posting throughout 2007 and 2008 with substantive long-form essays on monetary history, smart contracts, and digital-cash design. This continuous visibility counts against Szabo as a candidate, alongside Adam Back and other visibly-active cypherpunks of the period.
 
 The argument-against-the-objection: Unenumerated could itself have been an elaborate decoy, with Szabo writing publicly on the very topics Bitcoin would address in order to obscure his Bitcoin work. The objection-to-that-objection: this requires assuming Szabo maintained two separate productive output streams (public Unenumerated writing + secret Bitcoin development) on overlapping topics for 18 months without slipping. Possible but adds substantial assumed complexity to the hypothesis.
 
-### 3.4 Self-denial across multiple statements
+### 2.4 Self-denial across multiple statements
 
 Szabo has consistently denied being Satoshi Nakamoto. Documented denials:
 
@@ -222,15 +220,15 @@ Szabo has consistently denied being Satoshi Nakamoto. Documented denials:
 
 Self-denial is not by itself dispositive — Wright self-claimed and was demonstrably lying; Dorian Nakamoto self-denied and was demonstrably correct; the value of a denial depends on what surrounds it. Szabo's denials are surrounded by the May 2011 "Nakamoto improved my design" framing, the continued Unenumerated activity, the April 2008 implementation-request comment, and the absence of any contradictory action — all of which are internally consistent with Szabo not being Satoshi.
 
-### 3.5 The architectural gap between Bit Gold and Bitcoin v0.1, and the absence of a C++ shipping record
+### 2.5 The architectural gap between Bit Gold and Bitcoin v0.1, and the absence of a C++ shipping record
 
-Bit Gold remained a conceptual proposal. It lacks key Bitcoin v0.1 components: difficulty adjustment, the longest-chain consensus rule, the UTXO model, mining-reward block-subsidy issuance, the 21-million supply cap, and the operational P2P network. The [Bitcoin design lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) catalogs these as Bitcoin's novel contributions, not inheritable from Bit Gold. And as §2.1's table shows, even the components Bit Gold did contain are mostly common-ancestor primitives (🔄) rather than Szabo's own. Szabo's documented work pattern is conceptual writing, not codebase shipping — his April 2008 admission (§3.1) that he had not implemented Bit Gold in a decade is the diagnostic signature of that pattern.
+Bit Gold remained a conceptual proposal. It lacks key Bitcoin v0.1 components: difficulty adjustment, the longest-chain consensus rule, the UTXO model, mining-reward block-subsidy issuance, the 21-million supply cap, and the operational P2P network. The [Bitcoin design lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) catalogs these as Bitcoin's novel contributions, not inheritable from Bit Gold. And as §1.1's table shows, even the components Bit Gold did contain are mostly common-ancestor primitives (🔄) rather than Szabo's own. Szabo's documented work pattern is conceptual writing, not codebase shipping — his April 2008 admission (§2.1) that he had not implemented Bit Gold in a decade is the diagnostic signature of that pattern.
 
 The capability gap is structural, not just probabilistic. Szabo has **no documented record of shipping a multi-thousand-line C++ cryptographic codebase** under his own name. His public record is essays (Unenumerated blog), conceptual papers (smart contracts 1996, Bit Gold 2005), and legal scholarship — not engineering output at the scale of Bitcoin v0.1. Critics have repeatedly observed that the absence of any C++ project under Szabo's name argues against him as the Bitcoin author, since Bitcoin v0.1 is a 19,901-line C++ codebase with idiosyncratic style ([Hungarian notation](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies/), Visual C++ on Windows, custom build chain) that would normally manifest in some prior or parallel codebase.
 
-For Szabo to also be Satoshi, the hypothesis must explain how the same person who in April 2008 was publicly seeking help to implement Bit Gold, and who has no other documented C++ shipping record, produced 19,901 lines of working C++ for Bitcoin v0.1 between mid-2007 and January 2009. By ordinary reasoning, a person who in plain language asks strangers for help to code an easier predecessor system is not the person who covertly ships the harder successor system on the same timeline.
+For Szabo to also be Satoshi, the claim must explain how the same person who in April 2008 was publicly seeking help to implement Bit Gold, and who has no other documented C++ shipping record, produced 19,901 lines of working C++ for Bitcoin v0.1 between mid-2007 and January 2009. By ordinary reasoning, a person who in plain language asks strangers for help to code an easier predecessor system is not the person who covertly ships the harder successor system on the same timeline.
 
-## 4. Within the broader documentary record
+## 3. Within the broader documentary record
 
 The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin development period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — Wei Dai's 2014 identifiability argument, plus Satoshi's own admission of not having known b-money during development, support a "not a visibly active cypherpunk during 2007–2008" reading.
 
@@ -240,12 +238,12 @@ Szabo was visibly active during 2007–2008 (continuous Unenumerated posting). L
 
 For comparison with other named-candidate Satoshi-identity hypotheses, see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) and the individual hypothesis entries for [Adam Back](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/), [Sassaman](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/), [Kaneko](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/), and [Todd](/BitcoinArchive/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/).
 
-## 5. Limits of this entry
+## 4. Limits of this entry
 
 - This entry does not present new evidence. It compiles publicly available material.
 - Skye Grey's pseudonymous status means the stylometric analysis itself is not subject to the verification a named author's analysis would be. The 2014 Aston University study is more verifiable but its methodology has been contested by later commentators.
 - If new evidence surfaces — direct documentary links, technical fingerprints in the v0.1 code matching Szabo's other published code, or comments by Szabo contradicting his prior public position — this entry should be updated.
 
-This Nick Szabo identity hypothesis is anchored by two adjacent records. [The TechCrunch Skye Grey stylometric report](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/) provides the load-bearing first-mover stylometric pillar this hypothesis builds on. [The satoshi-identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places this hypothesis within its Group B taxonomy and uses it as one of the principal comparison anchors within the necessary-but-not-sufficient evaluation framework.
+This page rests on two adjacent records. [The TechCrunch Skye Grey stylometric report](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/) provides the first pillar of the evidence in §1 — the stylometric one. [The satoshi-identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places the Szabo claim in Group B and uses it as one of the principal comparison anchors within the necessary-but-not-sufficient evaluation framework.
 
 *[Editor: the Skye Grey article's pseudonymous authorship is treated as material to evaluating the analysis's verifiability, not weaponized against the analysis's content.]*

@@ -10,7 +10,7 @@ participants:
     slug: "peter-todd"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "The Peter Todd = Satoshi hypothesis from HBO 2024 \"Money Electric.\" Frame: a Dec 2010 BitcoinTalk thread where Todd seemed to complete a Satoshi post. Counter: Todd was 22 and an undergrad in 2007."
+description: "A reply that read like the continuation of Satoshi's thought — and two days later, Satoshi went silent. The evidence for HBO's Peter Todd identification, weighed."
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -50,17 +50,15 @@ inlineLinkKeywords:
   - "Peter Todd hypothesis"
 ---
 
-"retep" is "peter" spelled backwards. Bitcoin Core developer Gregory Maxwell took nearly a decade to notice. The handle belonged to an account that registered on BitcoinTalk on December 7, 2010 and, three days later, replied to a Satoshi thread on transaction-replacement fees. Two days after that, [Satoshi posted his last public message](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/). HBO's 2024 documentary [*Money Electric: The Bitcoin Mystery*](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (directed by Cullen Hoback, released October 8, 2024) used that December 2010 sequence as its central evidence and named [Peter Todd](/BitcoinArchive/participants/peter-todd/) as Satoshi. Todd answered the documentary on camera sarcastically — "It's ludicrous. But I'll say, yeah, of course I'm Satoshi" — and on the day of broadcast told CoinDesk directly: "Of course, I'm not Satoshi."
+"retep" is "peter" spelled backwards. Bitcoin Core developer Gregory Maxwell took nearly a decade to notice. The handle belonged to an account that registered on BitcoinTalk on December 7, 2010 and, three days later, replied to a Satoshi thread on transaction-replacement fees. Two days after that, [Satoshi posted his last public message](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/). HBO's 2024 documentary [*Money Electric: The Bitcoin Mystery*](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (directed by Cullen Hoback, released October 8, 2024) used that December 2010 sequence as its central evidence and named [Peter Todd](/BitcoinArchive/participants/peter-todd/) as Satoshi.
 
-## 1. What the hypothesis claims
+## 1. The evidence
 
-The hypothesis is that Todd is the person behind the Satoshi Nakamoto pseudonym, that his publicly-stated start of Bitcoin work in 2014 misrepresents an earlier involvement, and that the December 2010 BitcoinTalk thread cited by the documentary captures a moment of accidental same-person scaffolding.
+Todd is the person behind the Satoshi Nakamoto pseudonym. His publicly-stated start of Bitcoin work in 2014 misrepresents an earlier involvement, and the December 2010 BitcoinTalk thread cited by the documentary captures a moment of accidental same-person scaffolding.
 
-The earliest public articulation of the hypothesis identified in this archive's research is the HBO documentary itself (October 8, 2024). The documentary attracted broad press coverage and was rejected by both the Bitcoin technical community and mainstream reviewers within days of release.
+The earliest public articulation of the claim identified in this archive's research is the HBO documentary itself (October 8, 2024). The documentary attracted broad press coverage and was rejected by both the Bitcoin technical community and mainstream reviewers within days of release.
 
-## 2. The arguments the hypothesis rests on
-
-### 2.1 The December 2010 BitcoinTalk thread
+### 1.1 The December 2010 BitcoinTalk thread
 
 The documentary's central piece of evidence is a December 2010 exchange on [BitcoinTalk](/BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/). Satoshi described a transaction-replacement mechanism — what would later be formalized as Replace-by-Fee. Approximately 1.5 hours later, Todd (under the username "retep," his name spelled backwards) replied with a technical correction:
 
@@ -71,13 +69,13 @@ This was Todd's second post on BitcoinTalk, made three days after registering. H
 
 The objection that Bitcoin Institute would raise to itself: a 1.5-hour-after-Satoshi reply is not implausible same-author behavior, but neither is it implausible that an attentive reader noticed the same edge case Satoshi had been articulating. The "Of course, to be specific" register — a calm, technically-precise correction with a hint of casual authority — is suggestive but does not on its own carry the weight of authorship.
 
-### 2.2 The RBF / BIP 125 connection
+### 1.2 The RBF / BIP 125 connection
 
 The documentary draws a line from the December 2010 exchange to Todd's later formalization of Replace-by-Fee in [BIP 125](/BitcoinArchive/entries/bip/2015-11-03-bip-0125/) (2015), arguing that Todd completed what Satoshi had started — because they were the same person. Hoback also noted Todd's prior use of an alternate persona to submit an RBF patch, suggesting a pattern of operating under different identities.
 
 The objection: many Bitcoin Core contributors have built on partial mechanisms that Satoshi sketched but did not complete. Picking up such a mechanism years later is a generic Core-developer pattern, not specifically a same-author signal.
 
-### 2.3 Writing style across three periods
+### 1.3 Writing style across three periods
 
 Todd's public writing appears to shift noticeably across three periods:
 
@@ -89,7 +87,7 @@ The progression — from no personality, to neutral precision, to an unmistakabl
 
 The objection: a single classified-ad-style first post followed by a single technical-correction second post is too small a sample to establish a writer's range. A person's mature public-writing voice typically forms over their early-to-mid twenties, and the absence of Todd's later confrontational register in two short BitcoinTalk posts at age 25 is consistent with that voice not yet being formed, rather than with that voice being deliberately suppressed.
 
-### 2.4 Development-activity timeline
+### 1.4 Development-activity timeline
 
 Todd registered his GitHub account on April 13, 2008. Satoshi Nakamoto developed Bitcoin on [SourceForge (SVN)](/BitcoinArchive/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/). Their public activity records:
 
@@ -131,33 +129,33 @@ All OS indicators in those repositories point to Linux — hardcoded Linux FHS p
 
 The objection: an undergraduate's nearly-empty public GitHub commit graph during 2009–2011 is not unusual. The gap is consistent with focusing on coursework, not with running a parallel pseudonymous Bitcoin development effort under separate infrastructure.
 
-## 3. The counter-evidence
+## 2. The counter-evidence
 
-### 3.1 Age and OCAD timeline
+### 2.1 Age and OCAD timeline
 
-Todd was born on March 14, 1985 in Vancouver, Canada (Wikidata Q130523424). In mid-2007, when [Satoshi's documented pre-release Bitcoin work begins](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — approximately 18 months of intensive coding within the pre-release work Satoshi later put at "Since 2007" / "2 years of development before release" — Todd was 22 years old, an undergraduate at OCAD University pursuing an Integrated Media (fine arts) degree. He graduated in 2011. The hypothesis requires this person to have, in parallel with the OCAD program, designed a novel consensus mechanism, written the whitepaper, shipped the v0.1 codebase, run the network, and corresponded as Satoshi for two and a half years — while leaving no documented cryptographic or distributed-systems coursework, mailing-list activity, or other technical-protocol work in his pre-2012 public record. Possible, but not without cost.
+Todd was born on March 14, 1985 in Vancouver, Canada (Wikidata Q130523424). In mid-2007, when [Satoshi's documented pre-release Bitcoin work begins](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — approximately 18 months of intensive coding within the pre-release work Satoshi later put at "Since 2007" / "2 years of development before release" — Todd was 22 years old, an undergraduate at OCAD University pursuing an Integrated Media (fine arts) degree. He graduated in 2011. The claim requires this person to have, in parallel with the OCAD program, designed a novel consensus mechanism, written the whitepaper, shipped the v0.1 codebase, run the network, and corresponded as Satoshi for two and a half years — while leaving no documented cryptographic or distributed-systems coursework, mailing-list activity, or other technical-protocol work in his pre-2012 public record. Possible, but not without cost.
 
-### 3.2 No documented cypherpunk presence pre-2012
+### 2.2 No documented cypherpunk presence pre-2012
 
-Wei Dai's 2014 identifiability argument (in his LessWrong AALWA thread) suggests Satoshi was *not* visibly active in the cypherpunks mailing list, metzdowd Cryptography List, or related fora during 2007–2008. This argument neither rules in nor rules out Todd specifically — Todd's lack of documented cypherpunk-mailing-list presence pre-2012 fits the "structurally outside" reading. However, the argument also requires Satoshi to have nonetheless absorbed the technical and conceptual depth that Bitcoin v0.1 demonstrates. The hypothesis requires Todd to have done this reading and synthesis somewhere unrecorded — possible, but the burden of explanation falls on the hypothesis to specify where.
+Wei Dai's 2014 identifiability argument (in his LessWrong AALWA thread) suggests Satoshi was *not* visibly active in the cypherpunks mailing list, metzdowd Cryptography List, or related fora during 2007–2008. This argument neither rules in nor rules out Todd specifically — Todd's lack of documented cypherpunk-mailing-list presence pre-2012 fits the "structurally outside" reading. However, the argument also requires Satoshi to have nonetheless absorbed the technical and conceptual depth that Bitcoin v0.1 demonstrates. The claim requires Todd to have done this reading and synthesis somewhere unrecorded — possible, but the burden of explanation falls on the claim to specify where.
 
-### 3.3 Self-denial
+### 2.3 Self-denial
 
 Todd publicly denied the claim before and after the documentary's release. His responses ranged from in-film sarcasm ("It's ludicrous. But I'll say, yeah, of course I'm Satoshi.") to the same-day CoinDesk denial ("Of course, I'm not Satoshi.") to anger, calling the documentary "irresponsible" and noting that identifying someone as the holder of an estimated $70 billion in Bitcoin could put their personal safety at risk. Todd characterized the film's methodology as "coincidence-based conspiracy thinking" and stated he did not begin working on Bitcoin until 2014.
 
-A self-denial is not by itself dispositive — Wright self-claimed and the COPA court ruled against him; Dorian Nakamoto self-denied and the external evidence aligned (Satoshi's p2pfoundation account post "I am not Dorian Nakamoto," widespread criticism of Newsweek's identification methodology, Bitcoin community support for Dorian). Todd's self-denial is information that the hypothesis must address.
+A self-denial is not by itself dispositive — Wright self-claimed and the COPA court ruled against him; Dorian Nakamoto self-denied and the external evidence aligned (Satoshi's p2pfoundation account post "I am not Dorian Nakamoto," widespread criticism of Newsweek's identification methodology, Bitcoin community support for Dorian). Todd's self-denial is information that the claim must address.
 
-### 3.4 OS environment divergence with Windows-only Bitcoin v0.1
+### 2.4 OS environment divergence with Windows-only Bitcoin v0.1
 
-[Bitcoin v0.1's development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) was Windows-only across the full Phase 1 / Phase 2 / Phase 3 record — the v0.1 readme.txt names "Microsoft Visual C++ 6.0 SP6" and "MinGW GCC (v3.4.5)" as the supported compilers, the source uses Microsoft Hungarian notation, the v0.1.x series shipped as Windows-only `.rar` archives, and Satoshi's final email in February 2011 still carried a `GnuPG v1.4.7 (MingW32) - WinPT 1.2.0` Windows-only PGP signature footer. Todd's own GitHub repositories of the overlapping period (§2 above) point uniformly to Linux: hardcoded `/usr/share/` Linux FHS paths, Unix shebangs, PyGTK (a GNOME/Linux-native GUI toolkit), with no Windows-related files, paths, or tools in any repository. The hypothesis would require Todd to have run a parallel Windows environment for everything visible under "Satoshi" — distinct from the Linux environment visible under his own name — for the entire 2007–2011 window, without that split appearing in any contemporaneous personal repository.
+[Bitcoin v0.1's development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) was Windows-only across the full Phase 1 / Phase 2 / Phase 3 record — the v0.1 readme.txt names "Microsoft Visual C++ 6.0 SP6" and "MinGW GCC (v3.4.5)" as the supported compilers, the source uses Microsoft Hungarian notation, the v0.1.x series shipped as Windows-only `.rar` archives, and Satoshi's final email in February 2011 still carried a `GnuPG v1.4.7 (MingW32) - WinPT 1.2.0` Windows-only PGP signature footer. Todd's own GitHub repositories of the overlapping period (§1.4 above) point uniformly to Linux: hardcoded `/usr/share/` Linux FHS paths, Unix shebangs, PyGTK (a GNOME/Linux-native GUI toolkit), with no Windows-related files, paths, or tools in any repository. The claim would require Todd to have run a parallel Windows environment for everything visible under "Satoshi" — distinct from the Linux environment visible under his own name — for the entire 2007–2011 window, without that split appearing in any contemporaneous personal repository.
 
-### 3.5 Bitcoin community technical critique
+### 2.5 Bitcoin community technical critique
 
 The documentary was widely criticized by the Bitcoin technical community within days of release. Bitcoin Magazine called it "An Insult to Bitcoin — Cynical, Stupid, and Dangerous." Cointelegraph catalogued specific factual errors. Critics noted that the film relied entirely on circumstantial evidence and coincidence-based reasoning, with no cryptographic proof, no formal stylometric analysis, and no explanation for how an undergraduate fine-arts student could have designed a novel consensus mechanism. That quantitative gap remains open — [Bitcoin Institute's reanalysis of van Dorst's stylometric corpus](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) ranks five other named candidates against 12,739 mailing-list authors, but Todd himself was not active in the 1992–2000 cryptography-mailing-list community that corpus covers and so has never been given the same quantitative treatment.
 
-The technical-community rejection of the documentary's evidence does not by itself rule out the underlying hypothesis — community sentiment is not evidence. But it does mean that the documentary's specific evidentiary case has not survived expert review.
+The technical-community rejection of the documentary's evidence does not by itself rule out the underlying claim — community sentiment is not evidence. But it does mean that the documentary's specific evidentiary case has not survived expert review.
 
-## 4. Within the broader documentary record
+## 3. Within the broader documentary record
 
 The strongest claim the public record supports about Satoshi himself is that he was [structurally outside the visible cypherpunk community during the Bitcoin development period](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — Wei Dai's 2014 identifiability argument, plus Satoshi's own admission of not having known b-money during development, support a "not a visibly active cypherpunk during 2007–2008" reading.
 
@@ -165,9 +163,9 @@ That reading does not rule out Todd, but it does not select him either. The capa
 
 For comparison with other named-candidate Satoshi-identity hypotheses (Sassaman, Kaneko, Finney, Szabo, Back, Dai, Dorian, Wright, Le Roux), see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), which provides a single candidate profile comparison and external-status notes for each candidate.
 
-## 5. Limits of this entry
+## 4. Limits of this entry
 
 - This entry does not present new evidence. It compiles publicly available material.
 - If new evidence surfaces — direct documentary links, technical fingerprints in the v0.1 code matching Todd's other published code, comments by Todd or other witnesses that contradict the public record — this entry should be updated.
 
-This Peter Todd identity hypothesis is anchored by two adjacent records. [The HBO Money Electric documentary entry](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) is the prominent public articulation this hypothesis takes as its starting point. [The satoshi-identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places this hypothesis within its Group C taxonomy and uses it as one of the principal comparison anchors in the necessary-but-not-sufficient evaluation framework.
+This page rests on two adjacent records. [The HBO Money Electric documentary entry](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) is the public articulation where the evidence in §1 starts. [The satoshi-identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places the Todd claim in Group C and uses it as one of the principal comparison anchors in the necessary-but-not-sufficient evaluation framework.

@@ -65,4 +65,4 @@ translationStatus: complete
 
 「奪おうと思えば奪えたのに自制したマイナー」というこの人物像は、これより 5 年近く前、[レイ・ディリンジャー](/BitcoinArchive/ja/entries/aftermath/2017-09-20-ray-dillinger-if-id-known/) ― ビットコインのブロックチェーンコードを最初期にレビューした人物の一人 ― によって、すでに定性的な形で描かれていた。ロップの分析は、その印象に数値的な裏付けを与えている。
 
-本ロップ分析は[ハル・フィニー同定仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)によって決定的な反証として扱われる。同仮説はロップによるパトシ再構成 (約 22,503 ブロック・約 110 万 BTC・ハッシュレート意図的抑制) を、 §3.3「パトシ採掘規模の不整合」におけるハル＝サトシ仮説への反証として用いる。
+本ロップ分析は[ハル・フィニー同定仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)によって決定的な反証として扱われる。同仮説はロップによるパトシ再構成 (約 22,503 ブロック・約 110 万 BTC・ハッシュレート意図的抑制) を、 §2.3「パトシ採掘規模の不整合」におけるハル＝サトシ仮説への反証として用いる。
