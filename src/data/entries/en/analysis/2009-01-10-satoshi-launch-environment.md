@@ -157,7 +157,7 @@ This level of dedicated focus is difficult to sustain in the margins of a full-t
 
 The week Jan 8-12, 2009 falls in the post–New Year period, which in many cultures (including Japan, which Satoshi's chosen pseudonym evokes) is part of an extended holiday window. A year-end-break reading is one consistent explanation of the time availability, but other explanations remain open.
 
-## 5. The combined forensic profile (under this reading)
+## 5. The combined forensic profile
 
 Taken together, the two signals — *read interpretively* — are consistent with a Satoshi who, during the launch week:
 

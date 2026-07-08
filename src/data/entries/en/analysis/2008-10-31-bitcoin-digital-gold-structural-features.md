@@ -166,7 +166,7 @@ The six features cohere because they share an underlying design choice: **the pr
 
 ## What "digital gold" actually means in this framing
 
-Under this reading, "digital gold" is not a slogan. It is shorthand for the bundle: a monetary asset whose scarcity is enforced by mathematics rather than by a central bank, whose ownership is portable without a custodial intermediary, whose protocol cannot be amended at the discretion of a named entity, and whose original architect has visibly removed themselves from a position of continuing authority. Each of those properties is a structural feature. The bundle is what gives the phrase its content.
+"Digital gold" is not a slogan. It is shorthand for the bundle: a monetary asset whose scarcity is enforced by mathematics rather than by a central bank, whose ownership is portable without a custodial intermediary, whose protocol cannot be amended at the discretion of a named entity, and whose original architect has visibly removed themselves from a position of continuing authority. Each of those properties is a structural feature. The bundle is what gives the phrase its content.
 
 The bundle is also what makes the phrase difficult to apply to other cryptocurrencies, regardless of their technical merits. A chain with a richer instruction set, faster confirmation, and lower fees can be many things; if it also has an active founder, a foundation treasury, a CEO, and a premine, it is not (under this framing) digital gold. It is something else — possibly something more useful for many purposes — but the digital-gold slot is structurally not vacant for it to occupy.
 
