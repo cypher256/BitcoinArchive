@@ -19,11 +19,6 @@ quotes:
     personSlug: "llama"
     date: "2010-07-17T21:56:25.000Z"
     sourceEntryId: "forum/bitcointalk/topic-437/2010-07-17-llama-msg3810"
-  - id: "q2"
-    person: "llama"
-    personSlug: "llama"
-    date: "2010-07-17T21:56:25.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-437/2010-07-17-llama-msg3810"
 ---
 
 <!-- quote: q1 -->
@@ -31,7 +26,7 @@ quotes:
 
 I went about 200 blocks back.  The block chain was a clean straight line without branches, and there was only one known version of the locked block.
 
-<!-- quote: q2 -->
+<!-- speaker: llama -->
 > Also, I'm assuming that the block lock means that the blocks will also come prepackaged with the client.  Is this so?
 
 Sorry, not yet, but I do want to make the initial block download faster.

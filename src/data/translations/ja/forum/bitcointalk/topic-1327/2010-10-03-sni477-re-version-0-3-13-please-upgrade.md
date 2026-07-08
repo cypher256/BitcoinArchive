@@ -20,11 +20,6 @@ quotes:
     personSlug: "michael-marquardt"
     date: "2010-10-03T20:09:51.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1327/2010-10-03-theymos-msg15118"
-  - id: "q2"
-    person: "theymos"
-    personSlug: "michael-marquardt"
-    date: "2010-10-03T20:09:51.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-1327/2010-10-03-theymos-msg15118"
   - id: "q3"
     person: "tcatm"
     personSlug: "tcatm"
@@ -43,7 +38,7 @@ quotes:
 
 手数料なしのブロックがすでに生成されたのに解決しない場合は、何が問題なのか調べる必要がある。あまり使われないコードの部分だ。それらに依存するトランザクションを持つ全員のウォレットに記録されているはずだ。
 
-<!-- quote: q2 -->
+<!-- speaker: theymos -->
 <!-- tone-skip -->
 > 元の壊れた取引を送った人はウォレットを削除した
 <!-- /tone-skip -->

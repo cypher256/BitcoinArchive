@@ -17,11 +17,6 @@ quotes:
     personSlug: "kiav"
     date: "2010-07-18T11:40:45.000Z"
     sourceEntryId: "forum/bitcointalk/topic-437/2010-07-18-kiav-msg3971"
-  - id: "q2"
-    person: "kiav"
-    personSlug: "kiav"
-    date: "2010-07-18T11:40:45.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-437/2010-07-18-kiav-msg3971"
 ---
 
 <!-- quote: q1 -->
@@ -29,7 +24,7 @@ quotes:
 
 No, you don't.
 
-<!-- quote: q2 -->
+<!-- speaker: kiav -->
 > What about my bitcoins I already generated? Do I need to backup them and restore after installation?
 
 No, you don't, but it's always good to make a backup.

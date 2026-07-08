@@ -20,16 +20,6 @@ quotes:
     personSlug: "aidos"
     date: "2010-07-15T00:49:11.000Z"
     sourceEntryId: "forum/bitcointalk/topic-151/2010-07-15-aidos-msg3017"
-  - id: "q2"
-    person: "aidos"
-    personSlug: "aidos"
-    date: "2010-07-15T00:49:11.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-151/2010-07-15-aidos-msg3017"
-  - id: "q3"
-    person: "aidos"
-    personSlug: "aidos"
-    date: "2010-07-15T00:49:11.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-151/2010-07-15-aidos-msg3017"
 ---
 
 <!-- quote: q1 -->
@@ -39,14 +29,14 @@ quotes:
 <!-- /tone-skip -->
 更新された.po ファイルを提供する必要がある。
 
-<!-- quote: q2 -->
+<!-- speaker: aidos -->
 <!-- tone-skip -->
 > 2. メインウィンドウのトランザクションリストで、トランザクションの説明に発音区別符号（「éàèç」など）が含まれていると表示されない。どこかで文字列がUTF8として適切に処理されていないのだと思う。
 <!-- /tone-skip -->
 
 はい、これはどこかに問題があるはずだ。確認する必要があるし、他の開発者にも見てもらえる。
 
-<!-- quote: q3 -->
+<!-- speaker: aidos -->
 <!-- tone-skip -->
 > 4. .poファイルについて：
 <!-- /tone-skip -->

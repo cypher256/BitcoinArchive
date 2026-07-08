@@ -23,11 +23,6 @@ quotes:
     personSlug: "sabunir"
     date: "2010-02-21T16:58:44.000Z"
     sourceEntryId: "forum/bitcointalk/topic-43/2010-02-21-sabunir-msg424"
-  - id: "q3"
-    person: "NewLibertyStandard"
-    personSlug: "newlibertystandard"
-    date: "2010-02-21T18:52:43.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-43/2010-02-21-newlibertystandard-msg425"
 translationStatus: complete
 ---
 
@@ -39,7 +34,7 @@ translationStatus: complete
 
 それなら、ネットワーク全体に接続されている CPU 数にどう依存するんだ？
 
-<!-- quote: q3 -->
+<!-- speaker: NewLibertyStandard -->
 > それだけでなく、Bitcoinは異なる難易度で生成されたブロックを受け入れないと思う。だから、もし改造されたBitcoinクライアントがより簡単に生成したブロックを送り出そうとしても、すべての正規クライアントは偽ブロックを拒否するだろう。
 
 それはサトシに確認してもらう必要がある。なぜなら、PoW の難易度が上がるたびに、クライアントはより簡単な難易度で生成されたブロックを常に受け入れているからだ。

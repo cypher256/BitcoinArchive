@@ -17,16 +17,6 @@ quotes:
     personSlug: "newlibertystandard"
     date: "2010-02-21T11:41:50.000Z"
     sourceEntryId: "forum/bitcointalk/topic-57/2010-02-21-newlibertystandard-msg418"
-  - id: "q2"
-    person: "NewLibertyStandard"
-    personSlug: "newlibertystandard"
-    date: "2010-02-21T11:41:50.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-57/2010-02-21-newlibertystandard-msg418"
-  - id: "q3"
-    person: "NewLibertyStandard"
-    personSlug: "newlibertystandard"
-    date: "2010-02-21T11:41:50.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-57/2010-02-21-newlibertystandard-msg418"
 translationStatus: complete
 ---
 
@@ -35,12 +25,12 @@ translationStatus: complete
 
 いや、上がり続ける。そして、私が君から買って数週間後により高い価格で君に売り戻して食い物にしないようにしているのは、倫理的な理由だけだ。
 
-<!-- quote: q2 -->
+<!-- speaker: NewLibertyStandard -->
 > 新規ユーザーが数週間から数か月で1ブロックも生成できなければ、毎日24時間CPUを100％で回し続ける確率はどれくらいだと思う？bitcoinをマイニングするコンピューターの数が急速に増えるのは、マイニングが意欲を削がないあいだだけだ。それが意欲を削ぐようになれば、新規ユーザーによる増加もあれば、ユーザーがマイニングをやめることによる減少もあるはずだ。
 
 そう。そして、マイニングがどんどん難しくなる中で、新規ユーザーは何をすると思う？もう自分では生成できない。当然、既存ユーザーから買うわけだ。十分な供給がないなかで人々が買えば、価格はどうなる？その通り。上がって、上がって、上がる。そして難易度が上がれば上がるほど、既存コインへの需要が強まり、価格はさらに跳ね上がる。典型的なバブルのシナリオだ。
 
-<!-- quote: q3 -->
+<!-- speaker: NewLibertyStandard -->
 > 見ているといい、驚くぞ！
 
 「供給不足のままで需要が増えるのはまずいアイデアだった」と君たちが思い知るとき、私は驚かないよ。痛い目を見てから学ぶのさ。

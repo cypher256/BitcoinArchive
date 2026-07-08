@@ -18,11 +18,6 @@ quotes:
     personSlug: "kiav"
     date: "2010-07-18T11:40:45.000Z"
     sourceEntryId: "forum/bitcointalk/topic-437/2010-07-18-kiav-msg3971"
-  - id: "q2"
-    person: "kiav"
-    personSlug: "kiav"
-    date: "2010-07-18T11:40:45.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-437/2010-07-18-kiav-msg3971"
 ---
 
 <!-- quote: q1 -->
@@ -32,7 +27,7 @@ quotes:
 
 いいや、必要ない。
 
-<!-- quote: q2 -->
+<!-- speaker: kiav -->
 <!-- tone-skip -->
 > 既に生成したbitcoinはどうなる？バックアップしてインストール後に復元する必要があるか？
 <!-- /tone-skip -->

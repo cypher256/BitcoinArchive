@@ -20,11 +20,6 @@ quotes:
     personSlug: "sabunir"
     date: "2010-02-16T08:51:51.000Z"
     sourceEntryId: "forum/bitcointalk/topic-43/2010-02-16-sabunir-msg372"
-  - id: "q2"
-    person: "Sabunir"
-    personSlug: "sabunir"
-    date: "2010-02-16T08:51:51.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-43/2010-02-16-sabunir-msg372"
 ---
 
 <!-- quote: q1 -->
@@ -33,7 +28,7 @@ quotes:
 <!-- /tone-skip -->
 往復 2秒のレイテンシーは、生成成功率を 1%未満しか低下させないはずだ。
 
-<!-- quote: q2 -->
+<!-- speaker: Sabunir -->
 <!-- tone-skip -->
 > パケットロスが高い（時に最大10%のロス）ことが原因かもしれない。
 <!-- /tone-skip -->

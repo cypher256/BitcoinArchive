@@ -20,11 +20,6 @@ quotes:
     personSlug: "llama"
     date: "2010-07-17T21:56:25.000Z"
     sourceEntryId: "forum/bitcointalk/topic-437/2010-07-17-llama-msg3810"
-  - id: "q2"
-    person: "llama"
-    personSlug: "llama"
-    date: "2010-07-17T21:56:25.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-437/2010-07-17-llama-msg3810"
 ---
 
 <!-- quote: q1 -->
@@ -34,7 +29,7 @@ quotes:
 
 約 200 ブロック前まで戻った。ブロックチェーンは分岐のないきれいな直線で、ロックされたブロックの既知のバージョンは 1 つだけだった。
 
-<!-- quote: q2 -->
+<!-- speaker: llama -->
 <!-- tone-skip -->
 > また、ブロックロックはブロックがクライアントにプリパッケージされて同梱されることを意味していると思うが。そうだろうか？
 <!-- /tone-skip -->

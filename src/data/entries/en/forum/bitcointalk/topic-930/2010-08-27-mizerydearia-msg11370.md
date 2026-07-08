@@ -17,27 +17,7 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2010-08-27T00:49:43.000Z"
     sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-re-gentoo-linux-ebuild"
-  - id: "q2"
-    person: "satoshi"
-    personSlug: "satoshi-nakamoto"
-    date: "2010-08-27T00:49:43.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-re-gentoo-linux-ebuild"
   - id: "q3"
-    person: "BioMike"
-    personSlug: "biomike"
-    date: "2010-08-27T05:22:35.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-biomike-msg11356"
-  - id: "q4"
-    person: "BioMike"
-    personSlug: "biomike"
-    date: "2010-08-27T05:22:35.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-biomike-msg11356"
-  - id: "q5"
-    person: "BioMike"
-    personSlug: "biomike"
-    date: "2010-08-27T05:22:35.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-biomike-msg11356"
-  - id: "q6"
     person: "BioMike"
     personSlug: "biomike"
     date: "2010-08-27T05:22:35.000Z"
@@ -72,7 +52,7 @@ $ /usr/bin/wx-config --version
 
 I'm not sure about other distros though.
 
-<!-- quote: q2 -->
+<!-- speaker: satoshi -->
 > > This is because on my system the path is /usr/include/wx-2.9/wx/wx.h
 >
 > Why is it there?  Was it included by the OS, or did you have to build it?  If you built it, I wonder why it would put itself in a different place.
@@ -94,17 +74,17 @@ Gentoo Linux is designed so that all (99.99%) packages are compiled from source,
 
 I don't understand this.  Which header?
 
-<!-- quote: q4 -->
+<!-- speaker: BioMike -->
 > 4) /home/bticoin?
 
 I don't see where I misspelled bitcoin.  Which file?
 
-<!-- quote: q5 -->
+<!-- speaker: BioMike -->
 > 5) Strip optimizations from the Makefile and let the user provide them (or strip them properly)
 
 I am uncertain what "optimizations" are.
 
-<!-- quote: q6 -->
+<!-- speaker: BioMike -->
 > 6) Don't build static code. I have a Makefile that builds dynamic code. If you want I can send it to you. You will need to make changes to it.
 
 I am not familiar with which parts of code are static and could be converted to dynamic.  I only prepared an ebuild because it seems nobody else has.  I am not skilled enough to perfect the ebuild, however, if anyone else would like to contribute towards making it better, I set up a git repository: http://github.com/mizerydearia/bitcoin_gentoo_ebuild

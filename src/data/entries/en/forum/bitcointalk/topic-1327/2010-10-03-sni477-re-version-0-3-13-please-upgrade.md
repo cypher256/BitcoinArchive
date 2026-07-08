@@ -19,11 +19,6 @@ quotes:
     personSlug: "michael-marquardt"
     date: "2010-10-03T20:09:51.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1327/2010-10-03-theymos-msg15118"
-  - id: "q2"
-    person: "theymos"
-    personSlug: "michael-marquardt"
-    date: "2010-10-03T20:09:51.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-1327/2010-10-03-theymos-msg15118"
   - id: "q3"
     person: "tcatm"
     personSlug: "tcatm"
@@ -40,7 +35,7 @@ Any transactions in your wallet also have bundled with them all unrecorded trans
 
 If a no-fee block has already been generated and hasn't helped, then I need to look at what's wrong.  It's a part of code that doesn't get much use.  They should be recorded in the wallets of everyone who has a transaction depending on them.
 
-<!-- quote: q2 -->
+<!-- speaker: theymos -->
 > The person who originally sent the broken transactions deleted his wallet
 
 Sigh... why delete a wallet instead of moving it aside and keeping the old copy just in case?  You should never delete a wallet.

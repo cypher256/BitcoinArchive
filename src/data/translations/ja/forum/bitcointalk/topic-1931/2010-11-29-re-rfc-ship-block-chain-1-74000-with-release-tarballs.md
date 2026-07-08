@@ -20,16 +20,6 @@ quotes:
     personSlug: "jeff-garzik"
     date: "2010-11-29T19:01:12.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-29-jgarzik-msg25434"
-  - id: "q2"
-    person: "jgarzik"
-    personSlug: "jeff-garzik"
-    date: "2010-11-29T19:01:12.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-29-jgarzik-msg25434"
-  - id: "q3"
-    person: "jgarzik"
-    personSlug: "jeff-garzik"
-    date: "2010-11-29T19:01:12.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-1931/2010-11-29-jgarzik-msg25434"
 ---
 
 実際よりも、すべてが間違っていると想定する傾向があるようだね。
@@ -46,7 +36,7 @@ quotes:
 すでにそうしている。CDB を参照してくれ。（例えば）CTxDB オブジェクトの寿命は、データベーストランザクションのサポートと、シャットダウン時にまだデータベースを使用しているものがあるかどうかを知るためだけだ。
 
 <!-- tone-skip -->
-<!-- quote: q2 -->
+<!-- speaker: jgarzik -->
 <!-- tone-skip -->
 > 加えて、Bitcoin はデータベースチェックポイントを強制し、ログから全トランザクションをメインデータベースに押し込む。
 <!-- /tone-skip -->
@@ -67,7 +57,7 @@ quotes:
 ```
 
 <!-- tone-skip -->
-<!-- quote: q3 -->
+<!-- speaker: jgarzik -->
 <!-- tone-skip -->
 > 2) 初回ブロックダウンロードでは、txn コミットはレコードごとではなく N レコードごとに 1回行うべきだ。N=1000 を提案する。
 <!-- /tone-skip -->

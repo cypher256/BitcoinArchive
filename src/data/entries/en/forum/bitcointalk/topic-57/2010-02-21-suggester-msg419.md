@@ -17,16 +17,6 @@ quotes:
     personSlug: "newlibertystandard"
     date: "2010-02-21T11:41:50.000Z"
     sourceEntryId: "forum/bitcointalk/topic-57/2010-02-21-newlibertystandard-msg418"
-  - id: "q2"
-    person: "NewLibertyStandard"
-    personSlug: "newlibertystandard"
-    date: "2010-02-21T11:41:50.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-57/2010-02-21-newlibertystandard-msg418"
-  - id: "q3"
-    person: "NewLibertyStandard"
-    personSlug: "newlibertystandard"
-    date: "2010-02-21T11:41:50.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-57/2010-02-21-newlibertystandard-msg418"
 ---
 
 <!-- quote: q1 -->
@@ -34,12 +24,12 @@ quotes:
 
 Yes it will. And the only thing stopping me from exploiting you by purchasing then reselling to you at a higher price a couple of weeks after is ethical reasons.
 
-<!-- quote: q2 -->
+<!-- speaker: NewLibertyStandard -->
 > If new users can't generate a single block within a few weeks or months, what do you think the likelihood is that they will continue running their CPU at 100% all day everyday? The amount of computers generating bitcoins will grow rapidly only while generating bitcoins is not discouraging. Once it becomes discouraging, we'll sometimes have growth from new users, but we'll also sometimes have decline as users stop generating bitcoins.
 
 Right. And what are those new users going to do as generating becomes more challenging, you think? They can't generate now anymore. Oh, they'll buy from existing ones, of course. What happens to the price when people buy with no adequate supply? Correct. It goes up, and up, and up. And the more the difficulty increases, the more demand will be on the existing coins, and the more the price will shoot up. Typical bubble scenario.
 
-<!-- quote: q3 -->
+<!-- speaker: NewLibertyStandard -->
 > Watch and be amazed!
 
 I won't be amazed when you guys learn that inadequate supply versus growing demand was a bad idea... the hard way.

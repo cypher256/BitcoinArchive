@@ -855,8 +855,8 @@ function checkFile(filePath, locale) {
   // Parent-LINKED entries sharing a source are EXEMPT by design: an
   // interleaved reply chain nests the same message at several depths and
   // needs one qN per level for the parent references (e.g. the
-  // alternating malmi/satoshi chains). Warn while the cleanup is in
-  // flight; promote to error once the corpus is clean.
+  // alternating malmi/satoshi chains). Error since the 2026-07-08
+  // cleanup removed all 55 flat groups; new ones must not appear.
   {
     const flatBySource = new Map();
     for (const q of quotes) {
@@ -871,7 +871,7 @@ function checkFile(filePath, locale) {
       violations.push({
         file: rel,
         check: 'quote-duplicate-source',
-        level: 'warn',
+        level: 'error',
         msg: `quotes[] defines ${ids.length} parent-less entries (${ids.join(', ')}) for the same source (${key.split('|')[1]}). Keep the first, drop the rest, and continue with <!-- speaker --> markers.`,
       });
     }

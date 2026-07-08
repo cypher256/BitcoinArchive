@@ -17,27 +17,7 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2010-08-27T00:49:43.000Z"
     sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-re-gentoo-linux-ebuild"
-  - id: "q2"
-    person: "satoshi"
-    personSlug: "satoshi-nakamoto"
-    date: "2010-08-27T00:49:43.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-re-gentoo-linux-ebuild"
   - id: "q3"
-    person: "BioMike"
-    personSlug: "biomike"
-    date: "2010-08-27T05:22:35.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-biomike-msg11356"
-  - id: "q4"
-    person: "BioMike"
-    personSlug: "biomike"
-    date: "2010-08-27T05:22:35.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-biomike-msg11356"
-  - id: "q5"
-    person: "BioMike"
-    personSlug: "biomike"
-    date: "2010-08-27T05:22:35.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-930/2010-08-27-biomike-msg11356"
-  - id: "q6"
     person: "BioMike"
     personSlug: "biomike"
     date: "2010-08-27T05:22:35.000Z"
@@ -73,7 +53,7 @@ $ /usr/bin/wx-config --version
 
 他のディストロについては分からないが。
 
-<!-- quote: q2 -->
+<!-- speaker: satoshi -->
 > > これは私のシステムではパスが /usr/include/wx-2.9/wx/wx.h だからだ
 >
 > なぜそこにあるのか？OS に含まれていたのか、それともビルドする必要があったのか？ビルドした場合、なぜ別の場所にインストールされるのか不思議だ。
@@ -95,17 +75,17 @@ Gentoo Linux は（99.99%の）パッケージをソースからコンパイル�
 
 これが分からない。どのヘッダー？
 
-<!-- quote: q4 -->
+<!-- speaker: BioMike -->
 > 4) /home/bticoin？
 
 bitcoin をどこでスペルミスしたか分からない。どのファイル？
 
-<!-- quote: q5 -->
+<!-- speaker: BioMike -->
 > 5) Makefileから最適化フラグを取り除いて、ユーザーに指定させろ（あるいは適切に除去しろ）
 
 「最適化フラグ」が何を指すのかはっきりしない。
 
-<!-- quote: q6 -->
+<!-- speaker: BioMike -->
 > 6) 静的コードをビルドするな。動的コードをビルドするMakefileを持っている。欲しければ送れる。多少手を入れる必要はあるが。
 
 コードのどの部分が静的で、動的に変換できるのかが分からない。誰もやっていないようだったので ebuild を準備しただけだ。ebuild を完璧にできるほどのスキルはないが、誰か他に改善に貢献したい人がいれば、git リポジトリを用意した： http://github.com/mizerydearia/bitcoin_gentoo_ebuild

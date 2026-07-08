@@ -19,16 +19,6 @@ quotes:
     personSlug: "gavin-andresen"
     date: "2010-08-04T20:40:55.000Z"
     sourceEntryId: "forum/bitcointalk/topic-704/2010-08-04-gavin-andresen-msg7575"
-  - id: "q2"
-    person: "gavinandresen"
-    personSlug: "gavin-andresen"
-    date: "2010-08-04T20:40:55.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-704/2010-08-04-gavin-andresen-msg7575"
-  - id: "q3"
-    person: "gavinandresen"
-    personSlug: "gavin-andresen"
-    date: "2010-08-04T20:40:55.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-704/2010-08-04-gavin-andresen-msg7575"
 ---
 
 Silently failing would look bad.
@@ -38,12 +28,12 @@ Silently failing would look bad.
 
 Definitely needed.  What rate are you thinking of?  Ultimately, it's better to rate limit it than to let it all drain out.
 
-<!-- quote: q2 -->
+<!-- speaker: gavinandresen -->
 > 3. Rate limit based on last two domains of reverse DNS lookup of the IP address (rima-tde.net in this case).
 
 That might work surprisingly well.  If it works, it keeps them from hitting the rate limit, but the rate limit is there as the last line of defence. 
 
-<!-- quote: q3 -->
+<!-- speaker: gavinandresen -->
 > 4. Make the standard amount given away 0.5 Bitcoins (Bitcoins have gone up 10 times in value since I started the Faucet).
 
 Definitely time to lower it.

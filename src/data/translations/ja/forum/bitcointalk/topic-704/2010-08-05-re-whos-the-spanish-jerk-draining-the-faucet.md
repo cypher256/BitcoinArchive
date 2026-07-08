@@ -20,16 +20,6 @@ quotes:
     personSlug: "gavin-andresen"
     date: "2010-08-04T20:40:55.000Z"
     sourceEntryId: "forum/bitcointalk/topic-704/2010-08-04-gavin-andresen-msg7575"
-  - id: "q2"
-    person: "gavinandresen"
-    personSlug: "gavin-andresen"
-    date: "2010-08-04T20:40:55.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-704/2010-08-04-gavin-andresen-msg7575"
-  - id: "q3"
-    person: "gavinandresen"
-    personSlug: "gavin-andresen"
-    date: "2010-08-04T20:40:55.000Z"
-    sourceEntryId: "forum/bitcointalk/topic-704/2010-08-04-gavin-andresen-msg7575"
 ---
 
 無言で失敗するのは見栄えが悪いだろう。
@@ -41,14 +31,14 @@ quotes:
 
 間違いなく必要だ。どのくらいのレートを考えているか？最終的には、すべて流出させるよりもレート制限する方が良い。
 
-<!-- quote: q2 -->
+<!-- speaker: gavinandresen -->
 <!-- tone-skip -->
 > 3. IPアドレスの逆引きDNSの最後の2つのドメインに基づくレート制限（この場合はrima-tde.net）。
 <!-- /tone-skip -->
 
 それは驚くほどうまく機能するかもしれない。うまくいけば、レート制限に引っかかるのを防ぐが、最終防衛線としてレート制限がある。
 
-<!-- quote: q3 -->
+<!-- speaker: gavinandresen -->
 <!-- tone-skip -->
 > 4. 標準配布量を0.5 Bitcoinにする（Faucetを始めてからBitcoinの価値は10倍に上がった）。
 <!-- /tone-skip -->
