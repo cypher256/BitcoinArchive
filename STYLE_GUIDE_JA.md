@@ -304,6 +304,13 @@ quotes:
 
 **検出:** `scripts/check-quotes.mjs` の `speaker-named-no-quote-marker` チェックは、 speaker NAME が同一ファイルの既存 `<!-- quote: qN -->` の `quotes[N].person` (または `personSlug` 経由の和名) と一致し、**かつ `quotes[]` 内に同一人物の qN が 1 件しかない**場合、 その speaker は既存の鎖の継続と判定して非フラグにする。 同一人物の qN が 2 件以上ある場合は曖昧解消のため明示マーカーを要求する (上記「同一人物・別送信元の曖昧解消」 参照)。
 
+**継続引用の話者タグ (自動描画):** marker 重複禁止の副作用として、 継続 blockquote には従来なんの帰属表示も出なかった (枠線色で識別できるのはサトシのみ)。 長い逐点応答では、 読者が後半の引用の発言者を知るために最初のチップまで戻る必要があった。 このため `remark-quote-blocks` は、 継続 blockquote の上に軽量な話者タグ (`.quote-speaker-tag`: アバター + 名前のみ。 リンク・日付・媒体名なし — 別の引用元表示と誤認されない形) を自動描画する。 タグを生む marker は 2 形:
+
+1. 既出チップと同一人物 (論理ソース 1 件のみ) への bare `<!-- speaker: NAME -->`。
+2. 既にチップ済みの論理ソースを再度指す `<!-- quote: qN -->` の繰り返し (その人物のソースが 1 件のみの場合) — 繰り返しチップはタグに降格される。 0522 一括移行が「1 通からの引用ブロックごとに別の qN」 を発行した遺産エントリー (同一 `person` + 同一 `sourceEntryId` が `quotes[]` 内で重複) を、 描画側で 1 ソースに束ねて救済する。
+
+「論理ソース」 とは (正規化した人物, `sourceEntryId`) の組 ([src/lib/person-name-aliases.mjs](src/lib/person-name-aliases.mjs) の `quoteSourceKey`) — 同じ 1 通を指す複数の qN は 1 ソースと数える。 同一話者の blockquote が間に散文を挟まず直接連続する場合は、 連続の先頭のみタグを付け後続は省略する (隣接自体が継続を示すため)。 同一人物に**異なる**ソースが複数ある曖昧ケースはタグを描画せず明示チップを維持する (名前だけではソースを区別できない — 上記曖昧解消規則)。 これは描画側の挙動であり編集者の追加作業はない — 既存の marker から自動生成される。 検証と描画は正規名テーブルとソースキーの補助関数を共有しており、 検出器が「鎖の継続」 と認める範囲と描画側がタグを付ける範囲は一致する。
+
 ### JA chip 文言の種別化
 
 `<!-- quote: qN -->` から生成される JA attribution chip は、引用元の媒体 (個人メール / メーリングリスト / フォーラム / GitHub PR / BIP 提案) に合わせて末尾の名詞を変える。 これは `quotes[N].sourceEntryId` のパス先頭で機械的に判定される ([src/lib/remark-quote-blocks.mjs](src/lib/remark-quote-blocks.mjs) の `getJaSourceTypeLabel()`)。

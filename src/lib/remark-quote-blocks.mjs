@@ -27,11 +27,13 @@ import { visit } from 'unist-util-visit';
 import { participantDisplayNamesJaBySlug } from '../i18n/participants.ts';
 import { avatarTag } from '../data/avatars.ts';
 import { MIRROR_BASE } from '../../site-config.mjs';
+import { canonicalizePersonName, quoteSourceKey } from './person-name-aliases.mjs';
 
 const QUOTE_MARKER_RE = /^<!--\s*quote:\s*(\w+)\s*-->$/;
 const TONE_SKIP_RE = /^<!--\s*tone-skip\s*-->$/;
 const TONE_SKIP_END_RE = /^<!--\s*\/tone-skip\s*-->$/;
 const AUDIT_QUOTE_SKIP_RE = /^<!--\s*audit:quote-skip\s*-->$/;
+const SPEAKER_MARKER_RE = /^<!--\s*speaker:\s*(.+?)\s*-->$/;
 
 /**
  * Detect locale from the file path.
@@ -161,12 +163,50 @@ function formatAttribution(quote, locale, base) {
   // identifiable at a glance. Quotes without a personSlug (rare) get no
   // avatar. Speaker accent is still carried by the associated
   // <blockquote> via data-speaker (set in the visitor below), matching
-  // the existing blockquote[data-speaker] convention.
+  // the existing blockquote[data-speaker] convention. The canonical EN
+  // person name drives the badge initials so they match the circular
+  // PNG slots (quote.person may be an email handle — canonicalization
+  // resolves it to the display name).
   const avatar = quote.personSlug
-    ? avatarTag(quote.personSlug, 'quote-avatar', base)
+    ? avatarTag(quote.personSlug, 'quote-avatar', base, canonicalizePersonName(quote.person))
     : '';
   const inner = entryPath ? `<a href="${entryPath}">${text}</a>` : text;
   return `<cite class="quote-attribution">${avatar}${inner}</cite>`;
+}
+
+/**
+ * Lightweight tag for a CONTINUATION quote: a bare `<!-- speaker: NAME -->`
+ * that reuses the same source already introduced by an earlier
+ * `<!-- quote: qN -->` in this file (STYLE_GUIDE.md "Do not repeat
+ * <!-- quote: qN --> for the same source in one file"). That rule
+ * correctly stops the same citation (avatar + link + date + medium) from
+ * appearing N times, but as a side effect left every continuation
+ * blockquote with no visible attribution at all for anyone other than
+ * Satoshi (whose blockquotes alone get a border accent via data-speaker).
+ * On a long point-by-point reply this reads as "whose words are these"
+ * once the reader has scrolled past the first blockquote.
+ *
+ * This renders just an avatar + bare name — no link, no date, no medium
+ * wording — so it cannot be mistaken for a second, distinct citation of
+ * the same source; it only answers "who is still talking".
+ */
+function formatSpeakerTag(quote, locale, base) {
+  const name = (locale === 'ja' && quote.personSlug)
+    ? (participantDisplayNamesJaBySlug[quote.personSlug] ?? quote.person)
+    : quote.person;
+  const avatar = quote.personSlug
+    ? avatarTag(quote.personSlug, 'quote-avatar', base, canonicalizePersonName(quote.person))
+    : '';
+  return `<cite class="quote-speaker-tag">${avatar}${name}</cite>`;
+}
+
+/**
+ * Map personSlug → the short data-speaker slug CSS/remark-speaker-blockquote
+ * key off (`blockquote[data-speaker="satoshi"]`); every other slug passes
+ * through unchanged so a future per-person CSS rule can target it directly.
+ */
+function dataSpeakerSlugFor(personSlug) {
+  return personSlug === 'satoshi-nakamoto' ? 'satoshi' : personSlug;
 }
 
 /**
@@ -207,6 +247,31 @@ function getNextBlockquote(parent, startIndex) {
   return null;
 }
 
+/**
+ * Like getNextBlockquote, but for a bare `<!-- speaker: NAME -->` marker:
+ * distinguishes "reaches a blockquote with no <!-- quote: qN --> in
+ * between" (continuation candidate) from "a quote marker sits in
+ * between" (already chip-led — the primary marker pass above handles
+ * it) from "next sibling isn't a blockquote at all" (this speaker
+ * marker isn't introducing a quote here).
+ */
+function findContinuationTarget(parent, startIndex) {
+  for (let i = startIndex; i < parent.children.length; i++) {
+    const child = parent.children[i];
+    if (child.type === 'html') {
+      const val = child.value.trim();
+      if (SPEAKER_RE.test(val)) continue;
+      if (QUOTE_MARKER_RE.test(val)) return { chipLed: true };
+      if (TONE_SKIP_RE.test(val)) continue;
+      if (TONE_SKIP_END_RE.test(val)) continue;
+      // audit:quote-skip explicitly opts this blockquote out of attribution
+      return null;
+    }
+    return child.type === 'blockquote' ? { blockquote: child } : null;
+  }
+  return null;
+}
+
 export function remarkQuoteBlocks() {
   const base = process.env.CF_PAGES ? '/' : `${MIRROR_BASE}/`;
 
@@ -218,11 +283,51 @@ export function remarkQuoteBlocks() {
     const locale = detectLocale(vfile);
     const quotesMap = new Map(quotes.map(q => [q.id, q]));
 
+    // How many DISTINCT logical sources (person + sourceEntryId, see
+    // quoteSourceKey) each canonical person has in this file, and (when
+    // exactly one) a representative quote object for it. Counting distinct
+    // sources — not qN ids — matters because the 0522 migration minted a
+    // separate qN per blockquote even when quoting one message repeatedly;
+    // those duplicates are all the SAME source. A bare continuation speaker
+    // is only unambiguous when its person has a single source in this file
+    // (mirrors check-quotes.mjs's `speaker-named-no-quote-marker` detector).
+    const personSources = new Map(); // canon person → Set<sourceKey>
+    const soleQuoteByPerson = new Map(); // canon person → first quote of their sole source
+    for (const q of quotes) {
+      if (!q?.person) continue;
+      const canon = canonicalizePersonName(q.person);
+      let set = personSources.get(canon);
+      if (!set) personSources.set(canon, (set = new Set()));
+      set.add(quoteSourceKey(q));
+      if (!soleQuoteByPerson.has(canon)) soleQuoteByPerson.set(canon, q);
+    }
+    const personSourceCount = (canon) => personSources.get(canon)?.size ?? 0;
+
     // Walk the tree and collect replacements (don't mutate during visit)
     const replacements = [];
+    const speakerTagReplacements = [];
+    const demotedMarkerReplacements = [];
+    // Canonical persons already introduced by a <!-- quote: qN --> marker
+    // seen so far, and logical sources already chipped, in document order
+    // (unist-util-visit walks root children in order, so this is safe to
+    // build incrementally in one pass).
+    const attributedPersons = new Set();
+    const chippedSourceKeys = new Set();
 
     visit(tree, 'html', (node, index, parent) => {
       if (index === null || !parent) return;
+
+      const speakerMatch = node.value.trim().match(SPEAKER_MARKER_RE);
+      if (speakerMatch && parent.type === 'root') {
+        const speakerName = speakerMatch[1];
+        if (speakerName.toLowerCase() === 'reset') return;
+        const canon = canonicalizePersonName(speakerName);
+        if (!attributedPersons.has(canon) || personSourceCount(canon) !== 1) return;
+        const target = findContinuationTarget(parent, index + 1);
+        if (!target || target.chipLed) return;
+        speakerTagReplacements.push({ node, index, parent, canon, quote: soleQuoteByPerson.get(canon), blockquote: target.blockquote });
+        return;
+      }
 
       const match = node.value.trim().match(QUOTE_MARKER_RE);
       if (!match) return;
@@ -263,8 +368,120 @@ export function remarkQuoteBlocks() {
         }
       }
 
+      if (quote.person) {
+        const canon = canonicalizePersonName(quote.person);
+        const sourceKey = quoteSourceKey(quote);
+        // Repeat marker for a source already chipped in this file: when the
+        // person has a SINGLE logical source here, a second full chip is
+        // pure repetition (same link, same date) — demote it to the
+        // lightweight speaker tag. This is the renderer-level unification
+        // for the ~70 entry pairs where the 0522 migration minted a
+        // separate qN per blockquote of one message: those qN all share a
+        // sourceKey, so every marker after the first renders as a tag.
+        // When the person has MULTIPLE sources, repeated chips stay — the
+        // guide's disambiguation rule accepts them as the cost of telling
+        // the sources apart, and a bare name tag could not do that.
+        if (chippedSourceKeys.has(sourceKey) && personSources.get(canon)?.size === 1) {
+          demotedMarkerReplacements.push({ node, index, parent, canon, quote, blockquote: nextBq });
+          return;
+        }
+        attributedPersons.add(canon);
+        chippedSourceKeys.add(sourceKey);
+      }
+
       replacements.push({ node, quote, locale, index, parent, blockquote: nextBq });
     });
+
+    // A blockquote that a <!-- quote: qN --> replacement will chip is NOT a
+    // continuation — some files order the markers quote-first,
+    // speaker-second (`<!-- quote: q1 -->` then `<!-- speaker: NAME -->`
+    // then the blockquote), and the speaker marker's forward walk alone
+    // cannot see the chip behind it. Without this filter the chip and the
+    // tag stack on the same blockquote (James Donald double-attribution,
+    // 2026-07-08). Also dedupe: one tag per blockquote.
+    const chipLedBlockquotes = new Set(replacements.map(r => r.blockquote));
+    const taggedBlockquotes = new Set();
+
+    // Canonical speaker of every root-level blockquote, from the nearest
+    // marker (speaker or chip) directly above it. Used by the
+    // adjacent-same-speaker check below.
+    const blockquoteSpeaker = new Map();
+    {
+      let pendingSpeaker = null;
+      for (const child of tree.children) {
+        if (child.type === 'html') {
+          const val = child.value.trim();
+          const sm = val.match(SPEAKER_MARKER_RE);
+          if (sm && sm[1].toLowerCase() !== 'reset') {
+            pendingSpeaker = canonicalizePersonName(sm[1]);
+          } else {
+            const qm = val.match(QUOTE_MARKER_RE);
+            const q = qm && quotesMap.get(qm[1]);
+            if (q?.person) pendingSpeaker = canonicalizePersonName(q.person);
+          }
+          continue; // tone-skip / audit markers are transparent
+        }
+        if (child.type === 'blockquote') {
+          if (pendingSpeaker) blockquoteSpeaker.set(child, pendingSpeaker);
+        }
+        pendingSpeaker = null; // consumed by the blockquote, or broken by prose
+      }
+    }
+
+    // True when the nearest preceding root sibling that isn't an HTML
+    // marker is a blockquote by the same speaker — i.e. this quote sits
+    // DIRECTLY under the previous one with no prose between them. The
+    // visual adjacency already carries the continuity, so repeating the
+    // name tag on every block of an unbroken run is noise; the tag is
+    // only for re-identifying the speaker after intervening prose.
+    function directlyFollowsSameSpeaker(parent, index, canon) {
+      for (let i = index - 1; i >= 0; i--) {
+        const child = parent.children[i];
+        if (child.type === 'html') continue;
+        return child.type === 'blockquote' && blockquoteSpeaker.get(child) === canon;
+      }
+      return false;
+    }
+
+    // Shared tail for both tag-producing loops below: render the lightweight
+    // tag unless the blockquote is already chip-led / tagged or sits
+    // directly under a same-speaker blockquote (adjacency suppression), and
+    // carry the speaker accent onto the blockquote either way. Setting
+    // data-speaker here (not via remarkSpeakerBlockquote) matters because
+    // that later plugin re-matches the marker's own text — which this loop
+    // may have replaced or cleared. `clearOnSuppress` differs by marker
+    // kind: a suppressed BARE SPEAKER marker keeps its comment text (an
+    // HTML comment renders invisibly, and untouched markers stay legible
+    // to the later plugins), while a suppressed DEMOTED QUOTE marker is
+    // cleared so no `<!-- quote: qN -->` survives into the output of a
+    // plugin whose contract is to consume every quote marker.
+    const applySpeakerTag = ({ node, index, parent, canon, quote, blockquote }, clearOnSuppress) => {
+      const suppressed =
+        chipLedBlockquotes.has(blockquote) ||
+        taggedBlockquotes.has(blockquote) ||
+        directlyFollowsSameSpeaker(parent, index, canon);
+      if (suppressed) {
+        if (clearOnSuppress) node.value = '';
+      } else {
+        taggedBlockquotes.add(blockquote);
+        node.value = formatSpeakerTag(quote, locale, base);
+      }
+      if (blockquote && quote.personSlug) {
+        blockquote.data = blockquote.data || {};
+        blockquote.data.hProperties = blockquote.data.hProperties || {};
+        if (!blockquote.data.hProperties['data-speaker']) {
+          blockquote.data.hProperties['data-speaker'] = dataSpeakerSlugFor(quote.personSlug);
+        }
+      }
+    };
+
+    // Demoted repeat markers (same source already chipped) render as tags.
+    // Runs before the bare-speaker loop so its blockquotes are registered
+    // in taggedBlockquotes first.
+    for (const item of demotedMarkerReplacements) applySpeakerTag(item, true);
+
+    // Bare-speaker continuation markers (see formatSpeakerTag).
+    for (const item of speakerTagReplacements) applySpeakerTag(item, false);
 
     // Apply replacements (safe since we're only changing html node values)
     for (const { node, quote, locale: loc, blockquote } of replacements) {
@@ -272,19 +489,14 @@ export function remarkQuoteBlocks() {
       // Tag the associated blockquote with data-speaker so CSS can apply
       // the speaker's accent color to the left border. Matches the
       // existing data-speaker convention used by remark-speaker-blockquote.
+      // Today only satoshi-nakamoto has a styling rule; other speakers
+      // keep their full personSlug so a future CSS rule can target them
+      // directly (see dataSpeakerSlugFor).
       if (blockquote && quote.personSlug) {
-        // Map personSlug → the short data-speaker slug already used by
-        // CSS (`blockquote[data-speaker="satoshi"]`) and by
-        // remark-speaker-blockquote. Today only satoshi-nakamoto has a
-        // styling rule; other speakers keep their full personSlug so a
-        // future CSS rule can target them directly.
-        const speakerSlug = quote.personSlug === 'satoshi-nakamoto'
-          ? 'satoshi'
-          : quote.personSlug;
         blockquote.data = blockquote.data || {};
         blockquote.data.hProperties = blockquote.data.hProperties || {};
         if (!blockquote.data.hProperties['data-speaker']) {
-          blockquote.data.hProperties['data-speaker'] = speakerSlug;
+          blockquote.data.hProperties['data-speaker'] = dataSpeakerSlugFor(quote.personSlug);
         }
       }
     }

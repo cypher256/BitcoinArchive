@@ -17,6 +17,7 @@ import { fileURLToPath } from 'node:url';
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import { visit } from 'unist-util-visit';
+import { canonicalizePersonName, quoteSourceKey } from '../src/lib/person-name-aliases.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const enDir = path.resolve(__dirname, '../src/data/entries/en');
@@ -52,33 +53,10 @@ const REAL_NAMES_REQUIRING_SLUG = new Set([
   'Eugen Leitl',
 ]);
 
-// Name aliases that resolve to the same person — used by the
-// `speaker-named-no-quote-marker` detector to decide whether a
-// speaker shift continues an existing chain (same person already
-// attributed by an earlier `<!-- quote: qN -->`). The frontmatter
-// `quotes[].person` sometimes carries an email handle (e.g.,
-// "mmalmi@cc.hut.fi") while body markers use the display name
-// (e.g., "Martti Malmi"). Both must compare equal.
-const NAME_ALIAS_GROUPS = [
-  ['Martti Malmi', 'mmalmi@cc.hut.fi', 'sirius-m', 'Sirius'],
-  ['Satoshi Nakamoto', 'Satoshi', 'satoshi'],
-  ['Hal Finney', 'Hal'],
-  ['Ray Dillinger', 'Ray Dillinger (Bear)', 'Bear'],
-  ['Jeff Garzik', 'jgarzik'],
-  ['Gavin Andresen', 'gavinandresen'],
-  ['James A. Donald', 'James Donald'],
-  ['Liberty Standard', 'NewLibertyStandard'],
-  ['Dustin Trammell', 'Dustin D. Trammell'],
-];
-const NAME_ALIAS_MAP = new Map();
-for (const group of NAME_ALIAS_GROUPS) {
-  const canonical = group[0];
-  for (const alias of group) NAME_ALIAS_MAP.set(alias, canonical);
-}
-function canonicalizePersonName(s) {
-  const stripped = String(s).replace(/\s*\([^)]*\)\s*$/, '').trim();
-  return NAME_ALIAS_MAP.get(stripped) || NAME_ALIAS_MAP.get(s) || stripped;
-}
+// canonicalizePersonName is imported from person-name-aliases.mjs, shared
+// with remark-quote-blocks.mjs so the validator and the renderer agree on
+// whether a speaker shift continues an existing chain (same person already
+// attributed by an earlier `<!-- quote: qN -->`).
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -372,19 +350,22 @@ function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
   // to a single name (e.g., "mmalmi@cc.hut.fi" → "Martti Malmi") so
   // display variants in `<!-- speaker: ... -->` match `quotes[].person`.
   const quoteIdToPerson = new Map();
-  // Count how many quotes[] entries map to each canonical person.
-  // If exactly one qN covers this person, a later speaker shift can
-  // implicitly continue that qN (dedup rule). If multiple qN exist
-  // for the same person (e.g., q1 = Mike Hearn / source A, q2 = Mike
-  // Hearn / source B), a bare speaker shift is ambiguous about which
-  // source it continues, so the editor must place an explicit
-  // <!-- quote: qN --> marker to disambiguate.
-  const personQuoteCount = new Map();
+  // Count how many DISTINCT logical sources (person + sourceEntryId,
+  // see quoteSourceKey — several qN pointing at the same message count
+  // once) each canonical person has. If exactly one source covers this
+  // person, a later speaker shift can implicitly continue it (dedup
+  // rule). If the person has multiple sources (e.g., q1 = Mike Hearn /
+  // source A, q2 = Mike Hearn / source B), a bare speaker shift is
+  // ambiguous about which source it continues, so the editor must
+  // place an explicit <!-- quote: qN --> marker to disambiguate.
+  const personSources = new Map();
   for (const q of quotes) {
     if (q && q.id && q.person) {
       const person = canonicalizePersonName(q.person);
       quoteIdToPerson.set(String(q.id), person);
-      personQuoteCount.set(person, (personQuoteCount.get(person) || 0) + 1);
+      let set = personSources.get(person);
+      if (!set) personSources.set(person, (set = new Set()));
+      set.add(quoteSourceKey(q));
     }
   }
 
@@ -440,16 +421,16 @@ function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
     // new marker would render a duplicate attribution chip.
     //
     // Disambiguation: only treat the shift as covered when there is
-    // exactly ONE qN for this person in quotes[]. If multiple qN
-    // share the same canonical person (e.g., Mike Hearn quoted from
-    // two different source emails in one entry), a bare speaker
-    // shift cannot tell which qN it continues — require an explicit
+    // exactly ONE logical source for this person in quotes[]. If the
+    // person has multiple sources (e.g., Mike Hearn quoted from two
+    // different source emails in one entry), a bare speaker shift
+    // cannot tell which source it continues — require an explicit
     // <!-- quote: qN --> marker so the renderer knows which source
     // to attribute.
     const canonicalSpeaker = canonicalizePersonName(speakerName);
     if (
       attributedPersons.has(canonicalSpeaker) &&
-      (personQuoteCount.get(canonicalSpeaker) || 0) <= 1
+      (personSources.get(canonicalSpeaker)?.size || 0) <= 1
     ) continue;
 
     // Local "covered by chain" check: scan BACKWARD from this speaker
@@ -680,7 +661,28 @@ function checkFile(filePath, locale) {
       // tight ^(>+) regex missed depth-N markers written with spaces
       // (the more common markdown form).
       const nm = line.match(/^((?:>\s*)+)<!--\s*quote:\s*(\w+)\s*-->/);
-      if (!nm) continue;
+      if (!nm) {
+        // Inverse direction: a marker whose quotes[] entry HAS a parent
+        // must sit INSIDE the parent's blockquote (`> <!-- quote: qN -->`),
+        // never at the root. A root-level parented marker renders the
+        // nested chip stacked OUTSIDE its parent bubble (the 2026-07-08
+        // stacked-chips incident: 46 leftovers from the 0523 nested-chip
+        // batches, e.g. malmi bitcoin-008). The blockquote-prefixed case
+        // is handled by the `nm` branch below.
+        const rootMarker = line.match(/^<!--\s*quote:\s*(\w+)\s*-->/);
+        if (rootMarker) {
+          const rq = quotes.find(x => x && x.id === rootMarker[1]);
+          if (rq?.parent) {
+            violations.push({
+              file: rel,
+              check: 'nested-marker-at-root',
+              level: 'error',
+              msg: `Line ${i + 1}: marker "${rootMarker[1]}" has parent "${rq.parent}" but sits at the root. Move it inside the parent blockquote at the parent's depth (e.g. "> <!-- quote: ${rootMarker[1]} -->").`,
+            });
+          }
+        }
+        continue;
+      }
       const depth = (nm[1].match(/>/g) || []).length;
       const qid = nm[2];
       const q = quotes.find(x => x && x.id === qid);

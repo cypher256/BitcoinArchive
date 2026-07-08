@@ -87,6 +87,21 @@ export function avatarInitials(name: string): string {
 }
 
 /**
+ * Fallback initials from the participant SLUG (first letter of the
+ * first two hyphen tokens). Used only when the caller cannot supply a
+ * display name. Prefer name-derived initials: slugs sometimes drop
+ * middle tokens the display name keeps ("james-donald" → "JD" vs
+ * "James A. Donald" → "JA" on the generated PNG), and the same person
+ * must show the same letters in every slot.
+ */
+export function avatarInitialsFromSlug(slug: string): string {
+  const tokens = slug.split('-').filter(Boolean);
+  if (tokens.length === 0) return '?';
+  if (tokens.length === 1) return tokens[0].slice(0, 1).toUpperCase();
+  return (tokens[0][0] + tokens[1][0]).toUpperCase();
+}
+
+/**
  * Resolve a participant slug to an avatar image URL.
  *
  * `base` is the site base path with a trailing slash already applied
@@ -124,9 +139,23 @@ export const AVATAR_PX: Record<string, number> = {
  * entirely by the size-class via --avatar-size in global.css; the px
  * attrs only guard layout shift.
  */
-export function avatarTag(slug: string, sizeClass: string, base: string): string {
+export function avatarTag(slug: string, sizeClass: string, base: string, displayName?: string): string {
   if (slug === 'satoshi-nakamoto') {
     return `<span class="avatar ${sizeClass} satoshi-av" aria-hidden="true">SN</span>`;
+  }
+  // Quote chips/tags render generated avatars as CSS-text initials
+  // (same mechanism as Satoshi's SN span) instead of the baked PNG
+  // disc: the quote slot is a rounded-rect BADGE shorter than a
+  // circle, and only CSS-drawn letters can hold their font size while
+  // the box height shrinks — a PNG's baked initials would scale down
+  // or distort. Other slots keep the PNG. Real photos always stay
+  // <img>; CSS crops them to the slot's shape. Initials come from the
+  // caller-supplied EN display name so they match the PNG's letters in
+  // the circular slots (see avatarInitialsFromSlug on why slug-derived
+  // letters can differ).
+  if (sizeClass === 'quote-avatar' && !hasAvatarPhoto(slug)) {
+    const initials = displayName ? avatarInitials(displayName) : avatarInitialsFromSlug(slug);
+    return `<span class="avatar ${sizeClass} initials-av" style="background:${avatarBackground(slug)}" aria-hidden="true">${initials}</span>`;
   }
   const px = AVATAR_PX[sizeClass] ?? 32;
   return `<img class="avatar ${sizeClass}" src="${resolveAvatar(slug, base)}" alt="" width="${px}" height="${px}" loading="lazy" />`;

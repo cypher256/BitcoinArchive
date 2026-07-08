@@ -1044,6 +1044,41 @@ one `qN` in `quotes[]`. When the same canonical person has two or
 more `qN` entries, the detector keeps requiring an explicit marker
 on every speaker shift (see the disambiguation rule above).
 
+**Continuation speaker tag (automatic rendering):** the dedup rule
+used to leave every continuation blockquote with no visible
+attribution at all (only Satoshi was identifiable, via his border
+accent), so a long point-by-point exchange forced the reader to
+scroll back to the first chip to recall whose words the later
+blockquotes were. `remark-quote-blocks` therefore renders a
+lightweight speaker tag (avatar + bare name, `.quote-speaker-tag` —
+no link, no date, no medium wording, so it cannot be mistaken for a
+second citation) above each continuation blockquote. Two marker
+shapes produce it:
+
+1. A bare `<!-- speaker: NAME -->` whose person has exactly one
+   logical source among the earlier `qN` chips.
+2. A repeated `<!-- quote: qN -->` whose logical source was already
+   chipped earlier in the file, when the person has only that one
+   source — the repeat chip is demoted to the tag. This covers the
+   legacy entries where the 0522 bulk migration minted a separate
+   `qN` per blockquote of one message (same `person` + same
+   `sourceEntryId` duplicated across `quotes[]`) instead of reusing
+   one `qN`; the renderer treats those duplicates as one source.
+
+"Logical source" means the (canonical person, `sourceEntryId`) pair
+(`quoteSourceKey` in `src/lib/person-name-aliases.mjs`) — several
+`qN` entries pointing at the same message count as ONE source.
+Directly consecutive blockquotes by the same speaker (no prose
+between them) render the tag on the first block only — adjacency
+already carries the continuity. Persons with two or more DISTINCT
+sources never get a tag and keep their explicit chips; a bare name
+could not tell the sources apart (see the disambiguation rule).
+This is renderer behavior; editors add nothing — the existing
+markers drive it. The validator and the renderer share the
+canonical-name table and the source-key helper
+(`src/lib/person-name-aliases.mjs`), so what the detector accepts as
+a continuation is exactly what the renderer tags.
+
 ### Audit
 
 `scripts/check-editorial-markers.mjs` enforces these rules under

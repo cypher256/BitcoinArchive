@@ -591,6 +591,29 @@ blockquote[data-speaker="satoshi"] {
 .quote-attribution + blockquote {
   margin-top: 0;
 }
+
+/* Lightweight speaker tag for CONTINUATION quotes: a bare
+   `<!-- speaker: NAME -->` reusing a source already introduced by an
+   earlier `<!-- quote: qN -->` in the same file (remark-quote-blocks'
+   formatSpeakerTag). Deliberately smaller and more muted than
+   .quote-attribution and carries no link, no date, no medium wording —
+   it answers "who is still talking", not "here is a new citation", so a
+   long point-by-point exchange never leaves a continuation blockquote
+   with zero visible attribution. */
+.quote-speaker-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-style: normal;
+  font-size: 0.8em;
+  margin-top: 1.25em;
+  margin-bottom: 0.3em;
+  color: var(--color-text-muted);
+  opacity: 0.85;
+}
+.quote-speaker-tag + blockquote {
+  margin-top: 0;
+}
 /* ── Avatars ──────────────────────────────────────────────────────────
    ONE shape for every avatar slot (quote chip, dossier card, participant
    page, entry title, thread message header). Only the SIZE differs per
@@ -612,28 +635,46 @@ blockquote[data-speaker="satoshi"] {
 .entry-author-avatar { --avatar-size: 3rem; }
 .message-avatar { --avatar-size: 1.9rem; }
 .card-author-avatar { --avatar-size: 1.5rem; }
-/* Satoshi's avatar is drawn in CSS (a <span class="avatar <size-class>
-   satoshi-av">SN</span>), not a baked PNG, so the "SN" colour can follow
-   the theme: white on the light-mode amber-orange, dark ink on the lighter
-   dark-mode amber — a single fixed-colour PNG can't. Background tracks
-   --color-satoshi (the bubble-outline colour). The initial's font-size is
-   a fixed fraction of --avatar-size; since --avatar-size is rem-based (NOT
-   em), there is no size<->font-size circular reference, and width/height
-   come straight from .avatar above — pixel-identical to every <img>. */
-.avatar.satoshi-av {
+/* Quote chip/tag avatars are BADGES (rounded rect), not discs. The
+   initials there are CSS text (initials-av / satoshi-av spans emitted by
+   avatarTag), so the box can be shorter than a circle while the letters
+   keep the font size a 1.575rem disc would give them — the attribution
+   row sits lower. --avatar-size stays as set above because the text
+   size derives from it; only the box geometry is overridden. Photo
+   <img> avatars (none registered today) get cropped to the same badge
+   by .avatar's object-fit. Every other slot keeps the circle. */
+.avatar.quote-avatar {
+  width: 1.7rem;
+  height: 1.15rem;
+  border-radius: 0.3rem;
+}
+/* Text-drawn avatars: Satoshi's SN span and the quote-slot initials
+   spans share one layout/typography block. Satoshi is a dedicated class
+   (not an inline background) so the "SN" colour can follow the theme:
+   white on the light-mode amber-orange, dark ink on the lighter
+   dark-mode amber — a single fixed colour can't. Background tracks
+   --color-satoshi (the bubble-outline colour). Generated initials spans
+   (initials-av) carry their deterministic background inline from
+   avatarBackground(slug). The font-size is a fixed fraction of
+   --avatar-size; since --avatar-size is rem-based (NOT em), there is no
+   size<->font-size circular reference. */
+.avatar.satoshi-av,
+.avatar.initials-av {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   overflow: hidden;
-  /* !important overrides .avatar's --color-bg-alt placeholder. */
-  background: var(--color-satoshi) !important;
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.02em;
   font-size: calc(var(--avatar-size) * 0.42);
   color: #ffffff;
+}
+.avatar.satoshi-av {
+  /* !important overrides .avatar's --color-bg-alt placeholder. */
+  background: var(--color-satoshi) !important;
 }
 :root[data-mode="dark"] .avatar.satoshi-av {
   color: #14181f;
