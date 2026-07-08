@@ -41,18 +41,18 @@ translationStatus: complete
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-<!-- quote: q2 -->
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- quote: q2 -->
+> <!-- speaker: Satoshi Nakamoto -->
 >> 使えるメモリーはどのくらいか？
-<!-- speaker: Martti Malmi -->
+> <!-- speaker: Martti Malmi -->
 > VPSには320MBのRAMがあり、そのうち50MBが現在空いています。
 > 500MBのスワップ領域もあります。
 >
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Satoshi Nakamoto -->
 >> Bitcoinはそれなりにメモリーを必要とする。
 >> Windowsでは約75MBだ。問題になるか？
 >
-<!-- speaker: Martti Malmi -->
+> <!-- speaker: Martti Malmi -->
 > 本当ですか？こちらのWindowsタスクマネージャーではメモリー使用量は約13MBと表示されていますが。
 >
 

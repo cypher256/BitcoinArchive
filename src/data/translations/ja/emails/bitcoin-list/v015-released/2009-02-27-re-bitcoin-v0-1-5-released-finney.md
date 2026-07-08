@@ -34,7 +34,7 @@ translationStatus: complete
 ---
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
+> <!-- quote: q2 -->
 >> 次は何でしょうか？
 >
 > v0.1.6 で次に予定しているのは、ブロック生成に複数のプロセッサーを

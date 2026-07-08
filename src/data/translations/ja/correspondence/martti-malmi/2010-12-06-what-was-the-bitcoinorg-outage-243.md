@@ -42,13 +42,13 @@ relatedEntries:
 <!-- tone-skip -->
 > パスワードを送る準備ができました。平文で送らなくて済むように、PGP鍵を送ってもらえますか？
 >
-<!-- /tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
-<!-- quote: q2 -->
+> <!-- quote: q2 -->
+> <!-- speaker: Satoshi Nakamoto -->
 >> Gavinがいいだろう。彼を信頼しているし、責任感があり、プロフェッショナルで、技術的にも私よりはるかにLinuxに精通している。
 >
-<!-- speaker: Martti Malmi -->
+> <!-- speaker: Martti Malmi -->
 > 分かりました、彼に聞いてみます。
+<!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 ありがとう。bitcoinexchange の別サーバーへの移行は完了したか？

@@ -38,7 +38,7 @@ You're right, I was looking at a test run with 250,000 blocks... duh.
 A normal one shows 17MB memory usage and 10MB VM size.
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
+> <!-- quote: q2 -->
 >> How much memory do you have to work with?
 > The VPS has 320MB RAM, 50MB of which is currently free. There's also 
 > 500MB swap space.

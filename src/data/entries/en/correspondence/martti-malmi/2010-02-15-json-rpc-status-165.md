@@ -35,7 +35,7 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
+> <!-- quote: q2 -->
 >> Don't you have an Ubuntu laptop you can test and compile on so you
 >> don't have to toy with the vps?
 > 

@@ -48,9 +48,8 @@ quotes:
 <!-- tone-skip -->
 > 意図的に変更したわけではないです。エンコーディングの問題だったのでしょう。
 >
-<!-- /tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
-<!-- quote: q2 -->
+> <!-- quote: q2 -->
+> <!-- speaker: Satoshi Nakamoto -->
 >> この変更の理由は何だったのか？
 >>
 >> #if !wxUSE_UNICODE
@@ -67,3 +66,4 @@ quotes:
 >
 >
 >
+<!-- /tone-skip -->

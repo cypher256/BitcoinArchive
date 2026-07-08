@@ -37,12 +37,12 @@ translationStatus: complete
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-<!-- quote: q2 -->
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- quote: q2 -->
+> <!-- speaker: Satoshi Nakamoto -->
 >> VPSをいじらなくても済むように、テストやコンパイルができるUbuntuの
 >> ノートパソコンを持っていないか？
 >
-<!-- speaker: Martti Malmi -->
+> <!-- speaker: Martti Malmi -->
 > はい。Python の JSON-RPC でテストしましたが、問題なく動作しているようです！
 > 本当に使いやすいですよ。
 

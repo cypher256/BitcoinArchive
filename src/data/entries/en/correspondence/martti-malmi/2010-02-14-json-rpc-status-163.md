@@ -35,7 +35,7 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
+> <!-- quote: q2 -->
 >> I haven't tested my JSON-RPC server with anything else yet.  If you do,
 >> please tell me how it goes.  You're using Python, right?
 >>

@@ -34,7 +34,7 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
+> <!-- quote: q2 -->
 >> Btw, are you able to use my builds of bitcoind on your host, or do you
 >> have to build it yourself?
 > 

@@ -40,8 +40,8 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
-<!-- quote: q3 -->
+> <!-- quote: q2 -->
+>> <!-- quote: q3 -->
 >>> Just a few clues I've found about running the same binary without a GUI:
 >>>
 >>> 1) GTK supports running a program without display:   

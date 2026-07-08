@@ -113,9 +113,7 @@ secure and Free Open Source software downloads" /></a>
 > SFプロジェクト管理画面からSourceforgeのロゴを取得して、サイトの
 > フッターに追加できると良いですね。
 >
-<!-- /tone-skip -->
-<!-- speaker: Martti Malmi -->
-<!-- quote: q2 -->
+> <!-- quote: q2 -->
 >> 現在のサイトレイアウトはすっきりしていて良いですね。
 >> ロゴだけ変更すべきです。
 >> すぐに公開したいなら、とりあえずサイトタイトルに置き換えて、後でもっと良いロゴを作ればいいでしょう。
@@ -125,3 +123,4 @@ secure and Free Open Source software downloads" /></a>
 >
 >
 >
+<!-- /tone-skip -->

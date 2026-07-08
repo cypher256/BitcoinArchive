@@ -33,7 +33,7 @@ quotes:
 ---
 
 <!-- quote: q1 -->
-<!-- quote: q2 -->
+> <!-- quote: q2 -->
 >> What's next?
 >
 > The next thing for v0.1.6 is to take advantage of multiple

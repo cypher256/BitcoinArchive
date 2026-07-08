@@ -48,8 +48,8 @@ translationStatus: complete
 >
 > NewLibertyStandardはコインが枯渇しないように、価格を市場価格（つまり、人々が買いたい・売りたいと思う価格）に変更すべきかもしれません。
 >
-<!-- quote: q2 -->
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- quote: q2 -->
+> <!-- speaker: Satoshi Nakamoto -->
 >> SMF フォーラムの設定を進めている。SMF は phpBB よりも設計が優れていて信頼性が高いと言われているので、SMF の見た目をちゃんと整えられるなら、そちらが望ましい選択だ。
 >>
 >> ほとんどのフォーラムは vBulletin で運営されている（big-boards.com には vBulletin 1376件、Invision 275件、phpBB 245件、SMF 41件が掲載されている）。そのため、vBulletin や Invision の見た目でないと、vBulletin を買えなくて妥協したように見えてしまう。SMF の UI は標準的な見た目からかなり離れていたが、CSS を使って他のものに近づけることができた。

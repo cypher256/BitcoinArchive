@@ -63,9 +63,8 @@ Linux 版を GTK なしで動作させるのは別の作業になる。
 <!-- tone-skip -->
 > それは素晴らしいですね！Liberty Reserve とその API について勉強し始めます。
 >
-<!-- /tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
-<!-- quote: q2 -->
+> <!-- quote: q2 -->
+> <!-- speaker: Satoshi Nakamoto -->
 >> JSON-RPC の実装は順調に進んでいる。ソケットには boost::asio を使っている。
 >> JSON-RPC は素のソケットでも HTTP でも使えるが、他の実装のほとんどは HTTP のようなので、独自のシンプルな HTTP ヘッダーを作った。
 >> JSON のパースには JSON Spirit を使っている。STL をフル活用しており、非常に使いやすい。
@@ -77,3 +76,4 @@ Linux 版を GTK なしで動作させるのは別の作業になる。
 >
 >
 >
+<!-- /tone-skip -->
