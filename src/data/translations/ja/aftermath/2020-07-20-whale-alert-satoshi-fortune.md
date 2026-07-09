@@ -32,6 +32,7 @@ relatedEntries:
   - aftermath/2019-04-16-sergio-lerner-patoshi-naming
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
+  - analysis/2026-07-09-bitcoin-ownership-map
 translationStatus: complete
 ---
 

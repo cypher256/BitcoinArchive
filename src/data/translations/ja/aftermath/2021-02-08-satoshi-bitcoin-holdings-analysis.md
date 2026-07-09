@@ -32,6 +32,7 @@ relatedEntries:
   - aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine
   - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
+  - analysis/2026-07-09-bitcoin-ownership-map
 translationStatus: complete
 ---
 

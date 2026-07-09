@@ -29,6 +29,7 @@ relatedEntries:
   - aftermath/2010-12-12-satoshi-handover-to-andresen
   - aftermath/2011-04-26-satoshi-final-known-email
   - aftermath/2020-07-20-whale-alert-satoshi-fortune
+  - analysis/2026-07-09-bitcoin-ownership-map
 inlineLinkKeywords:
   - "デジタルゴールド"
   - "二層の非中央集権"
@@ -179,3 +180,5 @@ flowchart TB
 本枠組みは、なぜデジタルゴールドの呼び名がビットコインに定着し、他には定着しなかったかの説明である。それが定着し続けることの保証ではない。
 
 本構造的特徴分析は[ビットコイン・フォークおよびアルトコイン家系図分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)において文脈規定的な役割を与えられている。同分析の結びの段落は本エントリを「フォーク目録をビットコインの 2017 年以後の軌道に対する統治論・通貨的性質論の根拠となる事実基盤として扱う二つの分析」の一方として名指す。
+
+保有の側から見た 2026 年の現在地 — 企業財務・現物 ETF・国家準備がサトシの動かない約 110 万 BTC にどこまで迫ったか、そして保有の集中がなぜ第 2 層の言うプロトコルへの権威にならないか — は[誰がビットコインを握っているのか](/BitcoinArchive/ja/entries/analysis/2026-07-09-bitcoin-ownership-map/)が描いている。

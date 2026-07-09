@@ -1,0 +1,24 @@
+{
+  "unit": "btc",
+  "topN": 5,
+  "labels": {
+    "en": {
+      "title": "The largest named holders vs Satoshi (2020 → 2026)",
+      "subtitle": "Strategy compounds from 70,470 BTC to 843,775; BlackRock's IBIT appears in 2024 and tops 800k in spring 2026 before ETF outflows pull it back; the U.S. government's seized-and-reserved stack steps upward. The orange bar — Satoshi's untouched ~1.1 million — never moves, and is still first.",
+      "note": "BTC held, approximate year-end anchors (2026 = latest mid-year figure). Strategy: SEC disclosures via bitbo / BitcoinTreasuries. IBIT: trust holdings, custodied for ETF shareholders — not BlackRock's own coins. U.S. government: tracker-attributed seized balances plus the Strategic Bitcoin Reserve. China: the 2019 PlusToken seizure; custody status disputed. *Satoshi: the ~1.1M BTC Patoshi estimate — never spent, an attribution, not an audited balance."
+    },
+    "ja": {
+      "title": "名前のある最大保有者たちとサトシ（2020〜2026）",
+      "subtitle": "Strategy は 70,470 BTC から 843,775 BTC へ積み上げ、BlackRock の IBIT は 2024 年に現れて 2026 年春に 80 万枚を超え、その後の資金流出で押し戻される。米国政府の押収・準備分は段階的に増える。オレンジのバー — 動かないサトシの約 110 万枚 — は一度も動かず、まだ首位にいる。",
+      "note": "BTC 建て、おおよその年末値（2026 年は年央の最新値）。Strategy は SEC 開示（bitbo / BitcoinTreasuries 経由）。IBIT は信託の保有分で、ETF 株主のための預かりであり BlackRock 自身のコインではない。米国政府は押収残高と戦略ビットコイン準備のトラッカー帰属値。中国は 2019 年 PlusToken 押収分で、管理状態は係争中。*サトシは Patoshi 推定の約 110 万 BTC。一度も使われていない帰属推定であり、監査された残高ではない。"
+    }
+  },
+  "dates": [2020, 2021, 2022, 2023, 2024, 2025, 2026],
+  "series": [
+    { "name": { "en": "Satoshi*", "ja": "サトシ*" }, "colorToken": "--color-satoshi", "values": [1100000, 1100000, 1100000, 1100000, 1100000, 1100000, 1100000] },
+    { "name": { "en": "Strategy (MSTR)", "ja": "Strategy（MSTR）" }, "colorToken": "--chart-color-2", "values": [70470, 124391, 132500, 189150, 446400, 672497, 843775] },
+    { "name": { "en": "BlackRock IBIT", "ja": "BlackRock IBIT" }, "colorToken": "--chart-color-4", "values": [0, 0, 0, 0, 551918, 776475, 733947] },
+    { "name": { "en": "U.S. government", "ja": "米国政府" }, "colorToken": "--chart-color-5", "values": [69370, 120046, 214682, 215357, 207189, 325293, 328372] },
+    { "name": { "en": "China (seized)", "ja": "中国（押収）" }, "colorToken": "--chart-color-6", "values": [194000, 194000, 194000, 194000, 194000, 194000, 194000] }
+  ]
+}

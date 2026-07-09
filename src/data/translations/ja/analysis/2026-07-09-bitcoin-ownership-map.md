@@ -1,0 +1,135 @@
+---
+title: "誰がビットコインを握っているのか ― ETF・企業財務・国家、分散の理念との距離"
+date: 2026-07-09T00:00:00Z
+type: "analysis"
+source: "bitcointreasuries"
+sourceUrl: "https://bitcointreasuries.net/"
+sourceNote: "保有トラッカーと分析各社の公表値を突き合わせた 2026 年 7 月時点の合成。個々の数値の時点と出典は本文の表に記載。"
+author: "Bitcoin Institute"
+participants:
+  - name: "Satoshi Nakamoto"
+    slug: "satoshi-nakamoto"
+description: "サトシの約 110 万 BTC はほぼ動かないまま、上場企業・現物 ETF・国家が保有を積み上げた。2100 万枚の現在の地図を出典付きの数字で描き、二層の非中央集権のいまを確かめる。"
+isSatoshi: false
+tags:
+  - "analysis"
+  - "bitcoin-holdings"
+  - "decentralization"
+  - "digital-gold"
+secondarySources:
+  - name: "River Financial — Who Owns the Most Bitcoin?"
+    url: "https://river.com/learn/who-owns-the-most-bitcoin/"
+    note: "2025 年 12 月時点の区分推計。"
+  - name: "Arkham Intelligence — Who Owns the Most Bitcoin: Top BTC Holders 2026"
+    url: "https://info.arkm.com/research/who-owns-the-most-bitcoin-top-btc-holders-2026"
+  - name: "bitbo — Strategy (MicroStrategy) Bitcoin Holdings"
+    url: "https://bitbo.io/treasuries/microstrategy"
+  - name: "bitbo — BlackRock IBIT Bitcoin Holdings"
+    url: "https://bitbo.io/treasuries/blackrock-ibit/"
+  - name: "CoinGecko — United States Government Bitcoin Holdings"
+    url: "https://www.coingecko.com/en/treasuries/governments/united-states"
+  - name: "BitcoinTreasuries — Governments"
+    url: "https://bitcointreasuries.net/governments"
+  - name: "Chainalysis — Landscape of Seizable Crypto Assets (2025)"
+    url: "https://www.chainalysis.com/blog/landscape-of-seizable-crypto-assets-2025/"
+    note: "犯罪関連オンチェーン残高の推定（2025 年 7 月時点）。"
+  - name: "Chainalysis — 2025 Crypto Theft and North Korea (2026 report)"
+    url: "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/"
+  - name: "TRM Labs — H1 2026 Crypto Hacks"
+    url: "https://www.trmlabs.com/resources/blog/h1-2026-crypto-hacks-reach-record-high-as-losses-fall-below-usd-1-billion"
+relatedEntries:
+  - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
+  - aftermath/2020-07-20-whale-alert-satoshi-fortune
+translationStatus: complete
+---
+
+2026 年 7 月 6 日時点で、Strategy（旧 MicroStrategy）一社が 843,775 BTC を保有する。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が採掘したまま一度も動かしていない約 110 万 BTC との差は、25 万枚余りまで縮んだ。16 年間、誰も近づけなかった首位の背中が、初めて視界に入る距離にある。
+
+[ビットコインがデジタルゴールドと呼ばれる理由](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)は、その価値の核心を二層の非中央集権 — システムに管理者がなく、人と組織に権威がない — に置いた。創設者の不在は保有の風景にも表れる。では 2026 年の風景で、2100 万枚は実際に誰の手にあるのか。
+
+## 2100 万枚の地図
+
+全体を先にひとつの表に置き、同じ数字を面積のかたちでも示す。
+
+| 区分 | BTC | 上限比 | 時点・出典 |
+|---|---|---|---|
+| 個人・未分類（残余） | 約 1,323 万 | 63.0% | 2,100 万からの引き算 |
+| 失われたコイン | 230 万〜370 万 | 11.0〜17.6% | Chainalysis 由来の推定幅 |
+| 上場企業 | 1,264,579 | 6.0% | 2026 年 7 月・BitcoinTreasuries |
+| 現物 ETF・ファンド | 1,214,016 | 5.8% | 2026 年 7 月 7 日・米現物 ETF 合算 |
+| サトシ（Patoshi 推定） | 約 110 万 | 5.2% | 2010 年以降ほぼ不変 |
+| 未採掘 | 約 95.7 万 | 4.6% | 2026 年半ば |
+| 政府 | 649,954 | 3.1% | 2026 年 7 月・BitcoinTreasuries |
+| 非上場企業 | 281,752 | 1.3% | 2026 年 7 月・BitcoinTreasuries |
+
+<!-- chart: ownership-treemap -->
+
+区分は「誰のものか」で切っている。取引所が顧客のために預かる分は「誰が鍵を持つか」という別の軸で、この表の各区分と重なるため行にしていない。その規模の推定自体にも開きがあり、CryptoQuant は供給の約 12%、Glassnode は約 16% とする。取引所アドレスの判定手法の違いが、そのまま数字の差になっている。
+
+表の 6 割を占める「個人・未分類」は、名前を付けられる保有をすべて引いた後の残りである。無数の個人ウォレットも、どのトラッカーもまだ名前を付けられない大口も、名前を付けようのない不正資金も、ここに混ざっている（後述）。
+
+## 企業財務 ― Strategy の一点集中
+
+上場企業の保有 1,264,579 BTC のうち、3 分の 2 を Strategy 一社が占める。2 位以下は桁がひとつ違う — 2026 年時点の 2 位は Twenty One Capital の 43,514 BTC、3 位は Metaplanet の約 4 万 BTC、4 位は MARA の約 3.9 万 BTC で、Strategy 以外の全上場企業を合計しても 420,804 BTC と、Strategy 一社の半分に届かない。
+
+<!-- chart: public-companies-bar -->
+
+2020 年 8 月に最初の購入を開示したとき、上場企業がビットコインを財務資産にするという発想はまだ実験だった。
+
+| 年末 | Strategy の保有 |
+|---|---|
+| 2020 | 70,470 BTC |
+| 2021 | 124,391 BTC |
+| 2022 | 132,500 BTC |
+| 2023 | 189,150 BTC |
+| 2024 | 446,400 BTC |
+| 2025 | 672,497 BTC |
+| 2026 年 7 月 6 日 | 843,775 BTC |
+
+出典は各年の SEC 開示。伸びが跳ねたのは 2024 年で、最初の 4 年で積んだ残高をその一年でほぼ倍にし、以後も買い続けた。
+
+## 現物 ETF ― 2024 年に現れた最大の買い手
+
+米国で現物 ETF が承認されたのは 2024 年 1 月。2 年半後、ETF 群の預かりは合計約 121 万 BTC になった。単一の商品では BlackRock の IBIT が最大で、2024 年末に 551,918 BTC、2025 年末に 776,475 BTC、2026 年春には 81 万〜82 万 BTC に達し、5〜6 月の記録的な資金流出を経て 7 月時点では 733,947 BTC まで減っている。
+
+この区分は所有の性質が違う。IBIT のコインは BlackRock の資産ではなく、ETF の株主のために信託が預かる持ち分にあたる。自社のバランスシートで抱える企業財務と、投資家の持ち分を束ねる器である ETF は、同じ「機関」に見えて構造が別物だ。増減の仕方も違う — 企業財務は経営判断で積み上がり、ETF は株主の資金流出入で日々伸縮する。2026 年春からの 8 万枚近い減少は、その伸縮がそのまま数字に出たものである。
+
+## 国家 ― 押収から準備へ
+
+米国政府の残高は、買って積んだものではなく押収の系譜である。シルクロード関連の 69,370 BTC（2020 年 11 月の民事没収）、James Zhong からの 50,676 BTC（2021 年 11 月）、[2016 年 Bitfinex ハック](/BitcoinArchive/ja/entries/aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest/)からの回収 94,636 BTC（2022 年 2 月）。途中の競売や被害者への返還で 2025 年 3 月には約 19.8 万 BTC まで減っていたが、同月の大統領令が売却を止めて戦略ビットコイン準備に切り替えた。2025 年 10 月にはカンボジアの Prince Group 事件で米司法省史上最大の没収（127,271 BTC）が加わり、2026 年 2 月時点の帰属残高は 328,372 BTC になっている。
+
+| 政府 | BTC | 備考 |
+|---|---|---|
+| 米国 | 328,372 | 押収＋戦略準備。2026 年 2 月時点 |
+| 中国 | 約 194,000 | 2019 年 PlusToken 押収。管理・売却状況は非公開で、係争がある |
+| 英国 | 61,245 | 詐欺事件の没収 |
+| ウクライナ | 46,351 | 公職者の保有・寄付の集計。基礎数字は 2021 年時点と古い |
+| エルサルバドル | 7,706 | 購入による積み増し。2026 年 7 月 8 日時点 |
+| ブータン | 約 3,100〜5,000 | 水力マイニング由来。2024〜2026 年に大半を売却 |
+| その他・時点差 | 約 7,000〜9,000 | 上記以外の小口保有国と、国別数値の集計時点のずれ。合計 649,954 との差引 |
+
+合計 649,954 は BitcoinTreasuries の政府一覧の総和で、同一覧には上の 6 か国以外の小口保有国も含まれる。また国別の数字は開示・帰属の時点がそれぞれ違うため、主要国だけを足しても総和には一致しない。その残りが末尾の差引行である。
+
+ロシアはこの表に並ばない。押収由来の保有は推定 50〜200 BTC の規模で、検討されている国家準備の構想も押収資産の活用にとどまる。
+
+## 帰属しない側 ― 犯罪残高と北朝鮮
+
+「個人・未分類」の中には、名前を付けようのない保有が混ざっている。Chainalysis は 2025 年 7 月時点で、違法な事業体が直接握るオンチェーン残高を約 150 億ドル、資金が移された先の下流ウォレットまで含めると約 750 億ドルと推定した。ビットコイン建ての枚数は公表されておらず、ドル建ての残高推定はビットコイン価格の上昇だけでも膨らむ。
+
+北朝鮮（Lazarus Group）は、残高ではなくフローで数えられている。Chainalysis の下限推定で、2025 年末までの累計窃取額は 67.5 億ドル。2025 年単年では 20.2 億ドルで、2 月の Bybit 事件の約 15 億ドルが最大を占める。2026 年上半期にはさらに 6 億ドル超が加わった。ここで区別が要る — この数字は「いま持っている量」ではない。盗まれた資金の多くはイーサリアムやステーブルコイン建てで、洗浄と現金化が速く、ビットコインの残高として残る分を切り出した公表推定は存在しない。累計 67.5 億ドルを「保有」として 2100 万枚の地図に置くことはできない。
+
+## 分散の理念との距離
+
+[デジタルゴールド論考](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)の第 2 層 — 人と組織の非中央集権 — が指すのは、プロトコルへの権威を誰も持たないことだった。保有の集中は、この定義を直接には破らない。Strategy も IBIT も米国政府も、何十万枚を握っていてもコンセンサスルールを 1 行も変えられない。発行時に創設者や投資家へ割り当てられるプレマインと、公開市場で買い集めた残高は、由来がまったく違う。
+
+それでも保有の風景は、第 2 層の周辺条件を変えつつある。ETF の資金流出入は価格形成の主要な回路になり、国家の準備保有は「国家とビットコインの距離」という、ホワイトペーパーが想定しなかった政治の変数を持ち込んだ。そして首位は変わっていない。約 110 万枚が 16 年間動かないという事実 — 創設者の鍵が市場の権威にならないこと — は、[Whale Alert の独立分析](/BitcoinArchive/ja/entries/aftermath/2020-07-20-whale-alert-satoshi-fortune/)と[複数推定の総合](/BitcoinArchive/ja/entries/aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis/)が記録した通り、第 2 層の一部として今も働いている。動かないバーの隣で、動くバーだけが順位を入れ替えていく。
+
+<!-- chart: holders-race -->
+
+## 限界
+
+- 数字は動く。各値の時点は本文と表に付した。とくに ETF は 2026 年に入って月単位で 1 割近く動いた。
+- トラッカー間の開きは区分によって大きい。政府合計は River の 30.5 万 BTC（2025 年 12 月）と BitcoinTreasuries の 65.0 万 BTC（2026 年 7 月）で倍以上違う。後者は 2025 年 10 月の米国の大型没収を織り込んでおり、本ページは新しい側を採った。
+- 失われたコインの推定は 160 万〜370 万 BTC まで幅がある。図は広く引かれる 230 万〜370 万の幅の下限を使った。
+- サトシの枚数自体が推定で、BitMEX Research の 60 万〜70 万から Whale Alert の 1,125,150 まで幅がある。本ページは本アーカイブの他エントリーと同じく、約 110 万という収束値を使う。

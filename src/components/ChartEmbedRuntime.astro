@@ -12,6 +12,10 @@
 ---
 <script>
 import { mount as mountSupplyCurve } from '../scripts/supply-curve.js';
+import { mount as mountBarRace } from '../scripts/bar-chart-race.js';
+import { mount as mountOwnershipTreemap } from '../scripts/ownership-treemap.js';
+import { mount as mountPublicCompaniesBar } from '../scripts/public-companies-bar.js';
+import holdersRace from '../data/races/holders.json';
 
 (function () {
   var embeds = document.querySelectorAll('.chart-embed[data-chart]');
@@ -26,7 +30,11 @@ import { mount as mountSupplyCurve } from '../scripts/supply-curve.js';
     st.textContent =
       '.chart-embed{margin:2rem 0;}' +
       '.chart-embed .ce-chart{position:relative;border:1px solid var(--color-border);border-radius:4px;background:var(--color-bg);overflow:hidden;}' +
-      '.chart-embed .ce-chart svg{display:block;width:100%;height:auto;}';
+      '.chart-embed .ce-chart svg{display:block;width:100%;height:auto;}' +
+      '.chart-embed .ce-title{font-weight:700;font-size:1.02rem;margin:0 0 0.2rem;}' +
+      '.chart-embed .ce-sub{font-size:0.88rem;color:var(--color-text-muted);margin:0 0 0.8rem;}' +
+      '.chart-embed .ce-note{font-size:0.75rem;color:var(--color-text-muted);font-style:italic;margin:0.6rem 0 0;}' +
+      '.chart-embed .ce-race{padding:0.5rem 0;}';
     document.head.appendChild(st);
   }
 
@@ -48,6 +56,50 @@ import { mount as mountSupplyCurve } from '../scripts/supply-curve.js';
         { date: '2020-05-11', reward: 6.25 }, { date: '2024-04-20', reward: 3.125 }, { date: '2028-04-17', reward: 1.5625 }, { date: '2032-04-14', reward: 0.78125 },
       ],
       labels: { cap: T_.cap },
+      replayBtn: host.querySelector('.ba-replay-btn'),
+    });
+  };
+
+  // ===== drawer: ownership-treemap (who holds the 21M, mid-2026) =====
+  // Data + drawing live in src/scripts/ownership-treemap.js; this drawer only
+  // adds the bilingual chrome around the figure.
+  DRAWERS['ownership-treemap'] = function (host, lang) {
+    var T_ = ({
+      en: { title: 'Who holds the 21 million', sub: 'Every attributed cell is sourced; "individuals & unclassified" is the arithmetic remainder. Mid-2026 snapshot — hover a cell for the exact figure.' },
+      ja: { title: '2100 万枚は誰の手にあるか', sub: '出典のある区分だけを塗り、残りは「個人・未分類」として残した 2026 年半ば時点の全体図。セルに重ねると正確な数字が出る。' },
+    } as Record<string, { title: string; sub: string }>)[lang];
+    host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p><div class="ce-chart"></div>';
+    mountOwnershipTreemap(host.querySelector('.ce-chart'), lang);
+  };
+
+  // ===== drawer: public-companies-bar (Strategy vs the rest, linear) =====
+  DRAWERS['public-companies-bar'] = function (host, lang) {
+    var T_ = ({
+      en: { title: 'Public companies: Strategy vs everyone else', sub: 'Linear scale on purpose — the gap is the point. Even every other public company combined holds about half of Strategy alone. BTC, 2026; per-company as-of dates differ.' },
+      ja: { title: '上場企業の保有 ― Strategy とそれ以外', sub: 'あえて線形の目盛りで示す — 差そのものが主題だからだ。2 位以下の全社を合計しても Strategy 一社の半分ほどしかない。BTC 建て、2026 年時点（社ごとに集計時点は異なる）。' },
+    } as Record<string, { title: string; sub: string }>)[lang];
+    host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p><div class="ce-chart"></div>';
+    mountPublicCompaniesBar(host.querySelector('.ce-chart'), lang);
+  };
+
+  // ===== drawer: holders-race (largest named holders vs Satoshi) =====
+  // Data + bilingual labels live in src/data/races/holders.json (same format
+  // as the BarChartRace component's races); the drawing runtime is the shared
+  // src/scripts/bar-chart-race.js.
+  DRAWERS['holders-race'] = function (host, lang) {
+    var race = holdersRace as any;
+    var l = race.labels[lang];
+    host.innerHTML =
+      '<p class="ce-title">' + l.title + '</p><p class="ce-sub">' + l.subtitle + '</p>' +
+      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + (lang === 'ja' ? 'リプレイ' : 'Replay') + '</button></div>' +
+      '<div class="ce-chart ce-race"></div><p class="ce-note">' + l.note + '</p>';
+    var series = race.series.map(function (s: any) { return { name: s.name[lang], colorToken: s.colorToken, values: s.values }; });
+    mountBarRace(host.querySelector('.ce-race'), {
+      dates: race.dates,
+      series: series,
+      topN: race.topN || 8,
+      format: race.unit === 'btc' ? (lang === 'ja' ? 'btc-ja' : 'btc') : (lang === 'ja' ? 'jpy' : 'usd-b'),
+      jpyRate: null,
       replayBtn: host.querySelector('.ba-replay-btn'),
     });
   };

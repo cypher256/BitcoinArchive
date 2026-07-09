@@ -1093,12 +1093,12 @@ th {
        sit flush against the viewport edge (hard to read). */
     margin-inline: calc((100vw - 100%) / -2 + 2rem);
   }
-  /* Exception: figure-outer wrapping a 3-column-or-fewer table
-     stays in the container so it never exceeds the container
-     width. 4-column-or-more tables and all mermaid / chart
-     figures keep the breakout above.
+  /* Exception: figure-outer wrapping a table stays in the container
+     so tables always align with the prose column (a wide table
+     scrolls inside its block instead of breaking out). Mermaid /
+     chart figures keep the breakout above.
      `:has` requires Chrome 105+ / Safari 15.4+ / Firefox 121+. */
-  .figure-outer:has(table):not(:has(table tr > :nth-child(4))) {
+  .figure-outer:has(table) {
     margin-inline: 0;
   }
 }
@@ -1130,6 +1130,14 @@ th {
 .figure-block[data-kind="table"] {
   width: max-content;
   max-width: 100%;
+}
+/* Tables left-align with the prose column. Without this, a
+   4-column-or-more table narrower than the container floats centered
+   (margin: auto) while 3-column-or-fewer tables fill the width — two
+   alignments on one page read as inconsistent. Mermaid / chart
+   figures stay centered. */
+.figure-block[data-kind="table"] {
+  margin-inline: 0;
 }
 /* 3-column-or-fewer table figure-blocks fill the container width
    so a small 2-3 col table doesn't shrink to its natural width

@@ -9,8 +9,8 @@ interface Props {
 const { lang, raceId } = Astro.props;
 
 // One component, many races: each race's data + bilingual labels live in a JSON
-// under src/data/races/. The drawing runtime (d3-based) lives in this
-// component's own client script below. Add a race = add a JSON + inject
+// under src/data/races/. The drawing runtime (d3-based) lives in the shared
+// module src/scripts/bar-chart-race.js. Add a race = add a JSON + inject
 // <BarChartRace raceId=.../>.
 const races = import.meta.glob('../data/races/*.json', { eager: true });
 const race = (races[`../data/races/${raceId}.json`] as any)?.default;
@@ -22,11 +22,21 @@ if (!race) throw new Error(`BarChartRace: no race data for "${raceId}"`);
 const JPY_PER_USD = 160;
 const isJa = lang === 'ja';
 
+// Races are USD-denominated by default; a race JSON may declare `unit: "btc"`
+// to have values formatted as BTC quantities instead (no USD->JPY conversion
+// applies, so the fixed-rate note suffix is skipped for such races).
+const isBtc = race.unit === 'btc';
 const l = race.labels[lang];
 const series = race.series.map((s: any) => ({ name: s.name[lang], colorToken: s.colorToken, values: s.values }));
-const chartData = { dates: race.dates, series, topN: race.topN || 8, format: isJa ? 'jpy' : 'usd-b', jpyRate: isJa ? JPY_PER_USD : null };
+const chartData = {
+  dates: race.dates,
+  series,
+  topN: race.topN || 8,
+  format: isBtc ? (isJa ? 'btc-ja' : 'btc') : (isJa ? 'jpy' : 'usd-b'),
+  jpyRate: !isBtc && isJa ? JPY_PER_USD : null,
+};
 const containerId = `race-${raceId}`;
-const note = isJa ? `${l.note}（1ドル＝${JPY_PER_USD}円の固定換算。各年の実勢レートではない）` : l.note;
+const note = !isBtc && isJa ? `${l.note}（1ドル＝${JPY_PER_USD}円の固定換算。各年の実勢レートではない）` : l.note;
 ---
 
 <div class="ba-race">
@@ -47,46 +57,13 @@ const note = isJa ? `${l.note}（1ドル＝${JPY_PER_USD}円の固定換算。�
 <script is:inline src={import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'scripts/chart-anim.js'}></script>
 
 <script>
-// Real ES-module script (no define:vars, no is:inline) so Vite bundles it
-// and tree-shakes d3 down to the three submodules actually used here,
-// instead of shipping the ~92KB full d3 CDN bundle for a sliver of API
-// surface. define:vars would force Astro to treat this as is:inline (no
-// import processing) — see the sibling `#ba-race-meta` JSON block above for
-// how the server-side containerId now crosses into this script instead.
-//
-// The chart-drawing logic below used to live in the shared static file
-// public/scripts/bar-chart-race.js (a classic <script src> global, since
-// files under public/ are never processed by Vite and can't use import).
-// It is inlined here, as this component's only consumer, so its d3 calls
-// become part of the bundled module graph and get tree-shaken. chart-anim.js
-// stays external — it has no d3 dependency and is shared by ~14 other chart
-// components.
-import { select } from 'd3-selection';
-import type { Selection } from 'd3-selection';
-import { max } from 'd3-array';
-import { scaleLinear } from 'd3-scale';
-
-interface RaceSeries {
-  name: string;
-  colorToken?: string;
-  values: number[];
-  _color?: string;
-}
-interface RaceRow {
-  s: RaceSeries;
-  v: number;
-  rp: number;
-}
-interface MountOpts {
-  dates: number[];
-  series: RaceSeries[];
-  topN?: number;
-  duration?: number;
-  format?: string | ((v: number) => string);
-  jpyRate?: number | null;
-  dateFormat?: (d: number) => string;
-  replayBtn?: Element | null;
-}
+// The drawing logic lives in the shared module src/scripts/bar-chart-race.js
+// (one implementation, also used by the in-body ChartEmbedRuntime
+// `holders-race` drawer). This script only wires the JSON data blocks emitted
+// above into that shared mount(). chart-anim.js stays an external classic
+// <script src> — it runs during initial HTML parsing, before this deferred
+// module executes, so window.BAChartAnim is already defined by mount time.
+import { mount } from '../scripts/bar-chart-race.js';
 
 (function() {
   var metaEl = document.getElementById('ba-race-meta') as HTMLElement | null;
@@ -99,176 +76,12 @@ interface MountOpts {
   if (!container || !dataEl) return;
   var data = JSON.parse(dataEl.textContent as string) as {
     dates: number[];
-    series: RaceSeries[];
+    series: { name: string; colorToken?: string; values: number[] }[];
     topN?: number;
     format?: string;
     jpyRate?: number | null;
   };
   var wrap = container.closest('.ba-race');
-
-  function lerp(a: number, b: number, t: number) { return a + (b - a) * t; }
-
-  function usdB(v: number) {
-    if (v >= 1000) return '$' + (v / 1000).toFixed(2) + 'T';
-    if (v >= 1) return '$' + Math.round(v) + 'B';
-    return '$' + v.toFixed(1) + 'B';
-  }
-
-  // USD billions -> Japanese yen (oku / cho). The display rate is NOT defined
-  // here: it is passed in via opts.jpyRate so the rate lives in exactly one
-  // place (the BarChartRace component), used for both this conversion and the
-  // on-chart note. 1B USD = rate * 10 oku-yen; 1 cho = 10,000 oku.
-  function makeJpy(rate: number) {
-    return function (v: number) {
-      var oku = v * rate * 10;
-      if (oku >= 10000) {
-        var cho = oku / 10000;
-        return (cho >= 100 ? Math.round(cho).toLocaleString('ja-JP') : cho.toFixed(1)) + '兆円';
-      }
-      return Math.round(oku).toLocaleString('ja-JP') + '億円';
-    };
-  }
-
-  function mount(container: HTMLElement, opts: MountOpts) {
-    opts = opts || ({} as MountOpts);
-    var dates = opts.dates || [];
-    var series = opts.series || [];
-    var topN = opts.topN || 10;
-    var duration = opts.duration || 14000;
-    var fmt: (v: number) => string = typeof opts.format === 'function' ? opts.format
-      : (opts.format === 'jpy' && opts.jpyRate) ? makeJpy(opts.jpyRate) : usdB;
-    var dateFmt = typeof opts.dateFormat === 'function' ? opts.dateFormat : function (d: number) { return String(Math.round(d)); };
-    var N = dates.length;
-    if (!N || !series.length) return function () {};
-
-    function token(n: string) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
-    function themeColors() {
-      return {
-        text: token('--color-text') || '#222', muted: token('--color-text-muted') || '#777',
-        bg: token('--color-bg') || '#fff', grid: token('--chart-grid') || '#e5e7eb',
-      };
-    }
-
-    // Precompute the integer-keyframe rank of every series at every year, so a
-    // bar's vertical position can be interpolated smoothly across a crossover.
-    // Only entities present (value > 0) that year are ranked, contiguously
-    // (0,1,2,...), so the leaders always pack to the top with no empty rows;
-    // absent entities sit just below the last present one, so a coin that
-    // appears later animates up from the bottom of the field.
-    function ranksAt(idx: number) {
-      var present = series.filter(function (s) { return (s.values[idx] || 0) > 0; })
-        .map(function (s) { return { name: s.name, v: s.values[idx] }; })
-        .sort(function (a, b) { return b.v - a.v; });
-      var m: Record<string, number> = {};
-      present.forEach(function (d, i) { m[d.name] = i; });
-      var bottom = present.length;
-      series.forEach(function (s) { if (m[s.name] === undefined) m[s.name] = bottom; });
-      return m;
-    }
-    var ranks: Record<string, number>[] = []; for (var k = 0; k < N; k++) ranks.push(ranksAt(k));
-
-    var margin = { top: 6, right: 78, bottom: 6, left: 132 };
-    var barH = 24, rowGap = 7, barStep = barH + rowGap;
-    var W: number, iw: number, ih: number, H: number;
-    var svg: Selection<SVGSVGElement, unknown, null, undefined>;
-    var g: Selection<SVGGElement, unknown, null, undefined>;
-    var barG: Selection<SVGGElement, unknown, null, undefined>;
-    var ticker: Selection<SVGTextElement, unknown, null, undefined>;
-    var col: { text: string; muted: string; bg: string; grid: string };
-    var narrow: boolean;
-
-    function build() {
-      container.innerHTML = '';
-      col = themeColors();
-      // cache each series colour once (re-run on theme change via build())
-      series.forEach(function (s) { s._color = token(s.colorToken || '--chart-color-1') || '#888'; });
-      W = Math.max(300, container.getBoundingClientRect().width || 680);
-      narrow = W < 460;
-      if (narrow) { margin.right = 56; barH = 20; rowGap = 6; }
-      else { margin.right = 78; barH = 24; rowGap = 7; }
-      barStep = barH + rowGap;
-      // Auto-size the left name column to the widest label so long names
-      // (e.g. マーク・ザッカーバーグ / Bernard Arnault) never clip; cap at 45%.
-      var nameFs = narrow ? 11 : 13;
-      var probe = select(container).append('svg').attr('width', 0).attr('height', 0)
-        .style('position', 'absolute').style('visibility', 'hidden');
-      var maxNameW = 0;
-      series.forEach(function (s) {
-        var node = probe.append('text').attr('font-size', nameFs + 'px').attr('font-weight', 600).text(s.name).node();
-        var w = node && node.getComputedTextLength ? node.getComputedTextLength() : (String(s.name).length * nameFs * 0.6);
-        if (w > maxNameW) maxNameW = w;
-      });
-      probe.remove();
-      margin.left = Math.max(60, Math.min(W * 0.45, Math.ceil(maxNameW) + 14));
-      iw = W - margin.left - margin.right;
-      ih = topN * barStep;
-      H = ih + margin.top + margin.bottom;
-      svg = select(container).append('svg').attr('width', W).attr('height', H).attr('viewBox', '0 0 ' + W + ' ' + H);
-      g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
-      ticker = g.append('text').attr('x', iw).attr('y', ih - 6).attr('text-anchor', 'end')
-        .attr('font-size', narrow ? '34px' : '52px').attr('font-weight', 800).attr('fill', col.muted)
-        .attr('opacity', 0.28).style('font-variant-numeric', 'tabular-nums');
-      barG = g.append('g');
-    }
-
-    function valueAt(s: RaceSeries, ti: number) {
-      var i0 = Math.floor(ti), i1 = Math.min(i0 + 1, N - 1), f = ti - i0;
-      return lerp(s.values[i0] || 0, s.values[i1] || 0, f);
-    }
-
-    function render(p: number) {
-      var ti = p * (N - 1), i0 = Math.floor(ti), i1 = Math.min(i0 + 1, N - 1), f = ti - i0;
-      var rows: RaceRow[] = series.map(function (s) {
-        return { s: s, v: valueAt(s, ti), rp: lerp(ranks[i0][s.name], ranks[i1][s.name], f) };
-      });
-      var visible = rows.filter(function (r) { return r.v > 0 && r.rp < topN - 0.001; });
-      var maxV = max(visible, function (r) { return r.v; }) || 1;
-      var x = scaleLinear().domain([0, maxV]).range([0, iw]);
-
-      var sel = barG.selectAll<SVGGElement, RaceRow>('g.ba-race-bar').data(visible, function (r) { return r.s.name; });
-      sel.exit().remove();
-      var ent = sel.enter().append('g').attr('class', 'ba-race-bar');
-      ent.append('rect').attr('x', 0).attr('rx', 3);
-      ent.append('text').attr('class', 'nm').attr('text-anchor', 'end').attr('dominant-baseline', 'central');
-      ent.append('text').attr('class', 'vl').attr('text-anchor', 'start').attr('dominant-baseline', 'central');
-      var all = ent.merge(sel);
-      all.attr('transform', function (r) { return 'translate(0,' + (r.rp * barStep) + ')'; });
-      all.select('rect').attr('y', 0).attr('height', barH)
-        .attr('width', function (r) { return Math.max(2, x(r.v)); })
-        .attr('fill', function (r) { return r.s._color as string; });
-      all.select('.nm').attr('x', -8).attr('y', barH / 2).attr('fill', col.text)
-        .attr('font-size', narrow ? '11px' : '13px').attr('font-weight', 600)
-        .text(function (r) { return r.s.name; });
-      all.select('.vl').attr('x', function (r) { return Math.max(2, x(r.v)) + 6; }).attr('y', barH / 2)
-        .attr('fill', col.muted).attr('font-size', narrow ? '10px' : '12px').attr('font-weight', 600)
-        .style('font-variant-numeric', 'tabular-nums')
-        .text(function (r) { return fmt(r.v); });
-
-      ticker.text(dateFmt(lerp(dates[i0], dates[i1], f)));
-    }
-
-    function setup() { build(); render(1); } // default/resting + reduced-motion = final-year ranking
-    setup();
-    // d3 is a static import now (bundled, not a CDN global), so mount() runs
-    // synchronously here — no more polling for `typeof d3 !== 'undefined'`.
-    // chart-anim.js is still a classic (non-module) <script src> that runs
-    // during initial HTML parsing, before this deferred module script
-    // executes, so window.BAChartAnim is already defined by this point.
-    // window.BAChartAnim is typed as optional (src/env.d.ts) since other
-    // components still poll for it defensively; here the guard is a plain
-    // `if`, matching the established pattern in the other already-migrated
-    // chart components, rather than a non-null assertion.
-    var replayRun: (() => void) | null = null;
-    if (window.BAChartAnim) {
-      replayRun = window.BAChartAnim.playOnScroll(container, { duration: duration, onFrame: render, ease: function (p) { return p; } });
-    }
-    function replay() { render(0); if (replayRun) replayRun(); }
-    if (opts.replayBtn) opts.replayBtn.addEventListener('click', replay);
-    var timer: ReturnType<typeof setTimeout>;
-    window.addEventListener('resize', function () { clearTimeout(timer); timer = setTimeout(setup, 250); });
-    if (typeof MutationObserver === 'function') new MutationObserver(setup).observe(document.documentElement, { attributes: true, attributeFilter: ['data-mode', 'data-theme'] });
-    return replay;
-  }
 
   mount(container, {
     dates: data.dates,
