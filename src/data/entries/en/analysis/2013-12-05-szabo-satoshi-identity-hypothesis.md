@@ -111,7 +111,7 @@ The conceptual overlap (top section of the table) is what the forensic-fit argum
 
 A reception-side trace of that conceptual proximity survives in the whitepaper's first days on the cryptography mailing list, where the earliest responders reflexively reached for Bit Gold's name: James A. Donald wrote of "who owns what bitgold coins," and Hal Finney, who [proposed Bitcoin "could be an implementation"](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/) of Bit Gold, [mentioned "a sourceforge project set up for bitgold"](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney/). But the name they were merging labels a shared framing, not a Szabo-specific design, and the conflation came from third parties reacting to Satoshi's announcement, not from Szabo.
 
-Whether the conceptual overlap is decisive depends on whether the reader counts "Bit Gold conceived" as the same kind of capability as "Bitcoin shipped" — the §2.5 architectural-gap argument expands on this.
+The objection: counting this overlap as decisive requires treating "conceiving Bit Gold" and "shipping Bitcoin" as the same kind of capability. The §2.5 architectural-gap argument rejects that premise.
 
 ### 1.2 Stylometric analyses and mainstream press coverage (Skye Grey 2013, Aston University 2014, NYT/Popper 2015)
 

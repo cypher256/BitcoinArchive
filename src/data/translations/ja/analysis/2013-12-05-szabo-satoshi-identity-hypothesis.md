@@ -112,7 +112,7 @@ Bit Gold はビットコイン以前の提案のうち、ビットコインの�
 
 この概念的近接の痕跡は、ホワイトペーパー公開直後の暗号学メーリングリストにも残っている。最初期の返信者たちは反射的に Bit Gold の名で呼んだ — ジェームズ・A・ドナルドは「誰がどの bitgold coins を所有するのか」と書き、ハル・フィニーは、ビットコインを「[Bit Gold の実装かもしれない](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/)」と評しつつ「[sourceforge に bitgold のプロジェクトがある](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney/)」と述べた。だが彼らが混同していた名前が指すのは共有された枠組みであってサボ固有の設計ではなく、混同したのはサトシの告知に反応した第三者であって、サボ本人ではない。
 
-概念の重なりが決定的かどうかは、読者が「Bit Gold 構想」を「ビットコイン実装」と同種の能力と数えるかに依る — §2.5 の能力ギャップ論がこれを展開する。
+反論：この重なりを決定打とみなすには、「Bit Gold を構想すること」と「ビットコインを実装すること」を同種の能力として数える必要がある。§2.5 の能力ギャップ論はこの前提そのものを否定する。
 
 ### 1.2 文体計量分析と主流報道（Skye Grey 2013、アストン大学 2014、NYT／ポッパー 2015）
 
