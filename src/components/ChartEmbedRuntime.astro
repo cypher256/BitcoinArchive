@@ -21,10 +21,12 @@ import { mount as mountLoppHashrate } from '../scripts/lopp-hashrate-analysis.js
 import { mount as mountSupplyCurveComparison } from '../scripts/supply-curve-comparison.js';
 import { mount as mountSatoshiActivityTimeline } from '../scripts/satoshi-activity-timeline.js';
 import { mount as mountNonceLsb } from '../scripts/nonce-lsb.js';
+import { mount as mountSvnCommitters } from '../scripts/svn-committers.js';
 import supplyCurveSeries from '../data/supply-curves/series.json';
 import vanDorstData from '../data/derived/van-dorst-burrows-distribution.json';
 import satoshiTimelineData from '../data/satoshi-timeline/timeline.json';
 import nonceLsbData from '../data/patoshi/nonce-lsb.json';
+import svnCommittersData from '../data/patoshi/svn-committers.json';
 import cryptoRace from '../data/races/crypto.json';
 import assetsRace from '../data/races/assets.json';
 import wealthRace from '../data/races/wealth.json';
@@ -423,6 +425,52 @@ const JPY_PER_USD = 160;
       '</div>';
 
     mountNonceLsb(host.querySelector('.ce-chart'), host.querySelector('.ba-replay-btn'), (nonceLsbData as any).distribution, T_);
+  };
+
+  // ===== drawer: svn-committers (bar + timeline, the 4 SVN developers) =====
+  // Drawing lives in src/scripts/svn-committers.js (shared with
+  // SvnCommitters.astro, no longer used on any page after this migration).
+  DRAWERS['svn-committers'] = function (host: HTMLElement, lang: string) {
+    var svnData = svnCommittersData as any;
+    var totalRevisions: number = svnData.totalRevisions;
+    var committerCount: number = svnData.committers.length;
+    var satoshiCommits: number = svnData.committers.find(function (c: any) { return c.isSatoshi; })?.commits ?? 0;
+    var satoshiPct = Math.round((satoshiCommits / totalRevisions) * 100);
+
+    var T_ = ({
+      en: {
+        barTitle: 'SVN Commit Distribution by Developer',
+        barSub: totalRevisions.toLocaleString('en-US') + ' total revisions across ' + committerCount + ' committers. Satoshi authored ' + satoshiPct + '% of all commits.',
+        timeTitle: 'Commit Access Timeline',
+        timeSub: 'Active period for each developer on the SourceForge SVN repository (2009–2011).',
+        commits: 'commits', revisions: 'revisions', of: 'of',
+        tooltipFirst: 'First commit', tooltipLast: 'Last commit', replay: 'Replay',
+      },
+      ja: {
+        barTitle: 'SVN コミット数の分布（開発者別）',
+        barSub: committerCount + '人のコミッターによる全' + totalRevisions.toLocaleString('ja-JP') + 'リビジョン。全コミットの' + satoshiPct + '%をサトシが占める。',
+        timeTitle: 'コミットアクセスのタイムライン',
+        timeSub: 'SourceForge SVN リポジトリにおける各開発者の活動期間（2009〜2011年）。',
+        commits: 'コミット', revisions: 'リビジョン', of: '/',
+        tooltipFirst: '最初のコミット', tooltipLast: '最後のコミット', replay: 'リプレイ',
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<section class="ce-section"><p class="ce-title">' + T_.barTitle + '</p><p class="ce-sub">' + T_.barSub + '</p>' +
+      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + T_.replay + '</button></div>' +
+      '<div class="ce-chart svnc-bar"></div></section>' +
+      '<section class="ce-section"><p class="ce-title">' + T_.timeTitle + '</p><p class="ce-sub">' + T_.timeSub + '</p>' +
+      '<div class="ce-chart svnc-timeline"></div></section>';
+
+    mountSvnCommitters(
+      host.querySelector('.svnc-bar'),
+      host.querySelector('.svnc-timeline'),
+      host.querySelector('.ba-replay-btn'),
+      svnData.committers,
+      T_,
+      totalRevisions
+    );
   };
 
   // ===== drawer: satoshi-activity-timeline (3-panel: swimlane, recipients, cumulative) =====
