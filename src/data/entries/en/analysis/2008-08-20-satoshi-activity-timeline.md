@@ -49,6 +49,8 @@ Every Archive entry attributed to Satoshi as the author — private corresponden
 
 Each dot is one event. The horizontal axis is time (August 2008 to early 2014). The vertical lanes are communication channels. Hover any dot to see the title and date; click to open the source entry. The dot density per lane shows where Satoshi spent attention at each moment; the gaps show silences.
 
+<!-- chart: satoshi-activity-timeline -->
+
 ## 3. What the shape reveals at a glance
 
 - The pre-launch ramp on the cryptography mailing list and Bitcoin-list (October 2008 – January 2009).
