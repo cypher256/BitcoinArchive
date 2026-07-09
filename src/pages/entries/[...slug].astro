@@ -5,7 +5,6 @@ import SourceCitation from '../../components/SourceCitation.astro';
 import RelatedEntries from '../../components/RelatedEntries.astro';
 import CommentaryLinks from '../../components/CommentaryLinks.astro';
 import SatoshiCodeAnalysis from '../../components/SatoshiCodeAnalysis.astro';
-import PatoshiMiningMachine from '../../components/PatoshiMiningMachine.astro';
 import ValueOverflowTimeline from '../../components/ValueOverflowTimeline.astro';
 import GenesisBlockGap from '../../components/GenesisBlockGap.astro';
 import PatoshiExtraNonce from '../../components/PatoshiExtraNonce.astro';
@@ -202,10 +201,6 @@ const heroBannerOffset = heroBannerPosition(entry.id);
 
     {entry.data.type === 'analysis' && entry.id.includes('satoshi-code') && (
       <SatoshiCodeAnalysis lang={lang} />
-    )}
-
-    {entry.id.includes('sergio-lerner-patoshi-mining-machine') && (
-      <PatoshiMiningMachine lang={lang} />
     )}
 
     {entry.id.includes('sergio-lerner-patoshi-analysis') && (

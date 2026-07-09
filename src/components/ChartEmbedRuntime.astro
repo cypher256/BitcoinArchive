@@ -22,11 +22,13 @@ import { mount as mountSupplyCurveComparison } from '../scripts/supply-curve-com
 import { mount as mountSatoshiActivityTimeline } from '../scripts/satoshi-activity-timeline.js';
 import { mount as mountNonceLsb } from '../scripts/nonce-lsb.js';
 import { mount as mountSvnCommitters } from '../scripts/svn-committers.js';
+import { mount as mountPatoshiMiningMachine } from '../scripts/patoshi-mining-machine.js';
 import supplyCurveSeries from '../data/supply-curves/series.json';
 import vanDorstData from '../data/derived/van-dorst-burrows-distribution.json';
 import satoshiTimelineData from '../data/satoshi-timeline/timeline.json';
 import nonceLsbData from '../data/patoshi/nonce-lsb.json';
 import svnCommittersData from '../data/patoshi/svn-committers.json';
+import miningMachineData from '../data/patoshi/mining-machine.json';
 import cryptoRace from '../data/races/crypto.json';
 import assetsRace from '../data/races/assets.json';
 import wealthRace from '../data/races/wealth.json';
@@ -470,6 +472,57 @@ const JPY_PER_USD = 160;
       svnData.committers,
       T_,
       totalRevisions
+    );
+  };
+
+  // ===== drawer: patoshi-mining-machine (subranges, high-value bias, hashrate) =====
+  // Drawing lives in src/scripts/patoshi-mining-machine.js (shared with
+  // PatoshiMiningMachine.astro, no longer used on any page after this
+  // migration).
+  DRAWERS['patoshi-mining-machine'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        subrangeTitle: 'Nonce Space Partitioning — 5 Parallel Threads',
+        subrangeSub: 'The Patoshi miner divided the 4.3 billion nonce space into 5 subranges, each scanned by a separate thread. Within each subrange, nonces were scanned sequentially from high to low.',
+        biasTitle: 'High-Value Nonce Bias',
+        biasSub: 'Because each subrange was scanned from high to low, 78% of winning nonces fell in the upper half of their subrange. This is inconsistent with 48+ independent machines (which would produce ~50%).',
+        hashrateTitle: 'Hashrate Comparison',
+        hashrateSub: 'The Patoshi machine was approximately 4.3× faster than other early miners — consistent with a single quad-core CPU with SSE2 optimization vs. stock single-threaded client.',
+        thread: 'Thread', nonceRange: 'Nonce range', scanDir: 'Scan: high → low',
+        observed: 'Patoshi observed', expected: 'Expected if random',
+        patoshi: 'Patoshi miner', others: 'Other miners (stock client)',
+        mhps: 'Mhps', threads: 'threads', faster: '× faster',
+      },
+      ja: {
+        subrangeTitle: 'Nonce 空間の分割 — 5 つの並列スレッド',
+        subrangeSub: 'Patoshi マイナーは 43 億のナンス空間を 5 つのサブレンジに分割し、それぞれを別スレッドでスキャンした。各サブレンジ内では、ナンスは高い値から低い値へ順番にスキャンされた。',
+        biasTitle: '高値 Nonce バイアス',
+        biasSub: '各サブレンジが高い値からスキャンされるため、当選ナンスの 78%がサブレンジ上位半分に集中した。これは 48 台以上の独立マシンとは矛盾する（独立なら約 50%になる）。',
+        hashrateTitle: 'ハッシュレート比較',
+        hashrateSub: 'Patoshi マシンは他の初期マイナーの約 4.3倍高速だった。これは SSE2 最適化を施したクアッドコア CPU1 台と、標準のシングルスレッドクライアントとの差に一致する。',
+        thread: 'スレッド', nonceRange: 'Nonce 範囲', scanDir: 'スキャン: 高→低',
+        observed: 'Patoshi（実測値）', expected: '均一分布の期待値',
+        patoshi: 'Patoshi マイナー', others: '他のマイナー（標準クライアント）',
+        mhps: 'Mhps', threads: 'スレッド', faster: '倍高速',
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<section class="ce-section"><p class="ce-title">' + T_.subrangeTitle + '</p><p class="ce-sub">' + T_.subrangeSub + '</p>' +
+      '<div class="ce-chart pmm-subranges"></div></section>' +
+      '<section class="ce-section"><p class="ce-title">' + T_.biasTitle + '</p><p class="ce-sub">' + T_.biasSub + '</p>' +
+      '<div class="ce-chart pmm-bias"></div></section>' +
+      '<section class="ce-section"><p class="ce-title">' + T_.hashrateTitle + '</p><p class="ce-sub">' + T_.hashrateSub + '</p>' +
+      '<div class="ce-chart pmm-hashrate"></div></section>';
+
+    var data = miningMachineData as any;
+    mountPatoshiMiningMachine(
+      host.querySelector('.pmm-subranges'),
+      host.querySelector('.pmm-bias'),
+      host.querySelector('.pmm-hashrate'),
+      data.subranges,
+      data.comparison,
+      T_
     );
   };
 

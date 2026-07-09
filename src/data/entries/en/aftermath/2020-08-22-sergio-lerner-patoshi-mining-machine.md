@@ -52,6 +52,8 @@ Lerner conducted a re-mining experiment, simulating the Patoshi mining algorithm
 - The 5 subranges were scanned in **parallel**, consistent with 5 threads on a single multi-core CPU
 - The mining software was **not the stock Bitcoin v0.1 client** but a custom-built tool, likely with SSE2 optimizations for SHA-256
 
+<!-- chart: patoshi-mining-machine -->
+
 ## Single PC, not a network
 
 Lerner concluded that the Patoshi miner used a **single high-end CPU with multi-threading** — not 50+ networked computers. Multiple lines of evidence supported this:
