@@ -7,40 +7,14 @@ interface Props {
 
 const { lang } = Astro.props;
 
-// Generate illustrative scatter data based on paper's description
-// Patoshi pattern: consistent slope segments that restart every ~100 hours (~14000 blocks)
-// Non-Patoshi: different linear progression
-const patoshiPoints: Array<{ x: number; y: number }> = [];
-const nonPatoshiPoints: Array<{ x: number; y: number }> = [];
-
-// Patoshi segments (restart every ~14000 blocks)
-const segments = [
-  { startBlock: 0, endBlock: 14000, slope: 0.00012, intercept: 1 },
-  { startBlock: 14500, endBlock: 28500, slope: 0.00013, intercept: 1 },
-  { startBlock: 29000, endBlock: 36288, slope: 0.00015, intercept: 1 },
-];
-
-for (const seg of segments) {
-  const step = Math.max(1, Math.floor((seg.endBlock - seg.startBlock) / 80));
-  for (let b = seg.startBlock; b <= seg.endBlock; b += step) {
-    const rel = b - seg.startBlock;
-    const y = seg.intercept + seg.slope * rel + (Math.random() - 0.5) * 0.08;
-    patoshiPoints.push({ x: b, y: Math.max(0, y) });
-  }
-}
-
-// Non-Patoshi: sparser, different slope starting from block ~12
-const nonPatoshiSegs = [
-  { startBlock: 12, endBlock: 36288, slope: 0.00004, intercept: 0.3 },
-];
-for (const seg of nonPatoshiSegs) {
-  const step = Math.max(1, Math.floor((seg.endBlock - seg.startBlock) / 120));
-  for (let b = seg.startBlock; b <= seg.endBlock; b += step) {
-    const rel = b - seg.startBlock;
-    const y = seg.intercept + seg.slope * rel + (Math.random() - 0.5) * 0.15;
-    nonPatoshiPoints.push({ x: b, y: Math.max(0, y) });
-  }
-}
+// Illustrative reconstruction of Lerner's paper findings, not raw blockchain
+// data -- generated once and frozen as static JSON (see
+// src/scripts/extranonce-scatter.js's header comment) so this component and
+// the in-body ChartEmbedRuntime drawer render the same fixed scatter,
+// instead of a fresh Math.random() draw on every Astro build.
+const scatterData = await import('../data/patoshi/extranonce-scatter.json').then(m => m.default);
+const patoshiPoints = scatterData.patoshiPoints;
+const nonPatoshiPoints = scatterData.nonPatoshiPoints;
 
 const labels = {
   en: {
@@ -84,146 +58,18 @@ const l = labels[lang];
 </div>
 
 <script>
-// Real ES-module script (no define:vars, no is:inline) so Vite bundles it
-// and tree-shakes d3 down to the submodules actually used here, instead of
-// shipping the ~92KB full d3 CDN bundle for a handful of calls.
-import { select } from 'd3-selection';
-import { max } from 'd3-array';
-import { scaleLinear } from 'd3-scale';
-import { axisBottom, axisLeft } from 'd3-axis';
-
-// Shape of the JSON blob written by the server-side JSON.stringify above
-// (patoshiPoints / nonPatoshiPoints / labels for the current lang).
-interface ScatterPoint {
-  x: number;
-  y: number;
-}
-interface ChartLabels {
-  title: string;
-  subtitle: string;
-  xLabel: string;
-  yLabel: string;
-  patoshi: string;
-  nonPatoshi: string;
-  note: string;
-}
-interface ChartData {
-  patoshiPoints: ScatterPoint[];
-  nonPatoshiPoints: ScatterPoint[];
-  labels: ChartLabels;
-}
+// Drawing logic lives in src/scripts/extranonce-scatter.js (shared with the
+// in-body embed via ChartEmbedRuntime). This script only wires the
+// server-rendered JSON data block and DOM elements into that shared mount().
+import { mount } from '../scripts/extranonce-scatter.js';
 
 (function() {
-  function init() {
-    var dataEl = document.getElementById('extranonce-data');
-    if (!dataEl) return;
-    var data = JSON.parse(dataEl.textContent as string) as ChartData;
-    var l = data.labels;
-    var patoshi = data.patoshiPoints;
-    var nonPatoshi = data.nonPatoshiPoints;
-
-    // Asserted non-null: the runtime check right below returns early if the
-    // lookup failed, but that guard doesn't narrow the type inside the
-    // nested draw() function declared further down, so the type itself has
-    // to already say "non-null" for those call sites to type-check.
-    var container = document.getElementById('extranonce-chart') as HTMLElement;
-    if (!container) return;
-
-    function token(name: string) {
-      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
-    }
-    function readTokens() {
-      // Same encoding as PatoshiNonceLsb / PlosPatoshiAnomaly:
-      //   patoshi = --color-accent (the focus signal)
-      //   non-patoshi = --chart-color-6 (background noise)
-      return {
-        patoshi: token('--color-accent'),
-        nonPatoshi: token('--chart-color-6'),
-        muted: token('--color-text-muted'),
-        text: token('--color-text'),
-      };
-    }
-
-    function draw() {
-      container.innerHTML = '';
-      var T = readTokens();
-      var rect = container.getBoundingClientRect();
-      var W = rect.width || 700;
-      var margin = { top: 20, right: 30, bottom: 50, left: 60 };
-      var H = 360;
-      var w = W - margin.left - margin.right;
-      var h = H - margin.top - margin.bottom;
-
-      var svg = select(container).append('svg').attr('width', W).attr('height', H);
-      var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
-
-      var x = scaleLinear().domain([0, 36288]).range([0, w]);
-      var maxY = max(patoshi.concat(nonPatoshi), function(d) { return d.y; });
-      var y = scaleLinear().domain([0, maxY ?? 1]).nice().range([h, 0]);
-
-      // Axes
-      // axisBottom(x)'s domain type is d3's NumberValue (number | { valueOf(): number }),
-      // not a plain number, so the tick value needs an explicit numeric conversion
-      // before the arithmetic below.
-      g.append('g').attr('transform', 'translate(0,' + h + ')')
-        .call(axisBottom(x).ticks(6).tickFormat(function(d) { return (Number(d) / 1000) + 'k'; }))
-        .selectAll('text').attr('font-size', '10px').style('fill', T.text);
-      g.append('text').attr('x', w / 2).attr('y', h + 40)
-        .attr('text-anchor', 'middle').attr('font-size', '11px')
-        .attr('fill', T.muted).text(l.xLabel);
-
-      g.append('g').call(axisLeft(y).ticks(5))
-        .selectAll('text').attr('font-size', '10px').style('fill', T.text);
-      g.append('text').attr('transform', 'rotate(-90)')
-        .attr('x', -h / 2).attr('y', -45)
-        .attr('text-anchor', 'middle').attr('font-size', '11px')
-        .attr('fill', T.muted).text(l.yLabel);
-
-      // Non-Patoshi points (draw first, below)
-      g.selectAll('.non-patoshi')
-        .data(nonPatoshi)
-        .enter().append('circle')
-        .attr('cx', function(d) { return x(d.x); })
-        .attr('cy', function(d) { return y(d.y); })
-        .attr('r', 2).attr('fill', T.nonPatoshi).attr('opacity', 0.5);
-
-      // Patoshi points
-      g.selectAll('.patoshi')
-        .data(patoshi)
-        .enter().append('circle')
-        .attr('cx', function(d) { return x(d.x); })
-        .attr('cy', function(d) { return y(d.y); })
-        .attr('r', 2.5).attr('fill', T.patoshi).attr('opacity', 0.75);
-    }
-    draw();
-
-    // Reveal: block-order wipe on scroll-in (chart-anim.js wipeReveal); block
-    // height is monotonic in time, so points surface in mining order.
-    var replayFn: (() => void) | null = null;
-    (function arm(n?: number) {
-      if (window.BAChartAnim) {
-        replayFn = window.BAChartAnim.wipeReveal(['extranonce-chart'], { duration: 5000 });
-      } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }
-    })();
-    var rb = document.querySelector('.patoshi-extranonce [data-replay]');
-    if (rb) rb.addEventListener('click', function() { if (replayFn) replayFn(); });
-
-    var timer: ReturnType<typeof setTimeout>;
-    window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });
-
-    if (typeof window.matchMedia === 'function') {
-      var mql = window.matchMedia('(prefers-color-scheme: dark)');
-      if (mql.addEventListener) mql.addEventListener('change', draw);
-      else if (mql.addListener) mql.addListener(draw);
-    }
-    if (typeof MutationObserver === 'function') {
-      new MutationObserver(draw).observe(document.documentElement, {
-        attributes: true,
-        attributeFilter: ['data-mode', 'data-theme'],
-      });
-    }
-  }
-  init();
+  var dataEl = document.getElementById('extranonce-data') as HTMLElement | null;
+  var container = document.getElementById('extranonce-chart') as HTMLElement | null;
+  if (!dataEl || !container) return;
+  var data = JSON.parse(dataEl.textContent as string);
+  var replayBtn = document.querySelector('.patoshi-extranonce [data-replay]') as HTMLElement | null;
+  mount(container, replayBtn, data.patoshiPoints, data.nonPatoshiPoints, data.labels);
 })();
 </script>
 

@@ -53,6 +53,8 @@ On April 17, 2013, Argentine Bitcoin researcher [Sergio Demian Lerner](/BitcoinA
 ## Method
 Lerner tracked the ExtraNonce field in coinbase transactions across blocks 0 through 36,288 (January 2009 to January 2010), using it as a "slow realtime clock" to identify when a miner's client was restarted. He found a single entity mining with consistent slope segments, restarting roughly every ~100 hours.
 
+<!-- chart: extranonce-scatter -->
+
 ## Key findings
 - A single entity mined approximately **1,000,000 BTC** in the first year (refined to ~980,000 BTC in a follow-up post on April 24, 2013)
 - Of 1,814,400 total BTC awarded in that period, 1,148,800 BTC remained unspent

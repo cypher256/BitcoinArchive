@@ -23,12 +23,14 @@ import { mount as mountSatoshiActivityTimeline } from '../scripts/satoshi-activi
 import { mount as mountNonceLsb } from '../scripts/nonce-lsb.js';
 import { mount as mountSvnCommitters } from '../scripts/svn-committers.js';
 import { mount as mountPatoshiMiningMachine } from '../scripts/patoshi-mining-machine.js';
+import { mount as mountExtranonceScatter } from '../scripts/extranonce-scatter.js';
 import supplyCurveSeries from '../data/supply-curves/series.json';
 import vanDorstData from '../data/derived/van-dorst-burrows-distribution.json';
 import satoshiTimelineData from '../data/satoshi-timeline/timeline.json';
 import nonceLsbData from '../data/patoshi/nonce-lsb.json';
 import svnCommittersData from '../data/patoshi/svn-committers.json';
 import miningMachineData from '../data/patoshi/mining-machine.json';
+import extranonceScatterData from '../data/patoshi/extranonce-scatter.json';
 import cryptoRace from '../data/races/crypto.json';
 import assetsRace from '../data/races/assets.json';
 import wealthRace from '../data/races/wealth.json';
@@ -91,7 +93,9 @@ const JPY_PER_USD = 160;
       '.chart-embed .nlsb-swatch{display:inline-block;width:12px;height:12px;border-radius:2px;}' +
       '.chart-embed .nlsb-swatch-patoshi{background:var(--chart-color-2);}' +
       '.chart-embed .nlsb-swatch-gap{background:var(--chart-negative);}' +
-      '.chart-embed .nlsb-swatch-sparse{background:var(--chart-color-6);}';
+      '.chart-embed .nlsb-swatch-sparse{background:var(--chart-color-6);}' +
+      '.chart-embed .nlsb-swatch-en-patoshi{background:var(--color-accent);}' +
+      '.chart-embed .nlsb-swatch-en-non-patoshi{background:var(--chart-color-6);}';
     document.head.appendChild(st);
   }
 
@@ -524,6 +528,45 @@ const JPY_PER_USD = 160;
       data.comparison,
       T_
     );
+  };
+
+  // ===== drawer: extranonce-scatter (Patoshi vs non-Patoshi, illustrative) =====
+  // Drawing lives in src/scripts/extranonce-scatter.js (shared with
+  // PatoshiExtraNonce.astro, no longer used on any page after this
+  // migration). Data is the frozen illustrative reconstruction in
+  // src/data/patoshi/extranonce-scatter.json (see that file's description).
+  DRAWERS['extranonce-scatter'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'ExtraNonce Pattern Across First Year of Mining',
+        subtitle: 'Illustrative reconstruction of Lerner\'s ExtraNonce analysis across blocks 0–36,288. Patoshi blocks form consistent slope segments that restart every ~100 hours — a "slow realtime clock" fingerprint. Non-Patoshi blocks show a different linear progression.',
+        xLabel: 'Block number', yLabel: 'ExtraNonce (normalized)',
+        patoshi: 'Patoshi blocks (~22,000 blocks)', nonPatoshi: 'Non-Patoshi blocks',
+        note: 'Illustrative reconstruction — based on paper findings, not raw blockchain data',
+        replay: 'Replay',
+      },
+      ja: {
+        title: 'マイニング初年度の ExtraNonce パターン',
+        subtitle: 'Lerner の ExtraNonce 解析（ブロック 0〜36,288）の概念的再現。Patoshi ブロックは一貫した傾き区間を形成し、約 100時間ごとに再開する — 「低速リアルタイムクロック」の指紋。非 Patoshi ブロックは別の線形進行を示す。',
+        xLabel: 'ブロック番号', yLabel: 'ExtraNonce（正規化）',
+        patoshi: 'Patoshi ブロック（約 22,000 ブロック）', nonPatoshi: '非 Patoshi ブロック',
+        note: '概念図 — 論文の知見に基づく再現であり、生のブロックチェーンデータではない',
+        replay: 'リプレイ',
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
+      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + T_.replay + '</button></div>' +
+      '<div class="ce-chart"></div>' +
+      '<div class="nlsb-legend">' +
+      '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-en-patoshi"></span>' + T_.patoshi + '</span>' +
+      '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-en-non-patoshi"></span>' + T_.nonPatoshi + '</span>' +
+      '</div>' +
+      '<p class="ce-note">' + T_.note + '</p>';
+
+    var data = extranonceScatterData as any;
+    mountExtranonceScatter(host.querySelector('.ce-chart'), host.querySelector('.ba-replay-btn'), data.patoshiPoints, data.nonPatoshiPoints, T_);
   };
 
   // ===== drawer: satoshi-activity-timeline (3-panel: swimlane, recipients, cumulative) =====
