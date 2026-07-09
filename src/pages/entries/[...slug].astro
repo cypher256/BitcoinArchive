@@ -18,7 +18,6 @@ import GitHubMigrationTimeline from '../../components/GitHubMigrationTimeline.as
 import SatoshiHoldingsComparison from '../../components/SatoshiHoldingsComparison.astro';
 import WhaleAlertFortune from '../../components/WhaleAlertFortune.astro';
 import NlsExchangeRate from '../../components/NlsExchangeRate.astro';
-import StylometricDistanceHistogram from '../../components/StylometricDistanceHistogram.astro';
 import BitcoinForkGenealogy from '../../components/BitcoinForkGenealogy.astro';
 import SupplyCurveComparison from '../../components/SupplyCurveComparison.astro';
 import DesignSeriesNav from '../../components/DesignSeriesNav.astro';
@@ -194,15 +193,7 @@ const heroBannerOffset = heroBannerPosition(entry.id);
       <GenesisBlockGap lang={lang} />
     )}
 
-    {entry.id.includes('van-dorst-corpus-reanalysis-named-candidates') && (
-      <StylometricDistanceHistogram lang={lang} />
-    )}
-
     {entry.id.includes('bitcoin-fork-and-altcoin-genealogy') && (
-      <BitcoinForkGenealogy lang={lang} />
-    )}
-
-    {entry.id.includes('satoshi-design-vs-current-reality') && (
       <BitcoinForkGenealogy lang={lang} />
     )}
 

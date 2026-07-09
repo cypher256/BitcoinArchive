@@ -94,6 +94,8 @@ Burrows' Delta: lower = closer match to Satoshi's reference profile. Corpus mean
 | [**Wei Dai**](/BitcoinArchive/participants/wei-dai/) | weidai_eskimo_com.txt | 0.14428 | 2,929 / 12,739 | top 22.99% | 161 |
 | [**Len Sassaman**](/BitcoinArchive/participants/len-sassaman/) | rabbi_quickie_net.txt | 0.14428 | 3,034 / 12,739 | top 23.82% | 65 |
 
+<!-- chart: stylometric-distance-histogram -->
+
 ### 2.2 What the table establishes
 
 All five named candidates rank in the top 25% of the 12,739-author corpus, four of five in the top 10%. The named-candidate population is therefore stylometrically meaningful: their writing is closer to Satoshi's reference profile than the average cypherpunk-era mailing-list author. The Burrows' Delta values for the five candidates lie between 0.14405 (Szabo) and 0.14428 (Wei Dai / Sassaman) — a spread of 0.00023, which is 0.85 standard deviations of the corpus distribution.

@@ -95,6 +95,8 @@ translationStatus: complete
 | [**ウェイ・ダイ**](/BitcoinArchive/ja/participants/wei-dai/) | weidai_eskimo_com.txt | 0.14428 | 2,929 / 12,739 | 上位 22.99% | 161 |
 | [**レン・サッサマン**](/BitcoinArchive/ja/participants/len-sassaman/) | rabbi_quickie_net.txt | 0.14428 | 3,034 / 12,739 | 上位 23.82% | 65 |
 
+<!-- chart: stylometric-distance-histogram -->
+
 ### 2.2 表が確立する事実
 
 5 名の名指し候補すべてが 12,739 人コーパスの上位 25% 以内、5 名中 4 名が上位 10% 以内に位置する。したがって名指し候補の集合は文体計量的に意味を持つ：彼らの執筆は平均的なサイファーパンク時代のメーリングリスト書き手よりサトシの参照プロファイルに近い。5 候補のバローズ・デルタ値は 0.14405（サボ）から 0.14428（ウェイ・ダイ／サッサマン）の範囲にあり、差は 0.00023 — コーパス分布の 0.85 標準偏差に相当する。

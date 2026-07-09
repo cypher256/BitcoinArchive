@@ -136,6 +136,8 @@ flowchart TB
 - 2015 – 2017: The block size war. See [Bitcoin Fork Wars as Not OSS](/BitcoinArchive/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/). The conflict was decided through a combination of SegWit activation (BIP 141), the user-activated soft fork (UASF) pressure, the failure of the New York Agreement, and the Bitcoin Cash split — a multi-front political/economic process rather than the rough consensus the whitepaper describes.
 - January 2016: [Mike Hearn declared the Bitcoin experiment failed](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) and sold all his coins, citing the governance breakdown directly.
 
+<!-- chart: fork-genealogy -->
+
 ## 4. Scaling — direct P2P transactions → layer-2 / off-chain
 
 ```mermaid

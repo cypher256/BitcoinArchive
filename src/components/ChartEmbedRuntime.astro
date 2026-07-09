@@ -15,6 +15,9 @@ import { mount as mountSupplyCurve } from '../scripts/supply-curve.js';
 import { mount as mountBarRace } from '../scripts/bar-chart-race.js';
 import { mount as mountOwnershipTreemap } from '../scripts/ownership-treemap.js';
 import { mount as mountPublicCompaniesBar } from '../scripts/public-companies-bar.js';
+import { mount as mountStylometricHistogram } from '../scripts/stylometric-distance-histogram.js';
+import { mount as mountForkGenealogy } from '../scripts/fork-genealogy.js';
+import vanDorstData from '../data/derived/van-dorst-burrows-distribution.json';
 import cryptoRace from '../data/races/crypto.json';
 import assetsRace from '../data/races/assets.json';
 import wealthRace from '../data/races/wealth.json';
@@ -44,7 +47,16 @@ const JPY_PER_USD = 160;
       '.chart-embed .ba-race-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.2rem 0.8rem;margin-top:-0.4rem;margin-bottom:0.6rem;}' +
       '.chart-embed .ba-race-toolbar .ba-replay-controls{margin-bottom:0;}' +
       '.chart-embed .ba-race-related{font-size:0.82rem;color:var(--color-text-muted);margin:0;}' +
-      '.chart-embed .ce-race{padding:0.5rem 0;}';
+      '.chart-embed .ce-race{padding:0.5rem 0;}' +
+      '.chart-embed .sdh-stats{font-size:0.78rem;color:var(--color-text-muted);margin:0.5rem 0 0.6rem;text-align:center;}' +
+      '.chart-embed .sdh-insight{margin-top:1rem;padding:0.75rem 1rem;background:var(--color-bg-alt);border-left:3px solid var(--color-link);border-radius:0 4px 4px 0;font-size:0.88rem;}' +
+      '.chart-embed .sdh-insight ul{margin:0.4rem 0 0;padding-left:1.2rem;}' +
+      '.chart-embed .sdh-insight li{margin-bottom:0.3rem;}' +
+      // A .ce-chart nested inside the shared .figure-block (global.css) would
+      // otherwise get boxed twice -- the figure-block already supplies
+      // border/background/padding for wide charts that need the sitewide
+      // breakout-on-wide-viewport treatment (see fork-genealogy drawer).
+      '.chart-embed .figure-block .ce-chart{position:relative;border:none;background:none;overflow:visible;min-width:1080px;}';
     document.head.appendChild(st);
   }
 
@@ -90,6 +102,159 @@ const JPY_PER_USD = 160;
     } as Record<string, { title: string; sub: string }>)[lang];
     host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p><div class="ce-chart"></div>';
     mountPublicCompaniesBar(host.querySelector('.ce-chart'), lang);
+  };
+
+  // ===== drawer: stylometric-distance-histogram (van Dorst 2024 reanalysis) =====
+  // Drawing lives in src/scripts/stylometric-distance-histogram.js; this
+  // drawer computes the corpus-derived label strings (unchanged from the
+  // original component's frontmatter) and the surrounding chrome (title,
+  // subtitle, stats line, insight box).
+  DRAWERS['stylometric-distance-histogram'] = function (host: HTMLElement, lang: string) {
+    var data = vanDorstData as any;
+    var s = data.stats;
+    var totalAuthorsEN = s.totalAuthors.toLocaleString('en-US');
+    var totalAuthorsJA = s.totalAuthors.toLocaleString('ja-JP');
+    var meanStr = s.mean.toFixed(5);
+    var stdevStr = s.stdev.toFixed(5);
+    var minStr = s.min.toFixed(5);
+    var maxStr = s.max.toFixed(5);
+
+    var candidateColorTokens: Record<string, string> = {
+      'Nick Szabo': '--chart-negative',
+      'Hal Finney': '--chart-color-1',
+      'Adam Back': '--chart-color-8',
+      'Wei Dai': '--chart-color-3',
+      'Len Sassaman': '--chart-color-2',
+    };
+
+    var LABELS: Record<string, any> = {
+      en: {
+        title: 'Burrows’ Delta distribution: Satoshi vs. ' + totalAuthorsEN + ' mailing-list authors (van Dorst 2024)',
+        subtitle: 'Each bar is the count of mailing-list-active authors (≥10 chunks of writing) in that Burrows’ Delta range. Lower delta = closer match to Satoshi’s reference profile. The most-cited Satoshi-identity named candidates are marked with colored horizontal lines. Corpus mean line shown for reference.',
+        xLabel: 'Authors per bin',
+        meanLabel: 'Corpus mean',
+        directionLabel: '↑ Closer to Satoshi',
+        tooltipBin: 'Bin',
+        tooltipCount: 'Authors',
+        statsLine: 'Corpus: ' + totalAuthorsEN + ' authors with ≥10 chunks · mean ' + meanStr + ' · σ ' + stdevStr + ' · range [' + minStr + ', ' + maxStr + ']',
+        insightHeading: 'What this shows',
+        insight1: 'All named candidates fall in the upper (top-side) tail of the distribution — closer to Satoshi than the corpus mean.',
+        insight2: 'Nick Szabo at top 4.67% leads the named-candidate group; Hal Finney (6.89%) and Adam Back (7.87%) follow closely.',
+        insight3: 'But 594 authors rank closer than Szabo. Most of those upper-tail authors are noise (e-commerce accounts, anonymous remailers, disposable accounts), not viable candidates — see the §3 noise-tail discussion below.',
+        candidateNames: { 'Nick Szabo': 'Nick Szabo', 'Hal Finney': 'Hal Finney', 'Adam Back': 'Adam Back', 'Wei Dai': 'Wei Dai', 'Len Sassaman': 'Len Sassaman' },
+      },
+      ja: {
+        title: 'バローズ・デルタ分布：サトシ vs メーリングリスト書き手 ' + totalAuthorsJA + ' 名（ヴァン・ドルスト 2024）',
+        subtitle: 'バローズ・デルタは、書き手の文体がサトシの参照プロファイルにどれだけ近いかを示すスタイロメトリー（計量文体論）の距離指標。各バーは、その範囲に位置するメーリングリスト活動書き手（10 チャンク以上）の数。デルタが低いほどサトシに近い。最も多く引用されるサトシ正体候補を色付き水平線で示す。コーパス平均も参考表示。',
+        xLabel: 'バーごとの著者数',
+        meanLabel: 'コーパス平均',
+        directionLabel: '↑ サトシに近い',
+        tooltipBin: '区間',
+        tooltipCount: '著者数',
+        statsLine: 'コーパス：10 チャンク以上の著者 ' + totalAuthorsJA + ' 名／平均 ' + meanStr + '／σ ' + stdevStr + '／範囲 [' + minStr + ', ' + maxStr + ']',
+        insightHeading: 'この図が示すもの',
+        insight1: '名指し候補はすべて分布の上方（サトシ側）に位置 — コーパス平均よりサトシに近い。',
+        insight2: 'ニック・サボが上位 4.67% で名指し集団の首位。ハル・フィニー（6.89%）、アダム・バック（7.87%）が僅差で続く。',
+        insight3: 'ただしサボより近い著者が 594 人いる。その上位陣の大半はノイズ（EC アカウント、匿名リメイラー、使い捨てアカウント）であって妥当な候補ではない — §3 のノイズ層議論を参照。',
+        candidateNames: { 'Nick Szabo': 'ニック・サボ', 'Hal Finney': 'ハル・フィニー', 'Adam Back': 'アダム・バック', 'Wei Dai': 'ウェイ・ダイ', 'Len Sassaman': 'レン・サッサマン' },
+      },
+    };
+    var l = LABELS[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + l.title + '</p><p class="ce-sub">' + l.subtitle + '</p>' +
+      '<div class="ce-chart"></div>' +
+      '<p class="sdh-stats">' + l.statsLine + '</p>' +
+      '<div class="sdh-insight"><strong>' + l.insightHeading + ':</strong><ul>' +
+      '<li>' + l.insight1 + '</li><li>' + l.insight2 + '</li><li>' + l.insight3 + '</li></ul></div>';
+
+    mountStylometricHistogram(host.querySelector('.ce-chart'), {
+      bins: data.bins,
+      stats: data.stats,
+      namedCandidates: data.namedCandidates,
+      candidateColorTokens: candidateColorTokens,
+      labels: l,
+    });
+  };
+
+  // ===== drawer: fork-genealogy (Bitcoin forks and adjacent cryptocurrencies) =====
+  // Drawing lives in src/scripts/fork-genealogy.js (shared with
+  // BitcoinForkGenealogy.astro, used unchanged at the top of
+  // bitcoin-fork-and-altcoin-genealogy — that placement is already correct).
+  // This second, in-body instance is for satoshi-design-vs-current-reality,
+  // where the chart belongs next to the Governance section's fork discussion
+  // rather than at a fixed top-of-page slot. Data below is identical to the
+  // component's own frontmatter (same chain/milestone catalog).
+  DRAWERS['fork-genealogy'] = function (host: HTMLElement, lang: string) {
+    var linkBase = import.meta.env.BASE_URL.replace(/\/?$/, '/') + (lang === 'ja' ? 'ja/' : '') + 'entries/';
+    var CHAINS: Record<string, any[]> = {
+      en: [
+        { id: 'main', name: 'Bitcoin', launch: '2009-01-09', halt: null, parent: null, status: 'active', slug: null },
+        { id: 'namecoin', name: 'Namecoin (NMC)', launch: '2011-04-18', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-04-18-namecoin-launch' },
+        { id: 'litecoin', name: 'Litecoin (LTC)', launch: '2011-10-13', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-10-13-litecoin-launch' },
+        { id: 'dogecoin', name: 'Dogecoin (DOGE)', launch: '2013-12-06', halt: null, parent: 'litecoin', status: 'active', slug: 'aftermath/2013-12-06-dogecoin-launch' },
+        { id: 'bitcoin-xt', name: 'Bitcoin XT', launch: '2015-08-15', halt: '2016-01-14', parent: 'main', status: 'halted', slug: 'aftermath/2015-08-15-bitcoin-xt-launch' },
+        { id: 'bitcoin-classic', name: 'Bitcoin Classic', launch: '2016-02-10', halt: '2016-12-31', parent: 'main', status: 'halted', slug: null },
+        { id: 'bitcoin-unlimited', name: 'Bitcoin Unlimited', launch: '2016-10-13', halt: '2018-06-30', parent: 'main', status: 'halted', slug: null },
+        { id: 'bitcoin-cash', name: 'Bitcoin Cash (BCH)', launch: '2017-08-01', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2017-08-01-bitcoin-cash-fork' },
+        { id: 'bitcoin-gold', name: 'Bitcoin Gold (BTG)', launch: '2017-10-24', halt: null, parent: 'main', status: 'active', slug: null },
+        { id: 'bitcoin-sv', name: 'Bitcoin SV (BSV)', launch: '2018-11-15', halt: null, parent: 'bitcoin-cash', status: 'active', slug: 'aftermath/2018-11-15-bitcoin-sv-fork' },
+      ],
+      ja: [
+        { id: 'main', name: 'ビットコイン', launch: '2009-01-09', halt: null, parent: null, status: 'active', slug: null },
+        { id: 'namecoin', name: 'ネームコイン (NMC)', launch: '2011-04-18', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-04-18-namecoin-launch' },
+        { id: 'litecoin', name: 'ライトコイン (LTC)', launch: '2011-10-13', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-10-13-litecoin-launch' },
+        { id: 'dogecoin', name: 'ドージコイン (DOGE)', launch: '2013-12-06', halt: null, parent: 'litecoin', status: 'active', slug: 'aftermath/2013-12-06-dogecoin-launch' },
+        { id: 'bitcoin-xt', name: 'Bitcoin XT', launch: '2015-08-15', halt: '2016-01-14', parent: 'main', status: 'halted', slug: 'aftermath/2015-08-15-bitcoin-xt-launch' },
+        { id: 'bitcoin-classic', name: 'Bitcoin Classic', launch: '2016-02-10', halt: '2016-12-31', parent: 'main', status: 'halted', slug: null },
+        { id: 'bitcoin-unlimited', name: 'Bitcoin Unlimited', launch: '2016-10-13', halt: '2018-06-30', parent: 'main', status: 'halted', slug: null },
+        { id: 'bitcoin-cash', name: 'ビットコインキャッシュ (BCH)', launch: '2017-08-01', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2017-08-01-bitcoin-cash-fork' },
+        { id: 'bitcoin-gold', name: 'ビットコインゴールド (BTG)', launch: '2017-10-24', halt: null, parent: 'main', status: 'active', slug: null },
+        { id: 'bitcoin-sv', name: 'ビットコイン SV (BSV)', launch: '2018-11-15', halt: null, parent: 'bitcoin-cash', status: 'active', slug: 'aftermath/2018-11-15-bitcoin-sv-fork' },
+      ],
+    };
+    var MILESTONES: Record<string, any[]> = {
+      en: [
+        { date: '2010-09-01', label: '1 MB block limit', slug: 'forum/bitcointalk/topic-1347/2010-10-03-re-increase-block-size-limit' },
+        { date: '2014-03-19', label: 'Bitcoin Core 0.9 rebrand', slug: 'analysis/2014-03-19-bitcoin-core-rebrand-authority-effects' },
+        { date: '2017-08-24', label: 'SegWit activation', slug: 'bip/2015-12-21-bip-0141' },
+        { date: '2017-11-08', label: 'SegWit2x cancelled', slug: 'aftermath/2017-11-08-segwit2x-cancellation' },
+        { date: '2021-11-14', label: 'Taproot activation', slug: null },
+      ],
+      ja: [
+        { date: '2010-09-01', label: '1 MB ブロック制限', slug: 'forum/bitcointalk/topic-1347/2010-10-03-re-increase-block-size-limit' },
+        { date: '2014-03-19', label: 'Bitcoin Core 0.9 改名', slug: 'analysis/2014-03-19-bitcoin-core-rebrand-authority-effects' },
+        { date: '2017-08-24', label: 'SegWit 有効化', slug: 'bip/2015-12-21-bip-0141' },
+        { date: '2017-11-08', label: 'SegWit2x 中止', slug: 'aftermath/2017-11-08-segwit2x-cancellation' },
+        { date: '2021-11-14', label: 'Taproot 有効化', slug: null },
+      ],
+    };
+    var T_ = ({
+      en: {
+        title: 'Bitcoin protocol forks and adjacent cryptocurrencies',
+        sub: 'Each chain’s launch, fork lineage, and operational range on a true time axis. Active chains extend to the right edge; halted chains end at the date their network share collapsed. Vertical connectors at each fork point trace the parent chain. Chain rows and milestones link to the corresponding archive entry where one exists; chains without a dedicated entry (Bitcoin Classic, Bitcoin Unlimited, Bitcoin Gold) are display-only.',
+        today: 'today', active: 'active', halted: 'halted', replay: 'Replay',
+      },
+      ja: {
+        title: 'ビットコインのプロトコル分岐と隣接する暗号通貨',
+        sub: '各チェーンのローンチ・分岐系譜・稼働期間を真の時間軸の上に示す。稼働中のチェーンは右端まで伸び、停止したチェーンはネットワーク占有率が崩落した日付で終わる。各分岐点の縦線が親チェーンを辿る。チェーン名とマイルストーンは、対応するアーカイブエントリーが存在する場合にリンクされる (Bitcoin Classic・Bitcoin Unlimited・ビットコインゴールドは専用エントリーがないため表示のみ)。',
+        today: '現在', active: '稼働中', halted: '停止', replay: 'リプレイ',
+      },
+    } as Record<string, { title: string; sub: string; today: string; active: string; halted: string; replay: string }>)[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p>' +
+      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + T_.replay + '</button></div>' +
+      '<div class="figure-outer"><figure class="figure-block" data-kind="chart"><div class="ce-chart"></div></figure></div>';
+
+    mountForkGenealogy(host.querySelector('.ce-chart'), host.querySelector('.ba-replay-btn'), {
+      chains: CHAINS[lang],
+      milestones: MILESTONES[lang],
+      todayLabel: T_.today,
+      statusActive: T_.active,
+      statusHalted: T_.halted,
+      linkBase: linkBase,
+    });
   };
 
   // ===== drawer factory: any BarChartRace-family race, embedded in-body =====

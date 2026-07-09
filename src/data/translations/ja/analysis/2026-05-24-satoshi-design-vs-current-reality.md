@@ -137,6 +137,8 @@ flowchart TB
 - 2015 ~ 2017 年: ブロックサイズ戦争。 [ビットコインフォーク戦争は OSS ではない](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)参照。紛争は SegWit 有効化 (BIP 141)、ユーザー有効化ソフトフォーク (UASF) からの圧力、ニューヨーク合意 (NYA) の頓挫、そしてビットコインキャッシュの分岐という、多面的な政治的・経済的プロセスを経て決着した ― ホワイトペーパーが描くゆるやかな合意ではない。
 - 2016 年 1 月: [マイク・ハーンがビットコイン実験は失敗したと宣言し](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)、全コインを売却。ガバナンス崩壊を直接の理由として挙げた。
 
+<!-- chart: fork-genealogy -->
+
 ## 4. スケーリング ― 直接 P2P 決済 → レイヤー 2 / オフチェーン
 
 ```mermaid
