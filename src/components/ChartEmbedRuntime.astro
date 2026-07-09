@@ -18,6 +18,8 @@ import { mount as mountPublicCompaniesBar } from '../scripts/public-companies-ba
 import { mount as mountStylometricHistogram } from '../scripts/stylometric-distance-histogram.js';
 import { mount as mountForkGenealogy } from '../scripts/fork-genealogy.js';
 import { mount as mountLoppHashrate } from '../scripts/lopp-hashrate-analysis.js';
+import { mount as mountSupplyCurveComparison } from '../scripts/supply-curve-comparison.js';
+import supplyCurveSeries from '../data/supply-curves/series.json';
 import vanDorstData from '../data/derived/van-dorst-burrows-distribution.json';
 import cryptoRace from '../data/races/crypto.json';
 import assetsRace from '../data/races/assets.json';
@@ -59,7 +61,17 @@ const JPY_PER_USD = 160;
       // breakout-on-wide-viewport treatment (see fork-genealogy drawer).
       '.chart-embed .figure-block .ce-chart{position:relative;border:none;background:none;overflow:visible;min-width:1080px;}' +
       '.chart-embed .ce-section{margin-bottom:1.5rem;}' +
-      '.chart-embed .ce-section:last-child{margin-bottom:0;}';
+      '.chart-embed .ce-section:last-child{margin-bottom:0;}' +
+      '.chart-embed .scc-controls{display:flex;justify-content:flex-end;gap:0.5rem;margin-bottom:0.4rem;}' +
+      '.chart-embed .scc-scale-btns{display:flex;gap:0;border:1px solid var(--color-border);border-radius:4px;overflow:hidden;}' +
+      '.chart-embed .scale-btn{padding:3px 10px;font-size:0.78rem;background:var(--color-bg);color:var(--color-text-muted);border:none;border-right:1px solid var(--color-border);cursor:pointer;}' +
+      '.chart-embed .scale-btn:last-child{border-right:none;}' +
+      '.chart-embed .scale-btn.active{background:var(--color-accent-bg);color:var(--color-accent);font-weight:600;}' +
+      '.chart-embed .scc-legend{display:flex;flex-wrap:wrap;gap:0.5rem 1.1rem;margin-top:0.7rem;font-size:0.83rem;}' +
+      '.chart-embed .scc-legend .legend-item{display:inline-flex;align-items:center;cursor:pointer;user-select:none;color:var(--color-text);}' +
+      '.chart-embed .scc-legend .legend-item.off{color:var(--color-text-muted);text-decoration:line-through;opacity:0.55;}' +
+      '.chart-embed .scc-legend .legend-dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:5px;}' +
+      '.chart-embed .scc-legend-hint{margin-top:0.4rem;font-size:0.76rem;color:var(--color-text-muted);font-style:italic;}';
     document.head.appendChild(st);
   }
 
@@ -301,6 +313,61 @@ const JPY_PER_USD = 160;
       '<div class="ce-chart lha-gauge"></div></section>';
 
     mountLoppHashrate(host.querySelector('.lha-scenarios'), host.querySelector('.lha-gauge'), { scenarios: scenarios, labels: T_ });
+  };
+
+  // ===== drawer: supply-curve-comparison (5 monetary archetypes, 2024=100) =====
+  // Drawing lives in src/scripts/supply-curve-comparison.js (shared with
+  // SupplyCurveComparison.astro). Localizes the raw series JSON the same way
+  // the component's own frontmatter did, then wires the chrome (scale
+  // toggle, legend, replay button).
+  DRAWERS['supply-curve-comparison'] = function (host: HTMLElement, lang: string) {
+    var seriesData = supplyCurveSeries as any;
+    var T_ = ({
+      en: {
+        title: 'Supply trajectories, normalized to 2024 = 100',
+        subtitle: 'Five monetary archetypes plotted on a single index. Bitcoin asymptotes to its hard cap; USD M2 keeps compounding; Ethereum sits near flat post-Merge; Solana inflates at a declining rate; gold grows at roughly 1.5%/year.',
+        yLabel: 'Supply index (2024 = 100)', xLabel: 'Year',
+        scaleLinear: 'Linear', scaleLog: 'Log', hoverYear: 'Year',
+        legendHint: 'Click a label to toggle the series.', replay: 'Replay',
+      },
+      ja: {
+        title: '2024 年を 100 とした供給量の推移',
+        subtitle: '5 つの貨幣類型を 1 つの指標で比較。ビットコインはハード上限に漸近、 USD M2 は複利的に拡大を続け、イーサリアムはマージ後ほぼ横ばい、ソラナは逓減的にインフレ、金は年率約 1.5% で成長。',
+        yLabel: '供給指標 (2024 年 = 100)', xLabel: '年',
+        scaleLinear: '線形', scaleLog: '対数', hoverYear: '年',
+        legendHint: '凡例のラベルをクリックすると系列の表示を切り替えられる。', replay: 'リプレイ',
+      },
+    } as Record<string, any>)[lang];
+
+    var localized = {
+      baselineYear: seriesData.baselineYear,
+      yearRange: seriesData.yearRange,
+      annotations: seriesData.annotations.map(function (a: any) {
+        return { year: a.year, label: lang === 'ja' ? a.labelJa : a.labelEn };
+      }),
+      series: seriesData.series.map(function (s: any) {
+        return { id: s.id, label: lang === 'ja' ? s.labelJa : s.labelEn, colorVar: s.colorVar, points: s.points };
+      }),
+    };
+
+    host.innerHTML =
+      '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
+      '<div class="scc-controls"><div class="scc-scale-btns">' +
+      '<button class="scale-btn active" data-scale="linear">' + T_.scaleLinear + '</button>' +
+      '<button class="scale-btn" data-scale="log">' + T_.scaleLog + '</button></div>' +
+      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + T_.replay + '</button></div></div>' +
+      '<div class="ce-chart"></div><div class="scc-legend"></div>' +
+      '<p class="scc-legend-hint">' + T_.legendHint + '</p>';
+
+    var scaleBtns = Array.from(host.querySelectorAll('.scale-btn')) as HTMLElement[];
+    mountSupplyCurveComparison(
+      host.querySelector('.ce-chart'),
+      host.querySelector('.scc-legend'),
+      host.querySelector('.ba-replay-btn'),
+      scaleBtns,
+      localized,
+      T_
+    );
   };
 
   // ===== drawer factory: any BarChartRace-family race, embedded in-body =====

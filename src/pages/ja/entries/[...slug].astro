@@ -18,7 +18,6 @@ import SatoshiHoldingsComparison from '../../../components/SatoshiHoldingsCompar
 import WhaleAlertFortune from '../../../components/WhaleAlertFortune.astro';
 import NlsExchangeRate from '../../../components/NlsExchangeRate.astro';
 import BitcoinForkGenealogy from '../../../components/BitcoinForkGenealogy.astro';
-import SupplyCurveComparison from '../../../components/SupplyCurveComparison.astro';
 import DesignSeriesNav from '../../../components/DesignSeriesNav.astro';
 import ParentLink from '../../../components/ParentLink.astro';
 import { getCollection, render } from 'astro:content';
@@ -199,10 +198,6 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
 
     {entry.id.includes('bitcoin-fork-and-altcoin-genealogy') && (
       <BitcoinForkGenealogy lang={lang} />
-    )}
-
-    {entry.id.includes('fixed-supply-vs-adjustable-money') && (
-      <SupplyCurveComparison lang={lang} />
     )}
 
     {entry.data.type === 'design' && (

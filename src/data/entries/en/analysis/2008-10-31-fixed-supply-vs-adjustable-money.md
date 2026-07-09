@@ -183,6 +183,8 @@ graph TD
 
 The distribution across this table reads as a *spectrum* rather than a consensus around any one design. Hard-cap inheritance from Bitcoin is one cluster (Bitcoin / BCH / BSV / Litecoin / Cardano / ETC); declining-issuance variants are another (Solana, Monero's emission curve); the no-cap-with-discretionary-feedback variants (Ethereum, Cosmos, Polkadot) are a third; the fiat-pegged stablecoins are a fourth, and they functionally inherit the fiat issuer's discretion.
 
+<!-- chart: supply-curve-comparison -->
+
 ## 7. Ethereum's divergent path
 
 [Vitalik Buterin's](/BitcoinArchive/participants/vitalik-buterin/) Ethereum (mainnet July 2015) is the most-cited explicit counterpoint to Bitcoin's hard-cap model. Three design moves shaped the current Ethereum supply curve:
