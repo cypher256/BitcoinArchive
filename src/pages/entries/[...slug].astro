@@ -11,7 +11,6 @@ import SvnCommitters from '../../components/SvnCommitters.astro';
 import PatoshiMiningMachine from '../../components/PatoshiMiningMachine.astro';
 import ValueOverflowTimeline from '../../components/ValueOverflowTimeline.astro';
 import GenesisBlockGap from '../../components/GenesisBlockGap.astro';
-import LoppHashrateAnalysis from '../../components/LoppHashrateAnalysis.astro';
 import PatoshiExtraNonce from '../../components/PatoshiExtraNonce.astro';
 import PlosPatoshiAnomaly from '../../components/PlosPatoshiAnomaly.astro';
 import GitHubMigrationTimeline from '../../components/GitHubMigrationTimeline.astro';
@@ -227,14 +226,6 @@ const heroBannerOffset = heroBannerPosition(entry.id);
 
     {entry.id.includes('sergio-lerner-patoshi-mining-machine') && (
       <PatoshiMiningMachine lang={lang} />
-    )}
-
-    {entry.id.includes('lopp-was-satoshi-greedy-miner') && (
-      <LoppHashrateAnalysis lang={lang} />
-    )}
-
-    {entry.id.includes('satoshi-design-vs-current-reality') && (
-      <LoppHashrateAnalysis lang={lang} />
     )}
 
     {entry.id.includes('sergio-lerner-patoshi-analysis') && (

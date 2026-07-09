@@ -79,6 +79,8 @@ timeline
 
 **The centralisation consequence.** Worked through in [Ray Dillinger's 2018 interview](/BitcoinArchive/entries/aftermath/2018-10-01-ray-dillinger-interview/) and in [the mining-reward exhaustion analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/).
 
+<!-- chart: lopp-hashrate-analysis -->
+
 ## 2. Custody — own your keys → exchange IOUs (and ETF wrappers)
 
 ```mermaid

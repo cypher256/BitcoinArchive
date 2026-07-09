@@ -17,6 +17,7 @@ import { mount as mountOwnershipTreemap } from '../scripts/ownership-treemap.js'
 import { mount as mountPublicCompaniesBar } from '../scripts/public-companies-bar.js';
 import { mount as mountStylometricHistogram } from '../scripts/stylometric-distance-histogram.js';
 import { mount as mountForkGenealogy } from '../scripts/fork-genealogy.js';
+import { mount as mountLoppHashrate } from '../scripts/lopp-hashrate-analysis.js';
 import vanDorstData from '../data/derived/van-dorst-burrows-distribution.json';
 import cryptoRace from '../data/races/crypto.json';
 import assetsRace from '../data/races/assets.json';
@@ -56,7 +57,9 @@ const JPY_PER_USD = 160;
       // otherwise get boxed twice -- the figure-block already supplies
       // border/background/padding for wide charts that need the sitewide
       // breakout-on-wide-viewport treatment (see fork-genealogy drawer).
-      '.chart-embed .figure-block .ce-chart{position:relative;border:none;background:none;overflow:visible;min-width:1080px;}';
+      '.chart-embed .figure-block .ce-chart{position:relative;border:none;background:none;overflow:visible;min-width:1080px;}' +
+      '.chart-embed .ce-section{margin-bottom:1.5rem;}' +
+      '.chart-embed .ce-section:last-child{margin-bottom:0;}';
     document.head.appendChild(st);
   }
 
@@ -255,6 +258,49 @@ const JPY_PER_USD = 160;
       statusHalted: T_.halted,
       linkBase: linkBase,
     });
+  };
+
+  // ===== drawer: lopp-hashrate-analysis (Satoshi's mining, actual vs potential) =====
+  // Drawing lives in src/scripts/lopp-hashrate-analysis.js (shared with
+  // LoppHashrateAnalysis.astro). Used in-body by two entries: the Mining
+  // section of satoshi-design-vs-current-reality, and the Counterfactual
+  // analysis section of lopp-was-satoshi-greedy-miner. Content is identical
+  // in both places (same chart, same fixed scenario data as the original
+  // component) -- only the surrounding prose differs, which is why one
+  // marker name serves both.
+  DRAWERS['lopp-hashrate-analysis'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'Satoshi\'s Mining: Actual vs. Potential',
+        subtitle: 'Satoshi voluntarily throttled mining capacity. Full-power mining could have yielded ~2× the actual amount.',
+        actual: 'Actual mining', fullCapacity: 'Full capacity (no pauses)', maxCapacity: 'Maximum capacity (6 Mhps)',
+        btc: 'BTC', mhps: 'Mhps',
+        hashrateTitle: 'Hashrate Utilization', hashrateSub: 'Satoshi used only 72.5% of available processing power.',
+        available: 'Available', pctUsed: '72.5%',
+      },
+      ja: {
+        title: 'サトシのマイニング：実績 vs. 可能性',
+        subtitle: 'サトシは意図的にマイニング能力を抑制した。フルパワーなら実際の約 2倍を獲得できた。',
+        actual: '実際のマイニング', fullCapacity: 'フル稼働（ポーズなし）', maxCapacity: '最大能力（6 Mhps）',
+        btc: 'BTC', mhps: 'Mhps',
+        hashrateTitle: 'ハッシュレート使用率', hashrateSub: 'サトシは利用可能な計算能力の 72.5%しか使わなかった。',
+        available: '利用可能', pctUsed: '72.5%',
+      },
+    } as Record<string, any>)[lang];
+
+    var scenarios = [
+      { label: T_.actual, blocks: 22000, btc: 1100000, mhps: 4.35, colorToken: '--color-accent' },
+      { label: T_.fullCapacity, blocks: 31783, btc: 1590000, mhps: 4.35, colorToken: '--chart-color-4' },
+      { label: T_.maxCapacity, blocks: 43829, btc: 2190000, mhps: 6.0, colorToken: '--chart-color-6' },
+    ];
+
+    host.innerHTML =
+      '<section class="ce-section"><p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
+      '<div class="ce-chart lha-scenarios"></div></section>' +
+      '<section class="ce-section"><p class="ce-title">' + T_.hashrateTitle + '</p><p class="ce-sub">' + T_.hashrateSub + '</p>' +
+      '<div class="ce-chart lha-gauge"></div></section>';
+
+    mountLoppHashrate(host.querySelector('.lha-scenarios'), host.querySelector('.lha-gauge'), { scenarios: scenarios, labels: T_ });
   };
 
   // ===== drawer factory: any BarChartRace-family race, embedded in-body =====

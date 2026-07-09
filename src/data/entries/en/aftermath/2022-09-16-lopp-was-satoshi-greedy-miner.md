@@ -61,6 +61,8 @@ Lopp models two alternative scenarios:
 
 The ~300-second pauses between consecutive blocks and the deliberate use of only 72.5% of available hashrate demonstrate that Satoshi prioritized network bootstrapping and decentralization over personal enrichment.
 
+<!-- chart: lopp-hashrate-analysis -->
+
 Building on [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/)'s [Patoshi pattern research](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/), Lopp's analysis provided quantitative evidence that Satoshi's mining behavior was altruistic rather than extractive. The article concludes: "Anyone who claims that Satoshi was greedy simply hasn't done the math." That 0.09%-spent baseline is also the yardstick analysts checked a newly-moved block reward against in [a January 2023 dormant-coin movement](/BitcoinArchive/entries/aftermath/2023-01-12-early-bitcoin-moved/), when the coins in question turned out not to match the Patoshi pattern at all.
 
 This same portrait of a miner who could have taken far more but chose restraint had already been sketched qualitatively, nearly five years earlier, by [Ray Dillinger, one of the reviewers of Bitcoin's original blockchain code](/BitcoinArchive/entries/aftermath/2017-09-20-ray-dillinger-if-id-known/); Lopp's analysis supplies the numbers behind that earlier impression.

@@ -61,6 +61,8 @@ translationStatus: complete
 
 連続ブロック間の約 300秒の休止と、利用可能なハッシュレートの 72.5%のみの意図的使用は、サトシが個人的利益よりもネットワークの立ち上げと分散化を優先していたことを示している。
 
+<!-- chart: lopp-hashrate-analysis -->
+
 [セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)の [Patoshi パターン研究](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)を基に、ロップの分析はサトシのマイニング行動が搾取的ではなく利他的であったことの定量的証拠を提供した。記事は次のように締めくくる：「サトシが欲張りだったと主張する人は、単に計算をしていないだけだ。」この 0.09% という使用済み割合の基準は、後に [2023年1月に休眠コインが動いた事例](/BitcoinArchive/ja/entries/aftermath/2023-01-12-early-bitcoin-moved/)で新たに動いたブロック報酬を照合する際の物差しにもなった――結果としてそのコインは Patoshi パターンとは一致しないと判明したのだが。
 
 「奪おうと思えば奪えたのに自制したマイナー」というこの人物像は、これより 5 年近く前、[レイ・ディリンジャー](/BitcoinArchive/ja/entries/aftermath/2017-09-20-ray-dillinger-if-id-known/) ― ビットコインのブロックチェーンコードを最初期にレビューした人物の一人 ― によって、すでに定性的な形で描かれていた。ロップの分析は、その印象に数値的な裏付けを与えている。

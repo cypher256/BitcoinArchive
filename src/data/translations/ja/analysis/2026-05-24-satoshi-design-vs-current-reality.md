@@ -80,6 +80,8 @@ timeline
 
 **集中化の帰結**。 [レイ・ディリンジャー 2018 年インタビュー](/BitcoinArchive/ja/entries/aftermath/2018-10-01-ray-dillinger-interview/)と[マイニング報酬枯渇分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)で詳述。
 
+<!-- chart: lopp-hashrate-analysis -->
+
 ## 2. カストディ ― 自分で鍵を持つ → 取引所 IOU (および ETF 商品)
 
 ```mermaid
