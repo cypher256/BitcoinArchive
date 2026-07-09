@@ -158,6 +158,8 @@ Three structural factors are commonly cited to explain why none of the breakaway
 
 These observations are descriptive, not prescriptive. They do not rule out a future fork that gains share, only record what happened between 2009 and 2024.
 
+<!-- chart: crypto-race -->
+
 ## 5. Limits of this entry
 
 - **Coverage.** This entry catalogs the protocol forks that left surviving chains and the adjacent cryptocurrencies that recur in mainstream Bitcoin discourse. The hundreds of thinly-traded Bitcoin-codebase forks (Peercoin, Primecoin, Auroracoin, etc.) are out of scope; the thousands of independently-designed chains whose origin does not trace back to Bitcoin (Ripple, Monero, IOTA, Cardano are commonly-cited examples in this category) are also out of scope.

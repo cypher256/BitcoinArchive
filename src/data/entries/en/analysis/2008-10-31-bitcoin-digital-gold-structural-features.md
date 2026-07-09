@@ -42,6 +42,8 @@ translationStatus: complete
 
 Later cryptocurrencies ([Ethereum](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/), Ripple, Cardano, Solana) ship more capable virtual machines, faster confirmation, lower fees, richer programmability. On any single technical axis other than uptime since 2009, Bitcoin is no longer the frontier. And yet the market consistently prices Bitcoin as the asset most resembling gold — the long-horizon store of value, the reserve position, the holding that doesn't depend on a counterparty's roadmap.
 
+<!-- chart: assets-race -->
+
 The standard explanation is "first-mover advantage." On this reading, Bitcoin's value is a path-dependent accident: it arrived first, accumulated the network effect, and is now defended by inertia rather than by anything intrinsic to the design.
 
 This page argues that the explanation is structurally richer. Bitcoin's claim to "digital gold" status is not a single property but the **simultaneous combination** of two distinct layers of decentralization, supported by six concrete structural features. Each individual feature exists in some other project. None of those projects has assembled the full set, and the absence is not accidental — several of the features are mutually difficult to satisfy together.

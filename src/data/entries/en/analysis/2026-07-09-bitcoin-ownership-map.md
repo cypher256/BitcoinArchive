@@ -46,7 +46,7 @@ translationStatus: complete
 
 On July 6, 2026, Strategy — the company formerly known as MicroStrategy — held 843,775 BTC. That is roughly 256,000 coins short of the ~1.1 million that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) mined and never moved. For sixteen years, nobody came anywhere near that untouched first place. Now the gap is visible.
 
-[The digital-gold analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) located Bitcoin's claim to that name in two layers of decentralization: no operator inside the system, and no authority among the people around it. The founder's absence shows up in the ownership landscape too. So what does that landscape look like in 2026 — who actually holds the 21 million?
+In Bitcoin's own vocabulary, holders at this scale are called whales. [The digital-gold analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) located Bitcoin's claim to that name in two layers of decentralization: no operator inside the system, and no authority among the people around it. The founder's absence shows up in the ownership landscape too. So what does that landscape look like in 2026 — who actually holds the 21 million?
 
 ## The map of the 21 million
 

@@ -13,8 +13,9 @@
     }
   },
   "related": [
-    { "entry": "analysis/2008-10-31-bitcoin-digital-gold-structural-features", "anchor": "race-assets", "label": { "en": "world’s largest assets", "ja": "世界の主要資産" } },
-    { "entry": "aftermath/2020-07-20-whale-alert-satoshi-fortune", "anchor": "race-wealth", "label": { "en": "the wealthiest people", "ja": "世界の富豪" } }
+    { "entry": "analysis/2008-10-31-bitcoin-digital-gold-structural-features", "anchor": "assets-race", "label": { "en": "world’s largest assets", "ja": "世界の主要資産" } },
+    { "entry": "aftermath/2020-07-20-whale-alert-satoshi-fortune", "anchor": "wealth-race", "label": { "en": "the wealthiest people", "ja": "世界の富豪" } },
+    { "entry": "analysis/2026-07-09-bitcoin-ownership-map", "anchor": "holders-race", "label": { "en": "the largest holders", "ja": "最大保有者" } }
   ],
   "dates": [2014, 2016, 2018, 2021, 2024, 2026],
   "series": [

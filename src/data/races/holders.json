@@ -13,6 +13,11 @@
       "note": "BTC 建て、おおよその年末値（2026 年は年央の最新値）。Strategy は SEC 開示（bitbo / BitcoinTreasuries 経由）。IBIT は信託の保有分で、ETF 株主のための預かりであり BlackRock 自身のコインではない。米国政府は押収残高と戦略ビットコイン準備のトラッカー帰属値。中国は 2019 年 PlusToken 押収分で、管理状態は係争中。*サトシは Patoshi 推定の約 110 万 BTC。一度も使われていない帰属推定であり、監査された残高ではない。"
     }
   },
+  "related": [
+    { "entry": "analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy", "anchor": "crypto-race", "label": { "en": "cryptocurrencies", "ja": "仮想通貨" } },
+    { "entry": "analysis/2008-10-31-bitcoin-digital-gold-structural-features", "anchor": "assets-race", "label": { "en": "world’s largest assets", "ja": "世界の主要資産" } },
+    { "entry": "aftermath/2020-07-20-whale-alert-satoshi-fortune", "anchor": "wealth-race", "label": { "en": "the wealthiest people", "ja": "世界の富豪" } }
+  ],
   "dates": [2020, 2021, 2022, 2023, 2024, 2025, 2026],
   "series": [
     { "name": { "en": "Satoshi*", "ja": "サトシ*" }, "colorToken": "--color-satoshi", "values": [1100000, 1100000, 1100000, 1100000, 1100000, 1100000, 1100000] },

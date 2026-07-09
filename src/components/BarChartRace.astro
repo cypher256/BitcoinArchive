@@ -42,12 +42,16 @@ const note = !isBtc && isJa ? `${l.note}（1ドル＝${JPY_PER_USD}円の固定�
 <div class="ba-race">
   <h3 class="ba-race-title">{l.title}</h3>
   <p class="ba-race-sub">{l.subtitle}</p>
-  {race.related && race.related.length > 0 && (
-    <p class="ba-race-related">{lang === 'ja' ? '関連レース: ' : 'Related races: '}{race.related.map((r: any, i: number) => (
-      <Fragment>{i > 0 ? ' · ' : ''}<a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${lang === 'ja' ? 'ja/' : ''}entries/${r.entry}/#${r.anchor}`}>{r.label[lang]}</a></Fragment>
-    ))}</p>
+  {race.related && race.related.length > 0 ? (
+    <div class="ba-race-toolbar">
+      <p class="ba-race-related">{lang === 'ja' ? '関連レース: ' : 'Related races: '}{race.related.map((r: any, i: number) => (
+        <Fragment>{i > 0 ? ' · ' : ''}<a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${lang === 'ja' ? 'ja/' : ''}entries/${r.entry}/#${r.anchor}`}>{r.label[lang]}</a></Fragment>
+      ))}</p>
+      <div class="ba-replay-controls"><button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
+    </div>
+  ) : (
+    <div class="ba-replay-controls"><button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
   )}
-  <div class="ba-replay-controls"><button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
   <div id={containerId} class="ba-race-chart"></div>
   <p class="ba-race-note">{note}</p>
   <script type="application/json" id={`${containerId}-data`} set:html={JSON.stringify(chartData)} />
@@ -108,11 +112,29 @@ import { mount } from '../scripts/bar-chart-race.js';
     margin-top: 0;
     margin-bottom: 1rem;
   }
+  /* Shares a row with the replay button when both are present (see
+     .ba-race-toolbar below) — there is horizontal room for a short related-
+     races line plus a small right-aligned button on any but the narrowest
+     viewports, so merging them onto one line removes an entire stacked
+     block's worth of vertical whitespace above the chart. flex-wrap lets the
+     button drop to its own line below when the combined width doesn't fit,
+     so no fixed breakpoint is needed. */
+  .ba-race-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2rem 0.8rem;
+    margin-top: -0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  .ba-race-toolbar .ba-replay-controls {
+    margin-bottom: 0;
+  }
   .ba-race-related {
     font-size: 0.82rem;
     color: var(--color-text-muted);
-    margin-top: -0.6rem;
-    margin-bottom: 1rem;
+    margin: 0;
   }
   .ba-race-chart {
     border: 1px solid var(--color-border);

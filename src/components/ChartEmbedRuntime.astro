@@ -15,7 +15,14 @@ import { mount as mountSupplyCurve } from '../scripts/supply-curve.js';
 import { mount as mountBarRace } from '../scripts/bar-chart-race.js';
 import { mount as mountOwnershipTreemap } from '../scripts/ownership-treemap.js';
 import { mount as mountPublicCompaniesBar } from '../scripts/public-companies-bar.js';
+import cryptoRace from '../data/races/crypto.json';
+import assetsRace from '../data/races/assets.json';
+import wealthRace from '../data/races/wealth.json';
 import holdersRace from '../data/races/holders.json';
+
+// USD->JPY fixed display rate for JA-locale races (matches BarChartRace.astro's
+// own constant — kept in exactly these two places, one per render path).
+const JPY_PER_USD = 160;
 
 (function () {
   var embeds = document.querySelectorAll('.chart-embed[data-chart]');
@@ -34,6 +41,9 @@ import holdersRace from '../data/races/holders.json';
       '.chart-embed .ce-title{font-weight:700;font-size:1.02rem;margin:0 0 0.2rem;}' +
       '.chart-embed .ce-sub{font-size:0.88rem;color:var(--color-text-muted);margin:0 0 0.8rem;}' +
       '.chart-embed .ce-note{font-size:0.75rem;color:var(--color-text-muted);font-style:italic;margin:0.6rem 0 0;}' +
+      '.chart-embed .ba-race-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.2rem 0.8rem;margin-top:-0.4rem;margin-bottom:0.6rem;}' +
+      '.chart-embed .ba-race-toolbar .ba-replay-controls{margin-bottom:0;}' +
+      '.chart-embed .ba-race-related{font-size:0.82rem;color:var(--color-text-muted);margin:0;}' +
       '.chart-embed .ce-race{padding:0.5rem 0;}';
     document.head.appendChild(st);
   }
@@ -82,27 +92,44 @@ import holdersRace from '../data/races/holders.json';
     mountPublicCompaniesBar(host.querySelector('.ce-chart'), lang);
   };
 
-  // ===== drawer: holders-race (largest named holders vs Satoshi) =====
-  // Data + bilingual labels live in src/data/races/holders.json (same format
-  // as the BarChartRace component's races); the drawing runtime is the shared
-  // src/scripts/bar-chart-race.js.
-  DRAWERS['holders-race'] = function (host, lang) {
-    var race = holdersRace as any;
-    var l = race.labels[lang];
-    host.innerHTML =
-      '<p class="ce-title">' + l.title + '</p><p class="ce-sub">' + l.subtitle + '</p>' +
-      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + (lang === 'ja' ? 'リプレイ' : 'Replay') + '</button></div>' +
-      '<div class="ce-chart ce-race"></div><p class="ce-note">' + l.note + '</p>';
-    var series = race.series.map(function (s: any) { return { name: s.name[lang], colorToken: s.colorToken, values: s.values }; });
-    mountBarRace(host.querySelector('.ce-race'), {
-      dates: race.dates,
-      series: series,
-      topN: race.topN || 8,
-      format: race.unit === 'btc' ? (lang === 'ja' ? 'btc-ja' : 'btc') : (lang === 'ja' ? 'jpy' : 'usd-b'),
-      jpyRate: null,
-      replayBtn: host.querySelector('.ba-replay-btn'),
-    });
-  };
+  // ===== drawer factory: any BarChartRace-family race, embedded in-body =====
+  // One drawer per race JSON (src/data/races/*.json — same file format the
+  // BarChartRace.astro component reads), all sharing the drawing runtime
+  // src/scripts/bar-chart-race.js. Add a race to this system = add a JSON +
+  // one line below, same as adding <BarChartRace raceId=.../> was before.
+  function makeRaceDrawer(race: any) {
+    return function (host: HTMLElement, lang: string) {
+      var l = race.labels[lang];
+      var isBtc = race.unit === 'btc';
+      var base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+      var replayBtn = '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + (lang === 'ja' ? 'リプレイ' : 'Replay') + '</button></div>';
+      var toolbar = (race.related && race.related.length > 0)
+        ? '<div class="ba-race-toolbar"><p class="ba-race-related">' + (lang === 'ja' ? '関連レース: ' : 'Related races: ') +
+          race.related.map(function (r: any, i: number) {
+            return (i > 0 ? ' · ' : '') + '<a href="' + base + (lang === 'ja' ? 'ja/' : '') + 'entries/' + r.entry + '/#' + r.anchor + '">' + r.label[lang] + '</a>';
+          }).join('') + '</p>' + replayBtn + '</div>'
+        : replayBtn;
+      var note = (!isBtc && lang === 'ja')
+        ? l.note + '（1ドル＝' + JPY_PER_USD + '円の固定換算。各年の実勢レートではない）'
+        : l.note;
+      host.innerHTML =
+        '<p class="ce-title">' + l.title + '</p><p class="ce-sub">' + l.subtitle + '</p>' + toolbar +
+        '<div class="ce-chart ce-race"></div><p class="ce-note">' + note + '</p>';
+      var series = race.series.map(function (s: any) { return { name: s.name[lang], colorToken: s.colorToken, values: s.values }; });
+      mountBarRace(host.querySelector('.ce-race'), {
+        dates: race.dates,
+        series: series,
+        topN: race.topN || 8,
+        format: isBtc ? (lang === 'ja' ? 'btc-ja' : 'btc') : (lang === 'ja' ? 'jpy' : 'usd-b'),
+        jpyRate: !isBtc && lang === 'ja' ? JPY_PER_USD : null,
+        replayBtn: host.querySelector('.ba-replay-btn'),
+      });
+    };
+  }
+  DRAWERS['crypto-race'] = makeRaceDrawer(cryptoRace);
+  DRAWERS['assets-race'] = makeRaceDrawer(assetsRace);
+  DRAWERS['wealth-race'] = makeRaceDrawer(wealthRace);
+  DRAWERS['holders-race'] = makeRaceDrawer(holdersRace);
 
   // ---- lazy-load chart-anim.js (plain script, no d3 dependency), then render ----
   // Only fetched when a chart-embed placeholder actually exists on the page,

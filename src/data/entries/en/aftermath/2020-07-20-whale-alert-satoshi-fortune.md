@@ -45,6 +45,8 @@ In July 2020, blockchain tracking service Whale Alert published "The Satoshi For
 - Of these, only **50 blocks (907 BTC)** had ever been spent; the remaining **1,122,693 BTC** were untouched
 - Estimated value at the time of publication: at least **$10.9 billion**
 
+<!-- chart: wealth-race -->
+
 These totals closely matched the estimates Sergio Lerner had already published in his [2019 Patoshi-naming update](/BitcoinArchive/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/) — roughly 1.1 million BTC across about 22,000 blocks, derived independently through timestamp-inversion analysis.
 
 ## Mining behavior
