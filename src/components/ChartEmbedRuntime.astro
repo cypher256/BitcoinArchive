@@ -24,6 +24,7 @@ import { mount as mountNonceLsb } from '../scripts/nonce-lsb.js';
 import { mount as mountSvnCommitters } from '../scripts/svn-committers.js';
 import { mount as mountPatoshiMiningMachine } from '../scripts/patoshi-mining-machine.js';
 import { mount as mountExtranonceScatter } from '../scripts/extranonce-scatter.js';
+import { mount as mountNlsExchangeRate } from '../scripts/nls-exchange-rate.js';
 import supplyCurveSeries from '../data/supply-curves/series.json';
 import vanDorstData from '../data/derived/van-dorst-burrows-distribution.json';
 import satoshiTimelineData from '../data/satoshi-timeline/timeline.json';
@@ -567,6 +568,44 @@ const JPY_PER_USD = 160;
 
     var data = extranonceScatterData as any;
     mountExtranonceScatter(host.querySelector('.ce-chart'), host.querySelector('.ba-replay-btn'), data.patoshiPoints, data.nonPatoshiPoints, T_);
+  };
+
+  // ===== drawer: nls-exchange-rate (cost-of-production formula diagram) =====
+  // Drawing lives in src/scripts/nls-exchange-rate.js (shared with
+  // NlsExchangeRate.astro, no longer used on any page after this migration).
+  DRAWERS['nls-exchange-rate'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'Cost-of-Production Formula',
+        subtitle: 'Bitcoin\'s first price was derived from the real-world electricity cost required to mine it.',
+        kwhLabel: 'CPU electricity\n(1 year at high load)',
+        costLabel: 'US residential\nelectricity rate',
+        monthsLabel: 'Divide by months',
+        btcLabel: 'BTC mined\n(past 30 days)',
+        resultLabel: 'First Bitcoin price',
+        formula: 'Formula',
+        kwh: '1,331.5 kWh', cost: '$0.1136 / kWh', months: '12 months', mined: '~198,000 BTC',
+        priceBtc: '$0.000764', priceBtcFull: 'per BTC', priceUsd: '$1 = 1,309.03 BTC',
+      },
+      ja: {
+        title: '電力原価方式の計算',
+        subtitle: 'ビットコインの最初の価格は、マイニングに必要な現実世界の電力コストから導かれた。',
+        kwhLabel: 'CPU 電力消費\n（1年間・高負荷時）',
+        costLabel: '米国家庭用\n 電力料金',
+        monthsLabel: '月数で除算',
+        btcLabel: 'マイニング済 BTC\n（過去 30日間）',
+        resultLabel: '初のビットコイン価格',
+        formula: '計算式',
+        kwh: '1,331.5 kWh', cost: '$0.1136 / kWh', months: '12 ヶ月', mined: '約 198,000 BTC',
+        priceBtc: '$0.000764', priceBtcFull: '/ BTC', priceUsd: '$1 = 1,309.03 BTC',
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
+      '<div class="ce-chart"></div>';
+
+    mountNlsExchangeRate(host.querySelector('.ce-chart'), T_);
   };
 
   // ===== drawer: satoshi-activity-timeline (3-panel: swimlane, recipients, cumulative) =====

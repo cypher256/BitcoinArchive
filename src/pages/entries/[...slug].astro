@@ -11,7 +11,6 @@ import PlosPatoshiAnomaly from '../../components/PlosPatoshiAnomaly.astro';
 import GitHubMigrationTimeline from '../../components/GitHubMigrationTimeline.astro';
 import SatoshiHoldingsComparison from '../../components/SatoshiHoldingsComparison.astro';
 import WhaleAlertFortune from '../../components/WhaleAlertFortune.astro';
-import NlsExchangeRate from '../../components/NlsExchangeRate.astro';
 import BitcoinForkGenealogy from '../../components/BitcoinForkGenealogy.astro';
 import DesignSeriesNav from '../../components/DesignSeriesNav.astro';
 import ParentLink from '../../components/ParentLink.astro';
@@ -216,10 +215,6 @@ const heroBannerOffset = heroBannerPosition(entry.id);
 
     {entry.id.includes('whale-alert-satoshi-fortune') && (
       <WhaleAlertFortune lang={lang} />
-    )}
-
-    {entry.id.includes('newlibertystandard-first-exchange-rate') && (
-      <NlsExchangeRate lang={lang} />
     )}
 
     {threadId && threadMessages >= 2 && (

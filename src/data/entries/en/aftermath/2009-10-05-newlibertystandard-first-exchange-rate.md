@@ -36,6 +36,8 @@ On October 5, 2009, [NewLibertyStandard](/BitcoinArchive/participants/newliberty
 
 The methodology: divide $1.00 by the average amount of electricity required to run a computer at high CPU usage for a year (1,331.5 kWh), multiplied by the average residential cost of electricity in the United States for the previous year ($0.1136), divided by 12 months, divided by the number of bitcoins generated over the past 30 days.
 
+<!-- chart: nls-exchange-rate -->
+
 In other words, Bitcoin's first price was a cost-of-production figure — the electricity to mine a coin — not a market price set by buyers and sellers. This was the same pricing principle [Satoshi himself had urged six weeks earlier](/BitcoinArchive/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/), in feedback on Martti Malmi's exchange proposal.
 
 Shortly after, on October 12, 2009, [Martti Malmi sold 5,050 BTC to NewLibertyStandard for $5.02](/BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/) via PayPal — the first known exchange of Bitcoin for fiat currency.
