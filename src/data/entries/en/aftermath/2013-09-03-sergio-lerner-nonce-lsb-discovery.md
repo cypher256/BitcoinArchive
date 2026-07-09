@@ -47,6 +47,8 @@ Lerner analyzed the least significant byte (LSB) of nonce values across the firs
 
 The pattern was exclusive to unspent coinbases (Satoshi's blocks) and absent from blocks mined by other early participants.
 
+<!-- chart: nonce-lsb -->
+
 ## Significance
 
 This LSB restriction to approximately **50 out of 256 possible values** ([0..9] ∪ [19..58]) was a completely independent line of evidence from the ExtraNonce analysis. It proved the dominant miner used custom software that partitioned the nonce search space — assigning different LSB ranges to different threads or processes to avoid duplicate work.

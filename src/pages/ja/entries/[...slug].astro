@@ -5,7 +5,6 @@ import SourceCitation from '../../../components/SourceCitation.astro';
 import RelatedEntries from '../../../components/RelatedEntries.astro';
 import CommentaryLinks from '../../../components/CommentaryLinks.astro';
 import SatoshiCodeAnalysis from '../../../components/SatoshiCodeAnalysis.astro';
-import PatoshiNonceLsb from '../../../components/PatoshiNonceLsb.astro';
 import SvnCommitters from '../../../components/SvnCommitters.astro';
 import PatoshiMiningMachine from '../../../components/PatoshiMiningMachine.astro';
 import ValueOverflowTimeline from '../../../components/ValueOverflowTimeline.astro';
@@ -209,10 +208,6 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
 
     {entry.data.type === 'analysis' && entry.id.includes('satoshi-code') && (
       <SatoshiCodeAnalysis lang={lang} />
-    )}
-
-    {entry.id.includes('sergio-lerner-nonce-lsb') && (
-      <PatoshiNonceLsb lang={lang} />
     )}
 
     {entry.id.includes('bitcoin-svn-repository-committers') && (

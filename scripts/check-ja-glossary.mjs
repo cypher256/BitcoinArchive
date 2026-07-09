@@ -365,6 +365,16 @@ function maskNonProse(content) {
       out[i] = ' '.repeat(line.length);
       continue;
     }
+    // Mask standalone HTML comment marker lines (e.g. `<!-- chart: NAME -->`,
+    // `<!-- speaker: NAME -->`, `<!-- quote: qN -->`, `<!-- audit:quote-skip
+    // -->`, `<!-- tone-skip -->`). These are tooling metadata stripped by the
+    // markdown renderer -- never reader-facing prose -- and their payload can
+    // legitimately contain an English glossary term (e.g. a `chart: nonce-lsb`
+    // marker name, or a `speaker:` name) without that being a prose violation.
+    if (/^\s*<!--.*-->\s*$/.test(line)) {
+      out[i] = ' '.repeat(line.length);
+      continue;
+    }
     // Mask inline code / markdown link URLs / raw URLs / the genesis headline.
     out[i] = maskInline(line);
   }

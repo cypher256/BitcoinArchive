@@ -20,9 +20,11 @@ import { mount as mountForkGenealogy } from '../scripts/fork-genealogy.js';
 import { mount as mountLoppHashrate } from '../scripts/lopp-hashrate-analysis.js';
 import { mount as mountSupplyCurveComparison } from '../scripts/supply-curve-comparison.js';
 import { mount as mountSatoshiActivityTimeline } from '../scripts/satoshi-activity-timeline.js';
+import { mount as mountNonceLsb } from '../scripts/nonce-lsb.js';
 import supplyCurveSeries from '../data/supply-curves/series.json';
 import vanDorstData from '../data/derived/van-dorst-burrows-distribution.json';
 import satoshiTimelineData from '../data/satoshi-timeline/timeline.json';
+import nonceLsbData from '../data/patoshi/nonce-lsb.json';
 import cryptoRace from '../data/races/crypto.json';
 import assetsRace from '../data/races/assets.json';
 import wealthRace from '../data/races/wealth.json';
@@ -79,7 +81,13 @@ const JPY_PER_USD = 160;
       '.chart-embed .scc-legend .legend-item.off{color:var(--color-text-muted);text-decoration:line-through;opacity:0.55;}' +
       '.chart-embed .scc-legend .legend-dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:5px;}' +
       '.chart-embed .scc-legend-hint{margin-top:0.4rem;font-size:0.76rem;color:var(--color-text-muted);font-style:italic;}' +
-      '.chart-embed .ce-hint{font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:0.6rem;}';
+      '.chart-embed .ce-hint{font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:0.6rem;}' +
+      '.chart-embed .nlsb-legend{display:flex;flex-wrap:wrap;gap:1rem;margin-top:0.75rem;font-size:0.82rem;color:var(--color-text-muted);}' +
+      '.chart-embed .nlsb-legend-item{display:flex;align-items:center;gap:0.3rem;}' +
+      '.chart-embed .nlsb-swatch{display:inline-block;width:12px;height:12px;border-radius:2px;}' +
+      '.chart-embed .nlsb-swatch-patoshi{background:var(--chart-color-2);}' +
+      '.chart-embed .nlsb-swatch-gap{background:var(--chart-negative);}' +
+      '.chart-embed .nlsb-swatch-sparse{background:var(--chart-color-6);}';
     document.head.appendChild(st);
   }
 
@@ -376,6 +384,45 @@ const JPY_PER_USD = 160;
       localized,
       T_
     );
+  };
+
+  // ===== drawer: nonce-lsb (Patoshi nonce LSB distribution, Lerner 2013) =====
+  // Drawing lives in src/scripts/nonce-lsb.js (shared with
+  // PatoshiNonceLsb.astro, no longer used on any page after this migration).
+  DRAWERS['nonce-lsb'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'Nonce LSB Distribution (Patoshi Blocks)',
+        subtitle: 'Frequency of each least significant byte value (0–255) in Patoshi-attributed blocks. The restriction to ~50 values ([0..9] ∪ [19..58]) proves custom mining software with parallel thread nonce partitioning.',
+        yLabel: 'Occurrences', xLabel: 'Nonce LSB value',
+        range0_9: 'Range 0–9: elevated (247–324)', range10_18: 'Range 10–18: near-zero gap',
+        range19_58: 'Range 19–58: elevated (up to 201)', range59_255: 'Range 59–255: sparse',
+        tooltipValue: 'LSB value', tooltipCount: 'Occurrences', expectedLabel: 'Expected if uniform',
+        replay: 'Replay',
+      },
+      ja: {
+        title: 'Nonce LSB 分布（Patoshi ブロック）',
+        subtitle: 'Patoshi 帰属ブロックにおける各最下位バイト値（0〜255）の出現頻度。約 50 値（[0..9] ∪ [19..58]）への集中は、並列スレッドによるナンス空間分割を持つカスタムマイニングソフトウェアの使用を証明する。',
+        yLabel: '出現回数', xLabel: 'Nonce LSB 値',
+        range0_9: '範囲 0–9: 高頻度（247–324）', range10_18: '範囲 10–18: ほぼゼロ（ギャップ）',
+        range19_58: '範囲 19–58: 高頻度（最大 201）', range59_255: '範囲 59–255: まばら',
+        tooltipValue: 'LSB 値', tooltipCount: '出現回数', expectedLabel: '均一分布の場合の期待値',
+        replay: 'リプレイ',
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
+      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + T_.replay + '</button></div>' +
+      '<div class="ce-chart"></div>' +
+      '<div class="nlsb-legend">' +
+      '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-patoshi"></span>' + T_.range0_9 + '</span>' +
+      '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-gap"></span>' + T_.range10_18 + '</span>' +
+      '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-patoshi"></span>' + T_.range19_58 + '</span>' +
+      '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-sparse"></span>' + T_.range59_255 + '</span>' +
+      '</div>';
+
+    mountNonceLsb(host.querySelector('.ce-chart'), host.querySelector('.ba-replay-btn'), (nonceLsbData as any).distribution, T_);
   };
 
   // ===== drawer: satoshi-activity-timeline (3-panel: swimlane, recipients, cumulative) =====
