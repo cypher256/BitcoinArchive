@@ -804,7 +804,7 @@ description が現状で上限を超えている場合は、**収まるように
 | Litecoin | ライトコイン | Litecoin (本文中) | Wikipedia ja・主要取引所 |
 | Dogecoin | ドージコイン | Dogecoin (本文中) | Wikipedia ja・Coincheck |
 | Ethereum | イーサリアム | Ethereum (本文中) | Wikipedia ja・Coincheck |
-| Ripple | リップル | Ripple (本文中) | Wikipedia ja・Coincheck (XRP の場合は略号として英語形維持) |
+| Ripple | リップル | Ripple (本文中) | Wikipedia ja・Coincheck (XRP の場合は略号として英語形維持)。組織名 `Ripple Labs` は § I.2 区分 2 (固有名詞・組織名は英語形維持) で対象外 — `check-ja-glossary.mjs` の `Ripple` ルールは `except: [' Labs']` でこの複合名を除外する |
 | NEM (一般言及) | ネム | NEM (本文中) | Coincheck「ネム（XEM）」。略号としての `NEM` (英大文字) は § I.2 区分 3 で英語形維持 |
 | Namecoin | ネームコイン | Namecoin (本文中) | 民間情報源で広く使用 (jpbitcoin / floc.jp 等) |
 | Cardano | カルダノ | Cardano (本文中) | Wikipedia ja 主表記 (「カルダノ (ブロックチェーン)」 で立項) |

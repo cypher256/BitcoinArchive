@@ -206,7 +206,7 @@ const RULES = [
   { type: 'literal', deprecated: 'Litecoin', canonical: 'ライトコイン', reason: 'Wikipedia ja 主表記。日本では一般名としてカナが定着' },
   { type: 'literal', deprecated: 'Dogecoin', canonical: 'ドージコイン', reason: 'Wikipedia ja 主表記' },
   { type: 'literal', deprecated: 'Ethereum', canonical: 'イーサリアム', reason: 'Wikipedia ja 主表記' },
-  { type: 'literal', deprecated: 'Ripple', canonical: 'リップル', reason: 'Wikipedia ja 主表記。略号 XRP は対象外 (§ I.2 区分 3)' },
+  { type: 'literal', deprecated: 'Ripple', canonical: 'リップル', except: [' Labs'], reason: 'Wikipedia ja 主表記。略号 XRP は対象外 (§ I.2 区分 3)。組織名 Ripple Labs は § I.2 区分 2 (固有名詞・組織名は英語形維持) で対象外' },
   { type: 'literal', deprecated: 'Namecoin', canonical: 'ネームコイン', reason: '民間情報源 (jpbitcoin / floc.jp 等) で広く使用' },
   { type: 'literal', deprecated: 'Bitcoin Cash', canonical: 'ビットコインキャッシュ', reason: 'Wikipedia ja 主表記 (空白なし)' },
   { type: 'literal', deprecated: 'Bitcoin Gold', canonical: 'ビットコインゴールド', reason: 'Wikipedia ja 主表記 (空白なし)' },
@@ -431,7 +431,18 @@ function findViolations(content, rule, file, jaRanges) {
     const escaped = rule.deprecated.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     pattern = new RegExp('\\b' + escaped + '\\b', 'g');
   } else {
-    pattern = new RegExp(rule.deprecated.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
+    // `rule.except` (optional) lists strings that, when immediately
+    // following the match, mark it as part of a longer legitimate name
+    // rather than a deprecated form — e.g. 'Ripple' followed by ' Labs'
+    // is the organization name "Ripple Labs" (§ I.2 class 2: proper
+    // nouns / org names keep their English form), not the currency.
+    const escaped = rule.deprecated.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const exceptAlt = (rule.except || [])
+      .map((e) => e.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+      .join('|');
+    pattern = exceptAlt
+      ? new RegExp(escaped + '(?!(?:' + exceptAlt + '))', 'g')
+      : new RegExp(escaped, 'g');
   }
   lines.forEach((line, i) => {
     // For .astro: a line is in scope if it falls inside a `labels.ja: {…}`
