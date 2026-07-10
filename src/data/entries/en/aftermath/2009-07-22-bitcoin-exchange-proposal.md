@@ -25,6 +25,7 @@ secondarySources:
 relatedEntries:
   - analysis/2008-08-20-satoshi-self-statements
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
+  - analysis/2010-02-21-bitcoin-price-vs-production-cost
 ---
 
 On July 21, 2009, Satoshi had mentioned that he needed a "break" after 18 months of continuous Bitcoin development — [the only explicit fatigue self-statement in the documented record](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), read in retrospect as an early foreshadowing of the 2011 departure — and asked Malmi for ideas about bootstrap applications that could help Bitcoin grow.

@@ -26,6 +26,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2009-10-05-newlibertystandard-biography
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
+  - analysis/2010-02-21-bitcoin-price-vs-production-cost
   - aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal
   - aftermath/2009-05-01-martti-malmi-biography
   - aftermath/2011-02-22-satoshi-final-email-to-malmi

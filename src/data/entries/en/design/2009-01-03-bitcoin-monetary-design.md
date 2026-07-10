@@ -22,6 +22,7 @@ relatedEntries:
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
+  - analysis/2010-02-21-bitcoin-price-vs-production-cost
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique

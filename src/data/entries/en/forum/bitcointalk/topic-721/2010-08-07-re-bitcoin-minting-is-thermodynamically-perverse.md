@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/327/"
+relatedEntries:
+  - analysis/2010-02-21-bitcoin-price-vs-production-cost
 quotes:
   - id: "q1"
     person: "gridecon"

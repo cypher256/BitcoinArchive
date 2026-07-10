@@ -60,6 +60,7 @@ relatedEntries:
   - aftermath/2011-09-01-vitalik-buterin-biography
   - design/2009-01-03-bitcoin-monetary-design
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - analysis/2010-02-21-bitcoin-price-vs-production-cost
 inlineLinkKeywords:
   - "固定供給"
   - "2100 万枚上限"

@@ -22,6 +22,7 @@ secondarySources:
   - name: "History Heist — First Exchange Rate"
     url: "https://historyheist.com/new-liberty-standard-publishes-first-exchange-rate-on-bitcoin-of-1309-03-btc-to-one-u-s-dollar-0-0008btc/"
 relatedEntries:
+  - analysis/2010-02-21-bitcoin-price-vs-production-cost
   - aftermath/2009-10-05-newlibertystandard-biography
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
   - aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal
@@ -34,11 +35,13 @@ On October 5, 2009, [NewLibertyStandard](/BitcoinArchive/participants/newliberty
 
 **$1 = 1,309.03 BTC** ($0.000764 per BTC)
 
+At July 2026 prices of around $64,000 per BTC, the 1,309.03 BTC that one dollar bought would be worth about $84 million.
+
 The methodology: divide $1.00 by the average amount of electricity required to run a computer at high CPU usage for a year (1,331.5 kWh), multiplied by the average residential cost of electricity in the United States for the previous year ($0.1136), divided by 12 months, divided by the number of bitcoins generated over the past 30 days.
 
 <!-- chart: nls-exchange-rate -->
 
-In other words, Bitcoin's first price was a cost-of-production figure — the electricity to mine a coin — not a market price set by buyers and sellers. This was the same pricing principle [Satoshi himself had urged six weeks earlier](/BitcoinArchive/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/), in feedback on Martti Malmi's exchange proposal.
+In other words, Bitcoin's first price was a cost-of-production figure — the electricity to mine a coin — not a market price set by buyers and sellers. This was the same pricing principle [Satoshi himself had urged six weeks earlier](/BitcoinArchive/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/), in feedback on Martti Malmi's exchange proposal. How the relationship fared once real markets existed — and how the causality reversed, exactly as Satoshi predicted in February 2010 — is traced in [the price-vs-production-cost analysis](/BitcoinArchive/entries/analysis/2010-02-21-bitcoin-price-vs-production-cost/).
 
 Shortly after, on October 12, 2009, [Martti Malmi sold 5,050 BTC to NewLibertyStandard for $5.02](/BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/) via PayPal — the first known exchange of Bitcoin for fiat currency.
 

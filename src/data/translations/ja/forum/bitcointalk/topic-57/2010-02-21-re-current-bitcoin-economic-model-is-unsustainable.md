@@ -18,6 +18,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/65/"
+relatedEntries:
+  - analysis/2010-02-21-bitcoin-price-vs-production-cost
 translationStatus: complete
 ---
 
