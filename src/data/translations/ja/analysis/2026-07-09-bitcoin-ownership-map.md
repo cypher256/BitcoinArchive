@@ -51,6 +51,17 @@ secondarySources:
   - name: "Harrigan & Fretter — The Unreasonable Effectiveness of Address Clustering"
     url: "https://arxiv.org/abs/1605.06369"
     note: "複数入力ヒューリスティック、Mt. Gox 巨大クラスタ、正解データの不在。"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-07-06T22:17:54Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-07-06-anonymous-homepage-changes-201"
+  - id: "q2"
+    person: "theymos"
+    personSlug: "michael-marquardt"
+    date: "2010-07-07T16:54:44.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
@@ -145,7 +156,17 @@ translationStatus: complete
 
 名前のない側の規模を見せつけたのが 2025 年 7 月だった。2011 年 4 月から動いていなかった保有者が、2 週間かけて約 8 万 BTC を Galaxy Digital 経由で動かした。Arkham のチェーンデータは全行程をリアルタイムで捉え、最後の一括分だけで 48 億ドルと報じられた — それでも、この保有者に名前を付けられたトラッカーはいない。14 年の沈黙は、衆人環視の中で、仮名のまま終わった。
 
-これはトラッカーの欠陥ではなく、[サトシが 2010 年 7 月に警告した](/BitcoinArchive/ja/entries/aftermath/2010-07-06-anonymity-and-pseudonymity/)構造そのものである。ビットコインは匿名ではなく仮名 — 履歴は公開され、身元は公開されず、分析がときどきその間を橋渡しする。[その翌日のフォーラム投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025/)は、透明な側の半分をこう言い切っていた。「コインの履歴は公開されている。誰でもアドレスからアドレスへの BitCoin の流れを見ることができる」。このページの地図は、その構造の内側に描かれている。クジラに名前が付くのは、自ら名乗り出るとき — 開示、裁判 — か、分析と状況証拠が外から距離を詰めたときだけだ。それまでは地図の最大の区画に座り続ける。動きはすべて見えて、名前はどこにもない。
+これはトラッカーの欠陥ではなく、[サトシが 2010 年 7 月に警告した](/BitcoinArchive/ja/entries/aftermath/2010-07-06-anonymity-and-pseudonymity/)構造そのものである：
+
+<!-- quote: q1 -->
+> 「仮名での利用は可能だが、注意が必要だ。」
+
+[その翌日のフォーラム投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025/)は、透明な側の半分をこう言い切っていた：
+
+<!-- quote: q2 -->
+> 「コインの履歴は公開されている。誰でもアドレスからアドレスへの BitCoin の流れを見ることができる。」
+
+このページの地図は、その構造の内側に描かれている。履歴は公開され、身元は公開されず、分析がときどきその間を橋渡しする。クジラに名前が付くのは、自ら名乗り出るとき — 開示、裁判 — か、分析と状況証拠が外から距離を詰めたときだけだ。それまでは地図の最大の区画に座り続ける。動きはすべて見えて、名前はどこにもない。
 
 ## 分散の理念との距離
 

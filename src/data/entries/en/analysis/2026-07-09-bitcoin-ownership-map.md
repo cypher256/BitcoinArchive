@@ -51,6 +51,17 @@ secondarySources:
   - name: "Harrigan & Fretter — The Unreasonable Effectiveness of Address Clustering"
     url: "https://arxiv.org/abs/1605.06369"
     note: "Multi-input heuristic, the Mt. Gox mega-cluster, and the absence of ground truth."
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-07-06T22:17:54Z"
+    sourceEntryId: "correspondence/martti-malmi/2010-07-06-anonymous-homepage-changes-201"
+  - id: "q2"
+    person: "theymos"
+    personSlug: "michael-marquardt"
+    date: "2010-07-07T16:54:44.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
@@ -145,7 +156,17 @@ The rest of the whale pool has no name attached. When a headline reads "a whale 
 
 July 2025 showed the scale of what remains nameless. A holder inactive since April 2011 moved about 80,000 BTC through Galaxy Digital over two weeks; Arkham's blockchain data traced every step in real time, and the final tranche alone was reported at $4.8 billion — yet no tracker has put a name on the owner. Fourteen years of silence ended in full public view, pseudonymously.
 
-None of this is a defect in the trackers. It is the structure [Satoshi warned about in July 2010](/BitcoinArchive/entries/aftermath/2010-07-06-anonymity-and-pseudonymity/): Bitcoin is not anonymous but pseudonymous — the history is public, the identities are not, and analysis can sometimes bridge the gap. [A forum post the following day](/BitcoinArchive/entries/forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025/) stated the transparent half plainly: "The history of a coin is publicly available. Anyone can see the flow of BitCoins from address to address." The map on this page is drawn inside that structure. A whale gets a name when it identifies itself — a filing, a court docket — or when analysis and circumstance close the gap from outside. Until then it sits in the map's largest cell: visible in every movement, named in none.
+None of this is a defect in the trackers. It is the structure [Satoshi warned about in July 2010](/BitcoinArchive/entries/aftermath/2010-07-06-anonymity-and-pseudonymity/):
+
+<!-- quote: q1 -->
+> "It's possible to be pseudonymous, but you have to be careful."
+
+[A forum post the following day](/BitcoinArchive/entries/forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025/) stated the transparent half plainly:
+
+<!-- quote: q2 -->
+> "The history of a coin is publicly available. Anyone can see the flow of BitCoins from address to address."
+
+The map on this page is drawn inside that structure: the history is public, the identities are not, and analysis can sometimes bridge the gap. A whale gets a name when it identifies itself — a filing, a court docket — or when analysis and circumstance close the gap from outside. Until then it sits in the map's largest cell: visible in every movement, named in none.
 
 ## The distance from "no controlling entity"
 
