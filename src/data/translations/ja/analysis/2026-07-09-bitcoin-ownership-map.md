@@ -159,7 +159,7 @@ translationStatus: complete
 これはトラッカーの欠陥ではなく、[サトシが 2010 年 7 月に警告した](/BitcoinArchive/ja/entries/aftermath/2010-07-06-anonymity-and-pseudonymity/)構造そのものである：
 
 <!-- quote: q1 -->
-> 「仮名での利用は可能だが、注意が必要だ。」
+> 「偽名を使うことは可能だが、注意が必要だ。」
 
 [その翌日のフォーラム投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025/)は、透明な側の半分をこう言い切っていた：
 
