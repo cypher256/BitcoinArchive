@@ -68,15 +68,23 @@ timeline
     title サトシ Windows 専一環境 - 3 期間
     section Phase 1 - Linux 痕跡なし (27 ヶ月)
         2007 mid : コーディング開始 (本人発言 1.5 年から逆算)
+    %% link: /BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/
         2008-10-31 : ホワイトペーパー公開 (コードから書き起こし)
+    %% link: /BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/
         2009-01-09 : v0.1 リリース - Windows 専用 .rar
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
     section Phase 2 - リアクティブ Linux 対応 (16 ヶ月)
         2009-08-24 : 最初の Linux 言及 - マルミ宛
+    %% link: /BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-08-24-bitcoin-029/
         2009-08-30 : マルミが SVN 作成 + Linux 移植
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/
         2009-11-10 : Linux ソケット問題 - コード診断
+    %% link: /BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-11-10-linux-dead-sockets-problem-073/
     section Phase 3 - 自己評価 + 最終 (5 ヶ月)
         2010-12-03 : '私より Linux に長けている' - 後継選定
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/
         2011-02-22 : 最終メール - PGP 末尾 MingW32 + WinPT
+    %% link: /BitcoinArchive/ja/entries/correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-260/
 ```
 
 期間境界はそれぞれ公開記録の 3 イベントに固定: アーカイブで日付の付いた最初の Linux タグ付きメール (2009-08-24、 Phase 2 開始)、後継者選定の 2010 年 12 月 3 日マルミ宛メール (Phase 3 開始)、そして最終期間の PGP 署名末尾を持つ 2011 年 2 月 22 日のメッセージ。

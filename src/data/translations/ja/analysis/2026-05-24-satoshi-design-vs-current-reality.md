@@ -62,9 +62,14 @@ translationStatus: complete
 ```mermaid
 timeline
   title マイニングハードウェアの時代
-  2009 年 1 月 : サトシ時代開始 : CPU マイニングのみ
-  2010 年 5 月 : GPU マイニング開始 : (ラズロ・ハニエツ)
+  2009 年 1 月 : サトシ時代開始
+  %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
+               : CPU マイニングのみ
+  2010 年 5 月 : GPU マイニング開始
+  %% link: /BitcoinArchive/ja/entries/aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback/
+               : (ラズロ・ハニエツ)
   2011 年 4 月 : サトシ消失
+  %% link: /BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/
   2011 年 : FPGA マイニング
   2013 年 1 月 : 初の商用 ASIC : (Avalon)
   2013 年 10 月 : Bitmain 設立

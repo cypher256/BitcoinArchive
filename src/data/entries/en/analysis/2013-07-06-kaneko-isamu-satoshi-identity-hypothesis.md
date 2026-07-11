@@ -107,10 +107,14 @@ gantt
         Supreme Court upholds acquittal                    :milestone, 2011-12-20, 0d
     section Bitcoin development
         Intensive development window (per Satoshi)         :b0, 2007-06-01, 2008-09-01
+    %% link: /BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/
         Whitepaper                                         :milestone, 2008-10-31, 0d
+    %% link: /BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/
         v0.1 released                                      :milestone, 2009-01-09, 0d
+    %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
         Satoshi forum and code activity                    :b1, 2009-01-09, 2010-12-12
         Last documented email                              :milestone, 2011-04-26, 0d
+    %% link: /BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/
 ```
 
 The visual overlap is the §2.1 argument made spatial: the Kaneko legal case lane occupies the entire 2004 - 2011 horizontal span, and the Bitcoin development lane sits inside that span. The whitepaper, v0.1 release, and Satoshi's most-active period all land while Kaneko was a convicted defendant on appeal under sustained scrutiny. The claim requires that during this period he secretly developed a system that, if attributed to him, would have constituted a major item of personal news. The probability of this remaining undisclosed across his counsel, his university supervisors, and his social environment is low.

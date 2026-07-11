@@ -83,6 +83,7 @@ gantt
         ... 残り 26 回の半減  :e7, 2036, 2140
     section 手数料のみ時代
         新規発行分 = 0       :e8, 2140, 2145
+    %% link: /BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/
 ```
 
 ### 半減エポック

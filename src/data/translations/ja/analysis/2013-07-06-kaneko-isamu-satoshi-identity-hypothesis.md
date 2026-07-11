@@ -108,10 +108,14 @@ gantt
         最高裁が無罪確定                :milestone, 2011-12-20, 0d
     section ビットコイン開発
         集中開発期 (サトシ自身の年表)   :b0, 2007-06-01, 2008-09-01
+    %% link: /BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/
         ホワイトペーパー                :milestone, 2008-10-31, 0d
+    %% link: /BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/
         v0.1 公開                       :milestone, 2009-01-09, 0d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
         サトシの フォーラム・コード活動  :b1, 2009-01-09, 2010-12-12
         最後の既知メール                :milestone, 2011-04-26, 0d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/
 ```
 
 §2.1 の論点を空間的に表現したもの：金子刑事裁判のレーンは 2004〜2011 年の全期間を占有し、ビットコイン開発のレーンはその範囲内に収まる。ホワイトペーパー、v0.1 公開、サトシ最盛期はすべて、金子が控訴中の被告人として持続的な注視下にあった期間に位置する。この説は、この期間中に彼が秘密裏にあるシステムを設計・構築し、それが彼に帰属することが判明すれば本人にとって個人的なニュースとして大きな項目となるはずだった、ということを要求する。彼の弁護団、大学の指導教官、社会的環境を通じてこの事実が秘匿され続けた蓋然性は低い。

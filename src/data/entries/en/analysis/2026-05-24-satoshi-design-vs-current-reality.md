@@ -61,9 +61,14 @@ Bitcoin's protocol still runs almost unchanged from the rules [Satoshi Nakamoto]
 ```mermaid
 timeline
   title Mining hardware era
-  2009 Jan : Satoshi era starts : CPU mining only
-  2010 May : GPU mining starts : (Laszlo Hanyecz)
+  2009 Jan : Satoshi era starts
+  %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
+           : CPU mining only
+  2010 May : GPU mining starts
+  %% link: /BitcoinArchive/entries/aftermath/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback/
+           : (Laszlo Hanyecz)
   2011 Apr : Satoshi disappears
+  %% link: /BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/
   2011 : FPGA mining
   2013 Jan : First commercial ASIC : (Avalon)
   2013 Oct : Bitmain founded

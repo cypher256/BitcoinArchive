@@ -235,18 +235,24 @@ gantt
 
     section Context
     Satoshi development to v0.1 release :crit, 2007-06-01, 2009-01-09
+    %% link: /BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/
     v0.1 release to last known email :crit, 2009-01-09, 2011-04-26
 
     section Group A
     Adam Back (5 private emails) :2008-08-20, 2009-01-11
+    %% link: /BitcoinArchive/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back-hashcash-citation/
     Wei Dai (3 private emails) :2008-08-22, 2009-01-11
+    %% link: /BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/
 
     section Group B
     Hal Finney (4 emails + 4 public ML + many BitcoinTalk) :2008-11-07, 2010-03-31
+    %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/
 
     section Group C
     James A. Donald (public ML scaling exchange) :2008-11-02, 2008-11-15
+    %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald/
     Peter Todd (1 reply in a Satoshi-started thread) :2010-12-09, 2010-12-13
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/
 ```
 
 ### 4.2 By type of contact

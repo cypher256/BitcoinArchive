@@ -134,11 +134,15 @@ timeline
   1993 : エリック・ヒューズが 『サイファーパンクの 宣言』 を公表
   1995 : 『エクストロピー』 誌第 14 号 ― エクストロポリス仮想銀行 Hayeks 思考実験
   1997 : アダム・バックが Hashcash を発表
+  %% link: /BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/
   1998 : ウェイ・ダイが b-money を公表
+  %% link: /BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/
        : ニック・サボが Bit Gold を提案
   2004 : ハル・フィニーが RPOW を公表
   2008 : ビットコイン ホワイトペーパー (10 月 31 日)
+  %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
   2009 : ビットコイン v0.1 + ジェネシスブロック (1 月 3 日／1 月 9 日)
+  %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/
 ```
 
 ### 3.2 系譜の構造

@@ -113,8 +113,18 @@ quotes:
 ```mermaid
 timeline
     title 価格と生産コスト - 記録された系譜
-    2009 : サトシが取引所に 生産コスト基準の 価格付けを助言 (8月) : NewLibertyStandard が電気代から 初の為替レートを算出 (10月5日) : 初の法定通貨との交換 - 5,050 BTC を 5.02 ドルで (10月12日)
-    2010 : サトシの均衡論投稿 - 引き寄せと難易度、 逆転の予言 (2月21日) : ピザ 2 枚に 10,000 BTC - 市場価格の実例 (5月22日) : 熱力学スレッド - 金採掘の類推 (8月7日)
+    2009 : サトシが取引所に 生産コスト基準の 価格付けを助言 (8月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/
+         : NewLibertyStandard が電気代から 初の為替レートを算出 (10月5日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/
+         : 初の法定通貨との交換 - 5,050 BTC を 5.02 ドルで (10月12日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/
+    2010 : サトシの均衡論投稿 - 引き寄せと難易度、 逆転の予言 (2月21日)
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable/
+         : ピザ 2 枚に 10,000 BTC - 市場価格の実例 (5月22日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/
+         : 熱力学スレッド - 金採掘の類推 (8月7日)
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-721/2010-08-07-re-bitcoin-minting-is-thermodynamically-perverse/
     2015 : ヘイズが 生産コストモデルを 発表
     2019 : JPMorgan の公正価値 2,400 ドル (1月) : ウーの難易度リボン (8月) : エドワーズの エナジーバリュー (12月)
     2020 : 価格がハッシュレートに 先行すると実証 : マイニングコストは 価格に追随と実証 : Luxor がハッシュプライス公開 (7月)

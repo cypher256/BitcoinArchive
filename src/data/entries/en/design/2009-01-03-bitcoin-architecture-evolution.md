@@ -366,9 +366,11 @@ timeline
     section 2015–2017
         v0.10 (2015) : Headers-first sync, libsecp256k1
         SegWit — BIP 141 (Aug 2017) : Witness field, 4 MWU, non-malleable txid
+    %% link: /BitcoinArchive/entries/bip/2015-12-21-bip-0141/
     section 2018–2021
         BIP 174 (2018) : PSBT workflow
         Taproot — BIP 341 (Nov 2021) : Schnorr, tapscript, key/script-path
+    %% link: /BitcoinArchive/entries/bip/2020-01-19-bip-0341/
     section 2023–2025
         v26 (2023) : BIP 324 encrypted transport, BDB deprecated
         v27 baseline (2024) : assumeUTXO snapshot sync

@@ -87,14 +87,19 @@ gantt
     section 不正チェーン
     不正TX ブロードキャスト :2010-08-15 17:05, 40m
     ブロック 74638 採掘 (1,840 億 BTC) :crit, 2010-08-15 17:45, 23m
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/
 
     section 対応
     Garzik 最初の警告投稿 :milestone, 2010-08-15 18:08, 0m
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474/
     サトシによる v0.3.10 パッチ開発 :active, 2010-08-15 18:08, 340m
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/
     v0.3.10 リリース (topic-827) :milestone, 2010-08-15 23:48, 0m
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/
 
     section 復旧
     信用停止窓 (サトシのアラート) :crit, 2010-08-15 17:05, 16h
+    %% link: /BitcoinArchive/ja/entries/emails/bitcoin-list/2010-08-15-alert-we-are-investigating-a-problem/
     ブロック 74691 — 正規チェーン確定 :milestone, 2010-08-16 09:00, 0m
 ```
 

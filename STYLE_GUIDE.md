@@ -2526,6 +2526,47 @@ every ` ```mermaid ` block in the corpus and parses it through
 parse error. Run `npm run check:mermaid` directly to iterate on a
 diagram without the full check.
 
+#### Linking diagram items to archive pages (`%% link:`)
+
+Mermaid diagrams in this archive CAN carry links, via a custom
+mechanism — do not conclude from Mermaid's own documentation that
+they cannot. Mermaid's native `click` directive registers a runtime
+JS handler that does not survive the build-time SVG capture (and the
+`timeline` type cannot parse `click` at all), so the archive uses a
+comment-based syntax handled by `src/lib/rehype-mermaid-link.mjs`:
+
+````markdown
+```mermaid
+timeline
+    title Example
+    2008 : Whitepaper published (Oct 31)
+    %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
+    2009 : v0.1 released (Jan 9)
+    (no link comment — this event stays unlinked)
+```
+````
+
+Rules:
+
+- Place `%% link: URL` on the line immediately **after** the item it
+  links. Items without a following `%% link:` stay unlinked —
+  selective linking is normal.
+- Supported diagram types: `gantt` and `timeline`. To support another
+  type, add a `HANDLERS` entry in the plugin.
+- Write URLs in the author-side base form `/BitcoinArchive/...`
+  (JA mirrors: `/BitcoinArchive/ja/...`); the deploy environment
+  rewrites the base. External `https://` URLs are supported (rendered
+  with `target="_blank"`), but the corpus convention is internal
+  entry links only.
+- **One event per line in any block that uses `%% link:`.** The
+  pairing between source lines and rendered SVG elements is
+  positional: a combined line (`2008 : event A : event B`) counts as
+  one source item but renders as two elements, so every link after it
+  lands one item off. Split multi-event years into continuation lines
+  (`     : event B`).
+- EN and JA mirrors carry the same `%% link:` lines at the same
+  structural positions, pointing at the locale-appropriate paths.
+
 #### Japanese content gotchas
 
 Mermaid v10+ handles Unicode well, but a few patterns trip JA editors.

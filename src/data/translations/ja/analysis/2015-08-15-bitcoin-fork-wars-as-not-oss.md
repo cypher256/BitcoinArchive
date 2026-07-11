@@ -81,20 +81,29 @@ gantt
 
     section 権威
     アンドレセン リード保守者就任発表 :milestone, 2010-12-19, 0d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/
     サトシ最終メール (アラートキー引継ぎ) :milestone, 2011-04-26, 0d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/
     Bitcoin Core 改称マージ :milestone, 2013-12-16, 0d
+    %% link: /BitcoinArchive/ja/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/
     ファン・デル・ラーン 保守者交代 :milestone, 2014-04-07, 0d
     Blockstream 設立 :milestone, 2014-11-01, 0d
+    %% link: /BitcoinArchive/ja/entries/analysis/2014-11-01-blockstream-centralization-claim/
 
     section フォーク試行 (分裂なし)
     Bitcoin XT :2015-08-15, 365d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/
     Bitcoin Classic :2016-02-10, 240d
+    %% link: /BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/
     Bitcoin Unlimited :2016-01-01, 540d
     SegWit2x 合意 → 中止 :2017-05-23, 169d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/
 
     section チェーン分裂
     ビットコインキャッシュ チェーン分裂 :milestone, 2017-08-01, 0d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/
     Bitcoin SV フォーク :milestone, 2018-11-15, 0d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/
 ```
 
 ## 1. 2011 年 4 月以後の真空 (結果ではなく前提)

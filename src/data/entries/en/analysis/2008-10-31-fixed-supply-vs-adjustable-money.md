@@ -84,10 +84,15 @@ The chronology of the debate, from b-money's 1998 elastic-supply proposal throug
 timeline
     title Monetary-design debate 1998-2022
     1998 : Wei Dai posts b-money - elastic supply (Nov)
+    %% link: /BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/
          : Adam Back lists seven monetary issues (Dec)
+    %% link: /BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/
     2008 : Satoshi emails Wei Dai - no reply (Aug)
+    %% link: /BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/
          : Bitcoin whitepaper - hard 21M cap (Oct)
+    %% link: /BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/
     2013 : Wei Dai regrets not responding (Apr)
+    %% link: /BitcoinArchive/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/
     2015 : Ethereum mainnet - no hard cap (Jul)
     2021 : EIP-1559 fee burn live (Aug)
     2022 : Ethereum Merge - PoS issuance -90 percent (Sep)

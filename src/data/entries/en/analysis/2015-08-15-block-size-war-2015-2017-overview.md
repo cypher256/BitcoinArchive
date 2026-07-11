@@ -50,16 +50,21 @@ Between August 2015 and November 2017, Bitcoin's open-source process was tested 
 timeline
     title 2015–2017 block-size war chronology
     2015 : Aug 15 — Bitcoin XT 0.11A released (BIP 101, 8 MB, 75% miner trigger)
+    %% link: /BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/
          : Late 2015 — XT peaks at ~1,000 nodes, fails to reach 75%
     2016 : Jan 14 — Hearn declares Bitcoin "failed" and exits
+    %% link: /BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/
          : Feb — Bitcoin Classic launches (2 MB proposal)
          : Feb — Hong Kong Roundtable Agreement (first compromise attempt)
          : Oct — Bitcoin Unlimited launches (flexible miner-driven sizing)
     2017 : May 23 — New York Agreement signed at Consensus 2017 (SegWit + 2 MB)
          : Aug 1 — BIP148 UASF flag day; Bitcoin Cash forks at block 478558
+    %% link: /BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/
          : Aug 24 — SegWit activates on the main chain
          : Nov 8 — Mike Belshe cancels the SegWit2x hard fork (about a week before activation)
+    %% link: /BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/
     2018 : Nov 15 — Bitcoin SV forks from Bitcoin Cash (intra-BCH split)
+    %% link: /BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/
 ```
 
 ## The three loss-points the dispute pivoted on

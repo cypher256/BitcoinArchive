@@ -82,6 +82,7 @@ gantt
         ... 26 more halvings  :e7, 2036, 2140
     section Fee-only era
         Subsidy = 0          :e8, 2140, 2145
+    %% link: /BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/
 ```
 
 ### Halving epochs

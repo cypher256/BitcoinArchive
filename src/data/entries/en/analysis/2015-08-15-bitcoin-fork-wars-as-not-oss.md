@@ -81,20 +81,29 @@ gantt
 
     section Authority
     Andresen lead-maintainer announcement :milestone, 2010-12-19, 0d
+    %% link: /BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/
     Satoshi final email (alert-key handover) :milestone, 2011-04-26, 0d
+    %% link: /BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/
     Bitcoin Core rebrand merged :milestone, 2013-12-16, 0d
+    %% link: /BitcoinArchive/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/
     Wladimir van der Laan takes maintainership :milestone, 2014-04-07, 0d
     Blockstream founded :milestone, 2014-11-01, 0d
+    %% link: /BitcoinArchive/entries/analysis/2014-11-01-blockstream-centralization-claim/
 
     section Fork attempts (no split)
     Bitcoin XT :2015-08-15, 365d
+    %% link: /BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/
     Bitcoin Classic :2016-02-10, 240d
+    %% link: /BitcoinArchive/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/
     Bitcoin Unlimited :2016-01-01, 540d
     SegWit2x agreement → cancelled :2017-05-23, 169d
+    %% link: /BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/
 
     section Chain splits
     Bitcoin Cash chain split :milestone, 2017-08-01, 0d
+    %% link: /BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/
     Bitcoin SV fork :milestone, 2018-11-15, 0d
+    %% link: /BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/
 ```
 
 ## 1. The vacuum after April 2011 (the precondition, not the result)

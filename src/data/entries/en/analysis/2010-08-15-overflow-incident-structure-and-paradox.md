@@ -87,14 +87,19 @@ gantt
     section Bad chain
     Bad transaction broadcast :2010-08-15 17:05, 40m
     Block 74638 mined (184B BTC) :crit, 2010-08-15 17:45, 23m
+    %% link: /BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/
 
     section Response
     Garzik first-warning post :milestone, 2010-08-15 18:08, 0m
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474/
     Satoshi develops v0.3.10 patch :active, 2010-08-15 18:08, 340m
+    %% link: /BitcoinArchive/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/
     v0.3.10 release (topic-827) :milestone, 2010-08-15 23:48, 0m
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/
 
     section Recovery
     Trust-halt window (Satoshi alert) :crit, 2010-08-15 17:05, 16h
+    %% link: /BitcoinArchive/entries/emails/bitcoin-list/2010-08-15-alert-we-are-investigating-a-problem/
     Block 74691 - good chain canonical :milestone, 2010-08-16 09:00, 0m
 ```
 

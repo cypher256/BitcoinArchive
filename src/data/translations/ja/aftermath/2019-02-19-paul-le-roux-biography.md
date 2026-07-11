@@ -50,6 +50,7 @@ timeline
     2012 : リベリアで 米国当局に逮捕 (9月)
          : DEA 協力者となる
     2019 : エヴァン・ラトリフ 『The Mastermind』 出版、 サトシ候補として言及 (2月19日)
+    %% link: /BitcoinArchive/ja/entries/analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis/
     2020 : 米連邦刑務所で 25年の刑
 ```
 

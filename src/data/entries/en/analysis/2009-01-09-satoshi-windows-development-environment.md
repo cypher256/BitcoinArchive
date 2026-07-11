@@ -68,15 +68,23 @@ timeline
     title Satoshi Windows-only environment - three phases
     section Phase 1 - no Linux trace (27 mo)
         mid-2007 : coding begins per Satoshi 1.5-year self-statement
+    %% link: /BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/
         2008-10-31 : whitepaper published, drafted from code
+    %% link: /BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/
         2009-01-09 : v0.1 released - Windows-only .rar
+    %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
     section Phase 2 - reactive Linux support (16 mo)
         2009-08-24 : first Linux mention - to Malmi
+    %% link: /BitcoinArchive/entries/correspondence/martti-malmi/2009-08-24-bitcoin-029/
         2009-08-30 : Malmi creates SVN + Linux port
+    %% link: /BitcoinArchive/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/
         2009-11-10 : Linux socket bug - code-level diagnosis
+    %% link: /BitcoinArchive/entries/correspondence/martti-malmi/2009-11-10-linux-dead-sockets-problem-073/
     section Phase 3 - self-recorded gap (5 mo)
         2010-12-03 : 'much more Linux capable than me' (handover)
+    %% link: /BitcoinArchive/entries/aftermath/2010-12-03-handover-to-gavin/
         2011-02-22 : final email - PGP footer MingW32 + WinPT
+    %% link: /BitcoinArchive/entries/correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-260/
 ```
 
 The phases are anchored on three public-record events: the first dated Linux-tagged email in the Archive (2009-08-24, beginning of Phase 2), Satoshi's December 3, 2010 handover note to Malmi (beginning of Phase 3), and the February 22, 2011 message that carries the final-period PGP signature footer.

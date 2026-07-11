@@ -80,15 +80,21 @@ gantt
 
     section リリース
     v0.1 (暗号学 ML) :milestone, 2009-01-08 19:27, 0m
+    %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/
     v0.1.2 (bitcoin-list) :milestone, 2009-01-11 22:32, 0m
+    %% link: /BitcoinArchive/ja/entries/emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available/
     v0.1 Alpha release notes :milestone, 2009-01-12 20:20, 0m
+    %% link: /BitcoinArchive/ja/entries/emails/bitcoin-list/2009-01-12-bitcoin-v0-1-alpha-release-notes/
     v0.1.3 (bitcoin-list) :milestone, 2009-01-12 22:48, 0m
+    %% link: /BitcoinArchive/ja/entries/emails/bitcoin-list/2009-01-12-bitcoin-v0-1-3/
 
     section チェーン
     ブロック 1 採掘 :milestone, 2009-01-09 02:54, 0m
+    %% link: /BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/
 
     section メール
     "from where I am" フィニー宛 :milestone, 2009-01-10 12:00, 0m
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/
 ```
 
 | UTC タイムスタンプ | 出来事 | チャンネル |

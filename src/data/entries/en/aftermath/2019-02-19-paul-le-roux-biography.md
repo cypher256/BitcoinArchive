@@ -49,6 +49,7 @@ timeline
     2012 : Arrested by US authorities in Liberia (Sep)
          : Becomes DEA cooperator
     2019 : Evan Ratliff publishes The Mastermind, naming him as a Satoshi candidate (Feb 19)
+    %% link: /BitcoinArchive/entries/analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis/
     2020 : Sentenced to 25 years in US federal prison
 ```
 

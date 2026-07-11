@@ -85,10 +85,15 @@ translationStatus: complete
 timeline
     title 貨幣設計論争 1998-2022
     1998 : ウェイ・ダイ が b-money 公開 弾力的供給 (Nov)
+    %% link: /BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/
          : アダム・バック が 7 論点を指摘 (Dec)
+    %% link: /BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/
     2008 : サトシ が ウェイ・ダイ に下書き送付 無返信 (Aug)
+    %% link: /BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/
          : ビットコイン ホワイトペーパー 2100 万固定 (Oct)
+    %% link: /BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/
     2013 : ウェイ・ダイ が LessWrong で後悔表明 (Apr)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/
     2015 : イーサリアム メインネット 上限なし (Jul)
     2021 : EIP-1559 焼却機構導入 (Aug)
     2022 : イーサリアム The Merge PoS 発行 9 割削減 (Sep)

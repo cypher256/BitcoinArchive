@@ -228,18 +228,24 @@ gantt
 
     section 文脈
     サトシ 開発期間 → v0.1 公開 :crit, 2007-06-01, 2009-01-09
+    %% link: /BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/
     v0.1 公開 → サトシ 最終既知メール :crit, 2009-01-09, 2011-04-26
 
     section 候補プロファイル群 A
     アダム・バック （メール 5 通） :2008-08-20, 2009-01-11
+    %% link: /BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back-hashcash-citation/
     ウェイ・ダイ （メール 3 通） :2008-08-22, 2009-01-11
+    %% link: /BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/
 
     section 候補プロファイル群 B
     ハル・フィニー （メール + 公開 ML + BitcoinTalk 計 10+） :2008-11-07, 2010-03-31
+    %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/
 
     section 候補プロファイル群 C
     ジェームズ・ドナルド （公開ML スケーリング論争） :2008-11-02, 2008-11-15
+    %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald/
     ピーター・トッド （サトシ・スレッドへ 1 返信） :2010-12-09, 2010-12-13
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/
 ```
 
 ### 4.2 接触の種別ごとに

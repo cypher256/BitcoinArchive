@@ -51,16 +51,21 @@ translationStatus: complete
 timeline
     title 2015〜2017 年 ブロックサイズ戦争 年表
     2015 : 8 月 15 日 Bitcoin XT 0.11A 公開 (BIP 101、 8 MB、 75% マイナー起動条件)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/
          : 2015 年後半 XT は約 1,000 ノードに到達するも 75% 未達
     2016 : 1 月 14 日 ハーン 「ビットコインは失敗」 と宣言し離脱
+    %% link: /BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/
          : 2 月 Bitcoin Classic 起動 (2 MB 提案)
          : 2 月 香港円卓合意 (最初の妥協試行)
          : 10 月 Bitcoin Unlimited 起動 (柔軟なマイナー駆動)
     2017 : 5 月 23 日 コンセンサス 2017 で ニューヨーク合意締結 (SegWit + 2 MB)
          : 8 月 1 日 BIP148 UASF 期日、 ビットコインキャッシュが ブロック 478558 で分岐
+    %% link: /BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/
          : 8 月 24 日 SegWit が主鎖で起動
          : 11 月 8 日 ベルシェが SegWit2x ハードフォークを中止 (起動 約 1 週間前)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/
     2018 : 11 月 15 日 Bitcoin SV が ビットコインキャッシュ から 分岐 (BCH 内部分裂)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/
 ```
 
 ## 論争を成立させた三つの争点

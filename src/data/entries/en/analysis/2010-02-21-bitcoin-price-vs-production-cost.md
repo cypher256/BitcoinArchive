@@ -113,8 +113,18 @@ On October 5, 2009, Bitcoin's first published price was not discovered by a mark
 ```mermaid
 timeline
     title Price and production cost - the documented arc
-    2009 : Satoshi advises pricing Malmi's exchange from production cost (Aug) : NewLibertyStandard derives the first exchange rate from electricity cost (Oct 5) : First BTC-for-fiat sale - 5,050 BTC for $5.02 (Oct 12)
-    2010 : Satoshi's equilibrium post - gravitation, difficulty, and a predicted reversal (Feb 21) : 10,000 BTC buy two pizzas - a market price in action (May 22) : Thermodynamic-waste thread - the gold-mining analogy (Aug 7)
+    2009 : Satoshi advises pricing Malmi's exchange from production cost (Aug)
+    %% link: /BitcoinArchive/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/
+         : NewLibertyStandard derives the first exchange rate from electricity cost (Oct 5)
+    %% link: /BitcoinArchive/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/
+         : First BTC-for-fiat sale - 5,050 BTC for $5.02 (Oct 12)
+    %% link: /BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/
+    2010 : Satoshi's equilibrium post - gravitation, difficulty, and a predicted reversal (Feb 21)
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable/
+         : 10,000 BTC buy two pizzas - a market price in action (May 22)
+    %% link: /BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/
+         : Thermodynamic-waste thread - the gold-mining analogy (Aug 7)
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-721/2010-08-07-re-bitcoin-minting-is-thermodynamically-perverse/
     2015 : Hayes publishes the cost-of-production model
     2019 : JPMorgan's $2,400 fair-value note (Jan) : Woo's Difficulty Ribbon (Aug) : Edwards's Energy Value model (Dec)
     2020 : Fantazzini and Kolodin - price Granger-causes hashrate : Kristoufek - mining costs adjust to price : Luxor launches hashprice (Jul)
