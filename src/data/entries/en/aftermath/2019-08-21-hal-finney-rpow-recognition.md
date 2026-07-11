@@ -41,6 +41,10 @@ RPOW was a prototype system that allowed users to exchange proof-of-work tokens.
 
 Finney built RPOW explicitly to create a form of digital cash, drawing on ideas from [Nick Szabo](/BitcoinArchive/participants/nick-szabo/)'s bit gold proposal and Adam Back's Hashcash. While RPOW relied on a central server (unlike Bitcoin's decentralized design), its core insight of using proof-of-work as the basis for transferable digital tokens directly foreshadowed Bitcoin's approach.
 
-The Satoshi Nakamoto Institute preserved and documented RPOW as part of the historical record of digital cash development. Finney himself wrote about the connection in his celebrated 2013 Bitcointalk post "Bitcoin and me," noting: "I had made an attempt to create my own proof of work based currency, called RPOW. So I found Bitcoin facinating."
+The Satoshi Nakamoto Institute preserved and documented RPOW as part of the historical record of digital cash development. Finney himself wrote about the connection in [his celebrated 2013 Bitcointalk post "Bitcoin and me"](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/):
+
+<!-- speaker: Hal Finney -->
+<!-- audit:quote-skip -->
+> "I had made an attempt to create my own proof of work based currency, called RPOW. So I found Bitcoin facinating."
 
 Finney's contribution was twofold: he built a Bitcoin precursor in RPOW, and he was the first known person besides Satoshi to run Bitcoin, mine blocks, and receive a Bitcoin transaction -- [the payment Satoshi sent him in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/), the first person-to-person transfer in Bitcoin's history.
