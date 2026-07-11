@@ -39,22 +39,22 @@ translationStatus: complete
 > <!-- speaker: Satoshi Nakamoto -->
 > <!-- quote: q2 -->
 >> <!-- speaker: Martti Malmi -->
->> GUIなしで同じバイナリを実行する方法について、いくつかの手がかりを見つけました：
+>> GUI なしで同じバイナリを実行する方法について、いくつかの手がかりを見つけました：
 >>
->> 1) GTKはディスプレイなしでプログラムを実行することをサポートしています：
+>> 1) GTK はディスプレイなしでプログラムを実行することをサポートしています：
 >> http://library.gnome.org/devel/gtk/2.12/gtk-General.html#gtk-init-check。
->> ただし、wxWidgetsで可能かどうかまでは分かりません。
+>> ただし、wxWidgets で可能かどうかまでは分かりません。
 > <!-- speaker: Satoshi Nakamoto -->
 >
-> wxApp::Initializeでgtk-init-checkを呼び出しているのが分かった。
+> wxApp::Initialize で gtk-init-check を呼び出しているのが分かった。
 >
-> Initializeをサブクラス化して、エラーメッセージを抑制しつつ元のものを呼び出し、
+> Initialize をサブクラス化して、エラーメッセージを抑制しつつ元のものを呼び出し、
 > 戻り値を無視することができる。うまく動作しているようだ。
 >
 > コマンドラインスイッチの名前と説明について何か提案はあるか？伝統的な
 > 標準はあるか？今は以下を使っている：
-> -daemon（または-d）（RPCを有効にしてバックグラウンドで実行）
-> -server（RPCを有効にする）
+> -daemon（または-d）（RPC を有効にしてバックグラウンドで実行）
+> -server（RPC を有効にする）
 
 <!-- /tone-skip -->
 

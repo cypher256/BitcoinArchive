@@ -44,7 +44,7 @@ translationStatus: complete
 
 <!-- quote: q1 -->
 <!-- speaker: Adam Back -->
-> b-moneyのアイデアは彼のウェブページに簡潔に書かれているだけで、論文としてはまとまっていない。
+> b-money のアイデアは彼のウェブページに簡潔に書かれているだけで、論文としてはまとまっていない。
 
 <!-- speaker: narrator -->
 査読論文ではなくウェブページが指し示されたことで、サトシは引用年の確定をウェイ・ダイ本人に直接問い合わせる必要が生じた（[2008年8月22日サトシ → ウェイ・ダイ](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)）。同日中にサトシはバック宛にも b-money の紹介に対する返信を書いている（メールチェーンの 3 通目）。

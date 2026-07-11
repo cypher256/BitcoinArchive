@@ -34,7 +34,7 @@ quotes:
 <!-- speaker: Satoshi Nakamoto -->
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> Bitweaverのメニューエディターが壊れていて、フォーラムのリンクを変更できない。
+> Bitweaver のメニューエディターが壊れていて、フォーラムのリンクを変更できない。
 > 「create and edit menu items」のページが私の環境では空白で表示される：
 >
 > http://bitcoin.sourceforge.net/nexus/menu_items.php?menu_id=2

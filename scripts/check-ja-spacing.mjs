@@ -156,6 +156,7 @@ for (const root of targets) {
   for (const file of walkFiles(root)) {
     scanned += 1;
     const isAstro = file.endsWith('.astro');
+    const isEnTree = file.includes(`${path.sep}src${path.sep}data${path.sep}entries${path.sep}en${path.sep}`);
     let text = readFileSync(file, 'utf8');
     // For .astro: strip JS line and block comments so JA × JA spaces inside
     // them are not flagged (comments are not reader-facing prose). Frontmatter
@@ -256,13 +257,13 @@ for (const root of targets) {
       }
 
       // --- Warnings: ASCII × JA / JA × ASCII missing-space ---
-      // Skip blockquote (`>`) lines — primary-source quotes whose
-      // spacing is part of the quoted text, not subject to the
-      // editorial spacing rule. Verbatim-directory files are NOT
-      // skipped wholesale: their `editorNote` frontmatter, translator-
-      // added prose introducing the quote, and `description` fields
-      // are editorial inserts and DO follow the rule.
-      if (/^[ \t]*>/.test(raw)) continue;
+      // Skip blockquote (`>`) lines only in the EN tree — there the
+      // quoted text is verbatim historical source. Blockquotes in the
+      // JA translations tree are translator-produced Japanese and
+      // follow the JA × ASCII spacing convention like any other JA
+      // prose (2026-07-11 decision; the previous whole-corpus skip
+      // wrongly extended verbatim faithfulness to the translations).
+      if (isEnTree && /^[ \t]*>/.test(raw)) continue;
       // Run on the masked text (URLs / inline code stripped to '_').
       // Each match is an editorial candidate for a half-width space,
       // NOT a build failure.

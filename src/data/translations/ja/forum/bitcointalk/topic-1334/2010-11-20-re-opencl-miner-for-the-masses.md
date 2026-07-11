@@ -29,7 +29,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> SVN 186に更新
+> SVN 186 に更新
 <!-- /tone-skip -->
 
 m0mchil さん、更新に追従してくれてありがとう！

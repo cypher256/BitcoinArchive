@@ -23,13 +23,13 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> 最新バージョンのUbuntu Linuxでも同じstd::stringの問題が出ている。
+> 最新バージョンの Ubuntu Linux でも同じ std::string の問題が出ている。
 <!-- /tone-skip -->
 それなら、wxWidgets のビルドまたは設定で何か異なることをしているはずだ。
 
 wxWidgets の `configure` スクリプトでどのオプションを使用したか？私が使用したオプションは build-unix.txt に記載されている。
 
 <!-- speaker: madhatter2 -->
-> 「一つ質問：debug.logを有効にするにはどうすればいいですか？Bitcoinを停止して~/.bitcoin/debug.logをtouchして、再度Bitcoinを起動してみましたが、ファイルに書き込まれることはありません。何か見落としていますか？」
+> 「一つ質問：debug.log を有効にするにはどうすればいいですか？Bitcoin を停止して~/.bitcoin/debug.log を touch して、再度 Bitcoin を起動してみましたが、ファイルに書き込まれることはありません。何か見落としていますか？」
 
 そのようなことは聞いたことがない。debug.log に何か入っているか？ファイルを touch したなら、何か入っているはずだ。プログラムにファイルへの書き込みアクセス権はあるか？

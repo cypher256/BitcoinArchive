@@ -38,7 +38,7 @@ translationStatus: complete
 
 <!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
-> ギャビンが適任だ。彼は信頼できる。責任感があり、プロフェッショナルで、Linuxに関しては私よりずっと上だ。
+> ギャビンが適任だ。彼は信頼できる。責任感があり、プロフェッショナルで、Linux に関しては私よりずっと上だ。
 
 <!-- speaker: narrator -->
 3日後、マルミは簡潔に返信した：「了解です、彼に聞いてみます。」

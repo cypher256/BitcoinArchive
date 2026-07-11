@@ -38,8 +38,8 @@ VPS には 320MB の RAM があり、そのうち 50MB が現在空いていま�
 
 <!-- speaker: Satoshi Nakamoto -->
 <!-- tone-skip -->
-> Bitcoinはそれなりにメモリーを必要とする。
-> Windowsでは約75MBだ。問題になるか？
+> Bitcoin はそれなりにメモリーを必要とする。
+> Windows では約 75MB だ。問題になるか？
 <!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->

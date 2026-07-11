@@ -39,7 +39,7 @@ translationStatus: complete
 <!-- tone-skip -->
 > <!-- quote: q2 -->
 > <!-- speaker: Satoshi Nakamoto -->
->> VPSをいじらなくても済むように、テストやコンパイルができるUbuntuの
+>> VPS をいじらなくても済むように、テストやコンパイルができる Ubuntu の
 >> ノートパソコンを持っていないか？
 >
 > <!-- speaker: Martti Malmi -->

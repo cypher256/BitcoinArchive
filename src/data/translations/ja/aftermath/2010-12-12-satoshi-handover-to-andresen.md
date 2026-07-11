@@ -48,7 +48,7 @@ translationStatus: complete
 
 <!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
-> ギャビンが適任だ。彼は信頼できる。責任感があり、プロフェッショナルで、Linuxに関しては私よりずっと上だ。
+> ギャビンが適任だ。彼は信頼できる。責任感があり、プロフェッショナルで、Linux に関しては私よりずっと上だ。
 
 <!-- speaker: narrator -->
 アンドレセンは正式にリーダーの役割に就き、2010年12月に Bitcointalk フォーラムで公に発表した：

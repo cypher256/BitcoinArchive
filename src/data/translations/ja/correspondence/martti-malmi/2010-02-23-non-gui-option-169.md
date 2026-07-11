@@ -45,9 +45,9 @@ quotes:
 >> http://library.gnome.org/devel/gtk/2.12/gtk-General.html#gtk-init-check。
 >> ただし、wxWidgets で可能かどうかまでは分かりません。
 >
-> wxApp::Initializeでgtk-init-checkを呼び出しているのが分かった。
+> wxApp::Initialize で gtk-init-check を呼び出しているのが分かった。
 >
-> Initializeをサブクラス化して、エラーメッセージを抑制しつつ元のものを呼び出し、
+> Initialize をサブクラス化して、エラーメッセージを抑制しつつ元のものを呼び出し、
 > 戻り値を無視することができる。うまく動作しているようだ。
 <!-- /tone-skip -->
 

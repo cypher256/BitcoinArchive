@@ -35,7 +35,7 @@ CriticalSection のコードを wxCriticalSection に変換して SVN にアッ�
 
 <!-- quote: q1 -->
 <!-- speaker: Martti Malmi -->
-> はい。WindowsのスレッドとソケットライブラリのインクルードをそれらのPOSIX版に
-> 置き換えたところ、エラーが少しだけ出るようになりました。主にCriticalSectionから
-> のエラーです。動作するようにできたら、svn/branchesに入れます。公式リリースで
+> はい。Windows のスレッドとソケットライブラリのインクルードをそれらの POSIX 版に
+> 置き換えたところ、エラーが少しだけ出るようになりました。主に CriticalSection から
+> のエラーです。動作するようにできたら、svn/branches に入れます。公式リリースで
 > ある必要はまだありません。

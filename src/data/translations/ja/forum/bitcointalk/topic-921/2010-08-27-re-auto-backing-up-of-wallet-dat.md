@@ -28,7 +28,7 @@ copyfile(const char* from, const char* to)や copyfile(path from, path to)のよ
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> ファイルのコピーについて、なぜBoostへの依存を増やすのか？コアライブラリは依存関係が少ない方がいい。
+> ファイルのコピーについて、なぜ Boost への依存を増やすのか？コアライブラリは依存関係が少ない方がいい。
 <!-- /tone-skip -->
 
 JSON や wxWidgets の依存関係を置き換える多数のものに Boost が必要だ。Boost は良い、ポータブルなもので、避けるべきではない。

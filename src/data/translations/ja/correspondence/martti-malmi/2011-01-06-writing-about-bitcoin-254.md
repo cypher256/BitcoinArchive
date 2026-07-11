@@ -33,14 +33,14 @@ relatedEntries:
 <!-- speaker: Gavin Andresen -->
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> 喜んでRaineyと話すよ。
+> 喜んで Rainey と話すよ。
 <!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
 素晴らしい
 
 <!-- speaker: Gavin Andresen -->
-> サトシ、あなたはメディア対応やPR、インタビューには関わりたくないよね？
+> サトシ、あなたはメディア対応や PR、インタビューには関わりたくないよね？
 
 <!-- speaker: Satoshi Nakamoto -->
 その通りだ

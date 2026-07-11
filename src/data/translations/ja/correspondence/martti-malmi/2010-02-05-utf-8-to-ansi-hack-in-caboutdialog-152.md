@@ -61,9 +61,9 @@ quotes:
 >>     if (str.Find('ï¿½') != wxNOT_FOUND)
 >>         str.Remove(str.Find('ï¿½'), 1);
 >>
->> wxFormBuilderは(c)記号を自動的にUTF-8に変換する。wxWidgets-2.8.9の
->> ANSI版では、著作権記号に余分なゴミ文字が付いて表示される。このハック
->> は非Unicode（ANSI）の場合にそれを修正するものだ。
+>> wxFormBuilder は(c)記号を自動的に UTF-8 に変換する。wxWidgets-2.8.9 の
+>> ANSI 版では、著作権記号に余分なゴミ文字が付いて表示される。このハック
+>> は非 Unicode（ANSI）の場合にそれを修正するものだ。
 >
 >
 >

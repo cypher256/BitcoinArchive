@@ -54,7 +54,7 @@ translationStatus: complete
 2008年8月、サトシは[バックに Hashcash 論文の引用を確認するために連絡した](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)。[バックは引用を確認し](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/)、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を参照するよう提案した。
 
 <!-- audit:quote-skip -->
-> 「b-moneyを調べるよう提案した。その時点では知らなかったようだ」
+> 「b-money を調べるよう提案した。その時点では知らなかったようだ」
 
 [サトシは返信した](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)：
 

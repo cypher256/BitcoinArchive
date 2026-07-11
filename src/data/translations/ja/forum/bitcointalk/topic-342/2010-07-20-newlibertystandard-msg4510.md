@@ -21,15 +21,15 @@ translationStatus: complete
 ---
 
 <!-- quote: q1 -->
-> Bitcoinは、1998年のCypherpunks http://en.wikipedia.org/wiki/Cypherpunks 上のウェイ・ダイによるb-money提案 http://weidai.com/bmoney.txt と、ニック・サボのBitgold提案 http://unenumerated.blogspot.com/2005/12/bit-gold.html の実装である。
+> Bitcoin は、1998年の Cypherpunks http://en.wikipedia.org/wiki/Cypherpunks 上のウェイ・ダイによる b-money 提案 http://weidai.com/bmoney.txt と、ニック・サボの Bitgold 提案 http://unenumerated.blogspot.com/2005/12/bit-gold.html の実装である。
 >
-> タイミングが奇妙だ。Slashdotに取り上げられた後、サードパーティの報道が急増しているちょうどその時だ。議論をまとめて決定を急いでいないことを願う。Wikipediaは通常、このような質問をどのくらいの期間コメントに開放しておくのだろうか？
+> タイミングが奇妙だ。Slashdot に取り上げられた後、サードパーティの報道が急増しているちょうどその時だ。議論をまとめて決定を急いでいないことを願う。Wikipedia は通常、このような質問をどのくらいの期間コメントに開放しておくのだろうか？
 >
 > できるだけ早く記事を凝縮し、宣伝っぽく聞こえないようにすることが助けになるだろう。それが何であるか、電子マネーの分野でどこに位置づけられるかを人々に知らせるだけで、良いものだと説得しようとはしないでほしい。おそらく、それが何であるかを一般的に識別できるものを求めており、その仕組みについてすべてを説明しようとするものではないだろう。
 >
-> http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Bitcoin に投稿する場合は、「いやいや、Bitcoinは本当に重要で特別だからルールが適用されるべきではない」とか、ルールがおかしいとか不公平だとか主張しないでほしい。それは事態を悪くするだけだ。ルールがどう満たされているかに焦点を当てるよう努めてほしい。
+> http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Bitcoin に投稿する場合は、「いやいや、Bitcoin は本当に重要で特別だからルールが適用されるべきではない」とか、ルールがおかしいとか不公平だとか主張しないでほしい。それは事態を悪くするだけだ。ルールがどう満たされているかに焦点を当てるよう努めてほしい。
 >
-> Googleで「bitcoin」を検索して、InfoWorldやSlashdotの記事に加えて、他の大きな参照先が見つかるか確認してほしい。Slashdotの記事から知った記者が書いた非常に最近の記事があるかもしれない。
+> Google で「bitcoin」を検索して、InfoWorld や Slashdot の記事に加えて、他の大きな参照先が見つかるか確認してほしい。Slashdot の記事から知った記者が書いた非常に最近の記事があるかもしれない。
 >
 > 削除されないことを願う。もし削除されたら、その推定を覆すのは難しいだろう。組織的な慣性として、前回の決定を維持する傾向がある。
 

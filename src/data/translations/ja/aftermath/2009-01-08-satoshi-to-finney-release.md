@@ -45,7 +45,7 @@ translationStatus: complete
 
 <!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
-> お知らせしておこうと思った。EXEと完全なソースコード付きのBitcoin v0.1リリースがSourceforgeに公開された:
+> お知らせしておこうと思った。EXE と完全なソースコード付きの Bitcoin v0.1 リリースが Sourceforge に公開された:
 > http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar
 >
 > www.bitcoin.org にリリースノートとスクリーンショットがある。

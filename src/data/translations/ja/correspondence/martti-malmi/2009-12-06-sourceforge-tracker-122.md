@@ -110,7 +110,7 @@ secure and Free Open Source software downloads" /></a>
 <!-- speaker: Martti Malmi -->
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> SFプロジェクト管理画面からSourceforgeのロゴを取得して、サイトの
+> SF プロジェクト管理画面から Sourceforge のロゴを取得して、サイトの
 > フッターに追加できると良いですね。
 >
 > <!-- quote: q2 -->

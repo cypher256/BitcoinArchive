@@ -70,26 +70,26 @@ bitcoin -proxy=127.0.0.1:9050 -addnode=<ノードの ip>
 <!-- speaker: Martti Malmi -->
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> ここまで移植した分をsvn/branchesにアップロードしました。Util、script、db
-> とヘッダーは完全にコンパイルできるようになり、net.cppは部分的にコンパイル
+> ここまで移植した分を svn/branches にアップロードしました。Util、script、db
+> とヘッダーは完全にコンパイルできるようになり、net.cpp は部分的にコンパイル
 > できるので、まだ作業が残っています。
 >
-> _beginthreadにはLinuxの直接的な等価物がないので、代わりにBoostスレッドを
+> _beginthread には Linux の直接的な等価物がないので、代わりに Boost スレッドを
 > 使いました。
 >
-> Tor SOCKSプロキシを使って接続できませんでした。FreenodeのTorポリシーで、
+> Tor SOCKS プロキシを使って接続できませんでした。Freenode の Tor ポリシーで、
 > 彼らの隠しサービスへの接続が必要だからかもしれません：
 > http://freenode.net/irc_servers.shtml#tor
 >
 > <!-- quote: q2 -->
->> heapchk()はMSVCRTのデバッグ用のもので使われていない。Linuxではno-opに
->> できる。OpenSSLはLinuxでは自動的に/dev/urandomを使ってシードするので、
->> RandAddSeedPerfmonもno-opにできる。
+>> heapchk()は MSVCRT のデバッグ用のもので使われていない。Linux では no-op に
+>> できる。OpenSSL は Linux では自動的に/dev/urandom を使ってシードするので、
+>> RandAddSeedPerfmon も no-op にできる。
 >>
->> 十分にオフネットでテストするまでネットワークに接続させないでくれ。2台の
+>> 十分にオフネットでテストするまでネットワークに接続させないでくれ。2 台の
 >> パソコンがあれば、インターネットを切断して「bitcoin -connect=<ip>」で互いに
->> 接続できる。1台はWindows、もう1台はLinuxで。-connectを使えば
->> 192.168.x.xのようなルーティング不可能なアドレスにも接続できる。まだ想定
+>> 接続できる。1 台は Windows、もう 1 台は Linux で。-connect を使えば
+>> 192.168.x.x のようなルーティング不可能なアドレスにも接続できる。まだ想定
 >> していなかった不正なデータを送り出したり、ネットワーク上で何か反社会的な
 >> ことをしてしまったりして、ネットワークの信頼性に悪影響を与えたくない。
 >>
@@ -97,21 +97,21 @@ bitcoin -proxy=127.0.0.1:9050 -addnode=<ノードの ip>
 >> 対するストレステストに含めることができるよ。
 >>
 >> <!-- quote: q3 -->
->>> util.hでQueryPerformanceCounterをLinuxのgettimeofdayに置き換える
->>> #ifdefを作りました。Unicode/ANSIのエラーはwxWidgets 2.9にアップデート
->>> したらコード変更なしで解決しました。現在Linuxで出ている唯一のコンパイル
->>> エラーはutil.hのheapchk()からのものです。
+>>> util.h で QueryPerformanceCounter を Linux の gettimeofday に置き換える
+>>> #ifdef を作りました。Unicode/ANSI のエラーは wxWidgets 2.9 にアップデート
+>>> したらコード変更なしで解決しました。現在 Linux で出ている唯一のコンパイル
+>>> エラーは util.h の heapchk()からのものです。
 >>>
 >>> <!-- quote: q4 -->
 >>>> 見つけた移植性のないコードをいくつか修正した：
 >>>> QueryPerformanceCounter
->>>> printfフォーマット文字列の%I64d
+>>>> printf フォーマット文字列の%I64d
 >>>> Sleep
 >>>> CheckDiskSpace
 >>>>
 >>>> 他に修正すべき移植性のないコードを知っていたら教えてほしい。
 >>>>
->>>> debug.logとdb.logは、現在のディレクトリではなく、データファイルと同じ
+>>>> debug.log と db.log は、現在のディレクトリではなく、データファイルと同じ
 >>>> ディレクトリ（%appdata%\Bitcoin）に移動しようと思う。
 >>>
 >>>

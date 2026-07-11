@@ -24,7 +24,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> Bitcoinを実行すると非常に動作が重くなり、ほとんど使い物にならない。Bitcoinを停止するとすべて正常に戻る。Ubuntu desktop 10.04 amd64でia32libsとbitcoin 0.20 tarballのバイナリを使用している。
+> Bitcoin を実行すると非常に動作が重くなり、ほとんど使い物にならない。Bitcoin を停止するとすべて正常に戻る。Ubuntu desktop 10.04 amd64 で ia32libs と bitcoin 0.20 tarball のバイナリを使用している。
 <!-- /tone-skip -->
 
 0.3.1 でこれが修正された。生成スレッドを最低優先度に設定している。ダウンロードリンクは現在ホームページにある。

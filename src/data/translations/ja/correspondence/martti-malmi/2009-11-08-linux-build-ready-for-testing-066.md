@@ -71,15 +71,15 @@ debug.log では、ブロックリストを要求し、ブロックリストを�
 >
 <!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
-> 2009年11月8日午前9:08、Satoshi Nakamoto <satoshin@gmx.com
+> 2009年11月8日午前 9:08、Satoshi Nakamoto <satoshin@gmx.com
 >
 <!-- speaker: Satoshi Nakamoto -->
 > <!-- quote: q2 -->
->> ステータスバーのブロック数が約26600まで上がっていないということであれば、
->> それはバグだ。debug.logを送ってくれ。
->> （~/.bitcoin/debug.logにある）
+>> ステータスバーのブロック数が約 26600 まで上がっていないということであれば、
+>> それはバグだ。debug.log を送ってくれ。
+>> （~/.bitcoin/debug.log にある）
 >>
->> Windowsのように、Linux上で既に実行中のプログラムを見つけて表示する方法は
+>> Windows のように、Linux 上で既に実行中のプログラムを見つけて表示する方法は
 >> まだ分かっていない。あなたのお話を聞いて、少なくともトレイに最小化の
 >> オプションを初期状態ではデフォルトでオフにすべきだな。
 >

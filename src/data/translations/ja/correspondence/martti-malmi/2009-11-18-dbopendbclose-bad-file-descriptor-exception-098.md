@@ -40,7 +40,7 @@ translationStatus: complete
 <!-- tone-skip -->
 <!-- quote: q1 -->
 > <!-- speaker: Satoshi Nakamoto -->
-> ありがとう。db::open/closeのエラーはパターンを裏付けている。
+> ありがとう。db::open/close のエラーはパターンを裏付けている。
 >
 > より興味深いのは、終盤のゾンビソケットの活動と、ソケットスレッドモニターが反応したものの復旧できなかったことだ。マシンがネットから切断されたのか？test5 の MSG_DONTWAIT が Liberty のゾンビ問題を解決した。どのテストバージョンを実行していたのか？（ログにテストバージョンを出力するようにすべきだな）
 >
@@ -49,7 +49,7 @@ translationStatus: complete
 >> まだ役に立つかもしれないので、ログをお送りします。
 >>
 >>> <!-- speaker: Satoshi Nakamoto -->
->>> 回避策のアイデアがあるが、エラーがどのファイルで発生しているかによる。db.logにエラーがいくつか蓄積されているなら、送ってもらえるか？（たとえ非常にシンプルで退屈な内容でも）記録されているファイルは常にblkindex.datか、それともaddr.datやwallet.datも含まれるか？
+>>> 回避策のアイデアがあるが、エラーがどのファイルで発生しているかによる。db.log にエラーがいくつか蓄積されているなら、送ってもらえるか？（たとえ非常にシンプルで退屈な内容でも）記録されているファイルは常に blkindex.dat か、それとも addr.dat や wallet.dat も含まれるか？
 >> <!-- speaker: Martti Malmi -->
 >>
 

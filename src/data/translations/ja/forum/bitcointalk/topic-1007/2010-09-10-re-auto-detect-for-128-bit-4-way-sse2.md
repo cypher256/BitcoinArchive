@@ -25,6 +25,6 @@ quotes:
 <!-- quote: q1 -->
 <!-- tone-skip -->
 <!-- audit:quote-skip -->
-> CallCPUID関数にx86アセンブラが含まれているため、他のアーキテクチャではビルドが失敗する。main.cppの2770行目を以下のように変更した
+> CallCPUID 関数に x86 アセンブラが含まれているため、他のアーキテクチャではビルドが失敗する。main.cpp の 2770 行目を以下のように変更した
 <!-- /tone-skip -->
 SVN rev 152 に追加した。

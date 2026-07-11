@@ -24,7 +24,7 @@ $(shell /usr/bin/wx-config)の問題の一つは、そこにたまたまある�
 
 <!-- audit:quote-skip -->
 <!-- tone-skip -->
-> 思い出せば、freenodeの#wxwidgetsでチャットした時、そこの開発者はなぜそれが使われているのか困惑していました。
+> 思い出せば、freenode の#wxwidgets でチャットした時、そこの開発者はなぜそれが使われているのか困惑していました。
 <!-- /tone-skip -->
 
 なぜ困惑していたか言っていたか？
@@ -32,7 +32,7 @@ $(shell /usr/bin/wx-config)の問題の一つは、そこにたまたまある�
 <!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 <!-- tone-skip -->
-> 私のシステムではパスが/usr/include/wx-2.9/wx/wx.hだからです
+> 私のシステムではパスが/usr/include/wx-2.9/wx/wx.h だからです
 <!-- /tone-skip -->
 
 なぜそこにあるのか？OS に含まれていたのか、それともビルドする必要があったのか？ビルドした場合、なぜ別の場所にインストールされるのか不思議だ。

@@ -24,7 +24,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> 983 Mhash/sのマシン。
+> 983 Mhash/s のマシン。
 <!-- /tone-skip -->
 
 本気か？それはどんなハードウェアだ？

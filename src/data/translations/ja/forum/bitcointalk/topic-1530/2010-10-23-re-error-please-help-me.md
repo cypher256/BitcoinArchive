@@ -29,7 +29,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> Dhawがdebug.logファイルのいくつかを送ってくれた。見られた症状：
+> Dhaw が debug.log ファイルのいくつかを送ってくれた。見られた症状：
 <!-- /tone-skip -->
 
 彼は難易度1.0 で無効なブロックを生成していた。blk0001.dat または blkindex.dat ファイルに破損したエントリがあるはずだ。blk*.dat を削除して再ダウンロードさせるだけで済む。

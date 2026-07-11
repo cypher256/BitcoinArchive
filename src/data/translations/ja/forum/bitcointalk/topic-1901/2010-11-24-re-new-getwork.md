@@ -29,7 +29,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> C言語で簡単なCPUマイナーの作成を開始した。主にデモンストレーション用で、`getwork` を理解するためだ。
+> C 言語で簡単な CPU マイナーの作成を開始した。主にデモンストレーション用で、`getwork` を理解するためだ。
 <!-- /tone-skip -->
 
 getwork がバイト反転を行う。midstate、data、hash1 はすでにビッグエンディアンで、data を返す時もビッグエンディアンのままなので、ビッグエンディアンで作業し、バイト反転は不要だ。これらは ScanHash_関数に渡されるのと同じデータだ。midstate、data、hash1 を 16 バイトアラインされたバッファに入れて ScanHash_関数に渡すことができる。例えば ScanHash(pmidstate, pdata + 64, phash1, nHashesDone)のように。ナンスが見つかったら data にパッチして getwork を呼び出す。

@@ -50,7 +50,7 @@ IS_LIVE オプションは確かに false に設定されていましたが、�
 >
 >
 > <!-- quote: q2 -->
->> > bitcoin.sourceforge.netは今は正常に見える。sourceforgeが何か
+>> > bitcoin.sourceforge.net は今は正常に見える。sourceforge が何か
 >
 > 今は動作していない。
 >

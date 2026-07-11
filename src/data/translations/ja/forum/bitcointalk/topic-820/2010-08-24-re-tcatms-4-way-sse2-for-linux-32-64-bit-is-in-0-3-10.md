@@ -24,7 +24,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> - AMD K10: 128ビットユニット2つ
+> - AMD K10: 128 ビットユニット 2 つ
 <!-- /tone-skip -->
 
 - Intel Nehalem: 128 ビットユニット 3 つ

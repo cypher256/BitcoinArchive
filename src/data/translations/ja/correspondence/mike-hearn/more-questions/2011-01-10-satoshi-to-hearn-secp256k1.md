@@ -34,7 +34,7 @@ quotes:
 <!-- speaker: Mike Hearn -->
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> ところで、もしまだ見ていなければ、フォーラムでsecp256k1のセキュリティに関する議論がある：
+> ところで、もしまだ見ていなければ、フォーラムで secp256k1 のセキュリティに関する議論がある：
 >
 > http://www.bitcoin.org/smf/index.php?topic=2699.0
 >
@@ -46,7 +46,7 @@ quotes:
 
 <!-- speaker: Mike Hearn -->
 <!-- tone-skip -->
-> この曲線はランダムな曲線よりも攻撃のリスクが高いと考えているようだ。パフォーマンスの改善のためにsecp256k1を選んだのか？
+> この曲線はランダムな曲線よりも攻撃のリスクが高いと考えているようだ。パフォーマンスの改善のために secp256k1 を選んだのか？
 <!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->

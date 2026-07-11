@@ -46,17 +46,17 @@ translationStatus: complete
 <!-- tone-skip -->
 <!-- quote: q1 -->
 > <!-- speaker: Satoshi Nakamoto -->
-> bitcoin.sourceforge.netにSourceforgeトラッカーを追加した。
+> bitcoin.sourceforge.net に Sourceforge トラッカーを追加した。
 > 別のものが欲しければ、以下に全リンクの一覧がある。
 >
-> bitcoin.orgには一瞬入れたが、外した。SSLモードでロックが壊れて、
+> bitcoin.org には一瞬入れたが、外した。SSL モードでロックが壊れて、
 > 「partially encrypted」や「contains unauthenticated content」という
-> 混合コンテンツ警告が出る。そもそも、Sourceforgeに全員を
+> 混合コンテンツ警告が出る。そもそも、Sourceforge に全員を
 > トラッキングさせたいか？ない方がプライバシーに優しい。
 >
 > <!-- quote: q2 -->
 >> <!-- speaker: Martti Malmi -->
->> SFプロジェクト管理画面からSourceforgeのロゴを取得して、サイトの
+>> SF プロジェクト管理画面から Sourceforge のロゴを取得して、サイトの
 >> フッターに追加できると良いですね。
 >>
 >> <!-- quote: q3 -->

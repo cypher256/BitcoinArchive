@@ -39,9 +39,9 @@ relatedEntries:
 <!-- speaker: Mike Hearn -->
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> お元気でいることを願っている。ようやくGoogleの弁護士全員を説得した。Apache 2ライセンスでBitCoinJを公開する：
+> お元気でいることを願っている。ようやく Google の弁護士全員を説得した。Apache 2 ライセンスで BitCoinJ を公開する：
 >
-> まだ不完全で、特にブロックチェーンの分岐を適切に処理できていないが、残りの部分は順次実装していく。ドキュメントとコメントに多くの労力を費やしたので、現在のコードを理解・ビルドできなかった新しい層にBitCoinを開放できればと思う。今後1〜2ヶ月で、完全なクライアントモード実装に必要な大きな欠落部分を仕上げる予定だ。
+> まだ不完全で、特にブロックチェーンの分岐を適切に処理できていないが、残りの部分は順次実装していく。ドキュメントとコメントに多くの労力を費やしたので、現在のコードを理解・ビルドできなかった新しい層に BitCoin を開放できればと思う。今後 1〜2ヶ月で、完全なクライアントモード実装に必要な大きな欠落部分を仕上げる予定だ。
 <!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -57,7 +57,7 @@ relatedEntries:
 
 <!-- speaker: Mike Hearn -->
 <!-- tone-skip -->
-> 完全なSPVの実装の一環として、プロトコルにgetmerklebranchメッセージを追加することを考えている。これはトランザクションハッシュを指定すると{blockhash, branch}のペアのセットを返すもので、
+> 完全な SPV の実装の一環として、プロトコルに getmerklebranch メッセージを追加することを考えている。これはトランザクションハッシュを指定すると{blockhash, branch}のペアのセットを返すもので、
 <!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->
@@ -81,7 +81,7 @@ relatedEntries:
 
 <!-- speaker: Mike Hearn -->
 <!-- tone-skip -->
-> また、最近さまざまなトランザクションタイプの探求を考えている。例えばtestnetでIsStandard()チェックを削除するなどだ。
+> また、最近さまざまなトランザクションタイプの探求を考えている。例えば testnet で IsStandard()チェックを削除するなどだ。
 <!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->

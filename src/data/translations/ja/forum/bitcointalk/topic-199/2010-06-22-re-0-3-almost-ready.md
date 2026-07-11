@@ -24,7 +24,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> ただ、次のリリースまでにlisttransactions RPCメソッドが完成していると良いのだが。
+> ただ、次のリリースまでに listtransactions RPC メソッドが完成していると良いのだが。
 <!-- /tone-skip -->
 心配しているのは、多くのプログラマーが受取支払いの確認にそれを使おうとすることだ。その方法では決して信頼性がない。list/getreceivedbyaddress/label 関数が信頼性のある唯一の方法だ。
 

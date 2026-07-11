@@ -23,6 +23,6 @@ translationStatus: complete
 このプロジェクトに 5btc の寄付を申し出る。（まだ）大した額ではないが、他の人の寄付のきっかけになるかもしれない。どのアドレスに送ればいい？
 
 <!-- quote: q1 -->
-> http://tahoe-lafs.org/trac/tahoe-lafs  おもしろいことに、私も昨日10 btc送ったばかりだ。
+> http://tahoe-lafs.org/trac/tahoe-lafs  おもしろいことに、私も昨日10 btc 送ったばかりだ。
 
 明らかなことを指摘してくれてありがとう！ ^_^

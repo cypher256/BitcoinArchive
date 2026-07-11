@@ -47,15 +47,15 @@ bitcoin.org の DNS エントリを変更するだけのほうが簡単です。
 <!-- tone-skip -->
 <!-- quote: q1 -->
 > <!-- speaker: Satoshi Nakamoto -->
-> ありがとう、うまくいった。SSHでFile Managerをインストールできた。Drupalにもいくつかテーマをアップロードした。利用可能なテーマをすべて徹底的に確認したわけではまだない。
+> ありがとう、うまくいった。SSH で File Manager をインストールできた。Drupal にもいくつかテーマをアップロードした。利用可能なテーマをすべて徹底的に確認したわけではまだない。
 >
-> CMSを調べてみたところ、DrupalとJoomlaが人気だ。一般的な見解としては、Joomlaのほうがテーマの選択肢が豊富で学びやすいが、Drupalはプログラマーやカスタマイズにとってより直感的かもしれない。JoomlaはCMSとして優れており、Drupalはブログに向いている。DrupalのURLは検索エンジンフレンドリーだが、Joomlaはそうではない。
+> CMS を調べてみたところ、Drupal と Joomla が人気だ。一般的な見解としては、Joomla のほうがテーマの選択肢が豊富で学びやすいが、Drupal はプログラマーやカスタマイズにとってより直感的かもしれない。Joomla は CMS として優れており、Drupal はブログに向いている。Drupal の URL は検索エンジンフレンドリーだが、Joomla はそうではない。
 >
-> どちらもSMFブリッジモジュールが利用可能だ。今後の参考のために、Drupal用のものは「SMFforum Integration」という名前だ。
+> どちらも SMF ブリッジモジュールが利用可能だ。今後の参考のために、Drupal 用のものは「SMFforum Integration」という名前だ。
 >
 > <!-- quote: q2 -->
 >> <!-- speaker: Martti Malmi -->
 >> 今日は設定する時間がありませんが、一時的なアカウント「」をパスワード「」で作成し、
->>  /var/www/bitcoinへのフル権限を付与しました。ポート30000でsshまたはsftpでアクセスできます。
+>>  /var/www/bitcoin へのフル権限を付与しました。ポート 30000 で ssh または sftp でアクセスできます。
 
 <!-- /tone-skip -->

@@ -64,7 +64,7 @@ bitcoin -datadir=/home/yourusername/.bitcoin
 <!-- speaker: Liberty Standard -->
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> 2009年11月9日午前3:23、Satoshi Nakamoto <satoshin@gmx.com
+> 2009年11月9日午前 3:23、Satoshi Nakamoto <satoshin@gmx.com
 >
 > <!-- quote: q2 -->
 >> 開始までどのくらいかかった？たまたま要求したノードが遅いだけかもしれない。遅い開始はダウンロード速度が遅いことと整合する。

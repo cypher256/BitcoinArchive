@@ -32,7 +32,7 @@ translationStatus: complete
 
 <!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
-> 昨日から70.113.114.209に接続している。
+> 昨日から 70.113.114.209 に接続している。
 
 <!-- speaker: narrator -->
 彼は、[ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)がこの IP に接続できていないのであれば、問題はボーム側にあり、発信接続もできない状態であると指摘した。

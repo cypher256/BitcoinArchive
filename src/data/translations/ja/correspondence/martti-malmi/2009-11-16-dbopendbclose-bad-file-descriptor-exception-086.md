@@ -46,11 +46,11 @@ quotes:
 >
 <!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
-> 2009年11月15日(日) 午前12:45、Satoshi Nakamoto <satoshin@gmx.com
+> 2009年11月15日(日) 午前 12:45、Satoshi Nakamoto <satoshin@gmx.com
 >
 > <!-- quote: q2 -->
->> Berkeley DBを別の方法でリンクしたバージョンだ。試してみる価値はある。
->> それ以外はtest5と同一だ。
+>> Berkeley DB を別の方法でリンクしたバージョンだ。試してみる価値はある。
+>> それ以外は test5 と同一だ。
 >>
->> （同じ方法で失敗するまでは、少なくともdatadirはハードドライブに置いて
+>> （同じ方法で失敗するまでは、少なくとも datadir はハードドライブに置いて
 >> おいてくれ。成功する可能性はそれなりにある。）

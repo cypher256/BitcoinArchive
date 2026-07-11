@@ -63,7 +63,7 @@ translationStatus: complete
 
 <!-- speaker: narrator -->
 <!-- audit:quote-skip -->
-> [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)（b-moneyの発明者）はビットコインを「非常に重要」と呼び、[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)（ビットゴールドの考案者）は「世界への偉大な貢献」と称え、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)（RPOWを手がけた著名な暗号学者）は「世界を変える可能性がある」と述べた。
+> [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)（b-money の発明者）はビットコインを「非常に重要」と呼び、[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)（ビットゴールドの考案者）は「世界への偉大な貢献」と称え、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)（RPOW を手がけた著名な暗号学者）は「世界を変える可能性がある」と述べた。
 
 <!-- speaker: narrator -->
 記事は、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が 1 万 BTC を 50 ドルで購入し[ビットコイン・フォーセット](/BitcoinArchive/ja/entries/aftermath/2010-06-11-andresen-bitcoin-faucet/)を作って無料配布したこと——この資金源の詳細はフォーセット自体の記事には出てこない——、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)が[史上初の実世界ビットコイン取引](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)として 1 万 BTC でピザ 2枚を購入したことを描写した。
@@ -74,18 +74,18 @@ translationStatus: complete
 
 <!-- speaker: narrator -->
 <!-- audit:quote-skip -->
-> ナカモトは一人の人間ではなく、不可解な目的を持つ謎のグループ——Googleのチーム、あるいは国家安全保障局（NSA）——ではないかという説も浮上した。
+> ナカモトは一人の人間ではなく、不可解な目的を持つ謎のグループ——Google のチーム、あるいは国家安全保障局（NSA）——ではないかという説も浮上した。
 
 ラズロ・ハニエツ：
 
 <!-- speaker: Laszlo Hanyecz -->
 <!-- audit:quote-skip -->
-> 「サトシっていう人とメールを何通かやり取りしたんだけどさ。本物の人間じゃないような感じがずっとしてたんだよね。返信も2週間おきくらいで、たまに誰かがチェックしてるような感じだった。ビットコインって、一人で作ったにしてはよくできすぎてるんだよ」
+> 「サトシっていう人とメールを何通かやり取りしたんだけどさ。本物の人間じゃないような感じがずっとしてたんだよね。返信も 2 週間おきくらいで、たまに誰かがチェックしてるような感じだった。ビットコインって、一人で作ったにしてはよくできすぎてるんだよ」
 
 [サトシの Wikileaks への嘆願](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks/)（2010 年 12 月 5 日）について、記事はその拒絶を引いた：
 
 <!-- quote: q1 -->
-> 「違う、挑発するな。プロジェクトは徐々に成長する必要がある。その過程でソフトウェアを強化できるように。WikiLeaksへ訴える。ビットコインを使うのはやめてくれ。ビットコインはまだ小さなベータコミュニティであり、黎明期にある。集まるのは小銭程度だ。それなのに、もたらす火種は、この段階で我々を破壊しかねない」
+> 「違う、挑発するな。プロジェクトは徐々に成長する必要がある。その過程でソフトウェアを強化できるように。WikiLeaks へ訴える。ビットコインを使うのはやめてくれ。ビットコインはまだ小さなベータコミュニティであり、黎明期にある。集まるのは小銭程度だ。それなのに、もたらす火種は、この段階で我々を破壊しかねない」
 
 サトシの消失について、ウォレスはこう書いた：
 
@@ -112,7 +112,7 @@ translationStatus: complete
 
 <!-- speaker: Amir Taaki -->
 <!-- audit:quote-skip -->
-> 「彼の記法スタイルは80年代後半から90年代初頭に流行ったものだ。おそらく50歳前後、プラスマイナス10歳だろう」
+> 「彼の記法スタイルは 80年代後半から 90年代初頭に流行ったものだ。おそらく 50 歳前後、プラスマイナス 10 歳だろう」
 
 ダン・カミンスキー：
 
@@ -142,7 +142,7 @@ translationStatus: complete
 
 <!-- speaker: narrator -->
 <!-- audit:quote-skip -->
-> スイスのコーダーでコミュニティの活発なメンバーだったステファン・トーマスが、ナカモトの500件以上のフォーラム投稿のタイムスタンプをグラフ化した。グラフは、グリニッジ標準時の午前5時から11時の間に投稿がほぼ消滅することを示していた。
+> スイスのコーダーでコミュニティの活発なメンバーだったステファン・トーマスが、ナカモトの 500件以上のフォーラム投稿のタイムスタンプをグラフ化した。グラフは、グリニッジ標準時の午前 5時から 11時の間に投稿がほぼ消滅することを示していた。
 
 この GMT を根拠とした手法は、約 10年後にも別の形で繰り返されることになる——[Chain Bulletin による 2020年のロンドン仮説分析](/BitcoinArchive/ja/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/)は、投稿・コミット・メール 742件というはるかに大規模なデータセットから、同様の結論に達している。
 

@@ -45,15 +45,15 @@ translationStatus: complete
 > <!-- speaker: Satoshi Nakamoto -->
 >> 使えるメモリーはどのくらいか？
 > <!-- speaker: Martti Malmi -->
-> VPSには320MBのRAMがあり、そのうち50MBが現在空いています。
-> 500MBのスワップ領域もあります。
+> VPS には 320MB の RAM があり、そのうち 50MB が現在空いています。
+> 500MB のスワップ領域もあります。
 >
 > <!-- speaker: Satoshi Nakamoto -->
->> Bitcoinはそれなりにメモリーを必要とする。
->> Windowsでは約75MBだ。問題になるか？
+>> Bitcoin はそれなりにメモリーを必要とする。
+>> Windows では約 75MB だ。問題になるか？
 >
 > <!-- speaker: Martti Malmi -->
-> 本当ですか？こちらのWindowsタスクマネージャーではメモリー使用量は約13MBと表示されていますが。
+> 本当ですか？こちらの Windows タスクマネージャーではメモリー使用量は約 13MB と表示されていますが。
 >
 
 <!-- /tone-skip -->

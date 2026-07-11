@@ -88,7 +88,7 @@ function walk(dir) {
 // parts so the regex doesn't touch their contents. Returns
 // { masked, masks }, with masks[i] holding the original text for
 // placeholder " MASK<i> ".
-function maskExclusions(content, ext) {
+function maskExclusions(content, ext, skipQuoteLines) {
   const masks = [];
   const placeholder = (idx) => ` MASK${idx} `;
   let masked = content;
@@ -100,7 +100,13 @@ function maskExclusions(content, ext) {
   // own replacements). Mask blockquote lines first so the URL /
   // inline-code masks only see prose lines and never end up nested
   // inside another mask.
-  if (ext === '.md') {
+  //
+  // The blockquote mask applies only to EN-tree files (verbatim
+  // source text, possibly containing historical JA). Blockquotes in
+  // src/data/translations/ja are translator-produced Japanese and
+  // follow the JA × ASCII spacing convention like any other JA prose
+  // (2026-07-11 decision; see STYLE_GUIDE_JA § half-width space).
+  if (ext === '.md' && skipQuoteLines) {
     masked = masked.replace(/^[ \t]*>.*$/gm, (m) => {
       masks.push(m);
       return placeholder(masks.length - 1);
@@ -162,14 +168,15 @@ for (const t of targets) allFiles.push(...walk(t));
 
 for (const file of allFiles) {
   // ALL JA files are processed (no verbatim-directory exclusion).
-  // Verbatim faithfulness is enforced at the LINE level via the
-  // blockquote (`>`) skip in maskExclusions, which protects the
-  // primary-source quote text but allows editorial inserts in the
-  // same file (frontmatter `editorNote`, `description`, translator
-  // commentary on plain prose lines) to follow the JA × ASCII rule.
+  // In the EN tree, verbatim faithfulness is enforced at the LINE
+  // level via the blockquote (`>`) skip in maskExclusions (quoted
+  // source text is historical). In the JA translations tree the
+  // blockquotes are translator-produced Japanese, so the JA × ASCII
+  // rule applies to them like any other JA prose (2026-07-11).
   const ext = file.endsWith('.astro') ? '.astro' : '.md';
+  const skipQuoteLines = file.includes(`${path.sep}src${path.sep}data${path.sep}entries${path.sep}en${path.sep}`);
   const original = readFileSync(file, 'utf-8');
-  const { masked, masks } = maskExclusions(original, ext);
+  const { masked, masks } = maskExclusions(original, ext, skipQuoteLines);
   let fixed = masked;
   let fileFixes = 0;
   const recordSample = (kind, before, after) => {

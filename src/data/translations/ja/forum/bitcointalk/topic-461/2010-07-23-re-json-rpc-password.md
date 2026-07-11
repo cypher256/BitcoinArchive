@@ -24,7 +24,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> 皆に質問だ：HTTP Basic認証のやり方を詳しく説明するセクションをwikiページに追加すべきだろうか？ PHPとPythonでは [http://user:pass@host:port/](http://user:pass@host:port/) というURL構文を使うだけで非常に簡単にできる。
+> 皆に質問だ：HTTP Basic 認証のやり方を詳しく説明するセクションを wiki ページに追加すべきだろうか？ PHP と Python では [http://user:pass@host:port/](http://user:pass@host:port/) という URL 構文を使うだけで非常に簡単にできる。
 <!-- /tone-skip -->
 
 はい、各開発者が自分で調べなくて済むように、それは本当に良いと思う。Python、PHP、Java それぞれで json-rpc ライブラリをインポートして getinfo などを実行する簡単な例が必要だ。HTTP 認証部分も含めて。

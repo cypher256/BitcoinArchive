@@ -55,7 +55,7 @@ Linux ビルドの GCC 4.3.3 は、Windows の GCC 3.4.5 よりも SHA-256 コ�
 > ビットコインが熟成し始めたので、 Wine 上の Windows 版と比較してコイン生成性能が同等以上か劣るか判断がつくまで、当面 Linux クライアントを使い続けます。
 >
 >
-> 2009年11月9日午前8:59、Liberty Standard
+> 2009年11月9日午前 8:59、Liberty Standard
 >
 > <!-- quote: q2 -->
 >> 多重起動したい別の場面は、ビットコインのアップグレード時です。
@@ -63,7 +63,7 @@ Linux ビルドの GCC 4.3.3 は、Windows の GCC 3.4.5 よりも SHA-256 コ�
 >> 旧アプリのコインが熟成したら新アプリに送って、それから旧アプリを閉じます。
 >> 既存データを引き継いだ上書きアップグレードよりも、クリーンインストールの方を好みます。
 >>
->> 2009年11月9日午前7:42、Satoshi Nakamoto <satoshin@gmx.com
+>> 2009年11月9日午前 7:42、Satoshi Nakamoto <satoshin@gmx.com
 >
 <!-- speaker: Satoshi Nakamoto -->
 > <!-- quote: q3 -->

@@ -55,7 +55,7 @@ translationStatus: complete
 
 <!-- quote: q2 -->
 <!-- speaker: Dustin Trammell -->
-> 現在は24.28.79.95だが、動的なので変わるかもしれない。
+> 現在は 24.28.79.95 だが、動的なので変わるかもしれない。
 
 <!-- speaker: narrator -->
 翌日の 2009年1月14日 UTC 19:46 に、サトシは 1回の取引でトランメルに 25.0 BTC を送金した（txid: d71fd2f64c0b34465b7518d240c00e83f6a5b10138a7079d1252858fe7e6b577）。この取引はアドレス 1Jhk2DHosaaZx1E4CbnTGcKM7FC88YHYv9 からトランメルのアドレス 1DCbY2GYVaAMCBpuBNN5GVg3a47pNK1wdi へ送られた。

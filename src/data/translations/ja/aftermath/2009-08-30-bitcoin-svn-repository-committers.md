@@ -69,7 +69,7 @@ translationStatus: complete
 
 <!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
-> 「ギャビンがいいと思う。信頼できるし、責任感があり、プロフェッショナルで、技術的にもLinuxに関しては私よりずっと上だ」
+> 「ギャビンがいいと思う。信頼できるし、責任感があり、プロフェッショナルで、技術的にも Linux に関しては私よりずっと上だ」
 
 アンドレセンの最後の SVN コミットは 2011年9月13日の r252 で、メッセージには「Development has moved to github.」と記されていた。これが SourceForge SVN 時代の正式な終焉となった。
 

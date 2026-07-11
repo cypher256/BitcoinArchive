@@ -37,7 +37,7 @@ translationStatus: complete
 <!-- quote: q1 -->
 > <!-- quote: q2 -->
 > <!-- speaker: Satoshi Nakamoto -->
->> ところで、私がビルドしたbitcoindをあなたのホストで使えるか、それとも自分でビルドする必要があるか？
+>> ところで、私がビルドした bitcoind をあなたのホストで使えるか、それとも自分でビルドする必要があるか？
 >
 > <!-- speaker: Martti Malmi -->
 > 自分でビルドする必要がありました。フォーラムで報告されているのと同じ問題がありました：/usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.11' not found。

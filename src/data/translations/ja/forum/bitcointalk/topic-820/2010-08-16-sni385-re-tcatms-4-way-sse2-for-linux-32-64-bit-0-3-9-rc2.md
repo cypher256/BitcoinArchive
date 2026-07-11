@@ -24,7 +24,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> -march=amdfam10を試してみてくれ
+> -march=amdfam10 を試してみてくれ
 <!-- /tone-skip -->
 
 動いた。

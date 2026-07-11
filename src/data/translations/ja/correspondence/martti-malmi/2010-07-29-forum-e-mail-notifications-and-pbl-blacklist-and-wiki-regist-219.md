@@ -29,9 +29,9 @@ http://www.bitcoin.org/smf/index.php?topic=338.0
 
 <!-- tone-skip -->
 <!-- audit:quote-skip -->
-> メールブラックホールリスト、もしくは少なくとも登録用メールサーバーをホストしているISPがそれらのリストに載っています。
+> メールブラックホールリスト、もしくは少なくとも登録用メールサーバーをホストしている ISP がそれらのリストに載っています。
 >
-> 「bitcoin.orgがPBLに載っているようです。」
+> 「bitcoin.org が PBL に載っているようです。」
 > http://www.spamhaus.org/pbl/query/PBL340779
 <!-- /tone-skip -->
 

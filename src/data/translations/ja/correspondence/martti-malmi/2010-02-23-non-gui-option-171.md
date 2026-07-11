@@ -44,23 +44,23 @@ translationStatus: complete
 > <!-- quote: q2 -->
 >> <!-- quote: q3 -->
 >> <!-- speaker: Martti Malmi -->
->>> GUIなしで同じバイナリを実行する方法について、いくつかの手がかりを見つけました：
+>>> GUI なしで同じバイナリを実行する方法について、いくつかの手がかりを見つけました：
 >>>
->>> 1) GTKはディスプレイなしでプログラムを実行することをサポートしています：
+>>> 1) GTK はディスプレイなしでプログラムを実行することをサポートしています：
 >>> http://library.gnome.org/devel/gtk/2.12/gtk-General.html#gtk-init-check。
->>> ただし、wxWidgetsで可能かどうかまでは分かりません。
+>>> ただし、wxWidgets で可能かどうかまでは分かりません。
 >>
 >> <!-- speaker: Satoshi Nakamoto -->
->> wxApp::Initializeでgtk-init-checkを呼び出しているのが分かった。
+>> wxApp::Initialize で gtk-init-check を呼び出しているのが分かった。
 >>
->> Initializeをサブクラス化して、エラーメッセージを抑制しつつ元のものを呼び出し、
+>> Initialize をサブクラス化して、エラーメッセージを抑制しつつ元のものを呼び出し、
 >> 戻り値を無視することができる。うまく動作しているようだ。
 >
 > <!-- speaker: Satoshi Nakamoto -->
 > うまく動作している。あといくつか作業したらアップロードする。
 >
-> GTKライブラリをインストールするよう人々に伝える必要がある。GTKを
-> インストールするapt-getコマンドを覚えているか？また、GUIがインストール
+> GTK ライブラリをインストールするよう人々に伝える必要がある。GTK を
+> インストールする apt-get コマンドを覚えているか？また、GUI がインストール
 > されていない環境でもインストールできるか？
 
 <!-- speaker: Martti Malmi -->

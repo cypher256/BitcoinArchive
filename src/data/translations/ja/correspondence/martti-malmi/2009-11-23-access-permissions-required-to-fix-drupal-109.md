@@ -43,12 +43,12 @@ translationStatus: complete
 >
 > 修正計画は以下の通りだ。もし自分でやる場合でも、後で変更が必要になるかもしれないので、httpd.conf へのアクセス権限は付与してほしい。
 >
-> /etc/apache2/sites-available/defaultで<br>
-> 「AllowOverride None」の2番目のインスタンスを<br>
+> /etc/apache2/sites-available/default で<br>
+> 「AllowOverride None」の 2番目のインスタンスを<br>
 > 「AllowOverride All」に変更
 >
-> そして/etc/apache2/sites-available/default-sslで<br>
-> 「AllowOverride AuthConfig」の2番目のインスタンスを<br>
+> そして/etc/apache2/sites-available/default-ssl で<br>
+> 「AllowOverride AuthConfig」の 2番目のインスタンスを<br>
 > 「AllowOverride All」に変更
 >
 >  /etc/apache2/httpd.conf

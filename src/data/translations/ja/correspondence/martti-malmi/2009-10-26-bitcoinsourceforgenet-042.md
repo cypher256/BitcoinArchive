@@ -41,7 +41,7 @@ quotes:
 Eugen Leitl の書き込み:
 <!-- quote: q1 -->
 <!-- tone-skip -->
- > > bitcoin.sourceforge.netは今は正常に見える。SourceForgeが
+ > > bitcoin.sourceforge.net は今は正常に見える。SourceForge が
 <!-- /tone-skip -->
 
 今は動作していない。

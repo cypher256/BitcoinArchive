@@ -29,9 +29,9 @@ relatedEntries:
 <!-- speaker: Liberty Standard -->
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> Windowsユーザーは時々ビットコインがクラッシュすることがあるか？
-> 最近wine-1.0.1上で動作しているビットコインが頻繁にクラッシュしている。
-> これがWineの問題なのかビットコインの問題なのか気になった。
+> Windows ユーザーは時々ビットコインがクラッシュすることがあるか？
+> 最近 wine-1.0.1 上で動作しているビットコインが頻繁にクラッシュしている。
+> これが Wine の問題なのかビットコインの問題なのか気になった。
 <!-- /tone-skip -->
 
 <!-- speaker: Satoshi Nakamoto -->

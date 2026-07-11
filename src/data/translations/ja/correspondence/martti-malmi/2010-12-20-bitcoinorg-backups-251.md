@@ -38,7 +38,7 @@ translationStatus: complete
 <!-- quote: q1 -->
 <!-- tone-skip -->
 > <!-- quote: q2 -->
->> ShadowOfHarbringerがbitcoin.orgのウェブサイトとフォーラムのミラーリング方法をここで説明しています：
+>> ShadowOfHarbringer が bitcoin.org のウェブサイトとフォーラムのミラーリング方法をここで説明しています：
 >> http://www.bitcoin.org/smf/index.php?topic=2026.msg30043#msg30043
 >>
 >> この方法に従って、パスワードハッシュを含むデータベースをサーバーを持つ信頼できるコミュニティメンバーに預けるべきでしょうか？
@@ -57,7 +57,7 @@ translationStatus: complete
 <!-- speaker: Gavin Andresen -->
 <!-- tone-skip -->
 >> もう一つの選択肢は、
->> > バックアップをPGPで暗号化して複数の場所に保管することです。
+>> > バックアップを PGP で暗号化して複数の場所に保管することです。
 >
 > そちらの方が賢明だ。日次バックアップを ... どこか ... へ複製するのが、やるべきことのように思える。妥当な大きさ ( 1 ギガバイト未満 ) なら、 Amazon S3 の保存・帯域費用は私が喜んで負担する。
 <!-- /tone-skip -->

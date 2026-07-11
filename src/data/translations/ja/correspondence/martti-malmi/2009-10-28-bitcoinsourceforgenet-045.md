@@ -43,14 +43,14 @@ quotes:
 <!-- tone-skip -->
 > Linux への移植がしたくてうずうずしている？一度やってしまうと、テストとビルドの作業量が倍になるから、軽々しく決められることではない。ただ、Liberty の Wine クラッシュは心配だ。
 >
-> できるだけ移植性を高めるようにして、Windowsの呼び出しの代わりに標準Cを使う
-> ようにしてきた。スレッド処理は_beginthreadで、標準Cライブラリの一部だ。
-> wxWidgetsにはwxCriticalSectionがあるので使える。ソケットのコードはsend/recv
-> で、MicrosoftがBSDからソケットを移植したのでUnixと同じだと思う。ソケットは
+> できるだけ移植性を高めるようにして、Windows の呼び出しの代わりに標準 C を使う
+> ようにしてきた。スレッド処理は_beginthread で、標準 C ライブラリの一部だ。
+> wxWidgets には wxCriticalSection があるので使える。ソケットのコードは send/recv
+> で、Microsoft が BSD からソケットを移植したので Unix と同じだと思う。ソケットは
 > 直接制御する必要があり、抽象化レイヤーの裏に置くのは良い考えではない。
-> wxWidgetsはクロスプラットフォームのサポート関数を探すのに良い場所だ。
-> できれば#ifdefだらけのコードは避けたい。複数回使われるものはutil.cppの
-> 関数にして、その中に#ifdefを入れる形がいいだろう。
+> wxWidgets はクロスプラットフォームのサポート関数を探すのに良い場所だ。
+> できれば#ifdef だらけのコードは避けたい。複数回使われるものは util.cpp の
+> 関数にして、その中に#ifdef を入れる形がいいだろう。
 <!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->

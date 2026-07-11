@@ -32,9 +32,9 @@ quotes:
 <!-- speaker: Satoshi Nakamoto -->
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> まだ私のJSON-RPCサーバーを他のものでテストしていない。もしテストしたら、結果を教えてほしい。Pythonを使っているのか？
+> まだ私の JSON-RPC サーバーを他のものでテストしていない。もしテストしたら、結果を教えてほしい。Python を使っているのか？
 >
-> Linux版をGTKなしで動作させるのは別の作業になる。
+> Linux 版を GTK なしで動作させるのは別の作業になる。
 <!-- /tone-skip -->
 
 <!-- speaker: Martti Malmi -->
