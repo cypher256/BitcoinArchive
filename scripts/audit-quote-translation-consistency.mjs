@@ -215,7 +215,17 @@ function normaliseParagraph(para) {
     .map((line) => line.replace(/^(>+\s*)+/, ''))
     .join(' ')
     .replace(/<!--[\s\S]*?-->/g, ' ')
-    .replace(/`[^`\n]*`/g, ' ')
+    // <br> tags are line-layout markup owned by the renderer; their
+    // presence must not register as divergence of any kind (0605 skip
+    // class "`<br>` の有無は触らない").
+    .replace(/<br\s*\/?>/gi, ' ')
+    // Keep inline-code CONTENT (previously blanked). Blanking made a
+    // quote that renders a token as `-4way` lose the token while the
+    // sibling entry that renders it as 「-4way」 kept it — a guaranteed
+    // false "wording divergence". Emphasis characters inside the code
+    // span are dropped so `*ptr`-style content cannot interact with
+    // the emphasis-marker normalisation below.
+    .replace(/`([^`\n]*)`/g, (m, inner) => ' ' + inner.replace(/[*_]/g, '') + ' ')
     .replace(/(\S)\s*([*_])\s*(\S)/g, '$1$2$3')
     .replace(/\s+/g, ' ')
     .trim();
@@ -261,7 +271,76 @@ function normaliseJaWidth(s) {
     // requires a half-width space between two CJK characters, so collapse them
     // for comparison purposes only. (The orthographic fix happens in the
     // entries themselves under `check-ja-spacing`.)
-    .replace(/([ぁ-んァ-ヶ一-龯々ー])\s+([ぁ-んァ-ヶ一-龯々ー])/g, '$1$2');
+    .replace(/([ぁ-んァ-ヶ一-龯々ー])\s+([ぁ-んァ-ヶ一-龯々ー])/g, '$1$2')
+    // Inline kagi-kakko around a pure-ASCII token vs a code span of the
+    // same token (「-4way」 ⇄ `-4way`) is presentation, not wording —
+    // the 0605 triage lists "code span vs 「」" as a skip class. Fold
+    // the brackets away in the WIDTH form only, so the pair degrades
+    // to visual-only instead of reporting as wording divergence.
+    .replace(/「([\x20-\x7E]+)」/g, '$1')
+    // Full-width vs half-width colon (：⇄ ": ") is the 0605 skip class
+    // "コロン全半角のみ"; fold both to a bare half-width colon.
+    .replace(/：/g, ':')
+    .replace(/:\s+/g, ':')
+    // CJK ↔ ASCII-punctuation boundary spacing (…は .../wp-admin/ vs
+    // …は.../wp-admin/) — same orthographic axis as the JA-ASCII
+    // boundary fold above, extended to punctuation-initial ASCII runs.
+    .replace(/([ぁ-んァ-ヶ一-龯々ー])\s+([\x21-\x2f\x3a-\x40\x5b-\x60\x7b-\x7e])/g, '$1$2')
+    .replace(/([\x21-\x2f\x3a-\x40\x5b-\x60\x7b-\x7e])\s+([ぁ-んァ-ヶ一-龯々ー])/g, '$1$2')
+    // Ellipsis length (… vs ……) and a sentence-final 。 dropped inside
+    // an editorial 「…」 wrapper are typographic, not lexical. Fold both
+    // in the WIDTH form; they stay visible in the lex form and thus
+    // classify as visual-only.
+    .replace(/…{2,}/g, '…')
+    .replace(/。$/, '');
+}
+
+/**
+ * Translation-surviving anchor tokens: numbers, ALL-CAPS abbreviations,
+ * domain-ish dotted tokens, CamelCase identifiers, and alphanumeric
+ * identifiers containing a digit. These survive EN→JA translation, so
+ * they can arbitrate whether a lock-step EN[i] ↔ JA[i] pair is really
+ * the same content or a paragraph-alignment failure. Common English
+ * words are useless here (they never appear in the JA rendering) and
+ * are deliberately NOT anchors.
+ */
+function anchorTokens(s) {
+  const out = new Set();
+  for (const m of s.matchAll(/\d+(?:[.,]\d+)*/g)) out.add(m[0]);
+  for (const m of s.matchAll(/\b[A-Z]{2,10}\b/g)) out.add(m[0]);
+  for (const m of s.matchAll(/\b[\w-]*[a-z][\w-]*\.[a-z]{2,}[\w./-]*/gi)) out.add(m[0].toLowerCase());
+  for (const m of s.matchAll(/\b[A-Za-z]+(?:[A-Z][a-z]+)+\b/g)) out.add(m[0]);
+  for (const m of s.matchAll(/\b[A-Za-z][\w.-]*\d[\w.-]*\b/g)) out.add(m[0].toLowerCase());
+  return out;
+}
+
+/**
+ * Reject lock-step pairs whose anchor tokens are incompatible — the
+ * dominant source of false "divergence" reports was EN[i] pairing with
+ * an unrelated JA paragraph (extra/missing paragraphs shift the walk).
+ * Two-sided screen:
+ *  - if EN carries anchors and NONE appear in JA → misaligned;
+ *  - if JA carries ASCII numbers and NONE appear in EN → misaligned.
+ * When neither side has anchors the screen abstains (returns true).
+ * Known recall trade-off: a JA rendering that converts digits to kanji
+ * numerals (十年後 for "10 years") loses its anchor and the pair is
+ * dropped from the audit; accepted in favour of precision.
+ */
+function anchorsCompatible(enNorm, jaLex) {
+  const enAnchors = anchorTokens(enNorm);
+  if (enAnchors.size) {
+    const jal = jaLex.toLowerCase();
+    let hit = false;
+    for (const a of enAnchors) {
+      if (jal.includes(a.toLowerCase())) { hit = true; break; }
+    }
+    if (!hit) return false;
+  }
+  const jaNumbers = jaLex.match(/\d+(?:[.,]\d+)*/g) || [];
+  if (jaNumbers.length) {
+    if (!jaNumbers.some((n) => enNorm.includes(n))) return false;
+  }
+  return true;
 }
 
 function truncate(s) {
@@ -410,6 +489,7 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
     const jaLex = normaliseParagraph(jaRaw);
     const jaWidth = normaliseJaWidth(jaLex);
     if (!passesLengthEnvelope(enNorm, jaWidth)) continue;
+    if (!anchorsCompatible(enNorm, jaLex)) continue;
 
     if (!enParaMap.has(enNorm)) enParaMap.set(enNorm, []);
     enParaMap.get(enNorm).push({
@@ -551,6 +631,17 @@ for (const [enPhrase, occurrences] of enParaMap.entries()) {
     if (!occ.jaParaWidth) continue;
     if (!widthVariants.has(occ.jaParaWidth)) widthVariants.set(occ.jaParaWidth, []);
     widthVariants.get(occ.jaParaWidth).push(occ);
+  }
+  // Excerpt relationship: quoting a *shorter excerpt* of the same
+  // passage is editorially allowed (sentence-level shortening — 場面 A
+  // 抜粋短縮可). When every width variant is a prefix of the longest
+  // one, the variants agree on wording and differ only in excerpt
+  // length; do not report. Genuine wording differences never satisfy
+  // the prefix relation.
+  if (widthVariants.size > 1) {
+    const keys = [...widthVariants.keys()].sort((a, b) => b.length - a.length);
+    const longest = keys[0];
+    if (keys.every((k) => longest.startsWith(k))) continue;
   }
   if (widthVariants.size > 1) {
     divergentCount++;
