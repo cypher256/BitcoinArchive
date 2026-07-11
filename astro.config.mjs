@@ -12,6 +12,7 @@ import { remarkEditorialMarker } from './src/lib/remark-editorial-marker.mjs';
 import { remarkChartEmbed } from './src/lib/remark-chart-embed.mjs';
 import { rehypeNoAutolinkEmail } from './src/lib/rehype-no-autolink-email.mjs';
 import { rehypeMermaidLink } from './src/lib/rehype-mermaid-link.mjs';
+import { rehypeMermaidTimelineAxis } from './src/lib/rehype-mermaid-timeline-axis.mjs';
 import { rehypeMermaidWrapper } from './src/lib/rehype-mermaid-wrapper.mjs';
 import { rehypeMermaidThemer } from './src/lib/rehype-mermaid-themer.mjs';
 import { rehypeTableWrapper } from './src/lib/rehype-table-wrapper.mjs';
@@ -113,6 +114,11 @@ export default defineConfig({
           mindmap: { useMaxWidth: false },
         },
       }],
+      // Trim the hardcoded right-hand overhang of the timeline axis
+      // arrow (Mermaid draws it ~150-250px past the last section with
+      // no config knob). Measures each SVG and pulls the arrow in to a
+      // 50px lead — symmetric with the left margin. Timeline-only.
+      rehypeMermaidTimelineAxis,
       // Wrap Mermaid SVG nodes in <a xlink:href> based on `%% link: URL`
       // comments in the source. See plugin header for the full design.
       [rehypeMermaidLink, {}],
