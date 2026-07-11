@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin's ownership map: ETFs, treasuries, and nation-states — how far from \"no controlling entity\""
+title: "Who are the whales? The map of the 21 million and the holders without names"
 date: 2026-07-09T00:00:00Z
 type: "analysis"
 source: "bitcointreasuries"
@@ -9,7 +9,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Satoshi's ~1.1M BTC have barely moved since 2010. Public companies, spot ETFs, and nation-states built stacks of their own. A sourced map of who holds the 21 million, and how close the gap has become."
+description: "Satoshi's ~1.1M BTC sit still while companies, ETFs, and nation-states build stacks of their own. A sourced map of who holds the 21 million — and why the biggest whales still have no names."
 isSatoshi: false
 tags:
   - "analysis"
@@ -37,10 +37,26 @@ secondarySources:
     url: "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/"
   - name: "TRM Labs — H1 2026 Crypto Hacks"
     url: "https://www.trmlabs.com/resources/blog/h1-2026-crypto-hacks-reach-record-high-as-losses-fall-below-usd-1-billion"
+  - name: "Glassnode — The Shrimp Supply Sink: Revisiting the Distribution of Bitcoin Supply"
+    url: "https://research.glassnode.com/bitcoin-supply-distribution-revisited/"
+    note: "Entity cohort thresholds; whale totals as of March 2023."
+  - name: "Whale Alert — Whales"
+    url: "https://whale-alert.io/whales.html"
+    note: "Public posting thresholds for Bitcoin transfers."
+  - name: "Mt. Gox Rehabilitation Trustee — Repayment announcement (June 24, 2024)"
+    url: "https://www.mtgox.com/img/pdf/20240624_announcement_en.pdf"
+  - name: "CoinDesk — Satoshi-Era Bitcoin Whale Moves Final $4.8B to Galaxy Digital"
+    url: "https://www.coindesk.com/markets/2025/07/18/satoshi-era-bitcoin-whale-moves-final-48b-to-galaxy-digital-likely-prepping-sale"
+    note: "The July 2025 movement of ~80,000 BTC dormant since 2011."
+  - name: "Harrigan & Fretter — The Unreasonable Effectiveness of Address Clustering"
+    url: "https://arxiv.org/abs/1605.06369"
+    note: "Multi-input heuristic, the Mt. Gox mega-cluster, and the absence of ground truth."
 relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
   - aftermath/2020-07-20-whale-alert-satoshi-fortune
+  - aftermath/2010-07-06-anonymity-and-pseudonymity
+  - forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025
 translationStatus: complete
 ---
 
@@ -118,6 +134,18 @@ Russia does not appear in this table. Its seizure-derived holdings are estimated
 Inside "individuals & unclassified" sit holdings that cannot be named. As of July 2025, Chainalysis estimated on-chain balances held directly by illicit entities at about $15 billion — and about $75 billion once wallets downstream of them are included. No BTC-denominated count has been published, and a dollar-denominated balance swells with the bitcoin price alone.
 
 North Korea (Lazarus Group) is counted in flows, not balances. Chainalysis's lower-bound estimate puts cumulative theft at $6.75 billion through the end of 2025 — $2.02 billion in 2025 alone, most of it the ~$1.5 billion Bybit incident in February — with more than $600 million added in the first half of 2026. The distinction matters: this is not an amount currently held. Most of what was stolen was denominated in Ether and stablecoins, laundering and cash-out are fast, and no published estimate isolates what remains as a bitcoin balance. A cumulative $6.75 billion cannot be placed on a map of the 21 million as a holding.
+
+## The whales — the named and the nameless
+
+"Whale" has a working definition in the analytics industry. Glassnode counts whales as clustered entities holding 1,000 BTC or more, exchange balances excluded, at the top of a scale that starts at shrimp (under 1 BTC) and climbs through crab, octopus, fish, dolphin, and shark to whale (1,000–5,000 BTC) and humpback (over 5,000). By its March 2023 estimate, entities above 1,000 BTC held about 6.64 million coins — roughly a third of circulating supply. The unit is the entity, not the address: one holder controls many addresses, so analytics firms bundle addresses with clustering algorithms before counting anything.
+
+Every named holder in the sections above is a whale by that measure, and nearly every name rests on evidence from outside the chain: Strategy's number comes from its SEC filings, IBIT's from the fund's own reports, government balances from forfeiture records. On-chain evidence alone has produced few names. The two best-established are Satoshi, identified not by any disclosure but by the Patoshi mining pattern in the earliest blocks, and the Mt. Gox bankruptcy estate, whose roughly 142,000 BTC were mapped in court-supervised proceedings before repayments began in July 2024.
+
+The rest of the whale pool has no name attached. When a headline reads "a whale bought" or "a whale sold," the source is usually Whale Alert, which posts large transfers to social media — for Bitcoin, above $50 million between known addresses and $100 million for unknown ones — and names the sender and receiver only when it recognizes them, which in practice means exchanges. Beyond those labels, everything is inference. Clustering rests chiefly on the assumption that all inputs of one transaction share one owner — a linkage [the whitepaper itself conceded](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) in its privacy section — and since no ground-truth record of who owns what exists, the accuracy of the clustering cannot itself be measured. The cautionary example is Mt. Gox: the chain's largest cluster, more than ten million addresses, was initially mis-merged by that very assumption because the exchange once let users import their own private keys.
+
+July 2025 showed the scale of what remains nameless. A holder inactive since April 2011 moved about 80,000 BTC through Galaxy Digital over two weeks; Arkham's blockchain data traced every step in real time, and the final tranche alone was reported at $4.8 billion — yet no tracker has put a name on the owner. Fourteen years of silence ended in full public view, pseudonymously.
+
+None of this is a defect in the trackers. It is the structure [Satoshi warned about in July 2010](/BitcoinArchive/entries/aftermath/2010-07-06-anonymity-and-pseudonymity/): Bitcoin is not anonymous but pseudonymous — the history is public, the identities are not, and analysis can sometimes bridge the gap. [A forum post the following day](/BitcoinArchive/entries/forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025/) stated the transparent half plainly: "The history of a coin is publicly available. Anyone can see the flow of BitCoins from address to address." The map on this page is drawn inside that structure. A whale gets a name when it identifies itself — a filing, a court docket — or when analysis and circumstance close the gap from outside. Until then it sits in the map's largest cell: visible in every movement, named in none.
 
 ## The distance from "no controlling entity"
 

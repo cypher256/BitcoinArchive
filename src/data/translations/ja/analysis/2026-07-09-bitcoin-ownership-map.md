@@ -1,5 +1,5 @@
 ---
-title: "誰がビットコインを握っているのか ― ETF・企業財務・国家、分散の理念との距離"
+title: "クジラは誰か ― 2100 万枚の地図と、名前のない大口"
 date: 2026-07-09T00:00:00Z
 type: "analysis"
 source: "bitcointreasuries"
@@ -9,7 +9,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシの約 110 万 BTC はほぼ動かないまま、上場企業・現物 ETF・国家が保有を積み上げた。2100 万枚の現在の地図を出典付きの数字で描き、二層の非中央集権のいまを確かめる。"
+description: "サトシの約 110 万 BTC は動かないまま、企業・ETF・国家が積み上げた。2100 万枚の地図を出典付きで描き、最大級のクジラに今も名前が付かない理由を確かめる。"
 isSatoshi: false
 tags:
   - "analysis"
@@ -37,10 +37,26 @@ secondarySources:
     url: "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/"
   - name: "TRM Labs — H1 2026 Crypto Hacks"
     url: "https://www.trmlabs.com/resources/blog/h1-2026-crypto-hacks-reach-record-high-as-losses-fall-below-usd-1-billion"
+  - name: "Glassnode — The Shrimp Supply Sink: Revisiting the Distribution of Bitcoin Supply"
+    url: "https://research.glassnode.com/bitcoin-supply-distribution-revisited/"
+    note: "主体区分の閾値と、2023 年 3 月時点のクジラ合計。"
+  - name: "Whale Alert — Whales"
+    url: "https://whale-alert.io/whales.html"
+    note: "ビットコイン送金の公開投稿の閾値。"
+  - name: "Mt. Gox Rehabilitation Trustee — Repayment announcement (June 24, 2024)"
+    url: "https://www.mtgox.com/img/pdf/20240624_announcement_en.pdf"
+  - name: "CoinDesk — Satoshi-Era Bitcoin Whale Moves Final $4.8B to Galaxy Digital"
+    url: "https://www.coindesk.com/markets/2025/07/18/satoshi-era-bitcoin-whale-moves-final-48b-to-galaxy-digital-likely-prepping-sale"
+    note: "2011 年から休眠していた約 8 万 BTC の 2025 年 7 月の移動。"
+  - name: "Harrigan & Fretter — The Unreasonable Effectiveness of Address Clustering"
+    url: "https://arxiv.org/abs/1605.06369"
+    note: "複数入力ヒューリスティック、Mt. Gox 巨大クラスタ、正解データの不在。"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
   - aftermath/2020-07-20-whale-alert-satoshi-fortune
+  - aftermath/2010-07-06-anonymity-and-pseudonymity
+  - forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025
 translationStatus: complete
 ---
 
@@ -118,6 +134,18 @@ translationStatus: complete
 「個人・未分類」の中には、名前を付けようのない保有が混ざっている。Chainalysis は 2025 年 7 月時点で、違法な事業体が直接握るオンチェーン残高を約 150 億ドル、資金が移された先の下流ウォレットまで含めると約 750 億ドルと推定した。ビットコイン建ての枚数は公表されておらず、ドル建ての残高推定はビットコイン価格の上昇だけでも膨らむ。
 
 北朝鮮（Lazarus Group）は、残高ではなくフローで数えられている。Chainalysis の下限推定で、2025 年末までの累計窃取額は 67.5 億ドル。2025 年単年では 20.2 億ドルで、2 月の Bybit 事件の約 15 億ドルが最大を占める。2026 年上半期にはさらに 6 億ドル超が加わった。ここで区別が要る — この数字は「いま持っている量」ではない。盗まれた資金の多くはイーサリアムやステーブルコイン建てで、洗浄と現金化が速く、ビットコインの残高として残る分を切り出した公表推定は存在しない。累計 67.5 億ドルを「保有」として 2100 万枚の地図に置くことはできない。
+
+## クジラ ― 名前のある大口、名前のない大口
+
+「クジラ」という言葉には、分析業界での実務的な定義がある。Glassnode は取引所の残高を除き、1,000 BTC 以上を持つひとまとまりの主体をクジラと数える。目盛りはエビ（1 BTC 未満）に始まり、カニ・タコ・魚・イルカ・サメを経て、クジラ（1,000〜5,000 BTC）とザトウクジラ（5,000 BTC 超）で終わる。同社の 2023 年 3 月時点の推定では、1,000 BTC 超の主体が合計約 664 万枚 — 流通量のおよそ 3 分の 1 を握っていた。数える単位はアドレスではなく主体である。ひとりの保有者が多数のアドレスを使うため、分析各社はクラスタリングという推定でアドレス群を束ねてから数えている。
+
+ここまでの節に名前が出た保有者は、この定義ではすべてクジラにあたる。そして、その名前のほぼすべてはチェーンの外の証拠に立っている。Strategy の数字は SEC 開示から、IBIT はファンド自身の報告から、政府の残高は没収の記録から来ている。チェーン上の証拠だけで名前まで到達した例は少ない。最も確かな 2 件が、開示ではなく初期ブロックの採掘パターン（Patoshi）で特定されたサトシと、裁判所の監督下で約 14.2 万 BTC の帰属が整理され 2024 年 7 月に返済の始まった Mt. Gox の破産財団である。
+
+残りのクジラには名前が付いていない。「クジラが買った・売った」という見出しの情報源はたいてい Whale Alert で、同社は大口送金を SNS に投稿し（ビットコインでは既知アドレス間で 5,000 万ドル、未知アドレスで 1 億ドル以上）、送り手と受け手の名前は判明している場合 — 実務上はほぼ取引所 — にだけ表示する。そのラベルの先は、すべて推定である。クラスタリングの土台は「同じ取引の複数の入力は同じ所有者のものだ」という仮定で、この結び付きは[ホワイトペーパー自身がプライバシーの節で認めていた](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)。そして「誰が何を持つか」の正解データはどこにも存在しないから、クラスタリングの精度そのものを測ることができない。教訓として引かれるのが Mt. Gox である。チェーン最大の 1,000 万アドレス超のクラスタは、同取引所が利用者に秘密鍵の持ち込みを許していた時期があったせいで、まさにこの仮定が誤結合を起こしたものだった。
+
+名前のない側の規模を見せつけたのが 2025 年 7 月だった。2011 年 4 月から動いていなかった保有者が、2 週間かけて約 8 万 BTC を Galaxy Digital 経由で動かした。Arkham のチェーンデータは全行程をリアルタイムで捉え、最後の一括分だけで 48 億ドルと報じられた — それでも、この保有者に名前を付けられたトラッカーはいない。14 年の沈黙は、衆人環視の中で、仮名のまま終わった。
+
+これはトラッカーの欠陥ではなく、[サトシが 2010 年 7 月に警告した](/BitcoinArchive/ja/entries/aftermath/2010-07-06-anonymity-and-pseudonymity/)構造そのものである。ビットコインは匿名ではなく仮名 — 履歴は公開され、身元は公開されず、分析がときどきその間を橋渡しする。[その翌日のフォーラム投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025/)は、透明な側の半分をこう言い切っていた。「コインの履歴は公開されている。誰でもアドレスからアドレスへの BitCoin の流れを見ることができる」。このページの地図は、その構造の内側に描かれている。クジラに名前が付くのは、自ら名乗り出るとき — 開示、裁判 — か、分析と状況証拠が外から距離を詰めたときだけだ。それまでは地図の最大の区画に座り続ける。動きはすべて見えて、名前はどこにもない。
 
 ## 分散の理念との距離
 
