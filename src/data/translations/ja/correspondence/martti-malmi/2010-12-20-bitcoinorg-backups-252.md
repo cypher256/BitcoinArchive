@@ -69,7 +69,7 @@ translationStatus: complete
 > 8文字 = 25418の難易度
 >
 >
->>> もう一つの選択肢は
+>>> もう一つの選択肢は、
 >>> <!-- speaker: Martti Malmi -->
 >>>> バックアップをPGPで暗号化して複数の場所に保管することです。
 >>

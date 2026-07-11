@@ -50,6 +50,7 @@ quotes:
 >
 > <!-- quote: q2 -->
 > <!-- speaker: Satoshi Nakamoto -->
+>> <!-- audit:quote-skip -->
 >> この変更の理由は何だったのか？
 >>
 >> #if !wxUSE_UNICODE

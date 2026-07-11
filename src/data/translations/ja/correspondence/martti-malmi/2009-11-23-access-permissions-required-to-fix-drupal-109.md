@@ -51,10 +51,10 @@ translationStatus: complete
 > 「AllowOverride AuthConfig」の2番目のインスタンスを<br>
 > 「AllowOverride All」に変更
 >
-> 置き換え
 >  /etc/apache2/httpd.conf
 > を
 >  /home/maintenance/httpd.conf
+> に置き換え
 >
 > おそらくこの後 Apache の再起動が必要だ。 (apache2ctl graceful)
 

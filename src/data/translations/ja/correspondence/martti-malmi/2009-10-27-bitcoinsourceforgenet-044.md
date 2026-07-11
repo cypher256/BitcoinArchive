@@ -71,7 +71,7 @@ Linux への移植がしたくてうずうずしている？一度やってし�
 >>
 >> <!-- quote: q2 -->
 >> <!-- quote: q3 -->
->>> > bitcoin.sourceforge.netは今は正常に見える。SourceForgeが
+>>> > bitcoin.sourceforge.netは今は正常に見える。sourceforgeが何か
 >>
 >> 今は動作していない。
 >>
