@@ -287,17 +287,24 @@ function labelLines(body, meta) {
     let trimmed = line.trim();
 
     // --- Annotations ---
-    if (ANNOTATION_TONE_SKIP.test(trimmed)) {
+    // Annotations may live inside nested blockquotes with a `>`-prefix
+    // (`>>> <!-- speaker: NAME -->`), the form the quote-chain renderer
+    // and check-quotes already use. Strip the quote prefix before
+    // matching so prefixed annotations are honored here too — without
+    // this, nested speaker/tone markers were silently ignored and the
+    // nested lines fell back to the frontmatter author's tone rule.
+    const noQuotePrefix = trimmed.replace(/^(>+\s*)+/, '').trim();
+    if (ANNOTATION_TONE_SKIP.test(noQuotePrefix)) {
       toneSkip = true;
       labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'annotation' });
       continue;
     }
-    if (ANNOTATION_TONE_RESUME.test(trimmed)) {
+    if (ANNOTATION_TONE_RESUME.test(noQuotePrefix)) {
       toneSkip = false;
       labeled.push({ lineNum, text: line, speaker: null, skip: true, reason: 'annotation' });
       continue;
     }
-    const speakerMatch = trimmed.match(ANNOTATION_SPEAKER);
+    const speakerMatch = noQuotePrefix.match(ANNOTATION_SPEAKER);
     if (speakerMatch) {
       currentSpeaker = speakerMatch[1] === 'reset'
         ? ((normalizedAuthor && !EDITORIAL_TYPES.has(meta.type) && CHARACTER_RULES[normalizedAuthor]) ? normalizedAuthor : null)

@@ -225,7 +225,7 @@ function normaliseParagraph(para) {
     // false "wording divergence". Emphasis characters inside the code
     // span are dropped so `*ptr`-style content cannot interact with
     // the emphasis-marker normalisation below.
-    .replace(/`([^`\n]*)`/g, (m, inner) => ' ' + inner.replace(/[*_]/g, '') + ' ')
+    .replace(/`([^`\n]*)`/g, (m, inner) => ' ' + inner.replace(/[*]/g, '') + ' ')
     .replace(/(\S)\s*([*_])\s*(\S)/g, '$1$2$3')
     .replace(/\s+/g, ' ')
     .trim();
@@ -256,8 +256,8 @@ function normaliseJaWidth(s) {
       /(\d+)\s+(万|億|兆|円|台|個|つ|本|匹|枚|回|度|年|月|日|時|分|秒|歳|名|人|件|箇所|か所|か月|ヶ月|ヵ月|セント|ドル|バイト)/g,
       '$1$2',
     )
-    .replace(/\s+([、。「」『』（）：；])/g, '$1')
-    .replace(/([、。「」『』（）：；])\s+/g, '$1')
+    .replace(/\s+([、。「」『』（）：；？！—―])/g, '$1')
+    .replace(/([、。「」『』（）：；？！—―])\s+/g, '$1')
     // JA-ASCII boundary spacing — fold both「もし SHA-256」 and 「もしSHA-256」 to
     // the same normalised form so that the half-width-space convention enforced
     // by `check-ja-spacing` / `fix-ja-ascii-spacing` does not register as a
@@ -641,7 +641,8 @@ for (const [enPhrase, occurrences] of enParaMap.entries()) {
   if (widthVariants.size > 1) {
     const keys = [...widthVariants.keys()].sort((a, b) => b.length - a.length);
     const longest = keys[0];
-    if (keys.every((k) => longest.startsWith(k))) continue;
+    if (keys.every((k) => longest.startsWith(k)) ||
+        keys.every((k) => longest.endsWith(k))) continue;
   }
   if (widthVariants.size > 1) {
     divergentCount++;
