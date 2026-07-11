@@ -101,7 +101,7 @@ of truth; the role column below is a one-line pointer, not a restatement.
 | `audit-ja-naturalness.mjs` | JA prose naturalness (headless Claude per file) | `audit:ja-naturalness` |
 | `audit-ja-quote-consistency.mjs` | Divergent JA translations of the same EN quote | `audit:ja-quote-consistency` |
 | `audit-mermaid-contrast.mjs` | Mermaid label WCAG contrast (dev + Playwright) | `audit:mermaid-contrast` |
-| `audit-quote-translation-consistency.mjs` | Divergent JA wording of one EN passage (≥1 occurrence is a blockquote) | `audit:quote-translation-consistency` |
+| `check-quote-translation-consistency.mjs` | Divergent JA wording of one EN passage (≥1 occurrence is a blockquote) | `check:quote-translation-consistency` |
 | `audit-satoshi-pre-release-mentions.mjs` | Survey of Satoshi pre-release activity mentions | `audit:satoshi-pre-release-mentions` |
 | `audit-seo.mjs` | SEO / AIO / readability survey | `audit:seo` |
 | `audit-untranslated-ja-blockquotes.mjs` | JA blockquotes that look untranslated | `audit:untranslated-ja-blockquotes` |
@@ -139,9 +139,9 @@ breaks the build). `tool` = manual, run on demand — reusable, not spent.
 | `fix-ja-link-spacing.mjs` | Remove JA × JA spaces around markdown-link boundaries | tool |
 | `fix-ja-punct-spacing.mjs` | Remove half-width spaces stranded between JA chars incl. punctuation (、。「」) | tool |
 | `fix-ja-reply-titles.mjs` | Cascade JA forum reply titles from the starter (see STYLE_GUIDE.md) | tool |
-| `fix-quote-visual-divergence.mjs` | Fix visual-only JA quote divergence (audit-quote-translation-consistency category) | tool |
+| `fix-quote-visual-divergence.mjs` | Fix visual-only JA quote divergence (check-quote-translation-consistency category) | tool |
 | `generate-hero-banners.mjs` | Regenerate the entry-page hero backdrop (`public/images/hero-banners/atmosphere.jpg`) — one wide gradient+grain image shared by every entry (panned to a different crop per entry via `heroBannerPosition()` in `src/lib/heroBanner.ts`); only needs re-running when the design itself changes | tool |
-| `generate-quote-fix-candidates.mjs` | Build a quote-fix review queue from audit-quote-translation-consistency | tool |
+| `generate-quote-fix-candidates.mjs` | Build a quote-fix review queue from check-quote-translation-consistency | tool |
 | `generate-satoshi-timeline.mjs` | Generate Satoshi timeline data from `isSatoshi` entries | tool |
 | `scan-all-mermaid.mjs` | Survey every mermaid block across the corpus | tool |
 | `verify-rule-ab.mjs` | Verify fetch-replies rule A/B coverage | tool |

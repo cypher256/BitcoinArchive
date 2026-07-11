@@ -94,6 +94,7 @@ async function main() {
     ['check-source-duplication.mjs', '--strict'],
     ['check-halving-consistency.mjs'],
     ['check-quotes.mjs'],
+    ['check-quote-translation-consistency.mjs'],
     ['check-tweet-metadata.mjs'],
     ['check-duplicate-ids.mjs'],
     ['check-internal-links.mjs'],

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * audit-quote-translation-consistency.mjs
+ * check-quote-translation-consistency.mjs
  *
  * Detect cases where the same English source passage has been rendered
  * into Japanese with divergent wording across entries, when at least
@@ -91,10 +91,11 @@
  *     normalisation. A phrase split across paragraph boundaries in
  *     one entry but inline in another is not matched. This is a
  *     deliberate noise vs. recall trade-off.
- *   - `audit:` placement (not `check:`) is intentional. Promotion to
- *     `check:` (= build-blocking) requires (a) a real alignment
- *     mechanism beyond length envelope, and (b) demonstrated low
- *     false-positive rate via sampling. See plan file under temp/.
+ *   - Promoted from `audit:` to `check:` (= build-blocking) on
+ *     2026-07-11 after the promotion preconditions were met: (a) the
+ *     anchor-token screen + per-paragraph audit:quote-skip markers as
+ *     the alignment mechanism, (b) all false-positive classes folded
+ *     and the corpus brought to zero findings on both axes.
  *
  * Exit code: 0 on no divergence, 1 on any divergence detected.
  */
@@ -356,15 +357,34 @@ function anchorsCompatible(enNorm, jaLex) {
  */
 function normaliseJaLex(s) {
   return s
+    // Accepted presentation axis (0605 skip class, reaffirmed
+    // 2026-07-11): rendering the same ASCII token as `code` vs
+    // 「kagi-kakko」. Fold FIRST (padded like the code-span fold in
+    // normaliseParagraph) so the whitespace folds below see both
+    // styles in the same shape.
+    .replace(/「([\x20-\x7E]+)」/g, ' $1 ')
     .replace(/([ぁ-んァ-ヶ一-龯々ー])\s+([ぁ-んァ-ヶ一-龯々ー])/g, '$1$2')
     // Wrap points adjacent to full-width punctuation leave the same
     // line-join artefact (「〜した。 UI は〜」); JA prose never places a
     // half-width space around full-width punctuation, so this axis is
     // also line-wrap residue, not a deliberate visual choice. JA-ASCII
-    // boundary spacing, digit width/spacing, colon width, and quoting
-    // style deliberately survive this form.
-    .replace(/\s+([、。「」『』（）：；？！—―])/g, '$1')
-    .replace(/([、。「」『』（）：；？！—―])\s+/g, '$1');
+    // boundary spacing, digit width/spacing, and colon width
+    // deliberately survive this form.
+    .replace(/\s+([、。「」『』（）：；？！—―…])/g, '$1')
+    .replace(/([、。「」『』（）：；？！—―…])\s+/g, '$1')
+    // CJK ↔ ASCII-punctuation boundaries: the half-width-space
+    // convention governs alphanumeric boundaries only, and JA prose
+    // does not deliberately space before ASCII punctuation runs — a
+    // space here is line-wrap residue (type-1), so fold it. CJK ↔
+    // alphanumeric boundaries deliberately survive.
+    .replace(/([ぁ-んァ-ヶ一-龯々ー])\s+([\x21-\x2f\x3a-\x40\x5b-\x60\x7b-\x7e])/g, '$1$2')
+    .replace(/([\x21-\x2f\x3a-\x40\x5b-\x60\x7b-\x7e])\s+([ぁ-んァ-ヶ一-龯々ー])/g, '$1$2')
+    // Remaining accepted axes: sentence-final 。 dropped inside an
+    // editorial 「…」 wrapper, and ellipsis run length.
+    .replace(/…{2,}/g, '…')
+    .replace(/。$/, '')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function truncate(s) {

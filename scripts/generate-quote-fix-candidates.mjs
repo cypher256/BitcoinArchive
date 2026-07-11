@@ -3,7 +3,7 @@
  * Generate quote-translation fix candidates.
  *
  * This script intentionally does not modify content files. It runs
- * audit-quote-translation-consistency.mjs, finds groups where exactly one
+ * check-quote-translation-consistency.mjs, finds groups where exactly one
  * body translation is available, and writes a review queue to:
  *
  *   temp/quote-fix-candidates.md
@@ -25,7 +25,7 @@ mkdirSync(TEMP, { recursive: true });
 
 function runCheck() {
   try {
-    execSync(`node scripts/audit-quote-translation-consistency.mjs > ${JSON.stringify(CHECK_RAW_PATH)} 2>&1`, {
+    execSync(`node scripts/check-quote-translation-consistency.mjs > ${JSON.stringify(CHECK_RAW_PATH)} 2>&1`, {
       cwd: ROOT,
       stdio: 'ignore',
     });
