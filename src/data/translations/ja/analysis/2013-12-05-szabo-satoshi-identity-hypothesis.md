@@ -77,7 +77,7 @@ translationStatus: complete
 
 ## 1. 証拠
 
-サボがサトシ・ナカモトの正体だ。ビットコインに関する公的記録上のやり取りは — [2008 年 4 月の Bit Gold 実装支援を求める Unenumerated コメント](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)も、[2011 年 5 月「ナカモトは私の設計にあった重大なセキュリティ上の欠陥を改善した」と認めたブログ投稿](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/)も — 仮名を維持するための演出だった。サボは開発期間（2007 年央以降）からサトシの撤退（2011 年）までサトシ・ナカモトとして活動し、Unenumerated ブログでの公的執筆活動を公開記録上のデコイとして並行させていた。
+サボがサトシ・ナカモトの正体だ。ビットコインに関する公的記録上のやり取りは — [2008 年 4 月の Bit Gold 実装支援を求める Unenumerated コメント](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)も、[2011 年 5 月「ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善したのだ」と認めたブログ投稿](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/)も — 仮名を維持するための演出だった。サボは開発期間（2007 年央以降）からサトシの撤退（2011 年）までサトシ・ナカモトとして活動し、Unenumerated ブログでの公的執筆活動を公開記録上のデコイとして並行させていた。
 
 最初の本格的な文体計量的定式化は、[匿名のブロガー Skye Grey による 2013 年 12 月の LikeInAMirror.com 記事「サトシ・ナカモトは（おそらく）ニック・サボである」と TechCrunch による 2013 年 12 月 5 日の主流報道](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)。さらに [2014 年 4 月のアストン大学法言語学センターによる文体計量研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/) — CoinDesk と ScienceDaily が報じた — により定着が進んだ。
 

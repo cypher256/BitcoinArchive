@@ -52,7 +52,7 @@ translationStatus: complete
 2008 年 8 月 20 日、アダム・バックの受信箱に 1 通のメールが届いた。送信者は自らを[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と名乗り、近く公開する「新しい電子キャッシュシステム」の論文向けに Hashcash の引用形式を尋ねた。11 年前の 1997 年 3 月、バックはサイファーパンクメーリングリストで [Hashcash を発表](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/)していた。翌日、バックは引用情報を返し、続けて[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の [b-money](/BitcoinArchive/ja/entries/threads/emails/cypherpunks/b-money-protocol/) を紹介した。同日、サトシは返信した:
 
 <!-- speaker: Satoshi Nakamoto -->
-> 「ありがとう。b-moneyは読んだことがなかったが、私のアイデアはまさにその出発点から始まっている。私のシステムが追加した主なものは、分散タイムスタンプサーバーを支えるためにプルーフ・オブ・ワークを使うことだ。」
+> 「ありがとう。b-money は読んだことがなかったが、私のアイデアはまさにその出発点から始まっている。私のシステムが追加した主なものは、分散タイムスタンプサーバーを支えるためにプルーフ・オブ・ワークを使うことだ。」
 
 この返信は[専用のエントリー](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)で詳しく扱われており、サトシがビットコインの設計に独自に到達したことを示す一次資料の一つとして読まれている。
 

@@ -38,7 +38,7 @@ translationStatus: complete
 2010年2月5日、[NewLibertyStandard](/BitcoinArchive/ja/participants/newlibertystandard/) が BitcoinTalk フォーラムでこう提案した。
 
 <!-- quote: q1 -->
-> 「タイバーツの通貨記号 ฿ を公式のビットコイン通貨記号として、BTC を公式のビットコイン三文字通貨コードとして採用することを提案する」
+> 「ビットコインの公式通貨シンボルとして、タイバーツのシンボル『฿』を採用することを提案します。公式の 3 文字通貨コードは『BTC』とします」
 
 この提案は初期コミュニティメンバーの間で議論を呼び、バーツ記号（฿）をタイの通貨と共有することで混乱が生じるのではないかという懸念もあった。
 

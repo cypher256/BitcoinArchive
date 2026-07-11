@@ -44,7 +44,7 @@ translationStatus: complete
 
 <!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
-> ありがとう、b-money のページは知らなかったが、私のアイデアはまさにその点から始まっている。
+> ありがとう。b-money は読んだことがなかったが、私のアイデアはまさにその出発点から始まっている。
 
 <!-- speaker: narrator -->
 この一文は、[サイファーパンクからの独立した到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)と[ビットコインの設計系譜分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)の双方を支える一次資料の一つである。サトシは独自に設計空間に到達しており、b-money の存在は前日のアダム・バックの紹介を通じて初めて知った。

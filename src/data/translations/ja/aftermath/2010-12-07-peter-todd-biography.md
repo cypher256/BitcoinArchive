@@ -56,7 +56,7 @@ translationStatus: complete
 
 2010 年 12 月 7 日、BitcoinTalk に「retep」という名前の新しいアカウントが登録された。3 日後、このアカウントの 2 番目の投稿は[サトシ・ナカモトのスレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/) —— トランザクション置換手数料に関するもの —— に返信した:
 
-> 「もちろん、正確に言えば、2 番目のトランザクションにトランザクション手数料がある場合、入力と出力は *正確には* 一致しない」
+> 「もちろん、正確に言えば、二つ目のトランザクションに手数料がある場合、入力と出力は*正確には*一致しない」
 
 2 日後、[サトシは最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)を行って沈黙した。数年後、このアカウントのユーザー名は Peter Todd に変更された。Bitcoin Core 開発者のグレゴリー・マクスウェルは [Hacker News でこう書いている](https://news.ycombinator.com/item?id=41784567) —— 「retep が peter の逆綴りだと気づくのに 10 年近くかかった」。
 

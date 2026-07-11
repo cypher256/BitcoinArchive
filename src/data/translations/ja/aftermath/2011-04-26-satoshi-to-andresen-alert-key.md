@@ -58,7 +58,7 @@ translationStatus: complete
 
 <!-- tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
-> 他のことに取り組むことにした。おそらく連絡が取れなくなるだろう。
+> 他のことに取り組むことにした。おそらく連絡が取れなくなる。
 
 <!-- /tone-skip -->
 

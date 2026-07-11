@@ -85,7 +85,7 @@ translationStatus: complete
 | サトシの発言 | 一次資料 | 日付 | 状態 |
 |---|---|---|---|
 | 「あなたのアイデアを完全に動作するシステムに拡張する論文を公開する準備をしている」 | [→ アダム・バック 2008-08-20](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) | 2008-08-20 | 著者性と意図の自己帰属。後続のホワイトペーパー公開で確定 |
-| 「b-money のページは知らなかったが、私のアイデアはまさにその点から始まっている」 | [→ アダム・バック 2008-08-21](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/) | 2008-08-21 | 開発期間中の特定の知識ギャップの自己開示 |
+| 「b-money は読んだことがなかったが、私のアイデアはまさにその出発点から始まっている」 | [→ アダム・バック 2008-08-21](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/) | 2008-08-21 | 開発期間中の特定の知識ギャップの自己開示 |
 | 「あなたの b-money ページを非常に興味深く読んだ」 (バックの紹介後) | [→ ウェイ・ダイ 2008-08-22](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) | 2008-08-22 | 上の行と内部的に整合 |
 | 「コーディングしながらこの 1 年半でそれらの細かい詳細をすべて検討してきた」 | [cryptography メーリングリスト 2008-11-17](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/) | 2008-11-17 | 約 18 か月のコーディング期間を述べる。逆算するとコーディング開始は 2007 年半ば頃。サトシが後に語った「2007 年から」「リリース前に 2 年間の開発」はこの同じリリース前作業をより広い範囲で語ったもの。作業順序 (コードが先、論文が後) は §2.2 で別途整理 |
 | 「ビットコインと呼ぶ新しいオープンソース P2P 電子キャッシュシステムを開発した。完全に分散化されている、なぜならすべてが信頼ではなく暗号学的証明に基づいているからだ」 | [P2P Foundation フォーラム](/BitcoinArchive/ja/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-11-bitcoin-open-source-implementation/) | 2009-02-11 | 一人称による公的著者性の表明。プロジェクトを制度的信頼に対立する位置に置く |
@@ -107,7 +107,7 @@ translationStatus: complete
 | 「あといくつかのことを行ったら、バトンを渡す予定だ」 | [BitcoinTalk topic-2228、最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) | 2010-12-12 | BitcoinTalk における最後の公開投稿。4 か月後の私的離脱の前触れ |
 | 「他のことに取り組むことにした。[ギャビン](/BitcoinArchive/ja/participants/gavin-andresen/)たちに任せれば、安心だ」 | [→ マイク・ハーン 2011-04-23](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) | 2011-04-23 | 撤退表明 |
 | 「私のことを謎めいた影の人物として話し続けるのはやめてほしい、報道はそれを海賊通貨という切り口に変えてしまう」 | [→ ギャビン・アンドレセン 2011-04-26](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) | 2011-04-26 | 自己認識の表明。「謎めいた影の人物」という枠組みの拒否 |
-| 「他のことに取り組むことにした、しばらく連絡が取れなくなるだろう」 | [→ ギャビン・アンドレセン 2011-04-26](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) | 2011-04-26 | 最終的な撤退表明 |
+| 「他のことに取り組むことにした。おそらく連絡が取れなくなる」 | [→ ギャビン・アンドレセン 2011-04-26](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) | 2011-04-26 | 最終的な撤退表明 |
 
 ### 1.5 真正性議論あり
 
@@ -122,7 +122,7 @@ translationStatus: complete
 | # | 日付 (UTC) | 宛先または媒体 | 時期・順序に関する発言 | この発言が直接確定すること (解釈ではなく発話事実) |
 |---|---|---|---|---|
 | D1 | 2008-08-20 | → [アダム・バック](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back-hashcash-citation/) | 「あなたの Hashcash 論文を参考文献として引用する論文をリリースする準備をしている」 + 「C++ 実装もほぼ完成しており、オープンソースとしてリリース予定だ」 | 2008 年 8 月 20 日時点の表現: 論文公開準備中、 C++ 実装は「ほぼ完成」 |
-| D2 | 2008-08-21 | → [アダム・バック](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) | 「ありがとう、 b-money のページは知らなかったが、私のアイデアはまさにその地点から始まっている」 | 2008 年 8 月 21 日時点の知識状態: b-money はバックの紹介まで未知。設計の出発点は「まさにその地点」と表現 |
+| D2 | 2008-08-21 | → [アダム・バック](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money/) | 「ありがとう。b-money は読んだことがなかったが、私のアイデアはまさにその出発点から始まっている」 | 2008 年 8 月 21 日時点の知識状態: b-money はバックの紹介まで未知。設計の起点を「まさにその出発点」と表現 |
 | D3 | 2008-08-22 | → [ウェイ・ダイ](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) | 「あなたの b-money ページを非常に興味深く読んだ。あなたのアイデアを完全に動作するシステムに拡張した論文を公開する準備をしている」 | 2008 年 8 月 22 日時点の表現: 自身の作業を「完全に動作するシステム」と記述 |
 | D4 | 2008-10-31 | [cryptography メーリングリスト (告知投稿)](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) | 「新しい電子キャッシュシステムに取り組んでいる。完全な P2P 方式で、信頼された第三者を必要としない」 | 最初の公開告知。英文原文は現在完了形 "I've been working on"。過去から続く作業を含意するが、期間は明示しない |
 | D5 | 2008-11-09 | → [ハル・フィニー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/) | 「ご質問をありがたく思う。実は私はこれを逆の順序で行った。すべての問題を解決できると自分を納得させるために、まずすべてのコードを書き、その後論文を書いた」 | 作業順序: コードを先に書き、その後で論文 |
@@ -181,7 +181,7 @@ D1〜D11 のいずれも確定させないこと: 月単位の精度でのコー
 
 - 完了の表明: リーダーシップは委譲された、プロジェクトは安全な手にある
 - 具体的な要望: 私を「謎めいた影の人物」として描かないでほしい
-- 前向きな表明: 「他のことに取り組むことにした、しばらく連絡が取れなくなるだろう」
+- 前向きな表明: 「他のことに取り組むことにした。おそらく連絡が取れなくなる」
 
 議論ありの 2014 年 P2P Foundation 投稿は唯一の曖昧な追加 — 簡潔で、文脈に応じた発言（Newsweek のドリアン記事への反応）であり、元のプロフィール認証情報がまだ使われていた場合に限ってサトシ本人による発言となる。
 
