@@ -343,6 +343,30 @@ function anchorsCompatible(enNorm, jaLex) {
   return true;
 }
 
+/**
+ * JA lex normalisation: `normaliseParagraph` plus removal of whitespace
+ * between two CJK characters. Hand-wrapped correspondence bodies leave
+ * a stray half-width space (or newline) at every wrap point; Japanese
+ * prose never places a space between two CJK characters, browsers
+ * collapse CJK-CJK segment breaks to zero width, and STYLE_GUIDE_JA § 4
+ * permanently excludes this axis from cross-entry visual consistency
+ * (2026-07-11). Folding it here keeps the visual-only report focused on
+ * reader-visible axes (JA-ASCII boundary spacing, digit width,
+ * punctuation style).
+ */
+function normaliseJaLex(s) {
+  return s
+    .replace(/([ぁ-んァ-ヶ一-龯々ー])\s+([ぁ-んァ-ヶ一-龯々ー])/g, '$1$2')
+    // Wrap points adjacent to full-width punctuation leave the same
+    // line-join artefact (「〜した。 UI は〜」); JA prose never places a
+    // half-width space around full-width punctuation, so this axis is
+    // also line-wrap residue, not a deliberate visual choice. JA-ASCII
+    // boundary spacing, digit width/spacing, colon width, and quoting
+    // style deliberately survive this form.
+    .replace(/\s+([、。「」『』（）：；？！—―])/g, '$1')
+    .replace(/([、。「」『』（）：；？！—―])\s+/g, '$1');
+}
+
 function truncate(s) {
   if (s.length <= MAX_DISPLAY_LENGTH) return s;
   return s.slice(0, MAX_DISPLAY_LENGTH) + '…';
@@ -486,7 +510,7 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
     if (!/[a-zA-Z]/.test(enNorm)) continue;
     if (isHeading(enNorm)) continue;
 
-    const jaLex = normaliseParagraph(jaRaw);
+    const jaLex = normaliseJaLex(normaliseParagraph(jaRaw));
     const jaWidth = normaliseJaWidth(jaLex);
     if (!passesLengthEnvelope(enNorm, jaWidth)) continue;
     if (!anchorsCompatible(enNorm, jaLex)) continue;
@@ -536,7 +560,7 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
       const enNorm = normaliseParagraph(enText);
       if (enNorm.length < MIN_PHRASE_LENGTH) return;
       if (!/[a-zA-Z]/.test(enNorm)) return;
-      const jaLex = normaliseParagraph(jaText);
+      const jaLex = normaliseJaLex(normaliseParagraph(jaText));
       const jaWidth = normaliseJaWidth(jaLex);
       if (!passesLengthEnvelope(enNorm, jaWidth)) return;
       if (!enParaMap.has(enNorm)) enParaMap.set(enNorm, []);
@@ -570,7 +594,7 @@ for (const enPath of walkMarkdown(EN_ROOT)) {
       if (isBlockquoteParagraph(enParaRaw)) continue;
       if (isBlockquoteParagraph(jaParaRaw)) continue;
       const enParaNorm = normaliseParagraph(enParaRaw);
-      const jaParaLex = normaliseParagraph(jaParaRaw);
+      const jaParaLex = normaliseJaLex(normaliseParagraph(jaParaRaw));
       if (!enParaNorm || !jaParaLex) continue;
       if (isHeading(enParaNorm)) continue;
       // Lower per-sentence floor — the connector forms below
