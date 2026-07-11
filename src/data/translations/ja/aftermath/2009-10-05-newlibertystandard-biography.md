@@ -60,6 +60,6 @@ NewLibertyStandard はウェブサイト（newlibertystandard.wikifoundry.com）
 Bitcoin 0.2 のリリースアナウンス（2009年12月）で、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はこう書いた。
 
 <!-- speaker: Satoshi Nakamoto -->
-> 「マルッティ（sirius-m）の開発作業すべて、そしてNew Liberty StandardのLinuxバージョンのテストへの協力に深く感謝する」
+> 「すべての開発作業をしてくれたマルッティ (sirius-m)に、そして Linux バージョンのテストを手伝ってくれた New Liberty Standard に、心より感謝する」
 
 この言及は、NewLibertyStandard をサトシが個人的に貢献を認めた少数の人物グループに位置付けている。

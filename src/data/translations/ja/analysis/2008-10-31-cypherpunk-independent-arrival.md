@@ -147,14 +147,14 @@ translationStatus: complete
 その後の 2 つの発言が、この像をさらに広げる。 2010 年 6 月 18 日、 BitcoinTalk でラズロ・ハニエツに「この設計にどれくらいの間取り組んできたのか」と問われ、サトシは[こう答えた](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-195/2010-06-18-re-transactions-and-scripts-dup-hash160-equalverify-checksig/):
 
 <!-- speaker: Satoshi Nakamoto -->
-> 「2007 年から。ある時点で、一切の信頼を必要とせずにこれを実現する方法があると確信し、考え続けずにはいられなかった。作業の大部分は設計であり、コーディングはそれより少なかった」
+> 「2007年からだ。ある時点で、信頼をまったく必要とせずにこれを行う方法があると確信し、考え続けることを止められなかった。コーディングよりも設計の作業の方がはるかに多かった」
 
 そして 2011 年 1 月 10 日、 ECDSA の鍵サイズに関するマイク・ハーン宛のメールで ([アーカイブ済み](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-secp256k1/)):
 
 <!-- speaker: Satoshi Nakamoto -->
 > 「正直に言うと、このプロジェクトはリリース前に 2 年間の開発を要した」
 
-D9 の「作業の大部分は設計であり、コーディングはそれより少なかった」は作業全体に占める比率の話であり、コーディング前の独立した設計段階についての発言ではない。サトシ自身が別途記録した作業順序は「コードが先で、論文が後」 ― 「すべての問題を解けると確信するためにまず全コードを書く必要があり、その後で論文を書いた」 (サトシから[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)宛、 [2008 年 11 月 10 日](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/))。 18 か月のコーディング期間 (D6、 D7) と「2007 年から」「リリース前に 2 年間の開発」という言い方 (D9、 D11) は、同じリリース前作業を異なる範囲・粒度で語ったもの ― 同時期に語った 18 か月のコーディング期間と、後年の約 2 年という振り返り ― であり、コーディングに先行する独立した設計段階を想定するものではない。
+D9 の「コーディングよりも設計の作業の方がはるかに多かった」は作業全体に占める比率の話であり、コーディング前の独立した設計段階についての発言ではない。サトシ自身が別途記録した作業順序は「コードが先で、論文が後」 ― 「すべての問題を解けると確信するためにまず全コードを書く必要があり、その後で論文を書いた」 (サトシから[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)宛、 [2008 年 11 月 10 日](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/))。 18 か月のコーディング期間 (D6、 D7) と「2007 年から」「リリース前に 2 年間の開発」という言い方 (D9、 D11) は、同じリリース前作業を異なる範囲・粒度で語ったもの ― 同時期に語った 18 か月のコーディング期間と、後年の約 2 年という振り返り ― であり、コーディングに先行する独立した設計段階を想定するものではない。
 
 ### 2.2 開発期間中に知っていたもの
 

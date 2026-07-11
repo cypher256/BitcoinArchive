@@ -56,7 +56,7 @@ v0.1.5 でのクラッシュ報告は受けていない。Windows では非常�
 <!-- speaker: reset -->
 ディスク容量を節約したければ、debug.log は時々削除して構わない。デバッグに役立つステータスメッセージに過ぎないからね。
 
-bitcoin.sourceforge.net は今は正常に見える。SourceForge がメンテナンスをしていたのかもしれない。
+bitcoin.sourceforge.net は今は正常に見える。おそらく sourceforge がメンテナンスを行っていたのだろう。
 
 Satoshi
 
