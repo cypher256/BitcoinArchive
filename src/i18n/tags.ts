@@ -367,6 +367,7 @@ export const tagTranslations: Record<string, string> = {
   'alternative-genesis': '代替ジェネシス',
   'analysis': '分析',
   'android': 'Android',
+  'anonymousspeech': 'AnonymousSpeech',
   'architecture': 'アーキテクチャ',
   'api': 'API',
   'asymmetry': '非対称性',

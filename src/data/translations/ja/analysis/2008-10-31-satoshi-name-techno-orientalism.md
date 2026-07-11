@@ -27,6 +27,7 @@ relatedEntries:
   - analysis/2008-08-20-satoshi-activity-timeline
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - analysis/2008-08-18-anonymousspeech-bitcoin-org-intermediary
 inlineLinkKeywords:
   - "テクノオリエンタリズム"
 translationStatus: complete

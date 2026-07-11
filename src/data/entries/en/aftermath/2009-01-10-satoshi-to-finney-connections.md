@@ -30,6 +30,7 @@ relatedEntries:
   - analysis/2008-08-20-satoshi-self-statements
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
   - aftermath/2009-06-05-satoshi-to-bohm-port-forwarding
+  - analysis/2008-08-18-anonymousspeech-bitcoin-org-intermediary
 ---
 
 In this email, sent in the earliest days of the Bitcoin network, Satoshi disclosed a technical constraint:
@@ -40,6 +41,6 @@ In this email, sent in the earliest days of the Bitcoin network, Satoshi disclos
 
 This admission reveals that Satoshi was operating behind a firewall or NAT that blocked incoming TCP connections on port 8333, making his own node dependent on outgoing connections to other peers — [the same inbound-connectivity chokepoint he would help another user diagnose five months later](/BitcoinArchive/entries/aftermath/2009-06-05-satoshi-to-bohm-port-forwarding/). This would have complicated debugging and testing the network in its infancy when there were only a handful of nodes. The phrase "from where I am" is examined more broadly as a [forensic reading of Satoshi's launch-period environment](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/) alongside the cadence of his public activity during the launch week.
 
-The email headers contained a timezone of UTC+8, which triggered speculation about Satoshi's location. However, Chain Bulletin journalist Doncho Karaivanov demonstrated that the UTC+8 timestamp originated from AnonymousSpeech.com's email relay server (based in Tokyo since 1996, using Asia/Hong_Kong timezone), not from Satoshi's local machine.
+The email headers contained a timezone of UTC+8, which triggered speculation about Satoshi's location. However, Chain Bulletin journalist Doncho Karaivanov argued that the UTC+8 timestamp originated from AnonymousSpeech.com's email relay server, not from Satoshi's local machine: a webmail Date header reflects the server's clock, not the sender's. (The service's own site advertised a Tokyo base "since 1996"; the relay IP in the surviving headers is allocated to a Malaysian hosting provider — a server-side setting either way.)
 
 This email is part of the private correspondence recovered from Hal Finney's personal computer files. Finney described the broader exchange in his ["Bitcoin and me" post](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/): "I carried on an email conversation with Satoshi over the next few days, mostly me reporting bugs and him fixing them." Only three of these private emails have been published; the remainder presumably exist in the files Fran Finney provided to journalist Nathaniel Popper in March 2014.

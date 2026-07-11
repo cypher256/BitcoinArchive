@@ -32,6 +32,7 @@ relatedEntries:
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
   - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
+  - analysis/2008-08-18-anonymousspeech-bitcoin-org-intermediary
 translationStatus: complete
 ---
 

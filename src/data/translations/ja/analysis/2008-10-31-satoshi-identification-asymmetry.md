@@ -36,6 +36,7 @@ relatedEntries:
   - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-08-18-anonymousspeech-bitcoin-org-intermediary
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history
   - analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis
