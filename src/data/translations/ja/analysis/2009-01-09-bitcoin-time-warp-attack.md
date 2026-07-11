@@ -25,7 +25,7 @@ secondarySources:
   - name: "BitMEX Research — The Time-Warp Attack"
     url: "https://blog.bitmex.com/the-timewarp-attack/"
   - name: "Bitcoin BIP — Great Consensus Cleanup soft fork (Antoine Poinsot)"
-    url: "https://github.com/bitcoin/bips/blob/master/bip-0388.mediawiki"
+    url: "https://github.com/bitcoin/bips/blob/master/bip-0054.md"
 relatedEntries:
   - analysis/2009-01-09-satoshi-code-analysis
   - design/2009-01-03-bitcoin-consensus-design
