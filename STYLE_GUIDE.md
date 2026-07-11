@@ -2778,7 +2778,7 @@ intentional.
 | `data-kind` | width | Reason |
 |---|---|---|
 | `mermaid` | `max-content` + `max-width: 100%` | Mermaid renders SVG at a fixed natural size (`useMaxWidth: false`); the block sizes to content and never wider than wrapper. Small diagrams stay small (no wasted whitespace). |
-| `table` | same | Tables size to natural content; combined with `min-width: 100%` on the table itself, short tables fill the block while wide tables overflow with internal scroll. |
+| `table` | same, but breakout is **overflow-only** | A table that fits the prose column keeps its exact in-column layout (left-aligned, natural width) at every viewport. Only a table whose content overflows the column joins the >= 1500px breakout: a small script in `BaseLayout.astro` marks its `.figure-outer` with `data-breakout`, the block then sizes to `max-content` up to the viewport gutter and centers like a mermaid figure. Pure CSS cannot branch on content overflow, hence the one-attribute script; without JS the table scrolls in-column. |
 | `chart` (d3) | `width: 100%` | D3 sizes its SVG to the wrapper's `clientWidth`, so the block must be 100% width (not `max-content`) for the chart to use the available room. `position: relative` + `overflow-y: hidden` support the tooltip pattern. |
 
 **History — past patches and the present design**: this section once

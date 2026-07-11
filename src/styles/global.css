@@ -1093,13 +1093,28 @@ th {
        sit flush against the viewport edge (hard to read). */
     margin-inline: calc((100vw - 100%) / -2 + 2rem);
   }
-  /* Exception: figure-outer wrapping a table stays in the container
-     so tables always align with the prose column (a wide table
-     scrolls inside its block instead of breaking out). Mermaid /
-     chart figures keep the breakout above.
-     `:has` requires Chrome 105+ / Safari 15.4+ / Firefox 121+. */
+  /* Tables stay in the container BY DEFAULT so fitting tables keep
+     their exact in-column layout (left-aligned, natural width). Only
+     a table whose content overflows the prose column is promoted to
+     the breakout: a small script in BaseLayout.astro marks its outer
+     with `data-breakout` (pure CSS cannot branch on content overflow —
+     grid `safe center` clamps in the wrong direction). Promoted
+     tables expand up to the viewport gutter and center like mermaid
+     figures. No-JS fallback: in-column horizontal scroll (status quo).
+     History: 0531 redesign gave all figures the breakout; dcaffcc8b
+     excluded 3-col-or-fewer tables; dfa55ce7b excluded all tables for
+     prose alignment; 2026-07-11 (user decision) tables rejoin the
+     breakout overflow-only, keeping the alignment win for fitting
+     tables. `:has` requires Chrome 105+ / Safari 15.4+ / Firefox 121+. */
   .figure-outer:has(table) {
     margin-inline: 0;
+  }
+  .figure-outer[data-breakout] {
+    margin-inline: calc((100vw - 100%) / -2 + 2rem);
+  }
+  .figure-outer[data-breakout] > .figure-block[data-kind="table"] {
+    width: max-content;
+    margin-inline: auto;
   }
 }
 

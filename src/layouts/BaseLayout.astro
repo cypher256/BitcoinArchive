@@ -222,5 +222,76 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
         if (document.fonts) document.fonts.ready.then(() => els.forEach(update));
       })();
     </script>
+    {/*
+      Overflow-only table breakout (pairs with global.css
+      `.figure-outer[data-breakout]`, see the figure-block section there).
+      A table that fits the prose column keeps its exact in-column layout;
+      only a table whose natural width exceeds the column is promoted:
+      its .figure-outer gets `data-breakout`, which re-enables the >=1500px
+      viewport breakout and centers the block like mermaid figures.
+      Pure CSS cannot branch on "content overflows" (grid `safe center`
+      clamps in the wrong direction), hence this one-attribute script.
+      The predicate compares the block's scrollWidth against the prose
+      column's content width, which is stable in both states, so the
+      attribute never flip-flops on toggle. No-JS fallback: attribute
+      absent, table scrolls in-column (status quo).
+    */}
+    <script>
+      (() => {
+        const blocks = Array.from(
+          document.querySelectorAll('.figure-outer > .figure-block[data-kind="table"]'),
+        );
+        if (!blocks.length) return;
+        // Measure the prose column each block actually lives in. The
+        // first `.container-wide` in the document is the site header,
+        // which is wider than the reading column — querying globally
+        // would misclassify tables narrower than the header band.
+        const columnWidth = (block) => {
+          const c = block.closest('.container, .container-wide');
+          if (!c) return 0;
+          const cs = getComputedStyle(c);
+          return (
+            c.clientWidth -
+            parseFloat(cs.paddingLeft) -
+            parseFloat(cs.paddingRight)
+          );
+        };
+        const apply = () => {
+          const wide = window.innerWidth >= 1500;
+          for (const block of blocks) {
+            const outer = block.parentElement;
+            if (!outer) continue;
+            const col = columnWidth(block);
+            if (wide && col > 0 && block.scrollWidth > col + 1) {
+              outer.setAttribute('data-breakout', '');
+            } else {
+              outer.removeAttribute('data-breakout');
+            }
+          }
+        };
+        let ticking = false;
+        const schedule = () => {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(() => {
+            ticking = false;
+            apply();
+          });
+        };
+        apply();
+        addEventListener('resize', schedule, { passive: true });
+        // Tables reflow after web fonts load and when late layout
+        // (vertical headers, sibling figures) settles — re-measure on
+        // both, mirroring the scroll-affordance script above.
+        if (document.fonts) document.fonts.ready.then(schedule);
+        if ('ResizeObserver' in window) {
+          const ro = new ResizeObserver(schedule);
+          for (const block of blocks) {
+            const table = block.querySelector('table');
+            table && ro.observe(table);
+          }
+        }
+      })();
+    </script>
   </body>
 </html>
