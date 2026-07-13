@@ -29,7 +29,6 @@ relatedEntries:
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
 ---
 
-On Sun, Dec 06, 1998 at 12:08:04AM +0000, Adam Back wrote:
 <!-- quote: q1 -->
 > (1) Inflation -- the cost of hardware to compute a given collision
 > falls in line with Moores law.  Perhaps one could get around this by

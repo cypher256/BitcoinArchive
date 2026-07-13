@@ -40,6 +40,7 @@ translationStatus: complete
 > これについてコメントいただけますか？
 >
 <!-- speaker: Constance J. Wells -->
+<!-- audit:quote-skip -->
 > ----- cjwells_1@yahoo.com からの転送メッセージ -----
 >     Date: Mon, 24 Jan 2011 00:32:48 -0800 (PST)
 >     From: "Constance J. Wells" <cjwells_1@yahoo.com>

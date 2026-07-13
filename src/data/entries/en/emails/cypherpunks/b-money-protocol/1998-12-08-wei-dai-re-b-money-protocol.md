@@ -30,7 +30,6 @@ relatedEntries:
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
 ---
 
-On Sun, Dec 06, 1998 at 12:08:04AM +0000, Adam Back wrote:
 <!-- quote: q1 -->
 > (2) Borrowing resources -- a student with access to a campus full of
 > workstations can obtain quite a bit of free CPU time.

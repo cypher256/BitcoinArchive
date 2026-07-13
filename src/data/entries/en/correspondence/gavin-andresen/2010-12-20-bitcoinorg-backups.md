@@ -29,8 +29,6 @@ quotes:
     sourceEntryId: "correspondence/martti-malmi/2010-12-20-bitcoinorg-backups-250"
 ---
 
-On Mon, Dec 20, 2010 at 10:55 AM, <mmalmi@cc.hut.fi> wrote:
-
 <!-- quote: q1 -->
 > ShadowOfHarbringer described a way of mirroring the bitcoin.org website and
 > forum here:

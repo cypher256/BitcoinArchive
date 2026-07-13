@@ -31,7 +31,6 @@ quotes:
     sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-16-sni17-bitcoin-v0-1-released"
 ---
 
-On Sat, 17 Jan 2009, Satoshi Nakamoto wrote:
 [[various possible uses of Bitcoin et al]]
 <!-- quote: q1 -->
 > Once it gets bootstrapped, there are so many

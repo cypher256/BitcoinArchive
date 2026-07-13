@@ -38,7 +38,6 @@ quotes:
 
 
 <!-- tone-skip -->
-Eugen Leitl の書き込み:
 <!-- quote: q1 -->
 <!-- tone-skip -->
  > > bitcoin.sourceforge.net は今は正常に見える。SourceForge が

@@ -25,8 +25,6 @@ quotes:
     sourceEntryId: "emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows"
 ---
 
-On Sat, Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto wrote:
-
 <!-- quote: q1 -->
 > bitcoin.sourceforge.net looks fine now.  Maybe sourceforge was doing
 

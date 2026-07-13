@@ -30,8 +30,6 @@ quotes:
 translationStatus: complete
 ---
 
-2010 年 12 月 20 日 ( 月 ) 午前 10:55、 <mmalmi@cc.hut.fi> は次のように書いている。
-
 <!-- quote: q1 -->
 > ShadowOfHarbringer が bitcoin.org のウェブサイトとフォーラムのミラーリング方法をここで説明しています：<br>
 > http://www.bitcoin.org/smf/index.php?topic=2026.msg30043#msg30043

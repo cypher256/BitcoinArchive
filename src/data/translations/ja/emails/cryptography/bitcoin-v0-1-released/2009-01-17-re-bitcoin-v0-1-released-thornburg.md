@@ -33,7 +33,6 @@ quotes:
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
-2009年1月17日（土）、サトシ・ナカモトの投稿：
 [[ビットコインの様々な用途について]]
 <!-- quote: q1 -->
 <!-- tone-skip -->

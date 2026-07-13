@@ -27,10 +27,14 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2008-11-15T04:43:00.000Z"
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-15-bitcoin-p2p-e-cash-paper"
+  - id: "q2"
+    person: "Ray Dillinger"
+    personSlug: "ray-dillinger"
+    parent: "q1"
+    date: "2008-11-15T02:20:23Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-14-bitcoin-p2p-e-cash-paper-dillinger"
 translationStatus: complete
 ---
-
-2008年11月15日 ( 土 ) 12:43 +0800、サトシ・ナカモトは次のように書いた:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
@@ -38,6 +42,7 @@ translationStatus: complete
 <!-- /tone-skip -->
 
 <!-- speaker: Ray Dillinger -->
+> <!-- quote: q2 -->
 > > コインを使う際、買い手と売り手は ( ブラインド化された ) トランザクション記録にデジタル署名する。
 
 <!-- speaker: Satoshi Nakamoto -->

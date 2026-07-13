@@ -26,8 +26,6 @@ quotes:
 translationStatus: complete
 ---
 
-2009 年 10 月 24 日 ( 土 ) 00:55:06 +0100、サトシ・ナカモトは次のように書いている。
-
 <!-- quote: q1 -->
 > bitcoin.sourceforge.net は今は正常に見える。 sourceforge が何か
 

@@ -54,7 +54,7 @@ http://www.hashcash.org/papers/hashcash.pdf, 2002]
 
 <!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
-> あなたの Hashcash 論文を引用した論文を公開する準備をしている。引用が正しいか確認したい。
+> あなたの Hashcash 論文を参考文献として引用する論文をリリースする準備をしているのだが、引用の表記が正しいか確認したい。
 
 <!-- speaker: narrator -->
 サトシは『Electronic Cash Without a Trusted Third Party』という暫定タイトルのリリース前草稿へのリンクを添付した。この原稿は後に『Bitcoin: A Peer-to-Peer Electronic Cash System』へ改題され、[暗号学メーリングリスト用の草稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)として公開された。要旨はそちらの正典に収録されている。

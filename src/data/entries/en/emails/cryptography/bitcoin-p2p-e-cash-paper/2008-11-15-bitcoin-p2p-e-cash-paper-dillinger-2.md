@@ -27,9 +27,13 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2008-11-15T04:43:00.000Z"
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-15-bitcoin-p2p-e-cash-paper"
+  - id: "q2"
+    person: "Ray Dillinger"
+    personSlug: "ray-dillinger"
+    parent: "q1"
+    date: "2008-11-15T02:20:23Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-14-bitcoin-p2p-e-cash-paper-dillinger"
 ---
-
-On Sat, 2008-11-15 at 12:43 +0800, Satoshi Nakamoto wrote:
 
 <!-- quote: q1 -->
 > I'll try and hurry up and release the sourcecode as soon as possible
@@ -37,6 +41,7 @@ On Sat, 2008-11-15 at 12:43 +0800, Satoshi Nakamoto wrote:
 > questions.
 
 <!-- speaker: Ray Dillinger -->
+> <!-- quote: q2 -->
 > > When a coin is spent, the buyer and seller digitally sign a (blinded)
 > > transaction record.
 
