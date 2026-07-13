@@ -24,6 +24,16 @@ const enDir = path.resolve(__dirname, '../src/data/entries/en');
 const jaDir = path.resolve(__dirname, '../src/data/translations/ja');
 
 const QUOTE_MARKER_RE = /^<!--\s*quote:\s*(\w+)\s*-->$/;
+const BLOCKQUOTE_DEPTH_RE = /^((?:>\s?)+)/;
+
+/** Nesting depth of a raw line: number of `>` characters in its leading
+ *  blockquote prefix (handles both `>>` and `> >` markdown forms). 0 if
+ *  the line is not a blockquote line at all. */
+function blockquoteDepth(line) {
+  const m = line.match(BLOCKQUOTE_DEPTH_RE);
+  return m ? (m[1].match(/>/g) || []).length : 0;
+}
+
 const LEGACY_PATTERNS = [
   /\[Quote from:/,
   / wrote:$/m,
@@ -396,22 +406,30 @@ function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
 
     // Find next significant line, allowing skippable HTML. If a quote
     // marker appears between this speaker and the upcoming blockquote,
-    // this section is structurally covered.
+    // this section is structurally covered. An explicit
+    // <!-- audit:quote-skip --> also covers it: the editor has already
+    // declared this blockquote out of the chip-attribution system
+    // (external quote / deleted source), so the speaker shift needs no
+    // quotes[] entry of its own (STYLE_GUIDE.md "Every source quote
+    // must belong to an attribution chain").
     let nextBq = false;
+    let nextBqDepth = 0;
     let sawQuoteMarkerAfter = false;
+    let sawAuditSkipAfter = false;
     for (let j = i + 1; j < lines.length; j++) {
       const r = lines[j];
       const rt = r.trim();
       if (rt === '') continue;
       if (rt.startsWith('<!--')) {
         if (QUOTE_MARKER_HTML_RE.test(rt)) { sawQuoteMarkerAfter = true; break; }
+        if (/^<!--\s*audit:quote-skip\s*-->/.test(rt)) { sawAuditSkipAfter = true; continue; }
         if (SPEAKER_HTML_RE.test(rt) || SKIPPABLE_LINE_HTML_RE.test(rt)) continue;
         break;
       }
-      if (r.startsWith('>')) nextBq = true;
+      if (r.startsWith('>')) { nextBq = true; nextBqDepth = blockquoteDepth(r); }
       break;
     }
-    if (!nextBq || sawQuoteMarkerAfter) continue;
+    if (!nextBq || sawQuoteMarkerAfter || sawAuditSkipAfter) continue;
 
     // File-level "same source already attributed" check: if any
     // earlier `<!-- quote: qN -->` in this file maps to a quotes[]
@@ -442,6 +460,21 @@ function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
     // speaker starts a NEW quoted chain that needs its own marker.
     // EN/JA parity is the editor's responsibility when adding markers:
     // both sides must mirror, otherwise verify-translations.sh fails.
+    //
+    // Depth-aware: a `>`-prefixed line only "continues the chain" for
+    // this purpose if its own nesting depth is already >= nextBqDepth.
+    // A shallower `>` line means the upcoming blockquote is a NEW,
+    // deeper nested source (a different speaker quoted inside the
+    // outer one) that the shallower marker never covered — e.g. a
+    // depth-1 quote's own `<!-- quote: q1 -->` does not, by itself,
+    // attribute a depth-2 quote nested inside it. Without this check,
+    // ANY earlier quote marker at ANY shallower depth silences the
+    // detector for every deeper speaker shift that follows, which is
+    // exactly how real gaps (bare `<!-- speaker: NAME -->` markers with
+    // no matching `quotes[]` entry, one nesting level down) went
+    // undetected archive-wide until a 2026-07-13 manual audit found
+    // them (see STYLE_GUIDE.md "Every source quote must belong to an
+    // attribution chain").
     let coveredByLocalChain = false;
     for (let j = i - 1; j >= 0; j--) {
       const r = lines[j];
@@ -452,7 +485,10 @@ function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
         // Speaker / skippable HTML comments don't break the chain
         continue;
       }
-      if (r.startsWith('>')) continue; // still inside the upstream blockquote chain
+      if (r.startsWith('>')) {
+        if (blockquoteDepth(r) >= nextBqDepth) continue; // still inside a chain at this depth or deeper
+        break; // shallower quote -- does not cover a deeper nested source
+      }
       // Reached a non-blockquote prose line — end of chain, NOT covered
       break;
     }

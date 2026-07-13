@@ -888,6 +888,48 @@ record carrying `parent: "<outer qN>"`.
 `speaker-named-no-quote-marker` (new source via `<!-- speaker: -->`
 but no `<!-- quote: qN -->`), and the legacy-pattern checks.
 
+**Detection must be structural, never a closed list of textual
+attribution phrases.** `speaker-named-no-quote-marker` walks
+backward from a bare `<!-- speaker: NAME -->` marker and treats any
+`>`-prefixed line as "still inside an already-attributed chain" —
+but only when that line's own nesting depth is at least as deep as
+the blockquote the marker introduces. A shallower `>` line means the
+marker is opening a NEW, deeper nested source that the shallower
+chain's own `<!-- quote: qN -->` never covered, and must still be
+flagged. Before this depth check existed (added 2026-07-13), any
+earlier quote marker at ANY shallower depth silently covered every
+deeper speaker shift that followed — the exact shape of the gap that
+let 3 correspondence/mailing-list entries carry unattributed nested
+quotes (one, `.../bitcoin-p2p-e-cash-paper-dillinger-2.md`, with 5
+separate ungapped Ray Dillinger excerpts) despite having gone through
+the archive-wide "nested chip" migration. The legacy-pattern list
+(`NAME wrote:`, `NAME writes:`, `Quoting NAME:`, etc. — see
+`STYLE_GUIDE_JA.md` § "構造化された引用メタデータ" for the full
+table) is a helpful secondary signal but can never be exhaustive: it
+only matches phrasing already seen in the corpus, so any future
+entry whose source uses different reply-quote wording (or none at
+all, structure alone) would slip past a purely textual check. Treat
+`blockquote-no-marker` / `speaker-named-no-quote-marker` as the
+primary, pattern-independent guarantee; extend the legacy-pattern
+list only as a best-effort aid on top of it, never as the sole
+detector for a new gap.
+
+**Once a quote is chip-attributed, drop the raw attribution line it
+replaces.** A `<!-- quote: qN -->` chip already renders an avatar,
+name, date, and source link; a `[Quote from: NAME on DATE]` or
+`NAME wrote:` line immediately above it duplicates that same
+information as plain text. BitcoinTalk-sourced entries have always
+stripped the native `[Quote from:]` line at chip time (kept only when
+`<!-- audit:quote-skip -->` applies — deleted source / external quote,
+where no chip is emitted). Correspondence and mailing-list `NAME
+wrote:` headers were never brought in line with that convention: 21
+entries (EN + JA) shipped with the chip AND the raw header both
+present until a 2026-07-13 pass removed the redundant line. See
+`STYLE_GUIDE_JA.md` § "構造化 chip が付いた引用元は、生の引用先表示
+行を本文に残さない" for the narrower exceptions (ordinary narrator
+prose introducing a quote, audit-skip cases, and inline literary
+quotations are not headers and are never touched).
+
 ### `sourceEntryId` must point to a primary-source entry (and never to self)
 
 A `quotes[].sourceEntryId` must point at a primary-source entry —
