@@ -28,7 +28,6 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-use-cases"
 ---
 
-On Fri, 2009-01-16 at 03:10 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 > There's at least one node who's inbound IP keeps changing all the
 > time within the same class B.  Maybe every time the program is

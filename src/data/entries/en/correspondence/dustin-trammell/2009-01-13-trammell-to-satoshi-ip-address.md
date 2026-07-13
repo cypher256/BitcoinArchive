@@ -27,7 +27,6 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins"
 ---
 
-On Tue, 2009-01-13 at 15:39 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 > Sweet, I was looking for a group like that on Usenet at one point to see
 > what I would use if I needed, and nothing really fit.  I'm sure Google

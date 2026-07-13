@@ -28,12 +28,17 @@ quotes:
     personSlug: "dustin-trammell"
     date: "2009-01-15T19:14:27Z"
     sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-bitcoin-list"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    parent: "q1"
+    date: "2009-01-13T01:55:00Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins"
 ---
 
 <!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
-> Dustin D. Trammell wrote:
-> > Satoshi Nakamoto wrote:
+> <!-- quote: q2 -->
 > > 90 年代にはもっと多くの人が興味を持っていたと思う。だが、信頼された
 > > 第三者ベースのシステム（Digicash など）が 10 年以上にわたって失敗
 > > 続きだったあと、彼らはもう望みがないと見ている。今回は私の知る限り

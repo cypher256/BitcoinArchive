@@ -46,7 +46,5 @@ quotes:
 <!-- quote: q1 -->
 > Adam
 >
-> On Wed, Aug 20, 2008 at 6:30 PM, satoshi@anonymousspeech.com
-> <satoshi@anonymousspeech.com> wrote:
 > <!-- quote: q2 -->
 >> あなたの Hashcash 論文を参考文献として引用する論文をリリースする準備をしているのだが、引用の表記が正しいか確認したい。

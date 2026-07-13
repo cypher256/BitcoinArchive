@@ -29,7 +29,6 @@ quotes:
     sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released"
 ---
 
-On Fri, 2009-01-09 at 03:27 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > ピアツーピアネットワークを用いて二重支払いを防止する新しい電子マネー

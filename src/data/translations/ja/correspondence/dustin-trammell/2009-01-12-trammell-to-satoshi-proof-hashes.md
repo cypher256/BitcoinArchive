@@ -28,7 +28,6 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-12-satoshi-to-trammell-coin-maturity"
 ---
 
-On Tue, 2009-01-13 at 02:33 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > ありがとう、これは知らなかった。よく作り込まれている。

@@ -36,8 +36,6 @@ quotes:
 
 Adam
 
-On Thu, Aug 21, 2008 at 6:59 PM, satoshi@anonymousspeech.com
-<satoshi@anonymousspeech.com> wrote:
 <!-- quote: q1 -->
 > ありがとう。b-money は読んだことがなかったが、私のアイデアはまさにその出発点から始まっている。引用できるよう、公開年を確認するために本人にメールしてみる。
 >

@@ -35,8 +35,6 @@ Yes citation looks fine, I'll take a look at your paper.  You maybe aware of the
 
 Adam
 
-On Wed, Aug 20, 2008 at 6:30 PM, satoshi@anonymousspeech.com
-<satoshi@anonymousspeech.com> wrote:
 <!-- quote: q1 -->
 > I'm getting ready to release a paper that references your Hashcash paper and I wanted to make sure I have the citation right.  Here's what I have:
 >

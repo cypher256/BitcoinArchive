@@ -27,7 +27,6 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-12-satoshi-to-trammell-coin-maturity"
 ---
 
-On Tue, 2009-01-13 at 02:33 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 > Thanks, I hadn't seen that yet.  It looks very well presented.
 > There was an older one that's been running for a long time that

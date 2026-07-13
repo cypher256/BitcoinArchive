@@ -28,7 +28,6 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-attack-types"
 ---
 
-On Fri, 2009-01-16 at 03:42 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 > Sending by IP requests a new public key, so yes, it's vulnerable
 > to type 1 man-in-the-middle.  If that's a concern, sending to a

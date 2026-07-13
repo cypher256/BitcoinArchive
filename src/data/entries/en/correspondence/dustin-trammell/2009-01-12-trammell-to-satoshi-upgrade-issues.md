@@ -27,7 +27,6 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-12-satoshi-to-trammell-coin-maturity"
 ---
 
-On Tue, 2009-01-13 at 02:33 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 > Be sure to upgrade to v0.1.3 if you haven't already.  This version
 > has really stabilized things.

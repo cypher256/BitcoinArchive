@@ -28,7 +28,6 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book"
 ---
 
-On Mon, 2009-01-19 at 00:54 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > それを受け取ったのは、君の自宅のビットコインアドレスのはずだ。

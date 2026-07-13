@@ -28,7 +28,6 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins"
 ---
 
-On Tue, 2009-01-13 at 15:39 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > いいな、いつだったか Usenet 上で同じようなグループを探したことが

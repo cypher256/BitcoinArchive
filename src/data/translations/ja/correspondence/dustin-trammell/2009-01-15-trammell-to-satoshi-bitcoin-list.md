@@ -29,7 +29,6 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-use-cases"
 ---
 
-On Fri, 2009-01-16 at 03:10 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > 少なくとも 1 つ、着信 IP が同じクラス B の中で頻繁に変わり続ける

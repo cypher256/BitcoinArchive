@@ -27,11 +27,16 @@ quotes:
     personSlug: "dustin-trammell"
     date: "2009-01-15T19:14:27Z"
     sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-bitcoin-list"
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    parent: "q1"
+    date: "2009-01-13T01:55:00Z"
+    sourceEntryId: "correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins"
 ---
 
 <!-- quote: q1 -->
-> Dustin D. Trammell wrote:
-> > Satoshi Nakamoto wrote:
+> <!-- quote: q2 -->
 > > You know, I think there were a lot more people interested in the 90's,
 > > but after more than a decade of failed Trusted Third Party based systems
 > > (Digicash, etc), they see it as a lost cause. I hope they can make the

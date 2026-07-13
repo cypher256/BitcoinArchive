@@ -27,7 +27,6 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book"
 ---
 
-On Mon, 2009-01-19 at 00:54 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 > It should be your Bitcoin address at home that you received it
 > with.  There's no way for it to know who it's from, so the best

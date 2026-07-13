@@ -28,7 +28,6 @@ quotes:
     sourceEntryId: "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released"
 ---
 
-On Fri, 2009-01-09 at 03:27 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 > Announcing the first release of Bitcoin, a new electronic cash
 > system that uses a peer-to-peer network to prevent double-spending.

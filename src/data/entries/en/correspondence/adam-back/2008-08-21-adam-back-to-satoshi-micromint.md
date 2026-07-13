@@ -35,8 +35,6 @@ Sorry still not read your paper yet, but another related paper is by Rivest et a
 
 Adam
 
-On Thu, Aug 21, 2008 at 6:59 PM, satoshi@anonymousspeech.com
-<satoshi@anonymousspeech.com> wrote:
 <!-- quote: q1 -->
 > Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point.  I'll e-mail him to confirm the year of publication so I can credit him.
 >

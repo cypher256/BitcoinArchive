@@ -27,7 +27,6 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-19-satoshi-to-trammell-address-labels"
 ---
 
-On Tue, 2009-01-20 at 00:44 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 > The first default one is labelled "Your Address" when it's created.
 > 

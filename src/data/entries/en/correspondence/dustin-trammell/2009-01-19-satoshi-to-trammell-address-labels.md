@@ -34,7 +34,6 @@ quotes:
 ---
 
 <!-- quote: q1 -->
->On Mon, 2009-01-19 at 00:54 +0800, Satoshi Nakamoto wrote:
 > <!-- quote: q2 -->
 >> It should be your Bitcoin address at home that you received it
 >> with.  There's no way for it to know who it's from, so the best
@@ -47,6 +46,7 @@ quotes:
 >do have multiple addresses created at home so I didn't make the
 >connection.
 >
+><!-- quote: q2 -->
 >> It doesn't know any names other than what you tell it.  The name
 >> printed there is what's associated in your address book for that
 >> address, either under the Address Book button or the "Change..."

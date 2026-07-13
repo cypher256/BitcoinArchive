@@ -29,7 +29,6 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-attack-types"
 ---
 
-On Fri, 2009-01-16 at 03:42 +0800, Satoshi Nakamoto wrote:
 <!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->
 > IP による送金は新しい公開鍵を要求するから、そう、タイプ 1 の中間者攻撃に
