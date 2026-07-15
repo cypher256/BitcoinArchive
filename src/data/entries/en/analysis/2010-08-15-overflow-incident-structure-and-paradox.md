@@ -45,6 +45,7 @@ relatedEntries:
   - aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
+  - forum/bitcointalk/topic-823/2010-08-16-satoshi-msg9642
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
   - analysis/2010-08-15-knightmb-snapshot-and-legend
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
@@ -74,6 +75,8 @@ This is why the rescue was possible without re-coordinating the network from scr
 
 The cost paid in exchange: a roughly 15-hour window (from block 74638 at 17:45 UTC Aug 15 to block 74691 at 09:00 UTC Aug 16) during which the canonical chain was contested. During that window, transactions confirmed on either chain were not safe to treat as final. Satoshi's [bitcoin-list alert](/BitcoinArchive/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) — *"do not trust any transactions happening after timestamp 1281891957 ([Aug 15 17:05 UTC](/BitcoinArchive/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/)) until the situation is resolved"* — was a 15-hour halt on counterparty trust, not a halt on network operation.
 
+Roughly eight and a half hours into that window, Satoshi posted a live count of the migration itself: "[We've already generated 14 blocks since 74638. The builds of 0.3.10 were uploaded about 2 and 3 hours ago. Of the nodes I'm connected to, more than half are already 0.3.10. I would say we probably already have more power than the bad chain.](/BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-16-satoshi-msg9642/)" — a first-person confirmation, hours before block 74691 made it official, that the hashpower migration this mechanism depended on was already ahead.
+
 The mechanism worked. The mechanism's cost was disclosed plainly. Both belong in the structural account.
 
 **Timeline of the incident (UTC)**
@@ -100,6 +103,8 @@ gantt
     section Recovery
     Trust-halt window (Satoshi alert) :crit, 2010-08-15 17:05, 16h
     %% link: /BitcoinArchive/entries/emails/bitcoin-list/2010-08-15-alert-we-are-investigating-a-problem/
+    Satoshi: "more power than the bad chain" :milestone, 2010-08-16 02:16, 0m
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-16-satoshi-msg9642/
     Block 74691 - good chain canonical :milestone, 2010-08-16 09:00, 0m
 ```
 

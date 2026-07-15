@@ -29,6 +29,7 @@ relatedEntries:
   - aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
+  - forum/bitcointalk/topic-823/2010-08-15-satoshi-msg9539
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
 ---
 
@@ -41,6 +42,8 @@ The single sentence that anchors knightmb's place in the technical record sits i
 
 <!-- audit:quote-skip -->
 > "I started with knightmb's blockchain snapshot."
+
+Satoshi himself endorsed the same snapshot publicly a few minutes later, telling the thread at large how to recover: "[Once you have an update, you could download knightmb's block chain.](/BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-15-satoshi-msg9539/) You'll want one that's old enough that it ends before block 74000 so the most recent security lockin will check it." What had been one tester's shortcut, in that sentence, became a recovery path Satoshi himself was pointing the whole thread toward.
 
 The context is documented in this Archive's [Value overflow incident entry](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/). At approximately 18:08 UTC, [Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/) noticed Block 74638 had created roughly 184 billion BTC out of an integer overflow in the transaction-validation code. Within five hours, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) published [Bitcoin v0.3.10](/BitcoinArchive/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) containing a soft-fork patch, and Gavin Andresen began testing his own emergency patch in parallel. Both patches required a clean copy of the pre-corruption blockchain — anyone applying them needed to rewind to a block before 74638 and resync from there. With clients across the network already poisoned by the bad block, the question of where to obtain a clean chain was non-trivial.
 

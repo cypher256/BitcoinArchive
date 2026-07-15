@@ -45,6 +45,7 @@ relatedEntries:
   - aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
+  - forum/bitcointalk/topic-823/2010-08-16-satoshi-msg9642
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
   - analysis/2010-08-15-knightmb-snapshot-and-legend
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
@@ -74,6 +75,8 @@ translationStatus: complete
 
 その代償として支払われたもの: 約 15 時間の期間 (8 月 15 日 17:45 UTC のブロック 74638 から 8 月 16 日 09:00 UTC のブロック 74691 まで) のあいだ、正典チェーンが争われた。この期間のあいだ、どちらのチェーンで承認されたトランザクションも最終とみなすのは安全ではなかった。サトシの [bitcoin-list 警告](/BitcoinArchive/ja/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) — *「2010 年 8 月 15 日 17:05 UTC（ブロック 74638）以降に発生したトランザクションを信頼しないでほしい」* — は、ネットワーク稼働の停止ではなく、相手方信頼に対する 15 時間の停止だった。
 
+その窓から 8 時間半ほど経った時点で、サトシ自身が移行の進み具合をその場で報告している——「[74638 以降、すでに 14 ブロックを生成した。0.3.10 のビルドは約 2～3時間前にアップロードされた。接続しているノードのうち、半数以上がすでに 0.3.10 だ。おそらく、不正なチェーンよりもすでに多くの計算力を持っていると思う。](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-16-satoshi-msg9642/)」。ブロック 74691 が正式に確定する数時間前の時点で、この機構が頼みとしていたハッシュパワーの移行がすでに優勢だったことを、本人の一人称証言が裏付けている。
+
 機構は機能した。機構の代償は明確に開示された。両方が構造的な記録に属する。
 
 **事件のタイムライン (UTC)**
@@ -100,6 +103,8 @@ gantt
     section 復旧
     信用停止窓 (サトシのアラート) :crit, 2010-08-15 17:05, 16h
     %% link: /BitcoinArchive/ja/entries/emails/bitcoin-list/2010-08-15-alert-we-are-investigating-a-problem/
+    サトシ「不正チェーンより 計算力は上」 :milestone, 2010-08-16 02:16, 0m
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-16-satoshi-msg9642/
     ブロック 74691 — 正規チェーン確定 :milestone, 2010-08-16 09:00, 0m
 ```
 

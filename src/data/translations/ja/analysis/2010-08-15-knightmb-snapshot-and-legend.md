@@ -29,6 +29,7 @@ relatedEntries:
   - aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
+  - forum/bitcointalk/topic-823/2010-08-15-satoshi-msg9539
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
 translationStatus: complete
 ---
@@ -42,6 +43,8 @@ translationStatus: complete
 
 <!-- audit:quote-skip -->
 > 「knightmb のブロックチェーン・スナップショットを起点にした」
+
+サトシ自身もその数分後、同じスナップショットを公の場で後押しし、スレッド全体に復旧の仕方を伝えている——「[アップデートを入手したら、knightmb のブロックチェーンをダウンロードするとよい。](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-satoshi-msg9539/) 最新のセキュリティロックインが検証してくれるよう、ブロック 74000 より前で終わるような十分に古いものが望ましい」。一人のテスターの近道だったものが、この一言でサトシ自身がスレッド全体に指し示す復旧手段になった。
 
 その経緯は本アーカイブの[バリュー・オーバーフロー事件のエントリー](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/)に記録されている。約 18:08 UTC、[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)がブロック 74638 でトランザクション検証コードの整数オーバーフローによりおよそ 1,840 億 BTC が生成されていることに気づいた。発覚から約 5 時間以内に、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はソフトフォークパッチを含む [Bitcoin v0.3.10](/BitcoinArchive/ja/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) を公開し、ギャビン・アンドレセンも並行して独自の緊急パッチをテストし始めた。両方のパッチは破損前のチェーンの清浄なコピーを必要とした。これを適用する者は、ブロック 74638 より前の時点までチェーンを巻き戻し、そこから再同期する必要があった。ネットワーク全体のクライアントが既に不正ブロックで汚染されている状況で、清浄なチェーンの入手先は自明な問題ではなかった。
 
