@@ -15,7 +15,8 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/19/"
 quotes:
   - id: "q1"
-    person: "madhatter2"
+    person: "The Madhatter"
+    personSlug: "the-madhatter"
     date: "2009-12-11T04:59:19.000Z"
     sourceEntryId: "forum/bitcointalk/topic-12/2009-12-11-the-madhatter-msg47"
 ---
@@ -39,11 +40,11 @@ bitcoin -min -gen
 
 To get the generated bitcoins, you'd have to copy wallet.dat (with version 0.2) to a machine with a UI, swap in the wallet.dat, run bitcoin and transfer the coins to your main account.  (With version 0.1.5 you'd have to copy the whole "%appdata%/Bitcoin" directory.)  There is one caveat about copying wallet.dat: if you happened to kill the program at the exact moment that it generated a coin or received a payment, wallet.dat might not work by itself and you'd have to copy the whole directory.
 
-<!-- speaker: madhatter2 -->
+<!-- speaker: The Madhatter -->
 > I really think that having the download package contain a daily seed snapshot will improve the bootstrapping. I have seen instances on new test installs here where the application will sit with 0 connections / 1 block. Upon inspecting the debug.log I find that the IRC server (freenode, I believe) claims I am already connected and refuses to let me seed the application. (Just an example).
 
 I see, that would happen with multiple nodes using the same NAT or VPN or some ISP that funnels everyone through a few proxy servers.  I just committed a fix to SVN for this.  If it gets "433" name already in use (it was error 433, right?), it'll retry with a non-address random username.  
 
-<!-- speaker: madhatter2 -->
+<!-- speaker: The Madhatter -->
 > In any event, I would like to help. I have a lot of time and a project like this one is very exciting.
 That's great, any help is really appreciated!

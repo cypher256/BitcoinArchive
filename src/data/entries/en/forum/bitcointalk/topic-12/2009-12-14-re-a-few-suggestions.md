@@ -15,7 +15,8 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/23/"
 quotes:
   - id: "q1"
-    person: "madhatter2"
+    person: "The Madhatter"
+    personSlug: "the-madhatter"
     date: "2009-12-14T15:01:39.000Z"
     sourceEntryId: "forum/bitcointalk/topic-12/2009-12-14-the-madhatter-msg66"
 ---

@@ -16,7 +16,8 @@ secondarySources:
 translationStatus: complete
 quotes:
   - id: "q1"
-    person: "madhatter2"
+    person: "The Madhatter"
+    personSlug: "the-madhatter"
     date: "2009-12-15T05:21:09.000Z"
     sourceEntryId: "forum/bitcointalk/topic-12/2009-12-15-the-madhatter-msg68"
 ---
@@ -29,7 +30,7 @@ quotes:
 
 wxWidgets の `configure` スクリプトでどのオプションを使用したか？私が使用したオプションは build-unix.txt に記載されている。
 
-<!-- speaker: madhatter2 -->
+<!-- speaker: The Madhatter -->
 > 「一つ質問：debug.log を有効にするにはどうすればいいですか？Bitcoin を停止して~/.bitcoin/debug.log を touch して、再度 Bitcoin を起動してみましたが、ファイルに書き込まれることはありません。何か見落としていますか？」
 
 そのようなことは聞いたことがない。debug.log に何か入っているか？ファイルを touch したなら、何か入っているはずだ。プログラムにファイルへの書き込みアクセス権はあるか？
