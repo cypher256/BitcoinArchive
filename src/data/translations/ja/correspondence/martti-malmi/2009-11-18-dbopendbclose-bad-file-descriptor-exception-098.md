@@ -31,6 +31,12 @@ quotes:
     parent: "q1"
     date: "2009-11-18T01:50:24Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-18-dbopendbclose-bad-file-descriptor-exception-094"
+  - id: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    parent: "q2"
+    date: "2009-11-16T06:20:52Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-16-dbopendbclose-bad-file-descriptor-exception-086"
 translationStatus: complete
 ---
 
@@ -48,6 +54,7 @@ translationStatus: complete
 >> <!-- speaker: Martti Malmi -->
 >> まだ役に立つかもしれないので、ログをお送りします。
 >>
+>> <!-- quote: q3 -->
 >>> <!-- speaker: Satoshi Nakamoto -->
 >>> 回避策のアイデアがあるが、エラーがどのファイルで発生しているかによる。db.log にエラーがいくつか蓄積されているなら、送ってもらえるか？（たとえ非常にシンプルで退屈な内容でも）記録されているファイルは常に blkindex.dat か、それとも addr.dat や wallet.dat も含まれるか？
 >> <!-- speaker: Martti Malmi -->

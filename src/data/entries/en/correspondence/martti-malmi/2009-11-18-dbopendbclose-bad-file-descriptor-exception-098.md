@@ -31,6 +31,12 @@ quotes:
     parent: "q1"
     date: "2009-11-18T01:50:24Z"
     sourceEntryId: "correspondence/martti-malmi/2009-11-18-dbopendbclose-bad-file-descriptor-exception-094"
+  - id: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    parent: "q2"
+    date: "2009-11-16T06:20:52Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-11-16-dbopendbclose-bad-file-descriptor-exception-086"
 ---
 
 I think it was test version 5, not completely sure though. I'm running  
@@ -49,6 +55,7 @@ and use the hibernate-feature instead of powering down.
 > <!-- quote: q2 -->
 >> Here's the logs in case they're still useful.
 >>
+>> <!-- quote: q3 -->
 >>> I have an idea for a workaround, but it depends on what files the
 >>> errors are on.  If you've accumulated several errors in db.log, could
 >>> you send it to me? (even if it's rather simple and boring)  Is the file
