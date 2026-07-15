@@ -932,6 +932,7 @@ Mermaid はラベルを暗黙にしか改行しない。日本語には単語間
 | `flowchart` / `graph` ノードラベル (`A[...]`, `A(...)`, `A{...}`, `A((...))`) | **`<br/>`** | ASCII スペースも折返すが、 mid-text に半角空白が表示として残る (例: `待機中の トランザクション` がそのまま「待機中の トランザクション」 と表示) ため非推奨 |
 | `flowchart` の `subgraph ID[<text>]` タイトル | **単一行が安全**、 `<br/>` は subgraph 幅次第 | subgraph タイトルはボックス全幅で描画され、 内容に合わせて横幅が自動拡張する。 内容が狭い (`((ノード))` だけ等) subgraph では 2 行目の `<br/>` がボックスからはみ出して clip されることがあるため、 narrow な subgraph では単一行に留める。 ノードの幅が十分にある subgraph (例: UTXO 金額表示等) では `<br/>` が機能することが多い |
 | `timeline` のイベントラベル (`年 : テキスト` / ` : テキスト`) | **ASCII スペース** | Mermaid timeline は `<br/>` を改行点として認識しない。 ASCII スペースが事実上の唯一の改行点で、 既存運用 (Satoshi 他の biography 等) も全てこの形 |
+| `gantt` のタスク / マイルストーンラベル | **ASCII スペース** | timeline と同じ理由: gantt はラベルを (flowchart 等が使う HTML foreignObject ではなく) 素の SVG `<text>` として描画するため、 `<br/>` は改行として解釈されず、 `<br/>` という文字列そのものがラベルに残る。 2026-07-15、 overflow-incident-structure-and-paradox の gantt マイルストーンで実描画確認済み (`&#x3C;br/>` が SVG に literal 出力された) |
 | `sequenceDiagram` のメッセージ (`A->>B: text`) | **改行不要** | メッセージは矢印に沿って水平方向に自動拡張する。 ASCII スペース挿入は表示が不自然になるため避ける |
 | `classDiagram` / `stateDiagram` 等 | **`<br/>`** | flowchart と同等の挙動 |
 
@@ -970,7 +971,7 @@ timeline イベントラベルの例 (Satoshi biography から):
 ✓  BSV が BCH から分岐                   (略号で複数 span を断つ)
 ```
 
-`npm run check:mermaid-ja-wrap` により強制される (`npm run check` の一部として動作する)。スクリプトは `<br/>` (`<br>` / `<br />` 含む) と ASCII スペースの両方を改行点として認識する。 違反検出時は対象ブロックの図種別に応じた改行手段を使うこと (script のヒントは flowchart 向けに `<br/>` を提案するが、 timeline ブロックの違反には ASCII スペースで対応する)。 `npm run check:bios-rendering` (Playwright による視覚確認 — `npm run dev` の実行と `playwright` のインストールが必要) と組み合わせる。
+`npm run check:mermaid-ja-wrap` により強制される (`npm run check` の一部として動作する)。スクリプトは `<br/>` (`<br>` / `<br />` 含む) と ASCII スペースの両方を改行点として認識する。 違反検出時は対象ブロックの図種別に応じた改行手段を使うこと (script のヒントは flowchart 向けに `<br/>` を提案するが、 timeline / gantt ブロックの違反には ASCII スペースで対応する)。 `npm run check:bios-rendering` (Playwright による視覚確認 — `npm run dev` の実行と `playwright` のインストールが必要) と組み合わせる。
 
 ### 新規規則の追加手順
 

@@ -14,6 +14,13 @@
  *     - timeline event labels: ASCII space is the ONLY mechanism that
  *       works — Mermaid timeline does NOT honor `<br/>`. The space is
  *       a semantic break; existing biographies all follow this pattern.
+ *     - gantt task/milestone labels: same as timeline. Gantt renders
+ *       labels as plain SVG <text> (not the HTML foreignObject that
+ *       flowchart/classDiagram/stateDiagram use), so `<br/>` is never
+ *       interpreted -- it shows up as a literal "<br/>" string in the
+ *       rendered label instead of a line break. Confirmed by rendering
+ *       (2026-07-15): a milestone label with `<br/>` rendered the raw
+ *       tag text in the SVG. ASCII space is the only wrap point here too.
  *     - sequenceDiagram messages: messages render on auto-expanding
  *       arrows; no wrap is needed. This script exempts the diagram type.
  *     - subgraph titles: render full-width and auto-expand to fit;
@@ -215,9 +222,10 @@ console.error(`✗ Found ${violations.length} unbroken Japanese span(s) exceedin
 for (const v of violations) {
   console.error(`  ${v.file}:${v.line}`);
   console.error(`    "${v.token}" (${v.length} chars)`);
-  if (v.diagramType === 'timeline') {
+  if (v.diagramType === 'timeline' || v.diagramType === 'gantt') {
     console.error(`    Insert an ASCII space at a semantic break point.`);
-    console.error(`    (timeline does NOT honor <br/>; ASCII space is the only wrap point.)`);
+    console.error(`    (${v.diagramType} renders labels as plain SVG text, not honoring <br/>; a literal`);
+    console.error(`    "<br/>" string shows up in the rendered label. ASCII space is the wrap point.)`);
   } else {
     console.error(`    Insert <br/> at a semantic break point so the label wraps.`);
     console.error(`    (Avoid mid-text ASCII space in flowchart/graph labels — it renders as a mid-word gap.)`);
