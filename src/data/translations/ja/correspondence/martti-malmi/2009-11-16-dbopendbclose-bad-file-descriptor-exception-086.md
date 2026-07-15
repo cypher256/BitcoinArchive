@@ -46,8 +46,6 @@ quotes:
 >
 <!-- /tone-skip -->
 <!-- speaker: Satoshi Nakamoto -->
-> 2009年11月15日(日) 午前 12:45、Satoshi Nakamoto <satoshin@gmx.com
->
 > <!-- quote: q2 -->
 >> Berkeley DB を別の方法でリンクしたバージョンだ。試してみる価値はある。
 >> それ以外は test5 と同一だ。

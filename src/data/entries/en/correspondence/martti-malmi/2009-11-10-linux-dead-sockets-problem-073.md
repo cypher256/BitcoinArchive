@@ -92,8 +92,6 @@ option would be a special case only if all confirmations are your own.
 > looking much more attractive now that 6 out of the 10 sets of bitcoins I 
 > generated in the past 24 hours just vanished. I've included my debug.log.
 > 
-> 
-> On Tue, Nov 10, 2009 at 1:45 AM, Liberty Standard 
 > <!-- quote: q2 -->
 >
 >> The Linux build has generated a decent amount of bitcoins within the

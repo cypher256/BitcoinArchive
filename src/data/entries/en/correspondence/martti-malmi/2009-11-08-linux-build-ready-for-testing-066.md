@@ -80,8 +80,6 @@ sub-option, my bad.  I'll change it back.
 > minimize to tray check box being enabled.
 > 
 > 
-> On Sun, Nov 8, 2009 at 9:08 AM, Satoshi Nakamoto <satoshin@gmx.com
->
 > <!-- quote: q2 -->
 >> If you mean the blocks count in the status bar isn't working its way
 >> up to around 26600, then that's a bug, you should send me your

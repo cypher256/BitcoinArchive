@@ -61,9 +61,6 @@ upgrade MinGW to 4.3.x to get them on a level playing field.
 > decide whether it's at least as good or better at generating coins than 
 > the Windows version running in Wine.
 > 
-> 
-> On Mon, Nov 9, 2009 at 8:59 AM, Liberty Standard
->
 > <!-- quote: q2 -->
 >> Another instance when I would like to run multiple instances is when
 >> I upgrade bitcoin. I will uncheck the generate coin check box in the
@@ -72,8 +69,6 @@ upgrade MinGW to 4.3.x to get them on a level playing field.
 >> application's coins have matured I will send them to the new
 >> application and then close the old application. I prefer do do clean
 >> installs rather than upgrading while maintaining old data.
->>
->> On Mon, Nov 9, 2009 at 7:42 AM, Satoshi Nakamoto <satoshin@gmx.com
 >
 > <!-- quote: q3 -->
 >> Thanks for that, I see what happened.  Because the first one was

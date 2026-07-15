@@ -44,8 +44,6 @@ always blkindex.dat, or does it include addr.dat or wallet.dat too?
 > had changed the settings to only use one processor/core while I watched 
 > a 720p mkv movie. I noticed the segmentation fault after the film had ended.
 > 
-> On Sun, Nov 15, 2009 at 12:45 AM, Satoshi Nakamoto <satoshin@gmx.com
->
 > <!-- quote: q2 -->
 >> Here's one where I linked Berkeley DB a different way.  It's worth a
 >> try.  Otherwise identical to test5.

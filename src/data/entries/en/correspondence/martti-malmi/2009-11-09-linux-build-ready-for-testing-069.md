@@ -79,8 +79,6 @@ You shouldn't normally have any need to use this switch.  It still won't
 let you run two instances at once.
 
 <!-- quote: q1 -->
-> On Mon, Nov 9, 2009 at 3:23 AM, Satoshi Nakamoto <satoshin@gmx.com
->
 > <!-- quote: q2 -->
 >> About how long did it take to start?  It could be the node that you
 >> happened to request from is slow.  The slow start is consistent with
