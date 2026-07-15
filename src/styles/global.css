@@ -591,6 +591,19 @@ blockquote[data-speaker="satoshi"] {
 .quote-attribution + blockquote {
   margin-top: 0;
 }
+/* A nested quote's chip is often the very first thing inside its parent
+   blockquote (e.g. the outer speaker's reply opens by immediately quoting
+   a further source, with no prose of their own first). In that position
+   the chip's own margin-top stacks on top of the parent blockquote's
+   padding-top, doubling the visual gap above the chip compared to a
+   root-level chip (which has no padded box above it to begin with). Zero
+   it out specifically for that first-child case; root-level chips (whose
+   parent is .entry-content/.message-body, not a blockquote) are
+   unaffected and keep their separation from the preceding narration. */
+blockquote > .quote-attribution:first-child,
+blockquote > .quote-speaker-tag:first-child {
+  margin-top: 0;
+}
 
 /* Lightweight speaker tag for CONTINUATION quotes: a bare
    `<!-- speaker: NAME -->` reusing a source already introduced by an
