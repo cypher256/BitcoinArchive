@@ -43,6 +43,7 @@ A normal one shows 17MB memory usage and 10MB VM size.
 > The VPS has 320MB RAM, 50MB of which is currently free. There's also 
 > 500MB swap space.
 > 
+> <!-- quote: q2 -->
 >> Bitcoin necessarily takes a
 >> fair bit of memory; about 75MB on Windows.  Is that a problem?
 > 

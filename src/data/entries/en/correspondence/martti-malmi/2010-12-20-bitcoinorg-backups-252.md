@@ -69,6 +69,7 @@ Here's my pgp key btw: http://www.bitcoin.org/mmalmi.asc
 > 8 chars = 25418 difficulty
 >
 >
+>> <!-- quote: q3 -->
 >>> Another option is to
 >>>> encrypt the backups with pgp and store them in multiple places.
 >>

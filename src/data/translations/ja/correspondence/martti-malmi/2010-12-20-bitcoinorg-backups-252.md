@@ -69,6 +69,7 @@ translationStatus: complete
 > 8 文字 = 25418 の難易度
 >
 >
+>> <!-- quote: q3 -->
 >>> もう一つの選択肢は、
 >>> <!-- speaker: Martti Malmi -->
 >>>> バックアップを PGP で暗号化して複数の場所に保管することです。

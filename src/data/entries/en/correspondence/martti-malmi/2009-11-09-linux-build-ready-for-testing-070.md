@@ -69,6 +69,7 @@ developing until December. Let's keep contact anyway.
 > Martti, how long did it take to start downloading blocks when you ran
 > it, and how fast did it download?
 >
+> <!-- quote: q2 -->
 >>    When I launch bitcoin and the bitcoin port is not available, I get
 >>    the following messages to the command line. I don't get those
 >>    messages when the bitcoin port is available. Would it be possible

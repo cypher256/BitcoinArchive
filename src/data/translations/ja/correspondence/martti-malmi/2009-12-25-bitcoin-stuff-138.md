@@ -48,6 +48,7 @@ translationStatus: complete
 > VPS には 320MB の RAM があり、そのうち 50MB が現在空いています。
 > 500MB のスワップ領域もあります。
 >
+> <!-- quote: q2 -->
 > <!-- speaker: Satoshi Nakamoto -->
 >> Bitcoin はそれなりにメモリーを必要とする。
 >> Windows では約 75MB だ。問題になるか？
