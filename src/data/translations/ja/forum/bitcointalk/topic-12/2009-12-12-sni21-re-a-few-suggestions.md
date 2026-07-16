@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 quotes:
   - id: "q1"
-    person: "The Madhatter"
+    person: "madhatter2"
     personSlug: "the-madhatter"
     date: "2009-12-12T06:34:21.000Z"
     sourceEntryId: "forum/bitcointalk/topic-12/2009-12-12-the-madhatter-msg51"
@@ -32,7 +32,7 @@ PPC は試さないでほしい。PPC はビッグエンディアンで、Bitcoi
 
 autoconf は検討した。autoconf は、makefile が泥沼化した大規模プロジェクトには必要だが、私たちはまだ十分に小さいので、なしの方が最適だと思う。できるだけ長く makefile をシンプルに保ちたいと思っている。
 
-<!-- speaker: The Madhatter -->
+<!-- speaker: madhatter2 -->
 > 「Bitcoin を 2 つのアプリに分割するのが理想的だと思います。wxwidgets のフロントエンド（ほとんど出来上がっているので）と、制御用 TCP ソケットにバインドするバックエンドです。ソースを読んで分離がどれくらい難しいか確認していますが、かなり簡単なはずだと思います。もちろん API の開発が必要になりますが。」
 
 考えただけで頭が痛くなる。すべての UI バックエンドを TCP 接続経由にすると、すべてが 2倍難しくなる。リストビューコントロールの動作方法のため、リストビューコントロールを更新し続けるために UI と内部データ構造の間には非常に大きな帯域幅が必要だ。

@@ -15,7 +15,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/24/"
 quotes:
   - id: "q1"
-    person: "The Madhatter"
+    person: "madhatter2"
     personSlug: "the-madhatter"
     date: "2009-12-15T05:21:09.000Z"
     sourceEntryId: "forum/bitcointalk/topic-12/2009-12-15-the-madhatter-msg68"
@@ -28,7 +28,7 @@ Then it must be something you're doing differently with building or configuring 
 
 What options did you use on the wxWidgets "configure" script?  The options I used are in build-unix.txt.
 
-<!-- speaker: The Madhatter -->
+<!-- speaker: madhatter2 -->
 > One question: how do I enable the debug.log? I have tried stopping bitcoin and touching ~/.bitcoin/debug.log and starting bitcoin again. It never seems to write to the file. Am I missing something?
 
 Never heard of that happening.  Is there anything in debug.log?  If you touched the file, that sounds like something is there.  Does the program have write access to the file?

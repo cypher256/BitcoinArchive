@@ -15,7 +15,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/21/"
 quotes:
   - id: "q1"
-    person: "The Madhatter"
+    person: "madhatter2"
     personSlug: "the-madhatter"
     date: "2009-12-12T06:34:21.000Z"
     sourceEntryId: "forum/bitcointalk/topic-12/2009-12-12-the-madhatter-msg51"
@@ -30,7 +30,7 @@ Please don't try PPC.  PPC is big-endian and Bitcoin is little-endian, there wo
 
 Considered autoconf.  Autoconf is a necessity for large projects with a quagmire makefile, but I think we're small enough that it's more optimal without it.  I'd rather keep the makefile simple as long as possible.
 
-<!-- speaker: The Madhatter -->
+<!-- speaker: madhatter2 -->
 > I think that breaking bitcoin into two apps is ideal. A wxwidgets front end (since it is mostly all there) and a backend that binds to a control TCP socket. I have been reading over the source to see how hard it would be to break it apart and I think it should be fairly simple. Of course an API would have to be developed.
 
 My head hurts just thinking about that.  Funnelling all the UI backend through a TCP connection would make everything twice as hard.  There's too much bandwidth between the UI and the internal data structures in order to keep the listview control updated, because of the way the listview control works.

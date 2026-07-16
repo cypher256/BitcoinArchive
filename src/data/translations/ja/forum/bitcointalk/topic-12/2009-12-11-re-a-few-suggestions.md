@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 quotes:
   - id: "q1"
-    person: "The Madhatter"
+    person: "madhatter2"
     personSlug: "the-madhatter"
     date: "2009-12-11T04:59:19.000Z"
     sourceEntryId: "forum/bitcointalk/topic-12/2009-12-11-the-madhatter-msg47"
@@ -42,12 +42,12 @@ bitcoin -min -gen
 
 生成された Bitcoin を取得するには、wallet.dat（バージョン 0.2 の場合）を UI 付きのマシンにコピーし、wallet.dat を入れ替えて、Bitcoin を起動し、コインをメインアカウントに送金する必要がある。（バージョン 0.1.5 では、"%appdata%/Bitcoin"ディレクトリ全体をコピーする必要がある。）wallet.dat のコピーに関して一つ注意点がある：コインを生成した瞬間や支払いを受け取った瞬間にプログラムを kill した場合、wallet.dat だけでは機能しない可能性があり、ディレクトリ全体をコピーする必要がある。
 
-<!-- speaker: The Madhatter -->
+<!-- speaker: madhatter2 -->
 > 「初回ダウンロードパッケージに日次のシードスナップショットを含めることで、ブートストラッピングが改善されると本当に思います。ここでの新規テストインストールで、アプリケーションが 0 接続/1 ブロックの状態で停止する事例を見ました。debug.log を調べると、IRC サーバー（freenode だと思います）が既に接続されていると言って、アプリケーションのシードを拒否していることがわかりました。（一例です）。」
 
 なるほど、同じ NAT や VPN、または ISP が全員を数台のプロキシサーバー経由で接続している場合にそうなるだろう。これに対する修正を SVN にコミットした。「433」の名前が既に使用中エラー（エラー 433 だったよね？）を受け取った場合、アドレスではないランダムなユーザー名でリトライする。
 
-<!-- speaker: The Madhatter -->
+<!-- speaker: madhatter2 -->
 > 「いずれにせよ、お手伝いしたいです。時間はたくさんありますし、このようなプロジェクトはとても刺激的です。」
 
 ありがとう、どんな助けも本当にありがたい！
