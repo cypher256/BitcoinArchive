@@ -20,6 +20,7 @@ quotes:
   - id: "q2"
     parent: "q1"
     person: "creighto"
+    personSlug: "moonshadow"
     date: "2010-08-03T20:01:22.000Z"
     sourceEntryId: "forum/bitcointalk/topic-661/2010-08-03-moonshadow-msg7314"
 ---

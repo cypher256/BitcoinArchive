@@ -14,6 +14,7 @@ tags: []
 quotes:
   - id: "q1"
     person: "creighto"
+    personSlug: "moonshadow"
     date: "2010-08-06T22:27:03.000Z"
     sourceEntryId: "forum/bitcointalk/topic-723/2010-08-06-moonshadow-msg7995"
 ---

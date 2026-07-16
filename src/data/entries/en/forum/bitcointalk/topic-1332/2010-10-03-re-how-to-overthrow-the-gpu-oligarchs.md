@@ -22,6 +22,7 @@ quotes:
   - id: "q2"
     parent: "q1"
     person: "lzsaver"
+    personSlug: "lz"
     date: "2010-10-02T05:49:47.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1332/2010-10-02-lz-msg14960"
 ---

@@ -17,6 +17,7 @@ translationStatus: complete
 quotes:
   - id: "q1"
     person: "trebronics"
+    personSlug: "goldrush"
     date: "2010-08-16T01:02:35.000Z"
     sourceEntryId: "forum/bitcointalk/topic-823/2010-08-16-goldrush-msg9625"
 ---

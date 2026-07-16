@@ -19,6 +19,7 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-25-kiba-msg14004"
   - id: "q2"
     person: "dejayl"
+    personSlug: "quantummechanic"
     date: "2010-09-25T04:14:44.000Z"
     sourceEntryId: "forum/bitcointalk/topic-1268/2010-09-25-quantummechanic-msg14002"
     parent: "q1"
