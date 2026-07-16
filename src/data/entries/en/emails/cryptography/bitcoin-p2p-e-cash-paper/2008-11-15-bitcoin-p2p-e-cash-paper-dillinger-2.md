@@ -39,20 +39,21 @@ quotes:
 > I'll try and hurry up and release the sourcecode as soon as possible
 > to serve as a reference to help clear up all these implementation
 > questions.
-
-<!-- speaker: Ray Dillinger -->
+>
+> <!-- speaker: Ray Dillinger -->
 > <!-- quote: q2 -->
 > > When a coin is spent, the buyer and seller digitally sign a (blinded)
 > > transaction record.
-
-<!-- speaker: Satoshi Nakamoto -->
+>
+> <!-- speaker: Satoshi Nakamoto -->
 > Only the buyer signs, and there's no blinding.
-
-<!-- speaker: Ray Dillinger -->
+>
+> <!-- speaker: Ray Dillinger -->
+> <!-- quote: q2 -->
 > > If someone double spends, then the transaction record
 > > can be unblinded revealing the identity of the cheater.
-
-<!-- speaker: Satoshi Nakamoto -->
+>
+> <!-- speaker: Satoshi Nakamoto -->
 > Identities are not used, and there's no reliance on recourse. It's all prevention.
 
 Okay, that's surprising. If you're not using buyer/seller identities, then you are not checking that a spend is being made by someone who actually is the owner of (on record as having recieved) the coin being spent.
@@ -76,12 +77,13 @@ Note, even though this doesn't involve identity per se, it still makes the agent
 
 BTW, could you please learn to use carriage returns?? Your lines are scrolling stupidly off to the right and I have to scroll to see what the heck you're saying, then edit to add carriage returns before I respond.
 
-<!-- speaker: Ray Dillinger -->
+<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Ray Dillinger -->
+> <!-- quote: q2 -->
 > > If it contains a double spend, then they create a "transaction"
 > > which is a proof of double spending, add it to their pool A,
 > > broadcast it, and continue work.
-
-<!-- speaker: Satoshi Nakamoto -->
+>
 > There's no need for reporting of "proof of double spending" like
 > that. If the same chain contains both spends, then the block is
 > invalid and rejected.
@@ -127,22 +129,24 @@ The consumers won't do this if they spend their coin and it takes an hour to cle
 
 So there's a possibility of an early catch when the broadcasts of the initial simultaneous spends interfere with each other. I assume here that the broadcasts are done by the sellers, since the buyer has a possible disincentive to broadly disseminate spends.
 
-<!-- speaker: Ray Dillinger -->
+<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Ray Dillinger -->
+> <!-- quote: q2 -->
 > > If the new chain is accepted, then they give up on adding their
 > > current link ... and start work again trying to extend the new
 > > chain.
-
-<!-- speaker: Satoshi Nakamoto -->
+>
 > Right. They also refresh whenever a new transaction comes in,
 > so L pretty much contains everything in A all the time.
 
 Okay, that's a big difference between a proof of work that takes a huge set number of CPU cycles and a proof of work that takes a tiny number of CPU cycles but has a tiny chance of success. You can change the data set while working, and it doesn't mean you need to start over. This is good in this case, as it means nobody has to hold recently recieved transactions out of the link they're working on.
 
-<!-- speaker: Ray Dillinger -->
+<!-- speaker: Satoshi Nakamoto -->
+> <!-- speaker: Ray Dillinger -->
+> <!-- quote: q2 -->
 > > Is there a mechanism to make sure that the "chain" does not consist
 > > solely of links added by just the 3 or 4 fastest nodes?
-
-<!-- speaker: Satoshi Nakamoto -->
+>
 > If you're thinking of it as a CPU-intensive digital signing, then
 > you may be thinking of a race to finish a long operation first and
 > the fastest always winning.

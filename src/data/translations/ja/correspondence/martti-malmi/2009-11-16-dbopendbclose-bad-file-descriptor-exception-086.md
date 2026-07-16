@@ -41,11 +41,11 @@ quotes:
 <!-- speaker: Liberty Standard -->
 
 <!-- quote: q1 -->
-<!-- tone-skip -->
+> <!-- tone-skip -->
 > データディレクトリを SSD カードに戻して、 bitcoin test 6 を起動した。今日、ログに Db::open が出るかたちでセグメンテーション違反が発生した。 720p mkv 動画を見ている間、設定をプロセッサー / コア 1 つだけ使うように変えていた。セグメンテーション違反には、映画が終わってから気付いた。
 >
-<!-- /tone-skip -->
-<!-- speaker: Satoshi Nakamoto -->
+> <!-- /tone-skip -->
+> <!-- speaker: Satoshi Nakamoto -->
 > <!-- quote: q2 -->
 >> Berkeley DB を別の方法でリンクしたバージョンだ。試してみる価値はある。
 >> それ以外は test5 と同一だ。
