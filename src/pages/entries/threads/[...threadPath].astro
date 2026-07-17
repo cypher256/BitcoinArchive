@@ -147,7 +147,14 @@ const breadcrumbs = [
                 const authorSlug = ap?.slug || entry.data.author;
                 return (
                   <>
-                    <Avatar slug={authorSlug} sizeClass="message-avatar" base={base} />
+                    {/* The name link right beside this goes to the same
+                        participant page, so the avatar link is a pure
+                        duplicate — kept out of the tab order and the
+                        accessibility tree to avoid announcing the same
+                        link twice. */}
+                    <a href={localePath(`/participants/${authorSlug}/`, lang)} class="avatar-link" tabindex="-1" aria-hidden="true">
+                      <Avatar slug={authorSlug} sizeClass="message-avatar" base={base} />
+                    </a>
                     <a href={localePath(`/participants/${authorSlug}/`, lang)} class:list={["author-name", { satoshi: isSatoshiAuthor }]}>
                       {displayName}{showHandle && <span class="author-handle"> ({entry.data.author})</span>}
                     </a>

@@ -170,8 +170,31 @@ function formatAttribution(quote, locale, base) {
   const avatar = quote.personSlug
     ? avatarTag(quote.personSlug, 'quote-avatar', base, canonicalizePersonName(quote.person))
     : '';
+  // The avatar links to the person's participant page while the caption
+  // text keeps linking to the quoted source entry — two adjacent targets,
+  // same split as a code-forge comment header (avatar → profile, text →
+  // the thing being cited). aria-label carries the name because the
+  // avatar itself is alt=""/aria-hidden.
+  const avatarLinked = avatar
+    ? `<a class="avatar-link" href="${participantPath(quote.personSlug, locale, base)}" aria-label="${attrEscape(name)}">${avatar}</a>`
+    : avatar;
   const inner = entryPath ? `<a href="${entryPath}">${text}</a>` : text;
-  return `<cite class="quote-attribution">${avatar}${inner}</cite>`;
+  return `<cite class="quote-attribution">${avatarLinked}${inner}</cite>`;
+}
+
+/** Participant-page path for a personSlug, locale-aware. */
+function participantPath(personSlug, locale, base) {
+  return `${base}${locale === 'ja' ? 'ja/' : ''}participants/${personSlug}/`;
+}
+
+/**
+ * Minimal attribute escaping for aria-label values. Only `"` and `<`
+ * are escaped: person names may legitimately contain pre-encoded HTML
+ * entities (e.g. `D&#1161;ataWraith`), so escaping bare `&` would
+ * double-encode them.
+ */
+function attrEscape(s) {
+  return String(s ?? '').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 }
 
 /**
@@ -197,6 +220,14 @@ function formatSpeakerTag(quote, locale, base) {
   const avatar = quote.personSlug
     ? avatarTag(quote.personSlug, 'quote-avatar', base, canonicalizePersonName(quote.person))
     : '';
+  // The tag stays visually a bare avatar + name, but both now link to
+  // the participant page (there is no competing link in this slot, and
+  // the participant page is NOT the quoted source, so this cannot read
+  // as a second citation). Styling keeps the muted tag look; see
+  // .quote-speaker-tag > a in global.css.
+  if (quote.personSlug) {
+    return `<cite class="quote-speaker-tag"><a href="${participantPath(quote.personSlug, locale, base)}">${avatar}${name}</a></cite>`;
+  }
   return `<cite class="quote-speaker-tag">${avatar}${name}</cite>`;
 }
 

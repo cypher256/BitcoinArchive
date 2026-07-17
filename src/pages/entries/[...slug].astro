@@ -113,6 +113,14 @@ const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
 // participant resolves (then no avatar shows before the title).
 const titleAvatarParticipant = findAuthorParticipant(entry.data.author, entry.data.participants);
 const titleAvatarSlug = isEditorialType ? 'bitcoin-institute' : titleAvatarParticipant?.slug;
+// Every person avatar links to its participant page (the slug comes from
+// this entry's own participants[], the same set participant pages are
+// generated from, so the target always exists). The Bitcoin Institute
+// avatar on editorial pages has no participant page — it links to About.
+const titleAvatarHref = isEditorialType
+  ? localePath('/about/', lang)
+  : (titleAvatarParticipant ? localePath(`/participants/${titleAvatarParticipant.slug}/`, lang) : null);
+const titleAvatarLabel = isEditorialType ? t('site.title') : titleAvatarParticipant?.name;
 const heroBannerOffset = heroBannerPosition(entry.id);
 ---
 
@@ -144,7 +152,13 @@ const heroBannerOffset = heroBannerPosition(entry.id);
     </nav>
     <header class="entry-header">
       <div class="entry-title-row" style={`background-image: url(${base}images/hero-banners/atmosphere.jpg); background-position: ${heroBannerOffset}% center;`}>
-        {titleAvatarSlug && <Avatar slug={titleAvatarSlug} sizeClass="entry-author-avatar" base={base} />}
+        {titleAvatarSlug && (titleAvatarHref ? (
+          <a href={titleAvatarHref} class="avatar-link" aria-label={titleAvatarLabel}>
+            <Avatar slug={titleAvatarSlug} sizeClass="entry-author-avatar" base={base} />
+          </a>
+        ) : (
+          <Avatar slug={titleAvatarSlug} sizeClass="entry-author-avatar" base={base} />
+        ))}
         <h1>{entry.data.title}</h1>
       </div>
       <EntryMeta
