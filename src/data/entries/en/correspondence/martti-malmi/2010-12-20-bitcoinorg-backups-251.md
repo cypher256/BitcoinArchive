@@ -57,6 +57,7 @@ passwords people use on forums.
 
 
 <!-- speaker: Gavin Andresen -->
+> <!-- quote: q2 -->
 >> Another option is to
 >> > encrypt the backups with pgp and store them in multiple places.
 > 

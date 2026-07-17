@@ -56,6 +56,7 @@ translationStatus: complete
 
 <!-- speaker: Gavin Andresen -->
 <!-- tone-skip -->
+> <!-- quote: q2 -->
 >> もう一つの選択肢は、
 >> > バックアップを PGP で暗号化して複数の場所に保管することです。
 >
