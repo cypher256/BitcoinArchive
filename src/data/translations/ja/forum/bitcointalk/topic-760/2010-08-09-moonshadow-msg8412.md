@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 translationStatus: complete
 ---
-[Deleted] Quote from: davidonpda on August 09, 2010, 08:07:26 PM
+[削除済み] Quote from: davidonpda on August 09, 2010, 08:07:26 PM
 <!-- audit:quote-skip -->
 > タイムスタンプの問題は、32 ビット整数としての unix タイムスタンプが 2038年にオーバーフローすることだ。プログラマーだが、「unix time problem」や「2038」でググればもっと情報が見つかる。
 

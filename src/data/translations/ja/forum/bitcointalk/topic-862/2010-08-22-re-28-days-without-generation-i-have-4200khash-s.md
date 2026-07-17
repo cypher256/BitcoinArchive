@@ -18,7 +18,7 @@ translationStatus: complete
 
 debug.log で「proof-of-work found」を検索してくれ。見つかった場合は、その直後にエラーがないか確認してくれ。
 
-[Deleted] Quote from: davidonpda on August 19, 2010, 07:43:01 PM
+[削除済み] Quote from: davidonpda on August 19, 2010, 07:43:01 PM
 <!-- audit:quote-skip -->
 > 正しく動作するために、時刻にどれくらいの誤差が許容されますか？
 

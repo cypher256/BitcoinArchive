@@ -13,7 +13,7 @@ isSatoshi: false
 tags: []
 translationStatus: complete
 ---
-[Deleted] Quote from: davidonpda on August 15, 2010, 10:41:29 PM
+[削除済み] Quote from: davidonpda on August 15, 2010, 10:41:29 PM
 <!-- audit:quote-skip -->
 > 74637 でちょうど持っていると既に言った。
 >

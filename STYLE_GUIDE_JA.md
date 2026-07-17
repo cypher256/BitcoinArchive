@@ -162,7 +162,8 @@ BitcoinTalk とメーリングリストの引用先表示行は構造であり�
 
 | 出典 | 引用先表示の形式 | 規則 |
 |--------|-------------------|------|
-| BitcoinTalk | `[Quote from: NAME on DATE](URL)` | 英語のまま |
+| BitcoinTalk ( 通常時 ) | `[Quote from: NAME on DATE](URL)` | 英語のまま |
+| BitcoinTalk ( 引用元が削除済み ) | `[削除済み] Quote from: NAME on DATE` | リンクなし平文。接頭辞は編集注記なので JA では `[削除済み]`、 EN では `[Deleted]` ( § 引用の構造化 > 削除済みラベル 参照 ) |
 | メーリングリスト | `NAME wrote:` | 英語のまま |
 | 書簡 | インラインの `> ` 引用 | 本文として翻訳する |
 
@@ -203,6 +204,8 @@ aftermath や伝記散文の中で導入文として使われる "Satoshi wrote:
 - **外部引用** ( external quote ): 発言者は実在するが、 引用元が Archive のキュレーション範囲外 ( 例: BitcoinTalk スレッド内で引用された Dan Connolly の外部メーリングリスト投稿、 文脈として再掲されたジャーナリストの記事段落等 )。 Archive はその出典を primary entry として取り込むつもりが無いため、 chip が指せるエントリーが存在しない。
 
 いずれも編集意図は「実在発言だが Archive 内 primary entry が成立し得ない」 のであり、 「捏造された例示」 ではない。 `<!-- audit:quote-skip -->` で blockquote を marking した上で、 発言者名を明示しつつ存在する外部出典 ( `secondarySources`、 inline URL 等 ) にリンクする導入文を前に置き、 chip が出なくても帰属が読者に伝わるようにする。
+
+**削除済みラベル**: 削除済みソースで BitcoinTalk 由来の `Quote from: NAME on DATE` ヘッダー行を保持する場合、 リンク先が消滅しているため平文で残し、 リンクが無い理由を示す接頭辞を付ける。 表記は **EN ページ `[Deleted]`、 JA ページ `[削除済み]`** ( この接頭辞は原文の一部ではなく Archive の編集注記なので JA 側は日本語化する。 `Quote from:` 以降は原文 UI の逐語保存なので両言語とも英語のまま )。 2026-04-02 確立 ( `e961567c2` )、 JA 表記は 2026-07-17 に統一。
 
 `audit:quote-skip` を**単に検出器を黙らせるために使ってはならない**。 引用元が Archive 内にあるか追加可能なら、 それは `quote-self-link` / `quote-non-primary-target` の領域で、 正しい対応は primary entry の作成または `sourceEntryId` の付け替えだ。
 

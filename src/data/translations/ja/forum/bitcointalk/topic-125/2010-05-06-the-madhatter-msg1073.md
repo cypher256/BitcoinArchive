@@ -22,6 +22,6 @@ Bitcoin ソフトウェアの各リリースにブロックチェーンのスナ
 
 ++good!
 
-[Deleted] Quote from: davidonpda on May 03, 2010, 02:40:35 PM
+[削除済み] Quote from: davidonpda on May 03, 2010, 02:40:35 PM
 <!-- audit:quote-skip -->
 > 34 MB…高速 DSL プランなら数分で済むはずだ。3時間ではない…

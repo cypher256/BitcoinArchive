@@ -879,6 +879,17 @@ external citation exists (`secondarySources`, an inline URL, etc.)
 so readers understand the attribution even though the chip is not
 emitted.
 
+**Deleted-source label.** When a BitcoinTalk quote box's native
+`Quote from: NAME on DATE` header is retained for a deleted source,
+its link target no longer exists, so the header is kept as plain
+text with a locale-appropriate prefix marking why there is no link:
+`[Deleted]` on EN pages, `[削除済み]` on JA pages (the prefix is an
+Archive editorial annotation, not source text, so the JA layer
+localizes it; the `Quote from:` remainder is preserved verbatim in
+English on both locales). Established 2026-04-02 (`e961567c2`, 20
+posts by davidonpda / martin / soultcer); JA label unified
+2026-07-17 after the two forms had drifted.
+
 Do **not** use `audit:quote-skip` simply to silence the detector
 when the source IS in (or could be added to) the Archive — that
 is `quote-self-link` / `quote-non-primary-target` territory, and

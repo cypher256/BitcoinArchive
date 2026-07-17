@@ -19,7 +19,7 @@ quotes:
     date: "2010-08-11T16:10:56.000Z"
     sourceEntryId: "forum/bitcointalk/topic-788/2010-08-11-gavin-andresen-msg8761"
 ---
-[Deleted] Quote from: davidonpda on August 11, 2010, 04:19:43 PM
+[削除済み] Quote from: davidonpda on August 11, 2010, 04:19:43 PM
 <!-- audit:quote-skip -->
 > <!-- quote: q1 -->
 > > + クライアント間の接続プロセスの一部として何らかのプルーフ・オブ・ワークを要求する（「シビル」攻撃の防止に役立つ）。

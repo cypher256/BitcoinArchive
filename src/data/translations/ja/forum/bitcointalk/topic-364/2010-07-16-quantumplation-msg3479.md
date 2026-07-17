@@ -20,7 +20,7 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-364/2010-07-15-martin-msg3027"
 ---
 
-[Deleted] Quote from: martin on July 16, 2010, 02:09:09 PM
+[削除済み] Quote from: martin on July 16, 2010, 02:09:09 PM
 <!-- quote: q1 -->
 <!-- tone-skip -->
 > そう、最終的にはこれは概念実証に過ぎないことを願っている。うまくいくことが示されれば、クライアントに統合できる（同じポートと URL を使って）。

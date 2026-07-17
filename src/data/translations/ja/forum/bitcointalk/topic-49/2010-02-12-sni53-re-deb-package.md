@@ -16,7 +16,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-[Deleted] Quote from: soultcer on February 12, 2010, 02:31:50 PM
+[削除済み] Quote from: soultcer on February 12, 2010, 02:31:50 PM
 <!-- audit:quote-skip -->
 > 必要でしたら、コンパイル済みバイナリを提供できますよ。
 
