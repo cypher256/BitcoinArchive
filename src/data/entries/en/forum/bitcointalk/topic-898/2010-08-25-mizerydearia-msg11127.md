@@ -53,3 +53,16 @@ if -disablesafemode was passed to the running process, then the warning will not
 if -disablesafemode was not passed to the running process, then the warning will be displayed
 
 http://www.cplusplus.com/reference/std/stdexcept/runtime_error/
+
+<!-- audit:quote-skip -->
+> necrodearia> http://www.cplusplus.com/reference/std/stdexcept/runtime_error/ - Does this cause the running process to stop or does it just produce output to the terminal/shell?  
+> \<Adrinael\> necrodearia, "this"?  
+> \<necrodearia\> runtime_error  
+> \<Adrinael\> necrodearia, if you create a runtime_error object, nothing happens. If you throw a runtime_error object, it all depends on if someone catches it, and where.  
+> \<Adrinael\> { try {  throw runtime_error("Error, halp!");  }  catch (runtime_error& e) { cout << "caught a runtime error: " << e.what(); }   cout << " but still continuing..."; }  
+> \<clang\> terminated by runtime_error: Error, halp!  
+> \<Adrinael\> Hmm awesome  
+> \<Adrinael\> geordi { try {  throw runtime_error("Error, halp!");  }  catch (runtime_error& e) { cout << "caught a runtime error: " << e.what(); }   cout << " but still continuing..."; }  
+> \<geordi\> caught a runtime error: Error, halp! but still continuing...  
+> \<Sausage\> How in the hell did it get that wrong?  
+> \<Adrinael\> Asked Eelis on #geordi, now move along
