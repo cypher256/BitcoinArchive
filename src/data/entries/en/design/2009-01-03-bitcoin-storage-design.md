@@ -291,11 +291,11 @@ assumeUTXO does not change the consensus rules. It changes the **order** in whic
 
 | Feature | Satoshi era (v0.1, Jan 2009) | Modern Bitcoin Core, v27+ baseline |
 |---|---|---|
-| **Primary database** | Berkeley DB (BDB) for all persistent state | LevelDB for UTXO set and block index; flat files for blocks |
+| **Primary database** | Berkeley DB (BDB) for the transaction index and block index; raw block data was flat files (`blk*.dat`) even in v0.1 | LevelDB for UTXO set and block index; flat files for blocks |
 | **UTXO storage** | Entire transaction stored in BDB; all outputs (spent and unspent) retained | Only unspent outputs stored in LevelDB; spent outputs discarded |
 | **UTXO representation** | Transaction-indexed: full transaction with a spent-flag vector per output | Outpoint-indexed: each UTXO keyed by (txid, output index) with compact serialization |
 | **Coins cache** | No separate cache layer; BDB handled all reads and writes | Dedicated in-memory write-back cache (`-dbcache`, default 450 MiB) |
-| **Block storage** | Single monolithic BDB database | Sequential flat files (`blk*.dat`), ~128 MiB each |
+| **Block storage** | Sequential flat files (`blk0001.dat`, `blk0002.dat`, …), rotated near a ~2 GB FAT32-safe limit | Sequential flat files (`blk*.dat`), ~128 MiB each |
 | **Undo data** | Not stored; reorganizations required re-validation from the fork point | Dedicated `rev*.dat` files store previous coin state for fast rollback |
 | **Block index** | BDB-based index | LevelDB-based index with `nChainWork` tracking |
 | **Pruning** | Not available; every node stored the full chain | Available since v0.11 (2015); minimum retention 550 MiB |
@@ -305,7 +305,7 @@ assumeUTXO does not change the consensus rules. It changes the **order** in whic
 | **Initial block download** | Minutes (few blocks existed) | Hours to >1 day without assumeUTXO; minutes with assumeUTXO snapshot |
 | **On-disk size** | Negligible (chain was tiny) | ~650+ GB archival; ~10 GB pruned; ~7 GB coins database |
 
-**The BDB → LevelDB migration (v0.8, March 2013).** Satoshi's original implementation stored everything — block data, transaction index, UTXO state — in a single Berkeley DB database, a choice [he explained directly to an early user in January 2009](/BitcoinArchive/entries/aftermath/2009-01-16-satoshi-to-trammell-wallet-location/) as "a transactional database DBM, so it should be safe from loss if there's a crash or power failure." As the chain grew, BDB's lock limits and memory characteristics became bottlenecks. The v0.8 release replaced BDB with LevelDB for the UTXO set and block index, and moved block data to the flat-file format still in use today. This migration was not without incident: a consensus-splitting fork occurred on March 11, 2013, when nodes running v0.7 (BDB) and v0.8 (LevelDB) disagreed on block validity due to a BDB lock-count limit that LevelDB did not share. The fork was resolved by coordinated miner action to abandon the longer v0.8 chain — one of the few deliberate chain reorganizations in Bitcoin's history.
+**The BDB → LevelDB migration (v0.8, March 2013).** Satoshi's original implementation stored the transaction index and UTXO state — but not raw block data, which was flat files (`blk*.dat`) from the start — in a single Berkeley DB database, a choice [he explained directly to an early user in January 2009](/BitcoinArchive/entries/aftermath/2009-01-16-satoshi-to-trammell-wallet-location/) as "a transactional database DBM, so it should be safe from loss if there's a crash or power failure." As the chain grew, BDB's lock limits and memory characteristics became bottlenecks. The v0.8 release replaced BDB with LevelDB for the UTXO set and block index. Block data remained in the flat-file format that had been in use since v0.1. This migration was not without incident: a consensus-splitting fork occurred on March 11, 2013, when nodes running v0.7 (BDB) and v0.8 (LevelDB) disagreed on block validity due to a BDB lock-count limit that LevelDB did not share. The fork was resolved by coordinated miner action to abandon the longer v0.8 chain — one of the few deliberate chain reorganizations in Bitcoin's history.
 
 ## 9. Limits of this page
 

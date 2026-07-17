@@ -223,7 +223,7 @@ Satoshi's v0.1 had no explicit block-size limit. A 1 MB maximum block size was a
 | **Block-size limit** | No explicit limit in v0.1; 1 MB cap added September 2010 | Replaced by 4 MWU weight limit (BIP 141) |
 | **Size enforcement** | `MAX_BLOCK_SIZE` constant checked against raw byte count | `MAX_BLOCK_WEIGHT` checked against calculated weight |
 | **Witness data** | Does not exist | Discounted at 1 WU per byte (vs 4 WU for non-witness) |
-| **Sigop limit** | 20,000 sigops per block | 80,000 sigops per block (weight-scaled); tapscript counts differently |
+| **Sigop limit** | No limit in v0.1; 20,000 added September 2010 | 80,000 sigops per block (weight-scaled); tapscript counts differently |
 
 ## 6. Coinbase transaction
 
@@ -257,12 +257,12 @@ The subsidy halves every 210,000 blocks (approximately every 4 years) and asympt
 | **Header format** | 80 bytes, version 1 | 80 bytes, same structure; version field carries BIP 9 signaling bits |
 | **Block version** | Always 1 | BIP 9 version-bits (`0x20000000` base + signal bits) |
 | **Merkle tree** | Single tree over full serialized transactions | Primary tree (over stripped transactions) + witness commitment in coinbase |
-| **Chain selection** | Most accumulated proof-of-work | Same rule; tracked via `nChainWork` (256-bit integer) |
+| **Chain selection** | Block-height comparison (`nBestHeight`) | Most-work chain, tracked via `nChainWork` (256-bit integer, since v0.3.3) |
 | **Block-size limit** | No limit in v0.1; 1 MB added in 2010 | 4 MWU weight limit (BIP 141) |
 | **Coinbase data** | Arbitrary up to 100 bytes | BIP 34: block height prefix required; remaining bytes arbitrary |
 | **Coinbase maturity** | 100 blocks | Same |
 | **Witness commitment** | Not applicable | Coinbase `OP_RETURN` output commits witness Merkle root (BIP 141) |
-| **Sigop limit** | 20,000 per block | 80,000 per block (weight-adjusted); tapscript uses different counting |
+| **Sigop limit** | No limit in v0.1; 20,000 added 2010 | 80,000 per block (weight-adjusted); tapscript uses different counting |
 | **Block relay** | Full block broadcast to all peers | Compact blocks (BIP 152): header + short transaction IDs; receiving node reconstructs from mempool |
 
 ## 8. Limits of this page

@@ -151,7 +151,7 @@ sequenceDiagram
 | **暗号ライブラリー** | OpenSSL（合意検証は v0.11 まで）; libsecp256k1（ウォレット署名は v0.10 以降、合意検証は v0.12 以降） | libsecp256k1 シュノアモジュール |
 | **スクリプトコンテキスト** | `OP_CHECKSIG`、`OP_CHECKMULTISIG` | `OP_CHECKSIG`（tapscript 版）、`OP_CHECKSIGADD` |
 
-**OpenSSL からの離脱。** サトシの v0.1 はすべての暗号演算 — ECDSA 署名、ECDSA 検証、SHA-256、乱数生成 — を OpenSSL に依存していた。Bitcoin Core が libsecp256k1(定時間演算によるサイドチャネル耐性、決定性ナンス生成 RFC 6979、大幅に高速なバッチ検証を提供する専用ライブラリー)へ移行したのは 2 段階に分かれる([専用エントリーで詳述](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/)): v0.10(2015 年 2 月)でウォレット署名の標準となったが、合意クリティカルな ECDSA 検証は OpenSSL のまま残り、v0.12(2016 年 1 月)になって初めて標準となった。OpenSSL バージョン間の DER 署名解析の差異に起因する合意形成バグのクラスを実際に排除したのはこの v0.12 の変更であり、それまでの間は BIP 66 の厳密 DER ソフトフォークが応急処置として機能していた。
+**OpenSSL からの離脱。** サトシの v0.1 で OpenSSL に依存していたのは、ECDSA 署名、ECDSA 検証、乱数生成、そして `Hash()`/`Hash160()` 内の SHA-256d、RIPEMD-160 計算である。ただし採掘のホットパスは例外で、`main.cpp` の `BlockSHA256()` は OpenSSL を介さず、同梱の Crypto++ 実装（ウェイ・ダイの `sha.cpp`/`sha.h`）を高速化のために直接呼び出していた。Bitcoin Core が libsecp256k1(定時間演算によるサイドチャネル耐性、決定性ナンス生成 RFC 6979、大幅に高速なバッチ検証を提供する専用ライブラリー)へ移行したのは 2 段階に分かれる([専用エントリーで詳述](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/)): v0.10(2015 年 2 月)でウォレット署名の標準となったが、合意クリティカルな ECDSA 検証は OpenSSL のまま残り、v0.12(2016 年 1 月)になって初めて標準となった。OpenSSL バージョン間の DER 署名解析の差異に起因する合意形成バグのクラスを実際に排除したのはこの v0.12 の変更であり、それまでの間は BIP 66 の厳密 DER ソフトフォークが応急処置として機能していた。
 
 ## 4. アドレス導出
 
@@ -261,7 +261,7 @@ flowchart TB
 | **鍵集約** | 利用不可 | MuSig2（n-of-n シュノア集約で 1 鍵 + 1 署名に統合） |
 | **暗号ライブラリー** | OpenSSL | libsecp256k1（定時間、決定性ナンス、正式レビュー済み） |
 | **ナンス生成** | OpenSSL の擬似乱数生成器 | RFC 6979 決定性ナンス（ECDSA）; BIP 340 合成ナンス（シュノア） |
-| **ハッシュ関数** | OpenSSL 経由の SHA-256、SHA-256d、RIPEMD-160 | 同一のアルゴリズム; ハードウェアアクセラレーション（SHA-NI、ARMv8-A）付き内部実装 |
+| **ハッシュ関数** | `Hash()`/`Hash160()` の SHA-256d、RIPEMD-160 は OpenSSL 経由; 採掘のブロックハッシュ SHA-256 は同梱の Crypto++（ウェイ・ダイ実装） | 同一のアルゴリズム; ハードウェアアクセラレーション（SHA-NI、ARMv8-A）付き内部実装 |
 | **アドレス形式** | Base58Check（P2PKH: `1...`） | Base58Check（レガシー）、Bech32（P2WPKH/P2WSH: `bc1q...`）、Bech32m（P2TR: `bc1p...`） |
 | **鍵管理** | ランダム鍵プール（非決定性） | HD 導出（BIP 32/44/84/86）; 記述子ウォレット（BIP 380 以降）。Core は BIP 39 ではなく生の BIP 32 シードを使用 |
 | **バックアップモデル** | `wallet.dat` のエクスポート; 新しい鍵には新しいバックアップが必要 | 記述子バックアップがすべての導出鍵をカバー（Bitcoin Core は BIP 39 ニーモニックではなく生の BIP 32 シードを使用） |

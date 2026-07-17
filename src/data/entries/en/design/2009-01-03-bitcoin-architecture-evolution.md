@@ -29,7 +29,7 @@ This page is **L2 #9 — Architecture evolution (Satoshi era vs v27+)** in the [
 
 ## 1. System-wide architecture
 
-The most visible change between v0.1 and v27+ is architectural decomposition. Satoshi shipped a single binary that fused the wallet, the miner, the GUI, the validation engine, and the network layer into one process backed by a single database. Modern Bitcoin Core separates these concerns into distinct modules, processes, and storage backends.
+The most visible change between v0.1 and v27+ is architectural decomposition. Satoshi shipped a single binary that fused the wallet, the miner, the GUI, the validation engine, and the network layer into one process, backed by Berkeley DB indexes and flat block files. Modern Bitcoin Core separates these concerns into distinct modules, processes, and storage backends.
 
 ```mermaid
 flowchart TB
@@ -40,7 +40,7 @@ flowchart TB
         MONO --> MINE_0["Built-in CPU miner"]
         MONO --> VALID_0["Validation + relay"]
         MONO --> WALL_0["Wallet (random keys)"]
-        MONO --> BDB["Berkeley DB<br/>(all state in one DB)"]
+        MONO --> BDB["Berkeley DB<br/>(indexes + wallet)"]
     end
 
     subgraph V27["v27+ — modular"]
@@ -66,7 +66,7 @@ flowchart TB
 |---|---|---|
 | **Binary** | Single executable: wallet + miner + GUI + node | `bitcoind` (node), `bitcoin-wallet` (wallet), `bitcoin-qt` (GUI) — separate binaries |
 | **Process model** | One process, one address space | Logically separated; experimental multiprocess work in progress (not yet default) |
-| **Database** | Berkeley DB for all persistent state | LevelDB (UTXO set, block index) + flat files (blocks) + SQLite (wallet) |
+| **Database** | Berkeley DB for indexes and wallet; flat files for block data | LevelDB (UTXO set, block index) + flat files (blocks) + SQLite (wallet) |
 | **Mining** | Internal CPU miner, same process | External via `getblocktemplate` (BIP 22/23); Stratum v2 in ecosystem |
 | **Interfaces** | None at launch; basic JSON-RPC added shortly after | JSON-RPC (full read/write), REST (read-only), ZMQ (push notifications) |
 | **Cryptography library** | OpenSSL (ECDSA/secp256k1); Crypto++ (SHA-256) | libsecp256k1 (ECDSA/Schnorr), internal SHA-256 with hardware acceleration |
@@ -152,7 +152,7 @@ flowchart LR
         HDR_0["80-byte header<br/>(version 1)"]
         MERK_0["Single Merkle tree<br/>(full serialized txs)"]
         SIZE_0["No explicit size limit<br/>(1 MB added mid-2010)"]
-        SIGOP_0["20,000 sigops/block"]
+        SIGOP_0["No explicit sigop limit<br/>(20,000 added mid-2010)"]
     end
 
     subgraph V27_BLK["v27+ — block structure"]
@@ -172,7 +172,7 @@ flowchart LR
 | **Size limit** | No limit in v0.1; 1 MB added 2010 | 4 MWU weight limit | BIP 141 (2017) |
 | **Witness discount** | Does not exist | Witness bytes at 1/4 weight (1 WU vs 4 WU) | BIP 141 |
 | **Coinbase data** | Arbitrary up to 100 bytes | BIP 34: block height prefix required | BIP 34 (2013) |
-| **Sigop limit** | 20,000 per block | 80,000 per block (weight-adjusted); tapscript counts differently | BIP 141, 342 |
+| **Sigop limit** | No limit in v0.1; 20,000 added 2010 | 80,000 per block (weight-adjusted); tapscript counts differently | BIP 141, 342 |
 
 *Detailed treatment: [L1 #3 — Block and chain design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-block-chain-design/)*
 
@@ -184,9 +184,9 @@ flowchart LR
         direction TB
         POW_0["SHA-256d proof of work"]
         DIFF_0["Difficulty adjustment<br/>(every 2,016 blocks,<br/>off-by-one bug)"]
-        CHAIN_0["Most-work chain<br/>(nChainWork)"]
+        CHAIN_0["Longest chain<br/>(nBestHeight)"]
         ACT_0["Flag-day activation<br/>(direct code change)"]
-        CHECK_0["Hardcoded checkpoints<br/>(anti-DoS)"]
+        CHECK_0["No checkpoints<br/>(first hardcoded July 2010, v0.3.2)"]
     end
 
     subgraph V27_CON["v27+ — consensus"]
@@ -202,12 +202,12 @@ flowchart LR
 | Feature | v0.1 | v27+ baseline | Key BIP / version |
 |---|---|---|---|
 | **Hash function** | SHA-256d (double SHA-256) | Same | — |
-| **Chain selection** | Most-work chain (`nChainWork`) | Same rule; persistent tracking hardened | — |
+| **Chain selection** | Longest chain (height comparison, `nBestHeight`) | Most-work chain (`nChainWork`, since v0.3.3) | — |
 | **Difficulty adjustment** | Every 2,016 blocks; off-by-one bug | Same algorithm; bug preserved (fixing = hard fork) | — |
 | **Soft fork activation** | Direct code change (flag day) | BIP 9 versionbits / BIP 8 Speedy Trial | BIP 9, BIP 8 |
 | **Script validation** | Combined scriptSig + scriptPubKey execution | Separated evaluation; SegWit witness programs; tapscript | BIP 141, 342 |
-| **Timestamp rule** | Must be > previous block timestamp | Median-time-past (MTP): > median of previous 11 blocks | BIP 113 |
-| **Checkpoints** | Hardcoded block hashes | `assumevalid` replaces most checkpoint functionality | v0.14+ |
+| **Timestamp rule** | Must exceed the median of the previous 11 blocks (median-time-past, present since v0.1) | Same acceptance rule; BIP 113 extends MTP to lock-time evaluation | BIP 113 |
+| **Checkpoints** | None in v0.1; hardcoded checkpoints added July 2010 (v0.3.2) | `assumevalid` replaces most checkpoint functionality | v0.14+ |
 
 *Detailed treatment: [L1 #4 — Consensus design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/)*
 
@@ -249,7 +249,7 @@ flowchart LR
 flowchart LR
     subgraph V01_CRYPTO["v0.1 — cryptography"]
         direction TB
-        OPENSSL["OpenSSL<br/>(all operations)"]
+        OPENSSL["OpenSSL (ECDSA, hashing)<br/>+ Crypto++ (mining SHA-256)"]
         ECDSA_V0["ECDSA only"]
         UNCOMP["Uncompressed<br/>public keys<br/>(65 bytes)"]
         DER_V0["DER encoding<br/>(variable, 70–72 bytes)"]
@@ -277,7 +277,7 @@ flowchart LR
 | **Key format** | Uncompressed public keys (65 bytes) | Compressed (33 bytes); x-only (32 bytes, Taproot) | BIP 340 |
 | **Signature malleability** | Possible — `s` value alterable | Low-S rule (BIP 146) for ECDSA; Schnorr non-malleable | BIP 146 |
 | **Nonce generation** | OpenSSL PRNG | RFC 6979 deterministic (ECDSA); BIP 340 synthetic (Schnorr) | RFC 6979 |
-| **Hash functions** | SHA-256, SHA-256d, RIPEMD-160 via OpenSSL | Same algorithms; internal with hardware acceleration (SHA-NI, ARMv8-A) | — |
+| **Hash functions** | SHA-256d/RIPEMD-160 via OpenSSL; mining SHA-256 via bundled Crypto++ | Same algorithms; internal with hardware acceleration (SHA-NI, ARMv8-A) | — |
 | **Sighash algorithm** | Legacy sighash (quadratic in inputs) | BIP 143 (SegWit v0, linear) + BIP 341 (Taproot, epoch-tagged) | BIP 143, 341 |
 
 *Detailed treatment: [L1 #6 — Cryptography design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-cryptography-design/)*
@@ -288,7 +288,7 @@ flowchart LR
 flowchart LR
     subgraph V01_STORE["v0.1 — storage"]
         direction TB
-        BDB_S["Berkeley DB<br/>(all state in one DB)"]
+        BDB_S["Berkeley DB<br/>(indexes + wallet;<br/>blocks in flat files)"]
         FULL_TX["Full transactions stored<br/>(spent + unspent)"]
         NO_UNDO["No undo data<br/>(reorg = re-validate<br/>from fork point)"]
         NO_PRUNE["No pruning<br/>(store everything)"]
@@ -305,10 +305,10 @@ flowchart LR
 
 | Feature | v0.1 | v27+ baseline | Key version |
 |---|---|---|---|
-| **Primary database** | Berkeley DB (all state) | LevelDB (UTXO set + block index); flat files (blocks) | v0.8 (2013) |
+| **Primary database** | Berkeley DB (indexes + wallet) | LevelDB (UTXO set + block index); flat files (blocks) | v0.8 (2013) |
 | **UTXO storage** | Full transactions with spent-flag vector | Only unspent outputs; outpoint-indexed, compact serialization | v0.8 |
 | **Coins cache** | No separate cache; BDB handled reads/writes | Dedicated in-memory write-back cache (default 450 MiB) | v0.15+ |
-| **Block storage** | Single BDB database | Sequential flat files (`blk*.dat`, ~128 MiB each) | v0.8 |
+| **Block storage** | Flat files (`blk*.dat`), ~2 GB rotation | Sequential flat files (`blk*.dat`, ~128 MiB each) | v0.8 |
 | **Undo data** | Not stored; reorg = re-validation from fork point | Dedicated `rev*.dat` files for fast rollback | v0.8 |
 | **Pruning** | Not available | Available; minimum retention 550 MiB | v0.11 (2015) |
 | **assumeUTXO** | Not available | Snapshot-based bootstrap with background verification | v27+ |
@@ -384,7 +384,6 @@ Fifteen years of development transformed the implementation, but the consensus-c
 **Unchanged since v0.1:**
 
 - SHA-256d proof of work
-- most-work chain selection
 - 2,016-block difficulty adjustment (including the original off-by-one bug)
 - UTXO model
 - 21 million supply cap
@@ -396,7 +395,7 @@ Fifteen years of development transformed the implementation, but the consensus-c
 
 **Transformed since v0.1:**
 
-- storage engine (BDB → LevelDB + flat files + SQLite)
+- storage engine (BDB indexes + flat block files → LevelDB indexes + flat files + SQLite wallet)
 - cryptography library (OpenSSL → libsecp256k1)
 - signature schemes (ECDSA only → ECDSA + Schnorr)
 - block capacity (no limit → 1 MB → 4 MWU)
@@ -410,6 +409,7 @@ Fifteen years of development transformed the implementation, but the consensus-c
 - fee market (free → fee-rate auction with RBF/CPFP)
 - process architecture (monolithic → modular)
 - soft fork activation (flag day → BIP 9/8)
+- chain selection rule (height only, `nBestHeight` → most-work chain, `nChainWork`)
 
 ## 12. Limits of this page
 

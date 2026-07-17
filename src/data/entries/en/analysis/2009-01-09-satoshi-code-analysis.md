@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Statistical analysis of Satoshi's Bitcoin source (v0.1.0–v0.3.19): coding-style fingerprint, commit times suggesting EST/CST, growth from 19,901 to 31,909 lines over 14 months, final-commit traits."
+description: "Statistical analysis of Satoshi's Bitcoin source (v0.1.0–v0.3.19): coding-style fingerprint, commit times suggesting EST/CST, growth from 19,901 to 31,909 lines over 23 months, final-commit traits."
 isSatoshi: true
 tags:
   - "satoshi-nakamoto"
@@ -64,7 +64,7 @@ inlineLinkKeywords:
 - **Timezone:** The near-total absence of commits between 06:00–12:00 UTC strongly suggests residence in EST (UTC-5) or CST (UTC-6)
 - **Commit activity period (SVN):** 420 days (October 2009 – December 2010), with commits on 109 unique days
 - **Coding style:** Consistent use of Hungarian notation variants, quad-slash (`////`) TODO markers, custom macros (`loop`, `foreach`, `CRITICAL_BLOCK`), and Windows-first development patterns (the chronological development-environment record is in [Satoshi's Windows-only development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/); the distribution and tooling-absence reading is in [the Bitcoin v0.1 distribution and tooling-anomalies analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies/))
-- **Code growth:** 19,901 → 31,909 lines (+60%) over 14 months
+- **Code growth:** 19,901 → 31,909 lines (+60%) over 23 months
 - **Final activity:** Security hardening, DoS mitigation, removal of centralized safe mode — work characteristic of someone preparing to hand off a project, the same pairing of changes shipped together in [the v0.3.19 SourceForge release](/BitcoinArchive/entries/aftermath/2010-12-15-bitcoin-v0319-released/), Satoshi's final release
 
 ## 3. The 75-day gap (March–May 2010)

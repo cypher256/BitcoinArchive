@@ -176,7 +176,7 @@ The interpreter processes opcodes sequentially. It pushes data items onto the st
 | **Available opcodes** | Full set including `OP_CAT`, `OP_MUL`, `OP_LSHIFT`, etc. | Many disabled (2010 security patch); subset re-enabled via tapscript (BIP 342) |
 | **Script types** | P2PK and P2PKH only | P2PKH, P2SH, P2WPKH, P2WSH, P2TR |
 | **Execution model** | scriptSig + scriptPubKey concatenated and executed | Separated evaluation; witness programs have their own validation rules |
-| **Size limits** | 10,000 byte script, 201 opcode limit | Same base limits; tapscript relaxes sigop counting |
+| **Size limits** | None at launch; 10,000-byte script and 201-opcode limits added by the 2010 security patch | Same base limits; tapscript relaxes sigop counting |
 
 ## 4. Signature schemes
 

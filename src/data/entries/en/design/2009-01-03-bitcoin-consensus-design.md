@@ -143,12 +143,12 @@ flowchart TD
 | Check | Rule | Introduced |
 |---|---|---|
 | **Header proof of work** | SHA-256d hash of header ≤ target encoded in `nBits` | v0.1 |
-| **Timestamp range** | Must be > median of previous 11 blocks (MTP) and < node's local time + 2 hours | v0.1 (MTP rule formalized later) |
+| **Timestamp range** | Must be > median of previous 11 blocks (MTP) and < node's local time + 2 hours | v0.1 (`GetMedianTimePast()`) |
 | **Block weight** | ≤ 4,000,000 weight units (4 MWU) | BIP 141 (2017); replaces the v0.1-era 1 MB byte-size limit |
 | **Merkle root** | Header's Merkle root must match the root recomputed from the block's transaction list | v0.1 |
 | **Coinbase validity** | Exactly one coinbase; output value ≤ block subsidy + sum of transaction fees; must include block height in scriptSig (BIP 34) | v0.1; BIP 34 added 2013 |
 | **Transaction validity** | Every input references an existing, unspent output; all scripts evaluate to true; no input is spent twice within the block | v0.1 |
-| **Signature operations** | Total sigops across all transactions ≤ limit (legacy: 20,000; SegWit: weighted) | v0.1; SegWit revised counting |
+| **Signature operations** | Total sigops across all transactions ≤ limit (legacy: 20,000; SegWit: weighted) | No limit in v0.1; 20,000 added mid-2010; SegWit revised counting |
 | **Transaction finality** | All transactions satisfy locktime and sequence constraints | v0.1; BIP 68/113 added relative timelocks |
 
 ## 4. Fork types and handling
@@ -184,7 +184,7 @@ flowchart TD
 | Event | Year | Type | Mechanism | Outcome |
 |---|---|---|---|---|
 | **Value overflow incident** | 2010 | Emergency soft fork | Patched `CheckTransaction` to reject outputs > 21 M BTC | Chain reorganized; invalid block orphaned within hours |
-| **BIP 66 (strict DER)** | 2015 | Soft fork | `IsSuperMajority` (950/1000 blocks) | Enforced canonical signature encoding |
+| **BIP 66 (strict DER)** | 2015 | Soft fork | `IsSuperMajority` (750/1000 enforce; 950/1000 reject old-version blocks) | Enforced canonical signature encoding |
 | **SegWit (BIP 141)** | 2017 | Soft fork | BIP 9 versionbits | Introduced witness discount, fixed malleability, enabled script versioning |
 | **Block size → BCH** | 2017 | Hard fork | Disagreement on scaling path | Bitcoin Cash split; incompatible 8 MB block-size rule created a permanent chain divergence |
 | **Taproot (BIP 341)** | 2021 | Soft fork | Speedy Trial (modified BIP 9) | Added Schnorr signatures, Tapscript, and MAST |
@@ -209,7 +209,7 @@ timeline
     section 2009–2012
         Flag day : Fixed block height or date. No miner signaling. Used for early changes (e.g., 1 MB block-size limit).
     section 2012–2015
-        IsSuperMajority : 950 of last 1,000 blocks must signal. Single-bit version field. Used for BIPs 34, 66, 65.
+        IsSuperMajority : Enforced at 750/1,000 blocks signaling; old-version blocks rejected at 950/1,000. Single-bit version field. Used for BIPs 34, 66, 65.
     section 2015–2017
         BIP 9 versionbits : Per-bit signaling in version field. Time-bounded activation window. Parallel deployments possible. Used for SegWit.
     section 2017–present
@@ -221,7 +221,7 @@ timeline
 | Mechanism | Signaling method | Threshold | Timeout behavior | Used for |
 |---|---|---|---|---|
 | **Flag day** | None (hardcoded height/time) | N/A | Activates unconditionally at the specified point | 1 MB limit, early patches |
-| **IsSuperMajority** | Block `nVersion` ≥ N | 950/1,000 blocks | No explicit timeout; stays pending until threshold is met | BIP 34, BIP 66, BIP 65 |
+| **IsSuperMajority** | Block `nVersion` ≥ N | 750/1,000 blocks to enforce; 950/1,000 to reject old-version blocks | No explicit timeout; stays pending until threshold is met | BIP 34, BIP 66, BIP 65 |
 | **BIP 9 versionbits** | Individual bit in `nVersion` | 95% of retarget period (1,916/2,016) | Fails if not locked in before end date; bit becomes available for reuse | CSV (BIP 68/112/113), SegWit (BIP 141) |
 | **BIP 8 (LOT=true)** | Individual bit in `nVersion` | 95% of retarget period | Mandatory lock-in at timeout (miners cannot prevent activation) | Proposed during Taproot activation debate; not the mechanism ultimately used |
 | **BIP 8 (LOT=false)** | Individual bit in `nVersion` | 95% of retarget period | Fails at timeout (same as BIP 9) | Proposed but not deployed standalone |
@@ -267,16 +267,16 @@ Bitcoin chose probabilistic finality because it enables an open, permissionless 
 | Feature | Satoshi era (v0.1, Jan 2009) | Modern Bitcoin Core, v27+ baseline |
 |---|---|---|
 | **Hash function** | SHA-256d (double SHA-256) | Same |
-| **Chain selection** | Most-work chain (`nChainWork`) | Same rule; implementation hardened with persistent `nChainWork` tracking |
+| **Chain selection** | Simple block-height comparison (`nBestHeight`); no cumulative-work tracking | Most-work chain (`nChainWork`, introduced v0.3.3, July 2010) replaces height comparison |
 | **Difficulty adjustment** | Every 2,016 blocks; off-by-one bug present | Same algorithm; off-by-one preserved as consensus (fixing it would be a hard fork) |
 | **Block size limit** | None in v0.1; 1 MB added mid-2010 | 4 MWU weight limit (BIP 141); ~1.5–2 MB observed |
 | **Coinbase maturity** | 100-block maturity rule | Same |
 | **Soft fork activation** | Direct code change (flag day) | BIP 9 versionbits / BIP 8 Speedy Trial |
 | **Script validation** | Combined scriptSig + scriptPubKey execution | Separated evaluation; SegWit witness programs; Taproot script-path spending |
-| **Timestamp validation** | Must be > previous block timestamp | Median-time-past (MTP) rule: must be > median of previous 11 blocks |
-| **Checkpoints** | Hardcoded block hashes as anti-DoS measure | `assumevalid` (skip script verification below a trusted block hash) replaces most checkpoint functionality |
+| **Timestamp validation** | Median-time-past (MTP) rule: must be > median of previous 11 blocks (`GetMedianTimePast()`, `nMedianTimeSpan = 11`) | Same rule, unchanged since v0.1 |
+| **Checkpoints** | None in v0.1; hardcoded checkpoints added July 2010 (v0.3.2) as an anti-DoS measure | `assumevalid` (skip script verification below a trusted block hash) replaces most checkpoint functionality |
 | **Header-first sync** | Not available; blocks downloaded and validated sequentially | Headers-first synchronization (download all headers, then request blocks in parallel) |
-| **Cryptography library** | OpenSSL for SHA-256 and ECDSA | Internal SHA-256 (with hardware acceleration); libsecp256k1 for ECDSA/Schnorr |
+| **Cryptography library** | Bundled Crypto++ for the SHA-256 mining path; OpenSSL for ECDSA and other hashing | Internal SHA-256 (with hardware acceleration); libsecp256k1 for ECDSA/Schnorr |
 
 ## 8. Limits of this page
 

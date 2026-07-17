@@ -204,16 +204,16 @@ The table below gives a brief structural comparison between the Satoshi-era v0.1
 | Aspect | Satoshi v0.1 (Jan 2009) | Modern Bitcoin Core, v27+ baseline |
 |---|---|---|
 | **Consensus rule enforcement** | Single `CheckBlock` / `CheckTransaction` path | Separated into consensus, policy, and validation layers |
-| **Chain selection** | Most-work chain (measured by cumulative difficulty) | Same rule; implementation hardened with `nChainWork` tracking |
+| **Chain selection** | Longest chain (block-height comparison, `nBestHeight`) | Most-work chain (`nChainWork`), since v0.3.3 |
 | **Script system** | Full opcode set including `OP_CAT`, `OP_MUL`, etc. | Many opcodes disabled (2010); SegWit witness versioning added (2017) |
 | **Transaction format** | Version 1, no witness | SegWit witness field (BIP 141), version 2 (BIP 68 / 112 / 113) |
 | **Block size** | No explicit limit in v0.1 (1 MB added in 2010) | 4 MWU weight limit (BIP 141), ~1.5–2 MB observed |
-| **Network protocol** | 7 message types | 27+ message types; compact blocks (BIP 152), addr v2 (BIP 155) |
+| **Network protocol** | 12 message types | 27+ message types; compact blocks (BIP 152), addr v2 (BIP 155) |
 | **Peer discovery** | Hardcoded IRC channel + `addr` messages | DNS seeds, `addrv2`, Tor/I2P/CJDNS support |
-| **Storage** | Berkeley DB for all state | LevelDB (UTXO set), flat block files (`blk*.dat`), undo files (`rev*.dat`) |
+| **Storage** | BDB for indexes and wallet; raw blocks in flat files (`blk*.dat`) | LevelDB (UTXO set), flat block files (`blk*.dat`), undo files (`rev*.dat`) |
 | **Mining** | CPU only, internal miner in client | External via `getblocktemplate` (BIP 22/23); Stratum v2 in ecosystem |
 | **Wallet** | Integrated in node binary, random keys | Descriptor wallets (BIP 380+), logical separation (experimental multiprocess in progress) |
-| **Cryptography** | OpenSSL for ECDSA + SHA-256 | libsecp256k1 (custom ECDSA/Schnorr), internal SHA-256 |
+| **Cryptography** | OpenSSL for ECDSA; bundled Crypto++ for the mining SHA-256 | libsecp256k1 (custom ECDSA/Schnorr), internal SHA-256 |
 
 *[Context: This table is deliberately terse. The detailed comparison with primary-source evidence for each evolution appears in the L2 page on historical evolution (§ 7, item 9).]*
 

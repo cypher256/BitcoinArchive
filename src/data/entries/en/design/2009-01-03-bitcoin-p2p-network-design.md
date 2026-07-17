@@ -184,7 +184,7 @@ sequenceDiagram
 | `feefilter` | Minimum fee rate (satoshis per kB) | Tells the peer not to relay transactions below this fee rate |
 | `sendheaders` | Empty | Requests that the peer announce new blocks via `headers` messages instead of `inv` |
 
-**Satoshi era vs v27+ baseline.** The v0.1 protocol defined approximately 7 message types and relayed full blocks to every peer. Modern Bitcoin Core (v27+ baseline) supports 27+ message types and uses compact blocks (BIP 152) as the default relay method, reducing block relay bandwidth by roughly 90% for well-connected nodes with overlapping mempools.
+**Satoshi era vs v27+ baseline.** The v0.1 protocol defined 12 message types and relayed full blocks to every peer. Modern Bitcoin Core (v27+ baseline) supports 27+ message types and uses compact blocks (BIP 152) as the default relay method, reducing block relay bandwidth by roughly 90% for well-connected nodes with overlapping mempools.
 
 ## 5. Transaction relay
 
