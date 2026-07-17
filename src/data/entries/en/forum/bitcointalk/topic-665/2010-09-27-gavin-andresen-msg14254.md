@@ -19,14 +19,17 @@ If the API was extended as I describe below, would it solve the same problems as
 
 Proposal:
 
+```
 + new send method: send TO a given bitcoin address specifically FROM the bitcoins sent to <label>
   (change generated would be automatically tagged with <label>)
 + add optional [label] param to getbalance.
 + new method: listsentbylabel
-  (returns array of [ "address" : "bcaddresssentto", "amount" : x.yz, "confirmations": n ]) 
+  (returns array of [ "address" : "bcaddresssentto", "amount" : x.yz, "confirmations": n ])
+```
 
-Each customer "account" would be a bitcoin <label>.  Account handling would look like:
+Each customer "account" would be a bitcoin \<label\>.  Account handling would look like:
 
+```
 Create account / create new address for account:
   getnewaddress [account_id_label]
    ... tell user "fund your account by sending coins to {the address returned}"
@@ -41,6 +44,7 @@ Show customer their balance:
 Show customer their transactions in/out
   listreceivedbylabel [account_id_label]
   listsentbylabel [account_id_label]
+```
 
 ---------
 
