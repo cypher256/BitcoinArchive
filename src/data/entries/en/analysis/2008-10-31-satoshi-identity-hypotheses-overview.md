@@ -279,7 +279,7 @@ Combined with the §2 profile match and the §3 stylometric layer, correspondenc
 
 ### 5.1 Satoshi's three-phase OS-tooling profile
 
-Bitcoin v0.1 was released as a Windows-only `.rar` archive built with Visual C++ 6.0 SP6 and MinGW GCC 3.4.5, used Hungarian-notation identifiers (`nValue`, `strHash`, `vTransactions`), and depended on wxWidgets, Boost, OpenSSL, and Berkeley DB. The full forensic trace is in the [Satoshi Windows development environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/), which also documents a three-phase trajectory of Satoshi's OS-tooling profile:
+Bitcoin v0.1 was released as a Windows-only `.rar` archive built with Visual C++ 6.0 SP6 and MinGW GCC 3.4.5, used Hungarian-notation identifiers (`nValue`, `strError`, `vtx`), and depended on wxWidgets, Boost, OpenSSL, and Berkeley DB. The full forensic trace is in the [Satoshi Windows development environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/), which also documents a three-phase trajectory of Satoshi's OS-tooling profile:
 
 | Phase | Period | OS profile |
 |---|---|---|

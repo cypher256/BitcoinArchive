@@ -272,7 +272,7 @@ gantt
 
 ### 5.1 サトシの三段階 OS ツールチェーン像
 
-ビットコイン v0.1 は Windows 専用の `.rar` アーカイブとして配布され、Visual C++ 6.0 SP6 と MinGW GCC 3.4.5 でビルドされ、ハンガリアン記法の識別子（`nValue`、`strHash`、`vTransactions`）を用い、wxWidgets、Boost、OpenSSL、Berkeley DB に依存していた。法医学的な全痕跡は[サトシの Windows 開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)に記録されており、同分析はサトシの OS ツールチェーン像が三段階に遷移したことも記述している：
+ビットコイン v0.1 は Windows 専用の `.rar` アーカイブとして配布され、Visual C++ 6.0 SP6 と MinGW GCC 3.4.5 でビルドされ、ハンガリアン記法の識別子（`nValue`、`strError`、`vtx`）を用い、wxWidgets、Boost、OpenSSL、Berkeley DB に依存していた。法医学的な全痕跡は[サトシの Windows 開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)に記録されており、同分析はサトシの OS ツールチェーン像が三段階に遷移したことも記述している：
 
 | 段階 | 期間 | OS 像 |
 |---|---|---|

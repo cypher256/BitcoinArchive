@@ -124,7 +124,7 @@ Visual C++ 6.0 was released by Microsoft in 1998; SP6 — the final service pack
 
 ### 2.2 Hungarian notation — the late-1990s Windows C++ style
 
-Variable names throughout v0.1 follow Microsoft's Hungarian notation (type-prefix conventions like `nValue`, `strHash`, `vTransactions`). In August 2014, Wladimir van der Laan filed [PR #4641](/BitcoinArchive/entries/forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style/) to remove the convention from new code, calling it a style that "has bugged me since the beginning." Hungarian notation is the stylistic marker of the Win32 / MFC tradition of the late 1990s through the early 2000s — the same era as Visual C++ 6.0. (Full statistical breakdown of Satoshi's coding-style fingerprint across v0.1.0 → v0.3.19 is in [the Satoshi code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/).)
+Variable names throughout v0.1 follow Microsoft's Hungarian notation (type-prefix conventions like `nValue`, `strError`, `vtx`). In August 2014, Wladimir van der Laan filed [PR #4641](/BitcoinArchive/entries/forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style/) to remove the convention from new code, calling it a style that "has bugged me since the beginning." Hungarian notation is the stylistic marker of the Win32 / MFC tradition of the late 1990s through the early 2000s — the same era as Visual C++ 6.0. (Full statistical breakdown of Satoshi's coding-style fingerprint across v0.1.0 → v0.3.19 is in [the Satoshi code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/).)
 
 ### 2.3 `.rar` packaging and Windows-only first releases
 

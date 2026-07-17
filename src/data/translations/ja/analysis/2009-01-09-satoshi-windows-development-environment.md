@@ -126,7 +126,7 @@ Visual C++ 6.0 はマイクロソフトが 1998 年にリリース、 SP6（最�
 
 ### 2.2 ハンガリアン記法 ― 1990 年代末の Windows C++ スタイル
 
-v0.1 全体で変数名はマイクロソフトのハンガリアン記法 (型接頭辞、例: `nValue`、 `strHash`、 `vTransactions`) に従っていた。 2014 年 8 月、ヴラディーミル・ヴァン・デア・ラーンは新規コードからこの慣習を削除する [PR #4641](/BitcoinArchive/ja/entries/forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style/) を提出し、「最初からずっと気に障っていた」と評した。ハンガリアン記法は 1990 年代末から 2000 年代初頭の Win32 / MFC 系譜のスタイル指標 ― Visual C++ 6.0 と同時代である。 (v0.1.0 → v0.3.19 にわたるサトシのコーディングスタイル指紋の完全な統計分析は[サトシコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)を参照。)
+v0.1 全体で変数名はマイクロソフトのハンガリアン記法 (型接頭辞、例: `nValue`、 `strError`、 `vtx`) に従っていた。 2014 年 8 月、ヴラディーミル・ヴァン・デア・ラーンは新規コードからこの慣習を削除する [PR #4641](/BitcoinArchive/ja/entries/forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style/) を提出し、「最初からずっと気に障っていた」と評した。ハンガリアン記法は 1990 年代末から 2000 年代初頭の Win32 / MFC 系譜のスタイル指標 ― Visual C++ 6.0 と同時代である。 (v0.1.0 → v0.3.19 にわたるサトシのコーディングスタイル指紋の完全な統計分析は[サトシコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)を参照。)
 
 ### 2.3 `.rar` パッケージングと Windows 専用初版
 
