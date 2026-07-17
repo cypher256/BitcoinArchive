@@ -452,6 +452,16 @@ sections at the foot of the entry:
   「その他の外部ソース」 (analysis / biography / design), EN
   "Other external sources".
 
+**Ordering and display cap.** `secondarySources[]` is
+priority-ordered: index 0 = most important, mirroring the
+`relatedEntries` convention (§ Related Entries, rule 1). The order
+matters because `<SourceCitation />` shows only the first 5 items
+immediately and folds the remainder into a native `<details>`
+("Show N more") block — the same display-layer cap used by
+RelatedEntries and CommentaryLinks. The data layer keeps the
+complete citation list; the UI leads with the sources the entry
+leans on most.
+
 **Rule.** The same URL must not appear in both fields. If it did,
 the citation block would list the link twice. When tempted to
 duplicate (e.g. because the existing `secondarySources[]` entry

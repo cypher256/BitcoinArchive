@@ -30,6 +30,15 @@ const t = useTranslations(lang);
 const isDerivativeType = entryType === 'analysis' || entryType === 'biography' || entryType === 'design';
 const primaryLabel = isDerivativeType ? 'entry.referenceSource' : 'entry.originalSource';
 const secondaryLabel = isDerivativeType ? 'entry.relatedSources' : 'entry.secondarySources';
+
+// Display cap, mirroring RelatedEntries / CommentaryLinks: the first
+// MAX_VISIBLE items (frontmatter order = editorial priority, see
+// STYLE_GUIDE "Source Citation") are always shown; the remainder folds
+// into a native <details> block. The data layer keeps the full list.
+const MAX_VISIBLE = 5;
+const visibleSources = secondarySources?.slice(0, MAX_VISIBLE) ?? [];
+const hiddenSources = secondarySources?.slice(MAX_VISIBLE) ?? [];
+const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenSources.length));
 ---
 
 <div class="source-citation">
@@ -38,11 +47,11 @@ const secondaryLabel = isDerivativeType ? 'entry.relatedSources' : 'entry.second
   {sourceNote && (
     <div class="source-note-block">{sourceNote}</div>
   )}
-  {secondarySources && secondarySources.length > 0 && (
+  {visibleSources.length > 0 && (
     <div class="secondary-sources">
       <h4>{t(secondaryLabel as any)}</h4>
       <ul>
-        {secondarySources.map((s) => (
+        {visibleSources.map((s) => (
           <li>
             <a href={s.url} target="_blank" rel="noopener">{s.name}</a>
             {s.note && (
@@ -51,6 +60,21 @@ const secondaryLabel = isDerivativeType ? 'entry.relatedSources' : 'entry.second
           </li>
         ))}
       </ul>
+      {hiddenSources.length > 0 && (
+        <details class="sources-more">
+          <summary>{showMoreLabel}</summary>
+          <ul>
+            {hiddenSources.map((s) => (
+              <li>
+                <a href={s.url} target="_blank" rel="noopener">{s.name}</a>
+                {s.note && (
+                  <span class="source-note">{lang === 'ja' ? `（${s.note}）` : ` — ${s.note}`}</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
     </div>
   )}
   {pdfMetadata && (
@@ -117,6 +141,24 @@ const secondaryLabel = isDerivativeType ? 'entry.relatedSources' : 'entry.second
     padding-left: 1.25rem;
   }
   .secondary-sources li {
+    margin-bottom: 0.25rem;
+  }
+  .sources-more {
+    margin-top: 0.5rem;
+  }
+  .sources-more > summary {
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    padding: 0.4rem 0;
+    user-select: none;
+    list-style-position: inside;
+  }
+  .sources-more > summary:hover {
+    color: var(--color-link);
+  }
+  .sources-more[open] > summary {
+    color: var(--color-text-muted);
     margin-bottom: 0.25rem;
   }
   .source-note {
