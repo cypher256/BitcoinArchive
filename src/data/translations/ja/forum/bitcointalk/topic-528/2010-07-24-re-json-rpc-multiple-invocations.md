@@ -23,12 +23,14 @@ translationStatus: complete
 このようなことを意味していると思うが、確信はない:
 
 Post:
+
 ```json
 {"method": "postMessage", "params": ["Hello all!"], "id": 99}
 {"method": "postMessage", "params": ["I have a question:"], "id": 101}
 ```
 
 Reply:
+
 ```json
 {"result": 1, "error": null, "id": 99}
 {"result": 1, "error": null, "id": 101}

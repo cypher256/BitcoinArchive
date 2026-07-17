@@ -42,6 +42,7 @@ JSON-RPC とコマンドラインの実装を SVN にアップロードした。
 RPC サーバーを有効にするには、-server スイッチを追加してほしい。デフォルトでは無効だ。
 
 クライアントコマンドはスイッチなしで、以下のように使う：
+
 ```
 bitcoin getblockcount
 bitcoin getdifficulty

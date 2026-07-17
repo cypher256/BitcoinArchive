@@ -20,6 +20,7 @@ SVN rev 150 has some code to try to auto-detect whether to use 4-way SSE2.  We 
 It uses the CPUID instruction to get the CPU brand, family, model number and stepping.  That's the easy part.  Knowing what to do with the model number is the hard part.  I was not able to find any table of family, model and stepping numbers for CPUs.  I had to go by various random reports I saw.
 
 Here's what I ended up with:
+
 ```cpp
   // We need Intel Nehalem or AMD K10 or better for 128bit SSE2
   // Nehalem = i3/i5/i7 and some Xeon
