@@ -27,6 +27,7 @@ translationStatus: complete
 パスワードを送る準備ができました。平文で送らなくて済むように、PGP 鍵を送ってもらえますか？
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- audit:quote-skip -->
 > ギャビンがいいだろう。彼を信頼しているし、責任感があり、プロフェッショナルで、技術的にも私よりはるかに Linux に精通している。
 
 <!-- speaker: Martti Malmi -->

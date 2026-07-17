@@ -254,8 +254,16 @@ function getNextBlockquote(parent, startIndex) {
  * between" (already chip-led — the primary marker pass above handles
  * it) from "next sibling isn't a blockquote at all" (this speaker
  * marker isn't introducing a quote here).
+ *
+ * `<!-- audit:quote-skip -->` marks a quote with no sourceEntryId to
+ * link to (deleted source / external quote) — it can never get a full
+ * chip — but the speaker's NAME is still known from the marker itself.
+ * Reported separately (auditSkip: true) so the caller can still render
+ * the lightweight name-only tag instead of leaving the blockquote with
+ * no visible attribution at all (see the auditSkip branch below).
  */
 function findContinuationTarget(parent, startIndex) {
+  let auditSkip = false;
   for (let i = startIndex; i < parent.children.length; i++) {
     const child = parent.children[i];
     if (child.type === 'html') {
@@ -264,10 +272,10 @@ function findContinuationTarget(parent, startIndex) {
       if (QUOTE_MARKER_RE.test(val)) return { chipLed: true };
       if (TONE_SKIP_RE.test(val)) continue;
       if (TONE_SKIP_END_RE.test(val)) continue;
-      // audit:quote-skip explicitly opts this blockquote out of attribution
+      if (AUDIT_QUOTE_SKIP_RE.test(val)) { auditSkip = true; continue; }
       return null;
     }
-    return child.type === 'blockquote' ? { blockquote: child } : null;
+    return child.type === 'blockquote' ? { blockquote: child, auditSkip } : null;
   }
   return null;
 }
@@ -277,8 +285,10 @@ export function remarkQuoteBlocks() {
 
   return (tree, vfile) => {
     const frontmatter = vfile.data?.astro?.frontmatter;
-    const quotes = frontmatter?.quotes;
-    if (!quotes || quotes.length === 0) return;
+    const quotes = frontmatter?.quotes ?? [];
+    const rawHasMarker = typeof vfile.value === 'string'
+      && (vfile.value.includes('<!-- quote:') || vfile.value.includes('<!-- audit:quote-skip'));
+    if (quotes.length === 0 && !rawHasMarker) return;
 
     const locale = detectLocale(vfile);
     const quotesMap = new Map(quotes.map(q => [q.id, q]));
@@ -303,10 +313,21 @@ export function remarkQuoteBlocks() {
     }
     const personSourceCount = (canon) => personSources.get(canon)?.size ?? 0;
 
+    // canonical person name → personSlug, from this file's own frontmatter
+    // `participants[]`. Used only for the audit:quote-skip name tag below —
+    // it needs an avatar/slug for a KNOWN archive figure (Satoshi, Malmi,
+    // etc.) but must not fabricate one for an external, untracked speaker
+    // (e.g. a one-off forum poster) who simply isn't in participants[].
+    const participantSlugByName = new Map();
+    for (const p of frontmatter?.participants ?? []) {
+      if (p?.name && p?.slug) participantSlugByName.set(canonicalizePersonName(p.name), p.slug);
+    }
+
     // Walk the tree and collect replacements (don't mutate during visit)
     const replacements = [];
     const speakerTagReplacements = [];
     const demotedMarkerReplacements = [];
+    const auditSkipTagReplacements = [];
     // Canonical persons already introduced by a <!-- quote: qN --> marker
     // seen so far, and logical sources already chipped, in document order
     // (unist-util-visit walks root children in order, so this is safe to
@@ -322,9 +343,25 @@ export function remarkQuoteBlocks() {
         const speakerName = speakerMatch[1];
         if (speakerName.toLowerCase() === 'reset') return;
         const canon = canonicalizePersonName(speakerName);
-        if (!attributedPersons.has(canon) || personSourceCount(canon) !== 1) return;
         const target = findContinuationTarget(parent, index + 1);
         if (!target || target.chipLed) return;
+        if (target.auditSkip) {
+          // No sourceEntryId exists for this quote (deleted/external
+          // source) so it can never get a full chip — but the speaker's
+          // name IS known from the marker. Render the same lightweight
+          // name-only tag used for chip continuations (avatar + bare
+          // name, no link/date) instead of leaving the border-color-only
+          // signal as the reader's only clue (2026-07-17: a reader
+          // couldn't tell whose words were in one of these blockquotes
+          // from the rendered page alone).
+          auditSkipTagReplacements.push({
+            node, index, parent, canon,
+            quote: { person: speakerName, personSlug: participantSlugByName.get(canon) ?? null },
+            blockquote: target.blockquote,
+          });
+          return;
+        }
+        if (!attributedPersons.has(canon) || personSourceCount(canon) !== 1) return;
         speakerTagReplacements.push({ node, index, parent, canon, quote: soleQuoteByPerson.get(canon), blockquote: target.blockquote });
         return;
       }
@@ -482,6 +519,11 @@ export function remarkQuoteBlocks() {
 
     // Bare-speaker continuation markers (see formatSpeakerTag).
     for (const item of speakerTagReplacements) applySpeakerTag(item, false);
+
+    // audit:quote-skip name tags (see the auditSkip branch above). The
+    // marker's own text is the only "chip-like" thing this quote will
+    // ever get, so clear it on suppression same as a demoted marker.
+    for (const item of auditSkipTagReplacements) applySpeakerTag(item, true);
 
     // Apply replacements (safe since we're only changing html node values)
     for (const { node, quote, locale: loc, blockquote } of replacements) {

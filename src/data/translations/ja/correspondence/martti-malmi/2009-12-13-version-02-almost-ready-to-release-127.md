@@ -24,6 +24,7 @@ translationStatus: complete
 ---
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- audit:quote-skip -->
 > バージョン 0.2 のリリースの時期がほぼ来た。時間があれば、この
 > リリース候補（添付）を試してもらえるか？問題がなく、見落としが
 > なければ、1〜2日でリリースできるかもしれない。
@@ -32,6 +33,7 @@ translationStatus: complete
 今のところ問題ありません。大丈夫そうです。
 
 <!-- speaker: Satoshi Nakamoto -->
+<!-- audit:quote-skip -->
 > セットアップの exe を zip にしたのは、メールサーバーが exe 添付を許可
 > しないと思うからだ。zip も通るかどうか分からないが、tar.gz なら
 > 確実に通ると思う。

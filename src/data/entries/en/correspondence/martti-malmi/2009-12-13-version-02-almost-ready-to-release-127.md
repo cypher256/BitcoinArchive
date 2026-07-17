@@ -31,6 +31,7 @@ secondarySources:
 
 No problems so far. Seems fine.
 
+<!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
 > I zipped the setup exe because I doubt the e-mail servers will allow
 > exe attachments.  I'm not sure it'll allow zip either, but pretty sure
