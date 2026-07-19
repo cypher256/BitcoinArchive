@@ -1,0 +1,343 @@
+{
+  "description": "Hand-curated data for the identity-suspect relation map embedded in analysis/2008-10-31-satoshi-identity-hypotheses-overview (<!-- chart: identity-suspect-map -->). Every edge states a relation DOCUMENTED by the archive; the evidence ids point at the entries that record it. Extracted from the 12 hypothesis + 12 biography pages (2026-07-18 sweep, all 94 candidate evidence ids verified to exist); stylometric ranking comparisons and shared-corpus-exclusion artifacts were deliberately left out — the board shows person-to-person relations only. Node x/y are hand-placed on a 1000x640 viewBox: the documented orbit (cited / contacted, groups A-B of §1) arcs down the right side, the named-by-others crowd (group C) arcs down the left. Edge kinds: cited (whitepaper citation, gold double line) / contact (documented pre-2011 interaction, green solid) / claim (third-party identification, purple dashed) / self (self-claim, magenta solid) / inter (between candidates, slate dotted).",
+  "nodes": [
+    {
+      "slug": "satoshi-nakamoto",
+      "nameEn": "Satoshi Nakamoto",
+      "nameJa": "サトシ・ナカモト",
+      "x": 500,
+      "y": 290,
+      "center": true
+    },
+    {
+      "slug": "adam-back",
+      "nameEn": "Adam Back",
+      "nameJa": "アダム・バック",
+      "x": 690,
+      "y": 140,
+      "entry": "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis",
+      "hookEn": "The first person Satoshi ever wrote to — now the top suspect",
+      "hookJa": "サトシが最初に接触した相手が、今や最有力候補",
+      "statusEn": "Denies it (Apr 2026)",
+      "statusJa": "本人は否定（2026年4月）"
+    },
+    {
+      "slug": "wei-dai",
+      "nameEn": "Wei Dai",
+      "nameJa": "ウェイ・ダイ",
+      "x": 870,
+      "y": 225,
+      "entry": "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis",
+      "hookEn": "His paper was reference [1]; his code shipped inside Bitcoin",
+      "hookJa": "論文は参考文献[1]、コードはSHA-256の中身だった",
+      "statusEn": "Denies it",
+      "statusJa": "本人は否定"
+    },
+    {
+      "slug": "nick-szabo",
+      "nameEn": "Nick Szabo",
+      "nameJa": "ニック・サボ",
+      "x": 870,
+      "y": 400,
+      "entry": "analysis/2013-12-05-szabo-satoshi-identity-hypothesis",
+      "hookEn": "Top of 3 of 4 stylometric studies — no documented contact",
+      "hookJa": "文体分析は4件中3件で首位、直接の接点はなし",
+      "statusEn": "Denies it, repeatedly",
+      "statusJa": "一貫して否定"
+    },
+    {
+      "slug": "len-sassaman",
+      "nameEn": "Len Sassaman",
+      "nameJa": "レン・サスマン",
+      "x": 810,
+      "y": 530,
+      "entry": "analysis/2011-07-03-sassaman-satoshi-identity-hypothesis",
+      "hookEn": "Died 68 days after Satoshi's last known email",
+      "hookJa": "サトシ最後のメールから68日後に死去",
+      "statusEn": "Died 2011, before the hypothesis existed",
+      "statusJa": "2011年死去（仮説の登場前）"
+    },
+    {
+      "slug": "hal-finney",
+      "nameEn": "Hal Finney",
+      "nameJa": "ハル・フィニー",
+      "x": 640,
+      "y": 505,
+      "entry": "analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis",
+      "hookEn": "First to receive Bitcoin — cleared by a race-day alibi",
+      "hookJa": "ビットコイン最初の受取人、レース当日のアリバイ",
+      "statusEn": "Died 2014; family denies it",
+      "statusJa": "2014年死去、遺族は否定"
+    },
+    {
+      "slug": "dorian-nakamoto",
+      "nameEn": "Dorian Nakamoto",
+      "nameJa": "ドリアン・ナカモト",
+      "x": 430,
+      "y": 540,
+      "entry": "analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis",
+      "hookEn": "Born Satoshi Nakamoto — he and Satoshi both denied it",
+      "hookJa": "戸籍名がサトシ・ナカモト、本人もサトシも否定",
+      "statusEn": "Denies it (and Satoshi's account posted a denial)",
+      "statusJa": "本人は否定（サトシ名義の投稿も否定）"
+    },
+    {
+      "slug": "craig-wright",
+      "nameEn": "Craig Wright",
+      "nameJa": "クレイグ・ライト",
+      "x": 170,
+      "y": 435,
+      "entry": "analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis",
+      "hookEn": "The only self-claimed Satoshi — ruled a forger by a UK court",
+      "hookJa": "自ら名乗った唯一の候補、法廷は偽造と認定",
+      "statusEn": "Self-claimed; COPA court found forgery (2024)",
+      "statusJa": "自称、COPA裁判が偽造認定（2024）"
+    },
+    {
+      "slug": "paul-le-roux",
+      "nameEn": "Paul Le Roux",
+      "nameJa": "ポール・ル・ルー",
+      "x": 120,
+      "y": 300,
+      "entry": "analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis",
+      "hookEn": "E4M coder turned crime boss — and maybe Satoshi",
+      "hookJa": "E4M開発者が犯罪組織の首領に転じ、サトシ候補にも",
+      "statusEn": "No comment (incarcerated since 2012)",
+      "statusJa": "無言（2012年から収監中）"
+    },
+    {
+      "slug": "peter-todd",
+      "nameEn": "Peter Todd",
+      "nameJa": "ピーター・トッド",
+      "x": 160,
+      "y": 175,
+      "entry": "analysis/2024-10-08-todd-satoshi-identity-hypothesis",
+      "hookEn": "HBO named him Satoshi over a 2010 reply posted as \"retep\"",
+      "hookJa": "「retep」名義の2010年の返信を根拠にHBOが名指し",
+      "statusEn": "Denies it",
+      "statusJa": "本人は否定"
+    },
+    {
+      "slug": "elon-musk",
+      "nameEn": "Elon Musk",
+      "nameJa": "イーロン・マスク",
+      "x": 245,
+      "y": 85,
+      "entry": "analysis/2017-11-22-elon-musk-satoshi-identity-hypothesis",
+      "hookEn": "Named by an ex-intern's blog post; denied within a week",
+      "hookJa": "元インターンの記事が名指し、1週間で本人否定",
+      "statusEn": "Denies it",
+      "statusJa": "本人は否定"
+    },
+    {
+      "slug": "isamu-kaneko",
+      "nameEn": "Isamu Kaneko",
+      "nameJa": "金子勇",
+      "x": 485,
+      "y": 80,
+      "entry": "analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis",
+      "hookEn": "Winny's creator — the only candidate with a Japanese name",
+      "hookJa": "Winny開発者、日本語の名前を持つ唯一の候補",
+      "statusEn": "Died 2013",
+      "statusJa": "2013年死去"
+    },
+    {
+      "slug": "james-donald",
+      "nameEn": "James A. Donald",
+      "nameJa": "ジェームズ・A・ドナルド",
+      "x": 370,
+      "y": 175,
+      "entry": "analysis/2008-11-02-james-donald-satoshi-identity-hypothesis",
+      "hookEn": "First to reply to the whitepaper — excluded after a meeting",
+      "hookJa": "ホワイトペーパー最初の返信者、対面取材で除外",
+      "statusEn": "Named 2021; investigator later excluded him",
+      "statusJa": "2021年に名指し、取材者は後に除外"
+    }
+  ],
+  "edges": [
+    {
+      "a": "satoshi-nakamoto",
+      "b": "adam-back",
+      "kind": "cited",
+      "en": "Whitepaper cites Hashcash; first pre-launch correspondent (Aug 2008)",
+      "ja": "論文がHashcashを引用、発表前に最初に文通した相手（2008年8月）",
+      "evidence": [
+        "aftermath/2008-08-20-satoshi-to-adam-back",
+        "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper"
+      ]
+    },
+    {
+      "a": "satoshi-nakamoto",
+      "b": "wei-dai",
+      "kind": "cited",
+      "en": "Whitepaper cites b-money as reference [1]; direct email (Aug 2008)",
+      "ja": "論文がb-moneyを参考文献[1]として引用、直接のメールも（2008年8月）",
+      "evidence": [
+        "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai",
+        "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper"
+      ]
+    },
+    {
+      "a": "satoshi-nakamoto",
+      "b": "hal-finney",
+      "kind": "contact",
+      "en": "First person-to-person Bitcoin transaction (10 BTC, Jan 12, 2009)",
+      "ja": "史上初の個人間ビットコイン送金の相手（10 BTC、2009年1月12日）",
+      "evidence": [
+        "aftermath/2009-01-12-first-bitcoin-transaction"
+      ]
+    },
+    {
+      "a": "satoshi-nakamoto",
+      "b": "james-donald",
+      "kind": "contact",
+      "en": "Posted the first public reply to the Bitcoin whitepaper (Nov 2008)",
+      "ja": "ホワイトペーパー告知への最初の公開返信者（2008年11月）",
+      "evidence": [
+        "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-03-james-donald-bitcoin-p2p-e-cash-paper"
+      ]
+    },
+    {
+      "a": "satoshi-nakamoto",
+      "b": "peter-todd",
+      "kind": "claim",
+      "en": "HBO's 2024 documentary named him, over a 2010 forum reply as \"retep\"",
+      "ja": "HBOの2024年作品が「retep」名義の2010年の返信を根拠に名指し",
+      "evidence": [
+        "aftermath/2024-10-08-hbo-money-electric-peter-todd"
+      ]
+    },
+    {
+      "a": "satoshi-nakamoto",
+      "b": "nick-szabo",
+      "kind": "claim",
+      "en": "Stylometric studies (2013 / 2014 / 2026) rank him closest to Satoshi",
+      "ja": "文体分析（2013・2014・2026）がサトシに最も近いと評価",
+      "evidence": [
+        "aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric"
+      ]
+    },
+    {
+      "a": "satoshi-nakamoto",
+      "b": "len-sassaman",
+      "kind": "claim",
+      "en": "2021 essay and 2026 documentary named him, after his 2011 death",
+      "ja": "2011年の死後、2021年の論考と2026年の作品が名指し",
+      "evidence": [
+        "aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history"
+      ]
+    },
+    {
+      "a": "satoshi-nakamoto",
+      "b": "dorian-nakamoto",
+      "kind": "claim",
+      "en": "Newsweek's 2014 cover story — retracted by events within hours",
+      "ja": "ニューズウィーク2014年の表紙記事、数時間で崩れた名指し",
+      "evidence": [
+        "aftermath/2014-03-06-newsweek-dorian-nakamoto"
+      ]
+    },
+    {
+      "a": "satoshi-nakamoto",
+      "b": "isamu-kaneko",
+      "kind": "claim",
+      "en": "Japanese forums and tabloids floated the Winny parallel (2013–)",
+      "ja": "日本のフォーラムとメディアがWinnyとの相似から浮上させた（2013年〜）",
+      "evidence": [
+        "aftermath/2013-07-06-isamu-kaneko-biography"
+      ]
+    },
+    {
+      "a": "satoshi-nakamoto",
+      "b": "paul-le-roux",
+      "kind": "claim",
+      "en": "Named in Evan Ratliff's 2019 book on the Le Roux organization",
+      "ja": "エヴァン・ラトリフの2019年の著書が候補として名指し",
+      "evidence": [
+        "aftermath/2019-02-19-paul-le-roux-biography"
+      ]
+    },
+    {
+      "a": "satoshi-nakamoto",
+      "b": "elon-musk",
+      "kind": "claim",
+      "en": "A former SpaceX intern's 2017 blog post named him",
+      "ja": "元SpaceXインターンの2017年の記事が名指し",
+      "evidence": [
+        "aftermath/2017-11-22-elon-musk-biography"
+      ]
+    },
+    {
+      "a": "satoshi-nakamoto",
+      "b": "craig-wright",
+      "kind": "self",
+      "en": "Declared himself Satoshi (2016); COPA court found forgery (2024)",
+      "ja": "2016年に自らサトシと宣言、2024年にCOPA裁判が偽造を認定",
+      "evidence": [
+        "aftermath/2016-05-02-craig-wright-bbc-economist-claim",
+        "aftermath/2024-03-14-copa-v-wright-ruling"
+      ]
+    },
+    {
+      "a": "adam-back",
+      "b": "wei-dai",
+      "kind": "inter",
+      "en": "Back's reply referred Satoshi to Dai's b-money (Aug 21, 2008)",
+      "ja": "バックの返信がサトシにダイのb-moneyを紹介（2008年8月21日）",
+      "evidence": [
+        "aftermath/2008-08-21-adam-back-to-satoshi"
+      ]
+    },
+    {
+      "a": "hal-finney",
+      "b": "adam-back",
+      "kind": "inter",
+      "en": "Finney's 2004 RPOW built on Back's Hashcash",
+      "ja": "フィニーの2004年のRPOWはバックのHashcashを土台にした",
+      "evidence": [
+        "aftermath/2019-08-21-hal-finney-rpow-recognition"
+      ]
+    },
+    {
+      "a": "hal-finney",
+      "b": "len-sassaman",
+      "kind": "inter",
+      "en": "PGP Inc. colleagues; 2026 documentary proposed them as co-authors",
+      "ja": "PGP社の同僚、2026年の作品は共同開発説を提示",
+      "evidence": [
+        "aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary"
+      ]
+    },
+    {
+      "a": "hal-finney",
+      "b": "dorian-nakamoto",
+      "kind": "inter",
+      "en": "Neighbors in Temple City for years — Forbes's 2014 lead",
+      "ja": "テンプルシティで長年のご近所、フォーブス2014年の着眼点",
+      "evidence": [
+        "aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor"
+      ]
+    },
+    {
+      "a": "nick-szabo",
+      "b": "wei-dai",
+      "kind": "inter",
+      "en": "Both on the private libtech list where Bit Gold and b-money emerged",
+      "ja": "Bit Goldとb-moneyが生まれた非公開のlibtechで同席",
+      "evidence": [
+        "aftermath/2005-12-29-nick-szabo-biography"
+      ]
+    },
+    {
+      "a": "adam-back",
+      "b": "craig-wright",
+      "kind": "inter",
+      "en": "Back testified in the COPA trial that ruled Wright's claim forged",
+      "ja": "ライトの主張を偽造と認定したCOPA裁判でバックが証言",
+      "evidence": [
+        "aftermath/2024-02-21-adam-back-retrospective-testimony",
+        "aftermath/2024-03-14-copa-v-wright-ruling"
+      ]
+    }
+  ]
+}

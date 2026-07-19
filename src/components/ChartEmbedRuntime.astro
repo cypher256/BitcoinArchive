@@ -25,6 +25,10 @@ import { mount as mountSvnCommitters } from '../scripts/svn-committers.js';
 import { mount as mountPatoshiMiningMachine } from '../scripts/patoshi-mining-machine.js';
 import { mount as mountExtranonceScatter } from '../scripts/extranonce-scatter.js';
 import { mount as mountNlsExchangeRate } from '../scripts/nls-exchange-rate.js';
+import { mount as mountSuspectMap } from '../scripts/suspect-relation-map.js';
+import suspectMapData from '../data/suspect-map/relations.json';
+import { resolveAvatar } from '../data/avatars.ts';
+import { participantDisplayNamesJaBySlug } from '../i18n/participants.ts';
 import supplyCurveSeries from '../data/supply-curves/series.json';
 import vanDorstData from '../data/derived/van-dorst-burrows-distribution.json';
 import satoshiTimelineData from '../data/satoshi-timeline/timeline.json';
@@ -88,6 +92,44 @@ const JPY_PER_USD = 160;
       '.chart-embed .scc-legend .legend-item.off{color:var(--color-text-muted);text-decoration:line-through;opacity:0.55;}' +
       '.chart-embed .scc-legend .legend-dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:5px;}' +
       '.chart-embed .scc-legend-hint{margin-top:0.4rem;font-size:0.76rem;color:var(--color-text-muted);font-style:italic;}' +
+      // ---- identity-suspect-map (srm). Light palette validated with the
+      // dataviz six-checks validator on #ffffff (all pass; CVD 7.3 in the
+      // 6-8 band is covered by the per-kind line styles as secondary
+      // encoding). Dark steps are the site's established dark chart
+      // tokens: the perceptual checks (CVD separation, normal-vision
+      // floor, contrast vs #0e1218) all pass; their lightness sits above
+      // the reference band by design-system choice, matching every other
+      // chart on the dark surface.
+      '.chart-embed[data-chart="identity-suspect-map"]{--srm-cited:#a16207;--srm-contact:#047857;--srm-claim:#7c3aed;--srm-self:#be185d;--srm-inter:#5a6470;}' +
+      ':root[data-mode="dark"] .chart-embed[data-chart="identity-suspect-map"]{--srm-cited:#fbbf24;--srm-contact:#34d399;--srm-claim:#a78bfa;--srm-self:#f472b6;--srm-inter:#97a0ab;}' +
+      '@media (prefers-color-scheme: dark){:root:not([data-mode="light"]) .chart-embed[data-chart="identity-suspect-map"]{--srm-cited:#fbbf24;--srm-contact:#34d399;--srm-claim:#a78bfa;--srm-self:#f472b6;--srm-inter:#97a0ab;}}' +
+      '.chart-embed .srm-wrap{position:relative;overflow-x:auto;}' +
+      '.chart-embed .srm-svg{display:block;width:100%;min-width:760px;height:auto;}' +
+      '.chart-embed .srm-edge{stroke-linecap:round;transition:opacity .15s;}' +
+      '.chart-embed .srm-e-cited{stroke:var(--srm-cited);stroke-width:3.5;}' +
+      '.chart-embed .srm-e-contact{stroke:var(--srm-contact);stroke-width:2;}' +
+      '.chart-embed .srm-e-claim{stroke:var(--srm-claim);stroke-width:2;stroke-dasharray:3 5;}' +
+      '.chart-embed .srm-e-self{stroke:var(--srm-self);stroke-width:2.5;stroke-dasharray:11 4;}' +
+      '.chart-embed .srm-e-inter{stroke:var(--srm-inter);stroke-width:1.6;stroke-dasharray:1.5 4.5;}' +
+      '.chart-embed .srm-node{cursor:pointer;transition:opacity .15s;}' +
+      '.chart-embed .srm-node .srm-ring{fill:var(--color-bg-alt);stroke:var(--color-border);stroke-width:2;}' +
+      '.chart-embed .srm-node:hover .srm-ring,.chart-embed .srm-node:focus .srm-ring{stroke:var(--color-accent);stroke-width:3;}' +
+      '.chart-embed .srm-center .srm-ring{stroke:var(--color-satoshi);stroke-width:3;}' +
+      '.chart-embed .srm-q{fill:var(--color-satoshi);font-family:var(--font-heading);font-size:46px;font-weight:700;}' +
+      '.chart-embed .srm-name{fill:var(--color-text);font-size:14.5px;font-weight:600;}' +
+      '.chart-embed .srm-focus .srm-edge{opacity:0.1;}' +
+      '.chart-embed .srm-focus .srm-edge.srm-hl{opacity:1;}' +
+      '.chart-embed .srm-focus .srm-node{opacity:0.3;}' +
+      '.chart-embed .srm-focus .srm-node.srm-hl{opacity:1;}' +
+      '.chart-embed .srm-card{position:absolute;transform:translate(-50%,-100%);max-width:260px;background:var(--color-bg);border:1px solid var(--color-border);border-radius:6px;padding:0.5rem 0.7rem;box-shadow:0 4px 14px rgba(0,0,0,0.18);pointer-events:none;opacity:0;transition:opacity .12s;z-index:5;}' +
+      '.chart-embed .srm-card.on{opacity:1;}' +
+      '.chart-embed .srm-card.below{transform:translate(-50%,0);}' +
+      '.chart-embed .srm-card-name{margin:0;font-weight:700;font-size:0.9rem;}' +
+      '.chart-embed .srm-card-hook{margin:0.15rem 0 0;font-size:0.82rem;}' +
+      '.chart-embed .srm-card-status{margin:0.15rem 0 0;font-size:0.76rem;color:var(--color-text-muted);}' +
+      '.chart-embed .srm-legend{display:flex;flex-wrap:wrap;gap:0.35rem 1.2rem;margin-top:0.7rem;font-size:0.82rem;color:var(--color-text);}' +
+      '.chart-embed .srm-legend .srm-legend-item{display:inline-flex;align-items:center;gap:0.45em;}' +
+      '.chart-embed .srm-legend svg{display:block;}' +
       '.chart-embed .ce-hint{font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:0.6rem;}' +
       '.chart-embed .nlsb-legend{display:flex;flex-wrap:wrap;gap:1rem;margin-top:0.75rem;font-size:0.82rem;color:var(--color-text-muted);}' +
       '.chart-embed .nlsb-legend-item{display:flex;align-items:center;gap:0.3rem;}' +
@@ -769,6 +811,74 @@ const JPY_PER_USD = 160;
   DRAWERS['assets-race'] = makeRaceDrawer(assetsRace);
   DRAWERS['wealth-race'] = makeRaceDrawer(wealthRace);
   DRAWERS['holders-race'] = makeRaceDrawer(holdersRace);
+
+  // ===== drawer: identity-suspect-map (hand-laid case board) =====
+  // Drawing lives in src/scripts/suspect-relation-map.js; the curated,
+  // archive-grounded node/edge data in src/data/suspect-map/relations.json
+  // (see that file's description for the curation rules).
+  DRAWERS['identity-suspect-map'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'The Suspect Board — 12 Named Candidates',
+        subtitle: 'Every line is a relation documented in this archive: gold = cited in the whitepaper, green = documented contact with Satoshi, purple = named as Satoshi by others, magenta = self-claim, slate = a tie between candidates. Hover a face to isolate their strings; click to open the full case file.',
+        aria: 'Relation map of the twelve named Satoshi candidates around a central question mark',
+        legend: [
+          ['cited', 'Cited in the whitepaper'],
+          ['contact', 'Documented contact'],
+          ['claim', 'Named by others'],
+          ['self', 'Self-claim'],
+          ['inter', 'Between candidates'],
+        ],
+        note: 'Positions are editorial; the evidence behind every line is compared dimension-by-dimension in the tables below (§2–§5).',
+      },
+      ja: {
+        title: '容疑者ボード — 名前の挙がった12人',
+        subtitle: 'すべての線はこのアーカイブに記録された関係を表す。金＝ホワイトペーパーで引用、緑＝サトシとの文書化された接触、紫＝第三者による名指し、マゼンタ＝本人の主張、灰＝候補者同士のつながり。顔にカーソルを合わせるとその人の糸だけが浮かび、クリックで事件簿（各仮説ページ）が開く。',
+        aria: '中央の疑問符を囲む、名前の挙がった12人のサトシ候補の相関図',
+        legend: [
+          ['cited', 'ホワイトペーパーで引用'],
+          ['contact', '文書化された接触'],
+          ['claim', '第三者による名指し'],
+          ['self', '本人の主張'],
+          ['inter', '候補者同士の関係'],
+        ],
+        note: '配置は編集上のもの。各線の根拠は下の比較表（§2〜§5）で層ごとに検証している。',
+      },
+    } as Record<string, any>)[lang];
+
+    var dash: Record<string, string> = { cited: '', contact: '', claim: '3 5', self: '11 4', inter: '1.5 4.5' };
+    var width: Record<string, string> = { cited: '3.5', contact: '2', claim: '2', self: '2.5', inter: '1.6' };
+    var legendHtml = T_.legend.map(function (item: string[]) {
+      return '<span class="srm-legend-item"><svg width="34" height="8" aria-hidden="true"><line x1="1" y1="4" x2="33" y2="4" stroke="var(--srm-' + item[0] + ')" stroke-width="' + width[item[0]] + '"' + (dash[item[0]] ? ' stroke-dasharray="' + dash[item[0]] + '"' : '') + ' stroke-linecap="round"/></svg>' + item[1] + '</span>';
+    }).join('');
+
+    host.innerHTML =
+      '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
+      '<div class="ce-map"></div>' +
+      '<div class="srm-legend">' + legendHtml + '</div>' +
+      '<p class="ce-note">' + T_.note + '</p>';
+
+    var localePrefix = base + (lang === 'ja' ? 'ja/' : '');
+    var model = {
+      ariaLabel: T_.aria,
+      nodes: (suspectMapData as any).nodes.map(function (n: any) {
+        return {
+          slug: n.slug,
+          name: lang === 'ja' ? ((participantDisplayNamesJaBySlug as any)[n.slug] ?? n.nameJa ?? n.nameEn) : n.nameEn,
+          href: n.center ? localePrefix + 'participants/' + n.slug + '/' : localePrefix + 'entries/' + n.entry + '/',
+          avatar: resolveAvatar(n.slug, base),
+          x: n.x, y: n.y,
+          hook: lang === 'ja' ? n.hookJa : n.hookEn,
+          status: lang === 'ja' ? n.statusJa : n.statusEn,
+          center: !!n.center,
+        };
+      }),
+      edges: (suspectMapData as any).edges.map(function (e: any) {
+        return { a: e.a, b: e.b, kind: e.kind, label: lang === 'ja' ? e.ja : e.en };
+      }),
+    };
+    mountSuspectMap(host.querySelector('.ce-map'), model);
+  };
 
   // ---- lazy-load chart-anim.js (plain script, no d3 dependency), then render ----
   // Only fetched when a chart-embed placeholder actually exists on the page,

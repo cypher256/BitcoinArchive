@@ -121,6 +121,8 @@ The twelve named candidates fall into three groups by how they entered Satoshi-i
 - **B. Cypherpunks with capability fit** — Hal Finney, Nick Szabo, Len Sassaman
 - **C. Third-party discovery, self-claim, or name-match** — Dorian Prentice Satoshi Nakamoto, Craig Wright, Peter Todd, Isamu Kaneko, Paul Le Roux, Elon Musk, James A. Donald
 
+<!-- chart: identity-suspect-map -->
+
 Per-candidate background is in each biography (linked from the §2.1 table), and external status is in the §2.1 table's *External status* column. Each candidate has a dedicated hypothesis entry, linked from the table's *Entry* column, where the case is argued in full. The four layers (§2 — §5) compare the candidates against Satoshi's documented public-record outline along independent axes. Cross-cutting observations across the four layers are in §6; combined limits in §7.
 
 ## 2. Layer 1 — Profile match
