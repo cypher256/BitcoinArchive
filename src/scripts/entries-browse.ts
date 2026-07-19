@@ -54,7 +54,11 @@ export function initEntriesBrowse() {
   // the first paint and the first client render agree (no reflow on load).
   var hasCreatedBtn = sortBtns.some(function(b) { return b.dataset.sort === 'created'; });
   var sortState = hasCreatedBtn ? { key: 'created', order: 'desc' } : { key: 'date', order: 'desc' };
+  var relevanceBtn = sortBtns.filter(function(b) { return b.dataset.sort === 'relevance'; })[0];
   // sort key -> { attr: card data-* suffix to read, label: date-axis label }.
+  // 'relevance' falls through to the event-date fallback below: it is a rank,
+  // not a date axis, so cards just show the most generic date (event) while
+  // sorted by it (search-2026-07-19 design).
   function axisInfo(key) {
     if (key === 'created') return { attr: 'created', label: uiLabels.added };
     if (key === 'updated') return { attr: 'updated', label: uiLabels.updated };
@@ -87,7 +91,12 @@ export function initEntriesBrowse() {
     if (k === 'updated') return rec.updatedTs || rec.dataset && rec.dataset.updated || rec.date || '';
     return (rec.dataset && rec.dataset.date) || rec.date || '';
   }
+  // 'relevance' has no axis to compare — return 0 so Array#sort (stable since
+  // ES2019 in every browser this site targets) leaves Algolia's own ranked
+  // order untouched. Browse mode never reaches this branch: it always falls
+  // back off 'relevance' before rendering (see update()).
   function cmp(a, b) {
+    if (sortState.key === 'relevance') return 0;
     var av = String(valOf(a, sortState.key)), bv = String(valOf(b, sortState.key));
     return sortState.order === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
   }
@@ -229,7 +238,7 @@ export function initEntriesBrowse() {
     // run — so Back from a result (or re-typing the same word) renders instantly
     // without spending another Algolia request.
     try {
-      var c = JSON.parse(sessionStorage.getItem('ftcache:' + indexName) || 'null');
+      var c = JSON.parse(sessionStorage.getItem('ftcache:v2:' + indexName) || 'null');
       if (c && c.q === q && c.ff === ff) { hits = c.hits; nbHits = c.nbHits; renderSearch(); return; }
     } catch (e) {}
     if (!algolia) { hits = []; renderSearch(); return; }
@@ -239,7 +248,7 @@ export function initEntriesBrowse() {
     } }]).then(function(r) {
       hits = r.results[0].hits || [];
       nbHits = r.results[0].nbHits || hits.length;
-      try { sessionStorage.setItem('ftcache:' + indexName, JSON.stringify({ q: q, ff: ff, hits: hits, nbHits: nbHits })); } catch (e) {}
+      try { sessionStorage.setItem('ftcache:v2:' + indexName, JSON.stringify({ q: q, ff: ff, hits: hits, nbHits: nbHits })); } catch (e) {}
       renderSearch();
     }).catch(function() {
       hits = [];
@@ -253,6 +262,11 @@ export function initEntriesBrowse() {
     list.hidden = searching;
     searchResults.hidden = !searching;
   }
+  // Tracks whether the PREVIOUS update() call was in search mode, so the
+  // relevance take-over below fires only on the browse->search EDGE (typing
+  // one more character while already searching must not re-force relevance
+  // over a date axis the reader just clicked — search-2026-07-19 design).
+  var wasSearchMode = false;
   function update() {
     var q = input.value.trim();
     // Keep the query in the URL so Back / refresh / bookmark restore the search.
@@ -263,7 +277,23 @@ export function initEntriesBrowse() {
       var n = Object.keys(selectedFacet(f)).length;
       if (n > 0) { b.textContent = ' (' + n + ')'; b.hidden = false; } else b.hidden = true;
     });
-    if (q.length >= MIN) {
+    var nowSearching = q.length >= MIN;
+    if (relevanceBtn) relevanceBtn.hidden = !nowSearching;
+    if (nowSearching && !wasSearchMode) {
+      // Just entered search: always start at relevance, overriding whatever
+      // date axis was restored from sessionStorage (todo's explicit rule —
+      // typing a query IS the reader asking "show me what matches").
+      activateSort('relevance', 'desc');
+    } else if (!nowSearching && sortState.key === 'relevance') {
+      // Leaving search with relevance still active: fall back to a date axis
+      // for browse (relevance has no meaning there) and persist the fallback
+      // itself, so a plain page reload later doesn't resurrect 'relevance'
+      // from sessionStorage (codex point 4).
+      activateSort(hasCreatedBtn ? 'created' : 'date', 'desc');
+      try { sessionStorage.setItem(SORT_KEY, JSON.stringify({ key: sortState.key, order: sortState.order })); } catch (e) {}
+    }
+    wasSearchMode = nowSearching;
+    if (nowSearching) {
       setMode(true);
       searchResults.innerHTML = '<p class="no-results">' + (L ? '検索中…' : 'Searching…') + '</p>';
       fetchSearch(q);
@@ -293,25 +323,38 @@ export function initEntriesBrowse() {
   });
 
   // ---- sort: works in both browse and search (re-sorts in place) ----
+  // 'relevance' is a rank, not a direction: it never shows ↑/↓ and clicking
+  // it again never toggles anything (search-2026-07-19 design, codex point 1).
   function activateSort(key, order) {
     sortState.key = key; sortState.order = order;
     sortBtns.forEach(function(b) {
       b.classList.remove('active');
+      var isRel = b.dataset.sort === 'relevance';
       if (b.dataset.sort === key) {
         b.classList.add('active');
         b.dataset.order = order;
-        b.textContent = sortLabel(b) + (order === 'asc' ? ' ↑' : ' ↓');
+        b.textContent = sortLabel(b) + (isRel ? '' : (order === 'asc' ? ' ↑' : ' ↓'));
       } else {
-        b.textContent = sortLabel(b) + (b.dataset.order === 'asc' ? ' ↑' : ' ↓');
+        b.textContent = sortLabel(b) + (isRel ? '' : (b.dataset.order === 'asc' ? ' ↑' : ' ↓'));
       }
     });
   }
   sortBtns.forEach(function(btn) {
     btn.addEventListener('click', function() {
       var key = btn.dataset.sort, order = btn.dataset.order;
-      if (btn.classList.contains('active')) order = order === 'asc' ? 'desc' : 'asc';
+      if (key === 'relevance') {
+        order = 'desc'; // unused for relevance; kept only for object shape
+      } else if (btn.classList.contains('active')) {
+        order = order === 'asc' ? 'desc' : 'asc';
+      }
       activateSort(key, order);
-      try { sessionStorage.setItem(SORT_KEY, JSON.stringify({ key: key, order: order })); } catch (e) {}
+      // 'relevance' is never a stored preference — every search entry
+      // re-derives it automatically (see update()), so persisting it would
+      // make the NEXT plain browse-mode page load wrongly replay it (codex
+      // point 3/4). Only the 3 date axes are reader preferences worth saving.
+      if (key !== 'relevance') {
+        try { sessionStorage.setItem(SORT_KEY, JSON.stringify({ key: key, order: order })); } catch (e) {}
+      }
       if (hits) renderSearch(); else renderBrowse();
     });
   });
@@ -390,7 +433,7 @@ export function initEntriesBrowse() {
       } else {
         qp = new URLSearchParams(location.search).get('q') || '';
         if (!qp) {
-          var cached = JSON.parse(sessionStorage.getItem('ftcache:' + indexName) || 'null');
+          var cached = JSON.parse(sessionStorage.getItem('ftcache:v2:' + indexName) || 'null');
           if (cached && cached.q) qp = cached.q;
         }
         input.value = qp;
@@ -402,6 +445,15 @@ export function initEntriesBrowse() {
 
   // Restore the query from the URL (Back / refresh / shared link).
   try { var q0 = new URLSearchParams(location.search).get('q'); if (q0) input.value = q0; } catch (e) {}
+  // Autofocus the search box, but ONLY on a genuine first visit: no ?q= (a
+  // reader who followed a search link is here to read results, not type) and
+  // never on a bfcache restore (that path is the separate `pageshow` handler
+  // above, which runs instead of this bottom-of-script code — so simply not
+  // calling focus() here already excludes it, no extra flag needed). Mobile
+  // browsers may not raise the keyboard from a script-driven focus() — that's
+  // fine, the requirement is the caret being ready, not the keyboard forcibly
+  // opening (search-2026-07-19 design, codex-reviewed).
+  if (!q0) { try { input.focus(); } catch (e) {} }
   // Hand off the pre-paint hide: visibility is now owned by setMode()/list.hidden.
   try { document.documentElement.classList.remove('entries-searching'); } catch (e) {}
   update();
