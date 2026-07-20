@@ -437,7 +437,7 @@ h1 { font-size: 2rem; font-weight: 700; }
 /* margin-top 2.4em (not the shared 1.5em): matches what
    .entry-content/.biography-content h2 already used, unified sitewide
    so index-page and dashboard h2s get the same breathing room. */
-h2 { font-size: 1.5rem; font-weight: 600; margin-top: 2.4em; }
+h2 { font-size: 1.625rem; font-weight: 600; margin-top: 2.4em; }
 h3 { font-size: 1.25rem; font-weight: 600; }
 h4 { font-size: 1.1rem; font-weight: 600; }
 
@@ -1663,7 +1663,7 @@ p:has(> strong:only-child):has(+ .figure-outer:has([data-kind="mermaid"])) {
      UI up slightly, which is intended. */
   html { font-size: 16px; }
   h1 { font-size: 1.6rem; }
-  h2 { font-size: 1.3rem; }
+  h2 { font-size: 1.4rem; }
   .container, .container-wide {
     padding: 0 1rem;
   }

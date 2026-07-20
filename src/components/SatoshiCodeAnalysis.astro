@@ -550,7 +550,16 @@ interface CodeGrowthPoint {
 <style>
   .satoshi-analysis {
     position: relative;
-    margin: var(--rhythm-block) 0;
+    /* Top margin intentionally omitted: --rhythm-block assumes a prose
+       paragraph precedes this component (see global.css), but this
+       entry's body ends at a bare "## 5. Visualizations" heading with
+       no lead-in paragraph (removed as AI-smell self-intro text in
+       a8e2f0463) -- adding the full prose-to-chart gap under a lone
+       heading reads as a broken empty section. .analysis-section's
+       own top margin below supplies the heading-to-heading rhythm
+       instead. Bottom margin keeps the standard rhythm entering
+       RelatedEntries / SourceCitation. */
+    margin: 0 0 var(--rhythm-block);
   }
 
   .analysis-section {
