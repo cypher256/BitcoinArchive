@@ -14,6 +14,7 @@ import WhaleAlertFortune from '../../../components/WhaleAlertFortune.astro';
 import BitcoinForkGenealogy from '../../../components/BitcoinForkGenealogy.astro';
 import DesignSeriesNav from '../../../components/DesignSeriesNav.astro';
 import ParentLink from '../../../components/ParentLink.astro';
+import { DESIGN_SERIES } from '../../../data/design-series';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from '../../../i18n/utils';
 import Avatar from '../../../components/Avatar.astro';
@@ -50,8 +51,22 @@ const hasMath = /\$\$/.test(entry.body ?? '');
 const allEntries = await getCollection('entries_ja');
 const sorted = allEntries.filter((e) => e.data.type !== 'biography').sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
 const currentIndex = sorted.findIndex((e) => e.id === entry.id);
-const prev = currentIndex > 0 ? sorted[currentIndex - 1] : null;
-const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
+
+// All 12 design entries share the same frontmatter `date`, so the date sort
+// above carries no real ordering signal between them. Follow the same
+// L0 -> L1 #1..#8 -> L2 #9..#11 series order as DesignSeriesNav instead.
+let prev, next;
+if (entry.data.type === 'design') {
+  const bareSlug = entry.id.replace(/^design\//, '');
+  const seriesIndex = DESIGN_SERIES.findIndex((e) => e.slug === bareSlug);
+  const prevSlug = seriesIndex > 0 ? DESIGN_SERIES[seriesIndex - 1].slug : null;
+  const nextSlug = seriesIndex >= 0 && seriesIndex < DESIGN_SERIES.length - 1 ? DESIGN_SERIES[seriesIndex + 1].slug : null;
+  prev = prevSlug ? allEntries.find((e) => e.id === `design/${prevSlug}`) ?? null : null;
+  next = nextSlug ? allEntries.find((e) => e.id === `design/${nextSlug}`) ?? null : null;
+} else {
+  prev = currentIndex > 0 ? sorted[currentIndex - 1] : null;
+  next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
+}
 
 const threadId = resolveThreadId(entry);
 const threadMessages = threadId

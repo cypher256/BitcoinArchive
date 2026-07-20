@@ -14,16 +14,16 @@
  * as `{entry.data.type === 'design' && <DesignSeriesNav lang={lang}
  * slug={entry.id} />}` immediately before `<Content />`.
  *
- * When a new design page is added, update the SERIES list below in
- * the order (L0 → L1 #1..#8 → L2 #9..#11) and add the slug + EN/JA
- * title pair. The level field controls which subgroup the page
- * appears under.
+ * The series order itself lives in ../data/design-series.ts (shared with
+ * the prev/next logic in both [...slug].astro pages) -- add new pages
+ * there, not here.
  *
  * The component is `<details>` by default to keep mobile compact;
  * the `<summary>` always shows the current location so the user
  * can identify their position even while collapsed.
  */
 import { localePath } from '../i18n/utils';
+import { DESIGN_SERIES, type SeriesEntry } from '../data/design-series';
 
 interface Props {
   lang: 'en' | 'ja';
@@ -32,101 +32,7 @@ interface Props {
 
 const { lang, slug } = Astro.props;
 
-type Level = 'L0' | 'L1' | 'L2';
-interface SeriesEntry {
-  slug: string;
-  level: Level;
-  index: number; // 0 for L0; 1..8 for L1; 9..11 for L2
-  titleEn: string;
-  titleJa: string;
-}
-
-const SERIES: SeriesEntry[] = [
-  {
-    slug: '2009-01-03-bitcoin-system-design-overview',
-    level: 'L0',
-    index: 0,
-    titleEn: 'System design overview',
-    titleJa: 'システム全体設計',
-  },
-  {
-    slug: '2009-01-03-bitcoin-p2p-network-design',
-    level: 'L1',
-    index: 1,
-    titleEn: 'P2P network design',
-    titleJa: 'P2P ネットワーク設計',
-  },
-  {
-    slug: '2009-01-03-bitcoin-transaction-design',
-    level: 'L1',
-    index: 2,
-    titleEn: 'Transaction design',
-    titleJa: 'トランザクション設計',
-  },
-  {
-    slug: '2009-01-03-bitcoin-block-chain-design',
-    level: 'L1',
-    index: 3,
-    titleEn: 'Block & chain design',
-    titleJa: 'ブロック・チェーン設計',
-  },
-  {
-    slug: '2009-01-03-bitcoin-consensus-design',
-    level: 'L1',
-    index: 4,
-    titleEn: 'Consensus design',
-    titleJa: 'コンセンサス設計',
-  },
-  {
-    slug: '2009-01-03-bitcoin-monetary-design',
-    level: 'L1',
-    index: 5,
-    titleEn: 'Monetary design',
-    titleJa: '貨幣設計',
-  },
-  {
-    slug: '2009-01-03-bitcoin-cryptography-design',
-    level: 'L1',
-    index: 6,
-    titleEn: 'Cryptography design',
-    titleJa: '暗号設計',
-  },
-  {
-    slug: '2009-01-03-bitcoin-storage-design',
-    level: 'L1',
-    index: 7,
-    titleEn: 'Storage design',
-    titleJa: 'ストレージ設計',
-  },
-  {
-    slug: '2009-01-03-bitcoin-wallet-design',
-    level: 'L1',
-    index: 8,
-    titleEn: 'Wallet design',
-    titleJa: 'ウォレット設計',
-  },
-  {
-    slug: '2009-01-03-bitcoin-architecture-evolution',
-    level: 'L2',
-    index: 9,
-    titleEn: 'Architecture evolution (Satoshi era vs v27+)',
-    titleJa: 'アーキテクチャー進化（サトシ時代 vs v27+）',
-  },
-  {
-    slug: '2009-01-03-bitcoin-ecosystem-design',
-    level: 'L2',
-    index: 10,
-    titleEn: 'Ecosystem design (Layer 2, sidechains)',
-    titleJa: 'エコシステム設計（Layer 2・サイドチェーン）',
-  },
-  {
-    slug: '2009-01-03-bitcoin-security-model',
-    level: 'L2',
-    index: 11,
-    titleEn: 'Security model',
-    titleJa: 'セキュリティーモデル',
-  },
-];
+const SERIES = DESIGN_SERIES;
 
 const L0 = SERIES.find((e) => e.level === 'L0')!;
 const L1 = SERIES.filter((e) => e.level === 'L1');
@@ -208,7 +114,12 @@ const l2Label = lang === 'ja' ? 'L2 — 横断・比較' : 'L2 — Cross-cutting
 
 <style>
   .design-series-nav {
-    margin: var(--rhythm-block) 0;
+    /* Bottom side uses --rhythm-cluster, not --rhythm-block: every
+       design entry's body opens with a hero image (see STYLE_GUIDE.md
+       "Hero Images"), itself a boxed visual block rather than prose, so
+       this follows the same tightened-adjacency rule as
+       .thread-banner + .thread-banner etc. in global.css. */
+    margin: var(--rhythm-block) 0 var(--rhythm-cluster);
     padding: 0;
     border: 1px solid var(--color-border);
     border-radius: 6px;
