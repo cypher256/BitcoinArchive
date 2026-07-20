@@ -978,6 +978,20 @@ img {
   height: auto;
 }
 
+/* Hero images (STYLE_GUIDE.md "Hero Images") are always generated at a
+   fixed 1600x900 (16:9) ratio, but the plain markdown image syntax used
+   to embed them (`![alt](path)`) can't carry width/height attributes, so
+   the rendered <img> has none -- the browser can't reserve space until
+   the PNG downloads, causing a layout shift on first paint. Every hero
+   image shares the same ratio, so pin it in CSS instead of touching the
+   markdown pipeline. */
+.entry-content img[src*="/images/analysis/"][src$="-hero.png"],
+.biography-content img[src*="/images/analysis/"][src$="-hero.png"] {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  display: block;
+}
+
 /* Mermaid mindmap: force light text on root and node labels in dark mode.
    The mindmap diagram type uses inline fills that don't track our
    --mermaid-text token, so the default dark text becomes invisible on
