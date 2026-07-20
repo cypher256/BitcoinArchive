@@ -34,7 +34,7 @@ participants:
     slug: "isamu-kaneko"
 description: "繰り返し挙げられるサトシ候補を、プロファイル整合・文体計量・直接通信・開発環境の 4 つの独立したレイヤで比較する。「個別」列は各候補の仮説ページにリンク。"
 isSatoshi: false
-homeOrder: 1
+homeOrder: 2
 tags:
   - "satoshi-identity"
   - "analysis"

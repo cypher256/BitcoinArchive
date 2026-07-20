@@ -1,5 +1,5 @@
 ---
-title: "ビットコインがデジタルゴールドと呼ばれる理由 ― 二層の非中央集権と 6 つの構造的特徴"
+title: "ビットコインはなぜ価値があるのか — デジタルゴールドを支える 6 つの特徴"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "bitcoin-pdf"
@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "ビットコインがデジタルゴールドと呼ばれる根拠を、システム層と人・組織層の二層非中央集権、および 6 つの構造的特徴の組み合わせとして読む。"
 isSatoshi: false
-homeOrder: 6
+homeOrder: 1
 tags:
   - "analysis"
   - "monetary-policy"

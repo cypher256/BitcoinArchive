@@ -34,7 +34,7 @@ participants:
     slug: "isamu-kaneko"
 description: "Recurring Satoshi candidates aligned across four independent layers — profile match, stylometric attribution, direct correspondence, and development environment."
 isSatoshi: false
-homeOrder: 1
+homeOrder: 2
 tags:
   - "satoshi-identity"
   - "analysis"

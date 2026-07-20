@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "「サトシ・ナカモト」仮名を 1980〜90 年代のサイバーパンク／テクノオリエンタリズム記号空間に対して構造的に読む。記述的観察、作者意図の主張ではない。"
 isSatoshi: false
-homeOrder: 2
+homeOrder: 3
 tags:
   - "cyberpunk"
   - "techno-orientalism"

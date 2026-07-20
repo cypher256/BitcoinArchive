@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Structural reading of how \"Satoshi Nakamoto\" remained unidentified across development, public phase, and withdrawal. Six layers: pseudonym, channels, language, env, genesis constants, handover."
 isSatoshi: false
-homeOrder: 5
+homeOrder: 6
 tags:
   - "satoshi-anonymity"
   - "pseudonym-analysis"
