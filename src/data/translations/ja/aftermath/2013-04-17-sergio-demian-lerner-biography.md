@@ -37,6 +37,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![ブロックチェーンの連なりの中で複数のブロックが強調表示され「Patoshi ブロック」として囲まれている図解。ナンス値のデータバーの一部が帯状に強調され、1 つの CPU アイコンから 5 本の並列スレッドが枝分かれし、他の初期マイナーを表す複数の独立した箱と対比されている。下部には 2013 年から 2020 年にかけての年表がある。](/BitcoinArchive/images/analysis/2013-04-17-sergio-demian-lerner-biography-hero.png)
+
 2013 年 4 月 17 日、アルゼンチンの暗号学者セルジオ・デミアン・ラーナーが自身のブログ Bitslog で[「サトシ・ナカモトの正当な財産」](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)を公開した。最初の 36,288 ブロック分の ExtraNonce フィールドを追跡し、ビットコインの最初の 1 年間に約 100 万 BTC を採掘した単一の実体を特定した。これらのコインは事実上一度も使われていなかった。5 か月後、ラーナーは同じマイナーの[ナンス値に第 2 の指紋を発見](/BitcoinArchive/ja/entries/aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery/)、2019 年には[このパターンを「Patoshi」と命名](/BitcoinArchive/ja/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/)し、件数を約 22,000 ブロック・約 110 万 BTC に修正、2020 年には[採掘機を再構成](/BitcoinArchive/ja/entries/aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine/) —— 単一の高性能 CPU が 5 つにナンス空間分割されたスレッドを並列実行、他の初期マイナーより約 4.3 倍速い構成だった。
 
 ラーナーの解析はビットコイン史上最も重要なブロックチェーンフォレンジック研究である。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は単一マシンでビットコイン総量 2,100 万のおよそ 5% を採掘し、一度も使わないことを選んだことを確立した。

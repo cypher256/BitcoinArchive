@@ -45,6 +45,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色の背景に、二つの日付を結ぶ点線の矢印、赤いスタンプが押された書類の束、裁判を象徴する小槌、そして輪郭だけの人影とそれにそぐわない身元プレートを配置したイラスト。](/BitcoinArchive/images/analysis/2016-05-02-craig-wright-biography-hero.png)
+
 2016 年 5 月 2 日、クレイグ・ライトは [BBC、The Economist、GQ との連携インタビュー](/BitcoinArchive/ja/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/)で、自らが[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)であると公言した。暗号学的証明 —— 初期のビットコインブロックに関連する鍵で署名したメッセージ —— を提示した。数時間のうちに、セキュリティ研究者たちはこの「署名」が新規生成ではなく 2009 年のビットコイン取引から既存の署名を再利用したものだったことを示した。
 
 8 年後の 2024 年 3 月 14 日、英国高等法院のメラー判事は、暗号オープン特許アライアンス（COPA）が提起した訴訟で[判決を下した](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/):

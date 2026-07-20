@@ -36,6 +36,8 @@ relatedEntries:
   - aftermath/2011-03-17-pieter-wuille-biography
 ---
 
+![A faceless silhouette beside a Bitcoin Magazine cover mockup, a code-editor panel of Python commands, and a branching timeline running from 2011 through 2014](/BitcoinArchive/images/analysis/2011-09-01-vitalik-buterin-biography-hero.png)
+
 In 2011, a 17-year-old Russian-Canadian named Vitalik Buterin couldn't afford to buy or mine bitcoin, so he wrote articles for it instead — five bitcoins per article (roughly $3.50 each at the time) at Mihai Alisie's *Bitcoin Weekly*. The writing led him to co-found [*Bitcoin Magazine*](/BitcoinArchive/entries/aftermath/2012-05-01-bitcoin-magazine-launch/) in 2012 and to author dozens of long-form pieces on Bitcoin's protocol mechanics through 2014. In late 2013 he wrote the Ethereum whitepaper, launching the network's mainnet on July 30, 2015 at age 21.
 
 Buterin was born January 31, 1994 in Kolomna, Russia and raised in Canada from age 6. This entry covers his 2011–2014 Bitcoin period; his later [Ethereum](/BitcoinArchive/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/) work is outside the BitcoinArchive's documentary scope.

@@ -36,6 +36,8 @@ relatedEntries:
   - "analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis"
 ---
 
+![A faceless silhouette stands at a house doorway beside a stylized magazine-cover illustration, two overlapping tag icons, a small map linking two houses, and a coin-stack icon with an upward arrow, on a dark navy background with gold and red accents.](/BitcoinArchive/images/analysis/2014-03-06-dorian-nakamoto-biography-hero.png)
+
 On March 6, 2014, [Newsweek published "The Face Behind Bitcoin"](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) — a cover story claiming the magazine had found Satoshi Nakamoto. The man it named, Dorian Prentice Satoshi Nakamoto, was a 64-year-old Japanese-American engineer in Temple City, California, with no documented connection to cryptography or Bitcoin. The next day, the long-dormant Satoshi P2P Foundation account briefly returned to [post a single line](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/):
 
 > "I am not Dorian Nakamoto."

@@ -37,6 +37,8 @@ relatedEntries:
   - analysis/2008-10-31-cypherpunk-independent-arrival
 ---
 
+![Dark navy infographic: an envelope passes through three relay circles into a faceless, featureless head-and-neck silhouette; beside it, a small grid highlights a hidden dot pattern, and a horizontal timeline below marks three dates.](/BitcoinArchive/images/analysis/2011-07-03-len-sassaman-biography-hero.png)
+
 On April 26, 2011, [Satoshi sent his last known email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/). Sixty-eight days later, on July 3, 2011, the cypherpunk cryptographer Len Sassaman died by suicide in Belgium. He was 31. Four weeks after that, at Black Hat USA 2011, [Dan Kaminsky revealed an ASCII-art tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) to Sassaman that he had embedded into the Bitcoin blockchain. From 2013 onward, the proximity of those two dates (Satoshi gone, Sassaman dead) pulled a [Satoshi-identity hypothesis](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) toward his name.
 
 Sassaman (1980 – July 3, 2011) was an American cryptographer and privacy researcher who worked at PGP Inc. alongside [Hal Finney](/BitcoinArchive/participants/hal-finney/), led development of the Mixmaster anonymous remailer, co-founded the CodeCon conference with Bram Cohen, and at the time of his death was a PhD candidate at the COSIC research group at KU Leuven in Belgium. He did not appear in the public record as a Bitcoin developer or correspondent of Satoshi during 2008–2011; his relevance to this archive is therefore confined to the posthumous tribute and the later identity-hypothesis discourse.

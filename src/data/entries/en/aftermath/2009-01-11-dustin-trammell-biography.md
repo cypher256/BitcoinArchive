@@ -51,6 +51,8 @@ relatedEntries:
   - aftermath/2009-01-12-trammell-to-satoshi-upgrade-issues
 ---
 
+![Abstract, faceless illustration of the earliest Bitcoin network: a terminal console window, two node icons linked by a dashed line with a glowing coin labeled 25 BTC between them, a shield-and-padlock icon, and scattered nodes connected across a dark grid background.](/BitcoinArchive/images/analysis/2009-01-11-dustin-trammell-biography-hero.png)
+
 On January 11, 2009, three days after Bitcoin v0.1's [public release](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/), an Austin-based infosec researcher named Dustin Trammell downloaded the software, ran it, and [emailed Satoshi](/BitcoinArchive/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/) the same day. Three days after that, on January 14, 2009, [Satoshi sent him 25 BTC](/BitcoinArchive/entries/aftermath/2009-01-13-satoshi-to-trammell-send-coins/) as a test transaction — the second-known person-to-person Bitcoin transfer in history, after the [10 BTC sent to Hal Finney two days earlier](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/).
 
 Trammell is a cybersecurity researcher based in Austin, Texas, known in the infosec community for vulnerability and exploit-development work.

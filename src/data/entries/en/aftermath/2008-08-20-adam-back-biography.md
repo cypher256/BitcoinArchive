@@ -48,6 +48,8 @@ relatedEntries:
   - "aftermath/2008-08-21-satoshi-to-adam-back-b-money"
 ---
 
+![Editorial infographic titled "Adam Back 1970–," showing a stamped Hashcash proof-of-work card linked by a dashed line to an email-style "Incoming Message" card from Satoshi Nakamoto dated Aug 20, 2008, a small terminal icon reading "hashcash / work = verified," and a horizontal timeline marking 1997, 2008, 2014, and 2024.](/BitcoinArchive/images/analysis/2008-08-20-adam-back-biography-hero.png)
+
 On August 20, 2008, an email arrived in Adam Back's inbox. The sender called himself [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and asked about Hashcash citation format for an upcoming paper on a "new electronic cash system." Eleven years earlier, in March 1997, Back had announced [Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) on the cypherpunks mailing list. He answered the next day with the citation, then referred Satoshi to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s [b-money](/BitcoinArchive/entries/threads/emails/cypherpunks/b-money-protocol/). The same day, Satoshi replied:
 
 <!-- speaker: Satoshi Nakamoto -->

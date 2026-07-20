@@ -39,6 +39,8 @@ relatedEntries:
   - aftermath/2009-05-01-martti-malmi-biography
 ---
 
+![A faceless silhouette portrait beside a "First Known Dollar Rate" panel showing $1.00 = 1,309.03 BTC, a cost-of-production formula gauge, a first fiat-trade panel, and a small timeline of three dated milestones](/BitcoinArchive/images/analysis/2009-10-05-newlibertystandard-biography-hero.png)
+
 On October 5, 2009, a pseudonymous user named NewLibertyStandard [published Bitcoin's first dollar-denominated exchange rate](/BitcoinArchive/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/): **$1.00 = 1,309.03 BTC** — about $0.00076 per coin. The rate came from a cost-of-production formula: average annual electricity cost of a high-CPU computer, divided by 12 months and by the number of bitcoins mined over the preceding 30 days. A week later, on [October 12, 2009](/BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/), they paid [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) $5.02 via PayPal for 5,050 BTC — the first known bitcoin-for-fiat transaction.
 
 NewLibertyStandard's real-world identity has never been publicly revealed. They are BitcoinTalk user #26 (registered January 19, 2010) and were active until December 2012. On [February 5, 2010](/BitcoinArchive/entries/aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal/) they proposed adopting the Thai baht symbol (฿) and the three-letter currency code "BTC" — the BTC ticker became the universal standard.

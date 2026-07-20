@@ -36,6 +36,8 @@ relatedEntries:
   - analysis/2026-05-24-satoshi-design-vs-current-reality
 ---
 
+![A dark-blue infographic with a faceless silhouette profile on a timeline flanked by a paper icon and a document icon, plus a stacked gold-and-teal layers diagram and a small-device-versus-document comparison below.](/BitcoinArchive/images/analysis/2008-11-02-james-donald-biography-hero.png)
+
 Two days after [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) [posted the Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) to the cryptography mailing list on October 31, 2008, James A. Donald [became the first person to publicly respond](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald/):
 
 > "We very, very much need such a system, but the way I understand your proposal, it does not seem to scale to the required size."

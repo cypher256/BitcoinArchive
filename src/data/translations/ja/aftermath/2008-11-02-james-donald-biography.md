@@ -37,6 +37,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色の背景に、顔のない横顔シルエットがタイムライン上に据えられ、両脇に紙のアイコンと文書アイコンが並ぶインフォグラフィック。下部には金と青緑の層が重なる図と、小型端末と文書を対比させた図が添えられている。](/BitcoinArchive/images/analysis/2008-11-02-james-donald-biography-hero.png)
+
 2008 年 10 月 31 日に[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が暗号学メーリングリストに[ビットコインホワイトペーパーを投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)してから 2 日後、ジェームズ・A・ドナルドが[最初に公に返信した](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald/):
 
 > 「こういうシステムは切実に必要だ。だが、この方式では必要な規模にスケールしないんじゃないか？」

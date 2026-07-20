@@ -29,6 +29,8 @@ relatedEntries:
   - aftermath/2009-01-24-bill-frantz-biography
 ---
 
+![A faceless, star-filled human silhouette beside a glowing network of small connected nodes with tiny coin symbols flowing toward a dollar coin, a gate-like structure holding another dollar coin, and a small bar chart contrasting a short bar with a taller bar rising past it](/BitcoinArchive/images/analysis/2009-01-17-jonathan-thornburg-biography-hero.png)
+
 On January 17, 2009, eight days after [Bitcoin v0.1 was released](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/), an Indiana University astrophysicist named Jonathan Thornburg [posted to the cryptography mailing list](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/) two predictions that would echo through Bitcoin's history:
 
 > "In the modern world, no major government wants to allow untracable international financial transactions above some fairly modest size thresholds."

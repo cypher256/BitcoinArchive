@@ -47,6 +47,8 @@ relatedEntries:
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
 ---
 
+![A faceless hooded silhouette between a cited document marked "[1]" and a sealed 2008 outreach envelope, with a small open-source code block feeding into a Bitcoin block icon](/BitcoinArchive/images/analysis/2008-08-22-wei-dai-biography-hero.png)
+
 In November 1998, Wei Dai published [b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) — a proposal for distributed digital cash — on the [cypherpunks mailing list](/BitcoinArchive/entries/threads/emails/cypherpunks/b-money-protocol/). Ten years later, on August 22, 2008, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) [emailed Dai directly](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/):
 
 <!-- speaker: Satoshi Nakamoto -->

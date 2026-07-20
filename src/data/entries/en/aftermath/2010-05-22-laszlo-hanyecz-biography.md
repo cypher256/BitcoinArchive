@@ -38,6 +38,8 @@ relatedEntries:
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
 ---
 
+![Two pizza boxes beside an ascending trail of gold coin icons, above a timeline with computer, circuit-chip, and calendar icons.](/BitcoinArchive/images/analysis/2010-05-22-laszlo-hanyecz-biography-hero.png)
+
 On May 22, 2010, Laszlo Hanyecz paid 10,000 BTC for two Papa John's pizzas. At the time, that was worth about $41. At Bitcoin's peak, the same amount would be worth hundreds of millions of dollars. The date is now celebrated annually as ["Bitcoin Pizza Day"](/BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/) — the first known real-world commercial transaction in Bitcoin's history.
 
 Hanyecz is a software developer based in Jacksonville, Florida. Before the pizza purchase, he had already [ported the Bitcoin client to macOS](/BitcoinArchive/entries/aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence/) (the first non-Windows version) and become the first person known to have mined Bitcoin with a GPU. He corresponded directly with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) on both.

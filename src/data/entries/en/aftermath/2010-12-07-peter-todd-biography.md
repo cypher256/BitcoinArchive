@@ -53,6 +53,8 @@ relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
 ---
 
+![A dark navy infographic with a faceless silhouette bust, a card showing an early forum username reversing letter-by-letter into the developer's real name, a diagram of a low-fee transaction being replaced by a higher-fee one, a five-point horizontal timeline from 2010 to 2024, and a padlock icon linked to a document-to-seal-to-blockchain diagram.](/BitcoinArchive/images/analysis/2010-12-07-peter-todd-biography-hero.png)
+
 On December 7, 2010, a new account named "retep" registered on BitcoinTalk. Three days later, the account's second post [replied to a Satoshi Nakamoto thread](/BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/) on transaction-replacement fees:
 
 > "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee."

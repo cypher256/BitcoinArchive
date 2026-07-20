@@ -34,6 +34,8 @@ relatedEntries:
   - analysis/2008-10-31-cypherpunk-independent-arrival
 ---
 
+![Dark navy infographic titled "Isamu Kaneko": a faceless head-and-shoulders silhouette filled with a connected mesh of nodes and lines, a large numeral "47" beside it, and a horizontal timeline below marking two dates 7.5 years apart.](/BitcoinArchive/images/analysis/2013-07-06-isamu-kaneko-biography-hero.png)
+
 In May 2002, a Tokyo University research associate named Isamu Kaneko released **Winny** — a P2P file-sharing client — on the 2channel forum. Two years later, on May 10, 2004, the Kyoto Prefectural Police arrested him on contributory copyright-infringement charges; Japan's Supreme Court would not finalize his acquittal until December 19, 2011, seven and a half years later. He died of a myocardial infarction on July 6, 2013, at age 42. He is in this archive primarily because of the posthumous [Japan-domestic Satoshi-identity hypothesis](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) that connects his name to Satoshi Nakamoto — a hypothesis essentially unknown in English-language Bitcoin discourse.
 
 ```mermaid

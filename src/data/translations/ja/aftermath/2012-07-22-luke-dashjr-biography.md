@@ -24,6 +24,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色の背景に、二股に分かれてから編み込まれるように一本へ戻る線と、透明な立方体、割れた南京錠とコインがこぼれるウォレットのアイコンを配した抽象的な図解。](/BitcoinArchive/images/analysis/2012-07-22-luke-dashjr-biography-hero.png)
+
 2022 年 12 月下旬、ルーク・ダッシュジュニアの個人ウォレットから約 216.93 BTC が流出した —— ダッシュジュニアは PGP 鍵の漏洩によるものだとした。流出の被害者は、ビットコインで最も妥協のないスモールブロック・コンセンサス保守派の一人だった。2012 年からの Bitcoin Core 貢献者、[PR #1620](/BitcoinArchive/ja/entries/forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re/) の起票者、2013 年 3 月の v0.8 コンセンサスバグによるチェーン分裂時に再統合を調整した人物、そしてメンプールのデータ運搬出力をより積極的にフィルタリングする Bitcoin Core 派生クライアント **Bitcoin Knots** の長期メンテナー。2023 年、透明なブロックテンプレートを持つマイニングプール **Ocean** を共同設立した。
 
 ダッシュジュニアは GitHub および BitcoinTalk 上のハンドル名 **Luke-Jr** で知られるアメリカのソフトウェア開発者である。

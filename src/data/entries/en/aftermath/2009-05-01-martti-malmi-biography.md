@@ -43,6 +43,8 @@ relatedEntries:
   - aftermath/2009-01-15-satoshi-to-trammell-attack-types
 ---
 
+![Dark navy infographic-style hero image showing a chain of envelope icons above a large number, three icon panels (a stylized penguin shape, a browser window, and a forum speech bubble), and a bitcoin coin icon linked by an arrow to a dollar-sign icon.](/BitcoinArchive/images/analysis/2009-05-01-martti-malmi-biography-hero.png)
+
 In May 2009, a 20-year-old Helsinki computer-science student wrote to Satoshi Nakamoto offering to help. Over the next two years they exchanged roughly 260 emails — the largest known volume of correspondence between Satoshi and any single individual. Malmi kept the archive private for thirteen years. In February 2024 he submitted it as evidence in the [COPA v Wright trial](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/).
 
 Martti Malmi (born 1988, Helsinki, Finland) studied computer science at Helsinki University of Technology (now Aalto University). His contributions to Bitcoin's first two years included the Linux port, the bitcoin.org website, the original Bitcoin forum (which became BitcoinTalk), and the first known bitcoin-for-fiat sale.

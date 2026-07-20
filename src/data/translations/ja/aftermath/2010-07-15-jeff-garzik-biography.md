@@ -40,6 +40,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![顔のない人物シルエットのアウトラインを左に配置し、矢印でコードパッチ一覧のボックス、ブロックを表す立方体アイコン 3 つ、CPU チップアイコン、横棒のランキングチャート、下部の年表へとつながる、紺色基調の技術的なインフォグラフィック。](/BitcoinArchive/images/analysis/2010-07-15-jeff-garzik-biography-hero.png)
+
 2010 年 7 月、Red Hat の Linux カーネル開発者ジェフ・ガージックは[ビットコインに関する Slashdot 投稿](/BitcoinArchive/ja/entries/aftermath/2010-07-11-slashdot-bitcoin-article/)を読み、コードベースを取得して、パッチを送り始めた。数か月のうちにサトシ以外で最大のコミット数の貢献者となり、サトシと[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)に次ぐ位置に立った。cpuminer（初期の独立型ビットコインマイニングツールの一つ）を書き、[BIP 100 動的ブロックサイズ提案](https://github.com/bitcoin/bips)を含む複数の BIP を著作、2015 年にエンタープライズ・ブロックチェーン企業 Bloq を共同設立した。
 
 ガージックはジョージア工科大学でコンピューターサイエンスを学び、初期キャリアは Red Hat での Linux カーネル業務だった。カーネルレベルのシステム経験はビットコインの C++ コードベースに直接活きた。

@@ -43,6 +43,9 @@ relatedEntries:
   - aftermath/2009-01-15-satoshi-to-trammell-attack-types
 translationStatus: complete
 ---
+
+![濃紺の背景に、封筒アイコンが点線で連なる図と大きな数字が配置されている。ペンギン形やブラウザー、フォーラムを表すアイコン、そしてビットコインのコインとドル記号を矢印でつないだ図が並ぶ、インフォグラフィック風の構成。](/BitcoinArchive/images/analysis/2009-05-01-martti-malmi-biography-hero.png)
+
 <!-- tone-skip -->
 
 2009 年 5 月、ヘルシンキの 20 歳のコンピューターサイエンス専攻の学生が、サトシ・ナカモトに協力を申し出るメールを送った。その後 2 年間で二人は約 260 通のメールをやり取りした — サトシと単一個人との間で知られる最大量の通信。マルミはこのアーカイブを 13 年間私的に保持。2024 年 2 月、[COPA 対ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)の証拠として提出した。

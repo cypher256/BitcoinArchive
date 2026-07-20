@@ -28,6 +28,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![2,100 万で頭打ちになった金貨の山と、上部に疑問符が浮かぶ点線の未完成の山を並べた図。顔のない人型のシルエットと小さな建物のアイコンが曲線で結ばれ、5 週間の間隔を示す年表がその下に配置されている。](/BitcoinArchive/images/analysis/2009-02-12-martien-van-steenbergen-biography-hero.png)
+
 2009 年 2 月 12 日、オランダの P2P リサーチコミュニティの一員、マルティエン・ファン・ステーンベルゲンが[サトシに質問した](/BitcoinArchive/ja/entries/emails/p2p-research/bitcoin-open-source/2009-02-12-re-bitcoin-open-source-p2p-currency-steenbergen/) —— ビットコインは通貨供給量に上限があるのか、それとも取引のたびに新規発行されるのか。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は同日返信した:
 
 <!-- speaker: Satoshi Nakamoto -->

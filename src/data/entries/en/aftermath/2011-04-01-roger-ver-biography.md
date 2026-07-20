@@ -28,6 +28,8 @@ relatedEntries:
   - analysis/2014-11-01-blockstream-centralization-claim
 ---
 
+![Editorial infographic with a computer-parts storefront icon labeled Memory Dealers, a faceless silhouette figure at a podium, a Bitcoin coin forking into separate BTC and BCH paths, and a 2002–2024 timeline strip.](/BitcoinArchive/images/analysis/2011-04-01-roger-ver-biography-hero.png)
+
 On April 30, 2024, Spanish authorities arrested Roger Ver on a U.S. extradition request. The DOJ indictment alleges he under-reported the value of his Bitcoin holdings when he renounced U.S. citizenship in 2014, evading approximately $48 million in exit-tax obligations.
 
 Thirteen years earlier, in 2011, Ver had been one of Bitcoin's earliest angel investors — putting seed money into BitInstant, Blockchain.info, Kraken, Bitpay, Bitcoin Magazine, and Ripple. His Silicon Valley computer-parts company Memory Dealers became one of the first established retailers to accept Bitcoin. The nickname "Bitcoin Jesus" — sometimes self-applied, sometimes given to him by journalists — emerged from his evangelistic conference style. By 2017 he had become the most visible advocate of the [Bitcoin Cash hard fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/), framing BCH as "the real Bitcoin Satoshi described" on the bitcoin.com domain he had acquired.

@@ -26,6 +26,8 @@ relatedEntries:
   - aftermath/2009-12-16-bitcoin-v02-released
 ---
 
+![Abstract, faceless illustration for a biography of Eugen Leitl: a dark mailing-list window with muted text lines, a crashed Windows-style client window, an empty dashed-outline software-package box, a faceless rounded silhouette crossed with radiating network lines, and a small abstract penguin-like icon linked across a dashed bridge path.](/BitcoinArchive/images/analysis/2009-10-26-eugen-leitl-biography-hero.png)
+
 On October 26, 2009, German cryobiologist and transhumanist Eugen Leitl asked the bitcoin-list mailing list:
 
 > "Still no .deb packages for Bitcoin?"

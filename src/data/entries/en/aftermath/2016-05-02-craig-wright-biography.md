@@ -44,6 +44,8 @@ relatedEntries:
   - "analysis/2009-01-03-genesis-block-hardcode-analysis"
 ---
 
+![Dark-navy illustration of a looping arrow diagram linking two dates, a red-stamped stack of legal documents, a judge's gavel, and a faceless hooded silhouette above a mismatched identity nameplate.](/BitcoinArchive/images/analysis/2016-05-02-craig-wright-biography-hero.png)
+
 On May 2, 2016, Craig Wright publicly declared himself to be [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) in coordinated [interviews with the BBC, The Economist, and GQ](/BitcoinArchive/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/). He offered cryptographic proof — a digitally signed message using keys associated with early Bitcoin blocks. Within hours, security researchers showed he had reused an existing signature from a 2009 Bitcoin transaction rather than producing a new signature with the claimed keys.
 
 Eight years later, on March 14, 2024, Justice Mellor of the UK High Court delivered the [ruling](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) in the case brought by the Crypto Open Patent Alliance:

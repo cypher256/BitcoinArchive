@@ -30,6 +30,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![星をちりばめた顔のない人型のシルエットが、輝くノードを結ぶネットワーク図の脇に立つ構図。小さなコインの印がドル硬貨へ向かって流れ込み、もう一つの硬貨を挟む門型の構造物と、低い棒から高い棒へ伸びる対比グラフも並んでいる。](/BitcoinArchive/images/analysis/2009-01-17-jonathan-thornburg-biography-hero.png)
+
 2009 年 1 月 17 日、[Bitcoin v0.1 のリリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)から 8 日後、インディアナ大学の天体物理学者ジョナサン・ソーンバーグは[暗号学メーリングリストに投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-17-re-bitcoin-v0-1-released-thornburg/)し、後にビットコインの歴史を貫くこととなる 2 つの予測を残した:
 
 > 「現代世界では、いかなる主要政府も、ある程度控えめな額の閾値を超える追跡不能な国際金融取引を許容したくないだろう」

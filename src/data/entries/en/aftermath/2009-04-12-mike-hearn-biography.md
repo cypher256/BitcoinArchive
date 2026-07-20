@@ -42,6 +42,8 @@ relatedEntries:
   - aftermath/2009-05-01-martti-malmi-biography
 ---
 
+![A dark navy-blue infographic with a faceless silhouette bust beside a card marking a first email to Satoshi in April 2009, a horizontal timeline with dots for 2009, 2011, 2016, and 2024, a document-style BitcoinJ icon linked to a small Android-device icon, a card for a January 2016 essay about the Bitcoin experiment, and a dark panel for 2024 COPA v Wright trial testimony.](/BitcoinArchive/images/analysis/2009-04-12-mike-hearn-biography-hero.png)
+
 On April 12, 2009, a Google engineer named Mike Hearn read the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) and [emailed Satoshi Nakamoto](/BitcoinArchive/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/). Over the next two years they exchanged sustained technical correspondence — scaling, simplified payment verification, the long-run shape of mining. Hearn received one of the last private emails Satoshi ever sent, coming almost exactly two months after [the last known email to Martti Malmi](/BitcoinArchive/participants/martti-malmi/):
 
 <!-- speaker: Satoshi Nakamoto -->

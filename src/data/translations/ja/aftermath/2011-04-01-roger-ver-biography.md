@@ -28,6 +28,8 @@ relatedEntries:
   - analysis/2014-11-01-blockstream-centralization-claim
 ---
 
+![コンピューター部品店のアイコン、顔のないシルエットの人物、ビットコインが BTC と BCH に分岐する図、2002 年から 2024 年までの年表帯で構成した編集用インフォグラフィック。](/BitcoinArchive/images/analysis/2011-04-01-roger-ver-biography-hero.png)
+
 2024 年 4 月 30 日、スペイン当局は米国の引き渡し要請を受けてロジャー・ヴァーを逮捕した。米司法省の起訴状によると、ヴァーが 2014 年に米国市民権を放棄した時点でビットコイン保有額を過少申告し、約 4,800 万ドルの出国税義務を脱税した疑いがあるという。
 
 13 年前の 2011 年、ヴァーはビットコイン最初期のエンジェル投資家の一人だった —— BitInstant、Blockchain.info、Kraken、Bitpay、Bitcoin Magazine、リップルに種銭を投じた。シリコンバレーのコンピューター部品会社 Memory Dealers は、ビットコインを受け入れた最初の確立した小売業者の一つとなった。「ビットコイン・ジーザス」のあだ名 —— 自称でもあれば、記者がつけたものでもあった —— は会議での宣教的なスタイルから生まれた。2017 年までに[ビットコインキャッシュのハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)の最も目立つ提唱者となり、自ら取得していた bitcoin.com ドメインで BCH を「サトシが描いた本物のビットコイン」と位置づけた。

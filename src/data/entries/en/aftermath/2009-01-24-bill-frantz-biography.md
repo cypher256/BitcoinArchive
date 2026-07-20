@@ -26,6 +26,8 @@ relatedEntries:
   - aftermath/2009-01-17-jonathan-thornburg-biography
 ---
 
+![A faceless human silhouette beside a dark network diagram of small server nodes, each wrapped in a shield icon and connected by lines, with diamond-shaped proof-of-work tokens flowing toward them, and a central icon split into a dark red hexagon and a black hexagon labeled exploit and protect](/BitcoinArchive/images/analysis/2009-01-24-bill-frantz-biography-hero.png)
+
 On January 24, 2009, San Francisco Bay Area security consultant Bill Frantz [replied to Hal Finney](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-frantz/) with a characteristically ironic observation about how Bitcoin's mining incentives might reshape network-security economics — engaging [the same botnet-mining concern Jonathan Thornburg had raised](/BitcoinArchive/participants/jonathan-thornburg/) a week earlier, from the opposite angle:
 
 > "The 0wned machines are among the most secure on the network because botnet operators work hard to keep others from compromising 'their' machines."

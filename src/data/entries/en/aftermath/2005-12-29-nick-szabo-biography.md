@@ -44,6 +44,8 @@ relatedEntries:
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
 ---
 
+![Abstract diagram of an incomplete hexagonal chain evolving into a denser, glowing hexagonal chain, beside a document icon marked with a gear-like emblem and a dashed timeline linking two date markers, on a dark navy background.](/BitcoinArchive/images/analysis/2005-12-29-nick-szabo-biography-hero.png)
+
 In 1994, Nick Szabo coined the term "smart contracts." In 1998 he conceived Bit Gold — a decentralized digital currency based on proof-of-work — and published the full design on his Unenumerated blog on December 29, 2005. On April 27, 2008, [in a comment on his own blog](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/), Szabo wrote:
 
 > "Bit gold would greatly benefit from a demo, an experimental market. Anybody want to help me code one up?"

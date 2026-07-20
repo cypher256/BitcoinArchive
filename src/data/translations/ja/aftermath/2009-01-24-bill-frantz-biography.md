@@ -27,6 +27,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![顔のない人型のシルエットが、盾のアイコンをまとった小さなサーバーノードを線で結んだ暗い色合いのネットワーク図の脇に立つ構図。ひし形のプルーフ・オブ・ワークの印がノードへ向かって流れ込み、中央には色合いの異なる六角形アイコンが二つ並んでいる。](/BitcoinArchive/images/analysis/2009-01-24-bill-frantz-biography-hero.png)
+
 2009 年 1 月 24 日、サンフランシスコ・ベイエリアのセキュリティコンサルタント、ビル・フランツが[ハル・フィニーに返信](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-frantz/)した。ビットコインのマイニング・インセンティブがネットワークセキュリティの経済学をどう変えうるか、皮肉を込めた観察を残した ―― 一週間前に[ジョナサン・ソーンバーグが提起した](/BitcoinArchive/ja/participants/jonathan-thornburg/)のと同じボットネット採掘の懸念に、正反対の角度から答える形で:
 
 > 「乗っ取られたマシンは、ネットワーク上で最も安全な部類に入る。なぜなら、ボットネットのオペレーターは他者が「自分たちの」マシンを侵害しないよう懸命に管理しているからだ」

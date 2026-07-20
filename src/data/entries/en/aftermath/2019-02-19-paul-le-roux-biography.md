@@ -35,6 +35,8 @@ relatedEntries:
   - "analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates"
 ---
 
+![A three-panel timeline diagram of file/lock icons labeled E4M and TrueCrypt, followed by pharmaceutical and shipping-crate icons, and a faceless silhouette beside prison-bar lines on the right](/BitcoinArchive/images/analysis/2019-02-19-paul-le-roux-biography-hero.png)
+
 In 1999, a Rhodesian-born programmer named Paul Le Roux released **Encryption for the Masses** (E4M) — an open-source disk-encryption package — and circulated it on the cypherpunks mailing list. Three years later the E4M codebase was forked into *TrueCrypt*. By the mid-2000s Le Roux had moved on from cryptography and built one of the largest international criminal enterprises of the 2000s — RX Limited online pharmacies, arms trafficking, methamphetamine production — chronicled in journalist Evan Ratliff's 2019 book *The Mastermind*. He was arrested by US authorities in Liberia in September 2012 and has been incarcerated and cooperating with the US Drug Enforcement Administration since.
 
 Le Roux (born December 24, 1972 in Bulawayo, Rhodesia — now Zimbabwe) is documented in this archive because some Bitcoin identity-candidate hypotheses cite his cypherpunk-era cryptography credentials and timing.

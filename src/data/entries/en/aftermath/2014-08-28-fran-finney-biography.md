@@ -33,6 +33,8 @@ relatedEntries:
   - analysis/2009-01-10-satoshi-launch-environment
 ---
 
+![Abstract illustrated graphic in dark teal and navy tones, featuring two featureless silhouette figures beneath a house-shaped outline, a glowing vintage computer terminal, a frost-patterned capsule icon, and a horizontal timeline with date markers.](/BitcoinArchive/images/analysis/2014-08-28-fran-finney-biography-hero.png)
+
 > "He did not believe in God. He believed in the future."
 
 Fran Finney said this of her husband [Hal Finney](/BitcoinArchive/participants/hal-finney/) in a 2019 *Cryonics Magazine* interview — five years after his death. She had met Hal at Caltech: she was a junior when he arrived as a freshman, first seeing him during "rotation week" being "lifted and carried by [upperclassmen]." She remembered people clustering around him for philosophical discussions, because "when he spoke, what he said was usually worth listening to."

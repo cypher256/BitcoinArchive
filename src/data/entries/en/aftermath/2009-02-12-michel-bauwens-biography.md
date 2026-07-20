@@ -28,6 +28,8 @@ relatedEntries:
   - aftermath/2009-01-13-satoshi-to-trammell-send-coins
 ---
 
+![Diagram of two faceless silhouette figures labeled Bauwens and Satoshi exchanging messages over a mailing-list panel, next to a peer-to-peer network graphic marking Ecuador and Ghent.](/BitcoinArchive/images/analysis/2009-02-12-michel-bauwens-biography-hero.png)
+
 On February 13, 2009, P2P Foundation founder Michel Bauwens asked [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) a simple question — and got a now-iconic offer in reply:
 
 <!-- speaker: Satoshi Nakamoto -->

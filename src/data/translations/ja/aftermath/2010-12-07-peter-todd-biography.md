@@ -54,6 +54,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![濃紺の背景に顔のないシルエットの胸像が配置され、掲示板の初期ハンドルネームが逆さ綴りで本名に変わる様子を示すカード、手数料の低いトランザクションがより高い手数料のものに置き換わる図、2010 年から 2024 年までを結ぶ横向きの年表、そして文書が封印を経てブロックチェーン証明へとつながる南京錠アイコンが並んでいる。](/BitcoinArchive/images/analysis/2010-12-07-peter-todd-biography-hero.png)
+
 2010 年 12 月 7 日、BitcoinTalk に「retep」という名前の新しいアカウントが登録された。3 日後、このアカウントの 2 番目の投稿は[サトシ・ナカモトのスレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/) —— トランザクション置換手数料に関するもの —— に返信した:
 
 > 「もちろん、正確に言えば、二つ目のトランザクションに手数料がある場合、入力と出力は*正確には*一致しない」

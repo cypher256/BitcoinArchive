@@ -25,6 +25,8 @@ relatedEntries:
   - aftermath/2009-01-09-bitcoin-v01-released
 ---
 
+![A folded formal document beside a faceless, rounded silhouette exchanging envelope icons with a dark terminal window full of monospace log lines, a small folded file icon below the terminal, and a timeline linking two dates two weeks apart](/BitcoinArchive/images/analysis/2009-01-25-nicholas-bohm-biography-hero.png)
+
 On January 25, 2009, two weeks after [Bitcoin v0.1's release](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/), a British commercial lawyer named Nicholas Bohm posted to the bitcoin-list mailing list reporting that the software wasn't running on his machine, asking whether the list was the right place to report bugs. [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) replied the same day, asking for the debug.log file. Bohm's [private follow-up email exchanges with Satoshi were eventually published in 2024](/BitcoinArchive/entries/aftermath/2024-05-20-nicholas-bohm-private-emails-revealed/).
 
 Bohm is a British commercial lawyer with experience in a major City of London solicitors' firm, active in UK discussions on cryptography, electronic commerce, and digital signature policy, and serving as E-Commerce Policy Adviser for Cyber-Rights & Cyber-Liberties (UK).

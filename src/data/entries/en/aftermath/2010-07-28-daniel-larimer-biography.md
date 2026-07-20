@@ -22,6 +22,8 @@ relatedEntries:
   - forum/bitcointalk/topic-532/2010-07-29-re-scalability-and-transaction-rate
 ---
 
+![Dark infographic with a dated forum-post card, an off-chain-versus-on-chain settlement lane diagram with bank icons, a three-point project timeline, and a ring diagram of elected delegates.](/BitcoinArchive/images/analysis/2010-07-28-daniel-larimer-biography-hero.png)
+
 On July 28, 2010, a BitcoinTalk user named **bytemaster** made his [first forum post](/BitcoinArchive/entries/forum/bitcointalk/topic-532/2010-07-28-bytemaster-msg6269/):
 
 > "I am convinced that bandwidth, disk space, and computation time necessary to distribute and 'finalize' a transaction will be prohibitively expensive for micro-payments. [...] 10 minutes is too long to verify that payment is good. It needs to be as fast as swiping a credit card is today."

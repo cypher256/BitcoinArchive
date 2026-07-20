@@ -30,6 +30,8 @@ relatedEntries:
   - aftermath/2011-08-01-jihan-wu-biography
 ---
 
+![A diagram showing multiple thin lines merging into one glowing channel, a two-of-three key icon linked to a lock with one key dimmed, and a forked path with one branch crossed out by a red X beside a signed document icon](/BitcoinArchive/images/analysis/2013-10-01-mike-belshe-biography-hero.png)
+
 On November 8, 2017, Mike Belshe [authored the announcement that cancelled SegWit2x](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) — the planned hard fork that would double Bitcoin's block-size limit, negotiated at the May 2017 New York Agreement. The cancellation, citing insufficient community consensus, ended the largest coordinated attempt at a contentious Bitcoin protocol change since the network's launch. Belshe was uniquely positioned to write it: as co-founder and CEO of **BitGo** (the institutional Bitcoin custody firm whose 2-of-3 multisignature SDK had become standard infrastructure for the exchange industry), he had been one of the principal NYA signatories.
 
 Belshe is an American software engineer. Before Bitcoin, he co-authored the SPDY protocol specification at Google — the basis for HTTP/2, now in widespread use across the modern web. In October 2013 he co-founded BitGo with Will O'Brien and Ben Davenport, one of the earliest companies to specialise in institutional Bitcoin custody.

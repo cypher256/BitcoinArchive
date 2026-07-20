@@ -64,6 +64,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![濃紺を背景にしたテクノロジー風のイラスト。顔のないシルエットの中をコードが流れ、光る六角形のトークンが円形にループし、二つのノードがコインの記号でつながり、カプセル状の軌道の上で二つの点が線で結ばれている。](/BitcoinArchive/images/analysis/2014-08-28-hal-finney-biography-hero.png)
+
 <!-- speaker: Hal Finney -->
 > 「身体が外側で死につつあっても、内側では生き続けていられるんだ。」
 

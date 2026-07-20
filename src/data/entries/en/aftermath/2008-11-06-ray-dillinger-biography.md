@@ -34,6 +34,8 @@ relatedEntries:
   - analysis/2015-08-15-block-size-war-2015-2017-overview
 ---
 
+![Two faceless silhouette figures flank a terminal-style panel showing a completed code-audit checkmark, beside a floating-point-versus-integer accounting diagram and a diverging timeline marking a disputed 1 MB block-size-limit date.](/BitcoinArchive/images/analysis/2008-11-06-ray-dillinger-biography-hero.png)
+
 Before Bitcoin v0.1 was released to the public in January 2009, only two people are known to have audited its source code: [Hal Finney](/BitcoinArchive/participants/hal-finney/) and Ray Dillinger. Dillinger spent roughly two weeks examining the code for vulnerabilities and attack vectors. He has also described a role in the origin of Bitcoin's 1 MB block size limit — a parameter that would later become the center of the 2015–2017 block-size war — though his account of when the limit was adopted conflicts with the documented commit history.
 
 Dillinger is a computer scientist known by his online handles **bear** and **cryddit**. He studied computer science at the University of Kansas and has been active in the cryptography and cypherpunk communities for decades.

@@ -27,6 +27,8 @@ relatedEntries:
   - aftermath/2009-01-09-bitcoin-v01-released
 ---
 
+![A capped gold coin stack labeled 21,000,000 beside a dashed, question-mark-topped stack, with a faceless person silhouette and a small building icon linked by a curved line, above a timeline marking two dates five weeks apart.](/BitcoinArchive/images/analysis/2009-02-12-martien-van-steenbergen-biography-hero.png)
+
 On February 12, 2009, a Dutch P2P-research community member named Martien van Steenbergen [asked Satoshi](/BitcoinArchive/entries/emails/p2p-research/bitcoin-open-source/2009-02-12-re-bitcoin-open-source-p2p-currency-steenbergen/) whether Bitcoin had a limited money supply or created money on each transaction. [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) replied the same day:
 
 <!-- speaker: Satoshi Nakamoto -->

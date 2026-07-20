@@ -35,6 +35,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![濃紺を基調とした技術図解。左側に年代順の出来事を示す縦のタイムラインがあり、右側には単一の起点から枝分かれする鍵のツリー図、二つの区画に分かれたブロック図、一部の枝を金色で強調した小さなツリー図と曲線が並ぶ。人物は描かれていない。](/BitcoinArchive/images/analysis/2011-03-17-pieter-wuille-biography-hero.png)
+
 階層的決定性ウォレット。Segregated Witness。シュノア署名。Taproot。現代のすべてのビットコインウォレットの鍵導出方法、すべてのトランザクションが展性を回避する方法、ブロック容量の拡張、Taproot のプライバシーとスクリプトの柔軟性 —— これらを定義する 4 つの BIP のすべてを書いた／共著したのが **ピーター・ウィーユ**（GitHub と IRC では **sipa**）である。2013 年に [libsecp256k1](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) も開始した —— OpenSSL に代わって Bitcoin Core の署名バックエンドとなった、目的特化型の楕円曲線ライブラリである。
 
 ウィーユはベルギーのソフトウェア技術者。bitcoin/bitcoin への最初の貢献は [2011 年 3 月 17 日の PR #122](/BitcoinArchive/ja/entries/forum/github/pr-122/2011-03-17-pr-122-spent-per-txout/)。6 週間後にコミット権限を取得し、ギャビン・アンドレセンに次ぐ 2 番目の長期メンテナーとなった。2014 年に Blockstream を共同設立、後に Chaincode Labs へ。

@@ -63,6 +63,8 @@ relatedEntries:
   - analysis/2009-01-10-satoshi-launch-environment
 ---
 
+![A dark, tech-themed illustration: a faceless silhouette filled with scrolling code, a glowing hexagonal token cycling through a circular loop, two nodes linked by a coin icon, and a capsule-shaped track with two dots joined by a dashed line.](/BitcoinArchive/images/analysis/2014-08-28-hal-finney-biography-hero.png)
+
 <!-- speaker: Hal Finney -->
 > "Even as my body is dying outside, I will remain alive inside."
 

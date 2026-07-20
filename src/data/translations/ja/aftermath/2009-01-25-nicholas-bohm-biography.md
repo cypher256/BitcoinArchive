@@ -26,6 +26,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![折り畳まれた正式文書の横で、顔のない丸みを帯びたシルエットが封筒のアイコンをやり取りし、その先に等幅のログ風テキストが並ぶ端末画面と小さなファイルアイコン、そして 2 週間離れた 2 つの日付を結ぶ年表が描かれている。](/BitcoinArchive/images/analysis/2009-01-25-nicholas-bohm-biography-hero.png)
+
 2009 年 1 月 25 日、[Bitcoin v0.1 のリリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)から 2 週間後、英国の商事弁護士ニコラス・ボームが bitcoin-list メーリングリストに投稿し、ソフトウェアがマシン上で動作しないことを報告、バグ報告先として正しいか問い合わせた。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は同日返信し、debug.log ファイルを求めた。ボームの[サトシとの私的なメール往復は最終的に 2024 年に公開された](/BitcoinArchive/ja/entries/aftermath/2024-05-20-nicholas-bohm-private-emails-revealed/)。
 
 ボームは英国の商事弁護士で、ロンドン・シティの大手法律事務所での経験を持つ。暗号技術、電子商取引、デジタル署名政策に関する議論に積極的に参加し、Cyber-Rights & Cyber-Liberties（UK）の電子商取引政策アドバイザーを務めた。

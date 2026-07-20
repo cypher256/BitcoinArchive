@@ -56,6 +56,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![蛇口からコインの記号が小さな人影へ降り注ぐ様子、リポジトリと鍵のアイコンで結ばれた 2 つの人影、2010 年から 2014 年までの帯の上でバトンを手渡す人影を描いた、顔のないシルエットによる編集イラスト。](/BitcoinArchive/images/analysis/2010-06-11-gavin-andresen-biography-hero.png)
+
 2010 年 12 月、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はギャビン・アンドレセンにビットコインの鍵を渡した —— 12 月 12 日にソースリポジトリへのアクセス、[2011 年 4 月 26 日にネットワーク警告キー](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)。アンドレセンは同日のサトシ宛[返信](/BitcoinArchive/ja/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/)のなかで、バージニア州ラングレーの CIA 本部でビットコインについて講演する招待を受けたことを伝えた。この返信に対するサトシからの返信は知られていない。アンドレセンは 2011 年 6 月 14 日に講演した。
 
 ギャビン・アンドレセン（本名ギャビン・ベル、1966 年オーストラリア・メルボルン生まれ）はアメリカで育ち、1988 年にプリンストン大学でコンピューターサイエンスの学位を取得し、3D グラフィックス会社 Wasabi Software を設立した。2010 年にビットコインを知り、すぐに最も活発な貢献者の一人となった。[Bitcoin Faucet](/BitcoinArchive/ja/entries/aftermath/2010-06-11-andresen-bitcoin-faucet/) ——無料でビットコインを配布し、人々がこの技術を学び使い始めるのを支援するウェブサイト —— を作成。2010 年 12 月から 2014 年 4 月までビットコインのリードメンテナーを務めた。

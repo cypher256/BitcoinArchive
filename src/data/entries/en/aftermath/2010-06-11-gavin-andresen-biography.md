@@ -55,6 +55,8 @@ relatedEntries:
   - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
 ---
 
+![Illustration with a faucet dispensing coin symbols above small faceless silhouette figures, two faceless silhouettes linked by repository and alert-key icons on a timeline, and a baton passed between two more silhouettes along a bar spanning 2010 to 2014.](/BitcoinArchive/images/analysis/2010-06-11-gavin-andresen-biography-hero.png)
+
 In December 2010, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) handed Gavin Andresen the keys to Bitcoin — source-repository access on December 12, the [network alert key on April 26, 2011](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/). In his [same-day reply](/BitcoinArchive/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/) to that alert-key email, Andresen disclosed that he had been invited to present Bitcoin at CIA headquarters in Langley. No reply from Satoshi is known after that message. Andresen gave the talk on June 14, 2011.
 
 Gavin Andresen (born Gavin Bell in 1966 in Melbourne, Australia) grew up in the United States, earned a degree in Computer Science from Princeton University in 1988, and founded Wasabi Software, a 3D graphics company. He encountered Bitcoin in 2010 and quickly became one of the most active contributors, creating the [Bitcoin Faucet](/BitcoinArchive/entries/aftermath/2010-06-11-andresen-bitcoin-faucet/) — a website that gave away free bitcoins to help people learn the technology. He served as Bitcoin's lead maintainer from December 2010 to April 2014.

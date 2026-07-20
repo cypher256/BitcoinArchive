@@ -52,6 +52,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![初期ビットコインネットワークを表す、顔のない抽象イラスト。ターミナル画面と、破線でつながれた 2 つのノードアイコン、その間で光る 25 BTC のコイン、盾と南京錠のアイコンが配置され、暗い方眼状の背景には小さなノード同士を結ぶ点線が散らばっている。](/BitcoinArchive/images/analysis/2009-01-11-dustin-trammell-biography-hero.png)
+
 2009 年 1 月 11 日、Bitcoin v0.1 の[公開リリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)から 3 日後、オースティン在住の情報セキュリティ研究者ダスティン・トランメルがソフトウェアをダウンロードして稼働させ、同日に[サトシにメールを送った](/BitcoinArchive/ja/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/)。その 3 日後の 2009 年 1 月 14 日、[サトシは彼に 25 BTC を送金](/BitcoinArchive/ja/entries/aftermath/2009-01-13-satoshi-to-trammell-send-coins/)した —— 2 日前の[ハル・フィニーへの 10 BTC](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) に次ぐ、史上 2 番目に既知の個人間ビットコイン送金である。
 
 トランメルはテキサス州オースティン在住のサイバーセキュリティ研究者で、脆弱性研究とエクスプロイト開発の業績で情報セキュリティコミュニティに知られる。

@@ -36,6 +36,8 @@ relatedEntries:
   - aftermath/2011-03-17-pieter-wuille-biography
 ---
 
+![顔のないシルエットの傍らに Bitcoin Magazine の表紙を模したモックアップ、Python コマンドを表示するコードエディター風パネル、2011 年から 2014 年へ枝分かれする年表が配置されている](/BitcoinArchive/images/analysis/2011-09-01-vitalik-buterin-biography-hero.png)
+
 2011 年、17 歳のロシア系カナダ人ヴィタリック・ブテリンは、ビットコインを購入することも採掘することもできなかったので、代わりに記事を書いた —— ミハイ・アリシエの『Bitcoin Weekly』に 1 記事あたり 5 BTC（当時のレートで約 3.50 米ドル）で寄稿。執筆経験を経て[『Bitcoin Magazine』](/BitcoinArchive/ja/entries/aftermath/2012-05-01-bitcoin-magazine-launch/) を 2012 年に共同創刊し、2014 年まで数十本の長文記事をビットコインのプロトコル機構について執筆した。2013 年後半にイーサリアムのホワイトペーパーを執筆、2015 年 7 月 30 日にネットワークのメインネットを 21 歳で立ち上げた。
 
 ブテリンは 1994 年 1 月 31 日、ロシア・コロムナ生まれ、6 歳でカナダへ移住。本伝記は彼の 2011〜2014 年のビットコイン期間を扱い、後年の[イーサリアム](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/)関連の活動は本アーカイブの対象外。

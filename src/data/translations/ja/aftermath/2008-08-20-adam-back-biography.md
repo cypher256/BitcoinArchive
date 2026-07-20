@@ -49,6 +49,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![見出し「Adam Back 1970–」の下、プルーフ・オブ・ワークの証跡を模した Hashcash のカードから、2008 年 8 月 20 日付でサトシ・ナカモトから届いた受信メール風のカードへ破線が伸びている。右上には端末画面を模したアイコン、下部には 1997 年から 2024 年までの年表が配置された図解。](/BitcoinArchive/images/analysis/2008-08-20-adam-back-biography-hero.png)
+
 2008 年 8 月 20 日、アダム・バックの受信箱に 1 通のメールが届いた。送信者は自らを[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と名乗り、近く公開する「新しい電子キャッシュシステム」の論文向けに Hashcash の引用形式を尋ねた。11 年前の 1997 年 3 月、バックはサイファーパンクメーリングリストで [Hashcash を発表](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/)していた。翌日、バックは引用情報を返し、続けて[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の [b-money](/BitcoinArchive/ja/entries/threads/emails/cypherpunks/b-money-protocol/) を紹介した。同日、サトシは返信した:
 
 <!-- speaker: Satoshi Nakamoto -->

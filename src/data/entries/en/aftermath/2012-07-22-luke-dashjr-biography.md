@@ -23,6 +23,8 @@ relatedEntries:
   - aftermath/2011-07-30-len-sassaman-blockchain-tribute
 ---
 
+![Dark-blue infographic illustration: a line forks into two parallel bars that rejoin into a braided, wave-like knot, beside a translucent isometric cube with visible inner segments, and a broken padlock above a wallet icon with scattered coins.](/BitcoinArchive/images/analysis/2012-07-22-luke-dashjr-biography-hero.png)
+
 In late December 2022, approximately 216.93 BTC drained from Luke Dashjr's personal wallet — attributed by Dashjr to a PGP-key compromise. The loss happened to one of Bitcoin's most uncompromising small-block / consensus-conservative voices: a Bitcoin Core contributor since 2012, the [PR #1620](/BitcoinArchive/entries/forum/github/pr-1620/2012-07-22-pr-1620-change-window-titles-to-bitcoin-qt-purpose-misc-re/) opener, coordinator of the March 2013 chain reunification after the v0.8 consensus bug, and the long-running maintainer of **Bitcoin Knots** — a Bitcoin Core derivative that filters mempool data-carrying outputs more aggressively. In 2023 he co-founded **Ocean**, a mining pool with transparent block templates.
 
 Dashjr is an American software developer known on GitHub and BitcoinTalk as **Luke-Jr**.

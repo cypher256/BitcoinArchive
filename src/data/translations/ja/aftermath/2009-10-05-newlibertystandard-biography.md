@@ -40,6 +40,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![顔のないシルエットの肖像と、「最初のドル建てレート」を示す「$1.00 = 1,309.03 BTC」のパネル、生産コスト方式のゲージ、最初の法定通貨取引のパネル、3 つの日付を示す小さな年表を配置した図](/BitcoinArchive/images/analysis/2009-10-05-newlibertystandard-biography-hero.png)
+
 2009 年 10 月 5 日、匿名のユーザー NewLibertyStandard が[ビットコインで初のドル建て為替レートを公開した](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/) —— **$1.00 = 1,309.03 BTC**、1 コインあたり約 $0.00076。レートは生産コスト方式で算出 —— 高 CPU 負荷で稼働するコンピューターの年間平均電力コストを 12 か月で割り、過去 30 日間にマイニングされたビットコイン数で割ったもの。1 週間後の [2009 年 10 月 12 日](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)、彼らは[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)に PayPal で $5.02 を支払って 5,050 BTC を購入 —— ビットコインと法定通貨の最初の既知の交換である。
 
 NewLibertyStandard の実世界での身元はこれまで公に明かされたことがない。BitcoinTalk ユーザー#26（2010 年 1 月 19 日登録）で、2012 年 12 月までフォーラムで活動していた。[2010 年 2 月 5 日](/BitcoinArchive/ja/entries/aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal/)にタイ・バーツの記号（฿）と 3 文字通貨コード「BTC」の採用を提案 —— BTC ティッカーが標準となった。

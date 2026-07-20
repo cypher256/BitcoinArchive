@@ -28,6 +28,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
 ---
 
+![Editorial illustration with rocket and car silhouettes, a large Bitcoin symbol, a document stamped "denied," and Bitcoin and Dogecoin coin icons on a dark background.](/BitcoinArchive/images/analysis/2017-11-22-elon-musk-biography-hero.png)
+
 Elon Musk (born June 28, 1971, Pretoria, South Africa) is the founder of Tesla and SpaceX and a co-founder of the payments company that became PayPal. His connection to Bitcoin's history is recent and external: it is the connection of a high-profile investor and commentator, not of an early participant. In a [2017 blog post a former SpaceX intern named him as a possible Satoshi Nakamoto](/BitcoinArchive/entries/analysis/2017-11-22-elon-musk-satoshi-identity-hypothesis/) — a fringe claim Musk denied within a week.
 
 ```mermaid

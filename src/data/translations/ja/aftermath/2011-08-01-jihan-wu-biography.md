@@ -31,6 +31,8 @@ relatedEntries:
   - aftermath/2013-10-01-mike-belshe-biography
 ---
 
+![翻訳文書とビットコイン白書の図解を並べ、大きな ASIC 採掘機、顔のないシルエット、ビットコインとビットコインキャッシュへ分岐する系統図を描いたイラスト](/BitcoinArchive/images/analysis/2011-08-01-jihan-wu-biography-hero.png)
+
 2011 年、中国の経済学・ジャーナリズム卒業生ジハン・ウーがサトシのビットコイン白書を中国語に翻訳した。2 年後、チップ設計者ミクリー・ザン（Micree Zhan）と共同で **Bitmain Technologies** を設立、2015〜2018 年には Bitmain がビットコイン ASIC の支配的製造業者となり、新規マイニングハードウェア出荷の過半を握った。Bitmain は同時期にハッシュレート最大のビットコインマイニングプール AntPool を運営。2017 年 8 月 1 日、ウーは Bitmain 系列のハッシュレートを[ビットコインキャッシュのハードフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)に投じた —— BCH が初期の難易度調整期間中にブロック生成を維持できた決定的要因の一つだった。
 
 ジハン・ウー（吴忌寒、1986 年中国・重慶生まれ）は北京大学で経済学・ジャーナリズムを学び、金融アナリストとして働いた後に起業した。

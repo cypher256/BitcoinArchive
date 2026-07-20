@@ -28,6 +28,8 @@ relatedEntries:
   - analysis/2010-08-15-knightmb-snapshot-and-legend
 ---
 
+![A dark, tech-themed infographic featuring a faceless head-and-shoulders silhouette outline on the right, a bracketed row of four hexagonal block icons representing a blockchain snapshot, a glowing horizontal timeline connecting two dated markers, small network-node dots, and a red-bordered incident callout box in the corner.](/BitcoinArchive/images/analysis/2010-07-12-knightmb-biography-hero.png)
+
 On August 15, 2010, when [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) shipped his patch for [the value-overflow incident](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) — one of Bitcoin's earliest critical bugs, in which 184 billion BTC briefly appeared in a single transaction — his [announcement opened](/BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/) with a credit:
 
 > "I started with knightmb's blockchain snapshot."

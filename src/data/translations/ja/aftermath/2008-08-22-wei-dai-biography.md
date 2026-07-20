@@ -47,6 +47,9 @@ relatedEntries:
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
 translationStatus: complete
 ---
+
+![暗いトーンのイラストで、顔のない人影を中心に、左には引用番号 [1] のついた文書、右には 2008 年の封筒が描かれ、そこから伸びる小さなオープンソースのコードブロックがビットコインのブロックへとつながっている。](/BitcoinArchive/images/analysis/2008-08-22-wei-dai-biography-hero.png)
+
 <!-- tone-skip -->
 
 1998 年 11 月、ウェイ・ダイは匿名の分散型電子キャッシュシステムの提案 [b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) を[サイファーパンクメーリングリスト](/BitcoinArchive/ja/entries/threads/emails/cypherpunks/b-money-protocol/)に公開した。それから 10 年後、2008 年 8 月 22 日、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は[ダイに直接メールを送った](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/):

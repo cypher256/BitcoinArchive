@@ -23,6 +23,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![日付入りのフォーラム投稿カード、オフチェーン決済とオンチェーン決済を対比する図解、複数のプロジェクトを並べたタイムライン、輪番制の代表者を示す円環図を配した、ダーク基調のインフォグラフィック](/BitcoinArchive/images/analysis/2010-07-28-daniel-larimer-biography-hero.png)
+
 2010 年 7 月 28 日、BitcoinTalk に **bytemaster** というハンドル名のユーザーが[初めて投稿した](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-532/2010-07-28-bytemaster-msg6269/):
 
 > 「トランザクションを配布し『確定』させるために必要な帯域、ディスク容量、計算時間は、マイクロペイメントに対しては法外に高くつくと確信している。［……］支払いが正当だと検証するのに 10 分は長すぎる。クレジットカードを通すのと同じくらい速くあるべきだ。」

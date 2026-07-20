@@ -45,6 +45,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![未完成の六角形の鎖が、より密度の高い発光する六角形の鎖へと変化していく抽象的な図。歯車のような紋様が入った書類のアイコンと、二つの年代を結ぶ点線の年表が添えられている。](/BitcoinArchive/images/analysis/2005-12-29-nick-szabo-biography-hero.png)
+
 1994 年、ニック・サボは「スマートコントラクト」という用語を提唱した。1998 年に Bit Gold —— プルーフ・オブ・ワークに基づく分散型デジタル通貨 —— を構想し、2005 年 12 月 29 日にブログ Unenumerated で完全な設計を公開した。2008 年 4 月 27 日、[自身のブログのコメント欄](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)でこう書いた:
 
 > 「ビットゴールドはデモがあれば大いに役立つのだが。実験的な市場を作りたい。誰かコードを書いてくれないか？」

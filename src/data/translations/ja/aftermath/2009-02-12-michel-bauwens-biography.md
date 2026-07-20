@@ -29,6 +29,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![P2P メーリングリストでのやり取りを、顔のない 2 つのシルエット（バウエンスとサトシ）で描いた図。右側にはエクアドルとゲントをつなぐ P2P ネットワーク図も添えられている。](/BitcoinArchive/images/analysis/2009-02-12-michel-bauwens-biography-hero.png)
+
 2009 年 2 月 13 日、P2P Foundation の創設者ミシェル・バウエンスがサトシ・ナカモトに単純な質問を投げかけ、いまや有名な提案が返ってきた:
 
 <!-- speaker: Satoshi Nakamoto -->

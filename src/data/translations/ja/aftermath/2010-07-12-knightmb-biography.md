@@ -29,6 +29,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![右側に顔のない人物シルエットのアウトラインを配置し、角括弧で囲んだ六角形アイコン 4 つ（ブロックチェーンのスナップショットを表す）、二つの日付マーカーを結ぶ光る横線のタイムライン、小さなネットワークノードの点、右下の赤枠インシデント表示ボックスを添えた、紺色基調の技術的なインフォグラフィック。](/BitcoinArchive/images/analysis/2010-07-12-knightmb-biography-hero.png)
+
 2010 年 8 月 15 日、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が[値オーバーフロー事件](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/) ——ビットコイン最初期の重大バグの一つで、単一トランザクションに 1,840 億 BTC が一時的に現れた ——の修正パッチを公開した際、[告知の冒頭にこう書かれていた](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/):
 
 > 「knightmb のブロックチェーンスナップショットから始めた」
