@@ -33,6 +33,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![左から右へ流れる技術図で、光る円形のアイコンが楕円曲線のパネル、層状に重なったハッシュのパネル、ワイヤーフレームの立方体を順に経て、最後にアドレスを表す図形へとつながる。下部には鍵が枝分かれする木構造と、波線と塗りつぶし四角形という対照的な 2 つの署名の形のアイコンが並ぶ。](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-cryptography-design-hero.png)
+
 ## はじめに
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #6 — 暗号設計** である。ビットコインのあらゆる層を支える暗号学的基本要素を扱う: 所有権を表す鍵、支出を認可する署名、ブロックとトランザクションを結合するハッシュ関数、そして単一の秘密からアドレスの木を生成する導出スキーム。

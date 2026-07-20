@@ -41,6 +41,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![暗い背景の技術図で、光る六角形のハブがユーザー・ピアノード・マイナーの各アイコンとつながっている。その脇には 5 層の帯状パネルが積み重なり、連結したブロックのアイコン列と、下部には円形ノードが並ぶ 6 段階のパイプラインが描かれている。](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-system-design-overview-hero.png)
+
 ## 本文書シリーズについて
 
 これは Bitcoin Institute が執筆したビットコインの技術設計書であり、システムを構成要素に分解してそれらがどのように組み合わさるかを説明する全 12 ページのシリーズである。プロトコル仕様ではなく、規範的な権威を持つものでもない。[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)、[仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)、および参照実装のソースコードを補完する分析的ガイドである。

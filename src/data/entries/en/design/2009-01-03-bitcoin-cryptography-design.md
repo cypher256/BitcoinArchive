@@ -32,6 +32,8 @@ inlineLinkKeywords:
   - "HD wallet"
 ---
 
+![A left-to-right technical diagram: a glowing circular icon flows through an elliptic-curve panel, a stacked hash-layer panel, and a wireframe cube into a final address shape; below, a branching key tree sits beside two contrasting signature-shape icons — a wavy line and a solid square.](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-cryptography-design-hero.png)
+
 ## Introduction
 
 This page is **L1 #6 — Cryptography design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the cryptographic primitives that underpin every layer of Bitcoin: the keys that represent ownership, the signatures that authorize spending, the hash functions that bind blocks and transactions together, and the derivation schemes that turn a single secret into a tree of addresses.

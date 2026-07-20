@@ -30,6 +30,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![円柱形のデータベースとフラットファイル群がキャッシュへ流れ込む様子に、ハッシュで位置を探す虫眼鏡と、古いファイルを取り除く漏斗を添えたストレージ構成図](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-storage-design-hero.png)
+
 ## はじめに
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #7 — ストレージ設計** である。ストレージ層を扱う: Bitcoin Core ノードが検証済みデータをディスクにどう永続化するか、使用可能なコインをメモリーとディスク上でどう追跡するか、状態をどう復旧またはブートストラップするか。

@@ -33,6 +33,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![淡く光るノードが線で結ばれた網目状のネットワーク図。起点ノードから同心円状の波が広がり、ノード間を破線の矢印とパケットのアイコンが行き来し、平文接続と暗号化接続を南京錠の開閉で対比させたパネルが添えられている](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-p2p-network-design-hero.png)
+
 ## はじめに
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #1 — P2P ネットワーク設計** である。ネットワーク層を端から端まで解説する。ノードがどのように互いを発見し、メッセージをどのように交換し、トランザクションとブロックがピアツーピアのゴシップネットワークをどのように伝播するかを扱う。

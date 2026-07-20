@@ -29,6 +29,8 @@ inlineLinkKeywords:
   - "double-spend"
 ---
 
+![Concentric rings shielding a central lock icon, a healthy network mesh beside an isolated node ringed by hostile nodes, with a small atom-orbit motif in the corner](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-security-model-hero.png)
+
 ## Introduction
 
 This page is **L2 #11 — Security model** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) — the second of three L2 cross-cutting deep dives. Where the L1 domain pages describe how each subsystem works, this page asks what can go wrong — and what stops it.

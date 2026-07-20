@@ -30,6 +30,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![濃紺の技術図解。左側には破線でつながれた丸いノードの連なりに小さな錠前のアイコンが添えられ、右側には錠前つきの弧が四角いラベル群へと橋渡しする。左下には金色の立方体ブロックが積み重なり、その脇に封をした封筒のアイコンが置かれ、右下には小さな円の集まりがひし形と四角いアイコンへとつながっている](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-ecosystem-design-hero.png)
+
 ## はじめに
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L2 #10 — エコシステム設計（Layer 2・サイドチェーン）** である。ビットコインの基盤チェーンの周囲に成長したエコシステムを扱う。決済チャネルネットワーク、連合型サイドチェーン、オンチェーンエンベロープ構造、協調的マイニングアーキテクチャー。これらのシステムは単一の依存関係 — ビットコインの[コンセンサスルール](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)が維持する最多ワークチェーン — を共有するが、実行場所、前提とする信頼モデル、L1 への決済方法は根本的に異なる。

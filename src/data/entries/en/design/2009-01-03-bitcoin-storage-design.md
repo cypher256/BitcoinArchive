@@ -29,6 +29,8 @@ inlineLinkKeywords:
   - "pruning"
 ---
 
+![Diagram showing a database cylinder and rows of flat-file blocks feeding a cache, a magnifying glass locating a block by hash, and a funnel representing the pruning of old files.](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-storage-design-hero.png)
+
 ## Introduction
 
 This page is **L1 #7 — Storage design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the storage layer: how a Bitcoin Core node persists validated data to disk, how it tracks spendable coins in memory and on disk, and how it recovers or bootstraps state.

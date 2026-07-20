@@ -30,6 +30,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![中央の鍵型アイコンを幾重もの同心円が包み込み、片側に健全なネットワークの結節点、もう片側に敵対ノードに囲まれた孤立ノードが配置され、隅には小さな原子軌道のモチーフが添えられている](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-security-model-hero.png)
+
 ## はじめに
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L2 #11 — セキュリティーモデル** である。3 つの L2 横断的深掘りの 2 番目。L1 ドメインページが各サブシステムの動作を説明するのに対し、本ページは何がうまくいかなくなりうるか — そしてそれを何が止めるかを問う。

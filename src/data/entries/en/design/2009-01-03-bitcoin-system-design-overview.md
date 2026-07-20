@@ -40,6 +40,8 @@ inlineLinkKeywords:
   - "Bitcoin layer model"
 ---
 
+![Dark technical diagram: a glowing hexagonal hub connects to icons for a user, peer nodes, and a miner, beside a stack of five layered panels and a row of linked block icons, with a numbered six-step pipeline of circular nodes along the bottom.](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-system-design-overview-hero.png)
+
 ## What this document series is
 
 This is an editorial design reading of Bitcoin — a set of twelve pages written by Bitcoin Institute that decompose the system into its constituent parts and explain how they fit together. The series is not a protocol specification and does not carry normative authority. It is an analytical companion to the [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/), the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/), and the reference implementation source code.

@@ -37,6 +37,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![半減のたびに目減りする棒グラフが破線へ消えていく図、コインと伝票がウォレットへ合流するコインベーストランザクションの図、横棒が漏斗状に狭まってブロックに至る図、そして丸いノードが階段状に連なる図とジグザグの破線を並べたダークトーンのインフォグラフィック](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-monetary-design-hero.png)
+
 ## はじめに
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #5 — 貨幣設計** である。ビットコインの貨幣層を扱う。コイン生成を司る規則、マイナーに報酬を与える経済的メカニズム、正直な参加が攻撃よりも収益性の高い形になるインセンティブ構造を対象とする。

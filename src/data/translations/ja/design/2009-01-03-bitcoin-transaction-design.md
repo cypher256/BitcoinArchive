@@ -37,6 +37,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![暗い紺色の技術図解で、金色のコインアイコンから帳簿状の枠、小窓、バツ印の枠へと矢印でつながる 4 段階の UTXO 推移、入力枠と出力枠を並べたトランザクションの枠組み、南京錠アイコンから積み重なったバーへ向かう矢印、そしてギザギザの線と丸い弧を持つ 2 つの円形アイコンが収束する様子を描いている。](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-transaction-design-hero.png)
+
 ## はじめに
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #2 — トランザクション設計** である。トランザクション層を端から端まで解説する。価値がどのように表現され、転送され、ロックされ、アンロックされるかを扱う。ビットコインのすべて — マイニングのインセンティブ、ブロック重量、手数料市場、ウォレットの使い勝手 — がここに記述される構造に依存している。

@@ -31,6 +31,8 @@ inlineLinkKeywords:
   - "RPC interface"
 ---
 
+![Dark technical schematic titled "Wallet & interface design," split into three panels: a seed icon branching through a descriptor box into three address-format labels, a vertical chain of circular role icons linked by diagonal lines representing a document passed hand to hand, and three converging arrows feeding a central circle that flows down into three labeled interface boxes, with a horizontal process-flow bar along the bottom.](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-wallet-design-hero.png)
+
 ## Introduction
 
 This page is **L1 #8 — Wallet design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the application layer of Bitcoin Core: how the software manages keys, derives addresses, selects coins, constructs and signs transactions, estimates fees, and exposes its functionality to external callers. It depends on the [transaction design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/) for the UTXO model and script types, and on the [cryptography design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-cryptography-design/) for key derivation and signature primitives.

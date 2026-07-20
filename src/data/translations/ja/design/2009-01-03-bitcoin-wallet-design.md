@@ -32,6 +32,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![濃紺の背景に描かれた技術図解で、三つの区画に分かれている。左では鍵の種が記述子を経て複数のアドレス形式へ枝分かれし、中央では役割ごとの円形アイコンが斜め線でつながれ、書類を順々に受け渡す流れを表す。右では複数の選択経路が一つの円へ収束し、そこから複数のインターフェース枠へ広がる。下部には処理の流れを示す横棒がある。](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-wallet-design-hero.png)
+
 ## はじめに
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #8 — ウォレット設計** である。Bitcoin Core のアプリケーション層を扱う: ソフトウェアが鍵をどう管理し、アドレスをどう導出し、コインをどう選択し、トランザクションをどう構築・署名し、手数料をどう推定し、外部呼び出し元にどう機能を公開するか。[トランザクション設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)の UTXO モデルとスクリプトタイプ、および[暗号設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)の鍵導出と署名の基本要素に依存する。

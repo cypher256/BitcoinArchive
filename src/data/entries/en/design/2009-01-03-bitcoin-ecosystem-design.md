@@ -29,6 +29,8 @@ inlineLinkKeywords:
   - "mining pool"
 ---
 
+![A dark navy technical diagram: a chain of circular nodes linked by a dashed teal line with small padlock icons on the left, a padlocked arc bridging to a cluster of boxed labels on the right, three stacked gold block cubes at bottom left beside a sealed envelope icon, and a cluster of small circles feeding into a diamond and a square icon at bottom right](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-ecosystem-design-hero.png)
+
 ## Introduction
 
 This page is **L2 #10 — Ecosystem design (Layer 2, sidechains)** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the ecosystem that has grown around Bitcoin's base chain: payment-channel networks, federated sidechains, on-chain envelope structures, and collaborative mining architectures. These systems share a single dependency — the most-work chain maintained by Bitcoin's [consensus rules](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/) — but they differ fundamentally in where they execute, what trust model they assume, and how they settle back to L1.

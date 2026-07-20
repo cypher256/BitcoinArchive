@@ -37,6 +37,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![濃紺の技術図解。ブロックヘッダーの複数フィールドを示すパネル、ハッシュ探索を表す針つきの円形ゲージと波打つしきい値の曲線、勝者側の分岐と薄く消えていく放棄分岐へ枝分かれするブロックの鎖、そして確認ブロックを表す連結ブロックの列に添えられた 2 つ目の円形ゲージが並ぶ。](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-consensus-design-hero.png)
+
 ## はじめに
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #4 — コンセンサス設計** である。[ブロック・チェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)ページの直接の後続である。前ページがデータ構造 — ヘッダー、マークルツリー、ハッシュの連鎖 — を記述したのに対し、本ページはどのチェーンが有効でどのチェーン先端が勝つかを決定する規則を記述する。

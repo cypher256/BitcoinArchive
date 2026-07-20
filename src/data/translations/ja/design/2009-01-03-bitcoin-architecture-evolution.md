@@ -19,8 +19,16 @@ relatedEntries:
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - analysis/2009-01-09-satoshi-code-analysis
   - analysis/2009-01-09-satoshi-windows-development-environment
+inlineLinkKeywords:
+  - "アーキテクチャー進化"
+  - "モノリシックアーキテクチャー"
+  - "プロセス分離"
+  - "構造的移行"
+  - "二時代比較"
 translationStatus: complete
 ---
+
+![単一のモノリシックなブロックが、光る分岐点を経て 6 つの相互接続されたモジュールへ枝分かれし、下部に年表のドットが並ぶ技術図。](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-architecture-evolution-hero.png)
 
 ## 本ページの位置付け
 

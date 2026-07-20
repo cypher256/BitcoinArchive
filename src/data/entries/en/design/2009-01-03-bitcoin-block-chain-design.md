@@ -33,6 +33,8 @@ inlineLinkKeywords:
   - "coinbase structure"
 ---
 
+![A dark technical blueprint illustration showing a stacked block-header diagram with six labeled byte fields, a binary tree of hash nodes converging to a single root, and a horizontal chain of connected blocks with a shorter, faded side branch.](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-block-chain-design-hero.png)
+
 ## Introduction
 
 This page is **L1 #3 — Block & chain design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the block and chain layer: how transactions are batched into blocks, how blocks are linked into a chain, and how nodes select the authoritative chain tip.

@@ -36,6 +36,8 @@ inlineLinkKeywords:
   - "consensus rules"
 ---
 
+![A dark navy technical diagram showing a labeled block-header panel with several data fields, a circular gauge with a needle above a glowing wavy threshold curve, a chain of connected blocks forking into a winning branch and a fainter abandoned branch, and a second circular gauge beside a row of small connected blocks representing confirmations.](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-consensus-design-hero.png)
+
 ## Introduction
 
 This page is **L1 #4 — Consensus design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It is the direct successor to the [block and chain design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-block-chain-design/) page. Where that page describes the data structures — headers, Merkle trees, the chain of hashes — this page describes the rules that determine which chains are valid and which chain tip wins.

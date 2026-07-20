@@ -36,6 +36,8 @@ inlineLinkKeywords:
   - "Schnorr signatures"
 ---
 
+![A dark navy technical blueprint showing a four-stage UTXO flow — a gold coin icon, a ledger-line box, a small windowed panel, and a crossed-out box — linked by arrows; a bordered transaction-envelope panel with side-by-side input and output sub-panels above a locktime bar; a padlock icon feeding into a stacked-bar panel; and two circular signature icons, one with a jagged mark and one with a rounded arc, converging toward each other.](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-transaction-design-hero.png)
+
 ## Introduction
 
 This page is **L1 #2 — Transaction design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the transaction layer end-to-end: how value is represented, transferred, locked, and unlocked. Everything in Bitcoin — mining incentives, block weight, fee markets, wallet UX — rests on the structures described here.

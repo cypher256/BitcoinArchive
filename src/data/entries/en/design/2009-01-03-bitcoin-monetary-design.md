@@ -36,6 +36,8 @@ inlineLinkKeywords:
   - "miner incentive"
 ---
 
+![Dark infographic showing a descending staircase of shrinking halving bars fading into a dashed line, a coinbase-transaction diagram where coin and ticket icons merge into a wallet icon, an inverted funnel of horizontal bars narrowing into a block icon, and a rising staircase of connected nodes beside a jagged broken line](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-monetary-design-hero.png)
+
 ## Introduction
 
 This page is **L1 #5 — Monetary design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers Bitcoin's monetary layer: the rules that govern coin creation, the economic mechanisms that compensate miners, and the incentive structure that makes honest participation more profitable than attack.

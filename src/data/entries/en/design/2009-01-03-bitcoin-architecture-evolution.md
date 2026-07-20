@@ -19,7 +19,15 @@ relatedEntries:
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - analysis/2009-01-09-satoshi-code-analysis
   - analysis/2009-01-09-satoshi-windows-development-environment
+inlineLinkKeywords:
+  - "architecture evolution"
+  - "monolithic architecture"
+  - "process separation"
+  - "structural migration"
+  - "two-era comparison"
 ---
+
+![Split technical diagram: a single stacked monolithic block on the left branches through a glowing node into six interconnected modular boxes on the right, above a horizontal timeline of milestone dots.](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-architecture-evolution-hero.png)
 
 ## What this page is
 

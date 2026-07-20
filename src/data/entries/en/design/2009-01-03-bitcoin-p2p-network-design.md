@@ -32,6 +32,8 @@ inlineLinkKeywords:
   - "transaction relay"
 ---
 
+![A dark teal mesh of glowing network nodes linked by faint lines, propagation rings radiating from one origin node, dashed arrows carrying small packet icons between peers, and a panel contrasting an open padlock with a closed, encrypted one](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-p2p-network-design-hero.png)
+
 ## Introduction
 
 This page is **L1 #1 — P2P network design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the network layer end-to-end: how nodes discover each other, how they exchange messages, and how transactions and blocks propagate across the peer-to-peer gossip network.

@@ -34,6 +34,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![暗い配色の技術図解で、ブロックヘッダーの 6 フィールドを積み重ねた図、複数のハッシュノードが 1 つのルートへ収束するマークルツリー、そして枝分かれして薄く消えていく短い分岐を伴うブロックの鎖を描いている。](/BitcoinArchive/images/analysis/2009-01-03-bitcoin-block-chain-design-hero.png)
+
 ## はじめに
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #3 — ブロック・チェーン設計** である。ブロック・チェーン層を扱う。トランザクションがブロックにバッチされる方法、ブロックがチェーンにリンクされる方法、ノードが権威あるチェーン先端を選択する方法を解説する。
