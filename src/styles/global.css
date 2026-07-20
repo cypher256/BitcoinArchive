@@ -1717,9 +1717,19 @@ p:has(> strong:only-child):has(+ .figure-outer:has([data-kind="mermaid"])) {
   .container .entry-header .entry-title-row {
     display: flow-root;
   }
-  .container .entry-header .entry-title-row .entry-author-avatar {
+  /* Float the *link* (`.avatar-link`), not the `<img>` itself: since
+     880189886 wrapped every avatar in an `.avatar-link` anchor that is
+     `display: inline-flex` (global .avatar-link rule above), the img
+     became a flex item of that anchor -- and a flex container ignores
+     `float` on its items entirely (same rule this comment block already
+     called out for `.entry-title-row`'s own flex), so the title stopped
+     wrapping around the icon. Floating the anchor itself sidesteps that,
+     with an explicit `display: block` to cancel the inline-flex -- the
+     anchor becomes a normal floated block box that the title text wraps
+     around, and its one child (the img) keeps rendering the same. */
+  .container .entry-header .entry-title-row .avatar-link {
     float: left;
-    --avatar-size: 3.75rem;
+    display: block;
     margin: 0.15rem 0.9rem 0.3rem 0;
     /* The floated avatar's top sits at the line-box top (above the cap line),
        so the large circle reads a touch high against the title beside it.
@@ -1730,6 +1740,9 @@ p:has(> strong:only-child):has(+ .figure-outer:has([data-kind="mermaid"])) {
        the wrap. */
     position: relative;
     top: 4px;
+  }
+  .container .entry-header .entry-title-row .entry-author-avatar {
+    --avatar-size: 3.75rem;
   }
 }
 
