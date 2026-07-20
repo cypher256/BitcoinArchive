@@ -36,12 +36,30 @@ inlineLinkKeywords:
   - "two-layer decentralization"
   - "people-and-organization decentralization"
   - "fair launch"
+quotes:
+  - id: "q1"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2010-08-27T17:32:07.000Z"
+    sourceEntryId: "forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem"
+    parent: null
 translationStatus: complete
 ---
 
 ![Dark navy illustration of a gold ingot with a dollar-sign emblem at its center, flanked by two bordered text panels, above six connected numbered gold circles, an outlined empty building shape, and three overlapping colored parallelograms.](/BitcoinArchive/images/analysis/2008-10-31-bitcoin-digital-gold-structural-features-hero.png)
 
 ## Why the question matters
+
+Before getting into Bitcoin specifically, start with a broader question: why does anything have monetary value at all? A dollar bill is paper; a gold coin is stamped metal. But the two sit on opposite sides of a key line: a central bank or government can decide to expand the money supply. Gold has no equivalent — no single authority holds a monopoly over the world's gold supply, and none can simply decree more of it into existence. That absence of a controlling party is one of the reasons an asset becomes worth holding as a long-term store of value: [scarcity](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) nobody commands, resistance to counterfeiting, and a supply nobody can unilaterally expand. Gold has held this role for thousands of years in part for exactly this reason — pulling more of it out of the ground is slow, expensive, and bounded by geology, a natural constraint rather than a policy one.
+
+Bitcoin's founding claim was that software could reproduce those same properties without the metal — a [fixed, verifiable supply](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/), no central issuer, and [rules no single party can rewrite](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/). Whether that claim actually holds up, and whether Bitcoin delivers on it more convincingly than the newer projects making similar claims, is the question this page investigates.
+
+Satoshi made the metal comparison explicitly, in a [2010 forum reply](/BitcoinArchive/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/):
+
+<!-- quote: q1 -->
+> "As a thought experiment, imagine there was a base metal as scarce as gold but ... not useful for any practical or ornamental purpose ... and one special, magical property: can be transported over a communications channel."
+
+Satoshi left the origin of that value open — foreseen usefulness for exchange, collectors, "any random reason" — but scarcity is what would make the value durable once it existed. How that same scarcity later reshaped Bitcoin's use as a payment system is traced in [the cash-versus-digital-gold reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/).
 
 Later cryptocurrencies ([Ethereum](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/), Ripple, Cardano, Solana) ship more capable virtual machines, faster confirmation, lower fees, richer programmability. On any single technical axis other than uptime since 2009, Bitcoin is no longer the frontier. And yet the market consistently prices Bitcoin as the asset most resembling gold — the long-horizon store of value, the reserve position, the holding that doesn't depend on a counterparty's roadmap.
 
