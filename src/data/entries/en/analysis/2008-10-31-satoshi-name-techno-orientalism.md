@@ -33,6 +33,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![A faceless, hooded figure stands before a Neo-Tokyo/Chiba-City-style skyline, with a network-constellation diagram above and a "Satoshi Nakamoto" name card beside it](/BitcoinArchive/images/analysis/satoshi-name-techno-orientalism-hero.png)
+
 In late-1990s and early-2000s anglophone speculative fiction and hacker culture, networked anonymity, advanced computation, and the dissolution of stable Western identity were routinely figured through East Asian — and specifically Japanese — visual and naming registers. The pattern has a name in critical-theory literature: *techno-orientalism* (David Morley and Kevin Robins, *Spaces of Identity*, 1995; David S. Roh et al., *Techno-Orientalism*, 2015). The pseudonym "Satoshi Nakamoto" lands inside that already-prepared symbolic field with unusual precision.
 
 Satoshi's *intellectual position* — the independent-arrival reading of his relationship to the cypherpunk movement and its philosophical core — is treated separately in the companion entry, [Independent arrival at the cypherpunk core](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).

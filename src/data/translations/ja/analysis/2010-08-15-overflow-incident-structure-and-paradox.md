@@ -52,6 +52,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![2010年のオーバーフロー事件の時系列が、却下された不正ブロックと救出された正規チェーンへ分岐する様子。単一著者による修正という中央集権パラドックスを示すネットワーク図が添えられている](/BitcoinArchive/images/analysis/overflow-incident-structure-and-paradox-hero.png)
+
 [バリュー・オーバーフロー事件の事後記事エントリー](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/)は資料的な骨格を記録している — いつ発見されたか、何がパッチされたか、チェーン再編成にどれだけ時間がかかったか。本エントリーは同じ事象を**構造の問題として読む**。救出のなかで実際に何が可能だったか、その制約がビットコイン黎明期の開発体制について何を露呈しているか、そしてフォレンジック視点で読んだとき、トランザクション自体が何を含意するか。
 
 事象の物語は事後記事にある。読み解きはここにある。

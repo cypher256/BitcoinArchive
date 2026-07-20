@@ -49,6 +49,8 @@ quotes:
 translationStatus: complete
 ---
 
+![光る金色のコインから光の筋が伸び、開いた手へと向かう。傍らに「Electronic Cash」の文字](/BitcoinArchive/images/analysis/bitcoin-electronic-cash-vs-digital-gold-hero.png)
+
 「ビットコイン：ピアツーピアの電子キャッシュシステム」。[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)のタイトルは、使うためのお金——支払いの仕組みだと、はっきり言っている。第 1 節も丸ごと、信頼できる第三者を介さずに二者が直接払い合う話だ。
 
 では、第 6 節の「新規コインの安定的な追加は、金のマイナーが資源を費やして金を流通に追加するのに似ている」は何か。これは**発行**の話だ。コインがどう生まれるか——金が掘り出されるように、資源を費やして採掘され、[やがて上限に達して増えなくなる](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)。使い方の話ではない。

@@ -52,6 +52,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![A padlock representing Bitcoin's ECDSA signatures being cracked by a quantum processor, next to a timeline of post-quantum migration milestones](/BitcoinArchive/images/analysis/bitcoin-quantum-threat-hero.png)
+
 A search engine query for "quantum Bitcoin" returns a steady stream of headlines that read, in effect, *the day Bitcoin breaks is the day the world ends*. This entry takes that framing as its starting point and asks two narrower questions the framing usually conflates: **which Bitcoin assets are actually at risk** from a sufficiently capable quantum computer, and **on what timeline** does that capability arrive. The answers in both cases are more specific — and more bounded — than the headlines suggest.
 
 The entry is not a forecast. The arrival year of a cryptographically relevant quantum computer (CRQC) is not knowable from outside a small group of national labs and hyperscaler research programmes, and even from inside those programmes the estimates span decades. What is documented is the design choices Bitcoin's cryptography made, the institutional record of post-quantum standardization, and the public statements of cryptographers and infrastructure people who have committed to a timeline.

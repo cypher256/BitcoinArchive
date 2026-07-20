@@ -33,6 +33,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![顔のないフード姿の人影がネオ東京・千葉シティ風のスカイラインを背景に立ち、上空にはネットワークの結線図、傍らに「Satoshi Nakamoto」の名前カードが配置されている](/BitcoinArchive/images/analysis/satoshi-name-techno-orientalism-hero.png)
+
 1990 年代後半から 2000 年代初頭にかけての英語圏の SF とハッカー文化において、ネットワーク化された匿名性、高度な計算、安定した西洋的アイデンティティの解体は、東アジア —— とりわけ日本 —— の視覚的・命名的記号で繰り返し描かれた。批評理論の文献では*テクノオリエンタリズム*という名で呼ばれる（デイヴィッド・モーリーとケヴィン・ロビンズ『Spaces of Identity』 1995 年、David S. Roh ほか『Techno-Orientalism』 2015 年）。仮名「サトシ・ナカモト」は、その既に整っていた象徴空間の内側に異例の精度で収まる。
 
 サトシの**知的位置**そのもの — サイファーパンク運動への独立到達と思想核との対応 — については、対になる別エントリ[サイファーパンク核心への独立到達](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で扱う。

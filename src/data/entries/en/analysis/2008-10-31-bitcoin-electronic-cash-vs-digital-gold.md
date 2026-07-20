@@ -49,6 +49,8 @@ quotes:
 translationStatus: complete
 ---
 
+![A glowing gold coin sends a luminous line toward an open hand, beneath the words "Electronic Cash"](/BitcoinArchive/images/analysis/bitcoin-electronic-cash-vs-digital-gold-hero.png)
+
 "Bitcoin: A Peer-to-Peer Electronic Cash System." The [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)'s title says it plainly: money you spend, a payment system. Section 1 is entirely about letting two parties pay each other directly, with no trusted third party in between.
 
 So what is section 6's line that "the steady addition of new coins is analogous to gold miners expending resources to add gold to circulation"? It is about **issuance** — how coins come into being. Like gold, they are dug out by spending resources, and [the supply runs to a cap and stops](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/). It is not about how you use them.

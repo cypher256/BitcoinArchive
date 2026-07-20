@@ -63,6 +63,8 @@ inlineLinkKeywords:
   - "studied silence"
 ---
 
+![A letter addressed "Happy Christmas Satoshi" and an outstretched hand face a dark circuit panel labeled "Content Channel Closed"](/BitcoinArchive/images/analysis/satoshi-non-technical-silence-hero.png)
+
 On December 27, 2010, Mike Hearn opened an email to Satoshi Nakamoto with:
 
 <!-- audit:quote-skip -->

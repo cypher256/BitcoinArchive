@@ -52,6 +52,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![A timeline of the 2010 overflow incident forking into a rejected bad block and a rescued honest chain, beside a network diagram illustrating the centralization paradox of a single-author fix](/BitcoinArchive/images/analysis/overflow-incident-structure-and-paradox-hero.png)
+
 The [aftermath entry for the value-overflow incident](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) records the documentary skeleton: when it was discovered, what was patched, how long the chain reorg took. This entry takes the same event and reads it as a structural problem — what was actually possible in the rescue, what its constraints reveal about the early-Bitcoin development model, and what the transaction itself implies once read forensically.
 
 The narrative is in the aftermath entry. The reading is here.

@@ -64,6 +64,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![「Happy Christmas Satoshi」と宛名のある手紙と差し伸べられた手が、「Content Channel Closed」と記された暗い回路盤に向き合う](/BitcoinArchive/images/analysis/satoshi-non-technical-silence-hero.png)
+
 2010 年 12 月 27 日、マイク・ハーンがサトシに宛てたメールの冒頭はこうだった:
 
 <!-- audit:quote-skip -->
