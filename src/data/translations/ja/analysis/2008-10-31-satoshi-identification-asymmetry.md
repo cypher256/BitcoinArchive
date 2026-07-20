@@ -88,6 +88,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![中央の疑問符を、フォーラム投稿・裁判所の判断・候補者・採掘パターンなどの証拠カードが放射状に取り囲み、繰り返す試行が身元特定に至らない様子を示す](/BitcoinArchive/images/analysis/satoshi-identification-asymmetry-hero.png)
+
 16 年間の公開された追跡試行。数百件のフォーラム投稿、複数のメーリングリスト・アーカイブ、メール群、ソースコード、1000 ページ超のジャーナリズム —— すべて同じ問いに向けられた。そして精査に耐える特定は一つもない。本エントリは公開記録上の 3 つの観察可能な事実 —— (a) サトシ・ナカモトを特定しようとする公開された試行の反復、(b) サトシが残した発信材料の総量、(c) 続く不明状態 —— の間の関係を構造的な非対称性として読む。推論的な読み方は §6（限界）に限定する。
 
 本エントリは[身元仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)（「誰がサトシか」）と[匿名性のアーキテクチャ](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)（「サトシはどう匿名であり続けたか」）と三角形を成す第 3 のエントリで、逆向きの問い —— これだけの材料があるのになぜ不明状態が続くのか —— を扱う。

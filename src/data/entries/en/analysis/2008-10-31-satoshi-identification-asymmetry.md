@@ -87,6 +87,8 @@ inlineLinkKeywords:
   - "asymmetry between attempts and result"
 ---
 
+![A central question mark surrounded by radiating evidence cards for forum posts, court rulings, candidates, and mining patterns, showing repeated attempts that never resolve to an identity](/BitcoinArchive/images/analysis/satoshi-identification-asymmetry-hero.png)
+
 Sixteen years of documented public attempts. Hundreds of forum posts, several mailing-list archives, multiple email corpora, source code, and over a thousand pages of journalism — all addressing the same question. And no identification that survives scrutiny. This entry reads the relationship between (a) the repeated public attempts to identify Satoshi Nakamoto, (b) the surviving material Satoshi left behind, and (c) the persistent identification gap as a structural asymmetry. Conjectural inferences are confined to §6 (Limits).
 
 This is the third companion to the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) ("who is Satoshi") and the [anonymity architecture](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/) ("how did Satoshi remain anonymous"). It asks the inverse question: given so much surviving material and so many attempts, why does the gap persist.
