@@ -25,6 +25,8 @@ relatedEntries:
   - aftermath/2013-12-06-dogecoin-launch
 ---
 
+![A dark navy diagram titled 'Namecoin' shows a block-chain trunk forking at a glowing point into two colored paths tagged NMC and .bit, next to a small decentralized-registry icon, a merge-mining icon linking two chains, and a cluster of smaller tagged blocks branching off to the right.](/BitcoinArchive/images/analysis/2011-04-18-namecoin-launch-hero.png)
+
 On April 18, 2011, Vincent Durham — a developer using the BitcoinTalk handle `vinced` — released the genesis block of Namecoin, the first altcoin and the first known fork of the Bitcoin codebase to produce a separate functioning network.
 
 Namecoin's design started in the [BitDNS thread on BitcoinTalk](/BitcoinArchive/entries/forum/bitcointalk/topic-1790/2010-11-14-bitdns-and-generalizing-bitcoin/), opened on November 14, 2010 by user `appamatto`. The thread proposed extending Bitcoin to act as a decentralized name registration system — a replacement for centralized DNS registries that could not be censored or seized. [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) himself participated in the thread, suggesting that BitDNS could be implemented as a separate chain that shared mining work with Bitcoin (the technique later known as merge-mining).

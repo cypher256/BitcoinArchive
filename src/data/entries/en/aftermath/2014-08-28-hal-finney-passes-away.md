@@ -26,6 +26,8 @@ relatedEntries:
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
 ---
 
+![An abstract illustration of a silhouetted figure sending a glowing bitcoin coin across a divide toward a translucent cryopreservation capsule, with a padlocked computer terminal and a candlelit folded document in the foreground.](/BitcoinArchive/images/analysis/2014-08-28-hal-finney-passes-away-hero.png)
+
 Hal Finney passed away on August 28, 2014 at the age of 58, after a five-year struggle with ALS (amyotrophic lateral sclerosis). He was [the first known person besides Satoshi Nakamoto to run Bitcoin](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/), mined some of the earliest blocks, and was the recipient of the [first Bitcoin transaction](/BitcoinArchive/entries/tweets/hal-finney/2009-01-11-running-bitcoin/) on January 12, 2009, when Satoshi sent him 10 bitcoins as a test.
 
 Hal was a pioneering cryptographer who worked on PGP with Phil Zimmermann, ran the first cryptographically based anonymous remailer, and created [RPOW](/BitcoinArchive/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/) (Reusable Proofs of Work). His body was cryopreserved by the Alcor Life Extension Foundation, per his wishes.

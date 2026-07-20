@@ -34,6 +34,8 @@ quotes:
 translationStatus: complete
 ---
 
+![「Re: Bitcoin v0.1 released」というメールカードを、抽象的なシルエットの人物 2 人が挟んで受け渡している。傍らに小さな「proof-hashes」グループのアイコン、「unconfirmed」と表示されたウォレットの残高パネル、0.1.1 から 0.1.3 へのバージョン移行を示す矢印が並ぶ。](/BitcoinArchive/images/analysis/2009-01-12-trammell-to-satoshi-proof-hashes-hero.png)
+
 <!-- speaker: narrator -->
 このサトシへの返信で、トランメルは自身が管理する proof-hashes Google グループの詳細を共有し、ビットコインがハッシュブロックを投稿する場所として提供した。
 

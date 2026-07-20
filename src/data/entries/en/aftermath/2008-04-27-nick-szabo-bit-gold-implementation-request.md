@@ -40,6 +40,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
 ---
 
+![Mockup of a 2008 blog post window with a highlighted quote calling for a coder, beside a dashed-outline gold block labeled unfinished and a timeline connecting April 2008 to October 2008.](/BitcoinArchive/images/analysis/2008-04-27-nick-szabo-bit-gold-implementation-request-hero.png)
+
 On his blog "Unenumerated" in April 2008, [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) put out a public call for help implementing bit gold:
 
 <!-- quote: q1 -->

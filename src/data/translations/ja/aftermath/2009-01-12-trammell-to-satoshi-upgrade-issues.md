@@ -36,6 +36,8 @@ quotes:
 translationStatus: complete
 ---
 
+![二つの封筒アイコンを矢印で結び経過時間を示す時計を添えた図と、ソフトウェアのバージョンを表す二つのバッジをアップグレードの矢印でつないだ図、そして横一列に連なるブロックの本チェーンから、コインを乗せたまま薄れて消えていく点線の分岐を描いたイラスト。](/BitcoinArchive/images/analysis/2009-01-12-trammell-to-satoshi-upgrade-issues-hero.png)
+
 <!-- speaker: narrator -->
 前回のメールからわずか 11分後に送信されたこのメールで、トランメルは v0.1.0 から v0.1.3 へのアップグレード時に遭遇した 2 つの問題を報告した。
 

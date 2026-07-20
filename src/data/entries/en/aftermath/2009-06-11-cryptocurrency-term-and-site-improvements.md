@@ -24,6 +24,8 @@ secondarySources:
     url: "https://web.archive.org/web/20260219032610/https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
 ---
 
+![Two email/message cards connected by an arrow labeled "word tag," with the left card highlighting a suggested term in a box and the right card showing a browser window with a progress bar and wiki, forum, and community icons](/BitcoinArchive/images/analysis/2009-06-11-cryptocurrency-term-and-site-improvements-hero.png)
+
 In this email from June 11, 2009, Satoshi praised the improvements Malmi had made to the bitcoin.org website. He again requested removal of investment-related language, consistent with his earlier stance.
 
 Most notably, Satoshi introduced the term "cryptocurrency" in this exchange:

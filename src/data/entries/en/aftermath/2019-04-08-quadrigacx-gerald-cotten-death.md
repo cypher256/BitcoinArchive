@@ -30,6 +30,8 @@ relatedEntries:
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
 ---
 
+![A dark illustration showing a translucent key frozen in a block of ice, a large closed vault beside a small pile of coins, a closed loop of ledger icons linked by curved arrows, and a thin dotted arc connecting two glowing points, with rows of small statistic labels across the top and bottom.](/BitcoinArchive/images/analysis/2019-04-08-quadrigacx-gerald-cotten-death-hero.png)
+
 QuadrigaCX, founded in 2013, was at its peak Canada's largest cryptocurrency exchange. On **December 9, 2018**, its founder and chief executive **Gerald Cotten** died at the Fortis Hospital in **Jaipur, India**, at the age of 30. The cause of death was given as septic shock arising from peritonitis and intestinal obstruction. He had been traveling with his wife on what the company described as a charitable trip and a honeymoon-anniversary visit.
 
 ```mermaid

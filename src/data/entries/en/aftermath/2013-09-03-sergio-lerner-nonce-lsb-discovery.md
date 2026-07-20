@@ -34,6 +34,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![Dark navy infographic showing a bar-chart histogram of nonce low-byte values split into orange and teal clusters around a near-empty gap, beside a glowing processor icon receiving converging thread lines and two arcing fingerprint-like patterns below it.](/BitcoinArchive/images/analysis/2013-09-03-sergio-lerner-nonce-lsb-discovery-hero.png)
+
 On September 3, 2013, [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) published "A New Mystery about [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) Hidden in the Bitcoin Block-Chain," revealing a second, independent fingerprint in Satoshi's early mining — beyond the [ExtraNonce slope analysis he had published five months earlier](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/).
 
 ## The discovery

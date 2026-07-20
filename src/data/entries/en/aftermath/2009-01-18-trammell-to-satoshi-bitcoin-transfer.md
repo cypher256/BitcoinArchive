@@ -33,6 +33,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-bitcoin-transfer"
 ---
 
+![Illustration of two computer windows labeled Work and Home linked by an arcing path with a "100 BTC" coin traveling between them, above a wallet-interface panel showing a confusing transaction label next to a question mark, and a question-mark speech bubble in the corner.](/BitcoinArchive/images/analysis/2009-01-18-trammell-to-satoshi-bitcoin-transfer-hero.png)
+
 Trammell initiated a new email thread about a puzzling transaction. He had sent himself 100 BTC from his work Bitcoin client to his home client using a Bitcoin address (rather than by IP), but the transaction details showed an unexpected label:
 
 <!-- quote: q1 -->

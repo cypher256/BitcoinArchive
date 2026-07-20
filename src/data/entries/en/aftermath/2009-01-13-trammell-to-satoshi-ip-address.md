@@ -34,6 +34,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address"
 ---
 
+![Illustration of an envelope labeled Send-to-IP traveling along a network path toward a callout box showing a destination IP address and a 25 BTC note, beside a stylized roulette wheel marked with binary segments, on a dark grid background.](/BitcoinArchive/images/analysis/2009-01-13-trammell-to-satoshi-ip-address-hero.png)
+
 Trammell responded to several points from Satoshi's comprehensive reply. He explained the proof-hashes Google Group required no membership to post — simply emailing proof-hashes@googlegroups.com would publish the content. He suggested that the Bitcoin client could post the current block chain every 10,000 blocks as supplemental documentation.
 
 On Bitcoin's value proposition, Trammell identified the core challenge early:

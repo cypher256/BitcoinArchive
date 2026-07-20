@@ -33,6 +33,8 @@ relatedEntries:
   - aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough
 ---
 
+![A silhouetted figure studies a glowing code panel through a magnifying glass while nine numbered red arrows converge on it from every side, one intercepted by a stamped seal.](/BitcoinArchive/images/analysis/2011-10-10-dan-kaminsky-bitcoin-security-hero.png)
+
 *From "The Crypto-Currency" by Joshua Davis, The New Yorker, October 10, 2011:*
 
 <!-- audit:quote-skip -->

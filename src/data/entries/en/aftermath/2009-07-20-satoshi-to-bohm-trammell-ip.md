@@ -26,6 +26,8 @@ relatedEntries:
   - aftermath/2021-10-23-dustin-trammell-second-node-testimony
 ---
 
+![Two abstract node silhouettes linked by a single line across a dark network backdrop, with a follow-up email envelope showing an IP address between them and a small evidence-and-magnifying-glass motif in the corner.](/BitcoinArchive/images/analysis/2009-07-20-satoshi-to-bohm-trammell-ip-hero.png)
+
 In a follow-up the next day, [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) provided debugging information:
 
 <!-- speaker: Satoshi Nakamoto -->

@@ -26,6 +26,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+![濃紺の背景に日付・見出し・短い引用文が左側に並び、右側にはメールアイコンと点線でつながる、ひとつだけ光るネットワークノードが、点と線からなるかすかな網目の中に描かれている。](/BitcoinArchive/images/analysis/2009-07-19-satoshi-to-bohm-nobody-running-hero.png)
+
 <!-- speaker: narrator -->
 [サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の返信は、ネットワークがどれほど薄くなっていたかについて率直だった。
 

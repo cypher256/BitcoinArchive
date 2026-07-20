@@ -32,6 +32,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-19-satoshi-to-trammell-address-labels"
 ---
 
+![Illustration of an address book panel with two contrasting label cards — one auto-generated, one user-typed and crossed out — connected to a central wallet icon branching out to three silhouetted figures, each holding a distinctly labeled envelope.](/BitcoinArchive/images/analysis/2009-01-19-satoshi-to-trammell-address-labels-hero.png)
+
 Satoshi clarified that the default label for a new address was "Your Address," not "Satoshi." He suggested Trammell had likely mislabeled his own address while trying to label what he thought was Satoshi's address:
 
 <!-- quote: q1 -->

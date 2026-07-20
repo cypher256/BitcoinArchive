@@ -29,6 +29,8 @@ relatedEntries:
   - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
 ---
 
+![Illustration of a small blog card, a print magazine cover, and a tablet displaying an online article arranged in sequence above a timeline running from 2011 to 2015 that forks into a glowing diamond icon on one path and a publishing icon on the other.](/BitcoinArchive/images/analysis/2012-05-01-bitcoin-magazine-launch-hero.png)
+
 *Bitcoin Magazine* was co-founded in 2012 by Mihai Alisie and [Vitalik Buterin](/BitcoinArchive/participants/vitalik-buterin/), with the first print issue published in May 2012. It is the earliest dedicated print publication focused on Bitcoin, and one of the longest-running Bitcoin-specific journalism outlets in the field.
 
 The publication's lineage runs through Alisie's earlier Bitcoin Weekly blog, where Buterin had been contributing articles since 2011 in exchange for ~5 BTC per piece (~USD 3.50 each at the time). Bitcoin Weekly's small but engaged readership convinced Alisie that there was demand for sustained long-form Bitcoin journalism, and the conversion from blog to magazine — with both online and print formats — followed.

@@ -24,6 +24,8 @@ secondarySources:
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 ---
 
+![Illustration of a small cluster of connected network nodes linked by a dashed path, envelope icon, and restart arrow to a single glowing isolated node surrounded by scattered disconnected dots, on a dark grid background.](/BitcoinArchive/images/analysis/2009-07-18-bohm-to-satoshi-no-connections-hero.png)
+
 Approximately six weeks after the port forwarding fix, [Bohm](/BitcoinArchive/participants/nicholas-bohm/) reported a new connectivity failure:
 
 <!-- audit:quote-skip -->

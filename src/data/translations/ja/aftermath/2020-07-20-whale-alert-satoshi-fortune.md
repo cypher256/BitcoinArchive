@@ -36,6 +36,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![濃紺地に、右肩上がりの金色の折れ線グラフ、線でつながった小さなコンピューターノードのネットワーク図、金貨が積み上がった樽、そして途中で途切れる右肩下がりの線グラフを配置したダッシュボード風のイラスト。](/BitcoinArchive/images/analysis/2020-07-20-whale-alert-satoshi-fortune-hero.png)
+
 2020年7月、ブロックチェーン追跡サービス Whale Alert は『The Satoshi Fortune』を発表した。[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)の先行 Patoshi 研究を概ね裏付ける独立分析であるが、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)のマイニング環境について独自の解釈を打ち出した。
 
 ## 主要な発見

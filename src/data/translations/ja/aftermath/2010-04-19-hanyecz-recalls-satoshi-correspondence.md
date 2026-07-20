@@ -32,6 +32,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![macOS のビルドが完了したノートパソコンの画面、離れた 2 つのシルエットの人物を結ぶ封筒アイコンの列、金曜日に封筒が集中する様子を示す週間カレンダー、バグ修正を求める短いメッセージと虫のアイコンを描いたイラスト。](/BitcoinArchive/images/analysis/2010-04-19-hanyecz-recalls-satoshi-correspondence-hero.png)
+
 *[編者注：本エントリーは回想に基づく記事であり、メールの一次資料ではない。ハニエツとサトシの完全なメールは公開されていない。サトシに帰属させた本記事中の引用文はすべて、ハニエツが後年のインタビュー（Bitcoin Magazine、CoinDesk 2025 年、Cointelegraph 等）で語った言い換え・回想であって、メールの原文ではない。一次資料で検証可能なのはハニエツによる macOS 移植（2010 年 4 月 19 日、Bitcointalk および SourceForge ／ GitHub のコミット履歴で追跡可能）と GPU マイニングの Bitcointalk 発表（2010 年 5 月 10 日）。本記事の枠組みは、ハニエツ自身が後年語った当時のメールのやり取りのパターンである。]*
 
 <!-- speaker: narrator -->

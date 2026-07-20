@@ -32,6 +32,8 @@ quotes:
     sourceEntryId: "correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability"
 ---
 
+![Illustration of a sparse cluster of dots expanding into a dense web of connected nodes beside a large question mark, on a dark background with a muted tan wave along the bottom and small caption text naming the correspondence between Hal Finney and Satoshi Nakamoto.](/BitcoinArchive/images/analysis/2008-11-19-finney-to-satoshi-scalability-hero.png)
+
 This email was sent during the pre-release code review period, approximately two months before Bitcoin's public launch. Finney had been reviewing Satoshi's code and draft paper, and wrote to ask fundamental scalability questions:
 
 <!-- quote: q1 -->

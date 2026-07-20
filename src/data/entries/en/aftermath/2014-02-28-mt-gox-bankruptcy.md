@@ -32,6 +32,8 @@ relatedEntries:
   - design/2009-01-03-bitcoin-transaction-design
 ---
 
+![A dark navy infographic showing a cracked open vault marked with a large numeral, a market-share progress bar, a red ascending timeline linking several dated points, and a glowing network diagram beside a faint city-skyline silhouette.](/BitcoinArchive/images/analysis/2014-02-28-mt-gox-bankruptcy-hero.png)
+
 On February 28, 2014, Mt. Gox — once the world's largest Bitcoin exchange, handling approximately 70% of all Bitcoin transactions at its peak — filed for bankruptcy protection in Tokyo District Court.
 
 ## Timeline

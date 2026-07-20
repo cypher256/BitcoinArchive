@@ -29,6 +29,8 @@ relatedEntries:
   - analysis/2026-07-09-bitcoin-ownership-map
 ---
 
+![Two faceless silhouettes side by side -- one solid black, the other a dotted outline trailing to a small fingerprint icon -- beside a dark panel showing a chain-like diagram under a magnifying glass, with small icons below for an envelope, a crossed-out routing icon, and a padlock.](/BitcoinArchive/images/analysis/2010-07-06-anonymity-and-pseudonymity-hero.png)
+
 Satoshi warned Malmi about how Bitcoin's privacy properties were being described on the website and in promotional materials:
 
 <!-- speaker: Satoshi Nakamoto -->

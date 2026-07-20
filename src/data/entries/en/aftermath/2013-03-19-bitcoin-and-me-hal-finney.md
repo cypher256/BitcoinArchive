@@ -38,6 +38,8 @@ relatedEntries:
   - aftermath/2019-04-01-fran-finney-hal-finney-profile
 ---
 
+![A faceless humanoid silhouette faces a glowing screen beside a warm, wire-trailing tower computer, next to a transaction-receipt card marking an early block's ten-coin transfer, a small network-node constellation, and a dotted timeline leading toward a safe-deposit icon](/BitcoinArchive/images/analysis/2013-03-19-bitcoin-and-me-hal-finney-hero.png)
+
 I thought I'd write about the last four years, an eventful time for Bitcoin and me.
 
 For those who don't know me, I'm Hal Finney. I got my start in crypto working on an early version of PGP, working closely with Phil Zimmermann. When Phil decided to start PGP Corporation, I was one of the first hires. I would work on PGP until my retirement. At the same time, I got involved with the Cypherpunks. I ran the first cryptographically based anonymous remailer, among other activities.

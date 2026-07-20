@@ -33,6 +33,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-12-satoshi-to-trammell-coin-maturity"
 ---
 
+![A stylized email panel beside a coin icon transitioning from a dim, locked state to a glowing matured coin, next to a small connected-node network diagram and two faceless silhouetted figures linked by an arrow.](/BitcoinArchive/images/analysis/2009-01-12-satoshi-to-trammell-coin-maturity-hero.png)
+
 In this reply to Dustin Trammell, Satoshi thanked him for the timestamp service link and discussed alternative approaches. Regarding Trammell's question about the credit field, Satoshi explained the coin maturity mechanism:
 
 <!-- quote: q1 -->

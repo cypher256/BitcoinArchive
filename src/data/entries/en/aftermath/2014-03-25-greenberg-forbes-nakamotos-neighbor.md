@@ -39,6 +39,8 @@ inlineLinkKeywords:
   - "Greenberg Forbes Hal Finney"
 ---
 
+![Editorial infographic with three panels: a neighborhood grid map connecting two small house icons with a dashed line, a wheelchair silhouette facing a computer screen beside an eye icon, and a highlighted card showing a runner silhouette on a road next to a large clock, linked along a timeline above a dark terminal-style log strip with timestamps.](/BitcoinArchive/images/analysis/2014-03-25-greenberg-forbes-nakamotos-neighbor-hero.png)
+
 On March 25, 2014, Forbes senior writer Andy Greenberg published *"Nakamoto's Neighbor: My Hunt For Bitcoin's Creator Led To A Paralyzed Crypto Genius"* — the first long-form mainstream-press feature naming [Hal Finney](/BitcoinArchive/participants/hal-finney/) as a Satoshi-identity candidate and, in the same article, presenting the principal counter-evidence against that identification.
 
 ## Geographic proximity to Dorian Nakamoto

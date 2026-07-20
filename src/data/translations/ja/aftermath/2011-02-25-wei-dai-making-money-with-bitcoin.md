@@ -29,6 +29,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![ドル紙幣から二本の矢印が伸びる図解。一方はビットコインへ直接向かい、もう一方は GPU アイコンを経由してビットコインに至る。隣には接続されたノードのネットワーク、南京錠、そして虫眼鏡と未チェックの項目が並ぶセキュリティ点検リストが描かれている。](/BitcoinArchive/images/analysis/2011-02-25-wei-dai-making-money-with-bitcoin-hero.png)
+
 *LessWrong『Making money with Bitcoin?』コメントスレッド、2011年2月25日：*
 
 [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) — [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、ビットコイン[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献 [1]として引用されている — がビットコインの投資可能性に関する議論に参加した。彼のコメントはビットコインとの関係を明確にし、マイナーとしての最初の一歩を明かしている。

@@ -39,6 +39,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address"
 ---
 
+![Two computer icons labeled Sender Node and Recipient Node connected by a dashed line across a faint network-mesh backdrop, with a gold bitcoin coin at the line's midpoint, two date cards linked by an arrow below, and a small crossed-out padlock icon in the corner.](/BitcoinArchive/images/analysis/2009-01-13-satoshi-to-trammell-send-coins-hero.png)
+
 In this email, Satoshi discussed a communications bug, now fixed in version 0.1.3, that had prevented nodes from properly broadcasting blocks. He then offered to send Trammell some coins:
 
 <!-- quote: q1 -->

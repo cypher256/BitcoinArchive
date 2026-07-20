@@ -32,6 +32,8 @@ relatedEntries:
   - "aftermath/2024-03-14-copa-v-wright-ruling"
 ---
 
+![Illustration of two browser-style screens labeled WIRED and GIZMODO showing matching headlines about a Satoshi Nakamoto claim, above scattered leaked email and accounting documents, a police car parked outside an office building, and a blog-post icon with a mismatched 2008 date marked by a red X.](/BitcoinArchive/images/analysis/2015-12-08-wired-gizmodo-craig-wright-claims-hero.png)
+
 On December 8, 2015, Wired and Gizmodo simultaneously published investigations identifying Australian computer scientist and businessman Craig Steven Wright as the likely creator of Bitcoin — i.e. [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/).
 
 Wired's article, written by Andy Greenberg and titled "Bitcoin's Creator Satoshi Nakamoto Is Probably This Unknown Australian Genius," presented evidence including leaked emails, accounting records, blog posts, and other documents suggesting Wright had been involved in Bitcoin's creation, possibly alongside the late Dave Kleiman, an American computer forensics expert who had died in 2013.

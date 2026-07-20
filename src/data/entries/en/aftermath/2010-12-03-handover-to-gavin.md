@@ -30,6 +30,8 @@ relatedEntries:
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
 ---
 
+![Illustration of two desktop computers -- one showing a Windows-style file window, the other a black terminal window -- connected across a timeline by a glowing key icon passing from one desk to the other, with an envelope icon in between.](/BitcoinArchive/images/analysis/2010-12-03-handover-to-gavin-hero.png)
+
 On December 3, 2010, Malmi asked Satoshi whether someone should be recruited to take on more of Bitcoin's development and management work. By this point, Satoshi was becoming increasingly less active and appeared to be preparing for his departure from the project.
 
 Satoshi's response was clear and decisive:

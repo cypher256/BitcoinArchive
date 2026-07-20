@@ -34,6 +34,8 @@ relatedEntries:
   - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
 ---
 
+![A dark, orange-accented infographic showing a glowing stopwatch marking 41 seconds between "registered" and "first post" labels, a mock forum-post card with a short message, a flat "$2 USD" price tag beside three faded BTC coin icons, a username badge next to its mirror-reversed counterpart, and a horizontal timeline marking three days.](/BitcoinArchive/images/analysis/2010-12-07-retep-diaspora-invite-first-post-hero.png)
+
 <!-- audit:quote-skip -->
 > Will buy 1 invite for $2, msg privately.
 

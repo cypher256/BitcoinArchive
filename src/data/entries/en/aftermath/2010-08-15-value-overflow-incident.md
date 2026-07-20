@@ -49,6 +49,8 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474"
 ---
 
+![Infographic diagram showing two oversized transaction outputs feeding into a summation symbol that overflows into a negative value, next to a clock icon and a forked chain-of-blocks graphic where one branch is crossed out and the other continues as the accepted chain.](/BitcoinArchive/images/analysis/2010-08-15-value-overflow-incident-hero.png)
+
 On August 15, 2010, at approximately 18:08 UTC, Bitcoin developer [Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/) noticed an anomaly in Block 74638 and posted on the BitcoinTalk [discussion thread (topic 823)](/BitcoinArchive/entries/threads/forum/bitcointalk/topic-823/):
 
 <!-- quote: q1 -->

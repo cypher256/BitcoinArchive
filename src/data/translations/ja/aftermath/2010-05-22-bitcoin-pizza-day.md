@@ -52,6 +52,8 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-137/2010-05-22-laszlo-msg1195"
 ---
 
+![ピザの箱 2枚と、ビットコインを象徴する金色のコインが破線でつながれたイラスト。箱には「配達済み」、コインには「10,000 BTC」の文字が添えられ、下部には当時の 41 ドルから現在の 10 億ドル超への価値変化を示すバッジがある。](/BitcoinArchive/images/analysis/2010-05-22-bitcoin-pizza-day-hero.png)
+
 2010年5月18日、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)は BitcoinTalk フォーラムに投稿した：
 
 <!-- quote: q1 -->

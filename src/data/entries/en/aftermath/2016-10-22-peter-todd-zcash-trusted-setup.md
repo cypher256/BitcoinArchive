@@ -34,6 +34,8 @@ relatedEntries:
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
 ---
 
+![An illustration of a car driving a mountain road at dusk, a foil-lined box, a six-node network converging on a central point, and a metal pan glowing over flame in a forest clearing.](/BitcoinArchive/images/analysis/2016-10-22-peter-todd-zcash-trusted-setup-hero.png)
+
 [Peter Todd](/BitcoinArchive/participants/peter-todd/) was one of six participants in the Zcash trusted setup ceremony held October 22–23, 2016. Zooko Wilcox (Zcash co-founder) had contacted him via Twitter DM on September 26, asking him to serve as a "Human Witness." Todd insisted the conversation move to Signal, noting that soliciting someone for this role exposed them to significant threats.
 
 ## The ceremony's purpose

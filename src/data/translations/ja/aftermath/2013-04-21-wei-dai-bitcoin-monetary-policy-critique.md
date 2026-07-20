@@ -30,6 +30,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色の背景に、未開封の封筒、黄色い破線の上限の下で乱高下する赤い線、そして薄れゆく灰色の道から分かれて伸びる金色の道を描いたイラスト。](/BitcoinArchive/images/analysis/2013-04-21-wei-dai-bitcoin-monetary-policy-critique-hero.png)
+
 *LessWrong『Bitcoins are not digital greenbacks』コメントスレッドより、2013年4月21日：*
 
 ウェイ・ダイ — [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献 [1]として引用されている — がビットコインの金融政策の設計と自身の役割について言及した：

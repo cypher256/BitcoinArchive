@@ -43,6 +43,8 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651"
 ---
 
+![An illustration of two faceless silhouette figures connected by a glowing envelope, one fading into translucency beside a small terminal screen on the left, the other solid and lit while holding a key on the right, set against a dark background threaded with connected network nodes.](/BitcoinArchive/images/analysis/2016-05-02-gavin-andresen-satoshi-retrospective-hero.png)
+
 Gavin Andresen discovered Bitcoin in 2010 and quickly became one of its most active contributors. Satoshi Nakamoto gave him access to the Bitcoin source code repository and put him forward as lead developer.
 
 On how Satoshi maneuvered him into the lead role, Andresen recalled:

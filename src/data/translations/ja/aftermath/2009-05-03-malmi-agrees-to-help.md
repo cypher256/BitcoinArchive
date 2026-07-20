@@ -28,6 +28,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![南京錠マークと星バッジマークの付いた二つの封筒が点線でつながれ、常時稼働中を示す小さな端末アイコンと FAQ 資料の束が添えられているイラスト](/BitcoinArchive/images/analysis/2009-05-03-malmi-agrees-to-help-hero.png)
+
 <!-- tone-skip -->
 <!-- speaker: narrator -->
 [マルミ](/BitcoinArchive/ja/participants/martti-malmi/)はサトシに返信し、ウェブサイトと FAQ の開発を引き受けることに同意した。このメールでは、機能のアイデアも提案した：バックアップ機能付きのパスワード保護された秘密鍵を作成する UI ツールである。また、すでにビットコインノードを 24時間 365日稼働させていることを報告した。

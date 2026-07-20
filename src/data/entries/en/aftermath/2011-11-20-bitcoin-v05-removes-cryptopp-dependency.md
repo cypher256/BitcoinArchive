@@ -44,6 +44,8 @@ relatedEntries:
   - "aftermath/2011-09-13-bitcoin-github-migration-committers"
 ---
 
+![Diagram showing a code branch merging into a main line, with a crossed-out folder icon replaced by a glowing circular module, above a horizontal five-step timeline of blocks.](/BitcoinArchive/images/analysis/2011-11-20-bitcoin-v05-removes-cryptopp-dependency-hero.png)
+
 On November 20, 2011, Bitcoin v0.5.0 shipped with the Crypto++ SHA-256 subset that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) had added in July 2010 (SVN rev 114) removed from the codebase. Going forward, Bitcoin called OpenSSL's SHA-256 routines for the same work. Crypto++ — [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s C++ cryptographic library, the only candidate-authored library Bitcoin had ever included as a direct in-tree code dependency — was no longer part of Bitcoin Core.
 
 ## The commit and the merge

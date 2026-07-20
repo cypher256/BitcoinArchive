@@ -32,6 +32,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![薄暗い部屋で光る端末に向かうシルエットの人物のそばに、南京錠や鎖などのアイコンが並んだブロックが一つの新しいアイコンへと組み合わさっていく様子が描かれ、左右に仕切られたパネルと分岐のない一本の横長タイムラインが添えられているイラスト。](/BitcoinArchive/images/analysis/2024-10-28-jeff-garzik-satoshi-lone-genius-hero.png)
+
 コーダーとしてのサトシは、「ビューティフル・マインド」型の孤独な天才だった。
 
 彼は独学のプログラマーだった。自分の限界について謙虚だった。

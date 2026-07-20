@@ -35,6 +35,8 @@ quotes:
 translationStatus: complete
 ---
 
+![ウォレットのファイルパスが枠からはみ出す様子、シールド付きのデータベース円柱アイコン、バグアイコンから封印済みのチェック入り封筒へつながる 2 枚のカードを、右上に日付バッジを添えた紺色の背景で描いたイラスト。](/BitcoinArchive/images/analysis/2009-01-16-satoshi-to-trammell-wallet-location-hero.png)
+
 <!-- speaker: narrator -->
 データ損失とウォレットのバックアップに関するトランメルの懸念に応じて、サトシはウォレットの保存場所と使用技術を開示した：
 

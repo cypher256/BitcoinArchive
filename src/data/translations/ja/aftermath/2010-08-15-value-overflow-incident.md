@@ -50,6 +50,8 @@ quotes:
 translationStatus: complete
 ---
 
+![2 つの巨大な取引出力の合計がオーバーフローして負の値になる様子と、時計アイコン、そして一方の分岐に取り消し線が引かれもう一方が採用チェーンとして続く分岐図を並べたインフォグラフィック](/BitcoinArchive/images/analysis/2010-08-15-value-overflow-incident-hero.png)
+
 2010年8月15日18:08 UTC 頃、ビットコイン開発者[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)がブロック 74638 で異常を発見し、BitcoinTalk フォーラムの[討論スレッド (topic 823)](/BitcoinArchive/ja/entries/threads/forum/bitcointalk/topic-823/)に投稿した：
 
 <!-- quote: q1 -->

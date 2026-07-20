@@ -39,6 +39,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-electronic-currency"
 ---
 
+![Illustration of a letter branching into two mailing-list icons as if copied to both, beside a bitcoin coin next to a vending machine, a seedling growing along a node-connected path, and an orbiting coin surrounded by small icons representing niche use cases.](/BitcoinArchive/images/analysis/2009-01-16-satoshi-to-trammell-electronic-currency-hero.png)
+
 This email was CC'd to both bitcoin-list@lists.sourceforge.net and the Cryptography mailing list at metzdowd.com, making it a public message. It was a polished version of Satoshi's earlier private email to Trammell, with some content reorganized and a key addition.
 
 Satoshi quoted Trammell's earlier observation about valuing bitcoins and shared his vision:

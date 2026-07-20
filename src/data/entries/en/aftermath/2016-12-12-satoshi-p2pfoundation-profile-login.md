@@ -24,6 +24,8 @@ relatedEntries:
   - "aftermath/2014-03-06-dorian-nakamoto-biography"
 ---
 
+![Illustration of a browser profile-card window showing a highlighted last-active date beside a silhouetted figure at a laptop and an open padlock icon, above a horizontal timeline with three small icon markers.](/BitcoinArchive/images/analysis/2016-12-12-satoshi-p2pfoundation-profile-login-hero.png)
+
 In December 2016, members of the Bitcoin community noticed that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s profile on the P2P Foundation social network showed recent login activity. The P2P Foundation was the platform where Satoshi had originally posted a link to the Bitcoin white paper on February 11, 2009, and where the "I am not Dorian Nakamoto" message had appeared on March 7, 2014.
 
 The login activity was visible through the platform's user interface, which displayed when a member had last been active. The observation prompted widespread discussion in Bitcoin forums and on social media, with community members debating whether the login represented genuine activity by Satoshi or indicated that the account had been accessed by an unauthorized party.

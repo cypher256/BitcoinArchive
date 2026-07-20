@@ -34,6 +34,8 @@ relatedEntries:
   - aftermath/2011-04-26-satoshi-final-known-email
 ---
 
+![An open envelope spilling gold coins beside an open ledger book, linked by a sparse network of nodes beneath a question mark, above a timeline connecting two distant years.](/BitcoinArchive/images/analysis/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin-hero.png)
+
 In an interview published by Uncommons on April 15, 2025, P2P Foundation founder [Michel Bauwens](/BitcoinArchive/participants/michel-bauwens/) looked back on his brief but direct contact with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/).
 
 Bauwens said the exchange was limited but memorable:

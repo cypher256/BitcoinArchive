@@ -39,6 +39,8 @@ quotes:
     sourceEntryId: "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release"
 ---
 
+![Illustration of two abstract silhouette figures linked by a curved gold line, with a letter-shaped card and a small file icon between them, and a branching network icon to the side, on a dark navy background with a faint binary-digit texture.](/BitcoinArchive/images/analysis/2009-01-08-satoshi-to-finney-release-hero.png)
+
 Sent from satoshi@vistomail.com on Thursday, January 8, 2009 at 20:54:55 PST — just hours after the public announcement on the Cryptography mailing list — Satoshi personally notified Hal Finney of the Bitcoin release:
 
 <!-- quote: q1 -->

@@ -33,6 +33,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![濃紺の背景に、複数の書類アイコンが枝分かれしたハッシュノードを通って合流し、ビットコインのブロックにつながる一つの光るルートノードへと収束する図が描かれ、脇にはストップウォッチとカレンダーサーバーのラック、隅に積まれた古い書類の山が配置されている。](/BitcoinArchive/images/analysis/2016-09-15-peter-todd-opentimestamps-announcement-hero.png)
+
 <!-- speaker: narrator -->
 2016年9月15日、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)は OpenTimestamps を発表した。ビットコインブロックチェーンにタイムスタンプをアンカリングすることで、特定の時点でデータが存在したことの暗号学的証明を作成するシステムである。
 

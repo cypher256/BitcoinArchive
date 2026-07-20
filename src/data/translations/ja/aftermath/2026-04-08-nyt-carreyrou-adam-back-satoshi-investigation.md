@@ -65,6 +65,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![重なり合う 2 枚のタイプ打ち文書に一致箇所を示す丸印が付き、罫線入りのメモボードの上に虫眼鏡が浮かぶ。薄暗い部屋の小さな机を挟んで顔のない 2 つのシルエットが向かい合い、手前には空の椅子のそばに小さな仮面が置かれている。](/BitcoinArchive/images/analysis/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation-hero.png)
+
 2026 年 4 月 8 日、ジョン・カレイロウ — Theranos 事件を暴いたピューリッツァー賞受賞ジャーナリスト — は、約 1 万語のニューヨーク・タイムズ調査記事「My Quest to Solve Bitcoin's Great Mystery」で、Blockstream の CEO で Hashcash の発明者である[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の仮名の中の人物として最も可能性が高いと結論づけた。バックは正体を否定した。
 
 ## 調査の方法論

@@ -34,6 +34,8 @@ relatedEntries:
   - aftermath/2010-05-22-bitcoin-pizza-day
 ---
 
+![An exchange-rate ticket showing 5,050 BTC converted to $5.02, alongside two abstract circular icons connected by dashed lines representing a bitcoin transfer and a PayPal payment, with a terminal-style panel showing an early Bitcoin exchange rate.](/BitcoinArchive/images/analysis/2009-10-12-martti-malmi-first-btc-sale-hero.png)
+
 On October 12, 2009, [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) sold 5,050 BTC to [NewLibertyStandard](/BitcoinArchive/participants/newlibertystandard/) for $5.02 via PayPal — the first known exchange of Bitcoin for fiat currency.
 
 One week earlier, on October 5, 2009, NewLibertyStandard had [published the first-ever Bitcoin exchange rate](/BitcoinArchive/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/) ($1 = 1,309.03 BTC) and launched a rudimentary exchange website. Malmi's motivation was to help bootstrap the market: someone had to be the first seller for a market to exist.

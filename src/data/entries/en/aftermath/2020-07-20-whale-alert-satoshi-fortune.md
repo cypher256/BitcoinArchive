@@ -36,6 +36,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![A dark navy dashboard-style graphic featuring a rising golden line chart, a small network diagram of connected computer-node icons, a barrel overflowing with stacked gold coins next to a smaller coin stack, and a declining line graph trailing off to a dashed cutoff.](/BitcoinArchive/images/analysis/2020-07-20-whale-alert-satoshi-fortune-hero.png)
+
 In July 2020, blockchain tracking service Whale Alert published "The Satoshi Fortune," an independent analysis of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s mining activity that largely corroborated earlier Patoshi research by [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/), while introducing its own interpretation of Satoshi's mining infrastructure.
 
 ## Key findings

@@ -33,6 +33,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-proof-hashes"
 ---
 
+![Two abstract silhouette figures exchange an email card labeled "Re: Bitcoin v0.1 released," with a small "proof-hashes" group icon, a wallet credit panel marked "unconfirmed," and a 0.1.1-to-0.1.3 version arrow below it.](/BitcoinArchive/images/analysis/2009-01-12-trammell-to-satoshi-proof-hashes-hero.png)
+
 In this reply to Satoshi, Trammell shared details about the proof-hashes Google Group he administered, offering it as a place for Bitcoin to post hash blocks:
 
 <!-- quote: q1 -->

@@ -33,6 +33,8 @@ relatedEntries:
   - aftermath/2017-11-08-segwit2x-cancellation
 ---
 
+![Illustration of a chain of blocks splitting at a glowing fork point into two diverging paths: a thin cyan path with small blocks and a thick orange path with blocks that grow progressively larger, alongside two horizontal capacity bars and a network of dots thinning from a dense cluster to a few scattered points.](/BitcoinArchive/images/analysis/2015-08-15-bitcoin-xt-launch-hero.png)
+
 On August 15, 2015, [Mike Hearn](/BitcoinArchive/participants/mike-hearn/) released Bitcoin XT version 0.11A, a fork of Bitcoin Core that implemented [BIP 101](https://github.com/bitcoin/bips/blob/master/bip-0101.mediawiki). [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/), then the lead Bitcoin Core maintainer, had authored BIP 101 two months earlier and supported the XT release.
 
 BIP 101 proposed raising Bitcoin's 1 MB block-size limit to 8 MB starting January 11, 2016, and doubling every two years thereafter, reaching 8 GB by 2036. Activation required a 75% supermajority of mined blocks signaling support over a 1,000-block window.

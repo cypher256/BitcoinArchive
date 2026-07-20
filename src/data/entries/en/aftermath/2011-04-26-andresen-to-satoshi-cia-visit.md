@@ -39,6 +39,8 @@ quotes:
     sourceEntryId: "correspondence/gavin-andresen/2011-04-26-andresen-cia-visit-reply"
 ---
 
+![Illustration of a dark-themed email reply-thread interface marked unanswered, next to a sealed envelope labeled invitation, a key icon, and a columned government-building silhouette linked to a small peer-to-peer network diagram, above a dotted timeline connecting two dates in 2011.](/BitcoinArchive/images/analysis/2011-04-26-andresen-to-satoshi-cia-visit-hero.png)
+
 In his reply to [Satoshi's "alert key" email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/), Gavin Andresen addressed several points. He acknowledged reading [Forbes' "Crypto Currency" article](/BitcoinArchive/entries/aftermath/2011-04-20-forbes-crypto-currency/) and agreed that the "pirate currency" framing was problematic. He accepted Satoshi's suggestion to give more credit to other developer contributors.
 
 Andresen also accepted responsibility for the alert key, though he expressed concern about identifying trustworthy recipients to share it with.

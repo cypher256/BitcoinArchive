@@ -30,6 +30,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![ネットワークをテーマにした暗い色調のイラストで、光る一つのノードが淡い破線を通じて遠くの別のノードとつながり、そばに時計の文字盤とオフになったスイッチが描かれている。](/BitcoinArchive/images/analysis/2021-10-23-dustin-trammell-second-node-testimony-hero.png)
+
 2021年10月23日、[ダスティン・D・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)は Stephan Livera ポッドキャスト（第 314回：「ビットコインネットワークの 2番目のノード？ビットコインの初期の日々」）に出演し、ビットコインの最初期のユーザーの一人としての体験を最も詳細に語った。
 
 トランメルは、2009年1月8日の[暗号学メーリングリストでの](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の発表後、ソフトウェアをダウンロードして実行した最初の瞬間を描写した：

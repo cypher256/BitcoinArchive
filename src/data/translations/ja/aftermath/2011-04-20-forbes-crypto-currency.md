@@ -29,6 +29,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![レトロな雑誌の表紙の隣に、光る硬貨型のメダルや金の延べ棒、カメラのフラッシュのような光に照らされた黒いフード姿の人影、暗い背景に並ぶ 3 つの節目のタイムラインを描いたイラスト。](/BitcoinArchive/images/analysis/2011-04-20-forbes-crypto-currency-hero.png)
+
 *Forbes、2011年4月20日オンライン公開（印刷版 2011年5月9日号）より：*
 
 アンディ・グリーンバーグによる『Crypto Currency』は、ビットコインに関する最初の主要な印刷雑誌記事の一つだった。

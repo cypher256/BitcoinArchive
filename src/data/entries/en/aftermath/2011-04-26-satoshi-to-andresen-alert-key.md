@@ -42,6 +42,8 @@ relatedEntries:
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
 ---
 
+![An illustration of two silhouetted figures facing a glowing key that emits broadcast waves beneath a floating email envelope, with a network of connected nodes in the background.](/BitcoinArchive/images/analysis/2011-04-26-satoshi-to-andresen-alert-key-hero.png)
+
 On April 26, 2011, Satoshi Nakamoto sent what would become his last known private email. Addressed to Gavin Andresen with the subject line "alert key," it handed over the network alert key and announced his departure.
 
 <!-- quote: q1 -->

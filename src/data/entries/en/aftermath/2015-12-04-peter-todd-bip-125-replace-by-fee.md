@@ -44,6 +44,8 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion"
 ---
 
+![A tilted ledger card shows one transaction entry struck through and replaced by a higher-fee entry, beside an opt-in toggle switch and two silhouetted figures connected across a timeline, against a dark navy background.](/BitcoinArchive/images/analysis/2015-12-04-peter-todd-bip-125-replace-by-fee-hero.png)
+
 On December 4, 2015, David A. Harding and Peter Todd published BIP 125: "Opt-in Full Replace-by-Fee Signaling." The proposal established a standard for Bitcoin transactions to signal their willingness to be replaced by higher-fee versions while still unconfirmed — formalizing a concept that Satoshi Nakamoto had first described five years earlier.
 
 ## Origin in Satoshi's design

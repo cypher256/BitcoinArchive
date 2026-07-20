@@ -51,6 +51,8 @@ quotes:
 translationStatus: complete
 ---
 
+![二通の封筒と、光る鍵を手渡し合う二人のシルエット、背景にかすかなネットワークノードが浮かぶイラスト。](/BitcoinArchive/images/analysis/2011-04-26-satoshi-final-known-email-hero.png)
+
 [サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の最後の既知のメールは、2011年4月に送られた 2 通のメールである。
 
 ## 2011年4月23日 — マイク・ハーン宛

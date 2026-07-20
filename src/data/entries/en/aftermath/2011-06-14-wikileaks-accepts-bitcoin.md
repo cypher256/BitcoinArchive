@@ -48,6 +48,8 @@ quotes:
     personSlug: "julian-assange"
 ---
 
+![A dark infographic illustration where four crossed-out payment-icon boxes are blocked by a row of red bars, while a golden-to-teal curving line loops beneath the barrier to reach a folded paper document topped by a small coin, with two round markers noting an earlier and a later moment along the timeline.](/BitcoinArchive/images/analysis/2011-06-14-wikileaks-accepts-bitcoin-hero.png)
+
 On June 14, 2011, WikiLeaks tweeted:
 
 <!-- quote: q1 -->

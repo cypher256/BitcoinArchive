@@ -34,6 +34,8 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-41/2010-02-05-newlibertystandard-msg238"
 ---
 
+![Illustration of an orange circular coin bearing a large stylized currency symbol, beside a mock forum-post notification card, set against a dark background with faint circles and dotted lines.](/BitcoinArchive/images/analysis/2010-02-05-newlibertystandard-btc-symbol-proposal-hero.png)
+
 On February 5, 2010, [NewLibertyStandard](/BitcoinArchive/participants/newlibertystandard/) proposed on the BitcoinTalk forum:
 
 <!-- quote: q1 -->

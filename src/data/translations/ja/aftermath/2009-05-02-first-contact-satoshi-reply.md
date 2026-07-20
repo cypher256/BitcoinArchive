@@ -25,6 +25,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+![ラップトップの机に向かう顔のないシルエットが、光る返信封筒を離れた場所にいる別の顔のないシルエットとやり取りし、その下で FAQ 用のウェブ原稿と過去の回答をまとめた資料という 2 枚の書類カードが矢印でつながっている。](/BitcoinArchive/images/analysis/2009-05-02-first-contact-satoshi-reply-hero.png)
+
 <!-- speaker: narrator -->
 ヘルシンキ工科大学の 2年生で、anti-state.com フォーラムで「Trickstern」というハンドルネームを使っていた[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)は、サトシ・ナカモトにビットコインへの協力を申し出るメールを送っていた：「何かお手伝いできることはありませんか？」
 

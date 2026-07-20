@@ -54,6 +54,8 @@ quotes:
 translationStatus: complete
 ---
 
+![紺色を基調にしたインフォグラフィック風のイラストで、虫眼鏡が文書の行を覗き込む画面、タイムライン上で結ばれた二つの吹き出し型メッセージカードとその間の短い時間差を示すマーカー、フードをかぶったシルエットの胸に浮かぶクエスチョンマークと小さな天秤のアイコンが描かれている。](/BitcoinArchive/images/analysis/2024-10-08-hbo-money-electric-peter-todd-hero.png)
+
 <!-- speaker: narrator -->
 2024年10月8日、HBO がドキュメンタリー『Money Electric: The Bitcoin Mystery』を公開した。監督はカレン・ホーバック（『Q: Into the Storm』で知られる）。作品は Bitcoin Core 開発者[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)を、ビットコインの匿名の創設者[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の候補として名指しした。
 

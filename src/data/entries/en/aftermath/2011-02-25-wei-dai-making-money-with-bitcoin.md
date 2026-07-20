@@ -28,6 +28,8 @@ relatedEntries:
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
 ---
 
+![Diagram contrasting a direct arrow from cash to a bitcoin coin with a longer path looping through a GPU icon labeled as the first mining step, beside a network of connected nodes, a padlock, and an unchecked security-review checklist with a magnifying glass.](/BitcoinArchive/images/analysis/2011-02-25-wei-dai-making-money-with-bitcoin-hero.png)
+
 *LessWrong "Making money with Bitcoin?" comment thread, February 25, 2011:*
 
 [Wei Dai](/BitcoinArchive/participants/wei-dai/) — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998) and cited as reference [1] in the Bitcoin [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — joined a discussion about Bitcoin's investment potential. His comments clarify his relationship to Bitcoin and reveal his first steps as a miner.

@@ -34,6 +34,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色の背景に 4 つの場面が並ぶイラストで、人影が 1 人を担ぎ上げる様子、光る画面の脇に浮かぶオレンジ色のビットコインの硬貨、夕焼けの地平線に照らされた半透明のクライオニクス保存カプセル、そして夕暮れに寄り添って立つ二つの人影を描いている。](/BitcoinArchive/images/analysis/2019-04-01-fran-finney-hal-finney-profile-hero.png)
+
 Cryonics Magazine（Alcor Life Extension Foundation 発行）の 2019年第 2 四半期号に、主に妻フラン・フィニーへのインタビューに基づく[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の詳細なプロフィールが掲載された。このプロフィールは後にダン・ヘルドによって編集され、2020年3月30日に 21ideas.org で再掲載された。
 
 フランは Caltech の 3年生の時、新入生のハルの「rotation week」で出会った。「彼が[上級生に]持ち上げられて運ばれている最中の姿を見ました。」彼女は回想する：「人々が集まって哲学的な議論をするんです…… 彼が話す時、彼の言うことにはたいてい聞く価値がありました。」

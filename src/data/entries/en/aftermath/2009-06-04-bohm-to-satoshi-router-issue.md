@@ -24,6 +24,8 @@ secondarySources:
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 ---
 
+![Illustration of a home router severing its connection line to a small peer-to-peer network of nodes, next to an unopened envelope marked with a question mark, and an exhibit folder labeled C/10/1 in the corner.](/BitcoinArchive/images/analysis/2009-06-04-bohm-to-satoshi-router-issue-hero.png)
+
 [Nicholas Bohm](/BitcoinArchive/participants/nicholas-bohm/), a retired commercial solicitor from a major City of London firm and an e-commerce policy adviser for Cyber-Rights & Cyber-Liberties (UK), had been running Bitcoin since its earliest days. He was one of the few early adopters who engaged directly with [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) via private email.
 
 In this email, Bohm reported that after installing a new router, his Bitcoin client could no longer establish connections to the network. The specific subject — connectivity loss following a router replacement — is documented in Bohm's COPA witness statement (filed as exhibit C/10/1 by Bohm, who died shortly before the trial commenced), and is referenced in the Mellor judgment paragraphs concerning Satoshi-Bohm correspondence.

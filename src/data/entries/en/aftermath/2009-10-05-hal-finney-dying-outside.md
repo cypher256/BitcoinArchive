@@ -37,6 +37,8 @@ quotes:
     date: "2009-10-05T00:00:00Z"
 ---
 
+![Illustration of a still silhouetted seated figure glowing with a small inner flame, in front of a browser-style post window dated October 2009, beside a stylized eye linked by a light beam to a glowing code terminal, and a glass capsule holding a steady flame.](/BitcoinArchive/images/analysis/2009-10-05-hal-finney-dying-outside-hero.png)
+
 Published on the LessWrong rationalist forum on October 5, 2009, this essay was [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s first public statement about his ALS diagnosis, which had been delivered in August 2009. The essay was widely shared in cryonics and life-extension circles at the time of publication and is now read primarily for its place in Finney's Bitcoin biography: it documents the personal context in which Finney was simultaneously the [first known recipient of bitcoins from Satoshi Nakamoto](/BitcoinArchive/entries/tweets/hal-finney/2009-01-11-running-bitcoin/) (January 11, 2009) and a patient receiving the slowest-imaginable death sentence.
 
 **The essay's argument.** Finney opens with a black joke about how long he has left, then turns serious:

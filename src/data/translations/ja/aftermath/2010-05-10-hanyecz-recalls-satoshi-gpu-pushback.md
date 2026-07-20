@@ -31,6 +31,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![濃紺の背景に、小さなノートパソコンのシルエットと、それより大きなタワー型パソコンのシルエットが並び、右側のパネルでは家の形をしたアバターアイコンが 2 つ、点線とメールアイコンでつながれ、下には右肩上がりの折れ線グラフが途中で横ばいになる様子が描かれている。](/BitcoinArchive/images/analysis/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback-hero.png)
+
 *[編者注：本エントリーは回想に基づく記事であり、メールの一次資料ではない。一次資料で検証可能なのは、ハニエツによる GPU マイニング発表（2010 年 5 月 10 日、Bitcointalk フォーラム公開記録）のみ。サトシ側のやり取り — 本記事で引用されるメール — はハニエツの後年のインタビューでの回想に依拠する。元のメール文言は公開されておらず、以下に掲載するのは CoinDesk（2025 年）、Bitcoin Magazine、Cointelegraph 等のインタビューでハニエツが思い出した語感と内容である。]*
 
 <!-- speaker: narrator -->

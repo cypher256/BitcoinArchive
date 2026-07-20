@@ -36,6 +36,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![ハッシュ模様の丸、金色に輝くトークン、南京錠付きのサーバーチップ、コインの記号を矢印でつないだ、紺色を背景にしたイラスト](/BitcoinArchive/images/analysis/2019-08-21-hal-finney-rpow-recognition-hero.png)
+
 [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の再利用可能プルーフ・オブ・ワーク（RPOW）システムは、2004年8月15日に初めて発表され、ビットコインの直接の先駆けとして、没後ますます評価が高まっている。[2014年8月にフィニーが ALS で亡くなって](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/)から 5年、暗号技術コミュニティはデジタル通貨システムの系譜における RPOW の重要性をますます認識するようになった。
 
 RPOW は、ユーザーがプルーフ・オブ・ワークトークンを交換できるプロトタイプシステムであった。[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の Hashcash などの以前のプルーフ・オブ・ワーク提案とは異なり、RPOW トークンは再利用可能であった。つまり、計算作業を通じて一度作成されると、送金のたびに新たなプルーフ・オブ・ワーク計算を必要とせずに、人から人へ転送することができた。システムはトラステッド・コンピューティング（IBM 4758 セキュア暗号コプロセッサー）を使用して、サーバーがトークンを偽造したり複製したりできないことを保証した。

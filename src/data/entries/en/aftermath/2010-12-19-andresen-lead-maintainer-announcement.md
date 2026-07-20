@@ -42,6 +42,8 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651"
 ---
 
+![An illustration of two faceless silhouetted figures passing a golden baton, set above a four-point dated timeline and a small card showing a branching repository icon.](/BitcoinArchive/images/analysis/2010-12-19-andresen-lead-maintainer-announcement-hero.png)
+
 On December 19, 2010, four days after Satoshi's last source-code commit (the v0.3.19 release of December 15) and seven days after the [SVN access handover](/BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) posted his public acceptance of the leadership role to the BitcoinTalk forum:
 
 <!-- quote: q1 -->

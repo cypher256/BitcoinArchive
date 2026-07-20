@@ -45,6 +45,8 @@ quotes:
 translationStatus: complete
 ---
 
+![台帳カードの中で 1 件の取引が取り消されて手数料の高い取引に置き換わる様子と、オプトインの切替スイッチ、年表でつながる 2 つのシルエットの人物を、濃紺の背景に描いたイラスト。](/BitcoinArchive/images/analysis/2015-12-04-peter-todd-bip-125-replace-by-fee-hero.png)
+
 <!-- speaker: narrator -->
 2015年12月4日、デイヴィッド・A・ハーディングとピーター・トッドは BIP 125「Opt-in Full Replace-by-Fee Signaling」を公開した。未確認トランザクションをより手数料の高いバージョンに置換できることを通知する標準を確立し、サトシ・ナカモトが 5年前に最初に説明した概念を正式化した。
 

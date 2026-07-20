@@ -34,6 +34,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![ファイアウォールの内側にあるネットワークノードから複数のピアノードへ向けて外向きの接続だけが伸び、内向きの接続はブロックされている様子を描いたイラスト。メールを象徴する封筒のアイコンも添えられている。](/BitcoinArchive/images/analysis/2009-01-10-satoshi-to-finney-connections-hero.png)
+
 <!-- speaker: narrator -->
 ビットコインネットワークの最初期に送られたこのメールで、サトシは技術的な制約を明かした。
 

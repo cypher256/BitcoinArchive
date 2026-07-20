@@ -29,6 +29,8 @@ relatedEntries:
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
 ---
 
+![A dark navy graphic showing an unopened envelope, a jagged red price line beneath a dashed gold ceiling line, and a golden ascending path branching away from a fading gray path.](/BitcoinArchive/images/analysis/2013-04-21-wei-dai-bitcoin-monetary-policy-critique-hero.png)
+
 *From LessWrong "Bitcoins are not digital greenbacks" comment thread, April 21, 2013:*
 
 Wei Dai — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998), cited as reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — commented on Bitcoin's monetary design and his own role in its history:

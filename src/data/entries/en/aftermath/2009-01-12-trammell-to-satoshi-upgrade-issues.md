@@ -35,6 +35,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-upgrade-issues"
 ---
 
+![Diagram with two envelope icons linked by an arrow and a clock marking a short time gap, two software-version badges joined by an upgrade arrow, and a horizontal chain of connected blocks alongside a shorter dashed side branch carrying coin icons that fades out before a checkmark.](/BitcoinArchive/images/analysis/2009-01-12-trammell-to-satoshi-upgrade-issues-hero.png)
+
 Sent just eleven minutes after his previous email, Trammell reported two issues encountered during the upgrade from v0.1.0 to v0.1.3:
 
 <!-- quote: q1 -->

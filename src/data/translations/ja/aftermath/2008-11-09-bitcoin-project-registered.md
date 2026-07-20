@@ -20,6 +20,8 @@ relatedEntries:
   - aftermath/2010-12-15-bitcoin-v0319-released
 ---
 
+![ホワイトペーパーの文書と、SourceForge のプロジェクトページを模したブラウザー画面を 9日間の年表でつなぎ、初期リリースファイルの一覧やソース管理・ファイル配布・メーリングリストをまとめるハブのアイコンを添えたイラスト](/BitcoinArchive/images/analysis/2008-11-09-bitcoin-project-registered-hero.png)
+
 サトシ・ナカモトは 2008年11月9日に SourceForge.net に「bitcoin」プロジェクトを登録した。これは、2008年10月31日に暗号学メーリングリストにビットコインのホワイトペーパーを公開してからわずか 9日後のことであった。
 
 SourceForge は、ビットコインプロジェクトの主要なホスティングプラットフォームとして機能し、ソースコードのバージョン管理（SVN）、ファイルリリースホスティング、そして bitcoin-list メーリングリストを提供した。sourceforge.net/projects/bitcoin/ にあるプロジェクトページは、ビットコインの初期の開発と配布の中心的なハブとなった。

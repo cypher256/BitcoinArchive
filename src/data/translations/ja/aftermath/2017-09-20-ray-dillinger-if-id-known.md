@@ -34,6 +34,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![夕暮れの道を挟んだ両側の机に黒い人影が座り、一方は連なるブロックの列を、もう一方は六角形の記号の列を見つめている。道の中央には輝くコインの山が静かに積まれ、奥へ向かって細い道が幾筋にも枝分かれしている。](/BitcoinArchive/images/analysis/2017-09-20-ray-dillinger-if-id-known-hero.png)
+
 2008年11月、俺はビットコインのソースコードのブロックチェーン部分のコードレビューとセキュリティ監査を行った。
 
 分業はこうだ：俺がブロックチェーンのコードをレビューし、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)がスクリプト言語をレビューし、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は俺たちの質問に答えたり、自ら質問したりを交互に行った。

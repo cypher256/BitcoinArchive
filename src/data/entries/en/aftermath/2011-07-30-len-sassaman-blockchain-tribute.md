@@ -30,6 +30,8 @@ relatedEntries:
   - aftermath/2012-07-22-luke-dashjr-biography
 ---
 
+![A row of interlocked dark ledger blocks against a navy background, with one block outlined in gold and filled with a grid of small pixel-like glyphs, a lit candle beside it, faint layered envelope outlines above, and two plain silhouette figures standing at either end of the row.](/BitcoinArchive/images/analysis/2011-07-30-len-sassaman-blockchain-tribute-hero.png)
+
 [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) — cypherpunk, cryptographer, lead developer of the Mixmaster anonymous remailer, and PhD candidate at KU Leuven — [died on July 3, 2011](/BitcoinArchive/participants/len-sassaman/). His widow, the cryptographer and researcher Meredith Patterson, confirmed the death was suicide.
 
 Within weeks, [Dan Kaminsky](/BitcoinArchive/participants/dan-kaminsky/) — the security researcher who had earlier [reviewed the Bitcoin v0.1 code and concluded "either there's a team of people who worked on this, or this guy is a genius"](/BitcoinArchive/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/) — embedded an ASCII-art memorial to Sassaman directly into the Bitcoin blockchain. The tribute was announced on July 30, 2011, and publicly revealed at the Black Hat USA 2011 conference in Las Vegas.

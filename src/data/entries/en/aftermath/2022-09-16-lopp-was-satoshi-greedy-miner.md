@@ -43,6 +43,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![An editorial infographic with three rising gold coin-stack columns next to a half-filled dial gauge and a clock linked to three connected block icons, set against a warm cream background with dark navy panels.](/BitcoinArchive/images/analysis/2022-09-16-lopp-was-satoshi-greedy-miner-hero.png)
+
 On September 16, 2022, Jameson Lopp published "Was Satoshi a Greedy Miner?" on his blog, directly challenging the narrative that [Bitcoin's creator](/BitcoinArchive/participants/satoshi-nakamoto/) selfishly hoarded coins during the network's early days.
 
 ## Key data points

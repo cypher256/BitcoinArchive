@@ -36,6 +36,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-use-cases"
 ---
 
+![An envelope marked private linked by dashed lines to two mailing-list cards, beside a vending-machine-style micropayment device and small coin icons representing donation, reward-point, and game-currency use cases.](/BitcoinArchive/images/analysis/2009-01-15-satoshi-to-trammell-use-cases-hero.png)
+
 In this email, Satoshi noted that at least one node on the network had a frequently changing IP address within the same class B range, which he hadn't anticipated. He asked Trammell's permission to CC the conversation to bitcoin-list or the Cryptography mailing list, and shared the bitcoin-list subscription details.
 
 Satoshi then referenced [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s earlier suggestion about Bitcoin as an investment — a framing he would [explicitly forbid in public-facing material four months later](/BitcoinArchive/entries/aftermath/2009-05-04-faq-draft-and-investment-warning/):

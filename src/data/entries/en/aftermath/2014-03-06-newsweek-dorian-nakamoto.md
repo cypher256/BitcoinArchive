@@ -31,6 +31,8 @@ relatedEntries:
   - "aftermath/2014-03-06-dorian-nakamoto-biography"
 ---
 
+![A tabloid magazine cover looms over a suburban street of small houses, beside a redacted quote card and an online forum message, as a faceless figure walks away from a line of silhouetted figures holding long camera lenses.](/BitcoinArchive/images/analysis/2014-03-06-newsweek-dorian-nakamoto-hero.png)
+
 On March 6, 2014, Newsweek published a cover story titled "The Face Behind Bitcoin" by journalist Leah McGrath Goodman, claiming to have identified Bitcoin's creator. The article pointed to Dorian Prentice Satoshi Nakamoto, a 64-year-old Japanese-American physicist and systems engineer living in Temple City, California.
 
 Goodman based her identification largely on the fact that Dorian's birth name was "Satoshi Nakamoto," that he had a background in engineering and classified defense work, and a quote she attributed to him during a brief doorstep interview:

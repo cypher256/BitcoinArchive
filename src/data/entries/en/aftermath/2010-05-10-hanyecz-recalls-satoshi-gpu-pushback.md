@@ -30,6 +30,8 @@ relatedEntries:
   - analysis/2026-05-24-satoshi-design-vs-current-reality
 ---
 
+![On a dark navy background, a small laptop silhouette and a larger tower-shaped computer silhouette sit side by side above a rising line graph, while two circular house-shaped avatar icons are linked by a dashed line through an envelope icon in a panel to the right.](/BitcoinArchive/images/analysis/2010-05-10-hanyecz-recalls-satoshi-gpu-pushback-hero.png)
+
 *[Editor: this entry is a recollection-based article, not a primary-source private email record. The verifiable primary-source element is Hanyecz's GPU mining announcement on Bitcointalk (May 10, 2010, on the public forum record). The Satoshi side of the exchange — the private emails quoted below — is from Hanyecz's later interview accounts. The original email text has not been publicly released; what appears below is Hanyecz's recall of phrasing and content as shared in interviews with CoinDesk (2025), Bitcoin Magazine, and Cointelegraph.]*
 
 After Laszlo Hanyecz announced his GPU mining discovery on the Bitcointalk forum on May 10, 2010, Satoshi Nakamoto emailed him privately expressing concern (per Hanyecz's later interview accounts). Hanyecz had been the first person to successfully use a GPU (graphics processing unit) to mine Bitcoin, achieving dramatically higher hash rates than CPU mining allowed.

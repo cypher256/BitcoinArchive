@@ -38,6 +38,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![Illustration of a single computer tower linked to five parallel lanes that each scan from a high value down to a low value, beside a crossed-out grid of small computer icons, with nearby cards displaying a percentage, a clock, and a speed multiplier.](/BitcoinArchive/images/analysis/2020-08-22-sergio-lerner-patoshi-mining-machine-hero.png)
+
 On August 22, 2020, [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) published "The Patoshi Mining Machine" on his blog Bitslog — a detailed technical reconstruction of the hardware and software behind [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/)'s mining operation. The article appeared one month after Whale Alert's "The Satoshi Fortune" report, which had claimed Satoshi used approximately 48 computers.
 
 ## Re-mining simulation

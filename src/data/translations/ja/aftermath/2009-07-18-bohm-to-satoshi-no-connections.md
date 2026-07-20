@@ -25,6 +25,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+![つながった小さなネットワークノード群が、点線の経路と封筒のアイコン、再起動を示す矢印を通って、周囲に散らばった接続の切れた点に囲まれ光る一つの孤立したノードへとつながる様子を、暗いグリッド背景に描いたイラスト。](/BitcoinArchive/images/analysis/2009-07-18-bohm-to-satoshi-no-connections-hero.png)
+
 <!-- speaker: narrator -->
 ポート転送の修正から約 6 週間後、[ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)は新たな接続障害を報告した。
 

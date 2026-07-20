@@ -34,6 +34,8 @@ quotes:
 translationStatus: complete
 ---
 
+![メールのやり取りを模した枠と、薄暗く沈んだ状態から輝く成熟した状態へ変わるコインのアイコン、ノードをつないだ小さなネットワーク図、矢印で結ばれた顔のない 2 つのシルエットを描いたイラスト。](/BitcoinArchive/images/analysis/2009-01-12-satoshi-to-trammell-coin-maturity-hero.png)
+
 <!-- speaker: narrator -->
 ダスティン・トランメルへのこの返信で、サトシはタイムスタンプサービスのリンクに感謝し、代替的なアプローチについて議論した。トランメルのクレジット欄に関する質問について、サトシはコインの成熟メカニズムを説明した：
 

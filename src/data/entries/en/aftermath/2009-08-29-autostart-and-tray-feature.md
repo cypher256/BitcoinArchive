@@ -27,6 +27,8 @@ relatedEntries:
   - aftermath/2009-12-16-bitcoin-v02-released
 ---
 
+![Illustration of an application window collapsing into a system-tray icon beside a checklist card for background-running features, with a small peer-to-peer network icon and a version badge.](/BitcoinArchive/images/analysis/2009-08-29-autostart-and-tray-feature-hero.png)
+
 In a series of emails from late August 2009, Satoshi and Malmi discussed critical UI improvements for the Bitcoin client. Malmi had successfully compiled Bitcoin using wxPack and was working on new features.
 
 On August 28, Malmi suggested promoting Bitcoin within virtual gaming communities and asked about configuration file implementations. The next day, Satoshi responded with strong views on the importance of autostart and minimize-to-tray functionality:

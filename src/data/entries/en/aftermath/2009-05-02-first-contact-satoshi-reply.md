@@ -24,6 +24,8 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 ---
 
+![A faceless silhouette at a laptop desk exchanges a glowing reply envelope with a distant faceless silhouette, with two document cards below — one for web/FAQ copy, the other for source replies — linked by an arrow.](/BitcoinArchive/images/analysis/2009-05-02-first-contact-satoshi-reply-hero.png)
+
 [Martti Malmi](/BitcoinArchive/participants/martti-malmi/), a sophomore at the Helsinki University of Technology using the handle "Trickstern" on the anti-state.com forum, had emailed Satoshi Nakamoto offering to help with Bitcoin: "I would like to help with Bitcoin, if there's something I can do."
 
 In this reply dated May 2, 2009, Satoshi responded positively, praising Malmi's understanding of Bitcoin as "spot on." Satoshi identified the most pressing need: website writing and documentation. He acknowledged his own limitations as a writer and asked Malmi to create website content and a FAQ for the project.

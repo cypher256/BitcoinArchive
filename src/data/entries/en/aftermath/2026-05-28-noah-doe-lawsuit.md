@@ -34,6 +34,8 @@ relatedEntries:
   - "aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary"
 ---
 
+![A courthouse with scales of justice and a broken key stands beside a grid of padlock icons, a sealed vault holding a single Bitcoin token, a stamped legal filing, a stack of coins, and a small percentage chart, all on a dark navy background.](/BitcoinArchive/images/analysis/2026-05-28-noah-doe-lawsuit-hero.png)
+
 On March 11, 2026, an anonymous plaintiff using the pseudonym "Noah Doe," joined by two Wyoming LLCs (ABC Company and XYZ Company), filed suit in the Supreme Court of the State of New York under Index No. 153119/2026. The suit names 39,069 dormant Bitcoin addresses as defendants and claims ownership of the approximately 3.8 million BTC they hold — valued at roughly $293 billion at filing.
 
 Counsel of record is Lewis & Lin LLC. The novel legal theory rests on **Article 7-B of New York's Personal Property Law**, the state's lost-property statute traditionally applied to physical objects. Plaintiff's argument: dormant Bitcoin meets the statutory definition of mislaid or abandoned personal property, and a finder who has "publicly maintained" possession through some yet-to-be-disclosed mechanism is entitled to ownership transfer through court order.

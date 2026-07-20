@@ -43,6 +43,8 @@ quotes:
 translationStatus: complete
 ---
 
+![机に向かう顔のないシルエットの隣に、向かい合う二つの吹き出し型パネルが並んでいる。角ばった旗の群れが半開きの扉へ迫るなか、扉の奥ではもう一つのシルエットが影へと退いていく。下には三つの点を結んだ年表のラインが描かれている。](/BitcoinArchive/images/analysis/2025-02-21-mike-hearn-coingeek-retrospective-hero.png)
+
 CoinGeek Weekly Livestream のインタビューで、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[直接メールを交わした](/BitcoinArchive/ja/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/)数少ない人物の一人である[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)が、ビットコインの創設者とプロジェクトの変遷について稀有な個人的回顧を語った。
 
 ハーンはサトシを「実験と可能性の議論」に関心を持つ人物だったと述べた。サトシは「ビットコインが他の人のアイデアにどう使えるか、いつも喜んで説明していた」と語り、硬直したイデオローグではなく、開放的で協力的な姿勢の持ち主だったことを示唆した。

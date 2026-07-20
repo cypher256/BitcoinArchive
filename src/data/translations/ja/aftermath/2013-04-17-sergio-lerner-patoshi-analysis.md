@@ -49,6 +49,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![濃い青緑色を背景に、右肩上がりで区切られた折れ線グラフ、5 分割されたコンピューターチップと × 印で消された小型マイニング機のアイコン列、そして金貨を収めた金庫に虫眼鏡と照準のアイコンを添えた図解。](/BitcoinArchive/images/analysis/2013-04-17-sergio-lerner-patoshi-analysis-hero.png)
+
 2013年4月17日、アルゼンチンのビットコイン研究者[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)がブログ Bitslog に『The Well Deserved Fortune of [Satoshi Nakamoto](/BitcoinArchive/ja/participants/satoshi-nakamoto/), Bitcoin creator, Visionary and Genius』を発表した。ビットコイン最初期のマイニングパターンに関する最初の体系的分析である。
 
 ## 手法

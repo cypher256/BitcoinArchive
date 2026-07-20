@@ -27,6 +27,8 @@ relatedEntries:
   - aftermath/2009-01-15-satoshi-to-trammell-use-cases
 ---
 
+![Illustration of a FAQ draft document with one bullet point crossed out in red ink, an arrow pointing to two envelope icons labeled Review and Reply, and a warning triangle beside a crossed-out path leading from an investment label toward a payment-system arrow icon.](/BitcoinArchive/images/analysis/2009-05-04-faq-draft-and-investment-warning-hero.png)
+
 On May 4, 2009, Malmi submitted his initial FAQ draft to Satoshi, covering topics including Bitcoin's definition, how to acquire bitcoins, how the system works, and security considerations.
 
 Satoshi praised the FAQ but raised a critical concern about how Bitcoin was being positioned. He wrote:

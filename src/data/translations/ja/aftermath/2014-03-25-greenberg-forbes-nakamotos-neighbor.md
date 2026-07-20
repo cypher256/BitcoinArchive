@@ -40,6 +40,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![住宅地の地図で二軒の家を点線で結んだ図、車椅子とアイトラッキング画面に向かう人物のシルエット、道路を走る人物と大きな時計を配したカードという 3 つの図解パネルが、下部の端末風ログ帯の上でタイムラインに沿って並ぶ編集部制作のインフォグラフィック。](/BitcoinArchive/images/analysis/2014-03-25-greenberg-forbes-nakamotos-neighbor-hero.png)
+
 2014 年 3 月 25 日、Forbes のシニアライター、アンディ・グリーンバーグは『Nakamoto's Neighbor: My Hunt For Bitcoin's Creator Led To A Paralyzed Crypto Genius』を発表した — [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)をサトシ正体候補として名指しした最初の主流報道による長文特集であり、同じ記事内で特定に対する主要な反証も提示するものである。
 
 ## ドリアン・ナカモトへの地理的近接

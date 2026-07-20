@@ -41,6 +41,8 @@ quotes:
     sourceEntryId: "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"
 ---
 
+![A dark timeline illustration spanning 2009 to 2014, showing a house lit by camera flashes, a padlock icon at 2014, and a message card displaying a short quoted denial.](/BitcoinArchive/images/analysis/2014-03-07-satoshi-p2p-foundation-return-hero.png)
+
 On March 7, 2014, roughly twenty-four hours after [Newsweek named Dorian Nakamoto as Bitcoin's creator](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/), [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s long-dormant P2P Foundation account posted a single-sentence reply on the original "Bitcoin open source implementation of P2P-currency" thread:
 
 <!-- quote: q1 -->

@@ -40,6 +40,8 @@ quotes:
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney"
 ---
 
+![A row of envelope icons growing in size, leading to one large open letter marked with a circular arrow badge, beside a small forwarded-excerpt note card.](/BitcoinArchive/images/analysis/2009-01-10-satoshi-to-adam-back-launch-hero.png)
+
 Nearly five months after the August 2008 exchange, Satoshi wrote to Adam Back one last time, the day after [Bitcoin v0.1 was released](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/). The load-bearing line of the email — Satoshi's own announcement of the v0.1 release to one of the first cypherpunks he had contacted — reads:
 
 <!-- quote: q1 -->

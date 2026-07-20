@@ -30,6 +30,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![濃紺の背景に右肩上がりのダウンロード数グラフ、放射状の波を発する抽象的なブラウザーウィンドウ、光るネットワークノードへ向かって流れる人型シルエットの群れ、右下に負荷メーターを配したインフォグラフィック風イラスト。](/BitcoinArchive/images/analysis/2010-07-11-slashdot-bitcoin-article-hero.png)
+
 2010年7月11日、Slashdot が、 [5 日前の v0.3 リリース](/BitcoinArchive/ja/entries/aftermath/2010-07-06-bitcoin-v03-released/)を扱う『Bitcoin Releases Version 0.3』というタイトルの記事を掲載した。大手テクノロジーニュースプラットフォームでのビットコイン初の重要な報道である。
 
 「Slashdot 効果」は即座に劇的だった。ビットコインソフトウェアのダウンロード数は 2010年6月の約 3,000 から 7月には 20,000 以上に急増した。新規ユーザーがネットワークに殺到し、ビットコインの価格はその後数日間で急騰した。

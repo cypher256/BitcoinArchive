@@ -43,6 +43,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![金貨を積み上げた 3 本の柱、半分ほど振れたゲージ、鎖でつながれた 3 つのブロックアイコンに寄り添う時計を、クリーム色の背景と紺色のパネルで構成した編集用インフォグラフィック。](/BitcoinArchive/images/analysis/2022-09-16-lopp-was-satoshi-greedy-miner-hero.png)
+
 2022年9月16日、ジェイムソン・ロップは「Was Satoshi a Greedy Miner?（サトシは欲張りなマイナーだったか？）」をブログに発表し、[ビットコインの創設者](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がネットワーク初期にコインを利己的に溜め込んだという説に真っ向から反論した。
 
 ## 主要データ

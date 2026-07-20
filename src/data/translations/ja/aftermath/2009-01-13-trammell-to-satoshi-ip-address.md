@@ -35,6 +35,8 @@ quotes:
 translationStatus: complete
 ---
 
+![ネットワーク経路を進む封筒が、送信先の IP アドレスと 25 BTC の注記を示す吹き出しへ向かう様子と、二進表示を刻んだ抽選ホイールを、暗いグリッド背景に描いたイラスト。](/BitcoinArchive/images/analysis/2009-01-13-trammell-to-satoshi-ip-address-hero.png)
+
 <!-- speaker: narrator -->
 トランメルはサトシの包括的な返信に対して複数の点について応答した。proof-hashes Google グループは投稿にメンバーシップを必要とせず、proof-hashes@googlegroups.com にメールを送るだけで内容が公開されることを説明した。ビットコインのクライアントが 10,000 ブロックごとに現在のブロックチェーンを投稿することを補足的な記録として提案した。
 

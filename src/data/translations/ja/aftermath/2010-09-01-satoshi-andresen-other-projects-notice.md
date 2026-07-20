@@ -33,6 +33,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![光る扉の前で鍵とフォルダーを手渡し合う二つのシルエット人物を描き、左に色あせたカレンダー、右に光る年表マーカーの列を配した、暗い色調の編集イラスト。](/BitcoinArchive/images/analysis/2010-09-01-satoshi-andresen-other-projects-notice-hero.png)
+
 [ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)のビットコインへの初期関与に関する Wikipedia の記述によれば、2010 年 9 月にサトシ・ナカモトはギャビンに「他のプロジェクトに取り組んでいる」と私的に伝えた:
 
 <!-- audit:quote-skip -->

@@ -38,6 +38,8 @@ quotes:
     sourceEntryId: "correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money"
 ---
 
+![Editorial illustration titled "A reply that closes a loop," showing an envelope icon labeled Adam Back linked by a curved arrow to a second envelope marked with a checkmark and labeled Satoshi Nakamoto, from which an arrow points to a document icon with highlighted lines labeled "b-money · 1998."](/BitcoinArchive/images/analysis/2008-08-21-satoshi-to-adam-back-b-money-hero.png)
+
 In the third email of the chain, Satoshi thanked Adam Back for pointing him to [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal. The historically load-bearing line — already cited as a self-statement in archive analysis — reads:
 
 <!-- quote: q1 -->

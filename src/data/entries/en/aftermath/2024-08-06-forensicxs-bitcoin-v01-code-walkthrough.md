@@ -31,6 +31,8 @@ relatedEntries:
   - "aftermath/2011-10-10-dan-kaminsky-bitcoin-security"
 ---
 
+![A dark navy infographic featuring a code-editor window with a magnifying glass hovering over abstract lines of code, a two-segment horizontal bar split into a larger gold portion and a smaller teal portion, five icon cards showing a padlock, two diamond shapes, connected node dots, a wallet, and stacked bars, and a horizontal timeline dotted with circular markers and one amber tick mark.](/BitcoinArchive/images/analysis/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough-hero.png)
+
 On August 6, 2024, the cybersecurity researcher known as Forensicxs published "Bitcoin Core v0.1: a code walkthrough" — a comprehensive analysis of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s original Bitcoin source code [released on January 9, 2009](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/).
 
 **Scope:** Forensicxs analyzed the Bitcoin v0.1 codebase as **31,794 lines** across 31 files, written in C++ and released under the MIT X11 license. Note that this archive's own source-code analysis treats the v0.1 C++/header line count from the local primary source as approximately 19,901 lines, growing to 31,909 lines by v0.3.19. The 31,794 figure is therefore Forensicxs's count for that article and not this archive's reference value (the difference reflects which files / blank lines / comments / wxWidgets headers each count includes).

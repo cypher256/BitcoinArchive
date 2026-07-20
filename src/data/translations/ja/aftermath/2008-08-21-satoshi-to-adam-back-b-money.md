@@ -39,6 +39,7 @@ quotes:
 translationStatus: complete
 ---
 
+![アダム・バックとサトシ・ナカモトを表す二つの封筒アイコンが矢印でつながり、一方には確認を示すチェックマークが添えられている。そこからさらに矢印が伸び、強調された線を持つ書類アイコンへと至り、b-money のページを指し示すイラスト。](/BitcoinArchive/images/analysis/2008-08-21-satoshi-to-adam-back-b-money-hero.png)
 
 メールチェーンの 3 通目で、サトシはアダム・バックが[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を紹介してくれたことに感謝した。アーカイブの分析記事でも[サトシの自己言及](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)として既に引用されている、歴史的に中核となる一文は次の通り。
 

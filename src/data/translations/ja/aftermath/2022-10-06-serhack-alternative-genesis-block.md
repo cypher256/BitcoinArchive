@@ -33,6 +33,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![難易度の低いブロックと高いブロックを左右に並べ、それぞれに古い日付と新しい日付を添え、右上に下落するグラフ線、左下に封筒のアイコン、右下に薄れて消えかけた機能アイコン群を配したイラスト。](/BitcoinArchive/images/analysis/2022-10-06-serhack-alternative-genesis-block-hero.png)
+
 2022年10月6日、セキュリティ研究者 SerHack が『The Story Behind the Alternative Genesis Block of Bitcoin』を発表し、公式ローンチの約 4 か月前のリリース前のビットコイン・ジェネシスブロックを分析した。
 
 ## 発見の経緯

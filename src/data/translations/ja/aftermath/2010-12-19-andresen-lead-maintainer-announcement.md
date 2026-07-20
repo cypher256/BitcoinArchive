@@ -43,6 +43,8 @@ quotes:
 translationStatus: complete
 ---
 
+![顔のない二つのシルエットが金色のバトンを受け渡す場面と、四つの日付が並ぶ年表、分岐したリポジトリアイコンを添えた小さなカードを描いたイラスト。](/BitcoinArchive/images/analysis/2010-12-19-andresen-lead-maintainer-announcement-hero.png)
+
 2010 年 12 月 19 日、サトシ最後のソースコミット（12 月 15 日の v0.3.19 リリース）から 4 日後、[SVN アクセスの引き継ぎ](/BitcoinArchive/ja/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/)から 7 日後、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)は BitcoinTalk フォーラムにリーダーシップ就任の公的承諾を投稿した:
 
 <!-- quote: q1 -->

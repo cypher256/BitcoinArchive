@@ -47,6 +47,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色を基調にしたインフォグラフィックに、重なり合う 2 つの時計盤、フードをかぶった人影と南京錠・ネットワーク図、封筒のアイコンから薄れゆく空白を経て星座状の点群へ続く横一列の年表線が描かれている。](/BitcoinArchive/images/analysis/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history-hero.png)
+
 2021 年 2 月 22 日、**エヴァン・ハッチ** — 暗号通貨ゲーミングプラットフォーム Worlds.org の創業者 — が Medium に「レン・サッサマンとサトシ：サイファーパンク史」を公開した。本記事は[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)仮名の中の人物だったとする仮説の最も多く引用される公的定式化であり、後続のジャーナリズムにおいて本仮説の基礎参照源であり続けている。
 
 ## ハッチが提示する論拠

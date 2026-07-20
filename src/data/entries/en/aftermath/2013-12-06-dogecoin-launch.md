@@ -29,6 +29,8 @@ inlineLinkKeywords:
   - "Dogecoin"
 ---
 
+![A dark navy infographic showing a stylized dog-head icon branching off a circular icon, a diamond question-mark icon turning into a stacked coin, a speech-bubble icon beside a round coin symbol, and a row of small pictograms along a wavy horizon at the bottom.](/BitcoinArchive/images/analysis/2013-12-06-dogecoin-launch-hero.png)
+
 On December 6, 2013, Billy Markus (a software engineer at IBM) and Jackson Palmer (a marketing employee at Adobe Sydney) launched Dogecoin (DOGE), a cryptocurrency built around the "Doge" Shiba Inu internet meme. The initial framing was explicitly satirical: Palmer, observing the proliferation of cryptocurrencies in 2013, registered dogecoin.com as a joke about cryptocurrency speculation. Markus saw the joke, contacted Palmer, and turned it into a working chain by forking [Litecoin](/BitcoinArchive/entries/aftermath/2011-10-13-litecoin-launch/).
 
 Dogecoin's launch parameters:

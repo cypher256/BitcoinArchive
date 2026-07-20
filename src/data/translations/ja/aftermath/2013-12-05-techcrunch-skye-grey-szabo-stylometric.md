@@ -41,6 +41,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![点線で結ばれた 2 つの文書パネルの間で一致する語句が色分けして強調され、上部に虫眼鏡、下部にシルエットの人物と鎖状につながったブロックの列が配置された図解。](/BitcoinArchive/images/analysis/2013-12-05-techcrunch-skye-grey-szabo-stylometric-hero.png)
+
 2013 年 12 月 1 日、匿名ブロガーの「Skye Grey」名義の書き手が LikeInAMirror.wordpress.com 上に「サトシ・ナカモトは（おそらく）ニック・サボである」を公開した。2013 年 12 月 5 日、TechCrunch のジョン・ビッグスが「真のサトシ・ナカモトとは何者か？ある研究者が答えを見つけたかもしれない」で本調査を報じ、本仮説を暗号通貨およびテック報道の広い読者層に紹介した。
 
 これがサボ＝サトシ仮説の記録における基礎となる文体計量的事象である。[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)を[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と同定するその後の主流による特定 — [2014 年 4 月の Aston University 法言語学的研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)、[2015 年 5 月のナサニエル・ポパーによるニューヨーク・タイムズ調査記事](/BitcoinArchive/ja/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/)および書籍『デジタル・ゴールド』、2018 年 10 月のハンナ・マーフィー / *Fortune* 特集 — はすべて、Skye Grey の 2013 年 12 月の起点分析を出典とするか、これを増幅したものである。

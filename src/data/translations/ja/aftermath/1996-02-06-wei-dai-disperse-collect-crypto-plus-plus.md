@@ -29,6 +29,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![暗いティール地に琥珀色のアクセントを配したレトロなターミナル風の図解。左側でファイルが冗長な符号化済み断片へ分裂し、右側でその断片から元のファイルが再構成される様子を、中央の小さな歯車アイコンがつないでいる。](/BitcoinArchive/images/analysis/1996-02-06-wei-dai-disperse-collect-crypto-plus-plus-hero.png)
+
 *サイファーパンクメーリングリストより、1996年2月5-6日：*
 
 <!-- audit:quote-skip -->

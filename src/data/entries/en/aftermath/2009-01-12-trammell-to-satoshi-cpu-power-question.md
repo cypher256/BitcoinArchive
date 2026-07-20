@@ -33,6 +33,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-cpu-power-question"
 ---
 
+![Illustration of an oversized glowing network node dominating a small peer-to-peer network, linked to two email envelope icons labeled Question and Reply, beside a spinning lottery wheel and proportional bar charts.](/BitcoinArchive/images/analysis/2009-01-12-trammell-to-satoshi-cpu-power-question-hero.png)
+
 In a separate email sent just nine minutes after reporting upgrade issues, Trammell raised what would become one of Bitcoin's most enduring questions — mining centralization:
 
 <!-- quote: q1 -->

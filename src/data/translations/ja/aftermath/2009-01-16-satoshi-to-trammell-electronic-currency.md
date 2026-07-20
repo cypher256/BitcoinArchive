@@ -40,6 +40,8 @@ quotes:
 translationStatus: complete
 ---
 
+![一通の手紙が二つの宛先へ複製されて枝分かれする様子、自動販売機の脇に置かれたビットコインのコイン、ノードをつなぐ経路に沿って伸びる新芽、そしてニッチな用途を示す小さなアイコンに囲まれて回るコインを描いたイラスト。](/BitcoinArchive/images/analysis/2009-01-16-satoshi-to-trammell-electronic-currency-hero.png)
+
 <!-- speaker: narrator -->
 このメールは bitcoin-list@lists.sourceforge.net および metzdowd.com の暗号学メーリングリストの両方に CC されており、公開メッセージとなっている。これはサトシがトランメルに送った以前のメール（threadPosition 9）を整理し、重要な追加を加えた洗練された版である。
 

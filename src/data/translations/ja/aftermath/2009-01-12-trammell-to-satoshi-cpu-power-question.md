@@ -34,6 +34,8 @@ quotes:
 translationStatus: complete
 ---
 
+![小さなノード群の中で一つだけひときわ大きく光るノードと、それを挟む 2 通の封筒アイコン、下部に並ぶ抽選ホイールと比率棒グラフを描いたイラスト。](/BitcoinArchive/images/analysis/2009-01-12-trammell-to-satoshi-cpu-power-question-hero.png)
+
 <!-- speaker: narrator -->
 アップグレードの問題を報告してからわずか 9分後に送信された別のメールで、トランメルはビットコインの最も永続的な問題の一つとなるテーマ――マイニングの中央集権化について問いかけた。
 

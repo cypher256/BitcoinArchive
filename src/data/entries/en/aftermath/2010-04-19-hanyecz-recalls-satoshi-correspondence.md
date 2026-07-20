@@ -31,6 +31,8 @@ relatedEntries:
   - aftermath/2010-07-06-bitcoin-v03-released
 ---
 
+![A laptop showing a completed macOS build, two silhouetted figures linked by envelope icons across a distance, a weekly calendar highlighting a cluster of envelopes on Friday, and a dark message bubble with a bug icon.](/BitcoinArchive/images/analysis/2010-04-19-hanyecz-recalls-satoshi-correspondence-hero.png)
+
 *[Editor: this entry is a recollection-based article, not a primary-source private email record. The full private email correspondence between Hanyecz and Satoshi has not been publicly released. All quoted material attributed to Satoshi here is paraphrase or recall reported by Hanyecz in later interviews (Bitcoin Magazine, CoinDesk 2025, Cointelegraph, and others), not text taken from the primary email record. The verifiable primary-source elements are Hanyecz's macOS port (April 19, 2010, traceable via Bitcointalk and the SourceForge / GitHub commit history) and Hanyecz's GPU mining announcement on Bitcointalk (May 10, 2010). The framing here is the historical pattern of correspondence as Hanyecz himself described it years later.]*
 
 [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/), a software developer from Jacksonville, Florida, became one of Bitcoin's most important early contributors. He registered on the Bitcointalk forum shortly before creating the first macOS client for Bitcoin Core on April 19, 2010 — a contribution that [shipped formally as the Mac OS X version in the v0.3 release](/BitcoinArchive/entries/aftermath/2010-07-06-bitcoin-v03-released/) that July.

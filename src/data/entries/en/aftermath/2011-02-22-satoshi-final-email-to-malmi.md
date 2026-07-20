@@ -43,6 +43,8 @@ quotes:
     sourceEntryId: "correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-260"
 ---
 
+![Dark illustration of an email window listing two recipients above blurred body lines, flanked by two padlocked encryption blocks each linking down to a separate silhouetted figure, with a lone silhouette standing in the foreground.](/BitcoinArchive/images/analysis/2011-02-22-satoshi-final-email-to-malmi-hero.png)
+
 On February 22, 2011, Satoshi Nakamoto sent [what would be his final email in the Malmi archive](/BitcoinArchive/entries/correspondence/martti-malmi/2011-02-22-0-3-20-release-shipped-260/). The raw header shows both Gavin Andresen and Martti Malmi in the `To:` field on the "0.3.20 release : shipped" thread, but the body itself is a reply to Gavin — Satoshi addresses Gavin in the second person ("Martti should give *you* the Drupal admin password") and refers to Martti in the third person, looping him in so he knows to perform the handoff Satoshi is delegating. Gavin had asked Satoshi for permission (or the encrypted password) to post release announcements to the SourceForge `bitcoin-list` mailing list. Satoshi's reply transferred that responsibility:
 
 <!-- quote: q1 -->

@@ -36,6 +36,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![Illustration of a torn newspaper clipping dated 03 Jan 2009, a circular activity clock split into three time-zone bands with clustered dots, a note card with circled words suggesting proofreading marks, and a London skyline silhouette with a clock tower, against a dark navy night sky.](/BitcoinArchive/images/analysis/2020-11-23-chain-bulletin-satoshi-london-hypothesis-hero.png)
+
 On November 23, 2020, Doncho Karaivanov published a detailed analysis on Chain Bulletin arguing that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) was based in London while developing Bitcoin. The article combines multiple lines of evidence.
 
 ## The Times headline evidence

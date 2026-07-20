@@ -29,6 +29,8 @@ relatedEntries:
   - aftermath/2009-07-20-satoshi-to-bohm-trammell-ip
 ---
 
+![A dark, network-themed illustration showing one glowing node connected by a faint dashed line to a distant second node, beside a clock face and a switch shown in the off position.](/BitcoinArchive/images/analysis/2021-10-23-dustin-trammell-second-node-testimony-hero.png)
+
 On October 23, 2021, [Dustin D. Trammell](/BitcoinArchive/participants/dustin-trammell/) appeared on the Stephan Livera Podcast (Episode 314: "The 2nd Node On The Bitcoin Network? The Early Days of Bitcoin") to provide the most detailed account of his experience as one of Bitcoin's very first users.
 
 Trammell described his first moments on the Bitcoin network after downloading and running the software shortly after [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/)'s January 8, 2009 [announcement on the Cryptography mailing list](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/):

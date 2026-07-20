@@ -24,6 +24,8 @@ relatedEntries:
   - aftermath/2015-01-01-amaury-sechet-biography
 ---
 
+![Illustration of a blockchain splitting at a fork point into two diverging paths, a purple one leading to larger blocks and an old scroll icon, and a teal one leading to standard-sized blocks, with a hashpower bar chart beneath each path.](/BitcoinArchive/images/analysis/2018-11-15-bitcoin-sv-fork-hero.png)
+
 On November 15, 2018, Bitcoin Cash split. The Bitcoin Cash blockchain — itself a [fork from Bitcoin in August 2017](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) — fractured into two competing chains: Bitcoin ABC (the existing client, which retained the BCH ticker) and Bitcoin SV (Satoshi Vision), led by [Craig Wright](/BitcoinArchive/participants/craig-wright/) and Calvin Ayre's nChain organization.
 
 The dispute that produced the split was about the next protocol upgrade for Bitcoin Cash. Bitcoin ABC proposed a routine upgrade including Canonical Transaction Ordering (CTOR) and several new opcodes. Bitcoin SV — the nChain-backed implementation — proposed instead to:

@@ -42,6 +42,8 @@ quotes:
 translationStatus: complete
 ---
 
+![アダム・バック宛の封筒からチェックマーク付きの引用カードへ、そこから草稿の原稿へと破線がつながる、濃紺の背景のイラスト。](/BitcoinArchive/images/analysis/2008-08-20-satoshi-to-adam-back-hero.png)
+
 <!-- speaker: narrator -->
 サトシ・ナカモトによる現存する最古のメール。[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)宛に、Hashcash を下敷きにした論文を近く公開する旨を伝え、起草した引用形式の確認を求めた。
 

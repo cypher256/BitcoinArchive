@@ -41,6 +41,8 @@ quotes:
 translationStatus: complete
 ---
 
+![封筒のアイコンが列をなして次第に大きくなり、丸い矢印バッジの付いた大きな手紙へと続き、その脇に転送メールの抜粋を示す小さなカードを添えた構図。](/BitcoinArchive/images/analysis/2009-01-10-satoshi-to-adam-back-launch-hero.png)
+
 <!-- speaker: narrator -->
 2008年 8 月のやり取りから約 5 か月後、サトシはアダム・バックに最後のメールを書き送った。[Bitcoin v0.1 のリリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)の翌日のことである。最初に連絡を取ったサイファーパンクの一人であるバックに対するサトシ自身による v0.1 公開告知の中核的な一文は次の通り。
 

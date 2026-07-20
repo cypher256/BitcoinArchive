@@ -32,6 +32,8 @@ quotes:
 translationStatus: complete
 ---
 
+![青みがかったグリッド背景に、ビットコインのウォレットのアドレス帳を模したパネルを配した図解。3 件のアドレス行のうち 1 件が星マークとともに金色でハイライトされ、矢印でコインのアイコンへとつながっている。パネル左右には、点線でつながれた抽象的なシルエットの人物アイコンがそれぞれ配置されている。](/BitcoinArchive/images/analysis/2009-01-18-trammell-to-satoshi-address-mislabeled-hero.png)
+
 <!-- speaker: narrator -->
 トランメルは紛らわしいトランザクションラベルについて納得した瞬間を迎えた：
 

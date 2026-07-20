@@ -42,6 +42,8 @@ quotes:
 translationStatus: complete
 ---
 
+![紺色を背景にした年表の上で、封筒のアイコンが連なる中央を挟み、シルエットの人物が 2 人向かい合って立つ。右上には破れた手紙のようなカードがあり、左下には CPU から特殊なチップへ変化する様子を示す小さな図が置かれている。](/BitcoinArchive/images/analysis/2011-04-23-mike-hearn-satoshi-email-exchange-hero.png)
+
 Google のエンジニアで初期のビットコイン貢献者となった[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)は、2009年から 2011年4月にかけて[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と一連のメールを交換した。ハーンはビットコインのホワイトペーパーを読んでプロジェクトに興味を持ち、最初にサトシに連絡を取った。
 
 彼らのやり取りの中で、サトシはビットコインの将来に関する技術的な側面について議論した。システムのスケーリング方法、簡易決済検証（SPV）クライアントの仕組み、そしてマイニングが CPU からより専門的なハードウェアへと進化していくことについての展望などが含まれていた。

@@ -33,6 +33,8 @@ relatedEntries:
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
 ---
 
+![Two silhouetted figures sit at desks flanking an open road at dusk, one examining a row of connected blocks and the other a line of hexagonal symbols, while a glowing stack of coins rests at the center and thin paths branch away toward the horizon.](/BitcoinArchive/images/analysis/2017-09-20-ray-dillinger-if-id-known-hero.png)
+
 In November of 2008, I did a code review and security audit for the block chain portion of the Bitcoin source code.
 
 The division of labor went like this: I reviewed the blockchain code, [Hal Finney](/BitcoinArchive/participants/hal-finney/) reviewed the scripting language, and [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) alternated between answering our questions and asking his own.

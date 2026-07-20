@@ -28,6 +28,8 @@ relatedEntries:
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
 ---
 
+![Dark illustration of a metallic USB security key at the center of a glowing amber ring of attempt markers, flanked by a padlock icon, a torn paper slip, and a stack of coin discs sealed behind a glass panel.](/BitcoinArchive/images/analysis/2021-01-12-stefan-thomas-7002-btc-ironkey-lockout-hero.png)
+
 In early 2011, programmer and IRC enthusiast **Stefan Thomas** was paid roughly 7,002 BTC by an early Bitcoin user for producing the popular animated explainer video *What is Bitcoin?*. He stored the wallet's private key on an **IronKey** encrypted USB drive — a device designed for high-assurance enterprise key storage: after **ten consecutive incorrect password attempts**, its onboard controller auto-encrypts and erases the protected payload, making the contents cryptographically unrecoverable.
 
 Thomas wrote the IronKey's master password down on a piece of paper. He lost the paper.

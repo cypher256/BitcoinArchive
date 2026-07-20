@@ -40,6 +40,8 @@ quotes:
 translationStatus: complete
 ---
 
+![金色の曲線でつながれた抽象的なシルエットの人物が二人、間に手紙型のカードと小さなファイルアイコン、脇には枝分かれするネットワーク図が配置されている。背景は濃紺で、かすかに二進数の模様が入る。](/BitcoinArchive/images/analysis/2009-01-08-satoshi-to-finney-release-hero.png)
+
 <!-- speaker: narrator -->
 2009年1月8日木曜日、太平洋標準時20:54:55 に satoshi@vistomail.com から送信された。暗号学メーリングリストでの公開アナウンスからわずか数時間後、サトシは個人的にハル・フィニーにビットコインのリリースを通知した。
 

@@ -35,6 +35,8 @@ relatedEntries:
   - aftermath/2009-01-12-first-bitcoin-transaction
 ---
 
+![Illustration of four linked icons on a dark navy background -- a hash-textured circle, a glowing golden token, a padlocked server chip, and a coin symbol -- connected by arrows suggesting a chain of transfer](/BitcoinArchive/images/analysis/2019-08-21-hal-finney-rpow-recognition-hero.png)
+
 [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s Reusable Proofs of Work (RPOW) system, first announced on August 15, 2004, has received growing posthumous recognition as a direct precursor to Bitcoin. Five years after [Finney's death from ALS in August 2014](/BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/), the cryptographic community increasingly acknowledged RPOW's significance in the lineage of digital cash systems.
 
 RPOW was a prototype system that allowed users to exchange proof-of-work tokens. Unlike earlier proof-of-work proposals such as [Adam Back](/BitcoinArchive/participants/adam-back/)'s Hashcash, RPOW tokens were reusable -- once created through computational work, they could be transferred from person to person without requiring new proof-of-work computation for each transfer. The system used trusted computing (IBM 4758 secure cryptographic coprocessor) to ensure the server could not forge or duplicate tokens.

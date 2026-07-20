@@ -34,6 +34,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![ブロックチェーンのブロックが一列に並び、そのうち一つが強調表示された図。二つの抽象的なシルエットの人物を直接つなぐ線の上にコインが描かれ、下部にはカレンダーの印とターミナル画面が添えられている。](/BitcoinArchive/images/analysis/2009-01-12-first-bitcoin-transaction-hero.png)
+
 2009年1月12日03:30:25 UTC、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はビットコインブロックチェーンのブロック 170 で[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)に 10 BTC を送付した。史上初の個人間ビットコイン送金である。
 
 **トランザクション ID:** `f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16`

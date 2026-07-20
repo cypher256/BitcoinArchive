@@ -35,6 +35,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-address-verification"
 ---
 
+![A glowing hexagonal token linked to icons for email, chat, voice, and a website between two silhouette figures, with a secondary panel showing a computer icon exporting data to an external backup drive.](/BitcoinArchive/images/analysis/2009-01-15-trammell-to-satoshi-address-verification-hero.png)
+
 Trammell continued the security discussion, arguing that Bitcoin addresses had an advantage over IP-based sending because they could be verified through multiple independent channels:
 
 <!-- quote: q1 -->

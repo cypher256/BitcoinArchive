@@ -25,6 +25,8 @@ secondarySources:
     url: "https://cryptoslate.com/never-before-seen-satoshi-nakamoto-emails-add-several-details-to-bitcoins-origin-lore/"
 ---
 
+![A balance scale weighing a small lightning-bolt icon against a tall stack of coin-like discs, flanked by a power-meter gauge on one side and a small bank-building icon on the other, with faint circuit-like lines in the background.](/BitcoinArchive/images/analysis/2009-05-03-energy-consumption-defense-hero.png)
+
 In their correspondence, Satoshi addressed what would become one of Bitcoin's most enduring criticisms: its energy consumption.
 
 Satoshi argued that even if Bitcoin grew to consume significant energy, the cost would be "an order of magnitude less than the billions in banking fees" that characterize the traditional financial system. He framed Bitcoin mining's energy use as a trade-off that should be compared to the full cost of maintaining the existing banking infrastructure.

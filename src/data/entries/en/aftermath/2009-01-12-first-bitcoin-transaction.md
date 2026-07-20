@@ -33,6 +33,8 @@ relatedEntries:
   - aftermath/2019-08-21-hal-finney-rpow-recognition
 ---
 
+![Illustration of a row of blockchain blocks with one highlighted block, linked by a direct-transfer line between two abstract silhouette figures, with a calendar tab and a terminal window beneath.](/BitcoinArchive/images/analysis/2009-01-12-first-bitcoin-transaction-hero.png)
+
 On January 12, 2009, at 03:30:25 UTC, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) sent 10 BTC to [Hal Finney](/BitcoinArchive/participants/hal-finney/) in Block 170 of the Bitcoin blockchain — the first person-to-person Bitcoin transaction in history.
 
 **Transaction ID:** `f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16`

@@ -35,6 +35,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-mitm-attack"
 ---
 
+![Illustration of a dark silhouette figure intercepting a data packet on a network line between two computer icons, with a small alert box and a rounded recommendation banner below.](/BitcoinArchive/images/analysis/2009-01-15-trammell-to-satoshi-mitm-attack-hero.png)
+
 In a new email thread, Trammell — a professional security researcher — reported on his detailed analysis of Bitcoin's network protocol. He had captured and analyzed packet traces during a transaction he sent to himself, observing that the protocol transmitted some cleartext information including transaction names and comments.
 
 Trammell then presented a thorough security analysis of the send-to-IP feature, identifying its fundamental vulnerability to man-in-the-middle attacks:

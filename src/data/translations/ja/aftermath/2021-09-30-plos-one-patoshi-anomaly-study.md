@@ -43,6 +43,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色を基調にしたインフォグラフィックで、半円形のゲージの一角に光る点が密集し、隣には緑色の六角形アイコンが並ぶ格子があって、その中の一つだけオレンジ色で強調され点線でつながっている。](/BitcoinArchive/images/analysis/2021-09-30-plos-one-patoshi-anomaly-study-hero.png)
+
 2021年9月30日、レイキャビク大学コンピューターサイエンス学部のマリア・オスカルスドッティルとジャッキー・マレットは、PLOS ONE に『Strangely mined bitcoins: Empirical analysis of anomalies in the bitcoin blockchain transaction network』を発表した（DOI: 10.1371/journal.pone.0258001）。これは、[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)が 2013年にブログで最初に特定した [Patoshi マイニングパターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)を正式に分析した、最初の査読付き学術論文であった。
 
 ## 2 つの独立した異常の特定

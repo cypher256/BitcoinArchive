@@ -27,6 +27,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![レトロなコンピューター端末にマイニングのログが表示され、二人のシルエットの人物が封筒をやり取りする様子を描いたイラスト。ゼロを示す残高表示、硬貨の山に乗った砂時計、ホワイトペーパーの書類、日付を示す時計が添えられている。](/BitcoinArchive/images/analysis/2009-01-11-trammell-to-satoshi-first-email-hero.png)
+
 <!-- speaker: narrator -->
 セキュリティ研究者であり、「Druid」というハンドルネームを使うダスティン・D・トランメルは、[2009年1月8日にサトシが暗号学メーリングリストでビットコインを発表した](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)後、最も早くソフトウェアをダウンロードして実行した人物の一人であった。
 

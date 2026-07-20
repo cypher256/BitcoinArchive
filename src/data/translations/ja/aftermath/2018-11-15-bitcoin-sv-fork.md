@@ -24,6 +24,8 @@ relatedEntries:
   - aftermath/2015-01-01-amaury-sechet-biography
 ---
 
+![ブロックチェーンが分岐点で 2 本の経路に分かれ、紫色の経路は大きめのブロックと古い巻物のアイコンへ、青緑色の経路は標準サイズのブロックへとつながり、それぞれの下にハッシュパワーを示す棒グラフが並んでいる。](/BitcoinArchive/images/analysis/2018-11-15-bitcoin-sv-fork-hero.png)
+
 2018 年 11 月 15 日、ビットコインキャッシュが分裂した。ビットコインキャッシュブロックチェーン — それ自体が [2017 年 8 月のビットコインからのフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/) — は、互いに競合する二つのチェーンに割れた。Bitcoin ABC (既存クライアントで、BCH のティッカーを保持) と、[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)とカルヴィン・エアの nChain 組織が率いる Bitcoin SV (Satoshi Vision) である。
 
 分裂を生んだ論争は、ビットコインキャッシュの次のプロトコル更新の内容についてだった。Bitcoin ABC は Canonical Transaction Ordering (CTOR) と新しいオペコード群を含む通常更新を提案した。一方、nChain が支援する実装である Bitcoin SV は、以下の変更を提案した:

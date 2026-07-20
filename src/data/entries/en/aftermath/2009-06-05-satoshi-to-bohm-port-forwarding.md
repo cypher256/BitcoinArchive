@@ -26,6 +26,8 @@ relatedEntries:
   - aftermath/2009-01-10-satoshi-to-finney-connections
 ---
 
+![Illustration of a home router with port 8333 being forwarded through a blocked gateway, next to a sparse network diagram of peer nodes with mostly closed inbound connections, two envelope icons dated Jan 2009 and Jun 2009, and an exhibit folder labeled C/10/1.](/BitcoinArchive/images/analysis/2009-06-05-satoshi-to-bohm-port-forwarding-hero.png)
+
 [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) replied to [Bohm](/BitcoinArchive/participants/nicholas-bohm/)'s connectivity issue the next day, advising him to forward port 8333 on his new router. He explained that without port forwarding, Bohm's node could not receive incoming connections from other peers.
 
 Satoshi noted that if nobody currently online could accept inbound connections, nodes would fail to connect to the network entirely — highlighting just how fragile the Bitcoin network was in mid-2009 with only a handful of active nodes accepting inbound connections. Satoshi's own node had faced [the identical problem five months earlier](/BitcoinArchive/entries/aftermath/2009-01-10-satoshi-to-finney-connections/), when he told Hal Finney he could not receive incoming connections from where he was.

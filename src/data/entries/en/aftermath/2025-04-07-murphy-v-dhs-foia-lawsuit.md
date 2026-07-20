@@ -33,6 +33,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![A dark-blue illustration of a redacted FOIA document beside four faceless silhouette figures and a columned courthouse building, linked by a three-point timeline of small icons.](/BitcoinArchive/images/analysis/2025-04-07-murphy-v-dhs-foia-lawsuit-hero.png)
+
 On April 7, 2025, attorney **James A. Murphy** — known publicly as "MetaLawMan" — filed a Freedom of Information Act lawsuit against the U.S. Department of Homeland Security in the U.S. District Court for the District of Columbia. The suit seeks DHS records related to a 2019 on-record claim by DHS Special Agent **Rana Saoud** that DHS investigators had traveled to California and interviewed four people believed to be behind Bitcoin's creation.
 
 ## The 2019 OffshoreAlert remark

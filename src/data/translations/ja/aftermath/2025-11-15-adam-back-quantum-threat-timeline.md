@@ -35,6 +35,8 @@ quotes:
 translationStatus: complete
 ---
 
+![濃紺の背景に、起点を示す丸いマーカーから複数の年代の目盛りを経て、地平線上の小さな量子コンピューターのシルエットへと伸びる、オレンジ色から紫色へ変化する光る曲線状のタイムラインを描いたインフォグラフィックで、下部には錠前のアイコンと層状の鍵のアイコンが矢印でつながれている。](/BitcoinArchive/images/analysis/2025-11-15-adam-back-quantum-threat-timeline-hero.png)
+
 量子研究の進展によりビットコインが危険にさらされているかという質問に対し、 [アダム・バック](/BitcoinArchive/ja/participants/adam-back/)は X に投稿した:
 
 <!-- quote: q1 -->

@@ -49,6 +49,8 @@ quotes:
 translationStatus: complete
 ---
 
+![濃紺の背景に、レトロなメール告知カードと封筒のアイコンが矢印でつながり、回路模様のスタンプが収まった枠付きパネルへと合流する。そこから点線でアーチ形のアイコンと丸いバッジまで続き、下には 2 つの点を結ぶ横長の年表が添えられている。配色はオレンジとクリーム、ティールでまとめられている。](/BitcoinArchive/images/analysis/1997-03-28-adam-back-hashcash-announcement-hero.png)
+
 1997 年 3 月 28 日、当時エクセター大学の博士研究員だった[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)は、サイファーパンクメーリングリストに件名「`[ANNOUNCE] hash cash postage implementation`」のメールを送信した。アナウンス全文は [hashcash.org/papers/announce.txt](http://www.hashcash.org/papers/announce.txt) — アダム・バック自身がホストする元投稿のコピー — に保存されている。
 
 Hashcash 自体は通貨ではない。台帳もなく、送金もなく、合意形成もなく、通貨供給もない。システムは単独完結するスパム対策／DoS 対策のスタンプ機構である。しかし 1997 年のアナウンスは、Hashcash をデジタルキャッシュ議論の中に明示的に位置づけている — 「これは digicash とどう関係するか」という独立した節で。

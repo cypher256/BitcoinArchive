@@ -37,6 +37,8 @@ quotes:
     date: "2009-01-03"
 ---
 
+![A glowing cyan block labeled "Block 0 / Genesis" fused with a torn newspaper front page reading "Bailout for banks," a padlocked coin marked "50 BTC unspendable" below it, fading erased-identity icons on the left, and two smaller blocks with coin icons trailing off to the right.](/BitcoinArchive/images/analysis/2009-01-03-genesis-block-hero.png)
+
 On January 3, 2009, Satoshi Nakamoto hardcoded the first block of the Bitcoin blockchain into the v0.1 source. What he etched into the coinbase transaction of that block was not a software version string, not his own name, not "Hello World" — it was the front-page headline of that day's *Times* newspaper, copied verbatim:
 
 <!-- quote: q1 -->

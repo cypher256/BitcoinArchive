@@ -28,6 +28,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![アプリケーションウィンドウがタスクトレイのアイコンへ縮小していく様子と、バックグラウンド動作機能のチェックリストカード、小さな P2P ネットワークのアイコンやバージョンバッジを配したイラスト](/BitcoinArchive/images/analysis/2009-08-29-autostart-and-tray-feature-hero.png)
+
 <!-- speaker: narrator -->
 2009年8月下旬の一連のメールで、サトシとマルミはビットコインクライアントの重要な UI 改善について議論した。マルミは wxPack を使用してビットコインのコンパイルに成功しており、新機能の開発に取り組んでいた。
 

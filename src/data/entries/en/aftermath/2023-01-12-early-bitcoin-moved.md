@@ -24,6 +24,8 @@ relatedEntries:
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
 ---
 
+![An illustration of a glowing early blockchain block linked to a chart showing two diverging wave patterns, beside a vault releasing a few coins toward a target icon.](/BitcoinArchive/images/analysis/2023-01-12-early-bitcoin-moved-hero.png)
+
 In early 2023, blockchain observers detected movement of bitcoins that had been mined in January 2009, during the very first weeks of Bitcoin's existence. The transaction moved coins from a block reward that had remained dormant for approximately 14 years, immediately sparking speculation across the cryptocurrency community about whether [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) was finally spending coins.
 
 Any movement of coins from Bitcoin's earliest blocks generates intense scrutiny because Satoshi Nakamoto is estimated to have been the dominant miner during this period. However, Satoshi was not the only miner active in January 2009. [Hal Finney](/BitcoinArchive/participants/hal-finney/) began running Bitcoin on January 10, 2009, and other early participants also mined blocks in Bitcoin's first weeks.

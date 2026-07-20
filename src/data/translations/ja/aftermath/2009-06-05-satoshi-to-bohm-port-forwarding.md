@@ -27,6 +27,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![ホームルーターでポート 8333 を転送する様子を描いたイラスト。塞がれたゲートウェイの奥へ転送の矢印が伸び、右側にはほとんどのノードで着信接続が閉じたままの疎なピアネットワーク図が並ぶ。下部には日付の異なる 2 つの封筒アイコンと、証拠書類を表すフォルダーアイコンが添えられている。](/BitcoinArchive/images/analysis/2009-06-05-satoshi-to-bohm-port-forwarding-hero.png)
+
 <!-- speaker: narrator -->
 [サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は翌日、[ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)の接続問題に返信し、新しいルーターでポート 8333 を転送するよう助言した。ポート転送がなければ、ボームのノードは他のピアからの着信接続を受け付けられないと説明した。
 

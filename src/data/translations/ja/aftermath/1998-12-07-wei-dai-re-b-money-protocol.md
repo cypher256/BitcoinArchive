@@ -44,6 +44,8 @@ quotes:
     sourceEntryId: "emails/cypherpunks/b-money-protocol/1998-12-08-wei-dai-re-b-money-protocol"
 ---
 
+![顔のない二つのシルエットがメーリングリスト風の返信パネルを挟む様子と、二つの図形を天秤にかけた図、「ニッチ」を示す小さな扇形アイコン、1998 年と 2014 年を示す二つの丸い印を描いたイラスト。](/BitcoinArchive/images/analysis/1998-12-07-wei-dai-re-b-money-protocol-hero.png)
+
 *サイファーパンクメーリングリスト（cypherpunks@cyberpass.net）より、1998年12月7日：*
 
 *件名: Re: Wei Dei's "b-money" protocol*

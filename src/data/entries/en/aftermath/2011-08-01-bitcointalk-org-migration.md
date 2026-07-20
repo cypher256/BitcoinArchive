@@ -33,6 +33,8 @@ relatedEntries:
   - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
 ---
 
+![A dark infographic shows a browser address bar migrating from bitcoin.org/smf to bitcointalk.org via a dashed arrow, document-shaped cards flowing across a bridge between two labeled panels, an icon row marking preserved posts, threads, accounts, and software, and two silhouetted figures exchanging a handoff icon in the corner.](/BitcoinArchive/images/analysis/2011-08-01-bitcointalk-org-migration-hero.png)
+
 In August 2011, the Bitcoin Forum completed its migration from its original location at bitcoin.org/smf to the independent domain bitcointalk.org.
 
 ## Original Forum

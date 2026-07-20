@@ -31,6 +31,8 @@ relatedEntries:
   - aftermath/2009-07-22-bitcoin-exchange-proposal
 ---
 
+![An electricity meter dial connects by a dashed arrow to a handwritten cost-calculation note, which connects onward to a glowing abstract coin, with a small exchange badge below.](/BitcoinArchive/images/analysis/2009-10-05-newlibertystandard-first-exchange-rate-hero.png)
+
 On October 5, 2009, [NewLibertyStandard](/BitcoinArchive/participants/newlibertystandard/) published the first-ever exchange rate for Bitcoin.
 
 **$1 = 1,309.03 BTC** ($0.000764 per BTC)

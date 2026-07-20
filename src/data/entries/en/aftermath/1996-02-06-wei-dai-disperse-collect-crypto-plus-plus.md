@@ -28,6 +28,8 @@ relatedEntries:
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
 ---
 
+![Retro terminal-style diagram in dark teal and amber showing a file splitting into redundant encoded fragments on one side and reassembling into a restored file from those fragments on the other, connected by a small gear icon.](/BitcoinArchive/images/analysis/1996-02-06-wei-dai-disperse-collect-crypto-plus-plus-hero.png)
+
 *From the Cypherpunks mailing list, February 5-6, 1996:*
 
 <!-- audit:quote-skip -->

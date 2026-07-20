@@ -42,6 +42,8 @@ quotes:
     sourceEntryId: "correspondence/adam-back/2008-08-20-satoshi-to-adam-back-hashcash-citation"
 ---
 
+![An envelope addressed to Adam Back linked by a dashed line to a citation card bearing a checkmark, and a separate manuscript page attached as a pre-release draft, against a dark navy background.](/BitcoinArchive/images/analysis/2008-08-20-satoshi-to-adam-back-hero.png)
+
 The earliest documented email from Satoshi Nakamoto. Writing to [Adam Back](/BitcoinArchive/participants/adam-back/), Satoshi confirmed he was about to publish a paper that built on Hashcash and asked Back to verify the citation form he had drafted:
 
 ```

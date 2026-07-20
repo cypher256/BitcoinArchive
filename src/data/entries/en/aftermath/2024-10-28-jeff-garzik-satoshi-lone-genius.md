@@ -31,6 +31,8 @@ relatedEntries:
   - analysis/2008-08-20-satoshi-self-statements
 ---
 
+![A dark, moody illustration of a silhouetted figure at a glowing terminal displaying lock and chain-link icons, beside a row of separate icon blocks merging into one new icon and a split panel over an unbroken horizontal timeline.](/BitcoinArchive/images/analysis/2024-10-28-jeff-garzik-satoshi-lone-genius-hero.png)
+
 Satoshi as a coder, he's more the "A Beautiful Mind" type lone genius.
 
 He was a self-taught programmer. He was humble about his limitations.

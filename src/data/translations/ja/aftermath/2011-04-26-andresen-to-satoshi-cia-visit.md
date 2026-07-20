@@ -40,6 +40,8 @@ quotes:
 translationStatus: complete
 ---
 
+![紺色を基調に、未返信のまま途切れたメール返信スレッドと、招待状の封筒、鍵のアイコン、円柱のある政府施設のシルエットと P2P ネットワーク図をつなぐ線、2011 年の 2 つの日付をつなぐ点線の年表を配置したイラスト。](/BitcoinArchive/images/analysis/2011-04-26-andresen-to-satoshi-cia-visit-hero.png)
+
 <!-- speaker: narrator -->
 [サトシの「アラートキー」メール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)への返信で、ギャビン・アンドレセンはいくつかの点に言及した。[Forbes の「Crypto Currency」記事](/BitcoinArchive/ja/entries/aftermath/2011-04-20-forbes-crypto-currency/)を読んだことを認め、「海賊通貨」という枠組みが問題であることに同意した。他の開発貢献者にもっと功績を認めるというサトシの提案を受け入れた。
 

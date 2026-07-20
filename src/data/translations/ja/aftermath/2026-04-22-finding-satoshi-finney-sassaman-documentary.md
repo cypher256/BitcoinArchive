@@ -49,6 +49,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色を背景に、コードの断片模様で満たされたシルエットと曲線模様で満たされたシルエットが一つの横顔へと重なり合う構図を中心に据え、影のかかった扇形を持つ丸時計、傾いた天秤、虫眼鏡付きのケースファイルを脇に配した、ティールとゴールドを基調とするイラスト。](/BitcoinArchive/images/analysis/2026-04-22-finding-satoshi-finney-sassaman-documentary-hero.png)
+
 2026 年 4 月 22 日、ドキュメンタリー『Finding Satoshi』が公開された。監督はタッカー・トゥーリーとマシュー・ミーレ、主要調査者はビジネス作家のウィリアム・D・コーハンと私立探偵のタイラー・マロニーである。作品はサトシ・ナカモト仮名を 2 人の人物 ― サイファーパンク暗号学者の[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) (1956-2014) と[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) (1980-2011) ― の共作として描いた。作中の役割分担では、フィニーがコードを担い、サッサマンが[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)を起草した。
 
 ## 「2 人サトシ」の枠組み

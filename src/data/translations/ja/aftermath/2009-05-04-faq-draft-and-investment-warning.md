@@ -28,6 +28,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![赤い取り消し線が引かれた項目のある FAQ 草案の文書と、確認・返信を表す 2 つの封筒アイコンをつなぐ矢印、警告を示す三角マーク、そして投資から決済システムへの転換を表す斜線を描いたイラスト。](/BitcoinArchive/images/analysis/2009-05-04-faq-draft-and-investment-warning-hero.png)
+
 <!-- speaker: narrator -->
 2009年5月4日、マルミは初期の FAQ 草案をサトシに提出した。ビットコインの定義、ビットコインの入手方法、システムの仕組み、セキュリティに関する考慮事項などのトピックを網羅していた。
 

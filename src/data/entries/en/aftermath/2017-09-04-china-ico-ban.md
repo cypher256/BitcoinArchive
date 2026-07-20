@@ -26,6 +26,8 @@ relatedEntries:
   - aftermath/2018-10-01-ray-dillinger-interview
 ---
 
+![An illustration of a red-toned outline of China with three padlocked, shuttered server racks, connected by glowing teal-and-gold arcs to labeled points in Kazakhstan, the United States, and Canada, alongside a small line chart dipping down and then climbing back up.](/BitcoinArchive/images/analysis/2017-09-04-china-ico-ban-hero.png)
+
 On September 4, 2017, seven Chinese central government regulators — led by the People's Bank of China (PBOC) — jointly issued the "Announcement on Preventing Financial Risks from Initial Coin Offerings," effectively banning all ICOs and cryptocurrency exchange operations in China.
 
 ICOs were declared illegal fundraising mechanisms. All funds raised via ICOs were ordered returned to investors. Financial institutions were barred from providing services related to ICO activities. By the end of September 2017, all major domestic cryptocurrency exchanges — including OKCoin, Huobi, and BTC China — had ceased operations.

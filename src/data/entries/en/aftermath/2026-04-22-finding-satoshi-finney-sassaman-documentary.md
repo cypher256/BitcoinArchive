@@ -49,6 +49,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![A dark illustration showing two silhouetted busts merging into a single profile — one half filled with code-bracket glyphs, the other with flowing quill-line strokes — beside a round clock face with a shaded time-window arc, an uneven balance scale, and a folder with a magnifying glass, rendered in teal, gold, and cream on navy.](/BitcoinArchive/images/analysis/2026-04-22-finding-satoshi-finney-sassaman-documentary-hero.png)
+
 On April 22, 2026, **Finding Satoshi** — a documentary directed by Tucker Tooley and Matthew Miele, with business writer William D. Cohan and private investigator Tyler Maroney as primary investigators — proposed a two-person reading of the Satoshi Nakamoto pseudonym: cypherpunk cryptographers [Hal Finney](/BitcoinArchive/participants/hal-finney/) (1956–2014) and [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) (1980–2011) as co-creators of Bitcoin. Under the documentary's framing, Finney wrote the code and Sassaman drafted the [whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/).
 
 ## The "two-person Satoshi" framing

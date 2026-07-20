@@ -29,6 +29,8 @@ relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
 ---
 
+![An infographic-style illustration on a dark blue background showing an upward-trending download chart, an abstract browser window emitting radiating signal rings, a cluster of small silhouetted figures streaming toward a glowing hexagonal network node, and a strain-gauge meter in the lower corner.](/BitcoinArchive/images/analysis/2010-07-11-slashdot-bitcoin-article-hero.png)
+
 On July 11, 2010, Slashdot published an article titled "Bitcoin Releases Version 0.3," covering [the v0.3 release](/BitcoinArchive/entries/aftermath/2010-07-06-bitcoin-v03-released/) five days earlier and marking Bitcoin's first significant coverage on a major technology news platform.
 
 The "Slashdot effect" was immediate and dramatic. Bitcoin software downloads surged from approximately 3,000 in June to over 20,000 in July 2010. New users flooded the network, and Bitcoin's price increased sharply in the following days.

@@ -41,6 +41,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![ブログ投稿画面のモックアップに、コードを書く協力者を求める一文が強調表示され、隣に未完成を示す点線輪郭の金塊ブロックと、2008年4月から同年10月へと続くタイムラインが描かれている。](/BitcoinArchive/images/analysis/2008-04-27-nick-szabo-bit-gold-implementation-request-hero.png)
+
 2008年4月、[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)が自身のブログ「Unenumerated」で、ビットゴールドの実装協力を公に呼びかけた。
 
 <!-- quote: q1 -->

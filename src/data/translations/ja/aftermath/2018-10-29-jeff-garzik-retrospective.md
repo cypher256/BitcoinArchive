@@ -29,6 +29,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![ビットコインの回顧記事向けの濃紺のイラストで、ブラウザーウィンドウのアイコンから発光するメッセージカードが波状に広がる様子、封筒でつながる顔のない二つの人影、三段の順位表、開いた南京錠を添えたコンピューター画面が描かれている。](/BitcoinArchive/images/analysis/2018-10-29-jeff-garzik-retrospective-hero.png)
+
 *BREAKER Magazine、2018年10月29日より：*
 
 [ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)は 2010年7月の [Slashdot 投稿](/BitcoinArchive/ja/entries/aftermath/2010-07-11-slashdot-bitcoin-article/)「Great Slashdotting」でビットコイン v0.3 を発見した。Red Hat で働きながら 5年間ビットコインのコア開発者として活動した。ある時点では、ビットコインのコードベースへの貢献度は[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)に次いで 3番目だった。

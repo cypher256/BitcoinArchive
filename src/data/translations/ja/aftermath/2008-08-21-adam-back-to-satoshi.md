@@ -39,6 +39,8 @@ quotes:
 translationStatus: complete
 ---
 
+![封筒、虫眼鏡付きの書類、ブラウザーウィンドウという 3 つのセピア色のアイコンを、破線の矢印が転送メールの連鎖のようにつないでいるイラスト。](/BitcoinArchive/images/analysis/2008-08-21-adam-back-to-satoshi-hero.png)
+
 <!-- speaker: narrator -->
 アダム・バックは翌日に返信し、サトシが起草した Hashcash の引用形式は問題ないと確認したうえで、関連先行研究として[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を紹介した。次のサトシの行動を決定づけた中核的な一文は次の通りである。
 

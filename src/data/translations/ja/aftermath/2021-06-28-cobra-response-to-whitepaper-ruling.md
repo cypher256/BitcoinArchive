@@ -37,6 +37,8 @@ quotes:
 translationStatus: complete
 ---
 
+![裁判所の建物と天秤、フードをかぶった人影の隣に「取り消し命令」の判が押された書類があり、その先には光るデジタル南京錠とブロックチェーンが浮かぶ。下には 2021 年から、ガベルに斜線を引いた 2024 年のマークへと続く年表が描かれている。](/BitcoinArchive/images/analysis/2021-06-28-cobra-response-to-whitepaper-ruling-hero.png)
+
 ロンドン高等法院が bitcoin.org に[ビットコインホワイトペーパーの削除を命じる欠席判決](/BitcoinArchive/ja/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/)を下した数時間後、 [Cobra](/BitcoinArchive/ja/participants/cobra/) は X に投稿した:
 
 <!-- quote: q1 -->

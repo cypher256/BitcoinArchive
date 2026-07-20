@@ -46,6 +46,8 @@ relatedEntries:
   - design/2009-01-03-bitcoin-cryptography-design
 ---
 
+![A dark navy tech-editorial graphic showing an old padlock crossed out with a red X next to an arrow leading to a smaller, precision-cut hexagonal lock, alongside a green elliptic-curve plot on a grid, a speedometer badge, and a two-point timeline bar spanning early 2015 to early 2016.](/BitcoinArchive/images/analysis/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012-hero.png)
+
 On January 15, 2016, [Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) shipped with libsecp256k1 as the default backend for consensus-critical ECDSA signature verification, replacing OpenSSL — a dependency that had been part of Bitcoin since [Satoshi's original v0.1 release](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) seven years earlier.
 
 ## Background

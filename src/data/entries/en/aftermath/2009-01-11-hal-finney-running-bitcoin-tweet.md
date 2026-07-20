@@ -39,6 +39,8 @@ quotes:
     sourceEntryId: "tweets/hal-finney/2009-01-11-running-bitcoin"
 ---
 
+![A speech-bubble card reading "Running bitcoin" beside a silhouette at a glowing computer screen, with two connected network nodes and a two-day timeline from Jan 11 to Jan 12 below.](/BitcoinArchive/images/analysis/2009-01-11-hal-finney-running-bitcoin-tweet-hero.png)
+
 On January 10, 2009, at 10:33 PM Pacific Time (06:33 UTC on January 11), [Hal Finney](/BitcoinArchive/participants/hal-finney/) posted two words to Twitter:
 
 <!-- quote: q1 -->

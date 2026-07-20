@@ -42,6 +42,8 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-code-analysis
 ---
 
+![Dark-themed infographic titled "Bitcoin SourceForge SVN Repository," showing a horizontal commit-history timeline running from 2009 to 2011 with four colored contribution arcs of different lengths, a folder icon labeled SVN at the left end, an arrow pointing to a migration icon at the right end, and four abstract silhouette figures below representing the repository's four committers.](/BitcoinArchive/images/analysis/2009-08-30-bitcoin-svn-repository-committers-hero.png)
+
 Before Bitcoin [moved to GitHub](/BitcoinArchive/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/), all development took place in a Subversion (SVN) repository hosted on SourceForge. The repository was created on August 30, 2009, and recorded 252 revisions before its final commit on September 13, 2011. Only four people ever committed code to this repository.
 
 <!-- chart: svn-committers -->

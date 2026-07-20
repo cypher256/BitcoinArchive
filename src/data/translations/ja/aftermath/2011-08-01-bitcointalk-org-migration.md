@@ -34,6 +34,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色を背景に、ブラウザーのアドレスバーが bitcoin.org/smf から bitcointalk.org へ破線の矢印で移り変わる様子を描いたインフォグラフィックで、書類型のカードが二つの区画をつなぐ橋の上を流れ、投稿・スレッド・アカウント・ソフトウェアが保持されたことを示すアイコン列と、隅で引き継ぎのアイコンを交わす二つのシルエットが配置されている。](/BitcoinArchive/images/analysis/2011-08-01-bitcointalk-org-migration-hero.png)
+
 2011年8月、Bitcoin Forum は bitcoin.org/smf の元の場所から独立ドメイン bitcointalk.org への移行を完了した。
 
 ## オリジナルのフォーラム

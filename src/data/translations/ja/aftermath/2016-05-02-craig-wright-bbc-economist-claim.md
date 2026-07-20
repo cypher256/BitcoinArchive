@@ -35,6 +35,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![錠前を抱えた人物のシルエットが、左側に並ぶ報道機関名の枠と、右側の拡大パネルに挟まれている。パネルの中では 2009 年のブロックの署名が複製され、下には裁判所風の柱の脇で書類に偽造の印が押されている。](/BitcoinArchive/images/analysis/2016-05-02-craig-wright-bbc-economist-claim-hero.png)
+
 2016年5月2日、オーストラリアの実業家クレイグ・ライトが、BBC、The Economist、GQ 誌との連携インタビューでサトシ・ナカモトを公に名乗った。
 
 ライトは自身のウェブサイト（drcraigwright.net）にブログ記事を公開し、暗号学的証明と称するものを提示した：2009年の初期ビットコインブロックに関連する暗号鍵を使ってメッセージにデジタル署名したとした。

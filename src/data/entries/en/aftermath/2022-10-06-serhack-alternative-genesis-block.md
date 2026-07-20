@@ -32,6 +32,8 @@ relatedEntries:
   - aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery
 ---
 
+![Illustration contrasting two 3D block icons — one with a loose difficulty dial and an early date, the other with a tight difficulty dial and a later date — beside a falling orange chart line, an envelope icon, and faded icons for discarded features.](/BitcoinArchive/images/analysis/2022-10-06-serhack-alternative-genesis-block-hero.png)
+
 On October 6, 2022, security researcher SerHack published "The Story Behind the Alternative Genesis Block of Bitcoin," analyzing a pre-release version of Bitcoin's genesis block that predated the official launch by nearly four months.
 
 ## Discovery

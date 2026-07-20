@@ -25,6 +25,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+![ホームルーターから小規模なピアツーピアネットワークへの接続線が途切れている様子を描いたイラスト。手前には「？」マークの付いた未開封の封筒があり、隅には「C/10/1」と記された証拠書類フォルダーが添えられている。](/BitcoinArchive/images/analysis/2009-06-04-bohm-to-satoshi-router-issue-hero.png)
+
 <!-- speaker: narrator -->
 [ニコラス・ボーム](/BitcoinArchive/ja/participants/nicholas-bohm/)は、シティ・オブ・ロンドンの大手法律事務所を引退した商事弁護士であり、Cyber-Rights & Cyber-Liberties (UK)の電子商取引政策アドバイザーでもあった。彼は最初期からビットコインを実行しており、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と直接メールでやり取りした数少ない初期採用者の一人であった。
 

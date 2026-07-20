@@ -39,6 +39,8 @@ relatedEntries:
   - "analysis/2008-08-20-satoshi-self-statements"
 ---
 
+![A dark-navy infographic contrasts a dashed hand-drawn sketch labeled "b-money" with a checkmarked, completed document labeled "Bitcoin," linked by a horizontal timeline highlighting three dates from 1998 to 2014.](/BitcoinArchive/images/analysis/2014-01-12-wei-dai-retrospective-on-satoshi-hero.png)
+
 *From LessWrong "Ask Any LessWronger Anything" (AALWA) thread, January 12, 2014:*
 
 Wei Dai — creator of the [b-money proposal](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) (1998), cited as reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — shared his reflections on Satoshi Nakamoto:

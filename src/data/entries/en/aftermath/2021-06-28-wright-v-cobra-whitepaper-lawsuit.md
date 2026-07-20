@@ -36,6 +36,8 @@ relatedEntries:
   - "tweets/cobra/2021-06-28-whitepaper-ruling-response"
 ---
 
+![Illustration of a Bitcoin whitepaper document stamped with a removal mark, next to a gavel, a scale-shaped court seal, and a hooded silhouette figure standing before two diverging paths, on a dark navy background.](/BitcoinArchive/images/analysis/2021-06-28-wright-v-cobra-whitepaper-lawsuit-hero.png)
+
 Craig Wright filed a copyright infringement lawsuit against the pseudonymous operator of bitcoin.org, known as "Cobra," claiming ownership of the Bitcoin whitepaper.
 
 On June 28, 2021, the London High Court issued a default judgment in Wright's favor. Bitcoin.org was ordered to remove the Bitcoin whitepaper from its website and post a notice referring to the court's judgment.

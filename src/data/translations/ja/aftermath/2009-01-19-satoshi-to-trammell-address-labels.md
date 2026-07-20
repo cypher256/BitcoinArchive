@@ -33,6 +33,8 @@ quotes:
 translationStatus: complete
 ---
 
+![自動生成のラベルと、手書きの訂正線が引かれたラベルを並べたアドレス帳のパネルから、中央のウォレットアイコンを経て、それぞれ異なる宛先の封筒を持つ 3 つのシルエット人物へと点線がつながっていくイラスト。](/BitcoinArchive/images/analysis/2009-01-19-satoshi-to-trammell-address-labels-hero.png)
+
 <!-- speaker: narrator -->
 サトシは、新しいアドレスのデフォルトラベルは「Satoshi」ではなく「Your Address」であると説明した。サトシは、トランメルがサトシのアドレスだと思ったものにラベルを付けようとした際に、紛らわしい UI のために自分自身のアドレスを誤ってラベル付けしてしまった可能性が高い、と示唆した：
 

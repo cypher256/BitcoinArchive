@@ -32,6 +32,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色を基調としたインフォグラフィックで、タイムラインの両端にブロック 0 とブロック 1 を示す飾り枠付きのアイコンが並び、その間に時計のアイコンを配した大きな空白があり、上部には均等な間隔で並ぶ 6 個の小さなブロックが通常の間隔を表し、下部にはギャップの説明候補を表す 4 つのアイコンカードが並んでいる。](/BitcoinArchive/images/analysis/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery-hero.png)
+
 2024年10月1日、Bitcoin Magazine のピート・リゾが、長年の技術的謎についての調査を発表した：[ジェネシスブロック](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)（ブロック 0、2009年1月3日 18:15:05 UTC）とブロック 1（2009年1月9日 02:54:25 UTC）の間の約 5日8時間の空白である。
 
 ## 謎

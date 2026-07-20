@@ -35,6 +35,8 @@ quotes:
 translationStatus: complete
 ---
 
+![オレンジ色の丸いコインに大きな通貨記号をあしらい、その横にフォーラム投稿ふうの通知カードを配置したイラスト。背景には薄い円と点線が描かれている。](/BitcoinArchive/images/analysis/2010-02-05-newlibertystandard-btc-symbol-proposal-hero.png)
+
 2010年2月5日、[NewLibertyStandard](/BitcoinArchive/ja/participants/newlibertystandard/) が BitcoinTalk フォーラムでこう提案した。
 
 <!-- quote: q1 -->

@@ -38,6 +38,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![単一のコンピュータータワーから 5 本の並列レーンが伸び、それぞれ高い値から低い値へと走査していく様子を描き、隣にはバツ印で消された小型コンピューターのアイコン群、さらに割合を示すカードや時計のアイコン、倍率の数字が添えられたイラスト。](/BitcoinArchive/images/analysis/2020-08-22-sergio-lerner-patoshi-mining-machine-hero.png)
+
 2020年8月22日、[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)は自身のブログ Bitslog に『The Patoshi Mining Machine』を発表した。[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)のマイニング環境のハードウェアとソフトウェアを詳細に解き明かした技術分析である。Whale Alert の『The Satoshi Fortune』レポートがサトシが約 48 台のコンピューターを使用したと主張した 1 か月後の発表であった。
 
 ## 再マイニングシミュレーション

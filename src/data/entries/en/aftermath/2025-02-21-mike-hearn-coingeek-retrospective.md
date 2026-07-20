@@ -42,6 +42,8 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks"
 ---
 
+![A faceless silhouette works at a cluttered desk beside two facing speech-bubble panels, while a wedge of angular banners pushes toward a half-open doorway where a second silhouette recedes into shadow, above a row of three timeline dots.](/BitcoinArchive/images/analysis/2025-02-21-mike-hearn-coingeek-retrospective-hero.png)
+
 In a CoinGeek Weekly Livestream interview, [Mike Hearn](/BitcoinArchive/participants/mike-hearn/) — one of the few people who [corresponded directly with](/BitcoinArchive/entries/aftermath/2011-04-23-mike-hearn-satoshi-email-exchange/) [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) — offered rare personal reflections on Bitcoin's creator and the project's evolution.
 
 Hearn described Satoshi as someone interested in "experimenting and discussing possibilities." Satoshi "was always happy to explain how Bitcoin could be used for other people's ideas," suggesting an open, collaborative mindset rather than a rigid ideologue.

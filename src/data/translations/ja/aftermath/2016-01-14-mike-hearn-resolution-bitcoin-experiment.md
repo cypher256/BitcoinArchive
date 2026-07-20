@@ -41,6 +41,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![開いた扉からビットコインの硬貨が転がり出し、奥では石造りの砂時計型の関門にブロックの鎖がすし詰めになって通り抜けようとしている。円卓の上座には鍵の置かれた空の椅子が残り、周囲の椅子には人の気配がないまま並び、背景の右上では右肩上がりの価格グラフに大きな却下のスタンプが重ねられている。](/BitcoinArchive/images/analysis/2016-01-14-mike-hearn-resolution-bitcoin-experiment-hero.png)
+
 <!-- speaker: narrator -->
 2016年1月14日、サトシ・ナカモトと直接メールを交わした最初期のビットコイン貢献者の一人である[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)が、個人ブログ（blog.plan99.net、Medium 上にホスト）に「ビットコイン実験の決着」と題する長文のブログ記事を公開した。
 

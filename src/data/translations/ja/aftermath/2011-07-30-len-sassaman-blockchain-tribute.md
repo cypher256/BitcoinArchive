@@ -31,6 +31,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色の背景に連なる台帳のようなブロックが並び、中央付近の一つだけ金色の枠と小さな点々の模様で縁取られ、その脇には灯る蝋燭が置かれ、上方にはうっすら重なる封筒の輪郭が浮かび、列の両端には簡素な人型のシルエットが立っている。](/BitcoinArchive/images/analysis/2011-07-30-len-sassaman-blockchain-tribute-hero.png)
+
 [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) — サイファーパンク、暗号学者、Mixmaster 匿名リメイラーのリード開発者、KU ルーヴェン大学の博士課程在籍者 — は [2011 年 7 月 3 日に死去した](/BitcoinArchive/ja/participants/len-sassaman/)。妻で暗号学者・研究者のメレディス・パターソンは、死因が自殺であることを公的に確認した。
 
 数週間のうちに、[ダン・カミンスキー](/BitcoinArchive/ja/participants/dan-kaminsky/) — 以前にビットコイン v0.1 のコードをレビューし [「これはチームで作ったか、天才の仕業だ」と結論づけた](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)セキュリティ研究者 — は、サッサマンへの ASCII アート追悼をビットコインブロックチェーンに直接埋め込んだ。発表は 2011 年 7 月 30 日、公的なお披露目は Black Hat USA 2011（ラスベガス）。

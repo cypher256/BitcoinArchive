@@ -29,6 +29,8 @@ relatedEntries:
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
 ---
 
+![Illustration of a stack of tokens cracking apart and scattering beside a row of toppling dominoes, with an open vault glowing around a shattered numeral representing billions in missing funds, a courthouse silhouette, and a small separate emblem representing an unaffected network.](/BitcoinArchive/images/analysis/2022-11-11-ftx-collapse-hero.png)
+
 On November 11, 2022, FTX Trading Ltd. — along with Alameda Research and over 130 affiliated entities — filed for Chapter 11 bankruptcy in U.S. Bankruptcy Court. Founder Sam Bankman-Fried (SBF) resigned as CEO.
 
 ## Timeline

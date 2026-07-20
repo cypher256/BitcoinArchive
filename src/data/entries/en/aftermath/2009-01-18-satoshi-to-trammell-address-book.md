@@ -33,6 +33,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-18-satoshi-to-trammell-address-book"
 ---
 
+![Illustration of a bitcoin wallet screen listing received payments with color-coded address labels, next to an open address book card and a shadowy silhouette marked with a question mark representing an unidentified sender.](/BitcoinArchive/images/analysis/2009-01-18-satoshi-to-trammell-address-book-hero.png)
+
 Satoshi clarified the confusion about Trammell's transaction display. The address shown was actually one of Trammell's own receiving addresses, not Satoshi's:
 
 <!-- quote: q1 -->

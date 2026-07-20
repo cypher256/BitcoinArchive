@@ -36,6 +36,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![連なるブロックのアイコンが虫眼鏡でハイライトされた一部へとつながり、その脇にビットコインの硬貨を収めた金庫と右肩上がりの価格線が添えられたインフォグラフィック風のイラスト。](/BitcoinArchive/images/analysis/2021-02-08-satoshi-bitcoin-holdings-analysis-hero.png)
+
 複数の独立した分析により、ビットコインの最初期の数ヶ月間に[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がマイニングしたビットコインの数量の推定が試みられてきた。最も引用されている研究は、2013年に[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)が最初に実施し、その後の数年間で改良されたもので、[「Patoshi パターン」](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)として知られるようになった特徴的なマイニングパターンを特定した。
 
 ラーナーの分析は、初期のビットコインブロックのコインベーストランザクションにおける ExtraNonce フィールドを調査した。彼は、2009年1月のビットコインのローンチから 2010年半ばまで、一人の支配的なマイナー（サトシと推定される）がブロックの大部分をマイニングしていたことを発見した。このマイナーは、他のマイナーのブロックと区別できる一貫した識別可能な特徴を示していた。

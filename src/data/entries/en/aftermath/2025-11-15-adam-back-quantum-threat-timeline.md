@@ -34,6 +34,8 @@ quotes:
     sourceEntryId: "tweets/adam-back/2025-11-15-quantum-threat-timeline"
 ---
 
+![A dark-blue infographic showing a glowing curved timeline that runs from a starting marker through several decade tick marks toward a small quantum-computer silhouette on a distant horizon, with a padlock icon and a layered-key icon linked by an arrow near the bottom.](/BitcoinArchive/images/analysis/2025-11-15-adam-back-quantum-threat-timeline-hero.png)
+
 Responding to a question about whether advancing quantum research puts Bitcoin at risk, [Adam Back](/BitcoinArchive/participants/adam-back/) posted on X:
 
 <!-- quote: q1 -->

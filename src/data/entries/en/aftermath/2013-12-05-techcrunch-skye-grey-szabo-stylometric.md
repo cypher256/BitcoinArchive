@@ -40,6 +40,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
 ---
 
+![Dark illustration of two document panels connected by dashed lines highlighting matching phrases, with a magnifying glass above and a silhouetted figure beside a row of linked chain blocks below.](/BitcoinArchive/images/analysis/2013-12-05-techcrunch-skye-grey-szabo-stylometric-hero.png)
+
 On December 1, 2013, an anonymous blogger writing under the handle "Skye Grey" published an article titled "Satoshi Nakamoto is (probably) Nick Szabo" on the LikeInAMirror.wordpress.com blog. On December 5, 2013, TechCrunch's John Biggs reported the investigation under the headline "Who Is The Real Satoshi Nakamoto? One Researcher May Have Found The Answer", introducing the hypothesis to the broader cryptocurrency and technology press.
 
 This is the foundational stylometric event in the Szabo-as-Satoshi hypothesis record. Every subsequent mainstream identification of [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) as [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) — the [April 2014 Aston University forensic-linguistic study](/BitcoinArchive/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/), the [May 2015 New York Times investigation by Nathaniel Popper](/BitcoinArchive/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/) and his book *Digital Gold*, the October 2018 Hannah Murphy / *Fortune* feature — traces back to or amplifies Skye Grey's original December 2013 analysis.

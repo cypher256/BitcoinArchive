@@ -45,6 +45,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![コードのブランチが本線に統合される様子を示す図で、バツ印の付いたフォルダーアイコンが光る円形モジュールに置き換わり、その下に 5 段階のタイムラインが並んでいる。](/BitcoinArchive/images/analysis/2011-11-20-bitcoin-v05-removes-cryptopp-dependency-hero.png)
+
 2011 年 11 月 20 日、ビットコイン v0.5.0 がリリースされ、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が 2010 年 7 月 (SVN rev 114) に追加した Crypto++ SHA-256 サブセットがコードベースから撤去された。以降、ビットコインは同じ処理を OpenSSL の SHA-256 ルーチンで実行する。Crypto++ — [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の C++ 暗号ライブラリで、ビットコイン本体が直接コード依存していたライブラリのうち、サトシ正体候補が著作した唯一のもの — は Bitcoin Core から消滅した。
 
 ## コミットとマージ

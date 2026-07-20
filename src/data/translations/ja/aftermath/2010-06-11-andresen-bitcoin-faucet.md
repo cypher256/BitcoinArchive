@@ -31,6 +31,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![蛇口からビットコイン風のコイントークンが水色のプールへ滴り落ち、脇にはチェックボックス付きの認証カードと配布枚数を示す数字が並ぶ、格子模様の紺色を背景にしたイラスト。](/BitcoinArchive/images/analysis/2010-06-11-andresen-bitcoin-faucet-hero.png)
+
 <!-- speaker: narrator -->
 マサチューセッツ州アマーストを拠点とするソフトウェア開発者のギャビン・アンドレセンは、サトシが[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)を公開してから約 18ヶ月後の 2010年5月にビットコインを発見した。彼はメールや Bitcointalk フォーラムを通じてサトシとのやり取りを始めた。
 

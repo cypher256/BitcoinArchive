@@ -34,6 +34,8 @@ quotes:
 translationStatus: complete
 ---
 
+![色分けされたラベル付きの受信履歴が並ぶビットコインウォレットの画面と、開かれたアドレス帳のカード、そして送信者不明を示すクエスチョンマーク付きの人影を配したイラスト。](/BitcoinArchive/images/analysis/2009-01-18-satoshi-to-trammell-address-book-hero.png)
+
 <!-- speaker: narrator -->
 サトシはトランメルのトランザクション表示に関する混乱を解消した。表示されたアドレスは実際にはサトシのものではなく、トランメル自身の受信アドレスであった：
 

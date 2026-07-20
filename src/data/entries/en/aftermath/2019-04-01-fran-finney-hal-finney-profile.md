@@ -33,6 +33,8 @@ relatedEntries:
   - aftermath/2013-03-19-bitcoin-and-me-hal-finney
 ---
 
+![A four-panel illustration on a dark blue background shows silhouetted figures hoisting one person overhead, a glowing computer terminal beside an orange Bitcoin coin, a translucent cryonics capsule lit against a sunset horizon, and two silhouettes standing together at dusk.](/BitcoinArchive/images/analysis/2019-04-01-fran-finney-hal-finney-profile-hero.png)
+
 In the 2nd Quarter 2019 issue of Cryonics Magazine (published by the Alcor Life Extension Foundation), an extensive profile of [Hal Finney](/BitcoinArchive/participants/hal-finney/) was published based primarily on interviews with his wife, Fran Finney. The profile was subsequently adapted by Dan Held and republished on 21ideas.org on March 30, 2020.
 
 Fran met Hal during her junior year at Caltech, during "rotation week" in his freshman semester: "I saw him in the middle of being lifted and carried by [upperclassmen]." She recalled: "People would cluster around and get into all these philosophical discussions... When he spoke, what he said was usually worth listening to."

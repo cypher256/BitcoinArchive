@@ -29,6 +29,8 @@ relatedEntries:
   - aftermath/2011-04-23-mike-hearn-satoshi-email-exchange
 ---
 
+![A timeline of envelope icons leads into a branching node network, a CPU icon paired with a denser circuit-board icon, and two silhouetted figures passing a small parcel, set against a navy background traced with faint circuit lines.](/BitcoinArchive/images/analysis/2017-08-11-mike-hearn-publishes-emails-hero.png)
+
 In August 2017, [Mike Hearn](/BitcoinArchive/participants/mike-hearn/)'s complete email correspondence with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) was made public. The emails were first shared on BitcoinTalk by a user named CipherionX, and subsequently published on Hearn's personal website. The emails span from early 2009 to April 2011 and cover topics including:
 
 - How Satoshi envisioned Bitcoin scaling in the future

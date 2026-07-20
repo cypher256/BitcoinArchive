@@ -32,6 +32,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-19-trammell-to-satoshi-ui-suggestion"
 ---
 
+![Illustration of two silhouetted figures connected by an email-thread line, above a mock cryptocurrency-wallet transaction window where a crossed-out label is replaced by a revised one, with an alternate wording noted below.](/BitcoinArchive/images/analysis/2009-01-19-trammell-to-satoshi-ui-suggestion-hero.png)
+
 In the final email of the Bitcoin Transfer sub-thread, Trammell accepted that the mislabeling was his own mistake and offered a concrete UI improvement suggestion:
 
 <!-- quote: q1 -->

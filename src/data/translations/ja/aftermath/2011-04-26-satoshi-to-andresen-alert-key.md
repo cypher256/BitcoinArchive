@@ -43,6 +43,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![光る鍵から放送波のような曲線が広がり、宛先を示す封筒とネットワークノード群を背景に、二つの人影が向き合っている。](/BitcoinArchive/images/analysis/2011-04-26-satoshi-to-andresen-alert-key-hero.png)
+
 <!-- speaker: narrator -->
 2011年4月26日、サトシ・ナカモトは最後の既知のメールとなるものを送信した。件名「alert key」でギャビン・アンドレセン宛てに送られたこのメールは、ネットワークのアラートキーを引き渡し、離脱を告げるものだった。
 

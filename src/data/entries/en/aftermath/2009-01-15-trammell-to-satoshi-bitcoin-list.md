@@ -35,6 +35,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-bitcoin-list"
 ---
 
+![Editorial illustration with three panels on a dark navy background: an envelope sealed with a Bitcoin coin, two computer terminals linked by a steady connection arc, and a terminal with an arrow feeding a small stack of Bitcoin coins beside a simple network diagram.](/BitcoinArchive/images/analysis/2009-01-15-trammell-to-satoshi-bitcoin-list-hero.png)
+
 Trammell responded to Satoshi's request to CC the conversation publicly, confirming that the node with the changing IP was not him — his Bitcoin client at work used a static NAT address and his home IP had been stable for at least three days of testing transfers between the two.
 
 He agreed to have the conversation shared publicly and subscribed to bitcoin-list immediately. Trammell then revealed his investment-minded motivation for early mining, prompted by [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s public message:

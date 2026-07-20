@@ -27,6 +27,8 @@ relatedEntries:
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
 ---
 
+![Illustration of a landfill cross-section with a glowing hard-drive icon buried beneath wavy waste-layer bands, next to an ascending staircase of escalating offers and a small courthouse silhouette with a checkmark.](/BitcoinArchive/images/analysis/2024-12-03-james-howells-7500-btc-newport-landfill-hero.png)
+
 In mid-2013, **James Howells**, a Welsh IT worker living in Newport, mined approximately 7,500 BTC in Bitcoin's earliest period and stored the private keys on a single Dell laptop hard drive. During a 2013 home cleanup, he discarded the drive. It was collected with general waste and deposited at Newport City Council's **Docksway landfill** on the eastern edge of the city.
 
 Within weeks Howells realized the drive was gone. He contacted the council. The drive — by then buried under months of further deposits — was unrecoverable without an excavation operation. Howells's request to dig was refused, and that refusal has been repeated, in various forms, every year since.

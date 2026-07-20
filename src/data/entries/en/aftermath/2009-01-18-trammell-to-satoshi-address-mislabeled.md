@@ -31,6 +31,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-18-trammell-to-satoshi-address-mislabeled"
 ---
 
+![Illustration of a stylized Bitcoin wallet address-book panel with three address rows, one highlighted in gold with a star icon and an arrow pointing to a coin symbol, flanked by two abstract silhouette figures connected by dashed lines, on a dark blue grid background.](/BitcoinArchive/images/analysis/2009-01-18-trammell-to-satoshi-address-mislabeled-hero.png)
+
 Trammell had his "aha" moment about the confusing transaction label:
 
 <!-- quote: q1 -->

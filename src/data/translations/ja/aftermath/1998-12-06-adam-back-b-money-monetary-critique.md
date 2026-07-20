@@ -54,6 +54,8 @@ quotes:
     sourceEntryId: "emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique"
 ---
 
+![レトロなコンピューター端末にメーリングリストの返信スレッドが表示され、その脇には 1998 年 12 月 6 日付と 12 月 7 日付のメッセージカードが重なり、丸番号を振った 7 つの論点が並ぶ。CPU チップのアイコンから矢印が伸びて光る硬貨につながり、奥には薄く光る 3 つのブロックの鎖が描かれている](/BitcoinArchive/images/analysis/1998-12-06-adam-back-b-money-monetary-critique-hero.png)
+
 *サイファーパンクメーリングリスト（cypherpunks@cyberpass.net）より、1998 年 12 月 6 日（00:48:42 UTC）：*
 
 *件名：Re: Wei Dei's "b-money" protocol*

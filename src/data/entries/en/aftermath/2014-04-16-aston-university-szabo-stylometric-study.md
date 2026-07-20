@@ -48,6 +48,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
 ---
 
+![An illustration of eleven identical faceless silhouettes lined up beneath a spotlighted whitepaper-like document, with one silhouette circled in gold, a magnifying glass over the document, and a swirling fingerprint-like spiral beside a university icon, in dark navy and gold tones.](/BitcoinArchive/images/analysis/2014-04-16-aston-university-szabo-stylometric-study-hero.png)
+
 In April 2014, the **Aston University Centre for Forensic Linguistics** (Birmingham, UK) released the results of **"Project Bitcoin"** — a stylometric study led by **Dr. Jack Grieve**, then Lecturer in Forensic Linguistics, with a team of 40 final-year forensic linguistics students. The study identified [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) as the most likely author of the Bitcoin whitepaper out of 11 candidates examined. The result was reported by CoinDesk on April 16, 2014 and broadcast through ScienceDaily, Slate, Sci.News, Phys.org, and Cointelegraph in the days that followed.
 
 This was the first multi-candidate academic stylometric examination of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) authorship. It built on the [December 2013 Skye Grey LikeInAMirror investigation](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/), arrived at the same leading candidate (Szabo), and was subsequently cited in [Nathaniel Popper's 2015 *New York Times* investigation](/BitcoinArchive/entries/aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation/) and *Digital Gold* book.

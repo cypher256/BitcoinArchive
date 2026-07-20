@@ -42,6 +42,8 @@ quotes:
 translationStatus: complete
 ---
 
+![2009 年から 2014 年までの流れを描いた暗い色調のイラスト。カメラのフラッシュを浴びる家、 2014 年を指す南京錠のアイコン、短い否定の言葉を記したカードが並ぶ。](/BitcoinArchive/images/analysis/2014-03-07-satoshi-p2p-foundation-return-hero.png)
+
 2014 年 3 月 7 日、 [Newsweek がドリアン・ナカモトをビットコインの創造者と名指した](/BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/)約 24 時間後、 [サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の長期休眠 P2P Foundation アカウントが、当初の「ビットコイン: P2P 電子通貨のオープンソース実装」スレッドに一文の返信を投稿した:
 
 <!-- quote: q1 -->

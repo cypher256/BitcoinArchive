@@ -40,6 +40,8 @@ quotes:
 translationStatus: complete
 ---
 
+![「Running bitcoin」と書かれた吹き出し型のカードと、パソコン画面の前に座る人影のシルエット、光の線でつながった二つのネットワークノード、そして 1 月 11 日から 1 月 12 日までの短い時間軸を描いたイラスト](/BitcoinArchive/images/analysis/2009-01-11-hal-finney-running-bitcoin-tweet-hero.png)
+
 2009 年 1 月 10 日午後 10 時 33 分 (太平洋標準時、UTC では 1 月 11 日 06:33)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)は Twitter に 2 語を投稿した：
 
 <!-- quote: q1 -->

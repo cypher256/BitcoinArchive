@@ -38,6 +38,8 @@ quotes:
 translationStatus: complete
 ---
 
+![濃い色調の中、影のような人物が座り小さな炎を内に灯している。傍らには 2009 年 10 月と記された投稿画面風の枠、光の筋でつながる目のアイコンとコード端末、炎を宿したガラスカプセルが描かれている。](/BitcoinArchive/images/analysis/2009-10-05-hal-finney-dying-outside-hero.png)
+
 合理主義フォーラム LessWrong に 2009 年 10 月 5 日公開された、 [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)が 2009 年 8 月の ALS 診断について公的に発信した最初の文章。公開当時は冷凍保存・延命関連コミュニティで広く共有され、現在は主にフィニーのビットコイン伝記の中で読まれる ― エッセイは「[サトシ・ナカモトから初めてビットコインを受け取った既知の人物](/BitcoinArchive/ja/entries/tweets/hal-finney/2009-01-11-running-bitcoin/) (2009 年 1 月 11 日) であり、同時に想像しうる限り最も緩慢な死刑判決を受けた患者」という、フィニーの個人的文脈を記録している。
 
 **エッセイの主張。** フィニーは診断時間の暗いジョークで始め、そして真剣に転じる:

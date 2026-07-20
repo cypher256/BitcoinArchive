@@ -33,6 +33,8 @@ quotes:
 translationStatus: complete
 ---
 
+![メールでつながった 2 つの人影の下に、ウォレットの取引画面が描かれ、取り消し線の入ったラベルが新しい文言に書き換えられ、下にもう一つの言い換え案が添えられているイラスト](/BitcoinArchive/images/analysis/2009-01-19-trammell-to-satoshi-ui-suggestion-hero.png)
+
 <!-- speaker: narrator -->
 ビットコイン送金サブスレッドの最後のメールで、トランメルは誤ラベルが自分自身のミスであったことを受け入れ、具体的な UI の改善提案を行った：
 

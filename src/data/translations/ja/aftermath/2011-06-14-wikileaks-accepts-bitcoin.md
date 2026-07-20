@@ -49,6 +49,8 @@ quotes:
 translationStatus: complete
 ---
 
+![暗い背景の中、赤い棒で遮断されバツ印の付いた決済アイコンが並び、金色から青緑色へ変わる曲線がその遮断線の下をくぐって硬貨を乗せた書類へと届く様子を、経路上の二つの丸い日付マーカーとともに描いたインフォグラフィック風のイラスト。](/BitcoinArchive/images/analysis/2011-06-14-wikileaks-accepts-bitcoin-hero.png)
+
 2011年6月14日、WikiLeaks はツイートした：
 
 <!-- quote: q1 -->

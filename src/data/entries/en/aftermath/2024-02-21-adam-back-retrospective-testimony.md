@@ -48,6 +48,8 @@ quotes:
     sourceEntryId: "correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money"
 ---
 
+![Illustration of a closed laptop, a chain of five envelope icons, scales of justice next to an open document, and a horizontal timeline with three lit markers on a dark navy background.](/BitcoinArchive/images/analysis/2024-02-21-adam-back-retrospective-testimony-hero.png)
+
 [Adam Back](/BitcoinArchive/participants/adam-back/) — inventor of Hashcash (1997), the proof-of-work system cited in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) — has reflected on his earliest interaction with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/):
 
 In August 2008, Satoshi [contacted Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) to verify the citation for his Hashcash paper. [Back confirmed the citation](/BitcoinArchive/entries/aftermath/2008-08-21-adam-back-to-satoshi/) and suggested Satoshi look at [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s b-money proposal.

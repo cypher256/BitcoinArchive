@@ -40,6 +40,8 @@ relatedEntries:
   - design/2009-01-03-bitcoin-consensus-design
 ---
 
+![A row of connected block icons splits at a highlighted circular junction into two diverging paths: a thicker amber-colored branch trailing an ascending price line above, and a thinner teal-colored branch below it, set against a two-tone cream-and-tan background.](/BitcoinArchive/images/analysis/2017-08-01-bitcoin-cash-fork-hero.png)
+
 On August 1, 2017, the Bitcoin chain split. At block 478558 — mined by the ViaBTC mining pool at approximately 12:37 UTC — clients running Bitcoin ABC software accepted a block that exceeded the 1 MB size limit, creating a new chain that diverged from the Bitcoin main chain. The new chain was named Bitcoin Cash (BCH). In the classification used by [the consensus design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/), this is a hard fork: nodes running the old rules rejected the oversized block outright, so the two chains diverged permanently rather than reconciling.
 
 The split was the long-anticipated rupture of the block-size war that had been building since the [Bitcoin XT launch](/BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/) in August 2015. After two years of failed activation attempts (XT, Classic, Unlimited) and a collapsed compromise (the New York Agreement), the larger-block faction split off into its own chain rather than continuing to contest the main chain.

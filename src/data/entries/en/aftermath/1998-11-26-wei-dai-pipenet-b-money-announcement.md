@@ -47,6 +47,8 @@ quotes:
     sourceEntryId: "emails/cypherpunks/1998-11-26-wei-dai-pipenet-b-money"
 ---
 
+![A stylized 1998 mailing-list email showing a PipeNet routing diagram, with a boxed postscript about b-money and a small distant ledger icon in the margin](/BitcoinArchive/images/analysis/1998-11-26-wei-dai-pipenet-b-money-announcement-hero.png)
+
 *From the Cypherpunks mailing list, November 26, 1998:*
 
 <!-- quote: q1 -->

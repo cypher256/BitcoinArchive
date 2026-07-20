@@ -33,6 +33,8 @@ relatedEntries:
   - design/2009-01-03-bitcoin-ecosystem-design
 ---
 
+![A dark technical diagram of a time-locked Bitcoin transaction script, showing a padlock icon transitioning from locked to unlockable beside a clock face, a stack-and-condition box, and two silhouetted figures joined by an escrow-and-refund flow.](/BitcoinArchive/images/analysis/2014-10-01-peter-todd-bip-65-checklocktimeverify-hero.png)
+
 On October 1, 2014, Peter Todd proposed BIP 65, introducing a new opcode called OP_CHECKLOCKTIMEVERIFY to Bitcoin's scripting system. The proposal redefined the existing NOP2 opcode to enable time-locked transaction outputs — outputs that cannot be spent until a specified block height or timestamp.
 
 ## How it works

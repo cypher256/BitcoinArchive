@@ -28,6 +28,8 @@ relatedEntries:
   - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius
 ---
 
+![Dark-blue illustration for a Bitcoin retrospective, showing a browser-window icon spawning a wave of glowing message cards, two faceless silhouetted figures linked by an envelope, a three-tier ranking chart, and a computer screen beside an open padlock.](/BitcoinArchive/images/analysis/2018-10-29-jeff-garzik-retrospective-hero.png)
+
 *From BREAKER Magazine, October 29, 2018:*
 
 [Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/) discovered Bitcoin through a [Slashdot post announcing Bitcoin v0.3](/BitcoinArchive/entries/aftermath/2010-07-11-slashdot-bitcoin-article/) in July 2010 — the "Great Slashdotting." He spent five years as a Bitcoin core developer while working at Red Hat. At one point, his fingerprint on Bitcoin's codebase was the third-largest after [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/).

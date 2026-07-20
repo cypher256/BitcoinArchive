@@ -38,6 +38,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![Dark-navy infographic with a honeycomb grid of glowing amber hexagons highlighted among plain gray ones, an overlapping two-tone wordmark, and two horizontal timelines -- one straight, one crossed with diagonal lines -- set inside rounded panels.](/BitcoinArchive/images/analysis/2019-04-16-sergio-lerner-patoshi-naming-hero.png)
+
 On April 16, 2019, [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) published "The Return of the Deniers and the Revenge of Patoshi," a major update to his ongoing blockchain forensics research that consolidated six years of findings and introduced the now-canonical "Patoshi" terminology.
 
 ## The "Patoshi" name

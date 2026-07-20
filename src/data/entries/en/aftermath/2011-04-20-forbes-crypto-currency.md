@@ -28,6 +28,8 @@ relatedEntries:
   - aftermath/2010-07-06-anonymity-and-pseudonymity
 ---
 
+![Illustration of a vintage magazine cover beside a glowing coin medallion, a gold bar, a dark hooded silhouette lit by camera-flash-like rays, and a three-point timeline on a dark background.](/BitcoinArchive/images/analysis/2011-04-20-forbes-crypto-currency-hero.png)
+
 *From Forbes, published online April 20, 2011 (print edition May 9, 2011):*
 
 "Crypto Currency" by Andy Greenberg was one of the first major print magazine articles about Bitcoin.

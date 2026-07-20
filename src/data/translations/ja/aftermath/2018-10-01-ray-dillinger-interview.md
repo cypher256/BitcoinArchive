@@ -34,6 +34,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色を基調にしたインフォグラフィックで、虫眼鏡が台帳のような文字列を覗き込み、罫線で囲まれた小数値と整数値のボックスが並び、割れた壺からこぼれた硬貨の隣に硬貨の列が続き、様式化された地図の上では小さな機材アイコンの集まりが一箇所だけ明るく光っている。](/BitcoinArchive/images/analysis/2018-10-01-ray-dillinger-interview-hero.png)
+
 *インタビュアー: ティム・スワンソン（Great Wall of Numbers）*
 
 *ビットコインホワイトペーパー 10 周年に合わせて公開。*

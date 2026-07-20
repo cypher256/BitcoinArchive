@@ -56,6 +56,8 @@ quotes:
 translationStatus: complete
 ---
 
+![雑誌の特集記事のようなレイアウトに、上昇してから下落する価格ライン、輝くビットコインのコイン、影の抜けた時計の文字盤、点々に溶けていく人影、隅に小さなピザの箱が描かれている。](/BitcoinArchive/images/analysis/2011-11-23-wired-rise-and-fall-of-bitcoin-hero.png)
+
 <!-- speaker: narrator -->
 2011年11月、ジャーナリストのベンジャミン・ウォレスが Wired 誌（19.12 号）に『The Rise and Fall of Bitcoin』を発表した。主要メディアによるビットコインの本格的な特集記事としては最初期のものの一つだった。記事はサトシ・ナカモトの[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)から、マイニングブーム、価格の急騰、そしてハッキングや詐欺、幻滅に至るまで、ビットコインの全軌跡を追った。
 

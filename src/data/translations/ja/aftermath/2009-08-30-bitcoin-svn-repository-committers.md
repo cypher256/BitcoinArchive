@@ -43,6 +43,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![暗い色調のインフォグラフィックで、「Bitcoin SourceForge SVN Repository」という見出しの下に、2009年から 2011年にかけてのコミット履歴を示す横長のタイムラインが描かれている。太さの異なる 4 本の色分けされた曲線、左端の SVN と書かれたフォルダーアイコン、右端への移行を示す矢印、そしてタイムライン下部に並ぶ 4 体の抽象的なシルエット人物像が配置されている。](/BitcoinArchive/images/analysis/2009-08-30-bitcoin-svn-repository-committers-hero.png)
+
 ビットコインが [GitHub に移行する](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)以前、すべての開発は SourceForge でホストされた Subversion（SVN）リポジトリで行われていた。リポジトリは 2009年8月30日に作成され、2011年9月13日の最終コミットまでに 252 リビジョンが記録された。このリポジトリにコードをコミットしたのは、わずか 4人だった。
 
 <!-- chart: svn-committers -->

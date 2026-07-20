@@ -48,6 +48,8 @@ quotes:
     sourceEntryId: "tweets/adam-back/2026-04-08-response-to-nyt-investigation"
 ---
 
+![A dark-navy infographic: a vintage email-announcement card and an envelope icon connect through arrow shapes into a bordered panel holding a circuit-patterned stamp, then continue via a dashed line to a small arch icon and a round badge, above a horizontal timeline linking two dots, all in orange, cream, and teal accents.](/BitcoinArchive/images/analysis/1997-03-28-adam-back-hashcash-announcement-hero.png)
+
 On March 28, 1997, [Adam Back](/BitcoinArchive/participants/adam-back/) — then a postdoctoral researcher at the University of Exeter — sent an email to the Cypherpunks mailing list with the subject line `[ANNOUNCE] hash cash postage implementation`. The full announcement is preserved at [hashcash.org/papers/announce.txt](http://www.hashcash.org/papers/announce.txt), Adam Back's own hosting of the original post.
 
 Hashcash itself is not a currency. It carries no ledger, no transfers, no consensus, no monetary supply. The system is a self-contained anti-spam / anti-DoS stamp scheme. But the 1997 announcement explicitly positioned Hashcash within the digital-cash conversation, in a dedicated section *How does this fit in with digicash*.

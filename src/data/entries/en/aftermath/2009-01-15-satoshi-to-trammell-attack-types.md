@@ -36,6 +36,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-attack-types"
 ---
 
+![Two contrasting panels on a dark background: a short looped connection between two small node icons on the left, and a wide field of scattered circles converging toward one point on the right; below them, an IP-address tag and a Bitcoin-address tag are joined by arrows into a padlock icon, with a smaller padlock icon set apart in the corner.](/BitcoinArchive/images/analysis/2009-01-15-satoshi-to-trammell-attack-types-hero.png)
+
 Responding to Trammell's detailed MITM analysis, Satoshi introduced the classification he used for attacks:
 
 <!-- quote: q1 -->

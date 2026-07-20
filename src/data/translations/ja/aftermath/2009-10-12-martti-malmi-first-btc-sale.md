@@ -34,6 +34,9 @@ relatedEntries:
   - aftermath/2010-05-22-bitcoin-pizza-day
 translationStatus: complete
 ---
+
+![5,050 BTC が 5.02 ドルへ換算されたことを示す伝票と、PayPal 送金を表す点線でつながれた二つの円形アイコン、為替レートを表示する端末風パネルが並ぶ図。](/BitcoinArchive/images/analysis/2009-10-12-martti-malmi-first-btc-sale-hero.png)
+
 <!-- tone-skip -->
 
 2009年10月12日、[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)は [NewLibertyStandard](/BitcoinArchive/ja/participants/newlibertystandard/) に PayPal 経由で 5,050 BTC を 5.02 ドルで売却した — ビットコインと法定通貨の最初の既知の交換である。

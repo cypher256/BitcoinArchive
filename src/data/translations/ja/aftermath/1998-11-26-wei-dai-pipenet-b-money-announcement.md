@@ -47,6 +47,9 @@ quotes:
     date: "1998-11-26T00:07:43Z"
     sourceEntryId: "emails/cypherpunks/1998-11-26-wei-dai-pipenet-b-money"
 ---
+
+![1998年当時のメーリングリストのメール画面を模した図で、PipeNet のネットワーク図と、b-money に触れる追伸を囲む枠、余白に小さな台帳のアイコンが描かれている](/BitcoinArchive/images/analysis/1998-11-26-wei-dai-pipenet-b-money-announcement-hero.png)
+
 <!-- tone-skip -->
 
 *サイファーパンクメーリングリストより、1998年11月26日：*

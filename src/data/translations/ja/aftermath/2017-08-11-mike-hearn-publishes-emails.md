@@ -30,6 +30,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![年表に沿って並ぶ封筒のアイコンから、枝分かれしたノードのネットワーク図、CPU アイコンと基板アイコンの対、そして小さな包みを手渡す 2 つの人影へと続く構成で、紺色の背景にはうっすらと回路の線模様が浮かぶ。](/BitcoinArchive/images/analysis/2017-08-11-mike-hearn-publishes-emails-hero.png)
+
 2017年8月、[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)の[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)との完全なメールのやり取りが公開された。メールは最初に BitcoinTalk で CipherionX というユーザーにより共有され、その後ハーンの個人ウェブサイトに掲載された。メールは 2009年初頭から 2011年4月までにわたり、以下のトピックを扱っている：
 
 - サトシが将来のビットコインのスケーリングをどのように構想していたか

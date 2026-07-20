@@ -25,6 +25,8 @@ relatedEntries:
   - aftermath/2013-12-06-dogecoin-launch
 ---
 
+![濃紺の背景に「ネームコイン」と題されたインフォグラフィックで、ブロックの連なりが発光する分岐点で NMC と .bit の 2 本の色分けされた経路へ枝分かれし、その脇に小さな分散型レジストリのアイコン、二つのチェーンを結ぶマージマイニングのアイコン、右側に広がる小さなタグ付きブロックの群れが描かれている。](/BitcoinArchive/images/analysis/2011-04-18-namecoin-launch-hero.png)
+
 2011 年 4 月 18 日、ヴィンセント・ダラム — BitcoinTalk のハンドル名 `vinced` を使う開発者 — がネームコインのジェネシスブロックを公開した。最初のアルトコインで、独立に動作するネットワークを生んだビットコインコードベース最初のフォークである。
 
 ネームコインの設計は [BitcoinTalk の BitDNS スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1790/2010-11-14-bitdns-and-generalizing-bitcoin/)から始まった。スレッドはユーザー `appamatto` により 2010 年 11 月 14 日に立てられ、ビットコインを分散型の名前登録システムとして拡張する案を提起していた。検閲も差押えも不可能な、中央集権的 DNS 登録機関への代替である。[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)自身もスレッドに参加し、BitDNS はビットコインと採掘作業を共有する別チェーンとして実装できる、と示唆した (後にマージマイニングと呼ばれる手法)。

@@ -63,6 +63,8 @@ relatedEntries:
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
 ---
 
+![Two overlapping typewritten documents with circled matching marks sit beside a magnifying glass hovering over a lined note board, while two faceless silhouetted figures sit across a small desk in a dim room, a small mask resting beside an empty chair in the foreground.](/BitcoinArchive/images/analysis/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation-hero.png)
+
 On April 8, 2026, John Carreyrou — the Pulitzer Prize–winning journalist who broke the Theranos story — published a roughly 10,000-word New York Times investigation, "My Quest to Solve Bitcoin's Great Mystery," identifying [Adam Back](/BitcoinArchive/participants/adam-back/), CEO of Blockstream and inventor of Hashcash, as the most likely person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym. Back denied the identification.
 
 ## The investigation

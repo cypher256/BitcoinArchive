@@ -32,6 +32,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![電気メーターの文字盤から破線の矢印が手書きの費用計算メモへとつながり、さらに輝く抽象的なコインへと続いていく。下部には交換を示す小さなバッジが添えられている。](/BitcoinArchive/images/analysis/2009-10-05-newlibertystandard-first-exchange-rate-hero.png)
+
 2009年10月5日、[NewLibertyStandard](/BitcoinArchive/ja/participants/newlibertystandard/) がビットコイン史上初の為替レートを公開した。
 
 **1 ドル = 1,309.03 BTC** （1BTC あたり 0.00076 ドル）

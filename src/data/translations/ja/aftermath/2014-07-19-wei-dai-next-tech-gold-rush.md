@@ -29,6 +29,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![薄暗い未開封のメールアイコンが 2009 年のタイムラインから 2011 年に輝くコインへとつながり、小さな数字から大きく伸びる棒グラフ、傾いた天秤、金鉱掘りの道具一式が並ぶインフォグラフィック。](/BitcoinArchive/images/analysis/2014-07-19-wei-dai-next-tech-gold-rush-hero.png)
+
 *LessWrong 投稿「Look for the Next Tech Gold Rush?」、2014年7月19日：*
 
 [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) — [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、ビットコイン[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献 [1]として引用されている — がビットコインをほぼ見逃しかけた経緯を語った：

@@ -28,6 +28,8 @@ relatedEntries:
   - analysis/2010-02-21-bitcoin-price-vs-production-cost
 ---
 
+![Two facing letter envelopes connected by a dotted line, with a gold Bitcoin coin and a teal euro coin between them joined by exchange arrows, over a faint rising price-chart fragment](/BitcoinArchive/images/analysis/2009-07-22-bitcoin-exchange-proposal-hero.png)
+
 On July 21, 2009, Satoshi had mentioned that he needed a "break" after 18 months of continuous Bitcoin development — [the only explicit fatigue self-statement in the documented record](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/), read in retrospect as an early foreshadowing of the 2011 departure — and asked Malmi for ideas about bootstrap applications that could help Bitcoin grow.
 
 The following day, Malmi responded with a proposal: he suggested establishing a Bitcoin exchange service for euros. His proposal detailed pricing formulas and profit mechanisms to establish initial currency liquidity for Bitcoin.

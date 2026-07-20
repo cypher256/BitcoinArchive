@@ -32,6 +32,8 @@ relatedEntries:
   - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
 ---
 
+![A dark editorial illustration of two silhouetted figures exchanging a golden key and a folder in a lit doorway, flanked by a faded calendar page on the left and a row of glowing timeline markers on the right.](/BitcoinArchive/images/analysis/2010-09-01-satoshi-andresen-other-projects-notice-hero.png)
+
 According to Wikipedia's account of [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/)'s early role in Bitcoin, in September 2010 Satoshi Nakamoto privately told Andresen he was working on other projects:
 
 <!-- audit:quote-skip -->

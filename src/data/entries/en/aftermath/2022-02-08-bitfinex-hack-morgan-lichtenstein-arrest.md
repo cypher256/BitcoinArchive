@@ -32,6 +32,8 @@ relatedEntries:
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
 ---
 
+![A dark illustration centers on a vault-like block holding a cluster of coins, with curving trace lines connecting it to icons for a funnel-shaped mixer, an ID card, a gold bar, and a darknet marker, alongside a shield icon and stylized city-skyline silhouettes in the background.](/BitcoinArchive/images/analysis/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest-hero.png)
+
 On August 2, 2016, 119,756 bitcoins were drained from hot wallets at the Hong Kong–based exchange **Bitfinex** in 2,072 unauthorized transactions. The haul was worth roughly $72 million at the time of the theft; by the time of the arrests it had appreciated to around $4.5 billion. For six years the funds sat in a single cluster of addresses tied to the breach, with only small portions tumbled through mixers and cashed out. The bulk of the stolen coins did not move.
 
 ```mermaid

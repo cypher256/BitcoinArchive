@@ -48,6 +48,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![濃紺を基調とした年表グラフィックで、SVN と GitHub を表す 2 本の平行な横帯が 2011 年 9 月のマーク地点で 1 本に合流し、脇にはコミットメッセージを示す枠が添えられ、下には分岐図が 5 人の開発者名と月表示のタグへ向けて広がっている。](/BitcoinArchive/images/analysis/2011-09-13-bitcoin-github-migration-committers-hero.png)
+
 ビットコインの GitHub リポジトリ（`bitcoin/bitcoin`）は**2010年12月19日**に作成された。[SourceForge SVN リポジトリ](/BitcoinArchive/ja/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/)はまだ稼働中だった。約 9ヶ月間、開発は両プラットフォームで並行して行われた。2011年9月13日、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が最終 SVN コミット（r252）を行い、メッセージに「Development has moved to github.」と記した。
 
 ## 移行タイムライン

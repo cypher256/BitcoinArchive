@@ -36,6 +36,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![破れた新聞の切り抜きの脇に、GMT・EST・PST の 3 つの時間帯に分かれた円形の活動時計が並び、下には校正記号の付いたメモカードと時計塔のあるロンドンの街並みのシルエットが続く、濃紺の夜空を背景にしたイラスト。](/BitcoinArchive/images/analysis/2020-11-23-chain-bulletin-satoshi-london-hypothesis-hero.png)
+
 2020年11月23日、ドンチョ・カライヴァノフは Chain Bulletin にて、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)がビットコイン開発中にロンドンを拠点としていたと論じる詳細な分析を発表した。記事は複数の証拠を組み合わせている。
 
 ## タイムズの見出し証拠

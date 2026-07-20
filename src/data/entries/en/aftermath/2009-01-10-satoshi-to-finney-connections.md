@@ -33,6 +33,8 @@ relatedEntries:
   - analysis/2008-08-18-anonymousspeech-bitcoin-org-intermediary
 ---
 
+![Illustration of a network node behind a firewall icon sending outgoing-only connections to peer nodes while incoming connections are blocked, alongside an envelope icon representing private correspondence.](/BitcoinArchive/images/analysis/2009-01-10-satoshi-to-finney-connections-hero.png)
+
 In this email, sent in the earliest days of the Bitcoin network, Satoshi disclosed a technical constraint:
 
 <!-- speaker: Satoshi Nakamoto -->

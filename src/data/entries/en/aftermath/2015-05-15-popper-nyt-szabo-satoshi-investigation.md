@@ -43,6 +43,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
 ---
 
+![A faceless silhouette bust is examined by a golden magnifying glass beside a torn newspaper clipping, with dotted lines connecting to three icon cards -- a proof-of-work grid, a padlock, and a scales-and-coin symbol -- above a row of four glowing outlined rectangles on a dark navy background.](/BitcoinArchive/images/analysis/2015-05-15-popper-nyt-szabo-satoshi-investigation-hero.png)
+
 On May 15, 2015, the *New York Times* published "Decoding the Enigma of Satoshi Nakamoto and the Birth of Bitcoin" by Nathaniel Popper, the paper's cryptocurrency reporter. The article was an excerpt from Popper's book *Digital Gold: Bitcoin and the Inside Story of the Misfits and Millionaires Trying to Reinvent Money*, published the same month by Harper. The piece concluded that [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) — the cypherpunk-era cryptographer who designed Bit Gold (1998 conceived, fully published December 29, 2005) and coined the term "smart contracts" (1994) — was the most likely individual behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym.
 
 ## The reporting

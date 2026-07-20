@@ -47,6 +47,8 @@ relatedEntries:
   - "aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency"
 ---
 
+![A dark repository-history timeline shows two parallel horizontal tracks — one labeled SVN, one labeled GitHub — merging at a marked September 2011 date beside a commit-message callout box, with a branching diagram below fanning out to five named developers under monthly date tags.](/BitcoinArchive/images/analysis/2011-09-13-bitcoin-github-migration-committers-hero.png)
+
 The Bitcoin GitHub repository (`bitcoin/bitcoin`) was created on **December 19, 2010**, while the [SourceForge SVN repository](/BitcoinArchive/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/) was still in active use. For approximately nine months, development occurred in parallel across both platforms. On September 13, 2011, [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) made the final SVN commit (r252) with the message: "Development has moved to github."
 
 ## Migration timeline

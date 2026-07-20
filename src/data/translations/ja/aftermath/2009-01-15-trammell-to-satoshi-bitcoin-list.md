@@ -36,6 +36,8 @@ quotes:
 translationStatus: complete
 ---
 
+![紺色の背景に三つのパネルを並べた編集イラスト。ビットコインのコインで封をした封筒、安定した接続で結ばれた二台の端末、そしてコインが積み重なるネットワーク図を描いている。](/BitcoinArchive/images/analysis/2009-01-15-trammell-to-satoshi-bitcoin-list-hero.png)
+
 <!-- speaker: narrator -->
 トランメルは会話を公開 CC するサトシの要請に応答し、IP アドレスが変動しているノードは自分ではないことを確認した――職場のビットコインクライアントは固定 NAT アドレスを使用しており、自宅の IP も 2 台の間で送金テストを行っていた少なくとも 3日間は安定していた。
 

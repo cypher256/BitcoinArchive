@@ -30,6 +30,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![ハニエツとサトシを示す 2 台のシルエットのコンピュータータワーが破線で結ばれ、間に盾のアイコンと抑制されたダイヤルが描かれたイラスト。](/BitcoinArchive/images/analysis/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code-hero.png)
+
 *[編者注：本エントリーは回想に基づく記事であり、メールの一次資料ではない。サトシとハニエツの完全なメールは公開されていない。以下に記すやり取り — サトシが GPU マイニングコードを返礼として共有したこと、防衛目的の動機、意図的に最適化を避けた選択 — は、ハニエツの後年のインタビュー（Cointelegraph、InsideBitcoins）から再構成したものである。2010 年 5 月 17 日という日付は、ハニエツの 5 月 10 日 Bitcointalk GPU 発表との前後関係から推定した近似値。]*
 
 <!-- speaker: narrator -->

@@ -43,6 +43,8 @@ quotes:
     sourceEntryId: "emails/cypherpunks/b-money-protocol/1998-12-08-wei-dai-re-b-money-protocol"
 ---
 
+![Illustration of two faceless silhouette shapes flanking a mailing-list reply panel, beside a balance-scale diagram weighing two abstract shapes, a small pie-dial icon labeled "niche," and two colored marker dots dated 1998 and 2014.](/BitcoinArchive/images/analysis/1998-12-07-wei-dai-re-b-money-protocol-hero.png)
+
 *From the Cypherpunks mailing list (cypherpunks@cyberpass.net), December 7, 1998:*
 
 *Subject: Re: Wei Dei's "b-money" protocol*

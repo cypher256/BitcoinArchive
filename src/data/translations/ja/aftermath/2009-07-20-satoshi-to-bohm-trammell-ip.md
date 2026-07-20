@@ -27,6 +27,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![暗いネットワークを背景に、一本の線でつながる抽象的な二つのノードのシルエット、中央に IP アドレスを記した封筒のアイコン、隅に添えられた証拠書類と虫眼鏡のモチーフを描いたイラスト。](/BitcoinArchive/images/analysis/2009-07-20-satoshi-to-bohm-trammell-ip-hero.png)
+
 <!-- speaker: narrator -->
 翌日のフォローアップで、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はデバッグ情報を提供した。
 

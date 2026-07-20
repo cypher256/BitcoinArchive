@@ -35,6 +35,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![金貨のこぼれる封筒と、疑問符を伴うノードネットワークで結ばれた開いた台帳が並び、その奥に遠く離れた二つの年代をつなぐ年表が配置されている。](/BitcoinArchive/images/analysis/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin-hero.png)
+
 2025年4月15日に Uncommons が公開したインタビューで、P2P Foundation 創設者の[ミシェル・バウエンス](/BitcoinArchive/ja/participants/michel-bauwens/)は、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)との短いが直接的な接触を振り返った。
 
 ミシェル・バウエンスは、そのやり取りは濃密ではなかったが印象的だったと述べた。

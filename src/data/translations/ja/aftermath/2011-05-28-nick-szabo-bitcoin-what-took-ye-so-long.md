@@ -47,6 +47,8 @@ quotes:
 translationStatus: complete
 ---
 
+![濃紺色の背景に、1998年を示す点から菱形の中継点を経て、ゲートのアイコンと天秤のアイコンを添えたノード群へ、さらに 2009年を示す点へと続く波状のタイムラインを配置し、2 本の曲線が南京錠付きの封筒アイコンへ収束する様子と、日付を刻んだ点が並んで書類アイコンへ続く様子を描いたインフォグラフィック](/BitcoinArchive/images/analysis/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long-hero.png)
+
 ニック・サボの Unenumerated ブログに 2011 年 5 月 28 日公開された、ビットコイン公開後にサボが最初に書いた長文公開投稿。タイミングが重要で、 [サトシのギャビン・アンドレセン宛最終私的メール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)から約一ヶ月後、ビットコインが初めて米ドル等価に達した年に出ている。投稿は二層構造を持つ ― [ビットゴールド](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) (1998 年) からビットコイン (2009 年) までデジタル通貨のアイデアが形になるのに 13 年かかった理由の回顧、そして先駆システムの最も近い既知の生存設計者によって書かれたビットゴールドとビットコインの構造比較。
 
 **「なぜそんなに長く」議論。** サボの第一の主張は、困難は技術ではなく社会学的だった、というもの:

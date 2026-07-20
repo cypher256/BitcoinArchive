@@ -30,6 +30,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![黒く塗りつぶされたシルエットと、指紋アイコンへ点線でつながる輪郭だけのシルエットが並び、その横には虫眼鏡を重ねた鎖状の図形パネル、下部には封筒・×印を付けた経路アイコン・南京錠の小さなアイコンが並ぶ。](/BitcoinArchive/images/analysis/2010-07-06-anonymity-and-pseudonymity-hero.png)
+
 <!-- speaker: narrator -->
 サトシは、ウェブサイトやプロモーション資料でビットコインのプライバシー特性がどのように説明されているかについてマルミに警告した：
 

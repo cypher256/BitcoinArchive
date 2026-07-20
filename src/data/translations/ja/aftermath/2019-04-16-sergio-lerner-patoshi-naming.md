@@ -38,6 +38,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色を基調としたインフォグラフィックで、灰色の六角形が並ぶ中に琥珀色に光る一群が際立ち、二色が重なるロゴ風の文字と、直線的な軌跡・斜めに交差する軌跡の 2 本のタイムラインが、角の丸いパネルに収められている。](/BitcoinArchive/images/analysis/2019-04-16-sergio-lerner-patoshi-naming-hero.png)
+
 2019年4月16日、[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)は『The Return of the Deniers and the Revenge of Patoshi』を発表した。6年間の研究成果を統合し、今や標準的となった「Patoshi」という用語を導入した重要な更新論文である。
 
 ## 「Patoshi」の命名

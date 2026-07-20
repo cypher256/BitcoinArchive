@@ -39,6 +39,8 @@ relatedEntries:
   - "aftermath/2022-09-16-lopp-was-satoshi-greedy-miner"
 ---
 
+![A minimalist illustration of a walking silhouette beside a split clock face and a computer terminal window, with four small icons in a row underneath them representing supporting evidence.](/BitcoinArchive/images/analysis/2023-10-21-lopp-hal-finney-not-satoshi-hero.png)
+
 On October 21, 2023, Bitcoin researcher Jameson Lopp published "Hal Finney Was Not Satoshi Nakamoto" on his blog, presenting a detailed multi-pronged argument against the long-running speculation that [Hal Finney](/BitcoinArchive/participants/hal-finney/) was the pseudonym behind Bitcoin's creation. The full hypothesis-side / counter-evidence treatment is in the [Hal Finney = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/); this article documents Lopp's specific contribution to the counter-evidence side.
 
 ## The race-day alibi (April 18, 2009)

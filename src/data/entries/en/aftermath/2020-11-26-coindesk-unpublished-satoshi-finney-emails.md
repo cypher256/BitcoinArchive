@@ -53,6 +53,8 @@ quotes:
     sourceEntryId: "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release"
 ---
 
+![Two aged envelopes marked with 2008 and 2009 dates flank a folder labeled unpublished, above a timezone dial reading UTC+8 and a faint map route linking Japan to Southeast Asia.](/BitcoinArchive/images/analysis/2020-11-26-coindesk-unpublished-satoshi-finney-emails-hero.png)
+
 On November 26, 2020, CoinDesk published "Previously Unpublished Emails of Satoshi Nakamoto Present a New Puzzle" by Michael Kapilkov, revealing three emails between [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) and [Hal Finney](/BitcoinArchive/participants/hal-finney/).
 
 **Chain of custody:** In March 2014, Fran Finney (Hal's widow) sent journalist Nathaniel Popper files from Hal's personal computer for his book *Digital Gold*. Popper later shared the email files with Kapilkov. CoinDesk confirmed the chain of custody directly with Fran Finney.

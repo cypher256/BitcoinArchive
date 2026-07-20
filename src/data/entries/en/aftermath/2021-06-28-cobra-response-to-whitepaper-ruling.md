@@ -36,6 +36,8 @@ quotes:
     sourceEntryId: "tweets/cobra/2021-06-28-whitepaper-ruling-response"
 ---
 
+![Illustration contrasting a courthouse, scales of justice, and a hooded silhouette beside a stamped document with a glowing digital padlock and blockchain, linked by a timeline running from 2021 to a crossed-out gavel icon in 2024.](/BitcoinArchive/images/analysis/2021-06-28-cobra-response-to-whitepaper-ruling-hero.png)
+
 Hours after the London High Court issued [a default judgment ordering bitcoin.org to remove the Bitcoin whitepaper](/BitcoinArchive/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/), [Cobra](/BitcoinArchive/participants/cobra/) posted on X:
 
 <!-- quote: q1 -->

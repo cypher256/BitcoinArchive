@@ -49,6 +49,8 @@ quotes:
 translationStatus: complete
 ---
 
+![閉じたノートパソコンと、5 通の封筒アイコンがつながった列、天秤と開かれた書類、3 つの光る印がある横向きの年表を、濃紺の背景に描いたイラスト。](/BitcoinArchive/images/analysis/2024-02-21-adam-back-retrospective-testimony-hero.png)
+
 [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) — Hashcash（1997年）の発明者であり、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)で引用されたプルーフ・オブ・ワークシステムの考案者 — が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)との最初期の交流を振り返った：
 
 2008年8月、サトシは[バックに Hashcash 論文の引用を確認するために連絡した](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)。[バックは引用を確認し](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/)、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の b-money 提案を参照するよう提案した。

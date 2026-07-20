@@ -34,6 +34,8 @@ relatedEntries:
   - "aftermath/2024-03-14-copa-v-wright-ruling"
 ---
 
+![Illustration of a padlocked silhouette figure flanked by a row of press-outlet nameplate boxes and a magnified panel where a 2009-dated block's signature is copied, with a document stamped as forged beside courthouse-style columns below.](/BitcoinArchive/images/analysis/2016-05-02-craig-wright-bbc-economist-claim-hero.png)
+
 On May 2, 2016, Australian businessman Craig Wright publicly claimed to be Satoshi Nakamoto in coordinated interviews with the BBC, The Economist, and GQ magazine.
 
 Wright published a blog post on his website (drcraigwright.net) offering what he said was cryptographic proof: he digitally signed a message using encryption keys associated with early Bitcoin blocks from 2009.

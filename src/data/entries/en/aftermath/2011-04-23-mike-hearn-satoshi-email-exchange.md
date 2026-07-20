@@ -41,6 +41,8 @@ quotes:
     sourceEntryId: "correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on"
 ---
 
+![Two silhouetted figures face each other across a timeline strung with envelope icons, with a torn letter card in the upper right and a small CPU-to-chip diagram in the lower left, set against a dark navy background.](/BitcoinArchive/images/analysis/2011-04-23-mike-hearn-satoshi-email-exchange-hero.png)
+
 [Mike Hearn](/BitcoinArchive/participants/mike-hearn/), a Google engineer who became an early Bitcoin contributor, exchanged a series of emails with [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) between 2009 and April 2011. Hearn had first contacted Satoshi after reading the Bitcoin white paper and becoming interested in the project.
 
 In their correspondence, Satoshi discussed technical aspects of Bitcoin's future, including how the system could scale, how simplified payment verification (SPV) clients would work, and how he envisioned the evolution of mining from CPUs to more specialized hardware.

@@ -34,6 +34,8 @@ quotes:
     sourceEntryId: "correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-wallet-location"
 ---
 
+![Illustration of a wallet file path spilling past its container, a shielded database cylinder, and two connected cards showing a bug icon leading to a checked, sealed envelope, on a dark blue background with a date badge in the corner.](/BitcoinArchive/images/analysis/2009-01-16-satoshi-to-trammell-wallet-location-hero.png)
+
 Responding to Trammell's concerns about data loss and wallet backup, Satoshi disclosed the wallet's storage location and technology:
 
 <!-- quote: q1 -->

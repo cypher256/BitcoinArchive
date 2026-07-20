@@ -36,6 +36,7 @@ quotes:
 translationStatus: complete
 ---
 
+![見出し「Re: Hashcash citation」の下、封筒から覗く添付草稿と「PayWord and MicroMint」論文の引用カードが並び、右には一直線につながるノードの連鎖と複数の経路が一点に収束する図が対比されている。下部には 2008年8月から 2009年1月までの年表を配した、落ち着いた色合いの図解。](/BitcoinArchive/images/analysis/2008-08-21-adam-back-to-satoshi-micromint-hero.png)
 
 メールチェーンの 4 通目で、アダム・バックは関連する別の論文として、ロン・リベストとアディ・シャミアによる『PayWord and MicroMint』（1996年）を紹介した。この論文は、Hashcash やビットコインが用いる部分的プリイメージではなく、デジタルコインの希少性のために k-way ハッシュ衝突の抽出を提案するものだった。バック自身が後に Cointelegraph のインタビューで「おそらく人生最大の失敗だった」と振り返ることになる、中核的な自己告白の一文は次の通り。
 

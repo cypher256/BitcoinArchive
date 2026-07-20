@@ -30,6 +30,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![積み上げられたトークンが崩れて砕け散り、倒れていくドミノが並ぶ手前に、金庫の扉が開いて数十億ドル分の消失資金を象徴する砕けた数字が光を放ち、奥には裁判所のシルエットと、影響を受けていない別のネットワークを示す小さな紋章が描かれているイラスト。](/BitcoinArchive/images/analysis/2022-11-11-ftx-collapse-hero.png)
+
 2022年11月11日、FTX Trading Ltd.は — Alameda Research および 130 以上の関連会社と共に — 米国破産裁判所に連邦破産法第 11 章の適用を申請した。創業者サム・バンクマン＝フリード（SBF）は CEO を辞任した。
 
 ## タイムライン

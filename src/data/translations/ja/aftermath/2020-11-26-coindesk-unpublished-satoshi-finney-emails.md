@@ -54,6 +54,8 @@ quotes:
 translationStatus: complete
 ---
 
+![2008年と 2009年の日付を記した色あせた封筒が二つ並び、その脇に「未公開」のフォルダー、下には UTC+8 を指す文字盤と、日本と東南アジアを結ぶかすかな地図の線が描かれている](/BitcoinArchive/images/analysis/2020-11-26-coindesk-unpublished-satoshi-finney-emails-hero.png)
+
 2020年11月26日、CoinDesk がマイケル・カピルコフ著『Previously Unpublished Emails of Satoshi Nakamoto Present a New Puzzle』を公表し、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の間の 3 通のメールを明らかにした。
 
 **入手経路:** 2014年3月、フラン・フィニー（ハルの未亡人）がジャーナリストのナサニエル・ポッパーに著書『Digital Gold』のためハルのパーソナルコンピューターからファイルを送付。ポッパーはそのメールファイルをカピルコフと共有した。CoinDesk はフラン・フィニーに直接確認した。

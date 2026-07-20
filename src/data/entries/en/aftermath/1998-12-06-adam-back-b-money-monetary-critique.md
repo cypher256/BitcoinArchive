@@ -53,6 +53,8 @@ quotes:
     sourceEntryId: "emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique"
 ---
 
+![Illustration of a retro computer terminal displaying a mailing-list reply thread, beside two stacked message cards — one dated December 6, 1998 with a numbered list of seven circled points, the other dated December 7, 1998 — connected by an arrow from a CPU chip icon to a glowing coin, with a faint three-block chain glowing in the distance](/BitcoinArchive/images/analysis/1998-12-06-adam-back-b-money-monetary-critique-hero.png)
+
 *From the Cypherpunks mailing list (cypherpunks@cyberpass.net), December 6, 1998 (00:48:42 UTC):*
 
 *Subject: Re: Wei Dei's "b-money" protocol*

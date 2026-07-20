@@ -50,6 +50,8 @@ quotes:
     sourceEntryId: "correspondence/gavin-andresen/2011-04-26-satoshi-alert-key-email"
 ---
 
+![Two envelope icons beside a glowing ornate key passing between two silhouetted figures, set against a dark background with faint connected network nodes.](/BitcoinArchive/images/analysis/2011-04-26-satoshi-final-known-email-hero.png)
+
 [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s final known private communications took place over two emails in April 2011.
 
 ## April 23, 2011 — to Mike Hearn

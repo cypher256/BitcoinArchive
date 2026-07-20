@@ -37,6 +37,8 @@ quotes:
 translationStatus: complete
 ---
 
+![メールを示す封筒から二つのメーリングリストのカードへ破線がつながり、その脇に自動販売機のような少額決済端末や、寄付・ポイント・ゲーム内通貨を表す小さなコインアイコンが並ぶイラスト。](/BitcoinArchive/images/analysis/2009-01-15-satoshi-to-trammell-use-cases-hero.png)
+
 <!-- speaker: narrator -->
 このメールで、サトシはネットワーク上の少なくとも 1 つのノードが同じクラス B の範囲内で頻繁に IP アドレスを変更していることに言及し、これは予想していなかったと述べた。トランメルに対して会話を bitcoin-list または暗号学メーリングリストに CC する許可を求め、bitcoin-list の購読詳細を共有した。
 

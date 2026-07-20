@@ -29,6 +29,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![点線でつながれた二通の封筒の間に、金色のビットコインのコインと青緑色のユーロのコインが交換の矢印を挟んで並び、背景にうっすらと右肩上がりの価格チャートの断片が浮かぶイラスト](/BitcoinArchive/images/analysis/2009-07-22-bitcoin-exchange-proposal-hero.png)
+
 <!-- tone-skip -->
 <!-- speaker: narrator -->
 2009年7月21日、サトシは 18ヶ月間の継続的なビットコイン開発の後に「休息」が必要だと述べた ―― [記録に残る中で唯一の明示的な疲労表明](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)であり、後から見れば 2011 年の撤退を先取りするものと読める ―― そして、ビットコインの成長に役立つブートストラップアプリケーションのアイデアをマルミに求めた。

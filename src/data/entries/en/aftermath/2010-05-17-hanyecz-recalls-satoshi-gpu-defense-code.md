@@ -29,6 +29,8 @@ relatedEntries:
   - aftermath/2010-05-22-bitcoin-pizza-day
 ---
 
+![Two silhouetted computer towers labeled Hanyecz and Satoshi face each other across a dashed exchange line, with a shield icon between them and a restrained throttle dial below.](/BitcoinArchive/images/analysis/2010-05-17-hanyecz-recalls-satoshi-gpu-defense-code-hero.png)
+
 *[Editor: this entry is a recollection-based article, not a primary-source private email record. The full private email correspondence between Satoshi and Hanyecz has not been publicly released. The exchange below — Satoshi's reciprocal sharing of GPU mining code, his stated defensive rationale, his deliberate non-optimization choice — is reconstructed from Hanyecz's later interview accounts (Cointelegraph, InsideBitcoins). The May 17, 2010 date is approximate, anchored to Hanyecz's narrative ordering relative to his May 10 Bitcointalk GPU announcement.]*
 
 In a remarkable exchange that — per Laszlo Hanyecz's later recall — occurred after Hanyecz shared his GPU miner code with Satoshi, Satoshi reciprocated by sharing his own independently developed GPU mining code. As Hanyecz tells it, this revelation showed that Satoshi had been working on GPU mining before Hanyecz's public announcement -- not to mine coins, but as a contingency plan to defend the network against potential 51% attacks.

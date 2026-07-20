@@ -36,6 +36,8 @@ quotes:
 translationStatus: complete
 ---
 
+![六角形のトークンを中心に、メール・チャット・音声通話・ウェブサイトを表すアイコンが並び、向かい合う二人の人物のシルエットとともに配置されたイラスト。下部には、コンピューターから外付けドライブへデータをバックアップする様子を描いた小さな枠が添えられている。](/BitcoinArchive/images/analysis/2009-01-15-trammell-to-satoshi-address-verification-hero.png)
+
 <!-- speaker: narrator -->
 トランメルはセキュリティに関する議論を継続し、ビットコインアドレスは IP ベースの送金に比べて優位性があると主張した。複数の独立したチャネルを通じて検証できるためである。
 

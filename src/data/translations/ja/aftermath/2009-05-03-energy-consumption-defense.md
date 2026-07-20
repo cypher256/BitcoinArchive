@@ -26,6 +26,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+![稲妻のアイコンと硬貨を積み重ねたアイコンを天秤にかけ、片側に電力メーターのアイコン、もう片側に小さな銀行の建物のアイコンを配し、背景にうっすらと回路のような線を描いたイラスト](/BitcoinArchive/images/analysis/2009-05-03-energy-consumption-defense-hero.png)
+
 <!-- speaker: narrator -->
 このメールの中で、サトシはビットコインの最も根強い批判の一つとなるもの——エネルギー消費——について取り上げた。
 

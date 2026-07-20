@@ -19,6 +19,8 @@ relatedEntries:
   - aftermath/2010-12-15-bitcoin-v0319-released
 ---
 
+![Illustration of a whitepaper document linked by a nine-day timeline to a mock browser window of a SourceForge project page listing early Bitcoin release files, alongside a hub icon connecting source control, file releases, and a mailing list.](/BitcoinArchive/images/analysis/2008-11-09-bitcoin-project-registered-hero.png)
+
 Satoshi Nakamoto registered the "bitcoin" project on SourceForge.net on November 9, 2008. This was just nine days after publishing the Bitcoin whitepaper to the Cryptography Mailing List on October 31, 2008.
 
 SourceForge served as the primary hosting platform for the Bitcoin project, providing source code version control (SVN), file release hosting, and the bitcoin-list mailing list. The project page at sourceforge.net/projects/bitcoin/ became the central hub for Bitcoin's early development and distribution.

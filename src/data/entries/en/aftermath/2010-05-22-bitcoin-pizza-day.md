@@ -51,6 +51,8 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-137/2010-05-22-laszlo-msg1195"
 ---
 
+![Two stacked pizza boxes labeled "Delivered, Jacksonville, FL" connected by a dashed line to a large gold Bitcoin coin labeled "10,000 BTC, The Trade," with a "Then $41 → Now $1B+" value-contrast badge below.](/BitcoinArchive/images/analysis/2010-05-22-bitcoin-pizza-day-hero.png)
+
 On May 18, 2010, [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) posted on the BitcoinTalk forum:
 
 <!-- quote: q1 -->

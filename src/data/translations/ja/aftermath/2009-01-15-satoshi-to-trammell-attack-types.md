@@ -37,6 +37,8 @@ quotes:
 translationStatus: complete
 ---
 
+![暗い背景に置かれた対照的な 2 つのパネルの図。左側には 2 つの小さなノードアイコンを結ぶ短いループ状の接続、右側には多数の小さな円が 1 点に向かって収束する広がりが描かれている。下部では IP アドレスの札とビットコインアドレスの札が矢印でつながって 1 つの南京錠アイコンへ合流し、隅には離れて小さな南京錠のアイコンが添えられている。](/BitcoinArchive/images/analysis/2009-01-15-satoshi-to-trammell-attack-types-hero.png)
+
 <!-- speaker: narrator -->
 トランメルの詳細な中間者攻撃分析に応答して、サトシは自身が用いる攻撃の分類を示した。
 

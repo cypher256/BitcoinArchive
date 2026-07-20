@@ -25,6 +25,8 @@ secondarySources:
 translationStatus: complete
 ---
 
+![矢印でつながれた 2 枚のメッセージカードのイラスト。左側のカードには提案された用語を強調する枠があり、右側のカードにはプログレスバーとウィキ・フォーラム・コミュニティのアイコンが並ぶブラウザー画面が描かれている](/BitcoinArchive/images/analysis/2009-06-11-cryptocurrency-term-and-site-improvements-hero.png)
+
 <!-- speaker: narrator -->
 2009年6月11日のこのメールで、サトシはマルミが bitcoin.org ウェブサイトに施した改善を称賛した。以前の姿勢と一貫して、投資関連の表現の削除を再度求めた。
 

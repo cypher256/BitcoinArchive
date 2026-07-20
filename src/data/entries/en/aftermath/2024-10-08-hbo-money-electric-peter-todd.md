@@ -53,6 +53,8 @@ quotes:
     sourceEntryId: "forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion"
 ---
 
+![A dark navy infographic-style illustration featuring a screen with a magnifying glass over document lines, two speech-bubble message cards linked along a timeline with a short time-gap marker between them, and a hooded silhouette with a question mark on its chest beside a small balance-scale icon.](/BitcoinArchive/images/analysis/2024-10-08-hbo-money-electric-peter-todd-hero.png)
+
 On October 8, 2024, HBO released "Money Electric: The Bitcoin Mystery," a documentary directed by Cullen Hoback (known for "Q: Into the Storm"). The film named Bitcoin Core developer [Peter Todd](/BitcoinArchive/participants/peter-todd/) as a candidate for Bitcoin's pseudonymous creator, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/).
 
 ## The forum post theory

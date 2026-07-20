@@ -32,6 +32,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![A dark blue infographic showing two ornate blocks labeled Block 0 and Block 1 at opposite ends of a timeline, separated by a wide gap marked with a clock icon, above a row of six small evenly-spaced blocks representing a normal interval, and below four icon cards representing competing explanations for the gap.](/BitcoinArchive/images/analysis/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery-hero.png)
+
 On October 1, 2024, Bitcoin Magazine's Pete Rizzo published an investigation into a long-standing technical mystery: the approximately 5 days and 8 hours that elapsed between the [Genesis Block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/) (Block 0, January 3, 2009 at 18:15:05 UTC) and Block 1 (January 9, 2009 at 02:54:25 UTC).
 
 ## The mystery

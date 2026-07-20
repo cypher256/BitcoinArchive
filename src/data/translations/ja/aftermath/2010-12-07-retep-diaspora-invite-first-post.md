@@ -35,6 +35,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![濃紺の背景にオレンジ色を効かせた図解。「登録」から「投稿」までの 41 秒を示すストップウォッチと、短い一文を載せたフォーラム投稿ふうのカードが並ぶ。$2 の定額価格タグとかすんだ硬貨アイコンの列、ユーザー名バッジとその鏡文字版、3 つの日付を結ぶ横長の年表も配置されている。](/BitcoinArchive/images/analysis/2010-12-07-retep-diaspora-invite-first-post-hero.png)
+
 <!-- tone-skip -->
 <!-- 2010年12月の投稿。9 語のみ。個性ゼロの売買文体。口調チェック対象外 -->
 <!-- speaker: Peter Todd -->

@@ -34,6 +34,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![紺色の背景に、ナンス値の最下位バイトをオレンジと水色のクラスターに分けてギャップを挟んで並べた棒グラフと、光るプロセッサーへ収束する複数のスレッド線、下部に並ぶ指紋のような弧模様を描いたインフォグラフィック。](/BitcoinArchive/images/analysis/2013-09-03-sergio-lerner-nonce-lsb-discovery-hero.png)
+
 2013年9月3日、[セルジオ・デミアン・ラーナー](/BitcoinArchive/ja/participants/sergio-demian-lerner/)は『A New Mystery about [Satoshi](/BitcoinArchive/ja/participants/satoshi-nakamoto/) Hidden in the Bitcoin Block-Chain』を発表し、5 か月前に発表した [ExtraNonce 勾配分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)とは独立した、サトシの初期マイニングにおける第二の指紋を明らかにした。
 
 ## 発見

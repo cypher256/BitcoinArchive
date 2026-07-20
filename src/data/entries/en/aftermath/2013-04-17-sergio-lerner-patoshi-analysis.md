@@ -48,6 +48,8 @@ relatedEntries:
   - aftermath/2026-05-28-noah-doe-lawsuit
 ---
 
+![Dark teal infographic showing a segmented, rising slope chart, a five-section computer chip icon beside a crossed-out row of small mining-rig icons, and a locked vault holding stacked gold coins next to a magnifying-glass and target icon.](/BitcoinArchive/images/analysis/2013-04-17-sergio-lerner-patoshi-analysis-hero.png)
+
 On April 17, 2013, Argentine Bitcoin researcher [Sergio Demian Lerner](/BitcoinArchive/participants/sergio-demian-lerner/) published "The Well Deserved Fortune of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/), Bitcoin creator, Visionary and Genius" on his blog Bitslog. The post presented the first systematic analysis of Bitcoin's earliest mining patterns.
 
 ## Method
