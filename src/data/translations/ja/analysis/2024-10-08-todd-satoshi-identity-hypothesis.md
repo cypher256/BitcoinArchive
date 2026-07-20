@@ -50,6 +50,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![フォーラム返信のタイムラインを軸に、投稿から約 90 分後に技術的な返信があったことを示す時計と、2 日後の沈黙までの経過を表す表示、Windows と Linux のアイコンで左右に分かれた顔のないシルエット、そして大半の項目に取り消し線が引かれ 1 件だけ強調されたタイミングの一致が残る証拠ボードを描いた構図。](/BitcoinArchive/images/analysis/2024-10-08-todd-satoshi-identity-hypothesis-hero.png)
+
 「retep」は「peter」の逆綴り。Bitcoin Core 開発者のグレゴリー・マクスウェルでさえ、それに気づくのに 10 年近くを要した。このハンドル名のアカウントは 2010 年 12 月 7 日に BitcoinTalk に登録、3 日後にトランザクション置換手数料に関するサトシのスレッドに返信した。さらに 2 日後、[サトシは最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)を残した。HBO の 2024 年ドキュメンタリー[『Money Electric: The Bitcoin Mystery』](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)（カレン・ホーバック監督、2024 年 10 月 8 日公開）はこの 2010 年 12 月の連鎖を中核証拠として用い、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)をサトシだと名指した。
 
 ## 1. 証拠

@@ -53,6 +53,8 @@ inlineLinkKeywords:
   - "Wei Dai = Satoshi"
 ---
 
+![A three-node correspondence diagram of linked envelope icons labeled Sender, Referral, and Author, next to citation and codebase-dependency cards and a stylometric-distance scatter plot with one point set apart from a cluster of others, under a checkmarked verdict reading "Structurally significant, ultimately unlikely."](/BitcoinArchive/images/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis-hero.png)
+
 [Wei Dai's b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) is reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/). Wei Dai's [Crypto++ library](https://www.cryptopp.com/) ships inside Bitcoin v0.1 for SHA-256. Wei Dai is the second person Satoshi contacted before launching the network. The claim that [Wei Dai](/BitcoinArchive/participants/wei-dai/) is Satoshi has circulated in cryptography journalism since at least 2010 (Group A — Satoshi explicitly cited his work).
 
 ## 1. The evidence

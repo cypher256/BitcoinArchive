@@ -34,6 +34,8 @@ inlineLinkKeywords:
   - "Dorian Nakamoto = Satoshi"
 ---
 
+![A faceless silhouette stands beside an evidence document highlighting a matched name under a magnifying glass, with a checklist showing one confirmed match and several rejected items.](/BitcoinArchive/images/analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis-hero.png)
+
 On March 6, 2014, [Newsweek's cover story "The Face Behind Bitcoin"](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) announced that the magazine had found Satoshi Nakamoto, and named a 64-year-old engineer in Temple City, California: Dorian Prentice Satoshi Nakamoto. The identification rested on a single load-bearing fact — the man's birth name was, literally, Satoshi Nakamoto — and it came apart within a day. Full biographical and timeline coverage is in the [Dorian Nakamoto biography](/BitcoinArchive/participants/dorian-nakamoto/); this entry covers the hypothesis only.
 
 ## 1. The evidence

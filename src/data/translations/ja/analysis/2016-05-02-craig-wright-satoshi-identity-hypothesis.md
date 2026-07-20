@@ -40,6 +40,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![サトシ正体仮説を表す抽象的なダーク調イラスト。顔のない人影シルエットが片手を、鍵に斜線を引いた禁止マークへ差し伸べている。右上には署名のような線を覗き込む金色の虫眼鏡があり、右下には波打つ署名線と赤い警告枠を含む傾いた証拠書類が置かれ、書類の下端に赤い判定スタンプ風の図形が重なっている。](/BitcoinArchive/images/analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis-hero.png)
+
 他のすべての固有名候補の仮説は、ある人物に *ついて* なされた主張だ。これだけは、本人 *によって* なされた。2016 年 5 月 2 日、クレイグ・ライトは [BBC・The Economist・GQ との連携インタビュー](/BitcoinArchive/ja/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/)で、自分がサトシ・ナカモトであると宣言し、決着をつけるための暗号学的証明を提示した。証明は数時間で崩れ、8 年後に英国高等法院が [COPA 対ライト](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)で、彼はサトシではなく、その主張を裏付けるために大規模に文書を偽造した、と認定した。出来事の全体と年表は[クレイグ・ライト伝記](/BitcoinArchive/ja/participants/craig-wright/)にある。
 
 ## 1. 証拠

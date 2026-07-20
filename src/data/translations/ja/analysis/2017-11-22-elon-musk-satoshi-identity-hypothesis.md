@@ -34,6 +34,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![証拠ボードに顔のないシルエットのアイコンと、技術範囲・経済学・共通する言い回しを示す断片が並び、点線でつながれているが決定的な証拠には届いていない。右側には公的な可視性を象徴する大きく発光するシルエットが、小さく隠れた影の人物像から離れて立っている。](/BitcoinArchive/images/analysis/2017-11-22-elon-musk-satoshi-identity-hypothesis-hero.png)
+
 2017 年 11 月 22 日、元 SpaceX インターンの Sahil Gupta が Medium に「Elon Musk Probably Invented Bitcoin（イーロン・マスクがビットコインを発明したのだろう）」と題した投稿を公開し、大きな話題となった。[正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)の候補の中で唯一、フォーラムの議論でも文体計量研究でもなく、一人の若いインサイダーのブログ投稿一本から記録に入った説である。[イーロン・マスク](/BitcoinArchive/ja/participants/elon-musk/)のビットコイン周辺での公的な役割は[イーロン・マスク伝記](/BitcoinArchive/ja/participants/elon-musk/)にあり、本エントリは説の論述のみを扱う。
 
 ## 1. 証拠

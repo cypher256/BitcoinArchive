@@ -73,6 +73,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![顔のないシルエットと大きな円形の虫眼鏡が重なり、片側には「Bit Gold / Concept」と記された破線の未完成な骨組み構造、反対側には「Bitcoin / Shipped Code」と記された密に連結した六角形ブロックの鎖が配置されている。シルエットの足元には天秤が置かれ、下部には 1998 年から 2011 年までの年表が描かれている。](/BitcoinArchive/images/analysis/2013-12-05-szabo-satoshi-identity-hypothesis-hero.png)
+
 2008 年 4 月 27 日、[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)は[自身のブログにこう書いた](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/): 「ビットゴールドはデモがあれば大いに役立つのだが。実験的な市場を作りたい。誰かコードを書いてくれないか？」 4 か月後、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はビットコインに関する最初の既知のメールをアダム・バックに送った。2011 年 5 月、サボは [「ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善したのだ」](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) と書いた。「サボ＝サトシ」の説はこの 3 点の上に成り立つ —— Bit Gold の概念的近接（1998 構想、2005 公開、1994 年の「スマートコントラクト」命名）、サトシの最初の既知活動の数か月前に出された 2008 年 4 月の実装要請、そして設計期間中の Unenumerated への旺盛な執筆 —— 2013 年以降の文体計量分析が補強している。
 
 ## 1. 証拠

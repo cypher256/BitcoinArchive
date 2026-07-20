@@ -37,6 +37,8 @@ inlineLinkKeywords:
   - "Paul Le Roux = Satoshi"
 ---
 
+![A magnifying glass hovers over a faceless dark silhouette, with icons for disk encryption and a Bitcoin ledger placed at opposite sides and connected by a dashed line, under labels reading "secondhand account," "documentary trace missing," and "circumstantial / unconfirmed."](/BitcoinArchive/images/analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis-hero.png)
+
 [Paul Le Roux](/BitcoinArchive/participants/paul-le-roux/) is the candidate whose connection to Bitcoin is entirely external. There is no documented contact with Satoshi Nakamoto, no statement by Le Roux on the question, and no Bitcoin-related material from him in the public record. He entered the candidate landscape through journalist Evan Ratliff's 2019 book *The Mastermind*, which named him as a possible Satoshi on a capability-plus-covertness-plus-motive argument. His full life — E4M, the criminal enterprise, the arrest — is in the [Paul Le Roux biography](/BitcoinArchive/participants/paul-le-roux/).
 
 ## 1. The evidence

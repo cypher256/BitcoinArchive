@@ -54,6 +54,8 @@ inlineLinkKeywords:
   - "Sassaman = Satoshi"
 ---
 
+![Abstract dark hero graphic titled "A gap in the record": a timeline connecting April 26, 2011 and July 3, 2011 across two translucent evidence cards labeled "correspondence" and "disputed evidence," a magnifying glass over a jagged signal line, a faceless silhouette bust with no facial features labeled "blank profile / no direct link," and a broken key icon amid scattered static dots.](/BitcoinArchive/images/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis-hero.png)
+
 On April 26, 2011, [Satoshi sent his last known email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/). Sixty-eight days later, on July 3, 2011, cypherpunk cryptographer Len Sassaman died by suicide in Belgium. The proximity of those two dates is the load-bearing observation under the Sassaman-as-Satoshi hypothesis — supplemented by his Mixmaster anonymous-remailer work, his cypherpunk credentials, and Dan Kaminsky's August 2011 [blockchain tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/). The April 2026 [Finding Satoshi documentary](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) extends this individual hypothesis into a multi-person reading, naming Sassaman alongside Hal Finney as co-creators (the documentary's claims and Adam Back's counter-evidence are treated at the linked entry).
 
 ## 1. The evidence

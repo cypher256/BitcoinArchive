@@ -76,6 +76,8 @@ inlineLinkKeywords:
   - "NYT 2026 investigation"
 ---
 
+![A magnifying glass labeled "scrutiny" hovers beside a featureless dark silhouette, with two wax-sealed letters and a balance scale connected by dashed lines to handwritten style-marker quotes, on a dark teal background titled "Was Adam Back Satoshi?"](/BitcoinArchive/images/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis-hero.png)
+
 On April 8, 2026, the New York Times published [John Carreyrou's investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) naming [Adam Back](/BitcoinArchive/participants/adam-back/) as the closest stylometric match to Satoshi Nakamoto among 620 cryptography-mailing-list writers active before Bitcoin's 2008 launch. The Pulitzer Prize–winning Carreyrou's stylometric analysis joined a set of other circumstantial markers: Back's Hashcash invention (1997, cited as reference [6] in the whitepaper), his position as the first known person Satoshi contacted (August 20, 2008), and his subsequent role as CEO of Blockstream.
 
 ## 1. The evidence

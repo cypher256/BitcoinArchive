@@ -38,6 +38,8 @@ inlineLinkKeywords:
   - "Kaneko = Satoshi"
 ---
 
+![A faceless dark silhouette bearing the numeral 47 stands beside a magnifying glass hovering over a case file and a code snippet, with a small peer-to-peer network diagram and two overlapping horizontal timeline bars below labeled legal scrutiny and Bitcoin development.](/BitcoinArchive/images/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis-hero.png)
+
 The Kaneko-as-Satoshi hypothesis is the only major Satoshi-identity claim that exists almost entirely in Japanese-language discourse — extensive in 2ch / 5ch forums and Japanese tech press, essentially absent from English-language Bitcoin coverage. Its subject, Isamu Kaneko (1970–2013), was a University of Tokyo research associate who released the Winny peer-to-peer file-sharing system on 2channel in May 2002, spent seven and a half years (2004–2011) as the defendant in a Japanese criminal trial that became a landmark on the criminal liability of tool-developers, and died of a myocardial infarction in July 2013, two years after his Supreme Court acquittal. For comparison with other named candidates see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
 
 ## Background: who Kaneko was

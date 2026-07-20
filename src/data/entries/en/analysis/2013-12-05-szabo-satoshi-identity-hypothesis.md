@@ -72,6 +72,8 @@ inlineLinkKeywords:
   - "Szabo = Satoshi"
 ---
 
+![A faceless silhouette overlaid with a large circular magnifying glass, flanked by a dashed, unfinished scaffold-like structure labeled "Bit Gold / Concept" on one side and a dense chain of linked hexagonal blocks labeled "Bitcoin / Shipped Code" on the other, with a small balance scale beneath the silhouette and a timeline running from 1998 to 2011.](/BitcoinArchive/images/analysis/2013-12-05-szabo-satoshi-identity-hypothesis-hero.png)
+
 On April 27, 2008, [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) [wrote on his blog](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/): "Bit gold would greatly benefit from a demo, an experimental market. Anybody want to help me code one up?" Four months later, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) sent his first known Bitcoin email to Adam Back. In May 2011 Szabo wrote that ["Nakamoto improved a significant security shortcoming that my design had"](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/). The Szabo-as-Satoshi claim sits on those three points — the Bit Gold conceptual proximity (1998 conceived, 2005 published, 1994 "smart contracts" terminology), the April 2008 implementation request a few months before Satoshi's first known activity, and the prolific Unenumerated writing throughout the design window — reinforced by stylometric analyses since 2013.
 
 ## 1. The evidence

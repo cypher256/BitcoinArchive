@@ -39,6 +39,8 @@ inlineLinkKeywords:
   - "Craig Wright = Satoshi"
 ---
 
+![Abstract dark illustration for a Satoshi-identity hypothesis: a faceless silhouetted figure reaching a hand toward a crossed-out key icon, a magnifying glass examining a signature mark, and a tilted evidence document with a wavy signature line and a highlighted warning box, overlaid at the bottom right by a red stamp-style verdict mark.](/BitcoinArchive/images/analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis-hero.png)
+
 Every other named-candidate hypothesis is a claim made *about* a person. This one was made *by* him. On May 2, 2016, Craig Wright declared in [coordinated interviews with the BBC, The Economist, and GQ](/BitcoinArchive/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/) that he was Satoshi Nakamoto, and offered cryptographic proof to settle it. The proof collapsed within hours, and eight years later the UK High Court ruled, in [COPA v Wright](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/), that he is not Satoshi and that he had forged documents on a grand scale to support the claim. The full event narrative and timeline are in the [Craig Wright biography](/BitcoinArchive/participants/craig-wright/).
 
 ## 1. The evidence

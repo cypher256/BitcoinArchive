@@ -50,6 +50,8 @@ inlineLinkKeywords:
   - "Peter Todd hypothesis"
 ---
 
+![A forum-reply timeline showing a technical reply posted about ninety minutes after the original post, a clock marking that gap beside a countdown to a final silent post two days later, a faceless silhouette split between Windows and Linux interface icons, and an evidence board where most items are crossed out except one highlighted timing coincidence.](/BitcoinArchive/images/analysis/2024-10-08-todd-satoshi-identity-hypothesis-hero.png)
+
 "retep" is "peter" spelled backwards. Bitcoin Core developer Gregory Maxwell took nearly a decade to notice. The handle belonged to an account that registered on BitcoinTalk on December 7, 2010 and, three days later, replied to a Satoshi thread on transaction-replacement fees. Two days after that, [Satoshi posted his last public message](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/). HBO's 2024 documentary [*Money Electric: The Bitcoin Mystery*](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (directed by Cullen Hoback, released October 8, 2024) used that December 2010 sequence as its central evidence and named [Peter Todd](/BitcoinArchive/participants/peter-todd/) as Satoshi.
 
 ## 1. The evidence

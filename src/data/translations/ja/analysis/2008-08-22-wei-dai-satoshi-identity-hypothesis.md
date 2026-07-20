@@ -54,6 +54,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![封筒アイコンを線で結んだ 3 点の通信図（送信・仲介・著者）、引用元とコード依存関係を示すカード、他の点から 1 点だけ離れた文体計量の散布図、そしてチェックマーク付きの結論パネルを配置した図解](/BitcoinArchive/images/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis-hero.png)
+
 [ウェイ・ダイの b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) は[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)の参考文献 [1] である。ウェイ・ダイの [Crypto++ ライブラリ](https://www.cryptopp.com/)は SHA-256 のためビットコイン v0.1 に同梱されている。ウェイ・ダイはネットワーク立ち上げ前にサトシが接触した 2 番目の人物である。[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)＝サトシの説は、暗号通貨ジャーナリズムで少なくとも 2010 年以降議論されてきた（候補プロファイル群 A — サトシがホワイトペーパーで明示的に引用した人物）。
 
 ## 1. 証拠
