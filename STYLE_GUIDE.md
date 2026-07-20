@@ -387,6 +387,66 @@ participants:
     slug: "hal-finney"
 ```
 
+### Hero Images
+
+Every editorial entry (`article`, `analysis`, `biography`, `design`)
+carries a hero illustration, generated via the local `codex` CLI (see
+the `codex-review` skill's invocation pattern) and embedded as a
+plain markdown image immediately below the frontmatter's closing
+`---`, before the first body paragraph:
+
+```md
+![<alt text>](/BitcoinArchive/images/analysis/<slug>-hero.png)
+```
+
+Primary-source types (`correspondence`, `mailing-list`, `forum-post`,
+`bip`, `whitepaper`, `court-document`, `tweet`, `blog-post`) never
+get a hero image — their body is verbatim source content, and an
+editorially-generated illustration would misrepresent that.
+
+`design` entries need no special placement rule despite carrying a
+large `DesignSeriesNav` box: that box is layout chrome rendered
+between `EntryMeta` and `<Content />` (see `src/pages/entries/[...slug].astro`),
+not part of the markdown body, so an image placed at the top of the
+body — same rule as every other editorial type — always renders
+after it.
+
+**Generation**:
+
+- Prompt `codex exec` (model `gpt-5.6-luna`, `model_reasoning_effort=low`)
+  with the article's **EN-locale** body — never the JA translation.
+  An early trial fed the JA body and the model baked Japanese text
+  into the image; since the EN and JA pages share one image file,
+  the Japanese text then leaked onto the EN page too.
+- Require: ~1600×900 PNG (an SVG rendered via a headless browser is
+  the usual path), no real human face or photographic likeness of
+  any named person, and all in-image text labels in English only
+  (the image is shared by both locale pages).
+- Save to `public/images/analysis/<slug>-hero.png` regardless of the
+  entry's actual type directory (`aftermath/`, `design/`, etc.) — the
+  directory name predates this feature's scope beyond `analysis` and
+  is kept for path stability across already-shipped entries.
+
+**Alt text**:
+
+- Describe only what is visually in the image — no article
+  interpretation, no verbatim transcription of every in-image text
+  label.
+- JA alt text must be natural Japanese, not a stiff literal
+  translation of the EN alt. Do not end it with "画像" (redundant —
+  alt text is already an image description). Insert a half-width
+  space at every Japanese⇔ASCII/digit boundary (enforced by
+  `check-ja-spacing.mjs`). Follow `check-ja-glossary.mjs`'s katakana
+  rules for restricted terms (e.g. "Bitcoin Cash" → "ビットコインキャッシュ",
+  "Block N" → "ブロック N", "nonce" → "ナンス" in prose) — describing the
+  image in plain natural Japanese rather than quoting in-image
+  English text verbatim sidesteps most glossary violations.
+
+**Editing safety**: when inserting the image markdown via a scripted
+or automated edit, never let the replaced span include the
+frontmatter's closing `---` itself — insert strictly after it, in a
+separate paragraph, and confirm the `---` is still intact afterward.
+
 ## Link Integrity
 
 Inline links in body prose must satisfy a simple invariant: the
