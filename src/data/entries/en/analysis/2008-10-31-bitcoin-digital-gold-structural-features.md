@@ -10,6 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Bitcoin's 'digital gold' status rests on two layers of decentralization — system and people/organization — and six structural features no later cryptocurrency combines to the same degree."
 isSatoshi: false
+homeOrder: 6
 tags:
   - "analysis"
   - "monetary-policy"

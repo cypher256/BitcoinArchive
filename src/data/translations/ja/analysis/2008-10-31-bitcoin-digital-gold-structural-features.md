@@ -10,6 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "ビットコインがデジタルゴールドと呼ばれる根拠を、システム層と人・組織層の二層非中央集権、および 6 つの構造的特徴の組み合わせとして読む。"
 isSatoshi: false
+homeOrder: 6
 tags:
   - "analysis"
   - "monetary-policy"

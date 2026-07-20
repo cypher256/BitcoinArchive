@@ -12,7 +12,6 @@ participants:
     slug: "gavin-andresen"
 description: "Reads the asymmetry between public attempts to identify Satoshi, the surviving material trail, and the persistent identification gap. Companion entry to the identity-hypotheses overview."
 isSatoshi: false
-homeOrder: 6
 tags:
   - "satoshi-identity"
   - "satoshi-anonymity"
