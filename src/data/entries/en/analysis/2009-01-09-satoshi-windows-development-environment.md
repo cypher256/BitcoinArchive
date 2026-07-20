@@ -51,6 +51,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![A retro 1990s-style Windows IDE window filled with Hungarian-notation code sits center-stage on a dark desktop, a faint ghostly penguin silhouette in the background, above a bottom timeline running from a 2009 release date through a long gap to a later handover date.](/BitcoinArchive/images/analysis/2009-01-09-satoshi-windows-development-environment-hero.png)
+
 Satoshi's correspondence and forum posts contain extensive Linux discussion, which can suggest a Linux-literate developer working across platforms. Read chronologically, the same record tells a sharper story: for the entire design period and the first seven months after the v0.1 release — twenty-seven months in total — the public record contains no Linux engagement of any kind. Linux first appears in August 2009 as reactive support for Martti Malmi's Linux port. By December 2010 Satoshi himself names the gap in writing: Gavin Andresen is "technically much more Linux capable than me." The final email two months later is PGP-signed with `GnuPG v1.4.7 (MingW32) - WinPT 1.2.0` — a Windows-only toolchain — closing the recorded period without any sign that the Windows-only stack was ever displaced.
 
 This entry organizes that record by period.

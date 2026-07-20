@@ -48,6 +48,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![暗い背景のインフォグラフィック。中央のギザギザした橙色の分割線を境に上下 2 段に分かれており、上段には水色の線画アイコン（コンピューター、鍵型の図形、ノードのネットワーク、矢印）が 4 列に並び、下段には同じ列に沿って琥珀色の塗りつぶしアイコン（積み重なったサーバーラック、南京錠、ハブ状の構造、層状に重なったプレート）が並んでいる。](/BitcoinArchive/images/analysis/2026-05-24-satoshi-design-vs-current-reality-hero.png)
+
 ビットコインのプロトコルは、 2008 年に[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が書き下したルールから今もほぼ変わらず動いている。しかし**ユーザー体験**、 **経済構造**、 **ガバナンスの実態**は、初期設計の姿から大きく乖離している。 [ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)や[ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)を読むとプロトコルの忠実な姿は描けるが、大多数のユーザーが実際に触る世界の姿は描けない。本稿は乖離が最も大きい 4 つの軸を、一次資料へのリンクとともに辿る。
 
 | 軸 | 初期設計像 | 現状 | 乖離開始 |

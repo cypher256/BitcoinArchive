@@ -71,6 +71,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![濃紺の背景に、ビットコインの供給量を区分けした円形の図と、金色や青緑色の棒グラフで大口保有者を比較した図が並ぶ。右下には点と六角形をつないだ線が延び、その先に疑問符を記したボックスが置かれている](/BitcoinArchive/images/analysis/2026-07-09-bitcoin-ownership-map-hero.png)
+
 2026 年 7 月 6 日時点で、Strategy（旧 MicroStrategy）一社が 843,775 BTC を保有する。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が採掘したまま一度も動かしていない約 110 万 BTC との差は、25 万枚余りまで縮んだ。16 年間、誰も近づけなかった首位の背中が、初めて視界に入る距離にある。
 
 ビットコインの用語で、これほどの規模で保有する者は「クジラ」と呼ばれる。[ビットコインがデジタルゴールドと呼ばれる理由](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)は、その価値の核心を二層の非中央集権 — システムに管理者がなく、人と組織に権威がない — に置いた。創設者の不在は保有の風景にも表れる。では 2026 年の風景で、2100 万枚は実際に誰の手にあるのか。

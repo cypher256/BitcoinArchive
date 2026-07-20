@@ -31,6 +31,8 @@ relatedEntries:
   - design/2009-01-03-bitcoin-consensus-design
 ---
 
+![A stylized clock face beside a horizontal chain of numbered blocks, with the first block crossed out and excluded from a measured span bracketing the rest, next to a downward-easing difficulty gauge](/BitcoinArchive/images/analysis/2009-01-09-bitcoin-time-warp-attack-hero.png)
+
 Bitcoin's difficulty-adjustment algorithm contains a long-known off-by-one bug in Satoshi's original code. The retarget window is documented as 2,016 blocks — two weeks at 10-minute block intervals — but the code that actually computes the elapsed-time delta measures the gap between **block 0 and block 2,015** of each window. The first block of every retarget window is therefore not included in the timing calculation. The bug is small, the consequences are not.
 
 ## 1. The mechanic

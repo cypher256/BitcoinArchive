@@ -44,6 +44,8 @@ inlineLinkKeywords:
   - "AnonymousSpeech.com"
 ---
 
+![A dark diagram-style illustration with a privacy shield, a signpost, a dashed trail leading to a distant server rack, and a crossed-out envelope icon, evoking a paper trail that fades into silence.](/BitcoinArchive/images/analysis/2008-08-18-anonymousspeech-bitcoin-org-intermediary-hero.png)
+
 Satoshi Nakamoto's first documented steps toward the world passed through one commercial counterparty. `bitcoin.org` was registered on August 18, 2008 through AnonymousSpeech.com, an anonymous-registration and anonymous-email service; the first known outbound emails — to Adam Back on August 20 and Wei Dai on August 22 — were sent from `satoshi@anonymousspeech.com`. A paid service sits in a different position from every mailing list and forum Satoshi later used: it had a billing relationship with its customer. So what does the public record actually establish about that service and its operator — and where does the trail stop? The short answer to the second question: everywhere, on purpose, and the shape of that stopping is itself worth reading.
 
 ```mermaid

@@ -51,6 +51,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![A dark chart of orange bars for the halving block subsidy shrinking toward zero, transitioning into taller teal bars for growing transaction fees, above two diverging line paths and a small cap-shaped icon in the corner](/BitcoinArchive/images/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future-hero.png)
+
 Bitcoin's block subsidy halves every 210,000 blocks. Under the current consensus rules — the rules every full node enforces — there will be 33 halvings, and from roughly the 34th halving onward the integer-satoshi subsidy rounds to zero. Working from a 10-minute target block time and the [January 3, 2009 genesis block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/), the last halving falls around the year 2140. After that point, the only revenue available to a miner who produces a block is the transaction fees the block carries.
 
 <!-- chart: supply-animated -->

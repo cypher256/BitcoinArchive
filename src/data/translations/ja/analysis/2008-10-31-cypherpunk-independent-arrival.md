@@ -75,6 +75,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![孤立した一台のワークステーションが弧を描く光の線で中央の「デジタルキャッシュ」ノードに結ばれ、離れた場所には相互接続されたノード群からなるサイファーパンク・ネットワークが独立したクラスターとして描かれ、別々の経路が同じ点へ収束する様子を示した図](/BitcoinArchive/images/analysis/2008-10-31-cypherpunk-independent-arrival-hero.png)
+
 <!-- speaker: Satoshi Nakamoto -->
 > 「ありがとう。b-money は読んだことがなかったが、私のアイデアはまさにその出発点から始まっている。私のシステムが追加した主なものは、分散タイムスタンプサーバーを支えるためにプルーフ・オブ・ワークを使うことだ。」
 

@@ -45,6 +45,8 @@ inlineLinkKeywords:
   - "launch-period environment"
 ---
 
+![A dark illustration of a laptop terminal displaying blocked-incoming-connection status, with three peer signal lines cut off by warning marks, above a January 2009 launch-week timeline of five dated milestones.](/BitcoinArchive/images/analysis/2009-01-10-satoshi-launch-environment-hero.png)
+
 On January 10, 2009, Satoshi wrote to [Hal Finney](/BitcoinArchive/participants/hal-finney/):
 
 <!-- speaker: Satoshi Nakamoto -->

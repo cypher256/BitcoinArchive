@@ -39,6 +39,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![Dark data-visualization chart with dots plotted along horizontal time lanes for different communication channels, dense in the early lanes and thinning out, with one isolated glowing dot far to the right separated from the rest by a wide gap.](/BitcoinArchive/images/analysis/2008-08-20-satoshi-activity-timeline-hero.png)
+
 Every documented Satoshi Nakamoto event in this archive — private email, mailing-list post, BitcoinTalk thread, P2P Foundation message, SourceForge release — plotted on a single time axis. The first dot is the [August 20, 2008 email to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/). The last is the [April 26, 2011 alert-key handover email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) to Gavin Andresen. Between those points, Satoshi posted, replied, released code, and corresponded for thirty-two months. After the last point, nothing verified.
 
 ## 1. What is included

@@ -82,6 +82,8 @@ inlineLinkKeywords:
   - "Bitcoin family tree"
 ---
 
+![A branching timeline diagram on a dark background, showing a single thick glowing mainline splitting into thinner side branches labeled with fork and altcoin names and years, running from a genesis point to a cluster of later forks](/BitcoinArchive/images/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy-hero.png)
+
 Every protocol fork of Bitcoin that produced a chain still producing blocks today, plus every adjacent cryptocurrency whose design lineage starts from Bitcoin's source code. The interactive chart at the top of this entry plots them on a true time axis. The canonical chain in this archive is the one whose Genesis block was mined on January 3, 2009 with hash `000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f` ([genesis-block analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)). Out of scope: failed-launch forks (no surviving chain) and chains whose technical design originates independently of Bitcoin — Ripple's federated consensus, Monero's CryptoNote ring signatures, IOTA's DAG, Cardano's Ouroboros PoS are illustrative examples of that wider category, not its boundary.
 
 The interactive chart at the top of this entry plots every listed chain on a true time axis: the launch date, the parent chain it forked from, the operational range, and whether the chain is still producing blocks today or halted within months of launch. Each chain row in the chart links to the corresponding archive entry where one exists. The §1 and §2 tables below record each chain's per-attribute status (block-size cap, hashrate share, governance, etc.).

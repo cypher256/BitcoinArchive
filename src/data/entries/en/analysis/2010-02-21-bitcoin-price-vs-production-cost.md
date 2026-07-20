@@ -108,6 +108,8 @@ quotes:
     parent: null
 ---
 
+![Dark two-panel infographic contrasting an electricity bill and calculator on the left with a mining rig and a rising price chart on the right, linked by a center circular equilibrium icon and directional arrows in each panel.](/BitcoinArchive/images/analysis/2010-02-21-bitcoin-price-vs-production-cost-hero.png)
+
 On October 5, 2009, Bitcoin's first published price was not discovered by a market — it was [calculated from an electricity bill](/BitcoinArchive/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/). Sixteen years later, mining cost and market price still track each other closely enough that "production cost" remains a standing fixture of Bitcoin market commentary. The natural question is which side leads: does the cost of mining anchor the price, or does the price command the cost? The archive's record holds both the original practice — a price derived from cost, in 2009 — and the original theory: Satoshi's February 2010 statement of the equilibrium, including a prediction that the direction would reverse. This entry sets out that record and the later literature that tested it.
 
 ```mermaid

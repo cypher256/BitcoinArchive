@@ -39,6 +39,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![暗い背景に通信チャネルごとの時間軸を並べたデータ可視化チャート。初期のレーンほどドットが密集し、時間とともにまばらになっていき、右端だけ離れた場所に光る点が 1 つ残っている。](/BitcoinArchive/images/analysis/2008-08-20-satoshi-activity-timeline-hero.png)
+
 本アーカイブに収録されたサトシ・ナカモトの全イベント —— メール、メーリングリスト投稿、BitcoinTalk スレッド、P2P Foundation メッセージ、SourceForge リリース —— を 1 本の時間軸にプロット。最初の点は [2008 年 8 月 20 日のアダム・バック宛メール](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)。最後の点は [2011 年 4 月 26 日のギャビン・アンドレセン宛警告キー譲渡メール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)。両端の間、サトシは 32 か月にわたって投稿、返信、コード公開、通信を行った。最後の点以降、確認された記録は何もない。
 
 ## 1. 収録範囲

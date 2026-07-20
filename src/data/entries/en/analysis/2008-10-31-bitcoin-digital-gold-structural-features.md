@@ -38,6 +38,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![Dark navy illustration of a gold ingot with a dollar-sign emblem at its center, flanked by two bordered text panels, above six connected numbered gold circles, an outlined empty building shape, and three overlapping colored parallelograms.](/BitcoinArchive/images/analysis/2008-10-31-bitcoin-digital-gold-structural-features-hero.png)
+
 ## Why the question matters
 
 Later cryptocurrencies ([Ethereum](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/), Ripple, Cardano, Solana) ship more capable virtual machines, faster confirmation, lower fees, richer programmability. On any single technical axis other than uptime since 2009, Bitcoin is no longer the frontier. And yet the market consistently prices Bitcoin as the asset most resembling gold — the long-horizon store of value, the reserve position, the holding that doesn't depend on a counterparty's roadmap.

@@ -34,6 +34,8 @@ relatedEntries:
   - analysis/2026-05-24-satoshi-design-vs-current-reality
 ---
 
+![Dark illustration of a keycard labeled "key present, secret lost," a discarded hardware device on a landfill mound labeled "physical disposal," a cracked vault labeled "custody collapse," and a sealed cube labeled "frozen UTXO," connected by dashed lines under the heading "no recovery mechanism, no trusted third party"](/BitcoinArchive/images/analysis/2026-06-02-bitcoin-iconic-losses-overview-hero.png)
+
 Bitcoin's protocol has no recovery mechanism. There is no support line, no court order, no master key, and no central authority that can re-issue a UTXO whose private key has been destroyed, lost, or never existed in transferable form. This is not a defect: it is a deliberate design choice that flows directly from the whitepaper's elimination of trusted third parties. The cost of that choice is that human losses — through carelessness, through hostile environments, or through fraud — are permanent.
 
 This entry collates the documented "iconic" loss cases that appear repeatedly in the public discourse about lost Bitcoin, grouped by mechanism rather than by chronology or dollar value. The grouping is editorial: roundup-style coverage in mainstream press tends to combine cases that are mechanistically distinct, which obscures the underlying structure.

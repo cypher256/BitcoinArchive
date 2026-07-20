@@ -45,6 +45,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![盾のアイコン、道標、遠くのサーバーラックへ続く破線の軌跡、バツ印が付いた封筒を配置した、暗い配色の図解ふうイラスト。消えていく足跡のような構成になっている。](/BitcoinArchive/images/analysis/2008-08-18-anonymousspeech-bitcoin-org-intermediary-hero.png)
+
 サトシ・ナカモトが世界に向けて踏み出した最初の一歩は、記録が残る限り、一つの商業事業者を経由している。`bitcoin.org` は 2008 年 8 月 18 日、匿名ドメイン登録と匿名メールのサービス AnonymousSpeech.com を通じて登録された。既知の最初の送信メール — 8 月 20 日の[アダム・バック宛](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back-hashcash-citation/)と 8 月 22 日の[ウェイ・ダイ宛](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) — も `satoshi@anonymousspeech.com` から送られた。有料サービスは、サトシが後に使ったどのメーリングリストともフォーラムとも立場が違う。顧客との間に支払いの関係を持つ。では、このサービスと運営者について、公開記録は実際に何を立証できるのか。そして追跡はどこで途切れるのか。後者への短い答えはこうだ — あらゆる場所で、意図された形で途切れており、その途切れ方こそが読むに値する。
 
 ```mermaid

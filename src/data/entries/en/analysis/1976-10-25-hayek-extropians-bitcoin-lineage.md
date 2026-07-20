@@ -60,6 +60,8 @@ inlineLinkKeywords:
   - "libertarian-money lineage"
 ---
 
+![A dark timeline diagram running from a 1976 book cover of "Denationalisation of Money" through a "Hayeks" virtual-bank artifact to a glowing Bitcoin coin, spanning 1976 to 2009](/BitcoinArchive/images/analysis/1976-10-25-hayek-extropians-bitcoin-lineage-hero.png)
+
 <!-- audit:quote-skip -->
 > "There is no justification in history for the existing position of a government monopoly of issuing money. It has never been proposed on the ground that government will give us better money than anybody else could. It has always, since the privilege of issuing money was first explicitly represented as a Royal prerogative, been advocated because the power to issue money was essential for the finance of the government."
 >

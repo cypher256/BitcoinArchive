@@ -47,6 +47,8 @@ relatedEntries:
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
 ---
 
+![A dark infographic split into two horizontal bands by a jagged orange divider line. The upper band shows pale blue line-art icons — a computer, a target/lock shape, a small network of connected nodes, and an arrow — arranged in four columns. The lower band shows solid amber icons in the same four columns — stacked server racks, a padlock, a hub-and-spoke structure, and layered stacked platforms — evoking a more concentrated, industrial version of the system above.](/BitcoinArchive/images/analysis/2026-05-24-satoshi-design-vs-current-reality-hero.png)
+
 Bitcoin's protocol still runs almost unchanged from the rules [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) wrote down in 2008. But the *user experience*, the *economic structure*, and the *governance reality* of the system have drifted considerably from the early design picture. Reading the [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) or the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) gives a faithful picture of the protocol but a misleading picture of what most users actually touch. This entry walks through four axes where the gap is largest, with pointers to the records.
 
 | Axis | Early design picture | Current reality | Drift started |

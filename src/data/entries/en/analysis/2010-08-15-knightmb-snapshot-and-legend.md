@@ -33,6 +33,8 @@ relatedEntries:
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
 ---
 
+![A glowing blue snapshot cube stands at the center of a dark blue scene, ringed by fractured red diamond shapes and oversized numerals suggesting a data overflow, with a faceless silhouetted figure above surrounded by speech-bubble outlines, and a row of vintage desktop computers lined up along the bottom edge.](/BitcoinArchive/images/analysis/2010-08-15-knightmb-snapshot-and-legend-hero.png)
+
 On August 15, 2010, Bitcoin's blockchain briefly contained 184 billion BTC — about nine thousand times the system's intended total supply. The exploit took roughly five hours to neutralize, and one of the things the recovery rested on was a clean snapshot of the chain held by a forum regular who went by the name "knightmb."
 
 Within hours that snapshot would be embedded in the recovery patch. Within years the man behind the handle would be embedded — in secondary sources, at least — in a different chain of events: a federal extortion conviction in Tennessee, a still-circulating claim that he had once held a tenth of all Bitcoin, and a public identification that no court document and no first-person statement actually confirms. This entry collects what the Archive's primary record shows about knightmb, and what the secondary record has done with him.

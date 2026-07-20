@@ -52,6 +52,8 @@ inlineLinkKeywords:
   - "code evolution"
 ---
 
+![Dark-themed graphic pairing a code-editor window of C++ snippets with a clock diagram marking a silent UTC hour range, a rising line chart of codebase growth, and a commit timeline with a gap labeled "75-day silence."](/BitcoinArchive/images/analysis/2009-01-09-satoshi-code-analysis-hero.png)
+
 194 commits, two years, one identifiable coding style. This analysis examines Satoshi Nakamoto's Bitcoin source code from v0.1.0 (January 2009) through v0.3.19 (December 2010) — 160 SVN commits by `s_nakamoto` (with preserved timestamps) plus 34 git commits — and reads the static source plus the temporal pattern as one coherent body of evidence. The period between v0.1.0 (January 2009) and the start of SVN (October 2009) has no preserved commit history; the SVN repository was introduced in October 2009 with help from Martti Malmi.
 
 ## 1. Data sources

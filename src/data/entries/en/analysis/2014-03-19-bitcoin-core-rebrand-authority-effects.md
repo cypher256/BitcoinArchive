@@ -57,6 +57,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![A two-panel dark illustration: the left panel shows two nodes joined by three parallel curved lines, and the right panel shows a glowing circular hub with curved arrows radiating outward to four smaller nodes.](/BitcoinArchive/images/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects-hero.png)
+
 On December 16, 2013, [pull request #3408](https://github.com/bitcoin/bitcoin/pull/3408) renamed Bitcoin-Qt to "Bitcoin Core," released publicly in version 0.9.0 on March 19, 2014. Presented at the time as disambiguation, the rename reads differently against three later witnesses ([Hearn 2016](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/), [Hearn 2024 COPA](/BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/), [Hearn 2025 CoinGeek](/BitcoinArchive/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/)): did it become something more consequential?
 
 Under the reading offered here, the answer is yes — but the claim is narrower than it may sound. The lexical claim is that the chosen name "Bitcoin Core" does not behave as a synonym for "reference client": it carries a centripetal weight that "Bitcoin-Qt" did not. Whether the rename caused later effects, or merely named a structure that already existed, is a separate and harder question (§6).

@@ -63,6 +63,8 @@ relatedEntries:
 translationStatus: complete
 ---
 
+![A network diagram contrasting a tight cluster of nodes labeled "Blockstream" and "Core contributors" on the left with a wide, dispersed network of funding organizations (Chaincode, Brink, Spiral, MIT DCI, OpenSats, HRF, Btrust) on the right, separated by a broken chain link labeled "the chain breaks here," above a layered diagram of a base layer and second layers.](/BitcoinArchive/images/analysis/2014-11-01-blockstream-centralization-claim-hero.png)
+
 "Blockstream controls Bitcoin." Of all the charges the [block-size war](/BitcoinArchive/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/) left behind, this is the one that has lasted longest. A company that employs many of Bitcoin Core's developers, the story goes, kept the base layer deliberately inconvenient so that the second layer it sells would become indispensable. Something meant to have no centre, taken hold of by a single firm.
 
 The line was not coined by anyone with a grudge against Blockstream. The first to say it was a developer leaving the project, [Mike Hearn](/BitcoinArchive/participants/mike-hearn/):

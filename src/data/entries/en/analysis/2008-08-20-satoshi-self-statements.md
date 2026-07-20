@@ -60,6 +60,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![A faceless silhouette on one side of the image and technical diagram lines with small quoted notes on the other, alongside a crossed-out ID-style profile card](/BitcoinArchive/images/analysis/2008-08-20-satoshi-self-statements-hero.png)
+
 Across thirty-two months of documented public record, Satoshi Nakamoto referred to himself in writing dozens of times — not in identity claims (he made almost none of those), but in development-process disclosures ("I had to write all the code before I could convince myself"), operational-state notes ("I've also been busy with other things for the last month and a half"), expertise self-assessments ("That's great because that's where I have less expertise"), and farewells ("I've moved on to other things"). This entry inventories those self-references — every place where Satoshi was the subject of his own sentence in a non-trivial way — and reads them together as a single body of evidence about what Satoshi said about himself, separated from what the documented behavioural record shows.
 
 **Inclusion criterion:** the statement contains a self-reference (Satoshi's own state, position, capability, intent, or identity).

@@ -68,6 +68,8 @@ inlineLinkKeywords:
   - "hard money"
 ---
 
+![A glowing padlock inside a circle on the left, an open expanding spiral on the right, connected by a balance scale on a dark grid background.](/BitcoinArchive/images/analysis/2008-10-31-fixed-supply-vs-adjustable-money-hero.png)
+
 How much new money should exist next year, and who decides? Bitcoin's answer — a hard cap of about 21 million coins, written into consensus code and enforced by every full node — is one specific position in a debate that long predates Bitcoin, runs through the cypherpunk monetary-design literature of the 1990s, and continues today across both the cryptocurrency landscape and the central-banking world.
 ## 1. The question: who and how decides the money supply
 

@@ -59,6 +59,8 @@ inlineLinkKeywords:
   - "unspendable 50 BTC"
 ---
 
+![A glowing orange cube labeled "Genesis / Block 0" over a faint tiled background of code fragments (nonce, nBits, timestamp), with a crossed-out headline icon and a "5 DAYS" gap marker between two dates](/BitcoinArchive/images/analysis/2009-01-03-genesis-block-hardcode-analysis-hero.png)
+
 Block 0 — the [Bitcoin genesis block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/) — is hardcoded as a constant in the Bitcoin v0.1 source. When a node starts with an empty block database, it does not download Block 0 from peers; it reconstructs Block 0 locally from the same parameters every other node uses. The block has no provable creator in the cryptographic sense. Its 50 BTC coinbase is unspendable: a branching structure in `AddToBlockIndex()` registers Block 0's coinbase differently from every subsequent block's, skipping the `ConnectBlock()` call that enters a block's transactions into the UTXO set. And between its January 3, 2009 timestamp and the first publicly-mined Block 1 on January 9, five days passed in which Satoshi's mining process produced no recorded successor. This analysis reads the mechanism in the source code and what it implies for three long-discussed questions about the genesis block: the five-day gap, the attribution, and the unspendable coinbase.
 
 Technical claims are verifiable against the Bitcoin v0.1 source. Interpretive sections are labeled as such.

@@ -48,6 +48,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![.rar アーカイブのアイコンと、「no installer found」「no svn history found」と表示されたターミナル画面が並び、右側には一致項目にチェック・非一致項目にバツが付いた「Convention Check」のチェックリスト。下部には「Audit 2011」の虫眼鏡と、チェックマーク付きの盾が配置されている](/BitcoinArchive/images/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies-hero.png)
+
 Bitcoin v0.1 は SourceForge 上で `.rar` アーカイブとして公開された —— オープンソースリリースよりも IRC/XDCC の Warez シーン配布で一般的なフォーマット。バージョン管理システムは使われなかった。本エントリは配布側とツール不在の観察をまとまった集合として読み、ダン・カミンスキーが [2011 年のセキュリティ監査](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)で v0.1 のセキュリティ・アーキテクチャを別側面から検証したものと並べる。個人開発環境の証拠 (ハンガリアン記法、 OpenSSL 依存、 Visual C++ 6.0 ツールチェーン、 PGP MingW32 署名末尾) は別エントリー [Windows 中心の開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)で扱う。
 
 ## 1. 配布: `.rar` パッケージングの選択

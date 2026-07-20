@@ -63,6 +63,8 @@ inlineLinkKeywords:
   - "whitepaper references"
 ---
 
+![A dark technical-blueprint diagram with orange threads converging from labeled items on the left into a glowing central hexagon icon, then teal threads fanning out to labeled items on the right](/BitcoinArchive/images/analysis/2008-10-31-bitcoin-design-lineage-hero.png)
+
 On November 10, 2008, ten days after publishing the Bitcoin whitepaper, Satoshi wrote to Hal Finney:
 
 <!-- speaker: Satoshi Nakamoto -->

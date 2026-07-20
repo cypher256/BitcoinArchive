@@ -64,6 +64,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![暗い設計図ふうの図。左側に並ぶラベル付きの項目からオレンジ色の線が中央の光る六角形アイコンへ集まり、そこから右側のラベル付き項目へ緑色の線が扇状に広がっている](/BitcoinArchive/images/analysis/2008-10-31-bitcoin-design-lineage-hero.png)
+
 2008 年 11 月 10 日、ビットコインのホワイトペーパー公開から 10 日後、サトシはハル・フィニーにこう書いた:
 
 <!-- speaker: Satoshi Nakamoto -->

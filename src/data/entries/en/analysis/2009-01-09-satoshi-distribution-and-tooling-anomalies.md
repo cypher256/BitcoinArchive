@@ -48,6 +48,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![A stylized .rar archive file icon beside a terminal window reading "no installer found" and "no svn history found", a checklist titled "Convention Check" with matching items checked and producer-side items crossed out, and a shield with a checkmark next to a magnifying glass labeled "Audit 2011"](/BitcoinArchive/images/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies-hero.png)
+
 Bitcoin v0.1 shipped on SourceForge as a `.rar` archive — a format more common in IRC/XDCC Warez-scene distribution than open-source releases. No version control system was used. This entry reads the distribution-side and tooling-absence observations as a coherent set, alongside Dan Kaminsky's [2011 security audit](/BitcoinArchive/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/) which examined v0.1's security architecture from the other side. The personal-environment evidence (Hungarian notation, OpenSSL dependency, Visual C++ 6.0 toolchain, the PGP MingW32 signature footer) is treated separately in [the Windows-centric development environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/).
 
 ## 1. Distribution: the `.rar` packaging choice

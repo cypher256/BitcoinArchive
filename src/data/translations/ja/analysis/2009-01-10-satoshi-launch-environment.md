@@ -46,6 +46,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![端末画面に接続遮断の状態が表示されたノートパソコンと、警告マークで遮られた 3 本の通信線、2009 年 1 月のリリース週の日付入りタイムラインを描いた暗い色調のイラスト。](/BitcoinArchive/images/analysis/2009-01-10-satoshi-launch-environment-hero.png)
+
 2009 年 1 月 10 日、サトシは[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)に書いた:
 
 <!-- speaker: Satoshi Nakamoto -->

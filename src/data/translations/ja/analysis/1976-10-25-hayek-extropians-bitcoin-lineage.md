@@ -61,6 +61,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![1976 年の書籍『貨幣発行自由化論』の表紙から「Hayeks」仮想銀行の造形物を経て、光るビットコインコインへと至る、1976 年から 2009 年までの暗い配色の時系列図](/BitcoinArchive/images/analysis/1976-10-25-hayek-extropians-bitcoin-lineage-hero.png)
+
 <!-- audit:quote-skip -->
 > 「貨幣を発行する政府の独占が現在の地位にあることに、歴史的な正当化はない。政府が誰よりも良い貨幣を提供するという根拠で提唱されたことは一度もない。貨幣発行の特権が王権として初めて明示的に語られて以来、それは常に、貨幣発行の権限が政府の財政に不可欠であるという理由で擁護されてきたのである」
 >

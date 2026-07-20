@@ -74,6 +74,8 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
+![Diagram showing a solitary workstation connected by a glowing curved line to a central "digital cash" node, with a separate cluster of interconnected nodes labeled as a cypherpunk network off to the side, illustrating two unconnected paths converging on the same point](/BitcoinArchive/images/analysis/2008-10-31-cypherpunk-independent-arrival-hero.png)
+
 <!-- speaker: Satoshi Nakamoto -->
 > "Thanks, I wasn't aware of the b-money page, but my ideas start from exactly that point."
 
