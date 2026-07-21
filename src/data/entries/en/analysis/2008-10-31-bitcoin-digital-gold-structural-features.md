@@ -67,7 +67,7 @@ Later cryptocurrencies ([Ethereum](/BitcoinArchive/entries/analysis/2008-10-31-b
 
 The standard explanation is "first-mover advantage." On this reading, Bitcoin's value is a path-dependent accident: it arrived first, accumulated the network effect, and is now defended by inertia rather than by anything intrinsic to the design.
 
-This page argues that the explanation is structurally richer. Bitcoin's claim to "digital gold" status is not a single property but the **simultaneous combination** of two distinct layers of decentralization, supported by six concrete structural features. Each individual feature exists in some other project. None of those projects has assembled the full set, and the absence is not accidental — several of the features are mutually difficult to satisfy together.
+But the explanation runs structurally deeper than that. Bitcoin's claim to "digital gold" status is not a single property but the **simultaneous combination** of two distinct layers of decentralization, supported by six concrete structural features. Each individual feature exists in some other project. None of those projects has assembled the full set, and the absence is not accidental — several of the features are mutually difficult to satisfy together.
 
 ## The two layers, distinguished
 
@@ -102,7 +102,7 @@ Layer 1 is technical. It can be inspected: read the consensus code, count the in
 
 Layer 2 is sociological. The question is whether a specific named individual or organization sets the protocol's direction, controls its development, holds its keys, or speaks for it institutionally. Layer 2 cannot be inspected through the consensus code — it has to be checked against the project's governance record, premine accounting, foundation structure, and the visible activity of the original architects.
 
-The two layers are not redundant. A project can be highly decentralized at Layer 1 (many nodes, open-source client, no single server) while being highly centralized at Layer 2 (a named founder whose announcements move the protocol roadmap, a foundation whose treasury bankrolls development, an investor cohort holding 30% of the initial supply). Most post-2014 cryptocurrencies are in exactly that position, and that is the position this page argues makes Bitcoin distinctive.
+The two layers are not redundant. A project can be highly decentralized at Layer 1 (many nodes, open-source client, no single server) while being highly centralized at Layer 2 (a named founder whose announcements move the protocol roadmap, a foundation whose treasury bankrolls development, an investor cohort holding 30% of the initial supply). Most post-2014 cryptocurrencies are in exactly that position — and that position is what makes Bitcoin distinctive.
 
 ## The six structural features
 
@@ -127,7 +127,7 @@ This layer is well covered, and most successor cryptocurrencies have a defensibl
 
 ### 2. People and organization decentralization
 
-This is the central thesis of the page. Compared on Layer 2, the picture for top cryptocurrencies looks like this:
+This is where Bitcoin separates from every other major chain. Compared on Layer 2, the picture for top cryptocurrencies looks like this:
 
 | Project | Active founder | Foundation with protocol authority | Visible CEO | Premine / dev allocation |
 |---|---|---|---|---|
@@ -180,7 +180,7 @@ The network effect is real and is correctly counted as one of the six features, 
 
 ## Why the combination matters
 
-Each of the six features individually exists, in some form, somewhere in the cryptocurrency landscape. The argument is that **all six simultaneously, to the degree Bitcoin satisfies them, do not coexist in any other project**, and that several pairs of features are mutually difficult to satisfy:
+Each of the six features individually exists, in some form, somewhere in the cryptocurrency landscape. But **all six simultaneously, to the degree Bitcoin satisfies them, do not coexist in any other project** — and several pairs of features are mutually difficult to satisfy:
 
 - **Fair launch + ongoing development funding.** A project with no premine, no ICO, and no foundation has no internal source of development funding. Bitcoin's solution is to have a contributor coalition with no central paymaster — possible only because (a) the protocol was deliberately minimal at launch and (b) volunteer-and-grant funding has been sufficient to sustain a thin development surface. A project that aims at richer functionality (smart contracts, layer-1 DeFi, application platforms) cannot make the same trade-off without re-introducing a funding entity.
 - **Founder departure + roadmap leadership.** A protocol with an active founder has clear roadmap leadership; a protocol without one has to develop dispersed decision-making. Bitcoin's experience suggests this is workable but slow, and the slowness itself is part of what makes the cap and other rules credibly immutable. A project that prioritizes rapid iteration cannot also have no founder.
