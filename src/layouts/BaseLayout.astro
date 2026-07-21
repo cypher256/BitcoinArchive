@@ -174,12 +174,19 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
       data-scroll=right|left|both|none from its scroll position; global.css
       then fades the edge(s) that still have off-screen content. Progressive
       enhancement: with no JS the attribute is absent and the block scrolls
-      plainly. Charts (d3) are excluded — they size to fit and never scroll.
+      plainly. Most d3 charts (data-kind="chart") resize to fit and never
+      scroll, so update() below just tags them "none" (no visual effect) --
+      but a few (fork-genealogy, identity-suspect-map) force a min-width
+      wider than narrow viewports on purpose, so "chart" stays in the
+      selector rather than being excluded wholesale. Chart-embed figures
+      are mounted client-side by ChartEmbedRuntime.astro well after this
+      script's first pass, so a MutationObserver re-scans for newly
+      inserted matches instead of a one-time querySelectorAll.
     */}
     <script>
       (() => {
         const sel =
-          '.figure-block[data-kind="mermaid"], .figure-block[data-kind="table"], pre';
+          '.figure-block[data-kind="mermaid"], .figure-block[data-kind="table"], .figure-block[data-kind="chart"], pre';
         const update = (el) => {
           const max = el.scrollWidth - el.clientWidth;
           if (max <= 2) {
@@ -192,15 +199,16 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
             x <= 2 ? 'right' : x >= max - 2 ? 'left' : 'both',
           );
         };
-        const els = Array.from(document.querySelectorAll(sel));
-        if (!els.length) return;
+        const bound = new Set();
         const ro =
           'ResizeObserver' in window
             ? new ResizeObserver((entries) =>
                 entries.forEach((e) => update(e.target)),
               )
             : null;
-        for (const el of els) {
+        const bind = (el) => {
+          if (bound.has(el)) return;
+          bound.add(el);
           update(el);
           let ticking = false;
           el.addEventListener(
@@ -216,10 +224,28 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
             { passive: true },
           );
           ro && ro.observe(el);
-        }
-        addEventListener('resize', () => els.forEach(update), { passive: true });
+        };
+        const scan = () => document.querySelectorAll(sel).forEach(bind);
+        scan();
+        addEventListener('resize', () => bound.forEach(update), { passive: true });
         // Tables can reflow once web fonts load; re-measure when ready.
-        if (document.fonts) document.fonts.ready.then(() => els.forEach(update));
+        if (document.fonts) document.fonts.ready.then(() => bound.forEach(update));
+        // Coalesce bursts of mutations (e.g. a chart drawer building a
+        // multi-node SVG) into a single re-scan per frame instead of one
+        // querySelectorAll per mutation record.
+        let scanScheduled = false;
+        const scheduleScan = () => {
+          if (scanScheduled) return;
+          scanScheduled = true;
+          requestAnimationFrame(() => {
+            scanScheduled = false;
+            scan();
+          });
+        };
+        new MutationObserver(scheduleScan).observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
       })();
     </script>
     {/*

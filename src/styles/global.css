@@ -1282,7 +1282,8 @@ th {
   margin: 0;
 }
 
-/* Horizontal-scroll affordance (tables, mermaid, code blocks).
+/* Horizontal-scroll affordance (tables, mermaid, code blocks, and the
+   handful of chart-embeds that force a min-width past narrow viewports).
    iOS and Android hide the scrollbar until you actually drag, so an
    overflowing block gives no standing hint that there's more to the side.
    The inline script in BaseLayout tags each scroller with
@@ -1293,10 +1294,15 @@ th {
    layout, borders box model and the entry-title wrap untouched. Pure CSS
    can't answer "is there more this way" without the scroll position, hence
    the JS-set attribute; with no JS the attribute is absent, no mask
-   applies, and the block scrolls plainly as before. Charts (d3) are
-   excluded — they size to the container and never scroll horizontally. */
+   applies, and the block scrolls plainly as before. Most d3 charts size to
+   the container and never scroll, so this custom property is a no-op for
+   them; fork-genealogy and identity-suspect-map are the exceptions that
+   actually overflow on narrow viewports, so "chart" stays in this list
+   rather than being excluded wholesale (an unset --scroll-fade would make
+   the mask-image declarations below invalid and silently no-op). */
 .figure-block[data-kind="mermaid"],
 .figure-block[data-kind="table"],
+.figure-block[data-kind="chart"],
 pre {
   --scroll-fade: 28px;
 }

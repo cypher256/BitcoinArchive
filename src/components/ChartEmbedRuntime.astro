@@ -103,7 +103,7 @@ const JPY_PER_USD = 160;
       '.chart-embed[data-chart="identity-suspect-map"]{--srm-cited:#a16207;--srm-contact:#047857;--srm-claim:#7c3aed;--srm-self:#be185d;--srm-inter:#5a6470;}' +
       ':root[data-mode="dark"] .chart-embed[data-chart="identity-suspect-map"]{--srm-cited:#fbbf24;--srm-contact:#34d399;--srm-claim:#a78bfa;--srm-self:#f472b6;--srm-inter:#97a0ab;}' +
       '@media (prefers-color-scheme: dark){:root:not([data-mode="light"]) .chart-embed[data-chart="identity-suspect-map"]{--srm-cited:#fbbf24;--srm-contact:#34d399;--srm-claim:#a78bfa;--srm-self:#f472b6;--srm-inter:#97a0ab;}}' +
-      '.chart-embed .srm-wrap{position:relative;overflow-x:auto;}' +
+      '.chart-embed .srm-wrap{position:relative;}' +
       '.chart-embed .srm-svg{display:block;width:100%;min-width:760px;height:auto;}' +
       '.chart-embed .srm-edge{stroke-linecap:round;transition:opacity .15s;}' +
       '.chart-embed .srm-e-cited{stroke:var(--srm-cited);stroke-width:3.5;}' +
@@ -854,7 +854,7 @@ const JPY_PER_USD = 160;
 
     host.innerHTML =
       '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
-      '<div class="ce-map"></div>' +
+      '<div class="figure-outer"><figure class="figure-block" data-kind="chart"><div class="ce-map"></div></figure></div>' +
       '<div class="srm-legend">' + legendHtml + '</div>' +
       '<p class="ce-note">' + T_.note + '</p>';
 
