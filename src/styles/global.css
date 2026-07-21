@@ -992,6 +992,19 @@ img {
   display: block;
 }
 
+@media (max-width: 767px) {
+  /* Bleed hero images to the viewport edge instead of staying inset
+     inside .container's 1rem padding -- on a narrow screen that padding
+     eats a large share of the image's width, and the fixed 16:9 ratio
+     already reads as a deliberate banner rather than inline body art. */
+  .entry-content img[src*="/images/analysis/"][src$="-hero.png"],
+  .biography-content img[src*="/images/analysis/"][src$="-hero.png"] {
+    width: calc(100% + 2rem);
+    max-width: calc(100% + 2rem);
+    margin-inline: -1rem;
+  }
+}
+
 /* Mermaid mindmap: force light text on root and node labels in dark mode.
    The mindmap diagram type uses inline fills that don't track our
    --mermaid-text token, so the default dark text becomes invisible on

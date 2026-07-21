@@ -606,6 +606,16 @@ function tagWeight(count: number, max: number): number {
     .hero h1 {
       font-size: 2rem;
     }
+    /* Bleed the hero image to the viewport edge instead of staying
+       inset inside .container-wide's 1rem padding -- matches the same
+       treatment applied to entry-page hero images and title banners. */
+    .hero-image {
+      width: calc(100% + 2rem);
+      max-width: calc(100% + 2rem);
+      margin-inline: -1rem;
+      border: none;
+      border-radius: 0;
+    }
   }
 
   .description { white-space: nowrap; }
