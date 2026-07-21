@@ -137,6 +137,17 @@ const titleAvatarHref = isEditorialType
   : (titleAvatarParticipant ? localePath(`/participants/${titleAvatarParticipant.slug}/`, lang) : null);
 const titleAvatarLabel = isEditorialType ? t('site.title') : titleAvatarParticipant?.name;
 const heroBannerOffset = heroBannerPosition(entry.id);
+// og:image — prefer the entry's hero illustration when one exists
+// (editorial types embed it as the body's first image, see
+// STYLE_GUIDE.md "Hero Images"); the generated /og/ text card stays
+// the fallback for the primary-source types that have none. The body
+// markdown hardcodes the MIRROR_BASE prefix (remark-rewrite-base
+// rewrites it per deployment at build), while BaseHead wants a
+// base-stripped path to prepend PRIMARY_ORIGIN to — capture without it.
+const heroOgMatch = (entry.body ?? '').match(
+  /!\[[^\]]*\]\((?:\/BitcoinArchive)?(\/images\/analysis\/[^)\s]+-hero\.png)\)/,
+);
+const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
 // Segment the title into phrases so line breaks (text-wrap: balance below)
 // can only fall between phrases, never mid-word (e.g. never split 匿名
 // into 匿 / 名) — plain greedy/balanced wrapping breaks between any two
@@ -153,7 +164,9 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
   publishedTime={ogPublishedTime}
   modifiedTime={ogModifiedTime}
   author={ogAuthor}
-  ogImage={`/og/ja/${entry.id}.png`}
+  ogImage={heroOgImage ?? `/og/ja/${entry.id}.png`}
+  ogImageWidth={heroOgImage ? 1600 : undefined}
+  ogImageHeight={heroOgImage ? 900 : undefined}
   breadcrumbs={breadcrumbs}
   hasMath={hasMath}
 >

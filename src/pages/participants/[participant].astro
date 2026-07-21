@@ -112,6 +112,16 @@ const structuredData = [
     },
   },
 ];
+
+// og:image — prefer the biography's hero illustration when one exists
+// (embedded as the body's first image, see STYLE_GUIDE.md "Hero
+// Images"); the generated /og/participants/ text card stays the
+// fallback for the ~337 participants without a biography. Captured
+// without the MIRROR_BASE prefix — BaseHead prepends PRIMARY_ORIGIN.
+const heroOgMatch = (biographyEntry?.body ?? '').match(
+  /!\[[^\]]*\]\((?:\/BitcoinArchive)?(\/images\/analysis\/[^)\s]+-hero\.png)\)/,
+);
+const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
 ---
 
 <BaseLayout
@@ -119,7 +129,9 @@ const structuredData = [
   description={biographyEntry?.data.description ?? `Archive of ${participantName}'s communications in Bitcoin's early history — forum posts, emails, and technical discussions`}
   lang={lang}
   alternateJa={hasJa ? absoluteUrl(`/participants/${participantSlug}/`, 'ja') : undefined}
-  ogImage={`/og/participants/${participantSlug}.png`}
+  ogImage={heroOgImage ?? `/og/participants/${participantSlug}.png`}
+  ogImageWidth={heroOgImage ? 1600 : undefined}
+  ogImageHeight={heroOgImage ? 900 : undefined}
   structuredData={structuredData}
 >
   <div class="container">

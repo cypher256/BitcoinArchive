@@ -447,6 +447,14 @@ or automated edit, never let the replaced span include the
 frontmatter's closing `---` itself — insert strictly after it, in a
 separate paragraph, and confirm the `---` is still intact afterward.
 
+**og:image consumer**: the hero image doubles as the page's
+`og:image` — the entry templates (and the participant pages, for
+biographies) extract the body's first `/images/analysis/*-hero.png`
+reference and prefer it over the generated `/og/` text card, which
+remains the fallback for primary-source entries without one. Renaming
+or removing a hero image therefore changes the page's social-share
+card, not just its body.
+
 ## Link Integrity
 
 Inline links in body prose must satisfy a simple invariant: the

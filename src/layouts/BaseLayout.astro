@@ -18,6 +18,8 @@ interface Props {
   author?: string;
   noindex?: boolean;
   ogImage?: string;
+  ogImageWidth?: number;
+  ogImageHeight?: number;
   breadcrumbs?: Array<{
     name: string;
     url: string;
@@ -30,7 +32,7 @@ interface Props {
   hasMath?: boolean;
 }
 
-const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType, publishedTime, modifiedTime, author, noindex, ogImage, breadcrumbs, structuredData, hasMath = false } = Astro.props;
+const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType, publishedTime, modifiedTime, author, noindex, ogImage, ogImageWidth, ogImageHeight, breadcrumbs, structuredData, hasMath = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -154,6 +156,8 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
       author={author}
       noindex={noindex}
       ogImage={ogImage}
+      ogImageWidth={ogImageWidth}
+      ogImageHeight={ogImageHeight}
       breadcrumbs={breadcrumbs}
       structuredData={structuredData}
     />
