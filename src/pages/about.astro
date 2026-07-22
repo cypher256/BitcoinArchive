@@ -19,21 +19,32 @@ const t = useTranslations(lang);
     <p>{t('about.mission')}</p>
 
     <h2>Scope</h2>
+
+    <h3>Primary sources</h3>
     <ul>
       <li><strong>Satoshi Nakamoto's writings</strong> — All emails, forum posts, and code comments</li>
       <li><strong>Conversations</strong> — Exchanges with Adam Back, Wei Dai, Hal Finney, James A. Donald, and others</li>
       <li><strong>Blog posts and essays</strong> — A participant's own self-published web writings (blog posts, essays), preserved verbatim — e.g. Nick Szabo's bit gold, Wei Dai's b-money</li>
-      <li><strong>Aftermath</strong> — Court testimonies, blog retrospectives, interviews, media reports, and key historical events in Bitcoin's early history</li>
       <li><strong>Bitcoin Improvement Proposals (BIPs)</strong> — Key protocol specifications that shaped Bitcoin's development, including HD wallets, SegWit, Taproot, and more</li>
       <li><strong>Tweets (X / Twitter)</strong> — Historically significant X (formerly Twitter) posts archived verbatim with the original handle. Edited commentary about each tweet lives in a separate editorial article that links to the primary tweet entry.</li>
-      <li><strong>Editorial entries</strong> — Bitcoin Institute's own writing about the archive's material, in three forms: editorial articles (<code>type: article</code>) read a specific primary record or event; analyses (<code>type: analysis</code>) develop interpretive arguments across multiple sources; biographies (<code>type: biography</code>) compile a person's documented history. All three carry Bitcoin Institute as the editorial voice, with claims sourced.</li>
+      <li><strong>Court documents</strong> — Trial evidence and testimony, e.g. the COPA v Wright case</li>
+      <li><strong>The Bitcoin whitepaper</strong> — Both the October 31, 2008 final PDF and its October 3, 2008 pre-release draft, archived verbatim</li>
+    </ul>
+
+    <h3>Editorial readings</h3>
+    <p>Bitcoin Institute's own writing about the archive's material, in four forms:</p>
+    <ul>
+      <li><strong>Articles</strong> (<code>type: article</code>) — Read a primary record, event, or multi-year incident in the archive: retrospectives, media coverage, and key historical accounts from Bitcoin's early history</li>
+      <li><strong>Analyses</strong> (<code>type: analysis</code>) — Develop interpretive arguments across multiple sources</li>
+      <li><strong>Biographies</strong> (<code>type: biography</code>) — Compile a person's documented history</li>
+      <li><strong>Design documents</strong> (<code>type: design</code>) — Walk through a specific mechanism in Bitcoin's protocol design, from the system overview down to individual subsystems such as consensus, monetary policy, cryptography, and storage</li>
     </ul>
 
     <h2>Policy</h2>
 
     <h3>Core principles</h3>
     <ul>
-      <li><strong>Facts in primary entries</strong> — Primary entries (emails, forum posts, BIPs, court records) record historical facts only, with no speculation</li>
+      <li><strong>No editorial voice in primary entries</strong> — Primary entries (emails, forum posts, BIPs, court records) preserve the source content verbatim, with no editorial speculation or interpretation added</li>
       <li><strong>Interpretation in editorial readings</strong> — Editorial readings are explicitly labeled as interpretation, with each claim cited to its source</li>
       <li><strong>Sources required</strong> — Every entry must cite its original source with a verifiable URL</li>
       <li><strong>Accuracy</strong> — Content is verified against original archives</li>
@@ -45,7 +56,7 @@ const t = useTranslations(lang);
       <li><strong>Multiple sources</strong> — Where possible, entries cite secondary sources (e.g., Satoshi Nakamoto Institute) to provide redundancy against link rot.</li>
       <li><strong>Timestamps</strong> — All dates and times are in UTC. Timestamps from the cryptography mailing list (displayed in EDT/EST by the Mailman archiver) have been converted to UTC. BitcoinTalk forum timestamps are UTC by default. Where only a date is known (e.g., blog posts, court proceedings), the time is recorded as 00:00:00 UTC. The Satoshi Nakamoto Institute's UTC-normalized timestamps are used as the primary reference.</li>
       <li><strong>Names in translation</strong> — In the Japanese edition, person names are normalized to katakana in UI and editorial text for consistency. Quotes, source titles, organization names, brand names, handles, and URLs retain their original-language forms where appropriate.</li>
-      <li><strong>Entry granularity</strong> — Each primary source document (email, forum post, or letter) is archived as a single entry. One document equals one entry. Aftermath entries (retrospectives, media reports, court testimonies) each represent a single event or article.</li>
+      <li><strong>Entry granularity</strong> — Each primary source document (email, forum post, letter, or court record) is archived as a single entry. One document equals one entry. Editorial entries range in scope from a single event (an article) to a cross-source argument (an analysis) or an entire subsystem (a design document).</li>
       <li><strong>Thread structure</strong> — Related messages are grouped into threads. Each message remains an individual entry, linked by a shared thread identifier. Figures listed on each entry reflect only the direct conversation partners (author and respondent), not all thread figures.</li>
       <li><strong>Biographies</strong> — Biographical profiles of key figures are compiled from multiple public sources and displayed on each figure's page. All facts cited in biographies are backed by verifiable source URLs listed in the entry's references.</li>
     </ul>
