@@ -1788,8 +1788,10 @@ p:has(> strong:only-child):has(+ .figure-outer:has([data-kind="mermaid"])) {
    external `!important` override needed. */
 
 /* Shared replay control for the scroll-triggered chart reveal animations
-   (chart-anim.js wipeReveal / playOnScroll). One definition for every
-   d3 chart component that exposes a [data-replay] button. */
+   (chart-anim.js playOnScroll -- charts whose own data animates, e.g. the
+   BarChartRace family and supply-curve/supply-curve-comparison). One
+   definition for every d3 chart component that exposes a [data-replay]
+   button. */
 .ba-replay-controls {
   display: flex;
   justify-content: flex-end;

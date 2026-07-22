@@ -1,5 +1,5 @@
 /* Nonce LSB distribution (Patoshi blocks). Extracted from
-   src/components/PatoshiNonceLsb.astro so it can be embedded in-body via
+   src/components/PatoshiNonceLsb.astro (since removed) so it can be embedded in-body via
    ChartEmbedRuntime -- the chart belongs right where "The discovery" section
    describes the LSB pattern, not fixed at the bottom of the page. */
 import { select, pointer } from 'd3-selection';
@@ -7,7 +7,7 @@ import { axisBottom, axisLeft } from 'd3-axis';
 import { scaleBand, scaleLinear } from 'd3-scale';
 import { max, range, sum } from 'd3-array';
 
-export function mount(container, replayBtn, dist, l) {
+export function mount(container, dist, l) {
   function token(name) {
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   }
@@ -128,14 +128,6 @@ export function mount(container, replayBtn, dist, l) {
   }
 
   draw();
-
-  var replayFn = null;
-  (function arm(n) {
-    if (window.BAChartAnim) {
-      replayFn = window.BAChartAnim.wipeReveal([container], { duration: 4600 });
-    } else if (n < 40) { setTimeout(function () { arm(n + 1); }, 50); }
-  })(0);
-  if (replayBtn) replayBtn.addEventListener('click', function () { if (replayFn) replayFn(); });
 
   var timer;
   window.addEventListener('resize', function () { clearTimeout(timer); timer = setTimeout(draw, 250); });

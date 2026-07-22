@@ -12,7 +12,7 @@ import { scaleTime } from 'd3-scale';
 import { axisBottom } from 'd3-axis';
 import { timeFormat } from 'd3-time-format';
 
-export function mount(container, replayBtn, data) {
+export function mount(container, data) {
   function token(name) {
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   }
@@ -114,15 +114,6 @@ export function mount(container, replayBtn, data) {
       .text(data.expected);
   }
   draw();
-
-  // Reveal: time-cursor wipe on scroll-in (chart-anim.js wipeReveal).
-  var replayFn = null;
-  (function arm(n) {
-    if (window.BAChartAnim) {
-      replayFn = window.BAChartAnim.wipeReveal([container], { duration: 4200 });
-    } else if ((n || 0) < 40) { setTimeout(function () { arm((n || 0) + 1); }, 50); }
-  })(0);
-  if (replayBtn) replayBtn.addEventListener('click', function () { if (replayFn) replayFn(); });
 
   var timer;
   window.addEventListener('resize', function () { clearTimeout(timer); timer = setTimeout(draw, 250); });

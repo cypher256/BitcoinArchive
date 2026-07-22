@@ -41,7 +41,7 @@ function moveTooltip(tooltip, parent, event) {
     .style('top', (event.clientY - rect.top + 12) + 'px');
 }
 
-export function mount(container, replayBtn, chartData) {
+export function mount(container, chartData) {
   var chains = chartData.chains;
   var milestones = chartData.milestones;
   var linkBase = chartData.linkBase;
@@ -301,14 +301,6 @@ export function mount(container, replayBtn, chartData) {
     });
   }
   draw();
-
-  var replayFn = null;
-  (function arm(n) {
-    if (window.BAChartAnim) {
-      replayFn = window.BAChartAnim.wipeReveal([container], { duration: 5200 });
-    } else if (n < 40) { setTimeout(function () { arm(n + 1); }, 50); }
-  })(0);
-  if (replayBtn) replayBtn.addEventListener('click', function () { if (replayFn) replayFn(); });
 
   var timer;
   window.addEventListener('resize', function () { clearTimeout(timer); timer = setTimeout(draw, 200); });

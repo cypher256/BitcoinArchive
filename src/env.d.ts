@@ -13,14 +13,8 @@ interface BAChartAnimReplayOpts {
   threshold?: number;
 }
 
-interface BAChartAnimWipeRevealOpts {
-  duration?: number;
-  accent?: string;
-}
-
 interface BAChartAnim {
   playOnScroll(el: Element | null, opts?: BAChartAnimReplayOpts): () => void;
-  wipeReveal(panels: Array<string | Element>, opts?: BAChartAnimWipeRevealOpts): () => void;
 }
 
 interface Window {

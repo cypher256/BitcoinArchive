@@ -1,10 +1,16 @@
-/* Reusable chart-animation runtime (A). No d3 dependency.
+/* Reusable chart-animation runtime. No d3 dependency.
    window.BAChartAnim.playOnScroll(el, { duration, onFrame, ease, threshold })
    - Plays onFrame(p), p going 0 -> 1, once, the first time `el` scrolls into view.
    - Honors prefers-reduced-motion: jumps straight to onFrame(1) (no animation).
    - Returns a replay function.
    Each chart only supplies "how to draw one frame" (onFrame); the scroll
-   trigger, the frame loop, and the reduced-motion handling are shared here. */
+   trigger, the frame loop, and the reduced-motion handling are shared here.
+   Used by charts whose own data changes over the animation (the
+   BarChartRace family, supply-curve, supply-curve-comparison) -- the axis
+   or bars actually move. A second effect, wipeReveal (a left-to-right
+   curtain over an already-complete static chart), existed here until it
+   was removed: it dressed up finished charts with motion that carried no
+   information, unlike playOnScroll's data-driven use. */
 (function () {
   if (window.BAChartAnim) return;
 
@@ -45,98 +51,6 @@
         run();
       }
       return run; // explicit replay handle
-    },
-
-    // Left-to-right "time cursor" wipe reveal for one or more already-drawn
-    // chart panels. Each panel's <svg> is overlaid with a background-coloured
-    // curtain that retracts rightward behind an accent playhead, so the drawn
-    // content (dots, lines, lanes) surfaces in left-to-right (time) order. The
-    // chart's own draw code is untouched: curtains are appended on play and
-    // removed on completion, so the resting and post-animation state is always
-    // the full, interactive chart. Plays once on scroll-in; returns a replay fn.
-    //   panels: array of element ids or elements (id of the panel that holds the svg)
-    //   opts:   { duration, accent }  (accent defaults to --color-accent)
-    wipeReveal: function (panels, opts) {
-      opts = opts || {};
-      var NS = 'http://www.w3.org/2000/svg';
-      var accent = opts.accent
-        || getComputedStyle(document.documentElement).getPropertyValue('--color-accent').trim()
-        || '#f7931a';
-      var els = (panels || []).map(function (p) {
-        return typeof p === 'string' ? document.getElementById(p) : p;
-      }).filter(Boolean);
-      if (!els.length) return function () {};
-
-      var self = this;
-      var duration = opts.duration || 5000;
-      // The curtain must match whatever the chart actually sits on. Chart
-      // containers are often transparent inside a tinted <figure> or card, so
-      // walk up to the nearest painted ancestor (works in light and dark mode)
-      // before falling back to the page background.
-      function solidBg(el) {
-        var node = el;
-        while (node && node !== document.documentElement) {
-          var bg = getComputedStyle(node).backgroundColor;
-          if (bg && bg !== 'transparent' && bg !== 'rgba(0, 0, 0, 0)') return bg;
-          node = node.parentElement;
-        }
-        return getComputedStyle(document.body).backgroundColor || '#ffffff';
-      }
-      function dims(svg) {
-        var vb = (svg.getAttribute('viewBox') || '').split(/[\s,]+/).map(Number);
-        var has = vb.length === 4 && vb[2] && vb[3];
-        var rect = svg.getBoundingClientRect();
-        return {
-          W: has ? vb[2] : (parseFloat(svg.getAttribute('width')) || rect.width || 320),
-          H: has ? vb[3] : (parseFloat(svg.getAttribute('height')) || rect.height || 200),
-        };
-      }
-      // Each panel is wired independently so it reveals when ITS OWN element
-      // scrolls into view (panels can be spread far apart on the page).
-      function wireOne(el) {
-        var state = null;
-        function build() {
-          var svg = el.querySelector('svg');
-          if (!svg) return null;
-          var d = dims(svg);
-          var curtain = document.createElementNS(NS, 'rect');
-          curtain.setAttribute('class', 'reveal-curtain');
-          curtain.setAttribute('x', '0'); curtain.setAttribute('y', '0');
-          curtain.setAttribute('width', d.W); curtain.setAttribute('height', d.H);
-          curtain.setAttribute('fill', solidBg(el));
-          var ph = document.createElementNS(NS, 'line');
-          ph.setAttribute('class', 'reveal-playhead');
-          ph.setAttribute('y1', '0'); ph.setAttribute('y2', d.H);
-          ph.setAttribute('stroke', accent);
-          ph.setAttribute('stroke-width', '1.5');
-          ph.setAttribute('opacity', '0.9');
-          svg.appendChild(curtain);
-          svg.appendChild(ph);
-          return { curtain: curtain, ph: ph, W: d.W };
-        }
-        function clear() {
-          if (!state) return;
-          if (state.curtain.parentNode) state.curtain.parentNode.removeChild(state.curtain);
-          if (state.ph.parentNode) state.ph.parentNode.removeChild(state.ph);
-          state = null;
-        }
-        var replay = self.playOnScroll(el, {
-          duration: duration,
-          onFrame: function (p) {
-            if (!state) state = build();
-            if (!state) return;
-            if (p >= 1) { clear(); return; }
-            var px = p * state.W;
-            state.curtain.setAttribute('x', px);
-            state.curtain.setAttribute('width', Math.max(0, state.W - px));
-            state.ph.setAttribute('x1', px);
-            state.ph.setAttribute('x2', px);
-          },
-        });
-        return function () { clear(); replay(); };
-      }
-      var replays = els.map(wireOne);
-      return function () { replays.forEach(function (r) { r(); }); };
     },
   };
 })();

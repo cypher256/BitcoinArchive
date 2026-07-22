@@ -48,7 +48,6 @@ const l = labels[lang];
   <section class="analysis-section">
     <h3>{l.title}</h3>
     <p class="analysis-desc">{l.subtitle}</p>
-    <div class="ba-replay-controls"><button class="ba-replay-btn" data-replay type="button">{lang === 'ja' ? '↻ リプレイ' : '↻ Replay'}</button></div>
     <div id="github-timeline" class="chart-container"></div>
   </section>
 
@@ -196,16 +195,6 @@ interface Labels {
       });
     }
     draw();
-
-    // Reveal: time-cursor wipe on scroll-in (chart-anim.js wipeReveal).
-    var replayFn: (() => void) | null = null;
-    (function arm(n?: number) {
-      if (window.BAChartAnim) {
-        replayFn = window.BAChartAnim.wipeReveal(['github-timeline'], { accent: token('--color-accent'), duration: 4200 });
-      } else if ((n || 0) < 40) { setTimeout(function() { arm((n || 0) + 1); }, 50); }
-    })();
-    var rb = document.querySelector('.github-migration [data-replay]');
-    if (rb) rb.addEventListener('click', function() { if (replayFn) replayFn(); });
 
     var timer: ReturnType<typeof setTimeout>;
     window.addEventListener('resize', function() { clearTimeout(timer); timer = setTimeout(draw, 250); });

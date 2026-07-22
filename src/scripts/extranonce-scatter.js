@@ -1,6 +1,6 @@
 /* ExtraNonce scatter (Patoshi vs non-Patoshi blocks, illustrative
    reconstruction of Lerner's 2013 analysis). Extracted from
-   src/components/PatoshiExtraNonce.astro so it can be embedded in-body via
+   src/components/PatoshiExtraNonce.astro (since removed) so it can be embedded in-body via
    ChartEmbedRuntime -- the chart belongs right at the end of "Method",
    where the slope-segment / restart-every-~100-hours finding it visualizes
    is described, not fixed at the bottom of the page. */
@@ -9,7 +9,7 @@ import { max } from 'd3-array';
 import { scaleLinear } from 'd3-scale';
 import { axisBottom, axisLeft } from 'd3-axis';
 
-export function mount(container, replayBtn, patoshi, nonPatoshi, l) {
+export function mount(container, patoshi, nonPatoshi, l) {
   function token(name) {
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   }
@@ -68,14 +68,6 @@ export function mount(container, replayBtn, patoshi, nonPatoshi, l) {
       .attr('r', 2.5).attr('fill', T.patoshi).attr('opacity', 0.75);
   }
   draw();
-
-  var replayFn = null;
-  (function arm(n) {
-    if (window.BAChartAnim) {
-      replayFn = window.BAChartAnim.wipeReveal([container], { duration: 5000 });
-    } else if ((n || 0) < 40) { setTimeout(function () { arm((n || 0) + 1); }, 50); }
-  })();
-  if (replayBtn) replayBtn.addEventListener('click', function () { if (replayFn) replayFn(); });
 
   var timer;
   window.addEventListener('resize', function () { clearTimeout(timer); timer = setTimeout(draw, 250); });

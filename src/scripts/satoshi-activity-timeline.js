@@ -1,6 +1,6 @@
 /* Satoshi Activity Timeline: 3 panels (channel swimlane, per-recipient
    swimlane, cumulative curve). Extracted from
-   src/components/SatoshiActivityTimeline.astro so it can be embedded in-body
+   src/components/SatoshiActivityTimeline.astro (since removed) so it can be embedded in-body
    via ChartEmbedRuntime -- the entry it lives in exists almost entirely to
    present this chart (its own §2 is titled "How to read the chart"), and
    the chart was previously stacked at the very bottom, after the "what the
@@ -44,7 +44,7 @@ function jitter(seed) {
   return r - Math.floor(r);
 }
 
-export function mount(swimlaneEl, recipientsEl, cumulativeEl, replayBtn, data) {
+export function mount(swimlaneEl, recipientsEl, cumulativeEl, data) {
   var events = data.events;
   var channelOrder = data.channelOrder;
   var channelLabels = data.channelLabels;
@@ -440,16 +440,6 @@ export function mount(swimlaneEl, recipientsEl, cumulativeEl, replayBtn, data) {
   }
 
   render();
-
-  var replayFn = null;
-  (function arm(n) {
-    if (window.BAChartAnim) {
-      replayFn = window.BAChartAnim.wipeReveal(
-        [swimlaneEl, recipientsEl, cumulativeEl],
-        { accent: getComputedStyle(document.documentElement).getPropertyValue('--color-accent').trim(), duration: 5200 });
-    } else if ((n || 0) < 40) { setTimeout(function () { arm((n || 0) + 1); }, 50); }
-  })();
-  if (replayBtn) replayBtn.addEventListener('click', function () { if (replayFn) replayFn(); });
 
   if (typeof window.matchMedia === 'function') {
     var mql = window.matchMedia('(prefers-color-scheme: dark)');

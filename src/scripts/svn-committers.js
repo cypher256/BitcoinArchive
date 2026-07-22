@@ -1,6 +1,6 @@
 /* SVN committer distribution: bar chart (commits per developer) + timeline
    (active period per developer). Extracted from
-   src/components/SvnCommitters.astro so it can be embedded in-body via
+   src/components/SvnCommitters.astro (since removed) so it can be embedded in-body via
    ChartEmbedRuntime -- the chart belongs right after the entry's opening
    "Only four people ever committed code to this repository" sentence, not
    fixed at the bottom of the page. */
@@ -10,7 +10,7 @@ import { max } from 'd3-array';
 import { axisBottom, axisLeft } from 'd3-axis';
 import { timeFormat, timeParse } from 'd3-time-format';
 
-export function mount(barEl, timelineEl, replayBtn, committers, labels, total) {
+export function mount(barEl, timelineEl, committers, labels, total) {
   var l = labels;
 
   function token(name) {
@@ -159,14 +159,6 @@ export function mount(barEl, timelineEl, replayBtn, committers, labels, total) {
   }
 
   rerender();
-
-  var replayFn = null;
-  (function arm(n) {
-    if (window.BAChartAnim) {
-      replayFn = window.BAChartAnim.wipeReveal([barEl, timelineEl], { duration: 4600 });
-    } else if ((n || 0) < 40) { setTimeout(function () { arm((n || 0) + 1); }, 50); }
-  })();
-  if (replayBtn) replayBtn.addEventListener('click', function () { if (replayFn) replayFn(); });
 
   var timer;
   window.addEventListener('resize', function () { clearTimeout(timer); timer = setTimeout(rerender, 250); });

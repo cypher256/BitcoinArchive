@@ -324,21 +324,20 @@ const JPY_PER_USD = 160;
       en: {
         title: 'Bitcoin protocol forks and adjacent cryptocurrencies',
         sub: 'Each chain’s launch, fork lineage, and operational range on a true time axis. Active chains extend to the right edge; halted chains end at the date their network share collapsed. Vertical connectors at each fork point trace the parent chain. Chain rows and milestones link to the corresponding archive entry where one exists; chains without a dedicated entry (Bitcoin Classic, Bitcoin Unlimited, Bitcoin Gold) are display-only.',
-        today: 'today', active: 'active', halted: 'halted', replay: 'Replay',
+        today: 'today', active: 'active', halted: 'halted',
       },
       ja: {
         title: 'ビットコインのプロトコル分岐と隣接する暗号通貨',
         sub: '各チェーンのローンチ・分岐系譜・稼働期間を真の時間軸の上に示す。稼働中のチェーンは右端まで伸び、停止したチェーンはネットワーク占有率が崩落した日付で終わる。各分岐点の縦線が親チェーンを辿る。チェーン名とマイルストーンは、対応するアーカイブエントリーが存在する場合にリンクされる (Bitcoin Classic・Bitcoin Unlimited・ビットコインゴールドは専用エントリーがないため表示のみ)。',
-        today: '現在', active: '稼働中', halted: '停止', replay: 'リプレイ',
+        today: '現在', active: '稼働中', halted: '停止',
       },
-    } as Record<string, { title: string; sub: string; today: string; active: string; halted: string; replay: string }>)[lang];
+    } as Record<string, { title: string; sub: string; today: string; active: string; halted: string }>)[lang];
 
     host.innerHTML =
       '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p>' +
-      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + T_.replay + '</button></div>' +
       '<div class="figure-outer"><figure class="figure-block" data-kind="chart"><div class="ce-chart"></div></figure></div>';
 
-    mountForkGenealogy(host.querySelector('.ce-chart'), host.querySelector('.ba-replay-btn'), {
+    mountForkGenealogy(host.querySelector('.ce-chart'), {
       chains: CHAINS[lang],
       milestones: MILESTONES[lang],
       todayLabel: T_.today,
@@ -381,10 +380,9 @@ const JPY_PER_USD = 160;
 
     host.innerHTML =
       '<p class="ce-title">' + D.title + '</p><p class="ce-sub">' + D.subtitle + '</p>' +
-      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + (lang === 'ja' ? 'リプレイ' : 'Replay') + '</button></div>' +
       '<div class="ce-chart"></div>';
 
-    mountValueOverflowTimeline(host.querySelector('.ce-chart'), host.querySelector('.ba-replay-btn'), {
+    mountValueOverflowTimeline(host.querySelector('.ce-chart'), {
       hours: D.hours,
       events: D.events,
     });
@@ -422,10 +420,9 @@ const JPY_PER_USD = 160;
 
     host.innerHTML =
       '<p class="ce-title">' + D.title + '</p><p class="ce-sub">' + D.subtitle + '</p>' +
-      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + (lang === 'ja' ? 'リプレイ' : 'Replay') + '</button></div>' +
       '<div class="ce-chart"></div>';
 
-    mountGenesisBlockGap(host.querySelector('.ce-chart'), host.querySelector('.ba-replay-btn'), D);
+    mountGenesisBlockGap(host.querySelector('.ce-chart'), D);
   };
 
   // ===== drawer: lopp-hashrate-analysis (Satoshi's mining, actual vs potential) =====
@@ -527,8 +524,9 @@ const JPY_PER_USD = 160;
   };
 
   // ===== drawer: nonce-lsb (Patoshi nonce LSB distribution, Lerner 2013) =====
-  // Drawing lives in src/scripts/nonce-lsb.js (shared with
-  // PatoshiNonceLsb.astro, no longer used on any page after this migration).
+  // Drawing lives in src/scripts/nonce-lsb.js (originally the standalone
+  // PatoshiNonceLsb.astro component, removed once every page moved to this
+  // in-body drawer).
   DRAWERS['nonce-lsb'] = function (host: HTMLElement, lang: string) {
     var T_ = ({
       en: {
@@ -538,7 +536,6 @@ const JPY_PER_USD = 160;
         range0_9: 'Range 0–9: elevated (247–324)', range10_18: 'Range 10–18: near-zero gap',
         range19_58: 'Range 19–58: elevated (up to 201)', range59_255: 'Range 59–255: sparse',
         tooltipValue: 'LSB value', tooltipCount: 'Occurrences', expectedLabel: 'Expected if uniform',
-        replay: 'Replay',
       },
       ja: {
         title: 'Nonce LSB 分布（Patoshi ブロック）',
@@ -547,13 +544,11 @@ const JPY_PER_USD = 160;
         range0_9: '範囲 0–9: 高頻度（247–324）', range10_18: '範囲 10–18: ほぼゼロ（ギャップ）',
         range19_58: '範囲 19–58: 高頻度（最大 201）', range59_255: '範囲 59–255: まばら',
         tooltipValue: 'LSB 値', tooltipCount: '出現回数', expectedLabel: '均一分布の場合の期待値',
-        replay: 'リプレイ',
       },
     } as Record<string, any>)[lang];
 
     host.innerHTML =
       '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
-      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + T_.replay + '</button></div>' +
       '<div class="ce-chart"></div>' +
       '<div class="nlsb-legend">' +
       '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-patoshi"></span>' + T_.range0_9 + '</span>' +
@@ -562,12 +557,13 @@ const JPY_PER_USD = 160;
       '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-sparse"></span>' + T_.range59_255 + '</span>' +
       '</div>';
 
-    mountNonceLsb(host.querySelector('.ce-chart'), host.querySelector('.ba-replay-btn'), (nonceLsbData as any).distribution, T_);
+    mountNonceLsb(host.querySelector('.ce-chart'), (nonceLsbData as any).distribution, T_);
   };
 
   // ===== drawer: svn-committers (bar + timeline, the 4 SVN developers) =====
-  // Drawing lives in src/scripts/svn-committers.js (shared with
-  // SvnCommitters.astro, no longer used on any page after this migration).
+  // Drawing lives in src/scripts/svn-committers.js (originally the
+  // standalone SvnCommitters.astro component, removed once every page
+  // moved to this in-body drawer).
   DRAWERS['svn-committers'] = function (host: HTMLElement, lang: string) {
     var svnData = svnCommittersData as any;
     var totalRevisions: number = svnData.totalRevisions;
@@ -582,7 +578,7 @@ const JPY_PER_USD = 160;
         timeTitle: 'Commit Access Timeline',
         timeSub: 'Active period for each developer on the SourceForge SVN repository (2009–2011).',
         commits: 'commits', revisions: 'revisions', of: 'of',
-        tooltipFirst: 'First commit', tooltipLast: 'Last commit', replay: 'Replay',
+        tooltipFirst: 'First commit', tooltipLast: 'Last commit',
       },
       ja: {
         barTitle: 'SVN コミット数の分布（開発者別）',
@@ -590,13 +586,12 @@ const JPY_PER_USD = 160;
         timeTitle: 'コミットアクセスのタイムライン',
         timeSub: 'SourceForge SVN リポジトリにおける各開発者の活動期間（2009〜2011年）。',
         commits: 'コミット', revisions: 'リビジョン', of: '/',
-        tooltipFirst: '最初のコミット', tooltipLast: '最後のコミット', replay: 'リプレイ',
+        tooltipFirst: '最初のコミット', tooltipLast: '最後のコミット',
       },
     } as Record<string, any>)[lang];
 
     host.innerHTML =
       '<section class="ce-section"><p class="ce-title">' + T_.barTitle + '</p><p class="ce-sub">' + T_.barSub + '</p>' +
-      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + T_.replay + '</button></div>' +
       '<div class="ce-chart svnc-bar"></div></section>' +
       '<section class="ce-section"><p class="ce-title">' + T_.timeTitle + '</p><p class="ce-sub">' + T_.timeSub + '</p>' +
       '<div class="ce-chart svnc-timeline"></div></section>';
@@ -604,7 +599,6 @@ const JPY_PER_USD = 160;
     mountSvnCommitters(
       host.querySelector('.svnc-bar'),
       host.querySelector('.svnc-timeline'),
-      host.querySelector('.ba-replay-btn'),
       svnData.committers,
       T_,
       totalRevisions
@@ -663,10 +657,11 @@ const JPY_PER_USD = 160;
   };
 
   // ===== drawer: extranonce-scatter (Patoshi vs non-Patoshi, illustrative) =====
-  // Drawing lives in src/scripts/extranonce-scatter.js (shared with
-  // PatoshiExtraNonce.astro, no longer used on any page after this
-  // migration). Data is the frozen illustrative reconstruction in
-  // src/data/patoshi/extranonce-scatter.json (see that file's description).
+  // Drawing lives in src/scripts/extranonce-scatter.js (originally the
+  // standalone PatoshiExtraNonce.astro component, removed once every page
+  // moved to this in-body drawer). Data is the frozen illustrative
+  // reconstruction in src/data/patoshi/extranonce-scatter.json (see that
+  // file's description).
   DRAWERS['extranonce-scatter'] = function (host: HTMLElement, lang: string) {
     var T_ = ({
       en: {
@@ -675,7 +670,6 @@ const JPY_PER_USD = 160;
         xLabel: 'Block number', yLabel: 'ExtraNonce (normalized)',
         patoshi: 'Patoshi blocks (~22,000 blocks)', nonPatoshi: 'Non-Patoshi blocks',
         note: 'Illustrative reconstruction — based on paper findings, not raw blockchain data',
-        replay: 'Replay',
       },
       ja: {
         title: 'マイニング初年度の ExtraNonce パターン',
@@ -683,13 +677,11 @@ const JPY_PER_USD = 160;
         xLabel: 'ブロック番号', yLabel: 'ExtraNonce（正規化）',
         patoshi: 'Patoshi ブロック（約 22,000 ブロック）', nonPatoshi: '非 Patoshi ブロック',
         note: '概念図 — 論文の知見に基づく再現であり、生のブロックチェーンデータではない',
-        replay: 'リプレイ',
       },
     } as Record<string, any>)[lang];
 
     host.innerHTML =
       '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
-      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + T_.replay + '</button></div>' +
       '<div class="ce-chart"></div>' +
       '<div class="nlsb-legend">' +
       '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-en-patoshi"></span>' + T_.patoshi + '</span>' +
@@ -698,7 +690,7 @@ const JPY_PER_USD = 160;
       '<p class="ce-note">' + T_.note + '</p>';
 
     var data = extranonceScatterData as any;
-    mountExtranonceScatter(host.querySelector('.ce-chart'), host.querySelector('.ba-replay-btn'), data.patoshiPoints, data.nonPatoshiPoints, T_);
+    mountExtranonceScatter(host.querySelector('.ce-chart'), data.patoshiPoints, data.nonPatoshiPoints, T_);
   };
 
   // ===== drawer: nls-exchange-rate (cost-of-production formula diagram) =====
@@ -740,11 +732,11 @@ const JPY_PER_USD = 160;
   };
 
   // ===== drawer: satoshi-activity-timeline (3-panel: swimlane, recipients, cumulative) =====
-  // Drawing lives in src/scripts/satoshi-activity-timeline.js (shared with
-  // SatoshiActivityTimeline.astro, no longer used on any page after this
-  // migration -- kept only as a shell around the shared module in case it's
-  // reused elsewhere later). Labels/milestones/recipients below are the same
-  // bilingual catalog that was in the component's own frontmatter.
+  // Drawing lives in src/scripts/satoshi-activity-timeline.js (originally
+  // the standalone SatoshiActivityTimeline.astro component, removed once
+  // every page moved to this in-body drawer). Labels/milestones/recipients
+  // below are the same bilingual catalog that was in the component's own
+  // frontmatter.
   DRAWERS['satoshi-activity-timeline'] = function (host: HTMLElement, lang: string) {
     var linkBase = import.meta.env.BASE_URL.replace(/\/?$/, '/') + (lang === 'ja' ? 'ja/' : '') + 'entries/';
     var channelOrder = [
@@ -829,7 +821,6 @@ const JPY_PER_USD = 160;
 
     host.innerHTML =
       '<p class="ce-title">' + title + '</p><p class="ce-sub">' + subtitle + '</p>' +
-      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + (lang === 'ja' ? 'リプレイ' : 'Replay') + '</button></div>' +
       '<section class="ce-section"><p class="ce-title">' + l.swimlaneTitle + '</p><p class="ce-sub">' + l.swimlaneSub + '</p>' +
       '<div class="ce-chart sat-swimlane"></div></section>' +
       '<section class="ce-section"><p class="ce-title">' + l.recipientsTitle + '</p><p class="ce-sub">' + l.recipientsSub + '</p>' +
@@ -842,7 +833,6 @@ const JPY_PER_USD = 160;
       host.querySelector('.sat-swimlane'),
       host.querySelector('.sat-recipients'),
       host.querySelector('.sat-cumulative'),
-      host.querySelector('.ba-replay-btn'),
       {
         events: events,
         channelOrder: channelOrder,
