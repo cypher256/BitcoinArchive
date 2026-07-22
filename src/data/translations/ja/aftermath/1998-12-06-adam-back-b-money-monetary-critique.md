@@ -1,5 +1,5 @@
 ---
-title: "「価値を創造するには CPU 時間を燃やす」 — アダム・バックが b-money に挙げた 7 つの貨幣設計論点"
+title: "価値を創造するなら CPU 時間を燃やせ — アダム・バックが b-money に挙げた 7 つの貨幣設計論点"
 date: 1998-12-06T00:48:42Z
 type: "article"
 source: "cypherpunks-mailing-list"

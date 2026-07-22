@@ -1,5 +1,5 @@
 ---
-title: "\"To create value you burn CPU time\" — Adam Back's seven monetary-design issues in b-money"
+title: "Burn CPU time to create value — Adam Back's seven monetary-design issues in b-money"
 date: 1998-12-06T00:48:42Z
 type: "article"
 source: "cypherpunks-mailing-list"
