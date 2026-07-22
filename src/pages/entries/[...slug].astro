@@ -5,13 +5,10 @@ import SourceCitation from '../../components/SourceCitation.astro';
 import RelatedEntries from '../../components/RelatedEntries.astro';
 import CommentaryLinks from '../../components/CommentaryLinks.astro';
 import SatoshiCodeAnalysis from '../../components/SatoshiCodeAnalysis.astro';
-import ValueOverflowTimeline from '../../components/ValueOverflowTimeline.astro';
-import GenesisBlockGap from '../../components/GenesisBlockGap.astro';
 import PlosPatoshiAnomaly from '../../components/PlosPatoshiAnomaly.astro';
 import GitHubMigrationTimeline from '../../components/GitHubMigrationTimeline.astro';
 import SatoshiHoldingsComparison from '../../components/SatoshiHoldingsComparison.astro';
 import WhaleAlertFortune from '../../components/WhaleAlertFortune.astro';
-import BitcoinForkGenealogy from '../../components/BitcoinForkGenealogy.astro';
 import DesignSeriesNav from '../../components/DesignSeriesNav.astro';
 import ParentLink from '../../components/ParentLink.astro';
 import { DESIGN_SERIES } from '../../data/design-series';
@@ -217,18 +214,6 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
         <span class="editorial-note-label">{EDITORIAL_LABELS['editor:en']}</span>
         <span class="editorial-note-body" set:html={renderEditorNote(entry.data.editorNote)}></span>
       </aside>
-    )}
-
-    {entry.id.includes('value-overflow-incident') && (
-      <ValueOverflowTimeline lang={lang} />
-    )}
-
-    {entry.id.includes('genesis-block-5-day-mystery') && (
-      <GenesisBlockGap lang={lang} />
-    )}
-
-    {entry.id.includes('bitcoin-fork-and-altcoin-genealogy') && (
-      <BitcoinForkGenealogy lang={lang} />
     )}
 
     {entry.data.type === 'design' && (

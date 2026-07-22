@@ -88,6 +88,8 @@ Every protocol fork of Bitcoin that produced a chain still producing blocks toda
 
 The interactive chart at the top of this entry plots every listed chain on a true time axis: the launch date, the parent chain it forked from, the operational range, and whether the chain is still producing blocks today or halted within months of launch. Each chain row in the chart links to the corresponding archive entry where one exists. The §1 and §2 tables below record each chain's per-attribute status (block-size cap, hashrate share, governance, etc.).
 
+<!-- chart: fork-genealogy -->
+
 ## 1. Bitcoin protocol forks
 
 Hard forks of the Bitcoin protocol that produced a separate chain. Soft forks (SegWit, Taproot) that activated on the main chain are not listed here.

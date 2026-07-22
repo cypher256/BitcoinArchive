@@ -197,7 +197,7 @@
      hues are picked to stay distinguishable while keeping a
      restrained editorial register (no electric oranges /
      hot magentas). Nine slots cover the wider charts
-     (SatoshiActivityTimeline 9 channels, BitcoinForkGenealogy
+     (SatoshiActivityTimeline 9 channels, fork-genealogy chart
      10 chains). ---- */
   --chart-color-1: #1f3a5f; /* navy (accent) */
   --chart-color-2: #2563eb; /* link blue */
@@ -1126,7 +1126,8 @@ th {
    Replaces the prior .mermaid-scroll / .table-scroll / .chart-scroll
    trio. data-kind distinguishes type for kind-specific selectors.
    Applied by rehype-mermaid-wrapper.mjs, rehype-table-wrapper.mjs,
-   and per-component for d3 (e.g. BitcoinForkGenealogy.astro).
+   and per-drawer for d3 chart embeds (e.g. the fork-genealogy
+   drawer in ChartEmbedRuntime.astro).
    See STYLE_GUIDE.md § Layout Width Policy → Figure overflow.
 
    Structure:

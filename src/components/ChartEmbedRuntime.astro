@@ -17,6 +17,8 @@ import { mount as mountOwnershipTreemap } from '../scripts/ownership-treemap.js'
 import { mount as mountPublicCompaniesBar } from '../scripts/public-companies-bar.js';
 import { mount as mountStylometricHistogram } from '../scripts/stylometric-distance-histogram.js';
 import { mount as mountForkGenealogy } from '../scripts/fork-genealogy.js';
+import { mount as mountValueOverflowTimeline } from '../scripts/value-overflow-timeline.js';
+import { mount as mountGenesisBlockGap } from '../scripts/genesis-block-gap.js';
 import { mount as mountLoppHashrate } from '../scripts/lopp-hashrate-analysis.js';
 import { mount as mountSupplyCurveComparison } from '../scripts/supply-curve-comparison.js';
 import { mount as mountSatoshiActivityTimeline } from '../scripts/satoshi-activity-timeline.js';
@@ -266,13 +268,14 @@ const JPY_PER_USD = 160;
   };
 
   // ===== drawer: fork-genealogy (Bitcoin forks and adjacent cryptocurrencies) =====
-  // Drawing lives in src/scripts/fork-genealogy.js (shared with
-  // BitcoinForkGenealogy.astro, used unchanged at the top of
-  // bitcoin-fork-and-altcoin-genealogy — that placement is already correct).
-  // This second, in-body instance is for satoshi-design-vs-current-reality,
-  // where the chart belongs next to the Governance section's fork discussion
-  // rather than at a fixed top-of-page slot. Data below is identical to the
-  // component's own frontmatter (same chain/milestone catalog).
+  // Drawing lives in src/scripts/fork-genealogy.js. Used in-body by two
+  // entries: bitcoin-fork-and-altcoin-genealogy (right after its own intro
+  // paragraph, which narrates the chart, so it still reads as leading the
+  // entry -- now below the hero image and lede rather than pinned ahead of
+  // them) and satoshi-design-vs-current-reality (next to the Governance
+  // section's fork discussion). Content is identical in both places (same
+  // chain/milestone catalog) -- only the surrounding prose differs, which is
+  // why one marker name serves both.
   DRAWERS['fork-genealogy'] = function (host: HTMLElement, lang: string) {
     var linkBase = import.meta.env.BASE_URL.replace(/\/?$/, '/') + (lang === 'ja' ? 'ja/' : '') + 'entries/';
     var CHAINS: Record<string, any[]> = {
@@ -343,6 +346,86 @@ const JPY_PER_USD = 160;
       statusHalted: T_.halted,
       linkBase: linkBase,
     });
+  };
+
+  // ===== drawer: value-overflow-timeline (discovery to resolution, <19h) =====
+  // Drawing lives in src/scripts/value-overflow-timeline.js, extracted from
+  // the former ValueOverflowTimeline.astro (was pinned ahead of the entry's
+  // hero image and prose; now renders at the <!-- chart: NAME --> marker
+  // position instead).
+  DRAWERS['value-overflow-timeline'] = function (host: HTMLElement, lang: string) {
+    var D = ({
+      en: {
+        title: 'Incident Timeline',
+        subtitle: 'From discovery to resolution — the most serious crisis in Bitcoin\'s early history, resolved in under 19 hours.',
+        hours: 'h',
+        events: [
+          { time: '18:08', offset: 0, label: 'Jeff Garzik discovers anomaly in Block 74638', type: 'alert' },
+          { time: '~18:30', offset: 0.4, label: '184,467,440,737 BTC confirmed — 9,000× total supply', type: 'crisis' },
+          { time: '~23:00', offset: 4.9, label: 'Satoshi publishes Bitcoin v0.3.10 with fix', type: 'fix' },
+          { time: '~09:00+1', offset: 14.9, label: 'Corrected chain overtakes invalid chain at Block 74691', type: 'resolved' },
+        ],
+      },
+      ja: {
+        title: 'インシデントのタイムライン',
+        subtitle: '発見から解決まで — ビットコイン初期史上最も深刻な危機が 19時間以内に解決された。',
+        hours: '時間',
+        events: [
+          { time: '18:08', offset: 0, label: 'ジェフ・ガージックがブロック 74638 の異常を発見', type: 'alert' },
+          { time: '~18:30', offset: 0.4, label: '184,467,440,737 BTC 確認 — 総供給量の 9,000倍', type: 'crisis' },
+          { time: '~23:00', offset: 4.9, label: 'サトシが Bitcoin v0.3.10（修正版）を公開', type: 'fix' },
+          { time: '~09:00+1', offset: 14.9, label: '修正チェーンがブロック 74691 で不正チェーンを追い越す', type: 'resolved' },
+        ],
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + D.title + '</p><p class="ce-sub">' + D.subtitle + '</p>' +
+      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + (lang === 'ja' ? 'リプレイ' : 'Replay') + '</button></div>' +
+      '<div class="ce-chart"></div>';
+
+    mountValueOverflowTimeline(host.querySelector('.ce-chart'), host.querySelector('.ba-replay-btn'), {
+      hours: D.hours,
+      events: D.events,
+    });
+  };
+
+  // ===== drawer: genesis-block-gap (Block 0 to Block 1, ~5d8h vs ~10min) =====
+  // Drawing lives in src/scripts/genesis-block-gap.js, extracted from the
+  // former GenesisBlockGap.astro (was pinned ahead of the entry's hero image
+  // and prose; now renders at the <!-- chart: NAME --> marker position).
+  DRAWERS['genesis-block-gap'] = function (host: HTMLElement, lang: string) {
+    var D = ({
+      en: {
+        title: 'The 5-Day Gap',
+        subtitle: 'Block 0 (Genesis) to Block 1 — approximately 5 days and 8 hours vs. the expected ~10 minutes.',
+        block0: 'Genesis Block (Block 0)',
+        block0time: 'Jan 3, 2009 18:15:05 UTC',
+        block1: 'Block 1',
+        block1time: 'Jan 9, 2009 02:54:25 UTC',
+        gap: '5 days, 8 hours, 39 minutes',
+        expected: 'Expected: ~10 minutes',
+        ratio: '~750× longer than expected',
+      },
+      ja: {
+        title: '5日間の空白',
+        subtitle: 'ブロック 0（ジェネシス）からブロック 1 まで — 予想される約 10分に対し、約 5日と 8時間。',
+        block0: 'ジェネシスブロック（ブロック 0）',
+        block0time: '2009年1月3日 18:15:05 UTC',
+        block1: 'ブロック 1',
+        block1time: '2009年1月9日 02:54:25 UTC',
+        gap: '5日 8時間 39分',
+        expected: '期待値: 約 10分',
+        ratio: '期待値の約 750倍',
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + D.title + '</p><p class="ce-sub">' + D.subtitle + '</p>' +
+      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + (lang === 'ja' ? 'リプレイ' : 'Replay') + '</button></div>' +
+      '<div class="ce-chart"></div>';
+
+    mountGenesisBlockGap(host.querySelector('.ce-chart'), host.querySelector('.ba-replay-btn'), D);
   };
 
   // ===== drawer: lopp-hashrate-analysis (Satoshi's mining, actual vs potential) =====

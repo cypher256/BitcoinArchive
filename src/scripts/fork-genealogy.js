@@ -1,11 +1,9 @@
 /* Bitcoin protocol forks and adjacent cryptocurrencies -- a true-time-axis
-   family tree. Extracted from src/components/BitcoinForkGenealogy.astro so a
-   second, differently-placed instance (satoshi-design-vs-current-reality)
-   can be embedded in-body via ChartEmbedRuntime instead of pinned to a fixed
-   slot. The bitcoin-fork-and-altcoin-genealogy entry's own instance, where
-   the intro paragraph explicitly narrates "the interactive chart at the top
-   of this entry," stays as the BitcoinForkGenealogy.astro component
-   (unchanged) -- that placement is correct as-is.
+   family tree. Originally the standalone BitcoinForkGenealogy.astro
+   component; extracted so every instance renders in-body via
+   ChartEmbedRuntime's <!-- chart: fork-genealogy --> marker instead of being
+   pinned to a fixed slot ahead of an entry's own hero image and prose. Used
+   by bitcoin-fork-and-altcoin-genealogy and satoshi-design-vs-current-reality.
 
    Takes the container element directly (not a DOM id lookup) so the module
    has no assumption about how many instances exist on a page. */

@@ -2828,7 +2828,6 @@ Existing examples (browse the directory for current state):
 - `StylometricDistanceHistogram.astro` — author distribution with named
   candidates plotted in
 - `LoppHashrateAnalysis.astro` — hashrate / nonce-LSB time series
-- `ValueOverflowTimeline.astro` — incident-event time series
 - `SatoshiCodeAnalysis.astro` — comment-density and code-fingerprint
   metrics
 
