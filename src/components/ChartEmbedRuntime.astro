@@ -803,6 +803,7 @@ const JPY_PER_USD = 160;
         topN: race.topN || 8,
         format: isBtc ? (lang === 'ja' ? 'btc-ja' : 'btc') : (lang === 'ja' ? 'jpy' : 'usd-b'),
         jpyRate: !isBtc && lang === 'ja' ? JPY_PER_USD : null,
+        scale: race.scale,
         replayBtn: host.querySelector('.ba-replay-btn'),
       });
     };

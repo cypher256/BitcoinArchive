@@ -9,7 +9,7 @@
    optional classic script the caller is responsible for loading. */
 import { select } from 'd3-selection';
 import { max } from 'd3-array';
-import { scaleLinear } from 'd3-scale';
+import { scaleLinear, scaleSqrt } from 'd3-scale';
 
 function lerp(a, b, t) { return a + (b - a) * t; }
 
@@ -61,6 +61,12 @@ export function mount(container, opts) {
     : opts.format === 'btc-ja' ? btcJa
     : usdB;
   var dateFmt = typeof opts.dateFormat === 'function' ? opts.dateFormat : function (d) { return String(Math.round(d)); };
+  // Default is linear (bar length reads as literal magnitude, the honest
+  // reading for a race chart). 'sqrt' is an opt-in per race: it compresses
+  // a single outlier series (e.g. gold dwarfing every other asset) enough
+  // to make the rest of the field legible, while still handling zero values
+  // and preserving more of the magnitude gap than a log scale would.
+  var scaleFn = opts.scale === 'sqrt' ? scaleSqrt : scaleLinear;
   var N = dates.length;
   if (!N || !series.length) return function () {};
 
@@ -143,7 +149,7 @@ export function mount(container, opts) {
     });
     var visible = rows.filter(function (r) { return r.v > 0 && r.rp < topN - 0.001; });
     var maxV = max(visible, function (r) { return r.v; }) || 1;
-    var x = scaleLinear().domain([0, maxV]).range([0, iw]);
+    var x = scaleFn().domain([0, maxV]).range([0, iw]);
 
     var sel = barG.selectAll('g.ba-race-bar').data(visible, function (r) { return r.s.name; });
     sel.exit().remove();

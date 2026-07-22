@@ -34,6 +34,7 @@ const chartData = {
   topN: race.topN || 8,
   format: isBtc ? (isJa ? 'btc-ja' : 'btc') : (isJa ? 'jpy' : 'usd-b'),
   jpyRate: !isBtc && isJa ? JPY_PER_USD : null,
+  scale: race.scale,
 };
 const containerId = `race-${raceId}`;
 const note = !isBtc && isJa ? `${l.note}（1ドル＝${JPY_PER_USD}円の固定換算。各年の実勢レートではない）` : l.note;
@@ -84,6 +85,7 @@ import { mount } from '../scripts/bar-chart-race.js';
     topN?: number;
     format?: string;
     jpyRate?: number | null;
+    scale?: string;
   };
   var wrap = container.closest('.ba-race');
 
@@ -93,6 +95,7 @@ import { mount } from '../scripts/bar-chart-race.js';
     topN: data.topN,
     format: data.format,
     jpyRate: data.jpyRate,
+    scale: data.scale,
     replayBtn: wrap ? wrap.querySelector('[data-replay]') : null,
   });
 })();

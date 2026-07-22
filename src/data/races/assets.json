@@ -1,5 +1,6 @@
 {
   "topN": 10,
+  "scale": "sqrt",
   "labels": {
     "en": {
       "title": "Bitcoin among the world’s largest assets (2013 → 2026)",
