@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import { loadDefaultJapaneseParser } from 'budoux';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import NetworkGraph from '../../components/NetworkGraph.astro';
 import CharacterIntro from '../../components/CharacterIntro.astro';
@@ -10,6 +11,12 @@ import heroImage from '../../assets/images/homepage-hero.jpg';
 
 const lang = 'ja';
 const t = useTranslations(lang);
+// Japanese has no spaces to mark word boundaries, so the browser's default
+// wrapping can split a break-eligible span mid-phrase (e.g. between the
+// verb stem and its trailing conjugation) on narrow viewports. budoux marks
+// safe phrase-boundary break points instead -- same fix already used for
+// entry-page h1 titles (src/pages/ja/entries/[...slug].astro).
+const descriptionHtml = loadDefaultJapaneseParser().translateHTMLString(t('site.description'));
 const jaEntries = await getDisplayEntries(lang);
 const enEntries = await getDisplayEntries('en');
 const entries = jaEntries.length > 0 ? jaEntries : enEntries;
@@ -137,7 +144,7 @@ function tagWeight(count: number, max: number): number {
     <section class="hero">
       <h1>Bitcoin Institute</h1>
       <p class="subtitle">{t('site.subtitle')}</p>
-      <p class="description" set:html={t('site.description')} />
+      <p class="description" set:html={descriptionHtml} />
       <Image
         class="hero-image"
         src={heroImage}
@@ -622,6 +629,14 @@ function tagWeight(count: number, max: number): number {
   }
 
   .description { white-space: nowrap; }
+  /* budoux wraps its output in a span with an inline
+     `overflow-wrap: anywhere`, which would let the browser break outside
+     the phrase boundaries budoux just computed. Override it so only
+     budoux's own zero-width-space markers (combined with the
+     white-space rules below) decide where lines break. */
+  .description > :global(span) {
+    overflow-wrap: normal !important;
+  }
   @media (max-width: 640px) {
     .description,
     .hero-demo .desc { white-space: normal; }
