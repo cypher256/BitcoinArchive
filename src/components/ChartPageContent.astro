@@ -28,7 +28,7 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
 
   <section class="detail-section">
     <h2>{t('chart.halvings' as any)}</h2>
-    <div class="halvings-cards">
+    <div class="halvings-cards figure-block" data-kind="table">
       {halvings.map((h: any) => (
         <div class:list={['halving-card', { estimated: h.estimated }]}>
           <div class="halving-card-reward">{h.reward} <span>BTC</span></div>
@@ -121,13 +121,29 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
     padding-bottom: 0.5rem;
   }
 
-  /* Halvings cards */
+  /* Halvings cards: single row, horizontal scroll instead of wrapping.
+     A wrapping grid/flex layout strands a lone trailing card whenever
+     the item count doesn't divide evenly into the fitted column count
+     (7 halvings, 6 per row at wide viewports leaves one card alone on
+     the last row) -- centering that lone card independently of the
+     columns above it just reads as a stray floating box, not fixed.
+     One row that scrolls sidesteps the problem entirely: there is never
+     a partial row. Reuses the site's shared .figure-block[data-kind]
+     mechanism (overflow-x: auto sizing + BaseLayout's scroll-fade cue)
+     so this gets the same horizontal-scroll affordance as tables and
+     mermaid diagrams, without a separate implementation. The figure-block
+     chrome (border/background/padding) is reset below since each card
+     already carries its own border -- keeping both would double-box. */
   .halvings-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    display: flex;
+    flex-wrap: nowrap;
     gap: 0.75rem;
+    border: none;
+    background: none;
+    padding: 0;
   }
   .halving-card {
+    flex: 0 0 180px;
     padding: 1rem;
     border-radius: 8px;
     border: 1px solid var(--color-border);
@@ -264,10 +280,10 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
 
   @media (max-width: 600px) {
     .halvings-cards {
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       gap: 0.5rem;
     }
     .halving-card {
+      flex-basis: 140px;
       padding: 0.75rem 0.5rem;
     }
     .halving-card-reward {
