@@ -4,7 +4,6 @@ import { loadDefaultJapaneseParser } from 'budoux';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import NetworkGraph from '../../components/NetworkGraph.astro';
 import CharacterIntro from '../../components/CharacterIntro.astro';
-import ShareButton from '../../components/ShareButton.astro';
 import { useTranslations, getDisplayEntries, localePath, translateParticipantName, translateTag, absoluteUrl } from '../../i18n/utils';
 import { computeGraphData } from '../../lib/graphData';
 import { getHomeAnalyses } from '../../lib/homeAnalyses';
@@ -146,9 +145,6 @@ function tagWeight(count: number, max: number): number {
       <h1>Bitcoin Institute</h1>
       <p class="subtitle">{t('site.subtitle')}</p>
       <p class="description" set:html={descriptionHtml} />
-      <div class="hero-share">
-        <ShareButton lang={lang} url={absoluteUrl('/', lang)} title={`${t('site.title')} - ${t('site.subtitle')}`} variant="onLight" />
-      </div>
       <Image
         class="hero-image"
         src={heroImage}
@@ -432,9 +428,6 @@ function tagWeight(count: number, max: number): number {
     color: var(--color-text-muted);
     max-width: 780px;
     margin: 1rem auto 0;
-  }
-  .hero-share {
-    margin: 1rem 0 0;
   }
 
   /* Stats Bar */

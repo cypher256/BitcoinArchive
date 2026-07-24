@@ -1,5 +1,6 @@
 ---
 import LanguageSwitch from './LanguageSwitch.astro';
+import ShareButton from './ShareButton.astro';
 import { useTranslations, localePath } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
@@ -17,6 +18,12 @@ const t = useTranslations(lang);
       <a href={localePath('/', lang)} class="site-title">
         <strong>{t('site.title')}</strong>
       </a>
+      {/* Mobile-only share button. The nav row below collapses behind the
+          hamburger under 768px, so the nav copy would be unreachable
+          without opening the menu first; this one sits in the always-
+          visible title row instead. Exactly one of the two is displayed
+          at any width (see .share-button--mobile / --desktop below). */}
+      <ShareButton lang={lang} class="share-button--mobile" />
       <button
         type="button"
         class="mobile-menu-toggle"
@@ -77,6 +84,7 @@ const t = useTranslations(lang);
           <path d="M8 21h8M12 17v4" />
         </svg>
       </button>
+      <ShareButton lang={lang} class="share-button--desktop" />
     </nav>
   </div>
 </header>

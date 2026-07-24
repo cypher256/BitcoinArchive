@@ -1,20 +1,31 @@
 ---
-// Single share button using the Web Share API (native OS share sheet on
-// mobile and supporting desktop browsers); falls back to copying the link
-// to the clipboard where navigator.share is unavailable (most desktop
-// browsers). Replaces the old per-platform button row pattern, which has
-// lost most of its value now that OS-level share sheets are ubiquitous.
+// Share button using the Web Share API (native OS share sheet on mobile
+// and supporting desktop browsers); falls back to copying the link to the
+// clipboard where navigator.share is unavailable or fails. Replaces the
+// old per-platform button row pattern, which has lost most of its value
+// now that OS-level share sheets are ubiquitous.
+//
+// Lives in the site header (Header.astro) so every page gets it from one
+// place — the archive has 30+ page templates and per-page placement both
+// missed pages (novel, chart, all the index/listing pages) and fought
+// each page's own hero layout.
+//
+// No url/title props: the click handler reads the page's own
+// `<link rel="canonical">` (BaseHead emits it on every page) and
+// `document.title`, so a new page template gets a correct share target
+// with no wiring. Falls back to location.href if canonical is absent.
 import { useTranslations } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
 interface Props {
   lang: Lang;
-  url: string;
-  title: string;
-  variant?: 'onDark' | 'onLight';
+  /** Extra class for breakpoint visibility — Header renders one instance
+      for the desktop nav row and one beside the mobile hamburger, since
+      the nav row itself collapses behind the hamburger under 768px. */
+  class?: string;
 }
 
-const { lang, url, title, variant = 'onLight' } = Astro.props;
+const { lang, class: extraClass = '' } = Astro.props;
 const t = useTranslations(lang);
 const labelShare = t('share.button');
 const labelCopied = t('share.copied');
@@ -23,10 +34,8 @@ const labelFailed = t('share.copyFailed');
 
 <button
   type="button"
-  class={`share-button share-button--${variant}`}
+  class={`share-button ${extraClass}`.trim()}
   data-share-button
-  data-share-url={url}
-  data-share-title={title}
   data-label-share={labelShare}
   data-label-copied={labelCopied}
   data-label-failed={labelFailed}
@@ -40,83 +49,102 @@ const labelFailed = t('share.copyFailed');
     <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
     <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
   </svg>
-  <span class="share-label" data-share-label>{labelShare}</span>
 </button>
+{/* Dedicated live region for the copy outcome. A live region on the button
+    itself, with only its aria-label changing, is not reliably announced by
+    every screen reader — an attribute change is not a text-content change.
+    This element is a sibling (not a child) so its text never enters the
+    button's accessible name, and the script updates it as plain text. */}
+<span class="share-status" role="status" data-share-status></span>
 
 <style>
+  /* Matches .mode-toggle in Header.astro — same box, same hover and
+     focus treatment, so the header's trailing icon buttons read as one
+     set rather than two separately-styled controls. */
   .share-button {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
+    justify-content: center;
     flex-shrink: 0;
     background: transparent;
-    border-radius: 4px;
-    padding: 0.35rem 0.6rem;
-    line-height: 1;
-    cursor: pointer;
-    font-family: var(--font-heading);
-    font-size: 0.85rem;
-    transition: color 0.15s, border-color 0.15s, background 0.15s;
-  }
-  .share-button--onLight {
     border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.3rem 0.4rem;
+    line-height: 0;
     color: var(--color-text-muted);
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
   }
-  .share-button--onLight:hover {
+  .share-button:hover {
     border-color: var(--color-accent);
     color: var(--color-accent);
-  }
-  /* onDark: sits on the fixed atmosphere-banner backdrop (entry-title-row),
-     whose colors are constants regardless of site theme — see that
-     component's own comment on why. Mirror the same fixed-color approach
-     here rather than reading --color-* tokens that assume a light/dark
-     page background. */
-  .share-button--onDark {
-    border: 1px solid rgba(245, 244, 241, 0.4);
-    color: #f5f4f1;
-  }
-  .share-button--onDark:hover {
-    border-color: #f5f4f1;
-    background: rgba(245, 244, 241, 0.15);
   }
   .share-button:focus-visible {
     outline: 2px solid var(--color-link);
     outline-offset: 2px;
   }
-  @media (max-width: 480px) {
-    .share-label {
+  /* Breakpoint visibility for Header's two instances. These rules live
+     here, not in Header.astro: Astro scopes a component's styles to that
+     component's own elements, and this <button> carries ShareButton's
+     scope id — a `.share-button--mobile` rule written in Header would
+     never match it. The 768px split mirrors Header's own nav-collapse
+     breakpoint. */
+  .share-button--mobile {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .share-button--mobile {
+      display: inline-flex;
+      /* Sits between the site title and the hamburger; the hamburger keeps
+         its own left gap via the header-bar flex gap. */
+      margin-left: auto;
+      margin-right: 0.5rem;
+    }
+    .share-button--desktop {
       display: none;
     }
-    .share-button {
-      padding: 0.4rem;
-    }
   }
-  /* onDark lives inside .entry-title-row, whose mobile layout floats the
-     avatar left so the title wraps around it (see global.css comment on
-     `.container .entry-header .entry-title-row`). Below 767px this button
-     is no longer a flex sibling of a nowrap row — it falls into normal
-     block flow after the <h1> and would otherwise land on its own line
-     under the wrapped title. Float it right so it takes the same
-     avatar-left/button-right wrap the title already gets. */
-  @media (max-width: 767px) {
-    .share-button--onDark {
-      float: right;
-      margin: 0.15rem 0 0.3rem 0.9rem;
-    }
+  /* Copy-fallback feedback. The button is icon-only, so the outcome shows
+     as a brief accent/dim tint plus the aria-label update the script
+     makes (announced via aria-live) rather than a text swap. */
+  .share-button[data-share-state='copied'] {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+  .share-button[data-share-state='failed'] {
+    opacity: 0.55;
+  }
+  /* Visually hidden, still announced. Not `display: none` / `visibility:
+     hidden` — both remove the element from the accessibility tree, which
+     would stop the live region from announcing anything. */
+  .share-status {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
   }
 </style>
 
 <script>
-  // Per-button pending-timer registry so a second click within the 2s
-  // "copied" window cancels the first timer instead of racing it back
-  // to the original label early.
+  // Per-button pending-timer registry so a second click within the
+  // feedback window cancels the first timer instead of racing it back to
+  // the resting state early.
   const revertTimers = new WeakMap<HTMLButtonElement, number>();
 
+  function shareUrl(): string {
+    const canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    return canonical?.href || location.href;
+  }
+
   async function copyLinkFallback(btn: HTMLButtonElement, url: string) {
-    const label = btn.querySelector('[data-share-label]');
-    const originalText = btn.getAttribute('data-label-share');
-    const copiedText = btn.getAttribute('data-label-copied');
-    const failedText = btn.getAttribute('data-label-failed');
+    const restingLabel = btn.getAttribute('data-label-share');
+    const copiedLabel = btn.getAttribute('data-label-copied');
+    const failedLabel = btn.getAttribute('data-label-failed');
     const pending = revertTimers.get(btn);
     if (pending) window.clearTimeout(pending);
 
@@ -129,12 +157,20 @@ const labelFailed = t('share.copyFailed');
       // Non-HTTPS context, missing permission, or no Clipboard API —
       // still tell the user it didn't work rather than staying silent.
     }
-    if (label) {
-      const text = succeeded ? copiedText : failedText;
-      if (text) label.textContent = text;
-    }
+    btn.setAttribute('data-share-state', succeeded ? 'copied' : 'failed');
+    const outcomeLabel = succeeded ? copiedLabel : failedLabel;
+    if (outcomeLabel) btn.setAttribute('aria-label', outcomeLabel);
+    // The paired live region is this button's next sibling (see the markup
+    // comment). Updating its text content — not just an attribute — is what
+    // screen readers announce reliably.
+    const status = btn.nextElementSibling;
+    const isStatusRegion = status instanceof HTMLElement && status.hasAttribute('data-share-status');
+    if (isStatusRegion && outcomeLabel) status.textContent = outcomeLabel;
+
     const timer = window.setTimeout(() => {
-      if (label && originalText) label.textContent = originalText;
+      btn.removeAttribute('data-share-state');
+      if (restingLabel) btn.setAttribute('aria-label', restingLabel);
+      if (isStatusRegion) status.textContent = '';
       revertTimers.delete(btn);
     }, 2000);
     revertTimers.set(btn, timer);
@@ -146,8 +182,8 @@ const labelFailed = t('share.copyFailed');
       if (btn.dataset.shareInit) return;
       btn.dataset.shareInit = 'true';
       btn.addEventListener('click', async () => {
-        const url = btn.getAttribute('data-share-url') || location.href;
-        const title = btn.getAttribute('data-share-title') || document.title;
+        const url = shareUrl();
+        const title = document.title;
         if (navigator.share) {
           try {
             await navigator.share({ title, url });
