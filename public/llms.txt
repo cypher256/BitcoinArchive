@@ -6,13 +6,13 @@ Bitcoin Institute is a bilingual (English/Japanese) reference site that collects
 
 ## Contents
 
-The archive contains 3,200+ entries organized by type:
+The archive contains 3,300+ entries organized by type:
 
 - **Forum Posts** (2,616): BitcoinTalk (2,545), GitHub PRs (64), P2P Foundation (7), including Satoshi's posts and context posts from other participants
 - **Correspondence** (336): Private emails between Satoshi and 8 key participants — Adam Back, Dustin Trammell, Gavin Andresen, Hal Finney, Martti Malmi, Mike Hearn, NewLibertyStandard, Wei Dai
 - **Articles** (164): Media coverage, research, and post-disappearance historical analysis
-- **Mailing List** (64): cryptography mailing list (31), Bitcoin-list (20), P2P Research (7), Cypherpunks (5), Linux Foundation (1)
-- **Biographies** (41): Biographical profiles of key participants compiled from public sources
+- **Mailing List** (65): cryptography mailing list (32), Bitcoin-list (20), P2P Research (7), Cypherpunks (5), Linux Foundation (1)
+- **Biographies** (42): Biographical profiles of key participants compiled from public sources
 - **Analysis** (47): Editorial readings by Bitcoin Institute — Satoshi-identity hypotheses for the named candidates, the Bitcoin design lineage and cypherpunk independent-arrival, the 2008–2014 activity timeline, the genesis-block and v0.1 source-code analyses, and monetary-policy readings, each labeled as interpretation and individually sourced
 - **Design** (12): System-overview and architecture readings of Bitcoin's protocol (e.g. the v0.1 system-design overview)
 - **BIPs** (9): Bitcoin Improvement Proposals relevant to Satoshi's design

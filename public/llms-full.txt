@@ -39,11 +39,11 @@ Languages: English, Japanese
 
 ### Correspondence (336 entries)
 Private email exchanges between Satoshi and key participants:
-- **Martti Malmi** (255 entries): Finnish developer who helped with Bitcoin's website and early development. Extensive correspondence about project direction.
+- **Martti Malmi** (257 entries): Finnish developer who helped with Bitcoin's website and early development. Extensive correspondence about project direction.
 - **Mike Hearn** (33 entries): Google engineer. Satoshi shared unpublished ideas about smart contracts and payment channels. Received Satoshi's farewell message.
 - **Dustin Trammell** (20 entries): Early Bitcoin miner and security researcher.
 - **NewLibertyStandard** (12 entries): Ran the first published Bitcoin/USD exchange rate and an early exchange.
-- **Gavin Andresen** (6 entries): Took over as lead developer. Received network alert key and repository access.
+- **Gavin Andresen** (4 entries): Took over as lead developer. Received network alert key and repository access.
 - **Adam Back** (5 entries): Creator of Hashcash, the proof-of-work primitive Bitcoin's mining reuses.
 - **Wei Dai** (3 entries): Creator of b-money. Satoshi contacted him after independently reinventing similar concepts.
 - **Hal Finney** (2 entries): First Bitcoin user besides Satoshi. Received the first BTC transaction. Discussed early bugs and improvements.
@@ -53,8 +53,8 @@ Private email exchanges between Satoshi and key participants:
 - **GitHub PRs** (64 posts): Bitcoin Core pull-request threads relevant to Satoshi's design choices and their later supersession
 - **P2P Foundation** (7 posts): Bitcoin announcement and early discussions
 
-### Mailing List Emails (64 entries)
-- **Cryptography mailing list** (31 emails): Whitepaper announcement and technical debates
+### Mailing List Emails (65 entries)
+- **Cryptography mailing list** (32 emails): Whitepaper announcement and technical debates
 - **Bitcoin-list** (20 emails): Development announcements
 - **P2P Research** (7 emails): Peer-to-peer technology discussions
 - **Cypherpunks** (5 emails): Pre-Bitcoin digital-cash discussions (Hashcash, b-money)
@@ -63,7 +63,7 @@ Private email exchanges between Satoshi and key participants:
 ### Articles (164 entries)
 Media coverage, research articles, and post-disappearance historical analysis from various sources including Bitcoin Magazine, CoinDesk, Wired, Forbes, and academic publications.
 
-### Biographies (41 entries)
+### Biographies (42 entries)
 Biographical profiles of key participants compiled from multiple public sources. These are not direct transcriptions of any single document.
 
 ### Bitcoin Improvement Proposals (9 entries)
