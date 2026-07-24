@@ -15,7 +15,7 @@ import { DESIGN_SERIES } from '../../data/design-series';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from '../../i18n/utils';
 import Avatar from '../../components/Avatar.astro';
-import { resolveThreadId } from '../../data/threads';
+import { resolveThreadId, deriveThreadTitle } from '../../data/threads';
 import { renderEditorNote } from '../../lib/editor-note';
 import { heroBannerPosition } from '../../lib/heroBanner';
 import { LABELS as EDITORIAL_LABELS } from '../../lib/remark-editorial-marker.mjs';
@@ -69,7 +69,13 @@ const threadMessages = threadId
   ? allEntries.filter((e) => resolveThreadId(e) === threadId).length
   : 0;
 const entryById = new Map(allEntries.map((e) => [e.id, e]));
-const commentaryThreadLinks = new Map<string, { id: string; messages: number }>();
+// Threads this editorial entry quotes from. Unlike the banner above — which
+// links the thread the reader is already inside — these point at a *different*
+// document, so each carries the thread's own title: a bare "View full thread
+// (N messages)" gives the reader nothing to choose by, and when two quoted
+// threads happen to have the same message count the two banners render
+// identically (satoshi-final-known-email quotes two 4-message threads).
+const commentaryThreadLinks = new Map<string, { id: string; messages: number; title: string }>();
 if (entry.data.type === 'article' || entry.data.type === 'analysis' || entry.data.type === 'design') {
   for (const q of entry.data.quotes ?? []) {
     if (!q.sourceEntryId) continue;
@@ -77,11 +83,17 @@ if (entry.data.type === 'article' || entry.data.type === 'analysis' || entry.dat
     if (!sourceEntry) continue;
     const sourceThreadId = resolveThreadId(sourceEntry);
     if (!sourceThreadId || commentaryThreadLinks.has(sourceThreadId)) continue;
-    const sourceThreadMessages = allEntries.filter((e) => resolveThreadId(e) === sourceThreadId).length;
-    if (sourceThreadMessages >= 2) {
+    const sourceThreadGroup = allEntries.filter((e) => resolveThreadId(e) === sourceThreadId);
+    if (sourceThreadGroup.length >= 2) {
+      // Same ordering buildThreadInfo uses, so the derived title matches the
+      // one the thread page itself shows.
+      const ordered = [...sourceThreadGroup].sort(
+        (a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime(),
+      );
       commentaryThreadLinks.set(sourceThreadId, {
         id: sourceThreadId,
-        messages: sourceThreadMessages,
+        messages: sourceThreadGroup.length,
+        title: deriveThreadTitle(sourceThreadId, ordered, lang),
       });
     }
   }
@@ -255,7 +267,7 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
     {[...commentaryThreadLinks.values()].map((thread) => (
       <div class="thread-banner">
         <a href={localePath(`/entries/threads/${thread.id}/`, lang)}>
-          View full thread ({thread.messages} messages) &rarr;
+          Full thread: {thread.title} ({thread.messages} messages) &rarr;
         </a>
       </div>
     ))}
