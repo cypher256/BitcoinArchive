@@ -22,6 +22,7 @@ import { loadDefaultJapaneseParser } from 'budoux';
 import { LABELS as EDITORIAL_LABELS } from '../../../lib/remark-editorial-marker.mjs';
 import gitDates from '../../../data/git-dates.json';
 import ChartEmbedRuntime from '../../../components/ChartEmbedRuntime.astro';
+import ShareButton from '../../../components/ShareButton.astro';
 
 export async function getStaticPaths() {
   const jaEntries = await getCollection('entries_ja');
@@ -190,6 +191,7 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
           <Avatar slug={titleAvatarSlug} sizeClass="entry-author-avatar" base={base} />
         ))}
         <h1 set:html={titleHtml} />
+        <ShareButton lang={lang} url={absoluteUrl(`/entries/${entry.id}/`, lang)} title={entry.data.title} variant="onDark" />
       </div>
       <EntryMeta
         date={entry.data.date}
@@ -320,6 +322,7 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
     margin-bottom: 1.5rem;
   }
   .entry-title-row h1 {
+    flex: 1 1 auto;
     margin: 0;
     color: #f5f4f1;
     /* Prevents a lone trailing character (e.g. a long-vowel mark ー)

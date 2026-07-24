@@ -1,0 +1,167 @@
+---
+// Single share button using the Web Share API (native OS share sheet on
+// mobile and supporting desktop browsers); falls back to copying the link
+// to the clipboard where navigator.share is unavailable (most desktop
+// browsers). Replaces the old per-platform button row pattern, which has
+// lost most of its value now that OS-level share sheets are ubiquitous.
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  url: string;
+  title: string;
+  variant?: 'onDark' | 'onLight';
+}
+
+const { lang, url, title, variant = 'onLight' } = Astro.props;
+const t = useTranslations(lang);
+const labelShare = t('share.button');
+const labelCopied = t('share.copied');
+const labelFailed = t('share.copyFailed');
+---
+
+<button
+  type="button"
+  class={`share-button share-button--${variant}`}
+  data-share-button
+  data-share-url={url}
+  data-share-title={title}
+  data-label-share={labelShare}
+  data-label-copied={labelCopied}
+  data-label-failed={labelFailed}
+  aria-label={labelShare}
+  title={labelShare}
+>
+  <svg class="share-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="18" cy="5" r="3"></circle>
+    <circle cx="6" cy="12" r="3"></circle>
+    <circle cx="18" cy="19" r="3"></circle>
+    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+  </svg>
+  <span class="share-label" data-share-label>{labelShare}</span>
+</button>
+
+<style>
+  .share-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    flex-shrink: 0;
+    background: transparent;
+    border-radius: 4px;
+    padding: 0.35rem 0.6rem;
+    line-height: 1;
+    cursor: pointer;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    transition: color 0.15s, border-color 0.15s, background 0.15s;
+  }
+  .share-button--onLight {
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+  }
+  .share-button--onLight:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+  /* onDark: sits on the fixed atmosphere-banner backdrop (entry-title-row),
+     whose colors are constants regardless of site theme — see that
+     component's own comment on why. Mirror the same fixed-color approach
+     here rather than reading --color-* tokens that assume a light/dark
+     page background. */
+  .share-button--onDark {
+    border: 1px solid rgba(245, 244, 241, 0.4);
+    color: #f5f4f1;
+  }
+  .share-button--onDark:hover {
+    border-color: #f5f4f1;
+    background: rgba(245, 244, 241, 0.15);
+  }
+  .share-button:focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
+  }
+  @media (max-width: 480px) {
+    .share-label {
+      display: none;
+    }
+    .share-button {
+      padding: 0.4rem;
+    }
+  }
+  /* onDark lives inside .entry-title-row, whose mobile layout floats the
+     avatar left so the title wraps around it (see global.css comment on
+     `.container .entry-header .entry-title-row`). Below 767px this button
+     is no longer a flex sibling of a nowrap row — it falls into normal
+     block flow after the <h1> and would otherwise land on its own line
+     under the wrapped title. Float it right so it takes the same
+     avatar-left/button-right wrap the title already gets. */
+  @media (max-width: 767px) {
+    .share-button--onDark {
+      float: right;
+      margin: 0.15rem 0 0.3rem 0.9rem;
+    }
+  }
+</style>
+
+<script>
+  // Per-button pending-timer registry so a second click within the 2s
+  // "copied" window cancels the first timer instead of racing it back
+  // to the original label early.
+  const revertTimers = new WeakMap<HTMLButtonElement, number>();
+
+  async function copyLinkFallback(btn: HTMLButtonElement, url: string) {
+    const label = btn.querySelector('[data-share-label]');
+    const originalText = btn.getAttribute('data-label-share');
+    const copiedText = btn.getAttribute('data-label-copied');
+    const failedText = btn.getAttribute('data-label-failed');
+    const pending = revertTimers.get(btn);
+    if (pending) window.clearTimeout(pending);
+
+    let succeeded = false;
+    try {
+      if (!navigator.clipboard) throw new Error('Clipboard API unavailable');
+      await navigator.clipboard.writeText(url);
+      succeeded = true;
+    } catch (_) {
+      // Non-HTTPS context, missing permission, or no Clipboard API —
+      // still tell the user it didn't work rather than staying silent.
+    }
+    if (label) {
+      const text = succeeded ? copiedText : failedText;
+      if (text) label.textContent = text;
+    }
+    const timer = window.setTimeout(() => {
+      if (label && originalText) label.textContent = originalText;
+      revertTimers.delete(btn);
+    }, 2000);
+    revertTimers.set(btn, timer);
+  }
+
+  function initShareButtons() {
+    document.querySelectorAll('[data-share-button]').forEach((el) => {
+      const btn = el as HTMLButtonElement;
+      if (btn.dataset.shareInit) return;
+      btn.dataset.shareInit = 'true';
+      btn.addEventListener('click', async () => {
+        const url = btn.getAttribute('data-share-url') || location.href;
+        const title = btn.getAttribute('data-share-title') || document.title;
+        if (navigator.share) {
+          try {
+            await navigator.share({ title, url });
+            return;
+          } catch (error) {
+            // AbortError = user dismissed the native sheet, not a failure.
+            // Any other error (e.g. no share target registered) falls
+            // through to the clipboard fallback below.
+            if (error instanceof DOMException && error.name === 'AbortError') return;
+          }
+        }
+        await copyLinkFallback(btn, url);
+      });
+    });
+  }
+  initShareButtons();
+</script>

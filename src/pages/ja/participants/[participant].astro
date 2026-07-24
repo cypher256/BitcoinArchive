@@ -5,6 +5,7 @@ import { render } from 'astro:content';
 import { useTranslations, getEntries, getBiographyForParticipant, localePath, translateParticipantName, absoluteUrl } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 import Avatar from '../../../components/Avatar.astro';
+import ShareButton from '../../../components/ShareButton.astro';
 import gitDates from '../../../data/git-dates.json';
 
 type LangDate = { createdAt: string; updatedAt: string };
@@ -149,6 +150,7 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
         <h1>{participantName}{lifeDates && <span class="life-dates"> {lifeDates}</span>}</h1>
         {bioSubtitle && <p class="bio-subtitle">{bioSubtitle}</p>}
       </div>
+      <ShareButton lang={lang} url={canonicalUrl} title={participantName} variant="onLight" />
     </div>
 
     {calloutTarget && calloutSpec && (
@@ -315,6 +317,7 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
     margin-bottom: 1.75rem;
   }
   .participant-head-text {
+    flex: 1 1 auto;
     min-width: 0;
   }
   .participant-head-text h1 {
