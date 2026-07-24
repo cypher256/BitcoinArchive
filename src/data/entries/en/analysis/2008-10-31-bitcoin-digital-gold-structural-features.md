@@ -67,7 +67,7 @@ Later cryptocurrencies ([Ethereum](/BitcoinArchive/entries/analysis/2008-10-31-b
 
 The standard explanation is "first-mover advantage." On this reading, Bitcoin's value is a path-dependent accident: it arrived first, accumulated the network effect, and is now defended by inertia rather than by anything intrinsic to the design.
 
-But the explanation runs structurally deeper than that. Bitcoin's claim to "digital gold" status is not a single property but the **simultaneous combination** of two distinct layers of decentralization, supported by six concrete structural features. Each individual feature exists in some other project. None of those projects has assembled the full set, and the absence is not accidental — several of the features are mutually difficult to satisfy together.
+But the substance is structural, not accidental: Bitcoin's claim to "digital gold" status is not a single property but the **simultaneous combination** of two distinct layers of decentralization, supported by six concrete structural features. Each individual feature exists in some other project. None of those projects has assembled the full set, and the absence is not accidental — several of the features are mutually difficult to satisfy together.
 
 ## The two layers, distinguished
 
