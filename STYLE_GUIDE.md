@@ -2156,6 +2156,18 @@ add a biography entry for them.
 
 Conflicts must be resolved before the index can be generated.
 
+### Choosing keywords (2026-05-31 lessons)
+
+- **A keyword rendering a link somewhere is not enough.** After adding
+  or changing a keyword, check every page where it now links and
+  confirm the link makes contextual sense there, not just that the
+  build produced a link.
+- **Avoid keywords that collide with common company/protocol names**
+  outside this archive's own subject (the Ripple-shaped trap — a
+  short, generic-looking name that is also a widely-used brand or
+  protocol elsewhere). Such keywords produce auto-links in unrelated
+  prose where the word is being used in its other sense.
+
 ### Exclusion contexts
 
 Auto-linking deliberately skips:

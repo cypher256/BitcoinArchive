@@ -144,4 +144,4 @@ knightmb はこれに対し、wobber の主張を引用したうえで否定す�
 
 初期ビットコインの参加者のなかには、仮名を気軽に使い、後に手放した者もいる——[Sirius](/BitcoinArchive/ja/participants/martti-malmi/) は最終的に公の場でマルッティ・マルミとなり、[theymos](/BitcoinArchive/ja/participants/theymos/) は最終的にマイケル・マーカートとなった。一方、仮名を堅く保ち続けた者もいる——[Cøbra](/BitcoinArchive/ja/participants/cobra/) はロンドンの法廷で本名を明かして出廷するよりも欠席敗訴を選んだ。knightmb は後者のパターンに属する。2012 年にテネシーで何が起きたにせよ、Timekoin が何になったにせよ、二次資料が以後何を書いたにせよ、BitcoinTalk の記録自体が保存しているのは仕事と——その周りの沈黙——だけである。
 
-本 knightmb 分析は [2010 年 8 月の値オーバーフロー事件エントリ](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/)から、復旧パッチが依存した事件前のブロックチェーンスナップショットの貢献者の記録として参照される。
+本 knightmb 分析は [2010 年 8 月のバリュー・オーバーフロー事件エントリ](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/)から、復旧パッチが依存した事件前のブロックチェーンスナップショットの貢献者の記録として参照される。
