@@ -4,7 +4,7 @@ date: 2014-11-01T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Blockstream"
-sourceNote: "Blockstream is the company at the centre of the charge; this entry weighs the 'Blockstream controls Bitcoin' claim against the documentary record rather than asserting or dismissing it."
+sourceNote: "Blockstream is the company at the centre of the charge."
 author: "Bitcoin Institute"
 participants:
   - name: "Gregory Maxwell"
@@ -23,7 +23,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Weighing the 'Blockstream controls Bitcoin' charge against the record: where it comes from, the facts behind it, and the counter-facts — Lightning's authorship, funding spread, a shrinking Core role."
+description: "Weighing the 'Blockstream controls Bitcoin' charge against the documentary record: where it comes from, and how each link in the chain holds up."
 isSatoshi: false
 tags:
   - "block-size-war"

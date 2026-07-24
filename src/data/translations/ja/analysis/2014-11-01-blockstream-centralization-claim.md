@@ -4,7 +4,7 @@ date: 2014-11-01T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Blockstream"
-sourceNote: "Blockstream は批判の中心にある企業である。本記事は「Blockstream がビットコインを支配する」という主張を、肯定も棄却もせず、文書的記録に照らして検証する。"
+sourceNote: "Blockstream は告発の中心にある企業である。"
 author: "Bitcoin Institute"
 participants:
   - name: "Gregory Maxwell"
@@ -23,7 +23,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「Blockstream がビットコインを支配する」批判を一次資料で検証する。雇用と製品の根拠と反証 — ライトニングの作者、資金の多元化、Core 関与の縮小。"
+description: "「Blockstream がビットコインを支配する」という告発を記録に照らして検証する — 主張の出どころと、その連鎖の各環がどこまで持ちこたえるか。"
 isSatoshi: false
 tags:
   - "block-size-war"
