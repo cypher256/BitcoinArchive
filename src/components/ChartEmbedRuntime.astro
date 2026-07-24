@@ -15,6 +15,7 @@ import { mount as mountSupplyCurve } from '../scripts/supply-curve.js';
 import { mount as mountBarRace } from '../scripts/bar-chart-race.js';
 import { mount as mountOwnershipTreemap } from '../scripts/ownership-treemap.js';
 import { mount as mountPublicCompaniesBar } from '../scripts/public-companies-bar.js';
+import { mount as mountWhaleTiers } from '../scripts/whale-tiers.js';
 import { mount as mountStylometricHistogram } from '../scripts/stylometric-distance-histogram.js';
 import { mount as mountForkGenealogy } from '../scripts/fork-genealogy.js';
 import { mount as mountValueOverflowTimeline } from '../scripts/value-overflow-timeline.js';
@@ -186,6 +187,28 @@ const JPY_PER_USD = 160;
     } as Record<string, { title: string; sub: string }>)[lang];
     host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p><div class="ce-chart"></div>';
     mountPublicCompaniesBar(host.querySelector('.ce-chart'), lang);
+  };
+
+  // ===== drawer: whale-tiers (Glassnode's sea-creature entity scale) =====
+  // Drawing + thresholds live in src/scripts/whale-tiers.js; this drawer only
+  // adds the bilingual chrome. The note line discloses that Glassnode's own
+  // Studio product uses a coarser variant for two of the eight tiers.
+  DRAWERS['whale-tiers'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'The whale scale — shrimp to humpback',
+        sub: 'Glassnode\'s eight entity tiers on a log axis: shrimp under 1 BTC and humpbacks over 5,000 sit at opposite ends of the same scale. The top two tiers alone hold about a third of circulating supply.',
+        note: 'Thresholds follow Glassnode\'s research post, the same source cited for the 6.64M figure. Its live Studio charts use a coarser variant — Fish 10-100 BTC and Shark 100-1,000 BTC, with no separate Octopus or Dolphin chart.',
+      },
+      ja: {
+        title: 'クジラの目盛り ― エビからザトウクジラまで',
+        sub: 'Glassnode が主体の保有量で分ける 8 段階を対数目盛りに置いた。1 BTC 未満のエビと 5,000 BTC 超のザトウクジラは、同じ軸の両端にいる。上位 2 段階だけで流通量のおよそ 3 分の 1 を占める。',
+        note: '閾値は Glassnode の研究記事の定義（664 万枚の出典と同じ記事）。同社の対話型グラフ Studio では魚を 10〜100 BTC、サメを 100〜1,000 BTC とする粗い区分を併用しており、タコとイルカの個別グラフは存在しない。',
+      },
+    } as Record<string, { title: string; sub: string; note: string }>)[lang];
+    host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p>' +
+      '<div class="ce-chart"></div><p class="ce-note">' + T_.note + '</p>';
+    mountWhaleTiers(host.querySelector('.ce-chart'), lang);
   };
 
   // ===== drawer: stylometric-distance-histogram (van Dorst 2024 reanalysis) =====
