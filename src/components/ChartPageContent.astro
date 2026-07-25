@@ -2,7 +2,7 @@
 import type { Lang } from '../i18n/ui';
 import BtcPriceChart from './BtcPriceChart.astro';
 import SupplyScheduleChart from './SupplyScheduleChart.astro';
-import { useTranslations } from '../i18n/utils';
+import { useTranslations, localePath } from '../i18n/utils';
 
 interface Props {
   lang: Lang;
@@ -40,11 +40,21 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
         </div>
       ))}
     </div>
+    <p class="section-reading">
+      <a href={localePath('/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/', lang)}>
+        {t('chart.halvingsReading' as any)} &rarr;
+      </a>
+    </p>
   </section>
 
   <section class="detail-section">
     <h2>{t('chart.supplyTitle' as any)}</h2>
     <SupplyScheduleChart lang={lang} />
+    <p class="section-reading">
+      <a href={localePath('/entries/design/2009-01-03-bitcoin-monetary-design/', lang)}>
+        {t('chart.supplyReading' as any)} &rarr;
+      </a>
+    </p>
   </section>
 
   <section class="detail-section predictions-section">
@@ -119,6 +129,14 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
     margin-bottom: 1rem;
     border-bottom: 1px solid var(--color-border);
     padding-bottom: 0.5rem;
+  }
+
+  /* Route out of the figures and into the entries that read them. The page
+     is otherwise a dead end -- it shows the schedule but not why it holds. */
+  .section-reading {
+    margin: 0.9rem 0 0;
+    font-size: 0.88rem;
+    font-family: var(--font-heading);
   }
 
   /* Halvings cards: single row, horizontal scroll instead of wrapping.

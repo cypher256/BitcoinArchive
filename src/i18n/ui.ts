@@ -218,6 +218,11 @@ export const ui = {
     'chart.rangeAll': 'All',
     'chart.models': 'Models',
     'chart.disclaimer': 'The price predictions and theoretical models on this page are presented as a record of past statements and as reference information, not as investment advice or a recommendation of any financial product.',
+    // Outbound links from the figures to the entries that read them. Without
+    // these the chart page is a dead end: it shows the schedule but offers no
+    // route to why the schedule holds.
+    'chart.halvingsReading': 'Why the 21-million cap has held: read the halving schedule as a structural feature',
+    'chart.supplyReading': 'How the issuance curve was designed, block by block',
     'share.button': 'Share',
     'share.copied': 'Link copied',
     'share.copyFailed': 'Copy failed',
@@ -429,6 +434,8 @@ export const ui = {
     'chart.rangeAll': '全期間',
     'chart.models': '理論モデル',
     'chart.disclaimer': '本ページに掲載する価格予測・理論モデルは、過去の発言の記録および参考情報として示すものであり、投資助言や金融商品の推奨ではありません。',
+    'chart.halvingsReading': '2,100 万枚の上限はなぜ守られてきたのか ― 半減期を構造的特徴として読む',
+    'chart.supplyReading': '発行曲線はどう設計されたのか ― ブロック単位で辿る',
     'share.button': '共有',
     'share.copied': 'リンクをコピーしました',
     'share.copyFailed': 'コピーに失敗しました',
