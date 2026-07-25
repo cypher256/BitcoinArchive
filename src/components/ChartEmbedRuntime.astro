@@ -16,6 +16,7 @@ import { mount as mountBarRace } from '../scripts/bar-chart-race.js';
 import { mount as mountOwnershipTreemap } from '../scripts/ownership-treemap.js';
 import { mount as mountPublicCompaniesBar } from '../scripts/public-companies-bar.js';
 import { mount as mountWhaleTiers } from '../scripts/whale-tiers.js';
+import { mount as mountEthBtcRatio } from '../scripts/eth-btc-ratio.js';
 import { mount as mountStylometricHistogram } from '../scripts/stylometric-distance-histogram.js';
 import { mount as mountForkGenealogy } from '../scripts/fork-genealogy.js';
 import { mount as mountValueOverflowTimeline } from '../scripts/value-overflow-timeline.js';
@@ -187,6 +188,29 @@ const JPY_PER_USD = 160;
     } as Record<string, { title: string; sub: string }>)[lang];
     host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p><div class="ce-chart"></div>';
     mountPublicCompaniesBar(host.querySelector('.ce-chart'), lang);
+  };
+
+  // ===== drawer: eth-btc-ratio (the one approach, and the distance since) =====
+  // Sits under the market-cap race in the fork-genealogy entry. The race is
+  // sampled once a year on June 1 and so cannot show June 2017, when the ratio
+  // ran from 55% to 85% inside eight days; a date axis can. Drawing and the
+  // snapshot figures live in src/scripts/eth-btc-ratio.js.
+  DRAWERS['eth-btc-ratio'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'How close Ethereum came — and how far since',
+        sub: 'Ethereum\'s market capitalisation as a share of Bitcoin\'s, from CoinMarketCap: five dated historical snapshots plus a live reading taken when this entry was last revised. The June 2017 point is the closest any chain in this catalog has come to Bitcoin\'s valuation.',
+        note: 'Six readings, not a continuous series: the line between them is drawn to show order, not the path taken. The ratio moved sharply within short windows — it stood at about 55% on June 4, 2017, eight days before the point shown here. The rightmost point is a live figure, so it moves with the market rather than being fixed to a date.',
+      },
+      ja: {
+        title: 'どこまで迫り、そこからどれだけ離れたか',
+        sub: 'ビットコインの時価総額に対するイーサリアムの比率を、CoinMarketCap の値で示す ― 日付の付いた履歴スナップショット 5 時点と、本エントリー最終更新時に参照した現在値 1 点。2017 年 6 月の点は、本目録のどのチェーンよりもビットコインの評価額に近づいた記録である。',
+        note: '連続した系列ではなく 6 時点の読み取り。点を結ぶ線は順序を示すためのもので、その間の経路を表さない。比率は短期間に大きく動いており、ここに示した 2017 年 6 月 12 日の 8 日前、6 月 4 日時点では約 55% だった。右端の点は現在値のため、日付に固定されず市場とともに動く。',
+      },
+    } as Record<string, { title: string; sub: string; note: string }>)[lang];
+    host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p>' +
+      '<div class="ce-chart"></div><p class="ce-note">' + T_.note + '</p>';
+    mountEthBtcRatio(host.querySelector('.ce-chart'), lang);
   };
 
   // ===== drawer: whale-tiers (Glassnode's sea-creature entity scale) =====
