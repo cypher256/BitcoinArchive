@@ -37,6 +37,9 @@ secondarySources:
     url: "https://www.boj.or.jp/en/mopo/outline/index.htm"
   - name: "Ethereum — EIP-1559: Fee market change"
     url: "https://eips.ethereum.org/EIPS/eip-1559"
+  - name: "Ethereum — Gas and fees (unit denominations)"
+    url: "https://ethereum.org/en/developers/docs/gas/"
+    note: "States that wei is named after Wei Dai, creator of b-money."
   - name: "Ethereum whitepaper — Currency and Issuance"
     url: "https://ethereum.org/en/whitepaper/"
     note: "States the choice of a permanently growing linear supply over a Bitcoin-style cap, and its stated reason."
@@ -245,7 +248,9 @@ The Merge changed more than the quantity. **It replaced the way issuance is deci
 
 The combined effect — no hard cap, but supply that answers to the state of the network — is closer to b-money's *responsive-to-conditions* principle than to Bitcoin's *fixed-by-schedule* principle, though what it answers to is stake and demand rather than the basket price b-money aimed at. Ethereum's own community vocabulary ("Ultra Sound Money", a play on Bitcoin's "Sound Money" framing) makes the contrast explicit.
 
-And the person who ruled out a cap later filed one. In April 2018 Buterin submitted [EIP-960](https://github.com/ethereum/EIPs/issues/960), proposing to bound the total at 120,204,432 ETH — exactly twice the amount sold at launch. It was not adopted. Four years after the launch terms were set, a total cap was on the table again, proposed by the author of the design that had declined one.
+The reference to b-money runs past design philosophy. Ethereum's smallest unit, the wei — one quintillionth of an ETH, and the base of the gwei that gas prices are quoted in — is, [in Ethereum's own documentation, "named after Wei Dai, creator of b-money"](https://ethereum.org/en/developers/docs/gas/). Bitcoin put b-money in its whitepaper's reference [1]; Ethereum put its author's name in the denomination of the currency itself. Naming a unit is not the same as inheriting an issuance rule, though: the basket-price stability Wei Dai was actually aiming at is implemented by neither chain.
+
+And the person who ruled out a cap later filed one. On April 1, 2018 Buterin submitted [EIP-960](https://github.com/ethereum/EIPs/issues/960), proposing to bound the total at 120,204,432 ETH — exactly twice the amount sold at launch. It was not adopted; the issue was closed as stale. The filing date is April Fools' Day, and the issue text does not present the proposal as a joke. How to read the intent is open; what the issue records is that a concrete total cap — down to a formula thinning issuance exponentially as supply approaches the ceiling — was written up four years on, by the author of the design that had declined one.
 
 ## 8. Why a cap, why none — the monetary bet each design makes
 

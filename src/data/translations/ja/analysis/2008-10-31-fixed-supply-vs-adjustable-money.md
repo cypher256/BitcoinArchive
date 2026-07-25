@@ -37,6 +37,9 @@ secondarySources:
     url: "https://www.boj.or.jp/en/mopo/outline/index.htm"
   - name: "Ethereum — EIP-1559: Fee market change"
     url: "https://eips.ethereum.org/EIPS/eip-1559"
+  - name: "Ethereum — Gas and fees (単位の呼称)"
+    url: "https://ethereum.org/en/developers/docs/gas/"
+    note: "wei が b-money 考案者ウェイ・ダイにちなむ旨を明記。"
   - name: "Ethereum whitepaper — Currency and Issuance"
     url: "https://ethereum.org/en/whitepaper/"
     note: "上限つき供給ではなく恒久的な線形増加を選んだ旨と、その理由。"
@@ -246,7 +249,9 @@ graph TD
 
 組み合わせの効果 ― ハード上限なし、しかしネットワークの状態に応答する動的供給 ― は、ビットコインの **スケジュール固定** 原理よりも、 b-money の **状況応答** 原理に近い。ただし応答するのはステーク量とネットワーク需要であって、b-money が狙ったバスケット価格の安定ではない。イーサリアムコミュニティ自身の語彙 (「Ultra Sound Money」、ビットコインの「Sound Money」枠組みへの掛詞) はこの対比を明示している。
 
-そして、上限を置かないと決めた本人が、後に上限を提出している。2018 年 4 月、ブテリンは総量を 120,204,432 ETH ― 当初販売量のちょうど 2 倍 ― に制限する [EIP-960](https://github.com/ethereum/EIPs/issues/960) を自ら提出した。採用されなかった。公開条件が定まってから 4 年後、上限を退けた設計の書き手自身の手で、総量上限が再び議題に上がったことになる。
+b-money への参照は、設計思想だけにとどまらない。イーサリアムの最小単位 wei ― 1 ETH の 10 の 18 乗分の 1、ガス代で使われる gwei はその 10 億倍 ― は、[公式ドキュメントが「b-money の考案者ウェイ・ダイにちなむ」と明記している](https://ethereum.org/en/developers/docs/gas/)。ビットコインが b-money をホワイトペーパーの参考文献 [1] に置いたのに対し、イーサリアムはその名を通貨の刻み目そのものに置いた。もっとも、単位に名を刻むことと発行方式を継ぐことは別で、ウェイ・ダイ自身が狙ったバスケット価格の安定は、上で見たとおりどちらのチェーンも実装していない。
+
+そして、上限を置かないと決めた本人が、後に上限を提出している。2018 年 4 月 1 日、ブテリンは総量を 120,204,432 ETH ― 当初販売量のちょうど 2 倍 ― に制限する [EIP-960](https://github.com/ethereum/EIPs/issues/960) を自ら提出した。採用されず、issue は stale として閉じられている。提出日はエイプリルフールにあたり、issue 本文はこの提案を冗談とは説明していない。意図をどう読むかは割れうるが、issue が記録しているのは、上限を退けた設計の書き手自身の手で、4 年後に総量上限の具体案 ― 発行を上限に近づくほど指数的に細らせる計算式まで含めて ― が書かれたという事実である。
 
 ## 8. なぜ固定か、なぜ可変か ― 各設計が賭けた貨幣観
 
