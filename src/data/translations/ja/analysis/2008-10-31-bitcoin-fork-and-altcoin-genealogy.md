@@ -35,6 +35,11 @@ tags:
   - "analysis"
   - "history"
 secondarySources:
+  - name: "CoinMarketCap — 2017 年 6 月 12 日時点の履歴スナップショット"
+    url: "https://coinmarketcap.com/historical/20170612/"
+    note: "ビットコイン 435.9 億ドルに対しイーサリアム 371.1 億ドル。"
+  - name: "CoinMarketCap — 2021 年 5 月 12 日時点の履歴スナップショット"
+    url: "https://coinmarketcap.com/historical/20210512/"
   - name: "Wikipedia — Bitcoin Cash"
     url: "https://en.wikipedia.org/wiki/Bitcoin_Cash"
   - name: "Wikipedia — Bitcoin SV"
@@ -55,6 +60,7 @@ secondarySources:
     url: "https://blockchair.com/bitcoin-cash/block/478558"
 relatedEntries:
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
+  - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - bip/2015-12-21-bip-0141
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
@@ -162,6 +168,8 @@ timeline
 これらの観察は記述的なものであり、規範的なものではない。将来のいずれかの分岐が占有率を獲得する可能性を排除するものではなく、2009 ~ 2024 年の記録において何が起きたかを記録するに留まる。
 
 <!-- chart: crypto-race -->
+
+この順位の入れ替わりの中で、ビットコイン自身の評価額に迫った例がある。CoinMarketCap の 2017 年 6 月 12 日のスナップショットは、イーサリアムの時価総額をビットコインの約 85% (435.9 億ドルに対し 371.1 億ドル) と記録しており、追い越しの可能性が「フリッペニング」の名で語られた時期にあたる。ここで引用した以後のスナップショットに追い越しは現れない ― 同じ資料で 2021 年 5 月 12 日は約 48%、本エントリー最終更新時点で参照した値では約 17.5% である。この比率の推移と、両者の発行設計の違いをどう結び付けられるか (そして結び付けられないか) は[固定供給 vs 自動調整通貨分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)で扱う。
 
 ## 5. 本エントリーの限界
 

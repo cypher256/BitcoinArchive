@@ -37,6 +37,37 @@ secondarySources:
     url: "https://www.boj.or.jp/en/mopo/outline/index.htm"
   - name: "Ethereum — EIP-1559: Fee market change"
     url: "https://eips.ethereum.org/EIPS/eip-1559"
+  - name: "Ethereum whitepaper — Currency and Issuance"
+    url: "https://ethereum.org/en/whitepaper/"
+    note: "上限つき供給ではなく恒久的な線形増加を選んだ旨と、その理由。"
+  - name: "Ethereum Foundation — The Issuance Model in Ethereum (2014-04-10)"
+    url: "https://blog.ethereum.org/2014/04/10/the-issuance-model-in-ethereum"
+  - name: "Ethereum Foundation — Launching the Ether Sale (2014-07-22)"
+    url: "https://blog.ethereum.org/2014/07/22/launching-the-ether-sale"
+    note: "年 0.26 倍への引き下げと、1 月提案の 0.50 倍からの改訂経緯。"
+  - name: "Ethereum — EIP-649: Byzantium block reward reduction to 3 ETH"
+    url: "https://eips.ethereum.org/EIPS/eip-649"
+  - name: "Ethereum — EIP-1234: Constantinople block reward reduction to 2 ETH"
+    url: "https://eips.ethereum.org/EIPS/eip-1234"
+  - name: "Ethereum — Issuance after The Merge"
+    url: "https://ethereum.org/roadmap/merge/issuance/"
+    note: "実行層の発行がゼロに。日量約 13,000 → 約 1,700 ETH、およそ 88% 減。"
+  - name: "Buterin — EIP-960: hard cap of 120,204,432 ETH (2018 年 4 月、不採用)"
+    url: "https://github.com/ethereum/EIPs/issues/960"
+  - name: "CoinMarketCap — 2017 年 6 月 12 日時点の履歴スナップショット"
+    url: "https://coinmarketcap.com/historical/20170612/"
+    note: "ビットコイン 435.9 億ドルに対しイーサリアム 371.1 億ドル。"
+  - name: "CoinDesk — The Flippening: Will Ether Pass Bitcoin? (2017-06-13)"
+    url: "https://www.coindesk.com/markets/2017/06/13/the-flippening-will-ether-pass-bitcoin-and-what-would-it-mean"
+  - name: "CoinMarketCap — 2021 年 5 月 12 日時点の履歴スナップショット"
+    url: "https://coinmarketcap.com/historical/20210512/"
+    note: "ビットコイン 9,195 億ドルに対しイーサリアム 4,386 億ドル。"
+  - name: "CoinMarketCap — 2016 年 7 月 1 日時点の履歴スナップショット"
+    url: "https://coinmarketcap.com/historical/20160701/"
+  - name: "CoinMarketCap — 2018 年 12 月 15 日時点の履歴スナップショット"
+    url: "https://coinmarketcap.com/historical/20181215/"
+  - name: "CoinMarketCap — 2025 年 1 月 1 日時点の履歴スナップショット"
+    url: "https://coinmarketcap.com/historical/20250101/"
   - name: "Carlsten, Kalodner, Weinberg, Narayanan — 'On the Instability of Bitcoin Without the Block Reward' (ACM CCS 2016)"
     url: "https://www.cs.princeton.edu/~arvindn/publications/mining_CCS.pdf"
   - name: "Monero — Tail Emission (Moneropedia)"
@@ -47,6 +78,7 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Dogecoin"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
+  - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
@@ -96,9 +128,11 @@ timeline
     %% link: /BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/
     2013 : ウェイ・ダイ が LessWrong で後悔表明 (Apr)
     %% link: /BitcoinArchive/ja/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/
+    2014 : イーサリアム 年 0.26 倍で 発行率確定 上限は置かず (Jul)
     2015 : イーサリアム メインネット 上限なし (Jul)
+    2018 : ブテリン 自ら 総量上限を提案 不採用 (Apr)
     2021 : EIP-1559 焼却機構導入 (Aug)
-    2022 : イーサリアム The Merge PoS 発行 9 割削減 (Sep)
+    2022 : イーサリアム The Merge 発行の決め方が 状態連動へ (Sep)
 ```
 
 ## 2. サイファーパンクの基準線: b-money の自動調整供給 (1998)
@@ -196,13 +230,23 @@ graph TD
 
 ## 7. イーサリアムの分岐した道
 
-[ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/)のイーサリアム (メインネット 2015 年 7 月) は、ビットコインのハード上限モデルへの明示的な対案として最も引用される。現在のイーサリアム供給カーブを形作った 3 つの設計上の動き:
+[ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/)のイーサリアム (メインネット 2015 年 7 月) は、ビットコインのハード上限モデルへの明示的な対案として最も引用される。
 
-1. **当初発行 (2015–2022)**: プルーフ・オブ・ワーク下で年率約 4–5% のインフレ、ハード供給上限は定義されなかった。
+上限を置かないのは後年の方針転換ではなく、最初の設計文書に書かれた選択である。2014 年のホワイトペーパーは自らの立場をビットコインと並べて示している ― 「恒久的に増え続ける線形供給、ビットコインのような上限つき供給ではなく」。理由も同じ文書にある: ビットコインで過度と見られる富の集中を和らげ、後の時代に生きる者にも通貨を得る公平な機会を残すため。
+
+改訂されたのは、毎年いくら出すかだった。2014 年 1 月に提案された年 0.50 倍 (販売量に対する比) は、同年 4 月の財団ブログで年 1,800 万 ETH (0.3 倍) となり、7 月の販売条件では 0.26 倍まで下げられている。半年で 3 度、いずれも年間発行率の数値を示しており、3 つのどれも「これ以上は発行しない」という総量を定めていない。
+
+そのうえで、現在の供給カーブを形作った 3 つの動き:
+
+1. **当初発行 (2015–2022)**: プルーフ・オブ・ワーク下でのブロック報酬は固定額だった。5 ETH で始まり、ハードフォークで 2 度切り下げられている ― 2017 年 10 月 16 日の Byzantium で 3 ETH ([EIP-649](https://eips.ethereum.org/EIPS/eip-649))、2019 年 2 月 28 日の Constantinople で 2 ETH ([EIP-1234](https://eips.ethereum.org/EIPS/eip-1234))。いずれの EIP も、新しい報酬額をフォークブロック以降に適用される定数として書いており、ネットワークの状態を表す量に紐付けてはいない。
 2. **EIP-1559 (2021 年 8 月)**: 基本手数料の焼却を導入。各トランザクションの基本手数料はマイナー / バリデーターに支払われるのではなく破棄され、ネットワーク利用に比例したネットデフレ圧力を生む。活動が活発な期間中、 ETH 供給は縮小する。
-3. **マージ (2022 年 9 月)**: プルーフ・オブ・ステークへの移行で新規発行を日量約 13K ETH から約 1.7K ETH へ約 90% 削減。 EIP-1559 焼却と組み合わせて、高利用期には ETH 供給が **ネットデフレ** になる期間が生じた。
+3. **マージ (2022 年 9 月)**: プルーフ・オブ・ステークへの移行で、実行層 (採掘) の発行はゼロになり、新規発行は日量約 13,000 ETH から約 1,700 ETH へ、およそ 88% 減った。
 
-組み合わせの効果 ― ハード上限なし、しかしネットワーク利用に応答する動的供給 ― は、ビットコインの **スケジュール固定** 原理よりも、 b-money の **状況応答** 原理に近い。ただし応答変数はネットワーク需要であり、バスケット価格の安定ではない。イーサリアムコミュニティ自身の語彙 (「Ultra Sound Money」、ビットコインの「Sound Money」枠組みへの掛詞) はこの対比を明示している。
+マージが変えたのは量だけではない。**発行の決まり方そのものが入れ替わっている。** プルーフ・オブ・ステークでの検証者報酬は、総ステーク量の平方根を分母に置く式で毎エポック計算される ― 預けられた ETH が増えるほど、1 単位あたりの発行は薄くなる。プロトコルに書かれた定数から、ネットワークの状態から導く値へ。半減期のような固定スケジュールではなく、状況に連動する発行に移ったということである。
+
+組み合わせの効果 ― ハード上限なし、しかしネットワークの状態に応答する動的供給 ― は、ビットコインの **スケジュール固定** 原理よりも、 b-money の **状況応答** 原理に近い。ただし応答するのはステーク量とネットワーク需要であって、b-money が狙ったバスケット価格の安定ではない。イーサリアムコミュニティ自身の語彙 (「Ultra Sound Money」、ビットコインの「Sound Money」枠組みへの掛詞) はこの対比を明示している。
+
+そして、上限を置かないと決めた本人が、後に上限を提出している。2018 年 4 月、ブテリンは総量を 120,204,432 ETH ― 当初販売量のちょうど 2 倍 ― に制限する [EIP-960](https://github.com/ethereum/EIPs/issues/960) を自ら提出した。採用されなかった。公開条件が定まってから 4 年後、上限を退けた設計の書き手自身の手で、総量上限が再び議題に上がったことになる。
 
 ## 8. なぜ固定か、なぜ可変か ― 各設計が賭けた貨幣観
 
@@ -248,6 +292,10 @@ quadrantChart
 ## 9. 記録が支える立場と、残る問い
 
 記録が支えるのはここまでだ。供給をどう決めるかは、2008 年の時点で本当に開かれた分岐だった ― ビットコインが参考文献に挙げたウェイ・ダイ本人が、固定供給を「議論で覆せたかもしれない決定」と呼んでいる（§4）。そして分岐の各側は、空論ではなく相手の実害に反応している。固定供給は法定通貨の裁量が起こした価値毀損に反応し、可変供給の各設計 ― 動的応答・末尾発行・弾力的供給・定額インフレ ― は固定上限が起こす退蔵・現金利用の摩耗・発行終了後のセキュリティ予算の細りに反応する。どちらも相手が記録の上で払っている代償を見て、別の代償を選んだ。これは痛み分けの中立ではない。原理の異なる貨幣観が、それぞれ一貫して、別の失敗を避けている ― という構図だ。
+
+では市場はどう動いたか。二つの設計を時価総額で並べると、CoinMarketCap の日付別スナップショットはこう記録している ― 上限なしを選んだイーサリアムはビットコインに対し、2016 年 7 月 1 日に約 9% (106.3 億ドルに対し 9.95 億ドル)、2017 年 6 月 12 日に約 85% (435.9 億ドルに対し 371.1 億ドル) で、この時期「フリッペニング」が語られた。2018 年 12 月 15 日に約 16% (564.0 億ドルに対し 87.7 億ドル)、2021 年 5 月 12 日に約 48% (9,195.3 億ドルに対し 4,385.9 億ドル)、2025 年 1 月 1 日に約 22% (1 兆 8,699 億ドルに対し 4,040.1 億ドル)。本エントリー最終更新時点で参照した同社の値では約 17.5% である。
+
+ただし、この数列を供給設計の採点表として読むことはできない。85% の記録は焼却機構 (2021 年 8 月) より前、発行を 88% 削った移行 (2022 年 9 月) よりさらに前の日付に付いており、この 2 つの変更より後の日付として上に挙げた値は、いずれもそれを大きく下回っている。時価総額は規制、機関投資家の資金、競合チェーン、上場商品の有無といった多数の要因が同時に動かす量であって、そのうちどれだけが発行方式に帰属するかを、ここに挙げた記録から切り分けることはできない。並べられるのは、二つの設計がそれぞれ 15 年をどう歩いたかという事実までである。
 
 そのうえで、閉じない問いが一つ残る。どの貨幣観が最後に残るかは、ここまでの記録からは出てこない。これは安全のために初めから「分からない」と言っているのではなく、各設計の代償を見比べた末に、それでも決まらない残余だ。固定上限のセキュリティ予算が発行終了後に保つか、イーサリアムの動的応答がもたらす希少化が利用の波に耐えるか、弾力的供給が現実に分散実装できるか ― いずれも 2140 年や、その手前の数十年が答える問いで、15 年の記録は答えを持たない。
 

@@ -35,6 +35,11 @@ tags:
   - "analysis"
   - "history"
 secondarySources:
+  - name: "CoinMarketCap — historical snapshot, June 12, 2017"
+    url: "https://coinmarketcap.com/historical/20170612/"
+    note: "Bitcoin $43.59bn against Ethereum $37.11bn."
+  - name: "CoinMarketCap — historical snapshot, May 12, 2021"
+    url: "https://coinmarketcap.com/historical/20210512/"
   - name: "Wikipedia — Bitcoin Cash"
     url: "https://en.wikipedia.org/wiki/Bitcoin_Cash"
   - name: "Wikipedia — Bitcoin SV"
@@ -55,6 +60,7 @@ secondarySources:
     url: "https://blockchair.com/bitcoin-cash/block/478558"
 relatedEntries:
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
+  - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - bip/2015-12-21-bip-0141
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
@@ -163,6 +169,8 @@ Three structural factors are commonly cited to explain why none of the breakaway
 These observations are descriptive, not prescriptive. They do not rule out a future fork that gains share, only record what happened between 2009 and 2024.
 
 <!-- chart: crypto-race -->
+
+One entry in that race drew close to Bitcoin's own valuation. CoinMarketCap's snapshot for June 12, 2017 puts Ethereum's market capitalisation at about 85% of Bitcoin's — $37.1bn against $43.6bn — the period in which the prospect of an overtake acquired a name, "the flippening." No overtake appears in the later snapshots cited here: the same source shows about 48% on May 12, 2021, and the figures consulted when this entry was last revised put the ratio near 17.5%. What that ratio can and cannot say about the two chains' opposite issuance designs is taken up in [the fixed-supply-vs-adjustable-money analysis](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/).
 
 ## 5. Limits of this entry
 

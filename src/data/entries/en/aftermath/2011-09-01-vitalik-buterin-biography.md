@@ -68,6 +68,8 @@ The whitepaper itself — `Ethereum: A Next-Generation Smart Contract and Decent
 
 In January 2014 Buterin announced Ethereum at the North American Bitcoin Conference in Miami. Throughout 2014 he secured funding (the Ethereum crowdsale, July 2014), assembled co-founders — most of whom were also active in the Bitcoin / cypherpunk space at the time: Gavin Wood (later Polkadot), Charles Hoskinson (later Cardano), Joseph Lubin (later ConsenSys), Anthony Di Iorio, Mihai Alisie, Amir Chetrit — and led the development effort that produced the Ethereum mainnet (Frontier release) on July 30, 2015.
 
+One thing Buterin did not carry over from Bitcoin was the supply cap. The [2014 Ethereum whitepaper](https://ethereum.org/en/whitepaper/) states the choice against Bitcoin by name — "the existence of a permanently growing linear supply, as opposed to a capped supply as in Bitcoin" — and gives as its reason the wish to blunt what some read as excessive wealth concentration in Bitcoin and to leave people born into later eras a fair chance at acquiring units. Where that decision sits in the monetary-design argument that runs from b-money onward is taken up in [the fixed-supply-vs-adjustable-money analysis](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/).
+
 Buterin's post-2014 activity is principally Ethereum and is outside the scope of this archive. The chains and protocols he has touched since (Ethereum mainnet, the Beacon Chain merge to proof-of-stake, layer-2 rollups, etc.) are documented in Ethereum's own historical record.
 
 ## Bitcoin-period timeline (2011–2014)

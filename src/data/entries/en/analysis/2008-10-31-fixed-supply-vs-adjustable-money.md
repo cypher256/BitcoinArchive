@@ -37,6 +37,37 @@ secondarySources:
     url: "https://www.boj.or.jp/en/mopo/outline/index.htm"
   - name: "Ethereum — EIP-1559: Fee market change"
     url: "https://eips.ethereum.org/EIPS/eip-1559"
+  - name: "Ethereum whitepaper — Currency and Issuance"
+    url: "https://ethereum.org/en/whitepaper/"
+    note: "States the choice of a permanently growing linear supply over a Bitcoin-style cap, and its stated reason."
+  - name: "Ethereum Foundation — The Issuance Model in Ethereum (April 10, 2014)"
+    url: "https://blog.ethereum.org/2014/04/10/the-issuance-model-in-ethereum"
+  - name: "Ethereum Foundation — Launching the Ether Sale (July 22, 2014)"
+    url: "https://blog.ethereum.org/2014/07/22/launching-the-ether-sale"
+    note: "Final annual issuance ratio of 0.26x, revised from the 0.50x proposed in January."
+  - name: "Ethereum — EIP-649: Byzantium block reward reduction to 3 ETH"
+    url: "https://eips.ethereum.org/EIPS/eip-649"
+  - name: "Ethereum — EIP-1234: Constantinople block reward reduction to 2 ETH"
+    url: "https://eips.ethereum.org/EIPS/eip-1234"
+  - name: "Ethereum — Issuance after The Merge"
+    url: "https://ethereum.org/roadmap/merge/issuance/"
+    note: "Execution-layer issuance to zero; ~13,000 to ~1,700 ETH/day, about an 88% cut."
+  - name: "Buterin — EIP-960: hard cap of 120,204,432 ETH (April 2018, not adopted)"
+    url: "https://github.com/ethereum/EIPs/issues/960"
+  - name: "CoinMarketCap — historical snapshot, June 12, 2017"
+    url: "https://coinmarketcap.com/historical/20170612/"
+    note: "Bitcoin $43.59bn against Ethereum $37.11bn."
+  - name: "CoinDesk — The Flippening: Will Ether Pass Bitcoin? (June 13, 2017)"
+    url: "https://www.coindesk.com/markets/2017/06/13/the-flippening-will-ether-pass-bitcoin-and-what-would-it-mean"
+  - name: "CoinMarketCap — historical snapshot, May 12, 2021"
+    url: "https://coinmarketcap.com/historical/20210512/"
+    note: "Bitcoin $919.5bn against Ethereum $438.6bn."
+  - name: "CoinMarketCap — historical snapshot, July 1, 2016"
+    url: "https://coinmarketcap.com/historical/20160701/"
+  - name: "CoinMarketCap — historical snapshot, December 15, 2018"
+    url: "https://coinmarketcap.com/historical/20181215/"
+  - name: "CoinMarketCap — historical snapshot, January 1, 2025"
+    url: "https://coinmarketcap.com/historical/20250101/"
   - name: "Carlsten, Kalodner, Weinberg, Narayanan — 'On the Instability of Bitcoin Without the Block Reward' (ACM CCS 2016)"
     url: "https://www.cs.princeton.edu/~arvindn/publications/mining_CCS.pdf"
   - name: "Monero — Tail Emission (Moneropedia)"
@@ -47,6 +78,7 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Dogecoin"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
+  - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
@@ -95,9 +127,11 @@ timeline
     %% link: /BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/
     2013 : Wei Dai regrets not responding (Apr)
     %% link: /BitcoinArchive/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/
+    2014 : Ethereum settles on 0.26x yearly - still no cap (Jul)
     2015 : Ethereum mainnet - no hard cap (Jul)
+    2018 : Buterin proposes a cap himself - not adopted (Apr)
     2021 : EIP-1559 fee burn live (Aug)
-    2022 : Ethereum Merge - PoS issuance -90 percent (Sep)
+    2022 : Ethereum Merge - issuance becomes state-dependent (Sep)
 ```
 
 ## 2. The cypherpunk baseline: b-money's elastic supply (1998)
@@ -195,13 +229,23 @@ The distribution across this table reads as a *spectrum* rather than a consensus
 
 ## 7. Ethereum's divergent path
 
-[Vitalik Buterin's](/BitcoinArchive/participants/vitalik-buterin/) Ethereum (mainnet July 2015) is the most-cited explicit counterpoint to Bitcoin's hard-cap model. Three design moves shaped the current Ethereum supply curve:
+[Vitalik Buterin's](/BitcoinArchive/participants/vitalik-buterin/) Ethereum (mainnet July 2015) is the most-cited explicit counterpoint to Bitcoin's hard-cap model.
 
-1. **Original issuance (2015-2022)**: ~4-5% annual inflation under Proof-of-Work, with no hard supply cap defined.
+The absence of a cap is not a later reversal; it is written into the founding document. The 2014 whitepaper states the choice against Bitcoin by name — "the existence of a permanently growing linear supply, as opposed to a capped supply as in Bitcoin" — and gives its reason in the same passage: to blunt what some read as excessive wealth concentration in Bitcoin, and to leave people born into later eras a fair chance at acquiring units.
+
+What moved was the annual rate. A January 2014 proposal set issuance at 0.50x the amount sold; the Foundation's April blog fixed it at 18,000,000 ETH per year (0.3x); the July sale terms cut it to 0.26x. Three revisions in six months, each of them stating a figure for how much is minted each year; none of the three states a total beyond which no more would exist.
+
+Three moves then shaped the supply curve as it stands:
+
+1. **Original issuance (2015-2022)**: the proof-of-work block reward was a flat figure. It opened at 5 ETH and was cut twice by hard fork — to 3 ETH at Byzantium on October 16, 2017 ([EIP-649](https://eips.ethereum.org/EIPS/eip-649)), and to 2 ETH at Constantinople on February 28, 2019 ([EIP-1234](https://eips.ethereum.org/EIPS/eip-1234)). Each EIP specifies the new reward as a literal constant taking effect at a fork block; neither ties the figure to any measure of network state.
 2. **EIP-1559 (August 2021)**: introduced base-fee burning. Every transaction's base fee is destroyed rather than paid to the miner / validator, creating a net-deflationary pressure proportional to network usage. During periods of high activity, ETH supply contracts.
-3. **The Merge (September 2022)**: transition to Proof-of-Stake reduced new issuance from ~13K ETH/day to ~1.7K ETH/day, a ~90% reduction. Combined with EIP-1559 burn, periods of high network use have driven ETH supply *net deflationary* during stretches since the Merge.
+3. **The Merge (September 2022)**: the move to proof-of-stake took execution-layer issuance to zero and cut new issuance from roughly 13,000 ETH/day to roughly 1,700 — about 88%.
 
-The combined effect — no hard cap, but dynamic supply that responds to network usage — is closer to b-money's *responsive-to-conditions* principle than to Bitcoin's *fixed-by-schedule* principle, but the response variable is network demand rather than basket-price stability. Ethereum's own community vocabulary ("Ultra Sound Money", a play on Bitcoin's "Sound Money" framing) makes the contrast explicit.
+The Merge changed more than the quantity. **It replaced the way issuance is decided.** Under proof-of-stake a validator's base reward is computed each epoch from a formula whose denominator is the square root of all ETH staked: the more that is staked, the thinner each unit of issuance becomes. Issuance stopped being a number written in the protocol and became a number derived from the network's own state — not a schedule, but a response.
+
+The combined effect — no hard cap, but supply that answers to the state of the network — is closer to b-money's *responsive-to-conditions* principle than to Bitcoin's *fixed-by-schedule* principle, though what it answers to is stake and demand rather than the basket price b-money aimed at. Ethereum's own community vocabulary ("Ultra Sound Money", a play on Bitcoin's "Sound Money" framing) makes the contrast explicit.
+
+And the person who ruled out a cap later filed one. In April 2018 Buterin submitted [EIP-960](https://github.com/ethereum/EIPs/issues/960), proposing to bound the total at 120,204,432 ETH — exactly twice the amount sold at launch. It was not adopted. Four years after the launch terms were set, a total cap was on the table again, proposed by the author of the design that had declined one.
 
 ## 8. Why a cap, why none — the monetary bet each design makes
 
@@ -247,6 +291,10 @@ What this reveals is not a ranking but a chain of bets reacting to one another's
 ## 9. What the record supports, and what stays open
 
 This is as far as the record reaches. How to decide supply was a genuinely open fork in 2008 — Wei Dai, whom Bitcoin cited, calls fixed supply "a particular design decision Satoshi could have been argued out of" (§4). And each side of the fork reacts to the other's real harm, not to a hypothetical: the hard cap to the debasement fiat discretion produced; the variable-supply designs — dynamic response, tail emission, elastic supply, fixed-rate inflation — to the hoarding, the eroded cash use, and the thinning post-issuance security budget a hard cap produces. Each looked at the cost the other is visibly paying in the record, and chose a different cost. This is not a both-sides draw. It is the shape of distinct monetary worldviews, each internally consistent, each avoiding a different failure.
+
+So how did the market move? Set the two designs side by side by market capitalisation and CoinMarketCap's dated snapshots record this: Ethereum, the one that declined a cap, stood against Bitcoin at roughly 9% on July 1, 2016 ($0.99bn against $10.6bn); at about 85% on June 12, 2017 ($37.1bn against $43.6bn), the stretch when people talked about "the flippening"; at about 16% on December 15, 2018 ($8.8bn against $56.4bn); at about 48% on May 12, 2021 ($438.6bn against $919.5bn); and at about 22% on January 1, 2025 ($404.0bn against $1,869.9bn). At the figures consulted when this entry was last revised, the ratio was near 17.5%.
+
+That series cannot be read as a scorecard on supply design. The 85% reading carries a date earlier than the burn mechanism (August 2021), and earlier still than the transition that cut issuance by 88% (September 2022); every reading quoted above from after those two changes sits well below it. Market capitalisation moves on regulation, institutional flows, rival chains, the existence of listed products, and much else at once, and nothing in the figures above separates out how much belongs to an issuance rule. What can be set beside each other is only this: how each of the two designs walked its fifteen years.
 
 One question stays open past that. Which worldview lasts is not something the record so far can yield. This is not the safe, opening "we can't know"; it is the residue left after weighing each design's cost and still not settling. Whether a hard cap's security budget holds after issuance ends, whether Ethereum's dynamic-response scarcity survives the swings of usage, whether an elastic supply can actually be implemented in a decentralized way — each is a question that 2140, or the decades before it, will answer, and fifteen years of record cannot.
 
