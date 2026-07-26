@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
   - design/2009-01-03-bitcoin-transaction-design
+  - aftermath/2010-07-18-jed-mccaleb-biography
 translationStatus: complete
 ---
 

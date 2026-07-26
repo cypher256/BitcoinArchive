@@ -35,6 +35,8 @@ relatedEntries:
   - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
+  - aftermath/2018-09-26-jeremy-allaire-biography
+  - analysis/2026-07-26-altcoin-count-and-design-comparison
 inlineLinkKeywords:
   - "電子キャッシュ"
   - "電子キャッシュの夢"

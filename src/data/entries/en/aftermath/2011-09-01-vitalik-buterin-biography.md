@@ -34,6 +34,8 @@ relatedEntries:
   - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - aftermath/2011-03-17-pieter-wuille-biography
+  - aftermath/2013-01-01-charles-hoskinson-biography
+  - analysis/2026-07-26-altcoin-count-and-design-comparison
 ---
 
 ![A faceless silhouette beside a Bitcoin Magazine cover mockup, a code-editor panel of Python commands, and a branching timeline running from 2011 through 2014](/BitcoinArchive/images/analysis/2011-09-01-vitalik-buterin-biography-hero.png)

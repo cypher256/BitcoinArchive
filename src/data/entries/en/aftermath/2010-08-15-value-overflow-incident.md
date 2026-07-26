@@ -41,6 +41,7 @@ relatedEntries:
   - aftermath/2010-07-11-slashdot-bitcoin-article
   - aftermath/2014-02-28-mt-gox-bankruptcy
   - design/2009-01-03-bitcoin-consensus-design
+  - aftermath/2014-04-18-riccardo-spagni-biography
 quotes:
   - id: "q1"
     person: "Jeff Garzik"

@@ -69,6 +69,7 @@ secondarySources:
     url: "https://blockchair.com/bitcoin-cash/block/478558"
 relatedEntries:
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
+  - aftermath/2011-10-13-charlie-lee-biography
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - bip/2015-12-21-bip-0141
@@ -89,6 +90,12 @@ relatedEntries:
   - aftermath/2013-10-01-mike-belshe-biography
   - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - aftermath/2013-01-01-charles-hoskinson-biography
+  - aftermath/2017-01-01-anatoly-yakovenko-biography
+  - aftermath/2014-04-18-riccardo-spagni-biography
+  - aftermath/2010-07-18-jed-mccaleb-biography
+  - aftermath/2015-04-24-jackson-palmer-biography
+  - analysis/2026-07-26-altcoin-count-and-design-comparison
 inlineLinkKeywords:
   - "ビットコイン分岐の系譜"
   - "ブロックサイズ戦争"
@@ -189,3 +196,4 @@ timeline
 - **社会政治的な枠組み**。上記のブロックサイズ戦争の語りは、参加者たち自身が残した文書 ([ハーンの 2016 年 1 月のエッセイ](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)、[ベルシェの 2017 年 11 月の中止投稿](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/)、GitHub PR スレッド等) に基づいている。技術的な是非についていずれの側が正しかったかを決着させるものではない。それは別個の規範的問いであり、本目録の対象外である。
 
 本目録は、ブロックサイズ戦争・ビットコインキャッシュ主要アクターの人物伝記の上流参照となる ― [ロジャー・ヴァー](/BitcoinArchive/ja/participants/roger-ver/)、 [ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/) (イーサリアム系譜)、 [マイク・ベルシェ](/BitcoinArchive/ja/participants/mike-belshe/)、 [アモリー・セシェ](/BitcoinArchive/ja/participants/amaury-sechet/) ― それぞれ対象人物を位置付ける際に本フォーク系譜に戻る。 [Core 再ブランディング権威効果分析](/BitcoinArchive/ja/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/)と[デジタルゴールド構造的特徴分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)はいずれも本目録を、 2017 年以降のビットコイン軌道に関するガバナンス・通貨特性議論の中核的な事実基盤として扱う。
+本目録が意図的に対象外としているチェーン ─ 設計がビットコインのコードから派生していないもの ─ は、暗号通貨がそもそも何種類あるのかという問いとあわせて、[アルトコインの数と設計の比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)がそれぞれの軸で比べている。

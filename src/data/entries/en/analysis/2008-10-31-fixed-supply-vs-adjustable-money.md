@@ -81,6 +81,7 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Dogecoin"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
+  - aftermath/2011-10-13-charlie-lee-biography
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement
@@ -96,6 +97,13 @@ relatedEntries:
   - design/2009-01-03-bitcoin-monetary-design
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2010-02-21-bitcoin-price-vs-production-cost
+  - aftermath/2013-01-01-charles-hoskinson-biography
+  - aftermath/2017-01-01-anatoly-yakovenko-biography
+  - aftermath/2018-09-26-jeremy-allaire-biography
+  - aftermath/2014-04-18-riccardo-spagni-biography
+  - aftermath/2010-07-18-jed-mccaleb-biography
+  - aftermath/2015-04-24-jackson-palmer-biography
+  - analysis/2026-07-26-altcoin-count-and-design-comparison
 inlineLinkKeywords:
   - "fixed supply"
   - "21 million cap"
@@ -308,3 +316,4 @@ Two notes on scope. **Comparable data** — the supply figures in §6 are protoc
 The Hayekian framing of the hard-cap-vs-adjustable debate — Hayek's 1976 *Denationalisation of Money* argued for *competing adjustable* private issuance, which Bitcoin replaces with a *single algorithmic fixed* schedule — is treated as a longer ideological-lineage analysis in [the Hayek-Extropian lineage entry](/BitcoinArchive/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/).
 
 This fixed-supply analysis is anchored in two adjacent readings. [The Hayek-Extropian lineage analysis](/BitcoinArchive/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/) names this entry as the "companion" that elaborates the Hayek-Bitcoin divergence on issuer competition vs algorithmic commitment, returning to it across §3.2. [The mining-reward-exhaustion analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/) positions itself explicitly as the post-issuance counterpart of this fixed-supply argument — the question the 21-million cap forces the network to answer once new issuance ends.
+Where those supply designs sit against the other axes each chain chose — consensus, initial distribution, ledger privacy, and who can change the rules — is tabulated in [the altcoin count and design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/), which borrows this entry's issuance column rather than restating it.

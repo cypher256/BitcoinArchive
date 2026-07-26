@@ -30,6 +30,7 @@ relatedEntries:
   - aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
   - design/2009-01-03-bitcoin-transaction-design
+  - aftermath/2010-07-18-jed-mccaleb-biography
 ---
 
 ![A dark navy infographic showing a cracked open vault marked with a large numeral, a market-share progress bar, a red ascending timeline linking several dated points, and a glowing network diagram beside a faint city-skyline silhouette.](/BitcoinArchive/images/analysis/2014-02-28-mt-gox-bankruptcy-hero.png)

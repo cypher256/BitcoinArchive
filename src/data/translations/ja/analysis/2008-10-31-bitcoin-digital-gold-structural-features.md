@@ -31,6 +31,9 @@ relatedEntries:
   - aftermath/2011-04-26-satoshi-final-known-email
   - aftermath/2020-07-20-whale-alert-satoshi-fortune
   - analysis/2026-07-09-bitcoin-ownership-map
+  - aftermath/2017-01-01-anatoly-yakovenko-biography
+  - aftermath/2018-09-26-jeremy-allaire-biography
+  - analysis/2026-07-26-altcoin-count-and-design-comparison
 inlineLinkKeywords:
   - "デジタルゴールド"
   - "二層の非中央集権"
@@ -205,3 +208,4 @@ flowchart TB
 本構造的特徴分析は[ビットコイン・フォークおよびアルトコイン家系図分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)において文脈規定的な役割を与えられている。同分析の結びの段落は本エントリを「フォーク目録をビットコインの 2017 年以後の軌道に対する統治論・通貨的性質論の根拠となる事実基盤として扱う二つの分析」の一方として名指す。
 
 保有の側から見た 2026 年の現在地 — 企業財務・現物 ETF・国家準備がサトシの動かない約 110 万 BTC にどこまで迫ったか、そして保有の集中がなぜ第 2 層の言うプロトコルへの権威にならないか — は[誰がビットコインを握っているのか](/BitcoinArchive/ja/entries/analysis/2026-07-09-bitcoin-ownership-map/)が描いている。
+上の六つの特徴を 12 チェーンに一度に当てはめたものは ─ 表ごとの凡例と、記号を点数として読まないようにという明示的な注記を添えて ─ [アルトコインの数と設計の比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)にある。

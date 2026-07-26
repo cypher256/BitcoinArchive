@@ -23,8 +23,10 @@ secondarySources:
     url: "https://dogecoin.com/"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - aftermath/2011-10-13-charlie-lee-biography
   - aftermath/2011-04-18-namecoin-launch
   - aftermath/2011-10-13-litecoin-launch
+  - aftermath/2015-04-24-jackson-palmer-biography
 inlineLinkKeywords:
   - "Dogecoin"
 ---

@@ -63,7 +63,7 @@ Private email exchanges between Satoshi and key participants:
 ### Articles (164 entries)
 Media coverage, research articles, and post-disappearance historical analysis from various sources including Bitcoin Magazine, CoinDesk, Wired, Forbes, and academic publications.
 
-### Biographies (42 entries)
+### Biographies (49 entries)
 Biographical profiles of key participants compiled from multiple public sources. These are not direct transcriptions of any single document.
 
 ### Bitcoin Improvement Proposals (9 entries)

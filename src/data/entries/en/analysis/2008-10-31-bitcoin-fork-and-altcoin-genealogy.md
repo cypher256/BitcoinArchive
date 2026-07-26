@@ -69,6 +69,7 @@ secondarySources:
     url: "https://blockchair.com/bitcoin-cash/block/478558"
 relatedEntries:
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
+  - aftermath/2011-10-13-charlie-lee-biography
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - bip/2015-12-21-bip-0141
@@ -89,6 +90,12 @@ relatedEntries:
   - aftermath/2013-10-01-mike-belshe-biography
   - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - aftermath/2013-01-01-charles-hoskinson-biography
+  - aftermath/2017-01-01-anatoly-yakovenko-biography
+  - aftermath/2014-04-18-riccardo-spagni-biography
+  - aftermath/2010-07-18-jed-mccaleb-biography
+  - aftermath/2015-04-24-jackson-palmer-biography
+  - analysis/2026-07-26-altcoin-count-and-design-comparison
 inlineLinkKeywords:
   - "Bitcoin fork genealogy"
   - "block-size war"
@@ -190,3 +197,4 @@ One entry in that race drew close to Bitcoin's own valuation. CoinMarketCap's sn
 - **Sociopolitical framing.** The block-size war narrative above leans on documents the participants themselves left behind ([Hearn 2016-01 essay](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/), [Belshe 2017-11 cancellation post](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/), GitHub PR threads). It does not claim to settle which side was correct on the technical merits; that is a separate normative question, not within this catalog's scope.
 
 This catalog is the upstream reference for participant-biography entries on the block-size war and Bitcoin Cash actors — [Roger Ver](/BitcoinArchive/participants/roger-ver/), [Vitalik Buterin](/BitcoinArchive/participants/vitalik-buterin/) (Ethereum lineage), [Mike Belshe](/BitcoinArchive/participants/mike-belshe/), and [Amaury Séchet](/BitcoinArchive/participants/amaury-sechet/) — each of which reaches back into this fork tree when situating the subject. The [Core-rebrand authority-effects analysis](/BitcoinArchive/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/) and the [digital-gold structural-features analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) both treat this catalog as the load-bearing factual base for governance and monetary-property arguments about Bitcoin's post-2017 trajectory.
+The chains this catalog deliberately leaves out — those whose design does not descend from Bitcoin's code — are compared on their own axes, alongside the question of how many cryptocurrencies exist at all, in [the altcoin count and design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/).

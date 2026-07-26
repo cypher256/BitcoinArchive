@@ -81,6 +81,7 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Dogecoin"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
+  - aftermath/2011-10-13-charlie-lee-biography
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement
@@ -96,6 +97,13 @@ relatedEntries:
   - design/2009-01-03-bitcoin-monetary-design
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2010-02-21-bitcoin-price-vs-production-cost
+  - aftermath/2013-01-01-charles-hoskinson-biography
+  - aftermath/2017-01-01-anatoly-yakovenko-biography
+  - aftermath/2018-09-26-jeremy-allaire-biography
+  - aftermath/2014-04-18-riccardo-spagni-biography
+  - aftermath/2010-07-18-jed-mccaleb-biography
+  - aftermath/2015-04-24-jackson-palmer-biography
+  - analysis/2026-07-26-altcoin-count-and-design-comparison
 inlineLinkKeywords:
   - "固定供給"
   - "2100 万枚上限"
@@ -309,3 +317,4 @@ quadrantChart
 ハードキャップ vs 調整可能の論争のハイエク的枠組み ― ハイエク 1976 年『貨幣発行自由化論』は*競合する調整可能な*私的発行を論じたが、ビットコインはそれを*単一のアルゴリズム固定*スケジュールで置き換えた ― は[ハイエク=エクストロピアン系譜エントリー](/BitcoinArchive/ja/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/)で、より長い思想史的系譜分析として扱う。
 
 本固定供給分析は、二つの隣接する読解に支えられている。 [ハイエク=エクストロピアン系譜分析](/BitcoinArchive/ja/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/)は本エントリを、発行者間競争対アルゴリズム的確約というハイエク=ビットコイン分岐を詳説する「伴走エントリ」と名指し、 §3.2 で繰り返し戻ってくる。 [マイニング報酬枯渇分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)は自らを本固定供給論証の発行終了後の対応物として明示的に位置付ける ― 新規発行が終わった後にネットワークに答えさせる 2,100 万枚上限の問いとして、である。
+これらの供給設計が、各チェーンの選んだ他の軸 ─ 合意形成・初期配分・台帳の可視性・規則を変えられるのは誰か ─ とどう並ぶかは、[アルトコインの数と設計の比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)が表にしている。そちらは本エントリーの発行の列を借りるだけで、言い直してはいない。

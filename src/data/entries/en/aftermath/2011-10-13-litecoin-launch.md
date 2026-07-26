@@ -21,6 +21,7 @@ secondarySources:
     url: "https://litecoin.org/"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - aftermath/2011-10-13-charlie-lee-biography
   - aftermath/2011-04-18-namecoin-launch
   - aftermath/2013-12-06-dogecoin-launch
   - aftermath/2011-08-01-jihan-wu-biography
