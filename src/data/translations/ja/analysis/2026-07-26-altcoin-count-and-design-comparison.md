@@ -75,6 +75,10 @@ secondarySources:
     url: "https://www.dlnews.com/articles/markets/milei-backs-away-from-libra-memecoin-after-90-crash-not-aware-of-the-details/"
   - name: "CryptoSlate — MELANIA の内部者売却と価格崩壊"
     url: "https://cryptoslate.com/insights/melania-insiders-dump-35m-in-tokens-as-price-crashes-over-98/"
+  - name: "JPYC — 資金移動業者の登録と円建てステーブルコインの裏付け資産について (2025 年 8 月)"
+    url: "https://prtimes.jp/main/html/rd/p/000000274.000054018.html"
+  - name: "The Japan Times — 初の円連動ステーブルコイン JPYC が発行される (2025 年 10 月 27 日)"
+    url: "https://www.japantimes.co.jp/business/2025/10/27/tech/jpyc-first-yen-pegged-stablecoin/"
   - name: "SEC — 開示なしの暗号資産宣伝についてキム・カーダシアンを提訴・和解 (2022 年 10 月 3 日)"
     url: "https://www.sec.gov/newsroom/press-releases/2022-183"
   - name: "arXiv — pump.fun の到達率に関する最初の大規模調査"
@@ -248,6 +252,8 @@ USDT と USDC は網羅のために上の表に入れてあり、構造的特徴
 
 <!-- audit:quote-skip -->
 > この手法は分かれてはいるが、完全に分散していると称するものでも、それを目指すものでもない。
+
+釘付けもまた一枚岩ではない。違いは、誰が、どんな義務のもとでその釘を保証しているかにある。USDC の準備構成は自主的な開示の産物だった。2021 年にはコマーシャルペーパーと社債を抱え、その後に現金および現金同等物へ移した。統治体の CENTRE は 2023 年に解散したが、保有者の同意は要らなかった。もう一方に、法律による型がある。日本の改正資金決済法は円建てのドル連動型を登録制度の下に置き、JPYC 株式会社は 2025 年 8 月 18 日に資金移動業者として登録され（関東財務局長第 00099 号）、「裏付け資産は日本円（預貯金および国債）によって保全します」と述べている。発行開始は 2025 年 10 月 27 日である。準備の規則が会社の方針なのか免許の条件なのかは、上の構造上の判定を変えない。発行主体は依然として存在し、依然として残高を凍結できる。変わるのは、発行主体が考えを変えたときに約束がどれだけ残るかであり、それは別の軸で、しかも実在する軸である。
 
 この取引で買えるのは、ビットコインが提供しないもの ─ 家賃の計算に使う通貨に対して動かない単位である。代償は §3 のすべての性質になる。[ジェレミー・アレールの記録](/BitcoinArchive/ja/participants/jeremy-allaire/)は両側をもっとも明快に述べている。主権の外にある資産を擁護しながら、主権の内側にある資産を売っているからだ。
 

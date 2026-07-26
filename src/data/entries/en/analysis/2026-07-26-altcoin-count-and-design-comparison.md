@@ -74,6 +74,10 @@ secondarySources:
     url: "https://www.dlnews.com/articles/markets/milei-backs-away-from-libra-memecoin-after-90-crash-not-aware-of-the-details/"
   - name: "CryptoSlate — MELANIA insider selling and the price collapse"
     url: "https://cryptoslate.com/insights/melania-insiders-dump-35m-in-tokens-as-price-crashes-over-98/"
+  - name: "JPYC — funds-transfer-provider registration and the yen stablecoin's backing assets (August 2025)"
+    url: "https://prtimes.jp/main/html/rd/p/000000274.000054018.html"
+  - name: "The Japan Times — JPYC, the first yen-pegged stablecoin, is issued (October 27, 2025)"
+    url: "https://www.japantimes.co.jp/business/2025/10/27/tech/jpyc-first-yen-pegged-stablecoin/"
   - name: "SEC — charges against Kim Kardashian for undisclosed crypto promotion (October 3, 2022)"
     url: "https://www.sec.gov/newsroom/press-releases/2022-183"
   - name: "arXiv — first large-scale pump.fun graduation-rate study"
@@ -246,6 +250,8 @@ USDT and USDC appear in the tables above for completeness, and every structural 
 
 <!-- audit:quote-skip -->
 > This approach is distributed, though it does not purport to be -- or aim to be -- entirely decentralized.
+
+The peg is not one design, either, and the difference is in who guarantees it and under what obligation. USDC's reserve composition was a matter of voluntary disclosure — it held commercial paper and corporate bonds in 2021 and moved to cash and cash equivalents afterwards, and its governance body was dissolved in 2023 with no reader's consent required. The alternative is a statutory one. Japan's revised Payment Services Act put yen-denominated stablecoins under a registration regime, and JPYC Inc. registered as a funds-transfer provider on August 18, 2025 (Kanto Local Finance Bureau No. 00099), stating that "the backing assets are secured in Japanese yen (deposits and government bonds)"; issuance began on October 27, 2025. Whether a reserve rule is a company's policy or a licence condition does not change the structural verdict above — there is still an issuer, and the issuer can still freeze a balance. It changes how much of the promise survives the issuer changing its mind, which is a different axis and a real one.
 
 What that trade buys is the thing Bitcoin does not offer: a unit that does not move against the currency your rent is denominated in. What it costs is every property in §3. [Jeremy Allaire's record](/BitcoinArchive/participants/jeremy-allaire/) is the clearest statement of both sides, because he argues for the non-sovereign asset while selling the sovereign one.
 
