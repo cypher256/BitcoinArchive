@@ -45,4 +45,4 @@ translationStatus: complete
 
 ハニエツはサトシのコミュニケーションスタイルを「パラノイア的だった」「ボスっぽかった」「ちょっと変だった」と表現したが、macOS 移植や GPU マイニングの初期実験を含む重要な開発作業をプロジェクトに貢献し続けた。
 
-本通信記録は[ラズロ・ハニエツ伝記](/BitcoinArchive/ja/participants/laszlo-hanyecz/)によって決定的な一次証拠として扱われる。同伝記は、ピザの日以前のハニエツによる macOS 移植および GPU マイニング貢献の語りを、本エントリに記録されたサトシの指示を土台として展開する。
+[ラズロ・ハニエツの伝記](/BitcoinArchive/ja/participants/laszlo-hanyecz/)は、ピザの日より前の macOS 移植と GPU マイニングの経緯を、ここに記録されたサトシの助言の上に組み立てている。

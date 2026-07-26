@@ -90,7 +90,7 @@ inlineLinkKeywords:
 
 Sixteen years of documented public attempts. Hundreds of forum posts, several mailing-list archives, multiple email corpora, source code, and over a thousand pages of journalism — all addressing the same question. And no identification that survives scrutiny. This entry reads the relationship between (a) the repeated public attempts to identify Satoshi Nakamoto, (b) the surviving material Satoshi left behind, and (c) the persistent identification gap as a structural asymmetry. Conjectural inferences are confined to §6 (Limits).
 
-This is the third companion to the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) ("who is Satoshi") and the [anonymity architecture](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/) ("how did Satoshi remain anonymous"). It asks the inverse question: given so much surviving material and so many attempts, why does the gap persist.
+Who Satoshi is has [its own reading](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), and so does [how Satoshi stayed anonymous](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/). The question here is the inverse of both: given so much surviving material and so many attempts, why does the gap persist.
 
 ## 1. Repeated public attempts and recorded interest
 
@@ -251,9 +251,9 @@ It is possible that off-record investigative resources are larger than the publi
 
 ## 6. Limits
 
-- **Off-record state-actor pursuit is not in scope.** Sustained intelligence-agency or law-enforcement effort directed specifically at identifying Satoshi may exist; it is not in the public record at the time of writing. The entry does not assert it does, and does not assert it does not. It is held outside the main argument because evidence-free claims about state-actor activity are not the kind of statement an archive should make.
+- **Off-record state-actor pursuit is not in scope.** Sustained intelligence-agency or law-enforcement effort directed specifically at identifying Satoshi may exist; it is not in the public record at the time of writing. The entry does not assert it does, and does not assert it does not. Evidence-free claims about state-actor activity are not the kind of statement this record makes.
 - **Conspiratorial readings are not in scope.** Specifically, this entry does not entertain the reading that any state actor or institution has already identified Satoshi but is withholding the result. Such a claim has no public evidence and would, if added to the record, change the entry's relationship to verifiable history. Other readers are free to draw such inferences from the §4 observation; this entry does not.
 - **§4 is correlational, not causal.** The asymmetry is between visible attempts and visible result. Mapping that to a causal mechanism requires choosing one of the §5 interpretations; the entry's role is to lay out the choice, not to make it.
 - **The §1 list is open-ended.** New attempts continue to enter the public record. The entry should be updated when material additions occur (new judgments, new state-actor events, new academic work). Listing closure as of the entry's last commit is not a claim that further attempts will not appear.
 
-This identification-asymmetry analysis is invoked by [the March 7, 2014 Satoshi P2P Foundation return entry](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/), which uses the asymmetry framework — claiming "X is Satoshi" requires materially stronger evidence than claiming "X is not" — as the documented analytical lens for reading the lone "I am not Dorian Nakamoto" post.
+The asymmetry does its clearest work on the one post that broke the silence. [The March 7, 2014 return to the P2P Foundation](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/) said only "I am not Dorian Nakamoto" — a denial that asks far less of the evidence than any positive identification would.

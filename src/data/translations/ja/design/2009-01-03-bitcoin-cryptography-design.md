@@ -280,4 +280,4 @@ flowchart TB
 - **量子移行提案** — BIP 360（P2MR / QuBit）および耐量子署名候補。[量子脅威分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-bitcoin-quantum-threat/)で扱う。
 - **閾値署名とマルチシグ方式** — FROST、MuSig2 プロトコルの詳細、この基本要素概説の範囲を超える k-of-n 構成。
 
-本暗号設計は、二つの関連する設計書エントリーが依拠する基本要素層である。 [セキュリティモデル](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-security-model/)は脅威モデル論証を、本エントリで文書化されたハッシュ関数および署名基本要素の上に構築する。 [トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)は、署名方式とハッシュ関数の解説を本エントリーに委ね、土台となる参照先として扱う。
+ここに並ぶ基本要素は、[セキュリティモデル](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-security-model/)が脅威モデルを組み立てる土台であり、[トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)のあらゆるトランザクションが消費するものでもある。

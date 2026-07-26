@@ -241,4 +241,3 @@ timeline
 
 フィニー説は[サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)で Group B に分類され、総覧の「必要だが十分でない」評価枠組みの主要な比較対象の一つになっている。
 
-*[編者注：本エントリーは 2014 年 3 月 25 日 Forbes 記事を、長期にわたる仮説の最も目立つ公的提唱として用いる。]*

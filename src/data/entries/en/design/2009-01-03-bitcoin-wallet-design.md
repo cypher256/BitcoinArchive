@@ -377,4 +377,4 @@ This page covers the wallet and interface layer of Bitcoin Core. The following t
 - **Third-party wallets** — Electrum, Sparrow, hardware wallets, and mobile wallets are application-layer software outside the Bitcoin Core reference implementation.
 - **Lightning Network** — layer-2 payment channels that build on the transaction and PSBT primitives described here but operate under a separate protocol.
 
-This wallet design is treated as the constructed-object layer by [the transaction design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/), which positions wallet construction as the user-facing layer that produces the transactions it documents.
+[The transaction design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/) picks up where this one ends: what a wallet constructs and signs is what the transaction layer carries.

@@ -44,7 +44,7 @@ The Kaneko-as-Satoshi hypothesis is the only major Satoshi-identity claim that e
 
 ## Background: who Kaneko was
 
-For readers outside Japan, brief background (per Kaneko's Wikipedia entry and the Winny Wikipedia entry; for full biographical and trial-timeline coverage see the [Isamu Kaneko biography](/BitcoinArchive/participants/isamu-kaneko/). This hypothesis entry covers the hypothesis only and is not a substitute for the biography):
+For readers outside Japan, brief background (per Kaneko's Wikipedia entry and the Winny Wikipedia entry; his life and the trial timeline are in the [Isamu Kaneko biography](/BitcoinArchive/participants/isamu-kaneko/)):
 
 Isamu Kaneko (金子勇, 1970–2013) was a Japanese researcher and software developer. He served as a research assistant at the University of Tokyo's Graduate School of Information Science and Technology and was the developer of **Winny**, a peer-to-peer file-sharing system released on the 2channel forum in May 2002. His first post on the announcement thread carried sequence number 47, and the community knew him as [**「47 氏」** ("Mr. 47")](/BitcoinArchive/participants/isamu-kaneko/) — he sustained that anonymous handle through the entire Winny development cycle until his real name was disclosed (origin detail in the biography). Winny used a routing scheme designed for plausible deniability of who originated each piece of content, and at peak the network had on the order of millions of users in Japan.
 
@@ -52,7 +52,7 @@ In May 2004, Kaneko was arrested by the Kyoto Prefectural Police on charges of *
 
 Kaneko died on July 6, 2013, of myocardial infarction. He was 42.
 
-This entry treats the Winny criminal case as historical fact. The *legal merits* of the case (whether Kaneko intended infringement, whether Winny itself was unlawful, the moral implications of the verdict) are **not used as arguments about the Satoshi identity question** — speculation that uses the criminal case to make a character claim against Kaneko is editorial overreach this entry avoids. However, an *empirical consequence* of the case — Kaneko's high public visibility during 2007–2008 as a convicted defendant on appeal under sustained scrutiny from police, prosecution, his legal team, the Japanese technical press, and the academic community — is a documentary fact that the visibility analysis in §2.1 has to engage with. The editorial line this entry holds: the trial's legal substance is not weaponized; the trial's observable visibility effect is a fact the hypothesis must contend with.
+This entry treats the Winny criminal case as historical fact. The *legal merits* of the case (whether Kaneko intended infringement, whether Winny itself was unlawful, the moral implications of the verdict) are **not used as arguments about the Satoshi identity question**; using a criminal conviction to make a character claim is not evidence about authorship. However, an *empirical consequence* of the case — Kaneko's high public visibility during 2007–2008 as a convicted defendant on appeal under sustained scrutiny from police, prosecution, his legal team, the Japanese technical press, and the academic community — is a documentary fact that the visibility analysis in §2.1 has to engage with. The trial's legal substance is not the point. Its observable effect on Kaneko's public visibility is a fact the hypothesis has to contend with.
 
 ## 1. The evidence
 
@@ -152,9 +152,9 @@ For comparison with other named-candidate Satoshi-identity hypotheses, see the [
 ## 4. Limits of this entry
 
 - This entry does not present new evidence. It compiles publicly available material.
-- This entry does not engage with statements made by Kaneko's surviving family. The editorial choice is to keep family commentary out of the hypothesis frame; if those statements eventually become part of the documentary public record on the identity question (rather than personal recollection), that decision should be revisited.
+- Statements by Kaneko's surviving family are personal recollection rather than documentary record on the identity question, and are not weighed here as evidence either way.
 - This entry does not draw any narrative connection between Kaneko's death and the Bitcoin-authorship question. The cause of death (myocardial infarction) is documented, the timing relative to Satoshi's silence is two years, and the entry does not treat the death as material to the hypothesis.
 
-This page is referenced from [the satoshi-identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) as one of the candidate hypotheses in its comparison anchor — Kaneko is placed in the overview's Group C taxonomy alongside the other named candidates within the necessary-but-not-sufficient evaluation framework.
+[The identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places Kaneko in Group C, alongside the other named candidates, within its necessary-but-not-sufficient evaluation.
 
-*[Editor: this entry is one of the individual hypothesis entries; the Kaneko hypothesis is unique among the named candidates in being discussed only in Japanese-language coverage and being largely unknown to English-language Bitcoin readers. This entry draws no death-date narrative, does not use the *legal merits* of the Winny criminal case as arguments about the Satoshi identity question (the case is treated as historical fact about Kaneko's 2007–2008 public visibility, which §2.1 engages with as documentary evidence — that is a different use than weaponizing the trial against Kaneko's character), and leaves statements from surviving family outside the frame. Updates should preserve those constraints unless the public record changes materially.]*
+*[Editor: among the named candidates, the Kaneko hypothesis is unique in being discussed only in Japanese-language coverage, and largely unknown to English-language readers.]*

@@ -91,7 +91,7 @@ This is not hindsight. [Wei Dai](/BitcoinArchive/participants/wei-dai/), cited a
 
 ## Two faces of one coin
 
-This is where the page joins its two neighbours. The [digital-gold structural-features reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) argues that the gold status comes from design — fixed supply and the rest. The [design-vs-current-reality reading](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) records the use sliding from cash to a settlement layer. The primary record ties them together: **the scarcity that made Bitcoin digital gold is the same scarcity that wore down its cash use.** Satoshi did not set out to "make gold." He made it hard — and the hardness had a gold face on one side and an unspent-cash face on the other. "Digital gold" is not the intent; it is that face winning, later.
+The [digital-gold structural-features reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) argues that the gold status comes from design — fixed supply and the rest. The [design-vs-current-reality reading](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) records the use sliding from cash to a settlement layer. The primary record ties them together: **the scarcity that made Bitcoin digital gold is the same scarcity that wore down its cash use.** Satoshi did not set out to "make gold." He made it hard — and the hardness had a gold face on one side and an unspent-cash face on the other. "Digital gold" is not the intent; it is that face winning, later.
 
 ## So does it still dream of electronic cash?
 
@@ -104,6 +104,6 @@ So this question stands in the present tense, not the past. Now that it is held 
 - "Scarcity wears down cash use" is the classic argument that a deflationary asset is hoarded rather than spent.
 - The Lightning Network, El Salvador, and other on-chain-cash efforts are live; a future in which everyday spending returns would not falsify this reading, but it would change its tense.
 
-This reading sits between the archive's two monetary analyses — the [digital-gold structural-features analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) and the [design-vs-current-reality analysis](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) — and reads the primary record for the one question they leave between them: were the property that made it gold and the property that wore down its cash use one and the same all along?
+The [digital-gold structural-features analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) and the [design-vs-current-reality analysis](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) leave one question between them, and the primary record answers it: were the property that made it gold and the property that wore down its cash use one and the same all along?
 
 *[Context: The tension this entry reads — the gold face and the cash face of a single design — runs through the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/), which imagines the founder behind the design.]*

@@ -124,7 +124,7 @@ translationStatus: complete
 | 2004 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | RPOW（Reusable Proof-of-Work） | 再利用可能 PoW トークンを発行する集中サーバー。フィニーは後にビットコインで最初に知られるサトシ以外のノード運用者となる |
 | 2008 | [サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/) | ビットコイン | 統合 |
 
-*[編者注：本表は提案群をサイファーパンク運動の地形に位置付けるためのものである。これらのうちビットコインが何を再利用し、何を借り、何を新たに統合したか — そしてホワイトペーパーの引用文献が設計上のどの判断と対応するか — の構成要素単位の正典的分析は[ビットコインの設計系譜分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)で扱う。本エントリの扱いは本エントリの主題（運動に対するサトシの知的位置）に合わせて調整しており、構成要素単位の分析はそちらに置いている。]*
+*[編者注：この表は提案群をサイファーパンク運動の地形に置くためのものである。そのうちビットコインが何を再利用し、何を借り、何を新たに統合したかは、構成要素ごとに[設計系譜の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)が扱っている。]*
 
 §2 では、この系譜のうち何をサトシが実際に開発期間中に知っていたか、そして何を知らなかったかを精査する。
 
@@ -244,8 +244,8 @@ D9 の「コーディングよりも設計の作業の方がはるかに多か�
 
 本エントリは思想史的伝播のサイファーパンク経路を扱う。それより一段早くに位置する「ハイエクからエクストロピアンへ」の脚 ― ハイエク 1976 年『貨幣発行自由化論』、 1995 年エクストロピアンの「ハイエクス」思考実験、そして経済的リバタリアンの枠組みが 1990 年代のデジタル通貨議論にどう到達したか ― は、 [ハイエク=エクストロピアン系譜エントリー](/BitcoinArchive/ja/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/)で扱う。サトシの記録済みの実践の行動側 ― 技術軸ではサイファーパンク整合の立場を維持しつつ、非技術的な会話の開きには応じなかった点 ― は[サトシの非技術的スルー](/BitcoinArchive/ja/entries/analysis/2010-12-27-satoshi-non-technical-silence/)で扱う。
 
-## 本エントリが参照される場所
+## この読みの行き先
 
-本エントリで展開した「独立到達」読みは、 2014 年以降の身元同定言説で繰り返し参照される。上位の枠組みとして[サトシ身元仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)が、各個別仮説として[アダム・バック仮説](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)・[ウェイ・ダイ仮説](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)・[ニック・サボ仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)・[ハル・フィニー仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)が、それぞれ本エントリが提起する「独立到達 vs 可視コミュニティ参加」の問いに対処する。 [サトシ伝記](/BitcoinArchive/ja/participants/satoshi-nakamoto/)・[アダム・バック伝記](/BitcoinArchive/ja/participants/adam-back/)・[ウェイ・ダイ伝記](/BitcoinArchive/ja/participants/wei-dai/)・[ハル・フィニー伝記](/BitcoinArchive/ja/participants/hal-finney/)もまた、サイファーパンク経路に対する各人物の位置を枠組み化する際に本エントリの構造的読みに戻る。単独の一次資料 ― [2008 年 8 月 21 日のサトシ=アダム・バックメールチェーン](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/) ― は、本エントリの議論が依拠する「b-money 不知」自白の根拠である。
+どの候補仮説も独立到達の問いに答えねばならない。だからこの読みは[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)にも、個別の各件 ─ [アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[ウェイ・ダイ](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)、[ニック・サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[ハル・フィニー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) ─ にも通っている。
 
 *[補足：本分析が扱う「1.5 年のコーディング」「18 か月の開発」という自己発言は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』の 2007〜2008 年タイムライン ― 主人公が誰にも知られずシステムを書き続ける 18 か月 ― の一次資料的根拠となる。]*

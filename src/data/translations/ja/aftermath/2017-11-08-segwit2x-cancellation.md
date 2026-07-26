@@ -48,4 +48,3 @@ SegWit2x の中止により、2015 年 8 月の [Bitcoin XT のリリース](/Bi
 
 ベルシェのメーリングリスト投稿は、ニューヨーク合意の文字通りの終結である。中止メッセージへの署名は元の NYA 署名者の全員ではないが、他の署名者から反対の署名付き声明が出されなかったこと自体が、コミュニティ全体の中止承認として機能した。中止が戦争の段階と派閥のどこに位置するかは[ブロックサイズ戦争総括](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)に、広いフォーク系譜は[ビットコイン系譜の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)に記録されている。
 
-本 2017 年 11 月の中止は[ブロックサイズ戦争 2015〜2017 総括](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)から、ニューヨーク合意の文字通りの終結として、そして記録された段階別再構成における戦争の定義的段階遷移の一つとして扱われる。

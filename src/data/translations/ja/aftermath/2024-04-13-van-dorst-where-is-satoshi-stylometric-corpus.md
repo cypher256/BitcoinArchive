@@ -116,4 +116,4 @@ translationStatus: complete
 
 サトシ特定における文体計量手法のより広い分析的扱いについては、関連する正体仮説エントリーを参照：[ニック・サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[正体仮説の概観](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)。
 
-本データセットは二つの後続読解にとっての決定的な証拠である。 [2026 年の Bitcoin Institute による名指し候補再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は全面的に本コーパス上に構築される ― 5 名の名指し候補を抽出し、本データセットから導出した 12,739 著者分布に対して順位付ける ― 冒頭段落、 §1.1 ソースデータ節、 §2.3 年表、 §3 ノイズ議論の各所で本データセットを参照する。 [同定非対称性分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/)は本データセットを §1 年表で 2024 年の技術的試行として参照し、 §1.3 では具体的な数値所見 (7 万 5 千著者コーパス + サボより近接した無名著者 594 人) を引いて、名指し対無名の非対称性論証の支えとして用いる。
+二つの後の読みが、このコーパスの上に組み立てられている。[2026 年の名指し候補再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は、5 名の名指し候補を抽出し、ここから導いた 12,739 著者の分布に対して順位づける。[同定の非対称性の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/)は、これを 2024 年の技術的試みとして年表に数えている。

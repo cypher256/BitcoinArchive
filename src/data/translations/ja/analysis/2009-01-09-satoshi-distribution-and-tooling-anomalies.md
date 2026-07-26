@@ -137,4 +137,4 @@ Warez シーンの読みにとって関係する点: Windows 専用初版 (v0.1 
 - 先見的セキュリティと形式ばらないプロセスの組み合わせが本エントリの主な観察である: サトシはシステムそのものについて慎重な敵対的思考を持っていたが、標準的な共同工学の慣習の中では作業していなかった
 - 読みはサトシの作業 *環境* と *実践パターン* を特徴づける。それらの実践パターンが自然に許容する範囲を超えて身元・地理・職業を制約するものではない
 
-本配布およびツール異常分析は[サトシ Windows 専一開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)から、 Phase 1 ツールチェーン読解を補完する「消費者側 Windows 配布の一貫性」の記録として参照される。
+[Windows 専一の開発環境の分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)は、同じ記録をツールチェーンの側から読んでいる。

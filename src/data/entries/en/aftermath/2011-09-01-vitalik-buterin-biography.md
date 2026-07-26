@@ -42,7 +42,7 @@ relatedEntries:
 
 In 2011, a 17-year-old Russian-Canadian named Vitalik Buterin couldn't afford to buy or mine bitcoin, so he wrote articles for it instead — five bitcoins per article (roughly $3.50 each at the time) at Mihai Alisie's *Bitcoin Weekly*. The writing led him to co-found [*Bitcoin Magazine*](/BitcoinArchive/entries/aftermath/2012-05-01-bitcoin-magazine-launch/) in 2012 and to author dozens of long-form pieces on Bitcoin's protocol mechanics through 2014. In late 2013 he wrote the Ethereum whitepaper, launching the network's mainnet on July 30, 2015 at age 21.
 
-Buterin was born January 31, 1994 in Kolomna, Russia and raised in Canada from age 6. This entry covers his 2011–2014 Bitcoin period; his later [Ethereum](/BitcoinArchive/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/) work is outside the BitcoinArchive's documentary scope.
+Buterin was born January 31, 1994 in Kolomna, Russia and raised in Canada from age 6. His Bitcoin years ran to 2014, when he [announced Ethereum on BitcoinTalk](/BitcoinArchive/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/).
 
 ## Entry into Bitcoin (2011, age 17)
 
@@ -72,7 +72,7 @@ In January 2014 Buterin announced Ethereum at the North American Bitcoin Confere
 
 One thing Buterin did not carry over from Bitcoin was the supply cap. The [2014 Ethereum whitepaper](https://ethereum.org/en/whitepaper/) states the choice against Bitcoin by name — "the existence of a permanently growing linear supply, as opposed to a capped supply as in Bitcoin" — and gives as its reason the wish to blunt what some read as excessive wealth concentration in Bitcoin and to leave people born into later eras a fair chance at acquiring units. Where that decision sits in the monetary-design argument that runs from b-money onward is taken up in [the fixed-supply-vs-adjustable-money analysis](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/).
 
-Buterin's post-2014 activity is principally Ethereum and is outside the scope of this archive. The chains and protocols he has touched since (Ethereum mainnet, the Beacon Chain merge to proof-of-stake, layer-2 rollups, etc.) are documented in Ethereum's own historical record.
+Buterin's work after 2014 is principally Ethereum's — mainnet, the Beacon Chain merge to proof-of-stake, the layer-2 rollups — and belongs to that chain's own record.
 
 ## Bitcoin-period timeline (2011–2014)
 
@@ -90,6 +90,6 @@ Buterin's post-2014 activity is principally Ethereum and is outside the scope of
 
 ## Significance to Bitcoin
 
-Buterin's Bitcoin-period record matters for two reasons recorded in this archive. First, he is the most prolific 2012–2014 Bitcoin Magazine contributor; his article archive constitutes a substantial portion of the contemporary public-facing documentation of the middle of Bitcoin's early period (between the launch period and the block-size war). Second, the [Bitcoin family-tree analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) records Ethereum as the most-cited "next-generation" chain whose origin runs *through* Bitcoin: the design motivation comes from Buterin's Bitcoin-Magazine-era thinking about scripting limits, even though the codebase is independent.
+Buterin's Bitcoin-period record matters for two reasons. First, he is the most prolific 2012–2014 Bitcoin Magazine contributor; his article archive constitutes a substantial portion of the contemporary public-facing documentation of the middle of Bitcoin's early period (between the launch period and the block-size war). Second, the [Bitcoin family-tree analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) records Ethereum as the most-cited "next-generation" chain whose origin runs *through* Bitcoin: the design motivation comes from Buterin's Bitcoin-Magazine-era thinking about scripting limits, even though the codebase is independent.
 
-*[Editor: this biography focuses on Buterin's 2011–2014 Bitcoin period. His later Ethereum work, though widely covered, is outside the BitcoinArchive's documentary scope. The date 2011-09-01 used in this entry is a representative placeholder for his Bitcoin-community entry; the precise month is not consistently fixed across his published interviews.]*
+*[Editor: The date 2011-09-01 used in this entry is a representative placeholder for his Bitcoin-community entry; the precise month is not consistently fixed across his published interviews.]*

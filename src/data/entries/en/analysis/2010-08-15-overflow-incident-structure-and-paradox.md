@@ -57,8 +57,6 @@ translationStatus: complete
 
 The [aftermath entry for the value-overflow incident](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) records the documentary skeleton: when it was discovered, what was patched, how long the chain reorg took. This entry takes the same event and reads it as a structural problem — what was actually possible in the rescue, what its constraints reveal about the early-Bitcoin development model, and what the transaction itself implies once read forensically.
 
-The narrative is in the aftermath entry. The reading is here.
-
 ## 1. How the soft-fork rescue actually worked
 
 The fix was a soft fork, not a hard fork. That distinction matters because it explains why 53 blocks of valid mining were enough to retire 184 billion BTC from canonical history without coordinating every node operator.
@@ -199,9 +197,6 @@ This puts the 2010 incident in a peculiar position in the historical record. It 
 - **Attacker identity.** The two output addresses on block 74638 are recorded on the chain; the corresponding private keys have not been used since. No public claim of authorship has been made. Identity attribution is not in the public record.
 - **Attacker intent.** Whether the attack was theft, demonstration, or test cannot be determined from the transaction or the chain. Section 3 above describes what categories of intent are *consistent* with the evidence; none are *established* by the evidence.
 - **Miner cooperation.** Block 74638 was mined by an actor whose identity is not in the chain. Whether the miner colluded with the transaction author cannot be determined from the chain — the un-patched validation rules accepted the transaction, so honest inclusion is indistinguishable from coordinated inclusion.
-- **knightmb's specific role.** The blockchain-snapshot contribution is recorded structurally in the [knightmb snapshot and legend](/BitcoinArchive/entries/analysis/2010-08-15-knightmb-snapshot-and-legend/) entry. This entry mentions the snapshot only to identify it as part of the rescue infrastructure; the editorial reading of knightmb's broader role lives in that entry.
-
-The aftermath narrative records the event. This analysis records the structural reading. Identity, intent, and individual contribution belong in the entries that make those questions their primary subject.
-This structural-paradox analysis is treated as the canonical reading of the August 2010 event by [the value-overflow-incident entry](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/), which references this analysis as the decentralized-vs-centralized tension reading of the same five-hour recovery.
+- **knightmb's specific role.** The blockchain-snapshot contribution is recorded structurally in the [knightmb snapshot and legend](/BitcoinArchive/entries/analysis/2010-08-15-knightmb-snapshot-and-legend/) entry.
 
 *[Context: The five-hour patch deployment and the centralization paradox analyzed here are the structural basis for one of the named scenes in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — the moment a "decentralized" system is saved by a single author with unique release authority.]*

@@ -47,7 +47,7 @@ relatedEntries:
 
 Jeremy Allaire was already an internet entrepreneur twice over before he touched cryptocurrency. With his brother JJ he co-founded Allaire Corporation in 1995, which went public in 1999 and was acquired by Macromedia in 2001, where he became chief technology officer. He later founded Brightcove. Circle came after that, and on September 26, 2018 Circle launched USD Coin.
 
-He belongs in a Bitcoin archive for a reason more interesting than proximity. Allaire built the largest regulated dollar-denominated stablecoin — a design that inverts nearly every property Bitcoin was built for — while stating, repeatedly and on the record, that Bitcoin's importance lies precisely in the property his own product does not have.
+Allaire built the largest regulated dollar-denominated stablecoin — a design that inverts nearly every property Bitcoin was built for — while stating, repeatedly and on the record, that Bitcoin's importance lies precisely in the property his own product does not have.
 
 ```mermaid
 timeline

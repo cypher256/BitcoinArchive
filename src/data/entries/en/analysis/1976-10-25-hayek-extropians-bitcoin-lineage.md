@@ -148,7 +148,7 @@ timeline
 
 ### 3.2 The structure of the lineage
 
-Where the §3.1 timeline orders events by date, this view shows the same chain as a flow of influence — making legible what a single time axis cannot: the branch from Hayek into the 1990s milieu, and how Bitcoin rose out of that milieu's digital-cash design space.
+The same chain seen as a flow of influence rather than a sequence of dates: the branch from Hayek into the 1990s milieu, and how Bitcoin rose out of that milieu's digital-cash design space.
 
 The line styles track the evidence tiers of §4. A solid edge marks something concretely made or used: Hashcash, used during development, and the Hayeks thought experiment, produced by the Extropians. A dashed edge marks a real but indirect link: upstream ideological influence, community overlap, or a post-hoc citation. b-money is the post-hoc citation — Satoshi was unaware of it until Adam Back pointed him to it and did not use it in development, yet he cited it in the white paper. Hashcash, note, is not a currency but an anti-spam proof-of-work; Bitcoin reused only that mechanism (see [the Hashcash announcement](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/)), which is why it sits apart from the digital-cash proposals (b-money, Bit Gold, RPOW). Bit Gold and RPOW are not cited in the white paper at all; conceptually close as Bit Gold is, neither is a development-time input or a citation, so they stay among the proposals with no edge to Bitcoin. The implementation-level lineage is the subject of the sibling entry, [Bitcoin's design lineage](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/).
 

@@ -41,7 +41,7 @@ relatedEntries:
 
 On April 26, 2011, [Satoshi sent his last known email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/). Sixty-eight days later, on July 3, 2011, the cypherpunk cryptographer Len Sassaman died by suicide in Belgium. He was 31. Four weeks after that, at Black Hat USA 2011, [Dan Kaminsky revealed an ASCII-art tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) to Sassaman that he had embedded into the Bitcoin blockchain. From 2013 onward, the proximity of those two dates (Satoshi gone, Sassaman dead) pulled a [Satoshi-identity hypothesis](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/) toward his name.
 
-Sassaman (1980 – July 3, 2011) was an American cryptographer and privacy researcher who worked at PGP Inc. alongside [Hal Finney](/BitcoinArchive/participants/hal-finney/), led development of the Mixmaster anonymous remailer, co-founded the CodeCon conference with Bram Cohen, and at the time of his death was a PhD candidate at the COSIC research group at KU Leuven in Belgium. He did not appear in the public record as a Bitcoin developer or correspondent of Satoshi during 2008–2011; his relevance to this archive is therefore confined to the posthumous tribute and the later identity-hypothesis discourse.
+Sassaman (1980 – July 3, 2011) was an American cryptographer and privacy researcher who worked at PGP Inc. alongside [Hal Finney](/BitcoinArchive/participants/hal-finney/), led development of the Mixmaster anonymous remailer, co-founded the CodeCon conference with Bram Cohen, and at the time of his death was a PhD candidate at the COSIC research group at KU Leuven in Belgium. He did not appear in the public record as a Bitcoin developer or correspondent of Satoshi during 2008–2011; what connects him to Bitcoin is the posthumous tribute and the identity hypothesis that followed.
 
 ```mermaid
 timeline
@@ -76,11 +76,9 @@ Sassaman was married to the cryptographer and computer scientist Meredith L. Pat
 Len Sassaman died in Belgium on July 3, 2011. Patterson stated publicly that the death was "unambiguously suicide." He was 31.
 
 ## Posthumous Bitcoin connection
-The Bitcoin-relevant context for this archive is entirely posthumous:
+The Bitcoin-relevant context is entirely posthumous.
 
 1. On July 30, 2011, [Dan Kaminsky publicly announced](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/) an ASCII-art tribute to Sassaman that he had embedded into the Bitcoin blockchain. The tribute was revealed at Black Hat USA 2011.
 2. From March 2013 onward (initially on BitcoinTalk, then more prominently in Evan Hatch's 2021 article), some commentators have proposed Sassaman as a candidate for the identity behind Satoshi Nakamoto, citing the timing (Sassaman's death three months after Satoshi's [last known email on April 26, 2011](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)) and Sassaman's cypherpunk credentials. This is documented in this archive as a [separate analysis entry](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/), explicitly framed as speculation rather than as a Bitcoin Institute claim.
 
 Patterson has not made public statements either confirming or denying the identity hypothesis; her public remarks have addressed only the manner of death.
-
-*[Editor: Sassaman did not appear in the public record as a Bitcoin developer or correspondent of Satoshi during 2008–2011. His relevance to this archive is therefore confined to the posthumous tribute and the later identity-hypothesis discourse. The biography here records the Bitcoin-relevant facts at the level the public record supports.]*

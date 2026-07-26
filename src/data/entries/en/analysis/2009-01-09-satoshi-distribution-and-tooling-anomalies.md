@@ -137,4 +137,4 @@ The combination supports a structural reading: Satoshi clearly thought hard abou
 - The combination of foresighted security with informal process is the entry's main observation: Satoshi was a careful adversarial thinker about the system itself but did not work within standard collaborative-engineering conventions.
 - The reading characterizes Satoshi's working *environment* and *practice patterns*. It does not constrain identity, geography, or profession beyond what those practice patterns naturally permit.
 
-This distribution-and-tooling-anomalies analysis is invoked by [the Satoshi Windows-only development-environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/), which references this entry as the documented consumer-side Windows-distribution coherence that complements its Phase 1 toolchain reading.
+[The Windows-only development-environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) reads the same record from the toolchain side.

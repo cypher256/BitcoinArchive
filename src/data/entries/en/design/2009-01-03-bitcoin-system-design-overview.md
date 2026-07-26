@@ -217,7 +217,7 @@ The table below gives a brief structural comparison between the Satoshi-era v0.1
 | **Wallet** | Integrated in node binary, random keys | Descriptor wallets (BIP 380+), logical separation (experimental multiprocess in progress) |
 | **Cryptography** | OpenSSL for ECDSA; bundled Crypto++ for the mining SHA-256 | libsecp256k1 (custom ECDSA/Schnorr), internal SHA-256 |
 
-*[Context: This table is deliberately terse. The detailed comparison with primary-source evidence for each evolution appears in the L2 page on historical evolution (§ 7, item 9).]*
+*[Context: the full comparison, with primary-source evidence for each change, is in [the architecture-evolution entry](/BitcoinArchive/entries/design/2009-01-03-bitcoin-architecture-evolution/).]*
 
 ## 6. Reading guide
 

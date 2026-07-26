@@ -35,7 +35,7 @@ inlineLinkKeywords:
 
 ![An evidence board with faceless silhouette icons and fragments labeled technical range, economics, and shared language, connected by a dashed line that never reaches a solid proof anchor, beside a larger glowing silhouette labeled public visibility standing apart from a small hidden shadow figure.](/BitcoinArchive/images/analysis/2017-11-22-elon-musk-satoshi-identity-hypothesis-hero.png)
 
-On November 22, 2017, a former SpaceX intern, Sahil Gupta, published a Medium post titled "Elon Musk Probably Invented Bitcoin," and it went viral. Alone among the candidates in the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), this claim entered the record from a single junior insider's blog post rather than from a forum thread or a stylometric study. [Elon Musk](/BitcoinArchive/participants/elon-musk/)'s Bitcoin-adjacent public role is in the [Elon Musk biography](/BitcoinArchive/participants/elon-musk/); this entry is the claim treatment only.
+On November 22, 2017, a former SpaceX intern, Sahil Gupta, published a Medium post titled "Elon Musk Probably Invented Bitcoin," and it went viral. Alone among the candidates in the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), this claim entered the record from a single junior insider's blog post rather than from a forum thread or a stylometric study. His Bitcoin-adjacent public role is in the [Elon Musk biography](/BitcoinArchive/participants/elon-musk/).
 
 ## 1. The evidence
 
@@ -88,4 +88,4 @@ The Musk theory is useful in the overview less as a candidacy than as the cleare
 - This entry does not present new evidence. It compiles publicly available material.
 - The originating claim is a single non-forensic blog post; the citable record is that claim, the press that covered it, and Musk's denial. Musk's broader Bitcoin-adjacent public role is in the [Elon Musk biography](/BitcoinArchive/participants/elon-musk/).
 
-This page is referenced from the [Elon Musk biography](/BitcoinArchive/participants/elon-musk/) (the subject of the claim) and the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), which places Elon Musk in its Group C taxonomy within the necessary-but-not-sufficient evaluation framework.
+[The identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places Elon Musk in Group C of its necessary-but-not-sufficient evaluation.

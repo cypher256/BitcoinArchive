@@ -33,7 +33,7 @@ inlineLinkKeywords:
 
 ## Introduction
 
-This page is **L2 #11 — Security model** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) — the second of three L2 cross-cutting deep dives. Where the L1 domain pages describe how each subsystem works, this page asks what can go wrong — and what stops it.
+This page is **L2 #11 — Security model** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) — the second of three L2 cross-cutting deep dives. The domain pages describe how each subsystem works; the question here is what can go wrong, and what stops it.
 
 Bitcoin's security rests not on any single mechanism but on the interaction of cryptography, economic incentives, and network architecture. A full-node operator trusts mathematics and energy expenditure rather than institutions or identities. This page maps the trust boundary, catalogs the known attack surfaces, traces the defense layers that address each one, and identifies the open risks that remain.
 
@@ -339,4 +339,4 @@ This page covers the security model as a cross-cutting analysis. The following t
 - **Fee-only security budget** — the long-term transition from subsidy-dominated to fee-dominated miner revenue and its implications for chain security. Covered in the [mining reward exhaustion analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/).
 - **Quantum threat deep dive** — timeline estimates, vulnerable UTXO census, BIP 360 mechanics, and comparison with post-quantum migration in other systems. Covered in the [quantum threat analysis](/BitcoinArchive/entries/analysis/2026-05-18-bitcoin-quantum-threat/).
 
-This security-model deep dive is treated by [the consensus design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/) as the cross-cutting L2 reading that defers proof-of-work mechanics back to consensus design while elaborating the 51% attack economics, selfish-mining game theory, and the full threat model the consensus entry defers here.
+Proof-of-work mechanics themselves are in [the consensus design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/). What sits here is the attack side of the same machinery: 51% economics, selfish-mining game theory, and the threat model as a whole.

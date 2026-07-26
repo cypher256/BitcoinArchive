@@ -240,4 +240,3 @@ For comparison with other named-candidate hypotheses, see the [Satoshi-identity 
 
 The [satoshi-identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places the Finney claim in Group B and uses it as one of the principal comparison anchors in its necessary-but-not-sufficient evaluation framework.
 
-*[Editor: this entry uses the March 25, 2014 Forbes article as the prominent public articulation of a longstanding hypothesis.]*

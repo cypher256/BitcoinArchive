@@ -431,4 +431,4 @@ timeline
 - **エコシステム**（Lightning、サイドチェーン、Ordinals — [L2 #10 — エコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)を参照）
 - **サトシのコーディングスタイル**（[サトシのコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)と [Windows 開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)エントリーを参照）
 
-[サトシ Windows 専一開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)が Phase 1 の Windows 中心コードベースに生じた「アーキテクチャ漂流」を扱うのに対し、本アーキテクチャ進化設計書はその設計側の対応物にあたる。
+[Windows 専一の開発環境の分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)は、同じ漂流をツールチェーンの側から読んでいる。

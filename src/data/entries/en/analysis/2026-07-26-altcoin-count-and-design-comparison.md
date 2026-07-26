@@ -4,7 +4,7 @@ date: 2026-07-26T00:00:00Z
 type: "analysis"
 source: "coingecko"
 sourceUrl: "https://www.coingecko.com/"
-sourceNote: "The provider counts quoted in the closing section are live figures read on July 26, 2026. They change daily and are not interchangeable — each provider counts a different population, which is that section's point. Every other claim on this page is cited to the project document or interview it came from."
+sourceNote: "The source above supplies the provider counts in the closing section, read live on July 26, 2026 — they change daily and are not interchangeable, since each provider counts a different population. Elsewhere the citation sits with the claim."
 author: "Bitcoin Institute"
 participants:
   - name: "Vitalik Buterin"
@@ -78,6 +78,12 @@ secondarySources:
     url: "https://prtimes.jp/main/html/rd/p/000000274.000054018.html"
   - name: "The Japan Times — JPYC, the first yen-pegged stablecoin, is issued (October 27, 2025)"
     url: "https://www.japantimes.co.jp/business/2025/10/27/tech/jpyc-first-yen-pegged-stablecoin/"
+  - name: "CNN — Trump addresses the Bitcoin conference after once calling it 'based on thin air' (July 27, 2024)"
+    url: "https://www.cnn.com/2024/07/27/politics/donald-trump-bitcoin-cryptocurrency/index.html"
+  - name: "CoinDesk — Trump's strategic bitcoin reserve pledge at Bitcoin 2024, Nashville (July 27, 2024)"
+    url: "https://www.coindesk.com/policy/2024/07/27/if-we-dont-do-it-china-will-trumps-crypto-embrace-tightens-as-he-speaks-at-bitcoin-event-in-nashville"
+  - name: "Forbes — Milei is not moving Argentina towards Bitcoin (June 2, 2024)"
+    url: "https://www.forbes.com/sites/digital-assets/2024/06/02/milei-is-not-moving-argentina-towards-bitcoin/"
   - name: "SEC — charges against Kim Kardashian for undisclosed crypto promotion (October 3, 2022)"
     url: "https://www.sec.gov/newsroom/press-releases/2022-183"
   - name: "arXiv — first large-scale pump.fun graduation-rate study"
@@ -118,7 +124,7 @@ inlineLinkKeywords:
 
 Is this a design meant to become worth more, or one that adjusts itself, or one built to hold still, or one that was never about the value of a unit at all? Every chain answers that in its own rules, years before anyone buys anything, and the answer is the closest thing a currency has to a philosophy.
 
-Different questions have different homes. [Why each design chose its issuance rule](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) is a debate running from 1998; [why Bitcoin has value at all](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) is a structural argument; [why its own scarcity wore down its use as cash](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/) is the tension every later design had to answer. What follows sits underneath all three, and is more mundane. An issuance rule sets the number of units in circulation and nothing else. What follows from that, and what does not?
+[Why each design chose its issuance rule](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) is a debate running from 1998; [why Bitcoin has value at all](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) is a structural argument; [why its own scarcity wore down its use as cash](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/) is the tension every later design had to answer. Underneath all three sits something more mundane. An issuance rule sets the number of units in circulation and nothing else. What follows from that, and what does not?
 
 ## 1. What kind of money each design is trying to be
 
@@ -126,7 +132,7 @@ Market capitalization is price per unit multiplied by the number of units in cir
 
 That is a narrow power, and it is the whole of what a monetary design controls. But the *choice* of rule is not narrow at all: it is a statement about what the currency thinks it is. A ceiling says the unit should not be diluted. A burn tied to usage says supply should answer to the network. A peg says the unit should not move. A fixed annual issuance says the thing is meant to be spent, not held.
 
-Those positions sort into six, and each one has a determinate consequence for the two numbers a reader actually looks at. **Why** each project picked its position — which failure it was trying to avoid — is the subject of [the fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/), which traces that argument from b-money in 1998 through the Ethereum Merge.
+Those positions sort into six, and each one has a determinate consequence for the two numbers a reader actually looks at. [The fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) traces which failure each project was trying to avoid when it picked its position, from b-money in 1998 through the Ethereum Merge.
 
 | What the currency takes itself to be | How the rule says it | Chains | Per-unit price, market cap held still | Effect on market cap |
 |---|---|---|---|---|
@@ -157,7 +163,7 @@ None of this makes the per-unit price a comparison. Bitcoin caps at 21 million u
 
 ### Was any of this meant to make a coin worth more?
 
-Why each project picked its issuance rule — what failure it was avoiding — is not this page's subject: [the fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) sets out those bets one by one, from the hard cap's fear of discretion to Monero's fear of an unfunded security budget. The narrower question here is what each design says it wants to happen to the *value* of a unit, and the answers sort into three groups: keep it from being diluted (the hard-cap chains), keep it from moving at all (the stablecoins), or treat value as somebody else's department (the performance chains, and Dogecoin).
+What each design says it wants to happen to the *value* of a unit sorts into three groups: keep it from being diluted (the hard-cap chains), keep it from moving at all (the stablecoins), or treat value as somebody else's department (the performance chains, and Dogecoin).
 
 What is missing from the whole set is a fourth group. **No design document among these twelve argues that its coin will become worth more.** The hard-cap projects argue about who may issue, not about where the price goes. Ethereum's whitepaper gives fairness to later arrivals as its reason for having no cap. The stablecoins promise the opposite of appreciation. And Dogecoin's co-founder denies the link outright — the sharpest statement anyone in this record has made about supply and price:
 
@@ -171,19 +177,19 @@ Jackson Palmer, asked what Dogecoin was for, gave the matching answer:
 
 The appreciation case, in other words, is made by holders and not by specifications. That is not an argument against it — a scarce, non-discretionary asset can be worth holding whether or not its designer said so, and [the digital-gold reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) sets out the structural version of that case, while [Satoshi's own production-cost argument](/BitcoinArchive/entries/analysis/2010-02-21-bitcoin-price-vs-production-cost/) is the one place in this history where a designer does reason about price directly. It is an argument for reading the two claims separately, because the projects themselves do.
 
-The exception is §7, and it inverts the question. A coin whose supply is allocated to its issuer before launch, and whose fee revenue accrues to that issuer regardless of price, is a design with a very definite view about where value goes — it just is not a view about the unit price.
+The coins in §7 are the exception, and they invert the question. A coin whose supply is allocated to its issuer before launch, and whose fee revenue accrues to that issuer regardless of price, is a design with a very definite view about where value goes — it just is not a view about the unit price.
 
 ### The bind, and the question underneath it
 
 Put the two halves together and the taxonomy turns into a trap.
 
-A design that protects the unit from dilution makes it worth holding, and a thing worth holding is not spent — that is the mechanism [the electronic-cash reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/) traces through Bitcoin's own history, from the pizza to the settlement layer. But the reverse holds too, and it is the half that record does not cover. A design that keeps issuing so the unit stays spendable is a design that has removed the reason to accumulate it. Dogecoin is cheap, fast, and works; the [record of its launch](/BitcoinArchive/entries/aftermath/2013-12-06-dogecoin-launch/) concludes that its lasting significance is sociological rather than technical — it held its position through community and brand, not because its monetary design made it good money. The stablecoins are the cleanest case: they are held in enormous quantity and by construction nobody holds them expecting more.
+A design that protects the unit from dilution makes it worth holding, and a thing worth holding is not spent — that is the mechanism [the electronic-cash reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/) traces through Bitcoin's own history, from the pizza to the settlement layer. But the reverse holds too. A design that keeps issuing so the unit stays spendable is a design that has removed the reason to accumulate it. Dogecoin is cheap, fast, and works; the [record of its launch](/BitcoinArchive/entries/aftermath/2013-12-06-dogecoin-launch/) concludes that its lasting significance is sociological rather than technical — it held its position through community and brand, not because its monetary design made it good money. The stablecoins are the cleanest case: they are held in enormous quantity and by construction nobody holds them expecting more.
 
 So each side of the table fails at what the other side is for. Neither is a flawed execution of a single goal; they are the two ends of a trade nobody has been able to avoid making.
 
 Which raises the question the whole comparison sits on, and this archive cannot settle it: what is any of this for? If the need is a convenient way to pay, that need is already met. Card networks settle billions of payments a day, and almost nobody declines to use PayPal on the grounds that it is centralized. The honest description of the demand for non-sovereign money is not that people prefer it. It is that they do not need it until they are the ones who get cut off — and then they need it absolutely.
 
-The archive has the instance. In November 2010, after CableGate, Bank of America, Visa, MasterCard, PayPal and Western Union all blocked donations to WikiLeaks, removing an estimated 95% of its revenue; [in June 2011 it began accepting Bitcoin](/BitcoinArchive/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/). Nothing about that case is convenience. The property being bought was the absence of a party who can decline, which is exactly what §3 tests for and exactly what no incumbent can offer. [Jeremy Allaire](/BitcoinArchive/participants/jeremy-allaire/) — who sells the sovereign product — describes the same demand from the other side of the counter:
+There is a documented instance. In November 2010, after CableGate, Bank of America, Visa, MasterCard, PayPal and Western Union all blocked donations to WikiLeaks, removing an estimated 95% of its revenue; [in June 2011 it began accepting Bitcoin](/BitcoinArchive/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/). Nothing about that case is convenience. The property being bought was the absence of a party who can decline, which is exactly what §3 tests for and exactly what no incumbent can offer. [Jeremy Allaire](/BitcoinArchive/participants/jeremy-allaire/) — who sells the sovereign product — describes the same demand from the other side of the counter:
 
 <!-- audit:quote-skip -->
 > That's the digital gold thesis, and I think a lot of both institutional accumulators of bitcoin, individuals, very specifically individuals in jurisdictions or environments where the intense concern about capital controls are there.
@@ -200,10 +206,10 @@ So the designs are conducting an argument about what money should be, and the ma
 
 It also explains the strangest thing about the present. The holders are no longer only individuals hedging against institutions; they are institutions. [Bitcoin's ownership map](/BitcoinArchive/entries/analysis/2026-07-09-bitcoin-ownership-map/) records corporate treasuries, spot exchange-traded funds and sovereign reserves climbing the same table — and makes the point that holding coins confers none of the protocol authority the second layer of decentralization is about. A state can buy the asset. It cannot buy the property that made the asset worth holding. Whether that distinction survives contact with enough concentrated ownership is the open question underneath every row of §3.
 
-It is a reason to keep the two apart when reading any comparison table, including this one: the philosophy in §1 explains what each chain was built to be, and it does not explain why anyone bought it.
+It is a reason to keep the two apart when reading any comparison table: what a chain was built to be does not explain why anyone bought it.
 
 ## 2. What twelve chains actually differ on
-Below are the twelve non-Bitcoin chains that recur in this archive, with Bitcoin as the reference row. The supply column is deliberately terse: [the fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) is the truth source for issuance design and covers fifteen currencies in depth, including why each design was chosen. What this table adds is the *other* axes side by side.
+Below are the twelve non-Bitcoin chains that recur in this archive, with Bitcoin as the reference row. Supply appears here as one axis among six; for issuance design on its own, across fifteen currencies, see [the fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/).
 
 | Chain | Supply | Consensus | Initial distribution | Ledger privacy | Who can change the rules |
 |---|---|---|---|---|---|
@@ -224,9 +230,9 @@ Below are the twelve non-Bitcoin chains that recur in this archive, with Bitcoin
 The column that separates the group is not supply and not consensus. It is the last one. Every row of this table except Bitcoin and — with qualifications — Monero has an identifiable party who can be persuaded, subpoenaed, acquired, or replaced. That is not a scandal; for most of the stated purposes in the table it is a requirement. It is simply the axis on which the category is least differentiated from the financial system it was built next to.
 
 ## 3. The six structural features, applied
-[The digital-gold analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) sets out six structural features and argues that Bitcoin's position rests on holding all six at once. That page defines them and applies them to five projects. This table applies the same six to the full set.
+[The digital-gold analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) sets out six structural features and argues that Bitcoin's position rests on holding all six at once. The definitions are there in full.
 
-**Legend — this table only.** 🟢 holds · 🟡 partial, contested, or holds only under a qualification · 🔴 does not hold. The symbols are not a score. **Do not add up the greens.** The features are not independent, not equally weighted, and several are in tension with each other — a chain that wants rapid iteration structurally cannot have feature 4, and that is a design decision, not a failure. Reading a row as a total misses the entire argument of the page it borrows from.
+**Legend — this table only.** 🟢 holds · 🟡 partial, contested, or holds only under a qualification · 🔴 does not hold. The symbols are not a score. **Do not add up the greens.** The features are not independent, not equally weighted, and several are in tension with each other — a chain that wants rapid iteration structurally cannot have feature 4, and that is a design decision, not a failure. Reading a row as a total misses the entire argument the six features are part of.
 
 | Chain | 1 System decentralization | 2 People / org decentralization | 3 Fair launch | 4 Founder departed | 5 Fixed supply | 6 First-mover |
 |---|---|---|---|---|---|---|
@@ -246,7 +252,7 @@ The column that separates the group is not supply and not consensus. It is the l
 Monero is the interesting row. Of the twelve chains in this table it is the only one that matches Bitcoin on fair launch, on the absence of a controlling organization, and on system decentralization. Where it diverges is supply — it chose a permanent tail emission over a hard cap, deliberately, to keep paying for security after issuance would otherwise end. That is a different bet on the same question, made by people who understood exactly what they were giving up. [Riccardo Spagni's record](/BitcoinArchive/participants/riccardo-spagni/) sets out the reasoning.
 
 ## 4. Stablecoins are not in the same category
-USDT and USDC appear in the tables above for completeness, and every structural feature reads 🔴 for them. This is not a criticism; it is a category error corrected. A fiat-pegged stablecoin is a dollar with a blockchain interface. Its supply follows the issuer's reserves, its stability depends on a balance sheet, and its issuer can freeze a balance. The CENTRE whitepaper says so itself, in the sentence that should end most stablecoin arguments:
+Every structural feature reads 🔴 for USDT and USDC. This is not a criticism; it is a category error corrected. A fiat-pegged stablecoin is a dollar with a blockchain interface. Its supply follows the issuer's reserves, its stability depends on a balance sheet, and its issuer can freeze a balance. The CENTRE whitepaper says so itself, in the sentence that should end most stablecoin arguments:
 
 <!-- audit:quote-skip -->
 > This approach is distributed, though it does not purport to be -- or aim to be -- entirely decentralized.
@@ -256,7 +262,7 @@ The peg is not one design, either, and the difference is in who guarantees it an
 What that trade buys is the thing Bitcoin does not offer: a unit that does not move against the currency your rent is denominated in. What it costs is every property in §3. [Jeremy Allaire's record](/BitcoinArchive/participants/jeremy-allaire/) is the clearest statement of both sides, because he argues for the non-sovereign asset while selling the sovereign one.
 
 ## 5. Why each chain chose what it chose
-Each design in §2 has a stated reason, published by the people who made it. Collected briefly, with the detail in each linked record:
+Each design in §2 has a stated reason, published by the people who made it. In brief, with the detail in each linked record:
 
 - **Litecoin** — [Charlie Lee](/BitcoinArchive/participants/charlie-lee/) set out to change as little as possible: "not change what's working (from Bitcoin) unless there was a good reason to." Four parameters moved, each by a factor of four.
 - **Dogecoin** — [Jackson Palmer](/BitcoinArchive/participants/jackson-palmer/) declined the premise entirely; the chain has no whitepaper and its co-founder argued publicly that supply parameters do not determine price.
@@ -270,7 +276,7 @@ Each design in §2 has a stated reason, published by the people who made it. Col
 The pattern across all eight is the same: each is a specific, argued objection to a specific Bitcoin design decision, and each accepts a specific cost to make the change. None of them is a claim that Bitcoin does not work.
 
 ## 6. What the founders said about Bitcoin
-The archive now keeps the statements themselves. Seven biographies collect the sourced record for the founders whose commentary runs to volume — [Charlie Lee](/BitcoinArchive/participants/charlie-lee/), [Charles Hoskinson](/BitcoinArchive/participants/charles-hoskinson/), [Anatoly Yakovenko](/BitcoinArchive/participants/anatoly-yakovenko/), [Jeremy Allaire](/BitcoinArchive/participants/jeremy-allaire/), [Riccardo Spagni](/BitcoinArchive/participants/riccardo-spagni/), [Jed McCaleb](/BitcoinArchive/participants/jed-mccaleb/) and [Jackson Palmer](/BitcoinArchive/participants/jackson-palmer/).
+Seven biographies collect the sourced record for the founders whose commentary runs to volume — [Charlie Lee](/BitcoinArchive/participants/charlie-lee/), [Charles Hoskinson](/BitcoinArchive/participants/charles-hoskinson/), [Anatoly Yakovenko](/BitcoinArchive/participants/anatoly-yakovenko/), [Jeremy Allaire](/BitcoinArchive/participants/jeremy-allaire/), [Riccardo Spagni](/BitcoinArchive/participants/riccardo-spagni/), [Jed McCaleb](/BitcoinArchive/participants/jed-mccaleb/) and [Jackson Palmer](/BitcoinArchive/participants/jackson-palmer/).
 
 Read together, they do not divide into supporters and detractors. The recurring shape is narrower and stranger: unreserved technical admiration alongside a specific structural objection, held by the same person, often in the same interview. Yakovenko calls proof-of-work "a masterpiece in terms of elegance and simplicity" and separately says the asset has "no value" beyond insurance. Hoskinson called Satoshi's work "worth a Turing prize" in 2018 and Bitcoin "a religion, not an ecosystem" in 2024, then described it as the internet's store of value six months later. McCaleb, who built the exchange most early Bitcoin trading passed through, said he did not believe the double-spend problem was solvable until he read the paper.
 
@@ -278,12 +284,12 @@ Three more founders left a shorter record:
 
 - **Gavin Wood** (Polkadot, Ethereum co-founder) has objected on energy grounds — that Bitcoin "uses up the equivalent of ... some small country's energy simply in securing itself" — and on throughput, noting that confirmation can take an hour in practice against a 10-minute average.
 - **Chris Larsen** (Ripple co-founder) wrote in April 2021 that proof-of-work is "a brilliantly designed technology that is becoming outdated in today's world," and argued that changing it was "critically important for Bitcoin to remain the world's dominant cryptocurrency" — an objection framed as advice rather than as a competitive claim.
-- **Brad Garlinghouse** (Ripple CEO) argued in 2018 that Bitcoin is effectively controlled by a small number of Chinese mining operations, and in 2020 that he is "bullish on BTC as a store of value, but not for payments" — the same electronic-cash-versus-digital-gold split [the archive traces inside Bitcoin's own history](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/).
+- **Brad Garlinghouse** (Ripple CEO) argued in 2018 that Bitcoin is effectively controlled by a small number of Chinese mining operations, and in 2020 that he is "bullish on BTC as a store of value, but not for payments" — the same electronic-cash-versus-digital-gold split that [runs through Bitcoin's own history](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/).
 
-## 7. The far end: coins issued by presidents
+## 7. The far end: tokens issued by presidents
 The launchpad numbers in §8 describe an industrial process. The clearest single illustration of what that process makes possible arrived in January 2025, and the facts are documented by the issuers themselves.
 
-On January 17, 2025, three days before his inauguration, Donald Trump announced a token on his own Truth Social account, directing followers to its website. The coin's official site states the allocation:
+On January 17, 2025, three days before his inauguration, Donald Trump announced a token on his own Truth Social account, directing followers to its website. The token's official site states the allocation:
 
 <!-- audit:quote-skip -->
 > CIC Digital LLC, an affiliate of The Trump Organization, and Fight Fight Fight LLC collectively own 80% of the Trump Cards, subject to a 3-year unlocking schedule.
@@ -292,9 +298,16 @@ Two hundred million of one billion tokens were released at launch. Market capita
 
 Three other cases followed the same arc within months. Argentina's president promoted LIBRA in February 2025; the price rose over 2,000% in forty minutes and the market capitalization fell from $4.5 billion to about $200 million within hours, with on-chain analysis identifying fewer than ten wallets cashing out $87.4 million. MELANIA fell more than 98% from its peak, with over 90% of supply held by wallets attributed to insiders. The Central African Republic's president-promoted token fell 96.7% in about 24 hours.
 
+Both presidents have a record on Bitcoin itself, and in one case the record moved first. Trump dismissed it in 2019 — the line CNN quoted back at him five years later was that cryptocurrencies are "based on thin air" — and by July 27, 2024 he was on stage at the Bitcoin conference in Nashville promising a strategic national bitcoin reserve, that the government would never sell the coins it holds, and:
+
+<!-- audit:quote-skip -->
+> I want it to be mined, minted and made in the U.S.
+
+The token came six months after that speech. Milei's position is older and narrower than his reputation suggests: he has called central banking a scam and described Bitcoin as "the return of money to its original creator, the private sector," but his actual programme was dollarisation, and Argentina under him has not moved toward Bitcoin adoption — a distinction the reporting makes explicitly, against the pro-Bitcoin label the quotation attracted.
+
 The regulatory position is that this category sits outside securities protection. SEC staff stated in February 2025 that meme coins of this type are not securities — a statement that carries no binding legal force and leaves fraud actionable under other law — and a sitting Commissioner told an industry audience in May 2025: "if you are expecting that there's SEC protection around these, you should not expect that." The one adjudicated precedent for celebrity promotion remains the SEC's 2022 settlement with Kim Kardashian over an undisclosed paid promotion.
 
-This archive records these events and does not characterize the intent behind them. What it can say is structural. Every property §3 tests for is absent by construction in a coin like this: the supply is allocated to the issuer before launch, the issuer is a named party, the launch is announced by that party, and the fee revenue accrues to that party regardless of the price. It is the exact inverse of the launch condition Bitcoin had — and it is now cheap enough that the process runs tens of thousands of times a day.
+This archive records these events and does not characterize the intent behind them. What it can say is structural, and the first structural fact is that none of these is a chain. All four are tokens minted on Solana, which appears in §2 with an issuance rule, a consensus mechanism and a published argument about what its money is for — none of which a token minted on its ledger inherits. Such a token's supply is not a schedule; it is a number the issuer chose. So every property §3 tests for is absent by construction: the supply is allocated to the issuer before launch, the issuer is a named party, the launch is announced by that party, and the fee revenue accrues to that party regardless of the price. It is the exact inverse of the launch condition Bitcoin had — and it is now cheap enough that the process runs tens of thousands of times a day.
 
 ## 8. How many altcoins are there?
 Two data providers, asked on the same day, disagree by three orders of magnitude. Neither is wrong; they are counting different things.

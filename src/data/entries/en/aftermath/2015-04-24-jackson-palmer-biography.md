@@ -41,7 +41,7 @@ relatedEntries:
 
 Jackson Palmer worked in marketing at Adobe in Sydney when, watching the number of cryptocurrencies multiply through 2013, he registered dogecoin.com as a joke. Billy Markus saw the joke and made it run, forking Litecoin. [Dogecoin launched on December 6, 2013](/BitcoinArchive/entries/aftermath/2013-12-06-dogecoin-launch/) and is still, more than a decade later, among the larger cryptocurrencies by market capitalization.
 
-Palmer's record in this archive is not the launch. It is the sequence of public repudiations that followed it — running from his first year in the community to a rejection of the entire category in 2021 — and the fact that the position barely moved across those seven years.
+What matters about Palmer is not the launch. It is the sequence of public repudiations that followed it — running from his first year in the community to a rejection of the entire category in 2021 — and the fact that the position barely moved across those seven years.
 
 ```mermaid
 timeline

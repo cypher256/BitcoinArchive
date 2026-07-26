@@ -159,6 +159,6 @@ Mixmaster 等の匿名性システムにおけるサッサマンの記録され�
 - 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
 - 新たな証拠 — 直接的な文書上の繋がり、v0.1 コードに残るサッサマンの他の公開コードと一致する技術的指紋、パターソンや他の証人による発言 — が出現すれば、本エントリーは更新されるべきである。
 
-本ページは[レン・サッサマン伝記](/BitcoinArchive/ja/participants/len-sassaman/) (説の対象人物)、 [アダム・バック身元仮説](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)・[サボ身元仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)・[金子勇身元仮説](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) (同じ候補ランドスケープの並列仮説)、そして [2026 年 van Dorst コーパス候補別再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) (サッサマン枠組みを定量的文体計量と対比) から参照される。
+他の名指し候補は並んで置かれている ─ [アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[ニック・サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[金子勇](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/)。そして [2026 年の van Dorst コーパス再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)が、このサッサマンの枠組みを定量的な文体計量と突き合わせている。
 
 *[編者注：本エントリーは分析セクションの中で最も推論寄りのエントリーである。]*

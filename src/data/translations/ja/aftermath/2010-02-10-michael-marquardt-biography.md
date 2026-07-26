@@ -42,7 +42,7 @@ theymos は 2010年2月10日、BitcoinTalk への最初の投稿として[トピ
 2010年後半から 2011年初頭にかけての[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)のプロジェクトからの段階的な離脱に先立ち、サトシはビットコイン・フォーラムの管理権を theymos と[シリウス（マルッティ・マルミ）](/BitcoinArchive/ja/participants/martti-malmi/)に譲渡した。theymos が主たる管理人となった。2011年8月1日、[bitcoin.org/smf から独立ドメイン bitcointalk.org への移行](/BitcoinArchive/ja/entries/aftermath/2011-08-01-bitcointalk-org-migration/)を完了し、すべての投稿・スレッド・ユーザーアカウントを保持した。
 
 ## その他の役職
-theymos は Bitcoin Wiki（en.bitcoin.it）の長年の管理人でもあり、後には r/Bitcoin サブレディットのモデレーターにもなった。2015年〜2017年のブロックサイズ論争の期間中、Bitcoin XT や Bitcoin Classic といった代替実装についての議論を制限するモデレーションルールを執行したことで、当時最も公に議論されたコミュニティ人物の一人となった。これらの出来事は、本アーカイブの主眼である 2008–2011年の範囲外に属する。
+theymos は Bitcoin Wiki（en.bitcoin.it）の長年の管理人でもあり、後には r/Bitcoin サブレディットのモデレーターにもなった。2015年〜2017年のブロックサイズ論争の期間中、Bitcoin XT や Bitcoin Classic といった代替実装についての議論を制限するモデレーションルールを執行したことで、当時最も公に議論されたコミュニティ人物の一人となった。
 
 ## 意義
 theymos は初期ビットコインの最も重要な歴史的記録の管理を引き継いだ。サトシ・ナカモトの 575件の公開投稿、最初期の商業ビットコイン取引、プロトコルを形作った技術的議論を保持するフォーラムである。BitcoinTalk がサトシ時代の全投稿を完全な形で今日まで公開アクセス可能な状態で残っているのは、彼の管理があったからこその側面が大きい。

@@ -97,4 +97,4 @@ Newsweek 記事が持っていた唯一の傍証 —— 玄関先の発言 —�
 - 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
 - 人物像の全体 —— ナカモトの生涯・経歴、ビットコインコミュニティが彼のために集めた寄付、地理的偶然の報道 —— は[ドリアン・ナカモト伝記](/BitcoinArchive/ja/participants/dorian-nakamoto/)にある。本エントリーは説の論述のみを扱う。
 
-本ページは[ドリアン・ナカモト伝記](/BitcoinArchive/ja/participants/dorian-nakamoto/)（説の対象人物）と[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)から参照される。総覧は、必要だが十分ではないという評価枠組みの中で、ドリアン・ナカモトを C 群に位置づけている。
+[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、必要だが十分ではないという評価枠組みの中で、ドリアン・ナカモトを C 群に置いている。

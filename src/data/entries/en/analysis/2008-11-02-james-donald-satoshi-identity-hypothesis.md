@@ -39,7 +39,7 @@ inlineLinkKeywords:
 
 ![Abstract dark illustration for a Satoshi-identity hypothesis: a faceless silhouetted figure with an empty, outlined void where a profile would be, flanked by an "origin thread" timeline panel and a stylometric-match panel showing an 82% lexical-overlap bar and a highlighted "rare shared word," with a voice-comparison section contrasting "combative" and "patiently pedagogical" labels, and a final "EXCLUDED" verdict marker.](/BitcoinArchive/images/analysis/2008-11-02-james-donald-satoshi-identity-hypothesis-hero.png)
 
-On November 2, 2008, [James A. Donald](/BitcoinArchive/participants/james-donald/) became the first person to publicly answer Satoshi's white-paper announcement on the cryptography mailing list — *"We very, very much need such a system, but the way I understand your proposal, it does not seem to scale to the required size."* That position, at the very origin of the public Bitcoin record, plus his standing as a long-time cypherpunk, and later a stylometric match, made him a candidate. His documented role is in the [James A. Donald biography](/BitcoinArchive/participants/james-donald/); this entry is the claim treatment only.
+On November 2, 2008, [James A. Donald](/BitcoinArchive/participants/james-donald/) became the first person to publicly answer Satoshi's white-paper announcement on the cryptography mailing list — *"We very, very much need such a system, but the way I understand your proposal, it does not seem to scale to the required size."* That position, at the very origin of the public Bitcoin record, plus his standing as a long-time cypherpunk, and later a stylometric match, made him a candidate. His documented role is in the [James A. Donald biography](/BitcoinArchive/participants/james-donald/).
 
 ## 1. The evidence
 
@@ -92,4 +92,4 @@ Donald sits at the productive tension between the archive's [stylometric layer](
 - This entry does not present new evidence. It compiles publicly available material.
 - The stylometric "rare word" is reported via secondary accounts (Votta 2021, Wallace 2025); this entry does not reproduce the specific term, which is not reliably fixed in the public record here. Donald's documented historical role — first responder and scaling interlocutor — is in the [James A. Donald biography](/BitcoinArchive/participants/james-donald/).
 
-This page is referenced from the [James A. Donald biography](/BitcoinArchive/participants/james-donald/) (the subject of the claim) and the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), which places James A. Donald in its Group C taxonomy within the necessary-but-not-sufficient evaluation framework.
+[The identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places James A. Donald in Group C of its necessary-but-not-sufficient evaluation.

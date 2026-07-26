@@ -64,7 +64,7 @@ On the early praise Bitcoin drew, the article gathered notable voices:
 <!-- audit:quote-skip -->
 > [Wei Dai](/BitcoinArchive/participants/wei-dai/), inventor of b-money, calls it "very significant"; [Nick Szabo](/BitcoinArchive/participants/nick-szabo/), who created bit gold, hails bitcoin as "a great contribution to the world"; and [Hal Finney](/BitcoinArchive/participants/hal-finney/), the eminent cryptographer behind RPOW, says it's "potentially world-changing."
 
-The article described how [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) bought 10,000 bitcoins for $50 and created the [Bitcoin Faucet](/BitcoinArchive/entries/aftermath/2010-06-11-andresen-bitcoin-faucet/), giving them away — the faucet's own article covers the giveaway itself but not this funding detail. [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) conducted the [first real-world Bitcoin transaction](/BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/) — paying 10,000 BTC for two pizzas.
+The article described how [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/) bought 10,000 bitcoins for $50 and created the [Bitcoin Faucet](/BitcoinArchive/entries/aftermath/2010-06-11-andresen-bitcoin-faucet/), giving them away. [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) conducted the [first real-world Bitcoin transaction](/BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/) — paying 10,000 BTC for two pizzas.
 
 For an exact figure, [the bitcointalk.org migration entry](/BitcoinArchive/entries/aftermath/2011-08-01-bitcointalk-org-migration/) records precisely 575 posts by Satoshi, from November 2009 to December 2010.
 

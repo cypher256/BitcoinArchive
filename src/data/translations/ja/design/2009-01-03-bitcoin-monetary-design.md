@@ -282,4 +282,4 @@ pie title 時代別ブロック報酬の内訳（概算）
 - **レイヤー 2 の手数料動態** — Lightning Network のチャネル開閉とサブマリンスワップがオンチェーン手数料市場とどう相互作用するか。
 - **セキュリティモデル** — 51% 攻撃の経済学、利己的マイニングのゲーム理論、完全な脅威モデルはレイヤー 2 のセキュリティモデル深掘りに委ねる。
 
-本貨幣設計は[マイニング報酬枯渇分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)によって中核的な構造的参照点として扱われる。同分析は自らを、本エントリで文書化された貨幣設計枠組みの発行終了後の対応物として位置付ける。
+[マイニング報酬枯渇の分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)は、同じ枠組みを新規発行が尽きた後まで延ばして考える。

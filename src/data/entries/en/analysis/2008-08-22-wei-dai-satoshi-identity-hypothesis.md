@@ -206,6 +206,6 @@ For comparison with other named-candidate hypotheses, see the [Satoshi-identity 
 - Wei Dai's hypothesis differs from candidates with a single triggering articulation (Greenberg 2014 for Hal Finney, NYT 2026 for Adam Back, HBO 2024 for Todd) — Wei Dai has been a structural candidate from before Bitcoin's launch by virtue of the whitepaper citation, with no single major-press articulation. The entry uses the August 22, 2008 contact date as its anchor because that is when the structural conditions for the hypothesis were established.
 - If new evidence surfaces — direct documentary links beyond the three-email correspondence, technical fingerprints in Bitcoin v0.1 matching Wei Dai's other code beyond the standard Crypto++ inclusion, or comments by Wei Dai that contradict the 2014 retrospective — this entry should be updated.
 
-This page rests on [the Wei Dai biography](/BitcoinArchive/participants/wei-dai/), which provides the documentary basis — academic record, the b-money proposal, cypherpunk participation, and retrospective statements — that the evidence in §1 and the counter-evidence in §2 weigh.
+[The Wei Dai biography](/BitcoinArchive/participants/wei-dai/) holds the documentary basis — academic record, the b-money proposal, cypherpunk participation, and retrospective statements — that the evidence in §1 and the counter-evidence in §2 weigh.
 
 *[Editor: this entry uses the August 22, 2008 first contact between Satoshi and Wei Dai as the structural anchor for a hypothesis that has no single triggering article.]*

@@ -89,4 +89,4 @@ Gupta は、マスクが公言するビットコインへの無関心、信念�
 - 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
 - 発端の主張は物証を欠いたブログ投稿一本で、引用できる記録はその主張、それを報じた報道、そしてマスクの否定である。マスクのより広いビットコイン周辺での公的役割は[イーロン・マスク伝記](/BitcoinArchive/ja/participants/elon-musk/)にある。
 
-本ページは[イーロン・マスク伝記](/BitcoinArchive/ja/participants/elon-musk/)（説の対象人物）と[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)から参照される。総覧は、必要だが十分ではないという評価枠組みの中で、イーロン・マスクを C 群に位置づけている。
+[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、必要だが十分ではないという評価枠組みの中で、イーロン・マスクを C 群に置いている。

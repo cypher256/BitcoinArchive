@@ -93,4 +93,4 @@ translationStatus: complete
 - 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
 - 文体計量の「稀な単語」は二次的な記述（Votta 2021、Wallace 2025）を介して報じられたもので、本エントリーはその具体的な語を再現しない（ここでは公的記録上に確実に定まっていない）。ドナルドの文書化された史実上の役割 —— 最初の返信者でありスケーリングの対話者 —— は[ジェームズ・A・ドナルド伝記](/BitcoinArchive/ja/participants/james-donald/)にある。
 
-本ページは[ジェームズ・A・ドナルド伝記](/BitcoinArchive/ja/participants/james-donald/)（説の対象人物）と[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)から参照される。総覧は、必要だが十分ではないという評価枠組みの中で、ジェームズ・A・ドナルドを C 群に位置づけている。
+[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、必要だが十分ではないという評価枠組みの中で、ジェームズ・A・ドナルドを C 群に置いている。

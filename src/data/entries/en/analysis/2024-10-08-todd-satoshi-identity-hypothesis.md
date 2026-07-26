@@ -69,7 +69,7 @@ The documentary's central piece of evidence is a December 2010 exchange on [Bitc
 
 This was Todd's second post on BitcoinTalk, made three days after registering. Hoback argued that Todd had accidentally posted from his own account instead of Satoshi's — that the reply was a continuation of Satoshi's thought rather than a response to it. Both accounts fell silent in the days that followed: [Satoshi's last public post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) came two days later, on December 12, 2010, and Todd did not return to BitcoinTalk for sixteen months.
 
-The objection that Bitcoin Institute would raise to itself: a 1.5-hour-after-Satoshi reply is not implausible same-author behavior, but neither is it implausible that an attentive reader noticed the same edge case Satoshi had been articulating. The "Of course, to be specific" register — a calm, technically-precise correction with a hint of casual authority — is suggestive but does not on its own carry the weight of authorship.
+The counter-argument: a 1.5-hour-after-Satoshi reply is not implausible same-author behavior, but neither is it implausible that an attentive reader noticed the same edge case Satoshi had been articulating. The "Of course, to be specific" register — a calm, technically-precise correction with a hint of casual authority — is suggestive but does not on its own carry the weight of authorship.
 
 ### 1.2 The RBF / BIP 125 connection
 
@@ -170,4 +170,4 @@ For comparison with other named-candidate Satoshi-identity hypotheses (Sassaman,
 - This entry does not present new evidence. It compiles publicly available material.
 - If new evidence surfaces — direct documentary links, technical fingerprints in the v0.1 code matching Todd's other published code, comments by Todd or other witnesses that contradict the public record — this entry should be updated.
 
-This page rests on two adjacent records. [The HBO Money Electric documentary entry](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) is the public articulation where the evidence in §1 starts. [The satoshi-identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places the Todd claim in Group C and uses it as one of the principal comparison anchors in the necessary-but-not-sufficient evaluation framework.
+[The HBO Money Electric documentary entry](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) is the public articulation where the evidence in §1 starts. [The satoshi-identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places the Todd claim in Group C and uses it as one of the principal comparison anchors in the necessary-but-not-sufficient evaluation framework.

@@ -43,7 +43,7 @@ relatedEntries:
 
 Anatoly Yakovenko spent more than a decade at Qualcomm as a systems engineer on wireless systems, then worked at Mesosphere and Dropbox on distributed systems. In 2017 he began outlining the idea he called Proof of History. Solana grew out of it, and by the mid-2020s it was one of the largest chains by market capitalization.
 
-His statements about Bitcoin are the reason the record sits here, and they are unusual in that the praise and the dismissal are both maximal and were made months apart.
+His statements about Bitcoin are unusual in that the praise and the dismissal are both maximal, and were made months apart.
 
 ```mermaid
 timeline

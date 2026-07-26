@@ -31,7 +31,7 @@ inlineLinkKeywords:
 
 ## What this page is
 
-This page is **L2 #9 — Architecture evolution (Satoshi era vs v27+)** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) — the first of three cross-cutting deep dives. Where each L1 page examines one subsystem end-to-end with a brief "two-era comparison" section at the bottom, this page puts those comparisons side by side across all eight domains and adds the split-architecture diagrams that no single domain page can provide.
+This page is **L2 #9 — Architecture evolution (Satoshi era vs v27+)** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) — the first of three cross-cutting deep dives. Each domain page carries a short two-era comparison of its own; here all eight run side by side, with the split-architecture diagrams no single domain page can show.
 
 **Scope.** Every comparison uses two fixed reference points: Satoshi's v0.1 release (January 3, 2009) and modern Bitcoin Core v27+ baseline. Intermediate versions are mentioned only when they introduced a structural change. The page does not cover design drift at the social or economic layer — those are analyzed in the [design-intent vs current-reality entry](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/). Each section below contains a split diagram (v0.1 left, v27+ right) and a comparison table, matching the L1 numbering.
 
@@ -430,4 +430,4 @@ Out of scope:
 - **Ecosystem** (Lightning, sidechains, Ordinals — see [L2 #10 Ecosystem](/BitcoinArchive/entries/design/2009-01-03-bitcoin-ecosystem-design/))
 - **Satoshi's coding style** (see the [Satoshi code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) and [Windows development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) entries)
 
-This architecture-evolution design entry is treated as the design-side counterpart by [the Satoshi Windows-only development-environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/), which uses this entry as the architectural-drift reading that the Phase 1 Windows-centric codebase produced.
+[The Windows-only development-environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) reads the same drift from the toolchain side.

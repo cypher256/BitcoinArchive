@@ -207,7 +207,5 @@ This entry is an editorial reading of structural features, not a price predictio
 
 The framing is an explanation of why the digital-gold label has stuck for Bitcoin and has not for the others. It is not a guarantee that it will continue to stick.
 
-This structural-features analysis plays a context-defining role in [the bitcoin-fork-and-altcoin family-tree analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/), where the closing paragraph names this entry as one of two analyses that treat the fork catalog as the load-bearing factual base for governance and monetary-property arguments about Bitcoin's post-2017 trajectory.
-
 Where the ownership side of this story stands as of 2026 — how far corporate treasuries, spot ETFs, and sovereign reserves have climbed toward Satoshi's untouched ~1.1 million BTC, and why holding coins confers none of the protocol authority the second layer is about — is mapped in [Bitcoin's ownership map](/BitcoinArchive/entries/analysis/2026-07-09-bitcoin-ownership-map/).
-The six features above are applied to twelve chains at once — with a per-table legend, and an explicit warning against reading the marks as a score — in [the altcoin count and design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/).
+The six features above are applied to twelve chains at once in [the altcoin count and design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/).

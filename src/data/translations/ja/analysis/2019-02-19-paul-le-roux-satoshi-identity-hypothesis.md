@@ -104,4 +104,4 @@ translationStatus: complete
 - 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
 - 本アーカイブはルルーに関する一次資料のエントリー（E4M サイファーパンク告知、刑事訴訟関連文書、『The Mastermind』／WIRED からの抜粋）を保持していない。ここでの具体的な日付・主張は外部ソース —— 主にラトリフの 2019 年の著書、同じくラトリフによる 2019 年の WIRED 記事、『The Atavist Magazine』（2016）、Wikipedia —— に基づくものでアーカイブ内検証済みではなく、生涯の全体は[ポール・ルルー伝記](/BitcoinArchive/ja/participants/paul-le-roux/)にある。
 
-本ページは[ポール・ルルー伝記](/BitcoinArchive/ja/participants/paul-le-roux/)（説の対象人物）と[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)から参照される。総覧は、必要だが十分ではないという評価枠組みの中で、ポール・ルルーを C 群に位置づけている。
+[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、必要だが十分ではないという評価枠組みの中で、ポール・ルルーを C 群に置いている。

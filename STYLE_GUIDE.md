@@ -2605,6 +2605,52 @@ The target is not a hard gate — a 500-word article with one clean
 table at 18% is fine; a 3,000-word analysis at 12% with no diagram
 is not. The numbers exist to trigger review, not to block commits.
 
+### ⛔ The ratio is not the goal — never add a figure to reach it
+
+A figure added because a page scored low is worse than the low score.
+The archive already carries the result of doing that: diagrams whose
+nodes are the rows of the table directly beneath them, and tables that
+compress, with the same quotes, the paragraph directly above.
+
+Two rules, and they are not optional:
+
+1. **Before adding anything — a figure, a table, a section, a
+   paragraph — read the page end to end.** Not the section being
+   edited: the page. Every confirmed instance of the defect above came
+   from adding to a page without knowing what it already said.
+2. **State in one sentence what the new element shows that the page
+   does not already show.** If the sentence is only "it makes the same
+   point visually", the element is redundant — either give it different
+   content or leave it out. A chart of the numbers a table already
+   lists is a redraw, not a figure.
+
+A low density score means the page's *content* has not been given its
+proper shape — a narrated chronology that should be a timeline, a
+repeated paragraph structure that should be a table. It never means
+the page needs one more picture.
+
+### ⛔ Write for the reader, not for a reviewer
+
+Everything published here reads as one editorial voice. Two failures
+follow from forgetting that, and both have shipped:
+
+- **Do not narrate the page's own construction.** "This page's subject
+  is X, not Y", "the supply column is deliberately terse because…",
+  "what this table adds is…", "this is at the end because it is the
+  least interesting question" — the reader did not ask how the page was
+  organised, and a page that ranks the interest of its own contents is
+  arguing with its editor in public.
+- **Other pages of this archive are not another author's work.** A
+  reader sees one site; there is no "over there". Write "the full
+  chronology is in [page]" — a fact about the subject. Do not write
+  "[page] is the truth source and covers this in depth, so it is not
+  repeated here", which credits, defers, and excuses non-repetition as
+  though two people wrote them.
+
+Navigation is required; justification is not. If a sentence exists to
+prove that content was not duplicated, or to defend a choice to whoever
+reviews the work, it belongs in the commit message.
+
 ### When to reach for non-text expression
 
 Trigger a visual representation when the content has any of:

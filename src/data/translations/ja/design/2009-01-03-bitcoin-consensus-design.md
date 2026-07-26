@@ -291,4 +291,4 @@ Tendermint や HotStuff のようなビザンチン障害耐性 (BFT) 合意シ�
 - **ネットワーク層のブロック伝播** — ブロックが P2P ネットワーク上を伝播する仕組み、コンパクトブロック中継 (BIP 152)、日食/シビル耐性。
 - **セキュリティモデル** — 51% 攻撃の経済学、利己的マイニング、完全な脅威モデル。L2 セキュリティモデル深掘りに委ねる。
 
-本コンセンサスルール設計は、いくつかの関連する設計書エントリーが土台として参照する基点である。 [P2P ネットワーク設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)は自らをコンセンサス層の下に明示的に位置付け、ブロック検証およびコンセンサスルールの範囲をすべて本エントリへ委ね、コンセンサスを「トランスポート層が運ぶルール集合」として扱う。 [貨幣設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)はトランザクション設計とコンセンサス設計の交点に位置を取り、プルーフ・オブ・ワーク、難易度調整、検証の各範囲をすべて本エントリへ委ねる。そして [L2 セキュリティモデル深掘り](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-security-model/)は本コンセンサス設計のファイナリティ分析を二重支払い緩和の証拠として引用し、プルーフ・オブ・ワークの仕組みについては、土台となる参照先として本エントリーに委ねる。
+隣接する三つのページが、合意形成の規則を別々の側から扱う。[P2P ネットワーク設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)はその規則を運ぶ伝送路を、[貨幣設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)は発行と難易度を検証ではなく通貨政策として、[セキュリティモデルの深掘り](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-security-model/)は規則が攻撃されたときに何が起きるか ─ 二重支払いの抑止、51% 攻撃の経済、利己的マイニング ─ を扱う。
