@@ -611,8 +611,6 @@ export const tagTranslations: Record<string, string> = {
   'ponzi-scheme': 'ポンジ・スキーム',
   'ceo-death': 'CEO 死亡',
   'first-step-act': 'First Step Act',
-  'difficulty-adjustment': '難易度調整',
-  'soft-fork': 'ソフトフォーク',
   'consensus-cleanup': 'コンセンサス クリーンアップ',
   'vulnerability': '脆弱性',
   'great-consensus-cleanup': 'Great Consensus Cleanup',

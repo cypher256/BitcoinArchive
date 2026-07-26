@@ -426,6 +426,38 @@ after it.
   entry's actual type directory (`aftermath/`, `design/`, etc.) — the
   directory name predates this feature's scope beyond `analysis` and
   is kept for path stability across already-shipped entries.
+- **Zero the body margin before screenshotting.** The usual path —
+  Playwright's `page.setContent(svg)` followed by `page.screenshot()` —
+  drops the SVG into a body that still carries the browser default
+  `margin: 8px`. The screenshot then captures 8 px of white along the
+  left and top edges, and clips 8 px off the right and bottom. Wrap the
+  SVG in a document that sets `html,body{margin:0;padding:0}` (and
+  paints the page background behind it) before taking the shot. Each
+  regeneration writes a fresh render script, so this has to be restated
+  in the generation request every time — it is not a one-off fix.
+
+**Verify before committing a hero image**: the defect above is easy to
+miss on a dark page. Read the corner and edge pixels rather than
+eyeballing the thumbnail — all four edges should be the image's own
+background colour, never `#ffffff`, and the render must be exactly
+1600×900. A shifted-by-8px render is 1600×900 too, so size alone does
+not prove it is correct. Then look at the image itself for the errors
+a pixel check cannot catch: labels overlapping each other or a shape,
+a curve pointing the wrong way, and any factual claim baked into the
+artwork (an in-image label is as much a published claim as body prose,
+and is subject to the same sourcing rules).
+
+Two SVG-specific traps that produced real defects here, both invisible in the
+markup and obvious only in the render:
+
+- **A `fill="..."` attribute loses to a `<style>` rule.** A label written as
+  `<text class="small" fill="#0d1f2a">` keeps the class's colour, because a CSS
+  rule beats a presentation attribute. Dark text on a light fill silently stayed
+  light. Use `style="fill:..."` when overriding a class.
+- **`letter-spacing` widens a run past what the coordinates suggest**, and SVG
+  adds the spacing after the final glyph too. A centred, letter-spaced string
+  overflows its panel and collides with its neighbour. Measure the rendered run,
+  or drop the manual spaces when the class already letter-spaces.
 
 **Alt text**:
 
