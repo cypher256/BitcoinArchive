@@ -23,7 +23,7 @@ participants:
     slug: "jed-mccaleb"
   - name: "Jackson Palmer"
     slug: "jackson-palmer"
-description: "Is a coin's design meant to make it worth more, to adjust itself, to hold still, or was it never about the value of a unit at all? Twelve chains sorted by the answer written into their own rules."
+description: "Twelve chains, sorted by what each one's issuance rule settles about the price of a single unit — and by how much of that price the rule never touches."
 tags:
   - "analysis"
   - "altcoin"
@@ -98,6 +98,8 @@ secondarySources:
     url: "https://fortune.com/2026/07/07/donald-trump-meme-coin-world-liberty-financial-finance-politics/"
   - name: "CNBC — SEC Commissioner Hester Peirce on meme-coin buyers (May 30, 2025)"
     url: "https://www.cnbc.com/2025/05/30/trump-and-other-meme-coins-wont-be-protected-by-sec-hester-peirce.html"
+  - name: "Polkadot support - the 2.1 billion DOT cap and the stepped supply schedule (Referendum 1710)"
+    url: "https://support.polkadot.network/support/solutions/articles/65000173907-what-is-the-total-supply-of-dot-"
   - name: "The Block — Central African Republic token price collapse"
     url: "https://www.theblock.co/post/339923/central-african-republic-car-memecoin-price-collapse"
 relatedEntries:
@@ -122,44 +124,46 @@ inlineLinkKeywords:
 
 ![Editorial infographic on a dark background: four horizontal bars of increasing length, each labelled to its right with a different counting method, a funnel narrowing from a wide mouth to a thin spout, a grid of small circles in three tones, and three caption boxes along the bottom.](/BitcoinArchive/images/analysis/2026-07-26-altcoin-count-and-design-comparison-hero.png)
 
-Is this a design meant to become worth more, or one that adjusts itself, or one built to hold still, or one that was never about the value of a unit at all? Every chain answers that in its own rules, years before anyone buys anything, and the answer is the closest thing a currency has to a philosophy.
+Will this coin buy more dollars next year than it does today? Every chain wrote part of the answer into its own rules, years before anyone bought anything — and the part it wrote is narrower than the question.
 
-[Why each design chose its issuance rule](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) is a debate running from 1998; [why Bitcoin has value at all](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) is a structural argument; [why its own scarcity wore down its use as cash](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/) is the tension every later design had to answer. Underneath all three sits something more mundane. An issuance rule sets the number of units in circulation and nothing else. What follows from that, and what does not?
+[Why each design chose its issuance rule](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) is a debate running from 1998; [why Bitcoin has value at all](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) is a structural argument; [why its own scarcity wore down its use as cash](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/) is the tension every later design had to answer. All three sit above the plainer question a buyer actually asks.
 
-## 1. What kind of money each design is trying to be
+## 1. What a design can and cannot do to the price
 
-Market capitalization is price per unit multiplied by the number of units in circulation. A chain's issuance rule sets exactly one of those three terms — the unit count — and it sets it years in advance, in code, independently of anything a buyer does.
+The unit price rises when demand grows faster than supply. An issuance rule fixes one of those two, years in advance, in code: how fast supply grows. It fixes nothing about the other. So the design decides the bar the buying has to clear, and never whether the buying arrives.
+
+So the question a buyer is really asking splits in two: how high is the bar, and is the buying growing faster than that? Only the first has an answer written down. Throughout what follows, *buying holds steady* means the flow of money coming in stays at the rate it is at now — not that the total already invested is frozen.
 
 That is a narrow power, and it is the whole of what a monetary design controls. But the *choice* of rule is not narrow at all: it is a statement about what the currency thinks it is. A ceiling says the unit should not be diluted. A burn tied to usage says supply should answer to the network. A peg says the unit should not move. A fixed annual issuance says the thing is meant to be spent, not held.
 
-Those positions sort into six, and each one has a determinate consequence for the two numbers a reader actually looks at. [The fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) traces which failure each project was trying to avoid when it picked its position, from b-money in 1998 through the Ethereum Merge.
+Those positions sort into six, and each sets a different bar. [The fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) traces which failure each project was trying to avoid when it picked its position, from b-money in 1998 through the Ethereum Merge.
 
-| What the currency takes itself to be | How the rule says it | Chains | Per-unit price, market cap held still | Effect on market cap |
+| What the currency takes itself to be | How the rule says it | Chains | The bar: how fast supply grows | Where the price goes if buying holds steady |
 |---|---|---|---|---|
-| **Scarce — it must not be diluted** | A ceiling, with issuance decaying to zero | Bitcoin, Litecoin, BCH, BSV, Cardano | Drifts down at a rate that halves each epoch, reaching zero at the cap | None |
-| **Scarce, and issued all at once** | The whole supply generated at launch | XRP | No dilution from the schedule; there is no schedule left to run | None |
-| **Self-adjusting — supply answers to the network** | Issuance plus a fee burn, so supply can shrink | Ethereum | Not fixed by the design; the direction is an output of usage | None |
-| **Self-adjusting on a published curve** | A declining rate, or a permanent tail that never reaches zero | Solana, Monero | Drifts down forever, at a rate that keeps shrinking | None |
-| **A currency to spend, not an asset to hold** | A fixed amount, or a fixed percentage, issued forever | Dogecoin, Polkadot | Drifts down forever — Dogecoin's rate falls as the base grows, Polkadot's does not | None |
-| **Pegged — it must not move at all** | Supply expands and contracts to hold one dollar | USDT, USDC | Pinned by construction | None |
+| **Scarce — it must not be diluted** | A ceiling, with issuance decaying toward it | Bitcoin, Litecoin, BCH, BSV, Cardano, Polkadot | Falling by steps toward the cap | **Up**, and by more each step as the bar drops |
+| **Scarce, and issued all at once** | The whole supply generated at launch | XRP | Zero — the schedule has already run | **Up**, with no bar to clear at all |
+| **Self-adjusting — supply answers to the network** | Issuance plus a fee burn, so supply can shrink | Ethereum | Set by usage; negative when burn exceeds issuance | **Either way**, depending on how busy the chain is |
+| **Self-adjusting on a published curve** | A declining rate, or a permanent tail that never reaches zero | Solana, Monero | Falling, but never to zero | **Up**, once buying clears a bar that keeps shrinking |
+| **A currency to spend, not an asset to hold** | A fixed number of units, issued forever | Dogecoin | 5.256 billion a year against a base that grows, so about 3.5% and falling | **Up**, on a bar that falls without the rule ever changing |
+| **Pegged — it must not move at all** | Supply expands and contracts to hold one dollar | USDT, USDC | Whatever the issuer's reserves do | **Nowhere** — new money reaching the issuer mints units rather than moving the price |
 
 The first row and the fifth are the same observation taken from opposite ends. [The electronic-cash reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/) traces how Bitcoin's own scarcity wore down its use as cash: nobody pays for today's lunch with something worth more tomorrow, so the property that made it gold is the property that took the spending away. Any design that puts *use* first has to answer that, and the answer is a supply that keeps moving. Dogecoin issues forever so holding is not the winning move; Ethereum ties issuance to usage so the network's activity, rather than a schedule, sets the number. Self-adjusting and use-first are not two separate philosophies in the table above. They are one position, reached by taking the cash side of the trade the scarcity designs took the other side of.
 
-Two things fall out of the right-hand columns.
+Two things follow from those two columns.
 
-**The mechanism does decide the direction of price per unit** — but only as a residual, and only with the market capitalization held still. More units means each one is worth less, and the rule says how many more there will be. That is the entire causal link between a supply design and a price.
+**The bar is the design's entire contribution.** It is a number, it is published, and it is settled years before anyone buys anything. Everything else about where the price goes sits on the other side of the comparison.
 
-**No supply design makes a market capitalization rise or fall.** A halving does not add a buyer. A burn does not add a buyer. A cap does not add a buyer. Each of these changes how a given market capitalization is divided among units; none of them changes the number being divided. Whether that number goes up is a question about demand, and demand is outside every mechanism in the table.
+**No design brings the buying.** A halving does not add a buyer. A burn does not add one. A cap does not add one. Each lowers the bar; none supplies the thing that has to clear it. That is why the last column says *if buying holds steady* — the condition is carrying the weight, and no line of a supply schedule guarantees it.
 
-The stablecoins prove the two are independent, because they run the experiment in reverse. USDC's market capitalization moves constantly — it is the amount of dollars deposited — while its price per unit does not move at all, by design. Market capitalization changed; per-unit price did not. If the mechanism linked them, that could not happen.
+The stablecoins show the seam by taking the price out of the comparison altogether. Buying USDC does not move its price; it mints another unit. The dollars deposited move constantly and the unit price does not, by design.
 
-Two consequences follow, and both cut against common readings.
+Two readings in wide circulation get this wrong.
 
-**"Inflationary forever" does not mean "diluting at a constant rate."** Dogecoin issues the same 5.256 billion units every year against a base that grows every year, so the percentage of the supply that is new falls each year without the rule ever changing. Only a design that targets a percentage, like Polkadot's, holds its dilution rate steady.
+**"Inflationary forever" does not mean "diluting at a constant rate."** Dogecoin issues the same 5.256 billion units every year against a base that grows every year, so the percentage of the supply that is new falls each year without the rule ever changing. Holding a dilution rate steady takes a rule that targets the percentage rather than the number — and the chain that had one no longer does. Polkadot ran a ~10% annual target until its own token-holders voted it away: Referendum 1710 took effect in January 2026, capping supply at 2.1 billion DOT and replacing the target with a stepped schedule that mints 13.14% of the *remaining* supply every two years, the first step falling on March 14, 2026. It is the clearest case in this table of §2's last column being used — the party who can change the rules changed the monetary rule.
 
 **A hard cap is a floor under the unit count, not a floor under the price.** Bitcoin's cap guarantees that the denominator stops growing; it guarantees nothing about the numerator. What the cap actually removes is one specific way of losing value — issuance decided by someone else. In the other direction, coins that become permanently unspendable reduce the effective denominator without any rule change; [the record of iconic losses](/BitcoinArchive/entries/analysis/2026-06-02-bitcoin-iconic-losses-overview/) collects the documented cases.
 
-None of this makes the per-unit price a comparison. Bitcoin caps at 21 million units, XRP generated 100 billion at launch, and Dogecoin adds 5.256 billion a year: a coin trading at $0.20 with a trillion units outstanding is a larger asset than one trading at $200 with a million. The per-unit figure invites an intuition — "cheap, so there is room to grow" — that the arithmetic does not support, because the unit count it is divided by was chosen at launch and says nothing about demand. The market history of the closest thing to an overtake — Ethereum reaching about 85% of Bitcoin's market capitalization in June 2017 — is recorded with its dated snapshots in [the fork-and-altcoin genealogy](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/).
+There is one thing the unit price will not do, and it is the thing it gets used for most: compare one coin against another. Bitcoin caps at 21 million units, XRP generated 100 billion at launch, and Dogecoin adds 5.256 billion a year — so a coin trading at $0.20 with a trillion units outstanding is a larger asset than one trading at $200 with a million. "Cheap, so there is room to grow" is the intuition the figure invites, and the arithmetic does not support it: the denominator it is divided by was chosen at launch and says nothing about demand. The market history of the closest thing to an overtake — Ethereum reaching about 85% of Bitcoin's market capitalization in June 2017 — is recorded with its dated snapshots in [the fork-and-altcoin genealogy](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/).
 
 ### Was any of this meant to make a coin worth more?
 
@@ -223,7 +227,7 @@ Below are the twelve non-Bitcoin chains that recur in this archive, with Bitcoin
 | **Cardano** | 45 B cap | Proof-of-stake (Ouroboros) | 2015–17 voucher sale; 20% to IOHK, EMURGO, the Foundation | Transparent, with optional metadata | Three coordinating bodies plus on-chain governance |
 | **Solana** | None; declining inflation | Proof-of-stake + Proof of History | Premine; foundation and investor allocation | Transparent | Solana Foundation and Labs |
 | **Monero** | 18.4 M + 0.6 XMR/block forever | Proof-of-work (RandomX) | Mined; no premine | **Opaque by default** (ring signatures, hidden amounts) | Contributors; no foundation with protocol authority |
-| **Polkadot** | None; ~10% annual target | Nominated proof-of-stake | 2017 sale + Web3 Foundation allocation | Transparent | On-chain governance by token vote |
+| **Polkadot** | 2.1 B cap since January 2026 | Nominated proof-of-stake | 2017 sale + Web3 Foundation allocation | Transparent | On-chain governance by token vote |
 | **USDT (Tether)** | Set by the issuer's reserves | N/A — a token on other chains | Minted on demand against fiat | Transparent | Tether Ltd |
 | **USDC (Circle)** | Set by the issuer's reserves | N/A — a token on other chains | Minted on demand against fiat | Transparent | Circle |
 
@@ -246,7 +250,7 @@ The column that separates the group is not supply and not consensus. It is the l
 | **Cardano** | 🟡 fully centralized until March 2021 | 🔴 three bodies, active founder | 🔴 sale plus 20% allocation | 🔴 | 🟢 | 🔴 |
 | **Solana** | 🟡 high hardware requirements for validators | 🔴 foundation, active founder | 🔴 premine | 🔴 | 🔴 no cap | 🔴 |
 | **Monero** | 🟢 | 🟢 no foundation with protocol authority | 🟢 no premine | 🟡 pseudonymous originator gone; later leads public | 🟡 bounded then permanent tail | 🔴 |
-| **Polkadot** | 🟢 | 🔴 foundation, active founder | 🔴 sale plus allocation | 🔴 | 🔴 no cap | 🔴 |
+| **Polkadot** | 🟢 | 🔴 foundation, active founder | 🔴 sale plus allocation | 🔴 | 🟡 capped in 2026, by a vote that can vote again | 🔴 |
 | **USDT / USDC** | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 set by an issuer | 🔴 |
 
 Monero is the interesting row. Of the twelve chains in this table it is the only one that matches Bitcoin on fair launch, on the absence of a controlling organization, and on system decentralization. Where it diverges is supply — it chose a permanent tail emission over a hard cap, deliberately, to keep paying for security after issuance would otherwise end. That is a different bet on the same question, made by people who understood exactly what they were giving up. [Riccardo Spagni's record](/BitcoinArchive/participants/riccardo-spagni/) sets out the reasoning.

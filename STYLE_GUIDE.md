@@ -1,6 +1,6 @@
 # Bitcoin Institute Style Guide
 
-Internal editorial rules shared across Bitcoin Institute.
+The editorial rules every entry in this archive is written to.
 
 ## Purpose
 
@@ -390,9 +390,8 @@ participants:
 ### Hero Images
 
 Every editorial entry (`article`, `analysis`, `biography`, `design`)
-carries a hero illustration, generated via the local `codex` CLI (see
-the `codex-review` skill's invocation pattern) and embedded as a
-plain markdown image immediately below the frontmatter's closing
+carries a hero illustration, embedded as a plain markdown image
+immediately below the frontmatter's closing
 `---`, before the first body paragraph:
 
 ```md
@@ -413,11 +412,9 @@ after it.
 
 **Generation**:
 
-- Prompt `codex exec` (model `gpt-5.6-luna`, `model_reasoning_effort=low`)
-  with the article's **EN-locale** body — never the JA translation.
-  An early trial fed the JA body and the model baked Japanese text
-  into the image; since the EN and JA pages share one image file,
-  the Japanese text then leaked onto the EN page too.
+- Work from the **EN-locale** body, never the JA translation: the two
+  locales share one image file, so any text that ends up inside the
+  image must be English.
 - Require: ~1600×900 PNG (an SVG rendered via a headless browser is
   the usual path), no real human face or photographic likeness of
   any named person, and all in-image text labels in English only
@@ -1252,10 +1249,10 @@ false positives on primary-source content.
 A separate `--report-f-candidates` mode lists every `edit:` / `編集:`
 occurrence inside `forum-post`, `mailing-list`, and `correspondence`
 entries. The auto-classifier treats these as F (preserved) by default,
-and a full human review of the candidate report was completed during
-the 2026-04 migration: all 75 occurrences were confirmed to be
-original-poster edit notes. Re-run the report mode (`npm run
-audit:f-candidates`) whenever new entries of these types are added.
+which is correct for every occurrence in the corpus so far — all of
+them are original-poster edit notes. Re-run the report mode (`npm run
+audit:f-candidates`) whenever new entries of these types are added and
+confirm the classification still holds.
 
 ## Title Policy
 
@@ -1266,13 +1263,11 @@ audiences, in addition to readers browsing inside the site:
    in Google results, the OG card in social shares, and the text the
    browser tab renders. If it is cryptic in isolation, the click does
    not happen.
-2. **Search engines** — the title is the strongest ranking signal and
-   the text most commonly displayed in SERP. Google truncates the
-   displayed title around 50–60 characters but indexes the full string,
-   so the leading identifiers matter more than total length.
-3. **AI / AIO** (Perplexity, ChatGPT with browsing, Google AI Overview,
-   etc.) — the title is the citation label an LLM extracts for the
-   page. Ambiguous titles are less likely to be used as sources.
+2. **Results lists** — display is truncated around 50–60 characters
+   while the full string is indexed, so the identifiers that name the
+   subject belong at the front rather than the end.
+3. **Citation** — the title is the label the page travels under when
+   something else quotes it. An ambiguous one names nothing.
 
 Internal browsing convenience is a side-effect of the three above.
 
@@ -1425,26 +1420,26 @@ Why these two carve-outs: identification entries and multi-year
 incident entries both fail the "preserve original title" rule under
 its plain reading, because the original source title is too generic
 (`U.S. Government, Satoshi Nakamoto's Identity, FOIA Lawsuit`,
-`2016 Bitfinex hack`) to function as a stand-alone landing page in
-search / AI-citation contexts. The patterns above are the corpus's
-practiced compromise: lead with the SEO-load-bearing identifier
-(theory name or canonical event name), append the source artifact
-and key facts after an em-dash. Forum / mailing-list / correspondence
+`2016 Bitfinex hack`) to identify its own subject when read out of
+context. The patterns above are the corpus's practiced compromise:
+lead with the identifier that names the thing (theory name or
+canonical event name), append the source artifact and key facts
+after an em-dash. Forum / mailing-list / correspondence
 entries continue to follow strict preservation per the per-category
 rules above.
 
 #### Analysis (Bitcoin Institute editorial readings)
 
 - Location: `src/data/entries/en/analysis/*`
-- Treat analysis pages as landing pages: SEO / AIO weight is highest,
-  evocative register is the default.
+- Evocative register is the default: an analysis page is usually the
+  first thing a reader meets on its subject.
 - Use the archetype `{Subject}: {concrete enumeration} and {the stake}`
   (see § Register below). Reach for descriptive only when the subject
   doesn't lend itself.
 - Canonical search keywords (`Satoshi Nakamoto`, `Bitcoin`, named
   candidates, dated events, named documents) must appear in the title.
-- Primary-source titles also need SEO but stay descriptive (historical
-  Subject preserved); evocative is for analysis only.
+- Primary-source titles stay descriptive (historical Subject
+  preserved); evocative is for analysis only.
 - Examples:
   - `Who Is Satoshi Nakamoto: 10 Geniuses and the Mystery of the Century`
   - `Bitcoin's family tree: forks, altcoins, and the mainline Bitcoin
@@ -2607,17 +2602,17 @@ is not. The numbers exist to trigger review, not to block commits.
 
 ### ⛔ The ratio is not the goal — never add a figure to reach it
 
-A figure added because a page scored low is worse than the low score.
-The archive already carries the result of doing that: diagrams whose
-nodes are the rows of the table directly beneath them, and tables that
-compress, with the same quotes, the paragraph directly above.
+A figure added because a page scored low is worse than the low score:
+a diagram whose nodes are the rows of the table beneath it, or a table
+that compresses the paragraph above it, adds length without adding
+anything a reader did not already have.
 
 Two rules, and they are not optional:
 
 1. **Before adding anything — a figure, a table, a section, a
    paragraph — read the page end to end.** Not the section being
-   edited: the page. Every confirmed instance of the defect above came
-   from adding to a page without knowing what it already said.
+   edited: the page. What a page already says is only visible from the
+   whole page.
 2. **State in one sentence what the new element shows that the page
    does not already show.** If the sentence is only "it makes the same
    point visually", the element is redundant — either give it different
@@ -2629,15 +2624,13 @@ proper shape — a narrated chronology that should be a timeline, a
 repeated paragraph structure that should be a table. It never means
 the page needs one more picture.
 
-### ⛔ Write for the reader, not for a reviewer
+### ⛔ Write for the reader
 
-Everything published here reads as one editorial voice. Two failures
-follow from forgetting that, and both have shipped:
+Everything here reads as one editorial voice. Two things follow.
 
 - **Do not narrate the page's own construction.** "This page's subject
   is X, not Y", "the supply column is deliberately terse because…",
-  "what this table adds is…", "this is at the end because it is the
-  least interesting question" — the reader did not ask how the page was
+  "what this table adds is…" — the reader did not ask how the page was
   organised, and a page that ranks the interest of its own contents is
   arguing with its editor in public.
 - **Other pages of this archive are not another author's work.** A
@@ -2647,9 +2640,7 @@ follow from forgetting that, and both have shipped:
   repeated here", which credits, defers, and excuses non-repetition as
   though two people wrote them.
 
-Navigation is required; justification is not. If a sentence exists to
-prove that content was not duplicated, or to defend a choice to whoever
-reviews the work, it belongs in the commit message.
+Navigation is required; justification is not.
 
 ### When to reach for non-text expression
 
@@ -3012,8 +3003,7 @@ slightly past prose without a clear "this is a separate block"
 indicator — is solved by the visual boundary (border + background)
 on `.figure-block`, not by the absence of breakout. The 1.5×
 threshold further prevents the gata zone the original implementation
-exposed. See `todo/0531_図表overflowとコンテナ幅.md` for the full
-diagnosis.
+exposed.
 
 ### Tables: the lowest-cost visual structure
 

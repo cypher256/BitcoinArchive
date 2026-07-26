@@ -212,7 +212,7 @@ graph TD
     Q --> Disc[Human discretion<br/>committee or issuer decides]
     Fixed --> A1[Bitcoin / BCH / BSV<br/>Litecoin / Cardano<br/>Dogecoin / Ethereum Classic]
     Decay --> A2[Solana 8 to 1.5 percent<br/>Monero tail emission]
-    Dyn --> A3[Ethereum issuance + burn<br/>Cosmos / Polkadot governance]
+    Dyn --> A3[Ethereum issuance + burn<br/>Cosmos governance]
     Disc --> A4[USD / EUR / JPY / GBP / CNY<br/>USDT / USDC fiat-pegged]
 ```
 
@@ -228,13 +228,13 @@ graph TD
 | **Solana (SOL)** | None | Inflation 8% → 1.5% over 10 years (−15% per year) | Protocol + foundation | Declining inflation |
 | **Ethereum (ETH)** | None | Issuance + EIP-1559 fee burn (turns net-deflationary in high-use periods) | Protocol + EIP governance | Dynamic, market-mediated |
 | **Ethereum Classic (ETC)** | ~210.7 M (cap introduced via fork) | Fixed-supply schedule | Protocol | Hard money (post-fork) |
-| **Polkadot (DOT)** | None | ~10% annual inflation target | Protocol + governance | Mild inflation, fixed-rate |
+| **Polkadot (DOT)** | 2.1 B (since January 2026) | 13.14% of remaining supply every two years | Protocol + governance | Capped by token-holder vote, replacing a ~10% target |
 | **Cosmos (ATOM)** | None | Bonded-ratio-targeted inflation (7-20% range) | Protocol + governance | Inflation, feedback-targeted |
 | **b-money (1998 proposal)** | Dynamic | Pegged to standard-basket cost-of-living | Distributed cost-estimation | Elastic, basket-pegged |
 | **USDT (Tether)** | Set by collateral | Mint / burn against fiat reserves | Centralized issuer (Tether Ltd) | Fiat-pegged stablecoin |
 | **USDC (Circle)** | Set by collateral | Same mechanism | Centralized issuer (Circle) | Fiat-pegged stablecoin |
 
-The distribution across this table reads as a *spectrum* rather than a consensus around any one design. Hard-cap inheritance from Bitcoin is one cluster (Bitcoin / BCH / BSV / Litecoin / Cardano / ETC); declining-issuance variants are another (Solana, Monero's emission curve); the no-cap-with-discretionary-feedback variants (Ethereum, Cosmos, Polkadot) are a third; the fiat-pegged stablecoins are a fourth, and they functionally inherit the fiat issuer's discretion.
+The distribution across this table reads as a *spectrum* rather than a consensus around any one design. Hard-cap inheritance from Bitcoin is one cluster (Bitcoin / BCH / BSV / Litecoin / Cardano / ETC); declining-issuance variants are another (Solana, Monero's emission curve); the no-cap-with-discretionary-feedback variants (Ethereum, Cosmos) are a third; the fiat-pegged stablecoins are a fourth, and they functionally inherit the fiat issuer's discretion.
 
 <!-- chart: supply-curve-comparison -->
 
@@ -311,7 +311,7 @@ That series cannot be read as a scorecard on supply design. The 85% reading carr
 
 One question stays open past that. Which worldview lasts is not something the record so far can yield. This is not the safe, opening "we can't know"; it is the residue left after weighing each design's cost and still not settling. Whether a hard cap's security budget holds after issuance ends, whether Ethereum's dynamic-response scarcity survives the swings of usage, whether an elastic supply can actually be implemented in a decentralized way — each is a question that 2140, or the decades before it, will answer, and fifteen years of record cannot.
 
-Two notes on scope. **Comparable data** — the supply figures in §6 are protocol rules as of mid-2026; several chains (Ethereum, Solana, Cosmos, Polkadot) have governance that can change issuance, so the table is a current state, not a frozen future. Bitcoin's cap is the most credibly fixed because changing it would be a backwards-incompatible consensus change, and that network's conservative tradition has rejected far smaller changes. **Stablecoins** (USDT, USDC, DAI) are a separate category — their supply policy sits downstream of their backing's monetary policy, not a primary design choice.
+Two notes on scope. **Comparable data** — the supply figures in §6 are protocol rules as of mid-2026; several chains (Ethereum, Solana, Cosmos) have governance that can change issuance, so the table is a current state, not a frozen future. Polkadot is what that looks like when it happens: its token-holders voted a 2.1 billion cap into a design that had run an uncapped inflation target since launch. Bitcoin's cap is the most credibly fixed because changing it would be a backwards-incompatible consensus change, and that network's conservative tradition has rejected far smaller changes. **Stablecoins** (USDT, USDC, DAI) are a separate category — their supply policy sits downstream of their backing's monetary policy, not a primary design choice.
 
 The Hayekian framing of the hard-cap-vs-adjustable debate — Hayek's 1976 *Denationalisation of Money* argued for *competing adjustable* private issuance, which Bitcoin replaces with a *single algorithmic fixed* schedule — is treated as a longer ideological-lineage analysis in [the Hayek-Extropian lineage entry](/BitcoinArchive/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/).
 
