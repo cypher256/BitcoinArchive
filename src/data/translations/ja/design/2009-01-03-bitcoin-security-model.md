@@ -64,30 +64,6 @@ translationStatus: complete
 | **いかなる単一ピアの誠実さ** | ノードは受信するすべてを検証する。嘘をつくピアは信頼されるのではなく、検出されてペナルティーを受ける |
 | **いかなる単一サーバーの稼働時間** | ゴシップネットワークに単一障害点はない。ノードの一部が接続を維持する限りプロトコルは動作し続ける |
 
-### 信頼境界図
-
-```mermaid
-flowchart TB
-    subgraph TRUSTED["プロトコルが信頼する"]
-        CRYPTO["暗号学的困難性\n(SHA-256, ECDLP)"]
-        MAJORITY["正直な多数派の<br/>ハッシュレート"]
-        CONNECT["ネットワーク接続性<br/>（1 つ以上の正直なピア）"]
-        SOFTWARE["正確な検証<br/>ソフトウェア"]
-    end
-
-    subgraph ELIMINATED["信頼を排除"]
-        CENTRAL["中央発行者なし"]
-        BANK["二重支払い防止の<br/>権威機関なし"]
-        IDENTITY["参加者の<br/>アイデンティティー不要"]
-        SERVER["単一障害点なし"]
-    end
-
-    CRYPTO --> CHAIN["有効な\nチェーン状態"]
-    MAJORITY --> CHAIN
-    CONNECT --> CHAIN
-    SOFTWARE --> CHAIN
-```
-
 ## 2. 攻撃の分類
 
 以下の攻撃はビットコインプロトコルの既知の脅威面を代表する。各攻撃はコンセンサス、ネットワーク、暗号の異なる層で動作し、異なるコストと影響のプロファイルを持つ。
@@ -254,25 +230,6 @@ flowchart TB
 ## 5. ネットワーク層の防御
 
 [P2P ネットワーク設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)がネットワーク層を詳述する。本節ではセキュリティーに関連する機構を要約する。
-
-```mermaid
-flowchart LR
-    subgraph DEFENSES["ネットワーク層の防御（v27 以降基準）"]
-        ANCHOR["アンカー接続<br/>（再起動をまたいで保持）"]
-        BLOCKONLY["ブロック中継専用ピア<br/>（追加 2 出方向、<br/>メモリープール漏洩なし）"]
-        EVICT["多様性保持型<br/>退去アルゴリズム"]
-        FEELER["フィーラー接続<br/>（アドレス到達性を<br/>プローブ）"]
-        BIP324["BIP 324<br/>暗号化トランスポート"]
-        ADDRV2["addrv2<br/>(Tor、I2P、CJDNS<br/>アドレス対応)"]
-    end
-
-    ANCHOR --> GOAL["目標:<br/>日食耐性 +<br/>監視耐性 +<br/>正直な接続性<br/>を維持"]
-    BLOCKONLY --> GOAL
-    EVICT --> GOAL
-    FEELER --> GOAL
-    BIP324 --> GOAL
-    ADDRV2 --> GOAL
-```
 
 | 防御 | 導入時期 | 対抗する攻撃 |
 |---|---|---|

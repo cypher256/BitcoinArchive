@@ -16,6 +16,7 @@ import { mount as mountBarRace } from '../scripts/bar-chart-race.js';
 import { mount as mountOwnershipTreemap } from '../scripts/ownership-treemap.js';
 import { mount as mountPublicCompaniesBar } from '../scripts/public-companies-bar.js';
 import { mount as mountWhaleTiers } from '../scripts/whale-tiers.js';
+import { mount as mountAltcoinPopulationCounts } from '../scripts/altcoin-population-counts.js';
 import { mount as mountEthBtcRatio } from '../scripts/eth-btc-ratio.js';
 import { mount as mountStylometricHistogram } from '../scripts/stylometric-distance-histogram.js';
 import { mount as mountForkGenealogy } from '../scripts/fork-genealogy.js';
@@ -211,6 +212,31 @@ const JPY_PER_USD = 160;
     host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p>' +
       '<div class="ce-chart"></div><p class="ce-note">' + T_.note + '</p>';
     mountEthBtcRatio(host.querySelector('.ce-chart'), lang);
+  };
+
+  // ===== drawer: altcoin-population-counts (how many last, by definition) =====
+  // Sits in the closing section of the altcoin comparison entry, after the
+  // count table and beside the survival paragraph. Deliberately does not
+  // redraw the count table above it: that table answers "how many exist",
+  // this answers "how many last", and the six figures come from two
+  // unrelated populations. Drawing and the figures live in
+  // src/scripts/altcoin-population-counts.js.
+  DRAWERS['altcoin-population-counts'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'Survival rates, by what the measurer counted as surviving',
+        sub: 'Six published measurements from two unrelated populations. Each bar is a share of its own population, so the bars describe definitions rather than a single trend.',
+        note: 'The two populations are not comparable with each other. The Boston College pair splits one ICO cohort by whether a project both raised capital and listed; the pump.fun pair is two studies of the same launchpad eight months apart, on different launch cohorts.',
+      },
+      ja: {
+        title: '何を「残った」と数えたかで変わる生存率',
+        sub: '互いに無関係な二つの母集団から取った、公表済みの測定 6 件。各棒はその行自身の母集団に占める割合であり、単一の傾向ではなく定義の違いを描いている。',
+        note: '二つの母集団は互いに比較できない。Boston College の二件は一つの ICO 集団を「資金調達と上場の両方を達成したか」で分けたもの、pump.fun の二件は同じ発行台を八か月あけて別の公開集団について調べた二つの研究である。',
+      },
+    } as Record<string, { title: string; sub: string; note: string }>)[lang];
+    host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p>' +
+      '<div class="ce-chart"></div><p class="ce-note">' + T_.note + '</p>';
+    mountAltcoinPopulationCounts(host.querySelector('.ce-chart'), lang);
   };
 
   // ===== drawer: whale-tiers (Glassnode's sea-creature entity scale) =====

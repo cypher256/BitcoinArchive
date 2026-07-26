@@ -43,6 +43,21 @@ Jed McCaleb had already built a file-sharing network with millions of simultaneo
 
 Almost everything the general public knows about Bitcoin's first four years passed through that site. By 2013 and into 2014 it was handling over 70% of the world's bitcoin trades, and its [collapse in February 2014](/BitcoinArchive/entries/aftermath/2014-02-28-mt-gox-bankruptcy/) is the largest custody-collapse event in Bitcoin's recorded loss history. McCaleb was not running it by then. He sold the site to Mark Karpelès in early 2011 — Wikipedia's article on him says February, its article on the exchange says March, and this archive does not have a basis to prefer one — and stayed on as a minority owner until the end.
 
+```mermaid
+timeline
+    2000 : Founds MetaMachine, releases eDonkey2000
+    2007 : Buys mtgox.com for Magic - The Gathering trading
+    2010 : Redeploys it as a Bitcoin exchange (Jul 18)
+    2011 : Sells the site to Mark Karpeles; stays a minority owner
+         : Begins work on what becomes the XRP Ledger
+    2012 : XRP Ledger launches with 100 billion XRP generated at once
+    2013 : Leaves his active role at Ripple (Jul)
+    2014 : Co-founds the Stellar Development Foundation (Jul 31)
+         : Mt. Gox collapses (Feb)
+    2019 : "Most financial institutions are not going to use bitcoin" (Jan 2)
+         : "I didn't think it was possible to solve that problem" (Nov 16)
+```
+
 ## What the whitepaper did to him
 
 McCaleb's account of encountering Bitcoin is the most compressed statement of the problem Satoshi solved that any altcoin founder has given:
@@ -89,6 +104,6 @@ In January 2019 he made a prediction that reads differently now than it did then
 
 Read narrowly — as a claim about banks running Bitcoin as settlement rails — the record so far has not contradicted him. Read as a claim about institutional holding, spot exchange-traded funds and corporate treasury positions since 2024 point the other way. The distinction between using a network and holding an asset is the same one that separates [electronic cash from digital gold](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/) inside Bitcoin's own history, and McCaleb's sentence is only wrong if the two are collapsed.
 
-## Why he is in this archive
+## Significance to Bitcoin
 
 McCaleb occupies a position no one else does: he built the institution through which most early Bitcoin trading flowed, and then spent a decade building the alternatives to the mechanism that made it necessary. Neither the XRP Ledger nor Stellar descends from Bitcoin's code, so neither appears in [the fork-and-altcoin genealogy](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/). Mt. Gox does appear in this history, unavoidably, and the man who created it left a clear statement of why he thought Bitcoin was both a genuine breakthrough and a thing worth building around.

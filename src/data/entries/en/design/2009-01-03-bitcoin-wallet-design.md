@@ -352,7 +352,6 @@ flowchart LR
 |---|---|---|
 | **Architecture** | Wallet embedded in single-binary node | Logically separated; experimental multiprocess separation in progress |
 | **Key generation** | Independent random keys at launch; 100-key lookahead pool added in v0.3.14 (Oct 2010) | Descriptor wallets: deterministic derivation from master seed |
-| **Key storage** | Berkeley DB (`wallet.dat`) | SQLite (`wallet.dat` in new format) |
 | **Backup model** | Export file after every new key; new keys after backup are unrecoverable | Descriptor backup covers all derived keys (raw BIP 32 seed, not BIP 39) |
 | **Address types** | P2PK, P2PKH only | P2PKH, P2SH, P2WPKH, P2WSH, P2TR |
 | **Address encoding** | Base58Check | Base58Check (legacy), Bech32, Bech32m |

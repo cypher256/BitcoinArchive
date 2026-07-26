@@ -45,6 +45,18 @@ Anatoly Yakovenko spent more than a decade at Qualcomm as a systems engineer on 
 
 His statements about Bitcoin are the reason the record sits here, and they are unusual in that the praise and the dismissal are both maximal and were made months apart.
 
+```mermaid
+timeline
+    2017 : Begins outlining Proof of History
+    2020 : Discloses the undisclosed 11,365,067 SOL loan
+    2022 : Class action names him personally
+    2023 : SEC names SOL as an alleged unregistered security (Jun)
+    2024 : Claims against him voluntarily dismissed (Sep)
+    2025 : "BTC has no value ... it's insurance" (Mar 2)
+         : "a masterpiece in terms of elegance and simplicity" (Sep 18)
+    2026 : "True tokens exist" - against Bitcoin exceptionalism (Jul 7)
+```
+
 ## What Solana was built to fix
 
 Solana's whitepaper states its problem plainly: blockchains have no shared, verifiable notion of time, so no participant can independently confirm the order of messages.
@@ -122,6 +134,6 @@ The SEC named SOL among the crypto assets it alleged were unregistered securitie
 
 None of this has a Bitcoin counterpart, and the reason is structural rather than reputational: a chain with no premine, no foundation and no issuer has no disclosure to fail to make. [The fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) records the issuance side of the same difference.
 
-## Why he is in this archive
+## Significance to Bitcoin
 
 Yakovenko is the most technically credentialed critic of Bitcoin's asset case who is simultaneously its most unreserved admirer as engineering. He is also, on the quantum question, a public advocate for changing Bitcoin — in the same 2025 conversation he said the network should migrate to a quantum-resistant signature scheme and put the odds of a breakthrough within five years at roughly even. Solana is outside the technical lineage in [the fork-and-altcoin genealogy](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) — Proof of History does not descend from Bitcoin's code. The record of what he said about Bitcoin does not depend on that lineage.

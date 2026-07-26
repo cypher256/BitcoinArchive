@@ -49,6 +49,18 @@ Jeremy Allaire was already an internet entrepreneur twice over before he touched
 
 He belongs in a Bitcoin archive for a reason more interesting than proximity. Allaire built the largest regulated dollar-denominated stablecoin — a design that inverts nearly every property Bitcoin was built for — while stating, repeatedly and on the record, that Bitcoin's importance lies precisely in the property his own product does not have.
 
+```mermaid
+timeline
+    2018 : Circle launches USD Coin (Sep 26)
+    2019 : "non-sovereign is going to become more important" (Jun 25)
+         : Names the digital-gold thesis and capital controls (Aug 20)
+    2021 : Attested reserve holds commercial paper and corporate bonds (Jul)
+         : Reserve moved to cash and cash equivalents (Sep)
+    2023 : $3.3bn of reserve trapped at Silicon Valley Bank; peg breaks (Mar)
+         : CENTRE dissolved; Circle takes sole control of USDC (Aug)
+    2024 : "one of the largest and most important alternative investment assets" (Jun 19)
+```
+
 ## What he says about Bitcoin
 
 In June 2019, on CNBC:
@@ -108,7 +120,7 @@ The peg held as a promise and broke as a price for roughly two days. That gap be
 
 **The governance.** The whitepaper's answer to the centralization objection was an independent multi-member organization, CENTRE, standing between the token and any single issuer. In August 2023 Circle and Coinbase dissolved CENTRE, and Circle took sole control of USDC's governance and smart-contract keys, on the stated reasoning that regulatory clarity had made a separate governance body unnecessary. Whatever one makes of the reasoning, the structural mitigation the whitepaper offered no longer exists, and the design is now what the whitepaper said it was trying not to be.
 
-## Why he is in this archive
+## Significance to Bitcoin
 
 USDC is not a Bitcoin fork, an altcoin in the usual sense, or a competing monetary design — it is a dollar with a blockchain interface, and its issuance follows the Federal Reserve's discretion at one remove. [The fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) places the fiat-pegged stablecoins as a separate cluster for exactly that reason: they inherit the issuer's discretion rather than choosing a schedule.
 

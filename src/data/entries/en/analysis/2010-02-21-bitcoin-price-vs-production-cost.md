@@ -177,16 +177,6 @@ For an ordinary commodity, "price above cost" triggers two corrections at once: 
 | Price falls below cost | High-cost mines close, supply tightens, price is supported | Hashrate falls — issuance unchanged, difficulty falls, cost falls |
 | Long-run resting point | Price ≈ marginal cost, reached from both sides | Cost ≈ price, reached from the cost side only |
 
-```mermaid
-flowchart LR
-    PRICE["Market price"] -->|"price above cost"| IN["Hashrate enters"]
-    PRICE -->|"price below cost"| OUT["Hashrate exits"]
-    IN --> DIFF["Difficulty retargets<br/>every 2,016 blocks"]
-    OUT --> DIFF
-    DIFF --> COST["Cost per coin<br/>moves toward price"]
-    COST -.->|"no supply response —<br/>issuance is fixed"| PRICE
-```
-
 This is the structural reading later formalised in Marthinsen and Gordon's "The Price and Cost of Bitcoin" (2022): because the protocol fixes the flow of new coins regardless of hashrate, miner entry and exit cannot alter the supply reaching the market and therefore cannot drive the price; what excess mining profit attracts is hashrate, which raises difficulty and marginal cost until the excess is gone. The halving schedule makes the same point as a scheduled experiment: every 210,000 blocks, the per-coin cost of the same hashpower doubles overnight, and the market price does not double on cue — the adjustment lands on the cost side, through miner margins and the subsequent difficulty moves. The per-halving record is tabulated in the [monetary design entry](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/).
 
 ## 4. August 2010: the energy objection

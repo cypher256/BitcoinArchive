@@ -95,13 +95,6 @@ The "10% miner" claim referred to a different person; knightmb explicitly denied
 
 For a sense of 2010 scale: [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) is estimated to have held over 90,000 BTC by mid-2010 — about 2–3% of the supply circulating at that time, and enough to place him among the larger known holders of the era. The wobber post described a stake roughly three to four times that. A 10% concentration in a single person's hands was, even by 2010 heavy-miner standards, an exceptional claim — which is part of why the round-number version of it travels.
 
-| Stage of the claim | Type | What it says about knightmb |
-|---|---|---|
-| 2010-07-18 wobber post ([msg3952](/BitcoinArchive/entries/forum/bitcointalk/topic-431/2010-07-18-knightmb-msg3952/)) | Primary BitcoinTalk | Estimates an unnamed-by-handle early miner ran ~1,000 cores and produced ~10% of extant BTC; **the person wobber names is William Pitock (handle "Nenolod"), not knightmb** |
-| knightmb's same-day reply | Primary BitcoinTalk | Quoted wobber and rejected the 10% figure: *"I'm 100% certain that he isn't really generating that much"* |
-| Secondary aggregators and AI biographies | Secondary | Claim knightmb personally held ~371,000 BTC (~10% of early supply) |
-| Reference scale check | Primary estimate | Hanyecz ~90,000 BTC by mid-2010 ≈ 2–3% of circulating supply, among the largest known holders. A 10% concentration would be 3–4× that |
-
 This matters in two ways. The inflated holdings figure is part of how the legend has grown — a 10% holder is an inherently more dramatic figure than a snapshot-hosting forum regular, and the dramatic version travels further. And the misattribution illustrates a structural property of how Bitcoin's early-history accounts get built: secondary aggregators chain their citations off each other, and the chain rarely reaches back to the actual posts.
 
 ## 5. The Tennessee shadow
@@ -123,13 +116,6 @@ What is *not* present in the public record:
 The identification has been picked up by secondary news aggregators, at least one academic survey paper, and AI-generated biographical profiles. None of those sources, on inspection, traces back to a primary document — court record or first-person attestation — that closes the inferential gap.
 
 This Archive's [biographical entry on knightmb](/BitcoinArchive/participants/knightmb/) retains the conservative wording: "His real name has not been publicly disclosed." The material in this section is presented for context, not for endorsement.
-
-| Evidence type | Status in the public record |
-|---|---|
-| Federal indictment / judgment naming the BitcoinTalk handle "knightmb" | Not present in any secondary account this Archive has consulted |
-| First-person statement by knightmb confirming the identification | Not published |
-| Biographical detail in knightmb's BitcoinTalk posts mapping to Tennessee or a specific US resident | Across the catalogued set: no real name, no city, no employer |
-| Circumstantial points cited by secondary sources | US-based + early Bitcoin (matches both); 2012 Bitcoin-specific ransom demand (era-unusual); alleged Timekoin association (not documented with primary sources) |
 
 Whether the circumstantial chain is strong enough to count as an identification, or whether — as in the 10%-holder case — secondary-source convergence has outpaced the primary-source evidence, is laid out in the evidence above.
 

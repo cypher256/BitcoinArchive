@@ -53,7 +53,24 @@ relatedEntries:
 
 Charles Hoskinson entered this history as a teacher. In 2013 he left a consulting job to start the Bitcoin Education Project, an online course about the thing that then had no courses. Late that year he joined the group forming around [Vitalik Buterin](/BitcoinArchive/participants/vitalik-buterin/) as one of Ethereum's original founders and held the chief-executive position. In 2014 the rest of the team removed him, over whether Ethereum should be a company or a foundation — Hoskinson wanted the former, Buterin the latter. Later that year he and former Ethereum colleague Jeremy Wood formed IOHK, and from it came Cardano.
 
-What makes him worth a record in a Bitcoin archive is not the chain. It is that he has spent twelve years commenting on Bitcoin in public, at length, from a position that kept changing.
+The chain is not the interesting part. For twelve years he has commented on Bitcoin in public, at length, from a position that kept changing.
+
+```mermaid
+timeline
+    2013 : Leaves consulting for the Bitcoin Education Project
+         : Joins the founders forming Ethereum, as chief executive
+    2014 : Removed over company-versus-foundation
+         : Forms IOHK with Jeremy Wood
+    2015 : ADA voucher sale opens in Asia (Oct)
+    2017 : Voucher sale closes (Jan)
+    2018 : "worth a Turing prize" - on Satoshi (Nov 19)
+    2020 : Shelley mainnet launches at d=1 (Jul)
+    2021 : Reaches d=0, no company-produced blocks (Mar)
+    2023 : SEC names ADA; IOG rejects the characterization (Jun)
+    2024 : "a religion, not an ecosystem" (May 23)
+         : Calls Bitcoin the internet's store of value (Nov 30)
+    2026 : Objects to Bitcoin's post-quantum proposal (Apr 16)
+```
 
 ## The 2018 verdict: a Turing prize, and a hashrate objection
 
@@ -91,7 +108,7 @@ And on anonymity, where the divergence from Bitcoin's design is deliberate and t
 <!-- audit:quote-skip -->
 > In the effort to anonymize and disintermediate central actors, Bitcoin and its contemporaries have also discarded the need for stable identities, metadata and reputation in commercial transactions.
 
-That sentence is worth reading twice. Bitcoin's refusal of stable identity is not treated as an unfortunate limitation to be engineered around; it is named as a thing Cardano chose not to inherit. On the supply axis the two chains agree — [the fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) places Cardano in the hard-cap cluster alongside Bitcoin and Litecoin. The split runs through consensus and identity, not scarcity.
+Bitcoin's refusal of stable identity is not treated as an unfortunate limitation to be engineered around; it is named as a thing Cardano chose not to inherit. On the supply axis the two chains agree — [the fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) places Cardano in the hard-cap cluster alongside Bitcoin and Litecoin. The split runs through consensus and identity, not scarcity.
 
 ## The 2024 verdict: not needed anymore
 
@@ -112,7 +129,7 @@ In April 2026 he intervened in Bitcoin's own post-quantum debate, over a proposa
 <!-- audit:quote-skip -->
 > At least 1.7 million Bitcoin will be rendered unrecoverable with your design. Have fun stealing Satoshi's coins.
 
-The objection is a real one and Bitcoin developers argue it among themselves. It is quoted here because it is the point at which an altcoin founder's commentary stopped being about his own chain's superiority and became a technical claim about a specific Bitcoin proposal.
+The objection is a real one and Bitcoin developers argue it among themselves. It is also the point at which his commentary stops being about his own chain's superiority and becomes a technical claim about a specific Bitcoin proposal.
 
 ## What his own record shows
 
@@ -123,7 +140,7 @@ Two matters in Cardano's history sit against its public framing, both documented
 <!-- audit:quote-skip -->
 > When d=1, all blocks are produced by IOG core nodes, running in Ouroboros Byzantine Fault Tolerance (OBFT) mode.
 
-Cardano launched its Shelley mainnet in July 2020 at `d=1` and reached `d=0` — no company-produced blocks — in March 2021. The gap is eight months, and it is on the record in the company's own words, which is why it belongs here rather than in a critic's summary.
+Cardano launched its Shelley mainnet in July 2020 at `d=1` and reached `d=0` — no company-produced blocks — in March 2021. The gap is eight months, and the account of it is the company's own rather than a critic's.
 
 **The distribution.** In November 2023 Hoskinson stated on X that Cardano never held an ICO:
 
@@ -139,6 +156,6 @@ Separately, the U.S. Securities and Exchange Commission named ADA among the asse
 
 The SEC later moved to drop ADA from the Binance case and dismissed the Coinbase case entirely, so the classification was a litigating position that was abandoned rather than adjudicated. Bitcoin was not named in either of those actions — an asymmetry that follows from the absence of an issuer, not from any regulator's favor.
 
-## Why he is in this archive
+## Significance to Bitcoin
 
 Hoskinson is the clearest case of a pattern worth naming: the founders who diverged from Bitcoin most sharply are frequently the ones who studied it most closely, and their objections are technically specific rather than dismissive. Proof-of-stake, layered architecture and optional on-chain identity are all answers to questions Bitcoin's design leaves closed on purpose. Cardano is outside the technical lineage traced in [the fork-and-altcoin genealogy](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) — its consensus derives from academic proof-of-stake research, not from Bitcoin's source code. His record of statements about Bitcoin belongs to Bitcoin's history regardless, on the same basis as [Wei Dai's monetary critique](/BitcoinArchive/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/): what people said about this system is part of what happened to it.

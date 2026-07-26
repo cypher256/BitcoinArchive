@@ -85,45 +85,6 @@ With that frame, the whitepaper's eight references fall into three categories wi
 
 ## 2. Component-by-component lineage
 
-**Where each component came from**
-
-```mermaid
-flowchart LR
-  subgraph s1["1. Used during development"]
-    H["Hashcash<br/>(Back 1997)"]
-  end
-  subgraph s2["2. Cited post-hoc"]
-    B["b-money<br/>(Wei Dai 1998)"]
-  end
-  subgraph s3["3. General CS knowledge"]
-    M[Merkle trees]
-    HS[Linked timestamping]
-    F[Probability theory]
-    E[ECDSA / secp256k1]
-  end
-  subgraph s4["4. Novel synthesis"]
-    LC["Longest-chain consensus<br/>weighted by PoW"]
-    U[UTXO model]
-    MR[Mining-reward issuance]
-    C[21M supply cap]
-    DA[Difficulty adjustment]
-    P[P2P propagation]
-  end
-  BTC(("Bitcoin v0.1<br/>Jan 2009"))
-  H --> BTC
-  B --> BTC
-  M --> BTC
-  HS --> BTC
-  F --> BTC
-  E --> BTC
-  LC --> BTC
-  U --> BTC
-  MR --> BTC
-  C --> BTC
-  DA --> BTC
-  P --> BTC
-```
-
 | Bitcoin component | Cited reference | Use category | Notes |
 |---|---|---|---|
 | Proof of work | [6] Hashcash (Back 1997, rev. 2002) | Used during development | Confirmed by Aug 20–22, 2008 emails between Satoshi and Back |

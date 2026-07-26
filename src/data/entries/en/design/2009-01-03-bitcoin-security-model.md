@@ -63,30 +63,6 @@ Bitcoin eliminates some categories of trust entirely and replaces others with ve
 | **Honesty of any single peer** | Nodes validate everything they receive; a lying peer is detected and penalized, not trusted |
 | **Uptime of any single server** | The gossip network has no single point of failure; the protocol continues as long as any subset of nodes remains connected |
 
-### Trust boundary diagram
-
-```mermaid
-flowchart TB
-    subgraph TRUSTED["Trusted by the protocol"]
-        CRYPTO["Cryptographic hardness\n(SHA-256, ECDLP)"]
-        MAJORITY["Honest-majority\nhash rate"]
-        CONNECT["Network connectivity\n(≥ 1 honest peer)"]
-        SOFTWARE["Correct validation\nsoftware"]
-    end
-
-    subgraph ELIMINATED["Trust eliminated"]
-        CENTRAL["No central issuer"]
-        BANK["No anti-double-spend\nauthority"]
-        IDENTITY["No participant\nidentity required"]
-        SERVER["No single point\nof failure"]
-    end
-
-    CRYPTO --> CHAIN["Valid chain\nstate"]
-    MAJORITY --> CHAIN
-    CONNECT --> CHAIN
-    SOFTWARE --> CHAIN
-```
-
 ## 2. Attack taxonomy
 
 The following attacks represent the known threat surface of the Bitcoin protocol. Each operates at a different layer — consensus, network, or cryptographic — and carries different cost and impact profiles.
@@ -253,25 +229,6 @@ Bitcoin's security rests on three specific computational hardness assumptions. N
 ## 5. Network-level defenses
 
 The [P2P network design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-p2p-network-design/) covers the network layer in detail. This section summarizes the security-relevant mechanisms.
-
-```mermaid
-flowchart LR
-    subgraph DEFENSES["Network-level defenses (v27+ baseline)"]
-        ANCHOR["Anchor connections\n(persist across restarts)"]
-        BLOCKONLY["Block-relay-only peers\n(2 extra outbound,\nno mempool leak)"]
-        EVICT["Diversity-preserving\neviction algorithm"]
-        FEELER["Feeler connections\n(probe address\nreachability)"]
-        BIP324["BIP 324 encrypted\ntransport"]
-        ADDRV2["addrv2\n(Tor, I2P, CJDNS\naddress support)"]
-    end
-
-    ANCHOR --> GOAL["Goal:\nresist Eclipse +\nresist surveillance +\nmaintain honest\nconnectivity"]
-    BLOCKONLY --> GOAL
-    EVICT --> GOAL
-    FEELER --> GOAL
-    BIP324 --> GOAL
-    ADDRV2 --> GOAL
-```
 
 | Defense | Introduced | What it counters |
 |---|---|---|

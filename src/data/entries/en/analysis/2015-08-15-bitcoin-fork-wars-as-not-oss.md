@@ -150,20 +150,6 @@ When a load-bearing parameter (block size, fee market, soft-fork activation poli
 
 This is the conceptual point that distinguishes Bitcoin from an ordinary open-source project. Three things share the name "Bitcoin":
 
-```mermaid
-flowchart LR
-  N(("Name<br/>'Bitcoin'"))
-  P["Protocol<br/>consensus rules<br/>(longest chain, 21M cap)"]
-  S["Software<br/>Bitcoin Core +<br/>XT / Classic / Unlimited / ABC"]
-  C["Network / currency<br/>live chain, nodes,<br/>miners, exchanges, holders"]
-  N --> P
-  N --> S
-  N --> C
-  P --- S
-  S --- C
-  P --- C
-```
-
 | Layer | What it is |
 |---|---|
 | Protocol | The consensus rules — block format, signature validation, the longest-chain rule, the 21 M cap |

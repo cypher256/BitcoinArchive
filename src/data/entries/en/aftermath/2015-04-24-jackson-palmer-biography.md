@@ -43,6 +43,15 @@ Jackson Palmer worked in marketing at Adobe in Sydney when, watching the number 
 
 Palmer's record in this archive is not the launch. It is the sequence of public repudiations that followed it — running from his first year in the community to a rejection of the entire category in 2021 — and the fact that the position barely moved across those seven years.
 
+```mermaid
+timeline
+    2013 : Registers dogecoin.com as a joke; Dogecoin launches (Dec 6)
+    2014 : "never really promoted Dogecoin as the fiat killer" (Dec 8)
+    2015 : Leaves the cryptocurrency community (Apr 24)
+    2018 : "Bitcoin's become a little bit like a religion" (Oct 16)
+    2021 : Rejects the whole industry in a public thread (Jul)
+```
+
 ## The joke was aimed at Bitcoin's imitators
 
 Interviewed a year after the launch, Palmer described the original tweet as what it was:
@@ -87,10 +96,10 @@ In July 2021 Palmer posted a public rejection of the whole industry. Its central
 <!-- audit:quote-skip -->
 > After years of studying it, I believe that cryptocurrency is an inherently right-wing, hyper-capitalistic technology built primarily to amplify the wealth of its proponents through a combination of tax avoidance, diminished regulatory oversight and artificially enforced scarcity.
 
-This archive records the statement and does not arbitrate it. What is worth isolating is the technical clause, because it is a claim about a specific design decision rather than about politics: "artificially enforced scarcity" is the 21-million cap, and Palmer is asserting that a fixed supply functions as a wealth-concentration mechanism rather than as a defense against debasement. [The fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) sets out both readings of that same parameter and does not close the question either.
+This archive records the statement and does not arbitrate it. One clause in it is not about politics but about a specific design decision: "artificially enforced scarcity" is the 21-million cap, and Palmer is asserting that a fixed supply functions as a wealth-concentration mechanism rather than as a defense against debasement. [The fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) sets out both readings of that same parameter and does not close the question either.
 
 The thread also stated why he stopped arguing in public — that critics get smeared rather than answered. Whether or not one accepts the characterization, it is the stated reason a founder went quiet, and it belongs to the record of what this community was like to be inside.
 
-## Why he is in this archive
+## Significance to Bitcoin
 
 Every other founder here built something in the belief that it improved on Bitcoin. Palmer built something that was *about* the belief, then spent seven years saying the belief was the problem — including about his own coin, which he told an interviewer in 2014 was never intended to rock the foundations of the financial world. Dogecoin sits in [the fork-and-altcoin genealogy](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) as the chain that proved a network effect can be carried by community alone. Its co-creator's position is that this is not a discovery to celebrate.

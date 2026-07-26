@@ -48,6 +48,15 @@ Monero launched in April 2014 as BitMonero, forked away from Bytecoin — an imp
 
 He is the clearest single voice for the position that Bitcoin's transparency is not a bug and not a feature but a fact — one that creates a use case Bitcoin itself cannot serve.
 
+```mermaid
+timeline
+    2014 : Monero launches as BitMonero, forked from Bytecoin (Apr)
+    2018 : "there is a significant and obvious use case for Monero" (Oct 8)
+    2020 : Cites Bitcoin's 2010 and 2018 inflation bugs (Dec 30)
+    2021 : Arrested in Nashville on a South African warrant (Aug 2)
+    2022 : Extradited; the case remains unresolved
+```
+
 ## The design argument against Bitcoin's ledger
 
 The CryptoNote whitepaper Monero implements does not hedge about what it is measuring Bitcoin against. It sets out two criteria for electronic cash and states plainly that Bitcoin fails one:
@@ -113,8 +122,8 @@ Monero's own launch carried no premine and no founder allocation, which is the o
 
 ## The prosecution
 
-In July 2021 Spagni was arrested in Nashville on a South African warrant and extradited in 2022 to face charges in Cape Town relating to allegedly falsified invoices submitted to a pre-Monero employer between 2009 and 2011. The matter concerns personal conduct predating Monero rather than project finances, it is reported as unresolved, and Spagni disputes the prosecution's account. It is recorded here because a biography that omitted it would be incomplete, not because it bears on the technical record above.
+In July 2021 Spagni was arrested in Nashville on a South African warrant and extradited in 2022 to face charges in Cape Town relating to allegedly falsified invoices submitted to a pre-Monero employer between 2009 and 2011. The matter concerns personal conduct predating Monero rather than project finances, it is reported as unresolved, and Spagni disputes the prosecution's account. It bears on the technical record above not at all; it is part of the same person's record.
 
-## Why he is in this archive
+## Significance to Bitcoin
 
 Monero is explicitly outside the lineage traced in [the fork-and-altcoin genealogy](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) — CryptoNote's ring signatures are independent of Bitcoin's code. Spagni's record belongs to Bitcoin's history anyway, and for a sharper reason than most: his central claim is a claim about Bitcoin, checkable against Bitcoin's own record, and it half survives the check. That is a more useful thing to preserve than either praise or dismissal.

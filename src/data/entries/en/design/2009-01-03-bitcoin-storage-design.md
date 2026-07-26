@@ -219,25 +219,6 @@ stateDiagram-v2
 
 A full archival node stores every block ever produced — over 650 GB as of 2025 and growing at roughly 50–80 GB per year. **Pruning** allows a node to discard old block and undo files while retaining the full UTXO set and the ability to validate new blocks.
 
-### What pruning keeps and discards
-
-```mermaid
-flowchart TB
-    subgraph KEPT["Retained by a pruned node"]
-        UTXO["Complete UTXO set<br/>(coins database)"]
-        IDX["Full block index<br/>(all headers)"]
-        RECENT["Recent block files<br/>(configurable window)"]
-    end
-
-    subgraph DISCARDED["Discarded by a pruned node"]
-        OLD["Old block files<br/>(blk*.dat beyond<br/>the retention window)"]
-        OLD_UNDO["Corresponding undo files<br/>(rev*.dat)"]
-    end
-
-    UTXO -. "still validates<br/>new blocks" .-> VALID["Full consensus<br/>validation capability"]
-    OLD -. "cannot serve<br/>historical blocks<br/>to peers" .-> LIMIT["Cannot serve as<br/>a full archival peer"]
-```
-
 | Aspect | Archival node | Pruned node |
 |---|---|---|
 | **Block data** | All blocks from genesis to tip | Only the most recent N MiB (minimum 550 MiB) |

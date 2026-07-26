@@ -42,6 +42,17 @@ translationStatus: complete
 
 ![Editorial infographic on a dark background: a large amber disc labelled BTC joined by a thin line to a smaller pale disc labelled LTC, four small dial icons beneath the line, a horizontal timeline with a single upward marker, and three caption boxes along the bottom.](/BitcoinArchive/images/analysis/2011-10-13-charlie-lee-biography-hero.png)
 
+```mermaid
+timeline
+    2011 : Announces Litecoin on BitcoinTalk (Oct 9)
+    2014 : Scrypt ASICs ship; the mine-both premise fails
+    2017 : Sells or donates his entire LTC position (Dec 20)
+    2018 : "the soundest form of money around" - on Bitcoin
+    2021 : Litecoin Foundation amplifies a fake Walmart release (Sep 13)
+    2023 : Locates Bitcoin's property in cheap node-running (Mar 24)
+    2025 : "currency for kings" and "currency for the people" (Oct 18)
+```
+
 ## Why he built Litecoin
 
 On October 9, 2011, Charlie Lee posted to BitcoinTalk. He was a Google engineer at the time; Bitcoin was two and a half years old and traded in single-digit dollars. The post announced Litecoin, and in doing so left a primary record of what its author thought he was building.
@@ -63,7 +74,16 @@ The announcement's stated philosophy is one of restraint rather than addition.
 <!-- audit:quote-skip -->
 > One of the goals of Litecoin is to not change what's working (from Bitcoin) unless there was a good reason to.
 
-Four things changed: Scrypt proof-of-work, a 2.5-minute block target, an 84-million cap, and halvings every 840,000 blocks. Each is Bitcoin's figure multiplied or divided by exactly four — internally consistent, as [the launch record](/BitcoinArchive/entries/aftermath/2011-10-13-litecoin-launch/) sets out.
+Four things changed, and each is Bitcoin's figure multiplied or divided by exactly four:
+
+| Parameter | Bitcoin | Litecoin | Relation |
+|---|---|---|---|
+| Proof-of-work | SHA-256 | Scrypt | different function, framed at launch as letting one miner do both |
+| Block target | 10 minutes | 2.5 minutes | ÷ 4 |
+| Supply cap | 21 million | 84 million | × 4 |
+| Halving interval | 210,000 blocks | 840,000 blocks | × 4 |
+
+The set is internally consistent, as [the launch record](/BitcoinArchive/entries/aftermath/2011-10-13-litecoin-launch/) sets out.
 
 Even the choice of Scrypt was framed as coexistence, not competition:
 

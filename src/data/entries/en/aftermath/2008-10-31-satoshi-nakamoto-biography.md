@@ -128,7 +128,7 @@ No verified communication from Satoshi has been recorded since.
 
 ## Profile
 
-The P2P Foundation profile listed an April 5, 1975 birth date and a Japanese location — unverified and widely considered fictitious. Satoshi wrote in fluent English with conventions consistent with British or Commonwealth usage. Analysis of posting timestamps has been used to argue for various time zones; no conclusive location has been determined. The "Satoshi Nakamoto" pseudonym sits inside the recognizable techno-orientalist symbolic field of the 1980s–90s — examined as a structural observation about reception, independent of authorial intent, in the [pseudonym-and-AKIRA analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/). Satoshi's relationship to the cypherpunk movement and the alignment of his documented practice with its philosophical core are treated in the [independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
+The P2P Foundation profile listed an April 5, 1975 birth date and a Japanese location — unverified and widely considered fictitious. Satoshi wrote in fluent English with conventions consistent with British or Commonwealth usage. Analysis of posting timestamps has been used to argue for various time zones; no conclusive location has been determined. Satoshi's relationship to the cypherpunk movement and the alignment of his documented practice with its philosophical core are treated in the [independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
 ## Development Environment
 

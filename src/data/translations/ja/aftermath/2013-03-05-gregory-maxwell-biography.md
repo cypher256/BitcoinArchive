@@ -28,7 +28,7 @@ translationStatus: complete
 
 ![紺色を基調にしたインフォグラフィックで、見出し「Gregory Maxwell」の下、細い線が数本、光る円に合流したのち 2 本に分かれていく図、金額欄の数値を伏せた帯に天秤とチェックマークのアイコンを添えた枠、波打つ曲線に双方向矢印を重ねた図が並び、下部には 3 つに区切られた帯状のラベルが配置されている。](/BitcoinArchive/images/analysis/2013-03-05-gregory-maxwell-biography-hero.png)
 
-CoinJoin と Confidential Transactions —— ビットコインのプライバシー強化提案として最も知られながら本体チェーンには採用されなかった 2 つ —— は、いずれもグレゴリー・マクスウェルの設計である。CoinJoin（2013）は複数ユーザーの支払いを 1 つのトランザクションに統合して入出力の対応推定を破る。Confidential Transactions（2015）は Pedersen コミットメントの背後にトランザクション金額を隠しつつ価値保存の検証可能性を維持する。どちらもビットコインのメインチェーンでは動かないが、Wasabi、JoinMarket、Liquid など一世代のプライバシー研究と、暗号通貨プライバシー文献の広い領域を形成した。
+CoinJoin と Confidential Transactions —— ビットコインのプライバシー強化提案として最も知られながら本体チェーンには採用されなかった 2 つ —— は、いずれもグレゴリー・マクスウェルの設計である。どちらもビットコインのメインチェーンでは動かないが、Wasabi、JoinMarket、Liquid など一世代のプライバシー研究と、暗号通貨プライバシー文献の広い領域を形成した。
 
 マクスウェル（オンライン名 **gmaxwell**）は Bitcoin Core の長期貢献者。2013 年 3 月の[ピーター・ウィーユ](/BitcoinArchive/ja/participants/pieter-wuille/)の [libsecp256k1](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) 立ち上げに合流、2014 年に[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)およびウィーユとともに Blockstream を共同設立、現代の Bitcoin プロトコルスタックの主要レビュアーとして残っている。
 
