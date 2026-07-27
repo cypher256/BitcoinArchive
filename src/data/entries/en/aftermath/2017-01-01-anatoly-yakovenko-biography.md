@@ -37,11 +37,12 @@ relatedEntries:
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-solana-currency-overview
 ---
 
 ![Editorial infographic on a dark background: a clock face wired into a row of alternating pale and teal squares, a framed bar chart rising to the right, two pill-shaped labels below the row, a circled checkmark, and three caption boxes along the bottom.](/BitcoinArchive/images/analysis/2017-01-01-anatoly-yakovenko-biography-hero.png)
 
-Anatoly Yakovenko spent more than a decade at Qualcomm as a systems engineer on wireless systems, then worked at Mesosphere and Dropbox on distributed systems. In 2017 he began outlining the idea he called Proof of History. Solana grew out of it, and by the mid-2020s it was one of the largest chains by market capitalization.
+Anatoly Yakovenko spent more than a decade at Qualcomm as a systems engineer on wireless systems, then worked at Mesosphere and Dropbox on distributed systems. In 2017 he began outlining the idea he called Proof of History. [Solana](/BitcoinArchive/entries/currency/2026-07-27-solana-currency-overview/) grew out of it, and by the mid-2020s it was one of the largest chains by market capitalization.
 
 His statements about Bitcoin are unusual in that the praise and the dismissal are both maximal, and were made months apart.
 

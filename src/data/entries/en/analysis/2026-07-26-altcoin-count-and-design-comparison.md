@@ -112,9 +112,23 @@ relatedEntries:
   - aftermath/2018-09-26-jeremy-allaire-biography
   - aftermath/2014-04-18-riccardo-spagni-biography
   - aftermath/2010-07-18-jed-mccaleb-biography
+  - aftermath/2012-09-01-chris-larsen-biography
+  - aftermath/2015-04-01-brad-garlinghouse-biography
   - aftermath/2015-04-24-jackson-palmer-biography
   - aftermath/2011-09-01-vitalik-buterin-biography
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
+  - currency/2026-07-27-bitcoin-cash-currency-overview
+  - currency/2026-07-27-bitcoin-sv-currency-overview
+  - currency/2026-07-27-cardano-currency-overview
+  - currency/2026-07-27-dogecoin-currency-overview
+  - currency/2026-07-27-ethereum-currency-overview
+  - currency/2026-07-27-litecoin-currency-overview
+  - currency/2026-07-27-monero-currency-overview
+  - currency/2026-07-27-polkadot-currency-overview
+  - currency/2026-07-27-solana-currency-overview
+  - currency/2026-07-27-usdc-currency-overview
+  - currency/2026-07-27-usdt-currency-overview
+  - currency/2026-07-27-xrp-currency-overview
 inlineLinkKeywords:
   - "how many altcoins"
   - "altcoin comparison"
@@ -136,16 +150,16 @@ So the question a buyer is really asking splits in two: how high is the bar, and
 
 That is a narrow power, and it is the whole of what a monetary design controls. But the *choice* of rule is not narrow at all: it is a statement about what the currency thinks it is. A ceiling says the unit should not be diluted. A burn tied to usage says supply should answer to the network. A peg says the unit should not move. A fixed annual issuance says the thing is meant to be spent, not held.
 
-Those positions sort into six, and each sets a different bar. [The fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) traces which failure each project was trying to avoid when it picked its position, from b-money in 1998 through the Ethereum Merge.
+Those positions sort into six, and each sets a different bar. [The fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) traces which failure each project was trying to avoid when it picked its position, from b-money in 1998 through the [Ethereum](/BitcoinArchive/entries/currency/2026-07-27-ethereum-currency-overview/) Merge.
 
 | What the currency takes itself to be | How the rule says it | Chains | The bar: how fast supply grows | Where the price goes if buying holds steady |
 |---|---|---|---|---|
-| **Scarce — it must not be diluted** | A ceiling, with issuance decaying toward it | Bitcoin, Litecoin, BCH, BSV, Cardano, Polkadot | Falling by steps toward the cap | **Up**, and by more each step as the bar drops |
-| **Scarce, and issued all at once** | The whole supply generated at launch | XRP | Zero — the schedule has already run | **Up**, with no bar to clear at all |
-| **Self-adjusting — supply answers to the network** | Issuance plus a fee burn, so supply can shrink | Ethereum | Set by usage; negative when burn exceeds issuance | **Either way**, depending on how busy the chain is |
-| **Self-adjusting on a published curve** | A declining rate, or a permanent tail that never reaches zero | Solana, Monero | Falling, but never to zero | **Up**, once buying clears a bar that keeps shrinking |
-| **A currency to spend, not an asset to hold** | A fixed number of units, issued forever | Dogecoin | 5.256 billion a year against a base that grows, so about 3.5% and falling | **Up**, on a bar that falls without the rule ever changing |
-| **Pegged — it must not move at all** | Supply expands and contracts to hold one dollar | USDT, USDC | Whatever the issuer's reserves do | **Nowhere** — new money reaching the issuer mints units rather than moving the price |
+| **Scarce — it must not be diluted** | A ceiling, with issuance decaying toward it | Bitcoin, [Litecoin](/BitcoinArchive/entries/currency/2026-07-27-litecoin-currency-overview/), [BCH](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-cash-currency-overview/), [BSV](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-sv-currency-overview/), [Cardano](/BitcoinArchive/entries/currency/2026-07-27-cardano-currency-overview/), [Polkadot](/BitcoinArchive/entries/currency/2026-07-27-polkadot-currency-overview/) | Falling by steps toward the cap | **Up**, and by more each step as the bar drops |
+| **Scarce, and issued all at once** | The whole supply generated at launch | [XRP](/BitcoinArchive/entries/currency/2026-07-27-xrp-currency-overview/) | Zero — the schedule has already run | **Up**, with no bar to clear at all |
+| **Self-adjusting — supply answers to the network** | Issuance plus a fee burn, so supply can shrink | [Ethereum](/BitcoinArchive/entries/currency/2026-07-27-ethereum-currency-overview/) | Set by usage; negative when burn exceeds issuance | **Either way**, depending on how busy the chain is |
+| **Self-adjusting on a published curve** | A declining rate, or a permanent tail that never reaches zero | [Solana](/BitcoinArchive/entries/currency/2026-07-27-solana-currency-overview/), [Monero](/BitcoinArchive/entries/currency/2026-07-27-monero-currency-overview/) | Falling, but never to zero | **Up**, once buying clears a bar that keeps shrinking |
+| **A currency to spend, not an asset to hold** | A fixed number of units, issued forever | [Dogecoin](/BitcoinArchive/entries/currency/2026-07-27-dogecoin-currency-overview/) | 5.256 billion a year against a base that grows, so about 3.5% and falling | **Up**, on a bar that falls without the rule ever changing |
+| **Pegged — it must not move at all** | Supply expands and contracts to hold one dollar | [USDT](/BitcoinArchive/entries/currency/2026-07-27-usdt-currency-overview/), [USDC](/BitcoinArchive/entries/currency/2026-07-27-usdc-currency-overview/) | Whatever the issuer's reserves do | **Nowhere** — new money reaching the issuer mints units rather than moving the price |
 
 The first row and the fifth are the same observation taken from opposite ends. [The electronic-cash reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/) traces how Bitcoin's own scarcity wore down its use as cash: nobody pays for today's lunch with something worth more tomorrow, so the property that made it gold is the property that took the spending away. Any design that puts *use* first has to answer that, and the answer is a supply that keeps moving. Dogecoin issues forever so holding is not the winning move; Ethereum ties issuance to usage so the network's activity, rather than a schedule, sets the number. Self-adjusting and use-first are not two separate philosophies in the table above. They are one position, reached by taking the cash side of the trade the scarcity designs took the other side of.
 
@@ -218,18 +232,18 @@ Below are the twelve non-Bitcoin chains that recur in this archive, with Bitcoin
 | Chain | Supply | Consensus | Initial distribution | Ledger privacy | Who can change the rules |
 |---|---|---|---|---|---|
 | **Bitcoin** | 21 M cap | Proof-of-work | Mined from block 1, no premine | Transparent, pseudonymous | Rough consensus among node operators, miners, contributors; no entity |
-| **Litecoin** | 84 M cap | Proof-of-work (Scrypt) | Mined; negligible premine (150 coins) | Transparent | Contributors; founder publicly active |
-| **Dogecoin** | None; 5.256 B/year forever | Proof-of-work, merge-mined with Litecoin | Mined | Transparent | Contributors; co-founders publicly active |
-| **Bitcoin Cash** | 21 M cap | Proof-of-work | Inherited Bitcoin's chain state at the 2017 fork | Transparent | Implementation teams; has split twice more |
-| **Bitcoin SV** | 21 M cap | Proof-of-work | Inherited BCH chain state at the 2018 fork | Transparent | nChain-led |
-| **Ethereum** | None; issuance + fee burn | Proof-of-stake since 2022 | 2014 public sale + founder/contributor allocation | Transparent | Ethereum Foundation-coordinated EIP process |
-| **XRP** | 100 B, generated in full at launch | Validator agreement (no mining) | Pre-generated; founders and Ripple held the bulk | Transparent | Ripple Labs plus the validator list |
-| **Cardano** | 45 B cap | Proof-of-stake (Ouroboros) | 2015–17 voucher sale; 20% to IOHK, EMURGO, the Foundation | Transparent, with optional metadata | Three coordinating bodies plus on-chain governance |
-| **Solana** | None; declining inflation | Proof-of-stake + Proof of History | Premine; foundation and investor allocation | Transparent | Solana Foundation and Labs |
-| **Monero** | 18.4 M + 0.6 XMR/block forever | Proof-of-work (RandomX) | Mined; no premine | **Opaque by default** (ring signatures, hidden amounts) | Contributors; no foundation with protocol authority |
-| **Polkadot** | 2.1 B cap since January 2026 | Nominated proof-of-stake | 2017 sale + Web3 Foundation allocation | Transparent | On-chain governance by token vote |
-| **USDT (Tether)** | Set by the issuer's reserves | N/A — a token on other chains | Minted on demand against fiat | Transparent | Tether Ltd |
-| **USDC (Circle)** | Set by the issuer's reserves | N/A — a token on other chains | Minted on demand against fiat | Transparent | Circle |
+| **[Litecoin](/BitcoinArchive/entries/currency/2026-07-27-litecoin-currency-overview/)** | 84 M cap | Proof-of-work (Scrypt) | Mined; negligible premine (150 coins) | Transparent | Contributors; founder publicly active |
+| **[Dogecoin](/BitcoinArchive/entries/currency/2026-07-27-dogecoin-currency-overview/)** | None; 5.256 B/year forever | Proof-of-work, merge-mined with Litecoin | Mined | Transparent | Contributors; co-founders publicly active |
+| **[Bitcoin Cash](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-cash-currency-overview/)** | 21 M cap | Proof-of-work | Inherited Bitcoin's chain state at the 2017 fork | Transparent | Implementation teams; has split twice more |
+| **[Bitcoin SV](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-sv-currency-overview/)** | 21 M cap | Proof-of-work | Inherited BCH chain state at the 2018 fork | Transparent | nChain-led |
+| **[Ethereum](/BitcoinArchive/entries/currency/2026-07-27-ethereum-currency-overview/)** | None; issuance + fee burn | Proof-of-stake since 2022 | 2014 public sale + founder/contributor allocation | Transparent | Ethereum Foundation-coordinated EIP process |
+| **[XRP](/BitcoinArchive/entries/currency/2026-07-27-xrp-currency-overview/)** | 100 B, generated in full at launch | Validator agreement (no mining) | Pre-generated; founders and Ripple held the bulk | Transparent | Ripple Labs plus the validator list |
+| **[Cardano](/BitcoinArchive/entries/currency/2026-07-27-cardano-currency-overview/)** | 45 B cap | Proof-of-stake (Ouroboros) | 2015–17 voucher sale; 20% to IOHK, EMURGO, the Foundation | Transparent, with optional metadata | Three coordinating bodies plus on-chain governance |
+| **[Solana](/BitcoinArchive/entries/currency/2026-07-27-solana-currency-overview/)** | None; declining inflation | Proof-of-stake + Proof of History | Premine; foundation and investor allocation | Transparent | Solana Foundation and Labs |
+| **[Monero](/BitcoinArchive/entries/currency/2026-07-27-monero-currency-overview/)** | 18.4 M + 0.6 XMR/block forever | Proof-of-work (RandomX) | Mined; no premine | **Opaque by default** (ring signatures, hidden amounts) | Contributors; no foundation with protocol authority |
+| **[Polkadot](/BitcoinArchive/entries/currency/2026-07-27-polkadot-currency-overview/)** | 2.1 B cap since January 2026 | Nominated proof-of-stake | 2017 sale + Web3 Foundation allocation | Transparent | On-chain governance by token vote |
+| **[USDT](/BitcoinArchive/entries/currency/2026-07-27-usdt-currency-overview/) (Tether)** | Set by the issuer's reserves | N/A — a token on other chains | Minted on demand against fiat | Transparent | Tether Ltd |
+| **[USDC](/BitcoinArchive/entries/currency/2026-07-27-usdc-currency-overview/) (Circle)** | Set by the issuer's reserves | N/A — a token on other chains | Minted on demand against fiat | Transparent | Circle |
 
 The column that separates the group is not supply and not consensus. It is the last one. Every row of this table except Bitcoin and — with qualifications — Monero has an identifiable party who can be persuaded, subpoenaed, acquired, or replaced. That is not a scandal; for most of the stated purposes in the table it is a requirement. It is simply the axis on which the category is least differentiated from the financial system it was built next to.
 
@@ -241,17 +255,17 @@ The column that separates the group is not supply and not consensus. It is the l
 | Chain | 1 System decentralization | 2 People / org decentralization | 3 Fair launch | 4 Founder departed | 5 Fixed supply | 6 First-mover |
 |---|---|---|---|---|---|---|
 | **Bitcoin** | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
-| **Litecoin** | 🟢 | 🟡 founder active, no protocol-controlling body | 🟢 | 🔴 | 🟢 | 🔴 |
-| **Dogecoin** | 🟡 hashrate depends on merge-mining | 🟡 co-founders active as commentators | 🟢 | 🟡 both stepped back, both returned to comment | 🔴 uncapped | 🔴 |
-| **Bitcoin Cash** | 🟢 | 🟡 implementation teams with named leads | 🟡 inherited state, no new issuance | 🔴 | 🟢 | 🔴 |
-| **Bitcoin SV** | 🟡 low hashrate, repeated reorgs | 🔴 | 🟡 inherited state | 🔴 | 🟢 | 🔴 |
-| **Ethereum** | 🟢 | 🔴 foundation, active founder | 🔴 pre-launch sale | 🔴 | 🔴 no cap | 🔴 |
-| **XRP** | 🔴 curated validator list | 🔴 company-controlled | 🔴 fully pre-generated | 🔴 | 🟡 fixed total, issuer-held | 🔴 |
-| **Cardano** | 🟡 fully centralized until March 2021 | 🔴 three bodies, active founder | 🔴 sale plus 20% allocation | 🔴 | 🟢 | 🔴 |
-| **Solana** | 🟡 high hardware requirements for validators | 🔴 foundation, active founder | 🔴 premine | 🔴 | 🔴 no cap | 🔴 |
-| **Monero** | 🟢 | 🟢 no foundation with protocol authority | 🟢 no premine | 🟡 pseudonymous originator gone; later leads public | 🟡 bounded then permanent tail | 🔴 |
-| **Polkadot** | 🟢 | 🔴 foundation, active founder | 🔴 sale plus allocation | 🔴 | 🟡 capped in 2026, by a vote that can vote again | 🔴 |
-| **USDT / USDC** | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 set by an issuer | 🔴 |
+| **[Litecoin](/BitcoinArchive/entries/currency/2026-07-27-litecoin-currency-overview/)** | 🟢 | 🟡 founder active, no protocol-controlling body | 🟢 | 🔴 | 🟢 | 🔴 |
+| **[Dogecoin](/BitcoinArchive/entries/currency/2026-07-27-dogecoin-currency-overview/)** | 🟡 hashrate depends on merge-mining | 🟡 co-founders active as commentators | 🟢 | 🟡 both stepped back, both returned to comment | 🔴 uncapped | 🔴 |
+| **[Bitcoin Cash](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-cash-currency-overview/)** | 🟢 | 🟡 implementation teams with named leads | 🟡 inherited state, no new issuance | 🔴 | 🟢 | 🔴 |
+| **[Bitcoin SV](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-sv-currency-overview/)** | 🟡 low hashrate, repeated reorgs | 🔴 | 🟡 inherited state | 🔴 | 🟢 | 🔴 |
+| **[Ethereum](/BitcoinArchive/entries/currency/2026-07-27-ethereum-currency-overview/)** | 🟢 | 🔴 foundation, active founder | 🔴 pre-launch sale | 🔴 | 🔴 no cap | 🔴 |
+| **[XRP](/BitcoinArchive/entries/currency/2026-07-27-xrp-currency-overview/)** | 🔴 curated validator list | 🔴 company-controlled | 🔴 fully pre-generated | 🔴 | 🟡 fixed total, issuer-held | 🔴 |
+| **[Cardano](/BitcoinArchive/entries/currency/2026-07-27-cardano-currency-overview/)** | 🟡 fully centralized until March 2021 | 🔴 three bodies, active founder | 🔴 sale plus 20% allocation | 🔴 | 🟢 | 🔴 |
+| **[Solana](/BitcoinArchive/entries/currency/2026-07-27-solana-currency-overview/)** | 🟡 high hardware requirements for validators | 🔴 foundation, active founder | 🔴 premine | 🔴 | 🔴 no cap | 🔴 |
+| **[Monero](/BitcoinArchive/entries/currency/2026-07-27-monero-currency-overview/)** | 🟢 | 🟢 no foundation with protocol authority | 🟢 no premine | 🟡 pseudonymous originator gone; later leads public | 🟡 bounded then permanent tail | 🔴 |
+| **[Polkadot](/BitcoinArchive/entries/currency/2026-07-27-polkadot-currency-overview/)** | 🟢 | 🔴 foundation, active founder | 🔴 sale plus allocation | 🔴 | 🟡 capped in 2026, by a vote that can vote again | 🔴 |
+| **[USDT](/BitcoinArchive/entries/currency/2026-07-27-usdt-currency-overview/) / [USDC](/BitcoinArchive/entries/currency/2026-07-27-usdc-currency-overview/)** | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 set by an issuer | 🔴 |
 
 Monero is the interesting row. Of the twelve chains in this table it is the only one that matches Bitcoin on fair launch, on the absence of a controlling organization, and on system decentralization. Where it diverges is supply — it chose a permanent tail emission over a hard cap, deliberately, to keep paying for security after issuance would otherwise end. That is a different bet on the same question, made by people who understood exactly what they were giving up. [Riccardo Spagni's record](/BitcoinArchive/participants/riccardo-spagni/) sets out the reasoning.
 

@@ -29,9 +29,9 @@ interface Props {
   /**
    * Concept keywords this entry claims as definition target. Sourced
    * from `inlineLinkKeywords` frontmatter. Rendered as a "Defines:"
-   * row when the entry is editorial (analysis / article — biography
-   * is excluded since the page title already names the participant,
-   * making the keyword display redundant). Each keyword is plain
+   * row when the entry is editorial (analysis / article / design /
+   * currency — biography is excluded since the page title already
+   * names the participant, making the keyword display redundant). Each keyword is plain
    * text (not a link to itself). The actual auto-linking from other
    * entries is handled by `rehype-auto-link-keywords.mjs`.
    */
@@ -77,26 +77,26 @@ const { date, author, entryType, source, lang, participants = [], tags = [], inl
 const isAnalysis = isEditorialPlacement(entryType);
 const createdFallback = createdAt ?? updatedAt ?? date;
 const updatedFallback = updatedAt ?? date;
-const showDefinesRow = inlineLinkKeywords.length > 0 && (entryType === 'analysis' || entryType === 'article' || entryType === 'design');
+const showDefinesRow = inlineLinkKeywords.length > 0 && (entryType === 'analysis' || entryType === 'article' || entryType === 'design' || entryType === 'currency');
 const t = useTranslations(lang);
 const typeLabel = t(`type.${entryType}` as any) || entryType;
 const sourceLabel = t(`source.${source}` as any) || source;
 const authorParticipant = findAuthorParticipant(author, participants);
-// Editorial types `article` and `analysis` are written by Bitcoin
-// Institute regardless of which figure the entry covers, so the
-// byline forces "Bitcoin Institute". Per STYLE_GUIDE.md § Editorial
-// Entries, the frontmatter `author` field on these types names the
-// *subject* the entry is about (e.g. an article on Satoshi's alert
-// key handover has `author: "Satoshi Nakamoto"`), not the editorial
-// writer, so reflecting that raw value here would mislabel the page.
-// The same forcing is mirrored at the OG / JSON-LD layer in
-// pages/entries/[...slug].astro. Primary-source types (mailing-list,
-// forum-post, correspondence, bip, whitepaper, court-document) keep
-// the frontmatter author and pick a verb-shaped label per type;
-// biography never reaches EntryMeta (it has no /entries/{id}/ page
-// and is mounted in the participant page instead), so its author is
-// not displayed at all.
-const isEditorialType = entryType === 'article' || entryType === 'analysis' || entryType === 'design';
+// Editorial types `article`, `analysis`, `design`, and `currency` are
+// written by Bitcoin Institute regardless of which figure or protocol
+// the entry covers, so the byline forces "Bitcoin Institute". Per
+// STYLE_GUIDE.md § Editorial Entries, the frontmatter `author` field
+// on these types names the *subject* the entry is about (e.g. an
+// article on Satoshi's alert key handover has `author: "Satoshi
+// Nakamoto"`), not the editorial writer, so reflecting that raw value
+// here would mislabel the page. The same forcing is mirrored at the
+// OG / JSON-LD layer in pages/entries/[...slug].astro. Primary-source
+// types (mailing-list, forum-post, correspondence, bip, whitepaper,
+// court-document) keep the frontmatter author and pick a verb-shaped
+// label per type; biography never reaches EntryMeta (it has no
+// /entries/{id}/ page and is mounted in the participant page
+// instead), so its author is not displayed at all.
+const isEditorialType = entryType === 'article' || entryType === 'analysis' || entryType === 'design' || entryType === 'currency';
 const displayAuthor = isEditorialType
   ? 'Bitcoin Institute'
   : translateParticipantName(authorParticipant?.name ?? author, authorParticipant?.slug, lang);

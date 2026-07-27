@@ -28,6 +28,7 @@ relatedEntries:
   - aftermath/2017-08-01-bitcoin-cash-fork
   - aftermath/2018-11-15-bitcoin-sv-fork
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - currency/2026-07-27-bitcoin-cash-currency-overview
 ---
 
 ![Editorial infographic with a horizontal chain-of-blocks timeline that forks at a shield-and-checkmark icon into two colored branches, each branch forking again further along, and three small caption boxes along the bottom.](/BitcoinArchive/images/analysis/2015-01-01-amaury-sechet-biography-hero.png)
@@ -46,7 +47,7 @@ Séchet founded **Bitcoin ABC** ("Adjustable Blocksize Cap") in mid-2017 as a cl
 
 ## Hash war with Bitcoin SV (2018)
 
-In November 2018 the BCH community fractured over a proposed protocol upgrade. Séchet led the Bitcoin ABC side; [Craig Wright and Calvin Ayre's nChain](/BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/) led a counter-proposal (Bitcoin SV) with 128 MB blocks and "restored original opcodes." The two sides committed competing hashpower at the November 15 fork point, producing a hash-war scenario where each chain's continued survival depended on whether reorganization attacks could be staged. The result was a permanent split: BCH (Bitcoin ABC's chain) retained the BCH ticker, BSV continued separately under the new SV ticker.
+In November 2018 the BCH community fractured over a proposed protocol upgrade. Séchet led the Bitcoin ABC side; [Craig Wright and Calvin Ayre's nChain](/BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/) led a counter-proposal (Bitcoin SV) with 128 MB blocks and "restored original opcodes." The two sides committed competing hashpower at the November 15 fork point, producing a hash-war scenario where each chain's continued survival depended on whether reorganization attacks could be staged. The result was a permanent split: [BCH](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-cash-currency-overview/) (Bitcoin ABC's chain) retained the BCH ticker, BSV continued separately under the new SV ticker.
 
 ## Bitcoin Cash ABC split and eCash (2020–2021)
 

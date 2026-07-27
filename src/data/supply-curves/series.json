@@ -102,6 +102,117 @@
         { "year": 2040, "index": 127.0,"absolute": "~273Kt (projected)" },
         { "year": 2050, "index": 147.4,"absolute": "~317Kt (projected)" }
       ]
+    },
+    {
+      "id": "ltc",
+      "labelEn": "Litecoin (84M hard cap)",
+      "labelJa": "ライトコイン (8400 万ハード上限)",
+      "colorVar": "--chart-color-2",
+      "points": [
+        { "year": 2011, "index": 0,    "absolute": "0 LTC (launch)" },
+        { "year": 2015, "index": 54.8, "absolute": "42.0M LTC (halving 1)" },
+        { "year": 2019, "index": 82.1, "absolute": "63.0M LTC (halving 2)" },
+        { "year": 2023, "index": 95.8, "absolute": "73.5M LTC (halving 3)" },
+        { "year": 2024, "index": 100,  "absolute": "~76.7M LTC" },
+        { "year": 2027, "index": 102.7,"absolute": "~78.8M LTC (halving 4, projected)" },
+        { "year": 2050, "index": 109.4,"absolute": "~83.9M LTC (near cap)" }
+      ]
+    },
+    {
+      "id": "doge",
+      "labelEn": "Dogecoin (fixed 5.256B/yr, no cap)",
+      "labelJa": "ドージコイン (年 52.56 億枚固定、上限なし)",
+      "colorVar": "--chart-color-6",
+      "points": [
+        { "year": 2013, "index": 0,    "absolute": "~0 DOGE (launch)" },
+        { "year": 2015, "index": 69.0, "absolute": "~100B DOGE" },
+        { "year": 2020, "index": 86.2, "absolute": "~125B DOGE" },
+        { "year": 2024, "index": 100,  "absolute": "~145B DOGE" },
+        { "year": 2030, "index": 121.7,"absolute": "~176.5B DOGE (projected)" },
+        { "year": 2040, "index": 158.0,"absolute": "~229.1B DOGE (projected)" },
+        { "year": 2050, "index": 194.3,"absolute": "~281.7B DOGE (projected)" }
+      ]
+    },
+    {
+      "id": "xrp",
+      "labelEn": "XRP (100B generated at genesis)",
+      "labelJa": "XRP (ジェネシス時に 1000 億枚生成)",
+      "colorVar": "--chart-color-1",
+      "points": [
+        { "year": 2012, "index": 100.0, "absolute": "100B XRP (genesis)" },
+        { "year": 2024, "index": 100.0, "absolute": "~99.99B XRP (~0.014% burned)" },
+        { "year": 2050, "index": 100.0, "absolute": "~99.97B XRP (negligible burn)" }
+      ]
+    },
+    {
+      "id": "ada",
+      "labelEn": "Cardano (45B hard cap)",
+      "labelJa": "カルダノ (450 億ハード上限)",
+      "colorVar": "--chart-color-7",
+      "dash": "6,4",
+      "points": [
+        { "year": 2017, "index": 71.9, "absolute": "~25.9B ADA (voucher sale)" },
+        { "year": 2021, "index": 91.7, "absolute": "~33B ADA" },
+        { "year": 2024, "index": 100,  "absolute": "~36B ADA" },
+        { "year": 2030, "index": 111.1,"absolute": "~40B ADA (projected)" },
+        { "year": 2050, "index": 122.2,"absolute": "~44B ADA (near cap)" }
+      ]
+    },
+    {
+      "id": "xmr",
+      "labelEn": "Monero (18.4M then permanent tail emission)",
+      "labelJa": "モネロ (1840 万枚、以後は末尾発行が恒久継続)",
+      "colorVar": "--chart-color-3",
+      "dash": "6,4",
+      "points": [
+        { "year": 2014, "index": 0,    "absolute": "0 XMR (launch)" },
+        { "year": 2018, "index": 81.3, "absolute": "~15.0M XMR" },
+        { "year": 2022, "index": 98.3, "absolute": "18.132M XMR (main emission ends, May)" },
+        { "year": 2024, "index": 100,  "absolute": "18.447M XMR" },
+        { "year": 2030, "index": 105.1,"absolute": "~19.39M XMR (tail emission)" },
+        { "year": 2050, "index": 122.2,"absolute": "~22.55M XMR (tail emission)" }
+      ]
+    },
+    {
+      "id": "dot",
+      "labelEn": "Polkadot (2.1B cap since Referendum 1710)",
+      "labelJa": "ポルカドット (Referendum 1710 以後は 21 億枚上限)",
+      "colorVar": "--chart-color-4",
+      "dash": "6,4",
+      "points": [
+        { "year": 2020, "index": 3.4,  "absolute": "~50M DOT (genesis)" },
+        { "year": 2024, "index": 100,  "absolute": "~1.48B DOT" },
+        { "year": 2025, "index": 108.1,"absolute": "~1.6B DOT (Referendum 1710 passes, Sep)" },
+        { "year": 2028, "index": 112.6,"absolute": "~1.67B DOT (stepped schedule)" },
+        { "year": 2050, "index": 135.1,"absolute": "~2.0B DOT (approaching cap)" }
+      ]
+    },
+    {
+      "id": "bch",
+      "labelEn": "Bitcoin Cash (21M cap, inherited from Bitcoin)",
+      "labelJa": "ビットコインキャッシュ (2100 万上限、ビットコインから継承)",
+      "colorVar": "--chart-color-8",
+      "dash": "6,4",
+      "points": [
+        { "year": 2017, "index": 84.0, "absolute": "16.8M BCH (fork, inherited)" },
+        { "year": 2020, "index": 91.9, "absolute": "18.375M BCH" },
+        { "year": 2024, "index": 100,  "absolute": "~20M BCH" },
+        { "year": 2028, "index": 102.5,"absolute": "~20.5M BCH (projected)" },
+        { "year": 2050, "index": 104.95,"absolute": "~20.99M BCH (near cap)" }
+      ]
+    },
+    {
+      "id": "bsv",
+      "labelEn": "Bitcoin SV (21M cap, inherited from Bitcoin Cash)",
+      "labelJa": "ビットコインSV (2100 万上限、ビットコインキャッシュから継承)",
+      "colorVar": "--chart-color-9",
+      "points": [
+        { "year": 2018, "index": 89.1, "absolute": "17.65M BSV (fork, inherited)" },
+        { "year": 2020, "index": 92.8, "absolute": "18.375M BSV" },
+        { "year": 2024, "index": 100,  "absolute": "~19.8M BSV" },
+        { "year": 2028, "index": 103.0,"absolute": "~20.4M BSV (projected)" },
+        { "year": 2050, "index": 105.9,"absolute": "~20.98M BSV (near cap)" }
+      ]
     }
   ]
 }

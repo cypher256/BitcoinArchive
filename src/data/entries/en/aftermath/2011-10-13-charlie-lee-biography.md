@@ -37,6 +37,7 @@ relatedEntries:
   - aftermath/2013-12-06-dogecoin-launch
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-litecoin-currency-overview
 translationStatus: complete
 ---
 
@@ -55,7 +56,7 @@ timeline
 
 ## Why he built Litecoin
 
-On October 9, 2011, Charlie Lee posted to BitcoinTalk. He was a Google engineer at the time; Bitcoin was two and a half years old and traded in single-digit dollars. The post announced Litecoin, and in doing so left a primary record of what its author thought he was building.
+On October 9, 2011, Charlie Lee posted to BitcoinTalk. He was a Google engineer at the time; Bitcoin was two and a half years old and traded in single-digit dollars. The post announced [Litecoin](/BitcoinArchive/entries/currency/2026-07-27-litecoin-currency-overview/), and in doing so left a primary record of what its author thought he was building.
 
 <!-- audit:quote-skip -->
 > Litecoin is the result of some of us who joined together on IRC in an effort to create a real alternative currency similar to Bitcoin.
@@ -142,6 +143,6 @@ Lee's own account of it was brief:
 
 ## What Litecoin left behind
 
-Little of Litecoin's technical distinctiveness survived. The ASIC resistance failed; the block time and the cap are differences of number rather than kind. It stays in [the fork-and-altcoin genealogy](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) because it established the second instance — after Namecoin — of the pattern of copying Bitcoin and changing the constants, and because [Dogecoin](/BitcoinArchive/entries/aftermath/2013-12-06-dogecoin-launch/) came directly out of that pattern. Dogecoin forked Litecoin, not Bitcoin.
+Little of [Litecoin's](/BitcoinArchive/entries/currency/2026-07-27-litecoin-currency-overview/) technical distinctiveness survived. The ASIC resistance failed; the block time and the cap are differences of number rather than kind. It stays in [the fork-and-altcoin genealogy](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) because it established the second instance — after Namecoin — of the pattern of copying Bitcoin and changing the constants, and because [Dogecoin](/BitcoinArchive/entries/aftermath/2013-12-06-dogecoin-launch/) came directly out of that pattern. Dogecoin forked Litecoin, not Bitcoin.
 
 On the monetary axis Litecoin sits squarely on Bitcoin's side: a hard cap inherited whole, with only the scale changed — which is where [the fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) places it. The designs that dropped the cap altogether came later.

@@ -104,6 +104,15 @@ relatedEntries:
   - aftermath/2010-07-18-jed-mccaleb-biography
   - aftermath/2015-04-24-jackson-palmer-biography
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-cardano-currency-overview
+  - currency/2026-07-27-dogecoin-currency-overview
+  - currency/2026-07-27-ethereum-currency-overview
+  - currency/2026-07-27-litecoin-currency-overview
+  - currency/2026-07-27-monero-currency-overview
+  - currency/2026-07-27-polkadot-currency-overview
+  - currency/2026-07-27-solana-currency-overview
+  - currency/2026-07-27-usdc-currency-overview
+  - currency/2026-07-27-usdt-currency-overview
 inlineLinkKeywords:
   - "fixed supply"
   - "21 million cap"
@@ -123,7 +132,7 @@ Any monetary system has to answer two questions:
 
 The two questions are independent. A central bank can run a fixed schedule. A protocol can implement a discretionary feedback loop. Bitcoin's specific combination — decided by a protocol, on a fixed schedule with a hard cap — is one of several internally consistent answers, not the only one.
 
-The chronology of the debate, from b-money's 1998 elastic-supply proposal through the [Ethereum](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) Merge:
+The chronology of the debate, from b-money's 1998 elastic-supply proposal through the [Ethereum](/BitcoinArchive/entries/currency/2026-07-27-ethereum-currency-overview/) Merge:
 
 ```mermaid
 timeline
@@ -219,20 +228,20 @@ graph TD
 | Currency | Supply ceiling | Issuance schedule | Governance | Design archetype |
 |---|---|---|---|---|
 | **Bitcoin** | 21 M (hard cap) | Halving every 210K blocks; subsidy → 0 around 2140 | Protocol, conservative consensus | Hard money, fixed |
-| **Litecoin** | 84 M (hard cap) | Halving (4× faster than Bitcoin) | Protocol | Hard money, scaled |
-| **Bitcoin Cash** | 21 M (hard cap) | Same as Bitcoin | Protocol | Hard money, inherited |
-| **Bitcoin SV** | 21 M (hard cap) | Same as Bitcoin | Protocol | Hard money, inherited |
-| **Cardano (ADA)** | 45 B (hard cap) | Exponential decay | Protocol + treasury | Hard money, decaying issuance |
-| **Monero (XMR)** | 18.4 M + tail emission | Smooth emission → 0.6 XMR/block in perpetuity (mild long-run inflation) | Protocol | Hybrid: bounded + tail |
-| **Dogecoin** | None (cap removed 2014) | Fixed 5 B / year in perpetuity | Protocol | Mild inflation, fixed-rate |
-| **Solana (SOL)** | None | Inflation 8% → 1.5% over 10 years (−15% per year) | Protocol + foundation | Declining inflation |
-| **Ethereum (ETH)** | None | Issuance + EIP-1559 fee burn (turns net-deflationary in high-use periods) | Protocol + EIP governance | Dynamic, market-mediated |
+| **[Litecoin](/BitcoinArchive/entries/currency/2026-07-27-litecoin-currency-overview/)** | 84 M (hard cap) | Halving (4× faster than Bitcoin) | Protocol | Hard money, scaled |
+| **[Bitcoin Cash](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-cash-currency-overview/)** | 21 M (hard cap) | Same as Bitcoin | Protocol | Hard money, inherited |
+| **[Bitcoin SV](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-sv-currency-overview/)** | 21 M (hard cap) | Same as Bitcoin | Protocol | Hard money, inherited |
+| **[Cardano](/BitcoinArchive/entries/currency/2026-07-27-cardano-currency-overview/) (ADA)** | 45 B (hard cap) | Exponential decay | Protocol + treasury | Hard money, decaying issuance |
+| **[Monero](/BitcoinArchive/entries/currency/2026-07-27-monero-currency-overview/) (XMR)** | 18.4 M + tail emission | Smooth emission → 0.6 XMR/block in perpetuity (mild long-run inflation) | Protocol | Hybrid: bounded + tail |
+| **[Dogecoin](/BitcoinArchive/entries/currency/2026-07-27-dogecoin-currency-overview/)** | None (cap removed 2014) | Fixed 5 B / year in perpetuity | Protocol | Mild inflation, fixed-rate |
+| **[Solana](/BitcoinArchive/entries/currency/2026-07-27-solana-currency-overview/) (SOL)** | None | Inflation 8% → 1.5% over 10 years (−15% per year) | Protocol + foundation | Declining inflation |
+| **[Ethereum](/BitcoinArchive/entries/currency/2026-07-27-ethereum-currency-overview/) (ETH)** | None | Issuance + EIP-1559 fee burn (turns net-deflationary in high-use periods) | Protocol + EIP governance | Dynamic, market-mediated |
 | **Ethereum Classic (ETC)** | ~210.7 M (cap introduced via fork) | Fixed-supply schedule | Protocol | Hard money (post-fork) |
-| **Polkadot (DOT)** | 2.1 B (since January 2026) | 13.14% of remaining supply every two years | Protocol + governance | Capped by token-holder vote, replacing a ~10% target |
+| **[Polkadot](/BitcoinArchive/entries/currency/2026-07-27-polkadot-currency-overview/) (DOT)** | 2.1 B (since January 2026) | 13.14% of remaining supply every two years | Protocol + governance | Capped by token-holder vote, replacing a ~10% target |
 | **Cosmos (ATOM)** | None | Bonded-ratio-targeted inflation (7-20% range) | Protocol + governance | Inflation, feedback-targeted |
 | **b-money (1998 proposal)** | Dynamic | Pegged to standard-basket cost-of-living | Distributed cost-estimation | Elastic, basket-pegged |
-| **USDT (Tether)** | Set by collateral | Mint / burn against fiat reserves | Centralized issuer (Tether Ltd) | Fiat-pegged stablecoin |
-| **USDC (Circle)** | Set by collateral | Same mechanism | Centralized issuer (Circle) | Fiat-pegged stablecoin |
+| **[USDT](/BitcoinArchive/entries/currency/2026-07-27-usdt-currency-overview/) (Tether)** | Set by collateral | Mint / burn against fiat reserves | Centralized issuer (Tether Ltd) | Fiat-pegged stablecoin |
+| **[USDC](/BitcoinArchive/entries/currency/2026-07-27-usdc-currency-overview/) (Circle)** | Set by collateral | Same mechanism | Centralized issuer (Circle) | Fiat-pegged stablecoin |
 
 The distribution across this table reads as a *spectrum* rather than a consensus around any one design. Hard-cap inheritance from Bitcoin is one cluster (Bitcoin / BCH / BSV / Litecoin / Cardano / ETC); declining-issuance variants are another (Solana, Monero's emission curve); the no-cap-with-discretionary-feedback variants (Ethereum, Cosmos) are a third; the fiat-pegged stablecoins are a fourth, and they functionally inherit the fiat issuer's discretion.
 

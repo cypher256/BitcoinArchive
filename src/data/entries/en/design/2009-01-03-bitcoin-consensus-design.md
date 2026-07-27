@@ -27,6 +27,7 @@ relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
   - aftermath/2017-08-01-bitcoin-cash-fork
   - analysis/2009-01-09-bitcoin-time-warp-attack
+  - currency/2026-07-27-ethereum-currency-overview
 inlineLinkKeywords:
   - "proof of work"
   - "difficulty adjustment"
@@ -188,7 +189,7 @@ flowchart TD
 | **Value overflow incident** | 2010 | Emergency soft fork | Patched `CheckTransaction` to reject outputs > 21 M BTC | Chain reorganized; invalid block orphaned within hours |
 | **BIP 66 (strict DER)** | 2015 | Soft fork | `IsSuperMajority` (750/1000 enforce; 950/1000 reject old-version blocks) | Enforced canonical signature encoding |
 | **SegWit (BIP 141)** | 2017 | Soft fork | BIP 9 versionbits | Introduced witness discount, fixed malleability, enabled script versioning |
-| **Block size → BCH** | 2017 | Hard fork | Disagreement on scaling path | Bitcoin Cash split; incompatible 8 MB block-size rule created a permanent chain divergence |
+| **Block size → [BCH](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-cash-currency-overview/)** | 2017 | Hard fork | Disagreement on scaling path | Bitcoin Cash split; incompatible 8 MB block-size rule created a permanent chain divergence |
 | **Taproot (BIP 341)** | 2021 | Soft fork | Speedy Trial (modified BIP 9) | Added Schnorr signatures, Tapscript, and MAST |
 
 The value overflow incident above is the clearest real-world instance of this emergency-soft-fork mechanism in action — see [the incident write-up](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) for how the patch was deployed and the invalid block orphaned within hours.

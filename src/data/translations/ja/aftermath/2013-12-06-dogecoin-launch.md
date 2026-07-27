@@ -27,18 +27,20 @@ relatedEntries:
   - aftermath/2011-04-18-namecoin-launch
   - aftermath/2011-10-13-litecoin-launch
   - aftermath/2015-04-24-jackson-palmer-biography
+  - currency/2026-07-27-dogecoin-currency-overview
+  - currency/2026-07-27-litecoin-currency-overview
 inlineLinkKeywords:
   - "ドージコイン"
 ---
 
 ![丸いアイコンから犬の頭を模したアイコンが枝分かれし、疑問符のひし形が積み重なったコインに変わり、吹き出しと丸いコインの記号が並び、波打つ地平線の上に小さなピクトグラムが並ぶ、濃紺基調のインフォグラフィック。](/BitcoinArchive/images/analysis/2013-12-06-dogecoin-launch-hero.png)
 
-2013 年 12 月 6 日、IBM のソフトウェアエンジニアだったビリー・マーカスと、Adobe Sydney のマーケティング社員だったジャクソン・パーマーが、柴犬のインターネットミーム「Doge」を題材にした暗号通貨ドージコイン (DOGE) をローンチした。当初の位置づけは明示的に風刺だった。パーマーは 2013 年に乱立する暗号通貨を観察し、暗号通貨投機への冗談として dogecoin.com を取得した。マーカスはその冗談を見つけてパーマーに連絡し、[ライトコイン](/BitcoinArchive/ja/entries/aftermath/2011-10-13-litecoin-launch/)をフォークすることで動作するチェーンへと作り変えた。
+2013 年 12 月 6 日、IBM のソフトウェアエンジニアだったビリー・マーカスと、Adobe Sydney のマーケティング社員だったジャクソン・パーマーが、柴犬のインターネットミーム「Doge」を題材にした暗号通貨[ドージコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-dogecoin-currency-overview/) (DOGE) をローンチした。当初の位置づけは明示的に風刺だった。パーマーは 2013 年に乱立する暗号通貨を観察し、暗号通貨投機への冗談として dogecoin.com を取得した。マーカスはその冗談を見つけてパーマーに連絡し、[ライトコイン](/BitcoinArchive/ja/entries/aftermath/2011-10-13-litecoin-launch/)をフォークすることで動作するチェーンへと作り変えた。
 
 ドージコインのローンチ仕様:
 
 - **コードベース**: ライトコイン (ビットコインのフォーク) のフォーク
-- **PoW**: Scrypt (ライトコインから継承)。2014 年からライトコインとマージマイニング可能
+- **PoW**: Scrypt (ライトコインから継承)。2014 年から[ライトコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-litecoin-currency-overview/)とマージマイニング可能
 - **ブロック時間**: 1 分 (ライトコインの 2.5 分に対し 1/2.5、ビットコインの 10 分に対し 1/10)
 - **初期供給スケジュール**: 最初の約 100,000 ブロックはコミカルな趣向としてランダム報酬 (1 ブロックあたり 0 ~ 1,000,000 DOGE)。2014 年 2 月以降は 1 ブロック 10,000 DOGE の固定報酬に切り替えた
 - **供給上限**: なし。当初 1,000 億 DOGE が緩い上限として扱われたが、マーカスはその後、ドージコインが年間 52.56 億 DOGE を無期限に発行し続けることを明言。明示的にインフレ型である

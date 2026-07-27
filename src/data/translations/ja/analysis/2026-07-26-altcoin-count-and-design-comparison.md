@@ -113,9 +113,23 @@ relatedEntries:
   - aftermath/2018-09-26-jeremy-allaire-biography
   - aftermath/2014-04-18-riccardo-spagni-biography
   - aftermath/2010-07-18-jed-mccaleb-biography
+  - aftermath/2012-09-01-chris-larsen-biography
+  - aftermath/2015-04-01-brad-garlinghouse-biography
   - aftermath/2015-04-24-jackson-palmer-biography
   - aftermath/2011-09-01-vitalik-buterin-biography
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
+  - currency/2026-07-27-bitcoin-cash-currency-overview
+  - currency/2026-07-27-bitcoin-sv-currency-overview
+  - currency/2026-07-27-cardano-currency-overview
+  - currency/2026-07-27-dogecoin-currency-overview
+  - currency/2026-07-27-ethereum-currency-overview
+  - currency/2026-07-27-litecoin-currency-overview
+  - currency/2026-07-27-monero-currency-overview
+  - currency/2026-07-27-polkadot-currency-overview
+  - currency/2026-07-27-solana-currency-overview
+  - currency/2026-07-27-usdc-currency-overview
+  - currency/2026-07-27-usdt-currency-overview
+  - currency/2026-07-27-xrp-currency-overview
 inlineLinkKeywords:
   - "アルトコインの数"
   - "アルトコイン比較"
@@ -138,16 +152,16 @@ translationStatus: complete
 
 権限としては狭い。貨幣の設計が握っているのはそれだけである。しかし、どの規則を**選ぶか**は狭い話ではない。それは、この通貨が自分を何だと思っているかの表明になる。上限は「この単位を薄めてはならない」と言う。使用量に連動する焼却は「供給はネットワークに従うべきだ」と言う。釘付けは「単位は動くべきでない」と言う。毎年一定の発行は「これは持つものではなく使うものだ」と言う。
 
-その立場は六つに分かれ、それぞれが違う高さを設定する。[固定供給と自動調整の比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)は、各企画がその立場を採ったときにどの失敗を避けようとしたのかを、1998 年の b-money からイーサリアムのマージまでたどっている。
+その立場は六つに分かれ、それぞれが違う高さを設定する。[固定供給と自動調整の比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)は、各企画がその立場を採ったときにどの失敗を避けようとしたのかを、1998 年の b-money から[イーサリアム](/BitcoinArchive/ja/entries/currency/2026-07-27-ethereum-currency-overview/)のマージまでたどっている。
 
 | その通貨が自分を何だと考えているか | 規則がそれをどう言うか | 該当 | 越えるべき高さ ─ 供給が毎年どれだけ増えるか | 買いの勢いが一定なら価格はどちらへ |
 |---|---|---|---|---|
-| **希少 ─ 薄められてはならない** | 上限を置き、発行はそこへ向けて減衰する | ビットコイン、ライトコイン、BCH、BSV、カルダノ、ポルカドット | 段階的に落ちて、上限へ向かう | **上がる。** 段を追うごとに越えるべき高さが下がるため、同じ買いでも余力が増える |
-| **希少、かつ一度に全量を発行** | 公開時に供給の全量を生成 | XRP | ゼロ。走らせる計画がもう残っていない | **上がる。** 越えるべき高さがそもそも無い |
-| **自動調整 ─ 供給はネットワークに従う** | 発行に手数料の焼却を足し、供給は縮みうる | イーサリアム | 使用量が決める。焼却が発行を上回れば負になる | **どちらにも。** チェーンがどれだけ使われているか次第 |
-| **公開された曲線に沿った自動調整** | 逓減する率、またはゼロにならない恒久的な末尾発行 | ソラナ、モネロ | 下がり続けるが、ゼロにはならない | **上がる。** ただし縮み続ける高さを、買いが越えたときだけ |
-| **持つ資産ではなく、使う通貨** | 一定の枚数を永久に発行 | ドージコイン | 増え続ける母数に対して年 52.56 億枚。約 3.5% で、下がっていく | **上がる。** 規則が一度も変わらないまま高さが落ちていく |
-| **釘付け ─ 動いてはならない** | 1 ドルを保つよう供給が伸縮する | USDT、USDC | 発行体の準備資産次第 | **価格は動かない。** 発行体に届いた資金は、価格ではなく単位数を増やす |
+| **希少 ─ 薄められてはならない** | 上限を置き、発行はそこへ向けて減衰する | ビットコイン、[ライトコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-litecoin-currency-overview/)、[BCH](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-cash-currency-overview/)、[BSV](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-sv-currency-overview/)、[カルダノ](/BitcoinArchive/ja/entries/currency/2026-07-27-cardano-currency-overview/)、[ポルカドット](/BitcoinArchive/ja/entries/currency/2026-07-27-polkadot-currency-overview/) | 段階的に落ちて、上限へ向かう | **上がる。** 段を追うごとに越えるべき高さが下がるため、同じ買いでも余力が増える |
+| **希少、かつ一度に全量を発行** | 公開時に供給の全量を生成 | [XRP](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/) | ゼロ。走らせる計画がもう残っていない | **上がる。** 越えるべき高さがそもそも無い |
+| **自動調整 ─ 供給はネットワークに従う** | 発行に手数料の焼却を足し、供給は縮みうる | [イーサリアム](/BitcoinArchive/ja/entries/currency/2026-07-27-ethereum-currency-overview/) | 使用量が決める。焼却が発行を上回れば負になる | **どちらにも。** チェーンがどれだけ使われているか次第 |
+| **公開された曲線に沿った自動調整** | 逓減する率、またはゼロにならない恒久的な末尾発行 | [ソラナ](/BitcoinArchive/ja/entries/currency/2026-07-27-solana-currency-overview/)、[モネロ](/BitcoinArchive/ja/entries/currency/2026-07-27-monero-currency-overview/) | 下がり続けるが、ゼロにはならない | **上がる。** ただし縮み続ける高さを、買いが越えたときだけ |
+| **持つ資産ではなく、使う通貨** | 一定の枚数を永久に発行 | [ドージコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-dogecoin-currency-overview/) | 増え続ける母数に対して年 52.56 億枚。約 3.5% で、下がっていく | **上がる。** 規則が一度も変わらないまま高さが落ちていく |
+| **釘付け ─ 動いてはならない** | 1 ドルを保つよう供給が伸縮する | [USDT](/BitcoinArchive/ja/entries/currency/2026-07-27-usdt-currency-overview/)、[USDC](/BitcoinArchive/ja/entries/currency/2026-07-27-usdc-currency-overview/) | 発行体の準備資産次第 | **価格は動かない。** 発行体に届いた資金は、価格ではなく単位数を増やす |
 
 一行目と五行目は、同じ観察を両端から見たものである。[電子キャッシュの読み](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/)は、ビットコイン自身の希少性が現金としての用途をどう削っていったかをたどっている。今日の昼食に、明日はもっと高いものを払う人はいない。金にした性質が、そのまま使う理由を奪った。**使われること**を先に置く設計はそこに答えねばならず、その答えが「動き続ける供給」になる。ドージコインが永久に発行するのは、持つことを勝ち筋にしないためである。イーサリアムが発行を使用量に結びつけるのは、計画ではなくネットワークの活動に数を決めさせるためである。上の表で自動調整と使用重視は別々の思想ではない。希少性の設計が取った取引の、現金の側を取っただけの、一つの立場である。
 
@@ -220,18 +234,18 @@ translationStatus: complete
 | チェーン | 供給 | 合意形成 | 初期配分 | 台帳の可視性 | 規則を変えられるのは誰か |
 |---|---|---|---|---|---|
 | **ビットコイン** | 2,100 万枚の上限 | プルーフ・オブ・ワーク | ブロック 1 から採掘、事前配分なし | 公開・仮名 | ノード運用者・マイナー・寄稿者のゆるやかな合意。主体は存在しない |
-| **ライトコイン** | 8,400 万枚の上限 | プルーフ・オブ・ワーク (Scrypt) | 採掘。事前配分は 150 枚のみ | 公開 | 寄稿者。創設者は公に活動中 |
-| **ドージコイン** | 上限なし。年 52.56 億枚を永久に | プルーフ・オブ・ワーク、ライトコインと結合採掘 | 採掘 | 公開 | 寄稿者。共同創設者は公に発言 |
-| **ビットコインキャッシュ** | 2,100 万枚の上限 | プルーフ・オブ・ワーク | 2017 年の分岐時点のビットコインの状態を継承 | 公開 | 実装ごとの開発集団。その後さらに二度分裂 |
-| **ビットコイン SV** | 2,100 万枚の上限 | プルーフ・オブ・ワーク | 2018 年の分岐時点の BCH の状態を継承 | 公開 | nChain 主導 |
-| **イーサリアム** | 上限なし。発行と手数料の焼却 | 2022 年以降はプルーフ・オブ・ステーク | 2014 年の公開販売と創設者・寄稿者への配分 | 公開 | イーサリアム財団が調整する提案手続き |
-| **XRP** | 1,000 億枚。公開時に全量生成 | 検証者の合意 (採掘なし) | 事前生成。大半を創設者とリップルが保有 | 公開 | リップル社と検証者一覧 |
-| **カルダノ** | 450 億枚の上限 | プルーフ・オブ・ステーク (Ouroboros) | 2015 ~ 17 年の引換券販売。20% を IOHK・EMURGO・財団へ | 公開。付帯情報は任意 | 三つの調整組織とチェーン上の投票 |
-| **ソラナ** | 上限なし。逓減する発行率 | プルーフ・オブ・ステークと Proof of History | 事前配分。財団と投資家への割当 | 公開 | ソラナ財団と Solana Labs |
-| **モネロ** | 1,840 万枚＋毎ブロック 0.6 枚を永久に | プルーフ・オブ・ワーク (RandomX) | 採掘。事前配分なし | **既定で不可視** (リング署名・金額の秘匿) | 寄稿者。プロトコル権限を持つ財団は存在しない |
-| **ポルカドット** | 2026 年 1 月以降、21 億枚の上限 | 指名式プルーフ・オブ・ステーク | 2017 年の販売と Web3 財団への配分 | 公開 | トークン投票によるチェーン上の統治 |
-| **USDT (テザー)** | 発行体の準備資産次第 | 該当なし。他チェーン上のトークン | 法定通貨と引き換えに随時発行 | 公開 | Tether 社 |
-| **USDC (Circle)** | 発行体の準備資産次第 | 該当なし。他チェーン上のトークン | 法定通貨と引き換えに随時発行 | 公開 | Circle 社 |
+| **[ライトコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-litecoin-currency-overview/)** | 8,400 万枚の上限 | プルーフ・オブ・ワーク (Scrypt) | 採掘。事前配分は 150 枚のみ | 公開 | 寄稿者。創設者は公に活動中 |
+| **[ドージコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-dogecoin-currency-overview/)** | 上限なし。年 52.56 億枚を永久に | プルーフ・オブ・ワーク、ライトコインと結合採掘 | 採掘 | 公開 | 寄稿者。共同創設者は公に発言 |
+| **[ビットコインキャッシュ](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-cash-currency-overview/)** | 2,100 万枚の上限 | プルーフ・オブ・ワーク | 2017 年の分岐時点のビットコインの状態を継承 | 公開 | 実装ごとの開発集団。その後さらに二度分裂 |
+| **[ビットコイン SV](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-sv-currency-overview/)** | 2,100 万枚の上限 | プルーフ・オブ・ワーク | 2018 年の分岐時点の BCH の状態を継承 | 公開 | nChain 主導 |
+| **[イーサリアム](/BitcoinArchive/ja/entries/currency/2026-07-27-ethereum-currency-overview/)** | 上限なし。発行と手数料の焼却 | 2022 年以降はプルーフ・オブ・ステーク | 2014 年の公開販売と創設者・寄稿者への配分 | 公開 | イーサリアム財団が調整する提案手続き |
+| **[XRP](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/)** | 1,000 億枚。公開時に全量生成 | 検証者の合意 (採掘なし) | 事前生成。大半を創設者とリップルが保有 | 公開 | リップル社と検証者一覧 |
+| **[カルダノ](/BitcoinArchive/ja/entries/currency/2026-07-27-cardano-currency-overview/)** | 450 億枚の上限 | プルーフ・オブ・ステーク (Ouroboros) | 2015 ~ 17 年の引換券販売。20% を IOHK・EMURGO・財団へ | 公開。付帯情報は任意 | 三つの調整組織とチェーン上の投票 |
+| **[ソラナ](/BitcoinArchive/ja/entries/currency/2026-07-27-solana-currency-overview/)** | 上限なし。逓減する発行率 | プルーフ・オブ・ステークと Proof of History | 事前配分。財団と投資家への割当 | 公開 | ソラナ財団と Solana Labs |
+| **[モネロ](/BitcoinArchive/ja/entries/currency/2026-07-27-monero-currency-overview/)** | 1,840 万枚＋毎ブロック 0.6 枚を永久に | プルーフ・オブ・ワーク (RandomX) | 採掘。事前配分なし | **既定で不可視** (リング署名・金額の秘匿) | 寄稿者。プロトコル権限を持つ財団は存在しない |
+| **[ポルカドット](/BitcoinArchive/ja/entries/currency/2026-07-27-polkadot-currency-overview/)** | 2026 年 1 月以降、21 億枚の上限 | 指名式プルーフ・オブ・ステーク | 2017 年の販売と Web3 財団への配分 | 公開 | トークン投票によるチェーン上の統治 |
+| **[USDT](/BitcoinArchive/ja/entries/currency/2026-07-27-usdt-currency-overview/) (テザー)** | 発行体の準備資産次第 | 該当なし。他チェーン上のトークン | 法定通貨と引き換えに随時発行 | 公開 | Tether 社 |
+| **[USDC](/BitcoinArchive/ja/entries/currency/2026-07-27-usdc-currency-overview/) (Circle)** | 発行体の準備資産次第 | 該当なし。他チェーン上のトークン | 法定通貨と引き換えに随時発行 | 公開 | Circle 社 |
 
 この一群を分ける列は、供給でも合意形成でもない。最後の列である。この表のうち、ビットコインと ─ 条件つきで ─ モネロを除くすべての行に、説得され、召喚され、買収され、あるいは交代させられうる特定可能な主体がいる。これは不祥事ではない。表に並ぶ用途の大半にとっては要件でさえある。ただ、この領域が隣に建てられた金融の仕組みともっとも区別がつかない軸が、そこだということである。
 
@@ -243,17 +257,17 @@ translationStatus: complete
 | チェーン | 1 システムの分散 | 2 人・組織の分散 | 3 公平な立ち上がり | 4 創設者の離脱 | 5 固定供給 | 6 先行者 |
 |---|---|---|---|---|---|---|
 | **ビットコイン** | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |
-| **ライトコイン** | 🟢 | 🟡 創設者は活動中だがプロトコルを握る組織はない | 🟢 | 🔴 | 🟢 | 🔴 |
-| **ドージコイン** | 🟡 ハッシュレートを結合採掘に依存 | 🟡 共同創設者は論者として活動 | 🟢 | 🟡 二人とも一度退いて発言者として戻った | 🔴 上限なし | 🔴 |
-| **ビットコインキャッシュ** | 🟢 | 🟡 実装集団に名前のある責任者がいる | 🟡 状態を継承。新規発行はなし | 🔴 | 🟢 | 🔴 |
-| **ビットコイン SV** | 🟡 低ハッシュレート、再編成が頻発 | 🔴 | 🟡 状態を継承 | 🔴 | 🟢 | 🔴 |
-| **イーサリアム** | 🟢 | 🔴 財団と活動中の創設者 | 🔴 公開前の販売 | 🔴 | 🔴 上限なし | 🔴 |
-| **XRP** | 🔴 選定された検証者一覧 | 🔴 企業が管理 | 🔴 全量を事前生成 | 🔴 | 🟡 総量は固定だが発行体が保有 | 🔴 |
-| **カルダノ** | 🟡 2021 年 3 月まで完全な中央集権 | 🔴 三組織と活動中の創設者 | 🔴 販売に加え 20% の配分 | 🔴 | 🟢 | 🔴 |
-| **ソラナ** | 🟡 検証者に高い機材要件 | 🔴 財団と活動中の創設者 | 🔴 事前配分 | 🔴 | 🔴 上限なし | 🔴 |
-| **モネロ** | 🟢 | 🟢 プロトコル権限を持つ財団がない | 🟢 事前配分なし | 🟡 仮名の考案者は不在、後任は公然 | 🟡 上限の後に恒久的な末尾発行 | 🔴 |
-| **ポルカドット** | 🟢 | 🔴 財団と活動中の創設者 | 🔴 販売と配分 | 🔴 | 🟡 2026 年に上限。ただし投票で決めたものは投票で変わる | 🔴 |
-| **USDT / USDC** | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 発行体が決める | 🔴 |
+| **[ライトコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-litecoin-currency-overview/)** | 🟢 | 🟡 創設者は活動中だがプロトコルを握る組織はない | 🟢 | 🔴 | 🟢 | 🔴 |
+| **[ドージコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-dogecoin-currency-overview/)** | 🟡 ハッシュレートを結合採掘に依存 | 🟡 共同創設者は論者として活動 | 🟢 | 🟡 二人とも一度退いて発言者として戻った | 🔴 上限なし | 🔴 |
+| **[ビットコインキャッシュ](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-cash-currency-overview/)** | 🟢 | 🟡 実装集団に名前のある責任者がいる | 🟡 状態を継承。新規発行はなし | 🔴 | 🟢 | 🔴 |
+| **[ビットコイン SV](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-sv-currency-overview/)** | 🟡 低ハッシュレート、再編成が頻発 | 🔴 | 🟡 状態を継承 | 🔴 | 🟢 | 🔴 |
+| **[イーサリアム](/BitcoinArchive/ja/entries/currency/2026-07-27-ethereum-currency-overview/)** | 🟢 | 🔴 財団と活動中の創設者 | 🔴 公開前の販売 | 🔴 | 🔴 上限なし | 🔴 |
+| **[XRP](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/)** | 🔴 選定された検証者一覧 | 🔴 企業が管理 | 🔴 全量を事前生成 | 🔴 | 🟡 総量は固定だが発行体が保有 | 🔴 |
+| **[カルダノ](/BitcoinArchive/ja/entries/currency/2026-07-27-cardano-currency-overview/)** | 🟡 2021 年 3 月まで完全な中央集権 | 🔴 三組織と活動中の創設者 | 🔴 販売に加え 20% の配分 | 🔴 | 🟢 | 🔴 |
+| **[ソラナ](/BitcoinArchive/ja/entries/currency/2026-07-27-solana-currency-overview/)** | 🟡 検証者に高い機材要件 | 🔴 財団と活動中の創設者 | 🔴 事前配分 | 🔴 | 🔴 上限なし | 🔴 |
+| **[モネロ](/BitcoinArchive/ja/entries/currency/2026-07-27-monero-currency-overview/)** | 🟢 | 🟢 プロトコル権限を持つ財団がない | 🟢 事前配分なし | 🟡 仮名の考案者は不在、後任は公然 | 🟡 上限の後に恒久的な末尾発行 | 🔴 |
+| **[ポルカドット](/BitcoinArchive/ja/entries/currency/2026-07-27-polkadot-currency-overview/)** | 🟢 | 🔴 財団と活動中の創設者 | 🔴 販売と配分 | 🔴 | 🟡 2026 年に上限。ただし投票で決めたものは投票で変わる | 🔴 |
+| **[USDT](/BitcoinArchive/ja/entries/currency/2026-07-27-usdt-currency-overview/) / [USDC](/BitcoinArchive/ja/entries/currency/2026-07-27-usdc-currency-overview/)** | 🔴 | 🔴 | 🔴 | 🔴 | 🔴 発行体が決める | 🔴 |
 
 興味深いのはモネロの行である。公平な立ち上がり、支配する組織の不在、システムの分散 ─ この三点で、この表の 12 チェーンの中ではビットコインと一致する唯一のものである。分かれるのは供給で、上限ではなく恒久的な末尾発行を選んだ。発行が尽きた後も安全性の費用を払い続けるための、意図的な選択である。同じ問いに対する別の賭けであり、何を手放すかを正確に理解した人々が行っている。理由は[リカルド・スパーニの記録](/BitcoinArchive/ja/participants/riccardo-spagni/)が扱う。
 

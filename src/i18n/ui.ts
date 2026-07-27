@@ -58,6 +58,7 @@ export const ui = {
     'type.court-document': 'Court Document',
     'type.analysis': 'Analysis',
     'type.design': 'Design Document',
+    'type.currency': 'Currency',
     // Author byline labels — vary by entry type so e.g. a mailing-list
     // entry says "Posted by:" while a court document says "Filed by:".
     // Falls back to byline.default when an entry type is not listed.
@@ -72,6 +73,7 @@ export const ui = {
     'byline.biography': 'Subject',
     'byline.tweet': 'Tweeted by',
     'byline.blog-post': 'Posted by',
+    'byline.currency': 'By',
     'byline.default': 'Author',
     'source.bitcointalk': 'BitcoinTalk',
     'source.p2pfoundation': 'P2P Foundation',
@@ -277,6 +279,7 @@ export const ui = {
     'type.court-document': '裁判文書',
     'type.analysis': '分析',
     'type.design': '設計書',
+    'type.currency': '通貨',
     'byline.article': '投稿',
     'byline.analysis': '著者',
     'byline.mailing-list': '投稿',
@@ -288,6 +291,7 @@ export const ui = {
     'byline.biography': '対象',
     'byline.tweet': '投稿',
     'byline.blog-post': '投稿',
+    'byline.currency': '著者',
     'byline.default': '著者',
     'source.bitcointalk': 'BitcoinTalk',
     'source.p2pfoundation': 'P2P Foundation',

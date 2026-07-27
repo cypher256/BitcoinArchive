@@ -26,6 +26,7 @@ relatedEntries:
   - aftermath/2017-08-01-bitcoin-cash-fork
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2014-11-01-blockstream-centralization-claim
+  - currency/2026-07-27-bitcoin-cash-currency-overview
 ---
 
 ![Editorial infographic with a computer-parts storefront icon labeled Memory Dealers, a faceless silhouette figure at a podium, a Bitcoin coin forking into separate BTC and BCH paths, and a 2002–2024 timeline strip.](/BitcoinArchive/images/analysis/2011-04-01-roger-ver-biography-hero.png)
@@ -59,7 +60,7 @@ In 2014 Ver renounced his US citizenship and acquired citizenship from Saint Kit
 
 ## Block-size war and Bitcoin Cash (2015–2017)
 
-By 2015 Ver had positioned bitcoin.com (the domain) as a public platform advocating for larger block sizes. Through the [block-size war](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) Ver was one of the loudest voices arguing that Bitcoin's then-1 MB cap was preventing the chain from serving as an everyday payment method. When [Bitcoin XT](/BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015) and Bitcoin Classic (2016) failed to activate, and the [SegWit2x](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) compromise collapsed, the larger-block faction split off via the [Bitcoin Cash hard fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) on August 1, 2017. Ver was the most visible public advocate; bitcoin.com became the principal outlet promoting BCH, and Ver's framing of BCH as "the real Bitcoin Satoshi described" generated sustained controversy in the broader Bitcoin community.
+By 2015 Ver had positioned bitcoin.com (the domain) as a public platform advocating for larger block sizes. Through the [block-size war](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) Ver was one of the loudest voices arguing that Bitcoin's then-1 MB cap was preventing the chain from serving as an everyday payment method. When [Bitcoin XT](/BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/) (2015) and Bitcoin Classic (2016) failed to activate, and the [SegWit2x](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) compromise collapsed, the larger-block faction split off via the [Bitcoin Cash hard fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) on August 1, 2017. Ver was the most visible public advocate; bitcoin.com became the principal outlet promoting [BCH](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-cash-currency-overview/), and Ver's framing of BCH as "the real Bitcoin Satoshi described" generated sustained controversy in the broader Bitcoin community.
 
 ## US tax-fraud charges (2024)
 

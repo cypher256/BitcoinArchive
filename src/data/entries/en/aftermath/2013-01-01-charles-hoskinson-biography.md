@@ -47,11 +47,12 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-cardano-currency-overview
 ---
 
 ![Editorial infographic on a dark background: a lecture-podium outline, a row of small squares with one highlighted, two stacked horizontal bands, a circle with an arrow curving around it, a horizontal timeline running from 2013 to 2026, and three caption boxes along the bottom.](/BitcoinArchive/images/analysis/2013-01-01-charles-hoskinson-biography-hero.png)
 
-Charles Hoskinson entered this history as a teacher. In 2013 he left a consulting job to start the Bitcoin Education Project, an online course about the thing that then had no courses. Late that year he joined the group forming around [Vitalik Buterin](/BitcoinArchive/participants/vitalik-buterin/) as one of Ethereum's original founders and held the chief-executive position. In 2014 the rest of the team removed him, over whether Ethereum should be a company or a foundation — Hoskinson wanted the former, Buterin the latter. Later that year he and former Ethereum colleague Jeremy Wood formed IOHK, and from it came Cardano.
+Charles Hoskinson entered this history as a teacher. In 2013 he left a consulting job to start the Bitcoin Education Project, an online course about the thing that then had no courses. Late that year he joined the group forming around [Vitalik Buterin](/BitcoinArchive/participants/vitalik-buterin/) as one of [Ethereum's](/BitcoinArchive/entries/currency/2026-07-27-ethereum-currency-overview/) original founders and held the chief-executive position. In 2014 the rest of the team removed him, over whether Ethereum should be a company or a foundation — Hoskinson wanted the former, Buterin the latter. Later that year he and former Ethereum colleague Jeremy Wood formed IOHK, and from it came [Cardano](/BitcoinArchive/entries/currency/2026-07-27-cardano-currency-overview/).
 
 The chain is not the interesting part. For twelve years he has commented on Bitcoin in public, at length, from a position that kept changing.
 

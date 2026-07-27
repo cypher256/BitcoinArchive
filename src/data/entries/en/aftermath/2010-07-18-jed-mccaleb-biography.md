@@ -35,6 +35,9 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-xrp-currency-overview
+  - aftermath/2012-09-01-chris-larsen-biography
+  - aftermath/2015-04-01-brad-garlinghouse-biography
 ---
 
 ![Editorial infographic on a dark background: a bordered box labelled CARD TRADING connected to a small panel of stacked rows, a ring of nodes labelled CONSENSUS, a crossed-out mark beside it, a horizontal timeline running from 2007 to 2014, and three caption boxes along the bottom.](/BitcoinArchive/images/analysis/2010-07-18-jed-mccaleb-biography-hero.png)
@@ -69,7 +72,7 @@ That is a stronger endorsement than praise. It is an admission that the category
 
 ## Two chains built to remove mining
 
-In 2011 McCaleb began work on what became the XRP Ledger, and in 2014 he co-founded the Stellar Development Foundation with Joyce Kim. Both designs replace proof-of-work with agreement among a curated validator set. His reasoning is explicit:
+In 2011 McCaleb began work on what became the [XRP Ledger](/BitcoinArchive/entries/currency/2026-07-27-xrp-currency-overview/), and in 2014 he co-founded the Stellar Development Foundation with Joyce Kim. Both designs replace proof-of-work with agreement among a curated validator set. His reasoning is explicit:
 
 <!-- audit:quote-skip -->
 > If you can solve the consensus algorithm without mining, obviously that's a better situation, because literally billions of dollars are spent on mining.

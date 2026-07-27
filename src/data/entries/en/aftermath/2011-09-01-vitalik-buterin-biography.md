@@ -36,11 +36,12 @@ relatedEntries:
   - aftermath/2011-03-17-pieter-wuille-biography
   - aftermath/2013-01-01-charles-hoskinson-biography
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-ethereum-currency-overview
 ---
 
 ![A faceless silhouette beside a Bitcoin Magazine cover mockup, a code-editor panel of Python commands, and a branching timeline running from 2011 through 2014](/BitcoinArchive/images/analysis/2011-09-01-vitalik-buterin-biography-hero.png)
 
-In 2011, a 17-year-old Russian-Canadian named Vitalik Buterin couldn't afford to buy or mine bitcoin, so he wrote articles for it instead — five bitcoins per article (roughly $3.50 each at the time) at Mihai Alisie's *Bitcoin Weekly*. The writing led him to co-found [*Bitcoin Magazine*](/BitcoinArchive/entries/aftermath/2012-05-01-bitcoin-magazine-launch/) in 2012 and to author dozens of long-form pieces on Bitcoin's protocol mechanics through 2014. In late 2013 he wrote the Ethereum whitepaper, launching the network's mainnet on July 30, 2015 at age 21.
+In 2011, a 17-year-old Russian-Canadian named Vitalik Buterin couldn't afford to buy or mine bitcoin, so he wrote articles for it instead — five bitcoins per article (roughly $3.50 each at the time) at Mihai Alisie's *Bitcoin Weekly*. The writing led him to co-found [*Bitcoin Magazine*](/BitcoinArchive/entries/aftermath/2012-05-01-bitcoin-magazine-launch/) in 2012 and to author dozens of long-form pieces on Bitcoin's protocol mechanics through 2014. In late 2013 he wrote the [Ethereum](/BitcoinArchive/entries/currency/2026-07-27-ethereum-currency-overview/) whitepaper, launching the network's mainnet on July 30, 2015 at age 21.
 
 Buterin was born January 31, 1994 in Kolomna, Russia and raised in Canada from age 6. His Bitcoin years ran to 2014, when he [announced Ethereum on BitcoinTalk](/BitcoinArchive/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/).
 

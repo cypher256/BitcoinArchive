@@ -147,7 +147,7 @@ The November 8 message is the formal close of the block-size war on the main cha
 
 ## Aftermath and structural consequences
 
-**Forks that survived.** Bitcoin Cash continues to operate as a separate chain. On November 15, 2018, BCH itself split into Bitcoin ABC and [Bitcoin SV](/BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/) through a contested hash war. Both chains have remained smaller in market value, hashrate, and developer activity than the Bitcoin main chain throughout the post-2017 period.
+**Forks that survived.** [Bitcoin Cash](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-cash-currency-overview/) continues to operate as a separate chain. On November 15, 2018, BCH itself split into Bitcoin ABC and [Bitcoin SV](/BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/) through a contested hash war. Both chains have remained smaller in market value, hashrate, and developer activity than the Bitcoin main chain throughout the post-2017 period.
 
 **The UASF mechanism.** BIP148's User-Activated Soft Fork model — pressure applied by non-mining full nodes rather than by miners — became a permanent governance tool. The 2024 Ordinals / Inscriptions dispute, the 2025 OP_RETURN limit debate, and other later contested changes have all been argued in BIP148-shaped terms: who can force what, given asymmetric power between miners, developers, and full-node operators.
 

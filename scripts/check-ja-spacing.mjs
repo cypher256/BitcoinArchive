@@ -111,6 +111,22 @@ function isCounterFollowedByDigit(left, right) {
   return COUNTER_KANJI.test(left) && /[0-9]/.test(right);
 }
 
+// Proper-noun compound exclusion. STYLE_GUIDE_JA.md § II.3 documents
+// specific altcoin compound names as single-word forms with no internal
+// space, as an explicit exception to the JA x ASCII rule -- "ビットコインSV",
+// not "ビットコイン SV": the "SV" is part of the coin's own name (a
+// constituent of the proper noun), not a version-number-style suffix like
+// `ビットコイン v0.1`. The regex above only captures the single JA/ASCII
+// boundary char pair, so this checks the wider surrounding text for a
+// known compound spanning that boundary.
+const NO_SPACE_COMPOUNDS = ['ビットコインSV'];
+function isNoSpaceCompoundBoundary(stripped, idx) {
+  return NO_SPACE_COMPOUNDS.some((compound) => {
+    const windowStart = Math.max(0, idx - compound.length + 1);
+    return stripped.slice(windowStart, idx + compound.length).includes(compound);
+  });
+}
+
 // JA × JA stranded space ACROSS a markdown link boundary. The plain
 // JA_JA_SPACE check above masks `](url)` as `]x`, which means a JA char
 // adjacent to a markdown link is hidden behind ASCII placeholders and
@@ -270,6 +286,7 @@ for (const root of targets) {
       for (const m of stripped.matchAll(JA_THEN_ASCII)) {
         if (isMiddleDotBoundary(m[1], m[2])) continue;
         if (isCounterFollowedByDigit(m[1], m[2])) continue;
+        if (isNoSpaceCompoundBoundary(stripped, m.index ?? 0)) continue;
         const idx = m.index ?? 0;
         const start = Math.max(0, idx - 12);
         const end = Math.min(stripped.length, idx + m[0].length + 12);

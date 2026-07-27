@@ -42,6 +42,7 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "analysis/2009-01-03-genesis-block-hardcode-analysis"
+  - "currency/2026-07-27-bitcoin-sv-currency-overview"
 translationStatus: complete
 ---
 

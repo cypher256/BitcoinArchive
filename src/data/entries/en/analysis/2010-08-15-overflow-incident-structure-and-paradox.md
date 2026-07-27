@@ -50,6 +50,7 @@ relatedEntries:
   - analysis/2010-08-15-knightmb-snapshot-and-legend
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - aftermath/2014-04-18-riccardo-spagni-biography
+  - currency/2026-07-27-monero-currency-overview
 translationStatus: complete
 ---
 

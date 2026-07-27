@@ -166,7 +166,7 @@ export function initEntriesBrowse() {
     // own <mark>) into one continuous highlight.
     var title = ((hr.title && hr.title.value) || esc(h.title)).replace(/<\/mark>\s*<mark>/g, '');
     var type = h.type || '';
-    var isEditorial = type === 'analysis' || type === 'design' || type === 'article';
+    var isEditorial = type === 'analysis' || type === 'design' || type === 'article' || type === 'currency';
     // Date axis: every result shows the active sort axis (event / created /
     // updated) so the visible date always explains the order.
     var ai = axisInfo(sortState.key);

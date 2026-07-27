@@ -63,7 +63,7 @@ Private email exchanges between Satoshi and key participants:
 ### Articles (164 entries)
 Media coverage, research articles, and post-disappearance historical analysis from various sources including Bitcoin Magazine, CoinDesk, Wired, Forbes, and academic publications.
 
-### Biographies (49 entries)
+### Biographies (51 entries)
 Biographical profiles of key participants compiled from multiple public sources. These are not direct transcriptions of any single document.
 
 ### Bitcoin Improvement Proposals (9 entries)
@@ -88,6 +88,9 @@ COPA v Wright trial materials including testimony and ruling.
 
 ### Design (12 entries)
 System-overview and architecture readings of Bitcoin's protocol (for example, the Bitcoin v0.1 system-design overview).
+
+### Currency (12 entries)
+Single-currency protocol profiles, one per altcoin or stablecoin, each read against Bitcoin as the baseline. Covers supply/issuance mechanics, consensus, governance, and initial distribution for Litecoin, Dogecoin, Bitcoin Cash, Bitcoin SV, Ethereum, XRP, Cardano, Solana, Monero, Polkadot, USDC, and USDT.
 
 ### Tweets (5 entries)
 Historically significant X / Twitter posts archived verbatim with the original handle.

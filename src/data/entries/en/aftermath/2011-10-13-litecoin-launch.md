@@ -25,13 +25,15 @@ relatedEntries:
   - aftermath/2011-04-18-namecoin-launch
   - aftermath/2013-12-06-dogecoin-launch
   - aftermath/2011-08-01-jihan-wu-biography
+  - currency/2026-07-27-dogecoin-currency-overview
+  - currency/2026-07-27-litecoin-currency-overview
 inlineLinkKeywords:
   - "Litecoin"
 ---
 
 ![A branching node-and-line timeline forks into two paths beside two glowing spherical medallions, a larger gold-toned one and a smaller silver-toned one, above a stylized computer-chip console with a faint ghosted chip silhouette and four horizontal bar-pair meters.](/BitcoinArchive/images/analysis/2011-10-13-litecoin-launch-hero.png)
 
-On October 13, 2011, Charlie Lee — then a Google software engineer who had been active on BitcoinTalk under the handle `coblee` — launched Litecoin (LTC) by mining its genesis block. Six days earlier, on October 7, he had announced the project on BitcoinTalk with binaries available on the litecoin.org website.
+On October 13, 2011, Charlie Lee — then a Google software engineer who had been active on BitcoinTalk under the handle `coblee` — launched [Litecoin](/BitcoinArchive/entries/currency/2026-07-27-litecoin-currency-overview/) (LTC) by mining its genesis block. Six days earlier, on October 7, he had announced the project on BitcoinTalk with binaries available on the litecoin.org website.
 
 Litecoin was a Bitcoin-codebase fork with four parameter changes:
 

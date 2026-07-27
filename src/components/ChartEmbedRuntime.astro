@@ -95,7 +95,7 @@ const JPY_PER_USD = 160;
       '.chart-embed .scc-legend{display:flex;flex-wrap:wrap;gap:0.5rem 1.1rem;margin-top:0.7rem;font-size:0.83rem;}' +
       '.chart-embed .scc-legend .legend-item{display:inline-flex;align-items:center;cursor:pointer;user-select:none;color:var(--color-text);}' +
       '.chart-embed .scc-legend .legend-item.off{color:var(--color-text-muted);text-decoration:line-through;opacity:0.55;}' +
-      '.chart-embed .scc-legend .legend-dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:5px;}' +
+      '.chart-embed .scc-legend .legend-swatch{display:inline-flex;align-items:center;margin-right:5px;}' +
       '.chart-embed .scc-legend-hint{margin-top:0.4rem;font-size:0.76rem;color:var(--color-text-muted);font-style:italic;}' +
       // ---- identity-suspect-map (srm). Light palette validated with the
       // dataviz six-checks validator on #ffffff (all pass; CVD 7.3 in the
@@ -551,14 +551,14 @@ const JPY_PER_USD = 160;
     var T_ = ({
       en: {
         title: 'Supply trajectories, normalized to 2024 = 100',
-        subtitle: 'Five monetary archetypes plotted on a single index. Bitcoin asymptotes to its hard cap; USD M2 keeps compounding; Ethereum sits near flat post-Merge; Solana inflates at a declining rate; gold grows at roughly 1.5%/year.',
+        subtitle: 'Bitcoin and ten other proof-of-work and proof-of-stake chains, plotted against gold and USD M2 on a single supply index. Bitcoin asymptotes to its hard cap; USD M2 keeps compounding; the others decay toward a cap, run a permanent tail, or hold a one-time fixed supply.',
         yLabel: 'Supply index (2024 = 100)', xLabel: 'Year',
         scaleLinear: 'Linear', scaleLog: 'Log', hoverYear: 'Year',
         legendHint: 'Click a label to toggle the series.', replay: 'Replay',
       },
       ja: {
         title: '2024 年を 100 とした供給量の推移',
-        subtitle: '5 つの貨幣類型を 1 つの指標で比較。ビットコインはハード上限に漸近、 USD M2 は複利的に拡大を続け、イーサリアムはマージ後ほぼ横ばい、ソラナは逓減的にインフレ、金は年率約 1.5% で成長。',
+        subtitle: 'ビットコインと他の 10 チェーン (プルーフ・オブ・ワーク / プルーフ・オブ・ステーク) を、金と USD M2 を対照に、1 つの供給指標で比較。ビットコインはハード上限に漸近、USD M2 は複利的に拡大を続け、他は上限へ逓減する、恒久的な末尾発行を続ける、あるいは一度きりの固定供給のいずれかを取る。',
         yLabel: '供給指標 (2024 年 = 100)', xLabel: '年',
         scaleLinear: '線形', scaleLog: '対数', hoverYear: '年',
         legendHint: '凡例のラベルをクリックすると系列の表示を切り替えられる。', replay: 'リプレイ',
@@ -572,7 +572,7 @@ const JPY_PER_USD = 160;
         return { year: a.year, label: lang === 'ja' ? a.labelJa : a.labelEn };
       }),
       series: seriesData.series.map(function (s: any) {
-        return { id: s.id, label: lang === 'ja' ? s.labelJa : s.labelEn, colorVar: s.colorVar, points: s.points };
+        return { id: s.id, label: lang === 'ja' ? s.labelJa : s.labelEn, colorVar: s.colorVar, dash: s.dash, points: s.points };
       }),
     };
 

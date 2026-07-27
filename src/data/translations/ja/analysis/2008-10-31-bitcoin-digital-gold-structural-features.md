@@ -34,6 +34,18 @@ relatedEntries:
   - aftermath/2017-01-01-anatoly-yakovenko-biography
   - aftermath/2018-09-26-jeremy-allaire-biography
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-bitcoin-cash-currency-overview
+  - currency/2026-07-27-bitcoin-sv-currency-overview
+  - currency/2026-07-27-cardano-currency-overview
+  - currency/2026-07-27-dogecoin-currency-overview
+  - currency/2026-07-27-ethereum-currency-overview
+  - currency/2026-07-27-litecoin-currency-overview
+  - currency/2026-07-27-monero-currency-overview
+  - currency/2026-07-27-polkadot-currency-overview
+  - currency/2026-07-27-solana-currency-overview
+  - currency/2026-07-27-usdc-currency-overview
+  - currency/2026-07-27-usdt-currency-overview
+  - currency/2026-07-27-xrp-currency-overview
 inlineLinkKeywords:
   - "デジタルゴールド"
   - "二層の非中央集権"
@@ -64,7 +76,7 @@ translationStatus: complete
 
 サトシ自身は、その価値がどこから生まれるかを特定していない——交換の役に立つと見込まれること、収集家の存在、「何らかのランダムな理由」——だが、いったん価値が生まれれば、それを保ち続けるのは希少性だ。この希少性が後にビットコインの決済用途をどう変えていったかは、[電子キャッシュとデジタルゴールドの間](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/)で論じている。
 
-後発の暗号資産 ([イーサリアム](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)、リップル、カルダノ、ソラナ) は、より高機能な仮想マシン、より速い承認、より低い手数料、より豊富なプログラマビリティを備える。2009 年以降の継続稼働年数を除けば、どの単一の技術軸でもビットコインはもはや最前線ではない。それにもかかわらず市場は一貫して、ビットコインを金にもっとも近い資産 — 長期保有の価値保存手段、準備資産、相手方のロードマップに依存しない保有 — として評価し続けている。
+後発の暗号資産 ([イーサリアム](/BitcoinArchive/ja/entries/currency/2026-07-27-ethereum-currency-overview/)、[リップル](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/)、[カルダノ](/BitcoinArchive/ja/entries/currency/2026-07-27-cardano-currency-overview/)、[ソラナ](/BitcoinArchive/ja/entries/currency/2026-07-27-solana-currency-overview/)) は、より高機能な仮想マシン、より速い承認、より低い手数料、より豊富なプログラマビリティを備える。2009 年以降の継続稼働年数を除けば、どの単一の技術軸でもビットコインはもはや最前線ではない。それにもかかわらず市場は一貫して、ビットコインを金にもっとも近い資産 — 長期保有の価値保存手段、準備資産、相手方のロードマップに依存しない保有 — として評価し続けている。
 
 <!-- chart: assets-race -->
 
@@ -113,7 +125,7 @@ flowchart TB
 |---|---|---|---|
 | 1 | システムの非中央集権 | PoW + オープンソースクライアント + 数千の独立フルノード | 主要チェーンの大半が程度の差を伴って |
 | 2 | 人・組織の非中央集権 | 創設者の権威なし、プロトコル権限を持つ財団なし、CEO なし | 稀。小規模プロジェクトに部分的にあり |
-| 3 | 公正な配分 (プレマインなし) | ジェネシスブロック後、ブロック 1 から誰でも参加可能な通常のマイニング | 小規模チェーンに一部 (ライトコイン、モネロ)。時価上位では稀 |
+| 3 | 公正な配分 (プレマインなし) | ジェネシスブロック後、ブロック 1 から誰でも参加可能な通常のマイニング | 小規模チェーンに一部 ([ライトコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-litecoin-currency-overview/)、[モネロ](/BitcoinArchive/ja/entries/currency/2026-07-27-monero-currency-overview/))。時価上位では稀 |
 | 4 | 創設者の撤退 | サトシは 2011 年以降不在、公的再登場なし | 時価が同等のチェーンには存在しない |
 | 5 | 固定供給 | 2,100 万枚上限、実質的に変更不能 | 上限を持つチェーンはあるが、ガバナンスで変更可能なものが多い |
 | 6 | ネットワーク効果 / 先行者 | 16 年の歴史、最も深い流動性、最も長いブランド認知 | 同義反復的にビットコイン固有 |
@@ -133,10 +145,10 @@ flowchart TB
 | プロジェクト | 活動中の創設者 | プロトコル権限を持つ財団 | 表に立つ CEO | プレマイン / 開発者割り当て |
 |---|---|---|---|---|
 | **ビットコイン** | 2011 年離脱、連絡なし | Bitcoin Foundation は存在したが、プロトコル権限を持ったことは一度もない | なし | なし |
-| **イーサリアム** | ヴィタリック・ブテリン (活発、ロードマップに公的な影響力) | イーサリアム財団 (財務、助成金、EIP 指針) | 財団の事務局長 | 2014 年 ICO、創設者 + 初期貢献者割り当て |
-| **リップル** | クリス・ラーセン / ブラッド・ガーリングハウス | リップル・ラボ (プロトコルを支配する私企業) | ブラッド・ガーリングハウス (CEO) | ローンチ時リップル・ラボが約 80% を保有 |
-| **カルダノ** | チャールズ・ホスキンソン (公的に活発) | カルダノ財団 + IOG + Emurgo (3 つの調整体) | チャールズ・ホスキンソン (IOG CEO) | 2017 年 ICO、財団割り当て |
-| **ソラナ** | アナトリー・ヤコフェンコ (活発) | Solana Foundation | アナトリー・ヤコフェンコ (Labs CEO) | プレマイン、財団 + 投資家割り当て |
+| **[イーサリアム](/BitcoinArchive/ja/entries/currency/2026-07-27-ethereum-currency-overview/)** | [ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/) (活発、ロードマップに公的な影響力) | イーサリアム財団 (財務、助成金、EIP 指針) | 財団の事務局長 | 2014 年 ICO、創設者 + 初期貢献者割り当て |
+| **[リップル](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/)** | [クリス・ラーセン](/BitcoinArchive/ja/participants/chris-larsen/) / [ブラッド・ガーリングハウス](/BitcoinArchive/ja/participants/brad-garlinghouse/) | リップル・ラボ (プロトコルを支配する私企業) | ブラッド・ガーリングハウス (CEO) | ローンチ時リップル・ラボが約 80% を保有 |
+| **[カルダノ](/BitcoinArchive/ja/entries/currency/2026-07-27-cardano-currency-overview/)** | [チャールズ・ホスキンソン](/BitcoinArchive/ja/participants/charles-hoskinson/) (公的に活発) | カルダノ財団 + IOG + Emurgo (3 つの調整体) | チャールズ・ホスキンソン (IOG CEO) | 2017 年 ICO、財団割り当て |
+| **[ソラナ](/BitcoinArchive/ja/entries/currency/2026-07-27-solana-currency-overview/)** | [アナトリー・ヤコベンコ](/BitcoinArchive/ja/participants/anatoly-yakovenko/) (活発) | Solana Foundation | アナトリー・ヤコベンコ (Labs CEO) | プレマイン、財団 + 投資家割り当て |
 
 違いは一目で分かる。比較表のビットコイン以外のすべてのプロジェクトについて、関心のある読み手は次を名指しできる: 発言が価格を動かす人物、プロトコル開発を資金支援する組織、企業判断がチェーンのロードマップを形作る会社。ビットコインの対応欄は空白で、その状態は 10 年以上、何度もの議論を呼んだアップグレードサイクルを通じて保たれてきた。
 

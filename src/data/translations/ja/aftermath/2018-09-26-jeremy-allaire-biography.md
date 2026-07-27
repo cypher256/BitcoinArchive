@@ -41,12 +41,14 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-usdc-currency-overview
+  - currency/2026-07-27-usdt-currency-overview
 translationStatus: complete
 ---
 
 ![暗い背景の図解。RESERVE と記された円から矢印が伸びてドル記号の入った青緑の円盤につながり、その右に片側が円盤、片側が四角の天秤、下に一度だけ深く落ちて戻る水平の線、最下部に三つの説明枠が並ぶ](/BitcoinArchive/images/analysis/2018-09-26-jeremy-allaire-biography-hero.png)
 
-ジェレミー・アレールは、暗号資産に触れる前にすでに二度、インターネット企業の創業者だった。1995 年に弟の JJ アレールと Allaire Corporation を共同創業し、1999 年に株式公開、2001 年に Macromedia に買収されて同社の最高技術責任者になっている。その後 Brightcove を創業した。Circle はさらにその後で、2018 年 9 月 26 日、Circle は USD Coin を公開した。
+ジェレミー・アレールは、暗号資産に触れる前にすでに二度、インターネット企業の創業者だった。1995 年に弟の JJ アレールと Allaire Corporation を共同創業し、1999 年に株式公開、2001 年に Macromedia に買収されて同社の最高技術責任者になっている。その後 Brightcove を創業した。Circle はさらにその後で、2018 年 9 月 26 日、Circle は [USD Coin](/BitcoinArchive/ja/entries/currency/2026-07-27-usdc-currency-overview/) を公開した。
 
 アレールは、ビットコインが持とうとしたほぼすべての性質を裏返した設計 ─ 規制下で最大のドル連動通貨 ─ を作りながら、ビットコインの重要性はまさに自分の製品が持たない性質にあると、繰り返し記録に残る形で述べてきた。
 

@@ -20,6 +20,7 @@ relatedEntries:
   - aftermath/2011-09-01-vitalik-buterin-biography
   - aftermath/2012-05-01-bitcoin-magazine-launch
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - currency/2026-07-27-ethereum-currency-overview
 ---
 
 Welcome to the New Beginning

@@ -1,0 +1,145 @@
+---
+title: "ビットコインキャッシュ：創業者なし、供給は継承、二度の分裂を経た通貨設計"
+date: 2026-07-27T00:00:00Z
+type: "currency"
+source: "wikipedia"
+sourceUrl: "https://en.wikipedia.org/wiki/Bitcoin_Cash"
+author: "Bitcoin Institute"
+participants:
+  - name: "Roger Ver"
+    slug: "roger-ver"
+  - name: "Jihan Wu"
+    slug: "jihan-wu"
+  - name: "Amaury Séchet"
+    slug: "amaury-sechet"
+description: "創業者を持たず、供給と合意規則をビットコインからそのまま引き継いだビットコインキャッシュの、難易度調整・統治・分配の仕組みを、ビットコインを基準に読み解く。"
+isSatoshi: false
+tags:
+  - "currency"
+  - "bitcoin-cash"
+  - "altcoin"
+  - "block-size-war"
+  - "bitcoin-abc"
+secondarySources:
+  - name: "Bitcoin ABC — 難易度調整アルゴリズムの刷新を発表 (2017 年 11 月 1 日)"
+    url: "https://www.bitcoinabc.org/2017-11-01-DAA/"
+    note: "セシェ自身が提案した D601 案の仕組みを解説する一次資料。"
+  - name: "Bitcoin Cash Research — 適応型ブロックサイズ上限アルゴリズム (CHIP-2023-04) の仕様"
+    url: "https://bitcoincashresearch.org/t/chip-2023-04-adaptive-blocksize-limit-algorithm-for-bitcoin-cash/1037"
+  - name: "Bitcoin Magazine — 「ビットコインキャッシュの将来」アモリー・セシェへのインタビュー (2017 年 7 月 28 日)"
+    url: "https://bitcoinmagazine.com/technical/future-bitcoin-cash-interview-bitcoin-abc-lead-developer-amaury-sechet"
+  - name: "The Cryptonomist — ロジャー・ヴァーの 2018 年 11 月の発言を伝える記事"
+    url: "https://en.cryptonomist.ch/2018/11/02/bitcoin-vs-bitcoin-cash-roger-ver-2/"
+  - name: "Bitcoin.com News — タッカー・カールソンによるロジャー・ヴァーへの取材 (2024 年 12 月 10 日)"
+    url: "https://news.bitcoin.com/tucker-carlson-and-roger-ver-reveal-shocking-details-about-us-extradition-battle-and-bitcoin-in-exclusive-tcn-interview/"
+relatedEntries:
+  - aftermath/2017-08-01-bitcoin-cash-fork
+  - aftermath/2015-01-01-amaury-sechet-biography
+  - aftermath/2018-11-15-bitcoin-sv-fork
+  - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
+  - aftermath/2011-04-01-roger-ver-biography
+  - aftermath/2011-08-01-jihan-wu-biography
+inlineLinkKeywords:
+  - "ビットコインキャッシュの通貨設計"
+  - "適応型ブロックサイズ上限アルゴリズム"
+  - "ABLA"
+  - "Adjustable Blocksize Cap"
+translationStatus: complete
+---
+
+![一本の鎖が分岐点で枝分かれし、その枝がさらに二度枝分かれしていく図の隣に、四角い枠が段階的に広がっていくブロックサイズの目盛りが描かれ、最下部に三つの説明枠が並ぶ、濃紺基調のインフォグラフィック。](/BitcoinArchive/images/analysis/2026-07-27-bitcoin-cash-currency-overview-hero.png)
+
+フォークの三日前、Bitcoin ABC のリード開発者[アモリー・セシェ](/BitcoinArchive/ja/participants/amaury-sechet/)は、取材にこう答えていた。
+
+<!-- audit:quote-skip -->
+> I want bitcoin to be a widely used electronic cash. A cryptocurrency that is used for day-to-day inexpensive stuff, as well as expensive purchases.
+
+2017 年 8 月 1 日、彼のチームが書いたソフトウェアはブロック 478558 で 1 MB の上限を超えるブロックを受け入れ、[ビットコインの残高台帳と 2,100 万枚の上限をそのまま引き継いだ新しいチェーン](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)を生んだ。ビットコインキャッシュ (BCH) と名付けられたこの鎖が変えたのは、供給表でも採掘規則でもない。誰がその規則を書き換えられるのか、という一点だった。
+
+```mermaid
+timeline
+    title ビットコインキャッシュ関連年表
+    2017 : ビットコインから 分岐、 上限 8 MB (8月1日)
+         : EDA (緊急難易度調整) を launch時に導入
+         : DAA (D601) が EDA を置き換え (11月13日)
+    2018 : ハッシュ戦争で ビットコインSV が分裂 (11月15日)
+    2019 : Quasar で 上限を 2 GB へ (7月)
+    2020 : インフラ資金計画が否決、 eCash が分裂 (11月)
+    2024 : ABLA が 固定上限を完全に置き換え (5月15日)
+```
+
+## 設計思想 — 「電子現金」を取り戻す
+
+BCH を生んだソフトウェアの正式名は Bitcoin ABC —— 「Adjustable Blocksize Cap（調整可能なブロックサイズ上限）」の略である。名前そのものが立場を語っている。ビットコイン本体が Segregated Witness（SegWit）と Lightning ネットワークのようなオフチェーン層で取引容量を増やす道を選んだのに対し、セシェのチームはブロックサイズそのものを大きくする道を選んだ。セシェ自身はレイヤー 2 技術そのものを否定してはいない ―― その境界線を、彼はフォーク直前のインタビューで慎重に引いている。
+
+<!-- audit:quote-skip -->
+> I'm not against Layer 2 technologies themselves, they can add value. I'm just against not growing the base layer.
+
+彼の異議は、高い手数料がビットコイン自身のホワイトペーパーの副題にある「電子現金」という半分の役割に何をもたらすかへ向いていた。
+
+<!-- audit:quote-skip -->
+> The second definition in particular doesn't quite work with high fees. If I buy something for $5 and I pay a fee of 50 cents, that's a big deal. Too much friction.
+
+フォーク時のブロックサイズ上限は 8 MB —— ビットコイン本体の 1 MB 上限の 8 倍に設定された。セシェはこれを確定した数字ではなく、慎重な出発点として説明している。
+
+<!-- audit:quote-skip -->
+> Eight megabytes is large enough to make sure we have a mechanism to adjust it by the time we get anywhere close to the limit. On the other hand, you don't want to go unlimited cowboy style.
+
+その出発点を置き換える仕組みについても、彼は同じ取材でこう述べていた。
+
+<!-- audit:quote-skip -->
+> After this fork is behind us, we'll make sure to deploy some mechanism to handle the block size so we don't need to play central planners.
+
+その仕組みが実際に届くまでには、ほぼ七年かかった。しかも二度にわたって。
+
+この分かれ道が単なる技術論に留まらず、権威の空白・積み上がった経済的な重み・プロトコルとソフトウェアと通貨網の三層構造という条件の上で「アイデンティティの闘争」として展開した経緯は、[ブロックサイズ戦争が通常のオープンソース紛争ではなかった理由](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)に記録されている。
+
+## 供給と難易度調整の仕組み
+
+BCH はフォーク時点で、ビットコインの残高台帳・2,100 万枚という発行上限・SHA-256 のプルーフ・オブ・ワークをそのまま引き継いだ。[六つの構造的特徴](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)の物差しで見れば供給上限そのものは健在だが、新規の採掘による分配ではなく既存チェーンの状態継承であるため、[十二通貨の比較表](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)ではフェアローンチの軸が「継承した状態、新規発行なし」という条件付きの評価にとどまっている。
+
+数字を引き継いでも、その数字を守る仕組みまでは引き継げなかった。フォーク直後の BCH は、ビットコイン本体よりはるかに小さい採掘力しか持たず、ブロックが生成されないままチェーンが止まる危険と隣り合わせだった。セシェのチームが用意した応急処置が Emergency Difficulty Adjustment（EDA、緊急難易度調整）である。直前 6 ブロックと直前 12 ブロックの間隔が 12 時間を超えると、難易度を 20% 引き下げる —— 単純だが荒っぽい規則だった。
+
+EDA はチェーンを止めなかったが、別の問題を生んだ。難易度が乱高下し、BCH の採掘ペースはビットコイン本体に対して数千ブロック分も先行してしまう —— 同じ発行スケジュールのはずが、実際にはより速いペースで新規発行が進んでいた。2017 年 11 月 1 日に発表され、同月 13 日に有効化された新しい難易度調整アルゴリズム（DAA）が、これを置き換えた。採用されたのはセシェ自身が提案した D601 案で、直近 144 ブロックの区間で費やされた総計算量と経過時間を測り、目標ブロック時間（600 秒）に対する比率から次の難易度を再計算する —— タイムスタンプの操作にも強い設計である。
+
+ブロックサイズの上限自体も、固定された数字ではなくなった。2024 年 5 月、BCH は適応型ブロックサイズ上限アルゴリズム（Adaptive Blocksize Limit Algorithm、ABLA）を導入した。過去のブロックサイズの指数加重移動平均を基準に、需要が高まれば上限を自動的に引き上げ（最大で年に倍増）、需要が下がれば引き下げる —— 上限を人が話し合って書き換える手続きそのものをなくす設計である。
+
+## 統治と分配 — 実装チームが二度、自ら分裂させた
+
+ビットコインキャッシュには、ビットコインのサトシにあたる単一の創設者がいない。フォークを実行したのは Bitcoin ABC という実装チームで、[アモリー・セシェ](/BitcoinArchive/ja/participants/amaury-sechet/)がリード開発者を務めた。公開の顔は bitcoin.com を運用する[ロジャー・ヴァー](/BitcoinArchive/ja/participants/roger-ver/)が担い、採掘力は Bitmain を率いる[ジハン・ウー](/BitcoinArchive/ja/participants/jihan-wu/)系のプールが支えた。誰が「決める」かという問いに、三人がそれぞれ別の層で答えていた。
+
+ルールを書き換える権限が特定の個人や組織に固定されていないという同じ構造が、フォーク後も同じ問いを繰り返し生んだ。BCH はフォークから三年の間に、内側から二度分裂した。
+
+| 年月 | 対立の内容 | 結果 |
+|---|---|---|
+| 2018 年 11 月 | Bitcoin ABC（セシェ）対 nChain（クレイグ・ライトとカルヴィン・エア）—— ブロック上限 32 MB から 128 MB への引き上げと、無効化されていたオペコードの復活を巡る対立 | [ビットコインSV](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/) として分裂。BCH のティッカーは Bitcoin ABC 側に残った |
+| 2020 年 11 月 | マイナー報酬の 8% を開発資金へ充てる「インフラ資金計画」を巡る対立 | セシェのチームが分裂し、2021 年に eCash（XEC）として再出発 |
+
+2018 年の分裂を主導した[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)のサトシ本人だという主張は、2024 年の [COPA 対ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)で退けられている。ただしビットコインSV という鎖そのものは、その法廷の結論とは独立に、2018 年の分裂で選ばれたパラメーターのまま動作を続けている。
+
+## セシェとヴァーが語ったビットコイン
+
+2018 年 11 月、ロジャー・ヴァーはこう書いている。
+
+<!-- audit:quote-skip -->
+> High fees and full blocks disenfranchise those who need Bitcoin most. BCH is peer to peer electronic cash for the world. BTC is not.
+
+その 6 年後、逮捕とスペインでの拘留を経た 2024 年 12 月のインタビューで、ヴァーはビットコインという言葉そのものを、より広い告発の対象に変えていた。
+
+<!-- audit:quote-skip -->
+> I don't think it was created that way initially, but I am suspicious and I do think the intelligence agencies and other groups have converted it and hijacked it into becoming a financial trap.
+
+2017 年のフォークを「ブロックサイズを大きくする技術的な選択」として語ったセシェの記録と、2024 年のビットコインを「乗っ取られて金融の罠に変えられたもの」として語るヴァーの記録は、同じ人物たちが同じ「本物のビットコイン」という看板を掲げながら、7 年の間に論拠を丸ごと入れ替えたことを示している。
+
+ビットコインキャッシュの継承した供給を、ビットコインおよび他 10 通貨と同じ指数チャートで並べる。
+
+<!-- chart: supply-curve-comparison -->
+
+## ビットコインにとっての意味
+
+ビットコインキャッシュの記録は、ビットコイン自身の設計を測る対照実験になっている。ビットコインの合意規則を書き換える権限は、フォーク時点でもその後も、特定の個人や組織に属さなかった —— この[権威の空白](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)は、ビットコイン本体では 2011 年のサトシの離脱以来ずっと存在し続けている条件である。BCH はフォークによってこの空白をそのまま引き継いだが、空白を埋める代わりに、空白を抱えたまま争いを重ねた。2018 年の nChain との対立も、2020 年のインフラ資金計画を巡る対立も、合意ではなく分裂によって決着している。
+
+対照的に、ビットコイン本体は同じ 2015〜2017 年の論争を、チェーンを割らずに乗り切った。SegWit（2017 年 8 月）も Taproot（2021 年 11 月）も、ソフトフォークとして本体チェーン上で有効化され、以来ビットコインの合意ルールは一度も分裂を経ていない。「誰が決めるのか分からない」という同じ条件が、一方では実装チーム同士の分裂を二度生み、もう一方では 15 年間ルールを一度も割らずに保ち続けている。この差の経過は、[ビットコインの家系図](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)に記録されている。

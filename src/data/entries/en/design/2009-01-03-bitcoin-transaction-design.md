@@ -74,7 +74,7 @@ stateDiagram-v2
 
 ### UTXO model vs account model
 
-| Property | UTXO model (Bitcoin) | Account model (Ethereum) |
+| Property | UTXO model (Bitcoin) | Account model ([Ethereum](/BitcoinArchive/entries/currency/2026-07-27-ethereum-currency-overview/)) |
 |---|---|---|
 | **State representation** | Set of discrete unspent outputs | Map of addresses to balances |
 | **Spending** | Consume entire UTXOs, create new ones (including change) | Debit sender balance, credit receiver balance |

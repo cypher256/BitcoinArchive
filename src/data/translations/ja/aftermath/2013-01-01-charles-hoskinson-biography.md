@@ -47,12 +47,13 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-cardano-currency-overview
 translationStatus: complete
 ---
 
 ![暗い背景の図解。演台の輪郭、一つだけ色の違う小さな四角が並ぶ列、上下に重なる二本の帯、矢印が回り込む円、2013 年から 2026 年までの水平な時間軸、最下部に三つの説明枠が並ぶ](/BitcoinArchive/images/analysis/2013-01-01-charles-hoskinson-biography-hero.png)
 
-チャールズ・ホスキンソンがこの歴史に現れたときの肩書きは、教える人だった。2013 年、彼は助言業の職を辞してビットコイン教育計画を始めている。当時まだ講座というものが存在しなかった対象について、講座を作る仕事である。同じ年の末には[ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/)の周りに集まった集団に加わり、イーサリアムの創設者の一人として最高経営責任者の座に就いた。2014 年、彼は他の創設者たちに排除される。争点はイーサリアムを営利企業とするか財団とするかで、前者を望んだのがホスキンソン、後者がブテリンだった。その年の後半、彼は元同僚のジェレミー・ウッドと IOHK を設立し、そこからカルダノが生まれる。
+チャールズ・ホスキンソンがこの歴史に現れたときの肩書きは、教える人だった。2013 年、彼は助言業の職を辞してビットコイン教育計画を始めている。当時まだ講座というものが存在しなかった対象について、講座を作る仕事である。同じ年の末には[ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/)の周りに集まった集団に加わり、[イーサリアム](/BitcoinArchive/ja/entries/currency/2026-07-27-ethereum-currency-overview/)の創設者の一人として最高経営責任者の座に就いた。2014 年、彼は他の創設者たちに排除される。争点はイーサリアムを営利企業とするか財団とするかで、前者を望んだのがホスキンソン、後者がブテリンだった。その年の後半、彼は元同僚のジェレミー・ウッドと IOHK を設立し、そこから[カルダノ](/BitcoinArchive/ja/entries/currency/2026-07-27-cardano-currency-overview/)が生まれる。
 
 興味深いのはチェーンの側ではない。彼は十二年にわたって、公の場で、長く、しかも立場を変えながらビットコインについて語り続けてきた。
 

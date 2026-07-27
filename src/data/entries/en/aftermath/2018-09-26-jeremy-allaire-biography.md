@@ -41,11 +41,13 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-usdc-currency-overview
+  - currency/2026-07-27-usdt-currency-overview
 ---
 
 ![Editorial infographic on a dark background: a circle labelled RESERVE with an arrow leading to a teal disc marked with a dollar sign, a small balance figure with a disc on one side and a square on the other, a long horizontal line that drops sharply once and recovers, and three caption boxes along the bottom.](/BitcoinArchive/images/analysis/2018-09-26-jeremy-allaire-biography-hero.png)
 
-Jeremy Allaire was already an internet entrepreneur twice over before he touched cryptocurrency. With his brother JJ he co-founded Allaire Corporation in 1995, which went public in 1999 and was acquired by Macromedia in 2001, where he became chief technology officer. He later founded Brightcove. Circle came after that, and on September 26, 2018 Circle launched USD Coin.
+Jeremy Allaire was already an internet entrepreneur twice over before he touched cryptocurrency. With his brother JJ he co-founded Allaire Corporation in 1995, which went public in 1999 and was acquired by Macromedia in 2001, where he became chief technology officer. He later founded Brightcove. Circle came after that, and on September 26, 2018 Circle launched [USD Coin](/BitcoinArchive/entries/currency/2026-07-27-usdc-currency-overview/).
 
 Allaire built the largest regulated dollar-denominated stablecoin — a design that inverts nearly every property Bitcoin was built for — while stating, repeatedly and on the record, that Bitcoin's importance lies precisely in the property his own product does not have.
 

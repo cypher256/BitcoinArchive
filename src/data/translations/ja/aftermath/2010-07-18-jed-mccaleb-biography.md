@@ -35,6 +35,9 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-xrp-currency-overview
+  - aftermath/2012-09-01-chris-larsen-biography
+  - aftermath/2015-04-01-brad-garlinghouse-biography
 translationStatus: complete
 ---
 
@@ -70,7 +73,7 @@ timeline
 
 ## 採掘を外すために作られた二つのチェーン
 
-2011 年、マケーレブは後に XRP レジャーとなるものの開発を始め、2014 年にはジョイス・キムとステラ開発財団を共同で設立した。どちらの設計も、プルーフ・オブ・ワークを、選ばれた検証者集合のあいだの合意に置き換えている。理由は明示されている。
+2011 年、マケーレブは後に [XRP レジャー](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/)となるものの開発を始め、2014 年にはジョイス・キムとステラ開発財団を共同で設立した。どちらの設計も、プルーフ・オブ・ワークを、選ばれた検証者集合のあいだの合意に置き換えている。理由は明示されている。
 
 <!-- audit:quote-skip -->
 > 採掘なしで合意アルゴリズムを解けるなら、明らかにそのほうが良い状況だ。文字どおり何十億ドルもが採掘に費やされているのだから。

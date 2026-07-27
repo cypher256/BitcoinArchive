@@ -37,6 +37,7 @@ relatedEntries:
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
   - aftermath/2018-09-26-jeremy-allaire-biography
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-usdc-currency-overview
 inlineLinkKeywords:
   - "電子キャッシュ"
   - "電子キャッシュの夢"

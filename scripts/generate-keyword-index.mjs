@@ -11,7 +11,7 @@
  *
  *   1. concept — declared explicitly via `inlineLinkKeywords` in
  *      frontmatter. Eligible target types are editorial only:
- *      analysis / article / biography. Primary-source types
+ *      analysis / article / biography / design / currency. Primary-source types
  *      (forum-post / mailing-list / correspondence / whitepaper / bip /
  *      court-document) cannot claim keywords (recorded as errors).
  *
@@ -81,7 +81,7 @@ const OUTPUT = path.join(ROOT, 'src/data/keyword-index.json');
 
 // Editorial types eligible to claim concept keywords. Anything else is
 // primary-source and cannot be a definition target.
-const CONCEPT_ELIGIBLE_TYPES = new Set(['analysis', 'article', 'biography', 'design']);
+const CONCEPT_ELIGIBLE_TYPES = new Set(['analysis', 'article', 'biography', 'design', 'currency']);
 
 // Verbatim file path fragments — entries whose path contains one of these
 // are whole-record primary source and excluded from auto-link (and from
@@ -276,7 +276,7 @@ for (const { name: locale, base } of COLLECTIONS) {
     if (!CONCEPT_ELIGIBLE_TYPES.has(ctx.type)) {
       errors.push(
         `[${locale}] Entry "${ctx.id}" has type="${ctx.type}" but declares ` +
-        `inlineLinkKeywords. Only analysis/article/biography may claim keywords.`
+        `inlineLinkKeywords. Only analysis/article/biography/design/currency may claim keywords.`
       );
       continue;
     }

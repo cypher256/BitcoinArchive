@@ -42,6 +42,7 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "analysis/2009-01-03-genesis-block-hardcode-analysis"
+  - "currency/2026-07-27-bitcoin-sv-currency-overview"
 ---
 
 ![Dark-navy illustration of a looping arrow diagram linking two dates, a red-stamped stack of legal documents, a judge's gavel, and a faceless hooded silhouette above a mismatched identity nameplate.](/BitcoinArchive/images/analysis/2016-05-02-craig-wright-biography-hero.png)

@@ -35,6 +35,7 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-dogecoin-currency-overview
 ---
 
 ![Editorial infographic on a dark background: a speech bubble containing a small coin, a line chart that climbs steeply and falls back, a doorway outline with an arrow leading away from three small figures, and three caption boxes along the bottom.](/BitcoinArchive/images/analysis/2015-04-24-jackson-palmer-biography-hero.png)
@@ -69,7 +70,7 @@ That is a founder declining the standard altcoin pitch on the record, in 2014, w
 <!-- audit:quote-skip -->
 > Dogecoin is a really fun, absurd community and a currency that people use to throw change at each other on the internet in the form of micro-tips. ... Is Dogecoin ever going to rock the foundations of the financial world? No, and that was never its intent.
 
-Dogecoin's design matches the disclaimer: it has no whitepaper, its repository describes it as adapted from Bitcoin Core, and its supply is uncapped and permanently inflationary. Every other chain in this record argues for its parameters. Dogecoin's co-creator argued that the parameters were beside the point.
+[Dogecoin's](/BitcoinArchive/entries/currency/2026-07-27-dogecoin-currency-overview/) design matches the disclaimer: it has no whitepaper, its repository describes it as adapted from Bitcoin Core, and its supply is uncapped and permanently inflationary. Every other chain in this record argues for its parameters. Dogecoin's co-creator argued that the parameters were beside the point.
 
 ## The exit
 

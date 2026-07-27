@@ -37,6 +37,7 @@ relatedEntries:
   - aftermath/2013-12-06-dogecoin-launch
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-litecoin-currency-overview
 translationStatus: complete
 ---
 
@@ -55,7 +56,7 @@ timeline
 
 ## ライトコインを作った動機
 
-2011 年 10 月 9 日、チャーリー・リーは BitcoinTalk に一本の投稿を置いた。当時の彼は Google の技術者で、ビットコインは公開から二年半、価格は数ドルの水準にあった。投稿はライトコインの公開告知であり、同時に設計の意図を自分の言葉で書き残した一次資料でもある。
+2011 年 10 月 9 日、チャーリー・リーは BitcoinTalk に一本の投稿を置いた。当時の彼は Google の技術者で、ビットコインは公開から二年半、価格は数ドルの水準にあった。投稿は[ライトコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-litecoin-currency-overview/)の公開告知であり、同時に設計の意図を自分の言葉で書き残した一次資料でもある。
 
 <!-- audit:quote-skip -->
 > ライトコインは、我々の何人かが IRC に集まり、ビットコインに似た本物の代替通貨を作ろうとした結果である。
@@ -142,6 +143,6 @@ Scrypt を選んだ理由も、告知では対立ではなく併存として説�
 
 ## ライトコインが残したもの
 
-ライトコインの技術的な独自性は、後年ほとんど失われた。Scrypt の専用機耐性は崩れ、ブロック間隔と上限の差は数値の違いに留まる。それでも[フォークと隣接通貨の系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)がライトコインを外せないのは、これがネームコインに続く二番目の「ビットコインを複製して数値だけ変える」型を示し、その型から[ドージコイン](/BitcoinArchive/ja/entries/aftermath/2013-12-06-dogecoin-launch/)が直接派生したからだ。ドージコインはビットコインではなくライトコインを複製している。
+[ライトコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-litecoin-currency-overview/)の技術的な独自性は、後年ほとんど失われた。Scrypt の専用機耐性は崩れ、ブロック間隔と上限の差は数値の違いに留まる。それでも[フォークと隣接通貨の系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)がライトコインを外せないのは、これがネームコインに続く二番目の「ビットコインを複製して数値だけ変える」型を示し、その型から[ドージコイン](/BitcoinArchive/ja/entries/aftermath/2013-12-06-dogecoin-launch/)が直接派生したからだ。ドージコインはビットコインではなくライトコインを複製している。
 
 供給設計の側から見れば、ライトコインはビットコインの上限つきスケジュールをそのまま継いだ側にいる（[固定供給 vs 自動調整通貨](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)の比較表では、規模だけを変えて踏襲した例として置かれている）。上限を捨てた設計が現れるのは、もう少し後のことになる。

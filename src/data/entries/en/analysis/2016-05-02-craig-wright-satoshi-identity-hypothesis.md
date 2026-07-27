@@ -34,6 +34,7 @@ relatedEntries:
   - aftermath/2016-05-02-craig-wright-biography
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
+  - currency/2026-07-27-bitcoin-sv-currency-overview
 inlineLinkKeywords:
   - "Craig Wright hypothesis"
   - "Craig Wright = Satoshi"

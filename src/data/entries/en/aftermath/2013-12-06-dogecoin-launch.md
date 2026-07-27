@@ -27,18 +27,20 @@ relatedEntries:
   - aftermath/2011-04-18-namecoin-launch
   - aftermath/2011-10-13-litecoin-launch
   - aftermath/2015-04-24-jackson-palmer-biography
+  - currency/2026-07-27-dogecoin-currency-overview
+  - currency/2026-07-27-litecoin-currency-overview
 inlineLinkKeywords:
   - "Dogecoin"
 ---
 
 ![A dark navy infographic showing a stylized dog-head icon branching off a circular icon, a diamond question-mark icon turning into a stacked coin, a speech-bubble icon beside a round coin symbol, and a row of small pictograms along a wavy horizon at the bottom.](/BitcoinArchive/images/analysis/2013-12-06-dogecoin-launch-hero.png)
 
-On December 6, 2013, Billy Markus (a software engineer at IBM) and Jackson Palmer (a marketing employee at Adobe Sydney) launched Dogecoin (DOGE), a cryptocurrency built around the "Doge" Shiba Inu internet meme. The initial framing was explicitly satirical: Palmer, observing the proliferation of cryptocurrencies in 2013, registered dogecoin.com as a joke about cryptocurrency speculation. Markus saw the joke, contacted Palmer, and turned it into a working chain by forking [Litecoin](/BitcoinArchive/entries/aftermath/2011-10-13-litecoin-launch/).
+On December 6, 2013, Billy Markus (a software engineer at IBM) and Jackson Palmer (a marketing employee at Adobe Sydney) launched [Dogecoin](/BitcoinArchive/entries/currency/2026-07-27-dogecoin-currency-overview/) (DOGE), a cryptocurrency built around the "Doge" Shiba Inu internet meme. The initial framing was explicitly satirical: Palmer, observing the proliferation of cryptocurrencies in 2013, registered dogecoin.com as a joke about cryptocurrency speculation. Markus saw the joke, contacted Palmer, and turned it into a working chain by forking [Litecoin](/BitcoinArchive/entries/aftermath/2011-10-13-litecoin-launch/).
 
 Dogecoin's launch parameters:
 
 - **Codebase:** Fork of Litecoin (which had forked Bitcoin)
-- **Proof-of-work:** Scrypt (inherited from Litecoin); merge-mineable with Litecoin from 2014
+- **Proof-of-work:** Scrypt (inherited from Litecoin); merge-mineable with [Litecoin](/BitcoinArchive/entries/currency/2026-07-27-litecoin-currency-overview/) from 2014
 - **Block time:** 1 minute (1/2.5 of Litecoin's, 1/10 of Bitcoin's)
 - **Initial supply schedule:** Random block reward (between 0 and 1,000,000 DOGE per block) for the first ~100,000 blocks, intended as a comedic touch; switched to a fixed 10,000 DOGE per block after February 2014
 - **Supply cap:** None — initially 100 billion DOGE was treated as a soft cap, but Markus subsequently confirmed Dogecoin would continue producing 5.256 billion new DOGE per year indefinitely, making it explicitly inflationary

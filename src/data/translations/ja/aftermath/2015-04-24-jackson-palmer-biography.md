@@ -35,6 +35,7 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-dogecoin-currency-overview
 translationStatus: complete
 ---
 
@@ -70,7 +71,7 @@ timeline
 <!-- audit:quote-skip -->
 > ドージコインは本当に楽しくて馬鹿げた集まりで、人がインターネット上で小銭を投げ合うのに使う通貨だ。……ドージコインが金融の世界の土台を揺るがす日が来るか。来ない。そもそもそんな意図はなかった。
 
-ドージコインの設計はこの但し書きと合っている。技術文書はなく、公式リポジトリは Bitcoin Core から改変したものだと書き、供給に上限はなく恒久的に増え続ける。この記録に並ぶ他のチェーンはどれも自分の設定値を弁護する。ドージコインの共同創設者は、設定値は論点ではないと述べた。
+[ドージコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-dogecoin-currency-overview/)の設計はこの但し書きと合っている。技術文書はなく、公式リポジトリは Bitcoin Core から改変したものだと書き、供給に上限はなく恒久的に増え続ける。この記録に並ぶ他のチェーンはどれも自分の設定値を弁護する。ドージコインの共同創設者は、設定値は論点ではないと述べた。
 
 ## 離脱
 

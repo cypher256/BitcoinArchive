@@ -29,6 +29,7 @@ relatedEntries:
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - aftermath/2011-10-13-litecoin-launch
   - aftermath/2013-10-01-mike-belshe-biography
+  - currency/2026-07-27-bitcoin-cash-currency-overview
 ---
 
 ![翻訳文書とビットコイン白書の図解を並べ、大きな ASIC 採掘機、顔のないシルエット、ビットコインとビットコインキャッシュへ分岐する系統図を描いたイラスト](/BitcoinArchive/images/analysis/2011-08-01-jihan-wu-biography-hero.png)

@@ -42,6 +42,7 @@ relatedEntries:
   - aftermath/2014-02-28-mt-gox-bankruptcy
   - design/2009-01-03-bitcoin-consensus-design
   - aftermath/2014-04-18-riccardo-spagni-biography
+  - currency/2026-07-27-monero-currency-overview
 quotes:
   - id: "q1"
     person: "Jeff Garzik"

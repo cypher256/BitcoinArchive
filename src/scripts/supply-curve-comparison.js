@@ -118,6 +118,7 @@ export function mount(container, legendEl, replayBtn, scaleBtns, data, labels) {
       g.append('path')
         .datum(pts)
         .attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2)
+        .attr('stroke-dasharray', s.dash || null)
         .attr('d', line);
       g.selectAll('.dot-' + s.id).data(pts).enter().append('circle')
         .attr('class', 'dot-' + s.id)
@@ -178,12 +179,13 @@ export function mount(container, legendEl, replayBtn, scaleBtns, data, labels) {
       var item = document.createElement('span');
       item.className = 'legend-item' + (state.hidden[s.id] ? ' off' : '');
       item.setAttribute('data-series', s.id);
-      var dot = document.createElement('span');
-      dot.className = 'legend-dot';
-      dot.style.background = seriesColor(s);
+      var swatch = document.createElement('span');
+      swatch.className = 'legend-swatch';
+      swatch.innerHTML = '<svg width="16" height="10" aria-hidden="true"><line x1="1" y1="5" x2="15" y2="5" stroke="'
+        + seriesColor(s) + '" stroke-width="2.5"' + (s.dash ? ' stroke-dasharray="' + s.dash + '"' : '') + ' stroke-linecap="round"/></svg>';
       var lab = document.createElement('span');
       lab.textContent = s.label;
-      item.appendChild(dot);
+      item.appendChild(swatch);
       item.appendChild(lab);
       item.addEventListener('click', function () {
         state.hidden[s.id] = !state.hidden[s.id];

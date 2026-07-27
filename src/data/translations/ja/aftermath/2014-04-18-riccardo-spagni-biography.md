@@ -40,12 +40,13 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-monero-currency-overview
 translationStatus: complete
 ---
 
 ![暗い背景の図解。左に罫線の入った枠、右に重なり合う輪を収めた枠、左端から下って細い水平の尾へ変わる曲線、最下部に三つの説明枠が並ぶ](/BitcoinArchive/images/analysis/2014-04-18-riccardo-spagni-biography-hero.png)
 
-モネロは 2014 年 4 月、BitMonero として公開された。分岐元は Bytecoin ─ CryptoNote 方式の実装であり、その供給量の大半が、外部が存在を知る前に採掘され終えていたと当時の界隈が読んだチェーンである。オンライン上の名を `fluffypony` というリカルド・スパーニは、この企画のもっとも表に立つ保守者となり、その役を十年近く担った。
+[モネロ](/BitcoinArchive/ja/entries/currency/2026-07-27-monero-currency-overview/)は 2014 年 4 月、BitMonero として公開された。分岐元は Bytecoin ─ CryptoNote 方式の実装であり、その供給量の大半が、外部が存在を知る前に採掘され終えていたと当時の界隈が読んだチェーンである。オンライン上の名を `fluffypony` というリカルド・スパーニは、この企画のもっとも表に立つ保守者となり、その役を十年近く担った。
 
 彼は、ビットコインの透明性は欠陥でも長所でもなく事実であり、その事実がビットコイン自身には満たせない用途を生んだ、という立場をもっとも明確に語ってきた人物である。
 

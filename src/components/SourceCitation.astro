@@ -27,7 +27,7 @@ const t = useTranslations(lang);
 // For derivative, Bitcoin-Institute-authored entry types, the `sourceUrl`
 // and `secondarySources` are references the entry discusses, not the
 // original of a transcribed text. Switch labels accordingly.
-const isDerivativeType = entryType === 'analysis' || entryType === 'biography' || entryType === 'design';
+const isDerivativeType = entryType === 'analysis' || entryType === 'biography' || entryType === 'design' || entryType === 'currency';
 const primaryLabel = isDerivativeType ? 'entry.referenceSource' : 'entry.originalSource';
 const secondaryLabel = isDerivativeType ? 'entry.relatedSources' : 'entry.secondarySources';
 

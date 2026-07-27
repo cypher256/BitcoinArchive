@@ -15,6 +15,7 @@ const typeEnum = z.enum([
   'court-document',
   'analysis',
   'design',
+  'currency',
 ]);
 
 const participantSchema = z.object({

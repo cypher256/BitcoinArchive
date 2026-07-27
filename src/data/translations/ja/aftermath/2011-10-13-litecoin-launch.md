@@ -25,13 +25,15 @@ relatedEntries:
   - aftermath/2011-04-18-namecoin-launch
   - aftermath/2013-12-06-dogecoin-launch
   - aftermath/2011-08-01-jihan-wu-biography
+  - currency/2026-07-27-dogecoin-currency-overview
+  - currency/2026-07-27-litecoin-currency-overview
 inlineLinkKeywords:
   - "ライトコイン"
 ---
 
 ![線でつながったノードが二股に分岐する図の横に、大きな金色の球体と小さな銀色の球体が並んで浮かび、下にはコンピューターチップ風のパネルとその奥にかすかに透けるチップの輪郭、四本の棒グラフの対が描かれている。](/BitcoinArchive/images/analysis/2011-10-13-litecoin-launch-hero.png)
 
-2011 年 10 月 13 日、当時 Google のソフトウェアエンジニアで BitcoinTalk のハンドル `coblee` で活動していたチャーリー・リーは、ライトコイン (LTC) のジェネシスブロックを採掘してチェーンをローンチした。その 6 日前 (10 月 7 日)、彼は BitcoinTalk でプロジェクトを発表し、litecoin.org でバイナリを公開していた。
+2011 年 10 月 13 日、当時 Google のソフトウェアエンジニアで BitcoinTalk のハンドル `coblee` で活動していたチャーリー・リーは、[ライトコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-litecoin-currency-overview/) (LTC) のジェネシスブロックを採掘してチェーンをローンチした。その 6 日前 (10 月 7 日)、彼は BitcoinTalk でプロジェクトを発表し、litecoin.org でバイナリを公開していた。
 
 ライトコインはビットコインのコードベースを四つのパラメーター変更でフォークしたものだった:
 

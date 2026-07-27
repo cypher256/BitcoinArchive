@@ -37,12 +37,13 @@ relatedEntries:
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-solana-currency-overview
 translationStatus: complete
 ---
 
 ![暗い背景の図解。時計の文字盤が白と青緑の四角が交互に並ぶ列へ線でつながり、右上がりの棒が入った枠、列の下に丸みのある札が二つ、丸で囲んだチェック印、最下部に三つの説明枠が並ぶ](/BitcoinArchive/images/analysis/2017-01-01-anatoly-yakovenko-biography-hero.png)
 
-アナトリー・ヤコベンコは、Qualcomm で十年以上、無線通信系の仕組みを扱う技術者として働いた。その後 Mesosphere と Dropbox で分散システムを扱っている。2017 年、彼は Proof of History と名付けた着想の草案を書き始めた。ソラナはそこから育ち、2020 年代半ばには時価総額で最大級のチェーンの一つになる。
+アナトリー・ヤコベンコは、Qualcomm で十年以上、無線通信系の仕組みを扱う技術者として働いた。その後 Mesosphere と Dropbox で分散システムを扱っている。2017 年、彼は Proof of History と名付けた着想の草案を書き始めた。[ソラナ](/BitcoinArchive/ja/entries/currency/2026-07-27-solana-currency-overview/)はそこから育ち、2020 年代半ばには時価総額で最大級のチェーンの一つになる。
 
 ビットコインについての彼の発言は珍しい形をしている。賛辞も切り捨ても振り切れており、その二つは数か月しか離れていない。
 

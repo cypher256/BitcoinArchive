@@ -29,6 +29,7 @@ relatedEntries:
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - aftermath/2011-10-13-litecoin-launch
   - aftermath/2013-10-01-mike-belshe-biography
+  - currency/2026-07-27-bitcoin-cash-currency-overview
 ---
 
 ![A diagram showing a translated document beside a schematic of the Bitcoin whitepaper, a large ASIC mining rig, a faceless silhouette figure, and a hashpower chain diagram forking into two branches labeled Bitcoin and Bitcoin Cash](/BitcoinArchive/images/analysis/2011-08-01-jihan-wu-biography-hero.png)

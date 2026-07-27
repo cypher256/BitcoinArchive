@@ -94,8 +94,17 @@ relatedEntries:
   - aftermath/2017-01-01-anatoly-yakovenko-biography
   - aftermath/2014-04-18-riccardo-spagni-biography
   - aftermath/2010-07-18-jed-mccaleb-biography
+  - aftermath/2012-09-01-chris-larsen-biography
   - aftermath/2015-04-24-jackson-palmer-biography
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-bitcoin-cash-currency-overview
+  - currency/2026-07-27-bitcoin-sv-currency-overview
+  - currency/2026-07-27-cardano-currency-overview
+  - currency/2026-07-27-dogecoin-currency-overview
+  - currency/2026-07-27-ethereum-currency-overview
+  - currency/2026-07-27-litecoin-currency-overview
+  - currency/2026-07-27-monero-currency-overview
+  - currency/2026-07-27-polkadot-currency-overview
 inlineLinkKeywords:
   - "ビットコイン分岐の系譜"
   - "ブロックサイズ戦争"
@@ -105,7 +114,7 @@ inlineLinkKeywords:
 
 ![暗い背景に浮かぶ枝分かれ図。太く光る本流から複数の細い支流が分岐し、起点から後年の分岐群へと伸びていく系譜を描いている](/BitcoinArchive/images/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy-hero.png)
 
-ビットコインのプロトコル分岐のうち今もブロックを生成し続けている全チェーンと、ビットコインのソースコードまたは設計から系譜が始まる隣接する暗号通貨を、まとめて時間軸の地図に描く。本エントリ冒頭のインタラクティブ図がそれを描く。本アーカイブにおける正典のチェーンは、2009 年 1 月 3 日に採掘されハッシュ値 `000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f` を持つジェネシスブロックから始まる連鎖である（[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)）。対象外とするのは、ローンチに失敗した分岐（生き残ったチェーンを残さなかったもの）と、技術的設計がビットコインとは独立に生まれたチェーン群 —— リップルのフェデレーテッド合意、モネロの CryptoNote 系リング署名、IOTA の DAG、カルダノの Ouroboros PoS はこの広いカテゴリの例にすぎず、全体の境界線を示すものではない。
+ビットコインのプロトコル分岐のうち今もブロックを生成し続けている全チェーンと、ビットコインのソースコードまたは設計から系譜が始まる隣接する暗号通貨を、まとめて時間軸の地図に描く。本エントリ冒頭のインタラクティブ図がそれを描く。本アーカイブにおける正典のチェーンは、2009 年 1 月 3 日に採掘されハッシュ値 `000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f` を持つジェネシスブロックから始まる連鎖である（[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)）。対象外とするのは、ローンチに失敗した分岐（生き残ったチェーンを残さなかったもの）と、技術的設計がビットコインとは独立に生まれたチェーン群 —— [リップル](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/)のフェデレーテッド合意、[モネロ](/BitcoinArchive/ja/entries/currency/2026-07-27-monero-currency-overview/)の CryptoNote 系リング署名、IOTA の DAG、[カルダノ](/BitcoinArchive/ja/entries/currency/2026-07-27-cardano-currency-overview/)の Ouroboros PoS はこの広いカテゴリの例にすぎず、全体の境界線を示すものではない。
 
 本エントリー冒頭のインタラクティブチャートは、掲載される各チェーンを実時間軸の上に描画する ─ ローンチ日、分岐元の親チェーン、稼働期間、現在もブロックを生成しているか、ローンチ後数か月で停止したか。チャート内のチェーン行は対応するアーカイブエントリーが存在する場合にリンクされる。各チェーンの属性ごとの状態 (ブロックサイズ上限、ハッシュレート占有率、ガバナンス等) は §1・§2 の表に記録される。
 
@@ -142,7 +151,7 @@ inlineLinkKeywords:
 | 2013-12-06 | [ドージコイン (DOGE)](/BitcoinArchive/ja/entries/aftermath/2013-12-06-dogecoin-launch/) | ビリー・マーカス (IBM エンジニア、ビットコイン愛好家)、ジャクソン・パーマー (Adobe Sydney マーケティング) | ライトコイン (ビットコインの派生) のソースコードフォーク | 当初はジョーク / ミーム。大規模なインフレ供給。文化的影響 |
 | 2015-07-30 | [イーサリアム (ETH)](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning/) | [ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/)他 ─ 17 歳でビットコインコミュニティに参入、[Bitcoin Magazine 共同創設](/BitcoinArchive/ja/entries/aftermath/2012-05-01-bitcoin-magazine-launch/)、ビットコインソフトウェア (`pybitcointools`) に寄稿、ビットコインのスクリプト言語拡張を主張した後イーサリアムへ転向 | コードベースは独立、設計の出発点はビットコインコミュニティ | チューリング完全なスマートコントラクト、アカウントモデル (UTXO ではなく) |
 
-イーサリアムを本表に含めたのは、チェーンの起源そのものがビットコインを**経由している**ため。[ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/)は 2011 年 17 歳でビットコインに出会い、ミハイ・アリシエと [『Bitcoin Magazine』を共同創設](/BitcoinArchive/ja/entries/aftermath/2012-05-01-bitcoin-magazine-launch/) (初の印刷版は 2012 年 5 月)、広く使われた `pybitcointools` ライブラリ等のビットコインソフトウェアに寄稿し、2013 年を通してビットコインのスクリプト言語に汎用計算を載せる拡張について Bitcoin Magazine の記事や Mastercoin チームとの対話で広く論じた。ビットコイン開発コミュニティはその方向に収束せず、Mastercoin プロトコルを汎化する提案も採用されなかった。ブテリンは 2013 年末のイーサリアム白書序文でこの結論を記録し、スクリプト構想を新規コードベースに持ち込む別チェーンの立ち上げに関わった。イーサリアムのアカウントモデル・EVM 設計・ガス課金は独立したエンジニアリングだが、**動機** ─ ビットコインに似た合意機構に任意の計算を載せる ─ はブテリンの Bitcoin Magazine 期の思考から直接出ている。他のイーサリアム共同創業者 (ギャヴィン・ウッド、チャールズ・ホスキンソン、ジョセフ・ルビン、アンソニー・ディ・イオリオ、ミハイ・アリシエ、アミール・チェトリット) も、イーサリアム以前にビットコイン / サイファーパンク圏で活動していた。
+[イーサリアム](/BitcoinArchive/ja/entries/currency/2026-07-27-ethereum-currency-overview/)を本表に含めたのは、チェーンの起源そのものがビットコインを**経由している**ため。[ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/)は 2011 年 17 歳でビットコインに出会い、ミハイ・アリシエと [『Bitcoin Magazine』を共同創設](/BitcoinArchive/ja/entries/aftermath/2012-05-01-bitcoin-magazine-launch/) (初の印刷版は 2012 年 5 月)、広く使われた `pybitcointools` ライブラリ等のビットコインソフトウェアに寄稿し、2013 年を通してビットコインのスクリプト言語に汎用計算を載せる拡張について Bitcoin Magazine の記事や Mastercoin チームとの対話で広く論じた。ビットコイン開発コミュニティはその方向に収束せず、Mastercoin プロトコルを汎化する提案も採用されなかった。ブテリンは 2013 年末のイーサリアム白書序文でこの結論を記録し、スクリプト構想を新規コードベースに持ち込む別チェーンの立ち上げに関わった。イーサリアムのアカウントモデル・EVM 設計・ガス課金は独立したエンジニアリングだが、**動機** ─ ビットコインに似た合意機構に任意の計算を載せる ─ はブテリンの Bitcoin Magazine 期の思考から直接出ている。他のイーサリアム共同創業者 (ギャヴィン・ウッド、チャールズ・ホスキンソン、ジョセフ・ルビン、アンソニー・ディ・イオリオ、ミハイ・アリシエ、アミール・チェトリット) も、イーサリアム以前にビットコイン / サイファーパンク圏で活動していた。
 
 本表に載せていないビットコインコードベース由来のフォークは多数 (Peercoin、Primecoin、ERC-20 時代のビットコイン由来アルトコイン等) 存在するが、それらは対象外とする。本表が記録するのは、ビットコイン本流の言説で文化的または技術的な意義が繰り返し参照される銘柄に限定される。
 

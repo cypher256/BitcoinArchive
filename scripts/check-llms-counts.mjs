@@ -39,6 +39,8 @@ const LABEL_TO_TYPE = {
   'Court Documents': 'court-document',
   'Whitepapers': 'whitepaper',
   'Design': 'design',
+  'Currency': 'currency',
+  'Currencies': 'currency',
   'Tweets': 'tweet',
   'Blog posts': 'blog-post',
 };

@@ -27,6 +27,7 @@ relatedEntries:
   - aftermath/2010-08-15-value-overflow-incident
   - aftermath/2017-08-01-bitcoin-cash-fork
   - analysis/2009-01-09-bitcoin-time-warp-attack
+  - currency/2026-07-27-ethereum-currency-overview
 inlineLinkKeywords:
   - "プルーフオブワーク"
   - "難易度調整"
@@ -189,7 +190,7 @@ flowchart TD
 | **バリュー・オーバーフロー事件** | 2010 | 緊急ソフトフォーク | `CheckTransaction` を修正し 2,100 万 BTC 超の出力を拒否 | チェーン再編成。無効なブロックは数時間以内に孤立化 |
 | **BIP 66 (厳密な DER)** | 2015 | ソフトフォーク | `IsSuperMajority` (1,000 ブロック中 750 で有効化、950 で旧バージョンブロックを拒否) | 正規の署名符号化を強制 |
 | **SegWit (BIP 141)** | 2017 | ソフトフォーク | BIP 9 バージョンビット | 証人ディスカウント導入、改ざん性修正、スクリプトバージョニング有効化 |
-| **ブロックサイズ → ビットコインキャッシュ** | 2017 | ハードフォーク | スケーリング方針の対立 | ビットコインキャッシュが分裂。非互換の 8 MB ブロックサイズ規則が恒久的チェーン分岐を生む |
+| **ブロックサイズ → [ビットコインキャッシュ](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-cash-currency-overview/)** | 2017 | ハードフォーク | スケーリング方針の対立 | ビットコインキャッシュが分裂。非互換の 8 MB ブロックサイズ規則が恒久的チェーン分岐を生む |
 | **Taproot (BIP 341)** | 2021 | ソフトフォーク | Speedy Trial（修正 BIP 9） | シュノア署名、Tapscript、MAST を追加 |
 
 上表のバリュー・オーバーフロー事件は、この緊急ソフトフォークという仕組みが実際に機能した最も明確な事例である――パッチが配信され無効なブロックが数時間で孤立化するに至った経緯は[事件の詳細記事](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/)に譲る。

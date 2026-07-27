@@ -104,6 +104,15 @@ relatedEntries:
   - aftermath/2010-07-18-jed-mccaleb-biography
   - aftermath/2015-04-24-jackson-palmer-biography
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-cardano-currency-overview
+  - currency/2026-07-27-dogecoin-currency-overview
+  - currency/2026-07-27-ethereum-currency-overview
+  - currency/2026-07-27-litecoin-currency-overview
+  - currency/2026-07-27-monero-currency-overview
+  - currency/2026-07-27-polkadot-currency-overview
+  - currency/2026-07-27-solana-currency-overview
+  - currency/2026-07-27-usdc-currency-overview
+  - currency/2026-07-27-usdt-currency-overview
 inlineLinkKeywords:
   - "固定供給"
   - "2100 万枚上限"
@@ -124,7 +133,7 @@ translationStatus: complete
 
 2 つの問いは独立している。中央銀行が固定スケジュールを運用することもありうる。プロトコルが裁量的フィードバックループを実装することもありうる。ビットコインの特定の組み合わせ ― プロトコルが決定、固定スケジュール、ハード上限 ― は、内部整合性のある複数の答えのうちの一つであり、唯一の答えではない。
 
-論争の時系列を、 1998 年の b-money 弾力的供給提案から[イーサリアム](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)のマージまでに渡って示す:
+論争の時系列を、 1998 年の b-money 弾力的供給提案から[イーサリアム](/BitcoinArchive/ja/entries/currency/2026-07-27-ethereum-currency-overview/)のマージまでに渡って示す:
 
 ```mermaid
 timeline
@@ -220,20 +229,20 @@ graph TD
 | 通貨 | 供給上限 | 発行スケジュール | ガバナンス | 設計類型 |
 |---|---|---|---|---|
 | **ビットコイン** | 2100 万 (ハード上限) | 210K ブロックごとに半減、新規発行分 → 0 は 2140 年頃 | プロトコル、保守的コンセンサス | ハードマネー、固定 |
-| **ライトコイン** | 8400 万 (ハード上限) | 半減 (ビットコインの 4 倍速) | プロトコル | ハードマネー、スケール変更 |
-| **ビットコインキャッシュ** | 2100 万 (ハード上限) | ビットコインと同じ | プロトコル | ハードマネー、継承 |
-| **ビットコイン SV** | 2100 万 (ハード上限) | ビットコインと同じ | プロトコル | ハードマネー、継承 |
-| **カルダノ (ADA)** | 450 億 (ハード上限) | 指数減衰 | プロトコル + トレジャリー | ハードマネー、減衰発行 |
-| **モネロ (XMR)** | 1840 万 + 永久発行 | スムーズ発行 → ブロックあたり 0.6 XMR を永久 (長期は穏やかなインフレ) | プロトコル | ハイブリッド: 上限 + 末尾 |
-| **ドージコイン** | なし (2014 年に撤廃) | 永久に年 50 億固定発行 | プロトコル | 穏やかなインフレ、固定率 |
-| **ソラナ (SOL)** | なし | インフレ 8% → 1.5% を 10 年で (年率 −15%) | プロトコル + 財団 | 減衰インフレ |
-| **イーサリアム (ETH)** | なし | 発行 + EIP-1559 手数料焼却 (高利用期にはネットデフレ化) | プロトコル + EIP ガバナンス | 動的、市場媒介 |
+| **[ライトコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-litecoin-currency-overview/)** | 8400 万 (ハード上限) | 半減 (ビットコインの 4 倍速) | プロトコル | ハードマネー、スケール変更 |
+| **[ビットコインキャッシュ](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-cash-currency-overview/)** | 2100 万 (ハード上限) | ビットコインと同じ | プロトコル | ハードマネー、継承 |
+| **[ビットコイン SV](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-sv-currency-overview/)** | 2100 万 (ハード上限) | ビットコインと同じ | プロトコル | ハードマネー、継承 |
+| **[カルダノ](/BitcoinArchive/ja/entries/currency/2026-07-27-cardano-currency-overview/) (ADA)** | 450 億 (ハード上限) | 指数減衰 | プロトコル + トレジャリー | ハードマネー、減衰発行 |
+| **[モネロ](/BitcoinArchive/ja/entries/currency/2026-07-27-monero-currency-overview/) (XMR)** | 1840 万 + 永久発行 | スムーズ発行 → ブロックあたり 0.6 XMR を永久 (長期は穏やかなインフレ) | プロトコル | ハイブリッド: 上限 + 末尾 |
+| **[ドージコイン](/BitcoinArchive/ja/entries/currency/2026-07-27-dogecoin-currency-overview/)** | なし (2014 年に撤廃) | 永久に年 50 億固定発行 | プロトコル | 穏やかなインフレ、固定率 |
+| **[ソラナ](/BitcoinArchive/ja/entries/currency/2026-07-27-solana-currency-overview/) (SOL)** | なし | インフレ 8% → 1.5% を 10 年で (年率 −15%) | プロトコル + 財団 | 減衰インフレ |
+| **[イーサリアム](/BitcoinArchive/ja/entries/currency/2026-07-27-ethereum-currency-overview/) (ETH)** | なし | 発行 + EIP-1559 手数料焼却 (高利用期にはネットデフレ化) | プロトコル + EIP ガバナンス | 動的、市場媒介 |
 | **イーサリアムクラシック (ETC)** | 約 2.107 億 (フォークで上限導入) | 固定供給スケジュール | プロトコル | ハードマネー (フォーク後) |
-| **ポルカドット (DOT)** | 21 億枚 (2026 年 1 月以降) | 二年ごとに残余供給の 13.14% | プロトコル + ガバナンス | 年約 10% の目標を保有者投票で廃し、上限を導入 |
+| **[ポルカドット](/BitcoinArchive/ja/entries/currency/2026-07-27-polkadot-currency-overview/) (DOT)** | 21 億枚 (2026 年 1 月以降) | 二年ごとに残余供給の 13.14% | プロトコル + ガバナンス | 年約 10% の目標を保有者投票で廃し、上限を導入 |
 | **コスモス (ATOM)** | なし | ボンド比目標型インフレ (7–20% レンジ) | プロトコル + ガバナンス | インフレ、フィードバック目標 |
 | **b-money (1998 提案)** | 動的 | 標準バスケット生活費連動 | 分散コスト推定 | 自動調整、バスケット連動 |
-| **USDT (テザー)** | 担保で決定 | 法定通貨準備に対する発行・焼却 | 中央発行体 (Tether Ltd) | 法定通貨連動ステーブルコイン |
-| **USDC (サークル)** | 担保で決定 | 同じ機構 | 中央発行体 (Circle) | 法定通貨連動ステーブルコイン |
+| **[USDT](/BitcoinArchive/ja/entries/currency/2026-07-27-usdt-currency-overview/) (テザー)** | 担保で決定 | 法定通貨準備に対する発行・焼却 | 中央発行体 (Tether Ltd) | 法定通貨連動ステーブルコイン |
+| **[USDC](/BitcoinArchive/ja/entries/currency/2026-07-27-usdc-currency-overview/) (サークル)** | 担保で決定 | 同じ機構 | 中央発行体 (Circle) | 法定通貨連動ステーブルコイン |
 
 この表の分布は、ある一つの設計をめぐる合意ではなく **スペクトル** として読める。ビットコインからのハード上限継承が一つのクラスター (ビットコイン / BCH / BSV / ライトコイン / カルダノ / ETC)、減衰発行型の変種がもう一つ (ソラナ、モネロの発行カーブ)、上限なしで裁量的フィードバックを持つ変種が三つ目 (イーサリアム、コスモス)、法定通貨連動ステーブルコインが四つ目 ― これらは法定通貨発行体の裁量を機能的に継承する。
 

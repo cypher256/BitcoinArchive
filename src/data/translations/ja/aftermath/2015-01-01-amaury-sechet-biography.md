@@ -28,6 +28,7 @@ relatedEntries:
   - aftermath/2017-08-01-bitcoin-cash-fork
   - aftermath/2018-11-15-bitcoin-sv-fork
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
+  - currency/2026-07-27-bitcoin-cash-currency-overview
 ---
 
 ![ブロックが連なる横長の年表が、盾とチェックマークのアイコンの位置で二手に分かれ、それぞれの分岐がさらに枝分かれし、下部に説明枠が並ぶ構成の編集用インフォグラフィック。](/BitcoinArchive/images/analysis/2015-01-01-amaury-sechet-biography-hero.png)
@@ -46,7 +47,7 @@ relatedEntries:
 
 ## ビットコイン SV とのハッシュ戦争 (2018 年)
 
-2018 年 11 月、BCH コミュニティはプロトコル更新案を巡って分裂した。セシェは Bitcoin ABC 側を主導し、[クレイグ・ライトとカルヴィン・エアの nChain](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/) は対抗案 (ビットコイン SV、128 MB ブロックと「復活したオリジナルオペコード」) を主導した。両陣営は 11 月 15 日のフォーク地点に競合するハッシュレートを投じ、各チェーンが再編成攻撃を仕掛けられるかどうかで生存が決まるハッシュ戦争状況を生んだ。結果は永続的な分裂となった ─ BCH (Bitcoin ABC のチェーン) は BCH ティッカーを保持し、BSV は新しい SV ティッカーで別個に継続した。
+2018 年 11 月、BCH コミュニティはプロトコル更新案を巡って分裂した。セシェは Bitcoin ABC 側を主導し、[クレイグ・ライトとカルヴィン・エアの nChain](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/) は対抗案 (ビットコイン SV、128 MB ブロックと「復活したオリジナルオペコード」) を主導した。両陣営は 11 月 15 日のフォーク地点に競合するハッシュレートを投じ、各チェーンが再編成攻撃を仕掛けられるかどうかで生存が決まるハッシュ戦争状況を生んだ。結果は永続的な分裂となった ─ [BCH](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-cash-currency-overview/) (Bitcoin ABC のチェーン) は BCH ティッカーを保持し、BSV は新しい SV ティッカーで別個に継続した。
 
 ## ビットコインキャッシュ ABC 分裂と eCash (2020 ~ 2021 年)
 

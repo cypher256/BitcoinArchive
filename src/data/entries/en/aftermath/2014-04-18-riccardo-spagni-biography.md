@@ -40,11 +40,12 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-monero-currency-overview
 ---
 
 ![Editorial infographic on a dark background: a bordered panel of ruled lines on the left, a framed cluster of overlapping rings on the right, a curve descending from the left edge into a thin flat tail, and three caption boxes along the bottom.](/BitcoinArchive/images/analysis/2014-04-18-riccardo-spagni-biography-hero.png)
 
-Monero launched in April 2014 as BitMonero, forked away from Bytecoin — an implementation of the CryptoNote protocol whose own supply had, on the community's reading, been largely mined before anyone outside knew it existed. Riccardo Spagni, online as `fluffypony`, became the project's most visible maintainer and held that role for most of a decade.
+[Monero](/BitcoinArchive/entries/currency/2026-07-27-monero-currency-overview/) launched in April 2014 as BitMonero, forked away from Bytecoin — an implementation of the CryptoNote protocol whose own supply had, on the community's reading, been largely mined before anyone outside knew it existed. Riccardo Spagni, online as `fluffypony`, became the project's most visible maintainer and held that role for most of a decade.
 
 He is the clearest single voice for the position that Bitcoin's transparency is not a bug and not a feature but a fact — one that creates a use case Bitcoin itself cannot serve.
 

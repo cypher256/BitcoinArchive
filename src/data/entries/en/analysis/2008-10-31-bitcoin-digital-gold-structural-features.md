@@ -34,6 +34,18 @@ relatedEntries:
   - aftermath/2017-01-01-anatoly-yakovenko-biography
   - aftermath/2018-09-26-jeremy-allaire-biography
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - currency/2026-07-27-bitcoin-cash-currency-overview
+  - currency/2026-07-27-bitcoin-sv-currency-overview
+  - currency/2026-07-27-cardano-currency-overview
+  - currency/2026-07-27-dogecoin-currency-overview
+  - currency/2026-07-27-ethereum-currency-overview
+  - currency/2026-07-27-litecoin-currency-overview
+  - currency/2026-07-27-monero-currency-overview
+  - currency/2026-07-27-polkadot-currency-overview
+  - currency/2026-07-27-solana-currency-overview
+  - currency/2026-07-27-usdc-currency-overview
+  - currency/2026-07-27-usdt-currency-overview
+  - currency/2026-07-27-xrp-currency-overview
 inlineLinkKeywords:
   - "digital gold"
   - "two-layer decentralization"
@@ -64,7 +76,7 @@ Satoshi made the metal comparison explicitly, in a [2010 forum reply](/BitcoinAr
 
 Satoshi left the origin of that value open — foreseen usefulness for exchange, collectors, "any random reason" — but scarcity is what would make the value durable once it existed. How that same scarcity later reshaped Bitcoin's use as a payment system is traced in [the cash-versus-digital-gold reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/).
 
-Later cryptocurrencies ([Ethereum](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/), Ripple, Cardano, Solana) ship more capable virtual machines, faster confirmation, lower fees, richer programmability. On any single technical axis other than uptime since 2009, Bitcoin is no longer the frontier. And yet the market consistently prices Bitcoin as the asset most resembling gold — the long-horizon store of value, the reserve position, the holding that doesn't depend on a counterparty's roadmap.
+Later cryptocurrencies ([Ethereum](/BitcoinArchive/entries/currency/2026-07-27-ethereum-currency-overview/), [Ripple](/BitcoinArchive/entries/currency/2026-07-27-xrp-currency-overview/), [Cardano](/BitcoinArchive/entries/currency/2026-07-27-cardano-currency-overview/), [Solana](/BitcoinArchive/entries/currency/2026-07-27-solana-currency-overview/)) ship more capable virtual machines, faster confirmation, lower fees, richer programmability. On any single technical axis other than uptime since 2009, Bitcoin is no longer the frontier. And yet the market consistently prices Bitcoin as the asset most resembling gold — the long-horizon store of value, the reserve position, the holding that doesn't depend on a counterparty's roadmap.
 
 <!-- chart: assets-race -->
 
@@ -115,7 +127,7 @@ The features below are the concrete pillars that, taken together, supply Bitcoin
 |---|---|---|---|
 | 1 | System decentralization | PoW + open-source client + thousands of independent full nodes | Most major chains, in varying degrees |
 | 2 | People / org decentralization | No founder authority, no foundation with protocol power, no CEO | Rare; partial in a few smaller projects |
-| 3 | Fair launch (no premine) | Genesis block followed by ordinary mining open to all from block 1 | Some smaller chains (Litecoin, Monero); rare among top-ten |
+| 3 | Fair launch (no premine) | Genesis block followed by ordinary mining open to all from block 1 | Some smaller chains ([Litecoin](/BitcoinArchive/entries/currency/2026-07-27-litecoin-currency-overview/), [Monero](/BitcoinArchive/entries/currency/2026-07-27-monero-currency-overview/)); rare among top-ten |
 | 4 | Founder departure | Satoshi gone since 2011; no public re-emergence | None among comparably-valued chains |
 | 5 | Fixed supply | 21 million cap, immutable in practice | Some chains have caps; most can be amended by governance |
 | 6 | Network effect / first-mover | 16-year history, deepest liquidity, longest brand recognition | Tautologically Bitcoin-only |
@@ -135,10 +147,10 @@ This is where Bitcoin separates from every other major chain. Compared on Layer 
 | Project | Active founder | Foundation with protocol authority | Visible CEO | Premine / dev allocation |
 |---|---|---|---|---|
 | **Bitcoin** | Departed 2011, no contact | Bitcoin Foundation existed; never held protocol authority | None | None |
-| **Ethereum** | Vitalik Buterin (highly active, public roadmap influence) | Ethereum Foundation (treasury, grants, EIP guidance) | Foundation executive director | ICO 2014; founder + early-contributor allocation |
-| **Ripple** | Chris Larsen / Brad Garlinghouse | Ripple Labs (private company controlling protocol) | Brad Garlinghouse (CEO) | ~80% held by Ripple Labs at launch |
-| **Cardano** | Charles Hoskinson (publicly active) | Cardano Foundation + IOG + Emurgo (three coordinating bodies) | Charles Hoskinson (IOG CEO) | ICO 2017; foundation allocation |
-| **Solana** | Anatoly Yakovenko (active) | Solana Foundation | Anatoly Yakovenko (Labs CEO) | Premine; foundation + investor allocation |
+| **[Ethereum](/BitcoinArchive/entries/currency/2026-07-27-ethereum-currency-overview/)** | [Vitalik Buterin](/BitcoinArchive/participants/vitalik-buterin/) (highly active, public roadmap influence) | Ethereum Foundation (treasury, grants, EIP guidance) | Foundation executive director | ICO 2014; founder + early-contributor allocation |
+| **[Ripple](/BitcoinArchive/entries/currency/2026-07-27-xrp-currency-overview/)** | [Chris Larsen](/BitcoinArchive/participants/chris-larsen/) / [Brad Garlinghouse](/BitcoinArchive/participants/brad-garlinghouse/) | Ripple Labs (private company controlling protocol) | Brad Garlinghouse (CEO) | ~80% held by Ripple Labs at launch |
+| **[Cardano](/BitcoinArchive/entries/currency/2026-07-27-cardano-currency-overview/)** | [Charles Hoskinson](/BitcoinArchive/participants/charles-hoskinson/) (publicly active) | Cardano Foundation + IOG + Emurgo (three coordinating bodies) | Charles Hoskinson (IOG CEO) | ICO 2017; foundation allocation |
+| **[Solana](/BitcoinArchive/entries/currency/2026-07-27-solana-currency-overview/)** | [Anatoly Yakovenko](/BitcoinArchive/participants/anatoly-yakovenko/) (active) | Solana Foundation | Anatoly Yakovenko (Labs CEO) | Premine; foundation + investor allocation |
 
 The contrast is not subtle. For every project in the comparison except Bitcoin, an interested reader can name the person whose announcements move price, the organization whose treasury funds protocol development, and the company whose corporate decisions shape the chain's roadmap. For Bitcoin the corresponding fields are empty, and the emptiness is durable — it has held for over a decade across multiple contentious upgrade cycles.
 
