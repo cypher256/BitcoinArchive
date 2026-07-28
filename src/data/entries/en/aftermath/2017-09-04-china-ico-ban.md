@@ -24,6 +24,9 @@ secondarySources:
 relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - aftermath/2018-10-01-ray-dillinger-interview
+  - aftermath/2021-09-03-china-crypto-mining-ban
+  - analysis/2026-07-28-bitcoin-nation-state-policy-history
+  - aftermath/2017-04-01-japan-payment-services-act-amendment
 ---
 
 ![An illustration of a red-toned outline of China with three padlocked, shuttered server racks, connected by glowing teal-and-gold arcs to labeled points in Kazakhstan, the United States, and Canada, alongside a small line chart dipping down and then climbing back up.](/BitcoinArchive/images/analysis/2017-09-04-china-ico-ban-hero.png)

@@ -51,6 +51,9 @@ secondarySources:
   - name: "Harrigan & Fretter — The Unreasonable Effectiveness of Address Clustering"
     url: "https://arxiv.org/abs/1605.06369"
     note: "Multi-input heuristic, the Mt. Gox mega-cluster, and the absence of ground truth."
+  - name: "IRS Criminal Investigation — James Zhong sentenced"
+    url: "https://www.irs.gov/node/121506"
+    note: "50,491.06251844 BTC recovered from Zhong's Gainesville, Georgia house in November 2021; forfeiture orders later covered 51,680.32473733 BTC."
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -66,8 +69,13 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
   - aftermath/2020-07-20-whale-alert-satoshi-fortune
+  - aftermath/2025-03-06-us-strategic-bitcoin-reserve
+  - aftermath/2021-09-07-el-salvador-bitcoin-law
+  - aftermath/2025-01-30-el-salvador-bitcoin-law-reform
+  - aftermath/2021-09-03-china-crypto-mining-ban
   - aftermath/2010-07-06-anonymity-and-pseudonymity
   - forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025
+  - analysis/2026-07-28-bitcoin-nation-state-policy-history
 translationStatus: complete
 ---
 
@@ -126,7 +134,7 @@ This segment owns differently. IBIT's coins are not BlackRock's assets; the trus
 
 ## Nation-states — from seizure to reserve
 
-The US government's balance was never bought; it is a genealogy of seizures. Silk Road-linked coins, 69,370 BTC (civil forfeiture, November 2020). James Zhong's 50,676 BTC (November 2021). The [2016 Bitfinex hack](/BitcoinArchive/entries/aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest/) recovery, 94,636 BTC (February 2022). Auctions and victim restitution had trimmed the pile to about 198,000 BTC by March 2025, when an executive order stopped the selling and converted the balance into a Strategic Bitcoin Reserve. In October 2025 the largest forfeiture action in Justice Department history — 127,271 BTC from the Cambodia-based Prince Group case — pushed the attributed balance to 328,372 BTC as of February 2026.
+The US government's balance was never bought; it is a genealogy of seizures. Silk Road-linked coins, 69,370 BTC (civil forfeiture, November 2020). James Zhong's 50,491 BTC (November 2021). The [2016 Bitfinex hack](/BitcoinArchive/entries/aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest/) recovery, 94,636 BTC (February 2022). Auctions and victim restitution had trimmed the pile to about 198,000 BTC by March 2025, when an executive order stopped the selling and converted the balance into a Strategic Bitcoin Reserve. In October 2025 the largest forfeiture action in Justice Department history — 127,271 BTC from the Cambodia-based Prince Group case — pushed the attributed balance to 328,372 BTC as of February 2026.
 
 | Government | BTC | Note |
 |---|---|---|
@@ -141,6 +149,8 @@ The US government's balance was never bought; it is a genealogy of seizures. Sil
 The 649,954 total is the sum of BitcoinTreasuries' full government list, which includes small sovereign holders beyond the six countries above; the per-country figures also carry different disclosure and attribution dates, so the major rows alone do not add up to the total. The last row carries that remainder explicitly.
 
 Russia does not appear in this table. Its seizure-derived holdings are estimated at 50–200 BTC, and the reserve concept under discussion there extends only to confiscated assets.
+
+The path each balance took to reach this table — a ban lifted, a legal-tender mandate walked back, a forfeiture folded into a standing reserve — is a separate record from the balance itself; [this archive's survey of nation-state Bitcoin policy](/BitcoinArchive/entries/analysis/2026-07-28-bitcoin-nation-state-policy-history/) traces those reversals across roughly thirty governments, while this map holds only where the coins sit today.
 
 ## The unattributed side — criminal balances and North Korea
 

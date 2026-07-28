@@ -51,6 +51,9 @@ secondarySources:
   - name: "Harrigan & Fretter — The Unreasonable Effectiveness of Address Clustering"
     url: "https://arxiv.org/abs/1605.06369"
     note: "複数入力ヒューリスティック、Mt. Gox 巨大クラスタ、正解データの不在。"
+  - name: "IRS Criminal Investigation — James Zhong 有罪判決"
+    url: "https://www.irs.gov/node/121506"
+    note: "2021 年 11 月、ジョージア州ゲインズビルの自宅から 50,491.06251844 BTC を回収。没収命令は後に 51,680.32473733 BTC を対象とした。"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"
@@ -66,8 +69,13 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
   - aftermath/2020-07-20-whale-alert-satoshi-fortune
+  - aftermath/2025-03-06-us-strategic-bitcoin-reserve
+  - aftermath/2021-09-07-el-salvador-bitcoin-law
+  - aftermath/2025-01-30-el-salvador-bitcoin-law-reform
+  - aftermath/2021-09-03-china-crypto-mining-ban
   - aftermath/2010-07-06-anonymity-and-pseudonymity
   - forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025
+  - analysis/2026-07-28-bitcoin-nation-state-policy-history
 translationStatus: complete
 ---
 
@@ -126,7 +134,7 @@ translationStatus: complete
 
 ## 国家 ― 押収から準備へ
 
-米国政府の残高は、買って積んだものではなく押収の系譜である。シルクロード関連の 69,370 BTC（2020 年 11 月の民事没収）、James Zhong からの 50,676 BTC（2021 年 11 月）、[2016 年 Bitfinex ハック](/BitcoinArchive/ja/entries/aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest/)からの回収 94,636 BTC（2022 年 2 月）。途中の競売や被害者への返還で 2025 年 3 月には約 19.8 万 BTC まで減っていたが、同月の大統領令が売却を止めて戦略ビットコイン準備に切り替えた。2025 年 10 月にはカンボジアの Prince Group 事件で米司法省史上最大の没収（127,271 BTC）が加わり、2026 年 2 月時点の帰属残高は 328,372 BTC になっている。
+米国政府の残高は、買って積んだものではなく押収の系譜である。シルクロード関連の 69,370 BTC（2020 年 11 月の民事没収）、James Zhong からの 50,491 BTC（2021 年 11 月）、[2016 年 Bitfinex ハック](/BitcoinArchive/ja/entries/aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest/)からの回収 94,636 BTC（2022 年 2 月）。途中の競売や被害者への返還で 2025 年 3 月には約 19.8 万 BTC まで減っていたが、同月の大統領令が売却を止めて戦略ビットコイン準備に切り替えた。2025 年 10 月にはカンボジアの Prince Group 事件で米司法省史上最大の没収（127,271 BTC）が加わり、2026 年 2 月時点の帰属残高は 328,372 BTC になっている。
 
 | 政府 | BTC | 備考 |
 |---|---|---|
@@ -141,6 +149,8 @@ translationStatus: complete
 合計 649,954 は BitcoinTreasuries の政府一覧の総和で、同一覧には上の 6 か国以外の小口保有国も含まれる。また国別の数字は開示・帰属の時点がそれぞれ違うため、主要国だけを足しても総和には一致しない。その残りが末尾の差引行である。
 
 ロシアはこの表に並ばない。押収由来の保有は推定 50〜200 BTC の規模で、検討されている国家準備の構想も押収資産の活用にとどまる。
+
+それぞれの残高がこの表にたどり着くまでの道のり――禁止の解除、法定通貨義務の撤回、没収が恒久的な準備へと組み込まれる過程――は、残高そのものとは別の記録である。[国家によるビットコイン政策を追うこのアーカイブの調査](/BitcoinArchive/ja/entries/analysis/2026-07-28-bitcoin-nation-state-policy-history/)がおよそ 30 の政府にわたるその転換をたどる一方、この保有マップが記すのは今日コインがどこにあるかだけだ。
 
 ## 帰属しない側 ― 犯罪残高と北朝鮮
 

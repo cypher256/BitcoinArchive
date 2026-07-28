@@ -37,6 +37,9 @@ relatedEntries:
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
   - aftermath/2018-09-26-jeremy-allaire-biography
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - aftermath/2021-09-07-el-salvador-bitcoin-law
+  - analysis/2026-07-28-bitcoin-nation-state-policy-history
+  - aftermath/2025-01-30-el-salvador-bitcoin-law-reform
   - currency/2026-07-27-usdc-currency-overview
 inlineLinkKeywords:
   - "電子キャッシュ"
@@ -114,7 +117,7 @@ timeline
 
 ## では、なお現金を夢に見るか
 
-だからこの問いは、過去形ではなく現在形で立つ。金として持たれるようになったいま、ビットコインはなお、自分が設計された使い方——電子キャッシュ——を志向するか。ライトニング、エルサルバドルの法定通貨の試み、オンチェーンで現金を目指す動き——手は、いまも伸びている。設計の片面（現金）は消えていない。ただ、もう片面（金）に覆われているだけだ。蓄えるために作られたのではない。硬く作られた結果、蓄えられるようになった。それでもなお、使われることを夢に見る。
+だからこの問いは、過去形ではなく現在形で立つ。金として持たれるようになったいま、ビットコインはなお、自分が設計された使い方——電子キャッシュ——を志向するか。ライトニング、[エルサルバドルの法定通貨の試み](/BitcoinArchive/ja/entries/analysis/2026-07-28-bitcoin-nation-state-policy-history/)、オンチェーンで現金を目指す動き——手は、いまも伸びている。設計の片面（現金）は消えていない。ただ、もう片面（金）に覆われているだけだ。蓄えるために作られたのではない。硬く作られた結果、蓄えられるようになった。それでもなお、使われることを夢に見る。
 
 ## この読みの限界
 

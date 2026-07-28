@@ -117,6 +117,7 @@ relatedEntries:
   - aftermath/2015-04-24-jackson-palmer-biography
   - aftermath/2011-09-01-vitalik-buterin-biography
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
+  - aftermath/2025-03-06-us-strategic-bitcoin-reserve
   - currency/2026-07-27-bitcoin-cash-currency-overview
   - currency/2026-07-27-bitcoin-sv-currency-overview
   - currency/2026-07-27-cardano-currency-overview
@@ -129,6 +130,7 @@ relatedEntries:
   - currency/2026-07-27-usdc-currency-overview
   - currency/2026-07-27-usdt-currency-overview
   - currency/2026-07-27-xrp-currency-overview
+  - analysis/2026-07-28-bitcoin-nation-state-policy-history
 inlineLinkKeywords:
   - "how many altcoins"
   - "altcoin comparison"

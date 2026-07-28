@@ -37,6 +37,9 @@ relatedEntries:
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
   - aftermath/2018-09-26-jeremy-allaire-biography
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - aftermath/2021-09-07-el-salvador-bitcoin-law
+  - analysis/2026-07-28-bitcoin-nation-state-policy-history
+  - aftermath/2025-01-30-el-salvador-bitcoin-law-reform
   - currency/2026-07-27-usdc-currency-overview
 inlineLinkKeywords:
   - "electronic cash"
@@ -114,7 +117,7 @@ The [digital-gold structural-features reading](/BitcoinArchive/entries/analysis/
 
 ## So does it still dream of electronic cash?
 
-So this question stands in the present tense, not the past. Now that it is held as gold, does Bitcoin still reach for the use it was designed for — electronic cash? The Lightning Network, El Salvador's legal-tender experiment, the on-chain-cash efforts — the hand is still out. The cash face of the design did not vanish; it is only covered by the gold one. It was not built to be hoarded. It was built hard, and the hardness made it hoardable. And still it dreams of being spent.
+So this question stands in the present tense, not the past. Now that it is held as gold, does Bitcoin still reach for the use it was designed for — electronic cash? The Lightning Network, [El Salvador's legal-tender experiment](/BitcoinArchive/entries/analysis/2026-07-28-bitcoin-nation-state-policy-history/), the on-chain-cash efforts — the hand is still out. The cash face of the design did not vanish; it is only covered by the gold one. It was not built to be hoarded. It was built hard, and the hardness made it hoardable. And still it dreams of being spent.
 
 ## Limits of this reading
 

@@ -115,10 +115,10 @@ EDA はチェーンを止めなかったが、別の問題を生んだ。難易�
 
 | 年月 | 対立の内容 | 結果 |
 |---|---|---|
-| 2018 年 11 月 | Bitcoin ABC（セシェ）対 nChain（クレイグ・ライトとカルヴィン・エア）—— ブロック上限 32 MB から 128 MB への引き上げと、無効化されていたオペコードの復活を巡る対立 | [ビットコインSV](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/) として分裂。BCH のティッカーは Bitcoin ABC 側に残った |
+| 2018 年 11 月 | Bitcoin ABC（セシェ）対 nChain（クレイグ・ライトとカルヴィン・エア）—— ブロック上限 32 MB から 128 MB への引き上げと、無効化されていたオペコードの復活を巡る対立 | [ビットコイン SV](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/) として分裂。BCH のティッカーは Bitcoin ABC 側に残った |
 | 2020 年 11 月 | マイナー報酬の 8% を開発資金へ充てる「インフラ資金計画」を巡る対立 | セシェのチームが分裂し、2021 年に eCash（XEC）として再出発 |
 
-2018 年の分裂を主導した[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)のサトシ本人だという主張は、2024 年の [COPA 対ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)で退けられている。ただしビットコインSV という鎖そのものは、その法廷の結論とは独立に、2018 年の分裂で選ばれたパラメーターのまま動作を続けている。
+2018 年の分裂を主導した[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)のサトシ本人だという主張は、2024 年の [COPA 対ライト裁判](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)で退けられている。ただしビットコイン SV という鎖そのものは、その法廷の結論とは独立に、2018 年の分裂で選ばれたパラメーターのまま動作を続けている。
 
 ## セシェとヴァーが語ったビットコイン
 
