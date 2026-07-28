@@ -55,7 +55,7 @@ translationStatus: complete
 フォークの三日前、Bitcoin ABC のリード開発者[アモリー・セシェ](/BitcoinArchive/ja/participants/amaury-sechet/)は、取材にこう答えていた。
 
 <!-- audit:quote-skip -->
-> I want bitcoin to be a widely used electronic cash. A cryptocurrency that is used for day-to-day inexpensive stuff, as well as expensive purchases.
+> ビットコインには、広く使われる電子キャッシュになってほしい。日々の安い買い物にも、高額な支払いにも使われる暗号通貨に。
 
 2017 年 8 月 1 日、彼のチームが書いたソフトウェアはブロック 478558 で 1 MB の上限を超えるブロックを受け入れ、[ビットコインの残高台帳と 2,100 万枚の上限をそのまま引き継いだ新しいチェーン](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)を生んだ。ビットコインキャッシュ (BCH) と名付けられたこの鎖が変えたのは、供給表でも採掘規則でもない。誰がその規則を書き換えられるのか、という一点だった。
 
@@ -76,22 +76,22 @@ timeline
 BCH を生んだソフトウェアの正式名は Bitcoin ABC —— 「Adjustable Blocksize Cap（調整可能なブロックサイズ上限）」の略である。名前そのものが立場を語っている。ビットコイン本体が Segregated Witness（SegWit）と Lightning ネットワークのようなオフチェーン層で取引容量を増やす道を選んだのに対し、セシェのチームはブロックサイズそのものを大きくする道を選んだ。セシェ自身はレイヤー 2 技術そのものを否定してはいない ―― その境界線を、彼はフォーク直前のインタビューで慎重に引いている。
 
 <!-- audit:quote-skip -->
-> I'm not against Layer 2 technologies themselves, they can add value. I'm just against not growing the base layer.
+> レイヤー 2 技術そのものに反対しているわけではない。価値を加えることはできる。反対しているのは、ベースレイヤーを大きくしないことだ。
 
 彼の異議は、高い手数料がビットコイン自身のホワイトペーパーの副題にある「電子現金」という半分の役割に何をもたらすかへ向いていた。
 
 <!-- audit:quote-skip -->
-> The second definition in particular doesn't quite work with high fees. If I buy something for $5 and I pay a fee of 50 cents, that's a big deal. Too much friction.
+> 特に二つ目の定義は、手数料が高いとうまく機能しない。5 ドルの買い物に 50 セントの手数料がかかるなら、それは大きな痛手だ。摩擦が大きすぎる。
 
 フォーク時のブロックサイズ上限は 8 MB —— ビットコイン本体の 1 MB 上限の 8 倍に設定された。セシェはこれを確定した数字ではなく、慎重な出発点として説明している。
 
 <!-- audit:quote-skip -->
-> Eight megabytes is large enough to make sure we have a mechanism to adjust it by the time we get anywhere close to the limit. On the other hand, you don't want to go unlimited cowboy style.
+> 8 メガバイトあれば、上限に近づくまでの間に調整の仕組みを用意するのに十分な大きさだ。かといって、無制限にして無法状態にしたいわけでもない。
 
 その出発点を置き換える仕組みについても、彼は同じ取材でこう述べていた。
 
 <!-- audit:quote-skip -->
-> After this fork is behind us, we'll make sure to deploy some mechanism to handle the block size so we don't need to play central planners.
+> このフォークが過去のものになったら、ブロックサイズを扱う何らかの仕組みを必ず導入する。私たちが中央計画者を演じずに済むように。
 
 その仕組みが実際に届くまでには、ほぼ七年かかった。しかも二度にわたって。
 
@@ -125,12 +125,12 @@ EDA はチェーンを止めなかったが、別の問題を生んだ。難易�
 2018 年 11 月、ロジャー・ヴァーはこう書いている。
 
 <!-- audit:quote-skip -->
-> High fees and full blocks disenfranchise those who need Bitcoin most. BCH is peer to peer electronic cash for the world. BTC is not.
+> 高い手数料とブロックの逼迫は、ビットコインを最も必要としている人々から、その手段を奪う。BCH は世界のための P2P 電子キャッシュだ。BTC はそうではない。
 
 その 6 年後、逮捕とスペインでの拘留を経た 2024 年 12 月のインタビューで、ヴァーはビットコインという言葉そのものを、より広い告発の対象に変えていた。
 
 <!-- audit:quote-skip -->
-> I don't think it was created that way initially, but I am suspicious and I do think the intelligence agencies and other groups have converted it and hijacked it into becoming a financial trap.
+> 最初からそう作られたとは思わない。だが私は疑っている。情報機関や他の勢力がこれを作り変え、乗っ取って、金融の罠に変えてしまったのだと、本当にそう思っている。
 
 2017 年のフォークを「ブロックサイズを大きくする技術的な選択」として語ったセシェの記録と、2024 年のビットコインを「乗っ取られて金融の罠に変えられたもの」として語るヴァーの記録は、同じ人物たちが同じ「本物のビットコイン」という看板を掲げながら、7 年の間に論拠を丸ごと入れ替えたことを示している。
 

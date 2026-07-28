@@ -53,7 +53,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-![Editorial infographic on a dark background: a ring of connected validator nodes with a crossed-out pickaxe icon beside it, a single tall stack of coin-shaped bars appearing all at once above a flat baseline (contrasted with a rising staircase of smaller bars for mined supply), a small courthouse-column icon linked by a dotted line to the node ring, and three caption boxes along the bottom.](/BitcoinArchive/images/analysis/2026-07-27-xrp-currency-overview-hero.png)
+![暗い背景の図解。つながり合う検証者ノードが輪になり、その脇に斜線で消されたつるはしの記号、平らな基準線の上にコイン形の棒がひとまとまりで一気に積み上がる様子 (採掘によって少しずつ高さを増していく階段状の棒グラフと対比される)、点線でノードの輪と結ばれた裁判所の柱を模した小さな記号、最下部に三つの説明枠が並ぶ。](/BitcoinArchive/images/analysis/2026-07-27-xrp-currency-overview-hero.png)
 
 2011 年 5 月 27 日、ジェド・マケーレブは BitcoinTalk にこう投稿した。
 
@@ -97,7 +97,7 @@ XRP レジャーにマイナーはいない。存在するのは、各サーバ�
 
 ## 1,000 億枚は、最初から存在した
 
-XRP レジャーの供給曲線は平坦だ。ビットコインの 2,100 万枚が 16 年かけて段階的に掘り出されるのに対し、XRP の 1,000 億枚はジェネシスの台帳の時点でもう全量が存在していた。2017 年、リップルは自社が保有する 550 億 XRP を、レジャーそのものが強制するエスクロー契約の連鎖に封じ込めた。契約は 55 か月にわたり、毎月 1 日に 10 億 XRP ずつを解放するよう組まれている。その月に使わなかった分は、行列の最後尾に新しいエスクローとして積み直される。結果として、毎月市場に新たに出回る量は額面の 10 億 XRP よりずっと少なく、おおむね 2 億から 3 億 XRP にとどまってきた。
+XRP レジャーの供給曲線は平坦だ。ビットコインの 2,100 万枚が 33 回の半減を重ねながら 2140 年ごろまでかけて段階的に掘り出されるのに対し、XRP の 1,000 億枚はジェネシスの台帳の時点でもう全量が存在していた。2017 年、リップルは自社が保有する 550 億 XRP を、レジャーそのものが強制するエスクロー契約の連鎖に封じ込めた。契約は 55 か月にわたり、毎月 1 日に 10 億 XRP ずつを解放するよう組まれている。その月に使わなかった分は、行列の最後尾に新しいエスクローとして積み直される。結果として、毎月市場に新たに出回る量は額面の 10 億 XRP よりずっと少なく、おおむね 2 億から 3 億 XRP にとどまってきた。
 
 XRP レジャーにも、新規発行に代わる小さな消却はある。取引ごとに手数料としてごくわずかな XRP が破棄される仕組みで、2012 年の公開以来、破棄された総量は 1,000 億枚のうちおよそ 1,400 万枚、全体のおよそ 0.014% にすぎない。ここにビットコインとの違いがある。ビットコインの手数料はマイナーへの報酬として渡り、その報酬こそが採掘という労力を支える対価になる。XRP レジャーの手数料は、誰の懐にも入らずに消える。受け取り手のいない罰金であり、支払う相手のいない対価だ。
 

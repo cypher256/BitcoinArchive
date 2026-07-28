@@ -55,7 +55,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-![Editorial infographic on a dark background: a ring of near-identical circles with one faintly highlighted among equals, a small keyhole-shaped stealth-address glyph beside a padlock outline, a declining emission curve that flattens into an unbroken horizontal line running off the right edge, and three caption boxes along the bottom.](/BitcoinArchive/images/analysis/2026-07-27-monero-currency-overview-hero.png)
+![暗い背景の図解。ほぼ同じ大きさの円が輪になって並び、その中の一つだけがかすかに強調されている図、南京錠の輪郭の隣に小さな鍵穴形のステルスアドレス記号、右へ進むにつれて下がり続けやがて途切れることのない水平線となって右端まで伸びる発行曲線、最下部に三つの説明枠が並ぶ。](/BitcoinArchive/images/analysis/2026-07-27-monero-currency-overview-hero.png)
 
 <!-- audit:quote-skip -->
 > 実際のところ、コインの 82% は「公開」前にすでに採掘されていた。仮に悪意なく事前採掘されたのだとしても、コインの 82% が、正体も所在も見えない者たちの手にあるという事実は変わらない。
