@@ -86,6 +86,24 @@ translationStatus: complete
 
 スケーリングの制約が、それを後押しした。サトシが 2010 年 9 月にスパム対策で入れた 1 MB の上限は、基盤層が一度に運べる取引の数に天井をつくり、[2015〜2017 年のブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)の争点になった。決着は、分離だった。2017 年 8 月、大ブロック派は[ビットコインキャッシュとして枝分かれし](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)、日々の支払いをオンチェーンに残す道を選んだ。メインチェーンは SegWit とライトニングへ進み、基盤層を決済の土台に、日々の支払いはその上へ——あるいは手数料に押し出されて、どこへも。希少性が「持て」と言い、混雑が「ここでは払うな」と言う。使い方は、現金から保有へ滑っていった。
 
+```mermaid
+timeline
+    title 電子キャッシュから デジタルゴールドへ
+    2008 : 白書が公開される ─ 表題は 現金と言っていた (10月31日)
+    %% link: /BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/
+    2010 : ピザ 2 枚に 1 万 BTC ─ 設計どおりに 使われた日 (5月22日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/
+         : サトシが 回帰定理に答える ─ 価値の根は 希少性 (8月27日)
+    %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/
+         : スパム対策の 1 MB 上限が 基盤層に天井をつくる (9月)
+    2013 : ウェイ・ダイが 固定供給こそ 現金に向かない理由だと 名指す
+    %% link: /BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/
+    2015 : 基盤層が何を運ぶべきかで ブロックサイズ戦争が 始まる
+    %% link: /BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/
+    2017 : 分離による決着 ─ 大ブロック派が 枝分かれする (8月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/
+```
+
 ## 先駆者が、その仕組みを見抜いていた
 
 これは後付けの説明ではない。ホワイトペーパーが参照 [1] に挙げた[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)が、[2013 年に同じことを言っている](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)。固定供給は価格の振れを大きくし、利用者に重い負担を強いる——だから日々使う通貨には向かない、と。1998 年に生活費へ連動する弾力的な供給を構想した当人が、ビットコインの**硬さそのもの**を、現金に不向きにした原因として名指した。デジタルゴールドにする性質と、現金に向かなくする性質は、同じ一つだ。

@@ -86,6 +86,24 @@ But the same transaction is now the one people cite as "if only you'd held." Ten
 
 Scaling constraints pushed the same way. The 1 MB limit Satoshi added in September 2010 as anti-spam capped what the base layer could carry and became the issue of the [2015–2017 block-size war](/BitcoinArchive/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/). It resolved by separation: in August 2017 the large-block faction [forked off as Bitcoin Cash](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/), choosing to keep everyday payments on chain, while the main chain went to SegWit and the Lightning Network — base layer as a settlement floor, daily payments stacked above it or priced out by fees. Scarcity says "hold"; congestion says "don't spend here." The use slid from cash to holding.
 
+```mermaid
+timeline
+    title From electronic cash to digital gold
+    2008 : Whitepaper published - the title says cash (Oct 31)
+    %% link: /BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/
+    2010 : 10,000 BTC for two pizzas - the use, working as built (May 22)
+    %% link: /BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/
+         : Satoshi answers the regression theorem - scarcity as the root of value (Aug 27)
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/
+         : 1 MB anti-spam limit caps the base layer (Sep)
+    2013 : Wei Dai names the fixed supply as what makes it poor cash
+    %% link: /BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/
+    2015 : The block-size war opens over what the base layer should carry
+    %% link: /BitcoinArchive/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/
+    2017 : Separation - the large-block faction forks off (Aug)
+    %% link: /BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/
+```
+
 ## A precursor saw the mechanism
 
 This is not hindsight. [Wei Dai](/BitcoinArchive/participants/wei-dai/), cited as reference [1] in the whitepaper, [said the same thing in 2013](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/): the fixed supply causes high price volatility that imposes a heavy cost on users — so it makes a poor everyday currency. The author of the elastic-supply b-money (1998) named Bitcoin's very hardness as the thing that makes it unfit for cash. The property that makes it digital gold and the property that makes it bad cash are the same property.

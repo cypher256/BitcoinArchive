@@ -106,9 +106,14 @@ The most substantive technical claim he makes about Bitcoin concerns supply audi
 
 Both events are in this archive, and the record supports the first half of the claim and qualifies the second.
 
-The 2010 event is the [value overflow incident](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/): an integer overflow in the output-sum check let a single transaction print roughly 184 billion BTC. It was exploited on mainnet, and the fix and reorganization took about fifteen hours end to end.
+|  | 2010 — [value overflow incident](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) | 2018 — CVE-2018-17144 |
+|---|---|---|
+| Defect | Integer overflow in the output-sum check | Missing duplicate-input check |
+| Coins created | ~184 billion BTC, in a single transaction | None |
+| Exploited on mainnet | Yes | No |
+| Resolved by | Fix and chain reorganization, ~15 hours end to end | Coordinated disclosure, before anyone used it |
 
-The 2018 event is CVE-2018-17144, a missing duplicate-input check that would have allowed inflation. It was found and fixed through coordinated disclosure and **was never exploited on mainnet** — the [structural analysis of the two incidents](/BitcoinArchive/entries/analysis/2010-08-15-overflow-incident-structure-and-paradox/) treats the pair precisely because one was used and one was not. Calling the 2018 bug "more of an issue" describes its class, not its consequences; nothing was created.
+The [structural analysis of the two incidents](/BitcoinArchive/entries/analysis/2010-08-15-overflow-incident-structure-and-paradox/) treats the pair precisely because one was used and one was not. Calling the 2018 bug "more of an issue" describes its class, not its consequences; nothing was created.
 
 So the argument survives in its useful form and not in its strong one. Transparent supply is auditable in principle and was audited too late once, in 2010. It is not a guarantee that no bug exists — but on the record, transparency is also what made both bugs findable, and the second one was found before anyone used it.
 

@@ -111,16 +111,20 @@ One stated use case for the token is Bitcoin-specific, and it is the reason stab
 
 Three episodes in USDC's history put the trade-off under load, and Circle documented all three itself.
 
-**The reserve composition.** The 2018 launch described USDC as "backed by cash reserves." An attestation covering July 2021 reported the reserve as 61% cash and cash equivalents, 13% Yankee certificates of deposit, 12% US Treasuries, 9% commercial paper and 5% corporate bonds. Circle moved the reserve to 100% cash and cash equivalents in September 2021. Bitcoin has no analogous question, because nothing backs it — a property that reads as a weakness until the backing is the thing in doubt.
+| Episode | What it put under load | What happened |
+|---|---|---|
+| Reserve composition (2021) | Whether "backed by cash reserves," the phrase used at launch, meant cash | A July attestation reported 61% cash and cash equivalents, 13% Yankee certificates of deposit, 12% US Treasuries, 9% commercial paper, 5% corporate bonds; Circle moved the reserve to 100% cash and cash equivalents that September |
+| Silicon Valley Bank (Mar 2023) | Whether the reserve was reachable | $3.3 billion — about 8% — sat at the bank that had just failed; USDC traded below a dollar until the deposit was confirmed recoverable |
+| CENTRE dissolved (Aug 2023) | Whether the whitepaper's own answer to the centralization objection would hold | Circle and Coinbase dissolved the consortium and Circle took sole control of USDC's governance and smart-contract keys, on the stated reasoning that regulatory clarity had made a separate governance body unnecessary |
 
-**The bank.** In March 2023, Circle disclosed that $3.3 billion of the USDC reserve — about 8% — sat at Silicon Valley Bank, which had just failed. USDC traded below a dollar until the deposit was confirmed recoverable. Allaire's own framing in the press release states the principle the episode tested:
+Bitcoin has no analogous question on the first two rows, because nothing backs it — a property that reads as a weakness until the backing is the thing in doubt.
+
+Allaire's own framing in the Silicon Valley Bank press release states the principle that episode tested:
 
 <!-- audit:quote-skip -->
 > Trust, safety and 1:1 redeemability of all USDC in circulation is of paramount importance to Circle.
 
-The peg held as a promise and broke as a price for roughly two days. That gap between the two is the whole content of counterparty risk, and it is what a bearer asset does not have.
-
-**The governance.** The whitepaper's answer to the centralization objection was an independent multi-member organization, CENTRE, standing between the token and any single issuer. In August 2023 Circle and Coinbase dissolved CENTRE, and Circle took sole control of USDC's governance and smart-contract keys, on the stated reasoning that regulatory clarity had made a separate governance body unnecessary. Whatever one makes of the reasoning, the structural mitigation the whitepaper offered no longer exists, and the design is now what the whitepaper said it was trying not to be.
+The peg held as a promise and broke as a price for roughly two days. That gap between the two is the whole content of counterparty risk, and it is what a bearer asset does not have. And whatever one makes of the reasoning on the third row, the structural mitigation the whitepaper offered no longer exists: the design is now what the whitepaper said it was trying not to be.
 
 ## Significance to Bitcoin
 

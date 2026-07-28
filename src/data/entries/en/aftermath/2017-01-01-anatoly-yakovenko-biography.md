@@ -80,7 +80,15 @@ The whitepaper also names the trade-off it accepts, which is the honest part of 
 <!-- audit:quote-skip -->
 > CAP systems that deal with partitions have to pick Consistency or Availability. Our approach eventually picks Availability, but because we have an objective measure of time, Consistency is picked with reasonable human timeouts.
 
-Availability first, in other words — a validator set that keeps producing under partition. Bitcoin makes the opposite choice: a partitioned Bitcoin network stalls rather than diverges, and the archive's [structural features of digital gold](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) treats that conservatism as a property rather than a limitation.
+Three axes, and on each one the whitepaper states the Bitcoin position it is departing from:
+
+| Design axis | Bitcoin | Solana |
+|---|---|---|
+| Ordering messages | No shared, verifiable notion of time | Proof of History — a cryptographic clock written into the ledger |
+| What deters an attack | Capital expense: hardware and electricity committed to one branch | Slashable stake: coin committed as collateral while validating |
+| Under a network partition | Halts rather than diverges | Keeps producing, with consistency restored on a human timeout |
+
+The last row is the one with a name in this archive: Bitcoin's conservatism under partition is treated as a property rather than a limitation by the [structural features of digital gold](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/).
 
 ## "A masterpiece"
 

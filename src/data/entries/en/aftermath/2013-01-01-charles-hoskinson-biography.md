@@ -109,7 +109,15 @@ And on anonymity, where the divergence from Bitcoin's design is deliberate and t
 <!-- audit:quote-skip -->
 > In the effort to anonymize and disintermediate central actors, Bitcoin and its contemporaries have also discarded the need for stable identities, metadata and reputation in commercial transactions.
 
-Bitcoin's refusal of stable identity is not treated as an unfortunate limitation to be engineered around; it is named as a thing Cardano chose not to inherit. On the supply axis the two chains agree — [the fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) places Cardano in the hard-cap cluster alongside Bitcoin and Litecoin. The split runs through consensus and identity, not scarcity.
+Bitcoin's refusal of stable identity is not treated as an unfortunate limitation to be engineered around; it is named as a thing Cardano chose not to inherit.
+
+| Axis | Bitcoin | Cardano |
+|---|---|---|
+| Consensus | Proof-of-work | Proof-of-stake, adopted for secure voting, capacity to scale and incentive design |
+| Identity | Stable identity, metadata and reputation discarded | Kept, as a stated requirement of commerce |
+| Supply | Hard cap | Hard cap — the one axis where the two agree |
+
+That last row is why [the fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) places Cardano in the hard-cap cluster alongside Bitcoin and Litecoin. The split runs through consensus and identity, not scarcity.
 
 ## The 2024 verdict: not needed anymore
 
