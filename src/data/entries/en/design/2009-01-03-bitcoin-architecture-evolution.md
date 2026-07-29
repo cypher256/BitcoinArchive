@@ -33,7 +33,9 @@ inlineLinkKeywords:
 
 This page is **L2 #9 — Architecture evolution (Satoshi era vs v27+)** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) — the first of three cross-cutting deep dives. Each domain page carries a short two-era comparison of its own; here all eight run side by side, with the split-architecture diagrams no single domain page can show.
 
-**Scope.** Every comparison uses two fixed reference points: Satoshi's v0.1 release (January 3, 2009) and modern Bitcoin Core v27+ baseline. Intermediate versions are mentioned only when they introduced a structural change. The page does not cover design drift at the social or economic layer — those are analyzed in the [design-intent vs current-reality entry](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/). Each section below contains a split diagram (v0.1 left, v27+ right) and a comparison table, matching the L1 numbering.
+**Scope.** Every comparison uses two fixed reference points: Satoshi's v0.1 release (January 3, 2009) and modern Bitcoin Core v27+ baseline. Intermediate versions are mentioned only when they introduced a structural change.
+
+The page does not cover design drift at the social or economic layer — those are analyzed in the [design-intent vs current-reality entry](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/). Each section below contains a split diagram (v0.1 left, v27+ right) and a comparison table, matching the L1 numbering.
 
 ## 1. System-wide architecture
 
