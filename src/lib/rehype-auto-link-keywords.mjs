@@ -24,6 +24,10 @@
  *   - Inside `<code>` or `<pre>` (don't auto-link identifiers)
  *   - Inside a `<blockquote>` (primary-source quote — same convention
  *     used by `rehype-strip-archive-links` for verbatim block detection)
+ *   - Inside a heading (`<h1>`-`<h6>`) — headings are navigation
+ *     landmarks; splitting one into partly-plain, partly-linked text
+ *     reads as visual noise and the anchor competes with the heading's
+ *     own self-link (`id="..."`)
  *   - Inside `<aside class="editorial-note">` (editor notes from
  *     `remark-editorial-marker.mjs` — these are editorial overlay; we
  *     keep their links manual to preserve the editor's intent)
@@ -222,6 +226,16 @@ function isInsideTag(ancestors, tagName) {
   return false;
 }
 
+const HEADING_TAGS = new Set(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']);
+
+function isInsideHeading(ancestors) {
+  for (let i = ancestors.length - 1; i >= 0; i--) {
+    const node = ancestors[i];
+    if (node.type === 'element' && HEADING_TAGS.has(node.tagName)) return true;
+  }
+  return false;
+}
+
 function isInsideEditorNote(ancestors) {
   for (let i = ancestors.length - 1; i >= 0; i--) {
     const node = ancestors[i];
@@ -289,6 +303,7 @@ export function rehypeAutoLinkKeywords() {
       if (isInsideTag(ancestors, 'code')) return;
       if (isInsideTag(ancestors, 'pre')) return;
       if (isInsideTag(ancestors, 'blockquote')) return;
+      if (isInsideHeading(ancestors)) return;
       if (isInsideEditorNote(ancestors)) return;
 
       const text = node.value;

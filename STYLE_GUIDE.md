@@ -2204,6 +2204,9 @@ Auto-linking deliberately skips:
 - Inside `<blockquote>` — primary-source quote in editorial entries
   (see [Editorial Entries](#editorial-entries-article--analysis--biography--design)).
   Same convention used by [`rehype-strip-archive-links`](#external-link-rot-handling).
+- Inside a heading (`<h1>`-`<h6>`) — headings are navigation landmarks;
+  a partly-linked heading reads as visual noise and competes with the
+  heading's own self-link anchor.
 - Inside `<aside class="editor-inline">` — editor notes
   (see [Editorial Markers](#editorial-markers)). Editor notes keep
   their links manual to preserve editorial intent.
