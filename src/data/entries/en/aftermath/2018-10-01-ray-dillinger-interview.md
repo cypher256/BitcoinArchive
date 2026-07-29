@@ -39,8 +39,6 @@ relatedEntries:
 
 *Published on the 10th anniversary of the Bitcoin whitepaper.*
 
----
-
 ## On his code review of Bitcoin
 
 [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/) sent me the proof chain code for examination. I found it solid.

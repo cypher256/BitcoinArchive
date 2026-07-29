@@ -53,8 +53,6 @@ relatedEntries:
 
 *[Editor: New to Bitcoin? Read the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) first — 30 terms across 8 chapters with diagrams. The whitepaper assumes you already know what a UTXO, a coinbase transaction, and proof-of-work are.]*
 
----
-
 ## Bitcoin: A Peer-to-Peer Electronic Cash System
 
 Satoshi Nakamoto<br>

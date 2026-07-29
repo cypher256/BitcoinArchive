@@ -42,8 +42,6 @@ This early draft predates the final published version by nearly a month. It was 
 - The Incentive section is shorter; transaction fees section is absent
 - Section ordering differs slightly
 
----
-
 ## Bitcoin: A Peer-to-Peer Electronic Cash System
 
 Satoshi Nakamoto<br>

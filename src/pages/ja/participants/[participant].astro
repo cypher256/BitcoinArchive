@@ -168,11 +168,20 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
     )}
 
     {biographyContent ? (
-      <h2 class="entries-heading">{t('participant.relatedEntries' as any)}</h2>
+      <div class="entries-header">
+        <h2 class="entries-heading">{t('participant.relatedEntries' as any)}</h2>
+        {displayEntries.length > 0 && (
+          <div class="sort-controls">
+            <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+            <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+            <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
+          </div>
+        )}
+      </div>
     ) : null}
     <div class="list-header">
       <p class="entry-count">{displayEntries.length} エントリー</p>
-      {displayEntries.length > 0 && (
+      {!biographyContent && displayEntries.length > 0 && (
         <div class="sort-controls">
           <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
           <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
@@ -267,7 +276,6 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
   .biography-section {
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--color-border);
   }
   .biography-content {
     line-height: 1.8;
@@ -275,9 +283,33 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
   .biography-content :global(p:first-child) {
     margin-top: 0;
   }
+  /* Same shape as .section-header on the home page: a heading with a
+     trailing action (sort buttons here, "view all" there) shares one
+     row, and the border sits on that row so the line reaches under
+     the action too — not on the heading alone. .biography-section's
+     own bottom spacing already separates this row from the prose
+     above, so no extra margin-top is needed here. */
+  .entries-header {
+    display: flex;
+    justify-content: space-between;
+    /* center, not baseline: the sort buttons are a padded 40px-tall box,
+       not text — baseline-aligning them against the h2's text baseline
+       left the buttons sitting visibly lower than the heading. */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--color-border-strong);
+  }
+  /* Optical correction on top of align-items:center: the heading
+     glyphs sit higher within their own line box than a button's
+     padded box sits within its box, so mathematically-centered still
+     reads as the buttons being slightly low. Nudge up a few px. */
+  .entries-header .sort-controls {
+    transform: translateY(-2px);
+  }
   .entries-heading {
-    margin-top: 0;
-    margin-bottom: 0.25rem;
+    margin: 0;
   }
   .entry-count {
     font-family: var(--font-heading);

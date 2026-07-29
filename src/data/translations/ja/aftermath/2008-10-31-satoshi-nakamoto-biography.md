@@ -146,8 +146,6 @@ Bitcoin v0.1 は Windows 上で Microsoft Visual C++ 6.0 SP6 と MinGW GCC 3.4.5
 
 ビットコイン最初の数か月に、単一の協調的なパターンでマイニングされたビットコインは約 110 万 BTC で、「[Patoshi パターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)」と呼ばれ、サトシのものと考えられている。これらのコインは一度も動いていない。
 
----
-
 ## 編集分析
 - **配布形式と開発環境**: `.rar` パッケージング、バージョン管理の不在、ハンガリアン記法による変数命名、OpenSSL 依存、[ダン・カミンスキーによる 2011 年セキュリティ監査](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)、そして「先見的セキュリティと形式ばらないプロセスの区別」は [v0.1 配布形式と開発環境の異例性についての分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies/)で扱う
 - **自己言及**: サトシが自分自身に言及した発言（識別子主張、設計過程の自己開示、運用状態、能力の自己評価、撤退表明）はすべて[自己言及分析](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)で網羅する

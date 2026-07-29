@@ -57,6 +57,13 @@
   --color-link: #2563eb;
   --color-link-hover: #1d4ed8;
   --color-border: rgba(15, 20, 25, 0.08);
+  /* Light-mode-only boost for the two consumers that read too faint
+     against a white background: heading underlines and the entry-card
+     list divider. Dark mode's --color-border already reads clearly
+     against the navy bg, so --color-border-strong == --color-border
+     there (see the two dark blocks below) — this token is a light-mode
+     fix, not a general "stronger border" concept. */
+  --color-border-strong: rgba(15, 20, 25, 0.16);
   --color-source-bg: #f4f6f9;
   /* Satoshi accent — deliberately distinct from `--color-accent` (navy)
      so Satoshi messages on thread pages, Satoshi-authored entry cards,
@@ -257,6 +264,9 @@
     --color-link: #7ab8ff;
     --color-link-hover: #a5cdff;
     --color-border: rgba(232, 234, 238, 0.10);
+    /* Dark mode already reads clearly against the navy bg — no boost
+       needed, so this equals --color-border here (see :root above). */
+    --color-border-strong: var(--color-border);
     --color-source-bg: #1a212c;
     /* Amber-400 — light, warm, distinct from `--color-accent`
        (`#7aa3d4` lighter-navy) so the Satoshi accent stripe and
@@ -340,6 +350,9 @@
   --color-link: #7ab8ff;
   --color-link-hover: #a5cdff;
   --color-border: rgba(232, 234, 238, 0.10);
+  /* Same as the @media dark block above — no light-mode-only boost
+     needed here either. */
+  --color-border-strong: var(--color-border);
   --color-source-bg: #1a212c;
   /* Amber-400 — kept identical to the @media variant above so
      explicit data-mode="dark" matches OS dark exactly. See the
@@ -448,7 +461,19 @@ h4 { font-size: 1.1rem; font-weight: 600; }
 .entry-content h4 {
   margin-top: 2em;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+/* Markdown body h2s get the same bottom-border treatment as h4 above,
+   for the same reason (section headings read as underlined). Scoped
+   to .entry-content/.biography-content — NOT the bare h2 rule — so
+   .section-header h2 (top page) keeps its own container-level border
+   (the line has to reach a trailing "view all" link, not just the
+   h2 text) and doesn't end up with two lines stacked on one heading. */
+.entry-content h2,
+.biography-content h2 {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--color-border-strong);
 }
 
 /* Breathing room above the body, on the page-level body wrappers so it
@@ -775,7 +800,13 @@ blockquote > .quote-speaker-tag:first-child {
    keep their own scoped versions. The search card adds exactly one
    extra element class — `.ft-snippet`, the highlighted match excerpt. */
 .entry-card {
-  border-bottom: 1px solid var(--color-border);
+  /* Lighter than --color-border-strong (used as-is for heading
+     underlines): a list of dozens of cards needs a quieter divider
+     than a one-off section boundary, so it reads as rhythm rather
+     than a row of hard rules. Based on -strong (not plain
+     --color-border) so the light-mode boost carries through
+     proportionally instead of nearly disappearing under the 40% mix. */
+  border-bottom: 1px solid color-mix(in srgb, var(--color-border-strong) 40%, transparent);
   padding: 1.25rem 0;
 }
 .entry-card:last-child { border-bottom: none; }
@@ -1151,6 +1182,14 @@ th {
    "intentional figure block" not "misaligned column". */
 .figure-outer {
   margin-block: 1.5em;
+}
+/* A table/mermaid/chart that ends a section with no closing paragraph
+   sits directly above the next h2 — whose own bottom border (added
+   above) would otherwise land ~1.5em under the figure's own border,
+   reading as two echoing lines around the heading. Widen the gap only
+   in that specific adjacency; sections that end in prose are unaffected. */
+.entry-content .figure-outer:has(+ h2) {
+  margin-bottom: 2.5em;
 }
 @media (min-width: 1500px) {
   .figure-outer {

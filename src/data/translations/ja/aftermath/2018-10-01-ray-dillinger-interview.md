@@ -40,8 +40,6 @@ translationStatus: complete
 
 *ビットコインホワイトペーパー 10 周年に合わせて公開。*
 
----
-
 ## コードレビューについて
 
 [サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は証明チェーンのコードを検査のために俺に送ってきた。堅牢だと判断した。

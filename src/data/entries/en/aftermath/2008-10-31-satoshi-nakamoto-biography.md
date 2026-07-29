@@ -145,8 +145,6 @@ In a December 2010 email to Andresen, he described Andresen as "technically much
 
 Approximately 1.1 million BTC were mined under a single coordinated pattern in Bitcoin's first months — the [Patoshi pattern](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/), attributed to Satoshi. None of those coins have moved.
 
----
-
 ## Editorial readings
 - **Distribution and tooling**: the `.rar` packaging, absence of version control, Hungarian-notation variable naming, OpenSSL dependency, the [Dan Kaminsky 2011 security audit](/BitcoinArchive/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/), and the foresighted-security-vs-informal-process distinction are examined in [the v0.1 distribution and tooling anomalies analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies/).
 - **Self-references**: every documented statement in which Satoshi referred to himself — identity claims, design-process disclosures, operational state, expertise self-assessments, departure statements — is inventoried in [the self-references analysis](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/).

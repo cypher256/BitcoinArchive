@@ -43,8 +43,6 @@ translationStatus: complete
 - インセンティブの節がより短く、トランザクション手数料の節が存在しない
 - セクションの順序がわずかに異なる
 
----
-
 <!-- speaker: Satoshi Nakamoto -->
 ## ビットコイン：ピアツーピア電子キャッシュシステム
 

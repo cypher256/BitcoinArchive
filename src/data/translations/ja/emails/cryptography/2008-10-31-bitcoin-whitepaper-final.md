@@ -55,8 +55,6 @@ translationStatus: complete
 
 *[編者注：ビットコインがはじめての方は、先に[ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)を読むとよい ― 8 章 30 用語を図で解説。ホワイトペーパーは読者が UTXO・コインベーストランザクション・プルーフ・オブ・ワークを既知としている前提で書かれている。]*
 
----
-
 <!-- speaker: Satoshi Nakamoto -->
 ## ビットコイン：ピアツーピア電子キャッシュシステム
 
