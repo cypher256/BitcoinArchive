@@ -53,7 +53,9 @@ translationStatus: complete
 
 ![暗い画面の中央に、ハンガリー記法のコードが並ぶ 1990 年代ふうの Windows 統合開発環境ウィンドウが浮かび、背後にはうっすらとしたペンギンのシルエット。下段には 2009 年のリリース日から長い空白期間を経て、後年の引き継ぎ日へと続くタイムライン](/BitcoinArchive/images/analysis/2009-01-09-satoshi-windows-development-environment-hero.png)
 
-サトシのメールやフォーラム投稿には Linux 言及が多く、マルチプラットフォームで動く Linux に明るい開発者像にも見えてしまう。だが時系列で読むと別の像が浮かぶ。設計期間とリリース後の初期 7 か月 ― 合計 27 か月 ― にわたり、公開記録には Linux 関与の痕跡が一切ない。 Linux は 2009 年 8 月、マルッティ・マルミの Linux 移植への**対応**として初めて記録に現れる。 16 か月の支援作業を経た 2010 年 12 月、サトシ自身が書面でその隔たりを認める ― ギャビン・アンドレセンは「私よりずっと Linux に長けている」。さらに 2 か月後の最終メールに付いた PGP 署名末尾は `GnuPG v1.4.7 (MingW32) - WinPT 1.2.0` ― Windows 専用ツールチェーン。記録された期間は Windows 専一スタックが一度も置き換わらないまま閉じる。
+サトシのメールやフォーラム投稿には Linux 言及が多く、マルチプラットフォームで動く Linux に明るい開発者像にも見えてしまう。だが時系列で読むと別の像が浮かぶ。設計期間とリリース後の初期 7 か月 ― 合計 27 か月 ― にわたり、公開記録には Linux 関与の痕跡が一切ない。
+
+Linux は 2009 年 8 月、マルッティ・マルミの Linux 移植への**対応**として初めて記録に現れる。 16 か月の支援作業を経た 2010 年 12 月、サトシ自身が書面でその隔たりを認める ― ギャビン・アンドレセンは「私よりずっと Linux に長けている」。さらに 2 か月後の最終メールに付いた PGP 署名末尾は `GnuPG v1.4.7 (MingW32) - WinPT 1.2.0` ― Windows 専用ツールチェーン。記録された期間は Windows 専一スタックが一度も置き換わらないまま閉じる。
 
 本エントリーは公開記録を時期別に整理する。
 
@@ -93,7 +95,9 @@ timeline
 
 ## 2. Phase 1 ― 設計・リリース・初期 (約 27 か月): Linux 痕跡なし
 
-サトシ自身が 2008 年 11 月の [cryptography メーリングリストへの返信](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)で「コーディングしながらこの 1 年半でそれらの細かい詳細をすべて検討してきた」と述べ、後にマルッティ・マルミに宛てた [2009 年 7 月のメール](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/)で「18 か月の開発の後で一息つく必要がある」と書いている。 v0.1 リリース前に自己申告 ~18 か月のコーディング期間が終わるなら、コーディング開始は遅くとも 2007 年半ばに置かれる。サトシ自身は作業順序も記録している ―「すべての問題を解けると確信するためにまず全コードを書く必要があり、その後で論文を書いた」 ([ハル・フィニー宛、 2008 年 11 月 10 日](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/)) ― 論文はコードが実質的に完了した後に書かれたのであり、先に書かれたのではない。後年の「2007 年から」「リリース前に 2 年間の開発」という言い方 ([ハニエツ、 2010-06-18](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-195/2010-06-18-re-transactions-and-scripts-dup-hash160-equalverify-checksig/)、 [ハーン、 2011-01-10](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-secp256k1/)) は、同じリリース前作業をより広い範囲で語ったもの ― 約 2 年の振り返りは、サトシがエディターを開く前に問題を考えていた数か月を足したもの ― であり、コーディングに先行する独立した設計段階を想定するものではない。ここでの Phase 1 の境界は**コーディング**期間と公開リリースを追跡している。自己発言の全タイムラインは[サイファーパンクへの独立到達分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)に集約されている。 v0.1 は 2009 年 1 月 9 日に SourceForge で**Windows 専用** `.rar` アーカイブとして配布される。その後さらに 7 か月、 2009 年 8 月末まで、ビットコインのソースコードはサトシの手元にのみ存在し、連続する `.rar` リリースで配布される。この 27 か月の窓全体で、アーカイブには次のいずれも存在しない:
+サトシ自身が 2008 年 11 月の [cryptography メーリングリストへの返信](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)で「コーディングしながらこの 1 年半でそれらの細かい詳細をすべて検討してきた」と述べ、後にマルッティ・マルミに宛てた [2009 年 7 月のメール](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/)で「18 か月の開発の後で一息つく必要がある」と書いている。 v0.1 リリース前に自己申告 ~18 か月のコーディング期間が終わるなら、コーディング開始は遅くとも 2007 年半ばに置かれる。サトシ自身は作業順序も記録している ―「すべての問題を解けると確信するためにまず全コードを書く必要があり、その後で論文を書いた」 ([ハル・フィニー宛、 2008 年 11 月 10 日](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/)) ― 論文はコードが実質的に完了した後に書かれたのであり、先に書かれたのではない。後年の「2007 年から」「リリース前に 2 年間の開発」という言い方 ([ハニエツ、 2010-06-18](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-195/2010-06-18-re-transactions-and-scripts-dup-hash160-equalverify-checksig/)、 [ハーン、 2011-01-10](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-secp256k1/)) は、同じリリース前作業をより広い範囲で語ったもの ― 約 2 年の振り返りは、サトシがエディターを開く前に問題を考えていた数か月を足したもの ― であり、コーディングに先行する独立した設計段階を想定するものではない。ここでの Phase 1 の境界は**コーディング**期間と公開リリースを追跡している。自己発言の全タイムラインは[サイファーパンクへの独立到達分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)に集約されている。
+
+v0.1 は 2009 年 1 月 9 日に SourceForge で**Windows 専用** `.rar` アーカイブとして配布される。その後さらに 7 か月、 2009 年 8 月末まで、ビットコインのソースコードはサトシの手元にのみ存在し、連続する `.rar` リリースで配布される。この 27 か月の窓全体で、アーカイブには次のいずれも存在しない:
 
 - **サトシのメールに Linux 言及なし。** 日付の付いた最初の Linux タグ付きサトシメールは [2009-08-24 マルミ宛](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-08-24-bitcoin-029/)。これより前に Linux を話題にした記録は浮上していない。
 - **Linux ビルド・移植・ユーザー側コメンタリーなし。** アーカイブ最初の「Linux build」スレッドは 2009 年 10 月末のマルミ宛シリーズ。

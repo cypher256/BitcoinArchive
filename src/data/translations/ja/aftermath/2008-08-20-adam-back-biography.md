@@ -81,11 +81,15 @@ timeline
 ```
 
 ## Hashcash（1997年）
-1997年3月、バックはメールスパムとサービス拒否攻撃に対抗するために設計されたプルーフ・オブ・ワーク・システムである Hashcash を提案した。このシステムは送信者がメール送信前に部分的なハッシュ衝突を計算することを要求し — 計算コストの高い操作 — 大量スパムを経済的に非現実的にした。Hashcash はデジタル通貨や決済システムではなく、純粋に計算コストのメカニズムであった。ビットコインは後にそのプルーフ・オブ・ワーク概念をマイニングとコンセンサスの基盤として採用したが、ビットコインの通貨・決済の設計はサトシ自身のものであった — 最も近い概念的先行はウェイ・ダイの b-money（ホワイトペーパーが引用）と、より緩やかにニック・サボの bit gold（非引用）で、いずれも直接は継承していない。[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)は Hashcash を主要な参考文献の一つとして引用している。
+1997年3月、バックはメールスパムとサービス拒否攻撃に対抗するために設計されたプルーフ・オブ・ワーク・システムである Hashcash を提案した。このシステムは送信者がメール送信前に部分的なハッシュ衝突を計算することを要求し — 計算コストの高い操作 — 大量スパムを経済的に非現実的にした。Hashcash はデジタル通貨や決済システムではなく、純粋に計算コストのメカニズムであった。
+
+ビットコインは後にそのプルーフ・オブ・ワーク概念をマイニングとコンセンサスの基盤として採用したが、ビットコインの通貨・決済の設計はサトシ自身のものであった — 最も近い概念的先行はウェイ・ダイの b-money（ホワイトペーパーが引用）と、より緩やかにニック・サボの bit gold（非引用）で、いずれも直接は継承していない。[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)は Hashcash を主要な参考文献の一つとして引用している。
 
 ## サトシからの最初の連絡
 
-2008 年 8 月のやり取りは 3 日間に渡る: [サトシのバック宛メール](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) (8 月 20 日、引用形式の問い合わせ)、 [バックの返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/) (8 月 21 日、 Hashcash 引用情報と b-money 紹介)、サトシの同日返信での、公開前の設計・コーディング期間中に b-money を知らなかったとの自認 (冒頭引用)、翌日の[サトシのウェイ・ダイ宛メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) (ホワイトペーパー引用のため b-money 公開日を尋ねるもの)。この連鎖は、バックの紹介時点でビットコインの設計がほぼ完了していたことを示し、 [サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の一次資料的根拠となっている。
+2008 年 8 月のやり取りは 3 日間に渡る: [サトシのバック宛メール](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) (8 月 20 日、引用形式の問い合わせ)、 [バックの返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/) (8 月 21 日、 Hashcash 引用情報と b-money 紹介)、サトシの同日返信での、公開前の設計・コーディング期間中に b-money を知らなかったとの自認 (冒頭引用)、翌日の[サトシのウェイ・ダイ宛メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) (ホワイトペーパー引用のため b-money 公開日を尋ねるもの)。
+
+この連鎖は、バックの紹介時点でビットコインの設計がほぼ完了していたことを示し、 [サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の一次資料的根拠となっている。
 
 ## 証言とメールの公開
 バックがサトシとやり取りしたメールは、後に Bitcoin Magazine が公開した — ビットコイン最初期の概念段階を伝える数少ない一次資料の一つだ。2024 年 2 月、バックはロンドンの [COPA 対ライト裁判で宣誓のうえ証言し](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)、サトシとの往復とビットコイン誕生の時系列を語った。

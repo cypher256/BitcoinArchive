@@ -3033,6 +3033,18 @@ the methodology section, and use markdown tables in the comparison
 section. The tools are complementary; the choice is per-shape, not
 per-page.
 
+## Paragraph Length
+
+One paragraph, one idea. A paragraph that has moved on to a second
+claim, event, or comparison gets a break at the point it moved on.
+
+Sentence or character count is a signal for review, not the rule
+itself: five to six sentences in one paragraph often means it is
+carrying more than one idea, but a longer paragraph that stays on one
+idea does not need breaking, and a short one that jumps ideas does.
+Splitting is a structural edit only — insert the break, do not reword
+either side.
+
 ## Language-Specific Guides
 
 - Japanese-specific rules: `STYLE_GUIDE_JA.md`

@@ -110,7 +110,9 @@ The faction labels are post-hoc and not self-identifications. Several actors cro
 
 The launch of [Bitcoin XT 0.11A](/BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/) on August 15, 2015 is the chronological start of the war's public-fork phase. Disagreement on the mailing list and on BitcoinTalk had been building since 2013, but XT was the first production-grade Bitcoin Core fork released as installable binaries with a published activation schedule (BIP 101: 8 MB starting January 2016, doubling every two years to 8 GB by 2036, activation at 75% miner support).
 
-XT briefly attracted around 1,000 nodes in late 2015 but never approached the 75% activation threshold. The same miners and exchanges who had publicly endorsed it withheld actual activation signals. By January 2016, XT node count had collapsed below 30. On January 14, 2016, [Hearn published "The resolution of the Bitcoin experiment"](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) declaring Bitcoin had failed, sold his coins, and exited the ecosystem.
+XT briefly attracted around 1,000 nodes in late 2015 but never approached the 75% activation threshold. The same miners and exchanges who had publicly endorsed it withheld actual activation signals. By January 2016, XT node count had collapsed below 30.
+
+On January 14, 2016, [Hearn published "The resolution of the Bitcoin experiment"](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) declaring Bitcoin had failed, sold his coins, and exited the ecosystem.
 
 Phase 1's lesson: a miner-trigger hard fork (BIP 101) could not pass without endorsement from a coalition that already included the Core developers, the largest exchanges, and a clear majority of the high-economic-weight nodes. The 75% trigger looked like a high bar but turned out to be unreachable because the actors who controlled most of the signalling weight did not want the change.
 
