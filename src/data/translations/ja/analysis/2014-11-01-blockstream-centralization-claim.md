@@ -35,7 +35,7 @@ tags:
 secondarySources:
   - name: "Wikipedia — Lightning Network"
     url: "https://en.wikipedia.org/wiki/Lightning_Network"
-    note: "ライトニングはジョセフ・プーンとサディアス・ドリヤが提案 (2015 年)、主要な実装は 3 つ — LND (Lightning Labs)、Core Lightning (Blockstream)、Eclair (ACINQ)。Blockstream の製品ではない。"
+    note: "ライトニングはジョセフ・プーンとサディアス・ドリヤが提案 (2015 年)。主要な実装は LND (Lightning Labs)、Core Lightning (Blockstream)、Eclair (ACINQ) の 3 つで、Blockstream の製品ではない。"
   - name: "Bitcoin Magazine — Who Funds Bitcoin Core Development?"
     url: "https://bitcoinmagazine.com/technical/who-funds-bitcoin-core-development-how-the-industry-supports-bitcoin-s-reference-client-1459967859"
     note: "Core の資金源についての業界調査。2017 年以降、資金基盤は Blockstream をはるかに超えて広がった。"
@@ -50,7 +50,7 @@ secondarySources:
     note: "陣営の外側から、戦争が実際には何をめぐるものだったかを振り返った回顧。"
   - name: "Stephan Kinsella — Bier's The Blocksize War vs. Ver's Hijacking Bitcoin"
     url: "https://stephankinsella.com/2025/04/blocksize-war-vs-hijacking-bitcoin/"
-    note: "二冊の書籍版の対比 — ジョナサン・ビア (小ブロック側) とロジャー・ヴァー (拡大派、占拠批判を最も強く述べた側)。"
+    note: "ジョナサン・ビア (小ブロック側) とロジャー・ヴァー (拡大派、占拠批判を最も強く述べた側)、二冊の書籍版の対比。"
 relatedEntries:
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment
@@ -90,7 +90,7 @@ flowchart TB
   A --> B --> C --> D --> E
 ```
 
-ヴァーによれば、小ブロック派はセカンドレイヤーで稼ぐために Blockstream を設立し、基盤層は据え置くべきだと唱えて、そのセカンドレイヤーを欠かせないものにした。さらに踏み込めば、主張はこうなる — Bitcoin Core とどこかの政府、そして Blockstream が手を組み、ネットワークをわざと止めるために 1 MB の上限を保ちつづけた。ひと続きの因果だから、つなぎ目をひとつずつ確かめられる。
+ヴァーによれば、小ブロック派はセカンドレイヤーで稼ぐために Blockstream を設立し、基盤層は据え置くべきだと唱えて、そのセカンドレイヤーを欠かせないものにした。さらに踏み込めば、主張はこうだ。Bitcoin Core とどこかの政府、そして Blockstream が手を組み、ネットワークをわざと止めるために 1 MB の上限を保ちつづけた。ひと続きの因果だから、つなぎ目をひとつずつ確かめられる。
 
 ## 2. 記録が裏づける部分
 

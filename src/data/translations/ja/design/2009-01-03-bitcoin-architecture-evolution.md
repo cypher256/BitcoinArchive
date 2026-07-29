@@ -36,7 +36,7 @@ translationStatus: complete
 
 **範囲。** すべての比較は 2 つの固定参照点を使用する: サトシの v0.1 リリース（2009 年 1 月 3 日）と現行の Bitcoin Core v27 以降基準。中間バージョンは構造的変更を導入した場合にのみ言及する。
 
-本ページは社会的・経済的層での設計のずれは扱わない — それらは[設計意図と現実の分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)で分析される。以下の各節には分割図（左が v0.1、右が v27 以降）と比較表があり、L1 の番号付けに対応する。
+本ページは社会的・経済的層での設計のずれは扱わない。それらは[設計意図と現実の分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)で分析される。以下の各節には分割図（左が v0.1、右が v27 以降）と比較表があり、L1 の番号付けに対応する。
 
 ## 1. システム全体のアーキテクチャー
 
@@ -428,9 +428,9 @@ timeline
 
 範囲外:
 
-- **社会的・経済的なずれ**（マイニングの集中化、カストディー、ガバナンス、スケーリング — [設計意図と現実の分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)を参照）
-- **セキュリティーモデル**（脅威分析、51% 攻撃の経済学 — [L2 #11 — セキュリティーモデル](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-security-model/)を参照）
-- **エコシステム**（Lightning、サイドチェーン、Ordinals — [L2 #10 — エコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)を参照）
+- **社会的・経済的なずれ**（マイニングの集中化、カストディー、ガバナンス、スケーリング。[設計意図と現実の分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)を参照）
+- **セキュリティーモデル**（脅威分析、51% 攻撃の経済学。[L2 #11 — セキュリティーモデル](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-security-model/)を参照）
+- **エコシステム**（Lightning、サイドチェーン、Ordinals。[L2 #10 — エコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)を参照）
 - **サトシのコーディングスタイル**（[サトシのコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)と [Windows 開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)エントリーを参照）
 
 [Windows 専一の開発環境の分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)は、同じ漂流をツールチェーンの側から読んでいる。

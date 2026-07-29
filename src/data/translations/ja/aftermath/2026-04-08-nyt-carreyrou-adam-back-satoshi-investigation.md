@@ -67,7 +67,7 @@ translationStatus: complete
 
 ![重なり合う 2 枚のタイプ打ち文書に一致箇所を示す丸印が付き、罫線入りのメモボードの上に虫眼鏡が浮かぶ。薄暗い部屋の小さな机を挟んで顔のない 2 つのシルエットが向かい合い、手前には空の椅子のそばに小さな仮面が置かれている。](/BitcoinArchive/images/analysis/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation-hero.png)
 
-2026 年 4 月 8 日、ジョン・カレイロウ — Theranos 事件を暴いたピューリッツァー賞受賞ジャーナリスト — は、約 1 万語のニューヨーク・タイムズ調査記事「My Quest to Solve Bitcoin's Great Mystery」で、Blockstream の CEO で Hashcash の発明者である[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の仮名の中の人物として最も可能性が高いと結論づけた。バックは正体を否定した。
+2026 年 4 月 8 日、Theranos 事件を暴いたピューリッツァー賞受賞ジャーナリストのジョン・カレイロウは、約 1 万語のニューヨーク・タイムズ調査記事「My Quest to Solve Bitcoin's Great Mystery」で、Blockstream の CEO で Hashcash の発明者である[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の仮名の中の人物として最も可能性が高いと結論づけた。バックは正体を否定した。
 
 ## 調査の方法論
 
@@ -80,13 +80,13 @@ translationStatus: complete
 - サトシの文章中の非標準ハイフン使用 325 件を目録化したところ、バックの文章はそのうち 67 件で同じ誤りを示しており、次点の候補を大きく上回った。
 - 公表された癖の目録はさらに広い。両者とも「backup」「bugfix」を 1 語で、「half way」「down side」を 2 語で書き、「cheque」と「check」、「e-mail」と「email」の表記を行き来し、「partial pre-image」「burning the money」、ハイフン入りの「proof-of-work」という同じ特徴的な言い回しを使っていた。記事によれば、バックには「it's」と「its」を混同し、文末に「also」を置く癖もあった。
 
-委託先の言語学者のフロリアン・カフィエロによる独立した文体計量分析は、12 名の候補のうちバックを最上位に位置づけたが、カフィエロ自身は結果を不確定と評した — [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)がバックとほぼ並ぶ位置を占めた。
+委託先の言語学者のフロリアン・カフィエロによる独立した文体計量分析は、12 名の候補のうちバックを最上位に位置づけたが、カフィエロ自身は結果を不確定と評している。[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)がバックとほぼ並ぶ位置を占めていたためだ。
 
 文体計量の外側でも、調査は状況証拠となる時系列上の主張を積み上げている：
 
 - **1997 年の電子キャッシュ構想。** 1997 年 4 月 30 日、バックはサイファーパンクメーリングリストで、銀行システムから「完全に切り離された」電子キャッシュシステムを提案した。支払人と受取人のプライバシー、ネットワーク化されたコンピューターへの分散、組み込みの希少性、個人にも銀行にも信頼を置かない設計という 4 つの属性に、2 日後には 5 つ目として公開検証可能なプロトコルが加わる。記事はこの 5 つすべてを後のビットコインの設計に対応づけている。
-- **「目立つ空白」。** バックは何年もサイファーパンクのデジタルキャッシュ議論に従事していたが、ビットコインが告知された 2008 年末頃に投稿が静かになり、サトシが活動を続けた約 2 年半のあいだ沈黙が続いた。カレイロウは NPR でこの符合を漫画の比喩で要約した —「ブルース・ウェインとバットマンのようなものだ。バットマンが現れるとき、ブルース・ウェインはどこにもいない」。
-- **鏡写しの復帰。** [サトシの最後の既知のメール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)は 2011 年 4 月 26 日付。その 6 週間後の 2011 年 6 月、バックは同じ暗号学メーリングリスト上でビットコインについて初めて公に発言した。2013 年 4 月 17 日には BitcoinTalk に参加し — [セルジオ・ラーナーの Patoshi 分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)がサトシ初期マイニング由来の資産額を公の数字にした直後にあたる — 2 週間のうちに Wikipedia へサトシ・ナカモト単独ページの復元を要求していた。
+- **「目立つ空白」。** バックは何年もサイファーパンクのデジタルキャッシュ議論に従事していたが、ビットコインが告知された 2008 年末頃に投稿が静かになり、サトシが活動を続けた約 2 年半のあいだ沈黙が続いた。カレイロウは NPR で、この符合を漫画になぞらえてこう述べている：「ブルース・ウェインとバットマンのようなものだ。バットマンが現れるとき、ブルース・ウェインはどこにもいない」。
+- **鏡写しの復帰。** [サトシの最後の既知のメール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)は 2011 年 4 月 26 日付。その 6 週間後の 2011 年 6 月、バックは同じ暗号学メーリングリスト上でビットコインについて初めて公に発言した。2013 年 4 月 17 日には BitcoinTalk に参加し、2 週間のうちに Wikipedia へサトシ・ナカモト単独ページの復元を要求していた。これは、[セルジオ・ラーナーの Patoshi 分析](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)がサトシ初期マイニング由来の資産額を公の数字にした直後にあたる。
 - **HBO の場面。** カレイロウの記述は、バックに注目した端緒の一つを [2024 年の HBO ドキュメンタリー「Money Electric」](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)の一場面に求めている：自分の名前が挙がった途端、バックは身を強張らせ、サトシであることを強く否定し、会話をオフレコにするよう求めた。
 
 ## エルサルバドルでのインタビュー
@@ -108,12 +108,12 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > 「それにしても、ずいぶん喋った方だと思うが、つまり…その、言葉がうまいと言うつもりはないが、実際、あのリストでは相当お喋りに書き込んでいたからね」
 
-カレイロウはこの返答を、バックがサトシのメーリングリスト上の文章を自分のものとして語った瞬間と聞いた — 記事の言葉を借りれば、バックは数秒のあいだ「仮面を落とし、サトシになった」。数日後にメールで問われたバックは、うっかり口を滑らせたのではないと否定した：
+カレイロウはこの返答を、バックがサトシのメーリングリスト上の文章を自分のものとして語った瞬間と聞いた。記事の言葉を借りれば、バックは数秒のあいだ「仮面を落とし、サトシになった」。数日後にメールで問われたバックは、うっかり口を滑らせたのではないと否定した：
 
 <!-- audit:quote-skip -->
 > 「技術畑の人間は文章よりもコードで考えを表現する方が楽だと感じることが多い、という一般的な観察に、会話の流れで応じただけだ」
 
-記事はこのやり取りで締めくくられる — カレイロウは、この人物で間違いないという心証に「なお残っていた疑い」がこれで消えたと書き、公開 5 日後の NPR インタビューでは自らの確信を「99 から 100% の間」と述べた。挙動の読みも口滑りの読みも、バックが意味を争う発言に対する記者側の解釈である。
+記事はこのやり取りで締めくくられる。カレイロウは、この人物で間違いないという心証に「なお残っていた疑い」がこれで消えたと書き、公開 5 日後の NPR インタビューでは自らの確信を「99 から 100% の間」と述べた。挙動の読みも口滑りの読みも、バックが意味を争う発言に対する記者側の解釈である。
 
 ## バックの応答
 
@@ -141,15 +141,15 @@ translationStatus: complete
 
 本アーカイブは NYT の主張に直接関わる一次資料を保有している：
 
-- サトシとバックの間の [2008 年 8 月 20〜22 日のメール通信](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) — [8 月 21 日のバックがサトシにウェイ・ダイの b-money を見るよう示唆した返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/)、[8 月 22 日のサトシの返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)で「b-money は読んだことがなかった」と述べ同日付で[ウェイ・ダイにメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送ったこと。
-- バックの [2024 年 2 月の COPA 対ライト裁判での証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) — 上記メールを証人証拠として提出し、宣誓のもとサトシを別人として扱った。
-- [ウェイ・ダイの 2014 年回想](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)（AALWA スレッド）— サトシは開発期間中、可視のサイファーパンクコミュニティで「以前から積極的に活動していた人物ではない」と論じている。これは 2007〜2008 年にサイファーパンクメーリングリストで可視に活動していた候補に対する反証として作用するが、まさにこの母集団が NYT の文体計量分析の選択対象である。
+- サトシとバックの間の [2008 年 8 月 20〜22 日のメール通信](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)では、[8 月 21 日のバックがサトシにウェイ・ダイの b-money を見るよう示唆した返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/)を受け、[8 月 22 日のサトシの返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)で「b-money は読んだことがなかった」と述べ、同日付で[ウェイ・ダイにメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)を送っている。
+- バックの [2024 年 2 月の COPA 対ライト裁判での証言](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)では、上記メールを証人証拠として提出し、宣誓のもとサトシを別人として扱った。
+- [ウェイ・ダイの 2014 年回想](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)（AALWA スレッド）は、サトシが開発期間中、可視のサイファーパンクコミュニティで「以前から積極的に活動していた人物ではない」と論じている。これは 2007〜2008 年にサイファーパンクメーリングリストで可視に活動していた候補に対する反証として作用するが、まさにこの母集団が NYT の文体計量分析の選択対象である。
 
 ## 批判的評価
 
-ビットコイン関連メディアでの報道は、特定への懐疑が大勢を占めた。Fortune は調査が「サトシを発見したかもしれない」と表現し、断定を避けた。Unchained はビットコインコミュニティの大半がバックの否定に同意していると報じた。方法論はビットコインコミュニティの応答で「示唆的だが決定的ではない」と広く位置づけられた — カフィエロ自身が結果を「不確定」と評し、フィニーがほぼ並んだという事実が大きい。
+ビットコイン関連メディアでの報道は、特定への懐疑が大勢を占めた。Fortune は調査が「サトシを発見したかもしれない」と表現し、断定を避けた。Unchained はビットコインコミュニティの大半がバックの否定に同意していると報じた。方法論はビットコインコミュニティの応答で「示唆的だが決定的ではない」と広く位置づけられた。カフィエロ自身が結果を「不確定」と評し、フィニーがほぼ並んだという事実が大きい。
 
-*[編者注：カレイロウの調査は、主流メディアにおいて公開された文体計量ベースのサトシ特定のうち、最も目立つもの。2014 年の Newsweek による[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の特定は名前一致と物理的状況証拠に依拠していた。2024 年の [HBO ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)による[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)の特定は、単一のフォーラム投稿のタイミング論に依拠していた。カレイロウの方法論 — 定義された母集団に対する文体計量比較と独立した言語学的レビュー — は構造的にはより厳密だが、本人が委託したレビュアー自身が「不確定」と評している点は本記事の固有の特徴である。]*
+*[編者注：カレイロウの調査は、主流メディアにおいて公開された文体計量ベースのサトシ特定のうち、最も目立つもの。2014 年の Newsweek による[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の特定は名前一致と物理的状況証拠に依拠していた。2024 年の [HBO ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)による[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)の特定は、単一のフォーラム投稿のタイミング論に依拠していた。定義された母集団に対する文体計量比較と独立した言語学的レビューというカレイロウの方法論は構造的にはより厳密だが、本人が委託したレビュアー自身が「不確定」と評している点は本記事の固有の特徴である。]*
 
 カレイロウの調査は、 2024-2026 年の主要メディア／ドキュメンタリーによるサトシ特定 4 件の一角を占める。 [2024 年の HBO ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)はピーター・トッドをフォーラム投稿のタイミング論で名指しした。 [サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー (2026 年 4 月)](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)はハル・フィニーとレン・サッサマンを共作者として提示した。 [サトシ政府機関説 ― Murphy 対 DHS FOIA 訴訟 (2025 年 4 月)](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)は同じ問いを政府文書開示の経路で追っている。 4 件のうち暗号学的確認に到達したものは無い。
 

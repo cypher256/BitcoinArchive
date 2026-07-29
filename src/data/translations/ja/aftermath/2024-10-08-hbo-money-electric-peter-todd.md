@@ -62,18 +62,18 @@ translationStatus: complete
 ## フォーラム投稿説
 
 <!-- speaker: narrator -->
-ドキュメンタリーの中心的な証拠は、2010年12月の BitcoinTalk でのやり取りだった。サトシがトランザクション置換——後に Replace-by-Fee（RBF）として知られる概念——を説明した。その約 1時間半後、トッド（ユーザー名[「retep」](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/)、Peter の逆綴り）が技術的な指摘で返信した。
+ドキュメンタリーの中心的な証拠は、2010年12月の BitcoinTalk でのやり取りだった。サトシがトランザクション置換の概念を説明した。これは後に Replace-by-Fee（RBF）として知られるようになる。その約 1時間半後、トッド（ユーザー名[「retep」](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/)、Peter の逆綴り）が技術的な指摘で返信した。
 
 <!-- quote: q1 -->
 > 「もちろん、正確に言えば、二つ目のトランザクションに手数料がある場合、入力と出力は*正確には*一致しない」
 
 <!-- speaker: narrator -->
-これはトッドの BitcoinTalk での 2回目の投稿で、登録からわずか 3日後だった。ホーバックは、トッドがサトシのアカウントではなく自分のアカウントから誤って投稿した——つまり返信ではなくサトシの投稿の続きだった——と主張した。両方のアカウントはその後沈黙し、[サトシの最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)は 2日後の 12月12日だった。
+これはトッドの BitcoinTalk での 2回目の投稿で、登録からわずか 3日後だった。ホーバックは、トッドがサトシのアカウントではなく自分のアカウントから誤って投稿した、つまり返信ではなくサトシの投稿の続きだったのだと主張した。両方のアカウントはその後沈黙し、[サトシの最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)は 2日後の 12月12日だった。
 
 ## RBF とのつながり
 
 <!-- speaker: narrator -->
-ドキュメンタリーは、このやり取りからトッドが後に [BIP 125](/BitcoinArchive/ja/entries/bip/2015-11-03-bip-0125/)（2015年）で Replace-by-Fee を正式化した事実への線を引き、トッドはサトシが始めたことを完成させた——同一人物だから——と論じた。ホーバックはまた、トッドが以前 RBF パッチを別名義で提出していたことにも言及し、異なる正体で活動するパターンがあると示唆した。
+ドキュメンタリーは、このやり取りからトッドが後に [BIP 125](/BitcoinArchive/ja/entries/bip/2015-11-03-bip-0125/)（2015年）で Replace-by-Fee を正式化した事実への線を引き、同一人物だからこそ、トッドはサトシが始めたことを完成させたのだと論じた。ホーバックはまた、トッドが以前 RBF パッチを別名義で提出していたことにも言及し、異なる正体で活動するパターンがあると示唆した。
 
 ## その他の状況証拠
 
@@ -97,7 +97,7 @@ translationStatus: complete
 > 「ばかばかしい。だが、そう言いたいのなら、そうだ、私がサトシだ」
 
 <!-- speaker: narrator -->
-トッドは皮肉と怒りをもって主張を退けた。ドキュメンタリーを「無責任だ」と呼び、推定 700 億ドルのビットコインの保有者として名指しされることは身の安全を脅かすと述べた。トッドは、自分がビットコインに取り組み始めたのは 2014年——ナカモトの消失から 6年後——だと主張した。
+トッドは皮肉と怒りをもって主張を退けた。ドキュメンタリーを「無責任だ」と呼び、推定 700 億ドルのビットコインの保有者として名指しされることは身の安全を脅かすと述べた。トッドは、自分がビットコインに取り組み始めたのはナカモトの消失から 6年後の 2014年だと主張した。
 
 ## 批判的な評価
 
@@ -110,9 +110,9 @@ translationStatus: complete
 このドキュメンタリーは、ホーバックにとって匿名のインターネット上の人物を追跡する 2 作目の調査だった。1 作目の「Q: Into the Storm」（2021 年、QAnon 運動を追ったシリーズ）は概ね好評だったが、「Money Electric」はビットコインコミュニティと主流メディアの双方から否定的に受け止められた。
 
 <!-- speaker: narrator -->
-本作は、 2024 年以降に相次いだ主要メディアによるサトシ特定の波の先頭に位置する。続く流れは 3 件 ― [2026 年ニューヨーク・タイムズのカレイロウ調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)はアダム・バックを文体計量で名指しした。 [サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)はハル・フィニーとレン・サッサマンを共作者として提示した。 [サトシ政府機関説 ― Murphy 対 DHS FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)は DHS 捜査官の 2019 年「ビットコイン創設者 4 名と面談」発言の記録開示を求めるもの。どれも根拠の経路は別々であり、暗号学的確認は得られていない。
+本作は、 2024 年以降に相次いだ主要メディアによるサトシ特定の波の先頭に位置する。続く流れは次の 3 件である。 [2026 年ニューヨーク・タイムズのカレイロウ調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)はアダム・バックを文体計量で名指しした。 [サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)はハル・フィニーとレン・サッサマンを共作者として提示した。 [サトシ政府機関説 ― Murphy 対 DHS FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)は DHS 捜査官の 2019 年「ビットコイン創設者 4 名と面談」発言の記録開示を求めるもの。どれも根拠の経路は別々であり、暗号学的確認は得られていない。
 
 <!-- speaker: narrator -->
 トッド＝サトシ正体仮説そのものの分析的な扱い（ドキュメンタリーが提示した根拠を、トッドの年齢・OCAD 在学期間・2012 年以前のサイファーパンク参加記録・文体変遷・開発活動タイムラインに照らして検証する作業）については、[ピーター・トッド＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)を参照。
 
-映画が依拠する 2010 年 12 月のスレッドを補う隣接記録が二つある。 [トッドの BitcoinTalk 初投稿](/BitcoinArchive/ja/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/) — サトシへの返信の 3 日前に登録された「retep」名義の Diaspora 招待リクエスト — はドキュメンタリーが依拠するアカウントの挙動を記録し、 [BIP 125 Replace-by-Fee の記事](/BitcoinArchive/ja/entries/aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee/)は、映画がトッドによるサトシ設計の完成と見なす 2015 年の正式化を扱う。
+映画が依拠する 2010 年 12 月のスレッドを補う隣接記録が二つある。 [トッドの BitcoinTalk 初投稿](/BitcoinArchive/ja/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/)は、サトシへの返信の 3 日前に登録された「retep」名義の Diaspora 招待リクエストで、ドキュメンタリーが依拠するアカウントの挙動を記録する。 [BIP 125 Replace-by-Fee の記事](/BitcoinArchive/ja/entries/aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee/)は、映画がトッドによるサトシ設計の完成と見なす 2015 年の正式化を扱う。

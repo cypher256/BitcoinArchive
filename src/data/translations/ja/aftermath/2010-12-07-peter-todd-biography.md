@@ -56,11 +56,11 @@ translationStatus: complete
 
 ![濃紺の背景に顔のないシルエットの胸像が配置され、掲示板の初期ハンドルネームが逆さ綴りで本名に変わる様子を示すカード、手数料の低いトランザクションがより高い手数料のものに置き換わる図、2010 年から 2024 年までを結ぶ横向きの年表、そして文書が封印を経てブロックチェーン証明へとつながる南京錠アイコンが並んでいる。](/BitcoinArchive/images/analysis/2010-12-07-peter-todd-biography-hero.png)
 
-2010 年 12 月 7 日、BitcoinTalk に「retep」という名前の新しいアカウントが登録された。3 日後、このアカウントの 2 番目の投稿は[サトシ・ナカモトのスレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/) —— トランザクション置換手数料に関するもの —— に返信した:
+2010 年 12 月 7 日、BitcoinTalk に「retep」という名前の新しいアカウントが登録された。3 日後、このアカウントの 2 番目の投稿は、トランザクション置換手数料に関する[サトシ・ナカモトのスレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/)に返信した:
 
 > 「もちろん、正確に言えば、二つ目のトランザクションに手数料がある場合、入力と出力は*正確には*一致しない」
 
-2 日後、[サトシは最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)を行って沈黙した。数年後、このアカウントのユーザー名は Peter Todd に変更された。Bitcoin Core 開発者のグレゴリー・マクスウェルは [Hacker News でこう書いている](https://news.ycombinator.com/item?id=41784567) —— 「retep が peter の逆綴りだと気づくのに 10 年近くかかった」。
+2 日後、[サトシは最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)を行って沈黙した。数年後、このアカウントのユーザー名は Peter Todd に変更された。Bitcoin Core 開発者のグレゴリー・マクスウェルは [Hacker News](https://news.ycombinator.com/item?id=41784567) で「retep が peter の逆綴りだと気づくのに 10 年近くかかった」と書いている。
 
 2024 年 10 月、HBO のドキュメンタリー[『Money Electric: The Bitcoin Mystery』](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)はトッドをサトシ・ナカモトの正体候補として名指しし、2010 年 12 月の返信を証拠として挙げた。放送当日の CoinDesk への取材でトッドは映画製作者カレン・ホーバックの論法を「苦し紛れのこじつけだ」と評しつつ「もちろん、私はサトシではない」と明確に否定した。ドキュメンタリー本編でホーバックから問われた際は皮肉で「ばかばかしい。だが、そう言いたいのなら、そうだ、私がサトシだ」と返している。トッドは作品を無責任な主張として退けている。
 
@@ -92,7 +92,7 @@ timeline
 
 ## Bitcoin Core への貢献
 
-2012 年 4 月以降、トッドの Bitcoin Core での仕事は、プロトコルの中でも要件をユーザーではなく攻撃者が決める領域 —— トランザクションポリシー、トランザクション置換、ネットワークの耐障害性 —— に集中していた。コミット数では、リポジトリで 11 番目に多い貢献者になった。
+2012 年 4 月以降、トッドの Bitcoin Core での仕事は、プロトコルの中でも要件をユーザーではなく攻撃者が決める領域、すなわちトランザクションポリシー、トランザクション置換、ネットワークの耐障害性に集中していた。コミット数では、リポジトリで 11 番目に多い貢献者になった。
 
 ## BIP 65: OP_CHECKLOCKTIMEVERIFY（2014年10月）
 トッドは [BIP 65](/BitcoinArchive/ja/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/) を提案し、トランザクション出力を指定された将来の時点まで使用不能にする新しいオペコードを導入した。ソフトフォークとしてデプロイされ、ペイメントチャネルおよび Lightning Network の構成要素となった。

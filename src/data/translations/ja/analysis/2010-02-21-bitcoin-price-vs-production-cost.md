@@ -110,7 +110,7 @@ quotes:
 
 ![電気料金の明細と計算機を描いた左側と、マイニング機器と右肩上がりの価格グラフを描いた右側を、中央の均衡マークでつないだ二分割インフォグラフィック](/BitcoinArchive/images/analysis/2010-02-21-bitcoin-price-vs-production-cost-hero.png)
 
-2009 年 10 月 5 日、ビットコインに初めて付いた価格は、市場で発見されたものではなかった — [電気代から計算されたもの](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/)だった。それから 16 年、マイニングコストと市場価格はいまも近い距離で連動し、「生産コスト」はビットコイン市況解説の定番であり続けている。自然に浮かぶのは、どちらが先かという問いだ。マイニングのコストが価格を支えているのか、それとも価格がコストを従えているのか。アーカイブの記録には、その実践（2009 年、コストから導かれた価格）と理論（サトシによる 2010 年 2 月の均衡論 — 方向の逆転という予言を含む）の両方が残っている。本エントリーはその記録と、後年それを検証した研究を整理する。
+2009 年 10 月 5 日、ビットコインに初めて付いた価格は、市場で発見されたものではなく、[電気代から計算されたもの](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/)だった。それから 16 年、マイニングコストと市場価格はいまも近い距離で連動し、「生産コスト」はビットコイン市況解説の定番であり続けている。自然に浮かぶのは、どちらが先かという問いだ。マイニングのコストが価格を支えているのか、それとも価格がコストを従えているのか。アーカイブの記録には、その実践（2009 年、コストから導かれた価格）と理論（サトシによる 2010 年 2 月の均衡論。方向の逆転という予言を含む）の両方が残っている。本エントリーはその記録と、後年それを検証した研究を整理する。
 
 ```mermaid
 timeline
@@ -136,7 +136,7 @@ timeline
 
 ## 1. 市場なしの価格付け — 2009 年
 
-[マルッティ・マルミが 2009 年 7 月に最初の取引所サービスを提案した](/BitcoinArchive/ja/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/)とき、サトシの助言は、純粋なオークションではなく生産コストを裏付けとして価格を決めることだった。プロジェクトサイトの FAQ も同じ関係を述べており — [翌 2010 年 2 月、BitcoinTalk 上でサトシ本人に向けて引用し返される](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-57/2010-02-17-the-current-bitcoin-economic-model-doesnt-work/)ことになる — しかも因果の向きは、すでに価値からコストへ向いていた。
+[マルッティ・マルミが 2009 年 7 月に最初の取引所サービスを提案した](/BitcoinArchive/ja/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/)とき、サトシの助言は、純粋なオークションではなく生産コストを裏付けとして価格を決めることだった。プロジェクトサイトの FAQ も同じ関係を述べており、その一節は[翌 2010 年 2 月、BitcoinTalk 上でサトシ本人に向けて引用し返される](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-57/2010-02-17-the-current-bitcoin-economic-model-doesnt-work/)ことになる。しかも因果の向きは、すでに価値からコストへ向いていた。
 
 <!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
@@ -144,7 +144,7 @@ timeline
 
 [NewLibertyStandard の 2009 年 10 月 5 日の為替レート](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/)は、同じ原理を独立に適用したものだった。1 ドル = 1,309.03 BTC、すなわち 1 ドルをマイニング用コンピューターの電気代で割った数字である。1 週間後、この推定は最初の市場の試験を受ける — [マルミが 5,050 BTC を 5.02 ドルで売却し](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)、1 コインあたり約 0.00099 ドル。コスト式の 0.000764 ドルより約 3 割高い水準だった。板もない価格としては、推定は妥当な範囲に着地していた。
 
-これはビットコインで初めて現れた考え方ではない。古典派経済学は、アダム・スミスの『国富論』（1776 年）以来、生産コストを価値の支点として扱ってきた。「自然価格」— 財を市場に届けるまでの費用の合計 — は「すべての商品の価格が絶えず引き寄せられていく中心価格」である。市場価格がまだ存在しない場では、自然価格が唯一の使える数字になる。2009 年のビットコインは、その教科書的な実例だった。
+これはビットコインで初めて現れた考え方ではない。古典派経済学は、アダム・スミスの『国富論』（1776 年）以来、生産コストを価値の支点として扱ってきた。「自然価格」、すなわち財を市場に届けるまでの費用の合計は、「すべての商品の価格が絶えず引き寄せられていく中心価格」である。市場価格がまだ存在しない場では、自然価格が唯一の使える数字になる。2009 年のビットコインは、その教科書的な実例だった。
 
 ## 2. 2010 年 2 月 — サトシが均衡を述べ、逆転を予言する
 
@@ -189,7 +189,7 @@ NewLibertyStandard 本人も[同じスレッドで返信し](/BitcoinArchive/ja/
 >
 > Bitcoin の場合も同じだと思う。Bitcoin によって可能になる取引の有用性は、使用される電力のコストをはるかに上回るだろう。したがって、Bitcoin を*持たない*ことこそが正味の無駄になるだろう。
 
-類推の内側にある向きに注意したい。金の採掘の限界費用が金の価格付近に「とどまる」— ここでもコストが価格を追っている。2 日後、[同じスレッドで](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-721/2010-08-09-re-bitcoin-minting-is-thermodynamically-perverse/)サトシは運用上の帰結を付け加えた。生成は最も安い場所に行き着くはずで、それは電気暖房の寒冷地かもしれない — そこでは排熱が無駄にならないからだ。マイナーは価格を所与として最安の電力を探す側であり、調整を担うのはやはりコストの側である。
+類推の内側にある向きに注意したい。金の採掘の限界費用は、金の価格付近に「とどまる」。ここでも、コストが価格を追う形になっている。2 日後、[同じスレッドで](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-721/2010-08-09-re-bitcoin-minting-is-thermodynamically-perverse/)サトシは運用上の帰結を付け加えた。生成は最も安い場所に行き着くはずで、それは電気暖房の寒冷地かもしれない。そこでは排熱が無駄にならないからだ。マイナーは価格を所与として最安の電力を探す側であり、調整を担うのはやはりコストの側である。
 
 ## 5. 現代の研究 — コストモデルとその批判
 
@@ -215,7 +215,7 @@ NewLibertyStandard 本人も[同じスレッドで返信し](/BitcoinArchive/ja/
 「生産コストが価格を動かすのか、価格がコストを動かすのか」という問いには、記録に基づく答えが 2 つの半分に分かれて存在する。
 
 - **連動は本物である。** 初の為替レートから現在の市場調査まで、コストと価格は互いの推定に使い回せるほど近い距離で動いてきた。
-- **市場が生まれる前は、コストが先だった。** 2009 年にはコスト式が唯一の使える支点であり、サトシはまさにそれとして推奨した。最初の市場取引も — [やがて有名になるピザも](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/) — 式が示す範囲の内側で値が付いた。
+- **市場が生まれる前は、コストが先だった。** 2009 年にはコスト式が唯一の使える支点であり、サトシはまさにそれとして推奨した。最初の市場取引も、[やがて有名になるピザも](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)、式が示す範囲の内側で値が付いた。
 - **市場が生まれてからは、価格が先である。** 発行の固定は、普通の商品でコストが価格を支えるための供給の応答を取り除いてしまった。残るのは、価格を追って出入りするハッシュレートが、難易度とコストを引きずって動く姿だけだ — 測定された遅れはハッシュレートで数週間、コストで数か月。価格がモデル上のコストを大きく割り込み、コストの側が後から降りてきた 2022 年と 2026 年の局面は、この仕組みの反証ではなく観測例である。
 - **サトシは両方の半分を 1 つの投稿で言っていた。** 2010 年 2 月の返信は、市場なき経済のためのコストという支点を認めると同時に、市場価格が生産コストを決めるようになるという逆転を予言した。後年の実証研究が確認したのは、その予言である。
 
@@ -228,4 +228,4 @@ NewLibertyStandard 本人も[同じスレッドで返信し](/BitcoinArchive/ja/
 - 後続研究は価格とハッシュレートを内生システムとして扱い、因果の判定は時間軸と局面に依存するとする。本エントリーが記録した非対称は支配的な方向であって、唯一の方向ではない。
 - 本エントリーのいかなる部分も価値評価の助言ではない。アーカイブの一次資料が例外的によく答えてくれる問いについての、文書記録である。
 
-本分析が読み解く出来事は[初の為替レートのエントリー](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/)に記録されており、一次投稿は[トピック 57](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable/) と[熱力学スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-721/2010-08-07-re-bitcoin-minting-is-thermodynamically-perverse/)が保持している。[マルミへの取引所助言](/BitcoinArchive/ja/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/)と[最初の売却](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)が 2009 年の連鎖をつなぐ。コンセンサスルールの側 — 半減期スケジュール、難易度調整、そしてマイナー収益の手数料市場への移行 — は[通貨設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)、[固定供給対調整可能通貨分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)、[手数料のみの将来の分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)が扱っており、§3 の調整弁がなぜ閉じたままなのか、新規発行分が尽きたあとに何がそれを置き換えるのかを、三者を合わせて説明している。
+本分析が読み解く出来事は[初の為替レートのエントリー](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/)に記録されており、一次投稿は[トピック 57](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable/) と[熱力学スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-721/2010-08-07-re-bitcoin-minting-is-thermodynamically-perverse/)が保持している。[マルミへの取引所助言](/BitcoinArchive/ja/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/)と[最初の売却](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)が 2009 年の連鎖をつなぐ。コンセンサスルールの側（半減期スケジュール、難易度調整、そしてマイナー収益の手数料市場への移行）は[通貨設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)、[固定供給対調整可能通貨分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)、[手数料のみの将来の分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)が扱っており、§3 の調整弁がなぜ閉じたままなのか、新規発行分が尽きたあとに何がそれを置き換えるのかを、三者を合わせて説明している。
