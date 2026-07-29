@@ -36,7 +36,9 @@ translationStatus: complete
 
 ![Editorial infographic on a dark background: a career ladder of small company-logo placeholders climbing toward a validator-node ring, a national-flag-shaped icon overlapping a mining-rig silhouette, a balance scale weighing a coin against a courthouse column, and three caption boxes along the bottom.](/BitcoinArchive/images/analysis/2015-04-01-brad-garlinghouse-biography-hero.png)
 
-Brad Garlinghouse spent over a decade running consumer divisions at some of Silicon Valley's largest companies before he ran a cryptocurrency company. He joined Ripple as Chief Operating Officer in April 2015, reporting to co-founder [Chris Larsen](/BitcoinArchive/participants/chris-larsen/), and became CEO in December 2016. His public record on Bitcoin runs in two directions that never quite meet: a skeptic of its concentration, and separately, bullish on its role as a holding.
+Brad Garlinghouse spent over a decade running consumer divisions at some of Silicon Valley's largest companies before he ran a cryptocurrency company. He joined Ripple as Chief Operating Officer in April 2015, reporting to co-founder [Chris Larsen](/BitcoinArchive/participants/chris-larsen/), and became CEO in December 2016.
+
+His public record on Bitcoin runs in two directions that never quite meet: a skeptic of its concentration, and separately, bullish on its role as a holding.
 
 ```mermaid
 timeline

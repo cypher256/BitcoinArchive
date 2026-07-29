@@ -95,7 +95,9 @@ The "10% miner" claim referred to a different person; knightmb explicitly denied
 
 For a sense of 2010 scale: [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) is estimated to have held over 90,000 BTC by mid-2010 — about 2–3% of the supply circulating at that time, and enough to place him among the larger known holders of the era. The wobber post described a stake roughly three to four times that. A 10% concentration in a single person's hands was, even by 2010 heavy-miner standards, an exceptional claim — which is part of why the round-number version of it travels.
 
-This matters in two ways. The inflated holdings figure is part of how the legend has grown — a 10% holder is an inherently more dramatic figure than a snapshot-hosting forum regular, and the dramatic version travels further. And the misattribution illustrates a structural property of how Bitcoin's early-history accounts get built: secondary aggregators chain their citations off each other, and the chain rarely reaches back to the actual posts.
+This matters in two ways. The inflated holdings figure is part of how the legend has grown — a 10% holder is an inherently more dramatic figure than a snapshot-hosting forum regular, and the dramatic version travels further.
+
+And the misattribution illustrates a structural property of how Bitcoin's early-history accounts get built: secondary aggregators chain their citations off each other, and the chain rarely reaches back to the actual posts.
 
 ## 5. The Tennessee shadow
 

@@ -61,6 +61,8 @@ In May 2026, Galaxy Digital's research head Alex Thorn published an analysis cla
 
 The remaining 17,146 addresses likely belong to other early miners or are unclassified. None of the defendant addresses have moved coins since the dormancy thresholds applied in the complaint.
 
-The case is ongoing. The defendants — wallet addresses — cannot answer, and the procedural mechanics of how the plaintiff would establish standing, serve unknown holders, and enforce any judgment are themselves novel questions. Bitcoin-community reception has been overwhelmingly skeptical: critics argue that the suit amounts to asking a state court to declare a finder's right over coins whose original owner has not relinquished cryptographic control, and that any judgment ordering transfer would be unenforceable absent the private keys.
+The case is ongoing. The defendants — wallet addresses — cannot answer, and the procedural mechanics of how the plaintiff would establish standing, serve unknown holders, and enforce any judgment are themselves novel questions.
+
+Bitcoin-community reception has been overwhelmingly skeptical: critics argue that the suit amounts to asking a state court to declare a finder's right over coins whose original owner has not relinquished cryptographic control, and that any judgment ordering transfer would be unenforceable absent the private keys.
 
 The case nevertheless tests, for the first time in a US court, whether lost-property doctrine can reach into the UTXO set. A finding for the plaintiff — even a partial one — would create precedent affecting all long-dormant Bitcoin, including the Satoshi-era reserves.

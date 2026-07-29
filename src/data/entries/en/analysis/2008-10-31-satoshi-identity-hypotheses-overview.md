@@ -177,7 +177,9 @@ The more visibly active a candidate was as a cypherpunk thinker (group 1), the l
 
 ### 2.3 Capability vs covertness map
 
-Each candidate plotted in the 2D space of capability score (x-axis) vs covertness score (y-axis). **Coordinates are approximate visual placements**, not exact averages of the §2.1 cells — pure averages (🟢 = 1, 🟡 = 0.5, 🔴 = 0) put several candidates on the chart boundary (Wei Dai's capability = 1.0; Hal Finney's and Kaneko's covertness = 0) or on top of each other (Le Roux and Todd both at [0.5, 0.5]), where mermaid's quadrantChart renders labels overlapping the axis titles or each other. Each point is nudged inward by ≈ 0.02 – 0.12 so the labels stay readable; the relative ordering (who is right of whom, who is above whom) matches the table. The map makes the §6 cross-cutting observations spatial: most cypherpunk-cited candidates (Adam Back, Wei Dai, Hal Finney, Szabo) cluster in the high-capability strip, mostly at low covertness; Sassaman is the only candidate sitting in the high-capability + high-covertness quadrant; Wright, Dorian Nakamoto, and Kaneko sit in the low-capability regions.
+Each candidate plotted in the 2D space of capability score (x-axis) vs covertness score (y-axis). **Coordinates are approximate visual placements**, not exact averages of the §2.1 cells — pure averages (🟢 = 1, 🟡 = 0.5, 🔴 = 0) put several candidates on the chart boundary (Wei Dai's capability = 1.0; Hal Finney's and Kaneko's covertness = 0) or on top of each other (Le Roux and Todd both at [0.5, 0.5]), where mermaid's quadrantChart renders labels overlapping the axis titles or each other. Each point is nudged inward by ≈ 0.02 – 0.12 so the labels stay readable; the relative ordering (who is right of whom, who is above whom) matches the table.
+
+The map makes the §6 cross-cutting observations spatial: most cypherpunk-cited candidates (Adam Back, Wei Dai, Hal Finney, Szabo) cluster in the high-capability strip, mostly at low covertness; Sassaman is the only candidate sitting in the high-capability + high-covertness quadrant; Wright, Dorian Nakamoto, and Kaneko sit in the low-capability regions.
 
 **Candidate profiles, capability vs covertness**
 
@@ -361,7 +363,9 @@ The [April 2026 documentary *Finding Satoshi*](/BitcoinArchive/entries/aftermath
 
 ### 8.2 Organization / government-agency theory
 
-The [Murphy v DHS FOIA lawsuit (April 2025)](/BitcoinArchive/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) seeks internal records behind a 2019 on-stage statement by DHS special agent Rana Saoud that DHS agents had traveled to California and met "the four people behind the creation of Bitcoin." The four are unidentified in public reporting; if the records are released, they could establish the facts of the 2019 meeting without recourse to stylometric inference. As related context, Satoshi disappeared shortly after Gavin Andresen, replying to Satoshi's final email (April 26, 2011), [disclosed an invitation from In-Q-Tel (the CIA-linked strategic investment firm) to present Bitcoin](/BitcoinArchive/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/) — a sequence often cited in government-involvement discussion (though the counter-argument notes Satoshi's withdrawal was already gradual over the preceding months).
+The [Murphy v DHS FOIA lawsuit (April 2025)](/BitcoinArchive/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) seeks internal records behind a 2019 on-stage statement by DHS special agent Rana Saoud that DHS agents had traveled to California and met "the four people behind the creation of Bitcoin." The four are unidentified in public reporting; if the records are released, they could establish the facts of the 2019 meeting without recourse to stylometric inference.
+
+As related context, Satoshi disappeared shortly after Gavin Andresen, replying to Satoshi's final email (April 26, 2011), [disclosed an invitation from In-Q-Tel (the CIA-linked strategic investment firm) to present Bitcoin](/BitcoinArchive/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/) — a sequence often cited in government-involvement discussion (though the counter-argument notes Satoshi's withdrawal was already gradual over the preceding months).
 
 ### 8.3 Other forms
 

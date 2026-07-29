@@ -63,7 +63,9 @@ translationStatus: complete
 
 ## その後の経緯
 
-OpenSSL SHA-256 パス自身も、2014 年に Bitcoin Core のインツリー実装に置き換えられた。[ピーター・ウィーユ](/BitcoinArchive/ja/participants/pieter-wuille/)のコミット `977cdadea8` (2014 年 4 月 20 日、「Add a built-in SHA256/SHA512 implementation」) が `src/sha2.cpp` に手書きの SHA-256 および SHA-512 ルーチンを導入し、その後のコミットでコンセンサス重要のハッシュ呼び出し箇所を OpenSSL から切り替えた。この時点以降、Bitcoin Core はサードパーティの SHA-256 実装に一切依存しない。OpenSSL の ECDSA 依存はより長く残り、最終的に [Bitcoin Core v0.12 (2016 年 1 月)](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) で libsecp256k1 に置換された。
+OpenSSL SHA-256 パス自身も、2014 年に Bitcoin Core のインツリー実装に置き換えられた。[ピーター・ウィーユ](/BitcoinArchive/ja/participants/pieter-wuille/)のコミット `977cdadea8` (2014 年 4 月 20 日、「Add a built-in SHA256/SHA512 implementation」) が `src/sha2.cpp` に手書きの SHA-256 および SHA-512 ルーチンを導入し、その後のコミットでコンセンサス重要のハッシュ呼び出し箇所を OpenSSL から切り替えた。この時点以降、Bitcoin Core はサードパーティの SHA-256 実装に一切依存しない。
+
+OpenSSL の ECDSA 依存はより長く残り、最終的に [Bitcoin Core v0.12 (2016 年 1 月)](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/) で libsecp256k1 に置換された。
 
 置換の連鎖:
 

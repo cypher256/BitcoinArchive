@@ -47,9 +47,13 @@ Le Roux — who released the open-source disk-encryption package E4M in 1999 bef
 
 ### 1.1 Cryptographic capability
 
-Le Roux's E4M (Encryption for the Masses, 1999) was a real open-source disk-encryption package, circulated on the cypherpunks mailing list, and its codebase was forked into TrueCrypt in 2002. This is a documented record of shipping cryptographic software — the kind of capability Bitcoin's creator would need. The venue lines up too: E4M's 1999 announcement went out on the cypherpunks mailing list, and that list's own successor, [cryptography@metzdowd.com](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), is where Satoshi posted the Bitcoin whitepaper announcement in October 2008 — the same list lineage carrying two cryptographic-software launches nine years apart.
+Le Roux's E4M (Encryption for the Masses, 1999) was a real open-source disk-encryption package, circulated on the cypherpunks mailing list, and its codebase was forked into TrueCrypt in 2002. This is a documented record of shipping cryptographic software — the kind of capability Bitcoin's creator would need.
 
-The objection: E4M is a disk-encryption system, not a digital-cash or distributed-ledger system; the two design spaces share primitives but diverge in architecture. And Le Roux's public shipping record stops in 1999 — nearly a decade before Bitcoin v0.1 — with no documented monetary-system or distributed-systems work in the interval. Capability with disk encryption in 1999 does not entail capability with, or interest in, a 2008 cryptocurrency. The venue overlap fares no better as a discriminator: thousands of people read or posted to the cypherpunks list and its cryptography-list successor across the decade between the two, so shared venue selects a large population, not a specific candidate.
+The venue lines up too: E4M's 1999 announcement went out on the cypherpunks mailing list, and that list's own successor, [cryptography@metzdowd.com](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), is where Satoshi posted the Bitcoin whitepaper announcement in October 2008 — the same list lineage carrying two cryptographic-software launches nine years apart.
+
+The objection: E4M is a disk-encryption system, not a digital-cash or distributed-ledger system; the two design spaces share primitives but diverge in architecture. And Le Roux's public shipping record stops in 1999 — nearly a decade before Bitcoin v0.1 — with no documented monetary-system or distributed-systems work in the interval. Capability with disk encryption in 1999 does not entail capability with, or interest in, a 2008 cryptocurrency.
+
+The venue overlap fares no better as a discriminator: thousands of people read or posted to the cypherpunks list and its cryptography-list successor across the decade between the two, so shared venue selects a large population, not a specific candidate.
 
 ### 1.2 Covertness fit
 

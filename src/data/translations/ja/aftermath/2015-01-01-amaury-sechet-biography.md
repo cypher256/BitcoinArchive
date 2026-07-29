@@ -33,7 +33,11 @@ relatedEntries:
 
 ![ブロックが連なる横長の年表が、盾とチェックマークのアイコンの位置で二手に分かれ、それぞれの分岐がさらに枝分かれし、下部に説明枠が並ぶ構成の編集用インフォグラフィック。](/BitcoinArchive/images/analysis/2015-01-01-amaury-sechet-biography-hero.png)
 
-2017 年 8 月 1 日、ブロック 478558 で[ビットコインのチェーンが分裂した](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)。フォークを生んだソフトウェア **Bitcoin ABC**（Adjustable Blocksize Cap）はアモリー・セシェの率いるチームが書いた。彼は新チェーンを旧チェーンと混同させない SIGHASH_FORKID リプレイ保護方式と、少数派ハッシュレートでもブロック生成を継続できる Emergency Difficulty Adjustment を設計した。16 か月後の 2018 年 11 月、[BCH 内部での 2 度目の分裂](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/) —— 今度はセシェの Bitcoin ABC とクレイグ・ライトおよびカルヴィン・エアの nChain が対立。2020 年 11 月にはマイナー基金 8% 課税案を巡って 3 度目の分裂を主導し、これは 2021 年に eCash（XEC）となった。
+2017 年 8 月 1 日、ブロック 478558 で[ビットコインのチェーンが分裂した](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)。フォークを生んだソフトウェア **Bitcoin ABC**（Adjustable Blocksize Cap）はアモリー・セシェの率いるチームが書いた。彼は新チェーンを旧チェーンと混同させない SIGHASH_FORKID リプレイ保護方式と、少数派ハッシュレートでもブロック生成を継続できる Emergency Difficulty Adjustment を設計した。
+
+16 か月後の 2018 年 11 月、[BCH 内部での 2 度目の分裂](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/) —— 今度はセシェの Bitcoin ABC とクレイグ・ライトおよびカルヴィン・エアの nChain が対立。
+
+2020 年 11 月にはマイナー基金 8% 課税案を巡って 3 度目の分裂を主導し、これは 2021 年に eCash（XEC）となった。
 
 セシェ（オンラインハンドル `deadalnix`）はフランス人ソフトウェアエンジニアで、ビットコイン以前は Facebook の HHVM（HipHop 仮想マシン）チームに勤務していた。2015 年頃から Bitcoin Core への寄稿を始め、[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)を通じて大ブロック派に与した。
 

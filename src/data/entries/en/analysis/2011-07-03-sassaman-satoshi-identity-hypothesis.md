@@ -56,7 +56,9 @@ inlineLinkKeywords:
 
 ![Abstract dark hero graphic titled "A gap in the record": a timeline connecting April 26, 2011 and July 3, 2011 across two translucent evidence cards labeled "correspondence" and "disputed evidence," a magnifying glass over a jagged signal line, a faceless silhouette bust with no facial features labeled "blank profile / no direct link," and a broken key icon amid scattered static dots.](/BitcoinArchive/images/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis-hero.png)
 
-On April 26, 2011, [Satoshi sent his last known email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/). Sixty-eight days later, on July 3, 2011, cypherpunk cryptographer Len Sassaman died by suicide in Belgium. The proximity of those two dates is the load-bearing observation under the Sassaman-as-Satoshi hypothesis — supplemented by his Mixmaster anonymous-remailer work, his cypherpunk credentials, and Dan Kaminsky's August 2011 [blockchain tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/). The April 2026 [Finding Satoshi documentary](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) extends this individual hypothesis into a multi-person reading, naming Sassaman alongside Hal Finney as co-creators (the documentary's claims and Adam Back's counter-evidence are treated at the linked entry).
+On April 26, 2011, [Satoshi sent his last known email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/). Sixty-eight days later, on July 3, 2011, cypherpunk cryptographer Len Sassaman died by suicide in Belgium. The proximity of those two dates is the load-bearing observation under the Sassaman-as-Satoshi hypothesis — supplemented by his Mixmaster anonymous-remailer work, his cypherpunk credentials, and Dan Kaminsky's August 2011 [blockchain tribute](/BitcoinArchive/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/).
+
+The April 2026 [Finding Satoshi documentary](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) extends this individual hypothesis into a multi-person reading, naming Sassaman alongside Hal Finney as co-creators (the documentary's claims and Adam Back's counter-evidence are treated at the linked entry).
 
 ## 1. The evidence
 
@@ -75,7 +77,9 @@ This is the strongest piece of evidence. The chronology:
 | 2011-04-26 | Satoshi's [last known private email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/) — to Andresen, transferring the network alert key, "I've moved on to other things and will probably be unavailable" |
 | 2011-07-03 | Sassaman dies (suicide) |
 
-Three months elapse between Satoshi's last documented communication and Sassaman's death. The hypothesis reads this as the conclusion of a withdrawal that began in mid-2010, with the April 26 email as a final administrative handover before the actual end. The objection that Bitcoin Institute would raise to itself: three months is a short interval but not extraordinarily short, and people commonly disengage from major projects months before life-altering events for reasons that have nothing to do with the projects. The sharper question is not the interval's length but whether April 2011 was the end at all: two disputed Satoshi-account events from 2014 sit outside that anchor, and because timing is the claim's only discriminating evidence, the whole case turns on how they are read (§2.2).
+Three months elapse between Satoshi's last documented communication and Sassaman's death. The hypothesis reads this as the conclusion of a withdrawal that began in mid-2010, with the April 26 email as a final administrative handover before the actual end.
+
+The objection that Bitcoin Institute would raise to itself: three months is a short interval but not extraordinarily short, and people commonly disengage from major projects months before life-altering events for reasons that have nothing to do with the projects. The sharper question is not the interval's length but whether April 2011 was the end at all: two disputed Satoshi-account events from 2014 sit outside that anchor, and because timing is the claim's only discriminating evidence, the whole case turns on how they are read (§2.2).
 
 ### 1.2 Cypherpunk credentials
 

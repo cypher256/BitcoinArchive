@@ -63,4 +63,6 @@ The analysis identified a pattern of deliberate hashrate reduction over time. As
 
 ## Conclusion
 
-The report concluded: "The timing of the shutdown, the mining behavior, the systematic decrease in mining speed and the lack of spending strongly suggest that Satoshi was only interested in growing and protecting the young network." All but the 907 BTC noted above have never been spent, reinforcing the interpretation that Satoshi mined to bootstrap the network — not for personal enrichment. This figure was later folded into a wider survey of Satoshi's likely holdings that cross-checked it against Lerner's and BitMEX Research's independent estimates — see [Analyses estimate Satoshi Nakamoto's Bitcoin holdings at approximately 1.1 million BTC](/BitcoinArchive/entries/aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis/).
+The report concluded: "The timing of the shutdown, the mining behavior, the systematic decrease in mining speed and the lack of spending strongly suggest that Satoshi was only interested in growing and protecting the young network." All but the 907 BTC noted above have never been spent, reinforcing the interpretation that Satoshi mined to bootstrap the network — not for personal enrichment.
+
+This figure was later folded into a wider survey of Satoshi's likely holdings that cross-checked it against Lerner's and BitMEX Research's independent estimates — see [Analyses estimate Satoshi Nakamoto's Bitcoin holdings at approximately 1.1 million BTC](/BitcoinArchive/entries/aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis/).

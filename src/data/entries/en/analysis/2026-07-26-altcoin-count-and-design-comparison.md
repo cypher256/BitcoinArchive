@@ -150,7 +150,9 @@ The unit price rises when demand grows faster than supply. An issuance rule fixe
 
 So the question a buyer is really asking splits in two: how high is the bar, and is the buying growing faster than that? Only the first has an answer written down. Throughout what follows, *buying holds steady* means the flow of money coming in stays at the rate it is at now — not that the total already invested is frozen.
 
-That is a narrow power, and it is the whole of what a monetary design controls. But the *choice* of rule is not narrow at all: it is a statement about what the currency thinks it is. A ceiling says the unit should not be diluted. A burn tied to usage says supply should answer to the network. A peg says the unit should not move. A fixed annual issuance says the thing is meant to be spent, not held.
+That is a narrow power, and it is the whole of what a monetary design controls.
+
+But the *choice* of rule is not narrow at all: it is a statement about what the currency thinks it is. A ceiling says the unit should not be diluted. A burn tied to usage says supply should answer to the network. A peg says the unit should not move. A fixed annual issuance says the thing is meant to be spent, not held.
 
 Those positions sort into six, and each sets a different bar. [The fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) traces which failure each project was trying to avoid when it picked its position, from b-money in 1998 through the [Ethereum](/BitcoinArchive/entries/currency/2026-07-27-ethereum-currency-overview/) Merge.
 
@@ -177,7 +179,9 @@ Two readings in wide circulation get this wrong.
 
 **"Inflationary forever" does not mean "diluting at a constant rate."** Dogecoin issues the same 5.256 billion units every year against a base that grows every year, so the percentage of the supply that is new falls each year without the rule ever changing. Holding a dilution rate steady takes a rule that targets the percentage rather than the number — and the chain that had one no longer does. Polkadot ran a ~10% annual target until its own token-holders voted it away: Referendum 1710 took effect in January 2026, capping supply at 2.1 billion DOT and replacing the target with a stepped schedule that mints 13.14% of the *remaining* supply every two years, the first step falling on March 14, 2026. It is the clearest case in this table of §2's last column being used — the party who can change the rules changed the monetary rule.
 
-**A hard cap is a floor under the unit count, not a floor under the price.** Bitcoin's cap guarantees that the denominator stops growing; it guarantees nothing about the numerator. What the cap actually removes is one specific way of losing value — issuance decided by someone else. In the other direction, coins that become permanently unspendable reduce the effective denominator without any rule change; [the record of iconic losses](/BitcoinArchive/entries/analysis/2026-06-02-bitcoin-iconic-losses-overview/) collects the documented cases.
+**A hard cap is a floor under the unit count, not a floor under the price.** Bitcoin's cap guarantees that the denominator stops growing; it guarantees nothing about the numerator. What the cap actually removes is one specific way of losing value — issuance decided by someone else.
+
+In the other direction, coins that become permanently unspendable reduce the effective denominator without any rule change; [the record of iconic losses](/BitcoinArchive/entries/analysis/2026-06-02-bitcoin-iconic-losses-overview/) collects the documented cases.
 
 There is one thing the unit price will not do, and it is the thing it gets used for most: compare one coin against another. Bitcoin caps at 21 million units, XRP generated 100 billion at launch, and Dogecoin adds 5.256 billion a year — so a coin trading at $0.20 with a trillion units outstanding is a larger asset than one trading at $200 with a million. "Cheap, so there is room to grow" is the intuition the figure invites, and the arithmetic does not support it: the denominator it is divided by was chosen at launch and says nothing about demand. The market history of the closest thing to an overtake — Ethereum reaching about 85% of Bitcoin's market capitalization in June 2017 — is recorded with its dated snapshots in [the fork-and-altcoin genealogy](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/).
 
@@ -203,7 +207,9 @@ The coins in §7 are the exception, and they invert the question. A coin whose s
 
 Put the two halves together and the taxonomy turns into a trap.
 
-A design that protects the unit from dilution makes it worth holding, and a thing worth holding is not spent — that is the mechanism [the electronic-cash reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/) traces through Bitcoin's own history, from the pizza to the settlement layer. But the reverse holds too. A design that keeps issuing so the unit stays spendable is a design that has removed the reason to accumulate it. Dogecoin is cheap, fast, and works; the [record of its launch](/BitcoinArchive/entries/aftermath/2013-12-06-dogecoin-launch/) concludes that its lasting significance is sociological rather than technical — it held its position through community and brand, not because its monetary design made it good money. The stablecoins are the cleanest case: they are held in enormous quantity and by construction nobody holds them expecting more.
+A design that protects the unit from dilution makes it worth holding, and a thing worth holding is not spent — that is the mechanism [the electronic-cash reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/) traces through Bitcoin's own history, from the pizza to the settlement layer.
+
+But the reverse holds too. A design that keeps issuing so the unit stays spendable is a design that has removed the reason to accumulate it. Dogecoin is cheap, fast, and works; the [record of its launch](/BitcoinArchive/entries/aftermath/2013-12-06-dogecoin-launch/) concludes that its lasting significance is sociological rather than technical — it held its position through community and brand, not because its monetary design made it good money. The stablecoins are the cleanest case: they are held in enormous quantity and by construction nobody holds them expecting more.
 
 So each side of the table fails at what the other side is for. Neither is a flawed execution of a single goal; they are the two ends of a trade nobody has been able to avoid making.
 
@@ -277,7 +283,9 @@ Every structural feature reads 🔴 for USDT and USDC. This is not a criticism; 
 <!-- audit:quote-skip -->
 > This approach is distributed, though it does not purport to be -- or aim to be -- entirely decentralized.
 
-The peg is not one design, either, and the difference is in who guarantees it and under what obligation. USDC's reserve composition was a matter of voluntary disclosure — it held commercial paper and corporate bonds in 2021 and moved to cash and cash equivalents afterwards, and its governance body was dissolved in 2023 with no reader's consent required. The alternative is a statutory one. Japan's revised Payment Services Act put yen-denominated stablecoins under a registration regime, and JPYC Inc. registered as a funds-transfer provider on August 18, 2025 (Kanto Local Finance Bureau No. 00099), stating that "the backing assets are secured in Japanese yen (deposits and government bonds)"; issuance began on October 27, 2025. Whether a reserve rule is a company's policy or a licence condition does not change the structural verdict above — there is still an issuer, and the issuer can still freeze a balance. It changes how much of the promise survives the issuer changing its mind, which is a different axis and a real one.
+The peg is not one design, either, and the difference is in who guarantees it and under what obligation. USDC's reserve composition was a matter of voluntary disclosure — it held commercial paper and corporate bonds in 2021 and moved to cash and cash equivalents afterwards, and its governance body was dissolved in 2023 with no reader's consent required.
+
+The alternative is a statutory one. Japan's revised Payment Services Act put yen-denominated stablecoins under a registration regime, and JPYC Inc. registered as a funds-transfer provider on August 18, 2025 (Kanto Local Finance Bureau No. 00099), stating that "the backing assets are secured in Japanese yen (deposits and government bonds)"; issuance began on October 27, 2025. Whether a reserve rule is a company's policy or a licence condition does not change the structural verdict above — there is still an issuer, and the issuer can still freeze a balance. It changes how much of the promise survives the issuer changing its mind, which is a different axis and a real one.
 
 What that trade buys is the thing Bitcoin does not offer: a unit that does not move against the currency your rent is denominated in. What it costs is every property in §3. [Jeremy Allaire's record](/BitcoinArchive/participants/jeremy-allaire/) is the clearest statement of both sides, because he argues for the non-sovereign asset while selling the sovereign one.
 
@@ -323,7 +331,9 @@ Both presidents have a record on Bitcoin itself, and in one case the record move
 <!-- audit:quote-skip -->
 > I want it to be mined, minted and made in the U.S.
 
-The token came six months after that speech. Milei's position is older and narrower than his reputation suggests: he has called central banking a scam and described Bitcoin as "the return of money to its original creator, the private sector," but his actual programme was dollarisation, and Argentina under him has not moved toward Bitcoin adoption — a distinction the reporting makes explicitly, against the pro-Bitcoin label the quotation attracted.
+The token came six months after that speech.
+
+Milei's position is older and narrower than his reputation suggests: he has called central banking a scam and described Bitcoin as "the return of money to its original creator, the private sector," but his actual programme was dollarisation, and Argentina under him has not moved toward Bitcoin adoption — a distinction the reporting makes explicitly, against the pro-Bitcoin label the quotation attracted.
 
 The regulatory position is that this category sits outside securities protection. SEC staff stated in February 2025 that meme coins of this type are not securities — a statement that carries no binding legal force and leaves fraud actionable under other law — and a sitting Commissioner told an industry audience in May 2025: "if you are expecting that there's SEC protection around these, you should not expect that." The one adjudicated precedent for celebrity promotion remains the SEC's 2022 settlement with Kim Kardashian over an undisclosed paid promotion.
 

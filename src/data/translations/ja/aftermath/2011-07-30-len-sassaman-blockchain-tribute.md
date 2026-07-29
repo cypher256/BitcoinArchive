@@ -37,7 +37,9 @@ translationStatus: complete
 
 数週間のうちに、[ダン・カミンスキー](/BitcoinArchive/ja/participants/dan-kaminsky/) — 以前にビットコイン v0.1 のコードをレビューし [「これはチームで作ったか、天才の仕業だ」と結論づけた](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)セキュリティ研究者 — は、サッサマンへの ASCII アート追悼をビットコインブロックチェーンに直接埋め込んだ。発表は 2011 年 7 月 30 日、公的なお披露目は Black Hat USA 2011（ラスベガス）。
 
-Wikipedia の引用および Black Hat USA 2011 のプレゼン資料によれば、刻印はトランザクション出力にまたがってエンコードされ、データはすべてのフルノードのコピーに残るとされる。本技法は `OP_RETURN`（小さなペイロードを埋め込むために Bitcoin Core に公式に追加された機構、2014 年）以前のもの。この機構をめぐっては後年、繰り返し制限論争が起きており、その経緯は OP_RETURN 系のデータ運搬出力をより積極的にフィルタリングする Bitcoin Knots を維持する[ルーク・ダッシュジュニアの経歴](/BitcoinArchive/ja/participants/luke-dashjr/)に詳しい。具体的なブロック高、トランザクションハッシュ、刻印された ASCII アートの全文は本アーカイブが独立に検証していない — 技法は二次資料が支える水準で記述している。
+Wikipedia の引用および Black Hat USA 2011 のプレゼン資料によれば、刻印はトランザクション出力にまたがってエンコードされ、データはすべてのフルノードのコピーに残るとされる。本技法は `OP_RETURN`（小さなペイロードを埋め込むために Bitcoin Core に公式に追加された機構、2014 年）以前のもの。
+
+この機構をめぐっては後年、繰り返し制限論争が起きており、その経緯は OP_RETURN 系のデータ運搬出力をより積極的にフィルタリングする Bitcoin Knots を維持する[ルーク・ダッシュジュニアの経歴](/BitcoinArchive/ja/participants/luke-dashjr/)に詳しい。具体的なブロック高、トランザクションハッシュ、刻印された ASCII アートの全文は本アーカイブが独立に検証していない — 技法は二次資料が支える水準で記述している。
 
 ## 文脈
 

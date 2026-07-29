@@ -67,6 +67,8 @@ On November 8, 2017 — about a week before the planned activation at block 4947
 
 ## Significance to Bitcoin
 
-Belshe's record matters in this archive for two reasons. First, BitGo's multisignature infrastructure is one of the foundational technical contributions that made Bitcoin viable for institutional holders during 2014–2018; without that custody layer, much of the corporate adoption that followed would have been operationally infeasible. Second, the November 8, 2017 cancellation message is the literal end of the New York Agreement — the moment at which the larger-block faction's main-chain campaign concluded, leaving Bitcoin Core's soft-fork-only protocol-evolution culture as the surviving model.
+Belshe's record matters in this archive for two reasons. First, BitGo's multisignature infrastructure is one of the foundational technical contributions that made Bitcoin viable for institutional holders during 2014–2018; without that custody layer, much of the corporate adoption that followed would have been operationally infeasible.
+
+Second, the November 8, 2017 cancellation message is the literal end of the New York Agreement — the moment at which the larger-block faction's main-chain campaign concluded, leaving Bitcoin Core's soft-fork-only protocol-evolution culture as the surviving model.
 
 Belshe and BitGo continue to operate in the Bitcoin custody and digital-asset infrastructure space as of the most recent edit to this entry.

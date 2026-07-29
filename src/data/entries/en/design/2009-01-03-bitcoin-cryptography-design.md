@@ -38,7 +38,9 @@ inlineLinkKeywords:
 
 This page is **L1 #6 — Cryptography design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the cryptographic primitives that underpin every layer of Bitcoin: the keys that represent ownership, the signatures that authorize spending, the hash functions that bind blocks and transactions together, and the derivation schemes that turn a single secret into a tree of addresses.
 
-An important distinction: Bitcoin is a system built on **cryptography**, not **encryption**. The blockchain is public. Transactions are broadcast in the clear. No message is encrypted at the protocol level. What cryptography provides instead is **authentication** — proof that a transaction was authorized by the holder of a specific private key — and **integrity** — proof that data has not been tampered with. The one exception is BIP 324 (v2 transport protocol), which encrypts peer-to-peer traffic to resist passive surveillance; that is a network-layer concern covered in the P2P design page, not a transaction-layer primitive.
+An important distinction: Bitcoin is a system built on **cryptography**, not **encryption**. The blockchain is public. Transactions are broadcast in the clear. No message is encrypted at the protocol level. What cryptography provides instead is **authentication** — proof that a transaction was authorized by the holder of a specific private key — and **integrity** — proof that data has not been tampered with.
+
+The one exception is BIP 324 (v2 transport protocol), which encrypts peer-to-peer traffic to resist passive surveillance; that is a network-layer concern covered in the P2P design page, not a transaction-layer primitive.
 
 The page depends on the [transaction design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/), which describes how inputs, outputs, and scripts consume the cryptographic primitives described here. Where behavior differs between the Satoshi-era implementation (v0.1, January 2009) and modern Bitcoin Core (v27+ baseline), both are noted.
 
@@ -152,7 +154,9 @@ sequenceDiagram
 | **Cryptography library** | OpenSSL (consensus-critical through v0.11); libsecp256k1 (wallet signing from v0.10, consensus verification from v0.12) | libsecp256k1 Schnorr module |
 | **Script context** | `OP_CHECKSIG`, `OP_CHECKMULTISIG` | `OP_CHECKSIG` (tapscript variant), `OP_CHECKSIGADD` |
 
-**The OpenSSL exit.** Satoshi's v0.1 relied on OpenSSL for ECDSA signing, ECDSA verification, random number generation, and the SHA-256d/RIPEMD-160 hashing inside `Hash()`/`Hash160()` — but not for the mining hot path: `BlockSHA256()` in `main.cpp` called a bundled Crypto++ implementation (Wei Dai's `sha.cpp`/`sha.h`) instead, bypassing OpenSSL for speed. Bitcoin Core's move to libsecp256k1, a purpose-built library offering constant-time operations (side-channel resistance), deterministic nonce generation (RFC 6979), and significantly faster batch verification, happened in two stages, [detailed in a dedicated entry](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/): v0.10 (February 2015) made it the default for wallet signing, but consensus-critical ECDSA verification stayed on OpenSSL until v0.12 (January 2016) — the change that actually eliminated the class of consensus bugs caused by OpenSSL version differences in DER signature parsing, a risk the BIP 66 strict-DER soft fork had patched around in the interim.
+**The OpenSSL exit.** Satoshi's v0.1 relied on OpenSSL for ECDSA signing, ECDSA verification, random number generation, and the SHA-256d/RIPEMD-160 hashing inside `Hash()`/`Hash160()` — but not for the mining hot path: `BlockSHA256()` in `main.cpp` called a bundled Crypto++ implementation (Wei Dai's `sha.cpp`/`sha.h`) instead, bypassing OpenSSL for speed.
+
+Bitcoin Core's move to libsecp256k1, a purpose-built library offering constant-time operations (side-channel resistance), deterministic nonce generation (RFC 6979), and significantly faster batch verification, happened in two stages, [detailed in a dedicated entry](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/): v0.10 (February 2015) made it the default for wallet signing, but consensus-critical ECDSA verification stayed on OpenSSL until v0.12 (January 2016) — the change that actually eliminated the class of consensus bugs caused by OpenSSL version differences in DER signature parsing, a risk the BIP 66 strict-DER soft fork had patched around in the interim.
 
 ## 4. Address derivation
 
@@ -192,7 +196,9 @@ flowchart LR
 
 ## 5. HD wallets
 
-Early Bitcoin wallets generated keys independently — each key was a fresh random number with no structural relationship to any other key. Losing a backup taken before a new key was generated meant losing that key's funds permanently. BIP 32 (2012) introduced **hierarchical deterministic** (HD) derivation: a single master secret produces an entire tree of keys, all recoverable from one backup.
+Early Bitcoin wallets generated keys independently — each key was a fresh random number with no structural relationship to any other key. Losing a backup taken before a new key was generated meant losing that key's funds permanently.
+
+BIP 32 (2012) introduced **hierarchical deterministic** (HD) derivation: a single master secret produces an entire tree of keys, all recoverable from one backup.
 
 ### HD derivation tree
 

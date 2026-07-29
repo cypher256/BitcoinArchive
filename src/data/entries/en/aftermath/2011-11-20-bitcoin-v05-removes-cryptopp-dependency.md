@@ -62,7 +62,9 @@ By 2011, the Bitcoin Core project's center of gravity had moved off the Crypto++
 
 ## What followed
 
-The OpenSSL SHA-256 path was itself replaced by a Bitcoin Core in-tree implementation in 2014. [Pieter Wuille](/BitcoinArchive/participants/pieter-wuille/)'s commit `977cdadea8` (April 20, 2014, "Add a built-in SHA256/SHA512 implementation") introduced `src/sha2.cpp` with hand-written SHA-256 and SHA-512 routines, and subsequent commits switched the consensus-critical hash callsites off OpenSSL. From that point, Bitcoin Core no longer depended on a third-party SHA-256 implementation at all. The OpenSSL ECDSA dependency persisted longer and was eventually replaced by libsecp256k1 in [Bitcoin Core v0.12 (January 2016)](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/).
+The OpenSSL SHA-256 path was itself replaced by a Bitcoin Core in-tree implementation in 2014. [Pieter Wuille](/BitcoinArchive/participants/pieter-wuille/)'s commit `977cdadea8` (April 20, 2014, "Add a built-in SHA256/SHA512 implementation") introduced `src/sha2.cpp` with hand-written SHA-256 and SHA-512 routines, and subsequent commits switched the consensus-critical hash callsites off OpenSSL. From that point, Bitcoin Core no longer depended on a third-party SHA-256 implementation at all.
+
+The OpenSSL ECDSA dependency persisted longer and was eventually replaced by libsecp256k1 in [Bitcoin Core v0.12 (January 2016)](/BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/).
 
 The chain of replacements:
 

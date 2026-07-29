@@ -186,7 +186,9 @@ translationStatus: complete
 
 [デジタルゴールド論考](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)の第 2 層、すなわち人と組織の非中央集権が指すのは、プロトコルへの権威を誰も持たないことだった。保有の集中は、この定義を直接には破らない。Strategy も IBIT も米国政府も、何十万枚を握っていてもコンセンサスルールを 1 行も変えられない。発行時に創設者や投資家へ割り当てられるプレマインと、公開市場で買い集めた残高は、由来がまったく違う。
 
-それでも保有の風景は、第 2 層の周辺条件を変えつつある。ETF の資金流出入は価格形成の主要な回路になり、国家の準備保有は「国家とビットコインの距離」という、ホワイトペーパーが想定しなかった政治の変数を持ち込んだ。そして首位は変わっていない。約 110 万枚が 16 年間動かないという事実（創設者の鍵が市場の権威にならないということ）は、[Whale Alert の独立分析](/BitcoinArchive/ja/entries/aftermath/2020-07-20-whale-alert-satoshi-fortune/)と[複数推定の総合](/BitcoinArchive/ja/entries/aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis/)が記録した通り、第 2 層の一部として今も働いている。動かないバーの隣で、動くバーだけが順位を入れ替えていく。
+それでも保有の風景は、第 2 層の周辺条件を変えつつある。ETF の資金流出入は価格形成の主要な回路になり、国家の準備保有は「国家とビットコインの距離」という、ホワイトペーパーが想定しなかった政治の変数を持ち込んだ。
+
+そして首位は変わっていない。約 110 万枚が 16 年間動かないという事実（創設者の鍵が市場の権威にならないということ）は、[Whale Alert の独立分析](/BitcoinArchive/ja/entries/aftermath/2020-07-20-whale-alert-satoshi-fortune/)と[複数推定の総合](/BitcoinArchive/ja/entries/aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis/)が記録した通り、第 2 層の一部として今も働いている。動かないバーの隣で、動くバーだけが順位を入れ替えていく。
 
 <!-- chart: holders-race -->
 

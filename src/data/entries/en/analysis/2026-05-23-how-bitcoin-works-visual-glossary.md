@@ -82,7 +82,9 @@ flowchart LR
 
 The rules of the system are defined by a short paper [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) published in 2008, the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/). The software was released two months later, in January 2009, and has been running continuously ever since.
 
-One refinement before we move on. The node described above — the kind that stores the entire blockchain and independently verifies every rule — is called a **full node**. A lighter variant called a **light node**, or **SPV** client (for *simplified payment verification*), only downloads a tiny summary at the top of each block (the **block header**) and asks full nodes whether specific transactions exist. Many phone wallets run on SPV; many others use a still simpler model — querying a central server API operated by the wallet provider — which is even lighter but trusts the provider for everything. The whitepaper's § 8 sketches the SPV idea; the production engineering came years later, driven largely by [Mike Hearn's bitcoinj work](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/). For the rest of this entry, "node" means full node unless stated otherwise.
+One refinement before we move on. The node described above — the kind that stores the entire blockchain and independently verifies every rule — is called a **full node**. A lighter variant called a **light node**, or **SPV** client (for *simplified payment verification*), only downloads a tiny summary at the top of each block (the **block header**) and asks full nodes whether specific transactions exist. Many phone wallets run on SPV; many others use a still simpler model — querying a central server API operated by the wallet provider — which is even lighter but trusts the provider for everything.
+
+The whitepaper's § 8 sketches the SPV idea; the production engineering came years later, driven largely by [Mike Hearn's bitcoinj work](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/). For the rest of this entry, "node" means full node unless stated otherwise.
 
 The rest of this entry explains, step by step, how that runs-by-itself system actually works.
 
@@ -235,7 +237,9 @@ flowchart TB
 
 So who decides which transactions go into the next block, and where do new bitcoins come from?
 
-The answer is **mining**. Any node willing to do the work can be a **miner**. Miners collect waiting transactions, package them into a candidate block, and then race to solve a puzzle. The puzzle is: *find a number to put in the block such that the block's hash starts with a certain number of zeros.* That number you keep changing is called the **nonce**. Because the hash function (chapter 4) gives completely unpredictable outputs, the only way to find a winning nonce is to keep trying. This trying-millions-of-numbers process is called **proof-of-work** (often abbreviated **PoW**) — first proposed for spam control in [Adam Back's 1997 Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/), reused in Bitcoin as the core mechanism.
+The answer is **mining**. Any node willing to do the work can be a **miner**. Miners collect waiting transactions, package them into a candidate block, and then race to solve a puzzle.
+
+The puzzle is: *find a number to put in the block such that the block's hash starts with a certain number of zeros.* That number you keep changing is called the **nonce**. Because the hash function (chapter 4) gives completely unpredictable outputs, the only way to find a winning nonce is to keep trying. This trying-millions-of-numbers process is called **proof-of-work** (often abbreviated **PoW**) — first proposed for spam control in [Adam Back's 1997 Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/), reused in Bitcoin as the core mechanism.
 
 ```mermaid
 sequenceDiagram
@@ -264,7 +268,9 @@ flowchart TD
   FEES --> MR
 ```
 
-The block reward is not constant. It started at **50 BTC per block** in January 2009 and cuts in half every 210,000 blocks — about every four years. This event is called the **halving** (sometimes written *halvening*). After enough halvings, the block reward becomes 0 satoshi, and miners earn only transaction fees. The total number of bitcoins that will ever exist is the sum of every block reward across this schedule and works out to a hair under **21 million BTC**. The deeper consequences of the schedule are worked through in [the mining-reward exhaustion analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/).
+The block reward is not constant. It started at **50 BTC per block** in January 2009 and cuts in half every 210,000 blocks — about every four years. This event is called the **halving** (sometimes written *halvening*). After enough halvings, the block reward becomes 0 satoshi, and miners earn only transaction fees.
+
+The total number of bitcoins that will ever exist is the sum of every block reward across this schedule and works out to a hair under **21 million BTC**. The deeper consequences of the schedule are worked through in [the mining-reward exhaustion analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/).
 
 ```mermaid
 flowchart LR

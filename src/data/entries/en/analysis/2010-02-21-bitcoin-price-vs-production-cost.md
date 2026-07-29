@@ -168,7 +168,9 @@ NewLibertyStandard himself [replied in the same thread](/BitcoinArchive/entries/
 
 ## 3. The valve that gold has and Bitcoin lacks
 
-For an ordinary commodity, "price above cost" triggers two corrections at once: existing producers expand output and new producers enter, so supply rises and the price itself is pushed back down. Half of the correction happens on the price side. Bitcoin removes that half entirely. The issuance schedule is a consensus rule, and the difficulty retargets every 2,016 blocks so that more hashpower produces the same number of coins. Miner entry cannot increase the supply of new coins, and miner exit cannot decrease it. What entry and exit move is the difficulty — and therefore everyone's cost per coin.
+For an ordinary commodity, "price above cost" triggers two corrections at once: existing producers expand output and new producers enter, so supply rises and the price itself is pushed back down. Half of the correction happens on the price side.
+
+Bitcoin removes that half entirely. The issuance schedule is a consensus rule, and the difficulty retargets every 2,016 blocks so that more hashpower produces the same number of coins. Miner entry cannot increase the supply of new coins, and miner exit cannot decrease it. What entry and exit move is the difficulty — and therefore everyone's cost per coin.
 
 | Adjustment channel | Gold (classical commodity) | Bitcoin |
 |---|---|---|
@@ -189,7 +191,9 @@ This is the structural reading later formalised in Marthinsen and Gordon's "The 
 >
 > I think the case will be the same for Bitcoin.  The utility of the exchanges made possible by Bitcoin will far exceed the cost of electricity used.  Therefore, *not* having Bitcoin would be the net waste.
 
-Note the direction inside the analogy: the marginal cost of gold mining stays near the price of gold — cost tracking price, again. Two days later, [in the same thread](/BitcoinArchive/entries/forum/bitcointalk/topic-721/2010-08-09-re-bitcoin-minting-is-thermodynamically-perverse/), Satoshi added the operational corollary: generation should end up wherever it is cheapest, perhaps in cold climates with electric heat, where the waste heat is not wasted at all. The miner is a price-taker hunting the lowest cost — the cost side doing the adjusting.
+Note the direction inside the analogy: the marginal cost of gold mining stays near the price of gold — cost tracking price, again.
+
+Two days later, [in the same thread](/BitcoinArchive/entries/forum/bitcointalk/topic-721/2010-08-09-re-bitcoin-minting-is-thermodynamically-perverse/), Satoshi added the operational corollary: generation should end up wherever it is cheapest, perhaps in cold climates with electric heat, where the waste heat is not wasted at all. The miner is a price-taker hunting the lowest cost — the cost side doing the adjusting.
 
 ## 5. The modern literature: cost models and their critics
 
@@ -228,4 +232,6 @@ Alfred Marshall's *Principles of Economics* (1890) gave the classical debate its
 - Later work treats price and hashrate as an endogenous system in which the causality verdict depends on horizon and regime; the asymmetry documented here is the dominant direction, not the only one.
 - Nothing in this entry is valuation guidance. It is the documentary record of a question the archive's primary sources happen to answer unusually well.
 
-The event this analysis reads is recorded in [the first-exchange-rate entry](/BitcoinArchive/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/), and the primary posts are held in [topic 57](/BitcoinArchive/entries/forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable/) and [the thermodynamics thread](/BitcoinArchive/entries/forum/bitcointalk/topic-721/2010-08-07-re-bitcoin-minting-is-thermodynamically-perverse/); [the Malmi exchange advice](/BitcoinArchive/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/) and [the first sale](/BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/) supply the 2009 chain. The consensus-rule side — the halving schedule, the difficulty adjustment, and the fee-market future of miner revenue — is covered by the [monetary design entry](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/), the [fixed-supply-vs-adjustable-money analysis](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/), and the [fee-only-future analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/), which together explain why the valve of §3 stays shut and what replaces the subsidy when it ends.
+The event this analysis reads is recorded in [the first-exchange-rate entry](/BitcoinArchive/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/), and the primary posts are held in [topic 57](/BitcoinArchive/entries/forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable/) and [the thermodynamics thread](/BitcoinArchive/entries/forum/bitcointalk/topic-721/2010-08-07-re-bitcoin-minting-is-thermodynamically-perverse/); [the Malmi exchange advice](/BitcoinArchive/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/) and [the first sale](/BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/) supply the 2009 chain.
+
+The consensus-rule side — the halving schedule, the difficulty adjustment, and the fee-market future of miner revenue — is covered by the [monetary design entry](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/), the [fixed-supply-vs-adjustable-money analysis](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/), and the [fee-only-future analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/), which together explain why the valve of §3 stays shut and what replaces the subsidy when it ends.

@@ -168,7 +168,9 @@ NewLibertyStandard 本人も[同じスレッドで返信し](/BitcoinArchive/ja/
 
 ## 3. 金にあってビットコインにない調整弁
 
-普通の商品では、「価格がコストを上回る」と 2 つの調整が同時に走る。既存の生産者が増産し、新しい生産者が参入する。供給が増え、価格そのものが押し戻される。つまり調整の半分は価格の側で起きる。ビットコインはこの半分を丸ごと取り除いた。発行スケジュールはコンセンサスルールであり、難易度は 2,016 ブロックごとに再調整されて、ハッシュパワーが増えても生成されるコインの数は変わらない。マイナーの参入は新規コインの供給を増やせず、撤退は減らせない。参入と撤退が動かすのは難易度 — したがって全員の 1 コインあたりのコストである。
+普通の商品では、「価格がコストを上回る」と 2 つの調整が同時に走る。既存の生産者が増産し、新しい生産者が参入する。供給が増え、価格そのものが押し戻される。つまり調整の半分は価格の側で起きる。
+
+ビットコインはこの半分を丸ごと取り除いた。発行スケジュールはコンセンサスルールであり、難易度は 2,016 ブロックごとに再調整されて、ハッシュパワーが増えても生成されるコインの数は変わらない。マイナーの参入は新規コインの供給を増やせず、撤退は減らせない。参入と撤退が動かすのは難易度 — したがって全員の 1 コインあたりのコストである。
 
 | 調整の経路 | 金（古典的な商品） | ビットコイン |
 |---|---|---|
@@ -189,7 +191,9 @@ NewLibertyStandard 本人も[同じスレッドで返信し](/BitcoinArchive/ja/
 >
 > Bitcoin の場合も同じだと思う。Bitcoin によって可能になる取引の有用性は、使用される電力のコストをはるかに上回るだろう。したがって、Bitcoin を*持たない*ことこそが正味の無駄になるだろう。
 
-類推の内側にある向きに注意したい。金の採掘の限界費用は、金の価格付近に「とどまる」。ここでも、コストが価格を追う形になっている。2 日後、[同じスレッドで](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-721/2010-08-09-re-bitcoin-minting-is-thermodynamically-perverse/)サトシは運用上の帰結を付け加えた。生成は最も安い場所に行き着くはずで、それは電気暖房の寒冷地かもしれない。そこでは排熱が無駄にならないからだ。マイナーは価格を所与として最安の電力を探す側であり、調整を担うのはやはりコストの側である。
+類推の内側にある向きに注意したい。金の採掘の限界費用は、金の価格付近に「とどまる」。ここでも、コストが価格を追う形になっている。
+
+2 日後、[同じスレッドで](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-721/2010-08-09-re-bitcoin-minting-is-thermodynamically-perverse/)サトシは運用上の帰結を付け加えた。生成は最も安い場所に行き着くはずで、それは電気暖房の寒冷地かもしれない。そこでは排熱が無駄にならないからだ。マイナーは価格を所与として最安の電力を探す側であり、調整を担うのはやはりコストの側である。
 
 ## 5. 現代の研究 — コストモデルとその批判
 
@@ -228,4 +232,6 @@ NewLibertyStandard 本人も[同じスレッドで返信し](/BitcoinArchive/ja/
 - 後続研究は価格とハッシュレートを内生システムとして扱い、因果の判定は時間軸と局面に依存するとする。本エントリーが記録した非対称は支配的な方向であって、唯一の方向ではない。
 - 本エントリーのいかなる部分も価値評価の助言ではない。アーカイブの一次資料が例外的によく答えてくれる問いについての、文書記録である。
 
-本分析が読み解く出来事は[初の為替レートのエントリー](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/)に記録されており、一次投稿は[トピック 57](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable/) と[熱力学スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-721/2010-08-07-re-bitcoin-minting-is-thermodynamically-perverse/)が保持している。[マルミへの取引所助言](/BitcoinArchive/ja/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/)と[最初の売却](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)が 2009 年の連鎖をつなぐ。コンセンサスルールの側（半減期スケジュール、難易度調整、そしてマイナー収益の手数料市場への移行）は[通貨設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)、[固定供給対調整可能通貨分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)、[手数料のみの将来の分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)が扱っており、§3 の調整弁がなぜ閉じたままなのか、新規発行分が尽きたあとに何がそれを置き換えるのかを、三者を合わせて説明している。
+本分析が読み解く出来事は[初の為替レートのエントリー](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/)に記録されており、一次投稿は[トピック 57](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable/) と[熱力学スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-721/2010-08-07-re-bitcoin-minting-is-thermodynamically-perverse/)が保持している。[マルミへの取引所助言](/BitcoinArchive/ja/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/)と[最初の売却](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)が 2009 年の連鎖をつなぐ。
+
+コンセンサスルールの側（半減期スケジュール、難易度調整、そしてマイナー収益の手数料市場への移行）は[通貨設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)、[固定供給対調整可能通貨分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)、[手数料のみの将来の分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)が扱っており、§3 の調整弁がなぜ閉じたままなのか、新規発行分が尽きたあとに何がそれを置き換えるのかを、三者を合わせて説明している。

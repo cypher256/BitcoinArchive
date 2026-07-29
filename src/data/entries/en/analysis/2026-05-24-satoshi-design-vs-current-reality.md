@@ -168,7 +168,9 @@ flowchart TB
 
 **Satoshi wrote** (whitepaper § 1, "Introduction"): *"...allowing any two willing parties to transact directly with each other..."*. The implicit model was that ordinary payments would land on chain.
 
-**The reality.** Bitcoin's 1 MB historical block size limit caps the chain at roughly 7 transactions per second (much less under realistic transaction sizes). Routine retail payments cannot fit; even if they could, fees would price them out during peak load. The actual scaling path has been two-layer: SegWit (BIP 141, activated 2017) made room for the Lightning Network, where payments move off chain and only periodic settlements touch the base layer. Custodial exchanges *also* function as scaling layers — internal transfers between two Coinbase accounts never reach the chain.
+**The reality.** Bitcoin's 1 MB historical block size limit caps the chain at roughly 7 transactions per second (much less under realistic transaction sizes). Routine retail payments cannot fit; even if they could, fees would price them out during peak load. The actual scaling path has been two-layer: SegWit (BIP 141, activated 2017) made room for the Lightning Network, where payments move off chain and only periodic settlements touch the base layer.
+
+Custodial exchanges *also* function as scaling layers — internal transfers between two Coinbase accounts never reach the chain.
 
 **The drift began** with the block-size discussion in 2010 (Satoshi's own provisional 1 MB cap, intended as anti-spam) and crystallised through the 2015 – 2017 [fork wars](/BitcoinArchive/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/). For most everyday use today, Bitcoin functions less like the direct P2P cash the whitepaper invites a reader to imagine and more like a settlement layer beneath several stacked payment systems of varying trust — the outcome [James A. Donald anticipated by name in November 2008](/BitcoinArchive/participants/james-donald/), when he coined "bink" for a bitcoin bank and cast bitcoins as sitting beneath account money the way gold sat beneath the gold standard.
 

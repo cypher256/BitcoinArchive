@@ -142,7 +142,9 @@ The "harvest now, decrypt later" concern raises the timeline question for one sp
 
 ## 5. Migration paths
 
-Several proposals address quantum exposure in different ways. The Archive holds the [BIP 360 (P2MR) draft](/BitcoinArchive/entries/bip/2024-12-17-bip-0360/) — a soft-fork output type that behaves like Taproot with the key-path spend removed, committing only to the Merkle root of a script tree. P2MR is resistant to *long-exposure* attacks on elliptic-curve keys (where a public key sits visible on-chain after a spend), but explicitly not to *short-exposure* attacks (where a key revealed in the mempool is recovered before the transaction confirms). BIP 360 itself notes that short-exposure protection would require introducing post-quantum signatures, treated as a separate future proposal. Post-quantum signature schemes themselves — ML-DSA, FALCON, SLH-DSA — would be considerably larger than ECDSA: SLH-DSA signatures are roughly 8-50 KB depending on parameter set, against ECDSA's ~72 bytes.
+Several proposals address quantum exposure in different ways. The Archive holds the [BIP 360 (P2MR) draft](/BitcoinArchive/entries/bip/2024-12-17-bip-0360/) — a soft-fork output type that behaves like Taproot with the key-path spend removed, committing only to the Merkle root of a script tree. P2MR is resistant to *long-exposure* attacks on elliptic-curve keys (where a public key sits visible on-chain after a spend), but explicitly not to *short-exposure* attacks (where a key revealed in the mempool is recovered before the transaction confirms). BIP 360 itself notes that short-exposure protection would require introducing post-quantum signatures, treated as a separate future proposal.
+
+Post-quantum signature schemes themselves — ML-DSA, FALCON, SLH-DSA — would be considerably larger than ECDSA: SLH-DSA signatures are roughly 8-50 KB depending on parameter set, against ECDSA's ~72 bytes.
 
 The proposals trade off along three axes:
 

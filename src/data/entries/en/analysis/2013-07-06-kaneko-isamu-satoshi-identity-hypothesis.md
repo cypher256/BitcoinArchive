@@ -40,7 +40,9 @@ inlineLinkKeywords:
 
 ![A faceless dark silhouette bearing the numeral 47 stands beside a magnifying glass hovering over a case file and a code snippet, with a small peer-to-peer network diagram and two overlapping horizontal timeline bars below labeled legal scrutiny and Bitcoin development.](/BitcoinArchive/images/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis-hero.png)
 
-The Kaneko-as-Satoshi hypothesis is the only major Satoshi-identity claim that exists almost entirely in Japanese-language discourse — extensive in 2ch / 5ch forums and Japanese tech press, essentially absent from English-language Bitcoin coverage. Its subject, Isamu Kaneko (1970–2013), was a University of Tokyo research associate who released the Winny peer-to-peer file-sharing system on 2channel in May 2002, spent seven and a half years (2004–2011) as the defendant in a Japanese criminal trial that became a landmark on the criminal liability of tool-developers, and died of a myocardial infarction in July 2013, two years after his Supreme Court acquittal. For comparison with other named candidates see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
+The Kaneko-as-Satoshi hypothesis is the only major Satoshi-identity claim that exists almost entirely in Japanese-language discourse — extensive in 2ch / 5ch forums and Japanese tech press, essentially absent from English-language Bitcoin coverage.
+
+Its subject, Isamu Kaneko (1970–2013), was a University of Tokyo research associate who released the Winny peer-to-peer file-sharing system on 2channel in May 2002, spent seven and a half years (2004–2011) as the defendant in a Japanese criminal trial that became a landmark on the criminal liability of tool-developers, and died of a myocardial infarction in July 2013, two years after his Supreme Court acquittal. For comparison with other named candidates see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
 
 ## Background: who Kaneko was
 
@@ -52,7 +54,9 @@ In May 2004, Kaneko was arrested by the Kyoto Prefectural Police on charges of *
 
 Kaneko died on July 6, 2013, of myocardial infarction. He was 42.
 
-This entry treats the Winny criminal case as historical fact. The *legal merits* of the case (whether Kaneko intended infringement, whether Winny itself was unlawful, the moral implications of the verdict) are **not used as arguments about the Satoshi identity question**; using a criminal conviction to make a character claim is not evidence about authorship. However, an *empirical consequence* of the case — Kaneko's high public visibility during 2007–2008 as a convicted defendant on appeal under sustained scrutiny from police, prosecution, his legal team, the Japanese technical press, and the academic community — is a documentary fact that the visibility analysis in §2.1 has to engage with. The trial's legal substance is not the point. Its observable effect on Kaneko's public visibility is a fact the hypothesis has to contend with.
+This entry treats the Winny criminal case as historical fact. The *legal merits* of the case (whether Kaneko intended infringement, whether Winny itself was unlawful, the moral implications of the verdict) are **not used as arguments about the Satoshi identity question**; using a criminal conviction to make a character claim is not evidence about authorship.
+
+However, an *empirical consequence* of the case — Kaneko's high public visibility during 2007–2008 as a convicted defendant on appeal under sustained scrutiny from police, prosecution, his legal team, the Japanese technical press, and the academic community — is a documentary fact that the visibility analysis in §2.1 has to engage with. The trial's legal substance is not the point. Its observable effect on Kaneko's public visibility is a fact the hypothesis has to contend with.
 
 ## 1. The evidence
 
@@ -125,7 +129,9 @@ The visual overlap is the §2.1 argument made spatial: the Kaneko legal case lan
 
 Bitcoin's intellectual genealogy — Hashcash (Adam Back, 1997), b-money (Wei Dai, 1998), Bit Gold (Nick Szabo, 2005), the cryptographic-primitives discussion in the cypherpunks mailing list, and the metzdowd Cryptography List where Satoshi first announced — is documented in the public record. Kaneko has no documented presence in this conversation. Winny's design (2002) drew on a different lineage (Freenet, Gnutella, anonymous-routing literature), and Kaneko's published academic work concerns P2P routing, not digital cash or distributed ledgers.
 
-**Freenet reference angle (primary source).** Kaneko's Winny opening announcement (2002-04-01, 2channel download-software board, post number 47; [full text in the biography](/BitcoinArchive/participants/isamu-kaneko/)) names Freenet as the **starting point of the design**. Satoshi's archive-internal Freenet reference, by contrast, sits in the [2010-05 BitcoinTalk URI-scheme thread](/BitcoinArchive/entries/forum/bitcointalk/topic-55/2010-05-16-re-uri-scheme-for-bitcoin/), where he adopts another participant's Freenet URI example as the model for the `bitcoin:` URI scheme — a single point of contact at the URI-design level, never cited in the whitepaper. That both knew Freenet is unremarkable for any P2P-system designer in this era (= neither support nor counter); the difference in angle — declared starting point (Kaneko) vs URI-design reference (Satoshi) — pins the lineage divergence in primary-source material.
+**Freenet reference angle (primary source).** Kaneko's Winny opening announcement (2002-04-01, 2channel download-software board, post number 47; [full text in the biography](/BitcoinArchive/participants/isamu-kaneko/)) names Freenet as the **starting point of the design**.
+
+Satoshi's archive-internal Freenet reference, by contrast, sits in the [2010-05 BitcoinTalk URI-scheme thread](/BitcoinArchive/entries/forum/bitcointalk/topic-55/2010-05-16-re-uri-scheme-for-bitcoin/), where he adopts another participant's Freenet URI example as the model for the `bitcoin:` URI scheme — a single point of contact at the URI-design level, never cited in the whitepaper. That both knew Freenet is unremarkable for any P2P-system designer in this era (= neither support nor counter); the difference in angle — declared starting point (Kaneko) vs URI-design reference (Satoshi) — pins the lineage divergence in primary-source material.
 
 ### 2.3 Code and prose register
 

@@ -33,7 +33,9 @@ relatedEntries:
 
 On April 30, 2024, Spanish authorities arrested Roger Ver on a U.S. extradition request. The DOJ indictment alleges he under-reported the value of his Bitcoin holdings when he renounced U.S. citizenship in 2014, evading approximately $48 million in exit-tax obligations.
 
-Thirteen years earlier, in 2011, Ver had been one of Bitcoin's earliest angel investors — putting seed money into BitInstant, Blockchain.info, Kraken, Bitpay, Bitcoin Magazine, and Ripple. His Silicon Valley computer-parts company Memory Dealers became one of the first established retailers to accept Bitcoin. The nickname "Bitcoin Jesus" — sometimes self-applied, sometimes given to him by journalists — emerged from his evangelistic conference style. By 2017 he had become the most visible advocate of the [Bitcoin Cash hard fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/), framing BCH as "the real Bitcoin Satoshi described" on the bitcoin.com domain he had acquired.
+Thirteen years earlier, in 2011, Ver had been one of Bitcoin's earliest angel investors — putting seed money into BitInstant, Blockchain.info, Kraken, Bitpay, Bitcoin Magazine, and Ripple. His Silicon Valley computer-parts company Memory Dealers became one of the first established retailers to accept Bitcoin. The nickname "Bitcoin Jesus" — sometimes self-applied, sometimes given to him by journalists — emerged from his evangelistic conference style.
+
+By 2017 he had become the most visible advocate of the [Bitcoin Cash hard fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/), framing BCH as "the real Bitcoin Satoshi described" on the bitcoin.com domain he had acquired.
 
 Roger Keith Ver was born January 27, 1979 in San Jose, California. He renounced U.S. citizenship in 2014 and acquired citizenship from Saint Kitts and Nevis. He disputes the 2024 charges.
 
@@ -82,6 +84,10 @@ On April 30, 2024, Spanish authorities arrested Ver on a U.S. extradition reques
 
 ## Significance to Bitcoin
 
-Ver's record matters in this archive for three roles. First, his 2011-era investments into the founding generation of Bitcoin businesses materially shaped which projects survived their seed phase. Second, he was the principal public face of the larger-block faction during the 2015–2017 dispute, and his post-2017 promotion of BCH on bitcoin.com is the dominant editorial channel through which the BCH side of that history reached general audiences. Third, his 2024 arrest is the highest-profile criminal case involving an early Bitcoin holder to date, and the legal outcome — whichever direction it goes — will set precedents for the tax treatment of expatriated Bitcoin wealth.
+Ver's record matters in this archive for three roles. First, his 2011-era investments into the founding generation of Bitcoin businesses materially shaped which projects survived their seed phase.
+
+Second, he was the principal public face of the larger-block faction during the 2015–2017 dispute, and his post-2017 promotion of BCH on bitcoin.com is the dominant editorial channel through which the BCH side of that history reached general audiences.
+
+Third, his 2024 arrest is the highest-profile criminal case involving an early Bitcoin holder to date, and the legal outcome — whichever direction it goes — will set precedents for the tax treatment of expatriated Bitcoin wealth.
 
 *[Editor: the date 2011-04-01 used in this entry is a representative placeholder for Ver's first documented Bitcoin involvement; the precise day in early 2011 is not fixed across his published interviews. Several biographical claims (Memory Dealers founding date, expatriation date, investment portfolio) reflect publicly-stated details from journalist profiles rather than primary records.]*
