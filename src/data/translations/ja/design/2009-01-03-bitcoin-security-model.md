@@ -340,4 +340,4 @@ flowchart TD
 - **手数料のみのセキュリティー予算** — 新規発行分主体からの手数料主体のマイナー収入への長期的移行とチェーンセキュリティーへの影響。[マイニング報酬枯渇分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)で解説。
 - **量子脅威の深掘り** — タイムライン推定、脆弱な UTXO の全数調査、BIP 360 の仕組み、他システムの耐量子移行との比較。[量子脅威分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-bitcoin-quantum-threat/)で解説。
 
-プルーフ・オブ・ワークの仕組みそのものは[コンセンサス設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)にある。ここにあるのは同じ機構の攻撃側 ─ 51% 攻撃の経済、利己的マイニングのゲーム理論、そして脅威モデル全体である。
+プルーフ・オブ・ワークの仕組みそのものは[コンセンサス設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)にある。ここにあるのは同じ機構の攻撃側 — 51% 攻撃の経済、利己的マイニングのゲーム理論、そして脅威モデル全体である。

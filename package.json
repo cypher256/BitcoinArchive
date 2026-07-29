@@ -40,6 +40,7 @@
     "audit:f-candidates": "node scripts/check-editorial-markers.mjs --report-f-candidates",
     "audit:inline-link-coverage": "node scripts/check-inline-link-coverage.mjs --report-unused",
     "audit:inline-reference-gaps": "node scripts/check-internal-links.mjs --inline-gaps",
+    "audit:ja-dash-usage": "node scripts/audit-ja-dash-usage.mjs",
     "audit:ja-naturalness": "node scripts/audit-ja-naturalness.mjs",
     "audit:ja-quote-consistency": "node scripts/audit-ja-quote-consistency.mjs",
     "audit:mermaid-contrast": "node scripts/audit-mermaid-contrast.mjs",

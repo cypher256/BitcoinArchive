@@ -98,6 +98,7 @@ of truth; the role column below is a one-line pointer, not a restatement.
 | `audit-en-inline-in-ja.mjs` | English text inline in JA prose | `audit:en-inline-in-ja` |
 | `audit-external-link-redundancy.mjs` | Body external links that duplicate an internal entry | `audit:external-link-redundancy` |
 | `audit-external-links.mjs` | Dead external links (network HEAD / GET) | `audit:external-links` |
+| `audit-ja-dash-usage.mjs` | Wrong dash glyph (`─`/`―`) and per-paragraph dash density in JA prose | `audit:ja-dash-usage` |
 | `audit-ja-naturalness.mjs` | JA prose naturalness (headless Claude per file) | `audit:ja-naturalness` |
 | `audit-ja-quote-consistency.mjs` | Divergent JA translations of the same EN quote | `audit:ja-quote-consistency` |
 | `audit-mermaid-contrast.mjs` | Mermaid label WCAG contrast (dev + Playwright) | `audit:mermaid-contrast` |

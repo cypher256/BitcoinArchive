@@ -81,4 +81,4 @@ Skye Grey の分析は手作業による文体計量である：人間の判断�
 
 ニック・サボ＝サトシ仮説の分析的検討（Skye Grey の文体計量的根拠を、2008 年 4 月の実装要請、2011 年 5 月の三人称表現、2007〜2008 年を通した Unenumerated の継続的な投稿活動、サボの繰り返しの否定と照合する）については、[ニック・サボ＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)を参照。
 
-[ニック・サボ正体仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)は、文体計量の柱を Skye Grey の所見の上に立てている ─ この種の定量的論拠として最初のものであり、反証材料が退けねばならない相手でもある。
+[ニック・サボ正体仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)は、文体計量の柱を Skye Grey の所見の上に立てている — この種の定量的論拠として最初のものであり、反証材料が退けねばならない相手でもある。

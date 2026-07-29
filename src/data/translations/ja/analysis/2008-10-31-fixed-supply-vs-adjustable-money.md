@@ -325,4 +325,4 @@ quadrantChart
 
 ハードキャップ vs 調整可能の論争のハイエク的枠組み ― ハイエク 1976 年『貨幣発行自由化論』は*競合する調整可能な*私的発行を論じたが、ビットコインはそれを*単一のアルゴリズム固定*スケジュールで置き換えた ― は[ハイエク=エクストロピアン系譜エントリー](/BitcoinArchive/ja/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/)で、より長い思想史的系譜分析として扱う。
 
-[マイニング報酬枯渇の分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)は、新規発行が尽きた後にネットワークが答えねばならない問いを扱う。ここに並ぶ供給設計が、各チェーンの選んだ他の軸 ─ 合意形成・初期配分・台帳の可視性・規則を変えられるのは誰か ─ に対してどこに位置するかは、[アルトコインの数と設計の比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)が表にしている。
+[マイニング報酬枯渇の分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)は、新規発行が尽きた後にネットワークが答えねばならない問いを扱う。ここに並ぶ供給設計が、各チェーンの選んだ他の軸 — 合意形成・初期配分・台帳の可視性・規則を変えられるのは誰か — に対してどこに位置するかは、[アルトコインの数と設計の比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)が表にしている。

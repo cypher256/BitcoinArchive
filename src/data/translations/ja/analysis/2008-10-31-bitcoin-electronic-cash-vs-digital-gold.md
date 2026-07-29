@@ -92,18 +92,18 @@ translationStatus: complete
 ```mermaid
 timeline
     title 電子キャッシュから デジタルゴールドへ
-    2008 : 白書が公開される ─ 表題は 現金と言っていた (10月31日)
+    2008 : 白書が公開される — 表題は 現金と言っていた (10月31日)
     %% link: /BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/
-    2010 : ピザ 2 枚に 1 万 BTC ─ 設計どおりに 使われた日 (5月22日)
+    2010 : ピザ 2 枚に 1 万 BTC — 設計どおりに 使われた日 (5月22日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/
-         : サトシが 回帰定理に答える ─ 価値の根は 希少性 (8月27日)
+         : サトシが 回帰定理に答える — 価値の根は 希少性 (8月27日)
     %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/
          : スパム対策の 1 MB 上限が 基盤層に天井をつくる (9月)
     2013 : ウェイ・ダイが 固定供給こそ 現金に向かない理由だと 名指す
     %% link: /BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/
     2015 : 基盤層が何を運ぶべきかで ブロックサイズ戦争が 始まる
     %% link: /BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/
-    2017 : 分離による決着 ─ 大ブロック派が 枝分かれする (8月)
+    2017 : 分離による決着 — 大ブロック派が 枝分かれする (8月)
     %% link: /BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/
 ```
 
