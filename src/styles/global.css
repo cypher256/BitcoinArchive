@@ -264,9 +264,11 @@
     --color-link: #7ab8ff;
     --color-link-hover: #a5cdff;
     --color-border: rgba(232, 234, 238, 0.10);
-    /* Dark mode already reads clearly against the navy bg — no boost
-       needed, so this equals --color-border here (see :root above). */
-    --color-border-strong: var(--color-border);
+    /* Small dark-mode-only bump (0.10 -> 0.13): heading underlines and
+       the entry-card divider read slightly too faint against the navy
+       bg. Modest relative to light mode's boost (0.08 -> 0.16) since
+       dark mode only needed a nudge, not a full doubling. */
+    --color-border-strong: rgba(232, 234, 238, 0.13);
     --color-source-bg: #1a212c;
     /* Amber-400 — light, warm, distinct from `--color-accent`
        (`#7aa3d4` lighter-navy) so the Satoshi accent stripe and
@@ -350,9 +352,9 @@
   --color-link: #7ab8ff;
   --color-link-hover: #a5cdff;
   --color-border: rgba(232, 234, 238, 0.10);
-  /* Same as the @media dark block above — no light-mode-only boost
-     needed here either. */
-  --color-border-strong: var(--color-border);
+  /* Same small bump as the @media dark block above, kept identical so
+     explicit data-mode="dark" matches OS dark exactly. */
+  --color-border-strong: rgba(232, 234, 238, 0.13);
   --color-source-bg: #1a212c;
   /* Amber-400 — kept identical to the @media variant above so
      explicit data-mode="dark" matches OS dark exactly. See the
