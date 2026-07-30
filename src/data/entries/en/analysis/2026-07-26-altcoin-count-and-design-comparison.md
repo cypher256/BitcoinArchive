@@ -201,7 +201,7 @@ Jackson Palmer, asked what Dogecoin was for, gave the matching answer:
 
 The appreciation case, in other words, is made by holders and not by specifications. That is not an argument against it — a scarce, non-discretionary asset can be worth holding whether or not its designer said so, and [the digital-gold reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) sets out the structural version of that case, while [Satoshi's own production-cost argument](/BitcoinArchive/entries/analysis/2010-02-21-bitcoin-price-vs-production-cost/) is the one place in this history where a designer does reason about price directly. It is an argument for reading the two claims separately, because the projects themselves do.
 
-The coins in §7 are the exception, and they invert the question. A coin whose supply is allocated to its issuer before launch, and whose fee revenue accrues to that issuer regardless of price, is a design with a very definite view about where value goes — it just is not a view about the unit price.
+The coins in §8 are the exception, and they invert the question. A coin whose supply is allocated to its issuer before launch, and whose fee revenue accrues to that issuer regardless of price, is a design with a very definite view about where value goes — it just is not a view about the unit price.
 
 ### The bind, and the question underneath it
 
@@ -314,8 +314,26 @@ Three more founders left a shorter record:
 - **Chris Larsen** (Ripple co-founder) wrote in April 2021 that proof-of-work is "a brilliantly designed technology that is becoming outdated in today's world," and argued that changing it was "critically important for Bitcoin to remain the world's dominant cryptocurrency" — an objection framed as advice rather than as a competitive claim.
 - **Brad Garlinghouse** (Ripple CEO) argued in 2018 that Bitcoin is effectively controlled by a small number of Chinese mining operations, and in 2020 that he is "bullish on BTC as a store of value, but not for payments" — the same electronic-cash-versus-digital-gold split that [runs through Bitcoin's own history](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/).
 
-## 7. The far end: tokens issued by presidents
-The launchpad numbers in §8 describe an industrial process. The clearest single illustration of what that process makes possible arrived in January 2025, and the facts are documented by the issuers themselves.
+## 7. How many altcoins are there?
+Two data providers, asked on the same day, disagree by three orders of magnitude. Neither is wrong; they are counting different things.
+
+| Source | Figure | What is being counted | As of |
+|---|---|---|---|
+| CoinGecko homepage | **17,825** | Coins in its curated catalog | 2026-07-26 |
+| CoinGecko global-charts page | **16,775** | Coins tracked across 1,509 exchanges — a different page of the same site, the same day | 2026-07-26 |
+| CoinMarketCap homepage | **54.77 million** | Every asset it has detected, curated or not | 2026-07-26 |
+| CoinMarketCap global-metrics API | **2,941** | `active_cryptocurrencies` — its own internal active count | 2024-10-11 |
+
+CoinMarketCap states the reason plainly: "Our view is that we should always over-provide data (as opposed to censoring and policing information)." A catalog built that way counts tokens that exist on a chain. A curated catalog counts tokens someone decided were worth listing. The first is a property of block space; the second is an editorial judgment. The real floor is set by the launchpads — pump.fun alone had minted more than 11.9 million tokens by June 2026, several hundred times CoinGecko's entire list.
+
+Almost none of them last, and here too the measurement depends on the definition. Of pump.fun's tokens, CoinGecko Research found 68.67% recorded their last trade on the day they launched, and two academic survival studies put the rate that reach a real market at 0.63% and, eight months later on a larger cohort, 0.198%. Of the 2017-era ICOs, a Satis Group review classified roughly 78% as identified scams and found about 15% ever traded on an exchange; a Boston College study found 83% of projects that neither raised capital nor listed went quiet, against 16% of those that did both. The dead-coin trackers that try to total it up disagree by an order of magnitude, because each uses its own definition.
+
+<!-- chart: altcoin-population-counts -->
+
+So the honest answer to "how many altcoins are there" is a question in return: do you mean things that trade, things that are listed, or things that exist? Any single number quoted without that qualifier is measuring something the person quoting it has not specified — and figures drawn from different populations must never be compared or added.
+
+## 8. The far end: tokens issued by presidents
+The launchpad numbers in §7 describe an industrial process. The clearest single illustration of what that process makes possible arrived in January 2025, and the facts are documented by the issuers themselves.
 
 On January 17, 2025, three days before his inauguration, Donald Trump announced a token on his own Truth Social account, directing followers to its website. The token's official site states the allocation:
 
@@ -339,28 +357,10 @@ The regulatory position is that this category sits outside securities protection
 
 This archive records these events and does not characterize the intent behind them. What it can say is structural, and the first structural fact is that none of these is a chain. All four are tokens minted on Solana, which appears in §2 with an issuance rule, a consensus mechanism and a published argument about what its money is for — none of which a token minted on its ledger inherits. Such a token's supply is not a schedule; it is a number the issuer chose. So every property §3 tests for is absent by construction: the supply is allocated to the issuer before launch, the issuer is a named party, the launch is announced by that party, and the fee revenue accrues to that party regardless of the price. It is the exact inverse of the launch condition Bitcoin had — and it is now cheap enough that the process runs tens of thousands of times a day.
 
-## 8. How many altcoins are there?
-Two data providers, asked on the same day, disagree by three orders of magnitude. Neither is wrong; they are counting different things.
-
-| Source | Figure | What is being counted | As of |
-|---|---|---|---|
-| CoinGecko homepage | **17,825** | Coins in its curated catalog | 2026-07-26 |
-| CoinGecko global-charts page | **16,775** | Coins tracked across 1,509 exchanges — a different page of the same site, the same day | 2026-07-26 |
-| CoinMarketCap homepage | **54.77 million** | Every asset it has detected, curated or not | 2026-07-26 |
-| CoinMarketCap global-metrics API | **2,941** | `active_cryptocurrencies` — its own internal active count | 2024-10-11 |
-
-CoinMarketCap states the reason plainly: "Our view is that we should always over-provide data (as opposed to censoring and policing information)." A catalog built that way counts tokens that exist on a chain. A curated catalog counts tokens someone decided were worth listing. The first is a property of block space; the second is an editorial judgment. The real floor is set by the launchpads — pump.fun alone had minted more than 11.9 million tokens by June 2026, several hundred times CoinGecko's entire list.
-
-Almost none of them last, and here too the measurement depends on the definition. Of pump.fun's tokens, CoinGecko Research found 68.67% recorded their last trade on the day they launched, and two academic survival studies put the rate that reach a real market at 0.63% and, eight months later on a larger cohort, 0.198%. Of the 2017-era ICOs, a Satis Group review classified roughly 78% as identified scams and found about 15% ever traded on an exchange; a Boston College study found 83% of projects that neither raised capital nor listed went quiet, against 16% of those that did both. The dead-coin trackers that try to total it up disagree by an order of magnitude, because each uses its own definition.
-
-<!-- chart: altcoin-population-counts -->
-
-So the honest answer to "how many altcoins are there" is a question in return: do you mean things that trade, things that are listed, or things that exist? Any single number quoted without that qualifier is measuring something the person quoting it has not specified — and figures drawn from different populations must never be compared or added.
-
 ## 9. Limits of this reading
 - **Not investment advice, and not a prediction.** No price target, no ranking, no "which one wins." The archive's [standing position on price](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) is that supply design is a bet whose outcome is not settled, and the same applies here.
 - **Not a technical benchmark.** Throughput, fees, and latency change with every release; a table of them would be wrong within months. The axes chosen above are the ones that change rarely, because they are decided at launch.
 - **Not a completeness claim.** Twelve chains out of a population whose lower bound is eight figures is a sample chosen for one reason: these are the chains that recur in the Bitcoin record this archive keeps.
 - **Not a verdict on any founder.** The biographies collect what people said, with sources and dates. Where a founder's statements conflict with each other, the conflict is recorded rather than resolved.
 
-The single defensible conclusion is the one §8 forces. Any argument that depends on how many cryptocurrencies exist is an argument that has not defined its terms — and most arguments in this category, in both directions, depend on exactly that.
+The single defensible conclusion is the one §7 forces. Any argument that depends on how many cryptocurrencies exist is an argument that has not defined its terms — and most arguments in this category, in both directions, depend on exactly that.

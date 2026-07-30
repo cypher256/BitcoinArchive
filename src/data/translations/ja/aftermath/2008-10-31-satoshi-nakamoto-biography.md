@@ -96,7 +96,9 @@ timeline
 
 2009年1月3日、サトシは[ブロック 0](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/) のパラメーターを定義した。そのコインベース欄に埋め込まれていたのは、当日付の『タイムズ』紙一面の見出し：
 
-> 「The Times 03/Jan/2009 Chancellor on brink of second bailout for banks」
+> The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
+>
+> 財務相、銀行への 2 度目の救済へ
 
 ブロック 0 はソースコード内に定数としてハードコードされており、各ノードが同じパラメーターからローカルに再構築する（詳細は[ジェネシスブロックハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)を参照）。1月8日、[Bitcoin v0.1 が公開された](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)。その 4 日後、ブロック 170 がサトシから[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)への 10 BTC を運んだ。これが[史上初の個人間ビットコイン送金](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)である。
 
