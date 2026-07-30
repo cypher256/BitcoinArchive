@@ -118,7 +118,7 @@ Where `k` should sit next is no longer IOHK's call to make alone. It is a live g
 
 ## Forty-five billion, sold in four stages, and eight months of one company's blocks
 
-The supply caps at 45 billion ADA — on the scarcity axis, the same side of the ledger Bitcoin sits on. The road to that cap looked nothing alike.
+The supply caps at 45 billion ADA — on the scarcity axis, [the twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) places Cardano on the same side of the ledger as Bitcoin. The road to that cap looked nothing alike.
 
 Between October 2015 and January 2017, Cardano ran a public voucher sale in four stages across Asia, selling just over 25.9 billion ADA. Of that total, 5,185,414,108 ADA — 20% — went to IOHK, EMURGO, and the Cardano Foundation. In November 2023, Hoskinson described the sale on X in different terms:
 

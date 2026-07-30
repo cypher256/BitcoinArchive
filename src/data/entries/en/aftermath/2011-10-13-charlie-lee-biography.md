@@ -84,7 +84,7 @@ Four things changed, and each is Bitcoin's figure multiplied or divided by exact
 | Supply cap | 21 million | 84 million | × 4 |
 | Halving interval | 210,000 blocks | 840,000 blocks | × 4 |
 
-The set is internally consistent, as [the launch record](/BitcoinArchive/entries/aftermath/2011-10-13-litecoin-launch/) sets out.
+The set is internally consistent, as [the launch record](/BitcoinArchive/entries/aftermath/2011-10-13-litecoin-launch/) sets out. [The twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) groups Litecoin with the chains that kept Bitcoin's hard cap and changed only the scale.
 
 Even the choice of Scrypt was framed as coexistence, not competition:
 

@@ -82,7 +82,7 @@ He is equally explicit that the property he gave up is real, and that giving it 
 <!-- audit:quote-skip -->
 > Bitcoin is obviously extremely decentralized, and there's no central company driving it forward, and that's a really awesome model, but it's very hard to replicate.
 
-"Very hard to replicate" is the honest form of the concession. The founder-led chains that came after Bitcoin did not decline decentralization on principle; most of them concluded it could not be reproduced deliberately, because Bitcoin's version of it depends on a launch condition — an absent founder, no pre-issuance, no company — that cannot be re-staged once you are visibly staging it.
+"Very hard to replicate" is the honest form of the concession. The founder-led chains that came after Bitcoin did not decline decentralization on principle; most of them concluded it could not be reproduced deliberately, because Bitcoin's version of it depends on a launch condition — an absent founder, no pre-issuance, no company — that cannot be re-staged once you are visibly staging it. [The twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) finds the same concession repeated across most of the founder-led chains it tracks.
 
 The court record in *SEC v. Ripple* states the design intent as an undisputed fact, in the judge's own summary:
 

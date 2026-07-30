@@ -55,7 +55,7 @@ translationStatus: complete
 
 CENTRE wrote that into its own whitepaper before a single unit of USD Coin existed. Circle launched the token on September 26, 2018 through the consortium it had just formed with Coinbase, and the founding document named the cost of stability in the same breath as the stability itself.
 
-An issuer, a reserve, and a redemption desk are the three things Bitcoin's design was built to need none of. USDC's own whitepaper is organized around exactly those three, and by 2026 the result circulates at roughly $73 billion.
+An issuer, a reserve, and a redemption desk are the three things Bitcoin's design was built to need none of. USDC's own whitepaper is organized around exactly those three, and by 2026 the result circulates at roughly $73 billion. [The twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) puts USDC in the one column where price does not move at all — pegged, alongside USDT, where new money reaching the issuer mints another unit instead of moving the price.
 
 ```mermaid
 timeline

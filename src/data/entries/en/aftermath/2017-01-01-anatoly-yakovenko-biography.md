@@ -137,7 +137,7 @@ Solana's own account of its early token supply is on the record and belongs next
 <!-- audit:quote-skip -->
 > The problem: we did not disclose this information to the public, as well as the size and nature of the loan, during the CoinList auction and subsequent Binance listing.
 
-The loan was 11,365,067 SOL, lent from the Foundation to a market-making firm. Solana states the full amount was removed from circulating supply; a separate company post states that 3,365,067 of it was actually returned by the market maker into a Foundation-controlled wallet. Both figures appear in Solana's own writing and should be read together rather than collapsed into one number.
+The loan was 11,365,067 SOL, lent from the Foundation to a market-making firm. Solana states the full amount was removed from circulating supply; a separate company post states that 3,365,067 of it was actually returned by the market maker into a Foundation-controlled wallet. Both figures appear in Solana's own writing and should be read together rather than collapsed into one number. [The twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) reads the same disclosure as one case among several: founders holding supply before their own chain's monetary philosophy was ever tested.
 
 The SEC named SOL among the crypto assets it alleged were unregistered securities in its June 2023 actions; the Foundation rejected the characterization, the agency later moved to drop SOL from the Binance case, and the Coinbase case was dismissed in February 2025. A 2022 class action naming Yakovenko personally was voluntarily dismissed as to him without prejudice in 2024, per the court's order — the case continued against other defendants.
 

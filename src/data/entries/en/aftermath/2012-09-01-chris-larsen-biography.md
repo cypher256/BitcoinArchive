@@ -73,7 +73,7 @@ On April 21, 2021 — Earth Day — Larsen published an essay arguing that the e
 <!-- audit:quote-skip -->
 > Bitcoin alone consuming an average of 132 TWh a year (equivalent to roughly 12 million U.S. homes)
 
-And he named what he thought that number meant for the technology underneath it:
+And he named what he thought that number meant for the technology underneath it — the same line [the twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) records as his verdict on Bitcoin's mining:
 
 <!-- audit:quote-skip -->
 > We should see PoW for what it is — a brilliantly designed technology that is becoming outdated in today's world.

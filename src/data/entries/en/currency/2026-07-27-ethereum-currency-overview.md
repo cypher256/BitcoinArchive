@@ -68,7 +68,7 @@ translationStatus: complete
 
 Vitalik Buterin wrote that in a GitHub proposal on April 1, 2018, recommending a maximum of 120,204,432 ETH — almost exactly double what his own project had sold in its 2014 presale. EIP-960 went nowhere; GitHub marks the issue closed, stale. The date fell on April Fools' Day, but the text works through the exact reward-unit math a hard fork would have needed, block by block. Nothing about it reads as a joke.
 
-The person proposing that cap had, four years earlier, written the whitepaper that ruled one out by name. That reversal, still sitting there unresolved, is the place to start reading Ethereum's monetary design: an issuance rule with no ceiling, a 2021 mechanism that burns part of every transaction fee, and a 2022 switch in who is even allowed to add new coins.
+The person proposing that cap had, four years earlier, written the whitepaper that ruled one out by name. That reversal, still sitting there unresolved, is the place to start reading Ethereum's monetary design: an issuance rule with no ceiling, a 2021 mechanism that burns part of every transaction fee, and a 2022 switch in who is even allowed to add new coins. [The twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) already sets Ethereum apart from every other chain in its table, the one design where issuance answers to network usage rather than a fixed schedule — what that table has no room to show is how the number inside that category actually moves.
 
 ```mermaid
 timeline

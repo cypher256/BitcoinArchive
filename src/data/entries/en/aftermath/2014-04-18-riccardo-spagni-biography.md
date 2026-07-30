@@ -75,7 +75,7 @@ The third targets the halving schedule, arguing that stepwise reward drops are a
 <!-- audit:quote-skip -->
 > The original intention was to create a limited smooth emission with exponential decay, but in fact we have a piecewise linear emission function whose breakpoints may cause problems to the Bitcoin infrastructure.
 
-Monero's answer was a smooth emission curve followed by a permanent tail emission — 0.6 XMR per block forever, so block production is never left funded by fees alone. Bitcoin's answer is the opposite: the subsidy goes to zero and the fee market takes over. The archive treats that unresolved question in [the fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/); Monero decided against Bitcoin's side of it before the question became urgent, and has been paying the tail emission since May 2022.
+Monero's answer was a smooth emission curve followed by a permanent tail emission — 0.6 XMR per block forever, so block production is never left funded by fees alone. Bitcoin's answer is the opposite: the subsidy goes to zero and the fee market takes over. The archive treats that unresolved question in [the fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/); Monero decided against Bitcoin's side of it before the question became urgent, and has been paying the tail emission since May 2022. [The twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) finds Monero closer to Bitcoin than any other chain in the set on fair launch and on the absence of a controlling organization — supply is where the two designs actually part ways.
 
 ## What he says about Bitcoin
 

@@ -109,7 +109,7 @@ And on anonymity, where the divergence from Bitcoin's design is deliberate and t
 <!-- audit:quote-skip -->
 > In the effort to anonymize and disintermediate central actors, Bitcoin and its contemporaries have also discarded the need for stable identities, metadata and reputation in commercial transactions.
 
-Bitcoin's refusal of stable identity is not treated as an unfortunate limitation to be engineered around; it is named as a thing Cardano chose not to inherit.
+Bitcoin's refusal of stable identity is not treated as an unfortunate limitation to be engineered around; it is named as a thing Cardano chose not to inherit. [The twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) uses the same framing to summarize Cardano's stated reasoning against Bitcoin's design.
 
 | Axis | Bitcoin | Cardano |
 |---|---|---|

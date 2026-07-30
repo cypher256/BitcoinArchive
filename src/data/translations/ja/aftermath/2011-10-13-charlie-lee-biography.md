@@ -84,7 +84,7 @@ timeline
 | 供給上限 | 2,100 万枚 | 8,400 万枚 | 4 倍 |
 | 半減の間隔 | 210,000 ブロック | 840,000 ブロック | 4 倍 |
 
-この四点は、[ローンチ記録](/BitcoinArchive/ja/entries/aftermath/2011-10-13-litecoin-launch/)が扱うとおり内部的に整合している。
+この四点は、[ローンチ記録](/BitcoinArchive/ja/entries/aftermath/2011-10-13-litecoin-launch/)が扱うとおり内部的に整合している。[十二チェーンの設計比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)は、ビットコインの上限をそのまま継いで規模だけを変えたチェーンの一群に、ライトコインを位置づけている。
 
 Scrypt を選んだ理由も、告知では対立ではなく併存として説明されている。
 

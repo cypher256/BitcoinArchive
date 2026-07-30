@@ -78,7 +78,7 @@ translationStatus: complete
 
 サトシ自身は、その価値がどこから生まれるかを特定していない。触れているのは、交換の役に立つと見込まれること、収集家の存在、「何らかのランダムな理由」といった程度にとどまる。だが、いったん価値が生まれれば、それを保ち続けるのは希少性だ。この希少性が後にビットコインの決済用途をどう変えていったかは、[電子キャッシュとデジタルゴールドの間](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/)で論じている。
 
-後発の暗号資産 ([イーサリアム](/BitcoinArchive/ja/entries/currency/2026-07-27-ethereum-currency-overview/)、[リップル](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/)、[カルダノ](/BitcoinArchive/ja/entries/currency/2026-07-27-cardano-currency-overview/)、[ソラナ](/BitcoinArchive/ja/entries/currency/2026-07-27-solana-currency-overview/)) は、より高機能な仮想マシン、より速い承認、より低い手数料、より豊富なプログラマビリティを備える。2009 年以降の継続稼働年数を除けば、どの単一の技術軸でもビットコインはもはや最前線ではない。それにもかかわらず市場は一貫して、長期保有の価値保存手段、準備資産、相手方のロードマップに依存しない保有として、ビットコインを金にもっとも近い資産と評価し続けている。
+[後発の暗号資産](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) ([イーサリアム](/BitcoinArchive/ja/entries/currency/2026-07-27-ethereum-currency-overview/)、[リップル](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/)、[カルダノ](/BitcoinArchive/ja/entries/currency/2026-07-27-cardano-currency-overview/)、[ソラナ](/BitcoinArchive/ja/entries/currency/2026-07-27-solana-currency-overview/)) は、より高機能な仮想マシン、より速い承認、より低い手数料、より豊富なプログラマビリティを備える。2009 年以降の継続稼働年数を除けば、どの単一の技術軸でもビットコインはもはや最前線ではない。それにもかかわらず市場は一貫して、長期保有の価値保存手段、準備資産、相手方のロードマップに依存しない保有として、ビットコインを金にもっとも近い資産と評価し続けている。
 
 <!-- chart: assets-race -->
 
