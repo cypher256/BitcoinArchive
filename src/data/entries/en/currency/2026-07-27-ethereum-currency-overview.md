@@ -134,6 +134,10 @@ The Ethereum Foundation's own estimate for the Merge, made before it happened, p
 
 On the other design question, Buterin's clearest statement is the whitepaper's own argument that a "permanent linear supply growth" model avoids the wealth concentration a capped supply invites. Resource consumption and supply design are the two places Buterin returns to whenever he argues against Bitcoin's choices by name, and in both cases the argument takes the same shape: build Ethereum the other way.
 
+Ethereum's uncapped issuance, plotted against Bitcoin's cap and ten other currencies on one normalized index:
+
+<!-- chart: supply-curve-comparison -->
+
 ## Significance to Bitcoin
 
 Ethereum matters to Bitcoin's record not because it arrived at a different answer from somewhere unrelated, but because it arrived at close to the opposite answer to the same three questions — who decides supply, how consensus gets reached, where the founder stands — and has now run that opposite answer for eleven years. [The fixed-supply analysis](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) tracks what the bet has actually done to supply in practice: shrinking through 2022 and 2023, growing again by 2024, against Bitcoin's 21 million, which answers to nothing but its own halving schedule.

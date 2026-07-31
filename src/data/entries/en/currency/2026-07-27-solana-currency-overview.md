@@ -124,6 +124,10 @@ In July 2026 he took the argument further, against the specific claim that Bitco
 
 The three statements point at two different things. "Masterpiece" describes the machine — proof-of-work's simplicity as a security property. "No value" and "true tokens exist" describe the holding: whether the asset the machine secures carries any enforceable claim. Yakovenko draws that line through the middle of his own admiration, and the fuller record of where he draws it is in [his biography](/BitcoinArchive/participants/anatoly-yakovenko/).
 
+Solana's tapering issuance, plotted against Bitcoin's cap and ten other currencies on one normalized index:
+
+<!-- chart: supply-curve-comparison -->
+
 ## Significance to Bitcoin
 
 Solana's whitepaper opens with a problem Bitcoin's consensus never had to solve: a shared, verifiable notion of time. Bitcoin agrees on order by watching blocks arrive and rewarding the chain with the most work behind it; building a clock in bought Solana its throughput, and with it, a validator hardware bar Bitcoin's full-node model never had to clear. The same trade repeats on the monetary side: an issuance rate with no ceiling, set by a schedule two named client teams can vote to change, against a cap that endures precisely because no one holds that vote over it. [The digital-gold structural-features analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) names the absence of exactly that kind of nameable authority as one of six features no other chain has assembled at once; Solana's foundation, its premine, and the loan it disclosed late are what the presence of that authority costs. [The altcoin design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) places Solana's design against eleven other chains that made the same kind of trade differently. Yakovenko's own verdict on proof-of-work — a masterpiece, because it is simple — is the same argument stated from the other side: the feature he built Solana away from is the one he says he cannot explain away.
