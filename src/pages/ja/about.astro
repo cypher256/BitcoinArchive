@@ -89,3 +89,15 @@ const t = useTranslations(lang);
     </p>
   </div>
 </BaseLayout>
+
+<style>
+  /* This page has no .entry-content/.biography-content wrapper, so it
+     falls outside the shared markdown-body rule. Same two shared
+     tokens as every other heading-underline consumer, just its own
+     selector — the plain h2 rule stays bare so it does not collide
+     with .section-header on the home page. */
+  h2 {
+    padding-bottom: var(--heading-underline-gap);
+    border-bottom: 1px solid var(--color-border-strong);
+  }
+</style>
