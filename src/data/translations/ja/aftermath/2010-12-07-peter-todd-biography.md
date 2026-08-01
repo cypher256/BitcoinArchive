@@ -1,14 +1,14 @@
 ---
-title: "ピーター・トッド（1985–） — Bitcoin Core 開発者、Replace-by-Fee の提唱者"
+title: "ピーター・トッド — Bitcoin Core 開発者、Replace-by-Fee の提唱者"
 date: 2010-12-07T00:00:00Z
 type: "biography"
 source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/Peter_Todd"
+sourceUrl: "https://en.wikipedia.org/wiki/Peter_Todd_(programmer)"
 author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "カナダの暗号学者、Bitcoin Core 開発者（1985-）。Replace-by-Fee 提唱、OpenTimestamps 開発。2024年 HBO にサトシ候補として挙げられたが本人は否定。"
+description: "カナダの暗号学者、Bitcoin Core 開発者。Replace-by-Fee 提唱、OpenTimestamps 開発。2024年 HBO にサトシ候補として挙げられたが本人は否定。"
 isSatoshi: false
 callout:
   entry: "analysis/2024-10-08-todd-satoshi-identity-hypothesis"
@@ -36,6 +36,12 @@ secondarySources:
     url: "https://news.ycombinator.com/item?id=41784567"
   - name: "Peter Todd — 公式ウェブサイト"
     url: "https://petertodd.org/"
+  - name: "Peter Todd — Cypherpunk Desert Bus（Zcash トラステッドセットアップ本人記）"
+    url: "https://petertodd.org/2016/cypherpunk-desert-bus-zcash-trusted-setup-ceremony"
+  - name: "Peter Todd — QCon London 2017 講演者プロフィール"
+    url: "https://archive.qconlondon.com/speakers/peter-todd"
+  - name: "CoinDesk — Coinkite Taps Bitcoin Developer Peter Todd For Advisory Role（2014-05-15）"
+    url: "https://www.coindesk.com/markets/2014/05/15/coinkite-taps-bitcoin-developer-peter-todd-for-advisory-role"
 relatedEntries:
   - aftermath/2010-12-07-retep-diaspora-invite-first-post
   - aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify
@@ -64,11 +70,10 @@ translationStatus: complete
 
 2024 年 10 月、HBO のドキュメンタリー[『Money Electric: The Bitcoin Mystery』](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)はトッドをサトシ・ナカモトの正体候補として名指しし、2010 年 12 月の返信を証拠として挙げた。放送当日の CoinDesk への取材でトッドは映画製作者カレン・ホーバックの論法を「苦し紛れのこじつけだ」と評しつつ「もちろん、私はサトシではない」と明確に否定した。ドキュメンタリー本編でホーバックから問われた際は皮肉で「ばかばかしい。だが、そう言いたいのなら、そうだ、私がサトシだ」と返している。トッドは作品を無責任な主張として退けている。
 
-ピーター・トッド（1985 年 3 月 14 日、カナダ・バンクーバー生まれ）は暗号学者、応用暗号コンサルタント、Bitcoin Core 開発者である。2011 年に OCAD 大学（オンタリオ・カレッジ・オブ・アート・アンド・デザイン）の Integrated Media 専攻を卒業、それ以前は地球物理学スタートアップ Gedex Inc. でアナログ電子工学の設計者として勤務していた。ビットコインへの主要貢献は [BIP 65 OP_CHECKLOCKTIMEVERIFY](/BitcoinArchive/ja/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/)（2014）、[BIP 125 Replace-by-Fee](/BitcoinArchive/ja/entries/bip/2015-11-03-bip-0125/) の共著（2015）、[OpenTimestamps](/BitcoinArchive/ja/entries/aftermath/2016-09-15-peter-todd-opentimestamps-announcement/)（2016）。
+ピーター・トッドはカナダの暗号学者、応用暗号コンサルタント、Bitcoin Core 開発者である。ビットコインに携わる以前は美術系の学位を持ち、地球物理学スタートアップでアナログ電子工学の設計に従事していた。ビットコインへの主要貢献は [BIP 65 OP_CHECKLOCKTIMEVERIFY](/BitcoinArchive/ja/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/)（2014）、[BIP 125 Replace-by-Fee](/BitcoinArchive/ja/entries/bip/2015-11-03-bip-0125/) の共著（2015）、[OpenTimestamps](/BitcoinArchive/ja/entries/aftermath/2016-09-15-peter-todd-opentimestamps-announcement/)（2016）。
 
 ```mermaid
 timeline
-    1985 : バンクーバー誕生 (3月14日)
     2008 : GitHub アカウント登録 (4月)
     2010 : BitcoinTalk 「retep」 登録 (12月7日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/
@@ -76,7 +81,6 @@ timeline
     %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/
          : サトシ最終公開投稿 (12月12日)
     %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/
-    2011 : OCAD 大学 Integrated Media 専攻 卒業
     2012 : Bitcoin Core 活発な貢献開始 (4月)
     2014 : BIP 65 OP_CHECKLOCKTIMEVERIFY 提案 (10月)
     %% link: /BitcoinArchive/ja/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/
@@ -107,5 +111,5 @@ timeline
 トッドは Zcash のトラステッドセットアップセレモニーの 6人の参加者の 1人だった。ブリティッシュコロンビア州をドライブしながら計算を実行し、ラップトップをファラデーケージで遮蔽し、終了後にハードウェアをプロパントーチで破壊した。参加したにもかかわらず、プロセスを批判し、参加者間の共謀は証明不可能であり、未監査の決定論的ビルドのもとではセレモニーは「暗号学的な見かけだけのもの」にすぎないと述べた。
 
 ## その他の役職
-トッドは Mastercoin および Dark Wallet でチーフサイエンティストを務め、プライバシー強化のためのステルスアドレス（BIP 63、未実装）の設計にも貢献した。2014年7月から Coinkite のコンサルタントとして勤務した。
+トッドはプライバシー強化のためのステルスアドレス（BIP 63、未実装）の設計にも貢献した。2014 年 5 月、Coinkite にアドバイザーとして加わった。
 

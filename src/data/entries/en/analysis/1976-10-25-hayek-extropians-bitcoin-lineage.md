@@ -2,8 +2,8 @@
 title: "From Hayek's 1976 Denationalisation of Money to Bitcoin: the libertarian-money lineage and the Extropian 'Hayeks' intermediate"
 date: 1976-10-25T00:00:00Z
 type: "analysis"
-source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/Denationalisation_of_Money"
+source: "nakamotoinstitute"
+sourceUrl: "https://nakamotoinstitute.org/library/denationalisation/"
 sourceNote: "Hayek's IEA monograph was published on October 25, 1976; the date is used here as the anchor for the ideological lineage this entry traces forward to Bitcoin (2009)."
 author: "Bitcoin Institute"
 participants:
@@ -28,9 +28,6 @@ tags:
   - "ideological-lineage"
   - "analysis"
 secondarySources:
-  - name: "F. A. Hayek — Denationalisation of Money (IEA, 1976; 3rd ed. 1990)"
-    url: "https://nakamotoinstitute.org/library/denationalisation/"
-    note: "The Satoshi Nakamoto Institute hosts the full text of Hayek's monograph as a standing library reference."
   - name: "Modern American History (Cambridge UP, 2024) — F. A. Hayek, Libertarianism, and the Denationalization of Money"
     url: "https://www.cambridge.org/core/journals/modern-american-history/article/f-a-hayek-libertarianism-and-the-denationalization-of-money/B17D6B3E276C1007194928373B431E3B"
     note: "Peer-reviewed historical study placing Hayek's denationalisation argument within the 1970s libertarian network that kept competing-currency designs alive into the 1990s and beyond."

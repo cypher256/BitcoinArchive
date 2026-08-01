@@ -30,6 +30,8 @@ secondarySources:
     url: "https://www.cryptopp.com/"
   - name: "Less Wrong — Wei Dai's profile"
     url: "https://www.lesswrong.com/users/wei-dai"
+  - name: "Less Wrong — サトシの暗号学/サイファーパンク歴についてのウェイ・ダイの発言（2014年3月16日）"
+    url: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything?commentId=9Ros4mX339FJnYzQF"
 relatedEntries:
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
@@ -59,7 +61,7 @@ translationStatus: complete
 
 2 か月後、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)は b-money を参考文献 [1] として引用した。Bitcoin v0.1 はダイの [Crypto++ ライブラリ](https://www.cryptopp.com/)を SHA-256 実装に採用した。ダイのコードは最初のリリースからビットコインの直接的な依存となった。
 
-2014 年 1 月、LessWrong で「サトシは暗号学やサイファーパンクのコミュニティで知られた人物ではないか」と問われたとき、ダイはこう答えた:
+2014 年 3 月、LessWrong で「サトシは暗号学やサイファーパンクのコミュニティで知られた人物ではないか」と問われたとき、ダイはこう答えた:
 
 > 「私の推測では、彼は暗号学やサイファーパンクコミュニティで以前活動していた人物ではないと思います。そうでなければ、文体やコーディングスタイルで特定されているはずです」
 

@@ -43,13 +43,13 @@ inlineLinkKeywords:
 
 ## 1. The evidence
 
-Le Roux — who released the open-source disk-encryption package E4M in 1999 before building one of the largest international criminal enterprises of the 2000s — was the person behind the Satoshi Nakamoto pseudonym. The identification was articulated in Ratliff's *The Mastermind* (2019) and accompanying journalism. Le Roux has been incarcerated and cooperating with US authorities since his 2012 arrest, and has made no public statement on the identity question, so the claim stands as an externally-argued, open one — neither advanced nor denied by its subject.
+Le Roux — who released the open-source disk-encryption package E4M in December 1998 before building one of the largest international criminal enterprises of the 2000s — was the person behind the Satoshi Nakamoto pseudonym. The identification was articulated in Ratliff's *The Mastermind* (2019) and accompanying journalism. Le Roux has been incarcerated and cooperating with US authorities since his 2012 arrest, and has made no public statement on the identity question, so the claim stands as an externally-argued, open one — neither advanced nor denied by its subject.
 
 ### 1.1 Cryptographic capability
 
-Le Roux's E4M (Encryption for the Masses, 1999) was a real open-source disk-encryption package, circulated on the cypherpunks mailing list, and its codebase was forked into TrueCrypt in 2002. This is a documented record of shipping cryptographic software — the kind of capability Bitcoin's creator would need.
+Le Roux's E4M (Encryption for the Masses, first released December 1998) was a real open-source disk-encryption package, circulated on the cypherpunks mailing list, and its codebase was built into TrueCrypt, first released in February 2004. This is a documented record of shipping cryptographic software — the kind of capability Bitcoin's creator would need.
 
-The venue lines up too: E4M's 1999 announcement went out on the cypherpunks mailing list, and that list's own successor, [cryptography@metzdowd.com](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), is where Satoshi posted the Bitcoin whitepaper announcement in October 2008 — the same list lineage carrying two cryptographic-software launches nine years apart.
+The venue lines up too: E4M shipped on the cypherpunks mailing list in December 1998, and that list's own successor, [cryptography@metzdowd.com](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), is where Satoshi posted the Bitcoin whitepaper announcement in October 2008 — the same list lineage carrying two cryptographic-software launches nearly ten years apart.
 
 The objection: E4M is a disk-encryption system, not a digital-cash or distributed-ledger system; the two design spaces share primitives but diverge in architecture. And Le Roux's public shipping record stops in 1999 — nearly a decade before Bitcoin v0.1 — with no documented monetary-system or distributed-systems work in the interval. Capability with disk encryption in 1999 does not entail capability with, or interest in, a 2008 cryptocurrency.
 
@@ -88,11 +88,11 @@ The defining feature of the Le Roux case is that it rests on no documentary link
 
 ### 2.2 Intellectual-lineage gap
 
-Bitcoin's intellectual genealogy is documented: Hashcash, b-money, Bit Gold, and the cryptographic-primitives discussion in the cypherpunks and metzdowd Cryptography fora. Le Roux's 1999 E4M announcement and limited cypherpunks-list discussion sit in disk encryption, not digital cash; he has no documented presence in the proof-of-work, monetary-mechanism, or distributed-issuance conversation out of which Bitcoin's design grew.
+Bitcoin's intellectual genealogy is documented: Hashcash, b-money, Bit Gold, and the cryptographic-primitives discussion in the cypherpunks and metzdowd Cryptography fora. Le Roux's December 1998 E4M announcement and limited cypherpunks-list discussion sit in disk encryption, not digital cash; he has no documented presence in the proof-of-work, monetary-mechanism, or distributed-issuance conversation out of which Bitcoin's design grew.
 
 ### 2.3 Capability gap after E4M
 
-The capability the claim cites is real but dated: E4M shipped in 1999, and Le Roux's public software-shipping record stops there. The intervening years are documented as the period of the criminal enterprise, and from September 2012 he has been incarcerated. The claim has to bridge a near-decade gap between the last cited technical work and Bitcoin's 2007–2009 construction, with nothing in the public record to fill it.
+The capability the claim cites is real but dated: E4M shipped in December 1998, and Le Roux's public software-shipping record stops the following year. The intervening years are documented as the period of the criminal enterprise, and from September 2012 he has been incarcerated. The claim has to bridge a near-decade gap between the last cited technical work and Bitcoin's 2007–2009 construction, with nothing in the public record to fill it.
 
 ### 2.4 Outside the stylometric record
 

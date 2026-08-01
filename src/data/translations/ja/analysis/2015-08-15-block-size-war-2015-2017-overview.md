@@ -4,6 +4,7 @@ date: 2015-08-15T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Bitcoin_scalability_problem"
+sourceNote: "en.wikipedia.org/wiki/Bitcoin_scalability_problem は、ニューヨーク合意と SegWit2x 中止の日付には触れているが、BIP148、ビットコインキャッシュのフォーク、SegWit2x 終結におけるマイク・ベルシェの役割には触れていない。本エントリーの各段階・各転換点は、それぞれ個別のアーカイブエントリーへ本文中でリンクしており、各エントリーが独自の一次資料または同時代の出典を伴う。"
 author: "Bitcoin Institute"
 participants:
   - name: "Mike Hearn"

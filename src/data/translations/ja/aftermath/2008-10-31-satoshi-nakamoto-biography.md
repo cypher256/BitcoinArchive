@@ -76,7 +76,7 @@ timeline
     %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
          : 史上初の 個人間送金 - ハル・フィニーへ 10 BTC (1月12日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/
-    2010 : アンドレセンに 「他プロジェクトに 取り組んでいる」 とメールで伝達 - 最初の撤退シグナル (9月)
+    2010 : アンドレセンに 「他プロジェクトに 取り組んでいる」 と私的に伝達 - 最初の撤退シグナル (9月)
     %% link: /BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/
          : 最後の BitcoinTalk 投稿 「バトンを渡そうと 考えている」 (12月12日)
     %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/

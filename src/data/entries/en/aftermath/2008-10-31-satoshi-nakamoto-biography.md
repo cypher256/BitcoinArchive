@@ -110,7 +110,7 @@ By September 2010, Satoshi was telling Gavin Andresen privately that he was [wor
 The [final public BitcoinTalk post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) was on December 12, 2010:
 
 <!-- speaker: Satoshi Nakamoto -->
-> "I plan to pass the baton."
+> "I'm doing a few more things, then I plan to pass the baton."
 
 Seven days later, [Andresen publicly announced he would take over project management](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/).
 

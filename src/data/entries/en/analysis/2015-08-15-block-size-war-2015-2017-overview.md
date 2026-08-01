@@ -4,6 +4,7 @@ date: 2015-08-15T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Bitcoin_scalability_problem"
+sourceNote: "en.wikipedia.org/wiki/Bitcoin_scalability_problem covers the New York Agreement and the date of the SegWit2x cancellation, but not BIP148, the Bitcoin Cash fork, or Mike Belshe's role in ending SegWit2x. Each phase and turning point in this entry links to its own archive entry, each carrying its own primary or contemporaneous citation."
 author: "Bitcoin Institute"
 participants:
   - name: "Mike Hearn"

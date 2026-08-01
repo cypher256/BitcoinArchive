@@ -37,16 +37,16 @@ relatedEntries:
 
 ![A three-panel timeline diagram of file/lock icons labeled E4M and TrueCrypt, followed by pharmaceutical and shipping-crate icons, and a faceless silhouette beside prison-bar lines on the right](/BitcoinArchive/images/analysis/2019-02-19-paul-le-roux-biography-hero.png)
 
-In 1999, a Rhodesian-born programmer named Paul Le Roux released **Encryption for the Masses** (E4M) — an open-source disk-encryption package — and circulated it on the cypherpunks mailing list. Three years later the E4M codebase was forked into *TrueCrypt*. By the mid-2000s Le Roux had moved on from cryptography and built one of the largest international criminal enterprises of the 2000s — RX Limited online pharmacies, arms trafficking, methamphetamine production — chronicled in journalist Evan Ratliff's 2019 book *The Mastermind*. He was arrested by US authorities in Liberia in September 2012 and has been incarcerated and cooperating with the US Drug Enforcement Administration since.
+In December 1998, a Rhodesian-born programmer named Paul Le Roux released **Encryption for the Masses** (E4M) — an open-source disk-encryption package — and circulated it on the cypherpunks mailing list. Its codebase was later built into *TrueCrypt*, first released in February 2004. By the mid-2000s Le Roux had moved on from cryptography and built one of the largest international criminal enterprises of the 2000s — RX Limited online pharmacies, arms trafficking, methamphetamine production — chronicled in journalist Evan Ratliff's 2019 book *The Mastermind*. He was arrested by US authorities in Liberia in September 2012 and has been incarcerated and cooperating with the US Drug Enforcement Administration since.
 
 Le Roux (born December 24, 1972 in Bulawayo, Rhodesia — now Zimbabwe) is named in some Satoshi identity hypotheses, which cite his cypherpunk-era cryptography credentials and timing.
 
 ```mermaid
 timeline
     1972 : Born in Bulawayo, Rhodesia (Dec 24)
-    1999 : Releases E4M (Encryption for the Masses) — open-source disk encryption
+    1998 : Releases E4M (Encryption for the Masses) — open-source disk encryption (Dec)
          : Cypherpunks-mailing-list announcement and limited follow-up discussions
-    2002 : E4M codebase forked into TrueCrypt
+    2004 : E4M codebase built into TrueCrypt (Feb)
          : Transitions to building international criminal enterprise (RX Limited online pharmacies, arms trafficking, methamphetamine production)
     2012 : Arrested by US authorities in Liberia (Sep)
          : Becomes DEA cooperator
@@ -57,7 +57,7 @@ timeline
 
 ## E4M and the TrueCrypt Lineage
 
-In 1999 Le Roux released *Encryption for the Masses* (E4M), a free open-source disk-encryption package, distributed under an open-source license. He announced the project on the cypherpunks mailing list and engaged in a limited number of cryptographic discussions there during 1999. In 2002 the E4M codebase was forked into *TrueCrypt*, which became one of the most widely deployed open-source disk-encryption packages of the 2000s and 2010s. The TrueCrypt project's original developers remained anonymous and the lineage from E4M was the subject of years of speculation about Le Roux's possible authorship of TrueCrypt itself — never definitively resolved in public.
+In December 1998 Le Roux released *Encryption for the Masses* (E4M), a free open-source disk-encryption package, distributed under an open-source license. He announced the project on the cypherpunks mailing list and engaged in a limited number of cryptographic discussions there. In February 2004 the E4M codebase was built into *TrueCrypt*, which became one of the most widely deployed open-source disk-encryption packages of the 2000s and 2010s. The TrueCrypt project's original developers remained anonymous and the lineage from E4M was the subject of years of speculation about Le Roux's possible authorship of TrueCrypt itself — never definitively resolved in public.
 
 ## Criminal Enterprise
 

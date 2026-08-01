@@ -3,12 +3,12 @@ title: "Peter Todd — Bitcoin Core developer and proponent of Replace-by-Fee"
 date: 2010-12-07T00:00:00Z
 type: "biography"
 source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/Peter_Todd"
+sourceUrl: "https://en.wikipedia.org/wiki/Peter_Todd_(programmer)"
 author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "Canadian cryptographer, Bitcoin Core developer (born 1985). Proposed Replace-by-Fee, built OpenTimestamps. Joined BitcoinTalk as retep in Dec 2010. Named a Satoshi candidate by HBO in 2024 (denied)."
+description: "Canadian cryptographer, Bitcoin Core developer. Proposed Replace-by-Fee, built OpenTimestamps. Joined BitcoinTalk as retep in Dec 2010. Named a Satoshi candidate by HBO in 2024 (denied)."
 isSatoshi: false
 callout:
   entry: "analysis/2024-10-08-todd-satoshi-identity-hypothesis"
@@ -36,6 +36,12 @@ secondarySources:
     url: "https://news.ycombinator.com/item?id=41784567"
   - name: "Peter Todd — Official Website"
     url: "https://petertodd.org/"
+  - name: "Peter Todd — Cypherpunk Desert Bus (Zcash trusted setup account)"
+    url: "https://petertodd.org/2016/cypherpunk-desert-bus-zcash-trusted-setup-ceremony"
+  - name: "Peter Todd — QCon London 2017 speaker bio"
+    url: "https://archive.qconlondon.com/speakers/peter-todd"
+  - name: "CoinDesk — Coinkite Taps Bitcoin Developer Peter Todd For Advisory Role (2014-05-15)"
+    url: "https://www.coindesk.com/markets/2014/05/15/coinkite-taps-bitcoin-developer-peter-todd-for-advisory-role"
 relatedEntries:
   - aftermath/2010-12-07-retep-diaspora-invite-first-post
   - aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify
@@ -63,11 +69,10 @@ Two days later, [Satoshi posted his last public message](/BitcoinArchive/entries
 
 In October 2024, the HBO documentary ["Money Electric: The Bitcoin Mystery"](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) named Todd as a candidate for Satoshi's true identity, pointing to the December 2010 reply as evidence. On the day of broadcast Todd told CoinDesk directly, "Of course, I'm not Satoshi," calling filmmaker Cullen Hoback "grasping at straws." In the film itself, asked on camera whether he was Satoshi, Todd answered sarcastically, "It's ludicrous. But I'll say, yeah, of course I'm Satoshi." He treats the documentary as irresponsible.
 
-Peter Todd (born March 14, 1985 in Vancouver, Canada) is a cryptographer, applied-cryptography consultant, and Bitcoin Core developer. He graduated from OCAD University (Ontario College of Art and Design) in 2011 with a degree in Integrated Media; previously he worked as an analog-electronics designer at the geophysics startup Gedex Inc. His major Bitcoin contributions include [BIP 65 OP_CHECKLOCKTIMEVERIFY](/BitcoinArchive/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/) (2014), co-authorship of [BIP 125 Replace-by-Fee](/BitcoinArchive/entries/bip/2015-11-03-bip-0125/) (2015), and [OpenTimestamps](/BitcoinArchive/entries/aftermath/2016-09-15-peter-todd-opentimestamps-announcement/) (2016).
+Peter Todd is a Canadian cryptographer, applied-cryptography consultant, and Bitcoin Core developer. Before Bitcoin, he held a fine-arts degree and worked in analog-electronics design for a geophysics startup. His major Bitcoin contributions include [BIP 65 OP_CHECKLOCKTIMEVERIFY](/BitcoinArchive/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/) (2014), co-authorship of [BIP 125 Replace-by-Fee](/BitcoinArchive/entries/bip/2015-11-03-bip-0125/) (2015), and [OpenTimestamps](/BitcoinArchive/entries/aftermath/2016-09-15-peter-todd-opentimestamps-announcement/) (2016).
 
 ```mermaid
 timeline
-    1985 : Born in Vancouver (Mar 14)
     2008 : Registers GitHub account (Apr)
     2010 : Registers BitcoinTalk handle "retep" (Dec 7)
     %% link: /BitcoinArchive/entries/aftermath/2010-12-07-retep-diaspora-invite-first-post/
@@ -75,7 +80,6 @@ timeline
     %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/
          : Satoshi's last public post (Dec 12)
     %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/
-    2011 : Graduates OCAD University, Integrated Media
     2012 : Begins active Bitcoin Core contribution (Apr)
     2014 : Proposes BIP 65 OP_CHECKLOCKTIMEVERIFY (Oct)
     %% link: /BitcoinArchive/entries/aftermath/2014-10-01-peter-todd-bip-65-checklocktimeverify/
@@ -106,6 +110,6 @@ Todd created OpenTimestamps, an open-source project that uses the Bitcoin blockc
 Todd was one of six participants in the Zcash trusted setup ceremony. He conducted his computation while driving across British Columbia, shielded his laptop in a Faraday cage, and destroyed the hardware with a propane torch. Despite participating, he was deeply critical of the process, stating that collusion among participants was unprovable and the unaudited deterministic builds made the ceremony "crypto hocus pocus."
 
 ## Other Roles
-Todd served as Chief Scientist at Mastercoin and Dark Wallet, and contributed to the design of stealth addresses (BIP 63, unimplemented) for enhanced privacy. He worked as a consultant at Coinkite starting July 2014.
+Todd contributed to the design of stealth addresses (BIP 63, unimplemented) for enhanced privacy. He joined Coinkite in an advisory role in May 2014.
 
 

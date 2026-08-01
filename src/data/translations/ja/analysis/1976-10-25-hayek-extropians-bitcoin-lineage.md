@@ -2,8 +2,8 @@
 title: "ハイエク『貨幣発行自由化論』 (1976) からビットコインへ ― リバタリアン貨幣思想の系譜とエクストロピアンの架空通貨『Hayeks』"
 date: 1976-10-25T00:00:00Z
 type: "analysis"
-source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/Denationalisation_of_Money"
+source: "nakamotoinstitute"
+sourceUrl: "https://nakamotoinstitute.org/library/denationalisation/"
 sourceNote: "ハイエクが IEA から刊行した小冊子は 1976 年 10 月 25 日に出版された。本エントリーが 2009 年のビットコインまで辿る思想史的系譜の起点として、この日付を採用している。"
 author: "Bitcoin Institute"
 participants:
@@ -28,9 +28,6 @@ tags:
   - "ideological-lineage"
   - "analysis"
 secondarySources:
-  - name: "F. A. ハイエク『貨幣発行自由化論』 (IEA、 1976 年。第 3 版 1990 年)"
-    url: "https://nakamotoinstitute.org/library/denationalisation/"
-    note: "Satoshi Nakamoto Institute はハイエクの本書全文を常設の参考資料として掲載している。"
   - name: "Modern American History (Cambridge UP、 2024 年) ― F. A. ハイエク、リバタリアニズム、そして貨幣の脱国営化"
     url: "https://www.cambridge.org/core/journals/modern-american-history/article/f-a-hayek-libertarianism-and-the-denationalization-of-money/B17D6B3E276C1007194928373B431E3B"
     note: "ハイエクの脱国営化論を、 1970 年代のリバタリアン人脈がどのように維持し、 1990 年代以降の競合通貨設計の苗床へとつなげていったかを位置づけた査読歴史研究。"

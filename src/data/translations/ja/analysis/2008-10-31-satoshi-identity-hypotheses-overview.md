@@ -301,7 +301,7 @@ gantt
 | [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | 🔴 不整合 ― Unix 主体、Windows 第一の開発記録なし | Unix / Linux 主体（Mixmaster 保守者、KU Leuven の研究環境） | C | Mixmaster（C、*BSD / Linux 主体で Windows 移植版あり） |
 | [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | 🔴 不整合 ― C++ 公開実績なし | アーカイブ記録なし（機密の防衛系統工学に従事） | 物理学・電子工学の背景 | 公開コードベースなし |
 | [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | ― 該当せず（COPA 対ライト 2024 判決） | ― | ― | ― |
-| [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | 🟡 表層は整合 ― Windows + C++ + 暗号ソフト公開を満たすが、ソフト公開の記録は 1999 年で途切れる | Windows NT / 9x | C++ | **E4M**（Windows 専用ディスク暗号、1999 年。後に TrueCrypt に派生） |
+| [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | 🟡 表層は整合 ― Windows + C++ + 暗号ソフト公開を満たすが、ソフト公開の記録は 1999 年で途切れる | Windows NT / 9x | C++ | **E4M**（Windows 専用ディスク暗号、1998 年 12 月初公開。後に TrueCrypt に組み込み） |
 | [イーロン・マスク](/BitcoinArchive/ja/participants/elon-musk/) | 🔴 サイファーパンク・暗号ソフトの公開実績なし | アーカイブ記録なし | 商用ソフトウェア | ビットコイン関連のコードベースなし |
 | [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | 🟡 部分整合 ― OS / 言語は一致するが、Winny ソースは日本語識別子とコメントを含む。ビットコイン v0.1 ソースは英語のみ | Windows | C++ | Winny（Windows 向け P2P、C++） |
 
@@ -311,7 +311,7 @@ gantt
 
 **開発環境レイヤの読み方：**
 
-- **Phase 1 の「Windows + MSVC + C++ 公開実績」像と整合する候補は 2 名。** [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)による Crypto++（当初 Windows-MSVC 起点の C++ 暗号クラスライブラリ）はビットコイン v0.1 の暗号ライブラリ依存構造と最も直接に重なる。[ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/)は 1999 年に E4M（Windows 専用 C++ ディスク暗号）を公開したが、ソフト公開の記録はその時点で途切れる。
+- **Phase 1 の「Windows + MSVC + C++ 公開実績」像と整合する候補は 2 名。** [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)による Crypto++（当初 Windows-MSVC 起点の C++ 暗号クラスライブラリ）はビットコイン v0.1 の暗号ライブラリ依存構造と最も直接に重なる。[ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/)は 1998 年 12 月に E4M（Windows 専用 C++ ディスク暗号）を公開したが、ソフト公開の記録は 1999 年時点で途切れる。
 - **3 名は Phase 1 と OS が直接不整合。** [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)（長期 Mac、スネークケース＋タブ）、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)（GitHub 一貫して Linux）、[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)（Unix 主体のツール環境）はいずれも Windows 以外の主要環境が記録されている。
 - **5 名は v0.1 規模の公開コードベースの記録なし。** [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)は 2008 年 4 月に実装協力者を求めた。[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の機密防衛業務は公開コードを生まなかった。[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)が示した証拠は英国高等法院により捏造と判定されている。[イーロン・マスク](/BitcoinArchive/ja/participants/elon-musk/)に暗号ソフトの公開実績はなく、[ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/)は公開コードベースの記録のない評論家である。
 - **[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の個人 OS はアーカイブ記録に存在しない。** Hashcash は Perl と C / C++ の参考実装にまたがるが、それらの参考実装とビットコイン v0.1 の 19,901 行 C++ コードベースとの規模差は、Crypto++ や E4M クラスの公開実績を持つ候補と比べて大きい。

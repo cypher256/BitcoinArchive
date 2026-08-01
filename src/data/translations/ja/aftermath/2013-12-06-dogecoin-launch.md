@@ -21,6 +21,8 @@ tags:
 secondarySources:
   - name: "Dogecoin — official site"
     url: "https://dogecoin.com/"
+  - name: "CoinDesk — Dogecoin Foundation Returns With Ethereum's Buterin as Adviser（2021年8月17日）"
+    url: "https://www.coindesk.com/markets/2021/08/17/dogecoin-foundation-returns-with-ethereums-buterin-as-adviser"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2011-10-13-charlie-lee-biography
@@ -52,6 +54,6 @@ inlineLinkKeywords:
 - **2014 年**: ドージコインコミュニティが、ジャマイカ・ボブスレー代表のソチ五輪渡航費として約 3 万ドル相当の DOGE を集める。NASCAR ドライバーのジョシュ・ワイズをドージコインテーマのカーでレースに送り出すために、さらに約 5 万ドル相当を集める。
 - **2015 年**: ドージコインの主要開発者ジャクソン・パーマーがプロジェクトから離脱。理由として暗号通貨投機の有害な文化を挙げる。
 - **2021 年**: イーロン・マスクの度重なるツイートと『Saturday Night Live』への出演 (『The Dogefather』) が、2021 年 5 月に DOGE の時価総額を約 900 億ドルのピークへ押し上げる。同年、Tesla が物販で DOGE 決済の受け入れを開始。
-- **2022 年**: 同様に活発な開発から退いていたマーカスが、X 上のハンドル `@BillyM2k` で非公式の論評者としてプロジェクトに復帰。
+- **2021 年（8月）**: 2015 年以降活発な開発から退いていたマーカスが、再結成されたドージコイン財団の理事会に「コミュニティ・ミーム担当アドバイザー」として復帰。イーサリアムのヴィタリック・ブテリン、イーロン・マスクの代理人ジャレッド・バーチャルも同時に理事へ加わった。
 
 ドージコインが長期的に残した意義は、技術的というより社会学的なものである。技術的にはドージコインはビットコイン・ライトコインに劣後するが、活発なコミュニティと認知されたブランドを保持していることで、10 年以上にわたって時価総額上位 10 位の暗号通貨に留まってきた — これは、暗号通貨のネットワーク効果が、技術的な差別化ではなく、コミュニティやミームによって支えられうることを示す事例である。ビットコイン由来チェーンの全系譜は[ビットコイン系譜の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)に記録されている。

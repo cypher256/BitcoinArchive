@@ -2,8 +2,8 @@
 title: "サトシ、ギャビンに「他のプロジェクトに取り組んでいる」と通知（2010 年 9 月）"
 date: 2010-09-01T00:00:00Z
 type: "article"
-source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/Gavin_Andresen"
+source: "new-york-magazine"
+sourceUrl: "https://nymag.com/intelligencer/article/bitcoin-satoshi-nakamoto-benjamin-wallace-book-excerpt.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -22,8 +22,12 @@ tags:
 secondarySources:
   - name: "CoinMarketCap — Satoshi Files: Gavin Andresen"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
+  - name: "Wikipedia — Gavin Andresen"
+    url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
+    note: "Wikipedia 自身のこの記述は、下記ウォレスのニューヨーク・マガジン記事を出典としている。"
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-08-20-satoshi-self-statements
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2010-09-07-bitcoin-v0312-released
   - aftermath/2010-12-03-handover-to-gavin
@@ -35,12 +39,12 @@ translationStatus: complete
 
 ![光る扉の前で鍵とフォルダーを手渡し合う二つのシルエット人物を描き、左に色あせたカレンダー、右に光る年表マーカーの列を配した、暗い色調の編集イラスト。](/BitcoinArchive/images/analysis/2010-09-01-satoshi-andresen-other-projects-notice-hero.png)
 
-[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)のビットコインへの初期関与に関する Wikipedia の記述によれば、2010 年 9 月にサトシ・ナカモトはギャビンに「他のプロジェクトに取り組んでいる」と私的に伝えた:
+ジャーナリストのベンジャミン・ウォレスが記した[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)のビットコインへの初期関与によれば、2010 年 9 月にサトシ・ナカモトはギャビンに「他のプロジェクトに取り組んでいる」と私的に伝えた:
 
 <!-- audit:quote-skip -->
-> 2010 年 9 月、ナカモトはアンドレセンに「他のプロジェクトに取り組んでいる」と伝え、続く数か月のあいだに SourceForge のコードリポジトリと「alert key（ネットワーク警報鍵）」の管理権をアンドレセンに譲渡した。
+> 2010 年 9 月頃、ナカモトはギャビンに、他のプロジェクトで忙しくなってきたと伝えた。続く数か月のあいだに、SourceForge のコードリポジトリと、ビットコインソフトウェアを動かす全マシンへ緊急メッセージを送信できる「alert key（警報鍵）」の両方の管理権を譲渡することになる。
 
-— Wikipedia — Gavin Andresen
+— ベンジャミン・ウォレス『ニューヨーク・マガジン』
 
 2010 年 9 月のこの通知は、サトシがビットコインの第一線から退く意思を示した公開記録上もっとも早いシグナルである。9 月のうち正確な日付は公開記録上保存されておらず、メッセージ本文も逐語では公開されていない。本事実はギャビンの後年のインタビューで言及されており、本アーカイブの[ギャビン・アンドレセン伝](/BitcoinArchive/ja/participants/gavin-andresen/)も同様に「2010 年 9 月から 10 月頃、サトシはギャビンに SourceForge のコードリポジトリへのコミット権と、ネットワーク警報鍵を付与した」と記している。それでもサトシは、その後も数か月にわたり自らの名でソフトウェアをリリースし続けており、同じ 9 月には[ビットコイン v0.3.12](/BitcoinArchive/ja/entries/aftermath/2010-09-07-bitcoin-v0312-released/) も公開されている。
 
@@ -53,4 +57,4 @@ translationStatus: complete
 
 公開記録上、サトシの撤退の起点を 12 月ではなく **2010 年 9 月** に置くと、12 月の各イベントの読み方が実質的に変わる。12 月 12 日の「バトンを渡す」発言は突発的な告知ではなく、3 か月にわたって非公開で進行していた移行の対外的な締めくくりに当たる。
 
-*[編者注：本エントリーは、回顧的な資料（ギャビンの回想を引用する Wikipedia）に記録されてはいるが、同時代の一次資料としては本アーカイブに存在しない事実を、一つにまとめたものである。9 月の通信そのものは逐語では公開記録に存在しない。日付 2010-09-01 は代表的なプレースホルダーであり、9 月のうちの正確な日付は公開記録上保存されていない。]*
+*[編者注：本エントリーは、回顧的な資料（ギャビンの回想に基づくベンジャミン・ウォレスの 2025 年の記述）に記録されてはいるが、同時代の一次資料としては本アーカイブに存在しない事実を、一つにまとめたものである。9 月の通信そのものは逐語では公開記録に存在しない。日付 2010-09-01 は代表的なプレースホルダーであり、9 月のうちの正確な日付は公開記録上保存されていない。]*

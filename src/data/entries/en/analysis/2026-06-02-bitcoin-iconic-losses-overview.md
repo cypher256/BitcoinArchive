@@ -4,6 +4,7 @@ date: 2026-06-02T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Cryptocurrency_and_crime"
+sourceNote: "en.wikipedia.org/wiki/Cryptocurrency_and_crime documents the custody-collapse cases (Mt. Gox, QuadrigaCX, FTX) but not the Stefan Thomas or James Howells cases, which are accidental losses, not crimes. Each of the five cases links to its own archive entry, each carrying its own primary or contemporaneous citation."
 author: "Bitcoin Institute"
 participants:
   - name: "Stefan Thomas"

@@ -2,8 +2,8 @@
 title: "Satoshi tells Andresen he is working on other projects (September 2010)"
 date: 2010-09-01T00:00:00Z
 type: "article"
-source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/Gavin_Andresen"
+source: "new-york-magazine"
+sourceUrl: "https://nymag.com/intelligencer/article/bitcoin-satoshi-nakamoto-benjamin-wallace-book-excerpt.html"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -22,8 +22,12 @@ tags:
 secondarySources:
   - name: "CoinMarketCap — Satoshi Files: Gavin Andresen"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
+  - name: "Wikipedia — Gavin Andresen"
+    url: "https://en.wikipedia.org/wiki/Gavin_Andresen"
+    note: "Wikipedia's own account of this episode cites Wallace's New York Magazine piece (below) as its source."
 relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
+  - analysis/2008-08-20-satoshi-self-statements
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2010-09-07-bitcoin-v0312-released
   - aftermath/2010-12-03-handover-to-gavin
@@ -34,12 +38,12 @@ relatedEntries:
 
 ![A dark editorial illustration of two silhouetted figures exchanging a golden key and a folder in a lit doorway, flanked by a faded calendar page on the left and a row of glowing timeline markers on the right.](/BitcoinArchive/images/analysis/2010-09-01-satoshi-andresen-other-projects-notice-hero.png)
 
-According to Wikipedia's account of [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/)'s early role in Bitcoin, in September 2010 Satoshi Nakamoto privately told Andresen he was working on other projects:
+According to journalist Benjamin Wallace's account of [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/)'s early role in Bitcoin, in September 2010 Satoshi Nakamoto privately told Andresen he was working on other projects:
 
 <!-- audit:quote-skip -->
-> In September 2010, Nakamoto told Andresen he was working on other projects, and over the next few months, he gave Andresen control of the SourceForge code repository, and the project's "alert key" as well.
+> Around September 2010, Nakamoto told Gavin that he was getting busy with other projects, and over the coming months he would hand over control of both the code repository on SourceForge and the project's "alert key," which allowed the broadcasting of urgent messages to all machines running the bitcoin software.
 
-— Wikipedia — Gavin Andresen
+— Benjamin Wallace, *New York Magazine*
 
 This September 2010 communication is the earliest documented signal of Satoshi's intent to step back from active leadership of Bitcoin. The exact date within September is not preserved in the public record, and the message itself has not been published verbatim. The fact is referenced in Andresen's later interviews; the [biographical entry on Andresen](/BitcoinArchive/participants/gavin-andresen/) in this archive likewise notes that "by approximately September–October 2010, Satoshi granted him commit access to the Bitcoin source code repository on SourceForge, along with the network alert key." Satoshi nonetheless kept shipping software under his own name for months afterward, including [Bitcoin v0.3.12](/BitcoinArchive/entries/aftermath/2010-09-07-bitcoin-v0312-released/), released that same September.
 
@@ -52,4 +56,4 @@ The September signal preceded the more visible transition events by three months
 
 Recognizing September 2010 as the chronological start of the documented withdrawal — rather than December 2010 — substantively shapes how the December events read. The "pass the baton" line on December 12 is not a sudden announcement but the public conclusion of a transition that had been underway privately for three months.
 
-*[Editor: this entry consolidates a fact that is documented in retrospective sources (Wikipedia citing Andresen's recollection) but does not appear as a contemporaneous primary-source artifact in the archive. The September 2010 communication itself has not been published verbatim. The date 2010-09-01 is used as a representative placeholder; the actual day within September is not preserved in the public record.]*
+*[Editor: this entry consolidates a fact that is documented in retrospective sources (Benjamin Wallace's 2025 account, drawing on Andresen's recollection) but does not appear as a contemporaneous primary-source artifact in the archive. The September 2010 communication itself has not been published verbatim. The date 2010-09-01 is used as a representative placeholder; the actual day within September is not preserved in the public record.]*

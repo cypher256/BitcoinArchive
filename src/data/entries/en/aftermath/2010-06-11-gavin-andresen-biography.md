@@ -81,7 +81,7 @@ The handover from Satoshi to Andresen was not a single appointment but a gradual
 
 | Date | Event | Scope |
 |------|-------|-------|
-| 2010-09-01 | [Private notice to Andresen: "working on other things"](/BitcoinArchive/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/) | Earliest documented withdrawal signal |
+| 2010-09-01 | [Private notice to Andresen: "working on other projects"](/BitcoinArchive/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/) | Earliest documented withdrawal signal |
 | 2010-12-03 | [Email to Malmi recommending Gavin for development and management](/BitcoinArchive/entries/aftermath/2010-12-03-handover-to-gavin/) | Recommendation |
 | 2010-12-12 morning | [SVN access handover and endorsement email](/BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/) | Codebase + private leadership endorsement |
 | 2010-12-12 18:22 UTC | [Final BitcoinTalk forum post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) | Last public communication |

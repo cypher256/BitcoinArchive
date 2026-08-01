@@ -4,6 +4,7 @@ date: 2026-06-02T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Cryptocurrency_and_crime"
+sourceNote: "en.wikipedia.org/wiki/Cryptocurrency_and_crime は保管崩壊事例 (Mt. Gox、QuadrigaCX、FTX) を扱うが、犯罪ではなく事故による損失であるステファン・トーマスとジェームズ・ハウエルズの事案は扱っていない。5 件の事案はそれぞれ本文中で個別のアーカイブエントリーへリンクしており、各エントリーが独自の一次資料または同時代の出典を伴う。"
 author: "Bitcoin Institute"
 participants:
   - name: "Stefan Thomas"

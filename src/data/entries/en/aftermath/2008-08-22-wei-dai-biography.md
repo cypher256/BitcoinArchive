@@ -30,6 +30,8 @@ secondarySources:
     url: "https://www.cryptopp.com/"
   - name: "Less Wrong — Wei Dai's profile"
     url: "https://www.lesswrong.com/users/wei-dai"
+  - name: "Less Wrong — Wei Dai on Satoshi's cryptography/cypherpunk background (March 16, 2014)"
+    url: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything?commentId=9Ros4mX339FJnYzQF"
 relatedEntries:
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
@@ -56,7 +58,7 @@ In November 1998, Wei Dai published [b-money](/BitcoinArchive/entries/aftermath/
 
 Two months later, the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/) cited b-money as reference [1]. Bitcoin v0.1 also shipped with Dai's [Crypto++ library](https://www.cryptopp.com/) for its SHA-256 implementation — making Dai's code a direct dependency of Bitcoin from the first release.
 
-In January 2014, asked on LessWrong whether Satoshi might be a known figure from the cryptography or cypherpunk communities, Dai answered:
+In March 2014, asked on LessWrong whether Satoshi might be a known figure from the cryptography or cypherpunk communities, Dai answered:
 
 > "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
 
