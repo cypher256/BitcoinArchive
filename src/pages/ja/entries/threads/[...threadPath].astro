@@ -163,8 +163,6 @@ const breadcrumbs = [
               })()}
               <span class="message-date">{formatDateMaybeTime(entry.data.date, lang)}</span>
               <span class="message-source">
-                <a href={entry.data.sourceUrl} target="_blank" rel="noopener">原文</a>
-                {' · '}
                 <a class="permalink" href={localePath(`/entries/${entry.id}/`, lang)}>個別</a>
                 {(() => {
                   const commentaries = commentariesMap[entry.id] ?? [];
