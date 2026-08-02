@@ -4,7 +4,7 @@ date: 2026-07-27T00:00:00Z
 type: "currency"
 source: "cardano-org"
 sourceUrl: "https://cardano.org/"
-sourceNote: "cardano.org は本エントリーの正典的な入口として用いる。合意形成・供給・統治・配分に関する個別の主張は、それぞれ secondarySources に挙げた一次資料または学術論文に出典を持つ。"
+sourceNote: "cardano.org は本エントリーの正典的な入口として用いる。合意形成・供給・統治・配分に関する個別の主張は、それぞれの一次資料または学術論文に出典を持つ。"
 author: "Bitcoin Institute"
 participants:
   - name: "Charles Hoskinson"

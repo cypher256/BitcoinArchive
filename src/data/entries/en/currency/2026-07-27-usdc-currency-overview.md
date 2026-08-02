@@ -4,7 +4,7 @@ date: 2026-07-27T00:00:00Z
 type: "currency"
 source: "centre-whitepaper"
 sourceUrl: "https://www.exodus.com/assets/docs/usdc-whitepaper.pdf"
-sourceNote: "This mirror carries the same whitepaper text already cited in the Jeremy Allaire biography's secondarySources, used here as the primary source since CENTRE itself dissolved as an organization in August 2023."
+sourceNote: "This mirror carries the same whitepaper text already cited in the Jeremy Allaire biography, used here as the primary source since CENTRE itself dissolved as an organization in August 2023."
 author: "Bitcoin Institute"
 participants:
   - name: "Jeremy Allaire"

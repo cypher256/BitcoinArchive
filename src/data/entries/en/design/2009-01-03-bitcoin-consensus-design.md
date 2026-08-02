@@ -108,7 +108,7 @@ flowchart LR
 | **Maximum downward adjustment** | 1/4× (target becomes 4× harder) | Prevents a hash-rate surge from making blocks dangerously fast |
 | **Adjustment granularity** | Integer arithmetic on 256-bit target | No floating-point; deterministic across all implementations |
 
-*[Context: A historical difficulty chart is available as a separate interactive component. The chart shows the progression from difficulty 1 at the genesis block to values exceeding 10¹³ by 2024, illustrating the exponential growth of network hash rate over fifteen years.]*
+Network difficulty has climbed from 1 at the genesis block to more than 10¹³ by 2024 — a roughly ten-trillion-fold increase over fifteen years as aggregate network hash rate grew.
 
 ### Satoshi-era bugs
 

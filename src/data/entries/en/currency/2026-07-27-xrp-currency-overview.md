@@ -4,7 +4,7 @@ date: 2026-07-27T00:00:00Z
 type: "currency"
 source: "ripple-whitepaper"
 sourceUrl: "https://ripple.com/files/ripple_consensus_whitepaper.pdf"
-sourceNote: "The 2014 consensus whitepaper — which carries its own notice that it no longer reflects the current protocol — is cited here only for the original design intent and the 'collectively-trusted subnetworks' framing. The mechanics of validation, escrow, fee-burn, initial distribution, and the SEC litigation are each cited to their own primary sources under secondarySources."
+sourceNote: "The 2014 consensus whitepaper — which carries its own notice that it no longer reflects the current protocol — is cited here only for the original design intent and the 'collectively-trusted subnetworks' framing. The mechanics of validation, escrow, fee-burn, initial distribution, and the SEC litigation each have their own primary sources, cited separately below."
 author: "Bitcoin Institute"
 participants:
   - name: "Jed McCaleb"
@@ -135,7 +135,7 @@ Brad Garlinghouse, Ripple's chief executive, has made a sharper version of the s
 <!-- audit:quote-skip -->
 > Bitcoin is really controlled by China. There are four miners in China that control over 50 percent of Bitcoin.
 
-Two years later, at a Wall Street Journal event in Davos, he drew the line the archive's [twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) finds among nearly every builder who has criticized Bitcoin's mining — technical admiration paired with ownership skepticism:
+Two years later, at a Wall Street Journal event in Davos, he drew the same line nearly every builder who has criticized Bitcoin's mining ends up drawing — technical admiration paired with ownership skepticism, a pattern examined further in the archive's [twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/):
 
 <!-- audit:quote-skip -->
 > I'm bullish on BTC as a store of value, but not for payments.

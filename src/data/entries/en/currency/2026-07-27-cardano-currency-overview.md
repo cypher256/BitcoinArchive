@@ -4,7 +4,7 @@ date: 2026-07-27T00:00:00Z
 type: "currency"
 source: "cardano-org"
 sourceUrl: "https://cardano.org/"
-sourceNote: "cardano.org is used here as the entry's canonical point of entry. Individual claims about consensus, supply, governance, and distribution are each sourced to the primary document or academic paper listed under secondarySources."
+sourceNote: "cardano.org is used here as the entry's canonical point of entry. Individual claims about consensus, supply, governance, and distribution are each sourced to their own primary document or academic paper."
 author: "Bitcoin Institute"
 participants:
   - name: "Charles Hoskinson"

@@ -4,7 +4,7 @@ date: 2026-07-27T00:00:00Z
 type: "currency"
 source: "centre-whitepaper"
 sourceUrl: "https://www.exodus.com/assets/docs/usdc-whitepaper.pdf"
-sourceNote: "CENTRE の公式サイトは 2023 年 8 月の解散後に閉鎖されたため、技術文書そのものは第三者が保存するミラー版を典拠とする。準備資産・統治体制・株式取得の記述は Circle と Coinbase 双方の公表を、ビットコインについての引用は取材そのものを典拠とし、いずれも secondarySources に挙げている。"
+sourceNote: "CENTRE の公式サイトは 2023 年 8 月の解散後に閉鎖されたため、技術文書そのものは第三者が保存するミラー版を典拠とする。準備資産・統治体制・株式取得の記述は Circle と Coinbase 双方の公表を、ビットコインについての引用は取材そのものを典拠とする。"
 author: "Bitcoin Institute"
 participants:
   - name: "Jeremy Allaire"

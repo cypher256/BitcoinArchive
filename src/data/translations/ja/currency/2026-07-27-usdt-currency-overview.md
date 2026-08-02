@@ -4,7 +4,7 @@ date: 2026-07-27T00:00:00Z
 type: "currency"
 source: "tether-whitepaper"
 sourceUrl: "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
-sourceNote: "2016 年 6 月に公開された白書『Tether: Fiat currencies on the Bitcoin blockchain』は、当時の Omni Layer 方式による三層構造と、自ら列挙した実装上の弱点を記した一次資料。準備金の構成・凍結の実例・規制対応など後年の実態は、それぞれの一次資料を secondarySources に個別に挙げている。"
+sourceNote: "2016 年 6 月に公開された白書『Tether: Fiat currencies on the Bitcoin blockchain』は、当時の Omni Layer 方式による三層構造と、自ら列挙した実装上の弱点を記した一次資料。準備金の構成・凍結の実例・規制対応など後年の実態は、それぞれ個別の一次資料に基づいている。"
 author: "Bitcoin Institute"
 participants:
   - name: "Paolo Ardoino"
@@ -151,7 +151,7 @@ USDT はもはやビットコインの台帳の上にはほとんど存在しな
 
 ## ビットコインにとっての意味
 
-USDT が問うているのは、供給を増やす主体を一社に集めたとき、何が起き何が起きないかである。[ビットコインの「デジタルゴールド」としての地位を支える六つの構造的特徴](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)は、発行体が存在しないこと、供給が誰の裁量にも服さないことを前提に組まれている。USDT はその前提のほとんどを裏返している。発行体は名指しできる一社であり、供給は日々その一社の判断で増減し、残高はその一社の判断で凍結できる。[十二チェーンを横断した比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)が USDT と USDC をまとめて「発行体の裁量で決まる供給」の一行に置くのは、この構造ゆえだ。
+USDT が問うているのは、供給を増やす主体を一社に集めたとき、何が起き何が起きないかである。[ビットコインの「デジタルゴールド」としての地位を支える六つの構造的特徴](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)は、発行体が存在しないこと、供給が誰の裁量にも服さないことを前提に組まれている。USDT はその前提のほとんどを裏返している。発行体は名指しできる一社であり、供給は日々その一社の判断で増減し、残高はその一社の判断で凍結できる。同じ構造は USDC にも当てはまる。発行体の裁量で供給が決まる点は変わらない。[十二チェーンを横断した比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)では、この二つを含む全チェーンの設計を並べて確認できる。
 
 USDT と USDC の違いは、この構造の有無にはない。両者とも発行体を持ち、両者とも残高を凍結できる。違うのは、その発行体が自らの準備資産をどこまで見せるかという一点だ。[USDC の発行体](/BitcoinArchive/ja/participants/jeremy-allaire/)は準備資産の構成を自ら開示し、2023 年にはシリコンバレー銀行への預金が原因で一時的にペッグを外れたことも自ら公表している。テザー社が公にしてきたのは、四半期ごとの証明という、監査より狭い窓だけだ。証明と監査の違いを、テザー社の最高経営責任者自身が「四大事務所が引き受けない理由」として説明した記録は、この窓の狭さが偶然ではないことを示している。
 

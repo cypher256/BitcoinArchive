@@ -4,7 +4,7 @@ date: 2026-07-27T00:00:00Z
 type: "currency"
 source: "polkadot-whitepaper"
 sourceUrl: "https://assets.polkadot.network/Polkadot-whitepaper.pdf"
-sourceNote: "The whitepaper (Draft 1, November 2016) is cited here for Polkadot's own design self-description — the four roles, the issuance formula, the governance structure it proposed. The genesis timeline, the 2017 sale and the Parity freeze, the 2025 referendum, and OpenGov are each cited to their own primary or press source under secondarySources."
+sourceNote: "The whitepaper (Draft 1, November 2016) is cited here for Polkadot's own design self-description — the four roles, the issuance formula, the governance structure it proposed. The genesis timeline, the 2017 sale and the Parity freeze, the 2025 referendum, and OpenGov are each cited to their own primary or press source."
 author: "Bitcoin Institute"
 participants:
   - name: "Gavin Wood"
