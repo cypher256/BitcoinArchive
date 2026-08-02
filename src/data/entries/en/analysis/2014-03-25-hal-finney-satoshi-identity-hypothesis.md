@@ -242,3 +242,5 @@ For comparison with other named-candidate hypotheses, see the [Satoshi-identity 
 - Cafiero's "Hal Finney nearly tied" outcome is treated as material toward the *uniqueness* question, not as confirmation of either Finney or Adam Back specifically. See the [Adam Back hypothesis entry](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) for the symmetric treatment from the other side.
 - If new evidence surfaces — a private writing or correspondence by Finney that contradicts his 2013 framing, a reconciliation of the race-day alibi with Satoshi-network activity that does not require fabrication, or a documented connection between Patoshi-scale holdings and Finney's estate — this entry should be updated.
 
+The Finney case falls under Group B of the necessary-but-not-sufficient framework that the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) applies across all candidates.
+

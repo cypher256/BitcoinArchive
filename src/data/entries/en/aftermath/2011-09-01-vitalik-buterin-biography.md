@@ -4,6 +4,7 @@ date: 2011-09-01T00:00:00Z
 type: "biography"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Vitalik_Buterin"
+sourceNote: "The date 2011-09-01 used in this entry is a representative placeholder for his Bitcoin-community entry; the precise month is not consistently fixed across his published interviews."
 author: "Bitcoin Institute"
 participants:
   - name: "Vitalik Buterin"

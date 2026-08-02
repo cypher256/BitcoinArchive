@@ -111,7 +111,7 @@ Hashcash is the proof-of-work primitive Bitcoin reuses for mining and consensus,
 
 For where each non-Hashcash component actually came from — other whitepaper references, general computer-science knowledge, or novel synthesis — see the [Bitcoin design lineage entry](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/). Authoring Hashcash means designing one of Bitcoin's many components — the spam-deterrence stamp scheme Bitcoin repurposes as the basis for mining. The forensic-fit argument tightens or weakens depending on whether the reader counts that component as *the* design idea Bitcoin needed or as *one of* the design ideas Bitcoin needed.
 
-The objection from candidate-set scope: the whitepaper also cites Wei Dai's b-money. By the same forensic-fit argument, Wei Dai would be a parallel candidate. This evidence selects "the cypherpunks Satoshi explicitly cited" as a candidate set rather than Back uniquely — Wei Dai fits the same profile (see the [hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) for the full candidate comparison).
+The objection from candidate-set scope: the whitepaper also cites Wei Dai's b-money. By the same forensic-fit argument, Wei Dai would be a parallel candidate. This evidence selects "the cypherpunks Satoshi explicitly cited" as a candidate set rather than Back uniquely — Wei Dai fits the same profile, and the [hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) groups Back and Wei Dai together as Group A for this reason.
 
 ### 1.3 Cypherpunk credentials, capability, and English level
 
@@ -202,4 +202,6 @@ For comparison with other named-candidate hypotheses, see the [Satoshi-identity 
 - This entry does not present new evidence. It compiles material from the 2026 NYT investigation, Back's responses, and existing archive material on the August 2008 email exchange and the 2024 COPA testimony.
 - Cafiero's "Hal Finney nearly tied" outcome is treated as material evidence against the *uniqueness* of the Back identification (see the [Hal Finney = Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/) and the documented [race-day alibi](/BitcoinArchive/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/) that argues against Finney specifically).
 - If new evidence surfaces — direct documentary links beyond the August 2008 emails, technical fingerprints in Bitcoin v0.1 matching Back's other published code, or comments by Back contradicting his prior public position — this entry should be updated.
+
+[The February 2024 Adam Back retrospective testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) is the sworn-testimony record on which §2.2 builds the load-bearing counter-evidence. [The April 2026 NYT Carreyrou investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) is where the evidence in §1 starts, and §2.1 weighs it against the August 2008 email chain.
 

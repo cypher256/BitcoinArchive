@@ -4,7 +4,7 @@ date: 2026-07-27T00:00:00Z
 type: "currency"
 source: "polkadot-whitepaper"
 sourceUrl: "https://assets.polkadot.network/Polkadot-whitepaper.pdf"
-sourceNote: "設計そのものの一次資料はギャヴィン・ウッド自身の技術文書 (2016 年 11 月初版)。ジェネシス以降の統治史・発行上限・初期配分についての個別の事実は、それぞれ Polkadot 公式ウィキ・Polkassembly・当時の報道といった一次資料に基づく。"
+sourceNote: "設計そのものの一次資料はギャヴィン・ウッド自身の技術文書 (2016 年 11 月初版)。ジェネシス以降の統治史・発行上限・初期配分についての個別の事実は、それぞれ Polkadot 公式ウィキ・Polkassembly・当時の報道など、個別の典拠に基づく。"
 author: "Bitcoin Institute"
 participants:
   - name: "Gavin Wood"

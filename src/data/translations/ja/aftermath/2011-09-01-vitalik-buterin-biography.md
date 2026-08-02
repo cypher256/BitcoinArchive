@@ -4,6 +4,7 @@ date: 2011-09-01T00:00:00Z
 type: "biography"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Vitalik_Buterin"
+sourceNote: "本エントリーで用いる 2011-09-01 という日付は、彼のビットコインコミュニティ参入の代表的なプレースホルダーであり、彼の公開インタビュー間で正確な月は一意に確定していない。"
 author: "Bitcoin Institute"
 participants:
   - name: "Vitalik Buterin"

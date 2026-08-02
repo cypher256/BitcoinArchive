@@ -255,6 +255,6 @@ Skye Grey の分析は匿名のブログ記事で査読がなく、選定され�
 - Skye Grey の匿名性は、文体計量分析自体が、名前のある著者の分析が受けるであろう検証を受けていないことを意味する。2014 年アストン大学の研究はより検証可能だが、その方法論は後年の論者により異議が唱えられている。
 - 新たな証拠が出現すれば — 直接の文書接続、ビットコイン v0.1 にサボの他の公開コードと一致する技術的指紋、サボがそれまでの公的立場と矛盾する発言 — 本エントリーは更新されるべきである。
 
-サボ説が他の名指し候補とどう比較されるかは、[サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)を参照されたい。
+[TechCrunch の Skye Grey 文体計量報道](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)が、§1 の証拠の最初の柱 — 文体計量 — を提供する。サボの事例は、候補全体に共通するこの必要だが十分ではないという評価枠組みの中で、[サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)の B 群に位置づけられる。
 
 *[編者注：Skye Grey は匿名で書いており、それは分析を独立に検証できるかに関わるが、所見の当否には関わらない。]*

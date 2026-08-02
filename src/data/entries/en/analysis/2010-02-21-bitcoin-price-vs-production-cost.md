@@ -212,7 +212,7 @@ Alongside the models came instrumentation. Luxor's hashprice index (2020) made m
 
 The floor claim then met a live test. From early 2026, widely followed difficulty-regression estimates put average all-in production cost near $87,000 while the market price sat near $70,000, and the price stayed below the modelled cost for months. What gave way was the cost side: miners sold reserves to cover operations, capitulated, and difficulty fell by the most since 2021 — the adjustment described by Satoshi's 2010 post and measured by the 2020–2022 studies, running in real time.
 
-*[Editor: the 2026 figures above are a snapshot of a moving market and may no longer hold.]*
+*[Editor: the 2026 readings above are a snapshot of a moving market. They test the mechanism; the argument does not depend on the specific dollar levels.]*
 
 ## 6. What the record supports
 
