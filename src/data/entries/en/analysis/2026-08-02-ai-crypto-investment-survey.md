@@ -3,7 +3,7 @@ title: "Which crypto should you invest in? Five AI models answer, and their reas
 date: 2026-08-02T00:00:00Z
 type: "analysis"
 source: "bitcoin-institute"
-sourceNote: "This entry is Bitcoin Institute's own first-hand experiment, not a reproduction of an existing document: the same prompt was put to five AI products on 2026-08-02 and the raw answers were recorded as given, with one exception noted in §6. No single one of the five products outranks the others as a source, so sourceUrl is omitted; all five product pages, plus the citations used to check each model's claims, are listed in secondarySources."
+sourceNote: "This entry is Bitcoin Institute's own first-hand experiment, not a reproduction of an existing document: the same prompt was put to five AI products on 2026-08-02, and their raw answers were recorded as given, with one exception noted in §6."
 author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
@@ -177,6 +177,6 @@ This maps onto a distinction this archive already draws for reading the wider fi
 
 - **Not investment advice, and not a prediction.** No model's pick, and nothing in this entry, is a recommendation. The prompt itself asked each model to state an opinion for the sole purpose of recording and comparing it.
 - **A snapshot, not a survey.** Five products, one prompt each, run once, on a single day (2026-08-02). Different phrasing, a different day, or multiple runs of the same model could produce different answers -- this entry makes no claim about how stable any of these positions are.
-- **Model versions are recorded but not displayed.** Each model was run at a specific version and reasoning-effort setting (see the HTML comment above §2); those labels are omitted from the visible text because a version string reads as stale within months, but they remain in the page source for readers who want the exact configuration.
+- **Model versions are not stated.** Each model was run at a specific version and reasoning-effort setting, but a version string reads as stale within months, so this entry names each model by product only, not by build.
 - **The fact-check is bounded by what's checkable.** Qualitative claims ("simplicity is a strength," "this is the most reasonable trade-off") aren't the kind of statement a source can confirm or refute, and are marked "unverifiable" rather than scored.
 - **One AI's response was edited for a methodology reason unrelated to accuracy.** A sentence referencing unrelated context about the researcher was removed before publication, because it indicated that particular response was not produced under the same blank-context conditions as the other four; nothing else was changed.
