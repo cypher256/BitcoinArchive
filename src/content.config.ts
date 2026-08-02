@@ -37,7 +37,7 @@ const entrySchema = z.object({
   date: z.coerce.date(),
   type: typeEnum,
   source: z.string(),
-  sourceUrl: z.string().url(),
+  sourceUrl: z.string().url().optional(),
   sourceNote: z.string().optional(),
   sourceStatus: z.enum(['available', 'archived', 'unavailable']).default('available'),
   // X (Twitter) handle for type: tweet entries. Bare handle without

@@ -13,7 +13,7 @@ interface PdfMetadata {
 }
 
 interface Props {
-  sourceUrl: string;
+  sourceUrl?: string;
   sourceNote?: string;
   secondarySources?: { name: string; url: string; note?: string }[];
   pdfMetadata?: PdfMetadata;
@@ -29,7 +29,17 @@ const t = useTranslations(lang);
 // original of a transcribed text. Switch labels accordingly.
 const isDerivativeType = entryType === 'analysis' || entryType === 'biography' || entryType === 'design' || entryType === 'currency';
 const primaryLabel = isDerivativeType ? 'entry.referenceSource' : 'entry.originalSource';
-const secondaryLabel = isDerivativeType ? 'entry.relatedSources' : 'entry.secondarySources';
+// `sourceUrl` is omitted for entries with no single canonical external
+// reference (several sources are equally primary -- forcing one into
+// the "open first" slot would be an arbitrary, unranked pick dressed
+// up as a ranking). When that happens, `secondarySources` stands alone
+// under a neutral heading instead of reading as "other" relative to a
+// primary that does not exist. See STYLE_GUIDE.md "Source Citation".
+const secondaryLabel = !sourceUrl
+  ? 'entry.externalSources'
+  : isDerivativeType
+    ? 'entry.relatedSources'
+    : 'entry.secondarySources';
 
 // Display cap, mirroring RelatedEntries / CommentaryLinks: the first
 // MAX_VISIBLE items (frontmatter order = editorial priority, see
@@ -42,14 +52,21 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenS
 ---
 
 <div class="source-citation">
-  <h3>{t(primaryLabel as any)}</h3>
-  <a href={sourceUrl} target="_blank" rel="noopener">{sourceUrl}</a>
-  {sourceNote && (
-    <div class="source-note-block">{sourceNote}</div>
+  {sourceUrl && (
+    <>
+      <h3>{t(primaryLabel as any)}</h3>
+      <a href={sourceUrl} target="_blank" rel="noopener">{sourceUrl}</a>
+      {sourceNote && (
+        <div class="source-note-block">{sourceNote}</div>
+      )}
+    </>
   )}
   {visibleSources.length > 0 && (
-    <div class="secondary-sources">
+    <div class:list={['secondary-sources', { 'secondary-sources--standalone': !sourceUrl }]}>
       <h4>{t(secondaryLabel as any)}</h4>
+      {!sourceUrl && sourceNote && (
+        <div class="source-note-block">{sourceNote}</div>
+      )}
       <ul>
         {visibleSources.map((s) => (
           <li>
@@ -129,6 +146,14 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenS
     margin-top: 1rem;
     padding-top: 0.75rem;
     border-top: 1px solid var(--color-border);
+  }
+  /* No `sourceUrl` above it (no single source outranks the rest), so
+     this list is the top-level section, not a follow-on to a primary
+     block -- no divider needed. */
+  .secondary-sources--standalone {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
   }
   .secondary-sources h4 {
     margin: 0 0 0.3rem;

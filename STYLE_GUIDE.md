@@ -529,15 +529,29 @@ both presuppose this integrity invariant; they say *where* to link, not
 `<SourceCitation />` renders the two frontmatter fields as separate
 sections at the foot of the entry:
 
-- **`sourceUrl`** (required) — the single canonical primary
-  reference. Rendered under a type-dependent heading —
-  「原典の外部ソース」 (primary-source / article) or
-  「参照元の外部ソース」 (analysis / biography / design), EN
-  "Original external source" / "Reference external source". Every
+- **`sourceUrl`** (optional) — the single canonical primary
+  reference, when one genuinely exists. Rendered under a
+  type-dependent heading — 「原典の外部ソース」 (primary-source /
+  article) or 「参照元の外部ソース」 (analysis / biography / design),
+  EN "Original external source" / "Reference external source". Every
   variant carries 「外部ソース」 / "external source" so the reader
   sees it is an external link. Pick the URL a reader should open
   first (archived original, Wikipedia biography, BitcoinTalk topic,
-  GitHub PR, etc.).
+  GitHub PR, etc.) — and it must be an independent, external site.
+  **Never this archive's own domain** (in any of its published or
+  fictional forms — self-citation is not a citation, regardless of
+  whether the URL resolves), and never a URL invented to fill the
+  field when no genuine canonical reference exists.
+  **Omit `sourceUrl` entirely** when the entry has no single source
+  that outranks the others (e.g. an original Bitcoin Institute
+  experiment surveying several equally-weighted external products).
+  Do not force an arbitrary pick from among equals just to satisfy
+  the field — an unranked choice dressed up as "the" reference misleads
+  the reader about why that one was chosen. When omitted, every
+  reference goes in `secondarySources[]`, and `<SourceCitation />`
+  renders it as a single flat list under the neutral heading 「外部
+  ソース」 / "External sources" (`entry.externalSources`), with no
+  implied ranking.
 - **`sourceNote`** (optional) — short caveat or context for the
   primary reference (provenance, publication route, dataset
   description, legal-document role, etc.). Rendered as a muted
@@ -568,7 +582,9 @@ carries a useful `note`), move the `note` text into the entry's
 
 **Enforcement.** `scripts/check-source-duplication.mjs` fails when
 an entry's `sourceUrl` matches any of its own `secondarySources[].url`.
-Wired into `npm run check` in `--strict` mode.
+`scripts/check-no-self-domain.mjs` fails when `sourceUrl` or any
+`secondarySources[].url` points at this archive's own domain. Both
+are wired into `npm run check` in `--strict` mode.
 
 ## External Link Rot Handling
 

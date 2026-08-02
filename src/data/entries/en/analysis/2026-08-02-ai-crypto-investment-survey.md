@@ -3,8 +3,7 @@ title: "Which crypto should you invest in? Five AI models answer, and their reas
 date: 2026-08-02T00:00:00Z
 type: "analysis"
 source: "bitcoin-institute"
-sourceUrl: "https://chatgpt.com/"
-sourceNote: "This entry is Bitcoin Institute's own first-hand experiment, not a reproduction of an existing document: the same prompt was put to five AI products on 2026-08-02 and the raw answers were recorded as given, with one exception noted in §6. All five product pages, plus the citations used to check each model's claims, are listed in secondarySources."
+sourceNote: "This entry is Bitcoin Institute's own first-hand experiment, not a reproduction of an existing document: the same prompt was put to five AI products on 2026-08-02 and the raw answers were recorded as given, with one exception noted in §6. No single one of the five products outranks the others as a source, so sourceUrl is omitted; all five product pages, plus the citations used to check each model's claims, are listed in secondarySources."
 author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
