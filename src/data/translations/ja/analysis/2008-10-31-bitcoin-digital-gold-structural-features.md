@@ -46,6 +46,7 @@ relatedEntries:
   - currency/2026-07-27-usdc-currency-overview
   - currency/2026-07-27-usdt-currency-overview
   - currency/2026-07-27-xrp-currency-overview
+  - analysis/2026-08-02-ai-crypto-investment-survey
 inlineLinkKeywords:
   - "デジタルゴールド"
   - "二層の非中央集権"
@@ -230,3 +231,5 @@ flowchart TB
 企業財務・現物 ETF・国家準備がサトシの動かない約 110 万 BTC にどこまで迫ったか、そして保有の集中がなぜ第 2 層の言うプロトコルへの権威にならないかという、保有の側から見た 2026 年の現在地は、[誰がビットコインを握っているのか](/BitcoinArchive/ja/entries/analysis/2026-07-09-bitcoin-ownership-map/)が描いている。
 
 上の六つの特徴を 12 チェーンに一度に当てはめたものは、表ごとの凡例と、記号を点数として読まないようにという明示的な注記を添えたうえで、[アルトコインの数と設計の比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)にある。
+
+個別に問われた 5 つの AI システムは、一つだけ選べと言われて全システムがビットコインに収束した。検証に耐えた主張は、この六特徴のような構造的な主張であり、最上級表現ではなかった。実験の全記録は AI 投資調査にある。

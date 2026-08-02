@@ -46,6 +46,7 @@ relatedEntries:
   - currency/2026-07-27-usdc-currency-overview
   - currency/2026-07-27-usdt-currency-overview
   - currency/2026-07-27-xrp-currency-overview
+  - analysis/2026-08-02-ai-crypto-investment-survey
 inlineLinkKeywords:
   - "digital gold"
   - "two-layer decentralization"
@@ -232,3 +233,5 @@ The framing is an explanation of why the digital-gold label has stuck for Bitcoi
 Where the ownership side of this story stands as of 2026 — how far corporate treasuries, spot ETFs, and sovereign reserves have climbed toward Satoshi's untouched ~1.1 million BTC, and why holding coins confers none of the protocol authority the second layer is about — is mapped in [Bitcoin's ownership map](/BitcoinArchive/entries/analysis/2026-07-09-bitcoin-ownership-map/).
 
 The six features above are applied to twelve chains at once in [the altcoin count and design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/).
+
+Five AI systems, asked separately to pick exactly one cryptocurrency, converged on Bitcoin. The claims that survived fact-checking were structural claims like these six features, not superlatives. The AI investment survey records the full experiment.

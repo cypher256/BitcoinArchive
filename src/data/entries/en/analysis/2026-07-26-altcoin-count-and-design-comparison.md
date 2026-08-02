@@ -131,6 +131,7 @@ relatedEntries:
   - currency/2026-07-27-usdt-currency-overview
   - currency/2026-07-27-xrp-currency-overview
   - analysis/2026-07-28-bitcoin-nation-state-policy-history
+  - analysis/2026-08-02-ai-crypto-investment-survey
 inlineLinkKeywords:
   - "how many altcoins"
   - "altcoin comparison"
@@ -358,7 +359,7 @@ The regulatory position is that this category sits outside securities protection
 This archive records these events and does not characterize the intent behind them. What it can say is structural, and the first structural fact is that none of these is a chain. All four are tokens minted on Solana, which appears in §2 with an issuance rule, a consensus mechanism and a published argument about what its money is for — none of which a token minted on its ledger inherits. Such a token's supply is not a schedule; it is a number the issuer chose. So every property §3 tests for is absent by construction: the supply is allocated to the issuer before launch, the issuer is a named party, the launch is announced by that party, and the fee revenue accrues to that party regardless of the price. It is the exact inverse of the launch condition Bitcoin had — and it is now cheap enough that the process runs tens of thousands of times a day.
 
 ## 9. Limits of this reading
-- **Not investment advice, and not a prediction.** No price target, no ranking, no "which one wins." The archive's [standing position on price](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) is that supply design is a bet whose outcome is not settled, and the same applies here.
+- **Not investment advice, and not a prediction.** No price target, no ranking, no "which one wins." The archive's [standing position on price](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) is that supply design is a bet whose outcome is not settled, and the same applies here. A related experiment tested that same refusal to rank from another angle. The AI investment survey put the same question to five separate AI systems, then checked their stated reasons against primary sources.
 - **Not a technical benchmark.** Throughput, fees, and latency change with every release; a table of them would be wrong within months. The axes chosen above are the ones that change rarely, because they are decided at launch.
 - **Not a completeness claim.** Twelve chains out of a population whose lower bound is eight figures is a sample chosen for one reason: these are the chains that recur in the Bitcoin record this archive keeps.
 - **Not a verdict on any founder.** The biographies collect what people said, with sources and dates. Where a founder's statements conflict with each other, the conflict is recorded rather than resolved.

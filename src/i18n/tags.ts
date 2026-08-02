@@ -811,4 +811,7 @@ export const tagTranslations: Record<string, string> = {
   'plustoken': 'PlusToken',
   'prince-group': 'Prince Group',
   'spot-bitcoin-etf': '現物ビットコイン ETF',
+  'ai': 'AI',
+  'fact-check': 'ファクトチェック',
+  'investment-survey': '投資アンケート',
 };

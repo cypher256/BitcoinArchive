@@ -113,6 +113,7 @@ relatedEntries:
   - currency/2026-07-27-solana-currency-overview
   - currency/2026-07-27-usdc-currency-overview
   - currency/2026-07-27-usdt-currency-overview
+  - analysis/2026-08-02-ai-crypto-investment-survey
 inlineLinkKeywords:
   - "fixed supply"
   - "21 million cap"
@@ -327,3 +328,5 @@ Two notes on scope. **Comparable data** — the supply figures in §6 are protoc
 The Hayekian framing of the hard-cap-vs-adjustable debate — Hayek's 1976 *Denationalisation of Money* argued for *competing adjustable* private issuance, which Bitcoin replaces with a *single algorithmic fixed* schedule — is treated as a longer ideological-lineage analysis in [the Hayek-Extropian lineage entry](/BitcoinArchive/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/).
 
 [The mining-reward-exhaustion analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/) asks what the 21-million cap forces the network to answer once new issuance ends. Where these supply designs sit against the other axes each chain chose — consensus, initial distribution, ledger privacy, and who can change the rules — is tabulated in [the altcoin count and design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/).
+
+Whether that same debate tips one way once neutrality is dropped is now on record. Five independently-asked AI systems converged on Bitcoin in the AI investment survey, most naming scarcity and the hard cap as the deciding factor. Their reasons were checked against primary sources.
