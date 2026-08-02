@@ -961,6 +961,17 @@ normalized.
       as page-level, migrate to (A) `editorNote:` in frontmatter.
       Do **not** dissolve them into body prose — that would
       reintroduce editor narrator into the source record.
+14. **Body prose must never reference this site's own publishing
+    mechanics.** No pointing the reader at "the HTML comment above,"
+    "the page source," a frontmatter field name (`sourceUrl`,
+    `secondarySources`, `editorNote`, etc.), or any other detail of
+    how the entry is built. A reader is not expected to view source
+    and does not benefit from being told to. If a fact needs
+    disclosing, disclose the fact itself in plain language, not the
+    mechanism that stores it. (Incident: 2026-08-02, a survey entry's
+    `sourceNote` explained a frontmatter decision to the reader
+    instead of the underlying provenance fact, and a body bullet
+    told readers to "see the HTML comment above §2.")
 
 ### Every source quote must belong to an attribution chain
 
