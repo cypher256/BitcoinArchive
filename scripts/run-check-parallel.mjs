@@ -92,6 +92,7 @@ async function main() {
     ['check-ja-glossary.mjs', '--ignore-file', '.ja-glossary-ignore'],
     ['check-description-length.mjs', '--strict'],
     ['check-source-duplication.mjs', '--strict'],
+    ['check-no-self-domain.mjs', '--strict'],
     ['check-halving-consistency.mjs'],
     ['check-quotes.mjs'],
     ['check-quote-translation-consistency.mjs'],

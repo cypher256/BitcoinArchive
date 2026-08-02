@@ -2,8 +2,8 @@
 title: "The day 184 billion BTC was minted — the centralization paradox, soft-fork rescue, and a 5-hour response"
 date: 2010-08-15T00:00:00Z
 type: "analysis"
-source: "bitcoinarchive"
-sourceUrl: "https://www.bitcoin-institute.org/entries/analysis/2010-08-15-overflow-incident-structure-and-paradox/"
+source: "bitcoin-wiki"
+sourceUrl: "https://en.bitcoin.it/wiki/Value_overflow_incident"
 author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
@@ -32,8 +32,6 @@ inlineLinkKeywords:
   - "5-hour response"
   - "soft-fork rescue"
 secondarySources:
-  - name: "Bitcoin Wiki — Value overflow incident"
-    url: "https://en.bitcoin.it/wiki/Value_overflow_incident"
   - name: "Bitcoin Wiki — CVE-2018-17144 (inflation bug)"
     url: "https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures#CVE-2018-17144"
   - name: "Block 74638 (Blockstream)"

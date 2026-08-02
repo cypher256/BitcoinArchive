@@ -2,8 +2,8 @@
 title: "サトシの設計意図とビットコインの現状の乖離 ― 4 つの軸"
 date: 2026-05-24T00:00:00Z
 type: "analysis"
-source: "bitcoin-institute"
-sourceUrl: "https://bitcoininstitute.com/"
+source: "bitcoin-pdf"
+sourceUrl: "https://bitcoin.org/bitcoin.pdf"
 author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"

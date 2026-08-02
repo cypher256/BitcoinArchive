@@ -2,8 +2,8 @@
 title: "How Bitcoin actually works: a visual glossary from coins to consensus"
 date: 2026-05-23T00:00:00Z
 type: "analysis"
-source: "bitcoin-institute"
-sourceUrl: "https://bitcoininstitute.com/"
+source: "bitcoin-pdf"
+sourceUrl: "https://bitcoin.org/bitcoin.pdf"
 author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"

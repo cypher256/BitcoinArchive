@@ -2,8 +2,8 @@
 title: "knightmb: The Man Who Saved Bitcoin's Worst Day, And The Legend That Swallowed Him"
 date: 2010-08-15T00:00:00Z
 type: "analysis"
-source: "bitcoinarchive"
-sourceUrl: "https://www.bitcoin-institute.org/entries/analysis/2010-08-15-knightmb-snapshot-and-legend/"
+source: "trakx"
+sourceUrl: "https://trakx.io/resources/insights/who-is-knightmb-bitcoin-pioneer/"
 author: "knightmb"
 participants:
   - name: "knightmb"
@@ -18,8 +18,6 @@ tags:
   - "pseudonym-analysis"
   - "analysis"
 secondarySources:
-  - name: "Trakx — Who is knightmb? Bitcoin Pioneer"
-    url: "https://trakx.io/resources/insights/who-is-knightmb-bitcoin-pioneer/"
   - name: "arXiv:2206.02871 — Academic survey citing the identification"
     url: "https://arxiv.org/abs/2206.02871"
 relatedEntries:

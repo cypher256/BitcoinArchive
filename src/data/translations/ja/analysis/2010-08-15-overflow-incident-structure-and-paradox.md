@@ -2,8 +2,8 @@
 title: "1840 億 BTC が生まれた日 — 中央集権パラドックス、ソフトフォーク救出、5 時間の対応"
 date: 2010-08-15T00:00:00Z
 type: "analysis"
-source: "bitcoinarchive"
-sourceUrl: "https://www.bitcoin-institute.org/entries/analysis/2010-08-15-overflow-incident-structure-and-paradox/"
+source: "bitcoin-wiki"
+sourceUrl: "https://en.bitcoin.it/wiki/Value_overflow_incident"
 author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
@@ -32,8 +32,6 @@ inlineLinkKeywords:
   - "5 時間対応窓"
   - "ソフトフォーク救出"
 secondarySources:
-  - name: "Bitcoin Wiki — Value overflow incident"
-    url: "https://en.bitcoin.it/wiki/Value_overflow_incident"
   - name: "Bitcoin Wiki — CVE-2018-17144 (inflation bug)"
     url: "https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures#CVE-2018-17144"
   - name: "ブロック 74638 (Blockstream)"

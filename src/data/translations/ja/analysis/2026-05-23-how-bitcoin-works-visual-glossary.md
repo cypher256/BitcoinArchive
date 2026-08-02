@@ -2,8 +2,8 @@
 title: "ビットコインの仕組み図解: コインから合意までの全用語マップ"
 date: 2026-05-23T00:00:00Z
 type: "analysis"
-source: "bitcoin-institute"
-sourceUrl: "https://bitcoininstitute.com/"
+source: "bitcoin-pdf"
+sourceUrl: "https://bitcoin.org/bitcoin.pdf"
 author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
