@@ -10,6 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Five AI models were asked the same question and independently picked the same coin. Fact-checking their reasons: structural claims held up, confident superlatives mostly did not."
 isSatoshi: false
+homeOrder: 5
 tags:
   - "analysis"
   - "ai"

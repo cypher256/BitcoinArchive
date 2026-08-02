@@ -10,7 +10,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "初心者向けのビットコイン図解。 8 章 30 用語を図で通覧: UTXO、トランザクション、ブロック、マイニング、メモリープール、最長チェーン合意。"
 isSatoshi: false
-homeOrder: 5
 tags:
   - "beginner-guide"
   - "terminology"

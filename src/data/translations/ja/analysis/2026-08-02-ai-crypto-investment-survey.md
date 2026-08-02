@@ -10,6 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "同じ日に同じ質問をされた 5 つの AI モデルが、独立に同じ銘柄を選んだ。各 AI が挙げた理由を一次資料で検証すると、断定的な最上級表現ほど怪しかった。"
 isSatoshi: false
+homeOrder: 5
 tags:
   - "analysis"
   - "ai"
