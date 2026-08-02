@@ -98,7 +98,6 @@ translationStatus: complete
 
 ## 4. 本エントリーの限界
 
-- 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
-- 出来事の全体（2016 年の宣言、Wired／Gizmodo の先行報道、Cobra へのホワイトペーパー訴訟、裁判、控訴）は[クレイグ・ライト伝記](/BitcoinArchive/ja/participants/craig-wright/)にある。本エントリーは説の論述のみを扱う。
+出来事の全体（2016 年の宣言、Wired／Gizmodo の先行報道、Cobra へのホワイトペーパー訴訟、裁判、控訴）は[クレイグ・ライト伝記](/BitcoinArchive/ja/participants/craig-wright/)にある。
 
-[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、必要だが十分ではないという評価枠組みの中で、クレイグ・ライトを C 群に置いている。
+ライトの主張は、サトシ候補の中でも最も証拠の薄い C 群に位置する。根拠は自称という一本の糸のみで、技術的・知的な裏付けを欠く。詳しくは[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)で扱う。

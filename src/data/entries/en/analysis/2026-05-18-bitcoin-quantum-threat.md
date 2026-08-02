@@ -96,7 +96,7 @@ What is Bitcoin-specific is the *structure* of its attack surface — a public l
 
 ## 3. What is exposed today
 
-Bitcoin has accumulated several output formats over its life. They expose the public key at different points, and the exposure window is the entire vulnerability surface for a quantum attack on dormant coins. The full per-halving cards and supply curve are on the Archive's [Bitcoin chart page](/BitcoinArchive/chart/) for reference; what matters here is which form the coins are sitting in.
+Bitcoin has accumulated several output formats over its life. They expose the public key at different points, and the exposure window is the entire vulnerability surface for a quantum attack on dormant coins. The Archive's [Bitcoin chart page](/BitcoinArchive/chart/) has the full per-halving cards and supply curve. Which form a coin is held in decides its exposure:
 
 | Output type | Public key on chain when…                              | Quantum exposure                                            |
 |---|---|---|

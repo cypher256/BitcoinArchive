@@ -84,7 +84,7 @@ translationStatus: complete
 
 本エントリは三つの観察を組み合わせて読む: (a) 上記の b-money 不知の告白、サトシ本人の言葉。(b) ウェイ・ダイの 2014 年の振り返りでの「サトシはサイファーパンクのコミュニティに以前から積極的に参加していた人物ではない」という推測。(c) サトシの公開記録上の実践と、エリック・ヒューズ 1993 年『A Cypherpunk's Manifesto』が示した 6 項目の思想核とのほぼ一対一の整合。サイファーパンクのコミュニティに参加した形跡が見えない設計者が、その創設宣言にほぼ一対一で対応するシステムにどう到達したのか。
 
-対になる別エントリ[「サトシ・ナカモト」という仮名と『AKIRA』 — テクノオリエンタリズム的記号空間の中の読解](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)は、仮名そのものを 1980〜90 年代のサイバーパンク／テクノオリエンタリズム的な記号空間の内側で読む別軸の分析である。本エントリは、サトシがシステムを設計した**知的位置**そのものに焦点を絞る。隣接して[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)（ブロック 0 という対象物）と[リリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)（リリース週という出来事）が並ぶ。
+対になる別エントリ[「サトシ・ナカモト」という仮名と『AKIRA』 — テクノオリエンタリズム的記号空間の中の読解](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)は、仮名そのものを 1980〜90 年代のサイバーパンク／テクノオリエンタリズム的な記号空間の内側で読む別軸の分析である。隣接して[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)（ブロック 0 という対象物）と[リリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)（リリース週という出来事）が並ぶ。
 
 ## 1. サイファーパンク：歴史・核心・技術系譜
 
@@ -124,7 +124,7 @@ translationStatus: complete
 | 2004 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | RPOW（Reusable Proof-of-Work） | 再利用可能 PoW トークンを発行する集中サーバー。フィニーは後にビットコインで最初に知られるサトシ以外のノード運用者となる |
 | 2008 | [サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/) | ビットコイン | 統合 |
 
-*[編者注：この表は提案群をサイファーパンク運動の地形に置くためのものである。そのうちビットコインが何を再利用し、何を借り、何を新たに統合したかは、構成要素ごとに[設計系譜の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)が扱っている。]*
+そのうちビットコインが何を再利用し、何を借り、何を新たに統合したかは、構成要素ごとに[設計系譜の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)が扱っている。
 
 §2 では、この系譜のうち何をサトシが実際に開発期間中に知っていたか、そして何を知らなかったかを精査する。
 

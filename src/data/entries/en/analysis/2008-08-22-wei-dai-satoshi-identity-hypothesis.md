@@ -144,7 +144,7 @@ The simpler reading: the chain is what it appears to be — Satoshi seeking cita
 
 ### 2.2 Satoshi's "I wasn't aware of the b-money page" admission
 
-In the August 22, 2008 email to Adam Back, Satoshi wrote: *"I wasn't aware of the b-money page, but my ideas start from exactly that point."* This statement is the [self-disclosure that anchors the cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/): it locates Satoshi's b-money knowledge as post-development, learned via Adam Back's referral two months before the whitepaper.
+In the August 22, 2008 email to Adam Back, Satoshi wrote: *"I wasn't aware of the b-money page, but my ideas start from exactly that point."* This statement locates Satoshi's b-money knowledge as post-development, learned via Adam Back's referral two months before the whitepaper — examined further in [cypherpunk-independent-arrival](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
 Under the Wei-Dai = Satoshi reading, this statement is a self-deception with no audience — Satoshi tells Adam Back, in private email, that he had not seen Wei Dai's page, while in fact being its author. The simpler reading: Satoshi genuinely did not know b-money during Bitcoin's design, and learned of it through Adam Back's referral in August 2008. Wei Dai's own [2014 AALWA retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) endorses this reading: Satoshi reinvented the central ideas independently and learned of b-money only afterwards.
 
@@ -161,7 +161,7 @@ The retrospective makes three statements that bear on the claim:
 - Satoshi independently re-invented the central ideas of b-money before learning of Wei Dai's paper through Adam Back's referral.
 - Wei Dai distinguishes himself from Satoshi as separate persons throughout the discussion.
 
-The first point is what the [identifiability argument](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) extracts from this retrospective and applies to other candidates (Adam Back, Hal Finney, Nick Szabo, Sassaman) who were also publicly active in cypherpunks during 2007–2008. By the same logic, the argument applies to Wei Dai himself — he was active in the cypherpunks list and visible on Crypto++ maintenance during the relevant period.
+The first point applies to other candidates who were also publicly active in cypherpunks during 2007–2008 (Adam Back, Hal Finney, Nick Szabo, Sassaman — see [cypherpunk-independent-arrival](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)), and by the same logic to Wei Dai himself: he was active in the cypherpunks list and visible on Crypto++ maintenance during the relevant period.
 
 For the hypothesis to be true, the entire 2014 retrospective would need to be a public self-deception, including the structural claim about Satoshi's non-activity that argues against Wei Dai's own candidacy.
 
@@ -203,9 +203,7 @@ For comparison with other named-candidate hypotheses, see the [Satoshi-identity 
 ## 4. Limits of this entry
 
 - This entry does not present new evidence. It compiles material from the August 2008 email exchange, Wei Dai's January 2014 AALWA retrospective, the Crypto++ inclusion record, the Bitcoin Institute reanalysis of van Dorst's corpus, and the standing public discussion of Wei Dai as a Satoshi candidate.
-- Wei Dai's hypothesis differs from candidates with a single triggering articulation (Greenberg 2014 for Hal Finney, NYT 2026 for Adam Back, HBO 2024 for Todd) — Wei Dai has been a structural candidate from before Bitcoin's launch by virtue of the whitepaper citation, with no single major-press articulation. The entry uses the August 22, 2008 contact date as its anchor because that is when the structural conditions for the hypothesis were established.
+- Wei Dai's hypothesis differs from candidates with a single triggering articulation (Greenberg 2014 for Hal Finney, NYT 2026 for Adam Back, HBO 2024 for Todd) — Wei Dai has been a structural candidate from before Bitcoin's launch by virtue of the whitepaper citation, with no single major-press articulation.
 - If new evidence surfaces — direct documentary links beyond the three-email correspondence, technical fingerprints in Bitcoin v0.1 matching Wei Dai's other code beyond the standard Crypto++ inclusion, or comments by Wei Dai that contradict the 2014 retrospective — this entry should be updated.
 
 [The Wei Dai biography](/BitcoinArchive/participants/wei-dai/) holds the documentary basis — academic record, the b-money proposal, cypherpunk participation, and retrospective statements — that the evidence in §1 and the counter-evidence in §2 weigh.
-
-*[Editor: this entry uses the August 22, 2008 first contact between Satoshi and Wei Dai as the structural anchor for a hypothesis that has no single triggering article.]*

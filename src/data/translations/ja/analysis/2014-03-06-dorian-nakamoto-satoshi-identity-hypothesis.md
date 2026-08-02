@@ -37,7 +37,7 @@ translationStatus: complete
 
 ![顔のないシルエットの傍らに、拡大鏡で照らされた一致する名前を強調する証拠書類が置かれ、確認済みの一致 1 件と却下された項目複数を示すチェックリストが添えられている構図。](/BitcoinArchive/images/analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis-hero.png)
 
-2014 年 3 月 6 日、[Newsweek の表紙特集「サトシの素顔」](/BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/)は、同誌がサトシ・ナカモトを見つけたと告げ、カリフォルニア州テンプル市に住む 64 歳のエンジニア、ドリアン・プレンティス・サトシ・ナカモトを名指しした。特定の根拠は、たった一つの事実に全重量がかかっていた。その人物の戸籍名が、文字通り「サトシ・ナカモト」だったこと。そして特定は 1 日で崩れた。人物像と年表の全体は[ドリアン・ナカモト伝記](/BitcoinArchive/ja/participants/dorian-nakamoto/)にあり、本エントリは仮説のみを扱う。
+2014 年 3 月 6 日、[Newsweek の表紙特集「サトシの素顔」](/BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/)は、同誌がサトシ・ナカモトを見つけたと告げ、カリフォルニア州テンプル市に住む 64 歳のエンジニア、ドリアン・プレンティス・サトシ・ナカモトを名指しした。特定の根拠は、たった一つの事実に全重量がかかっていた。その人物の戸籍名が、文字通り「サトシ・ナカモト」だったこと。そして特定は 1 日で崩れた。人物像と年表の全体は[ドリアン・ナカモト伝記](/BitcoinArchive/ja/participants/dorian-nakamoto/)にある。
 
 ## 1. 証拠
 
@@ -95,6 +95,6 @@ Newsweek 記事が持っていた唯一の傍証、玄関先の発言は、話�
 ## 4. 本エントリーの限界
 
 - 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
-- 人物像の全体（ナカモトの生涯・経歴、ビットコインコミュニティが彼のために集めた寄付、地理的偶然の報道）は[ドリアン・ナカモト伝記](/BitcoinArchive/ja/participants/dorian-nakamoto/)にある。本エントリーは説の論述のみを扱う。
+- 人物像の全体（ナカモトの生涯・経歴、ビットコインコミュニティが彼のために集めた寄付、地理的偶然の報道）は[ドリアン・ナカモト伝記](/BitcoinArchive/ja/participants/dorian-nakamoto/)にある。
 
 [サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、必要だが十分ではないという評価枠組みの中で、ドリアン・ナカモトを C 群に置いている。

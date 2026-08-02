@@ -97,7 +97,6 @@ Self-claim is the structural inverse of the [Dorian Nakamoto name-match](/Bitcoi
 
 ## 4. Limits of this entry
 
-- This entry does not present new evidence. It compiles publicly available material.
-- The full event narrative — the 2016 declaration, the Wired/Gizmodo precursor, the whitepaper lawsuit against Cobra, the trial, and the appeal — is in the [Craig Wright biography](/BitcoinArchive/participants/craig-wright/).
+The full event narrative — the 2016 declaration, the Wired/Gizmodo precursor, the whitepaper lawsuit against Cobra, the trial, and the appeal — is in the [Craig Wright biography](/BitcoinArchive/participants/craig-wright/).
 
-[The identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places Craig Wright in Group C of its necessary-but-not-sufficient evaluation.
+Wright's claim falls into the weakest evidentiary tier of the Satoshi-candidate field — Group C, resting on a single line of evidence with no underlying technical or intellectual fit — examined further in the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).

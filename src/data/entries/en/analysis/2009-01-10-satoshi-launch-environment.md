@@ -55,7 +55,7 @@ On January 10, 2009, Satoshi wrote to [Hal Finney](/BitcoinArchive/participants/
 
 The clause "from where I am" — location-contingent, implicitly not a permanent property of Satoshi's setup — combined with the unusually dense cadence of his Bitcoin work during the January 8–12, 2009 launch week, is the converging evidence this analysis reads. The reading is editorial.
 
-This entry is time-adjacent to the [Genesis Block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/), which covers the structural question of Block 0 and the Jan 3 → Jan 9 gap. Theme-wise the two are separate: that entry is about Block 0 as an object; this entry is about Satoshi's environment as a person during the Jan 8-12 window. The same January 10, 2009 window is read from a different angle — the IP-address divergence recorded in that day's Bitcoin debug log between Finney's and Satoshi's nodes — in [the Hal Finney identity-hypothesis analysis](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/).
+This entry is time-adjacent to the [Genesis Block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/), which covers the structural question of Block 0 and the Jan 3 → Jan 9 gap. The same January 10, 2009 window is read from a different angle — the IP-address divergence recorded in that day's Bitcoin debug log between Finney's and Satoshi's nodes — in [the Hal Finney identity-hypothesis analysis](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/).
 
 ## 1. The two signals
 
@@ -202,4 +202,4 @@ What this analysis *does* contribute is a concrete forensic reading of a passage
 - Combined with Jan 8-12 activity intensity (three releases in four days), this is consistent with Satoshi operating from a temporary location with dedicated time during the launch week.
 - The reading is editorial. It narrows the space of compatible environments without determining any specific one.
 
-This launch-environment analysis is read in parallel with [the Satoshi anonymity-architecture analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/), which uses this entry's launch-day environmental reading as one of the documented practice-pattern observations that complement the six-layer anonymity structure.
+This launch-environment reading is examined further, alongside the six-layer anonymity structure, in [the Satoshi anonymity-architecture analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/).

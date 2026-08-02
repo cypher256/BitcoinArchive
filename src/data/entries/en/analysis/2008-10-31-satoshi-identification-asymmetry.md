@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "Reads the asymmetry between public attempts to identify Satoshi, the surviving material trail, and the persistent identification gap. Companion entry to the identity-hypotheses overview."
+description: "Reads the asymmetry between public attempts to identify Satoshi, the surviving material trail, and the persistent identification gap."
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -254,6 +254,6 @@ It is possible that off-record investigative resources are larger than the publi
 - **Off-record state-actor pursuit is not in scope.** Sustained intelligence-agency or law-enforcement effort directed specifically at identifying Satoshi may exist; it is not in the public record at the time of writing. The entry does not assert it does, and does not assert it does not. Evidence-free claims about state-actor activity are not the kind of statement this record makes.
 - **Conspiratorial readings are not in scope.** Specifically, this entry does not entertain the reading that any state actor or institution has already identified Satoshi but is withholding the result. Such a claim has no public evidence and would, if added to the record, change the entry's relationship to verifiable history. Other readers are free to draw such inferences from the §4 observation; this entry does not.
 - **§4 is correlational, not causal.** The asymmetry is between visible attempts and visible result. Mapping that to a causal mechanism requires choosing one of the §5 interpretations; the entry's role is to lay out the choice, not to make it.
-- **The §1 list is open-ended.** New attempts continue to enter the public record. The entry should be updated when material additions occur (new judgments, new state-actor events, new academic work). Listing closure as of the entry's last commit is not a claim that further attempts will not appear.
+- **The §1 list is open-ended.** New attempts continue to enter the public record. The entry should be updated when material additions occur (new judgments, new state-actor events, new academic work). Listing closure as of this entry's last update is not a claim that further attempts will not appear.
 
 The asymmetry does its clearest work on the one post that broke the silence. [The March 7, 2014 return to the P2P Foundation](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/) said only "I am not Dorian Nakamoto" — a denial that asks far less of the evidence than any positive identification would.

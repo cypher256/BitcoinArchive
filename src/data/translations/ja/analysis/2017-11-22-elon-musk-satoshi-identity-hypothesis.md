@@ -36,7 +36,7 @@ translationStatus: complete
 
 ![証拠ボードに顔のないシルエットのアイコンと、技術範囲・経済学・共通する言い回しを示す断片が並び、点線でつながれているが決定的な証拠には届いていない。右側には公的な可視性を象徴する大きく発光するシルエットが、小さく隠れた影の人物像から離れて立っている。](/BitcoinArchive/images/analysis/2017-11-22-elon-musk-satoshi-identity-hypothesis-hero.png)
 
-2017 年 11 月 22 日、元 SpaceX インターンの Sahil Gupta が Medium に「Elon Musk Probably Invented Bitcoin（イーロン・マスクがビットコインを発明したのだろう）」と題した投稿を公開し、大きな話題となった。[正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)の候補の中で唯一、フォーラムの議論でも文体計量研究でもなく、一人の若いインサイダーのブログ投稿一本から記録に入った説である。[イーロン・マスク](/BitcoinArchive/ja/participants/elon-musk/)のビットコイン周辺での公的な役割は[イーロン・マスク伝記](/BitcoinArchive/ja/participants/elon-musk/)にあり、本エントリは説の論述のみを扱う。
+2017 年 11 月 22 日、元 SpaceX インターンの Sahil Gupta が Medium に「Elon Musk Probably Invented Bitcoin（イーロン・マスクがビットコインを発明したのだろう）」と題した投稿を公開し、大きな話題となった。[正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)の候補の中で唯一、フォーラムの議論でも文体計量研究でもなく、一人の若いインサイダーのブログ投稿一本から記録に入った説である。マスクのビットコイン周辺での公的な役割は[イーロン・マスク伝記](/BitcoinArchive/ja/participants/elon-musk/)にある。
 
 ## 1. 証拠
 
@@ -82,7 +82,7 @@ Gupta は、マスクが公言するビットコインへの無関心、信念�
 
 ## 3. 公的記録全体の中での位置
 
-マスク説が総覧で有用なのは、候補としてではなく、他が越える基準を最も明瞭に示す事例としてである。フォーラムの痕跡も、系譜も、文体計量上の位置も、ドリアン・ナカモトをリストに乗せた戸籍名の一致すらも無い、印象だけで組み立てられた唯一の事例だ。[テクノオリエンタリスト署名分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)は仮名の形を候補と独立に扱うが、その形も、その背後の仕事も、公的記録はマスクに結びつけない。候補全体の比較は[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)を参照。
+マスク説は、候補としてよりも、他の候補が満たしている証拠の基準を最も鮮明に示す事例として際立つ。フォーラムの痕跡も、系譜も、文体計量上の位置も、ドリアン・ナカモトをリストに乗せた戸籍名の一致すらも無い、印象だけで組み立てられた唯一の事例だ。[テクノオリエンタリスト署名分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)は仮名の形を候補と独立に扱うが、その形も、その背後の仕事も、公的記録はマスクに結びつけない。候補全体の比較は[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)を参照。
 
 ## 4. 本エントリーの限界
 

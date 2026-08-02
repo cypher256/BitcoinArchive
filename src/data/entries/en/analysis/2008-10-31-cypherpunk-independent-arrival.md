@@ -123,7 +123,7 @@ The cypherpunk movement produced a series of digital-cash and proof-of-work prop
 | 2004 | [Hal Finney](/BitcoinArchive/participants/hal-finney/) | RPOW (Reusable Proof-of-Work) | Centralized server issuing reusable PoW tokens; Finney later became Bitcoin's first known non-Satoshi node operator |
 | 2008 | [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) | Bitcoin | The synthesis |
 
-*[Editor: the table places these proposals in the cypherpunk landscape. Which of them Bitcoin reuses, borrows or synthesizes, component by component, is worked out in [the design-lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/).]*
+Which of these proposals Bitcoin reuses, borrows, or synthesizes — component by component — is worked out in [the design-lineage analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/).
 
 §2 examines what of this lineage Satoshi actually knew during the development period, and what he did not.
 

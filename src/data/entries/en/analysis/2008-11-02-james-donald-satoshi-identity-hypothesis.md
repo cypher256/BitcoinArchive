@@ -92,4 +92,4 @@ Donald sits at the productive tension between the archive's [stylometric layer](
 - This entry does not present new evidence. It compiles publicly available material.
 - The stylometric "rare word" is reported via secondary accounts (Votta 2021, Wallace 2025); this entry does not reproduce the specific term, which is not reliably fixed in the public record here. Donald's documented historical role — first responder and scaling interlocutor — is in the [James A. Donald biography](/BitcoinArchive/participants/james-donald/).
 
-[The identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places James A. Donald in Group C of its necessary-but-not-sufficient evaluation.
+Donald's case falls under Group C of the necessary-but-not-sufficient framework that the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) applies across all candidates.

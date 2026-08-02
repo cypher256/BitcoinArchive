@@ -4,7 +4,7 @@ date: 1976-10-25T00:00:00Z
 type: "analysis"
 source: "nakamotoinstitute"
 sourceUrl: "https://nakamotoinstitute.org/library/denationalisation/"
-sourceNote: "Hayek's IEA monograph was published on October 25, 1976; the date is used here as the anchor for the ideological lineage this entry traces forward to Bitcoin (2009)."
+sourceNote: "Hayek's IEA monograph was published on October 25, 1976."
 author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
@@ -66,7 +66,7 @@ inlineLinkKeywords:
 
 Bitcoin's 2009 launch is sometimes read against a single immediate cause — the September 2008 financial crisis and the *Times* "Chancellor on brink of second bailout" headline embedded in the [genesis block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/). That reading captures the proximate symbolism but not the longer ideological span the system was built into. A separate intellectual lineage — Friedrich Hayek's 1976 *Denationalisation of Money*, the 1990s Extropian and cypherpunk circles that kept Hayek's competing-currency framing alive, and Bitcoin's 2009 realisation — predates the crisis by more than three decades and is documented in independent secondary sources.
 
-The companion entry [Satoshi was not a cypherpunk](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) addresses Satoshi's intellectual position relative to the cypherpunk channel of that transmission; this entry adds the Hayek-to-Extropian leg that sits earlier in the chain.
+The companion entry [Satoshi was not a cypherpunk](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) addresses Satoshi's intellectual position relative to the cypherpunk channel of that transmission. The Hayek-to-Extropian leg, examined below, sits earlier in the same chain.
 
 ## 1. Hayek 1976: the competing-currency thesis
 
@@ -226,5 +226,3 @@ On the narrower open question of Satoshi's personal views, [Mike Hearn's 2025 re
 - Bitcoin's 2009 design realises the rejection of state issuance monopoly (Hayek ❶) and cross-border concurrent operation (Hayek ❹) directly; it reframes Hayek's issuer-level competition (❷) as algorithmic commitment.
 - The ideological lineage from Hayek through the Extropian / cypherpunk channels to Bitcoin is documented in peer-reviewed and independent secondary sources. The stronger claim that early Bitcoin contributors were Extropian-network members is supported only for [Hal Finney](/BitcoinArchive/participants/hal-finney/); broader individual-membership claims are not supported by the primary record.
 - The genesis-block "Chancellor on brink of second bailout for banks" headline is consistent with both the proximate 2008-crisis reading and the longer Hayekian lineage; the two readings reinforce rather than exclude each other.
-
-*[Editor: this entry is a companion to [Satoshi was not a cypherpunk](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/). That entry addresses the cypherpunk channel of ideological transmission; this entry adds the earlier Hayek-to-Extropian leg. The two together describe the ideological space Bitcoin was built into, without making identity claims that the primary-source record does not support.]*

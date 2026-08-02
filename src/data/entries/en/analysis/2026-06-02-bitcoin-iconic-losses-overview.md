@@ -4,7 +4,7 @@ date: 2026-06-02T00:00:00Z
 type: "analysis"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Cryptocurrency_and_crime"
-sourceNote: "en.wikipedia.org/wiki/Cryptocurrency_and_crime documents the custody-collapse cases (Mt. Gox, QuadrigaCX, FTX) but not the Stefan Thomas or James Howells cases, which are accidental losses, not crimes. Each of the five cases links to its own archive entry, each carrying its own primary or contemporaneous citation."
+sourceNote: "en.wikipedia.org/wiki/Cryptocurrency_and_crime documents the custody-collapse cases (Mt. Gox, QuadrigaCX, FTX) but not the Stefan Thomas or James Howells cases, which are accidental losses, not crimes."
 author: "Bitcoin Institute"
 participants:
   - name: "Stefan Thomas"
@@ -90,7 +90,7 @@ The user did not hold the key directly. They entrusted it to an intermediary (an
 | [QuadrigaCX collapse / Cotten death](/BitcoinArchive/entries/aftermath/2019-04-08-quadrigacx-gerald-cotten-death/) | 2018–19 | ~C$250M | Sole-custodian CEO died; later determined by OSC to have been operating a long-running fraud; ~13% creditor recovery |
 | [FTX bankruptcy](/BitcoinArchive/entries/aftermath/2022-11-11-ftx-collapse/) | 2022 | ~$8B customer funds | Large-scale misappropriation by founder Sam Bankman-Fried; multi-year imprisonment; partial creditor recovery in progress |
 
-Custody-collapse is the loss mode with the most variety in underlying fault: pure operational failure (Mt. Gox in part), individual fraud disguised as custody (QuadrigaCX, FTX), and external theft against custodian (Mt. Gox in part). Despite the variety in upstream cause, the chain-level outcome is the same — coins moved out of customer control without the customer being able to retrieve them. The Mt. Gox and FTX failures documented above are also the two anchor custody-collapse cases in [Satoshi's design intent vs Bitcoin's current reality](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/), which reads them against the gap between Satoshi's each-user-holds-their-own-keys picture and the exchange-IOU reality that let both collapses happen.
+Custody-collapse is the loss mode with the most variety in underlying fault: pure operational failure (Mt. Gox in part), individual fraud disguised as custody (QuadrigaCX, FTX), and external theft against custodian (Mt. Gox in part). Despite the variety in upstream cause, the chain-level outcome is the same — coins moved out of customer control without the customer being able to retrieve them. The Mt. Gox and FTX failures documented above are examined again in [Satoshi's design intent vs Bitcoin's current reality](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/), against the gap between Satoshi's each-user-holds-their-own-keys picture and the exchange-IOU reality that let both collapses happen.
 
 ## Contrast: recovered cases
 

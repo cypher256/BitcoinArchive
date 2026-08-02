@@ -81,7 +81,7 @@ Every other candidacy rests on at least one concrete thread — a citation, a pi
 
 ## 3. Within the broader documentary record
 
-The Musk theory is useful in the overview less as a candidacy than as the clearest illustration of the bar the others clear. It is the one case built entirely on impression — no forum trace, no lineage, no stylometric placement, not even the coincidence of a matching name that put Dorian Nakamoto on the list. The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) treats the pseudonym's form independently of any candidate, and nothing in the public record connects that form, or the work behind it, to Musk. For the full candidate comparison, see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
+Musk's case is less a competing candidacy than a demonstration of the evidentiary bar the others clear. It is the one case built entirely on impression — no forum trace, no lineage, no stylometric placement, not even the coincidence of a matching name that put Dorian Nakamoto on the list. The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/) treats the pseudonym's form independently of any candidate, and nothing in the public record connects that form, or the work behind it, to Musk. For the full candidate comparison, see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
 
 ## 4. Limits of this entry
 

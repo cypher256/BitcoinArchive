@@ -55,7 +55,7 @@ translationStatus: complete
 
 「今いる場所からは」 —— 場所依存的、サトシのセットアップの恒久的特性ではないことを示唆する表現 —— と、2009 年 1 月 8〜12 日のリリース週におけるサトシの異例に濃密な作業ペースが、本分析が読み取る、互いに符合する 2 つの手がかりである。読みは編者による推論である。
 
-本エントリは[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)と時期的に重なる。ただし対象は分離している: 前者はブロック 0 という**対象物**の構造分析で、本エントリは同週のサトシという**人物**の環境読みである。同じ 2009 年 1 月 10 日のビットコインデバッグログに記録された、フィニーとサトシそれぞれのノードの IP アドレスの相違という別角度から同じ週を読み解くのが[ハル・フィニー同定仮説分析](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)である。
+本エントリは、ブロック 0 の構造的な問いと 1 月 3 日から 1 月 9 日までの空白を扱う[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)と時期的に重なる。同じ 2009 年 1 月 10 日のビットコインデバッグログに記録された、フィニーとサトシそれぞれのノードの IP アドレスの相違という別角度から同じ週を読み解くのが[ハル・フィニー同定仮説分析](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)である。
 
 ## 1. 二つの手がかり
 
@@ -200,4 +200,4 @@ gantt
 - 1/8-12 の活動密度（4 日間に 3 リリース）と組み合わせると、リリース週のサトシが「一時的な場所で、専念できる時間を持って」運用していた、という読みと整合する
 - 読みは編者による推論である。整合する環境の空間を狭くはするが特定の一つに決定はしない。
 
-本公開環境分析は[サトシ匿名性アーキテクチャ分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)と並行して読まれる。同分析は本エントリの公開当日環境読解を、六層匿名構造を補完する記録された実践パターン観察の一つとして用いる。
+本エントリのリリース週環境読解は、六層匿名構造とあわせて[サトシ匿名性アーキテクチャ分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)でさらに読み解かれる。
