@@ -49,8 +49,13 @@ const MAX_VISIBLE = 5;
 const visibleSources = secondarySources?.slice(0, MAX_VISIBLE) ?? [];
 const hiddenSources = secondarySources?.slice(MAX_VISIBLE) ?? [];
 const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenSources.length));
+
+// sourceUrl, secondarySources, and pdfMetadata are all optional; render
+// nothing rather than an empty bordered box when none are present.
+const hasContent = Boolean(sourceUrl) || visibleSources.length > 0 || Boolean(pdfMetadata);
 ---
 
+{hasContent && (
 <div class="source-citation">
   {sourceUrl && (
     <>
@@ -116,6 +121,7 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenS
     </div>
   )}
 </div>
+)}
 
 <style>
   .source-citation {

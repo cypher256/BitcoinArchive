@@ -532,8 +532,9 @@ sections at the foot of the entry:
 - **`sourceUrl`** (optional) — the single canonical primary
   reference, when one genuinely exists. Rendered under a
   type-dependent heading — 「原典の外部ソース」 (primary-source /
-  article) or 「参照元の外部ソース」 (analysis / biography / design),
-  EN "Original external source" / "Reference external source". Every
+  article) or 「参照元の外部ソース」 (analysis / biography / design /
+  currency), EN "Original external source" / "Reference external
+  source". Every
   variant carries 「外部ソース」 / "external source" so the reader
   sees it is an external link. Pick the URL a reader should open
   first (archived original, Wikipedia biography, BitcoinTalk topic,
@@ -551,27 +552,39 @@ sections at the foot of the entry:
   reference goes in `secondarySources[]`, and `<SourceCitation />`
   renders it as a single flat list under the neutral heading 「外部
   ソース」 / "External sources" (`entry.externalSources`), with no
-  implied ranking.
-- **`sourceNote`** (optional) — short caveat or context for the
-  primary reference (provenance, publication route, dataset
-  description, legal-document role, etc.). Rendered as a muted
-  block immediately under the `sourceUrl` link, so the reader sees
-  the explanatory text without having to click through.
+  entry singled out as more authoritative than the rest — see
+  "Ordering and display cap" below for what the list order does
+  still control.
+- **`sourceNote`** (optional) — short caveat or context. Rendered as
+  a muted block immediately under the `sourceUrl` link when
+  `sourceUrl` is present; when `sourceUrl` is omitted, rendered at
+  the top of the standalone `secondarySources[]` list instead, since
+  there is no primary-reference link for it to sit under.
 - **`secondarySources[]`** (optional) — list of additional
   references with `name`, `url`, optional `note`. Rendered under
   「他の外部ソース」 (primary-source / article) or
-  「その他の外部ソース」 (analysis / biography / design), EN
-  "Other external sources".
+  「その他の外部ソース」 (analysis / biography / design / currency),
+  EN "Other external sources" — or, when `sourceUrl` is omitted,
+  under the standalone 「外部ソース」 / "External sources" heading
+  described above.
 
-**Ordering and display cap.** `secondarySources[]` is
-priority-ordered: index 0 = most important, mirroring the
-`relatedEntries` convention (§ Related Entries, rule 1). The order
-matters because `<SourceCitation />` shows only the first 5 items
-immediately and folds the remainder into a native `<details>`
-("Show N more") block — the same display-layer cap used by
-RelatedEntries and CommentaryLinks. The data layer keeps the
-complete citation list; the UI leads with the sources the entry
-leans on most.
+**Ordering and display cap.** `secondarySources[]` order controls
+what a reader sees first, mirroring the `relatedEntries` convention
+(§ Related Entries, rule 1): `<SourceCitation />` shows only the
+first 5 items immediately and folds the remainder into a native
+`<details>` ("Show N more") block — the same display-layer cap used
+by RelatedEntries and CommentaryLinks. The data layer keeps the
+complete citation list. What index 0 *means* depends on whether
+`sourceUrl` is present:
+
+- **`sourceUrl` present.** `secondarySources[]` is priority-ordered —
+  index 0 = most important — and the UI leads with the sources the
+  entry leans on most.
+- **`sourceUrl` omitted.** The list stands alone as "External
+  sources" (no entry is "the" reference the others are secondary
+  to), so order is a reading-order convenience only — put what's
+  most useful to open first — not a claim that the first five carry
+  more evidentiary weight than the rest.
 
 **Rule.** The same URL must not appear in both fields. If it did,
 the citation block would list the link twice. When tempted to
