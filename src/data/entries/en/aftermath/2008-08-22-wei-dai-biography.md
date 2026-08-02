@@ -106,4 +106,4 @@ In January 2009, after the launch, the two exchanged more email. Satoshi [wrote 
 
 ## Significance
 
-Dai's 2014 retrospective combined with Satoshi's own [August 21, 2008 b-money disclaimer to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/) anchors [the cypherpunk independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) — two independent observations converging on the same picture of where Satoshi stood relative to the cypherpunk community during development.
+Dai's 2014 retrospective and Satoshi's own [August 21, 2008 b-money disclaimer to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/) are two independent observations converging on the same picture of where Satoshi stood relative to the cypherpunk community during development, examined further in [the cypherpunk independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).

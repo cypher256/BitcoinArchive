@@ -4,7 +4,7 @@ date: "2021-09-03T00:00:00Z"
 type: "article"
 source: "ndrc"
 sourceUrl: "https://www.ndrc.gov.cn/xwdt/tzgg/202109/t20210924_1297475.html"
-sourceNote: "Covers NDRC Document No. 1283, the September 3, 2021 mining ban. The PBOC's Document No. 237, the Inner Mongolia draft, the catalogue revision, the PlusToken seizure, and the 2026 repeal notice are covered by secondarySources below."
+sourceNote: "Covers NDRC Document No. 1283, the September 3, 2021 mining ban. The PBOC's Document No. 237, the Inner Mongolia draft, the catalogue revision, the PlusToken seizure, and the 2026 repeal notice are covered by the other external sources below."
 author: "Bitcoin Institute"
 participants:
   - name: "People's Bank of China"
@@ -97,10 +97,10 @@ On January 23, 2025, CryptoQuant CEO Ki Young Ju said publicly that he believed 
 
 Chinese authorities have neither confirmed nor denied the claim. It stands as Ki's stated opinion, not a documented transaction.
 
-Five years after Document No. 237, Beijing returned to the same ground. On February 6, 2026, eight central bodies repealed the 2021 notice outright and reissued it — reasserting that virtual-currency business is illegal, while adding fresh restrictions on unapproved offshore RMB stablecoins and tokenized real-world assets — a repeal-and-reassert in the same motion that this archive's [survey of nation-state Bitcoin policy](/BitcoinArchive/entries/analysis/2026-07-28-bitcoin-nation-state-policy-history/) counts among the reversals, not outside them.
+Five years after Document No. 237, Beijing returned to the same ground. On February 6, 2026, eight central bodies repealed the 2021 notice outright and reissued it — reasserting that virtual-currency business is illegal, while adding fresh restrictions on unapproved offshore RMB stablecoins and tokenized real-world assets — a repeal-and-reassert in the same motion, one of the reversals examined further in this archive's [survey of nation-state Bitcoin policy](/BitcoinArchive/entries/analysis/2026-07-28-bitcoin-nation-state-policy-history/).
 
 ## Significance to Bitcoin
 
 Document No. 1283 could order every mining rig inside China to shut down. It had no clause that could reach the same activity outside China's borders. This archive's [2017 ICO-ban entry](/BitcoinArchive/entries/aftermath/2017-09-04-china-ico-ban/) already recorded that limit once, when the exchange-closure order pushed trading elsewhere rather than stopping it. A government can prohibit an activity inside its own jurisdiction; it cannot prohibit the protocol running beyond it.
 
-The seized coins sit on the other side of the same ledger. A government that bans private ownership of an asset while holding 194,775 units of it in a vault of its own making is not rejecting the asset — it is choosing who is allowed to hold it. This archive's [ownership map of Bitcoin's largest holders](/BitcoinArchive/entries/analysis/2026-07-09-bitcoin-ownership-map/) lists the same holding at roughly 194,000 BTC, custody and liquidation status marked disputed — the identical uncertainty recorded here at the source. Bitcoin's ledger does not care whether a given output sits in a Ponzi wallet, a police evidence account, or an ordinary holder's key; it will show, eventually and publicly, whether those coins ever move again. A law can declare a currency illegal. It cannot make the record of who holds it disappear.
+The seized coins sit on the other side of the same ledger. A government that bans private ownership of an asset while holding 194,775 units of it in a vault of its own making is not rejecting the asset — it is choosing who is allowed to hold it. This archive's [ownership map of Bitcoin's largest holders](/BitcoinArchive/entries/analysis/2026-07-09-bitcoin-ownership-map/) lists the same holding at roughly 194,000 BTC, with custody and liquidation status marked disputed there too. Bitcoin's ledger does not care whether a given output sits in a Ponzi wallet, a police evidence account, or an ordinary holder's key; it will show, eventually and publicly, whether those coins ever move again. A law can declare a currency illegal. It cannot make the record of who holds it disappear.

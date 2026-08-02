@@ -4,7 +4,7 @@ date: "2025-01-30T00:00:00Z"
 type: "article"
 source: "bloomberg-tax"
 sourceUrl: "https://news.bloombergtax.com/daily-tax-report-international/el-salvador-gazettes-decree-amending-bitcoin-law"
-sourceNote: "Covers the Official Gazette publication of the reform on January 30, 2025 (Legislative Decree No. 199); the Assembly's own vote took place the day before, January 29, per secondarySources below. The IMF program's conditions and the 2025-2026 accumulation tension are also documented via secondarySources."
+sourceNote: "Covers the Official Gazette publication of the reform on January 30, 2025 (Legislative Decree No. 199); the Assembly's own vote took place the day before, on January 29. Additional sources cover the IMF program's conditions and the 2025-2026 accumulation tension."
 author: "Bitcoin Institute"
 participants:
   - name: "Nayib Bukele"

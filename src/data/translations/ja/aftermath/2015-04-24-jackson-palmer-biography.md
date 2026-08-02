@@ -4,7 +4,7 @@ date: 2015-04-24T00:00:00Z
 type: "biography"
 source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2015/04/24/dogecoin-founder-exits-crypto-community-citing-toxic-culture"
-sourceNote: "2015 年 4 月の離脱取材を起点とする。この歴史の中で彼が創設者であることをやめ、もっとも粘り強い内部批判者になった地点だからである。それ以前と以後の発言は個別に secondarySources に挙げた。"
+sourceNote: "2015 年 4 月のこの離脱取材で、パーマーは創設者であることをやめ、もっとも粘り強い内部批判者になった。"
 author: "Bitcoin Institute"
 participants:
   - name: "Jackson Palmer"

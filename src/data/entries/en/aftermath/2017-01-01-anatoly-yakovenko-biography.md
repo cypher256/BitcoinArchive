@@ -4,7 +4,7 @@ date: 2017-01-01T00:00:00Z
 type: "biography"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Anatoly_Yakovenko"
-sourceNote: "Wikipedia is used here for the career chronology only. Solana's design claims are cited to its own whitepaper, and every quotation about Bitcoin to the recording or post it came from, under secondarySources."
+sourceNote: "Wikipedia is used here for the career chronology only. Solana's design claims are cited to its own whitepaper, and every quotation about Bitcoin to the recording or post it came from."
 author: "Bitcoin Institute"
 participants:
   - name: "Anatoly Yakovenko"
@@ -88,7 +88,7 @@ Three axes, and on each one the whitepaper states the Bitcoin position it is dep
 | What deters an attack | Capital expense: hardware and electricity committed to one branch | Slashable stake: coin committed as collateral while validating |
 | Under a network partition | Halts rather than diverges | Keeps producing, with consistency restored on a human timeout |
 
-The last row is the one with a name in this archive: Bitcoin's conservatism under partition is treated as a property rather than a limitation by the [structural features of digital gold](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/).
+The last row is the one with a name in this archive: Bitcoin's conservatism under partition is a property rather than a limitation — see [structural features of digital gold](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/).
 
 ## "A masterpiece"
 
@@ -121,7 +121,7 @@ Six months earlier, in March 2025, he had posted an assessment that is difficult
 <!-- audit:quote-skip -->
 > BTC has no value. In the best light, it's insurance. [...] It's not an investment, it's a cost, and there is no guarantee it will work. [...] If it works, it has very little to do with technology outside of the initial innovation that happened 15 years ago.
 
-Both statements can be held at once — software can be a masterpiece while the asset it issues is, on someone's reading, a premium paid against a tail risk. Whether they *are* held at once is not something the record settles, and this archive does not resolve it on his behalf. What can be said is that the two are aimed at different objects: the first at the machine, the second at the holding. The distinction between the two is the same one that [the digital-gold analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) turns on.
+Both statements can be held at once — software can be a masterpiece while the asset it issues is, on someone's reading, a premium paid against a tail risk. Whether they *are* held at once is not something the record settles. What can be said is that the two are aimed at different objects: the first at the machine, the second at the holding. The distinction between the two is the same one that [the digital-gold analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) turns on.
 
 In July 2026 he restated the general position, this time against the claim that Bitcoin is the only asset in the category with any basis:
 
@@ -137,7 +137,7 @@ Solana's own account of its early token supply is on the record and belongs next
 <!-- audit:quote-skip -->
 > The problem: we did not disclose this information to the public, as well as the size and nature of the loan, during the CoinList auction and subsequent Binance listing.
 
-The loan was 11,365,067 SOL, lent from the Foundation to a market-making firm. Solana states the full amount was removed from circulating supply; a separate company post states that 3,365,067 of it was actually returned by the market maker into a Foundation-controlled wallet. Both figures appear in Solana's own writing and should be read together rather than collapsed into one number. [The twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) reads the same disclosure as one case among several: founders holding supply before their own chain's monetary philosophy was ever tested.
+The loan was 11,365,067 SOL, lent from the Foundation to a market-making firm. Solana states the full amount was removed from circulating supply; a separate company post states that 3,365,067 of it was actually returned by the market maker into a Foundation-controlled wallet. Both figures appear in Solana's own writing and should be read together rather than collapsed into one number. Founders holding supply before their own chain's monetary philosophy was ever tested is not unique to Solana — see [the twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) for the same pattern across other chains.
 
 The SEC named SOL among the crypto assets it alleged were unregistered securities in its June 2023 actions; the Foundation rejected the characterization, the agency later moved to drop SOL from the Binance case, and the Coinbase case was dismissed in February 2025. A 2022 class action naming Yakovenko personally was voluntarily dismissed as to him without prejudice in 2024, per the court's order — the case continued against other defendants.
 

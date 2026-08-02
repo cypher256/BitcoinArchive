@@ -56,9 +56,9 @@ translationStatus: complete
 <!-- speaker: Satoshi Nakamoto -->
 > 「ありがとう。b-money は読んだことがなかったが、私のアイデアはまさにその出発点から始まっている。私のシステムが追加した主なものは、分散タイムスタンプサーバーを支えるためにプルーフ・オブ・ワークを使うことだ。」
 
-この返信は[専用のエントリー](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)で詳しく扱われており、サトシがビットコインの設計に独自に到達したことを示す一次資料の一つとして読まれている。
+この返信は、サトシがビットコインの設計に独自に到達したことを示す一次資料の一つであり、[専用のエントリー](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)で詳しく扱っている。
 
-2026 年 4 月、[NYT と記者カレイロウは、フォーラム投稿とメールの文体計量解析でバックをサトシの最有力候補](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)と名指した。バックは公的に否定した。この仮説は[専用の正体仮説分析](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)で複数階層のうちの一つとして扱われている。
+2026 年 4 月、[NYT と記者カレイロウは、フォーラム投稿とメールの文体計量解析でバックをサトシの最有力候補](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)と名指した。バックは公的に否定した。この仮説は、他のサトシ正体候補と並んで[専用の正体仮説分析](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)で検討されている。
 
 アダム・バック（1970 年、英国生まれ）は暗号学者、サイファーパンク。エクセター大学でコンピューターサイエンスの博士号を取得。2014 年に Blockstream を共同設立し、同社の CEO を務めている。
 
@@ -89,7 +89,7 @@ timeline
 
 2008 年 8 月のやり取りは 3 日間に渡る: [サトシのバック宛メール](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) (8 月 20 日、引用形式の問い合わせ)、 [バックの返信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/) (8 月 21 日、 Hashcash 引用情報と b-money 紹介)、サトシの同日返信での、公開前の設計・コーディング期間中に b-money を知らなかったとの自認 (冒頭引用)、翌日の[サトシのウェイ・ダイ宛メール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) (ホワイトペーパー引用のため b-money 公開日を尋ねるもの)。
 
-この連鎖は、バックの紹介時点でビットコインの設計がほぼ完了していたことを示し、 [サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)の一次資料的根拠となっている。
+この連鎖は、バックの紹介時点でビットコインの設計がほぼ完了していたことを示しており、詳細は[サイファーパンク核心への独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で扱っている。
 
 ## 証言とメールの公開
 バックがサトシとやり取りしたメールは、後に Bitcoin Magazine が公開した — ビットコイン最初期の概念段階を伝える数少ない一次資料の一つだ。2024 年 2 月、バックはロンドンの [COPA 対ライト裁判で宣誓のうえ証言し](/BitcoinArchive/ja/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/)、サトシとの往復とビットコイン誕生の時系列を語った。

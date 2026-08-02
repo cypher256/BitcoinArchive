@@ -4,6 +4,7 @@ date: 2011-04-01T00:00:00Z
 type: "biography"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Roger_Ver"
+sourceNote: "The exact date of Ver's first Bitcoin involvement in early 2011 is not fixed across his published interviews; the Memory Dealers founding date, the citizenship-renunciation date, and specific investment figures come from journalist profiles rather than primary records."
 author: "Bitcoin Institute"
 participants:
   - name: "Roger Ver"
@@ -66,7 +67,7 @@ By 2015 Ver had positioned bitcoin.com (the domain) as a public platform advocat
 
 ## US tax-fraud charges (2024)
 
-On April 30, 2024, Spanish authorities arrested Ver on a U.S. extradition request. The U.S. Department of Justice indictment (linked under `secondarySources`) alleges mail fraud, tax evasion, and false tax returns related to the 2014 expatriation event — specifically, that Ver allegedly under-reported the value of his bitcoin holdings at the time of the citizenship renunciation, evading approximately $48 million in U.S. exit-tax obligations. Ver disputes the charges. The case was ongoing at the time of the most recent edit to this entry; status updates will be noted here as they become public.
+On April 30, 2024, Spanish authorities arrested Ver on a U.S. extradition request. The U.S. Department of Justice indictment alleges mail fraud, tax evasion, and false tax returns related to the 2014 expatriation event — specifically, that Ver allegedly under-reported the value of his bitcoin holdings at the time of the citizenship renunciation, evading approximately $48 million in U.S. exit-tax obligations. Ver disputes the charges. The case was ongoing at the time of the most recent edit to this entry; status updates will be noted here as they become public.
 
 ## Career timeline
 
@@ -89,5 +90,3 @@ Ver's record matters in this archive for three roles. First, his 2011-era invest
 Second, he was the principal public face of the larger-block faction during the 2015–2017 dispute, and his post-2017 promotion of BCH on bitcoin.com is the dominant editorial channel through which the BCH side of that history reached general audiences.
 
 Third, his 2024 arrest is the highest-profile criminal case involving an early Bitcoin holder to date, and the legal outcome — whichever direction it goes — will set precedents for the tax treatment of expatriated Bitcoin wealth.
-
-*[Editor: the date 2011-04-01 used in this entry is a representative placeholder for Ver's first documented Bitcoin involvement; the precise day in early 2011 is not fixed across his published interviews. Several biographical claims (Memory Dealers founding date, expatriation date, investment portfolio) reflect publicly-stated details from journalist profiles rather than primary records.]*

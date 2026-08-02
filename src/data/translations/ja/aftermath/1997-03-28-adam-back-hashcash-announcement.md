@@ -24,7 +24,7 @@ secondarySources:
     note: "2002 年論文は、1997 年のアナウンス以降の各種応用・提案された改善・関連する後続出版物を整理している。§1 が 1997 年の元出版を引用し、§7 応用の節では他の応用と並んで「ウェイ・ダイの b-money 電子キャッシュ提案の鋳造機構としての hashcash」を列挙する。同論文はまたコスト関数名として MINT() を採用し、明示的に注記する：「コスト・トークンの作成と物理貨幣の鋳造との類推により、コスト関数に mint の語を用いる」。"
   - name: "サイファーパンクリストアーカイブ（venona ミラー）— 同じアナウンス"
     url: "https://cypherpunks.venona.com/date/1997/03/msg00774.html"
-    note: "1997 年 3 月 28 日の同じアナウンスを venona サイファーパンクリストミラーでアーカイブしたもの。サーバーアクセスが不安定なため、正式な sourceUrl はアダム・バック自身がホストする hashcash.org/papers/announce.txt を採用している。"
+    note: "1997 年 3 月 28 日の同じアナウンスを venona サイファーパンクリストミラーでアーカイブしたもの。サーバーアクセスが不安定なため、正式な出典にはアダム・バック自身がホストする hashcash.org/papers/announce.txt を採用している。"
   - name: "Bitcoin Magazine — The Genesis Files: Hashcash, or How Adam Back Designed Bitcoin's Motor Block"
     url: "https://bitcoinmagazine.com/technical/genesis-files-hashcash-or-how-adam-back-designed-bitcoins-motor-block"
     note: "1997 年アナウンスとその貨幣的位置づけに関する二次資料の報告。"
@@ -96,9 +96,9 @@ Hashcash 自体は通貨ではない。台帳もなく、送金もなく、合�
 
 中間期の一次資料であるバックの [1998 年 12 月 6 日サイファーパンクリストでの b-money 批評](/BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/)は、独立したエントリーで記録されている。当該批評は b-money の貨幣設計上の 7 つの論点を指摘し、鋳造手法の候補として「価値を創造するには CPU 時間を燃やす — Hashcash と同じように」を明示的に提案する。
 
-## 本エントリーが確立する事柄
+## 11 年間の流れ：Hashcash と貨幣、1997〜2008 年
 
-本エントリーは 11 年にわたる流れの 1997 年の始点を記録する：
+以下の表がその流れをたどる：
 
 | 日付 | 一次資料 | バックが Hashcash と貨幣について述べた内容 |
 |---|---|---|
@@ -112,6 +112,6 @@ NYT 調査への応答としてバック自身が 2026 年 4 月に X に投稿�
 <!-- quote: q1 -->
 > 私は早くから、暗号学・オンラインプライバシー・電子現金がもたらす社会的にポジティブな含意に焦点を絞っていた。だからこそ 1992 年頃から ecash の応用研究に積極的な関心を持ち続けてきた。
 
-本 1997 年告知は、二つの後続読解にとって中核的な一次資料となっている。 [アダム・バック伝記](/BitcoinArchive/ja/participants/adam-back/)は本告知をビットコイン以前のバック記録における 1997 年の決定的事件として扱い、冒頭の語り、専用 Hashcash 節、そして参加者年表で繰り返し戻ってくる。 [アダム・バック同定仮説](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)は同じ告知を法医学的に読む。§1.2 は Hashcash 著者という指紋を v0.1 コードベースと突き合わせて仮説の法医学的証拠とし、 §1.4 は Hashcash の貨幣カテゴリ位置付けが本 1997 年投稿からビットコインの 2009 年 1 月リリースまで描く 11 年間の弧を辿る。
+バックのビットコイン以前の記録については[アダム・バック伝記](/BitcoinArchive/ja/participants/adam-back/)を、この告知を法医学的に読み解いた内容については[アダム・バック同定仮説](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)を参照。§1.2 は Hashcash 著者という指紋を v0.1 コードベースと突き合わせた法医学的証拠を検討し、§1.4 は Hashcash の貨幣カテゴリ位置付けが本 1997 年投稿からビットコインの 2009 年 1 月リリースまで描く 11 年間の弧を辿る。
 
-*[編者注：Hashcash は通貨ではない。1997 年のアナウンスは、アナウンス投稿自体に貨幣関連の枠組みを内蔵したスパム対策インフラ。本格的な貨幣設計分析は 1998 年 12 月 6 日の b-money 批評と 2002 年論文に存在する。ビットコインの構成要素合成（最長チェーン合意形成規則、UTXO モデル、マイニング報酬による発行、2,100 万通貨上限、難易度調整アルゴリズム）は[ビットコイン設計系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)に別途記録されている。]*
+ビットコインの後の構成要素合成 — 最長チェーン合意形成規則、UTXO モデル、マイニング報酬による発行、2,100 万通貨上限、難易度調整アルゴリズム — は[ビットコイン設計系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)で扱われている。

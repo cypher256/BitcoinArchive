@@ -4,7 +4,7 @@ date: 2013-01-01T00:00:00Z
 type: "biography"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Charles_Hoskinson"
-sourceNote: "Wikipedia is used here for the career chronology only. Every claim about Cardano's design and every quotation about Bitcoin is cited to a primary or contemporaneous source under secondarySources."
+sourceNote: "Wikipedia is used here for the career chronology only. Every claim about Cardano's design and every quotation about Bitcoin is cited to a primary or contemporaneous source."
 author: "Bitcoin Institute"
 participants:
   - name: "Charles Hoskinson"

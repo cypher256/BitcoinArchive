@@ -70,6 +70,4 @@ timeline
 
 ## サトシ正体問題との外部的な関連付け
 
-ルルーとサトシ正体問題の関連は完全に外部からのものである — サトシ・ナカモトとの記録された接触はなく、ルルー自身による問題への言及もなく、公的記録上の彼によるビットコイン関連資料も存在しない。サトシ候補として挙げられたのは主にラトリフの 2019 年『The Mastermind』と付随ジャーナリズムによるもので、能力 + 隠蔽性 + 動機の整合という議論に依拠している。賛否の論、および [2026-05-03 ヴァン・ドルスト・コーパス再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)が彼を文体計量の候補集合から除外していることは、[ポール・ルルー＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis/)に並べてある。[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)では §2.1 の候補比較表に位置づけられる。
-
-*[編者注：本アーカイブはルルーに関する一次資料のエントリ（E4M サイファーパンク告知、刑事訴訟関連文書、Mastermind 章抜粋）を保持していない。本バイオの具体的な日付・主張は外部ソース — 主にラトリフ（2019）、Atavist Magazine（2016）、Wikipedia — に基づいており、アーカイブ内検証済みではない。サトシ正体問題との関連付けは公的議論の記録のために含めたものである。]*
+ルルーとサトシ正体問題の関連は完全に外部からのものである — サトシ・ナカモトとの記録された接触はなく、ルルー自身による問題への言及もなく、公的記録上の彼によるビットコイン関連資料も存在しない。サトシ候補として挙げられたのは主にラトリフの 2019 年『The Mastermind』と付随ジャーナリズムによるもので、能力 + 隠蔽性 + 動機の整合という議論に依拠している。賛否の論、および [2026-05-03 ヴァン・ドルスト・コーパス再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)が彼を文体計量の候補集合から除外していることは、[ポール・ルルー＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis/)に並べてある。他候補との比較は[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)の §2.1 も参照。

@@ -4,7 +4,7 @@ date: 2015-01-01T00:00:00Z
 type: "biography"
 source: "github"
 sourceUrl: "https://github.com/deadalnix"
-sourceNote: "セシェの GitHub プロフィール (`deadalnix`) が人物軸の正規参照。2015 年頃以降の Bitcoin Core 寄稿、2017 年 8 月の BCH ハードフォークを生んだ Bitcoin ABC リポジトリのコミット履歴、2020 年以降の Bitcoin Cash ABC / eCash 関連作業がここに集約されている。本人の Wikipedia エントリーはないため、補足の BCH および Bitcoin ABC への参照は `secondarySources` に置く。"
+sourceNote: "セシェの GitHub プロフィール (`deadalnix`) が人物軸の正規参照。2015 年頃以降の Bitcoin Core 寄稿、2017 年 8 月の BCH ハードフォークを生んだ Bitcoin ABC リポジトリのコミット履歴、2020 年以降の Bitcoin Cash ABC / eCash 関連作業がここに集約されている。本人の Wikipedia エントリーはないため、BCH および Bitcoin ABC への参照は補足として以下に掲載する。"
 author: "Bitcoin Institute"
 participants:
   - name: "Amaury Séchet"
@@ -43,7 +43,7 @@ relatedEntries:
 
 ## Bitcoin Core 寄稿期 (2015 ~ 2017)
 
-セシェの GitHub 履歴 (`deadalnix`、`secondarySources` にリンク) には 2015 年以降の Bitcoin Core 寄稿が記録されている。主にプロトコル層のコード (合意ルール、P2P ネットワーキング、検証) への寄稿である。彼は後の[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)となる公開議論で活発に発言し、より大きなブロック陣営に整列していた。2016 年までには、Bitcoin Core の他のメンバーが収束しつつあった SegWit + レイヤー 2 路線ではなく、オンチェーンのブロックサイズ拡張を可視的に主張していた。
+セシェの GitHub 履歴 (`deadalnix`) には 2015 年以降の Bitcoin Core 寄稿が記録されている。主にプロトコル層のコード (合意ルール、P2P ネットワーキング、検証) への寄稿である。彼は後の[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)となる公開議論で活発に発言し、より大きなブロック陣営に整列していた。2016 年までには、Bitcoin Core の他のメンバーが収束しつつあった SegWit + レイヤー 2 路線ではなく、オンチェーンのブロックサイズ拡張を可視的に主張していた。
 
 ## Bitcoin ABC とビットコインキャッシュフォーク (2017 年)
 
@@ -60,5 +60,3 @@ relatedEntries:
 ## ビットコインにおける意義
 
 セシェの記録は主として、2017 年 BCH ハードフォークの技術的リード — ビットコインプロトコル分岐のうち、実質的に生存するネットワーク占有率を持つチェーンを生んだ唯一の事例 — として意味を持つ。彼が設計した再生攻撃保護および難易度調整機構は、BCH が実用的にローンチできた条件であり、その後の他の争いの起こるフォークイベントでも研究・応用されている。2018 年の BSV ハッシュ戦争と 2020 年の BCHA / eCash 分裂は、同じ系譜の下流にある出来事である。 BCH フォークに到った 2015〜2017 年論争の段階別の年表 — セシェが率いた Bitcoin ABC 実装の位置付けを含む — は[ブロックサイズ戦争総括](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)に整理されている。
-
-[ブロックサイズ戦争 2015〜2017 総括](/BitcoinArchive/ja/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/)は、その段階的な再構成が行き着くビットコインキャッシュ・ハードフォーク段階の技術的な中心人物として、本伝記を参照する。

@@ -4,7 +4,7 @@ date: 2012-09-01T00:00:00Z
 type: "biography"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Chris_Larsen"
-sourceNote: "Wikipedia is used here for the career chronology only. Every claim about the XRP Ledger's design and every quotation about Bitcoin is cited to a primary or contemporaneous source under secondarySources."
+sourceNote: "Wikipedia is used here for the career chronology only. Every claim about the XRP Ledger's design and every quotation about Bitcoin is cited to a primary or contemporaneous source."
 author: "Bitcoin Institute"
 participants:
   - name: "Chris Larsen"
@@ -73,7 +73,7 @@ On April 21, 2021 — Earth Day — Larsen published an essay arguing that the e
 <!-- audit:quote-skip -->
 > Bitcoin alone consuming an average of 132 TWh a year (equivalent to roughly 12 million U.S. homes)
 
-And he named what he thought that number meant for the technology underneath it — the same line [the twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) records as his verdict on Bitcoin's mining:
+And he named what he thought that number meant for the technology underneath it — his verdict on Bitcoin's mining, examined further in [the twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/):
 
 <!-- audit:quote-skip -->
 > We should see PoW for what it is — a brilliantly designed technology that is becoming outdated in today's world.
@@ -83,7 +83,7 @@ Larsen was careful to separate the criticism from the asset: his argument was th
 <!-- audit:quote-skip -->
 > The XRP Ledger has been using Federated Consensus to validate transactions... uses the energy equivalent of just 50 U.S. homes per year.
 
-The comparison is exact in its own terms and silent on a different one: the XRP Ledger's validator list is a recommendation from two named organizations, not an open competition for hash power — the trade [the currency profile](/BitcoinArchive/entries/currency/2026-07-27-xrp-currency-overview/) treats as the mirror image of the energy question Larsen raised.
+The comparison is exact in its own terms and silent on a different one: the XRP Ledger's validator list is a recommendation from two named organizations, not an open competition for hash power — the mirror image of the energy question Larsen raised, examined further in [the currency profile](/BitcoinArchive/entries/currency/2026-07-27-xrp-currency-overview/).
 
 ## Five years in the case his design invited
 
@@ -94,4 +94,4 @@ The initial distribution Larsen helped set in September 2012 — 80 billion XRP 
 
 ## Significance to Bitcoin
 
-Larsen is one of the few founders in this record who built two companies before ever encountering Bitcoin, which makes his read on it a comparison across a longer career rather than a first reaction. His argument was never that Bitcoin's engineering failed; it was that the specific mechanism securing it — mining — costs more than it needs to, measured against a ledger he helped design specifically to avoid that cost. That ledger's own concentration, in people and in initial supply, is the trade [the fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) and [the digital-gold structural analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) both price against Bitcoin's own answer: no mining pool to court, and no founder left to ask.
+Larsen is one of the few founders in this record who built two companies before ever encountering Bitcoin, which makes his read on it a comparison across a longer career rather than a first reaction. His argument was never that Bitcoin's engineering failed; it was that the specific mechanism securing it — mining — costs more than it needs to, measured against a ledger he helped design specifically to avoid that cost. That ledger's own concentration, in people and in initial supply, is the trade against Bitcoin's own answer: no mining pool to court, and no founder left to ask — examined further in [the fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) and [the digital-gold structural analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/).

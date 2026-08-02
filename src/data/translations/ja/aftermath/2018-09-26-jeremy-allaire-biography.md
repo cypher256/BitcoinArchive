@@ -4,7 +4,7 @@ date: 2018-09-26T00:00:00Z
 type: "biography"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Jeremy_Allaire"
-sourceNote: "ウィキペディアは経歴の年表にのみ用いる。USDC の設計に関する記述は CENTRE の技術文書と Circle 自身の公表、ビットコインについての引用は取材そのものを典拠とし、いずれも secondarySources に挙げている。"
+sourceNote: "ウィキペディアは経歴の年表にのみ用いる。USDC の設計に関する記述は CENTRE の技術文書と Circle 自身の公表を、ビットコインについての引用は取材そのものを、それぞれ典拠とする。"
 author: "Bitcoin Institute"
 participants:
   - name: "Jeremy Allaire"

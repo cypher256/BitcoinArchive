@@ -24,7 +24,7 @@ secondarySources:
     note: "The 2002 paper consolidates 'the various applications, improvements suggested and related subsequent publications' since the 1997 announcement. §1 cites the original 1997 publication; §7 Applications enumerates 'hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal' alongside other applications. The paper also adopts MINT() as the cost-function name, with the explicit note: 'We use the term mint for the cost-function because of the analogy between creating cost tokens and minting physical money.'"
   - name: "Cypherpunks list archive (venona mirror) — same announcement"
     url: "https://cypherpunks.venona.com/date/1997/03/msg00774.html"
-    note: "The same March 28, 1997 announcement archived on the venona Cypherpunks-list mirror. Server access has been intermittent; the canonical sourceUrl is Adam Back's own hosting at hashcash.org/papers/announce.txt."
+    note: "The same March 28, 1997 announcement archived on the venona Cypherpunks-list mirror. Server access has been intermittent; the canonical source is Adam Back's own hosting at hashcash.org/papers/announce.txt."
   - name: "Bitcoin Magazine — The Genesis Files: Hashcash, or How Adam Back Designed Bitcoin's Motor Block"
     url: "https://bitcoinmagazine.com/technical/genesis-files-hashcash-or-how-adam-back-designed-bitcoins-motor-block"
     note: "Secondary reporting on the 1997 announcement and its monetary-discourse positioning."
@@ -95,9 +95,9 @@ Reference [19] in the paper is Wei Dai's [b-money](/BitcoinArchive/entries/after
 
 The intermediate primary source — Back's [December 6, 1998 cypherpunks-list critique of b-money](/BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/) — is documented in its own entry; that critique identifies seven monetary-design issues in b-money and explicitly proposes "to create value you burn CPU time, just like with hashcash" as the candidate minting approach.
 
-## What this entry establishes
+## Eleven-year arc: Hashcash and money, 1997–2008
 
-This entry records the 1997 starting point of an eleven-year arc:
+The following table traces the arc:
 
 | Date | Primary source | What Back said about Hashcash and money |
 |---|---|---|
@@ -111,6 +111,6 @@ In Back's own retrospective framing, posted on X in April 2026 in response to th
 <!-- quote: q1 -->
 > I was early in laser focus on the positive societal implications of cryptography, online privacy and electronic cash, hence my ~1992 onwards active interest in applied research on ecash.
 
-This 1997 announcement is a load-bearing primary source for two later readings. [The Adam Back biography](/BitcoinArchive/participants/adam-back/) treats it as the defining 1997 event of Back's pre-Bitcoin record, returning to it in the opening narrative, a dedicated Hashcash section, and the participant timeline. [The Adam Back identity hypothesis](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) reads the same announcement forensically — §1.2 weighs the Hashcash-author signal against the v0.1 codebase as forensic evidence for the hypothesis, and §1.4 traces the eleven-year arc of Hashcash's monetary-category positioning from this 1997 post through to Bitcoin's January 2009 release.
+See [Adam Back's biography](/BitcoinArchive/participants/adam-back/) for Back's pre-Bitcoin record, and [the Adam Back identity hypothesis](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) for the forensic reading of this announcement — §1.2 weighs the Hashcash-author signal against the v0.1 codebase, and §1.4 traces the eleven-year arc of Hashcash's monetary-category positioning from this 1997 post to Bitcoin's January 2009 release.
 
-*[Editor: Hashcash is not a currency. The 1997 announcement is anti-spam infrastructure with money-adjacent framing built into the announcement post itself; the substantive monetary-design analysis is in the 1998-12-06 b-money critique and the 2002 paper. Bitcoin's component synthesis (the longest-chain consensus rule, UTXO model, mining-reward issuance, 21-million cap, difficulty-adjustment algorithm) is documented separately in [Bitcoin design lineage](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/).]*
+Bitcoin's later component synthesis — the longest-chain consensus rule, UTXO model, mining-reward issuance, 21-million cap, and difficulty-adjustment algorithm — is examined in [Bitcoin design lineage](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/).

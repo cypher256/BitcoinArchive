@@ -4,7 +4,7 @@ date: 2018-09-26T00:00:00Z
 type: "biography"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Jeremy_Allaire"
-sourceNote: "Wikipedia is used here for the career chronology only. USDC's design claims are cited to the CENTRE whitepaper and Circle's own disclosures, and every quotation about Bitcoin to the interview it came from, under secondarySources."
+sourceNote: "Wikipedia is used here for the career chronology only. USDC's design claims are cited to the CENTRE whitepaper and Circle's own disclosures, and every quotation about Bitcoin to the interview it came from."
 author: "Bitcoin Institute"
 participants:
   - name: "Jeremy Allaire"

@@ -4,7 +4,7 @@ date: 2015-04-01T00:00:00Z
 type: "biography"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Brad_Garlinghouse"
-sourceNote: "Wikipedia is used here for the career chronology only. Every quotation about Bitcoin is cited to the interview or event it came from, under secondarySources."
+sourceNote: "Wikipedia is used here for the career chronology only. Every quotation about Bitcoin is cited to the interview or event it came from."
 author: "Bitcoin Institute"
 participants:
   - name: "Brad Garlinghouse"
@@ -83,7 +83,7 @@ On December 22, 2020, the SEC sued Ripple Labs, Chris Larsen, and Garlinghouse p
 
 ## What the record does not resolve
 
-Garlinghouse's two positions on Bitcoin — a concentration critique in 2018, a store-of-value endorsement in 2020 — are not presented as a change of mind in the public record, and this archive does not reconcile them into one. Both can be true of the same asset: a network whose mining power clusters geographically, and a store of value regardless of where its production happens. What the sequence does show is a pattern shared with other altcoin executives in this record — a specific, statable objection to one property of Bitcoin's design, paired with genuine respect for a different one, held by the same person without apparent tension.
+Garlinghouse's two positions on Bitcoin — a concentration critique in 2018, a store-of-value endorsement in 2020 — are not presented as a change of mind in the public record. Both can be true of the same asset: a network whose mining power clusters geographically, and a store of value regardless of where its production happens. What the sequence does show is a pattern shared with other altcoin executives in this record — a specific, statable objection to one property of Bitcoin's design, paired with genuine respect for a different one, held by the same person without apparent tension.
 
 ## Significance to Bitcoin
 

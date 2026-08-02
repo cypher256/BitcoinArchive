@@ -4,7 +4,7 @@ date: 2014-04-18T00:00:00Z
 type: "biography"
 source: "github"
 sourceUrl: "https://github.com/fluffypony"
-sourceNote: "スパーニ (通称 `fluffypony`) にはウィキペディアの項目がない。モネロでの仕事については GitHub の本人ページが人物単位の基準となる参照先であり、取材記事・CryptoNote 技術文書・南アフリカでの訴追に関する報道は secondarySources に挙げている。"
+sourceNote: "スパーニ (通称 `fluffypony`) にはウィキペディアの項目がない。モネロでの仕事については GitHub の本人ページが人物単位の基準となる参照先であり、取材記事・CryptoNote 技術文書・南アフリカでの訴追に関する報道は別途挙げている。"
 author: "Bitcoin Institute"
 participants:
   - name: "Riccardo Spagni"

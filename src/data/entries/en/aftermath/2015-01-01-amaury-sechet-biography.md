@@ -4,7 +4,7 @@ date: 2015-01-01T00:00:00Z
 type: "biography"
 source: "github"
 sourceUrl: "https://github.com/deadalnix"
-sourceNote: "Séchet's GitHub profile (`deadalnix`) is the canonical person-centric primary reference: it carries his Bitcoin Core contributions from ~2015, the Bitcoin ABC repository commits that produced the August 2017 BCH hard fork, and the post-2020 Bitcoin Cash ABC / eCash work. He has no Wikipedia entry of his own, so the supplementary BCH and Bitcoin ABC references are listed under `secondarySources`."
+sourceNote: "Séchet's GitHub profile (`deadalnix`) is the canonical person-centric primary reference: it carries his Bitcoin Core contributions from ~2015, the Bitcoin ABC repository commits that produced the August 2017 BCH hard fork, and the post-2020 Bitcoin Cash ABC / eCash work. He has no Wikipedia entry of his own, so the BCH and Bitcoin ABC references below are supplementary."
 author: "Bitcoin Institute"
 participants:
   - name: "Amaury Séchet"
@@ -43,7 +43,7 @@ Séchet (online handle `deadalnix`) is a French software engineer who spent his 
 
 ## Bitcoin Core contributions (2015–2017)
 
-Séchet's GitHub history (`deadalnix`, linked under `secondarySources`) shows Bitcoin Core contributions from ~2015 onward, primarily in protocol-level code (consensus rules, P2P networking, and validation). He was active in the public discussions that became the [block-size war](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/), aligning with the larger-block faction. By 2016 he was visibly arguing in favour of an on-chain block-size increase rather than the SegWit-plus-layer-2 approach that the rest of Bitcoin Core was converging on.
+Séchet's GitHub history (`deadalnix`) shows Bitcoin Core contributions from ~2015 onward, primarily in protocol-level code (consensus rules, P2P networking, and validation). He was active in the public discussions that became the [block-size war](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/), aligning with the larger-block faction. By 2016 he was visibly arguing in favour of an on-chain block-size increase rather than the SegWit-plus-layer-2 approach that the rest of Bitcoin Core was converging on.
 
 ## Bitcoin ABC and the Bitcoin Cash fork (2017)
 

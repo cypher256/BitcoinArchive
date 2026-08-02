@@ -4,7 +4,7 @@ date: 2014-04-18T00:00:00Z
 type: "biography"
 source: "github"
 sourceUrl: "https://github.com/fluffypony"
-sourceNote: "Spagni (handle `fluffypony`) has no Wikipedia entry. His GitHub profile is the canonical person-centric reference for the Monero work; the interviews, the CryptoNote whitepaper and the reporting on the South African prosecution are listed under secondarySources."
+sourceNote: "Spagni (handle `fluffypony`) has no Wikipedia entry. His GitHub profile is the canonical person-centric reference for the Monero work; the interviews, the CryptoNote whitepaper and the reporting on the South African prosecution are cited separately."
 author: "Bitcoin Institute"
 participants:
   - name: "Riccardo Spagni"

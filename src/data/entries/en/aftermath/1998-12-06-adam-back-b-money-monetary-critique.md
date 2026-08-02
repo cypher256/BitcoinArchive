@@ -72,8 +72,6 @@ This sentence is the explicit pre-Bitcoin proposal of the configuration Bitcoin 
 
 ## Seven monetary-design issues identified by Back
 
-The seven issues below are the editor's structured summary of Back's analysis. The original message is available in full at the cryptoanarchy.wiki archive linked under `sourceUrl`; readers checking specific phrasing should consult the archived original.
-
 1. **Inflation under Moore's-Law hardware decline.** The cost of the hardware required to compute a given hash-collision falls in line with Moore's law. Hardware-cost decline produces mint-cost decline, which produces inflationary pressure on the value of newly-minted units.
 2. **Borrowed-resource exploitation.** A user with access to a population of workstations they do not personally own (Back's example: a student with access to a campus full of workstations) can obtain effectively-free CPU time, undermining the cost-as-value-floor assumption.
 3. **Transaction linkability.** In b-money's pseudonymous design, what looks like anonymity is in fact "linkable anonymity" — pseudonymity, not unlinkable anonymity.
@@ -90,8 +88,6 @@ Dai also raised price stability, business cycles, and optimal inflation rates as
 
 ## Mapping Back's 1998 issues to Bitcoin's design ten years later
 
-The table below is the editor's structured comparison.
-
 | Back 1998-12-06 issue | Bitcoin's resolution |
 |---|---|
 | ❶ Moore's-Law mint-cost decline → inflation pressure | **Difficulty adjustment** — re-targeted every 2016 blocks to keep block-time approximately constant against compute-power growth, decoupling mint-rate from hardware-cost decline |
@@ -103,10 +99,6 @@ The table below is the editor's structured comparison.
 | ❼ Resource-waste overhead equivalent to circulating value | **Live debate** — the energy-consumption critique that has continued to attach to Bitcoin's proof-of-work since launch |
 | Central proposal: "to create value you burn CPU time, just like with hashcash" | **Bitcoin's central mechanism** — Bitcoin couples a Hashcash-style PoW primitive with a decentralized digital-cash ledger and uses block-subsidy issuance for mint allocation |
 
-This December 1998 critique is read closely by three later analyses. [The Adam Back identity hypothesis](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) treats Back's enumerated seven issues as load-bearing evidence — §1.4 maps each issue onto how Bitcoin later resolves it, and §2.1 uses the same enumeration as the documented third-party reading the hypothesis must explain away.
-
-[The fixed-supply vs adjustable-money analysis](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) reads the same critique from a complementary angle, treating it as the documented cypherpunk monetary debate against which Bitcoin's eventual fixed-supply choice was made.
-
-[The cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) reads Back's central proposal — *"to create value you burn CPU time, just like with hashcash"* — as the specific proof-of-work-as-value configuration Satoshi reached and implemented without the channel that had already named it.
+Back's seven issues and central proposal also recur across three later analyses: the [Adam Back Satoshi-identity hypothesis](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/), the [fixed-supply vs adjustable-money analysis](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/), and the [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
 *[Editor: this post is a primary-source pre-Bitcoin record of Adam Back engaging in substantive monetary-system-design analysis ten years before Bitcoin's launch. The same Hashcash-as-b-money-minting application is recorded more formally in Back's [August 2002 Hashcash paper §7 Applications](http://www.hashcash.org/papers/hashcash.pdf), which lists "hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal" among its enumerated applications. The implementation, the resolution of issue 1, and the synthesis of the remaining design space were Satoshi's contributions documented in [Bitcoin v0.1](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) ten years later.]*

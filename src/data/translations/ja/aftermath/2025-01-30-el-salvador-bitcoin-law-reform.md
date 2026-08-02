@@ -4,7 +4,7 @@ date: "2025-01-30T00:00:00Z"
 type: "article"
 source: "bloomberg-tax"
 sourceUrl: "https://news.bloombergtax.com/daily-tax-report-international/el-salvador-gazettes-decree-amending-bitcoin-law"
-sourceNote: "官報での改正公布(2025年1月30日、立法令第 199 号)を扱う。議会自身の採決はその前日、1月29日に行われた(下記副次情報源に拠る)。IMF 融資の条件と 2025年から 2026年にかけての購入継続の緊張も、以下の副次情報源で扱う。"
+sourceNote: "官報での改正公布(2025年1月30日、立法令第 199 号)を扱う。議会自身の採決はその前日、1月29日に行われた。IMF 融資の条件と 2025年から 2026年にかけての購入継続の緊張についても、他の資料をもとに記述している。"
 author: "Bitcoin Institute"
 participants:
   - name: "Nayib Bukele"

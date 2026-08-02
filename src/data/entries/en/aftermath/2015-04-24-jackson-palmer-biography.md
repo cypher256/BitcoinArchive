@@ -4,7 +4,7 @@ date: 2015-04-24T00:00:00Z
 type: "biography"
 source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2015/04/24/dogecoin-founder-exits-crypto-community-citing-toxic-culture"
-sourceNote: "The April 2015 exit interview is the anchor: it is the point at which Palmer stopped being a founder in this history and became its most persistent internal critic. His earlier and later statements are cited individually under secondarySources."
+sourceNote: "This April 2015 interview marks the point where Palmer stopped being a founder and became Dogecoin's most persistent internal critic."
 author: "Bitcoin Institute"
 participants:
   - name: "Jackson Palmer"

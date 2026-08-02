@@ -4,7 +4,7 @@ date: 2013-01-01T00:00:00Z
 type: "biography"
 source: "wikipedia"
 sourceUrl: "https://en.wikipedia.org/wiki/Charles_Hoskinson"
-sourceNote: "ウィキペディアは経歴の年表にのみ用いる。カルダノの設計に関する記述とビットコインについての引用はすべて、一次資料または同時代の報道を secondarySources に挙げて典拠としている。"
+sourceNote: "ウィキペディアは経歴の年表にのみ用いる。カルダノの設計に関する記述とビットコインについての引用はすべて、一次資料または同時代の報道を典拠としている。"
 author: "Bitcoin Institute"
 participants:
   - name: "Charles Hoskinson"
