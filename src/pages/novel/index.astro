@@ -1,6 +1,8 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { absoluteUrl } from '../../i18n/utils';
+import heroImage from '../../assets/images/novel-hero.png';
 
 const lang = 'en';
 const title = 'Novel — Genesis: The Disappearance of the Founder and the Promise';
@@ -13,12 +15,24 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
   description={description}
   lang={lang}
   alternateJa={absoluteUrl('/novel/', 'ja')}
+  ogImage={heroImage.src}
+  ogImageWidth={heroImage.width}
+  ogImageHeight={heroImage.height}
 >
   <div class="container novel-page">
     <header class="hero">
       <p class="eyebrow">Novel</p>
       <h1>Genesis<br /><span class="subtitle">— The Disappearance of the Founder and the Promise</span></h1>
       <p class="tagline">The Will Bitcoin Left Behind and the Quantum Shock</p>
+      <Image
+        class="hero-image"
+        src={heroImage}
+        alt="A hooded, faceless silhouette dissolving into code, beside an open antique book and a timeline spanning 1995 to 2140 — Bitcoin Institute"
+        widths={[400, 800, 1200]}
+        sizes="(max-width: 720px) 100vw, 720px"
+        loading="eager"
+        fetchpriority="high"
+      />
     </header>
 
     <section class="lead">
@@ -175,8 +189,15 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
   .hero {
     text-align: center;
     padding: 2.5rem 0 2rem;
-    border-bottom: 1px solid var(--color-border);
     margin-bottom: 2rem;
+  }
+  .hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 2.5rem auto 0;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
   }
   .hero .eyebrow {
     font-family: var(--font-heading);
