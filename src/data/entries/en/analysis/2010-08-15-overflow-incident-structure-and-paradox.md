@@ -156,7 +156,7 @@ Constraints the actor satisfied:
 
 The two outputs being identical (both 92.2 billion BTC) is a structural choice, not a coincidence. Two equal large values, summing just past INT64_MAX, is the simplest construction that satisfies the constraints. Different output values would also work but require either more arithmetic on the actor's side or a wider value range than necessary. Identical values are the minimum-information choice.
 
-The miner of block 74638 is a separate question. The block is a normal proof-of-work block that happens to contain the bad transaction. Under the un-patched validation rules, every honest miner running v0.3.9 would also have included the transaction if it appeared in their mempool — the block is "honest" in the sense that the miner's validation code returned valid. There is no evidence in the chain that the miner of block 74638 colluded with the transaction author. Inclusion in a block does not imply collusion when the inclusion follows the rules the miner's software was running.
+Whether the miner of block 74638 colluded with the transaction's author is a separate matter from the transaction's construction. The block is a normal proof-of-work block that happens to contain the bad transaction. Under the un-patched validation rules, every honest miner running v0.3.9 would also have included the transaction if it appeared in their mempool — the block is "honest" in the sense that the miner's validation code returned valid. There is no evidence in the chain that the miner of block 74638 colluded with the transaction author. Inclusion in a block does not imply collusion when the inclusion follows the rules the miner's software was running.
 
 ## 5. The centralization paradox
 
@@ -172,7 +172,7 @@ This is the paradox: the system was rescued by a centralization that the system 
 
 The paradox does not invalidate Bitcoin's design proposition. It marks where the proposition's runtime guarantees and its incident-response guarantees diverge. The protocol can be decentralized in steady state and still depend on centralized authority for emergency rule changes — because emergency rule changes are coordination events that decentralized validation cannot organize from inside.
 
-What the incident establishes is the asymmetry: a decentralized network can absorb an attack on its rules through a coordinated patch, but the coordination layer that produces the patch is not itself decentralized. The handover question Bitcoin faced over the next few years (Satoshi → Gavin → multiple maintainers → present-day distributed maintainership) is a direct response to this asymmetry. The 2018 inflation-bug response (multi-actor disclosure, no single deploy authority) is what the post-Satoshi version of this rescue has to look like.
+What the incident establishes is the asymmetry: a decentralized network can absorb an attack on its rules through a coordinated patch, but the coordination layer that produces the patch is not itself decentralized. The handover Bitcoin faced over the next few years (Satoshi → Gavin → multiple maintainers → present-day distributed maintainership) is a direct response to this asymmetry. The 2018 inflation-bug response (multi-actor disclosure, no single deploy authority) is what the post-Satoshi version of this rescue has to look like.
 
 This entry does not argue the paradox is solved. It argues that the August 2010 incident is the first place the paradox was visible at the level of the live network, and that subsequent Bitcoin governance is best read as a long-running response to it.
 

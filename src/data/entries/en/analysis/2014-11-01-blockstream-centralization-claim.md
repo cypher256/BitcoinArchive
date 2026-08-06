@@ -139,7 +139,7 @@ So the interest is worth noting as a reason to doubt a motive — not as evidenc
 
 ## 5. The verdict the record supports
 
-Split the question in two, and the answer splits with it.
+The charge bundles two claims, and they answer differently.
 
 Was there a commercial interest sitting close to Core's development? There was, and the record does not hide it. Blockstream was founded by Core developers, runs a second-layer business, and at the height of the dispute held an unusual number of senior developers on a single payroll. Was one company sitting too close to the reference implementation of a system with no central source of money? The worry was not baseless.
 

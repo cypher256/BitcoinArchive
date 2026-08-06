@@ -125,7 +125,7 @@ Both positions agree on the structure of the problem: the protocol's long-run se
 
 ## 4. Within the broader monetary-design record
 
-Bitcoin's fixed-supply, declining-subsidy curve is one specific answer to a question pre-Bitcoin cypherpunk monetary designs had also engaged with — and in some cases answered differently.
+Bitcoin's fixed-supply, declining-subsidy curve takes a specific position on whether monetary supply should follow a fixed schedule or respond to economic conditions — an issue pre-Bitcoin cypherpunk monetary designs had already faced, and some resolved differently.
 
 [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s [b-money proposal (1998)](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) made monetary expansion explicitly responsive to economic conditions: new money was to be created in proportion to the cost of a standard basket of goods, so the unit of account would track real prices rather than a fixed coin schedule. [Adam Back's contemporaneous critique of b-money](/BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/) engaged with the economic-policy choices that any such design implicitly takes. Bitcoin's design takes the opposite stance: it commits to a fixed supply schedule and treats the resulting fee market as the policy variable.
 

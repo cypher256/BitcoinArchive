@@ -185,9 +185,9 @@ Back's [post-publication interview responses](/BitcoinArchive/entries/aftermath/
 
 The "conspicuous gap" claim — that Back went quiet online around Bitcoin's announcement — is observational rather than directly probative; many cypherpunk-list participants reduced or shifted their public activity around 2008–2009 for reasons unrelated to Bitcoin.
 
-### 2.4 Back's own framing of the question
+### 2.4 Back's case against a high-profile Satoshi
 
-In the same post-publication interviews, Back has framed the question against the idea that any high-public-profile figure could plausibly be Satoshi: that "the most probable situation is that Satoshi is somebody who's not talking to documentary film crews, to investigative journalists," and that Satoshi's continued anonymity is structurally beneficial to Bitcoin because "it helps bitcoin seem more like a discovery and an asset class." These positions do not by themselves disprove the hypothesis (a person maintaining a pseudonym would be expected to make exactly such arguments), but they constitute Back's own articulation of why the high-public-visibility identification is inconsistent with what the Satoshi pseudonym was for. Full quotes and context are in the [aftermath entry on the NYT investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/).
+In the same post-publication interviews, Back argued against the idea that any high-public-profile figure could plausibly be Satoshi: that "the most probable situation is that Satoshi is somebody who's not talking to documentary film crews, to investigative journalists," and that Satoshi's continued anonymity is structurally beneficial to Bitcoin because "it helps bitcoin seem more like a discovery and an asset class." These positions do not by themselves disprove the hypothesis (a person maintaining a pseudonym would be expected to make exactly such arguments), but they constitute Back's own articulation of why the high-public-visibility identification is inconsistent with what the Satoshi pseudonym was for. Full quotes and context are in the [aftermath entry on the NYT investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/).
 
 ## 3. Within the broader documentary record
 

@@ -58,7 +58,7 @@ The objection: within hours, security researchers showed the "signature" was an 
 
 Wright's case rested on the ability to sign with the keys to early blocks (numbers 1–9), the period when Satoshi mined nearly alone.
 
-The objection: it never extended to the genesis-block coinbase key — the single demonstration that would be dispositive. As the [genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) notes, that signing has never been performed, by Wright or by anyone. A claim to sign blocks 1–9 that stops short of the one block whose key would settle the question leaves the question unsettled.
+The objection: it never extended to the genesis-block coinbase key — the single demonstration that would be dispositive. As the [genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) notes, that signing has never been performed, by Wright or by anyone. A claim to sign blocks 1–9 that stops short of the one block whose key would be dispositive does not establish that Wright is Satoshi.
 
 ### 1.3 The promise of further evidence
 

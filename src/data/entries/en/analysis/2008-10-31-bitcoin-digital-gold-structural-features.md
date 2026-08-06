@@ -64,13 +64,13 @@ translationStatus: complete
 
 ![Dark navy illustration of a gold ingot with a dollar-sign emblem at its center, flanked by two bordered text panels, above six connected numbered gold circles, an outlined empty building shape, and three overlapping colored parallelograms.](/BitcoinArchive/images/analysis/2008-10-31-bitcoin-digital-gold-structural-features-hero.png)
 
-## Why the question matters
+## Where monetary value comes from
 
 Before getting into Bitcoin specifically, start with a broader question: why does anything have monetary value at all? A dollar bill is paper; a gold coin is stamped metal. But the two sit on opposite sides of a key line: a central bank or government can decide to expand the money supply. Gold has no equivalent — no single authority holds a monopoly over the world's gold supply, and none can simply decree more of it into existence.
 
 That absence of a controlling party is one of the reasons an asset becomes worth holding as a long-term store of value: [scarcity](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) nobody commands, resistance to counterfeiting, and a supply nobody can unilaterally expand. Gold has held this role for thousands of years in part for exactly this reason — pulling more of it out of the ground is slow, expensive, and bounded by geology, a natural constraint rather than a policy one.
 
-Bitcoin's founding claim was that software could reproduce those same properties without the metal — a [fixed, verifiable supply](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/), no central issuer, and [rules no single party can rewrite](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/). Whether that claim actually holds up, and whether Bitcoin delivers on it more convincingly than the newer projects making similar claims, is the question this page investigates.
+Bitcoin's founding claim was that software could reproduce those same properties without the metal — a [fixed, verifiable supply](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/), no central issuer, and [rules no single party can rewrite](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/). This page tests whether that claim actually holds up, and whether Bitcoin delivers on it more convincingly than the newer projects making similar claims.
 
 Satoshi made the metal comparison explicitly, in a [2010 forum reply](/BitcoinArchive/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/):
 

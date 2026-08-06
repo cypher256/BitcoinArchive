@@ -230,7 +230,7 @@ Alfred Marshall's *Principles of Economics* (1890) gave the classical debate its
 - "Production cost" is not one number. Electricity prices, hardware vintage, and accounting choices (cash cost vs all-in cost) spread realised costs across a wide band; any single per-coin figure is a weighted model output.
 - The models cited in §5 disagree with one another, and each has fitted parameters. The archive records what each claims, not which is correct.
 - Later work treats price and hashrate as an endogenous system in which the causality verdict depends on horizon and regime; the asymmetry documented here is the dominant direction, not the only one.
-- Nothing in this entry is valuation guidance. It is the documentary record of a question the archive's primary sources happen to answer unusually well.
+- Nothing in this entry is valuation guidance. It is the documentary record of an issue the archive's primary sources happen to illuminate unusually well: which side leads, cost or price.
 
 The event this analysis reads is recorded in [the first-exchange-rate entry](/BitcoinArchive/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/), and the primary posts are held in [topic 57](/BitcoinArchive/entries/forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable/) and [the thermodynamics thread](/BitcoinArchive/entries/forum/bitcointalk/topic-721/2010-08-07-re-bitcoin-minting-is-thermodynamically-perverse/); [the Malmi exchange advice](/BitcoinArchive/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/) and [the first sale](/BitcoinArchive/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/) supply the 2009 chain.
 

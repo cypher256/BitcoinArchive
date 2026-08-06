@@ -230,7 +230,7 @@ NewLibertyStandard 本人も[同じスレッドで返信し](/BitcoinArchive/ja/
 - 「生産コスト」は 1 つの数ではない。電力価格、ハードウェアの世代、費用の会計方法（現金支出のみか全費用か）によって、実現コストは広い帯に散らばる。1 コインあたりの単一の数字は、いずれも重み付けされたモデルの出力である。
 - §5 のモデル群は互いに食い違い、それぞれに当てはめられた係数を持つ。アーカイブは各モデルが何を主張しているかを記録するのであって、どれが正しいかを裁定しない。
 - 後続研究は価格とハッシュレートを内生システムとして扱い、因果の判定は時間軸と局面に依存するとする。本エントリーが記録した非対称は支配的な方向であって、唯一の方向ではない。
-- 本エントリーのいかなる部分も価値評価の助言ではない。アーカイブの一次資料が例外的によく答えてくれる問いについての、文書記録である。
+- 本エントリーのいかなる部分も価値評価の助言ではない。コストと価格のどちらが先かという論点を、アーカイブの一次資料は例外的によく照らし出しており、本エントリーはその記録である。
 
 本分析が読み解く出来事は[初の為替レートのエントリー](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/)に記録されており、一次投稿は[トピック 57](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-57/2010-02-21-re-current-bitcoin-economic-model-is-unsustainable/) と[熱力学スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-721/2010-08-07-re-bitcoin-minting-is-thermodynamically-perverse/)が保持している。[マルミへの取引所助言](/BitcoinArchive/ja/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/)と[最初の売却](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)が 2009 年の連鎖をつなぐ。
 
