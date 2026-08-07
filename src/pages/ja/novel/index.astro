@@ -29,7 +29,7 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
         src={heroImage}
         alt="フードを被った顔のないシルエットがコードの粒子へと溶けていく。傍らに開かれた古びた本、1995 年から 2140 年までの年表 — ビットコイン・インスティテュート"
         widths={[400, 800, 1200]}
-        sizes="(max-width: 720px) 100vw, 720px"
+        sizes="(max-width: 767px) 100vw, 720px"
         loading="eager"
         fetchpriority="high"
       />
@@ -70,7 +70,7 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
       </p>
       <p>
         著者もまた開発者である。
-        なぜ論文を九ページに収めたのか。なぜ200バイトの予約領域を残したのか。
+        なぜ論文を九ページに収めたのか。
         なぜ最初期のコミットには、ソースコード管理も、課題管理も、CIもなかったのか。
         なぜ採掘パターンに、自らを抑えた痕跡が残っているのか。
         なぜ最後のコミットメッセージは、別れの言葉ではなく、ただの技術的な一行だったのか。
@@ -196,6 +196,26 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
     margin: 2.5rem auto 0;
     border: 1px solid var(--color-border);
     border-radius: 6px;
+  }
+  @media (max-width: 767px) {
+    /* .novel-page caps at 720px (unlike the homepage's .container-wide,
+       which already hits 100% below 1199px), so the bleed math below
+       needs the cap lifted too -- otherwise the image bleeds relative
+       to a 720px-capped parent instead of the true viewport, leaving
+       a stray ~7.5px margin between 721-767px. */
+    .novel-page {
+      max-width: none;
+    }
+    /* Bleed the hero image to the viewport edge instead of staying
+       inset inside .container's 1rem padding -- matches the same
+       treatment applied to the homepage hero image. */
+    .hero-image {
+      width: calc(100% + 2rem);
+      max-width: calc(100% + 2rem);
+      margin-inline: -1rem;
+      border: none;
+      border-radius: 0;
+    }
   }
   .hero .eyebrow {
     font-family: var(--font-heading);
