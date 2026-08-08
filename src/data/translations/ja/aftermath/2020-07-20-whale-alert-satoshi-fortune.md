@@ -49,7 +49,7 @@ translationStatus: complete
 
 <!-- chart: wealth-race -->
 
-これらの数値は、セルジオ・ラーナーが前年に発表した [2019 年の Patoshi 命名論文](/BitcoinArchive/ja/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/)が示した推定 — タイムスタンプ逆転分析により独立に導いた約 110 万 BTC・約 22,000 ブロック — とほぼ一致していた。
+これらの数値は、セルジオ・ラーナーが前年に発表した [2019 年の Patoshi 命名論文](/BitcoinArchive/ja/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/)が示した推定とほぼ一致していた。同論文は、タイムスタンプ逆転分析により独立に約 110 万 BTC・約 22,000 ブロックを導き出していた。
 
 ## マイニング行動
 
@@ -65,4 +65,4 @@ Whale Alert の分析によると、サトシはネットワークの成長に�
 
 報告書は結論として述べている：「停止のタイミング、マイニング行動、体系的なマイニング速度の低下、そして支出の欠如は、サトシが若いネットワークの成長と保護にのみ関心を持っていたことを強く示唆している。」上述の 907 BTC を除いては一度も使われておらず、サトシが個人的利益のためではなくネットワークの立ち上げのためにマイニングしていたという解釈を強化している。
 
-この数値は後に、ラーナーや BitMEX Research による独立推定と突き合わせる形で、サトシの保有量をめぐるより広範な調査にも組み込まれた――詳細は[サトシの保有量を約 110 万 BTC と推定する分析エントリー](/BitcoinArchive/ja/entries/aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis/)を参照。
+この数値は後に、ラーナーや BitMEX Research による独立推定と突き合わせる形で、サトシの保有量をめぐるより広範な調査にも組み込まれた。詳細は[サトシの保有量を約 110 万 BTC と推定する分析エントリー](/BitcoinArchive/ja/entries/aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis/)を参照。

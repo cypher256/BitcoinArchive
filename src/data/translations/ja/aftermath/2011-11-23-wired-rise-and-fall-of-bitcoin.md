@@ -146,7 +146,7 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > スイスのコーダーでコミュニティの活発なメンバーだったステファン・トーマスが、ナカモトの 500件以上のフォーラム投稿のタイムスタンプをグラフ化した。グラフは、グリニッジ標準時の午前 5時から 11時の間に投稿がほぼ消滅することを示していた。
 
-この GMT を根拠とした手法は、約 10年後にも別の形で繰り返されることになる——[Chain Bulletin による 2020年のロンドン仮説分析](/BitcoinArchive/ja/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/)は、投稿・コミット・メール 742件というはるかに大規模なデータセットから、同様の結論に達している。
+この GMT を根拠とした手法は、約 10年後にも別の形で繰り返されることになる。[Chain Bulletin による 2020年のロンドン仮説分析](/BitcoinArchive/ja/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/)は、投稿・コミット・メール 742件というはるかに大規模なデータセットから、同様の結論に達している。
 
 締めくくりに、記事はサトシの正体をめぐるガージックの言葉に戻った：
 

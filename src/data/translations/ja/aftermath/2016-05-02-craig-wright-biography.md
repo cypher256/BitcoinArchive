@@ -48,7 +48,7 @@ translationStatus: complete
 
 ![紺色の背景に、二つの日付を結ぶ点線の矢印、赤いスタンプが押された書類の束、裁判を象徴する小槌、そして輪郭だけの人影とそれにそぐわない身元プレートを配置したイラスト。](/BitcoinArchive/images/analysis/2016-05-02-craig-wright-biography-hero.png)
 
-2016 年 5 月 2 日、クレイグ・ライトは [BBC、The Economist、GQ との連携インタビュー](/BitcoinArchive/ja/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/)で、自らが[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)であると公言した。暗号学的証明 —— 初期のビットコインブロックに関連する鍵で署名したメッセージ —— を提示した。数時間のうちに、セキュリティ研究者たちはこの「署名」が新規生成ではなく 2009 年のビットコイン取引から既存の署名を再利用したものだったことを示した。
+2016 年 5 月 2 日、クレイグ・ライトは [BBC、The Economist、GQ との連携インタビュー](/BitcoinArchive/ja/entries/aftermath/2016-05-02-craig-wright-bbc-economist-claim/)で、自らが[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)であると公言した。暗号学的証明として、初期のビットコインブロックに関連する鍵で署名したメッセージを提示した。数時間のうちに、セキュリティ研究者たちはこの「署名」が新規生成ではなく 2009 年のビットコイン取引から既存の署名を再利用したものだったことを示した。
 
 8 年後の 2024 年 3 月 14 日、英国高等法院のメラー判事は、暗号オープン特許アライアンス（COPA）が提起した訴訟で[判決を下した](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/):
 
@@ -83,16 +83,16 @@ timeline
 
 ## 撤回
 
-2015 年 12 月の [Wired と Gizmodo の調査](/BitcoinArchive/ja/entries/aftermath/2015-12-08-wired-gizmodo-craig-wright-claims/)が 2016 年 5 月の宣言に先行していた —— ジャーナリストはライトをサトシ候補として最初に名指しした側であり、後に捏造されたと判明する資料を引用していた。2016 年 5 月の「証明」が崩れた後、ライトはさらなる証拠を約束したが提示しなかった。代わりに次のように投稿した:
+2015 年 12 月の [Wired と Gizmodo の調査](/BitcoinArchive/ja/entries/aftermath/2015-12-08-wired-gizmodo-craig-wright-claims/)が 2016 年 5 月の宣言に先行していた。ジャーナリストはライトをサトシ候補として最初に名指しした側であり、後に捏造されたと判明する資料を引用していた。2016 年 5 月の「証明」が崩れた後、ライトはさらなる証拠を約束したが提示しなかった。代わりに次のように投稿した:
 
 > 「匿名と隠遁の年月を後にできると信じていたのだ。しかし、できなかった」
 
 ## ホワイトペーパー訴訟
-2021年2月、ライトは bitcoin.org の匿名運営者（[Cobra](/BitcoinArchive/ja/participants/cobra/)）をビットコインホワイトペーパーの著作権侵害で[提訴した](/BitcoinArchive/ja/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/)。2021年6月28日、裁判所はライトに有利な欠席判決を下した——主張に根拠があったからではなく、Cobra が身元を明かすよりも匿名性の保護を選んだためである。数時間後、Cobra は[公に反論を投稿し](/BitcoinArchive/ja/entries/aftermath/2021-06-28-cobra-response-to-whitepaper-ruling/)、暗号学のルールは金で買える法廷のルールより優れていると宣言した。
+2021年2月、ライトは bitcoin.org の匿名運営者（[Cobra](/BitcoinArchive/ja/participants/cobra/)）をビットコインホワイトペーパーの著作権侵害で[提訴した](/BitcoinArchive/ja/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/)。2021年6月28日、裁判所はライトに有利な欠席判決を下した。主張に根拠があったからではなく、Cobra が身元を明かすよりも匿名性の保護を選んだためである。数時間後、Cobra は[公に反論を投稿し](/BitcoinArchive/ja/entries/aftermath/2021-06-28-cobra-response-to-whitepaper-ruling/)、暗号学のルールは金で買える法廷のルールより優れていると宣言した。
 
-ライトの正体主張は初期ブロック (1 ~ 9) の鍵による署名に依拠していたが、ジェネシスブロックのコインベース鍵には決して及ばなかった —— [ジェネシスブロックハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)が指摘するとおり、決定打となるその唯一の実演を、ライトを含め誰も行っていない。
+ライトの正体主張は初期ブロック (1 ~ 9) の鍵による署名に依拠していたが、ジェネシスブロックのコインベース鍵には決して及ばなかった。[ジェネシスブロックハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)が指摘するとおり、決定打となるその唯一の実演を、ライトを含め誰も行っていない。
 
 ## 控訴の失敗
 
-ライトは COPA 判決への控訴を求めたが、認められなかった。2025 年 3 月 7 日、控訴裁判所はライトに 22 万 5000 ポンドの訴訟費用 —— COPA へ 10 万ポンド、ライトが同じく訴えていたビットコイン開発者側へ 12 万 5000 ポンド —— の支払いを命じた。AI ツールで作成した提出書面が、実在しない判例を引用し、一審の手続きについて虚偽の陳述を含んでおり、裁判所を著しく誤導する恐れがあったと認定したためである。英国の民事裁判所が訴訟当事者の AI 不適切使用を理由に費用負担を命じたのは、報道によれば初めてだという。
+ライトは COPA 判決への控訴を求めたが、認められなかった。2025 年 3 月 7 日、控訴裁判所はライトに 22 万 5000 ポンドの訴訟費用の支払いを命じた。内訳は COPA へ 10 万ポンド、ライトが同じく訴えていたビットコイン開発者側へ 12 万 5000 ポンド。AI ツールで作成した提出書面が、実在しない判例を引用し、一審の手続きについて虚偽の陳述を含んでおり、裁判所を著しく誤導する恐れがあったと認定したためである。英国の民事裁判所が訴訟当事者の AI 不適切使用を理由に費用負担を命じたのは、報道によれば初めてだという。
 

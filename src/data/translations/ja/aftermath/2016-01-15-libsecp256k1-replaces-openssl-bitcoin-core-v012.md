@@ -62,8 +62,8 @@ libsecp256k1 プロジェクトは 2013年3月5日、[ピーター・ウィー�
 2014年までに、合意クリティカルなコードで OpenSSL を使用することの具体的な問題が複数特定されていた：
 
 1. **署名解析の不整合**が予期せぬチェーン分裂を引き起こす可能性。OpenSSL のバージョンが異なると、同じ署名が有効か無効かで判定が割れる場合があり、全ノードが同じ結論に達する必要がある合意システムでは許容できない。
-2. **性能** — libsecp256k1 は最終的に署名検証で 2.5〜5.5倍高速。署名検証は新ブロック検証コストの大部分を占める。
-3. **監査可能性** — 単一の曲線とビットコインが必要とする操作のみに焦点を絞ることで、ライブラリーは深く査読可能なサイズに収まり、サイドチャネル攻撃に対する定数時間実装も実現できた。
+2. **性能**の明確な向上。libsecp256k1 は最終的に署名検証で 2.5〜5.5倍高速で、署名検証は新ブロック検証コストの大部分を占める。
+3. **監査可能性**の確保。単一の曲線とビットコインが必要とする操作のみに焦点を絞ることで、ライブラリーは深く査読可能なサイズに収まり、サイドチャネル攻撃に対する定数時間実装も実現できた。
 
 2014年11月、ウィーユは libsecp256k1 のテストを書きながら [CVE-2014-3570](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3570) を発見・報告した。これは OpenSSL の BN_sqr（二乗）ルーチンの重大なバグで、長年 OpenSSL に潜在していた。
 
@@ -78,8 +78,8 @@ libsecp256k1 プロジェクトは 2013年3月5日、[ピーター・ウィー�
 
 ## 意義
 
-libsecp256k1 が OpenSSL を置き換えたのは、合意の署名検証だった。すべてのノードが同じ判定に達しなければチェーンが分裂する経路である。サトシの v0.1 が OpenSSL を採用したのは、2008年当時としては自明な選択だった——Windows 上の C++ プロジェクト向け標準暗号ライブラリーだったからだ。2016年までに、Bitcoin Core 開発者たちは、合意システムにとって「自明」と「正しい」は同じではないと結論し、3年かけてビットコイン専用の置換実装を作り上げた。
+libsecp256k1 が OpenSSL を置き換えたのは、合意の署名検証だった。すべてのノードが同じ判定に達しなければチェーンが分裂する経路である。サトシの v0.1 が OpenSSL を採用したのは、2008年当時としては自明な選択だった。Windows 上の C++ プロジェクト向け標準暗号ライブラリーだったからだ。2016年までに、Bitcoin Core 開発者たちは、合意システムにとって「自明」と「正しい」は同じではないと結論し、3年かけてビットコイン専用の置換実装を作り上げた。
 
-このパターン——コードベースが成熟するにつれてサトシの設計選択がビットコイン固有の実装に段階的に置き換えられていくこと——は、Bitcoin Core の進化における繰り返し現れるテーマである。[PR #4641（laanwj、2014）](/BitcoinArchive/ja/entries/forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style/)も同様で、サトシのハンガリアン記法による変数命名規則を新しい Bitcoin Core コードから体系的に削除する動きの始まりだった。
+コードベースが成熟するにつれて、サトシの設計選択はビットコイン固有の実装へ段階的に置き換えられていく。このパターンは、Bitcoin Core の進化における繰り返し現れるテーマである。[PR #4641（laanwj、2014）](/BitcoinArchive/ja/entries/forum/github/pr-4641/2014-08-06-pr-4641-doc-remove-satoshi-s-variable-naming-style/)も同様で、サトシのハンガリアン記法による変数命名規則を新しい Bitcoin Core コードから体系的に削除する動きの始まりだった。
 
-libsecp256k1 移行は、複数の参加者記録と依存関係記録において決定的事件として読まれる。 [ウラジミール・ファン・デル・ラーン伝記](/BitcoinArchive/ja/participants/wladimir-van-der-laan/)は v0.12 のリリース日をリードメンテナーとしての在任期間における定義的な業績として記録する。 [ピーター・ウィーユ伝記](/BitcoinArchive/ja/participants/pieter-wuille/)は本ライブラリ ― ウィーユが 2013 年に開始した ― を貢献記録の根本的な柱の一つとして扱う。 [グレゴリー・マクスウェル伝記](/BitcoinArchive/ja/participants/gregory-maxwell/)も libsecp256k1 の共同著作をマクスウェル記録の二本柱のうちの一つとして据える (もう一本は CoinJoin / Confidential Transactions)。そして [2011 年のビットコイン v0.5 Crypto++ 依存除去エントリ](/BitcoinArchive/ja/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/)は同じ依存置換の弧をより早い端点から読む ― 2011 年の Crypto++ から OpenSSL へ、 2016 年の OpenSSL から libsecp256k1 へ ― v0.12 のリリース日をその連鎖の終端行として扱う。
+libsecp256k1 移行は、複数の参加者記録と依存関係記録において決定的事件として読まれる。 [ウラジミール・ファン・デル・ラーン伝記](/BitcoinArchive/ja/participants/wladimir-van-der-laan/)は v0.12 のリリース日をリードメンテナーとしての在任期間における定義的な業績として記録する。 [ピーター・ウィーユ伝記](/BitcoinArchive/ja/participants/pieter-wuille/)は、ウィーユが 2013 年に開始した本ライブラリを、貢献記録の根本的な柱の一つとして扱う。 [グレゴリー・マクスウェル伝記](/BitcoinArchive/ja/participants/gregory-maxwell/)も libsecp256k1 の共同著作をマクスウェル記録の二本柱のうちの一つとして据える (もう一本は CoinJoin / Confidential Transactions)。そして [2011 年のビットコイン v0.5 Crypto++ 依存除去エントリ](/BitcoinArchive/ja/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/)は同じ依存置換の弧をより早い端点から読む。2011 年の Crypto++ から OpenSSL へ、2016 年の OpenSSL から libsecp256k1 へ。v0.12 のリリース日は、その連鎖の終端行として扱われる。

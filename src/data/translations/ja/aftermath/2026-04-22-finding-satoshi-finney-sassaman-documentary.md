@@ -51,7 +51,7 @@ translationStatus: complete
 
 ![紺色を背景に、コードの断片模様で満たされたシルエットと曲線模様で満たされたシルエットが一つの横顔へと重なり合う構図を中心に据え、影のかかった扇形を持つ丸時計、傾いた天秤、虫眼鏡付きのケースファイルを脇に配した、ティールとゴールドを基調とするイラスト。](/BitcoinArchive/images/analysis/2026-04-22-finding-satoshi-finney-sassaman-documentary-hero.png)
 
-2026 年 4 月 22 日、ドキュメンタリー『Finding Satoshi』が公開された。監督はタッカー・トゥーリーとマシュー・ミーレ、主要調査者はビジネス作家のウィリアム・D・コーハンと私立探偵のタイラー・マロニーである。作品はサトシ・ナカモト仮名を 2 人の人物 ― サイファーパンク暗号学者の[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) (1956-2014) と[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) (1980-2011) ― の共作として描いた。作中の役割分担では、フィニーがコードを担い、サッサマンが[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)を起草した。
+2026 年 4 月 22 日、ドキュメンタリー『Finding Satoshi』が公開された。監督はタッカー・トゥーリーとマシュー・ミーレ、主要調査者はビジネス作家のウィリアム・D・コーハンと私立探偵のタイラー・マロニーである。作品はサトシ・ナカモト仮名を、サイファーパンク暗号学者の[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) (1956-2014) と[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) (1980-2011) の 2 人による共作として描いた。作中の役割分担では、フィニーがコードを担い、サッサマンが[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)を起草した。
 
 ## 「2 人サトシ」の枠組み
 
@@ -70,13 +70,13 @@ translationStatus: complete
 ## 反論
 
 - **ジェイムソン・ロップ** (`Casa` の CTO) は、既存[ハル・フィニー仮説ページ](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)に記録済みのレース当日アリバイと重なる時間矛盾を指摘した: 2009 年 4 月 18 日、ハルがサンタバーバラで 10 マイルレースを走っていた同じ時間帯に、サトシは開発者宛てにメールを送り、取引をブロードキャストしていた。ドキュメンタリーの主張とハルの記録された活動が時間的にぶつかる事例。
-- **アダム・バック** ― [2026 年ニューヨーク・タイムズのカレイロウ調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)で名指しされた本人 ― は、本作の読みに対して 3 点の反論を公にした: サッサマンの KU ルーヴェン大学所属 (2004-2011) は PST 時間帯の根拠と合わない、ハル・フィニーのサンタバーバラ・レース参加は記録上のサトシ活動と矛盾する、どちらの家族にも、記録に残る Patoshi パターンの初期ビットコイン残高は確認されていない ― この約 109.6 万 BTC の残高こそ、 [ノア・ドゥの休眠ビットコイン訴訟](/BitcoinArchive/ja/entries/aftermath/2026-05-28-noah-doe-lawsuit/)が法的所有権を主張する対象である。
+- **アダム・バック**は、本作の読みに対して 3 点の反論を公にした。[2026 年ニューヨーク・タイムズのカレイロウ調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)で名指しされた本人である。反論は次のとおり。サッサマンの KU ルーヴェン大学所属 (2004-2011) は PST 時間帯の根拠と合わない、ハル・フィニーのサンタバーバラ・レース参加は記録上のサトシ活動と矛盾する、どちらの家族にも、記録に残る Patoshi パターンの初期ビットコイン残高は確認されていない。この約 109.6 万 BTC の残高こそ、 [ノア・ドゥの休眠ビットコイン訴訟](/BitcoinArchive/ja/entries/aftermath/2026-05-28-noah-doe-lawsuit/)が法的所有権を主張する対象である。
 
 ## サトシ特定の系譜上の位置づけ
 
-『Finding Satoshi』は 2024 年以降に相次いだ主要メディア / ドキュメンタリー系のサトシ特定の流れに位置する: [2024 年 HBO ドキュメンタリーによるピーター・トッド特定](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)、 [2026 年ニューヨーク・タイムズのカレイロウ調査によるアダム・バック特定](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)、 [Murphy 対 DHS の FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)。 Finding Satoshi が他と違うのは 2 点 ― 単独候補ではなく複数人物の共作を初めて主要ドキュメンタリーとして主張した点、そして文体計量推論や政府文書開示請求ではなく遺族証言に大きく依拠した点である。
+『Finding Satoshi』は 2024 年以降に相次いだ主要メディア / ドキュメンタリー系のサトシ特定の流れに位置する: [2024 年 HBO ドキュメンタリーによるピーター・トッド特定](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)、 [2026 年ニューヨーク・タイムズのカレイロウ調査によるアダム・バック特定](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)、 [Murphy 対 DHS の FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)。 Finding Satoshi が他と違うのは 2 点ある。単独候補ではなく複数人物の共作を初めて主要ドキュメンタリーとして主張した点、そして文体計量推論や政府文書開示請求ではなく遺族証言に大きく依拠した点である。
 
-個別の構成仮説は別エントリで展開している: [ハル・フィニー＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)と[レン・サッサマン＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)。共作という読みは、フィニーとサッサマンの間で成立していたとされる協力関係 ― 記録上の書面に残っていない ― を説明する追加負担を伴うもので、本作固有の主張部分はそこにある。
+個別の構成仮説は別エントリで展開している: [ハル・フィニー＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)と[レン・サッサマン＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)。共作という読みは、フィニーとサッサマンの間で成立していたとされる協力関係、記録上の書面には残っていないものを説明する追加負担を伴う。そのため本作固有の主張部分はそこにある。
 
 本 2026 年ドキュメンタリーは[サッサマン同定仮説エントリ](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)から、同仮説が秤にかける「サッサマン・フィニー対」についての最新のジャーナリスト的提唱として参照される。
 
