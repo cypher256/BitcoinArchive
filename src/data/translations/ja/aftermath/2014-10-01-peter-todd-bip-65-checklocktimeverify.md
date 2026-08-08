@@ -55,4 +55,4 @@ translationStatus: complete
 ## 意義
 
 <!-- speaker: narrator -->
-BIP 65 はコンセンサスレベルのソフトフォークとしてデプロイされた。そのタイムロック出力は、非対話型ペイメントチャネルの構成要素となり、後に Lightning Network が築かれる土台になった。Lightning Network のチャネル構造全体や、ビットコインの基盤層の上に築かれたサイドチェーン・マイニングプールなどのエコシステムについては、[ビットコインのエコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)で詳しく扱っている。
+BIP 65 はコンセンサスレベルのソフトフォークとしてデプロイされた。そのタイムロック出力は非対話型ペイメントチャネルの構成要素となった。このペイメントチャネルが、後に Lightning Network が築かれる土台になった。Lightning Network のチャネル構造全体や、ビットコインの基盤層の上に築かれたサイドチェーン・マイニングプールなどのエコシステムについては、[ビットコインのエコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)で詳しく扱っている。

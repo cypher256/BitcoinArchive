@@ -76,7 +76,7 @@ translationStatus: complete
 
 『Finding Satoshi』は 2024 年以降に相次いだ主要メディア / ドキュメンタリー系のサトシ特定の流れに位置する: [2024 年 HBO ドキュメンタリーによるピーター・トッド特定](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)、 [2026 年ニューヨーク・タイムズのカレイロウ調査によるアダム・バック特定](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)、 [Murphy 対 DHS の FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)。 Finding Satoshi が他と違うのは 2 点ある。単独候補ではなく複数人物の共作を初めて主要ドキュメンタリーとして主張した点、そして文体計量推論や政府文書開示請求ではなく遺族証言に大きく依拠した点である。
 
-個別の構成仮説は別エントリで展開している: [ハル・フィニー＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)と[レン・サッサマン＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)。共作という読みは、フィニーとサッサマンの間で成立していたとされる協力関係、記録上の書面には残っていないものを説明する追加負担を伴う。そのため本作固有の主張部分はそこにある。
+個別の構成仮説は別エントリで展開している: [ハル・フィニー＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)と[レン・サッサマン＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)。共作という読みは、フィニーとサッサマンの間で成立していたとされる協力関係を説明する追加負担を伴う。この協力関係は記録上の書面には残っていない。そのため本作固有の主張部分はそこにある。
 
 本 2026 年ドキュメンタリーは[サッサマン同定仮説エントリ](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)から、同仮説が秤にかける「サッサマン・フィニー対」についての最新のジャーナリスト的提唱として参照される。
 

@@ -31,17 +31,17 @@ translationStatus: complete
 
 ![右側に顔のない人物シルエットのアウトラインを配置し、角括弧で囲んだ六角形アイコン 4 つ（ブロックチェーンのスナップショットを表す）、二つの日付マーカーを結ぶ光る横線のタイムライン、小さなネットワークノードの点、右下の赤枠インシデント表示ボックスを添えた、紺色基調の技術的なインフォグラフィック。](/BitcoinArchive/images/analysis/2010-07-12-knightmb-biography-hero.png)
 
-2010 年 8 月 15 日、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が[バリュー・オーバーフロー事件](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/) ——ビットコイン最初期の重大バグの一つで、単一トランザクションに 1,840 億 BTC が一時的に現れた ——の修正パッチを公開した際、[告知の冒頭にこう書かれていた](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/):
+[バリュー・オーバーフロー事件](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/)は、単一トランザクションに 1,840 億 BTC が一時的に現れた、ビットコイン最初期の重大バグの一つである。2010 年 8 月 15 日、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)がその修正パッチを公開した際、[告知の冒頭にこう書かれていた](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/):
 
 > 「knightmb のブロックチェーンスナップショットから始めた」
 
-匿名のフォーラム参加者 **knightmb** は、新規ユーザーが数日待たずに同期できるようビットコインブロックチェーンの公開スナップショットをホスティングしていた。そのスナップショットがバグ復旧のクリーンな起点となった。knightmb の BitcoinTalk への初登場は [2010 年 7 月 12 日](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-299/2010-07-12-runaway-cpu-usage-for-64bit-bitcoin-linux-client/)で、年末までに 100 件超の投稿 ——デバッグ、攻撃シナリオ分析、マイニング実験、ユーザーサポート ——を残した。本名は公表されていない。
+匿名のフォーラム参加者 **knightmb** は、新規ユーザーが数日待たずに同期できるようビットコインブロックチェーンの公開スナップショットをホスティングしていた。そのスナップショットがバグ復旧のクリーンな起点となった。knightmb の BitcoinTalk への初登場は [2010 年 7 月 12 日](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-299/2010-07-12-runaway-cpu-usage-for-64bit-bitcoin-linux-client/)で、年末までにデバッグ、攻撃シナリオ分析、マイニング実験、そしてユーザーサポートにまたがる 100 件超の投稿を残した。本名は公表されていない。
 
 ## 活動
 knightmb は BitcoinTalk に 2010年7月12日、[64 ビット Linux のビットコインクライアントで CPU 使用率が暴走する問題](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-299/2010-07-12-runaway-cpu-usage-for-64bit-bitcoin-linux-client/)を立ち上げる形で初めて登場する。そこから関与が急速に広がり、2010年末までに技術的なデバッグ、攻撃シナリオの分析、マイニング実験、そして一般ユーザーのサポートにまたがる 100件以上の投稿を積み上げた。新参の質問にコア開発者との設計議論と同じ辛抱強さで応えるタイプのフォーラム参加者だった。
 
 ## ブロックチェーン・スナップショット
-knightmb の最も長く影響を残した貢献は、ビットコインブロックチェーンの公開スナップショットをホストしたことである。これにより、新しいユーザーがピアから全ブロックをダウンロード・検証するのに何日も待つことなく同期できるようになった。このスナップショットはコミュニティ内で広く利用されるようになった。その重要性が浮き彫りになったのが [2010年8月のバリュー・オーバーフロー事件](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/)で、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が復旧パッチをテストする際、クリーンな開始点として knightmb のスナップショットを利用した。彼は[パッチの告知](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/)で明言している——「knightmb のブロックチェーン・スナップショットから始めた」と。
+knightmb の最も長く影響を残した貢献は、ビットコインブロックチェーンの公開スナップショットをホストしたことである。これにより、新しいユーザーがピアから全ブロックをダウンロード・検証するのに何日も待つことなく同期できるようになった。このスナップショットはコミュニティ内で広く利用されるようになった。その重要性が浮き彫りになったのが [2010年8月のバリュー・オーバーフロー事件](/BitcoinArchive/ja/entries/aftermath/2010-08-15-value-overflow-incident/)で、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が復旧パッチをテストする際、クリーンな開始点として knightmb のスナップショットを利用した。彼は[パッチの告知](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/)で「knightmb のブロックチェーン・スナップショットから始めた」と明言している。
 
 ## 意義
-初期のビットコインネットワークは、クライアントをオンラインに保ちブロックチェーンを提供し続ける選択をしたホビイストのノード運営者たちに依存していた。knightmb はその中でさらに一歩踏み込み——スナップショットを公開し、質問に答え、まだほとんど利用者のいないネットワークの弱点を探った、ごく少数の一人である。本名は公には知られていないが、彼の仕事の痕跡は BitcoinTalk と、ビットコイン最初期で最も深刻なバグからの復旧の記録に埋め込まれている。
+初期のビットコインネットワークは、クライアントをオンラインに保ちブロックチェーンを提供し続ける選択をしたホビイストのノード運営者たちに依存していた。knightmb はその中で、スナップショットを公開し、質問に答え、まだほとんど利用者のいないネットワークの弱点を探るところまで踏み込んだ、ごく少数の一人である。本名は公には知られていないが、彼の仕事の痕跡は BitcoinTalk と、ビットコイン最初期で最も深刻なバグからの復旧の記録に埋め込まれている。
