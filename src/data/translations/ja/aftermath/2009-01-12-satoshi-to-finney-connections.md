@@ -4,7 +4,7 @@ date: 2009-01-12T00:00:00Z
 type: "article"
 source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
-sourceNote: "CoinDesk が 2020 年 11 月 26 日に公開し、送信日を 2009 年 1 月 12 日としている。同記事が扱う他のサトシ–フィニー間メールと違い、このメールについてはヘッダーの時刻が公開されておらず、日付だけが分かっている。"
+sourceNote: "CoinDesk が 2020 年 11 月 26 日に公開し、送信日を 2009 年 1 月 12 日としている。同記事が扱うサトシとフィニーの間の他のメールと違い、このメールについてはヘッダーの時刻が公開されておらず、日付だけが分かっている。"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -44,7 +44,7 @@ translationStatus: complete
 > 残念ながら、今いる場所からは外部からの接続を受け付けることができず、そのせいで作業がより困難になっている。
 
 <!-- speaker: narrator -->
-この告白は、サトシがファイアウォールまたは NAT の背後で運用しており、ポート 8333 への外部からの TCP 接続がブロックされていたことを示している。そのため、サトシ自身のノードは他のピアへの発信接続に依存せざるを得なかった ―― [5 か月後に別のユーザーの診断を手伝うことになる、その同じ着信接続のボトルネック](/BitcoinArchive/ja/entries/aftermath/2009-06-05-satoshi-to-bohm-port-forwarding/)である。ノードがわずか数台しかなかったネットワーク黎明期において、デバッグやテストをより困難にしていたはずである。「今いる場所」という表現は、リリース週におけるサトシの公開活動の濃密さと併せて、[サトシのリリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)で詳しく検討されている。
+この告白は、サトシがファイアウォールまたは NAT の背後で運用しており、ポート 8333 への外部からの TCP 接続がブロックされていたことを示している。そのため、サトシ自身のノードは他のピアへの発信接続に依存せざるを得なかった。これは、[5 か月後に別のユーザーの診断を手伝うことになる、その同じ着信接続のボトルネック](/BitcoinArchive/ja/entries/aftermath/2009-06-05-satoshi-to-bohm-port-forwarding/)でもあった。ノードがわずか数台しかなかったネットワーク黎明期において、デバッグやテストをより困難にしていたはずである。「今いる場所」という表現は、リリース週におけるサトシの公開活動の濃密さと併せて、[サトシのリリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)で詳しく検討されている。
 
 メールヘッダーには UTC+8 のタイムゾーンが含まれており、サトシの所在地に関する憶測を呼んだ。しかし、Chain Bulletin のジャーナリスト、ドンチョ・カライヴァノフは、UTC+8 のタイムスタンプはサトシのローカルマシンではなく、AnonymousSpeech.com のメール中継サーバーに由来すると論じた。ウェブメールの Date ヘッダーが映すのはサーバーの時計であって、送信者の時計ではない（「1996 年から東京拠点」は同サービス自身のサイトの自己紹介で、ヘッダーに残る中継サーバーの IP はマレーシアのホスティング事業者への割当。いずれにせよサーバー側の設定である）。
 

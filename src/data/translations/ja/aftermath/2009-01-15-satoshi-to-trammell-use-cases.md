@@ -42,7 +42,7 @@ translationStatus: complete
 <!-- speaker: narrator -->
 このメールで、サトシはネットワーク上の少なくとも 1 つのノードが同じクラス B の範囲内で頻繁に IP アドレスを変更していることに言及し、これは予想していなかったと述べた。トランメルに対して会話を bitcoin-list または暗号学メーリングリストに CC する許可を求め、bitcoin-list の購読詳細を共有した。
 
-続いてサトシは、ビットコインを投資対象とする[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の以前の提案に言及した ―― この語り口を、サトシは [4 か月後に公開向けの文書で明確に禁じる](/BitcoinArchive/ja/entries/aftermath/2009-05-04-faq-draft-and-investment-warning/)ことになる:
+続いてサトシは、ビットコインを投資対象とする[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)の以前の提案に言及した。この語り口を、サトシは [4 か月後に公開向けの文書で明確に禁じる](/BitcoinArchive/ja/entries/aftermath/2009-05-04-faq-draft-and-investment-warning/)ことになる:
 
 <!-- quote: q1 -->
 <!-- speaker: Satoshi Nakamoto -->

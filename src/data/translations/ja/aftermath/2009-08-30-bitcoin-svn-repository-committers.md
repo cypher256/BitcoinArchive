@@ -63,9 +63,9 @@ translationStatus: complete
 
 **マルッティ・マルミ（sirius-m）** は r1 の"First commit"で SVN リポジトリを作成した。サトシが Visual C++ 6.0 を使用して Windows 上で開発したコードベースを Linux に移植し、21 のコミットを行ったのち、第一線の開発から退いた。
 
-**サトシ・ナカモト（s_nakamoto）** のコミット数は 252 リビジョン中およそ 160件と圧倒的に多い（[コード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)ではユニークコミット 160 件として扱う。164 という値もミラー側の数え方として流通している — 集計対象がブランチを含むか・ミラー由来の重複をどう扱うかで差が出る）。最後のリリースコミットは r201（"version 0.3.19 release"、2010年12月13日）。その 2日後、小さな修正をもう 1件 — r202（"get external ip from irc"、2010年12月15日）を入れた。r202 以降に s_nakamoto のコミットはない。
+**サトシ・ナカモト（s_nakamoto）** のコミット数は 252 リビジョン中およそ 160件と圧倒的に多い（[コード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)ではユニークコミット 160 件として扱う。164 という値もミラー側の数え方として流通している。これは、集計対象がブランチを含むか・ミラー由来の重複をどう扱うかで差が出るためである）。最後のリリースコミットは r201（"version 0.3.19 release"、2010年12月13日）。その 2日後、小さな修正をもう 1件、r202（"get external ip from irc"、2010年12月15日）を入れた。r202 以降に s_nakamoto のコミットはない。
 
-**ラズロ・ハニエツ（laszloh）** — [史上初のビットコインによる実世界での購入](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)（ピザ 2枚に 1 万 BTC）と GPU マイニングの先駆者として知られる — の SVN コミットはたった 1件：2010年8月4日の r123 で、macOS のコンパイル問題を修正した。
+**ラズロ・ハニエツ（laszloh）** は、[史上初のビットコインによる実世界での購入](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)（ピザ 2枚に 1 万 BTC）と GPU マイニングの先駆者として知られる。SVN コミットはたった 1件：2010年8月4日の r123 で、macOS のコンパイル問題を修正した。
 
 **ギャビン・アンドレセン（gavinandresen）** は 2010年10月にコミットアクセスを取得した。サトシがプロジェクトを段階的に引き渡す過程の一環だった。81件のコミットはサトシに次いで 2番目に多い。2010年12月3日、サトシは[マルッティ・マルミにこう書いている](/BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/)：
 
@@ -77,4 +77,4 @@ translationStatus: complete
 
 **注目すべき不在：** ジェフ・ガージックとピーター・ウィーユは SourceForge プロジェクトメンバーとして登録されているが、SVN コミットは一度も行っていない。彼らのコミットアクセスは GitHub から始まった。
 
-本 SVN リポジトリ履歴は[サトシ Windows 専一開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)において決定的な証拠として扱われている。同分析は本エントリを複数の節で参照する ― §2.1 のツールチェーンの支え、 §2.4 のチーム開発ツール不在、 §3 における SVN 改訂 252 件のうち 160 件がサトシによるものという非対称性、そして §3 の相互参照対比表 ― SVN コミッター記録を、 Windows 専一論証が拠り所とする Visual C++ 6.0 ツールチェーンの「移植側からの確認」として用いるためである。
+本 SVN リポジトリ履歴は[サトシ Windows 専一開発環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)において決定的な証拠として扱われている。同分析は、 §2.1 のツールチェーンの支え、 §2.4 のチーム開発ツール不在、 §3 における SVN 改訂 252 件のうち 160 件がサトシによるものという非対称性、そして §3 の相互参照対比表という複数の節で本エントリを参照している。いずれも、 SVN コミッター記録を、 Windows 専一論証が拠り所とする Visual C++ 6.0 ツールチェーンの「移植側からの確認」として用いるためである。

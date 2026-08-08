@@ -45,7 +45,7 @@ translationStatus: complete
 
 ![濃紺の背景に、顔のないシルエットの胸像と、2009 年 4 月のサトシへの最初のメールを示すカードが並び、2009 年・2011 年・2016 年・2024 年を結ぶ横向きの年表、Android 端末につながる BitcoinJ の文書アイコン、2016 年のビットコイン実験エッセイを示すカード、2024 年の COPA 対ライト裁判証言のパネルが配置されたインフォグラフィック。](/BitcoinArchive/images/analysis/2009-04-12-mike-hearn-biography-hero.png)
 
-2009 年 4 月 12 日、Google のエンジニアだったマイク・ハーンは[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)を読み、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に[メールを送った](/BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/)。その後 2 年間で技術的なメールが続いた —— スケーリング、簡易決済検証、長期的なマイニングの形。ハーンはサトシが送信した最後の私的メールの一つを受け取った相手であり、それは[マルッティ・マルミへの最後の既知メール](/BitcoinArchive/ja/participants/martti-malmi/)からほぼちょうど 2 か月後だった:
+2009 年 4 月 12 日、Google のエンジニアだったマイク・ハーンは[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)を読み、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に[メールを送った](/BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/)。その後 2 年間、技術的なメールが続いた。話題はスケーリング、簡易決済検証、長期的なマイニングの形に及んだ。ハーンはサトシが送信した最後の私的メールの一つを受け取った相手であり、それは[マルッティ・マルミへの最後の既知メール](/BitcoinArchive/ja/participants/martti-malmi/)からほぼちょうど 2 か月後だった:
 
 <!-- speaker: Satoshi Nakamoto -->
 > 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」
@@ -56,7 +56,7 @@ translationStatus: complete
 
 ハーンは保有する全ビットコインを売却、プロジェクトから離脱、エンタープライズ向けブロックチェーンコンソーシアム R3 に参加して分散台帳プラットフォーム Corda の開発を共同主導した。[2017 年 8 月にサトシとのメールを公開](/BitcoinArchive/ja/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/)、これはサトシの技術的思考を記録した最大級の一次資料群となった。2024 年 2 月、[COPA 対ライト裁判で証言](/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/)。
 
-ハーンは Google で Google Maps、Google Earth、Gmail のスパム対策システムに従事していた。[BitcoinJ](https://github.com/bitcoinj/bitcoinj) —— プロトコルの Java 実装 —— を開発し、これは元の C++ クライアントに対する最初の主要な代替実装、そして多くの Android ビットコインウォレットの基盤となった。
+ハーンは Google で Google Maps、Google Earth、Gmail のスパム対策システムに従事していた。[BitcoinJ](https://github.com/bitcoinj/bitcoinj) を開発した。これはプロトコルの Java 実装であり、元の C++ クライアントに対する最初の主要な代替実装、そして多くの Android ビットコインウォレットの基盤となった。
 
 ```mermaid
 timeline
@@ -85,4 +85,4 @@ timeline
 
 2016 年 1 月の「ビットコインは失敗した」エッセイは、主に二つの不満を挙げていた。1 メガバイトのブロックサイズ上限引き上げに開発コミュニティが合意できなかったこと、そして本来分散型であるべきシステム内に「システム上重要な機関」が現れたとハーンが評したこと。ハーンは公開と同時に保有 BTC を売却した。
 
-*[補足：マイク・ハーンは、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』で、主人公の二行の別れのメールの受信者として登場する ― 物語の中心的な問いを発する消失場面の宛先。]*
+*[補足：マイク・ハーンは、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』で、主人公の二行の別れのメールの受信者として登場する。物語の中心的な問いを発する消失場面の宛先である。]*

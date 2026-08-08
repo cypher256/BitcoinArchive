@@ -40,8 +40,8 @@ translationStatus: complete
 
 **トランザクション ID:** `f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16`
 
-ハル・フィニーは[ソフトウェア公開日](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)（2009年1月9日）にビットコインをダウンロードし、ブロック 70 付近からマイニングを開始していた。サトシ以外でビットコインノードを稼働させた最初の人物とされる。この送金の前日、フィニーは有名なツイートを投稿している：[「Running bitcoin」](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)フィニーがこの取引の受け手にふさわしかったのには理由がある――彼自身、[ビットコインの先駆けとなる再利用可能プルーフ・オブ・ワーク RPOW](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/) を開発した人物だったからだ。
+ハル・フィニーは[ソフトウェア公開日](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)（2009年1月9日）にビットコインをダウンロードし、ブロック 70 付近からマイニングを開始していた。サトシ以外でビットコインノードを稼働させた最初の人物とされる。この送金の前日、フィニーは有名なツイートを投稿している：[「Running bitcoin」](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)。フィニーがこの取引の受け手にふさわしかったのには理由がある。彼自身、[ビットコインの先駆けとなる再利用可能プルーフ・オブ・ワーク RPOW](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/) を開発した人物だったからだ。
 
 この送金は、それまで個別にしか動いていなかった部品の最初の実地テストでもあった。P2P 中継、検証ルール、分散型台帳のすべてが、10 コインがあるアドレスを離れて別のアドレスへ届いたと、一致して認める必要があった。
 
-当時、ビットコインには市場価格がなかった。10 BTC は画面上の数字に過ぎなかった。しかしこのプロトコルは、以前のどのデジタルキャッシュシステムも達成できなかったことを証明した — 信頼できる第三者なしに、二者間で直接価値を移転できることを。
+当時、ビットコインには市場価格がなかった。10 BTC は画面上の数字に過ぎなかった。しかしこのプロトコルは、以前のどのデジタルキャッシュシステムも達成できなかったこと、すなわち信頼できる第三者なしに、二者間で直接価値を移転できることを証明した。

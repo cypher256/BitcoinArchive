@@ -11,7 +11,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "トランメルが最も強力なノードがビットコインの大半を生成することを何が防ぐのかを質問――マイニングの中央集権化に関する最も初期の問題提起の一つ。"
+description: "トランメルは、最も強力なノードがビットコインの大半を生成することを何が防ぐのかを質問した。これはマイニングの中央集権化に関する最も初期の問題提起の一つである。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -37,7 +37,7 @@ translationStatus: complete
 ![小さなノード群の中で一つだけひときわ大きく光るノードと、それを挟む 2 通の封筒アイコン、下部に並ぶ抽選ホイールと比率棒グラフを描いたイラスト。](/BitcoinArchive/images/analysis/2009-01-12-trammell-to-satoshi-cpu-power-question-hero.png)
 
 <!-- speaker: narrator -->
-アップグレードの問題を報告してからわずか 9分後に送信された別のメールで、トランメルはビットコインの最も永続的な問題の一つとなるテーマ――マイニングの中央集権化について問いかけた。
+アップグレードの問題を報告してからわずか 9分後に送信された別のメールで、トランメルはビットコインの最も永続的な問題の一つとなるテーマ、すなわちマイニングの中央集権化について問いかけた。
 
 <!-- quote: q1 -->
 <!-- speaker: Dustin Trammell -->
