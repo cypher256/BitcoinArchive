@@ -34,7 +34,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
-  - aftermath/2009-01-10-satoshi-to-finney-connections
+  - aftermath/2009-01-12-satoshi-to-finney-connections
   - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - correspondence/adam-back/2008-08-20-satoshi-to-adam-back-hashcash-citation

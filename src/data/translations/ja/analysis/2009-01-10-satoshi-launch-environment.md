@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Bitcoin v0.1 リリース週（2009 年 1 月 8〜12 日）のサトシ運用環境を 2 一次資料から読む: 1 月 10 日のフィニー宛「from where I am」、同週の活動密度。"
+description: "Bitcoin v0.1 リリース週（2009 年 1 月 8〜12 日）のサトシ運用環境を 2 一次資料から読む: 1 月 12 日のフィニー宛「from where I am」、同週の活動密度。"
 isSatoshi: false
 tags:
   - "analysis"
@@ -30,7 +30,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2009-01-03-genesis-block-hardcode-analysis
-  - aftermath/2009-01-10-satoshi-to-finney-connections
+  - aftermath/2009-01-12-satoshi-to-finney-connections
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
@@ -48,20 +48,20 @@ translationStatus: complete
 
 ![端末画面に接続遮断の状態が表示されたノートパソコンと、警告マークで遮られた 3 本の通信線、2009 年 1 月のリリース週の日付入りタイムラインを描いた暗い色調のイラスト。](/BitcoinArchive/images/analysis/2009-01-10-satoshi-launch-environment-hero.png)
 
-2009 年 1 月 10 日、サトシは[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)に書いた:
+2009 年 1 月 12 日、サトシは[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)に書いた:
 
 <!-- speaker: Satoshi Nakamoto -->
 > 「残念ながら、今いる場所からは外部からの接続を受け付けることができず、そのせいで作業がより困難になっている。」
 
 「今いる場所からは」 —— 場所依存的、サトシのセットアップの恒久的特性ではないことを示唆する表現 —— と、2009 年 1 月 8〜12 日のリリース週におけるサトシの異例に濃密な作業ペースが、本分析が読み取る、互いに符合する 2 つの手がかりである。読みは編者による推論である。
 
-本エントリは、ブロック 0 の構造的な問いと 1 月 3 日から 1 月 9 日までの空白を扱う[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)と時期的に重なる。同じ 2009 年 1 月 10 日のビットコインデバッグログに記録された、フィニーとサトシそれぞれのノードの IP アドレスの相違という別角度から同じ週を読み解くのが[ハル・フィニー同定仮説分析](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)である。
+本エントリは、ブロック 0 の構造的な問いと 1 月 3 日から 1 月 9 日までの空白を扱う[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)と時期的に重なる。2009 年 1 月 10 日のビットコインデバッグログに記録された、フィニーとサトシそれぞれのノードの IP アドレスの相違という別角度から同じ週を読み解くのが[ハル・フィニー同定仮説分析](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)である。
 
 ## 1. 二つの手がかり
 
 ### 1.1 メールの表現（一次資料）
 
-2009 年 1 月中旬、サトシはハル・フィニーにメールを送った。このメール本文は [CoinDesk が 2020 年 11 月に初公開](/BitcoinArchive/ja/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/)したもので、ハルの個人 PC から未亡人フラン・フィニー経由で得られた。アーカイブの対応エントリは[サトシ → フィニー, 2009 年 1 月 10 日](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/)。正確な送信日は資料間で食い違いがあり、2009 年 1 月 10 日または 1 月 12 日のいずれかとされている。どちらの候補日も本分析が扱う 1 月 8 日〜12 日のリリース期間の内側にあるため、以下の読みにこの不確定性は影響しない。該当箇所:
+[2009 年 1 月 12 日のサトシからハル・フィニーへのメール](/BitcoinArchive/ja/entries/aftermath/2009-01-12-satoshi-to-finney-connections/)は、リリース期間の最終日にあたる。本文は [CoinDesk が 2020 年 11 月に初公開](/BitcoinArchive/ja/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/)したもので、ハルの個人 PC から未亡人フラン・フィニー経由で得られた。CoinDesk が示すのは日付までで、ヘッダーの時刻は公開されていない。該当箇所:
 
 <!-- audit:quote-skip -->
 > 「残念ながら、**今いる場所からは**外部からの接続を受け付けることができず、そのせいで作業がより困難になっている」
@@ -95,16 +95,16 @@ gantt
     %% link: /BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/
 
     section メール
-    "from where I am" フィニー宛 :milestone, 2009-01-10 12:00, 0m
-    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/
+    "from where I am" フィニー宛 :milestone, 2009-01-12 00:00, 0m
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-12-satoshi-to-finney-connections/
 ```
 
 | UTC タイムスタンプ | 出来事 | チャンネル |
 |---|---|---|
 | 2009-01-08 19:27 | [Bitcoin v0.1 リリース告知](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/) | 暗号学メーリングリスト |
 | 2009-01-09 02:54:25 | ブロック 1 採掘（チェーン上の `nTime`。ノード起動はその数分前と推定） | — |
-| 2009-01-10 | [サトシ → フィニー：「from where I am」](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/) | メール |
 | 2009-01-11 22:32 | [Bitcoin v0.1.2 リリース告知](/BitcoinArchive/ja/entries/emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available/) | bitcoin-list |
+| 2009-01-12 (時刻不明) | [サトシ → フィニー：「from where I am」](/BitcoinArchive/ja/entries/aftermath/2009-01-12-satoshi-to-finney-connections/) | メール |
 | 2009-01-12 20:20 | Bitcoin v0.1 Alpha release notes | bitcoin-list |
 | 2009-01-12 22:48 | Bitcoin v0.1.3 | bitcoin-list |
 
@@ -195,7 +195,7 @@ gantt
 
 ## 7. まとめ
 
-- 一次資料: サトシ → フィニー宛メール。送信は 2009 年 1 月中旬（資料間で 2009-01-10 か 2009-01-12 か食い違いあり。いずれも本分析が扱うリリース期ウィンドウの内側）。初公開は CoinDesk 2020 年 11 月記事
+- 一次資料: 2009 年 1 月 12 日のサトシ → フィニー宛メール（本分析が扱うリリース期ウィンドウの最終日）。初公開は CoinDesk 2020 年 11 月記事
 - 該当句: **"from where I am"** — 本分析は場所依存的かつ時制的な読みを採り、サトシの日常の設定の恒常的な性質としては読まない
 - 1/8-12 の活動密度（4 日間に 3 リリース）と組み合わせると、リリース週のサトシが「一時的な場所で、専念できる時間を持って」運用していた、という読みと整合する
 - 読みは編者による推論である。整合する環境の空間を狭くはするが特定の一つに決定はしない。

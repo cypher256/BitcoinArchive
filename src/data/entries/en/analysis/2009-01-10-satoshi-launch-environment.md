@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "Editorial forensic reading of Satoshi's operational environment during Bitcoin v0.1 launch week (Jan 8-12, 2009): \"from where I am\" in the Jan 10 email to Finney, and dense activity cadence."
+description: "Editorial forensic reading of Satoshi's operational environment during Bitcoin v0.1 launch week (Jan 8-12, 2009): \"from where I am\" in the Jan 12 email to Finney, and dense activity cadence."
 isSatoshi: false
 tags:
   - "analysis"
@@ -30,7 +30,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2009-01-03-genesis-block-hardcode-analysis
-  - aftermath/2009-01-10-satoshi-to-finney-connections
+  - aftermath/2009-01-12-satoshi-to-finney-connections
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
@@ -47,7 +47,7 @@ inlineLinkKeywords:
 
 ![A dark illustration of a laptop terminal displaying blocked-incoming-connection status, with three peer signal lines cut off by warning marks, above a January 2009 launch-week timeline of five dated milestones.](/BitcoinArchive/images/analysis/2009-01-10-satoshi-launch-environment-hero.png)
 
-On January 10, 2009, Satoshi wrote to [Hal Finney](/BitcoinArchive/participants/hal-finney/):
+On January 12, 2009, Satoshi wrote to [Hal Finney](/BitcoinArchive/participants/hal-finney/):
 
 <!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
@@ -55,13 +55,13 @@ On January 10, 2009, Satoshi wrote to [Hal Finney](/BitcoinArchive/participants/
 
 The clause "from where I am" — location-contingent, implicitly not a permanent property of Satoshi's setup — combined with the unusually dense cadence of his Bitcoin work during the January 8–12, 2009 launch week, is the converging evidence this analysis reads. The reading is editorial.
 
-This entry is time-adjacent to the [Genesis Block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/), which covers the structural question of Block 0 and the Jan 3 → Jan 9 gap. The same January 10, 2009 window is read from a different angle — the IP-address divergence recorded in that day's Bitcoin debug log between Finney's and Satoshi's nodes — in [the Hal Finney identity-hypothesis analysis](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/).
+This entry is time-adjacent to the [Genesis Block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/), which covers the structural question of Block 0 and the Jan 3 → Jan 9 gap. The same launch week is read from a different angle — the IP-address divergence between Finney's and Satoshi's nodes recorded in the January 10, 2009 Bitcoin debug log — in [the Hal Finney identity-hypothesis analysis](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/).
 
 ## 1. The two signals
 
 ### 1.1 The email phrase (primary source)
 
-In mid-January 2009, Satoshi sent a private email to Hal Finney. The text was first published by [CoinDesk in November 2020](/BitcoinArchive/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/), obtained from Finney's personal computer via his widow Fran Finney. The archive records it as [Satoshi → Finney, January 10, 2009](/BitcoinArchive/entries/aftermath/2009-01-10-satoshi-to-finney-connections/); the exact send date is disputed across sources, placed at either January 10 or January 12, 2009. Both candidate dates fall inside the Jan 8–12 launch window that this analysis is concerned with, so the ambiguity does not affect the reading below. The operative passage:
+[Satoshi's private email to Hal Finney of January 12, 2009](/BitcoinArchive/entries/aftermath/2009-01-12-satoshi-to-finney-connections/) falls on the last day of the launch window. Its text was first published by [CoinDesk in November 2020](/BitcoinArchive/entries/aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails/), obtained from Finney's personal computer via his widow Fran Finney; CoinDesk gives the date but no header timestamp. The operative passage:
 
 <!-- speaker: Satoshi Nakamoto -->
 <!-- audit:quote-skip -->
@@ -96,16 +96,16 @@ gantt
     %% link: /BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/
 
     section Private
-    "from where I am" email to Finney :milestone, 2009-01-10 12:00, 0m
-    %% link: /BitcoinArchive/entries/aftermath/2009-01-10-satoshi-to-finney-connections/
+    "from where I am" email to Finney :milestone, 2009-01-12 00:00, 0m
+    %% link: /BitcoinArchive/entries/aftermath/2009-01-12-satoshi-to-finney-connections/
 ```
 
 | UTC timestamp | Event | Channel |
 |---|---|---|
 | 2009-01-08 19:27 | [Bitcoin v0.1 released](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/) | cryptography mailing list |
 | 2009-01-09 02:54:25 | Block 1 mined (on-chain `nTime`; node was started minutes earlier) | — |
-| 2009-01-10 | [Satoshi → Finney: "from where I am"](/BitcoinArchive/entries/aftermath/2009-01-10-satoshi-to-finney-connections/) | private email |
 | 2009-01-11 22:32 | [Bitcoin v0.1.2 now available](/BitcoinArchive/entries/emails/bitcoin-list/2009-01-11-bitcoin-v0-1-2-now-available/) | bitcoin-list |
+| 2009-01-12 (time unknown) | [Satoshi → Finney: "from where I am"](/BitcoinArchive/entries/aftermath/2009-01-12-satoshi-to-finney-connections/) | private email |
 | 2009-01-12 20:20 | Bitcoin v0.1 Alpha release notes | bitcoin-list |
 | 2009-01-12 22:48 | Bitcoin v0.1.3 | bitcoin-list |
 
@@ -197,7 +197,7 @@ What this analysis *does* contribute is a concrete forensic reading of a passage
 
 ## 7. Summary
 
-- Primary source: Satoshi → Finney private email, sent mid-January 2009 (date disputed between 2009-01-10 and 2009-01-12 — both fall within the launch window this analysis addresses), first published in CoinDesk's November 2020 article.
+- Primary source: Satoshi → Finney private email of January 12, 2009 — the last day of the launch window this analysis addresses — first published in CoinDesk's November 2020 article.
 - Operative phrase: **"from where I am"** — read here as location-contingent, not as a permanent property of Satoshi's everyday setup.
 - Combined with Jan 8-12 activity intensity (three releases in four days), this is consistent with Satoshi operating from a temporary location with dedicated time during the launch week.
 - The reading is editorial. It narrows the space of compatible environments without determining any specific one.

@@ -1,9 +1,10 @@
 ---
-title: "サトシからハル・フィニーへ：自分のホストでは外部からの接続を受けられない旨を伝える（2009-01-10）"
-date: 2009-01-10T00:00:00Z
+title: "サトシからハル・フィニーへ：自分のホストでは外部からの接続を受けられない旨を伝える（2009-01-12）"
+date: 2009-01-12T00:00:00Z
 type: "article"
 source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
+sourceNote: "CoinDesk が 2020 年 11 月 26 日に公開し、送信日を 2009 年 1 月 12 日としている。同記事が扱う他のサトシ–フィニー間メールと違い、このメールについてはヘッダーの時刻が公開されておらず、日付だけが分かっている。"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -22,7 +23,6 @@ tags:
 secondarySources:
   - name: "Chain Bulletin - Satoshi's timezone analysis"
     url: "https://chainbulletin.com/no-coindesk-satoshis-local-time-zone-wasnt-utc8"
-    note: "CoinDesk、2020年11月26日公開。情報源間に日付の不一致があり、このメールは 2009年1月10日または 1月12日に送信された可能性がある"
   - name: "Bitcoin News - Researcher Publishes Never-Before-Seen Emails"
     url: "https://news.bitcoin.com/researcher-publishes-never-before-seen-emails-between-satoshi-nakamoto-and-hal-finney/"
 relatedEntries:
@@ -34,7 +34,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-![ファイアウォールの内側にあるネットワークノードから複数のピアノードへ向けて外向きの接続だけが伸び、内向きの接続はブロックされている様子を描いたイラスト。メールを象徴する封筒のアイコンも添えられている。](/BitcoinArchive/images/analysis/2009-01-10-satoshi-to-finney-connections-hero.png)
+![ファイアウォールの内側にあるネットワークノードから複数のピアノードへ向けて外向きの接続だけが伸び、内向きの接続はブロックされている様子を描いたイラスト。メールを象徴する封筒のアイコンも添えられている。](/BitcoinArchive/images/analysis/2009-01-12-satoshi-to-finney-connections-hero.png)
 
 <!-- speaker: narrator -->
 ビットコインネットワークの最初期に送られたこのメールで、サトシは技術的な制約を明かした。

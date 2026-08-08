@@ -1,9 +1,10 @@
 ---
-title: "Satoshi tells Hal Finney he cannot receive incoming Bitcoin connections (January 10, 2009)"
-date: 2009-01-10T00:00:00Z
+title: "Satoshi tells Hal Finney he cannot receive incoming Bitcoin connections (January 12, 2009)"
+date: 2009-01-12T00:00:00Z
 type: "article"
 source: "coindesk"
 sourceUrl: "https://www.coindesk.com/markets/2020/11/26/previously-unpublished-emails-of-satoshi-nakamoto-present-a-new-puzzle"
+sourceNote: "CoinDesk published this email on November 26, 2020 and dates it January 12, 2009. Unlike the other Satoshi-Finney messages in that article, no header timestamp for it has been published — only the date."
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
@@ -22,7 +23,6 @@ tags:
 secondarySources:
   - name: "Chain Bulletin - Satoshi's timezone analysis"
     url: "https://chainbulletin.com/no-coindesk-satoshis-local-time-zone-wasnt-utc8"
-    note: "Published by CoinDesk, November 26, 2020. There is a date discrepancy across sources — this email may have been sent on January 10 or January 12, 2009"
   - name: "Bitcoin News - Researcher Publishes Never-Before-Seen Emails"
     url: "https://news.bitcoin.com/researcher-publishes-never-before-seen-emails-between-satoshi-nakamoto-and-hal-finney/"
 relatedEntries:
@@ -33,7 +33,7 @@ relatedEntries:
   - analysis/2008-08-18-anonymousspeech-bitcoin-org-intermediary
 ---
 
-![Illustration of a network node behind a firewall icon sending outgoing-only connections to peer nodes while incoming connections are blocked, alongside an envelope icon representing private correspondence.](/BitcoinArchive/images/analysis/2009-01-10-satoshi-to-finney-connections-hero.png)
+![Illustration of a network node behind a firewall icon sending outgoing-only connections to peer nodes while incoming connections are blocked, alongside an envelope icon representing private correspondence.](/BitcoinArchive/images/analysis/2009-01-12-satoshi-to-finney-connections-hero.png)
 
 In this email, sent in the earliest days of the Bitcoin network, Satoshi disclosed a technical constraint:
 

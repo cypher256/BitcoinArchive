@@ -75,7 +75,7 @@ Subject: "Bitcoin v0.1." Sent Thursday, January 8, 2009, at 20:54:55 PST — jus
 
 This email was sent from `satoshi@vistomail.com`.
 
-## Email 3: [January 10 (or 12), 2009](/BitcoinArchive/entries/aftermath/2009-01-10-satoshi-to-finney-connections/) (Satoshi → Finney)
+## Email 3: [January 12, 2009](/BitcoinArchive/entries/aftermath/2009-01-12-satoshi-to-finney-connections/) (Satoshi → Finney)
 A follow-up after Bitcoin's launch:
 
 <!-- speaker: Satoshi Nakamoto -->

@@ -47,7 +47,7 @@ relatedEntries:
   - aftermath/2008-08-20-satoshi-to-adam-back
   - aftermath/2008-08-21-adam-back-to-satoshi
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
-  - aftermath/2009-01-10-satoshi-to-finney-connections
+  - aftermath/2009-01-12-satoshi-to-finney-connections
   - correspondence/martti-malmi/2009-07-21-bitcoin-024
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
@@ -97,7 +97,7 @@ translationStatus: complete
 
 | サトシの発言 | 一次資料 | 日付 | 状態 |
 |---|---|---|---|
-| 「残念だけど、今いる場所からは外部からの接続が受けられない」 | [→ ハル・フィニー](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/) | 2009-01-10 (または 12、議論あり) | 運用状態の自己開示。[リリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)で扱う |
+| 「残念だけど、今いる場所からは外部からの接続が受けられない」 | [→ ハル・フィニー](/BitcoinArchive/ja/entries/aftermath/2009-01-12-satoshi-to-finney-connections/) | 2009-01-12 | 運用状態の自己開示。[リリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)で扱う |
 | 「私も今は大して役に立てない、仕事で忙しく、 18 か月の開発の後で休みが必要だ」 | [→ マルティ・マルミ 2009-07-21](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/) | 2009-07-21 | 「18 か月の開発」と述べる (この語句が示す範囲がコーディング期間と一致するかは表現上開いている)。疲労の自己開示 (同メール直前の文はハル・フィニーの活動低下を述べており、サトシの「私も」が自身の状態への転換となる) |
 | 「そこは自分の専門外だ」 (Linux/FreeBSD テストについて) | BitcoinTalk フォーラム投稿、2009 年 12 月 | 2009-12 | クロスプラットフォームでの専門性ギャップ |
 | 「ギャビンは技術的に自分よりはるかに Linux に精通している」 | ギャビン・アンドレセン宛のメール、2010 年 12 月 | 2010-12 | 自分の Linux 能力をギャビンと比べた本人の評価 |

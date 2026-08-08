@@ -76,7 +76,7 @@ translationStatus: complete
 
 このメールは`satoshi@vistomail.com`から送信された。
 
-## メール 3：[2009年1月10日（または 12日）](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-finney-connections/)（サトシ → フィニー）
+## メール 3：[2009年1月12日](/BitcoinArchive/ja/entries/aftermath/2009-01-12-satoshi-to-finney-connections/)（サトシ → フィニー）
 ビットコインローンチ後のフォローアップ：
 
 <!-- speaker: Satoshi Nakamoto -->

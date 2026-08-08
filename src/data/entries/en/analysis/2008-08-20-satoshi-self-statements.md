@@ -47,7 +47,7 @@ relatedEntries:
   - aftermath/2008-08-20-satoshi-to-adam-back
   - aftermath/2008-08-21-adam-back-to-satoshi
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper
-  - aftermath/2009-01-10-satoshi-to-finney-connections
+  - aftermath/2009-01-12-satoshi-to-finney-connections
   - correspondence/martti-malmi/2009-07-21-bitcoin-024
   - correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
@@ -97,7 +97,7 @@ All three identity claims appear together on a single artifact and nowhere else 
 
 | What Satoshi said | Primary source | Date | Status |
 |---|---|---|---|
-| "Unfortunately, I can't receive incoming connections from where I am" | [→ Hal Finney](/BitcoinArchive/entries/aftermath/2009-01-10-satoshi-to-finney-connections/) | 2009-01-10 (or 12, disputed) | Operational self-disclosure; analyzed in [launch-environment analysis](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/) |
+| "Unfortunately, I can't receive incoming connections from where I am" | [→ Hal Finney](/BitcoinArchive/entries/aftermath/2009-01-12-satoshi-to-finney-connections/) | 2009-01-12 | Operational self-disclosure; analyzed in [launch-environment analysis](/BitcoinArchive/entries/analysis/2009-01-10-satoshi-launch-environment/) |
 | "I'm not going to be much help right now either, pretty busy with work, and need a break from it after 18 months development" | [→ Martti Malmi, 2009-07-21](/BitcoinArchive/entries/correspondence/martti-malmi/2009-07-21-bitcoin-024/) | 2009-07-21 | Names "18 months development" (scope vs. coding period left open by the phrasing); self-discloses fatigue. (The preceding sentences in the same email describe Hal Finney's reduced involvement; Satoshi's "either" pivots to his own state.) |
 | "That's where I have less expertise" (regarding Linux/FreeBSD testing) | BitcoinTalk forum post, December 2009 | 2009-12 | Cross-platform expertise gap |
 | "[Gavin is] technically much more Linux capable than me" | private email to Gavin Andresen, December 2010 | 2010-12 | Comparative self-evaluation by Satoshi (his own assessment of his Linux skill relative to Gavin's) |

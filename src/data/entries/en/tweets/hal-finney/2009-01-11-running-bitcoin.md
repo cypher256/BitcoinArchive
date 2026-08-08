@@ -1,6 +1,6 @@
 ---
 title: "\"Running bitcoin\" (@halfin, 2009-01-11)"
-date: 2009-01-11T06:33:00Z
+date: 2009-01-11T03:33:52Z
 type: "tweet"
 source: "x"
 sourceUrl: "https://x.com/halfin/status/1110302988"
