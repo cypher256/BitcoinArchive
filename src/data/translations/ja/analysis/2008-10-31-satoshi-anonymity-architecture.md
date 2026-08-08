@@ -132,7 +132,7 @@ flowchart TD
 - `satoshi@vistomail.com` — 2008 年 10 月、初期ドラフト論文と暗号学メーリングリスト投稿で使用。Vistomail は運営元不明の匿名メールサービスで、現在は閉鎖されている。
 - `satoshin@gmx.com` — 2008 年 10 月以降、最終版論文・BitcoinTalk フォーラム・P2P Foundation アカウント登録・メール、および 2014 年 3 月の Newsweek 誤報否定投稿 (「I am not Dorian Nakamoto」) で使用。2014 年の投稿は本人かアカウント侵害かの真偽が議論されている。
 
-3 つのアドレスは公開記録上確立した事実として扱う —— ホワイトペーパー投稿そのものを収める metzdowd 暗号学メーリングリストのアーカイブ、`mmalmi.github.io/satoshi`・`plan99.net` の公開書簡、Bitcoin Magazine が公開したアダム・バック宛メール群によって裏付けられる。
+3 つのアドレスは公開記録上確立した事実として扱う。裏付けとなるのは、ホワイトペーパー投稿そのものを収める metzdowd 暗号学メーリングリストのアーカイブ、`mmalmi.github.io/satoshi`・`plan99.net` の公開書簡、Bitcoin Magazine が公開したアダム・バック宛メール群である。
 
 公開チャネルも分散している:
 
@@ -153,7 +153,7 @@ flowchart TD
 
 公開記録から観察可能な、独立した 2 つの不一致がある。
 
-**英文体の不一致。** サトシの文章は BitcoinTalk 投稿とメールのやりとりのなかでイギリス英語とアメリカ英語の綴りを混在させている。イギリス式 (`colour`、`favour`、`grey`、`optimise`) とアメリカ式 (`characterized`) が共存する。口語表現には英・豪のスラング (`bloody hard` — BitcoinTalk 投稿、`flat`、`maths`) が混じる一方、ソースコードの慣習は一貫してアメリカ式 (`color`、`catalog`)。このパターンは長文形式のサトシ身元分析で繰り返し言及されている。
+**英文体の不一致。** サトシの文章は BitcoinTalk 投稿とメールのやりとりのなかでイギリス英語とアメリカ英語の綴りを混在させている。イギリス式 (`colour`、`favour`、`grey`、`optimise`) とアメリカ式 (`characterized`) が共存する。口語表現には、BitcoinTalk 投稿に見える `bloody hard` のような英・豪のスラングが混じり、ほかに `flat`、`maths` も使われる一方、ソースコードの慣習は一貫してアメリカ式 (`color`、`catalog`)。このパターンは長文形式のサトシ身元分析で繰り返し言及されている。
 
 **タイムスタンプ・タイムゾーンの不一致。** 論文 PDF メタデータの 2 つのドラフトで、タイムゾーンオフセットが異なる:
 

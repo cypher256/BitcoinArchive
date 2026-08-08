@@ -43,7 +43,7 @@ translationStatus: complete
 
 > 「こういうシステムは切実に必要だ。だが、この方式では必要な規模にスケールしないんじゃないか？」
 
-ドナルドの懐疑論はサトシの最も詳細な初期アーキテクチャ説明を公的記録に引き出した —— 簡易決済検証、信頼と二重支払いのモデル、そして[ジェネシスブロックのエントリー](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)がサトシの個人的確信が記録された最も近い瞬間として扱う返信。
+ドナルドの懐疑論は、簡易決済検証や信頼と二重支払いのモデルを含む、サトシの最も詳細な初期アーキテクチャ説明を公的記録に引き出した。[ジェネシスブロックのエントリー](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)は、このサトシの返信を、その個人的確信が記録された最も近い瞬間として扱っている。
 
 ドナルドは長年サイファーパンクコミュニティで活動する暗号学者・リバタリアン評論家。jim.com というウェブサイトを運営し、暗号学・政治哲学・経済学について執筆していた。
 
@@ -52,9 +52,9 @@ translationStatus: complete
 ドナルドは 11 月 2 日の返信で、システムはすべてのノードがすべてのトランザクションを処理する必要があり、広範な利用には非現実的だと主張した。
 
 ## サトシとの技術的やり取り
-2008 年 11 月を通じて、サトシはこのスケーリングの異議に一つずつ答えた。すべてのノードがすべてのトランザクションを処理する必要はない —— 簡易決済検証（SPV）を使えば、軽量なクライアントは全チェーンを保持せずに支払いを確認できる。
+2008 年 11 月を通じて、サトシはこのスケーリングの異議に一つずつ答えた。すべてのノードがすべてのトランザクションを処理する必要はない。簡易決済検証（SPV）を使えば、軽量なクライアントは全チェーンを保持せずに支払いを確認できるからだ。
 
-数日後の 11 月 9 日、ドナルドは[同じスレッドの投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-09-james-donald-bitcoin-p2p-e-cash-paper/)でビットコイン銀行に「bink」という名を与え、金本位制で金が紙幣を支えたように、ビットコインを口座マネーの下の決済層と位置づけた —— 後に主役となる取引所や保管業者を先取りする見方だった。ドナルドが描いた形 — 取引所・ETF・Lightning の保管業者が積み重なった、その下の決済層 — を記録しているのが、[動いている仕組みがホワイトペーパーからどう離れたか](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)である。
+数日後の 11 月 9 日、ドナルドは[同じスレッドの投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-09-james-donald-bitcoin-p2p-e-cash-paper/)でビットコイン銀行に「bink」という名を与え、金本位制で金が紙幣を支えたように、ビットコインを口座マネーの下の決済層と位置づけた。これは、後に主役となる取引所や保管業者を先取りする見方だった。ドナルドが描いた形は、取引所・ETF・Lightning の保管業者が積み重なった、その下の決済層であり、これを記録しているのが[動いている仕組みがホワイトペーパーからどう離れたか](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)である。
 
 信頼と二重支払いについて問い詰められ、サトシはそのモデルを異例の詳しさで説明した。
 
@@ -63,4 +63,4 @@ translationStatus: complete
 
 ## サトシ候補としての位置
 
-ドナルドが公的記録の起点に立つこと、サイファーパンクとしての経歴、そして文体計量の一致から、彼は繰り返しサトシ候補に挙げられてきた —— ベンジャミン・ウォレスが『The Mysterious Mr. Nakamoto』(2025) で追い、対面の末に外した最有力の手がかりである。賛否の論 —— サトシが彼を第三者として回答したこと、ウォレスの人柄に基づく除外を含む —— は[ジェームズ・A・ドナルド＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2008-11-02-james-donald-satoshi-identity-hypothesis/)に並べてある。[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は彼を固有名候補の中に位置づけている。
+ドナルドが公的記録の起点に立つこと、サイファーパンクとしての経歴、そして文体計量の一致から、彼は繰り返しサトシ候補に挙げられてきた。ドナルドは、ベンジャミン・ウォレスが『The Mysterious Mr. Nakamoto』(2025) で追い、対面の末に外した最有力の手がかりである。サトシが彼を第三者として回答したことや、ウォレスの人柄に基づく除外を含む賛否の論は、[ジェームズ・A・ドナルド＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2008-11-02-james-donald-satoshi-identity-hypothesis/)に並べてある。[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は彼を固有名候補の中に位置づけている。

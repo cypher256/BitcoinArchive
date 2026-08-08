@@ -47,11 +47,11 @@ translationStatus: complete
 
 ![コードのブランチが本線に統合される様子を示す図で、バツ印の付いたフォルダーアイコンが光る円形モジュールに置き換わり、その下に 5 段階のタイムラインが並んでいる。](/BitcoinArchive/images/analysis/2011-11-20-bitcoin-v05-removes-cryptopp-dependency-hero.png)
 
-2011 年 11 月 20 日、ビットコイン v0.5.0 がリリースされ、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が 2010 年 7 月 (SVN rev 114) に追加した Crypto++ SHA-256 サブセットがコードベースから撤去された。以降、ビットコインは同じ処理を OpenSSL の SHA-256 ルーチンで実行する。Crypto++ — [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の C++ 暗号ライブラリで、ビットコイン本体が直接コード依存していたライブラリのうち、サトシ正体候補が著作した唯一のもの — は Bitcoin Core から消滅した。
+2011 年 11 月 20 日、ビットコイン v0.5.0 がリリースされ、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が 2010 年 7 月 (SVN rev 114) に追加した Crypto++ SHA-256 サブセットがコードベースから撤去された。以降、ビットコインは同じ処理を OpenSSL の SHA-256 ルーチンで実行する。Crypto++ は[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の C++ 暗号ライブラリであり、ビットコイン本体が直接コード依存していたライブラリのうち、サトシ正体候補が著作した唯一のものである。それが Bitcoin Core から消滅した。
 
 ## コミットとマージ
 
-変更はサトシ時代の貢献者プールの外側から来た。**ニルス・シュナイダー** (BitcoinTalk ハンドル `tcatm`) — [2010 年の v0.3.6 リリースアラート](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-0-3-6/)でサトシがマイニングのミッドステートキャッシュ最適化の功績を認めた同じ貢献者 — が `no-cryptopp` ブランチを開いた。実体的なコミット (`6ccff2cb`) は **2011 年 9 月 27 日** で、`src/main.cpp` の `SHA256Transform()` を Crypto++ の `CryptoPP::SHA256::Transform` から OpenSSL の `SHA256_Init` / `SHA256_Update` 呼び出しに書き換え、`using CryptoPP::ByteReverse` インポートを削除し、`src/cryptopp/` ディレクトリツリー全体 (16 ファイル: `sha.cpp`、`sha.h`、`cryptlib.h`、`config.h`、`cpu.cpp`、`cpu.h`、`iterhash.h`、`misc.h`、`obj/.gitignore`、`pch.h`、`secblock.h`、`simple.h`、`smartptr.h`、`stdcpp.h`、`License.txt`、`Readme.txt`) を削除した。シュナイダーがこの GitHub コミットアクセスを得たのはその 8日前、2011年9月19日のことだった――2011年にアクセスを付与された 6人の開発者の一人としての経緯は、[GitHub 移行期のコミッターアクセス付与記録](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)に詳しい。
+変更はサトシ時代の貢献者プールの外側から来た。**ニルス・シュナイダー** (BitcoinTalk ハンドル `tcatm`) が `no-cryptopp` ブランチを開いた。[2010 年の v0.3.6 リリースアラート](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-0-3-6/)でサトシがマイニングのミッドステートキャッシュ最適化の功績を認めたのと同じ貢献者である。実体的なコミット (`6ccff2cb`) は **2011 年 9 月 27 日** で、`src/main.cpp` の `SHA256Transform()` を Crypto++ の `CryptoPP::SHA256::Transform` から OpenSSL の `SHA256_Init` / `SHA256_Update` 呼び出しに書き換え、`using CryptoPP::ByteReverse` インポートを削除し、`src/cryptopp/` ディレクトリツリー全体 (16 ファイル: `sha.cpp`、`sha.h`、`cryptlib.h`、`config.h`、`cpu.cpp`、`cpu.h`、`iterhash.h`、`misc.h`、`obj/.gitignore`、`pch.h`、`secblock.h`、`simple.h`、`smartptr.h`、`stdcpp.h`、`License.txt`、`Readme.txt`) を削除した。シュナイダーがこの GitHub コミットアクセスを得たのはその 8日前、2011年9月19日のことだった。2011年にアクセスを付与された 6人の開発者の一人としての経緯は、[GitHub 移行期のコミッターアクセス付与記録](/BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/)に詳しい。
 
 サトシの [2011 年 4 月の引き継ぎ](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)後にプロジェクトのリードメンテナーとなっていた[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が、**2011 年 10 月 5 日**にブランチをマージした (コミット `b898c8fc`、`Merge branch 'no-cryptopp' of https://github.com/tcatm/bitcoin`)。マージにより Bitcoin Core のメインラインは以降 SHA-256 については OpenSSL のみとなった。ビットコイン v0.5.0 は 2011 年 11 月 20 日にタグ付けされ、6 週間後にユーザーへ届けられた。
 
@@ -59,7 +59,7 @@ translationStatus: complete
 
 ビットコインは現存する最も古いリリース以来、Crypto++ SHA-256 サブセットをバンドルしてきた。サトシは [v0.3.6 (2010 年 7 月) で Crypto++ 5.5.2 から Crypto++ 5.6.0 SSE2 最適化アセンブリへの移行を自ら段取りし](/BitcoinArchive/ja/participants/wei-dai/)、自身のコミットメッセージで依存を明示的に追跡していた:「Crypto++ 5.6.0 ライブラリのサブセットを SVN に追加した。SHA と 11 個の汎用依存ファイルだけに削ぎ落とした」。コードアーカイブの観点で平たく言えば、Crypto++ はビットコインがこれまで直接依存した、サトシ正体候補のうち唯一の著作物である。
 
-2011 年までに、Bitcoin Core プロジェクトの重心は Crypto++ コードパスから移動していた。Crypto++ アセンブリサブセットのバンドルを正当化していた 2010 年のマイニング高速化論拠 (CPU SHA-256 スループットによるソロマイニング) は、GPU および FPGA マイニングによって決定的に陳腐化しつつあった。2011 年後半には、ネットワーク相手にリファレンスクライアントの CPU SHA-256 パスを走らせる本格的なマイナーは存在しなかった。Crypto++ サブセットのパフォーマンス重要マイニングコードとしての役割は蒸発し、残ったのはインツリーのサードパーティコピーで、保守コストとライセンスファイルのオーバーヘッドが少なくない。それを撤去して既存のシステム依存 (OpenSSL は ECDSA で既にリンクしていた) に置き換えるのは、コード整理の判断であって、暗号学的方針の変更ではない。置換でプロトコル動作は変わらない — OpenSSL の `SHA256_Update` は同じ入力に対して Crypto++ の `SHA256::Transform` と同じダイジェストを生成する。
+2011 年までに、Bitcoin Core プロジェクトの重心は Crypto++ コードパスから移動していた。Crypto++ アセンブリサブセットのバンドルを正当化していた 2010 年のマイニング高速化論拠 (CPU SHA-256 スループットによるソロマイニング) は、GPU および FPGA マイニングによって決定的に陳腐化しつつあった。2011 年後半には、ネットワーク相手にリファレンスクライアントの CPU SHA-256 パスを走らせる本格的なマイナーは存在しなかった。Crypto++ サブセットのパフォーマンス重要マイニングコードとしての役割は蒸発し、残ったのはインツリーのサードパーティコピーで、保守コストとライセンスファイルのオーバーヘッドが少なくない。それを撤去して既存のシステム依存 (OpenSSL は ECDSA で既にリンクしていた) に置き換えるのは、コード整理の判断であって、暗号学的方針の変更ではない。置換でプロトコル動作は変わらない。OpenSSL の `SHA256_Update` は同じ入力に対して Crypto++ の `SHA256::Transform` と同じダイジェストを生成する。
 
 ## その後の経緯
 
@@ -79,8 +79,8 @@ OpenSSL の ECDSA 依存はより長く残り、最終的に [Bitcoin Core v0.12
 
 ## サトシ正体問題への関連
 
-[ウェイ・ダイ＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)はビットコイン v0.1 の Crypto++ 依存を構造的論点として扱う: 名指し候補のうち、ビットコインがソースツリーに実際に含めたライブラリを著作したのはウェイ・ダイのみである。本論点は時間的に限定されている。ビットコイン v0.5 (2011 年 11 月) では Bitcoin Core はもはや Crypto++ サブセットを保持していない。ウェイ・ダイのライブラリへのソースツリーレベルの構造的コードベース依存は、v0.1 (2009 年 1 月) から v0.4.x までで終わった。変更は暗号学的アイデンティティの根拠で行われたのではない — コミュニティ貢献者 (シュナイダー) によるインツリー保守負担削減を動機とする通常のコード整理であり、サトシ後のメンテナー (アンドレセン) によって承認された — が、その結果として、「ビットコインがソースツリーレベルでウェイ・ダイのライブラリに依存している」という主張が生きていた 22 か月の期間が確定する。その期間の外では、本主張は稼働中のプロトコルではなく過去のリリースについてのものとなる。
+[ウェイ・ダイ＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)はビットコイン v0.1 の Crypto++ 依存を構造的論点として扱う: 名指し候補のうち、ビットコインがソースツリーに実際に含めたライブラリを著作したのはウェイ・ダイのみである。本論点は時間的に限定されている。ビットコイン v0.5 (2011 年 11 月) では Bitcoin Core はもはや Crypto++ サブセットを保持していない。ウェイ・ダイのライブラリへのソースツリーレベルの構造的コードベース依存は、v0.1 (2009 年 1 月) から v0.4.x までで終わった。変更は暗号学的アイデンティティの根拠で行われたのではない。コミュニティ貢献者 (シュナイダー) によるインツリー保守負担削減を動機とする通常のコード整理であり、サトシ後のメンテナー (アンドレセン) によって承認された。その結果として、「ビットコインがソースツリーレベルでウェイ・ダイのライブラリに依存している」という主張が生きていた 22 か月の期間が確定する。その期間の外では、本主張は稼働中のプロトコルではなく過去のリリースについてのものとなる。
 
 [ウェイ・ダイ＝サトシ仮説エントリ §1.2](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) はコードベース依存を、ウェイ・ダイが直接的なコード貢献の観点で他候補と構造的に区別不能であるとする帰無仮説に対する反証として枠組みづける。本エントリはその反証の上限を記録する: v0.5.0 で終了する。
 
-本 Crypto++ 除去ステップは [2016 年の libsecp256k1 エントリ](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/)によって、より長い依存置換の弧の早期端点として扱われる。同エントリは二つの事件を補完的な対として読む ― 2011 年の Crypto++ から OpenSSL へ、 2016 年の OpenSSL から libsecp256k1 へ ― 本 v0.5 ステップをその連鎖の最初の行、 v0.12 のリリース日を終端の行として位置付ける。
+本 Crypto++ 除去ステップは [2016 年の libsecp256k1 エントリ](/BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/)によって、より長い依存置換の弧の早期端点として扱われる。同エントリは、2011 年の Crypto++ から OpenSSL への移行と 2016 年の OpenSSL から libsecp256k1 への移行という二つの事件を補完的な対として読み、本 v0.5 ステップをその連鎖の最初の行、v0.12 のリリース日を終端の行として位置付ける。

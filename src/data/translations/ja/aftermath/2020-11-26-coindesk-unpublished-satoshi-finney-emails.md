@@ -69,7 +69,7 @@ translationStatus: complete
 これはビットコイン公開ローンチの 2 か月前、リリース前のコードレビュー期間中のことだった。
 
 ## メール 2：[2009年1月8日](/BitcoinArchive/ja/entries/aftermath/2009-01-08-satoshi-to-finney-release/)（サトシ → フィニー）
-件名：「Bitcoin v0.1」。2009年1月8日木曜日20:54:55 PST — [暗号学メーリングリストでの公開発表](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)のわずか数時間後に送信：
+件名：「Bitcoin v0.1」。2009年1月8日木曜日20:54:55 PST、[暗号学メーリングリストでの公開発表](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released/)のわずか数時間後に送信：
 
 <!-- quote: q2 -->
 > 「お知らせしておこうと思った。EXE と完全なソースコード付きの Bitcoin v0.1 リリースが Sourceforge に公開された: http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar www.bitcoin.org にリリースノートとスクリーンショットがある。Satoshi」
@@ -86,8 +86,8 @@ translationStatus: complete
 「今いる場所」という表現は、リリース週におけるサトシの公開活動の濃密さと併せて、[サトシのリリース期環境分析](/BitcoinArchive/ja/entries/analysis/2009-01-10-satoshi-launch-environment/)で検討されている。
 
 ## タイムゾーンの謎
-サトシの 2009年1月のメールヘッダーは GMT の **8時間先（UTC+8）** のタイムゾーンを示していた — 日本の UTC+9 のオフセットとは不一致。これはサトシの所在地に関する推測を呼んだ。しかし Chain Bulletin のドンチョ・カライヴァノフは、UTC+8 のタイムスタンプはサトシのローカルマシンではなく AnonymousSpeech.com のメールサーバー（「1996 年から東京拠点」は同サービス自身のサイトの自己紹介で、ヘッダーの中継サーバー IP はマレーシアの事業者への割当）からのものだと主張した。ウェブメール使用時、Date ヘッダーのタイムゾーンはユーザーの所在地ではなくサーバーの場所を反映する。
+サトシの 2009年1月のメールヘッダーは GMT の **8時間先（UTC+8）** のタイムゾーンを示していたが、日本の UTC+9 のオフセットとは不一致だった。これはサトシの所在地に関する推測を呼んだ。しかし Chain Bulletin のドンチョ・カライヴァノフは、UTC+8 のタイムスタンプはサトシのローカルマシンではなく AnonymousSpeech.com のメールサーバー（「1996 年から東京拠点」は同サービス自身のサイトの自己紹介で、ヘッダーの中継サーバー IP はマレーシアの事業者への割当）からのものだと主張した。ウェブメール使用時、Date ヘッダーのタイムゾーンはユーザーの所在地ではなくサーバーの場所を反映する。
 
-カライヴァノフはこれとは別に、[サトシがロンドンを拠点としていたとする分析](/BitcoinArchive/ja/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/)も発表しており、BitcoinTalk 投稿・SourceForge コミット・メーリングリストメールなど 742件の活動記録を GMT に換算した結果、一貫したパターンが見られたという――今回の UTC+8 ヘッダーはメールサーバー側の設定に起因するものであり、この GMT 説と矛盾するものではない。
+カライヴァノフはこれとは別に、[サトシがロンドンを拠点としていたとする分析](/BitcoinArchive/ja/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/)も発表しており、BitcoinTalk 投稿・SourceForge コミット・メーリングリストメールなど 742件の活動記録を GMT に換算した結果、一貫したパターンが見られたという。今回の UTC+8 ヘッダーはメールサーバー側の設定に起因するものであり、この GMT 説と矛盾するものではない。
 
 フィニー自身は、 2013 年のエッセイ[「Bitcoin and Me」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/)でこのサトシとのメールのやり取りを回想し、 v0.1 リリース後の数日間にバグを報告したことを述べている。
