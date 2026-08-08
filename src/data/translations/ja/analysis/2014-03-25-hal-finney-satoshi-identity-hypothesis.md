@@ -66,7 +66,7 @@ translationStatus: complete
 
 ハル・フィニーは、日系米国人エンジニアのドリアン・サトシ・ナカモトから数ブロック離れた場所に住んでいた。Caltech で訓練を受けた暗号学者、[RPOW（Reusable Proof-of-Work、2004 年）](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/)の考案者、サトシ以外で最初にビットコインを稼働させたとされる人物、人類初の個人間ビットコイン取引（10 BTC、2009 年 1 月 12 日）の受領者である。地理的・経歴的な一致が[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)＝サトシ説の中核であり、これを最も顕著に提唱したのが [2014 年 3 月 25 日のアンディ・グリーンバーグによる Forbes 特集「Nakamoto's Neighbor」](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/)である。
 
-説は[ジョン・カレイロウのニューヨーク・タイムズ・アダム・バック調査のためにフロリアン・カフィエロが 2026 年に実施した文体計量分析](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)でも再浮上し、フィニーは最近接マッチでアダム・バックとほぼ同点と報告された。さらに 2026 年 4 月公開の[サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、ハル・フィニーをレン・サッサマンと並ぶ共作者として提示している (主張と反証はリンク先を参照)。
+説は[ジョン・カレイロウのニューヨーク・タイムズ・アダム・バック調査のためにフロリアン・カフィエロが 2026 年に実施した文体計量分析](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)でも再浮上し、フィニーは最近接マッチでアダム・バックとほぼ同点と報告された。さらに 2026 年 4 月公開の[サトシ複数人説 — 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、ハル・フィニーをレン・サッサマンと並ぶ共作者として提示している (主張と反証はリンク先を参照)。
 
 ## 1. 証拠
 

@@ -102,7 +102,7 @@ translationStatus: complete
 ## 批判的な評価
 
 <!-- speaker: narrator -->
-ドキュメンタリーはビットコインコミュニティから広く批判された。Bitcoin Magazine は「ビットコインへの侮辱——皮肉で、愚かで、危険」と題した記事を掲載した。批評家たちは、暗号学的証明も、文体分析も、美術系の学生がどうやって新しいコンセンサスメカニズムを設計できたかの説明もなく、状況証拠と偶然の一致に完全に依存していると指摘した。
+ドキュメンタリーはビットコインコミュニティから広く批判された。Bitcoin Magazine は「皮肉で、愚かで、危険なビットコインへの侮辱」と題した記事を掲載した。批評家たちは、暗号学的証明も、文体分析も、美術系の学生がどうやって新しいコンセンサスメカニズムを設計できたかの説明もなく、状況証拠と偶然の一致に完全に依存していると指摘した。
 
 <!-- speaker: narrator -->
 トッドは後にこの作品の手法を「偶然の一致に基づく陰謀論的思考」と切り捨てた。
@@ -110,7 +110,7 @@ translationStatus: complete
 このドキュメンタリーは、ホーバックにとって匿名のインターネット上の人物を追跡する 2 作目の調査だった。1 作目の「Q: Into the Storm」（2021 年、QAnon 運動を追ったシリーズ）は概ね好評だったが、「Money Electric」はビットコインコミュニティと主流メディアの双方から否定的に受け止められた。
 
 <!-- speaker: narrator -->
-本作は、 2024 年以降に相次いだ主要メディアによるサトシ特定の波の先頭に位置する。続く流れは次の 3 件である。 [2026 年ニューヨーク・タイムズのカレイロウ調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)はアダム・バックを文体計量で名指しした。 [サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)はハル・フィニーとレン・サッサマンを共作者として提示した。 [サトシ政府機関説 ― Murphy 対 DHS FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)は DHS 捜査官の 2019 年「ビットコイン創設者 4 名と面談」発言の記録開示を求めるもの。どれも根拠の経路は別々であり、暗号学的確認は得られていない。
+本作は、 2024 年以降に相次いだ主要メディアによるサトシ特定の波の先頭に位置する。続く流れは次の 3 件である。 [2026 年ニューヨーク・タイムズのカレイロウ調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)はアダム・バックを文体計量で名指しした。 [サトシ複数人説 — 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)はハル・フィニーとレン・サッサマンを共作者として提示した。 [サトシ政府機関説 — Murphy 対 DHS FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)は DHS 捜査官の 2019 年「ビットコイン創設者 4 名と面談」発言の記録開示を求めるもの。どれも根拠の経路は別々であり、暗号学的確認は得られていない。
 
 <!-- speaker: narrator -->
 トッド＝サトシ正体仮説そのものの分析的な扱い（ドキュメンタリーが提示した根拠を、トッドの年齢・OCAD 在学期間・2012 年以前のサイファーパンク参加記録・文体変遷・開発活動タイムラインに照らして検証する作業）については、[ピーター・トッド＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)を参照。

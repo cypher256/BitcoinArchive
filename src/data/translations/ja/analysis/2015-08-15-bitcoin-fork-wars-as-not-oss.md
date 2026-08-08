@@ -30,7 +30,7 @@ participants:
     slug: "daniel-larimer"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ビットコインの 2015-2017 年フォーク戦争がアイデンティティの争奪戦になった理由 — 権威の真空、経済の重み、コードと通貨を縛る三層構造。"
+description: "ビットコインの 2015-2017 年フォーク戦争がアイデンティティの争奪戦になった理由は、権威の真空、経済の重み、コードと通貨を縛る三層構造にある。"
 isSatoshi: false
 tags:
   - "block-size-war"

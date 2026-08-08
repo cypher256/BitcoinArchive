@@ -94,7 +94,7 @@ Hashcash 自体は通貨ではない。台帳もなく、送金もなく、合�
 
 論文中の参考文献 [19] はウェイ・ダイの [b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998 年）。この記述は、Hashcash プルーフ・オブ・ワーク基本要素を分散型デジタルキャッシュシステムの鋳造機構として用いるという、ビットコインが後に実現する組合せを、査読された出版物において明示している。バックは応用候補として提案したが、実装はしていない。
 
-中間期の一次資料であるバックの [1998 年 12 月 6 日サイファーパンクリストでの b-money 批評](/BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/)は、独立したエントリーで記録されている。当該批評は b-money の貨幣設計上の 7 つの論点を指摘し、鋳造手法の候補として「価値を創造するには CPU 時間を燃やす — Hashcash と同じように」を明示的に提案する。
+中間期の一次資料であるバックの [1998 年 12 月 6 日サイファーパンクリストでの b-money 批評](/BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/)は、独立したエントリーで記録されている。当該批評は b-money の貨幣設計上の 7 つの論点を指摘し、鋳造手法の候補として「Hashcash と同じように CPU 時間を燃やして価値を創造する」を明示的に提案する。
 
 ## 11 年間の流れ：Hashcash と貨幣、1997〜2008 年
 
@@ -114,4 +114,4 @@ NYT 調査への応答としてバック自身が 2026 年 4 月に X に投稿�
 
 バックのビットコイン以前の記録については[アダム・バック伝記](/BitcoinArchive/ja/participants/adam-back/)を、この告知を法医学的に読み解いた内容については[アダム・バック同定仮説](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)を参照。§1.2 は Hashcash 著者という指紋を v0.1 コードベースと突き合わせた法医学的証拠を検討し、§1.4 は Hashcash の貨幣カテゴリ位置付けが本 1997 年投稿からビットコインの 2009 年 1 月リリースまで描く 11 年間の弧を辿る。
 
-ビットコインの後の構成要素合成 — 最長チェーン合意形成規則、UTXO モデル、マイニング報酬による発行、2,100 万通貨上限、難易度調整アルゴリズム — は[ビットコイン設計系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)で扱われている。
+ビットコインの後の構成要素合成、すなわち最長チェーン合意形成規則、UTXO モデル、マイニング報酬による発行、2,100 万通貨上限、難易度調整アルゴリズムは、[ビットコイン設計系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)で扱われている。

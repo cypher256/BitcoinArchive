@@ -23,7 +23,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "「Blockstream がビットコインを支配する」という告発を記録に照らして検証する — 主張の出どころと、その連鎖の各環がどこまで持ちこたえるか。"
+description: "「Blockstream がビットコインを支配する」という告発の出どころと、その連鎖の各環がどこまで持ちこたえるかを、記録に照らして検証する。"
 isSatoshi: false
 tags:
   - "block-size-war"

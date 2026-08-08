@@ -59,7 +59,7 @@ translationStatus: complete
 
 2011 年 4 月 26 日、[サトシは最後の既知のメール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)を送った。68 日後の 2011 年 7 月 3 日、サイファーパンクの暗号学者レン・サッサマンがベルギーで自死した。この 2 つの日付の近接性が「サッサマン＝サトシ」仮説の中核観察であり、Mixmaster 匿名リメイラーの仕事、サイファーパンクとしての経歴、2011 年 8 月のダン・カミンスキーによる[ブロックチェーン追悼](/BitcoinArchive/ja/entries/aftermath/2011-07-30-len-sassaman-blockchain-tribute/)がこれを補強する。
 
-2026 年 4 月公開の[サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、この単独仮説を共作仮説に拡張し、サッサマンをハル・フィニーと並ぶ共作者として提示している (主張と反証はリンク先を参照)。
+2026 年 4 月公開の[サトシ複数人説 — 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、この単独仮説を共作仮説に拡張し、サッサマンをハル・フィニーと並ぶ共作者として提示している (主張と反証はリンク先を参照)。
 
 ## 1. 証拠
 
@@ -163,6 +163,6 @@ Mixmaster 等の匿名性システムにおけるサッサマンの記録され�
 - 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
 - 新たな証拠（直接的な文書上の繋がり、v0.1 コードに残るサッサマンの他の公開コードと一致する技術的指紋、パターソンや他の証人による発言、等）が出現すれば、本エントリーは更新されるべきである。
 
-他の名指し候補は並んで置かれている — [アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[ニック・サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[金子勇](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/)。[2026 年の van Dorst コーパス再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は、同じ名指し候補群に定量的な文体計量を適用している。
+他の名指し候補として、[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[ニック・サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[金子勇](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/)が並ぶ。[2026 年の van Dorst コーパス再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は、同じ名指し候補群に定量的な文体計量を適用している。
 
 *[編者注：本エントリーは分析セクションの中で最も推論寄りのエントリーである。]*

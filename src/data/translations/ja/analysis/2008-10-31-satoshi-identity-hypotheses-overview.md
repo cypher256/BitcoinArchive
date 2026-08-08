@@ -106,7 +106,7 @@ relatedEntries:
 
 4 つの構造的レイヤは互いに置換可能ではない。それぞれが候補空間を異なる方向で絞り込む。各名指し候補には個別の仮説エントリーがあり、深い扱いはそちらに譲る（各表の「個別」列を参照）。
 
-**2024-2026 年のサトシ特定の波。** 2024 年後半以降、主要メディア / ドキュメンタリーによる特定が 4 件相次いだ。それぞれ依拠する根拠が違う：[HBO『Money Electric』によるピーター・トッド特定](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (2024 年 10 月、フォーラム投稿のタイミング論)、 [NYT カレイロウのアダム・バック調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (2026 年 4 月、文体計量による単独候補名指し)、 [サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) (2026 年 4 月、活動時刻と遺族証言にもとづく。共作者の同定・論拠・反証は §8.1)、そして他とは経路の違う[サトシ政府機関説 ― Murphy 対 DHS FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) (2025 年 4 月、政府文書開示請求。論拠・反証は §8.2)。いずれも暗号学的確認は得られていない。以下の比較表は、この波で出た証拠が候補の状況を動かす範囲で取り込んでいる。
+**2024-2026 年のサトシ特定の波。** 2024 年後半以降、主要メディア / ドキュメンタリーによる特定が 4 件相次いだ。それぞれ依拠する根拠が違う：[HBO『Money Electric』によるピーター・トッド特定](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (2024 年 10 月、フォーラム投稿のタイミング論)、 [NYT カレイロウのアダム・バック調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (2026 年 4 月、文体計量による単独候補名指し)、 [サトシ複数人説 — 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) (2026 年 4 月、活動時刻と遺族証言にもとづく。共作者の同定・論拠・反証は §8.1)、そして他とは経路の違う[サトシ政府機関説 — Murphy 対 DHS FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) (2025 年 4 月、政府文書開示請求。論拠・反証は §8.2)。いずれも暗号学的確認は得られていない。以下の比較表は、この波で出た証拠が候補の状況を動かす範囲で取り込んでいる。
 
 ## 1. 候補一覧
 
@@ -292,18 +292,18 @@ gantt
 
 | 候補 | Phase 1 との整合 | 主に使用した OS | 主要言語 | 公開実績のあるコードベース |
 |---|---|---|---|---|
-| [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | 🟡 中間 ― 言語は重なるが OS は特定されていない | アーカイブ記録なし（Microsoft 勤務歴あり） | Perl（短行記法で著名）、C / C++ | Hashcash 仕様と小規模な参考実装 |
-| [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | 🟢 高い整合 ― Windows-MSVC が重なり、数千行規模の暗号ライブラリ公開実績がある | Windows（Microsoft 勤務歴、MSVC 主体） | C++ | **Crypto++** ― 多プラットフォーム対応の C++ クラスライブラリ、当初は Windows-MSVC 起点 |
-| [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | 🔴 不整合 ― Mac 主体。公開コードはスネークケース＋タブで、サトシの空白インデント＋ハンガリアン記法のキャメルケースと異なる | Mac（長期、記録あり） | C / C++ | PGP 2.0、RPOW |
+| [アダム・バック](/BitcoinArchive/ja/participants/adam-back/) | 🟡 中間 — 言語は重なるが OS は特定されていない | アーカイブ記録なし（Microsoft 勤務歴あり） | Perl（短行記法で著名）、C / C++ | Hashcash 仕様と小規模な参考実装 |
+| [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) | 🟢 高い整合 — Windows-MSVC が重なり、数千行規模の暗号ライブラリ公開実績がある | Windows（Microsoft 勤務歴、MSVC 主体） | C++ | **Crypto++** — 多プラットフォーム対応の C++ クラスライブラリ、当初は Windows-MSVC 起点 |
+| [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | 🔴 不整合 — Mac 主体。公開コードはスネークケース＋タブで、サトシの空白インデント＋ハンガリアン記法のキャメルケースと異なる | Mac（長期、記録あり） | C / C++ | PGP 2.0、RPOW |
 | [ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/) | 🔴 v0.1 規模の公開コードベースの記録なし | アーカイブ記録なし | アーカイブ記録なし | jim.com での暗号・経済の執筆。公開コードベースの記録なし |
-| [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | 🔴 不整合 ― 全て Linux、Windows の痕跡なし | Linux（2008〜2011 の GitHub リポジトリは一貫して Linux：FHS パス、Unix シェバン、PyGTK） | C / Python | Linux ネイティブのハードウェア／ファームウェア開発ツール |
-| [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | 🔴 不整合 ― v0.1 規模の C++ 公開実績なし | アーカイブ記録なし | C++ 公開実績なし | Bit Gold 提案（紙のみ）。[2008 年 4 月に実装協力者を明示的に募集](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) |
-| [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | 🔴 不整合 ― Unix 主体、Windows 第一の開発記録なし | Unix / Linux 主体（Mixmaster 保守者、KU Leuven の研究環境） | C | Mixmaster（C、*BSD / Linux 主体で Windows 移植版あり） |
-| [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | 🔴 不整合 ― C++ 公開実績なし | アーカイブ記録なし（機密の防衛系統工学に従事） | 物理学・電子工学の背景 | 公開コードベースなし |
-| [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | ― 該当せず（COPA 対ライト 2024 判決） | ― | ― | ― |
-| [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | 🟡 表層は整合 ― Windows + C++ + 暗号ソフト公開を満たすが、ソフト公開の記録は 1999 年で途切れる | Windows NT / 9x | C++ | **E4M**（Windows 専用ディスク暗号、1998 年 12 月初公開。後に TrueCrypt に組み込み） |
+| [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | 🔴 不整合 — 全て Linux、Windows の痕跡なし | Linux（2008〜2011 の GitHub リポジトリは一貫して Linux：FHS パス、Unix シェバン、PyGTK） | C / Python | Linux ネイティブのハードウェア／ファームウェア開発ツール |
+| [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | 🔴 不整合 — v0.1 規模の C++ 公開実績なし | アーカイブ記録なし | C++ 公開実績なし | Bit Gold 提案（紙のみ）。[2008 年 4 月に実装協力者を明示的に募集](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) |
+| [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | 🔴 不整合 — Unix 主体、Windows 第一の開発記録なし | Unix / Linux 主体（Mixmaster 保守者、KU Leuven の研究環境） | C | Mixmaster（C、*BSD / Linux 主体で Windows 移植版あり） |
+| [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | 🔴 不整合 — C++ 公開実績なし | アーカイブ記録なし（機密の防衛系統工学に従事） | 物理学・電子工学の背景 | 公開コードベースなし |
+| [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | — 該当せず（COPA 対ライト 2024 判決） | — | — | — |
+| [ポール・ルルー](/BitcoinArchive/ja/participants/paul-le-roux/) | 🟡 表層は整合 — Windows + C++ + 暗号ソフト公開を満たすが、ソフト公開の記録は 1999 年で途切れる | Windows NT / 9x | C++ | **E4M**（Windows 専用ディスク暗号、1998 年 12 月初公開。後に TrueCrypt に組み込み） |
 | [イーロン・マスク](/BitcoinArchive/ja/participants/elon-musk/) | 🔴 サイファーパンク・暗号ソフトの公開実績なし | アーカイブ記録なし | 商用ソフトウェア | ビットコイン関連のコードベースなし |
-| [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | 🟡 部分整合 ― OS / 言語は一致するが、Winny ソースは日本語識別子とコメントを含む。ビットコイン v0.1 ソースは英語のみ | Windows | C++ | Winny（Windows 向け P2P、C++） |
+| [金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/) | 🟡 部分整合 — OS / 言語は一致するが、Winny ソースは日本語識別子とコメントを含む。ビットコイン v0.1 ソースは英語のみ | Windows | C++ | Winny（Windows 向け P2P、C++） |
 
 ### 5.3 読み方と色の意味
 

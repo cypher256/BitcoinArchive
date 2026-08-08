@@ -8,7 +8,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ設計意図と現状の乖離 ― マイニング (CPU = 1 票 → ASIC 寡占)、カストディ (鍵保持 → 取引所 IOU)、ガバナンス、スケーリングの 4 軸で対比。"
+description: "サトシ設計意図と現状の乖離を、マイニング (CPU = 1 票 → ASIC 寡占)、カストディ (鍵保持 → 取引所 IOU)、ガバナンス、スケーリングの 4 軸で対比。"
 isSatoshi: false
 tags:
   - "design-intent"

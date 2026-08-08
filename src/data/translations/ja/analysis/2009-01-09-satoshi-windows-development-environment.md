@@ -63,9 +63,9 @@ Linux は 2009 年 8 月、マルッティ・マルミの Linux 移植への**�
 
 | 期間 | 範囲 | 期間長 | Linux 関与 |
 |---|---|---|---|
-| **Phase 1** ― 設計 + リリース + 初期 | 2007 半ば → 2009-08-23 | 約 27 か月 | **公開記録上一切なし** |
-| **Phase 2** ― マルミ移植への対応 | 2009-08-24 → 2010-12-02 | 約 16 か月 | Linux 言及が現れる、すべてマルミの移植とユーザー報告への対応文脈 |
-| **Phase 3** ― 自己評価 + 最終メール | 2010-12-03 → 2011-04-26 | 約 5 か月 | 「私より Linux に長けている」、最終 PGP 署名末尾も Windows 専用 |
+| **Phase 1** — 設計 + リリース + 初期 | 2007 半ば → 2009-08-23 | 約 27 か月 | **公開記録上一切なし** |
+| **Phase 2** — マルミ移植への対応 | 2009-08-24 → 2010-12-02 | 約 16 か月 | Linux 言及が現れる、すべてマルミの移植とユーザー報告への対応文脈 |
+| **Phase 3** — 自己評価 + 最終メール | 2010-12-03 → 2011-04-26 | 約 5 か月 | 「私より Linux に長けている」、最終 PGP 署名末尾も Windows 専用 |
 
 ```mermaid
 timeline
@@ -263,6 +263,6 @@ Version: GnuPG v1.4.7 (MingW32) - WinPT 1.2.0
 - Windows 専一のパターンは、ハル・フィニーやウェイ・ダイの作業環境についてアーカイブが記録している内容と整合する。サトシが引用したサイファーパンク系譜と矛盾するものではないが、コミュニティ全体についての主張に膨らませてはならない。
 - この読みはサトシのビットコイン以前に形成された作業環境と習慣を性格づける。それらの習慣が自然に示唆する範囲を超えて身元を絞り込むものではない。
 
-[ウェイ・ダイ同定仮説](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)、 [ハル・フィニー同定仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)、 [ピーター・トッド同定仮説](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)は、それぞれの候補が記録された作業環境を、本エントリの Windows 専一パターンと突き合わせて読み解く。 [サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、その照合を候補選定全体にかかる制約として位置づける。一方、 [アーキテクチャ進化設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-architecture-evolution/)は、 Windows 中心の初期コードベースをアーキテクチャ漂流の起点として読む — Phase 1 から引き継がれた技術的決定を、後続の開発者たちが引き受けざるをえなかった文脈に置くものである。
+[ウェイ・ダイ同定仮説](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)、 [ハル・フィニー同定仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)、 [ピーター・トッド同定仮説](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)は、それぞれの候補が記録された作業環境を、本エントリの Windows 専一パターンと突き合わせて読み解く。 [サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、その照合を候補選定全体にかかる制約として位置づける。一方、 [アーキテクチャ進化設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-architecture-evolution/)は、 Windows 中心の初期コードベースをアーキテクチャ漂流の起点として読む。 Phase 1 から引き継がれた技術的決定を、後続の開発者たちが引き受けざるをえなかった文脈に置くものである。
 
 *[補足：本分析が扱う主人公の作業環境の 3 段階時系列は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』でも参照される。 Linux 痕跡なしの 27 か月の Phase 1 は、 2007〜2009 年期を「見えない Windows の中で書く」と読む小説の枠組みに対応する。]*

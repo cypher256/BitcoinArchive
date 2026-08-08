@@ -9,7 +9,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Charles Hoskinson"
     slug: "charles-hoskinson"
-description: "供給上限 450 億枚、Ouroboros によるプルーフ・オブ・ステーク、3 団体による統治——カルダノ自身の設計文書と、起動を刻んだ数字で読む通貨設計。"
+description: "供給上限 450 億枚、Ouroboros によるプルーフ・オブ・ステーク、3 団体による統治を、カルダノ自身の設計文書と、起動を刻んだ数字で読む通貨設計。"
 isSatoshi: false
 tags:
   - "currency"

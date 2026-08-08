@@ -151,7 +151,7 @@ translationStatus: complete
 
 *[編者注：カレイロウの調査は、主流メディアにおいて公開された文体計量ベースのサトシ特定のうち、最も目立つもの。2014 年の Newsweek による[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の特定は名前一致と物理的状況証拠に依拠していた。2024 年の [HBO ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)による[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)の特定は、単一のフォーラム投稿のタイミング論に依拠していた。定義された母集団に対する文体計量比較と独立した言語学的レビューというカレイロウの方法論は構造的にはより厳密だが、本人が委託したレビュアー自身が「不確定」と評している点は本記事の固有の特徴である。]*
 
-カレイロウの調査は、 2024-2026 年の主要メディア／ドキュメンタリーによるサトシ特定 4 件の一角を占める。 [2024 年の HBO ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)はピーター・トッドをフォーラム投稿のタイミング論で名指しした。 [サトシ複数人説 ― 『Finding Satoshi』ドキュメンタリー (2026 年 4 月)](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)はハル・フィニーとレン・サッサマンを共作者として提示した。 [サトシ政府機関説 ― Murphy 対 DHS FOIA 訴訟 (2025 年 4 月)](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)は同じ問いを政府文書開示の経路で追っている。 4 件のうち暗号学的確認に到達したものは無い。
+カレイロウの調査は、 2024-2026 年の主要メディア／ドキュメンタリーによるサトシ特定 4 件の一角を占める。 [2024 年の HBO ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)はピーター・トッドをフォーラム投稿のタイミング論で名指しした。 [サトシ複数人説 — 『Finding Satoshi』ドキュメンタリー (2026 年 4 月)](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)はハル・フィニーとレン・サッサマンを共作者として提示した。 [サトシ政府機関説 — Murphy 対 DHS FOIA 訴訟 (2025 年 4 月)](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)は同じ問いを政府文書開示の経路で追っている。 4 件のうち暗号学的確認に到達したものは無い。
 
 アダム・バック＝サトシ仮説の分析的扱い（本調査の証拠を 2008 年 8 月のメール通信、2024 年の COPA 証言、より広い公開記録と比較して衡量する作業）については、[アダム・バック＝サトシ正体仮説エントリー](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)を参照。
 

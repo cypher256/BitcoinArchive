@@ -27,10 +27,10 @@ secondarySources:
     note: "1994 年のアルゴリズム ( SIAM 正式掲載は 1997 年 )。十分に大きな量子コンピューター上で離散対数問題を多項式時間で解き、 secp256k1 上の ECDSA を破る根拠となる。"
   - name: "NSA — Commercial National Security Algorithm Suite 2.0 (CNSA 2.0)"
     url: "https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF"
-    note: "米国家安全保障局が 2022 年に公開した暗号スイート。連邦機密システムを 2035 年までにポスト量子アルゴリズムへ移行することを義務づける — 主要な米政府暗号当局が想定する時期の制度的記録。"
+    note: "米国家安全保障局が 2022 年に公開した暗号スイート。連邦機密システムを 2035 年までにポスト量子アルゴリズムへ移行することを義務づける。これは主要な米政府暗号当局が想定する時期を示す制度的記録である。"
   - name: "Lov K. Grover — 「A fast quantum mechanical algorithm for database search」 (STOC 1996)"
     url: "https://arxiv.org/abs/quant-ph/9605043"
-    note: "1996 年のアルゴリズム。平方根オーダーの高速化で SHA-256 の実効原像耐性を 256 ビットから 128 ビットへ半減させる — 弱化であり、破壊ではない。"
+    note: "1996 年のアルゴリズム。平方根オーダーの高速化で SHA-256 の実効原像耐性を 256 ビットから 128 ビットへ半減させる。これは弱化であり、破壊ではない。"
   - name: "米ホワイトハウス — National Security Memorandum 10 (2022 年 5 月 4 日)"
     url: "https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2022/05/04/national-security-memorandum-on-promoting-united-states-leadership-in-quantum-computing-while-mitigating-risks-to-vulnerable-cryptographic-systems/"
     note: "米連邦政府がポスト量子暗号への移行を計画するための行政指針。 NSM-10 は各機関に脆弱な暗号の棚卸しと移行を指示し、 NSA CNSA 2.0 の法政策的根拠を与えている。"
@@ -39,7 +39,7 @@ secondarySources:
     note: "NIST が公開した連邦機関・ベンダー向けの移行ロードマップ文書。 TLS・コード署名・ファームウェア・政府 PKI が、特殊用途システムと並行して移行される計画範囲を示す。"
   - name: "国際決済銀行 ( BIS ) — Project Leap"
     url: "https://www.bis.org/about/bisih/topics/cyber_security/leap.htm"
-    note: "BIS イノベーションハブのプロジェクト ( 2022〜2023、 ECB・ BoE と協働 )。ポスト量子安全な中央銀行・銀行間通信チャネルの実験 — 金融セクターがポスト量子移行を実務として扱っている記録。"
+    note: "BIS イノベーションハブのプロジェクト ( 2022〜2023、 ECB・ BoE と協働 )。ポスト量子安全な中央銀行・銀行間通信チャネルの実験。これは金融セクターがポスト量子移行を実務として扱っている記録である。"
 relatedEntries:
   - aftermath/2025-11-15-adam-back-quantum-threat-timeline
   - bip/2024-12-17-bip-0360
@@ -162,6 +162,6 @@ NSA の CNSA 2.0 における 2035 年期限は、この論争の中で最も具
 - ビットコインのプロトコルは、ポスト量子署名対応をソフトフォークで追加可能である。固定した暗号基盤ではなく、この**変更可能性**こそが、本主題に対する工学的視点と「世界終焉」視点を分ける点である。
 - 移行リスクの集中先は特定の UTXO カテゴリーであり、システムとしてのビットコイン全体ではない。 P2PK 世代のコイン、露出済み P2TR、使い回し済み P2PKH アドレスが高露出のプールである。使い回しのない P2PKH / P2WPKH に保有され、 CRQC の存在前に移行されたコインは別の脅威クラスに属する。
 
-*[編者注：「世界終焉」は問いの立てられ方であって、記録が返す答えではない。暗号学・標準化・移行提案の記録を合わせて読むと、およそ 20 年規模の準備期間を伴う工学的問題として浮かび上がる — 上限は NSA の 2035 年の期限、下限は現時点で CRQC が存在しないという観測である。]*
+*[編者注：「世界終焉」は問いの立てられ方であって、記録が返す答えではない。暗号学・標準化・移行提案の記録を合わせて読むと、およそ 20 年規模の準備期間を伴う工学的問題として浮かび上がる。上限は NSA の 2035 年の期限、下限は現時点で CRQC が存在しないという観測である。]*
 
-*[補足：本分析が扱う耐量子移行の時系列は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』の 2041 年章の技術的根拠となる ― AI が量子能力を獲得し、ビットコインが最大の試練に晒される年。]*
+*[補足：本分析が扱う耐量子移行の時系列は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』の 2041 年章の技術的根拠となる。AI が量子能力を獲得し、ビットコインが最大の試練に晒される年である。]*

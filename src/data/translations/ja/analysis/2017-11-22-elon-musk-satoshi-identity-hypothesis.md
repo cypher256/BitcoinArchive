@@ -10,7 +10,7 @@ participants:
     slug: "elon-musk"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "元 SpaceX インターンが 2017 年のブログで名指しした。C++ と経済学の幅、共有される口癖 — マスク＝サトシの証拠を秤にかける。"
+description: "元 SpaceX インターンが 2017 年のブログで名指しした。C++ と経済学の幅や共有される口癖など、マスク＝サトシの証拠を秤にかける。"
 isSatoshi: false
 tags:
   - "satoshi-identity"

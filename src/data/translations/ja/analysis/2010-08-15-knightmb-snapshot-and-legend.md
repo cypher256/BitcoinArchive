@@ -54,7 +54,7 @@ knightmb は事件発生の数週間前から、新規ユーザーが初回同�
 
 ## 2. ペンティアム III の小隊
 
-BitcoinTalk の記録における knightmb のもう一つの定型は、ハードウェアテストである。多くの初期マイナーが単一マシンの結果を報告したのに対し、彼は複数台から報告した——Pentium E5300 デュアルコア、ハイパースレッディング無効の 3.0 GHz Pentium 4、2.8 GHz Pentium 4、複数の 933 MHz Pentium III、古い 1.1 GHz Celeron、独自コンパイルが必要な CentOS マシン群 ([msg9457](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-820/2010-08-15-knightmb-msg9457/)、[msg6086](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-572/2010-07-27-knightmb-msg6086/)、[msg9614](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-828/2010-08-16-knightmb-msg9614/))。
+BitcoinTalk の記録における knightmb のもう一つの定型は、ハードウェアテストである。多くの初期マイナーが単一マシンの結果を報告したのに対し、彼は複数台から報告した。内訳は Pentium E5300 デュアルコア、ハイパースレッディング無効の 3.0 GHz Pentium 4、2.8 GHz Pentium 4、複数の 933 MHz Pentium III、古い 1.1 GHz Celeron、独自コンパイルが必要な CentOS マシン群である ([msg9457](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-820/2010-08-15-knightmb-msg9457/)、[msg6086](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-572/2010-07-27-knightmb-msg6086/)、[msg9614](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-828/2010-08-16-knightmb-msg9614/))。
 
 「どのハードウェアでビットコインが動くか」という問いを、彼は議論すべき意見ではなく埋めるべき表として扱った。投稿された数値は 2010 年の基準でも小さかったが、実機を手元に持ち、実際にバイナリを走らせた人物の数値だった。
 
