@@ -328,8 +328,8 @@ flowchart TB
 
 本ページではエコシステム層のシステムを設計レベルで解説した。以下のトピックは範囲外であり、[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)内のそれぞれのドメインページで扱う:
 
-- **トランザクション構造と UTXO モデル** — Lightning チャネルとサイドチェーンペグの基盤となる L1 プリミティブ。[トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)ページで解説。
-- **Taproot と Tapscript の仕組み** — Witness プログラムとスクリプトパス支払いがオペコードレベルでどのように動作するか。[トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)ページで解説。
-- **P2P ゴシップとブロック中継** — トランザクションとブロックがマイナーや Lightning ノードに到達する前にネットワーク上でどのように伝搬するか。[P2P ネットワーク設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)ページで解説。
-- **プルーフオブワークと難易度調整** — すべてのエコシステム層が依存する基盤チェーンを保護するコンセンサス機構。[コンセンサス設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)ページで解説。
-- **手数料市場とブロックテンプレート構築** — トランザクションの収録優先度を決定する経済的ダイナミクス。
+- **トランザクション構造と UTXO モデル**: Lightning チャネルとサイドチェーンペグの基盤となる L1 プリミティブ。[トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)ページで解説。
+- **Taproot と Tapscript の仕組み**: Witness プログラムとスクリプトパス支払いがオペコードレベルでどのように動作するか。[トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)ページで解説。
+- **P2P ゴシップとブロック中継**: トランザクションとブロックがマイナーや Lightning ノードに到達する前にネットワーク上でどのように伝搬するか。[P2P ネットワーク設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)ページで解説。
+- **プルーフオブワークと難易度調整**: すべてのエコシステム層が依存する基盤チェーンを保護するコンセンサス機構。[コンセンサス設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)ページで解説。
+- **手数料市場とブロックテンプレート構築**: トランザクションの収録優先度を決定する経済的ダイナミクス。

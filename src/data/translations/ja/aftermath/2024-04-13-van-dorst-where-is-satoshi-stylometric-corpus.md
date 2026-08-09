@@ -86,12 +86,12 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > サトシの正体に個人的関心はない。2012 年に保有分は売却済みで、それは熱狂が始まる前のことである。
 
-大規模データセット・完全な数値公開・特定主張の不在 — この組み合わせは、特定の候補者を名指しした物語的な文体計量論考（[Skye Grey 2013 のサボ論](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)、[Aston University 2014 のサボ研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)、[カレイロウ 2026 NYT 調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)におけるカフィエロの分析）よりも方法論的に厳格である。
+大規模データセット・完全な数値公開・特定主張の不在という組み合わせは、特定の候補者を名指しした物語的な文体計量論考（[Skye Grey 2013 のサボ論](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)、[Aston University 2014 のサボ研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)、[カレイロウ 2026 NYT 調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)におけるカフィエロの分析）よりも方法論的に厳格である。
 
 ## 著者が述べる方法論的留意点
 
 - 「高い相関は類似した言語パターンを示すだけである → 高い相関は因果を含意しない」。同じ技術的話題について同じ時代に書く 2 人の著者は、同一人物であろうとなかろうと、語彙と文構造を共有する。
-- ビットコインが 2009 年に公開された後にのみ生じた用語の存在により、n-gram 解析は複雑化する。2010 年以降の暗号通貨関連執筆との比較は、ビットコイン特有の語彙によって紛れる可能性がある — 情報を持つ書き手なら誰でも採用するためである。
+- ビットコインが 2009 年に公開された後にのみ生じた用語の存在により、n-gram 解析は複雑化する。2010 年以降の暗号通貨関連執筆との比較は、情報を持つ書き手なら誰でも採用するビットコイン特有の語彙によって紛れる可能性がある。
 - メールスレッドの返信抽出は、過去の返信からの引用テキストを誤って著者の言語として取り込む可能性がある。
 - 時間窓化された分析の最終チャンクは、しばしば不完全であり、集計結果を歪める可能性がある。
 
@@ -108,11 +108,11 @@ translationStatus: complete
 | カフィエロ／[カレイロウ NYT](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) | 2026 | 12 候補（焦点）／620（広範） | アダム・バック（ハル・フィニーがほぼ同点） | 否（NYT 記事内に結果要約） |
 | **ヴァン・ドルスト** | **2024** | **75,000+** | **公表上は指名なし**（[Bitcoin Institute による再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)では名指し候補 5 名中サボが首位） | **可（CSV/XLSX 計 280 MB）** |
 
-ヴァン・ドルストが候補を公的に指名せず、物語的研究は指名している事実 — そして名指し候補研究を Bitcoin Institute による再分析と併せて読むと、4 件のうち 3 件がサボに収束し、カフィエロ／カレイロウのみがアダム・バックを首位とする外れ値である事実 — は、それ自体が方法論的観察である：サトシの文体計量による特定はコーパス選定・距離指標・候補者の事前選定に感受性を持つ一方、手法を横断して最も持続する信号は名指し候補内でサボを最上位に置く。
+ヴァン・ドルストは候補を公的に指名しないのに対し、物語的研究は指名している。名指し候補研究を Bitcoin Institute による再分析と併せて読むと、4 件のうち 3 件がサボに収束し、カフィエロ／カレイロウのみがアダム・バックを首位とする外れ値である。この二つの事実は、それ自体が方法論的観察である：サトシの文体計量による特定はコーパス選定・距離指標・候補者の事前選定に感受性を持つ一方、手法を横断して最も持続する信号は名指し候補内でサボを最上位に置く。
 
 ## 本コーパスからの候補別値（Bitcoin Institute による再分析）
 
-ヴァン・ドルストは順位の公表を拒否しているが、基底の数値データは公開されており、名指しのサトシ正体候補をその中で特定することは可能である。[Bitcoin Institute による再分析（2026 年 5 月）](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は、公開された `comparison.xlsx` から最も多く引用されるサトシ正体候補 5 名のバローズ・デルタ値を抽出し、コーパス内の「執筆量 10 チャンク以上の著者」 12,739 名に対して順位付けし、データに照らしてヴァン・ドルストの「100% 確信できない」留保を読み解いた：ニック・サボが上位 4.67% で名指し候補内首位、ハル・フィニーとアダム・バックが 0.85 標準偏差以内で続き、サボより近い無名著者が 594 人 — コーパスの見かけ上の最近接マッチの大半は精査するとノイズ（EC アカウント、匿名リメイラー転送、使い捨てアカウント）であって信号ではない。候補別表、コーパス Top 20 ノイズの議論、ヴァン・ドルストの名前公表拒否がデータに対して誠実な立場である理由の 4 通りの読み解きについては、[分析エントリー](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)を参照。
+ヴァン・ドルストは順位の公表を拒否しているが、基底の数値データは公開されており、名指しのサトシ正体候補をその中で特定することは可能である。[Bitcoin Institute による再分析（2026 年 5 月）](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は、公開された `comparison.xlsx` から最も多く引用されるサトシ正体候補 5 名のバローズ・デルタ値を抽出し、コーパス内の「執筆量 10 チャンク以上の著者」 12,739 名に対して順位付けし、データに照らしてヴァン・ドルストの「100% 確信できない」留保を読み解いた：ニック・サボが上位 4.67% で名指し候補内首位、ハル・フィニーとアダム・バックが 0.85 標準偏差以内で続き、サボより近い無名著者が 594 人存在する。コーパスの見かけ上の最近接マッチの大半は精査するとノイズ（EC アカウント、匿名リメイラー転送、使い捨てアカウント）であって信号ではない。候補別表、コーパス Top 20 ノイズの議論、ヴァン・ドルストの名前公表拒否がデータに対して誠実な立場である理由の 4 通りの読み解きについては、[分析エントリー](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)を参照。
 
 ハル・フィニーの本コーパスにおける順位を含め、フィニー＝サトシ仮説の是非をめぐる詳しい検討については、[ハル・フィニー＝サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)を参照。
 

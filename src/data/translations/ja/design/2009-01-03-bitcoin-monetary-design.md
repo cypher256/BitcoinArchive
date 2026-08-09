@@ -41,7 +41,7 @@ translationStatus: complete
 
 ## はじめに
 
-本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #5 — 貨幣設計** である。ビットコインの貨幣層を扱う。コイン生成を司る規則、マイナーに報酬を与える経済的メカニズム、正直な参加が攻撃よりも収益性の高い形になるインセンティブ構造を対象とする。
+本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #5「貨幣設計」** である。ビットコインの貨幣層を扱う。コイン生成を司る規則、マイナーに報酬を与える経済的メカニズム、正直な参加が攻撃よりも収益性の高い形になるインセンティブ構造を対象とする。
 
 [トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)ページでは価値の表現と移転を解説した。[合意形成設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)ページではノードが単一のチェーンに合意する方法を解説した。本ページはその交差点に位置する。ブロックあたりどれだけの新規価値がシステムに投入されるか、誰がそれを受け取るか、そして合理的なマイナーがなぜ規則に従うのかを扱う。
 

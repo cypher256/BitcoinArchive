@@ -333,11 +333,11 @@ flowchart TD
 
 本ページではセキュリティーモデルを横断的分析として解説した。以下のトピックは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)内のそれぞれのドメインページで扱う:
 
-- **トランザクション展性** — SegWit 以前の展性ベクトルと BIP 141 による解決。[トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)ページで解説。
-- **プルーフオブワークの仕組み** — SHA-256d ハッシュパズル、難易度調整アルゴリズム、オフバイワン / タイムワープのバグ。[コンセンサス設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)ページで解説。
-- **暗号プリミティブの詳細** — 鍵生成、署名方式、ハッシュ構成、HD 導出。[暗号設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)ページで解説。
-- **ネットワークアーキテクチャー** — ピア発見、接続管理、メッセージプロトコル、トランスポート暗号化。[P2P ネットワーク設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)ページで解説。
-- **手数料のみのセキュリティー予算** — 新規発行分主体からの手数料主体のマイナー収入への長期的移行とチェーンセキュリティーへの影響。[マイニング報酬枯渇分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)で解説。
-- **量子脅威の深掘り** — タイムライン推定、脆弱な UTXO の全数調査、BIP 360 の仕組み、他システムの耐量子移行との比較。[量子脅威分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-bitcoin-quantum-threat/)で解説。
+- **トランザクション展性**: SegWit 以前の展性ベクトルと BIP 141 による解決。[トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)ページで解説。
+- **プルーフオブワークの仕組み**: SHA-256d ハッシュパズル、難易度調整アルゴリズム、オフバイワン / タイムワープのバグ。[コンセンサス設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)ページで解説。
+- **暗号プリミティブの詳細**: 鍵生成、署名方式、ハッシュ構成、HD 導出。[暗号設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)ページで解説。
+- **ネットワークアーキテクチャー**: ピア発見、接続管理、メッセージプロトコル、トランスポート暗号化。[P2P ネットワーク設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)ページで解説。
+- **手数料のみのセキュリティー予算**: 新規発行分主体からの手数料主体のマイナー収入への長期的移行とチェーンセキュリティーへの影響。[マイニング報酬枯渇分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)で解説。
+- **量子脅威の深掘り**: タイムライン推定、脆弱な UTXO の全数調査、BIP 360 の仕組み、他システムの耐量子移行との比較。[量子脅威分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-bitcoin-quantum-threat/)で解説。
 
 プルーフ・オブ・ワークの仕組みそのものは[コンセンサス設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)にある。ここにあるのは同じ機構の攻撃側である。具体的には、51% 攻撃の経済、利己的マイニングのゲーム理論、そして脅威モデル全体を指す。

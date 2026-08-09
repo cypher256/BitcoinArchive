@@ -47,6 +47,6 @@ translationStatus: complete
 
 サトシによる、こうした責任を引き継ぐ相手としての[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)の明示的な推薦は、その 9 日後の [2010 年 12 月 12 日 SVN 権限譲渡と承認メール](/BitcoinArchive/ja/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/)で正式化し、[2010 年 12 月 19 日のアンドレセンによる「サトシの祝福を受けて」公的告知](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)で公開化された、リーダーシップ移行の早期シグナルだった。アンドレセンはその後、ビットコインのリード開発者および Bitcoin Core ソフトウェアの主要メンテナーとなった。
 
-Linux の能力に関する発言も示唆に富んでいる——サトシが主に Windows 上で作業し、Linux 関連の開発についてはマルミ、そして後にアンドレセンに頼っていたことを裏付けている。ビットコインは当初 Windows のみのアプリケーションとしてリリースされ、Linux サポートは主にマルミの作業によりバージョン 0.2 で追加された。
+Linux の能力に関する発言も示唆に富んでいる。すなわち、サトシが主に Windows 上で作業し、Linux 関連の開発についてはマルミ、そして後にアンドレセンに頼っていたことを裏付けている。ビットコインは当初 Windows のみのアプリケーションとしてリリースされ、Linux サポートは主にマルミの作業によりバージョン 0.2 で追加された。
 
 本 12 月 3 日の推薦は、移行連鎖を形作る周囲三つの記録の中心に位置する。 [2010 年 9 月 1 日のアンドレセン宛「他のプロジェクトに取り組む」通知](/BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/)は、本 12 月 3 日の会話が公的推薦へと形式化される最初期のシグナルである。 [12 月 12 日の SVN 引き継ぎ](/BitcoinArchive/ja/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/)は 9 日後の管理上の正式移譲であり、アンドレセンに実際のコミット権限を与えた事件であり、その論証は本 12 月 3 日メッセージを証拠的基盤として原文のまま引用する。そして[アンドレセンによる 12 月 19 日のリードメンテナー就任表明](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)は、本 12 月 3 日のやり取りを「公的役割の引き受けを可能にした前駆」として扱う。

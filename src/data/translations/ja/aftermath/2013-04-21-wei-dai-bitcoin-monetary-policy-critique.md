@@ -34,7 +34,7 @@ translationStatus: complete
 
 *LessWrong『Bitcoins are not digital greenbacks』コメントスレッドより、2013年4月21日：*
 
-ウェイ・ダイ — [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献 [1]として引用されている — がビットコインの金融政策の設計と自身の役割について言及した：
+ウェイ・ダイは、[b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献 [1]として引用されている人物である。そのダイが、ビットコインの金融政策の設計と自身の役割について言及した：
 
 ビットコインの金融政策について、ダイの評価は手厳しかった：
 
@@ -53,4 +53,4 @@ translationStatus: complete
 
 ダイのコメントは、[2008 年 8 月 22 日にサトシが彼に送ったメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)に言及している。そのメールにはビットコインホワイトペーパーのリリース前の草稿が含まれていた。この直接的な働きかけを受けたにもかかわらず、ダイは論文の設計についてフィードバックを返すことはなかった。
 
-ダイはこの逸機の主題に翌年も立ち返っている。 [2014 年 7 月の LessWrong 投稿](/BitcoinArchive/ja/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/)では、 2009 年初頭のビットコイン v0.1 公開を告げるサトシのメールも、当時サイファーパンクより LessWrong に関心が向いていたために見過ごしたと振り返っている。2014年1月の LessWrong Q&A でも、この不作為の裏返しとなる話をしている — サトシもまた、ダイの b-money 論文を読まないまま同じ着想に独自にたどり着き、事後になって初めて彼の名を挙げて謝辞を記したという逸話で、詳しくは[ウェイ・ダイのサトシと b-money に関する回顧的発言](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)にまとめられている。
+ダイはこの逸機の主題に翌年も立ち返っている。 [2014 年 7 月の LessWrong 投稿](/BitcoinArchive/ja/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/)では、 2009 年初頭のビットコイン v0.1 公開を告げるサトシのメールも、当時サイファーパンクより LessWrong に関心が向いていたために見過ごしたと振り返っている。2014年1月の LessWrong Q&A でも、この不作為の裏返しとなる話をしている。すなわち、サトシもまた、ダイの b-money 論文を読まないまま同じ着想に独自にたどり着き、事後になって初めて彼の名を挙げて謝辞を記したという逸話で、詳しくは[ウェイ・ダイのサトシと b-money に関する回顧的発言](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)にまとめられている。

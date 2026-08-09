@@ -106,7 +106,7 @@ relatedEntries:
 
 4 つの構造的レイヤは互いに置換可能ではない。それぞれが候補空間を異なる方向で絞り込む。各名指し候補には個別の仮説エントリーがあり、深い扱いはそちらに譲る（各表の「個別」列を参照）。
 
-**2024-2026 年のサトシ特定の波。** 2024 年後半以降、主要メディア / ドキュメンタリーによる特定が 4 件相次いだ。それぞれ依拠する根拠が違う：[HBO『Money Electric』によるピーター・トッド特定](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (2024 年 10 月、フォーラム投稿のタイミング論)、 [NYT カレイロウのアダム・バック調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (2026 年 4 月、文体計量による単独候補名指し)、 [サトシ複数人説 — 『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) (2026 年 4 月、活動時刻と遺族証言にもとづく。共作者の同定・論拠・反証は §8.1)、そして他とは経路の違う[サトシ政府機関説 — Murphy 対 DHS FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) (2025 年 4 月、政府文書開示請求。論拠・反証は §8.2)。いずれも暗号学的確認は得られていない。以下の比較表は、この波で出た証拠が候補の状況を動かす範囲で取り込んでいる。
+**2024-2026 年のサトシ特定の波。** 2024 年後半以降、主要メディア / ドキュメンタリーによる特定が 4 件相次いだ。それぞれ依拠する根拠が違う：[HBO『Money Electric』によるピーター・トッド特定](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) (2024 年 10 月、フォーラム投稿のタイミング論)、 [NYT カレイロウのアダム・バック調査](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) (2026 年 4 月、文体計量による単独候補名指し)、 [サトシ複数人説を唱える『Finding Satoshi』ドキュメンタリー](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) (2026 年 4 月、活動時刻と遺族証言にもとづく。共作者の同定・論拠・反証は §8.1)、そして他とは経路の違う[サトシ政府機関説をめぐる Murphy 対 DHS FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) (2025 年 4 月、政府文書開示請求。論拠・反証は §8.2)。いずれも暗号学的確認は得られていない。以下の比較表は、この波で出た証拠が候補の状況を動かす範囲で取り込んでいる。
 
 ## 1. 候補一覧
 
@@ -363,4 +363,3 @@ gantt
 ### 8.3 その他の形態
 
 単独・複数人・組織のいずれにも収まらない読み（仮名が単一個人ではなく構築物だとする説など）も公的議論には存在する。本アーカイブは現時点でこれらに専用の分析を持たない。検証可能な一次資料が現れた形態を、本節に随時加える。
-

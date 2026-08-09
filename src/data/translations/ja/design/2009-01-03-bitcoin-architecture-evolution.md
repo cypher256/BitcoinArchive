@@ -32,7 +32,7 @@ translationStatus: complete
 
 ## 本ページの位置付け
 
-本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L2 #9 — アーキテクチャー進化（サトシ時代 vs v27+）** である。3 つの横断的深掘りの最初。各 L1 ページが 1 つのサブシステムを末尾に簡潔な「二時代比較」節を添えて端から端まで検証するのに対して、本ページはそれらの比較を 8 つのドメインすべてにわたって並置し、単一のドメインページでは提供できない分割アーキテクチャー図を追加する。
+本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L2 #9「アーキテクチャー進化（サトシ時代 vs v27+）」** である。3 つの横断的深掘りの最初。各 L1 ページが 1 つのサブシステムを末尾に簡潔な「二時代比較」節を添えて端から端まで検証するのに対して、本ページはそれらの比較を 8 つのドメインすべてにわたって並置し、単一のドメインページでは提供できない分割アーキテクチャー図を追加する。
 
 **範囲。** すべての比較は 2 つの固定参照点を使用する: サトシの v0.1 リリース（2009 年 1 月 3 日）と現行の Bitcoin Core v27 以降基準。中間バージョンは構造的変更を導入した場合にのみ言及する。
 
@@ -115,7 +115,7 @@ flowchart LR
 | **初期同期** | 逐次: ブロックを 1 つずつ | ヘッダー優先: 並列ブロックダウンロード | v0.10 |
 | **日食攻撃耐性** | 最小限 | アウトバウンドローテーション、多様な追い出し、アンカーピア、ブロックリレー専用ピア | v19 以降 |
 
-*詳細: [L1 #1 — P2P ネットワーク設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)*
+*詳細: [L1 #1「P2P ネットワーク設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)*
 
 ## 3. トランザクション層
 
@@ -152,7 +152,7 @@ flowchart LR
 | **手数料置換** | 未実装; 先着順 | 完全 RBF がデフォルト | BIP 125（v0.12 任意選択; v24 オプション追加; v28 デフォルト） |
 | **コイン選択** | 単純な最大額優先 | BnB + ナップサック + 単一ランダム抽選; 無駄指標 | v27 以降 |
 
-*詳細: [L1 #2 — トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)*
+*詳細: [L1 #2「トランザクション設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)*
 
 ## 4. ブロックとチェーン層
 
@@ -185,7 +185,7 @@ flowchart LR
 | **コインベースデータ** | 最大 100 バイトの任意データ | BIP 34: ブロック高の接頭辞が必須 | BIP 34（2013） |
 | **署名操作制限** | v0.1 では制限なし; 2010 年に 20,000 追加 | ブロックあたり 80,000（ウェイト調整済み）; Tapscript のカウント方法は異なる | BIP 141、342 |
 
-*詳細: [L1 #3 — ブロック・チェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)*
+*詳細: [L1 #3「ブロック・チェーン設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)*
 
 ## 5. コンセンサス層
 
@@ -220,7 +220,7 @@ flowchart LR
 | **タイムスタンプルール** | 直前 11 ブロックの中央値（median-time-past）より大きい（v0.1 から存在） | 同一の受理ルール; BIP 113 が MTP をロックタイム評価にも拡張 | BIP 113 |
 | **チェックポイント** | v0.1 にはなし; 2010 年 7 月（v0.3.2）にハードコードされたチェックポイントを追加 | `assumevalid` がチェックポイント機能の大部分を置換 | v0.14 以降 |
 
-*詳細: [L1 #4 — コンセンサス設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)*
+*詳細: [L1 #4「コンセンサス設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)*
 
 ## 6. 貨幣・インセンティブ層
 
@@ -252,7 +252,7 @@ flowchart LR
 | **ブロックテンプレート** | 内部マイナー; 素朴な順序 | `getblocktemplate`（BIP 22/23）; 手数料率順ソート | BIP 22、23 |
 | **Witness ディスカウント** | 存在しない | Witness バイトは 1/4 ウェイト | BIP 141 |
 
-*詳細: [L1 #5 — 貨幣設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)*
+*詳細: [L1 #5「貨幣設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)*
 
 ## 7. 暗号層
 
@@ -291,7 +291,7 @@ flowchart LR
 | **ハッシュ関数** | SHA-256d、RIPEMD-160 は OpenSSL 経由; 採掘 SHA-256 は同梱 Crypto++ | 同一アルゴリズム; ハードウェアアクセラレーション付き内部実装（SHA-NI、ARMv8-A） | — |
 | **署名ハッシュアルゴリズム** | レガシー署名ハッシュ（入力数に対して二次的） | BIP 143（SegWit v0、線形）+ BIP 341（Taproot、エポックタグ付き） | BIP 143、341 |
 
-*詳細: [L1 #6 — 暗号設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)*
+*詳細: [L1 #6「暗号設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)*
 
 ## 8. ストレージ層
 
@@ -325,7 +325,7 @@ flowchart LR
 | **assumeUTXO** | なし | スナップショットベースのブートストラップ、バックグラウンド検証付き | v27 以降 |
 | **ディスクサイズ** | 無視できる程度（チェーンが極めて小さかった） | アーカイブで約 650 GB 以上; 剪定で約 10 GB; コイン DB で約 7 GB | — |
 
-*詳細: [L1 #7 — ストレージ設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/)*
+*詳細: [L1 #7「ストレージ設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/)*
 
 ## 9. ウォレットとインターフェース層
 
@@ -362,7 +362,7 @@ flowchart LR
 | **インターフェース** | リリース時はなし; 直後に基本的な JSON-RPC を追加 | JSON-RPC（完全）、REST（読み取り専用）、ZMQ（プッシュ通知） | — |
 | **プロセスモデル** | モノリシック（ウォレット + ノード + マイナー + GUI） | モジュラー: `bitcoind`、`bitcoin-wallet`、`bitcoin-qt` | v27 以降 |
 
-*詳細: [L1 #8 — ウォレット設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-wallet-design/)*
+*詳細: [L1 #8「ウォレット設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-wallet-design/)*
 
 ## 10. 構造的移行タイムライン
 
@@ -429,8 +429,8 @@ timeline
 範囲外:
 
 - **社会的・経済的なずれ**（マイニングの集中化、カストディー、ガバナンス、スケーリング。[設計意図と現実の分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)を参照）
-- **セキュリティーモデル**（脅威分析、51% 攻撃の経済学。[L2 #11 — セキュリティーモデル](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-security-model/)を参照）
-- **エコシステム**（Lightning、サイドチェーン、Ordinals。[L2 #10 — エコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)を参照）
+- **セキュリティーモデル**（脅威分析、51% 攻撃の経済学。[L2 #11「セキュリティーモデル」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-security-model/)を参照）
+- **エコシステム**（Lightning、サイドチェーン、Ordinals。[L2 #10「エコシステム設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)を参照）
 - **サトシのコーディングスタイル**（[サトシのコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)と [Windows 開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)エントリーを参照）
 
 [Windows 専一の開発環境の分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)は、同じ漂流をツールチェーンの側から読んでいる。

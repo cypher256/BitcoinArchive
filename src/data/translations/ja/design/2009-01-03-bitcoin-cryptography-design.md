@@ -279,11 +279,11 @@ flowchart TB
 
 本ページはビットコインの暗号学的基本要素を単独で扱う。以下のトピックは範囲外であり、[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)内のそれぞれの専門ページで扱う:
 
-- **スクリプト評価** — ロックスクリプトとアンロックスクリプトが実行時に署名とハッシュをどう消費するか。[トランザクション設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)で扱う。
-- **プルーフ・オブ・ワークマイニング** — SHA-256d がブロックヘッダーのハッシュパズルでどう使われ、難易度がどう調整されるか。[合意形成設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)で扱う。
-- **マークルツリー構築** — トランザクションハッシュがブロックヘッダーのコミットメントにどう組み立てられるか。[ブロックとチェーン設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)で扱う。
-- **BIP 324 暗号化トランスポート** — ノード間通信を暗号化する v2 P2P プロトコル。トランザクション層の基本要素ではなく、ネットワーク層の問題。
-- **量子移行提案** — BIP 360（P2MR / QuBit）および耐量子署名候補。[量子脅威分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-bitcoin-quantum-threat/)で扱う。
-- **閾値署名とマルチシグ方式** — FROST、MuSig2 プロトコルの詳細、この基本要素概説の範囲を超える k-of-n 構成。
+- **スクリプト評価**: ロックスクリプトとアンロックスクリプトが実行時に署名とハッシュをどう消費するか。[トランザクション設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)で扱う。
+- **プルーフ・オブ・ワークマイニング**: SHA-256d がブロックヘッダーのハッシュパズルでどう使われ、難易度がどう調整されるか。[合意形成設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)で扱う。
+- **マークルツリー構築**: トランザクションハッシュがブロックヘッダーのコミットメントにどう組み立てられるか。[ブロックとチェーン設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)で扱う。
+- **BIP 324 暗号化トランスポート**: ノード間通信を暗号化する v2 P2P プロトコル。トランザクション層の基本要素ではなく、ネットワーク層の問題。
+- **量子移行提案**: BIP 360（P2MR / QuBit）および耐量子署名候補。[量子脅威分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-bitcoin-quantum-threat/)で扱う。
+- **閾値署名とマルチシグ方式**: FROST、MuSig2 プロトコルの詳細、この基本要素概説の範囲を超える k-of-n 構成。
 
 ここに並ぶ基本要素は、[セキュリティモデル](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-security-model/)が脅威モデルを組み立てる土台であり、[トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)のあらゆるトランザクションが消費するものでもある。

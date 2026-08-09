@@ -54,7 +54,7 @@ translationStatus: complete
 
 ![初期ビットコインネットワークを表す、顔のない抽象イラスト。ターミナル画面と、破線でつながれた 2 つのノードアイコン、その間で光る 25 BTC のコイン、盾と南京錠のアイコンが配置され、暗い方眼状の背景には小さなノード同士を結ぶ点線が散らばっている。](/BitcoinArchive/images/analysis/2009-01-11-dustin-trammell-biography-hero.png)
 
-2009 年 1 月 11 日、Bitcoin v0.1 の[公開リリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)から 3 日後、オースティン在住の情報セキュリティ研究者ダスティン・トランメルがソフトウェアをダウンロードして稼働させ、同日に[サトシにメールを送った](/BitcoinArchive/ja/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/)。その 3 日後の 2009 年 1 月 14 日、[サトシは彼に 25 BTC を送金](/BitcoinArchive/ja/entries/aftermath/2009-01-13-satoshi-to-trammell-send-coins/)した —— 2 日前の[ハル・フィニーへの 10 BTC](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) に次ぐ、史上 2 番目に既知の個人間ビットコイン送金である。
+2009 年 1 月 11 日、Bitcoin v0.1 の[公開リリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)から 3 日後、オースティン在住の情報セキュリティ研究者ダスティン・トランメルがソフトウェアをダウンロードして稼働させ、同日に[サトシにメールを送った](/BitcoinArchive/ja/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/)。その 3 日後の 2009 年 1 月 14 日、[サトシは彼に 25 BTC を送金](/BitcoinArchive/ja/entries/aftermath/2009-01-13-satoshi-to-trammell-send-coins/)した。これは、2 日前の[ハル・フィニーへの 10 BTC](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) に次ぐ、史上 2 番目に既知の個人間ビットコイン送金である。
 
 トランメルはテキサス州オースティン在住のサイバーセキュリティ研究者で、脆弱性研究とエクスプロイト開発の業績で情報セキュリティコミュニティに知られる。
 
@@ -76,7 +76,7 @@ timeline
 ```
 
 ## サトシとの最初の接触
-2009年1月11日 — [Bitcoin v0.1 のリリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)から 3日後 — トランメルはソフトウェアをダウンロードして稼働させた後、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に[メールを送った](/BitcoinArchive/ja/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/)。自身の経験を報告し、システムの設計について質問した。サトシは同日に返信し、短いが重要なメールのやり取りが始まった。
+2009年1月11日、[Bitcoin v0.1 のリリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)から 3日後、トランメルはソフトウェアをダウンロードして稼働させた後、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)に[メールを送った](/BitcoinArchive/ja/entries/aftermath/2009-01-11-trammell-to-satoshi-first-email/)。自身の経験を報告し、システムの設計について質問した。サトシは同日に返信し、短いが重要なメールのやり取りが始まった。
 
 ## 初期のマイニングとビットコイン送金
 トランメルは最初期からビットコインのマイニングを開始し、サトシや[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)とともにネットワーク上の最初のノードの一つを運用していた可能性がある。2009年1月14日、サトシはテスト取引として[トランメルに 25 BTC を送信し](/BitcoinArchive/ja/entries/aftermath/2009-01-13-satoshi-to-trammell-send-coins/)、これは最初期の既知の個人間ビットコイン送金の一つとなった（[1月12日にサトシがハル・フィニーに送った 10 BTC](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/) に続く）。やり取りの中で、サトシはコインの成熟ルールやシステムが新しいブロックをどのように処理するかなどの技術的詳細について議論した。

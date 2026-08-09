@@ -33,14 +33,14 @@ translationStatus: complete
 
 *LessWrong『Making money with Bitcoin?』コメントスレッド、2011年2月25日：*
 
-[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/) — [b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、ビットコイン[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献 [1]として引用されている — がビットコインの投資可能性に関する議論に参加した。彼のコメントはビットコインとの関係を明確にし、マイナーとしての最初の一歩を明かしている。
+[b-money 提案](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)（1998年）の考案者であり、ビットコイン[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)の参考文献 [1]として引用されている[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)が、ビットコインの投資可能性に関する議論に参加した。彼のコメントはビットコインとの関係を明確にし、マイナーとしての最初の一歩を明かしている。
 
 ビットコインとの関係を直接問われ、ダイはこう返した：
 
 <!-- audit:quote-skip -->
 > 「こんにちは、Clippy。なぜ私にそれができると思ったのですか？」
 
-ウェイ・ダイはビットコインを作ったのは自分ではないと説明した — 10年以上前に類似の概念を記述しただけであり、サトシ・ナカモトが独立にアイデアを再発明し、後から彼の業績を引用したのだと述べた。
+ウェイ・ダイはビットコインを作ったのは自分ではないと説明した。10年以上前に類似の概念を記述しただけであり、サトシ・ナカモトが独立にアイデアを再発明し、後から彼の業績を引用したのだと述べた。
 
 購入とマイニングのどちらを採るかについて、ダイの助言は端的だった：
 
@@ -59,4 +59,4 @@ translationStatus: complete
 
 ウェイ・ダイは、信頼できる銀行の仲介を必要とする従来の電子マネープロトコルと b-money およびビットコインを対比した。
 
-ウェイ・ダイはこのスレッドの中で、議論をきっかけに Radeon 5870 GPU を購入してマイニングを開始したことを明かした — これは後に 2014年の[『Look for the Next Tech Gold Rush?』](/BitcoinArchive/ja/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/)投稿で、約 300 ドルが 6 桁のリターンになったと語るマイニング活動の始まりであった。
+ウェイ・ダイはこのスレッドの中で、議論をきっかけに Radeon 5870 GPU を購入してマイニングを開始したことを明かした。これは後に 2014年の[『Look for the Next Tech Gold Rush?』](/BitcoinArchive/ja/entries/aftermath/2014-07-19-wei-dai-next-tech-gold-rush/)投稿で、約 300 ドルが 6 桁のリターンになったと語るマイニング活動の始まりであった。

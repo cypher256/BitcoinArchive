@@ -53,7 +53,7 @@ translationStatus: complete
 ビットコインの GitHub リポジトリ（`bitcoin/bitcoin`）は**2010年12月19日**に作成された。[SourceForge SVN リポジトリ](/BitcoinArchive/ja/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/)はまだ稼働中だった。約 9ヶ月間、開発は両プラットフォームで並行して行われた。2011年9月13日、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)が最終 SVN コミット（r252）を行い、メッセージに「Development has moved to github.」と記した。
 
 ## 移行タイムライン
-- **2010-12-19:** GitHub リポジトリ `bitcoin/bitcoin` 作成 — [ギャビンがプロジェクト管理を公的に引き受けた日](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)と同日。
+- **2010-12-19:** GitHub リポジトリ `bitcoin/bitcoin` 作成。[ギャビンがプロジェクト管理を公的に引き受けた日](/BitcoinArchive/ja/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/)と同日にあたる。
 - **2011-01〜2011-09:** SVN と GitHub で並行開発。
 - **2011-09-13:** 最終 SVN コミット（r252）、メッセージは「Development has moved to github.」。GitHub が唯一のリポジトリとなる。
 
@@ -77,10 +77,10 @@ translationStatus: complete
 
 **クリス・ムーア（dooglus）** は GitHub コミットアクセスを最初に受けた人物だが、在任期間は短く約 2ヶ月だった。SVN コミットアクセスは持っていなかった。
 
-**ピーター・ウィーユ（sipa）** と**ジェフ・ガージック（jgarzik）** は SourceForge プロジェクトメンバーとしても追加されたが、どちらも SVN コミットは行っていない — 2011年5月時点で、活発な開発は既に GitHub に移行していた。
+**ピーター・ウィーユ（sipa）** と**ジェフ・ガージック（jgarzik）** は SourceForge プロジェクトメンバーとしても追加されたが、どちらも SVN コミットは行っていない。2011年5月時点で、活発な開発は既に GitHub に移行していた。
 
 **ウラジミール・ファン・デル・ラーン（laanwj）** は当初、Qt ベースの GUI クライアント用に別リポジトリ `bitcoin-qt`（2011年5月15日作成）を運用していた。これは後にメインリポジトリに統合された。`bitcoin/bitcoin` へのコミットアクセスは 2011年6月5日に取得し、2014年にギャビン・アンドレセンからリードメンテナーを引き継いだ。
 
 **ニルス・シュナイダー（tcatm）** は 2011年に付与された開発者の中で最も短い継続的アクセスとなり、2012年5月31日にアクセスが終了した。シュナイダーがこの GitHub コミットアクセスを得たのは 2011 年 9 月 19 日、そのわずか 8 日後にあたる 2011年9月27日、シュナイダーは Crypto++ の SHA-256 依存を撤去し OpenSSL に置き換える[`no-cryptopp` ブランチの中核コミット](/BitcoinArchive/ja/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/)を著し、これは 10月5日にアンドレセンの手でメインリポジトリへマージされた。
 
-**権限移譲の変遷：** サトシはプロジェクトをギャビン・アンドレセン一人に委ねた。開発が成長するにつれ、アンドレセンは有能な開発者にコミットアクセスを分配していった — 開発プロセスそのものの段階的な分散化だった。2011年末までに、Bitcoin Core には 6人のコミットアクセスを持つ開発者がいた。これは、SVN リポジトリに一度でもコミットしたことのある 4人と対比される。
+**権限移譲の変遷：** サトシはプロジェクトをギャビン・アンドレセン一人に委ねた。開発が成長するにつれ、アンドレセンは有能な開発者にコミットアクセスを分配していった。それは、開発プロセスそのものの段階的な分散化だった。2011年末までに、Bitcoin Core には 6人のコミットアクセスを持つ開発者がいた。これは、SVN リポジトリに一度でもコミットしたことのある 4人と対比される。

@@ -42,7 +42,7 @@ translationStatus: complete
 
 ## はじめに
 
-本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #4 — コンセンサス設計** である。[ブロック・チェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)ページの直接の後続である。前ページがヘッダー、マークルツリー、ハッシュの連鎖といったデータ構造を記述したのに対し、本ページはどのチェーンが有効でどのチェーン先端が勝つかを決定する規則を記述する。
+本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #4「コンセンサス設計」** である。[ブロック・チェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)ページの直接の後続である。前ページがヘッダー、マークルツリー、ハッシュの連鎖といったデータ構造を記述したのに対し、本ページはどのチェーンが有効でどのチェーン先端が勝つかを決定する規則を記述する。
 
 合意形成は、ビットコインにおいて中央集権的な権威に代わるものである。すべてのフルノードがすべてのブロックを同一の決定論的規則集に対して独立に評価する。信頼に基づいてブロックを受理することはなく、他のノードの判断に委ねることもない。その結果、数千の機械が調整、投票、リーダー選出なしに単一の取引履歴に収束するシステムが実現する。
 
@@ -286,10 +286,10 @@ Tendermint や HotStuff のようなビザンチン障害耐性 (BFT) 合意シ�
 
 本ページは合意形成層を独立して扱う。以下のトピックは本ページの範囲外であり、[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)内のそれぞれのドメインページで扱う:
 
-- **ブロックデータ構造** — ヘッダー形式、マークルツリー構築、コインベース配置。[ブロック・チェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)ページで扱う。
-- **マイニング経済学** — ブロックテンプレート構築、手数料市場の動態、プールプロトコル、発行計画。[マイニング報酬枯渇分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)が手数料のみのセキュリティ予算への長期的移行を検討する。
-- **トランザクション検証の詳細** — UTXO 照合、スクリプト評価、署名検証。[トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)ページで扱う。
-- **ネットワーク層のブロック伝播** — ブロックが P2P ネットワーク上を伝播する仕組み、コンパクトブロック中継 (BIP 152)、日食/シビル耐性。
-- **セキュリティモデル** — 51% 攻撃の経済学、利己的マイニング、完全な脅威モデル。L2 セキュリティモデル深掘りに委ねる。
+- **ブロックデータ構造**: ヘッダー形式、マークルツリー構築、コインベース配置。[ブロック・チェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)ページで扱う。
+- **マイニング経済学**: ブロックテンプレート構築、手数料市場の動態、プールプロトコル、発行計画。[マイニング報酬枯渇分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)が手数料のみのセキュリティ予算への長期的移行を検討する。
+- **トランザクション検証の詳細**: UTXO 照合、スクリプト評価、署名検証。[トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)ページで扱う。
+- **ネットワーク層のブロック伝播**: ブロックが P2P ネットワーク上を伝播する仕組み、コンパクトブロック中継 (BIP 152)、日食/シビル耐性。
+- **セキュリティモデル**: 51% 攻撃の経済学、利己的マイニング、完全な脅威モデル。L2 セキュリティモデル深掘りに委ねる。
 
 隣接する三つのページが、合意形成の規則を別々の側から扱う。[P2P ネットワーク設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)はその規則を運ぶ伝送路を、[貨幣設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)は発行と難易度を検証ではなく通貨政策として、[セキュリティモデルの深掘り](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-security-model/)は規則が攻撃されたときに何が起きるか、すなわち二重支払いの抑止、51% 攻撃の経済、利己的マイニングを扱う。

@@ -331,13 +331,13 @@ flowchart TD
 
 ここまでがビットコインの基本的な仕組みだ。ここから先は、出てきた用語のひとつひとつをより深く追える:
 
-- [ビットコインのシステム設計概観](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/) ― 本記事で押さえた用語を 11 領域 (合意、ブロックチェーン、 P2P ネットワーク、ウォレット、暗号工学、トランザクション、通貨設計、セキュリティ、ストレージ、アーキテクチャの変遷、エコシステム) に整理した設計文書索引。体系的に深掘りしたいときはここから始めるとよい。
-- [Bitcoin ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) ― 2008 年 10 月にサトシが公開した、オリジナルの 8 ページの記述。用語を知った今なら短く読み通せる。
-- [ジェネシスブロック](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/) ― サトシが最初のブロックに何を、なぜ刻んだのか。
-- [ジェネシスブロックハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) ― ブロック 0 がどう構築され、 50 BTC の報酬がなぜ永遠に動かせないのかの技術的詳細。
-- [1997 年のアダム・バックによる Hashcash 発表](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) ― ビットコインが中核で再利用したプルーフ・オブ・ワーク方式。
-- [マイニング報酬枯渇分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/) ― ブロック報酬が最終的にゼロに達したとき、マイナー経済はどうなるか。
-- [ビットコイン設計系譜分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/) ― ビットコインのどの部分が先行研究から、どの部分が真に新規の設計から来ているか。
-- [サトシの設計意図とビットコインの現状の乖離](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) ― 4 軸 (マイニング、カストディ、ガバナンス、スケーリング) で現在の Bitcoin が本記事のプロトコル設計とどう乖離しているかを描いた対となる記事。本記事のプロトコル章を読んだ *後* に。
-- [マイク・ハーン 2010 年 12 月 SPV 進捗報告](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/) ― 軽量ノードウォレットの実用エンジニアリングの裏側。
-- [ビットコインのトランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/) ― UTXO モデル、 Bitcoin Script、有効な支払いの形を、上記のトランザクション用語の背後にある設計文書の詳細度で扱う。
+- [ビットコインのシステム設計概観](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)は、本記事で押さえた用語を 11 領域 (合意、ブロックチェーン、 P2P ネットワーク、ウォレット、暗号工学、トランザクション、通貨設計、セキュリティ、ストレージ、アーキテクチャの変遷、エコシステム) に整理した設計文書索引だ。体系的に深掘りしたいときはここから始めるとよい。
+- [Bitcoin ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)は、2008 年 10 月にサトシが公開した、オリジナルの 8 ページの記述だ。用語を知った今なら短く読み通せる。
+- [ジェネシスブロック](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)には、サトシが最初のブロックに何を、なぜ刻んだのかが記されている。
+- [ジェネシスブロックハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)は、ブロック 0 がどう構築され、 50 BTC の報酬がなぜ永遠に動かせないのかを、技術的詳細まで踏み込んで解説する。
+- [1997 年のアダム・バックによる Hashcash 発表](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/)は、ビットコインが中核で再利用したプルーフ・オブ・ワーク方式だ。
+- [マイニング報酬枯渇分析](/BitcoinArchive/ja/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/)は、ブロック報酬が最終的にゼロに達したとき、マイナー経済はどうなるかを扱う。
+- [ビットコイン設計系譜分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)は、ビットコインのどの部分が先行研究から、どの部分が真に新規の設計から来ているかを整理する。
+- [サトシの設計意図とビットコインの現状の乖離](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)は、4 軸 (マイニング、カストディ、ガバナンス、スケーリング) で現在の Bitcoin が本記事のプロトコル設計とどう乖離しているかを描いた対となる記事だ。本記事のプロトコル章を読んだ *後* に。
+- [マイク・ハーン 2010 年 12 月 SPV 進捗報告](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress/)は、軽量ノードウォレットの実用エンジニアリングの裏側を伝える。
+- [ビットコインのトランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)は、UTXO モデル、 Bitcoin Script、有効な支払いの形を、上記のトランザクション用語の背後にある設計文書の詳細度で扱う。

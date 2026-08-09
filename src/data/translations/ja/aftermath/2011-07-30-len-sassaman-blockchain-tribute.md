@@ -33,13 +33,13 @@ translationStatus: complete
 
 ![紺色の背景に連なる台帳のようなブロックが並び、中央付近の一つだけ金色の枠と小さな点々の模様で縁取られ、その脇には灯る蝋燭が置かれ、上方にはうっすら重なる封筒の輪郭が浮かび、列の両端には簡素な人型のシルエットが立っている。](/BitcoinArchive/images/analysis/2011-07-30-len-sassaman-blockchain-tribute-hero.png)
 
-[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) — サイファーパンク、暗号学者、Mixmaster 匿名リメイラーのリード開発者、KU ルーヴェン大学の博士課程在籍者 — は [2011 年 7 月 3 日に死去した](/BitcoinArchive/ja/participants/len-sassaman/)。妻で暗号学者・研究者のメレディス・パターソンは、死因が自殺であることを公的に確認した。
+[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)は、サイファーパンク、暗号学者、Mixmaster 匿名リメイラーのリード開発者、KU ルーヴェン大学の博士課程在籍者であり、[2011 年 7 月 3 日に死去した](/BitcoinArchive/ja/participants/len-sassaman/)。妻で暗号学者・研究者のメレディス・パターソンは、死因が自殺であることを公的に確認した。
 
-数週間のうちに、[ダン・カミンスキー](/BitcoinArchive/ja/participants/dan-kaminsky/) — 以前にビットコイン v0.1 のコードをレビューし [「これはチームで作ったか、天才の仕業だ」と結論づけた](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)セキュリティ研究者 — は、サッサマンへの ASCII アート追悼をビットコインブロックチェーンに直接埋め込んだ。発表は 2011 年 7 月 30 日、公的なお披露目は Black Hat USA 2011（ラスベガス）。
+数週間のうちに、[ダン・カミンスキー](/BitcoinArchive/ja/participants/dan-kaminsky/)は、以前にビットコイン v0.1 のコードをレビューし [「これはチームで作ったか、天才の仕業だ」と結論づけた](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)セキュリティ研究者であり、サッサマンへの ASCII アート追悼をビットコインブロックチェーンに直接埋め込んだ。発表は 2011 年 7 月 30 日、公的なお披露目は Black Hat USA 2011（ラスベガス）。
 
 Wikipedia の引用および Black Hat USA 2011 のプレゼン資料によれば、刻印はトランザクション出力にまたがってエンコードされ、データはすべてのフルノードのコピーに残るとされる。本技法は `OP_RETURN`（小さなペイロードを埋め込むために Bitcoin Core に公式に追加された機構、2014 年）以前のもの。
 
-この機構をめぐっては後年、繰り返し制限論争が起きており、その経緯は OP_RETURN 系のデータ運搬出力をより積極的にフィルタリングする Bitcoin Knots を維持する[ルーク・ダッシュジュニアの経歴](/BitcoinArchive/ja/participants/luke-dashjr/)に詳しい。具体的なブロック高、トランザクションハッシュ、刻印された ASCII アートの全文は本アーカイブが独立に検証していない — 技法は二次資料が支える水準で記述している。
+この機構をめぐっては後年、繰り返し制限論争が起きており、その経緯は OP_RETURN 系のデータ運搬出力をより積極的にフィルタリングする Bitcoin Knots を維持する[ルーク・ダッシュジュニアの経歴](/BitcoinArchive/ja/participants/luke-dashjr/)に詳しい。具体的なブロック高、トランザクションハッシュ、刻印された ASCII アートの全文は本アーカイブが独立に検証していない。技法については、二次資料が支える水準で記述している。
 
 ## 文脈
 

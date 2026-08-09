@@ -385,11 +385,11 @@ flowchart LR
 
 本ページは Bitcoin Core のウォレットとインターフェース層を扱う。以下のトピックは範囲外であり、[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)内のそれぞれのページで扱う:
 
-- **トランザクション構造とスクリプト** — 入力、出力、ロックスクリプトがプロトコルレベルでどう機能するか。[トランザクション設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)で扱う。
-- **暗号学的基本要素** — 楕円曲線数学、ハッシュ関数、HD 導出の内部（BIP 32 HMAC-SHA512）、署名アルゴリズム。[暗号設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)で扱う。
-- **メモリープールポリシー** — 中継規則、手数料率の下限、パッケージリレー、手数料置換の適用。[ネットワーク設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)で扱う。
-- **マイニングとブロックテンプレート** — マイナーがメモリープールからトランザクションを選択し候補ブロックをどう構築するか。[合意形成設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)で扱う。
-- **サードパーティーウォレット** — Electrum、Sparrow、ハードウェアウォレット、モバイルウォレットは Bitcoin Core リファレンス実装の外部のアプリケーション層ソフトウェア。
-- **Lightning Network** — ここで記述したトランザクションと PSBT の基本要素の上に構築されるが、別のプロトコルで動作するレイヤー 2 決済チャネル。
+- **トランザクション構造とスクリプト**: 入力、出力、ロックスクリプトがプロトコルレベルでどう機能するか。[トランザクション設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)で扱う。
+- **暗号学的基本要素**: 楕円曲線数学、ハッシュ関数、HD 導出の内部（BIP 32 HMAC-SHA512）、署名アルゴリズム。[暗号設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)で扱う。
+- **メモリープールポリシー**: 中継規則、手数料率の下限、パッケージリレー、手数料置換の適用。[ネットワーク設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)で扱う。
+- **マイニングとブロックテンプレート**: マイナーがメモリープールからトランザクションを選択し候補ブロックをどう構築するか。[合意形成設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)で扱う。
+- **サードパーティーウォレット**: Electrum、Sparrow、ハードウェアウォレット、モバイルウォレットは Bitcoin Core リファレンス実装の外部のアプリケーション層ソフトウェア。
+- **Lightning Network**: ここで記述したトランザクションと PSBT の基本要素の上に構築されるが、別のプロトコルで動作するレイヤー 2 決済チャネル。
 
 [トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)は、ここが終わるところから始まる。ウォレットが組み立てて署名したものが、トランザクション層の運ぶものである。

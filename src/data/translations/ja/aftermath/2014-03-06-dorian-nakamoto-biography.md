@@ -39,7 +39,7 @@ translationStatus: complete
 
 ![濃紺の背景に、家の玄関先に立つ顔のないシルエット、雑誌の表紙を模したイラスト、重なり合う二つのタグアイコン、二軒の家をつなぐ小さな地図、上向き矢印付きのコインの山を、金と赤の差し色で配置した構成。](/BitcoinArchive/images/analysis/2014-03-06-dorian-nakamoto-biography-hero.png)
 
-2014 年 3 月 6 日、[Newsweek が「サトシの素顔」](/BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) という表紙特集を発表 —— 同誌はサトシ・ナカモトを見つけたと主張した。記事が名指した相手はドリアン・プレンティス・サトシ・ナカモト、カリフォルニア州テンプル市在住の 64 歳の日系米国人エンジニアで、暗号学やビットコインとの記録上の繋がりは無かった。翌日、長期間休眠していたサトシの P2P Foundation アカウントが短文を 1 行[投稿した](/BitcoinArchive/ja/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/):
+2014 年 3 月 6 日、[Newsweek が「サトシの素顔」](/BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) という表紙特集を発表した。同誌はサトシ・ナカモトを見つけたと主張した。記事が名指した相手はドリアン・プレンティス・サトシ・ナカモト、カリフォルニア州テンプル市在住の 64 歳の日系米国人エンジニアで、暗号学やビットコインとの記録上の繋がりは無かった。翌日、長期間休眠していたサトシの P2P Foundation アカウントが短文を 1 行[投稿した](/BitcoinArchive/ja/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/):
 
 > 「私はドリアン・ナカモトではない」
 
@@ -71,4 +71,4 @@ timeline
 
 ## 仮説としての位置付け
 
-ドリアン・ナカモトのサトシ候補としての位置は、名前一致のみに依拠する — ビットコインのコードベースとの技術的繋がり、サイファーパンクとしての実績、ビットコイン v0.1 規模のプログラミング業務、貨幣設計の検討履歴、いずれも文書として存在しない。Newsweek が立てた論とその反証は[ドリアン・ナカモト＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis/)に並べてある。[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は彼を固有名候補の中に位置づけている。
+ドリアン・ナカモトのサトシ候補としての位置は、名前一致のみに依拠する。ビットコインのコードベースとの技術的繋がり、サイファーパンクとしての実績、ビットコイン v0.1 規模のプログラミング業務、貨幣設計の検討履歴、いずれも文書として存在しない。Newsweek が立てた論とその反証は[ドリアン・ナカモト＝サトシ仮説](/BitcoinArchive/ja/entries/analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis/)に並べてある。[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は彼を固有名候補の中に位置づけている。
