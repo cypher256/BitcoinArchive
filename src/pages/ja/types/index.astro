@@ -16,7 +16,7 @@ const structuredData = {
   "@type": "CollectionPage",
   "name": `${t('nav.types' as any)} - ${t('site.title')}`,
   "url": absoluteUrl('/types/', lang),
-  "description": t('site.description'),
+  "description": t('types.description'),
   "inLanguage": lang,
   "mainEntity": {
     "@type": "ItemList",
@@ -35,7 +35,7 @@ const structuredData = {
 
 <BaseLayout
   title={`${t('nav.types' as any)} - ${t('site.title')}`}
-  description={t('site.description')}
+  description={t('types.description')}
   lang={lang}
   alternateEn={absoluteUrl('/types/', 'en')}
   structuredData={structuredData}

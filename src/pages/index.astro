@@ -103,7 +103,7 @@ const structuredData = {
   "@type": "CollectionPage",
   "name": t('site.title'),
   "url": absoluteUrl('/', lang),
-  "description": t('site.description'),
+  "description": t('site.metaDescription'),
   "inLanguage": lang,
   "mainEntity": {
     "@type": "ItemList",
@@ -125,7 +125,7 @@ function tagWeight(count: number, max: number): number {
 
 <BaseLayout
   title={`${t('site.title')} - ${t('site.subtitle')}`}
-  description={t('site.description')}
+  description={t('site.metaDescription')}
   lang={lang}
   alternateJa={absoluteUrl('/', 'ja')}
   ogImage={heroImage.src}
