@@ -253,6 +253,52 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
       })();
     </script>
     {/*
+      Height-aware table sizing. On wide screens, a 2- or 3-column table
+      can be shorter either with its natural content width or with a shared
+      30em cell cap. CSS cannot compare those two rendered heights, so try
+      the bounded layout for every such table and keep it only when it is
+      no taller. The attribute is runtime state, not a per-table rule.
+      Below 1200px the existing responsive cap remains unchanged.
+    */}
+    <script>
+      (() => {
+        const tables = () =>
+          Array.from(
+            document.querySelectorAll('.figure-block[data-kind="table"] > table'),
+          ).filter((table) => {
+            const columns = table.rows[0]?.cells.length ?? 0;
+            return columns >= 2 && columns <= 3;
+          });
+        let ticking = false;
+        const apply = () => {
+          const candidates = tables();
+          candidates.forEach((table) => {
+            table.removeAttribute('data-width-trial');
+          });
+          if (window.innerWidth < 1200) return;
+          for (const table of candidates) {
+            const naturalHeight = table.getBoundingClientRect().height;
+            table.setAttribute('data-width-trial', '');
+            const boundedHeight = table.getBoundingClientRect().height;
+            if (boundedHeight > naturalHeight + 0.5) {
+              table.removeAttribute('data-width-trial');
+            }
+          }
+        };
+        const schedule = () => {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(() => {
+            ticking = false;
+            apply();
+          });
+        };
+        apply();
+        addEventListener('resize', schedule, { passive: true });
+        if (document.fonts) document.fonts.ready.then(schedule);
+      })();
+    </script>
+    {/*
       Overflow-only table breakout (pairs with global.css
       `.figure-outer[data-breakout]`, see the figure-block section there).
       A table that fits the prose column keeps its exact in-column layout;

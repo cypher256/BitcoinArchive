@@ -1102,13 +1102,6 @@ th, td {
      next line, giving a slimmer column without sacrificing
      readability. */
   line-break: loose;
-  /* `auto-phrase` (Chrome 119+/Safari 17.4+) breaks JA prose at
-     phrase boundaries rather than between arbitrary characters,
-     so when a long cell does wrap it does so at natural reading
-     breaks instead of leaving one character per line (which is
-     what happens on narrow viewports when the browser squeezes
-     a long cell into 1ch). */
-  word-break: auto-phrase;
 }
 
 /* Cell width cap. Each body cell is capped at 25em so a single
@@ -1133,6 +1126,12 @@ table td {
   table:not(:has(tr > :nth-child(4))) th,
   table:not(:has(tr > :nth-child(4))) td {
     max-width: none;
+  }
+  /* `data-width-trial` is added only when the common runtime check finds
+     that the bounded layout is shorter for this table. */
+  .figure-block[data-kind="table"] > table[data-width-trial] th,
+  .figure-block[data-kind="table"] > table[data-width-trial] td {
+    max-width: 30em;
   }
   .figure-block[data-kind="table"] > table:not(:has(tr > :nth-child(4))) {
     width: auto;
