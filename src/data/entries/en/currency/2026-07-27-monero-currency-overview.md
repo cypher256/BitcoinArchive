@@ -45,6 +45,8 @@ secondarySources:
     url: "https://ccs.getmonero.org/what-is-ccs/"
   - name: "What Bitcoin Did — interview transcript with Riccardo Spagni (October 8, 2018)"
     url: "https://medium.com/@whatbitcoindid/why-crypto-privacy-is-important-with-moneros-riccardo-fluffypony-spagni-e733df92c567"
+  - name: "Coin Story — 'Coin Perspective #13: Riccardo Spagni' (December 30, 2020)"
+    url: "https://medium.com/coin-story/coin-perspective-13-riccardo-spagni-69ef82907bd1"
 relatedEntries:
   - aftermath/2014-04-18-riccardo-spagni-biography
   - analysis/2026-07-26-altcoin-count-and-design-comparison

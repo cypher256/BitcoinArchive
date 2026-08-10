@@ -20,6 +20,8 @@ tags:
 secondarySources:
   - name: "PR Newswire — nChain がオリジナルプロトコルの復元を発表 (2018 年 8 月 16 日)"
     url: "https://www.prnewswire.com/news-releases/bitcoin-sv-full-node-implementation-launched-to-fully-restore-original-bitcoin-protocol-300698140.html"
+  - name: "PR Newswire — CoinGeek が nChain と Teranode プロジェクトで提携、1 TB ブロックと毎秒 700 万取引を目指す (2018 年 11 月 23 日)"
+    url: "https://www.prnewswire.com/news-releases/coingeek-partners-on-teranode-project-with-nchain-enabling-path-to-1-terabyte-blocks-and-7-million-transactions-per-second-for-bitcoin-bch-sv--886459515.html"
   - name: "PR Newswire — 世界初の 128 MB ブロックを採掘 (2019 年 4 月)"
     url: "https://www.prnewswire.com/news-releases/bitcoin-sv-bsv-mines-world-record-128mb-blocks-300824575.html"
   - name: "PR Newswire — 「Quasar」アップグレードでブロック上限を 2 GB へ (2019 年 7 月)"
@@ -34,6 +36,8 @@ secondarySources:
     url: "https://www.coindesk.com/markets/2019/04/16/kraken-exchange-joins-binance-shapeshift-in-delisting-bitcoin-sv"
   - name: "CoinDesk — ビットコイン SV が 51% 攻撃を受けたとの報告 (2021 年 8 月 4 日)"
     url: "https://www.coindesk.com/markets/2021/08/04/bsv-suffers-51-attack-report"
+  - name: "CoinGeek — 2021 年 7 月の BSV ネットワークに対するブロック隠匿・再編成攻撃 FAQ"
+    url: "https://coingeek.com/faqs-july-2021-block-withholding-re-organisation-attack-on-the-bsv-network/"
   - name: "Daily Hodl — ライトが Bitcoin Core 開発者への提訴を取り下げ (2024 年 4 月 18 日)"
     url: "https://dailyhodl.com/2024/04/18/self-proclaimed-bitcoin-creator-craig-wright-drops-lawsuit-against-btc-developers/"
   - name: "CoinGecko — ビットコイン SV の価格・時価総額データ"

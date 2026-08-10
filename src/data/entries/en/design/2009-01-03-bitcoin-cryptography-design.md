@@ -15,6 +15,16 @@ tags:
   - "cryptography"
   - "secp256k1"
   - "signatures"
+secondarySources:
+  - name: "Original Bitcoin v0.1.0 source — src/key.h"
+    url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/key.h#L49-L136"
+    note: "Key generation on secp256k1 and OpenSSL ECDSA signing and verification"
+  - name: "Original Bitcoin v0.1.0 source — src/base58.h"
+    url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/base58.h#L117-L200"
+    note: "Base58Check, version byte 0, and public-key-to-address derivation"
+  - name: "Original Bitcoin v0.1.0 source — src/script.cpp"
+    url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/script.cpp#L653-L897"
+    note: "Hash opcodes, OP_CHECKSIG, and the legacy signature-hash path"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-transaction-design
@@ -43,6 +53,12 @@ An important distinction: Bitcoin is a system built on **cryptography**, not **e
 The one exception is BIP 324 (v2 transport protocol), which encrypts peer-to-peer traffic to resist passive surveillance; that is a network-layer concern covered in the P2P design page, not a transaction-layer primitive.
 
 The page depends on the [transaction design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/), which describes how inputs, outputs, and scripts consume the cryptographic primitives described here. Where behavior differs between the Satoshi-era implementation (v0.1, January 2009) and modern Bitcoin Core (v27+ baseline), both are noted.
+
+### The v0.1 implementation trail
+
+The whitepaper states the design at the protocol level; the v0.1 source shows where those primitives entered the program. `CKey` constructs an OpenSSL `EC_KEY` on `secp256k1`, then delegates signing and verification to `ECDSA_sign` and `ECDSA_verify` in [`src/key.h`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/key.h#L49-L136). Address derivation is equally explicit: [`PubKeyToAddress`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/base58.h#L155-L200) applies `Hash160`, prepends version byte `0`, and adds the four-byte `Hash` check before Base58 encoding. The script interpreter exposes the hash opcodes and reaches `OP_CHECKSIG`; its [`SignatureHash`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/script.cpp#L818-L897) routine rewrites the transaction according to the hash type, serializes it, and hashes that result.
+
+This is an implementation record, not evidence of why Satoshi chose each boundary. The code establishes what v0.1 did; the design rationale must still be separated from the behavior that can be observed in the source.
 
 ## 1. Elliptic-curve cryptography
 
@@ -76,7 +92,7 @@ flowchart LR
 
 ## 2. Hash functions
 
-Bitcoin uses three hash constructions across its protocol. None are used for encryption; all serve as commitment or integrity mechanisms.
+Bitcoin uses several hash constructions across its protocol. None are used for encryption; all serve as commitment or integrity mechanisms.
 
 ### Where each hash is used
 

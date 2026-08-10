@@ -16,6 +16,16 @@ tags:
   - "transactions"
   - "script"
   - "signatures"
+secondarySources:
+  - name: "Original Bitcoin v0.1.0 source — src/main.h"
+    url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.h#L193-L363"
+    note: "v0.1 のトランザクション入力・出力・トランザクション構造"
+  - name: "Original Bitcoin v0.1.0 source — src/main.cpp"
+    url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.cpp#L772-L854"
+    note: "入力の接続、署名検証、使用済み出力の記録、手数料計算"
+  - name: "Original Bitcoin v0.1.0 source — src/script.cpp"
+    url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/script.cpp#L692-L897"
+    note: "OP_CHECKSIG とレガシー署名ハッシュの実装"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
@@ -52,6 +62,12 @@ translationStatus: complete
 3. **認可はどのように表現されるか?** ロック条件とアンロック条件を評価するスタックベース言語、ビットコインスクリプトによって表現される。
 
 サトシ時代の実装（v0.1、2009 年 1 月）と現行の Bitcoin Core（v27 以降基準）で挙動が異なる場合は、両方を記す。
+
+### v0.1 のトランザクション経路をソースでたどる
+
+v0.1 のソースコードを読むと、UTXO モデルが具体的な処理として見えてくる。[`CTransaction`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.h#L193-L363) は入力、出力、ロックタイムを保持し、[`ConnectInputs`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.cpp#L772-L854) は参照された各出力をたどり、未成熟のコインベースを拒否し、署名を検証し、出力が使用済みか確認し、使用済みとして記録し、入力額から出力額を引いて手数料を計算する。スクリプト側は別の経路だが、接続している。[`OP_CHECKSIG`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/script.cpp#L692-L897) は署名対象のスクリプトから署名自体を取り除き、レガシー署名ハッシュを構成し、そのダイジェストを公開鍵に対して検証する。
+
+これらのリンクが記録するのは 2009 年 1 月の実装であり、現行 Bitcoin Core が同じ内部コード経路をたどるという主張ではない。そのため、後続の節では v0.1 と現行基準を分けて記載する。
 
 ## 1. UTXO モデル
 
@@ -299,7 +315,7 @@ flowchart TB
 | **改ざん性** | 脆弱 — 第三者が scriptSig を変更可能 | 修正済み — 証人は txid から除外 |
 | **重量/サイズ制限** | トランザクション単位の重量なし。2010 年にブロックサイズ上限を追加 | 最大 400,000 WU の標準トランザクション重量 |
 | **タイムロック** | 絶対ロックタイムのみ（ブロック高または Unix 時刻） | 絶対（ロックタイム）+ 相対 (BIP 68 シーケンス) + スクリプトレベル (`OP_CLTV`、`OP_CSV`) |
-| **手数料引上げによる置換** | 未実装。先着順ポリシー | 完全 RBF (BIP 125。v24.0 以降既定、v28.0 でメモリープールポリシーとして必須化) |
+| **手数料引上げによる置換** | 未実装。先着順ポリシー | オプトイン RBF（BIP 125、v0.12）。`-mempoolfullrbf` は v24.0 で追加され、完全 RBF は v28.0 以降の既定ポリシー |
 | **手数料推定** | なし（実質的にトランザクションは無料） | `estimatesmartfee` — バケットベースのメモリープール手数料推定 |
 | **コイン選択** | 単純な最大額優先 | BnB + ナップサック + 無駄指標パイプライン |
 | **暗号ライブラリ** | OpenSSL | libsecp256k1（定数時間、正式監査済み） |

@@ -47,6 +47,10 @@ secondarySources:
     url: "https://cryptonews.net/news/altcoins/32991057/"
   - name: "Real Vision — 'Polkadot: A Bet Against Maximalism,' Gavin Wood interview (January 2021)"
     url: "https://www.realvision.com/shows/the-interview-crypto/videos/polkadot-a-bet-against-maximalism"
+  - name: "Polkadot official X account — supply-cap announcement (1.6 billion DOT circulating, 120 million DOT annual issuance)"
+    url: "https://x.com/Polkadot/status/1967241017314115889"
+  - name: "Polkadot official X account — Wood says Bitcoin pioneered robustness"
+    url: "https://x.com/Polkadot/status/1922351136285028715"
 relatedEntries:
   - analysis/2026-07-26-altcoin-count-and-design-comparison
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features

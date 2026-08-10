@@ -23,6 +23,8 @@ secondarySources:
     url: "https://ja.wikipedia.org/wiki/Winny"
   - name: "Wikipedia（英語）— Isamu Kaneko"
     url: "https://en.wikipedia.org/wiki/Isamu_Kaneko"
+  - name: "Wikipedia（英語）— Winny"
+    url: "https://en.wikipedia.org/wiki/Winny"
 partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis

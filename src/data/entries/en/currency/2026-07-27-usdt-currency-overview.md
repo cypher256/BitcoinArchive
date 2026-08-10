@@ -46,6 +46,8 @@ secondarySources:
     url: "https://blocksec.com/blog/1-26-billion-frozen-usdt-blacklisting-on-ethereum-and-tron-in-2025"
   - name: "CoinGecko — Tether (USDT) market data"
     url: "https://www.coingecko.com/en/coins/tether"
+  - name: "CoinDesk Research — USDT on Tron reaches $89 billion, about 47% of all USDT (Q2 2026)"
+    url: "https://x.com/CoinDesk/status/2079559557387538629"
 relatedEntries:
   - analysis/2026-07-26-altcoin-count-and-design-comparison
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features

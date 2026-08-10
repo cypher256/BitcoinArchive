@@ -16,6 +16,16 @@ tags:
   - "transactions"
   - "script"
   - "signatures"
+secondarySources:
+  - name: "Original Bitcoin v0.1.0 source — src/main.h"
+    url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.h#L193-L363"
+    note: "The v0.1 transaction input, output, and transaction structures"
+  - name: "Original Bitcoin v0.1.0 source — src/main.cpp"
+    url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.cpp#L772-L854"
+    note: "Input connection, signature verification, spent-output marking, and fee calculation"
+  - name: "Original Bitcoin v0.1.0 source — src/script.cpp"
+    url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/script.cpp#L692-L897"
+    note: "OP_CHECKSIG and the legacy signature-hash implementation"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
@@ -51,6 +61,12 @@ The transaction layer answers three questions:
 3. **How is authorization expressed?** Through Bitcoin Script — a stack-based language that evaluates locking and unlocking conditions.
 
 Where behavior differs between the Satoshi-era implementation (v0.1, January 2009) and modern Bitcoin Core (v27+ baseline), both are noted.
+
+### The v0.1 transaction path in source
+
+The v0.1 source makes the UTXO model concrete. [`CTransaction`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.h#L193-L363) stores inputs, outputs, and locktime; [`ConnectInputs`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.cpp#L772-L854) follows each referenced output, rejects an immature coinbase, verifies the signature, checks whether the output is already spent, marks it spent, and computes the fee as input value minus output value. The script side is a separate but connected path: [`OP_CHECKSIG`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/script.cpp#L692-L897) removes the signature from the script being signed, constructs the legacy signature hash, and verifies the resulting digest against the public key.
+
+These links document the January 2009 implementation rather than claiming that modern Bitcoin Core follows the same internal code path. The later sections therefore keep the v0.1 and modern baselines separate.
 
 ## 1. The UTXO model
 

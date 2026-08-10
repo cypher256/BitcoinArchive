@@ -21,6 +21,12 @@ tags:
 secondarySources:
   - name: "Polkadot 公式ウィキ — ジェネシスからガバナンス移行までの経緯 (プルーフ・オブ・オーソリティでの起動、NPoS への移行、Sudo 除去)"
     url: "https://wiki.polkadot.com/general/faq/"
+  - name: "Polkadot 公式ウィキ — 合意形成 (BABE によるブロック生成と GRANDPA による確定)"
+    url: "https://wiki.polkadot.com/learn/learn-consensus/"
+  - name: "Polkadot 公式ウィキ — ステーキング (時代・セッションの長さとバリデーターの交代)"
+    url: "https://wiki.polkadot.com/learn/learn-staking/"
+  - name: "Polkadot 公式ウィキ — OpenGov (15 の起源トラック、確信度投票、Governance V1 の置き換え)"
+    url: "https://wiki.polkadot.com/learn/learn-polkadot-opengov/"
   - name: "Web3 財団 — DOT リデノミネーション投票の結果 (2020 年 8 月)"
     url: "https://medium.com/polkadot-network/results-of-dot-redenomination-referendum-631a6dd0d46c"
   - name: "Polkadot サポート — DOT の総供給量について (21 億枚の上限と段階的発行予定表)"
@@ -43,6 +49,8 @@ secondarySources:
     url: "https://www.realvision.com/shows/the-interview-crypto/videos/polkadot-a-bet-against-maximalism"
   - name: "Polkadot 公式 X アカウント — ウッドの発言「ビットコインは頑健性を切り拓いた」"
     url: "https://x.com/Polkadot/status/1922351136285028715"
+  - name: "Wikipedia — ポルカドット (暗号資産) (2019 年の非公開販売と 2021 年 12 月のパラチェーン開始)"
+    url: "https://en.wikipedia.org/wiki/Polkadot_(cryptocurrency)"
 relatedEntries:
   - analysis/2026-07-26-altcoin-count-and-design-comparison
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features

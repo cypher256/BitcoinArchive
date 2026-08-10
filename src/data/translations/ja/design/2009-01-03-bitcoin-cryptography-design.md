@@ -15,6 +15,16 @@ tags:
   - "cryptography"
   - "secp256k1"
   - "signatures"
+secondarySources:
+  - name: "Original Bitcoin v0.1.0 source — src/key.h"
+    url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/key.h#L49-L136"
+    note: "secp256k1 の鍵生成と OpenSSL による ECDSA 署名・検証"
+  - name: "Original Bitcoin v0.1.0 source — src/base58.h"
+    url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/base58.h#L117-L200"
+    note: "Base58Check、バージョンバイト 0、公開鍵からアドレスへの導出"
+  - name: "Original Bitcoin v0.1.0 source — src/script.cpp"
+    url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/script.cpp#L653-L897"
+    note: "ハッシュ・オペコード、OP_CHECKSIG、レガシー署名ハッシュの経路"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-transaction-design
@@ -44,6 +54,12 @@ translationStatus: complete
 唯一の例外は BIP 324（v2 トランスポートプロトコル）で、受動的な監視に対抗するためにピアツーピアの通信を暗号化する。これはネットワーク層の問題であり、P2P 設計ページで扱う。トランザクション層の基本要素ではない。
 
 本ページは[トランザクション設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)に依存する。同ページでは、入力・出力・スクリプトがここで記述する暗号学的基本要素をどのように消費するかを説明している。サトシ時代の実装（v0.1、2009 年 1 月）と現代の Bitcoin Core（v27 以降を基準）で挙動が異なる箇所は、双方を記載する。
+
+### v0.1 実装をたどる
+
+ホワイトペーパーはプロトコルの設計を記す。v0.1 のソースコードを読むと、各要素がプログラムのどこに入るかが分かる。`CKey` は OpenSSL の `EC_KEY` を `secp256k1` 用に生成し、署名と検証を `ECDSA_sign` と `ECDSA_verify` に委ねている。[`src/key.h`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/key.h#L49-L136) にこの経路が残る。アドレス導出も明確で、[`PubKeyToAddress`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/base58.h#L155-L200) が `Hash160` を適用し、バージョンバイト `0` を前置し、4 バイトの `Hash` チェック値を加えて Base58 にエンコードする。スクリプト・インタープリターにはハッシュ・オペコードと `OP_CHECKSIG` があり、[`SignatureHash`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/script.cpp#L818-L897) はハッシュ種別に応じてトランザクションを書き換え、直列化した結果をハッシュする。
+
+これは実装の記録であり、サトシが各境界をなぜ選んだかの証拠ではない。コードから確定できる v0.1 の挙動と、設計理由の解釈は分けて扱う必要がある。
 
 ## 1. 楕円曲線暗号
 
@@ -77,7 +93,7 @@ flowchart LR
 
 ## 2. ハッシュ関数
 
-ビットコインはプロトコル全体で 3 つのハッシュ構成を使用する。いずれも暗号化には使われず、すべてコミットメントまたは完全性のメカニズムとして機能する。
+ビットコインはプロトコル全体で複数のハッシュ構成を使用する。いずれも暗号化には使われず、すべてコミットメントまたは完全性のメカニズムとして機能する。
 
 ### 各ハッシュの使用箇所
 

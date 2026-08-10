@@ -39,6 +39,8 @@ secondarySources:
     url: "https://www.sec.gov/newsroom/press-releases/2020-338"
   - name: "SEC v. Ripple Labs — Order, Case 1:20-cv-10832-AT-SN, Doc. 874 (S.D.N.Y., July 13, 2023)"
     url: "https://www.nysd.uscourts.gov/sites/default/files/2023-07/SEC%20vs%20Ripple%207-13-23.pdf"
+  - name: "Free Writings & Perspectives — SDNY issues final ruling on SEC v. Ripple (August 2024)"
+    url: "https://www.freewritings.law/2024/08/sdny-issues-final-ruling-on-sec-v-ripple/"
   - name: "Duane Morris — District judge imposes $125 million fine on Ripple Labs (August 14, 2024)"
     url: "https://blogs.duanemorris.com/fintech/2024/08/14/district-judge-imposes-125-million-fine-on-ripple-labs-demanding-no-future-securities-law-infringements-after-3-plus-year-battle-with-sec/"
   - name: "The Defiant — SEC and Ripple end five-year XRP lawsuit with joint appeal dismissal (August 2025)"
@@ -49,6 +51,8 @@ secondarySources:
     url: "https://blockonomi.com/bitcoin-store-of-value-not-payment-system/"
   - name: "The Crypto Basic — Ripple CTO Emeritus says Bitcoin's decentralization doesn't come from PoW (March 24, 2026)"
     url: "https://thecryptobasic.com/2026/03/24/ripple-cto-emeritus-says-bitcoins-decentralization-doesnt-come-from-pow/"
+  - name: "SEC — Commissioner Crenshaw's statement on the Ripple settlement (May 8, 2025)"
+    url: "https://www.sec.gov/newsroom/speeches-statements/crenshaw-statement-ripple-050825"
 relatedEntries:
   - analysis/2026-07-26-altcoin-count-and-design-comparison
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features

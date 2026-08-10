@@ -5,7 +5,7 @@
   "scripts": {
     "predev": "kill -9 $(lsof -ti tcp:4321 -sTCP:LISTEN) 2>/dev/null; sleep 1",
     "dev": "node scripts/generate-derived-related.mjs && node scripts/generate-derived-commentaries.mjs && node scripts/generate-git-dates.mjs && node scripts/generate-keyword-index.mjs && astro dev",
-    "build": "node scripts/check-registry.mjs && node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/check-ja-tone.mjs && node scripts/check-ja-names.mjs && node scripts/check-ja-titles.mjs && node scripts/check-ja-tags.mjs && node scripts/check-ja-participant-slugs.mjs && node scripts/check-ja-block-notation.mjs && node scripts/check-ja-spacing.mjs && node scripts/check-ja-glossary.mjs --ignore-file .ja-glossary-ignore && node scripts/check-description-length.mjs --strict && node scripts/check-source-duplication.mjs --strict && node scripts/check-no-self-domain.mjs --strict && node scripts/check-halving-consistency.mjs && node scripts/check-quotes.mjs && node scripts/check-quote-translation-consistency.mjs && node scripts/check-tweet-metadata.mjs && node scripts/check-duplicate-ids.mjs && node scripts/check-internal-links.mjs && node scripts/generate-derived-related.mjs && node scripts/generate-derived-commentaries.mjs && node scripts/generate-git-dates.mjs && node scripts/generate-keyword-index.mjs && astro build && node scripts/algolia-index.mjs",
+    "build": "node scripts/check-registry.mjs && node scripts/check-markdown-image-alt.mjs && node scripts/check-participants.mjs && node scripts/check-ja-tone.mjs && node scripts/check-ja-names.mjs && node scripts/check-ja-titles.mjs && node scripts/check-ja-tags.mjs && node scripts/check-ja-participant-slugs.mjs && node scripts/check-ja-block-notation.mjs && node scripts/check-ja-spacing.mjs && node scripts/check-ja-glossary.mjs --ignore-file .ja-glossary-ignore && node scripts/check-description-length.mjs --strict && node scripts/check-source-duplication.mjs --strict && node scripts/check-no-self-domain.mjs --strict && node scripts/check-citation-parity.mjs && node scripts/check-halving-consistency.mjs && node scripts/check-quotes.mjs && node scripts/check-quote-translation-consistency.mjs && node scripts/check-tweet-metadata.mjs && node scripts/check-duplicate-ids.mjs && node scripts/check-internal-links.mjs && node scripts/generate-derived-related.mjs && node scripts/generate-derived-commentaries.mjs && node scripts/generate-git-dates.mjs && node scripts/generate-keyword-index.mjs && astro build && node scripts/algolia-index.mjs",
     "check": "node scripts/with-lock.mjs npm run check:run",
     "check:run": "node scripts/run-check-parallel.mjs",
     "check:registry": "node scripts/check-registry.mjs",
@@ -29,6 +29,7 @@
     "check:llms-counts": "node scripts/check-llms-counts.mjs",
     "check:source-duplication": "node scripts/check-source-duplication.mjs",
     "check:no-self-domain": "node scripts/check-no-self-domain.mjs",
+    "check:citation-parity": "node scripts/check-citation-parity.mjs",
     "check:halving-consistency": "node scripts/check-halving-consistency.mjs",
     "check:mermaid": "node scripts/check-mermaid.mjs",
     "check:mermaid-ja-wrap": "node scripts/check-mermaid-ja-wrap.mjs",

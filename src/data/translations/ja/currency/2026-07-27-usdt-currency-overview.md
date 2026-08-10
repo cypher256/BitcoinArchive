@@ -44,6 +44,8 @@ secondarySources:
     url: "https://blocksec.com/blog/1-26-billion-frozen-usdt-blacklisting-on-ethereum-and-tron-in-2025"
   - name: "Tether — 直接発行・償還の手数料と最低額に関する公式ページ"
     url: "https://tether.to/en/fees/"
+  - name: "CoinGecko — Tether (USDT) の市場データ"
+    url: "https://www.coingecko.com/en/coins/tether"
   - name: "CoinDesk Research — Tron 上の USDT が過去最高の 890 億ドル、全 USDT のおよそ 47% に達したとの分析 (2026 年第 2 四半期)"
     url: "https://x.com/CoinDesk/status/2079559557387538629"
 relatedEntries:

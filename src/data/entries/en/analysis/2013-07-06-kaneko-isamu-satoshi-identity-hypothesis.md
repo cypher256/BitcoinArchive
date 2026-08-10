@@ -23,6 +23,8 @@ secondarySources:
     url: "https://ja.wikipedia.org/wiki/%E9%87%91%E5%AD%90%E5%8B%87"
   - name: "Wikipedia (English) — Winny"
     url: "https://en.wikipedia.org/wiki/Winny"
+  - name: "Wikipedia (Japanese) — Winny"
+    url: "https://ja.wikipedia.org/wiki/Winny"
 partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis

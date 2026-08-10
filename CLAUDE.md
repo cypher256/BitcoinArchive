@@ -44,6 +44,22 @@ If a session has been long-running and the guides have already been
 read fully, this gate is satisfied; do not re-read on every prompt.
 But on the first edit of a session, the gate fires unconditionally.
 
+## Page-history regression gate
+
+Before changing any page or page data, inspect the target file's history
+before deciding what to edit. Read the target and its EN/JA counterpart
+in full, then use `git log --follow -p`, `git blame` for the affected
+lines, and `git log -S` for text that was previously added, removed,
+restored, or reverted. Check related pages and the existing checks before
+an edit. If the requested change conflicts with an intentional historical
+decision, stop before editing and resolve the conflict explicitly.
+
+After editing, reread the target and counterpart in full, inspect the
+complete diff, compare facts, sources, dates, links, and structure, and
+run the applicable checks plus `git diff --check`. A passing check does
+not replace the full reread. Do not mechanically propagate a page change
+to similar pages without reviewing each page's history and content.
+
 ## Commit Messages
 
 Write in English. (public repository)

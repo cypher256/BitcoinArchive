@@ -34,6 +34,20 @@ secondarySources:
     url: "https://www.cnbc.com/2025/06/04/stablecoin-issuer-circle-prices-ipo-at-31-above-expected-range-ahead-of-nyse-debut.html"
   - name: "CoinGecko — USDC price, supply, and market-cap data"
     url: "https://www.coingecko.com/en/coins/usdc"
+  - name: "Circle — '$3.3 billion of USDC reserve risk removed, dollar de-peg closes' (March 2023)"
+    url: "https://www.circle.com/pressroom/3-3-billion-of-usdc-reserve-risk-removed-dollar-de-peg-closes"
+  - name: "CoinDesk — USDC regains its dollar peg after Silicon Valley Bank-induced chaos (March 13, 2023)"
+    url: "https://www.coindesk.com/business/2023/03/13/usdc-stablecoin-regains-dollar-peg-after-silicon-valley-bank-induced-chaos"
+  - name: "CoinDesk — Coinbase buys a stake in Circle and USDC adds six blockchains (August 21, 2023)"
+    url: "https://www.coindesk.com/business/2023/08/21/coinbase-buys-a-stake-in-stablecoin-operator-circle-and-usdc-adds-6-new-blockchains"
+  - name: "Circle — New levels of detail in the monthly USDC attestation"
+    url: "https://www.circle.com/blog/new-levels-of-detail-in-the-monthly-usdc-attestation"
+  - name: "FXStreet — Circle CEO: non-sovereign money like Bitcoin is going to become more important (June 25, 2019)"
+    url: "https://www.fxstreet.com/amp/cryptocurrencies/news/circle-ceo-non-sovereign-money-like-bitcoin-is-going-to-become-more-important-201906252359"
+  - name: "FXStreet — Circle CEO optimistic about Bitcoin's safe-haven status despite recent volatility (August 20, 2019)"
+    url: "https://www.fxstreet.com/amp/cryptocurrencies/news/circle-ceo-optimistic-about-bitcoin-safe-haven-status-despite-recent-volatility-201908201330"
+  - name: "Benzinga — Circle CEO Jeremy Allaire bets big on Bitcoin and stablecoins (June 19, 2024)"
+    url: "https://www.benzinga.com/markets/cryptocurrency/24/06/39404709/circle-ceo-jeremy-allaire-bets-big-on-bitcoin-stablecoins-im-more-bullish-than-i-have-ever"
 relatedEntries:
   - aftermath/2018-09-26-jeremy-allaire-biography
   - analysis/2026-07-26-altcoin-count-and-design-comparison
