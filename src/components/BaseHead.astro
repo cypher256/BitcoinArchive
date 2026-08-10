@@ -206,10 +206,14 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
   "@id": organizationId,
   "name": siteName,
   "url": primaryOrigin,
+  "description": t('organization.description'),
   "logo": {
     "@type": "ImageObject",
     "url": `${primaryOrigin}/images/apple-touch-icon.png`,
   },
+  "sameAs": [
+    "https://github.com/cypher256/BitcoinArchive",
+  ],
 })} />
 {normalizedStructuredData.map((schema) => (
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
