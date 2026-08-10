@@ -80,6 +80,19 @@ Editorial readings authored under the Bitcoin Institute byline. Each analysis is
 - **Bitcoin v0.1 distribution and tooling anomalies**: editorial reading of .rar packaging, missing version control, Hungarian notation, OpenSSL dependency, and the Kaminsky 2011 audit; distinguishes "foresighted security architecture" from "informal development process" as separable observations.
 - **Satoshi's launch-period environment**: forensic reading of "from where I am" in the January 10 email to Hal Finney, combined with the unusually dense Jan 8-12 activity cadence.
 
+### Technical source readings
+
+For page-level citation format and a fixed-source map linking each technical reading to the exact source revisions it uses, see:
+
+- Citation guidance: https://bitcoin-institute.pages.dev/cite/
+
+These original Bitcoin Institute readings expose the source files and fixed revisions used for their Bitcoin v0.1 technical claims:
+
+- [Satoshi source code analysis](https://bitcoin-institute.pages.dev/entries/analysis/2009-01-09-satoshi-code-analysis/): coding style, commit history, and source evolution from v0.1.0 through v0.3.19.
+- [Genesis block hardcode analysis](https://bitcoin-institute.pages.dev/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/): deterministic Block 0 construction, the five-day timestamp gap, and the unspendable coinbase.
+- [Bitcoin cryptography design](https://bitcoin-institute.pages.dev/entries/design/2009-01-03-bitcoin-cryptography-design/): keys, signatures, hashes, and address derivation tied to the v0.1 source.
+- [Bitcoin transaction design](https://bitcoin-institute.pages.dev/entries/design/2009-01-03-bitcoin-transaction-design/): UTXO, Script, signature verification, and transaction structure from the launch implementation through later protocol changes.
+
 ### Whitepapers (2 entries)
 Bitcoin whitepaper draft (October 3, 2008) and final version (October 31, 2008).
 

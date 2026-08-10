@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use the Bitcoin Institute Archive, cite the archive and the specific page or pages used."
+title: "Bitcoin Institute Archive"
+type: dataset
+authors:
+  - name: "Bitcoin Institute"
+version: "0.0.1"
+date-released: 2026-08-11
+repository-code: "https://github.com/cypher256/BitcoinArchive"
+url: "https://bitcoin-institute.pages.dev/"
+keywords:
+  - Bitcoin
+  - Satoshi Nakamoto
+  - primary sources
+  - archive
+  - technical history

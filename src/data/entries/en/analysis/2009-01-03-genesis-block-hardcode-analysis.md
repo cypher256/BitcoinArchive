@@ -3,7 +3,7 @@ title: "The genesis block puzzle: why hardcoded, why five days unmined?"
 date: 2009-01-03T18:15:05Z
 type: "analysis"
 source: "github"
-sourceUrl: "https://github.com/trottier/original-bitcoin"
+sourceUrl: "https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/main.cpp"
 author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
@@ -21,8 +21,8 @@ tags:
   - "hardcode"
   - "blockchain"
 secondarySources:
-  - name: "Modern Bitcoin Core chainparams.cpp"
-    url: "https://github.com/bitcoin/bitcoin/blob/master/src/kernel/chainparams.cpp"
+  - name: "Modern Bitcoin Core chainparams.cpp — pinned commit 757aa57"
+    url: "https://github.com/bitcoin/bitcoin/blob/757aa573c458a1225ec0da89278fc7b0217f46b6/src/kernel/chainparams.cpp"
   - name: "Bitcoin Wiki — Genesis block"
     url: "https://en.bitcoin.it/wiki/Genesis_block"
   - name: "Lerner (2013) — A new mystery about Satoshi"

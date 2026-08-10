@@ -1,0 +1,202 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { absoluteUrl, localePath } from '../../i18n/utils';
+
+const lang = 'ja';
+const canonicalUrl = absoluteUrl('/cite/', lang);
+
+const sourceReadings = [
+  {
+    title: 'サトシのソースコード分析',
+    entryUrl: localePath('/entries/analysis/2009-01-09-satoshi-code-analysis/', lang),
+    sources: [
+      ['Bitcoin v0.1.0 ソースツリー', 'https://github.com/trottier/original-bitcoin/tree/4184ab26345d19e87045ce7d9291e60e7d36e096'],
+      ['Bitcoin v0.3.19 ソースツリー', 'https://github.com/bitcoin/bitcoin/tree/fc73ad644f0b87b91f49b7f6f6b2348f78bdbbf4'],
+    ],
+  },
+  {
+    title: 'ジェネシスブロックのハードコード分析',
+    entryUrl: localePath('/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/', lang),
+    sources: [
+      ['初期 v0.1 src/main.cpp', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/main.cpp'],
+      ['Bitcoin Core chainparams.cpp', 'https://github.com/bitcoin/bitcoin/blob/757aa573c458a1225ec0da89278fc7b0217f46b6/src/kernel/chainparams.cpp'],
+    ],
+  },
+  {
+    title: 'ビットコインの暗号設計',
+    entryUrl: localePath('/entries/design/2009-01-03-bitcoin-cryptography-design/', lang),
+    sources: [
+      ['v0.1 src/key.h', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/key.h'],
+      ['v0.1 src/base58.h', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/base58.h'],
+      ['v0.1 src/script.cpp', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/script.cpp'],
+    ],
+  },
+  {
+    title: 'ビットコインのトランザクション設計',
+    entryUrl: localePath('/entries/design/2009-01-03-bitcoin-transaction-design/', lang),
+    sources: [
+      ['v0.1 src/main.h', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/main.h'],
+      ['v0.1 src/main.cpp', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/main.cpp'],
+      ['v0.1 src/script.cpp', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/script.cpp'],
+    ],
+  },
+  {
+    title: 'ビットコインのタイムワープ攻撃',
+    entryUrl: localePath('/entries/analysis/2009-01-09-bitcoin-time-warp-attack/', lang),
+    sources: [
+      ['v0.1 src/main.cpp（難易度調整コード）', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/main.cpp#L685-L707'],
+      ['BIP54 仕様', 'https://github.com/bitcoin/bips/blob/79334a16fc69414412029f259c67017c503930b2/bip-0054.md'],
+    ],
+  },
+  {
+    title: 'マイニング報酬終了後の手数料のみの将来',
+    entryUrl: localePath('/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/', lang),
+    sources: [
+      ['Bitcoin Core src/validation.cpp', 'https://github.com/bitcoin/bitcoin/blob/4f348c2d730ce167d2918727aa2fdb6849182ab1/src/validation.cpp#L1836-L1846'],
+    ],
+  },
+  {
+    title: 'AIと暗号資産投資の調査',
+    entryUrl: localePath('/entries/analysis/2026-08-02-ai-crypto-investment-survey/', lang),
+    sources: [
+      ['Bitcoin Core src/consensus/amount.h', 'https://github.com/bitcoin/bitcoin/blob/756afe14b5c1c5f7a0b21f2143289d2c6dea5e2e/src/consensus/amount.h#L14-L27'],
+    ],
+  },
+  {
+    title: 'Forensicxs による Bitcoin v0.1 コード解説',
+    entryUrl: localePath('/entries/aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough/', lang),
+    sources: [
+      ['初期 Bitcoin v0.1.0 ソースツリー', 'https://github.com/trottier/original-bitcoin/tree/4184ab26345d19e87045ce7d9291e60e7d36e096'],
+    ],
+  },
+];
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'ビットコイン・インスティテュート・アーカイブの引用方法',
+  description: 'ビットコイン・インスティテュート・アーカイブの引用方法と固定出典マップ。',
+  url: canonicalUrl,
+  inLanguage: 'ja',
+  isPartOf: { '@type': 'WebSite', url: absoluteUrl('/', lang) },
+};
+---
+
+<BaseLayout
+  title="ビットコイン・インスティテュート・アーカイブの引用方法"
+  description="ビットコイン・インスティテュート・アーカイブの引用方法と固定出典マップ。"
+  lang={lang}
+  canonicalUrl={canonicalUrl}
+  alternateEn={absoluteUrl('/cite/', 'en')}
+  breadcrumbs={[
+    { name: 'ホーム', url: absoluteUrl('/', lang) },
+    { name: '引用方法', url: canonicalUrl },
+  ]}
+  structuredData={structuredData}
+>
+  <div class="container citation-page">
+    <h1>ビットコイン・インスティテュート・アーカイブの引用方法</h1>
+    <p>
+      このページでは、アーカイブを安定して引用する形式と、技術的な読み解きの裏付けとなる正確な出典リビジョンを示します。
+      利用したアーカイブのページを示し、特定の文書やコードスナップショットに基づく主張では、その一次資料も併記してください。
+    </p>
+
+    <h2>推奨する引用形式</h2>
+    <div class="citation-block">
+      <p>Bitcoin Institute. 「ページタイトル」. <em>Bitcoin Institute Archive</em>. 公開日または更新日. 正規URL.</p>
+      <p>アーカイブ全体を引用する場合:</p>
+      <p><code>Bitcoin Institute. <em>Bitcoin Institute Archive</em>. 2026. {absoluteUrl('/', lang)}</code></p>
+    </div>
+
+    <h2>出典の示し方</h2>
+    <p>
+      一次資料エントリーは原文を保持します。編者による読み解きでは、根拠となる資料をページ内の参照に示します。
+      ソースコードに依存する技術的な主張では、特定のGitコミットを使い、コミット、ファイル、必要に応じて行範囲を示します。
+      固定コミットはブランチの更新によって内容が移動しません。
+    </p>
+    <p>
+      英語版と日本語版は並行する表示です。両言語の出典URL集合を揃えているため、どちらの言語版からでも同じ根拠を引用できます。
+    </p>
+
+    <h2>技術出典マップ</h2>
+    <table class="source-table">
+      <thead>
+        <tr>
+          <th>読み解き</th>
+          <th>固定された出典リビジョン</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sourceReadings.map((reading) => (
+          <tr>
+            <th scope="row"><a href={reading.entryUrl}>{reading.title}</a></th>
+            <td>
+              <ul>
+                {reading.sources.map(([label, url]) => <li><a href={url} target="_blank" rel="noopener">{label}</a></li>)}
+              </ul>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+
+    <h2>機械可読な引用情報</h2>
+    <p>
+      自動取得には <a href={localePath('/llms.txt', 'en')}><code>llms.txt</code></a> と
+      <a href={localePath('/llms-full.txt', 'en')}><code>llms-full.txt</code></a> を利用できます。
+      リポジトリには、引用ツール向けの <a href="https://github.com/cypher256/BitcoinArchive/blob/main/CITATION.cff" target="_blank" rel="noopener"><code>CITATION.cff</code></a> も置いています。
+    </p>
+
+    <p class="language-note">
+      English version: <a href={absoluteUrl('/cite/', 'en')}>How to cite this archive</a>
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .citation-page h2 {
+    padding-bottom: var(--heading-underline-gap);
+    border-bottom: 1px solid var(--color-border-strong);
+  }
+
+  .citation-block {
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--color-border);
+    background: var(--color-source-bg);
+  }
+
+  .source-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 2rem;
+  }
+
+  .source-table th,
+  .source-table td {
+    padding: 0.8rem;
+    border: 1px solid var(--color-border);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .source-table ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .language-note {
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 640px) {
+    .source-table {
+      display: block;
+      overflow-x: auto;
+    }
+
+    .source-table th,
+    .source-table td {
+      min-width: 12rem;
+    }
+  }
+</style>

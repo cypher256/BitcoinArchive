@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { useTranslations, absoluteUrl } from '../../i18n/utils';
+import { useTranslations, absoluteUrl, localePath } from '../../i18n/utils';
 
 const lang = 'ja';
 const t = useTranslations(lang);
@@ -92,6 +92,12 @@ const t = useTranslations(lang);
       <li><a href="https://github.com/bitcoin/bips" target="_blank" rel="noopener">ビットコイン改善提案（BIP）</a></li>
       <li><a href="https://satoshi.nakamotoinstitute.org/" target="_blank" rel="noopener">Satoshi Nakamoto Institute</a>（二次参照元）</li>
     </ul>
+
+    <h2>引用方法</h2>
+    <p>
+      推奨する引用形式と技術的な読み解きの固定出典マップは、
+      <a href={localePath('/cite/', lang)}>アーカイブの引用方法</a>にまとめています。
+    </p>
 
     <h2>コントリビュート</h2>
     <p>

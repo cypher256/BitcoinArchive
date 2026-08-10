@@ -17,8 +17,8 @@ tags:
   - "forensicxs"
   - "technical"
 secondarySources:
-  - name: "GitHub — Original Bitcoin v0.1 Source (trottier)"
-    url: "https://github.com/trottier/original-bitcoin"
+  - name: "GitHub — Original Bitcoin v0.1 source, pinned commit 4184ab2 (trottier)"
+    url: "https://github.com/trottier/original-bitcoin/tree/4184ab26345d19e87045ce7d9291e60e7d36e096"
   - name: "Satoshi Nakamoto Institute — Code"
     url: "https://satoshi.nakamotoinstitute.org/code/"
 relatedEntries:

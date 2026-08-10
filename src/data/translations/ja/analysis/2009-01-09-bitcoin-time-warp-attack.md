@@ -25,7 +25,7 @@ secondarySources:
   - name: "BitMEX Research — The Time-Warp Attack"
     url: "https://blog.bitmex.com/the-timewarp-attack/"
   - name: "Bitcoin BIP — Great Consensus Cleanup soft fork (Antoine Poinsot)"
-    url: "https://github.com/bitcoin/bips/blob/master/bip-0054.md"
+    url: "https://github.com/bitcoin/bips/blob/79334a16fc69414412029f259c67017c503930b2/bip-0054.md"
 relatedEntries:
   - analysis/2009-01-09-satoshi-code-analysis
   - design/2009-01-03-bitcoin-consensus-design
@@ -59,7 +59,7 @@ sequenceDiagram
 
 ## 2. なぜこれがサトシのコードに残ったのか
 
-v0.1.0 のソース、[trottier/original-bitcoin](https://github.com/trottier/original-bitcoin) に保存されている初期版を確認すると、この誤りは 2009 年 1 月のリリース時点から存在している。直近のブロックから始めて 2,015 個ぶん遡るループで祖先ブロックを取り出し、そのブロックと現在ブロックとの時刻差を取る。意図は明らかに 2,016 ブロックぶんを測ることだったが、実装は 2,015 ブロックぶんしか測っていない。サトシ自身がこの食い違いに気づいていた形跡は、現存する記録のなかには見当たらない。攻撃の存在が初めて公の場で語られたのは 2011 年の BitcoinTalk であり、以来、数年おきに再発見されてきた。
+v0.1.0 のソース、[固定コミットの `src/main.cpp`](https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/main.cpp#L685-L707) に保存されている初期版を確認すると、この誤りは 2009 年 1 月のリリース時点から存在している。直近のブロックから始めて 2,015 個ぶん遡るループで祖先ブロックを取り出し、そのブロックと現在ブロックとの時刻差を取る。意図は明らかに 2,016 ブロックぶんを測ることだったが、実装は 2,015 ブロックぶんしか測っていない。サトシ自身がこの食い違いに気づいていた形跡は、現存する記録のなかには見当たらない。攻撃の存在が初めて公の場で語られたのは 2011 年の BitcoinTalk であり、以来、数年おきに再発見されてきた。
 
 ## 3. Great Consensus Cleanup
 

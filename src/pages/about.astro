@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { useTranslations, absoluteUrl } from '../i18n/utils';
+import { useTranslations, absoluteUrl, localePath } from '../i18n/utils';
 
 const lang = 'en';
 const t = useTranslations(lang);
@@ -94,6 +94,12 @@ const t = useTranslations(lang);
       <li><a href="https://github.com/bitcoin/bips" target="_blank" rel="noopener">Bitcoin Improvement Proposals (BIPs)</a></li>
       <li><a href="https://satoshi.nakamotoinstitute.org/" target="_blank" rel="noopener">Satoshi Nakamoto Institute</a> (secondary reference)</li>
     </ul>
+
+    <h2>Citations</h2>
+    <p>
+      For the recommended citation format and the fixed-source map for technical readings, see
+      <a href={localePath('/cite/', lang)}>How to cite this archive</a>.
+    </p>
 
     <h2>Contributing</h2>
     <p>

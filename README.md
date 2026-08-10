@@ -1,15 +1,24 @@
 # Bitcoin Institute
 
-The world's most comprehensive archive of Satoshi Nakamoto's complete conversations and related historical documents.
+A bilingual public archive of Satoshi Nakamoto's primary-source record and related historical documents.
 
 - https://bitcoin-institute.pages.dev/
 - https://cypher256.github.io/BitcoinArchive/ (Mirror)
+- Citation guide: https://bitcoin-institute.pages.dev/cite/
 
 ## Scope
 
 - **Satoshi Nakamoto's writings** — All emails, forum posts, and code comments
 - **Conversations** — Exchanges with Hal Finney, Wei Dai, James A. Donald, and others
 - **Aftermath** — Court testimonies, blog retrospectives, interviews, and media reports
+
+## Citation
+
+Cite the archive as:
+
+> Bitcoin Institute. *Bitcoin Institute Archive*. 2026. https://bitcoin-institute.pages.dev/
+
+For page-level citation format and the fixed-source map for technical readings, see the [citation guide](https://bitcoin-institute.pages.dev/cite/). The repository also includes [`CITATION.cff`](CITATION.cff) for citation tools.
 
 ## Tech Stack
 
@@ -47,11 +56,10 @@ check-markdown-image-alt → check-participants → check-ja-tone → check-ja-n
 npm install
 npm run dev        # Start dev server at localhost:4321
 npm run check      # Run all validation checks (fast, seconds)
-npm run build      # Build production site to ./dist/ (~8 min local, ~22 min in CI)
 npm run preview    # Preview production build locally
 ```
 
-> **Note:** Use `npm run check` for local validation. `npm run build` generates 8,500+ static HTML pages and is typically run only in CI.
+> **Note:** Use `npm run check` for local validation. Do not run `npm run build` locally: it generates 8,500+ static HTML pages and runs only in CI as part of deployment.
 
 ## Deployment
 

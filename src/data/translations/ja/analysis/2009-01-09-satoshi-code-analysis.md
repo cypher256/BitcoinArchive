@@ -18,8 +18,10 @@ tags:
   - "timeline"
   - "historic"
 secondarySources:
-  - name: "Original Bitcoin v0.1.0 Source (trottier/original-bitcoin)"
-    url: "https://github.com/trottier/original-bitcoin"
+  - name: "Original Bitcoin v0.1.0 source — pinned commit 4184ab2"
+    url: "https://github.com/trottier/original-bitcoin/tree/4184ab26345d19e87045ce7d9291e60e7d36e096"
+  - name: "Bitcoin v0.3.19 source — tagged release commit fc73ad6"
+    url: "https://github.com/bitcoin/bitcoin/tree/fc73ad644f0b87b91f49b7f6f6b2348f78bdbbf4"
   - name: "Satoshi Nakamoto Institute — Code"
     url: "https://satoshi.nakamotoinstitute.org/code/"
 relatedEntries:

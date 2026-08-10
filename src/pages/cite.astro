@@ -1,0 +1,206 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { absoluteUrl, localePath } from '../i18n/utils';
+
+const lang = 'en';
+const canonicalUrl = absoluteUrl('/cite/', lang);
+
+const sourceReadings = [
+  {
+    title: 'Satoshi source code analysis',
+    entryUrl: localePath('/entries/analysis/2009-01-09-satoshi-code-analysis/', lang),
+    sources: [
+      ['Bitcoin v0.1.0 source tree', 'https://github.com/trottier/original-bitcoin/tree/4184ab26345d19e87045ce7d9291e60e7d36e096'],
+      ['Bitcoin v0.3.19 source tree', 'https://github.com/bitcoin/bitcoin/tree/fc73ad644f0b87b91f49b7f6f6b2348f78bdbbf4'],
+    ],
+  },
+  {
+    title: 'Genesis block hardcode analysis',
+    entryUrl: localePath('/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/', lang),
+    sources: [
+      ['Original v0.1 src/main.cpp', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/main.cpp'],
+      ['Bitcoin Core chainparams.cpp', 'https://github.com/bitcoin/bitcoin/blob/757aa573c458a1225ec0da89278fc7b0217f46b6/src/kernel/chainparams.cpp'],
+    ],
+  },
+  {
+    title: 'Bitcoin cryptography design',
+    entryUrl: localePath('/entries/design/2009-01-03-bitcoin-cryptography-design/', lang),
+    sources: [
+      ['v0.1 src/key.h', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/key.h'],
+      ['v0.1 src/base58.h', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/base58.h'],
+      ['v0.1 src/script.cpp', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/script.cpp'],
+    ],
+  },
+  {
+    title: 'Bitcoin transaction design',
+    entryUrl: localePath('/entries/design/2009-01-03-bitcoin-transaction-design/', lang),
+    sources: [
+      ['v0.1 src/main.h', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/main.h'],
+      ['v0.1 src/main.cpp', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/main.cpp'],
+      ['v0.1 src/script.cpp', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/script.cpp'],
+    ],
+  },
+  {
+    title: 'Bitcoin time-warp attack',
+    entryUrl: localePath('/entries/analysis/2009-01-09-bitcoin-time-warp-attack/', lang),
+    sources: [
+      ['v0.1 src/main.cpp (difficulty code)', 'https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/main.cpp#L685-L707'],
+      ['BIP54 reference specification', 'https://github.com/bitcoin/bips/blob/79334a16fc69414412029f259c67017c503930b2/bip-0054.md'],
+    ],
+  },
+  {
+    title: 'Mining-reward exhaustion and the fee-only future',
+    entryUrl: localePath('/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/', lang),
+    sources: [
+      ['Bitcoin Core src/validation.cpp', 'https://github.com/bitcoin/bitcoin/blob/4f348c2d730ce167d2918727aa2fdb6849182ab1/src/validation.cpp#L1836-L1846'],
+    ],
+  },
+  {
+    title: 'AI and crypto investment survey',
+    entryUrl: localePath('/entries/analysis/2026-08-02-ai-crypto-investment-survey/', lang),
+    sources: [
+      ['Bitcoin Core src/consensus/amount.h', 'https://github.com/bitcoin/bitcoin/blob/756afe14b5c1c5f7a0b21f2143289d2c6dea5e2e/src/consensus/amount.h#L14-L27'],
+    ],
+  },
+  {
+    title: 'Forensicxs Bitcoin v0.1 code walkthrough',
+    entryUrl: localePath('/entries/aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough/', lang),
+    sources: [
+      ['Original Bitcoin v0.1.0 source tree', 'https://github.com/trottier/original-bitcoin/tree/4184ab26345d19e87045ce7d9291e60e7d36e096'],
+    ],
+  },
+];
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'How to cite the Bitcoin Institute Archive',
+  description: 'Citation guidance and fixed-source map for the Bitcoin Institute archive.',
+  url: canonicalUrl,
+  inLanguage: 'en',
+  isPartOf: { '@type': 'WebSite', url: absoluteUrl('/', lang) },
+};
+---
+
+<BaseLayout
+  title="How to cite the Bitcoin Institute Archive"
+  description="Citation guidance and fixed-source map for the Bitcoin Institute archive."
+  lang={lang}
+  canonicalUrl={canonicalUrl}
+  alternateJa={absoluteUrl('/cite/', 'ja')}
+  breadcrumbs={[
+    { name: 'Home', url: absoluteUrl('/', lang) },
+    { name: 'How to cite', url: canonicalUrl },
+  ]}
+  structuredData={structuredData}
+>
+  <div class="container citation-page">
+    <h1>How to cite the Bitcoin Institute Archive</h1>
+    <p>
+      This page gives a stable citation format for the archive and identifies the exact source
+      revisions behind its technical readings. Cite the archive page you used, then cite the
+      underlying primary source when a claim depends on a particular document or code snapshot.
+    </p>
+
+    <h2>Recommended citation</h2>
+    <div class="citation-block">
+      <p>Bitcoin Institute. “Page title.” <em>Bitcoin Institute Archive</em>. Publication or update date. Canonical page URL.</p>
+      <p>For this archive as a whole:</p>
+      <p><code>Bitcoin Institute. <em>Bitcoin Institute Archive</em>. 2026. {absoluteUrl('/', lang)}</code></p>
+    </div>
+
+    <h2>How sources are identified</h2>
+    <p>
+      Primary-source entries preserve the source text. Editorial readings identify their
+      evidence in the page references. Technical claims use a fixed Git commit whenever the
+      claim depends on source code: the commit, file, and—where useful—line range identify the
+      exact snapshot being discussed. A fixed commit does not move when a branch is updated.
+    </p>
+    <p>
+      The English and Japanese editions are parallel presentations. Their source URL sets are
+      kept aligned, so either language can be cited for the same evidence.
+    </p>
+
+    <h2>Technical source map</h2>
+    <table class="source-table">
+      <thead>
+        <tr>
+          <th>Reading</th>
+          <th>Fixed source revisions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sourceReadings.map((reading) => (
+          <tr>
+            <th scope="row"><a href={reading.entryUrl}>{reading.title}</a></th>
+            <td>
+              <ul>
+                {reading.sources.map(([label, url]) => <li><a href={url} target="_blank" rel="noopener">{label}</a></li>)}
+              </ul>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+
+    <h2>Machine-readable citation information</h2>
+    <p>
+      For automated discovery, see <a href={localePath('/llms.txt', lang)}><code>llms.txt</code></a>
+      and <a href={localePath('/llms-full.txt', lang)}><code>llms-full.txt</code></a>.
+      The repository also provides a <a href="https://github.com/cypher256/BitcoinArchive/blob/main/CITATION.cff" target="_blank" rel="noopener"><code>CITATION.cff</code></a>
+      file for citation tools.
+    </p>
+
+    <p class="language-note">
+      日本語版: <a href={absoluteUrl('/cite/', 'ja')}>アーカイブの引用方法</a>
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .citation-page h2 {
+    padding-bottom: var(--heading-underline-gap);
+    border-bottom: 1px solid var(--color-border-strong);
+  }
+
+  .citation-block {
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--color-border);
+    background: var(--color-source-bg);
+  }
+
+  .source-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 2rem;
+  }
+
+  .source-table th,
+  .source-table td {
+    padding: 0.8rem;
+    border: 1px solid var(--color-border);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .source-table ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .language-note {
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 640px) {
+    .source-table {
+      display: block;
+      overflow-x: auto;
+    }
+
+    .source-table th,
+    .source-table td {
+      min-width: 12rem;
+    }
+  }
+</style>

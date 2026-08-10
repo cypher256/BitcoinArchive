@@ -22,8 +22,8 @@ tags:
   - "halving"
   - "analysis"
 secondarySources:
-  - name: "Bitcoin Core — GetBlockSubsidy (validation.cpp)"
-    url: "https://github.com/bitcoin/bitcoin/blob/master/src/validation.cpp"
+  - name: "Bitcoin Core — GetBlockSubsidy (validation.cpp), pinned commit 4f348c2"
+    url: "https://github.com/bitcoin/bitcoin/blob/4f348c2d730ce167d2918727aa2fdb6849182ab1/src/validation.cpp#L1836-L1846"
     note: "コンセンサスルールとして強制される半減期スケジュール。210,000 ブロックごとにブロック報酬の新規発行分が半減し、satoshi 単位の整数切り捨てにより、 33 回の半減で新規発行分が 0 となる ( 2140 年ごろ )。"
   - name: "Carlsten, Kalodner, Weinberg, Narayanan — 「On the Instability of Bitcoin Without the Block Reward」 (ACM CCS 2016)"
     url: "https://www.cs.princeton.edu/~arvindn/publications/mining_CCS.pdf"
