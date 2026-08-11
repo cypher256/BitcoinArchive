@@ -19,6 +19,9 @@ tags:
   - "bloq"
   - "historic"
 secondarySources:
+  - name: "Bitcoin Improvement Proposals — GitHub repository"
+    url: "https://github.com/bitcoin/bips"
+    note: "The repository contains BIP 100, among the improvement proposals authored by Jeff Garzik."
   - name: "Jeff Garzik's BitcoinTalk profile"
     url: "https://bitcointalk.org/index.php?action=profile;u=541"
   - name: "Jeff Garzik on GitHub"
@@ -41,7 +44,7 @@ relatedEntries:
 
 ![A dark, tech-themed infographic featuring a faceless head-and-shoulders silhouette outline on the left, connected by arrows to a code-patch list box, a row of three outlined block icons, a small CPU chip icon, a horizontal ranking bar chart, and a timeline of dots along the bottom.](/BitcoinArchive/images/analysis/2010-07-15-jeff-garzik-biography-hero.png)
 
-In July 2010, a Red Hat Linux kernel developer named Jeff Garzik read a [Slashdot post about Bitcoin](/BitcoinArchive/entries/aftermath/2010-07-11-slashdot-bitcoin-article/), pulled the codebase, and started sending patches. Within months he had become the top non-Satoshi commit-count contributor, ranking just behind Satoshi and [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/). He wrote cpuminer (one of the first standalone Bitcoin mining tools), authored multiple BIPs including the [BIP 100 dynamic-block-size proposal](https://github.com/bitcoin/bips), and co-founded the enterprise-blockchain firm Bloq in 2015.
+In July 2010, a Red Hat Linux kernel developer named Jeff Garzik read a [Slashdot post about Bitcoin](/BitcoinArchive/entries/aftermath/2010-07-11-slashdot-bitcoin-article/), pulled the codebase, and started sending patches. Within months he had become the top non-Satoshi commit-count contributor, ranking just behind Satoshi and [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/). He wrote cpuminer (one of the first standalone Bitcoin mining tools), authored multiple BIPs including the BIP 100 dynamic-block-size proposal, and co-founded the enterprise-blockchain firm Bloq in 2015.
 
 Garzik studied computer science at Georgia Institute of Technology and built his early career on Linux-kernel work at Red Hat. His kernel-level systems experience translated directly to Bitcoin's C++ codebase.
 

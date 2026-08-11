@@ -56,7 +56,7 @@ translationStatus: complete
 
 ハーンは保有する全ビットコインを売却、プロジェクトから離脱、エンタープライズ向けブロックチェーンコンソーシアム R3 に参加して分散台帳プラットフォーム Corda の開発を共同主導した。[2017 年 8 月にサトシとのメールを公開](/BitcoinArchive/ja/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/)、これはサトシの技術的思考を記録した最大級の一次資料群となった。2024 年 2 月、[COPA 対ライト裁判で証言](/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/)。
 
-ハーンは Google で Google Maps、Google Earth、Gmail のスパム対策システムに従事していた。[BitcoinJ](https://github.com/bitcoinj/bitcoinj) を開発した。これはプロトコルの Java 実装であり、元の C++ クライアントに対する最初の主要な代替実装、そして多くの Android ビットコインウォレットの基盤となった。
+ハーンは Google で Google Maps、Google Earth、Gmail のスパム対策システムに従事していた。BitcoinJ を開発した。これはプロトコルの Java 実装であり、元の C++ クライアントに対する最初の主要な代替実装、そして多くの Android ビットコインウォレットの基盤となった。
 
 ```mermaid
 timeline

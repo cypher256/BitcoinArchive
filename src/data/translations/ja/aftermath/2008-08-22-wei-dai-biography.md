@@ -59,7 +59,7 @@ translationStatus: complete
 <!-- speaker: Satoshi Nakamoto -->
 > 「b-money のページを興味深く読んだ。あなたのアイデアを発展させて、完全に動作するシステムにした論文を発表しようとしている。アダム・バックが類似性に気づいて、あなたのサイトを教えてくれた。論文で引用するため、発表年を教えてほしい。」
 
-2 か月後、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)は b-money を参考文献 [1] として引用した。Bitcoin v0.1 はダイの [Crypto++ ライブラリ](https://www.cryptopp.com/)を SHA-256 実装に採用した。ダイのコードは最初のリリースからビットコインの直接的な依存となった。
+2 か月後、[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)は b-money を参考文献 [1] として引用した。Bitcoin v0.1 はダイの Crypto++ ライブラリを SHA-256 実装に採用した。ダイのコードは最初のリリースからビットコインの直接的な依存となった。
 
 2014 年 3 月、LessWrong で「サトシは暗号学やサイファーパンクのコミュニティで知られた人物ではないか」と問われたとき、ダイはこう答えた:
 

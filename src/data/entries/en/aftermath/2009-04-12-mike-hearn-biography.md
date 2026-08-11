@@ -55,7 +55,7 @@ Almost five years later, on January 14, 2016, Hearn published ["The resolution o
 
 He sold all his bitcoins, left the project, and joined R3, an enterprise-blockchain consortium where he co-led development of the Corda distributed ledger. In [August 2017 he made his Satoshi correspondence public](/BitcoinArchive/entries/aftermath/2017-08-11-mike-hearn-publishes-emails/) — one of the largest documented bodies of Satoshi's technical thinking. In February 2024 he testified in the [COPA v Wright trial](/BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/).
 
-Hearn worked at Google on Maps, Earth, and Gmail's anti-spam systems. He developed [BitcoinJ](https://github.com/bitcoinj/bitcoinj), a Java implementation of the protocol — the first major alternative to the original C++ client and the basis for many Android Bitcoin wallets.
+Hearn worked at Google on Maps, Earth, and Gmail's anti-spam systems. He developed BitcoinJ, a Java implementation of the protocol — the first major alternative to the original C++ client and the basis for many Android Bitcoin wallets.
 
 ```mermaid
 timeline
