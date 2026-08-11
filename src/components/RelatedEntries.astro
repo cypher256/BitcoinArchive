@@ -152,7 +152,7 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenT
       {visibleTargets.map((entry) => (
         <li>
           <a href={entry.href}>
-            <EntryDates date={entry.date} createdAt={entry.createdAt} updatedAt={entry.updatedAt} lang={lang} variant="related" />
+            <EntryDates date={entry.date} createdAt={entry.createdAt} updatedAt={entry.updatedAt} lang={lang} variant="related" dateFields={['event']} />
             <span class="related-title">{entry.title}</span>
           </a>
         </li>
@@ -165,7 +165,7 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenT
           {hiddenTargets.map((entry) => (
             <li>
               <a href={entry.href}>
-                <EntryDates date={entry.date} createdAt={entry.createdAt} updatedAt={entry.updatedAt} lang={lang} variant="related" />
+                <EntryDates date={entry.date} createdAt={entry.createdAt} updatedAt={entry.updatedAt} lang={lang} variant="related" dateFields={['event']} />
                 <span class="related-title">{entry.title}</span>
               </a>
             </li>

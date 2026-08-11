@@ -1693,6 +1693,9 @@ biography participant pages — shows all three independent values. The two
 home-page card groups (`Start Here` and `Analyses`) use the same component in
 a compact two-value form (`Event` + `Updated`) so their cards do not wrap:
 
+Related-entry lists use the same component in a compact one-value form
+(`Event` only), preserving the established date-only navigation treatment.
+
 | Value | Source | Reader-facing label |
 |---|---|---|
 | Historical anchor | `frontmatter.date` | `Event` (`entry.event`) |
