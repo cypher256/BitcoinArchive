@@ -24,7 +24,7 @@ export function getHomeAnalyses<T extends AnalysisEntry>(
   entries: T[],
   cap = 6,
   lang: 'en' | 'ja' = 'en',
-): { homeAnalyses: Array<{ entry: T; updatedAt?: string }>; hasMoreAnalyses: boolean } {
+): { homeAnalyses: Array<{ entry: T; createdAt?: string; updatedAt?: string }>; hasMoreAnalyses: boolean } {
   const gitDates = loadGitDates();
   const all = entries.filter((e) => e.data.type === 'analysis');
 
@@ -44,13 +44,16 @@ export function getHomeAnalyses<T extends AnalysisEntry>(
 
   const selected = [...ordered, ...remaining].slice(0, cap);
   return {
-    // Attach the editorial updatedAt (git history, lang-aware with an EN
-    // fallback) so the home card can show the same "Updated" date axis as
-    // the EntryCard listing — analyses anchor their frontmatter date to the
-    // subject event, not the writing date.
+    // Attach both git-history axes (lang-aware with an EN fallback) so the
+    // home card can use the same three-date component as EntryCard. Analyses
+    // anchor their frontmatter date to the subject event, not the writing date.
     homeAnalyses: selected.map((entry) => {
       const gd = gitDates[entry.id];
-      return { entry, updatedAt: gd?.[lang]?.updatedAt ?? gd?.en?.updatedAt };
+      return {
+        entry,
+        createdAt: gd?.[lang]?.createdAt ?? gd?.en?.createdAt,
+        updatedAt: gd?.[lang]?.updatedAt ?? gd?.en?.updatedAt,
+      };
     }),
     hasMoreAnalyses: all.length > cap,
   };

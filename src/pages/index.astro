@@ -3,9 +3,11 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import NetworkGraph from '../components/NetworkGraph.astro';
 import CharacterIntro from '../components/CharacterIntro.astro';
+import EntryDates from '../components/EntryDates.astro';
 import { useTranslations, getDisplayEntries, localePath, absoluteUrl } from '../i18n/utils';
 import { computeGraphData } from '../lib/graphData';
 import { getHomeAnalyses } from '../lib/homeAnalyses';
+import gitDates from '../data/git-dates.json';
 import heroImage from '../assets/images/homepage-hero.jpg';
 
 const lang = 'en';
@@ -95,6 +97,7 @@ const topParticipants = Array.from(participantMap.entries())
 const maxParticipantCount = topParticipants[0]?.[1].count ?? 1;
 
 const { homeAnalyses, hasMoreAnalyses } = getHomeAnalyses(entries, 9, 'en');
+const entryMap = new Map(entries.map((entry) => [entry.id, entry]));
 
 // Network graph data
 const graphData = computeGraphData(entries, lang);
@@ -155,13 +158,17 @@ function tagWeight(count: number, max: number): number {
       </div>
       <p class="start-here-subtitle">{t('home.startHereSubtitle' as any)}</p>
       <div class="start-grid">
-        {startHereEntries.map((entry) => (
-          <a href={localePath(`/entries/${entry.id}/`, lang)} class="start-card">
-            <span class="start-date">{entry.date}</span>
-            <span class="start-title">{entry.title}</span>
-            <span class="start-desc" set:html={entry.desc} />
-          </a>
-        ))}
+        {startHereEntries.map((entry) => {
+          const sourceEntry = entryMap.get(entry.id);
+          const gitDate = gitDates[entry.id]?.en;
+          return (
+            <a href={localePath(`/entries/${entry.id}/`, lang)} class="start-card">
+              <EntryDates date={sourceEntry?.data.date ?? new Date(`${entry.date}T00:00:00Z`)} createdAt={gitDate?.createdAt} updatedAt={gitDate?.updatedAt} lang={lang} variant="home" />
+              <span class="start-title">{entry.title}</span>
+              <span class="start-desc" set:html={entry.desc} />
+            </a>
+          );
+        })}
       </div>
     </section>
 
@@ -183,9 +190,9 @@ function tagWeight(count: number, max: number): number {
       </div>
       <p class="analyses-subtitle">{t('home.analysesSubtitle' as any)}</p>
       <div class="analyses-grid">
-        {homeAnalyses.map(({ entry, updatedAt }: any) => (
+        {homeAnalyses.map(({ entry, createdAt, updatedAt }: any) => (
           <a href={localePath(`/entries/${entry.id}/`, lang)} class="analysis-card">
-            <span class="analysis-date">{t('entry.updated' as any)} {new Date(updatedAt ?? entry.data.date).toISOString().slice(0, 10)}</span>
+            <EntryDates date={entry.data.date} createdAt={createdAt} updatedAt={updatedAt} lang={lang} variant="home" />
             <span class="analysis-title">{entry.data.title}</span>
             <span class="analysis-desc">{entry.data.description}</span>
           </a>
@@ -318,12 +325,6 @@ function tagWeight(count: number, max: number): number {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     text-decoration: none;
   }
-  .start-card .start-date {
-    font-family: var(--font-heading);
-    font-size: 0.78rem;
-    color: var(--color-accent);
-    letter-spacing: 0.05em;
-  }
   .start-card .start-title {
     font-family: var(--font-heading);
     font-size: 1.2rem;
@@ -365,12 +366,6 @@ function tagWeight(count: number, max: number): number {
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     text-decoration: none;
-  }
-  .analysis-card .analysis-date {
-    font-family: var(--font-heading);
-    font-size: 0.78rem;
-    color: var(--color-accent);
-    letter-spacing: 0.05em;
   }
   .analysis-card .analysis-title {
     font-family: var(--font-heading);

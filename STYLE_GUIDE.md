@@ -1644,9 +1644,10 @@ their bodies follow opposite rules — primary-source bodies hold the
 verbatim source, editorial bodies hold editor narrative around the
 source.) For `analysis` and `design` entries the frontmatter date is
 the date of the underlying event being analysed (or the protocol
-milestone being described), not of the editorial piece itself, so
-showing it as "Event" misleads readers into thinking the editorial
-piece was written on that date.
+milestone being described), not of the editorial piece itself. It is
+still shown as `Event` to identify that historical anchor; the separate
+`Added` and `Updated` values identify the archive file's registration
+and body-edit history.
 
 ### `updatedAt` policy: body changes only
 
@@ -1686,16 +1687,25 @@ edit in the same commit.
 
 ### Display
 
-| Entry type | Detail-page meta line | Listing card date |
-|---|---|---|
-| `analysis` / `design` | `Created <createdAt> · Updated <updatedAt>` (no `Event` line) | `Updated <updatedAt>` |
-| All others | `Event <frontmatter.date> · Updated <updatedAt>` | `Event <frontmatter.date>` |
+Every surface that displays an entry date — the home analysis cards, full
+archive, secondary listings, related-entry lists, Algolia results, entry
+detail pages, and biography participant pages — shows all three
+independent values:
 
-The card label is rendered as a short prefix
-(`Event` / `Updated` / `事象` / `更新`) so different cards in mixed
-listings remain readable. The detail-page label uses the same
-strings via `i18n/ui.ts` (`entry.event`, `entry.created`,
-`entry.updated`).
+| Value | Source | Reader-facing label |
+|---|---|---|
+| Historical anchor | `frontmatter.date` | `Event` (`entry.event`) |
+| Archive registration | git `createdAt` | `Added` (`entry.added`) |
+| Latest body edit | git `updatedAt` | `Updated` (`entry.updated`) |
+
+The three values are rendered by the shared
+`src/components/EntryDates.astro` component. A missing git-history value
+falls back to `frontmatter.date`, using the same `resolveDateValues()`
+policy for server-rendered cards, home and related-entry lists, Algolia
+result cards, detail metadata, and biography pages. Sort controls change only the ordering; they never
+replace or hide one of the three displayed dates. The labels are
+localized through `i18n/ui.ts`, so the Japanese interface uses `対象日`,
+`登録日`, and `更新日`.
 
 ### Listing sort order
 
@@ -1729,25 +1739,23 @@ sort order or emit invalid metadata. Falling back to
 `frontmatter.date` keeps the page coherent until the next git-dates
 regeneration.
 
-### Why only analysis and design use Created/Updated dates
+### Why every entry type shows all three values
 
-`article` and `biography` are editorial entries too, but they keep the
-`Event` date display. The distinction is empirical:
+The archive keeps the axes visible even when their meanings differ by
+entry type. `analysis` and `design` use `frontmatter.date` as the
+historical event or protocol milestone being discussed; `article` uses
+the publication or covered event anchor; and `biography` retains its
+existing person-related date semantics, which may be a birth year,
+first-mention date, or associated event. Hiding one axis based on type
+made mixed listings and biography pages difficult to compare. The labels
+make the distinction explicit: `Event` is the historical anchor, while
+`Added` and `Updated` describe the archive record itself.
 
-- `analysis` and `design` entries are original editorial work by
-  Bitcoin Institute. Their frontmatter date anchors the subject event
-  (not the writing date), so `Created/Updated` from git history is the
-  meaningful date axis for the reader.
-- `article` entries (mostly `aftermath/*`) record an external news
-  article, blog post, or interview; the article's publication date
-  *is* the meaningful event-anchor and matches reader expectation.
-- `biography` entries anchor a person via a `frontmatter.date` whose
-  meaning currently varies (birth year, canonical first-mention date,
-  associated event). Until that meaning is unified, surfacing both
-  the date and a `Created/Updated` pair would mix axes for the reader.
-
-Both are documented as candidates for a future round; see
-`temp/0518_一覧並び順と日付表示計画.md` for the deferred items.
+The earlier rule that showed only a `Created`/`Updated` pair for
+`analysis`/`design`, or only the event date for biographies, is
+superseded by this three-axis display rule. The frontmatter semantics,
+structured-data fallback chains, and listing sort defaults remain
+unchanged.
 
 ### Threads and updatedAt sort
 

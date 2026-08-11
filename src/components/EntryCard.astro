@@ -1,8 +1,8 @@
 ---
-import { formatDate, localePath, translateParticipantName, findAuthorParticipant, useTranslations } from '../i18n/utils';
+import { localePath, translateParticipantName, findAuthorParticipant, useTranslations } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 import Avatar from './Avatar.astro';
-import { resolveDateAxis, resolveDateValues } from '../lib/dateAxis';
+import EntryDates from './EntryDates.astro';
 
 interface Participant {
   name: string;
@@ -24,20 +24,15 @@ interface Props {
   entryType?: string;
   createdAt?: string;
   updatedAt?: string;
-  showDateDetails?: boolean;
   tags?: string[];
 }
 
-const { id, title, date, author, source, description, isSatoshi, lang, threadId, threadCount, participants = [], entryType, createdAt, updatedAt, showDateDetails = false, tags = [] } = Astro.props;
+const { id, title, date, author, source, description, isSatoshi, lang, threadId, threadCount, participants = [], entryType, createdAt, updatedAt, tags = [] } = Astro.props;
 // Avatar base (trailing slash so resolveAvatar can append `avatars/...`).
 // Derived here so the 16 listing callers don't each have to pass it.
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 const isBiography = entryType === 'biography';
 const t = useTranslations(lang);
-const dateAxis = resolveDateAxis({ dateIso: date.toISOString(), createdAtIso: createdAt, updatedAtIso: updatedAt });
-const cardDate = new Date(dateAxis.iso);
-const cardDateLabel = t(`entry.${dateAxis.labelKey}` as any);
-const dateValues = resolveDateValues({ dateIso: date.toISOString(), createdAtIso: createdAt, updatedAtIso: updatedAt });
 const typeLabel = entryType ? (t(`type.${entryType}` as any) || entryType) : (t(`source.${source}` as any) || source);
 const href = threadId
   ? localePath(`/entries/threads/${threadId}/`, lang)
@@ -87,24 +82,7 @@ const filterText = [title, displayAuthor, description, ...participants.map((p) =
 >
   <a href={href} class="card-link">
     <div class="card-header">
-      {showDateDetails && (
-        <span class="card-dates">
-          <span class="card-date">
-            <span class="card-date-label">{t('entry.event' as any)}</span>
-            <time datetime={dateValues.eventIso}>{formatDate(new Date(dateValues.eventIso), lang)}</time>
-          </span>
-          <span class="card-date">
-            <span class="card-date-label">{t('entry.added' as any)}</span>
-            <time datetime={dateValues.createdAtIso}>{formatDate(new Date(dateValues.createdAtIso), lang)}</time>
-          </span>
-          <span class="card-date">
-            <span class="card-date-label">{t('entry.updated' as any)}</span>
-            <time datetime={dateValues.updatedAtIso}>{formatDate(new Date(dateValues.updatedAtIso), lang)}</time>
-          </span>
-        </span>
-      )}
-      {!showDateDetails && <span class="card-date-label">{cardDateLabel}</span>}
-      {!showDateDetails && <time datetime={cardDate.toISOString()}>{formatDate(cardDate, lang)}</time>}
+      <EntryDates date={date} createdAt={createdAt} updatedAt={updatedAt} lang={lang} variant="card" />
       <span class="source-badge">{typeLabel}</span>
       {threadCount && threadCount >= 2 && (
         <span class="thread-badge">{threadCount} {t('entry.messages' as any)}</span>

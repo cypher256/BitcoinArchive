@@ -28,14 +28,19 @@
  * constraints are enforced by scripts/check-internal-links.mjs.
  */
 import { getCollection } from 'astro:content';
-import { useTranslations, formatDate, localePath } from '../i18n/utils';
+import { useTranslations, localePath } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
+import EntryDates from './EntryDates.astro';
 import derivedData from '../data/derived-related.json';
 import commentariesData from '../data/derived-commentaries.json';
+import gitDates from '../data/git-dates.json';
 
 const MAX_VISIBLE = 5;
 const derivedMap = derivedData as Record<string, { id: string; score: number }[]>;
 const commentariesMap = commentariesData as Record<string, { id: string }[]>;
+type LangDate = { createdAt: string; updatedAt: string };
+type GitDateRecord = { en?: LangDate; ja?: LangDate };
+const gitDateMap = gitDates as Record<string, GitDateRecord>;
 
 interface Props {
   lang: Lang;
@@ -69,6 +74,8 @@ interface Target {
   id: string;
   title: string;
   date: Date;
+  createdAt?: string;
+  updatedAt?: string;
   href: string;
   type: string;
 }
@@ -101,6 +108,8 @@ if (mergedIds.length > 0) {
       id: entry.id,
       title: entry.data.title,
       date: entry.data.date,
+      createdAt: gitDateMap[entry.id]?.[lang]?.createdAt ?? gitDateMap[entry.id]?.en?.createdAt,
+      updatedAt: gitDateMap[entry.id]?.[lang]?.updatedAt ?? gitDateMap[entry.id]?.en?.updatedAt,
       href,
       type: entry.data.type,
     };
@@ -143,7 +152,7 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenT
       {visibleTargets.map((entry) => (
         <li>
           <a href={entry.href}>
-            <time datetime={entry.date.toISOString()}>{formatDate(entry.date, lang)}</time>
+            <EntryDates date={entry.date} createdAt={entry.createdAt} updatedAt={entry.updatedAt} lang={lang} variant="related" />
             <span class="related-title">{entry.title}</span>
           </a>
         </li>
@@ -156,7 +165,7 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenT
           {hiddenTargets.map((entry) => (
             <li>
               <a href={entry.href}>
-                <time datetime={entry.date.toISOString()}>{formatDate(entry.date, lang)}</time>
+                <EntryDates date={entry.date} createdAt={entry.createdAt} updatedAt={entry.updatedAt} lang={lang} variant="related" />
                 <span class="related-title">{entry.title}</span>
               </a>
             </li>
@@ -206,14 +215,6 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenT
   .related-entries a:hover .related-title {
     color: var(--color-link);
     text-decoration: underline;
-  }
-  .related-entries time {
-    font-family: var(--font-heading);
-    font-size: 0.8rem;
-    color: var(--color-text-muted);
-    white-space: nowrap;
-    flex-shrink: 0;
-    min-width: 6.5rem;
   }
   .related-title {
     font-size: 0.95rem;

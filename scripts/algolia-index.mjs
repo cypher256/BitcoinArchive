@@ -35,8 +35,8 @@ const JA_DIR = 'src/data/translations/ja';
 // Per-entry git dates (createdAt / updatedAt), produced by
 // generate-git-dates.mjs earlier in the build, keyed by entry id (dots
 // PRESERVED — unlike the URL slug, which strips them) then by language.
-// They let a full-text result card render the same date axis as the browse
-// EntryCard: analysis/design show "Updated <updatedAt>", others "Event <date>".
+// They let a full-text result card render the same three date values as the
+// browse EntryCard / EntryDates component: event, registered, and updated.
 const GIT_DATES = (() => {
   try {
     return JSON.parse(readFileSync('src/data/git-dates.json', 'utf8'));

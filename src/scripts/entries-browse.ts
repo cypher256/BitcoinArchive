@@ -139,11 +139,13 @@ export function initEntriesBrowse() {
   function datePart(label, iso) {
     var dateStr = iso ? fmtDate(iso) : '';
     return dateStr
-      ? '<span class="card-date"><span class="card-date-label">' + esc(label) + '</span><time datetime="' + esc(iso) + '">' + esc(dateStr) + '</time></span>'
+      ? '<span class="entry-date"><span class="entry-date-label">' + esc(label) + '</span><time datetime="' + esc(iso) + '">' + esc(dateStr) + '</time></span>'
       : '';
   }
   function dateGroup(dates) {
-    return '<span class="card-dates">'
+    // The Astro EntryDates component cannot be imported into this browser
+    // bundle, so Algolia cards serialize the same values and class contract.
+    return '<span class="entry-dates entry-dates--card">'
       + datePart(uiLabels.event, dates.eventIso)
       + datePart(uiLabels.added, dates.createdAtIso)
       + datePart(uiLabels.updated, dates.updatedAtIso)

@@ -1,9 +1,9 @@
 ---
-import { useTranslations, formatDate, formatDateMaybeTime, localePath, translateParticipantName, findAuthorParticipant, translateTag } from '../i18n/utils';
+import { useTranslations, localePath, translateParticipantName, findAuthorParticipant, translateTag } from '../i18n/utils';
 import { slugifyKeyword } from '../lib/keyword-slug.mjs';
 import type { Lang } from '../i18n/ui';
 import { keywordCounts } from '../lib/keyword-index';
-import { isEditorialPlacement } from '../lib/dateAxis';
+import EntryDates from './EntryDates.astro';
 
 // Backlink-count lookup for `inlineLinkKeywords` display, sourced from
 // the shared `src/lib/keyword-index.ts` helper (which Vite resolves at
@@ -47,36 +47,19 @@ interface Props {
   /**
    * Content last-updated date, derived from git history (see
    * scripts/generate-git-dates.mjs and src/data/git-dates.json).
-   * Conceptually distinct from `date`: `date` is the entry's anchor
-   * to the historical event it describes, while `updatedAt` is the
-   * date of the most recent edit to the entry's source file.
-   * Optional — entries without a git-history record (e.g. previews)
-   * simply don't show the line.
+   * Conceptually distinct from `date`: `date` is the entry's historical
+   * anchor, while `updatedAt` is the date of the most recent body edit.
+   * Missing git metadata falls back to `date` in the shared date display.
    */
   updatedAt?: Date;
   /**
-   * Content first-published date, derived from git history. Used only
-   * on analysis entries, where the editorial creation date is the
-   * meaningful "when did this writing appear" anchor — the
-   * frontmatter `date` for analyses is the date of the event being
-   * analysed, not of the analysis itself, so it makes a misleading
-   * page header. For other entry types this prop is ignored.
+   * Content first-registered date, derived from git history. It is shown
+   * together with the historical anchor and last update date.
    */
   createdAt?: Date;
 }
 
 const { date, author, entryType, source, lang, participants = [], tags = [], inlineLinkKeywords = [], xHandle, updatedAt, createdAt } = Astro.props;
-// Analysis entries display "Created · Updated" instead of the usual
-// "Event · Updated" pair, because the frontmatter date for an
-// analysis is the date of the underlying event (e.g. the day of the
-// incident the analysis dissects), not the date the analysis was
-// written. Showing it as "Event" on an analysis page misleads
-// readers into thinking the editorial piece itself is dated to that
-// day. See temp/0518_一覧並び順と日付表示計画.md and
-// STYLE_GUIDE.md "Entry Dates" for the full rule.
-const isAnalysis = isEditorialPlacement(entryType);
-const createdFallback = createdAt ?? updatedAt ?? date;
-const updatedFallback = updatedAt ?? date;
 const showDefinesRow = inlineLinkKeywords.length > 0 && (entryType === 'analysis' || entryType === 'article' || entryType === 'design' || entryType === 'currency');
 const t = useTranslations(lang);
 const typeLabel = t(`type.${entryType}` as any) || entryType;
@@ -116,23 +99,7 @@ const isSatoshiAuthor =
 ---
 
 <div class="entry-meta">
-  {isAnalysis ? (
-    <>
-      <span class="date-label">{t('entry.created' as any)}</span>
-      <time datetime={createdFallback.toISOString()}>{formatDate(createdFallback, lang)}</time>
-      <span class="meta-sep">&middot;</span>
-      <span class="date-label">{t('entry.updated' as any)}</span>
-      <time datetime={updatedFallback.toISOString()}>{formatDate(updatedFallback, lang)}</time>
-    </>
-  ) : (
-    <>
-      <span class="date-label">{t('entry.event' as any)}</span>
-      <time datetime={date.toISOString()}>{formatDateMaybeTime(date, lang)}</time>
-      <span class="meta-sep">&middot;</span>
-      <span class="date-label">{t('entry.updated' as any)}</span>
-      <time datetime={updatedFallback.toISOString()}>{formatDate(updatedFallback, lang)}</time>
-    </>
-  )}
+  <EntryDates date={date} createdAt={createdAt} updatedAt={updatedAt} lang={lang} variant="meta" eventTime />
   <span class="meta-sep">&middot;</span>
   <span class="byline-label">{bylineLabel}</span>
   <span class:list={['author', { satoshi: isSatoshiAuthor }]}>{displayAuthor}</span>
@@ -202,10 +169,6 @@ const isSatoshiAuthor =
     font-size: 0.85rem;
     color: var(--color-text-muted);
     margin-bottom: 0.5rem;
-  }
-  .date-label {
-    font-weight: 600;
-    margin-right: -0.15rem;
   }
   .byline-label {
     font-weight: 600;

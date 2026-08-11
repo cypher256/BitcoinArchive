@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
+import EntryDates from '../../../components/EntryDates.astro';
 import { render } from 'astro:content';
 import { useTranslations, getEntries, getBiographyForParticipant, localePath, translateParticipantName, absoluteUrl } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
@@ -66,6 +67,7 @@ const allEntries = await getEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(allEntries, lang);
 const biographyEntry = await getBiographyForParticipant(lang, participantSlug);
 const biographyContent = biographyEntry ? await render(biographyEntry) : null;
+const biographyGitDate = biographyEntry ? gitDateMap[biographyEntry.id]?.ja : undefined;
 // Recommended-analysis callout. The biography frontmatter declares
 // `callout: { entry, label }` if a single analysis page should be
 // surfaced near the top of the participant page. No callout when
@@ -148,6 +150,15 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
       <div class="participant-head-text">
         <h1>{participantName}{lifeDates && <span class="life-dates"> {lifeDates}</span>}</h1>
         {bioSubtitle && <p class="bio-subtitle">{bioSubtitle}</p>}
+        {biographyEntry && (
+          <EntryDates
+            date={biographyEntry.data.date}
+            createdAt={biographyGitDate?.createdAt}
+            updatedAt={biographyGitDate?.updatedAt}
+            lang={lang}
+            variant="biography"
+          />
+        )}
       </div>
     </div>
 

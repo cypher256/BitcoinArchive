@@ -1,0 +1,55 @@
+---
+import { formatDate, formatDateMaybeTime, useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+import { resolveDateValues } from '../lib/dateAxis';
+
+type DateInput = Date | string;
+type DateVariant = 'card' | 'meta' | 'biography' | 'home' | 'related';
+
+interface Props {
+  date: DateInput;
+  createdAt?: DateInput;
+  updatedAt?: DateInput;
+  lang: Lang;
+  variant?: DateVariant;
+  eventTime?: boolean;
+}
+
+const { date, createdAt, updatedAt, lang, variant = 'card', eventTime = false } = Astro.props;
+const toIso = (value: DateInput): string => (value instanceof Date ? value : new Date(value)).toISOString();
+const values = resolveDateValues({
+  dateIso: toIso(date),
+  createdAtIso: createdAt ? toIso(createdAt) : undefined,
+  updatedAtIso: updatedAt ? toIso(updatedAt) : undefined,
+});
+const t = useTranslations(lang);
+const dateItems = [
+  {
+    label: t('entry.event' as any),
+    iso: values.eventIso,
+    text: eventTime ? formatDateMaybeTime(new Date(values.eventIso), lang) : formatDate(new Date(values.eventIso), lang),
+  },
+  {
+    label: t('entry.added' as any),
+    iso: values.createdAtIso,
+    text: formatDate(new Date(values.createdAtIso), lang),
+  },
+  {
+    label: t('entry.updated' as any),
+    iso: values.updatedAtIso,
+    text: formatDate(new Date(values.updatedAtIso), lang),
+  },
+];
+---
+
+<span class:list={['entry-dates', `entry-dates--${variant}`]}>
+  {dateItems.map((item, index) => (
+    <>
+      <span class="entry-date">
+        <span class="entry-date-label">{item.label}</span>
+        <time datetime={item.iso}>{item.text}</time>
+      </span>
+      {variant === 'meta' && index < dateItems.length - 1 && <span class="entry-date-sep">&middot;</span>}
+    </>
+  ))}
+</span>
