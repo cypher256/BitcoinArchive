@@ -170,7 +170,7 @@ function tagWeight(count: number, max: number): number {
           const gitDate = gitDates[entry.id]?.ja ?? gitDates[entry.id]?.en;
           return (
             <a href={localePath(`/entries/${entry.id}/`, lang)} class="start-card">
-              <EntryDates date={sourceEntry?.data.date ?? new Date(`${entry.date}T00:00:00Z`)} createdAt={gitDate?.createdAt} updatedAt={gitDate?.updatedAt} lang={lang} variant="home" />
+              <EntryDates date={sourceEntry?.data.date ?? new Date(`${entry.date}T00:00:00Z`)} createdAt={gitDate?.createdAt} updatedAt={gitDate?.updatedAt} lang={lang} variant="home" dateFields={['event', 'updated']} />
               <span class="start-title">{entry.title}</span>
               <span class="start-desc" set:html={entry.desc} />
             </a>
@@ -199,7 +199,7 @@ function tagWeight(count: number, max: number): number {
       <div class="analyses-grid">
         {homeAnalyses.map(({ entry, createdAt, updatedAt }: any) => (
           <a href={localePath(`/entries/${entry.id}/`, lang)} class="analysis-card">
-            <EntryDates date={entry.data.date} createdAt={createdAt} updatedAt={updatedAt} lang={lang} variant="home" />
+            <EntryDates date={entry.data.date} createdAt={createdAt} updatedAt={updatedAt} lang={lang} variant="home" dateFields={['event', 'updated']} />
             <span class="analysis-title">{entry.data.title}</span>
             <span class="analysis-desc">{entry.data.description}</span>
           </a>

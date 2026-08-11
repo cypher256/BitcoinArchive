@@ -5,6 +5,7 @@ import { resolveDateValues } from '../lib/dateAxis';
 
 type DateInput = Date | string;
 type DateVariant = 'card' | 'meta' | 'biography' | 'home' | 'related';
+type DateField = 'event' | 'added' | 'updated';
 
 interface Props {
   date: DateInput;
@@ -13,9 +14,18 @@ interface Props {
   lang: Lang;
   variant?: DateVariant;
   eventTime?: boolean;
+  dateFields?: DateField[];
 }
 
-const { date, createdAt, updatedAt, lang, variant = 'card', eventTime = false } = Astro.props;
+const {
+  date,
+  createdAt,
+  updatedAt,
+  lang,
+  variant = 'card',
+  eventTime = false,
+  dateFields = ['event', 'added', 'updated'],
+} = Astro.props;
 const toIso = (value: DateInput): string => (value instanceof Date ? value : new Date(value)).toISOString();
 const values = resolveDateValues({
   dateIso: toIso(date),
@@ -23,23 +33,26 @@ const values = resolveDateValues({
   updatedAtIso: updatedAt ? toIso(updatedAt) : undefined,
 });
 const t = useTranslations(lang);
-const dateItems = [
+const dateItems: Array<{ key: DateField; label: string; iso: string; text: string }> = [
   {
+    key: 'event',
     label: t('entry.event' as any),
     iso: values.eventIso,
     text: eventTime ? formatDateMaybeTime(new Date(values.eventIso), lang) : formatDate(new Date(values.eventIso), lang),
   },
   {
+    key: 'added',
     label: t('entry.added' as any),
     iso: values.createdAtIso,
     text: formatDate(new Date(values.createdAtIso), lang),
   },
   {
+    key: 'updated',
     label: t('entry.updated' as any),
     iso: values.updatedAtIso,
     text: formatDate(new Date(values.updatedAtIso), lang),
   },
-];
+].filter((item) => dateFields.includes(item.key));
 ---
 
 <span class:list={['entry-dates', `entry-dates--${variant}`]}>

@@ -1687,10 +1687,11 @@ edit in the same commit.
 
 ### Display
 
-Every surface that displays an entry date — the home analysis cards, full
-archive, secondary listings, related-entry lists, Algolia results, entry
-detail pages, and biography participant pages — shows all three
-independent values:
+Every surface that displays an entry date — the full archive, secondary
+listings, related-entry lists, Algolia results, entry detail pages, and
+biography participant pages — shows all three independent values. The two
+home-page card groups (`Start Here` and `Analyses`) use the same component in
+a compact two-value form (`Event` + `Updated`) so their cards do not wrap:
 
 | Value | Source | Reader-facing label |
 |---|---|---|
