@@ -127,3 +127,5 @@ timeline
 - ライトニング、エルサルバドル等は現在進行中だ。日々の支払いが戻る未来は、この読みを覆さないが、その時制を変える。
 
 [デジタルゴールドの構造的特徴の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)は金になった理由を、[設計意図と現状の分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)は現金でなくなった経緯を、それぞれ別に論じている。一次資料を読むと、ビットコインを金にした性質と、その現金の使い道を奪った性質は、もとは一つだったのではないか。[十二のチェーンを並べた比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)は、同じ論点を、他の十一チェーンの発行設計それぞれに当てはめている。
+
+*[補足：一つの設計が持つ、金の顔と現金の顔。本記事が読み取るこの緊張は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』を貫いている。小説は、その設計の背後にいる創設者を想像する。]*

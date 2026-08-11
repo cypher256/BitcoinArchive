@@ -3,7 +3,7 @@ title: "ジェームズ・A・ドナルド（生没年不明） — ビットコ
 date: 2008-11-02T23:46:23Z
 type: "biography"
 source: "cryptography-mailing-list"
-sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/cryptography/14/"
+sourceUrl: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014814.html"
 author: "James A. Donald"
 participants:
   - name: "James A. Donald"

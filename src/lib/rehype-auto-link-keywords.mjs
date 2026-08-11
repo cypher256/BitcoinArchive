@@ -32,8 +32,9 @@
  *     `remark-editorial-marker.mjs` — internal archive links may remain
  *     manual, while external URLs are prohibited by the body-link policy)
  *   - File path matches `VERBATIM_DIRS` (forum / correspondence /
- *     emails / blog / bip / tweets / whitepaper / court-document) —
- *     whole-file primary records
+ *     emails / blog / bip / tweets), or frontmatter `type` matches
+ *     `VERBATIM_TYPES` (covers whitepaper / court-document, which have
+ *     no dedicated directory) — whole-file primary records
  *   - Self-link: keyword's target is the page being rendered
  *
  * Per-page first-match-only: a keyword is linked at most once per
@@ -80,6 +81,22 @@ const VERBATIM_DIRS = [
   '/whitepaper/',
   '/court-document/',
 ];
+
+// `whitepaper` and `court-document` entries have no dedicated directory
+// (they live under `emails/` and `aftermath/` respectively), so the
+// VERBATIM_DIRS fragments above never match them. Fall back to the
+// frontmatter `type` field, mirroring the VERBATIM_TYPES check in
+// `rehype-strip-archive-links.mjs`.
+const VERBATIM_TYPES = new Set([
+  'forum-post',
+  'mailing-list',
+  'correspondence',
+  'blog-post',
+  'bip',
+  'whitepaper',
+  'court-document',
+  'tweet',
+]);
 
 // MIRROR_BASE is hard-coded here rather than imported because the
 // runtime base differs by deployment (CF_PAGES = '/' vs GitHub
@@ -267,13 +284,13 @@ function buildHref(locale, kind, target) {
 export function rehypeAutoLinkKeywords() {
   return (tree, vfile) => {
     const filePath = vfile?.path || '';
-    if (VERBATIM_DIRS.some((d) => filePath.includes(d))) return;
+    const { type: selfType, primarySlug: selfPrimarySlug } = detectEntryMeta(filePath);
+    if (VERBATIM_DIRS.some((d) => filePath.includes(d)) || VERBATIM_TYPES.has(selfType)) return;
 
     const locale = detectLocale(filePath);
     const matcher = getMatcher(locale);
     if (!matcher) return;
     const selfId = detectEntryId(filePath);
-    const { type: selfType, primarySlug: selfPrimarySlug } = detectEntryMeta(filePath);
     const linkedKeywords = new Set();
 
     // Pre-scan: mark any keyword whose text appears inside an

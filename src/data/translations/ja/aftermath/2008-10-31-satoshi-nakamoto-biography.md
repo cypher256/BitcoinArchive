@@ -159,3 +159,5 @@ Bitcoin v0.1 は Windows 上で Microsoft Visual C++ 6.0 SP6 と MinGW GCC 3.4.5
 サトシが設計した思想史的系譜は、ハイエク 1976 年『貨幣発行自由化論』、 1990 年代のエクストロピアン環境、サイファーパンク運動、そして一次資料が支持する直接影響の限界を含む。この系譜は[ハイエク=エクストロピアン系譜エントリー](/BitcoinArchive/ja/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/)と姉妹分析[サトシ・ナカモトはサイファーパンクではなかった](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で扱う。
 
 本伝記は[サトシ自己発言一覧](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)と対をなして読まれる。同分析はサトシが自分自身を文の主語にした全箇所を整理し、サトシが自分について何を述べたかを単一の証拠群として読み解くもので、本エントリに集約された伝記的な記録を補う軸をなす。
+
+*[補足：本伝記は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』の主人公の記録的根拠となる。主人公が関わるあらゆる日付事象は、ここに集約された一次資料に固定されている。]*

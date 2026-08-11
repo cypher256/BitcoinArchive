@@ -68,6 +68,8 @@ secondarySources:
     url: "https://www.coingecko.com/en/coins/official-trump"
   - name: "SEC — staff statement on meme coins (February 27, 2025)"
     url: "https://www.sec.gov/newsroom/speeches-statements/staff-statement-meme-coins"
+  - name: "CNBC — Chainalysis: 764,000 wallets lost money on $TRUMP, 58 wallets made $1.1B (May 6, 2025)"
+    url: "https://www.cnbc.com/2025/05/06/trump-meme-coin-crypto.html"
   - name: "DL News — Milei distances himself from LIBRA after the crash (February 2025)"
     url: "https://www.dlnews.com/articles/markets/milei-backs-away-from-libra-memecoin-after-90-crash-not-aware-of-the-details/"
   - name: "CryptoSlate — MELANIA insider selling and the price collapse"
@@ -221,7 +223,7 @@ There is a documented instance. In November 2010, after CableGate, Bank of Ameri
 
 That is a narrower demand than "money for the internet," and it is contingent: real, documented, and irrelevant to most people on most days.
 
-Which leaves the uncomfortable reading, and the record leans toward it. **What moves volume in this category is not the payment property. It is the price.** The largest holder counts in this archive belong to coins with no payment use at all — roughly two million wallets bought a token announced on a social-media account three days before an inauguration, and Chainalysis found three-quarters of them underwater. Bitcoin's own first purchase of a real good is now remembered not as the design working but as the trade someone should not have made. Dogecoin's co-founder says supply parameters are irrelevant and only buying and selling sets the price. Wei Dai, whose b-money Bitcoin cited, said the volatility makes it a poor everyday currency.
+Which leaves the uncomfortable reading, and the record leans toward it. **What moves volume in this category is not the payment property. It is the price.** The largest holder counts in this archive belong to coins with no payment use at all — roughly two million wallets bought a token announced on a social-media account three days before an inauguration, and Chainalysis found 764,000 of them underwater. Bitcoin's own first purchase of a real good is now remembered not as the design working but as the trade someone should not have made. Dogecoin's co-founder says supply parameters are irrelevant and only buying and selling sets the price. Wei Dai, whose b-money Bitcoin cited, said the volatility makes it a poor everyday currency.
 
 And the same question can be asked of the builders, which is where it gets uncomfortable. This archive does not assert motive — what someone intended is not in the record. What is in the record is who held what before the philosophy was ever tested. Ripple's founders and company held the bulk of a supply generated in full at launch. Cardano allocated 20% of the vouchers sold to IOHK, EMURGO and the Foundation, on its own published page. Ethereum ran a pre-launch sale with a founder and contributor allocation. Solana's own disclosure states that it did not tell the public about an 11,365,067 SOL loan during the token auction. In each case the monetary argument and the allocation table are two documents from the same project, and only the first one is about what money should be.
 

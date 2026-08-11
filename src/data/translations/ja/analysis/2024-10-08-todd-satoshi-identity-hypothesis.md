@@ -165,9 +165,9 @@ translationStatus: complete
 
 他の固有名候補の正体仮説（サッサマン、金子、フィニー、サボ、バック、ダイ、ドリアン、ライト、ルルー）との比較は、[サトシ正体仮説の比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)を参照。各候補のプロファイル比較と外部的状況の整理がある。
 
-## 4. 資料の範囲
+## 4. 本エントリーの限界
 
-- 根拠は、公的に利用可能な資料に限られる。
-- 新しい証拠（直接の文書での接続、v0.1 コード内の技術的指紋でトッドの他の公開コードと一致するもの、トッドや関係者による公的記録と矛盾する発言など）が出現した場合は、記録と評価を更新する。
+- 本エントリーは新しい証拠を提示しない。公的に利用可能な資料を整理する。
+- 新しい証拠（直接の文書での接続、v0.1 コード内の技術的指紋でトッドの他の公開コードと一致するもの、トッドや関係者による公的記録と矛盾する発言など）が出現すれば、本エントリーを更新する。
 
 [HBO『Money Electric』のエントリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)は §1 の証拠の出発点となった公的提唱。 [サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、必要だが十分ではないという評価枠組みの中で、トッド説を C 群に置いている。

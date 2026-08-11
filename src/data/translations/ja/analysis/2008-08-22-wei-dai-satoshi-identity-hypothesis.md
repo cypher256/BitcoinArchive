@@ -26,6 +26,9 @@ secondarySources:
   - name: "ウェイ・ダイ — LessWrong AALWA スレッド（2014 年 1 月 12 日）"
     url: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything"
     note: "ウェイ・ダイによる 2014 年 1 月 12 日の「Ask any LessWronger anything」スレッドでの回顧。サトシは「学術暗号学またはサイファーパンクのコミュニティで以前から積極的に活動していた人物ではない」と述べ、サトシが b-money 論文を知る前に b-money の中心的アイデアを独自に再発明した経緯を記述している。公的記録上、最も多く引用されるウェイ・ダイの自己否定。"
+  - name: "ウェイ・ダイ — LessWrong ユーザープロフィール"
+    url: "https://www.lesswrong.com/users/wei-dai"
+    note: "ウェイ・ダイの LessWrong 投稿履歴。数十年にわたる暗号学・合理性関連の話題を含む。"
   - name: "Gwern's Archive — ウェイ・ダイ／サトシ・ナカモトのメール"
     url: "https://gwern.net/doc/bitcoin/2008-nakamoto"
     note: "記録された 3 通のメール: サトシ → ウェイ・ダイ（2008 年 8 月 22 日）、ウェイ・ダイ → サトシ（日付未指定、b-money 公開履歴を返答）、サトシ → ウェイ・ダイ（2009 年 1 月 10 日）。サトシの 2009 年 1 月メッセージ: 「b-money 論文で解決しようとしていた目標のほぼ全てを達成している」。"
@@ -201,10 +204,10 @@ Crypto++ の組み込み（§1.2）は構造的整合だが、著者性の強い
 
 他の名指し候補仮説との比較については、[サトシ正体仮説概要](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)および個別エントリーの[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[ハル・フィニー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)、[サッサマン](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)、[金子勇](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/)、[サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[トッド](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)を参照。
 
-## 4. 資料の範囲
+## 4. このエントリーの限界
 
-- 根拠は、2008 年 8 月のメールのやり取り、ウェイ・ダイの 2014 年 1 月 AALWA 回顧、Crypto++ の組み込み記録、Bitcoin Institute によるヴァン・ドルストのコーパス再分析、ウェイ・ダイをサトシ候補として論じる公的議論の現状である。
+- 本エントリーは新しい証拠を提示しない。2008 年 8 月のメールのやり取り、ウェイ・ダイの 2014 年 1 月 AALWA 回顧、Crypto++ の組み込み記録、Bitcoin Institute によるヴァン・ドルストのコーパス再分析、ウェイ・ダイをサトシ候補として論じる公的議論の現状から資料を編集したものである。
 - ウェイ・ダイの仮説は、単一の引き金となる提唱がある候補（ハル・フィニーに対するグリーンバーグ 2014、アダム・バックに対する NYT 2026、トッドに対する HBO 2024）と異なる。ウェイ・ダイはホワイトペーパー引用の効果でビットコイン公開前から構造的候補だったため、単一の主流報道の提唱はない。
-- 次の資料が加われば、記録と評価を更新する。3 通のメール通信を超える直接的な文書的繋がり、標準的な Crypto++ 組み込みを超えるウェイ・ダイの他のコードと一致するビットコイン v0.1 の技術的指紋、2014 年回顧と矛盾するウェイ・ダイの発言などである。
+- 新しい証拠が浮上すれば、本エントリーを更新する。想定されるのは、3 通のメール通信を超える直接的な文書的繋がり、標準的な Crypto++ 組み込みを超えるウェイ・ダイの他のコードと一致するビットコイン v0.1 の技術的指紋、2014 年回顧と矛盾するウェイ・ダイの発言等だ。
 
 [ウェイ・ダイの伝記](/BitcoinArchive/ja/participants/wei-dai/)が文書上の土台を持っている。学術記録、b-money 提案、サイファーパンクへの参加、そして回顧的発言だ。§1 の証拠と §2 の反証は、それらを秤にかけている。
