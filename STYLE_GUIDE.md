@@ -1978,6 +1978,36 @@ reference to a specific old URL, add a targeted redirect (e.g. via
 `astro.config.mjs`'s `redirects` option) as a one-off; do not build a
 general aliasing mechanism speculatively.
 
+## Participant Avatars
+
+Quote chips, participant pages, and entry-card bylines show a
+per-person avatar, resolved by `resolveAvatar()` in
+`src/data/avatars.ts`. A slug resolves to a real photo when one is
+registered in `avatarPhotos`; otherwise it falls back automatically
+to a generated initial-on-a-hue disc rendered at build time from the
+slug alone. Most participants need no manual action — only
+registering a real photo requires editorial input.
+
+**Real-photo licensing.** Every `avatarPhotos` entry must record
+`credit` (author / rights holder — required for CC BY-family
+attribution), `license`, `sourceUrl`, and `fetchedAt` (`YYYY-MM-DD`).
+Acceptable sources: Wikimedia Commons (public domain / CC BY / CC
+BY-SA) or an image the subject themselves published under a
+re-distributable licence. Forum avatars, Gravatar, press-agency
+photography, and images without confirmed identity are not
+acceptable sources — the same identity-and-rights bar as any other
+archive citation.
+
+**Satoshi Nakamoto never gets a real-photo entry.** No photograph of
+Satoshi exists; the generated initial (rendered as a themed span
+rather than a baked image) is the permanent, historically accurate
+representation — not a placeholder awaiting a photo.
+
+Real photos are git-tracked
+(`public/images/avatars/people/<slug>.webp`, external assets that
+cannot be regenerated); generated avatars are not (deterministic from
+the slug alone, same convention as the OG-image pipeline).
+
 ## Biography Linking
 
 Biographies serve as **navigation hubs** — a reader's entry point into a
@@ -2155,9 +2185,49 @@ so the relation is two-way without a central list to maintain.
 - **Target a hub, not a sibling.** `partOf` is a one-level child → hub
   relation. Peer relations stay in `relatedEntries`; a reading order
   within a curated series uses a dedicated series component (see
-  `DesignSeriesNav.astro`).
+  `DesignSeriesNav.astro` and § Design-Document Series Navigation
+  below).
 - **Graceful when unresolved.** If `partOf` is unset or does not resolve
   to an entry, no link renders.
+
+## Design-Document Series Navigation
+
+The 12-page design-document series (`design/*`: L0 system overview,
+L1 #1–8 domain pages, L2 #9–11 cross-cutting pages) shares one
+position-notation convention across every page and both locales, so a
+reader who lands on any page — from search, a link, or the series
+component below — can tell where it sits in the tree without reading
+the rest of the site.
+
+**Position notation.** Every design entry's opening paragraph states
+its position as `L0`, `L1 #N`, or `L2 #N`. Use this token form only —
+never a plain ordinal ("the third page"), and never a second
+vocabulary for the same concept. The JA mirror carries the identical
+`L0` / `L1 #N` / `L2 #N` tokens; do not translate the position marker
+into 「ページ」 or 「編」, and do not mix the two JA words for
+"entry in the series" across pages — the `L…` token is the only
+position label, in both locales.
+
+- EN: `This page is **L1 #2 — Transaction design** in the [design-document series](.../bitcoin-system-design-overview/).`
+- JA: `本ページは[設計文書シリーズ](.../bitcoin-system-design-overview/)の **L1 #2 — トランザクション設計** である。`
+
+**Series order lives in one place.** `src/data/design-series.ts` is
+the single source of truth for the L0 → L1 #1..#8 → L2 #9..#11 order,
+slugs, and bilingual titles. Two consumers read it instead of each
+hardcoding their own copy of the order:
+
+- `DesignSeriesNav.astro` — the tree-style table of contents rendered
+  at the top of every design entry, current page highlighted (see
+  § Parent Link above).
+- prev/next links on the entry page
+  (`src/pages/entries/[...slug].astro` and its JA mirror) — every
+  design entry shares one frontmatter `date`, so the site-wide date
+  sort used for prev/next on every other entry type carries no
+  ordering signal here; design entries walk `DESIGN_SERIES` instead.
+
+Adding a new design page means appending one entry to
+`design-series.ts` — both consumers pick it up automatically, so
+there is no second place to register the page.
 
 ## Auto-Link Keywords (concept and person)
 
@@ -2793,6 +2863,38 @@ every ` ```mermaid ` block in the corpus and parses it through
 parse error. Run `npm run check:mermaid` directly to iterate on a
 diagram without the full check.
 
+#### Node emphasis colors (`style fill`)
+
+When a diagram's `style NODE fill:#xxx` directive highlights a node —
+network/topology emphasis, a root or center node, a PoW/warning
+emphasis, a `stateDiagram-v2` note — pick the color from the
+archive's existing Mermaid emphasis tokens rather than an arbitrary
+hex value:
+
+| Token | Use |
+|---|---|
+| `--mermaid-emphasis-blue-bg` | Network / topology node emphasis |
+| `--mermaid-emphasis-pink-bg` | Root / center node emphasis |
+| `--mermaid-emphasis-yellow-bg` | PoW / warning-style emphasis |
+| `--mermaid-note-bg` | `stateDiagram-v2` note background |
+
+Mermaid's `style` directive only accepts literal hex/color values, not
+CSS custom properties, so `src/lib/rehype-mermaid-themer.mjs`'s
+`COLOR_SUBSTITUTIONS` table rewrites specific hex codes (`#e8f4fd`,
+`#ff99ff`/`#f9f`, `#ffff99`/`#ff9`, `#fff5ad`) to the corresponding
+`var(--mermaid-*)` token in the build-time SVG output. A color chosen
+outside this table renders literally in both themes, including the
+pastel-background-plus-light-text combination that is unreadable in
+dark mode (`--mermaid-text` tracks the theme; a hardcoded `style fill`
+does not).
+
+Introducing a genuinely new emphasis color requires adding both the
+CSS token (`src/styles/global.css`, all three `:root` /
+`@media (prefers-color-scheme: dark)` / `data-mode="dark"` blocks) and
+the matching `COLOR_SUBSTITUTIONS` entry — a color picked only in the
+diagram source, with no themer rule, silently loses dark-mode
+contrast.
+
 #### Linking diagram items to archive pages (`%% link:`)
 
 Mermaid diagrams in this archive CAN carry links, via a custom
@@ -2831,6 +2933,17 @@ Rules:
   one source item but renders as two elements, so every link after it
   lands one item off. Split multi-event years into continuation lines
   (`     : event B`).
+- **Link each distinct destination at most once per diagram.** When
+  multiple items in the same diagram would naturally point at the
+  same entry (e.g. two dated events both citing the same email),
+  place `%% link:` only after the first occurrence and leave the rest
+  unlinked — repeating the same destination link across a diagram is
+  visual noise, not additional information.
+- **Do not link to `biography`-type entries.** A biography has no
+  `/entries/{id}/` detail page — its body renders inside the
+  participant page instead (see § Frontmatter `author` semantics) —
+  so a `%% link:` pointing at one 404s. Link the person's
+  `/participants/{slug}/` page or a primary-source entry instead.
 - EN and JA mirrors carry the same `%% link:` lines at the same
   structural positions, pointing at the locale-appropriate paths.
 

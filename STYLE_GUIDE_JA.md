@@ -64,6 +64,8 @@ Bitcoin Institute 日本語版の編集規則。
    例: `Bitcoin Core`、`Bitcoin Magazine`、`Bitcoin XT`、`Bitcoin Classic`、`Bitcoin Unlimited`、`BitcoinTalk`、`SegWit`、`Taproot`、`Lightning Network`、`COPA`、`The Times`、`SourceForge`、`BIP 125`。
    ハンドル名・仮名・ブランド類似の識別子も同じ扱い (例: `Cobra`、`theymos`、`Twitter`)。
    **注**: 単独の `Bitcoin` (通貨・プロトコル・ネットワーク言及) は本区分の対象外。日本では一般名としてカナ「ビットコイン」 が定着しているため § II.3 用語集の規則に従う。複合名 (`Bitcoin Core` 等の製品名・組織名) は本区分のとおり英語形維持。
+
+   **個別の企業名・製品名がどちらに入るかの判定方法**: ある固有名詞が本区分 (英語維持) にとどまるか、`Bitcoin` のように定着カナ表記があるため § II.3 の例外に入るかは、Wikipedia 日本語版・辞書媒体・主要メディアでの用例からカナ表記の定着状況を Web で確認して個別に判定する。**アーカイブ内の他の固有名詞の表記傾向と機械的に揃えない** — 定着の有無は企業・製品ごとに異なる (例: `Silicon Graphics` は日本語圏でカナ表記「シリコングラフィックス」 が定着済みだが、同じ文脈に登場する `Wasabi Software` は英語表記のまま定着しており、ペアで揃える理由にならない。§ II.3 参照)。
 3. **標準的な技術略語** — 日本のビットコインコミュニティで英語形のまま流通しており、展開形が日本語で使われない略語。
    例: `PoW`、`UTXO`、`SHA-256`、`ECDSA`、`DDoS`、`JSON-RPC`、`URL`、`TCP/IP`。
 4. **引用と出典表示の表面形** — `secondarySources` の `name` フィールド、引用文中の語、URL、タグスラッグ、冒頭メタデータの構造的フィールド (スラッグ・ソース記録・型など)。`[Quote from: NAME on DATE]` や `NAME wrote:` のような構造的な引用先表示行も含む (§ 4 参照)。冒頭メタデータでも読者に表示される日本語散文項目 (`title`・`description`・`sourceNote`・`editorNote`・`label`・`secondarySources` の `note`) は § 1 の「編集された日本語本文」 にあたり、本文と同じく用語集が適用される (`check:ja-glossary` が走査する)。
@@ -149,10 +151,11 @@ It's in good hands with Gavin and everyone.
 ### 用法
 
 - インライン引用には `「…」` を用いる。
-- 入れ子の引用には `『…』` を用いる。
+- 入れ子の引用、および書名・論文名・番組名・作品名には `『…』` を用いる (例: `『AKIRA』`、`『Money Electric: The Bitcoin Mystery』`)。書名等は入れ子かどうかに関わらずこの規則が適用される — 入れ子引用専用の記号ではない。
+- **原文保持が必要な引用フレーズ** (人物が実際に発した語句、草稿と最終版の語句対比等。書名ではない) は `『…』` へ変換しない。既存の記法 (`「…」` または `"..."`) のまま保持する — 例: サボの「Nakamoto improved my design」。`scripts/audit-en-inline-in-ja.mjs` (`npm run audit:en-inline-in-ja`) が検出する JA 本文インラインの英語断片は、識別子相当・書名相当のどちらにも当てはまらない場合がある。2026-05-30 の未分類 223 件人手判定でこの種別 (33 件) が確立し、識別子・書名と並ぶ第三の扱いとして本項目に記録する。
 - aftermath ページなどの物語型エントリーで短い抜粋発言を引用する場合、通常は `> 「…」` を用いる。
 - メール・書簡・フォーラム投稿・ログ抜粋の本文として提示される一次資料の翻訳では、引用ブロックには通常 `「」` を付けない (出典または文脈が特に求める場合を除く)。
-- URL、メールヘッダー、コマンド、ログ行、ハンドル名、UI 文字列には、それらが言語として引用されているのでない限り `「」` を付けない。
+- URL、メールヘッダー、コマンド、ログ行、ハンドル名、UI 文字列には、それらが言語として引用されているのでない限り `「」` を付けない。画面上のボタン・タブ・フィールド・状態を示す実 UI 表示文字列や、コマンド・ログ／エラー文言・コード片として確証できるもの (`unconfirmed`、`Received with: X`、`Generated +50.10` 等) は、`「」` の代わりにインラインコード `` `...` `` で示す。人名・作品名・ハンドル名・製品名・通常の英単語は、識別子らしく見えても対象外 — それぞれ § I.1 のカタカナ表記、本節の書名 `『』` 規則、または無修飾表記に従う (「サトシ」「AKIRA」等を `code` 化しない)。
 
 タイトル内の引用処理については § II.1 (タイトル方針) を参照。
 
@@ -253,6 +256,18 @@ quotes:
 ```
 
 `npm run check:quotes` がこの構造を検証する。
+
+#### 入れ子 marker の `parent` 決定ルール
+
+body 内で `>` 行の内側に置かれた `<!-- quote: qN -->` marker (depth >= 1 の nested marker) は、対応する `quotes[qN]` に `parent` の設定が必須。marker が nested していることが分かっても、どの階層の子かを `parent` が示さなければ、renderer は chip の入れ子を正しく描画できない。
+
+**基本ルール**: 対象 marker (depth d、d >= 2) の `parent` は、**同一 blockquote chain 内で対象 marker より前にある最も近い depth d-1 の quote marker** の q。
+
+**depth 1 marker の特例**: 対象 marker (depth 1) の `parent` は、**同一引用ブロックの直前にある外側 (depth 0、body の blockquote 外) の `<!-- quote: qN -->` marker** の q。外側 marker が見当たらない場合は機械的に補完せず、手動判断に回す。
+
+**「同一 blockquote chain」の定義**: 対象 marker より前で、完全な空行 (`^$`) を挟まずに `>` 行が連続している範囲。`>` だけの空引用行や、chain 内の HTML コメント (`<!-- speaker: -->` 等) は chain を切らない。完全な空行のみが chain を切る (markdown の blockquote 仕様どおり)。
+
+**検出器が確認する範囲**: `scripts/check-quotes.mjs` の `nested-marker-without-parent` は nested marker に `parent` が設定されているかどうかのみを機械的に検査し (未設定なら error)、`nested-marker-at-root` は逆に `parent` を持つ marker が depth 0 の root に置かれていないかを検査する。**どの qN を `parent` に選ぶべきかという上記の決定ルール自体は検出器の対象外** — 誤った qN を指定しても検出器は通過する。執筆者が chain を目視で辿り、正しい親を選ぶ。
 
 #### `sourceEntryId` は primary-source エントリーを指す ( 自分自身は禁止 )
 
@@ -359,15 +374,15 @@ quotes:
 
 両方とも本文の場合 (= 同じリリース告知文を複数の場に重複掲載した等) は本ルールの対象外。重複本文の品質チェックは `check-source-duplication` 系が担う。
 
-具体例 (修正前):
+過去の違反例 (履歴として保持、本節のルール確立の契機):
 - `2008-11-03-re-bitcoin-p2p-e-cash-paper-levine.md` (Levine 原文、本文): 「しかし実際にはそうなっていない。」
 - `2008-11-03-sni3-bitcoin-p2p-e-cash-paper.md` (Satoshi が Levine を引用、`>` ブロック): 「しかし実際には支配していない。」
 
-英語原文は両方 `But they don't.` で同一なのに、日本語訳が分かれていた。Levine 側の自然な意訳「しかし実際にはそうなっていない。」 に統一した。
+英語原文は両方 `But they don't.` で同一なのに、日本語訳が分かれていた。Levine 側の自然な意訳「しかし実際にはそうなっていない。」 に統一済み (2026-05-11 コミット `857c82bd3`)。現在は両ファイルとも統一形。
 
 例外: 文脈の必然で訳し分ける場合 (= 同じ英文が異なる意味文脈で使われる) は許容。判断に迷うときは、より正確で自然な訳に統一する。
 
-検証: `npm run check:quote-translation-consistency` (= `scripts/check-quote-translation-consistency.mjs`) が「少なくとも 1 箇所が `>` 引用ブロックで使われている同一英語段落の訳語ずれ」 を段落単位で検出して警告する。表記揺れ (全角半角の数字、Markdown 強調記号周辺のスペース、Japanese-ASCII 境界スペース等) は本スクリプトの正規化で吸収するので、報告は実質的な訳語の差にほぼ絞られる。`check:` 系ではなく `audit:` 系に置いているため、既存の差があっても build を阻害しない。新規翻訳の追加直後と、ずれを修正する作業の前後に手動で実行する運用。
+検証: `npm run check:quote-translation-consistency` (= `scripts/check-quote-translation-consistency.mjs`) が「少なくとも 1 箇所が `>` 引用ブロックで使われている同一英語段落の訳語ずれ」 を段落単位で検出する。表記揺れ (全角半角の数字、Markdown 強調記号周辺のスペース、Japanese-ASCII 境界スペース等) は本スクリプトの正規化で吸収するので、報告は実質的な訳語の差にほぼ絞られる。`npm run check` と build に組み込まれており、訳語ずれが 1 件でもあれば build が失敗する。以前は `audit:` 系として手動実行のみで build を阻害しなかったが、2026-07-11 に訳語・visual の両軸で違反が 0 件に達したことを受けて `check:` へ昇格した。新規翻訳の追加直後や、ずれを修正する作業の前後にも手動で実行して確認できる。
 
 ### 編者注 / 補足 ( Role C / D ) — エントリー型別の使い分け
 
@@ -840,6 +855,8 @@ description が現状で上限を超えている場合は、**収まるように
 | eclipse attack | 日食攻撃 | エクリプス攻撃 | 同上 |
 | pruning | 剪定 | プルーニング | 同上 |
 | pay-to-send (email) | 送信課金型（メール） | pay-to-send (本文中) | 同上。`pay-to-send` を「送金」 と訳す誤りの是正 |
+| Silicon Graphics (企業名) | シリコングラフィックス | Silicon Graphics (本文中) | Wikipedia 日本語版・Weblio が記事タイトルでカナ表記を採用 (中黒なし)。日本国内で歴史的に定着した表記 (2026-05-01 Web 検証) |
+| Wasabi Software (企業名、Silicon Graphics と同一文脈で言及される小規模 3D グラフィックス企業) | Wasabi Software (英語表記のまま) | ワサビ・ソフトウェア等のカナ化 | 日本国内での認知度が低く Wikipedia 日本語版に独立記事なし。定着したカナ表記がない (2026-05-01 Web 検証)。`Silicon Graphics` とペアで言及されても、企業ごとの定着表記が異なる限り機械的に表記を揃えない |
 
 ### 正規対応
 
