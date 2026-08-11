@@ -70,7 +70,7 @@ The companion entry [Satoshi was not a cypherpunk](/BitcoinArchive/entries/analy
 
 ## 1. Hayek 1976: the competing-currency thesis
 
-Friedrich August von Hayek published *Denationalisation of Money: An Analysis of the Theory and Practice of Concurrent Currencies* on October 25, 1976, through the Institute of Economic Affairs in London. He had been awarded the Nobel Memorial Prize in Economic Sciences two years earlier (1974). The monograph went through three editions (1976, 1978, 1990) and remains in print; the [Satoshi Nakamoto Institute hosts the full text as a standing library reference](https://nakamotoinstitute.org/library/denationalisation/).
+Friedrich August von Hayek published *Denationalisation of Money: An Analysis of the Theory and Practice of Concurrent Currencies* on October 25, 1976, through the Institute of Economic Affairs in London. He had been awarded the Nobel Memorial Prize in Economic Sciences two years earlier (1974). The monograph went through three editions (1976, 1978, 1990) and remains in print; the Satoshi Nakamoto Institute hosts the full text as a standing library reference.
 
 ### 1.1 The central proposal
 

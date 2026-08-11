@@ -23,6 +23,9 @@ tags:
   - "analysis"
   - "disputed"
 secondarySources:
+  - name: "ニック・サボのサイファーパンクリスト保存投稿（1993–1996 年）"
+    url: "https://mailing-list-archive.cryptoanarchy.wiki/authors/szabo_at_netcom_com_nick_szabo_/"
+    note: "1993–1996 年のデジタルキャッシュ、マイクロペイメント、評判、匿名性、暗号政策に関する投稿アーカイブ。"
   - name: "Skye Grey — 「Satoshi Nakamoto is (probably) Nick Szabo」（LikeInAMirror、2013 年 12 月）"
     url: "https://likeinamirror.wordpress.com/2013/12/01/satoshi-nakamoto-is-probably-nick-szabo/"
   - name: "TechCrunch — 「Who Is The Real Satoshi Nakamoto? One Researcher May Have Found The Answer」（2013 年 12 月 5 日）"
@@ -160,7 +163,7 @@ Skye Grey の主張：サボの Unenumerated 文章とパターンが強く一�
 
 ### 1.4 サイファーパンクとしての経歴と知的系譜
 
-サボは長期にわたるサイファーパンクである：1990 年代の記録されたサイファーパンク・メーリングリスト参加（[保存された投稿](https://mailing-list-archive.cryptoanarchy.wiki/authors/szabo_at_netcom_com_nick_szabo_/)は 1993〜1996 年に及ぶ）、Bit Gold が b-money とともに議論された libtech 非公開メーリングリストへの参加、デジタルキャッシュの哲学的基礎についての数十年にわたる公開執筆。ホワイトペーパーの知的系譜（Hashcash、b-money、連結ハッシュ構造、反信頼枠組み）はサボが自身の思考を記録してきた話題空間と密接に重なる。
+サボは長期にわたるサイファーパンクである：1990 年代の記録されたサイファーパンク・メーリングリスト参加（保存された投稿は 1993〜1996 年に及ぶ）、Bit Gold が b-money とともに議論された libtech 非公開メーリングリストへの参加、デジタルキャッシュの哲学的基礎についての数十年にわたる公開執筆。ホワイトペーパーの知的系譜（Hashcash、b-money、連結ハッシュ構造、反信頼枠組み）はサボが自身の思考を記録してきた話題空間と密接に重なる。
 
 反論：この証拠は他の長期サイファーパンク（アダム・バック、ウェイ・ダイ、ハル・フィニーら）にも広く当てはまる。候補集合を実質的に絞るが、サボを特定的に選び出すわけではない。§1.1 の表が示すとおり、この系譜の部品（プルーフ・オブ・ワーク、連結タイムスタンプ）自体が共通祖先からの継承（両列とも 🔄）であって、サボ起源ではない。さらにその参加の中身も示唆的だ：保存された投稿はデジタルキャッシュの経済、マイクロペイメント、評判・匿名性システム、暗号政策に集中しており、ソースコードや実装ではなく設計と議論である。これは §2.5 が指摘する工学的成果の欠如と一致する。
 

@@ -56,7 +56,7 @@ translationStatus: complete
 
 ![暗い背景の二分割イラスト。左側は二つの点を結ぶ三本の曲線、右側は光る円形のハブから四つの小さな点へ曲線の矢印が伸びる構図。](/BitcoinArchive/images/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects-hero.png)
 
-2013 年 12 月 16 日、[プルリクエスト #3408](https://github.com/bitcoin/bitcoin/pull/3408) が Bitcoin-Qt を「Bitcoin Core」に改名し、2014 年 3 月 19 日にバージョン 0.9.0 として公開された。当時は曖昧さの解消として提示されたこの改名は、後の三つの証言 ([ハーン 2016](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)、[ハーン 2024 COPA](/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/)、[ハーン 2025 CoinGeek](/BitcoinArchive/ja/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/)) に照らすと違って見える。より重要な意味を持つようになったのだろうか。
+2013 年 12 月 16 日、プルリクエスト #3408 が Bitcoin-Qt を「Bitcoin Core」に改名し、2014 年 3 月 19 日にバージョン 0.9.0 として公開された。当時は曖昧さの解消として提示されたこの改名は、後の三つの証言 ([ハーン 2016](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)、[ハーン 2024 COPA](/BitcoinArchive/ja/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/)、[ハーン 2025 CoinGeek](/BitcoinArchive/ja/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/)) に照らすと違って見える。より重要な意味を持つようになったのだろうか。
 
 ここで提示する読みでは、答えは「然り」である。ただし主張は字面ほど広くはない。**語彙的主張**は、選ばれた名称「Bitcoin Core」が「リファレンスクライアント」の同義語として機能していない、という点である。「Bitcoin-Qt」が持たなかった求心力的な重みを、この名称は持つ。改名が後の効果を引き起こしたのか、それとも既に存在していた構造に名前を与えただけなのかは、別個でより難しい問いである (§6)。
 
@@ -76,18 +76,18 @@ translationStatus: complete
 
 ### 1.2 PR #3408 (2013 年 12 月 16 日マージ)
 
-[プルリクエスト #3408](https://github.com/bitcoin/bitcoin/pull/3408) は[ウラジミール・ファン・デル・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/) (ハンドル名: laanwj) が起票し、2013 年 12 月 16 日にマージされた。PR 本文と続く 0.9.0 リリースノートに記された動機は同一である。
+プルリクエスト #3408 は[ウラジミール・ファン・デル・ラーン](/BitcoinArchive/ja/participants/wladimir-van-der-laan/) (ハンドル名: laanwj) が起票し、2013 年 12 月 16 日にマージされた。PR 本文と続く 0.9.0 リリースノートに記された動機は同一である。
 
 <!-- audit:quote-skip -->
 > 「Bitcoin というネットワークと Bitcoin というソフトウェアの間の混乱を減らすために、リファレンスクライアントを Bitcoin Core に改名した」
 
-— bitcoin.org, [Bitcoin Core 0.9.0 リリースノート](https://bitcoin.org/en/release/v0.9.0), 2014 年 3 月 19 日
+— bitcoin.org, Bitcoin Core 0.9.0 リリースノート, 2014 年 3 月 19 日
 
 PR の改変範囲はユーザーから見える文字列 (プログラムメッセージ、ドキュメント) に限定された。実行ファイル名 `bitcoind` および `bitcoin-qt` はマージ時点では変更されていない。
 
 ### 1.3 改名時の内部不一致
 
-PR スレッドには[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)からの実質的な異論が記録されている。[PR #3408 の議論](https://github.com/bitcoin/bitcoin/pull/3408)で要約すれば、「core」 (核) という語はコンセンサスに直結するコードに限定すべきで、コードベース全体に適用すべきではない、という主張である。ウラジミールはこれに対し、過去の議論 (issue #3203) を参照しつつ、どんな名前を選んでも全員一致は得られないと応じた。
+PR スレッドには[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)からの実質的な異論が記録されている。PR #3408 の議論で要約すれば、「core」 (核) という語はコンセンサスに直結するコードに限定すべきで、コードベース全体に適用すべきではない、という主張である。ウラジミールはこれに対し、過去の議論 (issue #3203) を参照しつつ、どんな名前を選んでも全員一致は得られないと応じた。
 
 ピーター・トッドの異論は注目に値する。彼が提案した「core」の意味、すなわち還元不能な最小コンセンサスルールは、まさに「Bitcoin Core」という広い名称が後に保てなくなった区別である。2014 年以降、「Bitcoin Core」は (a) コンセンサス重要コードと (b) 周辺のソフトウェアプロジェクトの両者を、一つのラベルで包摂し、両者を区別しないものとなった。
 

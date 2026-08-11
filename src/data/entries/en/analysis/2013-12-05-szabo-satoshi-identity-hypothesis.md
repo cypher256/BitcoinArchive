@@ -23,6 +23,9 @@ tags:
   - "analysis"
   - "disputed"
 secondarySources:
+  - name: "Archived cypherpunks-list posts by Nick Szabo (1993–1996)"
+    url: "https://mailing-list-archive.cryptoanarchy.wiki/authors/szabo_at_netcom_com_nick_szabo_/"
+    note: "Archive of Szabo's posts on digital cash, micropayments, reputation, anonymity, and crypto policy during 1993–1996."
   - name: "Skye Grey — 'Satoshi Nakamoto is (probably) Nick Szabo' (LikeInAMirror, December 2013)"
     url: "https://likeinamirror.wordpress.com/2013/12/01/satoshi-nakamoto-is-probably-nick-szabo/"
   - name: "TechCrunch — 'Who Is The Real Satoshi Nakamoto? One Researcher May Have Found The Answer' (December 5, 2013)"
@@ -159,7 +162,7 @@ The objection: profile-match selects a population, not an individual. This evide
 
 ### 1.4 Cypherpunk credentials and intellectual lineage
 
-Szabo is a long-tenure cypherpunk: documented mailing-list presence in the 1990s — his [archived cypherpunks-list posts](https://mailing-list-archive.cryptoanarchy.wiki/authors/szabo_at_netcom_com_nick_szabo_/) run from 1993 to 1996 — presence on the libtech private list where Bit Gold was discussed alongside b-money, decades of public writing on the philosophical foundations of digital cash. The whitepaper's intellectual lineage (Hashcash, b-money, the chained-hash structure, anti-trust framing) overlaps closely with the topical space Szabo has documented his own thinking in.
+Szabo is a long-tenure cypherpunk: documented mailing-list presence in the 1990s — his archived cypherpunks-list posts run from 1993 to 1996 — presence on the libtech private list where Bit Gold was discussed alongside b-money, decades of public writing on the philosophical foundations of digital cash. The whitepaper's intellectual lineage (Hashcash, b-money, the chained-hash structure, anti-trust framing) overlaps closely with the topical space Szabo has documented his own thinking in.
 
 The objection: this evidence applies broadly to several long-tenure cypherpunks (Adam Back, Wei Dai, Hal Finney, etc.). It narrows the candidate set substantially but does not select Szabo specifically. And as §1.1's table shows, the shared lineage primitives (proof-of-work, linked timestamping) are themselves common-ancestor inheritance (🔄 on both columns), not Szabo-originated. The register of that presence also matters: his archived posts cluster on digital-cash economics, micropayments, reputation and anonymity systems, and crypto policy — design and argument rather than source code or implementation — consistent with the engineering-output gap detailed in §2.5.
 

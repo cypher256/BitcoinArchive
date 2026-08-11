@@ -24,6 +24,9 @@ secondarySources:
     url: "https://bitcoinops.org/en/newsletters/2018/10/09/"
   - name: "BitMEX Research — The Time-Warp Attack"
     url: "https://blog.bitmex.com/the-timewarp-attack/"
+  - name: "Original Bitcoin v0.1.0 — src/main.cpp at pinned commit 4184ab2"
+    url: "https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/main.cpp#L685-L707"
+    note: "The retarget loop at src/main.cpp lines 685–707 contains the original 2,015-block traversal."
   - name: "Bitcoin BIP — Great Consensus Cleanup soft fork (Antoine Poinsot), pinned commit 79334a1"
     url: "https://github.com/bitcoin/bips/blob/79334a16fc69414412029f259c67017c503930b2/bip-0054.md"
 relatedEntries:
@@ -58,7 +61,7 @@ The attack is not free or instant. The published descriptions place the cost-eff
 
 ## 2. Why this is in Satoshi's code
 
-Examination of the v0.1.0 source — preserved in [trottier/original-bitcoin's pinned `src/main.cpp`](https://github.com/trottier/original-bitcoin/blob/4184ab26345d19e87045ce7d9291e60e7d36e096/src/main.cpp#L685-L707) — shows the bug present from the initial release in January 2009. The loop that walks the previous retarget window starts at the latest block and counts back 2,015 entries, then takes the time delta between that 2,015-block-earlier ancestor and the current block. The intent was clearly to span 2,016 blocks; the implementation spans 2,015. There is no surviving evidence that Satoshi was aware of the discrepancy. The bug was first publicly described on BitcoinTalk in 2011 and has been periodically rediscovered since.
+Examination of the v0.1.0 source — preserved in trottier/original-bitcoin's pinned `src/main.cpp` at commit `4184ab2`, lines 685–707 — shows the bug present from the initial release in January 2009. The loop that walks the previous retarget window starts at the latest block and counts back 2,015 entries, then takes the time delta between that 2,015-block-earlier ancestor and the current block. The intent was clearly to span 2,016 blocks; the implementation spans 2,015. There is no surviving evidence that Satoshi was aware of the discrepancy. The bug was first publicly described on BitcoinTalk in 2011 and has been periodically rediscovered since.
 
 ## 3. The Great Consensus Cleanup
 

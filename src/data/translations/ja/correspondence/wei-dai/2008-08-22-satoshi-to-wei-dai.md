@@ -17,6 +17,10 @@ tags:
   - "earliest-correspondence"
   - "adam-back"
   - "origins"
+secondarySources:
+  - name: "プレリリース原稿 — Electronic Cash Without a Trusted Third Party"
+    url: "http://www.upload.ae/file/6157/ecash-pdf.html"
+    note: "このメールに添付された原稿。現在は失われており、旧ホスティングサイトの消滅後、既知のキャッシュもない。"
 relatedEntries:
   - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-bitcoin-design-lineage"
@@ -40,7 +44,7 @@ translationStatus: complete
 
 *[補足：このメールは satoshi@anonymousspeech.com から weidai@ibiblio.org 宛に送信され、CC は satoshi@anonymousspeech.com に向けられていた。]*
 
-*[補足：メールにはプレリリース原稿へのリンクも含まれていた：http://www.upload.ae/file/6157/ecash-pdf.html — 表題は「Electronic Cash Without a Trusted Third Party」（ecash.pdf）。同じ原稿は 2 日前の 8 月 20 日にアダム・バックにも共有されている。このファイルは現在失われており、ホスティングサイトが消滅し、キャッシュも見つかっていない。グウェン、ウェイ・ダイ、アダム・バック、グレゴリー・マクスウェルのいずれも、控えを保持していないと確認している。]*
+*[補足：メールには「Electronic Cash Without a Trusted Third Party」（ecash.pdf）という題のプレリリース原稿も含まれていた。同じ原稿は 2 日前の 8 月 20 日にアダム・バックにも共有されている。このファイルは現在失われており、ホスティングサイトが消滅し、キャッシュも見つかっていない。グウェン、ウェイ・ダイ、アダム・バック、グレゴリー・マクスウェルのいずれも、控えを保持していないと確認している。]*
 
 *[補足：メールには以下の論文の要旨も含まれていた：]*
 

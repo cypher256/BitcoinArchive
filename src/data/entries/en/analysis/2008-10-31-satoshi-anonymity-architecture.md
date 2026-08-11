@@ -21,6 +21,12 @@ secondarySources:
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
   - name: "CoinMarketCap — Satoshi Files: Gavin Andresen"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
+  - name: "Mike Hearn — released Satoshi correspondence"
+    url: "https://plan99.net/~mike/satoshi-emails/"
+    note: "Published correspondence used for the December 27 and December 29, 2010 entries in the withdrawal sequence."
+  - name: "P2P Foundation — Bitcoin open-source thread"
+    url: "http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source"
+    note: "The March 6, 2014 post from the Satoshi account, whose authenticity is contested."
 relatedEntries:
   - analysis/2010-12-27-satoshi-non-technical-silence
   - analysis/2009-01-09-satoshi-windows-development-environment
@@ -202,11 +208,11 @@ Satoshi's withdrawal from the project does not occur as a single event. The docu
 | December 12, 2010 | Satoshi grants Andresen formal commit access to the SourceForge repository (private). Public-side: Satoshi's final BitcoinTalk post (in a DDoS-mitigation thread) closes with "I'm doing a few more things, then I plan to pass the baton." | COPA v Wright public exhibits; [BitcoinTalk thread](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) |
 | December 15, 2010 | Satoshi's final SVN commit (revision 202) — a small change to IRC external-IP retrieval. | SourceForge SVN history |
 | December 19, 2010 | Andresen publicly announces lead-maintainer role. Same day, the GitHub `bitcoin/bitcoin` repository is created. | BitcoinTalk announcement |
-| December 27, 2010 | Mike Hearn → Satoshi: Christmas message and questions about 21M coin cap, 10-minute block target, and 500 KB block-size limit. | [`plan99.net`](https://plan99.net/~mike/satoshi-emails/) released correspondence |
+| December 27, 2010 | Mike Hearn → Satoshi: Christmas message and questions about 21M coin cap, 10-minute block target, and 500 KB block-size limit. | `plan99.net` released correspondence |
 | December 29, 2010 | Satoshi → Mike Hearn: long-form private reply with full SPV / client-mode design discussion, "Educated guess" explanation of the 21M figure, Moore's-Law reasoning on block-size growth. The last extended private letter Satoshi sent. | `plan99.net` |
 | April 23, 2011 | Satoshi → Mike Hearn: "I've moved on to other things. It's in good hands with Gavin and everyone." | `plan99.net` |
 | April 26, 2011 | Satoshi → Gavin Andresen: requests Andresen stop describing him as "a mysterious shadowy figure"; transmits the CAlert key and broadcast code (the network-emergency authority — the last technical capability Satoshi had retained). | Gavin Andresen statement (CoinMarketCap) |
-| March 6, 2014 | A post from the Satoshi P2P Foundation account: "I am not Dorian Nakamoto." Authenticity contested; the account may have been compromised. | [P2P Foundation thread](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source) |
+| March 6, 2014 | A post from the Satoshi P2P Foundation account: "I am not Dorian Nakamoto." Authenticity contested; the account may have been compromised. | P2P Foundation thread |
 
 The seven-month sequence is structurally specific: a private withdrawal signal ("working on other projects") goes to Gavin Andresen in September 2010, with the formal code-management transfer itself unfolding over the following months and reaching public-record completion on December 12; a public-facing pre-announcement is delivered within a routine technical thread on the same date; a final code commit follows on December 15; and the network-emergency CAlert key — the last lever — is released on April 26, 2011. There is no single dramatic farewell. There is no public goodbye post on BitcoinTalk. The pattern matches the rest of the architecture: leverage and visibility are reduced gradually, not severed in a moment that would itself be a forensic event.
 

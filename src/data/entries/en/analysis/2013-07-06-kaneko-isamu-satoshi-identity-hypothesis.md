@@ -19,6 +19,9 @@ tags:
   - "analysis"
   - "disputed"
 secondarySources:
+  - name: "Winny opening announcement — 2channel thread archive (Mr. 47)"
+    url: "https://winny.info/2ch/47.html"
+    note: "Archive of Kaneko's first anonymous Winny development announcement, posted under sequence number 47."
   - name: "Wikipedia (Japanese) — 金子勇 (Kaneko Isamu)"
     url: "https://ja.wikipedia.org/wiki/%E9%87%91%E5%AD%90%E5%8B%87"
   - name: "Wikipedia (English) — Winny"
@@ -139,7 +142,7 @@ Satoshi's archive-internal Freenet reference, by contrast, sits in the [2010-05 
 
 - **Code language**: Bitcoin v0.1 source contains no Japanese in identifiers, comments, or commit metadata. Winny source contains Japanese identifiers and comments. A Japanese developer could of course write English-only code by choice, but the absence of any cultural-linguistic trace is a data point against same-author identification.
 - **Prose register**: Satoshi's English sustains near-native idiomatic fluency and register switching across the mailing-list academic, BitcoinTalk casual, private-correspondence intimate, and release-note technical contexts over 32 months, without showing a single Japanese-substrate trace (awkward word order, non-native article/preposition patterns, English-as-translation-of-Japanese-concept marks). Kaneko's documented English (academic papers) is competent but does not show the same range. This is, again, not a decisive disqualifier on its own — but combined with the absence of any Japanese-lineage trace in the Bitcoin record, it shifts the prior.
-- **L1 register primary-source pin (Mr. 47 post)**: Kaneko's most native register is preserved in his Winny opening announcement (2002-04-01, Mr. 47, [thread archive](https://winny.info/2ch/47.html); [full text in the biography](/BitcoinArchive/participants/isamu-kaneko/)). The 2channel-subculture insider vocabulary (`2chネラー`), the sentence-final particles (`わ` / `なー`), and the self-deprecating opening (`暇なんで`, "I'm a bit bored…") for what would become a major P2P system are deep embeddings in L1 Japanese and a specific subculture (the 2channel download-software board). The recurring closing `少しまちなー` ("hang on a bit") across later thread posts shows the register is natural recurrence, not performance. Reconciling the two voices requires Kaneko to sustain L1=Japanese plus near-L1 English with zero register-switching slip for 32 months — theoretically possible, but the Mr. 47 voice pins Kaneko's L1 to deep Japanese at the primary-source level.
+- **L1 register primary-source pin (Mr. 47 post)**: Kaneko's most native register is preserved in his Winny opening announcement (2002-04-01, Mr. 47, thread archive; [full text in the biography](/BitcoinArchive/participants/isamu-kaneko/)). The 2channel-subculture insider vocabulary (`2chネラー`), the sentence-final particles (`わ` / `なー`), and the self-deprecating opening (`暇なんで`, "I'm a bit bored…") for what would become a major P2P system are deep embeddings in L1 Japanese and a specific subculture (the 2channel download-software board). The recurring closing `少しまちなー` ("hang on a bit") across later thread posts shows the register is natural recurrence, not performance. Reconciling the two voices requires Kaneko to sustain L1=Japanese plus near-L1 English with zero register-switching slip for 32 months — theoretically possible, but the Mr. 47 voice pins Kaneko's L1 to deep Japanese at the primary-source level.
 
 ### 2.4 Loose timing
 

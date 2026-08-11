@@ -48,7 +48,7 @@ relatedEntries:
 
 ![A dark navy tech-editorial graphic showing an old padlock crossed out with a red X next to an arrow leading to a smaller, precision-cut hexagonal lock, alongside a green elliptic-curve plot on a grid, a speedometer badge, and a two-point timeline bar spanning early 2015 to early 2016.](/BitcoinArchive/images/analysis/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012-hero.png)
 
-On January 15, 2016, [Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) shipped with libsecp256k1 as the default backend for consensus-critical ECDSA signature verification, replacing OpenSSL — a dependency that had been part of Bitcoin since [Satoshi's original v0.1 release](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) seven years earlier.
+On January 15, 2016, Bitcoin Core v0.12 shipped with libsecp256k1 as the default backend for consensus-critical ECDSA signature verification, replacing OpenSSL — a dependency that had been part of Bitcoin since [Satoshi's original v0.1 release](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) seven years earlier.
 
 ## Background
 
@@ -64,7 +64,7 @@ By 2014, the team had identified several concrete problems with using OpenSSL fo
 2. **Performance** — libsecp256k1 was eventually 2.5–5.5× faster than OpenSSL for signature verification, the dominant cost of validating new blocks.
 3. **Auditability** — by focusing on a single curve and only the operations Bitcoin needs, the library was small enough to be reviewed in depth, with constant-time implementations to resist side-channel attacks.
 
-In November 2014, Wuille discovered and reported [CVE-2014-3570](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3570) — a serious bug in OpenSSL's BN_sqr (squaring) routine — while writing tests for libsecp256k1. The bug had been latent in OpenSSL for years.
+In November 2014, Wuille discovered and reported CVE-2014-3570 — a serious bug in OpenSSL's BN_sqr (squaring) routine — while writing tests for libsecp256k1. The bug had been latent in OpenSSL for years.
 
 Maxwell summarized the conclusion in the Bitcoin Magazine article: "OpenSSL is not a suitable library for a consensus-critical system like Bitcoin."
 

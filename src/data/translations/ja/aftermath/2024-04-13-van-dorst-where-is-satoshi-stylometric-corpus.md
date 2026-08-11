@@ -42,7 +42,7 @@ translationStatus: complete
 
 ![暗い背景に散らばる無数の点の中で 1 点だけが丸で囲まれ、点線でスプレッドシート風の数値表・ファイル容量表示・五角形のレーダーチャートへとつながる構図で、上部に「Where is Satoshi?」の文字が大きく置かれている](/BitcoinArchive/images/analysis/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus-hero.png)
 
-2024 年 4 月 13 日、**バス・ヴァン・ドルスト**が[「Where is Satoshi?」](https://github.com/basvandorst/where-is-satoshi)を公開した。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の執筆コーパスを 75,000 人を超える暗号学関連メーリングリストの書き手および 70,000 人を超える Reddit /r/Bitcoin の書き手と比較する大規模オープンソース文体計量プロジェクトである。本プロジェクトは、コーパス規模の点でも、データ公開の透明性の点でも、サトシの著者性に関する数値的な多候補文体計量資源として、公開記録上最も厳格である。
+2024 年 4 月 13 日、**バス・ヴァン・ドルスト**が「Where is Satoshi?」を公開した。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の執筆コーパスを 75,000 人を超える暗号学関連メーリングリストの書き手および 70,000 人を超える Reddit /r/Bitcoin の書き手と比較する大規模オープンソース文体計量プロジェクトである。本プロジェクトは、コーパス規模の点でも、データ公開の透明性の点でも、サトシの著者性に関する数値的な多候補文体計量資源として、公開記録上最も厳格である。
 
 ## コーパス
 

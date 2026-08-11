@@ -56,7 +56,7 @@ translationStatus: complete
 
 ![封筒アイコンを線で結んだ 3 点の通信図（送信・仲介・著者）、引用元とコード依存関係を示すカード、他の点から 1 点だけ離れた文体計量の散布図、そしてチェックマーク付きの結論パネルを配置した図解](/BitcoinArchive/images/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis-hero.png)
 
-[ウェイ・ダイの b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) は[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)の参考文献 [1] である。ウェイ・ダイの [Crypto++ ライブラリ](https://www.cryptopp.com/)は SHA-256 のためビットコイン v0.1 に同梱されている。ウェイ・ダイはネットワーク立ち上げ前にサトシが接触した 2 番目の人物である。[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)＝サトシの説は、暗号通貨ジャーナリズムで少なくとも 2010 年以降議論されてきた（サトシがホワイトペーパーで明示的に引用した人物である候補プロファイル群 A）。
+[ウェイ・ダイの b-money](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) は[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)の参考文献 [1] である。ウェイ・ダイの Crypto++ ライブラリは SHA-256 のためビットコイン v0.1 に同梱されている。ウェイ・ダイはネットワーク立ち上げ前にサトシが接触した 2 番目の人物である。[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)＝サトシの説は、暗号通貨ジャーナリズムで少なくとも 2010 年以降議論されてきた（サトシがホワイトペーパーで明示的に引用した人物である候補プロファイル群 A）。
 
 ## 1. 証拠
 
@@ -80,7 +80,7 @@ translationStatus: complete
 
 ### 1.2 ビットコイン v0.1 の Crypto++ コードベース依存
 
-ウェイ・ダイは [Crypto++](https://www.cryptopp.com/) を作成・保守した。これは暗号アルゴリズムの C++ 無料オープンソースライブラリである。ビットコイン v0.1 は SHA-256 実装に Crypto++ を使用していた: v0.1.3 ALPHA（2009 年初頭）の `src/sha.cpp` および `src/sha.h` には、ルーチンが「Crypto++ Version 5.5.2（2007 年 9 月 24 日リリース）からスタンドアロンのファイルとして切り出された」旨のヘッダーコメントが付いている。`namespace CryptoPP` の帰属表示も保持されている。
+ウェイ・ダイは Crypto++ を作成・保守した。これは暗号アルゴリズムの C++ 無料オープンソースライブラリである。ビットコイン v0.1 は SHA-256 実装に Crypto++ を使用していた: v0.1.3 ALPHA（2009 年初頭）の `src/sha.cpp` および `src/sha.h` には、ルーチンが「Crypto++ Version 5.5.2（2007 年 9 月 24 日リリース）からスタンドアロンのファイルとして切り出された」旨のヘッダーコメントが付いている。`namespace CryptoPP` の帰属表示も保持されている。
 
 | ビットコインバージョン | 日付 | Crypto++ 利用 |
 |---|---|---|
@@ -96,7 +96,7 @@ translationStatus: complete
 
 ### 1.3 サイファーパンクの資質と知的系譜
 
-ウェイ・ダイは長期にわたるサイファーパンクであり、1990 年代からサイファーパンクメーリングリストの初期参加者で、隣接コミュニティ（Extropians、SL4）にも積極的に関与してきた。b-money は Hashcash（アダム・バック）、Bit Gold（ニック・サボ）、RPOW（ハル・フィニー）と同じ知的環境で開発された。b-money 後のウェイ・ダイの公的執筆は暗号学および合理性関連の領域で続いており、[LessWrong プロファイル](https://www.lesswrong.com/users/wei-dai)は隣接領域での数十年の知的成果を示している。
+ウェイ・ダイは長期にわたるサイファーパンクであり、1990 年代からサイファーパンクメーリングリストの初期参加者で、隣接コミュニティ（Extropians、SL4）にも積極的に関与してきた。b-money は Hashcash（アダム・バック）、Bit Gold（ニック・サボ）、RPOW（ハル・フィニー）と同じ知的環境で開発された。b-money 後のウェイ・ダイの公的執筆は暗号学および合理性関連の領域で続いており、LessWrong プロファイルは隣接領域での数十年の知的成果を示している。
 
 反論: サイファーパンクの資質は複数の候補（アダム・バック、ハル・フィニー、ニック・サボ、サッサマン）に当てはまる。この次元は候補集合を絞り込むがウェイ・ダイを一意に選ばない。
 

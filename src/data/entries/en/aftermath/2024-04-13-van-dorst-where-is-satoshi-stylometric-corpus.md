@@ -41,7 +41,7 @@ relatedEntries:
 
 ![A dark-themed illustration titled "Where is Satoshi?" shows a field of scattered dots representing thousands of authors, with one dot circled and connected by a dashed line to a spreadsheet-style data panel, a file-size figure, and a five-point radar chart.](/BitcoinArchive/images/analysis/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus-hero.png)
 
-On April 13, 2024, **Bas van Dorst** released ["Where is Satoshi?"](https://github.com/basvandorst/where-is-satoshi) — a large-scale, open-source stylometric comparison of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s writing corpus against more than 75,000 cryptography mailing-list authors and over 70,000 Reddit /r/Bitcoin commenters. The project is, by corpus size and by data-release transparency, the most rigorous numerical multi-candidate stylometric resource on Satoshi authorship in the public record.
+On April 13, 2024, **Bas van Dorst** released "Where is Satoshi?" — a large-scale, open-source stylometric comparison of [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/)'s writing corpus against more than 75,000 cryptography mailing-list authors and over 70,000 Reddit /r/Bitcoin commenters. The project is, by corpus size and by data-release transparency, the most rigorous numerical multi-candidate stylometric resource on Satoshi authorship in the public record.
 
 ## Corpus
 

@@ -21,6 +21,12 @@ secondarySources:
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
   - name: "CoinMarketCap — Satoshi Files: Gavin Andresen"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"
+  - name: "Mike Hearn — 公開されたサトシ通信"
+    url: "https://plan99.net/~mike/satoshi-emails/"
+    note: "2010 年 12 月 27 日と 29 日の離脱過程を記述するメール通信。"
+  - name: "P2P Foundation — Bitcoin オープンソーススレッド"
+    url: "http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source"
+    note: "サトシ名義アカウントによる 2014 年 3 月 6 日の投稿。真正性には議論がある。"
 relatedEntries:
   - analysis/2010-12-27-satoshi-non-technical-silence
   - analysis/2009-01-09-satoshi-windows-development-environment
@@ -205,11 +211,11 @@ v0.1 コードベース・配布アーカイブ・バージョン管理履歴の
 | 2010 年 12 月 12 日 | サトシ → アンドレセン、SourceForge リポジトリへのコミット権を正式譲渡 (非公開)。同日公開側: BitcoinTalk の DDoS 緩和スレッドにて最終公開投稿、結びは「あといくつかのことを行ったら、バトンを渡す予定だ。」 | COPA v Wright 公開証拠資料、[BitcoinTalk スレッド](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) |
 | 2010 年 12 月 15 日 | サトシ最終 SVN コミット (revision 202)。IRC 経由の外部 IP 取得処理の小さな修正。 | SourceForge SVN 履歴 |
 | 2010 年 12 月 19 日 | アンドレセンがリードメンテナーとしての就任を公式に発表。同日、GitHub `bitcoin/bitcoin` リポジトリ作成。 | BitcoinTalk アナウンスメント |
-| 2010 年 12 月 27 日 | マイク・ハーン → サトシ、クリスマスメッセージと 21M コイン上限・10 分ブロック目標・500 KB ブロックサイズ上限への質問。 | [`plan99.net`](https://plan99.net/~mike/satoshi-emails/) 公開メール |
+| 2010 年 12 月 27 日 | マイク・ハーン → サトシ、クリスマスメッセージと 21M コイン上限・10 分ブロック目標・500 KB ブロックサイズ上限への質問。 | `plan99.net` 公開メール |
 | 2010 年 12 月 29 日 | サトシ → マイク・ハーン、長文メール。完全な SPV / クライアントモード設計の解説、21M の「Educated guess」説明、ブロックサイズ拡大に対するムーアの法則の引用。サトシが書いた最後の長文メール。 | `plan99.net` |
 | 2011 年 4 月 23 日 | サトシ → マイク・ハーン: 「他のことに取り組むことにした。ギャビンたちに任せれば、安心だ」 | `plan99.net` |
 | 2011 年 4 月 26 日 | サトシ → ギャビン・アンドレセン: 「謎の影の人物として語らないでほしい」と要請、CAlert キーとブロードキャストコード (ネットワーク非常停止権限、サトシが最後まで保持していた技術的権限) を譲渡。 | ギャビン・アンドレセンの後年公開 (CoinMarketCap) |
-| 2014 年 3 月 6 日 | サトシ P2P Foundation アカウントから「I am not Dorian Nakamoto」投稿。本人かアカウント侵害かの真偽は議論されている。 | [P2P Foundation スレッド](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source) |
+| 2014 年 3 月 6 日 | サトシ P2P Foundation アカウントから「I am not Dorian Nakamoto」投稿。本人かアカウント侵害かの真偽は議論されている。 | P2P Foundation スレッド |
 
 7 ヶ月の経過は構造的に特異である: 2010 年 9 月にギャビン・アンドレセンへ私的に「他のプロジェクトに取り組んでいる」という退場シグナルが出され、コード管理権限の正式譲渡そのものは続く数か月のあいだに段階的に進む (公開記録上完了するのは 12 月 12 日)。同じ 12 月 12 日に日常的な技術スレッドのなかで公開向け予告が控えめに置かれ、12 月 15 日に最終コミット、そして 2011 年 4 月 26 日にネットワーク非常停止権限である CAlert キーが、最後の梃子として解放される。劇的な別れの宣言はない。BitcoinTalk への公開告別投稿もない。このパターンはアーキテクチャ全体と整合している: 影響力と可視性は、それ自体が痕跡として残るような単一の瞬間に断ち切られるのではなく、段階的に縮減される。
 

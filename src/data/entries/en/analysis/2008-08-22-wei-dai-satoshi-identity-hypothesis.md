@@ -55,7 +55,7 @@ inlineLinkKeywords:
 
 ![A three-node correspondence diagram of linked envelope icons labeled Sender, Referral, and Author, next to citation and codebase-dependency cards and a stylometric-distance scatter plot with one point set apart from a cluster of others, under a checkmarked verdict reading "Structurally significant, ultimately unlikely."](/BitcoinArchive/images/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis-hero.png)
 
-[Wei Dai's b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) is reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/). Wei Dai's [Crypto++ library](https://www.cryptopp.com/) ships inside Bitcoin v0.1 for SHA-256. Wei Dai is the second person Satoshi contacted before launching the network. The claim that [Wei Dai](/BitcoinArchive/participants/wei-dai/) is Satoshi has circulated in cryptography journalism since at least 2010 (Group A — Satoshi explicitly cited his work).
+[Wei Dai's b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) is reference [1] in the [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/). Wei Dai's Crypto++ library ships inside Bitcoin v0.1 for SHA-256. Wei Dai is the second person Satoshi contacted before launching the network. The claim that [Wei Dai](/BitcoinArchive/participants/wei-dai/) is Satoshi has circulated in cryptography journalism since at least 2010 (Group A — Satoshi explicitly cited his work).
 
 ## 1. The evidence
 
@@ -79,7 +79,7 @@ The objection: design proximity does not select uniquely. Adam Back's [Hashcash]
 
 ### 1.2 Crypto++ codebase dependency in Bitcoin v0.1
 
-Wei Dai created and maintained [Crypto++](https://www.cryptopp.com/), a free open-source C++ library of cryptographic algorithms. Bitcoin v0.1 used Crypto++ for its SHA-256 implementation: the source files `src/sha.cpp` and `src/sha.h` in v0.1.3 ALPHA (early 2009) carry header comments stating the routines were "carved out as standalone files from Crypto++ Version 5.5.2 (released September 24, 2007)." The `namespace CryptoPP` attribution is preserved.
+Wei Dai created and maintained Crypto++, a free open-source C++ library of cryptographic algorithms. Bitcoin v0.1 used Crypto++ for its SHA-256 implementation: the source files `src/sha.cpp` and `src/sha.h` in v0.1.3 ALPHA (early 2009) carry header comments stating the routines were "carved out as standalone files from Crypto++ Version 5.5.2 (released September 24, 2007)." The `namespace CryptoPP` attribution is preserved.
 
 | Bitcoin version | Date | Crypto++ usage |
 |---|---|---|
@@ -95,7 +95,7 @@ The objection: Crypto++ was the de-facto standard C++ cryptographic library of t
 
 ### 1.3 Cypherpunk credentials and intellectual lineage
 
-Wei Dai is a long-tenure cypherpunk, an early subscriber to the cypherpunks mailing list, and an active participant in adjacent communities (Extropians, SL4) since the 1990s. b-money was developed in the same intellectual environment as Hashcash (Adam Back), Bit Gold (Nick Szabo), and RPOW (Hal Finney). Wei Dai's public scholarship after b-money continued in cryptographic and rationality-related areas; the [LessWrong profile](https://www.lesswrong.com/users/wei-dai) shows decades of intellectual output in adjacent fields.
+Wei Dai is a long-tenure cypherpunk, an early subscriber to the cypherpunks mailing list, and an active participant in adjacent communities (Extropians, SL4) since the 1990s. b-money was developed in the same intellectual environment as Hashcash (Adam Back), Bit Gold (Nick Szabo), and RPOW (Hal Finney). Wei Dai's public scholarship after b-money continued in cryptographic and rationality-related areas; the LessWrong profile shows decades of intellectual output in adjacent fields.
 
 The objection: cypherpunk credentials apply to several candidates (Adam Back, Hal Finney, Nick Szabo, Sassaman). The dimension narrows the candidate set substantially but does not select Wei Dai uniquely.
 

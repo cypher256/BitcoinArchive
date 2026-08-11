@@ -58,7 +58,7 @@ While serving as a research associate in the Graduate School of Information Scie
 
 Kaneko posted his development announcement anonymously to the 2channel download-software board and continued to develop the software in dialogue with users on that thread. His first post on the thread carried sequence number 47, which the users adopted as his handle — from that point until his real name was disclosed, he was known to the Winny community as **「47 氏」** ("Mr. 47").
 
-The opening post on the thread ([thread log archive](https://winny.info/2ch/47.html)):
+The opening post on the thread (thread log archive):
 
 <!-- speaker: Isamu Kaneko -->
 > 「暇なんで freenet みたいだけど 2chネラー向きのファイル共有ソフトつーのを作ってみるわ。もちろん Windows ネイティブな。少しまちなー。」

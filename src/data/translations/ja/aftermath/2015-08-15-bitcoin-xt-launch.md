@@ -35,7 +35,7 @@ relatedEntries:
 
 ![光る分岐点で二手に分かれ、細い水色の経路には小さなブロックが、太いオレンジの経路には次第に大きくなるブロックが連なるイラストで、左下に長さの異なる二本の横長バー、右側に密集した点群がまばらな点へ薄れていくネットワーク図が添えられている。](/BitcoinArchive/images/analysis/2015-08-15-bitcoin-xt-launch-hero.png)
 
-2015 年 8 月 15 日、[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)は Bitcoin XT バージョン 0.11A をリリースした。Bitcoin Core のフォークで [BIP 101](https://github.com/bitcoin/bips/blob/master/bip-0101.mediawiki) を実装するものだった。当時 Bitcoin Core のリード保守者だった[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)は二か月前に BIP 101 を執筆し、XT のリリースを支持した。
+2015 年 8 月 15 日、[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)は Bitcoin XT バージョン 0.11A をリリースした。Bitcoin Core のフォークで BIP 101 を実装するものだった。当時 Bitcoin Core のリード保守者だった[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)は二か月前に BIP 101 を執筆し、XT のリリースを支持した。
 
 BIP 101 は、ビットコインの 1 MB ブロックサイズ制限を 2016 年 1 月 11 日から 8 MB に引き上げ、その後 2 年ごとに倍増させて 2036 年までに 8 GB に到達させるという提案だった。有効化には、1,000 ブロックの窓内で採掘ブロックの 75% が支持を表明することが要件とされた。
 

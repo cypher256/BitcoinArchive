@@ -49,7 +49,7 @@ translationStatus: complete
 
 ![紺色を背景に、赤い×印で無効化された古い南京錠から、より小さく精密な六角形の錠前へと矢印でつながる図で、グリッド上の緑色の楕円曲線グラフ、速度計を模したバッジ、2015年から 2016年にかけての二点式タイムラインバーが添えられている。](/BitcoinArchive/images/analysis/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012-hero.png)
 
-2016年1月15日、[Bitcoin Core v0.12](https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md) が合意クリティカルな ECDSA 署名検証の標準バックエンドとして libsecp256k1 を採用し、OpenSSL を置き換えた。OpenSSL は[サトシのオリジナル v0.1 リリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)以来 7年間、ビットコインの依存ライブラリーであり続けていた。
+2016年1月15日、Bitcoin Core v0.12 が合意クリティカルな ECDSA 署名検証の標準バックエンドとして libsecp256k1 を採用し、OpenSSL を置き換えた。OpenSSL は[サトシのオリジナル v0.1 リリース](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/)以来 7年間、ビットコインの依存ライブラリーであり続けていた。
 
 ## 背景
 
@@ -65,7 +65,7 @@ libsecp256k1 プロジェクトは 2013年3月5日、[ピーター・ウィー�
 2. **性能**の明確な向上。libsecp256k1 は最終的に署名検証で 2.5〜5.5倍高速で、署名検証は新ブロック検証コストの大部分を占める。
 3. **監査可能性**の確保。単一の曲線とビットコインが必要とする操作のみに焦点を絞ることで、ライブラリーは深く査読可能なサイズに収まり、サイドチャネル攻撃に対する定数時間実装も実現できた。
 
-2014年11月、ウィーユは libsecp256k1 のテストを書きながら [CVE-2014-3570](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3570) を発見・報告した。これは OpenSSL の BN_sqr（二乗）ルーチンの重大なバグで、長年 OpenSSL に潜在していた。
+2014年11月、ウィーユは libsecp256k1 のテストを書きながら CVE-2014-3570 を発見・報告した。これは OpenSSL の BN_sqr（二乗）ルーチンの重大なバグで、長年 OpenSSL に潜在していた。
 
 マクスウェルは Bitcoin Magazine の記事で結論をこうまとめた。「OpenSSL はビットコインのような合意クリティカルなシステムには適さないライブラリーだ」
 

@@ -57,7 +57,7 @@ translationStatus: complete
 
 ### v0.1 実装をたどる
 
-ホワイトペーパーはプロトコルの設計を記す。v0.1 のソースコードを読むと、各要素がプログラムのどこに入るかが分かる。`CKey` は OpenSSL の `EC_KEY` を `secp256k1` 用に生成し、署名と検証を `ECDSA_sign` と `ECDSA_verify` に委ねている。[`src/key.h`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/key.h#L49-L136) にこの経路が残る。アドレス導出も明確で、[`PubKeyToAddress`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/base58.h#L155-L200) が `Hash160` を適用し、バージョンバイト `0` を前置し、4 バイトの `Hash` チェック値を加えて Base58 にエンコードする。スクリプト・インタープリターにはハッシュ・オペコードと `OP_CHECKSIG` があり、[`SignatureHash`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/script.cpp#L818-L897) はハッシュ種別に応じてトランザクションを書き換え、直列化した結果をハッシュする。
+ホワイトペーパーはプロトコルの設計を記す。v0.1 のソースコードを読むと、各要素がプログラムのどこに入るかが分かる。`CKey` は OpenSSL の `EC_KEY` を `secp256k1` 用に生成し、署名と検証を `ECDSA_sign` と `ECDSA_verify` に委ねている。固定コミット `4184ab2` の `src/key.h` 49–136 行にこの経路が残る。アドレス導出も明確で、`src/base58.h` 155–200 行の `PubKeyToAddress` が `Hash160` を適用し、バージョンバイト `0` を前置し、4 バイトの `Hash` チェック値を加えて Base58 にエンコードする。スクリプト・インタープリターにはハッシュ・オペコードと `OP_CHECKSIG` があり、`src/script.cpp` 818–897 行の `SignatureHash` はハッシュ種別に応じてトランザクションを書き換え、直列化した結果をハッシュする。
 
 これは実装の記録であり、サトシが各境界をなぜ選んだかの証拠ではない。コードから確定できる v0.1 の挙動と、設計理由の解釈は分けて扱う必要がある。
 

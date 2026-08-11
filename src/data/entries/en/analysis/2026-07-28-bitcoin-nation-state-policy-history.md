@@ -153,7 +153,7 @@ timeline
 | Nigeria | Banks barred from touching crypto (2017), then barred from facilitating crypto payments (2021) | Banks permitted to serve licensed virtual-asset service providers | Dec 22, 2023 |
 | India | RBI circular bars banks from crypto dealings (2018) | Supreme Court strikes the circular down as unconstitutional (2020); a 30% flat tax on virtual digital assets followed in 2022 | Mar 4, 2020 |
 | [El Salvador](/BitcoinArchive/entries/aftermath/2021-09-07-el-salvador-bitcoin-law/) | Bitcoin as mandatory legal tender (2021) | Mandatory acceptance [repealed](/BitcoinArchive/entries/aftermath/2025-01-30-el-salvador-bitcoin-law-reform/) | Jan 30, 2025 |
-| Central African Republic | Bitcoin [made legal tender](http://www.droit-afrique.com/uploads/RCA-Loi-2022-04-cryptomonnaie.pdf) alongside the CFA franc (2022) | Mandatory acceptance ended; demoted to "reference cryptocurrency" | Mar 23, 2023 |
+| Central African Republic | Bitcoin made legal tender alongside the CFA franc (2022) | Mandatory acceptance ended; demoted to "reference cryptocurrency" | Mar 23, 2023 |
 | [United States](/BitcoinArchive/entries/aftermath/2025-03-06-us-strategic-bitcoin-reserve/) | Forfeited bitcoin sold off case by case, no coordinated holding policy | Executive Order 14233 declares a federal Strategic Bitcoin Reserve; Treasury directed not to sell | Mar 6, 2025 |
 
 Reversal is common here, not universal. Bangladesh's central bank called virtual-currency transactions unauthorized in December 2017 and reaffirmed the same position in updated guidelines in September 2022. Egypt's Grand Mufti forbade commercial crypto use in a fatwa at the end of 2017, and the central bank restated that bitcoin is not legal tender the following month; nothing since has moved either position. Algeria deepened its 2018 ban in July 2025, criminalizing a wider range of crypto activity than the original law reached. Turkey's April 2021 ban on using crypto assets in payments still stands even after a July 2024 law brought exchanges and custodians under licensing — regulation arrived around the ban, not instead of it.
@@ -186,7 +186,7 @@ Only two governments have ever made bitcoin legal tender. Both have since walked
 
 | | El Salvador | Central African Republic |
 |---|---|---|
-| Made bitcoin legal tender | September 2021 — the first country to do so | April 22, 2022 — [Law n°22.004](http://www.droit-afrique.com/uploads/RCA-Loi-2022-04-cryptomonnaie.pdf), the second country |
+| Made bitcoin legal tender | September 2021 — the first country to do so | April 22, 2022 — Law n°22.004, the second country |
 | Outside pressure | IMF urged removing the legal-tender status, Jan 25, 2022 | IMF warned of legal, transparency, and economic risks, May 4, 2022 |
 | Walked back | Mandatory acceptance repealed, Legislative Assembly reform, Jan 30, 2025 | Mandatory acceptance ended, demoted to "reference cryptocurrency," Mar 23, 2023 (unanimous vote) |
 

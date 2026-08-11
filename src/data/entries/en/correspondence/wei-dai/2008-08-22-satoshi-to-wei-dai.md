@@ -19,6 +19,10 @@ tags:
   - "origins"
   - "ecash-pdf"
   - "whitepaper"
+secondarySources:
+  - name: "Pre-release draft — Electronic Cash Without a Trusted Third Party"
+    url: "http://www.upload.ae/file/6157/ecash-pdf.html"
+    note: "The draft was attached to this email and is now lost; the former hosting site disappeared and no cached copy is known."
 relatedEntries:
   - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   - "analysis/2008-10-31-bitcoin-design-lineage"
@@ -40,7 +44,7 @@ I need to find out the year of publication of your b-money page for the citation
 
 *[Context: The email was sent from satoshi@anonymousspeech.com to weidai@ibiblio.org, with CC to satoshi@anonymousspeech.com.]*
 
-*[Context: The email included a link to a pre-release draft: http://www.upload.ae/file/6157/ecash-pdf.html — titled "Electronic Cash Without a Trusted Third Party" (ecash.pdf). The same draft was shared with Adam Back two days earlier on August 20. The file is now lost; the hosting site disappeared and no cached copy has been found. Gwern, Wei Dai, Adam Back, and Gregory Maxwell have confirmed they do not have copies.]*
+*[Context: The email included a pre-release draft titled "Electronic Cash Without a Trusted Third Party" (ecash.pdf). The same draft was shared with Adam Back two days earlier on August 20. The file is now lost; the hosting site disappeared and no cached copy has been found. Gwern, Wei Dai, Adam Back, and Gregory Maxwell have confirmed they do not have copies.]*
 
 *[Context: The email also included the following paper abstract:]*
 

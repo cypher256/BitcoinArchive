@@ -66,7 +66,7 @@ translationStatus: complete
 
 ### v0.1 のトランザクション経路をソースでたどる
 
-v0.1 のソースコードを読むと、UTXO モデルが具体的な処理として見えてくる。[`CTransaction`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.h#L193-L363) は入力、出力、ロックタイムを保持し、[`ConnectInputs`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.cpp#L772-L854) は参照された各出力をたどり、未成熟のコインベースを拒否し、署名を検証し、出力が使用済みか確認し、使用済みとして記録し、入力額から出力額を引いて手数料を計算する。スクリプト側は別の経路だが、接続している。[`OP_CHECKSIG`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/script.cpp#L692-L897) は署名対象のスクリプトから署名自体を取り除き、レガシー署名ハッシュを構成し、そのダイジェストを公開鍵に対して検証する。
+v0.1 のソースコードを読むと、UTXO モデルが具体的な処理として見えてくる。固定コミット `4184ab2` の `src/main.h` 193–363 行にある `CTransaction` は入力、出力、ロックタイムを保持し、`src/main.cpp` 772–854 行の `ConnectInputs` は参照された各出力をたどり、未成熟のコインベースを拒否し、署名を検証し、出力が使用済みか確認し、使用済みとして記録し、入力額から出力額を引いて手数料を計算する。スクリプト側は別の経路だが、接続している。`src/script.cpp` 692–897 行の `OP_CHECKSIG` は署名対象のスクリプトから署名自体を取り除き、レガシー署名ハッシュを構成し、そのダイジェストを公開鍵に対して検証する。
 
 これらのリンクが記録するのは 2009 年 1 月の実装であり、現行 Bitcoin Core が同じ内部コード経路をたどるという主張ではない。そのため、後続の節では v0.1 と現行基準を分けて記載する。
 

@@ -65,7 +65,7 @@ Where behavior differs between the Satoshi-era implementation (v0.1, January 200
 
 ### The v0.1 transaction path in source
 
-The v0.1 source makes the UTXO model concrete. [`CTransaction`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.h#L193-L363) stores inputs, outputs, and locktime; [`ConnectInputs`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.cpp#L772-L854) follows each referenced output, rejects an immature coinbase, verifies the signature, checks whether the output is already spent, marks it spent, and computes the fee as input value minus output value. The script side is a separate but connected path: [`OP_CHECKSIG`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/script.cpp#L692-L897) removes the signature from the script being signed, constructs the legacy signature hash, and verifies the resulting digest against the public key.
+The v0.1 source makes the UTXO model concrete. `CTransaction` in the pinned commit `4184ab2`, `src/main.h` lines 193–363, stores inputs, outputs, and locktime; `ConnectInputs` in `src/main.cpp` lines 772–854 follows each referenced output, rejects an immature coinbase, verifies the signature, checks whether the output is already spent, marks it spent, and computes the fee as input value minus output value. The script side is a separate but connected path: `OP_CHECKSIG` in `src/script.cpp` lines 692–897 removes the signature from the script being signed, constructs the legacy signature hash, and verifies the resulting digest against the public key.
 
 These links document the January 2009 implementation rather than claiming that modern Bitcoin Core follows the same internal code path. The later sections therefore keep the v0.1 and modern baselines separate.
 

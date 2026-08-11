@@ -59,7 +59,7 @@ translationStatus: complete
 
 ![A two-panel dark illustration: the left panel shows two nodes joined by three parallel curved lines, and the right panel shows a glowing circular hub with curved arrows radiating outward to four smaller nodes.](/BitcoinArchive/images/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects-hero.png)
 
-On December 16, 2013, [pull request #3408](https://github.com/bitcoin/bitcoin/pull/3408) renamed Bitcoin-Qt to "Bitcoin Core," released publicly in version 0.9.0 on March 19, 2014. Presented at the time as disambiguation, the rename reads differently against three later witnesses ([Hearn 2016](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/), [Hearn 2024 COPA](/BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/), [Hearn 2025 CoinGeek](/BitcoinArchive/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/)): did it become something more consequential?
+On December 16, 2013, pull request #3408 renamed Bitcoin-Qt to "Bitcoin Core," released publicly in version 0.9.0 on March 19, 2014. Presented at the time as disambiguation, the rename reads differently against three later witnesses ([Hearn 2016](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/), [Hearn 2024 COPA](/BitcoinArchive/entries/aftermath/2024-02-22-mike-hearn-copa-trial-testimony/), [Hearn 2025 CoinGeek](/BitcoinArchive/entries/aftermath/2025-02-21-mike-hearn-coingeek-retrospective/)): did it become something more consequential?
 
 Under the reading offered here, the answer is yes — but the claim is narrower than it may sound. The lexical claim is that the chosen name "Bitcoin Core" does not behave as a synonym for "reference client": it carries a centripetal weight that "Bitcoin-Qt" did not. Whether the rename caused later effects, or merely named a structure that already existed, is a separate and harder question (§6).
 
@@ -79,18 +79,18 @@ The phrase "reference implementation" appears in some contemporary writeups but 
 
 ### 1.2 PR #3408 (merged December 16, 2013)
 
-[Pull request #3408](https://github.com/bitcoin/bitcoin/pull/3408) was opened by [Wladimir van der Laan](/BitcoinArchive/participants/wladimir-van-der-laan/) (handle: laanwj) and merged December 16, 2013. The stated motivation in the PR and in the subsequent 0.9.0 release notes is identical:
+Pull request #3408 was opened by [Wladimir van der Laan](/BitcoinArchive/participants/wladimir-van-der-laan/) (handle: laanwj) and merged December 16, 2013. The stated motivation in the PR and in the subsequent 0.9.0 release notes is identical:
 
 <!-- audit:quote-skip -->
 > "To reduce confusion between Bitcoin-the-network and Bitcoin-the-software we have renamed the reference client to Bitcoin Core."
 
-— bitcoin.org, [Bitcoin Core 0.9.0 release notes](https://bitcoin.org/en/release/v0.9.0), March 19, 2014
+— bitcoin.org, Bitcoin Core 0.9.0 release notes, March 19, 2014
 
 The PR limited its scope to user-visible strings (program messages, documentation); the executable filenames `bitcoind` and `bitcoin-qt` were not changed in the merge.
 
 ### 1.3 Internal disagreement at the rename
 
-The PR thread records a substantive objection from [Peter Todd](/BitcoinArchive/participants/peter-todd/), summarized in the [PR #3408 discussion](https://github.com/bitcoin/bitcoin/pull/3408): "core" should refer specifically to consensus-critical code, not to the entire codebase. Wladimir's reply pointed to a prior discussion (issue #3203) and noted that no name would achieve universal agreement.
+The PR thread records a substantive objection from [Peter Todd](/BitcoinArchive/participants/peter-todd/), summarized in the PR #3408 discussion: "core" should refer specifically to consensus-critical code, not to the entire codebase. Wladimir's reply pointed to a prior discussion (issue #3203) and noted that no name would achieve universal agreement.
 
 Peter Todd's objection deserves attention because his proposed reading of "core" — as the minimal, irreducible consensus rules — is exactly the distinction that the broader name "Bitcoin Core" later failed to maintain. After 2014, "Bitcoin Core" came to denote both (a) the consensus-critical code and (b) the surrounding software project, in a single label that did not separate the two.
 
