@@ -65,7 +65,7 @@ On December 7, 2010, a new account named "retep" registered on BitcoinTalk. Thre
 
 > "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee."
 
-Two days later, [Satoshi posted his last public message](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) and went silent. Years later the account's username was changed to Peter Todd. Bitcoin Core developer Gregory Maxwell [later noted on Hacker News](https://news.ycombinator.com/item?id=41784567) that "it took me nearly a decade to realize retep was peter backwards."
+Two days later, [Satoshi posted his last public message](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) and went silent. Years later the account's username was changed to Peter Todd. Bitcoin Core developer Gregory Maxwell later noted on Hacker News that "it took me nearly a decade to realize retep was peter backwards."
 
 In October 2024, the HBO documentary ["Money Electric: The Bitcoin Mystery"](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) named Todd as a candidate for Satoshi's true identity, pointing to the December 2010 reply as evidence. On the day of broadcast Todd told CoinDesk directly, "Of course, I'm not Satoshi," calling filmmaker Cullen Hoback "grasping at straws." In the film itself, asked on camera whether he was Satoshi, Todd answered sarcastically, "It's ludicrous. But I'll say, yeah, of course I'm Satoshi." He treats the documentary as irresponsible.
 
@@ -111,5 +111,4 @@ Todd was one of six participants in the Zcash trusted setup ceremony. He conduct
 
 ## Other Roles
 Todd contributed to the design of stealth addresses (BIP 63, unimplemented) for enhanced privacy. He joined Coinkite in an advisory role in May 2014.
-
 
