@@ -23,6 +23,9 @@ tags:
   - "origins"
   - "historic"
 secondarySources:
+  - name: "Adam Back — Hashcash paper (1997, revised 2002)"
+    url: "http://www.hashcash.org/papers/hashcash.pdf"
+    note: "Section 7 lists Hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal."
   - name: "Venona archive — same email under local-time date (Dec 5, 1998)"
     url: "http://cypherpunks.venona.com/archive/1998/12/msg00194.html"
     note: "The same message archived on a different mirror; the Dec 5 date reflects PST-local time. The cryptoanarchy.wiki copy carries the email-header timestamp `Sun, 6 Dec 1998 08:48:42 +0800` (UTC 1998-12-06T00:48:42Z)."
@@ -101,4 +104,4 @@ Dai also raised price stability, business cycles, and optimal inflation rates as
 
 How this critique connects to Bitcoin's design is developed further in three places: the [Adam Back Satoshi-identity hypothesis](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/) maps each of the seven issues onto Bitcoin's later resolution of it; the [fixed-supply vs adjustable-money analysis](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) reads the critique as part of the cypherpunk monetary debate that preceded Bitcoin's fixed-supply choice; and the [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) reads the central proposal — burning CPU time to create value — as the proof-of-work-as-value configuration Satoshi reached independently.
 
-*[Editor: this post is a primary-source pre-Bitcoin record of Adam Back engaging in substantive monetary-system-design analysis ten years before Bitcoin's launch. The same Hashcash-as-b-money-minting application is recorded more formally in Back's [August 2002 Hashcash paper §7 Applications](http://www.hashcash.org/papers/hashcash.pdf), which lists "hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal" among its enumerated applications. The implementation, the resolution of issue 1, and the synthesis of the remaining design space were Satoshi's contributions documented in [Bitcoin v0.1](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) ten years later.]*
+*[Editor: this post is a primary-source pre-Bitcoin record of Adam Back engaging in substantive monetary-system-design analysis ten years before Bitcoin's launch. The same Hashcash-as-b-money-minting application is recorded more formally in Back's August 2002 Hashcash paper §7 Applications, which lists "hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal" among its enumerated applications. The implementation, the resolution of issue 1, and the synthesis of the remaining design space were Satoshi's contributions documented in [Bitcoin v0.1](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) ten years later.]*

@@ -50,10 +50,9 @@ export default defineConfig({
     // boxes can reach production). See STYLE_GUIDE.md "Mermaid Diagrams" for
     // usage and JA-content gotchas. Validation script: scripts/check-mermaid.mjs.
     rehypePlugins: [
-      // Non-link external http(s) URLs in verbatim primary records
-      // (forum/correspondence/emails). Internal links, anchors, and
-      // non-http URI schemes are excluded automatically. Editor-note
-      // <aside> blocks (from remarkEditorialMarker) keep their links.
+      // Non-link external http(s) URLs in verbatim primary records,
+      // historical blockquotes, and editor-note <aside> blocks. Internal
+      // links, anchors, and non-http URI schemes are excluded automatically.
       // See plugin header for the archive-principle rationale.
       rehypeStripArchiveLinks,
       // Auto-link keywords (concept + person) using the build-time

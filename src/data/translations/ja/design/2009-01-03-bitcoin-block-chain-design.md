@@ -17,6 +17,7 @@ tags:
   - "merkle-tree"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
+  - analysis/2009-01-09-bitcoin-v01-serialization-boundaries
   - design/2009-01-03-bitcoin-transaction-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
@@ -49,6 +50,8 @@ translationStatus: complete
 3. **どのチェーンが勝つか?** 累積プルーフ・オブ・ワークが最大のチェーンであり、ブロック数が最多のチェーンではない。
 
 サトシ時代の実装（v0.1、2009 年 1 月）と現行の Bitcoin Core（v27 以降基準）で挙動が異なる場合は、両方を記す。
+
+ブロックヘッダーハッシュ、マークルルート、完全なブロック直列化の v0.1 における正確な境界は、[ソースレベルの直列化分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-bitcoin-v01-serialization-boundaries/)で確認できる。
 
 ## 1. ブロック構造
 

@@ -44,6 +44,7 @@ relatedEntries:
   - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
   - "aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis"
   - "design/2009-01-03-bitcoin-system-design-overview"
+  - analysis/2009-01-09-bitcoin-v01-serialization-boundaries
   - "design/2009-01-03-bitcoin-architecture-evolution"
   - "analysis/2009-01-09-bitcoin-time-warp-attack"
   - "aftermath/2010-12-15-bitcoin-v0319-released"
@@ -80,6 +81,6 @@ translationStatus: complete
 
 ## 4. これらの発見がつながる先
 
-本エントリのコードレベルの知見は、複数の隣接分析の根拠として参照される。具体的には、参加者追跡では[サトシ伝記](/BitcoinArchive/ja/participants/satoshi-nakamoto/)・ [Bitcoin SVN コミッター記録](/BitcoinArchive/ja/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/)、日付別公開活動では[サトシ活動年表](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-activity-timeline/)、先駆 vs 新規合成の内訳では[ビットコインの設計系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)、コードが著者について語るもの (語らないもの) では[サトシ匿名性アーキテクチャ](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)、これらコードレベルの痕跡が身元同定に対して過少決定的である理由では[同定非対称性分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/)、 v0.1 アーキテクチャ判断が後続版でどう再形成されるかでは[ビットコイン・アーキテクチャ進化設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-architecture-evolution/)が挙げられる。
+本エントリのコードレベルの知見は、複数の隣接分析の根拠として参照される。具体的には、参加者追跡では[サトシ伝記](/BitcoinArchive/ja/participants/satoshi-nakamoto/)・ [Bitcoin SVN コミッター記録](/BitcoinArchive/ja/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/)、日付別公開活動では[サトシ活動年表](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-activity-timeline/)、先駆 vs 新規合成の内訳では[ビットコインの設計系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)、コードが著者について語るもの (語らないもの) では[サトシ匿名性アーキテクチャ](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)、これらコードレベルの痕跡が身元同定に対して過少決定的である理由では[同定非対称性分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/)、v0.1 のバイト単位のハッシュ・転送地図では [v0.1 直列化境界分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-bitcoin-v01-serialization-boundaries/)、 v0.1 アーキテクチャ判断が後続版でどう再形成されるかでは[ビットコイン・アーキテクチャ進化設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-architecture-evolution/)が挙げられる。
 
 ## 5. 可視化

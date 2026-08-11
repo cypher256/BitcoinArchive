@@ -17,6 +17,7 @@ tags:
   - "merkle-tree"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
+  - analysis/2009-01-09-bitcoin-v01-serialization-boundaries
   - design/2009-01-03-bitcoin-transaction-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
@@ -48,6 +49,8 @@ Three questions organize the material:
 3. **Which chain wins?** The chain with the most accumulated proof-of-work — not the chain with the most blocks.
 
 Where behavior differs between the Satoshi-era implementation (v0.1, January 2009) and modern Bitcoin Core (v27+ baseline), both are noted.
+
+For the exact v0.1 boundary between the block header hash, the Merkle root, and full block serialization, see the [source-level serialization analysis](/BitcoinArchive/entries/analysis/2009-01-09-bitcoin-v01-serialization-boundaries/).
 
 ## 1. Block structure
 

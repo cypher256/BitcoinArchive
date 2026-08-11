@@ -145,12 +145,13 @@ by sharing a directory with them.
 
 The thread-page filter in `src/data/threads.ts` enforces the same
 split at the rendering layer: `resolveThreadId()` returns `undefined`
-for editorial types (`article` / `analysis` / `biography` / `design`), so even
+for editorial types (`article` / `analysis` / `biography` / `design` /
+`currency`), so even
 an editorial entry mistakenly placed under a primary-source directory
 does not appear in the thread view alongside the primary sources it
 references.
 
-## Editorial Entries (article / analysis / biography / design)
+## Editorial Entries (article / analysis / biography / design / currency)
 
 The archive's entry types split into two groups:
 
@@ -166,9 +167,9 @@ The archive's entry types split into two groups:
   "contemporaneous vs retrospective": a participant's retrospective
   blog, reproduced verbatim, is still `blog-post`; third-party coverage
   (journalist, encyclopedia) of a participant stays editorial.
-- **Editorial types** (4) — `article`, `analysis`, `biography`, `design`. The
-  body is Bitcoin Institute's own writing about the subject. This
-  section governs them.
+- **Editorial types** (5) — `article`, `analysis`, `biography`, `design`,
+  `currency`. The body is Bitcoin Institute's own writing about the subject.
+  This section governs them.
 
 Tweets (`type: tweet`) are X / Twitter posts archived verbatim under
 `src/data/entries/en/tweets/<author-slug>/<date>-<short-slug>.md`.
@@ -218,10 +219,10 @@ What an editorial body should contain:
   or compiled account. This is the entry's actual content.
 - Short blockquote excerpts of the subject's words (per the quotation
   form rules below), each anchored to a `quotes[]` entry.
-- Markdown links to participants, related archive entries, and external
-  sources that support the reading. Inline external (`https://`) links in
-  editorial prose are governed by the editorial-body external-link policy
-  below (§ "Editorial prose body external links").
+- Markdown links to participants and related archive entries. External
+  sources that support the reading are named in the body as plain text and
+  listed in `sourceUrl` / `secondarySources[]`; editorial body prose does
+  not carry clickable external URLs.
 - Visual structure (Mermaid timelines, tables, d3 components) where
   the content shape calls for it
   (see [§ Visual Representation](#visual-representation)).
@@ -271,31 +272,41 @@ render time by `src/lib/rehype-strip-archive-links.mjs`: the URL text
 is preserved (copy-pasteable), but the user is not invited to click.
 This matches the practice of print archives and academic citation
 conventions for historical source URLs that may have suffered link
-rot. Editor-added attribution links placed *outside* the blockquote
-remain clickable. Internal archive links (`/BitcoinArchive/...`) and
-editor-note blocks (`*[Editor: ...]*` / `*[Context: ...]*` /
-`*[編者注：...]*` / `*[補足：...]*`) are exempt and remain clickable
-in either position.
+rot. Editor-added attribution links outside the blockquote must also be
+moved to `sourceUrl` / `secondarySources[]`, leaving the source name and
+relevant fixed commit, file, function, or line range as plain text.
+Internal archive links (`/BitcoinArchive/...`) remain clickable.
+External URLs in editor-note blocks (`*[Editor: ...]*` /
+`*[Context: ...]*` / `*[編者注：...]*` / `*[補足：...]*`) are not an
+exception: move them to the citation fields and leave the note itself
+without an external link.
 
 #### Editorial prose body external links
 
-Inline `https://` links in editorial prose (outside blockquotes and
-editor-notes — the positions the de-link rule above leaves clickable) are
-not free-form. A clickable external link in editorial prose is kept only
-when it exhibits the source itself; otherwise it is removed:
+For editorial entry types (`article`, `analysis`, `biography`, `design`,
+and `currency`), editor-selected external `http://` and `https://` URLs are
+not permitted in the body. This covers Markdown links, autolinks, HTML
+anchors, and bare URLs that a Markdown renderer could make clickable. Move
+each source URL to `sourceUrl` or `secondarySources[]`, keep the source name
+as plain text, and retain fixed commits, filenames, function names, and line
+ranges in the body as plain text. A source exhibit — code repository, paper,
+specification, CVE, or primary-record archive — is still a citation, not an
+exception to this rule. `SourceCitation` at the bottom of the entry is the
+only clickable external citation surface.
 
-- **An internal archive entry exists** (the URL is some entry's
-  `sourceUrl`) → link to the internal entry (`/BitcoinArchive/...`)
-  instead. Enforced by `npm run audit:external-link-redundancy`.
-- **Source exhibit** — code / repo, paper, spec, CVE, or a primary-record
-  archive that the sentence cites as evidence → keep inline.
-- **Reportage** — a news article that covered the event → move the URL to
-  `secondarySources`; leave the article name as plain text in prose.
-- **Concept reference** — a Wikipedia / encyclopaedia link explaining a
-  term or person in passing → de-link; keep the word as plain text.
+URLs that are part of a preserved primary-source body remain in that body,
+including `forum`, `correspondence`, `emails`, `blog`, `bip`, and other
+verbatim records. URLs inside a blockquote in an editorial entry are also
+preserved as source text. The renderer makes those historical URLs
+non-clickable without changing the Markdown. External URLs inside an
+editor-note are never preserved as a clickable exception; move the chosen
+citation to the frontmatter and leave the note as plain text. Internal
+archive links remain allowed in editorial prose and editor notes.
 
-Verbatim entries and in-blockquote URLs are unaffected (the renderer
-de-links them; see above).
+EN and JA mirrors must carry the same combined URL set across `sourceUrl`
+and `secondarySources[]`; source names and notes are written naturally in
+each language, while fixed commit, file, function, and line-range details
+identify the same source range in both.
 
 ### Frontmatter `author` semantics
 
@@ -666,7 +677,7 @@ or fabricating it.
 |---|---|---|
 | `secondarySources[]` | Replace `url` with the Wayback URL; preserve `name` | Remove the entry. The primary source (`sourceUrl`) still carries the citation; the dead secondary mirror was redundant. |
 | `sourceUrl` | Replace with the Wayback URL | Reconsider the entry's existence: a primary source with no recoverable URL is unsupported. Delete the entry, or keep it with an explicit `note` documenting that the original URL is dead and no replacement was found. |
-| Inline link in body prose | Replace with the Wayback URL | If no replacement exists, the claim the link supports may itself need to be removed (per [Technical-Review Robustness](#technical-review-robustness)). Do not silently remove the link while leaving the unsourced claim. |
+| Inline link in editorial body prose | Move the citation to `sourceUrl` / `secondarySources[]` and keep the source name and technical range as plain text | A missing replacement does not justify leaving a clickable external URL in the body; review the supported claim against the remaining citation record. |
 
 ### Anti-patterns
 
@@ -686,7 +697,7 @@ or fabricating it.
   repairing.
 - ❌ **Modify URLs inside primary-source body content.** URLs that
   appear inside verbatim entries (`/forum/`, `/correspondence/`,
-  `/emails/`, `/bip/`) or inside `<blockquote>`
+  `/emails/`, `/blog/`, `/bip/`, `/tweets/`) or inside `<blockquote>`
   elements in editorial entries are part of the historical record.
   They are de-linked at render time by
   `src/lib/rehype-strip-archive-links.mjs`. The audit may report them
@@ -705,10 +716,10 @@ position:
 |---|---|
 | `frontmatter.sourceUrl` | Replace with Wayback URL if available; else reconsider entry's existence (delete or `note:`-document the dead URL). |
 | `frontmatter.secondarySources[].url` | Replace with Wayback URL if available; else remove the entry (the primary source still carries the citation). |
-| Body inline link in editorial prose, **outside** any blockquote | Replace with Wayback URL if available; else remove the link and remove or reword the surrounding claim per `secondarySources` discipline. |
+| Body external URL in editorial prose, **outside** any blockquote | Move the citation to `sourceUrl` / `secondarySources[]`; leave the source name and fixed technical range as plain text. The body must not keep a clickable external link, even when a Wayback URL exists. |
 | Body inline link **inside** a `<blockquote>` (= primary-source quote) | **Do not modify.** The URL is part of the verbatim quoted text. The renderer de-links it; that is the policy. |
-| Plain text URL in any verbatim file (`/forum/`, `/correspondence/`, `/emails/`, `/bip/`) | **Do not modify.** Same rationale: the URL is authored text of the historical document. |
-| URL inside an editor-note block (`*[Editor: ...]*` / `*[Context: ...]*` / `*[編者注：...]*` / `*[補足：...]*`) | Editor's choice. Replace with Wayback or remove if dead, exactly as for editorial prose body links. The renderer keeps these clickable. |
+| Plain text URL in any verbatim file (`/forum/`, `/correspondence/`, `/emails/`, `/blog/`, `/bip/`, `/tweets/`) | **Do not modify.** Same rationale: the URL is authored text of the historical document. |
+| URL inside an editor-note block (`*[Editor: ...]*` / `*[Context: ...]*` / `*[編者注：...]*` / `*[補足：...]*`) | Move the citation to frontmatter or remove the editorial link while preserving the note's meaning. The renderer also de-links it as a safety net. |
 
 ## Internal URL Changes — No Redirects Policy
 
@@ -1011,10 +1022,10 @@ attribution is structurally not possible:
 In both cases the editorial intent is "real quote, no Archive
 primary entry possible," not "fabricated illustration." Mark the
 blockquote with `<!-- audit:quote-skip -->` and prefer a leading
-narrator sentence that names the speaker and links to whatever
-external citation exists (`secondarySources`, an inline URL, etc.)
-so readers understand the attribution even though the chip is not
-emitted.
+narrator sentence that names the speaker and names the citation listed in
+`sourceUrl` / `secondarySources[]`. Do not add an external URL to the body;
+the SourceCitation block remains the clickable route even though the chip
+is not emitted.
 
 **Deleted-source label.** When a BitcoinTalk quote box's native
 `Quote from: NAME on DATE` header is retained for a deleted source,
@@ -2247,11 +2258,12 @@ Auto-linking deliberately skips:
 - Inside a heading (`<h1>`-`<h6>`) — headings are navigation landmarks;
   a partly-linked heading reads as visual noise and competes with the
   heading's own self-link anchor.
-- Inside `<aside class="editor-inline">` — editor notes
-  (see [Editorial Markers](#editorial-markers)). Editor notes keep
-  their links manual to preserve editorial intent.
+- Inside `<aside class="editorial-note">` — editor notes
+  (see [Editorial Markers](#editorial-markers)). Internal archive links are
+  allowed, but external URLs are prohibited and belong in the citation
+  fields.
 - Whole-file primary-source records — files under `forum/`,
-  `correspondence/`, `emails/`, `bip/` directories.
+  `correspondence/`, `emails/`, `blog/`, `bip/`, and `tweets/` directories.
 - Self-link — the keyword's target is the page being rendered.
 
 Within a single rendered page, each keyword is linked **at most once**
@@ -2810,9 +2822,9 @@ Rules:
   type, add a `HANDLERS` entry in the plugin.
 - Write URLs in the author-side base form `/BitcoinArchive/...`
   (JA mirrors: `/BitcoinArchive/ja/...`); the deploy environment
-  rewrites the base. External `https://` URLs are supported (rendered
-  with `target="_blank"`), but the corpus convention is internal
-  entry links only.
+  rewrites the base. Only internal entry links are supported in `%% link:`
+  comments. External URLs belong in `sourceUrl` / `secondarySources[]`, not
+  in a body diagram.
 - **One event per line in any block that uses `%% link:`.** The
   pairing between source lines and rendered SVG elements is
   positional: a combined line (`2008 : event A : event B`) counts as

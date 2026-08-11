@@ -23,6 +23,9 @@ tags:
   - "origins"
   - "historic"
 secondarySources:
+  - name: "Adam Back — Hashcash 論文（1997 年、2002 年改訂）"
+    url: "http://www.hashcash.org/papers/hashcash.pdf"
+    note: "§7 は Hashcash をウェイ・ダイの b-money 電子キャッシュ提案の鋳造機構として列挙する。"
   - name: "Venona アーカイブ — 同一メールを現地時間で記録（1998 年 12 月 5 日）"
     url: "http://cypherpunks.venona.com/archive/1998/12/msg00194.html"
     note: "別のミラーに同じメッセージがアーカイブされており、12 月 5 日の日付は太平洋標準時（PST）現地時間を反映している。cryptoanarchy.wiki 版にはメールヘッダーのタイムスタンプ「Sun, 6 Dec 1998 08:48:42 +0800」（UTC で 1998-12-06T00:48:42Z）が残っている。"
@@ -102,4 +105,4 @@ quotes:
 
 本批評がビットコインの設計にどうつながるかは、三つの分析でさらに掘り下げられている。[アダム・バック同定仮説](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)は七つの論点それぞれを、後にビットコインがどう解決したかに対応付ける。[固定供給対調整可能通貨分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)は本批評を、ビットコインの固定供給選択に先立つサイファーパンクの貨幣論争の一部として読む。[サイファーパンク独立到達分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)は、「CPU 時間を燃やして価値を創造する」という中心提案を、サトシが独立に到達した PoW を価値に結びつける配置として読む。
 
-*[編者注：本投稿は、ビットコイン公開の 10 年前にアダム・バックが貨幣システム設計の本格的分析に従事していた、ビットコイン以前の一次資料記録である。同じ「Hashcash を b-money の鋳造機構として用いる」応用は、バックの [2002 年 8 月 Hashcash 論文 §7 応用](http://www.hashcash.org/papers/hashcash.pdf)でより形式的に列挙されており、応用候補として「ウェイ・ダイの b-money 電子キャッシュ提案の鋳造機構としての hashcash」を明示する。実装、論点 1 の解決、残る設計空間の合成は、10 年後の[ビットコイン v0.1](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/) でサトシが行った貢献として記録されている。]*
+*[編者注：本投稿は、ビットコイン公開の 10 年前にアダム・バックが貨幣システム設計の本格的分析に従事していた、ビットコイン以前の一次資料記録である。同じ「Hashcash を b-money の鋳造機構として用いる」応用は、バックの 2002 年 8 月 Hashcash 論文 §7 応用でより形式的に列挙されており、応用候補として「ウェイ・ダイの b-money 電子キャッシュ提案の鋳造機構としての hashcash」を明示する。実装、論点 1 の解決、残る設計空間の合成は、10 年後の[ビットコイン v0.1](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/) でサトシが行った貢献として記録されている。]*

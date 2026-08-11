@@ -44,6 +44,7 @@ relatedEntries:
   - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
   - "aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis"
   - "design/2009-01-03-bitcoin-system-design-overview"
+  - analysis/2009-01-09-bitcoin-v01-serialization-boundaries
   - "design/2009-01-03-bitcoin-architecture-evolution"
   - "analysis/2009-01-09-bitcoin-time-warp-attack"
   - "aftermath/2010-12-15-bitcoin-v0319-released"
@@ -79,6 +80,6 @@ This is the only first-person account of the gap in the public record. Satoshi d
 
 ## 4. Where these findings connect
 
-The code-level findings here feed several adjacent analyses: the [Satoshi biography](/BitcoinArchive/participants/satoshi-nakamoto/) and the [Bitcoin SVN repository committers record](/BitcoinArchive/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/) for participant tracking; the [Satoshi activity timeline](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-activity-timeline/) for date-by-date public activity; the [bitcoin-design-lineage](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) for the precursor-vs-novel synthesis breakdown; the [Satoshi anonymity architecture](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/) for what the code says (and does not say) about its author; the [identification-asymmetry analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) for why these code-level traces under-determine identity; and the [Bitcoin architecture-evolution design entry](/BitcoinArchive/entries/design/2009-01-03-bitcoin-architecture-evolution/) for how the v0.1 architectural decisions reshape across later versions.
+The code-level findings here feed several adjacent analyses: the [Satoshi biography](/BitcoinArchive/participants/satoshi-nakamoto/) and the [Bitcoin SVN repository committers record](/BitcoinArchive/entries/aftermath/2009-08-30-bitcoin-svn-repository-committers/) for participant tracking; the [Satoshi activity timeline](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-activity-timeline/) for date-by-date public activity; the [bitcoin-design-lineage](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-design-lineage/) for the precursor-vs-novel synthesis breakdown; the [Satoshi anonymity architecture](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/) for what the code says (and does not say) about its author; the [identification-asymmetry analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/) for why these code-level traces under-determine identity; the [v0.1 serialization-boundary analysis](/BitcoinArchive/entries/analysis/2009-01-09-bitcoin-v01-serialization-boundaries/) for the byte-level hash and transport map; and the [Bitcoin architecture-evolution design entry](/BitcoinArchive/entries/design/2009-01-03-bitcoin-architecture-evolution/) for how the v0.1 architectural decisions reshape across later versions.
 
 ## 5. Visualizations

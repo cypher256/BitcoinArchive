@@ -51,7 +51,7 @@ translationStatus: complete
 
 ![濃紺の背景に、レトロなメール告知カードと封筒のアイコンが矢印でつながり、回路模様のスタンプが収まった枠付きパネルへと合流する。そこから点線でアーチ形のアイコンと丸いバッジまで続き、下には 2 つの点を結ぶ横長の年表が添えられている。配色はオレンジとクリーム、ティールでまとめられている。](/BitcoinArchive/images/analysis/1997-03-28-adam-back-hashcash-announcement-hero.png)
 
-1997 年 3 月 28 日、当時エクセター大学の博士研究員だった[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)は、サイファーパンクメーリングリストに件名「`[ANNOUNCE] hash cash postage implementation`」のメールを送信した。アナウンス全文は、アダム・バック自身がホストする元投稿のコピーとして [hashcash.org/papers/announce.txt](http://www.hashcash.org/papers/announce.txt) に保存されている。
+1997 年 3 月 28 日、当時エクセター大学の博士研究員だった[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)は、サイファーパンクメーリングリストに件名「`[ANNOUNCE] hash cash postage implementation`」のメールを送信した。アナウンス全文は、アダム・バック自身がホストする元投稿のコピーに保存されている。
 
 Hashcash 自体は通貨ではない。台帳もなく、送金もなく、合意形成もなく、通貨供給もない。システムは単独完結するスパム対策／DoS 対策のスタンプ機構である。しかし 1997 年のアナウンスは、「これは digicash とどう関係するか」という独立した節を設け、Hashcash をデジタルキャッシュ議論の中に明示的に位置づけている。
 
@@ -78,7 +78,7 @@ Hashcash 自体は通貨ではない。台帳もなく、送金もなく、合�
 
 ## 鋳造のメタファー：1997 年実装と 2002 年論文
 
-アナウンスは実装の解説でも鋳造の用語を用いており、コスト・トークンを生成するプログラムのコマンドは `hashcash mint`、実装には「二重支払い保護」も記述されている。1997 年の `hashcash mint`／`mint` の枠組みは、バックの 2002 年 Hashcash 論文で関数命名の水準まで正式化される。[§2 Cost-Functions](http://www.hashcash.org/papers/hashcash.pdf) より：
+アナウンスは実装の解説でも鋳造の用語を用いており、コスト・トークンを生成するプログラムのコマンドは `hashcash mint`、実装には「二重支払い保護」も記述されている。1997 年の `hashcash mint`／`mint` の枠組みは、バックの 2002 年 Hashcash 論文で関数命名の水準まで正式化される。同論文 §2 Cost-Functions より：
 
 <!-- audit:quote-skip -->
 > コスト・トークンの作成と物理貨幣の鋳造との類推により、コスト関数に `mint` の語を用いる。
@@ -102,9 +102,9 @@ Hashcash 自体は通貨ではない。台帳もなく、送金もなく、合�
 
 | 日付 | 一次資料 | バックが Hashcash と貨幣について述べた内容 |
 |---|---|---|
-| 1997-03-28 | [Hashcash アナウンス](http://www.hashcash.org/papers/announce.txt)（サイファーパンクリスト） | Hashcash を「digicash がより広く使われるまでの応急措置」と位置づけ、節「これは digicash とどう関係するか」を含む。実装に `hashcash mint` コマンドと二重支払い保護 |
+| 1997-03-28 | Hashcash アナウンス（サイファーパンクリスト） | Hashcash を「digicash がより広く使われるまでの応急措置」と位置づけ、節「これは digicash とどう関係するか」を含む。実装に `hashcash mint` コマンドと二重支払い保護 |
 | 1998-12-06 | [サイファーパンクリスト b-money 批評](/BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/) | b-money の貨幣設計上の 7 論点を指摘、「価値を創造するには CPU 時間を燃やす — Hashcash と同じように」を提案 |
-| 2002-08-01 | [Hashcash 論文 §2 + §7](http://www.hashcash.org/papers/hashcash.pdf) | 「コスト・トークンの作成と物理貨幣の鋳造との類推により、コスト関数に `mint` の語を用いる」。§7 がウェイ・ダイの b-money 鋳造機構としての応用を列挙 |
+| 2002-08-01 | Hashcash 論文 §2 + §7 | 「コスト・トークンの作成と物理貨幣の鋳造との類推により、コスト関数に `mint` の語を用いる」。§7 がウェイ・ダイの b-money 鋳造機構としての応用を列挙 |
 | 2008-08-20 | [サトシからアダム・バックへ](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/) | サトシがビットコインホワイトペーパー向けの Hashcash 引用形式についてバックに問い合わせる |
 
 NYT 調査への応答としてバック自身が 2026 年 4 月に X に投稿した回顧的な枠組み:

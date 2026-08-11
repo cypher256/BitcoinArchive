@@ -23,6 +23,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/code/"
 relatedEntries:
   - analysis/2009-01-09-satoshi-windows-development-environment
+  - analysis/2009-01-09-bitcoin-v01-serialization-boundaries
   - "analysis/2009-01-09-satoshi-code-analysis"
   - "analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies"
   - "analysis/2009-01-03-genesis-block-hardcode-analysis"

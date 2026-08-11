@@ -28,6 +28,7 @@ secondarySources:
     note: "OP_CHECKSIG とレガシー署名ハッシュの実装"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
+  - analysis/2009-01-09-bitcoin-v01-serialization-boundaries
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - design/2009-01-03-bitcoin-block-chain-design
@@ -68,6 +69,8 @@ translationStatus: complete
 v0.1 のソースコードを読むと、UTXO モデルが具体的な処理として見えてくる。[`CTransaction`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.h#L193-L363) は入力、出力、ロックタイムを保持し、[`ConnectInputs`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.cpp#L772-L854) は参照された各出力をたどり、未成熟のコインベースを拒否し、署名を検証し、出力が使用済みか確認し、使用済みとして記録し、入力額から出力額を引いて手数料を計算する。スクリプト側は別の経路だが、接続している。[`OP_CHECKSIG`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/script.cpp#L692-L897) は署名対象のスクリプトから署名自体を取り除き、レガシー署名ハッシュを構成し、そのダイジェストを公開鍵に対して検証する。
 
 これらのリンクが記録するのは 2009 年 1 月の実装であり、現行 Bitcoin Core が同じ内部コード経路をたどるという主張ではない。そのため、後続の節では v0.1 と現行基準を分けて記載する。
+
+別の [v0.1 直列化境界分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-bitcoin-v01-serialization-boundaries/)では、トランザクション・ブロック・署名ハッシュに入るバイトと、ネットワーク・ディスク経路でオブジェクトが再利用される仕組みを対応付けている。
 
 ## 1. UTXO モデル
 

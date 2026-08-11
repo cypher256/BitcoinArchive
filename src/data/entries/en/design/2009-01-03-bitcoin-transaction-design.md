@@ -28,6 +28,7 @@ secondarySources:
     note: "OP_CHECKSIG and the legacy signature-hash implementation"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
+  - analysis/2009-01-09-bitcoin-v01-serialization-boundaries
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - design/2009-01-03-bitcoin-block-chain-design
@@ -67,6 +68,8 @@ Where behavior differs between the Satoshi-era implementation (v0.1, January 200
 The v0.1 source makes the UTXO model concrete. [`CTransaction`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.h#L193-L363) stores inputs, outputs, and locktime; [`ConnectInputs`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.cpp#L772-L854) follows each referenced output, rejects an immature coinbase, verifies the signature, checks whether the output is already spent, marks it spent, and computes the fee as input value minus output value. The script side is a separate but connected path: [`OP_CHECKSIG`](https://github.com/trottier/original-bitcoin/blob/4184ab2/src/script.cpp#L692-L897) removes the signature from the script being signed, constructs the legacy signature hash, and verifies the resulting digest against the public key.
 
 These links document the January 2009 implementation rather than claiming that modern Bitcoin Core follows the same internal code path. The later sections therefore keep the v0.1 and modern baselines separate.
+
+The separate [v0.1 serialization-boundary analysis](/BitcoinArchive/entries/analysis/2009-01-09-bitcoin-v01-serialization-boundaries/) maps which bytes enter transaction, block, and signature hashes and how those objects are reused across network and disk paths.
 
 ## 1. The UTXO model
 

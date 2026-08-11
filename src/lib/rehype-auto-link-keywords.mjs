@@ -29,10 +29,11 @@
  *     reads as visual noise and the anchor competes with the heading's
  *     own self-link (`id="..."`)
  *   - Inside `<aside class="editorial-note">` (editor notes from
- *     `remark-editorial-marker.mjs` — these are editorial overlay; we
- *     keep their links manual to preserve the editor's intent)
+ *     `remark-editorial-marker.mjs` — internal archive links may remain
+ *     manual, while external URLs are prohibited by the body-link policy)
  *   - File path matches `VERBATIM_DIRS` (forum / correspondence /
- *     emails / bip) — whole-file primary records
+ *     emails / blog / bip / tweets / whitepaper / court-document) —
+ *     whole-file primary records
  *   - Self-link: keyword's target is the page being rendered
  *
  * Per-page first-match-only: a keyword is linked at most once per
@@ -74,6 +75,10 @@ const VERBATIM_DIRS = [
   '/emails/',
   '/blog/',
   '/bip/',
+  '/tweets/',
+  '/tweet/',
+  '/whitepaper/',
+  '/court-document/',
 ];
 
 // MIRROR_BASE is hard-coded here rather than imported because the

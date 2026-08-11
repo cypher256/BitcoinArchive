@@ -12,8 +12,9 @@
  *   1. HTML-escape the entire input first so any stray `<script>`, attribute
  *      injection attempts, or pre-escaped HTML in the source string are
  *      rendered as literal text.
- *   2. Then convert `[label](url)` patterns to `<a href="…">…</a>`. The label
- *      and URL are already HTML-escaped by step 1.
+ *   2. Then convert internal `[label](url)` patterns to `<a href="…">…</a>`.
+ *      External URLs are rendered as plain text because editor notes do not
+ *      provide a clickable external-link exception.
  *   3. Reject non-allowlisted URL schemes. Only internal site paths (`/…`)
  *      and `http(s)://` are permitted; anything else (e.g. `javascript:`,
  *      `data:`, `vbscript:`) leaves the markdown literal in place rather
@@ -67,6 +68,9 @@ export function renderEditorNote(input: string): string {
       if (!isAllowedUrl(url)) return match;
       // `url` and `label` are already HTML-escaped at this point. Rewrite the
       // mirror base prefix so internal links resolve on both deployments.
+      if (/^https?:\/\//i.test(url)) {
+        return label === url ? label : `${label} (${url})`;
+      }
       return `<a href="${rewriteMirrorBase(url)}">${label}</a>`;
     },
   );

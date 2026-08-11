@@ -94,6 +94,7 @@ async function main() {
     ['check-source-duplication.mjs', '--strict'],
     ['check-no-self-domain.mjs', '--strict'],
     ['check-citation-parity.mjs'],
+    ['check-external-body-links.mjs'],
     ['check-halving-consistency.mjs'],
     ['check-quotes.mjs'],
     ['check-quote-translation-consistency.mjs'],

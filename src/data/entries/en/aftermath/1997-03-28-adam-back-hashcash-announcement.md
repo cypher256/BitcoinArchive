@@ -50,7 +50,7 @@ quotes:
 
 ![A dark-navy infographic: a vintage email-announcement card and an envelope icon connect through arrow shapes into a bordered panel holding a circuit-patterned stamp, then continue via a dashed line to a small arch icon and a round badge, above a horizontal timeline linking two dots, all in orange, cream, and teal accents.](/BitcoinArchive/images/analysis/1997-03-28-adam-back-hashcash-announcement-hero.png)
 
-On March 28, 1997, [Adam Back](/BitcoinArchive/participants/adam-back/) — then a postdoctoral researcher at the University of Exeter — sent an email to the Cypherpunks mailing list with the subject line `[ANNOUNCE] hash cash postage implementation`. The full announcement is preserved at [hashcash.org/papers/announce.txt](http://www.hashcash.org/papers/announce.txt), Adam Back's own hosting of the original post.
+On March 28, 1997, [Adam Back](/BitcoinArchive/participants/adam-back/) — then a postdoctoral researcher at the University of Exeter — sent an email to the Cypherpunks mailing list with the subject line `[ANNOUNCE] hash cash postage implementation`. The full announcement is preserved in Adam Back's own copy of the original post.
 
 Hashcash itself is not a currency. It carries no ledger, no transfers, no consensus, no monetary supply. The system is a self-contained anti-spam / anti-DoS stamp scheme. But the 1997 announcement explicitly positioned Hashcash within the digital-cash conversation, in a dedicated section *How does this fit in with digicash*.
 
@@ -77,7 +77,7 @@ This places Hashcash, from the day of its public announcement, as a complement t
 
 ## The minting metaphor: 1997 implementation, 2002 paper
 
-The announcement also uses minting language in the implementation walkthrough — the program command for generating a cost token is `hashcash mint`, and the announcement describes "double spending protection" in the implementation. The `hashcash mint` / `mint` framing in 1997 is later formalized at the function-name level in Back's 2002 Hashcash paper. From [§2 Cost-Functions](http://www.hashcash.org/papers/hashcash.pdf):
+The announcement also uses minting language in the implementation walkthrough — the program command for generating a cost token is `hashcash mint`, and the announcement describes "double spending protection" in the implementation. The `hashcash mint` / `mint` framing in 1997 is later formalized at the function-name level in Back's 2002 Hashcash paper. From §2 Cost-Functions of that paper:
 
 <!-- audit:quote-skip -->
 > "We use the term **mint** for the cost-function because of the analogy between creating cost tokens and minting physical money."
@@ -101,9 +101,9 @@ The following table traces the arc:
 
 | Date | Primary source | What Back said about Hashcash and money |
 |---|---|---|
-| 1997-03-28 | [Hashcash announcement](http://www.hashcash.org/papers/announce.txt) (Cypherpunks list) | Positioned Hashcash as a "stop gap measure until digicash becomes more widely used"; section *How does this fit in with digicash*; `hashcash mint` command and "double spending protection" in the implementation |
+| 1997-03-28 | Hashcash announcement (Cypherpunks list) | Positioned Hashcash as a "stop gap measure until digicash becomes more widely used"; section *How does this fit in with digicash*; `hashcash mint` command and "double spending protection" in the implementation |
 | 1998-12-06 | [Cypherpunks-list b-money critique](/BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/) | Identified seven monetary-design issues in b-money; proposed "to create value you burn CPU time, just like with hashcash" |
-| 2002-08-01 | [Hashcash paper §2 + §7](http://www.hashcash.org/papers/hashcash.pdf) | "We use the term **mint** for the cost-function because of the analogy between creating cost tokens and minting physical money"; §7 enumerates "hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal" |
+| 2002-08-01 | Hashcash paper §2 + §7 | "We use the term **mint** for the cost-function because of the analogy between creating cost tokens and minting physical money"; §7 enumerates "hashcash as a minting mechanism for Wei Dai's b-money electronic cash proposal" |
 | 2008-08-20 | [Satoshi to Adam Back](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) | Satoshi contacted Back about Hashcash citation format for the Bitcoin whitepaper |
 
 In Back's own retrospective framing, posted on X in April 2026 in response to the NYT investigation:
