@@ -92,9 +92,9 @@ Newsweek 記事が持っていた唯一の傍証、玄関先の発言は、話�
 
 [テクノオリエンタリスト署名分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)は、仮名の日本的な形を特定の正体仮説とは独立に扱い、名前が実在の人物のものであれ、意図的な構築であれ、借りたものであれ、等しく適用される。[『Nakamoto's Neighbor』](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/)の読み替えはその独立した問いに属する。名前を、別の[ハル・フィニー仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)の中の一本の糸に変えるのであって、ドリアン・ナカモトの著者性を支持するものにはしない。候補全体の比較は[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)を参照。
 
-## 4. 本エントリーの限界
+## 4. 資料の範囲
 
-- 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
+- 根拠は、公的に利用可能な資料に限られる。
 - 人物像の全体（ナカモトの生涯・経歴、ビットコインコミュニティが彼のために集めた寄付、地理的偶然の報道）は[ドリアン・ナカモト伝記](/BitcoinArchive/ja/participants/dorian-nakamoto/)にある。
 
 [サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、必要だが十分ではないという評価枠組みの中で、ドリアン・ナカモトを C 群に置いている。

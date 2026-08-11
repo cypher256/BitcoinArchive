@@ -158,11 +158,11 @@ Mixmaster 等の匿名性システムにおけるサッサマンの記録され�
 
 他の固有名候補仮説との比較は、[サトシ正体仮説の概観](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)を参照されたい。各候補の候補プロファイル比較表と外部的状況の注記を一箇所にまとめてある。
 
-## 4. 本エントリーの限界
+## 4. 資料の範囲
 
-- 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
-- 新たな証拠（直接的な文書上の繋がり、v0.1 コードに残るサッサマンの他の公開コードと一致する技術的指紋、パターソンや他の証人による発言、等）が出現すれば、本エントリーは更新されるべきである。
+- 根拠は、公的に利用可能な資料に限られる。
+- 新たな証拠（直接的な文書上の繋がり、v0.1 コードに残るサッサマンの他の公開コードと一致する技術的指紋、パターソンや他の証人による発言など）が出現した場合は、記録と評価を更新する。
 
 他の名指し候補として、[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[ニック・サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[金子勇](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/)が並ぶ。[2026 年の van Dorst コーパス再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は、同じ名指し候補群に定量的な文体計量を適用している。
 
-*[編者注：本エントリーは分析セクションの中で最も推論寄りのエントリーである。]*
+*[編者注：サッサマン仮説は、分析セクションの中で最も推論寄りである。]*

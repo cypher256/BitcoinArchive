@@ -64,4 +64,4 @@ Forbes 記事はこれらの写真の最初の公開であり、後に「レー�
 
 [同定の非対称性の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/)は、この特集に依拠している。ハル・フィニーをサトシ候補から外す「レース当日のアリバイ」の論証が、グリーンバーグが撮ったその日の写真記録に立っているからである。
 
-*[編者注：本エントリーは 2014 年 Forbes 特集を文書記録として扱う。レース当日の写真はグリーンバーグが見たものとして参照される。同じ時間帯の正式なタイムスタンプ分析は[ロップ 2023](/BitcoinArchive/ja/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/) にあり、ハル・フィニー候補の論点別の完全な扱いは[ハル・フィニー = サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)にある。]*
+*[編者注：2014 年 Forbes 特集を文書記録として扱う。レース当日の写真はグリーンバーグが見たものとして参照される。同じ時間帯の正式なタイムスタンプ分析は[ロップ 2023](/BitcoinArchive/ja/entries/aftermath/2023-10-21-lopp-hal-finney-not-satoshi/) にあり、ハル・フィニー候補の論点別の完全な扱いは[ハル・フィニー = サトシ仮説エントリー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)にある。]*

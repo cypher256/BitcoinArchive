@@ -201,10 +201,10 @@ Crypto++ の組み込み（§1.2）は構造的整合だが、著者性の強い
 
 他の名指し候補仮説との比較については、[サトシ正体仮説概要](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)および個別エントリーの[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[ハル・フィニー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)、[サッサマン](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)、[金子勇](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/)、[サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[トッド](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)を参照。
 
-## 4. このエントリーの限界
+## 4. 資料の範囲
 
-- 本エントリーは新しい証拠を提示しない。2008 年 8 月のメールのやり取り、ウェイ・ダイの 2014 年 1 月 AALWA 回顧、Crypto++ の組み込み記録、Bitcoin Institute によるヴァン・ドルストのコーパス再分析、ウェイ・ダイをサトシ候補として論じる公的議論の現状から資料を編集したものである。
+- 根拠は、2008 年 8 月のメールのやり取り、ウェイ・ダイの 2014 年 1 月 AALWA 回顧、Crypto++ の組み込み記録、Bitcoin Institute によるヴァン・ドルストのコーパス再分析、ウェイ・ダイをサトシ候補として論じる公的議論の現状である。
 - ウェイ・ダイの仮説は、単一の引き金となる提唱がある候補（ハル・フィニーに対するグリーンバーグ 2014、アダム・バックに対する NYT 2026、トッドに対する HBO 2024）と異なる。ウェイ・ダイはホワイトペーパー引用の効果でビットコイン公開前から構造的候補だったため、単一の主流報道の提唱はない。
-- 新しい証拠が浮上した場合、本エントリーは更新されるべきである。想定されるのは、3 通のメール通信を超える直接的な文書的繋がり、標準的な Crypto++ 組み込みを超えるウェイ・ダイの他のコードと一致するビットコイン v0.1 の技術的指紋、2014 年回顧と矛盾するウェイ・ダイの発言等だ。
+- 次の資料が加われば、記録と評価を更新する。3 通のメール通信を超える直接的な文書的繋がり、標準的な Crypto++ 組み込みを超えるウェイ・ダイの他のコードと一致するビットコイン v0.1 の技術的指紋、2014 年回顧と矛盾するウェイ・ダイの発言などである。
 
 [ウェイ・ダイの伝記](/BitcoinArchive/ja/participants/wei-dai/)が文書上の土台を持っている。学術記録、b-money 提案、サイファーパンクへの参加、そして回顧的発言だ。§1 の証拠と §2 の反証は、それらを秤にかけている。

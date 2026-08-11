@@ -4,7 +4,7 @@ date: 2010-12-27T20:21:00Z
 type: "analysis"
 source: "plan99"
 sourceUrl: "https://plan99.net/~mike/satoshi-emails/thread3.html"
-sourceNote: "起点となる出来事: 2010 年 12 月 27 日 20:21 (UTC) のマイク・ハーンからサトシ宛の季節挨拶。本エントリーはこれを枠組みとし、サトシのメール往復全体に共通する応答パターンへと広げる。"
+sourceNote: "起点となる出来事: 2010 年 12 月 27 日 20:21 (UTC) のマイク・ハーンからサトシ宛の季節挨拶。この出来事を起点に、サトシのメール往復全体に共通する応答パターンへと広げる。"
 author: "Bitcoin Institute"
 participants:
   - name: "Satoshi Nakamoto"
@@ -184,4 +184,3 @@ flowchart TD
 - パターンの数百回の機会にわたる一貫性が、この読解を支える観察である。逆に、単一のメッセージでは読解は成立しない。
 
 [サイファーパンク独立到達の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)は、同じ実践の技術側の軸を扱う。ここで見ているのは、その行動側の対応物である。
-

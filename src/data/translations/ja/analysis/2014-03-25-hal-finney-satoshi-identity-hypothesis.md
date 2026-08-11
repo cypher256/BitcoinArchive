@@ -237,11 +237,10 @@ timeline
 
 他の名指し候補仮説との比較については、[サトシ正体仮説概要](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)および個別エントリーの[サッサマン](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)、[金子勇](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/)、[サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[トッド](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)、[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)を参照。
 
-## 4. このエントリーの限界
+## 4. 資料の範囲
 
-- 本エントリーは新しい証拠を提示しない。2014 年 Forbes 特集、2023 年ロップ分析、フィニーの 2013 年「ビットコインと私」エッセイ、2026 年 NYT 調査とカフィエロ分析、Bitcoin Institute によるヴァン・ドルストの再分析、Patoshi パターンの文献、フラン・フィニーのインタビュー記録、ピーター・ミラー 2026 年合成から資料を編集したものである。
+- 根拠は、2014 年 Forbes 特集、2023 年ロップ分析、フィニーの 2013 年「ビットコインと私」エッセイ、2026 年 NYT 調査とカフィエロ分析、Bitcoin Institute によるヴァン・ドルストの再分析、Patoshi パターンの文献、フラン・フィニーのインタビュー記録、ピーター・ミラー 2026 年合成である。
 - カフィエロの「ハル・フィニーがほぼ同点」結果は、フィニーまたはアダム・バックのいずれかの確認ではなく、*一意性*の問いに関する材料として扱われる。対称的な取り扱いについては[アダム・バック仮説エントリー](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)を参照。
-- フィニーの 2013 年枠組みと矛盾する非公開の執筆や通信、レース当日アリバイをサトシのネットワーク活動と偽造を必要としない形で和解させるもの、Patoshi 規模の保有とフィニーの遺産との記録された繋がりなど、こうした新しい証拠が浮上した場合、本エントリーは更新されるべきである。
+- フィニーの 2013 年枠組みと矛盾する非公開の執筆や通信、レース当日アリバイをサトシのネットワーク活動と偽造を必要としない形で和解させるもの、Patoshi 規模の保有とフィニーの遺産との記録された繋がりなど、こうした新しい証拠が浮上した場合は、記録と評価を更新する。
 
 フィニーの事例は、候補全体に共通するこの必要だが十分ではないという評価枠組みの中で、[サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)の B 群に位置づけられる。
-

@@ -96,7 +96,7 @@ translationStatus: complete
 
 自称は[ドリアン・ナカモトの名前一致](/BitcoinArchive/ja/entries/analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis/)の構造的な裏返しである。望まない人物に名前を貼り付ける外部の偶然ではなく、望む人物による内部の言明だ。両者はともに証拠が一本の糸（一方は名前、他方は本人の言い分）に縮む。総覧の横断観察は、両者がともに公的に反証されたことを記録する。[サトシ同定の非対称性分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/)は、自称がそれ自体の土俵で失敗する理由を鋭くする：真の著者なら、既知のサトシ鍵で署名するだけで著者性を容易に証明できる。だからそれができず、代わりに偽造する主張者は、まさにその回避した実演によって著者と区別される。候補全体の比較は[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)を参照。
 
-## 4. 本エントリーの限界
+## 4. 資料の範囲
 
 出来事の全体（2016 年の宣言、Wired／Gizmodo の先行報道、Cobra へのホワイトペーパー訴訟、裁判、控訴）は[クレイグ・ライト伝記](/BitcoinArchive/ja/participants/craig-wright/)にある。
 
