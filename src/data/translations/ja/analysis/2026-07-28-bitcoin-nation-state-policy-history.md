@@ -51,7 +51,7 @@ secondarySources:
   - name: "CoinDesk ― ニューハンプシャー州が米国初の仮想通貨準備法を可決（2025 年 5 月 6 日）"
     url: "https://www.coindesk.com/policy/2025/05/06/new-hampshire-becomes-first-state-to-approve-crypto-reserve-law"
   - name: "Cointelegraph ― ボリビアの暗号資産政策の変遷"
-    url: "https://cointelegraph.com/learn/articles/the-evolution-of-crypto-policy-in-bolivia"
+    url: "https://web.archive.org/web/20250724160918/https://cointelegraph.com/learn/articles/the-evolution-of-crypto-policy-in-bolivia"
   - name: "Nairametrics ― ナイジェリア中央銀行が仮想資産規制のガイドラインを公表（2023 年 12 月 22 日）"
     url: "https://nairametrics.com/2023/12/22/cbn-releases-guidelines-for-regulating-virtual-assets-in-nigeria/"
   - name: "CryptoSlate ― インド・インターネットモバイル協会対インド準備銀行の判例"

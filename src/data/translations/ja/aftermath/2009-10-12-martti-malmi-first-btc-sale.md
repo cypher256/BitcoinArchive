@@ -2,8 +2,8 @@
 title: "ビットコイン初の法定通貨売却 — マルッティ・マルミが 5,050 BTC を 5.02 ドルで売却"
 date: 2009-10-12T00:00:00Z
 type: "article"
-source: "bitcoin-com-forum"
-sourceUrl: "https://forum.bitcoin.com/ama-ask-me-anything/i-m-martti-malmi-early-bitcoin-developer-and-the-original-founder-of-the-bitcointalk-org-forums-ama-t2770.html"
+source: "bitcoin-magazine"
+sourceUrl: "https://bitcoinmagazine.com/markets/bitcoins-first-trade-now-worth-130-million"
 author: "Martti Malmi"
 participants:
   - name: "Martti Malmi"
@@ -21,8 +21,6 @@ tags:
 secondarySources:
   - name: "CoinTelegraph — 5,050 Bitcoin for $5 in 2009"
     url: "https://web.archive.org/web/20250723082018/https://cointelegraph.com/magazine/5050-bitcoin-for-5-dollars-2009-helsinki-claim-to-crypto-fame-crypto-city-guide/"
-  - name: "Bitcoin Magazine — Bitcoin's First Trade Now Worth $130 Million"
-    url: "https://bitcoinmagazine.com/markets/bitcoins-first-trade-now-worth-130-million"
 relatedEntries:
   - aftermath/2009-10-05-newlibertystandard-biography
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate

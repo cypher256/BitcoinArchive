@@ -3,7 +3,7 @@ title: "QuadrigaCX 崩壊 ― ジェラルド・コットン死去で 2.5 億カ
 date: 2019-04-08T00:00:00Z
 type: "article"
 source: "ontario-securities-commission"
-sourceUrl: "https://www.osc.ca/sites/default/files/2020-06/inv_research_20200611_quadrigacx-report.pdf"
+sourceUrl: "https://www.osc.gov.on.ca/quadrigacxreport/"
 author: "Bitcoin Institute"
 participants:
   - name: "Gerald Cotten"
@@ -66,4 +66,3 @@ OSC は、コットンが QuadrigaCX を長期にわたる詐欺として運営�
 **債権者への回収。** 破産管財人は 2023 年 3 月、認定請求 1 カナダドルあたり **0.13 カナダドル** の中間配当を実施した。総額は約 4,000 万カナダドルで、管財人が回収した資金のおよそ 87% に相当する。認定請求総額に比べれば遥かに小さい。被害顧客の大半が全額回収を受けることはなく、 QuadrigaCX は Mt. Gox に次ぐ、ドル建てで最大級の暗号通貨取引所損失かつ未回収の事案として記録されている。
 
 **「失われたビットコイン」史における位置。** QuadrigaCX は、ビットコイン損失の **保管崩壊型** の代表例である。 [ステファン・トーマスの IronKey ロックアウト](/BitcoinArchive/ja/entries/aftermath/2021-01-12-stefan-thomas-7002-btc-ironkey-lockout/)のようなパスワード忘却型とも、 [ジェームズ・ハウエルズのニューポート埋立 HDD](/BitcoinArchive/ja/entries/aftermath/2024-12-03-james-howells-7500-btc-newport-landfill/) のような物理喪失型とも別物。 OSC が「単なる鍵喪失ではなく詐欺である」と認定した点で、 [Mt. Gox 倒産](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/) (運用失敗とトランザクション展性の悪用による盗難) とも、後の [FTX 崩壊](/BitcoinArchive/ja/entries/aftermath/2022-11-11-ftx-collapse/) (大規模な不正流用) とも明確に区別される。 [失われたビットコイン横断ページ](/BitcoinArchive/ja/entries/analysis/2026-06-02-bitcoin-iconic-losses-overview/)では、本件を広い損失パターンの中に位置付けている。
-

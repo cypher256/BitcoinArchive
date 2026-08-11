@@ -51,7 +51,7 @@ secondarySources:
   - name: "CoinDesk — New Hampshire becomes the first US state to approve a crypto reserve law (May 6, 2025)"
     url: "https://www.coindesk.com/policy/2025/05/06/new-hampshire-becomes-first-state-to-approve-crypto-reserve-law"
   - name: "Cointelegraph — the evolution of crypto policy in Bolivia"
-    url: "https://cointelegraph.com/learn/articles/the-evolution-of-crypto-policy-in-bolivia"
+    url: "https://web.archive.org/web/20250724160918/https://cointelegraph.com/learn/articles/the-evolution-of-crypto-policy-in-bolivia"
   - name: "Nairametrics — the CBN's guidelines for regulating virtual assets in Nigeria (December 22, 2023)"
     url: "https://nairametrics.com/2023/12/22/cbn-releases-guidelines-for-regulating-virtual-assets-in-nigeria/"
   - name: "CryptoSlate — Internet and Mobile Association of India v Reserve Bank of India"

@@ -2,8 +2,8 @@
 title: "マルッティ・マルミ（1988–） — サトシに次ぐビットコイン最初の開発者"
 date: 2009-05-01T00:00:00Z
 type: "biography"
-source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/Martti_Malmi"
+source: "bitcoin-defense"
+sourceUrl: "https://bitcoindefense.org/assets/documents/First-Witness-Statement-of-Martti-Malmi.pdf"
 author: "Martti Malmi"
 participants:
   - name: "Martti Malmi"

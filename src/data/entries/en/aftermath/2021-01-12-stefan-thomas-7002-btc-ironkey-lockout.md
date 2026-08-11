@@ -20,8 +20,8 @@ tags:
 secondarySources:
   - name: "Trakx — Stefan Thomas locked out of 7,002 BTC"
     url: "https://trakx.io/resources/insights/stefan-thomas-locked-out-of-7002-btc/"
-  - name: "CNBC — Stefan Thomas lost his bitcoin fortune password"
-    url: "https://www.cnbc.com/2021/01/13/stefan-thomas-has-two-guesses-left-to-unlock-260-million-in-bitcoin.html"
+  - name: "Bitcoin.com News — Stefan Thomas has two password guesses left before $840 million deletes itself forever"
+    url: "https://news.bitcoin.com/he-still-has-two-password-guesses-left-before-840-million-deletes-itself-forever-49201/"
   - name: "Unciphered — public offer to recover Thomas's IronKey (2023)"
     url: "https://www.wired.com/story/unciphered-ironkey-password-cracking-bitcoin/"
 relatedEntries:

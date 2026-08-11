@@ -2,8 +2,8 @@
 title: "Martti Malmi (1988–) — Bitcoin's first developer after Satoshi"
 date: 2009-05-01T00:00:00Z
 type: "biography"
-source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/Martti_Malmi"
+source: "bitcoin-defense"
+sourceUrl: "https://bitcoindefense.org/assets/documents/First-Witness-Statement-of-Martti-Malmi.pdf"
 author: "Martti Malmi"
 participants:
   - name: "Martti Malmi"

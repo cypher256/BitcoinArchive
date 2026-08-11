@@ -22,8 +22,6 @@ tags:
 secondarySources:
   - name: "Newsweek - The Face Behind Bitcoin"
     url: "https://www.newsweek.com/2014/03/14/face-behind-bitcoin-247957.html"
-  - name: "Wired - Satoshi Nakamoto Is (Probably) Nick Szabo"
-    url: "https://www.wired.com/2014/03/satoshi-nakamoto-probably-nick-szabo/"
 relatedEntries:
   - "aftermath/2014-03-06-newsweek-dorian-nakamoto"
   - "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"

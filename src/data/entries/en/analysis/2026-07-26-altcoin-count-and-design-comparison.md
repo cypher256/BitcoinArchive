@@ -68,8 +68,6 @@ secondarySources:
     url: "https://www.coingecko.com/en/coins/official-trump"
   - name: "SEC — staff statement on meme coins (February 27, 2025)"
     url: "https://www.sec.gov/newsroom/speeches-statements/staff-statement-meme-coins"
-  - name: "Chainalysis — $TRUMP holder profit-and-loss distribution"
-    url: "https://www.chainalysis.com/blog/trump-memecoin-analysis/"
   - name: "DL News — Milei distances himself from LIBRA after the crash (February 2025)"
     url: "https://www.dlnews.com/articles/markets/milei-backs-away-from-libra-memecoin-after-90-crash-not-aware-of-the-details/"
   - name: "CryptoSlate — MELANIA insider selling and the price collapse"

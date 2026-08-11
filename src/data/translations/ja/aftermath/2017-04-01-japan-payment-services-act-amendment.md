@@ -38,7 +38,7 @@ secondarySources:
     url: "https://cryptoslate.com/crypto-laws/japan-2022-payment-services-act-stablecoin-amendments/"
     note: "2022年の電子決済手段区分の新設（令和 4年法律第 61 号、2023年6月施行）を記録している。"
   - name: "Coin Insider — 日本、円建てステーブルコイン JPYC を開始"
-    url: "https://www.coininsider.com/news/2025/10/japan-launches-its-first-yen-backed-stablecoin-jpyc/"
+    url: "https://web.archive.org/web/20260210031304/https://www.coininsider.com/news/2025/10/japan-launches-its-first-yen-backed-stablecoin-jpyc/"
     note: "2025年10月、JPYC が国内初の免許を受けた円建てステーブルコイン発行者として発行を開始した経緯を記録している。"
   - name: "BanklessTimes — 日本内閣、暗号資産を金融商品として扱う法案を承認"
     url: "https://www.banklesstimes.com/articles/2026/04/10/japan-cabinet-backs-bill-to-treat-cryptocurrencies-as-financial-instruments/"

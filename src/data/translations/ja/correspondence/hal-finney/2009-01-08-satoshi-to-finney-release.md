@@ -3,7 +3,7 @@ title: "サトシからハル・フィニーへ：Bitcoin v0.1（2009-01-08）"
 date: 2009-01-08T20:54:55-08:00
 type: "correspondence"
 source: "bitcoin-com-satoshi-archive"
-sourceUrl: "https://www.bitcoin.com/satoshi-archive/emails/hal-finney/1/"
+sourceUrl: "https://web.archive.org/web/20250518000545/https://www.bitcoin.com/satoshi-archive/emails/hal-finney/"
 sourceNote: "Bitcoin.com のサトシ・アーカイブが保存しているメール本文の逐語版（Wayback Machine 2025-05-18 取得）。元のメール本文は、2014年3月にフラン・フィニーがジャーナリストのナサニエル・ポパーに提供したファイル群に由来し、後に CoinDesk が 2020-11-26 の記事として公開した"
 author: "Satoshi Nakamoto"
 participants:

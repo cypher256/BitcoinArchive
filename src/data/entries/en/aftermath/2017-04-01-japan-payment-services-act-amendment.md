@@ -38,7 +38,7 @@ secondarySources:
     url: "https://cryptoslate.com/crypto-laws/japan-2022-payment-services-act-stablecoin-amendments/"
     note: "The 2022 creation of the Electronic Payment Instrument stablecoin category, Act No. 61 of 2022, effective June 2023."
   - name: "Coin Insider — Japan launches its first yen-backed stablecoin, JPYC"
-    url: "https://www.coininsider.com/news/2025/10/japan-launches-its-first-yen-backed-stablecoin-jpyc/"
+    url: "https://web.archive.org/web/20260210031304/https://www.coininsider.com/news/2025/10/japan-launches-its-first-yen-backed-stablecoin-jpyc/"
     note: "JPYC's October 2025 launch as Japan's first licensed yen-denominated stablecoin issuer."
   - name: "BanklessTimes — Japan Cabinet backs bill to treat cryptocurrencies as financial instruments"
     url: "https://www.banklesstimes.com/articles/2026/04/10/japan-cabinet-backs-bill-to-treat-cryptocurrencies-as-financial-instruments/"

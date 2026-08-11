@@ -2,8 +2,8 @@
 title: "ジェフ・ガージック（1974–） — Linux カーネル開発者、ビットコイン初期貢献者"
 date: 2010-07-15T00:00:00Z
 type: "biography"
-source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/Jeff_Garzik"
+source: "bloq"
+sourceUrl: "https://bloq.com/about/"
 author: "Jeff Garzik"
 participants:
   - name: "Jeff Garzik"

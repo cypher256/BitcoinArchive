@@ -2,8 +2,8 @@
 title: "ジェームズ・ドナルドはサトシだったのか — 白書に最初に返信し、稀な語彙がサトシと重なった男"
 date: 2008-11-02T00:00:00Z
 type: "analysis"
-source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/James_A._Donald"
+source: "cryptography-mailing-list"
+sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/cryptography/14/"
 author: "James A. Donald"
 participants:
   - name: "James A. Donald"

@@ -3,7 +3,7 @@ title: "Satoshi to Hal Finney: Bitcoin v0.1 (January 8, 2009)"
 date: 2009-01-08T20:54:55-08:00
 type: "correspondence"
 source: "bitcoin-com-satoshi-archive"
-sourceUrl: "https://www.bitcoin.com/satoshi-archive/emails/hal-finney/1/"
+sourceUrl: "https://web.archive.org/web/20250518000545/https://www.bitcoin.com/satoshi-archive/emails/hal-finney/"
 sourceNote: "Verbatim email body preserved by Bitcoin.com's Satoshi Archive, captured by the Wayback Machine 2025-05-18. Original message body originated from files Fran Finney provided to journalist Nathaniel Popper in March 2014 and was later shared with CoinDesk for the 2020-11-26 publication."
 author: "Satoshi Nakamoto"
 participants:

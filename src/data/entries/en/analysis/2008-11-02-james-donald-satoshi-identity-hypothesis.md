@@ -2,8 +2,8 @@
 title: "Was James A. Donald Satoshi? — the whitepaper's first responder, with a rare word shared with Satoshi"
 date: 2008-11-02T00:00:00Z
 type: "analysis"
-source: "wikipedia"
-sourceUrl: "https://en.wikipedia.org/wiki/James_A._Donald"
+source: "cryptography-mailing-list"
+sourceUrl: "https://satoshi.nakamotoinstitute.org/emails/cryptography/14/"
 author: "James A. Donald"
 participants:
   - name: "James A. Donald"

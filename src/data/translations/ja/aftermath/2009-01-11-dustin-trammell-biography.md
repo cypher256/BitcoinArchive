@@ -2,8 +2,8 @@
 title: "ダスティン・トランメル（生没年不明） — ビットコインを最初期に稼働させた情報セキュリティ研究者"
 date: 2009-01-11T00:00:00Z
 type: "biography"
-source: "bitcoin-wiki"
-sourceUrl: "https://en.bitcoin.it/wiki/Dustin_Trammell"
+source: "dustin-trammell"
+sourceUrl: "https://www.dustintrammell.com/"
 author: "Dustin Trammell"
 participants:
   - name: "Dustin Trammell"
@@ -18,8 +18,6 @@ tags:
   - "first-nodes"
   - "historic"
 secondarySources:
-  - name: "Dustin Trammell's website"
-    url: "https://www.dustintrammell.com/"
   - name: "CoinDesk — Who Was Bitcoin's Second User?"
     url: "https://www.coindesk.com/"
   - name: "Satoshi Nakamoto's email to Trammell (January 13, 2009)"

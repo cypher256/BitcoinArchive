@@ -21,8 +21,6 @@ tags:
 secondarySources:
   - name: "FinanceFeeds — Satoshi Nakamoto identity, 2026 suspects and the 85B question (April 2026)"
     url: "https://financefeeds.com/satoshi-nakamoto-identity-2026-suspects-and-the-85b-question/"
-  - name: "DL News — DHS Special Agent claims she knows who Satoshi Nakamoto is"
-    url: "https://www.dlnews.com/articles/regulation/dhs-special-agent-claims-she-knows-who-satoshi-nakamoto-is/"
 relatedEntries:
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation

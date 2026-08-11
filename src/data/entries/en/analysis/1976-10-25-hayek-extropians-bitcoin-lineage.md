@@ -32,10 +32,10 @@ secondarySources:
     url: "https://www.cambridge.org/core/journals/modern-american-history/article/f-a-hayek-libertarianism-and-the-denationalization-of-money/B17D6B3E276C1007194928373B431E3B"
     note: "Peer-reviewed historical study placing Hayek's denationalisation argument within the 1970s libertarian network that kept competing-currency designs alive into the 1990s and beyond."
   - name: "Reason — How 1990s Libertarians Laid the Groundwork for Cryptocurrency (March 2024)"
-    url: "https://reason.com/2024/03/23/how-1990s-libertarians-laid-the-groundwork-for-cryptocurrency/"
+    url: "https://reason.com/2024/03/23/the-1990s-visionaries-who-saw-the-digital-future/"
     note: "Independent confirmation that the 1990s Extropian / cypherpunk milieu carried Hayek's competing-currency framing into the digital-cash design space."
   - name: "Bitcoin Magazine — How the Extropian Quest for Digital Cash Secured Our Trips to the Stars"
-    url: "https://bitcoinmagazine.com/culture/how-the-extropian-quest-for-digital-cash-secured-our-trips-to-the-stars"
+    url: "https://bitcoinmagazine.com/culture/how-extropian-quest-for-digital-cash-secured-our-trips-to-the-stars"
     note: "Bitcoin-community account of the Extropian digital-cash discussions of the early-to-mid 1990s, including the Hayeks thought-experiment."
 relatedEntries:
   - analysis/2008-10-31-cypherpunk-independent-arrival

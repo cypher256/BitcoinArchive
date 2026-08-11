@@ -3,7 +3,7 @@ title: "James Howells's 7,500 BTC Newport landfill — twelve years of excavatio
 date: 2024-12-03T00:00:00Z
 type: "article"
 source: "bbc"
-sourceUrl: "https://www.bbc.com/news/articles/cw07gp7zd9eo"
+sourceUrl: "https://www.bbc.com/news/articles/cj0r0dvgpy0o"
 author: "Bitcoin Institute"
 participants:
   - name: "James Howells"
@@ -17,10 +17,8 @@ tags:
   - "newport-landfill"
   - "iconic-losses"
 secondarySources:
-  - name: "BBC News — Bitcoin man loses court fight to dig up landfill (January 9, 2025)"
-    url: "https://www.bbc.com/news/articles/cz9dz2g7x4lo"
-  - name: "The Guardian — Bitcoin tip search: Newport man tells of decade-long battle"
-    url: "https://www.theguardian.com/technology/2024/dec/03/welsh-bitcoin-howells-newport-court-landfill-hard-drive"
+  - name: "The Guardian — Man who lost bitcoin fortune in Welsh tip explores purchase of entire landfill (February 10, 2025)"
+    url: "https://www.theguardian.com/technology/2025/feb/10/man-who-lost-bitcoin-fortune-in-welsh-tip-explores-purchase-of-entire-landfill"
   - name: "James Howells — Wikipedia"
     url: "https://en.wikipedia.org/wiki/James_Howells"
 relatedEntries:

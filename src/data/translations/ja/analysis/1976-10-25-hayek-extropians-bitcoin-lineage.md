@@ -32,10 +32,10 @@ secondarySources:
     url: "https://www.cambridge.org/core/journals/modern-american-history/article/f-a-hayek-libertarianism-and-the-denationalization-of-money/B17D6B3E276C1007194928373B431E3B"
     note: "ハイエクの脱国営化論を、 1970 年代のリバタリアン人脈がどのように維持し、 1990 年代以降の競合通貨設計の苗床へとつなげていったかを位置づけた査読歴史研究。"
   - name: "Reason ― How 1990s Libertarians Laid the Groundwork for Cryptocurrency (2024 年 3 月)"
-    url: "https://reason.com/2024/03/23/how-1990s-libertarians-laid-the-groundwork-for-cryptocurrency/"
+    url: "https://reason.com/2024/03/23/the-1990s-visionaries-who-saw-the-digital-future/"
     note: "1990 年代のエクストロピアン／サイファーパンク的環境がハイエクの競合通貨論をデジタルキャッシュ設計空間へ持ち込んだ流れの、独立した確認。"
   - name: "Bitcoin Magazine ― How the Extropian Quest for Digital Cash Secured Our Trips to the Stars"
-    url: "https://bitcoinmagazine.com/culture/how-the-extropian-quest-for-digital-cash-secured-our-trips-to-the-stars"
+    url: "https://bitcoinmagazine.com/culture/how-extropian-quest-for-digital-cash-secured-our-trips-to-the-stars"
     note: "1990 年代前半から中盤のエクストロピアンによるデジタルキャッシュ議論を、ビットコインコミュニティ側から記述した文化史的記事。 Hayeks の思考実験についても触れる。"
 relatedEntries:
   - analysis/2008-10-31-cypherpunk-independent-arrival

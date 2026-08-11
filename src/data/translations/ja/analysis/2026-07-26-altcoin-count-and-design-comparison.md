@@ -69,8 +69,6 @@ secondarySources:
     url: "https://www.coingecko.com/en/coins/official-trump"
   - name: "SEC — ミームコインについての職員声明 (2025 年 2 月 27 日)"
     url: "https://www.sec.gov/newsroom/speeches-statements/staff-statement-meme-coins"
-  - name: "Chainalysis — $TRUMP 保有者の損益分布"
-    url: "https://www.chainalysis.com/blog/trump-memecoin-analysis/"
   - name: "DL News — 暴落後にミレイ大統領が LIBRA から距離を置く (2025 年 2 月)"
     url: "https://www.dlnews.com/articles/markets/milei-backs-away-from-libra-memecoin-after-90-crash-not-aware-of-the-details/"
   - name: "CryptoSlate — MELANIA の内部者売却と価格崩壊"

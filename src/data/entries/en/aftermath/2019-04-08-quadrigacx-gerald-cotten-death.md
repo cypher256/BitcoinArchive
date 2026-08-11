@@ -3,7 +3,7 @@ title: "QuadrigaCX collapse — Gerald Cotten's death and C$250M in inaccessible
 date: 2019-04-08T00:00:00Z
 type: "article"
 source: "ontario-securities-commission"
-sourceUrl: "https://www.osc.ca/sites/default/files/2020-06/inv_research_20200611_quadrigacx-report.pdf"
+sourceUrl: "https://www.osc.gov.on.ca/quadrigacxreport/"
 author: "Bitcoin Institute"
 participants:
   - name: "Gerald Cotten"
@@ -65,4 +65,3 @@ The OSC found that Cotten had operated QuadrigaCX as a long-running fraud. The e
 **Recovery to creditors.** The bankruptcy trustee distributed an interim dividend of **C$0.13 per CAD of proven claim** in March 2023 — approximately C$40 million, representing about 87% of the funds the trustee had recovered, against far larger total proven claims. Most affected customers will not be made whole; QuadrigaCX is, after Mt. Gox, one of the largest cryptocurrency exchange losses by dollar value with no recovery.
 
 **Position in the lost-Bitcoin canon.** QuadrigaCX is the canonical example of **custody-collapse-mode** Bitcoin loss — distinct from forgotten-password losses like [Stefan Thomas's IronKey lockout](/BitcoinArchive/entries/aftermath/2021-01-12-stefan-thomas-7002-btc-ironkey-lockout/) and from physical-loss cases like [James Howells's Newport landfill drive](/BitcoinArchive/entries/aftermath/2024-12-03-james-howells-7500-btc-newport-landfill/). The OSC's finding that the loss was substantially fraud (rather than purely lost keys) also distinguishes it sharply from the [Mt. Gox bankruptcy](/BitcoinArchive/entries/aftermath/2014-02-28-mt-gox-bankruptcy/) (operational failure and transaction-malleability theft) and from the later [FTX collapse](/BitcoinArchive/entries/aftermath/2022-11-11-ftx-collapse/) (misappropriation at scale). The [Bitcoin lost-coins overview](/BitcoinArchive/entries/analysis/2026-06-02-bitcoin-iconic-losses-overview/) sets the case in the broader pattern.
-

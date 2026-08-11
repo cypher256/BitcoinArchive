@@ -2,8 +2,8 @@
 title: "Dustin Trammell (dates unknown) — Information security researcher who was among the first to run Bitcoin"
 date: 2009-01-11T00:00:00Z
 type: "biography"
-source: "bitcoin-wiki"
-sourceUrl: "https://en.bitcoin.it/wiki/Dustin_Trammell"
+source: "dustin-trammell"
+sourceUrl: "https://www.dustintrammell.com/"
 author: "Dustin Trammell"
 participants:
   - name: "Dustin Trammell"
@@ -18,8 +18,6 @@ tags:
   - "first-nodes"
   - "historic"
 secondarySources:
-  - name: "Dustin Trammell's website"
-    url: "https://www.dustintrammell.com/"
   - name: "CoinDesk — Who Was Bitcoin's Second User?"
     url: "https://www.coindesk.com/"
   - name: "Satoshi Nakamoto's email to Trammell (January 13, 2009)"

@@ -27,8 +27,6 @@ secondarySources:
     url: "https://www.cryptotimes.io/2026/05/28/a-280b-bitcoin-lawsuit-noah-doe-tests-lost-property-law-on-dormant-wallets/"
   - name: "Bitcoin.com News — Anonymous plaintiff claims $293B Bitcoin haul"
     url: "https://news.bitcoin.com/anonymous-plaintiff-claims-293b-bitcoin-haul-targets-satoshis-dormant-wallets-in-ny-court-case/"
-  - name: "Coingape — Anonymous Bitcoin lawsuit Noah Doe"
-    url: "https://coingape.com/anonymous-bitcoin-lawsuit-noah-doe-3-8-million-btc-claim/"
 relatedEntries:
   - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
   - "aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary"
