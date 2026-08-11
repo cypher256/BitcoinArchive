@@ -12,6 +12,8 @@
 //
 // `algoliasearch` is provided as a global by the UMD <script> the page loads.
 
+import { resolveDateValues } from '../lib/dateAxis';
+
 export function initEntriesBrowse() {
   var cfgEl = document.getElementById('entries-config');
   if (!cfgEl) return;
@@ -55,15 +57,6 @@ export function initEntriesBrowse() {
   var hasCreatedBtn = sortBtns.some(function(b) { return b.dataset.sort === 'created'; });
   var sortState = hasCreatedBtn ? { key: 'created', order: 'desc' } : { key: 'date', order: 'desc' };
   var relevanceBtn = sortBtns.filter(function(b) { return b.dataset.sort === 'relevance'; })[0];
-  // sort key -> { attr: card data-* suffix to read, label: date-axis label }.
-  // 'relevance' falls through to the event-date fallback below: it is a rank,
-  // not a date axis, so cards just show the most generic date (event) while
-  // sorted by it (search-2026-07-19 design).
-  function axisInfo(key) {
-    if (key === 'created') return { attr: 'created', label: uiLabels.added };
-    if (key === 'updated') return { attr: 'updated', label: uiLabels.updated };
-    return { attr: 'date', label: uiLabels.event };
-  }
   var algolia = (typeof algoliasearch !== 'undefined')
     ? algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425') : null;
   var hits = null, nbHits = 0; // current full-text hit set (null = browse mode); nbHits = true total
@@ -117,18 +110,6 @@ export function initEntriesBrowse() {
       if (ok) matching.push(card);
     });
     matching.sort(cmp);
-    // Rewrite each card's date + label to the active sort axis (idempotent;
-    // fmtDate matches the SSR formatDate exactly, so this never alters text
-    // for a card already on that axis). Fall back to the event date when a
-    // git date is missing — same fallback the sort uses.
-    var info = axisInfo(sortState.key);
-    matching.forEach(function(c) {
-      var iso = c.dataset[info.attr] || c.dataset.date;
-      var labelEl = c.querySelector('.card-date-label');
-      var timeEl = c.querySelector('.card-header time');
-      if (labelEl) labelEl.textContent = info.label;
-      if (timeEl && iso) { timeEl.textContent = fmtDate(iso); timeEl.setAttribute('datetime', iso); }
-    });
     matching.forEach(function(c) { list.appendChild(c); });
     matching.forEach(function(c, i) { c.classList.toggle('paged-out', i >= shown); });
     resultCount.textContent = String(matching.length);
@@ -155,9 +136,22 @@ export function initEntriesBrowse() {
   function participantLink(slug, name, cls) {
     return '<a class="' + cls + '" href="' + basePath + (L ? '/ja' : '') + '/participants/' + slug + '/">' + esc(name) + '</a>';
   }
+  function datePart(label, iso) {
+    var dateStr = iso ? fmtDate(iso) : '';
+    return dateStr
+      ? '<span class="card-date"><span class="card-date-label">' + esc(label) + '</span><time datetime="' + esc(iso) + '">' + esc(dateStr) + '</time></span>'
+      : '';
+  }
+  function dateGroup(dates) {
+    return '<span class="card-dates">'
+      + datePart(uiLabels.event, dates.eventIso)
+      + datePart(uiLabels.added, dates.createdAtIso)
+      + datePart(uiLabels.updated, dates.updatedAtIso)
+      + '</span>';
+  }
   // A full-text result card. Emits EntryCard's exact markup and class names so
   // the shared .entry-card rules in global.css render it identically to a browse
-  // card: header (date-axis label + date + type badge), avatar + title, author
+  // card: header (all three dates + type badge), avatar + title, author
   // ↔ co-participants byline, description, and — only when the body itself
   // matched — the highlighted .ft-snippet excerpt.
   function hitCard(h) {
@@ -167,14 +161,7 @@ export function initEntriesBrowse() {
     var title = ((hr.title && hr.title.value) || esc(h.title)).replace(/<\/mark>\s*<mark>/g, '');
     var type = h.type || '';
     var isEditorial = type === 'analysis' || type === 'design' || type === 'article' || type === 'currency';
-    // Date axis: every result shows the active sort axis (event / created /
-    // updated) so the visible date always explains the order.
-    var ai = axisInfo(sortState.key);
-    var rawDate = ai.attr === 'created' ? (h.createdTs || h.date)
-                : ai.attr === 'updated' ? (h.updatedTs || h.date)
-                : h.date;
-    var dateLabel = ai.label;
-    var dateStr = rawDate ? fmtDate(rawDate) : '';
+    var dateValues = resolveDateValues({ dateIso: h.date, createdAtIso: h.createdTs, updatedAtIso: h.updatedTs });
     var typeLabel = typeLabels[type] || type;
     // Byline: server-built authorMeta already ran findAuthorParticipant (incl.
     // handle aliases) and resolved the katakana display name.
@@ -195,7 +182,7 @@ export function initEntriesBrowse() {
     var snipMatched = sr.body && sr.body.matchLevel && sr.body.matchLevel !== 'none';
     var snip = snipMatched ? String(sr.body.value).replace(/<\/mark>\s*<mark>/g, '') : '';
     var header = '<div class="card-header">'
-      + (dateStr ? '<span class="card-date-label">' + esc(dateLabel) + '</span><time>' + esc(dateStr) + '</time>' : '')
+      + dateGroup(dateValues)
       + (typeLabel ? '<span class="source-badge">' + esc(typeLabel) + '</span>' : '')
       + (type === 'biography' ? '<span class="biography-badge">' + esc(uiLabels.biography) + '</span>' : '')
       + '</div>';

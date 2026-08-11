@@ -840,11 +840,25 @@ blockquote > .quote-speaker-tag:first-child {
   margin-bottom: 0.3rem;
 }
 .entry-card .card-header time { white-space: nowrap; }
+.entry-card .card-dates {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 0;
+  align-items: center;
+  gap: 0.25rem 0.75rem;
+}
+.entry-card .card-date {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  white-space: nowrap;
+}
 /* opacity was 0.7, blending --color-text-muted down below WCAG AA 4.5:1
    in both themes (measured 3.12 light / 4.05 dark). Removing it clears
    4.5:1 in both (6.01 / 7.10) without inventing a new colour — the
    "de-emphasized" look already comes from --color-text-muted itself. */
 .entry-card .card-date-label { margin-right: -0.5rem; }
+.entry-card .card-date .card-date-label { margin-right: 0; }
 .entry-card .source-badge {
   display: inline-block;
   padding: 0.1em 0.5em;

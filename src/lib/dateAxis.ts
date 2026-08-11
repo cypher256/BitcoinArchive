@@ -1,8 +1,7 @@
 // Single source of truth for which entry types treat `frontmatter.date` as a
 // verifiable historical fact vs an editorial placement anchor (used only by
 // the entry-detail page, EntryMeta.astro, to pick which date-field pair to
-// show), and for resolving which date value + label an entry card shows on
-// list surfaces. See
+// show), and for resolving the three dates shown on entry cards. See
 // NovelBitCoin src/archive/todo/20260701_日付メタデータとソートUI_体系再設計.md
 // for the full reasoning. No Astro dependency — safe to import from both
 // server components (.astro) and the client bundle (src/scripts/*.ts).
@@ -42,12 +41,8 @@ export interface DateAxisResult {
   labelKey: DateAxisLabelKey;
 }
 
-// Resolve which date value + label an entry card shows. `sortKey` is the
-// list's active sort axis; every list surface now starts already coupled to
-// "created" (the registered/登録日 axis — see the plan doc's "always one of
-// the 3 buttons" decision), so every card, regardless of type, shows the
-// same axis until the reader picks a different one. Omitting sortKey falls
-// back to that same "created" default for callers with no sort UI.
+// Resolve the one date value + label used by secondary list surfaces that
+// still couple their card display to the selected sort axis.
 export function resolveDateAxis(
   dates: DateAxisDates,
   sortKey: 'date' | 'created' | 'updated' = 'created',
@@ -56,4 +51,21 @@ export function resolveDateAxis(
   if (axis === 'created') return { iso: dates.createdAtIso ?? dates.dateIso, labelKey: 'added' };
   if (axis === 'updated') return { iso: dates.updatedAtIso ?? dates.dateIso, labelKey: 'updated' };
   return { iso: dates.dateIso, labelKey: 'event' };
+}
+
+export interface DateValues {
+  eventIso: string;
+  createdAtIso: string;
+  updatedAtIso: string;
+}
+
+// Keep the fallback for missing git metadata identical on the /entries
+// server-rendered cards and Algolia result cards. The three fields are always
+// present in the UI, while incomplete records still have a useful date.
+export function resolveDateValues(dates: DateAxisDates): DateValues {
+  return {
+    eventIso: dates.dateIso,
+    createdAtIso: dates.createdAtIso || dates.dateIso,
+    updatedAtIso: dates.updatedAtIso || dates.dateIso,
+  };
 }
