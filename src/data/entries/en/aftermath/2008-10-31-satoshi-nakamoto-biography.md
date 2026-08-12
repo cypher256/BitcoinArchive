@@ -49,6 +49,7 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-10-satoshi-launch-environment
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - aftermath/2008-10-31-bitcoin-whitepaper-publication
   - aftermath/2009-01-03-genesis-block
   - aftermath/2009-01-09-bitcoin-v01-released
   - aftermath/2008-08-20-satoshi-to-adam-back
@@ -57,7 +58,7 @@ relatedEntries:
 
 ![A glowing translucent cube labeled Genesis / Block 0 connects by a dotted line to smaller fading blocks and a faceless hooded silhouette, set against a dark network of starlike connected points.](/BitcoinArchive/images/analysis/2008-10-31-satoshi-nakamoto-biography-hero.png)
 
-On October 31, 2008, Satoshi Nakamoto published the Bitcoin whitepaper. Two and a half years later, he sent his last known email and stopped. Approximately 1.1 million BTC mined under a single coordinated pattern in those first months have not moved since.
+On October 31, 2008, Satoshi Nakamoto [published the Bitcoin whitepaper](/BitcoinArchive/entries/aftermath/2008-10-31-bitcoin-whitepaper-publication/). Two and a half years later, he sent his last known email and stopped. Approximately 1.1 million BTC mined under a single coordinated pattern in those first months have not moved since.
 
 "Satoshi Nakamoto" is a pseudonym. The individual or group behind it has never been identified — the question the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) examines by weighing ten named candidates against the documented record compiled here.
 

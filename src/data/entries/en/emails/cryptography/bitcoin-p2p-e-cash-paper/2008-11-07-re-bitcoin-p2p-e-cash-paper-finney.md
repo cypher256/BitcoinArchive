@@ -19,6 +19,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute (thread view)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/1/"
+relatedEntries:
+  - aftermath/2008-10-31-bitcoin-whitepaper-publication
 ---
 
 Bitcoin seems to be a very promising idea. I like the idea of basing

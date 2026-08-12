@@ -19,6 +19,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/6/"
+relatedEntries:
+  - aftermath/2008-10-31-bitcoin-whitepaper-publication
 translationStatus: complete
 quotes:
   - id: "q1"

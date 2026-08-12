@@ -49,6 +49,7 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-10-satoshi-launch-environment
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - aftermath/2008-10-31-bitcoin-whitepaper-publication
   - aftermath/2009-01-03-genesis-block
   - aftermath/2009-01-09-bitcoin-v01-released
   - aftermath/2008-08-20-satoshi-to-adam-back
@@ -58,7 +59,7 @@ translationStatus: complete
 
 ![光る半透明の立方体が点線で小さく薄れていくブロック群につながり、その先に顔のない黒いフード姿の人影が浮かぶ、星のような点が結びつく暗い紺色の図。](/BitcoinArchive/images/analysis/2008-10-31-satoshi-nakamoto-biography-hero.png)
 
-2008年10月31日、サトシ・ナカモトはビットコインホワイトペーパーを発表した。2年半後、最後の既知のメールを送信して消えた。最初の数か月に単一の協調的なパターンでマイニングされた約 110 万 BTC は、その後一度も動いていない。
+2008年10月31日、サトシ・ナカモトは[ビットコインホワイトペーパーを発表した](/BitcoinArchive/ja/entries/aftermath/2008-10-31-bitcoin-whitepaper-publication/)。2年半後、最後の既知のメールを送信して消えた。最初の数か月に単一の協調的なパターンでマイニングされた約 110 万 BTC は、その後一度も動いていない。
 
 「サトシ・ナカモト」は仮名である。その背後にいる個人またはグループは、これまで特定されていない。この正体は、[サトシ正体仮説の横断比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)が 10 人の名指し候補をここにまとめた記録に照らして検証している問いである。
 

@@ -22,6 +22,7 @@ secondarySources:
     url: "https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
 relatedEntries:
   - aftermath/2008-10-31-satoshi-nakamoto-biography
+  - aftermath/2008-10-31-bitcoin-whitepaper-publication
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery
@@ -51,7 +52,7 @@ translationStatus: complete
 
 永続性は二つの軸で効いている。ブロックそのものは取り除けない。すべてのノードが定数からバイト単位で同一のコピーを自力で組み立てるからだ。そのブロックに結びついた 50 BTC のコインベース報酬は動かせない。v0.1 のブロック 0 構築経路はコインベース出力を UTXO セットに書き込まないため、報酬はチェーン上に存在しながら仕様上動かせない ([ジェネシスブロック・ハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) §5〜§6 で機構を詳述)。メッセージと動かない 50 BTC が並んで置かれている。どちらも編集できず、撤回できず、ひそかに抜き取ることもできない。
 
-選ばれた見出しは中立なタイムスタンプの選定ではなかった。「財務相、銀行への 2 度目の救済へ」は、政府が二度目の救済に踏み切る瞬間を名指していた。そもそも救済を必要とする失敗を繰り返してきた金融システムに、もう一度公的資金で底入れする瞬間である。[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)は 2 か月前、信頼できる金融仲介者を必要としない支払いシステムを提案していた。ジェネシスのコインベースは、その提案を、「仲介者を必要とすること」が現実に生み出している事象に結びつけた。この組み合わせが編集判断だ。
+選ばれた見出しは中立なタイムスタンプの選定ではなかった。「財務相、銀行への 2 度目の救済へ」は、政府が二度目の救済に踏み切る瞬間を名指していた。そもそも救済を必要とする失敗を繰り返してきた金融システムに、もう一度公的資金で底入れする瞬間である。[ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)は [2 か月前に公開され](/BitcoinArchive/ja/entries/aftermath/2008-10-31-bitcoin-whitepaper-publication/)、信頼できる金融仲介者を必要としない支払いシステムを提案していた。ジェネシスのコインベースは、その提案を、「仲介者を必要とすること」が現実に生み出している事象に結びつけた。この組み合わせが編集判断だ。
 
 サトシは書き物で確信を表に出すことがめったになかった。もっとも近い記録された瞬間は、[2008 年 11 月 6 日の暗号学メーリングリストでジェームズ・A・ドナルドに返した一行](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-06-sni4-bitcoin-p2p-e-cash-paper/)の「我々は軍拡競争における大きな戦いに勝ち、数年間の新たな自由の領域を獲得することができる」だった。一度言って、繰り返さなかった。この返信を引き出したのは[ドナルド](/BitcoinArchive/ja/participants/james-donald/)のスケーラビリティへの懐疑だった。後のメッセージ、とりわけ [2011 年 4 月のマイク・ハーンとギャビン・アンドレセンへの別れ](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)は意図して平板だ。「他のことに取り組むことにした」。平板な業務散文と、消えた個人の声、二つの語調の間で、ブロック 0 のタイムズ紙見出しだけが、通りすがりに語られたのではなく、取り戻せない形式で記録に刻まれた唯一の宣言である。
 

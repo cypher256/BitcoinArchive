@@ -40,6 +40,7 @@ relatedEntries:
   - aftermath/1997-03-28-adam-back-hashcash-announcement
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
+  - aftermath/2008-10-31-bitcoin-whitepaper-publication
   - aftermath/2008-08-20-satoshi-to-adam-back
   - aftermath/2008-08-21-adam-back-to-satoshi
   - aftermath/2008-08-21-satoshi-to-adam-back-b-money

@@ -26,6 +26,7 @@ pdfMetadata:
 relatedEntries:
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
+  - aftermath/2008-10-31-bitcoin-whitepaper-publication
 translationStatus: complete
 ---
 
