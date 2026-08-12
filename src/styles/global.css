@@ -869,11 +869,24 @@ blockquote > .quote-speaker-tag:first-child {
   color: var(--color-text-muted);
 }
 .entry-dates--home {
+  flex-wrap: nowrap;
+  overflow: hidden;
   gap: 0.25rem 0.75rem;
   font-family: var(--font-heading);
   font-size: 0.78rem;
   color: var(--color-accent);
   letter-spacing: 0.05em;
+}
+/* Below ~900px the card grid narrows enough that "Event ..." + "Updated
+   ..." together can exceed the card width -- with flex-wrap:nowrap above
+   (kept fixed-height, no wrap-driven card-height variance) that would
+   otherwise hard-clip mid-digit. Drop the less essential "Updated" date
+   instead of showing a truncated one; the full dates are one click away
+   on the entry page. */
+@media (max-width: 900px) {
+  .entry-dates--home .entry-date:last-child {
+    display: none;
+  }
 }
 .entry-dates--related {
   flex: 0 0 auto;

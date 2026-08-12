@@ -134,32 +134,6 @@ export const characters: CharacterBio[] = [
     },
   },
   {
-    slug: 'ray-dillinger',
-    name: { ja: 'レイ・ディリンジャー', en: 'Ray Dillinger' },
-    epithet: { ja: '最初のレビュアー', en: 'The First Reviewer' },
-    bio: {
-      ja: '暗号学メーリングリストの古参。自称「悲観主義者」。2008年、サトシから頼まれてビットコインのコードをレビュー。通貨コードに浮動小数点型が使われているのを見て仰天したが、実際に検証したら丸め誤差はゼロだった。',
-      en: 'A longtime regular on the cryptography mailing list and a self-described pessimist. In 2008, at Satoshi\'s request, he reviewed the Bitcoin code. He was horrified to find floating-point arithmetic in monetary logic — then verified it and discovered the rounding error was exactly zero.',
-    },
-    quote: {
-      text: 'I freaked out when I discovered the code used a floating-point type rather than an integer type for accounting.',
-      attribution: { ja: 'インタビュー（2018）', en: 'Interview, 2018' },
-    },
-  },
-  {
-    slug: 'james-donald',
-    name: { ja: 'ジェームズ・A・ドナルド', en: 'James A. Donald' },
-    epithet: { ja: '最初の批評家', en: 'The First Critic' },
-    bio: {
-      ja: 'ビットコイン論文の公開からわずか2日後、メーリングリストで最初にサトシに返信した人物。「切実に必要だ――だが、スケールしないように思える」のパターンで追及を続けた。15年後、彼の指摘した問題の多くはまだ未解決のままだ。',
-      en: 'Two days after the whitepaper was posted, he became the first person to reply to Satoshi on the mailing list. His pattern was unmistakable: "We very much need such a system — but it does not seem to scale." Fifteen years on, many of the concerns he raised remain unresolved.',
-    },
-    quote: {
-      text: 'We very, very much need such a system, but the way I understand your proposal, it does not seem to scale to the required size.',
-      attribution: { ja: 'Cryptography Mailing List（2008-11-02）', en: 'Cryptography Mailing List, 2008-11-02' },
-    },
-  },
-  {
     slug: 'peter-todd',
     name: { ja: 'ピーター・トッド', en: 'Peter Todd' },
     epithet: { ja: '否定した者', en: 'The Denier' },
