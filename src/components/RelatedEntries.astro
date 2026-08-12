@@ -35,7 +35,19 @@ import derivedData from '../data/derived-related.json';
 import commentariesData from '../data/derived-commentaries.json';
 import gitDates from '../data/git-dates.json';
 
-const MAX_VISIBLE = 5;
+const MAX_VISIBLE = 6;
+// Hero thumbnail: same body-markdown extraction used on the home page
+// cards (see src/pages/index.astro) and the entry detail page's own
+// og:image logic. Only 3 editorial entries in the whole archive lack a
+// hero image (audited 2026-08-13); for those, fall back to the same
+// generated /og/{id}.png card already used as the entry page's own
+// og:image fallback -- never a blank thumbnail.
+const HERO_IMAGE_RE = /!\[[^\]]*\]\((?:\/BitcoinArchive)?(\/images\/analysis\/[^)\s]+-hero\.png)\)/;
+const imgBase = import.meta.env.BASE_URL.replace(/\/$/, '');
+function heroThumb(body: string | undefined, ogPath: string): string {
+  const match = (body ?? '').match(HERO_IMAGE_RE);
+  return match ? imgBase + match[1] : `${imgBase}/og/${ogPath}.png`;
+}
 const derivedMap = derivedData as Record<string, { id: string; score: number }[]>;
 const commentariesMap = commentariesData as Record<string, { id: string }[]>;
 type LangDate = { createdAt: string; updatedAt: string };
@@ -78,6 +90,7 @@ interface Target {
   updatedAt?: string;
   href: string;
   type: string;
+  thumb: string;
 }
 
 let visibleTargets: Target[] = [];
@@ -95,13 +108,21 @@ if (mergedIds.length > 0) {
     const entry = byId.get(id);
     if (!entry) return null;
 
+    // OG-fallback path mirrors src/pages/og/[...slug].png.ts's own
+    // getStaticPaths param shape: JA entries are generated under a
+    // `ja/` prefix, and biographies have no /og/{id}.png of their own
+    // (excluded from that route) -- their OG image lives at
+    // /og/participants/{slug}.png instead.
     let href: string;
+    let ogPath: string;
     if (entry.data.type === 'biography') {
       const primarySlug = entry.data.participants?.[0]?.slug;
       if (!primarySlug) return null;
       href = localePath(`/participants/${primarySlug}/`, lang);
+      ogPath = lang === 'ja' ? `ja/participants/${primarySlug}` : `participants/${primarySlug}`;
     } else {
       href = localePath(`/entries/${entry.id}/`, lang);
+      ogPath = lang === 'ja' ? `ja/${entry.id}` : entry.id;
     }
 
     return {
@@ -112,6 +133,7 @@ if (mergedIds.length > 0) {
       updatedAt: gitDateMap[entry.id]?.[lang]?.updatedAt ?? gitDateMap[entry.id]?.en?.updatedAt,
       href,
       type: entry.data.type,
+      thumb: heroThumb(entry.body, ogPath),
     };
   };
 
@@ -152,8 +174,11 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenT
       {visibleTargets.map((entry) => (
         <li>
           <a href={entry.href}>
-            <EntryDates date={entry.date} createdAt={entry.createdAt} updatedAt={entry.updatedAt} lang={lang} variant="related" dateFields={['event']} />
-            <span class="related-title">{entry.title}</span>
+            <div class="related-thumb"><img src={entry.thumb} alt="" loading="lazy" width="1600" height="900" /></div>
+            <div class="related-body">
+              <EntryDates date={entry.date} createdAt={entry.createdAt} updatedAt={entry.updatedAt} lang={lang} variant="related" dateFields={['event']} />
+              <span class="related-title">{entry.title}</span>
+            </div>
           </a>
         </li>
       ))}
@@ -165,8 +190,11 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenT
           {hiddenTargets.map((entry) => (
             <li>
               <a href={entry.href}>
-                <EntryDates date={entry.date} createdAt={entry.createdAt} updatedAt={entry.updatedAt} lang={lang} variant="related" dateFields={['event']} />
-                <span class="related-title">{entry.title}</span>
+                <div class="related-thumb"><img src={entry.thumb} alt="" loading="lazy" width="1600" height="900" /></div>
+                <div class="related-body">
+                  <EntryDates date={entry.date} createdAt={entry.createdAt} updatedAt={entry.updatedAt} lang={lang} variant="related" dateFields={['event']} />
+                  <span class="related-title">{entry.title}</span>
+                </div>
               </a>
             </li>
           ))}
@@ -196,31 +224,80 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenT
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
+  /* Mini card grid -- top-image card, closer to the home page's
+     Analyses treatment, scaled down for the end-of-article box. The
+     240px floor lands on 3 columns at the .container (1000px) reading
+     width (measured 291px/card there) and collapses to 2 then 1 on
+     narrower viewports, same auto-fit/minmax pattern as every other
+     card grid on the site. */
   .related-entries ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.85rem;
+    align-items: start;
   }
   .related-entries li {
-    margin: 0.4rem 0;
+    margin: 0;
   }
   .related-entries a {
     display: flex;
-    align-items: baseline;
-    gap: 0.75rem;
+    flex-direction: column;
     text-decoration: none;
     color: inherit;
-    line-height: 1.5;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--color-bg);
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .related-entries a:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-1px);
   }
   .related-entries a:hover .related-title {
     color: var(--color-link);
     text-decoration: underline;
   }
-  .related-title {
-    font-size: 0.95rem;
-  }
   .related-more {
     margin-top: 0.5rem;
+  }
+  .related-thumb {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+  .related-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .related-body {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.6rem 0.7rem 0.75rem;
+    /* Matches the natural max .related-body height measured at 3
+       columns (103.5px, the 3-line-title case) so all cards in a row
+       land at the same height instead of leaving a gap under 2-line
+       titles (see .analysis-card .body on the home page for the same
+       container-level min-height pattern and why it beats per-element
+       min-height). */
+    min-height: 6.5rem;
+  }
+  .related-title {
+    font-size: 0.88rem;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .related-entries :global(.entry-dates--related) {
+    font-size: 0.72rem;
   }
   .related-more > summary {
     cursor: pointer;
