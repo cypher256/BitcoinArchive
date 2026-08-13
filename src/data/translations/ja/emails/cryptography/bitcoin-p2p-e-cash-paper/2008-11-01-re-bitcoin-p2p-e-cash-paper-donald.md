@@ -22,6 +22,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2008-10-31-bitcoin-whitepaper-publication
   - "aftermath/2008-11-02-james-donald-biography"
+  - analysis/2008-08-21-what-they-said-about-satoshi
 translationStatus: complete
 quotes:
   - id: "q1"

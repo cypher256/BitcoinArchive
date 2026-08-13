@@ -21,6 +21,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/1/"
 relatedEntries:
   - aftermath/2008-10-31-bitcoin-whitepaper-publication
+  - analysis/2008-08-21-what-they-said-about-satoshi
 translationStatus: complete
 ---
 

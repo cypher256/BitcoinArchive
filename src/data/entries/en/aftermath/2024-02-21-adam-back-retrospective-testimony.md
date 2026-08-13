@@ -40,6 +40,7 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - aftermath/2008-08-21-adam-back-to-satoshi-micromint
   - aftermath/2009-01-10-satoshi-to-adam-back-launch
+  - analysis/2008-08-21-what-they-said-about-satoshi
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

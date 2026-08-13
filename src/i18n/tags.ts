@@ -280,6 +280,7 @@ export const tagTranslations: Record<string, string> = {
   // R
   'quantum-computing': '量子コンピューティング',
   'recollection': '回想',
+  'reception-history': '受容史',
   'regret': '後悔',
   'regulation': '規制',
   'regulatory': '規制',
@@ -329,6 +330,7 @@ export const tagTranslations: Record<string, string> = {
   'technical': '技術的',
   'technology-progress': '技術的進歩',
   'tesla': 'テスラ',
+  'testimony': '証言',
   'timezone-mystery': 'タイムゾーンの謎',
   'tooling': '開発ツール',
   'satoshi-tooling': 'サトシのツール環境',

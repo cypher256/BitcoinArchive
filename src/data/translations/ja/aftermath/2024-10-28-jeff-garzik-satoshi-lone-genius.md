@@ -29,6 +29,7 @@ relatedEntries:
   - aftermath/2018-10-29-jeff-garzik-retrospective
   - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2008-08-21-what-they-said-about-satoshi
 translationStatus: complete
 ---
 

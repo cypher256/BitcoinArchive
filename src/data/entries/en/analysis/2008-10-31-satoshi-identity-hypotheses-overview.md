@@ -90,6 +90,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - aftermath/2013-07-06-isamu-kaneko-biography
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
+  - analysis/2008-08-21-what-they-said-about-satoshi
 inlineLinkKeywords:
   - "Satoshi Nakamoto candidates"
   - "Satoshi Nakamoto identity candidates"

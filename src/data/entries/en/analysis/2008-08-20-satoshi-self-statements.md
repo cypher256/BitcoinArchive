@@ -28,6 +28,7 @@ secondarySources:
     url: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
 relatedEntries:
   - analysis/2010-12-27-satoshi-non-technical-silence
+  - analysis/2008-08-21-what-they-said-about-satoshi
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry

@@ -107,7 +107,7 @@ Mixmaster 等の匿名性システムにおけるサッサマンの記録され�
 
 最も強い反証は、サッサマンとサトシの間に直接的な文書上の繋がりが一切ないことである：
 
-- サッサマンとサトシのメールは浮上していない（[アダム・バック](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)、[ウェイ・ダイ](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)、[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)、[マルティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)のいずれのコーパスにおいても）。
+- サッサマンとサトシのメールは浮上していない（[アダム・バック](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)、[ウェイ・ダイ](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)、[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)、[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)のいずれのコーパスにおいても）。
 - サッサマンとサトシの両方に帰属させ得るリーク草稿、コードコミット、作業中の成果物の記録は存在しない。
 - サッサマンが、ビットコインを仮名で公開する準備をしていたなら期待されるであろう形で、サトシの初期メールを受け取った *他の* サイファーパンク達と通信していた記録もない。
 

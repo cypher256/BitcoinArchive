@@ -29,6 +29,7 @@ relatedEntries:
   - aftermath/2018-10-29-jeff-garzik-retrospective
   - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2008-08-21-what-they-said-about-satoshi
 ---
 
 ![A dark, moody illustration of a silhouetted figure at a glowing terminal displaying lock and chain-link icons, beside a row of separate icon blocks merging into one new icon and a split panel over an unbroken horizontal timeline.](/BitcoinArchive/images/analysis/2024-10-28-jeff-garzik-satoshi-lone-genius-hero.png)

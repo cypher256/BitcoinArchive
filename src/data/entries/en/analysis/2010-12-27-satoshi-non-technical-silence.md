@@ -44,6 +44,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2008-08-21-what-they-said-about-satoshi
   - correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions
   - correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode
   - emails/cryptography/bitcoin-v0-1-released/2009-01-10-re-bitcoin-v0-1-released-finney

@@ -37,6 +37,7 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "analysis/2008-08-20-satoshi-self-statements"
+  - "analysis/2008-08-21-what-they-said-about-satoshi"
 translationStatus: complete
 ---
 

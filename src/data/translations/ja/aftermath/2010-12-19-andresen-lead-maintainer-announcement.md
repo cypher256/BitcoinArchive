@@ -58,7 +58,7 @@ translationStatus: complete
 
 この公式告知は、リーダーシップ移行の対外的な流れの締めくくりに当たる。時系列:
 
-- **2010 年 12 月 3 日**: サトシは[マルティ・マルミ宛のメール](/BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/)でギャビンを後継者として推薦し、「ギャビンであるべきだ。彼は信頼でき、責任感があり、プロフェッショナルで…」と書いた。
+- **2010 年 12 月 3 日**: サトシは[マルッティ・マルミ宛のメール](/BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/)でギャビンを後継者として推薦し、「ギャビンであるべきだ。彼は信頼でき、責任感があり、プロフェッショナルで…」と書いた。
 - **2010 年 12 月 12 日**: SVN アクセスの引き継ぎ。サトシの [BitcoinTalk 最後の公開投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/)は「バトンを渡す予定だ」で締めくくられる
 - **2010 年 12 月 15 日**: 最後のソースコミット（v0.3.19）
 - **2010 年 12 月 19 日**: ギャビンの公的承諾（本エントリー）と GitHub リポジトリ作成
@@ -71,7 +71,7 @@ translationStatus: complete
 
 公的記録に残るのは以下の要素：
 
-- サトシによる [2010 年 12 月 3 日のマルティ・マルミ宛のメールでの推薦](/BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/)と、[12 月 12 日の SVN アクセス譲渡](/BitcoinArchive/ja/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/)。
+- サトシによる [2010 年 12 月 3 日のマルッティ・マルミ宛のメールでの推薦](/BitcoinArchive/ja/entries/aftermath/2010-12-03-handover-to-gavin/)と、[12 月 12 日の SVN アクセス譲渡](/BitcoinArchive/ja/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/)。
 - 本エントリーで扱う 12 月 19 日の告知で、アンドレセンが自らをプロジェクトの新たな積極的な管理者と位置づけたこと。
 - 他開発者・ユーザーによる継続的な参加、および反対表明や対抗主張が（本アーカイブの調査範囲では）記録に残っていないこと。
 

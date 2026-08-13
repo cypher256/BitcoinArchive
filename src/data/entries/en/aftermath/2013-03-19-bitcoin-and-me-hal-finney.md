@@ -36,6 +36,7 @@ relatedEntries:
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
   - aftermath/2019-04-01-fran-finney-hal-finney-profile
+  - analysis/2008-08-21-what-they-said-about-satoshi
 ---
 
 ![A faceless humanoid silhouette faces a glowing screen beside a warm, wire-trailing tower computer, next to a transaction-receipt card marking an early block's ten-coin transfer, a small network-node constellation, and a dotted timeline leading toward a safe-deposit icon](/BitcoinArchive/images/analysis/2013-03-19-bitcoin-and-me-hal-finney-hero.png)

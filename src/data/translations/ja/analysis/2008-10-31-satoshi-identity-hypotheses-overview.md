@@ -90,6 +90,7 @@ relatedEntries:
   - aftermath/2013-07-06-isamu-kaneko-biography
   - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
+  - analysis/2008-08-21-what-they-said-about-satoshi
 ---
 
 ![12 人の匿名の人影が候補者の一覧として並び、その上を虫眼鏡が漂うが、どの候補にも定まらない](/BitcoinArchive/images/analysis/satoshi-identity-hypotheses-overview-hero.png)

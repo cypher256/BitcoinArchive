@@ -43,6 +43,7 @@ relatedEntries:
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - analysis/2008-08-20-satoshi-self-statements
+  - analysis/2008-08-21-what-they-said-about-satoshi
   - analysis/2008-08-20-satoshi-activity-timeline
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - analysis/2009-01-09-satoshi-code-analysis

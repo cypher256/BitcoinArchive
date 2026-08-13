@@ -31,6 +31,7 @@ relatedEntries:
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - aftermath/2017-09-04-china-ico-ban
+  - analysis/2008-08-21-what-they-said-about-satoshi
 translationStatus: complete
 ---
 
