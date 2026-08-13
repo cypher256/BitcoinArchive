@@ -213,7 +213,7 @@ The last word in this category belongs to Hal Finney, writing in 2013 [under an 
 
 ## 4. What the institutions said
 
-By the 2010s the question of Satoshi had outgrown the mailing list, and the answers started coming from institutions.
+By the 2010s the question of Satoshi had outgrown the mailing list. Prominent voices weighed in first, then institutions began answering in their own right.
 
 A UCLA finance professor, Bhagwan Chowdhry, formally nominated Satoshi for the Nobel Prize in Economics in 2015, writing that he could "barely think of another innovation in Economic and Finance in the last several decades" whose influence surpassed it. Bill Gates called Bitcoin "a techno tour de force." Even the design's fiercest critics conceded the same clause: Paul Krugman, the Nobel-winning economist who spent years dismissing Bitcoin's economics, allowed that it was "a technically sweet solution to a problem" — the same phrase Oppenheimer used about the bomb.
 
