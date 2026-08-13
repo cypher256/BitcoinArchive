@@ -53,7 +53,7 @@ translationStatus: complete
 >
 > Digital Gold Currency Magazine の Mark Herpel 氏が、私の論文に Bitcoin を含めるよう勧めてくれた。論文の仮題は「デジタル通貨システム：米国における金融危機時の B2B 電子商取引の新たな選択肢」だ。Herpel 氏の提案に基づき、5 種類のシステムについて論じている。
 >
-> よろしく頼む。近いうちにお話しできることを願っている。
+> ありがとう。近いうちにお話しできることを願っている。
 >
 > C.
 >
@@ -84,7 +84,8 @@ translationStatus: complete
 >>
 >> デジタル通貨システムというテーマで論文を書いている。論文であなたのサイトを引用してもよろしいか？
 >>
->> よろしく頼む。
+>> ありがとう。
+>>
 >> Constance
 >> Constance J. Wells, CeM, PMP: PMI certified
 >> Denver, CO   U.S.A.
