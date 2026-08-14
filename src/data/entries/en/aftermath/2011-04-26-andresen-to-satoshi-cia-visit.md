@@ -54,6 +54,6 @@ Andresen committed to transparency about the engagement, saying he would publicl
 
 Satoshi never replied to this message and was never heard from again.
 
-The timing of Satoshi's disappearance following this disclosure has fueled years of speculation. Some believe Satoshi's departure was motivated by concern over government attention to Bitcoin. Others note that Satoshi had already been gradually withdrawing for months and that the April 26 email's tone -- "I've moved on to other things" -- suggests the departure was planned regardless of Andresen's CIA disclosure.
+The timing of Satoshi's disappearance following this disclosure has fueled speculation that concern over government attention to Bitcoin motivated the departure. The documented record favors a different reading: Satoshi had already been withdrawing for months before this exchange, and the April 26 email's own words -- "I've moved on to other things" -- read as a departure already in motion rather than a reaction to Andresen's CIA disclosure.
 
 Andresen followed through on his promise and presented at CIA headquarters on June 14, 2011.
