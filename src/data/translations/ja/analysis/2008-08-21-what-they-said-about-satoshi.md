@@ -54,8 +54,9 @@ secondarySources:
     url: "https://reason.com/2025/01/02/photo-the-disappearing-satoshi-nakamoto-statue/"
   - name: "The Philadelphia Citizen — ベンジャミン・ウォレス『The Mysterious Mr. Nakamoto』抜粋"
     url: "https://thephiladelphiacitizen.org/book-excerpt-the-mysterious-mr-nakamoto/"
-  - name: "Forbes — ビル・ゲイツのビットコイン評"
-    url: "https://www.forbes.com/sites/ktorpey/2018/02/27/bill-gates-i-dont-think-bitcoins-anonymity-is-a-good-thing/"
+  - name: "BitcoinTalk — ゲイツの 2013年 Fox Business 発言を伝える同時代のフォーラム投稿"
+    url: "https://bitcointalk.org/index.php?topic=198578.0"
+    note: "2013年5月8日、ゲイツがウォーレン・バフェット、チャーリー・マンガーとともに Fox Business に出演した 2日後のフォーラム投稿。元の映像は現在視聴できない。"
   - name: "FEE — ポール・クルーグマンの 2015 年ビットコイン発言"
     url: "https://fee.org/articles/paul-krugman-s-hilarious-2015-bitcoin-prediction-and-the-value-of-intellectual-humility/"
   - name: "Cryptopolitan — マイケル・セイラーのサトシ評"
@@ -215,7 +216,7 @@ translationStatus: complete
 
 2010 年代に入ると、サトシへの問いはメーリングリストの外まで広がった。まず著名な個人が評価を口にし、続いて制度そのものが答えを返し始めた。
 
-UCLA の金融学教授バグワン・チョードリーは 2015 年、サトシをノーベル経済学賞に正式推薦し、その理由を「ここ数十年の経済・金融のイノベーションで、これほどの影響を持つものは他にほとんど思いつかない」と書いた。ビル・ゲイツはビットコインを「技術の離れ業（techno tour de force）」と呼んだ。設計への最も激しい批判者でさえ、同じ一句だけは譲っている。ビットコインの経済性を長年退け続けたノーベル賞経済学者ポール・クルーグマンは、これが「ある問題への技術的に甘美な解法」であることは認めた。オッペンハイマーが原爆に使ったのと同じ言い回しである。
+UCLA の金融学教授バグワン・チョードリーは 2015 年、サトシをノーベル経済学賞に正式推薦し、その理由を「ここ数十年の経済・金融のイノベーションで、これほどの影響を持つものは他にほとんど思いつかない」と書いた。ビル・ゲイツはビットコインを「技術的な離れ業（technical tour de force）」と呼んだ。設計への最も激しい批判者でさえ、同じ一句だけは譲っている。ビットコインの経済性を長年退け続けたノーベル賞経済学者ポール・クルーグマンは、これが「ある問題への技術的に甘美な解法」であることは認めた。オッペンハイマーが原爆に使ったのと同じ言い回しである。
 
 制度の証言でもっとも奇妙なのは、何も語らないという証言そのものだった。ジャーナリストたちがサトシ・ナカモト関連記録の情報公開を請求したとき、CIA は「請求された文書の存在を肯定も否定もできない」と回答した。肯定でも否定でも何かが漏れてしまう場合に政府機関が使う定型、グロマー回答である。FBI も 2024 年の請求に同じ形で答えた。一方でオックスフォード英語辞典は 2019 年、「satoshi」を英単語として収録した。1 ビットコインの 1 億分の 1。誰も名指せない人物の名を冠した通貨単位である。
 

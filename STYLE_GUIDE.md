@@ -3125,9 +3125,18 @@ The CSS (defined once in `src/styles/global.css`):
 /* Outer: provides the breakout context */
 .figure-outer { margin-block: 1.5em; }
 
-@media (min-width: 1500px) {              /* = 1.5 × --max-width-read */
-  .figure-outer {
-    margin-inline: calc((100vw - 100%) / -2);
+/* Breakout is gated by `data-breakout`, set by an overflow-only
+   script in BaseLayout.astro — a figure that fits its column keeps
+   its exact in-column layout at every viewport; only one whose
+   content overflows joins the breakout. See the breakout-gating
+   table below for the per-kind threshold and required-width check. */
+@media (min-width: 1200px) {
+  .figure-outer[data-breakout] {
+    margin-inline: calc((100vw - 100%) / -2 + 2rem);
+  }
+  .figure-outer[data-breakout] > .figure-block[data-kind="table"] {
+    width: max-content;
+    margin-inline: auto;
   }
 }
 
@@ -3156,21 +3165,39 @@ The CSS (defined once in `src/styles/global.css`):
 }
 ```
 
-**Threshold (1.5× container)**: at viewport ≥ 1500px (= 1.5 ×
-`--max-width-read`) the outer extends to the viewport edges so wide
-figures can use the full horizontal room. Below 1500px the outer
-sits flush with the container — small breakouts in the 1100-1499px
-range visually mis-align with prose ("微妙にずれてる" gata zone),
-so the threshold is set high enough that any breakout reads as
-intentional.
-
 **Per-kind sizing**:
 
 | `data-kind` | width | Reason |
 |---|---|---|
 | `mermaid` | `max-content` + `max-width: 100%` | Mermaid renders SVG at a fixed natural size (`useMaxWidth: false`); the block sizes to content and never wider than wrapper. Small diagrams stay small (no wasted whitespace). |
-| `table` | same, but breakout is **overflow-only** | A table that fits the prose column keeps its exact in-column layout (left-aligned, natural width) at every viewport. Only a table whose content overflows the column joins the >= 1500px breakout: a small script in `BaseLayout.astro` marks its `.figure-outer` with `data-breakout`, the block then sizes to `max-content` up to the viewport gutter and centers like a mermaid figure. Pure CSS cannot branch on content overflow, hence the one-attribute script; without JS the table scrolls in-column. |
+| `table` | same as mermaid | A table that fits the prose column keeps its exact in-column layout (left-aligned, natural width) at every viewport; only a table whose content overflows joins the breakout (see below), where it then sizes to `max-content` up to the viewport gutter and centers like a mermaid figure. |
 | `chart` (d3) | `width: 100%` | D3 sizes its SVG to the wrapper's `clientWidth`, so the block must be 100% width (not `max-content`) for the chart to use the available room. `position: relative` + `overflow-y: hidden` support the tooltip pattern. |
+
+**Breakout gating — always overflow-only, never unconditional on
+viewport width**: a figure never breaks out just because the
+viewport is wide; only because its content doesn't fit the prose
+column. The gating script (`BaseLayout.astro`) withholds
+`data-breakout` until a block's required width exceeds its column,
+using a per-kind viewport **threshold** and required-width
+**predicate**:
+
+| `data-kind` | threshold | required-width predicate | Reason |
+|---|---|---|---|
+| `table` | 1500px | live `scrollWidth` | Table is natural width and never resizes itself, so `scrollWidth` is stable across the breakout toggle. The higher threshold avoids the "微妙にずれてる" gata zone (1100-1499px) where a small table breakout visually mis-aligns with prose. |
+| `mermaid` | 1200px | live `scrollWidth` | Fixed-size SVG (`useMaxWidth: false`, `width: max-content`) is likewise stable under `scrollWidth`. A diagram isn't expected to sit flush with the prose column the way a table is, so the tighter gata-zone concern doesn't apply. |
+| `chart` (d3) | 1200px | declared CSS `min-width` (e.g. `.ce-chart{min-width:1080px}` in `ChartEmbedRuntime.astro`) | D3 sizes its SVG to the wrapper's `clientWidth` (`width: 100%`), so `scrollWidth` read *after* breakout is applied always reads "fits" — comparing it against the column would flip `data-breakout` on, then off, then on again. Each chart's own static declared `min-width` is a stable "does this actually need more room" signal that doesn't change with the figure-block's current width. |
+
+Pure CSS cannot branch on "content overflows" (grid `safe center`
+clamps in the wrong direction), hence the one-attribute script;
+without JS every figure scrolls in its column (status quo).
+
+**Scroll centering**: once a figure needs horizontal scroll at all —
+with or without breakout — its initial scroll position is centered
+(`scrollLeft` set to the midpoint) instead of left-flush, for mermaid
+and chart (never table, which has never auto-centered). Centering is
+skipped permanently for a given block after the visitor's first
+manual scroll (`wheel`/`touchstart`), so it never fights a deliberate
+scroll on a later resize or DOM mutation.
 
 **History — past patches and the present design**: this section once
 specified per-wrapper classes (`.mermaid-scroll`, `.table-scroll`,
@@ -3181,9 +3208,21 @@ introduced in commit `9f93e628` (2026-05-04), then removed in
 left/right edges". The actual visual problem — figures sticking out
 slightly past prose without a clear "this is a separate block"
 indicator — is solved by the visual boundary (border + background)
-on `.figure-block`, not by the absence of breakout. The 1.5×
-threshold further prevents the gata zone the original implementation
-exposed.
+on `.figure-block`, not by the absence of breakout.
+
+The `.figure-outer` + `.figure-block` wrapper unified in commit
+`68264517a` (2026-05-31) at a single 1500px threshold, but applied
+breakout **unconditionally** to every kind except table (`:has(table)`
+was excluded). Because `data-kind="chart"` self-resizes to fill
+whatever width it's given, that unconditional rule stretched charts
+that already fit their column — `identity-suspect-map` measured at
+1866px wide against a 952px column. Commits `ea92f6747` and
+`4f8633ab8` (2026-08-14) replaced the unconditional rule with the
+overflow-gated `data-breakout` mechanism tables already used,
+generalized it to cover mermaid and chart (restoring mermaid's
+original pre-`64658b7c` 1200px threshold for the diagram/chart kinds
+specifically, while table kept 1500px), and added the scroll-centering
+behavior described above.
 
 ### Tables: the lowest-cost visual structure
 

@@ -54,8 +54,9 @@ secondarySources:
     url: "https://reason.com/2025/01/02/photo-the-disappearing-satoshi-nakamoto-statue/"
   - name: "The Philadelphia Citizen — excerpt from Benjamin Wallace, The Mysterious Mr. Nakamoto"
     url: "https://thephiladelphiacitizen.org/book-excerpt-the-mysterious-mr-nakamoto/"
-  - name: "Forbes — Bill Gates on Bitcoin"
-    url: "https://www.forbes.com/sites/ktorpey/2018/02/27/bill-gates-i-dont-think-bitcoins-anonymity-is-a-good-thing/"
+  - name: "BitcoinTalk — contemporaneous forum report of Gates's 2013 Fox Business remarks"
+    url: "https://bitcointalk.org/index.php?topic=198578.0"
+    note: "Forum post from May 8, 2013, two days after Gates appeared alongside Warren Buffett and Charlie Munger on Fox Business; the original video is no longer available."
   - name: "FEE — Paul Krugman's 2015 Bitcoin remarks"
     url: "https://fee.org/articles/paul-krugman-s-hilarious-2015-bitcoin-prediction-and-the-value-of-intellectual-humility/"
   - name: "Cryptopolitan — Michael Saylor on Satoshi"
@@ -215,7 +216,7 @@ The last word in this category belongs to Hal Finney, writing in 2013 [under an 
 
 By the 2010s the question of Satoshi had outgrown the mailing list. Prominent voices weighed in first, then institutions began answering in their own right.
 
-A UCLA finance professor, Bhagwan Chowdhry, formally nominated Satoshi for the Nobel Prize in Economics in 2015, writing that he could "barely think of another innovation in Economic and Finance in the last several decades" whose influence surpassed it. Bill Gates called Bitcoin "a techno tour de force." Even the design's fiercest critics conceded the same clause: Paul Krugman, the Nobel-winning economist who spent years dismissing Bitcoin's economics, allowed that it was "a technically sweet solution to a problem" — the same phrase Oppenheimer used about the bomb.
+A UCLA finance professor, Bhagwan Chowdhry, formally nominated Satoshi for the Nobel Prize in Economics in 2015, writing that he could "barely think of another innovation in Economic and Finance in the last several decades" whose influence surpassed it. Bill Gates called Bitcoin "a technical tour de force." Even the design's fiercest critics conceded the same clause: Paul Krugman, the Nobel-winning economist who spent years dismissing Bitcoin's economics, allowed that it was "a technically sweet solution to a problem" — the same phrase Oppenheimer used about the bomb.
 
 The strangest institutional testimony is negative space. When journalists filed Freedom of Information Act requests for records about Satoshi Nakamoto, the CIA responded that it could "neither confirm nor deny the existence of the requested documents" — the Glomar response, the formula an agency uses when even confirming or denying would reveal something — and the FBI answered a 2024 request the same way. The Oxford English Dictionary, meanwhile, admitted "satoshi" as an English word in 2019: one hundred millionth of a bitcoin, a currency unit named for a person nobody can name.
 
