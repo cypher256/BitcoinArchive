@@ -1248,29 +1248,22 @@ th {
 .entry-content .figure-outer:has(+ h2) {
   margin-bottom: 2.5em;
 }
-@media (min-width: 1500px) {
-  .figure-outer {
-    /* Breakout to viewport edges minus a small horizontal gutter
-       so 4-column-or-more tables / mermaid / chart figures don't
-       sit flush against the viewport edge (hard to read). */
-    margin-inline: calc((100vw - 100%) / -2 + 2rem);
-  }
-  /* Tables stay in the container BY DEFAULT so fitting tables keep
-     their exact in-column layout (left-aligned, natural width). Only
-     a table whose content overflows the prose column is promoted to
-     the breakout: a small script in BaseLayout.astro marks its outer
-     with `data-breakout` (pure CSS cannot branch on content overflow —
-     grid `safe center` clamps in the wrong direction). Promoted
-     tables expand up to the viewport gutter and center like mermaid
-     figures. No-JS fallback: in-column horizontal scroll (status quo).
-     History: 0531 redesign gave all figures the breakout; dcaffcc8b
-     excluded 3-col-or-fewer tables; dfa55ce7b excluded all tables for
-     prose alignment; 2026-07-11 (user decision) tables rejoin the
-     breakout overflow-only, keeping the alignment win for fitting
-     tables. `:has` requires Chrome 105+ / Safari 15.4+ / Firefox 121+. */
-  .figure-outer:has(table) {
-    margin-inline: 0;
-  }
+/* Figure breakout, gated by `data-breakout` (set by the overflow-only
+   script in BaseLayout.astro — see that script's comment for the full
+   history and per-kind required-width predicate). The CSS here only
+   needs the lowest applicable threshold (1200px, mermaid/chart); the
+   script itself withholds `data-breakout` from table blocks until
+   1500px, so table's higher threshold is enforced there, not here.
+   ⛔ 2026-08-14: this used to be an UNCONDITIONAL `.figure-outer` rule
+   (all figure-outers except `:has(table)`) at 1500px only. Because
+   data-kind="chart" is `width: 100%` (self-resizes to fill whatever
+   width it's given), that unconditional rule stretched charts that
+   already fit their column — identity-suspect-map measured at 1866px
+   wide vs. its 952px column. Replaced with the overflow-gated
+   `data-breakout` mechanism tables already used, generalized to cover
+   mermaid and chart too. `:has` requires Chrome 105+ / Safari 15.4+ /
+   Firefox 121+. */
+@media (min-width: 1200px) {
   .figure-outer[data-breakout] {
     margin-inline: calc((100vw - 100%) / -2 + 2rem);
   }

@@ -299,29 +299,61 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
       })();
     </script>
     {/*
-      Overflow-only table breakout (pairs with global.css
+      Overflow-only figure breakout (pairs with global.css
       `.figure-outer[data-breakout]`, see the figure-block section there).
-      A table that fits the prose column keeps its exact in-column layout;
-      only a table whose natural width exceeds the column is promoted:
-      its .figure-outer gets `data-breakout`, which re-enables the >=1500px
-      viewport breakout and centers the block like mermaid figures.
-      Pure CSS cannot branch on "content overflows" (grid `safe center`
-      clamps in the wrong direction), hence this one-attribute script.
-      The predicate compares the block's scrollWidth against the prose
-      column's content width, which is stable in both states, so the
-      attribute never flip-flops on toggle. No-JS fallback: attribute
-      absent, table scrolls in-column (status quo).
+      A figure that fits the prose column keeps its exact in-column layout;
+      only a figure whose required width exceeds the column is promoted:
+      its .figure-outer gets `data-breakout`, which enables the viewport
+      breakout and centers the block. Pure CSS cannot branch on "content
+      overflows" (grid `safe center` clamps in the wrong direction), hence
+      this one-attribute script. No-JS fallback: attribute absent, figure
+      scrolls in-column (status quo).
+
+      Per-kind threshold: table keeps 1500px (chosen 0531 to avoid the
+      1100-1499px zone where a small table breakout reads as misaligned
+      with prose). Mermaid/chart use 1200px (mermaid's original pre-0531
+      threshold, restored 2026-08-14) — a diagram/chart isn't expected to
+      sit flush with the prose column the way a table is, so the same
+      alignment concern doesn't apply. The CSS media query itself only
+      needs the lowest threshold (1200px); this script is what withholds
+      `data-breakout` from table blocks until 1500px.
+
+      Required-width predicate, per kind:
+      - table / mermaid: `scrollWidth` is stable across the breakout
+        toggle (neither resizes itself — table is natural width, mermaid
+        is `width: max-content`), so comparing it against the column
+        directly never flip-flops.
+      - chart (d3): the SVG resizes itself to fill whatever width its
+        figure-block is given (`width: 100%`), so scrollWidth AFTER a
+        breakout is already applied always reads "fits" — checking it
+        would flip data-breakout on, then off, then on again. Read each
+        chart's own declared CSS `min-width` instead (e.g. `.ce-chart
+        {min-width:1080px}`, `.srm-svg{min-width:760px}` in
+        ChartEmbedRuntime.astro) — a static per-chart-type declaration
+        that doesn't change with the figure-block's current width.
+
+      2026-08-14 history: the previous version of this script covered
+      table only; mermaid/chart instead got breakout from an
+      *unconditional* `.figure-outer` CSS rule (no overflow check at
+      all). That unconditional rule stretched chart figures that already
+      fit their column (identity-suspect-map measured at 1866px wide vs
+      its 952px column) because chart's `width: 100%` fills whatever
+      breakout width CSS hands it. Removed the unconditional rule;
+      generalized this script to cover all three kinds via the same
+      overflow-gated `data-breakout` mechanism tables already used.
     */}
     <script>
       (() => {
-        const blocks = Array.from(
-          document.querySelectorAll('.figure-outer > .figure-block[data-kind="table"]'),
-        );
-        if (!blocks.length) return;
+        const sel =
+          '.figure-outer > .figure-block[data-kind="table"], ' +
+          '.figure-outer > .figure-block[data-kind="mermaid"], ' +
+          '.figure-outer > .figure-block[data-kind="chart"]';
+        const threshold = { table: 1500, mermaid: 1200, chart: 1200 };
+        const blocks = [];
         // Measure the prose column each block actually lives in. The
         // first `.container-wide` in the document is the site header,
         // which is wider than the reading column — querying globally
-        // would misclassify tables narrower than the header band.
+        // would misclassify figures narrower than the header band.
         const columnWidth = (block) => {
           const c = block.closest('.container, .container-wide');
           if (!c) return 0;
@@ -332,17 +364,51 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
             parseFloat(cs.paddingRight)
           );
         };
+        const chartRequiredWidth = (block) => {
+          let max = 0;
+          for (const el of block.querySelectorAll('*')) {
+            const mw = parseFloat(getComputedStyle(el).minWidth);
+            if (mw > max) max = mw;
+          }
+          return max || block.scrollWidth;
+        };
+        const requiredWidth = (block) =>
+          block.dataset.kind === 'chart'
+            ? chartRequiredWidth(block)
+            : block.scrollWidth;
+        // If a figure still doesn't fit even after the breakout above
+        // (mermaid/chart only -- tables have never auto-centered their
+        // scroll position, and the user's own ask here was specifically
+        // about diagrams/charts), center its initial scroll position
+        // instead of leaving it flush against the left edge. Skipped
+        // once the visitor scrolls the block themselves, so this never
+        // fights a manual scroll on resize/mutation-triggered re-runs.
+        const userScrolled = new WeakSet();
+        const centerScroll = (block, outer) => {
+          if (
+            !outer.hasAttribute('data-breakout') ||
+            block.dataset.kind === 'table' ||
+            userScrolled.has(block)
+          ) {
+            return;
+          }
+          const max = block.scrollWidth - block.clientWidth;
+          if (max > 2) block.scrollLeft = max / 2;
+        };
         const apply = () => {
-          const wide = window.innerWidth >= 1500;
           for (const block of blocks) {
             const outer = block.parentElement;
             if (!outer) continue;
+            const wide = window.innerWidth >= (threshold[block.dataset.kind] ?? 1500);
             const col = columnWidth(block);
-            if (wide && col > 0 && block.scrollWidth > col + 1) {
+            if (wide && col > 0 && requiredWidth(block) > col + 1) {
               outer.setAttribute('data-breakout', '');
             } else {
               outer.removeAttribute('data-breakout');
             }
+            // Reading scrollWidth/clientWidth here forces the layout to
+            // reflect the attribute change just made above.
+            centerScroll(block, outer);
           }
         };
         let ticking = false;
@@ -354,19 +420,49 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
             apply();
           });
         };
+        const bound = new Set();
+        const ro = 'ResizeObserver' in window ? new ResizeObserver(schedule) : null;
+        const bind = (block) => {
+          if (bound.has(block)) return;
+          bound.add(block);
+          blocks.push(block);
+          const inner =
+            block.querySelector('table, svg, .ce-chart, .ce-map, .srm-wrap') || block;
+          ro && ro.observe(inner);
+          // First user-initiated scroll cancels auto-centering for this
+          // block from then on -- 'wheel'/'touchstart' (not 'scroll',
+          // which also fires for the programmatic centering itself).
+          const markUser = () => userScrolled.add(block);
+          block.addEventListener('wheel', markUser, { passive: true, once: true });
+          block.addEventListener('touchstart', markUser, { passive: true, once: true });
+        };
+        // Table/mermaid figures exist in the initial SSR HTML; chart
+        // figures are mounted client-side by ChartEmbedRuntime.astro
+        // well after this script's first pass, so a MutationObserver
+        // re-scans for newly inserted matches instead of a one-time
+        // querySelectorAll (mirrors the scroll-affordance script above).
+        const scan = () => document.querySelectorAll(sel).forEach(bind);
+        scan();
         apply();
         addEventListener('resize', schedule, { passive: true });
-        // Tables reflow after web fonts load and when late layout
+        // Figures reflow after web fonts load and when late layout
         // (vertical headers, sibling figures) settles — re-measure on
-        // both, mirroring the scroll-affordance script above.
+        // both.
         if (document.fonts) document.fonts.ready.then(schedule);
-        if ('ResizeObserver' in window) {
-          const ro = new ResizeObserver(schedule);
-          for (const block of blocks) {
-            const table = block.querySelector('table');
-            table && ro.observe(table);
-          }
-        }
+        let scanScheduled = false;
+        const scheduleScan = () => {
+          if (scanScheduled) return;
+          scanScheduled = true;
+          requestAnimationFrame(() => {
+            scanScheduled = false;
+            scan();
+            apply();
+          });
+        };
+        new MutationObserver(scheduleScan).observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
       })();
     </script>
   </body>
