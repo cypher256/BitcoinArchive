@@ -376,22 +376,18 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
           block.dataset.kind === 'chart'
             ? chartRequiredWidth(block)
             : block.scrollWidth;
-        // If a figure still doesn't fit even after the breakout above
-        // (mermaid/chart only -- tables have never auto-centered their
-        // scroll position, and the user's own ask here was specifically
-        // about diagrams/charts), center its initial scroll position
-        // instead of leaving it flush against the left edge. Skipped
-        // once the visitor scrolls the block themselves, so this never
+        // Whenever a figure needs horizontal scroll at all -- with or
+        // without the breakout above (mermaid/chart only; tables have
+        // never auto-centered their scroll position) -- center its
+        // initial scroll position instead of leaving it flush against
+        // the left edge. Not gated on `data-breakout`: a figure below
+        // the breakout viewport threshold (e.g. a mobile-width column)
+        // that still overflows should start centered too. Skipped once
+        // the visitor scrolls the block themselves, so this never
         // fights a manual scroll on resize/mutation-triggered re-runs.
         const userScrolled = new WeakSet();
-        const centerScroll = (block, outer) => {
-          if (
-            !outer.hasAttribute('data-breakout') ||
-            block.dataset.kind === 'table' ||
-            userScrolled.has(block)
-          ) {
-            return;
-          }
+        const centerScroll = (block) => {
+          if (block.dataset.kind === 'table' || userScrolled.has(block)) return;
           const max = block.scrollWidth - block.clientWidth;
           if (max > 2) block.scrollLeft = max / 2;
         };
@@ -408,7 +404,7 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
             }
             // Reading scrollWidth/clientWidth here forces the layout to
             // reflect the attribute change just made above.
-            centerScroll(block, outer);
+            centerScroll(block);
           }
         };
         let ticking = false;
