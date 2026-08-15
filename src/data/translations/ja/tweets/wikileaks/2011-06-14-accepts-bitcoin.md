@@ -9,7 +9,7 @@ author: "WikiLeaks"
 participants:
   - name: "WikiLeaks"
     slug: "wikileaks"
-description: "5 大決済企業の金融封鎖から半年後、 WikiLeaks が匿名ビットコイン寄付受付を発表した X 投稿。"
+description: "Bank of America、Visa、MasterCard、PayPal、Western Union による金融封鎖から半年後、WikiLeaks が匿名ビットコイン寄付受付を発表した X 投稿。"
 isSatoshi: false
 tags:
   - "wikileaks"

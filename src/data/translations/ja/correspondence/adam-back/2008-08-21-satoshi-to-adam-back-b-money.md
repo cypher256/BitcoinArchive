@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Adam Back"
     slug: "adam-back"
-description: "サトシが b-money の紹介に謝意を表し、ウェイ・ダイの提案を未知であったと認め、自身の新規貢献 (分散タイムスタンプサーバーを支えるプルーフ・オブ・ワーク) を説明する。"
+description: "サトシが b-money の紹介に謝意を表し、ウェイ・ダイの提案を知らなかったと認め、自身の新規貢献 (分散タイムスタンプサーバーを支えるプルーフ・オブ・ワーク) を説明する。"
 isSatoshi: true
 tags:
   - "hashcash"

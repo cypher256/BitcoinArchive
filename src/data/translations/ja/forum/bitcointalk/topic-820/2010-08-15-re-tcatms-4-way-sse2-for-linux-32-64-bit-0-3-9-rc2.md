@@ -1,5 +1,5 @@
 ---
-title: "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版が 0.3.10 に搭載"
+title: "Re: tcatm の 4-way SSE2 Linux 32/64 ビット版 0.3.9 rc2"
 date: 2010-08-15T18:23:26.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -1,5 +1,5 @@
 ---
-title: "0.3.1 リリース候補、テストしてください"
+title: "Bitcoin 0.3.1 リリース"
 date: 2010-07-15T08:05:54.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがスレッドを開始: 0.3.1 リリース候補、テストしてください"
+description: "サトシ・ナカモトがスレッドを開始: Bitcoin 0.3.1 リリース"
 isSatoshi: true
 tags: []
 translationStatus: complete

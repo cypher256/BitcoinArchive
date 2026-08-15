@@ -27,7 +27,7 @@ print "available balance: " + getbalance(username, 6)
 ```
 // 販売したら、そのアカウントからお金を移動する
 move(username, "", amount, 6)
-```
 
 // 出金
 sendfrom(username, bitcoinaddress, amount, 6)
+```

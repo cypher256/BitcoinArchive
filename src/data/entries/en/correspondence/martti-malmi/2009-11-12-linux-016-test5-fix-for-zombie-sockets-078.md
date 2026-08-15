@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "I added MSG_DONTWAIT to the send and recv calls in case they forgot the"
+description: "I added MSG_DONTWAIT to the send and recv calls in case they forgot the socket is non-blocking."
 isSatoshi: true
 tags:
   - "correspondence"

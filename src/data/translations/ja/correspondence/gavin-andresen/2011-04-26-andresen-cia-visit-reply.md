@@ -12,7 +12,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "アンドレセンがサトシの「アラートキー」メールに返信し、キーを受け入れるとともに、In-Q-Tel から米国情報機関向けプレゼンに招待された件を明かす。"
+description: "アンドレセンがサトシの「アラートキー」メールに返信し、キーを受け入れるとともに、In-Q-Tel から米国情報機関向けプレゼンに招待された件を明かすが、サトシからの返信はなかった。"
 tags:
   - "correspondence"
   - "alert-key"

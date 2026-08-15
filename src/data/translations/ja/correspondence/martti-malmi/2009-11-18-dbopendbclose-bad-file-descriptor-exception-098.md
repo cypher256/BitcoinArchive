@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがテストバージョン 5 だったと思われると報告し、ノートパソコンでハイバネート機能を使いながら異なる場所で使用している状況を説明。"
+description: "マルミがテストバージョン 5 だったと思われると報告し、ノートパソコンでハイバネート機能を使いながら異なる場所で使用している状況が、ソケット問題の一因かもしれないと説明。"
 isSatoshi: false
 tags:
   - "correspondence"

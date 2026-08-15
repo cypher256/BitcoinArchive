@@ -25,6 +25,15 @@ quotes:
 <!-- quote: q1 -->
 <!-- tone-skip -->
 > headers.h に以下のコードがある：
+>
+> ```
+> #ifdef __WXMAC_OSX__
+> #define __WXMAC__ 1
+> #define __WXOSX__ 1
+> #define __BSD__ 1
+> #endif
+> #endif
+> ```
 <!-- /tone-skip -->
 
 そのコードはそもそもよくないアイデアだったので、削除する。Mac 用のコードは__WXMAC_OSX__のみを使用すべきで、__WXMAC__や__WXOSX__は使わず、__BSD__の使用もやめるべきだ。

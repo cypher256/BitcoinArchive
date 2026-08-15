@@ -27,6 +27,11 @@ quotes:
 > 誰かここについて教えてくれないか？
 <!-- /tone-skip -->
 
+g++ -c -O0 -Wno-invalid-offsetof -Wformat -g -D__WXMAC__ -DNOPCH -DBUILD_MACOSX -I"/usr/include" -I"/usr/local/include/wx-2.8" -I"/usr/local/include" -I"/usr/local/boost_1_41_0" -I"/sw/include/db4" -I"/usr/local/ssl/include" -I"/usr/local/lib/wx/include/mac-ansi-release-2.8" -o headers.h.gch headers.h
+...
+ui.h:430: error: no matching function for call to 'wxTextCtrl::SetValue(const std::basic_string<char, std::char_traits<char>, std::allocator<char> >&)'
+/usr/local/include/wx-2.8/wx/textctrl.h:303: note: candidates are: virtual void wxTextCtrlBase::SetValue(const wxString&)
+
 std::string から wxString への暗黙の変換が機能していないようだ。これはあらゆるところで使用されており、変換が動作する必要がある。
 
 wxString は win32 の 16 ビット wchar と 8 ビット ansi のデュアルコンパイルをサポートするため複雑だ。Windows では「unicode」（つまり wchar）ビルドを使用した場合にこの問題が発生する可能性があり、その場合 wxString は wchar で std::string は char になる。

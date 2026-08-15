@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシが PoW トークンを使ったスパム対策の構想を語り、メール送信前の作業証明という発想を示す。"
+description: "サトシが、偽メールボックスで POW トークンを刈り取りスパマーを「逆スパミング」する構想と、e-gold の「ダスティング」問題を語る。"
 isSatoshi: true
 tags:
   - "correspondence"

@@ -11,7 +11,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "トランメルがアドレス帳と送金 UI の改善提案を行い、初心者の使いやすさへの懸念を示す。"
+description: "トランメルが誤ラベルは自分の操作ミスだったと認め、取引詳細の文言変更を提案し、PayPal の複数受信アドレスを最も近い実例として挙げる。"
 isSatoshi: false
 tags:
   - "correspondence"

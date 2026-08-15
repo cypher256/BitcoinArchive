@@ -1,5 +1,5 @@
 ---
-title: "Re: 0.3 ほぼ完成 — Mac バージョンをテストしてください！"
+title: "Re: 1.3 ほぼ完成"
 date: 2010-06-26T19:21:05.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -14,7 +14,6 @@ tags:
   - "whitepaper"
   - "draft"
   - "pre-announcement"
-  - "earliest-known"
 pdfMetadata:
   id: "BBD1C86BA0031ECDEFBD1FEDE45329B2"
   language: "en-GB"
@@ -36,6 +35,8 @@ translationStatus: complete
 **関連:** [最終版（2008年10月31日）](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)
 
 この初期草稿は、最終公開版より約 1ヶ月前のものである。2008年10月31日の暗号学メーリングリストでの公開発表に先立ち、サトシ・ナカモトが選ばれた個人に対して個人的に共有した。
+
+*[補足：これは知られている最古の草稿ではない。サトシは 2008年8月、"Electronic Cash Without a Trusted Third Party"（ecash.pdf）と題したさらに早い版を、[アダム・バック](/BitcoinArchive/ja/entries/aftermath/2008-08-20-satoshi-to-adam-back/)（8月20日）と[ウェイ・ダイ](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)（8月22日）に共有していた。この論文は、10月3日付の本草稿の時点で "Bitcoin: A Peer-to-Peer Electronic Cash System" に改題されている。]*
 
 **最終版との主な相違点：**
 - 連絡先メールアドレス：satoshi@vistomail.com（最終版では satoshin@gmx.com）

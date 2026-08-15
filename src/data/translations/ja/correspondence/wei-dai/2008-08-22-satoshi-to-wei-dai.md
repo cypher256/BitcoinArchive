@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Wei Dai"
     slug: "wei-dai"
-description: "サトシの最も初期に知られるメール。ウェイ・ダイに b-money の正しい引用について尋ねるメールを送り、アダム・バックの紹介で b-money を知ったことを明かしている。"
+description: "サトシがウェイ・ダイに b-money の正しい引用を尋ね、アダム・バックの紹介で知ったことを明かす。プレリリース原稿へのリンクを含む。"
 isSatoshi: true
 tags:
   - "b-money"

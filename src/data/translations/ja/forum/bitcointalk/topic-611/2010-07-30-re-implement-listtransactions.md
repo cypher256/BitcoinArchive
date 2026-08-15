@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトが listtransactions の実装を見送った理由を説明し、Web 開発者が getreceivedbyaddress を使うべきと主張。"
+description: "スレッド「[PATCH] 'xlisttransactions'の実装」におけるサトシ・ナカモトの返信。"
 isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

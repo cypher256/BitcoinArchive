@@ -31,7 +31,7 @@ relatedEntries:
 <!-- speaker: Mike Hearn -->
 サトシさん、こんにちは。
 
-お元気でいることを願っている。ようやく Google の弁護士全員を説得した。Apache 2 ライセンスで BitCoinJ を公開する：
+お元気でいることを願っている。ようやく Google の弁護士全員を説得した。Google の名前で、Apache 2 ライセンスで BitCoinJ を公開する：
 
 http://www.bitcoin.org/smf/index.php?topic=4236.0
 

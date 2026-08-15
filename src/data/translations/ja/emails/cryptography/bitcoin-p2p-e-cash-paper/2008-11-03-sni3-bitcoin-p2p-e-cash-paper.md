@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "James A. Donald"
     slug: "james-donald"
-description: "「善良な者たちの集合体」が単一の攻撃者より多くの CPU パワーを持つことが要件であることをサトシが明確にし、小規模な事業者でも利益的にビットコインを生成できることを説明した。"
+description: "「善良な者たちの集合体」が単一の攻撃者より多くの CPU パワーを持つことが要件であることをサトシが明確にし、小規模な事業者でも利益を得ながらビットコインを生成できることを説明した。"
 isSatoshi: true
 tags:
   - "cpu-power"

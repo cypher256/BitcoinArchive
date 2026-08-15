@@ -10,7 +10,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "ギャビン・アンドレセンがサトシの了承の下、ビットコインの能動的なプロジェクト管理を引き受けることを公に発表。bitcoin/bitcoin の GitHub ツリーを作成。"
+description: "ギャビン・アンドレセンがサトシの了承の下、ビットコインの能動的なプロジェクト管理を引き受けることを公に発表。bitcoin/bitcoin の GitHub ツリーを作成し、開発プロセスを提案。"
 isSatoshi: false
 tags:
   - "gavin-andresen"

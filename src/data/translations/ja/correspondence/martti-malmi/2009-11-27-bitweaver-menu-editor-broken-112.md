@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルミがデータベースを直接編集して Bitweaver メニューエディターの問題を修正したことを確認。"
+description: "マルミがフォーラムのリンクをデータベースで直接編集し、Bitweaver メニューエディターの問題を修正したことを確認。"
 isSatoshi: false
 tags:
   - "correspondence"

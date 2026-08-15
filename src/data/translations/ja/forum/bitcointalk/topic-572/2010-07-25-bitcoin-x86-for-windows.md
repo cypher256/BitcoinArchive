@@ -10,7 +10,7 @@ participants:
     slug: "olipro"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Olipro がスレッドを開始: Bitcoin x86 for Windows"
+description: "Olipro がスレッドを開始: Windows 用 Bitcoin x86"
 isSatoshi: false
 tags: []
 translationStatus: complete

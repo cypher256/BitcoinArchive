@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalk トピック 1327 における mizerydeaia の文脈投稿。msg15147 の前。"
+description: "BitcoinTalk トピック 1327 における mizerydearia の文脈投稿。msg15147 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete

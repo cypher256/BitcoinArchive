@@ -24,7 +24,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> Linux には「典型的な」設定ファイルというものはないと思う！
+> 自分の Debian システムの/etc にある 20個の.conf ファイルを手短に調べてみたところ：
 <!-- /tone-skip -->
 
  1 ファイルが"key value"を使用

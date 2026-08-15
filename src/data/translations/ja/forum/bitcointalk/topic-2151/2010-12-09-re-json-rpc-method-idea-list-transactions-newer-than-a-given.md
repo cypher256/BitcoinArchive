@@ -50,6 +50,8 @@ OP の listtransactions <account> [count=10] [txid]の例は、プログラマ�
 > <!-- tone-skip -->
 > > 3) トランザクションが異なる txid の二重支払いに置き換えられることがある。両方の支出をカウントしてしまう。
 > <!-- /tone-skip -->
+>
+> listtransactions は、listreceivedbyaddress を通じて既に脆弱な範囲を超えて、この問題に何も加えない。
 <!-- /tone-skip -->
 
 両方の支払いが同じアドレス宛てだとする。getreceivedbyaddress は常にどの時点でも一方か他方の支払いだけをカウントし、両方をカウントすることは決してない。

@@ -8,7 +8,7 @@ author: "Suggester"
 participants:
   - name: "Suggester"
     slug: "suggester"
-description: "BitcoinTalk トピック 43 における Suggester の文脈投稿。after msg510, サトシを引用."
+description: "BitcoinTalk トピック 43 における Suggester の文脈投稿。msg510 の後、サトシを引用。"
 isSatoshi: false
 tags: []
 quotes:

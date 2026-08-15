@@ -1,5 +1,5 @@
 ---
-title: "*** 警告 *** バージョン 0.3.6"
+title: "*** 警告 *** 0.3.6 にアップグレードしてください"
 date: "2010-07-29T19:13:06.000Z"
 type: "forum-post"
 source: "bitcointalk"
@@ -8,7 +8,7 @@ author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシ・ナカモトがスレッドを開始: *** 警告 *** バージョン 0.3.6"
+description: "サトシ・ナカモトがスレッドを開始: *** 警告 *** 0.3.6 にアップグレードしてください"
 isSatoshi: true
 tags: []
 translationStatus: complete

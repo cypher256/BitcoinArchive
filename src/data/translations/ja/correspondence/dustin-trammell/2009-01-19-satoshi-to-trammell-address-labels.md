@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがアドレスラベル機能の仕様を説明し、複数アドレス管理 UI の改善計画を共有する。"
+description: "サトシが初期アドレスのラベルは「Your Address」だと説明し、誤ラベルは UI の分かりにくさによる操作ミスだと述べ、支払い元ごとの受取アドレスという発想には現実世界に類例がないと認める。"
 isSatoshi: true
 tags:
   - "correspondence"

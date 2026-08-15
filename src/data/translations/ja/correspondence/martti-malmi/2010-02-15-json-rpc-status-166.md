@@ -64,5 +64,7 @@ quotes:
 <!-- speaker: Martti Malmi -->
 python-json-rpc（http://json-rpc.org/wiki/python-json-rpc）を SVN からダウンロードして、Python インタプリタで直接テストしました。こんな感じですよ：
 
-pythons = ServiceProxy("http://localhost:8332")
+```python
+s = ServiceProxy("http://localhost:8332")
 s.getblockcount()
+```

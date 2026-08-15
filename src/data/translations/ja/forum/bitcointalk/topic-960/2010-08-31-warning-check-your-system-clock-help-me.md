@@ -1,5 +1,5 @@
 ---
-title: "警告：システムを確認してください（助けてください）"
+title: "警告：システムの時計を確認してください（助けてください）"
 date: 2010-08-31T03:55:44.000Z
 type: "forum-post"
 source: "bitcointalk"

@@ -27,4 +27,4 @@ nelisky、あなたと同じアイデアを投稿し始めていた。
 ファイルをコピーする最もシンプルでポータブルな方法は何だろうか？Boost に何かあるか？
 
 名前は何がよいだろうか？例えば：
-backupwallet <destination>
+backupwallet \<destination\>

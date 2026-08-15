@@ -15,4 +15,4 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/437/"
 ---
 
-rpc backupwallet <destination> is in SVN rev 147.
+rpc backupwallet \<destination\> is in SVN rev 147.

@@ -8,10 +8,14 @@ author: "Ground Loop"
 participants:
   - name: "Ground Loop"
     slug: "ground-loop"
-description: "BitcoinTalk トピック 296 における Ground Loop の文脈投稿。msg3495 の前。"
+description: "BitcoinTalk トピック 326 における Ground Loop の文脈投稿。msg3157 の前。"
 isSatoshi: false
 tags: []
 translationStatus: complete
 ---
 
-そうだな、bitcoind を動かすためにこんなに苦労すべきではないだろうな。Fedora のバイナリを作ることを約束する人は、32 ビットと 64 ビットの両方を考慮してくれ。
+私も同じだ：
+`GLIBCXX_3.4.11' not found
+Debian で。
+
+libg++ が bitcoind のビルドに使われたものほど新しくなく、より新しいものは stable では入手できない。

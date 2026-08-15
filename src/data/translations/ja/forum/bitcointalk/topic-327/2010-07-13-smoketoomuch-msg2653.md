@@ -22,7 +22,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> フォーラムを読み、いくつかのトピックを見た…
+> Windows 7 Home 64
 <!-- /tone-skip -->
 
 Windows には renice に相当するものはないと思う。

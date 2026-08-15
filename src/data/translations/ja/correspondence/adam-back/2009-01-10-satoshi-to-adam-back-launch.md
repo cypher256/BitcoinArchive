@@ -4,7 +4,7 @@ date: 2009-01-10T18:46:45Z
 type: "correspondence"
 source: "bitcoin-magazine"
 sourceUrl: "https://bitcoinmagazine.com/technical/bitcoin-adam-backs-complete-emails-satoshi-nakamoto"
-sourceNote: "Bitcoin Magazine が Adam Back の COPA 対 Wright 証拠 (2024 年 2 月) として公開したメール画像の書き起こし。送信元アドレスが 2008 年 8 月の chain で使われていた satoshi@anonymousspeech.com から satoshi@vistomail.com に変わっている。"
+sourceNote: "Bitcoin Magazine が Adam Back の COPA 対 Wright 証拠 (2024 年 2 月) として公開したメール画像の書き起こし。送信元アドレスが 2008 年 8 月のメールチェーンで使われていた satoshi@anonymousspeech.com から satoshi@vistomail.com に変わっている。"
 author: "Satoshi Nakamoto"
 participants:
   - name: "Satoshi Nakamoto"

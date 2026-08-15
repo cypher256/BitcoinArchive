@@ -8,7 +8,7 @@ author: "The Madhatter"
 participants:
   - name: "The Madhatter"
     slug: "the-madhatter"
-description: "BitcoinTalk トピック 22 における The Madhatter の文脈投稿。after msg113, サトシを引用."
+description: "BitcoinTalk トピック 22 における The Madhatter の文脈投稿。msg113 の後、サトシを引用。"
 isSatoshi: false
 tags: []
 quotes:

@@ -8,7 +8,7 @@ author: "throughput"
 participants:
   - name: "throughput"
     slug: "throughput"
-description: "BitcoinTalk トピック 241 における throughput の文脈投稿。after msg2071, サトシを引用."
+description: "BitcoinTalk トピック 241 における throughput の文脈投稿。msg2071 の後、サトシを引用。"
 isSatoshi: false
 tags: []
 quotes:

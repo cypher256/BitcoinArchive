@@ -22,7 +22,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> バグと思われるものを見つけた：ユーザー名とパスワードの組み合わせが十分長いと、bitcoind の Base64 エンコーダーが以下のような Authorization ヘッダーを生成する：
+> バグと思われるものを見つけた：ユーザー名とパスワードの組み合わせが十分長いと、bitcoind の Base64 エンコーダーが……64 文字ごとに改行を挿入する
 <!-- /tone-skip -->
 
 素晴らしい発見だ！より簡単な修正は、rpc.cpp/EncodeBase64 関数で BIO_FLAGS_BASE64_NO_NL を指定することだ：

@@ -23,4 +23,4 @@ If you have code that checks the error and expects a string, you'll need to chan
 
 Also in SVN rev 147:
 - The command line json-rpc returns the error code as its exit code.  Exit codes can only be 0-255 on unix, so it's abs(code)%256.
-- The "backupwallet <destination>" command that was discussed in another thread.  It locks the wallet and copies it, so you can be sure you get a correct copy.
+- The "backupwallet \<destination\>" command that was discussed in another thread.  It locks the wallet and copies it, so you can be sure you get a correct copy.

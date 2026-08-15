@@ -41,7 +41,7 @@ translationStatus: complete
 
 2008 年 10 月 31 日に[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が暗号学メーリングリストに[ビットコインホワイトペーパーを投稿](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)してから 2 日後、ジェームズ・A・ドナルドが[最初に公に返信した](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald/):
 
-> 「こういうシステムは切実に必要だ。だが、この方式では必要な規模にスケールしないんじゃないか？」
+> 「こういうシステムは切実に必要だ。だが、あなたの提案を私が理解する限り、この方式では必要な規模にスケールしないんじゃないか？」
 
 ドナルドの懐疑論は、簡易決済検証や信頼と二重支払いのモデルを含む、サトシの最も詳細な初期アーキテクチャ説明を公的記録に引き出した。[ジェネシスブロックのエントリー](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)は、このサトシの返信を、その個人的確信が記録された最も近い瞬間として扱っている。
 

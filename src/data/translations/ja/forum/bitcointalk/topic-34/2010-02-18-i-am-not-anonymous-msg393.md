@@ -8,7 +8,7 @@ author: "I-am-not-anonymous"
 participants:
   - name: "I-am-not-anonymous"
     slug: "i-am-not-anonymous"
-description: "BitcoinTalk トピック 34 における I-am-not-anonymous の文脈投稿。after msg250, サトシを引用."
+description: "BitcoinTalk トピック 34 における I-am-not-anonymous の文脈投稿。msg250 の後、サトシを引用。"
 isSatoshi: false
 tags: []
 quotes:

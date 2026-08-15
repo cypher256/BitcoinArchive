@@ -16,4 +16,4 @@ secondarySources:
 translationStatus: complete
 ---
 
-rpc backupwallet <destination>が SVN rev 147 に入った。
+rpc backupwallet \<destination\>が SVN rev 147 に入った。

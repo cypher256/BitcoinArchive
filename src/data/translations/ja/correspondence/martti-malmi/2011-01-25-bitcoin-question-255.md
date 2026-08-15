@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Martti Malmi"
     slug: "martti-malmi"
-description: "マルッティが米国大学院生 Constance J. Wells との Bitcoin 論文引用に関するやり取りを「コメントいただけますか？」を添えてサトシに転送。"
+description: "マルッティが、Mark Herpel の紹介で Bitcoin を知った米国大学院生 Constance J. Wells との、論文引用に関するやり取りをサトシに転送。"
 isSatoshi: false
 tags:
   - "correspondence"
@@ -22,7 +22,7 @@ secondarySources:
 translationStatus: complete
 ---
 
-*[編者注：マルッティは「これについてコメントいただけますか？」という一行の前書きを添えて、 Constance J. Wells（米国大学院生、 Mark Herpel の紹介で Bitcoin を知った）との 3 段ネストのメールスレッドをサトシに転送した。外側から内側へ：Constance がマルッティに Bitcoin PDF への礼と論文の文脈を伝える返信を書き、その返信にはマルッティの先行返信（引用許可と bitcoin.org/bitcoin.pdf の案内）が含まれており、さらにその返信は Constance の最初の問い合わせを引用している。本文は [#256](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2011-01-25-bitcoin-question-256/) のサトシ返信内の reply-quote を 1 引用階層下げた形と一致させている（mmalmi.github.io の HTML レンダリングは #255 から前書きを欠いているが——Yahoo スタイルの `<table>` の外側にある文字列が抽出から漏れたと見られる——前書きは #256 の reply-quote に逐語保存されており、アーカイブはそれを #255 の正本テキストとして扱う）。]*
+*[編者注：マルッティは「これについてコメントいただけますか？」という一行の前書きを添えて、 Constance J. Wells（米国大学院生、 Mark Herpel の紹介で Bitcoin を知った）との 3 段ネストのメールスレッドをサトシに転送した。外側から内側へ：Constance がマルッティに Bitcoin PDF への礼と論文の文脈を伝える返信を書き、その返信にはマルッティの先行返信（引用許可と bitcoin.org/bitcoin.pdf の案内）が含まれており、さらにその返信は Constance の最初の問い合わせを引用している。本文は [#256](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2011-01-25-bitcoin-question-256/) のサトシ返信内の reply-quote を 1 引用階層下げた形と一致させている（mmalmi.github.io の HTML レンダリングは #255 から前書きを欠いているが——Yahoo スタイルの `<table>` の外側にある文字列が抽出から漏れている——前書きは #256 の reply-quote に逐語保存されており、アーカイブはそれを #255 の正本テキストとして扱う）。]*
 
 <!-- speaker: Martti Malmi -->
 これについてコメントいただけますか？

@@ -36,8 +36,8 @@ quotes:
 <!-- quote: q1 -->
 > <!-- quote: q2 -->
 > > <!-- quote: q3 -->
-> > > So, theoretical this is a first control system where <some goverment> can arrest satoshi and demand that he hands over his key (or get it from his computer) and shut down the complete network?
-> > > Or is that not possible? How far would <some goverment> get?
+> > > So, theoretical this is a first control system where \<some goverment\> can arrest satoshi and demand that he hands over his key (or get it from his computer) and shut down the complete network?
+> > > Or is that not possible? How far would \<some goverment\> get?
 > >
 > > This is what makes me think the people objecting don't know what they're talking about.  It can't "shut down the complete network".
 >

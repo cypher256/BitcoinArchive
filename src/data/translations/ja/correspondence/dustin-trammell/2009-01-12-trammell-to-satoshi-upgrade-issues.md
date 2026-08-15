@@ -11,7 +11,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "トランメルが v0.1.3 更新後に発生した認証エラーと UI 問題を報告し、複数アドレス管理についての困惑を伝える。"
+description: "トランメルが v0.1.0 から v0.1.3 への更新後、旧プロセスの残留と、コイン 4 件が「Generated (not accepted)」と表示される問題を報告する。"
 isSatoshi: false
 tags:
   - "correspondence"

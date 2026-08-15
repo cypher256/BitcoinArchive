@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシが v0.1.0 のスレッドバグを説明し、コイン成熟ルール（0.00 → 50.00）を解説、v0.1.3 への更新を促す。"
+description: "サトシがビットコインのタイムスタンプ連鎖を Usenet になぞらえ、コイン成熟ルール（0.00 → 50.00）を解説、v0.1.3 への更新を促す。"
 isSatoshi: true
 tags:
   - "correspondence"

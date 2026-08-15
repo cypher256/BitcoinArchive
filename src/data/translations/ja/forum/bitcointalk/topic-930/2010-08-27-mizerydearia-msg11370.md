@@ -8,7 +8,7 @@ author: "mizerydearia"
 participants:
   - name: "mizerydearia"
     slug: "mizerydearia"
-description: "BitcoinTalk トピック 930 における mizerydearia の文脈投稿。after msg11342, サトシを引用."
+description: "BitcoinTalk トピック 930 における mizerydearia の文脈投稿。msg11342 の後、サトシを引用。"
 isSatoshi: false
 tags: []
 quotes:

@@ -26,4 +26,4 @@ How about a json-rpc command that locks the wallet, flushes it, copies wallet.da
 What's the simplest portable way to copy a file?  Is there something in Boost?
 
 What should it be named?  maybe:
-backupwallet <destination>
+backupwallet \<destination\>

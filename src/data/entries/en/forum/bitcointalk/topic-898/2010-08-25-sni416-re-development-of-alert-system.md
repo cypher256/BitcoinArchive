@@ -36,10 +36,10 @@ quotes:
 > <!-- quote: q2 -->
 > > @mizerydearia, I think the quote button is easier to find then the reply one. 
 
-So, theoretical this is a first control system where <some goverment> can arrest satoshi and demand 
+So, theoretical this is a first control system where \<some goverment\> can arrest satoshi and demand
 that he hands over his key (or get it from his computer) and shut down the complete network?
 
-Or is that not possible? How far would <some goverment> get?
+Or is that not possible? How far would \<some goverment\> get?
 
 A few rhetorical questions for satoshi:
 
@@ -50,7 +50,7 @@ Lastly, are you Jack Bauer by any chance?   Seriously.
 WRT the alert system, who cares?  The most the key can do is temporarily disable six json-rpc commands until the site owners either add the -disablesafemode switch or upgrade.  All nodes keep running and generating, the network stays up.  If I'm not available, any script kiddie can figure out how to add two characters and make a new version that disables the alert system.  It would be a temporary inconvenience only.
 
 <!-- quote: q3 -->
-> So, theoretical this is a first control system where <some goverment> can arrest satoshi and demand 
+> So, theoretical this is a first control system where \<some goverment\> can arrest satoshi and demand
 
 that he hands over his key (or get it from his computer) and shut down the complete network?
 This is what makes me think the people objecting don't know what they're talking about.  It can't "shut down the complete network".

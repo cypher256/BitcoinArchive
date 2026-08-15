@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalk トピック 721 における NewLibertyStandard の文脈投稿。after msg8114, サトシを引用."
+description: "BitcoinTalk トピック 721 における NewLibertyStandard の文脈投稿。msg8114 の後、サトシを引用。"
 isSatoshi: false
 tags: []
 quotes:

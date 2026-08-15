@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがウォレットファイルの場所と、複数マシン間で持ち運ぶ際の注意点を説明する。"
+description: "サトシがウォレットの保存場所（%appdata%\\Bitcoin）を明かし、トランザクション対応 DBM がクラッシュ・停電に強いと説明、ソケット処理の修正コードを次回リリースへ追加済みと伝える。"
 isSatoshi: true
 tags:
   - "correspondence"

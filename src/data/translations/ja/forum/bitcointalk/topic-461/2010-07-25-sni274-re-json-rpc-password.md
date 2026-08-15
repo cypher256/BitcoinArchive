@@ -26,6 +26,7 @@ quotes:
 <!-- tone-skip -->
 > こちらでも PHP で動かそうとして問題が出ている。
 <!-- /tone-skip -->
+今のところ、wiki のサンプル（jsonRPCClient が [http://username:password@localhost:8332/](http://username:password@localhost:8332/) への fopen を試みるもの）も、setopt で CURLOPT_HTTPAUTH、CURLAUTH_BASIC を指定する私の curl サンプルも、どちらもうまくいっていない。
 おかしいな。誰かがそれでうまく動くと言っていなかったか？（彼はどのライブラリを使っていたのだろうか？）何が問題かわかったら投稿してくれ。
 
 すべての PHP ユーザーにとってこれほど苦労することにならないことを願う。

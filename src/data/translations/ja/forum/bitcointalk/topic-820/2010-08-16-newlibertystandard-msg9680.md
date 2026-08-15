@@ -8,7 +8,7 @@ author: "NewLibertyStandard"
 participants:
   - name: "NewLibertyStandard"
     slug: "newlibertystandard"
-description: "BitcoinTalk トピック 820 における NewLibertyStandard の文脈投稿。after msg9676, サトシを引用."
+description: "BitcoinTalk トピック 820 における NewLibertyStandard の文脈投稿。msg9676 の後、サトシを引用。"
 isSatoshi: false
 tags: []
 quotes:

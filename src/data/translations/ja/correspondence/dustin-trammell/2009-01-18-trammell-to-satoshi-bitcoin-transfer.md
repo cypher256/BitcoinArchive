@@ -11,7 +11,7 @@ participants:
     slug: "dustin-trammell"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "トランメルがコイン送金時の挙動とアドレス表示の不整合を報告し、複数アドレスを使う際の UX 問題を指摘する。"
+description: "トランメルが、会社から自宅へ自分宛に送った 100 BTC の取引詳細に「Satoshi」ラベルが表示されているのに気付き、サトシ自身が送ったのではと問い合わせる。"
 isSatoshi: false
 tags:
   - "correspondence"

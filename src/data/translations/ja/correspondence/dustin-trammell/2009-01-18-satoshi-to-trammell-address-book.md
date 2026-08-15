@@ -11,7 +11,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Dustin Trammell"
     slug: "dustin-trammell"
-description: "サトシがアドレス帳機能の設計案を示し、複数アドレスの整理と相手別ラベルの考え方を説明する。"
+description: "サトシが、表示されるのは送金元ではなく受信アドレスだと説明し、「Satoshi」ラベルはトランメル自身のアドレス帳の登録名だと明かして、送金者ごとにアドレスを使い分けるよう勧める。"
 isSatoshi: true
 tags:
   - "correspondence"

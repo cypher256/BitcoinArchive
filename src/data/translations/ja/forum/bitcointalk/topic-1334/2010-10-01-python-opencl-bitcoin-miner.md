@@ -1,5 +1,5 @@
 ---
-title: "大衆向け OpenCL マイナー"
+title: "python OpenCL マイナー"
 date: 2010-10-01T09:21:59.000Z
 type: "forum-post"
 source: "bitcointalk"
@@ -10,7 +10,7 @@ participants:
     slug: "m0mchil"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "m0mchil がスレッドを開始: 大衆向け OpenCL マイナー"
+description: "m0mchil がスレッドを開始: python OpenCL マイナー"
 isSatoshi: false
 tags: []
 translationStatus: complete

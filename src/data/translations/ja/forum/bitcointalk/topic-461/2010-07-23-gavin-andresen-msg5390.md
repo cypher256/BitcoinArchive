@@ -8,7 +8,7 @@ author: "Gavin Andresen"
 participants:
   - name: "Gavin Andresen"
     slug: "gavin-andresen"
-description: "BitcoinTalk トピック 461 におけるギャビン・アンドレセンの文脈投稿。after msg5383, サトシを引用."
+description: "BitcoinTalk トピック 461 におけるギャビン・アンドレセンの文脈投稿。msg5383 の後、サトシを引用。"
 isSatoshi: false
 tags: []
 quotes:

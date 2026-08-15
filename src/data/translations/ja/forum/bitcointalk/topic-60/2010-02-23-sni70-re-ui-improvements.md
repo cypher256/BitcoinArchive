@@ -24,7 +24,7 @@ quotes:
 
 <!-- quote: q1 -->
 <!-- tone-skip -->
-> TTY1-8（sirius-m が言っていたもの）の一つにログインして、*/etc/init.d/gdm start*を実行すれば gdm が起動する！
+> */etc/init.d/gdm start*を実行すれば gdm が起動する！
 <!-- /tone-skip -->
 ああ、そうだ、元に戻った。
 
