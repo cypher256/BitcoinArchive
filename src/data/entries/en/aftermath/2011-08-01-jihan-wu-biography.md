@@ -36,7 +36,7 @@ relatedEntries:
 
 In 2011, a Chinese economics-and-journalism graduate named Jihan Wu translated Satoshi's Bitcoin whitepaper into Chinese. Two years later he co-founded **Bitmain Technologies** with chip designer Micree Zhan, and by 2015–2018 Bitmain had become the dominant Bitcoin ASIC manufacturer, controlling a majority share of new mining-hardware shipments. Bitmain also operated AntPool, the largest Bitcoin mining pool by hashrate through the same period. On August 1, 2017, Wu committed Bitmain-aligned hashpower to the [Bitcoin Cash hard fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/) — a critical factor in BCH maintaining block production through the early difficulty-tuning days.
 
-Jihan Wu (吴忌寒; born 1986 in Chongqing, China) is an entrepreneur who studied economics and journalism at Peking University before working as a financial analyst.
+Jihan Wu (吴忌寒; born 1986 in Chongqing, China) is a Chinese entrepreneur.
 
 ## Bitcoin entry and whitepaper translation (2011)
 

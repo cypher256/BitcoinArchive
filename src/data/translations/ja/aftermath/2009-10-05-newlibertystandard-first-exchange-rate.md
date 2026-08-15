@@ -44,7 +44,7 @@ translationStatus: complete
 
 <!-- chart: nls-exchange-rate -->
 
-つまり、ビットコインの最初の価格は生産コスト、すなわちコインをマイニングする電気代であって、買い手と売り手が決める市場価格ではなかった。これは、[サトシ自身が 6 週間前に説いていた](/BitcoinArchive/ja/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/)のと同じ価格算定の原理である。マルッティ・マルミの取引所提案へのフィードバックとしてのことだった。市場が生まれたあとこの関係がどうなったか、そしてサトシが 2010 年 2 月に予言したとおり因果がどう逆転したかは、[価格と生産コストの分析](/BitcoinArchive/ja/entries/analysis/2010-02-21-bitcoin-price-vs-production-cost/)が辿っている。
+つまり、ビットコインの最初の価格は生産コスト、すなわちコインをマイニングする電気代であって、買い手と売り手が決める市場価格ではなかった。これは、マルッティ・マルミの取引所提案へのフィードバックの中で[サトシ自身が 6 週間前に説いていた](/BitcoinArchive/ja/entries/aftermath/2009-07-22-bitcoin-exchange-proposal/)のと同じ価格算定の原理である。市場が生まれたあとこの関係がどうなったか、そしてサトシが 2010 年 2 月に予言したとおり因果がどう逆転したかは、[価格と生産コストの分析](/BitcoinArchive/ja/entries/analysis/2010-02-21-bitcoin-price-vs-production-cost/)が辿っている。
 
 その直後の 2009年10月12日、[マルッティ・マルミが NewLibertyStandard に PayPal 経由で 5,050 BTC を 5.02 ドルで売却した](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)。これがビットコインと法定通貨の最初の既知の交換だった。
 

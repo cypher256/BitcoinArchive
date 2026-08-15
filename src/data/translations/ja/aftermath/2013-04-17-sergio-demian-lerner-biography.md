@@ -43,7 +43,7 @@ translationStatus: complete
 
 5 か月後、ラーナーは同じマイナーの[ナンス値に第 2 の指紋を発見](/BitcoinArchive/ja/entries/aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery/)、2019 年には[このパターンを「Patoshi」と命名](/BitcoinArchive/ja/entries/aftermath/2019-04-16-sergio-lerner-patoshi-naming/)し、件数を約 22,000 ブロック・約 110 万 BTC に修正、2020 年には[採掘機を再構成](/BitcoinArchive/ja/entries/aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine/)し、単一の高性能 CPU が 5 つにナンス空間分割されたスレッドを並列実行する、他の初期マイナーより約 4.3 倍速い構成だった。
 
-ラーナーの解析はビットコイン史上最も重要なブロックチェーンフォレンジック研究である。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は単一マシンでビットコイン総量 2,100 万のおよそ 5% を採掘し、一度も使わないことを選んだことを確立した。
+ラーナーの解析はビットコイン史上最も重要なブロックチェーンフォレンジック研究である。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が単一マシンでビットコイン総量 2,100 万のおよそ 5% を採掘し、一度も使わないことを選んだことを確立した。
 
 ```mermaid
 timeline

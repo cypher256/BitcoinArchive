@@ -41,7 +41,7 @@ translationStatus: complete
 
 ![ピザボックス 2 箱の隣に、右へいくほど大きくなる金色のコインが連なって伸びるイラスト。下部にはコンピューター・回路チップ・カレンダーを表す 3 つのアイコンが並ぶ年表がある。](/BitcoinArchive/images/analysis/2010-05-22-laszlo-hanyecz-biography-hero.png)
 
-2010 年 5 月 22 日、ラズロ・ハニエツは 10,000 BTC で Papa John's のピザ 2 枚を購入した。当時の価値は約 41 ドル。ビットコインのピーク評価額では、同額は数億ドルに相当する。この日は毎年[「ビットコイン・ピザ・デー」](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)として祝われており、ビットコインによる最初の既知の実商取引だ。
+2010 年 5 月 22 日、ラズロ・ハニエツは 10,000 BTC で Papa John's のピザ 2 枚を購入した。当時の価値は約 41 ドル。ビットコインのピーク評価額では、同額は数億ドルに相当する。この購入は、ビットコインによる最初の既知の実商取引として知られており、毎年[「ビットコイン・ピザ・デー」](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)として祝われている。
 
 ハニエツはフロリダ州ジャクソンビル在住のソフトウェア開発者。ピザ購入の前、すでに[ビットコインクライアントを macOS に移植](/BitcoinArchive/ja/entries/aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence/)（初の Windows 以外のバージョン）し、GPU でビットコインをマイニングした最初の人物として知られていた。どちらについても[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)と直接やり取りしている。
 

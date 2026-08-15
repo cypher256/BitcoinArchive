@@ -38,7 +38,7 @@ relatedEntries:
 ライトルはコンピューター科学者で、匿名性、暗号技術、ナノテクノロジー、脳保存に関する議論に長年関わってきた。
 
 ## ビットコインとの関わり
-2009年10月26日、ライトルは bitcoin-list メーリングリストの[「Bitcoin は Windows でクラッシュしますか？」](/BitcoinArchive/ja/entries/emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows/)というスレッドに返信した。このスレッドでは[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が Liberty Standard の Wine 上でのクラッシュ報告に回答していた。ライトルはサトシの「bitcoin.sourceforge.net は今は正常に見えます」という発言を引用し、自分が確認した時にはサイトが動作していなかったと報告した。また「まだ Bitcoin の Deb パッケージはないのですか？」と質問し、ソフトウェアの Linux パッケージ化への早期の需要を示した。
+2009年10月26日、ライトルは bitcoin-list メーリングリストの[「Bitcoin は Windows でクラッシュしますか？」](/BitcoinArchive/ja/entries/emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows/)というスレッドに返信した。このスレッドでは[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が Liberty Standard の Wine 上でのクラッシュ報告に回答していた。ライトルはサトシの「bitcoin.sourceforge.net は今は正常に見えます」という発言を引用し、自分が確認した時にはサイトが動作していなかったと報告した。また「まだ Bitcoin の .deb パッケージはないのですか？」と質問し、ソフトウェアの Linux パッケージ化への早期の需要を示した。
 
 ## 意義
 スレッドのクラッシュは Wine 上で起きていた。ライトルが .deb パッケージを尋ねたのは、その裏返しだった。リリースから 10 か月近く経っても、ビットコインを Linux に載せる手軽な道はまだなかった。暗号学メーリングリストの外にまで関心が及んでいたにもかかわらず、である。この空白は 7 週間後、[Ubuntu でテスト済みの Linux ビルドを搭載したビットコイン v0.2 のリリース](/BitcoinArchive/ja/entries/aftermath/2009-12-16-bitcoin-v02-released/)で埋まった。

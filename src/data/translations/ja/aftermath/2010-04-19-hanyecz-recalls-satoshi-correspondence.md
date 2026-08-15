@@ -37,7 +37,7 @@ translationStatus: complete
 *[編者注：これは回想に基づく記事であり、メールの一次資料ではない。ハニエツとサトシの完全なメールは公開されていない。サトシに帰属させた引用文はすべて、ハニエツが後年のインタビュー（Bitcoin Magazine、CoinDesk 2025 年、Cointelegraph 等）で語った言い換え・回想であって、メールの原文ではない。一次資料で検証可能なのはハニエツによる macOS 移植（2010 年 4 月 19 日、Bitcointalk および SourceForge ／ GitHub のコミット履歴で追跡可能）と GPU マイニングの Bitcointalk 発表（2010 年 5 月 10 日）である。枠組みは、ハニエツ自身が後年語った当時のメールのやり取りのパターンである。]*
 
 <!-- speaker: narrator -->
-フロリダ州ジャクソンビル出身のソフトウェア開発者である[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)は、ビットコインの最も重要な初期貢献者の一人となった。2010 年 4 月 19 日に Bitcoin Core 初の macOS クライアントを作成する直前に、Bitcointalk フォーラムに登録した。この貢献は、同年 7 月の [v0.3 リリースで Mac OS X バージョンとして正式に出荷された](/BitcoinArchive/ja/entries/aftermath/2010-07-06-bitcoin-v03-released/)。
+フロリダ州ジャクソンビル出身のソフトウェア開発者である[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)は、ビットコインの最も重要な初期貢献者の一人となった。2010 年 4 月 19 日に Bitcoin Core 初の macOS クライアントを作成する直前に、Bitcointalk フォーラムに登録した。この貢献は、同年 7 月の [v0.3 リリースで Mac OS X バージョンとして正式に公開された](/BitcoinArchive/ja/entries/aftermath/2010-07-06-bitcoin-v03-released/)。
 
 ハニエツの後年のインタビューによれば、彼とサトシ・ナカモトはビットコインの初期に数百通のメールを交わした。ハニエツの語るところでは、それらはサトシが個人と行った最も広範なメールでのやり取りの一つだった。ハニエツは後にそのやり取りを「大体変だった」と表現し、サトシは何週間もメールに返信せず、その後すべてを一度に、しばしば金曜日にまとめて返信したと述べている。
 

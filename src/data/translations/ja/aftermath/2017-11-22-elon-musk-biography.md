@@ -31,7 +31,7 @@ translationStatus: complete
 
 ![ロケットと自動車のシルエット、大きなビットコインの記号、却下のスタンプが押された書類、そしてビットコインとドージコインのコインアイコンを組み合わせたイラスト。](/BitcoinArchive/images/analysis/2017-11-22-elon-musk-biography-hero.png)
 
-イーロン・マスク（1971 年 6 月 28 日、南アフリカ・プレトリア生まれ）は、テスラと SpaceX の創業者、後に PayPal となる決済会社の共同創業者である。ビットコイン史との繋がりは新しく、かつ外部的なものである。初期参加者としてではなく、著名な投資家・論者としての繋がりだ。[2017 年、元 SpaceX インターンが彼をサトシ・ナカモトの可能性として名指した](/BitcoinArchive/ja/entries/analysis/2017-11-22-elon-musk-satoshi-identity-hypothesis/)が、マスクは一週間以内に否定した。
+イーロン・マスク（1971 年 6 月 28 日、南アフリカ・プレトリア生まれ）は、テスラと SpaceX の創業者、後に PayPal となる決済会社の共同創業者である。ビットコイン史との繋がりは新しく、かつ外部的なものである。初期参加者としてではなく、著名な投資家・論者としての繋がりだ。[2017 年、元 SpaceX インターンが彼をサトシ・ナカモトの可能性として名指した](/BitcoinArchive/ja/entries/analysis/2017-11-22-elon-musk-satoshi-identity-hypothesis/)という泡沫的な主張を、マスクは一週間以内に否定した。
 
 ```mermaid
 timeline

@@ -63,7 +63,7 @@ translationStatus: complete
 <!-- quote: q2 -->
 > 「プロジェクトは徐々に成長する必要がある。その過程でソフトウェアを強化できるように。WikiLeaks へ訴える。ビットコインを使うのはやめてくれ。」
 
-WikiLeaks はサトシの懸念を尊重し採用を延期した — 注目すべきは、この発表が[サトシの最終的な退場](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)から 2 か月後だったことだ。この 12 月 5 日の反対表明は、サトシの段階的撤退の一過程として[サトシ匿名性のアーキテクチャ分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)でも扱われている。
+WikiLeaks はサトシの懸念を尊重し採用を延期した。注目すべきは、この発表が[サトシの最終的な退場](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/)から 2 か月後だったことだ。この 12 月 5 日の反対表明は、サトシの段階的撤退の一過程として[サトシ匿名性のアーキテクチャ分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-anonymity-architecture/)でも扱われている。
 
 ビットコインは WikiLeaks の生命線となった。2016年までに、同組織はビットコイン寄付を通じて 4,000 BTC 以上を集めた。ジュリアン・アサンジは後にこう述べた。
 

@@ -43,7 +43,7 @@ relatedEntries:
 
 ## Bitcoin Core 寄稿期 (2015 ~ 2017)
 
-セシェの GitHub 履歴 (`deadalnix`) には 2015 年以降の Bitcoin Core 寄稿が記録されている。主にプロトコル層のコード (合意ルール、P2P ネットワーキング、検証) への寄稿である。彼は後の[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)となる公開議論で活発に発言し、より大きなブロック陣営に整列していた。2016 年までには、Bitcoin Core の他のメンバーが収束しつつあった SegWit + レイヤー 2 路線ではなく、オンチェーンのブロックサイズ拡張を可視的に主張していた。
+セシェの GitHub 履歴 (`deadalnix`) には 2015 年以降の Bitcoin Core 寄稿が記録されている。主にプロトコル層のコード (合意ルール、P2P ネットワーキング、検証) への寄稿である。彼は後の[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)となる公開議論で活発に発言し、より大きなブロック陣営に与していた。2016 年までには、Bitcoin Core の他のメンバーが収束しつつあった SegWit + レイヤー 2 路線ではなく、オンチェーンのブロックサイズ拡張を可視的に主張していた。
 
 ## Bitcoin ABC とビットコインキャッシュフォーク (2017 年)
 

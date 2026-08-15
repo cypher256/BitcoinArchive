@@ -69,7 +69,7 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > 「ビットコインホワイトペーパーを最初に注意深く読まなかった。あれが、おそらく私の最大の失敗だった」
 
-バックは添付されたホワイトペーパーを開き、ざっと目を通し、ウェイ・ダイの b-money を提案する簡潔な返信を打って、ラップトップを閉じた。この時点での素っ気ない対応は、バック自身の言葉で [MicroMint のメール](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi-micromint/)に「すまない、君の論文はまだ読めていない」として記録されている。ビットコインを積極的に使い始めたのは 2013年頃からで、この空白は[サトシからバックへの最後のメール](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-adam-back-launch/)が反対側から閉じている。
+バックは添付されたホワイトペーパーを開き、ざっと目を通し、ウェイ・ダイの b-money を提案する簡潔な返信を打って、ラップトップを閉じた。この時点での素っ気ない対応は、バック自身の言葉で [MicroMint のメール](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi-micromint/)に「すまない、君の論文はまだ読めていない」として記録されている。ビットコインを積極的に使い始めたのは 2013年頃からで、この空白は、サトシの側では[サトシからバックへの最後のメール](/BitcoinArchive/ja/entries/aftermath/2009-01-10-satoshi-to-adam-back-launch/)によってすでに閉じられていた。
 
 ビットコインへの初期の疑念について、バックは後に CoinShares にこう語った：
 

@@ -38,6 +38,17 @@ In June 2021, the pseudonymous operator of bitcoin.org chose to lose a UK High C
 
 Cobra (also stylised as Cøbra) is the steward of the website [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) registered in August 2008. His real identity is unknown.
 
+```mermaid
+timeline
+    2008 : Satoshi registers bitcoin.org (Aug)
+    Early 2010s : Cobra takes over bitcoin.org's stewardship after Satoshi's disappearance and Malmi's departure
+    2021 : Craig Wright sues Cobra over whitepaper copyright (Feb)
+         : Cobra chooses anonymity, accepts default judgment; bitcoin.org ordered to remove whitepaper (Jun 28)
+    %% link: /BitcoinArchive/entries/aftermath/2021-06-28-cobra-response-to-whitepaper-ruling/
+    2024 : COPA v Wright ruling finds Wright is not Satoshi, voiding the 2021 judgment's basis (Mar 14)
+    %% link: /BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/
+```
+
 ## Role
 After Satoshi's disappearance and [Martti Malmi](/BitcoinArchive/participants/martti-malmi/)'s departure, Cobra became the custodian of bitcoin.org — maintaining the site, hosting the Bitcoin whitepaper, and managing the domain that serves as Bitcoin's primary public gateway. The position carries no formal authority over the Bitcoin protocol but holds symbolic significance as the steward of Satoshi's original website.
 

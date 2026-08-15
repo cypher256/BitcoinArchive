@@ -8,7 +8,7 @@ author: "Peter Todd"
 participants:
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "Peter Todd's first BitcoinTalk post, one minute after registering as retep — offering $2 USD (not BTC, unlike others) for a Diaspora invite. His second post was a technical reply to Satoshi."
+description: "Peter Todd's first BitcoinTalk post, 41 seconds after registering as retep — offering $2 USD (not BTC, unlike others) for a Diaspora invite. His second post was a technical reply to Satoshi."
 isSatoshi: false
 tags:
   - "peter-todd"
@@ -39,7 +39,7 @@ relatedEntries:
 <!-- audit:quote-skip -->
 > Will buy 1 invite for $2, msg privately.
 
-Peter Todd's first-ever post on BitcoinTalk. Nine words. Posted on December 7, 2010 at 09:14:28 AM — one minute after registering under the username "retep" (Peter spelled backwards).
+Peter Todd's first-ever post on BitcoinTalk. Nine words. Posted on December 7, 2010 at 09:14:28 AM — 41 seconds after registering under the username "retep" (Peter spelled backwards).
 
 ## Context
 

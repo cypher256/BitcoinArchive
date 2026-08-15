@@ -43,7 +43,7 @@ translationStatus: complete
 ```mermaid
 timeline
     2003 : Yahoo! 上級副社長 (2008年まで)
-    2009 : AOL コンシューマー 部門President (2011年まで)
+    2009 : AOL コンシューマー 部門プレジデント (2011年まで)
     2014 : Hightail CEO (9月まで)
     2015 : リップルにCOOとして 入社 (4月)
     2016 : CEOに昇格 (12月)
@@ -87,4 +87,4 @@ timeline
 
 ## ビットコインにとっての意義
 
-この記録に登場するアルトコイン創業者のなかで、ガーリングハウスだけが、設計に関わった人物としてではなく、経営者として自社に加わった。彼がビットコインについて語ることの根拠は、[クリス・ラーセン](/BitcoinArchive/ja/participants/chris-larsen/)と[ジェド・マケーレブ](/BitcoinArchive/ja/participants/jed-mccaleb/)が作った事業を経営していることにあり、台帳そのものを書いたことにはない。この違いは、彼の採掘集中批判をどう読むかにとって重要である。それは、設計段階で別の合意形成方式を選んだ人物による技術的な異論ではなく、リップルが競う市場についての経営者の所見である。ビットコインの採掘を、名指しされた二つの組織が運営する検証者リストと引き換えることの代償が実際には何なのかは、[XRP 通貨ページ](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/)が記録している。[十二チェーンの設計比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)の一覧も同じ答えを記している。選定制の検証者リストと一企業が握る台帳、ビットコインの採掘と支配組織の不在の裏返しである。
+この記録に登場するアルトコイン創業者のなかで、ガーリングハウスだけが、設計に関わった人物としてではなく、経営者として自社に加わった。彼がビットコインについて語ることの根拠は、[クリス・ラーセン](/BitcoinArchive/ja/participants/chris-larsen/)と[ジェド・マケーレブ](/BitcoinArchive/ja/participants/jed-mccaleb/)が作った事業を経営していることにあり、台帳そのものを書いたことにはない。この違いは、彼の採掘集中批判をどう読むかにとって重要である。それは、設計段階で別の合意形成方式を選んだ人物による技術的な異論ではなく、リップルが競う市場についての経営者の所見である。ビットコインの採掘を、名指しされた二つの組織が運営する検証者リストと引き換えることの代償が実際には何なのかは、[XRP 通貨ページ](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/)が記録している。[十二チェーンの設計比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)の一覧も同じ答えを記している。選定制の検証者リストと一企業が握る台帳は、ビットコインの採掘と支配組織の不在の裏返しである。

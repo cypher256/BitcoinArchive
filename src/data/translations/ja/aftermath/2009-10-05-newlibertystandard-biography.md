@@ -47,7 +47,7 @@ translationStatus: complete
 NewLibertyStandard の実世界での身元はこれまで公に明かされたことがない。BitcoinTalk ユーザー#26（2010 年 1 月 19 日登録）で、2012 年 12 月までフォーラムで活動していた。[2010 年 2 月 5 日](/BitcoinArchive/ja/entries/aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal/)にタイ・バーツの記号（฿）と 3 文字通貨コード「BTC」の採用を提案した。このうち BTC ティッカーが標準となった。
 
 ## 最初のビットコイン為替レート
-[2009年10月5日](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/)、NewLibertyStandard は最初の既知のビットコイン-米ドル為替レートを公開した：$1.00 = 1,309.03 BTC（1 ビットコインあたり約$0.00076）。このレートはビットコインのマイニングに必要な電力に基づく生産コスト計算式を使用して算出された。NewLibertyStandard の wetpaint 為替レートページ（後に wikifoundry にミラー）に記述されているように、計算式はコンピューターを高 CPU 負荷で稼働させる年間平均電力コストを 12 ヶ月で割り、過去 30 日間にマイニングされたビットコイン数で割ったものである。これはビットコインにドル建ての価格が付けられた最初の機会だった。
+[2009年10月5日](/BitcoinArchive/ja/entries/aftermath/2009-10-05-newlibertystandard-first-exchange-rate/)、NewLibertyStandard は最初の既知のビットコイン-米ドル為替レートを公開した：$1.00 = 1,309.03 BTC（1 ビットコインあたり約$0.00076）。このレートはビットコインのマイニングに必要な電力に基づく生産コスト計算式を使用して算出された。NewLibertyStandard の wetpaint 為替レートページ（後に wikifoundry にミラーされた）に記述されているように、計算式はコンピューターを高 CPU 負荷で稼働させる年間平均電力コストを 12 ヶ月で割り、過去 30 日間にマイニングされたビットコイン数で割ったものである。これはビットコインにドル建ての価格が付けられた最初の機会だった。
 
 ## 初のビットコイン-法定通貨取引
 [2009年10月12日](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)、フィンランドの開発者[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)が 5,050 BTC を NewLibertyStandard に$5.02 で PayPal 経由で売却した。これはビットコインと法定通貨の最初の既知の交換として広く認識されており、ビットコインを現実世界の金銭的価値を持つ経済財として確立した。

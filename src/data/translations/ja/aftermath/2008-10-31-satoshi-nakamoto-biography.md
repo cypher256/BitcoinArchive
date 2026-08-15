@@ -64,7 +64,7 @@ translationStatus: complete
 
 「サトシ・ナカモト」は仮名である。その背後にいる個人またはグループは、これまで特定されていない。この正体は、[サトシ正体仮説の横断比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)が 10 人の名指し候補をここにまとめた記録に照らして検証している問いである。
 
-*ビットコインがはじめての方は、 [ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)から読むとよい。8 章 30 用語を図と一緒に、事前知識ゼロでも読める。*
+*ビットコインがはじめての方は、[ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)から読むとよい。8 章 30 用語を図と一緒に、事前知識ゼロでも読める。*
 
 ```mermaid
 timeline
@@ -148,7 +148,7 @@ Bitcoin v0.1 は Windows 上で Microsoft Visual C++ 6.0 SP6 と MinGW GCC 3.4.5
 
 ## ビットコイン保有量
 
-ビットコイン最初の数か月に、単一の協調的なパターンでマイニングされたビットコインは約 110 万 BTC で、「[Patoshi パターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)」と呼ばれ、サトシのものと考えられている。これらのコインは一度も動いていない。
+ビットコインの最初の数か月に、単一の協調的なパターンでマイニングされた分は約 110 万 BTC で、「[Patoshi パターン](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)」と呼ばれ、サトシのものと考えられている。これらのコインは一度も動いていない。
 
 ## 編集分析
 - **配布形式と開発環境**: `.rar` パッケージング、バージョン管理の不在、ハンガリアン記法による変数命名、OpenSSL 依存、[ダン・カミンスキーによる 2011 年セキュリティ監査](/BitcoinArchive/ja/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/)、そして「先見的セキュリティと形式ばらないプロセスの区別」は [v0.1 配布形式と開発環境の異例性についての分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies/)で扱う

@@ -35,11 +35,7 @@ On January 24, 2009, San Francisco Bay Area security consultant Bill Frantz [rep
 He speculated that botnet operators might evolve into legitimate security firms — protecting computers against compromise in exchange for proof-of-work mining rewards. Frantz consults under the firm name Periwinkle (pwpconsult.com).
 
 ## Mailing List Contribution
-On January 24, 2009, Frantz [responded](/BitcoinArchive/entries/emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-frantz/) to [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s argument about proof-of-work tokens creating security incentives. He made a characteristically ironic observation about the relationship between botnets and network security:
-
-> "The 0wned machines are among the most secure on the network because botnet operators work hard to keep others from compromising 'their' machines."
-
-He speculated on a scenario where botnet operators might evolve into legitimate security firms — protecting computers against compromise in exchange for proof-of-work mining rewards. This represented an early, creative attempt to see how Bitcoin's economic incentives could reshape existing security dynamics.
+Frantz's reply directly answered [Hal Finney](/BitcoinArchive/participants/hal-finney/)'s argument that proof-of-work tokens create security incentives — the botnet observation quoted above was his ironic response to it.
 
 ## Significance
 It was a throwaway, half-ironic line — but it caught something real: the same proof-of-work reward that secures the chain could, in principle, pay the people who run botnets to defend machines rather than exploit them.

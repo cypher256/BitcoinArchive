@@ -53,7 +53,7 @@ The Murphy suit is structurally distinct from the journalistic and documentary i
 
 The Murphy action targets a different evidence channel — a government agent's own on-record statement about an internal interview event — and uses the federal FOIA mechanism to demand the underlying documents. If DHS records exist as Saoud's remarks suggested, court-ordered disclosure could in principle settle specific factual questions about the 2019 interview without resorting to stylometric inference.
 
-As of mid-2026 the case remains in early-stage litigation and no documents have been compelled. Whether the request will succeed turns on how the district court reads the FOIA statute against any national-security or privacy exemptions DHS may invoke.
+As of mid-2026 the case remains in early-stage litigation and no documents have been compelled.
 
 This FOIA action is referenced by [the 2026 "Finding Satoshi" Finney-Sassaman documentary](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/), which uses the lawsuit's government-record subpoena route as one of the documented post-2024 evidence channels for the Satoshi-identification question its documentary structure draws on.
 

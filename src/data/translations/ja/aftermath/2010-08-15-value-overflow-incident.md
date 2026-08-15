@@ -61,9 +61,9 @@ translationStatus: complete
 
 ブロック 74638 の単一トランザクションが **184,467,440,737.09551616 BTC** を生成していた。内訳は 92,233,720,368.54277039 BTC の出力が 2 つで、ビットコインの総発行予定量 2,100 万 BTC の約 9,000倍にあたる。
 
-**バグの内容:** トランザクション検証コードは個々の出力が非負であることを確認していたが、出力の合計における整数オーバーフローをチェックしていなかった。64 ビット符号付き整数の最大値（INT64_MAX ≈ 9.2 × 10¹⁸）に近い 2 つの出力を足すと負の値にオーバーフローし、検証チェックを通過した：0.5 BTC 入力 ≥ -0.01 BTC 出力（オーバーフロー後）。
+**バグの内容：** トランザクション検証コードは個々の出力が非負であることを確認していたが、出力の合計における整数オーバーフローをチェックしていなかった。64 ビット符号付き整数の最大値（INT64_MAX ≈ 9.2 × 10¹⁸）に近い 2 つの出力を足すと負の値にオーバーフローし、検証チェックを通過した：0.5 BTC 入力 ≥ -0.01 BTC 出力（オーバーフロー後）。
 
-**対応:** 発見から約 5時間以内に、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は [Bitcoin version 0.3.10](/BitcoinArchive/ja/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) を公開。`CheckTransaction()`に 2 つの新しいチェックを追加するソフトフォークだった：
+**対応：** 発見から約 5時間以内に、[サトシ](/BitcoinArchive/ja/participants/satoshi-nakamoto/)は [Bitcoin version 0.3.10](/BitcoinArchive/ja/entries/aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix/) を公開。`CheckTransaction()`に 2 つの新しいチェックを追加するソフトフォークだった：
 
 1. 各出力は MAX_MONEY（21,000,000 BTC）を超えてはならない
 2. すべての出力の合計は MAX_MONEY を超えてはならない
@@ -72,11 +72,11 @@ translationStatus: complete
 
 サトシは同日中にオーバーフロー修正を取り込んだ v0.3.10 をリリースし、BitcoinTalk で[バージョン 0.3.10 - ブロック 74638 オーバーフローパッチ！](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch/) として告知し、読者をバグそのものの議論スレッドへ誘導した。
 
-**結果:** 修正チェーンは事件発生から約 15時間後のブロック 74691 で無効なチェーンを追い越した。1,840 億 BTC はブロックチェーンの承認済み履歴から事実上消去された。この事件が体現したのは、緊急ソフトフォークで修正されたチェーンをノードが最大作業量チェーンとして受理していく過程という一般的な仕組みである。これは、[コンセンサス設計のエントリ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)で詳しく解説されている。
+**結果：** 修正チェーンは事件発生から約 15時間後のブロック 74691 で無効なチェーンを追い越した。1,840 億 BTC はブロックチェーンの承認済み履歴から事実上消去された。この事件が体現したのは、緊急ソフトフォークで修正されたチェーンをノードが最大作業量チェーンとして受理していく過程という一般的な仕組みである。これは、[コンセンサス設計のエントリ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)で詳しく解説されている。
 
 <!-- chart: value-overflow-timeline -->
 
-**偶発か悪用か？** 自然な問い: これは偶発的に起きたのか、それとも意図的な悪用だったのか。v0.3 のソースコードとトランザクション構造を分析すると、一点は確定でき、もう一点は不確定のまま残る。
+**偶発か悪用か？** 自然な問い：これは偶発的に起きたのか、それとも意図的な悪用だったのか。v0.3 のソースコードとトランザクション構造を分析すると、一点は確定でき、もう一点は不確定のまま残る。
 
 **トランザクション構造から偶発的発生は否定される。** オーバーフローを発動させるには、合計が INT64_MAX（約 9.2 × 10¹⁸ satoshi）を超える 2 つの出力が必要で、それぞれ約 922 億 BTC 近辺の値でなければならない。この値が通常のウォレット利用で現れる可能性は事実上ない。2010 年当時、個人が 922 億 BTC を保有することは不可能で、現実的な残高は最大でも数千 BTC 程度だった。標準のビットコインウォレットのインターフェースは、出力額を残高と MAX_MONEY で検証してからトランザクションを構築する。92,233,720,368.54277039 BTC という値はタイプミスや丸め誤差で偶然現れる数字ではない。int64 の最大値を 10⁸ で割った値であり、オーバーフロー直前を狙って意図的に設定しなければ到達しない。ブロック 74638 のトランザクションを作成するには、生のトランザクションのバイト列を手作業またはカスタムツールで構築し、`CheckTransaction()` の int64 加算でオーバーフローするよう出力値を狙って設定し、署名してブロードキャストする必要があった。いずれの工程も意図的で技術的知識を要する行為である。
 
@@ -86,6 +86,6 @@ translationStatus: complete
 
 この事件は根本的なパラドックスを露呈した。分散型システムが中央集権的な意思決定によって救われたのだ。緊急対応の中でコミュニティは独立した検証を経ずに修正クライアントを採用し、サトシの判断を信頼した。非中央集権を掲げる設計と、危機対応における単一の権威への依存という矛盾が、このとき初めて可視化された。
 
-本事件は隣接する複数の記録の中核参照となる: [構造的パラドックス分析](/BitcoinArchive/ja/entries/analysis/2010-08-15-overflow-incident-structure-and-paradox/)は同 5 時間復旧を分散 vs 集中緊張の典型事例として読む。 [knightmb のスナップショットと伝説分析](/BitcoinArchive/ja/entries/analysis/2010-08-15-knightmb-snapshot-and-legend/)は復旧パッチが依存した事件直前のブロックチェーンスナップショットを提供した貢献者を扱う。直近の事件前文脈は [Slashdot ビットコイン記事 (2010 年 7 月)](/BitcoinArchive/ja/entries/aftermath/2010-07-11-slashdot-bitcoin-article/)と [knightmb 伝記](/BitcoinArchive/ja/participants/knightmb/)。 [Mt. Gox 倒産エントリ](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/)は保管崩壊議論で「プロトコルは生き残った」の初期反例として本事件を扱う。
+本事件は隣接する複数の記録の中核参照となる：[構造的パラドックス分析](/BitcoinArchive/ja/entries/analysis/2010-08-15-overflow-incident-structure-and-paradox/)は同 5 時間復旧を分散 vs 集中緊張の典型事例として読む。 [knightmb のスナップショットと伝説分析](/BitcoinArchive/ja/entries/analysis/2010-08-15-knightmb-snapshot-and-legend/)は復旧パッチが依存した事件直前のブロックチェーンスナップショットを提供した貢献者を扱う。直近の事件前文脈は [Slashdot ビットコイン記事 (2010 年 7 月)](/BitcoinArchive/ja/entries/aftermath/2010-07-11-slashdot-bitcoin-article/)と [knightmb 伝記](/BitcoinArchive/ja/participants/knightmb/)。 [Mt. Gox 倒産エントリ](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/)は保管崩壊議論で「プロトコルは生き残った」の初期反例として本事件を扱う。
 
 *[補足：2010 年 8 月 15 日の 5 時間パッチ投入は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』で名指しで描かれる場面の一つとして扱われる。1,840 億 BTC の連鎖崩壊に主人公が直面し、ネットワーク分裂が起きる前にソフトフォークをリリースする場面である。]*

@@ -54,7 +54,7 @@ translationStatus: complete
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #2 — トランザクション設計** である。トランザクション層を端から端まで解説する。価値がどのように表現され、転送され、ロックされ、アンロックされるかを扱う。マイニングのインセンティブ、ブロック重量、手数料市場、ウォレットの使い勝手など、ビットコインのあらゆる要素は、ここで解説する構造の上に成り立っている。
 
-これらの概念がはじめての方は、 [ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)が UTXO・Bitcoin Script・トランザクションを図と一緒に、事前知識ゼロで紹介している。本ページは同じトランザクション層を設計文書として扱う。
+これらの概念がはじめての方は、[ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)が UTXO・Bitcoin Script・トランザクションを図と一緒に、事前知識ゼロで紹介している。本ページは同じトランザクション層を設計文書として扱う。
 
 トランザクション層は 3 つの問いに答える:
 
@@ -160,7 +160,7 @@ flowchart TB
 | **形式** | 従来型: バージョン + 入力 + 出力 + ロックタイム | SegWit: バージョン + マーカー/フラグ + 入力 + 出力 + 証人 + ロックタイム |
 | **証人データ** | 存在しない。署名は scriptSig に埋め込み | 証人フィールドに分離 (BIP 141) |
 | **トランザクション ID** | トランザクション全体の直列化の SHA-256d | `txid` は証人データを除外。`wtxid` は証人データを含む |
-| **改ざん性** | あり — 第三者が scriptSig を変更してもトランザクションは無効にならない | 修正済み — 証人は txid 計算から除外 |
+| **展性** | あり — 第三者が scriptSig を変更してもトランザクションは無効にならない | 修正済み — 証人は txid 計算から除外 |
 | **バージョン** | 常に 1 | v1 または v2。v2 は相対的タイムロック (BIP 68) を有効化 |
 
 ## 3. ビットコインスクリプト
@@ -283,7 +283,7 @@ flowchart TB
 | 革新 | 仕組み | 利点 |
 |---|---|---|
 | **証人ディスカウント** | 証人バイトは 1/4 の重量で計算 (4 WU ではなく 1 WU) | 署名の多いトランザクションの実効手数料を削減。データを証人に移すインセンティブ |
-| **トランザクション改ざん性の修正** | 証人を txid 計算から除外 | 信頼性のあるトランザクション連鎖が可能に (Lightning Network の前提条件) |
+| **トランザクション展性の修正** | 証人を txid 計算から除外 | 信頼性のあるトランザクション連鎖が可能に (Lightning Network の前提条件) |
 | **スクリプトバージョニング** | 証人バージョンフィールドにより新規スクリプト規則をソフトフォークで導入可能 | 将来のアップグレード（Taproot 自体が証人 v1 を使用）が既存ノードを壊さない |
 | **鍵パス支払い** | 単一のシュノア署名で出力鍵を直接検証 | マルチシグ、タイムロック、複雑な条件がすべてチェーン上では単一鍵の支払いに見える — 最大限のプライバシー |
 | **スクリプトパス支払い (MAST)** | 代替スクリプトのマークルツリー。実行された分岐のみが公開される | 複雑なコントラクトが使用したパスだけを露出。未使用の分岐はプライベートなまま |
@@ -315,7 +315,7 @@ flowchart TB
 | **署名サイズ** | 70〜72 バイト (DER) | ECDSA: 70〜72 バイト。シュノア: 64 バイト（固定長） |
 | **鍵集約** | 利用不可 | MuSig2（n-of-n シュノア集約） |
 | **オペコードの利用可能性** | 完全な集合（後に無効化されたオペコードを含む） | 縮小された集合。Tapscript で一部のオペコードを再有効化 |
-| **改ざん性** | 脆弱 — 第三者が scriptSig を変更可能 | 修正済み — 証人は txid から除外 |
+| **展性** | 脆弱 — 第三者が scriptSig を変更可能 | 修正済み — 証人は txid から除外 |
 | **重量/サイズ制限** | トランザクション単位の重量なし。2010 年にブロックサイズ上限を追加 | 最大 400,000 WU の標準トランザクション重量 |
 | **タイムロック** | 絶対ロックタイムのみ（ブロック高または Unix 時刻） | 絶対（ロックタイム）+ 相対 (BIP 68 シーケンス) + スクリプトレベル (`OP_CLTV`、`OP_CSV`) |
 | **手数料引上げによる置換** | 未実装。先着順ポリシー | オプトイン RBF（BIP 125、v0.12）。`-mempoolfullrbf` は v24.0 で追加され、完全 RBF は v28.0 以降の既定ポリシー |
@@ -335,4 +335,4 @@ flowchart TB
 - **Lightning Network とペイメントチャネル**: ここで説明したトランザクション基本要素の上に構築されるレイヤー 2 構成。
 - **ウォレットの鍵導出**: ロックスクリプトで使用されるアドレスを生成する BIP 32/44/84/86 の HD 鍵ツリーとディスクリプターウォレット。
 
-トランザクションは、他のすべての設計ページが触れる対象である。[ブロックチェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)ではブロックの中身、[暗号設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)では署名とハッシュの消費者、[通貨設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)ではコインベースと手数料の仕組み、[P2P ネットワーク設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)では伝播される中身、[ストレージ設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/)では UTXO 集合を更新する単位、[ウォレット設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-wallet-design/)では組み立てて署名する対象、[エコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)では手数料市場とライトニングが扱う単位である。
+トランザクションは、他のすべての設計ページが触れる対象である。[ブロックチェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)ではブロックの中身、[暗号設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)では署名とハッシュの消費者、[貨幣設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)ではコインベースと手数料の仕組み、[P2P ネットワーク設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)では伝播される中身、[ストレージ設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/)では UTXO 集合を更新する単位、[ウォレット設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-wallet-design/)では組み立てて署名する対象、[エコシステム設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-ecosystem-design/)では手数料市場とライトニングが扱う単位である。

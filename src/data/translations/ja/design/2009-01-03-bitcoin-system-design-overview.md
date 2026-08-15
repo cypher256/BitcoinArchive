@@ -100,7 +100,7 @@ graph TB
 | トランザクション層 | UTXO モデル、スクリプト、入力/出力、署名 | [L1 #2 トランザクション](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/) |
 | ブロック/チェーン層 | ヘッダー、マークルツリー、チェーン構造、コインベース | [L1 #3 ブロック/チェーン](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/) |
 | 合意形成エンジン | PoW、難易度調整、フォーク処理、検証 | [L1 #4 合意形成](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/) |
-| 通貨層 | 発行計画、手数料市場、マイナーのインセンティブ | [L1 #5 通貨](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/) |
+| 貨幣層 | 発行計画、手数料市場、マイナーのインセンティブ | [L1 #5 貨幣](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/) |
 | 暗号層 | 鍵、署名、ハッシュ、アドレス導出 | [L1 #6 暗号](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/) |
 | ストレージ層 | ブロックファイル、UTXO データベース、チェーン状態 | [L1 #7 ストレージ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/) |
 | ウォレット/インターフェース | 鍵管理、コイン選択、PSBT、RPC | [L1 #8 ウォレット](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-wallet-design/) |
@@ -228,7 +228,7 @@ flowchart TD
 |---|---|
 | **ビットコイン初心者** | まず[仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)を読み、ここに戻り、L1 #2（トランザクション）→ #3（ブロック）→ #4（合意形成）の順 |
 | **開発者** | 本概観 → L1 #2（トランザクション）→ #3（ブロック）→ #4（合意形成）→ #1（P2P）→ #7（ストレージ） |
-| **研究者/経済学者** | 本概観 → L1 #5（通貨）→ #4（合意形成）→ #2（トランザクション）→ L2 #9（構造進化） |
+| **研究者/経済学者** | 本概観 → L1 #5（貨幣）→ #4（合意形成）→ #2（トランザクション）→ L2 #9（構造進化） |
 | **セキュリティ監査者** | L1 #2（トランザクション）→ #4（合意形成）→ #1（P2P）→ #6（暗号）→ L2 #11（セキュリティモデル） |
 
 ## 7. 設計文書索引
@@ -267,7 +267,7 @@ mindmap
 | 2 | [**トランザクション**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/) | UTXO ライフサイクル、トランザクション構造、スクリプト評価、署名 (ECDSA/シュノア)、SegWit、Taproot |
 | 3 | [**ブロック/チェーン**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/) | ヘッダーフィールド、マークルツリー、チェーン構造、最大作業量チェーン選択、ブロック重量、コインベース |
 | 4 | [**合意形成**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/) | PoW の仕組み、難易度調整、ブロック検証、フォーク種別、有効化メカニズム、ファイナリティモデル |
-| 5 | [**通貨**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/) | 2,100 万枚上限の算術、半減期スケジュール、手数料市場、マイナーのインセンティブ、手数料のみの将来 |
+| 5 | [**貨幣**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/) | 2,100 万枚上限の算術、半減期スケジュール、手数料市場、マイナーのインセンティブ、手数料のみの将来 |
 | 6 | [**暗号**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/) | secp256k1、ECDSA/シュノア、SHA-256d、アドレス導出、HD ウォレット、量子耐性 |
 | 7 | [**ストレージ**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/) | ブロックファイル、UTXO データベース (LevelDB)、チェーン状態、メモリープール、剪定、assumeUTXO |
 | 8 | [**ウォレット / RPC**](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-wallet-design/) | ディスクリプターウォレット、コイン選択、PSBT、手数料推定、RPC/REST/ZMQ インターフェース |

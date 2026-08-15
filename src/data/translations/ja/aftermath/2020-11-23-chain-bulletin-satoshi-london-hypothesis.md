@@ -10,7 +10,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Doncho Karaivanov"
     slug: "doncho-karaivanov"
-description: "ドンチョ・カライヴァノフが、サトシの投稿・コミット・メール 742件の活動インスタンスを分析し、タイムズの見出し証拠やイギリス英語の綴りと合わせて、サトシがロンドンを拠点としていたと論じた。"
+description: "ドンチョ・カライヴァノフが、サトシの投稿・コミット・メール 742件の活動記録を分析し、タイムズの見出し証拠やイギリス英語の綴りと合わせて、サトシがロンドンを拠点としていたと論じた。"
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -46,7 +46,7 @@ translationStatus: complete
 
 ## タイムスタンプ分析
 
-研究では **742件の活動インスタンス** を分析した：
+研究では **742件の活動記録** を分析した：
 - BitcoinTalk 投稿 539件（2009年11月〜2010年12月）
 - SourceForge コミット 169件（2009年10月〜2010年12月）
 - メーリングリストメール 34件（2008年10月〜2010年12月）

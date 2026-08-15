@@ -62,7 +62,7 @@ CoinGeek Weekly Livestream のインタビューで、[サトシ・ナカモト]
 
 ハーンが指す具体的な事例として、サトシ最終公開投稿のわずか 7 日前、2010 年 12 月 4〜5 日に BitcoinTalk で展開された WikiLeaks 募金スレッド (topic-1735) がある。
 
-[Robert S. Horning (RHorning) が投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-04-rhorning-msg26876/)は、道徳的義務・自己犠牲・国家対決を煽る長文だった:
+[Robert S. Horning (RHorning) の投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-1735/2010-12-04-rhorning-msg26876/)は、道徳的義務・自己犠牲・国家対決を煽る長文だった:
 
 <!-- quote: q1 -->
 > 基本的に、望むところだ。WikiLeaks にビットコインを使うよう促そう。私はその行為から生じるあらゆるリスクや影響に立ち向かう覚悟がある。... 米国政府が私を殺すか投獄すれば、このコミュニティに必ず伝わるよう手筈を整える。

@@ -121,7 +121,7 @@ All three identity claims appear together on a single artifact and nowhere else 
 
 ### 1.6 Pre-release-period self-statements (the eleven documented utterances)
 
-The categories above are sorted by *what kind of self-disclosure* each statement is. This subsection re-sorts a subset of them by *when Satoshi said something about the pre-release work* — the design and coding effort that ran in private up to the v0.1 release on January 9, 2009. Eleven documented utterances bear on this period: five made during the work (Aug 2008 – Jul 2009), four made retrospectively (Jun 2010 – Jan 2011), and the two earliest also fix the chronological frame for the cypherpunk-lineage-knowledge question. Listed chronologically:
+The categories above are sorted by *what kind of self-disclosure* each statement is. This subsection re-sorts a subset of them by *when Satoshi said something about the pre-release work* — the design and coding effort that ran in private up to the v0.1 release on January 9, 2009. Eleven documented utterances bear on this period: seven made during the work (Aug 2008 – Jul 2009), four made retrospectively (Jun 2010 – Jan 2011), and the two earliest also fix the chronological frame for the cypherpunk-lineage-knowledge question. Listed chronologically:
 
 | # | Date (UTC) | Recipient or venue | Verbatim phrase relevant to timing or order | What this directly establishes (utterance fact, not interpretation) |
 |---|---|---|---|---|

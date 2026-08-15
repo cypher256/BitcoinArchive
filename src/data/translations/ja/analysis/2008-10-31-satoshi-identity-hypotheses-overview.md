@@ -316,7 +316,7 @@ gantt
 - **3 名は Phase 1 と OS が直接不整合。** [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)（長期 Mac、スネークケース＋タブ）、[ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/)（GitHub 一貫して Linux）、[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)（Unix 主体のツール環境）はいずれも Windows 以外の主要環境が記録されている。
 - **5 名は v0.1 規模の公開コードベースの記録なし。** [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)は 2008 年 4 月に実装協力者を求めた。[ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/)の機密防衛業務は公開コードを生まなかった。[クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/)が示した証拠は英国高等法院により捏造と判定されている。[イーロン・マスク](/BitcoinArchive/ja/participants/elon-musk/)に暗号ソフトの公開実績はなく、[ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/)は公開コードベースの記録のない評論家である。
 - **[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)の個人 OS はアーカイブ記録に存在しない。** Hashcash は Perl と C / C++ の参考実装にまたがるが、それらの参考実装とビットコイン v0.1 の 19,901 行 C++ コードベースとの規模差は、Crypto++ や E4M クラスの公開実績を持つ候補と比べて大きい。
-- **[金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/)の Winny は OS とプラットフォーム（Windows + C++）の水準では一致する**が、Winny ソースは日本語識別子とコメントを含む。ビットコイン v0.1 ソースが示さない記法である。
+- **[金子勇](/BitcoinArchive/ja/participants/isamu-kaneko/)の Winny は OS とプラットフォーム（Windows + C++）の水準では一致する**が、Winny ソースは日本語識別子とコメントを含む。ビットコイン v0.1 のソースには見られない記法である。
 
 ### 5.4 本レイヤの限界
 
@@ -353,7 +353,7 @@ gantt
 
 ### 8.1 複数人説
 
-[2026 年 4 月のドキュメンタリー『Finding Satoshi』](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、サトシ・ナカモトを[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)（実装担当）と[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)（ホワイトペーパー起草担当）の共作として描いた。根拠は活動時刻分析・遺族証言・元 FBI プロファイラーによる動機分析。フィニーとサッサマンは §2〜§5 では別々の単体候補として扱うが、本説は両者を一つの共作仮説に束ねる。反証は単体仮説と重なる。ジェイムソン・ロップとアダム・バックが、フィニーの 2009 年 4 月 18 日レース当日アリバイとの時間矛盾、サッサマンの KU ルーヴェン在籍と活動時間帯の不整合、両家系に Patoshi 残高の痕跡がないことを指摘している。複数人説は、書面に残らないフィニー・サッサマン間の協力関係を別途説明する負担を負う。
+[2026 年 4 月のドキュメンタリー『Finding Satoshi』](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)は、サトシ・ナカモトを[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)（実装担当）と[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)（ホワイトペーパー起草担当）の共作として描いた。根拠は活動時刻分析・遺族証言・元 FBI プロファイラーによる動機分析。フィニーとサッサマンは §2〜§5 では別々の単体候補として扱うが、本説は両者を一つの共作仮説に束ねる。反証は単体仮説と重なる。ジェイムソン・ロップとアダム・バックが、フィニーの 2009 年 4 月 18 日レース当日アリバイとの時間矛盾、サッサマンの KU ルーヴェン在籍と活動時間帯の不整合、いずれの遺産にも Patoshi 残高の痕跡がないことを指摘している。複数人説は、書面に残らないフィニー・サッサマン間の協力関係を別途説明する負担を負う。
 
 ### 8.2 組織・政府機関説
 

@@ -36,7 +36,7 @@ translationStatus: complete
 <!-- speaker: Satoshi Nakamoto -->
 > 「完全に稼働しており、ネットワークは成長している。ソフトウェアを試してくれれば、あなたのビットコインアドレスにコインを送る。」
 
-バウエンスはサトシの [P2P Research メーリングリストにおけるビットコイン発表](/BitcoinArchive/ja/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/)に最初に返信した人物であり、翌日に「プロジェクトはどの程度稼働していますか？実生活で使えるようになるのはいつ頃だと思いますか？」と尋ねて上記の返信を引き出した。バウエンス（1958 年 3 月 21 日生まれ）はベルギーの政治理論家で、彼の P2P Foundation はエクアドル政府やゲント市のためのコモンズベースの移行計画を策定してきた。
+バウエンスはサトシの [P2P Research メーリングリストにおけるビットコイン発表](/BitcoinArchive/ja/entries/emails/p2p-research/bitcoin-open-source/2009-02-11-bitcoin-open-source-p2p-currency/)に最初に返信した人物であり、翌日に「きみのプロジェクトはどの程度動いているのか? 実生活で使えるようになるのはどれくらい先になると思うか?」と尋ねて上記の返信を引き出した。バウエンス（1958 年 3 月 21 日生まれ）はベルギーの政治理論家で、彼の P2P Foundation はエクアドル政府やゲント市のためのコモンズベースの移行計画を策定してきた。
 
 ```mermaid
 timeline

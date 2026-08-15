@@ -57,7 +57,7 @@ Through 2011-2014 Ver was an early investor in many of the foundational Bitcoin 
 | Bitcoin Magazine | Media |
 | Ripple | Payments protocol (then separate) |
 
-At the time he was widely characterized as the "angel investor of Bitcoin," and the nickname "Bitcoin Jesus" — sometimes self-applied, sometimes bestowed on him by journalists — emerged from his evangelistic style at conferences and YouTube videos.
+At the time he was widely characterized as the "angel investor of Bitcoin," and his evangelistic style extended from conference talks to YouTube videos.
 
 In 2014 Ver renounced his US citizenship and acquired citizenship from Saint Kitts and Nevis, citing tax and political reasons. The renunciation event later became a structural element of the 2024 US tax-fraud charges (see below).
 

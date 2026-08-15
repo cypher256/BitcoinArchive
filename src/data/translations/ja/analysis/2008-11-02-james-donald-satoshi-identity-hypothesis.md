@@ -93,4 +93,4 @@ jim.com を運営し、長年サイファーパンク界隈で活動してきた
 - 本エントリーは新しい証拠を提示するものではない。公的に利用可能な資料を整理する。
 - 文体計量の「稀な単語」は二次的な記述（Votta 2021、Wallace 2025）を介して報じられたもので、本エントリーはその具体的な語を再現しない（ここでは公的記録上に確実に定まっていない）。ドナルドの文書化された史実上の役割（最初の返信者でありスケーリングの対話者）は[ジェームズ・A・ドナルド伝記](/BitcoinArchive/ja/participants/james-donald/)にある。
 
-ドナルドの事例は、候補全体に共通するこの必要だが十分ではないという評価枠組みの中で、C 群に位置づけられる。全体の比較は[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)にある。
+ドナルドの事例は、[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)が全候補に適用するこの必要だが十分ではないという評価枠組みの中で、C 群に位置づけられる。
