@@ -10,10 +10,12 @@
  * Two keyword classes are produced per locale:
  *
  *   1. concept — declared explicitly via `inlineLinkKeywords` in
- *      frontmatter. Eligible target types are editorial only:
- *      analysis / article / biography / design / currency. Primary-source types
- *      (forum-post / mailing-list / correspondence / whitepaper / bip /
- *      court-document) cannot claim keywords (recorded as errors).
+ *      frontmatter. Eligible target types: analysis / article / design /
+ *      currency. `biography` entries may also declare `inlineLinkKeywords`,
+ *      but those become person aliases (class 2 below), not concept
+ *      keywords. Primary-source types (forum-post / mailing-list /
+ *      correspondence / whitepaper / bip / court-document) cannot claim
+ *      keywords at all (recorded as errors).
  *
  *   2. person — aggregated from `participants[].name` and `slug` of
  *      every entry, but **only for participants who have a biography
@@ -270,9 +272,9 @@ for (const { name: locale, base } of COLLECTIONS) {
   }
 
   // --- pass 2: concept keywords ------------------------------------------
-  // analysis / article entries' inlineLinkKeywords -> concept keyword.
-  // biography entries' inlineLinkKeywords are person-alias rather than
-  // concept (handled in the person-keywords pass below).
+  // analysis / article / design / currency entries' inlineLinkKeywords ->
+  // concept keyword. biography entries' inlineLinkKeywords are person-alias
+  // rather than concept (handled in the person-keywords pass below).
   const conceptClaims = new Map(); // keyword -> [entry ids]
   for (const ctx of entryContexts) {
     if (ctx.keywords.length === 0) continue;
