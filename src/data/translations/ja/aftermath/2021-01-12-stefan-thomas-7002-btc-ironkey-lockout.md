@@ -26,6 +26,8 @@ secondarySources:
     url: "https://www.wired.com/story/unciphered-ironkey-password-cracking-bitcoin/"
 relatedEntries:
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
+inlineLinkKeywords:
+  - "IronKey"
 translationStatus: complete
 ---
 

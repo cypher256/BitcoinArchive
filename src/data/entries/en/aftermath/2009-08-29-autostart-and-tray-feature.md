@@ -25,6 +25,8 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 relatedEntries:
   - aftermath/2009-12-16-bitcoin-v02-released
+inlineLinkKeywords:
+  - "autostart and minimize-to-tray"
 ---
 
 ![Illustration of an application window collapsing into a system-tray icon beside a checklist card for background-running features, with a small peer-to-peer network icon and a version badge.](/BitcoinArchive/images/analysis/2009-08-29-autostart-and-tray-feature-hero.png)

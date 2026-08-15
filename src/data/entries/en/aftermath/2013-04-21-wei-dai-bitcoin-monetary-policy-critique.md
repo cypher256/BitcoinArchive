@@ -27,6 +27,8 @@ relatedEntries:
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
+inlineLinkKeywords:
+  - "Bitcoins are not digital greenbacks"
 ---
 
 ![A dark navy graphic showing an unopened envelope, a jagged red price line beneath a dashed gold ceiling line, and a golden ascending path branching away from a fading gray path.](/BitcoinArchive/images/analysis/2013-04-21-wei-dai-bitcoin-monetary-policy-critique-hero.png)

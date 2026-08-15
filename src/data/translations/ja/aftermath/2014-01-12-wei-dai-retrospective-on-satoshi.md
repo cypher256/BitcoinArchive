@@ -38,6 +38,8 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "analysis/2008-08-20-satoshi-self-statements"
   - "analysis/2008-08-21-what-they-said-about-satoshi"
+inlineLinkKeywords:
+  - "Ask Any LessWronger Anything"
 translationStatus: complete
 ---
 

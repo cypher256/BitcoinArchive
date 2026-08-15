@@ -26,6 +26,8 @@ secondarySources:
     url: "http://cypherpunks.venona.com/archive/1995/11/msg00070.html"
 relatedEntries:
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
+inlineLinkKeywords:
+  - "Disperse/Collect"
 translationStatus: complete
 ---
 

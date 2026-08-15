@@ -32,6 +32,8 @@ relatedEntries:
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - aftermath/2017-09-04-china-ico-ban
   - analysis/2008-08-21-what-they-said-about-satoshi
+inlineLinkKeywords:
+  - "浮動小数点の発見"
 translationStatus: complete
 ---
 

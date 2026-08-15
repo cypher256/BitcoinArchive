@@ -32,6 +32,8 @@ relatedEntries:
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - design/2009-01-03-bitcoin-system-design-overview
   - aftermath/2008-11-02-james-donald-biography
+inlineLinkKeywords:
+  - "Chancellor on brink of second bailout for banks"
 quotes:
   - id: "q1"
     person: "The Times"

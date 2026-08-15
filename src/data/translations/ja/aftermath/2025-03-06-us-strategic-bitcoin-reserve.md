@@ -63,6 +63,8 @@ relatedEntries:
   - analysis/2026-07-09-bitcoin-ownership-map
   - analysis/2026-07-28-bitcoin-nation-state-policy-history
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+inlineLinkKeywords:
+  - "大統領令 14233"
 translationStatus: "complete"
 ---
 

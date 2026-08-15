@@ -25,6 +25,8 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-12-satoshi-to-trammell-coin-maturity
   - aftermath/2009-01-11-dustin-trammell-biography
+inlineLinkKeywords:
+  - "credit field"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

@@ -27,6 +27,8 @@ secondarySources:
 relatedEntries:
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
   - aftermath/2024-02-21-adam-back-retrospective-testimony
+inlineLinkKeywords:
+  - "probably my biggest mistake"
 quotes:
   - id: "q1"
     person: "Adam Back"

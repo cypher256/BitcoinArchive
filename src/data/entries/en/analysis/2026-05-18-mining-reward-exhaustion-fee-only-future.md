@@ -48,6 +48,8 @@ relatedEntries:
   - design/2009-01-03-bitcoin-consensus-design
   - design/2009-01-03-bitcoin-monetary-design
   - analysis/2010-02-21-bitcoin-price-vs-production-cost
+inlineLinkKeywords:
+  - "sufficiency line"
 translationStatus: complete
 ---
 

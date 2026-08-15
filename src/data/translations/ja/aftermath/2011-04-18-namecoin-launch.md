@@ -23,6 +23,8 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2011-10-13-litecoin-launch
   - aftermath/2013-12-06-dogecoin-launch
+inlineLinkKeywords:
+  - "マージマイニング"
 ---
 
 ![濃紺の背景に「ネームコイン」と題されたインフォグラフィックで、ブロックの連なりが発光する分岐点で NMC と .bit の 2 本の色分けされた経路へ枝分かれし、その脇に小さな分散型レジストリのアイコン、二つのチェーンを結ぶマージマイニングのアイコン、右側に広がる小さなタグ付きブロックの群れが描かれている。](/BitcoinArchive/images/analysis/2011-04-18-namecoin-launch-hero.png)

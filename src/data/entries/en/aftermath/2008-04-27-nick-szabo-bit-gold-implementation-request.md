@@ -38,6 +38,8 @@ relatedEntries:
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+inlineLinkKeywords:
+  - "Anybody want to help me code one up?"
 ---
 
 ![Mockup of a 2008 blog post window with a highlighted quote calling for a coder, beside a dashed-outline gold block labeled unfinished and a timeline connecting April 2008 to October 2008.](/BitcoinArchive/images/analysis/2008-04-27-nick-szabo-bit-gold-implementation-request-hero.png)

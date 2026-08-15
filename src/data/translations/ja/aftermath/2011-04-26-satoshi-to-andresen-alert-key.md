@@ -40,6 +40,8 @@ relatedEntries:
   - aftermath/2011-04-20-forbes-crypto-currency
   - analysis/2008-08-20-satoshi-self-statements
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
+inlineLinkKeywords:
+  - "CAlert キー"
 translationStatus: complete
 ---
 

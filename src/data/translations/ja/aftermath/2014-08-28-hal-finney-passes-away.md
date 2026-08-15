@@ -24,6 +24,8 @@ relatedEntries:
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2019-08-21-hal-finney-rpow-recognition
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
+inlineLinkKeywords:
+  - "アルコー延命財団"
 translationStatus: complete
 ---
 

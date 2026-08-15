@@ -35,6 +35,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-08-20-satoshi-self-statements
+inlineLinkKeywords:
+  - "一杯食わせた"
 quotes:
   - id: "q1"
     person: "Gavin Andresen"

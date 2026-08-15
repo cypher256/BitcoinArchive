@@ -28,6 +28,8 @@ relatedEntries:
   - forum/bitcointalk/topic-183/2010-06-11-gavin-andresen-msg1488
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
+inlineLinkKeywords:
+  - "Bitcoin Faucet"
 ---
 
 ![Illustration of a stylized faucet dripping bitcoin-shaped coin tokens into a teal pool, next to a checkbox verification card and rising numbers indicating coins given away, on a dark navy background with a decorative circle and grid pattern.](/BitcoinArchive/images/analysis/2010-06-11-andresen-bitcoin-faucet-hero.png)

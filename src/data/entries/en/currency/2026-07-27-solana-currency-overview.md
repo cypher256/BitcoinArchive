@@ -48,6 +48,8 @@ relatedEntries:
   - aftermath/2017-01-01-anatoly-yakovenko-biography
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
+inlineLinkKeywords:
+  - "Proof of History"
 translationStatus: complete
 ---
 

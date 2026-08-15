@@ -26,6 +26,8 @@ secondarySources:
 relatedEntries:
   - aftermath/2010-07-15-jeff-garzik-biography
   - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius
+inlineLinkKeywords:
+  - "Great Slashdotting"
 translationStatus: complete
 ---
 

@@ -30,6 +30,8 @@ relatedEntries:
   - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
+inlineLinkKeywords:
+  - "OpenTimestamps"
 translationStatus: complete
 ---
 

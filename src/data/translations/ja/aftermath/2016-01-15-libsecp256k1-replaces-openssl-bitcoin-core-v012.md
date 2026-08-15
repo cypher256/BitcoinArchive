@@ -44,6 +44,8 @@ relatedEntries:
   - "analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies"
   - "aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency"
   - design/2009-01-03-bitcoin-cryptography-design
+inlineLinkKeywords:
+  - "libsecp256k1"
 translationStatus: complete
 ---
 

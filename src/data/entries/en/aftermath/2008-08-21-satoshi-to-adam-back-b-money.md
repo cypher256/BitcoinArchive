@@ -30,6 +30,8 @@ relatedEntries:
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
   - "aftermath/2008-08-20-adam-back-biography"
+inlineLinkKeywords:
+  - "my ideas start from exactly that point"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

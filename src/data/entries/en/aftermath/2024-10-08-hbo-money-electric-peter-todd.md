@@ -45,6 +45,8 @@ relatedEntries:
   - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
+inlineLinkKeywords:
+  - "Money Electric"
 quotes:
   - id: "q1"
     person: "Peter Todd"

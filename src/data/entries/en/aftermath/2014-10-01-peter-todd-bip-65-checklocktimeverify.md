@@ -31,6 +31,8 @@ relatedEntries:
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
   - design/2009-01-03-bitcoin-ecosystem-design
+inlineLinkKeywords:
+  - "OP_CHECKLOCKTIMEVERIFY"
 ---
 
 ![A dark technical diagram of a time-locked Bitcoin transaction script, showing a padlock icon transitioning from locked to unlockable beside a clock face, a stack-and-condition box, and two silhouetted figures joined by an escrow-and-refund flow.](/BitcoinArchive/images/analysis/2014-10-01-peter-todd-bip-65-checklocktimeverify-hero.png)

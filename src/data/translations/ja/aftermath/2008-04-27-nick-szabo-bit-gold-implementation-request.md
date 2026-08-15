@@ -38,6 +38,8 @@ relatedEntries:
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
+inlineLinkKeywords:
+  - "誰かコードを書くのを手伝ってくれないか？"
 translationStatus: complete
 ---
 

@@ -25,6 +25,8 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 relatedEntries:
   - aftermath/2009-12-16-bitcoin-v02-released
+inlineLinkKeywords:
+  - "自動起動とタスクトレイ最小化"
 translationStatus: complete
 ---
 

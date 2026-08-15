@@ -28,6 +28,8 @@ relatedEntries:
   - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - aftermath/2012-07-22-luke-dashjr-biography
+inlineLinkKeywords:
+  - "ASCII-art memorial"
 ---
 
 ![A row of interlocked dark ledger blocks against a navy background, with one block outlined in gold and filled with a grid of small pixel-like glyphs, a lit candle beside it, faint layered envelope outlines above, and two plain silhouette figures standing at either end of the row.](/BitcoinArchive/images/analysis/2011-07-30-len-sassaman-blockchain-tribute-hero.png)

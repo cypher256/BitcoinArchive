@@ -65,6 +65,8 @@ relatedEntries:
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - analysis/2014-11-01-blockstream-centralization-claim
   - currency/2026-07-27-bitcoin-cash-currency-overview
+inlineLinkKeywords:
+  - "the three layers that bind"
 translationStatus: complete
 ---
 

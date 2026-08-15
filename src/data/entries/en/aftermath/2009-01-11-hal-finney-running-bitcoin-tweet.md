@@ -31,6 +31,8 @@ relatedEntries:
   - analysis/2014-03-19-bitcoin-core-rebrand-authority-effects
   - correspondence/hal-finney/2009-01-08-satoshi-to-finney-release
   - aftermath/2014-08-28-hal-finney-passes-away
+inlineLinkKeywords:
+  - "Running bitcoin"
 quotes:
   - id: "q1"
     person: "Hal Finney"

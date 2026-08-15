@@ -27,6 +27,8 @@ relatedEntries:
   - aftermath/2014-02-28-mt-gox-bankruptcy
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
+inlineLinkKeywords:
+  - "FTX 崩壊"
 translationStatus: complete
 ---
 

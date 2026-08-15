@@ -32,6 +32,8 @@ relatedEntries:
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2008-10-31-satoshi-nakamoto-biography
+inlineLinkKeywords:
+  - "CableGate scandal"
 quotes:
   - id: "q1"
     person: "WikiLeaks"

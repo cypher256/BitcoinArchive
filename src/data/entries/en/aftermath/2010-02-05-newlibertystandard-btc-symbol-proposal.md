@@ -26,6 +26,8 @@ relatedEntries:
   - aftermath/2009-10-05-newlibertystandard-biography
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
+inlineLinkKeywords:
+  - "XBT"
 quotes:
   - id: "q1"
     person: "NewLibertyStandard"

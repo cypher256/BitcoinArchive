@@ -26,6 +26,8 @@ relatedEntries:
   - correspondence/dustin-trammell/2009-01-13-satoshi-to-trammell-send-coins
   - aftermath/2009-01-11-dustin-trammell-biography
   - aftermath/2009-02-12-michel-bauwens-biography
+inlineLinkKeywords:
+  - "IP 送金機能"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

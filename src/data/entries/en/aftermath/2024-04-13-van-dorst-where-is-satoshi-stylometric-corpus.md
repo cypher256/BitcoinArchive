@@ -37,6 +37,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
+inlineLinkKeywords:
+  - "Where is Satoshi?"
 ---
 
 ![A dark-themed illustration titled "Where is Satoshi?" shows a field of scattered dots representing thousands of authors, with one dot circled and connected by a dashed line to a spreadsheet-style data panel, a file-size figure, and a five-point radar chart.](/BitcoinArchive/images/analysis/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus-hero.png)

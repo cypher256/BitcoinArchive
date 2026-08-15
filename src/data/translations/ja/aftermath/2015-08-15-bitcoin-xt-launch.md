@@ -31,6 +31,8 @@ relatedEntries:
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - aftermath/2017-08-01-bitcoin-cash-fork
   - aftermath/2017-11-08-segwit2x-cancellation
+inlineLinkKeywords:
+  - "BIP 101"
 ---
 
 ![光る分岐点で二手に分かれ、細い水色の経路には小さなブロックが、太いオレンジの経路には次第に大きくなるブロックが連なるイラストで、左下に長さの異なる二本の横長バー、右側に密集した点群がまばらな点へ薄れていくネットワーク図が添えられている。](/BitcoinArchive/images/analysis/2015-08-15-bitcoin-xt-launch-hero.png)

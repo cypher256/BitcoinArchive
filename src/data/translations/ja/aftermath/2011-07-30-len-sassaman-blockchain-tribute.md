@@ -29,6 +29,8 @@ relatedEntries:
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
   - aftermath/2012-07-22-luke-dashjr-biography
 translationStatus: complete
+inlineLinkKeywords:
+  - "ASCII アート追悼"
 ---
 
 ![紺色の背景に連なる台帳のようなブロックが並び、中央付近の一つだけ金色の枠と小さな点々の模様で縁取られ、その脇には灯る蝋燭が置かれ、上方にはうっすら重なる封筒の輪郭が浮かび、列の両端には簡素な人型のシルエットが立っている。](/BitcoinArchive/images/analysis/2011-07-30-len-sassaman-blockchain-tribute-hero.png)

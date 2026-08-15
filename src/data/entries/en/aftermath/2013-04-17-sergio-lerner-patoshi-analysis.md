@@ -46,6 +46,8 @@ relatedEntries:
   - aftermath/2023-01-12-early-bitcoin-moved
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - aftermath/2026-05-28-noah-doe-lawsuit
+inlineLinkKeywords:
+  - "The Well Deserved Fortune of Satoshi Nakamoto"
 ---
 
 ![Dark teal infographic showing a segmented, rising slope chart, a five-section computer chip icon beside a crossed-out row of small mining-rig icons, and a locked vault holding stacked gold coins next to a magnifying-glass and target icon.](/BitcoinArchive/images/analysis/2013-04-17-sergio-lerner-patoshi-analysis-hero.png)

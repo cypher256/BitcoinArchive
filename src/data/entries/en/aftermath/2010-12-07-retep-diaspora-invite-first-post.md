@@ -32,6 +32,8 @@ relatedEntries:
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
+inlineLinkKeywords:
+  - "retep"
 ---
 
 ![A dark, orange-accented infographic showing a glowing stopwatch marking 41 seconds between "registered" and "first post" labels, a mock forum-post card with a short message, a flat "$2 USD" price tag beside three faded BTC coin icons, a username badge next to its mirror-reversed counterpart, and a horizontal timeline marking three days.](/BitcoinArchive/images/analysis/2010-12-07-retep-diaspora-invite-first-post-hero.png)

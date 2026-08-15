@@ -39,6 +39,8 @@ relatedEntries:
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
+inlineLinkKeywords:
+  - "PipeNet 1.1"
 translationStatus: complete
 quotes:
   - id: "q1"

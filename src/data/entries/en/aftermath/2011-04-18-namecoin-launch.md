@@ -23,6 +23,8 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2011-10-13-litecoin-launch
   - aftermath/2013-12-06-dogecoin-launch
+inlineLinkKeywords:
+  - "merge-mining"
 ---
 
 ![A dark navy diagram titled 'Namecoin' shows a block-chain trunk forking at a glowing point into two colored paths tagged NMC and .bit, next to a small decentralized-registry icon, a merge-mining icon linking two chains, and a cluster of smaller tagged blocks branching off to the right.](/BitcoinArchive/images/analysis/2011-04-18-namecoin-launch-hero.png)

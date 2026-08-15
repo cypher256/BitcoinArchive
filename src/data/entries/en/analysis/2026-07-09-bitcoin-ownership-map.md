@@ -76,6 +76,8 @@ relatedEntries:
   - aftermath/2010-07-06-anonymity-and-pseudonymity
   - forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025
   - analysis/2026-07-28-bitcoin-nation-state-policy-history
+inlineLinkKeywords:
+  - "map of the 21 million"
 translationStatus: complete
 ---
 

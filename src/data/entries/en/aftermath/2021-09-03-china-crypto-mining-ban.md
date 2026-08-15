@@ -39,6 +39,8 @@ relatedEntries:
   - aftermath/2017-09-04-china-ico-ban
   - analysis/2026-07-09-bitcoin-ownership-map
   - analysis/2026-07-28-bitcoin-nation-state-policy-history
+inlineLinkKeywords:
+  - "PlusToken Ponzi scheme"
 translationStatus: "complete"
 ---
 

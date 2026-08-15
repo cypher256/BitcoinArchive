@@ -56,6 +56,8 @@ secondarySources:
 relatedEntries:
   - analysis/2008-08-21-what-they-said-about-satoshi
   - aftermath/2020-07-15-twitter-hack-bitcoin-scam
+inlineLinkKeywords:
+  - "technical tour de force"
 translationStatus: complete
 ---
 

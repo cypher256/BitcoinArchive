@@ -26,6 +26,8 @@ relatedEntries:
   - analysis/2008-08-20-satoshi-self-statements
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
   - analysis/2010-02-21-bitcoin-price-vs-production-cost
+inlineLinkKeywords:
+  - "Bitcoinexchange.com"
 translationStatus: complete
 ---
 

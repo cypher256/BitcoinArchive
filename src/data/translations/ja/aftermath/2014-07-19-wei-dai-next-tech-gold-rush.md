@@ -26,6 +26,8 @@ relatedEntries:
   - "aftermath/2011-02-25-wei-dai-making-money-with-bitcoin"
   - "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique"
   - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
+inlineLinkKeywords:
+  - "Look for the Next Tech Gold Rush"
 translationStatus: complete
 ---
 

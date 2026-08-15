@@ -44,6 +44,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
   - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
+inlineLinkKeywords:
+  - "Len Sassaman and Satoshi: a Cypherpunk history"
 ---
 
 ![A dark-navy infographic with two overlapping clock faces, a hooded silhouette beside a padlock and small network diagram, and a horizontal timeline linking an envelope icon to a fading gap and a cluster of connected dots.](/BitcoinArchive/images/analysis/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history-hero.png)

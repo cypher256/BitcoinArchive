@@ -28,6 +28,8 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/QuadrigaCX"
 relatedEntries:
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
+inlineLinkKeywords:
+  - "custody-collapse-mode"
 ---
 
 ![A dark illustration showing a translucent key frozen in a block of ice, a large closed vault beside a small pile of coins, a closed loop of ledger icons linked by curved arrows, and a thin dotted arc connecting two glowing points, with rows of small statistic labels across the top and bottom.](/BitcoinArchive/images/analysis/2019-04-08-quadrigacx-gerald-cotten-death-hero.png)

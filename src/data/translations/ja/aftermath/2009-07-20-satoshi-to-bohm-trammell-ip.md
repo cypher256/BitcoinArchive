@@ -24,6 +24,8 @@ secondarySources:
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 relatedEntries:
   - aftermath/2021-10-23-dustin-trammell-second-node-testimony
+inlineLinkKeywords:
+  - "70.113.114.209"
 translationStatus: complete
 ---
 

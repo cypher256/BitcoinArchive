@@ -23,6 +23,8 @@ tags:
 secondarySources:
   - name: "Decashed - Node IP Analysis"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
+inlineLinkKeywords:
+  - "There may just not be anybody else running it right now"
 ---
 
 ![Dark navy hero graphic with a date, headline, and short quote on the left, and on the right a single glowing network node linked by a dashed line to an email icon, set within a faint web of scattered dots and connecting lines.](/BitcoinArchive/images/analysis/2009-07-19-satoshi-to-bohm-nobody-running-hero.png)

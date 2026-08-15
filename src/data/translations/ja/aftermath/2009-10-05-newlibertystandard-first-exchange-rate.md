@@ -29,6 +29,8 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - aftermath/2009-07-22-bitcoin-exchange-proposal
+inlineLinkKeywords:
+  - "1 ドル = 1,309.03 BTC"
 translationStatus: complete
 ---
 

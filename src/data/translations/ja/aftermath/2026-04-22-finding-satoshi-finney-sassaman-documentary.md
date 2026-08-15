@@ -46,6 +46,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-08-20-satoshi-self-statements
   - aftermath/2026-05-28-noah-doe-lawsuit
+inlineLinkKeywords:
+  - "Finding Satoshi"
 translationStatus: complete
 ---
 

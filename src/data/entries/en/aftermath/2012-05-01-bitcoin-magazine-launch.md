@@ -27,6 +27,8 @@ relatedEntries:
   - aftermath/2011-09-01-vitalik-buterin-biography
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - forum/bitcointalk/topic-428589/2014-01-23-vbuterin-ethereum-welcome-to-the-beginning
+inlineLinkKeywords:
+  - "Bitcoin Magazine"
 ---
 
 ![Illustration of a small blog card, a print magazine cover, and a tablet displaying an online article arranged in sequence above a timeline running from 2011 to 2015 that forks into a glowing diamond icon on one path and a publishing icon on the other.](/BitcoinArchive/images/analysis/2012-05-01-bitcoin-magazine-launch-hero.png)

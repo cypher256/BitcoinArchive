@@ -26,6 +26,8 @@ relatedEntries:
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-26-andresen-to-satoshi-cia-visit
   - aftermath/2010-07-06-anonymity-and-pseudonymity
+inlineLinkKeywords:
+  - "pirate currency"
 ---
 
 ![Illustration of a vintage magazine cover beside a glowing coin medallion, a gold bar, a dark hooded silhouette lit by camera-flash-like rays, and a three-point timeline on a dark background.](/BitcoinArchive/images/analysis/2011-04-20-forbes-crypto-currency-hero.png)

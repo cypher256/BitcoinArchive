@@ -43,6 +43,8 @@ relatedEntries:
   - design/2009-01-03-bitcoin-consensus-design
   - aftermath/2014-04-18-riccardo-spagni-biography
   - currency/2026-07-27-monero-currency-overview
+inlineLinkKeywords:
+  - "ブロック 74638"
 quotes:
   - id: "q1"
     person: "Jeff Garzik"

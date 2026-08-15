@@ -28,6 +28,8 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/QuadrigaCX"
 relatedEntries:
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
+inlineLinkKeywords:
+  - "保管崩壊型"
 translationStatus: complete
 ---
 

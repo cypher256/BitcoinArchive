@@ -36,6 +36,8 @@ relatedEntries:
   - bip/2015-11-03-bip-0125
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - design/2009-01-03-bitcoin-monetary-design
+inlineLinkKeywords:
+  - "BIP 125"
 quotes:
   - id: "q1"
     person: "Peter Todd"

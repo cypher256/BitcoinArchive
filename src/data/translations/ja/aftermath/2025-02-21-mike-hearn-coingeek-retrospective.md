@@ -29,6 +29,8 @@ relatedEntries:
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
   - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
+inlineLinkKeywords:
+  - "福音主義的な人物たち"
 quotes:
   - id: "q1"
     person: "RHorning"

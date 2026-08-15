@@ -30,6 +30,8 @@ relatedEntries:
   - aftermath/2011-02-22-satoshi-final-email-to-malmi
   - aftermath/2011-08-01-bitcointalk-org-migration
   - aftermath/2010-05-22-bitcoin-pizza-day
+inlineLinkKeywords:
+  - "ビットコインと法定通貨の最初の既知の交換"
 translationStatus: complete
 ---
 

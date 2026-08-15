@@ -62,6 +62,8 @@ relatedEntries:
   - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
   - tweets/adam-back/2026-04-08-response-to-nyt-investigation
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
+inlineLinkKeywords:
+  - "My Quest to Solve Bitcoin's Great Mystery"
 translationStatus: complete
 ---
 

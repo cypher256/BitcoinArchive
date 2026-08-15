@@ -38,6 +38,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
+inlineLinkKeywords:
+  - "Satoshi Nakamoto is (probably) Nick Szabo"
 ---
 
 ![Dark illustration of two document panels connected by dashed lines highlighting matching phrases, with a magnifying glass above and a silhouetted figure beside a row of linked chain blocks below.](/BitcoinArchive/images/analysis/2013-12-05-techcrunch-skye-grey-szabo-stylometric-hero.png)

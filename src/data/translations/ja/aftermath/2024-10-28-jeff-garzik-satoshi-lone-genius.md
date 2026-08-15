@@ -30,6 +30,8 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2008-08-20-satoshi-self-statements
   - analysis/2008-08-21-what-they-said-about-satoshi
+inlineLinkKeywords:
+  - "「ビューティフル・マインド」型の孤独な天才"
 translationStatus: complete
 ---
 

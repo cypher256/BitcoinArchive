@@ -26,6 +26,8 @@ relatedEntries:
   - "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique"
   - "aftermath/2014-07-19-wei-dai-next-tech-gold-rush"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
+inlineLinkKeywords:
+  - "Making money with Bitcoin?"
 ---
 
 ![Diagram contrasting a direct arrow from cash to a bitcoin coin with a longer path looping through a GPU icon labeled as the first mining step, beside a network of connected nodes, a padlock, and an unchecked security-review checklist with a magnifying glass.](/BitcoinArchive/images/analysis/2011-02-25-wei-dai-making-money-with-bitcoin-hero.png)

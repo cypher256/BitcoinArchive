@@ -46,6 +46,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
+inlineLinkKeywords:
+  - "Project Bitcoin"
 translationStatus: complete
 ---
 

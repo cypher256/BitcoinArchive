@@ -26,6 +26,8 @@ relatedEntries:
   - "aftermath/2011-02-25-wei-dai-making-money-with-bitcoin"
   - "aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique"
   - "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
+inlineLinkKeywords:
+  - "Look for the Next Tech Gold Rush"
 ---
 
 ![Infographic with a dim, unopened email icon on a 2009 timeline leading to a glowing coin in 2011, a bar chart rising from a small figure to a much larger one, a tilting balance scale, and a gold pan with a pickaxe.](/BitcoinArchive/images/analysis/2014-07-19-wei-dai-next-tech-gold-rush-hero.png)

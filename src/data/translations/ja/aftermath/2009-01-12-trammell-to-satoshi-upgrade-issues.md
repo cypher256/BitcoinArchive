@@ -27,6 +27,8 @@ relatedEntries:
   - correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-upgrade-issues
   - aftermath/2009-01-11-dustin-trammell-biography
   - design/2009-01-03-bitcoin-block-chain-design
+inlineLinkKeywords:
+  - "v0.1.0 の通信バグ"
 quotes:
   - id: "q1"
     person: "Dustin Trammell"

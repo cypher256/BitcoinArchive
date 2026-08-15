@@ -30,6 +30,8 @@ relatedEntries:
   - aftermath/2009-01-03-genesis-block
   - aftermath/2022-10-06-serhack-alternative-genesis-block
 translationStatus: complete
+inlineLinkKeywords:
+  - "タイムズの見出し説"
 ---
 
 ![紺色を基調としたインフォグラフィックで、タイムラインの両端にブロック 0 とブロック 1 を示す飾り枠付きのアイコンが並び、その間に時計のアイコンを配した大きな空白があり、上部には均等な間隔で並ぶ 6 個の小さなブロックが通常の間隔を表し、下部にはギャップの説明候補を表す 4 つのアイコンカードが並んでいる。](/BitcoinArchive/images/analysis/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery-hero.png)

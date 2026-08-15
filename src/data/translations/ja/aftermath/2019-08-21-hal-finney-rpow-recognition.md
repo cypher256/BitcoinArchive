@@ -34,6 +34,8 @@ relatedEntries:
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - aftermath/2009-01-12-first-bitcoin-transaction
 translationStatus: complete
+inlineLinkKeywords:
+  - "RPOW"
 ---
 
 ![ハッシュ模様の丸、金色に輝くトークン、南京錠付きのサーバーチップ、コインの記号を矢印でつないだ、紺色を背景にしたイラスト](/BitcoinArchive/images/analysis/2019-08-21-hal-finney-rpow-recognition-hero.png)

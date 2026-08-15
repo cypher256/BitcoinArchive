@@ -31,6 +31,8 @@ relatedEntries:
   - analysis/2015-08-15-bitcoin-fork-wars-as-not-oss
   - aftermath/2017-08-01-bitcoin-cash-fork
   - aftermath/2017-11-08-segwit2x-cancellation
+inlineLinkKeywords:
+  - "BIP 101"
 ---
 
 ![Illustration of a chain of blocks splitting at a glowing fork point into two diverging paths: a thin cyan path with small blocks and a thick orange path with blocks that grow progressively larger, alongside two horizontal capacity bars and a network of dots thinning from a dense cluster to a few scattered points.](/BitcoinArchive/images/analysis/2015-08-15-bitcoin-xt-launch-hero.png)

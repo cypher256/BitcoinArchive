@@ -37,6 +37,8 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2014-03-07T12:21:00Z"
     sourceEntryId: "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"
+inlineLinkKeywords:
+  - "I am not Dorian Nakamoto"
 ---
 
 ![A dark timeline illustration spanning 2009 to 2014, showing a house lit by camera flashes, a padlock icon at 2014, and a message card displaying a short quoted denial.](/BitcoinArchive/images/analysis/2014-03-07-satoshi-p2p-foundation-return-hero.png)

@@ -23,6 +23,8 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/James_Howells"
 relatedEntries:
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
+inlineLinkKeywords:
+  - "ビットコイン破壊の物理喪失型"
 translationStatus: complete
 ---
 

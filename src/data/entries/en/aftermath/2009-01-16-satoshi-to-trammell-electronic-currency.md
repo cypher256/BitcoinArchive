@@ -31,6 +31,8 @@ relatedEntries:
   - correspondence/dustin-trammell/2009-01-16-satoshi-to-trammell-electronic-currency
   - aftermath/2009-01-11-dustin-trammell-biography
   - analysis/2010-12-27-satoshi-non-technical-silence
+inlineLinkKeywords:
+  - "pay-to-send"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

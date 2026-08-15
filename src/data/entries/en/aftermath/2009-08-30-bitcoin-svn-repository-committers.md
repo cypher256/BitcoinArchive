@@ -40,6 +40,8 @@ relatedEntries:
   - aftermath/2010-12-03-handover-to-gavin
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-09-satoshi-code-analysis
+inlineLinkKeywords:
+  - "SourceForge SVN era"
 ---
 
 ![Dark-themed infographic titled "Bitcoin SourceForge SVN Repository," showing a horizontal commit-history timeline running from 2009 to 2011 with four colored contribution arcs of different lengths, a folder icon labeled SVN at the left end, an arrow pointing to a migration icon at the right end, and four abstract silhouette figures below representing the repository's four committers.](/BitcoinArchive/images/analysis/2009-08-30-bitcoin-svn-repository-committers-hero.png)

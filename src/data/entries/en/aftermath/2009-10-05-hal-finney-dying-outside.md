@@ -26,6 +26,8 @@ relatedEntries:
   - aftermath/2019-08-21-hal-finney-rpow-recognition
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
   - tweets/hal-finney/2009-01-11-running-bitcoin
+inlineLinkKeywords:
+  - "Dying Outside"
 quotes:
   - id: "q1"
     person: "Hal Finney"

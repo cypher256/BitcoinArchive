@@ -46,6 +46,8 @@ relatedEntries:
   - aftermath/2023-01-12-early-bitcoin-moved
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - aftermath/2026-05-28-noah-doe-lawsuit
+inlineLinkKeywords:
+  - "The Well Deserved Fortune of Satoshi Nakamoto"
 translationStatus: complete
 ---
 

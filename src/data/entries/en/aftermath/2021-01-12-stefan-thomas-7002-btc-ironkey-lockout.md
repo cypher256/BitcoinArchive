@@ -26,6 +26,8 @@ secondarySources:
     url: "https://www.wired.com/story/unciphered-ironkey-password-cracking-bitcoin/"
 relatedEntries:
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
+inlineLinkKeywords:
+  - "IronKey"
 ---
 
 ![Dark illustration of a metallic USB security key at the center of a glowing amber ring of attempt markers, flanked by a padlock icon, a torn paper slip, and a stack of coin discs sealed behind a glass panel.](/BitcoinArchive/images/analysis/2021-01-12-stefan-thomas-7002-btc-ironkey-lockout-hero.png)

@@ -28,6 +28,8 @@ relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-satoshi-to-trammell-use-cases
   - aftermath/2009-01-11-dustin-trammell-biography
   - aftermath/2009-05-04-faq-draft-and-investment-warning
+inlineLinkKeywords:
+  - "pay-to-send email feature"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

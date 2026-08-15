@@ -25,6 +25,8 @@ secondarySources:
     url: "https://cryptoslate.com/never-before-seen-satoshi-nakamoto-emails-add-several-details-to-bitcoins-origin-lore/"
 relatedEntries:
   - aftermath/2009-01-15-satoshi-to-trammell-use-cases
+inlineLinkKeywords:
+  - "consider it an investment"
 ---
 
 ![Illustration of a FAQ draft document with one bullet point crossed out in red ink, an arrow pointing to two envelope icons labeled Review and Reply, and a warning triangle beside a crossed-out path leading from an investment label toward a payment-system arrow icon.](/BitcoinArchive/images/analysis/2009-05-04-faq-draft-and-investment-warning-hero.png)

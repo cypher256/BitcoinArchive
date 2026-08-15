@@ -40,6 +40,8 @@ relatedEntries:
   - aftermath/2020-08-22-sergio-lerner-patoshi-mining-machine
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
+inlineLinkKeywords:
+  - "Extended Patoshi anomaly"
 ---
 
 ![A dark blue infographic showing a semicircular gauge with a glowing cluster of markers on one side, beside a grid of teal hexagon icons in which one hexagon is highlighted orange and linked by a dashed line.](/BitcoinArchive/images/analysis/2021-09-30-plos-one-patoshi-anomaly-study-hero.png)

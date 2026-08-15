@@ -29,6 +29,8 @@ relatedEntries:
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
   - forum/bitcointalk/topic-823/2010-08-15-satoshi-msg9539
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
+inlineLinkKeywords:
+  - "10% 保有者"
 translationStatus: complete
 ---
 

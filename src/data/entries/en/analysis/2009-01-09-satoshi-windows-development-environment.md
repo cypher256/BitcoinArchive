@@ -48,6 +48,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - design/2009-01-03-bitcoin-architecture-evolution
   - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius
+inlineLinkKeywords:
+  - "consumer-active, contributor-passive"
 translationStatus: complete
 ---
 

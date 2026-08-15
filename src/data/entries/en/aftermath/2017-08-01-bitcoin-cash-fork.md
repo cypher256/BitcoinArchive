@@ -39,6 +39,8 @@ relatedEntries:
   - aftermath/2015-01-01-amaury-sechet-biography
   - design/2009-01-03-bitcoin-consensus-design
   - currency/2026-07-27-bitcoin-cash-currency-overview
+inlineLinkKeywords:
+  - "Emergency Difficulty Adjustment (EDA)"
 ---
 
 ![A row of connected block icons splits at a highlighted circular junction into two diverging paths: a thicker amber-colored branch trailing an ascending price line above, and a thinner teal-colored branch below it, set against a two-tone cream-and-tan background.](/BitcoinArchive/images/analysis/2017-08-01-bitcoin-cash-fork-hero.png)

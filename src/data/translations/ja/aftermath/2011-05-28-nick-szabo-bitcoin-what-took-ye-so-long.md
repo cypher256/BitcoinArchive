@@ -31,6 +31,8 @@ relatedEntries:
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
   - "aftermath/2005-12-29-nick-szabo-biography"
   - "aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request"
+inlineLinkKeywords:
+  - "libtech"
 quotes:
   - id: "q1"
     person: "Nick Szabo"

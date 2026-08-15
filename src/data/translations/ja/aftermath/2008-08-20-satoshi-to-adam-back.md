@@ -33,6 +33,8 @@ relatedEntries:
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
+inlineLinkKeywords:
+  - "Electronic Cash Without a Trusted Third Party"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

@@ -23,6 +23,8 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/James_Howells"
 relatedEntries:
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
+inlineLinkKeywords:
+  - "physical-loss-mode Bitcoin destruction"
 ---
 
 ![Illustration of a landfill cross-section with a glowing hard-drive icon buried beneath wavy waste-layer bands, next to an ascending staircase of escalating offers and a small courthouse silhouette with a checkmark.](/BitcoinArchive/images/analysis/2024-12-03-james-howells-7500-btc-newport-landfill-hero.png)

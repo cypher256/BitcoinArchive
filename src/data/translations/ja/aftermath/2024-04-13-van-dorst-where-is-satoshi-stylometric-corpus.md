@@ -37,6 +37,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
+inlineLinkKeywords:
+  - "Where is Satoshi?"
 translationStatus: complete
 ---
 

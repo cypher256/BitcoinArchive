@@ -41,6 +41,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
+inlineLinkKeywords:
+  - "サトシ・ナカモトの謎とビットコイン誕生を読み解く"
 translationStatus: complete
 ---
 

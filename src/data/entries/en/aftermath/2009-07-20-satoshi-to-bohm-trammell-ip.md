@@ -24,6 +24,8 @@ secondarySources:
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
 relatedEntries:
   - aftermath/2021-10-23-dustin-trammell-second-node-testimony
+inlineLinkKeywords:
+  - "70.113.114.209"
 ---
 
 ![Two abstract node silhouettes linked by a single line across a dark network backdrop, with a follow-up email envelope showing an IP address between them and a small evidence-and-magnifying-glass motif in the corner.](/BitcoinArchive/images/analysis/2009-07-20-satoshi-to-bohm-trammell-ip-hero.png)

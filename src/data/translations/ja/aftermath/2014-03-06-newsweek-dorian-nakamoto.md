@@ -29,6 +29,8 @@ relatedEntries:
   - "aftermath/2016-12-12-satoshi-p2pfoundation-profile-login"
   - "aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin"
   - "aftermath/2014-03-06-dorian-nakamoto-biography"
+inlineLinkKeywords:
+  - "ビットコインの顔"
 translationStatus: complete
 ---
 

@@ -27,6 +27,8 @@ relatedEntries:
   - correspondence/dustin-trammell/2009-01-15-trammell-to-satoshi-address-verification
   - aftermath/2009-01-11-dustin-trammell-biography
   - design/2009-01-03-bitcoin-wallet-design
+inlineLinkKeywords:
+  - '"Advertise my BitCoin address to the network" toggle'
 quotes:
   - id: "q1"
     person: "Dustin Trammell"

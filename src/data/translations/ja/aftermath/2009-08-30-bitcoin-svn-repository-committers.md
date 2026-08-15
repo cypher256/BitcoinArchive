@@ -41,6 +41,8 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - analysis/2009-01-09-satoshi-code-analysis
 translationStatus: complete
+inlineLinkKeywords:
+  - "SourceForge SVN 時代"
 ---
 
 ![暗い色調のインフォグラフィックで、「Bitcoin SourceForge SVN Repository」という見出しの下に、2009年から 2011年にかけてのコミット履歴を示す横長のタイムラインが描かれている。太さの異なる 4 本の色分けされた曲線、左端の SVN と書かれたフォルダーアイコン、右端への移行を示す矢印、そしてタイムライン下部に並ぶ 4 体の抽象的なシルエット人物像が配置されている。](/BitcoinArchive/images/analysis/2009-08-30-bitcoin-svn-repository-committers-hero.png)

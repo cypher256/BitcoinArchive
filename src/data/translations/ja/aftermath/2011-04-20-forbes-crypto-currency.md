@@ -26,6 +26,8 @@ relatedEntries:
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2011-04-26-andresen-to-satoshi-cia-visit
   - aftermath/2010-07-06-anonymity-and-pseudonymity
+inlineLinkKeywords:
+  - "海賊通貨"
 translationStatus: complete
 ---
 

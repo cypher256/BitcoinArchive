@@ -33,6 +33,8 @@ relatedEntries:
   - aftermath/2022-11-11-ftx-collapse
   - aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest
   - analysis/2026-05-24-satoshi-design-vs-current-reality
+inlineLinkKeywords:
+  - "the irreversibility lesson"
 ---
 
 ![Dark illustration of a keycard labeled "key present, secret lost," a discarded hardware device on a landfill mound labeled "physical disposal," a cracked vault labeled "custody collapse," and a sealed cube labeled "frozen UTXO," connected by dashed lines under the heading "no recovery mechanism, no trusted third party"](/BitcoinArchive/images/analysis/2026-06-02-bitcoin-iconic-losses-overview-hero.png)

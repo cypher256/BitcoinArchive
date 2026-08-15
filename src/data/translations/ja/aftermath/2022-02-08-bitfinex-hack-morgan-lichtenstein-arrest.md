@@ -29,6 +29,8 @@ relatedEntries:
   - aftermath/2014-02-28-mt-gox-bankruptcy
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
   - aftermath/2025-03-06-us-strategic-bitcoin-reserve
+inlineLinkKeywords:
+  - "ラズルカーン"
 translationStatus: complete
 ---
 

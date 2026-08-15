@@ -24,6 +24,8 @@ relatedEntries:
   - aftermath/2014-08-28-hal-finney-biography
   - aftermath/2019-08-21-hal-finney-rpow-recognition
   - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
+inlineLinkKeywords:
+  - "Alcor Life Extension Foundation"
 ---
 
 ![An abstract illustration of a silhouetted figure sending a glowing bitcoin coin across a divide toward a translucent cryopreservation capsule, with a padlocked computer terminal and a candlelit folded document in the foreground.](/BitcoinArchive/images/analysis/2014-08-28-hal-finney-passes-away-hero.png)

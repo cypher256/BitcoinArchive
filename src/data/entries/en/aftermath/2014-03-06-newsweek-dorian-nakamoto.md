@@ -29,6 +29,8 @@ relatedEntries:
   - "aftermath/2016-12-12-satoshi-p2pfoundation-profile-login"
   - "aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin"
   - "aftermath/2014-03-06-dorian-nakamoto-biography"
+inlineLinkKeywords:
+  - "The Face Behind Bitcoin"
 ---
 
 ![A tabloid magazine cover looms over a suburban street of small houses, beside a redacted quote card and an online forum message, as a faceless figure walks away from a line of silhouetted figures holding long camera lenses.](/BitcoinArchive/images/analysis/2014-03-06-newsweek-dorian-nakamoto-hero.png)

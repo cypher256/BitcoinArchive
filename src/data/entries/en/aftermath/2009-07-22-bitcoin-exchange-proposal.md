@@ -26,6 +26,8 @@ relatedEntries:
   - analysis/2008-08-20-satoshi-self-statements
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
   - analysis/2010-02-21-bitcoin-price-vs-production-cost
+inlineLinkKeywords:
+  - "Bitcoinexchange.com"
 ---
 
 ![Two facing letter envelopes connected by a dotted line, with a gold Bitcoin coin and a teal euro coin between them joined by exchange arrows, over a faint rising price-chart fragment](/BitcoinArchive/images/analysis/2009-07-22-bitcoin-exchange-proposal-hero.png)

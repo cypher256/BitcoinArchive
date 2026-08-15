@@ -24,6 +24,8 @@ relatedEntries:
   - aftermath/2015-01-01-amaury-sechet-biography
   - currency/2026-07-27-bitcoin-cash-currency-overview
   - currency/2026-07-27-bitcoin-sv-currency-overview
+inlineLinkKeywords:
+  - "ハッシュ戦争"
 ---
 
 ![ブロックチェーンが分岐点で 2 本の経路に分かれ、紫色の経路は大きめのブロックと古い巻物のアイコンへ、青緑色の経路は標準サイズのブロックへとつながり、それぞれの下にハッシュパワーを示す棒グラフが並んでいる。](/BitcoinArchive/images/analysis/2018-11-15-bitcoin-sv-fork-hero.png)

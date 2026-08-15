@@ -30,6 +30,8 @@ secondarySources:
 relatedEntries:
   - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
   - "aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary"
+inlineLinkKeywords:
+  - "ノア・ドゥ"
 translationStatus: complete
 ---
 

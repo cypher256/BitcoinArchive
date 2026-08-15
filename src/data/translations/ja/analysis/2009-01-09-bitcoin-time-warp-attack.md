@@ -32,6 +32,8 @@ secondarySources:
 relatedEntries:
   - analysis/2009-01-09-satoshi-code-analysis
   - design/2009-01-03-bitcoin-consensus-design
+inlineLinkKeywords:
+  - "時間ねじれ攻撃のバグ"
 translationStatus: complete
 ---
 

@@ -31,6 +31,8 @@ relatedEntries:
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2011-04-20-forbes-crypto-currency
+inlineLinkKeywords:
+  - "In-Q-Tel"
 quotes:
   - id: "q1"
     person: "Gavin Andresen"

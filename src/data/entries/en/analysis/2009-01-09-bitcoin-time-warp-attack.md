@@ -32,6 +32,8 @@ secondarySources:
 relatedEntries:
   - analysis/2009-01-09-satoshi-code-analysis
   - design/2009-01-03-bitcoin-consensus-design
+inlineLinkKeywords:
+  - "time-warp bug"
 ---
 
 ![A stylized clock face beside a horizontal chain of numbered blocks, with the first block crossed out and excluded from a measured span bracketing the rest, next to a downward-easing difficulty gauge](/BitcoinArchive/images/analysis/2009-01-09-bitcoin-time-warp-attack-hero.png)

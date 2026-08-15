@@ -38,6 +38,8 @@ relatedEntries:
   - aftermath/2015-08-15-bitcoin-xt-launch
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - analysis/2014-11-01-blockstream-centralization-claim
+inlineLinkKeywords:
+  - "ビットコイン実験の決着"
 translationStatus: complete
 ---
 

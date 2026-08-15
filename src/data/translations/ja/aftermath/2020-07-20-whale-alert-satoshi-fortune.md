@@ -33,6 +33,8 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
   - analysis/2026-07-09-bitcoin-ownership-map
+inlineLinkKeywords:
+  - "The Satoshi Fortune"
 translationStatus: complete
 ---
 

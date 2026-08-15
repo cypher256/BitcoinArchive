@@ -31,6 +31,8 @@ relatedEntries:
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
   - design/2009-01-03-bitcoin-ecosystem-design
+inlineLinkKeywords:
+  - "OP_CHECKLOCKTIMEVERIFY"
 translationStatus: complete
 ---
 

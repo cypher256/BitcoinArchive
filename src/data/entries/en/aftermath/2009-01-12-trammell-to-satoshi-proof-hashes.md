@@ -25,6 +25,8 @@ secondarySources:
 relatedEntries:
   - correspondence/dustin-trammell/2009-01-12-trammell-to-satoshi-proof-hashes
   - aftermath/2009-01-11-dustin-trammell-biography
+inlineLinkKeywords:
+  - "proof-hashes Google Group"
 quotes:
   - id: "q1"
     person: "Dustin Trammell"

@@ -33,6 +33,8 @@ relatedEntries:
   - aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough
   - analysis/2008-08-21-what-they-said-about-satoshi
 translationStatus: complete
+inlineLinkKeywords:
+  - "天才の仕業だ"
 ---
 
 ![虫眼鏡でコード画面をのぞき込むシルエットの人物を、四方から迫る 9 本の番号付き赤い矢印が取り囲み、そのうち 1 本は判子のようなマークに阻まれている。](/BitcoinArchive/images/analysis/2011-10-10-dan-kaminsky-bitcoin-security-hero.png)

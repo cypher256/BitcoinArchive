@@ -47,6 +47,8 @@ relatedEntries:
   - aftermath/2014-02-28-mt-gox-bankruptcy
   - aftermath/2017-09-04-china-ico-ban
   - analysis/2026-07-28-bitcoin-nation-state-policy-history
+inlineLinkKeywords:
+  - "Payment Services Act"
 translationStatus: "complete"
 ---
 

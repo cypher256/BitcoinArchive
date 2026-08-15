@@ -29,6 +29,8 @@ relatedEntries:
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - aftermath/2009-07-22-bitcoin-exchange-proposal
+inlineLinkKeywords:
+  - "$1 = 1,309.03 BTC"
 ---
 
 ![An electricity meter dial connects by a dashed arrow to a handwritten cost-calculation note, which connects onward to a glowing abstract coin, with a small exchange badge below.](/BitcoinArchive/images/analysis/2009-10-05-newlibertystandard-first-exchange-rate-hero.png)

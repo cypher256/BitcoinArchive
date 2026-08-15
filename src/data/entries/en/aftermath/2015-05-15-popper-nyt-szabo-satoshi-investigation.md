@@ -41,6 +41,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
+inlineLinkKeywords:
+  - "Decoding the Enigma of Satoshi Nakamoto and the Birth of Bitcoin"
 ---
 
 ![A faceless silhouette bust is examined by a golden magnifying glass beside a torn newspaper clipping, with dotted lines connecting to three icon cards -- a proof-of-work grid, a padlock, and a scales-and-coin symbol -- above a row of four glowing outlined rectangles on a dark navy background.](/BitcoinArchive/images/analysis/2015-05-15-popper-nyt-szabo-satoshi-investigation-hero.png)

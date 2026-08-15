@@ -40,6 +40,8 @@ relatedEntries:
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2026-05-23-how-bitcoin-works-visual-glossary"
   - "tweets/adam-back/2026-04-08-response-to-nyt-investigation"
+inlineLinkKeywords:
+  - "Hashcash"
 quotes:
   - id: "q1"
     person: "Adam Back"

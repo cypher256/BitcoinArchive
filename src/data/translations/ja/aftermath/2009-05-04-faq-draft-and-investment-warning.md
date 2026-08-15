@@ -25,6 +25,8 @@ secondarySources:
     url: "https://cryptoslate.com/never-before-seen-satoshi-nakamoto-emails-add-several-details-to-bitcoins-origin-lore/"
 relatedEntries:
   - aftermath/2009-01-15-satoshi-to-trammell-use-cases
+inlineLinkKeywords:
+  - "投資として考えてください"
 translationStatus: complete
 ---
 

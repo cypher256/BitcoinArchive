@@ -24,6 +24,8 @@ relatedEntries:
   - aftermath/2015-01-01-amaury-sechet-biography
   - currency/2026-07-27-bitcoin-cash-currency-overview
   - currency/2026-07-27-bitcoin-sv-currency-overview
+inlineLinkKeywords:
+  - "hash war"
 ---
 
 ![Illustration of a blockchain splitting at a fork point into two diverging paths, a purple one leading to larger blocks and an old scroll icon, and a teal one leading to standard-sized blocks, with a hashpower bar chart beneath each path.](/BitcoinArchive/images/analysis/2018-11-15-bitcoin-sv-fork-hero.png)

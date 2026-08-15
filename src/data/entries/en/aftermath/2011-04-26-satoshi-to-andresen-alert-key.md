@@ -40,6 +40,8 @@ relatedEntries:
   - aftermath/2011-04-20-forbes-crypto-currency
   - analysis/2008-08-20-satoshi-self-statements
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis
+inlineLinkKeywords:
+  - "CAlert key"
 ---
 
 ![An illustration of two silhouetted figures facing a glowing key that emits broadcast waves beneath a floating email envelope, with a network of connected nodes in the background.](/BitcoinArchive/images/analysis/2011-04-26-satoshi-to-andresen-alert-key-hero.png)

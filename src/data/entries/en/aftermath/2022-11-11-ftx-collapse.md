@@ -27,6 +27,8 @@ relatedEntries:
   - aftermath/2014-02-28-mt-gox-bankruptcy
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
+inlineLinkKeywords:
+  - "FTX collapse"
 ---
 
 ![Illustration of a stack of tokens cracking apart and scattering beside a row of toppling dominoes, with an open vault glowing around a shattered numeral representing billions in missing funds, a courthouse silhouette, and a small separate emblem representing an unaffected network.](/BitcoinArchive/images/analysis/2022-11-11-ftx-collapse-hero.png)

@@ -29,6 +29,8 @@ relatedEntries:
   - aftermath/2014-02-28-mt-gox-bankruptcy
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
   - aftermath/2025-03-06-us-strategic-bitcoin-reserve
+inlineLinkKeywords:
+  - "Razzlekhan"
 ---
 
 ![A dark illustration centers on a vault-like block holding a cluster of coins, with curving trace lines connecting it to icons for a funnel-shaped mixer, an ID card, a gold bar, and a darknet marker, alongside a shield icon and stylized city-skyline silhouettes in the background.](/BitcoinArchive/images/analysis/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest-hero.png)

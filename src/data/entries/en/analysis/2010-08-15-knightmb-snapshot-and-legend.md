@@ -29,6 +29,8 @@ relatedEntries:
   - forum/bitcointalk/topic-823/2010-08-15-overflow-bug-serious
   - forum/bitcointalk/topic-823/2010-08-15-satoshi-msg9539
   - forum/bitcointalk/topic-827/2010-08-15-version-0-3-10-block-74638-overflow-patch
+inlineLinkKeywords:
+  - "10% holder"
 ---
 
 ![A glowing blue snapshot cube stands at the center of a dark blue scene, ringed by fractured red diamond shapes and oversized numerals suggesting a data overflow, with a faceless silhouetted figure above surrounded by speech-bubble outlines, and a row of vintage desktop computers lined up along the bottom edge.](/BitcoinArchive/images/analysis/2010-08-15-knightmb-snapshot-and-legend-hero.png)

@@ -32,6 +32,8 @@ relatedEntries:
   - aftermath/2010-09-01-satoshi-andresen-other-projects-notice
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+inlineLinkKeywords:
+  - "SVN handover"
 quotes:
   - id: "q1"
     person: "Gavin Andresen"

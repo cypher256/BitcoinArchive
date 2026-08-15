@@ -28,6 +28,8 @@ relatedEntries:
   - correspondence/dustin-trammell/2009-01-25-satoshi-to-trammell-spam-pow
   - aftermath/2009-01-11-dustin-trammell-biography
   - aftermath/2009-01-17-jonathan-thornburg-biography
+inlineLinkKeywords:
+  - "reverse-spamming"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

@@ -28,6 +28,8 @@ relatedEntries:
   - forum/bitcointalk/topic-183/2010-06-11-gavin-andresen-msg1488
   - aftermath/2010-06-11-gavin-andresen-biography
   - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
+inlineLinkKeywords:
+  - "ビットコイン・フォーセット"
 translationStatus: complete
 ---
 

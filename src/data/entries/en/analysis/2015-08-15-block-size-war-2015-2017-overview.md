@@ -41,6 +41,8 @@ relatedEntries:
   - analysis/2014-11-01-blockstream-centralization-claim
   - design/2009-01-03-bitcoin-block-chain-design
   - aftermath/2008-11-06-ray-dillinger-biography
+inlineLinkKeywords:
+  - "New York Agreement"
 ---
 
 ![A branching timeline diagram of the main chain splitting into failed fork attempts (Bitcoin XT, Classic, Unlimited), a SegWit2x branch cancelled by a clock, and a persistent Bitcoin Cash fork breaking away from block 478558](/BitcoinArchive/images/analysis/2015-08-15-block-size-war-2015-2017-overview-hero.png)

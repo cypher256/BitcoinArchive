@@ -41,6 +41,8 @@ relatedEntries:
   - analysis/2014-11-01-blockstream-centralization-claim
   - design/2009-01-03-bitcoin-block-chain-design
   - aftermath/2008-11-06-ray-dillinger-biography
+inlineLinkKeywords:
+  - "ニューヨーク合意"
 translationStatus: complete
 ---
 

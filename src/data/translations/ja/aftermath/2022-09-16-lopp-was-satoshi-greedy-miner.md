@@ -40,6 +40,8 @@ relatedEntries:
   - "aftermath/2023-10-21-lopp-hal-finney-not-satoshi"
   - "aftermath/2023-01-12-early-bitcoin-moved"
   - "aftermath/2017-09-20-ray-dillinger-if-id-known"
+inlineLinkKeywords:
+  - "サトシは欲張りなマイナーだったか？"
 translationStatus: complete
 ---
 

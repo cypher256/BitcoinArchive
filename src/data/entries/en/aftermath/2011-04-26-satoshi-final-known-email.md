@@ -37,6 +37,8 @@ relatedEntries:
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin
+inlineLinkKeywords:
+  - "farewell pair"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

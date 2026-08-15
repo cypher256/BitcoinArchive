@@ -38,6 +38,8 @@ relatedEntries:
   - aftermath/2015-08-15-bitcoin-xt-launch
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - analysis/2014-11-01-blockstream-centralization-claim
+inlineLinkKeywords:
+  - "The resolution of the Bitcoin experiment"
 ---
 
 ![A gold bitcoin coin rolls out through an open doorway, followed by a chain of blocks squeezed through a stone hourglass-shaped bottleneck, beside an ornate empty chair with keys left on its seat at an otherwise full round table, while a rising price chart is crossed by a large stamped rejection mark in the background.](/BitcoinArchive/images/analysis/2016-01-14-mike-hearn-resolution-bitcoin-experiment-hero.png)

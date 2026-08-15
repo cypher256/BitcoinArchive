@@ -38,6 +38,8 @@ relatedEntries:
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
   - analysis/2010-02-21-bitcoin-price-vs-production-cost
+inlineLinkKeywords:
+  - "Bitcoin Pizza Day"
 quotes:
   - id: "q1"
     person: "Laszlo Hanyecz"

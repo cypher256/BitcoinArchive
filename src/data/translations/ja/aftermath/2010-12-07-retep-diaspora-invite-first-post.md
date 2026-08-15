@@ -32,6 +32,8 @@ relatedEntries:
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
+inlineLinkKeywords:
+  - "retep"
 translationStatus: complete
 ---
 

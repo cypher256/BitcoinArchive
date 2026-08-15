@@ -31,6 +31,8 @@ relatedEntries:
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
   - correspondence/hal-finney/2009-01-08-satoshi-to-finney-release
   - aftermath/2019-08-21-hal-finney-rpow-recognition
+inlineLinkKeywords:
+  - "first person-to-person Bitcoin transaction"
 ---
 
 ![Illustration of a row of blockchain blocks with one highlighted block, linked by a direct-transfer line between two abstract silhouette figures, with a calendar tab and a terminal window beneath.](/BitcoinArchive/images/analysis/2009-01-12-first-bitcoin-transaction-hero.png)

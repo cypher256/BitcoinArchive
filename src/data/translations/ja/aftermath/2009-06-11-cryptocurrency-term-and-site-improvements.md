@@ -22,6 +22,8 @@ tags:
 secondarySources:
   - name: "Cointelegraph - Newly released Satoshi emails"
     url: "https://web.archive.org/web/20260219032610/https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
+inlineLinkKeywords:
+  - "P2P 暗号通貨"
 translationStatus: complete
 ---
 

@@ -77,6 +77,8 @@ relatedEntries:
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi-b-money-pointer
+inlineLinkKeywords:
+  - "グロマー回答"
 quotes:
   - id: "q1"
     person: "Adam Back"

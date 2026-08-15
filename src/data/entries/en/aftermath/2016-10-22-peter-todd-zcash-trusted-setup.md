@@ -32,6 +32,8 @@ relatedEntries:
   - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
   - aftermath/2016-09-15-peter-todd-opentimestamps-announcement
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
+inlineLinkKeywords:
+  - "Zcash trusted setup ceremony"
 ---
 
 ![An illustration of a car driving a mountain road at dusk, a foil-lined box, a six-node network converging on a central point, and a metal pan glowing over flame in a forest clearing.](/BitcoinArchive/images/analysis/2016-10-22-peter-todd-zcash-trusted-setup-hero.png)

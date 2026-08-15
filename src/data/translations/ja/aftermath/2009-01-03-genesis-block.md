@@ -32,6 +32,8 @@ relatedEntries:
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
   - design/2009-01-03-bitcoin-system-design-overview
   - aftermath/2008-11-02-james-donald-biography
+inlineLinkKeywords:
+  - "財務相、銀行への 2 度目の救済へ"
 quotes:
   - id: "q1"
     person: "The Times"

@@ -30,6 +30,8 @@ relatedEntries:
   - aftermath/2011-02-22-satoshi-final-email-to-malmi
   - aftermath/2011-08-01-bitcointalk-org-migration
   - aftermath/2010-05-22-bitcoin-pizza-day
+inlineLinkKeywords:
+  - "first known exchange of Bitcoin for fiat currency"
 ---
 
 ![An exchange-rate ticket showing 5,050 BTC converted to $5.02, alongside two abstract circular icons connected by dashed lines representing a bitcoin transfer and a PayPal payment, with a terminal-style panel showing an early Bitcoin exchange rate.](/BitcoinArchive/images/analysis/2009-10-12-martti-malmi-first-btc-sale-hero.png)

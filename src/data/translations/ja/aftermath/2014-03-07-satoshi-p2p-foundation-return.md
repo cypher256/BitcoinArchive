@@ -37,6 +37,8 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2014-03-07T12:21:00Z"
     sourceEntryId: "forum/p2pfoundation/bitcoin-open-source/2014-03-07-bitcoin-open-source-implementation-of-p2p-currency"
+inlineLinkKeywords:
+  - "私はドリアン・ナカモトではない"
 translationStatus: complete
 ---
 

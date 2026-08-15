@@ -39,6 +39,8 @@ relatedEntries:
   - aftermath/2015-01-01-amaury-sechet-biography
   - design/2009-01-03-bitcoin-consensus-design
   - currency/2026-07-27-bitcoin-cash-currency-overview
+inlineLinkKeywords:
+  - "Emergency Difficulty Adjustment (EDA)"
 ---
 
 ![一列に連なったブロックのアイコンが、丸い分岐点から二手に分かれ、上側へオレンジ色の太い鎖と上昇する価格線が伸び、下側へやや細い青緑色の鎖が伸びていく、クリーム色とベージュの二色に塗り分けられた背景のイラスト。](/BitcoinArchive/images/analysis/2017-08-01-bitcoin-cash-fork-hero.png)

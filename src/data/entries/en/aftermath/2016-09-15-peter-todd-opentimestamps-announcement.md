@@ -30,6 +30,8 @@ relatedEntries:
   - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
   - aftermath/2016-10-22-peter-todd-zcash-trusted-setup
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
+inlineLinkKeywords:
+  - "OpenTimestamps"
 ---
 
 ![A dark navy infographic showing a stack of small document icons converging upward through branching hash nodes into one glowing root node linked to a Bitcoin block icon, beside a stopwatch showing under a second, a calendar-server rack icon, and a stack of weathered documents in the corner.](/BitcoinArchive/images/analysis/2016-09-15-peter-todd-opentimestamps-announcement-hero.png)

@@ -87,6 +87,8 @@ relatedEntries:
   - aftermath/2017-09-04-china-ico-ban
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+inlineLinkKeywords:
+  - "一度も転換しなかった二つの国・地域"
 translationStatus: "complete"
 ---
 

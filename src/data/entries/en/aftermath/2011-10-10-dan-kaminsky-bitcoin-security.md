@@ -32,6 +32,8 @@ relatedEntries:
   - analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies
   - aftermath/2024-08-06-forensicxs-bitcoin-v01-code-walkthrough
   - analysis/2008-08-21-what-they-said-about-satoshi
+inlineLinkKeywords:
+  - "this guy is a genius"
 ---
 
 ![A silhouetted figure studies a glowing code panel through a magnifying glass while nine numbered red arrows converge on it from every side, one intercepted by a stamped seal.](/BitcoinArchive/images/analysis/2011-10-10-dan-kaminsky-bitcoin-security-hero.png)

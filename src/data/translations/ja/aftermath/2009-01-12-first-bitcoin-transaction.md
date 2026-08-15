@@ -31,6 +31,8 @@ relatedEntries:
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
   - "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release"
   - aftermath/2019-08-21-hal-finney-rpow-recognition
+inlineLinkKeywords:
+  - "史上初の個人間ビットコイン送金"
 translationStatus: complete
 ---
 

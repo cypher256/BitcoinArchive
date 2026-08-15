@@ -52,6 +52,7 @@ inlineLinkKeywords:
   - "ソラナの通貨設計"
   - "ソラナの発行スケジュール"
   - "ソラナの検証者集中"
+  - "Proof of History"
 translationStatus: complete
 ---
 

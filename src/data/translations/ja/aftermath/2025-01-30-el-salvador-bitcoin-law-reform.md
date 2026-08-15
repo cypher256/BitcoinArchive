@@ -43,6 +43,8 @@ relatedEntries:
   - analysis/2026-07-09-bitcoin-ownership-map
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - analysis/2026-07-28-bitcoin-nation-state-policy-history
+inlineLinkKeywords:
+  - "立法令第 199 号"
 translationStatus: "complete"
 ---
 

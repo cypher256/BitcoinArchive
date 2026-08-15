@@ -44,6 +44,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
   - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
+inlineLinkKeywords:
+  - "レン・サッサマンとサトシ：サイファーパンク史"
 translationStatus: complete
 ---
 

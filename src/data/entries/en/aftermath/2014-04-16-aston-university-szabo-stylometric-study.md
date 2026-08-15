@@ -46,6 +46,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
+inlineLinkKeywords:
+  - "Project Bitcoin"
 ---
 
 ![An illustration of eleven identical faceless silhouettes lined up beneath a spotlighted whitepaper-like document, with one silhouette circled in gold, a magnifying glass over the document, and a swirling fingerprint-like spiral beside a university icon, in dark navy and gold tones.](/BitcoinArchive/images/analysis/2014-04-16-aston-university-szabo-stylometric-study-hero.png)

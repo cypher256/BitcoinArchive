@@ -60,6 +60,8 @@ relatedEntries:
   - aftermath/2011-04-01-roger-ver-biography
   - aftermath/2013-03-05-gregory-maxwell-biography
   - bip/2015-12-21-bip-0141
+inlineLinkKeywords:
+  - "Blockstream がビットコインを支配している"
 translationStatus: complete
 ---
 

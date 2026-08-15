@@ -61,6 +61,8 @@ relatedEntries:
   - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
   - tweets/adam-back/2026-04-08-response-to-nyt-investigation
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
+inlineLinkKeywords:
+  - "My Quest to Solve Bitcoin's Great Mystery"
 ---
 
 ![Two overlapping typewritten documents with circled matching marks sit beside a magnifying glass hovering over a lined note board, while two faceless silhouetted figures sit across a small desk in a dim room, a small mask resting beside an empty chair in the foreground.](/BitcoinArchive/images/analysis/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation-hero.png)

@@ -33,6 +33,8 @@ relatedEntries:
   - aftermath/2022-11-11-ftx-collapse
   - aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest
   - analysis/2026-05-24-satoshi-design-vs-current-reality
+inlineLinkKeywords:
+  - "不可逆性の教訓"
 translationStatus: complete
 ---
 

@@ -27,6 +27,8 @@ relatedEntries:
   - aftermath/2021-09-03-china-crypto-mining-ban
   - analysis/2026-07-28-bitcoin-nation-state-policy-history
   - aftermath/2017-04-01-japan-payment-services-act-amendment
+inlineLinkKeywords:
+  - "ICO による資金調達リスクの防止に関する公告"
 translationStatus: complete
 ---
 

@@ -30,6 +30,8 @@ relatedEntries:
   - aftermath/2009-01-03-genesis-block
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery
+inlineLinkKeywords:
+  - "Alternative Genesis Block"
 translationStatus: complete
 ---
 

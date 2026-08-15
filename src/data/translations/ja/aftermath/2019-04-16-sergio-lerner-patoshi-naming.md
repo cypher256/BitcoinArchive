@@ -35,6 +35,8 @@ relatedEntries:
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
   - aftermath/2021-09-30-plos-one-patoshi-anomaly-study
   - aftermath/2022-09-16-lopp-was-satoshi-greedy-miner
+inlineLinkKeywords:
+  - "Patoshi パターン"
 translationStatus: complete
 ---
 

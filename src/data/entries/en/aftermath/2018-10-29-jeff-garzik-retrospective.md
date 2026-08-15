@@ -26,6 +26,8 @@ secondarySources:
 relatedEntries:
   - aftermath/2010-07-15-jeff-garzik-biography
   - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius
+inlineLinkKeywords:
+  - "Great Slashdotting"
 ---
 
 ![Dark-blue illustration for a Bitcoin retrospective, showing a browser-window icon spawning a wave of glowing message cards, two faceless silhouetted figures linked by an envelope, a three-tier ranking chart, and a computer screen beside an open padlock.](/BitcoinArchive/images/analysis/2018-10-29-jeff-garzik-retrospective-hero.png)

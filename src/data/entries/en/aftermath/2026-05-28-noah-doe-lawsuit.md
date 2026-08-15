@@ -30,6 +30,8 @@ secondarySources:
 relatedEntries:
   - "aftermath/2013-04-17-sergio-lerner-patoshi-analysis"
   - "aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary"
+inlineLinkKeywords:
+  - "Noah Doe"
 ---
 
 ![A courthouse with scales of justice and a broken key stands beside a grid of padlock icons, a sealed vault holding a single Bitcoin token, a stamped legal filing, a stack of coins, and a small percentage chart, all on a dark navy background.](/BitcoinArchive/images/analysis/2026-05-28-noah-doe-lawsuit-hero.png)
