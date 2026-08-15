@@ -411,6 +411,66 @@ function rewriteSvgTree(root) {
   }
 }
 
+/**
+ * Read an SVG element's property under either its expected hast/
+ * property-information camelCase key or the literal kebab-case
+ * attribute name — `rehype-mermaid`'s upstream HTML-to-hast conversion
+ * has been observed to preserve either form depending on the
+ * attribute, so callers that need a specific presentation attribute
+ * check both rather than assume one casing.
+ */
+function readProp(props, camel, kebab) {
+  if (!props) return undefined;
+  if (props[camel] !== undefined) return props[camel];
+  return props[kebab];
+}
+
+/**
+ * Mermaid's `timeline` renderer positions the title `<text>` at a fixed
+ * x that is not recomputed against the diagram's final width once every
+ * period/section has been laid out: the offset from true center stays
+ * roughly constant (~350-370 SVG units) regardless of how wide the
+ * diagram grows, so titles drift further off-center the more periods a
+ * timeline has. No upstream fix exists yet (closest related report:
+ * mermaid-js/mermaid#5858, "Timeline does not honor `width`
+ * configuration" — a hardcoded value in timelineRenderer.ts). We
+ * recenter it ourselves: unlike every other text node Mermaid emits in
+ * this diagram type, the title carries no `text-anchor` of its own, so
+ * switching it to `middle` and setting `x` to the viewBox's true
+ * horizontal center fixes it without needing to measure the rendered
+ * text width at build time.
+ */
+function centerTimelineTitle(svg) {
+  // hast/property-information models `aria-roledescription` as a
+  // space-separated-token list property, so it comes through as
+  // `ariaRoleDescription: ["timeline"]` rather than the plain string
+  // the HTML attribute actually holds — normalize before comparing.
+  const roleDescRaw = readProp(svg.properties, 'ariaRoleDescription', 'aria-roledescription');
+  const roleDesc = Array.isArray(roleDescRaw) ? roleDescRaw.join(' ') : roleDescRaw;
+  if (roleDesc !== 'timeline') return;
+  const viewBox = readProp(svg.properties, 'viewBox', 'viewbox');
+  if (typeof viewBox !== 'string') return;
+  const parts = viewBox.trim().split(/\s+/).map(Number);
+  if (parts.length !== 4 || parts.some((n) => !Number.isFinite(n))) return;
+  const [minX, , width] = parts;
+  const centerX = minX + width / 2;
+
+  const titleNode = (svg.children || []).find(
+    (child) =>
+      child?.type === 'element' &&
+      child.tagName === 'text' &&
+      readProp(child.properties, 'fontWeight', 'font-weight') === 'bold' &&
+      readProp(child.properties, 'fontSize', 'font-size') === '4ex',
+  );
+  if (!titleNode) return;
+  titleNode.properties = titleNode.properties || {};
+  titleNode.properties.x = centerX;
+  titleNode.properties.textAnchor = 'middle';
+  // hast may have parsed the original attribute under either casing;
+  // make sure a stray kebab-case duplicate doesn't win at serialization.
+  delete titleNode.properties['text-anchor'];
+}
+
 function isMermaidFigureBlock(node) {
   if (!node || node.type !== 'element' || node.tagName !== 'figure') return false;
   const cls = node.properties?.className;
@@ -443,6 +503,11 @@ export function rehypeMermaidThemer() {
 
       // Rewrite the SVG (style block + per-element style/fill/stroke).
       rewriteSvgTree(svg);
+
+      // Fix Mermaid's off-center timeline title (see function doc).
+      // Run after color rewriting so this doesn't interact with the
+      // style-block substitution pass.
+      centerTimelineTitle(svg);
 
       // Mark the figure-block so it is obvious in DevTools that the
       // plugin ran. Idempotent: skipped if already present.
