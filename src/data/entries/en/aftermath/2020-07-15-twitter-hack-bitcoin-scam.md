@@ -21,6 +21,8 @@ secondarySources:
     url: "https://www.justice.gov/usao-ndca/pr/three-individuals-charged-alleged-roles-twitter-hack"
   - name: "New York Times coverage"
     url: "https://www.nytimes.com/2020/07/15/technology/twitter-hack-bill-gates-elon-musk.html"
+relatedEntries:
+  - aftermath/2013-05-06-bill-gates-bitcoin-technical-tour-de-force
 ---
 
 ![A dark illustration of a glowing broken padlock over an admin control panel, a row of silhouette profiles with verified badges (some marked with a red X), a Bitcoin coin splitting into two, and a blockchain ledger examined by a magnifying glass.](/BitcoinArchive/images/analysis/2020-07-15-twitter-hack-bitcoin-scam-hero.png)

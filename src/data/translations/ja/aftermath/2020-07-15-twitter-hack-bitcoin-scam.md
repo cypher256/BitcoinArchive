@@ -21,6 +21,8 @@ secondarySources:
     url: "https://www.justice.gov/usao-ndca/pr/three-individuals-charged-alleged-roles-twitter-hack"
   - name: "New York Times coverage"
     url: "https://www.nytimes.com/2020/07/15/technology/twitter-hack-bill-gates-elon-musk.html"
+relatedEntries:
+  - aftermath/2013-05-06-bill-gates-bitcoin-technical-tour-de-force
 translationStatus: complete
 ---
 

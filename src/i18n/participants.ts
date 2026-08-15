@@ -6,6 +6,7 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   'amaury-sechet': 'アモリー・セシェ',
   'anatoly-yakovenko': 'アナトリー・ヤコベンコ',
   'bill-frantz': 'ビル・フランツ',
+  'bill-gates': 'ビル・ゲイツ',
   'billy-markus': 'ビリー・マーカス',
   'brad-garlinghouse': 'ブラッド・ガーリングハウス',
   'charles-hoskinson': 'チャールズ・ホスキンソン',

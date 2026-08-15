@@ -64,6 +64,7 @@ secondarySources:
 relatedEntries:
   - analysis/2008-08-20-satoshi-self-statements
   - analysis/2010-12-27-satoshi-non-technical-silence
+  - aftermath/2013-05-06-bill-gates-bitcoin-technical-tour-de-force
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - aftermath/2011-10-10-dan-kaminsky-bitcoin-security
@@ -216,7 +217,7 @@ The last word in this category belongs to Hal Finney, writing in 2013 [under an 
 
 By the 2010s the question of Satoshi had outgrown the mailing list. Prominent voices weighed in first, then institutions began answering in their own right.
 
-A UCLA finance professor, Bhagwan Chowdhry, formally nominated Satoshi for the Nobel Prize in Economics in 2015, writing that he could "barely think of another innovation in Economic and Finance in the last several decades" whose influence surpassed it. Bill Gates called Bitcoin "a technical tour de force." Even the design's fiercest critics conceded the same clause: Paul Krugman, the Nobel-winning economist who spent years dismissing Bitcoin's economics, allowed that it was "a technically sweet solution to a problem" — the same phrase Oppenheimer used about the bomb.
+A UCLA finance professor, Bhagwan Chowdhry, formally nominated Satoshi for the Nobel Prize in Economics in 2015, writing that he could "barely think of another innovation in Economic and Finance in the last several decades" whose influence surpassed it. Bill Gates [called Bitcoin "a technical tour de force"](/BitcoinArchive/entries/aftermath/2013-05-06-bill-gates-bitcoin-technical-tour-de-force/). Even the design's fiercest critics conceded the same clause: Paul Krugman, the Nobel-winning economist who spent years dismissing Bitcoin's economics, allowed that it was "a technically sweet solution to a problem" — the same phrase Oppenheimer used about the bomb.
 
 The strangest institutional testimony is negative space. When journalists filed Freedom of Information Act requests for records about Satoshi Nakamoto, the CIA responded that it could "neither confirm nor deny the existence of the requested documents" — the Glomar response, the formula an agency uses when even confirming or denying would reveal something — and the FBI answered a 2024 request the same way. The Oxford English Dictionary, meanwhile, admitted "satoshi" as an English word in 2019: one hundred millionth of a bitcoin, a currency unit named for a person nobody can name.
 
