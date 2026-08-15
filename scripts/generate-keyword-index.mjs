@@ -79,9 +79,13 @@ const COLLECTIONS = [
 
 const OUTPUT = path.join(ROOT, 'src/data/keyword-index.json');
 
-// Editorial types eligible to claim concept keywords. Anything else is
-// primary-source and cannot be a definition target.
-const CONCEPT_ELIGIBLE_TYPES = new Set(['analysis', 'article', 'biography', 'design', 'currency']);
+// Editorial types eligible to claim concept keywords. `biography` is
+// deliberately absent: its inlineLinkKeywords are always diverted to the
+// person-alias pass below (see the unconditional `type === 'biography'`
+// skip in the concept-claims loop) before this set is ever consulted for
+// that type. Anything else outside this set is primary-source and cannot
+// be a definition target.
+const CONCEPT_ELIGIBLE_TYPES = new Set(['analysis', 'article', 'design', 'currency']);
 
 // Verbatim file path fragments — entries whose path contains one of these
 // are whole-record primary source and excluded from auto-link (and from
@@ -276,7 +280,8 @@ for (const { name: locale, base } of COLLECTIONS) {
     if (!CONCEPT_ELIGIBLE_TYPES.has(ctx.type)) {
       errors.push(
         `[${locale}] Entry "${ctx.id}" has type="${ctx.type}" but declares ` +
-        `inlineLinkKeywords. Only analysis/article/biography/design/currency may claim keywords.`
+        `inlineLinkKeywords. Only analysis/article/design/currency may claim concept keywords ` +
+        `(biography declares person aliases instead).`
       );
       continue;
     }

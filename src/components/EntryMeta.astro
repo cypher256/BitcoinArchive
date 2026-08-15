@@ -60,7 +60,20 @@ interface Props {
 }
 
 const { date, author, entryType, source, lang, participants = [], tags = [], inlineLinkKeywords = [], xHandle, updatedAt, createdAt } = Astro.props;
-const showDefinesRow = inlineLinkKeywords.length > 0 && (entryType === 'analysis' || entryType === 'article' || entryType === 'design' || entryType === 'currency');
+// Keywords with 0 backlinks are dropped entirely, not just their count
+// badge: their /keywords/{slug}/ destination has nothing to show but a
+// "Defined in:" callout pointing right back at this same entry (a
+// dead-end click). The frontmatter declaration keeps working for
+// auto-linking other entries' body prose regardless of this display
+// filter — this only affects what's rendered here.
+const isDefinesEligibleType = entryType === 'analysis' || entryType === 'article' || entryType === 'design' || entryType === 'currency';
+const definedKeywords = isDefinesEligibleType
+  ? inlineLinkKeywords
+      .map((kw, originalIndex) => ({ kw, n: keywordCounts[lang]?.[kw] ?? 0, originalIndex }))
+      .filter(({ n }) => n > 0)
+      .sort((a, b) => b.n - a.n || a.originalIndex - b.originalIndex)
+  : [];
+const showDefinesRow = definedKeywords.length > 0;
 const t = useTranslations(lang);
 const typeLabel = t(`type.${entryType}` as any) || entryType;
 const sourceLabel = t(`source.${source}` as any) || source;
@@ -124,32 +137,20 @@ const isSatoshiAuthor =
   </div>
 )}
 
-{showDefinesRow && (() => {
-  // Sort by backlink count descending; 0-count keywords sink to the end.
-  // Original frontmatter order acts as tiebreaker (stable sort), so
-  // editor-chosen sequence is preserved within equal-count groups.
-  const sortedKeywords = inlineLinkKeywords
-    .map((kw, originalIndex) => ({
-      kw,
-      n: keywordCounts[lang]?.[kw] ?? 0,
-      originalIndex,
-    }))
-    .sort((a, b) => b.n - a.n || a.originalIndex - b.originalIndex);
-  return (
-    <div class="defines-row">
-      <span class="defines-label">{lang === 'ja' ? '定義：' : 'Defines:'}</span>
-      {sortedKeywords.map(({ kw, n }, i) => {
-        const slug = slugifyKeyword(kw);
-        return (
-          <>
-            <a class="defines-keyword" href={localePath(`/keywords/${slug}/`, lang)}>{kw}{n > 0 && <span class="defines-count"> ({n})</span>}</a>
-            {i < sortedKeywords.length - 1 && <span class="defines-sep">&middot;</span>}
-          </>
-        );
-      })}
-    </div>
-  );
-})()}
+{showDefinesRow && (
+  <div class="defines-row">
+    <span class="defines-label">{lang === 'ja' ? '定義：' : 'Defines:'}</span>
+    {definedKeywords.map(({ kw, n }, i) => {
+      const slug = slugifyKeyword(kw);
+      return (
+        <>
+          <a class="defines-keyword" href={localePath(`/keywords/${slug}/`, lang)}>{kw}<span class="defines-count"> ({n})</span></a>
+          {i < definedKeywords.length - 1 && <span class="defines-sep">&middot;</span>}
+        </>
+      );
+    })}
+  </div>
+)}
 
 {tags.length > 0 && (
   <div class="tags-row">

@@ -2269,7 +2269,7 @@ them out across the archive.
 
 **Concept keywords** — declared via `inlineLinkKeywords` in the
 frontmatter of an editorial entry (`type: analysis` / `article` /
-`biography` / `design`). Link target is the entry itself
+`design` / `currency`). Link target is the entry itself
 (`/{locale}/entries/{entry-id}/`).
 
 ```yaml
