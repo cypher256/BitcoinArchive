@@ -837,15 +837,21 @@ blockquote > .quote-speaker-tag:first-child {
   font-family: var(--font-heading);
   font-size: 0.8rem;
   color: var(--color-text-muted);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 .entry-card .card-header time { white-space: nowrap; }
+/* line-height set here (not left to inherit body's 1.75) so every
+   variant (card / related / home / biography / meta) gets a line box
+   close to its actual text height -- unset, the inherited 1.75 adds
+   invisible leading below the date row that no margin/gap value can
+   remove. */
 .entry-dates {
   display: flex;
   flex-wrap: wrap;
   min-width: 0;
   align-items: center;
   gap: 0.25rem 0.75rem;
+  line-height: 1.3;
 }
 .entry-dates .entry-date {
   display: inline-flex;
@@ -859,6 +865,13 @@ blockquote > .quote-speaker-tag:first-child {
    inventing a new colour — the "de-emphasized" look already comes from
    --color-text-muted itself. */
 .entry-dates .entry-date-label { font-weight: 600; }
+/* meta and biography are not cards -- out of scope for the card
+   date-title tightening. Restore the pre-tightening line-height
+   (body's inherited 1.75) so their appearance is unchanged. */
+.entry-dates--meta,
+.entry-dates--biography {
+  line-height: 1.75;
+}
 .entry-dates--meta { gap: 0.4rem; }
 .entry-dates--meta .entry-date-sep { color: var(--color-border); }
 .entry-dates--biography {
@@ -874,7 +887,7 @@ blockquote > .quote-speaker-tag:first-child {
   gap: 0.25rem 0.75rem;
   font-family: var(--font-heading);
   font-size: 0.78rem;
-  color: var(--color-accent);
+  color: var(--color-text-muted);
   letter-spacing: 0.05em;
 }
 /* Below ~900px the card grid narrows enough that "Event ..." + "Updated

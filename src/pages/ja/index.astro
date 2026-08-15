@@ -377,16 +377,32 @@ function tagWeight(count: number, max: number): number {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
-    padding: 1.1rem 1.3rem 1.3rem;
-    /* Reserves the typical natural .body height (measured 151.5px at
-       1280px with the common 1-line title + 2-line desc combination) so
-       slack space flows to the end of the flex column instead of wedging
-       a gap between title and description (see .analysis-card .body for
-       the same fix on the other home section). One card's EntryDates row
-       occasionally wraps to two lines and grows past this floor -- that's
-       fine, min-height is a floor, not a cap; better one card runs
-       slightly taller than every other card carrying dead padding for it. */
-    min-height: 9.5rem;
+    /* Top padding is 1.1rem + 0.1875rem (3px): the entry-dates
+       line-height tightening (1.75 -> 1.3) removes leading evenly
+       above and below the date glyph, so the visible text crept 3px
+       closer to the thumbnail even though the box edge (padding-top
+       itself) never moved. This restores the pre-tightening visual
+       gap between thumbnail and date text; only the date-title gap
+       below is meant to shrink. */
+    padding: 1.2875rem 1.3rem 1.3rem;
+    /* Reserves the typical natural .body height. Re-measured 144.1px /
+       9.01rem at 1280px with min-height:0 (common 1-line title +
+       2-line desc): down 4.8px from the original 151.5px/9.47rem
+       baseline via the start-title margin-top pull below, then back
+       up 3px via the padding-top compensation above -- the line-height
+       tightening's own -5.6px and the padding-top's +3px are two
+       sides of the same glyph-position fix and net out close to a
+       wash for the natural-height calculation. min-height (8.8rem/
+       140.8px) sits below this and no longer binds for the common
+       case; it remains as the floor for shorter 1-line-desc cases.
+       Slack space (when the floor does bind) flows to the end of the
+       flex column instead of wedging a gap between title and
+       description (see .analysis-card .body for the same fix on the
+       other home section). One card's EntryDates row occasionally
+       wraps to two lines and grows past this floor -- that's fine,
+       min-height is a floor, not a cap; better one card runs slightly
+       taller than every other card carrying dead padding for it. */
+    min-height: 8.8rem;
   }
   .start-card .start-title {
     font-family: var(--font-heading);
@@ -398,6 +414,9 @@ function tagWeight(count: number, max: number): number {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    /* Pulls the title closer to the date row above it without touching
+       the .body gap, which also spaces title -> description below. */
+    margin-top: -0.3rem;
   }
   .start-card .start-desc {
     font-size: 0.95rem;

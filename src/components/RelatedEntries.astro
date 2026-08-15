@@ -278,15 +278,27 @@ const showMoreLabel = t('related.showMore' as any).replace('{n}', String(hiddenT
     min-width: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
-    padding: 0.6rem 0.7rem 0.75rem;
+    gap: 0.2rem;
+    /* Top padding is 0.6rem + 0.1875rem (3px): the entry-dates
+       line-height tightening (1.75 -> 1.3) removes leading evenly
+       above and below the date glyph, so the visible text crept 3px
+       closer to the thumbnail even though the box edge (padding-top
+       itself) never moved. This restores the pre-tightening visual
+       gap between thumbnail and date text; only the date-title gap
+       below is meant to shrink. */
+    padding: 0.7875rem 0.7rem 0.75rem;
     /* Matches the natural max .related-body height measured at 3
-       columns, 2-line titles (93.6px) so all cards in a row land on
-       the same height instead of leaving a gap under 1-line titles
-       (see .analysis-card .body on the home page for the same
-       container-level min-height pattern and why it beats per-element
-       min-height). */
-    min-height: 5.9rem;
+       columns, 2-line titles (re-measured 89.8px / 5.61rem after the
+       date-title gap tightening, the entry-dates line-height
+       tightening, and the padding-top glyph-position compensation
+       above). 5.4rem/86.4px sits below that, so a 2-line title still
+       sets the row height and this floor only binds shorter
+       1-line-title cards -- so all cards in a row land on the same
+       height instead of leaving a gap under 1-line titles (see
+       .analysis-card .body on the home page for the same
+       container-level min-height pattern and why it beats
+       per-element min-height). */
+    min-height: 5.4rem;
   }
   .related-title {
     font-size: 1.05rem;
