@@ -232,7 +232,7 @@ UCLA の金融学教授バグワン・チョードリーは 2015 年、サトシ
 
 ```mermaid
 timeline
-    title 他者の言葉 2008 - 2024
+    title 証言の年表 2008 - 2024
     2008 : 最初の返信は 先行研究への案内 (8月21日)
     %% link: /BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-21-adam-back-to-satoshi-b-money-pointer/
          : メーリングリストの疑い スケール ボットネット インフレ (11月)
