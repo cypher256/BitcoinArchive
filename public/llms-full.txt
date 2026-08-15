@@ -48,8 +48,8 @@ Private email exchanges between Satoshi and key participants:
 - **Wei Dai** (3 entries): Creator of b-money. Satoshi contacted him after independently reinventing similar concepts.
 - **Hal Finney** (2 entries): First Bitcoin user besides Satoshi. Received the first BTC transaction. Discussed early bugs and improvements.
 
-### Forum Posts (2,616 entries)
-- **BitcoinTalk** (2,545 posts): Satoshi's posts and context posts from other participants — technical discussions, announcements, bug reports, and community interactions from November 2009 to December 2010
+### Forum Posts (2,615 entries)
+- **BitcoinTalk** (2,544 posts): Satoshi's posts and context posts from other participants — technical discussions, announcements, bug reports, and community interactions from November 2009 to December 2010
 - **GitHub PRs** (64 posts): Bitcoin Core pull-request threads relevant to Satoshi's design choices and their later supersession
 - **P2P Foundation** (7 posts): Bitcoin announcement and early discussions
 
