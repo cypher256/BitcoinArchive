@@ -238,6 +238,15 @@ What an editorial body must **not** be:
 - An editor-voice rewrite of the source content. Quote the source
   inside a blockquote; let the editor narrative around the blockquote
   carry the reading.
+- A section that restates what the page has already said. A body
+  section must add information beyond what the lead and earlier
+  sections carry. Restating the lead's facts in near-identical
+  wording (a biography lead and a later section retelling the same
+  reply, the same quote, the same speculation) pads the page and
+  leaves two copies of one fact to drift apart under later edits.
+  State each fact fully once, in the place a reader needs it most;
+  where another section needs it again, refer back briefly instead
+  of retelling it.
 
 When the editorial framing for a primary source is substantial enough
 to warrant a full editorial entry, follow the split rule from
