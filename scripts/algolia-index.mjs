@@ -93,10 +93,20 @@ function readEntries(baseDir, lang) {
         const fm = fmMatch[1];
         const body = fmMatch[2].trim();
 
-        // Parse frontmatter
+        // Parse frontmatter. Grabs the whole rest of the line rather than
+        // stopping at the first `"`, then strips/unescapes a surrounding
+        // quoted string -- the previous `"?([^"\n]*)"?` form stopped at the
+        // first quote character it saw, silently truncating any title or
+        // description containing an escaped internal quote (e.g. a quoted
+        // phrase: `title: "X says \"Y\""` came back as just `X says \`).
         const get = (key) => {
-          const m = fm.match(new RegExp(`^${key}:\\s*"?([^"\\n]*)"?`, 'm'));
-          return m ? m[1].trim() : '';
+          const m = fm.match(new RegExp(`^${key}:\\s*(.*)$`, 'm'));
+          if (!m) return '';
+          let v = m[1].trim();
+          if (v.length >= 2 && v.startsWith('"') && v.endsWith('"')) {
+            v = v.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+          }
+          return v;
         };
 
         const title = get('title');

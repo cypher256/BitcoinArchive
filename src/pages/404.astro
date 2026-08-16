@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <BaseLayout
@@ -10,9 +12,62 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <div class="container not-found">
     <h1>404</h1>
     <p>The page you are looking for does not exist.</p>
-    <a href={`${import.meta.env.BASE_URL}`}>Back to Home</a>
+    <a href={`${basePath}/`}>Back to Home</a>
+
+    <div id="suggestions" class="suggestions" hidden>
+      <p class="suggestions-label">You might be looking for:</p>
+      <ul id="suggestions-list" class="suggestions-list"></ul>
+    </div>
   </div>
 </BaseLayout>
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/algoliasearch@4.24.0/dist/algoliasearch-lite.umd.js"></script>
+<script is:inline define:vars={{ basePath }}>
+(function () {
+  // Turn the broken path into a search query: the last non-empty segment is
+  // almost always the entry slug (most specific part of the URL), a JA
+  // locale prefix picks the JA index + link prefix so suggestions stay in
+  // the language the reader was trying to reach, and hyphens become spaces
+  // so Algolia's own typo-tolerant matching does the rest -- no fuzzy-match
+  // logic of our own to maintain.
+  var path = location.pathname;
+  if (basePath && (path === basePath || path.indexOf(basePath + '/') === 0)) path = path.slice(basePath.length);
+  var isJa = /^\/ja(\/|$)/.test(path);
+  var segments = path.split('/').filter(Boolean);
+  if (isJa) segments.shift();
+  var slug = segments[segments.length - 1] || '';
+  var query = slug.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/[-_]/g, ' ').trim();
+  if (!query || typeof algoliasearch === 'undefined') return;
+
+  // `h.url` is already locale-prefixed for JA-index hits (matches
+  // entries-browse.ts's own `basePath + h.url`, no separate /ja here --
+  // adding one double-prefixes JA links to /ja/ja/...).
+  var indexName = isJa ? 'bitcoin_archive_ja' : 'bitcoin_archive_en';
+  var algolia = algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425');
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  algolia.search([{ indexName: indexName, query: query, params: {
+    hitsPerPage: 5, highlightPreTag: '<mark>', highlightPostTag: '</mark>'
+  } }])
+    .then(function (r) {
+      var hits = (r.results[0] && r.results[0].hits) || [];
+      if (!hits.length) return;
+      var list = document.getElementById('suggestions-list');
+      list.innerHTML = hits.map(function (h) {
+        var hr = h._highlightResult || {};
+        var title = ((hr.title && hr.title.value) || esc(h.title)).replace(/<\/mark>\s*<mark>/g, ' ');
+        return '<li><a href="' + basePath + h.url + '">' + title + '</a></li>';
+      }).join('');
+      document.getElementById('suggestions').hidden = false;
+    })
+    .catch(function () {});
+})();
+</script>
 
 <style>
   .not-found {
@@ -33,6 +88,33 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     font-family: var(--font-heading);
     font-size: 1rem;
     color: var(--color-accent);
+    text-decoration: underline;
+  }
+  .suggestions {
+    max-width: 32rem;
+    margin: 3rem auto 0;
+    text-align: left;
+  }
+  .suggestions-label {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    margin: 0 0 0.75rem;
+  }
+  .suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .suggestions-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .suggestions-list a {
+    font-family: inherit;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  .suggestions-list a:hover {
     text-decoration: underline;
   }
 </style>
