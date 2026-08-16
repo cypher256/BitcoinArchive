@@ -1,5 +1,6 @@
 ---
 import { PRIMARY_ORIGIN as primaryOrigin, SITE_NAME as siteName, MIRROR_BASE } from '../lib/constants';
+import { getDeploymentConfig } from '../../site-config.mjs';
 import { useTranslations } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 
@@ -29,6 +30,7 @@ interface Props {
 }
 
 const { title, description, lang = 'en', canonicalUrl, alternateJa, alternateEn, ogType = 'website', publishedTime, modifiedTime, author, noindex = false, ogImage, ogImageWidth = 1200, ogImageHeight = 630, breadcrumbs = [], structuredData } = Astro.props;
+const { isPrimaryDeployment } = getDeploymentConfig();
 const t = useTranslations(lang as Lang);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // Escape MIRROR_BASE for use as a regex literal (only / needs escaping for
@@ -91,14 +93,22 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
      Lighthouse flagged sitewide; `font-display: swap` in the @font-face
      rules keeps the same never-block-first-paint behaviour. -->
 
-<!-- Google Analytics (GA4) -->
-<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-ZQNXSHB5ER"></script>
-<script is:inline>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-ZQNXSHB5ER');
-</script>
+<!-- Google Analytics (GA4) — primary deployment only. The GitHub Pages
+     mirror builds under base `/BitcoinArchive`, so loading this
+     unconditionally would report mirror pageviews into the same
+     property under a different path than the primary domain's, mixing
+     two origins' traffic into what looks like one site's numbers. -->
+{isPrimaryDeployment && (
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-ZQNXSHB5ER"></script>
+)}
+{isPrimaryDeployment && (
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZQNXSHB5ER');
+  </script>
+)}
 
 <title>{title}</title>
 <meta name="description" content={description} />
