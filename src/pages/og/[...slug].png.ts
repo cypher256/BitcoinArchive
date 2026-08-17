@@ -169,6 +169,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const jaThreadPaths = threadPaths(jaEntries, 'ja');
   const enParticipantPaths = participantPaths(enEntries, 'en');
   const jaParticipantPaths = participantPaths(jaEntries, 'ja');
+  const staticPaths = staticPagePaths();
 
   return [
     ...enPaths,
@@ -177,8 +178,66 @@ export const getStaticPaths: GetStaticPaths = async () => {
     ...jaThreadPaths,
     ...enParticipantPaths,
     ...jaParticipantPaths,
+    ...staticPaths,
   ];
 };
+
+// Hand-authored, fixed utility pages (not content-collection entries) that
+// want a branded card instead of falling back to the shared og-default.png.
+// This is "Stage 3" of the OGP rollout (BitcoinArchivePrivate
+// todo/old/0517_ogp_ページ別計画.md §4): top and novel already carry their
+// own hand-picked hero image via `ogImage`, so only the remaining fixed
+// pages without one belong here. Per that plan's own design (§3.2, the
+// "トップ/アバウト/小説" row), these pages show no date -- there is no
+// historical anchor to show, and a build-time "now" would go stale the
+// moment this file stops being touched. Add an entry and point the page's
+// own `ogImage` prop at `/og/{slug}.png` / `/og/ja/{slug}.png`.
+const STATIC_PAGES: { slug: string; title: { en: string; ja: string } }[] = [
+  {
+    slug: 'cite',
+    title: {
+      en: 'How to cite the Bitcoin Institute Archive',
+      ja: 'ビットコイン・インスティテュート・アーカイブの引用方法',
+    },
+  },
+  {
+    // Matches the page's own <h1> (t('about.heading')) rather than the
+    // <title> tag, which appends " - Bitcoin Institute" -- redundant here
+    // since the card already shows the site name in its header row.
+    slug: 'about',
+    title: {
+      en: 'About Bitcoin Institute',
+      ja: 'ビットコイン・インスティテュートについて',
+    },
+  },
+  {
+    // chart.astro has no <h1>; this matches its <title> tag (t('chart.title')).
+    slug: 'chart',
+    title: {
+      en: 'Bitcoin Price History',
+      ja: 'ビットコイン価格推移',
+    },
+  },
+];
+
+function staticPagePaths() {
+  const out: { params: { slug: string }; props: { title: string; author: string; date: Date | null; isSatoshiAuthor: boolean; lang: 'en' | 'ja' } }[] = [];
+  for (const page of STATIC_PAGES) {
+    for (const lang of ['en', 'ja'] as const) {
+      out.push({
+        params: { slug: lang === 'ja' ? `ja/${page.slug}` : page.slug },
+        props: {
+          title: page.title[lang],
+          author: 'Bitcoin Institute',
+          date: null,
+          isSatoshiAuthor: false,
+          lang,
+        },
+      });
+    }
+  }
+  return out;
+}
 
 function formatDate(date: Date, lang: string): string {
   return date.toLocaleDateString(lang === 'ja' ? 'ja-JP' : 'en-US', {
@@ -206,13 +265,13 @@ export const GET: APIRoute = async ({ props }) => {
   const { title, author, date, isSatoshiAuthor, lang } = props as {
     title: string;
     author: string;
-    date: Date;
+    date: Date | null;
     isSatoshiAuthor: boolean;
     lang: 'en' | 'ja';
   };
 
   const displayTitle = truncate(title, 80);
-  const displayDate = formatDate(date, lang);
+  const displayDate = date ? formatDate(date, lang) : null;
   const accentColor = '#f7931a';
 
   const svg = await satori(
@@ -331,16 +390,20 @@ export const GET: APIRoute = async ({ props }) => {
                           children: author,
                         },
                       },
-                      {
-                        type: 'span',
-                        props: {
-                          style: {
-                            color: '#666',
-                            fontSize: '22px',
-                          },
-                          children: displayDate,
-                        },
-                      },
+                      ...(displayDate
+                        ? [
+                            {
+                              type: 'span',
+                              props: {
+                                style: {
+                                  color: '#666',
+                                  fontSize: '22px',
+                                },
+                                children: displayDate,
+                              },
+                            },
+                          ]
+                        : []),
                     ],
                   },
                 },

@@ -75,7 +75,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: 'ビットコイン・インスティテュート・アーカイブの引用方法',
-  description: 'ビットコイン・インスティテュート・アーカイブの引用方法と固定出典マップ。',
+  description: '研究・報道・参考資料でビットコイン・インスティテュート・アーカイブを引用する方法。引用形式と固定出典の一覧。',
   url: canonicalUrl,
   inLanguage: 'ja',
   isPartOf: { '@type': 'WebSite', url: absoluteUrl('/', lang) },
@@ -84,10 +84,11 @@ const structuredData = {
 
 <BaseLayout
   title="ビットコイン・インスティテュート・アーカイブの引用方法"
-  description="ビットコイン・インスティテュート・アーカイブの引用方法と固定出典マップ。"
+  description="研究・報道・参考資料でビットコイン・インスティテュート・アーカイブを引用する方法。引用形式と固定出典の一覧。"
   lang={lang}
   canonicalUrl={canonicalUrl}
   alternateEn={absoluteUrl('/cite/', 'en')}
+  ogImage="/og/ja/cite.png"
   breadcrumbs={[
     { name: 'ホーム', url: absoluteUrl('/', lang) },
     { name: '引用方法', url: canonicalUrl },
@@ -97,7 +98,8 @@ const structuredData = {
   <div class="container citation-page">
     <h1>ビットコイン・インスティテュート・アーカイブの引用方法</h1>
     <p>
-      このページでは、アーカイブを安定して引用する形式と、技術的な読み解きの裏付けとなる正確な出典リビジョンを示します。
+      研究や報道、参考資料の作成でこのアーカイブを引用する場合、このページで安定した引用形式と、
+      技術的な読み解きの裏付けとなる正確な出典リビジョンを確認できます。
       利用したアーカイブのページを示し、特定の文書やコードスナップショットに基づく主張では、その一次資料も併記してください。
     </p>
 
@@ -146,10 +148,6 @@ const structuredData = {
       <a href={localePath('/llms-full.txt', 'en')}><code>llms-full.txt</code></a> を利用できます。
       リポジトリには、引用ツール向けの <a href="https://github.com/cypher256/BitcoinArchive/blob/main/CITATION.cff" target="_blank" rel="noopener"><code>CITATION.cff</code></a> も置いています。
     </p>
-
-    <p class="language-note">
-      English version: <a href={absoluteUrl('/cite/', 'en')}>How to cite this archive</a>
-    </p>
   </div>
 </BaseLayout>
 
@@ -182,10 +180,6 @@ const structuredData = {
   .source-table ul {
     margin: 0;
     padding-left: 1.2rem;
-  }
-
-  .language-note {
-    margin-top: 2rem;
   }
 
   @media (max-width: 640px) {

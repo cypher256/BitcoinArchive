@@ -75,7 +75,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: 'How to cite the Bitcoin Institute Archive',
-  description: 'Citation guidance and fixed-source map for the Bitcoin Institute archive.',
+  description: 'How to cite the Bitcoin Institute archive in research, journalism, or reference work — citation format and fixed source revisions.',
   url: canonicalUrl,
   inLanguage: 'en',
   isPartOf: { '@type': 'WebSite', url: absoluteUrl('/', lang) },
@@ -84,10 +84,11 @@ const structuredData = {
 
 <BaseLayout
   title="How to cite the Bitcoin Institute Archive"
-  description="Citation guidance and fixed-source map for the Bitcoin Institute archive."
+  description="How to cite the Bitcoin Institute archive in research, journalism, or reference work — citation format and fixed source revisions."
   lang={lang}
   canonicalUrl={canonicalUrl}
   alternateJa={absoluteUrl('/cite/', 'ja')}
+  ogImage="/og/cite.png"
   breadcrumbs={[
     { name: 'Home', url: absoluteUrl('/', lang) },
     { name: 'How to cite', url: canonicalUrl },
@@ -97,9 +98,10 @@ const structuredData = {
   <div class="container citation-page">
     <h1>How to cite the Bitcoin Institute Archive</h1>
     <p>
-      This page gives a stable citation format for the archive and identifies the exact source
-      revisions behind its technical readings. Cite the archive page you used, then cite the
-      underlying primary source when a claim depends on a particular document or code snapshot.
+      Citing this archive in research, journalism, or a reference work? This page gives a stable
+      citation format and identifies the exact source revisions behind its technical readings.
+      Cite the archive page you used, then cite the underlying primary source when a claim
+      depends on a particular document or code snapshot.
     </p>
 
     <h2>Recommended citation</h2>
@@ -150,10 +152,6 @@ const structuredData = {
       The repository also provides a <a href="https://github.com/cypher256/BitcoinArchive/blob/main/CITATION.cff" target="_blank" rel="noopener"><code>CITATION.cff</code></a>
       file for citation tools.
     </p>
-
-    <p class="language-note">
-      日本語版: <a href={absoluteUrl('/cite/', 'ja')}>アーカイブの引用方法</a>
-    </p>
   </div>
 </BaseLayout>
 
@@ -186,10 +184,6 @@ const structuredData = {
   .source-table ul {
     margin: 0;
     padding-left: 1.2rem;
-  }
-
-  .language-note {
-    margin-top: 2rem;
   }
 
   @media (max-width: 640px) {
