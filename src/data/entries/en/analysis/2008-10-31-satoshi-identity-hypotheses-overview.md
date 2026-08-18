@@ -102,7 +102,9 @@ inlineLinkKeywords:
 
 ![Twelve anonymous silhouette figures in an evidence array, with a magnifying glass hovering over them without settling on any single candidate](/BitcoinArchive/images/analysis/satoshi-identity-hypotheses-overview-hero.png)
 
-Twelve named candidates, seven dimensions of Satoshi's documented public-record outline. No single candidate scores cleanly on all seven; each falls short on at least one. This entry compares the named candidates across four independent structural layers — profile match (§2), stylometric attribution (§3), direct correspondence (§4), and development environment (§5) — and notes where each profile breaks down. Each candidate is measured against the documented public-record outline of [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/):
+The Satoshi question gets harder when the names multiply. A candidate can fit the digital-cash lineage, the code, the English register, or the timing — and still be contradicted by a direct exchange with Satoshi. This page keeps those traces separate long enough to see where each candidate holds and where the public record breaks the fit.
+
+The comparison starts from the documented public-record outline of [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/):
 
 - the whitepaper's explicit citation of Hashcash and b-money;
 - the August 2008 pre-launch correspondence with Adam Back and Wei Dai;
@@ -372,3 +374,6 @@ As related context, Satoshi disappeared shortly after Gavin Andresen, replying t
 
 Readings that fit neither a single individual, multiple people, nor an organization — such as the pseudonym being a construct rather than one person — also circulate in public discourse. This archive holds no dedicated treatment of them at present. As verifiable primary sources appear for a given form, it is added here.
 
+<!-- entry-closing -->
+
+This comparison does not produce a winner among the twelve. It establishes something more exact: a candidate may look persuasive in one layer while the same public record weakens the case in another. The identity question remains open, but the test is not shapeless. Any new identification has to survive all four layers and the alternatives beyond a single person.

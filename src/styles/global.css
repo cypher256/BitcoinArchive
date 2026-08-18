@@ -513,6 +513,13 @@ h4 { font-size: 1.1rem; font-weight: 600; }
   margin: 0 0 1.4em;
 }
 
+/* A page-level closing paragraph is still prose, not a new section.
+   Give it the same quiet separation as the opening paragraph has before
+   the first section, without adding a repeated heading or a visible rule. */
+.entry-content > p.entry-closing {
+  margin-top: 4em;
+}
+
 a {
   color: var(--color-link);
   text-decoration: none;

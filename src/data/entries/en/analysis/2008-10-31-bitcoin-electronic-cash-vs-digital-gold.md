@@ -57,11 +57,7 @@ translationStatus: complete
 
 ![A glowing gold coin sends a luminous line toward an open hand, beneath the words "Electronic Cash"](/BitcoinArchive/images/analysis/bitcoin-electronic-cash-vs-digital-gold-hero.png)
 
-"Bitcoin: A Peer-to-Peer Electronic Cash System." The [whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)'s title says it plainly: money you spend, a payment system. Section 1 is entirely about letting two parties pay each other directly, with no trusted third party in between.
-
-So what is section 6's line that "the steady addition of new coins is analogous to gold miners expending resources to add gold to circulation"? It is about **issuance** — how coins come into being. Like gold, they are dug out by spending resources, and [the supply runs to a cap and stops](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/). It is not about how you use them.
-
-So Satoshi did not write two things in conflict. He wrote **one new thing**. The issuance is hard, like gold — no one can print it; the use is cash — you pay with it directly. Different axes, so they hold at once, without contradiction.
+The whitepaper gives Bitcoin two images that seem to pull apart. Its [title](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) promises electronic cash; §6 compares new coins with gold mined into circulation. The tension becomes useful only when we ask whether those lines describe the same axis. This page follows that distinction from the whitepaper to the first recorded purchase, then into the scarcity and scaling pressures that pushed the design toward digital gold.
 
 | Axis | Satoshi's design | Where in the paper |
 |---|---|---|
@@ -129,3 +125,7 @@ So this question stands in the present tense, not the past. Now that it is held 
 The [digital-gold structural-features analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) and the [design-vs-current-reality analysis](/BitcoinArchive/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/) leave one question between them, and the primary record answers it: were the property that made it gold and the property that wore down its cash use one and the same all along? [The twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) puts that same question to eleven other chains' own issuance designs.
 
 *[Context: The tension this entry reads — the gold face and the cash face of a single design — runs through the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/), which imagines the founder behind the design.]*
+
+<!-- entry-closing -->
+
+The narrower issue is not whether Bitcoin is cash or gold. It is whether the scarcity that made the system durable still leaves room for spending. The whitepaper fixed the design; how the network is used now is deciding which face of that design remains visible.

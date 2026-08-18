@@ -248,6 +248,43 @@ What an editorial body must **not** be:
   where another section needs it again, refer back briefly instead
   of retelling it.
 
+### Page-level lead and closing paragraphs
+
+Editorial entries do not require a universal `Summary`, `Conclusion`,
+or `Author's framing` section. A lead and a closing paragraph are
+reader-facing prose decisions, not fixed navigation components.
+
+- **`article` / `aftermath`:** when a dated result or change is the
+  point of the page, lead with the confirmed event or result, then
+  explain what changed and why the record matters.
+- **`analysis`:** enter through a concrete record, contrast, quotation,
+  or question. Do not make the entire conclusion, evidence, and limits
+  unnecessary by placing all of them in the lead; the body should still
+  do the explanatory work.
+- **`biography`:** lead with a documented act, statement, or role rather
+  than a personality summary.
+- **`design`:** lead with code, specification, constraint, or a concrete
+  design consequence.
+- **`currency`:** lead with the definition, issuance or use record, or a
+  concrete difference from another currency.
+
+The lead must make the subject and the point of entry clear. The choice
+of a concrete record, result, contrast, or question is per page; do not
+mechanically add the same greeting, reaction, or summary to every entry.
+Primary-source entries remain governed by the preservation rules above:
+their body is the source record, not a place for an editor's greeting,
+conclusion, or closing commentary.
+
+If an editorial page needs a final word after its last section, keep it
+as a prose paragraph separated from that section. Do not add a repeated
+heading or horizontal rule merely to announce the ending. A blank line
+in Markdown establishes the paragraph boundary. When the rendered page
+needs more visual separation, place the semantic `<!-- entry-closing -->`
+marker immediately before that Markdown paragraph. The marker gives the
+rendered paragraph the closing style; do not write a raw `<p>` block around
+prose, because Markdown links and emphasis inside a raw HTML block are not
+parsed as ordinary Markdown.
+
 When the editorial framing for a primary source is substantial enough
 to warrant a full editorial entry, follow the split rule from
 [§ Primary-Source Entries](#primary-source-entries): create a separate

@@ -64,6 +64,10 @@ translationStatus: complete
 
 ![Dark navy illustration of a gold ingot with a dollar-sign emblem at its center, flanked by two bordered text panels, above six connected numbered gold circles, an outlined empty building shape, and three overlapping colored parallelograms.](/BitcoinArchive/images/analysis/2008-10-31-bitcoin-digital-gold-structural-features-hero.png)
 
+Seventeen years after Bitcoin's release, later chains have surpassed it on speed, programmability, and many other individual technical axes. Yet Bitcoin is still the asset most often called "digital gold." Is that simply first-mover advantage? Seventeen years of continuous operation is an extraordinary record. It still leaves the central question open: why did the label stick?
+
+The whitepaper presents electronic cash; Satoshi later used a communications channel and gold-like scarcity as a thought experiment. So what is doing the work here: the gold analogy, the fixed supply, or the institutional shape around the design — who can change it, and who cannot? This page follows the fair launch, the cap, the founder's departure, and the question of protocol authority to find out.
+
 ## Where monetary value comes from
 
 Before getting into Bitcoin specifically, start with a broader question: why does anything have monetary value at all? A dollar bill is paper; a gold coin is stamped metal. But the two sit on opposite sides of a key line: a central bank or government can decide to expand the money supply. Gold has no equivalent — no single authority holds a monopoly over the world's gold supply, and none can simply decree more of it into existence.
@@ -220,7 +224,7 @@ Every later cryptocurrency that aims at more — programmability, throughput, ap
 
 The bundle is also what makes the phrase difficult to apply to other cryptocurrencies, regardless of their technical merits. A chain with a richer instruction set, faster confirmation, and lower fees can be many things; if it also has an active founder, a foundation treasury, a CEO, and a premine, it is not (under this framing) digital gold. It is something else — possibly something more useful for many purposes — but the digital-gold slot is structurally not vacant for it to occupy.
 
-## Limits of this reading
+## What this structure does not guarantee
 
 This entry is an editorial reading of structural features, not a price prediction or an investment thesis. Several caveats:
 
@@ -235,3 +239,7 @@ Where the ownership side of this story stands as of 2026 — how far corporate t
 The six features above are applied to twelve chains at once in [the altcoin count and design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/).
 
 Five AI systems, asked separately to pick exactly one cryptocurrency, converged on Bitcoin. The claims that survived fact-checking were structural claims like these six features, not superlatives. The AI investment survey records the full experiment.
+
+<!-- entry-closing -->
+
+Taken together, the six features explain why "digital gold" is more than a synonym for scarcity. The cap, fair launch, founder departure, and accumulated network history reinforce one another, producing a position that later chains cannot inherit simply by outperforming Bitcoin on individual features. It is an unusually durable combination, but durability is not permanence. As the people and organizations around the network change, whether a monetary base with no fixed authority can keep the same promise remains a question for the record still being made.

@@ -35,7 +35,7 @@ translationStatus: complete
 
 ![A faceless, hooded figure stands before a Neo-Tokyo/Chiba-City-style skyline, with a network-constellation diagram above and a "Satoshi Nakamoto" name card beside it](/BitcoinArchive/images/analysis/satoshi-name-techno-orientalism-hero.png)
 
-In late-1990s and early-2000s anglophone speculative fiction and hacker culture, networked anonymity, advanced computation, and the dissolution of stable Western identity were routinely figured through East Asian — and specifically Japanese — visual and naming registers. The pattern has a name in critical-theory literature: *techno-orientalism* (David Morley and Kevin Robins, *Spaces of Identity*, 1995; David S. Roh et al., *Techno-Orientalism*, 2015). The pseudonym "Satoshi Nakamoto" lands inside that already-prepared symbolic field with unusual precision.
+The name “Satoshi Nakamoto” does more than conceal a person. It also arrives carrying a ready-made cultural picture: Japanese signs, networked anonymity, and a future built in the shadow of collapsing cities. That picture is not evidence of who chose the name. It is the reception field this analysis asks us to notice before we turn the name into a clue.
 
 Satoshi's *intellectual position* — the independent-arrival reading of his relationship to the cypherpunk movement and its philosophical core — is treated separately in the companion entry, [Independent arrival at the cypherpunk core](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 
@@ -75,6 +75,6 @@ Three analytic facts follow without requiring an intent claim:
 - **The assemblage is one of several relevant frames.** A reader could equally read the pseudonym against Japanese cryptography or computer-science conventions of naming, or as an inversion of Western-pseudonym norms in the cypherpunk tradition. The techno-orientalist frame is descriptively productive because the field was unusually dense by 2008, not because it is the only available reading.
 - **No identity claim follows from this entry.** Nothing here narrows Satoshi's identity to a country, native language, or any other personal attribute. The contribution is restricted to describing the symbolic space the name inhabits.
 
-## 5. Summary
+<!-- entry-closing -->
 
-The observation is narrow by design: it describes the symbolic space the name occupies, not the person who chose it. That space was real and, by 2008, dense enough that any Japanese pseudonym on a deep-net cryptographic project would have landed inside it — which is exactly why it carries one operational consequence worth keeping in view: identity research has to net out the field's pull rather than be moved by it. The companion entry, [Independent arrival at the cypherpunk core](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), takes up the intellectual position from which the system was built.
+The name can carry a powerful atmosphere without carrying a usable identity clue. That is the line this reading needs to hold: “Satoshi Nakamoto” belongs to a cultural field that shaped reception, but the field cannot tell us who stood behind it. Any identity claim that begins from the name has to account for that pull before it counts the name as evidence. The companion entry, [Independent arrival at the cypherpunk core](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), takes up the intellectual position from which the system was built.

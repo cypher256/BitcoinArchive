@@ -54,7 +54,7 @@ translationStatus: complete
 
 ![A timeline of the 2010 overflow incident forking into a rejected bad block and a rescued honest chain, beside a network diagram illustrating the centralization paradox of a single-author fix](/BitcoinArchive/images/analysis/overflow-incident-structure-and-paradox-hero.png)
 
-The [aftermath entry for the value-overflow incident](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) records the documentary skeleton: when it was discovered, what was patched, how long the chain reorg took. This entry takes the same event and reads it as a structural problem — what was actually possible in the rescue, what its constraints reveal about the early-Bitcoin development model, and what the transaction itself implies once read forensically.
+184 billion BTC was minted in a single block. That number is the obvious shock, but it is not the whole incident. The [aftermath entry for the value-overflow incident](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) records when it was discovered, what was patched, and how long the chain reorg took. The more unsettling fact is that old-rule nodes accepted the block while patched nodes rejected it: for a time, Bitcoin had two competing versions of its history. The rescue worked, and it exposed the centralized release path that made the rescue possible. That tension is the structural question this entry follows.
 
 ## 1. How the soft-fork rescue actually worked
 
@@ -199,3 +199,7 @@ This puts the 2010 incident in a peculiar position in the historical record. It 
 - **knightmb's specific role.** The blockchain-snapshot contribution is recorded structurally in the [knightmb snapshot and legend](/BitcoinArchive/entries/analysis/2010-08-15-knightmb-snapshot-and-legend/) entry.
 
 *[Context: The five-hour patch deployment and the centralization paradox analyzed here are the structural basis for one of the named scenes in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — the moment a "decentralized" system is saved by a single author with unique release authority.]*
+
+<!-- entry-closing -->
+
+The rescue is the part of this story that is easiest to celebrate and easiest to misread. It proves that the network could recover from a live consensus failure; it also records that the recovery depended on a release authority the system was designed not to need. I would not reduce the incident to either “Bitcoin survived” or “Bitcoin was centralized.” Both facts are in the record, and the uncomfortable value of this event is that they arrived together.

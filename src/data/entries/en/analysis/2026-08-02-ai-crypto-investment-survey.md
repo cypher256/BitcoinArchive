@@ -64,6 +64,8 @@ inlineLinkKeywords:
 
 ![A dark navy infographic showing five abstract, unlabeled chat-window icons in a row, each in a different color and shape, all five arrows converging on a single orange bitcoin symbol at the center, with a magnifying glass over a checklist beside it representing fact-checking.](/BitcoinArchive/images/analysis/2026-08-02-ai-crypto-investment-survey-hero.png)
 
+Five AI systems were asked to choose exactly one cryptocurrency. All five chose Bitcoin. Seeing the answers line up that neatly is, honestly, surprising. Read the reasons closely, though, and “most” keeps returning: the fixed mechanisms hold up, while the comparative claims do not all clear the same bar.
+
 ## 1. The question, and who was asked
 
 On 2026-08-02, Bitcoin Institute put the same question to five AI products from five different labs: OpenAI's GPT, Anthropic's Claude, Google's Gemini, Moonshot AI's Kimi, and xAI's Grok. The prompt was kept identical across all five and deliberately unconstrained:
@@ -174,10 +176,14 @@ Read across all five answers, one pattern dominates: **every claim phrased as a 
 
 This maps onto a distinction this archive already draws for reading the wider field: [§3's structural-features table](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) scores each design against fixed, checkable properties (is there a fixed supply, did a founder depart, was the launch fair) rather than against a moving comparison to "the rest of the market." The AI models converged on the same reasoning shape this archive's own methodology uses -- and also reproduced the same failure mode a careless reader falls into: treating "the biggest by far" as though it were as stable a fact as "the supply cap is 21 million."
 
-## 6. Limits of this reading
+## 6. Where the agreement stops
 
 - **Not investment advice, and not a prediction.** No model's pick, and nothing in this entry, is a recommendation. The prompt itself asked each model to state an opinion for the sole purpose of recording and comparing it.
 - **A snapshot, not a survey.** Five products, one prompt each, run once, on a single day (2026-08-02). Different phrasing, a different day, or multiple runs of the same model could produce different answers -- this entry makes no claim about how stable any of these positions are.
 - **Model versions are not stated.** Each model was run at a specific version and reasoning-effort setting, but a version string reads as stale within months, so this entry names each model by product only, not by build.
 - **The fact-check is bounded by what's checkable.** Qualitative claims ("simplicity is a strength," "this is the most reasonable trade-off") aren't the kind of statement a source can confirm or refute, and are marked "unverifiable" rather than scored.
 - **One AI's response was edited for a methodology reason unrelated to accuracy.** A sentence referencing unrelated context about the researcher was removed before publication, because it indicated that particular response was not produced under the same blank-context conditions as the other four; nothing else was changed.
+
+<!-- entry-closing -->
+
+I do not read that agreement as meaningless. Under this condition, all five systems treated Bitcoin as the candidate that remains when only one choice is allowed. That does not make every reason correct, but it does not erase the choice either. The fixed mechanisms and the strength of the comparative language need to be read separately. That difference is the interesting part of the record.
