@@ -66,7 +66,7 @@ inlineLinkKeywords:
 
 ![A letter addressed "Happy Christmas Satoshi" and an outstretched hand face a dark circuit panel labeled "Content Channel Closed"](/BitcoinArchive/images/analysis/satoshi-non-technical-silence-hero.png)
 
-On December 27, 2010, Mike Hearn opened an email to Satoshi Nakamoto with:
+A correspondent wrote "Happy Christmas, Satoshi" and asked, lightly, where in the world he might be. The reply did not say thank you, Merry Christmas, or anything personal. It began with SPV design. Across the surviving correspondence, that small refusal appears again and again: the channel stays open for protocol and closes when a person might come into view.
 
 <!-- audit:quote-skip -->
 > "Happy Christmas Satoshi, assuming you celebrate it wherever you are in the world :-)"
@@ -178,4 +178,4 @@ Reasons consistent with the record:
 
 <!-- entry-closing -->
 
-The Christmas exchange is not proof that Satoshi never spoke personally; the first contact with Malmi is the counterexample. It is evidence of a boundary. In the other observed cases, when a message offered location, custom, feeling, or praise, the reply moved back to protocol or stopped. That boundary complements the technical anonymity layer, but it does not identify Satoshi. It shows how consistently the surviving correspondence kept a person out of view.
+What survives here is not a portrait of a cold or secretive person. It is a boundary visible in the traffic itself: greetings, praise, location, and feeling reach the edge of the exchange, then the reply returns to protocol—or stops. Malmi's rare exception keeps the boundary from becoming a caricature. It shows a person could appear in shared ideas while remaining absent from the personal record.

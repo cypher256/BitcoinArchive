@@ -102,7 +102,7 @@ inlineLinkKeywords:
 
 ![Twelve anonymous silhouette figures in an evidence array, with a magnifying glass hovering over them without settling on any single candidate](/BitcoinArchive/images/analysis/satoshi-identity-hypotheses-overview-hero.png)
 
-The Satoshi question gets harder when the names multiply. A candidate can fit the digital-cash lineage, the code, the English register, or the timing — and still be contradicted by a direct exchange with Satoshi. This page keeps those traces separate long enough to see where each candidate holds and where the public record breaks the fit.
+Who was Satoshi Nakamoto? Where did he come from, and where did the person behind that name go after bringing Bitcoin into the world? On Halloween night, the record began with a nine-page whitepaper and an unknown name; it left behind code, a chain of conversations, and then silence. Around that absence, twelve names have been proposed. A name can suggest a story; only the record can test it. Four traces matter here: intellectual lineage, language, direct contact, and the system that was built.
 
 The comparison starts from the documented public-record outline of [Satoshi](/BitcoinArchive/participants/satoshi-nakamoto/):
 
@@ -376,4 +376,4 @@ Readings that fit neither a single individual, multiple people, nor an organizat
 
 <!-- entry-closing -->
 
-This comparison does not produce a winner among the twelve. It establishes something more exact: a candidate may look persuasive in one layer while the same public record weakens the case in another. The identity question remains open, but the test is not shapeless. Any new identification has to survive all four layers and the alternatives beyond a single person.
+The silence around Satoshi is not an empty page. It is a field of partial matches: one name fits the lineage, another the code, another the timing, while direct records open cracks in each neat answer. The mystery survives not because every theory is equally strong, but because no theory crosses the whole record.

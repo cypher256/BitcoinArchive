@@ -35,7 +35,7 @@ translationStatus: complete
 
 ![A faceless, hooded figure stands before a Neo-Tokyo/Chiba-City-style skyline, with a network-constellation diagram above and a "Satoshi Nakamoto" name card beside it](/BitcoinArchive/images/analysis/satoshi-name-techno-orientalism-hero.png)
 
-The name “Satoshi Nakamoto” does more than conceal a person. It also arrives carrying a ready-made cultural picture: Japanese signs, networked anonymity, and a future built in the shadow of collapsing cities. That picture is not evidence of who chose the name. It is the reception field this analysis asks us to notice before we turn the name into a clue.
+The name “Satoshi Nakamoto” does more than conceal a person. It also arrives carrying a ready-made cultural picture: Japanese signs, networked anonymity, and a future built in the shadow of collapsing cities. That picture is not evidence of who chose the name. It is the reception field that appears before the name can be turned into a clue.
 
 Satoshi's *intellectual position* — the independent-arrival reading of his relationship to the cypherpunk movement and its philosophical core — is treated separately in the companion entry, [Independent arrival at the cypherpunk core](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 

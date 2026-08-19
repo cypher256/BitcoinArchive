@@ -259,4 +259,4 @@ The structural-anonymity reading developed here is complemented by a behavioural
 
 <!-- entry-closing -->
 
-The public record supports a narrower judgment than "Satoshi left no clues." It shows separate clues that fail to converge: each layer can constrain a candidate, but none can identify one by itself. The six layers do not prove that anonymity was engineered as a single plan, and the record cannot recover the motive behind them. What it does preserve is the boundary an identity claim still has to cross, all at once.
+The record does not leave us with one missing clue. It leaves six distinct traces of the same absence: a name, a channel, language and time, a machine, a genesis block, and a staged retreat. The six do not prove a single plan, and they do not become one face when overlaid. Any identity claim still has to cross that whole boundary at once.

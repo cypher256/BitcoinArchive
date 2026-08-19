@@ -57,7 +57,7 @@ translationStatus: complete
 
 ![A glowing gold coin sends a luminous line toward an open hand, beneath the words "Electronic Cash"](/BitcoinArchive/images/analysis/bitcoin-electronic-cash-vs-digital-gold-hero.png)
 
-The whitepaper gives Bitcoin two images that seem to pull apart. Its [title](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) promises electronic cash; §6 compares new coins with gold mined into circulation. The tension becomes useful only when we ask whether those lines describe the same axis. This page follows that distinction from the whitepaper to the first recorded purchase, then into the scarcity and scaling pressures that pushed the design toward digital gold.
+The whitepaper gives Bitcoin two images that seem to pull apart. Its [title](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) promises electronic cash; §6 compares new coins with gold mined into circulation. The tension becomes useful only when we ask whether those lines describe the same axis. The answer appears in what happened when that design met its first recorded purchase, and in the scarcity and scaling pressures that later pushed it toward digital gold.
 
 | Axis | Satoshi's design | Where in the paper |
 |---|---|---|
@@ -128,4 +128,4 @@ The [digital-gold structural-features analysis](/BitcoinArchive/entries/analysis
 
 <!-- entry-closing -->
 
-The narrower issue is not whether Bitcoin is cash or gold. It is whether the scarcity that made the system durable still leaves room for spending. The whitepaper fixed the design; how the network is used now is deciding which face of that design remains visible.
+Bitcoin did not leave cash behind by choosing gold in a single moment. The same hardness that let it move value without a central issuer also made spending feel like surrendering an appreciating asset. The whitepaper still holds both faces in one design; the living network keeps deciding which one people will see.

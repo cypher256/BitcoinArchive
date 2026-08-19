@@ -66,7 +66,7 @@ translationStatus: complete
 
 Seventeen years after Bitcoin's release, later chains have surpassed it on speed, programmability, and many other individual technical axes. Yet Bitcoin is still the asset most often called "digital gold." Is that simply first-mover advantage? Seventeen years of continuous operation is an extraordinary record. It still leaves the central question open: why did the label stick?
 
-The whitepaper presents electronic cash; Satoshi later used a communications channel and gold-like scarcity as a thought experiment. So what is doing the work here: the gold analogy, the fixed supply, or the institutional shape around the design — who can change it, and who cannot? This page follows the fair launch, the cap, the founder's departure, and the question of protocol authority to find out.
+The whitepaper presents electronic cash; Satoshi later used a communications channel and gold-like scarcity as a thought experiment. So what is doing the work here: the gold analogy, the fixed supply, or the institutional shape around the design — who can change it, and who cannot? The answer is buried in the fair launch, the cap, the founder's departure, and the question of who can still change the rules.
 
 ## Where monetary value comes from
 
@@ -242,4 +242,4 @@ Five AI systems, asked separately to pick exactly one cryptocurrency, converged 
 
 <!-- entry-closing -->
 
-Taken together, the six features explain why "digital gold" is more than a synonym for scarcity. The cap, fair launch, founder departure, and accumulated network history reinforce one another, producing a position that later chains cannot inherit simply by outperforming Bitcoin on individual features. It is an unusually durable combination, but durability is not permanence. As the people and organizations around the network change, whether a monetary base with no fixed authority can keep the same promise remains a question for the record still being made.
+"Digital gold" endured because scarcity was never alone. A no-premine launch open to ordinary participants, a founder who stepped away, a fixed cap, and years of uninterrupted history made the label structural rather than decorative. Later chains can copy one feature or beat Bitcoin on one axis; they cannot inherit the years already written into this network. Whether that accumulated promise can survive the people now carrying it is the question the records still to come will answer.
