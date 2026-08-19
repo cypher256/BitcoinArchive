@@ -92,8 +92,8 @@ inlineLinkKeywords:
 
 ![Six concentric shield-shaped layers surrounding a faceless silhouette at the center, each labeled as one layer of non-identification](/BitcoinArchive/images/analysis/satoshi-anonymity-architecture-hero.png)
 
-Any single Satoshi-identity hypothesis must reconcile six independent layers of non-identification at once — the Japanese-form pseudonym, the timezone-spreading posting pattern, the British-English written register, the anonymous-relay email infrastructure (AnonymousSpeech.com, vistomail.com), the absence of any IP-revealing slip across years of correspondence, and the staged-rather-than-abrupt withdrawal. This entry organizes the observable traces from the public record into a structural reading of how the pseudonym "Satoshi Nakamoto" remained unidentified through the development window (mid-2007 through August 2008), the public phase (October 2008 through December 2010), and the withdrawal (September 2010 through April 2011).
-The adjacent questions have their own readings: who Satoshi is, in [the identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), and why the gap persists despite so much surviving material, in [the identification-asymmetry analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/).
+The name looks like the clue that should solve Satoshi. The record spreads that clue across six surfaces instead: a Japanese-form pseudonym, anonymous mail relays, mixed language and time signals, a Windows-based release environment, a genesis block without a propagation footprint, and a withdrawal carried out in stages. Any identity hypothesis that explains only one of them has not reached the record's actual difficulty.
+This entry follows those traces from the development window (mid-2007 through August 2008) through the public phase and withdrawal. The adjacent questions have their own readings: who Satoshi is, in [the identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), and why the gap persists despite so much surviving material, in [the identification-asymmetry analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/).
 
 **The six-layer wall (overview)**
 
@@ -256,3 +256,7 @@ The structural-anonymity reading developed here is complemented by a behavioural
 [The cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) takes the other half of the question: not who Satoshi was, but how Satoshi engaged with the cypherpunk channel.
 
 *[Context: The six-layered anonymity structure analyzed here is the structural basis for the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/)'s reading of the protagonist's silence — the deliberate non-disclosure of nationality, age, voice, and face that the novel takes as its central interpretive frame.]*
+
+<!-- entry-closing -->
+
+The public record supports a narrower judgment than "Satoshi left no clues." It shows separate clues that fail to converge: each layer can constrain a candidate, but none can identify one by itself. The six layers do not prove that anonymity was engineered as a single plan, and the record cannot recover the motive behind them. What it does preserve is the boundary an identity claim still has to cross, all at once.

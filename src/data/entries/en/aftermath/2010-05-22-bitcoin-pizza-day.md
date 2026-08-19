@@ -55,7 +55,7 @@ quotes:
 
 ![Two stacked pizza boxes labeled "Delivered, Jacksonville, FL" connected by a dashed line to a large gold Bitcoin coin labeled "10,000 BTC, The Trade," with a "Then $41 → Now $1B+" value-contrast badge below.](/BitcoinArchive/images/analysis/2010-05-22-bitcoin-pizza-day-hero.png)
 
-On May 18, 2010, [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) posted on the BitcoinTalk forum:
+Bitcoin's first known purchase of a physical good began with a forum offer that sounded ordinary: two pizzas, some left over for the next day, and a payment in coins. On May 18, 2010, [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/) posted it on the BitcoinTalk forum:
 
 <!-- quote: q1 -->
 > "I'll pay 10,000 bitcoins for a couple of pizzas... like maybe 2 large ones so I have some left over for the next day. I like having left over pizza to nibble on later."
@@ -79,3 +79,7 @@ At 2025 prices exceeding $100,000 per BTC, those 10,000 bitcoins would be worth 
 This pizza-day event is anchored in [the Laszlo Hanyecz biography](/BitcoinArchive/participants/laszlo-hanyecz/), where it appears in the opening narrative as the identity-defining event and in a dedicated "Bitcoin Pizza Day" section as the first known real-world commercial Bitcoin transaction. The biography returns to the May 22 transaction across its participant timeline and significance section.
 
 *[Context: The Hanyecz pizza transaction is referenced by name in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) as one of the early moments when Bitcoin first met the physical world.]*
+
+<!-- entry-closing -->
+
+The historical weight of the trade does not come from the later dollar conversion. It comes from the delivery: protocol value left the screen, bought food, and entered an ordinary household transaction. The price comparison became the loudest part of the story, but the record itself is about Bitcoin crossing into the physical world.

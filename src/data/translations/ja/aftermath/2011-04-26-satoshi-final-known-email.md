@@ -12,7 +12,7 @@ participants:
     slug: "gavin-andresen"
   - name: "Mike Hearn"
     slug: "mike-hearn"
-description: "サトシの最後の既知のメール：2011年4月23日ハーンへ「ギャビンたちに任せれば安心」、4月26日アンドレセンへアラートキー移譲し「連絡が取れなくなる」と書く。"
+description: "サトシの最後の既知のメール：2011年4月23日ハーンへ「ギャビンたちに任せれば安心」、4月26日アンドレセンへアラートキーを移譲し「おそらく連絡が取れなくなる」と書く。"
 isSatoshi: true
 tags:
   - "final-communication"
@@ -55,7 +55,7 @@ translationStatus: complete
 
 ![二通の封筒と、光る鍵を手渡し合う二人のシルエット、背景にかすかなネットワークノードが浮かぶイラスト。](/BitcoinArchive/images/analysis/2011-04-26-satoshi-final-known-email-hero.png)
 
-[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)の最後の既知のメールは、2011年4月に送られた 2 通のメールである。
+3 日間隔で送られた 2 通のメールが、サトシ・ナカモトの確認済みのメール記録を閉じている。最初の一通はプロジェクトがギャビンに託されたと告げ、二通目はネットワークのアラートキーを移譲し、作者がおそらく連絡が取れなくなると書いた。
 
 ## 2011年4月23日 — マイク・ハーン宛
 
@@ -85,3 +85,7 @@ translationStatus: complete
 この別れの対は、のちの複数の読みにおいて記録上の終端として機能する。 [ジェネシスブロック](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)はこれを『タイムズ』見出し開幕と対をなす閉幕として読み、 2009 年 1 月 3 日に始まった弧がここで完結する瞬間と位置付ける。 [同定非対称性分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/)はこれらのメール以降の沈黙を不在ではなく設計の証拠として扱い、 [サトシ設計対現状分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)は 2011 年 4 月 26 日をサトシ以降の時代が始まる暦上の境界として刻む。 [2011 年 11 月 20 日ビットコイン v0.5 Crypto++ 依存除去](/BitcoinArchive/ja/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/)に記録される引き継ぎ後最初のコードベース変更は、この日付に照らして、後継開発者たちが暗号学的中核に手を触れるまで七ヶ月を要したという事実を確立するために参照される。 [デジタルゴールド構造的特徴分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)はさらに踏み込み、創設者の記録された退場そのものを資産の本質的な性質として扱う。創設者が連絡可能なまま残った後続の暗号通貨と本資産を分かつ特徴として扱うのである。
 
 [ミシェル・バウエンスの 2025 年の回想](/BitcoinArchive/ja/entries/aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin/)は、2014 年ごろにサトシから私的に「ドリアン・ナカモトではない」という連絡を受けたと語るが、対応するメール自体はアーカイブに収録されておらず（公開された写しが存在しない）、ここでの「確認済みの通信」という記述を覆すものではない。
+
+<!-- entry-closing -->
+
+ここでいう「最後」は、かつて存在したかもしれないすべてのメールについての断定ではなく、残っている記録の性質である。確認できるのは、もっと狭く、しかし強い事実だ。最後の既知の往復には、公の説明から身を引くことと、ネットワークのアラートキーを手渡すことが同時に記録されている。引き継ぎが終わった場所から、沈黙が始まる。

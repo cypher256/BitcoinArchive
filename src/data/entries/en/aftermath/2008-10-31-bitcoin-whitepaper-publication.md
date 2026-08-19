@@ -56,7 +56,7 @@ quotes:
 
 ![A nine-page document titled "Bitcoin: A Peer-to-Peer Electronic Cash System" beside a mailing-list message panel dated Oct 31, 2008, with a reception timeline below running from two days of no replies through a skeptical first response to a supportive one.](/BitcoinArchive/images/analysis/2008-10-31-bitcoin-whitepaper-publication-hero.png)
 
-On Friday, October 31, 2008, at 18:10 UTC, a message from an unknown sender landed on the cryptography mailing list at metzdowd.com:
+Bitcoin first appeared publicly as a nine-page PDF and an unknown name, not as a running network. On Friday, October 31, 2008, at 18:10 UTC, that message landed on the cryptography mailing list at metzdowd.com:
 
 <!-- quote: q1 -->
 > "I've been working on a new electronic cash system that's fully peer-to-peer, with no trusted third party."
@@ -102,3 +102,7 @@ timeline
 The thread ran to November 17 and then stopped, with the skeptics unconverted. All 24 messages this archive holds from it — every objection, every answer — can be read in sequence in [the thread view](/BitcoinArchive/entries/threads/emails/cryptography/bitcoin-p2p-e-cash-paper/). Nine weeks after the announcement, Satoshi [mined the genesis block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/), and the system the nine pages described stopped being a document.
 
 *[Context: The October 31, 2008 posting is the inciting moment of the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — the nine pages the protagonist releases into the middle of a financial crisis, carrying what the novel calls the protocol that would overturn, at its root, a concept of money thousands of years old.]*
+
+<!-- entry-closing -->
+
+The first public appearance therefore carries two records at once: a working system presented as a paper, and a paper met first by silence, then by the scaling objection it would spend its history answering. The thread does not show a finished victory; it shows the moment a design entered a skeptical audience and had to remain standing there.

@@ -77,7 +77,7 @@ of truth; the role column below is a one-line pointer, not a restatement.
 | `check-ja-glossary.mjs` | JA terminology glossary + trailing long-vowel | none (`.ja-glossary-ignore`) | check + build · `check:ja-glossary` |
 | `check-description-length.mjs` | `description` length cap (per STYLE_GUIDE.md Description Policy) | none | check + build (`--strict`) · `check:description-length` |
 | `check-source-duplication.mjs` | `sourceUrl` not duplicated in `secondarySources[]` | none | check + build (`--strict`) · `check:source-duplication` |
-| `check-no-self-domain.mjs` | `sourceUrl` / `secondarySources[].url` never points at this archive's own domain | none | check + build (`--strict`) · `check:no-self-domain` |
+| `check-no-self-domain.mjs` | `sourceUrl` / `secondarySources[].url` never points at this archive's own domain, and `source` never names this project itself | none | check + build (`--strict`) · `check:no-self-domain` |
 | `check-citation-parity.mjs` | Every EN/JA entry has a citation route and both mirrors point to the same source URL set | none | check + build · `check:citation-parity` |
 | `check-external-body-links.mjs` | Editor-selected external body URLs are moved to citation fields; historical URLs in primary records and blockquotes remain allowed but editor-note URLs fail | none | check + build · `check:external-body-links` |
 | `check-halving-consistency.mjs` | Embed's self-contained halving array (chart-embeds.js) matches `halvings.json` | none | check + build · `check:halving-consistency` |

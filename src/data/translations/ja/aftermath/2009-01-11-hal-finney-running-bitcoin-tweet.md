@@ -44,7 +44,7 @@ translationStatus: complete
 
 ![「Running bitcoin」と書かれた吹き出し型のカードと、パソコン画面の前に座る人影のシルエット、光の線でつながった二つのネットワークノード、そして 1 月 11 日から 1 月 12 日までの短い時間軸を描いたイラスト](/BitcoinArchive/images/analysis/2009-01-11-hal-finney-running-bitcoin-tweet-hero.png)
 
-2009 年 1 月 10 日午後 7 時 33 分 (太平洋標準時、UTC では 1 月 11 日 03:33)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)は Twitter に 2 語を投稿した：
+ビットコインに 2 番目の運用者が現れたことを最初に公に示したのは、わずか 2 語だった。2009 年 1 月 10 日午後 7 時 33 分 (太平洋標準時、UTC では 1 月 11 日 03:33)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)はその 2 語を Twitter に投稿した：
 
 <!-- quote: q1 -->
 > Running bitcoin
@@ -62,3 +62,7 @@ translationStatus: complete
 ツイートは 2 語だった。フィニーがビットコインに関わった記録は、その瞬間から 5 年半続き、[2014 年に ALS による彼の死](/BitcoinArchive/ja/entries/aftermath/2014-08-28-hal-finney-passes-away/)で終わった。非サトシ参加者がシステムについて発した最短の宣言は、ビットコイン初期の歴史における最も長く、最も詳細に記録された関与の一つの入り口に置かれている。
 
 *[補足：ハル・フィニーの「Running bitcoin」は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』で名指しで描かれる場面の一つとして扱われる。第二のノード運用者からの最初の合図であり、主人公のシステムが彼ひとりのものではなくなった瞬間である。]*
+
+<!-- entry-closing -->
+
+後年の価格を重ねると、この出来事は実際より大きく見える。だが同時代の記録が示すのは、もっと単純な出来事だ。2 語が、プロトコルに知られた 2 番目の運用者が加わった瞬間を記録し、その 2 日後、その運用者には最初の取引として 10 BTC が届いた。

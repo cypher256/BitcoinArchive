@@ -43,7 +43,7 @@ quotes:
 
 ![A speech-bubble card reading "Running bitcoin" beside a silhouette at a glowing computer screen, with two connected network nodes and a two-day timeline from Jan 11 to Jan 12 below.](/BitcoinArchive/images/analysis/2009-01-11-hal-finney-running-bitcoin-tweet-hero.png)
 
-On January 10, 2009, at 7:33 PM Pacific Time (03:33 UTC on January 11), [Hal Finney](/BitcoinArchive/participants/hal-finney/) posted two words to Twitter:
+The first known public sign that Bitcoin had a second operator was only two words. On January 10, 2009, at 7:33 PM Pacific Time (03:33 UTC on January 11), [Hal Finney](/BitcoinArchive/participants/hal-finney/) posted them to Twitter:
 
 <!-- quote: q1 -->
 > Running bitcoin
@@ -61,3 +61,7 @@ Two days later, on January 12, 2009, [the first Bitcoin transaction](/BitcoinArc
 The tweet was two words. Finney's documented involvement with Bitcoin extended from that moment for five and a half years, until [his death in 2014 from ALS](/BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/). The shortest declaration any non-Satoshi participant made about the system sits at the entrance of one of the longest and best-documented engagements with Bitcoin in its early history.
 
 *[Context: Hal Finney's "Running bitcoin" is one of the named scenes in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/) — the first signal, from the second node operator, that the protagonist's system was no longer his alone.]*
+
+<!-- entry-closing -->
+
+Later price histories can make the event look larger than it was. The contemporaneous record points to a simpler one: two words marked the moment the protocol acquired a second known operator, and two days later that operator received the first transaction of 10 BTC.

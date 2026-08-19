@@ -42,7 +42,7 @@ quotes:
 
 ![A glowing cyan block labeled "Block 0 / Genesis" fused with a torn newspaper front page reading "Bailout for banks," a padlocked coin marked "50 BTC unspendable" below it, fading erased-identity icons on the left, and two smaller blocks with coin icons trailing off to the right.](/BitcoinArchive/images/analysis/2009-01-03-genesis-block-hero.png)
 
-On January 3, 2009, Satoshi Nakamoto hardcoded the first block of the Bitcoin blockchain into the v0.1 source. What he etched into the coinbase transaction of that block was not a software version string, not his own name, not "Hello World" — it was the front-page headline of that day's *Times* newspaper, copied verbatim:
+Bitcoin's first block carries a newspaper headline, not a version string or Satoshi Nakamoto's name. On January 3, 2009, Satoshi hardcoded that block into the v0.1 source, copying the front-page headline of that day's *Times* newspaper into its coinbase transaction:
 
 <!-- quote: q1 -->
 > The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
@@ -64,3 +64,7 @@ The block hash:
 For the structural reading — why the genesis is hardcoded, why the coinbase is unspendable, why the next block (Block 1) appears five days later despite the 10-minute target — see the [genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/), surveyed alongside the [2024 Bitcoin Magazine treatment of the same gap](/BitcoinArchive/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/).
 
 *[Context: The Times headline embedded in the genesis-block coinbase is treated, in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/), as the protagonist's single recorded emotional gesture — the one exception in his otherwise consistent public silence.]*
+
+<!-- entry-closing -->
+
+Block 0 does not tell us what Satoshi felt when he chose the headline. It records something firmer: inside a system that otherwise strips personal authorship from view, one political reference was placed where every node would preserve it and the record could not later be retracted. That is both the force and the limit of this evidence.

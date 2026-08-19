@@ -2,7 +2,7 @@
 title: "どの仮想通貨に投資すべきか — GPT・Claude・Gemini・Kimi・Grok に聞いた回答の記録"
 date: 2026-08-02T00:00:00Z
 type: "analysis"
-source: "bitcoin-institute"
+source: "github"
 sourceNote: "既存文書の転載ではなく、ビットコイン・インスティテュート自身が行った一次的な実験である。2026年8月2日、5 つの AI 製品に同一の質問を投げかけ、その回答を記録した（1 件のみ例外があり、§6 に記す）。"
 author: "Bitcoin Institute"
 participants:

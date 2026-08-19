@@ -581,6 +581,45 @@ and the inline-keyword rule in
 both presuppose this integrity invariant; they say *where* to link, not
 *how* to mismatch text and URL.
 
+## Source Field (Taxonomy)
+
+`source` (frontmatter) is a different field from the citation fields
+below — it is the classification axis behind `/sources/[source]/`,
+answering "what platform or publication did this content originate
+from" (e.g. `bitcointalk`, `wikipedia`, `malmi-email-archive`,
+`github`), not "what does this entry cite." For a primary-source entry
+the value is unambiguous — the platform the document was published on.
+For an editorial entry (`article` / `analysis` / `biography` /
+`design` / `currency`), it is the external venue the entry's subject
+matter is grounded in or fact-checked against, even when the entry is
+Bitcoin Institute's own original writing rather than a reproduction of
+one document.
+
+**`source` must never name this project itself** — not "Bitcoin
+Institute," not "the archive," in any of its published or fictional
+domain forms (same principle as `sourceUrl` below: self-citation is
+not a citation). When an editorial entry is a first-hand experiment
+with no single pre-existing document to classify it under, pick the
+external venue its core claims are actually grounded in or checked
+against, the same way an entry explaining Bitcoin's design without
+reproducing the whitepaper still classifies as `bitcoin-pdf`. Do not
+reach for the project's own name as a placeholder taxonomy value.
+
+**Enforcement.** `scripts/check-no-self-domain.mjs` also rejects
+`source` values naming this project (see the file's `SELF_SOURCE_SLUGS`
+list), alongside its `sourceUrl` / `secondarySources` checks below.
+
+**Incident (2026-08-02 / caught 2026-08-19):** five entries created the
+same night used `source: "bitcoinarchive"` or `source: "bitcoin-institute"`.
+Four were corrected the same night alongside a `sourceUrl` self-domain
+fix (e.g. reassigned to `trakx`, `bitcoin-wiki`, `bitcoin-pdf`). The
+fifth — an AI-model investment survey with no self-domain `sourceUrl`
+to trip the existing check — kept the self-referential `source` value
+undetected for over two weeks, because no check ever parsed the
+`source` field. Reassigned to `github`, the venue its central claim
+(the `MAX_MONEY` consensus constant) is fact-checked against, and
+`check-no-self-domain.mjs` extended to close the gap.
+
 ## Source Citation: `sourceUrl` vs `secondarySources`
 
 `<SourceCitation />` renders the two frontmatter fields as separate

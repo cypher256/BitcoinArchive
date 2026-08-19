@@ -265,6 +265,8 @@ Michael Saylor compressed the same reading into a single line: "Satoshi created 
 <!-- audit:quote-skip -->
 > "The modern history of science supplied no precedent for someone who conceived a revolutionary technology and brought it into the world without taking credit."
 
-That is where the record of other people's words about Satoshi currently rests. The man [said almost nothing about himself](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/) and [answered nothing personal](/BitcoinArchive/entries/analysis/2010-12-27-satoshi-non-technical-silence/); the doubters put their objections in writing and later put their retractions beside them; the verifiers found code that defended itself and a fortune that never moved; a court settled who he is not; and the durable public monuments to him are a mirror and an outline — a face supplied by whoever happens to be looking.
-
 *[Context: The October 31, 2008 announcement these first replies answered is the inciting moment of the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/), which follows a present-day office worker in Tokyo reading this same record of other people's words to find the person behind them.]*
+
+<!-- entry-closing -->
+
+That is where the record of other people's words about Satoshi currently rests. The man [said almost nothing about himself](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/) and [answered nothing personal](/BitcoinArchive/entries/analysis/2010-12-27-satoshi-non-technical-silence/); the doubters put their objections in writing and later put their retractions beside them; the verifiers found code that defended itself and a fortune that never moved; a court settled who he is not; and the durable public monuments to him are a mirror and an outline — a face supplied by whoever happens to be looking.

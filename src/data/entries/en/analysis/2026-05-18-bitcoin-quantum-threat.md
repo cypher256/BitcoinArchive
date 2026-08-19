@@ -56,9 +56,9 @@ translationStatus: complete
 
 ![A padlock representing Bitcoin's ECDSA signatures being cracked by a quantum processor, next to a timeline of post-quantum migration milestones](/BitcoinArchive/images/analysis/bitcoin-quantum-threat-hero.png)
 
-A search engine query for "quantum Bitcoin" returns a steady stream of headlines that read, in effect, *the day Bitcoin breaks is the day the world ends*. This entry takes that framing as its starting point and asks two narrower questions the framing usually conflates: **which Bitcoin assets are actually at risk** from a sufficiently capable quantum computer, and **on what timeline** does that capability arrive. The answers in both cases are more specific — and more bounded — than the headlines suggest.
+Shor and Grover do not threaten Bitcoin in the same way. Shor can turn a visible public key into a private key; Grover reduces SHA-256's effective preimage resistance from 256 bits to 128 bits without breaking the hash. The headlines that turn "quantum Bitcoin" into the end of the world usually erase that asymmetry.
 
-The entry is not a forecast. The arrival year of a cryptographically relevant quantum computer (CRQC) is not knowable from outside a small group of national labs and hyperscaler research programmes, and even from inside those programmes the estimates span decades. What is documented is the design choices Bitcoin's cryptography made, the institutional record of post-quantum standardization, and the public statements of cryptographers and infrastructure people who have committed to a timeline.
+What can be documented is narrower: which Bitcoin assets expose a public key, what Bitcoin's cryptography actually assumes, what post-quantum standardization has already produced, and how far the public timeline claims can be trusted. The arrival year of a cryptographically relevant quantum computer (CRQC) remains unknowable from outside the small group of national labs and hyperscaler research programmes working toward it.
 
 ## 1. What a quantum computer actually breaks
 
@@ -164,6 +164,8 @@ The entry presents what the cryptography commits to and what the institutional a
 - Bitcoin's protocol can soft-fork to add post-quantum signature support. That property — not a fixed cryptographic substrate — is what makes the engineering view of this topic differ from the world-ending one.
 - The migration risk concentrates on specific UTXO categories, not on Bitcoin as a system. P2PK era coins, exposed P2TR outputs, and reused P2PKH addresses are the high-exposure pool. Coins held in unspent P2PKH/P2WPKH with no reuse, then migrated before a CRQC exists, are in a different threat class.
 
-*[Editor: "world-ending" is how the question is usually posed, not how the record answers it. The cryptographic record, the standardization record and the migration proposals together describe an engineering problem with a roughly two-decade preparation window — bounded above by the NSA's 2035 mandate, below by the absence of a known CRQC today.]*
-
 *[Context: The post-quantum migration timeline analyzed here is the technical basis for the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/)'s 2041 chapter — the year an AI gains quantum capability and Bitcoin faces its largest test.]*
+
+<!-- entry-closing -->
+
+Quantum risk is therefore not a single date at which Bitcoin breaks. It is a migration problem with a known asymmetry, a public-key exposure map, and an unresolved question over dormant coins whose owners may never move them. The protocol still has room to change; the difficult part is moving exposed value before the timetable is settled.

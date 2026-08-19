@@ -174,14 +174,8 @@ Reasons consistent with the record:
 - **The exception class may be larger than the Malmi case alone.** A full sweep of the 257-message Malmi corpus and the BitcoinTalk forum may surface additional relational moves. This entry's catalogue is anchored on representative cases rather than exhaustive enumeration; further examples should be added to the matrix in §1 as they are surfaced.
 - **No identity claim follows.** The discipline characterises *how* Satoshi communicated, not who he was. The same discipline is consistent with intelligence-trained operatives, lifelong introverts, security-conscious researchers, and anyone with a long-standing personal practice of public-private separation. It selects against identities that would be expected to leak emotion or geography casually; it does not select for any specific identity.
 
-## 8. Summary
-
-- Across the ~2.5-year recorded correspondence (April 2009 to April 2011), Satoshi's replies to non-technical content from his correspondents fall into five identifiable patterns, four of which keep the personal-information channel closed.
-- The December 27 / December 29, 2010 Hearn–Satoshi exchange (the "Happy Christmas Satoshi" → SPV-only reply) is the framing case: a friendly seasonal opening met with eight paragraphs of design discussion and no acknowledgement of the greeting.
-- The 2009-01-10 Hal Finney "$10 million per coin / 100-million-to-one odds" message receives no individual reply; Satoshi's later post in the same thread reaches the topic only via the abstract "self fulfilling prophecy" remark, never engaging Finney's specific prediction.
-- The 2009-05-02 Malmi first-contact exchange is the cleanest exception, but it engages **political-cultural** ground rather than personal-information ground — preserving the discipline along the dimensions that would actually deanonymise.
-- The discipline is best read as a **communication-layer anonymity architecture**, complementary to the [technical anonymity layer](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/) (Tor, anonymising mail, header stripping). Where the technical layer keeps the *channel* opaque, this layer keeps the *content* opaque.
-- The pattern's consistency over hundreds of opportunities is the load-bearing observation; no single message would carry the reading.
-
 [The cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/) covers the technical axis of the same documented practice; the pattern here is its behavioural counterpart.
 
+<!-- entry-closing -->
+
+The Christmas exchange is not proof that Satoshi never spoke personally; the first contact with Malmi is the counterexample. It is evidence of a boundary. In the other observed cases, when a message offered location, custom, feeling, or praise, the reply moved back to protocol or stopped. That boundary complements the technical anonymity layer, but it does not identify Satoshi. It shows how consistently the surviving correspondence kept a person out of view.

@@ -2,7 +2,7 @@
 title: "Which crypto should you invest in? Five AI models answer, and their reasoning gets checked"
 date: 2026-08-02T00:00:00Z
 type: "analysis"
-source: "bitcoin-institute"
+source: "github"
 sourceNote: "This entry is Bitcoin Institute's own first-hand experiment, not a reproduction of an existing document: the same prompt was put to five AI products on 2026-08-02, and their raw answers were recorded as given, with one exception noted in §6."
 author: "Bitcoin Institute"
 participants:

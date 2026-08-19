@@ -1,19 +1,30 @@
 #!/usr/bin/env node
 /**
  * check-no-self-domain.mjs — Reject `sourceUrl` / `secondarySources[].url`
- * values that point back at this archive's own deployment domains.
+ * values that point back at this archive's own deployment domains, and
+ * reject `source` (the taxonomy field) when it names this project itself
+ * instead of a genuine external venue.
  *
  * `sourceUrl` and `secondarySources[]` exist to point a reader at an
  * independent, external reference (STYLE_GUIDE.md "Source Citation:
- * sourceUrl vs secondarySources"). A URL on this site's own deployment
- * domain is not external by definition, regardless of whether it
- * happens to resolve — citing yourself is not a citation.
+ * sourceUrl vs secondarySources"). `source` is a different field — the
+ * taxonomy axis behind `/sources/[source]/` — but the same principle
+ * applies: it must name the actual external platform/publication content
+ * came from (STYLE_GUIDE.md "Source Field (Taxonomy)"), never this
+ * project. A URL or slug that resolves to this site's own identity is
+ * not external by definition, regardless of whether it happens to
+ * resolve — citing yourself is not a citation.
  *
  * Incident (2026-08-02): five entries used a self-referencing or
  * outright fictional "own domain" (bitcoininstitute.com,
  * www.bitcoin-institute.org — neither ever configured, see
- * site-config.mjs) as sourceUrl. Nothing caught it because no check
- * enforced the internal/external distinction.
+ * site-config.mjs) as sourceUrl; four of those five also had
+ * source: "bitcoinarchive" / "bitcoin-institute" and were fixed in the
+ * same pass. A fifth entry created minutes earlier had the same
+ * source: "bitcoin-institute" self-reference but no self-domain
+ * sourceUrl, so it fell outside that pass's sourceUrl-only sweep and
+ * was not caught until 2026-08-19. Nothing enforced the source field
+ * because this check only ever parsed sourceUrl / secondarySources.
  *
  * Usage:
  *   node scripts/check-no-self-domain.mjs           # report only (exit 0 always)
@@ -40,6 +51,12 @@ const SELF_DOMAINS = [
   'bitcoin-institute.org',
 ];
 
+// `source` is a bare taxonomy slug, not a URL, so it needs its own
+// literal denylist rather than hostname parsing. Same caveat as
+// SELF_DOMAINS: guards against recurrence of known strings, not every
+// possible future self-referential slug.
+const SELF_SOURCE_SLUGS = ['bitcoin-institute', 'bitcoinarchive'];
+
 function walk(dir) {
   const out = [];
   if (!existsSync(dir)) return out;
@@ -58,6 +75,11 @@ function extractFrontmatter(content) {
 
 function parseSourceUrl(fm) {
   const m = fm.match(/^sourceUrl:\s*"?([^"\n]+?)"?\s*$/m);
+  return m ? m[1].trim() : null;
+}
+
+function parseSource(fm) {
+  const m = fm.match(/^source:\s*"?([^"\n]+?)"?\s*$/m);
   return m ? m[1].trim() : null;
 }
 
@@ -110,14 +132,19 @@ for (const file of allFiles) {
       violations.push({ file: rel, field: 'secondarySources[].url', url });
     }
   }
+
+  const source = parseSource(fm);
+  if (source && SELF_SOURCE_SLUGS.includes(source)) {
+    violations.push({ file: rel, field: 'source', url: source });
+  }
 }
 
 if (violations.length === 0) {
-  console.log('✓ No sourceUrl / secondarySources entries point at this archive\'s own domain.');
+  console.log('✓ No sourceUrl / secondarySources / source entries self-cite this archive.');
   process.exit(0);
 }
 
-console.error(`✗ Found ${violations.length} self-domain citation(s):\n`);
+console.error(`✗ Found ${violations.length} self-citation(s):\n`);
 for (const v of violations) {
   console.error(`  ${v.file}`);
   console.error(`    ${v.field}: ${v.url}`);
@@ -125,5 +152,8 @@ for (const v of violations) {
 console.error(`\nsourceUrl / secondarySources must point at an independent external`);
 console.error(`reference, not this site's own domain (${SELF_DOMAINS.join(', ')}).`);
 console.error(`See STYLE_GUIDE.md "Source Citation: sourceUrl vs secondarySources".`);
+console.error(`\nsource must name a genuine external platform/publication, not this`);
+console.error(`project itself (${SELF_SOURCE_SLUGS.join(', ')}).`);
+console.error(`See STYLE_GUIDE.md "Source Field (Taxonomy)".`);
 
 process.exit(STRICT ? 1 : 0);
