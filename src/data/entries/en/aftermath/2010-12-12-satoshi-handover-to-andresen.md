@@ -44,7 +44,7 @@ quotes:
 
 ![Dark illustration of two faceless silhouettes labeled Satoshi and Andresen linked by a dotted gold timeline, with a source-repository icon and three dated milestones in between.](/BitcoinArchive/images/analysis/2010-12-12-satoshi-handover-to-andresen-hero.png)
 
-The handover to Gavin Andresen was not a single announcement. It joined two transfers that had to travel together: control of the source repository and the public authority to speak for the project. In late 2010, as Satoshi Nakamoto stepped back from active involvement in Bitcoin, he gave Andresen SVN access and endorsed him as the lead developer.
+Leadership did not pass in one ceremonial moment. Between December 3 and December 19, a private recommendation, repository access, and a reluctant public announcement made Gavin Andresen Satoshi Nakamoto's successor in practice. Control of the code and public responsibility for the project were linked, but the record preserves their transfer as a sequence.
 
 This decision was consistent with what Satoshi had privately communicated to [Martti Malmi](/BitcoinArchive/participants/martti-malmi/) on December 3, 2010, when asked who should take over development responsibilities:
 
@@ -57,7 +57,7 @@ Andresen formally stepped into the leadership role and announced it publicly on 
 <!-- quote: q1 -->
 > With Satoshi's blessing, and with great reluctance, I'm going to start doing more active project management for Bitcoin.
 
-The endorsement followed months of Andresen's 2010 contributions, and the handover bundled the commit access and the public mantle together. Andresen maintained the reference client — later renamed Bitcoin Core — until he handed it on in 2014.
+The endorsement followed months of Andresen's 2010 contributions. Commit access was formalized on December 12; Andresen publicly took on active project management on December 19. Together, those steps transferred both the repository and the public mantle, but not in the same moment. Andresen maintained the reference client — later renamed Bitcoin Core — until he handed it on in 2014.
 
 The December 12 handover sits at the centre of a tightly clustered set of surrounding records. [Satoshi's September 1, 2010 notice to Andresen about other projects](/BitcoinArchive/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/) is the earliest signal of the withdrawal sequence — coming three months before this SVN handover, which can be read as the central public-transition event it anticipated. [Satoshi's December 3 recommendation of Andresen](/BitcoinArchive/entries/aftermath/2010-12-03-handover-to-gavin/) reads as the precursor that the December 12 SVN access change formalised nine days later. And [Andresen's December 19 lead-maintainer announcement](/BitcoinArchive/entries/aftermath/2010-12-19-andresen-lead-maintainer-announcement/) treats this SVN transfer as the prerequisite event that made it possible for him to publicly assume the role, returning to it across its opening timeline, its sequence list, and its governance synthesis.
 

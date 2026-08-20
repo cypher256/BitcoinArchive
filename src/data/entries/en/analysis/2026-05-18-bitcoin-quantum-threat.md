@@ -56,7 +56,7 @@ translationStatus: complete
 
 ![A padlock representing Bitcoin's ECDSA signatures being cracked by a quantum processor, next to a timeline of post-quantum migration milestones](/BitcoinArchive/images/analysis/bitcoin-quantum-threat-hero.png)
 
-Shor and Grover do not threaten Bitcoin in the same way. Shor can turn a visible public key into a private key; Grover reduces SHA-256's effective preimage resistance from 256 bits to 128 bits without breaking the hash. The headlines that turn "quantum Bitcoin" into the end of the world usually erase that asymmetry.
+When quantum computers break Bitcoin, does the world end with it? The question is dramatic, but it compresses two old algorithms into a single catastrophe. Shor can turn a visible public key into a private key; Grover reduces SHA-256's effective preimage resistance from 256 bits to 128 bits without breaking the hash.
 
 What can be documented is narrower: which Bitcoin assets expose a public key, what Bitcoin's cryptography actually assumes, what post-quantum standardization has already produced, and how far the public timeline claims can be trusted. The arrival year of a cryptographically relevant quantum computer (CRQC) remains unknowable from outside the small group of national labs and hyperscaler research programmes working toward it.
 
@@ -168,4 +168,4 @@ The entry presents what the cryptography commits to and what the institutional a
 
 <!-- entry-closing -->
 
-Quantum risk is therefore not a single date at which Bitcoin breaks. It is a migration problem with a known asymmetry, a public-key exposure map, and an unresolved question over dormant coins whose owners may never move them. The protocol still has room to change; the difficult part is moving exposed value before the timetable is settled.
+Quantum risk is not a date that can be circled on a calendar as the day Bitcoin suddenly breaks. It is a migration problem with a known asymmetry, a public-key exposure map, and an unresolved question over dormant coins whose owners may never move them. The protocol can still change. The difficult part is moving exposed value before the threat is no longer hypothetical.

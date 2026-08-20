@@ -54,7 +54,7 @@ translationStatus: complete
 
 ![A timeline of the 2010 overflow incident forking into a rejected bad block and a rescued honest chain, beside a network diagram illustrating the centralization paradox of a single-author fix](/BitcoinArchive/images/analysis/overflow-incident-structure-and-paradox-hero.png)
 
-184 billion BTC was minted in a single block. That number is the obvious shock, but it is not the whole incident. The [aftermath entry for the value-overflow incident](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) records when it was discovered, what was patched, and how long the chain reorg took. The more unsettling fact is that old-rule nodes accepted the block while patched nodes rejected it: for a time, Bitcoin had two competing versions of its history. The rescue worked, and it exposed the centralized release path that made the rescue possible. The rescue and the authority it required entered the record together.
+184 billion BTC was minted in a single block. Even now, the number looks unreal. But the stranger part begins after the bug was found: old-rule nodes accepted the block, patched nodes rejected it, and Bitcoin briefly carried two competing histories. The [aftermath entry for the value-overflow incident](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) records the discovery, the patch, and the chain reorganization. Here, the trail continues into the rescue itself—what it took to erase an impossible transaction while the network disagreed about which history was valid.
 
 ## 1. How the soft-fork rescue actually worked
 

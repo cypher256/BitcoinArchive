@@ -66,7 +66,7 @@ inlineLinkKeywords:
 
 ![A letter addressed "Happy Christmas Satoshi" and an outstretched hand face a dark circuit panel labeled "Content Channel Closed"](/BitcoinArchive/images/analysis/satoshi-non-technical-silence-hero.png)
 
-A correspondent wrote "Happy Christmas, Satoshi" and asked, lightly, where in the world he might be. The reply did not say thank you, Merry Christmas, or anything personal. It began with SPV design. Across the surviving correspondence, that small refusal appears again and again: the channel stays open for protocol and closes when a person might come into view.
+A correspondent opened with "Happy Christmas, Satoshi," adding that he did not know where in the world Satoshi was or whether he celebrated Christmas there. The reply did not say thank you, Merry Christmas, or anything personal. It began with SPV design. Across the surviving correspondence, that small refusal appears again and again: the channel stays open for protocol and closes when a person might come into view.
 
 <!-- audit:quote-skip -->
 > "Happy Christmas Satoshi, assuming you celebrate it wherever you are in the world :-)"
@@ -79,7 +79,7 @@ Two days later, Satoshi's reply began:
 
 No "Happy Christmas." No "thanks." No "you too." The reply opened with SPV client-mode design, walked through eight paragraphs of technical detail, and ended without ever circling back to the season's greeting. This is not an isolated incident. Across roughly two and a half years of recorded correspondence (April 2009 to April 2011), Satoshi's responses to non-technical content from his correspondents follow a small number of identifiable patterns — and from one of them in particular almost never deviate.
 
-The resulting communication discipline reads as a layer of Satoshi's anonymity architecture distinct from the technical layer (Tor, anonymising email, metadata stripping) treated in [Satoshi's anonymity architecture](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/). The technical layer keeps the *channel* opaque. This layer keeps the *content* opaque.
+This response pattern looks like a layer of Satoshi's anonymity architecture distinct from the technical layer (Tor, anonymising email, metadata stripping) treated in [Satoshi's anonymity architecture](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/). The technical layer keeps the *channel* opaque; this one keeps the *content* opaque.
 
 ## 1. Catalogue of observed cases
 
@@ -178,4 +178,4 @@ Reasons consistent with the record:
 
 <!-- entry-closing -->
 
-What survives here is not a portrait of a cold or secretive person. It is a boundary visible in the traffic itself: greetings, praise, location, and feeling reach the edge of the exchange, then the reply returns to protocol—or stops. Malmi's rare exception keeps the boundary from becoming a caricature. It shows a person could appear in shared ideas while remaining absent from the personal record.
+I read this less as a portrait of a cold or secretive person than as a boundary visible in the traffic itself: greetings, praise, location, and feeling reach the edge of the exchange, then the reply returns to protocol—or stops. Malmi's rare exception keeps the boundary from becoming a caricature. It shows that a person could appear in shared ideas while remaining absent from the personal record.

@@ -132,7 +132,7 @@ In 2011, the security researcher Dan Kaminsky — famous for finding a flaw in t
 
 [The archive's entry on Kaminsky's audit](/BitcoinArchive/entries/aftermath/2011-10-10-dan-kaminsky-bitcoin-security/) records the technical detail. This entry collects the wider record that verdict belongs to: what other people said about Satoshi Nakamoto — to his face in 2008, behind his back after 2011, under oath in 2024. The archive already inventories [what Satoshi said about himself](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/) (almost nothing) and [what he declined to answer](/BitcoinArchive/entries/analysis/2010-12-27-satoshi-non-technical-silence/) (everything personal). This is the third axis: everyone else's words.
 
-Read in one place, those words follow an arc none of the speakers could see at the time — doubt, a wager, verification, retraction, a courtroom, a dictionary, and two statues with no face.
+Read in one place, those words follow an arc none of the speakers could see at the time — doubt, a wager, verification, reconsideration, a courtroom, a dictionary, and two statues with no face.
 
 ## 1. The first replies (2008–2009)
 
@@ -269,4 +269,4 @@ Michael Saylor compressed the same reading into a single line: "Satoshi created 
 
 <!-- entry-closing -->
 
-That is where the record of other people's words about Satoshi currently rests. The man [said almost nothing about himself](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/) and [answered nothing personal](/BitcoinArchive/entries/analysis/2010-12-27-satoshi-non-technical-silence/); the doubters put their objections in writing and later put their retractions beside them; the verifiers found code that defended itself and a fortune that never moved; a court settled who he is not; and the durable public monuments to him are a mirror and an outline — a face supplied by whoever happens to be looking.
+That is where the record of other people's words about Satoshi currently rests. The man [said almost nothing about himself](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/) and [answered nothing personal](/BitcoinArchive/entries/analysis/2010-12-27-satoshi-non-technical-silence/); the first responses put doubt in writing, and later retrospectives set admiration and regret beside it; the verifiers found code that defended itself and a fortune that never moved; a court settled who he is not; and the durable public monuments to him are a mirror and an outline — offering no face except the one supplied by whoever happens to be looking.

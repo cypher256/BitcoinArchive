@@ -54,7 +54,7 @@ quotes:
 
 ![Two envelope icons beside a glowing ornate key passing between two silhouetted figures, set against a dark background with faint connected network nodes.](/BitcoinArchive/images/analysis/2011-04-26-satoshi-final-known-email-hero.png)
 
-Two emails, three days apart, close the verified private record of Satoshi Nakamoto. The first says the project is in Gavin's hands; the second transfers the network's alert key and says its author will probably be unavailable.
+Two emails sent three days apart mark the end of Satoshi Nakamoto's verified private correspondence. The first says the project is in Gavin's hands; in the second, Satoshi transfers the network's alert key and says he will probably be unavailable.
 
 ## April 23, 2011 — to Mike Hearn
 

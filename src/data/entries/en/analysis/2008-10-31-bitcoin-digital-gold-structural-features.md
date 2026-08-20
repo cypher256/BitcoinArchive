@@ -137,7 +137,7 @@ The features below are the concrete pillars that, taken together, supply Bitcoin
 | 3 | Fair launch (no premine) | Genesis block followed by ordinary mining open to all from block 1 | Some smaller chains ([Litecoin](/BitcoinArchive/entries/currency/2026-07-27-litecoin-currency-overview/), [Monero](/BitcoinArchive/entries/currency/2026-07-27-monero-currency-overview/)); rare among top-ten |
 | 4 | Founder departure | Satoshi gone since 2011; no public re-emergence | None among comparably-valued chains |
 | 5 | Fixed supply | 21 million cap, immutable in practice | Some chains have caps; most can be amended by governance |
-| 6 | Network effect / first-mover | 16-year history, deepest liquidity, longest brand recognition | Tautologically Bitcoin-only |
+| 6 | Network effect / first-mover | 17-year history, deepest liquidity, longest brand recognition | Tautologically Bitcoin-only |
 
 Each feature is developed in its own section below. The order is roughly the order in which each became evident: system-level decentralization at launch (2009), fair launch at the same moment, fixed supply written into the code, founder departure in 2011, the absence of a controlling foundation as a pattern visible by 2014, network effect as the cumulative result.
 
@@ -197,11 +197,11 @@ The mechanical design that produces the cap — the [monetary design](/BitcoinAr
 
 ### 6. Network effect / first-mover
 
-Bitcoin launched January 3, 2009. Sixteen years of continuous operation accumulate four things that successor chains cannot duplicate by design choice alone:
+Bitcoin launched January 3, 2009. Seventeen years of continuous operation accumulate four things that successor chains cannot duplicate by design choice alone:
 
 - **Deepest spot liquidity** across centralized and decentralized venues, including the post-2024 spot ETF inflows that re-anchored institutional pricing.
 - **Strongest brand recognition** at the level where "cryptocurrency" and "bitcoin" are near-synonyms in non-specialist coverage.
-- **Largest accumulated proof-of-work**, which is what the most-work chain rule actually selects on — a property no fork can short-circuit without out-mining 16 years of difficulty.
+- **Largest accumulated proof-of-work**, which is what the most-work chain rule actually selects on — a property no fork can short-circuit without out-mining 17 years of difficulty.
 - **Longest uninterrupted operational record**, including survival of the [August 2010 value-overflow incident](/BitcoinArchive/entries/analysis/2010-08-15-overflow-incident-structure-and-paradox/) and every subsequent stress event.
 
 The network effect is real and is correctly counted as one of the six features, but it is not the whole story. The first-mover argument is often inflated into "Bitcoin's value is just network effect" — meaning, if the order had been different, some other chain would now occupy the digital-gold slot. The other five features above push against that reading: even with first-mover stripped, Bitcoin would still be the project with no founder authority, no foundation, no premine, and a credibly immutable cap. First-mover compounds the effect; it is not the substrate.
@@ -242,4 +242,4 @@ Five AI systems, asked separately to pick exactly one cryptocurrency, converged 
 
 <!-- entry-closing -->
 
-"Digital gold" endured because scarcity was never alone. A no-premine launch open to ordinary participants, a founder who stepped away, a fixed cap, and years of uninterrupted history made the label structural rather than decorative. Later chains can copy one feature or beat Bitcoin on one axis; they cannot inherit the years already written into this network. Whether that accumulated promise can survive the people now carrying it is the question the records still to come will answer.
+Scarcity was never alone. The fixed cap sits inside a network whose rules no single operator can rewrite; its launch had no premine, its founder stepped away, no controlling foundation took his place, and seventeen years of uninterrupted history accumulated behind it. That combination made "digital gold" structural rather than decorative. Later chains can copy one feature or beat Bitcoin on one axis; they cannot inherit the years already written into this network. Whether that accumulated promise can survive the people now carrying it is the question the records still to come will answer.

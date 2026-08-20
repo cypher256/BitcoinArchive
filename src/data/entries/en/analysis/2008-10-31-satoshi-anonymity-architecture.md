@@ -92,7 +92,8 @@ inlineLinkKeywords:
 
 ![Six concentric shield-shaped layers surrounding a faceless silhouette at the center, each labeled as one layer of non-identification](/BitcoinArchive/images/analysis/satoshi-anonymity-architecture-hero.png)
 
-The name looks like the clue that should solve Satoshi. The record spreads that clue across six surfaces instead: a Japanese-form pseudonym, anonymous mail relays, mixed language and time signals, a Windows-based release environment, a genesis block without a propagation footprint, and a withdrawal carried out in stages. Any identity hypothesis that explains only one of them has not reached the record's actual difficulty.
+The name looks like the clue that should reveal who Satoshi was. Instead, the record scatters the problem across six layers: a Japanese-form pseudonym, anonymous mail relays, mixed language and time signals, a Windows-based release environment, a genesis block without a propagation footprint, and a withdrawal carried out in stages. Any identity hypothesis that explains only one of them has not reached the record's actual difficulty.
+
 This entry follows those traces from the development window (mid-2007 through August 2008) through the public phase and withdrawal. The adjacent questions have their own readings: who Satoshi is, in [the identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), and why the gap persists despite so much surviving material, in [the identification-asymmetry analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/).
 
 **The six-layer wall (overview)**

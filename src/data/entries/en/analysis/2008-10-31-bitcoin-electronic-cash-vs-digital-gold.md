@@ -57,7 +57,7 @@ translationStatus: complete
 
 ![A glowing gold coin sends a luminous line toward an open hand, beneath the words "Electronic Cash"](/BitcoinArchive/images/analysis/bitcoin-electronic-cash-vs-digital-gold-hero.png)
 
-The whitepaper gives Bitcoin two images that seem to pull apart. Its [title](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) promises electronic cash; §6 compares new coins with gold mined into circulation. The tension becomes useful only when we ask whether those lines describe the same axis. The answer appears in what happened when that design met its first recorded purchase, and in the scarcity and scaling pressures that later pushed it toward digital gold.
+The whitepaper gives Bitcoin two images that seem to pull apart. Its [title](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) promises electronic cash; §6 compares new coins with gold mined into circulation. The tension becomes useful only when we ask whether those lines describe the same axis. The answer emerges in the first recorded purchase that put the design to work, and in the scarcity and scaling pressures that later pushed Bitcoin toward digital gold.
 
 | Axis | Satoshi's design | Where in the paper |
 |---|---|---|
@@ -113,7 +113,7 @@ The [digital-gold structural-features reading](/BitcoinArchive/entries/analysis/
 
 ## So does it still dream of electronic cash?
 
-So this question stands in the present tense, not the past. Now that it is held as gold, does Bitcoin still reach for the use it was designed for — electronic cash? The Lightning Network, [El Salvador's legal-tender experiment](/BitcoinArchive/entries/analysis/2026-07-28-bitcoin-nation-state-policy-history/), the on-chain-cash efforts — the hand is still out. The cash face of the design did not vanish; it is only covered by the gold one. It was not built to be hoarded. It was built hard, and the hardness made it hoardable. And still it dreams of being spent.
+So this question stands in the present tense, not the past. Now that it is held as gold, does Bitcoin still reach for the use it was designed for — electronic cash? The Lightning Network, [El Salvador's legal-tender experiment](/BitcoinArchive/entries/analysis/2026-07-28-bitcoin-nation-state-policy-history/), the on-chain-cash efforts — the hand is still out. The cash face of the design did not vanish; it is only covered by the gold one.
 
 ## Limits of this reading
 
@@ -128,4 +128,4 @@ The [digital-gold structural-features analysis](/BitcoinArchive/entries/analysis
 
 <!-- entry-closing -->
 
-Bitcoin did not leave cash behind by choosing gold in a single moment. The same hardness that let it move value without a central issuer also made spending feel like surrendering an appreciating asset. The whitepaper still holds both faces in one design; the living network keeps deciding which one people will see.
+It was not built to be hoarded. It was built hard, and the hardness made it hoardable. And still it dreams of being spent.

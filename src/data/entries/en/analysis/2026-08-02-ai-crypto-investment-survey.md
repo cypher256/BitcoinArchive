@@ -64,7 +64,7 @@ inlineLinkKeywords:
 
 ![A dark navy infographic showing five abstract, unlabeled chat-window icons in a row, each in a different color and shape, all five arrows converging on a single orange bitcoin symbol at the center, with a magnifying glass over a checklist beside it representing fact-checking.](/BitcoinArchive/images/analysis/2026-08-02-ai-crypto-investment-survey-hero.png)
 
-Five AI systems were asked to choose exactly one cryptocurrency. All five chose Bitcoin. Seeing the answers line up that neatly is, honestly, surprising. Read the reasons closely, though, and “most” keeps returning: the fixed mechanisms hold up, while the comparative claims do not all clear the same bar.
+If you could choose only one cryptocurrency, which would it be? GPT, Claude, Gemini, Kimi, and Grok were given the same question; all five answered Bitcoin. Honestly, I did not expect the result to line up so neatly. But the unanimity is only the beginning. Once each reason is checked against primary sources, unexpected differences appear inside what looked like the same answer.
 
 ## 1. The question, and who was asked
 

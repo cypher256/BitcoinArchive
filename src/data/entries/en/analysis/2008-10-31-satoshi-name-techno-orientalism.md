@@ -77,4 +77,4 @@ Three analytic facts follow without requiring an intent claim:
 
 <!-- entry-closing -->
 
-The name can carry a powerful atmosphere without carrying a usable identity clue. That is the line this reading needs to hold: “Satoshi Nakamoto” belongs to a cultural field that shaped reception, but the field cannot tell us who stood behind it. Any identity claim that begins from the name has to account for that pull before it counts the name as evidence. The companion entry, [Independent arrival at the cypherpunk core](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), takes up the intellectual position from which the system was built.
+The name can carry a powerful atmosphere without carrying a usable identity clue. That is the line this reading needs to hold: “Satoshi Nakamoto” belongs to a cultural field that shaped reception, but the field cannot tell us who stood behind it. Any identity claim that begins from the name has to account for that pull before it counts the name as evidence.
