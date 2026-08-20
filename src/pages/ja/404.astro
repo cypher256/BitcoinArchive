@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<BaseLayout
+  title="ページが見つかりません - Bitcoin Institute"
+  description="お探しのページが見つかりませんでした。"
+  lang="ja"
+>
+  <div class="container not-found">
+    <h1>404</h1>
+    <p>お探しのページは存在しません。</p>
+    <a href={`${basePath}/ja/`}>トップへ戻る</a>
+
+    <div id="suggestions" class="suggestions" hidden>
+      <p class="suggestions-label">こちらのページもご覧ください：</p>
+      <ul id="suggestions-list" class="suggestions-list"></ul>
+    </div>
+  </div>
+</BaseLayout>
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/algoliasearch@4.24.0/dist/algoliasearch-lite.umd.js"></script>
+<script is:inline define:vars={{ basePath }}>
+(function () {
+  // Cloudflare Pages resolves 404s by walking up the directory tree, so this
+  // file (dist/ja/404.html) is served for any unmatched path under /ja/ --
+  // we are certain of the locale here, unlike the root 404 (see its comment
+  // for why that one has to sniff the path client-side instead).
+  var path = location.pathname;
+  if (basePath && (path === basePath || path.indexOf(basePath + '/') === 0)) path = path.slice(basePath.length);
+  var segments = path.split('/').filter(Boolean);
+  if (segments[0] === 'ja') segments.shift();
+  var slug = segments[segments.length - 1] || '';
+  var query = slug.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/[-_]/g, ' ').trim();
+  if (!query || typeof algoliasearch === 'undefined') return;
+
+  // h.url is already locale-prefixed for JA-index hits (matches
+  // entries-browse.ts's own `basePath + h.url`).
+  var algolia = algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425');
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  algolia.search([{ indexName: 'bitcoin_archive_ja', query: query, params: {
+    hitsPerPage: 5, highlightPreTag: '<mark>', highlightPostTag: '</mark>'
+  } }])
+    .then(function (r) {
+      var hits = (r.results[0] && r.results[0].hits) || [];
+      if (!hits.length) return;
+      var list = document.getElementById('suggestions-list');
+      list.innerHTML = hits.map(function (h) {
+        var hr = h._highlightResult || {};
+        var title = ((hr.title && hr.title.value) || esc(h.title)).replace(/<\/mark>\s*<mark>/g, ' ');
+        return '<li><a href="' + basePath + h.url + '">' + title + '</a></li>';
+      }).join('');
+      document.getElementById('suggestions').hidden = false;
+    })
+    .catch(function () {});
+})();
+</script>
+
+<style>
+  .not-found {
+    text-align: center;
+    padding: 5rem 0;
+  }
+  .not-found h1 {
+    font-size: 5rem;
+    color: var(--color-accent);
+    margin: 0 0 1rem;
+  }
+  .not-found p {
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+    margin: 0 0 2rem;
+  }
+  .not-found a {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+  .suggestions {
+    max-width: 32rem;
+    margin: 3rem auto 0;
+    text-align: left;
+  }
+  .suggestions-label {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    margin: 0 0 0.75rem;
+  }
+  .suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .suggestions-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .suggestions-list a {
+    font-family: inherit;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  .suggestions-list a:hover {
+    text-decoration: underline;
+  }
+</style>

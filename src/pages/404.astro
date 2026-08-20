@@ -1,7 +1,34 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { ui } from '../i18n/ui';
 
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Header and Footer are shared components that render correctly by lang
+// prop on every real page; this page is the one place that must fake a
+// lang it does not actually know yet (see the script below), so the fix
+// pulls the JA labels straight from the single source of truth (ui.ts)
+// at build time instead of hand-duplicating strings in the client script.
+const jaNav = {
+  siteTitle: ui.ja['site.title'],
+  entries: ui.ja['nav.entries'],
+  types: ui.ja['nav.types'],
+  sources: ui.ja['nav.sources'],
+  participants: ui.ja['nav.participants'],
+  tags: ui.ja['nav.tags'],
+  keywords: ui.ja['nav.keywords'],
+  about: ui.ja['nav.about'],
+  search: ui.ja['nav.search'],
+  browse: ui.ja['nav.browse'],
+  menu: ui.ja['nav.menu'],
+  footerHome: ui.ja['footer.description'],
+  novel: ui.ja['footer.novel'],
+  chart: ui.ja['footer.chart'],
+  github: ui.ja['footer.github'],
+  share: ui.ja['share.button'],
+  shareCopied: ui.ja['share.copied'],
+  shareFailed: ui.ja['share.copyFailed'],
+};
 ---
 
 <BaseLayout
@@ -11,18 +38,18 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 >
   <div class="container not-found">
     <h1>404</h1>
-    <p>The page you are looking for does not exist.</p>
-    <a href={`${basePath}/`}>Back to Home</a>
+    <p id="not-found-text">The page you are looking for does not exist.</p>
+    <a id="back-home" href={`${basePath}/`}>Back to Home</a>
 
     <div id="suggestions" class="suggestions" hidden>
-      <p class="suggestions-label">You might be looking for:</p>
+      <p class="suggestions-label" id="suggestions-label">You might be looking for:</p>
       <ul id="suggestions-list" class="suggestions-list"></ul>
     </div>
   </div>
 </BaseLayout>
 
 <script is:inline src="https://cdn.jsdelivr.net/npm/algoliasearch@4.24.0/dist/algoliasearch-lite.umd.js"></script>
-<script is:inline define:vars={{ basePath }}>
+<script is:inline define:vars={{ basePath, jaNav }}>
 (function () {
   // Turn the broken path into a search query: the last non-empty segment is
   // almost always the entry slug (most specific part of the URL), a JA
@@ -33,6 +60,132 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
   var path = location.pathname;
   if (basePath && (path === basePath || path.indexOf(basePath + '/') === 0)) path = path.slice(basePath.length);
   var isJa = /^\/ja(\/|$)/.test(path);
+
+  // This single static 404 page is served for both locale trees (no
+  // separate /ja/404), so BaseLayout always renders it with lang="en" --
+  // server-side Astro.url does not see the broken URL the visitor actually
+  // requested. Left uncorrected, the header's language-switch link (built
+  // from that wrong lang="en") always *adds* /ja to the current path
+  // instead of removing it, so each click compounds into /ja/ja/ja/....
+  // Fix the DOM here from the one thing that does know the real path:
+  // location.pathname.
+  // A dedicated, server-side-correct src/pages/ja/404.astro now handles the
+  // real case (Cloudflare Pages resolves 404s by walking up the directory
+  // tree, so it serves that file for any unmatched /ja/* path -- Header,
+  // Footer, and the language switch all render correctly there because it
+  // passes lang="ja" for real, the same way every other JA page does).
+  // This branch only still matters as a fallback for hosts that cannot do
+  // that per-directory resolution (GitHub Pages serves a single top-level
+  // 404.html for every unmatched path, JA included) -- there is no way to
+  // make that host route to the dedicated page, so this page's own visible
+  // text and links get a minimal, best-effort localization instead of
+  // silently staying in English.
+  if (isJa) {
+    document.documentElement.lang = 'ja';
+    var langSwitch = document.querySelector('.lang-switch');
+    if (langSwitch) {
+      var enPath = basePath + (path.replace(/^(\/ja)+(?=\/|$)/, '') || '/');
+      langSwitch.setAttribute('href', enPath);
+      langSwitch.setAttribute('lang', 'en');
+      langSwitch.textContent = 'English';
+    }
+    var jaHome = basePath + '/ja/';
+    document.title = document.title.replace('Page Not Found', 'ページが見つかりません');
+    var notFoundText = document.getElementById('not-found-text');
+    if (notFoundText) notFoundText.textContent = 'お探しのページは存在しません。';
+    var backHome = document.getElementById('back-home');
+    if (backHome) {
+      backHome.setAttribute('href', jaHome);
+      backHome.textContent = 'トップへ戻る';
+    }
+    var suggestionsLabel = document.getElementById('suggestions-label');
+    if (suggestionsLabel) suggestionsLabel.textContent = 'こちらのページもご覧ください：';
+
+    // Header/Footer render via the same lang="en" this page fakes, so every
+    // link they build with localePath() points at the EN tree and every
+    // label they build with t() reads in English. Fix both generically:
+    // insert /ja into every same-site link that does not already have it
+    // (skip the language switch -- it intentionally points the other way,
+    // already handled above), then relabel the fixed set of nav/footer
+    // elements from the JA strings passed in from ui.ts. Path-based
+    // matching, not text matching, because English text is exactly what's
+    // wrong and cannot be trusted as a lookup key.
+    var toJa = function (href) {
+      if (!href || href.charAt(0) !== '/') return href;
+      if (basePath && href.indexOf(basePath) !== 0) return href;
+      var rest = href.slice(basePath.length);
+      if (/^\/ja(\/|$)/.test(rest)) return href;
+      return basePath + '/ja' + (rest === '' ? '/' : rest);
+    };
+    var canonicalPath = function (href) {
+      var rest = href.slice(basePath.length).replace(/^\/ja(\/|$)/, '/');
+      return rest;
+    };
+
+    document.querySelectorAll('.site-header a, .site-footer a').forEach(function (a) {
+      if (a.classList.contains('lang-switch')) return;
+      var href = a.getAttribute('href') || '';
+      var external = href.indexOf('http') === 0;
+      var cpath = external ? null : canonicalPath(toJa(href));
+      if (!external) a.setAttribute('href', toJa(href));
+
+      if (a.classList.contains('site-title')) {
+        var strong = a.querySelector('strong');
+        if (strong) strong.textContent = jaNav.siteTitle; else a.textContent = jaNav.siteTitle;
+      } else if (a.classList.contains('nav-search')) {
+        var icon = a.querySelector('svg');
+        a.textContent = jaNav.search;
+        if (icon) a.prepend(icon);
+      } else if (a.classList.contains('footer-home-link')) {
+        a.textContent = jaNav.footerHome;
+      } else if (a.classList.contains('novel-link')) {
+        a.textContent = jaNav.novel;
+      } else if (external) {
+        a.textContent = jaNav.github;
+      } else if (cpath === '/entries/') {
+        a.textContent = jaNav.entries;
+      } else if (cpath === '/types/') {
+        a.textContent = jaNav.types;
+      } else if (cpath === '/sources/') {
+        a.textContent = jaNav.sources;
+      } else if (cpath === '/participants/') {
+        a.textContent = jaNav.participants;
+      } else if (cpath === '/tags/') {
+        a.textContent = jaNav.tags;
+      } else if (cpath === '/keywords/') {
+        a.textContent = jaNav.keywords;
+      } else if (cpath === '/about/') {
+        a.textContent = jaNav.about;
+      } else if (cpath === '/chart/') {
+        a.textContent = jaNav.chart;
+      }
+    });
+
+    var menuToggle = document.querySelector('.mobile-menu-toggle');
+    if (menuToggle) menuToggle.setAttribute('aria-label', jaNav.menu);
+
+    // "Browse" lives on <summary>, not an <a>, so the loop above never
+    // reaches it -- its first child is the plain text node, followed by
+    // the chevron <span>, so only that text node is replaced.
+    var browseSummary = document.querySelector('.nav-dropdown summary');
+    if (browseSummary && browseSummary.firstChild && browseSummary.firstChild.nodeType === 3) {
+      browseSummary.firstChild.nodeValue = jaNav.browse;
+    }
+
+    // ShareButton (mobile + desktop instances) is lang-aware on every real
+    // page via its own `lang` prop; here it inherited the same faked
+    // lang="en" as everything else, so its aria-label/title and the
+    // data-label-* attributes its own click handler reads back out for the
+    // copied/failed states all need the same correction.
+    document.querySelectorAll('.share-button').forEach(function (btn) {
+      btn.setAttribute('aria-label', jaNav.share);
+      btn.setAttribute('title', jaNav.share);
+      btn.setAttribute('data-label-share', jaNav.share);
+      btn.setAttribute('data-label-copied', jaNav.shareCopied);
+      btn.setAttribute('data-label-failed', jaNav.shareFailed);
+    });
+  }
+
   var segments = path.split('/').filter(Boolean);
   if (isJa) segments.shift();
   var slug = segments[segments.length - 1] || '';
