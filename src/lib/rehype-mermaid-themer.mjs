@@ -471,6 +471,98 @@ function centerTimelineTitle(svg) {
   delete titleNode.properties['text-anchor'];
 }
 
+/**
+ * Mermaid's `timeline` renderer starts the horizontal axis line (and every
+ * period/event box) at a fixed local x regardless of how many periods the
+ * diagram has, then sizes the viewBox to fit the rightmost content -- so
+ * the reserved space to the *left* of the axis start never shrinks to
+ * match, while the right margin is whatever small amount the renderer
+ * happens to leave past the last box. A two-period timeline ends up with
+ * roughly 155 SVG units of empty space on the left against ~50 on the
+ * right, which reads as the whole diagram sitting shifted right inside
+ * its card (same underlying "fixed x, not recomputed against final
+ * width" class of bug as the title fix above; still no upstream fix).
+ *
+ * The axis line itself is the one horizontal line in the diagram (y1 ===
+ * y2, non-zero length) -- the per-period divider ticks are vertical (x1
+ * === x2). Its x1/x2 mark the true left/right extent of the drawn
+ * content, so shifting the viewBox's minX to equalize the margins around
+ * that line (keeping width unchanged) recenters the whole picture without
+ * moving a single drawn coordinate.
+ */
+function recenterTimelineViewBox(svg) {
+  const roleDescRaw = readProp(svg.properties, 'ariaRoleDescription', 'aria-roledescription');
+  const roleDesc = Array.isArray(roleDescRaw) ? roleDescRaw.join(' ') : roleDescRaw;
+  if (roleDesc !== 'timeline') return;
+  const viewBox = readProp(svg.properties, 'viewBox', 'viewbox');
+  if (typeof viewBox !== 'string') return;
+  const parts = viewBox.trim().split(/\s+/).map(Number);
+  if (parts.length !== 4 || parts.some((n) => !Number.isFinite(n))) return;
+  const [minX, minY, width, height] = parts;
+
+  // Every per-box underline decoration (`class="node-line-N"`) is ALSO a
+  // horizontal line with x1 !== x2, but its coordinates are local to its
+  // own `<g transform="translate(...)">` wrapper -- reading its raw x1/x2
+  // without composing ancestor transforms would misreport its position.
+  // The one true axis arrow sidesteps that entirely: unlike every
+  // decoration line, Mermaid emits it with no `class` and a `marker-end`
+  // pointing at the arrowhead, and (unlike the decorations, and unlike the
+  // per-section vertical divider ticks) it is not nested inside any
+  // wrapper transform, so its x1/x2 are already absolute. Matching on
+  // "no class + has marker-end" -- not just "horizontal" -- is what keeps
+  // this from grabbing a decoration line instead.
+  let axisLine = null;
+  const findAxisLine = (node) => {
+    if (axisLine || !node || !Array.isArray(node.children)) return;
+    for (const child of node.children) {
+      if (child?.type !== 'element') continue;
+      if (child.tagName === 'line') {
+        const x1 = Number(child.properties?.x1);
+        const x2 = Number(child.properties?.x2);
+        const y1 = Number(child.properties?.y1);
+        const y2 = Number(child.properties?.y2);
+        // `readProp` alone isn't enough here: className can also come
+        // through as a non-empty string rather than the usual hast array,
+        // and a bare `typeof !== undefined` check would treat that as
+        // "has a class" but so would an empty string/array -- check length
+        // for both shapes explicitly.
+        const classValue = readProp(child.properties, 'className', 'class');
+        const hasClass = Array.isArray(classValue)
+          ? classValue.length > 0
+          : typeof classValue === 'string'
+            ? classValue.trim().length > 0
+            : classValue != null;
+        const markerEnd = readProp(child.properties, 'markerEnd', 'marker-end');
+        if (
+          [x1, x2, y1, y2].every(Number.isFinite) &&
+          y1 === y2 &&
+          x1 !== x2 &&
+          !hasClass &&
+          typeof markerEnd === 'string' &&
+          markerEnd.length > 0
+        ) {
+          axisLine = { left: Math.min(x1, x2), right: Math.max(x1, x2) };
+          return;
+        }
+      }
+      findAxisLine(child);
+      if (axisLine) return;
+    }
+  };
+  findAxisLine(svg);
+  if (!axisLine) return;
+
+  const leftMargin = axisLine.left - minX;
+  const rightMargin = minX + width - axisLine.right;
+  const imbalance = leftMargin - rightMargin;
+  // Small imbalances are normal rounding noise, not the reserved-space bug.
+  if (Math.abs(imbalance) < 5) return;
+
+  const newMinX = minX + imbalance / 2;
+  const viewBoxKey = svg.properties.viewBox !== undefined ? 'viewBox' : 'viewbox';
+  svg.properties[viewBoxKey] = `${newMinX} ${minY} ${width} ${height}`;
+}
+
 function isMermaidFigureBlock(node) {
   if (!node || node.type !== 'element' || node.tagName !== 'figure') return false;
   const cls = node.properties?.className;
@@ -504,9 +596,11 @@ export function rehypeMermaidThemer() {
       // Rewrite the SVG (style block + per-element style/fill/stroke).
       rewriteSvgTree(svg);
 
-      // Fix Mermaid's off-center timeline title (see function doc).
-      // Run after color rewriting so this doesn't interact with the
-      // style-block substitution pass.
+      // Fix Mermaid's asymmetric timeline margins (see function doc), then
+      // center the title against the now-corrected viewBox -- order
+      // matters, since centerTimelineTitle reads the viewBox it runs
+      // against.
+      recenterTimelineViewBox(svg);
       centerTimelineTitle(svg);
 
       // Mark the figure-block so it is obvious in DevTools that the
