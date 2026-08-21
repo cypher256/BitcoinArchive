@@ -14,6 +14,7 @@ export const tagTranslations: Record<string, string> = {
   'bankruptcy': '破産',
   'biography': '伝記',
   'bit-gold': 'ビットゴールド',
+  'byzantine-generals-problem': 'ビザンチン将軍問題',
   'blocks': 'ブロック',
   'blockchain': 'ブロックチェーン',
   'blockchain-analysis': 'ブロックチェーン分析',

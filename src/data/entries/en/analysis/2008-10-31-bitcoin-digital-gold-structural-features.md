@@ -47,6 +47,7 @@ relatedEntries:
   - currency/2026-07-27-usdt-currency-overview
   - currency/2026-07-27-xrp-currency-overview
   - analysis/2026-08-02-ai-crypto-investment-survey
+  - analysis/2008-11-13-byzantine-generals-problem
 inlineLinkKeywords:
   - "digital gold"
   - "two-layer decentralization"

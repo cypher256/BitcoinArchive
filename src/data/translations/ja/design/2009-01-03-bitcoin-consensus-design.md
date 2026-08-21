@@ -32,6 +32,7 @@ relatedEntries:
   - aftermath/2017-08-01-bitcoin-cash-fork
   - analysis/2009-01-09-bitcoin-time-warp-attack
   - currency/2026-07-27-ethereum-currency-overview
+  - analysis/2008-11-13-byzantine-generals-problem
 inlineLinkKeywords:
   - "プルーフオブワーク"
   - "難易度調整"
@@ -260,7 +261,7 @@ Tendermint や HotStuff のようなビザンチン障害耐性 (BFT) 合意シ�
 
 ビットコインの設計は根本的に異なるトレードオフを行う:
 
-| 特性 | ビットコイン（ナカモト合意） | BFT システム |
+| 特性 | ビットコイン（ナカモト・コンセンサス） | BFT システム |
 |---|---|---|
 | **ファイナリティの種別** | 確率的 — 覆し確率が深度とともに指数関数的に減少 | 決定論的 — 過半数投票後に確定 |
 | **参加者集合** | 開放的 — 許可なくどの機械でもマイニング可能 | 閉鎖的 — 検証者集合が既知で有界 |

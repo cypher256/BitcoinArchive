@@ -106,6 +106,12 @@ const RULES = [
   { type: 'literal', deprecated: 'ウィユ', canonical: 'ウィーユ', reason: 'Pieter Wuille の JA 表記は「ピーター・ウィーユ」で統一 (participants.ts 正典)。短縮形「ウィユ」も同様。' },
   { type: 'literal', deprecated: 'エクリプス攻撃', canonical: '日食攻撃', reason: '"eclipse attack" は 2026-06-30 自然化監査で「日食攻撃」に統一 (commit `376d4479f`)' },
   { type: 'literal', deprecated: 'プルーニング', canonical: '剪定', reason: '"pruning" は同監査で「剪定」に統一。順応性 (malleability) / 送金 (pay-to-send) は一般語との衝突が大きく機械検出の対象外 — STYLE_GUIDE_JA.md § II.3 訳語の統一に記載し人手判定とする' },
+  // "Nakamoto consensus": 人名を含む複合語なので § I.1 によりカナ化し、主要メディア・
+  // 技術解説で定着している中黒付き「ナカモト・コンセンサス」に統一 (§ II.3)。
+  { type: 'literal', deprecated: 'ナカモト合意', canonical: 'ナカモト・コンセンサス', reason: '"Nakamoto consensus" は「ナカモト・コンセンサス」で統一。「合意」は `consensus` の標準訳「コンセンサス」と食い違う' },
+  { type: 'literal', deprecated: 'Nakamoto コンセンサス', canonical: 'ナカモト・コンセンサス', reason: '人名 Nakamoto は JA 散文ではカナ表記 (§ I.1)' },
+  { type: 'literal', deprecated: 'Nakamotoコンセンサス', canonical: 'ナカモト・コンセンサス', reason: '人名 Nakamoto は JA 散文ではカナ表記 (§ I.1)' },
+  { type: 'literal', deprecated: 'ナカモトコンセンサス', canonical: 'ナカモト・コンセンサス', reason: '定着表記は中黒付き (§ II.3)' },
   { type: 'literal', deprecated: '値オーバーフロー', canonical: 'バリュー・オーバーフロー', reason: '"value overflow (incident)" は事件名タイトルと統一。2026-07-24 表記揺れ 9 ファイル是正' },
 
   // Merkle 関連（小説側 `マークルルート` と揃える全カタカナ統一）

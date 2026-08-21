@@ -46,6 +46,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-cryptography-design
   - design/2009-01-03-bitcoin-storage-design
   - design/2009-01-03-bitcoin-wallet-design
+  - analysis/2008-11-13-byzantine-generals-problem
 translationStatus: complete
 ---
 

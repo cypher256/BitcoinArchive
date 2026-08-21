@@ -886,6 +886,7 @@ description が現状で上限を超えている場合は、**収まるように
 | pay-to-send (email) | 送信課金型（メール） | pay-to-send (本文中) | 同上。`pay-to-send` を「送金」 と訳す誤りの是正 |
 | Silicon Graphics (企業名) | シリコングラフィックス | Silicon Graphics (本文中) | Wikipedia 日本語版・Weblio が記事タイトルでカナ表記を採用 (中黒なし)。日本国内で歴史的に定着した表記 (2026-05-01 Web 検証) |
 | Wasabi Software (企業名、Silicon Graphics と同一文脈で言及される小規模 3D グラフィックス企業) | Wasabi Software (英語表記のまま) | ワサビ・ソフトウェア等のカナ化 | 日本国内での認知度が低く Wikipedia 日本語版に独立記事なし。定着したカナ表記がない (2026-05-01 Web 検証)。`Silicon Graphics` とペアで言及されても、企業ごとの定着表記が異なる限り機械的に表記を揃えない |
+| Nakamoto consensus (ビットコインの合意形成方式の通称) | ナカモト・コンセンサス | ナカモト合意 / Nakamoto コンセンサス / ナカモトコンセンサス | 人名 (ナカモト) を含む複合語なので § I.1 によりカナ化する。日本語圏の用例は中黒付きが優勢 (INTERNET Watch、オージス総研のビットコイン論文解説、coffeepool 用語集が「ナカモト・コンセンサス」、PoL 用語集は「ナカモトコンセンサス」。Wikipedia 日本語版に項目はない。2026-08-21 Web 検証)。「ナカモト合意」「ナカモトコンセンサス」はこの定着形に揃える。既存の揺れは `grep -rn -e 'ナカモト合意' -e 'Nakamoto コンセンサス' src/data/translations/ja` で設計書の表 1 件・伝記 1 件、2026-08-21 に統一 |
 
 ### 正規対応
 

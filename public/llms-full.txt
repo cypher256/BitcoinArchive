@@ -53,8 +53,8 @@ Private email exchanges between Satoshi and key participants:
 - **GitHub PRs** (64 posts): Bitcoin Core pull-request threads relevant to Satoshi's design choices and their later supersession
 - **P2P Foundation** (7 posts): Bitcoin announcement and early discussions
 
-### Mailing List Emails (65 entries)
-- **Cryptography mailing list** (32 emails): Whitepaper announcement and technical debates
+### Mailing List Emails (66 entries)
+- **Cryptography mailing list** (33 emails): Whitepaper announcement and technical debates
 - **Bitcoin-list** (20 emails): Development announcements
 - **P2P Research** (7 emails): Peer-to-peer technology discussions
 - **Cypherpunks** (5 emails): Pre-Bitcoin digital-cash discussions (Hashcash, b-money)
@@ -69,7 +69,7 @@ Biographical profiles of key participants compiled from multiple public sources.
 ### Bitcoin Improvement Proposals (9 entries)
 BIPs relevant to Satoshi's original design and vision.
 
-### Analysis (49 entries)
+### Analysis (53 entries)
 Editorial readings authored under the Bitcoin Institute byline. Each analysis is explicitly labeled as interpretation; claims are sourced individually. Examples include:
 - **Independent arrival at the cypherpunk core**: Satoshi's documented relationship to the cypherpunk movement built from three converging primary-source observations (Satoshi's b-money disclaimer to Adam Back, Wei Dai's identifiability argument, and the alignment between Satoshi's documented practice and Eric Hughes's 1993 Cypherpunk's Manifesto).
 - **The "Satoshi Nakamoto" pseudonym and AKIRA**: a descriptive techno-orientalist reading of the symbolic field the pseudonym lands inside (Blade Runner, Neuromancer, AKIRA, Ghost in the Shell, Mondo 2000-era cyberpunk discourse). Explicitly does not claim authorial intent.

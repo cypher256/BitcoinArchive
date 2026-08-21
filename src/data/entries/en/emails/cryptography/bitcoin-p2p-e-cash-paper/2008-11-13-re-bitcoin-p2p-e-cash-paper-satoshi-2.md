@@ -11,6 +11,7 @@ participants:
   - name: "James A. Donald"
     slug: "james-donald"
 description: "Satoshi explains the proof-of-work chain as a solution to the Byzantine Generals' Problem, using a King's wi-fi attack as analogy."
+inReplyTo: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem"
 isSatoshi: true
 tags:
   - "proof-of-work"
@@ -19,12 +20,14 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/11/"
+relatedEntries:
+  - analysis/2008-11-13-byzantine-generals-problem
 quotes:
   - id: "q1"
     person: "James A. Donald"
     personSlug: "james-donald"
-    date: "2008-11-02T23:46:23Z"
-    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald"
+    date: "2008-11-13T06:16:31Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem"
 ---
 
 <!-- quote: q1 -->

@@ -32,6 +32,7 @@ relatedEntries:
   - aftermath/2017-08-01-bitcoin-cash-fork
   - analysis/2009-01-09-bitcoin-time-warp-attack
   - currency/2026-07-27-ethereum-currency-overview
+  - analysis/2008-11-13-byzantine-generals-problem
 inlineLinkKeywords:
   - "proof of work"
   - "difficulty adjustment"

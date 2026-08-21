@@ -11,6 +11,7 @@ participants:
   - name: "James A. Donald"
     slug: "james-donald"
 description: "サトシがプルーフ・オブ・ワークチェーンをビザンチン将軍問題の解決策として、王の Wi-Fi 攻撃という比喩で説明した。"
+inReplyTo: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem"
 isSatoshi: true
 tags:
   - "proof-of-work"
@@ -19,13 +20,15 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/11/"
+relatedEntries:
+  - analysis/2008-11-13-byzantine-generals-problem
 translationStatus: complete
 quotes:
   - id: "q1"
     person: "James A. Donald"
     personSlug: "james-donald"
-    date: "2008-11-02T23:46:23Z"
-    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald"
+    date: "2008-11-13T06:16:31Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem"
 ---
 
 <!-- speaker: James A. Donald -->
