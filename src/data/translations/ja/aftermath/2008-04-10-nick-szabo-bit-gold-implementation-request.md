@@ -4,7 +4,7 @@ date: 2008-04-10T03:53:00Z
 type: "article"
 source: "unenumerated"
 sourceUrl: "https://unenumerated.blogspot.com/2008/04/bit-gold-markets.html"
-sourceNote: "コメント自体のタイムスタンプ（ページの showComment リンク、コメント ID c3741843833998921269 で確認）は 2008 年 4 月 10 日 03:53 UTC で、URL のパス（2008/04）とも整合する。本アーカイブは以前 4 月 27 日としていたが、この日付を裏付ける一次資料上の根拠は見つからず、修正した。現在のページでは、このコメントを含む同スレッドの全コメントが「Anonymous」表示になっているが、これはページ全体に及ぶ表示上の仕様であり、このコメントに固有の証拠ではない。コメント本文自体が返信先の投稿（「the post above」）の著者であると一人称で述べており、Bitcoin Magazine の Genesis Files 特集もこの一節をサボ本人の発言として独立に引用している。"
+sourceNote: "コメント自体のタイムスタンプ（ページの showComment リンク、コメント ID c3741843833998921269 で確認）は 2008 年 4 月 10 日 03:53 UTC で、URL のパス（2008/04）とも整合する。本アーカイブは以前 4 月 27 日としていたが、この日付を裏付ける一次資料上の根拠は見つからず、修正した。2026-08-22 確認時点で、このコメントを含む同スレッドの全 17 件が「Anonymous」表示になっているが、これはスレッド全体に及ぶ挙動であり、このコメントに固有の証拠ではない。コメント本文は返信先の投稿（「the post above」）について、自分が書いたものとして一人称で言及しており、Bitcoin Magazine の Genesis Files 特集もこの一節をサボ本人の発言として独立に引用している。"
 author: "Nick Szabo"
 participants:
   - name: "Nick Szabo"

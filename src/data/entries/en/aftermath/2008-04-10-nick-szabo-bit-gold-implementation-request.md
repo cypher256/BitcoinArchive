@@ -4,7 +4,7 @@ date: 2008-04-10T03:53:00Z
 type: "article"
 source: "unenumerated"
 sourceUrl: "https://unenumerated.blogspot.com/2008/04/bit-gold-markets.html"
-sourceNote: "The comment's own timestamp (verified against the page's showComment link, comment id c3741843833998921269) is April 10, 2008, 03:53 UTC, consistent with the URL path (2008/04). This archive previously used April 27; that date is not supported by any primary-source evidence found and has been corrected. Blogger's page currently labels every comment on this thread, this one included, as posted by \"Anonymous\" — a page-wide display artifact, not evidence specific to this comment. The comment's own text claims authorship of the post it replies to (\"the post above\"), and Bitcoin Magazine's Genesis Files retrospective independently attributes this exact request to Szabo."
+sourceNote: "The comment's own timestamp (verified against the page's showComment link, comment id c3741843833998921269) is April 10, 2008, 03:53 UTC, consistent with the URL path (2008/04). This archive previously used April 27; that date is not supported by any primary-source evidence found and has been corrected. As verified 2026-08-22, all 17 comments on this thread, this one included, are labeled \"Anonymous\" on the live page — a thread-wide pattern, not evidence specific to this comment. The comment speaks in the first person as the author of \"the post above,\" and Bitcoin Magazine's Genesis Files retrospective independently attributes this exact request to Szabo."
 author: "Nick Szabo"
 participants:
   - name: "Nick Szabo"
