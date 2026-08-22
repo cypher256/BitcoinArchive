@@ -193,15 +193,6 @@ function tagWeight(count: number, max: number): number {
       </div>
     </section>
 
-    <section class="dashboard-section">
-      <div class="section-header">
-        <h2>{t('home.characters' as any)}</h2>
-        <a href={localePath('/participants/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
-      </div>
-      <p class="characters-subtitle">{t('home.charactersSubtitle' as any)}</p>
-      <CharacterIntro lang={lang} />
-    </section>
-
     <section class="dashboard-section analyses-section">
       <div class="section-header">
         <h2>{t('home.analyses' as any)}</h2>
@@ -228,6 +219,15 @@ function tagWeight(count: number, max: number): number {
           );
         })}
       </div>
+    </section>
+
+    <section class="dashboard-section">
+      <div class="section-header">
+        <h2>{t('home.characters' as any)}</h2>
+        <a href={localePath('/participants/', lang)} class="view-all">{t('home.viewAll')} &rarr;</a>
+      </div>
+      <p class="characters-subtitle">{t('home.charactersSubtitle' as any)}</p>
+      <CharacterIntro lang={lang} />
     </section>
 
     <section class="dashboard-section network-section">
