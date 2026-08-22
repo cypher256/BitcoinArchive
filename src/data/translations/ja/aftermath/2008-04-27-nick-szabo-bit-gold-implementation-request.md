@@ -27,9 +27,9 @@ quotes:
     person: "Nick Szabo"
     personSlug: "nick-szabo"
     date: "2008-04-27T00:00:00Z"
-    sourceEntryId: "blog/nick-szabo/2008-04-27-bit-gold-implementation-request"
+    sourceEntryId: "web-document/nick-szabo/2008-04-27-bit-gold-implementation-request"
 relatedEntries:
-  - blog/nick-szabo/2008-04-27-bit-gold-implementation-request
+  - web-document/nick-szabo/2008-04-27-bit-gold-implementation-request
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
   - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis

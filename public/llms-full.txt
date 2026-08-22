@@ -108,8 +108,8 @@ Single-currency protocol profiles, one per altcoin or stablecoin, each read agai
 ### Tweets (5 entries)
 Historically significant X / Twitter posts archived verbatim with the original handle.
 
-### Blog posts (1 entry)
-A participant's self-published web writing, reproduced verbatim.
+### Web documents (2 entries)
+A participant's self-published web writing or standalone site page, reproduced verbatim.
 
 ## Key Participants
 

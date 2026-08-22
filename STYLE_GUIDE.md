@@ -157,16 +157,17 @@ The archive's entry types split into two groups:
 
 - **Primary-source types** (8) — `correspondence`, `mailing-list`,
   `forum-post`, `bip`, `whitepaper`, `court-document`, `tweet`,
-  `blog-post`. The body holds the verbatim source content. Rules in
+  `web-document`. The body holds the verbatim source content. Rules in
   [§ Primary-Source Entries](#primary-source-entries) apply.
-  `blog-post` is a participant's own self-published web writing (blog
-  post / comment, personal-site essay or page), reproduced verbatim —
-  e.g. Nick Szabo's bit gold, Wei Dai's b-money. Judge it on the same
-  verbatim-vs-editorial axis as the other primary types (is the body
-  the source document, or Bitcoin Institute's reading?), not on
-  "contemporaneous vs retrospective": a participant's retrospective
-  blog, reproduced verbatim, is still `blog-post`; third-party coverage
-  (journalist, encyclopedia) of a participant stays editorial.
+  `web-document` is a participant's own self-published web document
+  (blog post / comment, personal-site essay, or standalone page),
+  reproduced verbatim — e.g. Nick Szabo's bit gold and Satoshi's early
+  bitcoin.org page. Judge it on the same verbatim-vs-editorial axis as
+  the other primary types (is the body the source document, or Bitcoin
+  Institute's reading?), not on "contemporaneous vs retrospective": a
+  participant's retrospective web document, reproduced verbatim, is
+  still `web-document`; third-party coverage (journalist, encyclopedia)
+  of a participant stays editorial.
 - **Editorial types** (5) — `article`, `analysis`, `biography`, `design`,
   `currency`. The body is Bitcoin Institute's own writing about the subject.
   This section governs them.
@@ -456,7 +457,7 @@ immediately below the frontmatter's closing
 ```
 
 Primary-source types (`correspondence`, `mailing-list`, `forum-post`,
-`bip`, `whitepaper`, `court-document`, `tweet`, `blog-post`) never
+`bip`, `whitepaper`, `court-document`, `tweet`, `web-document`) never
 get a hero image — their body is verbatim source content, and an
 editorially-generated illustration would misrepresent that.
 
@@ -782,7 +783,7 @@ or fabricating it.
   repairing.
 - ❌ **Modify URLs inside primary-source body content.** URLs that
   appear inside verbatim entries (`/forum/`, `/correspondence/`,
-  `/emails/`, `/blog/`, `/bip/`, `/tweets/`) or inside `<blockquote>`
+  `/emails/`, `/web-document/`, `/bip/`, `/tweets/`) or inside `<blockquote>`
   elements in editorial entries are part of the historical record.
   They are de-linked at render time by
   `src/lib/rehype-strip-archive-links.mjs`. The audit may report them
@@ -803,7 +804,7 @@ position:
 | `frontmatter.secondarySources[].url` | Replace with Wayback URL if available; else remove the entry (the primary source still carries the citation). |
 | Body external URL in editorial prose, **outside** any blockquote | Move the citation to `sourceUrl` / `secondarySources[]`; leave the source name and fixed technical range as plain text. The body must not keep a clickable external link, even when a Wayback URL exists. |
 | Body inline link **inside** a `<blockquote>` (= primary-source quote) | **Do not modify.** The URL is part of the verbatim quoted text. The renderer de-links it; that is the policy. |
-| Plain text URL in any verbatim file (`/forum/`, `/correspondence/`, `/emails/`, `/blog/`, `/bip/`, `/tweets/`) | **Do not modify.** Same rationale: the URL is authored text of the historical document. |
+| Plain text URL in any verbatim file (`/forum/`, `/correspondence/`, `/emails/`, `/web-document/`, `/bip/`, `/tweets/`) | **Do not modify.** Same rationale: the URL is authored text of the historical document. |
 | URL inside an editor-note block (`*[Editor: ...]*` / `*[Context: ...]*` / `*[編者注：...]*` / `*[補足：...]*`) | Move the citation to frontmatter or remove the editorial link while preserving the note's meaning. The renderer also de-links it as a safety net. |
 
 ## Internal URL Changes — No Redirects Policy
@@ -822,6 +823,9 @@ Reasons:
   on each move makes the table unbounded.
 - A 404 surfaces structural changes honestly. Crawlers re-index from
   current internal links and sitemap; readers fall back to site search.
+  The EN and JA 404 pages may also show best-effort suggestions from the
+  current index; those suggestions are navigation help, not aliases for
+  the old URL.
   A silent redirect chain hides that the URL has moved and
   disincentivizes both re-indexing and editorial discipline about not
   moving content casually.
@@ -1188,7 +1192,7 @@ quotations are not headers and are never touched).
 
 A `quotes[].sourceEntryId` must point at a primary-source entry —
 `correspondence`, `mailing-list`, `forum-post`, `bip`, `whitepaper`,
-`court-document`, `tweet`, or `blog-post`. It must NOT point at:
+`court-document`, `tweet`, or `web-document`. It must NOT point at:
 
 1. **The entry itself** (self-link) — clicking the chip just
    reloads the same page; the chip-to-source contract is broken.
@@ -2430,7 +2434,7 @@ Auto-linking deliberately skips:
   allowed, but external URLs are prohibited and belong in the citation
   fields.
 - Whole-file primary-source records — files under `forum/`,
-  `correspondence/`, `emails/`, `blog/`, `bip/`, and `tweets/` directories.
+  `correspondence/`, `emails/`, `web-document/`, `bip/`, and `tweets/` directories.
 - Self-link — the keyword's target is the page being rendered.
 
 Within a single rendered page, each keyword is linked **at most once**

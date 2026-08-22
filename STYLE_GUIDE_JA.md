@@ -271,9 +271,9 @@ body 内で `>` 行の内側に置かれた `<!-- quote: qN -->` marker (depth >
 
 #### `sourceEntryId` は primary-source エントリーを指す ( 自分自身は禁止 )
 
-`quotes[].sourceEntryId` は primary-source 型のエントリー ( `correspondence` / `mailing-list` / `forum-post` / `bip` / `whitepaper` / `court-document` / `tweet` / `blog-post` ) を指す必要がある。 以下は禁止:
+`quotes[].sourceEntryId` は primary-source 型のエントリー ( `correspondence` / `mailing-list` / `forum-post` / `bip` / `whitepaper` / `court-document` / `tweet` / `web-document` ) を指す必要がある。 以下は禁止:
 
-> `blog-post` は参加者**本人**の自己公開 web 文書 ( ブログ投稿/コメント、 個人サイトのエッセイ/ページ ) を逐語保存する一次型 ( 例: ニック・サボのビットゴールド、 ウェイ・ダイの b-money )。 判定軸は他の一次型と同じ「本文が逐語の原文書か / 編集執筆か」 であり「同時代か回顧か」 ではない。 参加者の回顧ブログも逐語なら `blog-post`、 第三者 ( ジャーナリスト・百科事典 ) の言及は editorial 維持。
+> `web-document` は参加者**本人**の自己公開 web 文書 ( ブログ投稿/コメント、 個人サイトのエッセイ、独立ページ ) を逐語保存する一次型 ( 例: ニック・サボのビットゴールド、 サトシの初期 bitcoin.org ページ )。 判定軸は他の一次型と同じ「本文が逐語の原文書か / 編集執筆か」 であり「同時代か回顧か」 ではない。 参加者の回顧ウェブ文書も逐語なら `web-document`、 第三者 ( ジャーナリスト・百科事典 ) の言及は editorial 維持。
 
 1. **エントリー自身** ( self-link ) — chip をクリックしても同じページに戻るだけで、 「引用元 primary entry へのリンク」 という contract が壊れる。
 2. **他の editorial エントリー** ( `article` / `analysis` / `biography` / `design` ) — chip が解説から別の解説へ飛ぶだけで、 元のメッセージに到達しない。
@@ -398,7 +398,7 @@ body 内で `>` 行の内側に置かれた `<!-- quote: qN -->` marker (depth >
   - Role D ( `*[補足：...]*` ): 別主題の隣接コンテクスト、 関連エントリーへの簡潔なポインタ ( 本文に書くと流れを切る場合 )
 - 真に補足的な内容 ( メタ的な編集方針宣言、 出典信頼性メモ、 「今後の調査で更新」 等の TODO ) は Role C / D 枠維持。
 
-**primary-source entries ( `correspondence` / `mailing-list` / `forum-post` / `whitepaper` / `bip` / `court-document` / `tweet` / `blog-post` ) の場合:**
+**primary-source entries ( `correspondence` / `mailing-list` / `forum-post` / `whitepaper` / `bip` / `court-document` / `tweet` / `web-document` ) の場合:**
 
 「本文に編集者の語り手を混ぜない」 原則 ( `STYLE_GUIDE.md § Primary-Source Entries` ) を守るため、 短い編者注は Role C / D 枠維持、 長めのコンテクストは `editorNote:` ( Role A、 冒頭メタデータ ) に移行。 本文の地の文化はしない ( 一次資料に編集者の語り手を侵入させる事故になる )。
 

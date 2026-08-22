@@ -13,7 +13,7 @@
  *   --report-f-candidates
  *                      writes a separate report listing every
  *                      edit:/編集: occurrence inside forum-post,
- *                      mailing-list, and correspondence entries so a
+ *                      mailing-list, correspondence, and web-document entries so a
  *                      human can verify they are original-poster edit
  *                      notes (category F) and not mis-classified
  *                      Archive editor notes
@@ -91,7 +91,7 @@ function maskNonProse(body) {
   return out;
 }
 
-const F_TYPES = new Set(['forum-post', 'mailing-list', 'correspondence', 'blog-post']);
+const F_TYPES = new Set(['forum-post', 'mailing-list', 'correspondence', 'web-document']);
 
 const CANONICAL_LABELS = {
   en: ['Editor:', 'Context:'],
@@ -281,7 +281,7 @@ if (REPORT_F) {
     const k = `${x.type}::${x.lang}`;
     byTypeLang[k] = (byTypeLang[k] || 0) + 1;
   }
-  for (const t of ['forum-post', 'mailing-list', 'correspondence', 'blog-post']) {
+  for (const t of ['forum-post', 'mailing-list', 'correspondence', 'web-document']) {
     r += `| ${t} | ${byTypeLang[`${t}::en`] || 0} | ${byTypeLang[`${t}::ja`] || 0} |\n`;
   }
 

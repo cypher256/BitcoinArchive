@@ -534,7 +534,7 @@ const PRIMARY_SOURCE_TYPES = new Set([
   'whitepaper',
   'court-document',
   'tweet',
-  'blog-post',
+  'web-document',
 ]);
 
 // Derive the entry id for a given file path, matching the convention
@@ -607,7 +607,7 @@ function checkFile(filePath, locale) {
           file: rel,
           check: 'quote-non-primary-target',
           level: 'error',
-          msg: `quotes[].sourceEntryId "${target}" points to a type=${targetType} entry. sourceEntryId must point at a primary-source-type entry (correspondence / mailing-list / forum-post / bip / whitepaper / court-document). If the cited message has no primary entry yet, create one and retarget sourceEntryId.`,
+          msg: `quotes[].sourceEntryId "${target}" points to a type=${targetType} entry. sourceEntryId must point at a primary-source-type entry (correspondence / mailing-list / forum-post / bip / whitepaper / court-document / web-document). If the cited message has no primary entry yet, create one and retarget sourceEntryId.`,
         });
       }
     }

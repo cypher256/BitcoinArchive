@@ -22,6 +22,7 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/11/"
 relatedEntries:
   - analysis/2008-11-13-byzantine-generals-problem
+  - web-document/satoshi/2009-03-09-byzantine-generals-problem
 quotes:
   - id: "q1"
     person: "James A. Donald"

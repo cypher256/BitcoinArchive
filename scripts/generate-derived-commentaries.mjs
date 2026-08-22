@@ -5,7 +5,7 @@
  *
  * Produces src/data/derived-commentaries.json. Keyed by primary-source
  * entry id (correspondence / mailing-list / forum-post / bip / whitepaper
- * / court-document); each value is an array of editorial commentary
+ * / court-document / web-document); each value is an array of editorial commentary
  * entries (type=article or type=analysis) that point at that primary
  * source via either quotes[].sourceEntryId (strong declaration) or
  * relatedEntries (broader topical reference).
@@ -54,6 +54,7 @@ const PRIMARY_SOURCE_TYPES = new Set([
   'whitepaper',
   'court-document',
   'tweet',
+  'web-document',
 ]);
 
 // ---------------------------------------------------------------------------

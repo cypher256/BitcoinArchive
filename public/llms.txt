@@ -20,7 +20,7 @@ The archive contains 3,300+ entries organized by type:
 - **Tweets** (5): Historically significant X / Twitter posts archived verbatim with the original handle
 - **Court Documents** (2): COPA v Wright trial materials
 - **Whitepapers** (2): Bitcoin whitepaper draft and final version
-- **Blog posts** (1): A participant's self-published web writing, reproduced verbatim
+- **Web documents** (2): A participant's self-published web writing or standalone site page, reproduced verbatim
 
 ## Key Pages
 

@@ -116,6 +116,7 @@ function formatDate(date, locale) {
  *   correspondence/*   → メール  (1-on-1 private email)
  *   forum/github/*     → コメント (PR / issue comment)
  *   bip/*              → 提案    (BIP proposal; reserved for future use)
+ *   web-document/      → ウェブ文書 (a self-published web document)
  *   default            → 投稿    (mailing-list post / BitcoinTalk thread
  *                                  reply / P2P Foundation comment etc.)
  * Default is `投稿` only when we *know* the source is a public posting
@@ -126,7 +127,7 @@ function getJaSourceTypeLabel(sourceEntryId) {
   if (sourceEntryId.startsWith('correspondence/')) return 'メール';
   if (sourceEntryId.startsWith('forum/github/')) return 'コメント';
   if (sourceEntryId.startsWith('bip/')) return '提案';
-  if (sourceEntryId.startsWith('blog/')) return 'ブログ';
+  if (sourceEntryId.startsWith('web-document/')) return 'ウェブ文書';
   return '投稿';
 }
 

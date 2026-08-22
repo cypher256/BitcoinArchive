@@ -93,7 +93,7 @@ const CONCEPT_ELIGIBLE_TYPES = new Set(['analysis', 'article', 'design', 'curren
 // are whole-record primary source and excluded from auto-link (and from
 // backlink counting). Mirrors `rehype-strip-archive-links.mjs` and
 // `rehype-auto-link-keywords.mjs`.
-const VERBATIM_DIRS = ['/forum/', '/correspondence/', '/emails/', '/sourceforge/', '/bip/'];
+const VERBATIM_DIRS = ['/forum/', '/correspondence/', '/emails/', '/sourceforge/', '/web-document/', '/bip/'];
 
 // Per-character context-id constants for backlink counting. An occurrence
 // in any non-prose context is excluded from the count, matching the

@@ -1,7 +1,7 @@
 ---
 title: "Nick Szabo seeks help to implement bit gold (Unenumerated, April 2008)"
 date: 2008-04-27T00:00:00Z
-type: "blog-post"
+type: "web-document"
 source: "unenumerated"
 sourceUrl: "https://unenumerated.blogspot.com/2008/04/bit-gold-markets.html"
 author: "Nick Szabo"
