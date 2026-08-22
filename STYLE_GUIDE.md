@@ -296,14 +296,24 @@ to warrant a full editorial entry, follow the split rule from
 ### Quotation form inside an editorial body
 
 When excerpting the subject's words (or a third-party voice) inside
-the editor narrative:
+the editor narrative, choose between inline quotation marks and a
+standalone blockquote based on what the quote is doing on the page,
+not on length alone:
 
-- For a short direct quote, use a blockquote plus the
-  language-appropriate quotation marks.
-  - English: `> "..."` for short excerpted speech or statements
-  - Japanese: `> 「...」` for short excerpted speech or statements
-- For a longer source passage or document-style excerpt, a blockquote
-  alone is usually enough.
+- **Blockquote** — for a quote that functions as the page's primary
+  exhibit (the statement the surrounding analysis directly examines
+  or rests on) or that is genuinely iconic to the subject. Use
+  `> "..."` (English) / `> 「...」` (Japanese) for a short excerpted
+  statement; for a longer source passage or document-style excerpt,
+  the blockquote alone (no added quotation marks) is usually enough.
+- **Inline quotation marks** — the default for a short quote woven
+  into argumentative or narrative prose: supporting evidence cited in
+  passing, a secondary voice quoted alongside the subject, or a
+  precise phrase quoted for accuracy rather than presented as an
+  exhibit. An editorial entry commonly cites many short phrases from
+  several speakers; blockquoting every one of them fragments the
+  prose and buries the quotes that actually matter. Reserve
+  blockquote treatment for the few that earn it.
 - The blockquote contents must be the primary-source text only.
   Editor-added attribution lines (e.g., "— [Wikipedia](url)" /
   "— bitcoin.org, [release notes](url)" / "（[出典](url)）") must be
