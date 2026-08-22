@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin and the Byzantine Generals Problem — the whitepaper never says it, a mailing-list reply does"
+title: "Bitcoin and the Byzantine Generals Problem — the question the precursors could not answer"
 date: 2008-11-13T00:00:00Z
 type: "analysis"
 source: "cryptography-mailing-list"
@@ -10,13 +10,18 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "James A. Donald"
     slug: "james-donald"
-description: "The Bitcoin whitepaper never says 'Byzantine Generals Problem.' James Donald raised it in a November 2008 mailing-list reply, and Satoshi answered the same day with the proof-of-work chain."
+  - name: "Hal Finney"
+    slug: "hal-finney"
+  - name: "Nick Szabo"
+    slug: "nick-szabo"
+description: "Donald pressed Satoshi on the precursors' weak point; the King's wi-fi answer followed, and became a page on bitcoin.org. In 2011, Szabo named it as the fix to his design's shortcoming."
 isSatoshi: false
 tags:
   - "analysis"
   - "consensus"
   - "byzantine-generals-problem"
   - "proof-of-work"
+  - "bit-gold"
 secondarySources:
   - name: "Lamport, Shostak, Pease — \"The Byzantine Generals Problem\" (ACM TOPLAS 4:3, July 1982)"
     url: "https://lamport.azurewebsites.net/pubs/byz.pdf"
@@ -26,10 +31,17 @@ secondarySources:
     url: "https://www.metzdowd.com/pipermail/cryptography/2008-November/014849.html"
   - name: "Bitcoin whitepaper (final, Oct 31 2008)"
     url: "https://bitcoin.org/bitcoin.pdf"
+  - name: "Satoshi Nakamoto to Martti Malmi, May 3 2009 (Malmi's published correspondence)"
+    url: "https://mmalmi.github.io/satoshi/"
+  - name: "bitcoin.org site snapshot, March 2009, including byzantine.html (nakamoto-archive)"
+    url: "https://github.com/lugaxker/nakamoto-archive"
 relatedEntries:
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-satoshi-2
+  - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - correspondence/martti-malmi/2009-05-03-bitcoin-003
+  - aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long
   - design/2009-01-03-bitcoin-consensus-design
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
 inlineLinkKeywords:
@@ -42,21 +54,26 @@ quotes:
     date: "2008-11-13T06:16:31Z"
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem"
   - id: "q2"
+    person: "Hal Finney"
+    personSlug: "hal-finney"
+    date: "2008-11-13T16:24:18Z"
+    sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney"
+  - id: "q3"
     person: "Satoshi Nakamoto"
     personSlug: "satoshi-nakamoto"
     date: "2008-11-13T22:56:55Z"
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-satoshi-2"
+  - id: "q4"
+    person: "Nick Szabo"
+    personSlug: "nick-szabo"
+    date: "2011-05-28T00:00:00Z"
 ---
 
-![A dark navy infographic headed "The Byzantine Generals Problem," subtitled "Not in the whitepaper. Named thirteen days later, in a mailing-list reply." A horizontal timeline links four icons: 1982 (Lamport, Shostak, Pease, ACM TOPLAS), October 31 2008 (the Bitcoin whitepaper, no "Byzantine Generals" phrase), November 13 2008 06:16 UTC (James A. Donald invokes the problem), and November 13 2008 22:56 UTC (Satoshi Nakamoto adopts the framing), with a "16h40m later" tag between the last two and a speech-bubble quote reading "A solution to the Byzantine Generals Problem." A small panel in the top right contrasts classical BFT (known set, bounded rounds) with Bitcoin proof of work (open set, probabilistic finality).](/BitcoinArchive/images/analysis/2008-11-13-byzantine-generals-problem-hero.png)
+![A dark navy infographic headed "The Byzantine Generals Problem," subtitled "A 1982 classic, answered with the proof-of-work chain." A horizontal timeline links three icons: 1982 (Lamport, Shostak, Pease, ACM TOPLAS), November 13 2008 06:16 UTC (James A. Donald names the problem), and November 13 2008 22:56 UTC (Satoshi Nakamoto: the proof-of-work chain), with a speech-bubble quote reading "A solution to the Byzantine Generals Problem." A small panel in the top right contrasts classical BFT (known set, bounded rounds) with Bitcoin proof of work (open set, probabilistic finality).](/BitcoinArchive/images/analysis/2008-11-13-byzantine-generals-problem-hero.png)
 
-Search "Bitcoin Byzantine Generals Problem" and the whitepaper gets cited as the source. It is not. Neither the October 3 draft nor the October 31 final version contains the word "Byzantine." The phrase enters Bitcoin's own documented history thirteen days after publication, in a mailing-list exchange — and the record of who said it first, and why, is still there to read.
+November 13, 2008, 06:16 UTC — thirteen days after the whitepaper went public. In the mailing-list thread discussing it, James A. Donald gave a name to the difficulty he had been pressing Satoshi on: the Byzantine Generals Problem, the classic agreement problem of distributed computing. Satoshi answered at 22:56 that day. The exchange is the earliest in Bitcoin's public record to tie the phrase to it, and the story does not stop there: within months Satoshi had turned his answer into a standalone page on bitcoin.org, and in 2011 the designer of bit gold — the closest of Bitcoin's precursor designs — named exactly this as the fix to his own design's security shortcoming.
 
-## 1. What the whitepaper actually says
-
-Satoshi's paper frames the problem as double-spending and describes the solution as a timestamp server and a proof-of-work chain. It never names the classical distributed-systems problem it happens to resemble. That framing came from a reader, thirteen days into the paper's public life, and Satoshi picked it up and answered in its own terms. Both messages are preserved here [as the two halves of one exchange](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-satoshi-2/).
-
-## 2. The 1982 problem
+## 1. The 1982 problem
 
 The Byzantine Generals Problem is Lamport, Shostak, and Pease's 1982 paper in *ACM Transactions on Programming Languages and Systems*. Several generals surround an enemy city, communicating only by messenger, and must agree on a single plan — attack or retreat — even though some of them may be traitors actively trying to prevent agreement. The paper's central result is specific and unforgiving: with only oral messages, no protocol can guarantee agreement unless more than two-thirds of the generals are loyal. With three generals and one traitor, nothing works.
 
@@ -64,37 +81,57 @@ By 2008 this was a standard reference point for distributed-systems people — a
 
 ```mermaid
 timeline
-    title Where the phrase enters Bitcoin's record
+    title From the 1982 problem to the answer, and after
     1982 : Lamport, Shostak, Pease publish "The Byzantine Generals Problem" (ACM TOPLAS)
-    2008 : Bitcoin whitepaper published (Oct 31) -- no mention of "Byzantine"
-    %% link: /BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/
-         : Donald invokes the Byzantine Generals problem (Nov 13, 06:16 UTC)
+    1998 : b-money and bit gold are designed on the libtech list
+    %% link: /BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/
+    2008 : Donald names the Byzantine Generals problem (Nov 13, 06:16 UTC)
     %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem/
-         : Satoshi replies same day: proof-of-work chain as the solution (Nov 13, 22:56 UTC)
+         : Satoshi replies: proof-of-work chain as the solution (Nov 13, 22:56 UTC)
     %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-satoshi-2/
+    2009 : Satoshi's description becomes byzantine.html on bitcoin.org, handed to Malmi as reference
+    %% link: /BitcoinArchive/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/
+    2011 : Szabo credits Nakamoto with fixing bit gold's security shortcoming
+    %% link: /BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/
 ```
 
-## 3. Donald's challenge
+## 2. Donald's challenge
 
-James A. Donald had been pushing on the same question since his first reply eleven days earlier: not whether nodes could be trusted, but how any set of nodes — trusted or not — arrives at one shared view of who owns what. On November 13, 2008 at 06:16 UTC, [replying to Satoshi's explanation of transaction finality](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem/), he named the actual difficulty:
+James A. Donald had been pushing on the same question since his first reply eleven days earlier: not whether nodes could be trusted, but how any set of nodes — trusted or not — arrives at one shared view of who owns what. Satoshi's paper had framed its problem as double-spending; it was Donald who kept pulling the argument down to the agreement layer underneath:
 
 <!-- quote: q1 -->
+> The process for arriving at a globally shared view of who owns what bitgold coins is insufficiently specified.
+
+*[Context: "bitgold coins" is a naming conflation shared by the thread's earliest repliers, not a reference to Nick Szabo — [the Szabo–Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) traces it.]*
+
+[Replying to Satoshi's explanation of transaction finality](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem/), he gave the difficulty its classical name:
+
+<!-- speaker: James A. Donald -->
 > It is not sufficient that everyone knows X. We also need everyone to know that everyone knows X, and that everyone knows that everyone knows that everyone knows X - which, as in the Byzantine Generals problem, is the classic hard problem of distributed data processing.
 
 This is the nested-knowledge core of Lamport's problem, not just its costume — Donald is not reaching for a dramatic label, he is pointing at the actual mathematical difficulty and naming where it comes from.
 
-## 4. Satoshi's answer, same day
+## 3. "Arguably the harder part": Finney sizes the question
 
-Less than seventeen hours later, Satoshi replied, and did not deflect the framing — he adopted it:
+That afternoon, before Satoshi's reply landed, Hal Finney answered Donald in the same thread — and weighed exactly how much was riding on the question:
 
 <!-- quote: q2 -->
+> One thing I might mention is that in many ways bitcoin is two independent ideas: a way of solving the kinds of problems James lists here, of creating a globally consistent but decentralized database; and then using it for a system similar to Wei Dai's b-money (which is referenced in the paper) but transaction/coin based rather than account based. Solving the global, massively decentralized database problem is arguably the harder part, as James emphasizes.
+
+On Finney's reading, the currency was the familiar half — b-money had sketched it a decade earlier. The shared-view problem Donald kept pressing was the half that made Bitcoin new.
+
+## 4. Satoshi's answer: the King's wi-fi
+
+At 22:56, [Satoshi replied](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-satoshi-2/) — and did not deflect the framing, he adopted it:
+
+<!-- quote: q3 -->
 > The proof-of-work chain is a solution to the Byzantine Generals' Problem. I'll try to rephrase it in that context.
 
 What follows is the now-famous King's wi-fi analogy: a number of Byzantine Generals, each with a computer, want to crack the King's wi-fi password, but only have enough combined CPU power to do it if a majority attack at once. They don't care when the attack happens, only that they all agree on the same time — and they reach that agreement by racing to solve a proof-of-work problem that embeds the proposed time, broadcasting the winning solution, and having everyone extend the longest resulting chain. After enough proof-of-work has accumulated, any general can verify — from the difficulty alone — that a majority must have worked on it, without needing to trust any individual message.
 
 It is a direct answer to Donald's nested-knowledge problem: nobody needs to know that everyone knows the agreed time. They only need to see a chain of work that could not exist unless a majority had already converged on it.
 
-## 5. What changed, and what didn't
+## 5. What kind of solution it is
 
 Satoshi's own words license reading Bitcoin's consensus as a Byzantine Generals answer — but it answers a differently-shaped version of the problem than the 1982 paper poses. Lamport, Shostak, and Pease assumed a fixed, known set of generals and asked for a guarantee, reached in a bounded number of message rounds, that would hold as long as fewer than a third of them lied. Bitcoin's participant set is neither fixed nor known in advance, so the guarantee it offers is a different shape too.
 
@@ -105,8 +142,19 @@ Satoshi's own words license reading Bitcoin's consensus as a Byzantine Generals 
 | How agreement is reached | Signed or oral messages, counted across rounds | Extend whichever chain represents the most accumulated work |
 | When agreement is final | Deterministic, within a bounded number of rounds | Probabilistic — gets stronger with each additional block |
 
-The open, permissionless participant set is what Sybil-resistant proof-of-work is for: in a system where anyone can create as many identities as they can afford hardware for, counting messages or votes is meaningless without a cost attached to each one. [The consensus design entry](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/) covers the mechanism itself — difficulty adjustment, fork resolution, why finality here is probabilistic rather than a hard guarantee. The comparison itself has a traceable origin: not a citation in a paper, but a live argument, settled the same day it was raised.
+The open, permissionless participant set is what Sybil-resistant proof-of-work is for: in a system where anyone can create as many identities as they can afford hardware for, counting messages or votes is meaningless without a cost attached to each one. [The consensus design entry](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/) covers the mechanism itself — difficulty adjustment, fork resolution, why finality here is probabilistic rather than a hard guarantee. The comparison itself has a traceable origin: not a citation in a paper, but a live argument on a public mailing list.
+
+## 6. From reply to the project's own site
+
+Satoshi did not treat the answer as a passing remark. A snapshot of bitcoin.org from March 2009 already carries a standalone page titled "The Byzantine Generals' Problem" — the King's wi-fi explanation, lightly reworked, hosted on the project's own site. And on May 3, 2009, [handing Martti Malmi reference material for the site's planned FAQ](/BitcoinArchive/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/), Satoshi listed that page as "My description of how Bitcoin solves the Byzantine Generals' problem." What began as a reply to a skeptic had become a page Satoshi himself pointed people to as his description of the solution.
+
+Two years later, the other end of the arc closed. Reviewing Bitcoin in 2011, [Nick Szabo](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) — the designer of bit gold itself — named the exact improvement:
+
+<!-- quote: q4 -->
+> Nakamoto improved a significant security shortcoming that my design had, namely by requiring a proof-of-work to be a node in the Byzantine-resilient peer-to-peer system to lessen the threat of an untrustworthy party controlling the majority of nodes and thus corrupting a number of important security features.
+
+The challenge had landed on the gap the precursor designs left open; the designer of the closest precursor confirmed it was the right spot.
 
 <!-- entry-closing -->
 
-I read the same-day timing as the most telling detail in the whole exchange. Satoshi did not have a rehearsed answer waiting — he had a system that, when pressed on the hardest classical framing available, could be re-explained in that framing within hours and still hold up. That is a stronger claim than "the whitepaper solves the Byzantine Generals Problem," and it is the one the record actually supports.
+What I see in this exchange is a move that accepts the name and rebuilds what it names. Satoshi did not push back on the classical framing — he called his system a solution outright, then answered by swapping the fixed world of known generals for one that anyone can enter or leave. Spoken in the vocabulary of 1982, the answer redraws the problem before solving it. And the record shows the people involved understood what had happened: Donald pressed the gap the precursors had left open, Finney called it the harder half on the spot, Satoshi kept the answer on the project's own site, and the designer of bit gold endorsed the diagnosis three years later.

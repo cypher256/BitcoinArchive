@@ -29,6 +29,7 @@ relatedEntries:
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
   - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
+  - analysis/2008-11-13-byzantine-generals-problem
   - "aftermath/2005-12-29-nick-szabo-biography"
   - "aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request"
 inlineLinkKeywords:
@@ -63,14 +64,14 @@ translationStatus: complete
 **`libtech` メーリングリストの開示。** 投稿は 1990 年代後半のデジタル通貨研究が特定の私的経路で起きていたことを公的に初めて確認している:
 
 <!-- quote: q2 -->
-> ビットゴールドのアイデアを読んだ人はごくわずかだった。 1998 年に考えついたのだが ― ウェイ・ダイがビーマネーを考案していたのと同じ時期、同じ私的メーリングリストで ― 長い話なのだが ― そのほとんどは 2005 年まで公に記述されなかった。
+> ビットゴールドのアイデアを読んだ人はごくわずかだった。 1998 年に考えついたのだが ― ウェイ・ダイがビーマネーを考案していたのと同じ時期、同じ私的メーリングリストで ― 長い話なのだが ― そのほとんどは 2005 年まで公に記述されなかった。もっとも、その断片のいくつかは先に記述していたのだよ。たとえば、私が secure property titles（安全な財産権原）と呼ぶものへ一般化した、要となるビザンチン複製の署名済みトランザクション連鎖の部分だ。
 
 これは `libtech` を 1998 年に[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)の[ビーマネー](/BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/)とサボのビットゴールドが並行開発された場として特定する。独立した孤立発明ではなく閉じたリストでの並行開発という構造的事実は、後の同定分析 ([ウェイ・ダイ=サトシ仮説](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)と[サボ=サトシ仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)) で繰り返し参照される。
 
 **ビットゴールドとビットコインの比較。** 構造比較セクションはビットコインがビットゴールドに対して行った二つの具体的改善を特定している:
 
 <!-- quote: q3 -->
-> ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善したのだ。ビザンチン耐性を持つ P2P システムでノードになるためにプルーフ・オブ・ワークを要求することで、信頼できない当事者がノードの過半数を制御する脅威を軽減したのだ。
+> ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善したのだ。ビザンチン耐性を持つ P2P システムでノードになるためにプルーフ・オブ・ワークを要求することで、信頼できない当事者がノードの過半数を制御し、それによって重要なセキュリティ機能の数々を損なう脅威を軽減したのだ。
 >
 > 私の自動マーケットの代わりに ― ハードウェアの進歩や暗号学のブレークスルーによってパズルの難易度が劇的に変わりうるという事実と、需要の予測不可能性を考慮するための ― ナカモトはビザンチン合意に基づく難易度調整アルゴリズムを設計したのだ。ビットコインのこの側面が機能なのかバグなのか、私には決めかねるが、よりシンプルにはなっているのだよ。
 

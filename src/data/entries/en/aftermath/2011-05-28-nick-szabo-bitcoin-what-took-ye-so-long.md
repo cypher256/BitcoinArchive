@@ -29,6 +29,7 @@ relatedEntries:
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
   - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
+  - analysis/2008-11-13-byzantine-generals-problem
   - "aftermath/2005-12-29-nick-szabo-biography"
   - "aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request"
 inlineLinkKeywords:
@@ -62,14 +63,14 @@ He attributes the resistance to economic intuition: most people believed money r
 **The libtech mailing list disclosure.** The post contains the first public confirmation that the late-1990s digital-cash work happened on a specific private channel:
 
 <!-- quote: q2 -->
-> Only a few people had read of the bit gold ideas, which although I came up with them in 1998 (at the same time and on the same private mailing list where Dai was coming up with b-money — it's a long story) were mostly not described in public until 2005.
+> Only a few people had read of the bit gold ideas, which although I came up with them in 1998 (at the same time and on the same private mailing list where Dai was coming up with b-money — it's a long story) were mostly not described in public until 2005, although various pieces of it I described earlier, for example the crucial Byzantine-replicated chain-of-signed-transactions part of it which I generalized into what I call secure property titles.
 
 This identifies "libtech" as the venue where [Wei Dai](/BitcoinArchive/participants/wei-dai/)'s [b-money](/BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/) and Szabo's bit gold were developed in parallel during 1998. The parallel development on a closed list — rather than independent inventions in isolation — is a structural fact that recurs in later identification analyses (the [Wei-Dai-Satoshi hypothesis](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/) and the [Szabo-Satoshi hypothesis](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) both build on it).
 
 **The bit gold vs. Bitcoin comparison.** The architectural section identifies two specific improvements Bitcoin made over bit gold:
 
 <!-- quote: q3 -->
-> Nakamoto improved a significant security shortcoming that my design had, namely by requiring proof-of-work to be a node in a Byzantine-resilient peer-to-peer system to greatly reduce the threat of an untrustworthy party controlling the majority of nodes.
+> Nakamoto improved a significant security shortcoming that my design had, namely by requiring a proof-of-work to be a node in the Byzantine-resilient peer-to-peer system to lessen the threat of an untrustworthy party controlling the majority of nodes and thus corrupting a number of important security features.
 >
 > Instead of my automated market to account for the fact that the difficulty of puzzles can often radically change based on hardware improvements and cryptographic breakthroughs (i.e. discovering algorithms that can solve proofs-of-work faster), and the unpredictability of demand, Nakamoto designed a Byzantine-agreed algorithm adjusting the difficulty of puzzles. I can't decide whether this aspect of Bitcoin is more feature or more bug, but it does make it simpler.
 

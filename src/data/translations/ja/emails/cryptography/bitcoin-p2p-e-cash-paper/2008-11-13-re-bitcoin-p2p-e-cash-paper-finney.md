@@ -19,6 +19,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute (スレッド表示)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/1/"
+relatedEntries:
+  - analysis/2008-11-13-byzantine-generals-problem
 translationStatus: complete
 quotes:
   - id: "q1"
