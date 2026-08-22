@@ -8,7 +8,7 @@ author: "Forensicxs"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Forensicxs published a line-by-line walkthrough of Bitcoin v0.1's 31,794 lines of source code — one of the most detailed public analyses of Satoshi's original codebase, covering all 31 files."
+description: "Forensicxs published a line-by-line walkthrough of Bitcoin v0.1's 31,794 lines of source code, covering all 31 files."
 isSatoshi: false
 tags:
   - "bitcoin-v0.1"

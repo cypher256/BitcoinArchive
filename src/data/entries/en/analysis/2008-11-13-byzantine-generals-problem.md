@@ -35,6 +35,7 @@ secondarySources:
 relatedEntries:
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-satoshi-2
+  - blog/satoshi/2009-03-09-byzantine-generals-problem
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - correspondence/martti-malmi/2009-05-03-bitcoin-003
@@ -63,7 +64,7 @@ quotes:
 
 ![A dark navy infographic headed "The Byzantine Generals Problem," subtitled "A 1982 classic, answered with the proof-of-work chain." A horizontal timeline links three icons: 1982 (Lamport, Shostak, Pease, ACM TOPLAS), November 13 2008 06:16 UTC (James A. Donald names the problem), and November 13 2008 22:56 UTC (Satoshi Nakamoto: the proof-of-work chain), with a speech-bubble quote reading "A solution to the Byzantine Generals Problem." A small panel in the top right contrasts classical BFT (known set, bounded rounds) with Bitcoin proof of work (open set, probabilistic finality).](/BitcoinArchive/images/analysis/2008-11-13-byzantine-generals-problem-hero.png)
 
-November 13, 2008, 06:16 UTC — thirteen days after the whitepaper went public. In the mailing-list thread discussing it, James A. Donald gave a name to the difficulty he had been pressing Satoshi on: the Byzantine Generals Problem, the classic agreement problem of distributed computing. Satoshi answered at 22:56 that day. The exchange is the earliest in Bitcoin's public record to tie the phrase to it, and the answer outlived the thread: within months Satoshi had turned it into a standalone page on bitcoin.org.
+November 13, 2008, 06:16 UTC — thirteen days after the whitepaper went public. In the mailing-list thread discussing it, James A. Donald gave a name to the difficulty he had been pressing Satoshi on: the Byzantine Generals Problem, the classic agreement problem of distributed computing. Satoshi answered at 22:56 that day. Neither the whitepaper's October 3 draft nor its October 31 final text uses the word "Byzantine," and none of the thread's earlier replies do either: Donald's message is the first to tie the phrase to Bitcoin, and the answer outlived the thread — within months Satoshi had turned it into a [standalone page on bitcoin.org](/BitcoinArchive/entries/blog/satoshi/2009-03-09-byzantine-generals-problem/).
 
 ## 1. The 1982 problem
 
@@ -134,7 +135,7 @@ The open, permissionless participant set is what Sybil-resistant proof-of-work i
 
 ## 6. From reply to the project's own site
 
-Satoshi did not treat the answer as a passing remark. A snapshot of bitcoin.org from March 2009 already carries a standalone page titled "The Byzantine Generals' Problem" — the King's wi-fi explanation, lightly reworked, hosted on the project's own site. And on May 3, 2009, [handing Martti Malmi reference material for the site's planned FAQ](/BitcoinArchive/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/), Satoshi listed that page as "My description of how Bitcoin solves the Byzantine Generals' problem." What began as a reply to a skeptic had become a page Satoshi himself pointed people to as his description of the solution.
+Satoshi did not treat the answer as a passing remark. A snapshot of bitcoin.org from March 2009 already carries a standalone page titled ["The Byzantine Generals' Problem"](/BitcoinArchive/entries/blog/satoshi/2009-03-09-byzantine-generals-problem/) — the King's wi-fi explanation, lightly reworked, hosted on the project's own site. And on May 3, 2009, [handing Martti Malmi reference material for the site's planned FAQ](/BitcoinArchive/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/), Satoshi listed that page as "My description of how Bitcoin solves the Byzantine Generals' problem." What began as a reply to a skeptic had become a page Satoshi himself pointed people to as his description of the solution.
 
 <!-- entry-closing -->
 

@@ -25,6 +25,9 @@ secondarySources:
     url: "https://www.justice.gov/opa/pr/two-arrested-alleged-conspiracy-launder-45-billion-stolen-cryptocurrency"
   - name: "CoinDesk — ヘザー・『ラズルカーン』・モーガン、Bitfinex ハック資金洗浄で 18 か月の判決 (2024 年 11 月)"
     url: "https://www.coindesk.com/policy/2024/11/18/bitfinex-hack-launderer-heather-razzlekhan-morgan-sentenced-to-18-months-in-prison"
+  - name: "CNBC — 米司法省、カンボジア Prince Group 事件で過去最大の 150 億ドル相当を押収 (2025 年 10 月 14 日)"
+    url: "https://www.cnbc.com/2025/10/14/bitcoin-doj-chen-zhi-pig-butchering-scam.html"
+    note: "Prince Group / Chen Zhi の押収 (約 127,271 BTC) が、米司法省の暗号通貨関連の回収として Bitfinex 事件を上回った。"
 relatedEntries:
   - aftermath/2014-02-28-mt-gox-bankruptcy
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
@@ -61,4 +64,4 @@ timeline
 
 リヒテンシュタインは First Step Act の適用により、 2026 年 1 月には早期釈放されたと報じられている。
 
-**意味するもの。** Bitfinex 事件は、これまでの暗号通貨関連の法執行案件として最大規模の回収となり、取引所侵害の発覚から関係者逮捕までの間隔も、暗号通貨関連では最も長い部類に入る。オンチェーンのフォレンジクスに、取引所への召喚状・ダークウェブ口座の監視・マスターキーリストを保管したクラウドストレージへの捜索差し押さえといった従来型の金融捜査を組み合わせれば、数年がかりの資金洗浄もたどり直せる。一時は「回収不能」とみなされた資金が、最後には取り戻された。 Bitfinex 事件は、そのことを何より物語っている。 [失われたビットコイン横断総括](/BitcoinArchive/ja/entries/analysis/2026-06-02-bitcoin-iconic-losses-overview/)では、 2016 年 Bitfinex ハックを「不可逆性原則に対する例外的回収」の対照事例として位置付け、 Mt. Gox・QuadrigaCX・FTX、そしてパスワード忘却型・物理喪失型 (ステファン・トーマス、ハウエルズ) と並べて読む。
+**意味するもの。** この事件は、2025 年 10 月に米司法省がカンボジアの Prince Group 事件で約 127,000 BTC (約 150 億ドル) を押収して記録を塗り替えるまで、暗号通貨関連の法執行案件として最大規模の回収だった。 2016 年の盗難から 2022 年の逮捕までの約 5 年半という間隔も、当時としては大手取引所侵害事件の中でもとりわけ長い部類に入る。オンチェーンのフォレンジクスに、取引所への召喚状・ダークウェブ口座の監視・マスターキーリストを保管したクラウドストレージへの捜索差し押さえといった従来型の金融捜査を組み合わせれば、数年がかりの資金洗浄もたどり直せる。一時は「回収不能」とみなされた資金が、最後には取り戻された。 Bitfinex 事件は、そのことを何より物語っている。 [失われたビットコイン横断総括](/BitcoinArchive/ja/entries/analysis/2026-06-02-bitcoin-iconic-losses-overview/)では、 2016 年 Bitfinex ハックを「不可逆性原則に対する例外的回収」の対照事例として位置付け、 Mt. Gox・QuadrigaCX・FTX、そしてパスワード忘却型・物理喪失型 (ステファン・トーマス、ハウエルズ) と並べて読む。

@@ -25,6 +25,9 @@ secondarySources:
     url: "https://www.justice.gov/opa/pr/two-arrested-alleged-conspiracy-launder-45-billion-stolen-cryptocurrency"
   - name: "CoinDesk — Bitfinex hack launderer Heather 'Razzlekhan' Morgan sentenced to 18 months in prison (November 2024)"
     url: "https://www.coindesk.com/policy/2024/11/18/bitfinex-hack-launderer-heather-razzlekhan-morgan-sentenced-to-18-months-in-prison"
+  - name: "CNBC — DOJ seizes record $15 billion in bitcoin tied to Cambodia's Prince Group (October 14, 2025)"
+    url: "https://www.cnbc.com/2025/10/14/bitcoin-doj-chen-zhi-pig-butchering-scam.html"
+    note: "The Prince Group / Chen Zhi seizure (~127,271 BTC) surpassed the Bitfinex case as the DOJ's largest cryptocurrency-related recovery."
 relatedEntries:
   - aftermath/2014-02-28-mt-gox-bankruptcy
   - analysis/2026-06-02-bitcoin-iconic-losses-overview
@@ -60,4 +63,4 @@ timeline
 
 Lichtenstein was reported to have received early release in January 2026 under the First Step Act.
 
-**Significance.** The Bitfinex case marks the largest cryptocurrency-related law-enforcement recovery to date and one of the longest gaps between an exchange breach and the arrest of the parties responsible. It demonstrated that on-chain forensics combined with traditional financial-investigation techniques (subpoenas to exchanges, surveillance of dark-market accounts, search warrants on cloud storage holding the master key list) could undo a multi-year laundering effort that had once been treated as unrecoverable. The 2016 Bitfinex hack functions as the canonical "recovery-against-the-irreversibility-default" counterpoint in [the lost-Bitcoin canon overview](/BitcoinArchive/entries/analysis/2026-06-02-bitcoin-iconic-losses-overview/), which reads it alongside Mt. Gox, QuadrigaCX, FTX, and the forgotten-password and physical-loss cases (Stefan Thomas, James Howells).
+**Significance.** At the time of the 2022 arrests, the Bitfinex case was the largest cryptocurrency-related law-enforcement recovery on record — a mark the DOJ's roughly $15 billion Prince Group bitcoin seizure surpassed in October 2025 — and the five-and-a-half-year gap between the 2016 theft and the 2022 arrests was, at the time, among the longest documented in a major exchange-breach case. It demonstrated that on-chain forensics combined with traditional financial-investigation techniques (subpoenas to exchanges, surveillance of dark-market accounts, search warrants on cloud storage holding the master key list) could undo a multi-year laundering effort that had once been treated as unrecoverable. The 2016 Bitfinex hack functions as the canonical "recovery-against-the-irreversibility-default" counterpoint in [the lost-Bitcoin canon overview](/BitcoinArchive/entries/analysis/2026-06-02-bitcoin-iconic-losses-overview/), which reads it alongside Mt. Gox, QuadrigaCX, FTX, and the forgotten-password and physical-loss cases (Stefan Thomas, James Howells).

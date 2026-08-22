@@ -8,7 +8,7 @@ author: "Forensicxs"
 participants:
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "Forensicxs がビットコイン v0.1 の 31,794 行を行単位でウォークスルー。サトシのオリジナルコードベースに対する最も詳細な公開分析の一つで、全 31 ファイルを網羅。"
+description: "Forensicxs がビットコイン v0.1 の 31,794 行を行単位でウォークスルー。全 31 ファイルを網羅。"
 isSatoshi: false
 tags:
   - "bitcoin-v0.1"

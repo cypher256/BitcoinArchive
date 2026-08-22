@@ -29,7 +29,7 @@ tags:
 secondarySources:
   - name: "エヴァン・ハッチ — 「レン・サッサマンとサトシ：サイファーパンク史」（Medium、2021 年 2 月 22 日）"
     url: "https://evanhatch.medium.com/len-sassaman-and-satoshi-e483c85c2b10"
-    note: "サッサマン＝サトシ仮説の最も注目度が高く最も多く引用される公的定式化。後続のジャーナリズムおよび Wikipedia における基礎参照源。"
+    note: "Wikipedia のレン・サッサマン項目が名指しで引用している。"
   - name: "本仮説に言及した BitcoinTalk スレッド（2013 年 3 月 15 日）"
     url: "https://bitcointalk.org/"
     note: "Wikipedia は、サッサマン＝サトシ仮説に関する公的議論として、出典で復元できる最古のものとして 2013 年 3 月 15 日の BitcoinTalk スレッドを特定している。具体的なトピック URL は本アーカイブの記録には残っていない。"
@@ -65,7 +65,7 @@ translationStatus: complete
 
 サッサマンがサトシ・ナカモトの正体だ。死の少し前、彼はプロジェクトから退いている。[2011 年 4 月 26 日のギャビン・アンドレセン宛て最終メール](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)（サッサマン自殺の 3 か月前）は、複数の同時並行プロジェクトから一歩離れる動きではなく、彼のビットコイン人生を閉じる動作だった。
 
-本アーカイブの調査で特定できた最古の公的議論は 2013 年 3 月 15 日の BitcoinTalk スレッド（Wikipedia の引用）。最も目立つ後の定式化は[エヴァン・ハッチによる 2021 年 2 月 22 日の Medium 記事「レン・サッサマンとサトシ：サイファーパンク史」](/BitcoinArchive/ja/entries/aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history/)であり、Wikipedia に引用され、暗号通貨関連メディアで一定の取り上げを受けた。
+本アーカイブの調査で特定できた最古の公的議論は 2013 年 3 月 15 日の BitcoinTalk スレッド（Wikipedia の引用）。後の定式化の一つが[エヴァン・ハッチによる 2021 年 2 月 22 日の Medium 記事「レン・サッサマンとサトシ：サイファーパンク史」](/BitcoinArchive/ja/entries/aftermath/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history/)で、Wikipedia が引用しているのはこの記事であり、暗号通貨関連メディアでも取り上げと直接の反論の両方を受けた。
 
 ### 1.1 タイミング
 

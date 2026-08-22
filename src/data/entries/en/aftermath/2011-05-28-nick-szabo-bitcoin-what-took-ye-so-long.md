@@ -57,7 +57,7 @@ Published on Szabo's Unenumerated blog on May 28, 2011, this is the first long-f
 <!-- quote: q1 -->
 > While the security technology is very far from trivial, the "why" was by far the biggest stumbling block — nearly everybody who heard the general idea thought it was a very bad idea.
 
-He attributes the resistance to economic intuition: most people believed money required either commodity backing (the metallic tradition) or sovereign issuance (the chartalist tradition), and a third option — a scarce digital token without either — was widely dismissed. Szabo connects this to a misreading of Menger and Mises that he had encountered repeatedly when discussing bit gold in the late 1990s.
+In Szabo's own account, the resistance came from economic intuition: he recalls being told, again and again, that money had to be either commodity-backed (the metallic tradition) or sovereign-issued (the chartalist tradition), so a scarce digital token belonging to neither category was dismissed by nearly everyone who heard the idea. Szabo connects this to a misreading of Menger and Mises that he says he encountered repeatedly when discussing bit gold in the late 1990s.
 
 **The libtech mailing list disclosure.** The post contains the first public confirmation that the late-1990s digital-cash work happened on a specific private channel:
 

@@ -1,5 +1,5 @@
 ---
-title: "Japan's Payment Services Act amendment takes effect — the world's first licensing regime for cryptoasset exchanges, three years after Mt. Gox's collapse"
+title: "Japan's Payment Services Act amendment takes effect — a national licensing regime for cryptoasset exchanges, three years after Mt. Gox's collapse"
 date: 2017-04-01T00:00:00Z
 type: "article"
 source: "fsa"
@@ -9,7 +9,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "Financial Services Agency"
     slug: "fsa"
-description: "Three years after Mt. Gox's collapse, Japan's amended Payment Services Act took effect on April 1, 2017, creating the world's first licensing regime for cryptoasset exchanges."
+description: "Three years after Mt. Gox's collapse, Japan's amended Payment Services Act took effect on April 1, 2017, creating a national licensing regime for cryptoasset exchanges."
 isSatoshi: false
 tags:
   - "japan"

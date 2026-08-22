@@ -16,7 +16,7 @@ participants:
     slug: "hal-finney"
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "2021 年 2 月 22 日、エヴァン・ハッチが Medium に「レン・サッサマンとサトシ：サイファーパンク史」を公開。サッサマン＝サトシ仮説の最も引用される公的定式化。"
+description: "2021 年 2 月 22 日、エヴァン・ハッチが Medium に「レン・サッサマンとサトシ：サイファーパンク史」を公開。サッサマン＝サトシ仮説の基礎となった公的定式化。"
 isSatoshi: false
 tags:
   - "len-sassaman"
@@ -51,7 +51,7 @@ translationStatus: complete
 
 ![紺色を基調にしたインフォグラフィックに、重なり合う 2 つの時計盤、フードをかぶった人影と南京錠・ネットワーク図、封筒のアイコンから薄れゆく空白を経て星座状の点群へ続く横一列の年表線が描かれている。](/BitcoinArchive/images/analysis/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history-hero.png)
 
-2021 年 2 月 22 日、暗号通貨ゲーミングプラットフォーム Worlds.org の創業者である**エヴァン・ハッチ**が Medium に「レン・サッサマンとサトシ：サイファーパンク史」を公開した。本記事は[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)仮名の中の人物だったとする仮説の最も多く引用される公的定式化であり、後続のジャーナリズムにおいて本仮説の基礎参照源であり続けている。
+2021 年 2 月 22 日、暗号通貨ゲーミングプラットフォーム Worlds.org の創業者である**エヴァン・ハッチ**が Medium に「レン・サッサマンとサトシ：サイファーパンク史」を公開した。本記事は[レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/)が[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)仮名の中の人物だったとする仮説の公的な定式化であり、後続のジャーナリズムにおいて本仮説の基礎参照源であり続けている。
 
 ## ハッチが提示する論拠
 

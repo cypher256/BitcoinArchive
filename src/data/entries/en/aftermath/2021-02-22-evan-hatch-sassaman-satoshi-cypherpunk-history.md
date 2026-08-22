@@ -16,7 +16,7 @@ participants:
     slug: "hal-finney"
   - name: "Peter Todd"
     slug: "peter-todd"
-description: "On February 22, 2021, Evan Hatch published Len Sassaman and Satoshi: a Cypherpunk history on Medium — the most-cited public articulation of the Sassaman = Satoshi Nakamoto hypothesis."
+description: "On February 22, 2021, Evan Hatch published Len Sassaman and Satoshi: a Cypherpunk history on Medium — the article that became the foundational case for the Sassaman = Satoshi Nakamoto hypothesis."
 isSatoshi: false
 tags:
   - "len-sassaman"
@@ -50,7 +50,7 @@ inlineLinkKeywords:
 
 ![A dark-navy infographic with two overlapping clock faces, a hooded silhouette beside a padlock and small network diagram, and a horizontal timeline linking an envelope icon to a fading gap and a cluster of connected dots.](/BitcoinArchive/images/analysis/2021-02-22-evan-hatch-sassaman-satoshi-cypherpunk-history-hero.png)
 
-On February 22, 2021, **Evan Hatch** — founder of the Worlds.org cryptocurrency gaming platform — published "Len Sassaman and Satoshi: a Cypherpunk history" on Medium. The piece is the most-cited public articulation of the hypothesis that [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) was the person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym, and it remains the foundational reference for that hypothesis in subsequent journalism.
+On February 22, 2021, **Evan Hatch** — founder of the Worlds.org cryptocurrency gaming platform — published "Len Sassaman and Satoshi: a Cypherpunk history" on Medium. The piece is a public articulation of the hypothesis that [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) was the person behind the [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) pseudonym, and it remains the foundational reference for that hypothesis in subsequent journalism.
 
 ## The case as Hatch presents it
 

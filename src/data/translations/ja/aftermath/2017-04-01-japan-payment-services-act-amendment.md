@@ -1,5 +1,5 @@
 ---
-title: "改正資金決済法施行 —— マウントゴックス破綻から 3年、世界初の暗号資産交換業登録制度が動き出す"
+title: "改正資金決済法施行 —— マウントゴックス破綻から 3年、国レベルの暗号資産交換業登録制度が動き出す"
 date: "2017-04-01T00:00:00Z"
 type: "article"
 source: "fsa"
@@ -9,7 +9,7 @@ author: "Bitcoin Institute"
 participants:
   - name: "金融庁"
     slug: "fsa"
-description: "マウントゴックス破綻から 3年後、改正資金決済法が施行され、世界初となる暗号資産交換業者の登録制度が始まった。"
+description: "マウントゴックス破綻から 3年後、改正資金決済法が施行され、国レベルの暗号資産交換業者の登録制度が始まった。"
 isSatoshi: false
 tags:
   - "japan"

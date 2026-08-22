@@ -1,5 +1,5 @@
 ---
-title: "Major Twitter hack uses Bitcoin in largest social media security breach"
+title: "Major Twitter hack uses Bitcoin in largest security breach in Twitter's history"
 date: 2020-07-15T00:00:00Z
 type: "article"
 source: "x"

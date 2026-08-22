@@ -35,6 +35,7 @@ secondarySources:
 relatedEntries:
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-satoshi-2
+  - blog/satoshi/2009-03-09-byzantine-generals-problem
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - correspondence/martti-malmi/2009-05-03-bitcoin-003
@@ -64,7 +65,7 @@ translationStatus: complete
 
 ![紺色を基調にしたインフォグラフィック。見出しは「THE BYZANTINE GENERALS PROBLEM」、副題は「1982 年の古典的難問に、プルーフ・オブ・ワークチェーンが答えた」。横一列のタイムラインが 3 つのアイコンを結ぶ。1982 年（ランポート、ショスタク、ピーズ、ACM TOPLAS）、2008 年 11 月 13 日 06:16 UTC（ジェームズ・A・ドナルドが問題を名指しする）、2008 年 11 月 13 日 22:56 UTC（サトシ・ナカモト、プルーフ・オブ・ワークチェーン）。吹き出しの引用には「A SOLUTION TO THE BYZANTINE GENERALS PROBLEM」とある。右上の小さなパネルは、古典的なビザンチン耐性合意（既知の集団・回数を区切ったラウンド）とビットコインのプルーフ・オブ・ワーク（開かれた集団・確率的な確定性）を対比している。](/BitcoinArchive/images/analysis/2008-11-13-byzantine-generals-problem-hero.png)
 
-2008 年 11 月 13 日 06:16 UTC。ホワイトペーパー公開から 13 日後、それを議論するメーリングリストのスレッドで、ジェームズ・A・ドナルドは、サトシに突きつけ続けてきた難しさに名前を与えた。分散コンピューティングの古典的な合意問題、ビザンチン将軍問題である。サトシは同日 22:56 に答えた。このやり取りは、この語がビットコインに結びつけられた公開記録上最初のものであり、答えはスレッドの中だけでは終わらなかった。数か月のうちに、サトシはこの答えを bitcoin.org の独立ページに仕立てている。
+2008 年 11 月 13 日 06:16 UTC。ホワイトペーパー公開から 13 日後、それを議論するメーリングリストのスレッドで、ジェームズ・A・ドナルドは、サトシに突きつけ続けてきた難しさに名前を与えた。分散コンピューティングの古典的な合意問題、ビザンチン将軍問題である。サトシは同日 22:56 に答えた。ホワイトペーパーは草稿にも最終版にも「ビザンチン」の語がなく、このスレッドのそれ以前の返信にも使った者はいない。この語をビットコインに結びつけたのはドナルドのこのメールが最初であり、答えはスレッドの中だけでは終わらなかった。数か月のうちに、サトシはこの答えを[bitcoin.org の独立ページ](/BitcoinArchive/ja/entries/blog/satoshi/2009-03-09-byzantine-generals-problem/)に仕立てている。
 
 ## 1. 1982 年の問題
 
@@ -135,7 +136,7 @@ timeline
 
 ## 6. 一つの返信から、プロジェクトのサイトへ
 
-サトシはこの答えを、言いっぱなしにしなかった。2009 年 3 月時点の bitcoin.org の保存記録には、王の Wi-Fi の説明を磨き直した「The Byzantine Generals' Problem」という独立ページが、プロジェクト自身のサイト上にすでに存在している。そして同年 5 月 3 日、[サイトの FAQ 作成に向けてマルッティ・マルミへ参考資料を渡した](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/)際、サトシはこのページを「ビットコインがビザンチン将軍問題をどう解くかについての私の説明」として挙げた。懐疑派への一つの返信として始まったものが、サトシ自身が「私の説明」として人に示すページになっていた。
+サトシはこの答えを、言いっぱなしにしなかった。2009 年 3 月時点の bitcoin.org の保存記録には、王の Wi-Fi の説明を磨き直した[「The Byzantine Generals' Problem」](/BitcoinArchive/ja/entries/blog/satoshi/2009-03-09-byzantine-generals-problem/)という独立ページが、プロジェクト自身のサイト上にすでに存在している。そして同年 5 月 3 日、[サイトの FAQ 作成に向けてマルッティ・マルミへ参考資料を渡した](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/)際、サトシはこのページを「ビットコインがビザンチン将軍問題をどう解くかについての私の説明」として挙げた。懐疑派への一つの返信として始まったものが、サトシ自身が「私の説明」として人に示すページになっていた。
 
 <!-- entry-closing -->
 
