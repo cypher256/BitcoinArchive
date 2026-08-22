@@ -63,7 +63,7 @@ relatedEntries:
   - aftermath/2019-02-19-paul-le-roux-biography
   - aftermath/2017-11-22-elon-musk-biography
   - aftermath/2008-11-02-james-donald-biography
-  - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
+  - aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - aftermath/2014-03-06-newsweek-dorian-nakamoto
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
@@ -307,7 +307,7 @@ The most diagnostic comparison is against **Phase 1**, when the entire architect
 | [Hal Finney](/BitcoinArchive/participants/hal-finney/) | 🔴 Misalignment — Mac primary; published code uses snake_case + tabs vs Satoshi's spaces + Hungarian-notation camelCase | Mac (long-term, documented) | C / C++ | PGP 2.0, RPOW |
 | [James A. Donald](/BitcoinArchive/participants/james-donald/) | 🔴 No documented shipping codebase at v0.1 scale | Not in archive record | Not in archive record | jim.com writing on cryptography and economics; no documented shipping codebase |
 | [Peter Todd](/BitcoinArchive/participants/peter-todd/) | 🔴 Misalignment — Linux uniformly, no Windows trace | Linux (2008–2011 GitHub repositories uniformly Linux: FHS paths, Unix shebangs, PyGTK) | C / Python | Linux-native hardware / firmware tooling |
-| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | 🔴 Misalignment — no documented C++ shipping at v0.1 scale | Not in archive record | No shipping C++ record | Bit Gold proposal (paper only); [explicitly asked for implementation help in April 2008](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) |
+| [Nick Szabo](/BitcoinArchive/participants/nick-szabo/) | 🔴 Misalignment — no documented C++ shipping at v0.1 scale | Not in archive record | No shipping C++ record | Bit Gold proposal (paper only); [explicitly asked for implementation help in April 2008](/BitcoinArchive/entries/aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request/) |
 | [Len Sassaman](/BitcoinArchive/participants/len-sassaman/) | 🔴 Misalignment — Unix-primary, no documented Windows-first development | Unix / Linux primary (Mixmaster maintainer; KU Leuven research environment) | C | Mixmaster (C; *BSD / Linux primary, Windows port available) |
 | [Dorian Nakamoto](/BitcoinArchive/participants/dorian-nakamoto/) | 🔴 Misalignment — no documented C++ shipping | Not in archive record (classified defense-systems engineering) | Physics / electronics background | No public codebase |
 | [Craig Wright](/BitcoinArchive/participants/craig-wright/) | — Not applicable (COPA v Wright 2024 ruling) | — | — | — |

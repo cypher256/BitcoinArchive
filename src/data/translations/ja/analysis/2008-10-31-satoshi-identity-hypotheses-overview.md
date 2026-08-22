@@ -62,7 +62,7 @@ relatedEntries:
   - aftermath/2019-02-19-paul-le-roux-biography
   - aftermath/2017-11-22-elon-musk-biography
   - aftermath/2008-11-02-james-donald-biography
-  - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
+  - aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request
   - aftermath/2014-01-12-wei-dai-retrospective-on-satoshi
   - aftermath/2014-03-06-newsweek-dorian-nakamoto
   - aftermath/2023-10-21-lopp-hal-finney-not-satoshi
@@ -300,7 +300,7 @@ gantt
 | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) | 🔴 不整合 — Mac 主体。公開コードはスネークケース＋タブで、サトシの空白インデント＋ハンガリアン記法のキャメルケースと異なる | Mac（長期、記録あり） | C / C++ | PGP 2.0、RPOW |
 | [ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/) | 🔴 v0.1 規模の公開コードベースの記録なし | アーカイブ記録なし | アーカイブ記録なし | jim.com での暗号・経済の執筆。公開コードベースの記録なし |
 | [ピーター・トッド](/BitcoinArchive/ja/participants/peter-todd/) | 🔴 不整合 — 全て Linux、Windows の痕跡なし | Linux（2008〜2011 の GitHub リポジトリは一貫して Linux：FHS パス、Unix シェバン、PyGTK） | C / Python | Linux ネイティブのハードウェア／ファームウェア開発ツール |
-| [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | 🔴 不整合 — v0.1 規模の C++ 公開実績なし | アーカイブ記録なし | C++ 公開実績なし | Bit Gold 提案（紙のみ）。[2008 年 4 月に実装協力者を明示的に募集](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) |
+| [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/) | 🔴 不整合 — v0.1 規模の C++ 公開実績なし | アーカイブ記録なし | C++ 公開実績なし | Bit Gold 提案（紙のみ）。[2008 年 4 月に実装協力者を明示的に募集](/BitcoinArchive/ja/entries/aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request/) |
 | [レン・サッサマン](/BitcoinArchive/ja/participants/len-sassaman/) | 🔴 不整合 — Unix 主体、Windows 第一の開発記録なし | Unix / Linux 主体（Mixmaster 保守者、KU Leuven の研究環境） | C | Mixmaster（C、*BSD / Linux 主体で Windows 移植版あり） |
 | [ドリアン・ナカモト](/BitcoinArchive/ja/participants/dorian-nakamoto/) | 🔴 不整合 — C++ 公開実績なし | アーカイブ記録なし（機密の防衛系統工学に従事） | 物理学・電子工学の背景 | 公開コードベースなし |
 | [クレイグ・ライト](/BitcoinArchive/ja/participants/craig-wright/) | — 該当せず（COPA 対ライト 2024 判決） | — | — | — |

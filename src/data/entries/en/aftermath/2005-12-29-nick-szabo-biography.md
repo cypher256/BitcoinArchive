@@ -36,7 +36,7 @@ relatedEntries:
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
   - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
-  - "aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request"
+  - "aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request"
   - "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
@@ -46,9 +46,9 @@ relatedEntries:
 
 ![Abstract diagram of an incomplete hexagonal chain evolving into a denser, glowing hexagonal chain, beside a document icon marked with a gear-like emblem and a dashed timeline linking two date markers, on a dark navy background.](/BitcoinArchive/images/analysis/2005-12-29-nick-szabo-biography-hero.png)
 
-In 1994, Nick Szabo coined the term "smart contracts." In 1998 he conceived Bit Gold, publishing the full design on his Unenumerated blog on December 29, 2005. On April 27, 2008, [in a comment on his own blog](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/), Szabo wrote:
+In 1994, Nick Szabo coined the term "smart contracts." In 1998 he conceived Bit Gold, publishing the full design on his Unenumerated blog on December 29, 2005. On April 10, 2008, [in a comment on his own blog](/BitcoinArchive/entries/aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request/), Szabo wrote:
 
-> "Bit gold would greatly benefit from a demo, an experimental market. Anybody want to help me code one up?"
+> "...it would greatly benefit from a demonstration, an experimental market (with e.g. a trusted third party substituted for the complex security that would be needed for a real system). Anybody want to help me code one up?"
 
 Four months later, on August 20, 2008, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) sent his first known email about what would become Bitcoin. Bitcoin v0.1 shipped on January 9, 2009. In [May 2011 Szabo wrote about the new system on Unenumerated](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/):
 
@@ -64,8 +64,8 @@ timeline
     1996 : Publishes "Smart Contracts - Building Blocks for Digital Markets"
     1998 : Conceives Bit Gold (libtech private mailing list)
     2005 : Publishes Bit Gold full design on Unenumerated blog (Dec 29)
-    2008 : "Anybody want to help me code one up" Unenumerated comment (Apr 27)
-    %% link: /BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/
+    2008 : "Anybody want to help me code one up" Unenumerated comment (Apr 10)
+    %% link: /BitcoinArchive/entries/aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request/
     2009 : Bitcoin v0.1 released; Szabo continues Unenumerated (Jan)
     %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
     2011 : "Bitcoin, what took ye so long?" Unenumerated post (May 28)

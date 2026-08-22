@@ -28,7 +28,7 @@ secondarySources:
     url: "https://en.wikipedia.org/wiki/Nick_Szabo"
 relatedEntries:
   - aftermath/2005-12-29-nick-szabo-biography
-  - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
+  - aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request
   - aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long
   - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
   - aftermath/2014-04-16-aston-university-szabo-stylometric-study
@@ -62,7 +62,7 @@ The analysis catalogued recurring phrasings, sentence-construction patterns, and
 - A pattern of comma usage and double-spacing after periods.
 - Roughly seventy additional vocabulary and phrasing markers compiled across the two corpora.
 
-The article paired these stylistic findings with the prior conceptual case: Szabo's [Bit Gold proposal](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) (1998 conceived, fully published December 29, 2005 on Unenumerated) was the closest published precursor to Bitcoin's architecture, and Szabo's [April 2008 Unenumerated blog comment asking for help to implement Bit Gold](/BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) placed Szabo, six months before the Bitcoin whitepaper, working actively in the same problem space.
+The article paired these stylistic findings with the prior conceptual case: Szabo's [Bit Gold proposal](/BitcoinArchive/entries/aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request/) (1998 conceived, fully published December 29, 2005 on Unenumerated) was the closest published precursor to Bitcoin's architecture, and Szabo's [April 2008 Unenumerated blog comment asking for help to implement Bit Gold](/BitcoinArchive/entries/aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request/) placed Szabo, six months before the Bitcoin whitepaper, working actively in the same problem space.
 
 ## TechCrunch reception
 

@@ -52,7 +52,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - aftermath/2005-12-29-nick-szabo-biography
-  - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
+  - aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request
   - aftermath/2008-08-20-adam-back-biography
   - aftermath/2008-08-22-wei-dai-biography
   - aftermath/2008-10-31-satoshi-nakamoto-biography

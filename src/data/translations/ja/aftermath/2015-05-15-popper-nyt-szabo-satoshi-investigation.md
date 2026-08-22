@@ -32,7 +32,7 @@ secondarySources:
     url: "https://www.harpercollins.com/products/digital-gold-nathaniel-popper"
 relatedEntries:
   - aftermath/2005-12-29-nick-szabo-biography
-  - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
+  - aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request
   - aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
   - aftermath/2014-04-16-aston-university-szabo-stylometric-study
@@ -74,7 +74,7 @@ translationStatus: complete
 
 本アーカイブは、ポパーの特定とサボの否定の双方に直接関わる一次資料を保持している：
 
-- [サボの 2008 年 4 月 27 日の Unenumerated ブログでのコメント](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)は、ビットコイン白書の半年前に投稿されたもので、Bit Gold の実装について「誰か手伝ってコードを書いてくれないか？」と公的に協力者を募集している。本コメントは特定に対する単独で最も強い反証信号である：2008 年 4 月時点でサボは、ビットコイン白書が同年 10 月に提示する設計よりもアーキテクチャ的に単純な系の実装協力を、公的に要請している。
+- [サボの 2008 年 4 月 10 日の Unenumerated ブログでのコメント](/BitcoinArchive/ja/entries/aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request/)は、ビットコイン白書の半年前に投稿されたもので、Bit Gold の実装について「誰か手伝ってコードを書いてくれないか？」と公的に協力者を募集している。本コメントは特定に対する単独で最も強い反証信号である：2008 年 4 月時点でサボは、ビットコイン白書が同年 10 月に提示する設計よりもアーキテクチャ的に単純な系の実装協力を、公的に要請している。
 - [サボの 2011 年 5 月 28 日 Unenumerated 投稿『Bitcoin, what took ye so long?』](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/)で、サボは「ナカモトは私の設計が抱えていた重要な安全上の欠陥を改善した」と書いており、Bit Gold の設計を自身の功として認めつつ、ナカモトを三人称で論じている。
 - [サボのプロフィールページ](/BitcoinArchive/ja/participants/nick-szabo/)は、Unenumerated および Bit Gold の全記録を含む。
 

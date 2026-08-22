@@ -54,7 +54,7 @@ secondarySources:
 partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
   - aftermath/2005-12-29-nick-szabo-biography
-  - aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request
+  - aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request
   - aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
   - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
@@ -78,11 +78,11 @@ translationStatus: complete
 
 ![顔のないシルエットと大きな円形の虫眼鏡が重なり、片側には「Bit Gold / Concept」と記された破線の未完成な骨組み構造、反対側には「Bitcoin / Shipped Code」と記された密に連結した六角形ブロックの鎖が配置されている。シルエットの足元には天秤が置かれ、下部には 1998 年から 2011 年までの年表が描かれている。](/BitcoinArchive/images/analysis/2013-12-05-szabo-satoshi-identity-hypothesis-hero.png)
 
-2008 年 4 月 27 日、[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)は[自身のブログにこう書いた](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/): 「ビットゴールドはデモがあれば大いに役立つのだが。実験的な市場を作りたい。誰かコードを書いてくれないか？」 4 か月後、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はビットコインに関する最初の既知のメールをアダム・バックに送った。2011 年 5 月、サボは [「ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善したのだ」](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) と書いた。「サボ＝サトシ」の説はこの 3 点の上に成り立つ：Bit Gold の概念的近接（1998 構想、2005 公開、1994 年の「スマートコントラクト」命名）、サトシの最初の既知活動の数か月前に出された 2008 年 4 月の実装要請、そして設計期間中の Unenumerated への旺盛な執筆。2013 年以降の文体計量分析が、この 3 点をさらに補強している。
+2008 年 4 月 10 日、[ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)は[自身のブログにこう書いた](/BitcoinArchive/ja/entries/aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request/): 「……実験的な市場（例えば、本物のシステムに必要な複雑なセキュリティの代わりに信頼できる第三者を置いたもの）というデモがあれば、大いに役立つのだが。誰かコードを書いてくれないか？」 4 か月後、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はビットコインに関する最初の既知のメールをアダム・バックに送った。2011 年 5 月、サボは [「ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善したのだ」](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) と書いた。「サボ＝サトシ」の説はこの 3 点の上に成り立つ：Bit Gold の概念的近接（1998 構想、2005 公開、1994 年の「スマートコントラクト」命名）、サトシの最初の既知活動の数か月前に出された 2008 年 4 月の実装要請、そして設計期間中の Unenumerated への旺盛な執筆。2013 年以降の文体計量分析が、この 3 点をさらに補強している。
 
 ## 1. 証拠
 
-サボがサトシ・ナカモトの正体だ。ビットコインに関する公的記録上のやり取りは、[2008 年 4 月の Bit Gold 実装支援を求める Unenumerated コメント](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)も、[2011 年 5 月「ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善したのだ」と認めたブログ投稿](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/)も、仮名を維持するための演出だった。サボは開発期間（2007 年央以降）からサトシの撤退（2011 年）までサトシ・ナカモトとして活動し、Unenumerated ブログでの公的執筆活動を公開記録上のデコイとして並行させていた。
+サボがサトシ・ナカモトの正体だ。ビットコインに関する公的記録上のやり取りは、[2008 年 4 月の Bit Gold 実装支援を求める Unenumerated コメント](/BitcoinArchive/ja/entries/aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request/)も、[2011 年 5 月「ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善したのだ」と認めたブログ投稿](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/)も、仮名を維持するための演出だった。サボは開発期間（2007 年央以降）からサトシの撤退（2011 年）までサトシ・ナカモトとして活動し、Unenumerated ブログでの公的執筆活動を公開記録上のデコイとして並行させていた。
 
 最初の本格的な文体計量的定式化は、[匿名のブロガー Skye Grey による 2013 年 12 月の LikeInAMirror.com 記事「サトシ・ナカモトは（おそらく）ニック・サボである」と TechCrunch による 2013 年 12 月 5 日の主流報道](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)。さらに、[2014 年 4 月のアストン大学法言語学センターによる文体計量研究](/BitcoinArchive/ja/entries/aftermath/2014-04-16-aston-university-szabo-stylometric-study/)を CoinDesk と ScienceDaily が報じたことで、定着が進んだ。
 
@@ -177,16 +177,16 @@ Skye Grey の主張：サボの Unenumerated 文章とパターンが強く一�
 
 - **2017 年ティム・フェリス・ショウの言い間違え。** 第 244 回ティム・フェリス・ショウ（2017 年 6 月 4 日、ナバル・ラビカント共同司会）の中で、サボはある場面で「bitcoin」と言いかけて「bit gold」に修正したように聞こえる。多くのトランスクリプトでは「I designed bitcoi…gold with two layers because…」と書き起こされている。仮説支持者はこれをフロイト的失言と扱い自己著作を露呈したと読む。懐疑的な読み手は、Bit Gold の設計者にとって音韻的・意味的に隣接する 2 つの語の自然な言い淀みと読む。音声は公的記録に存在する。
 
-- **Bit Gold ブログのタイムスタンプ異常。** 一部の論者は、元の Bit Gold ブログ投稿の日付メタデータが変更された痕跡を指摘している。後ろ向け（2005 年 12 月 → より前）にされたとも、前向け（2008 年 4 月 → 2008 年 12 月）にされたとも様々に報告される。後日談エントリー [「誰かコードを書いてくれないか？」](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/) はこの異常を記録する：「サボの元の bit gold ブログ投稿は 2005 年 12 月の日付だったが、ブログのタイムスタンプは後に修正された痕跡があり、正確な年表を複雑にしている」。仮説支持者の読みでは、これは年表操作の証拠。懐疑的な読みでは、サボは 2008 年 8 月に Unenumerated の好きなエントリーの「reruns（再放送）」を行うと公的に告知しており、日付がずれた再投稿に無実の説明を与える。証拠は両方向に作用する。
+- **Bit Gold ブログのタイムスタンプ異常。** 一部の論者は、元の Bit Gold ブログ投稿の日付メタデータが変更された痕跡を指摘している。後ろ向け（2005 年 12 月 → より前）にされたとも、前向け（2008 年 4 月 → 2008 年 12 月）にされたとも様々に報告される。後日談エントリー [「誰かコードを書いてくれないか？」](/BitcoinArchive/ja/entries/aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request/) はこの異常を記録する：「サボの元の bit gold ブログ投稿は 2005 年 12 月の日付だったが、ブログのタイムスタンプは後に修正された痕跡があり、正確な年表を複雑にしている」。仮説支持者の読みでは、これは年表操作の証拠。懐疑的な読みでは、サボは 2008 年 8 月に Unenumerated の好きなエントリーの「reruns（再放送）」を行うと公的に告知しており、日付がずれた再投稿に無実の説明を与える。証拠は両方向に作用する。
 
 ## 2. 反証
 
 ### 2.1 2008 年 4 月「誰かコードを書いてくれないか？」コメント
 
-最強のアーカイブ内反証はサボ自身の [2008 年 4 月 27 日の Unenumerated ブログコメント](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)である：
+最強のアーカイブ内反証はサボ自身の [2008 年 4 月 10 日の Unenumerated ブログコメント](/BitcoinArchive/ja/entries/aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request/)である：
 
 <!-- audit:quote-skip -->
-> bit gold はデモがあれば大いに改善される、実験的な市場（実システムに必要となる複雑なセキュリティの代わりに信頼できる第三者を置く形で）。誰か一緒にコードを書いてくれないか？
+> ……実験的な市場（例えば、本物のシステムに必要な複雑なセキュリティの代わりに信頼できる第三者を置いたもの）というデモがあれば、大いに役立つのだが。誰かコードを書いてくれないか？
 
 6 か月後、サトシ・ナカモトは[ビットコインホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/)を公開し、その 3 か月後には動作する 19,901 行の C++ コードベースを世に出した。
 

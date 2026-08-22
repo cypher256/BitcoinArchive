@@ -36,7 +36,7 @@ relatedEntries:
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
   - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
-  - "aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request"
+  - "aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request"
   - "aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
@@ -47,9 +47,9 @@ translationStatus: complete
 
 ![未完成の六角形の鎖が、より密度の高い発光する六角形の鎖へと変化していく抽象的な図。歯車のような紋様が入った書類のアイコンと、二つの年代を結ぶ点線の年表が添えられている。](/BitcoinArchive/images/analysis/2005-12-29-nick-szabo-biography-hero.png)
 
-1994 年、ニック・サボは「スマートコントラクト」という用語を提唱した。1998 年に Bit Gold を構想し、2005 年 12 月 29 日にブログ Unenumerated で完全な設計を公開した。2008 年 4 月 27 日、[自身のブログのコメント欄](/BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/)でこう書いた:
+1994 年、ニック・サボは「スマートコントラクト」という用語を提唱した。1998 年に Bit Gold を構想し、2005 年 12 月 29 日にブログ Unenumerated で完全な設計を公開した。2008 年 4 月 10 日、[自身のブログのコメント欄](/BitcoinArchive/ja/entries/aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request/)でこう書いた:
 
-> 「ビットゴールドはデモがあれば大いに役立つのだが。実験的な市場を作りたい。誰かコードを書いてくれないか？」
+> 「……実験的な市場（例えば、本物のシステムに必要な複雑なセキュリティの代わりに信頼できる第三者を置いたもの）というデモがあれば、大いに役立つのだが。誰かコードを書いてくれないか？」
 
 4 か月後、2008 年 8 月 20 日に[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はビットコインとなるものについての最初の既知のメールを送った。Bitcoin v0.1 は 2009 年 1 月 9 日に公開された。2011 年 5 月、[サボは Unenumerated に書いた](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/):
 
@@ -65,8 +65,8 @@ timeline
     1996 : 論文「Smart Contracts: Building Blocks for Digital Markets」 発表
     1998 : Bit Gold を構想 (libtech 非公開メーリングリスト)
     2005 : Bit Gold 完全設計を Unenumerated ブログで公開 (12月29日)
-    2008 : 「誰か Bit Gold を実装してくれないか」 Unenumerated コメント (4月27日)
-    %% link: /BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/
+    2008 : 「誰か Bit Gold を実装してくれないか」 Unenumerated コメント (4月10日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request/
     2009 : Bitcoin v0.1 公開、 サボは Unenumerated 継続 (1月)
     %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
     2011 : 「Bitcoin, what took ye so long?」 Unenumerated 投稿 (5月28日)
