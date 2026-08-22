@@ -15,6 +15,7 @@ import { DESIGN_SERIES } from '../../../data/design-series';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from '../../../i18n/utils';
 import Avatar from '../../../components/Avatar.astro';
+import MessageBlock from '../../../components/MessageBlock.astro';
 import { resolveThreadId, deriveThreadTitle } from '../../../data/threads';
 import { renderEditorNote } from '../../../lib/editor-note';
 import { heroBannerPosition } from '../../../lib/heroBanner';
@@ -132,11 +133,22 @@ const ogModifiedTime = updatedAt ?? entry.data.date;
 // for the on-page byline. STYLE_GUIDE.md § Editorial Entries.
 const isEditorialType = entry.data.type === 'article' || entry.data.type === 'analysis' || entry.data.type === 'design' || entry.data.type === 'currency';
 const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
+// The 8 primary-source types where the entire page body is one
+// person's own statement (same set CommentaryLinks.astro gates on).
+// These render the body inside MessageBlock, whose own header already
+// shows the avatar + name + date — so the separate title avatar and
+// the EntryMeta byline are dropped for these types instead of
+// repeating the same "who wrote this" three times on one page.
+const MESSAGE_BLOCK_TYPES = ['correspondence', 'mailing-list', 'forum-post', 'bip', 'whitepaper', 'court-document', 'tweet', 'web-document'];
+const isMessageBlockType = MESSAGE_BLOCK_TYPES.includes(entry.data.type);
 // Title avatar: Bitcoin Institute for editorial types (article /
-// analysis / design / currency), else the byline participant. null
-// when no participant resolves (then no avatar shows before the title).
+// analysis / design / currency), none for MessageBlock types (its own
+// header carries the avatar), else the byline participant. null when
+// no participant resolves (then no avatar shows before the title).
 const titleAvatarParticipant = findAuthorParticipant(entry.data.author, entry.data.participants);
-const titleAvatarSlug = isEditorialType ? 'bitcoin-institute' : titleAvatarParticipant?.slug;
+const titleAvatarSlug = isEditorialType
+  ? 'bitcoin-institute'
+  : (isMessageBlockType ? undefined : titleAvatarParticipant?.slug);
 // Every person avatar links to its participant page (the slug comes from
 // this entry's own participants[], the same set participant pages are
 // generated from, so the target always exists). The Bitcoin Institute
@@ -217,12 +229,13 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
         xHandle={entry.data.xHandle}
         updatedAt={updatedAt}
         createdAt={createdAt}
+        showAuthor={!isMessageBlockType}
       />
     </header>
 
     <ParentLink lang={lang} partOf={entry.data.partOf} />
 
-    {['correspondence', 'mailing-list', 'forum-post', 'bip', 'whitepaper', 'court-document', 'tweet', 'web-document'].includes(entry.data.type) && (
+    {isMessageBlockType && (
       <CommentaryLinks lang={lang} entryId={entry.id} entryType={entry.data.type} />
     )}
 
@@ -237,9 +250,24 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
       <DesignSeriesNav lang={lang} slug={entry.id} />
     )}
 
-    <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
-      <Content />
-    </div>
+    {isMessageBlockType ? (
+      <MessageBlock
+        lang={lang}
+        base={base}
+        author={entry.data.author}
+        participants={entry.data.participants}
+        date={entry.data.date}
+        isSatoshi={entry.data.isSatoshi}
+        xHandle={entry.data.xHandle}
+        bodyClass="entry-content"
+      >
+        <Content />
+      </MessageBlock>
+    ) : (
+      <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
+        <Content />
+      </div>
+    )}
 
     {entry.data.type === 'analysis' && entry.id.includes('satoshi-code') && (
       <SatoshiCodeAnalysis lang={lang} />

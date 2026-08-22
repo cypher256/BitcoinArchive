@@ -57,9 +57,18 @@ interface Props {
    * together with the historical anchor and last update date.
    */
   createdAt?: Date;
+  /**
+   * Whether to show the byline label + author name here. Defaults to
+   * true. The single-entry page sets this to false for the
+   * primary-source types it renders inside `MessageBlock.astro` —
+   * that component's own header already shows the avatar, name, and
+   * date, so repeating the plain-text author here would be the same
+   * "who wrote this" fact shown a second time on the same page.
+   */
+  showAuthor?: boolean;
 }
 
-const { date, author, entryType, source, lang, participants = [], tags = [], inlineLinkKeywords = [], xHandle, updatedAt, createdAt } = Astro.props;
+const { date, author, entryType, source, lang, participants = [], tags = [], inlineLinkKeywords = [], xHandle, updatedAt, createdAt, showAuthor = true } = Astro.props;
 // Keywords with 0 backlinks are dropped entirely, not just their count
 // badge: their /keywords/{slug}/ destination has nothing to show but a
 // "Defined in:" callout pointing right back at this same entry (a
@@ -113,11 +122,15 @@ const isSatoshiAuthor =
 
 <div class="entry-meta">
   <EntryDates date={date} createdAt={createdAt} updatedAt={updatedAt} lang={lang} variant="meta" eventTime />
-  <span class="meta-sep">&middot;</span>
-  <span class="byline-label">{bylineLabel}</span>
-  <span class:list={['author', { satoshi: isSatoshiAuthor }]}>{displayAuthor}</span>
-  {entryType === 'tweet' && xHandle && (
-    <a href={`https://x.com/${xHandle}`} class="x-handle" target="_blank" rel="noopener">@{xHandle}</a>
+  {showAuthor && (
+    <>
+      <span class="meta-sep">&middot;</span>
+      <span class="byline-label">{bylineLabel}</span>
+      <span class:list={['author', { satoshi: isSatoshiAuthor }]}>{displayAuthor}</span>
+      {entryType === 'tweet' && xHandle && (
+        <a href={`https://x.com/${xHandle}`} class="x-handle" target="_blank" rel="noopener">@{xHandle}</a>
+      )}
+    </>
   )}
   <span class="meta-sep">&middot;</span>
   <a href={localePath(`/types/${entryType}/`, lang)} class="type-badge">{typeLabel}</a>
@@ -208,20 +221,6 @@ const isSatoshiAuthor =
     color: inherit;
   }
   .source-badge:hover {
-    opacity: 0.85;
-  }
-  .x-handle {
-    display: inline-block;
-    margin-left: 0.4em;
-    padding: 0.1em 0.5em;
-    background: var(--color-source-bg);
-    border-radius: 3px;
-    font-size: 0.85rem;
-    font-family: var(--font-mono, monospace);
-    text-decoration: none;
-    color: inherit;
-  }
-  .x-handle:hover {
     opacity: 0.85;
   }
   .participants-row {

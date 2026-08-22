@@ -1,0 +1,90 @@
+---
+/**
+ * MessageBlock.astro — a real person's statement, framed as a bordered
+ * card with an avatar + name + date header.
+ *
+ * This is the single source of truth for "who said this and when,"
+ * rendered as the boxed, left-bordered card previously only built
+ * inline inside the thread-view page. It backs two call sites:
+ *
+ * - The thread view (`entries/threads/[...threadPath].astro`), one
+ *   card per message, with a `source` slot for the permalink and
+ *   commentary-count link.
+ * - The single-entry page (`entries/[...slug].astro`) for the 8
+ *   primary-source types (the ones already gated into
+ *   `CommentaryLinks.astro`: correspondence, mailing-list,
+ *   forum-post, bip, whitepaper, court-document, tweet,
+ *   web-document) — the entire page body IS that one person's
+ *   statement, so it gets exactly one card, no `source` slot (the
+ *   page is its own permalink).
+ *
+ * The card's own header replaces the separate circular title avatar
+ * and the EntryMeta byline+author display for these types — showing
+ * "who wrote this" in three places at once was the bug this component
+ * fixes. See STYLE_GUIDE.md for the entry-type groupings this keys on.
+ */
+import Avatar from './Avatar.astro';
+import { localePath, findAuthorParticipant, formatDateMaybeTime, translateParticipantName } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Participant {
+  name: string;
+  slug: string;
+}
+
+interface Props {
+  lang: Lang;
+  base: string;
+  author: string;
+  participants?: Participant[];
+  date: Date;
+  isSatoshi: boolean;
+  id?: string;
+  /** Extra class(es) on the `.message-body` div — e.g. "entry-content"
+   *  on the single-entry page, so the body keeps the prose rules
+   *  (headings, hero images, first/last-child spacing) that type
+   *  already relies on. */
+  bodyClass?: string;
+  /** X (Twitter) handle for type: tweet entries, without the leading
+   *  "@" — same field EntryMeta takes. Rendered as a linked "@handle"
+   *  badge next to the author name. */
+  xHandle?: string;
+}
+
+const { lang, base, author, participants = [], date, isSatoshi, id, bodyClass, xHandle } = Astro.props;
+
+const ap = findAuthorParticipant(author, participants);
+const displayName = translateParticipantName(ap?.name ?? author, ap?.slug, lang);
+const showHandle = ap != null && displayName !== author;
+// Same check as EntryCard/EntryMeta/thread view: color the name only
+// when the author actually is Satoshi, independent of the `isSatoshi`
+// prop (which drives the card's left-border color and may reflect
+// "this entry is about Satoshi" rather than "written by Satoshi").
+const isSatoshiAuthor =
+  ap?.slug === 'satoshi-nakamoto' || author.toLowerCase() === 'satoshi nakamoto';
+const authorSlug = ap?.slug || author;
+const hasSource = Astro.slots.has('source');
+---
+
+<div class="message" data-author={isSatoshi ? 'satoshi' : 'other'} id={id}>
+  <div class="message-header">
+    <a href={localePath(`/participants/${authorSlug}/`, lang)} class="avatar-link" tabindex="-1" aria-hidden="true">
+      <Avatar slug={authorSlug} sizeClass="message-avatar" base={base} />
+    </a>
+    <a href={localePath(`/participants/${authorSlug}/`, lang)} class:list={['author-name', { satoshi: isSatoshiAuthor }]}>
+      {displayName}{showHandle && <span class="author-handle">{lang === 'ja' ? `（${author}）` : ` (${author})`}</span>}
+    </a>
+    {xHandle && (
+      <a href={`https://x.com/${xHandle}`} class="x-handle" target="_blank" rel="noopener">@{xHandle}</a>
+    )}
+    <span class="message-date">{formatDateMaybeTime(date, lang)}</span>
+    {hasSource && (
+      <span class="message-source">
+        <slot name="source" />
+      </span>
+    )}
+  </div>
+  <div class:list={['message-body', bodyClass]}>
+    <slot />
+  </div>
+</div>

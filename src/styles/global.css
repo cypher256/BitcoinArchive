@@ -502,6 +502,16 @@ h4 { font-size: 1.1rem; font-weight: 600; }
   padding-top: 1.5rem;
 }
 
+/* Exception: entry-content merged onto MessageBlock's .message-body
+   (single-entry primary-source pages, via `bodyClass="entry-content"`
+   in entries/[...slug].astro). The message-header directly above
+   already owns its own breathing room (margin-bottom + border) —
+   the same reason thread pages' bare .message-body is excluded above
+   — so the generic padding here would double it. */
+.message-body.entry-content {
+  padding-top: 0;
+}
+
 /* Body paragraph rhythm. The reading column runs wide (~120 char EN /
    ~65 JA per line), so paragraphs take a slightly larger bottom gap than
    the UA 1em default to keep the long lines trackable: the leading (1.8)
@@ -551,7 +561,7 @@ blockquote > p:first-child {
    border picks up the speaker's accent color. Tagged at build time by
    remark-speaker-blockquote based on `<!-- speaker: ... -->` comments
    sitting as siblings before the blockquote. Matches the visual language
-   already used by .conversation-thread .message[data-author="..."]. */
+   already used by .message[data-author="..."] (MessageBlock.astro). */
 blockquote[data-speaker="satoshi"] {
   border-left-color: var(--color-satoshi);
 }
@@ -803,6 +813,25 @@ blockquote > .quote-speaker-tag:first-child {
 .thread-banner:has(+ .source-citation),
 .related-entries:has(+ .source-citation) {
   margin-bottom: var(--rhythm-cluster) !important;
+}
+
+/* MessageBlock.astro's `.message` box (single-entry primary-source
+   pages) is the same boxed-callout visual language as .thread-banner,
+   so when a "view full thread" banner directly follows the message
+   body, the two read as one continuous unit — tighten the gap above
+   the banner to --rhythm-cluster. The gap below the banner (before the
+   related-entries / source-citation cluster) then widens back to
+   --rhythm-block, since that's the actual end-of-article boundary on
+   these pages. Both override the general .thread-banner rules above —
+   higher specificity (the extra `.message +` class) settles the
+   `!important` tie deterministically, no source-order dependency. */
+.message + .thread-banner {
+  margin-top: var(--rhythm-cluster) !important;
+}
+.message + .thread-banner:has(+ .thread-banner),
+.message + .thread-banner:has(+ .related-entries),
+.message + .thread-banner:has(+ .source-citation) {
+  margin-bottom: var(--rhythm-block) !important;
 }
 
 /* ── Entry card (browse list + full-text search results) ──────────────
@@ -1525,8 +1554,14 @@ pre[data-scroll="both"] {
   max-width: var(--max-width-prose);
 }
 
-/* Conversation / Thread messages */
-.conversation-thread .message {
+/* MessageBlock.astro card — a real person's statement, framed with an
+   avatar + name + date header. Used both for each message inside
+   `.conversation-thread` (the thread view) and standalone on a
+   single-entry page for the primary-source types whose entire body
+   is one person's own statement. Selectors key on `.message` alone
+   (no `.conversation-thread` ancestor requirement) so both call
+   sites render identically. */
+.message {
   position: relative;
   margin: 0;
   padding: 1rem 1.25rem;
@@ -1545,17 +1580,17 @@ pre[data-scroll="both"] {
    tracks the mode. Author identity is carried entirely by the
    left-border color (Satoshi: `--color-satoshi` accent; other:
    `--color-text-muted` slate) — same signal, no contrast cost. */
-.conversation-thread .message[data-author="satoshi"] {
+.message[data-author="satoshi"] {
   border-left-color: var(--color-satoshi);
   background: var(--color-bg-alt);
 }
 
-.conversation-thread .message[data-author="other"] {
+.message[data-author="other"] {
   border-left-color: var(--color-text-muted);
   background: var(--color-bg-alt);
 }
 
-.conversation-thread .message-header {
+.message-header {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -1567,34 +1602,54 @@ pre[data-scroll="both"] {
   border-bottom: 1px solid var(--color-border);
   color: var(--color-text-muted);
 }
-.conversation-thread .message-header .author-name {
+.message-header .author-name {
   font-weight: 700;
   font-size: 0.95rem;
   color: var(--color-link);
 }
-.conversation-thread .message-header .author-name:hover {
+.message-header .author-name:hover {
   color: var(--color-link-hover);
 }
 
-.conversation-thread .message[data-author="satoshi"] .message-header .author-name {
+.message[data-author="satoshi"] .message-header .author-name {
   color: var(--color-satoshi);
 }
 
-.conversation-thread .message-header .message-date {
+.message-header .message-date {
   font-size: 0.8rem;
   color: var(--color-text-muted);
 }
 
-.conversation-thread .message-header .message-source {
+.message-header .message-source {
   font-size: 0.95rem;
   margin-left: auto;
 }
 
-.conversation-thread .message-body p:first-child {
+/* X (Twitter) handle badge — rendered by both EntryMeta.astro (byline,
+   editorial/other entry types) and MessageBlock.astro (header, tweet
+   entries under the 8 primary-source types). Lives here, unscoped, so
+   both components render it identically; a scoped copy in either
+   component would only ever style that component's own markup. */
+.x-handle {
+  display: inline-block;
+  margin-left: 0.4em;
+  padding: 0.1em 0.5em;
+  background: var(--color-source-bg);
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-family: var(--font-mono, monospace);
+  text-decoration: none;
+  color: inherit;
+}
+.x-handle:hover {
+  opacity: 0.85;
+}
+
+.message-body p:first-child {
   margin-top: 0;
 }
 
-.conversation-thread .message-body p:last-child {
+.message-body p:last-child {
   margin-bottom: 0;
 }
 
@@ -1810,7 +1865,7 @@ p:has(> strong:only-child):has(+ .figure-outer:has([data-kind="mermaid"])) {
   .container, .container-wide {
     padding: 0 1rem;
   }
-  .conversation-thread .message {
+  .message {
     padding: 0.75rem 1rem;
   }
   /* Deeply nested quote threads (e.g. the 11-level Malmi/Satoshi bitcoind

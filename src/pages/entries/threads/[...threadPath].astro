@@ -1,9 +1,9 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
-import { useTranslations, formatDate, formatDateMaybeTime, localePath, findAuthorParticipant, absoluteUrl } from '../../../i18n/utils';
+import { useTranslations, formatDate, localePath, absoluteUrl } from '../../../i18n/utils';
 import { deriveThreadTitle, resolveThreadId } from '../../../data/threads';
-import Avatar from '../../../components/Avatar.astro';
+import MessageBlock from '../../../components/MessageBlock.astro';
 import commentariesData from '../../../data/derived-commentaries.json';
 
 const commentariesMap = commentariesData as Record<string, { id: string }[]>;
@@ -133,60 +133,37 @@ const breadcrumbs = [
       {rendered.map(({ entry, Content }: any, i: number) => (
         <>
           {i > 0 && <div class="thread-connector" />}
-          <div class="message" data-author={entry.data.isSatoshi ? 'satoshi' : 'other'} id={entry.data.sourceUrl?.match(/msg(\d+)#/)?.[0]?.replace('#', '') || ('entry-' + (entry.id.split('/').pop() || ''))}>
-            <div class="message-header">
+          <MessageBlock
+            lang={lang}
+            base={base}
+            author={entry.data.author}
+            participants={entry.data.participants}
+            date={entry.data.date}
+            isSatoshi={entry.data.isSatoshi}
+            id={entry.data.sourceUrl?.match(/msg(\d+)#/)?.[0]?.replace('#', '') || ('entry-' + (entry.id.split('/').pop() || ''))}
+          >
+            <Fragment slot="source">
+              <a class="permalink" href={localePath(`/entries/${entry.id}/`, lang)}>Permalink</a>
               {(() => {
-                const ap = findAuthorParticipant(entry.data.author, entry.data.participants);
-                const displayName = ap?.name ?? entry.data.author;
-                const showHandle = ap && displayName !== entry.data.author;
-                // Color the author name only when the author actually is
-                // Satoshi. Same logic as EntryCard/EntryMeta/search.
-                const isSatoshiAuthor =
-                  ap?.slug === 'satoshi-nakamoto' ||
-                  entry.data.author.toLowerCase() === 'satoshi nakamoto';
-                const authorSlug = ap?.slug || entry.data.author;
+                const commentaries = commentariesMap[entry.id] ?? [];
+                const cN = commentaries.length;
+                if (cN === 0) return null;
+                const label = cN === 1
+                  ? t('commentary.threadLink' as any)
+                  : t('commentary.count' as any).replace('{n}', String(cN));
+                const href = cN === 1
+                  ? localePath(`/entries/${commentaries[0].id}/`, lang)
+                  : localePath(`/entries/${entry.id}/#commentaries`, lang);
                 return (
                   <>
-                    {/* The name link right beside this goes to the same
-                        participant page, so the avatar link is a pure
-                        duplicate — kept out of the tab order and the
-                        accessibility tree to avoid announcing the same
-                        link twice. */}
-                    <a href={localePath(`/participants/${authorSlug}/`, lang)} class="avatar-link" tabindex="-1" aria-hidden="true">
-                      <Avatar slug={authorSlug} sizeClass="message-avatar" base={base} />
-                    </a>
-                    <a href={localePath(`/participants/${authorSlug}/`, lang)} class:list={["author-name", { satoshi: isSatoshiAuthor }]}>
-                      {displayName}{showHandle && <span class="author-handle"> ({entry.data.author})</span>}
-                    </a>
+                    {' · '}
+                    <a href={href}>{label}</a>
                   </>
                 );
               })()}
-              <span class="message-date">{formatDateMaybeTime(entry.data.date, lang)}</span>
-              <span class="message-source">
-                <a class="permalink" href={localePath(`/entries/${entry.id}/`, lang)}>Permalink</a>
-                {(() => {
-                  const commentaries = commentariesMap[entry.id] ?? [];
-                  const cN = commentaries.length;
-                  if (cN === 0) return null;
-                  const label = cN === 1
-                    ? t('commentary.threadLink' as any)
-                    : t('commentary.count' as any).replace('{n}', String(cN));
-                  const href = cN === 1
-                    ? localePath(`/entries/${commentaries[0].id}/`, lang)
-                    : localePath(`/entries/${entry.id}/#commentaries`, lang);
-                  return (
-                    <>
-                      {' · '}
-                      <a href={href}>{label}</a>
-                    </>
-                  );
-                })()}
-              </span>
-            </div>
-            <div class="message-body">
-              <Content />
-            </div>
-          </div>
+            </Fragment>
+            <Content />
+          </MessageBlock>
         </>
       ))}
     </div>
