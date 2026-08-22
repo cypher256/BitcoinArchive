@@ -1,0 +1,1053 @@
+// Body of ChartEmbedRuntime.astro's client runtime, moved out of the inline
+// <script> tag into a real module file (its own header comment explains
+// why the tag must stay bare and use a single dynamic import). Confirmed
+// by forcing repeated clean-cache `astro dev --force` cold starts against
+// each variant (`node_modules/.vite` deleted, not just a normal restart --
+// a normal restart reuses the cache and never re-triggers the scan, which
+// is why this only ever showed up "the first time"):
+//   - static imports directly inline (any count) -> scanner error on the
+//     first one, "Expected '(' but found '{'" (scanner treats a bare tag
+//     as a classic, non-module script before Astro's real compiler has
+//     run, so static `import` syntax is invalid there)
+//   - single static import to this file -> same error, just on that line
+//   - single *dynamic* import (`import('./chart-embed-runtime.ts')`) with
+//     the .astro file's original ~10-line frontmatter comment -> a second,
+//     different scanner error ("Invalid assignment target" on the closing
+//     `---`), which went away only once that frontmatter comment was
+//     shortened to ~4 lines -- the scanner's virtual-module reconstruction
+//     for this file shape appears to mis-locate the `---` boundary once
+//     the frontmatter comment is long enough, corrupting everything after
+//     it. Both the dynamic import AND the short frontmatter comment on the
+//     .astro file are load-bearing; don't lengthen that comment back or
+//     revert to a static import without re-running this same repro.
+import { mount as mountSupplyCurve } from './supply-curve.js';
+import { mount as mountBarRace } from './bar-chart-race.js';
+import { mount as mountOwnershipTreemap } from './ownership-treemap.js';
+import { mount as mountPublicCompaniesBar } from './public-companies-bar.js';
+import { mount as mountWhaleTiers } from './whale-tiers.js';
+import { mount as mountAltcoinPopulationCounts } from './altcoin-population-counts.js';
+import { mount as mountEthBtcRatio } from './eth-btc-ratio.js';
+import { mount as mountStylometricHistogram } from './stylometric-distance-histogram.js';
+import { mount as mountForkGenealogy } from './fork-genealogy.js';
+import { mount as mountValueOverflowTimeline } from './value-overflow-timeline.js';
+import { mount as mountGenesisBlockGap } from './genesis-block-gap.js';
+import { mount as mountLoppHashrate } from './lopp-hashrate-analysis.js';
+import { mount as mountSupplyCurveComparison } from './supply-curve-comparison.js';
+import { mount as mountSatoshiActivityTimeline } from './satoshi-activity-timeline.js';
+import { mount as mountNonceLsb } from './nonce-lsb.js';
+import { mount as mountSvnCommitters } from './svn-committers.js';
+import { mount as mountPatoshiMiningMachine } from './patoshi-mining-machine.js';
+import { mount as mountExtranonceScatter } from './extranonce-scatter.js';
+import { mount as mountNlsExchangeRate } from './nls-exchange-rate.js';
+import { mount as mountSuspectMap } from './suspect-relation-map.js';
+import suspectMapData from '../data/suspect-map/relations.json';
+import { resolveAvatar } from '../data/avatars.ts';
+import { participantDisplayNamesJaBySlug } from '../i18n/participants.ts';
+import supplyCurveSeries from '../data/supply-curves/series.json';
+import vanDorstData from '../data/derived/van-dorst-burrows-distribution.json';
+import satoshiTimelineData from '../data/satoshi-timeline/timeline.json';
+import nonceLsbData from '../data/patoshi/nonce-lsb.json';
+import svnCommittersData from '../data/patoshi/svn-committers.json';
+import miningMachineData from '../data/patoshi/mining-machine.json';
+import extranonceScatterData from '../data/patoshi/extranonce-scatter.json';
+import cryptoRace from '../data/races/crypto.json';
+import assetsRace from '../data/races/assets.json';
+import wealthRace from '../data/races/wealth.json';
+import holdersRace from '../data/races/holders.json';
+
+// USD->JPY fixed display rate for JA-locale races (matches BarChartRace.astro's
+// own constant — kept in exactly these two places, one per render path).
+const JPY_PER_USD = 160;
+
+(function () {
+  var embeds = document.querySelectorAll('.chart-embed[data-chart]');
+  if (!embeds.length) return;
+
+  var lang = document.documentElement.lang === 'ja' ? 'ja' : 'en';
+
+  // ---- one-time styles for the embed chrome ----
+  if (!document.getElementById('chart-embed-style')) {
+    var st = document.createElement('style');
+    st.id = 'chart-embed-style';
+    st.textContent =
+      '.chart-embed{margin:2rem 0;}' +
+      '.chart-embed .ce-chart{position:relative;border:1px solid var(--color-border);border-radius:4px;background:var(--color-bg);overflow:hidden;}' +
+      '.chart-embed .ce-chart svg{display:block;width:100%;height:auto;}' +
+      '.chart-embed .ce-title{font-weight:700;font-size:1.02rem;margin:0 0 0.2rem;}' +
+      '.chart-embed .ce-sub{font-size:0.88rem;color:var(--color-text-muted);margin:0 0 0.8rem;}' +
+      '.chart-embed .ce-note{font-size:0.75rem;color:var(--color-text-muted);font-style:italic;margin:0.6rem 0 0;}' +
+      '.chart-embed .ba-race-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.2rem 0.8rem;margin-top:-0.4rem;margin-bottom:0.6rem;}' +
+      '.chart-embed .ba-race-toolbar .ba-replay-controls{margin-bottom:0;}' +
+      '.chart-embed .ba-race-related{font-size:0.82rem;color:var(--color-text-muted);margin:0;}' +
+      '.chart-embed .ce-race{padding:0.5rem 0;}' +
+      '.chart-embed .sdh-stats{font-size:0.78rem;color:var(--color-text-muted);margin:0.5rem 0 0.6rem;text-align:center;}' +
+      '.chart-embed .sdh-insight{margin-top:1rem;padding:0.75rem 1rem;background:var(--color-bg-alt);border-left:3px solid var(--color-link);border-radius:0 4px 4px 0;font-size:0.88rem;}' +
+      '.chart-embed .sdh-insight ul{margin:0.4rem 0 0;padding-left:1.2rem;}' +
+      '.chart-embed .sdh-insight li{margin-bottom:0.3rem;}' +
+      // A .ce-chart nested inside the shared .figure-block (global.css) would
+      // otherwise get boxed twice -- the figure-block already supplies
+      // border/background/padding for wide charts that need the sitewide
+      // breakout-on-wide-viewport treatment (see fork-genealogy drawer).
+      '.chart-embed .figure-block .ce-chart{position:relative;border:none;background:none;overflow:visible;min-width:1080px;}' +
+      '.chart-embed .ce-section{margin-bottom:1.5rem;}' +
+      '.chart-embed .ce-section:last-child{margin-bottom:0;}' +
+      '.chart-embed .scc-controls{display:flex;align-items:center;justify-content:flex-end;gap:0.5rem;margin-bottom:0.4rem;}' +
+      // .ba-replay-controls carries its own margin-bottom for when it's the
+      // lone control above a chart (see global.css); inside this two-item
+      // toolbar it must be 0 so align-items:center centers it against
+      // .scc-scale-btns's margin-box, not just its content-box.
+      '.chart-embed .scc-controls .ba-replay-controls{margin-bottom:0;}' +
+      '.chart-embed .scc-scale-btns{display:flex;gap:0;border:1px solid var(--color-border);border-radius:4px;overflow:hidden;}' +
+      '.chart-embed .scale-btn{padding:3px 10px;font-size:0.78rem;font-family:var(--font-heading);background:var(--color-bg);color:var(--color-text-muted);border:none;border-right:1px solid var(--color-border);cursor:pointer;}' +
+      '.chart-embed .scale-btn:last-child{border-right:none;}' +
+      '.chart-embed .scale-btn.active{background:var(--color-accent-bg);color:var(--color-accent);font-weight:600;}' +
+      '.chart-embed .scc-legend{display:flex;flex-wrap:wrap;gap:0.5rem 1.1rem;margin-top:0.7rem;font-size:0.83rem;}' +
+      '.chart-embed .scc-legend .legend-item{display:inline-flex;align-items:center;cursor:pointer;user-select:none;color:var(--color-text);}' +
+      '.chart-embed .scc-legend .legend-item.off{color:var(--color-text-muted);text-decoration:line-through;opacity:0.55;}' +
+      '.chart-embed .scc-legend .legend-swatch{display:inline-flex;align-items:center;margin-right:5px;}' +
+      '.chart-embed .scc-legend-hint{margin-top:0.4rem;font-size:0.76rem;color:var(--color-text-muted);font-style:italic;}' +
+      // ---- identity-suspect-map (srm). Light palette validated with the
+      // dataviz six-checks validator on #ffffff (all pass; CVD 7.3 in the
+      // 6-8 band is covered by the per-kind line styles as secondary
+      // encoding). Dark steps are the site's established dark chart
+      // tokens: the perceptual checks (CVD separation, normal-vision
+      // floor, contrast vs #0e1218) all pass; their lightness sits above
+      // the reference band by design-system choice, matching every other
+      // chart on the dark surface.
+      '.chart-embed[data-chart="identity-suspect-map"]{--srm-cited:#a16207;--srm-contact:#047857;--srm-claim:#7c3aed;--srm-self:#be185d;--srm-inter:#5a6470;}' +
+      ':root[data-mode="dark"] .chart-embed[data-chart="identity-suspect-map"]{--srm-cited:#fbbf24;--srm-contact:#34d399;--srm-claim:#a78bfa;--srm-self:#f472b6;--srm-inter:#97a0ab;}' +
+      '@media (prefers-color-scheme: dark){:root:not([data-mode="light"]) .chart-embed[data-chart="identity-suspect-map"]{--srm-cited:#fbbf24;--srm-contact:#34d399;--srm-claim:#a78bfa;--srm-self:#f472b6;--srm-inter:#97a0ab;}}' +
+      '.chart-embed .srm-wrap{position:relative;}' +
+      '.chart-embed .srm-svg{display:block;width:100%;min-width:760px;height:auto;}' +
+      '.chart-embed .srm-edge{stroke-linecap:round;transition:opacity .15s;}' +
+      '.chart-embed .srm-e-cited{stroke:var(--srm-cited);stroke-width:3.5;}' +
+      '.chart-embed .srm-e-contact{stroke:var(--srm-contact);stroke-width:2;}' +
+      '.chart-embed .srm-e-claim{stroke:var(--srm-claim);stroke-width:2;stroke-dasharray:3 5;}' +
+      '.chart-embed .srm-e-self{stroke:var(--srm-self);stroke-width:2.5;stroke-dasharray:11 4;}' +
+      '.chart-embed .srm-e-inter{stroke:var(--srm-inter);stroke-width:1.6;stroke-dasharray:1.5 4.5;}' +
+      '.chart-embed .srm-node{cursor:pointer;transition:opacity .15s;}' +
+      '.chart-embed .srm-node .srm-ring{fill:var(--color-bg-alt);stroke:var(--color-border);stroke-width:2;}' +
+      '.chart-embed .srm-node:hover .srm-ring,.chart-embed .srm-node:focus .srm-ring{stroke:var(--color-accent);stroke-width:3;}' +
+      '.chart-embed .srm-center .srm-ring{stroke:var(--color-satoshi);stroke-width:3;}' +
+      '.chart-embed .srm-q{fill:var(--color-satoshi);font-family:var(--font-heading);font-size:46px;font-weight:700;}' +
+      '.chart-embed .srm-name{fill:var(--color-text);font-size:14.5px;font-weight:600;}' +
+      '.chart-embed .srm-focus .srm-edge{opacity:0.1;}' +
+      '.chart-embed .srm-focus .srm-edge.srm-hl{opacity:1;}' +
+      '.chart-embed .srm-focus .srm-node{opacity:0.3;}' +
+      '.chart-embed .srm-focus .srm-node.srm-hl{opacity:1;}' +
+      '.chart-embed .srm-card{position:absolute;transform:translate(-50%,-100%);max-width:260px;background:var(--color-bg);border:1px solid var(--color-border);border-radius:6px;padding:0.5rem 0.7rem;box-shadow:0 4px 14px rgba(0,0,0,0.18);pointer-events:none;opacity:0;transition:opacity .12s;z-index:5;}' +
+      '.chart-embed .srm-card.on{opacity:1;}' +
+      '.chart-embed .srm-card.below{transform:translate(-50%,0);}' +
+      '.chart-embed .srm-card-name{margin:0;font-weight:700;font-size:0.9rem;}' +
+      '.chart-embed .srm-card-hook{margin:0.15rem 0 0;font-size:0.82rem;}' +
+      '.chart-embed .srm-card-status{margin:0.15rem 0 0;font-size:0.76rem;color:var(--color-text-muted);}' +
+      '.chart-embed .srm-legend{display:flex;flex-wrap:wrap;gap:0.35rem 1.2rem;margin-top:0.7rem;font-size:0.82rem;color:var(--color-text);}' +
+      '.chart-embed .srm-legend .srm-legend-item{display:inline-flex;align-items:center;gap:0.45em;}' +
+      '.chart-embed .srm-legend svg{display:block;}' +
+      '.chart-embed .ce-hint{font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:0.6rem;}' +
+      '.chart-embed .nlsb-legend{display:flex;flex-wrap:wrap;gap:1rem;margin-top:0.75rem;font-size:0.82rem;color:var(--color-text-muted);}' +
+      '.chart-embed .nlsb-legend-item{display:flex;align-items:center;gap:0.3rem;}' +
+      '.chart-embed .nlsb-swatch{display:inline-block;width:12px;height:12px;border-radius:2px;}' +
+      '.chart-embed .nlsb-swatch-patoshi{background:var(--chart-color-2);}' +
+      '.chart-embed .nlsb-swatch-gap{background:var(--chart-negative);}' +
+      '.chart-embed .nlsb-swatch-sparse{background:var(--chart-color-6);}' +
+      '.chart-embed .nlsb-swatch-en-patoshi{background:var(--color-accent);}' +
+      '.chart-embed .nlsb-swatch-en-non-patoshi{background:var(--chart-color-6);}';
+    document.head.appendChild(st);
+  }
+
+  var DRAWERS: Record<string, (host: HTMLElement, lang: string) => void> = {};
+
+  // ===== drawer: supply-animated (supply fills to 21M by ~2140) =====
+  // Thin wrapper over the shared drawer (src/scripts/supply-curve.js). The
+  // named halving schedule is kept self-contained for this standalone script;
+  // `npm run check:halving-consistency` enforces it matches halvings.json.
+  DRAWERS['supply-animated'] = function (host, lang) {
+    var T_ = ({
+      en: { cap: '21,000,000 BTC (cap)', replay: 'Replay' },
+      ja: { cap: '21,000,000 BTC（上限）', replay: 'リプレイ' },
+    } as Record<string, { cap: string; replay: string }>)[lang];
+    host.innerHTML = '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + T_.replay + '</button></div><div class="ce-chart"></div>';
+    mountSupplyCurve(host.querySelector('.ce-chart'), {
+      halvings: [
+        { date: '2009-01-03', reward: 50 }, { date: '2012-11-28', reward: 25 }, { date: '2016-07-09', reward: 12.5 },
+        { date: '2020-05-11', reward: 6.25 }, { date: '2024-04-20', reward: 3.125 }, { date: '2028-04-17', reward: 1.5625 }, { date: '2032-04-14', reward: 0.78125 },
+      ],
+      labels: { cap: T_.cap },
+      replayBtn: host.querySelector('.ba-replay-btn'),
+    });
+  };
+
+  // ===== drawer: ownership-treemap (who holds the 21M, mid-2026) =====
+  // Data + drawing live in src/scripts/ownership-treemap.js; this drawer only
+  // adds the bilingual chrome around the figure.
+  DRAWERS['ownership-treemap'] = function (host, lang) {
+    var T_ = ({
+      en: { title: 'Who holds the 21 million', sub: 'Every attributed cell is sourced; "individuals & unclassified" is the arithmetic remainder. Mid-2026 snapshot — hover a cell for the exact figure.' },
+      ja: { title: '2100 万枚は誰の手にあるか', sub: '出典のある区分だけを塗り、残りは「個人・未分類」として残した 2026 年半ば時点の全体図。セルに重ねると正確な数字が出る。' },
+    } as Record<string, { title: string; sub: string }>)[lang];
+    host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p><div class="ce-chart"></div>';
+    mountOwnershipTreemap(host.querySelector('.ce-chart'), lang);
+  };
+
+  // ===== drawer: public-companies-bar (Strategy vs the rest, linear) =====
+  DRAWERS['public-companies-bar'] = function (host, lang) {
+    var T_ = ({
+      en: { title: 'Public companies: Strategy vs everyone else', sub: 'Linear scale on purpose — the gap is the point. Even every other public company combined holds about half of Strategy alone. BTC, 2026; per-company as-of dates differ.' },
+      ja: { title: '上場企業の保有 ― Strategy とそれ以外', sub: 'あえて線形の目盛りで示す — 差そのものが主題だからだ。2 位以下の全社を合計しても Strategy 一社の半分ほどしかない。BTC 建て、2026 年時点（社ごとに集計時点は異なる）。' },
+    } as Record<string, { title: string; sub: string }>)[lang];
+    host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p><div class="ce-chart"></div>';
+    mountPublicCompaniesBar(host.querySelector('.ce-chart'), lang);
+  };
+
+  // ===== drawer: eth-btc-ratio (the one approach, and the distance since) =====
+  // Sits under the market-cap race in the fork-genealogy entry. The race is
+  // sampled once a year on June 1 and so cannot show June 2017, when the ratio
+  // ran from 55% to 85% inside eight days; a date axis can. Drawing and the
+  // snapshot figures live in src/scripts/eth-btc-ratio.js.
+  DRAWERS['eth-btc-ratio'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'How close Ethereum came — and how far since',
+        sub: 'Ethereum\'s market capitalisation as a share of Bitcoin\'s, from CoinMarketCap: five dated historical snapshots plus a live reading taken when this entry was last revised. The June 2017 point is the closest any chain in this catalog has come to Bitcoin\'s valuation.',
+        note: 'Six readings, not a continuous series: the line between them is drawn to show order, not the path taken. The ratio moved sharply within short windows — it stood at about 55% on June 4, 2017, eight days before the point shown here. The rightmost point is a live figure, so it moves with the market rather than being fixed to a date.',
+      },
+      ja: {
+        title: 'どこまで迫り、そこからどれだけ離れたか',
+        sub: 'ビットコインの時価総額に対するイーサリアムの比率を、CoinMarketCap の値で示す ― 日付の付いた履歴スナップショット 5 時点と、本エントリー最終更新時に参照した現在値 1 点。2017 年 6 月の点は、本目録のどのチェーンよりもビットコインの評価額に近づいた記録である。',
+        note: '連続した系列ではなく 6 時点の読み取り。点を結ぶ線は順序を示すためのもので、その間の経路を表さない。比率は短期間に大きく動いており、ここに示した 2017 年 6 月 12 日の 8 日前、6 月 4 日時点では約 55% だった。右端の点は現在値のため、日付に固定されず市場とともに動く。',
+      },
+    } as Record<string, { title: string; sub: string; note: string }>)[lang];
+    host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p>' +
+      '<div class="ce-chart"></div><p class="ce-note">' + T_.note + '</p>';
+    mountEthBtcRatio(host.querySelector('.ce-chart'), lang);
+  };
+
+  // ===== drawer: altcoin-population-counts (how many last, by definition) =====
+  // Sits in the closing section of the altcoin comparison entry, after the
+  // count table and beside the survival paragraph. Deliberately does not
+  // redraw the count table above it: that table answers "how many exist",
+  // this answers "how many last", and the six figures come from two
+  // unrelated populations. Drawing and the figures live in
+  // src/scripts/altcoin-population-counts.js.
+  DRAWERS['altcoin-population-counts'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'Survival rates, by what the measurer counted as surviving',
+        sub: 'Six published measurements from two unrelated populations. Each bar is a share of its own population, so the bars describe definitions rather than a single trend.',
+        note: 'The two populations are not comparable with each other. The Boston College pair splits one ICO cohort by whether a project both raised capital and listed; the pump.fun pair is two studies of the same launchpad eight months apart, on different launch cohorts.',
+      },
+      ja: {
+        title: '何を「残った」と数えたかで変わる生存率',
+        sub: '互いに無関係な二つの母集団から取った、公表済みの測定 6 件。各棒はその行自身の母集団に占める割合であり、単一の傾向ではなく定義の違いを描いている。',
+        note: '二つの母集団は互いに比較できない。Boston College の二件は一つの ICO 集団を「資金調達と上場の両方を達成したか」で分けたもの、pump.fun の二件は同じ発行台を八か月あけて別の公開集団について調べた二つの研究である。',
+      },
+    } as Record<string, { title: string; sub: string; note: string }>)[lang];
+    host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p>' +
+      '<div class="ce-chart"></div><p class="ce-note">' + T_.note + '</p>';
+    mountAltcoinPopulationCounts(host.querySelector('.ce-chart'), lang);
+  };
+
+  // ===== drawer: whale-tiers (Glassnode's sea-creature entity scale) =====
+  // Drawing + thresholds live in src/scripts/whale-tiers.js; this drawer only
+  // adds the bilingual chrome. The note line discloses that Glassnode's own
+  // Studio product uses a coarser variant for two of the eight tiers.
+  DRAWERS['whale-tiers'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'The whale scale — shrimp to humpback',
+        sub: 'Glassnode\'s eight entity tiers on a log axis: shrimp under 1 BTC and humpbacks over 5,000 sit at opposite ends of the same scale. The top two tiers alone hold about a third of circulating supply.',
+        note: 'Thresholds follow Glassnode\'s research post, the same source cited for the 6.64M figure. Its live Studio charts use a coarser variant — Fish 10-100 BTC and Shark 100-1,000 BTC, with no separate Octopus or Dolphin chart.',
+      },
+      ja: {
+        title: 'クジラの目盛り ― エビからザトウクジラまで',
+        sub: 'Glassnode が主体の保有量で分ける 8 段階を対数目盛りに置いた。1 BTC 未満のエビと 5,000 BTC 超のザトウクジラは、同じ軸の両端にいる。上位 2 段階だけで流通量のおよそ 3 分の 1 を占める。',
+        note: '閾値は Glassnode の研究記事の定義（664 万枚の出典と同じ記事）。同社の対話型グラフ Studio では魚を 10〜100 BTC、サメを 100〜1,000 BTC とする粗い区分を併用しており、タコとイルカの個別グラフは存在しない。',
+      },
+    } as Record<string, { title: string; sub: string; note: string }>)[lang];
+    host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p>' +
+      '<div class="ce-chart"></div><p class="ce-note">' + T_.note + '</p>';
+    mountWhaleTiers(host.querySelector('.ce-chart'), lang);
+  };
+
+  // ===== drawer: stylometric-distance-histogram (van Dorst 2024 reanalysis) =====
+  // Drawing lives in src/scripts/stylometric-distance-histogram.js; this
+  // drawer computes the corpus-derived label strings (unchanged from the
+  // original component's frontmatter) and the surrounding chrome (title,
+  // subtitle, stats line, insight box).
+  DRAWERS['stylometric-distance-histogram'] = function (host: HTMLElement, lang: string) {
+    var data = vanDorstData as any;
+    var s = data.stats;
+    var totalAuthorsEN = s.totalAuthors.toLocaleString('en-US');
+    var totalAuthorsJA = s.totalAuthors.toLocaleString('ja-JP');
+    var meanStr = s.mean.toFixed(5);
+    var stdevStr = s.stdev.toFixed(5);
+    var minStr = s.min.toFixed(5);
+    var maxStr = s.max.toFixed(5);
+
+    var candidateColorTokens: Record<string, string> = {
+      'Nick Szabo': '--chart-negative',
+      'Hal Finney': '--chart-color-1',
+      'Adam Back': '--chart-color-8',
+      'Wei Dai': '--chart-color-3',
+      'Len Sassaman': '--chart-color-2',
+    };
+
+    var LABELS: Record<string, any> = {
+      en: {
+        title: 'Burrows’ Delta distribution: Satoshi vs. ' + totalAuthorsEN + ' mailing-list authors (van Dorst 2024)',
+        subtitle: 'Each bar is the count of mailing-list-active authors (≥10 chunks of writing) in that Burrows’ Delta range. Lower delta = closer match to Satoshi’s reference profile. The most-cited Satoshi-identity named candidates are marked with colored horizontal lines. Corpus mean line shown for reference.',
+        xLabel: 'Authors per bin',
+        meanLabel: 'Corpus mean',
+        directionLabel: '↑ Closer to Satoshi',
+        tooltipBin: 'Bin',
+        tooltipCount: 'Authors',
+        statsLine: 'Corpus: ' + totalAuthorsEN + ' authors with ≥10 chunks · mean ' + meanStr + ' · σ ' + stdevStr + ' · range [' + minStr + ', ' + maxStr + ']',
+        insightHeading: 'What this shows',
+        insight1: 'All named candidates fall in the upper (top-side) tail of the distribution — closer to Satoshi than the corpus mean.',
+        insight2: 'Nick Szabo at top 4.67% leads the named-candidate group; Hal Finney (6.89%) and Adam Back (7.87%) follow closely.',
+        insight3: 'But 594 authors rank closer than Szabo. Most of those upper-tail authors are noise (e-commerce accounts, anonymous remailers, disposable accounts), not viable candidates — see the §3 noise-tail discussion below.',
+        candidateNames: { 'Nick Szabo': 'Nick Szabo', 'Hal Finney': 'Hal Finney', 'Adam Back': 'Adam Back', 'Wei Dai': 'Wei Dai', 'Len Sassaman': 'Len Sassaman' },
+      },
+      ja: {
+        title: 'バローズ・デルタ分布：サトシ vs メーリングリスト書き手 ' + totalAuthorsJA + ' 名（ヴァン・ドルスト 2024）',
+        subtitle: 'バローズ・デルタは、書き手の文体がサトシの参照プロファイルにどれだけ近いかを示すスタイロメトリー（計量文体論）の距離指標。各バーは、その範囲に位置するメーリングリスト活動書き手（10 チャンク以上）の数。デルタが低いほどサトシに近い。最も多く引用されるサトシ正体候補を色付き水平線で示す。コーパス平均も参考表示。',
+        xLabel: 'バーごとの著者数',
+        meanLabel: 'コーパス平均',
+        directionLabel: '↑ サトシに近い',
+        tooltipBin: '区間',
+        tooltipCount: '著者数',
+        statsLine: 'コーパス：10 チャンク以上の著者 ' + totalAuthorsJA + ' 名／平均 ' + meanStr + '／σ ' + stdevStr + '／範囲 [' + minStr + ', ' + maxStr + ']',
+        insightHeading: 'この図が示すもの',
+        insight1: '名指し候補はすべて分布の上方（サトシ側）に位置 — コーパス平均よりサトシに近い。',
+        insight2: 'ニック・サボが上位 4.67% で名指し集団の首位。ハル・フィニー（6.89%）、アダム・バック（7.87%）が僅差で続く。',
+        insight3: 'ただしサボより近い著者が 594 人いる。その上位陣の大半はノイズ（EC アカウント、匿名リメイラー、使い捨てアカウント）であって妥当な候補ではない — §3 のノイズ層議論を参照。',
+        candidateNames: {
+          'Nick Szabo': 'ニック・サボ',
+          'Hal Finney': 'ハル・フィニー',
+          'Adam Back': 'アダム・バック',
+          'Wei Dai': 'ウェイ・ダイ',
+          'Len Sassaman': 'レン・サッサマン',
+        },
+      },
+    };
+    var l = LABELS[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + l.title + '</p><p class="ce-sub">' + l.subtitle + '</p>' +
+      '<div class="ce-chart"></div>' +
+      '<p class="sdh-stats">' + l.statsLine + '</p>' +
+      '<div class="sdh-insight"><strong>' + l.insightHeading + ':</strong><ul>' +
+      '<li>' + l.insight1 + '</li><li>' + l.insight2 + '</li><li>' + l.insight3 + '</li></ul></div>';
+
+    mountStylometricHistogram(host.querySelector('.ce-chart'), {
+      bins: data.bins,
+      stats: data.stats,
+      namedCandidates: data.namedCandidates,
+      candidateColorTokens: candidateColorTokens,
+      labels: l,
+    });
+  };
+
+  // ===== drawer: fork-genealogy (Bitcoin forks and adjacent cryptocurrencies) =====
+  // Drawing lives in src/scripts/fork-genealogy.js. Used in-body by two
+  // entries: bitcoin-fork-and-altcoin-genealogy (right after its own intro
+  // paragraph, which narrates the chart, so it still reads as leading the
+  // entry -- now below the hero image and lede rather than pinned ahead of
+  // them) and satoshi-design-vs-current-reality (next to the Governance
+  // section's fork discussion). Content is identical in both places (same
+  // chain/milestone catalog) -- only the surrounding prose differs, which is
+  // why one marker name serves both.
+  DRAWERS['fork-genealogy'] = function (host: HTMLElement, lang: string) {
+    var linkBase = import.meta.env.BASE_URL.replace(/\/?$/, '/') + (lang === 'ja' ? 'ja/' : '') + 'entries/';
+    var CHAINS: Record<string, any[]> = {
+      en: [
+        { id: 'main', name: 'Bitcoin', launch: '2009-01-09', halt: null, parent: null, status: 'active', slug: null },
+        { id: 'namecoin', name: 'Namecoin (NMC)', launch: '2011-04-18', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-04-18-namecoin-launch' },
+        { id: 'litecoin', name: 'Litecoin (LTC)', launch: '2011-10-13', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-10-13-litecoin-launch' },
+        { id: 'dogecoin', name: 'Dogecoin (DOGE)', launch: '2013-12-06', halt: null, parent: 'litecoin', status: 'active', slug: 'aftermath/2013-12-06-dogecoin-launch' },
+        { id: 'bitcoin-xt', name: 'Bitcoin XT', launch: '2015-08-15', halt: '2016-01-14', parent: 'main', status: 'halted', slug: 'aftermath/2015-08-15-bitcoin-xt-launch' },
+        { id: 'bitcoin-classic', name: 'Bitcoin Classic', launch: '2016-02-10', halt: '2016-12-31', parent: 'main', status: 'halted', slug: null },
+        { id: 'bitcoin-unlimited', name: 'Bitcoin Unlimited', launch: '2016-10-13', halt: '2018-06-30', parent: 'main', status: 'halted', slug: null },
+        { id: 'bitcoin-cash', name: 'Bitcoin Cash (BCH)', launch: '2017-08-01', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2017-08-01-bitcoin-cash-fork' },
+        { id: 'bitcoin-gold', name: 'Bitcoin Gold (BTG)', launch: '2017-10-24', halt: null, parent: 'main', status: 'active', slug: null },
+        { id: 'bitcoin-sv', name: 'Bitcoin SV (BSV)', launch: '2018-11-15', halt: null, parent: 'bitcoin-cash', status: 'active', slug: 'aftermath/2018-11-15-bitcoin-sv-fork' },
+      ],
+      ja: [
+        { id: 'main', name: 'ビットコイン', launch: '2009-01-09', halt: null, parent: null, status: 'active', slug: null },
+        { id: 'namecoin', name: 'ネームコイン (NMC)', launch: '2011-04-18', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-04-18-namecoin-launch' },
+        { id: 'litecoin', name: 'ライトコイン (LTC)', launch: '2011-10-13', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2011-10-13-litecoin-launch' },
+        { id: 'dogecoin', name: 'ドージコイン (DOGE)', launch: '2013-12-06', halt: null, parent: 'litecoin', status: 'active', slug: 'aftermath/2013-12-06-dogecoin-launch' },
+        { id: 'bitcoin-xt', name: 'Bitcoin XT', launch: '2015-08-15', halt: '2016-01-14', parent: 'main', status: 'halted', slug: 'aftermath/2015-08-15-bitcoin-xt-launch' },
+        { id: 'bitcoin-classic', name: 'Bitcoin Classic', launch: '2016-02-10', halt: '2016-12-31', parent: 'main', status: 'halted', slug: null },
+        { id: 'bitcoin-unlimited', name: 'Bitcoin Unlimited', launch: '2016-10-13', halt: '2018-06-30', parent: 'main', status: 'halted', slug: null },
+        { id: 'bitcoin-cash', name: 'ビットコインキャッシュ (BCH)', launch: '2017-08-01', halt: null, parent: 'main', status: 'active', slug: 'aftermath/2017-08-01-bitcoin-cash-fork' },
+        { id: 'bitcoin-gold', name: 'ビットコインゴールド (BTG)', launch: '2017-10-24', halt: null, parent: 'main', status: 'active', slug: null },
+        { id: 'bitcoin-sv', name: 'ビットコイン SV (BSV)', launch: '2018-11-15', halt: null, parent: 'bitcoin-cash', status: 'active', slug: 'aftermath/2018-11-15-bitcoin-sv-fork' },
+      ],
+    };
+    var MILESTONES: Record<string, any[]> = {
+      en: [
+        { date: '2010-09-01', label: '1 MB block limit', slug: 'forum/bitcointalk/topic-1347/2010-10-03-re-increase-block-size-limit' },
+        { date: '2014-03-19', label: 'Bitcoin Core 0.9 rebrand', slug: 'analysis/2014-03-19-bitcoin-core-rebrand-authority-effects' },
+        { date: '2017-08-24', label: 'SegWit activation', slug: 'bip/2015-12-21-bip-0141' },
+        { date: '2017-11-08', label: 'SegWit2x cancelled', slug: 'aftermath/2017-11-08-segwit2x-cancellation' },
+        { date: '2021-11-14', label: 'Taproot activation', slug: null },
+      ],
+      ja: [
+        { date: '2010-09-01', label: '1 MB ブロック制限', slug: 'forum/bitcointalk/topic-1347/2010-10-03-re-increase-block-size-limit' },
+        { date: '2014-03-19', label: 'Bitcoin Core 0.9 改名', slug: 'analysis/2014-03-19-bitcoin-core-rebrand-authority-effects' },
+        { date: '2017-08-24', label: 'SegWit 有効化', slug: 'bip/2015-12-21-bip-0141' },
+        { date: '2017-11-08', label: 'SegWit2x 中止', slug: 'aftermath/2017-11-08-segwit2x-cancellation' },
+        { date: '2021-11-14', label: 'Taproot 有効化', slug: null },
+      ],
+    };
+    var T_ = ({
+      en: {
+        title: 'Bitcoin protocol forks and adjacent cryptocurrencies',
+        sub: 'Each chain’s launch, fork lineage, and operational range on a true time axis. Active chains extend to the right edge; halted chains end at the date their network share collapsed. Vertical connectors at each fork point trace the parent chain. Chain rows and milestones link to the corresponding archive entry where one exists; chains without a dedicated entry (Bitcoin Classic, Bitcoin Unlimited, Bitcoin Gold) are display-only.',
+        today: 'today', active: 'active', halted: 'halted',
+      },
+      ja: {
+        title: 'ビットコインのプロトコル分岐と隣接する暗号通貨',
+        sub: '各チェーンのローンチ・分岐系譜・稼働期間を真の時間軸の上に示す。稼働中のチェーンは右端まで伸び、停止したチェーンはネットワーク占有率が崩落した日付で終わる。各分岐点の縦線が親チェーンを辿る。チェーン名とマイルストーンは、対応するアーカイブエントリーが存在する場合にリンクされる (Bitcoin Classic・Bitcoin Unlimited・ビットコインゴールドは専用エントリーがないため表示のみ)。',
+        today: '現在', active: '稼働中', halted: '停止',
+      },
+    } as Record<string, { title: string; sub: string; today: string; active: string; halted: string }>)[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p>' +
+      '<div class="figure-outer"><figure class="figure-block" data-kind="chart"><div class="ce-chart"></div></figure></div>';
+
+    mountForkGenealogy(host.querySelector('.ce-chart'), {
+      chains: CHAINS[lang],
+      milestones: MILESTONES[lang],
+      todayLabel: T_.today,
+      statusActive: T_.active,
+      statusHalted: T_.halted,
+      linkBase: linkBase,
+    });
+  };
+
+  // ===== drawer: value-overflow-timeline (discovery to resolution, <19h) =====
+  // Drawing lives in src/scripts/value-overflow-timeline.js, extracted from
+  // the former ValueOverflowTimeline.astro (was pinned ahead of the entry's
+  // hero image and prose; now renders at the <!-- chart: NAME --> marker
+  // position instead).
+  DRAWERS['value-overflow-timeline'] = function (host: HTMLElement, lang: string) {
+    var D = ({
+      en: {
+        title: 'Incident Timeline',
+        subtitle: 'From discovery to resolution — the most serious crisis in Bitcoin\'s early history, resolved in under 19 hours.',
+        hours: 'h',
+        events: [
+          { time: '18:08', offset: 0, label: 'Jeff Garzik discovers anomaly in Block 74638', type: 'alert' },
+          { time: '~18:30', offset: 0.4, label: '184,467,440,737 BTC confirmed — 9,000× total supply', type: 'crisis' },
+          { time: '~23:00', offset: 4.9, label: 'Satoshi publishes Bitcoin v0.3.10 with fix', type: 'fix' },
+          { time: '~09:00+1', offset: 14.9, label: 'Corrected chain overtakes invalid chain at Block 74691', type: 'resolved' },
+        ],
+      },
+      ja: {
+        title: 'インシデントのタイムライン',
+        subtitle: '発見から解決まで — ビットコイン初期史上最も深刻な危機が 19時間以内に解決された。',
+        hours: '時間',
+        events: [
+          { time: '18:08', offset: 0, label: 'ジェフ・ガージックがブロック 74638 の異常を発見', type: 'alert' },
+          { time: '~18:30', offset: 0.4, label: '184,467,440,737 BTC 確認 — 総供給量の 9,000倍', type: 'crisis' },
+          { time: '~23:00', offset: 4.9, label: 'サトシが Bitcoin v0.3.10（修正版）を公開', type: 'fix' },
+          { time: '~09:00+1', offset: 14.9, label: '修正チェーンがブロック 74691 で不正チェーンを追い越す', type: 'resolved' },
+        ],
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + D.title + '</p><p class="ce-sub">' + D.subtitle + '</p>' +
+      '<div class="ce-chart"></div>';
+
+    mountValueOverflowTimeline(host.querySelector('.ce-chart'), {
+      hours: D.hours,
+      events: D.events,
+    });
+  };
+
+  // ===== drawer: genesis-block-gap (Block 0 to Block 1, ~5d8h vs ~10min) =====
+  // Drawing lives in src/scripts/genesis-block-gap.js, extracted from the
+  // former GenesisBlockGap.astro (was pinned ahead of the entry's hero image
+  // and prose; now renders at the <!-- chart: NAME --> marker position).
+  DRAWERS['genesis-block-gap'] = function (host: HTMLElement, lang: string) {
+    var D = ({
+      en: {
+        title: 'The 5-Day Gap',
+        subtitle: 'Block 0 (Genesis) to Block 1 — approximately 5 days and 8 hours vs. the expected ~10 minutes.',
+        block0: 'Genesis Block (Block 0)',
+        block0time: 'Jan 3, 2009 18:15:05 UTC',
+        block1: 'Block 1',
+        block1time: 'Jan 9, 2009 02:54:25 UTC',
+        gap: '5 days, 8 hours, 39 minutes',
+        expected: 'Expected: ~10 minutes',
+        ratio: '~750× longer than expected',
+      },
+      ja: {
+        title: '5日間の空白',
+        subtitle: 'ブロック 0（ジェネシス）からブロック 1 まで — 予想される約 10分に対し、約 5日と 8時間。',
+        block0: 'ジェネシスブロック（ブロック 0）',
+        block0time: '2009年1月3日 18:15:05 UTC',
+        block1: 'ブロック 1',
+        block1time: '2009年1月9日 02:54:25 UTC',
+        gap: '5日 8時間 39分',
+        expected: '期待値: 約 10分',
+        ratio: '期待値の約 750倍',
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + D.title + '</p><p class="ce-sub">' + D.subtitle + '</p>' +
+      '<div class="ce-chart"></div>';
+
+    mountGenesisBlockGap(host.querySelector('.ce-chart'), D);
+  };
+
+  // ===== drawer: lopp-hashrate-analysis (Satoshi's mining, actual vs potential) =====
+  // Drawing lives in src/scripts/lopp-hashrate-analysis.js (shared with
+  // LoppHashrateAnalysis.astro). Used in-body by two entries: the Mining
+  // section of satoshi-design-vs-current-reality, and the Counterfactual
+  // analysis section of lopp-was-satoshi-greedy-miner. Content is identical
+  // in both places (same chart, same fixed scenario data as the original
+  // component) -- only the surrounding prose differs, which is why one
+  // marker name serves both.
+  DRAWERS['lopp-hashrate-analysis'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'Satoshi\'s Mining: Actual vs. Potential',
+        subtitle: 'Satoshi voluntarily throttled mining capacity. Full-power mining could have yielded ~2× the actual amount.',
+        actual: 'Actual mining', fullCapacity: 'Full capacity (no pauses)', maxCapacity: 'Maximum capacity (6 Mhps)',
+        btc: 'BTC', mhps: 'Mhps',
+        hashrateTitle: 'Hashrate Utilization', hashrateSub: 'Satoshi used only 72.5% of available processing power.',
+        available: 'Available', pctUsed: '72.5%',
+      },
+      ja: {
+        title: 'サトシのマイニング：実績 vs. 可能性',
+        subtitle: 'サトシは意図的にマイニング能力を抑制した。フルパワーなら実際の約 2倍を獲得できた。',
+        actual: '実際のマイニング', fullCapacity: 'フル稼働（ポーズなし）', maxCapacity: '最大能力（6 Mhps）',
+        btc: 'BTC', mhps: 'Mhps',
+        hashrateTitle: 'ハッシュレート使用率', hashrateSub: 'サトシは利用可能な計算能力の 72.5%しか使わなかった。',
+        available: '利用可能', pctUsed: '72.5%',
+      },
+    } as Record<string, any>)[lang];
+
+    var scenarios = [
+      { label: T_.actual, blocks: 22000, btc: 1100000, mhps: 4.35, colorToken: '--color-accent' },
+      { label: T_.fullCapacity, blocks: 31783, btc: 1590000, mhps: 4.35, colorToken: '--chart-color-4' },
+      { label: T_.maxCapacity, blocks: 43829, btc: 2190000, mhps: 6.0, colorToken: '--chart-color-6' },
+    ];
+
+    host.innerHTML =
+      '<section class="ce-section"><p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
+      '<div class="ce-chart lha-scenarios"></div></section>' +
+      '<section class="ce-section"><p class="ce-title">' + T_.hashrateTitle + '</p><p class="ce-sub">' + T_.hashrateSub + '</p>' +
+      '<div class="ce-chart lha-gauge"></div></section>';
+
+    mountLoppHashrate(host.querySelector('.lha-scenarios'), host.querySelector('.lha-gauge'), { scenarios: scenarios, labels: T_ });
+  };
+
+  // ===== drawer: supply-curve-comparison (5 monetary archetypes, 2024=100) =====
+  // Drawing lives in src/scripts/supply-curve-comparison.js (shared with
+  // SupplyCurveComparison.astro). Localizes the raw series JSON the same way
+  // the component's own frontmatter did, then wires the chrome (scale
+  // toggle, legend, replay button).
+  DRAWERS['supply-curve-comparison'] = function (host: HTMLElement, lang: string) {
+    var seriesData = supplyCurveSeries as any;
+    var T_ = ({
+      en: {
+        title: 'Supply trajectories, normalized to 2024 = 100',
+        subtitle: 'Bitcoin and ten other proof-of-work and proof-of-stake chains, plotted against gold and USD M2 on a single supply index. Bitcoin asymptotes to its hard cap; USD M2 keeps compounding; the others decay toward a cap, run a permanent tail, or hold a one-time fixed supply.',
+        yLabel: 'Supply index (2024 = 100)', xLabel: 'Year',
+        scaleLinear: 'Linear', scaleLog: 'Log', hoverYear: 'Year',
+        legendHint: 'Click a label to toggle the series.', replay: 'Replay',
+      },
+      ja: {
+        title: '2024 年を 100 とした供給量の推移',
+        subtitle: 'ビットコインと他の 10 チェーン (プルーフ・オブ・ワーク / プルーフ・オブ・ステーク) を、金と USD M2 を対照に、1 つの供給指標で比較。ビットコインはハード上限に漸近、USD M2 は複利的に拡大を続け、他は上限へ逓減する、恒久的な末尾発行を続ける、あるいは一度きりの固定供給のいずれかを取る。',
+        yLabel: '供給指標 (2024 年 = 100)', xLabel: '年',
+        scaleLinear: '線形', scaleLog: '対数', hoverYear: '年',
+        legendHint: '凡例のラベルをクリックすると系列の表示を切り替えられる。', replay: 'リプレイ',
+      },
+    } as Record<string, any>)[lang];
+
+    var localized = {
+      baselineYear: seriesData.baselineYear,
+      yearRange: seriesData.yearRange,
+      annotations: seriesData.annotations.map(function (a: any) {
+        return { year: a.year, label: lang === 'ja' ? a.labelJa : a.labelEn };
+      }),
+      series: seriesData.series.map(function (s: any) {
+        return { id: s.id, label: lang === 'ja' ? s.labelJa : s.labelEn, colorVar: s.colorVar, dash: s.dash, points: s.points };
+      }),
+    };
+
+    host.innerHTML =
+      '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
+      '<div class="scc-controls"><div class="scc-scale-btns">' +
+      '<button class="scale-btn active" data-scale="linear">' + T_.scaleLinear + '</button>' +
+      '<button class="scale-btn" data-scale="log">' + T_.scaleLog + '</button></div>' +
+      '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + T_.replay + '</button></div></div>' +
+      '<div class="ce-chart"></div><div class="scc-legend"></div>' +
+      '<p class="scc-legend-hint">' + T_.legendHint + '</p>';
+
+    var scaleBtns = Array.from(host.querySelectorAll('.scale-btn')) as HTMLElement[];
+    mountSupplyCurveComparison(
+      host.querySelector('.ce-chart'),
+      host.querySelector('.scc-legend'),
+      host.querySelector('.ba-replay-btn'),
+      scaleBtns,
+      localized,
+      T_
+    );
+  };
+
+  // ===== drawer: nonce-lsb (Patoshi nonce LSB distribution, Lerner 2013) =====
+  // Drawing lives in src/scripts/nonce-lsb.js (originally the standalone
+  // PatoshiNonceLsb.astro component, removed once every page moved to this
+  // in-body drawer).
+  DRAWERS['nonce-lsb'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'Nonce LSB Distribution (Patoshi Blocks)',
+        subtitle: 'Frequency of each least significant byte value (0–255) in Patoshi-attributed blocks. The restriction to ~50 values ([0..9] ∪ [19..58]) proves custom mining software with parallel thread nonce partitioning.',
+        yLabel: 'Occurrences', xLabel: 'Nonce LSB value',
+        range0_9: 'Range 0–9: elevated (247–324)', range10_18: 'Range 10–18: near-zero gap',
+        range19_58: 'Range 19–58: elevated (up to 201)', range59_255: 'Range 59–255: sparse',
+        tooltipValue: 'LSB value', tooltipCount: 'Occurrences', expectedLabel: 'Expected if uniform',
+      },
+      ja: {
+        title: 'Nonce LSB 分布（Patoshi ブロック）',
+        subtitle: 'Patoshi 帰属ブロックにおける各最下位バイト値（0〜255）の出現頻度。約 50 値（[0..9] ∪ [19..58]）への集中は、並列スレッドによるナンス空間分割を持つカスタムマイニングソフトウェアの使用を証明する。',
+        yLabel: '出現回数', xLabel: 'Nonce LSB 値',
+        range0_9: '範囲 0–9: 高頻度（247–324）', range10_18: '範囲 10–18: ほぼゼロ（ギャップ）',
+        range19_58: '範囲 19–58: 高頻度（最大 201）', range59_255: '範囲 59–255: まばら',
+        tooltipValue: 'LSB 値', tooltipCount: '出現回数', expectedLabel: '均一分布の場合の期待値',
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
+      '<div class="ce-chart"></div>' +
+      '<div class="nlsb-legend">' +
+      '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-patoshi"></span>' + T_.range0_9 + '</span>' +
+      '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-gap"></span>' + T_.range10_18 + '</span>' +
+      '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-patoshi"></span>' + T_.range19_58 + '</span>' +
+      '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-sparse"></span>' + T_.range59_255 + '</span>' +
+      '</div>';
+
+    mountNonceLsb(host.querySelector('.ce-chart'), (nonceLsbData as any).distribution, T_);
+  };
+
+  // ===== drawer: svn-committers (bar + timeline, the 4 SVN developers) =====
+  // Drawing lives in src/scripts/svn-committers.js (originally the
+  // standalone SvnCommitters.astro component, removed once every page
+  // moved to this in-body drawer).
+  DRAWERS['svn-committers'] = function (host: HTMLElement, lang: string) {
+    var svnData = svnCommittersData as any;
+    var totalRevisions: number = svnData.totalRevisions;
+    var committerCount: number = svnData.committers.length;
+    var satoshiCommits: number = svnData.committers.find(function (c: any) { return c.isSatoshi; })?.commits ?? 0;
+    var satoshiPct = Math.round((satoshiCommits / totalRevisions) * 100);
+
+    var T_ = ({
+      en: {
+        barTitle: 'SVN Commit Distribution by Developer',
+        barSub: totalRevisions.toLocaleString('en-US') + ' total revisions across ' + committerCount + ' committers. Satoshi authored ' + satoshiPct + '% of all commits.',
+        timeTitle: 'Commit Access Timeline',
+        timeSub: 'Active period for each developer on the SourceForge SVN repository (2009–2011).',
+        commits: 'commits', revisions: 'revisions', of: 'of',
+        tooltipFirst: 'First commit', tooltipLast: 'Last commit',
+      },
+      ja: {
+        barTitle: 'SVN コミット数の分布（開発者別）',
+        barSub: committerCount + '人のコミッターによる全' + totalRevisions.toLocaleString('ja-JP') + 'リビジョン。全コミットの' + satoshiPct + '%をサトシが占める。',
+        timeTitle: 'コミットアクセスのタイムライン',
+        timeSub: 'SourceForge SVN リポジトリにおける各開発者の活動期間（2009〜2011年）。',
+        commits: 'コミット', revisions: 'リビジョン', of: '/',
+        tooltipFirst: '最初のコミット', tooltipLast: '最後のコミット',
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<section class="ce-section"><p class="ce-title">' + T_.barTitle + '</p><p class="ce-sub">' + T_.barSub + '</p>' +
+      '<div class="ce-chart svnc-bar"></div></section>' +
+      '<section class="ce-section"><p class="ce-title">' + T_.timeTitle + '</p><p class="ce-sub">' + T_.timeSub + '</p>' +
+      '<div class="ce-chart svnc-timeline"></div></section>';
+
+    mountSvnCommitters(
+      host.querySelector('.svnc-bar'),
+      host.querySelector('.svnc-timeline'),
+      svnData.committers,
+      T_,
+      totalRevisions
+    );
+  };
+
+  // ===== drawer: patoshi-mining-machine (subranges, high-value bias, hashrate) =====
+  // Drawing lives in src/scripts/patoshi-mining-machine.js (shared with
+  // PatoshiMiningMachine.astro, no longer used on any page after this
+  // migration).
+  DRAWERS['patoshi-mining-machine'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        subrangeTitle: 'Nonce Space Partitioning — 5 Parallel Threads',
+        subrangeSub: 'The Patoshi miner divided the 4.3 billion nonce space into 5 subranges, each scanned by a separate thread. Within each subrange, nonces were scanned sequentially from high to low.',
+        biasTitle: 'High-Value Nonce Bias',
+        biasSub: 'Because each subrange was scanned from high to low, 78% of winning nonces fell in the upper half of their subrange. This is inconsistent with 48+ independent machines (which would produce ~50%).',
+        hashrateTitle: 'Hashrate Comparison',
+        hashrateSub: 'The Patoshi machine was approximately 4.3× faster than other early miners — consistent with a single quad-core CPU with SSE2 optimization vs. stock single-threaded client.',
+        thread: 'Thread', nonceRange: 'Nonce range', scanDir: 'Scan: high → low',
+        observed: 'Patoshi observed', expected: 'Expected if random',
+        patoshi: 'Patoshi miner', others: 'Other miners (stock client)',
+        mhps: 'Mhps', threads: 'threads', faster: '× faster',
+      },
+      ja: {
+        subrangeTitle: 'Nonce 空間の分割 — 5 つの並列スレッド',
+        subrangeSub: 'Patoshi マイナーは 43 億のナンス空間を 5 つのサブレンジに分割し、それぞれを別スレッドでスキャンした。各サブレンジ内では、ナンスは高い値から低い値へ順番にスキャンされた。',
+        biasTitle: '高値 Nonce バイアス',
+        biasSub: '各サブレンジが高い値からスキャンされるため、当選ナンスの 78%がサブレンジ上位半分に集中した。これは 48 台以上の独立マシンとは矛盾する（独立なら約 50%になる）。',
+        hashrateTitle: 'ハッシュレート比較',
+        hashrateSub: 'Patoshi マシンは他の初期マイナーの約 4.3倍高速だった。これは SSE2 最適化を施したクアッドコア CPU1 台と、標準のシングルスレッドクライアントとの差に一致する。',
+        thread: 'スレッド', nonceRange: 'Nonce 範囲', scanDir: 'スキャン: 高→低',
+        observed: 'Patoshi（実測値）', expected: '均一分布の期待値',
+        patoshi: 'Patoshi マイナー', others: '他のマイナー（標準クライアント）',
+        mhps: 'Mhps', threads: 'スレッド', faster: '倍高速',
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<section class="ce-section"><p class="ce-title">' + T_.subrangeTitle + '</p><p class="ce-sub">' + T_.subrangeSub + '</p>' +
+      '<div class="ce-chart pmm-subranges"></div></section>' +
+      '<section class="ce-section"><p class="ce-title">' + T_.biasTitle + '</p><p class="ce-sub">' + T_.biasSub + '</p>' +
+      '<div class="ce-chart pmm-bias"></div></section>' +
+      '<section class="ce-section"><p class="ce-title">' + T_.hashrateTitle + '</p><p class="ce-sub">' + T_.hashrateSub + '</p>' +
+      '<div class="ce-chart pmm-hashrate"></div></section>';
+
+    var data = miningMachineData as any;
+    mountPatoshiMiningMachine(
+      host.querySelector('.pmm-subranges'),
+      host.querySelector('.pmm-bias'),
+      host.querySelector('.pmm-hashrate'),
+      data.subranges,
+      data.comparison,
+      T_
+    );
+  };
+
+  // ===== drawer: extranonce-scatter (Patoshi vs non-Patoshi, illustrative) =====
+  // Drawing lives in src/scripts/extranonce-scatter.js (originally the
+  // standalone PatoshiExtraNonce.astro component, removed once every page
+  // moved to this in-body drawer). Data is the frozen illustrative
+  // reconstruction in src/data/patoshi/extranonce-scatter.json (see that
+  // file's description).
+  DRAWERS['extranonce-scatter'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'ExtraNonce Pattern Across First Year of Mining',
+        subtitle: 'Illustrative reconstruction of Lerner\'s ExtraNonce analysis across blocks 0–36,288. Patoshi blocks form consistent slope segments that restart every ~100 hours — a "slow realtime clock" fingerprint. Non-Patoshi blocks show a different linear progression.',
+        xLabel: 'Block number', yLabel: 'ExtraNonce (normalized)',
+        patoshi: 'Patoshi blocks (~22,000 blocks)', nonPatoshi: 'Non-Patoshi blocks',
+        note: 'Illustrative reconstruction — based on paper findings, not raw blockchain data',
+      },
+      ja: {
+        title: 'マイニング初年度の ExtraNonce パターン',
+        subtitle: 'Lerner の ExtraNonce 解析（ブロック 0〜36,288）の概念的再現。Patoshi ブロックは一貫した傾き区間を形成し、約 100時間ごとに再開する — 「低速リアルタイムクロック」の指紋。非 Patoshi ブロックは別の線形進行を示す。',
+        xLabel: 'ブロック番号', yLabel: 'ExtraNonce（正規化）',
+        patoshi: 'Patoshi ブロック（約 22,000 ブロック）', nonPatoshi: '非 Patoshi ブロック',
+        note: '概念図 — 論文の知見に基づく再現であり、生のブロックチェーンデータではない',
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
+      '<div class="ce-chart"></div>' +
+      '<div class="nlsb-legend">' +
+      '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-en-patoshi"></span>' + T_.patoshi + '</span>' +
+      '<span class="nlsb-legend-item"><span class="nlsb-swatch nlsb-swatch-en-non-patoshi"></span>' + T_.nonPatoshi + '</span>' +
+      '</div>' +
+      '<p class="ce-note">' + T_.note + '</p>';
+
+    var data = extranonceScatterData as any;
+    mountExtranonceScatter(host.querySelector('.ce-chart'), data.patoshiPoints, data.nonPatoshiPoints, T_);
+  };
+
+  // ===== drawer: nls-exchange-rate (cost-of-production formula diagram) =====
+  // Drawing lives in src/scripts/nls-exchange-rate.js (shared with
+  // NlsExchangeRate.astro, no longer used on any page after this migration).
+  DRAWERS['nls-exchange-rate'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'Cost-of-Production Formula',
+        subtitle: 'Bitcoin\'s first price was derived from the real-world electricity cost required to mine it.',
+        kwhLabel: 'CPU electricity\n(1 year at high load)',
+        costLabel: 'US residential\nelectricity rate',
+        monthsLabel: 'Divide by months',
+        btcLabel: 'BTC mined\n(past 30 days)',
+        resultLabel: 'First Bitcoin price',
+        formula: 'Formula',
+        kwh: '1,331.5 kWh', cost: '$0.1136 / kWh', months: '12 months', mined: '~198,000 BTC',
+        priceBtc: '$0.000764', priceBtcFull: 'per BTC', priceUsd: '$1 = 1,309.03 BTC',
+      },
+      ja: {
+        title: '電力原価方式の計算',
+        subtitle: 'ビットコインの最初の価格は、マイニングに必要な現実世界の電力コストから導かれた。',
+        kwhLabel: 'CPU 電力消費\n（1年間・高負荷時）',
+        costLabel: '米国家庭用\n 電力料金',
+        monthsLabel: '月数で除算',
+        btcLabel: 'マイニング済 BTC\n（過去 30日間）',
+        resultLabel: '初のビットコイン価格',
+        formula: '計算式',
+        kwh: '1,331.5 kWh', cost: '$0.1136 / kWh', months: '12 ヶ月', mined: '約 198,000 BTC',
+        priceBtc: '$0.000764', priceBtcFull: '/ BTC', priceUsd: '$1 = 1,309.03 BTC',
+      },
+    } as Record<string, any>)[lang];
+
+    host.innerHTML =
+      '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
+      '<div class="ce-chart"></div>';
+
+    mountNlsExchangeRate(host.querySelector('.ce-chart'), T_);
+  };
+
+  // ===== drawer: satoshi-activity-timeline (3-panel: swimlane, recipients, cumulative) =====
+  // Drawing lives in src/scripts/satoshi-activity-timeline.js (originally
+  // the standalone SatoshiActivityTimeline.astro component, removed once
+  // every page moved to this in-body drawer). Labels/milestones/recipients
+  // below are the same bilingual catalog that was in the component's own
+  // frontmatter.
+  DRAWERS['satoshi-activity-timeline'] = function (host: HTMLElement, lang: string) {
+    var linkBase = import.meta.env.BASE_URL.replace(/\/?$/, '/') + (lang === 'ja' ? 'ja/' : '') + 'entries/';
+    var channelOrder = [
+      'cryptography-ml', 'bitcoin-list-ml', 'p2p-research-ml', 'p2pfoundation',
+      'github', 'sourceforge', 'private-email', 'bitcointalk', 'other',
+    ];
+    var LABELS: Record<string, any> = {
+      en: {
+        swimlaneTitle: '1. Channel × Time Swimlane',
+        swimlaneSub: 'Each dot is one Satoshi event. Hover for the title; click to open the entry. Vertical dashed lines mark major milestones.',
+        recipientsTitle: '2. Private Correspondence by Recipient',
+        recipientsSub: 'Private emails only, split by who Satoshi was writing to. The channel-only view above lumps these into a single "Private email" lane; here each major recipient gets a lane, showing how Satoshi\'s closest correspondents shifted over time.',
+        cumulativeTitle: '3. Cumulative Activity',
+        cumulativeSub: 'Running total of events. The shape shows the steep mid-period ramp and the abrupt 2011 plateau when Satoshi stepped away.',
+        instructions: 'Tip: hover any dot to see what Satoshi posted that day. Click to open the source entry.',
+        channels: {
+          'cryptography-ml': 'Cryptography ML', 'bitcoin-list-ml': 'Bitcoin-list ML', 'p2p-research-ml': 'p2p-research ML',
+          'p2pfoundation': 'P2P Foundation', 'bitcointalk': 'BitcoinTalk', 'private-email': 'Private email',
+          'sourceforge': 'SourceForge release', 'github': 'GitHub', 'other': 'Other',
+        },
+        eventsSuffix: 'events',
+        milestones: [
+          { date: '2008-08-20', label: 'First contact (Adam Back)', slug: 'aftermath/2008-08-20-satoshi-to-adam-back' },
+          { date: '2008-10-31', label: 'Whitepaper', slug: 'emails/cryptography/2008-10-31-bitcoin-whitepaper-final' },
+          { date: '2009-01-03', label: 'Genesis Block', slug: 'aftermath/2009-01-03-genesis-block' },
+          { date: '2009-01-09', label: 'Bitcoin v0.1', slug: 'aftermath/2009-01-09-bitcoin-v01-released' },
+          { date: '2009-01-12', label: 'First transaction', slug: 'aftermath/2009-01-12-first-bitcoin-transaction' },
+          { date: '2010-08-15', label: 'v0.3.10 overflow fix', slug: 'aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix' },
+          { date: '2010-12-12', label: 'Final BitcoinTalk post', slug: 'forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post' },
+          { date: '2011-04-26', label: 'Final email to Gavin', slug: 'aftermath/2011-04-26-satoshi-to-andresen-alert-key' },
+          { date: '2014-03-07', label: '(disputed) Dorian rebuttal', slug: 'aftermath/2014-03-07-satoshi-p2p-foundation-return' },
+        ],
+        recipientLabels: {
+          'martti-malmi': 'Martti Malmi', 'mike-hearn': 'Mike Hearn', 'dustin-trammell': 'Dustin Trammell',
+          'gavin-andresen': 'Gavin Andresen', 'hal-finney': 'Hal Finney', 'wei-dai': 'Wei Dai',
+          'adam-back': 'Adam Back', 'laszlo-hanyecz': 'Laszlo Hanyecz', 'nicholas-bohm': 'Nicholas Bohm',
+        },
+        otherRecipientsLabel: 'Other recipients',
+      },
+      ja: {
+        swimlaneTitle: '1. チャネル × 時間（Swimlane）',
+        swimlaneSub: '各ドットはサトシのイベント 1 件。ホバーでタイトル表示、クリックでエントリへ。縦の破線が主要マイルストーン。',
+        recipientsTitle: '2. 個人メールの受信者別タイムライン',
+        recipientsSub: '個人メールのみを抽出し、サトシが「誰に」書いていたかでレーン分割。上のチャネル別 swimlane では「個人メール」1 本に集約されていた情報を、主要な相手ごとに分解する — どの時期にサトシがどの相手と最も多く話していたかが見える。',
+        cumulativeTitle: '3. 累積活動カーブ',
+        cumulativeSub: 'イベントの累計件数。中期の急増と 2011 年のサトシ離脱に伴う急停止の形状が見える。',
+        instructions: 'ヒント: ドットにマウスを置くとその日にサトシが何を投稿したか表示。クリックでソースエントリを開く。',
+        channels: {
+          'cryptography-ml': 'cryptography ML', 'bitcoin-list-ml': 'bitcoin-list ML', 'p2p-research-ml': 'p2p-research ML',
+          'p2pfoundation': 'P2P Foundation', 'bitcointalk': 'BitcoinTalk', 'private-email': '個人メール',
+          'sourceforge': 'SourceForge リリース', 'github': 'GitHub', 'other': 'その他',
+        },
+        eventsSuffix: '件',
+        milestones: [
+          { date: '2008-08-20', label: '最初の接触（アダム・バック）', slug: 'aftermath/2008-08-20-satoshi-to-adam-back' },
+          { date: '2008-10-31', label: 'ホワイトペーパー', slug: 'emails/cryptography/2008-10-31-bitcoin-whitepaper-final' },
+          { date: '2009-01-03', label: 'ジェネシスブロック', slug: 'aftermath/2009-01-03-genesis-block' },
+          { date: '2009-01-09', label: 'Bitcoin v0.1', slug: 'aftermath/2009-01-09-bitcoin-v01-released' },
+          { date: '2009-01-12', label: '最初の送金', slug: 'aftermath/2009-01-12-first-bitcoin-transaction' },
+          { date: '2010-08-15', label: 'v0.3.10 オーバーフロー修正', slug: 'aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix' },
+          { date: '2010-12-12', label: 'BitcoinTalk 最終投稿', slug: 'forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post' },
+          { date: '2011-04-26', label: 'ギャビンへの最終メール', slug: 'aftermath/2011-04-26-satoshi-to-andresen-alert-key' },
+          { date: '2014-03-07', label: '(議論あり) ドリアン反論', slug: 'aftermath/2014-03-07-satoshi-p2p-foundation-return' },
+        ],
+        recipientLabels: {
+          'martti-malmi': 'マルティ・マルミ', 'mike-hearn': 'マイク・ハーン', 'dustin-trammell': 'ダスティン・トランメル',
+          'gavin-andresen': 'ギャビン・アンドレセン', 'hal-finney': 'ハル・フィニー', 'wei-dai': 'ウェイ・ダイ',
+          'adam-back': 'アダム・バック', 'laszlo-hanyecz': 'ラズロ・ハニエツ', 'nicholas-bohm': 'ニコラス・ボーム',
+        },
+        otherRecipientsLabel: 'その他の相手',
+      },
+    };
+    var l = LABELS[lang];
+    var timelineData = satoshiTimelineData as any;
+    var title = lang === 'ja' ? 'サトシ活動タイムライン（2008〜2014）' : 'Satoshi Activity Timeline (2008-2014)';
+    var subtitle = lang === 'ja'
+      ? '公開チャネル全体で記録されたサトシ著作 ' + timelineData.total + ' 件のイベント'
+      : timelineData.total + ' documented events authored by Satoshi across all public channels';
+    var events = timelineData.events.map(function (e: any) {
+      return { date: e.date, channel: e.channel, slug: e.slug, title: lang === 'ja' ? (e.titleJa || e.title) : e.title };
+    });
+
+    host.innerHTML =
+      '<p class="ce-title">' + title + '</p><p class="ce-sub">' + subtitle + '</p>' +
+      '<section class="ce-section"><p class="ce-title">' + l.swimlaneTitle + '</p><p class="ce-sub">' + l.swimlaneSub + '</p>' +
+      '<div class="ce-chart sat-swimlane"></div></section>' +
+      '<section class="ce-section"><p class="ce-title">' + l.recipientsTitle + '</p><p class="ce-sub">' + l.recipientsSub + '</p>' +
+      '<div class="ce-chart sat-recipients"></div></section>' +
+      '<section class="ce-section"><p class="ce-title">' + l.cumulativeTitle + '</p><p class="ce-sub">' + l.cumulativeSub + '</p>' +
+      '<div class="ce-chart sat-cumulative"></div></section>' +
+      '<p class="ce-hint">' + l.instructions + '</p>';
+
+    mountSatoshiActivityTimeline(
+      host.querySelector('.sat-swimlane'),
+      host.querySelector('.sat-recipients'),
+      host.querySelector('.sat-cumulative'),
+      {
+        events: events,
+        channelOrder: channelOrder,
+        channelLabels: l.channels,
+        milestones: l.milestones,
+        recipientLabels: l.recipientLabels,
+        otherRecipientsLabel: l.otherRecipientsLabel,
+        linkBase: linkBase,
+        eventsSuffix: l.eventsSuffix,
+      }
+    );
+  };
+
+  // ===== drawer factory: any BarChartRace-family race, embedded in-body =====
+  // One drawer per race JSON (src/data/races/*.json — same file format the
+  // BarChartRace.astro component reads), all sharing the drawing runtime
+  // src/scripts/bar-chart-race.js. Add a race to this system = add a JSON +
+  // one line below, same as adding <BarChartRace raceId=.../> was before.
+  function makeRaceDrawer(race: any) {
+    return function (host: HTMLElement, lang: string) {
+      var l = race.labels[lang];
+      var isBtc = race.unit === 'btc';
+      var base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+      var replayBtn = '<div class="ba-replay-controls"><button class="ba-replay-btn" type="button">↻ ' + (lang === 'ja' ? 'リプレイ' : 'Replay') + '</button></div>';
+      var toolbar = (race.related && race.related.length > 0)
+        ? '<div class="ba-race-toolbar"><p class="ba-race-related">' + (lang === 'ja' ? '関連レース: ' : 'Related races: ') +
+          race.related.map(function (r: any, i: number) {
+            return (i > 0 ? ' · ' : '') + '<a href="' + base + (lang === 'ja' ? 'ja/' : '') + 'entries/' + r.entry + '/#' + r.anchor + '">' + r.label[lang] + '</a>';
+          }).join('') + '</p>' + replayBtn + '</div>'
+        : replayBtn;
+      var note = (!isBtc && lang === 'ja')
+        ? l.note + '（1ドル＝' + JPY_PER_USD + '円の固定換算。各年の実勢レートではない）'
+        : l.note;
+      host.innerHTML =
+        '<p class="ce-title">' + l.title + '</p><p class="ce-sub">' + l.subtitle + '</p>' + toolbar +
+        '<div class="ce-chart ce-race"></div><p class="ce-note">' + note + '</p>';
+      var series = race.series.map(function (s: any) { return { name: s.name[lang], colorToken: s.colorToken, values: s.values }; });
+      mountBarRace(host.querySelector('.ce-race'), {
+        dates: race.dates,
+        series: series,
+        topN: race.topN || 8,
+        format: isBtc ? (lang === 'ja' ? 'btc-ja' : 'btc') : (lang === 'ja' ? 'jpy' : 'usd-b'),
+        jpyRate: !isBtc && lang === 'ja' ? JPY_PER_USD : null,
+        scale: race.scale,
+        replayBtn: host.querySelector('.ba-replay-btn'),
+      });
+    };
+  }
+  DRAWERS['crypto-race'] = makeRaceDrawer(cryptoRace);
+  DRAWERS['assets-race'] = makeRaceDrawer(assetsRace);
+  DRAWERS['wealth-race'] = makeRaceDrawer(wealthRace);
+  DRAWERS['holders-race'] = makeRaceDrawer(holdersRace);
+
+  // ===== drawer: identity-suspect-map (hand-laid case board) =====
+  // Drawing lives in src/scripts/suspect-relation-map.js; the curated,
+  // archive-grounded node/edge data in src/data/suspect-map/relations.json
+  // (see that file's description for the curation rules).
+  DRAWERS['identity-suspect-map'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'The Suspect Board — 12 Named Candidates',
+        subtitle: 'Every line is a relation documented in this archive: gold = cited in the whitepaper, green = documented contact with Satoshi, purple = named as Satoshi by others, magenta = self-claim, slate = a tie between candidates. Hover a face to isolate their strings; click to open the full case file.',
+        aria: 'Relation map of the twelve named Satoshi candidates around a central question mark',
+        legend: [
+          ['cited', 'Cited in the whitepaper'],
+          ['contact', 'Documented contact'],
+          ['claim', 'Named by others'],
+          ['self', 'Self-claim'],
+          ['inter', 'Between candidates'],
+        ],
+        note: 'Positions are editorial; the evidence behind every line is compared dimension-by-dimension in the tables below (§2–§5).',
+      },
+      ja: {
+        title: '容疑者ボード — 名前の挙がった12人',
+        subtitle: 'すべての線はこのアーカイブに記録された関係を表す。金＝ホワイトペーパーで引用、緑＝サトシとの文書化された接触、紫＝第三者による名指し、マゼンタ＝本人の主張、灰＝候補者同士のつながり。顔にカーソルを合わせるとその人の糸だけが浮かび、クリックで事件簿（各仮説ページ）が開く。',
+        aria: '中央の疑問符を囲む、名前の挙がった12人のサトシ候補の相関図',
+        legend: [
+          ['cited', 'ホワイトペーパーで引用'],
+          ['contact', '文書化された接触'],
+          ['claim', '第三者による名指し'],
+          ['self', '本人の主張'],
+          ['inter', '候補者同士の関係'],
+        ],
+        note: '配置は編集上のもの。各線の根拠は下の比較表（§2〜§5）で層ごとに検証している。',
+      },
+    } as Record<string, any>)[lang];
+
+    var dash: Record<string, string> = { cited: '', contact: '', claim: '3 5', self: '11 4', inter: '1.5 4.5' };
+    var width: Record<string, string> = { cited: '3.5', contact: '2', claim: '2', self: '2.5', inter: '1.6' };
+    var legendHtml = T_.legend.map(function (item: string[]) {
+      return '<span class="srm-legend-item"><svg width="34" height="8" aria-hidden="true"><line x1="1" y1="4" x2="33" y2="4" stroke="var(--srm-' + item[0] + ')" stroke-width="' + width[item[0]] + '"' + (dash[item[0]] ? ' stroke-dasharray="' + dash[item[0]] + '"' : '') + ' stroke-linecap="round"/></svg>' + item[1] + '</span>';
+    }).join('');
+
+    host.innerHTML =
+      '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
+      '<div class="figure-outer"><figure class="figure-block" data-kind="chart"><div class="ce-map"></div></figure></div>' +
+      '<div class="srm-legend">' + legendHtml + '</div>' +
+      '<p class="ce-note">' + T_.note + '</p>';
+
+    var localePrefix = base + (lang === 'ja' ? 'ja/' : '');
+    var model = {
+      ariaLabel: T_.aria,
+      nodes: (suspectMapData as any).nodes.map(function (n: any) {
+        return {
+          slug: n.slug,
+          name: lang === 'ja' ? ((participantDisplayNamesJaBySlug as any)[n.slug] ?? n.nameJa ?? n.nameEn) : n.nameEn,
+          href: n.center ? localePrefix + 'participants/' + n.slug + '/' : localePrefix + 'entries/' + n.entry + '/',
+          avatar: resolveAvatar(n.slug, base),
+          x: n.x, y: n.y,
+          hook: lang === 'ja' ? n.hookJa : n.hookEn,
+          status: lang === 'ja' ? n.statusJa : n.statusEn,
+          center: !!n.center,
+        };
+      }),
+      edges: (suspectMapData as any).edges.map(function (e: any) {
+        return { a: e.a, b: e.b, kind: e.kind, label: lang === 'ja' ? e.ja : e.en };
+      }),
+    };
+    mountSuspectMap(host.querySelector('.ce-map'), model);
+  };
+
+  // ---- lazy-load chart-anim.js (plain script, no d3 dependency), then render ----
+  // Only fetched when a chart-embed placeholder actually exists on the page,
+  // same as before the CDN-d3 removal.
+  var base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+  function loadScript(src: string, cb: () => void) { var s = document.createElement('script'); s.src = src; s.onload = cb; s.onerror = cb; document.head.appendChild(s); }
+  function whenReady(test: () => boolean, src: string, cb: () => void) { if (test()) { cb(); return; } loadScript(src, function () { var n = 0, t = setInterval(function () { if (test() || ++n > 100) { clearInterval(t); cb(); } }, 30); }); }
+
+  whenReady(function () { return !!window.BAChartAnim; }, base + 'scripts/chart-anim.js', function () {
+    embeds.forEach(function (el) {
+      var chartName = el.getAttribute('data-chart');
+      var fn = chartName ? DRAWERS[chartName] : undefined;
+      if (fn) { try { fn(el as HTMLElement, lang); } catch (e) { /* unknown/failed drawer: leave placeholder empty */ } }
+    });
+  });
+})();
