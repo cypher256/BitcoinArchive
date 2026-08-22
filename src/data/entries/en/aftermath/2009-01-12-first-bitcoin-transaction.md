@@ -41,7 +41,7 @@ On January 12, 2009, at 03:30:25 UTC, [Satoshi Nakamoto](/BitcoinArchive/partici
 
 **Transaction ID:** `f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16`
 
-Hal Finney had downloaded the [Bitcoin software on its release day](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) (January 9, 2009) and began mining around Block 70, making him the first known person other than Satoshi to run a Bitcoin node. The day before this transaction, Finney posted his famous tweet: ["Running bitcoin."](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) Finney was a fitting recipient for this milestone -- years earlier he had built [RPOW, his own reusable proof-of-work precursor to Bitcoin](/BitcoinArchive/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/).
+Hal Finney had downloaded the [Bitcoin software on its release day](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/) (January 9, 2009) and began mining around Block 70, making him the first known person other than Satoshi to run a Bitcoin node. The day before this transaction, Finney posted his famous tweet: ["Running bitcoin."](/BitcoinArchive/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/) Finney was a fitting recipient for this milestone -- years earlier he had built [RPOW, his own reusable proof-of-work system, later recognized as a precursor to Bitcoin](/BitcoinArchive/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/).
 
 The transaction doubled as the first live test of pieces that had only ever run in isolation: the peer-to-peer relay, the validation rules, and the distributed ledger all had to agree that 10 coins had left one address and arrived at another.
 

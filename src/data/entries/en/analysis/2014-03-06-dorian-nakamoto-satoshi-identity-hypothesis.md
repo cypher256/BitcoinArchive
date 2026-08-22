@@ -52,7 +52,7 @@ The objection: a name match is not evidence of authorship. The pseudonym's form 
 
 Newsweek emphasized that Nakamoto had worked as an engineer for Hughes Aircraft, RCA, and the Federal Aviation Administration, some of it under classified defense contracts — a profile the story framed as consistent with the secrecy and technical depth Bitcoin's creator would need.
 
-The objection: classified defense-systems and aerospace engineering is not the specific capability Bitcoin v0.1 demonstrates. There is no documented C++ shipping record at the scale of the 19,901-line v0.1 codebase, no monetary-system or digital-cash design work, and no presence in the cypherpunk and cryptography fora out of which Bitcoin's intellectual lineage (Hashcash, b-money, Bit Gold) is documented. On the four-layer comparison in the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), the capability dimensions are blank rather than weak.
+The objection: classified defense-systems and aerospace engineering is not the specific capability Bitcoin v0.1 demonstrates. There is no documented C++ shipping record at the scale of the 19,901-line v0.1 codebase, no monetary-system or digital-cash design work, and no presence in the cypherpunk and cryptography fora out of which Bitcoin's cited intellectual lineage (Hashcash, b-money) is documented. On the four-layer comparison in the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), the capability dimensions are blank rather than weak.
 
 ### 1.3 The doorstep quote
 

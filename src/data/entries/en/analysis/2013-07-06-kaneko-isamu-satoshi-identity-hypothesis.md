@@ -132,7 +132,7 @@ The visual overlap is the §2.1 argument made spatial: the Kaneko legal case lan
 
 ### 2.2 Intellectual-lineage gap
 
-Bitcoin's intellectual genealogy — Hashcash (Adam Back, 1997), b-money (Wei Dai, 1998), Bit Gold (Nick Szabo, 2005), the cryptographic-primitives discussion in the cypherpunks mailing list, and the metzdowd Cryptography List where Satoshi first announced — is documented in the public record. Kaneko has no documented presence in this conversation. Winny's design (2002) drew on a different lineage (Freenet, Gnutella, anonymous-routing literature), and Kaneko's published academic work concerns P2P routing, not digital cash or distributed ledgers.
+Bitcoin's documented intellectual lineage — the whitepaper's own citations, Hashcash (Adam Back, 1997) and b-money (Wei Dai, 1998), plus the cryptographic-primitives discussion in the cypherpunks mailing list and the metzdowd Cryptography List where Satoshi first announced — is a matter of public record. Kaneko has no documented presence in this conversation. Winny's design (2002) drew on a different lineage (Freenet, Gnutella, anonymous-routing literature), and Kaneko's published academic work concerns P2P routing, not digital cash or distributed ledgers.
 
 **Freenet reference angle (primary source).** Kaneko's Winny opening announcement (2002-04-01, 2channel download-software board, post number 47; [full text in the biography](/BitcoinArchive/participants/isamu-kaneko/)) names Freenet as the **starting point of the design**.
 

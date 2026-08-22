@@ -104,7 +104,7 @@ timeline
 ALS があの冒頭の一行に重みを与えるよりずっと前から、フィニーは身体を越えて生き延びることに賭けていた。クライオニクスへの関心は Caltech 在学中、1 年生の頃からのものだ。エクストロピー研究所の延命・宇宙移住・ナノテクノロジー・人工知能をめぐる議論でも、活発に発言する一人だった。1992 年 10 月 15 日、彼は妻フランとともにカリフォルニア州リバーサイドでアルコー・クライオニクスの会員登録書類に署名した。その会員資格は、アルコーが彼を引き取るまでの二十年あまり続いた。
 
 ## Reusable Proof-of-Work
-2004 年、彼は Reusable Proof-of-Work（RPOW）を構築した。これもまた、世に手放した。RPOW は、一度きりしか使えないプルーフ・オブ・ワークのトークンであるアダム・バックの Hashcash を、使い回せる形にした。使い、戻し、次へ渡せる仕事だ。しかも RPOW は動いた。ウェイ・ダイの b-money とニック・サボの Bit Gold が提案のままだったのに対し、RPOW は現に動くシステムだった。この系譜（Hashcash、b-money、Bit Gold、そしてビットコイン）の中で RPOW がどこに位置し、サトシがその系譜のどこに立っていたかは、[サイファーパンク核心についての別の読み解き](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で扱う。
+2004 年、彼は Reusable Proof-of-Work（RPOW）を構築した。これもまた、世に手放した。RPOW は、一度きりしか使えないプルーフ・オブ・ワークのトークンであるアダム・バックの Hashcash を、使い回せる形にした。使い、戻し、次へ渡せる仕事だ。しかも RPOW は動いた。ウェイ・ダイの b-money とニック・サボの Bit Gold が提案のままだったのに対し、RPOW は現に動くシステムだった。Hashcash・b-money・Bit Gold の隣に RPOW がどう並ぶのか、そしてサトシがこの三つに対してどこに立っていたかは、[サイファーパンク核心についての別の読み解き](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で扱う。
 
 ## ビットコイン
 彼は初日からそこにいた。2009 年 1 月 9 日、[Bitcoin v0.1](/BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/) の公開日に、フィニーはそれをダウンロードしてノードを起動した。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)本人を除けば、ビットコインノードを動かした最初の人物として知られている。そしてブロック 70 付近からマイニングを始めた。[「Running bitcoin」](/BitcoinArchive/ja/entries/aftermath/2009-01-11-hal-finney-running-bitcoin-tweet/)のツイートは 11 日、[サトシからの 10 BTC（ブロック 170）](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)は 12 日のことだ。

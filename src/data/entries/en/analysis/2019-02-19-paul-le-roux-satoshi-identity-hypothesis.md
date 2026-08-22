@@ -78,7 +78,7 @@ The objection: the account is anonymous, secondhand, and dated only to a two-yea
 | Counter-evidence | Central observation | Strength assessment |
 |---|---|---|
 | §2.1 No documentary connection | No contact with Satoshi, no statement, no Bitcoin material of any kind | The case is wholly circumstantial — nothing places him at the work |
-| §2.2 Intellectual-lineage gap | No cypherpunk digital-cash footprint, no Hashcash / b-money / Bit Gold engagement, no monetary design | Bitcoin's documented lineage runs through a conversation Le Roux is absent from |
+| §2.2 Intellectual-lineage gap | No cypherpunk digital-cash footprint, no engagement with Hashcash or b-money, no monetary design | Bitcoin's cited lineage runs through a conversation Le Roux is absent from |
 | §2.3 Capability gap after E4M | Public shipping record ends 1999; criminal enterprise, then incarceration from 2012 | A near-decade gap between the cited capability and Bitcoin's construction |
 | §2.4 Outside the stylometric record | The van Dorst corpus reanalysis excludes Le Roux entirely | No quantitative reading of his prose against Satoshi's is available |
 
@@ -88,7 +88,7 @@ The defining feature of the Le Roux case is that it rests on no documentary link
 
 ### 2.2 Intellectual-lineage gap
 
-Bitcoin's intellectual genealogy is documented: Hashcash, b-money, Bit Gold, and the cryptographic-primitives discussion in the cypherpunks and metzdowd Cryptography fora. Le Roux's December 1998 E4M announcement and limited cypherpunks-list discussion sit in disk encryption, not digital cash; he has no documented presence in the proof-of-work, monetary-mechanism, or distributed-issuance conversation out of which Bitcoin's design grew.
+Bitcoin's cited intellectual lineage is documented: Hashcash, b-money, and the cryptographic-primitives discussion in the cypherpunks and metzdowd Cryptography fora. Le Roux's December 1998 E4M announcement and limited cypherpunks-list discussion sit in disk encryption, not digital cash; he has no documented presence in the proof-of-work, monetary-mechanism, or distributed-issuance conversation out of which Bitcoin's design grew.
 
 ### 2.3 Capability gap after E4M
 
