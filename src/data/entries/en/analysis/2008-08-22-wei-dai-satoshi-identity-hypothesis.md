@@ -193,7 +193,7 @@ Wei Dai has consistently denied being Satoshi:
 - **Long-form interviews and forum posts** since 2014 — Wei Dai treats Satoshi as a separate person throughout, often crediting Satoshi's specific design contributions (the longest-chain consensus rule, the difficulty-adjustment algorithm) in language that would be self-praise if he were Satoshi.
 - **Continued Crypto++ and LessWrong activity** under his own name through the 2010s and 2020s — a sustained public profile that would require parallel decoy work if he were also Satoshi during the same period.
 
-Wei Dai's self-denial is structurally similar to Nick Szabo's (the "Nakamoto improved my design" framing in [Szabo's 2011 blog post](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) that credits Nakamoto with a specific improvement to his own work): a sustained public framing that treats Satoshi as a different, named-but-separate person. Both denials, to be undone by the hypothesis, require sustained voluntary public self-deception.
+Wei Dai's self-denial is structurally similar to Nick Szabo's ([Szabo's 2011 blog post](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) credits Nakamoto with fixing a specific shortcoming of his own bit gold design): a sustained public framing that treats Satoshi as a different, named-but-separate person. Both denials, to be undone by the hypothesis, require sustained voluntary public self-deception.
 
 ## 3. Within the broader documentary record
 

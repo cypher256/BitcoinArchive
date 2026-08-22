@@ -74,9 +74,9 @@ translationStatus: complete
 
 さらに強い変種は 2011 年以降のサトシ通信（[2011 年 4 月のマイク・ハーン宛メール](/BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/)と [2011 年 4 月のギャビン・アンドレセンへの警告キー譲渡](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)）を扱う必要があり、共著者または事前ドラフトを必要とする。
 
-### 1.1 RPOW（2004 年）— 直接的な概念上の先駆
+### 1.1 RPOW（2004 年）— 実装まで到達した概念上の先駆
 
-2004 年、フィニーは [Reusable Proof-of-Work（RPOW）](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/) を構築した。これはアダム・バックの [Hashcash](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) トークン（設計上 1 回限り）を、サーバー検証による再利用機構によって譲渡可能にしたシステムである。名指しされたサトシ候補の中で、ビットコイン以前にプルーフ・オブ・ワークに基づくデジタルトークンシステムを実際に動作させた者はフィニーただ一人。概念的系譜は直接的: Hashcash → RPOW → ビットコインのマイニング報酬。
+2004 年、フィニーは [Reusable Proof-of-Work（RPOW）](/BitcoinArchive/ja/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/) を構築した。これはアダム・バックの [Hashcash](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) トークン（設計上 1 回限り）を、サーバー検証による再利用機構によって譲渡可能にしたシステムである。名指しされたサトシ候補の中で、ビットコイン以前にプルーフ・オブ・ワークに基づくデジタルトークンシステムを実際に動作させた者はフィニーただ一人。RPOW とビットコインは、同じ記録上の土台であるバックの Hashcash の上に立つ。RPOW は 2004 年に使い切りのトークンを譲渡可能にし、ビットコインは 5 年後、プルーフ・オブ・ワークをマイニングの根幹に据えた。
 
 反論: RPOW はサーバー仲介型でアーキテクチャの距離が大きい。
 

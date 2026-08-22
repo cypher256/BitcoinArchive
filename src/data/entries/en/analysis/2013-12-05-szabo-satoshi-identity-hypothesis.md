@@ -195,7 +195,7 @@ To save the claim, the comment has to be recast as stagecraft: Szabo asking for 
 
 The contrast with Satoshi is sharpest here, and it is one of **capability and output**, not style. Satoshi shipped the harder system and worked code-first — *"I had to write all the code before I could convince myself that I could solve every problem, then I wrote the paper"* (to Hal Finney, [November 10, 2008](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/)) — unwilling to trust the design until it ran. Szabo, a decade after conceiving the simpler system and on record that it "would greatly benefit from a demo," had still built none of it and was asking others to code it. One could not finish the paper until the code already ran; the other never shipped the code at all.
 
-### 2.2 The May 2011 "Nakamoto improved my design" blog post
+### 2.2 The May 2011 "Bitcoin, what took ye so long?" blog post
 
 The second strongest archive-internal counter-evidence is Szabo's [May 28, 2011 Unenumerated post *"Bitcoin, what took ye so long?"*](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/). Szabo writes:
 
@@ -203,9 +203,9 @@ The second strongest archive-internal counter-evidence is Szabo's [May 28, 2011 
 > "Myself, Wei Dai, and Hal Finney were the only people I know of who liked the idea (or in Dai's case his related idea) enough to pursue it to any significant extent until Nakamoto (assuming Nakamoto is not really Finney or Dai). Only Finney (RPOW) and Nakamoto were motivated enough to actually implement such a scheme."
 
 <!-- audit:quote-skip -->
-> "Nakamoto improved a significant security shortcoming that my design had, namely by requiring proof-of-work to be a node in a Byzantine-resilient peer-to-peer system to greatly reduce the threat of an untrustworthy party controlling the majority of nodes."
+> "Nakamoto improved a significant security shortcoming that my design had, namely by requiring a proof-of-work to be a node in the Byzantine-resilient peer-to-peer system to lessen the threat of an untrustworthy party controlling the majority of nodes and thus corrupting a number of important security features."
 
-Szabo distinguishes himself from Nakamoto, lists himself alongside Wei Dai and Hal Finney as "the only people I know of who liked the idea... until Nakamoto," and credits Nakamoto with a specific design improvement to Bit Gold. The post is parenthetically explicit about the identity hedge — *"assuming Nakamoto is not really Finney or Dai"* — but conspicuously does not include Szabo himself in that hedge. If Szabo were Satoshi, the post would constitute a sustained, public, voluntary self-deception covering both the credit ("Nakamoto improved my design") and the implicit denial (the hedge omits Szabo). The simpler reading: Szabo treats Nakamoto as a different person because Nakamoto is a different person.
+Szabo distinguishes himself from Nakamoto, lists himself alongside Wei Dai and Hal Finney as "the only people I know of who liked the idea... until Nakamoto," and credits Nakamoto with a specific design improvement to Bit Gold. The post is parenthetically explicit about the identity hedge — *"assuming Nakamoto is not really Finney or Dai"* — but conspicuously does not include Szabo himself in that hedge. If Szabo were Satoshi, the post would constitute a sustained, public, voluntary self-deception covering both the credit (naming Nakamoto as the one who fixed his design's shortcoming) and the implicit denial (the hedge omits Szabo). The simpler reading: Szabo treats Nakamoto as a different person because Nakamoto is a different person.
 
 ### 2.3 Continuous visible Unenumerated activity during 2007–2008
 
@@ -225,7 +225,7 @@ Szabo has consistently denied being Satoshi Nakamoto. Documented denials:
 | 2017 | Tim Ferriss Show #244 (co-hosted by Naval Ravikant) | Long-form crypto discussion; consistent framing of Satoshi as a separate person; no claim of Bitcoin authorship |
 | ongoing | Wikipedia-cited public statements | Recurring denials |
 
-Self-denial is not by itself dispositive: Wright self-claimed and was demonstrably lying; Dorian Nakamoto self-denied and was demonstrably correct; the value of a denial depends on what surrounds it. Szabo's denials are surrounded by the May 2011 "Nakamoto improved my design" framing, the continued Unenumerated activity, the April 2008 implementation-request comment, and the absence of any contradictory action, all of which are internally consistent with Szabo not being Satoshi.
+Self-denial is not by itself dispositive: Wright self-claimed and was demonstrably lying; Dorian Nakamoto self-denied and was demonstrably correct; the value of a denial depends on what surrounds it. Szabo's denials are surrounded by the May 2011 post's framing of Nakamoto as a separate person who fixed his design's shortcoming, the continued Unenumerated activity, the April 2008 implementation-request comment, and the absence of any contradictory action, all of which are internally consistent with Szabo not being Satoshi.
 
 ### 2.5 The architectural gap between Bit Gold and Bitcoin v0.1, and the absence of a C++ shipping record
 

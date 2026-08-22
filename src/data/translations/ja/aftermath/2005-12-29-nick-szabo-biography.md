@@ -53,7 +53,7 @@ translationStatus: complete
 
 4 か月後、2008 年 8 月 20 日に[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はビットコインとなるものについての最初の既知のメールを送った。Bitcoin v0.1 は 2009 年 1 月 9 日に公開された。2011 年 5 月、[サボは Unenumerated に書いた](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/):
 
-> 「ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善したのだ。ビザンチン耐性を持つ P2P システムでノードになるためにプルーフ・オブ・ワークを要求することで、信頼できない当事者がノードの過半数を制御する脅威を軽減したのだ。」
+> 「ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善したのだ。ビザンチン耐性を持つ P2P システムでノードになるためにプルーフ・オブ・ワークを要求することで、信頼できない当事者がノードの過半数を制御し、それによって重要なセキュリティ機能の数々を損なう脅威を軽減したのだ。」
 
 サボはコンピューター科学者・法学者・暗号学者で、経歴の詳細は非公開のまま。
 
@@ -69,7 +69,7 @@ timeline
     %% link: /BitcoinArchive/ja/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/
     2009 : Bitcoin v0.1 公開、 サボは Unenumerated 継続 (1月)
     %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
-    2011 : 「Nakamoto improved my design」 Unenumerated 投稿 (5月28日)
+    2011 : 「Bitcoin, what took ye so long?」 Unenumerated 投稿 (5月28日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/
     2013 : Skye Grey + TechCrunch サボ＝サトシ説 (12月)
     %% link: /BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/
@@ -88,7 +88,7 @@ timeline
 ## Bit Gold
 1998年、サボはプルーフ・オブ・ワークに基づく分散型デジタル通貨システム、Bit Gold を構想した。2005年12月29日、ブログ「Unenumerated」で完全な設計を公開した。Bit Gold は、信頼できる第三者なしにデジタル希少性を実現するという根本的な問題に取り組んだ。これは後にビットコインが解決するのと同じ問題である。サボは後に振り返っている。「この一般的なアイデアを聞いたほとんど全員が、非常に悪いアイデアだと思ったのだ」。
 
-Bit Gold はビットコインと、プルーフ・オブ・ワーク、連鎖するパズル、分散型検証といった重要な概念を共有していたが、重大なセキュリティ上の弱点があった。単一の主体がノードの過半数を支配することを防ぐ問題を解決していなかった。[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)はこの設計を改良した。
+Bit Gold はビットコインと、プルーフ・オブ・ワーク、連鎖するパズル、分散型検証といった重要な概念を共有していたが、重大なセキュリティ上の弱点があった。単一の主体がノードの過半数を支配することを防ぐ問題を解決していなかった。この弱点は、サボ自身が 2011 年 5 月の回顧で名指ししたものである。
 
 ## ビットコインとの関係
 

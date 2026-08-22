@@ -29,7 +29,6 @@ relatedEntries:
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric
   - aftermath/2015-05-15-popper-nyt-szabo-satoshi-investigation
   - analysis/2013-12-05-szabo-satoshi-identity-hypothesis
-  - analysis/2008-11-13-byzantine-generals-problem
   - "aftermath/2005-12-29-nick-szabo-biography"
   - "aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request"
 inlineLinkKeywords:

@@ -73,9 +73,9 @@ Finney is the person behind the Satoshi Nakamoto pseudonym. His documented publi
 
 A stronger variant must additionally explain the post-2011 Satoshi correspondence (the [April 2011 Mike Hearn email](/BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/) and the [April 2011 Gavin Andresen alert-key handover](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-to-andresen-alert-key/)) via a co-author or scheduled drafts.
 
-### 1.1 RPOW (2004) — direct conceptual precursor
+### 1.1 RPOW (2004) — a working conceptual precursor
 
-In 2004, Finney built [Reusable Proof-of-Work (RPOW)](/BitcoinArchive/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/), a system that took Adam Back's [Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) tokens (single-use by design) and made them transferable through a server-validated reuse mechanism. Of all named Satoshi candidates, Finney is the only one who actually built a working proof-of-work-based digital-token system before Bitcoin. The conceptual lineage is direct: Hashcash → RPOW → Bitcoin's mining reward.
+In 2004, Finney built [Reusable Proof-of-Work (RPOW)](/BitcoinArchive/entries/aftermath/2019-08-21-hal-finney-rpow-recognition/), a system that took Adam Back's [Hashcash](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) tokens (single-use by design) and made them transferable through a server-validated reuse mechanism. Of all named Satoshi candidates, Finney is the only one who actually built a working proof-of-work-based digital-token system before Bitcoin. RPOW and Bitcoin stand on the same documented base — Back's Hashcash: RPOW made its single-use tokens transferable in 2004, and Bitcoin put its proof-of-work at the root of mining five years later.
 
 The objection: RPOW is server-mediated. The architectural distance to Bitcoin is large.
 

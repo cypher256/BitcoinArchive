@@ -52,7 +52,7 @@ In 1994, Nick Szabo coined the term "smart contracts." In 1998 he conceived Bit 
 
 Four months later, on August 20, 2008, [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) sent his first known email about what would become Bitcoin. Bitcoin v0.1 shipped on January 9, 2009. In [May 2011 Szabo wrote about the new system on Unenumerated](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/):
 
-> "Nakamoto improved a significant security shortcoming that my design had, namely by requiring proof-of-work to be a node in a Byzantine-resilient peer-to-peer system to greatly reduce the threat of an untrustworthy party controlling the majority of nodes."
+> "Nakamoto improved a significant security shortcoming that my design had, namely by requiring a proof-of-work to be a node in the Byzantine-resilient peer-to-peer system to lessen the threat of an untrustworthy party controlling the majority of nodes and thus corrupting a number of important security features."
 
 Szabo is a computer scientist, legal scholar, and cryptographer. His real identity and background remain largely private.
 
@@ -68,7 +68,7 @@ timeline
     %% link: /BitcoinArchive/entries/aftermath/2008-04-27-nick-szabo-bit-gold-implementation-request/
     2009 : Bitcoin v0.1 released; Szabo continues Unenumerated (Jan)
     %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
-    2011 : "Nakamoto improved my design" Unenumerated post (May 28)
+    2011 : "Bitcoin, what took ye so long?" Unenumerated post (May 28)
     %% link: /BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/
     2013 : Skye Grey + TechCrunch articulate Szabo = Satoshi (Dec)
     %% link: /BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/
@@ -87,7 +87,7 @@ In 1994, Szabo coined the term "smart contracts" — self-executing agreements w
 ## Bit Gold
 In 1998, Szabo conceived Bit Gold, a decentralized digital currency system based on proof-of-work. He published the full design on his Unenumerated blog on December 29, 2005. Bit Gold addressed the fundamental problem of creating digital scarcity without a trusted third party — the same problem Bitcoin would solve. Szabo later reflected: "Nearly everybody who heard the general idea thought it was a very bad idea."
 
-Bit Gold shared key concepts with Bitcoin — proof-of-work, chained puzzles, and decentralized verification — but had a significant security weakness: it did not solve the problem of preventing a single party from controlling the majority of nodes. [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) improved on this design.
+Bit Gold shared key concepts with Bitcoin — proof-of-work, chained puzzles, and decentralized verification — but had a significant security weakness: it did not solve the problem of preventing a single party from controlling the majority of nodes. That weakness is the one Szabo himself named in his May 2011 retrospective.
 
 ## Relationship to Bitcoin
 

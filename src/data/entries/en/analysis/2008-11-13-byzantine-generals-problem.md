@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin and the Byzantine Generals Problem — the question the precursors could not answer"
+title: "Bitcoin and the Byzantine Generals Problem — the King's wi-fi redraws the 1982 classic"
 date: 2008-11-13T00:00:00Z
 type: "analysis"
 source: "cryptography-mailing-list"
@@ -12,16 +12,13 @@ participants:
     slug: "james-donald"
   - name: "Hal Finney"
     slug: "hal-finney"
-  - name: "Nick Szabo"
-    slug: "nick-szabo"
-description: "Donald pressed Satoshi on the precursors' weak point; the King's wi-fi answer followed, and became a page on bitcoin.org. In 2011, Szabo named it as the fix to his design's shortcoming."
+description: "Donald gave the difficulty its 1982 name; Satoshi claimed a solution outright, swapping the fixed world of known generals for an open one. The King's wi-fi answer became a page on bitcoin.org."
 isSatoshi: false
 tags:
   - "analysis"
   - "consensus"
   - "byzantine-generals-problem"
   - "proof-of-work"
-  - "bit-gold"
 secondarySources:
   - name: "Lamport, Shostak, Pease — \"The Byzantine Generals Problem\" (ACM TOPLAS 4:3, July 1982)"
     url: "https://lamport.azurewebsites.net/pubs/byz.pdf"
@@ -41,7 +38,6 @@ relatedEntries:
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - correspondence/martti-malmi/2009-05-03-bitcoin-003
-  - aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long
   - design/2009-01-03-bitcoin-consensus-design
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
 inlineLinkKeywords:
@@ -63,15 +59,11 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2008-11-13T22:56:55Z"
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-satoshi-2"
-  - id: "q4"
-    person: "Nick Szabo"
-    personSlug: "nick-szabo"
-    date: "2011-05-28T00:00:00Z"
 ---
 
 ![A dark navy infographic headed "The Byzantine Generals Problem," subtitled "A 1982 classic, answered with the proof-of-work chain." A horizontal timeline links three icons: 1982 (Lamport, Shostak, Pease, ACM TOPLAS), November 13 2008 06:16 UTC (James A. Donald names the problem), and November 13 2008 22:56 UTC (Satoshi Nakamoto: the proof-of-work chain), with a speech-bubble quote reading "A solution to the Byzantine Generals Problem." A small panel in the top right contrasts classical BFT (known set, bounded rounds) with Bitcoin proof of work (open set, probabilistic finality).](/BitcoinArchive/images/analysis/2008-11-13-byzantine-generals-problem-hero.png)
 
-November 13, 2008, 06:16 UTC — thirteen days after the whitepaper went public. In the mailing-list thread discussing it, James A. Donald gave a name to the difficulty he had been pressing Satoshi on: the Byzantine Generals Problem, the classic agreement problem of distributed computing. Satoshi answered at 22:56 that day. The exchange is the earliest in Bitcoin's public record to tie the phrase to it, and the story does not stop there: within months Satoshi had turned his answer into a standalone page on bitcoin.org, and in 2011 the designer of bit gold — the closest of Bitcoin's precursor designs — named exactly this as the fix to his own design's security shortcoming.
+November 13, 2008, 06:16 UTC — thirteen days after the whitepaper went public. In the mailing-list thread discussing it, James A. Donald gave a name to the difficulty he had been pressing Satoshi on: the Byzantine Generals Problem, the classic agreement problem of distributed computing. Satoshi answered at 22:56 that day. The exchange is the earliest in Bitcoin's public record to tie the phrase to it, and the answer outlived the thread: within months Satoshi had turned it into a standalone page on bitcoin.org.
 
 ## 1. The 1982 problem
 
@@ -83,16 +75,12 @@ By 2008 this was a standard reference point for distributed-systems people — a
 timeline
     title From the 1982 problem to the answer, and after
     1982 : Lamport, Shostak, Pease publish "The Byzantine Generals Problem" (ACM TOPLAS)
-    1998 : b-money and bit gold are designed on the libtech list
-    %% link: /BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/
     2008 : Donald names the Byzantine Generals problem (Nov 13, 06:16 UTC)
     %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem/
          : Satoshi replies: proof-of-work chain as the solution (Nov 13, 22:56 UTC)
     %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-satoshi-2/
     2009 : Satoshi's description becomes byzantine.html on bitcoin.org, handed to Malmi as reference
     %% link: /BitcoinArchive/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/
-    2011 : Szabo credits Nakamoto with fixing bit gold's security shortcoming
-    %% link: /BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/
 ```
 
 ## 2. Donald's challenge
@@ -148,13 +136,6 @@ The open, permissionless participant set is what Sybil-resistant proof-of-work i
 
 Satoshi did not treat the answer as a passing remark. A snapshot of bitcoin.org from March 2009 already carries a standalone page titled "The Byzantine Generals' Problem" — the King's wi-fi explanation, lightly reworked, hosted on the project's own site. And on May 3, 2009, [handing Martti Malmi reference material for the site's planned FAQ](/BitcoinArchive/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/), Satoshi listed that page as "My description of how Bitcoin solves the Byzantine Generals' problem." What began as a reply to a skeptic had become a page Satoshi himself pointed people to as his description of the solution.
 
-Two years later, the other end of the arc closed. Reviewing Bitcoin in 2011, [Nick Szabo](/BitcoinArchive/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/) — the designer of bit gold itself — named the exact improvement:
-
-<!-- quote: q4 -->
-> Nakamoto improved a significant security shortcoming that my design had, namely by requiring a proof-of-work to be a node in the Byzantine-resilient peer-to-peer system to lessen the threat of an untrustworthy party controlling the majority of nodes and thus corrupting a number of important security features.
-
-The challenge had landed on the gap the precursor designs left open; the designer of the closest precursor confirmed it was the right spot.
-
 <!-- entry-closing -->
 
-What I see in this exchange is a move that accepts the name and rebuilds what it names. Satoshi did not push back on the classical framing — he called his system a solution outright, then answered by swapping the fixed world of known generals for one that anyone can enter or leave. Spoken in the vocabulary of 1982, the answer redraws the problem before solving it. And the record shows the people involved understood what had happened: Donald pressed the gap the precursors had left open, Finney called it the harder half on the spot, Satoshi kept the answer on the project's own site, and the designer of bit gold endorsed the diagnosis three years later.
+What I see in this exchange is a move that accepts the name and rebuilds what it names. Satoshi did not push back on the classical framing — he called his system a solution outright, then answered by swapping the fixed world of known generals for one that anyone can enter or leave. Each of the three left his own reading of the moment in the record: Donald pressed the agreement layer under the currency, Finney called it the harder half on the spot, and Satoshi kept the answer on the project's own site. And inside the analogy, what agreement rests on has changed. Lamport's generals reach agreement by counting what identified comrades tell them; the generals of the King's wi-fi converge on the hour of the attack without trusting a single message — the accumulated work carries the agreement for them. Thirteen days earlier, the whitepaper had asked for a payment system ["based on cryptographic proof instead of trust"](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/); the King's wi-fi is where that line first speaks, in Bitcoin's public record, in the vocabulary of 1982.

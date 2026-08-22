@@ -1,5 +1,5 @@
 ---
-title: "ビットコインとビザンチン将軍問題 — 先行設計が答えられなかった問い"
+title: "ビットコインとビザンチン将軍問題 — 王の Wi-Fi が 1982 年の古典を描き直す"
 date: 2008-11-13T00:00:00Z
 type: "analysis"
 source: "cryptography-mailing-list"
@@ -12,16 +12,13 @@ participants:
     slug: "james-donald"
   - name: "Hal Finney"
     slug: "hal-finney"
-  - name: "Nick Szabo"
-    slug: "nick-szabo"
-description: "ドナルドがサトシに突きつけたのは、先行設計が積み残した急所だった。王の Wi-Fi の答えから、bitcoin.org の独立ページ、サボが 3 年後に認めた自設計の欠陥まで。"
+description: "ドナルドは難題に 1982 年の名前を与え、サトシは「解決策だ」と言い切り、既知の将軍の世界を開かれた集合に描き直して答えた。王の Wi-Fi の答えは bitcoin.org の独立ページになった。"
 isSatoshi: false
 tags:
   - "analysis"
   - "consensus"
   - "byzantine-generals-problem"
   - "proof-of-work"
-  - "bit-gold"
 secondarySources:
   - name: "Lamport、Shostak、Pease — 「The Byzantine Generals Problem」（ACM TOPLAS 4 巻 3 号、1982年7月）"
     url: "https://lamport.azurewebsites.net/pubs/byz.pdf"
@@ -41,7 +38,6 @@ relatedEntries:
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - correspondence/martti-malmi/2009-05-03-bitcoin-003
-  - aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long
   - design/2009-01-03-bitcoin-consensus-design
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
 inlineLinkKeywords:
@@ -63,16 +59,12 @@ quotes:
     personSlug: "satoshi-nakamoto"
     date: "2008-11-13T22:56:55Z"
     sourceEntryId: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-satoshi-2"
-  - id: "q4"
-    person: "Nick Szabo"
-    personSlug: "nick-szabo"
-    date: "2011-05-28T00:00:00Z"
 translationStatus: complete
 ---
 
 ![紺色を基調にしたインフォグラフィック。見出しは「THE BYZANTINE GENERALS PROBLEM」、副題は「1982 年の古典的難問に、プルーフ・オブ・ワークチェーンが答えた」。横一列のタイムラインが 3 つのアイコンを結ぶ。1982 年（ランポート、ショスタク、ピーズ、ACM TOPLAS）、2008 年 11 月 13 日 06:16 UTC（ジェームズ・A・ドナルドが問題を名指しする）、2008 年 11 月 13 日 22:56 UTC（サトシ・ナカモト、プルーフ・オブ・ワークチェーン）。吹き出しの引用には「A SOLUTION TO THE BYZANTINE GENERALS PROBLEM」とある。右上の小さなパネルは、古典的なビザンチン耐性合意（既知の集団・回数を区切ったラウンド）とビットコインのプルーフ・オブ・ワーク（開かれた集団・確率的な確定性）を対比している。](/BitcoinArchive/images/analysis/2008-11-13-byzantine-generals-problem-hero.png)
 
-2008 年 11 月 13 日 06:16 UTC。ホワイトペーパー公開から 13 日後、それを議論するメーリングリストのスレッドで、ジェームズ・A・ドナルドは、サトシに突きつけ続けてきた難しさに名前を与えた。分散コンピューティングの古典的な合意問題、ビザンチン将軍問題である。サトシは同日 22:56 に答えた。このやり取りは、この語がビットコインに結びつけられた公開記録上最初のものであり、話はそこで終わらない。数か月のうちにサトシは自分の答えを bitcoin.org の独立ページに仕立て、2011 年には、ビットコインに最も近い先行設計ビットゴールドの設計者自身が、自分の設計の欠陥を直したのはまさにそれだったと認めることになる。
+2008 年 11 月 13 日 06:16 UTC。ホワイトペーパー公開から 13 日後、それを議論するメーリングリストのスレッドで、ジェームズ・A・ドナルドは、サトシに突きつけ続けてきた難しさに名前を与えた。分散コンピューティングの古典的な合意問題、ビザンチン将軍問題である。サトシは同日 22:56 に答えた。このやり取りは、この語がビットコインに結びつけられた公開記録上最初のものであり、答えはスレッドの中だけでは終わらなかった。数か月のうちに、サトシはこの答えを bitcoin.org の独立ページに仕立てている。
 
 ## 1. 1982 年の問題
 
@@ -84,16 +76,12 @@ translationStatus: complete
 timeline
     title 1982 年の難問から、 答えとその後まで
     1982 : ランポート ・ ショスタク ・ ピーズ が「The Byzantine Generals Problem」 を発表（ACM TOPLAS）
-    1998 : libtech 上で b-money と ビットゴールドが 構想される
-    %% link: /BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/
     2008 : ドナルドが ビザンチン将軍問題を 名指しする （11月13日 06:16 UTC）
     %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem/
          : サトシが返信、 プルーフ・オブ・ ワークチェーンを 解決策とする （11月13日 22:56 UTC）
     %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-satoshi-2/
     2009 : サトシの説明が bitcoin.org の 独立ページになり、 マルミに参考として 渡される
     %% link: /BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/
-    2011 : サボが自分の設計の 欠陥と ナカモトの改善を 振り返る
-    %% link: /BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/
 ```
 
 ## 2. ドナルドの挑戦
@@ -149,13 +137,6 @@ timeline
 
 サトシはこの答えを、言いっぱなしにしなかった。2009 年 3 月時点の bitcoin.org の保存記録には、王の Wi-Fi の説明を磨き直した「The Byzantine Generals' Problem」という独立ページが、プロジェクト自身のサイト上にすでに存在している。そして同年 5 月 3 日、[サイトの FAQ 作成に向けてマルッティ・マルミへ参考資料を渡した](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/)際、サトシはこのページを「ビットコインがビザンチン将軍問題をどう解くかについての私の説明」として挙げた。懐疑派への一つの返信として始まったものが、サトシ自身が「私の説明」として人に示すページになっていた。
 
-その 2 年後、弧のもう一方の端が閉じる。2011 年、[ニック・サボ](/BitcoinArchive/ja/entries/aftermath/2011-05-28-nick-szabo-bitcoin-what-took-ye-so-long/)——ビットゴールドの設計者その人——がビットコインを振り返り、改善点を正確に名指しした。
-
-<!-- quote: q4 -->
-> ナカモトは、私の設計にあった重大なセキュリティ上の欠陥を改善したのだ。ビザンチン耐性を持つ P2P システムでノードになるためにプルーフ・オブ・ワークを要求することで、信頼できない当事者がノードの過半数を制御し、それによって重要なセキュリティ機能の数々を損なう脅威を軽減したのだ。
-
-挑戦が突いていたのは、先行設計が積み残した急所だった。その急所が本物だったことを、最も近い先行設計の作者自身が裏書きした。
-
 <!-- entry-closing -->
 
-私がこのやり取りに見るのは、名前を受け入れて、中身を作り替えるという動きだ。サトシは古典的な枠組みに異を唱えず、「解決策だ」と言い切った上で、固定された将軍たちの世界を、誰でも出入りできる世界に置き換えて答えた。1982 年の語彙で語られながら、その答えは問題を描き直した上で解いている。そして記録は、当事者たちがその意味を理解していたことも残している。ドナルドは先行設計の急所を突き、フィニーはその場で「より難しい部分」と呼び、サトシは答えをプロジェクトのサイトに残し、ビットゴールドの設計者は 3 年後にその診断を追認した。
+私がこのやり取りに見るのは、名前を受け入れて、中身を作り替えるという動きだ。サトシは古典的な枠組みに異を唱えず、「解決策だ」と言い切った上で、固定された将軍たちの世界を、誰でも出入りできる世界に置き換えて答えた。三人はそれぞれ、この瞬間への自分の読みを記録に残している。ドナルドは通貨の下にある合意の層を突き、フィニーはその場で「より難しい部分」と呼び、サトシは答えをプロジェクトのサイトに残した。そして比喩の中では、合意を支えるものが入れ替わっている。ランポートの将軍たちは、名の知れた仲間の言葉を数えて合意に至る。王の Wi-Fi の将軍たちは、どのメッセージも信じないまま、攻撃の時刻に一致する。合意を運ぶのは、積み上がった計算そのものだ。その 13 日前、ホワイトペーパーは[「信頼ではなく暗号学的証明に基づく」](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)決済システムを求めていた。その一行が、ビットコインの公開記録上初めて 1982 年の語彙で語られたのが、王の Wi-Fi だった。

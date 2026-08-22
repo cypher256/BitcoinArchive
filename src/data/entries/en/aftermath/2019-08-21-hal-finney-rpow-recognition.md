@@ -10,9 +10,7 @@ participants:
     slug: "hal-finney"
   - name: "Adam Back"
     slug: "adam-back"
-  - name: "Nick Szabo"
-    slug: "nick-szabo"
-description: "Hal Finney's RPOW system, a 2004 prototype for reusable proof-of-work tokens, gains posthumous recognition as one of Bitcoin's most important direct precursors."
+description: "Hal Finney's RPOW system, a 2004 prototype for reusable proof-of-work tokens, gains posthumous recognition as one of Bitcoin's most important precursors."
 isSatoshi: false
 tags:
   - "hal-finney"
@@ -39,11 +37,11 @@ inlineLinkKeywords:
 
 ![Illustration of four linked icons on a dark navy background -- a hash-textured circle, a glowing golden token, a padlocked server chip, and a coin symbol -- connected by arrows suggesting a chain of transfer](/BitcoinArchive/images/analysis/2019-08-21-hal-finney-rpow-recognition-hero.png)
 
-[Hal Finney](/BitcoinArchive/participants/hal-finney/)'s Reusable Proofs of Work (RPOW) system, first announced on August 15, 2004, has received growing posthumous recognition as a direct precursor to Bitcoin. Five years after [Finney's death from ALS in August 2014](/BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/), the cryptographic community increasingly acknowledged RPOW's significance in the lineage of digital cash systems.
+[Hal Finney](/BitcoinArchive/participants/hal-finney/)'s Reusable Proofs of Work (RPOW) system, first announced on August 15, 2004, has received growing posthumous recognition as a precursor to Bitcoin. Five years after [Finney's death from ALS in August 2014](/BitcoinArchive/entries/aftermath/2014-08-28-hal-finney-passes-away/), the cryptographic community increasingly acknowledged RPOW's significance in the lineage of digital cash systems.
 
 RPOW was a prototype system that allowed users to exchange proof-of-work tokens. Unlike earlier proof-of-work proposals such as [Adam Back](/BitcoinArchive/participants/adam-back/)'s Hashcash, RPOW tokens were reusable -- once created through computational work, they could be transferred from person to person without requiring new proof-of-work computation for each transfer. The system used trusted computing (IBM 4758 secure cryptographic coprocessor) to ensure the server could not forge or duplicate tokens.
 
-Finney built RPOW explicitly to create a form of digital cash, drawing on ideas from [Nick Szabo](/BitcoinArchive/participants/nick-szabo/)'s bit gold proposal and Adam Back's Hashcash. While RPOW relied on a central server (unlike Bitcoin's decentralized design), its core insight of using proof-of-work as the basis for transferable digital tokens directly foreshadowed Bitcoin's approach.
+Finney built RPOW explicitly to create a form of digital cash, building on Adam Back's Hashcash — his announcement describes the system as receiving hashcash and issuing reusable RSA-signed tokens in exchange. While RPOW relied on a central server (unlike Bitcoin's decentralized design), its core insight of using proof-of-work as the basis for transferable digital tokens foreshadowed Bitcoin's approach — a reading made in retrospect: RPOW sits outside the whitepaper's references.
 
 The Satoshi Nakamoto Institute preserved and documented RPOW as part of the historical record of digital cash development. Finney himself wrote about the connection in [his celebrated 2013 Bitcointalk post "Bitcoin and me"](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/):
 
@@ -51,4 +49,4 @@ The Satoshi Nakamoto Institute preserved and documented RPOW as part of the hist
 <!-- audit:quote-skip -->
 > "I had made an attempt to create my own proof of work based currency, called RPOW. So I found Bitcoin facinating."
 
-Finney's contribution was twofold: he built a Bitcoin precursor in RPOW, and he was the first known person besides Satoshi to run Bitcoin, mine blocks, and receive a Bitcoin transaction -- [the payment Satoshi sent him in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/), the first person-to-person transfer in Bitcoin's history.
+Finney's contribution was twofold: he built in RPOW the system later recognized as a Bitcoin precursor, and he was the first known person besides Satoshi to run Bitcoin, mine blocks, and receive a Bitcoin transaction -- [the payment Satoshi sent him in Block 170](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/), the first person-to-person transfer in Bitcoin's history.
