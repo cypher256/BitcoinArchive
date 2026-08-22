@@ -1,8 +1,45 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ui } from '../i18n/ui';
+import { useTranslations, getEntries, findAuthorParticipant, translateParticipantName } from '../i18n/utils';
 
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Same byline/label metadata /entries computes for its full-text result
+// cards (see src/pages/entries/index.astro), built here for BOTH locales so
+// the 404 page's "you might be looking for" suggestions can reuse the exact
+// same hitCard() renderer instead of a bare link list (see entries-browse.ts).
+// Both locales are needed because this single static file is also the flat
+// fallback GitHub Pages serves for broken /ja/* paths -- which locale to
+// suggest from is only known once the client reads location.pathname.
+async function buildSuggestionsLocale(lang: 'en' | 'ja') {
+  const t = useTranslations(lang);
+  const allEntries = await getEntries(lang);
+  const authorMeta: Record<string, { slug: string; name: string }> = {};
+  const slugToName: Record<string, string> = {};
+  const typeLabels: Record<string, string> = {};
+  for (const e of allEntries) {
+    const d = e.data as any;
+    if (d.author && authorMeta[d.author] === undefined) {
+      const ap = findAuthorParticipant(d.author, d.participants || []);
+      authorMeta[d.author] = {
+        slug: ap?.slug ?? '',
+        name: translateParticipantName(ap?.name ?? d.author, ap?.slug, lang),
+      };
+    }
+    for (const p of (d.participants || [])) {
+      if (slugToName[p.slug] === undefined) slugToName[p.slug] = translateParticipantName(p.name, p.slug, lang);
+    }
+    if (d.type && typeLabels[d.type] === undefined) typeLabels[d.type] = t(`type.${d.type}` as any) || d.type;
+  }
+  const uiLabels = { event: t('entry.event' as any), added: t('entry.added' as any), updated: t('entry.updated' as any), biography: t('entry.biography' as any) };
+  return { indexName: `bitcoin_archive_${lang}`, authorMeta, slugToName, typeLabels, uiLabels };
+}
+const suggestionsConfig = {
+  basePath,
+  en: await buildSuggestionsLocale('en'),
+  ja: await buildSuggestionsLocale('ja'),
+};
 
 // Header and Footer are shared components that render correctly by lang
 // prop on every real page; this page is the one place that must fake a
@@ -43,12 +80,17 @@ const jaNav = {
 
     <div id="suggestions" class="suggestions" hidden>
       <p class="suggestions-label" id="suggestions-label">You might be looking for:</p>
-      <ul id="suggestions-list" class="suggestions-list"></ul>
+      <div id="suggestions-list"></div>
     </div>
   </div>
 </BaseLayout>
 
+<script type="application/json" id="suggestions-config" is:inline set:html={JSON.stringify(suggestionsConfig)}></script>
 <script is:inline src="https://cdn.jsdelivr.net/npm/algoliasearch@4.24.0/dist/algoliasearch-lite.umd.js"></script>
+<script>
+  import { init404Suggestions } from '../scripts/entries-browse';
+  init404Suggestions();
+</script>
 <script is:inline define:vars={{ basePath, jaNav }}>
 (function () {
   // Turn the broken path into a search query: the last non-empty segment is
@@ -185,40 +227,6 @@ const jaNav = {
       btn.setAttribute('data-label-failed', jaNav.shareFailed);
     });
   }
-
-  var segments = path.split('/').filter(Boolean);
-  if (isJa) segments.shift();
-  var slug = segments[segments.length - 1] || '';
-  var query = slug.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/[-_]/g, ' ').trim();
-  if (!query || typeof algoliasearch === 'undefined') return;
-
-  // `h.url` is already locale-prefixed for JA-index hits (matches
-  // entries-browse.ts's own `basePath + h.url`, no separate /ja here --
-  // adding one double-prefixes JA links to /ja/ja/...).
-  var indexName = isJa ? 'bitcoin_archive_ja' : 'bitcoin_archive_en';
-  var algolia = algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425');
-
-  function esc(s) {
-    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
-      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
-    });
-  }
-
-  algolia.search([{ indexName: indexName, query: query, params: {
-    hitsPerPage: 5, highlightPreTag: '<mark>', highlightPostTag: '</mark>'
-  } }])
-    .then(function (r) {
-      var hits = (r.results[0] && r.results[0].hits) || [];
-      if (!hits.length) return;
-      var list = document.getElementById('suggestions-list');
-      list.innerHTML = hits.map(function (h) {
-        var hr = h._highlightResult || {};
-        var title = ((hr.title && hr.title.value) || esc(h.title)).replace(/<\/mark>\s*<mark>/g, ' ');
-        return '<li><a href="' + basePath + h.url + '">' + title + '</a></li>';
-      }).join('');
-      document.getElementById('suggestions').hidden = false;
-    })
-    .catch(function () {});
 })();
 </script>
 
@@ -244,7 +252,7 @@ const jaNav = {
     text-decoration: underline;
   }
   .suggestions {
-    max-width: 32rem;
+    max-width: 40rem;
     margin: 3rem auto 0;
     text-align: left;
   }
@@ -252,22 +260,5 @@ const jaNav = {
     font-size: 0.95rem;
     color: var(--color-text-muted);
     margin: 0 0 0.75rem;
-  }
-  .suggestions-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .suggestions-list li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--color-border);
-  }
-  .suggestions-list a {
-    font-family: inherit;
-    font-size: 1rem;
-    text-decoration: none;
-  }
-  .suggestions-list a:hover {
-    text-decoration: underline;
   }
 </style>

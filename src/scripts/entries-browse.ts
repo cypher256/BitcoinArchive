@@ -14,6 +14,139 @@
 
 import { resolveDateValues } from '../lib/dateAxis';
 
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+  });
+}
+// Match the browse EntryCard's date format (toLocaleDateString, UTC, long month).
+function fmtDate(d, L) {
+  try {
+    return new Date(d).toLocaleDateString(L ? 'ja-JP' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+  } catch (e) { return ''; }
+}
+// A participant-page link, matching EntryCard's localePath('/participants/<slug>/').
+function participantLink(slug, name, cls, basePath, L) {
+  return '<a class="' + cls + '" href="' + basePath + (L ? '/ja' : '') + '/participants/' + slug + '/">' + esc(name) + '</a>';
+}
+function datePart(label, iso, L) {
+  var dateStr = iso ? fmtDate(iso, L) : '';
+  return dateStr
+    ? '<span class="entry-date"><span class="entry-date-label">' + esc(label) + '</span><time datetime="' + esc(iso) + '">' + esc(dateStr) + '</time></span>'
+    : '';
+}
+function dateGroup(dates, uiLabels, L) {
+  // The Astro EntryDates component cannot be imported into this browser
+  // bundle, so Algolia cards serialize the same values and class contract.
+  return '<span class="entry-dates entry-dates--card">'
+    + datePart(uiLabels.event, dates.eventIso, L)
+    + datePart(uiLabels.added, dates.createdAtIso, L)
+    + datePart(uiLabels.updated, dates.updatedAtIso, L)
+    + '</span>';
+}
+// A full-text result card. Emits EntryCard's exact markup and class names so
+// the shared .entry-card rules in global.css render it identically to a browse
+// card: header (all three dates + type badge), avatar + title, author
+// ↔ co-participants byline, description, and — only when the body itself
+// matched — the highlighted .ft-snippet excerpt. `ctx` carries everything the
+// server resolved ahead of time (locale-specific labels, byline metadata) so
+// this same function renders both the /entries search results and the 404
+// page's "you might be looking for" suggestions identically.
+export function hitCard(h, ctx) {
+  var basePath = ctx.basePath, L = ctx.L, authorMeta = ctx.authorMeta, slugToName = ctx.slugToName,
+      typeLabels = ctx.typeLabels, uiLabels = ctx.uiLabels;
+  var hr = h._highlightResult || {}, sr = h._snippetResult || {};
+  // Merge adjacent <mark> runs (kuromoji wraps each Japanese morpheme in its
+  // own <mark>) into one continuous highlight.
+  var title = ((hr.title && hr.title.value) || esc(h.title)).replace(/<\/mark>\s*<mark>/g, '');
+  var type = h.type || '';
+  var isEditorial = type === 'analysis' || type === 'design' || type === 'article' || type === 'currency';
+  var dateValues = resolveDateValues({ dateIso: h.date, createdAtIso: h.createdTs, updatedAtIso: h.updatedTs });
+  var typeLabel = typeLabels[type] || type;
+  // Byline: server-built authorMeta already ran findAuthorParticipant (incl.
+  // handle aliases) and resolved the katakana display name.
+  var am = authorMeta[h.author] || { slug: '', name: String(h.author == null ? '' : h.author) };
+  var isSat = am.slug === 'satoshi-nakamoto' || String(h.author || '').toLowerCase() === 'satoshi nakamoto';
+  var others = (h.participants || []).filter(function (p) {
+    return am.slug ? p.slug !== am.slug : p.name !== h.author;
+  });
+  // Avatar: Bitcoin Institute for editorial types, else the byline participant.
+  var avSlug = isEditorial ? 'bitcoin-institute' : am.slug;
+  var avatar = !avSlug ? ''
+    : avSlug === 'satoshi-nakamoto'
+      ? '<span class="avatar card-author-avatar satoshi-av" aria-hidden="true">SN</span>'
+      : '<img class="avatar card-author-avatar" src="' + basePath + '/avatars/' + avSlug + '.png" alt="" width="24" height="24" loading="lazy" />';
+  // Body: always the description (same as the browse card). Add the matched
+  // body snippet only when the body itself matched — a title/description-only
+  // match then reads exactly like a browse card.
+  var snipMatched = sr.body && sr.body.matchLevel && sr.body.matchLevel !== 'none';
+  var snip = snipMatched ? String(sr.body.value).replace(/<\/mark>\s*<mark>/g, '') : '';
+  var header = '<div class="card-header">'
+    + dateGroup(dateValues, uiLabels, L)
+    + (typeLabel ? '<span class="source-badge">' + esc(typeLabel) + '</span>' : '')
+    + (type === 'biography' ? '<span class="biography-badge">' + esc(uiLabels.biography) + '</span>' : '')
+    + '</div>';
+  var authorEl = am.slug
+    ? participantLink(am.slug, am.name, 'author-link' + (isSat ? ' satoshi' : ''), basePath, L)
+    : '<span' + (isSat ? ' class="satoshi"' : '') + '>' + esc(am.name) + '</span>';
+  var withEl = others.length
+    ? '<span class="participants-with">&harr; ' + others.map(function (p) { return participantLink(p.slug, slugToName[p.slug] || p.name, 'participant-link', basePath, L); }).join(', ') + '</span>'
+    : '';
+  var body = (h.description ? '<p class="card-description">' + esc(h.description) + '</p>' : '')
+    + (snip ? '<p class="ft-snippet">' + snip + '</p>' : '');
+  var href = basePath + h.url;
+  return '<article class="entry-card">'
+    + '<a href="' + href + '" class="card-link">'
+      + header
+      + '<div class="card-title-row">' + avatar + '<h3 class="card-title">' + title + '</h3></div>'
+    + '</a>'
+    + '<p class="card-author">' + authorEl + withEl + '</p>'
+    + (body ? '<a href="' + href + '" class="card-link">' + body + '</a>' : '')
+    + '</article>';
+}
+
+// Renders up to 5 Algolia hits as EntryCard-styled suggestions on the 404
+// page, reusing hitCard() (above) so a broken-URL suggestion looks exactly
+// like a browse/search result card instead of a bare link list. The page
+// embeds one config per locale it might need to serve (see the `<script
+// id="suggestions-config">` in 404.astro / ja/404.astro) because the root EN
+// 404 page is also the flat fallback GitHub Pages serves for broken /ja/*
+// paths, so it cannot know which locale it needs until it reads
+// location.pathname at runtime.
+export function init404Suggestions() {
+  var cfgEl = document.getElementById('suggestions-config');
+  if (!cfgEl || typeof algoliasearch === 'undefined') return;
+  var cfg = JSON.parse(cfgEl.textContent || '{}');
+  var basePath = cfg.basePath;
+
+  var path = location.pathname;
+  if (basePath && (path === basePath || path.indexOf(basePath + '/') === 0)) path = path.slice(basePath.length);
+  var isJa = /^\/ja(\/|$)/.test(path);
+  var loc = cfg[isJa ? 'ja' : 'en'];
+  if (!loc) return;
+
+  var segments = path.split('/').filter(Boolean);
+  if (isJa) segments.shift();
+  var slug = segments[segments.length - 1] || '';
+  var query = slug.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/[-_]/g, ' ').trim();
+  if (!query) return;
+
+  var ctx = { basePath: basePath, L: isJa, authorMeta: loc.authorMeta, slugToName: loc.slugToName,
+              typeLabels: loc.typeLabels, uiLabels: loc.uiLabels };
+  var algolia = algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425');
+  algolia.search([{ indexName: loc.indexName, query: query, params: {
+    hitsPerPage: 5, highlightPreTag: '<mark>', highlightPostTag: '</mark>'
+  } }])
+    .then(function (r) {
+      var hits = (r.results[0] && r.results[0].hits) || [];
+      if (!hits.length) return;
+      var list = document.getElementById('suggestions-list');
+      list.innerHTML = hits.map(function (h) { return hitCard(h, ctx); }).join('');
+      document.getElementById('suggestions').hidden = false;
+    })
+    .catch(function () {});
+}
+
 export function initEntriesBrowse() {
   var cfgEl = document.getElementById('entries-config');
   if (!cfgEl) return;
@@ -61,12 +194,11 @@ export function initEntriesBrowse() {
     ? algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425') : null;
   var hits = null, nbHits = 0; // current full-text hit set (null = browse mode); nbHits = true total
   var debounceTimer = null;
+  // Passed into the shared hitCard() (module scope, above) so this page's
+  // search results render with the exact same markup as the 404 suggestions.
+  var hitCtx = { basePath: basePath, L: L, authorMeta: authorMeta, slugToName: slugToName,
+                 typeLabels: typeLabels, uiLabels: uiLabels };
 
-  function esc(s) {
-    return String(s == null ? '' : s).replace(/[&<>"]/g, function(c) {
-      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
-    });
-  }
   function selectedFacet(facet) {
     var set = {};
     facetChecks.forEach(function(c) { if (c.dataset.facet === facet && c.checked) set[c.value] = true; });
@@ -126,92 +258,12 @@ export function initEntriesBrowse() {
     if (satoshiOnly && satoshiOnly.checked) f.push(['isSatoshi:true']);
     return f;
   }
-  // Match the browse EntryCard's date format (toLocaleDateString, UTC, long month).
-  function fmtDate(d) {
-    try {
-      return new Date(d).toLocaleDateString(L ? 'ja-JP' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
-    } catch (e) { return ''; }
-  }
-  // A participant-page link, matching EntryCard's localePath('/participants/<slug>/').
-  function participantLink(slug, name, cls) {
-    return '<a class="' + cls + '" href="' + basePath + (L ? '/ja' : '') + '/participants/' + slug + '/">' + esc(name) + '</a>';
-  }
-  function datePart(label, iso) {
-    var dateStr = iso ? fmtDate(iso) : '';
-    return dateStr
-      ? '<span class="entry-date"><span class="entry-date-label">' + esc(label) + '</span><time datetime="' + esc(iso) + '">' + esc(dateStr) + '</time></span>'
-      : '';
-  }
-  function dateGroup(dates) {
-    // The Astro EntryDates component cannot be imported into this browser
-    // bundle, so Algolia cards serialize the same values and class contract.
-    return '<span class="entry-dates entry-dates--card">'
-      + datePart(uiLabels.event, dates.eventIso)
-      + datePart(uiLabels.added, dates.createdAtIso)
-      + datePart(uiLabels.updated, dates.updatedAtIso)
-      + '</span>';
-  }
-  // A full-text result card. Emits EntryCard's exact markup and class names so
-  // the shared .entry-card rules in global.css render it identically to a browse
-  // card: header (all three dates + type badge), avatar + title, author
-  // ↔ co-participants byline, description, and — only when the body itself
-  // matched — the highlighted .ft-snippet excerpt.
-  function hitCard(h) {
-    var hr = h._highlightResult || {}, sr = h._snippetResult || {};
-    // Merge adjacent <mark> runs (kuromoji wraps each Japanese morpheme in its
-    // own <mark>) into one continuous highlight.
-    var title = ((hr.title && hr.title.value) || esc(h.title)).replace(/<\/mark>\s*<mark>/g, '');
-    var type = h.type || '';
-    var isEditorial = type === 'analysis' || type === 'design' || type === 'article' || type === 'currency';
-    var dateValues = resolveDateValues({ dateIso: h.date, createdAtIso: h.createdTs, updatedAtIso: h.updatedTs });
-    var typeLabel = typeLabels[type] || type;
-    // Byline: server-built authorMeta already ran findAuthorParticipant (incl.
-    // handle aliases) and resolved the katakana display name.
-    var am = authorMeta[h.author] || { slug: '', name: String(h.author == null ? '' : h.author) };
-    var isSat = am.slug === 'satoshi-nakamoto' || String(h.author || '').toLowerCase() === 'satoshi nakamoto';
-    var others = (h.participants || []).filter(function(p) {
-      return am.slug ? p.slug !== am.slug : p.name !== h.author;
-    });
-    // Avatar: Bitcoin Institute for editorial types, else the byline participant.
-    var avSlug = isEditorial ? 'bitcoin-institute' : am.slug;
-    var avatar = !avSlug ? ''
-      : avSlug === 'satoshi-nakamoto'
-        ? '<span class="avatar card-author-avatar satoshi-av" aria-hidden="true">SN</span>'
-        : '<img class="avatar card-author-avatar" src="' + basePath + '/avatars/' + avSlug + '.png" alt="" width="24" height="24" loading="lazy" />';
-    // Body: always the description (same as the browse card). Add the matched
-    // body snippet only when the body itself matched — a title/description-only
-    // match then reads exactly like a browse card.
-    var snipMatched = sr.body && sr.body.matchLevel && sr.body.matchLevel !== 'none';
-    var snip = snipMatched ? String(sr.body.value).replace(/<\/mark>\s*<mark>/g, '') : '';
-    var header = '<div class="card-header">'
-      + dateGroup(dateValues)
-      + (typeLabel ? '<span class="source-badge">' + esc(typeLabel) + '</span>' : '')
-      + (type === 'biography' ? '<span class="biography-badge">' + esc(uiLabels.biography) + '</span>' : '')
-      + '</div>';
-    var authorEl = am.slug
-      ? participantLink(am.slug, am.name, 'author-link' + (isSat ? ' satoshi' : ''))
-      : '<span' + (isSat ? ' class="satoshi"' : '') + '>' + esc(am.name) + '</span>';
-    var withEl = others.length
-      ? '<span class="participants-with">&harr; ' + others.map(function(p) { return participantLink(p.slug, slugToName[p.slug] || p.name, 'participant-link'); }).join(', ') + '</span>'
-      : '';
-    var body = (h.description ? '<p class="card-description">' + esc(h.description) + '</p>' : '')
-      + (snip ? '<p class="ft-snippet">' + snip + '</p>' : '');
-    var href = basePath + h.url;
-    return '<article class="entry-card">'
-      + '<a href="' + href + '" class="card-link">'
-        + header
-        + '<div class="card-title-row">' + avatar + '<h3 class="card-title">' + title + '</h3></div>'
-      + '</a>'
-      + '<p class="card-author">' + authorEl + withEl + '</p>'
-      + (body ? '<a href="' + href + '" class="card-link">' + body + '</a>' : '')
-      + '</article>';
-  }
   function renderSearch() {
     if (!hits) return;
     var sorted = hits.slice().sort(cmp);
     var page = sorted.slice(0, shown);
     searchResults.innerHTML = page.length
-      ? page.map(hitCard).join('')
+      ? page.map(function(h) { return hitCard(h, hitCtx); }).join('')
       : '';
     resultCount.textContent = String(nbHits);
     var capped = nbHits > hits.length;
