@@ -114,6 +114,7 @@ relatedEntries:
   - currency/2026-07-27-usdc-currency-overview
   - currency/2026-07-27-usdt-currency-overview
   - analysis/2026-08-02-ai-crypto-investment-survey
+  - analysis/2026-08-23-did-bitcoin-overturn-money
 inlineLinkKeywords:
   - "固定供給"
   - "2100 万枚上限"

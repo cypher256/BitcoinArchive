@@ -47,6 +47,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-storage-design
   - design/2009-01-03-bitcoin-wallet-design
   - analysis/2008-11-13-byzantine-generals-problem
+  - analysis/2026-08-23-did-bitcoin-overturn-money
 translationStatus: complete
 ---
 

@@ -57,6 +57,7 @@ relatedEntries:
   - analysis/2026-07-26-altcoin-count-and-design-comparison
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
+  - analysis/2026-08-23-did-bitcoin-overturn-money
 inlineLinkKeywords:
   - "AI 投資調査"
   - "5 つの AI モデル"

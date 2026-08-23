@@ -808,6 +808,7 @@ export const tagTranslations: Record<string, string> = {
   'fsa': '金融庁',
   'government-adoption': '政府による普及',
   'imf': 'IMF',
+  'institutional-adoption': '機関投資家による普及',
   'mining-ban': 'マイニング禁止',
   'nation-state-adoption': '国家による普及',
   'payment-services-act': '資金決済法',

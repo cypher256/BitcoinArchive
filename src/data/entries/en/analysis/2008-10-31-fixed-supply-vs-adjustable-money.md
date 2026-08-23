@@ -114,6 +114,7 @@ relatedEntries:
   - currency/2026-07-27-usdc-currency-overview
   - currency/2026-07-27-usdt-currency-overview
   - analysis/2026-08-02-ai-crypto-investment-survey
+  - analysis/2026-08-23-did-bitcoin-overturn-money
 inlineLinkKeywords:
   - "fixed supply"
   - "21 million cap"

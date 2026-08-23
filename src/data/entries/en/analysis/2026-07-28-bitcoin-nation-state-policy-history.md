@@ -87,6 +87,7 @@ relatedEntries:
   - aftermath/2017-09-04-china-ico-ban
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - analysis/2026-07-26-altcoin-count-and-design-comparison
+  - analysis/2026-08-23-did-bitcoin-overturn-money
 inlineLinkKeywords:
   - "two that never reversed"
 translationStatus: "complete"
