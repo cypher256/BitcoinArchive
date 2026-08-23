@@ -24,6 +24,7 @@ import { mount as mountSupplyCurve } from './supply-curve.js';
 import { mount as mountBarRace } from './bar-chart-race.js';
 import { mount as mountOwnershipTreemap } from './ownership-treemap.js';
 import { mount as mountPublicCompaniesBar } from './public-companies-bar.js';
+import { mount as mountStrategyHoldingsGrowth } from './strategy-holdings-growth.js';
 import { mount as mountWhaleTiers } from './whale-tiers.js';
 import { mount as mountAltcoinPopulationCounts } from './altcoin-population-counts.js';
 import { mount as mountEthBtcRatio } from './eth-btc-ratio.js';
@@ -198,6 +199,16 @@ const JPY_PER_USD = 160;
     } as Record<string, { title: string; sub: string }>)[lang];
     host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p><div class="ce-chart"></div>';
     mountPublicCompaniesBar(host.querySelector('.ce-chart'), lang);
+  };
+
+  // ===== drawer: strategy-holdings-growth (one company's own climb) =====
+  DRAWERS['strategy-holdings-growth'] = function (host, lang) {
+    var T_ = ({
+      en: { title: "Strategy's own holdings, 2020 to 2026", sub: "BTC balance, year-end 2020 through July 6, 2026, from the company's own disclosures; growth accelerates starting 2024." },
+      ja: { title: 'Strategy 自身の保有推移、2020〜2026 年', sub: '2020 年末から 2026 年 7 月 6 日までの BTC 保有量、同社自身の開示による。2024 年から伸びが急になる。' },
+    } as Record<string, { title: string; sub: string }>)[lang];
+    host.innerHTML = '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.sub + '</p><div class="ce-chart"></div>';
+    mountStrategyHoldingsGrowth(host.querySelector('.ce-chart'), lang);
   };
 
   // ===== drawer: eth-btc-ratio (the one approach, and the distance since) =====

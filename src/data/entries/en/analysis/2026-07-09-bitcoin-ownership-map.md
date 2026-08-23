@@ -76,6 +76,7 @@ relatedEntries:
   - aftermath/2010-07-06-anonymity-and-pseudonymity
   - forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025
   - analysis/2026-07-28-bitcoin-nation-state-policy-history
+  - analysis/2026-08-23-did-bitcoin-overturn-money
 inlineLinkKeywords:
   - "map of the 21 million"
 translationStatus: complete
@@ -116,17 +117,9 @@ Of the 1,264,579 BTC on public-company balance sheets, one company holds two-thi
 
 When Strategy disclosed its first purchase in August 2020, a bitcoin corporate treasury was still an experiment.
 
-| Year-end | Strategy holdings |
-|---|---|
-| 2020 | 70,470 BTC |
-| 2021 | 124,391 BTC |
-| 2022 | 132,500 BTC |
-| 2023 | 189,150 BTC |
-| 2024 | 446,400 BTC |
-| 2025 | 672,497 BTC |
-| Jul 6, 2026 | 843,775 BTC |
+<!-- chart: strategy-holdings-growth -->
 
-Each anchor traces to the company's SEC disclosures. The curve breaks upward in 2024, when Strategy roughly doubled four years of accumulation in a single year and kept buying.
+Each bar traces to the company's own SEC disclosures. Growth accelerates sharply in 2024, when Strategy roughly doubled four years of accumulation in a single year and kept buying.
 
 ## Spot ETFs — the buyer that arrived in 2024
 

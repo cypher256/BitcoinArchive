@@ -76,6 +76,7 @@ relatedEntries:
   - aftermath/2010-07-06-anonymity-and-pseudonymity
   - forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025
   - analysis/2026-07-28-bitcoin-nation-state-policy-history
+  - analysis/2026-08-23-did-bitcoin-overturn-money
 inlineLinkKeywords:
   - "2100 万枚の地図"
 translationStatus: complete
@@ -116,17 +117,9 @@ translationStatus: complete
 
 2020 年 8 月に最初の購入を開示したとき、上場企業がビットコインを財務資産にするという発想はまだ実験だった。
 
-| 年末 | Strategy の保有 |
-|---|---|
-| 2020 | 70,470 BTC |
-| 2021 | 124,391 BTC |
-| 2022 | 132,500 BTC |
-| 2023 | 189,150 BTC |
-| 2024 | 446,400 BTC |
-| 2025 | 672,497 BTC |
-| 2026 年 7 月 6 日 | 843,775 BTC |
+<!-- chart: strategy-holdings-growth -->
 
-出典は各年の SEC 開示。伸びが跳ねたのは 2024 年で、最初の 4 年で積んだ残高をその一年でほぼ倍にし、以後も買い続けた。
+各棒の出典は同社自身の SEC 開示。伸びが跳ねたのは 2024 年で、最初の 4 年で積んだ残高をその一年でほぼ倍にし、以後も買い続けた。
 
 ## 現物 ETF ― 2024 年に現れた最大の買い手
 
