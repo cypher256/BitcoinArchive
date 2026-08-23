@@ -1,5 +1,5 @@
 ---
-title: "Did Bitcoin overturn money, or just move the money around?"
+title: "Did Bitcoin overturn the concept of money? — a currency that runs on proof, not trust"
 date: "2026-08-23T00:00:00Z"
 type: "analysis"
 source: "bitcoin-pdf"
@@ -54,7 +54,7 @@ Nine pages, on a mailing list, on October 31, 2008:
 <!-- quote: q1 -->
 > "I've been working on a new electronic cash system that's fully peer-to-peer, with no trusted third party."
 
-Bitcoin Institute puts it at its most literal: did the protocol carried in those nine pages overturn, at its root, a concept of money thousands of years old? Eighteen years is long enough to test that against the record instead of against a feeling — so this entry does exactly that, across the five domains that would actually have to move for the claim to hold: money itself, the people who hold it, the field that studies it, the economists whose job is to say whether any of this counts, and the systems now trained on all of it.
+That one clause carried the whole technical bet: money that runs on proof instead of trust, with no institution anyone has to take on faith. Bitcoin Institute puts it at its most literal: did the protocol carried in those nine pages overturn, at its root, a concept of money thousands of years old? Eighteen years is long enough to test that bet against the record instead of against a feeling — so this entry does exactly that, across the five domains that would actually have to move for the claim to hold: money itself, the people who hold it, the field that studies it, the economists whose job is to say whether any of this counts, and the systems now trained on all of it.
 
 ## What moved: the money
 
@@ -89,7 +89,7 @@ Two Nobel laureates, sixteen and seventeen years removed from the paper's public
 
 ## What moved: the AI models
 
-On August 2, 2026, Bitcoin Institute ran its own experiment: the same question, put to five AI models from five different labs — OpenAI's GPT, Anthropic's Claude, Google's Gemini, Moonshot AI's Kimi, and xAI's Grok. If you had to invest in exactly one cryptocurrency, which would you choose? [All five, independently, chose Bitcoin](/BitcoinArchive/entries/analysis/2026-08-02-ai-crypto-investment-survey/). Their reasoning converged on the same axes Bitcoin Institute already uses to read the field — no founder, no controlling party, a supply fixed by code rather than by policy — and when those specific structural claims were checked against primary sources, they held up.
+On August 2, 2026, Bitcoin Institute ran its own experiment: the same question, put to five AI models from five different labs — OpenAI's GPT, Anthropic's Claude, Google's Gemini, Moonshot AI's Kimi, and xAI's Grok. If you had to invest in exactly one cryptocurrency, which would you choose? [All five, independently, chose Bitcoin](/BitcoinArchive/entries/analysis/2026-08-02-ai-crypto-investment-survey/). Their reasoning converged on the same axes Bitcoin Institute already uses to read the field — no founder, no controlling party, a supply fixed by code rather than by policy, the same proof-not-trust structure the nine pages promised in 2008 — and when those specific structural claims were checked against primary sources, they held up.
 
 Five systems built by five different companies, with nothing to gain from any particular answer, given no constraint but "pick one," picked the same one — for the same reasons Bitcoin Institute already gives for calling Bitcoin digital gold.
 
