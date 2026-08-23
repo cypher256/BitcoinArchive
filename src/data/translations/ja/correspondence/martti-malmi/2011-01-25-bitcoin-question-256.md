@@ -48,10 +48,10 @@ translationStatus: complete
 >  Subject: Re:
 >       To: mmalmi@cc.hut.fi
 >
-> Martti、
+> マルッティ、
 > PDF をありがとう。素晴らしい内容だ。日付が見当たらないのだが、いつ書かれたものか？
 >
-> Digital Gold Currency Magazine の Mark Herpel 氏が、私の論文に Bitcoin を含めるよう勧めてくれた。論文の仮題は「デジタル通貨システム：米国における金融危機時の B2B 電子商取引の新たな選択肢」だ。Herpel 氏の提案に基づき、5 種類のシステムについて論じている。
+> Digital Gold Currency Magazine のマーク・ハーペル氏が、私の論文に Bitcoin を含めるよう勧めてくれた。論文の仮題は「デジタル通貨システム：米国における金融危機時の B2B 電子商取引の新たな選択肢」だ。ハーペル氏の提案に基づき、5 種類のシステムについて論じている。
 >
 > ありがとう。近いうちにお話しできることを願っている。
 >
@@ -67,7 +67,7 @@ translationStatus: complete
 > To: "Constance J. Wells" <cjwells_1@yahoo.com>
 > Date: Monday, January 24, 2011, 1:22 AM
 >
-> Constance さん、こんにちは。
+> コンスタンスさん、こんにちは。
 >
 > Bitcoin に興味を持っていただきありがとうございます。自由に引用してください。よりフォーマルな内容をお求めでしたら、サトシ・ナカモトの論文が http://www.bitcoin.org/bitcoin.pdf で入手できます。論文が完成しましたらぜひお知らせください！
 >
@@ -76,7 +76,7 @@ translationStatus: complete
 >
 <!-- speaker: Constance J. Wells -->
 <!-- audit:quote-skip -->
->> Martti Malmi
+>> マルッティ・マルミ
 >> 現在フルタイムの学生だ -
 >> http://info.aspen.edu/
 >> コロラド州デンバーの Aspen University、303-333-4224。
