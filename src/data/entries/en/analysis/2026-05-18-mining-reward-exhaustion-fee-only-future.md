@@ -82,7 +82,7 @@ graph TD
 
 Two design choices fix this outcome:
 
-- **The halving schedule.** Subsidy starts at 50 BTC, halves every 210,000 blocks. This is enforced by `GetBlockSubsidy()` in Bitcoin Core's `validation.cpp` — the integer-arithmetic right-shift after 33 halvings produces a subsidy of zero satoshis. There is no separate "end of issuance" event; the schedule simply runs out of resolution at the satoshi level. The full per-halving cards, supply curve, and price history are on the Archive's [Bitcoin chart page](/BitcoinArchive/chart/).
+- **The halving schedule.** Subsidy starts at 50 BTC, halves every 210,000 blocks. This is enforced by `GetBlockSubsidy()` in Bitcoin Core's `validation.cpp` — the integer-arithmetic right-shift after 33 halvings produces a subsidy of zero satoshis. There is no separate "end of issuance" event; the schedule simply runs out of resolution at the satoshi level. The full per-halving cards, supply curve, and price history are on the archive's [Bitcoin chart page](/BitcoinArchive/chart/).
 
 - **The 21 million cap.** The cap is not stated as a constant anywhere in the code; it is the *consequence* of summing the geometric series of halvings. The widely cited figure 20,999,999.9769 BTC is what falls out of the arithmetic.
 
@@ -139,9 +139,9 @@ The 2015-2017 [block-size war](/BitcoinArchive/entries/analysis/2015-08-15-bitco
 
 This entry is a record of design commitments and a documented debate. It is not a forecast.
 
-- The arithmetic that produces the figure "around 2140" assumes the 10-minute block target holds and the halving schedule is not altered. Both are true today; both are consensus rules that can in principle be changed by the network. Neither has been seriously proposed for change in any forum the Archive holds.
+- The arithmetic that produces the figure "around 2140" assumes the 10-minute block target holds and the halving schedule is not altered. Both are true today; both are consensus rules that can in principle be changed by the network. Neither has been seriously proposed for change in any forum the archive holds.
 - The economic arguments in §3 model an idealised game. Actual mining economics in 2140 will depend on hardware cost curves, energy markets, fee demand, and protocol changes that have not happened yet. No paper from 2016 can answer those questions.
-- The Archive's role is to record what Satoshi wrote, what the code commits the network to, and what serious analyses have raised.
+- Bitcoin Institute's role is to record what Satoshi wrote, what the code commits the network to, and what serious analyses have raised.
 
 *[Editor: the year 2140 is a consequence of consensus rules in force today, not a fixed prophecy. If the network ever altered the block target or the halving schedule, the date would move — the same way the 21 million cap is a consequence of the current design rather than a separately enforced number.]*
 

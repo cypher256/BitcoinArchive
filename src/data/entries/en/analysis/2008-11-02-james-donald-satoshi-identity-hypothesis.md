@@ -85,7 +85,7 @@ This is the case's most distinctive feature, and the reason it belongs in the re
 
 ## 3. Within the broader documentary record
 
-Donald sits at the productive tension between the archive's [stylometric layer](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) and everything the stylometry cannot settle. A rare-word signal and an early presence put him on the list; the documented third-party correspondence, the wider divergence of voice, and a journalist's in-person read take him off it. The case is a reminder that the four comparison layers narrow the space but do not close it, and that the last step — recognizing a person rather than scoring a profile — is one the public record cannot perform on the reader's behalf. For the full candidate comparison, see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
+Donald sits at the productive tension between Bitcoin Institute's [stylometric layer](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) and everything the stylometry cannot settle. A rare-word signal and an early presence put him on the list; the documented third-party correspondence, the wider divergence of voice, and a journalist's in-person read take him off it. The case is a reminder that the four comparison layers narrow the space but do not close it, and that the last step — recognizing a person rather than scoring a profile — is one the public record cannot perform on the reader's behalf. For the full candidate comparison, see the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
 
 ## 4. Limits of this entry
 

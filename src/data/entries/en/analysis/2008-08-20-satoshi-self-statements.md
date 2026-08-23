@@ -69,7 +69,7 @@ Across thirty-two months of documented public record, Satoshi Nakamoto referred 
 
 **Inclusion criterion:** the statement contains a self-reference (Satoshi's own state, position, capability, intent, or identity).
 
-**Exclusion criterion:** pure business announcements with no self-reference (e.g., a request for the correct citation of a paper, a release announcement of new code, an explanation of a protocol mechanism). These appear elsewhere in the Archive but are not collected here.
+**Exclusion criterion:** pure business announcements with no self-reference (e.g., a request for the correct citation of a paper, a release announcement of new code, an explanation of a protocol mechanism). These appear elsewhere in the archive but are not collected here.
 
 ## 1. The complete inventory of self-references
 

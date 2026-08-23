@@ -145,7 +145,7 @@ The two layers are complementary: the technical layer can be broken by adversari
 
 ## 5. The Malmi exception — and what it suggests
 
-The May 2, 2009 first-contact exchange with Martti Malmi is the cleanest exception this Archive has surfaced. Satoshi tells Malmi that his understanding of Bitcoin is "spot on," labels the ASC forum's anti-fiat-money skeptics "Neanderthal," and shares a "flammable but no spark" metaphor for monetary adoption — engaging on **political-cultural** ground rather than personal-information ground.
+The May 2, 2009 first-contact exchange with Martti Malmi is the cleanest exception Bitcoin Institute has surfaced. Satoshi tells Malmi that his understanding of Bitcoin is "spot on," labels the ASC forum's anti-fiat-money skeptics "Neanderthal," and shares a "flammable but no spark" metaphor for monetary adoption — engaging on **political-cultural** ground rather than personal-information ground.
 
 The distinction matters. The exception does *not* break the discipline; it operates within a strict additional constraint:
 
@@ -159,7 +159,7 @@ The Malmi exception is read most parsimoniously as **selective engagement on sha
 
 ## 6. Why the recipients did not protest
 
-A possible objection: if Satoshi was systematically refusing to engage with personal content, one would expect at least some correspondent to push back ("not even a Merry Christmas? :-)"). The Archive's recorded correspondence does not contain any such pushback.
+A possible objection: if Satoshi was systematically refusing to engage with personal content, one would expect at least some correspondent to push back ("not even a Merry Christmas? :-)"). The archive's recorded correspondence does not contain any such pushback.
 
 Reasons consistent with the record:
 

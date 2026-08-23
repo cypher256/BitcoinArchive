@@ -131,7 +131,7 @@ And, in the same remarks, on Bitcoin's culture rather than its code:
 <!-- audit:quote-skip -->
 > It's a religion, not an ecosystem.
 
-The reversal is not clean, and the archive does not tidy it. Six months later, in a November 2024 livestream, he was describing Bitcoin as the store of value for the internet — which is the 2018 position restated, not withdrawn. What changed between the statements is not visibly the analysis. Reading the sequence as a single evolving judgment would impose a coherence the record does not carry.
+The reversal is not clean, and Bitcoin Institute does not tidy it. Six months later, in a November 2024 livestream, he was describing Bitcoin as the store of value for the internet — which is the 2018 position restated, not withdrawn. What changed between the statements is not visibly the analysis. Reading the sequence as a single evolving judgment would impose a coherence the record does not carry.
 
 In April 2026 he intervened in Bitcoin's own post-quantum debate, over a proposal that would make funds in legacy address types unspendable after a deadline:
 

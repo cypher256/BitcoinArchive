@@ -98,7 +98,7 @@ What is Bitcoin-specific is the *structure* of its attack surface — a public l
 
 ## 3. What is exposed today
 
-Bitcoin has accumulated several output formats over its life. They expose the public key at different points, and the exposure window is the entire vulnerability surface for a quantum attack on dormant coins. The Archive's [Bitcoin chart page](/BitcoinArchive/chart/) has the full per-halving cards and supply curve. Which form a coin is held in decides its exposure:
+Bitcoin has accumulated several output formats over its life. They expose the public key at different points, and the exposure window is the entire vulnerability surface for a quantum attack on dormant coins. The archive's [Bitcoin chart page](/BitcoinArchive/chart/) has the full per-halving cards and supply curve. Which form a coin is held in decides its exposure:
 
 | Output type | Public key on chain when…                              | Quantum exposure                                            |
 |---|---|---|
@@ -135,7 +135,7 @@ timeline
 
 The NSA's CNSA 2.0 deadline is the most concrete single number in the debate. Whether one reads it as a *prediction* of when a CRQC will exist or as a *prudential margin* against the chance that one might, the institutional behaviour is consistent: spend the 2020s standardizing post-quantum cryptography; spend the 2030s rolling it out.
 
-The named-individual record (from cryptographers and Bitcoin infrastructure people the Archive holds entries for):
+The named-individual record (from cryptographers and Bitcoin infrastructure people the archive holds entries for):
 
 - [Adam Back's November 2025 statement](/BitcoinArchive/entries/aftermath/2025-11-15-adam-back-quantum-threat-timeline/) places the practical quantum threat to Bitcoin at "20-40 years" out, with SLH-DSA-class signatures as the appropriate response. This is the position of one of Bitcoin's named cryptographer-adjacent figures, not a consensus number.
 - Industry quantum-hardware roadmaps (IBM, Google) target machines with tens of thousands of physical qubits by the early 2030s. The translation from physical qubits to logical qubits — and from logical qubits to a CRQC running Shor's algorithm on secp256k1 — involves error-correction overheads that are themselves the subject of active research.
@@ -144,7 +144,7 @@ The "harvest now, decrypt later" concern raises the timeline question for one sp
 
 ## 5. Migration paths
 
-Several proposals address quantum exposure in different ways. The Archive holds the [BIP 360 (P2MR) draft](/BitcoinArchive/entries/bip/2024-12-17-bip-0360/) — a soft-fork output type that behaves like Taproot with the key-path spend removed, committing only to the Merkle root of a script tree. P2MR is resistant to *long-exposure* attacks on elliptic-curve keys (where a public key sits visible on-chain after a spend), but explicitly not to *short-exposure* attacks (where a key revealed in the mempool is recovered before the transaction confirms). BIP 360 itself notes that short-exposure protection would require introducing post-quantum signatures, treated as a separate future proposal.
+Several proposals address quantum exposure in different ways. The archive holds the [BIP 360 (P2MR) draft](/BitcoinArchive/entries/bip/2024-12-17-bip-0360/) — a soft-fork output type that behaves like Taproot with the key-path spend removed, committing only to the Merkle root of a script tree. P2MR is resistant to *long-exposure* attacks on elliptic-curve keys (where a public key sits visible on-chain after a spend), but explicitly not to *short-exposure* attacks (where a key revealed in the mempool is recovered before the transaction confirms). BIP 360 itself notes that short-exposure protection would require introducing post-quantum signatures, treated as a separate future proposal.
 
 Post-quantum signature schemes themselves — ML-DSA, FALCON, SLH-DSA — would be considerably larger than ECDSA: SLH-DSA signatures are roughly 8-50 KB depending on parameter set, against ECDSA's ~72 bytes.
 
@@ -160,7 +160,7 @@ The migration question for already-issued coins is harder than the question for 
 
 The entry presents what the cryptography commits to and what the institutional and named-individual record says. It does not predict an arrival date, and it explicitly does not endorse the "the day Bitcoin breaks is the day the world ends" framing of the title:
 
-- A CRQC's arrival is a research-program outcome whose distribution is not known to outside observers. Estimates from credible sources range from "this decade" (rare, generally from people building the hardware) to "this century or never" (rare, generally from cryptographers concerned about the hardness of error correction). The Archive treats the institutional NSA-2035 line and the named Adam Back 20-40 year line as the two best-documented points.
+- A CRQC's arrival is a research-program outcome whose distribution is not known to outside observers. Estimates from credible sources range from "this decade" (rare, generally from people building the hardware) to "this century or never" (rare, generally from cryptographers concerned about the hardness of error correction). Bitcoin Institute treats the institutional NSA-2035 line and the named Adam Back 20-40 year line as the two best-documented points.
 - Bitcoin's protocol can soft-fork to add post-quantum signature support. That property — not a fixed cryptographic substrate — is what makes the engineering view of this topic differ from the world-ending one.
 - The migration risk concentrates on specific UTXO categories, not on Bitcoin as a system. P2PK era coins, exposed P2TR outputs, and reused P2PKH addresses are the high-exposure pool. Coins held in unspent P2PKH/P2WPKH with no reuse, then migrated before a CRQC exists, are in a different threat class.
 

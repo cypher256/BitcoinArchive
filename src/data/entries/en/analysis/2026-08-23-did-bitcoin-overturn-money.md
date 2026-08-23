@@ -54,7 +54,7 @@ Nine pages, on a mailing list, on October 31, 2008:
 <!-- quote: q1 -->
 > "I've been working on a new electronic cash system that's fully peer-to-peer, with no trusted third party."
 
-[This archive's own entry for that posting](/BitcoinArchive/entries/aftermath/2008-10-31-bitcoin-whitepaper-publication/) footnotes a novel that calls this sentence the start of a protocol that would overturn, at its root, a concept of money thousands of years old. That is a big claim to hang on nine pages. Eighteen years is long enough to check it against the record instead of against a feeling — so this entry does exactly that, across the five domains that would actually have to move for the claim to hold: money itself, the people who hold it, the field that studies it, the economists whose job is to say whether any of this counts, and the systems now trained on all of it.
+Bitcoin Institute puts it at its most literal: did the protocol carried in those nine pages overturn, at its root, a concept of money thousands of years old? Eighteen years is long enough to test that against the record instead of against a feeling — so this entry does exactly that, across the five domains that would actually have to move for the claim to hold: money itself, the people who hold it, the field that studies it, the economists whose job is to say whether any of this counts, and the systems now trained on all of it.
 
 ## What moved: the money
 
@@ -89,9 +89,9 @@ Two Nobel laureates, sixteen and seventeen years removed from the paper's public
 
 ## What moved: the AI models
 
-On August 2, 2026, this archive ran its own experiment: the same question, put to five AI models from five different labs — OpenAI's GPT, Anthropic's Claude, Google's Gemini, Moonshot AI's Kimi, and xAI's Grok. If you had to invest in exactly one cryptocurrency, which would you choose? [All five, independently, chose Bitcoin](/BitcoinArchive/entries/analysis/2026-08-02-ai-crypto-investment-survey/). Their reasoning converged on the same axes this archive already uses to read the field — no founder, no controlling party, a supply fixed by code rather than by policy — and when those specific structural claims were checked against primary sources, they held up.
+On August 2, 2026, Bitcoin Institute ran its own experiment: the same question, put to five AI models from five different labs — OpenAI's GPT, Anthropic's Claude, Google's Gemini, Moonshot AI's Kimi, and xAI's Grok. If you had to invest in exactly one cryptocurrency, which would you choose? [All five, independently, chose Bitcoin](/BitcoinArchive/entries/analysis/2026-08-02-ai-crypto-investment-survey/). Their reasoning converged on the same axes Bitcoin Institute already uses to read the field — no founder, no controlling party, a supply fixed by code rather than by policy — and when those specific structural claims were checked against primary sources, they held up.
 
-Five systems built by five different companies, with nothing to gain from any particular answer, given no constraint but "pick one," picked the same one — for the same reasons this archive already gives for calling Bitcoin digital gold.
+Five systems built by five different companies, with nothing to gain from any particular answer, given no constraint but "pick one," picked the same one — for the same reasons Bitcoin Institute already gives for calling Bitcoin digital gold.
 
 | Domain | Did it move? | What the record shows |
 |---|---|---|
@@ -118,14 +118,14 @@ timeline
     %% link: /BitcoinArchive/entries/analysis/2026-08-02-ai-crypto-investment-survey/
 ```
 
-## What I think actually happened
-
-I don't think the paper overturned the theory of money, and I don't think Fama or Krugman are wrong to say so — Bitcoin still doesn't function as a stable unit of account, and volatility is not a rounding error in that argument, it's the argument. Money's mechanics, as economists study them, look about as unconvinced by Bitcoin in 2026 as they did in 2010.
-
-But the theory of money was never the only thing at stake in those nine pages. What actually moved is narrower and, to me, stranger: for the first time, a scarce asset existed that no institution could print, freeze, or allocate by permission — and within eighteen years, institutions that exist specifically to hold and manage scarce assets built a $300 billion position in it anyway, governments fought each other over whether banning it or hoarding it was the safer bet, an entire research field organized itself around the document that made it possible, and five AI models with no stake in flattering the premise landed on the same asset for structurally accurate reasons. None of that required the economists' blessing, and none of it waited for one. That gap — between what the money did and what the discipline of money said about it — is the actual overturning. Not the theory changing hands. The permission being unnecessary in the first place.
-
 ## Limits
 
 - The $300 billion / 3.1 million BTC institutional figure is a point-in-time snapshot (July 2026); see [the ownership map](/BitcoinArchive/entries/analysis/2026-07-09-bitcoin-ownership-map/) for the as-of date on each component and the tracker disagreements behind them.
 - "The economists" here means two named, prominent Nobel-winning monetary economists, not a survey of the profession. Other economists have taken more favorable positions; this entry does not claim Fama and Krugman speak for the discipline, only that their prominence and their explicit, dated, on-the-record refusals to endorse a paradigm shift are themselves part of the record.
 - Ante (2020) measures the business-and-economics literature specifically; it does not speak to whether monetary theory as a sub-discipline has revised its models in response to Bitcoin, which is a narrower and separate question from whether blockchain research treats the paper as foundational.
+
+I don't think the paper overturned the theory of money, and I don't think Fama or Krugman are wrong to say so — Bitcoin still doesn't function as a stable unit of account, and volatility is not a rounding error in that argument, it's the argument. Money's mechanics, as economists study them, look about as unconvinced by Bitcoin in 2026 as they did in 2010.
+
+<!-- entry-closing -->
+
+But the theory of money was never the only thing at stake in those nine pages. What actually moved is narrower and, to me, stranger: for the first time, a scarce asset existed that no institution could print, freeze, or allocate by permission — and within eighteen years, institutions that exist specifically to hold and manage scarce assets built a $300 billion position in it anyway, governments fought each other over whether banning it or hoarding it was the safer bet, an entire research field organized itself around the document that made it possible, and five AI models with no stake in flattering the premise landed on the same asset for structurally accurate reasons. None of that required the economists' blessing, and none of it waited for one. That gap — between what the money did and what the discipline of money said about it — is the actual overturning. Not the theory changing hands. The permission being unnecessary in the first place.

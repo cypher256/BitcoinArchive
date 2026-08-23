@@ -37,7 +37,7 @@ inlineLinkKeywords:
 
 On August 15, 2010, Bitcoin's blockchain briefly contained 184 billion BTC — about nine thousand times the system's intended total supply. The exploit took roughly five hours to neutralize, and one of the things the recovery rested on was a clean snapshot of the chain held by a forum regular who went by the name "knightmb."
 
-Within hours that snapshot would be embedded in the recovery patch. Within years the man behind the handle would be embedded — in secondary sources, at least — in a different chain of events: a federal extortion conviction in Tennessee, a still-circulating claim that he had once held a tenth of all Bitcoin, and a public identification that no court document and no first-person statement actually confirms. This entry collects what the Archive's primary record shows about knightmb, and what the secondary record has done with him.
+Within hours that snapshot would be embedded in the recovery patch. Within years the man behind the handle would be embedded — in secondary sources, at least — in a different chain of events: a federal extortion conviction in Tennessee, a still-circulating claim that he had once held a tenth of all Bitcoin, and a public identification that no court document and no first-person statement actually confirms. This entry collects what the archive's primary record shows about knightmb, and what the secondary record has done with him.
 ## 1. The snapshot that saved Bitcoin's worst day
 
 The single sentence that anchors knightmb's place in the technical record sits in [Gavin Andresen's emergency patch announcement on August 15, 2010](/BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/):
@@ -70,11 +70,11 @@ He treated the question of "what hardware can run Bitcoin" as a matrix to be fil
 
 When [tcatm's 4-way SSE2 patch](/BitcoinArchive/entries/threads/forum/bitcointalk/topic-820/) appeared, knightmb tested it across his fleet within hours and reported back with hash-rate deltas per CPU class. When SSE2 detection broke on a Pentium III, he flagged it and offered to test future builds.
 
-This is a particular flavor of community contribution that doesn't have a clean name. He wasn't a core developer; he wasn't writing patches; he wasn't running mining pools. He was, on the evidence of the Archive's posts, the kind of participant who keeps the infrastructure breathing — testing across hardware, hosting snapshots, answering basic syncing questions for newcomers — without making it into anyone's biographical canon.
+This is a particular flavor of community contribution that doesn't have a clean name. He wasn't a core developer; he wasn't writing patches; he wasn't running mining pools. He was, on the evidence of the archive's posts, the kind of participant who keeps the infrastructure breathing — testing across hardware, hosting snapshots, answering basic syncing questions for newcomers — without making it into anyone's biographical canon.
 
 ## 3. Speaking with Satoshi
 
-knightmb appears in over 100 entries the Archive currently catalogs. Many of those threads also include Satoshi, and on multiple occasions the two engaged directly.
+knightmb appears in over 100 entries the archive currently catalogs. Many of those threads also include Satoshi, and on multiple occasions the two engaged directly.
 
 In a [July 2010 thread on coordinating private security disclosures](/BitcoinArchive/entries/threads/forum/bitcointalk/topic-628/), knightmb proposed setting up a restricted member-only forum where trusted participants could discuss exploits before public disclosure, modeling the suggestion on Simple Machines Forum's existing access-control features. [Satoshi's reply](/BitcoinArchive/entries/forum/bitcointalk/topic-628/2010-07-29-re-implementation-bug-prior-to-0-3-6/) — *"Actually, it works well to just PM me. I'm the one who's going to be fixing it"* — set what would become the model for how Bitcoin's early security disclosures actually flowed. knightmb's framing of the problem (community-based moderation versus single-developer point of contact) anticipated tensions that would resurface throughout Bitcoin's later history.
 
@@ -82,7 +82,7 @@ In other exchanges, knightmb pressed Satoshi on coin-divisibility decisions, tra
 
 ## 4. Anatomy of the "10% holder" myth
 
-Multiple secondary sources state that knightmb at one point held approximately 371,000 BTC — about 10% of the early Bitcoin supply. The claim has propagated into archived blog posts, an academic survey paper, and AI-generated profiles of him. The Archive's primary-source record does not support it, and contains material that directly contradicts it.
+Multiple secondary sources state that knightmb at one point held approximately 371,000 BTC — about 10% of the early Bitcoin supply. The claim has propagated into archived blog posts, an academic survey paper, and AI-generated profiles of him. The archive's primary-source record does not support it, and contains material that directly contradicts it.
 
 The genealogy appears to be a misattribution. On [July 18, 2010](/BitcoinArchive/entries/forum/bitcointalk/topic-431/2010-07-18-knightmb-msg3952/), a user named **wobber** posted about an early miner running approximately 1,000 cores who, by wobber's estimate, had generated about 10% of all extant BTC. Wobber explicitly named the person he was describing: William Pitock (handle "Nenolod"), with a Twitter link.
 
@@ -101,12 +101,12 @@ And the misattribution illustrates a structural property of how Bitcoin's early-
 
 ## 5. The Tennessee shadow
 
-A common identification in secondary sources is that knightmb was Michael Mancil Brown, a Tennessee resident reported to have been convicted in U.S. federal court in 2016 on wire-fraud and extortion charges. The case has been widely covered: per these secondary accounts, Brown was indicted in connection with a 2012 scheme that demanded $1 million in Bitcoin in exchange for not releasing what he claimed were stolen tax returns of presidential candidate Mitt Romney, and received 48 months in federal prison and a $200,000 fine. The Archive has not directly inspected the federal court filings; the figures cited here are taken from the same secondary aggregators that propose the knightmb identification.
+A common identification in secondary sources is that knightmb was Michael Mancil Brown, a Tennessee resident reported to have been convicted in U.S. federal court in 2016 on wire-fraud and extortion charges. The case has been widely covered: per these secondary accounts, Brown was indicted in connection with a 2012 scheme that demanded $1 million in Bitcoin in exchange for not releasing what he claimed were stolen tax returns of presidential candidate Mitt Romney, and received 48 months in federal prison and a $200,000 fine. Bitcoin Institute has not directly inspected the federal court filings; the figures cited here are taken from the same secondary aggregators that propose the knightmb identification.
 
 The link between this conviction and the BitcoinTalk handle "knightmb" rests on circumstantial reasoning rather than documentary confirmation. Among the supporting points cited by secondary sources:
 
 - Both the convicted defendant and the BitcoinTalk handle owner were active in early Bitcoin and located in the United States.
-- knightmb was the developer of an alternative cryptocurrency named Timekoin (a project the Archive does not currently document with primary sources).
+- knightmb was the developer of an alternative cryptocurrency named Timekoin (a project the archive does not currently document with primary sources).
 - Brown's scheme demanded payment in Bitcoin specifically — a 2012 detail unusual enough to plausibly reflect prior community involvement.
 
 What is *not* present in the public record:
@@ -117,13 +117,13 @@ What is *not* present in the public record:
 
 The identification has been picked up by secondary news aggregators, at least one academic survey paper, and AI-generated biographical profiles. None of those sources, on inspection, traces back to a primary document — court record or first-person attestation — that closes the inferential gap.
 
-This Archive's [biographical entry on knightmb](/BitcoinArchive/participants/knightmb/) retains the conservative wording: "His real name has not been publicly disclosed." The material in this section is presented for context, not for endorsement.
+This archive's [biographical entry on knightmb](/BitcoinArchive/participants/knightmb/) retains the conservative wording: "His real name has not been publicly disclosed." The material in this section is presented for context, not for endorsement.
 
 Whether the circumstantial chain is strong enough to count as an identification, or whether — as in the 10%-holder case — secondary-source convergence has outpaced the primary-source evidence, is laid out in the evidence above.
 
 ## 6. Timekoin and after
 
-After the dense 2010 BitcoinTalk activity catalogued in this Archive, knightmb's footprint in the Archive's source set thins. He continued to post on BitcoinTalk into the years that follow, and secondary biographies widely associate him with developing Timekoin, an alternative cryptocurrency that took a different approach to consensus — a project the Archive does not currently document with primary sources.
+After the dense 2010 BitcoinTalk activity catalogued in this Archive, knightmb's footprint in the archive's source set thins. He continued to post on BitcoinTalk into the years that follow, and secondary biographies widely associate him with developing Timekoin, an alternative cryptocurrency that took a different approach to consensus — a project the archive does not currently document with primary sources.
 
 ## 7. What the silence preserves
 

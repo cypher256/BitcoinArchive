@@ -48,7 +48,7 @@ According to Bauwens, one message explained why Satoshi wanted to publish the Bi
 <!-- audit:quote-skip -->
 > "And offering me a few bitcoins. Unfortunately I didn't answer that proposal."
 
-Bauwens also recalled that Satoshi later wrote to deny being "the Japanese guy" identified in the press, and at one point promised to write again but never followed up. This private message postdates [Satoshi's final known email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/) of April 2011, but the corresponding email itself is not preserved in the Archive, leaving it as a secondhand account.
+Bauwens also recalled that Satoshi later wrote to deny being "the Japanese guy" identified in the press, and at one point promised to write again but never followed up. This private message postdates [Satoshi's final known email](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/) of April 2011, but the corresponding email itself is not preserved in the archive, leaving it as a secondhand account.
 
 Although Bauwens said he was not enthusiastic about Bitcoin's energy requirements, he described its historical importance in much stronger terms:
 

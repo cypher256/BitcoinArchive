@@ -75,7 +75,7 @@ By January 2020, at a different venue, Garlinghouse drew a line inside his own s
 <!-- audit:quote-skip -->
 > I'm bullish on BTC as a store of value, but not for payments.
 
-The split matters because it is the same line [the archive's electronic-cash-versus-digital-gold analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/) traces through Bitcoin's own history — a chain whose scarcity properties suit holding better than spending. Garlinghouse is not arguing Bitcoin fails; he is arguing it succeeds at one of the two things its own whitepaper subtitle promised, and that his company's ledger is built for the other one.
+The split matters because it is the same line [Bitcoin Institute's electronic-cash-versus-digital-gold analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/) traces through Bitcoin's own history — a chain whose scarcity properties suit holding better than spending. Garlinghouse is not arguing Bitcoin fails; he is arguing it succeeds at one of the two things its own whitepaper subtitle promised, and that his company's ledger is built for the other one.
 
 ## The lawsuit his own sales record produced
 

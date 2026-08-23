@@ -85,7 +85,7 @@ On April 30, 2024, Spanish authorities arrested Ver on a U.S. extradition reques
 
 ## Significance to Bitcoin
 
-Ver's record matters in this archive for three roles. First, his 2011-era investments into the founding generation of Bitcoin businesses materially shaped which projects survived their seed phase.
+Ver's record matters to Bitcoin Institute for three roles. First, his 2011-era investments into the founding generation of Bitcoin businesses materially shaped which projects survived their seed phase.
 
 Second, he was the principal public face of the larger-block faction during the 2015–2017 dispute, and his post-2017 promotion of BCH on bitcoin.com is the dominant editorial channel through which the BCH side of that history reached general audiences.
 

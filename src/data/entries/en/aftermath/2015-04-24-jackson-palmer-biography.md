@@ -97,7 +97,7 @@ In July 2021 Palmer posted a public rejection of the whole industry. Its central
 <!-- audit:quote-skip -->
 > After years of studying it, I believe that cryptocurrency is an inherently right-wing, hyper-capitalistic technology built primarily to amplify the wealth of its proponents through a combination of tax avoidance, diminished regulatory oversight and artificially enforced scarcity.
 
-This archive records the statement and does not arbitrate it. One clause in it is not about politics but about a specific design decision: "artificially enforced scarcity" is the 21-million cap, and Palmer is asserting that a fixed supply functions as a wealth-concentration mechanism rather than as a defense against debasement. [The fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) sets out both readings of that same parameter and does not close the question either.
+Bitcoin Institute records the statement and does not arbitrate it. One clause in it is not about politics but about a specific design decision: "artificially enforced scarcity" is the 21-million cap, and Palmer is asserting that a fixed supply functions as a wealth-concentration mechanism rather than as a defense against debasement. [The fixed-supply comparison](/BitcoinArchive/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/) sets out both readings of that same parameter and does not close the question either.
 
 The thread also stated why he stopped arguing in public — that critics get smeared rather than answered. Whether or not one accepts the characterization, it is the stated reason a founder went quiet, and it belongs to the record of what this community was like to be inside.
 

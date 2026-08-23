@@ -45,7 +45,7 @@ Every documented Satoshi Nakamoto event in this archive — private email, maili
 
 ## 1. What is included
 
-Every Archive entry attributed to Satoshi as the author — private correspondence, mailing-list posts (cryptography, bitcoin-list, p2p-research), BitcoinTalk and P2P Foundation forum posts, and SourceForge releases. The timeline does not include third-party writing about Satoshi.
+Every archive entry attributed to Satoshi as the author — private correspondence, mailing-list posts (cryptography, bitcoin-list, p2p-research), BitcoinTalk and P2P Foundation forum posts, and SourceForge releases. The timeline does not include third-party writing about Satoshi.
 
 ## 2. How to read the chart
 
@@ -59,6 +59,6 @@ Each dot is one event. The horizontal axis is time (August 2008 to early 2014). 
 - The explosion of BitcoinTalk activity from late 2009 through 2010 — the densest stretch of Satoshi's documented life.
 - The 75-day SourceForge SVN gap in March–May 2010 (separately analyzed in [the source-code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/)).
 - The rapid tail-off in early 2011, ending with the April 2011 farewells to Mike Hearn and Gavin Andresen.
-- The single [disputed 2014 P2P Foundation post (the Dorian rebuttal)](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/), which sits alone three years after everything else. Michel Bauwens later [recalled in a 2025 interview](/BitcoinArchive/entries/aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin/) that Satoshi also wrote to him directly around that time to deny being the man identified by Newsweek — that private message is not in the Archive (no published copy exists), but it is the missing context for the lone 2014 dot.
+- The single [disputed 2014 P2P Foundation post (the Dorian rebuttal)](/BitcoinArchive/entries/aftermath/2014-03-07-satoshi-p2p-foundation-return/), which sits alone three years after everything else. Michel Bauwens later [recalled in a 2025 interview](/BitcoinArchive/entries/aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin/) that Satoshi also wrote to him directly around that time to deny being the man identified by Newsweek — that private message is not in the archive (no published copy exists), but it is the missing context for the lone 2014 dot.
 
 For the editorial reading of *what Satoshi said about himself* across this corpus, see [the self-references analysis](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/).

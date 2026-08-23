@@ -50,7 +50,7 @@ inlineLinkKeywords:
 
 ![A network of connected nodes surrounding a coin-shaped consensus card, beside a mempool waiting-room panel and a chain of linked blocks](/BitcoinArchive/images/analysis/how-bitcoin-works-visual-glossary-hero.png)
 
-This entry is written to be readable without prior background — no prior knowledge of Bitcoin, cryptography, or how computers exchange data is assumed. By the time you reach the bottom, you should be able to read the rest of the Archive without getting lost in jargon. Every key term gets a one-line definition the first time it appears, plus a diagram showing where it fits.
+This entry is written to be readable without prior background — no prior knowledge of Bitcoin, cryptography, or how computers exchange data is assumed. By the time you reach the bottom, you should be able to read the rest of the archive without getting lost in jargon. Every key term gets a one-line definition the first time it appears, plus a diagram showing where it fits.
 
 If you want to look up a single word, jump to the [Quick reference glossary](#2-quick-reference-glossary). Otherwise read top-to-bottom — each chapter assumes only what the previous chapters covered.
 
