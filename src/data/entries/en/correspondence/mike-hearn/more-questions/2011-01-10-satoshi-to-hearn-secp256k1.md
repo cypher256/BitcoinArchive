@@ -28,6 +28,10 @@ quotes:
     personSlug: "mike-hearn"
     date: "2011-01-10T16:48:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2011-01-10-hearn-to-satoshi-secp256k1"
+relatedEntries:
+  - aftermath/2008-10-31-bitcoin-whitepaper-publication
+  - analysis/2009-01-09-satoshi-windows-development-environment
+  - analysis/2008-08-20-satoshi-self-statements
 ---
 
 <!-- quote: q1 -->

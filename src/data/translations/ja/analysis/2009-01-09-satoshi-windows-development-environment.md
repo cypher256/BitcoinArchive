@@ -48,6 +48,8 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - design/2009-01-03-bitcoin-architecture-evolution
   - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius
+  - aftermath/2008-10-31-bitcoin-whitepaper-publication
+  - correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-secp256k1
 inlineLinkKeywords:
   - "利用者として能動、貢献者として受動"
 translationStatus: complete

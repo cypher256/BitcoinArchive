@@ -56,6 +56,7 @@ relatedEntries:
   - aftermath/2009-07-22-bitcoin-exchange-proposal
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
   - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius
+  - correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-secp256k1
 inlineLinkKeywords:
   - "サトシの自己言及"
   - "サトシ自身の言葉"

@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-15T23:12:31.395Z",
-  "total": 784,
+  "generated": "2026-08-23T00:31:19.875Z",
+  "total": 785,
   "channelCounts": {
-    "other": 41,
+    "other": 42,
     "private-email": 172,
     "cryptography-ml": 20,
     "bitcoin-list-ml": 16,
@@ -63,8 +63,8 @@
     {
       "date": "2008-10-31T18:10:00.000Z",
       "channel": "other",
-      "title": "Satoshi posts the Bitcoin whitepaper — two days of silence",
-      "titleJa": "サトシがビットコインホワイトペーパーを公開、二日間の沈黙",
+      "title": "Satoshi posts the Bitcoin whitepaper — 18 months of code already behind it",
+      "titleJa": "サトシがビットコインホワイトペーパーを公開 ― 1年半のコーディングを経て",
       "slug": "aftermath/2008-10-31-bitcoin-whitepaper-publication"
     },
     {
@@ -514,6 +514,13 @@
       "title": "Re: [bitcoin-list] Bitcoin v0.1.5 released",
       "titleJa": "Re: [bitcoin-list] Bitcoin v0.1.5 リリース",
       "slug": "emails/bitcoin-list/v015-released/2009-03-04-re-bitcoin-v0-1-5-released"
+    },
+    {
+      "date": "2009-03-09T17:58:40.000Z",
+      "channel": "other",
+      "title": "The Byzantine Generals' Problem",
+      "titleJa": "ビザンチン将軍問題",
+      "slug": "web-document/satoshi/2009-03-09-byzantine-generals-problem"
     },
     {
       "date": "2009-04-12T22:44:00.000Z",
