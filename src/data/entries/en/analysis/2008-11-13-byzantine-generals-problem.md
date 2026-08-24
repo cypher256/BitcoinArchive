@@ -91,7 +91,7 @@ James A. Donald had been pushing on the same question since his first reply elev
 <!-- quote: q1 -->
 > The process for arriving at a globally shared view of who owns what bitgold coins is insufficiently specified.
 
-*[Context: "bitgold coins" is a naming conflation shared by the thread's earliest repliers, not a reference to Nick Szabo — [the Szabo–Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) traces it.]*
+*[Context: "bitgold coins" is a naming conflation James A. Donald and Hal Finney both reached for early in the thread, not a reference to Nick Szabo — [the Szabo–Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) traces it.]*
 
 [Replying to Satoshi's explanation of transaction finality](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem/), he gave the difficulty its classical name:
 

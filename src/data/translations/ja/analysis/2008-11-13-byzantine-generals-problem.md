@@ -92,7 +92,7 @@ timeline
 <!-- quote: q1 -->
 > 誰がどの bitgold コインを所有しているかについて、グローバルに共有された見解へ至るプロセスの規定が不十分だ。
 
-*[補足：引用中の「bitgold コイン」は、スレッド最初期の返信者たちに共通する呼び名の混同であり、ニック・サボへの言及ではない。経緯は[サボ=サトシ仮説のエントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)がたどっている。]*
+*[補足：引用中の「bitgold コイン」は、ジェームズ・A・ドナルドとハル・フィニーの二人がスレッド早期にそれぞれ使った呼び名の混同であり、ニック・サボへの言及ではない。経緯は[サボ=サトシ仮説のエントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)がたどっている。]*
 
 [サトシによるトランザクション確定性の説明への返信](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem/)の中で、彼はこの難しさに古典の名前を与えた。
 
