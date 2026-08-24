@@ -236,11 +236,9 @@ Bit Gold は概念的提案にとどまった。ビットコイン v0.1 の主�
 
 サボがサトシでもあるためには、この説は、2008 年 4 月に公的に Bit Gold の実装支援を求めていて、他に C++ を公開した記録のない同一人物が、2007 年央〜2009 年 1 月に動作する 19,901 行の C++ をビットコイン v0.1 として生産した、という像を説明しなければならない。普通に推論すれば、平易な言葉で他人にコード支援を求める人物が、より易しい先行システムについて支援を求めながら、同じ時間軸で密かにより難しい後継システムを世に出す、という像にはならない。
 
-### 2.6 文体計量の不確定性と確証バイアスのリスク
+### 2.6 バック・ダイ・フィニー・サトシとの直接のやり取りが記録に無い
 
-Skye Grey の分析は匿名のブログ記事で査読がなく、選定された候補集合は「デジタルキャッシュについて書いた人々」という主題的に重なる集合に限定される。これは共有された主題語彙と共有された個人スタイルを構造的に混同する設計上の弱点を持つ。アストン大学の研究はより形式的だが、候補集合の妥当性と方法論の選択について継続的な批判を受けている。
-
-[2026 年の NYT カレイロウ調査がアダム・バックに対して行った 620 人の候補プールでの検証](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)と比べると、サボへの文体計量主張はより小さな候補集合に対するもの。文体計量結果は厳密な統計的証明ではなく、確証バイアスへの対処の弱さも含めて方法論的限界を抱えている。
+アダム・バック、ウェイ・ダイ、ハル・フィニーには、それぞれサトシとの一次資料の書簡がこのアーカイブに保存されている――バックとの [2008 年 8 月、Hashcash 引用をめぐるやり取り](/BitcoinArchive/ja/entries/correspondence/adam-back/2008-08-20-satoshi-to-adam-back-hashcash-citation/)、ダイとの [2008 年 8 月、b-money をめぐるやり取り](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、そしてフィニーとの、Bit Gold との比較を最初に持ち出した [2008 年 11 月の暗号学メーリングリストでのやり取り](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/)（§1.1）。サボにはこの三者いずれとも、サトシ本人とも、これに相当する記録が無い。サボとサトシ、サボとバック、サボとダイ、サボとフィニーの間に、メール・書簡・フォーラムでのやり取りが確認された例は一件も無い。サボは libtech リスト（§1.4）でダイと同じ非公開の場に居合わせていたが、そこで確認できるのは同じ場への参加と話題の重なりであり、二人の間で交わされたやり取りそのものではない。サボとビットコイン周辺の記録をつなぐものは、常に一方向かつ公開の場にとどまる。サトシは [2010 年 7 月のフォーラム投稿](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-342/2010-07-20-re-they-want-to-delete-the-wikipedia-article/)で Bit Gold を b-money と並べて名指ししたが、これはサボへ宛てたものではなく公の発言であり、サボも 2011 年 5 月に自身のブログでビットコインについて書いた（§2.2）が、これも返信ではなく公開の投稿である。サイファーパンク期の近さ（§1.4）を論拠の一部とする候補にとって、サトシの記録された交友圏に最も近い三者との直接のやり取りが一件も無いことは、状況証拠と実証された接点の間に残るもう一つの隔たりである。
 
 ## 3. より広い公開記録の中で
 
@@ -248,7 +246,7 @@ Skye Grey の分析は匿名のブログ記事で査読がなく、選定され�
 
 サボは 2007〜2008 年に可視（Unenumerated ブログでの継続投稿）だった。アダム・バックと同様、識別性論のもとでは反証として作用する。
 
-[ハル・フィニーの初期通信](/BitcoinArchive/ja/participants/hal-finney/)はビットコインと Bit Gold の概念的近似を指摘していたが、サトシ自身は 2008 年 8 月のアダム・バックの紹介経由でウェイ・ダイの b-money を知った（[2008 年 8 月のメール通信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/)による）。サボとサトシの直接通信は公開されていない。
+[ハル・フィニーの初期通信](/BitcoinArchive/ja/participants/hal-finney/)はビットコインと Bit Gold の概念的近似を指摘していたが、サトシ自身は 2008 年 8 月のアダム・バックの紹介経由でウェイ・ダイの b-money を知った（[2008 年 8 月のメール通信](/BitcoinArchive/ja/entries/aftermath/2008-08-21-adam-back-to-satoshi/)による）。サボとサトシの直接通信は公開されていない――サボとの記録された接点の乏しさ全般については §2.6 を参照。
 
 他の固有名候補仮説との比較は、[サトシ正体仮説の概観](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)と、[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)・[サッサマン](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)・[金子勇](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/)・[トッド](/BitcoinArchive/ja/entries/analysis/2024-10-08-todd-satoshi-identity-hypothesis/)の個別仮説エントリーを参照されたい。
 
