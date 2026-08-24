@@ -10,7 +10,7 @@ participants:
     slug: "peter-todd"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "サトシの思考の続きのような返信 — その 2 日後、サトシは消えた。HBO『Money Electric』が名指ししたトッド＝サトシの証拠を秤にかける。"
+description: "サトシの思考の続きのような返信をした 2 日後、サトシは消えた。HBO『Money Electric』が名指ししたトッド＝サトシの証拠を秤にかける。"
 isSatoshi: false
 tags:
   - "satoshi-identity"

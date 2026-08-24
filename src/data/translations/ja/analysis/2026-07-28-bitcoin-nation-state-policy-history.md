@@ -1,5 +1,5 @@
 ---
-title: "ビットコインをどう統治してきたか ― 30 か国近くが方針転換、動かなかったのは日本と EU だけ"
+title: "ビットコインをどう統治してきたか — 30 か国近くが方針転換、動かなかったのは日本と EU だけ"
 date: "2026-07-28T00:00:00Z"
 type: "analysis"
 source: "bitcointreasuries"
@@ -19,63 +19,63 @@ tags:
   - "european-union"
   - "strategic-bitcoin-reserve"
 secondarySources:
-  - name: "ホワイトハウス ― トランプ大統領が戦略ビットコイン準備を設立したことを伝えるファクトシート（2025 年 3 月 6 日）"
+  - name: "ホワイトハウス — トランプ大統領が戦略ビットコイン準備を設立したことを伝えるファクトシート（2025 年 3 月 6 日）"
     url: "https://www.whitehouse.gov/fact-sheets/2025/03/fact-sheet-president-donald-j-trump-establishes-the-strategic-bitcoin-reserve-and-u-s-digital-asset-stockpile/"
-  - name: "CoinDesk ― 中国当局が PlusToken 事件のビットコイン約 40 億ドル相当を国庫に没収（2020 年 11 月）"
+  - name: "CoinDesk — 中国当局が PlusToken 事件のビットコイン約 40 億ドル相当を国庫に没収（2020 年 11 月）"
     url: "https://www.coindesk.com/markets/2020/11/27/chinese-authorities-have-seized-a-massive-4b-in-crypto-from-plustoken-scam"
-  - name: "CNBC ― IMF がエルサルバドルに法定通貨の地位撤回を要請（2022 年 1 月 25 日）"
+  - name: "CNBC — IMF がエルサルバドルに法定通貨の地位撤回を要請（2022 年 1 月 25 日）"
     url: "https://www.cnbc.com/2022/01/25/drop-bitcoin-as-legal-tender-imf-urges-el-salvador.html"
-  - name: "Bloomberg Tax ― エルサルバドルがビットコイン法改正の政令を官報公示"
+  - name: "Bloomberg Tax — エルサルバドルがビットコイン法改正の政令を官報公示"
     url: "https://news.bloombergtax.com/daily-tax-report-international/el-salvador-gazettes-decree-amending-bitcoin-law"
     note: "2025 年 1 月 30 日、義務的受け入れを撤回する法改正。"
-  - name: "Droit-Afrique ― 中央アフリカ共和国の暗号通貨規制法（2022 年 4 月 22 日、法 22.004 号、一次資料）"
+  - name: "Droit-Afrique — 中央アフリカ共和国の暗号通貨規制法（2022 年 4 月 22 日、法 22.004 号、一次資料）"
     url: "http://www.droit-afrique.com/uploads/RCA-Loi-2022-04-cryptomonnaie.pdf"
-  - name: "Central Banking ― 中央アフリカ共和国が仮想通貨の法定通貨の地位を撤回（2023 年 3 月）"
+  - name: "Central Banking — 中央アフリカ共和国が仮想通貨の法定通貨の地位を撤回（2023 年 3 月）"
     url: "https://www.centralbanking.com/central-banks/currency/digital-currencies/7956294/car-to-drop-crypto-as-legal-tender"
-  - name: "CNN ― 英国の裁判所が 66 億ドル規模のビットコイン詐欺でジミン・チエンに実刑判決（2025 年 11 月 11 日）"
+  - name: "CNN — 英国の裁判所が 66 億ドル規模のビットコイン詐欺でジミン・チエンに実刑判決（2025 年 11 月 11 日）"
     url: "https://www.cnn.com/2025/11/11/uk/zhimin-qian-cryptocurrency-fraud-scheme-jailed-uk-intl-hnk"
-  - name: "CryptoSlate ― 世界的な潮流にもかかわらず英国には国家ビットコイン準備の計画がない"
+  - name: "CryptoSlate — 世界的な潮流にもかかわらず英国には国家ビットコイン準備の計画がない"
     url: "https://cryptoslate.com/uk-has-no-plan-to-establish-national-bitcoin-reserve-despite-global-trend/"
-  - name: "チェコ国立銀行 ― CNB がデジタル資産の試験運用ポートフォリオを創設"
+  - name: "チェコ国立銀行 — CNB がデジタル資産の試験運用ポートフォリオを創設"
     url: "https://www.cnb.cz/en/cnb-news/press-releases/The-CNB-creates-a-test-portfolio-of-digital-assets/"
-  - name: "CoinDesk ― チェコ中央銀行が世界初のビットコイン購入に踏み切る（2025 年 11 月 13 日）"
+  - name: "CoinDesk — チェコ中央銀行が世界初のビットコイン購入に踏み切る（2025 年 11 月 13 日）"
     url: "https://www.coindesk.com/business/2025/11/13/czech-central-bank-becomes-first-central-bank-to-buy-bitcoin"
-  - name: "Forbes ― ブータンが静かに築いた 7 億 5,000 万ドル相当のビットコイン保有（2024 年 9 月 17 日）"
+  - name: "Forbes — ブータンが静かに築いた 7 億 5,000 万ドル相当のビットコイン保有（2024 年 9 月 17 日）"
     url: "https://www.forbes.com/sites/digital-assets/2024/09/17/how-bhutan-quietly-built-750-million-in-bitcoin-holdings/"
-  - name: "CoinDesk ― ブータンが 18 か月でビットコイン保有の 7 割を売却（2026 年 4 月 11 日）"
+  - name: "CoinDesk — ブータンが 18 か月でビットコイン保有の 7 割を売却（2026 年 4 月 11 日）"
     url: "https://www.coindesk.com/markets/2026/04/11/bhutan-has-sold-70-of-its-bitcoin-in-18-months-it-may-have-stopped-btc-mining-too"
-  - name: "CoinDesk ― アリゾナ州知事が暗号資産を『実績のない投資』と呼び準備法案を拒否（2025 年 5 月 3 日）"
+  - name: "CoinDesk — アリゾナ州知事が暗号資産を『実績のない投資』と呼び準備法案を拒否（2025 年 5 月 3 日）"
     url: "https://www.coindesk.com/policy/2025/05/03/arizona-governor-calls-crypto-an-untested-investment-vetoes-bitcoin-reserve-bill"
-  - name: "The Block ― テキサス州知事が戦略ビットコイン準備法に署名（2025 年 6 月）"
+  - name: "The Block — テキサス州知事が戦略ビットコイン準備法に署名（2025 年 6 月）"
     url: "https://www.theblock.co/post/359089/texas-governor-greg-abbott-signs-strategic-bitcoin-reserve-bill-into-law"
-  - name: "CoinDesk ― ニューハンプシャー州が米国初の仮想通貨準備法を可決（2025 年 5 月 6 日）"
+  - name: "CoinDesk — ニューハンプシャー州が米国初の仮想通貨準備法を可決（2025 年 5 月 6 日）"
     url: "https://www.coindesk.com/policy/2025/05/06/new-hampshire-becomes-first-state-to-approve-crypto-reserve-law"
-  - name: "Cointelegraph ― ボリビアの暗号資産政策の変遷"
+  - name: "Cointelegraph — ボリビアの暗号資産政策の変遷"
     url: "https://web.archive.org/web/20250724160918/https://cointelegraph.com/learn/articles/the-evolution-of-crypto-policy-in-bolivia"
-  - name: "Nairametrics ― ナイジェリア中央銀行が仮想資産規制のガイドラインを公表（2023 年 12 月 22 日）"
+  - name: "Nairametrics — ナイジェリア中央銀行が仮想資産規制のガイドラインを公表（2023 年 12 月 22 日）"
     url: "https://nairametrics.com/2023/12/22/cbn-releases-guidelines-for-regulating-virtual-assets-in-nigeria/"
-  - name: "CryptoSlate ― インド・インターネットモバイル協会対インド準備銀行の判例"
+  - name: "CryptoSlate — インド・インターネットモバイル協会対インド準備銀行の判例"
     url: "https://cryptoslate.com/crypto-laws/internet-mobile-association-india-v-reserve-bank-india/"
-  - name: "CryptoSlate ― 中国人民銀行など複数当局による仮想通貨投機取引に関する通達（2021 年）"
+  - name: "CryptoSlate — 中国人民銀行など複数当局による仮想通貨投機取引に関する通達（2021 年）"
     url: "https://cryptoslate.com/crypto-laws/china-pboc-multi-agency-notice-virtual-currency-trading-speculation-2021/"
-  - name: "CoinDesk ― 中国が取り締まりをステーブルコインとトークン化資産にも拡大（2026 年 2 月 6 日）"
+  - name: "CoinDesk — 中国が取り締まりをステーブルコインとトークン化資産にも拡大（2026 年 2 月 6 日）"
     url: "https://www.coindesk.com/policy/2026/02/06/china-expands-crypto-crackdown-to-stablecoins-asset-tokenization"
-  - name: "European Central Bank ― ビンドザイルとシャーフによるブログ『ビットコインの最後の砦』（2022 年 11 月 30 日）"
+  - name: "European Central Bank — ビンドザイルとシャーフによるブログ『ビットコインの最後の砦』（2022 年 11 月 30 日）"
     url: "https://www.ecb.europa.eu/press/blog/date/2022/html/ecb.blog221130~5301eecd19.en.html"
-  - name: "EUR-Lex ― MiCA 規則（EU 2023/1114 号）の官報テキスト"
+  - name: "EUR-Lex — MiCA 規則（EU 2023/1114 号）の官報テキスト"
     url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1114"
-  - name: "CryptoSlate ― トルコの法律 7518 号が仮想資産事業者を資本市場委員会の監督下に置く"
+  - name: "CryptoSlate — トルコの法律 7518 号が仮想資産事業者を資本市場委員会の監督下に置く"
     url: "https://cryptoslate.com/crypto-laws/turkey-law-7518-capital-markets-law-crypto-assets/"
-  - name: "CoinDesk ― モロッコ中央銀行総裁が暗号資産の規制法案を策定中と発言（2024 年 11 月 26 日）"
+  - name: "CoinDesk — モロッコ中央銀行総裁が暗号資産の規制法案を策定中と発言（2024 年 11 月 26 日）"
     url: "https://www.coindesk.com/policy/2024/11/26/morocco-drafts-regulations-for-crypto-central-bank-governor-says"
-  - name: "Crypto Times ― アルジェリアが新法で仮想通貨活動全般を犯罪化（2025 年 7 月）"
+  - name: "Crypto Times — アルジェリアが新法で仮想通貨活動全般を犯罪化（2025 年 7 月）"
     url: "https://www.cryptotimes.io/2025/07/30/algeria-criminalizes-all-cryptocurrency-activities-under-new-law/"
-  - name: "Bitcoin-Bundesverband ― SPD、ビットコインの税制優遇廃止を求める"
+  - name: "Bitcoin-Bundesverband — SPD、ビットコインの税制優遇廃止を求める"
     url: "https://bitcoin-bundesverband.de/en/spd-calls-for-abolition-of-tax-exemption-on-bitcoin/"
     note: "SPD ゼーハイマー派が 2025 年 11 月に発表した、優遇廃止を求める戦略文書。本稿がこのエントリーの日付として扱う 2025 年 11 月の提案そのものであり、クリングバイル財相による後年の 2027 年度予算案での再燃とは別件。"
-  - name: "Cryptopolitan ― ドイツのクリングバイル財務相が暗号資産の税制優遇廃止案を再燃させる"
+  - name: "Cryptopolitan — ドイツのクリングバイル財務相が暗号資産の税制優遇廃止案を再燃させる"
     url: "https://www.cryptopolitan.com/germanys-klingbeil-revives-spd-plan-to-end-crypto-tax-exemption-in-2027-budget/"
-  - name: "BitcoinTreasuries ― エルサルバドル政府のビットコイン保有量"
+  - name: "BitcoinTreasuries — エルサルバドル政府のビットコイン保有量"
     url: "https://bitcointreasuries.net/governments/el-salvador"
 relatedEntries:
   - aftermath/2025-03-06-us-strategic-bitcoin-reserve
@@ -165,7 +165,7 @@ timeline
 
 上の表に一度も現れない政府が二つある。日本と EU はそもそもビットコインを禁止したことがなく、したがって撤回すべき転換の記録もない。理由は §4 で扱う。
 
-## 2. 禁止と没収 ― 最大級の国家保有はこうして生まれた
+## 2. 禁止と没収 — 最大級の国家保有はこうして生まれた
 
 最も広範な禁止を敷いた国が、同時に国家帰属の残高としては世界最大級とされるビットコインを抱える国でもある。中国の警察は 2019 年、PlusToken というポンジ・スキームの運営者から 194,775 BTC を押収した。塩城市の裁判所は 2020 年 11 月 19 日、このビットコインを国庫に没収する判決を下した。同じ政府が仮想通貨事業全体を違法と宣言する 9 か月前のことだ。コインが国家の手元に残ったのは、北京がビットコインを保有する価値があると判断したからではない。詐欺事件の証拠として押収され、資産をすでに違法と宣言した政府には、それを国内市場で売る先がないからだ。[ビットコインの保有地図](/BitcoinArchive/ja/entries/analysis/2026-07-09-bitcoin-ownership-map/)は、この残高と、他のすべての政府の残高が今どこにあるかを追跡している。
 
@@ -189,7 +189,7 @@ timeline
 
 | | エルサルバドル | 中央アフリカ共和国 |
 |---|---|---|
-| 法定通貨化 | 2021 年 9 月 ― 世界初 | 2022 年 4 月 22 日 ― 法 22.004 号、世界で 2 番目 |
+| 法定通貨化 | 2021 年 9 月 — 世界初 | 2022 年 4 月 22 日 — 法 22.004 号、世界で 2 番目 |
 | 外部からの圧力 | IMF が法定通貨の地位撤回を要請（2022 年 1 月 25 日） | IMF が法的・透明性・経済上のリスクを警告（2022 年 5 月 4 日） |
 | 撤回 | 議会が義務的受け入れを撤回（2025 年 1 月 30 日） | 義務的受け入れを終了、参考仮想通貨に格下げ（2023 年 3 月 23 日、全会一致） |
 
@@ -205,20 +205,20 @@ EU は正反対の道筋で同じ場所にたどり着いた。暗号資産市�
 
 | | 日本 | EU |
 |---|---|---|
-| 各歩みの引き金 | 取引所の破綻やハッキング ― Mt. Gox、次いでコインチェック | 単一の引き金なし。事前に策定された一つの包括法 |
+| 各歩みの引き金 | 取引所の破綻やハッキング — Mt. Gox、次いでコインチェック | 単一の引き金なし。事前に策定された一つの包括法 |
 | 制度の形 | 改定のたびに新たな免許区分を加える登録制度 | 発行体を持たない資産への明示的な除外規定を伴う単一規則 |
 | 方向性 | 2016 年以来の連続した強化、同じ法律を繰り返し改正 | 2023 年施行の単一の法律、以後の改正なし |
 | ビットコイン自体の位置づけ | 2019 年以来、暗号資産として規制、禁止されたことはない | 発行体向け義務から除外、ECB 自身のエコノミストは正当化すべきでないと主張 |
 
 日本が強化を重ねるのは、取引所の破綻、ハッキング、ルールブックを必要とするステーブルコインの登場など、何かが壊れるたびだ。そのたびの手当てが、禁止に手を伸ばすことなく制度をさらに狭めていく。EU は一気に自らのルールブックを書き上げ、そのルールブックが最も説明しづらかった唯一の資産に、そのための除外規定を書き加えた。どちらの政府にも撤回すべきものはなく、そこに至った理由も同じではない。
 
-## 5. 2025 年 ― 準備資産化への転換
+## 5. 2025 年 — 準備資産化への転換
 
 2025 年、方向はもう一度変わった。ビットコインを禁止する、あるいはその周りを規制するのではなく、一群の政府がそれを保有すべきかどうかを問い始めた。
 
 | 国・州 | 動き | 時期 | 結果 |
 |---|---|---|---|
-| ニューハンプシャー州 | HB 302 に署名、州財務局に上限 5% までのビットコイン投資を認可 ― 米国州法として初 | 2025 年 5 月 6 日 | 成立。ただし 1 億ドル規模のビットコイン担保地方債は行政評議会が 3 対 2 で後日否決（2026 年 7 月 8 日） |
+| ニューハンプシャー州 | HB 302 に署名、州財務局に上限 5% までのビットコイン投資を認可 — 米国州法として初 | 2025 年 5 月 6 日 | 成立。ただし 1 億ドル規模のビットコイン担保地方債は行政評議会が 3 対 2 で後日否決（2026 年 7 月 8 日） |
 | テキサス州 | SB 21、テキサス戦略ビットコイン準備法に署名 | 2025 年 6 月 20 日 | 成立。初回購入を実施、IBIT（ブラックロックの上場投資信託）で 500 万ドル（2025 年 11 月 20 日） |
 | アリゾナ州 | SB 1025（全面的な準備法案）を、退職基金にとって「実績のない」資産だとして拒否 | 2025 年 5 月 2 日 | 拒否 |
 | アリゾナ州 | HB 2749、新たな納税者負担なしに未請求・放棄済みデジタル資産の保有を認可 | 2025 年 5 月 7 日 | 署名 |

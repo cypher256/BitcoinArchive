@@ -70,16 +70,16 @@ The two scaled intervals cancel out on the calendar. Bitcoin's first halving lan
 
 One setting inside that same announcement did not move at all. Bitcoin retargets its mining difficulty every 2,016 blocks, roughly two weeks; Litecoin kept the identical block count. At four times the block rate, those 2,016 blocks pass in about three and a half days — a difficulty adjustment four times more frequent than Bitcoin's, riding on an interval its own announcement never mentioned changing.
 
-## A memory bet that lost to silicon
+## A design premise that silicon proved wrong
 
-The one change that was not a multiple of four is where Lee's stated caution gave way to an actual wager. His reasoning, from the same post:
+The one change that was not a multiple of four is where Lee's stated caution gave way to an untested design choice. His reasoning, from the same post:
 
 <!-- audit:quote-skip -->
 > We really liked Tenebrix's Scrypt proof of work. Using Scrypt allows one to mine Litecoin while also mining Bitcoin.
 
-Scrypt was not built for mining. Colin Percival, the FreeBSD developer who wrote it, designed it in March 2009 as a key-derivation function for his own Tarsnap backup service, specifically to make attacks with custom hardware expensive. Litecoin adopted Percival's own recommended parameters — N=1024, r=1, p=1 — which commit each single hash attempt to roughly 128 kilobytes of working memory, read and rewritten repeatedly before a result comes out. SHA-256 rewards raw arithmetic throughput, and a circuit built for nothing else runs it hundreds of times faster than a general-purpose chip. Scrypt's bet was that a memory requirement narrows that gap, because custom silicon does not get cheap memory the way it gets cheap arithmetic.
+Scrypt was not built for mining. Colin Percival, the FreeBSD developer who wrote it, designed it in March 2009 as a key-derivation function for his own Tarsnap backup service, specifically to make attacks with custom hardware expensive. Litecoin adopted Percival's own recommended parameters — N=1024, r=1, p=1 — which commit each single hash attempt to roughly 128 kilobytes of working memory, read and rewritten repeatedly before a result comes out. SHA-256 rewards raw arithmetic throughput, and a circuit built for nothing else runs it hundreds of times faster than a general-purpose chip. Scrypt's assumption was that a memory requirement would narrow that gap, because custom silicon does not get cheap memory the way it gets cheap arithmetic.
 
-128 kilobytes turned out to be a small enough requirement that the bet lost. Chip designers found they could trade memory for extra computation: store every eighth intermediate value instead of every one, and recompute the seven skipped values on demand when the algorithm asks for them. That trades a fixed, ASIC-unfriendly memory cost for a variable, ASIC-friendly compute cost, and the swap favored custom hardware. Scrypt ASICs shipped from 2014 — first KnCMiner, then Bitmain's Antminer L-series — and Litecoin mining was as fully professionalized as Bitcoin's within two years. Bitmain's own rise through that period is [Jihan Wu's record](/BitcoinArchive/participants/jihan-wu/) to tell.
+128 kilobytes turned out to be a small enough requirement that the assumption didn't hold. Chip designers found they could trade memory for extra computation: store every eighth intermediate value instead of every one, and recompute the seven skipped values on demand when the algorithm asks for them. That trades a fixed, ASIC-unfriendly memory cost for a variable, ASIC-friendly compute cost, and the swap favored custom hardware. Scrypt ASICs shipped from 2014 — first KnCMiner, then Bitmain's Antminer L-series — and Litecoin mining was as fully professionalized as Bitcoin's within two years. Bitmain's own rise through that period is [Jihan Wu's record](/BitcoinArchive/participants/jihan-wu/) to tell.
 
 ## Borrowing hash rate to keep a fork honest
 

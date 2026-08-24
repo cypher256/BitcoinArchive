@@ -53,7 +53,7 @@ timeline
 
 ## Two exits before Ripple
 
-Larsen co-founded E-Loan in 1996, an online mortgage lender that made E-LOAN the first company to give consumers free access to their own FICO credit scores — a small transparency bet that became one of the company's defining features. E-Loan reached a market value of roughly $1 billion by February 2000. Larsen stepped down as CEO in 2005, the same year the company was sold.
+Larsen co-founded E-Loan in 1996, an online mortgage lender that became the first company to give consumers free access to their own FICO credit scores — a small transparency commitment that came to define the company. E-Loan reached a market value of roughly $1 billion by February 2000. Larsen stepped down as CEO in 2005, the same year the company was sold.
 
 He did not stop building. In 2005 he co-founded Prosper Marketplace, a peer-to-peer lending platform modeled on *hui*, a traditional Vietnamese rotating-credit arrangement, and served as its CEO from 2006 to 2012. Prosper ran into the same regulatory question that would later follow Larsen into cryptocurrency: in 2008 the SEC challenged Prosper's loan notes as unregistered securities, and the company filed a prospectus and restructured its lending formula in response. Larsen resigned as Prosper's CEO on March 15, 2012, remaining chairman.
 

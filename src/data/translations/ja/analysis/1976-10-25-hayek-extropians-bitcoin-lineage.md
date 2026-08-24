@@ -1,5 +1,5 @@
 ---
-title: "ハイエク『貨幣発行自由化論』 (1976) からビットコインへ ― リバタリアン貨幣思想の系譜とエクストロピアンの架空通貨『Hayeks』"
+title: "ハイエク『貨幣発行自由化論』 (1976) からビットコインへ — リバタリアン貨幣思想の系譜とエクストロピアンの架空通貨『Hayeks』"
 date: 1976-10-25T00:00:00Z
 type: "analysis"
 source: "nakamotoinstitute"
@@ -28,13 +28,13 @@ tags:
   - "ideological-lineage"
   - "analysis"
 secondarySources:
-  - name: "Modern American History (Cambridge UP、 2024 年) ― F. A. ハイエク、リバタリアニズム、そして貨幣の脱国営化"
+  - name: "Modern American History (Cambridge UP、 2024 年) — F. A. ハイエク、リバタリアニズム、そして貨幣の脱国営化"
     url: "https://www.cambridge.org/core/journals/modern-american-history/article/f-a-hayek-libertarianism-and-the-denationalization-of-money/B17D6B3E276C1007194928373B431E3B"
     note: "ハイエクの脱国営化論を、 1970 年代のリバタリアン人脈がどのように維持し、 1990 年代以降の競合通貨設計の苗床へとつなげていったかを位置づけた査読歴史研究。"
-  - name: "Reason ― How 1990s Libertarians Laid the Groundwork for Cryptocurrency (2024 年 3 月)"
+  - name: "Reason — How 1990s Libertarians Laid the Groundwork for Cryptocurrency (2024 年 3 月)"
     url: "https://reason.com/2024/03/23/the-1990s-visionaries-who-saw-the-digital-future/"
     note: "1990 年代のエクストロピアン／サイファーパンク的環境がハイエクの競合通貨論をデジタルキャッシュ設計空間へ持ち込んだ流れの、独立した確認。"
-  - name: "Bitcoin Magazine ― How the Extropian Quest for Digital Cash Secured Our Trips to the Stars"
+  - name: "Bitcoin Magazine — How the Extropian Quest for Digital Cash Secured Our Trips to the Stars"
     url: "https://bitcoinmagazine.com/culture/how-extropian-quest-for-digital-cash-secured-our-trips-to-the-stars"
     note: "1990 年代前半から中盤のエクストロピアンによるデジタルキャッシュ議論を、ビットコインコミュニティ側から記述した文化史的記事。 Hayeks の思考実験についても触れる。"
 relatedEntries:
@@ -69,7 +69,7 @@ translationStatus: complete
 
 姉妹エントリー[サトシ・ナカモトはサイファーパンクではなかった](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)はサトシの知的立ち位置をサイファーパンク経路に対して扱う。以下で扱う「ハイエクからエクストロピアンへ」の脚は、その経路よりも一段早くに位置する。
 
-## 1. ハイエク 1976 年 ― 競合通貨論
+## 1. ハイエク 1976 年 — 競合通貨論
 
 フリードリヒ・アウグスト・フォン・ハイエクは『貨幣発行自由化論 — 競合通貨の理論と実践の分析』を 1976 年 10 月 25 日にロンドンの経済問題研究所 (IEA) から刊行した。その 2 年前 (1974 年) には経済学のノーベル記念賞を受賞している。本書は 3 版 (1976 年、 1978 年、 1990 年) を重ね、現在も流通している。Satoshi Nakamoto Institute は本書全文を常設の参考資料として掲載している。
 
@@ -98,7 +98,7 @@ translationStatus: complete
 
 一方で本書に含まれているのは、非国家的な貨幣発行の規範的根拠、すなわち政治的論証が技術的手段に追いつくのを待っていた骨格であり、後年のデジタルキャッシュ設計者はこれを直接に踏襲することになる。
 
-## 2. 1990 年代の中継 ― エクストロピアンと「Hayeks」の思考実験
+## 2. 1990 年代の中継 — エクストロピアンと「Hayeks」の思考実験
 
 ### 2.1 エクストロピアンの環境
 
@@ -123,7 +123,7 @@ translationStatus: complete
 
 ```mermaid
 timeline
-  title ハイエクからビットコインへ ― 思想史的系譜
+  title ハイエクからビットコインへ — 思想史的系譜
   1974 : ハイエクが 経済学ノーベル 記念賞を受賞
   1976 : ハイエクが 『貨幣発行自由化論』 を IEA から刊行
   1988 : マックス・モアが 『エクストロピー』 誌を創刊
@@ -131,7 +131,7 @@ timeline
   1991 : エクストロピアン メーリングリストが 開設
   1992 : サイファーパンク メーリングリストが 発足 (ヒューズ／メイ／ギルモア)
   1993 : エリック・ヒューズが 『サイファーパンクの 宣言』 を公表
-  1995 : 『エクストロピー』 誌第 14 号 ― エクストロポリス仮想銀行 Hayeks 思考実験
+  1995 : 『エクストロピー』 誌第 14 号 — エクストロポリス仮想銀行 Hayeks 思考実験
   1997 : アダム・バックが Hashcash を発表
   %% link: /BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/
   1998 : ウェイ・ダイが b-money を公表
@@ -187,7 +187,7 @@ flowchart LR
 | ハイエク 1976 の主張 | ビットコイン 2009 の実現 | 適合度 |
 |---|---|---|
 | ❶ 国家発行独占は必然ではなく偶発的 | 発行はネットワークによりプルーフ・オブ・ワーク採掘で行われ、国家発行体は存在しない | **直接** |
-| ❷ 発行体間の競争が価値を保つ | ビットコインは「競合する民間発行体のひとつ」ではなく、単一のアルゴリズム的発行体である。競争は暗号通貨間で起き、ビットコイン内では起きない | **置換** ― ハイエクの機構（発行体間の競争）はアルゴリズム的なコミットメントに置き換えられている |
+| ❷ 発行体間の競争が価値を保つ | ビットコインは「競合する民間発行体のひとつ」ではなく、単一のアルゴリズム的発行体である。競争は暗号通貨間で起き、ビットコイン内では起きない | **置換** — ハイエクの機構（発行体間の競争）はアルゴリズム的なコミットメントに置き換えられている |
 | ❸ インフレは独占的発行の人工物 | ビットコインの貨幣政策は半減期スケジュールと 2,100 万枚上限の固定であり、インフレを起こす政治的誘因を取り除く ([固定供給と調整可能貨幣の対比分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)を参照) | 政策効果は**直接**、機構は**別系統** |
 | ❹ 並行通貨は国内・国境を越えて共存しうる | ビットコインは国家の協力なしに国境を越える P2P ネットワークとして稼働する | **直接** |
 | ❺ 会計単位は発行単位と一致する必要がない | ビットコイン保有者は法定通貨や安定したバスケットで口座を管理しつつ、 BTC で取引することが日常的に行われる | 実践として**直接**、プロトコルで強制はされない |
@@ -198,14 +198,14 @@ flowchart LR
 
 [ビットコインのジェネシスブロック](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)には、有名なコインベースメッセージ *「タイムズ、 2009 年 1 月 3 日、銀行救済第二弾の瀬戸際にある財務大臣」* が刻まれている。これは 2008 年危機に特化した抗議として読まれることが多い。ハイエク的系譜の上で読むなら、これはより古い議論の継続でもある。国家による貨幣仲介は、ハイエクが 1976 年の本書で発行独占の必然的帰結として既に名指していた銀行救済を生むからだ。 2008 年の見出しは議論を直近で具体的なものにしたが、議論そのものを発明したわけではない。
 
-## 4. 直接影響と思想史的系譜の区別 ― 証拠はどちらを支えるか
+## 4. 直接影響と思想史的系譜の区別 — 証拠はどちらを支えるか
 
 知的系譜を辿るときの誘惑は、「思想史的伝播」を「個人レベルの影響」に短絡させることである。一次資料の記録はこの系譜を 2 つの主張に区別する。証拠が強く支えるのはそのうち一方だけである。
 
 | 主張 | 証拠の状態 | 注記 |
 |---|---|---|
 | ハイエク (1976 年) からエクストロピアン／サイファーパンクのリバタリアニズムを通じてビットコイン設計に至る**思想史的系譜**は存在し、複数の独立した二次資料に記録されている | **十分に支持** | 査読論文『Modern American History』 (2024)、 Reason (2024)、 Bitcoin Magazine の文化史記事、ハイエク本書全文を常設掲載するという Satoshi Nakamoto Institute の編集判断 |
-| **個別のビットコイン初期貢献者がエクストロピアンメーリングリストに参加していた** | **部分的に支持** | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) ― 該当時期のエクストロピアンメーリングリスト参加は確認されている |
+| **個別のビットコイン初期貢献者がエクストロピアンメーリングリストに参加していた** | **部分的に支持** | [ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/) — 該当時期のエクストロピアンメーリングリスト参加は確認されている |
 | **ほぼすべての初期ビットコイン貢献者がエクストロピアンだった** | **支持されない** | この強度の主張は一部の二次論説で提示されてきたが、一次資料の記録はそれを確立しない。 [サトシ自身の発言](/BitcoinArchive/ja/entries/aftermath/2008-08-21-satoshi-to-adam-back-b-money/)は彼を可視のサイファーパンク共同体の外側に置く ([サトシ・ナカモトはサイファーパンクではなかった分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/))。 [ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)、 [アダム・バック](/BitcoinArchive/ja/participants/adam-back/)、 [ニック・サボ](/BitcoinArchive/ja/participants/nick-szabo/)について類似のエクストロピアン参加主張は本アーカイブの一次資料では支持されない |
 | **サトシはビットコイン開発期にハイエクの本書を個人的に読んでいた** | **未決** | 公的記録にはサトシのハイエクに関する発言はどちらの方向にも存在しない。サトシの設計はハイエク命題の要素を実現しているが、本書を引用していない |
 

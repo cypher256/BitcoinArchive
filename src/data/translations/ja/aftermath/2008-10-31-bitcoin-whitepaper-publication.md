@@ -1,5 +1,5 @@
 ---
-title: "サトシがビットコインホワイトペーパーを公開 ― 1年半のコーディングを経て"
+title: "サトシがビットコインホワイトペーパーを公開 — 1年半のコーディングを経て"
 date: 2008-10-31T18:10:00Z
 type: "article"
 source: "cryptography-mailing-list"
@@ -107,10 +107,10 @@ timeline
     %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/
 ```
 
-11 月 17 日、ドナルドへの返信でサトシはコードの時間軸を明かした。「[コーディングしながらこの 1年半で](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)それらの細かい詳細をすべて検討してきたと思うが、多くの詳細があった」。2 か月後、[そのコードは 19,901 行の v0.1.0 としてリリースされた](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)。この規模には、インベントリ配信やブロック伝播をめぐるこのスレッド自体のやり取りも、その間にいくらか影響した可能性がある。同じ準備期間を、サトシは後により広い範囲で語り直している。2011 年にマイク・ハーンへ、[「このプロジェクトはリリースまでに 2 年の開発期間があった」](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-secp256k1/)と伝えており、この「2 年」には、実際にコードを書き始める前に問題を考えていた期間も含まれる ― その経緯は、[サトシの Windows 専用開発環境についての分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)が詳しく追っている。そこでスレッドは止まり、懐疑派は転向しないままだった。本アーカイブが保存する全 24 通は、すべての反論とすべての答えを含めて、[スレッド表示](/BitcoinArchive/ja/entries/threads/emails/cryptography/bitcoin-p2p-e-cash-paper/)で順に読める。告知から九週間後、サトシは[ジェネシスブロックを生成し](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)、九ページが記述したシステムは文書であることをやめた。
+11 月 17 日、ドナルドへの返信でサトシはコードの時間軸を明かした。「[コーディングしながらこの 1年半で](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/)それらの細かい詳細をすべて検討してきたと思うが、多くの詳細があった」。2 か月後、[そのコードは 19,901 行の v0.1.0 としてリリースされた](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)。この規模には、インベントリ配信やブロック伝播をめぐるこのスレッド自体のやり取りも、その間にいくらか影響した可能性がある。同じ準備期間を、サトシは後により広い範囲で語り直している。2011 年にマイク・ハーンへ、[「このプロジェクトはリリースまでに 2 年の開発期間があった」](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-secp256k1/)と伝えており、この「2 年」には、実際にコードを書き始める前に問題を考えていた期間も含まれる。その経緯は、[サトシの Windows 専用開発環境についての分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)が詳しく追っている。そこでスレッドは止まり、懐疑派は転向しないままだった。本アーカイブが保存する全 24 通は、すべての反論とすべての答えを含めて、[スレッド表示](/BitcoinArchive/ja/entries/threads/emails/cryptography/bitcoin-p2p-e-cash-paper/)で順に読める。告知から九週間後、サトシは[ジェネシスブロックを生成し](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)、九ページが記述したシステムは文書であることをやめた。
 
 *[補足：2008 年 10 月 31 日の投稿は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』の物語が始まる瞬間として描かれる。金融危機の只中に主人公が世界へ放ったこの九ページを、小説は「数千年続いた通貨の概念を、根底から覆すことになる」プロトコルの記録として語る。]*
 
 <!-- entry-closing -->
 
-リストが読んだのは未検証の提案に見えた。だが読まれた時点で、それはすでにコードのなかで決着がついていた事実だった。二日間の沈黙、続くスケールへの疑い ― それはこのアイデアが機能するかどうかの判定ではない。サトシはすでに一年半かけて、一人でそれを確かめ終えていた。懐疑的な読者たちが、すでに下されていた決断に追いついていく音。この沈黙と疑いの正体は、それだった。
+リストが読んだのは未検証の提案に見えた。だが読まれた時点で、それはすでにコードのなかで決着がついていた事実だった。二日間の沈黙、続くスケールへの疑い。それはこのアイデアが機能するかどうかの判定ではない。サトシはすでに一年半かけて、一人でそれを確かめ終えていた。懐疑的な読者たちが、すでに下されていた決断に追いついていく音。この沈黙と疑いの正体は、それだった。

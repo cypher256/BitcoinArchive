@@ -1,5 +1,5 @@
 ---
-title: "サトシの設計意図とビットコインの現状の乖離 ― 4 つの軸"
+title: "サトシの設計意図とビットコインの現状の乖離 — 4 つの軸"
 date: 2026-05-24T00:00:00Z
 type: "analysis"
 source: "bitcoin-pdf"
@@ -59,7 +59,7 @@ translationStatus: complete
 | **ガバナンス** | ノードのゆるやかな合意 | Bitcoin Core メンテナ + 大手マイナー | 2010 年 12 月 (サトシ → ギャビン移譲) |
 | **スケーリング** | 直接 P2P 決済 | レイヤー 2 (SegWit/Lightning) + カストディアルオフチェーン | 2010 年 1 MB 上限、 2017 年 SegWit |
 
-## 1. マイニング ―「1 CPU = 1 票」 → ASIC 寡占
+## 1. マイニング —「1 CPU = 1 票」 → ASIC 寡占
 
 ```mermaid
 timeline
@@ -89,7 +89,7 @@ timeline
 
 <!-- chart: lopp-hashrate-analysis -->
 
-## 2. カストディ ― 自分で鍵を持つ → 取引所 IOU (および ETF 商品)
+## 2. カストディ — 自分で鍵を持つ → 取引所 IOU (および ETF 商品)
 
 ```mermaid
 flowchart LR
@@ -115,7 +115,7 @@ flowchart LR
 
 **なぜ重要か**。カストディ業者が破綻すると、 IOU は支払われない。 [2014 年 2 月の Mt. Gox 破綻](/BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/)は約 850,000 BTC の顧客保有を失った。 [2022 年 11 月の FTX 崩壊](/BitcoinArchive/ja/entries/aftermath/2022-11-11-ftx-collapse/)は別世代の運営者で同じパターンを繰り返した。いずれの場合も、被害ユーザーはプロトコルレベルで何のコインに対する請求権も持たなかった。持っていたのは、破綻企業に対する契約上の請求権だけだった。これはビットコインがプロトコルレベルで不可能にするよう設計した銀行破綻モードを、ユーザーの選択とサービス設計の上層で再現したものである。この 2 つの破綻は、損失の機構別に象徴的事例を整理した[失われたビットコイン ― トーマス、ハウエルズ、 QuadrigaCX、 Mt. Gox、 FTX と「不可逆性」の教訓](/BitcoinArchive/ja/entries/analysis/2026-06-02-bitcoin-iconic-losses-overview/)でも、より詳しく取り上げられている。
 
-## 3. ガバナンス ― 分散合意 → コア開発者 + 大手マイナー
+## 3. ガバナンス — 分散合意 → コア開発者 + 大手マイナー
 
 ```mermaid
 flowchart TB
@@ -148,7 +148,7 @@ flowchart TB
 
 <!-- chart: fork-genealogy -->
 
-## 4. スケーリング ― 直接 P2P 決済 → レイヤー 2 / オフチェーン
+## 4. スケーリング — 直接 P2P 決済 → レイヤー 2 / オフチェーン
 
 ```mermaid
 flowchart TB
