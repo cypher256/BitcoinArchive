@@ -64,9 +64,10 @@ timeline
     %% link: /BitcoinArchive/ja/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/
     2010 : サトシとの 技術メール継続 (スケーリング / SPV / マイニング)
     %% link: /BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions/
-    2011 : サトシ最後のメールの一つ 「他のことに 移った」 (4月23日)
+    2011 : BitcoinJ を Apache 2 で オープンソース公開 (3月7日)
+    %% link: /BitcoinArchive/ja/entries/correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release/
+         : サトシ最後のメールの一つ 「他のことに 移った」 (4月23日)
     %% link: /BitcoinArchive/ja/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/
-    2012 : BitcoinJ 開発 (ビットコイン Java 実装)
     2016 : 「The resolution of the Bitcoin experiment」 公開、 BTC 全売却 (1月14日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/
          : R3 参加、 Corda 開発共同主導

@@ -105,6 +105,7 @@ Five systems built by five different companies, with nothing to gain from any pa
 timeline
     title Eighteen years, five domains
     2008 : Whitepaper posted (Oct 31)
+    %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
          : Satoshi names an 18-month coding span (Nov 17)
     %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/
     2020 : Ante's Scientometrics study - "a place next to Nakamoto (2008)"
@@ -114,6 +115,7 @@ timeline
     %% link: /BitcoinArchive/entries/aftermath/2025-03-06-us-strategic-bitcoin-reserve/
     2026 : Krugman - "vibes all the way down" (Feb 5)
          : Institutional holdings reach ~15% of supply (Jul)
+    %% link: /BitcoinArchive/entries/analysis/2026-07-09-bitcoin-ownership-map/
          : Five AI models converge on Bitcoin (Aug 2)
     %% link: /BitcoinArchive/entries/analysis/2026-08-02-ai-crypto-investment-survey/
 ```

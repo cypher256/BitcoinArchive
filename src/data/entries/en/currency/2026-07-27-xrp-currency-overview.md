@@ -81,6 +81,7 @@ timeline
     2011 : "Bitcoin without mining" posted to BitcoinTalk (May 27)
     2012 : XRP Ledger launches, 100B XRP generated at once (Jun)
          : Chris Larsen joins, company founded as NewCoin (Sep)
+    %% link: /BitcoinArchive/participants/chris-larsen/
     2017 : 55B XRP locked into 55 monthly-release escrows (Dec)
     2020 : SEC sues Ripple (Dec 22)
     2023 : Judge Torres rules only institutional sales were securities (Jul 13)

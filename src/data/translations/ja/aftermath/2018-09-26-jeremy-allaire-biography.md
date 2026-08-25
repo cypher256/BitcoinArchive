@@ -55,6 +55,7 @@ translationStatus: complete
 ```mermaid
 timeline
     2018 : Circle が USD Coin を公開 (9月26日)
+    %% link: /BitcoinArchive/ja/entries/currency/2026-07-27-usdc-currency-overview/
     2019 : 「主権の外にある貨幣は より重要になる」 (6月25日)
          : デジタルゴールド論と 資本規制に言及 (8月20日)
     2021 : 準備資産に CP と社債 (7月時点の証明報告)

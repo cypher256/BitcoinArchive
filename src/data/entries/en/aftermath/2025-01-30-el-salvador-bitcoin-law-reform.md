@@ -56,7 +56,7 @@ Fifty-five votes to two. That was the margin by which El Salvador's Legislative 
 timeline
     2021 : El Salvador enacts the Bitcoin Law, making bitcoin legal tender (Sep 7)
     %% link: /BitcoinArchive/entries/aftermath/2021-09-07-el-salvador-bitcoin-law/
-    2022 : IMF Article IV concludes, urges removing bitcoin's legal-tender status (Jan 25)
+    2022 : IMF Article IV concludes (Jan 24), press release urges removing bitcoin's legal-tender status (Jan 25)
     2024 : IMF and El Salvador reach a staff-level $1.4B EFF agreement, zero-accumulation clause included (Dec 18)
     2025 : Legislative Assembly votes 55-2 to end mandatory bitcoin acceptance (Jan 29), gazetted as Decree No. 199 (Jan 30)
          : IMF Executive Board approves the $1.4B EFF arrangement (Feb 26)

@@ -117,6 +117,7 @@ translationStatus: complete
 timeline
     title ポルカドット関連年表
     2016 : ウッドが技術文書を公表 (11月)
+    %% link: /BitcoinArchive/ja/participants/gavin-wood/
     2017 : 最初のトークン販売、 1億4,500万 ドル相当を調達 (10月)
          : Parityの マルチシグ不具合で 資金の大半が凍結 (11月6日)
     2019 : 非公開販売、 評価額12億ドルを主張 (6月)

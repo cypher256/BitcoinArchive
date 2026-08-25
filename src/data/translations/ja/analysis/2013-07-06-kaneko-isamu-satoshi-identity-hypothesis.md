@@ -114,9 +114,10 @@ gantt
     axisFormat %Y
     section 金子刑事裁判
         逮捕・公判前・地裁公判          :k1, 2004-05-10, 2006-12-13
+    %% link: /BitcoinArchive/ja/participants/isamu-kaneko/
         有罪判決、 大阪高裁で控訴中      :k2, 2006-12-13, 2009-10-08
         高裁逆転無罪、 検察が最高裁上告  :k3, 2009-10-08, 2011-12-19
-        最高裁が無罪確定                :milestone, 2011-12-20, 0d
+        最高裁が無罪確定                :milestone, 2011-12-19, 0d
     section ビットコイン開発
         集中開発期 (サトシ自身の年表)   :b0, 2007-06-01, 2008-09-01
     %% link: /BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/
@@ -125,6 +126,7 @@ gantt
         v0.1 公開                       :milestone, 2009-01-09, 0d
     %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
         サトシの フォーラム・コード活動  :b1, 2009-01-09, 2010-12-12
+    %% link: /BitcoinArchive/ja/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/
         最後の既知メール                :milestone, 2011-04-26, 0d
     %% link: /BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/
 ```

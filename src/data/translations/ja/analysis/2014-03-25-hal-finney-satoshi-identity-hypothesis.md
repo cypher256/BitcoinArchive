@@ -117,7 +117,7 @@ translationStatus: complete
 
 ### 1.4 最初の受領者かつ最早期協力者の地位
 
-フィニーはサトシ以外で最初にビットコインを稼働させたとされる人物であり、[人類初のビットコイン取引の受領者](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)であり、サトシとの最早期の実質的な技術通信者の一人だった。フィニーの [2008 年 11 月の暗号学メーリングリストへのホワイトペーパー発表に対する応答](/BitcoinArchive/ja/entries/aftermath/2008-11-19-finney-to-satoshi-scalability/)は、ほとんどの暗号学者が懐疑的だった時点で、実質的かつ支持的なものだった。証拠: 複雑なシステムの著者は、立ち上げ時に既知で信頼できる、能力のあるエンジニアを近くに置く傾向がある。そして、その条件に最も正確に当てはまる候補こそが、この役割を担った当人である。
+フィニーはサトシ以外で最初にビットコインを稼働させたとされる人物であり、[人類初のビットコイン取引の受領者](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)であり、サトシとの最早期の実質的な技術通信者の一人だった。フィニーの [2008 年 11 月の暗号学メーリングリストへのホワイトペーパー発表に対する応答](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/)は、ほとんどの暗号学者が懐疑的だった時点で、実質的かつ支持的なものだった。証拠: 複雑なシステムの著者は、立ち上げ時に既知で信頼できる、能力のあるエンジニアを近くに置く傾向がある。そして、その条件に最も正確に当てはまる候補こそが、この役割を担った当人である。
 
 反論: 信頼できる技術協力者を立ち上げ時に表に置きながら匿名でシステムを公開することは、信頼できる協力者がいる匿名の著者がまさに選ぶパターンである。同時に、暗号学メーリングリストで高品質なシステムを高品質な最初のユーザーが識別したパターンでもある。フィニーが記録した自己の説明は後者である。[「ビットコインと私」](/BitcoinArchive/ja/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) で「私はサトシ以外で最初にビットコインを動かした人物だったと思う」と書く。
 
@@ -136,10 +136,11 @@ translationStatus: complete
 ```mermaid
 timeline
     2007 : サトシ 開発期間開始 (本人の年表では 2007 年半ば)
+    %% link: /BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/
     2008 : ホワイトペーパー発表 - サトシは ハルに何も尋ねず (10月)
     %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
          : ハルが 暗号学リストで 第三者として 初の応答 (11月)
-    %% link: /BitcoinArchive/ja/entries/aftermath/2008-11-19-finney-to-satoshi-scalability/
+    %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/
     2009 : Bitcoin v0.1 - ハルが 最初の サトシ以外のノードと される (1月)
     %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
          : ハルがサンタバーバラで 10 マイルレース - サトシは ハーン宛メール送信 + 取引ブロードキャスト (4月18日) [アリバイ 1]

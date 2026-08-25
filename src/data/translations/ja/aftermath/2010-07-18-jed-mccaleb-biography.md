@@ -54,10 +54,12 @@ timeline
     2010 : ビットコイン取引所として 立ち上げ直す (7月18日)
     2011 : マーク・カルプレスへ 売却、 少数株主として残る
          : 後の XRP レジャーの 開発を開始
+    %% link: /BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/
     2012 : XRP レジャー公開、 1,000 億 XRP を 一度に生成
     2013 : リップルでの 実務から離れる (7月)
     2014 : ステラ開発財団を 共同設立 (7月31日)
          : マウントゴックス破綻 (2月)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2014-02-28-mt-gox-bankruptcy/
     2019 : 「金融機関の大半は 使わない」 (1月2日)
          : 「解けるとは 思っていなかった」 (11月16日)
 ```

@@ -63,9 +63,11 @@ translationStatus: complete
 timeline
     title ビットコインキャッシュ関連年表
     2017 : ビットコインから 分岐、 上限 8 MB (8月1日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/
          : EDA (緊急難易度調整) を launch時に導入
          : DAA (D601) が EDA を置き換え (11月13日)
     2018 : ハッシュ戦争で ビットコインSV が分裂 (11月15日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/
     2019 : Quasar で 上限を 2 GB へ (7月)
     2020 : インフラ資金計画が否決、 eCash が分裂 (11月)
     2024 : ABLA が 固定上限を完全に置き換え (5月15日)

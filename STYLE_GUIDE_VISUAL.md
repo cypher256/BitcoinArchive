@@ -397,6 +397,27 @@ Rules:
 - Place `%% link: URL` on the line immediately **after** the item it
   links. Items without a following `%% link:` stay unlinked —
   selective linking is normal.
+- **If a matching archive entry exists, it must be linked — this is
+  not optional.** "Selective linking is normal" describes items that
+  genuinely have no single primary-source or archive-page target (a
+  back-calculated/inferred date, a purely decorative marker, or a
+  destination already linked earlier in the same diagram — see the
+  next rule). It is not a license to skip the search. Before leaving
+  any item unlinked, search the archive for a primary-source or
+  aftermath entry matching its date and topic, and open it to
+  confirm. A 2026-07-11 audit (`ec2bf9b7d`) already added 130 missing
+  links across 20 diagrams this way — but a 2026-08-25 finding on
+  `aftermath/2008-10-31-bitcoin-whitepaper-publication` showed one way
+  this search can still fail: an item read "Satoshi discloses the
+  code came first (Nov 9)" with no link. The real target entry's
+  **filename** is dated `2008-11-10`, so a search for a Nov-9-dated
+  file would miss it — but the entry's own frontmatter `date:` and
+  its `sourceUrl` mailing-list archive page both confirm the email
+  was actually sent Nov 8, 20:58 EST (= Nov 9, 01:58 UTC): the
+  item's "Nov 9" label was correct all along, and the filename is
+  the outlier. When a same-dated filename search comes up empty,
+  also check candidate entries' frontmatter `date:` (and, where it
+  exists, `sourceUrl`) directly — a filename is not authoritative.
 - Supported diagram types: `gantt` and `timeline`. To support another
   type, add a `HANDLERS` entry in the plugin.
 - Write URLs in the author-side base form `/BitcoinArchive/...`
@@ -546,21 +567,43 @@ grep -rn "title.*vs サトシ\|title.*vs Satoshi" src/data
 
 When the content needs actual numbers — distributions, axes with units,
 named-candidate annotation, custom interaction — Mermaid's templates
-fall short. Reach for an Astro component under `src/components/` that
-uses d3 instead.
+fall short. The dominant pattern is the in-body marker, not a new
+Astro component:
 
-Existing examples (browse the directory for current state):
+1. Place `<!-- chart: NAME -->` at the position in the markdown body
+   where the chart belongs. `src/lib/remark-chart-embed.mjs` converts
+   it to `<div class="chart-embed" data-chart="NAME" id="NAME">`.
+2. `ChartEmbedRuntime.astro` dynamically imports
+   `src/scripts/chart-embed-runtime.ts` on any page containing a
+   `.chart-embed[data-chart]` element. That file holds the `DRAWERS`
+   registry — one entry per chart name, keyed by the same `NAME`
+   (24 entries as of 2026-08-25, via
+   `grep -c "^\s*DRAWERS\[" src/scripts/chart-embed-runtime.ts`).
+3. Each drawer's actual d3 logic lives in a module under
+   `src/scripts/*.js` (a `mount(host, lang)` export, or a factory like
+   `makeRaceDrawer` for a family of related charts), imported by
+   `chart-embed-runtime.ts` and registered into `DRAWERS`. Most charts
+   get their own dedicated `.js` module, but a module can back more
+   than one `DRAWERS` entry when the charts share a shape — the
+   `/chart/` dashboard's four race charts (`crypto-race`,
+   `assets-race`, `wealth-race`, `holders-race`) all come from
+   `bar-chart-race.js` via `makeRaceDrawer`. A new numeric chart is a
+   new (or reused) `.js` module here, not a new Astro component —
+   browse the `DRAWERS` assignments in `chart-embed-runtime.ts` for
+   the current roster.
 
-- `StylometricDistanceHistogram.astro` — author distribution with named
-  candidates plotted in
-- `LoppHashrateAnalysis.astro` — hashrate / nonce-LSB time series
-- `SatoshiCodeAnalysis.astro` — comment-density and code-fingerprint
-  metrics
+A small number of charts instead use a standalone Astro component with
+an inline d3 `<script>` — `BtcPriceChart.astro`,
+`SatoshiHoldingsComparison.astro`, `SatoshiCodeAnalysis.astro`. Reach
+for this only when the chart must render inside a component's own
+fixed template slot (e.g. a fixed position in the `[...slug]`
+template) rather than at an in-body marker position; the marker
+pattern above is the default for a new chart.
 
-Each component owns its EN/JA labels (a `lang` prop plus an internal
-`labels` map keyed by locale). Render at build time when the data is
-fixed; client-side d3 is acceptable for components that need
-viewport-driven sizing or user interaction.
+Each drawer or component owns its EN/JA labels (a `lang` prop or
+parameter, plus an internal `labels` map keyed by locale). Render at
+build time when the data is fixed; client-side d3 is acceptable for
+charts that need viewport-driven sizing or user interaction.
 
 Component subtitles describe **what the chart means**, not **how the
 chart is laid out**. A line like "labels in the left margin" or

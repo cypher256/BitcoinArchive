@@ -90,6 +90,7 @@ The mechanism costs a miner nothing extra. A Litecoin miner is already hashing c
 ```mermaid
 timeline
     2011 : Announces launch on BitcoinTalk (Oct 9)
+    %% link: /BitcoinArchive/entries/aftermath/2011-10-13-litecoin-launch/
     2014 : Dogecoin adopts merge-mining with Litecoin (Aug 4)
     2017 : Litecoin Foundation founded (Singapore)
          : First major cryptocurrency to activate SegWit (May 10)

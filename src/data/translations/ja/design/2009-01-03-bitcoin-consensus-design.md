@@ -221,8 +221,10 @@ timeline
         IsSuperMajority : 直近 1,000 ブロックのうち 750 で有効化。 950 で旧バージョンの ブロックを拒否。 バージョンフィールドの 1 ビット。BIP 34、66、65 に使用。
     section 2015–2017
         BIP 9 versionbits : バージョンフィールドの ビット単位シグナリング。 時間境界のある起動窓。 並列展開が可能。 SegWit に使用。
+    %% link: /BitcoinArchive/ja/entries/bip/2015-12-21-bip-0141/
     section 2017–現在
         BIP 8 / Speedy Trial : Taproot 起動をめぐり LOT=true/false と短期シグナリング案が 議論され、 実際の Taproot は Speedy Trial でロックインした。
+    %% link: /BitcoinArchive/ja/entries/bip/2020-01-19-bip-0341/
 ```
 
 ### 有効化パラメーターの比較

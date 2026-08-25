@@ -40,8 +40,10 @@ timeline
     %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887/
     2011 : Creates bitcoin-qt repository (May 15)
          : Granted GitHub commit access, fourth maintainer (Jun 5)
+    %% link: /BitcoinArchive/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/
     2014 : Succeeds Andresen as lead maintainer (Apr 8)
     2015 : Block-size war begins
+    %% link: /BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/
     2016 : libsecp256k1 ships as v0.12 default backend (Jan 15)
     %% link: /BitcoinArchive/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/
     2017 : SegWit activates

@@ -122,6 +122,7 @@ timeline
     2018 : Reddit AMA 匿名性 フェンタニル 直接的な死者 (2月)
          : CNBC 大馬鹿理論 空売りする (5月7日)
     2020 : 乗っ取られた 本人のアカウントが ビットコイン詐欺を投稿 (7月15日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2020-07-15-twitter-hack-bitcoin-scam/
     2021 : CNBC 中立の立場 電力消費の文脈 (2月18日)
          : Bloomberg イーロンより 資金が少ないなら警戒を (2月23日)
     2022 : TechCrunch 100% 大馬鹿理論 (6月15日)

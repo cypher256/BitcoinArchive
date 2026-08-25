@@ -74,7 +74,7 @@ timeline
     2017 : First Ethereum-based USDT issued (Nov)
     2019 : $850M Crypto Capital shortfall comes to light
     2021 : NY AG settlement: "was a lie" (Feb)
-    2023 : Deloitte replaces Grant Thornton as attestor (Jan)
+    2022 : BDO Italia replaces MHA Cayman as attestor (Aug)
     2025 : Winds down issuance on five legacy chains, incl. Omni (Sep 1)
     2025 : Ardoino: "Bitcoin and Gold will outlast" (Oct 12)
 ```

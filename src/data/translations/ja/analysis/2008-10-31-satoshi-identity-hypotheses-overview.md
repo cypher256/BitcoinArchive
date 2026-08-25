@@ -239,6 +239,7 @@ gantt
     サトシ 開発期間 → v0.1 公開 :crit, 2007-06-01, 2009-01-09
     %% link: /BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/
     v0.1 公開 → サトシ 最終既知メール :crit, 2009-01-09, 2011-04-26
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/
 
     section 候補プロファイル群 A
     アダム・バック （メール 5 通） :2008-08-20, 2009-01-11

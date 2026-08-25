@@ -46,14 +46,20 @@ timeline
     2011 : 最初の貢献 PR #122 (3月17日)
     %% link: /BitcoinArchive/ja/entries/forum/github/pr-122/2011-03-17-pr-122-spent-per-txout/
          : GitHub コミット権限 付与、 アンドレセン に次ぐ 2 人目 (5月1日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/
     2012 : BIP-32 階層的決定性 ウォレット (HD ウォレット)
+    %% link: /BitcoinArchive/ja/entries/bip/2012-02-11-bip-0032/
     2013 : libsecp256k1 開始 (3月5日、 後にマクスウェルが参加)
     2014 : Blockstream 共同創業
+    %% link: /BitcoinArchive/ja/entries/analysis/2014-11-01-blockstream-centralization-claim/
          : Bitcoin Core 組み込み SHA-256/SHA-512 実装追加 (4月20日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency/
     2015 : BIP-141 SegWit 共著 (12月)
+    %% link: /BitcoinArchive/ja/entries/bip/2015-12-21-bip-0141/
     2016 : libsecp256k1 が v0.12 デフォルトに採用 (1月15日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/
     2020 : BIP-340 シュノア署名 / BIP-341 Taproot
+    %% link: /BitcoinArchive/ja/entries/bip/2020-01-19-bip-0341/
     2021 : Taproot 有効化 (11月)
 ```
 

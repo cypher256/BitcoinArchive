@@ -115,9 +115,11 @@ gantt
 
     section Forks (alt-implementations)
     Bitcoin XT                              :milestone, 2015-08-15, 1d
+    %% link: /BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/
     Bitcoin Classic                         :milestone, 2016-02-10, 1d
     Bitcoin Unlimited (active)              :milestone, 2016-10-14, 1d
     Bitcoin Cash hard fork                  :milestone, 2017-08-01, 1d
+    %% link: /BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/
 
     section Hearn witness statements
     "Resolution" essay                      :milestone, 2016-01-14, 1d

@@ -52,6 +52,7 @@ He is the clearest single voice for the position that Bitcoin's transparency is 
 ```mermaid
 timeline
     2014 : Monero launches as BitMonero, forked from Bytecoin (Apr)
+    %% link: /BitcoinArchive/entries/currency/2026-07-27-monero-currency-overview/
     2018 : "there is a significant and obvious use case for Monero" (Oct 8)
     2020 : Cites Bitcoin's 2010 and 2018 inflation bugs (Dec 30)
     2021 : Arrested in Nashville on a South African warrant (Aug 2)

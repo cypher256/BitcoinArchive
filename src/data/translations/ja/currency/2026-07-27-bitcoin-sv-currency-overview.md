@@ -66,12 +66,14 @@ translationStatus: complete
 ```mermaid
 timeline
     2018 : ハッシュ戦争で ビットコインキャッシュ から分裂 (11月15日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/
     2019 : 世界初の 128 MB ブロックを採掘 (3月30日)
     2019 : Quasar で 上限を 2 GB へ (7月24日)
     2019 : バイナンス・クラーケン 等が上場廃止 (4月)
     2020 : Genesis アップグレードで 上限を撤廃 (2月4日)
     2021 : 一夏で 5 度の 51% 攻撃 (6月～8月)
     2024 : COPA 対ライト裁判、 偽造文書の認定 (3月14日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/
 ```
 
 ## 1. 「オリジナルプロトコルの復元」という設計

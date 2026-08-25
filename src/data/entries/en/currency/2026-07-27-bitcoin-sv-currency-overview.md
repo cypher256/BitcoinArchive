@@ -70,12 +70,14 @@ The chain calls its design "Satoshi Vision," and its stated purpose is restorati
 ```mermaid
 timeline
     2018 : Splits from Bitcoin Cash in a hash war (Nov 15)
+    %% link: /BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/
     2019 : First 128 MB block mined (Mar 30)
     2019 : Quasar lifts the default cap to 2 GB (Jul 24)
     2019 : Delisted by Binance, Kraken, ShapeShift (Apr)
     2020 : Genesis upgrade removes the block-size ceiling (Feb 4)
     2021 : Five 51%-attack reorgs in one summer (Jun-Aug)
     2024 : COPA v Wright rules Wright fabricated evidence (Mar 14)
+    %% link: /BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/
 ```
 
 ## Restoring "the original protocol," one upgrade at a time

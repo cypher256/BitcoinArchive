@@ -104,6 +104,7 @@ flowchart LR
 timeline
     title ライトコインのプロトコル年表
     2011 : BitcoinTalk で 公開を告知 (10月9日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-10-13-litecoin-launch/
     2014 : ドージコインが 併合採掘を許可 (8月4日)
     2017 : ライトコイン財団設立 (シンガポール法人)
          : SegWit を主要通貨として 初めて活性化 (5月10日)

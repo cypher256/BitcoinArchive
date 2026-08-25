@@ -80,7 +80,9 @@ timeline
     %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem/
          : Satoshi replies: proof-of-work chain as the solution (Nov 13, 22:56 UTC)
     %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-satoshi-2/
-    2009 : Satoshi's description becomes byzantine.html on bitcoin.org, handed to Malmi as reference
+    2009 : Satoshi's description becomes byzantine.html on bitcoin.org
+    %% link: /BitcoinArchive/entries/web-document/satoshi/2009-03-09-byzantine-generals-problem/
+         : Handed to Martti Malmi as FAQ reference (May 3)
     %% link: /BitcoinArchive/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/
 ```
 
@@ -91,7 +93,7 @@ James A. Donald had been pushing on the same question since his first reply elev
 <!-- quote: q1 -->
 > The process for arriving at a globally shared view of who owns what bitgold coins is insufficiently specified.
 
-*[Context: "bitgold coins" is a naming conflation James A. Donald and Hal Finney both reached for early in the thread, not a reference to Nick Szabo — [the Szabo–Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) traces it.]*
+*[Context: "bitgold coins" is a naming conflation James A. Donald and Hal Finney both reached for early in the thread, not a reference to Nick Szabo — Szabo himself always wrote "bit gold" as two words and never called the unit itself a "coin" — [the Szabo–Satoshi hypothesis entry](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/) traces it.]*
 
 [Replying to Satoshi's explanation of transaction finality](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem/), he gave the difficulty its classical name:
 

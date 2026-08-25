@@ -53,10 +53,12 @@ timeline
     2010 : Redeploys it as a Bitcoin exchange (Jul 18)
     2011 : Sells the site to Mark Karpeles; stays a minority owner
          : Begins work on what becomes the XRP Ledger
+    %% link: /BitcoinArchive/entries/currency/2026-07-27-xrp-currency-overview/
     2012 : XRP Ledger launches with 100 billion XRP generated at once
     2013 : Leaves his active role at Ripple (Jul)
     2014 : Co-founds the Stellar Development Foundation (Jul 31)
          : Mt. Gox collapses (Feb)
+    %% link: /BitcoinArchive/entries/aftermath/2014-02-28-mt-gox-bankruptcy/
     2019 : "Most financial institutions are not going to use bitcoin" (Jan 2)
          : "I didn't think it was possible to solve that problem" (Nov 16)
 ```

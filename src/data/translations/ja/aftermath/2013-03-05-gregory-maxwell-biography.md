@@ -40,9 +40,9 @@ timeline
     2015 : Confidential Transactions 設計 (Pedersen コミットメント)
     2016 : libsecp256k1 が v0.12 デフォルトに採用 (1月15日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/
-         : Liquid サイドチェーン Blockstream から リリース
     2017 : SegWit 有効化への 主要レビュアー
-    2018 : Blockstream 退任、 個人で Bitcoin Core 貢献継続
+    2018 : Liquid サイドチェーン Blockstream から リリース
+         : Blockstream 退任、 個人で Bitcoin Core 貢献継続
 ```
 
 ## libsecp256k1

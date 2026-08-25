@@ -82,7 +82,7 @@ translationStatus: complete
 <!-- quote: q3 -->
 > 「ビットコインはすごく有望なアイデアだと思うんだ」
 
-フィニーはこの設計をニック・サボのビットゴールドに結びつけ、資金力のある攻撃者への耐性を突いた。サトシはその後二日間、ブロック伝播や競合チェーンをめぐる追加の質問、そして具体的なデータ構造を求めるフィニーの要望に一つずつ答えていく。11 月 9 日の返信に、この計画の時系列を確定させる開示があった：
+フィニーはこの設計をニック・サボのビットゴールドに結びつけ、資金力のある攻撃者への耐性を突いた。サトシはその後二日間、ブロック伝播や競合チェーンをめぐる追加の質問、そして具体的なデータ構造を求めるフィニーの要望に一つずつ答えていく。[11 月 9 日の返信](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/)に、この計画の時系列を確定させる開示があった：
 
 <!-- quote: q4 -->
 > 「実は私はこれを逆の順序で行った。すべての問題を解決できると自分を納得させるために、まずすべてのコードを書き、その後論文を書いた」
@@ -102,6 +102,7 @@ timeline
          : フィニーが 有望なアイデアと評価 (11月7日)
     %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/
          : コードが先だったと サトシが開示 (11月9日)
+    %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/
          : サトシが1年半の コーディング期間を 明かし、 スレッドは終わる (11月17日)
     2009 : ジェネシスブロック生成 (1月3日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/

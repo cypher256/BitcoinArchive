@@ -63,9 +63,10 @@ timeline
     %% link: /BitcoinArchive/entries/correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions/
     2010 : Sustained technical email with Satoshi (scaling, SPV, mining)
     %% link: /BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions/
-    2011 : One of Satoshi's last emails - "I've moved on" (Apr 23)
+    2011 : Releases BitcoinJ open source under Apache 2 (Mar 7)
+    %% link: /BitcoinArchive/entries/correspondence/mike-hearn/bitcoinj/2011-03-07-hearn-to-satoshi-bitcoinj-release/
+         : One of Satoshi's last emails - "I've moved on" (Apr 23)
     %% link: /BitcoinArchive/entries/correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on/
-    2012 : Develops BitcoinJ (Java implementation of Bitcoin)
     2016 : Publishes "The resolution of the Bitcoin experiment"; sells all BTC (Jan 14)
     %% link: /BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/
          : Joins R3, co-leads Corda development

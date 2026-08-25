@@ -140,8 +140,10 @@ timeline
   2004 : ハル・フィニーが RPOW を公表
   2008 : ビットコイン ホワイトペーパー (10 月 31 日)
   %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
-  2009 : ビットコイン v0.1 + ジェネシスブロック (1 月 3 日／1 月 9 日)
+  2009 : ジェネシスブロックの生成 (1 月 3 日)
   %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/
+       : ビットコイン v0.1 の公開 (1 月 9 日)
+  %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
 ```
 
 ### 3.2 系譜の構造

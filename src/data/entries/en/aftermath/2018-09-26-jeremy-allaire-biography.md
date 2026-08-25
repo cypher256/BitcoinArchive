@@ -54,6 +54,7 @@ Allaire built the largest regulated dollar-denominated stablecoin — a design t
 ```mermaid
 timeline
     2018 : Circle launches USD Coin (Sep 26)
+    %% link: /BitcoinArchive/entries/currency/2026-07-27-usdc-currency-overview/
     2019 : "non-sovereign is going to become more important" (Jun 25)
          : Names the digital-gold thesis and capital controls (Aug 20)
     2021 : Attested reserve holds commercial paper and corporate bonds (Jul)

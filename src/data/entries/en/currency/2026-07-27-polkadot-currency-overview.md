@@ -123,6 +123,7 @@ That September, token holders voted anyway. Referendum 1710, filed under a track
 ```mermaid
 timeline
     2016 : Wood publishes the whitepaper (Nov)
+    %% link: /BitcoinArchive/participants/gavin-wood/
     2017 : First token sale raises ~$145M in ether (Oct)
          : Parity multisig bug freezes the majority of it (Nov 6)
     2019 : Private sale, claiming a $1.2bn valuation (Jun)

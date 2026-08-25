@@ -122,6 +122,7 @@ timeline
     2018 : Reddit AMA - anonymity, fentanyl, deaths in a fairly direct way (Feb)
          : CNBC - greater fool theory, I would short it (May 7)
     2020 : His hijacked Twitter account tweets a Bitcoin scam (Jul 15)
+    %% link: /BitcoinArchive/entries/aftermath/2020-07-15-twitter-hack-bitcoin-scam/
     2021 : CNBC - neutral view, asked about mining energy (Feb 18)
          : Bloomberg - less money than Elon, watch out (Feb 23)
     2022 : TechCrunch - 100 percent greater fool theory (Jun 15)

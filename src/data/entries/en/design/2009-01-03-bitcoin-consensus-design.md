@@ -220,8 +220,10 @@ timeline
         IsSuperMajority : Enforced at 750/1,000 blocks signaling; old-version blocks rejected at 950/1,000. Single-bit version field. Used for BIPs 34, 66, 65.
     section 2015–2017
         BIP 9 versionbits : Per-bit signaling in version field. Time-bounded activation window. Parallel deployments possible. Used for SegWit.
+    %% link: /BitcoinArchive/entries/bip/2015-12-21-bip-0141/
     section 2017–present
         BIP 8 / Speedy Trial : The Taproot activation debate spanned BIP 8 LOT=true/false and short-signaling proposals; Taproot itself locked in via Speedy Trial.
+    %% link: /BitcoinArchive/entries/bip/2020-01-19-bip-0341/
 ```
 
 ### Activation parameters comparison

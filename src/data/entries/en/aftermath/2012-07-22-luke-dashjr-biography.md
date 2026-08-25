@@ -37,6 +37,7 @@ timeline
     2013 : Coordinates chain reunification after v0.8 consensus bug (Mar)
          : Begins maintaining the Bitcoin Knots derivative client
     2015 : Block-size war - prominent small-block voice
+    %% link: /BitcoinArchive/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/
     2017 : OP_RETURN restriction debate - prominent voice
     2022 : Personal wallet drained - approximately 216.93 BTC, attributed to PGP-key compromise (late Dec)
     2023 : Co-founds Ocean mining pool - transparent block templates
@@ -55,4 +56,4 @@ In 2023, Dashjr co-founded the **Ocean** mining pool with a stated goal of decen
 In late December 2022, Dashjr's personal Bitcoin wallet — reportedly containing around 216.93 BTC — was drained. He attributed the attack to a compromise of his PGP key that then allowed the attacker to reach his hot wallet. The incident was one of the more publicly discussed individual-developer wallet losses of that period.
 
 ## Significance
-Dashjr is one of the few participants whose active involvement spans the full post-Satoshi era of Bitcoin — from the early Core patches, through the block size debate (on the small-block side), through the OP_RETURN / inscription disputes, and into the recent mining-decentralization work. His positions have been consistently conservative about changes to base-layer behavior, and his ongoing maintenance of Bitcoin Knots is a concrete expression of that conservatism.
+Dashjr is one of the few participants whose active involvement spans the full post-Satoshi era of Bitcoin — from the early Core patches, through the [block size debate](/BitcoinArchive/entries/analysis/2015-08-15-block-size-war-2015-2017-overview/) (on the small-block side), through the OP_RETURN / inscription disputes, and into the recent mining-decentralization work. His positions have been consistently conservative about changes to base-layer behavior, and his ongoing maintenance of Bitcoin Knots is a concrete expression of that conservatism.

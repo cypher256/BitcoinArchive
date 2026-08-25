@@ -41,8 +41,10 @@ Cobra (also stylised as Cøbra) is the steward of the website [Satoshi Nakamoto]
 ```mermaid
 timeline
     2008 : Satoshi registers bitcoin.org (Aug)
+    %% link: /BitcoinArchive/entries/analysis/2008-08-18-anonymousspeech-bitcoin-org-intermediary/
     Early 2010s : Cobra takes over bitcoin.org's stewardship after Satoshi's disappearance and Malmi's departure
     2021 : Craig Wright sues Cobra over whitepaper copyright (Feb)
+    %% link: /BitcoinArchive/entries/aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit/
          : Cobra chooses anonymity, accepts default judgment; bitcoin.org ordered to remove whitepaper (Jun 28)
     %% link: /BitcoinArchive/entries/aftermath/2021-06-28-cobra-response-to-whitepaper-ruling/
     2024 : COPA v Wright ruling finds Wright is not Satoshi, voiding the 2021 judgment's basis (Mar 14)

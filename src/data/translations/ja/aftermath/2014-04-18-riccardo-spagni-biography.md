@@ -53,6 +53,7 @@ translationStatus: complete
 ```mermaid
 timeline
     2014 : BitMonero として公開、 Bytecoin から分岐 (4月)
+    %% link: /BitcoinArchive/ja/entries/currency/2026-07-27-monero-currency-overview/
     2018 : 「モネロには 大きく明白な用途がある」 (10月8日)
     2020 : ビットコインの 2010 年と 2018 年の 増発バグに言及 (12月30日)
     2021 : 南アフリカの令状で ナッシュビルで逮捕 (8月2日)

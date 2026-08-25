@@ -40,14 +40,14 @@ timeline
          : Disposed at Docksway landfill
     2014–2020 : Repeated informal requests refused
     2021 : £50M offer to council; refused
-    2024 : Dec 3 — formal lawsuit filed (£495M claim)
+    2024 : May 17 — formal lawsuit filed (£495M claim)
     2025 : Jan 9 — UK High Court rejects case
          : Howells proposes purchasing landfill
 ```
 
 **Escalation of offers.** Over the twelve-year period that followed, Howells repeatedly raised the compensation he was offering Newport City Council in exchange for permission to excavate. Reported offers include a percentage of any recovered coins, **£50 million** to the council for granting permission (2021), bringing in a specialist excavation contractor at his own cost, and most recently a proposal in 2025 to purchase the entire landfill outright. The council has refused every iteration on the same set of grounds: the dig would breach the landfill's environmental permit, the disruption to Newport's waste-management operations would be substantial, and the council does not regard the drive as recoverable in usable condition even if found.
 
-**The 2024–2025 lawsuit.** In December 2024, Howells filed a formal legal action against Newport City Council seeking the right to excavate or, in the alternative, **£495 million** in compensation. The BTC value at filing put the contents of the drive at roughly **£600 million** (about $760 million). On **January 9, 2025**, the UK High Court (sitting in Cardiff) refused to allow the case to proceed: District Judge Andrew Keyser found that Howells's claim had no realistic prospect of success. The court accepted the council's position that the landfill's environmental permit and operational reality made the excavation untenable.
+**The 2024–2025 lawsuit.** In May 2024, Howells filed a formal legal action against Newport City Council seeking the right to excavate or, in the alternative, **£495 million** in compensation. The BTC value at filing put the contents of the drive at roughly **£600 million** (about $760 million). On **January 9, 2025**, the UK High Court (sitting in Cardiff) refused to allow the case to proceed: District Judge Andrew Keyser found that Howells's claim had no realistic prospect of success. The court accepted the council's position that the landfill's environmental permit and operational reality made the excavation untenable.
 
 **Wider continuation.** Howells has stated publicly that he intends to continue pursuing the matter, including by attempting to acquire the landfill itself when it closes (currently scheduled within the next several years). The case is regularly revisited in UK and international press whenever the BTC price moves significantly, since the nominal value of the drive's contents tracks the price directly.
 

@@ -48,6 +48,7 @@ translationStatus: complete
 ```mermaid
 timeline
     2013 : 冗談として dogecoin.com 取得、 公開 (12月6日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2013-12-06-dogecoin-launch/
     2014 : 「法定通貨殺しとして 売り込んだことはない」 (12月8日)
     2015 : 暗号通貨の界隈から 離れる (4月24日)
     2018 : 「少し宗教のように なった」 (10月16日)

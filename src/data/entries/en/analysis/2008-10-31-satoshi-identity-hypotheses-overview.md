@@ -246,6 +246,7 @@ gantt
     Satoshi development to v0.1 release :crit, 2007-06-01, 2009-01-09
     %% link: /BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/
     v0.1 release to last known email :crit, 2009-01-09, 2011-04-26
+    %% link: /BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/
 
     section Group A
     Adam Back (5 private emails) :2008-08-20, 2009-01-11

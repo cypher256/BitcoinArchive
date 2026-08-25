@@ -106,6 +106,7 @@ translationStatus: complete
 timeline
     title 十八年、五つの領域
     2008 : 論文投稿 (10月31日)
+    %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
          : サトシが18か月の コーディング期間を 明かす (11月17日)
     %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-17-bitcoin-p2p-e-cash-paper/
     2020 : アンテの研究、 「Nakamoto (2008)の隣」
@@ -115,6 +116,7 @@ timeline
     %% link: /BitcoinArchive/ja/entries/aftermath/2025-03-06-us-strategic-bitcoin-reserve/
     2026 : クルーグマン 「ムードだけ」 (2月5日)
          : 機関保有が供給の15%に (7月)
+    %% link: /BitcoinArchive/ja/entries/analysis/2026-07-09-bitcoin-ownership-map/
          : 5つの生成AIが ビットコインへ収束 (8月2日)
     %% link: /BitcoinArchive/ja/entries/analysis/2026-08-02-ai-crypto-investment-survey/
 ```

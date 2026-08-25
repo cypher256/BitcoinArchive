@@ -370,6 +370,7 @@ timeline
     title Architectural milestones: v0.1 → v27+
     section 2009–2010
         v0.1 (Jan 2009) : Monolithic binary, BDB, IRC, CPU miner, OpenSSL
+    %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
         1 MB limit (Sep 2010) : Block-size cap, opcodes disabled
     section 2012–2013
         v0.8 (Mar 2013) : BDB → LevelDB, flat block files, undo data

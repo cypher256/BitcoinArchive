@@ -41,8 +41,10 @@ timeline
     %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-64/2010-11-19-laanwj-msg22887/
     2011 : bitcoin-qt リポジトリ作成 (5月15日)
          : GitHub コミット権限 付与、 4 人目の メンテナー (6月5日)
+    %% link: /BitcoinArchive/ja/entries/aftermath/2011-09-13-bitcoin-github-migration-committers/
     2014 : アンドレセン後継、 リードメンテナー就任 (4月8日)
     2015 : ブロックサイズ論争 開始
+    %% link: /BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/
     2016 : libsecp256k1 が v0.12 デフォルトに採用 (1月15日)
     %% link: /BitcoinArchive/ja/entries/aftermath/2016-01-15-libsecp256k1-replaces-openssl-bitcoin-core-v012/
     2017 : SegWit 有効化

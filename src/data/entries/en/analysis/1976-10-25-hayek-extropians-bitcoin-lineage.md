@@ -139,8 +139,10 @@ timeline
   2004 : Hal Finney releases RPOW
   2008 : Bitcoin whitepaper (October 31)
   %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
-  2009 : Bitcoin v0.1 + genesis block (January 3 / January 9)
+  2009 : Genesis block mined (January 3)
   %% link: /BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/
+       : Bitcoin v0.1 released (January 9)
+  %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
 ```
 
 ### 3.2 The structure of the lineage

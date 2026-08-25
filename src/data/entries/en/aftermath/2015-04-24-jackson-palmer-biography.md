@@ -47,6 +47,7 @@ What matters about Palmer is not the launch. It is the sequence of public repudi
 ```mermaid
 timeline
     2013 : Registers dogecoin.com as a joke; Dogecoin launches (Dec 6)
+    %% link: /BitcoinArchive/entries/aftermath/2013-12-06-dogecoin-launch/
     2014 : "never really promoted Dogecoin as the fiat killer" (Dec 8)
     2015 : Leaves the cryptocurrency community (Apr 24)
     2018 : "Bitcoin's become a little bit like a religion" (Oct 16)

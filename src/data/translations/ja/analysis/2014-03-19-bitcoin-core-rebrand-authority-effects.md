@@ -112,9 +112,11 @@ gantt
 
     section フォーク (代替実装)
     Bitcoin XT                              :milestone, 2015-08-15, 1d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/
     Bitcoin Classic                         :milestone, 2016-02-10, 1d
     Bitcoin Unlimited (活発化)              :milestone, 2016-10-14, 1d
     BCH ハードフォーク                       :milestone, 2017-08-01, 1d
+    %% link: /BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/
 
     section ハーンの証言
     「Resolution」 離脱記事                 :milestone, 2016-01-14, 1d

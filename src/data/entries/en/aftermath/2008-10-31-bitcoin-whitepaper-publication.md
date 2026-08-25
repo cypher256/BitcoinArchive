@@ -81,7 +81,7 @@ On November 7 the register shifted. [Hal Finney](/BitcoinArchive/participants/ha
 <!-- quote: q3 -->
 > "Bitcoin seems to be a very promising idea."
 
-Finney connected the design to Nick Szabo's bit gold and pressed on the well-funded-attacker problem. Satoshi answered point by point over the following two days, working through follow-up questions on block propagation, competing chains, and Finney's request for concrete data structures, until one reply, sent November 9, fixed the project's chronology in a single disclosure:
+Finney connected the design to Nick Szabo's bit gold and pressed on the well-funded-attacker problem. Satoshi answered point by point over the following two days, working through follow-up questions on block propagation, competing chains, and Finney's request for concrete data structures, until [one reply, sent November 9](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/), fixed the project's chronology in a single disclosure:
 
 <!-- quote: q4 -->
 > "I actually did this kind of backwards. I had to write all the code before I could convince myself that I could solve every problem, then I wrote the paper."
@@ -101,6 +101,7 @@ timeline
          : Finney calls it a very promising idea (Nov 7)
     %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/
          : Satoshi discloses the code came first (Nov 9)
+    %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-re-bitcoin-p2p-e-cash-paper-satoshi-finney/
          : Satoshi names the 18-month coding span; thread ends (Nov 17)
     2009 : Genesis block mined (Jan 3)
     %% link: /BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/

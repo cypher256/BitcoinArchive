@@ -103,6 +103,7 @@ timeline
     2010 : WikiLeaks pressure dynamic begins (state)
     %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-2216/2010-12-11-re-wikileaks-hornet-nest/
     2011 : Andresen presents Bitcoin at CIA / In-Q-Tel (state)
+    %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-6652/2011-04-27-gavin-will-visit-the-cia/
     2013 : Lerner — Patoshi mining pattern (technical)
     %% link: /BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/
          : FBI — Silk Road takedown (state)
@@ -136,6 +137,7 @@ timeline
          : HBO — Money Electric / Peter Todd (journalism)
     %% link: /BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/
     2025 : US Strategic Bitcoin Reserve (state)
+    %% link: /BitcoinArchive/entries/aftermath/2025-03-06-us-strategic-bitcoin-reserve/
     2026 : NYT / Carreyrou — Adam Back (journalism)
     %% link: /BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/
          : Bitcoin Institute — van Dorst reanalysis (technical)

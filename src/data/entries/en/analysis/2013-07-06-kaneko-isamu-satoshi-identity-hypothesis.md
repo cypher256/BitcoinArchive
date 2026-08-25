@@ -113,9 +113,10 @@ gantt
     axisFormat %Y
     section Kaneko legal case
         Arrest, pre-trial, district court trial            :k1, 2004-05-10, 2006-12-13
+    %% link: /BitcoinArchive/participants/isamu-kaneko/
         Convicted, on appeal at Osaka High Court           :k2, 2006-12-13, 2009-10-08
         High Court acquittal, prosecution appeals          :k3, 2009-10-08, 2011-12-19
-        Supreme Court upholds acquittal                    :milestone, 2011-12-20, 0d
+        Supreme Court upholds acquittal                    :milestone, 2011-12-19, 0d
     section Bitcoin development
         Intensive development window (per Satoshi)         :b0, 2007-06-01, 2008-09-01
     %% link: /BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/
@@ -124,6 +125,7 @@ gantt
         v0.1 released                                      :milestone, 2009-01-09, 0d
     %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
         Satoshi forum and code activity                    :b1, 2009-01-09, 2010-12-12
+    %% link: /BitcoinArchive/entries/aftermath/2010-12-12-satoshi-handover-to-andresen/
         Last documented email                              :milestone, 2011-04-26, 0d
     %% link: /BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/
 ```

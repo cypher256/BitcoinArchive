@@ -81,7 +81,9 @@ timeline
     %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem/
          : サトシが返信、 プルーフ・オブ・ ワークチェーンを 解決策とする （11月13日 22:56 UTC）
     %% link: /BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-satoshi-2/
-    2009 : サトシの説明が bitcoin.org の 独立ページになり、 マルミに参考として 渡される
+    2009 : サトシの説明が bitcoin.org の 独立ページになる
+    %% link: /BitcoinArchive/ja/entries/web-document/satoshi/2009-03-09-byzantine-generals-problem/
+         : マルミに 参考として渡される （5月3日）
     %% link: /BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/
 ```
 
@@ -92,7 +94,7 @@ timeline
 <!-- quote: q1 -->
 > 誰がどの bitgold コインを所有しているかについて、グローバルに共有された見解へ至るプロセスの規定が不十分だ。
 
-*[補足：引用中の「bitgold コイン」は、ジェームズ・A・ドナルドとハル・フィニーの二人がスレッド早期にそれぞれ使った呼び名の混同であり、ニック・サボへの言及ではない。経緯は[サボ=サトシ仮説のエントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)がたどっている。]*
+*[補足：引用中の「bitgold コイン」は、ジェームズ・A・ドナルドとハル・フィニーの二人がスレッド早期にそれぞれ使った呼び名の混同であり、ニック・サボへの言及ではない。サボ自身は一貫して「bit gold」と 2 語で綴り、単位そのものを「コイン」と呼んではいない。経緯は[サボ=サトシ仮説のエントリー](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)がたどっている。]*
 
 [サトシによるトランザクション確定性の説明への返信](/BitcoinArchive/ja/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-james-donald-byzantine-generals-problem/)の中で、彼はこの難しさに古典の名前を与えた。
 

@@ -81,7 +81,7 @@ timeline
     %% link: /BitcoinArchive/ja/entries/correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai/
     2010 : Bitcoin v0.3.6 で Crypto++ 5.6.0 の SSE2 最適化 SHA-256 を統合 (7月)
     %% link: /BitcoinArchive/ja/entries/forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-0-3-6/
-    2014 : LessWrong での回想 - サトシは 「サイファーパンク・ コミュニティで以前 活動していなかった」 (1月)
+    2014 : LessWrong での回想 - サトシは 「サイファーパンク・ コミュニティで以前 活動していなかった」 (3月)
     %% link: /BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/
 ```
 

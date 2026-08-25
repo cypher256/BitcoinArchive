@@ -78,7 +78,7 @@ timeline
     %% link: /BitcoinArchive/entries/correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai/
     2010 : Bitcoin v0.3.6 integrates Crypto++ 5.6.0 SSE2-optimized SHA-256 (Jul)
     %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-626/2010-07-29-alert-upgrade-to-0-3-6/
-    2014 : LessWrong retrospective - Satoshi was 'not previously active' in cypherpunk communities (Jan)
+    2014 : LessWrong retrospective - Satoshi was 'not previously active' in cypherpunk communities (Mar)
     %% link: /BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/
 ```
 

@@ -371,6 +371,7 @@ timeline
     title アーキテクチャー上のマイルストーン: v0.1 → v27 以降
     section 2009–2010
         v0.1 (2009 年 1 月) : モノリシックバイナリ、 BDB、IRC、CPU マイナー、OpenSSL
+    %% link: /BitcoinArchive/ja/entries/aftermath/2009-01-09-bitcoin-v01-released/
         1 MB 上限 (2010 年 9 月) : ブロックサイズ上限、 オペコード無効化
     section 2012–2013
         v0.8 (2013 年 3 月) : BDB → LevelDB、 フラットブロック ファイル、 undo データ

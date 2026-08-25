@@ -64,9 +64,11 @@ Four days later, on August 1, 2017, his team's software accepted a block at heig
 ```mermaid
 timeline
     2017 : Fork from Bitcoin at block 478558, 8 MB cap (Aug 1)
+    %% link: /BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/
     2017 : EDA emergency difficulty rule ships at launch
     2017 : DAA (D601) replaces the EDA (Nov 13)
     2018 : Hash war splits off Bitcoin SV (Nov 15)
+    %% link: /BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/
     2019 : Quasar raises the default cap to 2 GB (Jul)
     2020 : Infrastructure Funding Plan rejected; eCash splits off (Nov)
     2024 : ABLA replaces the fixed cap entirely (May 15)

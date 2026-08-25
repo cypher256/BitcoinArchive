@@ -116,7 +116,7 @@ Across the four most-cited stylometric investigations, Finney appears as a consi
 
 ### 1.4 First-recipient and earliest collaborator status
 
-Finney was the first known person other than Satoshi to run Bitcoin, the [recipient of the first person-to-person Bitcoin transaction](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/), and one of the earliest substantive technical correspondents with Satoshi. His [November 2008 reply to the cryptography mailing list whitepaper announcement](/BitcoinArchive/entries/aftermath/2008-11-19-finney-to-satoshi-scalability/) was substantive and supportive at a moment when most cryptographers were skeptical. The evidence: any author of a complex system tends to keep a known, trusted, and capable engineer close at the launch — and the candidate who fits that profile most precisely is the one who appears in this role.
+Finney was the first known person other than Satoshi to run Bitcoin, the [recipient of the first person-to-person Bitcoin transaction](/BitcoinArchive/entries/aftermath/2009-01-12-first-bitcoin-transaction/), and one of the earliest substantive technical correspondents with Satoshi. His [November 2008 reply to the cryptography mailing list whitepaper announcement](/BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/) was substantive and supportive at a moment when most cryptographers were skeptical. The evidence: any author of a complex system tends to keep a known, trusted, and capable engineer close at the launch — and the candidate who fits that profile most precisely is the one who appears in this role.
 
 The objection: launching a system anonymously while having a trusted technical collaborator visible at the launch is exactly the pattern an anonymous author would choose if they had a trusted collaborator. It is also exactly the pattern of a high-quality first user identifying a high-quality system on the cryptography mailing list. Finney's documented self-account — *"I think I was the first person besides Satoshi to run bitcoin"* in [*Bitcoin and Me*](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) — describes the latter, and the first-recipient role is consistent with both readings.
 
@@ -135,10 +135,11 @@ Two events are alibi-class: the April 18, 2009 race-day window and the August 14
 ```mermaid
 timeline
     2007 : Satoshi development window begins (mid-2007 per his own timeline)
+    %% link: /BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/
     2008 : Whitepaper published; Satoshi never asks Hal anything (Oct)
     %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper/
          : Hal first replies to whitepaper as third party on crypto list (Nov)
-    %% link: /BitcoinArchive/entries/aftermath/2008-11-19-finney-to-satoshi-scalability/
+    %% link: /BitcoinArchive/entries/emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney/
     2009 : Bitcoin v0.1 - Hal becomes first known non-Satoshi node (Jan)
     %% link: /BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/
          : Hal runs 10-mile race in Santa Barbara - Satoshi sends Hearn email + broadcasts tx (Apr 18) [alibi 1]
