@@ -169,7 +169,7 @@ gantt
 | 2015 年 8 月 | Bitcoin XT | 「代替クライアント」「フォークプロジェクト」 |
 | 2016 年 2 月 | Bitcoin Classic | 「フォーク」 |
 | 2016 年 10 月 | Bitcoin Unlimited (活発化期) | 「フォーク」 |
-| 2017 年 8 月 1 日 | ビットコインキャッシュ (BCH) | ハードフォークによるチェーン分裂 |
+| 2017 年 8 月 1 日 | [ビットコインキャッシュ](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-cash-currency-overview/) (BCH) | ハードフォークによるチェーン分裂 |
 
 ここにはパターンが観察される。Bitcoin Core は「Bitcoin」という名前を保持し、代替実装は離脱を語彙的に位置付ける修飾語を受け取った。Bitcoin XT や Bitcoin Classic を稼働させることは、四つすべてが同じ v0.1 系譜のフォークであるにもかかわらず、当時の語彙では Bitcoin から離れることだった。語彙がその非対称性を増幅した。
 

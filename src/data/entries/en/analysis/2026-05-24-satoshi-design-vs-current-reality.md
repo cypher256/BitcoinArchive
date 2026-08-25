@@ -142,7 +142,7 @@ flowchart TB
 
 **When the drift started.** Three inflection points:
 - December 2010: [Satoshi handed maintenance authority to Gavin Andresen](/BitcoinArchive/entries/aftermath/2011-04-26-satoshi-final-known-email/), without consulting Gavin first. Gavin in turn added four other developers to the commit list — chosen for being present and helpful rather than through any formal process. That is the seed of the modern Core maintainer team.
-- 2015 – 2017: The block size war. See [Bitcoin Fork Wars as Not OSS](/BitcoinArchive/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/). The conflict was decided through a combination of SegWit activation (BIP 141), the user-activated soft fork (UASF) pressure, the failure of the New York Agreement, and the Bitcoin Cash split — a multi-front political/economic process rather than the rough consensus the whitepaper describes.
+- 2015 – 2017: The block size war. See [Bitcoin Fork Wars as Not OSS](/BitcoinArchive/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/). The conflict was decided through a combination of SegWit activation (BIP 141), the user-activated soft fork (UASF) pressure, the failure of the New York Agreement, and the [Bitcoin Cash](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-cash-currency-overview/) split — a multi-front political/economic process rather than the rough consensus the whitepaper describes.
 - January 2016: [Mike Hearn declared the Bitcoin experiment failed](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/) and sold all his coins, citing the governance breakdown directly.
 
 <!-- chart: fork-genealogy -->

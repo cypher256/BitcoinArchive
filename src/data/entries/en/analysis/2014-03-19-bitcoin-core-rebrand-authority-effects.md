@@ -172,7 +172,7 @@ Between 2015 and 2017, a series of alternative implementations forked the Bitcoi
 | August 2015 | Bitcoin XT | "Alternative client," "fork project" |
 | February 2016 | Bitcoin Classic | "Fork" |
 | October 2016 | Bitcoin Unlimited (active phase) | "Fork" |
-| August 1, 2017 | Bitcoin Cash (BCH) | Hard-fork chain split |
+| August 1, 2017 | [Bitcoin Cash](/BitcoinArchive/entries/currency/2026-07-27-bitcoin-cash-currency-overview/) (BCH) | Hard-fork chain split |
 
 A pattern is observable: Bitcoin Core retained the name "Bitcoin"; the alternatives received qualifiers that lexically positioned them as departures. To run Bitcoin XT or Bitcoin Classic was, by the active vocabulary, to leave Bitcoin — even though all four were forks of the same v0.1 lineage. The vocabulary loaded the asymmetry.
 

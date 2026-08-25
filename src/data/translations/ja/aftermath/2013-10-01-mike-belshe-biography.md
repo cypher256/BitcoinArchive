@@ -52,7 +52,7 @@ relatedEntries:
 
 2017 年 10 月までには、SegWit2x ハードフォークがコミュニティ全体の支持を得られないことが明らかになった。Bitcoin Core 開発者は当初から公的に反対しており、ユーザー有効化ソフトフォーク (UASF) 運動はノード運営者がマイニングハッシュレートに依存せずプロトコルルールを強制できることを実証していたし、複数の主要取引所は SegWit2x チェーンを上場しないことを表明していた。
 
-ブロック 494784 での有効化予定の約 1 週間前にあたる 2017 年 11 月 8 日、ベルシェは `bitcoin-segwit2x@lists.linuxfoundation.org` メーリングリストに [SegWit2x 中止メッセージ](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/)を投稿した。投稿は他の主要署名者 5 名 (ウェンセス・カサレス、ジハン・ウー、ジェフ・ガージック、ピーター・スミス、エリック・ヴォーヒース) との連名だった。このうち、Bitmain 共同創業者で同じニューヨーク合意に署名し、SegWit2x 崩壊後には Bitmain 系列のハッシュレートをビットコインキャッシュに投じることになるウーについては、[ウー自身の伝記エントリー](/BitcoinArchive/ja/participants/jihan-wu/)で詳しく扱っている。中止により、ニューヨーク合意は事実上終結し、[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)の本体チェーン側が閉じた。
+ブロック 494784 での有効化予定の約 1 週間前にあたる 2017 年 11 月 8 日、ベルシェは `bitcoin-segwit2x@lists.linuxfoundation.org` メーリングリストに [SegWit2x 中止メッセージ](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/)を投稿した。投稿は他の主要署名者 5 名 (ウェンセス・カサレス、ジハン・ウー、ジェフ・ガージック、ピーター・スミス、エリック・ヴォーヒース) との連名だった。このうち、Bitmain 共同創業者で同じニューヨーク合意に署名し、SegWit2x 崩壊後には Bitmain 系列のハッシュレートを[ビットコインキャッシュ](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-cash-currency-overview/)に投じることになるウーについては、[ウー自身の伝記エントリー](/BitcoinArchive/ja/participants/jihan-wu/)で詳しく扱っている。中止により、ニューヨーク合意は事実上終結し、[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)の本体チェーン側が閉じた。
 
 ## キャリア時系列
 

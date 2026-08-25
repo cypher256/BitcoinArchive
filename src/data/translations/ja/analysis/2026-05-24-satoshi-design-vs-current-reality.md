@@ -143,7 +143,7 @@ flowchart TB
 
 **乖離の起点**。 3 つの分岐点:
 - 2010 年 12 月: [サトシはギャビン・アンドレセンにメンテナンス権限を引き渡した](/BitcoinArchive/ja/entries/aftermath/2011-04-26-satoshi-final-known-email/) (事前にギャビンに引き受ける意思があるか確認しないまま)。ギャビンは続いて他の 4 人の開発者を commit リストに加えた。人選は形式的なプロセスによるものではなく、「その場にいて役に立つことをしていた」という基準で選ばれた。これが現代のコアメンテナチームの種子である。
-- 2015 ~ 2017 年: ブロックサイズ戦争。 [ビットコインフォーク戦争は OSS ではない](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)参照。紛争は SegWit 有効化 (BIP 141)、ユーザー有効化ソフトフォーク (UASF) からの圧力、ニューヨーク合意 (NYA) の頓挫、そしてビットコインキャッシュの分岐という、多面的な政治的・経済的プロセスを経て決着した。ホワイトペーパーが描くゆるやかな合意ではない。
+- 2015 ~ 2017 年: ブロックサイズ戦争。 [ビットコインフォーク戦争は OSS ではない](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)参照。紛争は SegWit 有効化 (BIP 141)、ユーザー有効化ソフトフォーク (UASF) からの圧力、ニューヨーク合意 (NYA) の頓挫、そして[ビットコインキャッシュ](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-cash-currency-overview/)の分岐という、多面的な政治的・経済的プロセスを経て決着した。ホワイトペーパーが描くゆるやかな合意ではない。
 - 2016 年 1 月: [マイク・ハーンがビットコイン実験は失敗したと宣言し](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)、全コインを売却。ガバナンス崩壊を直接の理由として挙げた。
 
 <!-- chart: fork-genealogy -->

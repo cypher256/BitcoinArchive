@@ -79,7 +79,7 @@ A last procedural step closed the file on October 22, 2021. The NDRC announced i
 
 ## A parallel posture: seized coins in state custody
 
-The ban reached private mining and private trading. It did not reach coins the state already held. In 2019, Chinese police seized 194,775 BTC — along with 833,083 ETH, 1.4 million LTC, 27.6 million EOS, 74,167 DASH, 487 million XRP, 6 billion DOGE, 79,581 BCH, and 213,724 USDT — from the operators of the PlusToken Ponzi scheme.
+The ban reached private mining and private trading. It did not reach coins the state already held. In 2019, Chinese police seized 194,775 BTC — along with 833,083 ETH, 1.4 million LTC, 27.6 million EOS, 74,167 DASH, 487 million XRP, 6 billion DOGE, 79,581 BCH, and 213,724 [USDT](/BitcoinArchive/entries/currency/2026-07-27-usdt-currency-overview/) — from the operators of the PlusToken Ponzi scheme.
 
 On November 19, 2020, the Jiangsu Yancheng Intermediate People's Court handed down the PlusToken judgment: prison terms of two to eleven years, and forfeiture of the seized assets, worth almost $4 billion at the time, to the national treasury:
 
