@@ -5,15 +5,15 @@ Bitcoin Institute 日本語版の編集規則。
 > **Note for international readers.** This file is the JA-edition style
 > guide for Japanese contributors and is therefore written in Japanese.
 > Cross-language editorial conventions (independent of locale) live in
-> `STYLE_GUIDE.md`, which is in English.
+> `STYLE_GUIDE_CORE.md`, which is in English.
 
 ## 目的
 
 このファイルは、日本語ページにおける人名・タイトル・引用文・語調・用語の **日本語固有** の扱いを定義する。スラッグ・URL・ソースメタデータを変更することなく、サイト全体を時間をかけて正規化していくための規則集。
 
-本ガイドの位置付け (コーディング規約の編集版、扱うもの / 扱わないものの定義) は `STYLE_GUIDE.md § Purpose` を参照。本ファイルはそれを前提に、日本語固有の編集規約のみを扱う。
+本ガイドの位置付け (コーディング規約の編集版、扱うもの / 扱わないものの定義) は `STYLE_GUIDE_CORE.md § Purpose` を参照。本ファイルはそれを前提に、日本語固有の編集規約のみを扱う。
 
-言語非依存の編集規則 (引用ブロック対カギカッコの意味、関連エントリー、参加者スラッグ規約など) も `STYLE_GUIDE.md` に置かれている。まずそちらを参照すること。
+言語非依存の編集規則 (引用ブロック対カギカッコの意味、関連エントリー、参加者スラッグ規約など) も `STYLE_GUIDE_CORE.md` に置かれている。まずそちらを参照すること。
 
 ## 中核規則
 
@@ -34,7 +34,7 @@ Bitcoin Institute 日本語版の編集規則。
 - frontmatter や `<script>` 内の `//`・`/* */`、Astro テンプレートの `{/* */}` は**ビルドで除去され公開出力に出ない**。純粋な開発メモ。
 - **HTML コメント `<!-- -->` は除去されず公開 HTML にそのまま残る** (画面には描画されないが、ソース表示・クローラーには見える)。言語の結論は上と同じ (ロケール一致) だが、EN ページに日本語 `<!-- -->` を書くと公開出力に日本語が漏れるため実害が重い。逆に JA ページの日本語 `<!-- -->` は出力言語と一致するので問題ない。
 
-明文化が要るのは「JA 側で日本語コメント可」 という JA 側の例外だけなので、本規約は JA 側ガイド (本ファイル) に置く。EN 側ガイド (`STYLE_GUIDE.md`・`CLAUDE.md`) には書かない — 英語が既定で自明だから。検査では強制しない緩い規約。
+明文化が要るのは「JA 側で日本語コメント可」 という JA 側の例外だけなので、本規約は JA 側ガイド (本ファイル) に置く。EN 側ガイド (`STYLE_GUIDE_CORE.md`・`CLAUDE.md`) には書かない — 英語が既定で自明だから。検査では強制しない緩い規約。
 
 ---
 
@@ -142,7 +142,7 @@ It's in good hands with Gavin and everyone.
 
 ## 4. 引用と引用ブロック
 
-`STYLE_GUIDE.md` の引用・ブロック整形に関する共通規則に従う。日本語散文では追加で以下を守る。
+`STYLE_GUIDE_CORE.md` の引用・ブロック整形に関する共通規則に従う。日本語散文では追加で以下を守る。
 
 - `> ` (引用ブロック) は引用されたブロック、または出典由来のブロック内容を示す。
 - `「…」` は日本語散文中の直接引用を示す。
@@ -388,7 +388,7 @@ body 内で `>` 行の内側に置かれた `<!-- quote: qN -->` marker (depth >
 
 ### 編者注 / 補足 ( Role C / D ) — エントリー型別の使い分け
 
-`STYLE_GUIDE.md § Editorial Markers` の Role C ( `*[編者注：...]*` ) と Role D ( `*[補足：...]*` ) を日本語エントリーで使うときの判断基準。 STYLE_GUIDE.md rule 13 ( 0523 編者注/補足 地の文化計画 ) と整合。
+`STYLE_GUIDE_CORE.md § Editorial Markers` の Role C ( `*[編者注：...]*` ) と Role D ( `*[補足：...]*` ) を日本語エントリーで使うときの判断基準。 STYLE_GUIDE_CORE.md rule 13 ( 0523 編者注/補足 地の文化計画 ) と整合。
 
 **editorial entries ( `article` / `analysis` / `biography` / `design` ) の場合:**
 
@@ -400,7 +400,7 @@ body 内で `>` 行の内側に置かれた `<!-- quote: qN -->` marker (depth >
 
 **primary-source entries ( `correspondence` / `mailing-list` / `forum-post` / `whitepaper` / `bip` / `court-document` / `tweet` / `web-document` ) の場合:**
 
-「本文に編集者の語り手を混ぜない」 原則 ( `STYLE_GUIDE.md § Primary-Source Entries` ) を守るため、 短い編者注は Role C / D 枠維持、 長めのコンテクストは `editorNote:` ( Role A、 冒頭メタデータ ) に移行。 本文の地の文化はしない ( 一次資料に編集者の語り手を侵入させる事故になる )。
+「本文に編集者の語り手を混ぜない」 原則 ( `STYLE_GUIDE_CORE.md § Primary-Source Entries` ) を守るため、 短い編者注は Role C / D 枠維持、 長めのコンテクストは `editorNote:` ( Role A、 冒頭メタデータ ) に移行。 本文の地の文化はしない ( 一次資料に編集者の語り手を侵入させる事故になる )。
 
 **小説ページへの導線補足は Role D で書く。**
 
@@ -683,7 +683,7 @@ Bitcoin プロジェクト開発者
 
 ## 1. タイトル方針
 
-言語非依存のタイトル方針 (対象読者、評価基準、カテゴリー別テンプレート、語調、カスケード規則) は `STYLE_GUIDE.md § Title Policy` に置かれている。本節では日本語固有の事項のみを追加する。
+言語非依存のタイトル方針 (対象読者、評価基準、カテゴリー別テンプレート、語調、カスケード規則) は `STYLE_GUIDE_REFERENCE.md § Title Policy` に置かれている。本節では日本語固有の事項のみを追加する。
 
 ### 文字数
 
@@ -705,7 +705,7 @@ Bitcoin プロジェクト開発者
 
 ### 語調 (descriptive vs. evocative)
 
-語調の選択基準そのものは `STYLE_GUIDE.md § Register: descriptive vs. evocative` を参照。日本語固有の運用上の注意のみここに記す。
+語調の選択基準そのものは `STYLE_GUIDE_REFERENCE.md § Register: descriptive vs. evocative` を参照。日本語固有の運用上の注意のみここに記す。
 
 - 事件に定着した名前 (「ブロックサイズ戦争」「ビットコイン実験の終結」「ピザの日」 等) があるなら、それを用いる。汎用的な動詞 (「発表する」「公開する」「開始する」 等) で言い換えると、検索と引用の再利用性が落ちる。
 - ✗ `Bitcoin XT が立ち上がる (2015 年 8 月)` — 主体と日付はあるが、何を起こしたかが見えない
@@ -718,7 +718,7 @@ Bitcoin プロジェクト開発者
 
 ### カテゴリー別カスケード規則
 
-日本語版は `STYLE_GUIDE.md § Title Policy` で定義されたカテゴリー別カスケード規則に従う。要約:
+日本語版は `STYLE_GUIDE_REFERENCE.md § Title Policy` で定義されたカテゴリー別カスケード規則に従う。要約:
 
 | ディレクトリ | 返信のカスケード | JA タイトル更新の範囲 |
 |---|---|---|
@@ -729,7 +729,7 @@ Bitcoin プロジェクト開発者
 
 ### 起点投稿タイトルの翻訳 (forum/*)
 
-`forum/*` の起点投稿の **JA mirror タイトルは日本語に翻訳する**。原文の Subject 行は EN ファイル側で歴史的記録として原語のまま保持され (`STYLE_GUIDE.md § Title Policy → Forum threads` の「Thread starter: preserve the forum's topic title」)、JA 側はそれを翻訳した題を主タイトルとして掲載する。
+`forum/*` の起点投稿の **JA mirror タイトルは日本語に翻訳する**。原文の Subject 行は EN ファイル側で歴史的記録として原語のまま保持され (`STYLE_GUIDE_REFERENCE.md § Title Policy → Forum threads` の「Thread starter: preserve the forum's topic title」)、JA 側はそれを翻訳した題を主タイトルとして掲載する。
 
 例:
 
@@ -769,7 +769,7 @@ JA: イーサリアム: 始まりへようこそ
 
 ### カスケード規則の例外 (フォーラムスレッド)
 
-上記のカスケード規則には EN 側と対をなす公式の例外が二つある。カスケードの強制 (`check:ja-titles` の警告および `fix-ja-reply-titles` の一括修正ツール) は設計上これらをスキップする。これらはカスケードが消し去ってしまう歴史的・編集的な現実を符号化したもの。言語非依存の説明は `STYLE_GUIDE.md § Forum threads` を参照すること。本節は JA 側の表面形を文書化する。
+上記のカスケード規則には EN 側と対をなす公式の例外が二つある。カスケードの強制 (`check:ja-titles` の警告および `fix-ja-reply-titles` の一括修正ツール) は設計上これらをスキップする。これらはカスケードが消し去ってしまう歴史的・編集的な現実を符号化したもの。言語非依存の説明は `STYLE_GUIDE_REFERENCE.md § Forum threads` を参照すること。本節は JA 側の表面形を文書化する。
 
 **例外 (a) — 文脈投稿への返信 (`Re:（NAMEの文脈投稿）`)**。
 起点ではない投稿を引用する返信 (つまり、トピックそのものではなく別の返信を引用する場合) は、起点へのカスケードに従わず、Archive 正規形の `Re:（NAMEの文脈投稿）` を保持する。EN 側は `Re: (context post by NAME)` (推奨) または `Re: (quoted post by NAME)` (旧形) を用いる。両者とも同一の JA 形に対応する。
@@ -816,7 +816,7 @@ JA の `description` フィールドでは、以下の統一語を用いる。
 
 ### 文字数上限
 
-JA の `description` フィールドは **100 文字** までに制限される (`String.length` で計測)。根拠と EN 側の対応 (200 文字) は `STYLE_GUIDE.md § Description Policy` に文書化されている。そちらが正規の出典。ここでは根拠を再導出しない。
+JA の `description` フィールドは **100 文字** までに制限される (`String.length` で計測)。根拠と EN 側の対応 (200 文字) は `STYLE_GUIDE_REFERENCE.md § Description Policy` に文書化されている。そちらが正規の出典。ここでは根拠を再導出しない。
 
 `scripts/check-description-length.mjs` により強制され、`--strict` モードで `npm run build` と `npm run check` に組み込まれている (一件の超過でビルドが失敗する)。以前は 384 件の旧来の蓄積を解消する間 WARN モードで動いていた。蓄積が 0 になった時点で `--strict` に切り替わった。
 
@@ -945,7 +945,7 @@ description が現状で上限を超えている場合は、**収まるように
 - **図表のラベル** (Mermaid のタイムライン等)
 - **引用ブロックの中** (一次資料の逐語保持。原文の記号を変えない)
 
-**字種:** 上記の例外のうち**表のセル・定義リストの見出し区切り・図表のラベル**でダッシュを使う場合は **エムダッシュ (`—`、U+2014)** に統一する。**タイトルの区切りは `STYLE_GUIDE.md § Title Policy` が真実源**（本節の対象外。固有名の一部になっている区切り、たとえば書名『ジェネシス ― 創設者の消失と約束』の `―` も、固有名の表記として変更しない）。引用ブロック内は原文の記号を保持する。以下は本節の対象範囲における字種の誤り。
+**字種:** 上記の例外のうち**表のセル・定義リストの見出し区切り・図表のラベル**でダッシュを使う場合は **エムダッシュ (`—`、U+2014)** に統一する。**タイトルの区切りは `STYLE_GUIDE_REFERENCE.md § Title Policy` が真実源**（本節の対象外。固有名の一部になっている区切り、たとえば書名『ジェネシス ― 創設者の消失と約束』の `―` も、固有名の表記として変更しない）。引用ブロック内は原文の記号を保持する。以下は本節の対象範囲における字種の誤り。
 
 | 文字 | 扱い |
 |---|---|
@@ -1119,7 +1119,7 @@ timeline イベントラベルの例 (Satoshi biography から):
 3. 伝記と編者執筆の散文。
 4. 旧来エントリー内の混在用法は、触れた機会に正規化する。
 
-引用文や出典本文は、ハウススタイルに合わせるためだけに書き直してはならない。言語非依存の同原則は `STYLE_GUIDE.md § Consistency Rule` を参照。
+引用文や出典本文は、ハウススタイルに合わせるためだけに書き直してはならない。言語非依存の同原則は `STYLE_GUIDE_CORE.md § Consistency Rule` を参照。
 
 ## 6. 技術的検証への耐性
 
@@ -1187,13 +1187,13 @@ timeline イベントラベルの例 (Satoshi biography から):
 
 言語非依存の規則 (本ファイルでは複製しない):
 
-- `STYLE_GUIDE.md § Core Distinction: Blockquotes vs Quotation Marks`
-- `STYLE_GUIDE.md § Primary-Source Entries` / `§ Editorial Entries (article / analysis / biography / design)`
-- `STYLE_GUIDE.md § Translation Principle`
-- `STYLE_GUIDE.md § Consistency Rule`
-- `STYLE_GUIDE.md § Related Entries`
-- `STYLE_GUIDE.md § Participant Slug Convention`
-- `STYLE_GUIDE.md § Biography Linking`
-- `STYLE_GUIDE.md § Scripted Edits Policy`
-- `STYLE_GUIDE.md § Review Rule: Duplicate ID Warnings`
-- `STYLE_GUIDE.md § Title Policy`
+- `STYLE_GUIDE_CORE.md § Core Distinction: Blockquotes vs Quotation Marks`
+- `STYLE_GUIDE_CORE.md § Primary-Source Entries` / `§ Editorial Entries (article / analysis / biography / design)`
+- `STYLE_GUIDE_CORE.md § Translation Principle`
+- `STYLE_GUIDE_CORE.md § Consistency Rule`
+- `STYLE_GUIDE_REFERENCE.md § Related Entries`
+- `STYLE_GUIDE_REFERENCE.md § Participant Slug Convention`
+- `STYLE_GUIDE_REFERENCE.md § Biography Linking`
+- `STYLE_GUIDE_REFERENCE.md § Scripted Edits Policy`
+- `STYLE_GUIDE_REFERENCE.md § Review Rule: Duplicate ID Warnings`
+- `STYLE_GUIDE_REFERENCE.md § Title Policy`

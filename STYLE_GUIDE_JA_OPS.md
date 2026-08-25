@@ -5,7 +5,7 @@
 > **Note for international readers.** This file is the JA-edition
 > operational rule book for scripts that touch Japanese content and is
 > therefore written in Japanese. Cross-language scripted-edits policy
-> lives in `STYLE_GUIDE.md § Scripted Edits Policy`, which is in English.
+> lives in `STYLE_GUIDE_REFERENCE.md § Scripted Edits Policy`, which is in English.
 
 ## 本文書が存在する理由
 
@@ -173,7 +173,7 @@ npm run check
 
 スクリプトが日本語コンテンツの問題を検出した場合、対象ファイルの特定にスクリプトを用い、その後に内容そのものを意識的に確認・編集する。スクリプトを検出器として扱い、散文の自動著者として扱わない。
 
-言語非依存の同原則は `STYLE_GUIDE.md § Scripted Edits Policy` を参照。
+言語非依存の同原則は `STYLE_GUIDE_REFERENCE.md § Scripted Edits Policy` を参照。
 
 ## 3. BitcoinTalk 取得: スレッドサイズの上限
 
@@ -233,4 +233,4 @@ BitcoinTalk スレッドを取得するとき (例: `fetch-replies-to-satoshi.mj
 # 参照
 
 - `STYLE_GUIDE_JA.md` — 日本語コンテンツの編集スタイル規則。
-- `STYLE_GUIDE.md § Scripted Edits Policy` — スクリプト編集原則の言語非依存版。
+- `STYLE_GUIDE_REFERENCE.md § Scripted Edits Policy` — スクリプト編集原則の言語非依存版。

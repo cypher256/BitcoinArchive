@@ -11,7 +11,7 @@
  *
  * If the same URL appears in both, the citation block lists the same
  * external link twice. Ban the duplication and force the editor to
- * pick which role the URL plays. See STYLE_GUIDE.md
+ * pick which role the URL plays. See STYLE_GUIDE_CORE.md
  * "Source Citation: sourceUrl vs secondarySources".
  *
  * Scope:
@@ -114,6 +114,6 @@ for (const d of dups) {
   console.error(`    ${d.url}`);
 }
 console.error(`\nFix: keep the URL in only one of sourceUrl or secondarySources[].url.`);
-console.error(`See STYLE_GUIDE.md "Source Citation: sourceUrl vs secondarySources".`);
+console.error(`See STYLE_GUIDE_CORE.md "Source Citation: sourceUrl vs secondarySources".`);
 
 process.exit(STRICT ? 1 : 0);

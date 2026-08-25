@@ -25,7 +25,7 @@ const args = process.argv.slice(2);
 const doApply = args.includes('--apply');
 
 // Recognized cascade exceptions — must match scripts/check-ja-titles.mjs.
-// See STYLE_GUIDE.md § Forum threads / "Recognized cascade exceptions"
+// See STYLE_GUIDE_REFERENCE.md § Forum threads / "Recognized cascade exceptions"
 // and STYLE_GUIDE_JA.md § Reply title consistency / "Recognized cascade
 // exceptions (forum threads)".
 //

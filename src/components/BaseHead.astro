@@ -192,7 +192,7 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
               // by its @id so the graph has a single canonical node
               // for the institute instead of an inline Person duplicate.
               // (Forced for editorial types by pages/entries/[...slug].astro
-              // and the JA mirror per STYLE_GUIDE.md § Editorial Entries.)
+              // and the JA mirror per STYLE_GUIDE_CORE.md § Editorial Entries.)
               ? { "@id": organizationId }
               : { "@type": "Person", "name": author },
         }

@@ -16,7 +16,7 @@
  *      and add editor's note documenting the rename.
  *
  *   C. Subject-deviation — subject changed mid-thread by the OP for a
- *      specific reply. STYLE_GUIDE.md § Forum threads — recognized
+ *      specific reply. STYLE_GUIDE_REFERENCE.md § Forum threads — recognized
  *      cascade exceptions (b). No fix required.
  *
  *   D. Cosmetic — surface-level differences (HTML entities, whitespace,
@@ -287,7 +287,7 @@ function classifyThread(topicDir) {
 
   // Category B candidate: 2+ replies all use a single non-starter
   // subject. Single-reply deviations are Subject-deviation per
-  // STYLE_GUIDE.md § Forum threads — recognized cascade exceptions
+  // STYLE_GUIDE_REFERENCE.md § Forum threads — recognized cascade exceptions
   // (b), not Title-edit, because B implies the OP edited the starter
   // title (which would leave a population of historical replies
   // pointing at the old subject — not a single reply).
@@ -423,7 +423,7 @@ renderCategoryB();
 lines.push('');
 lines.push('## C. Subject-deviation (許容例外)');
 lines.push('');
-lines.push('STYLE_GUIDE.md § Forum threads — recognized cascade exceptions (b) で公認。対応不要。');
+lines.push('STYLE_GUIDE_REFERENCE.md § Forum threads — recognized cascade exceptions (b) で公認。対応不要。');
 lines.push('');
 renderCategoryC();
 lines.push('');

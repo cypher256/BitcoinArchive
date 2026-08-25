@@ -109,7 +109,7 @@ export const participantDisplayNamesJaBySlug: Record<string, string> = {
   // that still looks up a display name by the old handle slug. These
   // entries do NOT create participant pages (pages are generated only
   // from slugs in entry frontmatter), so /participants/{handle}/ URLs
-  // 404 after slug migration. See STYLE_GUIDE.md for the convention.
+  // 404 after slug migration. See STYLE_GUIDE_REFERENCE.md for the convention.
   'gavinandresen': 'ギャビン・アンドレセン',
   'jgarzik': 'ジェフ・ガージック',
   'sipa': 'ピーター・ウィーユ',

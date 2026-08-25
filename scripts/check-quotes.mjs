@@ -381,7 +381,7 @@ function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
 
   // Track the running set of (person) attributed by `<!-- quote: qN -->`
   // markers seen earlier in the file. A speaker shift to a person in
-  // this set is a continuation of an established chain — STYLE_GUIDE.md
+  // this set is a continuation of an established chain — STYLE_GUIDE_CORE.md
   // "Do not repeat <!-- quote: qN --> for the same source in one file"
   // says only the first quoted block per source carries the marker.
   const attributedPersons = new Set();
@@ -410,7 +410,7 @@ function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
     // <!-- audit:quote-skip --> also covers it: the editor has already
     // declared this blockquote out of the chip-attribution system
     // (external quote / deleted source), so the speaker shift needs no
-    // quotes[] entry of its own (STYLE_GUIDE.md "Every source quote
+    // quotes[] entry of its own (STYLE_GUIDE_CORE.md "Every source quote
     // must belong to an attribution chain").
     let nextBq = false;
     let nextBqDepth = 0;
@@ -434,7 +434,7 @@ function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
     // File-level "same source already attributed" check: if any
     // earlier `<!-- quote: qN -->` in this file maps to a quotes[]
     // entry whose person matches this speaker, the shift is a
-    // continuation of the established chain (STYLE_GUIDE.md "Do not
+    // continuation of the established chain (STYLE_GUIDE_CORE.md "Do not
     // repeat <!-- quote: qN --> for the same source in one file"). A
     // new marker would render a duplicate attribution chip.
     //
@@ -473,7 +473,7 @@ function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
     // exactly how real gaps (bare `<!-- speaker: NAME -->` markers with
     // no matching `quotes[]` entry, one nesting level down) went
     // undetected archive-wide until a 2026-07-13 manual audit found
-    // them (see STYLE_GUIDE.md "Every source quote must belong to an
+    // them (see STYLE_GUIDE_CORE.md "Every source quote must belong to an
     // attribution chain").
     let coveredByLocalChain = false;
     for (let j = i - 1; j >= 0; j--) {
@@ -562,7 +562,7 @@ function checkFile(filePath, locale) {
   //    biography entry is wrong — the chip should reach a real
   //    primary source (correspondence / mailing-list / forum-post /
   //    bip / whitepaper / court-document).
-  // Both are hard errors. See STYLE_GUIDE.md "sourceEntryId must
+  // Both are hard errors. See STYLE_GUIDE_CORE.md "sourceEntryId must
   // point to a primary-source entry (and never to self)".
   if (quotes.length > 0) {
     const selfId = entryIdForFile(filePath, locale);
@@ -576,7 +576,7 @@ function checkFile(filePath, locale) {
           file: rel,
           check: 'quote-self-link',
           level: 'error',
-          msg: `quotes[].sourceEntryId "${target}" points at this entry itself. Create a primary entry for the cited message and point sourceEntryId at it, or remove this quotes[] entry (see STYLE_GUIDE.md "sourceEntryId must point to a primary-source entry (and never to self)").`,
+          msg: `quotes[].sourceEntryId "${target}" points at this entry itself. Create a primary entry for the cited message and point sourceEntryId at it, or remove this quotes[] entry (see STYLE_GUIDE_CORE.md "sourceEntryId must point to a primary-source entry (and never to self)").`,
         });
         continue;
       }

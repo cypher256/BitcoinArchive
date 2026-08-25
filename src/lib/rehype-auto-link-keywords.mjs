@@ -79,7 +79,7 @@
  *     sharing one string: the modern company/ledger/token complex
  *     (Ripple Labs, the XRP Ledger, the XRP token) and Ryan Fugger's
  *     unrelated pre-2011 trust-based payment network (see
- *     STYLE_GUIDE.md's Auto-Link Keywords section, "the Ripple-shaped
+ *     STYLE_GUIDE_REFERENCE.md's Auto-Link Keywords section, "the Ripple-shaped
  *     trap").
  *
  *   - 2026-07-27 added dedicated `currency/*.md` overview pages for

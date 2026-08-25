@@ -241,7 +241,7 @@ const RULES = [
   // foreign brand) are handled via the .ja-glossary-ignore file when they
   // are legitimately the brand name; in-archive self-reference must use
   // 「アーカイブ」 / 「本アーカイブ」 per STYLE_GUIDE § "Medium vs Archive".
-  { type: 'literal', deprecated: 'Bitcoin Archive', canonical: '本アーカイブ', reason: 'JA 散文での自己参照は「本アーカイブ」 で統一 (STYLE_GUIDE.md § Medium vs Archive)' },
+  { type: 'literal', deprecated: 'Bitcoin Archive', canonical: '本アーカイブ', reason: 'JA 散文での自己参照は「本アーカイブ」 で統一 (STYLE_GUIDE_CORE.md § Medium vs Archive)' },
   { type: 'literal', deprecated: 'BitcoinArchive の対象', canonical: '本アーカイブの対象', reason: 'JA 散文での自己参照は「本アーカイブ」 で統一。BitcoinArchive はリポジトリ名・URL パス用途のみ' },
   { type: 'literal', deprecated: 'BitcoinArchive におけ', canonical: '本アーカイブにおけ', reason: 'JA 散文での自己参照は「本アーカイブ」 で統一' },
   { type: 'literal', deprecated: 'Archive の残り', canonical: '本アーカイブの他のエントリー', reason: 'JA 散文での自己参照は「本アーカイブ」 で統一。「残り」 は読者が途中まで読んだ含意が出るので不適' },

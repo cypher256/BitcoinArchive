@@ -48,7 +48,7 @@ export default defineConfig({
     remarkPlugins: [remarkRewriteBase, remarkQuoteBlocks, remarkSpeakerBlockquote, remarkEditorialMarker, remarkEntryClosing, remarkChartEmbed, [remarkMath, { singleDollarTextMath: false }]],
     // rehype-mermaid renders ```mermaid code blocks to inline SVG at build
     // time using Playwright. Syntax errors fail the build (no runtime error
-    // boxes can reach production). See STYLE_GUIDE.md "Mermaid Diagrams" for
+    // boxes can reach production). See STYLE_GUIDE_VISUAL.md "Mermaid Diagrams" for
     // usage and JA-content gotchas. Validation script: scripts/check-mermaid.mjs.
     rehypePlugins: [
       // Non-link external http(s) URLs in verbatim primary records,

@@ -265,7 +265,7 @@ function labelLines(body, meta) {
   // Multi-speaker files should use <!-- speaker: Name --> to override.
   // Editorial types (article / analysis / biography / design) are
   // written in Bitcoin Institute's editorial voice, not in the named
-  // author's voice. Per STYLE_GUIDE.md § Editorial Entries the
+  // author's voice. Per STYLE_GUIDE_CORE.md § Editorial Entries the
   // frontmatter `author` on these types names the subject the entry
   // is about, so applying the subject's tone rule to the body would
   // flag editor prose as a tone mismatch. Skip the default-author

@@ -2,7 +2,7 @@
 /**
  * check-editorial-markers.mjs
  *
- * Enforces the Editorial Markers conventions documented in STYLE_GUIDE.md
+ * Enforces the Editorial Markers conventions documented in STYLE_GUIDE_CORE.md
  * (section "Editorial Markers"). Walks every entry's body, masks content
  * that is not editor prose (blockquotes, code blocks, URLs, HTML comments),
  * and flags violations of the canonical forms.
@@ -303,7 +303,7 @@ if (REPORT_F) {
   } else {
     let r = `# Editorial markers audit\n\n`;
     r += `Generated: ${today.toISOString()}\n\n`;
-    r += `Read-only audit. See STYLE_GUIDE.md "Editorial Markers" section.\n\n`;
+    r += `Read-only audit. See STYLE_GUIDE_CORE.md "Editorial Markers" section.\n\n`;
     r += `**Total violations: ${violations.length}**\n\n`;
     r += `## By kind\n\n| kind | EN | JA |\n|---|---|---|\n`;
     const kinds = [...new Set(violations.map((v) => v.kind))].sort();

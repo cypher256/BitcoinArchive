@@ -9,7 +9,7 @@
  *   which is heavy. This script extracts and validates blocks in seconds
  *   so editors can iterate without waiting for full builds.
  *
- *   Common JA-content failure modes (see STYLE_GUIDE.md "Mermaid Diagrams"):
+ *   Common JA-content failure modes (see STYLE_GUIDE_VISUAL.md "Mermaid Diagrams"):
  *     - Full-width punctuation (：、（）、「」) inside Mermaid syntax
  *       positions instead of inside quoted node labels
  *     - Brackets, colons, or semicolons in node labels without `""` wrapping

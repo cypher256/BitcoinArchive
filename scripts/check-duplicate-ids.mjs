@@ -5,7 +5,7 @@
  * Astro 5.17's glob-loader emits "Duplicate id" warnings as a false positive
  * whenever a file's content changes between syncs (incremental cache hit on
  * the previous entry vs. the freshly-loaded new entry). See
- * STYLE_GUIDE.md "Review Rule: Duplicate ID Warnings" for the root cause.
+ * STYLE_GUIDE_REFERENCE.md "Review Rule: Duplicate ID Warnings" for the root cause.
  *
  * Because that noise is indistinguishable from real id collisions, this
  * script independently verifies that, *within a single collection*, no two

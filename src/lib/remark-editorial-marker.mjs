@@ -22,7 +22,7 @@
  * Markers must occupy a paragraph by themselves. Inline links and other
  * inline nodes inside the marker body are preserved.
  *
- * STYLE_GUIDE.md "Editorial Markers" section is the spec.
+ * STYLE_GUIDE_CORE.md "Editorial Markers" section is the spec.
  */
 import { visit } from 'unist-util-visit';
 import { toHast } from 'mdast-util-to-hast';

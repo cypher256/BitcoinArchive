@@ -16,12 +16,12 @@
  *   JA: 100 chars (full-width chars occupy ~2x the pixel width of Latin
  *                  half-width chars; 100 full-width ≈ 200 half-width visually)
  *
- *   Rationale is documented in STYLE_GUIDE.md § Description Policy. In short:
+ *   Rationale is documented in STYLE_GUIDE_REFERENCE.md § Description Policy. In short:
  *   the dominant practical constraints are (a) social-share preview windows
  *   (OGP / Twitter Card, ~200 chars) and (b) entry-list card legibility
  *   (verbatim render, ~1-2 lines). Google SERP's stricter cap (160/80) is
  *   no longer binding because Google auto-generates SERP snippets from body
- *   content. Update STYLE_GUIDE.md before changing these numbers.
+ *   content. Update STYLE_GUIDE_REFERENCE.md before changing these numbers.
  *
  * Mode:
  *   - WARN: list violators, exit 0 (default; for staged adoption)
@@ -93,7 +93,7 @@ if (violations.length === 0) {
 }
 
 console.error(`\n${violations.length} description(s) exceed the cap.`);
-console.error(`Caps: EN 200 chars, JA 100 chars. See STYLE_GUIDE.md § Description Policy.`);
+console.error(`Caps: EN 200 chars, JA 100 chars. See STYLE_GUIDE_REFERENCE.md § Description Policy.`);
 if (STRICT) {
   process.exit(1);
 }

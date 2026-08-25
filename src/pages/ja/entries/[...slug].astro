@@ -130,7 +130,7 @@ const ogModifiedTime = updatedAt ?? entry.data.date;
 // rationale: editorial types put the subject in frontmatter `author`,
 // so structured-data and OGP must override to the actual editorial
 // writer (Bitcoin Institute) — same forcing rule used by EntryMeta
-// for the on-page byline. STYLE_GUIDE.md § Editorial Entries.
+// for the on-page byline. STYLE_GUIDE_CORE.md § Editorial Entries.
 const isEditorialType = entry.data.type === 'article' || entry.data.type === 'analysis' || entry.data.type === 'design' || entry.data.type === 'currency';
 const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
 // The 8 primary-source types where the entire page body is one
@@ -160,7 +160,7 @@ const titleAvatarLabel = isEditorialType ? t('site.title') : titleAvatarParticip
 const heroBannerOffset = heroBannerPosition(entry.id);
 // og:image — prefer the entry's hero illustration when one exists
 // (editorial types embed it as the body's first image, see
-// STYLE_GUIDE.md "Hero Images"); the generated /og/ text card stays
+// STYLE_GUIDE_CORE.md "Hero Images"); the generated /og/ text card stays
 // the fallback for the primary-source types that have none. The body
 // markdown hardcodes the MIRROR_BASE prefix (remark-rewrite-base
 // rewrites it per deployment at build), while BaseHead wants a

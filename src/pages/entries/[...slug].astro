@@ -126,7 +126,7 @@ const isAnalysis = entry.data.type === 'analysis' || entry.data.type === 'design
 const ogPublishedTime = isAnalysis ? (createdAt ?? updatedAt ?? entry.data.date) : entry.data.date;
 const ogModifiedTime = updatedAt ?? entry.data.date;
 // OG / JSON-LD author. For editorial types the frontmatter `author`
-// names the subject the entry is about (per STYLE_GUIDE.md § Editorial
+// names the subject the entry is about (per STYLE_GUIDE_CORE.md § Editorial
 // Entries → Frontmatter author semantics), not the editorial writer.
 // The on-page byline in EntryMeta forces "Bitcoin Institute" for the
 // same reason; mirror that forcing here so structured-data and OGP
@@ -160,7 +160,7 @@ const titleAvatarLabel = isEditorialType ? t('site.title') : titleAvatarParticip
 const heroBannerOffset = heroBannerPosition(entry.id);
 // og:image — prefer the entry's hero illustration when one exists
 // (editorial types embed it as the body's first image, see
-// STYLE_GUIDE.md "Hero Images"); the generated /og/ text card stays
+// STYLE_GUIDE_CORE.md "Hero Images"); the generated /og/ text card stays
 // the fallback for the primary-source types that have none. The body
 // markdown hardcodes the MIRROR_BASE prefix (remark-rewrite-base
 // rewrites it per deployment at build), while BaseHead wants a

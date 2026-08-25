@@ -10,8 +10,10 @@ I delete it?" is answerable from this file — no forensic investigation.
 This ledger owns only the **tier and wiring** of each script (which
 prefix, which port, where it runs). The editorial rule a check enforces
 — thresholds, what counts as a violation, exceptions — stays in
-`STYLE_GUIDE.md` / `STYLE_GUIDE_JA.md`, which remain its single source
-of truth; the role column below is a one-line pointer, not a restatement.
+`STYLE_GUIDE_CORE.md` / `STYLE_GUIDE_REFERENCE.md` / `STYLE_GUIDE_VISUAL.md`
+/ `STYLE_GUIDE_JA.md`, whichever actually defines it; those remain the
+single source of truth. The role column below is a one-line pointer,
+not a restatement.
 
 ## Convention (shared across repos — two prefixes only)
 
@@ -75,7 +77,7 @@ of truth; the role column below is a one-line pointer, not a restatement.
 | `check-ja-block-notation.mjs` | JA block notation (half-width space before the number) | none | check + build · `check:ja-block-notation` |
 | `check-ja-spacing.mjs` | JA × ASCII half-width spacing convention | none | check + build · `check:ja-spacing` |
 | `check-ja-glossary.mjs` | JA terminology glossary + trailing long-vowel | none (`.ja-glossary-ignore`) | check + build · `check:ja-glossary` |
-| `check-description-length.mjs` | `description` length cap (per STYLE_GUIDE.md Description Policy) | none | check + build (`--strict`) · `check:description-length` |
+| `check-description-length.mjs` | `description` length cap (per STYLE_GUIDE_REFERENCE.md Description Policy) | none | check + build (`--strict`) · `check:description-length` |
 | `check-source-duplication.mjs` | `sourceUrl` not duplicated in `secondarySources[]` | none | check + build (`--strict`) · `check:source-duplication` |
 | `check-no-self-domain.mjs` | `sourceUrl` / `secondarySources[].url` never points at this archive's own domain, and `source` never names this project itself | none | check + build (`--strict`) · `check:no-self-domain` |
 | `check-citation-parity.mjs` | Every EN/JA entry has a citation route and both mirrors point to the same source URL set | none | check + build · `check:citation-parity` |
@@ -142,7 +144,7 @@ breaks the build). `tool` = manual, run on demand — reusable, not spent.
 | `fix-ja-ascii-spacing.mjs` | Insert missing JA × ASCII half-width spaces | tool |
 | `fix-ja-link-spacing.mjs` | Remove JA × JA spaces around markdown-link boundaries | tool |
 | `fix-ja-punct-spacing.mjs` | Remove half-width spaces stranded between JA chars incl. punctuation (、。「」) | tool |
-| `fix-ja-reply-titles.mjs` | Cascade JA forum reply titles from the starter (see STYLE_GUIDE.md) | tool |
+| `fix-ja-reply-titles.mjs` | Cascade JA forum reply titles from the starter (see STYLE_GUIDE_REFERENCE.md) | tool |
 | `fix-quote-visual-divergence.mjs` | Fix visual-only JA quote divergence (check-quote-translation-consistency category) | tool |
 | `generate-hero-banners.mjs` | Regenerate the entry-page hero backdrop (`public/images/hero-banners/atmosphere.jpg`) — one wide gradient+grain image shared by every entry (panned to a different crop per entry via `heroBannerPosition()` in `src/lib/heroBanner.ts`); only needs re-running when the design itself changes | tool |
 | `generate-quote-fix-candidates.mjs` | Build a quote-fix review queue from check-quote-translation-consistency | tool |

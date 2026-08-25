@@ -201,7 +201,7 @@ function attrEscape(s) {
 /**
  * Lightweight tag for a CONTINUATION quote: a bare `<!-- speaker: NAME -->`
  * that reuses the same source already introduced by an earlier
- * `<!-- quote: qN -->` in this file (STYLE_GUIDE.md "Do not repeat
+ * `<!-- quote: qN -->` in this file (STYLE_GUIDE_CORE.md "Do not repeat
  * <!-- quote: qN --> for the same source in one file"). That rule
  * correctly stops the same citation (avatar + link + date + medium) from
  * appearing N times, but as a side effect left every continuation

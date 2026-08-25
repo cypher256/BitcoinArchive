@@ -6,11 +6,11 @@
  * instead of a genuine external venue.
  *
  * `sourceUrl` and `secondarySources[]` exist to point a reader at an
- * independent, external reference (STYLE_GUIDE.md "Source Citation:
+ * independent, external reference (STYLE_GUIDE_CORE.md "Source Citation:
  * sourceUrl vs secondarySources"). `source` is a different field — the
  * taxonomy axis behind `/sources/[source]/` — but the same principle
  * applies: it must name the actual external platform/publication content
- * came from (STYLE_GUIDE.md "Source Field (Taxonomy)"), never this
+ * came from (STYLE_GUIDE_CORE.md "Source Field (Taxonomy)"), never this
  * project. A URL or slug that resolves to this site's own identity is
  * not external by definition, regardless of whether it happens to
  * resolve — citing yourself is not a citation.
@@ -151,9 +151,9 @@ for (const v of violations) {
 }
 console.error(`\nsourceUrl / secondarySources must point at an independent external`);
 console.error(`reference, not this site's own domain (${SELF_DOMAINS.join(', ')}).`);
-console.error(`See STYLE_GUIDE.md "Source Citation: sourceUrl vs secondarySources".`);
+console.error(`See STYLE_GUIDE_CORE.md "Source Citation: sourceUrl vs secondarySources".`);
 console.error(`\nsource must name a genuine external platform/publication, not this`);
 console.error(`project itself (${SELF_SOURCE_SLUGS.join(', ')}).`);
-console.error(`See STYLE_GUIDE.md "Source Field (Taxonomy)".`);
+console.error(`See STYLE_GUIDE_CORE.md "Source Field (Taxonomy)".`);
 
 process.exit(STRICT ? 1 : 0);

@@ -26,7 +26,7 @@
  * whose body hash differs from its immediate predecessor; createdAt is the
  * earliest commit touching the file.
  *
- * See STYLE_GUIDE.md "updatedAt policy" for the editor-facing rules.
+ * See STYLE_GUIDE_REFERENCE.md "updatedAt policy" for the editor-facing rules.
  */
 import { spawn, execSync } from 'child_process';
 import { createHash } from 'crypto';

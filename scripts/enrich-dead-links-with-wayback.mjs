@@ -14,7 +14,7 @@
 //   - snapshot-thin:    Wayback snapshot is implausibly small (<5KB)
 //   - no-snapshot:      Wayback search returned nothing usable
 //
-// See STYLE_GUIDE.md "External Link Rot Handling" for the action policy.
+// See STYLE_GUIDE_CORE.md "External Link Rot Handling" for the action policy.
 
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
@@ -146,7 +146,7 @@ async function main() {
   }
   md.push(`| **total** | ${results.length} | |`);
   md.push('');
-  md.push('Action policy: see `STYLE_GUIDE.md` § External Link Rot Handling.');
+  md.push('Action policy: see `STYLE_GUIDE_CORE.md` § External Link Rot Handling.');
   md.push('');
 
   for (const [v, group] of byVerdict.entries()) {

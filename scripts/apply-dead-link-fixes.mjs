@@ -2,7 +2,7 @@
 // scripts/apply-dead-link-fixes.mjs
 //
 // Reads the enrichment JSON from enrich-dead-links-with-wayback.mjs and
-// applies fixes per the policy in STYLE_GUIDE.md "External Link Rot Handling":
+// applies fixes per the policy in STYLE_GUIDE_CORE.md "External Link Rot Handling":
 //
 //   - snapshot-found    -> replace URL with Wayback snapshot URL in
 //                          frontmatter `url:` / `sourceUrl:` fields only.
@@ -45,7 +45,7 @@ function escapeRegex(s) {
 
 // Replace the URL in frontmatter `url: "OLD"` and `sourceUrl: "OLD"` lines
 // with NEW (preserving the field name). Body URLs are deliberately NOT
-// touched: per STYLE_GUIDE.md "Primary-Source Entries" (L59-91),
+// touched: per STYLE_GUIDE_CORE.md "Primary-Source Entries" (L59-91),
 // "Editorial / Narrative Entries" (L104-124), and the rehype-strip-archive-
 // links plugin, body URLs in verbatim or quoted content are part of the
 // historical record. Editor-side replacement of those URLs is a per-instance

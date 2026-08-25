@@ -2,12 +2,38 @@
 
 ## ⛔ Read-the-Guide Gate (highest-priority, enforced before any other action)
 
+**`STYLE_GUIDE.md` was split into three files on 2026-08-25** to keep
+the always-required read smaller (a single 3,369-line file was being
+proxied through summaries instead of actually read). The three files:
+
+- `STYLE_GUIDE_CORE.md` — always required, unconditionally.
+- `STYLE_GUIDE_REFERENCE.md` — required in addition, whenever the task
+  touches any of: an entry's `title` or `description` field, entry
+  dates (`createdAt`/`updatedAt`), `relatedEntries`, participant slugs
+  or avatars, biography linking, the `callout` field, `partOf`, a
+  design-document series, `inlineLinkKeywords`, a scripted
+  (multi-entry) edit, or duplicate-ID / technical-review check output.
+- `STYLE_GUIDE_VISUAL.md` — required in addition, whenever the task
+  touches any of: a Mermaid diagram, a d3 chart (a `<!-- chart: -->`
+  marker, a file under `src/scripts/*.js` that draws a chart, or a
+  `src/components/*.astro` component using d3), a markdown table in
+  entry content, or layout/CSS width tokens.
+
+These triggers are deliberately concrete (specific fields, file
+patterns, marker syntax) rather than a vague "if this feels like
+visual work" judgment call — a vague trigger is exactly as skippable
+as no trigger at all. When in doubt whether a task touches
+REFERENCE or VISUAL, read it; the cost of an unneeded read is far
+lower than the cost of an unconfirmed skip.
+
 **Before doing any of the following — proposing, planning, editing,
 adding entries, choosing tools, picking visualizations, writing
 commit messages — Claude MUST have read these files in full, top to
 bottom, in this session:**
 
-- `STYLE_GUIDE.md`
+- `STYLE_GUIDE_CORE.md` (always)
+- `STYLE_GUIDE_REFERENCE.md` (when triggered, see above)
+- `STYLE_GUIDE_VISUAL.md` (when triggered, see above)
 - `STYLE_GUIDE_JA.md`
 - `STYLE_GUIDE_JA_OPS.md`
 - `src/pages/about.astro` and `src/pages/ja/about.astro`
@@ -101,7 +127,8 @@ in `scripts/CHECKS.md`, kept honest by `check-registry`.
 
 ## Editorial Rules
 
-All editorial rules: see STYLE_GUIDE.md and STYLE_GUIDE_JA.md
-(plus STYLE_GUIDE_JA_OPS.md for the operational rules of scripts that
-modify JA content). The Read-the-Guide Gate above requires a full,
-top-to-bottom read of all three before any editorial action.
+All editorial rules: see STYLE_GUIDE_CORE.md, STYLE_GUIDE_REFERENCE.md,
+STYLE_GUIDE_VISUAL.md, and STYLE_GUIDE_JA.md (plus STYLE_GUIDE_JA_OPS.md
+for the operational rules of scripts that modify JA content). The
+Read-the-Guide Gate above defines which of these are required for a
+given task.

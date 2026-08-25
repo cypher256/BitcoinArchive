@@ -2,7 +2,7 @@
 /**
  * audit-visual-density.mjs — visual-density audit for editorial entries
  *
- * Computes the visual-density ratio defined in STYLE_GUIDE.md
+ * Computes the visual-density ratio defined in STYLE_GUIDE_VISUAL.md
  * § Visual Representation:
  *
  *   density = (mermaid-block lines + markdown-table lines + d3-component lines)
@@ -99,7 +99,7 @@ function computeDensity(body) {
       continue;
     }
     if (trim.startsWith('```')) {
-      // Non-mermaid code fence: excluded from denominator per STYLE_GUIDE.md
+      // Non-mermaid code fence: excluded from denominator per STYLE_GUIDE_VISUAL.md
       // § Visual Representation ("excluding frontmatter and code blocks other
       // than mermaid"). Toggle state without counting the fence line itself.
       inCodeBlock = !inCodeBlock;

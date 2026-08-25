@@ -25,7 +25,7 @@
  *
  *   2. Block-level verbatim (blockquote ancestry):
  *      In editorial entries (aftermath, analysis, biography), primary-source
- *      quotes are authored as markdown blockquotes (per STYLE_GUIDE.md
+ *      quotes are authored as markdown blockquotes (per STYLE_GUIDE_CORE.md
  *      § "Editorial / Narrative Entries" -- short quotes use `> "..."` or
  *      `> 「...」`, longer passages use `>` alone). Any external link inside
  *      a <blockquote> ancestor is stripped, regardless of file path.
