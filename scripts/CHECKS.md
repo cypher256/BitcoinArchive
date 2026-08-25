@@ -92,6 +92,7 @@ not a restatement.
 | `check-mermaid-ja-wrap.mjs` | Long unbroken JA spans in mermaid labels | none | check only · `check:mermaid-ja-wrap` |
 | `check-editorial-markers.mjs` | Editorial-marker canonical forms | none | check only (`--strict`) · `check:editorial-markers` (also `audit:f-candidates`) |
 | `check-llms-counts.mjs` | `public/llms.txt` / `llms-full.txt` category counts vs corpus | none (±max(3, 5%) tolerance) | check only · `check:llms-counts` |
+| `check-styleguide-counts.mjs` | Machine-countable numbers stated in the style guides (e.g. callout count) vs corpus | none | check only · `check:styleguide-counts` |
 | `check-bios-rendering.mjs` | Bio mermaid timelines render without column overflow | none (visual) | manual · `check:bios-rendering` (dev + Playwright) |
 
 ## Registry — `audit-*` (manual; never block the build)

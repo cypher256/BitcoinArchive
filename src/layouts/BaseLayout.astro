@@ -332,15 +332,11 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
         ChartEmbedRuntime.astro) — a static per-chart-type declaration
         that doesn't change with the figure-block's current width.
 
-      2026-08-14 history: the previous version of this script covered
-      table only; mermaid/chart instead got breakout from an
-      *unconditional* `.figure-outer` CSS rule (no overflow check at
-      all). That unconditional rule stretched chart figures that already
-      fit their column (identity-suspect-map measured at 1866px wide vs
-      its 952px column) because chart's `width: 100%` fills whatever
-      breakout width CSS hands it. Removed the unconditional rule;
-      generalized this script to cover all three kinds via the same
-      overflow-gated `data-breakout` mechanism tables already used.
+      Full history of why this script covers all three kinds via the
+      same overflow-gated mechanism (table used to be the only one;
+      mermaid/chart used to get breakout from an unconditional CSS
+      rule instead): see STYLE_GUIDE_VISUAL.md § d3 components →
+      Layout width consideration → History.
     */}
     <script>
       (() => {

@@ -106,6 +106,7 @@ async function main() {
     ['check-mermaid-ja-wrap.mjs'],
     ['check-editorial-markers.mjs', '--strict'],
     ['check-llms-counts.mjs'],
+    ['check-styleguide-counts.mjs'],
   ]);
 
   await runPhase('Content sync', [['sync-content.mjs']]);

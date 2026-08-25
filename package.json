@@ -27,6 +27,7 @@
     "check:inline-link-coverage": "node scripts/check-inline-link-coverage.mjs",
     "check:editorial-markers": "node scripts/check-editorial-markers.mjs",
     "check:llms-counts": "node scripts/check-llms-counts.mjs",
+    "check:styleguide-counts": "node scripts/check-styleguide-counts.mjs",
     "check:source-duplication": "node scripts/check-source-duplication.mjs",
     "check:no-self-domain": "node scripts/check-no-self-domain.mjs",
     "check:citation-parity": "node scripts/check-citation-parity.mjs",
