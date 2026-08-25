@@ -231,7 +231,7 @@ What an editorial body should contain:
   not carry clickable external URLs.
 - Visual structure (Mermaid timelines, tables, d3 components) where
   the content shape calls for it
-  (see [§ Visual Representation](#visual-representation)).
+  (see [§ Visual Representation](STYLE_GUIDE_VISUAL.md#visual-representation)).
 
 What an editorial body must **not** be:
 
@@ -591,9 +591,9 @@ the resolution that preserves accuracy:
   (e.g., `[Buterin participant page](.../participants/vitalik-buterin/)`
   instead of `[Ethereum whitepaper](.../participants/vitalik-buterin/)`).
 
-The biography-cross-link rule in [§ Biography Linking](#biography-linking)
+The biography-cross-link rule in [§ Biography Linking](STYLE_GUIDE_REFERENCE.md#biography-linking)
 and the inline-keyword rule in
-[§ Auto-Link Keywords (concept and person)](#auto-link-keywords-concept-and-person)
+[§ Auto-Link Keywords (concept and person)](STYLE_GUIDE_REFERENCE.md#auto-link-keywords-concept-and-person)
 both presuppose this integrity invariant; they say *where* to link, not
 *how* to mismatch text and URL.
 
@@ -682,7 +682,7 @@ sections at the foot of the entry:
 
 **Ordering and display cap.** `secondarySources[]` order controls
 what a reader sees first, mirroring the `relatedEntries` convention
-(§ Related Entries, rule 1): `<SourceCitation />` shows only the
+(STYLE_GUIDE_REFERENCE.md § Related Entries, rule 1): `<SourceCitation />` shows only the
 first 5 items immediately and folds the remainder into a native
 `<details>` ("Show N more") block — the same display-layer cap used
 by RelatedEntries and CommentaryLinks. The data layer keeps the
@@ -1022,7 +1022,7 @@ normalized.
 | **A** | Page-level editorial commentary | `editorNote:` field | `editorNote:` field | frontmatter; rendered as a labeled box at the top of the body |
 | **B** | Source attribution (primary material) | `frontmatter.sourceUrl` + `secondarySources[]` (with optional `note`) + `<SourceCitation />` (role split between the two fields: see [§ Source Citation](#source-citation-sourceurl-vs-secondarysources)) | same | rendered at the end of the entry by `<SourceCitation />` |
 | **C** | In-body editor interpretation | `*[Editor: ...]*` | `*[編者注：...]*` | italic + brackets, inline anywhere in the body |
-| **D** | In-body historical context (supplementary annotation around the body, **not** a substitute for body prose; see [§ Editorial Entries](#editorial-entries-article--analysis--biography--design)). Also the home for novel-bridge context notes — see § Technical-Review Robustness. | `*[Context: ...]*` | `*[補足：...]*` | italic + brackets, inline anywhere in the body |
+| **D** | In-body historical context (supplementary annotation around the body, **not** a substitute for body prose; see [§ Editorial Entries](#editorial-entries-article--analysis--biography--design--currency)). Also the home for novel-bridge context notes — see STYLE_GUIDE_REFERENCE.md § Technical-Review Robustness. | `*[Context: ...]*` | `*[補足：...]*` | italic + brackets, inline anywhere in the body |
 | **E** | Quotation metadata | `<!-- speaker: ... -->` / `<!-- quote: ... -->` semantic markers, or a `**Author Name:**` label immediately before a blockquote | same | semantic markup; renders as a structural attribution, not as editor commentary |
 | **F** | Original-poster edit notes | `edit:` / `Edit:` / `[edit]` (preserved verbatim) | `編集:` / `[編集]` (preserved verbatim) | preserved as written by the original author; **not** rewritten by Archive editors |
 
@@ -1245,7 +1245,7 @@ quoting context** — the `Quote from: NAME` box on a BitcoinTalk post,
 the `NAME wrote:` line in a mailing-list reply, the attribution on the
 reply that carried the excerpt. It is kept verbatim, exactly as the
 top-level `author` field keeps a source-platform handle
-(see [§ Participant Slug Convention](#participant-slug-convention)).
+(see [§ Participant Slug Convention](STYLE_GUIDE_REFERENCE.md#participant-slug-convention)).
 
 It is therefore **not required to match the `author` of the entry
 `sourceEntryId` points to**, and the two legitimately diverge. This is
@@ -1274,7 +1274,7 @@ handle while the link still resolves to the canonical person.
 **Do not "correct" `person` to match the source entry's author.** That
 erases the handle the quote historically carried — the same loss the
 verbatim-`author` and preserved-source-filename rules guard against
-([§ Participant Slug Convention](#participant-slug-convention), rule 5).
+([§ Participant Slug Convention](STYLE_GUIDE_REFERENCE.md#participant-slug-convention), rule 5).
 The divergence is expected; leave it.
 
 This preservation covers the **attribution label only**. A

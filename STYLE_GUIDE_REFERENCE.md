@@ -542,8 +542,8 @@ Good candidates:
    `forum-post`, `bip`, `whitepaper`, `court-document`, `tweet`) are
    **excluded** from this rule — their bodies are the verbatim source
    record and must not carry editor-inserted prose for any purpose,
-   per [§ Primary-Source Entries](#primary-source-entries) and
-   [§ No editor narrator inside primary-source bodies](#no-editor-narrator-inside-primary-source-bodies).
+   per [§ Primary-Source Entries](STYLE_GUIDE_CORE.md#primary-source-entries) and
+   [§ No editor narrator inside primary-source bodies](STYLE_GUIDE_CORE.md#no-editor-narrator-inside-primary-source-bodies).
    `relatedEntries`-side bidirectionality (rule 3) continues to apply
    to primary-source entries; only body-prose reciprocity is
    restricted to editorial types.
@@ -1035,13 +1035,13 @@ Auto-linking deliberately skips:
 - Inside an existing `<a>` (no double-linking).
 - Inside `<code>` or `<pre>` (don't auto-link identifiers).
 - Inside `<blockquote>` — primary-source quote in editorial entries
-  (see [Editorial Entries](#editorial-entries-article--analysis--biography--design)).
-  Same convention used by [`rehype-strip-archive-links`](#external-link-rot-handling).
+  (see [Editorial Entries](STYLE_GUIDE_CORE.md#editorial-entries-article--analysis--biography--design--currency)).
+  Same convention used by [`rehype-strip-archive-links`](STYLE_GUIDE_CORE.md#external-link-rot-handling).
 - Inside a heading (`<h1>`-`<h6>`) — headings are navigation landmarks;
   a partly-linked heading reads as visual noise and competes with the
   heading's own self-link anchor.
 - Inside `<aside class="editorial-note">` — editor notes
-  (see [Editorial Markers](#editorial-markers)). Internal archive links are
+  (see [Editorial Markers](STYLE_GUIDE_CORE.md#editorial-markers)). Internal archive links are
   allowed, but external URLs are prohibited and belong in the citation
   fields.
 - Whole-file primary-source records — files under `forum/`,
