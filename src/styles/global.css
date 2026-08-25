@@ -1265,7 +1265,7 @@ th {
    Applied by rehype-mermaid-wrapper.mjs, rehype-table-wrapper.mjs,
    and per-drawer for d3 chart embeds (e.g. the fork-genealogy
    drawer in ChartEmbedRuntime.astro).
-   See STYLE_GUIDE.md § Layout Width Policy → Figure overflow.
+   See STYLE_GUIDE.md § d3 components → Layout width consideration.
 
    Structure:
      <div class="figure-outer">

@@ -2244,13 +2244,13 @@ When `callout` is omitted, no callout renders.
   structure, technical postmortem) just because the person was an
   actor in the event.
 
-### Current callouts (12 biographies)
+### Current callouts (14 biographies)
 
 | Biography | Callout target |
 |---|---|
 | Satoshi Nakamoto | identity-hypotheses overview |
 | Wei Dai, Hal Finney, Adam Back, Nick Szabo, Len Sassaman, Isamu Kaneko, Peter Todd | their dedicated identity-hypothesis page |
-| Dorian Nakamoto, Craig Wright, Paul Le Roux | their dedicated identity-hypothesis page |
+| Dorian Nakamoto, Craig Wright, Paul Le Roux, James Donald, Elon Musk | their dedicated identity-hypothesis page |
 | knightmb | knightmb snapshot-and-legend analysis |
 
 ### Audit
@@ -2728,8 +2728,8 @@ constrains prose, so `.prose` is usually redundant.
 | Breakpoint | Behavior |
 |---|---|
 | ≥1200 | Containers at fixed max-width (1000 / 1200) |
-| 768–1199 | Containers fluid to viewport (`max-width: 100%`), padding 1.5rem |
-| <768 | Containers full-width, padding 1rem, font-size 15px |
+| 768–1199 | `.container-wide` fluid to viewport (`max-width: 100%`), padding 1.5rem; `.container` is capped at 1000px and shrinks below that width (no override) |
+| <768 | Containers full-width, padding 1rem, font-size 16px |
 
 Implemented in `src/styles/global.css` with two `@media` queries
 (`max-width: 1199px` and `max-width: 767px`). The 1199 query covers
