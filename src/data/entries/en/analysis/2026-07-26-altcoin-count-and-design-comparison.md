@@ -1,5 +1,5 @@
 ---
-title: "Twelve altcoin design documents — not one says its coin will be worth more"
+title: "Are altcoins built to go up in value? Checking twelve design documents"
 date: 2026-07-26T00:00:00Z
 type: "analysis"
 source: "coingecko"
