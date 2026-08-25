@@ -1,5 +1,5 @@
 ---
-title: "Which coin's price goes up? What 12 chains' own design documents say"
+title: "Twelve altcoin design documents — not one says its coin will be worth more"
 date: 2026-07-26T00:00:00Z
 type: "analysis"
 source: "coingecko"
