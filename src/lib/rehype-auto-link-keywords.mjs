@@ -46,7 +46,10 @@
  * that "Bitcoin Core" is preferred over "Bitcoin" inside "Bitcoin Core".
  *
  * Word-boundary handling:
- *   - ASCII keywords use lookaround word boundaries — "Hearn" inside
+ *   - ASCII keywords: the combined regex itself has no `\b` or
+ *     lookaround — it is a plain alternation. `isWordBoundaryOK` runs
+ *     after a match and rejects it if the character immediately
+ *     before/after is itself ASCII alphanumeric — "Hearn" inside
  *     "Pearns" does not match.
  *   - JA / CJK keywords have no analogous boundary in plain Unicode,
  *     so longest-first sorting is the primary protection (e.g.,
@@ -57,6 +60,69 @@
  * already neutralized; auto-link skips blockquotes anyway, but this
  * keeps responsibilities separable). It must run before any plugin that
  * wraps content (table / mermaid wrappers).
+ *
+ * Currency keyword policy: bare currency-ticker/brand-name keywords
+ * (e.g. a plain "Ethereum", "XRP", "Ripple", "Tether") are deliberately
+ * NOT registered anywhere as of 2026-08-25. This has come up more than
+ * once — documenting the reasons here so it is not re-attempted without
+ * re-deriving them:
+ *
+ *   - 2026-05-31: bulk-registered Ethereum/Cardano/Solana/Monero as
+ *     concept keywords on the fork-and-altcoin-genealogy entry, plus
+ *     three manual Ripple links (commit bb7efd49). Reverted the same
+ *     day (cc1e6302) after finding real context mismatches: bare
+ *     mentions in unrelated asides (a biography's "the smallest
+ *     denomination is named after him" trivia, a design page's
+ *     account-model comparison) all resolved to one broad genealogy
+ *     chart that answered none of them. Separately, the word "Ripple"
+ *     itself is ambiguous across two unrelated real-world referents
+ *     sharing one string: the modern company/ledger/token complex
+ *     (Ripple Labs, the XRP Ledger, the XRP token) and Ryan Fugger's
+ *     unrelated pre-2011 trust-based payment network (see
+ *     STYLE_GUIDE.md's Auto-Link Keywords section, "the Ripple-shaped
+ *     trap").
+ *
+ *   - 2026-07-27 added dedicated `currency/*.md` overview pages for
+ *     12 currencies, removing the "no real destination page" half of the
+ *     2026-05-31 objection. A full 2026-08-25 re-audit covered the 10
+ *     of those 12 not already auto-linked (Litecoin and Dogecoin were
+ *     already safely auto-linked as of 2026-05-31, via their launch
+ *     `aftermath/*-launch.md` entries, not the newer `currency/*.md`
+ *     pages): Bitcoin Cash, Bitcoin SV, Cardano, Ethereum, Monero,
+ *     Polkadot, Solana, USDC, USDT, XRP. Every archive-wide
+ *     prose occurrence of each of those 10 names was read individually
+ *     against its overview page's actual content, and none were a
+ *     mismatch — that risk class is resolved for these 10 names as of
+ *     this audit.
+ *
+ *   - The risk class that is NOT resolved: a currency routinely has
+ *     more than one name in real circulation, and the alternate name
+ *     is not always a clean ticker/full-name pair — the XRP overview
+ *     page's own body prose uses "Ripple" 18 times and "XRP" 32 times
+ *     (word-bounded count, body text only), and "Ripple" is not XRP's
+ *     official name; it is the ambiguous alias covered two bullets up.
+ *     Any such alternate string can independently collide with an
+ *     unrelated real-world referent (a company, a historical
+ *     namesake, an ordinary dictionary word, another organization's
+ *     initialism). Longest-first sorting (above) only resolves one
+ *     candidate keyword being a prefix of another *registered*
+ *     keyword — it does nothing for two unrelated, non-overlapping
+ *     strings that both happen to refer to the same currency.
+ *
+ *   - Before ever registering a bare currency name: pick exactly ONE
+ *     canonical string per currency, not both forms (mirroring how
+ *     person keywords are actually used in practice — as of
+ *     2026-08-25, 0 of 51 biography entries declare an alias via
+ *     `inlineLinkKeywords`, despite the mechanism supporting it).
+ *     Then verify that single candidate by grepping every real
+ *     archive occurrence of the exact string and reading each one,
+ *     confirming none refers to a different real-world entity and
+ *     none predates the currency's own existence. Do not pick the
+ *     "obviously safer-sounding" form by general knowledge alone
+ *     (e.g. assuming a ticker is riskier than a full name, or vice
+ *     versa, without checking whether that specific collision ever
+ *     actually occurs in this archive's own prose) — that judgment
+ *     must be verified per candidate, not guessed.
  */
 import { readFileSync, existsSync, statSync } from 'node:fs';
 import path from 'node:path';
