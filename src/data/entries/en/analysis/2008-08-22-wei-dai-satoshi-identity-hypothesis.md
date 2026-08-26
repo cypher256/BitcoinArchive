@@ -23,9 +23,9 @@ tags:
 secondarySources:
   - name: "Wei Dai — b-money proposal (November 1998)"
     url: "http://www.weidai.com/bmoney.txt"
-  - name: "Wei Dai — AALWA thread on LessWrong (January 12, 2014)"
-    url: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything"
-    note: "Wei Dai's January 12, 2014 retrospective in the 'Ask any LessWronger anything' thread, where he stated that Satoshi 'was not previously active' in academic cryptography or cypherpunk communities and described how Satoshi reinvented b-money's central ideas before learning of the b-money paper. The most-cited Wei Dai self-denial in the public record."
+  - name: "Wei Dai — AALWA thread on LessWrong (March 16, 2014)"
+    url: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything?commentId=9Ros4mX339FJnYzQF"
+    note: "Wei Dai's March 16, 2014 comment in the 'Ask any LessWronger anything' thread, where he stated that Satoshi 'was not previously active' in academic cryptography or cypherpunk communities. A separate January 12, 2014 comment in the same thread describes how Satoshi reinvented b-money's central ideas before learning of the b-money paper. The most-cited Wei Dai self-denial in the public record."
   - name: "Wei Dai — LessWrong user profile"
     url: "https://www.lesswrong.com/users/wei-dai"
     note: "Wei Dai's LessWrong posting history, spanning cryptographic and rationality-related topics over multiple decades."
@@ -62,7 +62,7 @@ inlineLinkKeywords:
 
 ## 1. The evidence
 
-Wei Dai is the person behind the Satoshi Nakamoto pseudonym. His documented public-record interactions with "Satoshi" — the [August 22, 2008 email from Satoshi](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), his response with b-money publication history, and Satoshi's January 10, 2009 follow-up ("achieves nearly all the goals you set out to solve in your b-money paper") — were stagecraft to maintain the pseudonym. He operated as Satoshi from the development phase (mid-2007 onward) through the 2011 withdrawal while running his Crypto++ maintenance and other public scholarship as a public-record decoy, and his [January 2014 AALWA retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) was a calculated public denial.
+Wei Dai is the person behind the Satoshi Nakamoto pseudonym. His documented public-record interactions with "Satoshi" — the [August 22, 2008 email from Satoshi](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/), his response with b-money publication history, and Satoshi's January 10, 2009 follow-up ("achieves nearly all the goals you set out to solve in your b-money paper") — were stagecraft to maintain the pseudonym. He operated as Satoshi from the development phase (mid-2007 onward) through the 2011 withdrawal while running his Crypto++ maintenance and other public scholarship as a public-record decoy, and his [2014 AALWA retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) was a calculated public denial.
 
 | Evidence | Central observation | Objection |
 |---|---|---|
@@ -151,9 +151,9 @@ In the August 22, 2008 email to Adam Back, Satoshi wrote: *"I wasn't aware of th
 
 Under the Wei-Dai = Satoshi reading, this statement is a self-deception with no audience — Satoshi tells Adam Back, in private email, that he had not seen Wei Dai's page, while in fact being its author. The simpler reading: Satoshi genuinely did not know b-money during Bitcoin's design, and learned of it through Adam Back's referral in August 2008. Wei Dai's own [2014 AALWA retrospective](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/) endorses this reading: Satoshi reinvented the central ideas independently and learned of b-money only afterwards.
 
-### 2.3 Wei Dai's January 2014 AALWA retrospective
+### 2.3 Wei Dai's 2014 AALWA retrospective
 
-On January 12, 2014, Wei Dai posted on the LessWrong "Ask any LessWronger anything" thread and [answered the Satoshi question directly](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/):
+On March 16, 2014, Wei Dai posted on the LessWrong "Ask any LessWronger anything" thread and [answered the Satoshi question directly](/BitcoinArchive/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/):
 
 <!-- audit:quote-skip -->
 > "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
@@ -205,7 +205,7 @@ For comparison with other named-candidate hypotheses, see the [Satoshi-identity 
 
 ## 4. Limits of this entry
 
-- This entry does not present new evidence. It compiles material from the August 2008 email exchange, Wei Dai's January 2014 AALWA retrospective, the Crypto++ inclusion record, the Bitcoin Institute reanalysis of van Dorst's corpus, and the standing public discussion of Wei Dai as a Satoshi candidate.
+- This entry does not present new evidence. It compiles material from the August 2008 email exchange, Wei Dai's 2014 AALWA retrospective, the Crypto++ inclusion record, the Bitcoin Institute reanalysis of van Dorst's corpus, and the standing public discussion of Wei Dai as a Satoshi candidate.
 - Wei Dai's hypothesis differs from candidates with a single triggering articulation (Greenberg 2014 for Hal Finney, NYT 2026 for Adam Back, HBO 2024 for Todd) — Wei Dai has been a structural candidate from before Bitcoin's launch by virtue of the whitepaper citation, with no single major-press articulation.
 - If new evidence surfaces — direct documentary links beyond the three-email correspondence, technical fingerprints in Bitcoin v0.1 matching Wei Dai's other code beyond the standard Crypto++ inclusion, or comments by Wei Dai that contradict the 2014 retrospective — this entry should be updated.
 

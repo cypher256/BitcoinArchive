@@ -23,9 +23,9 @@ tags:
 secondarySources:
   - name: "ウェイ・ダイ — b-money 提案（1998 年 11 月）"
     url: "http://www.weidai.com/bmoney.txt"
-  - name: "ウェイ・ダイ — LessWrong AALWA スレッド（2014 年 1 月 12 日）"
-    url: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything"
-    note: "ウェイ・ダイによる 2014 年 1 月 12 日の「Ask any LessWronger anything」スレッドでの回顧。サトシは「学術暗号学またはサイファーパンクのコミュニティで以前から積極的に活動していた人物ではない」と述べ、サトシが b-money 論文を知る前に b-money の中心的アイデアを独自に再発明した経緯を記述している。公的記録上、最も多く引用されるウェイ・ダイの自己否定。"
+  - name: "ウェイ・ダイ — LessWrong AALWA スレッド（2014 年 3 月 16 日）"
+    url: "https://www.lesswrong.com/posts/YdfpDyRpNyypivgdu/aalwa-ask-any-lesswronger-anything?commentId=9Ros4mX339FJnYzQF"
+    note: "ウェイ・ダイによる 2014 年 3 月 16 日の「Ask any LessWronger anything」スレッドでのコメント。サトシは「学術暗号学またはサイファーパンクのコミュニティで以前から積極的に活動していた人物ではない」と述べている。同スレッド内の別の 2014 年 1 月 12 日のコメントでは、サトシが b-money 論文を知る前に b-money の中心的アイデアを独自に再発明した経緯を記述している。公的記録上、最も多く引用されるウェイ・ダイの自己否定。"
   - name: "ウェイ・ダイ — LessWrong ユーザープロフィール"
     url: "https://www.lesswrong.com/users/wei-dai"
     note: "ウェイ・ダイの LessWrong 投稿履歴。数十年にわたる暗号学・合理性関連の話題を含む。"
@@ -63,7 +63,7 @@ translationStatus: complete
 
 ## 1. 証拠
 
-ウェイ・ダイがサトシ・ナカモトの正体だ。[2008 年 8 月 22 日のサトシからのメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、ウェイ・ダイの b-money 公開履歴での返答、サトシの 2009 年 1 月 10 日のフォローアップ（「b-money 論文で解決しようとしていた目標のほぼ全てを達成している」）という記録に残る「サトシ」との公的な関わりは、すべて仮名を維持するための演出だった。ウェイ・ダイは開発期（2007 年央以降）から 2011 年の撤退までサトシとして活動し、Crypto++ の保守やその他の公的執筆を公開記録上のデコイとして並行させ、[2014 年 1 月の AALWA 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)は計算された公的否定だった。
+ウェイ・ダイがサトシ・ナカモトの正体だ。[2008 年 8 月 22 日のサトシからのメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)、ウェイ・ダイの b-money 公開履歴での返答、サトシの 2009 年 1 月 10 日のフォローアップ（「b-money 論文で解決しようとしていた目標のほぼ全てを達成している」）という記録に残る「サトシ」との公的な関わりは、すべて仮名を維持するための演出だった。ウェイ・ダイは開発期（2007 年央以降）から 2011 年の撤退までサトシとして活動し、Crypto++ の保守やその他の公的執筆を公開記録上のデコイとして並行させ、[2014 年の AALWA 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)は計算された公的否定だった。
 
 | 証拠 | 中心観察 | 反論 |
 |---|---|---|
@@ -152,9 +152,9 @@ translationStatus: complete
 
 ウェイ・ダイ = サトシの読みのもとでは、この発言は観客のいない自己欺瞞となる。サトシがメールでアダム・バックに、ウェイ・ダイのページを見たことがないと告げながら、実際にはその著者だったことになるからだ。シンプルな読みなら、サトシはビットコインの設計中に b-money を本当に知らず、2008 年 8 月にアダム・バックの紹介を通じてその存在を知った。ウェイ・ダイ自身の [2014 年 AALWA 回顧](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/)はこの読みを支持する: サトシは中心的なアイデアを独自に再発明し、後から b-money を知った。
 
-### 2.3 ウェイ・ダイの 2014 年 1 月 AALWA 回顧
+### 2.3 ウェイ・ダイの 2014 年 AALWA 回顧
 
-2014 年 1 月 12 日、ウェイ・ダイは LessWrong の『Ask any LessWronger anything』スレッドに投稿し、「サトシではないか」という問いに[直接答えた](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/):
+2014 年 3 月 16 日、ウェイ・ダイは LessWrong の『Ask any LessWronger anything』スレッドに投稿し、「サトシではないか」という問いに[直接答えた](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/):
 
 <!-- audit:quote-skip -->
 > 「私の推測では、彼は暗号学やサイファーパンクコミュニティで以前活動していた人物ではないと思います。そうでなければ、文体やコーディングスタイルで特定されているはずです」
@@ -206,7 +206,7 @@ Crypto++ の組み込み（§1.2）は構造的整合だが、著者性の強い
 
 ## 4. このエントリーの限界
 
-- 本エントリーは新しい証拠を提示しない。2008 年 8 月のメールのやり取り、ウェイ・ダイの 2014 年 1 月 AALWA 回顧、Crypto++ の組み込み記録、Bitcoin Institute によるヴァン・ドルストのコーパス再分析、ウェイ・ダイをサトシ候補として論じる公的議論の現状から資料を編集したものである。
+- 本エントリーは新しい証拠を提示しない。2008 年 8 月のメールのやり取り、ウェイ・ダイの 2014 年 AALWA 回顧、Crypto++ の組み込み記録、Bitcoin Institute によるヴァン・ドルストのコーパス再分析、ウェイ・ダイをサトシ候補として論じる公的議論の現状から資料を編集したものである。
 - ウェイ・ダイの仮説は、単一の引き金となる提唱がある候補（ハル・フィニーに対するグリーンバーグ 2014、アダム・バックに対する NYT 2026、トッドに対する HBO 2024）と異なる。ウェイ・ダイはホワイトペーパー引用の効果でビットコイン公開前から構造的候補だったため、単一の主流報道の提唱はない。
 - 新しい証拠が浮上すれば、本エントリーを更新する。想定されるのは、3 通のメール通信を超える直接的な文書的繋がり、標準的な Crypto++ 組み込みを超えるウェイ・ダイの他のコードと一致するビットコイン v0.1 の技術的指紋、2014 年回顧と矛盾するウェイ・ダイの発言等だ。
 

@@ -55,13 +55,6 @@ On independent invention, Dai recounted:
 
 Dai's own account of that exchange — that he never answered Satoshi's August 2008 email asking for comments on the whitepaper draft, a lapse he later called partly his own fault — appears in a separate LessWrong comment from the previous year; see [Wei Dai's critique of Bitcoin's monetary policy](/BitcoinArchive/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/).
 
-On Satoshi's likely background, Dai offered a guess:
-
-<!-- audit:quote-skip -->
-> "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
-
-*[Editor: Wei Dai's testimony here — that Satoshi was not previously active in the cypherpunk community — is one of three converging primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).]*
-
 On Satoshi's motivation, Dai read it as conviction over profit:
 
 <!-- audit:quote-skip -->
@@ -91,6 +84,15 @@ And he had not foreseen the demand such a system could attract:
 
 <!-- audit:quote-skip -->
 > "I didn't foresee that a system like it, once implemented, could attract so much attention and use beyond a small group of hardcore cypherpunks."
+
+*From the same thread, March 16, 2014:*
+
+On Satoshi's likely background, Dai offered a guess:
+
+<!-- audit:quote-skip -->
+> "My guess is that he's not anyone who was previously active in the academic cryptography or cypherpunks communities, because otherwise he probably would have been identified by now based on his writing and coding styles."
+
+*[Editor: Wei Dai's testimony here — that Satoshi was not previously active in the cypherpunk community — is one of three converging primary-source observations carried into the [analysis of Satoshi's relation to the cypherpunk movement](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).]*
 
 *From the same thread, March 17, 2014:*
 
