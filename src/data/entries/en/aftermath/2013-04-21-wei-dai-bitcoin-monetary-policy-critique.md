@@ -1,5 +1,5 @@
 ---
-title: "Wei Dai's critique of Bitcoin's monetary policy and regret over not responding to Satoshi"
+title: "Wei Dai's regret: the fixed supply might have been stopped"
 date: 2013-04-21T19:44:00Z
 type: "article"
 source: "lesswrong"
