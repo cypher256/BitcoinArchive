@@ -105,6 +105,8 @@ Block 0 is hardcoded as a constant in the source — every node reconstructs it 
 
 Satoshi was active on the cryptography mailing list, the bitcoin-list mailing list on SourceForge, the BitcoinTalk forum (which Satoshi and Martti Malmi created), the P2P Foundation forum, and in private email. Direct correspondents included [Adam Back](/BitcoinArchive/participants/adam-back/), [Wei Dai](/BitcoinArchive/participants/wei-dai/), [Hal Finney](/BitcoinArchive/participants/hal-finney/), [James A. Donald](/BitcoinArchive/participants/james-donald/), [Ray Dillinger](/BitcoinArchive/participants/ray-dillinger/), [Dustin Trammell](/BitcoinArchive/participants/dustin-trammell/), [Martti Malmi](/BitcoinArchive/participants/martti-malmi/), [Mike Hearn](/BitcoinArchive/participants/mike-hearn/), [Gavin Andresen](/BitcoinArchive/participants/gavin-andresen/), [Laszlo Hanyecz](/BitcoinArchive/participants/laszlo-hanyecz/), [Jeff Garzik](/BitcoinArchive/participants/jeff-garzik/), and others. Across 2009–2010, Satoshi authored hundreds of forum posts and emails — explaining design choices, responding to technical objections, coordinating development.
 
+<!-- chart: satoshi-correspondence-board -->
+
 ## Transition and Disappearance
 
 By September 2010, Satoshi was telling Gavin Andresen privately that he was [working on other projects](/BitcoinArchive/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/) — the earliest documented signal of withdrawal. Over the following months he transferred control of the Bitcoin source repository and the network alert key to Andresen, while continuing to communicate with a small circle of developers by private email.

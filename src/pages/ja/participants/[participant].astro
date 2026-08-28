@@ -7,6 +7,7 @@ import { useTranslations, getEntries, getBiographyForParticipant, localePath, tr
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 import Avatar from '../../../components/Avatar.astro';
 import gitDates from '../../../data/git-dates.json';
+import ChartEmbedRuntime from '../../../components/ChartEmbedRuntime.astro';
 
 type LangDate = { createdAt: string; updatedAt: string };
 type GitDateRecord = { en?: LangDate; ja?: LangDate };
@@ -239,6 +240,8 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
       ) : <span />}
     </nav>
   </div>
+
+  {biographyContent && <ChartEmbedRuntime />}
 </BaseLayout>
 
 <style>

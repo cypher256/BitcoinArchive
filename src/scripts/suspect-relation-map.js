@@ -87,16 +87,30 @@ export function mount(container, model) {
   });
 
   // ---- nodes ----
+  // n.href is optional: a board that only visualizes relationships (no
+  // per-node destination page worth sending the reader to, e.g. because
+  // the surrounding prose already links each person) omits it, and the
+  // node renders as a plain <g> — hover/focus still work identically,
+  // it just isn't a navigable link.
   const nodesG = el('g', { class: 'srm-nodes' }, svg);
   const nodeEls = {};
   model.nodes.forEach((n) => {
     const r = n.center ? R_SATOSHI : R_CANDIDATE;
-    const g = el('a', {
-      class: `srm-node${n.center ? ' srm-center' : ''}`,
-      href: n.href,
-      'data-slug': n.slug,
-      'aria-label': n.hook ? `${n.name} — ${n.hook}（${n.status}）` : n.name,
-    }, nodesG);
+    const ariaLabel = n.hook ? `${n.name} — ${n.hook}（${n.status}）` : n.name;
+    const g = n.href
+      ? el('a', {
+          class: `srm-node${n.center ? ' srm-center' : ''}`,
+          href: n.href,
+          'data-slug': n.slug,
+          'aria-label': ariaLabel,
+        }, nodesG)
+      : el('g', {
+          class: `srm-node${n.center ? ' srm-center' : ''}`,
+          tabindex: '0',
+          role: 'button',
+          'data-slug': n.slug,
+          'aria-label': ariaLabel,
+        }, nodesG);
     el('circle', { cx: n.x, cy: n.y, r, class: 'srm-ring' }, g);
     if (n.center) {
       const q = el('text', {

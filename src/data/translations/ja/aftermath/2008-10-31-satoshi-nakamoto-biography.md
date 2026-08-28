@@ -108,6 +108,8 @@ timeline
 
 サトシは暗号学メーリングリスト、SourceForge 上の bitcoin-list メーリングリスト、BitcoinTalk フォーラム（サトシとマルッティ・マルミが開設）、P2P Foundation フォーラム、そしてメールで活動した。直接の通信相手は[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)、[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)、[ハル・フィニー](/BitcoinArchive/ja/participants/hal-finney/)、[ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/)、[レイ・ディリンジャー](/BitcoinArchive/ja/participants/ray-dillinger/)、[ダスティン・トランメル](/BitcoinArchive/ja/participants/dustin-trammell/)、[マルッティ・マルミ](/BitcoinArchive/ja/participants/martti-malmi/)、[マイク・ハーン](/BitcoinArchive/ja/participants/mike-hearn/)、[ギャビン・アンドレセン](/BitcoinArchive/ja/participants/gavin-andresen/)、[ラズロ・ハニエツ](/BitcoinArchive/ja/participants/laszlo-hanyecz/)、[ジェフ・ガージック](/BitcoinArchive/ja/participants/jeff-garzik/)その他。2009〜2010年にかけて、設計判断の説明、技術的反論への応答、開発調整のため、数百のフォーラム投稿とメールを執筆している。
 
+<!-- chart: satoshi-correspondence-board -->
+
 ## 移行と消失
 
 2010年9月時点で、サトシはギャビン・アンドレセンに「[他のプロジェクトに取り組んでいる](/BitcoinArchive/ja/entries/aftermath/2010-09-01-satoshi-andresen-other-projects-notice/)」と私的に伝えていた。公開記録上、これが最も早い撤退シグナルである。続く数か月のあいだに、ビットコインソースリポジトリの管理権とネットワーク警告キーをアンドレセンへ移譲し、メールでは少数の開発者と 2011年初頭まで通信を続けた。

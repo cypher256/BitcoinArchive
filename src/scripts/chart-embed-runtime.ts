@@ -42,6 +42,7 @@ import { mount as mountExtranonceScatter } from './extranonce-scatter.js';
 import { mount as mountNlsExchangeRate } from './nls-exchange-rate.js';
 import { mount as mountSuspectMap } from './suspect-relation-map.js';
 import suspectMapData from '../data/suspect-map/relations.json';
+import correspondenceMapData from '../data/correspondence-map/relations.json';
 import { resolveAvatar } from '../data/avatars.ts';
 import { participantDisplayNamesJaBySlug } from '../i18n/participants.ts';
 import supplyCurveSeries from '../data/supply-curves/series.json';
@@ -118,6 +119,14 @@ const JPY_PER_USD = 160;
       '.chart-embed[data-chart="identity-suspect-map"]{--srm-cited:#a16207;--srm-contact:#047857;--srm-claim:#7c3aed;--srm-self:#be185d;--srm-inter:#5a6470;}' +
       ':root[data-mode="dark"] .chart-embed[data-chart="identity-suspect-map"]{--srm-cited:#fbbf24;--srm-contact:#34d399;--srm-claim:#a78bfa;--srm-self:#f472b6;--srm-inter:#97a0ab;}' +
       '@media (prefers-color-scheme: dark){:root:not([data-mode="light"]) .chart-embed[data-chart="identity-suspect-map"]{--srm-cited:#fbbf24;--srm-contact:#34d399;--srm-claim:#a78bfa;--srm-self:#f472b6;--srm-inter:#97a0ab;}}' +
+      // ---- satoshi-correspondence-board (same srm renderer as above,
+      // different subject/data). Reuses three of the suspect-map's own
+      // validated colors under new names (public=cited's amber,
+      // correspondence=contact's green, succession=claim's violet);
+      // collaboration is the one new hue (cyan, chart-color-7).
+      '.chart-embed[data-chart="satoshi-correspondence-board"]{--srm-correspondence:#047857;--srm-public:#a16207;--srm-collaboration:#0891b2;--srm-succession:#7c3aed;}' +
+      ':root[data-mode="dark"] .chart-embed[data-chart="satoshi-correspondence-board"]{--srm-correspondence:#34d399;--srm-public:#fbbf24;--srm-collaboration:#22d3ee;--srm-succession:#a78bfa;}' +
+      '@media (prefers-color-scheme: dark){:root:not([data-mode="light"]) .chart-embed[data-chart="satoshi-correspondence-board"]{--srm-correspondence:#34d399;--srm-public:#fbbf24;--srm-collaboration:#22d3ee;--srm-succession:#a78bfa;}}' +
       '.chart-embed .srm-wrap{position:relative;}' +
       '.chart-embed .srm-svg{display:block;width:100%;min-width:760px;height:auto;}' +
       '.chart-embed .srm-edge{stroke-linecap:round;transition:opacity .15s;}' +
@@ -126,6 +135,10 @@ const JPY_PER_USD = 160;
       '.chart-embed .srm-e-claim{stroke:var(--srm-claim);stroke-width:2;stroke-dasharray:3 5;}' +
       '.chart-embed .srm-e-self{stroke:var(--srm-self);stroke-width:2.5;stroke-dasharray:11 4;}' +
       '.chart-embed .srm-e-inter{stroke:var(--srm-inter);stroke-width:1.6;stroke-dasharray:1.5 4.5;}' +
+      '.chart-embed .srm-e-correspondence{stroke:var(--srm-correspondence);stroke-width:2;}' +
+      '.chart-embed .srm-e-public{stroke:var(--srm-public);stroke-width:2;stroke-dasharray:3 5;}' +
+      '.chart-embed .srm-e-collaboration{stroke:var(--srm-collaboration);stroke-width:2.3;stroke-dasharray:9 3;}' +
+      '.chart-embed .srm-e-succession{stroke:var(--srm-succession);stroke-width:3.5;}' +
       '.chart-embed .srm-node{cursor:pointer;transition:opacity .15s;}' +
       '.chart-embed .srm-node .srm-ring{fill:var(--color-bg-alt);stroke:var(--color-border);stroke-width:2;}' +
       '.chart-embed .srm-node:hover .srm-ring,.chart-embed .srm-node:focus .srm-ring{stroke:var(--color-accent);stroke-width:3;}' +
@@ -1041,6 +1054,75 @@ const JPY_PER_USD = 160;
         };
       }),
       edges: (suspectMapData as any).edges.map(function (e: any) {
+        return { a: e.a, b: e.b, kind: e.kind, label: lang === 'ja' ? e.ja : e.en };
+      }),
+    };
+    mountSuspectMap(host.querySelector('.ce-map'), model);
+  };
+
+  // ===== drawer: satoshi-correspondence-board (same hand-laid case board
+  // as identity-suspect-map above, reusing mountSuspectMap unchanged) =====
+  // Drawing lives in src/scripts/suspect-relation-map.js; the curated,
+  // archive-grounded node/edge data in src/data/correspondence-map/relations.json
+  // (see that file's description for the curation rules).
+  DRAWERS['satoshi-correspondence-board'] = function (host: HTMLElement, lang: string) {
+    var T_ = ({
+      en: {
+        title: 'The Correspondence Board — 11 Documented Contacts',
+        subtitle: 'Every line is an exchange documented in this archive: green = private email, amber = public mailing-list or forum exchange, cyan = hands-on technical collaboration, violet = formal handover of the project. Hover a face for what they did.',
+        aria: 'Relation map of eleven documented correspondents around Satoshi Nakamoto',
+        legend: [
+          ['correspondence', 'Private email'],
+          ['public', 'Public mailing-list or forum'],
+          ['collaboration', 'Hands-on collaboration'],
+          ['succession', 'Formal handover'],
+        ],
+        note: 'Positions are editorial; each person is linked from the prose above, where the underlying entry is cited.',
+      },
+      ja: {
+        title: '文通相手ボード — 記録に残る11人',
+        subtitle: 'すべての線はこのアーカイブに記録された実際のやり取りを表す。緑＝私的なメール、琥珀＝公開メーリングリスト／フォーラムでの応酬、シアン＝実務的な技術協力、紫＝プロジェクトの正式な引き継ぎ。顔にカーソルを合わせると詳細が浮かぶ。',
+        aria: 'サトシ・ナカモトを囲む、記録に残る11人の通信相手の相関図',
+        legend: [
+          ['correspondence', '私的なメール'],
+          ['public', '公開メーリングリスト／フォーラム'],
+          ['collaboration', '実務的な協力'],
+          ['succession', '正式な引き継ぎ'],
+        ],
+        note: '配置は編集上のもの。各人物は上の本文からリンクされており、根拠となるエントリーはそちらに記載している。',
+      },
+    } as Record<string, any>)[lang];
+
+    var dash: Record<string, string> = { correspondence: '', public: '3 5', collaboration: '9 3', succession: '' };
+    var width: Record<string, string> = { correspondence: '2', public: '2', collaboration: '2.3', succession: '3.5' };
+    var legendHtml = T_.legend.map(function (item: string[]) {
+      return '<span class="srm-legend-item"><svg width="34" height="8" aria-hidden="true"><line x1="1" y1="4" x2="33" y2="4" stroke="var(--srm-' + item[0] + ')" stroke-width="' + width[item[0]] + '"' + (dash[item[0]] ? ' stroke-dasharray="' + dash[item[0]] + '"' : '') + ' stroke-linecap="round"/></svg>' + item[1] + '</span>';
+    }).join('');
+
+    host.innerHTML =
+      '<p class="ce-title">' + T_.title + '</p><p class="ce-sub">' + T_.subtitle + '</p>' +
+      '<div class="figure-outer"><figure class="figure-block" data-kind="chart"><div class="ce-map"></div></figure></div>' +
+      '<div class="srm-legend">' + legendHtml + '</div>' +
+      '<p class="ce-note">' + T_.note + '</p>';
+
+    var model = {
+      ariaLabel: T_.aria,
+      // No href: every person here is already linked from the prose
+      // paragraph directly above this chart, so the board is purely a
+      // visual relationship summary (hover only), not a second
+      // navigation surface to the same destinations.
+      nodes: (correspondenceMapData as any).nodes.map(function (n: any) {
+        return {
+          slug: n.slug,
+          name: lang === 'ja' ? ((participantDisplayNamesJaBySlug as any)[n.slug] ?? n.nameJa ?? n.nameEn) : n.nameEn,
+          avatar: resolveAvatar(n.slug, base),
+          x: n.x, y: n.y,
+          hook: lang === 'ja' ? n.hookJa : n.hookEn,
+          status: lang === 'ja' ? n.statusJa : n.statusEn,
+          center: !!n.center,
+        };
+      }),
+      edges: (correspondenceMapData as any).edges.map(function (e: any) {
         return { a: e.a, b: e.b, kind: e.kind, label: lang === 'ja' ? e.ja : e.en };
       }),
     };

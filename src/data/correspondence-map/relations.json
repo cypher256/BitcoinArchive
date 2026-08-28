@@ -1,0 +1,158 @@
+{
+  "description": "Hand-curated data for Satoshi Nakamoto's documented-correspondents relation map, embedded in aftermath/2008-10-31-satoshi-nakamoto-biography (<!-- chart: satoshi-correspondence-board -->). Every node is a person named as a direct correspondent in that biography's 'Development and Communication' section; every edge cites a fact already documented elsewhere in the archive (see each node's linked entry). This is the positive counterpart to src/data/suspect-map/relations.json's identity-suspect board: same hand-laid case-board renderer (suspect-relation-map.js), different subject — who Satoshi actually corresponded with, not who he might have been. Node x/y are hand-placed on a 1000x640 viewBox, grouped by edge kind: public mailing-list exchanges arc across the top, private-email correspondents sit left/right at mid-height, hands-on technical collaborators arc across the bottom, and the sole succession edge (Gavin Andresen) sits bottom-center as the most significant single tie. Edge kinds: correspondence (private email exchange, solid green) / public (public mailing-list or forum exchange, dashed amber) / collaboration (hands-on technical work, long-dash cyan) / succession (formal handover of the project, thick solid violet).",
+  "nodes": [
+    {
+      "slug": "satoshi-nakamoto",
+      "nameEn": "Satoshi Nakamoto",
+      "nameJa": "サトシ・ナカモト",
+      "x": 500,
+      "y": 290,
+      "center": true
+    },
+    {
+      "slug": "ray-dillinger",
+      "nameEn": "Ray Dillinger",
+      "nameJa": "レイ・ディリンジャー",
+      "x": 330,
+      "y": 95,
+      "entry": "aftermath/2008-11-06-ray-dillinger-biography",
+      "hookEn": "Publicly reviewed Bitcoin's design before the code was ever released",
+      "hookJa": "コードが公開されるより前に、設計を公然と批評した",
+      "statusEn": "Cryptography-list reviewer",
+      "statusJa": "暗号学メーリングリストの論客"
+    },
+    {
+      "slug": "james-donald",
+      "nameEn": "James A. Donald",
+      "nameJa": "ジェームズ・A・ドナルド",
+      "x": 670,
+      "y": 95,
+      "entry": "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald",
+      "hookEn": "First to publicly respond to the whitepaper announcement",
+      "hookJa": "ホワイトペーパー発表に最初に応答した人物",
+      "statusEn": "Cypherpunk-list veteran",
+      "statusJa": "サイファーパンク・メーリングリストの古参"
+    },
+    {
+      "slug": "adam-back",
+      "nameEn": "Adam Back",
+      "nameJa": "アダム・バック",
+      "x": 150,
+      "y": 160,
+      "entry": "aftermath/2008-08-20-satoshi-to-adam-back",
+      "hookEn": "The first person Satoshi ever wrote to, weeks before the whitepaper",
+      "hookJa": "サトシが最初に手紙を送った相手 — ホワイトペーパー発表の2か月前",
+      "statusEn": "Hashcash inventor",
+      "statusJa": "Hashcashの考案者"
+    },
+    {
+      "slug": "wei-dai",
+      "nameEn": "Wei Dai",
+      "nameJa": "ウェイ・ダイ",
+      "x": 850,
+      "y": 160,
+      "entry": "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai",
+      "hookEn": "Cited as reference [1] in the whitepaper",
+      "hookJa": "ホワイトペーパーで参考文献[1]として引用された",
+      "statusEn": "b-money proposal (1998)",
+      "statusJa": "b-money提案（1998年）"
+    },
+    {
+      "slug": "martti-malmi",
+      "nameEn": "Martti Malmi",
+      "nameJa": "マルッティ・マルミ",
+      "x": 110,
+      "y": 320,
+      "entry": "aftermath/2009-10-12-martti-malmi-first-btc-sale",
+      "hookEn": "Co-founded the BitcoinTalk forum with Satoshi",
+      "hookJa": "サトシとともにBitcoinTalkフォーラムを立ち上げた",
+      "statusEn": "Facilitated Bitcoin's first sale for fiat",
+      "statusJa": "ビットコイン初の対法定通貨売買を仲介"
+    },
+    {
+      "slug": "mike-hearn",
+      "nameEn": "Mike Hearn",
+      "nameJa": "マイク・ハーン",
+      "x": 890,
+      "y": 320,
+      "entry": "correspondence/mike-hearn/holding-coins/2011-04-23-satoshi-to-hearn-moved-on",
+      "hookEn": "One of the last two people Satoshi personally wrote to before disappearing",
+      "hookJa": "姿を消す直前、サトシが個人的に書いた最後の二人のうちの一人",
+      "statusEn": "Early Bitcoin Core developer",
+      "statusJa": "初期のBitcoin Core開発者"
+    },
+    {
+      "slug": "hal-finney",
+      "nameEn": "Hal Finney",
+      "nameJa": "ハル・フィニー",
+      "x": 200,
+      "y": 470,
+      "entry": "aftermath/2009-01-12-first-bitcoin-transaction",
+      "hookEn": "Received the first-ever person-to-person Bitcoin transaction (Jan 12, 2009)",
+      "hookJa": "史上初の個人間ビットコイン送金を受け取った（2009年1月12日）",
+      "statusEn": "PGP developer, RPOW creator",
+      "statusJa": "PGP開発者、RPOWの考案者"
+    },
+    {
+      "slug": "jeff-garzik",
+      "nameEn": "Jeff Garzik",
+      "nameJa": "ジェフ・ガージック",
+      "x": 800,
+      "y": 470,
+      "entry": "aftermath/2011-09-13-bitcoin-github-migration-committers",
+      "hookEn": "Received GitHub commit access on May 6, 2011",
+      "hookJa": "2011年5月6日、GitHubのコミット権限を得た",
+      "statusEn": "Linux kernel developer",
+      "statusJa": "Linuxカーネル開発者"
+    },
+    {
+      "slug": "dustin-trammell",
+      "nameEn": "Dustin Trammell",
+      "nameJa": "ダスティン・トランメル",
+      "x": 330,
+      "y": 560,
+      "entry": "aftermath/2021-10-23-dustin-trammell-second-node-testimony",
+      "hookEn": "Possibly ran the second node on the Bitcoin network",
+      "hookJa": "ビットコインネットワーク2番目のノードを動かしていた可能性がある",
+      "statusEn": "Early tester, extensive 2009 correspondence",
+      "statusJa": "初期のテスター、2009年に多数のやり取り"
+    },
+    {
+      "slug": "laszlo-hanyecz",
+      "nameEn": "Laszlo Hanyecz",
+      "nameJa": "ラズロ・ハニエツ",
+      "x": 670,
+      "y": 560,
+      "entry": "aftermath/2010-05-22-bitcoin-pizza-day",
+      "hookEn": "Built Bitcoin's Mac support and paid 10,000 BTC for two pizzas",
+      "hookJa": "MacサポートをつくりピザにBTC1万枚を支払った",
+      "statusEn": "First GPU miner",
+      "statusJa": "初のGPUマイナー"
+    },
+    {
+      "slug": "gavin-andresen",
+      "nameEn": "Gavin Andresen",
+      "nameJa": "ギャビン・アンドレセン",
+      "x": 500,
+      "y": 590,
+      "entry": "aftermath/2011-04-26-satoshi-to-andresen-alert-key",
+      "hookEn": "Took over the source repository and network alert key",
+      "hookJa": "ソースリポジトリとネットワーク警告キーを引き継いだ",
+      "statusEn": "Lead maintainer, 2010–",
+      "statusJa": "2010年以降のリードメンテナー"
+    }
+  ],
+  "edges": [
+    { "a": "satoshi-nakamoto", "b": "ray-dillinger", "kind": "public", "en": "Public cryptography-list exchange, Nov 6–15, 2008", "ja": "暗号学メーリングリストでの公開のやり取り（2008年11月6〜15日）" },
+    { "a": "satoshi-nakamoto", "b": "james-donald", "kind": "public", "en": "Public mailing-list scaling debate, Nov 1–15, 2008", "ja": "公開メーリングリストでのスケーリング論争（2008年11月1〜15日）" },
+    { "a": "satoshi-nakamoto", "b": "adam-back", "kind": "correspondence", "en": "5 private emails, Aug 2008 – Jan 2009", "ja": "私的メール5通（2008年8月〜2009年1月）" },
+    { "a": "satoshi-nakamoto", "b": "wei-dai", "kind": "correspondence", "en": "3 private emails, Aug 2008 – Jan 2009", "ja": "私的メール3通（2008年8月〜2009年1月）" },
+    { "a": "satoshi-nakamoto", "b": "mike-hearn", "kind": "correspondence", "en": "Final personal correspondence, April 2011", "ja": "最後の個人的なやり取り（2011年4月）" },
+    { "a": "satoshi-nakamoto", "b": "hal-finney", "kind": "collaboration", "en": "Email, mailing list, and BitcoinTalk exchange, 2008–2010", "ja": "メール・メーリングリスト・BitcoinTalkでのやり取り（2008〜2010年）" },
+    { "a": "satoshi-nakamoto", "b": "martti-malmi", "kind": "collaboration", "en": "Co-founded BitcoinTalk; helped port to Linux", "ja": "BitcoinTalkを共同設立、Linux移植を支援" },
+    { "a": "satoshi-nakamoto", "b": "jeff-garzik", "kind": "collaboration", "en": "Forum and mailing-list exchange, 2010–2011", "ja": "フォーラム・メーリングリストでのやり取り（2010〜2011年）" },
+    { "a": "satoshi-nakamoto", "b": "dustin-trammell", "kind": "collaboration", "en": "Extensive private-email exchange, Jan 2009", "ja": "私的メールでの多数のやり取り（2009年1月）" },
+    { "a": "satoshi-nakamoto", "b": "laszlo-hanyecz", "kind": "collaboration", "en": "Built Mac support; corresponded on GPU mining, 2010", "ja": "Mac対応を構築、GPUマイニングについてやり取り（2010年）" },
+    { "a": "satoshi-nakamoto", "b": "gavin-andresen", "kind": "succession", "en": "Repository and alert-key handover, late 2010–April 2011", "ja": "リポジトリと警告キーの引き継ぎ（2010年末〜2011年4月）" }
+  ]
+}
