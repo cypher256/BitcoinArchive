@@ -331,7 +331,7 @@ The agreement on a single canonical chain across all nodes — emerging from the
 The chapters above are the model. From here, every term you saw can be followed deeper:
 
 - The [Bitcoin system design overview](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/) — the design-document index that expands every term in this entry across eleven areas (consensus, blockchain, P2P network, wallet, cryptography, transaction, monetary, security, storage, architecture evolution, ecosystem). Start here for a systematic deep dive.
-- The [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — the original 8-page description Satoshi published in October 2008. Now that you have the terms, it is short and readable.
+- The [Bitcoin whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) — the original 9-page description Satoshi published in October 2008. Now that you have the terms, it is short and readable.
 - The [genesis block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/) — what Satoshi etched into the very first block, and why.
 - The [genesis block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) — the technical story of how Block 0 was constructed and why its 50 BTC reward can never move.
 - [Adam Back's 1997 Hashcash announcement](/BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/) — the proof-of-work scheme Bitcoin reused at its core.

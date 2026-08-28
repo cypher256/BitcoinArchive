@@ -332,7 +332,7 @@ flowchart TD
 ここまでがビットコインの基本的な仕組みだ。ここから先は、出てきた用語のひとつひとつをより深く追える:
 
 - [ビットコインのシステム設計概観](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)は、本記事で押さえた用語を 11 領域 (合意、ブロックチェーン、 P2P ネットワーク、ウォレット、暗号工学、トランザクション、通貨設計、セキュリティ、ストレージ、アーキテクチャの変遷、エコシステム) に整理した設計文書索引だ。体系的に深掘りしたいときはここから始めるとよい。
-- [Bitcoin ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)は、2008 年 10 月にサトシが公開した、オリジナルの 8 ページの記述だ。用語を知った今なら短く読み通せる。
+- [Bitcoin ホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)は、2008 年 10 月にサトシが公開した、オリジナルの 9 ページの記述だ。用語を知った今なら短く読み通せる。
 - [ジェネシスブロック](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)には、サトシが最初のブロックに何を、なぜ刻んだのかが記されている。
 - [ジェネシスブロックハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)は、ブロック 0 がどう構築され、 50 BTC の報酬がなぜ永遠に動かせないのかを、技術的詳細まで踏み込んで解説する。
 - [1997 年のアダム・バックによる Hashcash 発表](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/)は、ビットコインが中核で再利用したプルーフ・オブ・ワーク方式だ。

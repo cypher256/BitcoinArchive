@@ -61,7 +61,7 @@ relatedEntries:
 
 On October 31, 2008, Satoshi Nakamoto [published the Bitcoin whitepaper](/BitcoinArchive/entries/aftermath/2008-10-31-bitcoin-whitepaper-publication/). Two and a half years later, he sent his last known email and stopped. Approximately 1.1 million BTC mined under a single coordinated pattern in those first months have not moved since.
 
-"Satoshi Nakamoto" is a pseudonym. The individual or group behind it has never been identified — the question the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) examines by weighing ten named candidates against the documented record compiled here.
+"Satoshi Nakamoto" is a pseudonym. The individual or group behind it has never been identified — the question the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) examines by weighing twelve named candidates against the documented record compiled here.
 
 *New to Bitcoin? Start with the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) — 30 terms across 8 chapters with diagrams, no prior knowledge assumed.*
 
