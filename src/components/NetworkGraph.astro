@@ -216,6 +216,20 @@ interface SimEdge extends SimulationLinkDatum<SimNode> {
       .force('gravityX', forceX<SimNode>(cx).strength(function(d) { return d.isSatoshi ? 0.3 : 0.05; }))
       .force('gravityY', forceY<SimNode>(cy).strength(function(d) { return d.isSatoshi ? 0.3 : 0.05; }));
 
+    // Precompute the layout synchronously, off-DOM, instead of letting the
+    // simulation's automatic timer drive ~300 ticks of live SVG attribute
+    // updates across every node/edge/label as the graph "settles" into
+    // place. simulation.tick(n) advances the physics in memory only (no
+    // DOM writes at all), so this costs a fraction of a millisecond; the
+    // graph then appears already-settled on first paint. .stop() prevents
+    // the auto-timer from also firing during this loop. Drag interactions
+    // still animate live: a drag's 'start' handler calls
+    // simulation.alphaTarget(0.3).restart(), which resumes the timer and
+    // re-triggers the 'tick' listener attached below.
+    simulation.stop();
+    var settleTicks = Math.ceil(Math.log(simulation.alphaMin()) / Math.log(1 - simulation.alphaDecay()));
+    simulation.tick(settleTicks);
+
     var link = g.append('g')
       .selectAll('line')
       .data(simEdges)
@@ -339,7 +353,7 @@ interface SimEdge extends SimulationLinkDatum<SimNode> {
       window.location.href = basePath + '/participants/' + d.id + '/';
     });
 
-    simulation.on('tick', function() {
+    function ticked() {
       link
         .attr('x1', function(d) { return (d.source as SimNode).x ?? 0; })
         .attr('y1', function(d) { return (d.source as SimNode).y ?? 0; })
@@ -351,7 +365,13 @@ interface SimEdge extends SimulationLinkDatum<SimNode> {
       label
         .attr('x', function(d) { return d.x ?? 0; })
         .attr('y', function(d) { return d.y ?? 0; });
-    });
+    }
+    // Paint once immediately at the pre-settled positions (simulation is
+    // stopped, so nothing will call this automatically until a drag
+    // restarts it) — otherwise every element would sit at its (0, 0)
+    // default until some future tick.
+    ticked();
+    simulation.on('tick', ticked);
   }
 
   // d3 is a static import now (bundled, not a CDN global), so it's already

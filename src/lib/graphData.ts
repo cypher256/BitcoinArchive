@@ -91,10 +91,49 @@ export function computeGraphData(
     isSatoshi: d.isSatoshi,
   }));
 
-  const edges: GraphEdge[] = Array.from(edgeCounts.entries()).map(([key, weight]) => {
-    const [source, target] = key.split('::');
-    return { source, target, weight };
-  });
+  // Weight-1 edges are overwhelmingly noise: a single shared BitcoinTalk
+  // thread with N participants contributes an all-pairs clique of
+  // N*(N-1)/2 weight-1 edges (see the thread co-occurrence pass above),
+  // which dominates the edge count (~96% of edges are weight 1) without
+  // representing a real interaction. This bloats both the rendered SVG
+  // (d3-force redraws every edge on every simulation tick) and the JSON
+  // payload sent to the client.
+  //
+  // A flat weight>=2 filter would strand ~330 of 398 nodes with zero
+  // edges, reintroducing exactly the isolated-node problem that
+  // thread-based co-occurrence (d553f9b2c) was added to fix. So: keep
+  // every weight>=2 edge outright, then walk the weight-1 edges once and
+  // keep only the ones that still connect an otherwise-isolated node —
+  // enough to guarantee every originally-connected node keeps at least
+  // one edge, without keeping the full clique.
+  const STRONG_WEIGHT = 2;
+  const strongPairs: [string, string, number][] = [];
+  const weakPairs: [string, string, number][] = [];
+  for (const [key, weight] of edgeCounts) {
+    const [a, b] = key.split('::');
+    (weight >= STRONG_WEIGHT ? strongPairs : weakPairs).push([a, b, weight]);
+  }
+
+  const connected = new Set<string>();
+  for (const [a, b] of strongPairs) {
+    connected.add(a);
+    connected.add(b);
+  }
+
+  const rescuedPairs: [string, string, number][] = [];
+  for (const [a, b, weight] of weakPairs) {
+    if (!connected.has(a) || !connected.has(b)) {
+      rescuedPairs.push([a, b, weight]);
+      connected.add(a);
+      connected.add(b);
+    }
+  }
+
+  const edges: GraphEdge[] = [...strongPairs, ...rescuedPairs].map(([source, target, weight]) => ({
+    source,
+    target,
+    weight,
+  }));
 
   return { nodes, edges };
 }
