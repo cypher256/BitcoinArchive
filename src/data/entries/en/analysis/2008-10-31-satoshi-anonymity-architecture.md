@@ -1,5 +1,5 @@
 ---
-title: "The anonymity nobody could strip — the six-layered wall Satoshi built"
+title: "Satoshi Nakamoto's anonymity: the six-layered wall nobody could strip"
 date: 2008-10-31T00:00:00Z
 type: "analysis"
 source: "wikipedia"
