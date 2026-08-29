@@ -153,22 +153,22 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
         <a href={localePath(`/participants/${nextParticipant.slug}/`, lang)} class="nav-next">{nextParticipant.name} &rarr;</a>
       ) : <span />}
     </nav>
-    <div class="participant-head">
+    <div class:list={['participant-head', !biographyEntry && 'participant-head--no-dates']}>
       <Avatar slug={participantSlug} sizeClass="participant-avatar" base={base} />
       <div class="participant-head-text">
         <h1>{participantName}{lifeDates && <span class="life-dates"> {lifeDates}</span>}</h1>
         {bioSubtitle && <p class="bio-subtitle">{bioSubtitle}</p>}
-        {biographyEntry && (
-          <EntryDates
-            date={biographyEntry.data.date}
-            createdAt={biographyGitDate?.createdAt}
-            updatedAt={biographyGitDate?.updatedAt}
-            lang={lang}
-            variant="biography"
-          />
-        )}
       </div>
     </div>
+    {biographyEntry && (
+      <EntryDates
+        date={biographyEntry.data.date}
+        createdAt={biographyGitDate?.createdAt}
+        updatedAt={biographyGitDate?.updatedAt}
+        lang={lang}
+        variant="biography"
+      />
+    )}
 
     {calloutTarget && calloutSpec && (
       <a class="hypothesis-callout" href={localePath(`/entries/${calloutTarget.id}/`, lang)}>
@@ -301,9 +301,6 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
   .biography-content {
     line-height: 1.8;
   }
-  .biography-content :global(p:first-child) {
-    margin-top: 0;
-  }
   /* Same shape as .section-header on the home page: a heading with a
      trailing action (sort buttons here, "view all" there) shares one
      row, and the border sits on that row so the line reaches under
@@ -359,12 +356,23 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
     display: flex;
     align-items: center;
     gap: 1.1rem;
-    /* Vertical breathing room around the whole name+subtitle block:
-       above it (gap from the prev/next nav) and below it (gap from the
-       body that follows). The avatar is centred against the name +
-       subtitle block; keeping the bottom gap here (rather than on
-       .bio-subtitle) avoids shifting that vertical centre. */
+    /* Vertical breathing room above the name+subtitle block (gap from
+       the prev/next nav). The avatar is centred against just the name
+       + subtitle text -- EntryDates now renders as its own row below
+       this block (not inside .participant-head-text), so it no longer
+       shares this centring. margin-bottom is 0 here on purpose: when
+       <EntryDates> follows, its own margin-top (.entry-dates--biography
+       in global.css) is the sole source of that gap; when it doesn't
+       (see below), the modifier class below is the sole source. Either
+       way exactly one declaration owns the value -- no margin-collapse
+       arithmetic to reason about. */
     margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+  /* Participants with no biography entry never render <EntryDates>
+     below this block (see the template), so nothing else provides the
+     gap before whatever follows (callout or entries list). */
+  .participant-head--no-dates {
     margin-bottom: 1.75rem;
   }
   .participant-head-text {

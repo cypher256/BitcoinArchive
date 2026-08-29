@@ -336,7 +336,17 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
 <style>
   .entry-header {
     padding-top: 2rem;
-    margin-bottom: 2rem;
+    /* .entry-content's own padding-top (1.5rem, shared with
+       .biography-content) already guarantees a fixed minimum gap
+       below this header regardless of margin collapse, so this value
+       is the only other contributor to the visible gap above the
+       body / hero image. Kept small so that gap reads consistently
+       with the participant-page header (see .participant-head /
+       .entry-dates--biography), which carries a comparably small
+       margin into the same shared padding. ParentLink.astro's
+       negative top margin is calibrated against this value -- change
+       both together. */
+    margin-bottom: 0.5rem;
   }
   .entry-header h1 {
     margin: 0 0 0.75rem;

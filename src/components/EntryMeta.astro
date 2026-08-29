@@ -258,7 +258,15 @@ const isSatoshiAuthor =
     gap: 0.35rem;
     font-family: var(--font-heading);
     font-size: 0.8rem;
-    margin-bottom: 1.5rem;
+    /* Sole practical source of the gap below the entry header on entry
+       detail pages: .entry-header itself has no bottom padding/border,
+       so this being the header's last child means this margin (not
+       .entry-header's own, smaller margin-bottom) is the one that wins
+       the collapse and actually reaches the body below. Kept equal to
+       .entry-header's margin-bottom (entries/[...slug].astro, both
+       locales) so the two stay in sync regardless of which one
+       technically "wins". */
+    margin-bottom: 0.5rem;
   }
   .tag-link {
     display: inline-block;
