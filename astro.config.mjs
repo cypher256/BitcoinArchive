@@ -11,6 +11,7 @@ import { remarkSpeakerBlockquote } from './src/lib/remark-speaker-blockquote.mjs
 import { remarkEditorialMarker } from './src/lib/remark-editorial-marker.mjs';
 import { remarkEntryClosing } from './src/lib/remark-entry-closing.mjs';
 import { remarkChartEmbed } from './src/lib/remark-chart-embed.mjs';
+import { remarkFaqCard } from './src/lib/remark-faq-card.mjs';
 import { rehypeNoAutolinkEmail } from './src/lib/rehype-no-autolink-email.mjs';
 import { rehypeMermaidLink } from './src/lib/rehype-mermaid-link.mjs';
 import { rehypeMermaidTimelineAxis } from './src/lib/rehype-mermaid-timeline-axis.mjs';
@@ -45,7 +46,7 @@ export default defineConfig({
     },
   },
   markdown: {
-    remarkPlugins: [remarkRewriteBase, remarkQuoteBlocks, remarkSpeakerBlockquote, remarkEditorialMarker, remarkEntryClosing, remarkChartEmbed, [remarkMath, { singleDollarTextMath: false }]],
+    remarkPlugins: [remarkRewriteBase, remarkQuoteBlocks, remarkSpeakerBlockquote, remarkEditorialMarker, remarkEntryClosing, remarkChartEmbed, remarkFaqCard, [remarkMath, { singleDollarTextMath: false }]],
     // rehype-mermaid renders ```mermaid code blocks to inline SVG at build
     // time using Playwright. Syntax errors fail the build (no runtime error
     // boxes can reach production). See STYLE_GUIDE_VISUAL.md "Mermaid Diagrams" for

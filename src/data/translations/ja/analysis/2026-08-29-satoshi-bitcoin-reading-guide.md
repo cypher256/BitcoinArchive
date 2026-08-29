@@ -20,7 +20,7 @@ participants:
     slug: "wei-dai"
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "サトシ・ナカモトと初期ビットコインについてよくある問いを、それぞれ最もふさわしい一本のアーカイブページへつなぐ案内。"
+description: "サトシ・ナカモトと初期ビットコインについてよくある問いを、それぞれ本アーカイブが詳しく扱っている場所へつなぐ案内。"
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -48,71 +48,84 @@ translationStatus: complete
 
 ![開いた本のページが 6 本の道に枝分かれし、それぞれの先に小さな文書アイコンが置かれた、暗い紺色のイラスト。背景には淡いコンパスの図案が見える。](/BitcoinArchive/images/analysis/2026-08-29-satoshi-bitcoin-reading-guide-hero.png)
 
-サトシ・ナカモトと初期ビットコインについてよくある問いに短く答え、それぞれ詳しい記録がある一本のページへリンクする。
+サトシ・ナカモトと初期ビットコインについてよくある問いに短く答え、それぞれ本アーカイブが詳しく扱っている場所へリンクする。
 
 ## サトシと正体
 
+<!-- faq -->
 ### サトシ・ナカモトとは誰か
 本アーカイブは実名候補 12人の論拠を記録しているが、確定した者はいない。
 **まず読む:** [12人の候補比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)
 
+<!-- faq -->
 ### サトシ・ナカモトは日本人だったのか
 サトシ本人が自称した根拠は裏付けの取れない一つのプロフィール欄のみで、言語とタイムスタンプの証拠はこれに反する。同時代人が日本人だと決めつけたのは、この欄ではなく名前そのものからだ。
 **まず読む:** [プロフィール・言語・時計](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-nationality-question/)
 
+<!-- faq -->
 ### クレイグ・ライトは自分がサトシだと証明したのか
 英国の裁判所が下した結論は逆で、主張を支えるために大規模な証拠偽造を行ったと認定された。
 **まず読む:** [COPA 対ライト判決](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)
 **あわせて読む:** [その主張への反証](/BitcoinArchive/ja/entries/analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis/)
 
+<!-- faq -->
 ### サトシは一人ではなく複数人だった可能性はあるか
 あるドキュメンタリーは 2人の協力者が作業を分担したとし、別の連邦訴訟は 2019年の政府側「4人と面談した」発言の記録開示を求めている。ドキュメンタリーの時期の整合性には、他の研究者が異を唱えている。
 **まず読む:** [『Finding Satoshi』が示す 2人説](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)
 **あわせて読む:** [Murphy 対 DHS の FOIA 訴訟](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)
 
+<!-- faq -->
 ### サトシはなぜ姿を消したのか
 記録が示すのはいつ消えたかであって、なぜかではない。撤退の兆しが最初に現れたのは、最後のメッセージ前後の出来事より 7 か月前で、偶然であって原因ではないと読まれている。
 **まず読む:** [伝記、編集による考察](/BitcoinArchive/ja/participants/satoshi-nakamoto/)
 
 ## サトシの保有量と活動
 
+<!-- faq -->
 ### サトシはどれだけビットコインを保有しているのか
 オンチェーン分析では初期にマイニングされたブロック群から約 110 万 BTC と推定される。
 **まず読む:** [保有量分析](/BitcoinArchive/ja/entries/aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis/)
 
+<!-- faq -->
 ### サトシのビットコインは一度でも動いたことがあるか
-ほとんど動いていない。複数の独立分析(Lerner、Whale Alert、Lopp)はいずれも、動いたのはごく一部(ブロック数の約 0.09%、900〜1,000 BTC 程度)だとしており、残りはマイニング以来動いていない。
+ほとんど動いていない。複数の独立分析(Lerner、Whale Alert、Lopp)はいずれも、動いたのはごく一部(900〜1,000 BTC 程度、サトシがマイニングしたブロックの約 0.09%)だとしており、残りはマイニング以来動いていない。
 **まず読む:** [保有量分析](/BitcoinArchive/ja/entries/aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis/)
 
+<!-- faq -->
 ### 最初のビットコイン取引を受け取ったのは誰か
 ハル・フィニー。ブロック 170 でサトシから 10 BTC を受け取った、史上初の個人間送金である。
 **まず読む:** [最初の取引](/BitcoinArchive/ja/entries/aftermath/2009-01-12-first-bitcoin-transaction/)
 
 ## ビットコインの設計
 
+<!-- faq -->
 ### なぜ 2100 万枚なのか
-サトシはこの数字自体は説明している。人気が出ても低すぎず、そうでなくても高すぎない、という「当て推量」で、半減期の計算からも導ける数字だった。ただし固定供給という方針そのものが正しい理由までは述べていない。
+半減期の計算に合わせ、人気が出ても低すぎず、そうでなくても高すぎない、という「当て推量」だった。
 **まず読む:** [2100 万枚対可変通貨](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)
 
+<!-- faq -->
 ### 量子コンピューターはビットコインを壊すのか
 現存する量子コンピューターでは壊せない。移行案(BIP 360)は存在するが、まだ草案の段階で、脅威の一部にしか対応しておらず、開発者間の合意もまだない。
 **まず読む:** [量子の脅威](/BitcoinArchive/ja/entries/analysis/2026-05-18-bitcoin-quantum-threat/)
 
 ## 初期の人々と取引
 
+<!-- faq -->
 ### ビットコインを最初に買ったのは誰か
 NewLibertyStandard が 2009年10月、マルッティ・マルミに 5.02 ドルを支払って 5,050 BTC を買った。
 **まず読む:** [法定通貨での初売却](/BitcoinArchive/ja/entries/aftermath/2009-10-12-martti-malmi-first-btc-sale/)
 
+<!-- faq -->
 ### ビットコインでピザを買った人は今どうしているのか
-ラズロ・ハニエツは 2010年に 10,000 BTC でピザ 2枚を買い、2018年 2月には Lightning Network(レイヤー 2 技術)を使って再びピザを購入し、その実演を行った。
+ラズロ・ハニエツは、フロリダ在住のソフトウェア開発者で、後悔はしていないという。2018年 2月には Lightning Network(レイヤー 2 技術)を使って再びピザを購入する実演も行った。
 **まず読む:** [ビットコインピザデー](/BitcoinArchive/ja/entries/aftermath/2010-05-22-bitcoin-pizza-day/)
 **あわせて読む:** [ハニエツのその後](/BitcoinArchive/ja/participants/laszlo-hanyecz/)
 
 ## 初期史の出来事
 
+<!-- faq -->
 ### ビットコイン史上最大のバグは何か
-2010年8月15日、一つの取引が 1,840 億 BTC を生み出した。サトシは 5時間以内に修正パッチを出したが、正しい連鎖が不正な連鎖を追い越して取引が完全に無効化されるまでには、そこからさらに約 15時間かかった。
+2010年8月15日、一つの取引が 1,840 億 BTC を生み出した。サトシは事件発生から約 5時間で修正パッチを出したが、正しい連鎖が不正な連鎖を追い越して取引が完全に無効化されたのは、事件発生からおよそ 15時間後だった。
 **まず読む:** [1,840 億 BTC](/BitcoinArchive/ja/entries/analysis/2010-08-15-overflow-incident-structure-and-paradox/)
 
 <!-- entry-closing -->
