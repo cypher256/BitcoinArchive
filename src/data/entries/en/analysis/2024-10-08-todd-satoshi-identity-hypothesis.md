@@ -48,6 +48,12 @@ inlineLinkKeywords:
   - "Todd = Satoshi"
   - "Todd = Satoshi hypothesis"
   - "Peter Todd hypothesis"
+quotes:
+  - id: "q1"
+    person: "Peter Todd"
+    personSlug: "peter-todd"
+    date: "2010-12-10T01:27:59Z"
+    sourceEntryId: "forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion"
 ---
 
 ![A forum-reply timeline showing a technical reply posted about ninety minutes after the original post, a clock marking that gap beside a countdown to a final silent post two days later, a faceless silhouette split between Windows and Linux interface icons, and an evidence board where most items are crossed out except one highlighted timing coincidence.](/BitcoinArchive/images/analysis/2024-10-08-todd-satoshi-identity-hypothesis-hero.png)
@@ -64,7 +70,7 @@ The earliest public articulation of the claim identified in this archive's resea
 
 The documentary's central piece of evidence is a December 2010 exchange on [BitcoinTalk](/BitcoinArchive/entries/forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion/). Satoshi described a transaction-replacement mechanism — what would later be formalized as Replace-by-Fee. Approximately 1.5 hours later, Todd (under the username "retep," his name spelled backwards) replied with a technical correction:
 
-<!-- audit:quote-skip -->
+<!-- quote: q1 -->
 > "Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee."
 
 This was Todd's second post on BitcoinTalk, made three days after registering. Hoback argued that Todd had accidentally posted from his own account instead of Satoshi's — that the reply was a continuation of Satoshi's thought rather than a response to it. Both accounts fell silent in the days that followed: [Satoshi's last public post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) came two days later, on December 12, 2010, and Todd did not return to BitcoinTalk for sixteen months.

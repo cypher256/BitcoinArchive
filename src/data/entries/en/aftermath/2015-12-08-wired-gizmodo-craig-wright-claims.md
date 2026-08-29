@@ -23,6 +23,8 @@ tags:
 secondarySources:
   - name: "Gizmodo article"
     url: "https://gizmodo.com/this-australian-says-he-and-his-dead-friend-invented-bi-1746958692"
+  - name: "Wired — 'New Clues Suggest Craig Wright, Suspected Bitcoin Creator, May Be a Hoaxer' (December 11, 2015)"
+    url: "https://www.wired.com/2015/12/new-clues-suggest-satoshi-suspect-craig-wright-may-be-a-hoaxer/"
 relatedEntries:
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
@@ -42,6 +44,6 @@ Gizmodo's article by Sam Biddle presented similar evidence, reportedly obtained 
 
 Within hours of publication, Australian Federal Police raided Wright's home and office in Sydney, though police stated the raid was related to a tax investigation and not to the Bitcoin claims.
 
-Within days, serious doubts emerged about the evidence. Wired published a follow-up article noting that key pieces of evidence appeared to have been fabricated or backdated. Metadata in blog posts supposedly from 2008 and 2009 contained anachronisms, and cryptographic proofs were called into question by security researchers.
+Within days, serious doubts emerged about the evidence. On December 11, Wired published a follow-up article noting that key pieces of evidence appeared to have been fabricated or backdated. Metadata in blog posts supposedly from 2008 and 2009 contained anachronisms, and cryptographic proofs were called into question by security researchers.
 
 Wright would later attempt a more formal "proof" in May 2016, and the question of his identity claims would ultimately be resolved in the 2024 COPA v. Wright trial, where a UK High Court judge ruled definitively that Wright was not Satoshi Nakamoto and had engaged in extensive document forgery.

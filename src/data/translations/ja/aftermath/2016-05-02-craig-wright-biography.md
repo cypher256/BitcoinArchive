@@ -43,6 +43,12 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "analysis/2009-01-03-genesis-block-hardcode-analysis"
   - "currency/2026-07-27-bitcoin-sv-currency-overview"
+quotes:
+  - id: "q1"
+    person: "James Mellor"
+    personSlug: "james-mellor"
+    date: "2024-03-14T00:00:00Z"
+    sourceEntryId: "aftermath/2024-03-14-copa-v-wright-ruling"
 translationStatus: complete
 ---
 
@@ -52,6 +58,7 @@ translationStatus: complete
 
 8 年後の 2024 年 3 月 14 日、英国高等法院のメラー判事は、暗号オープン特許アライアンス（COPA）が提起した訴訟で[判決を下した](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/):
 
+<!-- quote: q1 -->
 > 1. ライト博士はビットコインのホワイトペーパーの著者ではない。
 > 2. ライト博士は 2008年から 2011年の期間にサトシ・ナカモトという偽名を採用または使用して活動した人物ではない。
 > 3. ライト博士はビットコインシステムを創設した人物ではない。

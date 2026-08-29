@@ -23,6 +23,8 @@ tags:
 secondarySources:
   - name: "Gizmodo article"
     url: "https://gizmodo.com/this-australian-says-he-and-his-dead-friend-invented-bi-1746958692"
+  - name: "Wired — 'New Clues Suggest Craig Wright, Suspected Bitcoin Creator, May Be a Hoaxer' (December 11, 2015)"
+    url: "https://www.wired.com/2015/12/new-clues-suggest-satoshi-suspect-craig-wright-may-be-a-hoaxer/"
 relatedEntries:
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
@@ -43,6 +45,6 @@ Gizmodo のサム・ビドルによる記事も同様の証拠を提示してお
 
 記事公開から数時間以内に、オーストラリア連邦警察がシドニーにあるライトの自宅とオフィスを家宅捜索した。ただし警察は、捜索は税務調査に関連するものであり、ビットコインの主張とは無関係であると述べた。
 
-数日以内に、証拠に対する深刻な疑念が浮上した。Wired は続報記事を掲載し、証拠の主要部分が捏造または日付を遡って改ざんされた可能性があると指摘した。2008年と 2009年当時のものとされるブログ記事のメタデータには時代錯誤が含まれており、暗号学的な証明もセキュリティ研究者によって疑問視された。
+数日以内に、証拠に対する深刻な疑念が浮上した。12月11日、Wired は続報記事を掲載し、証拠の主要部分が捏造または日付を遡って改ざんされた可能性があると指摘した。2008年と 2009年当時のものとされるブログ記事のメタデータには時代錯誤が含まれており、暗号学的な証明もセキュリティ研究者によって疑問視された。
 
 ライトは後に 2016年5月により正式な「証明」を試みた。彼の正体に関する主張の問題は、最終的に 2024年の COPA 対ライト裁判で解決され、英国高等法院の裁判官がライトはサトシ・ナカモトではなく、広範な文書偽造を行っていたと決定的に判断した。

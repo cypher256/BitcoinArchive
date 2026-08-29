@@ -43,6 +43,12 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "analysis/2009-01-03-genesis-block-hardcode-analysis"
   - "currency/2026-07-27-bitcoin-sv-currency-overview"
+quotes:
+  - id: "q1"
+    person: "James Mellor"
+    personSlug: "james-mellor"
+    date: "2024-03-14T00:00:00Z"
+    sourceEntryId: "aftermath/2024-03-14-copa-v-wright-ruling"
 ---
 
 ![Dark-navy illustration of a looping arrow diagram linking two dates, a red-stamped stack of legal documents, a judge's gavel, and a faceless hooded silhouette above a mismatched identity nameplate.](/BitcoinArchive/images/analysis/2016-05-02-craig-wright-biography-hero.png)
@@ -51,6 +57,7 @@ On May 2, 2016, Craig Wright publicly declared himself to be [Satoshi Nakamoto](
 
 Eight years later, on March 14, 2024, Justice Mellor of the UK High Court delivered the [ruling](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) in the case brought by the Crypto Open Patent Alliance:
 
+<!-- quote: q1 -->
 > 1. Dr. Wright is not the author of the Bitcoin White Paper.
 > 2. Dr. Wright is not the person who adopted or operated under the pseudonym Satoshi Nakamoto in the period 2008 to 2011.
 > 3. Dr. Wright is not the person who created the Bitcoin System.
