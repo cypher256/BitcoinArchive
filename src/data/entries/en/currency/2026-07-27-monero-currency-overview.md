@@ -68,7 +68,7 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > The reality is that 82% of the coins were already mined before its 'public' release. Even if the premined coins weren't done so maliciously, it still means 82% of the coins in the hands of persons unknown and invisible.
 
-Riccardo Spagni wrote that about Bytecoin — the CryptoNote-based currency Monero forked away from, and the entire reason it exists. A user calling themselves thankful_for_today announced the fork on April 9, 2014, and launched BitMonero nine days later with no premine of its own. The community didn't trust thankful_for_today either: on April 25, seven developers forked again, dropped the "Bit," and kept building as Monero.
+Riccardo Spagni wrote that about Bytecoin — the CryptoNote-based currency Monero forked away from, and the entire reason it exists. His own count put the number at 151 billion of a possible 184 billion BCN, already mined before the coin's existence was known outside the project. A user calling themselves thankful_for_today announced the fork on April 9, 2014, and launched BitMonero nine days later with no premine of its own. The community didn't trust thankful_for_today either: on April 25, seven developers forked again, dropped the "Bit," and kept building as Monero.
 
 Two forks in seventeen days is not a design process so much as a founding principle — whoever holds the supply before launch cannot be trusted to hold it fairly after. [The twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) already places Monero closer to Bitcoin on distribution and system decentralization than any other chain in its table. What that table has no room to show is how far Monero then diverged, on purpose, on the two questions Bitcoin answered the opposite way: whether the ledger should be readable, and whether issuance should ever stop.
 
@@ -125,12 +125,12 @@ Development still had to get paid for, and Monero's answer has no single paymast
 
 ## What Spagni has said about Bitcoin
 
-Spagni's own position was never that Bitcoin had failed. It was narrower and harder to dismiss: Bitcoin's transparency is a real property with a real consequence, and Monero is that consequence.
+Spagni's own position was never that Bitcoin had failed. It was narrower and harder to dismiss: Bitcoin's transparency is a real property with a real consequence, and Monero is that consequence. He said as much in an October 2018 What Bitcoin Did interview:
 
 <!-- audit:quote-skip -->
 > As Bitcoin proved not to be anonymous, there is a significant and obvious use case for Monero.
 
-He pushed the same transparency argument the other direction too — not just that Bitcoin lacks privacy, but that its readability isn't the safety net people assume it is:
+He pushed the same transparency argument the other direction too — not just that Bitcoin lacks privacy, but that its readability isn't the safety net people assume it is. He made the point to Coin Story in December 2020:
 
 <!-- audit:quote-skip -->
 > At the end of the day, Bitcoin is not immune to auditibility risks. And you can see that because there have been two clear inflation bugs on Bitcoin. The first was actually exploited in 2010 when someone created billions of bitcoins... The second one was a little more of an issue and that was the 2018 CVE, which was double spending transaction outputs.

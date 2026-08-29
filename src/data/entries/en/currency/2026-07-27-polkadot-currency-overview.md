@@ -49,7 +49,7 @@ secondarySources:
     url: "https://www.realvision.com/shows/the-interview-crypto/videos/polkadot-a-bet-against-maximalism"
   - name: "Polkadot official X account — supply-cap announcement (1.6 billion DOT circulating, 120 million DOT annual issuance)"
     url: "https://x.com/Polkadot/status/1967241017314115889"
-  - name: "Polkadot official X account — Wood says Bitcoin pioneered robustness"
+  - name: "Polkadot official X account — Wood says Bitcoin pioneered resilience"
     url: "https://x.com/Polkadot/status/1922351136285028715"
 relatedEntries:
   - analysis/2026-07-26-altcoin-count-and-design-comparison
@@ -114,7 +114,7 @@ The paper's own issuance design set no ceiling at all:
 
 A market-based mechanism was meant to nudge that expansion rate up or down to hold a target proportion of tokens staked — a target, not a cap, and one the paper's own FAQ calls "unlimited." The same document, in the same breath, states that "Polkadot tokens are neither intended nor designed to be used as a currency."
 
-The chain that eventually launched on May 26, 2020 bore little resemblance to the token-holder government the paper described. Genesis began under a single administrator key, Sudo, running as a proof-of-authority network. NPoS took over on June 18; Sudo was removed on July 20, handing governance to DOT holders for the first time; transfers were enabled on August 18; and three days later, on August 21, holders voted to redenominate the unit itself, one old DOT becoming one hundred new ones.
+The chain that eventually launched on May 26, 2020 bore little resemblance to the token-holder government the paper described. Genesis began under a single administrator key, Sudo, running as a proof-of-authority network. NPoS took over on June 18; Sudo was removed on July 20, handing governance to DOT holders for the first time; transfers were enabled on August 18; and three days later, on August 21, holders voted to redenominate the unit itself, one old DOT becoming one hundred new ones — 86 percent in favor, with Web3 Foundation and Parity among the abstentions.
 
 Issuance then held at a fixed 120 million DOT a year for years. The paper's "roughly 10%" was a proportion of the supply at genesis, and as the base grew, the same fixed number quietly stopped being ten percent of anything. By September 2025, circulating supply had reached roughly 1.6 billion DOT — at which point 120 million a year was already under 8 percent, without anyone having voted on a thing.
 
@@ -151,7 +151,12 @@ Speaking to Real Vision in January 2021, in an interview titled "Polkadot: A Bet
 <!-- audit:quote-skip -->
 > Bitcoin "uses up the equivalent of ... some small country's energy simply in securing itself."
 
-In the same conversation he raised a second objection, on throughput rather than energy: Bitcoin's advertised ten-minute block target, he said, does not describe how long a payment actually takes to confirm in practice, where a confirmation can run closer to an hour. Both objections are about what Bitcoin costs to run, not about whether its design works. The whitepaper Wood wrote five years earlier had already answered that second question, naming Bitcoin as one of the systems Polkadot considers itself "equivalent to" — a chain worth connecting to, not one whose consensus needed replacing.
+In the same conversation he raised a second objection, on throughput rather than energy: Bitcoin's advertised ten-minute block target, he said, does not describe how long a payment actually takes to confirm in practice, where a confirmation can run closer to an hour. But Wood's verdict on Bitcoin isn't one-sided. In a separate post from Polkadot's own account, he put it this way:
+
+<!-- audit:quote-skip -->
+> "Bitcoin pioneered resilience. Ethereum generalized it. Polkadot took it one step further with scale."
+
+Both objections — energy and throughput — are about what Bitcoin costs to run, not about whether its design works, and crediting Bitcoin as the origin of the resilience his own network claims to extend is not how someone talks about a design they think needs replacing. The whitepaper Wood wrote five years earlier had already made the same point, naming Bitcoin as one of the systems Polkadot considers itself "equivalent to" — a chain worth connecting to, not one whose consensus needed replacing.
 
 Polkadot's supply since Referendum 1710, plotted against Bitcoin's cap and ten other currencies on one normalized index:
 

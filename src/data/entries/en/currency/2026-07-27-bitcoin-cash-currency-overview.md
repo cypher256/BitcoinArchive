@@ -98,6 +98,8 @@ He named the mechanism he wanted built to replace that starting point, in the sa
 
 That mechanism took nearly seven years to arrive, and it arrived twice.
 
+This fork did not stay a matter of pure engineering. [Why Bitcoin's fork wars were not OSS fork wars](/BitcoinArchive/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/) traces that shift to three conditions already in place by 2017: a vacuum of designated authority, the economic weight that had accumulated on rule decisions, and the three-layer bond between protocol, software, and the live currency network.
+
 ## Inherited supply, a difficulty algorithm invented twice
 
 BCH's supply table needed no design work: 21 million units, halving on the same 210,000-block schedule, mined under the same proof-of-work rule Bitcoin uses. [Bitcoin's fair-launch property](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/) carried over by inheritance rather than by repetition — BCH's coins were not mined without a premine so much as copied, whole, from a ledger that had already settled the question in 2009. [The twelve-chain design comparison](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) marks that same line as a conditional pass — inherited state, no new issuance — rather than a clean one. Séchet's team added one new piece of protocol at the fork itself: a SIGHASH_FORKID flag stamped into every BCH transaction, so a payment on one chain could never be replayed as a payment on the other.
@@ -110,7 +112,7 @@ What did not carry over was the hashrate to secure the inherited chain. At the m
 | DAA ("D601") | Nov 13, 2017 – present | A 144-block moving average of total work done and time elapsed, retargeted toward a 600-second mean block time | The EDA's own overcorrection — repeated 20% cuts swung difficulty wildly and let BCH mine thousands of blocks ahead of the schedule both chains nominally share |
 | ABLA (Adaptive Blocksize Limit Algorithm) | May 15, 2024 – present | An exponentially weighted moving average of recent block sizes, adjusting the cap automatically — a floor of 32 MB, room to double in a year at peak demand, no fixed ceiling | The need for a coordinated hard fork, argued over and voted on, every time the block-size cap needed to move |
 
-The EDA solved the problem it was built for and created a worse one: a chain running ahead of its own issuance clock. The DAA that replaced it on November 13, 2017 was Séchet's own D601 proposal, chosen over a rival design after independent testing found it carried less risk of splitting the network further. The ABLA that replaced the cap itself, nearly seven years later, is close to the mechanism Séchet described wanting in 2017 — block-size policy that adjusts on its own, so nobody has to sit down and negotiate it.
+The EDA solved the problem it was built for and created a worse one: a chain running ahead of its own issuance clock. The DAA that replaced it on November 13, 2017 was Séchet's own D601 proposal, resistant to timestamp manipulation. Two independent teams tested it against a rival design that performed slightly better in some scenarios; D601 was chosen because it carried the lower risk of splitting the network further. The ABLA that replaced the cap itself, nearly seven years later, is close to the mechanism Séchet described wanting in 2017 — block-size policy that adjusts on its own, so nobody has to sit down and negotiate it.
 
 ## No founder, and two splits nobody voted on
 

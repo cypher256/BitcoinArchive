@@ -83,7 +83,8 @@ timeline
          : Chris Larsen joins, company founded as NewCoin (Sep)
     %% link: /BitcoinArchive/participants/chris-larsen/
     2017 : 55B XRP locked into 55 monthly-release escrows (Dec)
-    2020 : SEC sues Ripple (Dec 22)
+    2020 : XRP Ledger Foundation founded (Sep 24)
+         : SEC sues Ripple (Dec 22)
     2023 : Judge Torres rules only institutional sales were securities (Jul 13)
     2024 : Final judgment, $125,035,150 penalty (Aug 7)
     2025 : SEC and Ripple jointly dismiss cross-appeals (Aug 7)
@@ -110,7 +111,17 @@ The 2014 paper that formalized the mechanism — written by Schwartz, Noah Young
 
 A server on the XRP Ledger does not mine; it maintains a Unique Node List (UNL) — its own roster of validators it has chosen to trust — and roughly every three to five seconds it puts one question to that roster: what set of transactions happened since the last ledger closed? Validators propose candidate sets, compare notes, and revise their proposals across several rounds until one version clears a fixed bar: agreement from at least 80% of the validators on that server's own list. Below 20% disagreement, the ledger keeps advancing. Above it, the network stops rather than risk confirming something wrong — the protocol's own documentation states plainly that forcing an invalid transaction through would take "over 80% of trusted validators" colluding at once.
 
-Nothing requires any operator to use a particular list. In practice, almost none build their own. The default configuration ships with a list jointly published by Ripple and the XRP Ledger Foundation, and any operator who never touches that setting is trusting whichever validators those two publishers recommended. What that concentrates matters more than how many validators exist in total: as of July 2023, per the Ledger's own FAQ, the network ran more than 150 validators, only 35 of them on the default list — and Ripple itself operated exactly one of those 35. The company that was gifted 80% of the supply does not need to run the list. It only needs to be trusted to have helped choose it.
+Nothing requires any operator to use a particular list. In practice, almost none build their own. The default configuration ships with a list jointly published by Ripple and the XRP Ledger Foundation — an independent nonprofit founded September 24, 2020 with an initial donation of more than $6.5 million — and any operator who never touches that setting is trusting whichever validators those two publishers recommended. What that concentrates matters more than how many validators exist in total: as of July 2023, per the Ledger's own FAQ, the network ran more than 150 validators, only 35 of them on the default list — and Ripple itself operated exactly one of those 35. The company that was gifted 80% of the supply does not need to run the list. It only needs to be trusted to have helped choose it.
+
+The two systems' answers to the same handful of questions rarely overlap:
+
+| Dimension | Bitcoin | XRP Ledger |
+|---|---|---|
+| Unit of agreement | The chain with the most cumulative proof-of-work | A ledger version 80% of a validator list agrees on |
+| Who can participate | Anyone who can pay for mining hardware and electricity | Only the validators each server has chosen to trust |
+| Time between settled versions | About 10 minutes per block, on average | Roughly every three to five seconds |
+| Where the fee goes | Paid to the miner who assembles the block | Burned; paid to no one |
+| How supply comes into being | Mined out gradually toward 21 million, over successive halvings | 100 billion generated at once in 2012; none minted since |
 
 ## A hundred billion, and where each share of it went
 

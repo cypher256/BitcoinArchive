@@ -47,7 +47,7 @@ secondarySources:
     url: "https://cryptonews.net/news/altcoins/32991057/"
   - name: "Real Vision — 「Polkadot: A Bet Against Maximalism」ウッド出演回 (2021 年 1 月)"
     url: "https://www.realvision.com/shows/the-interview-crypto/videos/polkadot-a-bet-against-maximalism"
-  - name: "Polkadot 公式 X アカウント — ウッドの発言「ビットコインは頑健性を切り拓いた」"
+  - name: "Polkadot 公式 X アカウント — ウッドの発言「ビットコインは強靭性を切り拓いた」"
     url: "https://x.com/Polkadot/status/1922351136285028715"
   - name: "Wikipedia — ポルカドット (暗号資産) (2019 年の非公開販売と 2021 年 12 月のパラチェーン開始)"
     url: "https://en.wikipedia.org/wiki/Polkadot_(cryptocurrency)"
@@ -148,9 +148,9 @@ timeline
 同じ会話の中で、ウッドはビットコインの処理能力にも触れ、平均は 10 分でも実際には承認に一時間かかることがあると指摘している。もっとも、ウッドの評価は否定一色ではない。ポルカドットの公式発信が伝える別の場面で、ウッドはこう位置づけている。
 
 <!-- audit:quote-skip -->
-> ビットコインは頑健性を切り拓いた。イーサリアムはそれを汎用化した。ポルカドットは規模という一段をさらに積み上げた。
+> ビットコインは強靭性を切り拓いた。イーサリアムはそれを汎用化した。ポルカドットは規模という一段をさらに積み上げた。
 
-電力消費と処理速度への異議は、ビットコインの設計思想そのものではなく、その運用コストに向けられている。頑健性の先駆者としての評価は、ウッドがその設計自体は退けていないことを示している。
+電力消費と処理速度への異議は、ビットコインの設計思想そのものではなく、その運用コストに向けられている。強靭性の先駆者としての評価は、ウッドがその設計自体は退けていないことを示している。
 
 Referendum 1710 以後のポルカドットの供給を、ビットコインおよび他 10 通貨と同じ指数チャートで並べる。
 

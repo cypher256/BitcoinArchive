@@ -9,6 +9,12 @@ author: "Bitcoin Institute"
 participants:
   - name: "Paolo Ardoino"
     slug: "paolo-ardoino"
+  - name: "Brock Pierce"
+    slug: "brock-pierce"
+  - name: "Reeve Collins"
+    slug: "reeve-collins"
+  - name: "Craig Sellars"
+    slug: "craig-sellars"
 description: "2014 年にビットコインの台帳上でリアルコインとして生まれたテザー（USDT）は、上限のない発行と残高凍結の権限を発行体が握る。その設計をビットコインを基準に読み解く。"
 isSatoshi: false
 tags:
@@ -18,6 +24,8 @@ tags:
   - "transparency"
   - "regulation"
 secondarySources:
+  - name: "Wikipedia — Tether (cryptocurrency)"
+    url: "https://en.wikipedia.org/wiki/Tether_(cryptocurrency)"
   - name: "CoinDesk — 「Realcoin」から「テザー」への改称を報じる記事 (2014 年 11 月 20 日)"
     url: "https://www.coindesk.com/markets/2014/11/20/realcoin-rebrands-as-tether-to-avoid-altcoin-association"
   - name: "CoinDesk — テザーの供給が発祥の地である Omni Layer から離れていく過程を報じる記事 (2020 年 5 月 5 日)"
@@ -67,7 +75,7 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > この方式は、発行されたトークンが常に全額担保され準備されていることを証明するために、ビットコインの台帳、準備金証明、その他の監査手法を用いる。
 
-USDT は文書のとおりに生まれた。2014 年 10 月 6 日、ブロック・ピアース、リーヴ・コリンズ、クレイグ・セラーズ（Omni Foundation の一員でもあった）の 3 人が「リアルコイン」の名で発行した最初のトークンは、ビットコインのブロックチェーン上にメタデータとして書き込まれていた。同年 11 月、名は「テザー」に改められる。それから 11 年後の 2025 年 9 月 1 日、テザー社は、ビットコインの台帳上でトランザクションのメタデータとして USDT を発行する仕組みである Omni Layer における新規発行と償還を終えた。生まれた場所と、離れた場所は同じだった。
+USDT は文書のとおりに生まれた。2014 年 7 月、[ブロック・ピアース](/BitcoinArchive/ja/participants/brock-pierce/)、[リーヴ・コリンズ](/BitcoinArchive/ja/participants/reeve-collins/)、[クレイグ・セラーズ](/BitcoinArchive/ja/participants/craig-sellars/)の 3 人が「リアルコイン」を創業した。セラーズは当時、Omni Layer の前身である Mastercoin プロトコルを運営する Mastercoin Foundation の最高技術責任者でもあった。同年 10 月 6 日に発行された最初のトークンは、ビットコインのブロックチェーン上にメタデータとして書き込まれていた。同年 11 月、名は「テザー」に改められる。それから 11 年後の 2025 年 9 月 1 日、テザー社は、ビットコインの台帳上でトランザクションのメタデータとして USDT を発行する仕組みである Omni Layer における新規発行と償還を終えた。生まれた場所と、離れた場所は同じだった。
 
 ```mermaid
 timeline

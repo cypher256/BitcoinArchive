@@ -9,6 +9,12 @@ author: "Bitcoin Institute"
 participants:
   - name: "Paolo Ardoino"
     slug: "paolo-ardoino"
+  - name: "Brock Pierce"
+    slug: "brock-pierce"
+  - name: "Reeve Collins"
+    slug: "reeve-collins"
+  - name: "Craig Sellars"
+    slug: "craig-sellars"
 description: "Launched on Bitcoin's blockchain as Realcoin in 2014, USDT mints and freezes at one company's discretion, and its reserve reporting has stayed at quarterly attestations, not audits."
 isSatoshi: false
 tags:
@@ -18,6 +24,8 @@ tags:
   - "transparency"
   - "regulation"
 secondarySources:
+  - name: "Wikipedia — Tether (cryptocurrency)"
+    url: "https://en.wikipedia.org/wiki/Tether_(cryptocurrency)"
   - name: "CoinDesk — Realcoin rebrands as Tether to avoid altcoin association (November 20, 2014)"
     url: "https://www.coindesk.com/markets/2014/11/20/realcoin-rebrands-as-tether-to-avoid-altcoin-association"
   - name: "CoinDesk — As Tether supply hits record highs, it moves away from its original home (May 5, 2020)"
@@ -65,7 +73,7 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > "This method uses the Bitcoin blockchain, Proof of Reserves, and other audit methods to prove that issued tokens are fully backed and reserved at all times."
 
-Tether wrote that sentence in June 2016, in a whitepaper titled *Tether: Fiat currencies on the Bitcoin blockchain*. The company had already been running for two years by then. Its first tokens went out under the name Realcoin, minted as metadata written directly into Bitcoin's own blockchain on October 6, 2014; the rename to Tether followed that November. Eleven years after the whitepaper, on September 1, 2025, Tether stopped issuing and redeeming USDT on that same layer. It was born on Bitcoin's ledger, and it left Bitcoin's ledger, and almost nothing about the token's actual design changed in between.
+Tether wrote that sentence in June 2016, in a whitepaper titled *Tether: Fiat currencies on the Bitcoin blockchain*. The company had already been running for two years by then. [Brock Pierce](/BitcoinArchive/participants/brock-pierce/), [Reeve Collins](/BitcoinArchive/participants/reeve-collins/), and [Craig Sellars](/BitcoinArchive/participants/craig-sellars/) founded it as Realcoin in July 2014; Sellars was also chief technology officer of the Mastercoin Foundation, which ran the Bitcoin-based token protocol later renamed Omni. Its first tokens went out under that name, minted as metadata written directly into Bitcoin's own blockchain on October 6, 2014; the rename to Tether followed that November. Eleven years after the whitepaper, on September 1, 2025, Tether stopped issuing and redeeming USDT on that same layer. It was born on Bitcoin's ledger, and it left Bitcoin's ledger, and almost nothing about the token's actual design changed in between.
 
 ```mermaid
 timeline

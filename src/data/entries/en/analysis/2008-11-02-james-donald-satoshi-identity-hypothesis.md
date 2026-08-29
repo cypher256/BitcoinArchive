@@ -37,7 +37,7 @@ inlineLinkKeywords:
   - "James Donald = Satoshi"
 ---
 
-![Abstract dark illustration for a Satoshi-identity hypothesis: a faceless silhouetted figure with an empty, outlined void where a profile would be, flanked by an "origin thread" timeline panel and a stylometric-match panel showing an 82% lexical-overlap bar and a highlighted "rare shared word," with a voice-comparison section contrasting "combative" and "patiently pedagogical" labels, and a final "EXCLUDED" verdict marker.](/BitcoinArchive/images/analysis/2008-11-02-james-donald-satoshi-identity-hypothesis-hero.png)
+![Abstract dark illustration for a Satoshi-identity hypothesis: a single document branches into three threads — one dissolving into a scatter of symbols that fades before reaching a faint circle, one passing through an open doorway toward an empty chair, and one trailing off as a dashed line — with no numbers, verdicts, or faces shown.](/BitcoinArchive/images/analysis/2008-11-02-james-donald-satoshi-identity-hypothesis-hero.png)
 
 On November 2, 2008, [James A. Donald](/BitcoinArchive/participants/james-donald/) became the first person to publicly answer Satoshi's white-paper announcement on the cryptography mailing list — *"We very, very much need such a system, but the way I understand your proposal, it does not seem to scale to the required size."* That position, at the very origin of the public Bitcoin record, plus his standing as a long-time cypherpunk, and later a stylometric match, made him a candidate. His documented role is in the [James A. Donald biography](/BitcoinArchive/participants/james-donald/).
 

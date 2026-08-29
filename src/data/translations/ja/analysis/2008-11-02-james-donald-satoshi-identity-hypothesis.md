@@ -38,7 +38,7 @@ inlineLinkKeywords:
 translationStatus: complete
 ---
 
-![サトシ正体仮説を表す抽象的なダーク調イラスト。顔のない人影シルエットの中に、輪郭線だけの空虚な横顔状の穴が描かれ、左に「起点となったやり取り」を示す年表パネル、右に語彙一致率 82% のバーと強調された「稀な共有語」を示す文体分析パネルが並ぶ。下部には「攻撃的」と「辛抱強く教え諭すような」を対比する語り口の比較欄、そして「除外」と記された最終判定のマークが添えられている。](/BitcoinArchive/images/analysis/2008-11-02-james-donald-satoshi-identity-hypothesis-hero.png)
+![サトシ正体仮説を表す抽象的なダーク調イラスト。一通の文書から三本の線が枝分かれし、一本は記号の散らばりへ溶けて淡い円の手前で消え、一本は開いた扉を抜けて空の椅子へ向かい、一本は破線となって途切れる。数字も判定も人物の顔も描かれていない。](/BitcoinArchive/images/analysis/2008-11-02-james-donald-satoshi-identity-hypothesis-hero.png)
 
 2008 年 11 月 2 日、[ジェームズ・A・ドナルド](/BitcoinArchive/ja/participants/james-donald/)は、暗号学メーリングリストでサトシの白書告知に最初に公に応じた人物となった。「こういうシステムは切実に必要だ。だが、この方式では必要な規模にスケールしないんじゃないか？」。公的なビットコイン記録のまさに起点に立つこの位置、長年のサイファーパンクとしての経歴、そして後の文体計量の一致が、彼を候補にした。彼の文書化された役割は[ジェームズ・A・ドナルド伝記](/BitcoinArchive/ja/participants/james-donald/)にある。
 
