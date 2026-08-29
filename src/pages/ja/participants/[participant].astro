@@ -8,6 +8,7 @@ import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data
 import Avatar from '../../../components/Avatar.astro';
 import gitDates from '../../../data/git-dates.json';
 import ChartEmbedRuntime from '../../../components/ChartEmbedRuntime.astro';
+import { PARTICIPANT_NOTES } from '../../../data/participant-notes';
 
 type LangDate = { createdAt: string; updatedAt: string };
 type GitDateRecord = { en?: LangDate; ja?: LangDate };
@@ -87,7 +88,13 @@ const displayEntries = collapseThreads(nonBio, threadCounts, threadStarters)
 const lifeDatesMatch = biographyEntry?.data.title.match(/[（(]([^)）]+)[)）]/);
 const lifeDatesRaw = lifeDatesMatch ? lifeDatesMatch[0] : null;
 const lifeDates = lifeDatesRaw && !/生没年不明|dates unknown/.test(lifeDatesRaw) ? lifeDatesRaw : null;
-const bioSubtitle = biographyEntry?.data.title.match(/—\s*(.+)/)?.[1] ?? null;
+// Fallback for participants with no biography entry: a short, individually
+// researched and sourced note (see src/data/participant-notes.ts). Only
+// used when there is no biography entry at all — a biography's own title
+// always wins, even if its role suffix fails to parse.
+const bioSubtitle = biographyEntry
+  ? (biographyEntry.data.title.match(/—\s*(.+)/)?.[1] ?? null)
+  : (PARTICIPANT_NOTES[participantSlug]?.hookJa ?? null);
 const biographyDescription = biographyEntry?.data.description?.replace(/^[^：:]+[：:]\s*/, '') ?? '';
 const canonicalUrl = absoluteUrl(`/participants/${participantSlug}/`, lang);
 const structuredData = [

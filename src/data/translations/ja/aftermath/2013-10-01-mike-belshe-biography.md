@@ -1,5 +1,5 @@
 ---
-title: "マイク・ベルシェ — HTTP/2 寄稿者、BitGo 共同創業者兼 CEO、ニューヨーク合意 / SegWit2x の署名者にして中止判断者"
+title: "マイク・ベルシェ — BitGo 共同創業者兼 CEO、ニューヨーク合意 / SegWit2x の署名者にして中止判断者"
 date: 2013-10-01T00:00:00Z
 type: "biography"
 source: "wikipedia"

@@ -1,5 +1,5 @@
 ---
-title: "Roger Ver (1979–) — Memory Dealers founder, early Bitcoin angel investor, bitcoin.com operator, Bitcoin Cash advocate, 'Bitcoin Jesus'"
+title: "Roger Ver (1979–) — Early Bitcoin angel investor, Bitcoin Cash advocate, 'Bitcoin Jesus'"
 date: 2011-04-01T00:00:00Z
 type: "biography"
 source: "wikipedia"

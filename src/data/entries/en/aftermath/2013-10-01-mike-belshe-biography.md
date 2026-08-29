@@ -1,5 +1,5 @@
 ---
-title: "Mike Belshe — HTTP/2 contributor, BitGo co-founder and CEO, signed and then cancelled the New York Agreement / SegWit2x"
+title: "Mike Belshe — BitGo co-founder and CEO, signed and then cancelled the New York Agreement / SegWit2x"
 date: 2013-10-01T00:00:00Z
 type: "biography"
 source: "wikipedia"

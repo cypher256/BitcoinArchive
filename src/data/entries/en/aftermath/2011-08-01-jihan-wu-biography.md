@@ -1,5 +1,5 @@
 ---
-title: "Jihan Wu (1986–) — Bitcoin whitepaper Chinese translator, Bitmain co-founder, ASIC mining empire builder, Bitcoin Cash hashpower backer"
+title: "Jihan Wu (1986–) — Bitcoin whitepaper Chinese translator, Bitmain co-founder, Bitcoin Cash hashpower backer"
 date: 2011-08-01T00:00:00Z
 type: "biography"
 source: "wikipedia"

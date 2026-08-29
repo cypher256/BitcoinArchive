@@ -1,5 +1,5 @@
 ---
-title: "ロジャー・ヴァー (1979–) — Memory Dealers 創業者、初期ビットコインエンジェル投資家、bitcoin.com 運用者、ビットコインキャッシュ推進者、通称「Bitcoin Jesus」"
+title: "ロジャー・ヴァー (1979–) — 初期ビットコインエンジェル投資家、ビットコインキャッシュ推進者、通称「Bitcoin Jesus」"
 date: 2011-04-01T00:00:00Z
 type: "biography"
 source: "wikipedia"
