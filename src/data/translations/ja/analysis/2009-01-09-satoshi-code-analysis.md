@@ -25,6 +25,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute — Code"
     url: "https://satoshi.nakamotoinstitute.org/code/"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-nationality-question
   - analysis/2009-01-09-satoshi-windows-development-environment
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
@@ -67,7 +68,7 @@ translationStatus: complete
 
 ## 2. 主な発見
 
-- **タイムゾーン:** 06:00〜12:00 UTC にコミットがほぼ皆無であることから、EST（UTC-5）または CST（UTC-6）在住の可能性が最も高い
+- **タイムゾーン:** 06:00〜12:00 UTC にコミットがほぼ皆無であることから、EST（UTC-5）または CST（UTC-6）在住の可能性が最も高い。この帯域は [Chain Bulletin のフォーラム・メーリングリストのタイムスタンプによる GMT 読解](/BitcoinArchive/ja/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/)とは重ならない。両読解が確定すること・確定しないことは[国籍の問いの分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-nationality-question/)で併せて読む
 - **コミット活動期間（SVN）:** 420日間（2009年10月〜2010年12月）、109日間にコミット
 - **コーディングスタイル:** ハンガリアン記法の変種、四重スラッシュ（`////`）TODO マーカー、独自マクロ（`loop`、`foreach`、`CRITICAL_BLOCK`）、Windows 中心開発の一貫した使用（時系列の開発環境記録は[サトシの Windows 専一の開発環境](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-windows-development-environment/)、配布・ツール不在の読解は[ビットコイン v0.1 の配布・開発環境異例分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies/)）
 - **コード成長:** 23ヶ月で 19,901 行→31,909 行（+60%）

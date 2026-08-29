@@ -21,6 +21,7 @@ secondarySources:
   - name: "David S. Roh, Betsy Huang, Greta A. Niu (eds.) — Techno-Orientalism: Imagining Asia in Speculative Fiction, History, and Media (Rutgers UP, 2015)"
     url: "https://www.rutgersuniversitypress.org/techno-orientalism/9780813570631"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-nationality-question
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-cypherpunk-independent-arrival
@@ -73,7 +74,7 @@ Three analytic facts follow without requiring an intent claim:
 
 - **The reading does not assert intent.** The descriptive observation about symbolic space is independent of whether the pseudonym was deliberately chosen for that effect. Treating it as evidence of Japanese authorship, or of any specific cultural background, would be a category error.
 - **The assemblage is one of several relevant frames.** A reader could equally read the pseudonym against Japanese cryptography or computer-science conventions of naming, or as an inversion of Western-pseudonym norms in the cypherpunk tradition. The techno-orientalist frame is descriptively productive because the field was unusually dense by 2008, not because it is the only available reading.
-- **No identity claim follows from this entry.** Nothing here narrows Satoshi's identity to a country, native language, or any other personal attribute. The contribution is restricted to describing the symbolic space the name inhabits.
+- **No identity claim follows from this entry.** Nothing here narrows Satoshi's identity to a country, native language, or any other personal attribute. The contribution is restricted to describing the symbolic space the name inhabits. The separate, evidentially answerable question — whether Satoshi actually was Japanese, independent of why the pseudonym takes a Japanese form — is treated in [the nationality question analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-nationality-question/).
 
 <!-- entry-closing -->
 

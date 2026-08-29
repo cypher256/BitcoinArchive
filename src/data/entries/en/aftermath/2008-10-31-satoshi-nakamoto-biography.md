@@ -36,6 +36,7 @@ secondarySources:
   - name: "Bitcoin Genesis Block — Block 0 (blockstream.info)"
     url: "https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-nationality-question
   - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
@@ -154,6 +155,8 @@ Approximately 1.1 million BTC were mined under a single coordinated pattern in B
 - **Self-references**: every documented statement in which Satoshi referred to himself — identity claims, design-process disclosures, operational state, expertise self-assessments, departure statements — is inventoried in [the self-references analysis](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/).
 - **Cypherpunk position**: Satoshi's documented absence from the cypherpunk community despite the alignment of his practice with the cypherpunk philosophical core is treated in [the independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/).
 - **Signature reading**: the techno-orientalist symbolic field that the "Satoshi Nakamoto" pseudonym lands inside is treated in [the pseudonym-and-AKIRA analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/).
+- **Why he withdrew**: the record is detailed about when Satoshi withdrew and thin on why — his own statements establish only that the departure happened, not a reason (see [the self-references analysis](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/) §3). The one external circumstance near the withdrawal, Gavin Andresen's disclosure of a CIA-linked presentation invitation, is read in [Andresen's reply on the CIA visit](/BitcoinArchive/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/) as coincidental rather than causal: the withdrawal signals predate that disclosure by seven months.
+- **Was he actually Japanese**: the profile above is the only place Satoshi claimed a nationality, and it is checked against the English register, two disagreeing timestamp studies, and the one actually-Japanese candidate in [the nationality question analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-nationality-question/).
 
 Across mailing-list and forum messages, Satoshi explained design choices, responded to technical objections, and made operational decisions — declining [the WikiLeaks donation push](/BitcoinArchive/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/) in December 2010, handing source-repository commit rights and the network alert key to Andresen in late 2010 and early 2011.
 

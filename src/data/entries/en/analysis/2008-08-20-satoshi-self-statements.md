@@ -27,6 +27,7 @@ secondarySources:
   - name: "Gavin Andresen — Eleven Years Ago Today (alert key handover)"
     url: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-nationality-question
   - analysis/2010-12-27-satoshi-non-technical-silence
   - analysis/2008-08-21-what-they-said-about-satoshi
   - aftermath/2008-10-31-satoshi-nakamoto-biography
@@ -153,7 +154,7 @@ What none of D1–D11 establishes: a calendar start date with month precision, a
 The three claims that locate Satoshi as a person — Japanese, born April 5, 1975, living in Japan — appear together on a single artifact: the P2P Foundation profile. They appear nowhere else in the documented record. The widespread consensus that this set is fictitious rests on three independent counter-observations:
 
 - **Language**: Satoshi's English shows consistent British/Commonwealth conventions (favouring "favour," "colour"; "maths" rather than "math"), inconsistent with native-Japanese composition.
-- **Posting timestamps**: Statistical analyses (most notably by Doncho Karaivanov at *Chain Bulletin*) place Satoshi's active hours far outside what would be natural for someone in Japan time. A separate posting-timestamp analysis — Alyssa Blackburn's activity-window study cited in [the Finding Satoshi documentary entry](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) — narrows this further to a specific 6am–10pm PST window said to fit a US-based Finney + Sassaman pairing; this inventory does not adjudicate between the two readings.
+- **Posting timestamps**: Statistical analyses (most notably by Doncho Karaivanov at *Chain Bulletin*) place Satoshi's active hours far outside what would be natural for someone in Japan time. A separate posting-timestamp analysis — Alyssa Blackburn's activity-window study cited in [the Finding Satoshi documentary entry](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/) — narrows this further to a specific 6am–10pm PST window said to fit a US-based Finney + Sassaman pairing; this inventory does not adjudicate between the two readings. It also does not adjudicate a third: [this archive's own code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) reads Satoshi's commit-time gaps as EST/CST rather than Chain Bulletin's GMT — a disagreement between two direct studies of Satoshi's own timestamps that [the nationality question analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-nationality-question/) treats as the load-bearing finding, not a footnote.
 - **Behavioral pattern**: The profile fields are the *only* identity-locating claims in the entire corpus. A person living a normal life in the claimed country and age bracket would typically leak more incidental detail across years of correspondence; Satoshi did not.
 
 The profile claims are best read as **declared identity material that the rest of the record does not confirm** — not as "Satoshi's actual biography."

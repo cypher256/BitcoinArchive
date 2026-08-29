@@ -36,6 +36,7 @@ secondarySources:
   - name: "Bitcoin Genesis Block — ブロック 0 (blockstream.info)"
     url: "https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-nationality-question
   - analysis/1976-10-25-hayek-extropians-bitcoin-lineage
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-anonymity-architecture
@@ -157,6 +158,7 @@ Bitcoin v0.1 は Windows 上で Microsoft Visual C++ 6.0 SP6 と MinGW GCC 3.4.5
 - **自己言及**: サトシが自分自身に言及した発言（識別子主張、設計過程の自己開示、運用状態、能力の自己評価、撤退表明）はすべて[自己言及分析](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)で網羅する
 - **サイファーパンクとの位置関係**: コミュニティへの参加痕跡がないにもかかわらず実践がサイファーパンク思想核と一致する点は[独立到達についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)で扱う
 - **署名の読解**: 「サトシ・ナカモト」という仮名が落ちるテクノオリエンタリズム的な象徴空間は[仮名と『AKIRA』についての分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)で扱う
+- **なぜ撤退したのか**: 記録は撤退の時期については詳細だが、理由については薄い。サトシ自身の発言が確立しているのは撤退が起きたという事実のみで、その理由ではない([自己言及分析](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/) §3 を参照)。撤退に近接する唯一の外部的出来事、アンドレセンによる CIA 関連プレゼンテーション招待の開示については、[CIA 訪問開示へのアンドレセンの返信](/BitcoinArchive/ja/entries/aftermath/2011-04-26-andresen-to-satoshi-cia-visit/)が、撤退の兆候がその開示より 7 か月早く始まっていたことから、因果関係ではなく偶然の近接と読んでいる。
 
 サトシはメーリングリストとフォーラム上で設計判断を説明し、技術的反論に応答し、運用判断を下した。具体的には、2010年12月の [WikiLeaks 寄付推進の辞退](/BitcoinArchive/ja/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/)、2010年末から 2011年初頭にかけてのソースリポジトリのコミット権限とネットワーク警告キーのアンドレセンへの引き渡しが挙げられる。
 

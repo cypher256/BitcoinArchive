@@ -27,6 +27,7 @@ secondarySources:
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"
 partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-nationality-question
   - aftermath/2014-03-06-dorian-nakamoto-biography
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
 inlineLinkKeywords:

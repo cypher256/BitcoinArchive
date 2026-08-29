@@ -25,6 +25,7 @@ secondarySources:
   - name: "The Times January 3, 2009 — Archived front page"
     url: "https://www.thetimes03jan2009.com/"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-nationality-question
   - aftermath/2009-01-03-genesis-block
   - analysis/2009-01-03-genesis-block-hardcode-analysis
   - analysis/2008-10-31-satoshi-anonymity-architecture
@@ -68,6 +69,6 @@ The same "bloody" usage is also read as linguistic evidence for a different cand
 
 ## Conclusion
 
-While no single piece of evidence is conclusive, the convergence of The Times physical newspaper access, GMT-consistent activity patterns, and British linguistic markers builds a circumstantial case for London as Satoshi's base of operations during Bitcoin's development.
+While no single piece of evidence is conclusive, the convergence of The Times physical newspaper access, GMT-consistent activity patterns, and British linguistic markers builds a circumstantial case for London as Satoshi's base of operations during Bitcoin's development. This GMT reading is not the only timestamp-based reading in the archive: [this archive's own code analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-code-analysis/) finds commit-time gaps more consistent with EST or CST — a disagreement between two direct studies of Satoshi's own timestamps that [the nationality question analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-nationality-question/) reads together rather than in isolation.
 
 This Chain Bulletin London hypothesis is read in parallel with [the genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/), which uses The Times headline as evidence of authorial intent and explicitly references this Chain Bulletin reading as the same surviving signal read for geographic attribution rather than for intent.

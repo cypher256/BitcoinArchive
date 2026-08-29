@@ -27,6 +27,7 @@ secondarySources:
   - name: "Gavin Andresen — Eleven Years Ago Today (alert key handover)"
     url: "https://riski.wiki/wiki/User:Gavinandresen/Blog/2022-04-26_Eleven_years_ago_today%E2%80%A6"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-nationality-question
   - analysis/2010-12-27-satoshi-non-technical-silence
   - analysis/2008-08-21-what-they-said-about-satoshi
   - aftermath/2008-10-31-satoshi-nakamoto-biography
@@ -153,7 +154,7 @@ D1〜D11 のいずれも確定させないこと: 月単位の精度でのコー
 サトシを人物として位置づける主張は 3 つ（日本人、1975 年 4 月 5 日生まれ、日本在住）あり、いずれも単一の資料（P2P Foundation プロフィール）にまとまっている。公開記録の他の場所には現れない。これらが架空であるという広く共有された読みは、独立した 3 つの反証となる観察に基づいている:
 
 - **言語**: サトシの英語は一貫して英連邦慣習を示す (米国式の「favor / color」ではなく英国式の「favour / colour」、「math」ではなく「maths」等)。日本語母語話者による作文とは整合しない
-- **投稿タイムスタンプ**: 統計分析（特に『Chain Bulletin』のドンチョ・カライヴァノフによる）は、サトシの活動時間が日本時間で過ごす人物には自然でない範囲にあることを示している。[『Finding Satoshi』ドキュメンタリーのエントリ](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)で引用されているアリッサ・ブラックバーンの活動時間帯分析は、これを太平洋標準時 (PST) 午前 6 時から午後 10 時という具体的な時間帯にまで絞り込み、フィニーとサッサマンという米国拠点の組み合わせに合致するとしているが、本目録はどちらの読みがより妥当かについて判断を下さない
+- **投稿タイムスタンプ**: 統計分析（特に『Chain Bulletin』のドンチョ・カライヴァノフによる）は、サトシの活動時間が日本時間で過ごす人物には自然でない範囲にあることを示している。[『Finding Satoshi』ドキュメンタリーのエントリ](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)で引用されているアリッサ・ブラックバーンの活動時間帯分析は、これを太平洋標準時 (PST) 午前 6 時から午後 10 時という具体的な時間帯にまで絞り込み、フィニーとサッサマンという米国拠点の組み合わせに合致するとしているが、本目録はどちらの読みがより妥当かについて判断を下さない。もう一つ判断を下していない対がある：[このアーカイブ自身のコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)は、サトシのコミット時刻の空白を Chain Bulletin の GMT ではなく EST 圏／CST 圏と読む。サトシ自身のタイムスタンプに関するこの二つの直接分析の不一致を、脚注ではなく主要な論点として扱うのが[国籍の問いの分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-nationality-question/)である
 - **行動パターン**: プロフィール項目は、コーパス全体で *唯一の* 身元を位置づける主張である。主張通りの国・年齢で普通の生活を送る人物なら、年単位の通信を通じて偶発的な細部がもっと漏れるはずだが、サトシではそうなっていない
 
 プロフィール主張は「**宣言された身元情報だが、記録の残りはこれを裏付けない**」と読むのが最も妥当であり、「サトシの実際の伝記」ではない。

@@ -297,6 +297,7 @@ export const tagTranslations: Record<string, string> = {
   'safety': '安全性',
   'satoshi-anonymity': 'サトシの匿名性',
   'satoshi-identity': 'サトシの正体',
+  'satoshi-nationality': 'サトシの国籍',
   'satoshi-fortune': 'サトシの資産',
   'satoshi-holdings': 'サトシの保有量',
   'satoshi-unit': 'サトシ単位',

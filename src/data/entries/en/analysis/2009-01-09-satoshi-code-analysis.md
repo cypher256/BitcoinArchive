@@ -25,6 +25,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute — Code"
     url: "https://satoshi.nakamotoinstitute.org/code/"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-nationality-question
   - analysis/2009-01-09-satoshi-windows-development-environment
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
@@ -66,7 +67,7 @@ inlineLinkKeywords:
 
 ## 2. Key findings
 
-- **Timezone:** The near-total absence of commits between 06:00–12:00 UTC strongly suggests residence in EST (UTC-5) or CST (UTC-6)
+- **Timezone:** The near-total absence of commits between 06:00–12:00 UTC strongly suggests residence in EST (UTC-5) or CST (UTC-6) — a zone that does not overlap with [Chain Bulletin's GMT reading](/BitcoinArchive/entries/aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis/) of Satoshi's forum and mailing-list timestamps; both readings, and what they do and do not settle, are read together in [the nationality question analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-nationality-question/)
 - **Commit activity period (SVN):** 420 days (October 2009 – December 2010), with commits on 109 unique days
 - **Coding style:** Consistent use of Hungarian notation variants, quad-slash (`////`) TODO markers, custom macros (`loop`, `foreach`, `CRITICAL_BLOCK`), and Windows-first development patterns (the chronological development-environment record is in [Satoshi's Windows-only development environment](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/); the distribution and tooling-absence reading is in [the Bitcoin v0.1 distribution and tooling-anomalies analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-distribution-and-tooling-anomalies/))
 - **Code growth:** 19,901 → 31,909 lines (+60%) over 23 months

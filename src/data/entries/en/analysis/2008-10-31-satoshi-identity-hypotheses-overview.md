@@ -40,6 +40,7 @@ tags:
   - "analysis"
   - "disputed"
 relatedEntries:
+  - analysis/2008-10-31-satoshi-nationality-question
   - analysis/2008-10-31-bitcoin-design-lineage
   - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis
@@ -354,7 +355,7 @@ Each observation below is anchored in one or more of the four layers (§2 profil
 - **The four layers (§2 profile match, §3 stylometric, §4 direct correspondence, §5 development environment) are not interchangeable.** Each narrows the candidate space differently. A candidate ruled out by one layer is not necessarily ruled out by another, and convergence across layers does not establish identification. See §6 for the multi-layer convergence observation.
 - This entry assumes the public record is the relevant evidence base. Hypotheses based on private channels, claimed unverifiable communications, or unsourced personal recollection are not addressed here.
 - The set of named candidates is not closed. Hypotheses involving other named persons or groups exist in public discourse; this entry covers the twelve most-discussed.
-- The Japanese form of the "Satoshi Nakamoto" pseudonym bears on the identity question independently of any single candidate; it is treated in [the techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/).
+- The Japanese form of the "Satoshi Nakamoto" pseudonym bears on the identity question independently of any single candidate; it is treated in [the techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/). Whether Satoshi actually was Japanese — the English level dimension in §2.1 narrowed to its own dedicated argument, including [Isamu Kaneko](/BitcoinArchive/participants/isamu-kaneko/)'s candidacy checked specifically against that question — is treated in [the nationality question analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-nationality-question/).
 - For full treatment of each candidate, see the "Entry" column in §2.1's table; all twelve named candidates have a dedicated hypothesis entry.
 
 ## 8. Hypotheses beyond a single candidate
