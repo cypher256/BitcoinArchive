@@ -21,6 +21,7 @@ tags:
   - "identity"
   - "uk-high-court"
 relatedEntries:
+  - "analysis/2026-08-29-satoshi-bitcoin-reading-guide"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"
   - "analysis/2008-10-31-satoshi-anonymity-architecture"

@@ -24,6 +24,7 @@ secondarySources:
   - name: "Sergio Demian Lerner - The Patoshi Mining Machine"
     url: "https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - aftermath/2013-04-17-sergio-demian-lerner-biography
   - aftermath/2013-04-17-sergio-lerner-patoshi-analysis
   - aftermath/2013-09-03-sergio-lerner-nonce-lsb-discovery

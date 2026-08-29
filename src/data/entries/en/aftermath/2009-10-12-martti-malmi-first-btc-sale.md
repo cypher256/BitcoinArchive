@@ -22,6 +22,7 @@ secondarySources:
   - name: "CoinTelegraph — 5,050 Bitcoin for $5 in 2009"
     url: "https://web.archive.org/web/20250723082018/https://cointelegraph.com/magazine/5050-bitcoin-for-5-dollars-2009-helsinki-claim-to-crypto-fame-crypto-city-guide/"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - aftermath/2009-10-05-newlibertystandard-biography
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
   - analysis/2010-02-21-bitcoin-price-vs-production-cost

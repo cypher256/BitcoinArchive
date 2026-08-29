@@ -39,6 +39,7 @@ secondarySources:
   - name: "Block 74691 (Blockstream)"
     url: "https://blockstream.info/block-height/74691"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - aftermath/2010-08-15-value-overflow-incident
   - aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474

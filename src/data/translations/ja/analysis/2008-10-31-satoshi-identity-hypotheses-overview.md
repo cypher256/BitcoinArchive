@@ -40,6 +40,7 @@ tags:
   - "analysis"
   - "disputed"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - analysis/2008-10-31-satoshi-nationality-question
   - analysis/2008-10-31-bitcoin-design-lineage
   - analysis/2009-01-09-satoshi-windows-development-environment

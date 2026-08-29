@@ -41,6 +41,7 @@ secondarySources:
     url: "https://www.bis.org/about/bisih/topics/cyber_security/leap.htm"
     note: "BIS Innovation Hub project (with the ECB and Bank of England, 2022-23) experimenting with post-quantum-secure central-bank-to-bank communication channels — institutional record that the financial sector treats post-quantum migration as live work."
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - aftermath/2025-11-15-adam-back-quantum-threat-timeline
   - bip/2024-12-17-bip-0360
   - bip/2020-01-19-bip-0340

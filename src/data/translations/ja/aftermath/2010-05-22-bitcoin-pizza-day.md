@@ -28,6 +28,7 @@ secondarySources:
   - name: "Cointelegraph — ピザの男ラズロ・ハニエツがビットコインを今も唯一の暗号通貨と考える理由 (Wayback)"
     url: "https://web.archive.org/web/2024/https://cointelegraph.com/news/bitcoin-pizza-guy-laszlo-hanyecz-on-why-bitcoin-is-still-the-only-flavor-of-crypto-for-him"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - forum/bitcointalk/topic-137/2010-05-18-re-laszlo-pizza-original
   - forum/bitcointalk/topic-137/2010-05-22-laszlo-msg1195
   - aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence

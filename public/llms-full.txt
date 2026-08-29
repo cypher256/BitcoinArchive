@@ -69,7 +69,7 @@ Biographical profiles of key participants compiled from multiple public sources.
 ### Bitcoin Improvement Proposals (9 entries)
 BIPs relevant to Satoshi's original design and vision.
 
-### Analysis (53 entries)
+### Analysis (56 entries)
 Editorial readings authored under the Bitcoin Institute byline. Each analysis is explicitly labeled as interpretation; claims are sourced individually. Examples include:
 - **Independent arrival at the cypherpunk core**: Satoshi's documented relationship to the cypherpunk movement built from three converging primary-source observations (Satoshi's b-money disclaimer to Adam Back, Wei Dai's identifiability argument, and the alignment between Satoshi's documented practice and Eric Hughes's 1993 Cypherpunk's Manifesto).
 - **The "Satoshi Nakamoto" pseudonym and AKIRA**: a descriptive techno-orientalist reading of the symbolic field the pseudonym lands inside (Blade Runner, Neuromancer, AKIRA, Ghost in the Shell, Mondo 2000-era cyberpunk discourse). Explicitly does not claim authorial intent.

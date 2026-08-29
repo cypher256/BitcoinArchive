@@ -80,6 +80,7 @@ secondarySources:
   - name: "Dogecoin — supply, issuance, and the removed cap (Wikipedia)"
     url: "https://en.wikipedia.org/wiki/Dogecoin"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - aftermath/2011-10-13-charlie-lee-biography
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
@@ -88,6 +89,8 @@ relatedEntries:
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode
+  - correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-client-future
   - analysis/2008-10-31-bitcoin-design-lineage
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
@@ -168,7 +171,7 @@ The mechanism was a distributed cost-estimation protocol: participants would pub
 
 [Bitcoin's whitepaper](/BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/) took the opposite position on both questions. The supply schedule is fixed at the protocol level: 50 BTC per block at launch, halving every 210,000 blocks. The total approaches but never exceeds approximately 20,999,999.9769 BTC, the sum of a finite geometric series that the consensus rules enforce mechanically. The mechanical derivation of that figure (33 halvings of an integer-satoshi subsidy that truncates to zero around 2140) is worked out in [Bitcoin's monetary design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/); this entry treats it only as one *fixed* position on the supply-policy spectrum. No mechanism for discretionary adjustment exists; changing the schedule would be a backwards-incompatible consensus change, requiring broad coordination across node operators and the wider economic actors that depend on the network.
 
-The whitepaper's Section 6 ("Incentive") names the fee market as the policy variable once new issuance ends, but never argues for the *fixed* form of the schedule. It treats the cap as a design choice rather than as a derived result, and the [Satoshi self-statements record](/BitcoinArchive/entries/analysis/2008-08-20-satoshi-self-statements/) contains no extended defense of *why* fixed supply was preferred over the alternatives.
+The whitepaper's Section 6 ("Incentive") names the fee market as the policy variable once new issuance ends, but the paper itself never argues for the *fixed* form of the schedule — it states the cap as a design choice, not a derived result. Satoshi did explain the specific number later, in [December 2010 correspondence with Mike Hearn](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode/): "Educated guess, and the maths work out to round numbers. I wanted something that would be not too low if it was very popular and not too high if it wasn't." A [follow-up email](/BitcoinArchive/entries/correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-client-future/) gives the arithmetic — "21000000 / (50 BTC * 24hrs * 365days * 4years * 2) = 5.99 blocks/hour" — and states that he considered 100 BTC blocks and a 42 million cap before rejecting it as "too high." What the record does not contain is a case for *fixed* supply over *elastic* supply as a monetary-policy stance: Satoshi explained why this number, not why a cap should exist at all.
 
 ## 4. Wei Dai's regret (April 2013)
 

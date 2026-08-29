@@ -321,6 +321,7 @@ export const tagTranslations: Record<string, string> = {
   'spam-prevention': 'スパム防止',
   'SLH-DSA': 'SLH-DSA',
   'succession': '後継',
+  'bitcoin-supply': 'ビットコインの供給量',
   'supply': '供給量',
   'supply-design': '供給設計',
   'system-overview': 'システム全体設計',

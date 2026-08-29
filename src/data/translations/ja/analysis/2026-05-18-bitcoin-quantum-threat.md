@@ -41,6 +41,7 @@ secondarySources:
     url: "https://www.bis.org/about/bisih/topics/cyber_security/leap.htm"
     note: "BIS イノベーションハブのプロジェクト ( 2022〜2023、 ECB・ BoE と協働 )。ポスト量子安全な中央銀行・銀行間通信チャネルの実験。これは金融セクターがポスト量子移行を実務として扱っている記録である。"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - aftermath/2025-11-15-adam-back-quantum-threat-timeline
   - bip/2024-12-17-bip-0360
   - bip/2020-01-19-bip-0340

@@ -23,6 +23,7 @@ secondarySources:
   - name: "Guinness World Records — First Bitcoin Transaction"
     url: "https://www.guinnessworldrecords.com/world-records/696243-first-bitcoin-transaction"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released
   - aftermath/2009-01-08-satoshi-to-finney-release
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet

@@ -80,6 +80,7 @@ secondarySources:
   - name: "Dogecoin — supply, issuance, and the removed cap (Wikipedia)"
     url: "https://en.wikipedia.org/wiki/Dogecoin"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - aftermath/2011-10-13-charlie-lee-biography
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
@@ -88,6 +89,8 @@ relatedEntries:
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode
+  - correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-client-future
   - analysis/2008-10-31-bitcoin-design-lineage
   - analysis/2008-10-31-cypherpunk-independent-arrival
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
@@ -169,7 +172,7 @@ timeline
 
 [ビットコインのホワイトペーパー](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/)は両方の問いについて逆の立場をとった。供給スケジュールはプロトコル層で固定されている: ローンチ時はブロックあたり 50 BTC、 210,000 ブロックごとに半減する。総量は約 20,999,999.9769 BTC に近づくが超えない。有限の幾何級数の和であり、コンセンサスルールが機械的に強制する。この総量がどう導かれるか（整数サトシ建ての新規発行分が 33 回の半減を経て 2140 年ごろにゼロへ切り捨てられる過程）は[ビットコインの貨幣設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)で詳述している。本エントリーではこのスケジュールを、供給設計のスペクトル上の一つの**固定**された立場としてのみ扱う。裁量的調整の機構は存在しない。スケジュール変更は互換性を壊すコンセンサス変更であり、広範なノード運用者・経済主体の協調を必要とする。
 
-ホワイトペーパーのセクション 6「インセンティブ」は、新規発行が終了した後の政策変数として手数料市場を名指しているが、スケジュールの **固定** 形式そのものに対する論拠は述べていない。上限を派生的結果ではなく設計選択として扱っており、 [サトシ自己発言の記録](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)には、なぜ固定供給が代替案より優れるかについての長い擁護も含まれていない。
+ホワイトペーパーのセクション 6「インセンティブ」は、新規発行が終了した後の政策変数として手数料市場を名指しているが、ホワイトペーパー自体はスケジュールの **固定** 形式そのものを論証してはいない。上限は派生的結果ではなく設計選択として書かれている。この具体的な数字については、サトシが後に [2010 年 12 月のマイク・ハーンとのやり取り](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2010-12-29-satoshi-to-hearn-client-mode/)で説明している。「当て推量で、計算するときりのいい数字になった。人気が出ても低すぎず、そうでなくても高すぎない数にしたかった」。[続く返信](/BitcoinArchive/ja/entries/correspondence/mike-hearn/more-questions/2011-01-10-satoshi-to-hearn-client-future/)では計算式まで示している。「21000000 / (50 BTC * 24hrs * 365days * 4years * 2) = 5.99 blocks/hour」。100 BTC・4200 万枚案も検討したが「高すぎる」として退けたとも述べている。この記録に無いのは、固定供給が可変供給より優れているという通貨政策上の論拠だ。サトシが説明したのはこの数字である理由であって、そもそも上限を設ける理由そのものではない。
 
 ## 4. ウェイ・ダイの後悔 (2013 年 4 月)
 

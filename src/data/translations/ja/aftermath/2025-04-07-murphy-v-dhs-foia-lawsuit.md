@@ -22,6 +22,7 @@ secondarySources:
   - name: "FinanceFeeds — Satoshi Nakamoto identity, 2026 suspects and the 85B question (2026 年 4 月)"
     url: "https://financefeeds.com/satoshi-nakamoto-identity-2026-suspects-and-the-85b-question/"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - aftermath/2024-10-08-hbo-money-electric-peter-todd
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview

@@ -31,6 +31,7 @@ secondarySources:
     url: "https://www.lawgazette.co.uk/news/fake-satoshi-hit-with-costs-bill-over-ai-evidence/5122587.article"
 partOf: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - aftermath/2016-05-02-craig-wright-biography
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis

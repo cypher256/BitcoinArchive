@@ -33,6 +33,8 @@ quotes:
     personSlug: "mike-hearn"
     date: "2010-12-30T00:27:00Z"
     sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-30-hearn-to-satoshi-spv-progress"
+relatedEntries:
+  - analysis/2008-10-31-fixed-supply-vs-adjustable-money
 ---
 
 <!-- speaker: Mike Hearn -->

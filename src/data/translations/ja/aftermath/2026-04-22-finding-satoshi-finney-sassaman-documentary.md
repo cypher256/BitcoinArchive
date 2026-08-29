@@ -37,6 +37,7 @@ secondarySources:
   - name: "IMDb — Finding Satoshi (2026)"
     url: "https://www.imdb.com/title/tt40548010/"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - analysis/2008-10-31-satoshi-nationality-question
   - analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis
   - analysis/2011-07-03-sassaman-satoshi-identity-hypothesis

@@ -32,6 +32,7 @@ quotes:
     sourceEntryId: "correspondence/mike-hearn/more-questions/2010-12-27-hearn-to-satoshi-more-questions"
 relatedEntries:
   - analysis/2010-12-27-satoshi-non-technical-silence
+  - analysis/2008-10-31-fixed-supply-vs-adjustable-money
 ---
 
 <!-- speaker: Mike Hearn -->

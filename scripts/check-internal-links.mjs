@@ -228,6 +228,7 @@ const STATIC_ASTRO_ROUTES = [
   '/about/',     '/ja/about/',
   '/search/',    '/ja/search/',
   '/novel/',     '/ja/novel/',
+  '/entries/',   '/ja/entries/',
 ];
 for (const route of STATIC_ASTRO_ROUTES) {
   validPaths.add(route);

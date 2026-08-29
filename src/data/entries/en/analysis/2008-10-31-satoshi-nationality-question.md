@@ -32,6 +32,7 @@ secondarySources:
   - name: "Decrypt — Finding Satoshi documentary coverage (April 22, 2026)"
     url: "https://decrypt.co/365075"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - analysis/2008-10-31-satoshi-name-techno-orientalism
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - analysis/2008-08-20-satoshi-self-statements

@@ -29,6 +29,7 @@ secondarySources:
   - name: "Cointelegraph — Bitcoin Pizza Guy Laszlo Hanyecz on why Bitcoin is still the only flavor of crypto (Wayback)"
     url: "https://web.archive.org/web/2024/https://cointelegraph.com/news/bitcoin-pizza-guy-laszlo-hanyecz-on-why-bitcoin-is-still-the-only-flavor-of-crypto-for-him"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - aftermath/2010-04-19-hanyecz-recalls-satoshi-correspondence
   - aftermath/2010-05-22-bitcoin-pizza-day
   - forum/bitcointalk/topic-137/2010-05-22-laszlo-msg1195
