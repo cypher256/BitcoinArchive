@@ -936,9 +936,12 @@ blockquote > .quote-speaker-tag:first-child {
   /* Renders as its own row below .participant-head (not inside the
      avatar-centred name+subtitle block), so it carries both the gap
      from that block above and the gap before whatever follows
-     (callout or biography body) below. */
-  margin-top: 1.5rem;
-  margin-bottom: 0.25rem;
+     (callout or biography body) below. Both are this rule's alone to
+     own -- .participant-head never carries padding (see its comment),
+     so margin-top here is the entire gap from the title, not a partial
+     one stacked on top of something else. */
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
   gap: 0.25rem 0.75rem;
   font-family: var(--font-heading);
   font-size: 0.8rem;

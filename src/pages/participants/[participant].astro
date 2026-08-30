@@ -266,8 +266,12 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
     color: var(--color-text-muted);
   }
   .bio-subtitle {
-    /* No bottom margin here — it lives on .participant-head so it does
-       not shift the avatar's vertical centre (see .participant-head). */
+    /* No bottom margin here: the gap below the title block is owned by
+       .entry-dates--biography's margin-top (or .participant-head--no-dates's
+       margin-bottom when there's no biography) -- see .participant-head's
+       comment. A margin here would grow .participant-head-text's own
+       height, which align-items: center on .participant-head uses to
+       centre the avatar, shifting it off-centre again. */
     margin: 0.15rem 0 0;
     font-size: 1.1rem;
     line-height: 1.5;
@@ -347,7 +351,12 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
     margin-top: 1.5rem;
     padding-top: 0;
     border-top: none;
-    margin-bottom: 0.5rem;
+    /* 0, not a value of its own: .participant-head's margin-top is the
+       single owner of the gap to this nav (see its comment). A nonzero
+       value here would only matter if it exceeded that margin-top and
+       won the collapse, which would silently make this the real owner
+       instead. */
+    margin-bottom: 0;
   }
   .nav-next {
     margin-left: auto;
@@ -356,36 +365,32 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
     display: flex;
     align-items: center;
     gap: 1.1rem;
-    /* Vertical breathing room above the name+subtitle block (gap from
-       the prev/next nav). The avatar is centred against just the name
-       + subtitle text -- EntryDates now renders as its own row below
-       this block (not inside .participant-head-text), so it no longer
-       shares this centring. margin-bottom is 0 here on purpose: when
-       <EntryDates> follows, its own margin-top (.entry-dates--biography
-       in global.css) is the sole source of that gap; when it doesn't
-       (see below), the modifier class below is the sole source. Either
-       way exactly one declaration owns the value -- no margin-collapse
-       arithmetic to reason about. */
-    margin-top: 1.5rem;
+    /* No padding on this element, ever: align-items: center centers the
+       avatar against whichever sibling (avatar or .participant-head-text)
+       is taller, using their own content height only. Asymmetric padding
+       (more on one side than the other) on either sibling shifts that
+       sibling's visual content off the centre of its own box without
+       moving the other sibling, so the two go out of alignment (this
+       broke once already -- see git blame/history on this rule before
+       adding padding back here or on .participant-head-text).
+
+       margin-top is the single source of the gap above this block (from
+       the prev/next nav). The gap below is likewise owned by exactly one
+       declaration elsewhere: .entry-dates--biography's own margin-top
+       (global.css) when a biography follows, or the modifier class below
+       when it doesn't -- margin-bottom stays 0 here so this element is
+       never a second source of that gap. */
+    margin-top: 3rem;
     margin-bottom: 0;
   }
   /* Participants with no biography entry never render <EntryDates>
      below this block (see the template), so nothing else provides the
      gap before whatever follows (callout or entries list). */
   .participant-head--no-dates {
-    margin-bottom: 1.75rem;
+    margin-bottom: 3rem;
   }
   .participant-head-text {
     min-width: 0;
-    /* Same top padding as .entry-title-row (global.css); bottom is
-       intentionally less (entry pages want more room before EntryMeta's
-       longer tag/participant rows; this page wants a tighter gap before
-       whatever follows -- EntryDates when there's a biography, the
-       callout/entries list when there isn't). Padding here, not a
-       margin on .participant-head itself, so the collapse arithmetic
-       that rule already documents (margin-bottom: 0, EntryDates owns
-       the gap below) stays untouched. */
-    padding: 1.5rem 0 2.5rem;
   }
   .participant-head-text h1 {
     margin: 0;
