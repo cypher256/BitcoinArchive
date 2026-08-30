@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
 import { useTranslations, getDisplayEntries, absoluteUrl, localePath } from '../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
+import { defaultSortAxis, dominantType, byDateAxisDesc } from '../../lib/dateAxis';
 import gitDates from '../../data/git-dates.json';
 
 type LangDate = { createdAt: string; updatedAt: string };
@@ -13,9 +14,16 @@ export async function getStaticPaths() {
   const { getDisplayEntries } = await import('../../i18n/utils');
   const entries = await getDisplayEntries('en');
   const tags = new Set<string>();
+  // Collect each tag's entry types alongside membership, so the default
+  // sort axis (dominant type -> defaultSortAxis) can be resolved per tag
+  // without a second pass over the corpus — see dateAxis.ts and
+  // BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md.
+  const typesByTag = new Map<string, string[]>();
   for (const entry of entries) {
     for (const tag of entry.data.tags ?? []) {
       tags.add(tag);
+      if (!typesByTag.has(tag)) typesByTag.set(tag, []);
+      typesByTag.get(tag)!.push(entry.data.type);
     }
   }
   // 日本語側に存在するタグを取得
@@ -28,22 +36,20 @@ export async function getStaticPaths() {
   }
   return Array.from(tags).map((tag) => ({
     params: { tag },
-    props: { tag, hasJa: jaTags.has(tag) },
+    props: { tag, hasJa: jaTags.has(tag), sortAxis: defaultSortAxis(dominantType(typesByTag.get(tag) ?? [])) },
   }));
 }
 
 const lang = 'en';
 const t = useTranslations(lang);
-const { tag, hasJa } = Astro.props;
+const { tag, hasJa, sortAxis } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
-// Default order is "recently added" (created desc), same axis as /entries.
-// See NovelBitCoin src/archive/todo/20260701_日付メタデータとソートUI_体系再設計.md.
-const createdKey = (id: string, fallback: Date): string => gitDateMap[id]?.en?.createdAt ?? fallback.toISOString();
+// sortAxis was resolved in getStaticPaths from this tag's dominant type.
 const displayEntries = collapseThreads(filtered, threadCounts, threadStarters)
   .slice()
-  .sort((a, b) => createdKey(b.id, b.data.date).localeCompare(createdKey(a.id, a.data.date)));
+  .sort(byDateAxisDesc(sortAxis, (id) => gitDateMap[id]?.en?.createdAt));
 
 const searchHref = `${localePath('/entries/', lang)}?q=${encodeURIComponent(tag.replace(/-/g, ' '))}`;
 
@@ -98,8 +104,8 @@ const structuredData = {
     <div class="list-header">
       <p class="entry-count"><span id="entry-count-num">{displayEntries.length}</span> entries</p>
       <div class="sort-controls">
-        <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
-        <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+        <button class:list={['sort-btn', { active: sortAxis === 'date' }]} data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+        <button class:list={['sort-btn', { active: sortAxis === 'created' }]} data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
         <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
       </div>
     </div>

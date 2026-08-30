@@ -4,6 +4,7 @@ import EntryCard from '../../../components/EntryCard.astro';
 import { useTranslations, getEntries, localePath, absoluteUrl } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 import { keywordIndex } from '../../../lib/keyword-index';
+import { defaultSortAxis, dominantType, byDateAxisDesc, type SortAxis } from '../../../lib/dateAxis';
 import gitDates from '../../../data/git-dates.json';
 
 type LangDate = { createdAt: string; updatedAt: string };
@@ -11,7 +12,7 @@ type GitDateRecord = { en?: LangDate; ja?: LangDate };
 const gitDateMap = gitDates as Record<string, GitDateRecord>;
 
 export async function getStaticPaths() {
-  const out: Array<{ params: { keyword: string }; props: { keyword: string; enSlug?: string } }> = [];
+  const out: Array<{ params: { keyword: string }; props: { keyword: string; enSlug?: string; sortAxis: SortAxis } }> = [];
   const enSlugs: Record<string, string> = keywordIndex.en?.slugs ?? {};
   const jaSlugs: Record<string, string> = keywordIndex.ja?.slugs ?? {};
   // Build target -> EN slug index so we can locate the EN mirror page.
@@ -21,18 +22,30 @@ export async function getStaticPaths() {
       (keywordIndex.en?.person ?? {})[kw];
     if (target && !enSlugByTarget.has(target)) enSlugByTarget.set(target, s);
   }
+  // Default sort axis is resolved from the EN corpus (language-independent
+  // source of truth for `type`), same as EN mirror
+  // src/pages/keywords/[keyword].astro -- a JA and EN page for the same
+  // keyword must resolve to the same axis, so this can't be computed from
+  // the JA-only backlink list further down (codex-review finding,
+  // 2026-08-30: computing it from JA backlinks there gave a different
+  // axis than the EN mirror for the same keyword in several cases). See
+  // dateAxis.ts and BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md.
+  const enEntries = await getEntries('en');
   for (const [slug, keyword] of Object.entries(jaSlugs)) {
     const target = (keywordIndex.ja?.concept ?? {})[keyword] ||
       (keywordIndex.ja?.person ?? {})[keyword];
     const enSlug = target ? enSlugByTarget.get(target) : undefined;
-    out.push({ params: { keyword: slug }, props: { keyword, enSlug } });
+    const enKeyword = enSlug ? enSlugs[enSlug] : undefined;
+    const enBacklinkIds = enKeyword ? (keywordIndex.en?.backlinks?.[enKeyword] ?? []) : [];
+    const backlinkTypes = enEntries.filter((e) => enBacklinkIds.includes(e.id)).map((e) => e.data.type);
+    out.push({ params: { keyword: slug }, props: { keyword, enSlug, sortAxis: defaultSortAxis(dominantType(backlinkTypes)) } });
   }
   return out;
 }
 
 const lang = 'ja';
 const t = useTranslations(lang);
-const { keyword, enSlug } = Astro.props;
+const { keyword, enSlug, sortAxis } = Astro.props;
 
 const localeData = keywordIndex.ja;
 const conceptTarget = localeData.concept[keyword];
@@ -46,11 +59,9 @@ const backlinkIds = localeData.backlinks[keyword] ?? [];
 const entries = await getEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const backlinks = entries.filter((e) => backlinkIds.includes(e.id));
-// Default order is "recently added" (created desc), same axis as /entries.
-// See NovelBitCoin src/archive/todo/20260701_日付メタデータとソートUI_体系再設計.md.
-const createdKey = (id: string, fallback: Date): string => gitDateMap[id]?.ja?.createdAt ?? fallback.toISOString();
+// sortAxis was resolved in getStaticPaths from the EN backlink corpus.
 const displayBacklinks = collapseThreads(backlinks, threadCounts, threadStarters)
-  .sort((a, b) => createdKey(b.id, b.data.date).localeCompare(createdKey(a.id, a.data.date)));
+  .sort(byDateAxisDesc(sortAxis, (id) => gitDateMap[id]?.ja?.createdAt));
 
 const definitionEntry = definitionKind === 'concept' && definitionTarget
   ? entries.find((e) => e.id === definitionTarget)
@@ -101,8 +112,8 @@ const pageDescription =
       </p>
       {displayBacklinks.length > 0 && (
         <div class="sort-controls">
-          <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
-          <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+          <button class:list={['sort-btn', { active: sortAxis === 'date' }]} data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+          <button class:list={['sort-btn', { active: sortAxis === 'created' }]} data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
           <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
         </div>
       )}

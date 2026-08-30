@@ -1,19 +1,29 @@
 // Shared client sort + filter controls for simple SSR entry-card listings
 // with no search/facets: /tags, /sources, /keywords, /types, /participants.
-// Both operate on the existing SSR cards in place; neither talks to Algolia
-// (that stays on /entries, src/scripts/entries-browse.ts) or persists across
-// reloads -- these are secondary listing surfaces where the page's own
-// default order/full list should reappear on a fresh visit rather than
-// sticking to whatever the reader last picked or typed.
+// Neither talks to Algolia (that stays on /entries, src/scripts/entries-browse.ts).
 //
 // initListSort re-orders the cards. Every card keeps all three date fields
 // rendered by EntryDates; choosing an axis changes only the order.
+//
+// A reader's sort choice persists per page (sessionStorage, keyed by
+// location.pathname) -- see
+// BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md.
+// Keying by the full path (not a shared key) means /types/analysis and
+// /types/forum-post remember independently: picking "updated" on one
+// type's page never leaks into a different type's page, which would
+// otherwise fight the per-type server default these pages now render
+// (see dateAxis.ts). This replaces an earlier design that deliberately
+// persisted nothing, so every reload replayed the page's own default --
+// that only made sense while every page shared one hardcoded default;
+// now that the default itself varies by page, a reader's override should
+// stick to the page they made it on.
 export function initListSort(listId: string) {
   var list = document.getElementById(listId);
   if (!list) return;
   var cards = Array.prototype.slice.call(list.querySelectorAll('.entry-card'));
   var sortBtns = Array.prototype.slice.call(document.querySelectorAll('.sort-btn'));
   if (!sortBtns.length) return;
+  var STORAGE_KEY = 'list-sort:' + location.pathname;
   function valOf(card: any, key: string) {
     if (key === 'created') return card.dataset.created || card.dataset.date || '';
     if (key === 'updated') return card.dataset.updated || card.dataset.date || '';
@@ -33,23 +43,35 @@ export function initListSort(listId: string) {
       });
   }
 
+  function activate(key: string, order: string) {
+    sortBtns.forEach(function(b: any) {
+      b.classList.remove('active');
+      if (b.dataset.sort === key) {
+        b.classList.add('active');
+        b.dataset.order = order;
+        b.textContent = sortLabel(b) + (order === 'asc' ? ' ↑' : ' ↓');
+      } else {
+        b.textContent = sortLabel(b) + (b.dataset.order === 'asc' ? ' ↑' : ' ↓');
+      }
+    });
+    render(key, order);
+  }
+
   sortBtns.forEach(function(btn: any) {
     btn.addEventListener('click', function() {
       var key = btn.dataset.sort, order = btn.dataset.order;
       if (btn.classList.contains('active')) order = order === 'asc' ? 'desc' : 'asc';
-      sortBtns.forEach(function(b: any) {
-        b.classList.remove('active');
-        if (b.dataset.sort === key) {
-          b.classList.add('active');
-          b.dataset.order = order;
-          b.textContent = sortLabel(b) + (order === 'asc' ? ' ↑' : ' ↓');
-        } else {
-          b.textContent = sortLabel(b) + (b.dataset.order === 'asc' ? ' ↑' : ' ↓');
-        }
-      });
-      render(key, order);
+      activate(key, order);
+      try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ key: key, order: order })); } catch (e) {}
     });
   });
+
+  // Restore a reader's saved choice for this exact page, if any -- else
+  // the server-rendered default (dateAxis.ts) stands as-is.
+  try {
+    var saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || 'null');
+    if (saved && saved.key) activate(saved.key, saved.order);
+  } catch (e) {}
 }
 
 // initListFilter hides/shows cards against EntryCard's own `data-filter`

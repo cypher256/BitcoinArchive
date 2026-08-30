@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
 import { useTranslations, getDisplayEntries, absoluteUrl } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
+import { defaultSortAxis, dominantType, byDateAxisDesc } from '../../../lib/dateAxis';
 import gitDates from '../../../data/git-dates.json';
 
 type LangDate = { createdAt: string; updatedAt: string };
@@ -15,15 +16,23 @@ export async function getStaticPaths() {
   const sources = [...new Set(entries.map((e) => e.data.source))];
   const enEntries = await getDisplayEntries('en');
   const enSources = new Set(enEntries.map((e) => e.data.source));
-  return sources.map((source) => ({
-    params: { source },
-    props: { source, hasEn: enSources.has(source) },
-  }));
+  return sources.map((source) => {
+    // Default sort axis from this source's dominant `type`, computed from
+    // the EN corpus (language-independent source of truth for `type`) —
+    // see EN mirror src/pages/sources/[source].astro, dateAxis.ts, and
+    // BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md.
+    const sourceTypes = enEntries.filter((e) => e.data.source === source).map((e) => e.data.type);
+    const sortAxis = defaultSortAxis(dominantType(sourceTypes));
+    return {
+      params: { source },
+      props: { source, hasEn: enSources.has(source), sortAxis },
+    };
+  });
 }
 
 const lang = 'ja';
 const t = useTranslations(lang);
-const { source, hasEn } = Astro.props;
+const { source, hasEn, sortAxis } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.source === source);
@@ -37,12 +46,10 @@ for (const entry of filtered) {
   const tid = resolveThreadId(entry);
   if (tid) sourceThreadCounts.set(tid, (sourceThreadCounts.get(tid) || 0) + 1);
 }
-// Default order is "recently added" (created desc), same axis as /entries.
-// See NovelBitCoin src/archive/todo/20260701_日付メタデータとソートUI_体系再設計.md.
-const createdKey = (id: string, fallback: Date): string => gitDateMap[id]?.ja?.createdAt ?? fallback.toISOString();
+// sortAxis was resolved in getStaticPaths from this source's dominant type.
 const displayEntries = collapseThreads(filtered, sourceThreadCounts, threadStarters)
   .slice()
-  .sort((a, b) => createdKey(b.id, b.data.date).localeCompare(createdKey(a.id, a.data.date)));
+  .sort(byDateAxisDesc(sortAxis, (id) => gitDateMap[id]?.ja?.createdAt));
 const sourceLabel = t(`source.${source}` as any) || source;
 
 // Card vs entry: collapseThreads bundles same-thread messages into a single
@@ -110,8 +117,8 @@ const structuredData = {
         <span id="entry-thread-count" hidden={threadCount === 0}> / <span id="entry-thread-count-num">{threadCount}</span> スレッド</span>
       </p>
       <div class="sort-controls">
-        <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
-        <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+        <button class:list={['sort-btn', { active: sortAxis === 'date' }]} data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+        <button class:list={['sort-btn', { active: sortAxis === 'created' }]} data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
         <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
       </div>
     </div>
