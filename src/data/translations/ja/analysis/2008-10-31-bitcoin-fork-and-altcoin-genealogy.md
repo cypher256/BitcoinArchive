@@ -114,9 +114,9 @@ inlineLinkKeywords:
 
 ![暗い背景に浮かぶ枝分かれ図。太く光る本流から複数の細い支流が分岐し、起点から後年の分岐群へと伸びていく系譜を描いている](/BitcoinArchive/images/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy-hero.png)
 
-ビットコインのプロトコル分岐のうち今もブロックを生成し続けている全チェーンと、ビットコインのソースコードまたは設計から系譜が始まる隣接する暗号通貨を、まとめて時間軸の地図に描く。本エントリ冒頭のインタラクティブ図がそれを描く。本アーカイブにおける正典のチェーンは、2009 年 1 月 3 日に採掘されハッシュ値 `000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f` を持つジェネシスブロックから始まる連鎖である（[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)）。対象外とするのは、ローンチに失敗した分岐（生き残ったチェーンを残さなかったもの）と、技術的設計がビットコインとは独立に生まれたチェーン群である。[リップル](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/)のフェデレーテッド合意、[モネロ](/BitcoinArchive/ja/entries/currency/2026-07-27-monero-currency-overview/)の CryptoNote 系リング署名、IOTA の DAG、[カルダノ](/BitcoinArchive/ja/entries/currency/2026-07-27-cardano-currency-overview/)の Ouroboros PoS はこの広いカテゴリの例にすぎず、全体の境界線を示すものではない。
+本アーカイブにおける正典のチェーンは、2009 年 1 月 3 日に採掘されハッシュ値 `000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f` を持つジェネシスブロックから始まる連鎖である（[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)）。ビットコインから分岐して今もブロックを生成し続けているプロトコル分岐と、ソースコードまたは設計の系譜がビットコインに遡る隣接する暗号通貨を、まとめて記録する。対象外とするのは、ローンチに失敗した分岐（生き残ったチェーンを残さなかったもの）と、技術的設計がビットコインとは独立に生まれたチェーン群である。[リップル](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/)のフェデレーテッド合意、[モネロ](/BitcoinArchive/ja/entries/currency/2026-07-27-monero-currency-overview/)の CryptoNote 系リング署名、IOTA の DAG、[カルダノ](/BitcoinArchive/ja/entries/currency/2026-07-27-cardano-currency-overview/)の Ouroboros PoS はこの広いカテゴリの例にすぎず、全体の境界線を示すものではない。
 
-本エントリー冒頭のインタラクティブチャートは、各チェーンのローンチ日、分岐元の親チェーン、稼働期間、現在もブロックを生成しているか、ローンチ後数か月で停止したかを、実時間軸の上に描画する。チャート内のチェーン行は対応するアーカイブエントリーが存在する場合にリンクされる。各チェーンの属性ごとの状態 (ブロックサイズ上限、ハッシュレート占有率、ガバナンス等) は §1・§2 の表に記録される。
+チャート内の各チェーンの行は、ローンチ日・分岐元の親チェーン・稼働期間、そして今もブロックを生成しているか数か月で停止したかを、実時間軸の上に示す。対応するアーカイブエントリーがあれば、各チェーンの行からリンクする。ブロックサイズ上限やハッシュレート占有率など属性ごとの詳細は §1・§2 の表にまとめた。
 
 <!-- chart: fork-genealogy -->
 
