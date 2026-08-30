@@ -72,20 +72,19 @@ if (partOf) {
     /* Block-level flex (not inline-flex) + fit-content keeps the chip
        shrink-wrapped to its text while letting its vertical margins
        collapse predictably with the header above. The negative top
-       margin sits the chip closer than the header's own bottom gap
-       (.entry-header margin-bottom, currently 0.5rem in
-       entries/[...slug].astro, both locales) would give by default —
+       margin sits the chip closer than the gap the header's last meta
+       row would give by default (currently 0.25rem -- see the shared
+       margin-bottom comment on .tags-row in EntryMeta.astro) —
        grouping the "return to parent" chip with the header it belongs
        to, without going negative (which would overlap the header).
-       Keep the magnitude below .entry-header's margin-bottom if that
-       value ever changes again. Scoped here, so only pages with a
-       parent link tighten; every other entry keeps the full header
-       spacing. */
+       Keep the magnitude below that value if it ever changes again.
+       Scoped here, so only pages with a parent link tighten; every
+       other entry keeps the full header spacing. */
     display: flex;
     width: fit-content;
     align-items: baseline;
     gap: 0.6rem;
-    margin: -0.25rem 0 1.5rem;
+    margin: -0.125rem 0 1.5rem;
     padding: 0.5rem 0.9rem;
     background: var(--color-bg-alt);
     border: 1px solid var(--color-border);

@@ -182,7 +182,11 @@ const isSatoshiAuthor =
     font-family: var(--font-heading);
     font-size: 0.85rem;
     color: var(--color-text-muted);
-    margin-bottom: 0.5rem;
+    /* Kept in sync with .participants-row / .tags-row / .defines-row --
+       see the comment on .tags-row. This is the fallback that leaks
+       through on the rare entry with none of those three optional rows
+       (bare date/author/type line only). */
+    margin-bottom: 0.25rem;
   }
   .byline-label {
     font-weight: 600;
@@ -230,7 +234,12 @@ const isSatoshiAuthor =
     font-family: var(--font-heading);
     font-size: 0.8rem;
     color: var(--color-text-muted);
-    margin-bottom: 0.6rem;
+    /* Kept in sync with .tags-row / .defines-row margin-bottom (see the
+       comment on .tags-row): whichever of the three rows is last inside
+       .entry-header is the one whose margin actually reaches the body
+       below, so all three must carry the same value or the gap would
+       depend on which optional rows a given entry happens to render. */
+    margin-bottom: 0.25rem;
     gap: 0.15rem;
   }
   .participants-label {
@@ -258,15 +267,16 @@ const isSatoshiAuthor =
     gap: 0.35rem;
     font-family: var(--font-heading);
     font-size: 0.8rem;
-    /* Sole practical source of the gap below the entry header on entry
-       detail pages: .entry-header itself has no bottom padding/border,
-       so this being the header's last child means this margin (not
-       .entry-header's own, smaller margin-bottom) is the one that wins
-       the collapse and actually reaches the body below. Kept equal to
-       .entry-header's margin-bottom (entries/[...slug].astro, both
-       locales) so the two stay in sync regardless of which one
-       technically "wins". */
-    margin-bottom: 0.5rem;
+    /* .entry-header itself has no bottom padding/border, so whichever
+       of .entry-meta / .participants-row / .defines-row / .tags-row
+       ends up as the header's last child (depends on which optional
+       rows this entry renders -- see the template above) is the one
+       whose margin-bottom wins the collapse and actually reaches the
+       body below, not .entry-header's own smaller margin-bottom. All
+       four share this same value (and match .entry-header's
+       margin-bottom in entries/[...slug].astro, both locales) so the
+       visible gap stays the same regardless of which row is last. */
+    margin-bottom: 0.25rem;
   }
   .tag-link {
     display: inline-block;
@@ -290,7 +300,9 @@ const isSatoshiAuthor =
     font-family: var(--font-heading);
     font-size: 0.8rem;
     color: var(--color-text-muted);
-    margin-bottom: 0.6rem;
+    /* Kept in sync with .tags-row / .participants-row -- see the
+       comment on .tags-row for why. */
+    margin-bottom: 0.25rem;
   }
   .defines-label {
     font-weight: 600;

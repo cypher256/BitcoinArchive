@@ -916,7 +916,7 @@ blockquote > .quote-speaker-tag:first-child {
      from that block above and the gap before whatever follows
      (callout or biography body) below. */
   margin-top: 1.5rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.25rem;
   gap: 0.25rem 0.75rem;
   font-family: var(--font-heading);
   font-size: 0.8rem;
