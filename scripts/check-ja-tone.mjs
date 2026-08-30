@@ -48,7 +48,6 @@ const jaDir = path.resolve(__dirname, '../src/data/translations/ja');
 
 // ---------------------------------------------------------------------------
 // Character tone rules
-//   Source of truth: bitcoin-novel_キャラ設定.md (private repo)
 //   "da"   = だ・である調 — flags ですます as a violation
 //   "desu" = ですます調   — flags だ・である as a violation
 // ---------------------------------------------------------------------------

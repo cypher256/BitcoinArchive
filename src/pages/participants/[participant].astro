@@ -81,7 +81,6 @@ const calloutTarget = calloutSpec
   : undefined;
 const nonBio = filtered.filter((e) => e.data.type !== 'biography');
 // Default order is "recently added" (created desc), same axis as /entries.
-// See NovelBitCoin src/archive/todo/20260701_日付メタデータとソートUI_体系再設計.md.
 const createdKey = (id: string, fallback: Date): string => gitDateMap[id]?.en?.createdAt ?? fallback.toISOString();
 const displayEntries = collapseThreads(nonBio, threadCounts, threadStarters)
   .slice()

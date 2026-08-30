@@ -84,14 +84,12 @@ const breadcrumbItems = breadcrumbs.map((item, index) => ({
 
 
 <!-- Web font: Inter (Modern A's default body + heading face).
-     Self-hosted (`src/assets/fonts/inter/`, @font-face in global.css) as of
-     the migration noted below — was Google Fonts CDN (`display=swap`, two
-     preconnect origins) per temp/temp_0510_モダン化リデザイン計画.md § 6.2-2,
-     which explicitly named self-host as the planned later step ("Strategy α
-     (CDN)... can migrate to self-host later without touching components").
-     Removes ~817ms of render-blocking cross-origin connection setup that
-     Lighthouse flagged sitewide; `font-display: swap` in the @font-face
-     rules keeps the same never-block-first-paint behaviour. -->
+     Self-hosted (`src/assets/fonts/inter/`, @font-face in global.css) --
+     was Google Fonts CDN (`display=swap`, two preconnect origins) before
+     the self-host migration. Removes ~817ms of render-blocking
+     cross-origin connection setup that Lighthouse flagged sitewide;
+     `font-display: swap` in the @font-face rules keeps the same
+     never-block-first-paint behaviour. -->
 
 <!-- Google Analytics (GA4) — primary deployment only. The GitHub Pages
      mirror builds under base `/BitcoinArchive`, so loading this

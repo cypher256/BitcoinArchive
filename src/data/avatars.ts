@@ -15,8 +15,7 @@
  * Real-photo licensing: every avatarPhotos entry must carry a
  * verifiable source URL, an author credit, and a re-distributable
  * licence (Wikimedia Commons CC BY / CC BY-SA / public domain, or an
- * image the subject themselves published). See
- * todo/20260606_人物アイコン導入プラン.md for the collection policy.
+ * image the subject themselves published).
  */
 
 export interface AvatarPhoto {

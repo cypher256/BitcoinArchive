@@ -3,8 +3,7 @@
  * audit-ja-dash-usage.mjs — JA dash-character usage audit for BitcoinArchive
  *
  * Two independent checks, both purely mechanical (no AI judgment, no
- * "too many dashes reads AI-ish" framing — that reasoning lives in the
- * private repo, not here):
+ * "too many dashes reads AI-ish" framing):
  *
  *   1. Wrong glyph: `─` (U+2500, box-drawing horizontal) or `―`
  *      (U+2015, horizontal bar) used as a prose dash. `─` has no

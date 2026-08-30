@@ -334,7 +334,7 @@ export function initEntriesBrowse() {
       // Leaving search with relevance still active: fall back to a date axis
       // for browse (relevance has no meaning there) and persist the fallback
       // itself, so a plain page reload later doesn't resurrect 'relevance'
-      // from sessionStorage (codex point 4).
+      // from sessionStorage.
       activateSort(hasCreatedBtn ? 'created' : 'date', 'desc');
       try { sessionStorage.setItem(SORT_KEY, JSON.stringify({ key: sortState.key, order: sortState.order })); } catch (e) {}
     }
@@ -370,7 +370,7 @@ export function initEntriesBrowse() {
 
   // ---- sort: works in both browse and search (re-sorts in place) ----
   // 'relevance' is a rank, not a direction: it never shows ↑/↓ and clicking
-  // it again never toggles anything (search-2026-07-19 design, codex point 1).
+  // it again never toggles anything (search-2026-07-19 design).
   function activateSort(key, order) {
     sortState.key = key; sortState.order = order;
     sortBtns.forEach(function(b) {
@@ -396,8 +396,8 @@ export function initEntriesBrowse() {
       activateSort(key, order);
       // 'relevance' is never a stored preference — every search entry
       // re-derives it automatically (see update()), so persisting it would
-      // make the NEXT plain browse-mode page load wrongly replay it (codex
-      // point 3/4). Only the 3 date axes are reader preferences worth saving.
+      // make the NEXT plain browse-mode page load wrongly replay it. Only
+      // the 3 date axes are reader preferences worth saving.
       if (key !== 'relevance') {
         try { sessionStorage.setItem(SORT_KEY, JSON.stringify({ key: key, order: order })); } catch (e) {}
       }

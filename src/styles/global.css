@@ -1,11 +1,10 @@
 /* ============================================================
    Design Tokens — two-layer (light defaults + dark variant).
-   See temp/temp_0510_モダン化リデザイン計画.md § Phase 6, § B.3.
 
-   Phase 6 promoted Modern A (Editorial Sans, Inter, deep navy
-   `#1f3a5f` accent) to the default palette. The retro Georgia /
-   sepia / orange-brown look is gone; the `themes/` directory
-   has been removed alongside the URL-param theme switcher.
+   The default palette is Modern A (Editorial Sans, Inter, deep navy
+   `#1f3a5f` accent). The retro Georgia / sepia / orange-brown look is
+   gone; the `themes/` directory has been removed alongside the
+   URL-param theme switcher.
 
    Layer 1: `:root` carries Modern A's light variant.
    Layer 2: dark variant lives in two parallel rules so that
@@ -103,8 +102,7 @@
      value (mostly 2rem/2em, a few 2.5rem/2.5em) picked independently
      when that component was first authored — none tied to each other or
      to the article's own established rhythm (~1.4–1.5em for
-     paragraphs/figures/quotes, see src/archive/todo/
-     20260608_モダンWebデザイン_余白可読性_調査と案.md in the novel repo).
+     paragraphs/figures/quotes).
      Two tiers, not one — these are different roles:
        --rhythm-block   entering/leaving the group: prose or a chart
                          component next to the first/last boxed callout.

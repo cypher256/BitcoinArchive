@@ -21,8 +21,8 @@ import { findJaSectionLineRanges, lineInJaSection } from './lib/astro-ja-section
 
 // Accept optional target directory(s) via CLI argument.
 // Default: Archive's JA translations + components (which embed JA labels for
-// charts/timelines that ship to readers). Other repos (e.g. NovelBitCoin) can
-// invoke this script with their own directory as argument.
+// charts/timelines that ship to readers). Any other JA-content project can
+// invoke this script against its own directory as an argument.
 //
 // Both `.md` and `.astro` files are scanned. For `.astro`, only lines that
 // contain a Japanese character (hiragana / katakana / kanji) are checked,
@@ -34,19 +34,18 @@ import { findJaSectionLineRanges, lineInJaSection } from './lib/astro-ja-section
 // Optional ignore file: a plain-text file listing terms that must not be
 // treated as deprecated within this target (one per line). Useful when the
 // target contains intentional domain-specific wording that overlaps with
-// a glossary rule (e.g. "量子コンピュータ" is a protected 改禁 term in
-// the novel, despite "コンピュータ" being a general deprecated form).
+// a glossary rule.
 //
 // Ignore file format (one rule per line):
 //   # Comment
+//   採掘者                     # Skip this exact term
 //   量子コンピュータ           # Skip violations where the matched span
 //                              # starts with this string
-//   採掘者                     # Skip this exact term
 //
 // Usage:
 //   node check-ja-glossary.mjs
-//   node check-ja-glossary.mjs ../NovelBitCoin/src
-//   node check-ja-glossary.mjs ../NovelBitCoin/src --ignore-file .ja-glossary-ignore
+//   node check-ja-glossary.mjs ../another-repo/src
+//   node check-ja-glossary.mjs ../another-repo/src --ignore-file .ja-glossary-ignore
 const args = process.argv.slice(2);
 const explicitPaths = [];
 let IGNORE_FILE = null;

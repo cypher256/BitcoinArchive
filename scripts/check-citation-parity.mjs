@@ -5,8 +5,7 @@
  *
  * This is deliberately a metadata gate. It does not decide whether an
  * editorial claim is accurate or whether a link is worth adding; those are
- * human/audit decisions governed by the private citation policy and the
- * public style guides.
+ * human/audit decisions governed by the style guides.
  */
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';

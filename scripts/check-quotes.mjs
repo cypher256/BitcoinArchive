@@ -141,7 +141,7 @@ function parseFrontmatterManual(content) {
 // a non-blockquote, non-html-comment, non-empty line whose next significant
 // line (skipping empty lines and skippable HTML comments) is a blockquote.
 // Among candidates, lines matching one of the legacy attribution shapes are
-// flagged. See temp/0521_引用旧形式マイグレーション計画.md.
+// flagged.
 const JA_LEGACY_SUFFIXES = [
   /の投稿\s*[:：]\s*$/,
   /の書き込み\s*[:：]\s*$/,

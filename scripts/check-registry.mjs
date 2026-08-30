@@ -26,7 +26,7 @@ const CHECKS_MD = path.join(SCRIPTS, 'CHECKS.md');
 const SELF = path.basename(fileURLToPath(import.meta.url));
 
 // Naming exceptions managed as check-equivalents in the ledger (the archive
-// has none; the novel repo grandfathers measure-prose.py). filename -> tier.
+// has none). filename -> tier.
 const GRANDFATHERED = {};
 
 // Standalone-script filename token (.mjs or .sh). Used both to read the ledger
@@ -56,7 +56,7 @@ function npmScripts() {
 function hookText() {
   // Archive hooks live in local .git/hooks (commit-msg / post-commit) and are
   // not committed; check-registry is wired into check/build, not a hook. Read
-  // any committed .githooks dir defensively for parity with the novel repo.
+  // any committed .githooks dir defensively in case one is added later.
   const dir = path.join(ROOT, '.githooks');
   if (!existsSync(dir)) return '';
   return readdirSync(dir)

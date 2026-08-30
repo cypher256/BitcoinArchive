@@ -45,11 +45,10 @@
  *    `<style>` text node, plus all `style=` / `fill=` / `stroke=`
  *    attribute strings, get passed through a small set of literal
  *    string substitutions.
- * 3. The substitution set was derived from a probe build (see
- *    `temp/mermaid-probe/*.svg` snapshots and the comment block
- *    further down with the OBSERVED hex frequency table). Each rule
- *    maps a literal Mermaid color to a CSS variable defined in
- *    `src/styles/global.css`.
+ * 3. The substitution set was derived empirically from Mermaid's actual
+ *    rendered SVG output, not guessed (see the OBSERVED hex frequency
+ *    table in the comment block further down). Each rule maps a literal
+ *    Mermaid color to a CSS variable defined in `src/styles/global.css`.
  * 4. Idempotency: the substitutions match raw color literals (`#XXXXXX`,
  *    `black`, `red`, etc.). After one pass those literals have been
  *    replaced by `var(--mermaid-...)` strings, so a second pass finds

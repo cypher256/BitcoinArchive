@@ -32,10 +32,7 @@ not a restatement.
   `fill-*`, `verify-*`, …). Not gates, but **still catalogued below**
   so every script is identifiable without investigation;
   `check-registry` enforces that no script is left out.
-- The extension follows the repo's language (archive = `.mjs`). The
-  novel repo (private) keeps a parallel `scripts/CHECKS.md` (Japanese)
-  + `scripts/check-registry.py`; prefix, placement, and port rules are
-  shared, only the extension differs.
+- The extension follows the repo's language (archive = `.mjs`).
 
 ## Where each gate runs
 

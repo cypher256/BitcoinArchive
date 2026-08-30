@@ -428,9 +428,8 @@ function isBlockquoteParagraph(rawPara) {
  * "candidate-finder" — every reported divergence still requires human
  * review before any edit is made. A real alignment check (matching by
  * content, e.g. embedding similarity or anchor markers) is out of
- * scope for the current version; if this audit is ever promoted from
- * `audit:` to `check:`, that work needs to happen first (see plan
- * file under temp/ for the precondition list).
+ * scope for the current version; that work needs to happen first if
+ * this audit is ever promoted from `audit:` to `check:`.
  */
 function passesLengthEnvelope(enNorm, jaNorm) {
   if (!jaNorm) return false;

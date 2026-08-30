@@ -2,7 +2,7 @@
   // Disable CMake Tools for this project. The extension detects a
   // CMakeLists.txt under node_modules (native deps such as bare-fs) and would
   // otherwise inject machine-specific absolute paths into settings.json on
-  // every open/edit. Mirrors the NovelBitCoin workspace settings.
+  // every open/edit.
   "cmake.configureOnOpen": false,
   "cmake.configureOnEdit": false
 }
