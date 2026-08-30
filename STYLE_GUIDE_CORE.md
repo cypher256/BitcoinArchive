@@ -490,8 +490,18 @@ after it.
   image must be English.
 - Require: ~1600×900 PNG (an SVG rendered via a headless browser is
   the usual path), no real human face or photographic likeness of
-  any named person, and all in-image text labels in English only
-  (the image is shared by both locale pages).
+  any named person, all in-image text labels in English only
+  (the image is shared by both locale pages), and a **dark-toned
+  background** (navy, near-black, deep charcoal — not white, cream,
+  or pale). This is a deliberate visual-identity choice, distinct
+  from `STYLE_GUIDE_VISUAL.md`'s "Editorial Sans — Inter on a white
+  surface," which describes the site's page chrome (body/UI), not
+  hero illustrations. (2026-07-20's rollout deliberately generated
+  without a style prompt and accepted the resulting palette
+  inconsistency; 2026-08-30 confirmed that acceptance was itself an
+  oversight and set this dark-background requirement going forward.
+  Pre-existing light-background hero images are a known backlog, not
+  a new violation to flag per-entry.)
 - Save to `public/images/analysis/<slug>-hero.png` regardless of the
   entry's actual type directory (`aftermath/`, `design/`, etc.) — the
   directory name predates this feature's scope beyond `analysis` and
@@ -509,9 +519,10 @@ after it.
 **Verify before committing a hero image**: the defect above is easy to
 miss on a dark page. Read the corner and edge pixels rather than
 eyeballing the thumbnail — all four edges should be the image's own
-background colour, never `#ffffff`, and the render must be exactly
-1600×900. A shifted-by-8px render is 1600×900 too, so size alone does
-not prove it is correct. Then look at the image itself for the errors
+background colour, never `#ffffff`, that background colour should
+itself be dark-toned (see the Generation requirement above), and the
+render must be exactly 1600×900. A shifted-by-8px render is 1600×900
+too, so size alone does not prove it is correct. Then look at the image itself for the errors
 a pixel check cannot catch: labels overlapping each other or a shape,
 a curve pointing the wrong way, and any factual claim baked into the
 artwork (an in-image label is as much a published claim as body prose,
