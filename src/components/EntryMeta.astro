@@ -4,6 +4,7 @@ import { slugifyKeyword } from '../lib/keyword-slug.mjs';
 import type { Lang } from '../i18n/ui';
 import { keywordCounts } from '../lib/keyword-index';
 import EntryDates from './EntryDates.astro';
+import TypeIcon from './TypeIcon.astro';
 
 // Backlink-count lookup for `inlineLinkKeywords` display, sourced from
 // the shared `src/lib/keyword-index.ts` helper (which Vite resolves at
@@ -121,6 +122,8 @@ const isSatoshiAuthor =
 ---
 
 <div class="entry-meta">
+  <a href={localePath(`/types/${entryType}/`, lang)} class="type-badge"><TypeIcon />{typeLabel}</a>
+  <span class="meta-sep">&middot;</span>
   <EntryDates date={date} createdAt={createdAt} updatedAt={updatedAt} lang={lang} variant="meta" eventTime />
   {showAuthor && (
     <>
@@ -132,8 +135,6 @@ const isSatoshiAuthor =
       )}
     </>
   )}
-  <span class="meta-sep">&middot;</span>
-  <a href={localePath(`/types/${entryType}/`, lang)} class="type-badge">{typeLabel}</a>
   <span class="meta-sep">&middot;</span>
   <a href={localePath(`/sources/${source}/`, lang)} class="source-badge">{sourceLabel}</a>
 </div>
@@ -202,19 +203,8 @@ const isSatoshiAuthor =
      link sitting next to a yellow word that was. The participants row
      keeps the Satoshi accent (where it actually marks a link); the
      author label stays in the default meta text colour. */
-  .type-badge {
-    display: inline-block;
-    padding: 0.1em 0.5em;
-    background: var(--color-accent);
-    color: var(--color-accent-contrast);
-    border-radius: 3px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .type-badge:hover {
-    opacity: 0.85;
-  }
+  /* .type-badge lives in global.css -- shared with the participant
+     pages' biography meta row, see the comment there. */
   .source-badge {
     display: inline-block;
     padding: 0.1em 0.5em;

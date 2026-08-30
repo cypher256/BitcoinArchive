@@ -6,6 +6,7 @@ import { render } from 'astro:content';
 import { useTranslations, getEntries, getBiographyForParticipant, localePath, absoluteUrl } from '../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
 import Avatar from '../../components/Avatar.astro';
+import TypeIcon from '../../components/TypeIcon.astro';
 import gitDates from '../../data/git-dates.json';
 import ChartEmbedRuntime from '../../components/ChartEmbedRuntime.astro';
 import { PARTICIPANT_NOTES } from '../../data/participant-notes';
@@ -161,13 +162,16 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
       </div>
     </div>
     {biographyEntry && (
-      <EntryDates
-        date={biographyEntry.data.date}
-        createdAt={biographyGitDate?.createdAt}
-        updatedAt={biographyGitDate?.updatedAt}
-        lang={lang}
-        variant="biography"
-      />
+      <div class="bio-meta-row">
+        <a href={localePath('/participants/', lang)} class="type-badge"><TypeIcon />{t('nav.participants' as any)}</a>
+        <EntryDates
+          date={biographyEntry.data.date}
+          createdAt={biographyGitDate?.createdAt}
+          updatedAt={biographyGitDate?.updatedAt}
+          lang={lang}
+          variant="biography"
+        />
+      </div>
     )}
 
     {calloutTarget && calloutSpec && (

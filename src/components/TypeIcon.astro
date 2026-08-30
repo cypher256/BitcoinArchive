@@ -1,0 +1,15 @@
+---
+/**
+ * TypeIcon.astro — the small icon inside every .type-badge (EntryMeta.astro
+ * and the participant page's own badge). One shared icon, not one per
+ * entry type: the badge text already names the type, and every badge's
+ * click action is the same shape (narrow the archive down to just this
+ * type) -- a search icon matches what clicking does, not what the type
+ * is. Feather Icons' "search" path (24x24, stroke-based), matching the
+ * header's existing icons -- the site's only established icon language.
+ */
+---
+<svg class="type-icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <circle cx="11" cy="11" r="8"/>
+  <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+</svg>
