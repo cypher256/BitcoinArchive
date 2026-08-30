@@ -193,7 +193,7 @@ export const PARTICIPANT_NOTES: Record<string, ParticipantNote> = {
   },
   lachesis: {
     hookEn: "Correctly diagnosed the 2010 value-overflow bug's INT64_MAX cause within minutes of the report",
-    hookJa: '2010年の価値オーバーフロー・バグ(INT64_MAX)を報告から数分で特定した人物',
+    hookJa: '2010年のバリュー・オーバーフロー・バグ(INT64_MAX)を報告から数分で特定した人物',
     sourceEntryIds: ['forum/bitcointalk/topic-822/2010-08-15-lachesis-msg9476'],
   },
   'nayib-bukele': {
@@ -203,7 +203,7 @@ export const PARTICIPANT_NOTES: Record<string, ParticipantNote> = {
   },
   wobber: {
     hookEn: 'Named the miner behind a 10%-supply claim later misattributed to knightmb',
-    hookJa: '後に knightmb の功績と誤って伝わった「供給の 10%」採掘者の正体を名指しした人物',
+    hookJa: '後に knightmb の功績と誤って伝わった「供給の 10%」マイナーの正体を名指しした人物',
     sourceEntryIds: ['forum/bitcointalk/topic-431/2010-07-17-nenolod-the-guy-that-wants-to-prove-bitcoin-doesnt-work', 'analysis/2010-08-15-knightmb-snapshot-and-legend'],
   },
   'matt-corallo': {
@@ -228,7 +228,7 @@ export const PARTICIPANT_NOTES: Record<string, ParticipantNote> = {
   },
   kencausey: {
     hookEn: 'Posted the addnode fix that got users unstuck during the August 2010 overflow incident',
-    hookJa: '2010年8月の価値オーバーフロー事件で addnode 対処法を投稿した人物',
+    hookJa: '2010年8月のバリュー・オーバーフロー事件で addnode 対処法を投稿した人物',
     sourceEntryIds: ['forum/bitcointalk/topic-823/2010-08-15-kencausey-msg9595', 'forum/bitcointalk/topic-823/2010-08-16-kencausey-msg9627'],
   },
   'john-levine': {
@@ -353,7 +353,7 @@ export const PARTICIPANT_NOTES: Record<string, ParticipantNote> = {
   },
   theymos: {
     hookEn: "Confirmed the August 2010 value-overflow bug via Bitcoin's own printblock debug output",
-    hookJa: 'printblock デバッグ出力から 2010年8月の価値オーバーフロー・バグを裏付けた人物',
+    hookJa: 'printblock デバッグ出力から 2010年8月のバリュー・オーバーフロー・バグを裏付けた人物',
     sourceEntryIds: ['forum/bitcointalk/topic-822/2010-08-15-theymos-msg9481'],
   },
   'vincent-durham': {
