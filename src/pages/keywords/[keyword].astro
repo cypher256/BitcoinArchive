@@ -50,9 +50,7 @@ const entries = await getEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const backlinks = entries.filter((e) => backlinkIds.includes(e.id));
 // Default axis from this keyword's dominant backlink type — see
-// dateAxis.ts and
-// BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md.
-// (Unlike /types, /sources, /tags this can't be resolved in
+// dateAxis.ts. (Unlike /types, /sources, /tags this can't be resolved in
 // getStaticPaths: keywordIndex only carries slugs/targets, not entry
 // types, so the backlink type distribution is only known here.)
 const sortAxis = defaultSortAxis(dominantType(backlinks.map((e) => e.data.type)));

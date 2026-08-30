@@ -12,11 +12,9 @@
 // The default axis for these is "created" (registered), not "updated": a
 // reader browsing "what's new" wants entries that stay put once shipped,
 // and "updated" moves on every minor copyedit -- an unstable axis for a
-// default (see BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md
-// for the correction from an earlier "updated" default). "created" is also
-// what this default replaces: every list surface used it uniformly before
-// this per-type split, so these three types keep exactly the order readers
-// already saw.
+// default. "created" is also what this default replaces: every list
+// surface used it uniformly before this per-type split, so these three
+// types keep exactly the order readers already saw.
 //
 // `biography` was originally left unresolved (treated as neither bucket)
 // on the theory that its `date` mixes birth/first-appearance/event dates
@@ -57,8 +55,7 @@ export function dominantType(types: string[]): string | undefined {
  *  a single entry id's createdAt from that page's own (language-scoped)
  *  git-dates.json slice -- callers pass e.g. `(id) => gitDateMap[id]?.en?.createdAt`.
  *  Centralizes a pattern previously duplicated across /types, /sources,
- *  /tags, /keywords (EN+JA) — see
- *  BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md. */
+ *  /tags, /keywords (EN+JA). */
 export function byDateAxisDesc<T extends { id: string; data: { date: Date } }>(
   axis: SortAxis,
   createdAtOf: (id: string) => string | undefined,

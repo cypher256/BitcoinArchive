@@ -184,14 +184,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 // Hand-authored, fixed utility pages (not content-collection entries) that
 // want a branded card instead of falling back to the shared og-default.png.
-// This is "Stage 3" of the OGP rollout (BitcoinArchivePrivate
-// todo/old/0517_ogp_ページ別計画.md §4): top and novel already carry their
-// own hand-picked hero image via `ogImage`, so only the remaining fixed
-// pages without one belong here. Per that plan's own design (§3.2, the
-// "トップ/アバウト/小説" row), these pages show no date -- there is no
-// historical anchor to show, and a build-time "now" would go stale the
-// moment this file stops being touched. Add an entry and point the page's
-// own `ogImage` prop at `/og/{slug}.png` / `/og/ja/{slug}.png`.
+// Top and novel already carry their own hand-picked hero image via
+// `ogImage`, so only the remaining fixed pages without one belong here.
+// These pages show no date -- there is no historical anchor to show, and
+// a build-time "now" would go stale the moment this file stops being
+// touched. Add an entry and point the page's own `ogImage` prop at
+// `/og/{slug}.png` / `/og/ja/{slug}.png`.
 const STATIC_PAGES: { slug: string; title: { en: string; ja: string } }[] = [
   {
     slug: 'cite',

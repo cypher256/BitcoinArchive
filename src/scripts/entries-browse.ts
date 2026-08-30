@@ -498,7 +498,7 @@ export function initEntriesBrowse() {
   // calling focus() here already excludes it, no extra flag needed). Mobile
   // browsers may not raise the keyboard from a script-driven focus() — that's
   // fine, the requirement is the caret being ready, not the keyboard forcibly
-  // opening (search-2026-07-19 design, codex-reviewed).
+  // opening.
   if (!q0) { try { input.focus(); } catch (e) {} }
   // Hand off the pre-paint hide: visibility is now owned by setMode()/list.hidden.
   try { document.documentElement.classList.remove('entries-searching'); } catch (e) {}

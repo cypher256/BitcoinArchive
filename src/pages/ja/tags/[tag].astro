@@ -20,8 +20,7 @@ export async function getStaticPaths() {
     }
   }
   // 英語側に存在するタグを取得。type 分布も同時に集計（EN が言語非依存の
-  // 真実源 — see EN mirror src/pages/tags/[tag].astro, dateAxis.ts,
-  // BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md）。
+  // 真実源 — see EN mirror src/pages/tags/[tag].astro, dateAxis.ts）。
   const enEntries = await getDisplayEntries('en');
   const enTags = new Set<string>();
   const typesByTag = new Map<string, string[]>();

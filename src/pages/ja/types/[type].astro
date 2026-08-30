@@ -32,8 +32,7 @@ const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.type === type);
 // Default axis depends on this type's date semantics — see EN mirror
-// src/pages/types/[type].astro, dateAxis.ts, and
-// BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md.
+// src/pages/types/[type].astro and dateAxis.ts.
 const sortAxis = defaultSortAxis(type);
 const displayEntries = collapseThreads(filtered, threadCounts, threadStarters)
   .slice()

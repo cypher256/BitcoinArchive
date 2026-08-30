@@ -6,9 +6,7 @@
 // rendered by EntryDates; choosing an axis changes only the order.
 //
 // A reader's sort choice persists per page (sessionStorage, keyed by
-// location.pathname) -- see
-// BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md.
-// Keying by the full path (not a shared key) means /types/analysis and
+// location.pathname). Keying by the full path (not a shared key) means /types/analysis and
 // /types/forum-post remember independently: picking "updated" on one
 // type's page never leaks into a different type's page, which would
 // otherwise fight the per-type server default these pages now render

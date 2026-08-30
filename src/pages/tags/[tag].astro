@@ -16,8 +16,7 @@ export async function getStaticPaths() {
   const tags = new Set<string>();
   // Collect each tag's entry types alongside membership, so the default
   // sort axis (dominant type -> defaultSortAxis) can be resolved per tag
-  // without a second pass over the corpus — see dateAxis.ts and
-  // BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md.
+  // without a second pass over the corpus — see dateAxis.ts.
   const typesByTag = new Map<string, string[]>();
   for (const entry of entries) {
     for (const tag of entry.data.tags ?? []) {

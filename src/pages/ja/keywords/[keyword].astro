@@ -26,10 +26,9 @@ export async function getStaticPaths() {
   // source of truth for `type`), same as EN mirror
   // src/pages/keywords/[keyword].astro -- a JA and EN page for the same
   // keyword must resolve to the same axis, so this can't be computed from
-  // the JA-only backlink list further down (codex-review finding,
-  // 2026-08-30: computing it from JA backlinks there gave a different
-  // axis than the EN mirror for the same keyword in several cases). See
-  // dateAxis.ts and BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md.
+  // the JA-only backlink list further down (computing it from JA
+  // backlinks there gave a different axis than the EN mirror for the
+  // same keyword in several cases). See dateAxis.ts.
   const enEntries = await getEntries('en');
   for (const [slug, keyword] of Object.entries(jaSlugs)) {
     const target = (keywordIndex.ja?.concept ?? {})[keyword] ||

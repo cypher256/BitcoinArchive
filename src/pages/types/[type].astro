@@ -28,8 +28,7 @@ const { type, hasJa } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.type === type);
-// Default axis depends on this type's date semantics — see dateAxis.ts and
-// BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md.
+// Default axis depends on this type's date semantics — see dateAxis.ts.
 // Every card in this page shares the same `type`, so there is no risk of a
 // card showing a different label than the active sort button implies.
 const sortAxis = defaultSortAxis(type);
