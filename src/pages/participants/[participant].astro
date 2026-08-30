@@ -377,12 +377,15 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
   }
   .participant-head-text {
     min-width: 0;
-    /* Same top/bottom rhythm as .entry-title-row (global.css) around the
-       entry-page title — breathing room around the name, not a margin
-       on .participant-head itself, so the collapse arithmetic that rule
-       already documents (margin-bottom: 0, EntryDates owns the gap
-       below) stays untouched. */
-    padding: 1.5rem 0 3rem;
+    /* Same top padding as .entry-title-row (global.css); bottom is
+       intentionally less (entry pages want more room before EntryMeta's
+       longer tag/participant rows; this page wants a tighter gap before
+       whatever follows -- EntryDates when there's a biography, the
+       callout/entries list when there isn't). Padding here, not a
+       margin on .participant-head itself, so the collapse arithmetic
+       that rule already documents (margin-bottom: 0, EntryDates owns
+       the gap below) stays untouched. */
+    padding: 1.5rem 0 2.5rem;
   }
   .participant-head-text h1 {
     margin: 0;
