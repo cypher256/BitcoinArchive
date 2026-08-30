@@ -1,5 +1,5 @@
 ---
-title: "Pieter Wuille (dates unknown) — Bitcoin Core developer behind BIP-32, libsecp256k1, SegWit, and Taproot"
+title: "Pieter Wuille — Bitcoin Core developer behind BIP-32, libsecp256k1, SegWit, and Taproot"
 date: 2011-03-17T21:58:07Z
 type: "biography"
 source: "github"

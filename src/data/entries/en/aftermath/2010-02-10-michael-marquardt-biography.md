@@ -1,5 +1,5 @@
 ---
-title: "Michael Marquardt (dates unknown) — theymos, BitcoinTalk forum administrator who inherited custody of the Satoshi-era record"
+title: "Michael Marquardt — theymos, BitcoinTalk forum administrator who inherited custody of the Satoshi-era record"
 date: 2010-02-10T09:31:40Z
 type: "biography"
 source: "bitcointalk"

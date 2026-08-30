@@ -1,5 +1,5 @@
 ---
-title: "Luke Dashjr — Long-tenured Bitcoin Core contributor, Bitcoin Knots maintainer (dates unknown)"
+title: "Luke Dashjr — Long-tenured Bitcoin Core contributor, Bitcoin Knots maintainer"
 date: 2012-07-22T21:35:45Z
 type: "biography"
 source: "wikipedia"

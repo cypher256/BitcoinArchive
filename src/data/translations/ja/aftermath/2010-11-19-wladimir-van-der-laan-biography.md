@@ -1,5 +1,5 @@
 ---
-title: "ウラジミール・ファン・デル・ラーン（生年不明）— 2014–2022 年の Bitcoin Core リードメンテナー"
+title: "ウラジミール・ファン・デル・ラーン — 2014–2022 年の Bitcoin Core リードメンテナー"
 date: 2010-11-19T19:55:52Z
 type: "biography"
 source: "wikipedia"

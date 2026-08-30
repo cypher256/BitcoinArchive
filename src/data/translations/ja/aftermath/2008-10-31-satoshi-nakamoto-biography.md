@@ -1,5 +1,5 @@
 ---
-title: "サトシ・ナカモト（生没年不明） — ビットコインの匿名の創造者"
+title: "サトシ・ナカモト — ビットコインの匿名の創造者"
 date: 2008-10-31T00:00:00Z
 type: "biography"
 source: "wikipedia"

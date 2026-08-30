@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-23T00:31:19.875Z",
+  "generated": "2026-08-30T01:59:34.787Z",
   "total": 785,
   "channelCounts": {
     "other": 42,
@@ -56,15 +56,15 @@
     {
       "date": "2008-10-31T00:00:00.000Z",
       "channel": "other",
-      "title": "Satoshi Nakamoto (dates unknown) — Pseudonymous creator of Bitcoin",
-      "titleJa": "サトシ・ナカモト（生没年不明） — ビットコインの匿名の創造者",
+      "title": "Satoshi Nakamoto — Pseudonymous creator of Bitcoin",
+      "titleJa": "サトシ・ナカモト — ビットコインの匿名の創造者",
       "slug": "aftermath/2008-10-31-satoshi-nakamoto-biography"
     },
     {
       "date": "2008-10-31T18:10:00.000Z",
       "channel": "other",
       "title": "Satoshi posts the Bitcoin whitepaper — 18 months of code already behind it",
-      "titleJa": "サトシがビットコインホワイトペーパーを公開 ― 1年半のコーディングを経て",
+      "titleJa": "サトシがビットコインホワイトペーパーを公開 — 1年半のコーディングを経て",
       "slug": "aftermath/2008-10-31-bitcoin-whitepaper-publication"
     },
     {

@@ -1,5 +1,5 @@
 ---
-title: "Cobra（生没年不明） — bitcoin.org の匿名運営者"
+title: "Cobra — bitcoin.org の匿名運営者"
 date: 2021-06-28T00:00:00Z
 type: "biography"
 source: "wikipedia"

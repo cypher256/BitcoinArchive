@@ -1,5 +1,5 @@
 ---
-title: "マイク・ハーン（生没年不明） — サトシとメールを交わした初期ビットコイン貢献者の Google エンジニア"
+title: "マイク・ハーン — サトシとメールを交わした初期ビットコイン貢献者の Google エンジニア"
 date: 2009-04-12T00:00:00Z
 type: "biography"
 source: "wikipedia"

@@ -1,5 +1,5 @@
 ---
-title: "マイケル・マーカート（生年不明）— theymos、サトシ離脱後の BitcoinTalk フォーラム管理人"
+title: "マイケル・マーカート — theymos、サトシ離脱後の BitcoinTalk フォーラム管理人"
 date: 2010-02-10T09:31:40Z
 type: "biography"
 source: "bitcointalk"

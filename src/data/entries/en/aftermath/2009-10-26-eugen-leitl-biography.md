@@ -1,5 +1,5 @@
 ---
-title: "Eugen Leitl (dates unknown) — Cypherpunk and transhumanist who participated in early Bitcoin discussions"
+title: "Eugen Leitl — Cypherpunk and transhumanist who participated in early Bitcoin discussions"
 date: 2009-10-26T12:46:27Z
 type: "biography"
 source: "nakamotoinstitute"

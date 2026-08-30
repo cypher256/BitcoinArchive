@@ -1,5 +1,5 @@
 ---
-title: "Cobra (dates unknown) — Pseudonymous operator of bitcoin.org"
+title: "Cobra — Pseudonymous operator of bitcoin.org"
 date: 2021-06-28T00:00:00Z
 type: "biography"
 source: "wikipedia"

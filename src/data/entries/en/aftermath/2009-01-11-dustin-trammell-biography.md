@@ -1,5 +1,5 @@
 ---
-title: "Dustin Trammell (dates unknown) — Information security researcher who was among the first to run Bitcoin"
+title: "Dustin Trammell — Information security researcher who was among the first to run Bitcoin"
 date: 2009-01-11T00:00:00Z
 type: "biography"
 source: "dustin-trammell"

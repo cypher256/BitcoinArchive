@@ -1,5 +1,5 @@
 ---
-title: "knightmb (dates unknown) — Early Bitcoin node operator whose blockchain snapshot seeded the 2010 overflow-bug recovery"
+title: "knightmb — Early Bitcoin node operator whose blockchain snapshot seeded the 2010 overflow-bug recovery"
 date: 2010-07-12T11:59:16Z
 type: "biography"
 source: "bitcointalk"

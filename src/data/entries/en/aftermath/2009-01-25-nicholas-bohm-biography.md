@@ -1,5 +1,5 @@
 ---
-title: "Nicholas Bohm (dates unknown) — Lawyer who reported early Bitcoin software issues"
+title: "Nicholas Bohm — Lawyer who reported early Bitcoin software issues"
 date: 2009-01-25T10:17:52Z
 type: "biography"
 source: "nakamotoinstitute"

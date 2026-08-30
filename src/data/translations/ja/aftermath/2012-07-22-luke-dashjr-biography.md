@@ -1,5 +1,5 @@
 ---
-title: "ルーク・ダッシュジュニア — Bitcoin Core 長期貢献者、Bitcoin Knots メンテナー（生年不明）"
+title: "ルーク・ダッシュジュニア — Bitcoin Core 長期貢献者、Bitcoin Knots メンテナー"
 date: 2012-07-22T21:35:45Z
 type: "biography"
 source: "wikipedia"

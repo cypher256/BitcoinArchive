@@ -1,5 +1,5 @@
 ---
-title: "Martien van Steenbergen (dates unknown) — Agile coach who asked Satoshi about Bitcoin's money supply"
+title: "Martien van Steenbergen — Agile coach who asked Satoshi about Bitcoin's money supply"
 date: 2009-02-12T07:47:53Z
 type: "biography"
 source: "nakamotoinstitute"

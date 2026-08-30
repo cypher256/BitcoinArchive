@@ -1,5 +1,5 @@
 ---
-title: "Bill Frantz (dates unknown) — Security consultant who discussed Bitcoin's early security implications"
+title: "Bill Frantz — Security consultant who discussed Bitcoin's early security implications"
 date: 2009-01-24T23:22:21Z
 type: "biography"
 source: "cryptography-mailing-list"

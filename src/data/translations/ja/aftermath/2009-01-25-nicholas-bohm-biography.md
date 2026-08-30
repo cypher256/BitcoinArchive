@@ -1,5 +1,5 @@
 ---
-title: "ニコラス・ボーム（生没年不明） — 初期の Bitcoin ソフトウェアの問題を報告した弁護士"
+title: "ニコラス・ボーム — 初期の Bitcoin ソフトウェアの問題を報告した弁護士"
 date: 2009-01-25T10:17:52Z
 type: "biography"
 source: "nakamotoinstitute"

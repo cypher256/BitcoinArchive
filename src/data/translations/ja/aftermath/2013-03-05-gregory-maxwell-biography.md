@@ -1,5 +1,5 @@
 ---
-title: "グレゴリー・マクスウェル（生年不明）— Blockstream 共同創業者、CoinJoin と Confidential Transactions の設計者"
+title: "グレゴリー・マクスウェル — Blockstream 共同創業者、CoinJoin と Confidential Transactions の設計者"
 date: 2013-03-05T00:00:00Z
 type: "biography"
 source: "wikipedia"

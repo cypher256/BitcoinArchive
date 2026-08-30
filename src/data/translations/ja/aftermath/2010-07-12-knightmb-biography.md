@@ -1,5 +1,5 @@
 ---
-title: "knightmb（生年不明）— 2010年のオーバーフロー復旧を支えたブロックチェーン・スナップショット公開者"
+title: "knightmb — 2010年のオーバーフロー復旧を支えたブロックチェーン・スナップショット公開者"
 date: 2010-07-12T11:59:16Z
 type: "biography"
 source: "bitcointalk"

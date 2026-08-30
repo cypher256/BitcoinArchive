@@ -1,5 +1,5 @@
 ---
-title: "Wladimir van der Laan (dates unknown) — Bitcoin Core lead maintainer 2014–2022"
+title: "Wladimir van der Laan — Bitcoin Core lead maintainer 2014–2022"
 date: 2010-11-19T19:55:52Z
 type: "biography"
 source: "wikipedia"

@@ -1,5 +1,5 @@
 ---
-title: "Satoshi Nakamoto (dates unknown) — Pseudonymous creator of Bitcoin"
+title: "Satoshi Nakamoto — Pseudonymous creator of Bitcoin"
 date: 2008-10-31T00:00:00Z
 type: "biography"
 source: "wikipedia"

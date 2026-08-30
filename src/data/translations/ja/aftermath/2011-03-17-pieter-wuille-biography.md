@@ -1,5 +1,5 @@
 ---
-title: "ピーター・ウィーユ（生年不明）— BIP-32、libsecp256k1、SegWit、Taproot を手がけた Bitcoin Core 開発者"
+title: "ピーター・ウィーユ — BIP-32、libsecp256k1、SegWit、Taproot を手がけた Bitcoin Core 開発者"
 date: 2011-03-17T21:58:07Z
 type: "biography"
 source: "github"

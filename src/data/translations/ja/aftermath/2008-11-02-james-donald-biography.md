@@ -1,5 +1,5 @@
 ---
-title: "ジェームズ・A・ドナルド（生没年不明） — ビットコインホワイトペーパーに最初に返信した暗号学者"
+title: "ジェームズ・A・ドナルド — ビットコインホワイトペーパーに最初に返信した暗号学者"
 date: 2008-11-02T23:46:23Z
 type: "biography"
 source: "cryptography-mailing-list"

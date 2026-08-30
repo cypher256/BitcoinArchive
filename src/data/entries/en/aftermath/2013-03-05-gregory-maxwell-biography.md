@@ -1,5 +1,5 @@
 ---
-title: "Gregory Maxwell (dates unknown) — Blockstream co-founder and designer of CoinJoin and Confidential Transactions"
+title: "Gregory Maxwell — Blockstream co-founder and designer of CoinJoin and Confidential Transactions"
 date: 2013-03-05T00:00:00Z
 type: "biography"
 source: "wikipedia"

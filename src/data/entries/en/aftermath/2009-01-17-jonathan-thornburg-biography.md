@@ -1,5 +1,5 @@
 ---
-title: "Jonathan Thornburg (dates unknown) — Astrophysicist who raised early concerns about Bitcoin"
+title: "Jonathan Thornburg — Astrophysicist who raised early concerns about Bitcoin"
 date: 2009-01-17T16:49:45Z
 type: "biography"
 source: "cryptography-mailing-list"
