@@ -96,6 +96,7 @@ const structuredData = {
         {rawEntryCount} エントリー
         {threadCount > 0 && <> / {threadCount} スレッド</>}
       </p>
+      <input type="text" id="filter-input" class="filter-input" placeholder="フィルター..." aria-label="フィルター" autocomplete="off" />
       <div class="sort-controls">
         <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
         <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
@@ -128,8 +129,9 @@ const structuredData = {
       })}
     </div>
     <script>
-      import { initListSort } from '../../../scripts/list-sort';
+      import { initListSort, initListFilter } from '../../../scripts/list-sort';
       initListSort('source-entries-list');
+      initListFilter('source-entries-list', 'filter-input');
     </script>
   </div>
 </BaseLayout>

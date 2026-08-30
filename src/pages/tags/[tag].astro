@@ -94,6 +94,7 @@ const structuredData = {
     <p class="page-lead">Entries tagged with this topic. Spans across types and sources — explore connections between people, events, and themes.</p>
     <div class="list-header">
       <p class="entry-count">{displayEntries.length} entries</p>
+      <input type="text" id="filter-input" class="filter-input" placeholder="Filter..." aria-label="Filter" autocomplete="off" />
       <div class="sort-controls">
         <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
         <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
@@ -126,8 +127,9 @@ const structuredData = {
       })}
     </div>
     <script>
-      import { initListSort } from '../../scripts/list-sort';
+      import { initListSort, initListFilter } from '../../scripts/list-sort';
       initListSort('tag-entries-list');
+      initListFilter('tag-entries-list', 'filter-input');
     </script>
 
     <aside class="search-cta">

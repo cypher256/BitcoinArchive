@@ -95,6 +95,7 @@ const structuredData = {
     <p class="page-lead">このトピックでタグ付けされたエントリー。タイプ・ソースを横断し、人物・出来事・テーマの関連を辿れます。</p>
     <div class="list-header">
       <p class="entry-count">{displayEntries.length} エントリー</p>
+      <input type="text" id="filter-input" class="filter-input" placeholder="フィルター..." aria-label="フィルター" autocomplete="off" />
       <div class="sort-controls">
         <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
         <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
@@ -127,8 +128,9 @@ const structuredData = {
       })}
     </div>
     <script>
-      import { initListSort } from '../../../scripts/list-sort';
+      import { initListSort, initListFilter } from '../../../scripts/list-sort';
       initListSort('tag-entries-list');
+      initListFilter('tag-entries-list', 'filter-input');
     </script>
 
     <aside class="search-cta">

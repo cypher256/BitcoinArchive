@@ -86,6 +86,7 @@ const structuredData = {
     <p class="page-lead">この形式（タイプ）のエントリー集約。形式軸で時間を追うと、ビットコイン黎明期のコミュニケーション様式の変遷が見えます。</p>
     <div class="list-header">
       <p class="entry-count">{displayEntries.length} エントリー</p>
+      <input type="text" id="filter-input" class="filter-input" placeholder="フィルター..." aria-label="フィルター" autocomplete="off" />
       <div class="sort-controls">
         <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
         <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
@@ -118,8 +119,9 @@ const structuredData = {
       })}
     </div>
     <script>
-      import { initListSort } from '../../../scripts/list-sort';
+      import { initListSort, initListFilter } from '../../../scripts/list-sort';
       initListSort('type-entries-list');
+      initListFilter('type-entries-list', 'filter-input');
     </script>
   </div>
 </BaseLayout>

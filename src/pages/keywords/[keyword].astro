@@ -97,11 +97,14 @@ const pageDescription =
           : `${displayBacklinks.length} entries reference this keyword in body prose.`}
       </p>
       {displayBacklinks.length > 0 && (
-        <div class="sort-controls">
-          <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
-          <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
-          <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
-        </div>
+        <>
+          <input type="text" id="filter-input" class="filter-input" placeholder="Filter..." aria-label="Filter" autocomplete="off" />
+          <div class="sort-controls">
+            <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+            <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+            <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
+          </div>
+        </>
       )}
     </div>
 
@@ -131,8 +134,9 @@ const pageDescription =
     })}
     </div>
     <script>
-      import { initListSort } from '../../scripts/list-sort';
+      import { initListSort, initListFilter } from '../../scripts/list-sort';
       initListSort('keyword-entries-list');
+      initListFilter('keyword-entries-list', 'filter-input');
     </script>
 
     <aside class="search-cta">

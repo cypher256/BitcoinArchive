@@ -1,13 +1,13 @@
-// Shared client sort control for simple SSR entry-card listings with no
-// search/facets: /tags, /sources, /keywords, /types, /participants. Re-sorts
-// the existing SSR cards in place. Every card keeps all three date fields
-// rendered by EntryDates; choosing an axis changes only the order. Sort choice
-// is NOT persisted across reloads here — unlike /entries
-// (src/scripts/entries-browse.ts), these are secondary listing surfaces
-// where the page's own default order (e.g. /types/analysis sorts by
-// updated date, everywhere else by event date) should reappear on a fresh
-// visit rather than sticking to whatever the reader last picked.
+// Shared client sort + filter controls for simple SSR entry-card listings
+// with no search/facets: /tags, /sources, /keywords, /types, /participants.
+// Both operate on the existing SSR cards in place; neither talks to Algolia
+// (that stays on /entries, src/scripts/entries-browse.ts) or persists across
+// reloads -- these are secondary listing surfaces where the page's own
+// default order/full list should reappear on a fresh visit rather than
+// sticking to whatever the reader last picked or typed.
 //
+// initListSort re-orders the cards. Every card keeps all three date fields
+// rendered by EntryDates; choosing an axis changes only the order.
 export function initListSort(listId: string) {
   var list = document.getElementById(listId);
   if (!list) return;
@@ -48,6 +48,26 @@ export function initListSort(listId: string) {
         }
       });
       render(key, order);
+    });
+  });
+}
+
+// initListFilter hides/shows cards against EntryCard's own `data-filter`
+// attribute (title + byline + description + co-participant names,
+// lowercased -- see the comment on filterText in EntryCard.astro). That
+// attribute already existed for a planned /entries quick-filter that was
+// never wired up there (the design that shipped uses Algolia facets
+// instead); reusing it here is why this needs no EntryCard change.
+export function initListFilter(listId: string, inputId: string) {
+  var list = document.getElementById(listId);
+  var input = document.getElementById(inputId) as HTMLInputElement | null;
+  if (!list || !input) return;
+  var cards = Array.prototype.slice.call(list.querySelectorAll('.entry-card'));
+  input.addEventListener('input', function() {
+    var q = input!.value.toLowerCase();
+    cards.forEach(function(c: any) {
+      var hay = c.dataset.filter || '';
+      c.style.display = hay.indexOf(q) !== -1 ? '' : 'none';
     });
   });
 }
