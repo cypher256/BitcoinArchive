@@ -1497,21 +1497,25 @@ th {
 .figure-block[data-kind="mermaid"],
 .figure-block[data-kind="table"],
 .figure-block[data-kind="chart"],
-pre {
+pre,
+.minimap-scroll {
   --scroll-fade: 28px;
 }
 .figure-block[data-scroll="right"],
-pre[data-scroll="right"] {
+pre[data-scroll="right"],
+.minimap-scroll[data-scroll="right"] {
   -webkit-mask-image: linear-gradient(to right, #000 calc(100% - var(--scroll-fade)), transparent);
           mask-image: linear-gradient(to right, #000 calc(100% - var(--scroll-fade)), transparent);
 }
 .figure-block[data-scroll="left"],
-pre[data-scroll="left"] {
+pre[data-scroll="left"],
+.minimap-scroll[data-scroll="left"] {
   -webkit-mask-image: linear-gradient(to left, #000 calc(100% - var(--scroll-fade)), transparent);
           mask-image: linear-gradient(to left, #000 calc(100% - var(--scroll-fade)), transparent);
 }
 .figure-block[data-scroll="both"],
-pre[data-scroll="both"] {
+pre[data-scroll="both"],
+.minimap-scroll[data-scroll="both"] {
   -webkit-mask-image: linear-gradient(to right, transparent, #000 var(--scroll-fade), #000 calc(100% - var(--scroll-fade)), transparent);
           mask-image: linear-gradient(to right, transparent, #000 var(--scroll-fade), #000 calc(100% - var(--scroll-fade)), transparent);
 }

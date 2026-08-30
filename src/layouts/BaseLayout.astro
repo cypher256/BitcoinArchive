@@ -186,11 +186,15 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
       are mounted client-side by ChartEmbedRuntime.astro well after this
       script's first pass, so a MutationObserver re-scans for newly
       inserted matches instead of a one-time querySelectorAll.
+      .minimap-scroll (the /sources/{source} list-page minimap, see
+      lib/minimap.ts) reuses this same mechanism rather than a one-off --
+      it only forces a min-width past the viewport for a source with many
+      years, so most sources tag "none" just like a chart that fits.
     */}
     <script>
       (() => {
         const sel =
-          '.figure-block[data-kind="mermaid"], .figure-block[data-kind="table"], .figure-block[data-kind="chart"], pre';
+          '.figure-block[data-kind="mermaid"], .figure-block[data-kind="table"], .figure-block[data-kind="chart"], pre, .minimap-scroll';
         const update = (el) => {
           const max = el.scrollWidth - el.clientWidth;
           if (max <= 2) {

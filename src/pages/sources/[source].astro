@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
-import { useTranslations, getDisplayEntries, absoluteUrl } from '../../i18n/utils';
+import { useTranslations, getDisplayEntries, absoluteUrl, localePath, findAuthorParticipant, formatDate, translateParticipantName } from '../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
 import { defaultSortAxis, dominantType, byDateAxisDesc } from '../../lib/dateAxis';
+import { buildMinimap } from '../../lib/minimap';
+import { avatarBackground } from '../../data/avatars';
 import gitDates from '../../data/git-dates.json';
 
 type LangDate = { createdAt: string; updatedAt: string };
@@ -19,7 +21,7 @@ export async function getStaticPaths() {
   return sources.map((source) => {
     // Default sort axis from this source's dominant `type` (EN frontmatter
     // is the language-independent source of truth for `type`) — see
-    // dateAxis.ts and BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md.
+    // dateAxis.ts.
     const sourceTypes = entries.filter((e) => e.data.source === source).map((e) => e.data.type);
     const sortAxis = defaultSortAxis(dominantType(sourceTypes));
     return {
@@ -50,6 +52,49 @@ const displayEntries = collapseThreads(filtered, sourceThreadCounts, threadStart
   .slice()
   .sort(byDateAxisDesc(sortAxis, (id) => gitDateMap[id]?.en?.createdAt));
 const sourceLabel = t(`source.${source}` as any) || source;
+
+// Minimap: one dot per entry, plotted on a fixed 0-100% event-date axis --
+// built from `filtered` (pre-collapseThreads), not `displayEntries`, so a
+// thread's individual messages each get their own dot instead of the
+// single collapsed card the list below shows. Dot color reuses the site's
+// existing author-identity colors (Satoshi's fixed accent, everyone
+// else's avatarHue) rather than inventing a new palette.
+const minimap = buildMinimap(
+  filtered,
+  (entry) => {
+    const ap = findAuthorParticipant(entry.data.author, entry.data.participants);
+    const isSatoshiAuthor = ap?.slug === 'satoshi-nakamoto' || entry.data.author.toLowerCase() === 'satoshi nakamoto';
+    return isSatoshiAuthor ? 'var(--color-satoshi)' : avatarBackground(ap?.slug || entry.data.author);
+  },
+  // Always the message's own page, never the collapsed /entries/threads/{tid}/
+  // page: unlike a card (one card = a whole collapsed thread, so linking to
+  // the merged thread page is the only sensible target), a minimap dot
+  // represents one specific message and every entry -- thread member or
+  // not -- has its own /entries/{id}/ page (entries/[...slug].astro's
+  // getStaticPaths covers all non-biography entries). Routing a thread
+  // dot to the shared thread page would land on the whole thread instead
+  // of the one message that dot's tooltip/date describes.
+  (entry) => localePath(`/entries/${entry.id}/`, lang),
+  (entry) => `${formatDate(entry.data.date, lang)} — ${entry.data.title}`,
+  // Same fields as EntryCard's own data-filter (title, byline, description,
+  // co-participants) so typing a query dims the same set of dots that the
+  // card list below hides -- see EntryCard.astro's filterText comment.
+  // Title resolution must match the card's exactly (line ~200 below):
+  // a thread's card shows threadTitles.get(tid), not each reply's own
+  // title, so a reply dot has to search that same resolved title -- else
+  // a query matching only the thread's chosen title (but not a specific
+  // reply's own title, or vice versa) dims a dot the matching card left
+  // visible, or leaves a dot bright whose card just got hidden.
+  (entry) => {
+    const ap = findAuthorParticipant(entry.data.author, entry.data.participants);
+    const displayAuthor = translateParticipantName(ap?.name ?? entry.data.author, ap?.slug, lang);
+    const others = (entry.data.participants || []).filter((p) => p.slug !== ap?.slug && p.name !== entry.data.author);
+    const tid = resolveThreadId(entry);
+    const isThread = tid && (sourceThreadCounts.get(tid) || 0) >= 2;
+    const title = isThread ? threadTitles.get(tid!) || entry.data.title : entry.data.title;
+    return [title, displayAuthor, entry.data.description, ...others.map((p) => translateParticipantName(p.name, p.slug, lang))].join(' ');
+  },
+);
 
 // Card vs entry: collapseThreads bundles same-thread messages into a single
 // card, so displayEntries.length counts cards (= threads + standalone
@@ -107,6 +152,38 @@ const structuredData = {
   <div class="container-wide">
     <h1>{sourceLabel}</h1>
     <p class="page-lead">Entries originating from this channel. The source axis lets you trace the venues Satoshi and contemporaries used over time.</p>
+    {minimap.points.length >= 2 && (
+      <div class="minimap" id="source-minimap">
+        <div class="minimap-scroll">
+          <div class="minimap-inner" style={`width:max(100%, ${minimap.minWidthPx}px)`}>
+            {minimap.years.map((y, i) => {
+              const endPct = minimap.years[i + 1]?.pct ?? 100;
+              return (
+                <div
+                  class:list={['minimap-yr', { 'minimap-yr-alt': i % 2 === 1 }]}
+                  style={`left:${y.pct}%; width:${endPct - y.pct}%`}
+                >
+                  <span class="minimap-yr-label">{y.year}</span>
+                </div>
+              );
+            })}
+            <div class="minimap-track"></div>
+            {minimap.points.map((pt) => (
+              <div
+                class="minimap-pt"
+                style={`left:${pt.pct}%; --dot-color:${pt.color}`}
+                data-href={pt.href}
+                data-label={pt.label}
+                data-filter={pt.filterText}
+                tabindex="0"
+                role="link"
+                aria-label={pt.label}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    )}
     <div class="filter-row">
       <input type="text" id="filter-input" class="filter-input" placeholder="Filter..." aria-label="Filter" autocomplete="off" />
     </div>
@@ -148,7 +225,9 @@ const structuredData = {
     </div>
     <script>
       import { initListSort, initListFilter } from '../../scripts/list-sort';
+      import { initMinimap } from '../../scripts/list-minimap';
       initListSort('source-entries-list');
+      initMinimap('source-minimap', 'filter-input');
       // The shared filter-count update (initListFilter's own entry-count-num
       // write) counts visible *cards*, which is right for every other list
       // page but not here: this page shows the raw entry count (threads
@@ -175,6 +254,182 @@ const structuredData = {
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  /* Minimap: fixed 0-100% strip, so its height never grows with entry
+     count (20 entries or 2500 render identically). */
+  /* Three layers, not two, because a plain `overflow-x: auto` on the
+     positioned ancestor breaks two things at once: (1) setting
+     overflow-x alone computes overflow-y to auto too (CSS overflow
+     spec), which clips the tooltip's `bottom: 100%` popup that pokes out
+     above the box -- so the scroll element must NOT be the tooltip's
+     positioned ancestor; (2) a fixed height plus a browser's
+     space-reserving (non-overlay) scrollbar shrinks the visible content
+     area, covering the year row at the bottom (reported 2026-08-30).
+     .minimap (outer): position:relative only, sized by content -- this
+     is what the tooltip anchors to, safe from both problems above.
+     .minimap-scroll: the actual overflow-x:auto element, auto height so
+     a reserved-space scrollbar grows the box instead of eating into it.
+     .minimap-inner: the pct-positioned content, width floors to
+     years.length*44px (lib/minimap.ts) so the year row never collides on
+     a narrow viewport -- a source spanning many years (e.g. bitcointalk,
+     17 years) scrolls instead of mashing "2010"-"2026" into unreadable
+     overlapping text. A source with few years stays at 100%, no scroll. */
+  .minimap {
+    position: relative;
+    margin: 0.5rem 0 1.5rem;
+  }
+  .minimap-scroll {
+    overflow-x: auto;
+    /* Buffer for the endpoint dots: left:0%/100% dots center via
+       translate(-50%) so half their 40px hit-target extends past the
+       0-100% edge -- without this padding, overflow-x:auto's own edge
+       clips that half off (reported 2026-08-30: "leftmost dot cut off
+       on its left side"). Padding sits on the scroll element, inside its
+       own scrollport, so the overflow stays visible instead of clipped. */
+    padding: 0 20px;
+    scrollbar-color: var(--color-border) transparent;
+  }
+  .minimap-inner {
+    position: relative;
+    height: 68px;
+  }
+  .minimap-track {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 26px;
+    height: 2px;
+    background: var(--color-border-strong);
+  }
+  /* Hit target is larger than the visible dot (::before draws the actual
+     circle). A 9px dot was too small to see or aim at (feedback from
+     visual check, 2026-08-30) -- bumped again to 20px/26px-hover after a
+     follow-up "still too small" report the same day. Coarse-pointer
+     devices don't benefit from an invisible hit-target beyond the visible
+     dot (finger accuracy isn't a hover/pointer-precision problem), and on
+     narrow viewports the larger target increases the chance of tapping
+     the wrong dot when entries cluster close in time -- see the reduced
+     touch sizing in the coarse-pointer media query below. */
+  .minimap-pt {
+    position: absolute;
+    top: 26px;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  /* No border in the resting state. A source with thousands of entries
+     packs many dots within a few px of each other; a border (all
+     var(--color-bg)) drawn on EVERY dot compounds across overlapping
+     neighbors into a washed-out/crushed look where only border rings
+     are visible and the actual fill colors disappear (reported on
+     BitcoinTalk, 2554 entries, 2026-08-30: "white-out"/"black-out",
+     only outlines showing). Solid adjacent fills with no border read as
+     legible touching colors instead. */
+  .minimap-pt::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--dot-color);
+    transform: translate(-50%, -50%);
+  }
+  /* Border comes back only here, where exactly one dot is enlarged and
+     z-index (below) lifts it clear of neighbors -- no crush risk. */
+  .minimap-pt:hover::before,
+  .minimap-pt:focus-visible::before {
+    width: 26px;
+    height: 26px;
+    border: 2px solid var(--color-bg);
+  }
+  /* Absolutely positioned siblings paint in DOM order by default,
+     independent of :hover -- without this, the enlarged hover/focus dot
+     can render mostly hidden behind a later-DOM-order neighbor in a
+     dense cluster (reported 2026-08-30: hovering a clustered dot showed
+     only a thin crescent, the rest occluded by the next dot). */
+  .minimap-pt:hover,
+  .minimap-pt:focus-visible {
+    z-index: 5;
+  }
+  @media (pointer: coarse) {
+    .minimap-pt {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .minimap-pt:focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
+    border-radius: 50%;
+  }
+  /* Filter sync (list-minimap.ts): a typed query dims non-matching dots
+     instead of hiding them, so the strip's fixed timeline shape stays
+     intact -- see the comment on filterText in lib/minimap.ts. */
+  .minimap-pt-dim::before {
+    opacity: 0.1;
+  }
+  /* Each year is a full-height background lane spanning its own real
+     calendar width (from this Jan-1 boundary to the next one, or to the
+     strip's edges for the first/last year) -- reuses the site's existing
+     alternating-lane tokens (fork-genealogy.js, satoshi-activity-timeline.js)
+     rather than inventing a new color pair. A single tick+label answered
+     "where does it start" but not "where does it end"; a colored lane
+     makes the full span of a year legible at a glance instead of a
+     boundary a reader has to guess a direction from. The label is
+     centered within its own lane, same as a calendar or Gantt-chart
+     region caption -- see list-minimap.ts's fitYearLabels() for what
+     happens when a lane is narrower than its own label text. */
+  .minimap-yr {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: var(--chart-lane-a);
+    box-sizing: border-box;
+  }
+  .minimap-yr-alt {
+    background: var(--chart-lane-b);
+  }
+  .minimap-yr-label {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+  /* Same visual language as the d3 charts' .chart-tooltip
+     (BtcPriceChart.astro) -- one tooltip pattern site-wide, not a
+     one-off for this strip. No white-space: nowrap: a long title wraps
+     inside max-width instead of overflowing past the box's own border
+     (2026-08-30 visual check: nowrap left ~740px of text rendering out
+     of a 318px-wide box). z-index above the sticky site header's own
+     (100/101, Header.astro) -- when the minimap scrolls near the top of
+     the viewport, the tooltip's bottom:100% placement can land behind
+     the header, clipping its top edge (2026-08-30 visual check). */
+  .minimap :global(.minimap-tooltip) {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    transform: translateX(-50%);
+    margin-bottom: 0.4rem;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.35rem 0.6rem;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: var(--color-text);
+    box-shadow: var(--shadow-md);
+    max-width: 320px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 200;
+  }
   .filter-row {
     max-width: 28rem;
     margin-bottom: 0.75rem;

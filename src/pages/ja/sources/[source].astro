@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
-import { useTranslations, getDisplayEntries, absoluteUrl } from '../../../i18n/utils';
+import { useTranslations, getDisplayEntries, absoluteUrl, localePath, findAuthorParticipant, formatDate, translateParticipantName } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 import { defaultSortAxis, dominantType, byDateAxisDesc } from '../../../lib/dateAxis';
+import { buildMinimap } from '../../../lib/minimap';
+import { avatarBackground } from '../../../data/avatars';
 import gitDates from '../../../data/git-dates.json';
 
 type LangDate = { createdAt: string; updatedAt: string };
@@ -19,8 +21,7 @@ export async function getStaticPaths() {
   return sources.map((source) => {
     // Default sort axis from this source's dominant `type`, computed from
     // the EN corpus (language-independent source of truth for `type`) —
-    // see EN mirror src/pages/sources/[source].astro, dateAxis.ts, and
-    // BitcoinArchivePrivate/todo/20260830_一覧ページの既定ソート_タイプ別化.md.
+    // see EN mirror src/pages/sources/[source].astro and dateAxis.ts.
     const sourceTypes = enEntries.filter((e) => e.data.source === source).map((e) => e.data.type);
     const sortAxis = defaultSortAxis(dominantType(sourceTypes));
     return {
@@ -51,6 +52,33 @@ const displayEntries = collapseThreads(filtered, sourceThreadCounts, threadStart
   .slice()
   .sort(byDateAxisDesc(sortAxis, (id) => gitDateMap[id]?.ja?.createdAt));
 const sourceLabel = t(`source.${source}` as any) || source;
+
+// Minimap: one dot per entry, plotted on a fixed 0-100% event-date axis --
+// see EN mirror src/pages/sources/[source].astro for the full rationale.
+const minimap = buildMinimap(
+  filtered,
+  (entry) => {
+    const ap = findAuthorParticipant(entry.data.author, entry.data.participants);
+    const isSatoshiAuthor = ap?.slug === 'satoshi-nakamoto' || entry.data.author.toLowerCase() === 'satoshi nakamoto';
+    return isSatoshiAuthor ? 'var(--color-satoshi)' : avatarBackground(ap?.slug || entry.data.author);
+  },
+  // Always the message's own page -- see EN mirror for the full rationale
+  // (a minimap dot is one specific message, not a collapsed thread card).
+  (entry) => localePath(`/entries/${entry.id}/`, lang),
+  (entry) => `${formatDate(entry.data.date, lang)} — ${entry.data.title}`,
+  // Same fields as EntryCard's own data-filter, with the same
+  // thread-title resolution as the card -- see EN mirror for the full
+  // rationale.
+  (entry) => {
+    const ap = findAuthorParticipant(entry.data.author, entry.data.participants);
+    const displayAuthor = translateParticipantName(ap?.name ?? entry.data.author, ap?.slug, lang);
+    const others = (entry.data.participants || []).filter((p) => p.slug !== ap?.slug && p.name !== entry.data.author);
+    const tid = resolveThreadId(entry);
+    const isThread = tid && (sourceThreadCounts.get(tid) || 0) >= 2;
+    const title = isThread ? threadTitles.get(tid!) || entry.data.title : entry.data.title;
+    return [title, displayAuthor, entry.data.description, ...others.map((p) => translateParticipantName(p.name, p.slug, lang))].join(' ');
+  },
+);
 
 // Card vs entry: collapseThreads bundles same-thread messages into a single
 // card, so displayEntries.length counts cards (= threads + standalone
@@ -108,6 +136,38 @@ const structuredData = {
   <div class="container-wide">
     <h1>{sourceLabel}</h1>
     <p class="page-lead">この経路（ソース）に由来するエントリー。ソース軸を辿ると、サトシたちが当時使った場の変遷が見えます。</p>
+    {minimap.points.length >= 2 && (
+      <div class="minimap" id="source-minimap">
+        <div class="minimap-scroll">
+          <div class="minimap-inner" style={`width:max(100%, ${minimap.minWidthPx}px)`}>
+            {minimap.years.map((y, i) => {
+              const endPct = minimap.years[i + 1]?.pct ?? 100;
+              return (
+                <div
+                  class:list={['minimap-yr', { 'minimap-yr-alt': i % 2 === 1 }]}
+                  style={`left:${y.pct}%; width:${endPct - y.pct}%`}
+                >
+                  <span class="minimap-yr-label">{y.year}</span>
+                </div>
+              );
+            })}
+            <div class="minimap-track"></div>
+            {minimap.points.map((pt) => (
+              <div
+                class="minimap-pt"
+                style={`left:${pt.pct}%; --dot-color:${pt.color}`}
+                data-href={pt.href}
+                data-label={pt.label}
+                data-filter={pt.filterText}
+                tabindex="0"
+                role="link"
+                aria-label={pt.label}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    )}
     <div class="filter-row">
       <input type="text" id="filter-input" class="filter-input" placeholder="フィルター..." aria-label="フィルター" autocomplete="off" />
     </div>
@@ -149,7 +209,9 @@ const structuredData = {
     </div>
     <script>
       import { initListSort, initListFilter } from '../../../scripts/list-sort';
+      import { initMinimap } from '../../../scripts/list-minimap';
       initListSort('source-entries-list');
+      initMinimap('source-minimap', 'filter-input');
       // See EN mirror src/pages/sources/[source].astro for why this
       // callback overwrites the shared card-count with the raw entry sum.
       initListFilter('source-entries-list', 'filter-input', function (visible) {
@@ -172,6 +234,143 @@ const structuredData = {
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  /* Minimap: fixed 0-100% strip, so its height never grows with entry
+     count (20 entries or 2500 render identically) — see EN mirror
+     src/pages/sources/[source].astro for the full rationale. */
+  /* Three layers, not two -- see EN mirror for the full rationale
+     (a plain overflow-x:auto on the positioned ancestor both clips the
+     tooltip's bottom:100% popup and, with a fixed height, lets a
+     space-reserving scrollbar cover the year row). */
+  .minimap {
+    position: relative;
+    margin: 0.5rem 0 1.5rem;
+  }
+  .minimap-scroll {
+    overflow-x: auto;
+    padding: 0 20px;
+    scrollbar-color: var(--color-border) transparent;
+  }
+  .minimap-inner {
+    position: relative;
+    height: 68px;
+  }
+  .minimap-track {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 26px;
+    height: 2px;
+    background: var(--color-border-strong);
+  }
+  /* Hit target is larger than the visible dot (::before draws the actual
+     circle). A 9px dot was too small to see or aim at (feedback from
+     visual check, 2026-08-30) -- bumped again to 20px/26px-hover after a
+     follow-up "still too small" report the same day. Coarse-pointer
+     devices don't benefit from an invisible hit-target beyond the visible
+     dot (finger accuracy isn't a hover/pointer-precision problem), and on
+     narrow viewports the larger target increases the chance of tapping
+     the wrong dot when entries cluster close in time -- see the reduced
+     touch sizing in the coarse-pointer media query below. */
+  .minimap-pt {
+    position: absolute;
+    top: 26px;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  /* No border in the resting state -- see EN mirror for the full
+     rationale (a border on every dot compounds across overlapping
+     neighbors in a dense source into a crushed/washed-out look where
+     only outlines show and fill colors disappear). */
+  .minimap-pt::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--dot-color);
+    transform: translate(-50%, -50%);
+  }
+  .minimap-pt:hover::before,
+  .minimap-pt:focus-visible::before {
+    width: 26px;
+    height: 26px;
+    border: 2px solid var(--color-bg);
+  }
+  .minimap-pt:hover,
+  .minimap-pt:focus-visible {
+    z-index: 5;
+  }
+  @media (pointer: coarse) {
+    .minimap-pt {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .minimap-pt:focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
+    border-radius: 50%;
+  }
+  /* Filter sync (list-minimap.ts): a typed query dims non-matching dots
+     instead of hiding them, so the strip's fixed timeline shape stays
+     intact -- see the comment on filterText in lib/minimap.ts. */
+  .minimap-pt-dim::before {
+    opacity: 0.1;
+  }
+  /* Each year is a full-height background lane spanning its own real
+     calendar width -- see EN mirror for the full rationale (reuses the
+     site's existing alternating-lane tokens). */
+  .minimap-yr {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: var(--chart-lane-a);
+    box-sizing: border-box;
+  }
+  .minimap-yr-alt {
+    background: var(--chart-lane-b);
+  }
+  .minimap-yr-label {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+  /* Same visual language as the d3 charts' .chart-tooltip
+     (BtcPriceChart.astro) -- one tooltip pattern site-wide, not a
+     one-off for this strip. No white-space: nowrap: a long title wraps
+     inside max-width instead of overflowing past the box's own border
+     (2026-08-30 visual check: nowrap left ~740px of text rendering out
+     of a 318px-wide box). z-index above the sticky site header's own
+     (100/101, Header.astro) -- see EN mirror for the full rationale. */
+  .minimap :global(.minimap-tooltip) {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    transform: translateX(-50%);
+    margin-bottom: 0.4rem;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.35rem 0.6rem;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: var(--color-text);
+    box-shadow: var(--shadow-md);
+    max-width: 320px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 200;
+  }
   .filter-row {
     max-width: 28rem;
     margin-bottom: 0.75rem;
