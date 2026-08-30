@@ -79,6 +79,7 @@ const filterText = [title, displayAuthor, description, ...participants.map((p) =
   data-satoshi={isSatoshi ? '1' : '0'}
   data-tags={tags.join('|')}
   data-filter={filterText}
+  data-entry-count={threadCount ?? 1}
 >
   <a href={href} class="card-link">
     <div class="card-header">

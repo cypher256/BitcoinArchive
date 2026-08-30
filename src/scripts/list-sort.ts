@@ -58,16 +58,66 @@ export function initListSort(listId: string) {
 // attribute already existed for a planned /entries quick-filter that was
 // never wired up there (the design that shipped uses Algolia facets
 // instead); reusing it here is why this needs no EntryCard change.
-export function initListFilter(listId: string, inputId: string) {
+//
+// Also updates #entry-count-num (if the page has one) to the visible
+// count, and highlights the matched substring inside each visible card's
+// title/description with <mark> -- both against the original, cached
+// text so repeated typing/backspacing never compounds stale markup.
+function escapeRegExp(s: string) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+export function initListFilter(listId: string, inputId: string, onUpdate?: (visible: any[]) => void) {
   var list = document.getElementById(listId);
   var input = document.getElementById(inputId) as HTMLInputElement | null;
   if (!list || !input) return;
   var cards = Array.prototype.slice.call(list.querySelectorAll('.entry-card'));
-  input.addEventListener('input', function() {
-    var q = input!.value.toLowerCase();
-    cards.forEach(function(c: any) {
-      var hay = c.dataset.filter || '';
-      c.style.display = hay.indexOf(q) !== -1 ? '' : 'none';
+  var countEl = document.getElementById('entry-count-num');
+  var originals = cards.map(function(c: any) {
+    var titleEl = c.querySelector('.card-title');
+    var descEl = c.querySelector('.card-description');
+    return { titleEl: titleEl, descEl: descEl, title: titleEl ? titleEl.textContent : '', desc: descEl ? descEl.textContent : '' };
+  });
+
+  // Builds text + <mark> nodes directly (never innerHTML) so a title or
+  // description that happens to contain "<"/">" -- or a query that
+  // happens to match literal markup-shaped text -- can never be parsed
+  // as HTML. text is trusted (EntryCard's own render output), but the
+  // match boundaries come from a RegExp built out of user input, so the
+  // *insertion* method still has to be markup-safe on principle.
+  function applyHighlight(el: any, text: string, re: RegExp | null) {
+    if (!el) return;
+    if (!re) { el.textContent = text; return; }
+    var frag = document.createDocumentFragment();
+    var last = 0;
+    text.replace(re, function(m: string, offset: number) {
+      if (offset > last) frag.appendChild(document.createTextNode(text.slice(last, offset)));
+      var mark = document.createElement('mark');
+      mark.textContent = m;
+      frag.appendChild(mark);
+      last = offset + m.length;
+      return m;
     });
+    if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+    el.textContent = '';
+    el.appendChild(frag);
+  }
+
+  input.addEventListener('input', function() {
+    var raw = input!.value;
+    var q = raw.toLowerCase();
+    var re = raw ? new RegExp(escapeRegExp(raw), 'gi') : null;
+    var visible: any[] = [];
+    cards.forEach(function(c: any, i: number) {
+      var hay = c.dataset.filter || '';
+      var match = hay.indexOf(q) !== -1;
+      c.style.display = match ? '' : 'none';
+      if (match) visible.push(c);
+      var o = originals[i];
+      applyHighlight(o.titleEl, o.title, match ? re : null);
+      applyHighlight(o.descEl, o.desc, match ? re : null);
+    });
+    if (countEl) countEl.textContent = String(visible.length);
+    if (onUpdate) onUpdate(visible);
   });
 }

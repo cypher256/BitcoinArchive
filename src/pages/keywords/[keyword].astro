@@ -90,21 +90,23 @@ const pageDescription =
       </div>
     )}
 
+    {displayBacklinks.length > 0 && (
+      <div class="filter-row">
+        <input type="text" id="filter-input" class="filter-input" placeholder="Filter..." aria-label="Filter" autocomplete="off" />
+      </div>
+    )}
     <div class="list-header">
       <p class="entry-count">
         {displayBacklinks.length === 0
           ? 'No entries reference this keyword in body prose yet.'
-          : `${displayBacklinks.length} entries reference this keyword in body prose.`}
+          : <><span id="entry-count-num">{displayBacklinks.length}</span> entries reference this keyword in body prose.</>}
       </p>
       {displayBacklinks.length > 0 && (
-        <>
-          <input type="text" id="filter-input" class="filter-input" placeholder="Filter..." aria-label="Filter" autocomplete="off" />
-          <div class="sort-controls">
-            <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
-            <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
-            <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
-          </div>
-        </>
+        <div class="sort-controls">
+          <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+          <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+          <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
+        </div>
       )}
     </div>
 
@@ -158,6 +160,10 @@ const pageDescription =
 
 <style>
   h1 { margin-bottom: 0.25rem; word-break: break-word; }
+  .filter-row {
+    max-width: 28rem;
+    margin-bottom: 0.75rem;
+  }
   .list-header {
     display: flex;
     justify-content: space-between;
@@ -187,6 +193,7 @@ const pageDescription =
     font-size: 0.9rem;
     color: var(--color-text-muted);
     margin-top: 0;
+    margin-bottom: 0;
   }
   .search-cta {
     margin-top: 2.5rem;

@@ -25,12 +25,22 @@ const lang = 'en';
 const t = useTranslations(lang);
 const { source, hasJa } = Astro.props;
 const entries = await getDisplayEntries(lang);
-const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
+const { threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.source === source);
+// A thread can span sources (e.g. a correspondence exchange partly on
+// malmi-email-archive, partly on riski-wiki), so the archive-wide
+// threadCounts from buildThreadInfo() would overcount a thread's presence
+// on THIS source's page. Recompute message counts from filtered alone --
+// this is the count that actually belongs to this source.
+const sourceThreadCounts = new Map<string, number>();
+for (const entry of filtered) {
+  const tid = resolveThreadId(entry);
+  if (tid) sourceThreadCounts.set(tid, (sourceThreadCounts.get(tid) || 0) + 1);
+}
 // Default order is "recently added" (created desc), same axis as /entries.
 // See NovelBitCoin src/archive/todo/20260701_日付メタデータとソートUI_体系再設計.md.
 const createdKey = (id: string, fallback: Date): string => gitDateMap[id]?.en?.createdAt ?? fallback.toISOString();
-const displayEntries = collapseThreads(filtered, threadCounts, threadStarters)
+const displayEntries = collapseThreads(filtered, sourceThreadCounts, threadStarters)
   .slice()
   .sort((a, b) => createdKey(b.id, b.data.date).localeCompare(createdKey(a.id, a.data.date)));
 const sourceLabel = t(`source.${source}` as any) || source;
@@ -43,7 +53,7 @@ const sourceLabel = t(`source.${source}` as any) || source;
 const rawEntryCount = filtered.length;
 const threadCount = displayEntries.filter((entry: any) => {
   const tid = resolveThreadId(entry);
-  return tid && (threadCounts.get(tid) || 0) >= 2;
+  return tid && (sourceThreadCounts.get(tid) || 0) >= 2;
 }).length;
 
 const pageDescription = `Archive of communications originating from ${sourceLabel} — Satoshi Nakamoto and early Bitcoin contributors' forum posts, emails, and technical discussions, with original sources preserved.`;
@@ -62,7 +72,7 @@ const structuredData = {
     "itemListOrder": "https://schema.org/ItemListOrderDescending",
     "itemListElement": displayEntries.slice(0, 25).map((entry: any, index: number) => {
       const tid = resolveThreadId(entry);
-      const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+      const msgCount = tid ? sourceThreadCounts.get(tid) || 0 : 0;
       const isThread = msgCount >= 2;
       const itemUrl = isThread
         ? absoluteUrl(`/entries/threads/${tid}/`, lang)
@@ -91,12 +101,14 @@ const structuredData = {
   <div class="container-wide">
     <h1>{sourceLabel}</h1>
     <p class="page-lead">Entries originating from this channel. The source axis lets you trace the venues Satoshi and contemporaries used over time.</p>
+    <div class="filter-row">
+      <input type="text" id="filter-input" class="filter-input" placeholder="Filter..." aria-label="Filter" autocomplete="off" />
+    </div>
     <div class="list-header">
       <p class="entry-count">
-        {rawEntryCount} entries
-        {threadCount > 0 && <> / {threadCount} threads</>}
+        <span id="entry-count-num">{rawEntryCount}</span> entries
+        <span id="entry-thread-count" hidden={threadCount === 0}> / <span id="entry-thread-count-num">{threadCount}</span> threads</span>
       </p>
-      <input type="text" id="filter-input" class="filter-input" placeholder="Filter..." aria-label="Filter" autocomplete="off" />
       <div class="sort-controls">
         <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
         <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
@@ -106,7 +118,7 @@ const structuredData = {
     <div id="source-entries-list">
       {displayEntries.map((entry) => {
         const tid = resolveThreadId(entry);
-        const msgCount = tid ? threadCounts.get(tid) || 0 : 0;
+        const msgCount = tid ? sourceThreadCounts.get(tid) || 0 : 0;
         const isThread = msgCount >= 2;
         return (
           <EntryCard
@@ -131,13 +143,36 @@ const structuredData = {
     <script>
       import { initListSort, initListFilter } from '../../scripts/list-sort';
       initListSort('source-entries-list');
-      initListFilter('source-entries-list', 'filter-input');
+      // The shared filter-count update (initListFilter's own entry-count-num
+      // write) counts visible *cards*, which is right for every other list
+      // page but not here: this page shows the raw entry count (threads
+      // un-collapsed), so this callback overwrites it with the true sum,
+      // using EntryCard's data-entry-count (thread message count, or 1 for
+      // a standalone entry) -- see the comment on rawEntryCount above.
+      initListFilter('source-entries-list', 'filter-input', function (visible) {
+        var raw = 0, threads = 0;
+        visible.forEach(function (c) {
+          var n = parseInt(c.dataset.entryCount, 10) || 1;
+          raw += n;
+          if (n > 1) threads++;
+        });
+        var countEl = document.getElementById('entry-count-num');
+        if (countEl) countEl.textContent = String(raw);
+        var threadWrap = document.getElementById('entry-thread-count');
+        var threadNum = document.getElementById('entry-thread-count-num');
+        if (threadWrap) threadWrap.hidden = threads === 0;
+        if (threadNum) threadNum.textContent = String(threads);
+      });
     </script>
   </div>
 </BaseLayout>
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  .filter-row {
+    max-width: 28rem;
+    margin-bottom: 0.75rem;
+  }
   .list-header {
     display: flex;
     justify-content: space-between;
@@ -155,5 +190,6 @@ const structuredData = {
     font-size: 0.9rem;
     color: var(--color-text-muted);
     margin-top: 0;
+    margin-bottom: 0;
   }
 </style>

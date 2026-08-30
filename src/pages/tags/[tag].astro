@@ -92,9 +92,11 @@ const structuredData = {
   <div class="container-wide">
     <h1>{tag}</h1>
     <p class="page-lead">Entries tagged with this topic. Spans across types and sources — explore connections between people, events, and themes.</p>
-    <div class="list-header">
-      <p class="entry-count">{displayEntries.length} entries</p>
+    <div class="filter-row">
       <input type="text" id="filter-input" class="filter-input" placeholder="Filter..." aria-label="Filter" autocomplete="off" />
+    </div>
+    <div class="list-header">
+      <p class="entry-count"><span id="entry-count-num">{displayEntries.length}</span> entries</p>
       <div class="sort-controls">
         <button class="sort-btn" data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
         <button class="sort-btn active" data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
@@ -150,6 +152,10 @@ const structuredData = {
 
 <style>
   h1 { margin-bottom: 0.25rem; }
+  .filter-row {
+    max-width: 28rem;
+    margin-bottom: 0.75rem;
+  }
   .list-header {
     display: flex;
     justify-content: space-between;
@@ -167,6 +173,7 @@ const structuredData = {
     font-size: 0.9rem;
     color: var(--color-text-muted);
     margin-top: 0;
+    margin-bottom: 0;
   }
   .search-cta {
     margin-top: 2.5rem;

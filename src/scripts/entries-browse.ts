@@ -92,7 +92,12 @@ export function hitCard(h, ctx) {
   var withEl = others.length
     ? '<span class="participants-with">&harr; ' + others.map(function (p) { return participantLink(p.slug, slugToName[p.slug] || p.name, 'participant-link', basePath, L); }).join(', ') + '</span>'
     : '';
-  var body = (h.description ? '<p class="card-description">' + esc(h.description) + '</p>' : '')
+  // Same highlight-or-fallback pattern as title (line ~61): use Algolia's
+  // highlighted description when the query matched it, else the plain
+  // escaped text. Previously always used the plain text, so a
+  // description-only match never showed why a card was in the results.
+  var desc = ((hr.description && hr.description.value) || esc(h.description)).replace(/<\/mark>\s*<mark>/g, '');
+  var body = (h.description ? '<p class="card-description">' + desc + '</p>' : '')
     + (snip ? '<p class="ft-snippet">' + snip + '</p>' : '');
   var href = basePath + h.url;
   return '<article class="entry-card">'

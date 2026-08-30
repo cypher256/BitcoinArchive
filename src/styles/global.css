@@ -1070,11 +1070,19 @@ blockquote > .quote-speaker-tag:first-child {
   margin: 0.25rem 0 0;
 }
 /* No padding on <mark>: Japanese (kuromoji) wraps each morpheme in its own
-   <mark>, so any side padding stacks into fake gaps between characters. */
+   <mark>, so any side padding stacks into fake gaps between characters.
+   Also the shared rule for the plain-substring highlighting on /types,
+   /sources, /tags, /keywords (src/scripts/list-sort.ts) -- one rule for
+   both so the two highlight mechanisms look identical. --color-accent-bg
+   (a ~12% tint) was too low-contrast to read as "highlighted" against the
+   dark theme; --color-hero-subtitle is the same non-link accent already
+   used for other on-page emphasis (see STYLE_GUIDE_VISUAL.md's
+   link-color-confusion table). */
 .entry-card .card-title mark,
+.entry-card .card-description mark,
 .entry-card .ft-snippet mark {
-  background: var(--color-accent-bg);
-  color: inherit;
+  background: var(--color-hero-subtitle);
+  color: var(--color-bg);
 }
 /* Mobile: let a long title wrap around the floated avatar instead of being
    trapped in the column beside it (the avatar is ~24px, a hair under one
