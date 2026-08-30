@@ -46,6 +46,7 @@ secondarySources:
   - name: "文春オンライン — 本調査の日本語報道（2026 年 7 月）"
     url: "https://bunshun.jp/articles/-/89580"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - aftermath/2008-08-20-adam-back-biography
   - aftermath/2008-08-20-satoshi-to-adam-back
   - aftermath/2008-08-21-adam-back-to-satoshi

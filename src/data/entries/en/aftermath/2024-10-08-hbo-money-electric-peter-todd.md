@@ -33,6 +33,7 @@ secondarySources:
   - name: "Money Electric: The Bitcoin Mystery — Wikipedia"
     url: "https://en.wikipedia.org/wiki/Money_Electric:_The_Bitcoin_Mystery"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - analysis/2024-10-08-todd-satoshi-identity-hypothesis
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-identification-asymmetry

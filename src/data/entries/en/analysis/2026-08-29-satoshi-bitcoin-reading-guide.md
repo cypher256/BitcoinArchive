@@ -1,5 +1,5 @@
 ---
-title: "A Reading Guide to Satoshi Nakamoto and Early Bitcoin"
+title: "A Reading Guide to Satoshi Nakamoto and Bitcoin"
 date: 2026-08-29T00:00:00Z
 type: "analysis"
 source: "wikipedia"
@@ -20,7 +20,7 @@ participants:
     slug: "wei-dai"
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "A curated way in: common questions about Satoshi Nakamoto and early Bitcoin history, each pointing to where this archive answers it in full."
+description: "A curated way in: questions about Satoshi Nakamoto and Bitcoin history, each pointing to where this archive answers it in full."
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -34,6 +34,9 @@ relatedEntries:
   - aftermath/2024-03-14-copa-v-wright-ruling
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
   - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit
+  - aftermath/2024-10-08-hbo-money-electric-peter-todd
+  - aftermath/2014-03-06-newsweek-dorian-nakamoto
+  - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
   - aftermath/2009-01-12-first-bitcoin-transaction
@@ -47,7 +50,7 @@ relatedEntries:
 
 ![A dark navy illustration of an open book whose pages branch into six labeled paths, each leading to a small document icon, with a faint compass rose in the background.](/BitcoinArchive/images/analysis/2026-08-29-satoshi-bitcoin-reading-guide-hero.png)
 
-Short answers to common questions about Satoshi Nakamoto and early Bitcoin, each linked to where this archive covers it in full.
+Who Satoshi Nakamoto really is remains unknown. [Newsweek](/BitcoinArchive/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) named the wrong man, [HBO](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) made a documentary about it, [The New York Times](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) ran its own investigation, and [a UK court](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/) ruled that Craig Wright had forged evidence on a grand scale to support his claim. Even [the US government has been hit with a freedom-of-information request](/BitcoinArchive/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/) over it. None of that has settled anything. What follows is where the record continues.
 
 ## Satoshi and identity
 

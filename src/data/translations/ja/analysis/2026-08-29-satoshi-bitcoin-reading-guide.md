@@ -1,5 +1,5 @@
 ---
-title: "サトシ・ナカモトと初期ビットコインを読むための案内"
+title: "サトシ・ナカモトとビットコインの FAQ"
 date: 2026-08-29T00:00:00Z
 type: "analysis"
 source: "wikipedia"
@@ -20,7 +20,7 @@ participants:
     slug: "wei-dai"
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "サトシ・ナカモトと初期ビットコインについてよくある問いを、それぞれ本アーカイブが詳しく扱っている場所へつなぐ案内。"
+description: "サトシ・ナカモトとビットコインについての問いを、それぞれ本アーカイブが詳しく扱っている場所へつなぐ案内。"
 isSatoshi: false
 tags:
   - "satoshi-identity"
@@ -34,6 +34,9 @@ relatedEntries:
   - aftermath/2024-03-14-copa-v-wright-ruling
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
   - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit
+  - aftermath/2024-10-08-hbo-money-electric-peter-todd
+  - aftermath/2014-03-06-newsweek-dorian-nakamoto
+  - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - aftermath/2008-10-31-satoshi-nakamoto-biography
   - aftermath/2021-02-08-satoshi-bitcoin-holdings-analysis
   - aftermath/2009-01-12-first-bitcoin-transaction
@@ -48,7 +51,7 @@ translationStatus: complete
 
 ![開いた本のページが 6 本の道に枝分かれし、それぞれの先に小さな文書アイコンが置かれた、暗い紺色のイラスト。背景には淡いコンパスの図案が見える。](/BitcoinArchive/images/analysis/2026-08-29-satoshi-bitcoin-reading-guide-hero.png)
 
-サトシ・ナカモトと初期ビットコインについてよくある問いに短く答え、それぞれ本アーカイブが詳しく扱っている場所へリンクする。
+サトシ・ナカモトが誰なのかは、いまだに分かっていない。[Newsweek](/BitcoinArchive/ja/entries/aftermath/2014-03-06-newsweek-dorian-nakamoto/) は違う人物を名指しし、[HBO](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) はドキュメンタリーを作り、[ニューヨーク・タイムズ](/BitcoinArchive/ja/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/)は独自に調査し、[英国の裁判所](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/)はクレイグ・ライトが主張を支えるために大規模な証拠偽造を行ったと認定した。[米国政府にまで情報開示請求](/BitcoinArchive/ja/entries/aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit/)が及んでいる。それでも決着はついていない。この記録の続きが、ここから始まる。
 
 ## サトシと正体
 

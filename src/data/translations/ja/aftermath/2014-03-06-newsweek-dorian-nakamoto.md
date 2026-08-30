@@ -20,6 +20,7 @@ tags:
   - "newsweek"
   - "media"
 relatedEntries:
+  - "analysis/2026-08-29-satoshi-bitcoin-reading-guide"
   - "aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor"
   - "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   - "analysis/2008-10-31-satoshi-identification-asymmetry"

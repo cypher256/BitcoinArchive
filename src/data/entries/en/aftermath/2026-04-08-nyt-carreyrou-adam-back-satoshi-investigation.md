@@ -45,6 +45,7 @@ secondarySources:
   - name: "文春オンライン (Bunshun Online) — Japanese coverage of the investigation (July 2026)"
     url: "https://bunshun.jp/articles/-/89580"
 relatedEntries:
+  - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - aftermath/2008-08-20-adam-back-biography
   - aftermath/2008-08-20-satoshi-to-adam-back
   - aftermath/2008-08-21-adam-back-to-satoshi
