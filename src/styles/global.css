@@ -795,7 +795,7 @@ blockquote > .quote-speaker-tag:first-child {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1.5rem 0 2.25rem;
+  padding: 1.5rem 0 3rem;
 }
 .entry-title-row h1 {
   margin: 0;
