@@ -62,18 +62,32 @@ const showHandle = ap != null && displayName !== author;
 // "this entry is about Satoshi" rather than "written by Satoshi").
 const isSatoshiAuthor =
   ap?.slug === 'satoshi-nakamoto' || author.toLowerCase() === 'satoshi nakamoto';
-const authorSlug = ap?.slug || author;
+// null when the author has no resolvable participant (e.g. a deleted
+// forum account, or a byline authorHandleToSlug doesn't yet cover) --
+// there is then no participant page to link to and no known slug to
+// render a real avatar for, so both are skipped below instead of
+// pointing at a 404. check-message-author-resolves.mjs flags any such
+// case that isn't a deliberately-unattributable author (KNOWN_UNATTRIBUTABLE_AUTHORS there)
+// so a missing authorHandleToSlug entry gets caught instead of silently
+// degrading here.
+const authorSlug = ap?.slug ?? null;
 const hasSource = Astro.slots.has('source');
 ---
 
 <div class="message" data-author={isSatoshi ? 'satoshi' : 'other'} id={id}>
   <div class="message-header">
-    <a href={localePath(`/participants/${authorSlug}/`, lang)} class="avatar-link" tabindex="-1" aria-hidden="true">
-      <Avatar slug={authorSlug} sizeClass="message-avatar" base={base} />
-    </a>
-    <a href={localePath(`/participants/${authorSlug}/`, lang)} class:list={['author-name', { satoshi: isSatoshiAuthor }]}>
-      {displayName}{showHandle && <span class="author-handle">{lang === 'ja' ? `（${author}）` : ` (${author})`}</span>}
-    </a>
+    {authorSlug && (
+      <a href={localePath(`/participants/${authorSlug}/`, lang)} class="avatar-link" tabindex="-1" aria-hidden="true">
+        <Avatar slug={authorSlug} sizeClass="message-avatar" base={base} />
+      </a>
+    )}
+    {authorSlug ? (
+      <a href={localePath(`/participants/${authorSlug}/`, lang)} class:list={['author-name', { satoshi: isSatoshiAuthor }]}>
+        {displayName}{showHandle && <span class="author-handle">{lang === 'ja' ? `（${author}）` : ` (${author})`}</span>}
+      </a>
+    ) : (
+      <span class="author-name no-link">{displayName}</span>
+    )}
     {xHandle && (
       <a href={`https://x.com/${xHandle}`} class="x-handle" target="_blank" rel="noopener">@{xHandle}</a>
     )}

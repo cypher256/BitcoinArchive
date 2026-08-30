@@ -69,6 +69,7 @@ not a restatement.
 | `check-registry.mjs` | This ledger ↔ reality consistency (unregistered / ghost / wiring drift) | none | check + build · `check:registry` |
 | `check-markdown-image-alt.mjs` | Markdown images carry alt text | none | check + build · `check:image-alt` |
 | `check-participants.mjs` | EN participant slug / name consistency | none | check + build · `check:participants` |
+| `check-message-author-resolves.mjs` | Every MessageBlock-type entry's `author` resolves to a participant (avoids a silent unlinked byline) | allowlisted (`KNOWN_UNATTRIBUTABLE_AUTHORS`) | check + build · `check:message-author-resolves` |
 | `check-ja-tone.mjs` | JA tone (plain vs. polite form) per character rules | suppressed (`tone-skip`) | check + build · `check:ja-tone` |
 | `check-ja-names.mjs` | JA person names normalized to katakana | none | check + build · `check:ja-names` |
 | `check-ja-titles.mjs` | JA context-post titles not left in English | none | check + build · `check:ja-titles` |
@@ -147,7 +148,6 @@ breaks the build). `tool` = manual, run on demand — reusable, not spent.
 | `fix-ja-punct-spacing.mjs` | Remove half-width spaces stranded between JA chars incl. punctuation (、。「」) | tool |
 | `fix-ja-reply-titles.mjs` | Cascade JA forum reply titles from the starter (see STYLE_GUIDE_REFERENCE.md) | tool |
 | `fix-quote-visual-divergence.mjs` | Fix visual-only JA quote divergence (check-quote-translation-consistency category) | tool |
-| `generate-hero-banners.mjs` | Regenerate the entry-page hero backdrop (`public/images/hero-banners/atmosphere.jpg`) — one wide gradient+grain image shared by every entry (panned to a different crop per entry via `heroBannerPosition()` in `src/lib/heroBanner.ts`); only needs re-running when the design itself changes | tool |
 | `generate-quote-fix-candidates.mjs` | Build a quote-fix review queue from check-quote-translation-consistency | tool |
 | `generate-satoshi-timeline.mjs` | Generate Satoshi timeline data from `isSatoshi` entries | tool |
 | `scan-all-mermaid.mjs` | Survey every mermaid block across the corpus | tool |

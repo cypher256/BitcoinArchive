@@ -82,6 +82,7 @@ async function main() {
   await runPhase('Validators', [
     ['check-markdown-image-alt.mjs'],
     ['check-participants.mjs'],
+    ['check-message-author-resolves.mjs'],
     ['check-ja-tone.mjs'],
     ['check-ja-names.mjs'],
     ['check-ja-titles.mjs'],

@@ -111,6 +111,15 @@ const authorHandleToSlug: Record<string, string> = {
   'slush': 'marek-palatinus',
   'harding': 'david-harding',
   'satoshi': 'satoshi-nakamoto',
+  'theymos': 'michael-marquardt',
+  'bytemaster': 'daniel-larimer',
+  'gavinandresen': 'gavin-andresen',
+  'sipa': 'pieter-wuille',
+  'luke-jr': 'luke-dashjr',
+  'jtimon': 'jorge-timon',
+  'vbuterin': 'vitalik-buterin',
+  'gmaxwell': 'gregory-maxwell',
+  'maaku': 'mark-friedenbach',
 };
 
 export function findAuthorParticipant(author: string, participants: Participant[]): Participant | undefined {

@@ -773,17 +773,39 @@ blockquote > .quote-speaker-tag:first-child {
   }
 }
 
-/* The entry-detail title row (src/pages/entries, src/pages/ja/entries)
-   sits on a fixed-dark hero banner regardless of site theme. .avatar's
-   own background above (var(--color-bg-alt)) shows through the circular
-   clip's edge anti-aliasing — normally invisible since it sits on the
-   page's own theme-matching background, but against the always-dark
-   banner the light-mode near-white fallback shows as a pale ring. Pin
-   it to the banner's own base tone instead. Lives here, not in a
-   per-page scoped <style>, because Avatar.astro is a separate
-   component — a scoped rule in the page never reaches its <img>. */
-.entry-title-row .avatar {
-  background: #0d0e12;
+/* entry-title-row: the avatar + h1 at the top of every entry-detail page
+   (src/pages/entries/[...slug].astro and its JA mirror — identical markup
+   and class names in both, so one definition here covers both instead of
+   two page-scoped copies drifting apart). One flat rule for every entry
+   type: editorial entries (article/analysis/design/currency) already
+   carry their own dedicated hero illustration as the body's first image
+   (STYLE_GUIDE_CORE.md "Hero Images"), and the rest render through
+   MessageBlock.astro, whose own boxed header already shows the avatar +
+   name + date — a band up here would only add a second, competing visual
+   before either of those.
+
+   Previously a single fixed dark photo (generate-hero-banners.mjs, now
+   removed) applied to every entry regardless of theme — correct in dark
+   mode, but a jarring black rectangle floating on a white page in light
+   mode. A theme-adaptive gradient band replaced it for a while, but that
+   still left a background behind MessageBlock entries that duplicated
+   the card below it, so it was dropped in favor of this single flat
+   style. */
+.entry-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0 2.25rem;
+}
+.entry-title-row h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--color-text);
+  /* Prevents a lone trailing word (EN) or character such as a
+     long-vowel mark ー (JA) stranded alone on the last line — the
+     browser rebalances line breaks across the whole heading instead
+     of wrapping greedily. */
+  text-wrap: balance;
 }
 
 /* .thread-banner (entry templates), RelatedEntries.astro, and
@@ -1623,6 +1645,11 @@ pre[data-scroll="both"] {
 }
 .message-header .author-name:hover {
   color: var(--color-link-hover);
+}
+/* No participant to link to (see MessageBlock.astro) -- plain text,
+   not link-colored, so it doesn't read as a dead link. */
+.message-header .author-name.no-link {
+  color: inherit;
 }
 
 .message[data-author="satoshi"] .message-header .author-name {

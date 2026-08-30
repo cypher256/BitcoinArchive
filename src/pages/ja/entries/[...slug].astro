@@ -18,7 +18,6 @@ import Avatar from '../../../components/Avatar.astro';
 import MessageBlock from '../../../components/MessageBlock.astro';
 import { resolveThreadId, deriveThreadTitle } from '../../../data/threads';
 import { renderEditorNote } from '../../../lib/editor-note';
-import { heroBannerPosition } from '../../../lib/heroBanner';
 import { loadDefaultJapaneseParser } from 'budoux';
 import { LABELS as EDITORIAL_LABELS } from '../../../lib/remark-editorial-marker.mjs';
 import gitDates from '../../../data/git-dates.json';
@@ -157,7 +156,6 @@ const titleAvatarHref = isEditorialType
   ? localePath('/about/', lang)
   : (titleAvatarParticipant ? localePath(`/participants/${titleAvatarParticipant.slug}/`, lang) : null);
 const titleAvatarLabel = isEditorialType ? t('site.title') : titleAvatarParticipant?.name;
-const heroBannerOffset = heroBannerPosition(entry.id);
 // og:image — prefer the entry's hero illustration when one exists
 // (editorial types embed it as the body's first image, see
 // STYLE_GUIDE_CORE.md "Hero Images"); the generated /og/ text card stays
@@ -205,7 +203,7 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
       )}
     </nav>
     <header class="entry-header">
-      <div class="entry-title-row" style={`background-image: url(${base}images/hero-banners/atmosphere.jpg); background-position: ${heroBannerOffset}% center;`}>
+      <div class="entry-title-row">
         {titleAvatarSlug && (titleAvatarHref ? (
           <a href={titleAvatarHref} class="avatar-link" aria-label={titleAvatarLabel}>
             <Avatar slug={titleAvatarSlug} sizeClass="entry-author-avatar" base={base} />
@@ -348,49 +346,10 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
        all three (here, EntryMeta.astro, ParentLink.astro) together. */
     margin-bottom: 0.25rem;
   }
-  .entry-header h1 {
-    margin: 0 0 0.75rem;
-    font-size: 2rem;
-  }
-  /* The h1 renders as real text directly on the atmosphere banner
-     (dark gradient + grain, see generate-hero-banners.mjs) instead of a
-     separate decorative image above the header — one hero moment, not
-     two stacked ones. Colors are fixed regardless of site theme since
-     the backdrop is always dark. */
-  .entry-title-row {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    padding: 2.25rem 2rem;
-    /* h1's bottom margin moves here so it does not shift the avatar's
-       vertical centre relative to the title text. */
-    margin-bottom: 1.5rem;
-  }
-  .entry-title-row h1 {
-    margin: 0;
-    color: #f5f4f1;
-    /* Prevents a lone trailing character (e.g. a long-vowel mark ー)
-       stranded alone on the last line — the browser rebalances line
-       breaks across the whole heading instead of wrapping greedily. */
-    text-wrap: balance;
-  }
-  /* .entry-title-row .avatar background override lives in global.css —
-     a scoped rule here can't reach Avatar.astro's rendered <img>. */
-  @media (max-width: 767px) {
-    /* Narrow screens: the row's own padding was eating enough width to
-       force 3-4 line wraps on long titles. Shrink it, and let the
-       banner itself bleed to the viewport edges (cancel .container's
-       1rem padding here) instead of staying inset as a rounded card —
-       both changes free up the same horizontal space the title needs. */
-    .entry-title-row {
-      margin-inline: -1rem;
-      border-radius: 0;
-      padding: 1.5rem 1rem;
-    }
-  }
+  /* .entry-title-row itself (the h1's band + its .flat variant, avatar
+     background, and the narrow-screen bleed) is defined once in
+     global.css, shared with the EN mirror of this template — see the
+     rule there for the full rationale. */
   .entry-content { line-height: 1.8; }
   .entry-nav {
     display: flex;
