@@ -107,7 +107,16 @@ const threadCount = displayEntries.filter((entry: any) => {
   return tid && (sourceThreadCounts.get(tid) || 0) >= 2;
 }).length;
 
-const pageDescription = `Archive of communications originating from ${sourceLabel} — Satoshi Nakamoto and early Bitcoin contributors' forum posts, emails, and technical discussions, with original sources preserved.`;
+// Per-source description: what this source concretely is, written and
+// verified individually for every source registered in src/i18n/ui.ts
+// (`source.<slug>.description`) -- replaces a one-size-fits-all sentence
+// that wrongly implied every source was a venue Satoshi personally used,
+// when most are later third-party news outlets, wikis, or archives.
+// t() falls back from the requested language to the other language when
+// only one has the key (see i18n/utils.ts), so the `||` below only fires
+// for a source missing the key in BOTH languages (defensive; every
+// current source is covered).
+const pageDescription = t(`source.${source}.description` as any) || `Entries originating from ${sourceLabel}. The source axis lets you trace the venues Satoshi and contemporaries used over time.`;
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -151,7 +160,7 @@ const structuredData = {
 >
   <div class="container-wide">
     <h1>{sourceLabel}</h1>
-    <p class="page-lead">Entries originating from this channel. The source axis lets you trace the venues Satoshi and contemporaries used over time.</p>
+    <p class="page-lead">{pageDescription}</p>
     {minimap.points.length >= 2 && (
       <div class="minimap" id="source-minimap">
         <div class="minimap-scroll">

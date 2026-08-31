@@ -91,7 +91,16 @@ const threadCount = displayEntries.filter((entry: any) => {
   return tid && (sourceThreadCounts.get(tid) || 0) >= 2;
 }).length;
 
-const pageDescription = `${sourceLabel}に由来するコミュニケーションのアーカイブ。サトシ・ナカモトと初期ビットコイン貢献者のフォーラム投稿・メール・技術的議論を、原典を保持して収録。`;
+// ソースごとの説明文: アーカイブに登場する全ソースについて個別に調査・
+// 検証した、このソースが実際に何であるかの説明（src/i18n/ui.ts の
+// `source.<slug>.description` を参照）。以前は全ソース共通の定型文で、
+// あらゆるソースがサトシ本人の使った場であるかのように読めてしまう
+// 誤りがあった（実際には大半が後年の報道サイト・ウィキ・アーカイブ）。
+// t() は EN/JA いずれかのキーが欠けていればもう一方の言語のテキストへ
+// フォールバックする（i18n/utils.ts）ため、以下の `||` は EN/JA 双方に
+// キーが無いソース（現状は無いはずの防御的フォールバック）でのみ発火し、
+// 旧来の汎用文を返す。
+const pageDescription = t(`source.${source}.description` as any) || `この経路（ソース）に由来するエントリー。ソース軸を辿ると、サトシたちが当時使った場の変遷が見えます。`;
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -135,7 +144,7 @@ const structuredData = {
 >
   <div class="container-wide">
     <h1>{sourceLabel}</h1>
-    <p class="page-lead">この経路（ソース）に由来するエントリー。ソース軸を辿ると、サトシたちが当時使った場の変遷が見えます。</p>
+    <p class="page-lead">{pageDescription}</p>
     {minimap.points.length >= 2 && (
       <div class="minimap" id="source-minimap">
         <div class="minimap-scroll">
