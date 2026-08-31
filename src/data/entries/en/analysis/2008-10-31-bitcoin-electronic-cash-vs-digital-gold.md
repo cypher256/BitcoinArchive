@@ -73,7 +73,7 @@ The clearest statement of why a thing like Bitcoin could have value is not in th
 <!-- quote: q1 -->
 > "As a thought experiment, imagine there was a base metal as scarce as gold but ... not useful for any practical or ornamental purpose ... and one special, magical property: can be transported over a communications channel."
 
-Both faces of the design are here. The root of value is **scarcity** — as impossible to mine out as gold. The use is **transmission** — you can send it across distance. He added "(I would definitely want some)" because the scarcity was where he saw the value. Hard like gold, moving like cash. Two things in one.
+Both faces of the design are here. What makes it gold-like is **scarcity** — as impossible to mine out as gold, and the reason a value would hold once it existed. What makes it cash-like is **transmission** — you can send it across distance. Satoshi never settled on a single reason the metal would come to have value in the first place — foreseen usefulness for exchange, collectors, "any random reason." Scarcity is what he named for keeping that value from being debased, not for creating it. Hard like gold, moving like cash. Two things in one.
 
 ## It worked as cash, exactly as built
 
@@ -92,7 +92,7 @@ timeline
     %% link: /BitcoinArchive/entries/emails/cryptography/2008-10-31-bitcoin-whitepaper-final/
     2010 : 10,000 BTC for two pizzas - the use, working as built (May 22)
     %% link: /BitcoinArchive/entries/aftermath/2010-05-22-bitcoin-pizza-day/
-         : Satoshi answers the regression theorem - scarcity as the root of value (Aug 27)
+         : Satoshi answers the regression theorem - scarcity sustains value, not its origin (Aug 27)
     %% link: /BitcoinArchive/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/
          : 1 MB anti-spam limit caps the base layer (Sep)
     2013 : Wei Dai names the fixed supply as what makes it poor cash
