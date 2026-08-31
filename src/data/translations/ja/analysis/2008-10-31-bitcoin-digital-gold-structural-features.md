@@ -61,6 +61,18 @@ quotes:
     date: "2010-08-27T17:32:07.000Z"
     sourceEntryId: "forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem"
     parent: null
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-02-18T20:50:00.000Z"
+    sourceEntryId: "forum/p2pfoundation/bitcoin-open-source/2009-02-18-bitcoin-open-source-implementation-of-p2p-currency"
+    parent: null
+  - id: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-05-03T22:32:26.000Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-05-03-bitcoin-003"
+    parent: null
 translationStatus: complete
 ---
 
@@ -78,12 +90,27 @@ translationStatus: complete
 
 ビットコインは、金属という物質を使わずとも、ソフトウェアで同じ性質を再現できると掲げた。その中身は、[固定され検証可能な供給量](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)、中央発行者の不在、そして[誰も一方的に書き換えられないルール](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)である。その主張が実際に成り立っているのか、そして同じような主張を掲げる後発のプロジェクトよりもビットコインの方が説得力を持ってそれを実現しているのか。
 
-サトシ自身も、この金属との類似性を明示的に語っている。[2010 年のフォーラムへの返信](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/)で：
+サトシはこの問いに何度も立ち返っているが、一つの答えに決めたことは一度もない。2009 年 2 月、ビットコインの供給量を需要に合わせて調整せず固定にした理由を [P2P Foundation のフォーラム](/BitcoinArchive/ja/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-18-bitcoin-open-source-implementation-of-p2p-currency/)で説明した際、こう書いている。
+
+<!-- quote: q2 -->
+> そのためには、価値を決める信頼できる第三者が必要になっただろう。ソフトウェアに物の現実世界での価値を判断させる方法を、私は知らないからだ。
+
+その 3 か月後、[2009 年 5 月の手紙](/BitcoinArchive/ja/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/)で初期の貢献者マルッティ・マルミに宛て、同じ手紙のなかで二つの異なる説明を出している。まず、生産コストに基づく説明。
+
+<!-- quote: q3 -->
+> ビットコインの価値は、それを生成するために消費された電力に応じたものになるだろう。
+
+そして数段落後、金を手本にした社会的合意による説明。
+
+<!-- speaker: Satoshi Nakamoto -->
+> 歴史的に、人々は希少な商品を貨幣として採用してきた……価値の大部分は、他者がそれに置く価値から来ている。金もその一例であり、美しく、耐食性があり、加工しやすいが、その価値の大部分は明らかにそこから来ているのではない。
+
+2010 年 8 月になると、金属との類似性を明示的に語った[フォーラムへの返信](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/)でこう書いている。
 
 <!-- quote: q1 -->
 > 思考実験として、金と同じくらい希少だが以下の性質を持つ卑金属があると想像してほしい……そして一つの特別で魔法のような性質：通信チャネルを通じて転送できる。
 
-サトシ自身は、その価値がどこから生まれるかを特定していない。触れているのは、交換の役に立つと見込まれること、収集家の存在、「何らかのランダムな理由」といった程度にとどまる。だが、いったん価値が生まれれば、それを保ち続けるのは希少性だ。この希少性が後にビットコインの決済用途をどう変えていったかは、[電子キャッシュとデジタルゴールドの間](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/)で論じている。
+ここでもサトシは、一つに絞らず候補を並べるにとどめている。交換の役に立つと見込まれること、収集家の存在、「何らかのランダムな理由」。この 18 か月の記録に見えるのは複数の候補であり、価値がどこから始まるかについて一つに決着した説明ではない。だが、いったん価値が生まれれば、それを保ち続けるのは希少性だ。この希少性が後にビットコインの決済用途をどう変えていったかは、[電子キャッシュとデジタルゴールドの間](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/)で論じている。
 
 [後発の暗号資産](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) ([イーサリアム](/BitcoinArchive/ja/entries/currency/2026-07-27-ethereum-currency-overview/)、[リップル](/BitcoinArchive/ja/entries/currency/2026-07-27-xrp-currency-overview/)、[カルダノ](/BitcoinArchive/ja/entries/currency/2026-07-27-cardano-currency-overview/)、[ソラナ](/BitcoinArchive/ja/entries/currency/2026-07-27-solana-currency-overview/)) は、より高機能な仮想マシン、より速い承認、より低い手数料、より豊富なプログラマビリティを備える。2009 年以降の継続稼働年数を除けば、どの単一の技術軸でもビットコインはもはや最前線ではない。それにもかかわらず市場は一貫して、長期保有の価値保存手段、準備資産、相手方のロードマップに依存しない保有として、ビットコインを金にもっとも近い資産と評価し続けている。
 

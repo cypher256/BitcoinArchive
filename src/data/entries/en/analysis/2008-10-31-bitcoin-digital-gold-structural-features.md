@@ -61,6 +61,18 @@ quotes:
     date: "2010-08-27T17:32:07.000Z"
     sourceEntryId: "forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem"
     parent: null
+  - id: "q2"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-02-18T20:50:00.000Z"
+    sourceEntryId: "forum/p2pfoundation/bitcoin-open-source/2009-02-18-bitcoin-open-source-implementation-of-p2p-currency"
+    parent: null
+  - id: "q3"
+    person: "Satoshi Nakamoto"
+    personSlug: "satoshi-nakamoto"
+    date: "2009-05-03T22:32:26.000Z"
+    sourceEntryId: "correspondence/martti-malmi/2009-05-03-bitcoin-003"
+    parent: null
 translationStatus: complete
 ---
 
@@ -78,12 +90,27 @@ That absence of a controlling party is one of the reasons an asset becomes worth
 
 Bitcoin's founding claim was that software could reproduce those same properties without the metal — a [fixed, verifiable supply](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/), no central issuer, and [rules no single party can rewrite](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/). This page tests whether that claim actually holds up, and whether Bitcoin delivers on it more convincingly than the newer projects making similar claims.
 
-Satoshi made the metal comparison explicitly, in a [2010 forum reply](/BitcoinArchive/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/):
+Satoshi returned to this question more than once, and never settled on a single answer. In February 2009, explaining on the [P2P Foundation forum](/BitcoinArchive/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-18-bitcoin-open-source-implementation-of-p2p-currency/) why Bitcoin's supply is fixed rather than managed to track demand, he wrote:
+
+<!-- quote: q2 -->
+> "That would have required a trusted party to determine the value, because I don't know a way for software to know the real world value of things."
+
+Three months later, in a [May 2009 letter](/BitcoinArchive/entries/correspondence/martti-malmi/2009-05-03-bitcoin-003/) to early contributor Martti Malmi, he offered two different accounts in the same message — first a cost-of-production theory:
+
+<!-- quote: q3 -->
+> "The value of bitcoins would be relative to the electricity consumed to produce them."
+
+then, a few paragraphs later, a social-convention theory modeled on gold:
+
+<!-- speaker: Satoshi Nakamoto -->
+> "Historically, people have taken up scarce commodities as money ... Most of the value comes from the value that others place in it. Gold, for instance, is pretty, non-corrosive and easily malleable, but most of its value is clearly not from that."
+
+By August 2010, in the [forum reply](/BitcoinArchive/entries/forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem/) that made the metal comparison explicit:
 
 <!-- quote: q1 -->
 > "As a thought experiment, imagine there was a base metal as scarce as gold but ... not useful for any practical or ornamental purpose ... and one special, magical property: can be transported over a communications channel."
 
-Satoshi left the origin of that value open — foreseen usefulness for exchange, collectors, "any random reason" — but scarcity is what would make the value durable once it existed. How that same scarcity later reshaped Bitcoin's use as a payment system is traced in [the cash-versus-digital-gold reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/).
+he was still listing candidates rather than choosing one — foreseen usefulness for exchange, collectors, "any random reason." Across these eighteen months, the record shows several candidates and no single settled account of where that value begins — but scarcity is what would make the value durable once it existed. How that same scarcity later reshaped Bitcoin's use as a payment system is traced in [the cash-versus-digital-gold reading](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold/).
 
 [Later cryptocurrencies](/BitcoinArchive/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/) ([Ethereum](/BitcoinArchive/entries/currency/2026-07-27-ethereum-currency-overview/), [Ripple](/BitcoinArchive/entries/currency/2026-07-27-xrp-currency-overview/), [Cardano](/BitcoinArchive/entries/currency/2026-07-27-cardano-currency-overview/), [Solana](/BitcoinArchive/entries/currency/2026-07-27-solana-currency-overview/)) ship more capable virtual machines, faster confirmation, lower fees, richer programmability. On any single technical axis other than uptime since 2009, Bitcoin is no longer the frontier. And yet the market consistently prices Bitcoin as the asset most resembling gold — the long-horizon store of value, the reserve position, the holding that doesn't depend on a counterparty's roadmap.
 
