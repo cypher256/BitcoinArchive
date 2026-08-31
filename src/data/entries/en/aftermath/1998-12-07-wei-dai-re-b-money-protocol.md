@@ -35,6 +35,7 @@ relatedEntries:
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 quotes:
   - id: "q1"
     person: "Wei Dai"
@@ -59,7 +60,7 @@ On the state's monopoly on force, Dai had shifted ground:
 On b-money's likely scope, he was modest:
 
 <!-- speaker: Wei Dai -->
-> "b-money will at most be a niche currency/contract enforcement mechanism, serving those who don't want to or can't use government sponsored ones."
+> "I think b-money will at most be a niche currency/contract enforcement mechanism, serving those who don't want to or can't use government sponsored ones."
 
 <!-- speaker: reset -->
 

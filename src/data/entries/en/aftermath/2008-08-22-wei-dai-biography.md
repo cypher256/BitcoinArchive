@@ -47,6 +47,7 @@ relatedEntries:
   - "analysis/2008-08-20-satoshi-self-statements"
   - "aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 ---
 
 ![A faceless hooded silhouette between a cited document marked "[1]" and a sealed 2008 outreach envelope, with a small open-source code block feeding into a Bitcoin block icon](/BitcoinArchive/images/analysis/2008-08-22-wei-dai-biography-hero.png)

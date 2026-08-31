@@ -46,6 +46,7 @@ relatedEntries:
   - "analysis/2008-08-20-satoshi-self-statements"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
   - "aftermath/2008-08-21-satoshi-to-adam-back-b-money"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 translationStatus: complete
 ---
 

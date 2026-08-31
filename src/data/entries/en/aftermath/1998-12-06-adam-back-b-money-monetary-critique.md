@@ -48,6 +48,7 @@ relatedEntries:
   - "analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold"
   - "design/2009-01-03-bitcoin-monetary-design"
   - "aftermath/2009-10-05-newlibertystandard-first-exchange-rate"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 inlineLinkKeywords:
   - "burn CPU time"
 quotes:

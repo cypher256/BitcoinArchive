@@ -46,6 +46,7 @@ relatedEntries:
   - "analysis/2008-08-20-satoshi-self-statements"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
   - "aftermath/2008-08-21-satoshi-to-adam-back-b-money"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 ---
 
 ![Editorial infographic titled "Adam Back 1970–," showing a stamped Hashcash proof-of-work card linked by a dashed line to an email-style "Incoming Message" card from Satoshi Nakamoto dated Aug 20, 2008, a small terminal icon reading "hashcash / work = verified," and a horizontal timeline marking 1997, 2008, 2014, and 2024.](/BitcoinArchive/images/analysis/2008-08-20-adam-back-biography-hero.png)

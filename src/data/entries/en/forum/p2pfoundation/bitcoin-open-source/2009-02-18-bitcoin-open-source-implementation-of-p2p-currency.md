@@ -20,6 +20,8 @@ tags:
   - "supply-limit"
   - "proof-of-work"
   - "monetary-policy"
+relatedEntries:
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 quotes:
   - id: "q1"
     person: "Joerg Baach"

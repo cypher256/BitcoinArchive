@@ -47,6 +47,7 @@ relatedEntries:
   - "analysis/2008-08-20-satoshi-self-statements"
   - "aftermath/2011-11-20-bitcoin-v05-removes-cryptopp-dependency"
   - "analysis/2008-10-31-fixed-supply-vs-adjustable-money"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 translationStatus: complete
 ---
 

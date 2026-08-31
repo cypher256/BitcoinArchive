@@ -26,6 +26,7 @@ secondarySources:
     url: "http://www.weidai.com/bmoney.txt"
 relatedEntries:
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 ---
 
 ウェイ・ダイが先ごろ（cypherpunks で）、「仮名のための金銭的交換と契約執行の新しいプロトコル」である b-money を発表した。

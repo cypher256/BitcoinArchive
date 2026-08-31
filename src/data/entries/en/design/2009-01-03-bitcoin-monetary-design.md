@@ -28,6 +28,7 @@ relatedEntries:
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
   - aftermath/2010-02-10-michael-marquardt-biography
+  - analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered
 inlineLinkKeywords:
   - "Bitcoin supply cap"
   - "halving schedule"

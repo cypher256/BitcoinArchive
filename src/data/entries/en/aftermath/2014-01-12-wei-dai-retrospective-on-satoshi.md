@@ -38,6 +38,7 @@ relatedEntries:
   - "analysis/2008-10-31-satoshi-anonymity-architecture"
   - "analysis/2008-08-20-satoshi-self-statements"
   - "analysis/2008-08-21-what-they-said-about-satoshi"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 inlineLinkKeywords:
   - "Ask Any LessWronger Anything"
 ---

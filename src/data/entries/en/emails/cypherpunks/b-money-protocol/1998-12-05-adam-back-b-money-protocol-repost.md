@@ -25,6 +25,7 @@ secondarySources:
     url: "http://www.weidai.com/bmoney.txt"
 relatedEntries:
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 ---
 
 Wei Dei recently announced (on cypherpunks) his "b-money, a new

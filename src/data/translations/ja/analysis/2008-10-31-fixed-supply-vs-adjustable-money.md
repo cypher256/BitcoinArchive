@@ -118,6 +118,7 @@ relatedEntries:
   - currency/2026-07-27-usdt-currency-overview
   - analysis/2026-08-02-ai-crypto-investment-survey
   - analysis/2026-08-23-did-bitcoin-overturn-money
+  - analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered
 inlineLinkKeywords:
   - "固定供給"
   - "2100 万枚上限"
@@ -187,7 +188,7 @@ timeline
 <!-- audit:quote-skip -->
 > 「これは部分的に私の責任かもしれない ― サトシが論文草稿への意見を求めて私にメールしてきたとき、私は返信しなかった。そうしていれば、おそらく彼 (または彼ら) を『固定供給』の発想から思いとどまらせることができたかもしれない」
 
-3 番目の発言は史実記録の中で珍しいものだ: プロトコルが引用した先駆設計の作者本人が、固定供給という選択を「議論で覆せたかもしれない特定の設計決定」として名指している。この発言は、ホワイトペーパー公開前の草稿が同封されていた [2008 年 8 月 22 日のサトシのメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)に、もし返信していれば、という想定で構成されている。個人的な回想であって結論ではないが、この設計選択が 2008 年 8 月時点で到達可能だった、予定調和ではなかった、と位置づける材料にはなる。
+3 番目の発言は史実記録の中で珍しいものだ: プロトコルが引用した先駆設計の作者本人が、固定供給という選択を「議論で覆せたかもしれない特定の設計決定」として名指している。この発言は、ホワイトペーパー公開前の草稿が同封されていた [2008 年 8 月 22 日のサトシのメール](/BitcoinArchive/ja/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/)に、もし返信していれば、という想定で構成されている。ただし、ダイがその議論を持ち出したことと、実際に有効な代替案を持っていたかは別の問いだ。その点を b-money 自身の 1998 年の記録に沿って追ったのが[専用の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered/)である。
 
 ## 5. 法定通貨の基準線: 中央銀行の裁量
 

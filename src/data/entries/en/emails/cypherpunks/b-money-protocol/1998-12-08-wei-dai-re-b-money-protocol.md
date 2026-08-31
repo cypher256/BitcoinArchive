@@ -28,6 +28,7 @@ quotes:
     sourceEntryId: "emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique"
 relatedEntries:
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 ---
 
 <!-- quote: q1 -->

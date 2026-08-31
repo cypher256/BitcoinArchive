@@ -35,6 +35,7 @@ relatedEntries:
   - "aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement"
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "aftermath/2014-01-12-wei-dai-retrospective-on-satoshi"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 translationStatus: complete
 quotes:
   - id: "q1"
@@ -60,7 +61,7 @@ quotes:
 b-money の射程について、ダイは控えめだった：
 
 <!-- speaker: Wei Dai -->
-> 「b-money はせいぜい、政府公認の仕組みを使いたくない、あるいは使えない人々に向けた、ニッチな通貨／契約執行メカニズムにとどまります」
+> 「私が思うに、b-money はせいぜい、政府公認の仕組みを使いたくない、あるいは使えない人々に向けた、ニッチな通貨／契約執行メカニズムにとどまります」
 
 <!-- speaker: reset -->
 

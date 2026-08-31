@@ -49,6 +49,7 @@ relatedEntries:
   - analysis/2026-08-02-ai-crypto-investment-survey
   - analysis/2008-11-13-byzantine-generals-problem
   - analysis/2026-08-23-did-bitcoin-overturn-money
+  - analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered
 inlineLinkKeywords:
   - "digital gold"
   - "two-layer decentralization"

@@ -118,6 +118,7 @@ relatedEntries:
   - currency/2026-07-27-usdt-currency-overview
   - analysis/2026-08-02-ai-crypto-investment-survey
   - analysis/2026-08-23-did-bitcoin-overturn-money
+  - analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered
 inlineLinkKeywords:
   - "fixed supply"
   - "21 million cap"
@@ -186,7 +187,7 @@ In [an April 2013 LessWrong comment](/BitcoinArchive/entries/aftermath/2013-04-2
 <!-- audit:quote-skip -->
 > "This may have been partially my fault because when Satoshi wrote to me asking for comments on his draft paper, I never got back to him. Otherwise perhaps I could have dissuaded him (or them) from the 'fixed supply of money' idea."
 
-The third statement is uncommon in the historical record: the author of the protocol's cited precursor naming the fixed-supply choice as a specific design decision he might have argued against, had he replied to [Satoshi's August 22, 2008 email](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) that included a pre-release draft of the whitepaper. The statement is a personal retrospective, not a verdict — but it locates the design choice as one that was reachable, not foreordained, in the August 2008 window.
+The third statement is uncommon in the historical record: the author of the protocol's cited precursor naming the fixed-supply choice as a specific design decision he might have argued against, had he replied to [Satoshi's August 22, 2008 email](/BitcoinArchive/entries/correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai/) that included a pre-release draft of the whitepaper. Whether Dai would actually have had a working alternative to argue for is a separate question from whether he raised it — [a dedicated reading](/BitcoinArchive/entries/analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered/) traces b-money's own 1998 record on exactly that point.
 
 ## 5. The fiat baseline: central-bank discretion
 

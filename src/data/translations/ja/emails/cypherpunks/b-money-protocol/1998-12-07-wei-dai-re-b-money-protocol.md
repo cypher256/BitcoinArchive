@@ -28,6 +28,7 @@ quotes:
     sourceEntryId: "emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique"
 relatedEntries:
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 ---
 
 1998 年 12 月 6 日 0:08:04（UTC）、アダム・バックは次のように書きました：
