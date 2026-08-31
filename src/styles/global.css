@@ -1628,6 +1628,17 @@ pre[data-scroll="both"],
 .type-badge:hover {
   background: var(--color-accent);
   color: var(--color-accent-contrast);
+  /* Override the site-wide a:hover underline -- this fills solid like a
+     button, and an underline under filled text reads as noise, not an
+     additional affordance. */
+  text-decoration: none;
+}
+/* EntryMeta.astro places the source-badge directly after the type-badge
+   (no meta-sep dot between them, they're a pair of chips) -- a touch of
+   breathing room keeps their borders from visually merging into one
+   shape. */
+.type-badge + .source-badge {
+  margin-left: 0.3rem;
 }
 .type-badge:focus-visible {
   outline: 2px solid var(--color-link);
@@ -1895,10 +1906,12 @@ a[href^="#"]:hover {
   margin-bottom: 0;
 }
 .qa-card .qa-question {
-  font-size: 1rem;
-  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  color: var(--color-accent);
+  margin: 0 0 0.5rem;
 }
 .qa-card .qa-answer {
+  color: var(--color-text-muted);
   margin: 0 0 0.85rem;
 }
 .qa-card .qa-answer:last-child {

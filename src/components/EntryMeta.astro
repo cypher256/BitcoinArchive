@@ -123,6 +123,7 @@ const isSatoshiAuthor =
 
 <div class="entry-meta">
   <a href={localePath(`/types/${entryType}/`, lang)} class="type-badge"><TypeIcon />{typeLabel}</a>
+  <a href={localePath(`/sources/${source}/`, lang)} class="type-badge source-badge"><TypeIcon />{sourceLabel}</a>
   <span class="meta-sep">&middot;</span>
   <EntryDates date={date} createdAt={createdAt} updatedAt={updatedAt} lang={lang} variant="meta" eventTime />
   {showAuthor && (
@@ -135,8 +136,6 @@ const isSatoshiAuthor =
       )}
     </>
   )}
-  <span class="meta-sep">&middot;</span>
-  <a href={localePath(`/sources/${source}/`, lang)} class="source-badge">{sourceLabel}</a>
 </div>
 
 {participants.length > 0 && (
@@ -204,19 +203,9 @@ const isSatoshiAuthor =
      keeps the Satoshi accent (where it actually marks a link); the
      author label stays in the default meta text colour. */
   /* .type-badge lives in global.css -- shared with the participant
-     pages' biography meta row, see the comment there. */
-  .source-badge {
-    display: inline-block;
-    padding: 0.1em 0.5em;
-    background: var(--color-source-bg);
-    border-radius: 3px;
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: inherit;
-  }
-  .source-badge:hover {
-    opacity: 0.85;
-  }
+     pages' biography meta row, see the comment there. source-badge
+     reuses that exact same class in the markup below (identical look,
+     not just a matching shape) rather than a second CSS rule. */
   .participants-row {
     display: flex;
     flex-wrap: wrap;
