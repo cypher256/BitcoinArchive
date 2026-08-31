@@ -43,6 +43,19 @@ import { toHast } from 'mdast-util-to-hast';
 
 const MARKER = /^<!--\s*faq\s*-->$/;
 
+// remarkEntryClosing (which runs earlier in the pipeline) deletes its own
+// `<!-- entry-closing -->` marker node and tags the following paragraph
+// with this class directly, so by the time this plugin walks the tree that
+// paragraph is indistinguishable from ordinary answer prose by `.type`
+// alone — the greedy paragraph-consuming loop below must skip it, or a FAQ
+// card immediately followed by the page's closing paragraph swallows the
+// closing text as if it were another answer line.
+function isEntryClosing(node) {
+  const className = node?.data?.hProperties?.className;
+  const classes = Array.isArray(className) ? className : className ? [className] : [];
+  return classes.includes('entry-closing');
+}
+
 function convertInline(nodes) {
   return (nodes || []).map((n) => toHast(n, { allowDangerousHtml: true })).filter(Boolean);
 }
@@ -124,7 +137,7 @@ export function remarkFaqCard() {
       }
       let j = i + 2;
       const paragraphs = [];
-      while (j < children.length && children[j].type === 'paragraph') {
+      while (j < children.length && children[j].type === 'paragraph' && !isEntryClosing(children[j])) {
         paragraphs.push(children[j]);
         j++;
       }
