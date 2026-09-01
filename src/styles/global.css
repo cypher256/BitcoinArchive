@@ -1906,8 +1906,14 @@ a[href^="#"]:hover {
   margin-bottom: 0;
 }
 .qa-card .qa-question {
+  /* --color-text, not --color-accent: in dark mode --color-accent
+     (#7aa3d4) sits right next to --color-link (#7ab8ff) and reads as
+     a clickable link even though this heading is not an anchor (same
+     issue fixed for the novel timeline year labels in f3a449325).
+     font-heading (inherited from the base h3 rule) + bold weight
+     already carries the emphasis. */
   font-size: 1.05rem;
-  color: var(--color-accent);
+  color: var(--color-text);
   margin: 0 0 0.5rem;
 }
 .qa-card .qa-answer {
