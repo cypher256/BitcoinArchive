@@ -69,6 +69,7 @@
 import { readdirSync, readFileSync, statSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { slug as githubSlug } from 'github-slugger';
 import { slugifyKeyword } from '../src/lib/keyword-slug.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -126,8 +127,21 @@ function splitFrontmatter(content) {
   return { fm: content.slice(4, end), body: content.slice(end + 5) };
 }
 
+// Mirrors Astro's own glob-loader id generation (getContentEntryIdAndSlug
+// in astro/dist/content/utils.js): each path segment is run through
+// github-slugger independently, which lowercases and strips characters
+// like "." -- e.g. "bitcoin-v0.3.18-released" -> "bitcoin-v0318-released".
+// A raw path.relative() id (no slugification) silently diverges from the
+// id Astro's content collection actually resolves entries under, breaking
+// any lookup that compares against `entries[].id` (confirmed 2026-09-01:
+// 5 release-note entries with a dotted version number in their filename).
 function entryIdFromPath(absPath, base) {
-  return path.relative(base, absPath).replace(/\.md$/, '');
+  return path
+    .relative(base, absPath)
+    .replace(/\.md$/, '')
+    .split(path.sep)
+    .map((segment) => githubSlug(segment))
+    .join('/');
 }
 
 // Build a per-character context map of the body. Each char index maps
@@ -309,14 +323,19 @@ for (const { name: locale, base } of COLLECTIONS) {
   // only emit person keywords for slugs in bioSlugs. Then augment with
   // biography entries' inlineLinkKeywords as additional aliases for
   // the same primary slug.
+  //
+  // JA locale never emits the raw English `p.name` here: participants[].name
+  // is canonical metadata and STYLE_GUIDE_JA.md keeps it in English even in
+  // JA entry files ("正規メタデータ"), but JA body prose is required to use
+  // the katakana form (§I.1) -- an English-name JA keyword would then almost
+  // never match real JA prose, producing a near-duplicate, near-empty
+  // /ja/keywords/ page for every person alongside their real katakana page
+  // (confirmed: 2026-09-01, e.g. "Sergio Demian Lerner" 0 backlinks next to
+  // "セルジオ・デミアン・ラーナー" 12). Only the katakana form
+  // (jaNameMap[p.slug]) is emitted for JA; EN locale keeps emitting p.name
+  // as before.
   const personByName = new Map(); // display name -> slug
   const seenSlugs = new Set();
-  for (const ctx of entryContexts) {
-    // We need participants[].name from the original frontmatter, not
-    // just primarySlug — collect them all here.
-  }
-  // Re-walk participants from the file frontmatter (entryContexts only
-  // captured primarySlug, not all participants). Cheap enough.
   for (const file of files) {
     const { fm } = splitFrontmatter(readFileSync(file, 'utf-8'));
     for (const p of parseParticipants(fm)) {
@@ -324,10 +343,11 @@ for (const { name: locale, base } of COLLECTIONS) {
       if (seenSlugs.has(p.slug)) continue;
       seenSlugs.add(p.slug);
       if (!bioSlugs.has(p.slug)) continue; // bio-only filter
-      if (!personByName.has(p.name)) personByName.set(p.name, p.slug);
       if (locale === 'ja') {
         const ja = jaNameMap[p.slug];
         if (ja && !personByName.has(ja)) personByName.set(ja, p.slug);
+      } else if (!personByName.has(p.name)) {
+        personByName.set(p.name, p.slug);
       }
     }
   }

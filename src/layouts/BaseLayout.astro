@@ -166,7 +166,7 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
     )}
   </head>
   <body>
-    <Header lang={lang} />
+    <Header lang={lang} alternateHref={lang === 'ja' ? alternateEn : alternateJa} />
     <main>
       <slot />
     </main>

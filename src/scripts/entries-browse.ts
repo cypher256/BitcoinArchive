@@ -84,7 +84,6 @@ export function hitCard(h, ctx) {
   var header = '<div class="card-header">'
     + dateGroup(dateValues, uiLabels, L)
     + (typeLabel ? '<span class="source-badge">' + esc(typeLabel) + '</span>' : '')
-    + (type === 'biography' ? '<span class="biography-badge">' + esc(uiLabels.biography) + '</span>' : '')
     + '</div>';
   var authorEl = am.slug
     ? participantLink(am.slug, am.name, 'author-link' + (isSat ? ' satoshi' : ''), basePath, L)
@@ -136,18 +135,34 @@ export function init404Suggestions() {
   var query = slug.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/[-_]/g, ' ').trim();
   if (!query) return;
 
-  var ctx = { basePath: basePath, L: isJa, authorMeta: loc.authorMeta, slugToName: loc.slugToName,
-              typeLabels: loc.typeLabels, uiLabels: loc.uiLabels };
   var algolia = algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425');
-  algolia.search([{ indexName: loc.indexName, query: query, params: {
-    hitsPerPage: 5, highlightPreTag: '<mark>', highlightPostTag: '</mark>'
-  } }])
+  var searchParams = { hitsPerPage: 5, highlightPreTag: '<mark>', highlightPostTag: '</mark>' };
+
+  function render(hitLoc, hitIsJa, hits) {
+    var ctx = { basePath: basePath, L: hitIsJa, authorMeta: hitLoc.authorMeta, slugToName: hitLoc.slugToName,
+                typeLabels: hitLoc.typeLabels, uiLabels: hitLoc.uiLabels };
+    var list = document.getElementById('suggestions-list');
+    list.innerHTML = hits.map(function (h) { return hitCard(h, ctx); }).join('');
+    document.getElementById('suggestions').hidden = false;
+  }
+
+  algolia.search([{ indexName: loc.indexName, query: query, params: searchParams }])
     .then(function (r) {
       var hits = (r.results[0] && r.results[0].hits) || [];
-      if (!hits.length) return;
-      var list = document.getElementById('suggestions-list');
-      list.innerHTML = hits.map(function (h) { return hitCard(h, ctx); }).join('');
-      document.getElementById('suggestions').hidden = false;
+      if (hits.length) { render(loc, isJa, hits); return; }
+      // Every archive URL slug is English regardless of locale, so a broken
+      // /ja/ URL routinely full-text-matches nothing in the JA index even
+      // when the EN index has an obvious hit (or vice versa for a JA-slug
+      // query against the EN index, less common but symmetric). Fall back to
+      // the other locale rather than leaving the suggestions box empty --
+      // the reader can switch language from the linked page.
+      var fallbackLoc = cfg[isJa ? 'en' : 'ja'];
+      if (!fallbackLoc) return;
+      return algolia.search([{ indexName: fallbackLoc.indexName, query: query, params: searchParams }])
+        .then(function (r2) {
+          var hits2 = (r2.results[0] && r2.results[0].hits) || [];
+          if (hits2.length) render(fallbackLoc, !isJa, hits2);
+        });
     })
     .catch(function () {});
 }

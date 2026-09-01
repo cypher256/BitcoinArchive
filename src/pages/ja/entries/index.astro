@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
-import { useTranslations, getDisplayEntries, getEntries, absoluteUrl, findAuthorParticipant, translateParticipantName } from '../../../i18n/utils';
+import { useTranslations, getDisplayEntries, absoluteUrl, buildSuggestionsLocaleMeta } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 import { existsSync, readFileSync } from 'fs';
 import { join } from 'path';
@@ -48,30 +48,7 @@ const sourceFacets = Array.from(sourceCounts.entries()).sort((a, b) => b[1] - a[
 // 同じ著者行・バッジで描くため (Algolia 索引は EN 形の著者名・参加者名のみ保持。
 // カタカナ表記とラベルはここで解決する)。一覧から除外される人物紹介も全文検索の
 // 対象なので、全エントリー (人物紹介を含む) から構築する。
-const allEntries = await getEntries(lang);
-// 著者文字列 → { slug, name }。slug は解決済み参加者 (findAuthorParticipant、
-// ハンドル別名込み)、name は表示形 (JA はカタカナ)。editorial エントリーも対象
-// (アバターは Bitcoin Institute に固定だが、著者行は対象人物名を出す)。
-const authorMeta: Record<string, { slug: string; name: string }> = {};
-// 参加者 slug → 表示名 (JA はカタカナ)。「↔」 の共参加者用。
-const slugToName: Record<string, string> = {};
-// エントリー種別 → ローカライズしたバッジラベル。
-const typeLabels: Record<string, string> = {};
-for (const e of allEntries) {
-  const d = e.data as any;
-  if (d.author && authorMeta[d.author] === undefined) {
-    const ap = findAuthorParticipant(d.author, d.participants || []);
-    authorMeta[d.author] = {
-      slug: ap?.slug ?? '',
-      name: translateParticipantName(ap?.name ?? d.author, ap?.slug, lang),
-    };
-  }
-  for (const p of (d.participants || [])) {
-    if (slugToName[p.slug] === undefined) slugToName[p.slug] = translateParticipantName(p.name, p.slug, lang);
-  }
-  if (d.type && typeLabels[d.type] === undefined) typeLabels[d.type] = t(`type.${d.type}` as any) || d.type;
-}
-const uiLabels = { event: t('entry.event' as any), added: t('entry.added' as any), updated: t('entry.updated' as any), biography: t('entry.biography' as any) };
+const { authorMeta, slugToName, typeLabels, uiLabels } = await buildSuggestionsLocaleMeta(lang);
 
 const pageDescription = t('entries.description');
 

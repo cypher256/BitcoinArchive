@@ -152,3 +152,39 @@ export function translateTag(tag: string, lang: Lang): string {
   }
   return tag;
 }
+
+/**
+ * Per-locale byline/label metadata for rendering an Algolia hit with
+ * EntryCard's own markup (author avatar+link, co-participant names, type
+ * badge) client-side, where only the raw indexed record is available.
+ * Shared by /entries's full-text results and the 404 page's suggestions
+ * (both locales, for the JA<->EN suggestion fallback -- see
+ * scripts/entries-browse.ts's init404Suggestions).
+ */
+export async function buildSuggestionsLocaleMeta(lang: Lang) {
+  const t = useTranslations(lang);
+  const allEntries = await getEntries(lang);
+  const authorMeta: Record<string, { slug: string; name: string }> = {};
+  const slugToName: Record<string, string> = {};
+  const typeLabels: Record<string, string> = {};
+  for (const e of allEntries) {
+    const d = e.data as any;
+    if (d.author && authorMeta[d.author] === undefined) {
+      const ap = findAuthorParticipant(d.author, d.participants || []);
+      authorMeta[d.author] = {
+        slug: ap?.slug ?? '',
+        name: translateParticipantName(ap?.name ?? d.author, ap?.slug, lang),
+      };
+    }
+    for (const p of (d.participants || [])) {
+      if (slugToName[p.slug] === undefined) slugToName[p.slug] = translateParticipantName(p.name, p.slug, lang);
+    }
+    if (d.type && typeLabels[d.type] === undefined) typeLabels[d.type] = t(`type.${d.type}` as any) || d.type;
+  }
+  const uiLabels = {
+    event: t('entry.event' as any),
+    added: t('entry.added' as any),
+    updated: t('entry.updated' as any),
+  };
+  return { indexName: `bitcoin_archive_${lang}`, authorMeta, slugToName, typeLabels, uiLabels };
+}

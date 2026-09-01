@@ -1,41 +1,23 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { useTranslations, getEntries, findAuthorParticipant, translateParticipantName } from '../../i18n/utils';
+import { buildSuggestionsLocaleMeta } from '../../i18n/utils';
 
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-// Same byline/label metadata /entries computes for its full-text result
-// cards (see src/pages/ja/entries/index.astro), built here so the 404
-// page's "you might be looking for" suggestions can reuse the exact same
-// hitCard() renderer instead of a bare link list (see entries-browse.ts).
-const lang = 'ja';
-const t = useTranslations(lang);
-const allEntries = await getEntries(lang);
-const authorMeta: Record<string, { slug: string; name: string }> = {};
-const slugToName: Record<string, string> = {};
-const typeLabels: Record<string, string> = {};
-for (const e of allEntries) {
-  const d = e.data as any;
-  if (d.author && authorMeta[d.author] === undefined) {
-    const ap = findAuthorParticipant(d.author, d.participants || []);
-    authorMeta[d.author] = {
-      slug: ap?.slug ?? '',
-      name: translateParticipantName(ap?.name ?? d.author, ap?.slug, lang),
-    };
-  }
-  for (const p of (d.participants || [])) {
-    if (slugToName[p.slug] === undefined) slugToName[p.slug] = translateParticipantName(p.name, p.slug, lang);
-  }
-  if (d.type && typeLabels[d.type] === undefined) typeLabels[d.type] = t(`type.${d.type}` as any) || d.type;
-}
-const uiLabels = { event: t('entry.event' as any), added: t('entry.added' as any), updated: t('entry.updated' as any), biography: t('entry.biography' as any) };
+// Byline/label metadata so the 404 page's "you might be looking for"
+// suggestions can reuse EntryCard's own look via hitCard() (see
+// entries-browse.ts) instead of a bare link list. Cloudflare Pages resolves
+// 404s by walking up the directory tree, so this file (dist/ja/404.html) is
+// served for any unmatched path under /ja/ -- we are certain of the locale
+// here, unlike the root 404 (see its comment for why that one has to sniff
+// the path client-side). Both locales are still built: every archive URL
+// slug is English regardless of locale, so a broken /ja/ URL's slug-derived
+// query routinely finds nothing in the JA index; init404Suggestions() falls
+// back to the EN index in that case rather than showing no suggestions.
 const suggestionsConfig = {
   basePath,
-  // Cloudflare Pages resolves 404s by walking up the directory tree, so this
-  // file (dist/ja/404.html) is served for any unmatched path under /ja/ --
-  // we are certain of the locale here, unlike the root 404 (see its comment
-  // for why that one has to sniff the path client-side and carry both locales).
-  ja: { indexName: 'bitcoin_archive_ja', authorMeta, slugToName, typeLabels, uiLabels },
+  ja: await buildSuggestionsLocaleMeta('ja'),
+  en: await buildSuggestionsLocaleMeta('en'),
 };
 ---
 

@@ -6,9 +6,10 @@ import type { Lang } from '../i18n/ui';
 
 interface Props {
   lang: Lang;
+  alternateHref?: string;
 }
 
-const { lang } = Astro.props;
+const { lang, alternateHref } = Astro.props;
 const t = useTranslations(lang);
 ---
 
@@ -55,7 +56,7 @@ const t = useTranslations(lang);
         </svg>
         {t('nav.search')}
       </a>
-      <LanguageSwitch lang={lang} />
+      <LanguageSwitch lang={lang} alternateHref={alternateHref} />
       {/*
         3-way mode toggle (light → dark → system → light …).
         - State lives on `localStorage.mode` ('light' | 'dark' | absent).

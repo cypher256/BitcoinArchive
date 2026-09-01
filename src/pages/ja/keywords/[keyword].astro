@@ -18,6 +18,7 @@ export async function getStaticPaths() {
   const out: Array<{ params: { keyword: string }; props: { keyword: string; enSlug?: string; sortAxis: SortAxis; prevKeyword: SiblingRef | null; nextKeyword: SiblingRef | null } }> = [];
   const enSlugs: Record<string, string> = keywordIndex.en?.slugs ?? {};
   const jaSlugs: Record<string, string> = keywordIndex.ja?.slugs ?? {};
+  const jaPersonIndex = keywordIndex.ja?.person ?? {};
   // Build target -> EN slug index so we can locate the EN mirror page.
   const enSlugByTarget = new Map<string, string>();
   for (const [s, kw] of Object.entries(enSlugs)) {
@@ -33,12 +34,13 @@ export async function getStaticPaths() {
   // backlinks there gave a different axis than the EN mirror for the
   // same keyword in several cases). See dateAxis.ts.
   const enEntries = await getEntries('en');
-  // Prev/next siblings, ordered alphabetically by JA keyword text -- see
-  // EN mirror src/pages/keywords/[keyword].astro for the rationale.
+  // Prev/next siblings, ordered alphabetically by the JA keyword string.
+  // Person keywords are already katakana here (generate-keyword-index.mjs
+  // emits only the translated form for JA), so the raw keyword-index
+  // string is already the correct reader-facing display order.
   const sortedSlugs = Object.keys(jaSlugs).sort((a, b) => jaSlugs[a].localeCompare(jaSlugs[b], 'ja'));
   for (const [slug, keyword] of Object.entries(jaSlugs)) {
-    const target = (keywordIndex.ja?.concept ?? {})[keyword] ||
-      (keywordIndex.ja?.person ?? {})[keyword];
+    const target = (keywordIndex.ja?.concept ?? {})[keyword] || jaPersonIndex[keyword];
     const enSlug = target ? enSlugByTarget.get(target) : undefined;
     const enKeyword = enSlug ? enSlugs[enSlug] : undefined;
     const enBacklinkIds = enKeyword ? (keywordIndex.en?.backlinks?.[enKeyword] ?? []) : [];

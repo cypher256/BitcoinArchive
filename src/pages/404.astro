@@ -1,44 +1,23 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ui } from '../i18n/ui';
-import { useTranslations, getEntries, findAuthorParticipant, translateParticipantName } from '../i18n/utils';
+import { buildSuggestionsLocaleMeta } from '../i18n/utils';
 
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-// Same byline/label metadata /entries computes for its full-text result
-// cards (see src/pages/entries/index.astro), built here for BOTH locales so
-// the 404 page's "you might be looking for" suggestions can reuse the exact
-// same hitCard() renderer instead of a bare link list (see entries-browse.ts).
-// Both locales are needed because this single static file is also the flat
+// Byline/label metadata for both locales, so the 404 page's "you might be
+// looking for" suggestions can reuse EntryCard's own look via hitCard()
+// (see entries-browse.ts) instead of a bare link list. Both locales are
+// needed for two reasons: (1) this single static file is also the flat
 // fallback GitHub Pages serves for broken /ja/* paths -- which locale to
-// suggest from is only known once the client reads location.pathname.
-async function buildSuggestionsLocale(lang: 'en' | 'ja') {
-  const t = useTranslations(lang);
-  const allEntries = await getEntries(lang);
-  const authorMeta: Record<string, { slug: string; name: string }> = {};
-  const slugToName: Record<string, string> = {};
-  const typeLabels: Record<string, string> = {};
-  for (const e of allEntries) {
-    const d = e.data as any;
-    if (d.author && authorMeta[d.author] === undefined) {
-      const ap = findAuthorParticipant(d.author, d.participants || []);
-      authorMeta[d.author] = {
-        slug: ap?.slug ?? '',
-        name: translateParticipantName(ap?.name ?? d.author, ap?.slug, lang),
-      };
-    }
-    for (const p of (d.participants || [])) {
-      if (slugToName[p.slug] === undefined) slugToName[p.slug] = translateParticipantName(p.name, p.slug, lang);
-    }
-    if (d.type && typeLabels[d.type] === undefined) typeLabels[d.type] = t(`type.${d.type}` as any) || d.type;
-  }
-  const uiLabels = { event: t('entry.event' as any), added: t('entry.added' as any), updated: t('entry.updated' as any), biography: t('entry.biography' as any) };
-  return { indexName: `bitcoin_archive_${lang}`, authorMeta, slugToName, typeLabels, uiLabels };
-}
+// suggest from is only known once the client reads location.pathname; (2)
+// init404Suggestions() falls back to the other locale's index when the
+// reader's own locale has zero hits (a moved/renamed page's URL slug is
+// always English, which won't full-text-match a JA index).
 const suggestionsConfig = {
   basePath,
-  en: await buildSuggestionsLocale('en'),
-  ja: await buildSuggestionsLocale('ja'),
+  en: await buildSuggestionsLocaleMeta('en'),
+  ja: await buildSuggestionsLocaleMeta('ja'),
 };
 
 // Header and Footer are shared components that render correctly by lang

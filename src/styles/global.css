@@ -997,22 +997,6 @@ blockquote > .quote-speaker-tag:first-child {
   font-size: 0.75rem;
   white-space: nowrap;
 }
-/* color was a hardcoded #fff at opacity 0.7 — on the dark-theme's lighter
-   --color-text-muted background that measured 2.35:1. --color-accent-contrast
-   already flips to a dark tone on the dark background where a light
-   background (--color-accent, --color-text-muted) needs dark text, so it
-   fits this badge too (6.72:1 dark, 6.01:1 light) — opacity is no longer
-   needed to convey "muted", the background colour already does that. */
-.entry-card .biography-badge {
-  display: inline-block;
-  padding: 0.1em 0.5em;
-  background: var(--color-text-muted);
-  color: var(--color-accent-contrast);
-  border-radius: 3px;
-  font-weight: 600;
-  font-size: 0.75rem;
-  white-space: nowrap;
-}
 .entry-card .card-title-row {
   display: flex;
   align-items: center;

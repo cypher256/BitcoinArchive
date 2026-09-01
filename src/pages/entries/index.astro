@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
-import { useTranslations, getDisplayEntries, getEntries, absoluteUrl, findAuthorParticipant, translateParticipantName } from '../../i18n/utils';
+import { useTranslations, getDisplayEntries, absoluteUrl, buildSuggestionsLocaleMeta } from '../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
 import { existsSync, readFileSync } from 'fs';
 import { join } from 'path';
@@ -47,31 +47,7 @@ const sourceFacets = Array.from(sourceCounts.entries()).sort((a, b) => b[1] - a[
 // author / participant names; katakana and localized labels are resolved here.
 // Built over ALL entries — including biographies, which are indexed for
 // full-text search even though they are excluded from the browse list.
-const allEntries = await getEntries(lang);
-// author string → { slug, name }. slug is the resolved participant (via the
-// full findAuthorParticipant, incl. handle aliases); name is the display form
-// (katakana on JA). Covers editorial entries too — the avatar forces Bitcoin
-// Institute, but the byline still shows the subject's name (per EntryCard).
-const authorMeta: Record<string, { slug: string; name: string }> = {};
-// participant slug → display name (katakana on JA), for the "↔" co-participants.
-const slugToName: Record<string, string> = {};
-// entry type → localized badge label.
-const typeLabels: Record<string, string> = {};
-for (const e of allEntries) {
-  const d = e.data as any;
-  if (d.author && authorMeta[d.author] === undefined) {
-    const ap = findAuthorParticipant(d.author, d.participants || []);
-    authorMeta[d.author] = {
-      slug: ap?.slug ?? '',
-      name: translateParticipantName(ap?.name ?? d.author, ap?.slug, lang),
-    };
-  }
-  for (const p of (d.participants || [])) {
-    if (slugToName[p.slug] === undefined) slugToName[p.slug] = translateParticipantName(p.name, p.slug, lang);
-  }
-  if (d.type && typeLabels[d.type] === undefined) typeLabels[d.type] = t(`type.${d.type}` as any) || d.type;
-}
-const uiLabels = { event: t('entry.event' as any), added: t('entry.added' as any), updated: t('entry.updated' as any), biography: t('entry.biography' as any) };
+const { authorMeta, slugToName, typeLabels, uiLabels } = await buildSuggestionsLocaleMeta(lang);
 
 const pageDescription = t('entries.description');
 

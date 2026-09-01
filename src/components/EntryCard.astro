@@ -34,10 +34,20 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 const isBiography = entryType === 'biography';
 const t = useTranslations(lang);
 const typeLabel = entryType ? (t(`type.${entryType}` as any) || entryType) : (t(`source.${source}` as any) || source);
-const href = threadId
-  ? localePath(`/entries/threads/${threadId}/`, lang)
-  : localePath(`/entries/${id}/`, lang);
 const authorParticipant = findAuthorParticipant(author, participants);
+// A biography has no /entries/{id}/ page — its body renders inside the
+// subject's /participants/{slug}/ page instead (entries/[...slug].astro
+// filters biographies out of getStaticPaths; see STYLE_GUIDE_CORE.md §
+// Frontmatter `author` semantics). Link there instead, same target
+// algolia-index.mjs builds for a biography record. participants[0] is the
+// documented fallback (matches getBiographyForParticipant) for the rare
+// case authorParticipant doesn't resolve.
+const biographySubjectSlug = authorParticipant?.slug ?? participants[0]?.slug;
+const href = isBiography && biographySubjectSlug
+  ? localePath(`/participants/${biographySubjectSlug}/`, lang)
+  : threadId
+    ? localePath(`/entries/threads/${threadId}/`, lang)
+    : localePath(`/entries/${id}/`, lang);
 const otherParticipants = authorParticipant
   ? participants.filter((p) => p.slug !== authorParticipant.slug)
   : participants.filter((p) => p.name !== author);
@@ -87,9 +97,6 @@ const filterText = [title, displayAuthor, description, ...participants.map((p) =
       <span class="source-badge">{typeLabel}</span>
       {threadCount && threadCount >= 2 && (
         <span class="thread-badge">{threadCount} {t('entry.messages' as any)}</span>
-      )}
-      {isBiography && (
-        <span class="biography-badge">{t('entry.biography' as any)}</span>
       )}
     </div>
     <div class="card-title-row">

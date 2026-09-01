@@ -1,15 +1,29 @@
 ---
 import { languages, type Lang } from '../i18n/ui';
+import { PRIMARY_ORIGIN } from '../lib/constants';
 
 interface Props {
   lang: Lang;
+  /** Absolute counterpart URL for this exact page, e.g. the same value
+      passed to BaseLayout's `alternateEn`/`alternateJa` (built via
+      `absoluteUrl()`, so it's always PRIMARY_ORIGIN-rooted regardless of
+      the current host/base). Most page types don't set this because a
+      naive path swap already produces the right link -- every locale
+      shares the same slug for entries, threads, tags, types, sources.
+      Person-type keyword pages are the one case where the JA slug
+      (katakana, translated) and EN slug (the English name) are
+      deliberately different strings, so the naive swap 404s; passing the
+      already-computed alternate here fixes exactly that case without
+      touching any page where the naive swap was already correct. */
+  alternateHref?: string;
 }
 
-const { lang } = Astro.props;
+const { lang, alternateHref } = Astro.props;
 const { pathname } = Astro.url;
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 function getAlternatePath(targetLang: Lang): string {
+  if (alternateHref) return `${basePath}${alternateHref.replace(PRIMARY_ORIGIN, '')}`;
   const pathWithoutBase = pathname.replace(basePath, '');
   if (targetLang === 'ja') {
     return `${basePath}/ja${pathWithoutBase === '' ? '/' : pathWithoutBase}`;
