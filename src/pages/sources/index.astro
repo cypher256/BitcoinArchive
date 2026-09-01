@@ -50,14 +50,19 @@ const structuredData = {
       </div>
     </div>
     <ul class="source-list" id="sort-list">
-      {sources.map(([source, count]) => (
-        <li data-name={t(`source.${source}` as any) || source} data-count={count}>
+      {sources.map(([source, count]) => {
+        const sourceLabel = t(`source.${source}` as any) || source;
+        const sourceDescription = t(`source.${source}.description` as any);
+        return (
+        <li data-name={sourceLabel} data-count={count} data-filter={`${sourceLabel} ${sourceDescription}`.toLowerCase()}>
           <a href={localePath(`/sources/${source}/`, lang)}>
-            {t(`source.${source}` as any) || source}
+            {sourceLabel}
           </a>
           <span class="count">({count})</span>
+          <p class="source-description">{sourceDescription}</p>
         </li>
-      ))}
+        );
+      })}
     </ul>
   </div>
 </BaseLayout>
@@ -128,8 +133,8 @@ const structuredData = {
       var q = filterInput.value.toLowerCase();
       var items = list.querySelectorAll('li');
       items.forEach(function(item) {
-        var name = (item.dataset.name || '').toLowerCase();
-        item.style.display = name.indexOf(q) !== -1 ? '' : 'none';
+        var haystack = item.dataset.filter || (item.dataset.name || '').toLowerCase();
+        item.style.display = haystack.indexOf(q) !== -1 ? '' : 'none';
       });
     });
   }
@@ -149,5 +154,11 @@ const structuredData = {
   .count {
     color: var(--color-text-muted);
     font-size: 0.9rem;
+  }
+  .source-description {
+    margin: 0.35rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
   }
 </style>
