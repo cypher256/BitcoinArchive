@@ -608,12 +608,17 @@ interface CodeGrowthPoint {
   }
 
   .trait-category-label {
+    /* --color-text, not --color-accent: in dark mode --color-accent
+       (#7aa3d4) sits next to --color-link (#7ab8ff) and this
+       non-link heading would read as clickable (same fix as
+       f3a449325 / 8643cca36). Uppercase + letter-spacing + weight
+       already carry the label's emphasis. */
     font-family: var(--font-heading);
     font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: var(--color-accent);
+    color: var(--color-text);
     margin: 0 0 0.75em 0;
   }
 

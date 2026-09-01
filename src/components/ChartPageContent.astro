@@ -178,9 +178,13 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
     border-style: dashed;
   }
   .halving-card-reward {
+    /* --color-text, not --color-accent: in dark mode --color-accent
+       (#7aa3d4) sits next to --color-link (#7ab8ff) and this static
+       stat number would read as clickable when it is not (same fix
+       as f3a449325 / 8643cca36). Size + weight already carry emphasis. */
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--color-accent);
+    color: var(--color-text);
     line-height: 1.2;
   }
   .halving-card-reward span {
