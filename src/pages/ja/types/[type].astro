@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
-import { useTranslations, getDisplayEntries, absoluteUrl } from '../../../i18n/utils';
+import PrevNextNav from '../../../components/PrevNextNav.astro';
+import { useTranslations, getDisplayEntries, absoluteUrl, localePath } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 import { defaultSortAxis, byDateAxisDesc } from '../../../lib/dateAxis';
+import { siblingPrevNext } from '../../../lib/siblingNav';
 import gitDates from '../../../data/git-dates.json';
 
 type LangDate = { createdAt: string; updatedAt: string };
@@ -19,15 +21,24 @@ export async function getStaticPaths() {
   const types = [...new Set(entries.map((e) => e.data.type))];
   const enEntries = await getDisplayEntries('en');
   const enTypes = new Set(enEntries.map((e) => e.data.type));
-  return types.map((type) => ({
-    params: { type },
-    props: { type, hasEn: enTypes.has(type) },
-  }));
+  // Prev/next siblings, ordered alphabetically by JA display label -- see
+  // EN mirror src/pages/types/[type].astro for the rationale.
+  const t = useTranslations('ja');
+  const sortedTypes = [...types].sort((a, b) =>
+    (t(`type.${a}` as any) || a).localeCompare(t(`type.${b}` as any) || b, 'ja')
+  );
+  return types.map((type) => {
+    const { prev: prevType, next: nextType } = siblingPrevNext(sortedTypes, type);
+    return {
+      params: { type },
+      props: { type, hasEn: enTypes.has(type), prevType, nextType },
+    };
+  });
 }
 
 const lang = 'ja';
 const t = useTranslations(lang);
-const { type, hasEn } = Astro.props;
+const { type, hasEn, prevType, nextType } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.type === type);
@@ -82,6 +93,11 @@ const structuredData = {
   structuredData={structuredData}
 >
   <div class="container-wide">
+    <PrevNextNav
+      top
+      prev={prevType && { href: localePath(`/types/${prevType}/`, lang), label: t(`type.${prevType}` as any) || prevType }}
+      next={nextType && { href: localePath(`/types/${nextType}/`, lang), label: t(`type.${nextType}` as any) || nextType }}
+    />
     <h1>{typeLabel}</h1>
     <p class="page-lead">この形式（タイプ）のエントリー集約。形式軸で時間を追うと、ビットコイン黎明期のコミュニケーション様式の変遷が見えます。</p>
     <div class="filter-row">

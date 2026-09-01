@@ -11,6 +11,7 @@ import SatoshiHoldingsComparison from '../../../components/SatoshiHoldingsCompar
 import WhaleAlertFortune from '../../../components/WhaleAlertFortune.astro';
 import DesignSeriesNav from '../../../components/DesignSeriesNav.astro';
 import ParentLink from '../../../components/ParentLink.astro';
+import PrevNextNav from '../../../components/PrevNextNav.astro';
 import { DESIGN_SERIES } from '../../../data/design-series';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from '../../../i18n/utils';
@@ -190,18 +191,11 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
   hasMath={hasMath}
 >
   <article class="container">
-    <nav class="entry-nav entry-nav-top">
-      {prev && (
-        <a href={localePath(`/entries/${prev.id}/`, lang)} class="nav-prev">
-          &larr; {prev.data.title}
-        </a>
-      )}
-      {next && (
-        <a href={localePath(`/entries/${next.id}/`, lang)} class="nav-next">
-          {next.data.title} &rarr;
-        </a>
-      )}
-    </nav>
+    <PrevNextNav
+      top
+      prev={prev && { href: localePath(`/entries/${prev.id}/`, lang), label: prev.data.title }}
+      next={next && { href: localePath(`/entries/${next.id}/`, lang), label: next.data.title }}
+    />
     <header class="entry-header">
       <div class="entry-title-row">
         {titleAvatarSlug && (titleAvatarHref ? (
@@ -314,18 +308,10 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
       entryType={entry.data.type}
     />
 
-    <nav class="entry-nav">
-      {prev && (
-        <a href={localePath(`/entries/${prev.id}/`, lang)} class="nav-prev">
-          &larr; {prev.data.title}
-        </a>
-      )}
-      {next && (
-        <a href={localePath(`/entries/${next.id}/`, lang)} class="nav-next">
-          {next.data.title} &rarr;
-        </a>
-      )}
-    </nav>
+    <PrevNextNav
+      prev={prev && { href: localePath(`/entries/${prev.id}/`, lang), label: prev.data.title }}
+      next={next && { href: localePath(`/entries/${next.id}/`, lang), label: next.data.title }}
+    />
   </article>
 
   {isEditorialType && <ChartEmbedRuntime />}
@@ -351,24 +337,6 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
      global.css, shared with the EN mirror of this template — see the
      rule there for the full rationale. */
   .entry-content { line-height: 1.8; }
-  .entry-nav {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 2.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--color-border);
-    font-family: var(--font-heading);
-    font-size: 0.9rem;
-  }
-  .entry-nav-top {
-    margin-top: 0;
-    padding-top: 1rem;
-    border-top: none;
-    margin-bottom: 0;
-  }
-  .nav-prev, .nav-next { max-width: 45%; }
-  .nav-next { margin-left: auto; text-align: right; }
   .thread-banner {
     /* --rhythm-block (global.css): shared with .related-entries
        and .source-citation so end-of-article spacing collapses

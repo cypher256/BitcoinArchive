@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
+import PrevNextNav from '../../components/PrevNextNav.astro';
 import { useTranslations, getDisplayEntries, absoluteUrl, localePath } from '../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
 import { defaultSortAxis, dominantType, byDateAxisDesc } from '../../lib/dateAxis';
+import { siblingPrevNext } from '../../lib/siblingNav';
 import gitDates from '../../data/git-dates.json';
 
 type LangDate = { createdAt: string; updatedAt: string };
@@ -33,15 +35,21 @@ export async function getStaticPaths() {
       jaTags.add(tag);
     }
   }
-  return Array.from(tags).map((tag) => ({
-    params: { tag },
-    props: { tag, hasJa: jaTags.has(tag), sortAxis: defaultSortAxis(dominantType(typesByTag.get(tag) ?? [])) },
-  }));
+  // Prev/next siblings, ordered alphabetically by tag text -- see
+  // src/pages/sources/[source].astro for the rationale.
+  const sortedTags = Array.from(tags).sort((a, b) => a.localeCompare(b));
+  return Array.from(tags).map((tag) => {
+    const { prev: prevTag, next: nextTag } = siblingPrevNext(sortedTags, tag);
+    return {
+      params: { tag },
+      props: { tag, hasJa: jaTags.has(tag), sortAxis: defaultSortAxis(dominantType(typesByTag.get(tag) ?? [])), prevTag, nextTag },
+    };
+  });
 }
 
 const lang = 'en';
 const t = useTranslations(lang);
-const { tag, hasJa, sortAxis } = Astro.props;
+const { tag, hasJa, sortAxis, prevTag, nextTag } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadCounts, threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => (e.data.tags ?? []).includes(tag));
@@ -95,6 +103,11 @@ const structuredData = {
   structuredData={structuredData}
 >
   <div class="container-wide">
+    <PrevNextNav
+      top
+      prev={prevTag ? { href: localePath(`/tags/${prevTag}/`, lang), label: prevTag } : null}
+      next={nextTag ? { href: localePath(`/tags/${nextTag}/`, lang), label: nextTag } : null}
+    />
     <h1>{tag}</h1>
     <p class="page-lead">Entries tagged with this topic. Spans across types and sources — explore connections between people, events, and themes.</p>
     <div class="filter-row">

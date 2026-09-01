@@ -1,10 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import EntryCard from '../../components/EntryCard.astro';
+import PrevNextNav from '../../components/PrevNextNav.astro';
 import { useTranslations, getEntries, localePath, absoluteUrl } from '../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../data/threads';
 import { keywordIndex } from '../../lib/keyword-index';
 import { defaultSortAxis, dominantType, byDateAxisDesc } from '../../lib/dateAxis';
+import { siblingPrevNext } from '../../lib/siblingNav';
 import gitDates from '../../data/git-dates.json';
 
 type LangDate = { createdAt: string; updatedAt: string };
@@ -12,7 +14,8 @@ type GitDateRecord = { en?: LangDate; ja?: LangDate };
 const gitDateMap = gitDates as Record<string, GitDateRecord>;
 
 export async function getStaticPaths() {
-  const out: Array<{ params: { keyword: string }; props: { keyword: string; jaSlug?: string } }> = [];
+  type SiblingRef = { slug: string; label: string };
+  const out: Array<{ params: { keyword: string }; props: { keyword: string; jaSlug?: string; prevKeyword: SiblingRef | null; nextKeyword: SiblingRef | null } }> = [];
   // For each EN slug, look up the corresponding JA slug pointing at the
   // same target so the language switcher can wire across.
   const enSlugs: Record<string, string> = keywordIndex.en?.slugs ?? {};
@@ -24,18 +27,30 @@ export async function getStaticPaths() {
       (keywordIndex.ja?.person ?? {})[kw];
     if (target && !jaSlugByTarget.has(target)) jaSlugByTarget.set(target, s);
   }
+  // Prev/next siblings, ordered alphabetically by keyword text -- see
+  // src/pages/sources/[source].astro for the rationale.
+  const sortedSlugs = Object.keys(enSlugs).sort((a, b) => enSlugs[a].localeCompare(enSlugs[b]));
   for (const [slug, keyword] of Object.entries(enSlugs)) {
     const target = (keywordIndex.en?.concept ?? {})[keyword] ||
       (keywordIndex.en?.person ?? {})[keyword];
     const jaSlug = target ? jaSlugByTarget.get(target) : undefined;
-    out.push({ params: { keyword: slug }, props: { keyword, jaSlug } });
+    const { prev: prevSlug, next: nextSlug } = siblingPrevNext(sortedSlugs, slug);
+    out.push({
+      params: { keyword: slug },
+      props: {
+        keyword,
+        jaSlug,
+        prevKeyword: prevSlug ? { slug: prevSlug, label: enSlugs[prevSlug] } : null,
+        nextKeyword: nextSlug ? { slug: nextSlug, label: enSlugs[nextSlug] } : null,
+      },
+    });
   }
   return out;
 }
 
 const lang = 'en';
 const t = useTranslations(lang);
-const { keyword, jaSlug } = Astro.props;
+const { keyword, jaSlug, prevKeyword, nextKeyword } = Astro.props;
 
 const localeData = keywordIndex.en;
 const conceptTarget = localeData.concept[keyword];
@@ -75,6 +90,11 @@ const pageDescription =
   alternateJa={jaSlug ? absoluteUrl(`/keywords/${jaSlug}/`, 'ja') : undefined}
 >
   <div class="container-wide">
+    <PrevNextNav
+      top
+      prev={prevKeyword && { href: localePath(`/keywords/${prevKeyword.slug}/`, lang), label: prevKeyword.label }}
+      next={nextKeyword && { href: localePath(`/keywords/${nextKeyword.slug}/`, lang), label: nextKeyword.label }}
+    />
     <h1>{keyword}</h1>
     <p class="page-lead">
       Keyword reference — entries that mention this term in body prose.

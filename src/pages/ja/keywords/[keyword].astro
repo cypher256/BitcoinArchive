@@ -1,10 +1,12 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
+import PrevNextNav from '../../../components/PrevNextNav.astro';
 import { useTranslations, getEntries, localePath, absoluteUrl } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 import { keywordIndex } from '../../../lib/keyword-index';
 import { defaultSortAxis, dominantType, byDateAxisDesc, type SortAxis } from '../../../lib/dateAxis';
+import { siblingPrevNext } from '../../../lib/siblingNav';
 import gitDates from '../../../data/git-dates.json';
 
 type LangDate = { createdAt: string; updatedAt: string };
@@ -12,7 +14,8 @@ type GitDateRecord = { en?: LangDate; ja?: LangDate };
 const gitDateMap = gitDates as Record<string, GitDateRecord>;
 
 export async function getStaticPaths() {
-  const out: Array<{ params: { keyword: string }; props: { keyword: string; enSlug?: string; sortAxis: SortAxis } }> = [];
+  type SiblingRef = { slug: string; label: string };
+  const out: Array<{ params: { keyword: string }; props: { keyword: string; enSlug?: string; sortAxis: SortAxis; prevKeyword: SiblingRef | null; nextKeyword: SiblingRef | null } }> = [];
   const enSlugs: Record<string, string> = keywordIndex.en?.slugs ?? {};
   const jaSlugs: Record<string, string> = keywordIndex.ja?.slugs ?? {};
   // Build target -> EN slug index so we can locate the EN mirror page.
@@ -30,6 +33,9 @@ export async function getStaticPaths() {
   // backlinks there gave a different axis than the EN mirror for the
   // same keyword in several cases). See dateAxis.ts.
   const enEntries = await getEntries('en');
+  // Prev/next siblings, ordered alphabetically by JA keyword text -- see
+  // EN mirror src/pages/keywords/[keyword].astro for the rationale.
+  const sortedSlugs = Object.keys(jaSlugs).sort((a, b) => jaSlugs[a].localeCompare(jaSlugs[b], 'ja'));
   for (const [slug, keyword] of Object.entries(jaSlugs)) {
     const target = (keywordIndex.ja?.concept ?? {})[keyword] ||
       (keywordIndex.ja?.person ?? {})[keyword];
@@ -37,14 +43,24 @@ export async function getStaticPaths() {
     const enKeyword = enSlug ? enSlugs[enSlug] : undefined;
     const enBacklinkIds = enKeyword ? (keywordIndex.en?.backlinks?.[enKeyword] ?? []) : [];
     const backlinkTypes = enEntries.filter((e) => enBacklinkIds.includes(e.id)).map((e) => e.data.type);
-    out.push({ params: { keyword: slug }, props: { keyword, enSlug, sortAxis: defaultSortAxis(dominantType(backlinkTypes)) } });
+    const { prev: prevSlug, next: nextSlug } = siblingPrevNext(sortedSlugs, slug);
+    out.push({
+      params: { keyword: slug },
+      props: {
+        keyword,
+        enSlug,
+        sortAxis: defaultSortAxis(dominantType(backlinkTypes)),
+        prevKeyword: prevSlug ? { slug: prevSlug, label: jaSlugs[prevSlug] } : null,
+        nextKeyword: nextSlug ? { slug: nextSlug, label: jaSlugs[nextSlug] } : null,
+      },
+    });
   }
   return out;
 }
 
 const lang = 'ja';
 const t = useTranslations(lang);
-const { keyword, enSlug, sortAxis } = Astro.props;
+const { keyword, enSlug, sortAxis, prevKeyword, nextKeyword } = Astro.props;
 
 const localeData = keywordIndex.ja;
 const conceptTarget = localeData.concept[keyword];
@@ -80,6 +96,11 @@ const pageDescription =
   alternateEn={enSlug ? absoluteUrl(`/keywords/${enSlug}/`, 'en') : undefined}
 >
   <div class="container-wide">
+    <PrevNextNav
+      top
+      prev={prevKeyword && { href: localePath(`/keywords/${prevKeyword.slug}/`, lang), label: prevKeyword.label }}
+      next={nextKeyword && { href: localePath(`/keywords/${nextKeyword.slug}/`, lang), label: nextKeyword.label }}
+    />
     <h1>{keyword}</h1>
     <p class="page-lead">
       キーワード参照 — このワードを本文で言及しているエントリー。

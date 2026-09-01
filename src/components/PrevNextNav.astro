@@ -1,0 +1,55 @@
+---
+// Shared prev/next navigation bar. Used both above the header (top=true,
+// no top border/margin, flush against BaseLayout's breadcrumbs) and below
+// the body content (top=false, bordered divider) on entry, thread, source,
+// type, tag, and keyword pages -- one definition instead of duplicating
+// the same markup and CSS per page template.
+interface NavLink {
+  href: string;
+  label: string;
+}
+interface Props {
+  prev?: NavLink | null;
+  next?: NavLink | null;
+  top?: boolean;
+}
+const { prev = null, next = null, top = false } = Astro.props;
+---
+
+{(prev || next) && (
+  <nav class:list={['entry-nav', { 'entry-nav-top': top }]}>
+    {prev && (
+      <a href={prev.href} class="nav-prev">&larr; {prev.label}</a>
+    )}
+    {next && (
+      <a href={next.href} class="nav-next">{next.label} &rarr;</a>
+    )}
+  </nav>
+)}
+
+<style>
+  .entry-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+  }
+  .nav-prev,
+  .nav-next {
+    max-width: 45%;
+  }
+  .entry-nav-top {
+    margin-top: 0;
+    padding-top: 1rem;
+    border-top: none;
+    margin-bottom: 0;
+  }
+  .nav-next {
+    margin-left: auto;
+    text-align: right;
+  }
+</style>

@@ -11,6 +11,7 @@ import SatoshiHoldingsComparison from '../../components/SatoshiHoldingsCompariso
 import WhaleAlertFortune from '../../components/WhaleAlertFortune.astro';
 import DesignSeriesNav from '../../components/DesignSeriesNav.astro';
 import ParentLink from '../../components/ParentLink.astro';
+import PrevNextNav from '../../components/PrevNextNav.astro';
 import { DESIGN_SERIES } from '../../data/design-series';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from '../../i18n/utils';
@@ -185,18 +186,11 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
   hasMath={hasMath}
 >
   <article class="container">
-    <nav class="entry-nav entry-nav-top">
-      {prev && (
-        <a href={localePath(`/entries/${prev.id}/`, lang)} class="nav-prev">
-          &larr; {prev.data.title}
-        </a>
-      )}
-      {next && (
-        <a href={localePath(`/entries/${next.id}/`, lang)} class="nav-next">
-          {next.data.title} &rarr;
-        </a>
-      )}
-    </nav>
+    <PrevNextNav
+      top
+      prev={prev && { href: localePath(`/entries/${prev.id}/`, lang), label: prev.data.title }}
+      next={next && { href: localePath(`/entries/${next.id}/`, lang), label: next.data.title }}
+    />
     <header class="entry-header">
       <div class="entry-title-row">
         {titleAvatarSlug && (titleAvatarHref ? (
@@ -309,18 +303,10 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
       entryType={entry.data.type}
     />
 
-    <nav class="entry-nav">
-      {prev && (
-        <a href={localePath(`/entries/${prev.id}/`, lang)} class="nav-prev">
-          &larr; {prev.data.title}
-        </a>
-      )}
-      {next && (
-        <a href={localePath(`/entries/${next.id}/`, lang)} class="nav-next">
-          {next.data.title} &rarr;
-        </a>
-      )}
-    </nav>
+    <PrevNextNav
+      prev={prev && { href: localePath(`/entries/${prev.id}/`, lang), label: prev.data.title }}
+      next={next && { href: localePath(`/entries/${next.id}/`, lang), label: next.data.title }}
+    />
   </article>
 
   {isEditorialType && <ChartEmbedRuntime />}
@@ -354,29 +340,6 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
      used to silently override the global Satoshi accent because the
      scoped parent class bumped specificity above the data-speaker
      selector. Removed to let global.css win unchanged. */
-  .entry-nav {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 2.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--color-border);
-    font-family: var(--font-heading);
-    font-size: 0.9rem;
-  }
-  .nav-prev, .nav-next {
-    max-width: 45%;
-  }
-  .entry-nav-top {
-    margin-top: 0;
-    padding-top: 1rem;
-    border-top: none;
-    margin-bottom: 0;
-  }
-  .nav-next {
-    margin-left: auto;
-    text-align: right;
-  }
   .thread-banner {
     /* --rhythm-block (global.css): shared with .related-entries
        and .source-citation so end-of-article spacing collapses

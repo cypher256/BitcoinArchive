@@ -1,11 +1,13 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EntryCard from '../../../components/EntryCard.astro';
+import PrevNextNav from '../../../components/PrevNextNav.astro';
 import { useTranslations, getDisplayEntries, absoluteUrl, localePath, findAuthorParticipant, formatDate, translateParticipantName } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
 import { defaultSortAxis, dominantType, byDateAxisDesc } from '../../../lib/dateAxis';
 import { buildMinimap } from '../../../lib/minimap';
 import { avatarBackground } from '../../../data/avatars';
+import { siblingPrevNext } from '../../../lib/siblingNav';
 import gitDates from '../../../data/git-dates.json';
 
 type LangDate = { createdAt: string; updatedAt: string };
@@ -18,22 +20,29 @@ export async function getStaticPaths() {
   const sources = [...new Set(entries.map((e) => e.data.source))];
   const enEntries = await getDisplayEntries('en');
   const enSources = new Set(enEntries.map((e) => e.data.source));
+  // Prev/next siblings, ordered alphabetically by JA display label -- see
+  // EN mirror src/pages/sources/[source].astro for the rationale.
+  const t = useTranslations('ja');
+  const sortedSources = [...sources].sort((a, b) =>
+    (t(`source.${a}` as any) || a).localeCompare(t(`source.${b}` as any) || b, 'ja')
+  );
   return sources.map((source) => {
     // Default sort axis from this source's dominant `type`, computed from
     // the EN corpus (language-independent source of truth for `type`) —
     // see EN mirror src/pages/sources/[source].astro and dateAxis.ts.
     const sourceTypes = enEntries.filter((e) => e.data.source === source).map((e) => e.data.type);
     const sortAxis = defaultSortAxis(dominantType(sourceTypes));
+    const { prev: prevSource, next: nextSource } = siblingPrevNext(sortedSources, source);
     return {
       params: { source },
-      props: { source, hasEn: enSources.has(source), sortAxis },
+      props: { source, hasEn: enSources.has(source), sortAxis, prevSource, nextSource },
     };
   });
 }
 
 const lang = 'ja';
 const t = useTranslations(lang);
-const { source, hasEn, sortAxis } = Astro.props;
+const { source, hasEn, sortAxis, prevSource, nextSource } = Astro.props;
 const entries = await getDisplayEntries(lang);
 const { threadStarters, threadTitles } = buildThreadInfo(entries, lang);
 const filtered = entries.filter((e) => e.data.source === source);
@@ -143,6 +152,11 @@ const structuredData = {
   structuredData={structuredData}
 >
   <div class="container-wide">
+    <PrevNextNav
+      top
+      prev={prevSource ? { href: localePath(`/sources/${prevSource}/`, lang), label: t(`source.${prevSource}` as any) || prevSource } : null}
+      next={nextSource ? { href: localePath(`/sources/${nextSource}/`, lang), label: t(`source.${nextSource}` as any) || nextSource } : null}
+    />
     <h1>{sourceLabel}</h1>
     <p class="page-lead">{pageDescription}</p>
     {minimap.points.length >= 2 && (
