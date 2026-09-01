@@ -9,13 +9,21 @@ interface Props {
       `absoluteUrl()`, so it's always PRIMARY_ORIGIN-rooted regardless of
       the current host/base). Most page types don't set this because a
       naive path swap already produces the right link -- every locale
-      shares the same slug for entries, threads, tags, types, sources.
-      Person-type keyword pages are the one case where the JA slug
-      (katakana, translated) and EN slug (the English name) are
-      deliberately different strings, so the naive swap 404s; passing the
-      already-computed alternate here fixes exactly that case without
-      touching any page where the naive swap was already correct. */
-  alternateHref?: string;
+      shares the same slug for entries, threads, tags, types, sources,
+      and (as of the participant-slug fix) primary person keywords.
+      Concept keyword pages are the remaining case where the JA and EN
+      keyword text -- and therefore slug -- are deliberately different
+      strings, so the naive swap 404s; passing the already-computed
+      alternate here fixes exactly that case.
+
+      Three states, not two: `undefined` (prop omitted) means this page
+      type never computes an alternate, so the naive swap is safe and
+      correct (unchanged for every page but keywords). `null` means the
+      page DID look for a counterpart and confirmed none exists (e.g. a
+      concept keyword declared in only one locale's frontmatter) -- the
+      switch link is hidden rather than guessing a path that 404s. A
+      string is the real computed counterpart URL. */
+  alternateHref?: string | null;
 }
 
 const { lang, alternateHref } = Astro.props;
@@ -32,12 +40,14 @@ function getAlternatePath(targetLang: Lang): string {
 }
 
 const targetLang: Lang = lang === 'en' ? 'ja' : 'en';
-const targetPath = getAlternatePath(targetLang);
+const targetPath = alternateHref === null ? null : getAlternatePath(targetLang);
 ---
 
-<a href={targetPath} class="lang-switch" lang={targetLang}>
-  {languages[targetLang]}
-</a>
+{targetPath && (
+  <a href={targetPath} class="lang-switch" lang={targetLang}>
+    {languages[targetLang]}
+  </a>
+)}
 
 <style>
   .lang-switch {

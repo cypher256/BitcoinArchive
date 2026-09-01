@@ -263,6 +263,7 @@ const result = {
   en: { concept: {}, person: {}, counts: {}, backlinks: {}, slugs: {} },
   ja: { concept: {}, person: {}, counts: {}, backlinks: {}, slugs: {} },
 };
+const entryContextsByLocale = {}; // locale -> entryContexts (pass 6 below)
 
 for (const { name: locale, base } of COLLECTIONS) {
   const files = walk(base);
@@ -284,6 +285,7 @@ for (const { name: locale, base } of COLLECTIONS) {
     entryContexts.push({ id, type, keywords, primarySlug });
     if (type === 'biography' && primarySlug) bioSlugs.add(primarySlug);
   }
+  entryContextsByLocale[locale] = entryContexts;
 
   // --- pass 2: concept keywords ------------------------------------------
   // analysis / article / design / currency entries' inlineLinkKeywords ->
@@ -335,6 +337,17 @@ for (const { name: locale, base } of COLLECTIONS) {
   // (jaNameMap[p.slug]) is emitted for JA; EN locale keeps emitting p.name
   // as before.
   const personByName = new Map(); // display name -> slug
+  // Primary (non-alias) name keywords -- see pass 5 below, where these
+  // route to the participant's own canonical slug (same identifier
+  // /participants/{slug}/ already uses in both locales) instead of a
+  // slug re-derived from the display text. Every other cross-locale
+  // grouping on the site (tags, types, sources, participants, entries)
+  // already shares one locale-independent URL identifier and translates
+  // only the display label; primary person keywords follow the same
+  // pattern here so EN and JA always resolve to the identical URL.
+  // Bio-declared aliases (below) keep a text-derived slug since an
+  // alias has no other canonical cross-locale identifier to reuse.
+  const primaryPersonNames = new Set();
   const seenSlugs = new Set();
   for (const file of files) {
     const { fm } = splitFrontmatter(readFileSync(file, 'utf-8'));
@@ -345,9 +358,13 @@ for (const { name: locale, base } of COLLECTIONS) {
       if (!bioSlugs.has(p.slug)) continue; // bio-only filter
       if (locale === 'ja') {
         const ja = jaNameMap[p.slug];
-        if (ja && !personByName.has(ja)) personByName.set(ja, p.slug);
+        if (ja && !personByName.has(ja)) {
+          personByName.set(ja, p.slug);
+          primaryPersonNames.add(ja);
+        }
       } else if (!personByName.has(p.name)) {
         personByName.set(p.name, p.slug);
+        primaryPersonNames.add(p.name);
       }
     }
   }
@@ -472,7 +489,13 @@ for (const { name: locale, base } of COLLECTIONS) {
     result[locale].slugs[slug] = kw;
   }
   for (const kw of Object.keys(result[locale].person)) {
-    const slug = slugifyKeyword(kw);
+    // Primary name keywords reuse the participant's own canonical slug
+    // (same identifier /participants/{slug}/ uses in both locales) so the
+    // EN and JA keyword pages for the same person always share one URL --
+    // see the primaryPersonNames comment in pass 3 above. Alias keywords
+    // (bio-declared inlineLinkKeywords) keep a slug derived from their own
+    // text, since an alias has no other canonical identifier to reuse.
+    const slug = primaryPersonNames.has(kw) ? result[locale].person[kw] : slugifyKeyword(kw);
     if (!slug) {
       errors.push(`[${locale}] Person keyword "${kw}" produces an empty slug.`);
       continue;
@@ -496,6 +519,34 @@ for (const { name: locale, base } of COLLECTIONS) {
       continue;
     }
     result[locale].slugs[slug] = kw;
+  }
+}
+
+// --- pass 6: cross-locale concept-keyword parity ----------------------------
+// Mirrors the `relatedEntries` bidirectional-parity check
+// (check-internal-links.mjs): a concept-eligible entry that declares
+// inlineLinkKeywords in one locale's frontmatter but none in the other's
+// produces a keyword page in only one language, which readers of the
+// other language can never reach via auto-link and whose language-switch
+// button has nothing to point at (confirmed 2026-09-01: 3 entries found
+// this way, all genuine oversights -- none had a principled reason to stay
+// one-sided, since every entry has both an EN and a JA file covering the
+// same underlying thing). This does not require identical keyword text
+// across locales (JA equivalents are often katakana or a differently-
+// phrased alias) -- only that both locales declare at least one.
+for (const enCtx of entryContextsByLocale.en ?? []) {
+  if (!CONCEPT_ELIGIBLE_TYPES.has(enCtx.type)) continue;
+  const jaCtx = (entryContextsByLocale.ja ?? []).find((c) => c.id === enCtx.id);
+  if (!jaCtx) continue; // no JA file at all is a separate (translation-coverage) concern
+  const enHas = enCtx.keywords.length > 0;
+  const jaHas = jaCtx.keywords.length > 0;
+  if (enHas !== jaHas) {
+    errors.push(
+      `Entry "${enCtx.id}" declares inlineLinkKeywords in ${enHas ? 'EN' : 'JA'} ` +
+      `only (${enHas ? JSON.stringify(enCtx.keywords) : JSON.stringify(jaCtx.keywords)}) ` +
+      `-- add at least one equivalent keyword to the other locale's file, or ` +
+      `remove the one-sided declaration.`
+    );
   }
 }
 

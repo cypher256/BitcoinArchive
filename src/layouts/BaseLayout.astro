@@ -10,8 +10,8 @@ interface Props {
   description: string;
   lang: Lang;
   canonicalUrl?: string;
-  alternateJa?: string;
-  alternateEn?: string;
+  alternateJa?: string | null;
+  alternateEn?: string | null;
   ogType?: 'website' | 'article';
   publishedTime?: Date;
   modifiedTime?: Date;

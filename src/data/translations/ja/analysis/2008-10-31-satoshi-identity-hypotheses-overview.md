@@ -93,6 +93,11 @@ relatedEntries:
   - aftermath/2025-04-07-murphy-v-dhs-foia-lawsuit
   - aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary
   - analysis/2008-08-21-what-they-said-about-satoshi
+inlineLinkKeywords:
+  - "サトシ正体仮説の概観"
+  - "正体仮説の概観"
+  - "正体仮説の比較"
+  - "身元仮説総覧"
 ---
 
 ![12 人の匿名の人影が候補者の一覧として並び、その上を虫眼鏡が漂うが、どの候補にも定まらない](/BitcoinArchive/images/analysis/satoshi-identity-hypotheses-overview-hero.png)

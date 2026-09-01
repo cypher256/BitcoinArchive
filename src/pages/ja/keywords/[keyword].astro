@@ -4,7 +4,7 @@ import EntryCard from '../../../components/EntryCard.astro';
 import PrevNextNav from '../../../components/PrevNextNav.astro';
 import { useTranslations, getEntries, localePath, absoluteUrl } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
-import { keywordIndex } from '../../../lib/keyword-index';
+import { keywordIndex, keywordLabel, keywordQuoted } from '../../../lib/keyword-index';
 import { defaultSortAxis, dominantType, byDateAxisDesc, type SortAxis } from '../../../lib/dateAxis';
 import { siblingPrevNext } from '../../../lib/siblingNav';
 import gitDates from '../../../data/git-dates.json';
@@ -16,8 +16,18 @@ const gitDateMap = gitDates as Record<string, GitDateRecord>;
 export async function getStaticPaths() {
   type SiblingRef = { slug: string; label: string };
   const out: Array<{ params: { keyword: string }; props: { keyword: string; enSlug?: string; sortAxis: SortAxis; prevKeyword: SiblingRef | null; nextKeyword: SiblingRef | null } }> = [];
-  const enSlugs: Record<string, string> = keywordIndex.en?.slugs ?? {};
-  const jaSlugs: Record<string, string> = keywordIndex.ja?.slugs ?? {};
+  // Only keywords with at least one backlink get a page -- see the EN
+  // mirror src/pages/keywords/[keyword].astro for the full rationale
+  // (2026-09-01 decision reversing commit d5dd4005d's "every declared
+  // keyword is browsable"). Both locales must filter identically or the
+  // EN/JA-alternate lookup below produces a link to a page that doesn't
+  // exist on one side.
+  const enSlugs: Record<string, string> = Object.fromEntries(
+    Object.entries(keywordIndex.en?.slugs ?? {}).filter(([, kw]) => (keywordIndex.en?.counts?.[kw] ?? 0) > 0)
+  );
+  const jaSlugs: Record<string, string> = Object.fromEntries(
+    Object.entries(keywordIndex.ja?.slugs ?? {}).filter(([, kw]) => (keywordIndex.ja?.counts?.[kw] ?? 0) > 0)
+  );
   const jaPersonIndex = keywordIndex.ja?.person ?? {};
   // Build target -> EN slug index so we can locate the EN mirror page.
   const enSlugByTarget = new Map<string, string>();
@@ -87,23 +97,23 @@ const definitionEntry = definitionKind === 'concept' && definitionTarget
 const searchHref = `${localePath('/entries/', lang)}?q=${encodeURIComponent(keyword)}`;
 
 const pageDescription =
-  `「${keyword}」 が言及されているエントリー一覧 — ` +
+  `${keywordQuoted(keyword)} が言及されているエントリー一覧 — ` +
   `アーカイブ全体での参照箇所をキーワード単位で見る。`;
 ---
 
 <BaseLayout
-  title={`${keyword} — キーワード参照 - ${t('site.title')}`}
+  title={`${keywordLabel(keyword)} — キーワード参照 - ${t('site.title')}`}
   description={pageDescription}
   lang={lang}
-  alternateEn={enSlug ? absoluteUrl(`/keywords/${enSlug}/`, 'en') : undefined}
+  alternateEn={enSlug ? absoluteUrl(`/keywords/${enSlug}/`, 'en') : null}
 >
   <div class="container-wide">
     <PrevNextNav
       top
-      prev={prevKeyword && { href: localePath(`/keywords/${prevKeyword.slug}/`, lang), label: prevKeyword.label }}
-      next={nextKeyword && { href: localePath(`/keywords/${nextKeyword.slug}/`, lang), label: nextKeyword.label }}
+      prev={prevKeyword && { href: localePath(`/keywords/${prevKeyword.slug}/`, lang), label: keywordLabel(prevKeyword.label) }}
+      next={nextKeyword && { href: localePath(`/keywords/${nextKeyword.slug}/`, lang), label: keywordLabel(nextKeyword.label) }}
     />
-    <h1>{keyword}</h1>
+    <h1>{keywordLabel(keyword)}</h1>
     <p class="page-lead">
       キーワード参照 — このワードを本文で言及しているエントリー。
     </p>
@@ -117,28 +127,22 @@ const pageDescription =
     {definitionKind === 'person' && definitionTarget && (
       <div class="definition-callout">
         <span class="definition-label">人物：</span>
-        <a href={localePath(`/participants/${definitionTarget}/`, lang)}>{keyword}</a>
+        <a href={localePath(`/participants/${definitionTarget}/`, lang)}>{keywordLabel(keyword)}</a>
       </div>
     )}
 
-    {displayBacklinks.length > 0 && (
-      <div class="filter-row">
-        <input type="text" id="filter-input" class="filter-input" placeholder="フィルター..." aria-label="フィルター" autocomplete="off" />
-      </div>
-    )}
+    <div class="filter-row">
+      <input type="text" id="filter-input" class="filter-input" placeholder="フィルター..." aria-label="フィルター" autocomplete="off" />
+    </div>
     <div class="list-header">
       <p class="entry-count">
-        {displayBacklinks.length === 0
-          ? 'このキーワードを本文で言及しているエントリーはまだありません。'
-          : <><span id="entry-count-num">{displayBacklinks.length}</span> 件がこのキーワードを本文で言及しています。</>}
+        <span id="entry-count-num">{displayBacklinks.length}</span> 件がこのキーワードを本文で言及しています。
       </p>
-      {displayBacklinks.length > 0 && (
-        <div class="sort-controls">
-          <button class:list={['sort-btn', { active: sortAxis === 'date' }]} data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
-          <button class:list={['sort-btn', { active: sortAxis === 'created' }]} data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
-          <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
-        </div>
-      )}
+      <div class="sort-controls">
+        <button class:list={['sort-btn', { active: sortAxis === 'date' }]} data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+        <button class:list={['sort-btn', { active: sortAxis === 'created' }]} data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+        <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
+      </div>
     </div>
 
     <div id="keyword-entries-list">
@@ -177,7 +181,7 @@ const pageDescription =
         本文で直接言及されていないが関連しそうなエントリーを探したい場合：
       </p>
       <a class="search-cta-link" href={searchHref}>
-        「{keyword}」 でアーカイブ全文をファジー検索 &rarr;
+        {keywordQuoted(keyword)} でアーカイブ全文をファジー検索 &rarr;
       </a>
       <p class="search-cta-note">
         検索は typo 許容・部分一致・前方一致を含むファジー方式。構造的な

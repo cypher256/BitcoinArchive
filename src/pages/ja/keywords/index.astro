@@ -1,18 +1,20 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { useTranslations, localePath, absoluteUrl } from '../../../i18n/utils';
-import { keywordIndex } from '../../../lib/keyword-index';
-import { slugifyKeyword } from '../../../lib/keyword-slug.mjs';
+import { keywordIndex, keywordSlugs, keywordLabel } from '../../../lib/keyword-index';
 
 const lang = 'ja';
 const t = useTranslations(lang);
 
 const localeData = keywordIndex.ja;
+// Only list keywords with at least one backlink -- see
+// src/pages/keywords/[keyword].astro's getStaticPaths comment.
 const rows = [
   ...Object.keys(localeData.concept ?? {}).map((kw) => ({ kw, kind: 'concept' as const })),
   ...Object.keys(localeData.person ?? {}).map((kw) => ({ kw, kind: 'person' as const })),
 ]
-  .map(({ kw, kind }) => ({ kw, kind, count: localeData.counts?.[kw] ?? 0, slug: slugifyKeyword(kw) }))
+  .map(({ kw, kind }) => ({ kw, kind, count: localeData.counts?.[kw] ?? 0, slug: keywordSlugs.ja?.[kw] }))
+  .filter((row): row is typeof row & { slug: string } => row.count > 0 && !!row.slug)
   .sort((a, b) => b.count - a.count || a.kw.localeCompare(b.kw));
 
 const structuredData = {
@@ -58,7 +60,7 @@ const structuredData = {
       {rows.map(({ kw, kind, count, slug }) => (
         <li data-name={kw} data-count={count}>
           <a href={localePath(`/keywords/${slug}/`, lang)}>
-            {kw}
+            {keywordLabel(kw)}
           </a>
           <span class="kind-badge">{kind === 'person' ? '人物' : '概念'}</span>
           <span class="count">({count})</span>

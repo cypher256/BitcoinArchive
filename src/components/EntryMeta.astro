@@ -1,8 +1,7 @@
 ---
 import { useTranslations, localePath, translateParticipantName, findAuthorParticipant, translateTag } from '../i18n/utils';
-import { slugifyKeyword } from '../lib/keyword-slug.mjs';
 import type { Lang } from '../i18n/ui';
-import { keywordCounts } from '../lib/keyword-index';
+import { keywordCounts, keywordSlugs, keywordLabel as keywordLabelJa } from '../lib/keyword-index';
 import EntryDates from './EntryDates.astro';
 import TypeIcon from './TypeIcon.astro';
 
@@ -70,12 +69,11 @@ interface Props {
 }
 
 const { date, author, entryType, source, lang, participants = [], tags = [], inlineLinkKeywords = [], xHandle, updatedAt, createdAt, showAuthor = true } = Astro.props;
-// Keywords with 0 backlinks are dropped entirely, not just their count
-// badge: their /keywords/{slug}/ destination has nothing to show but a
-// "Defined in:" callout pointing right back at this same entry (a
-// dead-end click). The frontmatter declaration keeps working for
-// auto-linking other entries' body prose regardless of this display
-// filter — this only affects what's rendered here.
+// Keywords with 0 backlinks are dropped entirely from this row, and (per
+// 2026-09-01 decision) the keyword page itself is not treated as a real
+// destination either -- both a "definitely not useful" pair, decided
+// together rather than the row alone. See the 0-backlink handling in
+// src/pages/keywords/[keyword].astro and its JA mirror.
 const isDefinesEligibleType = entryType === 'analysis' || entryType === 'article' || entryType === 'design' || entryType === 'currency';
 const definedKeywords = isDefinesEligibleType
   ? inlineLinkKeywords
@@ -154,10 +152,10 @@ const isSatoshiAuthor =
   <div class="defines-row">
     <span class="defines-label">{lang === 'ja' ? '定義：' : 'Defines:'}</span>
     {definedKeywords.map(({ kw, n }, i) => {
-      const slug = slugifyKeyword(kw);
+      const slug = keywordSlugs[lang]?.[kw];
       return (
         <>
-          <a class="defines-keyword" href={localePath(`/keywords/${slug}/`, lang)}>{kw}<span class="defines-count"> ({n})</span></a>
+          {slug && <a class="defines-keyword" href={localePath(`/keywords/${slug}/`, lang)}>{lang === 'ja' ? keywordLabelJa(kw) : kw}<span class="defines-count"> ({n})</span></a>}
           {i < definedKeywords.length - 1 && <span class="defines-sep">&middot;</span>}
         </>
       );

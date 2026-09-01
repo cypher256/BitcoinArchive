@@ -51,6 +51,9 @@ relatedEntries:
   - aftermath/2015-08-15-bitcoin-xt-launch
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - analysis/2014-11-01-blockstream-centralization-claim
+inlineLinkKeywords:
+  - "Bitcoin Core リブランド"
+  - "PR #3408"
 translationStatus: complete
 ---
 

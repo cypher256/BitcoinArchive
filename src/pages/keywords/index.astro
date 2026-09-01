@@ -1,18 +1,25 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { useTranslations, localePath, absoluteUrl } from '../../i18n/utils';
-import { keywordIndex } from '../../lib/keyword-index';
-import { slugifyKeyword } from '../../lib/keyword-slug.mjs';
+import { keywordIndex, keywordSlugs } from '../../lib/keyword-index';
 
 const lang = 'en';
 const t = useTranslations(lang);
 
 const localeData = keywordIndex.en;
+// Only list keywords with at least one backlink -- see
+// src/pages/keywords/[keyword].astro's getStaticPaths comment. A
+// 0-backlink keyword no longer gets a page, so listing it here would
+// link to a page that doesn't exist. The slug comes from keywordSlugs
+// (the canonical slug->keyword map inverted), not a re-derived
+// slugifyKeyword(kw) -- see that map's own comment for why recomputing
+// silently drifts for primary person keywords.
 const rows = [
   ...Object.keys(localeData.concept ?? {}).map((kw) => ({ kw, kind: 'concept' as const })),
   ...Object.keys(localeData.person ?? {}).map((kw) => ({ kw, kind: 'person' as const })),
 ]
-  .map(({ kw, kind }) => ({ kw, kind, count: localeData.counts?.[kw] ?? 0, slug: slugifyKeyword(kw) }))
+  .map(({ kw, kind }) => ({ kw, kind, count: localeData.counts?.[kw] ?? 0, slug: keywordSlugs.en?.[kw] }))
+  .filter((row): row is typeof row & { slug: string } => row.count > 0 && !!row.slug)
   .sort((a, b) => b.count - a.count || a.kw.localeCompare(b.kw));
 
 const structuredData = {

@@ -71,20 +71,23 @@ if (partOf) {
   .parent-link {
     /* Block-level flex (not inline-flex) + fit-content keeps the chip
        shrink-wrapped to its text while letting its vertical margins
-       collapse predictably with the header above. The negative top
-       margin sits the chip closer than the gap the header's last meta
-       row would give by default (currently 0.25rem -- see the shared
-       margin-bottom comment on .tags-row in EntryMeta.astro) —
-       grouping the "return to parent" chip with the header it belongs
-       to, without going negative (which would overlap the header).
-       Keep the magnitude below that value if it ever changes again.
-       Scoped here, so only pages with a parent link tighten; every
-       other entry keeps the full header spacing. */
+       collapse predictably with the header above. A prior negative
+       top margin (through 2026-08-30) pulled the chip closer than the
+       header's last meta row's own 0.25rem margin-bottom, but as that
+       shared margin itself shrank across several tightening passes,
+       the two stacked into an unreadable ~2px gap (measured
+       2026-09-01, confirmed via Playwright) that looked like the chip
+       was touching the row above. Now a small positive top margin
+       instead, chosen to still read as visibly grouped with the
+       header (tighter than the ~24px+ gap between unrelated sections)
+       while leaving a clearly visible ~6px separation -- re-measure
+       with Playwright before changing either value again, since they
+       are coupled through the header's own margin-collapse behavior. */
     display: flex;
     width: fit-content;
     align-items: baseline;
     gap: 0.6rem;
-    margin: -0.125rem 0 1.5rem;
+    margin: 0.375rem 0 1.5rem;
     padding: 0.5rem 0.9rem;
     background: var(--color-bg-alt);
     border: 1px solid var(--color-border);

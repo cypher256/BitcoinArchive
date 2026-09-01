@@ -16,10 +16,25 @@ const gitDateMap = gitDates as Record<string, GitDateRecord>;
 export async function getStaticPaths() {
   type SiblingRef = { slug: string; label: string };
   const out: Array<{ params: { keyword: string }; props: { keyword: string; jaSlug?: string; prevKeyword: SiblingRef | null; nextKeyword: SiblingRef | null } }> = [];
-  // For each EN slug, look up the corresponding JA slug pointing at the
-  // same target so the language switcher can wire across.
-  const enSlugs: Record<string, string> = keywordIndex.en?.slugs ?? {};
-  const jaSlugs: Record<string, string> = keywordIndex.ja?.slugs ?? {};
+  // Only keywords with at least one backlink get a page (2026-09-01
+  // decision): a 0-backlink keyword's dedicated page has nothing to show
+  // beyond a pre-filled search link -- the underlying Algolia full-text
+  // search at /entries/ already finds any keyword's occurrences on demand
+  // regardless of whether a landing page exists, so the page itself
+  // wasn't adding search capability, just a shortcut to it. The original
+  // "every declared keyword is browsable" rationale (commit d5dd4005d)
+  // was reversed once dead-page/dead-link cascades kept surfacing through
+  // it this session. Every consumer of the slug map -- this loop, the
+  // JA-alternate lookup below, sibling ordering, and
+  // /keywords/index.astro's listing -- must apply the same filter or a
+  // 0-backlink keyword's absence here still leaves dangling links
+  // elsewhere.
+  const enSlugs: Record<string, string> = Object.fromEntries(
+    Object.entries(keywordIndex.en?.slugs ?? {}).filter(([, kw]) => (keywordIndex.en?.counts?.[kw] ?? 0) > 0)
+  );
+  const jaSlugs: Record<string, string> = Object.fromEntries(
+    Object.entries(keywordIndex.ja?.slugs ?? {}).filter(([, kw]) => (keywordIndex.ja?.counts?.[kw] ?? 0) > 0)
+  );
   // Build target -> JA slug index so we can locate the JA mirror page.
   const jaSlugByTarget = new Map<string, string>();
   for (const [s, kw] of Object.entries(jaSlugs)) {
@@ -87,7 +102,7 @@ const pageDescription =
   title={`${keyword} — keyword backlinks - ${t('site.title')}`}
   description={pageDescription}
   lang={lang}
-  alternateJa={jaSlug ? absoluteUrl(`/keywords/${jaSlug}/`, 'ja') : undefined}
+  alternateJa={jaSlug ? absoluteUrl(`/keywords/${jaSlug}/`, 'ja') : null}
 >
   <div class="container-wide">
     <PrevNextNav
@@ -113,24 +128,18 @@ const pageDescription =
       </div>
     )}
 
-    {displayBacklinks.length > 0 && (
-      <div class="filter-row">
-        <input type="text" id="filter-input" class="filter-input" placeholder="Filter..." aria-label="Filter" autocomplete="off" />
-      </div>
-    )}
+    <div class="filter-row">
+      <input type="text" id="filter-input" class="filter-input" placeholder="Filter..." aria-label="Filter" autocomplete="off" />
+    </div>
     <div class="list-header">
       <p class="entry-count">
-        {displayBacklinks.length === 0
-          ? 'No entries reference this keyword in body prose yet.'
-          : <><span id="entry-count-num">{displayBacklinks.length}</span> entries reference this keyword in body prose.</>}
+        <span id="entry-count-num">{displayBacklinks.length}</span> entries reference this keyword in body prose.
       </p>
-      {displayBacklinks.length > 0 && (
-        <div class="sort-controls">
-          <button class:list={['sort-btn', { active: sortAxis === 'date' }]} data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
-          <button class:list={['sort-btn', { active: sortAxis === 'created' }]} data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
-          <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
-        </div>
-      )}
+      <div class="sort-controls">
+        <button class:list={['sort-btn', { active: sortAxis === 'date' }]} data-sort="date" data-order="desc">{t('sort.postDate')} ↓</button>
+        <button class:list={['sort-btn', { active: sortAxis === 'created' }]} data-sort="created" data-order="desc">{t('sort.added')} ↓</button>
+        <button class="sort-btn" data-sort="updated" data-order="desc">{t('sort.updated')} ↓</button>
+      </div>
     </div>
 
     <div id="keyword-entries-list">

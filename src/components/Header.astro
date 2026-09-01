@@ -6,7 +6,7 @@ import type { Lang } from '../i18n/ui';
 
 interface Props {
   lang: Lang;
-  alternateHref?: string;
+  alternateHref?: string | null;
 }
 
 const { lang, alternateHref } = Astro.props;
