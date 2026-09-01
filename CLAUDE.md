@@ -17,7 +17,16 @@ proxied through summaries instead of actually read). The three files:
   touches any of: a Mermaid diagram, a d3 chart (a `<!-- chart: -->`
   marker, a file under `src/scripts/*.js` that draws a chart, or a
   `src/components/*.astro` component using d3), a markdown table in
-  entry content, or layout/CSS width tokens.
+  entry content, layout/CSS width tokens, or a CSS color declaration
+  (`color`, `background`, `border-color`, `text-decoration-color`,
+  etc.) added or changed on any component, page, or the shared
+  stylesheet (`src/styles/global.css`) — the guide's "Link-color
+  confusion rule" (non-link text must never use `--color-link` or an
+  adjacent hue) is not obvious from width/layout intuition alone and
+  has been violated by skipping this file (2026-08-31/09-01: 3 CSS
+  rules re-introduced the exact link-color confusion the rule exists
+  to prevent, 3 months after the rule was written for the same
+  mistake).
 
 These triggers are deliberately concrete (specific fields, file
 patterns, marker syntax) rather than a vague "if this feels like
