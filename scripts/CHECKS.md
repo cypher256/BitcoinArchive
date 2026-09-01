@@ -40,9 +40,10 @@ not a restatement.
   the `build` pipeline plus `check-registry`. A push publishes the
   site, so these run on the server.
 - **`npm run check` (run before every push):** the build gates plus the
-  four `check`-only gates that never reach CI — `check-editorial-markers`,
-  `check-inline-link-coverage`, `check-mermaid`, `check-mermaid-ja-wrap`.
-  Run `check` before pushing so those four are not skipped.
+  five `check`-only gates that never reach CI — `check-editorial-markers`,
+  `check-inline-link-coverage`, `check-mermaid`, `check-mermaid-ja-wrap`,
+  `check-link-color-confusion`. Run `check` before pushing so those five
+  are not skipped.
 - **`check-registry`** runs first in both `check` and `build`, failing
   fast on ledger drift.
 - **`check-bios-rendering`** is a manual visual gate
@@ -88,6 +89,7 @@ not a restatement.
 | `check-inline-link-coverage.mjs` | Auto-link keyword coverage | none | check only · `check:inline-link-coverage` (also `audit:inline-link-coverage`) |
 | `check-mermaid.mjs` | Mermaid block syntax | none | check only · `check:mermaid` |
 | `check-mermaid-ja-wrap.mjs` | Long unbroken JA spans in mermaid labels | none | check only · `check:mermaid-ja-wrap` |
+| `check-link-color-confusion.mjs` | Non-link elements must not use `--color-accent` as text-fill color (STYLE_GUIDE_VISUAL.md Link-color confusion rule) | allowlisted (verified real links/buttons) | check only · `check:link-color-confusion` |
 | `check-editorial-markers.mjs` | Editorial-marker canonical forms | none | check only (`--strict`) · `check:editorial-markers` (also `audit:f-candidates`) |
 | `check-llms-counts.mjs` | `public/llms.txt` / `llms-full.txt` category counts vs corpus | none (±max(3, 5%) tolerance) | check only · `check:llms-counts` |
 | `check-styleguide-counts.mjs` | Machine-countable numbers stated in the style guides (e.g. callout count) vs corpus | none | check only · `check:styleguide-counts` |

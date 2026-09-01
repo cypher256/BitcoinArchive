@@ -105,6 +105,7 @@ async function main() {
     ['check-inline-link-coverage.mjs'],
     ['check-mermaid.mjs'],
     ['check-mermaid-ja-wrap.mjs'],
+    ['check-link-color-confusion.mjs'],
     ['check-editorial-markers.mjs', '--strict'],
     ['check-llms-counts.mjs'],
     ['check-styleguide-counts.mjs'],

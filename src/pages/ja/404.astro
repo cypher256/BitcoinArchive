@@ -69,8 +69,11 @@ const suggestionsConfig = {
     padding: 5rem 0;
   }
   .not-found h1 {
+    /* --color-text, not --color-accent: same link-color confusion
+       fix as f3a449325 / 8643cca36 / 76d336eef -- this heading is
+       not a link. */
     font-size: 5rem;
-    color: var(--color-accent);
+    color: var(--color-text);
     margin: 0 0 1rem;
   }
   .not-found p {

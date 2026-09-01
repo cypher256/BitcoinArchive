@@ -36,6 +36,7 @@
     "check:halving-consistency": "node scripts/check-halving-consistency.mjs",
     "check:mermaid": "node scripts/check-mermaid.mjs",
     "check:mermaid-ja-wrap": "node scripts/check-mermaid-ja-wrap.mjs",
+    "check:link-color-confusion": "node scripts/check-link-color-confusion.mjs",
     "check:bios-rendering": "node scripts/check-bios-rendering.mjs",
     "audit:bid-format": "node scripts/audit-bid-format.mjs",
     "audit:bitcointalk-threads": "node scripts/audit-bitcointalk-thread-coherence.mjs",
