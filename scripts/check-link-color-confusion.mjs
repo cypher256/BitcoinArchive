@@ -124,7 +124,33 @@ function extractStyleBlocks(text, isAstro) {
 // body, landing on the nested rule instead. offset is added to every
 // reported position so line numbers are relative to the original file.
 const BLOCK_RE = /([^{}]+)\{([^{}]*)\}/g;
-const DECL_RE = /^color\s*:\s*var\(\s*--color-accent\s*\)$/i;
+// Allows a trailing `!important` and an optional fallback argument
+// (`var(--color-accent, #000)`) -- still the same color when the
+// custom property resolves, which it always does in this codebase.
+const DECL_RE = /^color\s*:\s*var\(\s*--color-accent\s*(,[^)]*)?\)\s*(!\s*important)?$/i;
+
+// Splits `text` on `delimiter` only where parenthesis depth is 0, so a
+// delimiter inside `var(--x, fallback)` or `:is(.a, .b)` doesn't create
+// a false split. Returns [{ text, start }], `start` = offset of that
+// piece within `text` (not accounting for quoted strings or `url(...)`
+// with unbalanced parens -- out of scope for the values this script
+// matches, which are always `color: var(--color-accent ...)`).
+function splitTopLevel(text, delimiter) {
+  const pieces = [];
+  let depth = 0;
+  let pieceStart = 0;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (ch === '(') depth++;
+    else if (ch === ')') depth = Math.max(0, depth - 1);
+    else if (ch === delimiter && depth === 0) {
+      pieces.push({ text: text.slice(pieceStart, i), start: pieceStart });
+      pieceStart = i + 1;
+    }
+  }
+  pieces.push({ text: text.slice(pieceStart), start: pieceStart });
+  return pieces;
+}
 
 function checkFile(file) {
   const rel = path.relative(ROOT, file).split(path.sep).join('/');
@@ -140,23 +166,19 @@ function checkFile(file) {
       const [full, selectorText, body] = m;
       const bodyStart = m.index + selectorText.length + 1; // +1 for the `{`
 
-      let declPos = 0;
-      for (const rawDecl of body.split(';')) {
+      for (const { text: rawDecl, start: declPos } of splitTopLevel(body, ';')) {
         const decl = rawDecl.replace(/\s+/g, ' ').trim();
-        if (DECL_RE.test(decl)) {
-          const leadingWs = rawDecl.match(/^\s*/)[0].length;
-          const absIndex = offset + bodyStart + declPos + leadingWs;
-          const selectors = selectorText
-            .split(',')
-            .map((s) => s.replace(/\s+/g, ' ').trim())
-            .filter(Boolean);
-          for (const selector of selectors) {
-            if (!ALLOWLIST.has(`${rel}::${selector}`)) {
-              found.push({ file: rel, line: lineAt(raw, absIndex), selector });
-            }
+        if (!DECL_RE.test(decl)) continue;
+        const leadingWs = rawDecl.match(/^\s*/)[0].length;
+        const absIndex = offset + bodyStart + declPos + leadingWs;
+        const selectors = splitTopLevel(selectorText, ',')
+          .map(({ text }) => text.replace(/\s+/g, ' ').trim())
+          .filter(Boolean);
+        for (const selector of selectors) {
+          if (!ALLOWLIST.has(`${rel}::${selector}`)) {
+            found.push({ file: rel, line: lineAt(raw, absIndex), selector });
           }
         }
-        declPos += rawDecl.length + 1; // +1 for the removed `;`
       }
     }
   }
