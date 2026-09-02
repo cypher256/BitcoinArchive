@@ -16,6 +16,7 @@ tags:
   - "hashcash"
   - "earliest-correspondence"
   - "adam-back"
+  - "ecash-pdf"
   - "whitepaper"
   - "origins"
 secondarySources:

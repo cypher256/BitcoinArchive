@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '..');
 const entriesDir = path.resolve(repoRoot, 'src/data/entries/en');
+const jaEntriesDir = path.resolve(repoRoot, 'src/data/translations/ja');
 const tagsTsPath = path.resolve(repoRoot, 'src/i18n/tags.ts');
 const participantsTsPath = path.resolve(repoRoot, 'src/i18n/participants.ts');
 
@@ -109,6 +110,48 @@ if (missing.length > 0) {
   process.exit(1);
 }
 
+// --- EN/JA per-entry tag parity -------------------------------------------
+// Tags are locale-independent identifiers: the same raw strings must
+// appear in an entry's EN file and its JA mirror (only the display label
+// is translated, via tags.ts). Drift breaks page generation asymmetric-
+// ally -- a tag present only in JA display entries produced a JA tag page
+// whose EN counterpart 404'd from the language switch, and a tag present
+// only on the EN side left the JA listing linking at a page that was
+// never generated (production crawl, 2026-09-01: 3 drifted entries, 2
+// broken links). Same class of gap, and same fix, as the
+// inlineLinkKeywords EN/JA parity check in generate-keyword-index.mjs.
+const tagDrift = [];
+for (const enFile of walkMarkdownFiles(entriesDir)) {
+  const rel = path.relative(entriesDir, enFile);
+  const jaFile = path.join(jaEntriesDir, rel);
+  let jaContent;
+  try {
+    jaContent = readFileSync(jaFile, 'utf8');
+  } catch {
+    continue; // missing JA mirror is a translation-coverage concern, not tag drift
+  }
+  const enTags = parseFrontmatter(readFileSync(enFile, 'utf8')).tags;
+  const jaTags = parseFrontmatter(jaContent).tags;
+  const enList = Array.isArray(enTags) ? enTags : [];
+  const jaList = Array.isArray(jaTags) ? jaTags : [];
+  const jaSet = new Set(jaList);
+  const enSet = new Set(enList);
+  const onlyEn = enList.filter((t) => !jaSet.has(t));
+  const onlyJa = jaList.filter((t) => !enSet.has(t));
+  if (onlyEn.length || onlyJa.length) tagDrift.push({ rel, onlyEn, onlyJa });
+}
+
+if (tagDrift.length > 0) {
+  console.error(`\nEN/JA tag parity check: ${tagDrift.length} entr${tagDrift.length === 1 ? 'y has' : 'ies have'} drifted tag arrays.`);
+  console.error(`  (An entry's EN file and its JA mirror must declare the same tag strings.)\n`);
+  for (const { rel, onlyEn, onlyJa } of tagDrift) {
+    console.error(`  - ${rel}`);
+    if (onlyEn.length) console.error(`      EN only: ${onlyEn.map((t) => `"${t}"`).join(', ')}`);
+    if (onlyJa.length) console.error(`      JA only: ${onlyJa.map((t) => `"${t}"`).join(', ')}`);
+  }
+  process.exit(1);
+}
+
 console.log(
-  `JA tag translation check done. ${checkedFiles} files scanned, ${usageByTag.size} unique tag(s) — all translated.`,
+  `JA tag translation check done. ${checkedFiles} files scanned, ${usageByTag.size} unique tag(s) — all translated, EN/JA parity OK.`,
 );

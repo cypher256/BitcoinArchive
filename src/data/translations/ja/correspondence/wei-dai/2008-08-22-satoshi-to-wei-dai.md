@@ -17,6 +17,8 @@ tags:
   - "earliest-correspondence"
   - "adam-back"
   - "origins"
+  - "ecash-pdf"
+  - "whitepaper"
 secondarySources:
   - name: "プレリリース原稿 — Electronic Cash Without a Trusted Third Party"
     url: "http://www.upload.ae/file/6157/ecash-pdf.html"

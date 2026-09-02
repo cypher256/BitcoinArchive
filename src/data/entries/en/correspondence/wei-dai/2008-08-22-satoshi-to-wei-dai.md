@@ -14,7 +14,7 @@ description: "Satoshi emails Wei Dai asking for the correct b-money citation, re
 isSatoshi: true
 tags:
   - "b-money"
-  - "early-correspondence"
+  - "earliest-correspondence"
   - "adam-back"
   - "origins"
   - "ecash-pdf"

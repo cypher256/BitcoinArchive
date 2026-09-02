@@ -114,7 +114,6 @@ export const tagTranslations: Record<string, string> = {
   'early-adopter': '初期採用者',
   'early-bitcoin': '初期ビットコイン',
   'early-contributor': '初期貢献者',
-  'early-correspondence': '初期のメール',
   'early-developer': '初期開発者',
   'early-investor': '初期投資家',
   'ecash': 'eCash',

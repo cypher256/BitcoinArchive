@@ -15,7 +15,6 @@ tags:
   - "currency"
   - "usdc"
   - "stablecoin"
-  - "jeremy-allaire"
   - "governance"
   - "monetary-policy"
 secondarySources:
