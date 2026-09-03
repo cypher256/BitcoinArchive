@@ -8,7 +8,7 @@ author: "vbuterin"
 participants:
   - name: "Vitalik Buterin"
     slug: "vitalik-buterin"
-description: "ヴィタリック・ブテリンによるイーサリアム公開告知、2014 年 1 月 23 日に BitcoinTalk のアルトコイン板に投稿。ホワイトペーパー公開のビットコインコミュニティ向け一次記録。"
+description: "ヴィタリック・ブテリンによるイーサリアム公開告知（2014 年 1 月 23 日、BitcoinTalk のアルトコイン板）。イーサリアムホワイトペーパー公開のビットコインコミュニティ向け一次記録。"
 isSatoshi: false
 tags:
   - "vitalik-buterin"
