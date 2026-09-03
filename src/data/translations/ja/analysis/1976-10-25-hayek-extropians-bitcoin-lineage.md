@@ -180,6 +180,8 @@ flowchart LR
   CP -.-> PROP
   HC --> BTC
   BM -.-> BTC
+  %% link: HC /BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/
+  %% link: BM /BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/
 ```
 
 ### 3.3 ビットコインがハイエク命題から実現したもの

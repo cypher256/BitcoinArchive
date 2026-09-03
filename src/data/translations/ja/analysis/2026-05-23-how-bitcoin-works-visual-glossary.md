@@ -194,6 +194,7 @@ flowchart LR
   HF --> H1["e8b...4f2 (例示 ― 実際は特定の 256 ビット数値)"]
   IN2["入力: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for bank'<br/>(1 文字削除)"] --> HF2((SHA-256))
   HF2 --> H2["91a...7c5 (例示 ― 上とまったく別物)"]
+  %% link: IN1 /BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/
 ```
 
 さらに各新規ブロックには、 1 つ前のブロックのハッシュも自分自身の中に含まれている。このリンクが**チェーン**を作る: すべてのブロックが、 1 つ前のブロックを指し続け、最初のブロックまで遡れる。
@@ -206,6 +207,7 @@ flowchart LR
   B3[ブロック 3<br/>previous-hash: 000...8c7<br/>own hash: 000...b13]
   ETC[... 高さ 90 万を超える現在まで続く]
   B0 --> B1 --> B2 --> B3 --> ETC
+  %% link: B0 /BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/
 ```
 
 最初のブロックは、**[ジェネシスブロック](/BitcoinArchive/ja/entries/aftermath/2009-01-03-genesis-block/)** (またはブロック 0) と呼ばれる。特殊な存在で、マイニングされたのではなく、サトシによってソースコードに直接ハードコードされた。詳細な機構は[ジェネシスブロックハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)が v0.1 ソースを読み解いている。ブロック 0 から数えた各ブロックの位置を**ブロック高**と呼ぶ: ジェネシスは高さ 0、次のブロックは高さ 1、という具合だ。

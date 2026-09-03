@@ -93,6 +93,8 @@ flowchart TD
     XT --> BCH["Bitcoin Cash split (Aug 1, 2017)"]
     classDef warn fill:#ffff99,stroke:#c80
     class XT,NYA,BCH warn
+    %% link: NYA /BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/
+    %% link: BCH /BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/
 ```
 
 The three loss-points: (a) whether the constraint is throughput or decentralization (Layer 1 vs Layer 2 priority); (b) whether a hard fork can ever be safe (the contested-fork-as-network-split objection); (c) whether off-chain protocols can scale without compromising self-custody (the user-experience question). Each faction's answer to these three loaded the dispute differently.

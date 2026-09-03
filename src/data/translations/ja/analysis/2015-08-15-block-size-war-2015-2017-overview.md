@@ -94,6 +94,8 @@ flowchart TD
     XT --> BCH["ビットコインキャッシュ 分岐 (2017-08-01)"]
     classDef warn fill:#ffff99,stroke:#c80
     class XT,NYA,BCH warn
+    %% link: NYA /BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/
+    %% link: BCH /BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/
 ```
 
 三つの争点: (a) 制約は処理能力か分散性か (第 1 層 vs 第 2 層の優先順位)、 (b) ハードフォークは安全に実施可能か (争いのあるフォークはネットワーク分裂を生むという反論)、 (c) オフチェーンプロトコルは自己保管を損なわずに拡張できるか (利用者体験の問い)。各派閥の答えは、この三つの組み合わせで異なっていた。

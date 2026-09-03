@@ -55,6 +55,7 @@ flowchart TD
     E --> X[UTXO cannot move<br/>order is unenforceable]
     classDef gap fill:#ffff99,stroke:#c80
     class J,E,X gap
+    %% link: Pat /BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/
 ```
 
 In May 2026, Galaxy Digital's research head Alex Thorn published an analysis classifying the 39,069 defendant addresses against [Sergio Demian Lerner's Patoshi nonce signature](/BitcoinArchive/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/). After excluding addresses linked to the [Bitfinex 2016 hack](/BitcoinArchive/entries/aftermath/2022-02-08-bitfinex-hack-morgan-lichtenstein-arrest/) and known exchange wallets, Thorn identified **21,923 addresses (56% of the defendants) as carrying the Patoshi pattern** — approximately 1.096 million BTC, in alignment with Lerner's earlier estimate of ~1.1M BTC mined by the single early miner widely understood to be Satoshi Nakamoto himself. These are the same Patoshi-pattern reserves whose absence from the Finney and Sassaman family holdings was raised as counter-evidence against the co-creators theory in [the Finding Satoshi documentary](/BitcoinArchive/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/).

@@ -179,6 +179,8 @@ flowchart LR
   CP -.-> PROP
   HC --> BTC
   BM -.-> BTC
+  %% link: HC /BitcoinArchive/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/
+  %% link: BM /BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/
 ```
 
 ### 3.3 What Bitcoin realises from the Hayek thesis

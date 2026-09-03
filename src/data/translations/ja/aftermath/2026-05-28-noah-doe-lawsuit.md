@@ -56,6 +56,7 @@ flowchart TD
     E --> X[UTXO は動かせない<br/>命令は執行不能]
     classDef warn fill:#ffff99,stroke:#c80
     class J,E,X warn
+    %% link: Pat /BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/
 ```
 
 2026 年 5 月、 Galaxy Digital のリサーチ責任者アレックス・ソーンが、 [セルジオ・デミアン・ラーナーが特定した Patoshi ナンス指紋](/BitcoinArchive/ja/entries/aftermath/2013-04-17-sergio-lerner-patoshi-analysis/)を物差しに、被告 39,069 アドレスを分類した。 2016 年の Bitfinex ハック関連や既知の取引所ウォレットを除外したうえで、 **被告の 56% にあたる 21,923 件が Patoshi の特徴を備える**と判定した。その数はおよそ 109.6 万 BTC に上り、ラーナーが従来から提示してきた「約 110 万 BTC を単独の初期マイナー (サトシ・ナカモト本人と広く理解されている人物) が掘った」という推定とちょうど噛み合う。この同じ Patoshi パターン残高が、フィニー家にもサッサマン家にも渡っていないという事実は、共作説への反証として[『Finding Satoshi』](/BitcoinArchive/ja/entries/aftermath/2026-04-22-finding-satoshi-finney-sassaman-documentary/)でも取り上げられている。

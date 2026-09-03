@@ -162,6 +162,7 @@ flowchart LR
     BN["Block N\n(chain tip)\nprevBlockHash:\nhash of block N−1"]
 
     G --> B1 --> B2 --> B3 --> |"..."| BN
+    %% link: G /BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/
 ```
 
 **Immutability through cascading hashes.** Each header hash is computed over all 80 bytes of the header, which includes `prevBlockHash`. Changing a single byte in block 2's transaction list changes block 2's Merkle root, which changes block 2's header hash, which invalidates block 3's `prevBlockHash`, and so on. An attacker who modifies a historical block must redo the proof-of-work for that block and every subsequent block — an exponentially increasing cost.

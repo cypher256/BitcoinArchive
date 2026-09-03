@@ -193,6 +193,7 @@ flowchart LR
   HF --> H1["e8b...4f2 (illustrative — actual hash is a specific 256-bit number)"]
   IN2["Input: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for bank'<br/>(one character removed)"] --> HF2((SHA-256))
   HF2 --> H2["91a...7c5 (illustrative — entirely different from above)"]
+  %% link: IN1 /BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/
 ```
 
 Each new block also includes the hash of the previous block inside itself. That linking is what makes it a **chain**: every block points backwards to the one before it, all the way back to the very first block ever produced.
@@ -205,6 +206,7 @@ flowchart LR
   B3[Block 3<br/>previous-hash: 000...8c7<br/>own hash: 000...b13]
   ETC[... continues past height 900,000 today]
   B0 --> B1 --> B2 --> B3 --> ETC
+  %% link: B0 /BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/
 ```
 
 The very first block is called the **[genesis block](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/)** (or Block 0). It is special — its parameters were hardcoded into the source by Satoshi rather than mined; the [genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/) reads the v0.1 source for the details. Every block's position counted from Block 0 is called its **block height**: the genesis is height 0, the next block is height 1, and so on.
