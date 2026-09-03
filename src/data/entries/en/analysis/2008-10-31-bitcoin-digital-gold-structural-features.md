@@ -256,9 +256,7 @@ The bundle is also what makes the phrase difficult to apply to other cryptocurre
 
 Six features hold today; none of them holds unconditionally. They are necessary, not jointly sufficient, for the combination to keep holding: a successful 51% attack, a discovered cryptographic break, a Layer 2 governance capture, or a coordinated political action against the cap would each be enough to break it.
 
-Layer 2 decentralization is demonstrated empirically over the 2011–2026 window, not guaranteed beyond it; future contributor consolidation could erode it.
-
-Of the six, network effect is the one an external shock could most plausibly displace.
+Individual features have their own limits, too. Layer 2 decentralization is demonstrated empirically over the 2011–2026 window, not guaranteed beyond it; future contributor consolidation could erode it. Of the six, network effect is the one an external shock could most plausibly displace.
 
 Why the label has stuck for Bitcoin and not for the others is what the six features explain. Whether it keeps sticking is a separate question, one the record has not yet answered.
 
