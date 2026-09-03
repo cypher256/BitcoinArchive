@@ -85,6 +85,19 @@ translationStatus: complete
 
 この判定は 10 年以上、ビットコイン最大の被引用先行者が固定供給を誤りと考えていた証拠として流通してきた。だがこの判定からは、二つの事実が抜け落ちている。2009 年 2 月に、サトシ自身がなぜ代替案を試みなかったかを自分の言葉で説明していたこと。そして、ダイ本人がビットコインより 10 年早くその代替案を提案したとき、何が起きたかだ。
 
+```mermaid
+flowchart LR
+    A["1998年11月<br/>ダイが b-money 提案"] --> B["1998年12月6日<br/>バックが穴を指摘"]
+    B --> C["1998年12月7〜8日<br/>ダイが反論するが<br/>前提は残る"]
+    C -.->|"15年間、修正されず"| D["2013年4月<br/>ダイの判定<br/>固定供給は失敗"]
+    S["2009年2月<br/>サトシの説明<br/>知る方法はない"] -.->|"同じ未解決の要件"| D
+    %% link: A /BitcoinArchive/ja/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/
+    %% link: B /BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/
+    %% link: C /BitcoinArchive/ja/entries/aftermath/1998-12-07-wei-dai-re-b-money-protocol/
+    %% link: D /BitcoinArchive/ja/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/
+    %% link: S /BitcoinArchive/ja/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-18-bitcoin-open-source-implementation-of-p2p-currency/
+```
+
 ## サトシが挙げた理由
 
 サトシの供給スケジュールはプロトコルレベルで固定されている。委員会も、フィードバックループも、通貨供給が世界の何かを追跡する仕組みもない。2009 年 2 月、需要に合わせて供給を調整しない理由を P2P Foundation のフォーラムで説明した際、サトシは理由を直接述べている。

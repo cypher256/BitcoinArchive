@@ -27,7 +27,7 @@
  *      `<a xlink:href="URL">` so the SVG itself carries the link —
  *      no JavaScript, no runtime dependency.
  *
- * # User-facing syntax
+ * # User-facing syntax — gantt / timeline (positional)
  *
  *   ```mermaid
  *   gantt
@@ -48,20 +48,47 @@
  *       %% link: /BitcoinArchive/entries/emails/cryptography/2008-11-01-...
  *   ```
  *
- * # Selective linking
- *
  * Each `%% link: URL` is associated with the item that immediately
- * precedes it in source order. Items without a following `%% link:`
- * stay unlinked. This lets authors link some entries to archive pages
- * and leave others as plain visual markers.
+ * precedes it in *source* order, then matched positionally to the
+ * SVG elements in *render* order. This works for gantt/timeline
+ * because both are one-item-per-line formats with a stable item
+ * count, but it does NOT generalize to flowchart, where one line can
+ * define two nodes and an edge at once (`A[...] --> B[...]`) and the
+ * layout engine can reorder nodes in the DOM relative to source order.
+ *
+ * # User-facing syntax — flowchart (node-ID-keyed)
+ *
+ * Flowchart nodes are linked by their own Mermaid node ID instead of
+ * by position, because Mermaid stamps that ID onto the rendered SVG
+ * element (`id="mermaid-0-flowchart-A-0"` for a node declared `A[...]`)
+ * — a stable anchor that source-order pairing can't offer here:
+ *
+ *   ```mermaid
+ *   flowchart LR
+ *       A["Announcement"] --> B["Critique"]
+ *       %% link: A /BitcoinArchive/entries/aftermath/1998-11-26-.../
+ *       %% link: B /BitcoinArchive/entries/aftermath/1998-12-06-.../
+ *       B --> C["No fix"]
+ *   ```
+ *
+ * `%% link: <nodeId> <URL>` comments may appear anywhere in the block
+ * (order does not matter, unlike the positional form) and a node with
+ * no matching comment is left unlinked. The ID is recovered from the
+ * rendered element's `id` attribute by greedily matching everything
+ * up to Mermaid's own trailing `-<index>` and backtracking only far
+ * enough to leave that last `-<digits>` group outside the match — so
+ * a node ID that itself ends in `-<digits>` (e.g. `step-1`) is still
+ * recovered correctly (confirmed against real Mermaid 11.14 output:
+ * `step-1` renders as `...-flowchart-step-1-0` and is extracted back
+ * as `step-1`, not `step`).
  *
  * # Adding new diagram types
  *
  * Map each Mermaid `aria-roledescription` value to a handler in
  * `HANDLERS` below. A handler returns the parent / index pairs of all
- * clickable elements in document order; the orchestrator pairs them
- * with the URL list and wraps. To support new diagram types (sequence,
- * flowchart, etc.) just add a `HANDLERS[role]` entry.
+ * clickable elements; whether a diagram type is positional or
+ * ID-keyed is decided by `detectDiagramType()` + `FLOWCHART_KEYWORDS`
+ * (see `blocksInfo`'s `keyed` flag in `rehypeMermaidLink()` below).
  *
  * # Run order
  *
@@ -80,11 +107,12 @@ import { MIRROR_BASE } from '../../site-config.mjs';
 const SOURCE_PREFIX = `${MIRROR_BASE}/`;
 
 // ---------------------------------------------------------------------------
-// Source parsing — pull `%% link: URL` lines and pair them to items.
+// Source parsing — pull `%% link: ...` lines and pair them to items.
 // ---------------------------------------------------------------------------
 
 const MERMAID_BLOCK_RE = /```mermaid\s*\n([\s\S]*?)\n```/g;
 const LINK_LINE_RE = /^[ \t]*%%[ \t]*link:[ \t]*(\S+)[ \t]*$/;
+const FLOWCHART_LINK_LINE_RE = /^[ \t]*%%[ \t]*link:[ \t]*(\S+)[ \t]+(\S+)[ \t]*$/;
 
 // A Mermaid line is treated as a clickable item when it is not blank,
 // not a comment, not a structural keyword, and contains a `:`. The colon
@@ -103,7 +131,7 @@ function isItemLine(line) {
 /**
  * Walk `source` line by line. Track the index of the most recent item.
  * Each `%% link: URL` line is associated with the most recent item.
- * Returns a sparse array `urls[itemIndex] = URL`.
+ * Returns a sparse array `urls[itemIndex] = URL`. Used for gantt/timeline.
  */
 function parseLinkComments(source) {
   const urls = [];
@@ -120,6 +148,37 @@ function parseLinkComments(source) {
   }
   return urls;
 }
+
+/**
+ * Scan for `%% link: <nodeId> <URL>` lines anywhere in the block.
+ * Returns a null-prototype object `{ [nodeId]: URL }` (see the
+ * Object.create(null) note below). Used for flowchart, where node
+ * identity (not source position) is the stable pairing key.
+ */
+function parseFlowchartLinkComments(source) {
+  // Null-prototype: a node ID coinciding with an inherited Object.prototype
+  // name (`toString`, `constructor`, ...) must not resolve to that
+  // inherited value on lookup elsewhere in this file.
+  const urls = Object.create(null);
+  for (const line of source.split('\n')) {
+    const m = line.match(FLOWCHART_LINK_LINE_RE);
+    if (m) urls[m[1]] = m[2];
+  }
+  return urls;
+}
+
+/** First non-blank, non-comment line's leading keyword decides the type. */
+function detectDiagramType(source) {
+  for (const line of source.split('\n')) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('%%')) continue;
+    const m = trimmed.match(/^([A-Za-z0-9_]+)/);
+    return m ? m[1] : '';
+  }
+  return '';
+}
+
+const FLOWCHART_KEYWORDS = new Set(['flowchart', 'graph']);
 
 // ---------------------------------------------------------------------------
 // Per-diagram handlers — locate clickable element pairs for each item.
@@ -165,9 +224,37 @@ function pickTimelineItems(svgNode) {
   return groups;
 }
 
+// Mermaid stamps each rendered node's SVG id as
+// `mermaid-<diagramIndex>-flowchart-<nodeId>-<nodeIndex>`. The node's own
+// Mermaid-source ID sits in the middle, bounded by the fixed
+// `-flowchart-` marker on the left and a numeric index on the right —
+// recovered by stripping a trailing `-<digits>`, not by a fixed position.
+// The capture group is greedy, so it backtracks only as far as needed to
+// leave the last `-<digits>` group outside the match: a node ID that
+// itself ends in `-<digits>` (e.g. `step-1`) is still recovered intact.
+const FLOWCHART_NODE_ID_RE = /^mermaid-\d+-flowchart-(.+)-\d+$/;
+
+/** Returns a map `{ [mermaidNodeId]: [{parent, index}] }`, not an array —
+ *  flowchart linking is ID-keyed, not positional (see file header). */
+function pickFlowchartItemsById(svgNode) {
+  const byId = Object.create(null); // see parseFlowchartLinkComments for why
+  walkElements(svgNode, (node, parent, idx) => {
+    if (node.tagName !== 'g' || !hasClass(node, 'node')) return;
+    const rawId = node.properties?.id;
+    const m = typeof rawId === 'string' && rawId.match(FLOWCHART_NODE_ID_RE);
+    if (m) byId[m[1]] = [{ parent, index: idx }];
+    // Don't descend into a node's own children (label sub-elements are
+    // not separately clickable, and clusters/subgraphs are out of scope
+    // for this first pass).
+    return false;
+  });
+  return byId;
+}
+
 const HANDLERS = {
   gantt: pickGanttItems,
   timeline: pickTimelineItems,
+  'flowchart-v2': pickFlowchartItemsById,
 };
 
 // ---------------------------------------------------------------------------
@@ -195,15 +282,28 @@ export function rehypeMermaidLink() {
     const source = String(vfile?.value ?? '');
     if (!source) return;
 
-    // Per-block URL lists in source order. Empty array = no links in
-    // that block; the corresponding SVG is left untouched.
-    const urlListsPerBlock = [];
+    // Per-block descriptors, in source order: either a positional array
+    // (gantt/timeline) or an ID-keyed map (flowchart/graph).
+    const blocksInfo = [];
     const blockRe = new RegExp(MERMAID_BLOCK_RE.source, 'g');
     let m;
     while ((m = blockRe.exec(source)) !== null) {
-      urlListsPerBlock.push(parseLinkComments(m[1]).map(rewriteBase));
+      const blockSource = m[1];
+      const kind = detectDiagramType(blockSource);
+      if (FLOWCHART_KEYWORDS.has(kind)) {
+        const raw = parseFlowchartLinkComments(blockSource);
+        const urls = Object.create(null);
+        for (const k of Object.keys(raw)) urls[k] = rewriteBase(raw[k]);
+        blocksInfo.push({ keyed: true, urls });
+      } else {
+        const urls = parseLinkComments(blockSource).map(rewriteBase);
+        blocksInfo.push({ keyed: false, urls });
+      }
     }
-    if (urlListsPerBlock.every((u) => u.length === 0)) return;
+    const hasAnyLinks = blocksInfo.some((b) =>
+      b.keyed ? Object.keys(b.urls).length > 0 : b.urls.length > 0
+    );
+    if (!hasAnyLinks) return;
 
     let svgIdx = 0;
     visit(tree, 'element', (node) => {
@@ -211,9 +311,9 @@ export function rehypeMermaidLink() {
       const id = node.properties?.id;
       if (typeof id !== 'string' || !id.startsWith('mermaid-')) return;
 
-      const urls = urlListsPerBlock[svgIdx];
+      const block = blocksInfo[svgIdx];
       svgIdx += 1;
-      if (!urls || urls.length === 0) return;
+      if (!block) return;
 
       // hast camelCases `aria-roledescription` to `ariaRoleDescription`
       // (capital D). Fall back to the dashed form for parsers that
@@ -223,12 +323,23 @@ export function rehypeMermaidLink() {
       const handler = HANDLERS[role];
       if (!handler) return;
 
-      const groups = handler(node);
-      const len = Math.min(groups.length, urls.length);
-      for (let i = 0; i < len; i++) {
-        const url = urls[i];
-        if (!url) continue;
-        for (const ref of groups[i]) wrapInPlace(ref, url);
+      if (block.keyed) {
+        if (Object.keys(block.urls).length === 0) return;
+        const byId = handler(node);
+        for (const nodeId of Object.keys(block.urls)) {
+          const group = byId[nodeId];
+          if (!group) continue; // link comment names a node ID that doesn't exist
+          for (const ref of group) wrapInPlace(ref, block.urls[nodeId]);
+        }
+      } else {
+        if (block.urls.length === 0) return;
+        const groups = handler(node);
+        const len = Math.min(groups.length, block.urls.length);
+        for (let i = 0; i < len; i++) {
+          const url = block.urls[i];
+          if (!url) continue;
+          for (const ref of groups[i]) wrapInPlace(ref, url);
+        }
       }
     });
   };

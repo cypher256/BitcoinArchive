@@ -1424,14 +1424,34 @@ th {
    --mermaid-link — a token already reserved for exactly this ("clickable
    ... fill", see the token block above) but never applied anywhere. */
 .figure-block[data-kind="mermaid"] a { cursor: pointer; }
-.figure-block[data-kind="mermaid"] a .node-bkg,
-.figure-block[data-kind="mermaid"] a rect.task {
+/* Timeline's own Mermaid-generated stylesheet never sets a stroke on
+   `.node-bkg` (it defaults to stroke:none), so this plain-class rule
+   applies with no competing declaration -- confirmed by measuring the
+   computed stroke on a linked timeline node (it resolved to
+   --mermaid-link with no !important needed). */
+.figure-block[data-kind="mermaid"] a .node-bkg {
   stroke: var(--mermaid-link);
   stroke-width: 2px;
 }
-.figure-block[data-kind="mermaid"] a:hover .node-bkg,
-.figure-block[data-kind="mermaid"] a:hover rect.task {
+/* Flowchart's and gantt's own Mermaid-generated stylesheets both scope
+   their node stroke with an ID-prefixed selector (flowchart:
+   `#mermaid-N .node rect`; gantt: `#mermaid-N .task0/.task1/...`),
+   which beats this rule's plain-class specificity regardless of
+   declaration order -- confirmed for both by measuring the computed
+   stroke on a linked node (it stayed --mermaid-node-border, not
+   --mermaid-link, without !important). Timeline's `.node-bkg` above
+   has no such competing rule and does not need it. */
+.figure-block[data-kind="mermaid"] a rect.task,
+.figure-block[data-kind="mermaid"] a rect.basic {
+  stroke: var(--mermaid-link) !important;
+  stroke-width: 2px !important;
+}
+.figure-block[data-kind="mermaid"] a:hover .node-bkg {
   filter: brightness(1.15);
+}
+.figure-block[data-kind="mermaid"] a:hover rect.task,
+.figure-block[data-kind="mermaid"] a:hover rect.basic {
+  filter: brightness(1.15) !important;
 }
 
 /* Tables already carry per-cell borders that define the figure's

@@ -379,7 +379,16 @@ mechanism — do not conclude from Mermaid's own documentation that
 they cannot. Mermaid's native `click` directive registers a runtime
 JS handler that does not survive the build-time SVG capture (and the
 `timeline` type cannot parse `click` at all), so the archive uses a
-comment-based syntax handled by `src/lib/rehype-mermaid-link.mjs`:
+comment-based syntax handled by `src/lib/rehype-mermaid-link.mjs`.
+
+The plugin supports two pairing schemes, chosen automatically from
+the diagram's own `flowchart` / `graph` / `gantt` / `timeline`
+keyword — an author never picks the scheme explicitly, only writes
+the syntax that matches the diagram type below.
+
+**Positional linking — `gantt`, `timeline`.** Each diagram item is one
+source line; `%% link: URL` on the line right after it pairs to that
+item by position (source order = render order):
 
 ````markdown
 ```mermaid
@@ -392,51 +401,72 @@ timeline
 ```
 ````
 
-Rules:
+**ID-keyed linking — `flowchart`, `graph`.** A single flowchart source
+line can define more than one node or edge (`A --> B` defines two
+nodes and an edge in one line), so source-order pairing breaks down —
+there is no single "item" a following `%% link:` could unambiguously
+attach to. Instead, `%% link: <nodeId> <URL>` names the Mermaid node
+ID directly, order-independent, placed anywhere in the block:
 
-- Place `%% link: URL` on the line immediately **after** the item it
-  links. Items without a following `%% link:` stay unlinked —
-  selective linking is normal.
+````markdown
+```mermaid
+flowchart LR
+    A["Dai proposes b-money<br/>(Nov 1998)"] --> B["Back names the gap<br/>(Dec 6, 1998)"]
+    B --> C["Dai defends it<br/>(Dec 7-8, 1998)"]
+    %% link: A /BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/
+    %% link: B /BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/
+    %% link: C /BitcoinArchive/entries/aftermath/1998-12-07-wei-dai-re-b-money-protocol/
+```
+````
+
+The `<nodeId>` is the node's own identifier as written in the
+flowchart source (`A`, `B`, `C` above) — not any part of the
+rendered label text. The plugin matches it against the node ID
+Mermaid embeds in the rendered SVG element's `id` attribute
+(`mermaid-<diagramIdx>-flowchart-<nodeId>-<idx>`), recovered by
+greedily stripping only Mermaid's own trailing `-<index>` — a node ID
+that itself ends in `-<digits>` (e.g. `step-1`) is still recovered
+intact, confirmed against real Mermaid 11.14 output.
+
+**Supported diagram types**: `flowchart`, `graph`, `gantt`, and
+`timeline`. To support another type, add a `HANDLERS` entry in the
+plugin (see the plugin's own JSDoc header for the two schemes' worked
+examples and edge cases).
+
+**Rules common to both schemes:**
+
 - **If a matching archive entry exists, it must be linked — this is
-  not optional.** "Selective linking is normal" describes items that
-  genuinely have no single primary-source or archive-page target (a
-  back-calculated/inferred date, a purely decorative marker, or a
-  destination already linked earlier in the same diagram — see the
-  next rule). It is not a license to skip the search. Before leaving
-  any item unlinked, search the archive for a primary-source or
-  aftermath entry matching its date and topic, and open it to
-  confirm. A 2026-07-11 audit (`ec2bf9b7d`) already added 130 missing
-  links across 20 diagrams this way — but a 2026-08-25 finding on
-  `aftermath/2008-10-31-bitcoin-whitepaper-publication` showed one way
-  this search can still fail: an item read "Satoshi discloses the
-  code came first (Nov 9)" with no link. The real target entry's
-  **filename** is dated `2008-11-10`, so a search for a Nov-9-dated
-  file would miss it — but the entry's own frontmatter `date:` and
-  its `sourceUrl` mailing-list archive page both confirm the email
-  was actually sent Nov 8, 20:58 EST (= Nov 9, 01:58 UTC): the
-  item's "Nov 9" label was correct all along, and the filename is
-  the outlier. When a same-dated filename search comes up empty,
-  also check candidate entries' frontmatter `date:` (and, where it
-  exists, `sourceUrl`) directly — a filename is not authoritative.
-- Supported diagram types: `gantt` and `timeline`. To support another
-  type, add a `HANDLERS` entry in the plugin.
+  not optional.** "Selective linking is normal" (below) describes
+  items that genuinely have no single primary-source or archive-page
+  target (a back-calculated/inferred date, a purely decorative
+  marker, or a destination already linked earlier in the same
+  diagram — see the next rule). It is not a license to skip the
+  search. Before leaving any item unlinked, search the archive for a
+  primary-source or aftermath entry matching its date and topic, and
+  open it to confirm. A 2026-07-11 audit (`ec2bf9b7d`) already added
+  130 missing links across 20 diagrams this way — but a 2026-08-25
+  finding on `aftermath/2008-10-31-bitcoin-whitepaper-publication`
+  showed one way this search can still fail: an item read "Satoshi
+  discloses the code came first (Nov 9)" with no link. The real
+  target entry's **filename** is dated `2008-11-10`, so a search for
+  a Nov-9-dated file would miss it — but the entry's own frontmatter
+  `date:` and its `sourceUrl` mailing-list archive page both confirm
+  the email was actually sent Nov 8, 20:58 EST (= Nov 9, 01:58 UTC):
+  the item's "Nov 9" label was correct all along, and the filename is
+  the outlier. When a same-dated filename search comes up empty, also
+  check candidate entries' frontmatter `date:` (and, where it exists,
+  `sourceUrl`) directly — a filename is not authoritative.
 - Write URLs in the author-side base form `/BitcoinArchive/...`
   (JA mirrors: `/BitcoinArchive/ja/...`); the deploy environment
   rewrites the base. Only internal entry links are supported in `%% link:`
   comments. External URLs belong in `sourceUrl` / `secondarySources[]`, not
   in a body diagram.
-- **One event per line in any block that uses `%% link:`.** The
-  pairing between source lines and rendered SVG elements is
-  positional: a combined line (`2008 : event A : event B`) counts as
-  one source item but renders as two elements, so every link after it
-  lands one item off. Split multi-event years into continuation lines
-  (`     : event B`).
 - **Link each distinct destination at most once per diagram.** When
   multiple items in the same diagram would naturally point at the
   same entry (e.g. two dated events both citing the same email),
-  place `%% link:` only after the first occurrence and leave the rest
-  unlinked — repeating the same destination link across a diagram is
-  visual noise, not additional information.
+  link only the first occurrence and leave the rest unlinked —
+  repeating the same destination link across a diagram is visual
+  noise, not additional information.
 - **Do not link to `biography`-type entries.** A biography has no
   `/entries/{id}/` detail page — its body renders inside the
   participant page instead (see § Frontmatter `author` semantics) —
@@ -444,6 +474,30 @@ Rules:
   `/participants/{slug}/` page or a primary-source entry instead.
 - EN and JA mirrors carry the same `%% link:` lines at the same
   structural positions, pointing at the locale-appropriate paths.
+
+**Positional-scheme-only rule — one event per line.** In any `gantt`
+/ `timeline` block using `%% link:`, a combined line
+(`2008 : event A : event B`) counts as one source item but renders as
+two elements, so every link after it lands one item off. Split
+multi-event years into continuation lines (`     : event B`). This
+rule does not apply to ID-keyed flowchart linking, which matches by
+node ID regardless of how many nodes a source line defines.
+
+**Visual affordance for linked nodes.** A linked node gets a
+`--mermaid-link`-colored border at rest (not just on `:hover`, since
+mobile has no hover) so a reader can see which nodes are clickable
+before touching them — implemented in `src/styles/global.css` under
+`.figure-block[data-kind="mermaid"] a`. Each diagram type's own
+Mermaid-generated stylesheet styles its nodes differently
+(`.node-bkg` for timeline, `rect.task` for gantt, `rect.basic` for
+flowchart), and two of the three (`gantt`, `flowchart`) embed an
+ID-scoped stroke rule that beats a plain-class override unless the
+page-level rule uses `!important` — confirmed by measuring the
+computed stroke on a linked node in each diagram type, not assumed
+from any one type's behavior generalizing to the others. When adding
+link-border support for a new Mermaid type, measure its computed
+stroke the same way rather than assuming which prior type it behaves
+like.
 
 #### Japanese content gotchas
 

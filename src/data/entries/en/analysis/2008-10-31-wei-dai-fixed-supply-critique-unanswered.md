@@ -85,6 +85,19 @@ In April 2013, [Wei Dai](/BitcoinArchive/participants/wei-dai/) — the cypherpu
 
 The verdict has circulated for over a decade as evidence that Bitcoin's most-cited precursor thought fixed supply was a mistake. What it leaves out is the February 2009 post where Satoshi explained, in his own words, exactly why he never attempted the alternative — and what happened to that alternative when Dai himself proposed it, ten years before Bitcoin existed.
 
+```mermaid
+flowchart LR
+    A["Nov 1998<br/>Dai proposes b-money"] --> B["Dec 6, 1998<br/>Back names the gap"]
+    B --> C["Dec 7-8, 1998<br/>Dai defends it,<br/>gap still assumed"]
+    C -.->|"15 years, no fix"| D["Apr 2013<br/>Dai's verdict<br/>fixed supply failed"]
+    S["Feb 2009<br/>Satoshi's explanation<br/>no way to know"] -.->|"same open requirement"| D
+    %% link: A /BitcoinArchive/entries/aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement/
+    %% link: B /BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/
+    %% link: C /BitcoinArchive/entries/aftermath/1998-12-07-wei-dai-re-b-money-protocol/
+    %% link: D /BitcoinArchive/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/
+    %% link: S /BitcoinArchive/entries/forum/p2pfoundation/bitcoin-open-source/2009-02-18-bitcoin-open-source-implementation-of-p2p-currency/
+```
+
 ## The reason Satoshi gave
 
 Satoshi's supply schedule is fixed at the protocol level: no committee, no feedback loop, no mechanism for the money supply to track anything about the world. In February 2009, explaining on the P2P Foundation forum why the system doesn't adjust supply to match demand, he gave the reason directly:
