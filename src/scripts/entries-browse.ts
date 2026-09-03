@@ -214,6 +214,13 @@ export function initEntriesBrowse() {
     ? algoliasearch('FI2GZVF3TY', 'c0328bda37db1cc886aacffb2aed5425') : null;
   var hits = null, nbHits = 0; // current full-text hit set (null = browse mode); nbHits = true total
   var debounceTimer = null;
+  // Guards against out-of-order network responses: on a slow/jittery
+  // connection (mobile especially), an OLDER query's Algolia response can
+  // arrive AFTER a NEWER query's response, overwriting the display with
+  // stale results while the search box still shows the current query.
+  // Each fetchSearch() call captures the generation counter at request time;
+  // its callback only applies if it is still the latest generation.
+  var searchGen = 0;
   // Passed into the shared hitCard() (module scope, above) so this page's
   // search results render with the exact same markup as the 404 suggestions.
   var hitCtx = { basePath: basePath, L: L, authorMeta: authorMeta, slugToName: slugToName,
@@ -295,6 +302,10 @@ export function initEntriesBrowse() {
   }
   function fetchSearch(q) {
     var ff = JSON.stringify(facetFilters());
+    // Invalidate any request already in flight: its callback checks this
+    // generation number and drops its response if a newer call has since
+    // started (see the out-of-order-response comment on searchGen above).
+    var myGen = ++searchGen;
     // Serve from the per-tab cache when the same query + refinements were just
     // run — so Back from a result (or re-typing the same word) renders instantly
     // without spending another Algolia request.
@@ -307,11 +318,13 @@ export function initEntriesBrowse() {
       hitsPerPage: FT_FETCH, facetFilters: facetFilters(),
       attributesToSnippet: ['body:35'], highlightPreTag: '<mark>', highlightPostTag: '</mark>', snippetEllipsisText: '…'
     } }]).then(function(r) {
+      if (myGen !== searchGen) return; // a newer query has since started; discard this stale response
       hits = r.results[0].hits || [];
       nbHits = r.results[0].nbHits || hits.length;
       try { sessionStorage.setItem('ftcache:v2:' + indexName, JSON.stringify({ q: q, ff: ff, hits: hits, nbHits: nbHits })); } catch (e) {}
       renderSearch();
     }).catch(function() {
+      if (myGen !== searchGen) return; // stale error; a newer query has since started
       hits = [];
       searchResults.innerHTML = '<p class="no-results">' + (L ? '検索でエラーが発生しました。' : 'Search error.') + '</p>';
       resultCount.textContent = '0';
@@ -359,6 +372,10 @@ export function initEntriesBrowse() {
       searchResults.innerHTML = '<p class="no-results">' + (L ? '検索中…' : 'Searching…') + '</p>';
       fetchSearch(q);
     } else {
+      // Leaving search mode: invalidate any request still in flight from the
+      // just-abandoned query, so its response can't land later and overwrite
+      // this browse-mode render with stale search results (see searchGen).
+      searchGen++;
       hits = null;
       setMode(false);
       renderBrowse();
