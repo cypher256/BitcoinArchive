@@ -81,7 +81,7 @@ translationStatus: complete
 
 ![Dark navy illustration of two hand-written 1998 mailing-list letters on the left, a single red-underlined open question mark between them, and a gavel resting on a courtroom-style "FAILED" stamp on the right, connected by a thin timeline running from 1998 to 2013.](/BitcoinArchive/images/analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered-hero.png)
 
-In April 2013, [Wei Dai](/BitcoinArchive/participants/wei-dai/) — the cypherpunk whose b-money proposal Bitcoin's whitepaper cites as reference [1] — delivered a verdict on the design he had inspired: Bitcoin's fixed supply was a monetary-policy failure. He went further, saying he regretted never replying to Satoshi's 2008 email asking for comments on the whitepaper draft, because he might have talked Satoshi out of it.
+In April 2013, [Wei Dai](/BitcoinArchive/participants/wei-dai/) — the cypherpunk whose b-money proposal Bitcoin's whitepaper cites as reference [1] — delivered a verdict on Bitcoin's monetary policy: its fixed supply was a failure. He went further, saying he regretted never replying to Satoshi's 2008 email asking for comments on the whitepaper draft, because he might have talked Satoshi out of it.
 
 The verdict has circulated for over a decade as evidence that Bitcoin's most-cited precursor thought fixed supply was a mistake. What it leaves out is the February 2009 post where Satoshi explained, in his own words, exactly why he never attempted the alternative — and what happened to that alternative when Dai himself proposed it, ten years before Bitcoin existed.
 
