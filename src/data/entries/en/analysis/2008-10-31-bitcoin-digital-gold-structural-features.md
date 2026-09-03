@@ -254,15 +254,13 @@ Every later cryptocurrency that aims at more — programmability, throughput, ap
 
 The bundle is also what makes the phrase difficult to apply to other cryptocurrencies, regardless of their technical merits. A chain with a richer instruction set, faster confirmation, and lower fees can be many things; if it also has an active founder, a foundation treasury, a CEO, and a premine, it is not (under this framing) digital gold. It is something else — possibly something more useful for many purposes — but the digital-gold slot is structurally not vacant for it to occupy.
 
-## What this structure does not guarantee
+Six features hold today; none of them holds unconditionally. They are necessary, not jointly sufficient, for the combination to keep holding: a successful 51% attack, a discovered cryptographic break, a Layer 2 governance capture, or a coordinated political action against the cap would each be enough to break it.
 
-This entry is an editorial reading of structural features, not a price prediction or an investment thesis. Several caveats:
+Layer 2 decentralization is demonstrated empirically over the 2011–2026 window, not guaranteed beyond it; future contributor consolidation could erode it.
 
-- The six features are necessary but not jointly sufficient for the digital-gold framing to remain valid in the long term. A successful 51% attack, a discovered cryptographic break, a Layer 2 governance capture, or a coordinated political action against the cap would each falsify the framing.
-- The Layer 2 decentralization is empirically demonstrated over the 2011–2026 window; future contributor consolidation could erode it.
-- The network-effect component is the most fragile in conceptual terms: it is the one feature an external shock could most plausibly displace.
+Of the six, network effect is the one an external shock could most plausibly displace.
 
-The framing is an explanation of why the digital-gold label has stuck for Bitcoin and has not for the others. It is not a guarantee that it will continue to stick.
+Why the label has stuck for Bitcoin and not for the others is what the six features explain. Whether it keeps sticking is a separate question, one the record has not yet answered.
 
 Where the ownership side of this story stands as of 2026 — how far corporate treasuries, spot ETFs, and sovereign reserves have climbed toward Satoshi's untouched ~1.1 million BTC, and why holding coins confers none of the protocol authority the second layer is about — is mapped in [Bitcoin's ownership map](/BitcoinArchive/entries/analysis/2026-07-09-bitcoin-ownership-map/).
 
