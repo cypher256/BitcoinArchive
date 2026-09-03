@@ -12,7 +12,7 @@ participants:
     slug: "satoshi-nakamoto"
   - name: "Hal Finney"
     slug: "hal-finney"
-description: "ティム・スワンソンによるレイ・ディリンジャーへの包括的取材。白書 10 周年企画で、コードレビューの技術詳細や浮動小数点発見の経緯が明かされる。"
+description: "ティム・スワンソンによるレイ・ディリンジャーへの包括的取材。ホワイトペーパー 10 周年企画で、コードレビューの技術詳細や浮動小数点発見の経緯が明かされる。"
 isSatoshi: false
 tags:
   - "ray-dillinger"

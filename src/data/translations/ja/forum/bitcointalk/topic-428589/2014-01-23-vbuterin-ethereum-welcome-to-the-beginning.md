@@ -8,7 +8,7 @@ author: "vbuterin"
 participants:
   - name: "Vitalik Buterin"
     slug: "vitalik-buterin"
-description: "ヴィタリック・ブテリンによるイーサリアム公開告知、2014 年 1 月 23 日に BitcoinTalk のアルトコイン板に投稿。イーサリアム白書公開のビットコインコミュニティ向け一次記録。"
+description: "ヴィタリック・ブテリンによるイーサリアム公開告知、2014 年 1 月 23 日に BitcoinTalk のアルトコイン板に投稿。ホワイトペーパー公開のビットコインコミュニティ向け一次記録。"
 isSatoshi: false
 tags:
   - "vitalik-buterin"
@@ -65,4 +65,4 @@ relatedEntries:
 一般的なお問い合わせ
 info@ethereum.org
 
-*[補足：本スレッド (BitcoinTalk topic 428589) はイーサリアム白書公開のビットコインコミュニティ向け一次記録であり、2 日後 (2014 年 1 月 25 日) の[ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/)のマイアミ北米ビットコイン会議での公的発表に先立つ位置づけにある。ブテリンは 2011 年以来のビットコインコミュニティの活動メンバー ([Bitcoin Magazine 共同創設者](/BitcoinArchive/ja/entries/aftermath/2012-05-01-bitcoin-magazine-launch/)、`pybitcointools` 著者、2011 年 10 月以降の BitcoinTalk メンバー) であり、本スレッドは彼の Bitcoin Magazine 期以降の作業が、彼自身が長年寄稿していた同じコミュニティに正式に紹介された瞬間である。[分岐とアルトコインの系譜分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)はイーサリアムを「次世代」チェーンのうち起源がビットコインを**経由する**最も多く引用される銘柄として扱う。本スレッドはその起源を直接記録する文書である。]*
+*[補足：本スレッド (BitcoinTalk topic 428589) はイーサリアムホワイトペーパー公開のビットコインコミュニティ向け一次記録であり、2 日後 (2014 年 1 月 25 日) の[ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/)のマイアミ北米ビットコイン会議での公的発表に先立つ位置づけにある。ブテリンは 2011 年以来のビットコインコミュニティの活動メンバー ([Bitcoin Magazine 共同創設者](/BitcoinArchive/ja/entries/aftermath/2012-05-01-bitcoin-magazine-launch/)、`pybitcointools` 著者、2011 年 10 月以降の BitcoinTalk メンバー) であり、本スレッドは彼の Bitcoin Magazine 期以降の作業が、彼自身が長年寄稿していた同じコミュニティに正式に紹介された瞬間である。[分岐とアルトコインの系譜分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)はイーサリアムを「次世代」チェーンのうち起源がビットコインを**経由する**最も多く引用される銘柄として扱う。本スレッドはその起源を直接記録する文書である。]*

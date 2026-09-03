@@ -12,7 +12,7 @@ participants:
     slug: "cobra"
   - name: "Satoshi Nakamoto"
     slug: "satoshi-nakamoto"
-description: "クレイグ・ライトが bitcoin.org の匿名運営者 Cobra を白書著作権侵害で提訴。Cobra は身元を守るため出頭せず欠席判決。裁判所は白書削除を命じた。"
+description: "クレイグ・ライトが bitcoin.org の匿名運営者 Cobra をホワイトペーパー著作権侵害で提訴。Cobra は身元を守るため出頭せず欠席判決。裁判所はホワイトペーパー削除を命じた。"
 isSatoshi: false
 tags:
   - "craig-wright"
@@ -37,7 +37,7 @@ relatedEntries:
 translationStatus: complete
 ---
 
-![削除の印が押されたビットコイン白書の書類、木槌、天秤のような裁定印、そして分かれ道の前に立つフード姿のシルエットを、紺色の背景に描いたイラスト。](/BitcoinArchive/images/analysis/2021-06-28-wright-v-cobra-whitepaper-lawsuit-hero.png)
+![削除の印が押されたビットコインホワイトペーパーの書類、木槌、天秤のような裁定印、そして分かれ道の前に立つフード姿のシルエットを、紺色の背景に描いたイラスト。](/BitcoinArchive/images/analysis/2021-06-28-wright-v-cobra-whitepaper-lawsuit-hero.png)
 
 2021年2月、クレイグ・ライトは bitcoin.org の匿名運営者「Cobra」に対し、ビットコインホワイトペーパーの著作権侵害を主張する訴訟を起こした。
 
