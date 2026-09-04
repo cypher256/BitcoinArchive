@@ -85,28 +85,54 @@ function extractMermaidBlocks(content) {
 // against not overwhelming the machine.
 const POOL_SIZE = Math.max(2, Math.min(os.cpus().length, 8));
 
+// A single mmdc invocation: spawns the headless-browser renderer, kills it
+// after TIMEOUT_MS, and reports whether the kill (not a real parse error)
+// is why it didn't finish. `killedByTimeout` lets the caller tell "mmdc
+// said no" apart from "we never found out" and retry only the latter.
+const TIMEOUT_MS = 30000;
+
+async function spawnOnce(inputFile, outputFile) {
+  return new Promise((resolve) => {
+    const child = spawn('npx', ['--no-install', 'mmdc', '-i', inputFile, '-o', outputFile, '-q']);
+    let stdout = '';
+    let stderr = '';
+    let killedByTimeout = false;
+    const timer = setTimeout(() => {
+      killedByTimeout = true;
+      child.kill('SIGKILL');
+    }, TIMEOUT_MS);
+    child.stdout.on('data', (d) => (stdout += d));
+    child.stderr.on('data', (d) => (stderr += d));
+    child.on('close', (status) => {
+      clearTimeout(timer);
+      resolve({ status, stdout, stderr, killedByTimeout });
+    });
+    child.on('error', (err) => {
+      clearTimeout(timer);
+      resolve({ status: 1, stdout: '', stderr: String(err), killedByTimeout: false });
+    });
+  });
+}
+
+// At ~370 blocks racing through a bounded pool of headless-browser
+// launches, an individual mmdc call can occasionally miss TIMEOUT_MS
+// purely from system load (CPU/memory contention across the pool), not
+// because the diagram has a syntax error -- confirmed by re-running the
+// check in isolation and seeing a different, unrelated block "fail" with
+// an empty stderr each time (a real parse error reproduces consistently
+// and always carries mmdc's error text; a load-induced timeout doesn't).
+// One retry absorbs that noise: a genuine syntax error fails identically
+// on the retry, while a timeout is usually load that has since eased.
 async function renderBlock(tmpDir, index, item) {
   const { file, startLine, code } = item;
   const inputFile = path.join(tmpDir, `block-${index}.mmd`);
   const outputFile = path.join(tmpDir, `block-${index}.svg`);
   writeFileSync(inputFile, code);
 
-  const result = await new Promise((resolve) => {
-    const child = spawn('npx', ['--no-install', 'mmdc', '-i', inputFile, '-o', outputFile, '-q']);
-    let stdout = '';
-    let stderr = '';
-    const timer = setTimeout(() => child.kill('SIGKILL'), 30000);
-    child.stdout.on('data', (d) => (stdout += d));
-    child.stderr.on('data', (d) => (stderr += d));
-    child.on('close', (status) => {
-      clearTimeout(timer);
-      resolve({ status, stdout, stderr });
-    });
-    child.on('error', (err) => {
-      clearTimeout(timer);
-      resolve({ status: 1, stdout: '', stderr: String(err) });
-    });
-  });
+  let result = await spawnOnce(inputFile, outputFile);
+  if (result.status !== 0 && result.killedByTimeout) {
+    result = await spawnOnce(inputFile, outputFile);
+  }
 
   try { unlinkSync(outputFile); } catch (_) {}
   try { unlinkSync(inputFile); } catch (_) {}
@@ -116,7 +142,9 @@ async function renderBlock(tmpDir, index, item) {
     file: path.relative(process.cwd(), file),
     line: startLine,
     blockIndex: item.blockIndex,
-    stderr: (result.stderr || result.stdout || '').slice(0, 500),
+    stderr: result.killedByTimeout
+      ? `(timed out after two attempts, ${TIMEOUT_MS}ms each -- not necessarily a syntax error; re-run in isolation to confirm)`
+      : (result.stderr || result.stdout || '').slice(0, 500),
   };
 }
 
