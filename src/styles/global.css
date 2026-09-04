@@ -1670,6 +1670,12 @@ pre[data-scroll="both"],
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    /* A short viewport makes the sidebar itself scroll (see max-height
+       above); without this the native scrollbar defaults to the
+       browser's light chrome even on a dark page, since neither this
+       element nor <html> declares color-scheme. Same token/pattern as
+       .minimap-scroll below. */
+    scrollbar-color: var(--color-border) transparent;
   }
   .container.has-2col-sidebar > .entry-main-col {
     grid-column: 2;
@@ -1710,6 +1716,7 @@ pre[data-scroll="both"],
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    scrollbar-color: var(--color-border) transparent;
   }
   .container-wide.has-2col-sidebar > .entry-main-col {
     grid-column: 2;
