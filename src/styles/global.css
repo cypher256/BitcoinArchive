@@ -1384,14 +1384,30 @@ th {
    requires Chrome 105+ / Safari 15.4+ / Firefox 121+. Full history of
    why this is overflow-gated rather than unconditional: see
    STYLE_GUIDE_VISUAL.md § d3 components → Layout width consideration
-   → History. */
+   → History.
+
+   Margin values come from `--breakout-left`/`--breakout-right`, set by
+   the same script right before it adds `data-breakout` (live
+   `getBoundingClientRect()` measurement of how much room actually
+   exists on each side of this element's normal position). Replaced the
+   former single symmetric `calc((100vw - 100%) / -2 + 2rem)` — correct
+   only when this element's containing block sits centered in the
+   viewport, which stopped holding once the >=1200px 2-column editorial
+   entry layout (.has-2col-sidebar) offsets the content column right of
+   a sidebar. Measuring live works unconditionally (sidebar or not), so
+   it replaced the formula everywhere rather than keeping two paths. The
+   `0px` fallback only matters with JS disabled, where `data-breakout`
+   is never set in the first place and this rule never applies. */
 @media (min-width: 1200px) {
   .figure-outer[data-breakout] {
-    margin-inline: calc((100vw - 100%) / -2 + 2rem);
+    margin-left: calc(-1 * var(--breakout-left, 0px));
+    margin-right: calc(-1 * var(--breakout-right, 0px));
   }
   .figure-outer[data-breakout] > .figure-block[data-kind="table"] {
     width: max-content;
-    margin-inline: auto;
+    /* Alignment itself comes from the base .figure-block rule's
+       --breakout-figure-align (applies to every kind); only the width
+       is table-specific here. */
   }
 }
 
@@ -1401,7 +1417,17 @@ th {
    pushing past the parent's width. */
 .figure-block {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin-block: 0;
+  /* --breakout-figure-align (set by BaseLayout.astro's breakout script,
+     right before data-breakout): 'auto' centers a narrower-than-box
+     figure within its .figure-outer (today's behavior when the box
+     grows ~symmetrically); '0' pins it flush left instead, set only
+     when the sidebar made the box grow lopsided (small left, large
+     right) -- centering in a lopsided box visibly drags the figure
+     right of the prose column's own left edge. Applies to every kind
+     (mermaid width:max-content and table both rely on this for
+     centering; chart is width:100% so this is a no-op for it). */
+  margin-inline: var(--breakout-figure-align, auto);
   overflow-x: auto;
   border: 1px solid var(--color-border);
   background: var(--color-bg-alt);
@@ -1569,6 +1595,109 @@ pre[data-scroll="both"],
   max-width: var(--max-width-wide);
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+/* ----------------------------------------------------------------
+   PC-only 2-column sidebar layout, entries/[...slug].astro editorial
+   types (article/analysis/design/currency) only -- .has-2col-sidebar
+   is added to the entry's own <article class="container"> only for
+   those types, so every other .container-tier page (about/404/cite/
+   threads/participants/primary-source entries) never matches this
+   selector and is completely unaffected.
+
+   .container itself stays the element the entry's real content column
+   sizes to (unchanged from every other .container page) -- it is NOT
+   turned into the grid in the sense of absorbing the sidebar's width
+   into what callers measure as "the content column". A new
+   .entry-main-col wrapper around the existing article-flow children
+   (everything .container held before, unchanged) becomes the grid's
+   content-column item, so BaseLayout.astro's `columnWidth()`
+   (`closest('.entry-main-col, .container, .container-wide')`) keeps
+   measuring the actual content width via .entry-main-col, which it
+   also matches, rather than the whole grid (sidebar + content) that
+   .container would otherwise resolve to once grid-active.
+
+   <RelatedEntries> deliberately stays inside .entry-main-col, in its
+   normal DOM position between the thread banners and <SourceCitation>
+   -- not pulled into the sidebar. Making it a grid sibling of
+   .entry-sidebar would require moving it out from between its current
+   DOM neighbors, which would change its position on mobile too (where
+   .entry-main-col's children just stack in source order). Content
+   nested between other must-stay-inline siblings can't be
+   independently grid-repositioned without either duplicating it or
+   breaking the "mobile stays identical" requirement -- so it stays
+   inline at every viewport width, sidebar or not. */
+@media (min-width: 1200px) {
+  .container.has-2col-sidebar {
+    /* Local tokens, not magic numbers repeated in a hand-computed
+       max-width: global.css sets box-sizing: border-box on every
+       element (see the *, *::before, *::after rule near the top of
+       this file), so max-width on this element already includes its
+       own padding -- a hand-picked max-width silently ate into the
+       reading column (measured 920px instead of the intended 1000px,
+       a 32px regression caught in code review) the first time this
+       was written with a padding value that didn't roundtrip through
+       the same calc(). Deriving max-width from these three custom
+       properties instead makes the reading column algebraically
+       exactly var(--max-width-read) regardless of any of the three
+       changing later.
+       280px sidebar (was 220px: wrapped long labels like "BIP (Bitcoin
+       Improvement Proposal)" onto a second line, cramped -- measured
+       directly in the rendered page). 3.5rem gap (was 2.5rem: felt too
+       tight against the main column). 2.5rem padding (was the base
+       .container's 1.5rem: this layout is wider overall and reads
+       cramped against the viewport edge at the narrower end of its
+       range near 1200px with the same padding a plain 1000px page
+       uses) -- scoped to this class only, every other .container page
+       (about/404/cite/threads/participants-without-sidebar/primary-
+       source entries) keeps the base rule's 1.5rem unchanged. */
+    --sidebar-w: 280px;
+    --sidebar-gap: 3.5rem;
+    --sidebar-pad: 2.5rem;
+    max-width: calc(var(--max-width-read) + var(--sidebar-w) + var(--sidebar-gap) + (var(--sidebar-pad) * 2));
+    padding: 0 var(--sidebar-pad);
+    display: grid;
+    grid-template-columns: var(--sidebar-w) 1fr;
+    column-gap: var(--sidebar-gap);
+    align-items: start;
+  }
+  .container.has-2col-sidebar > .entry-sidebar {
+    grid-column: 1;
+    position: sticky;
+    top: 5.5rem;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .container.has-2col-sidebar > .entry-main-col {
+    grid-column: 2;
+    /* Grid items default to min-width: auto, which lets a wide inline
+       element (a long unbroken URL, a code span) push the track wider
+       than 1fr instead of wrapping/scrolling within it. */
+    min-width: 0;
+  }
+}
+
+.entry-sidebar {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .entry-sidebar {
+    display: flex;
+  }
+}
+
+/* Shared small-caps label for every sidebar widget (TocNav,
+   EntryTypesWidget) -- one definition so the two always match. */
+.sidebar-widget-eyebrow {
+  margin: 0 0 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
 }
 
 .list-header {

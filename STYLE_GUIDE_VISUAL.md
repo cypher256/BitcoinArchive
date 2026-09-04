@@ -691,10 +691,15 @@ The CSS (defined once in `src/styles/global.css`):
    script in BaseLayout.astro — a figure that fits its column keeps
    its exact in-column layout at every viewport; only one whose
    content overflows joins the breakout. See the breakout-gating
-   table below for the per-kind threshold and required-width check. */
+   table below for the per-kind threshold and required-width check.
+   Margin values come from --breakout-left/--breakout-right, set by
+   the same script via a live getBoundingClientRect() measurement
+   right before data-breakout is added — see "Asymmetric layouts"
+   below for why this replaced a single symmetric calc() formula. */
 @media (min-width: 1200px) {
   .figure-outer[data-breakout] {
-    margin-inline: calc((100vw - 100%) / -2 + 2rem);
+    margin-left: calc(-1 * var(--breakout-left, 0px));
+    margin-right: calc(-1 * var(--breakout-right, 0px));
   }
   .figure-outer[data-breakout] > .figure-block[data-kind="table"] {
     width: max-content;
@@ -785,6 +790,20 @@ generalized it to cover mermaid and chart (restoring mermaid's
 original pre-`64658b7c` 1200px threshold for the diagram/chart kinds
 specifically, while table kept 1500px), and added the scroll-centering
 behavior described above.
+
+**Asymmetric layouts (2026-09-04).** The breakout margin was originally
+one symmetric `calc((100vw - 100%) / -2 + 2rem)` on both sides — correct
+only when `.figure-outer`'s containing block sits centered in the
+viewport. The >=1200px 2-column editorial entry layout
+(`.container.has-2col-sidebar`, entries/[...slug].astro) breaks that
+assumption: the content column sits to the right of a sidebar, not
+centered. Rather than keep two formulas (symmetric for ordinary pages,
+asymmetric for sidebar pages), the breakout script now measures live —
+`getBoundingClientRect()` on the figure's normal (pre-breakout)
+position — and sets `--breakout-left`/`--breakout-right` independently,
+right before adding `data-breakout`. This is unconditionally correct
+whether or not a sidebar is present, so it replaced the CSS-only
+formula everywhere.
 
 ### Tables: the lowest-cost visual structure
 

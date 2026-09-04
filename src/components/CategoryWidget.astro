@@ -1,0 +1,132 @@
+---
+/**
+ * CategoryWidget.astro — expanded "Browse" (nav.browse, header dropdown
+ * label "カテゴリ"/"Browse") list for the >=1200px entry-page sidebar
+ * (entries/[...slug].astro's 2-column editorial layout).
+ *
+ * The header's Browse dropdown holds 5 items: By Type, By Source,
+ * Figures (participants), Tags, Defines (keywords). Of those, only
+ * "By Type" has a small enough item count (12, excluding biography via
+ * getDisplayEntries -- see /types/ page's own identical computation,
+ * reused verbatim here so the two counts never drift) to expand inline
+ * without becoming an unusable wall of links -- Figures alone runs to
+ * the hundreds. So this widget expands By Type fully (same counts,
+ * same targets, same sort as /types/) and lists the other 4 as plain
+ * single links to their own index pages, matching the header dropdown
+ * exactly rather than only reproducing one of its five items.
+ *
+ * Hidden below 1200px (see global.css .entry-sidebar) -- the header
+ * dropdown stays the only route to any of these on narrower viewports,
+ * so nothing is lost, only duplicated at wide viewports.
+ *
+ * Sort: editorial types (Bitcoin Institute's own writing -- same set
+ * as entries/[...slug].astro's isEditorialType, forced to "Bitcoin
+ * Institute" as author/byline there) lead the list, count-descending
+ * within that group; the primary-source types follow, also count-
+ * descending. /types/ itself (the header dropdown's actual target)
+ * keeps its own plain count-descending sort unchanged -- this
+ * reordering is local to the sidebar widget only.
+ */
+import { useTranslations, getDisplayEntries, localePath } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  currentType?: string;
+}
+
+const { lang, currentType } = Astro.props;
+const t = useTranslations(lang);
+
+const EDITORIAL_TYPES = new Set(['article', 'analysis', 'design', 'currency']);
+
+const entries = await getDisplayEntries(lang);
+const typeCounts = new Map<string, number>();
+for (const entry of entries) {
+  typeCounts.set(entry.data.type, (typeCounts.get(entry.data.type) || 0) + 1);
+}
+const types = Array.from(typeCounts.entries()).sort((a, b) => {
+  const aEditorial = EDITORIAL_TYPES.has(a[0]);
+  const bEditorial = EDITORIAL_TYPES.has(b[0]);
+  if (aEditorial !== bEditorial) return aEditorial ? -1 : 1;
+  return b[1] - a[1];
+});
+
+const otherCategories: { href: string; label: string }[] = [
+  { href: localePath('/sources/', lang), label: t('nav.sources' as any) },
+  { href: localePath('/participants/', lang), label: t('nav.participants' as any) },
+  { href: localePath('/tags/', lang), label: t('nav.tags' as any) },
+  { href: localePath('/keywords/', lang), label: t('nav.keywords' as any) },
+];
+---
+
+<nav class="category-widget" aria-label={t('nav.browse' as any)}>
+  <p class="sidebar-widget-eyebrow">{t('nav.browse' as any)}</p>
+  <p class="category-widget-sublabel">{t('nav.types' as any)}</p>
+  <ul class="type-list">
+    {types.map(([type, count]) => (
+      <li>
+        <a href={localePath(`/types/${type}/`, lang)} aria-current={type === currentType ? 'page' : undefined}>
+          <span class="type-label">{t(`type.${type}` as any) || type}</span>
+          <span class="type-count">{count.toLocaleString(lang === 'ja' ? 'ja-JP' : 'en-US')}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+  <ul class="other-categories">
+    {otherCategories.map(({ href, label }) => (
+      <li><a href={href}>{label}</a></li>
+    ))}
+  </ul>
+</nav>
+
+<style>
+  .category-widget {
+    font-size: 0.86rem;
+  }
+  .category-widget-sublabel {
+    margin: 0 0 0.3rem;
+    font-size: 0.72rem;
+    color: var(--color-text-muted);
+  }
+  .type-list,
+  .other-categories {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .type-list a,
+  .other-categories a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.32rem 0.45rem;
+    border-radius: 4px;
+    color: var(--color-text-muted);
+    text-decoration: none;
+  }
+  .type-list a:hover,
+  .other-categories a:hover {
+    background: var(--color-bg-alt);
+    color: var(--color-text);
+  }
+  .type-list a[aria-current='page'] {
+    background: var(--color-bg-alt);
+    color: var(--color-text);
+    font-weight: 600;
+  }
+  .type-count {
+    font-variant-numeric: tabular-nums;
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+  }
+  .other-categories {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--color-border);
+  }
+</style>

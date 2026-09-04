@@ -1,0 +1,168 @@
+---
+/**
+ * ThreadTocNav.astro — per-message navigator for the >=1200px thread-page
+ * sidebar (entries/threads/[...threadPath].astro's 2-column layout).
+ * Threads have no `## ` headings (they're a sequence of primary-source
+ * messages, not editorial prose -- see TocNav.astro), so this substitutes
+ * one row per message (author + date) as the navigable unit, linking to
+ * that message's own real, stable id -- the same id MessageBlock.astro
+ * already assigns and the thread page's own in-body link-rewriting
+ * script already targets (`#msg1234` etc.), not a newly-invented one.
+ *
+ * Unlike TocNav.astro, the list itself is server-rendered (the page
+ * already has every message's author/date/id server-side) rather than
+ * built by client script -- avoids that component's own scoped-CSS
+ * pitfall (a scoped selector can never match an element created by
+ * client JS, since Astro only injects the scope attribute into elements
+ * written directly in the template). Client script here only toggles
+ * .is-active on links that already exist -- no element creation, so
+ * the scoped styles below apply normally.
+ */
+import { formatDate } from '../i18n/utils';
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface ThreadTocItem {
+  id: string;
+  author: string;
+  date: Date;
+  isSatoshi?: boolean;
+}
+
+interface Props {
+  lang: Lang;
+  items: ThreadTocItem[];
+}
+
+const { lang, items } = Astro.props;
+const t = useTranslations(lang);
+---
+
+{items.length > 0 && (
+  <nav class="thread-toc-nav" aria-label={t('toc.heading' as any)}>
+    <p class="sidebar-widget-eyebrow">{t('toc.heading' as any)}</p>
+    <ol class="thread-toc-list">
+      {items.map((item: ThreadTocItem, i: number) => (
+        <li>
+          <a href={`#${item.id}`} data-msg-id={item.id}>
+            <span class="thread-toc-index">{i + 1}</span>
+            <span class="thread-toc-meta">
+              <span class:list={['thread-toc-author', { satoshi: item.isSatoshi }]}>{item.author}</span>
+              <span class="thread-toc-date">{formatDate(item.date, lang)}</span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </nav>
+)}
+
+<script>
+  function initThreadToc(nav: HTMLElement) {
+    const links = Array.from(nav.querySelectorAll<HTMLAnchorElement>('a[data-msg-id]'));
+    if (!links.length) return;
+    const byId = new Map(links.map((a) => [a.dataset.msgId, a]));
+
+    const setActive = (id: string) => {
+      for (const a of links) {
+        a.classList.toggle('is-active', a.dataset.msgId === id);
+      }
+    };
+    const messageEls: HTMLElement[] = [];
+    for (const id of byId.keys()) {
+      if (!id) continue;
+      const el = document.getElementById(id);
+      if (el) messageEls.push(el);
+    }
+    if (!messageEls.length) return;
+
+    // READ_LINE matches the rootMargin top offset below: a message
+    // counts as "read past" once its top has scrolled above this many
+    // px from the viewport top. Recomputed from live positions on
+    // every observer callback (not from the fired entries' own
+    // isIntersecting flags) -- reacting only to entries risks a stale
+    // active item once a message scrolls out with no other message
+    // intersecting in that same batch (a fast scroll can skip the
+    // moment the next message enters before the previous one exits).
+    // Always picking "the last message whose top has passed the read
+    // line" is stateless and can never get stuck.
+    const READ_LINE = 96;
+    const updateActive = () => {
+      let current = messageEls[0];
+      for (const el of messageEls) {
+        if (el.getBoundingClientRect().top <= READ_LINE) current = el;
+        else break; // messages are already in document order
+      }
+      setActive(current.id);
+    };
+    const observer = new IntersectionObserver(updateActive, {
+      rootMargin: `-${READ_LINE}px 0px -70% 0px`,
+      threshold: 0,
+    });
+    for (const el of messageEls) observer.observe(el);
+    updateActive();
+  }
+
+  document.querySelectorAll<HTMLElement>('.thread-toc-nav').forEach(initThreadToc);
+</script>
+
+<style>
+  .thread-toc-nav {
+    font-size: 0.86rem;
+  }
+  .thread-toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .thread-toc-list li + li {
+    margin-top: 0.25rem;
+  }
+  .thread-toc-list a {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.34rem 0.5rem 0.34rem 0.75rem;
+    border-left: 2px solid var(--color-border);
+    border-radius: 0 4px 4px 0;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    line-height: 1.4;
+    transition: color 0.12s, border-color 0.12s, background-color 0.12s;
+  }
+  .thread-toc-list a:hover {
+    color: var(--color-text);
+  }
+  .thread-toc-list a.is-active {
+    border-left-color: var(--color-link);
+    background: var(--color-bg-alt);
+  }
+  .thread-toc-index {
+    flex: 0 0 auto;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-text-muted);
+  }
+  .thread-toc-meta {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.05rem;
+  }
+  .thread-toc-author {
+    color: var(--color-text);
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .thread-toc-list a.is-active .thread-toc-author {
+    color: var(--color-link);
+  }
+  .thread-toc-author.satoshi {
+    color: var(--color-satoshi);
+  }
+  .thread-toc-date {
+    font-size: 0.74rem;
+    color: var(--color-text-muted);
+  }
+</style>

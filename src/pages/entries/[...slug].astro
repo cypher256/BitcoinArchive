@@ -12,6 +12,8 @@ import WhaleAlertFortune from '../../components/WhaleAlertFortune.astro';
 import DesignSeriesNav from '../../components/DesignSeriesNav.astro';
 import ParentLink from '../../components/ParentLink.astro';
 import PrevNextNav from '../../components/PrevNextNav.astro';
+import TocNav from '../../components/TocNav.astro';
+import CategoryWidget from '../../components/CategoryWidget.astro';
 import { DESIGN_SERIES } from '../../data/design-series';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from '../../i18n/utils';
@@ -204,7 +206,17 @@ const hoistHero = entry.data.type !== 'design' && Boolean(entry.data.editorNote)
   breadcrumbs={breadcrumbs}
   hasMath={hasMath}
 >
-  <article class="container">
+  <article class="container has-2col-sidebar">
+    <aside class="entry-sidebar">
+      <!-- Every entry type gets the sidebar, not just editorial types:
+           TocNav self-hides when its target has zero ## headings (all
+           7 non-bip/whitepaper primary-source types), so there is no
+           empty-box case -- the category widget alone still carries
+           its own value on those pages. -->
+      <TocNav lang={lang} contentSelector=".entry-content" />
+      <CategoryWidget lang={lang} currentType={entry.data.type} />
+    </aside>
+    <div class="entry-main-col">
     <PrevNextNav
       top
       prev={prev && { href: localePath(`/entries/${prev.id}/`, lang), label: prev.data.title }}
@@ -338,6 +350,7 @@ const hoistHero = entry.data.type !== 'design' && Boolean(entry.data.editorNote)
       prev={prev && { href: localePath(`/entries/${prev.id}/`, lang), label: prev.data.title }}
       next={next && { href: localePath(`/entries/${next.id}/`, lang), label: next.data.title }}
     />
+    </div>
   </article>
 
   {isEditorialType && <ChartEmbedRuntime />}
@@ -353,8 +366,8 @@ const hoistHero = entry.data.type !== 'design' && Boolean(entry.data.editorNote)
        the two stay in sync and this rule isn't a silent no-op.
        .entry-content's own padding-top (1.5rem, shared with
        .biography-content) is what guarantees a fixed minimum gap below
-       this header regardless of collapse. ParentLink.astro's negative
-       top margin is calibrated against the same shared value -- change
+       this header regardless of collapse. ParentLink.astro's own top
+       margin is calibrated against the same shared value -- change
        all three (here, EntryMeta.astro, ParentLink.astro) together. */
     margin-bottom: 0.25rem;
   }

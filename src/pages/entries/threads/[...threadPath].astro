@@ -1,11 +1,13 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
-import { useTranslations, formatDate, localePath, absoluteUrl } from '../../../i18n/utils';
+import { useTranslations, formatDate, localePath, absoluteUrl, findAuthorParticipant, translateParticipantName } from '../../../i18n/utils';
 import { deriveThreadTitle, resolveThreadId } from '../../../data/threads';
 import MessageBlock from '../../../components/MessageBlock.astro';
 import PrevNextNav from '../../../components/PrevNextNav.astro';
 import commentariesData from '../../../data/derived-commentaries.json';
+import ThreadTocNav from '../../../components/ThreadTocNav.astro';
+import CategoryWidget from '../../../components/CategoryWidget.astro';
 
 const commentariesMap = commentariesData as Record<string, { id: string }[]>;
 
@@ -70,9 +72,27 @@ const { messages, threadTitle, hasJa, prevThread, nextThread } = Astro.props;
 const rendered = await Promise.all(
   messages.map(async (msg: any) => {
     const { Content } = await render(msg);
-    return { entry: msg, Content };
+    // Same id MessageBlock renders onto .message[id] below and the
+    // in-body link-rewriting script (bottom of this file) targets --
+    // computed once here so the sidebar nav and the actual anchor can
+    // never drift apart.
+    const msgId = msg.data.sourceUrl?.match(/msg(\d+)#/)?.[0]?.replace('#', '') || ('entry-' + (msg.id.split('/').pop() || ''));
+    return { entry: msg, Content, msgId };
   })
 );
+const threadTocItems = rendered.map(({ entry, msgId }) => {
+  // Same name resolution MessageBlock.astro uses for its own on-page
+  // author label (findAuthorParticipant + translateParticipantName) --
+  // the sidebar must show the same name each message body already
+  // does, not the raw frontmatter handle.
+  const ap = findAuthorParticipant(entry.data.author, entry.data.participants);
+  return {
+    id: msgId,
+    author: translateParticipantName(ap?.name ?? entry.data.author, ap?.slug, lang),
+    date: entry.data.date,
+    isSatoshi: entry.data.isSatoshi,
+  };
+});
 
 const participantMap = new Map<string, { name: string; slug: string }>();
 for (const m of messages) {
@@ -101,7 +121,12 @@ const breadcrumbs = [
   ogImage={`/og/threads/${Astro.params.threadPath}.png`}
   breadcrumbs={breadcrumbs}
 >
-  <article class="container">
+  <article class="container has-2col-sidebar">
+    <aside class="entry-sidebar">
+      <ThreadTocNav lang={lang} items={threadTocItems} />
+      <CategoryWidget lang={lang} />
+    </aside>
+    <div class="entry-main-col">
     <PrevNextNav
       top
       prev={prevThread && { href: localePath(`/entries/threads/${prevThread.id}/`, lang), label: prevThread.title }}
@@ -124,7 +149,7 @@ const breadcrumbs = [
     </header>
 
     <div class="conversation-thread">
-      {rendered.map(({ entry, Content }: any, i: number) => (
+      {rendered.map(({ entry, Content, msgId }: any, i: number) => (
         <>
           {i > 0 && <div class="thread-connector" />}
           <MessageBlock
@@ -134,7 +159,7 @@ const breadcrumbs = [
             participants={entry.data.participants}
             date={entry.data.date}
             isSatoshi={entry.data.isSatoshi}
-            id={entry.data.sourceUrl?.match(/msg(\d+)#/)?.[0]?.replace('#', '') || ('entry-' + (entry.id.split('/').pop() || ''))}
+            id={msgId}
           >
             <Fragment slot="source">
               <a class="permalink" href={localePath(`/entries/${entry.id}/`, lang)}>Permalink</a>
@@ -166,6 +191,7 @@ const breadcrumbs = [
       prev={prevThread && { href: localePath(`/entries/threads/${prevThread.id}/`, lang), label: prevThread.title }}
       next={nextThread && { href: localePath(`/entries/threads/${nextThread.id}/`, lang), label: nextThread.title }}
     />
+    </div>
   </article>
 </BaseLayout>
 

@@ -1,0 +1,195 @@
+---
+/**
+ * TocNav.astro — scroll-synced table of contents for the >=1200px
+ * entry-page sidebar (entries/[...slug].astro's 2-column layout, every
+ * entry type). Built entirely client-side: this component's own script
+ * queries `contentSelector` for `h2` elements at runtime and assigns
+ * an `id` to any heading that doesn't already have one (the corpus's
+ * markdown pipeline does not run rehype-slug, so headings have no id
+ * by default -- a client-only assignment here keeps that pipeline
+ * choice untouched rather than adding a site-wide rehype-slug pass).
+ * Most primary-source types (verbatim transcripts) have zero `## `
+ * headings in their body; when the target has none, the whole nav
+ * stays hidden rather than rendering an empty box.
+ *
+ * Hidden below 1200px (see global.css .entry-sidebar) -- there is no
+ * mobile precedent for this element, so hiding it there loses nothing
+ * mobile readers had before.
+ */
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  contentSelector: string;
+}
+
+const { lang, contentSelector } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<nav class="toc-nav" aria-label={t('toc.heading' as any)} data-content-selector={contentSelector} hidden>
+  <p class="sidebar-widget-eyebrow">{t('toc.heading' as any)}</p>
+  <ol class="toc-list"></ol>
+  <div class="toc-progress">
+    <span class="toc-progress-track"><span class="toc-progress-fill"></span></span>
+  </div>
+</nav>
+
+<script>
+  function slugifyHeading(text: string): string {
+    return 'toc-' + text.trim().toLowerCase().replace(/\s+/g, '-').replace(/["'<>]/g, '').slice(0, 60);
+  }
+
+  // Checks the whole document (not just this run's own headings), so a
+  // generated slug can never collide with an id that already exists
+  // anywhere on the page -- including another heading that happened to
+  // already have an id (a bare seen-map keyed only on generated slugs
+  // would miss that case entirely).
+  function uniqueId(base: string): string {
+    if (!document.getElementById(base)) return base;
+    let n = 1;
+    while (document.getElementById(`${base}-${n}`)) n++;
+    return `${base}-${n}`;
+  }
+
+  function initToc(nav: HTMLElement) {
+    const selector = nav.dataset.contentSelector;
+    if (!selector) return;
+    const content = document.querySelector(selector);
+    if (!content) return;
+    const headings = Array.from(content.querySelectorAll('h2')) as HTMLHeadingElement[];
+    if (headings.length === 0) return;
+
+    const list = nav.querySelector('.toc-list');
+    if (!list) return;
+    const links: HTMLAnchorElement[] = [];
+    for (const h of headings) {
+      if (!h.id) h.id = uniqueId(slugifyHeading(h.textContent || ''));
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = h.textContent;
+      li.appendChild(a);
+      list.appendChild(li);
+      links.push(a);
+    }
+    nav.hidden = false;
+
+    const setActive = (id: string) => {
+      for (const a of links) {
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + id);
+      }
+    };
+    // READ_LINE matches the rootMargin top offset below: a heading
+    // counts as "read past" once its top has scrolled above this many
+    // px from the viewport top. Recomputed from live positions on
+    // every observer callback (not from the fired entries' own
+    // isIntersecting flags) -- reacting only to entries risks a stale
+    // active item once a heading scrolls out with no other heading
+    // intersecting in that same batch (a fast scroll can skip the
+    // moment a new heading enters before the old one exits). Always
+    // picking "the last heading whose top has passed the read line" is
+    // stateless and can never get stuck.
+    const READ_LINE = 96;
+    const updateActive = () => {
+      let current = headings[0];
+      for (const h of headings) {
+        if (h.getBoundingClientRect().top <= READ_LINE) current = h;
+        else break; // headings are already in document order
+      }
+      setActive(current.id);
+    };
+    const observer = new IntersectionObserver(updateActive, {
+      rootMargin: `-${READ_LINE}px 0px -70% 0px`,
+      threshold: 0,
+    });
+    for (const h of headings) observer.observe(h);
+    updateActive();
+
+    const fill = nav.querySelector('.toc-progress-fill') as HTMLElement | null;
+    if (fill) {
+      const updateProgress = () => {
+        const rect = content.getBoundingClientRect();
+        const total = content.scrollHeight - window.innerHeight;
+        const scrolled = Math.min(Math.max(-rect.top, 0), Math.max(total, 1));
+        fill.style.width = Math.round((scrolled / Math.max(total, 1)) * 100) + '%';
+      };
+      document.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+    }
+  }
+
+  document.querySelectorAll<HTMLElement>('.toc-nav[data-content-selector]').forEach(initToc);
+</script>
+
+<style>
+  .toc-nav {
+    font-size: 0.86rem;
+  }
+  .toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  /* :global() on every selector below that reaches li/a -- this
+     component builds the list entirely in client JS
+     (document.createElement), and Astro's scoped-style attribute is
+     only ever injected into elements written directly in this file's
+     template. A scoped selector like `.toc-list a { ... }` compiles to
+     `.toc-list[data-astro-cid-x] a[data-astro-cid-x]`, which can never
+     match a JS-created <a> -- every rule below silently applied to
+     nothing until this was caught (measured 0px computed padding/margin
+     on the live page despite these exact declarations being present in
+     the served stylesheet). `.toc-list` itself keeps normal scoping
+     (it IS written in the template above); :global() only opens the
+     descendant side. */
+  /* Gap between items, separate from line-height: a 2-line wrapped
+     entry (long section titles wrap often) otherwise reads as two
+     separate entries -- the line-to-line gap within a wrap and the
+     gap between two different entries looked the same. */
+  .toc-list :global(li + li) {
+    margin-top: 0.25rem;
+  }
+  .toc-list :global(a) {
+    display: block;
+    padding: 0.34rem 0.5rem 0.34rem 0.75rem;
+    border-left: 2px solid var(--color-border);
+    border-radius: 0 4px 4px 0;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    line-height: 1.4;
+    transition: color 0.12s, border-color 0.12s, background-color 0.12s;
+  }
+  .toc-list :global(a:hover) {
+    color: var(--color-text);
+  }
+  /* Background tint, not just the border/text color change: during a
+     long scroll the reader glances at the sidebar briefly, and a 2px
+     border shift alone is easy to miss -- a filled block is findable
+     at a glance. */
+  .toc-list :global(a.is-active) {
+    color: var(--color-link);
+    border-left-color: var(--color-link);
+    background: var(--color-bg-alt);
+    font-weight: 600;
+  }
+  .toc-progress {
+    margin-top: 0.9rem;
+    padding-top: 0.7rem;
+    border-top: 1px solid var(--color-border);
+  }
+  .toc-progress-track {
+    display: block;
+    height: 3px;
+    background: var(--color-border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .toc-progress-fill {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: var(--color-link);
+  }
+</style>

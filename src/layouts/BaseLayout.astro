@@ -195,7 +195,7 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
       (() => {
         const sel =
           '.figure-block[data-kind="mermaid"], .figure-block[data-kind="table"], .figure-block[data-kind="chart"], pre, .minimap-scroll';
-        const update = (el) => {
+        const update = (el: HTMLElement) => {
           const max = el.scrollWidth - el.clientWidth;
           if (max <= 2) {
             el.setAttribute('data-scroll', 'none');
@@ -207,14 +207,14 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
             x <= 2 ? 'right' : x >= max - 2 ? 'left' : 'both',
           );
         };
-        const bound = new Set();
+        const bound = new Set<HTMLElement>();
         const ro =
           'ResizeObserver' in window
             ? new ResizeObserver((entries) =>
-                entries.forEach((e) => update(e.target)),
+                entries.forEach((e) => update(e.target as HTMLElement)),
               )
             : null;
-        const bind = (el) => {
+        const bind = (el: HTMLElement) => {
           if (bound.has(el)) return;
           bound.add(el);
           update(el);
@@ -233,7 +233,7 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
           );
           ro && ro.observe(el);
         };
-        const scan = () => document.querySelectorAll(sel).forEach(bind);
+        const scan = () => document.querySelectorAll<HTMLElement>(sel).forEach(bind);
         scan();
         addEventListener('resize', () => bound.forEach(update), { passive: true });
         // Tables can reflow once web fonts load; re-measure when ready.
@@ -348,14 +348,20 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
           '.figure-outer > .figure-block[data-kind="table"], ' +
           '.figure-outer > .figure-block[data-kind="mermaid"], ' +
           '.figure-outer > .figure-block[data-kind="chart"]';
-        const threshold = { table: 1500, mermaid: 1200, chart: 1200 };
-        const blocks = [];
+        const threshold: Record<string, number> = { table: 1500, mermaid: 1200, chart: 1200 };
+        const blocks: HTMLElement[] = [];
         // Measure the prose column each block actually lives in. The
         // first `.container-wide` in the document is the site header,
         // which is wider than the reading column — querying globally
         // would misclassify figures narrower than the header band.
-        const columnWidth = (block) => {
-          const c = block.closest('.container, .container-wide');
+        const columnWidth = (block: HTMLElement): number => {
+          // .entry-main-col matches first (nearer ancestor) on the
+          // >=1200px 2-column editorial entry layout, where .container
+          // itself has become the sidebar+content grid and no longer
+          // equals the content column's own width -- see global.css
+          // .has-2col-sidebar. Every other .container/.container-wide
+          // page (no .entry-main-col in its markup) is unaffected.
+          const c = block.closest('.entry-main-col, .container, .container-wide');
           if (!c) return 0;
           const cs = getComputedStyle(c);
           return (
@@ -364,7 +370,7 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
             parseFloat(cs.paddingRight)
           );
         };
-        const chartRequiredWidth = (block) => {
+        const chartRequiredWidth = (block: HTMLElement): number => {
           let max = 0;
           for (const el of block.querySelectorAll('*')) {
             const mw = parseFloat(getComputedStyle(el).minWidth);
@@ -372,7 +378,7 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
           }
           return max || block.scrollWidth;
         };
-        const requiredWidth = (block) =>
+        const requiredWidth = (block: HTMLElement): number =>
           block.dataset.kind === 'chart'
             ? chartRequiredWidth(block)
             : block.scrollWidth;
@@ -385,22 +391,74 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
         // that still overflows should start centered too. Skipped once
         // the visitor scrolls the block themselves, so this never
         // fights a manual scroll on resize/mutation-triggered re-runs.
-        const userScrolled = new WeakSet();
-        const centerScroll = (block) => {
+        const userScrolled = new WeakSet<HTMLElement>();
+        const centerScroll = (block: HTMLElement) => {
           if (block.dataset.kind === 'table' || userScrolled.has(block)) return;
           const max = block.scrollWidth - block.clientWidth;
           if (max > 2) block.scrollLeft = max / 2;
         };
+        // Breakout margin: how far .figure-outer may expand left/right of
+        // its own normal (non-breakout) position. Previously a single
+        // symmetric `calc((100vw - 100%) / -2 + 2rem)` on both sides --
+        // correct only when the containing block sits centered in the
+        // viewport, which no longer holds on the >=1200px 2-column
+        // entry layout (the content column is offset right, past the
+        // sidebar). Measuring live and setting the two sides
+        // independently as custom properties works unconditionally,
+        // sidebar or not, so this replaced the CSS-only formula
+        // everywhere rather than keeping two code paths.
+        const BREAKOUT_GUTTER = 32; // 2rem, matches the prior formula's own +2rem term
+        const setBreakoutMargins = (outer: HTMLElement) => {
+          // Read BEFORE data-breakout is applied, while .figure-outer
+          // still sits at its normal (non-breakout) position -- reading
+          // after would measure the already-expanded box, which is
+          // circular (the margin we're computing would feed back into
+          // the rect used to compute it).
+          const rect = outer.getBoundingClientRect();
+          // On the 2-column editorial layout, the sidebar occupies real
+          // space to the left -- "available" space stops at its right
+          // edge, not at the viewport edge (x=0). Without this, the
+          // breakout expands leftward straight through the sidebar.
+          // Every other page (no sidebar in this block's ancestry) keeps
+          // the viewport edge as the boundary, same as before.
+          const sidebar = outer.closest('.has-2col-sidebar')?.querySelector('.entry-sidebar');
+          const leftBoundary =
+            sidebar && getComputedStyle(sidebar).display !== 'none'
+              ? sidebar.getBoundingClientRect().right
+              : 0;
+          const left = Math.max(rect.left - leftBoundary - BREAKOUT_GUTTER, 0);
+          const right = Math.max(window.innerWidth - rect.right - BREAKOUT_GUTTER, 0);
+          outer.style.setProperty('--breakout-left', left + 'px');
+          outer.style.setProperty('--breakout-right', right + 'px');
+          // A figure narrower than its expanded box (mermaid, table --
+          // chart is width:100% and unaffected) re-centers itself via
+          // `margin-inline: auto` (global.css .figure-block) -- correct
+          // when left/right grow by roughly the same amount, but with
+          // the sidebar this box is lopsided (small left, large right),
+          // and centering within a lopsided box visibly drags the
+          // figure right of the prose column's own left edge. Pin it
+          // flush left instead whenever the sidebar is the reason for
+          // the asymmetry.
+          outer.style.setProperty('--breakout-figure-align', leftBoundary > 0 ? '0' : 'auto');
+        };
         const apply = () => {
           for (const block of blocks) {
-            const outer = block.parentElement;
+            const outer = block.parentElement as HTMLElement | null;
             if (!outer) continue;
-            const wide = window.innerWidth >= (threshold[block.dataset.kind] ?? 1500);
+            // Clear first so both the columnWidth() read below and the
+            // rect setBreakoutMargins() reads reflect normal (non-
+            // breakout) layout, regardless of this block's state from
+            // the previous apply() pass.
+            outer.removeAttribute('data-breakout');
+            const wide = window.innerWidth >= (threshold[block.dataset.kind ?? ''] ?? 1500);
             const col = columnWidth(block);
             if (wide && col > 0 && requiredWidth(block) > col + 1) {
+              setBreakoutMargins(outer);
               outer.setAttribute('data-breakout', '');
             } else {
-              outer.removeAttribute('data-breakout');
+              outer.style.removeProperty('--breakout-left');
+              outer.style.removeProperty('--breakout-right');
+              outer.style.removeProperty('--breakout-figure-align');
             }
             // Reading scrollWidth/clientWidth here forces the layout to
             // reflect the attribute change just made above.
@@ -416,9 +474,9 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
             apply();
           });
         };
-        const bound = new Set();
+        const bound = new Set<HTMLElement>();
         const ro = 'ResizeObserver' in window ? new ResizeObserver(schedule) : null;
-        const bind = (block) => {
+        const bind = (block: HTMLElement) => {
           if (bound.has(block)) return;
           bound.add(block);
           blocks.push(block);
@@ -437,7 +495,7 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
         // well after this script's first pass, so a MutationObserver
         // re-scans for newly inserted matches instead of a one-time
         // querySelectorAll (mirrors the scroll-affordance script above).
-        const scan = () => document.querySelectorAll(sel).forEach(bind);
+        const scan = () => document.querySelectorAll<HTMLElement>(sel).forEach(bind);
         scan();
         apply();
         addEventListener('resize', schedule, { passive: true });
