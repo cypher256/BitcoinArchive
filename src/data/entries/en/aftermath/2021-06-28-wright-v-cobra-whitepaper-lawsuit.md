@@ -50,4 +50,14 @@ He chose to protect his anonymity.
 
 Cobra [responded publicly the same day](/BitcoinArchive/entries/aftermath/2021-06-28-cobra-response-to-whitepaper-ruling/), arguing that rules enforced through cryptography are superior to rules enforced by whoever can outspend an opponent in court.
 
+```mermaid
+flowchart TD
+    SUES["Feb 2021<br/>Wright sues<br/>pseudonymous Cobra"] --> JUDGMENT["Jun 28, 2021<br/>Default judgment for Wright<br/>(can't defend without unmasking)"]
+    JUDGMENT --> REBUTTAL["Same day<br/>Cobra's public rebuttal"]
+    JUDGMENT -.->|"~3 years later"| COPA["Mar 2024<br/>COPA v Wright:<br/>Wright is not Satoshi"]
+    COPA --> SETASIDE["Jul 2024<br/>Court sets aside<br/>the 2021 judgment"]
+    %% link: REBUTTAL /BitcoinArchive/entries/aftermath/2021-06-28-cobra-response-to-whitepaper-ruling/
+    %% link: COPA /BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/
+```
+
 This ruling was later rendered meaningless when the UK High Court ruled in COPA v. Wright (March 2024) that Craig Wright is not Satoshi Nakamoto and therefore has no claim to authorship of the Bitcoin whitepaper. The Bitcoin whitepaper remains freely available on numerous websites worldwide.

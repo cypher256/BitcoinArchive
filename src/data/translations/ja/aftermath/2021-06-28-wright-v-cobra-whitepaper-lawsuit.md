@@ -51,4 +51,14 @@ Cobra は、身元を明かして匿名性を失うか、欠席判決を受け�
 
 [Cobra は同日に公に反応し](/BitcoinArchive/ja/entries/aftermath/2021-06-28-cobra-response-to-whitepaper-ruling/)、暗号によって執行される規則は、法廷で相手より多く金を使える者が決める規則より優れていると論じた。
 
+```mermaid
+flowchart TD
+    SUES["2021年2月<br/>ライトが匿名の<br/>Cobraを提訴"] --> JUDGMENT["2021年6月28日<br/>ライト勝訴の欠席判決<br/>(身元を明かさず弁護不可)"]
+    JUDGMENT --> REBUTTAL["同日<br/>Cobraの公開反論"]
+    JUDGMENT -.->|"約3年後"| COPA["2024年3月<br/>COPA対ライト:<br/>ライトはサトシではない"]
+    COPA --> SETASIDE["2024年7月<br/>裁判所が2021年の<br/>判決を取り消し"]
+    %% link: REBUTTAL /BitcoinArchive/ja/entries/aftermath/2021-06-28-cobra-response-to-whitepaper-ruling/
+    %% link: COPA /BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/
+```
+
 この判決は、2024 年 3 月の英国高等法院による COPA 対ライト判決で事実上無効となった。クレイグ・ライトはサトシ・ナカモトではなく、ビットコインホワイトペーパーの著作権を主張する根拠がないと判断された。ビットコインホワイトペーパーは世界中の多数のウェブサイトで引き続き自由に入手可能である。

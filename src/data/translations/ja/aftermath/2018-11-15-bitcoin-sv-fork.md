@@ -44,6 +44,15 @@ inlineLinkKeywords:
 
 ハッシュ戦争は予測された再編成を生まなかった。両方のチェーンが各々のブロック履歴を蓄積し、取引所 (Coinbase、Bitfinex、Kraken) は数日以内に両者を別資産として上場した。11 月末までに BCH のティッカーは Bitcoin ABC チェーンに残り、SV のティッカーがビットコイン SV チェーンに新設された。両チェーンはそれ以降、独立に動作し続けている。
 
+```mermaid
+flowchart TD
+    DISPUTE["2018年10月<br/>ABC対SVの<br/>プロトコル対立"] --> POOLS["マイニングプールが<br/>陣営別に整列"]
+    POOLS --> HASHWAR["2018年11月15日<br/>ハッシュ戦争開始"]
+    HASHWAR --> NOREORG["再編成なし<br/>両チェーン存続"]
+    NOREORG -.->|"数年後"| COPA["2024年3月<br/>COPA対ライト:<br/>サトシ主張を否定"]
+    %% link: COPA /BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/
+```
+
 ビットコイン SV のその後の歴史は、クレイグ・ライトのサトシ・ナカモト主張を巡る長期的な法廷闘争に支配された。主張は [COPA v Wright (2024 年 3 月 14 日)](/BitcoinArchive/ja/entries/aftermath/2024-03-14-copa-v-wright-ruling/) でイングランド・ウェールズ高等法院により決定的に否定された。判決は、ライトが文書を偽造しサトシではないと認定した。ただし BSV チェーン自体はライトの正体主張とは技術的に独立している。チェーンは 2018 年 11 月 15 日の分裂時に選ばれたパラメーター集合のまま、COPA の判決とは無関係に動作し続けている。
 
 2018 年 11 月 15 日の分裂は、[2017 年 8 月 1 日のビットコインキャッシュフォーク](/BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/)に続く、ビットコイン系譜における二度目の重大な決裂である。これはまた、ビットコインの家系図のなかで持続的なネットワーク占有率を生んだ最後のプロトコル分岐チェーンでもある。それ以降のフォーク (Bitcoin ABC 自体の 2020 年の BCH と BCHA への分裂、雑多な「Bitcoin Diamond」「Super Bitcoin」等のローンチ) は、実質的な存在感を持つチェーンではなく、出来高の薄いニッチチェーンしか生んでいない。全経緯は[ビットコイン系譜の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)に記録されている。

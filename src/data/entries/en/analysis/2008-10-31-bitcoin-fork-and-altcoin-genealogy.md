@@ -135,6 +135,25 @@ Hard forks of the Bitcoin protocol that produced a separate chain. Soft forks (S
 | 2017-11-08 | [SegWit2x — cancelled](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) | [Mike Belshe](/BitcoinArchive/participants/mike-belshe/) (BitGo co-founder, Bitcoin custody) et al. (New York Agreement signatories from major Bitcoin companies) | Planned 2 MB hard fork at block 494784 | Cancelled about a week before activation; no fork occurred |
 | 2018-11-15 | [Bitcoin SV (BSV)](/BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/) | Craig Wright, Calvin Ayre (nChain) | 128 MB blocks, restored "original" opcodes | Survived 2018 hash war split from BCH; further reduced share after Wright loses COPA v Wright (2024) |
 
+Not every attempt above produced a lasting split, and not every split came directly from Bitcoin:
+
+```mermaid
+flowchart TD
+    BTC["Bitcoin (2009)"]
+    BTC -.->|"proposed, never activated"| XT["Bitcoin XT (2015)"]
+    BTC -.->|"proposed, never activated"| CLASSIC["Bitcoin Classic (2016)"]
+    BTC -.->|"proposed, never activated"| UNLIMITED["Bitcoin Unlimited (2016)"]
+    BTC -->|"forked"| BCH["Bitcoin Cash (2017)"]
+    BTC -->|"forked"| BTG["Bitcoin Gold (2017)"]
+    BCH -->|"forked"| BSV["Bitcoin SV (2018)"]
+    %% link: BTC /BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/
+    %% link: XT /BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/
+    %% link: BCH /BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/
+    %% link: BSV /BitcoinArchive/entries/aftermath/2018-11-15-bitcoin-sv-fork/
+```
+
+Bitcoin SV is a fork of a fork, not a fork of Bitcoin itself — the hash war that produced it was fought inside the Bitcoin Cash chain, over a year after Bitcoin Cash had already split from Bitcoin.
+
 The 2015-2017 entries are the **block-size war** chapter — block size was the explicit issue, but the deeper question was protocol governance: who decides Bitcoin's parameters when the network's developers, miners, and businesses disagree. The eventual answer was that the conservative Bitcoin Core development culture held the main chain (with SegWit instead of a block-size hard fork), and the proposers who wanted larger blocks split off via Bitcoin Cash. SegWit2x was the New York Agreement compromise that would have shipped a 2 MB hard fork on the main chain three months after SegWit; its 11th-hour cancellation by [Mike Belshe](/BitcoinArchive/entries/aftermath/2017-11-08-segwit2x-cancellation/) ended the dispute on the main-chain side.
 
 For a structural reading of *why* the 2015-2017 disputes ran as identity contests rather than ordinary OSS disagreements — covering the post-2011 authority vacuum, the economic weight on rule choices, and Bitcoin's three-layer separation (protocol / software / currency) that has no analogue in ordinary OSS — see [the fork-wars-as-not-OSS analysis](/BitcoinArchive/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/).

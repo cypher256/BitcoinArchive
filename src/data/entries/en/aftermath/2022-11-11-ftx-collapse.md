@@ -36,14 +36,17 @@ inlineLinkKeywords:
 On November 11, 2022, FTX Trading Ltd. — along with Alameda Research and over 130 affiliated entities — filed for Chapter 11 bankruptcy in U.S. Bankruptcy Court. Founder Sam Bankman-Fried (SBF) resigned as CEO.
 
 ## Timeline
-- **November 2, 2022:** CoinDesk reported that Alameda Research's balance sheet was heavily composed of FTT (FTX's own token)
-- **November 6, 2022:** Binance CEO Changpeng Zhao announced Binance would sell its FTT holdings
-- **November 8, 2022:** FTX halted customer withdrawals; Binance signed a non-binding letter of intent to acquire FTX
-- **November 9, 2022:** Binance withdrew from the deal after reviewing FTX's financials
-- **November 11, 2022:** FTX filed for bankruptcy; SBF resigned
-- **December 12, 2022:** SBF arrested in the Bahamas
-- **November 2, 2023:** SBF convicted on all seven criminal counts
-- **March 28, 2024:** SBF sentenced to 25 years in prison
+
+```mermaid
+flowchart LR
+    REPORT["Nov 2, 2022<br/>CoinDesk reveals<br/>Alameda's FTT-heavy<br/>balance sheet"] --> CZSELL["Nov 6, 2022<br/>CZ announces Binance<br/>will sell its FTT"]
+    CZSELL --> HALT["Nov 8, 2022<br/>Withdrawals halted;<br/>Binance LOI signed"]
+    HALT --> WITHDRAW["Nov 9, 2022<br/>Binance withdraws<br/>from the deal"]
+    WITHDRAW --> BANKRUPTCY["Nov 11, 2022<br/>Bankruptcy filed;<br/>SBF resigns"]
+    BANKRUPTCY -.->|"weeks later"| ARREST["Dec 12, 2022<br/>SBF arrested<br/>in the Bahamas"]
+    ARREST --> CONVICTED["Nov 2, 2023<br/>Convicted on<br/>all 7 counts"]
+    CONVICTED --> SENTENCED["Mar 28, 2024<br/>Sentenced to<br/>25 years"]
+```
 
 Approximately **$8 billion** in customer funds had been misappropriated. Federal prosecutors called it "one of the biggest financial frauds in American history." John J. Ray III, appointed as the new CEO to oversee bankruptcy proceedings, described it as the worst case of corporate governance failure he had ever seen — worse than Enron.
 

@@ -134,6 +134,25 @@ inlineLinkKeywords:
 | 2017-11-08 | [SegWit2x — 中止](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/) | [マイク・ベルシェ](/BitcoinArchive/ja/participants/mike-belshe/) (BitGo 共同創業者、ビットコイン保管事業) 他 (ニューヨーク合意の主要ビットコイン事業者の署名者) | ブロック 494784 での 2 MB ハードフォーク予定 | 有効化約 1 週間前に中止。分岐は発生せず |
 | 2018-11-15 | [ビットコイン SV (BSV)](/BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/) | クレイグ・ライト、カルヴィン・エア (nChain) | 128 MB ブロック、「オリジナル」オペコードを復活 | 2018 年の BCH ハッシュ戦争分裂を生き残る。COPA v Wright (2024) でライト敗訴後、占有率はさらに減少 |
 
+上表のすべての試みが持続的な分裂を生んだわけではなく、すべての分裂がビットコインから直接生まれたわけでもない:
+
+```mermaid
+flowchart TD
+    BTC["ビットコイン<br/>(2009年)"]
+    BTC -.->|"提案のみ<br/>未発動"| XT["Bitcoin XT<br/>(2015年)"]
+    BTC -.->|"提案のみ<br/>未発動"| CLASSIC["Bitcoin Classic<br/>(2016年)"]
+    BTC -.->|"提案のみ<br/>未発動"| UNLIMITED["Bitcoin Unlimited<br/>(2016年)"]
+    BTC -->|"分岐"| BCH["ビットコインキャッシュ<br/>(2017年)"]
+    BTC -->|"分岐"| BTG["ビットコインゴールド<br/>(2017年)"]
+    BCH -->|"分岐"| BSV["ビットコインSV<br/>(2018年)"]
+    %% link: BTC /BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/
+    %% link: XT /BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/
+    %% link: BCH /BitcoinArchive/ja/entries/aftermath/2017-08-01-bitcoin-cash-fork/
+    %% link: BSV /BitcoinArchive/ja/entries/aftermath/2018-11-15-bitcoin-sv-fork/
+```
+
+ビットコインSV は分岐の分岐であり、ビットコイン自体からの分岐ではない。これを生んだハッシュ戦争は、ビットコインキャッシュがビットコインから分裂してから 1 年以上を経て、そのビットコインキャッシュのチェーン内部で戦われたものだ。
+
 2015 ~ 2017 年の項目群は **ブロックサイズ戦争** の章である。表面上の争点はブロックサイズだったが、より深い問いはプロトコルガバナンスにあった。開発者・マイナー・事業者が合意できないとき、ビットコインのパラメーターを誰が決めるのか、という問いである。最終的な答えは、保守的な Bitcoin Core の開発文化が本体チェーンを保持し (ブロックサイズのハードフォークではなく SegWit を採用)、より大きなブロックを望んだ提案者たちがビットコインキャッシュとして分裂する、という形になった。SegWit2x はニューヨーク合意の妥協案で、SegWit から 3 ヶ月後に本体チェーンで 2 MB のハードフォークを行う計画だった。[マイク・ベルシェ](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/)による土壇場での中止が、本体チェーン側の論争を終わらせた。
 
 2015 ~ 2017 年の論争が普通のオープンソース対立ではなくアイデンティティの争奪戦として展開した*構造的理由*には、2011 年以後の権威の真空、規則決定の上に積み上がった経済的重み、そして普通のオープンソースには対応物のないビットコインの三層分離 (プロトコル / ソフトウェア / 通貨) がある。これらについては[ビットコインのフォーク戦争はオープンソースの話ではない](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)を参照。

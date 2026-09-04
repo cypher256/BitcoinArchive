@@ -44,6 +44,15 @@ In the days leading to November 15, mining pools aligned with each side. CoinGee
 
 The hash war did not produce the predicted reorganization. Both chains accumulated their own block history; exchanges (Coinbase, Bitfinex, Kraken) listed both as separate assets within days. By late November the BCH ticker remained on the Bitcoin ABC chain, and the SV ticker was created for the Bitcoin SV chain. The two chains have continued operating independently since.
 
+```mermaid
+flowchart TD
+    DISPUTE["Oct 2018<br/>ABC vs SV protocol dispute"] --> POOLS["Mining pools<br/>align by side"]
+    POOLS --> HASHWAR["Nov 15, 2018<br/>hash war begins"]
+    HASHWAR --> NOREORG["No reorg —<br/>both chains persist"]
+    NOREORG -.->|"years later"| COPA["Mar 2024<br/>COPA v Wright:<br/>Satoshi claim rejected"]
+    %% link: COPA /BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/
+```
+
 Bitcoin SV's subsequent history was dominated by Craig Wright's protracted legal claim to be Satoshi Nakamoto. The claim was definitively rejected by the High Court of England and Wales in [COPA v Wright (March 14, 2024)](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/), which found Wright had forged documents and was not Satoshi. The BSV chain itself, however, is technically distinct from Wright's identity claim — the chain continues to operate as the parameter set chosen at the November 15, 2018 split, regardless of the COPA outcome.
 
 The November 15, 2018 split is the second major fracture in the Bitcoin lineage, after the [August 1, 2017 Bitcoin Cash fork](/BitcoinArchive/entries/aftermath/2017-08-01-bitcoin-cash-fork/). It is also the last protocol-fork chain in the Bitcoin family tree to have produced lasting network share. Subsequent forks (Bitcoin ABC's own 2020 split into BCH and BCHA, miscellaneous "Bitcoin Diamond" / "Super Bitcoin" launches) have produced thinly-traded niche chains rather than chains with substantive presence. The full sequence is recorded in [the Bitcoin family-tree analysis](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/).

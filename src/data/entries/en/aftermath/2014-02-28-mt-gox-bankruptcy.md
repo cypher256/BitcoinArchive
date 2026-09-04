@@ -39,9 +39,13 @@ relatedEntries:
 On February 28, 2014, Mt. Gox — once the world's largest Bitcoin exchange, handling approximately 70% of all Bitcoin transactions at its peak — filed for bankruptcy protection in Tokyo District Court.
 
 ## Timeline
-- **February 7, 2014:** Mt. Gox halted all Bitcoin withdrawals
-- **February 24, 2014:** The website went blank and trading was suspended
-- **February 28, 2014:** Bankruptcy filing in Tokyo; CEO Mark Karpeles held a press conference
+
+```mermaid
+timeline
+    2014 : Feb 7 — Withdrawals halted
+         : Feb 24 — Site goes blank, trading suspended
+         : Feb 28 — Bankruptcy filed in Tokyo; press conference
+```
 
 At the press conference, Karpeles revealed that approximately **850,000 BTC** had been lost — 750,000 BTC belonging to customers and 100,000 BTC belonging to the company — worth approximately $450 million at the time. On March 20, 2014, Mt. Gox reported finding 199,999.99 BTC in an old wallet, reducing the total loss to approximately 650,000 BTC.
 

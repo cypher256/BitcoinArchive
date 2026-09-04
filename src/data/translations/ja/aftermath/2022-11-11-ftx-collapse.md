@@ -37,14 +37,17 @@ translationStatus: complete
 2022年11月11日、FTX Trading Ltd.は、Alameda Research および 130 以上の関連会社と共に、米国破産裁判所に連邦破産法第 11 章の適用を申請した。創業者サム・バンクマン＝フリード（SBF）は CEO を辞任した。
 
 ## タイムライン
-- **2022年11月2日：** CoinDesk が Alameda Research のバランスシートの大部分が FTT（FTX の独自トークン）で構成されていると報道
-- **2022年11月6日：** Binance CEO チャンポン・ジャオが Binance の FTT 保有分を売却すると発表
-- **2022年11月8日：** FTX が顧客出金を停止、Binance が FTX 買収の拘束力のない意向書に署名
-- **2022年11月9日：** Binance が FTX の財務を精査後、買収から撤退
-- **2022年11月11日：** FTX が破産申請、SBF が辞任
-- **2022年12月12日：** SBF がバハマで逮捕
-- **2023年11月2日：** SBF が 7 つの刑事罪すべてで有罪判決
-- **2024年3月28日：** SBF に禁固 25年の刑を宣告
+
+```mermaid
+flowchart LR
+    REPORT["2022年11月2日<br/>CoinDeskが<br/>Alamedaの<br/>FTT偏重を報道"] --> CZSELL["2022年11月6日<br/>CZがBinanceの<br/>FTT売却を発表"]
+    CZSELL --> HALT["2022年11月8日<br/>出金停止<br/>Binanceが<br/>LOI署名"]
+    HALT --> WITHDRAW["2022年11月9日<br/>Binanceが<br/>買収から撤退"]
+    WITHDRAW --> BANKRUPTCY["2022年11月11日<br/>破産申請<br/>SBFが辞任"]
+    BANKRUPTCY -.->|"数週間後"| ARREST["2022年12月12日<br/>SBFがバハマで逮捕"]
+    ARREST --> CONVICTED["2023年11月2日<br/>7つの罪すべてで<br/>有罪判決"]
+    CONVICTED --> SENTENCED["2024年3月28日<br/>禁固25年の<br/>刑を宣告"]
+```
 
 約 **80 億ドル** の顧客資金が流用されていた。連邦検察はこれを「アメリカ史上最大級の金融詐欺」と呼んだ。破産手続きを監督する新 CEO に任命された John J. Ray III は、これまで見た中で最悪のコーポレートガバナンスの失敗、それも Enron よりも酷いと表現した。
 
