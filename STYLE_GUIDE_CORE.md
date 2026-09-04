@@ -568,6 +568,24 @@ remains the fallback for primary-source entries without one. Renaming
 or removing a hero image therefore changes the page's social-share
 card, not just its body.
 
+**Interaction with `editorNote` (Role A, see [§ Editorial Markers](#editorial-markers))**:
+`editorNote` would otherwise render before `<Content />` in
+`src/pages/entries/[...slug].astro` (and its JA mirror), pushing the
+hero image — `<Content />`'s own first rendered paragraph — below it.
+The template must instead hoist an explicit `<img class="hero-hoisted">`
+above the `editorNote` box whenever an entry has both, and hide the
+duplicate `<Content />` still renders inline, so the hero image stays
+the page's topmost visual element regardless of whether the entry also
+carries an editor's note.
+
+This does **not** extend to `design` entries' `DesignSeriesNav` box,
+which deliberately renders before the hero image despite being the
+same kind of chrome between `EntryMeta` and `<Content />`: a reader
+jumping between the 12 series pages needs that navigation box in the
+same fixed position on every page, which requires it to precede the
+hero image rather than follow it. Do not "fix" this into hero-first
+without an explicit decision to change that navigation behavior.
+
 ## Link Integrity
 
 Inline links in body prose must satisfy a simple invariant: the

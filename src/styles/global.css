@@ -117,6 +117,22 @@
   --rhythm-block: 5rem;
   --rhythm-cluster: 1.25rem;
 
+  /* Gap directly below whatever sits just above a body-opening element:
+     entry-content / biography-content's own padding-top (below the
+     header, or below editorNote/DesignSeriesNav when those precede the
+     body), hero-hoisted-wrap's padding-top (the hoisted hero <img> for
+     entries that also have editorNote, directly below the header), and
+     DesignSeriesNav's top margin on design entries (also directly below
+     the header). A distinct role from --rhythm-block/--rhythm-cluster
+     above (which govern spacing between components within or after the
+     body) -- this one is the fixed gap opening a body-like block,
+     wherever one starts on the page. Previously DesignSeriesNav's top
+     margin reused --rhythm-block itself (5rem), which is scoped to
+     end-of-article component spacing, not this role -- it produced a
+     visibly oversized gap above the nav that every other entry type's
+     1.5rem didn't have. */
+  --gap-header-to-body: 1.5rem;
+
   /* ---- Semantic color aliases (only the consumed ones remain) ---- */
   --color-bg-quote: var(--color-source-bg);
   --color-divider: var(--color-border);
@@ -494,10 +510,16 @@ h4 { font-size: 1.1rem; font-weight: 600; }
    what follows the body (special chart components, thread-banner,
    RelatedEntries, SourceCitation) already collapses cleanly against it
    via each one's own margin-top — see --rhythm-block near the top of
-   this file. */
+   this file. .hero-hoisted-wrap ([...slug].astro's hoisted <img> for
+   entries that also have editorNote) plays the same "first thing below
+   the header" role, so it shares this padding rather than getting its
+   own margin -- the wrapper exists so the padding lands on a plain div
+   instead of directly on .hero-hoisted, which would eat into the
+   image's own aspect-ratio-governed box. */
 .entry-content,
-.biography-content {
-  padding-top: 1.5rem;
+.biography-content,
+.hero-hoisted-wrap {
+  padding-top: var(--gap-header-to-body);
 }
 
 /* Exception: entry-content merged onto MessageBlock's .message-body
@@ -1166,7 +1188,8 @@ img {
   margin-top: 0;
 }
 .entry-content img[src*="/images/analysis/"][src$="-hero.png"],
-.biography-content img[src*="/images/analysis/"][src$="-hero.png"] {
+.biography-content img[src*="/images/analysis/"][src$="-hero.png"],
+.hero-hoisted {
   aspect-ratio: 16 / 9;
   width: 100%;
   display: block;
@@ -1178,11 +1201,24 @@ img {
      eats a large share of the image's width, and the fixed 16:9 ratio
      already reads as a deliberate banner rather than inline body art. */
   .entry-content img[src*="/images/analysis/"][src$="-hero.png"],
-  .biography-content img[src*="/images/analysis/"][src$="-hero.png"] {
+  .biography-content img[src*="/images/analysis/"][src$="-hero.png"],
+  .hero-hoisted {
     width: calc(100% + 2rem);
     max-width: calc(100% + 2rem);
     margin-inline: -1rem;
   }
+}
+
+/* When an entry has both an editorNote and a hero image, [...slug].astro
+   (and its JA mirror) hoist an explicit <img class="hero-hoisted"> above
+   the editorNote box so the hero stays the page's topmost visual element
+   (STYLE_GUIDE_CORE.md "Hero Images" x editorNote). <Content /> still
+   renders the same image inline as the body's first paragraph -- Astro's
+   render() output can't be string-edited to remove it -- so hide that
+   duplicate by its wrapping <p>, not just the <img>, or the paragraph's
+   own margin leaves a blank gap where the image used to be. */
+.entry-content--hero-hoisted > p:first-child {
+  display: none;
 }
 
 /* Mermaid mindmap: force light text on root and node labels in dark mode.

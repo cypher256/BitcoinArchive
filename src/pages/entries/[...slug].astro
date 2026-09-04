@@ -165,9 +165,28 @@ const titleAvatarLabel = isEditorialType ? t('site.title') : titleAvatarParticip
 // rewrites it per deployment at build), while BaseHead wants a
 // base-stripped path to prepend PRIMARY_ORIGIN to — capture without it.
 const heroOgMatch = (entry.body ?? '').match(
-  /!\[[^\]]*\]\((?:\/BitcoinArchive)?(\/images\/analysis\/[^)\s]+-hero\.png)\)/,
+  /!\[([^\]]*)\]\((?:\/BitcoinArchive)?(\/images\/analysis\/[^)\s]+-hero\.png)\)/,
 );
-const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
+const heroOgImage = heroOgMatch ? heroOgMatch[2] : null;
+// editorNote (Role A) would otherwise render before <Content /> and push
+// the hero image -- <Content />'s first rendered paragraph -- below it.
+// Hoist an explicit copy above editorNote whenever both exist (see
+// STYLE_GUIDE_CORE.md "Hero Images" x editorNote) and hide the duplicate
+// <Content /> still renders inline via the entry-content--hero-hoisted
+// class below. Unlike heroOgImage above (which deliberately matches the
+// first hero reference anywhere in the body, for OG-image purposes),
+// this hoist must only fire when the match is truly the body's first
+// line -- otherwise it would hide an unrelated leading paragraph via
+// entry-content--hero-hoisted's `> p:first-child` rule while hoisting an
+// image from further down the body.
+const heroImageAlt = heroOgMatch ? heroOgMatch[1] : null;
+const heroIsFirstLine = Boolean(heroOgMatch) && (entry.body ?? '').slice(0, heroOgMatch.index).trim() === '';
+// design entries keep DesignSeriesNav before the hero image on purpose
+// (series navigation needs a fixed position across all 12 pages -- see
+// STYLE_GUIDE_CORE.md "Hero Images" x editorNote) -- hoisting here would
+// silently defeat that even though no design entry currently has
+// editorNote.
+const hoistHero = entry.data.type !== 'design' && Boolean(entry.data.editorNote) && Boolean(heroOgImage) && heroIsFirstLine;
 ---
 
 <BaseLayout
@@ -220,6 +239,18 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
       />
     </header>
 
+    {hoistHero && heroOgImage && (
+      <div class="hero-hoisted-wrap">
+        <img
+          src={`${base}${heroOgImage.replace(/^\//, '')}`}
+          alt={heroImageAlt}
+          width="1600"
+          height="900"
+          class="hero-hoisted"
+        />
+      </div>
+    )}
+
     <ParentLink lang={lang} partOf={entry.data.partOf} />
 
     {isMessageBlockType && (
@@ -251,7 +282,7 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
         <Content />
       </MessageBlock>
     ) : (
-      <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation }]}>
+      <div class:list={["entry-content", { "conversation-thread": entry.data.isConversation, "entry-content--hero-hoisted": hoistHero }]}>
         <Content />
       </div>
     )}

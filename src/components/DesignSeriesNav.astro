@@ -114,12 +114,21 @@ const l2Label = lang === 'ja' ? 'L2 — 横断・比較' : 'L2 — Cross-cutting
 
 <style>
   .design-series-nav {
-    /* Bottom side uses --rhythm-cluster, not --rhythm-block: every
+    /* Top side uses --gap-header-to-body, the same fixed gap
+       entry-content/biography-content/hero-hoisted-wrap use below the
+       header on every other entry type -- this nav plays that same
+       "first thing below the header" role on design entries. It
+       originally shipped at a literal 1.5rem (fdfc59cca) but was swept
+       into --rhythm-block (5rem) by a later, broader refactor
+       (9b8670038) meant for end-of-article component spacing, which
+       this isn't -- that produced a visibly oversized gap above the nav
+       (confirmed via Playwright, 2026-09-04) that no other entry type had.
+       Bottom side keeps --rhythm-cluster, not --rhythm-block: every
        design entry's body opens with a hero image (see STYLE_GUIDE_CORE.md
        "Hero Images"), itself a boxed visual block rather than prose, so
        this follows the same tightened-adjacency rule as
        .thread-banner + .thread-banner etc. in global.css. */
-    margin: var(--rhythm-block) 0 var(--rhythm-cluster);
+    margin: var(--gap-header-to-body) 0 var(--rhythm-cluster);
     padding: 0;
     border: 1px solid var(--color-border);
     border-radius: 6px;
