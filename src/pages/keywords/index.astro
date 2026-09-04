@@ -50,8 +50,9 @@ const structuredData = {
   lang={lang}
   alternateJa={absoluteUrl('/keywords/', 'ja')}
   structuredData={structuredData}
+  pageWidth="wide"
+  sidebarCurrentCategory="keywords"
 >
-  <div class="container-wide">
     <h1>{t('nav.keywords' as any)}</h1>
     <p class="page-lead">{t('keywords.description' as any)}</p>
     <div class="list-header">
@@ -72,7 +73,6 @@ const structuredData = {
         </li>
       ))}
     </ul>
-  </div>
 </BaseLayout>
 
 <script is:inline>

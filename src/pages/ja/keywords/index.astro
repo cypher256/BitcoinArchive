@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { useTranslations, localePath, absoluteUrl } from '../../../i18n/utils';
-import { keywordIndex, keywordSlugs, keywordLabel } from '../../../lib/keyword-index';
+import { keywordIndex, keywordSlugs } from '../../../lib/keyword-index';
 
 const lang = 'ja';
 const t = useTranslations(lang);
@@ -45,8 +45,9 @@ const structuredData = {
   lang={lang}
   alternateEn={absoluteUrl('/keywords/', 'en')}
   structuredData={structuredData}
+  pageWidth="wide"
+  sidebarCurrentCategory="keywords"
 >
-  <div class="container-wide">
     <h1>{t('nav.keywords' as any)}</h1>
     <p class="page-lead">{t('keywords.description' as any)}</p>
     <div class="list-header">
@@ -60,14 +61,13 @@ const structuredData = {
       {rows.map(({ kw, kind, count, slug }) => (
         <li data-name={kw} data-count={count}>
           <a href={localePath(`/keywords/${slug}/`, lang)}>
-            {keywordLabel(kw)}
+            {kw}
           </a>
           <span class="kind-badge">{kind === 'person' ? '人物' : '概念'}</span>
           <span class="count">({count})</span>
         </li>
       ))}
     </ul>
-  </div>
 </BaseLayout>
 
 <script is:inline>

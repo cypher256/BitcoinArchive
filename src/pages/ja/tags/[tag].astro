@@ -100,8 +100,9 @@ const structuredData = {
   lang={lang}
   alternateEn={hasEn ? absoluteUrl(`/tags/${tag}/`, 'en') : undefined}
   structuredData={structuredData}
+  pageWidth="wide"
+  sidebarCurrentCategory="tags"
 >
-  <div class="container-wide">
     <PrevNextNav
       top
       prev={prevTag ? { href: localePath(`/tags/${prevTag}/`, lang), label: translateTag(prevTag, lang) } : null}
@@ -163,7 +164,6 @@ const structuredData = {
         緩く関連する素材も探せます。
       </p>
     </aside>
-  </div>
 </BaseLayout>
 
 <style>

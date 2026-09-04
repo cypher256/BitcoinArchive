@@ -101,8 +101,9 @@ const structuredData = {
   lang={lang}
   alternateJa={hasJa ? absoluteUrl(`/tags/${tag}/`, 'ja') : undefined}
   structuredData={structuredData}
+  pageWidth="wide"
+  sidebarCurrentCategory="tags"
 >
-  <div class="container-wide">
     <PrevNextNav
       top
       prev={prevTag ? { href: localePath(`/tags/${prevTag}/`, lang), label: prevTag } : null}
@@ -165,7 +166,6 @@ const structuredData = {
         loosely-related material that the tag list above cannot.
       </p>
     </aside>
-  </div>
 </BaseLayout>
 
 <style>

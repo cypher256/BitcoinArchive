@@ -41,8 +41,9 @@ const structuredData = {
   lang={lang}
   alternateEn={absoluteUrl('/tags/', 'en')}
   structuredData={structuredData}
+  pageWidth="wide"
+  sidebarCurrentCategory="tags"
 >
-  <div class="container-wide">
     <h1>{t('nav.tags')}</h1>
     <div class="list-header">
       <input type="text" id="filter-input" class="filter-input" placeholder="フィルター..." autocomplete="off" />
@@ -61,7 +62,6 @@ const structuredData = {
         </li>
       ))}
     </ul>
-  </div>
 </BaseLayout>
 
 <script is:inline>

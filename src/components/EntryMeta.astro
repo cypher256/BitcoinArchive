@@ -1,7 +1,7 @@
 ---
 import { useTranslations, localePath, translateParticipantName, findAuthorParticipant, translateTag } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
-import { keywordCounts, keywordSlugs, keywordLabel as keywordLabelJa } from '../lib/keyword-index';
+import { keywordCounts, keywordSlugs } from '../lib/keyword-index';
 import EntryDates from './EntryDates.astro';
 import TypeIcon from './TypeIcon.astro';
 
@@ -155,7 +155,7 @@ const isSatoshiAuthor =
       const slug = keywordSlugs[lang]?.[kw];
       return (
         <>
-          {slug && <a class="defines-keyword" href={localePath(`/keywords/${slug}/`, lang)}>{lang === 'ja' ? keywordLabelJa(kw) : kw}<span class="defines-count"> ({n})</span></a>}
+          {slug && <a class="defines-keyword" href={localePath(`/keywords/${slug}/`, lang)}>{kw}<span class="defines-count"> ({n})</span></a>}
           {i < definedKeywords.length - 1 && <span class="defines-sep">&middot;</span>}
         </>
       );

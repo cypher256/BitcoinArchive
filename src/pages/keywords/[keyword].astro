@@ -103,8 +103,9 @@ const pageDescription =
   description={pageDescription}
   lang={lang}
   alternateJa={jaSlug ? absoluteUrl(`/keywords/${jaSlug}/`, 'ja') : null}
+  pageWidth="wide"
+  sidebarCurrentCategory="keywords"
 >
-  <div class="container-wide">
     <PrevNextNav
       top
       prev={prevKeyword && { href: localePath(`/keywords/${prevKeyword.slug}/`, lang), label: prevKeyword.label }}
@@ -187,7 +188,6 @@ const pageDescription =
         cannot.
       </p>
     </aside>
-  </div>
 </BaseLayout>
 
 <style>

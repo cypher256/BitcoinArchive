@@ -91,8 +91,8 @@ const structuredData = {
   lang={lang}
   alternateEn={absoluteUrl('/entries/', 'en')}
   structuredData={structuredData}
+  pageWidth="wide"
 >
-  <div class="container-wide">
     <h1>{t('nav.entries')}</h1>
     <p class="page-lead">サトシ・ナカモトと初期ビットコインの全一次資料を忠実に収録 — それらを繋ぐ編者による読み解きも。</p>
 
@@ -204,7 +204,6 @@ const structuredData = {
       <button type="button" id="show-more" class="show-more" hidden>もっと見る</button>
       <p id="no-results" class="no-results" hidden>一致するものがありません。語数を減らすか絞り込みを解除してください。</p>
     </div>
-  </div>
 </BaseLayout>
 
 <script is:inline src="https://cdn.jsdelivr.net/npm/algoliasearch@4.24.0/dist/algoliasearch-lite.umd.js"></script>

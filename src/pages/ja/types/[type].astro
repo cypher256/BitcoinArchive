@@ -91,8 +91,9 @@ const structuredData = {
   lang={lang}
   alternateEn={hasEn ? absoluteUrl(`/types/${type}/`, 'en') : undefined}
   structuredData={structuredData}
+  pageWidth="wide"
+  sidebarCurrentType={type}
 >
-  <div class="container-wide">
     <PrevNextNav
       top
       prev={prevType && { href: localePath(`/types/${prevType}/`, lang), label: t(`type.${prevType}` as any) || prevType }}
@@ -141,7 +142,6 @@ const structuredData = {
       initListSort('type-entries-list');
       initListFilter('type-entries-list', 'filter-input');
     </script>
-  </div>
 </BaseLayout>
 
 <style>

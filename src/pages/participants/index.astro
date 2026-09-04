@@ -50,8 +50,9 @@ const structuredData = {
   lang={lang}
   alternateJa={absoluteUrl('/participants/', 'ja')}
   structuredData={structuredData}
+  pageWidth="wide"
+  sidebarCurrentCategory="participants"
 >
-  <div class="container-wide">
     <h1>{t('nav.participants')}</h1>
     <div class="list-header">
       <input type="text" id="filter-input" class="filter-input" placeholder="Filter..." autocomplete="off" />
@@ -71,7 +72,6 @@ const structuredData = {
         </li>
       ))}
     </ul>
-  </div>
 </BaseLayout>
 
 <script is:inline>

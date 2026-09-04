@@ -1680,6 +1680,43 @@ pre[data-scroll="both"],
   }
 }
 
+/* Same sidebar mechanism, .container-wide (1200px hub/list pages, e.g.
+   /participants/) instead of .container (1000px reading pages). No
+   TOC on these pages (no body prose with ## headings to scan) -- the
+   sidebar carries only the category widget. Kept as a second rule
+   block, not a shared one, because the width math starts from a
+   different base token (--max-width-wide vs --max-width-read) and
+   combining them behind one selector would need the token itself
+   passed in, which plain CSS can't do across two different base
+   classes. */
+@media (min-width: 1200px) {
+  .container-wide.has-2col-sidebar {
+    --sidebar-w: 280px;
+    --sidebar-gap: 3.5rem;
+    --sidebar-pad: 2.5rem;
+    max-width: calc(var(--max-width-wide) + var(--sidebar-w) + var(--sidebar-gap) + (var(--sidebar-pad) * 2));
+    padding: 0 var(--sidebar-pad);
+    display: grid;
+    grid-template-columns: var(--sidebar-w) 1fr;
+    column-gap: var(--sidebar-gap);
+    align-items: start;
+  }
+  .container-wide.has-2col-sidebar > .entry-sidebar {
+    grid-column: 1;
+    position: sticky;
+    top: 5.5rem;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .container-wide.has-2col-sidebar > .entry-main-col {
+    grid-column: 2;
+    min-width: 0;
+  }
+}
+
 .entry-sidebar {
   display: none;
 }

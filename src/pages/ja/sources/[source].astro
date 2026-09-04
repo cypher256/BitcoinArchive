@@ -150,8 +150,9 @@ const structuredData = {
   lang={lang}
   alternateEn={hasEn ? absoluteUrl(`/sources/${source}/`, 'en') : undefined}
   structuredData={structuredData}
+  pageWidth="wide"
+  sidebarCurrentCategory="sources"
 >
-  <div class="container-wide">
     <PrevNextNav
       top
       prev={prevSource ? { href: localePath(`/sources/${prevSource}/`, lang), label: t(`source.${prevSource}` as any) || prevSource } : null}
@@ -252,7 +253,6 @@ const structuredData = {
         if (threadNum) threadNum.textContent = String(threads);
       });
     </script>
-  </div>
 </BaseLayout>
 
 <style>

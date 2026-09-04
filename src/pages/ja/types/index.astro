@@ -39,8 +39,8 @@ const structuredData = {
   lang={lang}
   alternateEn={absoluteUrl('/types/', 'en')}
   structuredData={structuredData}
+  pageWidth="wide"
 >
-  <div class="container-wide">
     <h1>{t('nav.types' as any)}</h1>
     <div class="list-header">
       <input type="text" id="filter-input" class="filter-input" placeholder="フィルター..." autocomplete="off" />
@@ -59,7 +59,6 @@ const structuredData = {
         </li>
       ))}
     </ul>
-  </div>
 </BaseLayout>
 
 <script is:inline>

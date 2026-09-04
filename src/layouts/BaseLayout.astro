@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import CategoryWidget from '../components/CategoryWidget.astro';
 import type { Lang } from '../i18n/ui';
 import '../styles/global.css';
 
@@ -30,9 +31,31 @@ interface Props {
       site-wide for a feature almost no page uses — see the KaTeX <link>
       below, gated on this flag instead of always present in <head>. */
   hasMath?: boolean;
+  /** PC-only 2-column sidebar (>=1200px; identical single-column render
+   * below that, see global.css .entry-sidebar). Set to opt a page into
+   * BaseLayout building the .container/.container-wide wrapper, the
+   * sidebar aside (category widget + optional page-specific extra via
+   * the `sidebar-extra` slot), and the .entry-main-col wrapper around
+   * the default slot -- one place instead of every page hand-rolling
+   * the same three elements. 'read' = .container (1000px, single-
+   * document pages); 'wide' = .container-wide (1200px, list/hub
+   * pages). Omit entirely for the handful of pages with their own
+   * bespoke width handling (novel/, cite citation table, etc.) --
+   * they keep rendering their own wrapper inside the plain <slot/>
+   * exactly as before. */
+  pageWidth?: 'read' | 'wide';
+  /** Highlights the matching row in the category widget's expanded
+   * type list -- pass the current entry's `type` on pages scoped to
+   * one type (an entry-detail page, a /types/{type}/ listing). */
+  sidebarCurrentType?: string;
+  /** Highlights the matching "other categories" link (sources/
+   * participants/tags/keywords) -- pass on that category's own index
+   * or detail pages, which have no entry `type` of their own to match
+   * against sidebarCurrentType. */
+  sidebarCurrentCategory?: 'sources' | 'participants' | 'tags' | 'keywords';
 }
 
-const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType, publishedTime, modifiedTime, author, noindex, ogImage, ogImageWidth, ogImageHeight, breadcrumbs, structuredData, hasMath = false } = Astro.props;
+const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType, publishedTime, modifiedTime, author, noindex, ogImage, ogImageWidth, ogImageHeight, breadcrumbs, structuredData, hasMath = false, pageWidth, sidebarCurrentType, sidebarCurrentCategory } = Astro.props;
 ---
 
 <!doctype html>
@@ -168,7 +191,19 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
   <body>
     <Header lang={lang} alternateHref={lang === 'ja' ? alternateEn : alternateJa} />
     <main>
-      <slot />
+      {pageWidth ? (
+        <div class:list={[pageWidth === 'wide' ? 'container-wide' : 'container', 'has-2col-sidebar']}>
+          <aside class="entry-sidebar">
+            <slot name="sidebar-extra" />
+            <CategoryWidget lang={lang} currentType={sidebarCurrentType} currentCategory={sidebarCurrentCategory} />
+          </aside>
+          <div class="entry-main-col">
+            <slot />
+          </div>
+        </div>
+      ) : (
+        <slot />
+      )}
     </main>
     <Footer lang={lang} />
     {/*

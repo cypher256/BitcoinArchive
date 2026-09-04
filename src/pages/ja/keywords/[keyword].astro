@@ -4,7 +4,7 @@ import EntryCard from '../../../components/EntryCard.astro';
 import PrevNextNav from '../../../components/PrevNextNav.astro';
 import { useTranslations, getEntries, localePath, absoluteUrl } from '../../../i18n/utils';
 import { buildThreadInfo, collapseThreads, resolveThreadId } from '../../../data/threads';
-import { keywordIndex, keywordLabel, keywordQuoted } from '../../../lib/keyword-index';
+import { keywordIndex } from '../../../lib/keyword-index';
 import { defaultSortAxis, dominantType, byDateAxisDesc, type SortAxis } from '../../../lib/dateAxis';
 import { siblingPrevNext } from '../../../lib/siblingNav';
 import gitDates from '../../../data/git-dates.json';
@@ -97,23 +97,24 @@ const definitionEntry = definitionKind === 'concept' && definitionTarget
 const searchHref = `${localePath('/entries/', lang)}?q=${encodeURIComponent(keyword)}`;
 
 const pageDescription =
-  `${keywordQuoted(keyword)} が言及されているエントリー一覧 — ` +
+  `「${keyword}」 が言及されているエントリー一覧 — ` +
   `アーカイブ全体での参照箇所をキーワード単位で見る。`;
 ---
 
 <BaseLayout
-  title={`${keywordLabel(keyword)} — キーワード参照 - ${t('site.title')}`}
+  title={`${keyword} — キーワード参照 - ${t('site.title')}`}
   description={pageDescription}
   lang={lang}
   alternateEn={enSlug ? absoluteUrl(`/keywords/${enSlug}/`, 'en') : null}
+  pageWidth="wide"
+  sidebarCurrentCategory="keywords"
 >
-  <div class="container-wide">
     <PrevNextNav
       top
-      prev={prevKeyword && { href: localePath(`/keywords/${prevKeyword.slug}/`, lang), label: keywordLabel(prevKeyword.label) }}
-      next={nextKeyword && { href: localePath(`/keywords/${nextKeyword.slug}/`, lang), label: keywordLabel(nextKeyword.label) }}
+      prev={prevKeyword && { href: localePath(`/keywords/${prevKeyword.slug}/`, lang), label: prevKeyword.label }}
+      next={nextKeyword && { href: localePath(`/keywords/${nextKeyword.slug}/`, lang), label: nextKeyword.label }}
     />
-    <h1>{keywordLabel(keyword)}</h1>
+    <h1>{keyword}</h1>
     <p class="page-lead">
       キーワード参照 — このワードを本文で言及しているエントリー。
     </p>
@@ -127,7 +128,7 @@ const pageDescription =
     {definitionKind === 'person' && definitionTarget && (
       <div class="definition-callout">
         <span class="definition-label">人物：</span>
-        <a href={localePath(`/participants/${definitionTarget}/`, lang)}>{keywordLabel(keyword)}</a>
+        <a href={localePath(`/participants/${definitionTarget}/`, lang)}>{keyword}</a>
       </div>
     )}
 
@@ -181,14 +182,13 @@ const pageDescription =
         本文で直接言及されていないが関連しそうなエントリーを探したい場合：
       </p>
       <a class="search-cta-link" href={searchHref}>
-        {keywordQuoted(keyword)} でアーカイブ全文をファジー検索 &rarr;
+        「{keyword}」 でアーカイブ全文をファジー検索 &rarr;
       </a>
       <p class="search-cta-note">
         検索は typo 許容・部分一致・前方一致を含むファジー方式。構造的な
         backlink 一覧では拾えない、緩く関連する素材も探せます。
       </p>
     </aside>
-  </div>
 </BaseLayout>
 
 <style>

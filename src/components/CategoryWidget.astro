@@ -33,9 +33,14 @@ import type { Lang } from '../i18n/ui';
 interface Props {
   lang: Lang;
   currentType?: string;
+  /** Highlights one of the 4 plain-link "other categories" rows below
+   * the type list -- set on the sources/participants/tags/keywords
+   * index pages themselves, which have no entry `type` of their own
+   * for currentType to match against. */
+  currentCategory?: 'sources' | 'participants' | 'tags' | 'keywords';
 }
 
-const { lang, currentType } = Astro.props;
+const { lang, currentType, currentCategory } = Astro.props;
 const t = useTranslations(lang);
 
 const EDITORIAL_TYPES = new Set(['article', 'analysis', 'design', 'currency']);
@@ -52,11 +57,11 @@ const types = Array.from(typeCounts.entries()).sort((a, b) => {
   return b[1] - a[1];
 });
 
-const otherCategories: { href: string; label: string }[] = [
-  { href: localePath('/sources/', lang), label: t('nav.sources' as any) },
-  { href: localePath('/participants/', lang), label: t('nav.participants' as any) },
-  { href: localePath('/tags/', lang), label: t('nav.tags' as any) },
-  { href: localePath('/keywords/', lang), label: t('nav.keywords' as any) },
+const otherCategories: { key: typeof currentCategory; href: string; label: string }[] = [
+  { key: 'sources', href: localePath('/sources/', lang), label: t('nav.sources' as any) },
+  { key: 'participants', href: localePath('/participants/', lang), label: t('nav.participants' as any) },
+  { key: 'tags', href: localePath('/tags/', lang), label: t('nav.tags' as any) },
+  { key: 'keywords', href: localePath('/keywords/', lang), label: t('nav.keywords' as any) },
 ];
 ---
 
@@ -74,8 +79,8 @@ const otherCategories: { href: string; label: string }[] = [
     ))}
   </ul>
   <ul class="other-categories">
-    {otherCategories.map(({ href, label }) => (
-      <li><a href={href}>{label}</a></li>
+    {otherCategories.map(({ key, href, label }) => (
+      <li><a href={href} aria-current={key === currentCategory ? 'page' : undefined}>{label}</a></li>
     ))}
   </ul>
 </nav>
@@ -114,7 +119,8 @@ const otherCategories: { href: string; label: string }[] = [
     background: var(--color-bg-alt);
     color: var(--color-text);
   }
-  .type-list a[aria-current='page'] {
+  .type-list a[aria-current='page'],
+  .other-categories a[aria-current='page'] {
     background: var(--color-bg-alt);
     color: var(--color-text);
     font-weight: 600;

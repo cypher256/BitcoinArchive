@@ -90,8 +90,8 @@ const structuredData = {
   lang={lang}
   alternateJa={absoluteUrl('/entries/', 'ja')}
   structuredData={structuredData}
+  pageWidth="wide"
 >
-  <div class="container-wide">
     <h1>{t('nav.entries')}</h1>
     <p class="page-lead">Every primary source of Satoshi Nakamoto and early Bitcoin, preserved verbatim — plus the archive's own editorial readings that connect them.</p>
 
@@ -203,7 +203,6 @@ const structuredData = {
       <button type="button" id="show-more" class="show-more" hidden>Show more</button>
       <p id="no-results" class="no-results" hidden>Nothing matches. Try fewer words or clear the filters.</p>
     </div>
-  </div>
 </BaseLayout>
 
 <script is:inline src="https://cdn.jsdelivr.net/npm/algoliasearch@4.24.0/dist/algoliasearch-lite.umd.js"></script>

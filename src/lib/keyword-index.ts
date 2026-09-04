@@ -70,30 +70,3 @@ export const keywordSlugs: Record<string, Record<string, string>> = {
   en: Object.fromEntries(Object.entries(keywordIndex.en?.slugs ?? {}).map(([slug, kw]) => [kw, slug])),
   ja: Object.fromEntries(Object.entries(keywordIndex.ja?.slugs ?? {}).map(([slug, kw]) => [kw, slug])),
 };
-
-/**
- * A handful of JA concept keywords are the untranslated original title of
- * an external work quoted verbatim in JA body prose (e.g. an aftermath
- * article citing the LessWrong post "Bitcoins are not digital greenbacks"
- * by its own name) -- correct per STYLE_GUIDE_REFERENCE.md's Auto-Link
- * Keywords section, not a translation gap (confirmed 2026-09-01). Left
- * bare, a full English title reads as if the JA page itself switched
- * language; JA body prose already marks exactly this case with corner
- * brackets (『...』) when citing an external title, so reuse that same
- * convention wherever such a keyword stands alone as a label. No per-
- * keyword classification is needed -- ANY keyword with no Japanese
- * characters gets this treatment uniformly, whether it's a citation like
- * this or a short technical term (Hashcash, UTXO): 『』 also reads
- * naturally in Japanese as "this exact term/name is being called out."
- * Shared here (rather than duplicated per page) so JA keyword detail
- * pages, the JA keyword index, and EntryMeta's "Defines:" row agree.
- */
-export const hasJapanese = (s: string): boolean => /[぀-ヿ㐀-鿿＀-￯]/.test(s);
-/** Standalone label position (H1, <title>, nav sibling labels, EntryMeta's
-    "Defines:" row) that currently shows the keyword bare with no
-    punctuation of its own. */
-export const keywordLabel = (kw: string): string => (hasJapanese(kw) ? kw : `『${kw}』`);
-/** Position that already wraps the keyword in JA quotation marks inside a
-    sentence ("「keyword」が言及...") -- swap to the same corner brackets for
-    an ASCII-only keyword instead of stacking bracket styles. */
-export const keywordQuoted = (kw: string): string => (hasJapanese(kw) ? `「${kw}」` : `『${kw}』`);

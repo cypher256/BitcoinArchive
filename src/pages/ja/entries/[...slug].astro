@@ -13,7 +13,6 @@ import DesignSeriesNav from '../../../components/DesignSeriesNav.astro';
 import ParentLink from '../../../components/ParentLink.astro';
 import PrevNextNav from '../../../components/PrevNextNav.astro';
 import TocNav from '../../../components/TocNav.astro';
-import CategoryWidget from '../../../components/CategoryWidget.astro';
 import { DESIGN_SERIES } from '../../../data/design-series';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from '../../../i18n/utils';
@@ -210,18 +209,16 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
   ogImageHeight={heroOgImage ? 900 : undefined}
   breadcrumbs={breadcrumbs}
   hasMath={hasMath}
+  pageWidth="read"
+  sidebarCurrentType={entry.data.type}
 >
-  <article class="container has-2col-sidebar">
-    <aside class="entry-sidebar">
-      <!-- Every entry type gets the sidebar, not just editorial types:
-           TocNav self-hides when its target has zero ## headings (all
-           7 non-bip/whitepaper primary-source types), so there is no
-           empty-box case -- the category widget alone still carries
-           its own value on those pages. -->
-      <TocNav lang={lang} contentSelector=".entry-content" />
-      <CategoryWidget lang={lang} currentType={entry.data.type} />
-    </aside>
-    <div class="entry-main-col">
+  <!-- Every entry type gets the sidebar TOC, not just editorial types:
+       TocNav self-hides when its target has zero ## headings (all 7
+       non-bip/whitepaper primary-source types), so there is no
+       empty-box case -- the category widget BaseLayout always adds
+       still carries its own value on those pages. -->
+  <TocNav slot="sidebar-extra" lang={lang} contentSelector=".entry-content" />
+  <article>
     <PrevNextNav
       top
       prev={prev && { href: localePath(`/entries/${prev.id}/`, lang), label: prev.data.title }}
@@ -355,7 +352,6 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
       prev={prev && { href: localePath(`/entries/${prev.id}/`, lang), label: prev.data.title }}
       next={next && { href: localePath(`/entries/${next.id}/`, lang), label: next.data.title }}
     />
-    </div>
   </article>
 
   {isEditorialType && <ChartEmbedRuntime />}

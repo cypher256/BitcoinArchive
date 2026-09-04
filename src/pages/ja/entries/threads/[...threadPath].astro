@@ -7,7 +7,6 @@ import MessageBlock from '../../../../components/MessageBlock.astro';
 import PrevNextNav from '../../../../components/PrevNextNav.astro';
 import commentariesData from '../../../../data/derived-commentaries.json';
 import ThreadTocNav from '../../../../components/ThreadTocNav.astro';
-import CategoryWidget from '../../../../components/CategoryWidget.astro';
 
 const commentariesMap = commentariesData as Record<string, { id: string }[]>;
 
@@ -120,13 +119,10 @@ const breadcrumbs = [
   alternateEn={hasEn ? absoluteUrl(`/entries/threads/${Astro.params.threadPath}/`, 'en') : undefined}
   ogImage={`/og/ja/threads/${Astro.params.threadPath}.png`}
   breadcrumbs={breadcrumbs}
+  pageWidth="read"
 >
-  <article class="container has-2col-sidebar">
-    <aside class="entry-sidebar">
-      <ThreadTocNav lang={lang} items={threadTocItems} />
-      <CategoryWidget lang={lang} />
-    </aside>
-    <div class="entry-main-col">
+  <ThreadTocNav slot="sidebar-extra" lang={lang} items={threadTocItems} />
+  <article>
     <PrevNextNav
       top
       prev={prevThread && { href: localePath(`/entries/threads/${prevThread.id}/`, lang), label: prevThread.title }}
@@ -191,7 +187,6 @@ const breadcrumbs = [
       prev={prevThread && { href: localePath(`/entries/threads/${prevThread.id}/`, lang), label: prevThread.title }}
       next={nextThread && { href: localePath(`/entries/threads/${nextThread.id}/`, lang), label: nextThread.title }}
     />
-    </div>
   </article>
 </BaseLayout>
 
