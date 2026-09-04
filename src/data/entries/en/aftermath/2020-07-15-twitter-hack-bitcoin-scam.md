@@ -27,7 +27,7 @@ relatedEntries:
 
 ![A dark illustration of a glowing broken padlock over an admin control panel, a row of silhouette profiles with verified badges (some marked with a red X), a Bitcoin coin splitting into two, and a blockchain ledger examined by a magnifying glass.](/BitcoinArchive/images/analysis/2020-07-15-twitter-hack-bitcoin-scam-hero.png)
 
-On July 15, 2020, Twitter experienced the largest security breach in its history when hackers compromised internal administrative tools and took control of accounts belonging to some of the world's most prominent individuals and organizations. The hijacked accounts, including those of Barack Obama, Joe Biden, Elon Musk, Bill Gates, Jeff Bezos, Apple, Uber, and the official Bitcoin account, were used to post messages promoting a Bitcoin scam.
+On July 15, 2020, Twitter experienced the largest security breach in its history when hackers compromised internal administrative tools and took control of accounts belonging to some of the world's most prominent individuals and organizations. The hijacked accounts, including those of Barack Obama, Joe Biden, Elon Musk, [Bill Gates](/BitcoinArchive/entries/aftermath/2013-05-06-bill-gates-bitcoin-technical-tour-de-force/), Jeff Bezos, Apple, Uber, and the official Bitcoin account, were used to post messages promoting a Bitcoin scam.
 
 The fraudulent tweets followed a common pattern, promising to double any Bitcoin sent to a specified address. A typical tweet read: "I am giving back to my community. All Bitcoin sent to my address below will be sent back doubled. If you send $1,000, I will send back $2,000!"
 

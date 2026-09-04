@@ -118,7 +118,7 @@ Read the mechanism closely and the gap is exactly where Satoshi later pointed: t
 
 ## The gap gets a name, ten days later
 
-[Adam Back](/BitcoinArchive/participants/adam-back/) read the proposal and replied on the Cypherpunks list before the month was out, naming seven monetary-design problems. The first one is this exact gap:
+[Adam Back](/BitcoinArchive/participants/adam-back/) read the proposal and [replied on the Cypherpunks list](/BitcoinArchive/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/) before the month was out, naming seven monetary-design problems. The first one is this exact gap:
 
 <!-- quote: q3 -->
 > "Inflation -- the cost of hardware to compute a given collision falls in line with Moores law. Perhaps one could get around this by defining a b-money unit to require more computational effort over time. Say define 1 b-money unit to be the computational effort of 1 months compute on the most efficient hardware that can be bought for $1000 at current prices and state of hardware."

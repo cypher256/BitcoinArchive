@@ -37,7 +37,7 @@ relatedEntries:
 
 > "He did not believe in God. He believed in the future."
 
-Fran Finney said this of her husband [Hal Finney](/BitcoinArchive/participants/hal-finney/) in a 2019 *Cryonics Magazine* interview — five years after his death. She had met Hal at Caltech: she was a junior when he arrived as a freshman, first seeing him during "rotation week" being "lifted and carried by [upperclassmen]." She remembered people clustering around him for philosophical discussions, because "when he spoke, what he said was usually worth listening to."
+Fran Finney said this of her husband [Hal Finney](/BitcoinArchive/participants/hal-finney/) in a [2019 *Cryonics Magazine* interview](/BitcoinArchive/entries/aftermath/2019-04-01-fran-finney-hal-finney-profile/) — five years after his death. She had met Hal at Caltech: she was a junior when he arrived as a freshman, first seeing him during "rotation week" being "lifted and carried by [upperclassmen]." She remembered people clustering around him for philosophical discussions, because "when he spoke, what he said was usually worth listening to."
 
 ## Bitcoin
 Fran witnessed Bitcoin's birth firsthand. When Hal downloaded and ran the software [on January 9, 2009](/BitcoinArchive/entries/aftermath/2009-01-09-bitcoin-v01-released/), she described his reaction: "This is cool. This is a fun game. Look! This is actually working!" (Hal himself later recalled in his [2013 "Bitcoin and Me" essay](/BitcoinArchive/entries/aftermath/2013-03-19-bitcoin-and-me-hal-finney/) that he stopped the early mining because his computer ran hot and the fan noise bothered him.)

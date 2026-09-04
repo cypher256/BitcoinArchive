@@ -118,7 +118,7 @@ flowchart LR
 
 ## その穴に名前がついたのは、10 日後
 
-[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)はこの提案を読み、月が変わる前に Cypherpunks リストへ返信し、7 つの金融設計上の問題を指摘した。1 つ目が、まさにこの穴だ。
+[アダム・バック](/BitcoinArchive/ja/participants/adam-back/)はこの提案を読み、月が変わる前に [Cypherpunks リストへ返信し](/BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/)、7 つの金融設計上の問題を指摘した。1 つ目が、まさにこの穴だ。
 
 <!-- quote: q3 -->
 > (1) インフレ——衝突を 1 つ計算するのに必要なハードウェアのコストは、ムーアの法則に沿って下落する。1 b-money 単位が要求する計算努力量を、時間とともに増やすよう定義すれば、これを回避できるかもしれない。例えば、1 b-money 単位を、現在の価格とハードウェアの状態のもとで 1000 ドルで買える最も効率的なハードウェアでの 1 か月分の計算努力、と定義する。

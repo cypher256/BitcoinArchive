@@ -39,7 +39,7 @@ inlineLinkKeywords:
 On October 6, 2022, security researcher SerHack published "The Story Behind the Alternative Genesis Block of Bitcoin," analyzing a pre-release version of Bitcoin's genesis block that predated the official launch by nearly four months.
 
 ## Discovery
-On December 23, 2013, BitcoinTalk user "Cryddit" ([Ray Dillinger](/BitcoinArchive/participants/ray-dillinger/), aka Bear) posted source code that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) had shared with him privately in November 2008 for a security audit. Dillinger reviewed the blockchain code while [Hal Finney](/BitcoinArchive/participants/hal-finney/) reviewed the scripting language. The code contained a genesis block with entirely different parameters from the one that launched on January 3, 2009.
+On December 23, 2013, BitcoinTalk user "Cryddit" ([Ray Dillinger](/BitcoinArchive/participants/ray-dillinger/), aka Bear) posted source code that [Satoshi Nakamoto](/BitcoinArchive/participants/satoshi-nakamoto/) had shared with him privately in November 2008 for a security audit. Dillinger reviewed the blockchain code while [Hal Finney](/BitcoinArchive/participants/hal-finney/) reviewed the scripting language. The code contained a genesis block with entirely different parameters from [the one that launched on January 3, 2009](/BitcoinArchive/entries/aftermath/2009-01-03-genesis-block/).
 
 ## The Pre-Release Genesis Block
 
