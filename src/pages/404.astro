@@ -37,9 +37,10 @@ const jaNav = {
   search: ui.ja['nav.search'],
   browse: ui.ja['nav.browse'],
   menu: ui.ja['nav.menu'],
-  footerHome: ui.ja['footer.description'],
   novel: ui.ja['footer.novel'],
   chart: ui.ja['footer.chart'],
+  cite: ui.ja['footer.cite'],
+  license: ui.ja['footer.license'],
   github: ui.ja['footer.github'],
   share: ui.ja['share.button'],
   shareCopied: ui.ja['share.copied'],
@@ -157,8 +158,6 @@ const jaNav = {
         var icon = a.querySelector('svg');
         a.textContent = jaNav.search;
         if (icon) a.prepend(icon);
-      } else if (a.classList.contains('footer-home-link')) {
-        a.textContent = jaNav.footerHome;
       } else if (a.classList.contains('novel-link')) {
         a.textContent = jaNav.novel;
       } else if (external) {
@@ -179,6 +178,10 @@ const jaNav = {
         a.textContent = jaNav.about;
       } else if (cpath === '/chart/') {
         a.textContent = jaNav.chart;
+      } else if (cpath === '/cite/') {
+        a.textContent = jaNav.cite;
+      } else if (cpath === '/license/') {
+        a.textContent = jaNav.license;
       }
     });
 

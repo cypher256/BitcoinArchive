@@ -209,6 +209,13 @@ const STATIC_PAGES: { slug: string; title: { en: string; ja: string } }[] = [
     },
   },
   {
+    slug: 'license',
+    title: {
+      en: 'License and reuse',
+      ja: 'ライセンスと再利用',
+    },
+  },
+  {
     // chart.astro has no <h1>; this matches its <title> tag (t('chart.title')).
     slug: 'chart',
     title: {

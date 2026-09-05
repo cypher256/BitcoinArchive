@@ -8,13 +8,22 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = useTranslations(lang);
+
+// Copyright years: the archive first went public in 2026 (initial commit
+// 2026-02-08). The end year is computed at build time, so it advances on
+// the first deploy of each new year without anyone editing this file.
+const FIRST_YEAR = 2026;
+const buildYear = new Date().getFullYear();
+const copyrightYears = buildYear > FIRST_YEAR ? `${FIRST_YEAR}–${buildYear}` : `${FIRST_YEAR}`;
+const licenseHref = localePath('/license/', lang);
 ---
 
 <footer class="site-footer">
-  <p class="footer-text">
-    <a href={localePath('/', lang)} class="footer-home-link">{t('footer.description')}</a>
-  </p>
   <p class="footer-links">
+    <a href={localePath('/about/', lang)}>{t('nav.about')}</a>
+    <span class="sep" aria-hidden="true">·</span>
+    <a href={localePath('/cite/', lang)}>{t('footer.cite' as any)}</a>
+    <span class="sep" aria-hidden="true">·</span>
     <a href={localePath('/novel/', lang)} class="novel-link">
       {t('footer.novel')}
     </a>
@@ -26,6 +35,11 @@ const t = useTranslations(lang);
     <a href="https://github.com/cypher256/BitcoinArchive" target="_blank" rel="noopener">
       {t('footer.github')}
     </a>
+  </p>
+  <p class="footer-legal">
+    <span>&copy; {copyrightYears} Bitcoin Institute</span>
+    <span class="sep" aria-hidden="true">·</span>
+    <a href={licenseHref}>{t('footer.license' as any)}</a>
   </p>
 </footer>
 
@@ -39,25 +53,34 @@ const t = useTranslations(lang);
     color: var(--color-text-muted);
     text-align: center;
   }
-  .footer-text {
-    margin: 0 0 0.5rem;
-  }
-  .footer-home-link {
-    color: var(--color-text-muted);
-  }
-  .footer-home-link:hover {
-    color: var(--color-text);
-  }
-  .footer-links {
+  .footer-links,
+  .footer-legal {
     margin: 0;
+    /* Each item stays on one line; the row wraps between items only, so
+       a narrow viewport never breaks a label mid-phrase. */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0.35rem;
   }
-  .footer-links a {
+  .footer-links a,
+  .footer-legal a,
+  .footer-legal span {
+    white-space: nowrap;
+  }
+  .footer-legal {
+    margin-top: 0.85rem;
+    font-size: 0.78rem;
+  }
+  .footer-links a,
+  .footer-legal a {
     color: var(--color-text-muted);
   }
-  .footer-links a:hover {
+  .footer-links a:hover,
+  .footer-legal a:hover {
     color: var(--color-text);
   }
-  .footer-links .sep {
+  .site-footer .sep {
     margin: 0 0.5rem;
     color: var(--color-border);
   }

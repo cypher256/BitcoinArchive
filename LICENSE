@@ -1,0 +1,50 @@
+MIT License
+
+Copyright (c) 2026 Bitcoin Institute
+
+This license covers the source code of this repository (the Astro site,
+components, styles, and scripts).
+
+It does not cover the archive's content. Editorial content (articles,
+analyses, biographies, design documents, currency profiles, their
+Japanese and English translations, and the diagrams and hero images
+made for them) is licensed under Creative Commons Attribution 4.0
+International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+That grant covers Bitcoin Institute's own writing and figures only;
+quotations from primary sources and other third-party material inside
+an editorial page stay under their own rights.
+
+Preserved primary sources (emails, forum posts, mailing-list messages,
+BIPs, court documents, tweets, whitepapers, and other verbatim records)
+are reproduced for research and archival purposes. Bitcoin Institute
+claims no copyright in those records; whatever rights exist in them
+belong to whoever holds them, typically the original author or
+publisher, and some are in the public domain or carry a license of their
+own. They are not licensed by this file. The Japanese translations of
+those records are derivative works: to the extent Bitcoin Institute
+holds rights in its own translation work, that contribution is licensed
+under CC BY 4.0, but the grant does not extend to the underlying record,
+so reusing a translation also needs whatever permission the original
+record requires.
+
+Full details: https://bitcoin-institute.pages.dev/license/
+
+---
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

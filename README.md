@@ -72,4 +72,10 @@ Both workflows are independent; either can fail without blocking the other. Clou
 
 ## License
 
-Content is sourced from publicly available archives. See [About](https://bitcoin-institute.pages.dev/about/) for details.
+Three kinds of material, three sets of terms:
+
+- **Source code** (the Astro site, components, styles, scripts) — [MIT License](LICENSE).
+- **Editorial content** (articles, analyses, biographies, design documents, currency profiles, their Japanese and English translations, and the diagrams and hero images made for them) — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The grant covers Bitcoin Institute's own writing and figures only; quotations from primary sources and other third-party material inside an editorial page stay under their own rights.
+- **Preserved primary sources** (emails, forum posts, mailing-list messages, BIPs, court documents, tweets, whitepapers) — reproduced verbatim for research and archival purposes. Bitcoin Institute claims no copyright in them; whatever rights exist belong to whoever holds them, typically the original author or publisher (some records are in the public domain or carry a license of their own). They are not licensed by this repository. The Japanese translations of those records are derivative works: Bitcoin Institute's own translation contribution is under CC BY 4.0 to the extent it holds rights in it, but that grant does not extend to the underlying record, so reusing a translation also needs whatever permission the original requires.
+
+Full details: [License and reuse](https://bitcoin-institute.pages.dev/license/).

@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { absoluteUrl, localePath } from '../i18n/utils';
+
+const lang = 'en';
+const canonicalUrl = absoluteUrl('/license/', lang);
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'License and reuse',
+  description: 'How the Bitcoin Institute Archive may be reused: editorial content under CC BY 4.0, source code under MIT, and preserved primary sources that are reproduced for research and not licensed here.',
+  url: canonicalUrl,
+  inLanguage: 'en',
+  isPartOf: { '@type': 'WebSite', url: absoluteUrl('/', lang) },
+};
+---
+
+<BaseLayout
+  title="License and reuse - Bitcoin Institute"
+  description="How the Bitcoin Institute Archive may be reused: editorial content under CC BY 4.0, source code under MIT, and preserved primary sources that are reproduced for research and not licensed here."
+  lang={lang}
+  canonicalUrl={canonicalUrl}
+  alternateJa={absoluteUrl('/license/', 'ja')}
+  ogImage="/og/license.png"
+  breadcrumbs={[
+    { name: 'Home', url: absoluteUrl('/', lang) },
+    { name: 'License', url: canonicalUrl },
+  ]}
+  structuredData={structuredData}
+>
+  <div class="container license-page">
+    <h1>License and reuse</h1>
+    <p>
+      This archive holds three kinds of material, and each is handled differently. Editorial
+      writing produced here may be reused with attribution. The site's source code may be reused
+      freely. Preserved primary sources are reproduced for research and archival purposes and are
+      not licensed by Bitcoin Institute at all.
+    </p>
+
+    <h2 id="editorial">Editorial content — CC BY 4.0</h2>
+    <p>
+      Articles, analyses, biographies, design documents, currency profiles, editor's notes, the
+      Japanese and English translations of that writing, and the diagrams, charts, and hero
+      illustrations made for it are licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener license">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>.
+      You may copy, quote, translate, adapt, and redistribute this material, including
+      commercially, on the license's conditions: credit Bitcoin Institute, link to the page you
+      used and to the license, and say so if you changed the material. The grant covers
+      Bitcoin Institute's own writing and figures only: quotations from primary sources and
+      other third-party material inside an editorial page (shown as blockquotes with their
+      attribution) stay under their own rights and are not licensed here.
+    </p>
+    <div class="attribution-block">
+      <p>Attribution example:</p>
+      <p><code>Bitcoin Institute, “Page title”, <em>Bitcoin Institute Archive</em>, page URL, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Translated and abridged.</code></p>
+    </div>
+    <p>
+      The recommended citation format for research and journalism is on the
+      <a href={localePath('/cite/', lang)}>How to cite</a> page.
+    </p>
+
+    <h2 id="code">Source code — MIT</h2>
+    <p>
+      The code that builds and serves this site (the Astro site, components, styles, and
+      scripts) is released under the MIT License. The full text is in the
+      <a href="https://github.com/cypher256/BitcoinArchive/blob/main/LICENSE" target="_blank" rel="noopener license">LICENSE file of the repository</a>.
+    </p>
+
+    <h2 id="sources">Preserved primary sources — not licensed here</h2>
+    <p>
+      Emails, forum posts, mailing-list messages, Bitcoin Improvement Proposals, court
+      documents, tweets, whitepapers, and other records are preserved here verbatim so that
+      they stay readable even if their original location disappears. Bitcoin Institute claims no
+      copyright in these records and does not license them. Whatever rights exist in a record
+      belong to whoever holds them, typically the original author or publisher; some records
+      are in the public domain or carry a license of their own. Reuse of a primary source is
+      governed by the terms that apply to that source, not by this page.
+    </p>
+    <p>
+      The Japanese translations of these records, made for this archive, are derivative works
+      of the originals. To the extent Bitcoin Institute holds rights in its own translation
+      work, it licenses that contribution under the same CC BY 4.0 terms as the editorial
+      content. That grant covers only the translation's own contribution, not the underlying
+      record: reusing a translation also needs whatever permission the original record
+      requires.
+    </p>
+    <p>
+      Each primary-source entry names its origin in the citation block at the foot of the
+      page, so you can go back to the original record.
+    </p>
+
+    <h2 id="novel">The novel</h2>
+    <p>
+      <a href={localePath('/novel/', lang)}><em>Genesis: The Disappearance of the Founder and the Promise</em></a>
+      is a separately published book. Its text is not part of this archive and is not covered by
+      the licenses above.
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .license-page h2 {
+    padding-bottom: var(--heading-underline-gap);
+    border-bottom: 1px solid var(--color-border-strong);
+  }
+
+  .attribution-block {
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--color-border);
+    background: var(--color-source-bg);
+  }
+</style>

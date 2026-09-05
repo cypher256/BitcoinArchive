@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { absoluteUrl, localePath } from '../../i18n/utils';
+
+const lang = 'ja';
+const canonicalUrl = absoluteUrl('/license/', lang);
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'ライセンスと再利用',
+  description: 'ビットコイン・インスティテュート・アーカイブの再利用条件。編集文は CC BY 4.0、ソースコードは MIT、保存された一次資料は研究目的の複製で、ここではライセンスしません。',
+  url: canonicalUrl,
+  inLanguage: 'ja',
+  isPartOf: { '@type': 'WebSite', url: absoluteUrl('/', lang) },
+};
+---
+
+<BaseLayout
+  title="ライセンスと再利用 - ビットコイン・インスティテュート"
+  description="ビットコイン・インスティテュート・アーカイブの再利用条件。編集文は CC BY 4.0、ソースコードは MIT、保存された一次資料は研究目的の複製で、ここではライセンスしません。"
+  lang={lang}
+  canonicalUrl={canonicalUrl}
+  alternateEn={absoluteUrl('/license/', 'en')}
+  ogImage="/og/ja/license.png"
+  breadcrumbs={[
+    { name: 'ホーム', url: absoluteUrl('/', lang) },
+    { name: 'ライセンス', url: canonicalUrl },
+  ]}
+  structuredData={structuredData}
+>
+  <div class="container license-page">
+    <h1>ライセンスと再利用</h1>
+    {/* JA paragraphs are kept on one source line each: a line break inside
+        Japanese prose renders as a visible half-width space. */}
+    <p>このアーカイブには三種類の素材があり、それぞれ扱いが異なります。ここで書かれた編集文は、出典を示せば再利用できます。サイトのソースコードは自由に利用できます。保存された一次資料は研究と保存を目的に複製したもので、ビットコイン・インスティテュートがライセンスを付与するものではありません。</p>
+
+    <h2 id="editorial">編集文 — CC BY 4.0</h2>
+    <p>編集記事、分析ページ、人物紹介、設計書、通貨ページ、編者注、それらの日本語訳と英語訳、そのために作成した図表・チャート・見出し画像は、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank" rel="noopener license">クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0）</a>の下で公開しています。ライセンスの条件（Bitcoin Institute の名を示し、利用したページとライセンスへのリンクを添え、改変した場合はその旨を記す）を守れば、商用を含めて複製・引用・翻訳・改変・再配布ができます。この許諾の対象はビットコイン・インスティテュート自身の文章と図表だけです。編集ページの中にある一次資料からの引用やその他の第三者素材（出典付きの引用ブロックとして示しています）は、それぞれの権利者のもとにあり、ここではライセンスしません。</p>
+    <div class="attribution-block">
+      <p>出典表示の例:</p>
+      <p><code>Bitcoin Institute「ページタイトル」<em>Bitcoin Institute Archive</em>、ページの URL、CC BY 4.0（https://creativecommons.org/licenses/by/4.0/deed.ja）、抄訳・一部改変</code></p>
+    </div>
+    <p>研究や報道で引用する際の推奨形式は<a href={localePath('/cite/', lang)}>引用方法</a>のページにまとめています。</p>
+
+    <h2 id="code">ソースコード — MIT</h2>
+    <p>このサイトを構築・配信するコード（Astro のサイト本体、コンポーネント、スタイル、スクリプト）は MIT ライセンスで公開しています。全文は<a href="https://github.com/cypher256/BitcoinArchive/blob/main/LICENSE" target="_blank" rel="noopener license">リポジトリの LICENSE ファイル</a>にあります。</p>
+
+    <h2 id="sources">保存された一次資料 — ここではライセンスしない</h2>
+    <p>メール、フォーラム投稿、メーリングリストの投稿、ビットコイン改善提案（BIP）、裁判記録、ツイート、ホワイトペーパーなどの記録は、元の掲載場所が消えても読めるように、原文のまま保存しています。ビットコイン・インスティテュートはこれらの記録に著作権を主張せず、ライセンスを付与することもありません。記録に権利があれば、それはその権利者（多くの場合は原著者または元の発行者）のものです。パブリックドメインの記録や、独自のライセンスを持つ記録もあります。一次資料の再利用は、その資料に適用される条件に従います。</p>
+    <p>これらの記録の日本語訳は、当アーカイブが作成したものであっても原文の派生物です。ビットコイン・インスティテュートが翻訳作業について権利を持つ範囲では、その部分を編集文と同じ CC BY 4.0 の条件で提供します。ただしこの許諾は翻訳の寄与分だけを対象とし、元の記録には及びません。翻訳を再利用するには、元の記録の再利用に必要な許諾も別途必要です。</p>
+    <p>各一次資料エントリーは、ページ末尾の出典欄に元の記録の所在を示しています。</p>
+
+    <h2 id="novel">小説について</h2>
+    <p><a href={localePath('/novel/', lang)}>『ジェネシス ― 創設者の消失と約束』</a>は別に刊行された書籍です。その本文はこのアーカイブには含まれず、上記のライセンスの対象外です。</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .license-page h2 {
+    padding-bottom: var(--heading-underline-gap);
+    border-bottom: 1px solid var(--color-border-strong);
+  }
+
+  .attribution-block {
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--color-border);
+    background: var(--color-source-bg);
+  }
+</style>
