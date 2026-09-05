@@ -213,7 +213,7 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
   sidebarCurrentType={entry.data.type}
 >
   <!-- Every entry type gets the sidebar TOC, not just editorial types:
-       TocNav self-hides when its target has zero ## headings (all 7
+       TocNav self-hides when its target has fewer than two ## headings (all 7
        non-bip/whitepaper primary-source types), so there is no
        empty-box case -- the category widget BaseLayout always adds
        still carries its own value on those pages. -->

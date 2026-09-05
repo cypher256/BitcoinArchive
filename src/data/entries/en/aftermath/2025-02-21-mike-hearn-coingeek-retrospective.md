@@ -59,6 +59,17 @@ On why Satoshi disappeared, Hearn was blunt:
 
 This characterization — that Satoshi was driven away not by external threats but by the zealotry of his own community — is a first-hand assessment from someone who corresponded with Satoshi directly.
 
+Asked what he would have done differently, Hearn started with the social side:
+
+<!-- audit:quote-skip -->
+> "The tech is still interesting, but I now have a greater appreciation for the social side of things. Solving the computer science problems is not enough."
+
+Hearn said that if he could go back, he "would have pushed back harder against some of the ideas" he disagreed with, and believed that "the Bitcoin Foundation could have worked out if handled differently."
+
+He also regretted adopting the term "Bitcoin Core," suggesting the naming reinforced an unhealthy power dynamic within the project.
+
+By the time of this interview, Hearn had left R3 in 2021, founded Hydraulic Software, and was preparing to join Oracle as a software architect — well after [his 2016 departure from Bitcoin](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/).
+
 ## Who the "evangelical personalities" were — the WikiLeaks "bring it on" thread
 
 A concrete example of what Hearn describes is the WikiLeaks donations thread (BitcoinTalk topic-1735), which ran on December 4-5, 2010 — just seven days before Satoshi's final public post.
@@ -75,15 +86,4 @@ Satoshi [replied directly](/BitcoinArchive/entries/forum/bitcointalk/topic-1735/
 
 Seven days after Satoshi's reply, on December 12, 2010, his [final public BitcoinTalk post](/BitcoinArchive/entries/forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post/) said he was planning to "pass the baton." Private email continued for another four months before he disappeared. Six months after Satoshi withdrew, in June 2011, [WikiLeaks began accepting Bitcoin donations](/BitcoinArchive/entries/aftermath/2011-06-14-wikileaks-accepts-bitcoin/) over Satoshi's earlier objection.
 
-Read against Hearn's 2025 reflection, the sequence is documentary evidence rather than coincidence: a primary-source record of Satoshi's exhaustion with evangelical pressure. RHorning was one voice among many — BitcoinTalk in 2010-2011 carried a steady stream of the same register (gold-bug, Hayek-purist, anarcho-capitalist, movement-evangelist framings of Bitcoin as a vehicle rather than an experiment). Hearn's later regrets in this same interview — the "Bitcoin Core" naming, the Bitcoin Foundation handling — point to the same pattern: resistance to turning an experiment into a movement.
-
-Asked what he would have done differently, Hearn started with the social side:
-
-<!-- audit:quote-skip -->
-> "The tech is still interesting, but I now have a greater appreciation for the social side of things. Solving the computer science problems is not enough."
-
-Hearn said that if he could go back, he "would have pushed back harder against some of the ideas" he disagreed with, and believed that "the Bitcoin Foundation could have worked out if handled differently."
-
-He also regretted adopting the term "Bitcoin Core," suggesting the naming reinforced an unhealthy power dynamic within the project.
-
-By the time of this interview, Hearn had left R3 in 2021, founded Hydraulic Software, and was preparing to join Oracle as a software architect — well after [his 2016 departure from Bitcoin](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/).
+Read against Hearn's 2025 reflection, the sequence is documentary evidence rather than coincidence: a primary-source record of Satoshi's exhaustion with evangelical pressure. RHorning was one voice among many — BitcoinTalk in 2010-2011 carried a steady stream of the same register (gold-bug, Hayek-purist, anarcho-capitalist, movement-evangelist framings of Bitcoin as a vehicle rather than an experiment). Hearn's regrets in the same interview — the "Bitcoin Core" naming, the Bitcoin Foundation handling — point to the same pattern: resistance to turning an experiment into a movement.

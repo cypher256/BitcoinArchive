@@ -36,8 +36,6 @@ translationStatus: complete
 
 2022年11月11日、FTX Trading Ltd.は、Alameda Research および 130 以上の関連会社と共に、米国破産裁判所に連邦破産法第 11 章の適用を申請した。創業者サム・バンクマン＝フリード（SBF）は CEO を辞任した。
 
-## タイムライン
-
 ```mermaid
 flowchart LR
     REPORT["2022年11月2日<br/>CoinDeskが<br/>Alamedaの<br/>FTT偏重を報道"] --> CZSELL["2022年11月6日<br/>CZがBinanceの<br/>FTT売却を発表"]

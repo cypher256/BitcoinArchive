@@ -35,8 +35,6 @@ inlineLinkKeywords:
 
 On November 11, 2022, FTX Trading Ltd. — along with Alameda Research and over 130 affiliated entities — filed for Chapter 11 bankruptcy in U.S. Bankruptcy Court. Founder Sam Bankman-Fried (SBF) resigned as CEO.
 
-## Timeline
-
 ```mermaid
 flowchart LR
     REPORT["Nov 2, 2022<br/>CoinDesk reveals<br/>Alameda's FTT-heavy<br/>balance sheet"] --> CZSELL["Nov 6, 2022<br/>CZ announces Binance<br/>will sell its FTT"]

@@ -78,8 +78,6 @@ On his early doubts about Bitcoin, Back later told CoinShares:
 <!-- audit:quote-skip -->
 > "From those experiences, it became clear that decentralisation was essential to succeed where others failed."
 
-## COPA trial testimony (February 21, 2024)
-
 During the [COPA v. Craig Wright trial](/BitcoinArchive/entries/aftermath/2024-03-14-copa-v-wright-ruling/), Back testified in person at the London High Court and submitted the complete five-email chain between himself and Satoshi as evidence. The emails — dating from August 20, 2008 onward — were made public for the first time.
 
 Back later founded Blockstream in 2014, a prominent Bitcoin infrastructure company. Despite his regret at not engaging earlier, his Hashcash invention remains a fundamental building block of Bitcoin's proof-of-work consensus mechanism.

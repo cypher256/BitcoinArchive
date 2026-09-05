@@ -38,8 +38,6 @@ relatedEntries:
 
 On February 28, 2014, Mt. Gox — once the world's largest Bitcoin exchange, handling approximately 70% of all Bitcoin transactions at its peak — filed for bankruptcy protection in Tokyo District Court.
 
-## Timeline
-
 ```mermaid
 timeline
     2014 : Feb 7 — Withdrawals halted

@@ -9,8 +9,9 @@
  * by default -- a client-only assignment here keeps that pipeline
  * choice untouched rather than adding a site-wide rehype-slug pass).
  * Most primary-source types (verbatim transcripts) have zero `## `
- * headings in their body; when the target has none, the whole nav
- * stays hidden rather than rendering an empty box.
+ * headings in their body, and a few short articles have exactly one;
+ * when the target has fewer than two, the whole nav stays hidden --
+ * an empty box or a one-item list is navigation for nothing.
  *
  * Hidden below 1200px (see global.css .entry-sidebar) -- there is no
  * mobile precedent for this element, so hiding it there loses nothing
@@ -59,7 +60,7 @@ const t = useTranslations(lang);
     const content = document.querySelector(selector);
     if (!content) return;
     const headings = Array.from(content.querySelectorAll('h2')) as HTMLHeadingElement[];
-    if (headings.length === 0) return;
+    if (headings.length < 2) return;
 
     const list = nav.querySelector('.toc-list');
     if (!list) return;
