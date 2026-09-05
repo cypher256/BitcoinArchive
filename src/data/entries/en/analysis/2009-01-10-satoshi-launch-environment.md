@@ -195,11 +195,7 @@ This is an interpretive analysis built on a single linguistic clue plus activity
 
 What this analysis *does* contribute is a concrete forensic reading of a passage that appears in the primary record, and an articulation of why the natural English reading of that passage points away from the most common "home ISP" assumption and toward a situationally-temporary environment during the launch week.
 
-## 7. Summary
-
-- Primary source: Satoshi → Finney private email of January 12, 2009 — the last day of the launch window this analysis addresses — first published in CoinDesk's November 2020 article.
-- Operative phrase: **"from where I am"** — read here as location-contingent, not as a permanent property of Satoshi's everyday setup.
-- Combined with Jan 8-12 activity intensity (three releases in four days), this is consistent with Satoshi operating from a temporary location with dedicated time during the launch week.
-- The reading is editorial. It narrows the space of compatible environments without determining any specific one.
-
 This launch-environment reading is examined further, alongside the six-layer anonymity structure, in [the Satoshi anonymity-architecture analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-anonymity-architecture/).
+
+<!-- entry-closing -->
+One clause in a private email, and four days of releases around it. That is all I have, and it is not enough to say where. "From where I am" is the closest Satoshi ever came to naming a place, and what it names is only that the place was not the usual one.

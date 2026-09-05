@@ -58,6 +58,7 @@ translationStatus: complete
 [バス・ヴァン・ドルストが 2024 年 4 月に公開したオープンソース・スタイロメトリー（計量文体論）コーパス『Where is Satoshi?』](/BitcoinArchive/ja/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/)は、サトシ・ナカモト著者性に関する公開記録上で最大規模の数値データ資源であり、メーリングリスト書き手 75,000 人以上、Reddit コメント著者 70,000 人以上にわたる 750 万件超のコメント、著者ごとのバローズ・デルタおよびジャッカード類似度の完全な値を 280 MB の CSV/XLSX で公開している。著者は候補順位の公表を拒否しており、方法論的限界と個人的不確かさの両方を理由に挙げている：*「容疑者のショートリストはある。だが 100% 確信できないので、ここで名前を出すつもりはない。」*
 
 著者の沈黙は編集判断として擁護できるが、アーカイブ読者にとっては経験的問いが未解答のまま残る：最も多く引用されるサトシ正体候補は、この 75,000 人コーパスのどこに位置するのか、そしてその位置はヴァン・ドルストが方法論的に対極にある名指し候補の文体計量研究系譜（Skye Grey 2013、アストン 2014、カフィエロ／カレイロウ 2026）について何を示唆するのか？この問いには、ヴァン・ドルストの公開データから関連行を抽出し、各名指し候補のコーパス内順位を計算することで答える。
+
 ## 1. 方法
 
 ### 1.1 ソースデータ
@@ -200,3 +201,6 @@ README 自身が帰属に関する 2 つの構造的問題に注意を払って�
 サトシ特定における文体計量手法の分析的扱いについては、関連する正体仮説エントリーを参照：[ニック・サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[レン・サッサマン](/BitcoinArchive/ja/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/)、[正体仮説の概観](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)。
 
 本再分析の候補別所見は、[ウェイ・ダイ同定仮説](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)、[ハル・フィニー同定仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)、[同定非対称性分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identification-asymmetry/)でさらに読み解かれる。
+
+<!-- entry-closing -->
+イタリアの通販アカウントをどの人間の候補よりサトシに近いと判定する手法は、その限界がどこにあるかを私に教えている。10 年間語られてきた 5 つの名前は、どれもその限界の上に、互いに寄り添って立っており、その間に光の差す隙間はない。

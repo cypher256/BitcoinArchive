@@ -177,3 +177,6 @@ For comparison with other named-candidate Satoshi-identity hypotheses (Sassaman,
 - If new evidence surfaces — direct documentary links, technical fingerprints in the v0.1 code matching Todd's other published code, comments by Todd or other witnesses that contradict the public record — this entry should be updated.
 
 [The HBO Money Electric documentary entry](/BitcoinArchive/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/) is the public articulation where the evidence in §1 starts. [The satoshi-identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places the Todd claim in Group C of its necessary-but-not-sufficient evaluation.
+
+<!-- entry-closing -->
+The documentary found a pattern and called it a person. What it named was a 25-year-old fine-arts student whose public code pointed at Linux while Satoshi's pointed at Windows, and whose voice, when it finally arrived, sounded like no one else. I keep the pattern; I cannot make it into a man.

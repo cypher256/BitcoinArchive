@@ -172,3 +172,6 @@ For comparison with other named-candidate Satoshi-identity hypotheses, see the [
 [The identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places Kaneko in Group C, alongside the other named candidates, within its necessary-but-not-sufficient evaluation.
 
 *[Editor: among the named candidates, the Kaneko hypothesis is unique in being discussed only in Japanese-language coverage, and largely unknown to English-language readers.]*
+
+<!-- entry-closing -->
+Kaneko is the one candidate who was what the pseudonym claimed to be, and I find the record separates him from it more sharply than anyone. A Japanese name was the one thing this case had that no other candidate could offer. It was also the one thing the writing never confirmed.

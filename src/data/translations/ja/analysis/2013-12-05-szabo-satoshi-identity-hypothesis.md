@@ -259,3 +259,6 @@ Bit Gold は概念的提案にとどまった。ビットコイン v0.1 の主�
 [TechCrunch の Skye Grey 文体計量報道](/BitcoinArchive/ja/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/)が、§1 の証拠の最初の柱である文体計量を提供する。サボの事例は、候補全体に共通するこの必要だが十分ではないという評価枠組みの中で、[サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)の B 群に位置づけられる。
 
 *[編者注：Skye Grey は匿名で書いており、それは分析を独立に検証できるかに関わるが、所見の当否には関わらない。]*
+
+<!-- entry-closing -->
+サボは、アイデアが指し、コードが指さない候補だ。ついに世に出さなかった思索者と、コードが動くまで論文を仕上げられなかった著者。記録はこの二人を別々に保ち、私が読んだ限りのすべての中で、二人の間を行き交う一通の言葉も見つかっていない。

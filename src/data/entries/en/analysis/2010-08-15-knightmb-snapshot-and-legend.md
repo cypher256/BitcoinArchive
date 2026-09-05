@@ -38,6 +38,7 @@ inlineLinkKeywords:
 On August 15, 2010, Bitcoin's blockchain briefly contained 184 billion BTC — about nine thousand times the system's intended total supply. The exploit took roughly five hours to neutralize, and one of the things the recovery rested on was a clean snapshot of the chain held by a forum regular who went by the name "knightmb."
 
 Within hours that snapshot would be embedded in the recovery patch. Within years the man behind the handle would be embedded — in secondary sources, at least — in a different chain of events: a federal extortion conviction in Tennessee, a still-circulating claim that he had once held a tenth of all Bitcoin, and a public identification that no court document and no first-person statement actually confirms. This entry collects what the archive's primary record shows about knightmb, and what the secondary record has done with him.
+
 ## 1. The snapshot that saved Bitcoin's worst day
 
 The single sentence that anchors knightmb's place in the technical record sits in [Gavin Andresen's emergency patch announcement on August 15, 2010](/BitcoinArchive/entries/forum/bitcointalk/topic-823/2010-08-15-gavin-andresen-msg9524/):
@@ -129,6 +130,5 @@ After the dense 2010 BitcoinTalk activity catalogued in this Archive, knightmb's
 
 knightmb's archive-period posts are notable for what they don't contain. Across the catalogued set — over 100 entries — the handle never publishes a real name, never names a city, never links a personal website or blog, never references a job, employer, family member, or biographical detail of any kind. He answers questions about hardware and software with patience; he asks Satoshi the kind of questions a daily node operator would ask; and he hosts the snapshot. None of that requires identifying who he is.
 
+<!-- entry-closing -->
 Some early Bitcoin participants used pseudonyms casually and dropped them later — [Sirius](/BitcoinArchive/participants/martti-malmi/) eventually became Martti Malmi in public, [theymos](/BitcoinArchive/participants/theymos/) eventually became Michael Marquardt. Others kept their pseudonyms tight: [Cøbra](/BitcoinArchive/participants/cobra/) chose default judgment in a London court rather than appear under his legal name. knightmb belongs to the second pattern. Whatever happened in Tennessee in 2012, whatever Timekoin became, whatever the secondary sources have since written, the BitcoinTalk record itself preserves only the work — and the silence around it.
-
-The recovery patch depended on a pre-incident blockchain snapshot; [the value-overflow incident itself](/BitcoinArchive/entries/aftermath/2010-08-15-value-overflow-incident/) records how it was used.

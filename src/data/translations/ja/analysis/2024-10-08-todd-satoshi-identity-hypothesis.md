@@ -177,3 +177,6 @@ translationStatus: complete
 - 新しい証拠（直接の文書での接続、v0.1 コード内の技術的指紋でトッドの他の公開コードと一致するもの、トッドや関係者による公的記録と矛盾する発言など）が出現すれば、本エントリーを更新する。
 
 [HBO『Money Electric』のエントリー](/BitcoinArchive/ja/entries/aftermath/2024-10-08-hbo-money-electric-peter-todd/)は §1 の証拠の出発点となった公的提唱。 [サトシ同定仮説総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、必要だが十分ではないという評価枠組みの中で、トッド説を C 群に置いている。
+
+<!-- entry-closing -->
+ドキュメンタリーはパターンを見つけ、それを人物と呼んだ。名指されたのは 25 歳の美術系の学生で、その公開コードは Linux を指し、サトシのそれは Windows を指していた。そして彼の声は、やがて現れたとき、他の誰にも似ていなかった。私はそのパターンを保存する。それを一人の人間にすることはできない。

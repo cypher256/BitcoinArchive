@@ -166,3 +166,6 @@ Mixmaster 等の匿名性システムにおけるサッサマンの記録され�
 他の名指し候補として、[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[ニック・サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[金子勇](/BitcoinArchive/ja/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/)が並ぶ。[2026 年の van Dorst コーパス再分析](/BitcoinArchive/ja/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/)は、同じ名指し候補群に定量的な文体計量を適用している。
 
 *[編者注：名指し候補仮説の中で、サッサマン仮説は文書上の証拠にもっとも乏しい。]*
+
+<!-- entry-closing -->
+サッサマン説の全体は 68 日という距離でできていて、その一つの距離こそ、私には確かめようがないものだ。記録が保持しているのは、ある沈黙の近くで終わった一つの人生と、両者を結ぶ一本の線の不在である。

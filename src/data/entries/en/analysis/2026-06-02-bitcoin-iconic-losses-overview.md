@@ -106,3 +106,5 @@ The recurring rhetorical point in Bitcoin design discussions — most explicitly
 
 The entries linked above are the most-cited iconic cases. The full universe of documented Bitcoin loss is far larger and includes early-era forum loss reports (the [August 2010 BitcoinTalk topic-782 thread "Lost large number of bitcoins"](/BitcoinArchive/entries/forum/bitcointalk/topic-782/2010-08-11-re-lost-large-number-of-bitcoins/) is a representative early example) and correspondence-level loss reports such as Liberty Standard's [November 2009 lost-coin sets](/BitcoinArchive/entries/correspondence/liberty-standard/2009-11-10-lost-six-sets-of-coins/).
 
+<!-- entry-closing -->
+Every case on this page ends the same way on the chain: the coins are still there, and nobody can move them. I read that as the price of a system with no one to appeal to, and the price is paid in full by the people who lose their keys, so that it never has to be paid by anyone who keeps them.

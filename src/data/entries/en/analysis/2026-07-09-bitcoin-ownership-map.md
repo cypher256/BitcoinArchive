@@ -193,3 +193,6 @@ And first place has not changed hands. That ~1.1 million coins have sat still fo
 - Tracker disagreement varies by segment. Government totals differ by more than 2x between River (305,000 BTC, December 2025) and BitcoinTreasuries (649,954 BTC, July 2026); the latter includes the large US forfeiture of October 2025, and this page uses the newer figure.
 - Lost-coin estimates span 1.6M–3.7M BTC. The figure uses the lower bound of the widely-cited 2.3M–3.7M range.
 - Satoshi's own count is an estimate with a range of its own, from BitMEX Research's 600,000–700,000 to Whale Alert's 1,125,150. This page uses the ~1.1M convergence value, consistent with the rest of this archive.
+
+<!-- entry-closing -->
+The map has a shape that no other asset's would: its largest named holding belongs to someone who has never spent a coin, its largest cell belongs to people no one can name, and the company closest to the top got there by filing paperwork, not by mining. When Strategy or the next buyer finally passes the founder's coins, the chart will change and the protocol will not notice. Whoever holds the 21 million, the rules that make them worth holding are held by no one, and that, more than any bar on this page, is the fact I keep coming back to.

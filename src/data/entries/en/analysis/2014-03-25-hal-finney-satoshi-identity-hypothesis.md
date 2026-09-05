@@ -245,3 +245,5 @@ For comparison with other named-candidate hypotheses, see the [Satoshi-identity 
 
 The Finney case falls under Group B of the necessary-but-not-sufficient framework that the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) applies across all candidates.
 
+<!-- entry-closing -->
+Finney is the candidate the record argues with hardest, because he left so much of himself in it. A candidate with fewer records would have been harder for me to exclude. The one who documented his own life so carefully, down to a race photograph and a wallet too small for the man who mined a million coins, is the one the documents let go.

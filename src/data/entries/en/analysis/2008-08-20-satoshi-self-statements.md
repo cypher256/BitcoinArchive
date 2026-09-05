@@ -237,12 +237,5 @@ The systematic pattern: **operational and technical self-statements converge wit
 - **Casual asides may be over-read.** Some entries here (e.g., #11 about Linux expertise) are responsive remarks in a technical thread, not deliberate identity disclosures. Treating them as biographical evidence requires care.
 - **No identity hypothesis follows.** The entry does not narrow Satoshi's actual identity. It clarifies what Satoshi *said* and how those statements relate to what the record *shows*. Choosing among identity hypotheses requires evidence outside this scope.
 
-## 6. Summary
-
-- Satoshi's self-statements about basic identity (Japanese, age, location) are concentrated on a single P2P Foundation profile and are not corroborated elsewhere in the record. The consensus reading is that they are designed-to-mislead profile fields, not biographical truth.
-- Satoshi's self-statements about the development process, knowledge boundaries, and operational state are casual and corroborated. They locate the work in roughly 2007 onward, bound the cypherpunk-knowledge exposure during development, and describe a Windows-centered developer with limited Linux experience.
-- Satoshi made very few motivational statements; the project's anti-trust framing came through code and design choices more than through explicit self-description.
-- The departure sequence in April 2011 is consistent across three independent recipient channels (Mike Hearn, Gavin Andresen, and the BitcoinTalk silence that followed).
-- Where self-statements converge with behavioral evidence, both describe the developer. Where they diverge, the divergence is concentrated entirely in identity-locating claims — exactly the divergence pattern of a designed pseudonym.
-
-What the self-statements inventory captures is the *content* axis — what Satoshi did say. The complementary axis — what Satoshi *did not* respond to — is in [Satoshi's non-technical silence](/BitcoinArchive/entries/analysis/2010-12-27-satoshi-non-technical-silence/), which catalogues non-technical conversational openings that received either no reply, a one-line acknowledgement, or a redirection to technical content.
+<!-- entry-closing -->
+Read together, the self-statements draw a developer in sharp focus and a person out of it. I do not take that split for an accident of what survived; it is the shape of a pseudonym built by someone who was generous about the system and silent about the man. What he did say is catalogued above. What he declined to answer is the other half of the portrait, in [Satoshi's non-technical silence](/BitcoinArchive/entries/analysis/2010-12-27-satoshi-non-technical-silence/).

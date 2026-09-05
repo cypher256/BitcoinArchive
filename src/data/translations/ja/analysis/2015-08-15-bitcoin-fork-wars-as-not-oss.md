@@ -210,3 +210,6 @@ gantt
 この読みが挟まれている二つの記録は、[2015 年 8 月の Bitcoin XT 公開](/BitcoinArchive/ja/entries/aftermath/2015-08-15-bitcoin-xt-launch/)と、[マイク・ハーンの 2016 年「決着」エッセイ](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)である。
 
 *[編者注：主張するのは構造であって、心理ではない。特定の人物の動機についての主張は行わない。語彙の軸については [Bitcoin Core 改称が権威構造に与えた影響の考察](/BitcoinArchive/ja/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/)、出来事の連鎖については[ビットコインの家系図](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)を参照。]*
+
+<!-- entry-closing -->
+この戦争が決めたのは、どのパラメーターが正しいかではない。誰がなお「ビットコイン」と名乗って信じてもらえるか、である。しかもそれを決めたのは投票でも法廷でも保守者の裁定でもなく、取引所が上場し、マイナーが伸ばし、保有者がその名で呼び続けたチェーンに名前が残った、ということだった。フォークは議論に負けたのではない。私の読みでは、一つの言葉を失ったのだ。

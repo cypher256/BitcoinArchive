@@ -129,12 +129,5 @@ The combination supports a structural reading: Satoshi clearly thought hard abou
 - **No identity hypothesis follows.** The reading characterizes the *shape* of Satoshi's working environment. It does not narrow the identity to any country, employment status, age range, or specific person.
 - **Foresighted security is consistent with multiple kinds of background.** Self-taught cryptography hobbyists, academic cryptographers working outside their institution, and security-industry veterans operating outside their workplace are all consistent with the Kaminsky finding.
 
-## 7. Summary
-
-- Bitcoin v0.1's distribution format (`.rar`), tooling absences (no VCS, no tests, no issue tracker), and implementation style (Hungarian notation, OpenSSL dependency) cluster as a coherent pattern of *informal development process*.
-- The Warez-scene comparison shows partial overlap: the consumer-facing conventions match (`.rar`, anonymity, Windows-only, no installer); the producer-facing conventions do not (no NFO, no group tag, no SFV).
-- Kaminsky's 2011 audit established that v0.1's *security architecture* was foresighted and complete, with every attempted exploit pre-blocked.
-- The combination of foresighted security with informal process is the entry's main observation: Satoshi was a careful adversarial thinker about the system itself but did not work within standard collaborative-engineering conventions.
-- The reading characterizes Satoshi's working *environment* and *practice patterns*. It does not constrain identity, geography, or profession beyond what those practice patterns naturally permit.
-
-[The Windows-only development-environment analysis](/BitcoinArchive/entries/analysis/2009-01-09-satoshi-windows-development-environment/) reads the same record from the toolchain side.
+<!-- entry-closing -->
+Kaminsky's verdict came in two halves, a team or a genius. Of the outside readings of this code I know, his is the only one that left the choice open, and the tooling record closes the first half for him: a `.rar` with no installer, a codebase with no repository, a release with no tests are the marks of one person working alone. Which leaves the second half standing, unqualified.

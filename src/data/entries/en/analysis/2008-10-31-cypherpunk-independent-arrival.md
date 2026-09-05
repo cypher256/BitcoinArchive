@@ -233,14 +233,6 @@ This matters because it limits how strong a claim the alignment in §3 can suppo
 - **Wei Dai's identifiability argument is heuristic, not deductive.** Some cypherpunks may have written under pseudonyms and would have been hard to match by writing style. Dai's argument is a defeasible probability claim, not a proof.
 - **No identity claim follows from this entry.** Nothing here narrows Satoshi's identity to a country, employment status, age, or any other personal attribute. The contribution is structural: a documented account of what intellectual position the system was built from.
 
-## 6. Summary
-
-- During the Bitcoin development window (approximately 18 months of coding from mid-2007 to the v0.1 release in January 2009 per Satoshi's contemporaneous statements, within the approximately 2-year pre-release work Satoshi later put at "Since 2007" / "2 years of development before release" — implementation work substantially complete by August 2008, with the whitepaper written after the code, per Satoshi to Hal Finney on November 10, 2008), Satoshi knew Hashcash and did not know b-money — confirmed in his own words to Adam Back on August 21, 2008.
-- Wei Dai's 2014 retrospective adds a second independent constraint: Satoshi was probably not previously active in cypherpunk communities, by an identifiability argument.
-- Satoshi's documented practice in 2008-2011 maps point-by-point onto the six-axis cypherpunk philosophical core articulated in Eric Hughes's 1993 *A Cypherpunk's Manifesto*.
-- The most parsimonious reading is *independent arrival* — convergence on the same answers from outside the visible community — but the question of passive readership remains open in the public record.
-- This entry contributes a structural account of where Satoshi stood intellectually when he built the system. It makes no claim about identity, country, or background.
-
 This analysis covers the cypherpunk channel of the ideological transmission. The earlier Hayek→Extropian leg of the same lineage — Hayek's 1976 *Denationalisation of Money*, the 1995 Extropian "Hayeks" thought-experiment, and how that economic-libertarian frame reached the 1990s digital-cash discussions before the cypherpunk movement coalesced — is treated as a separate analysis in [the Hayek-Extropian lineage entry](/BitcoinArchive/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/). The behavioural side of Satoshi's documented practice — how he kept the same cypherpunk-aligned position on the technical axis while declining to extend the conversation to non-technical openings — is treated in [Satoshi's non-technical silence](/BitcoinArchive/entries/analysis/2010-12-27-satoshi-non-technical-silence/).
 
 ## The reading downstream
@@ -248,3 +240,6 @@ This analysis covers the cypherpunk channel of the ideological transmission. The
 Every candidate hypothesis has to answer the independent-arrival question, which is why it runs through [the identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) and each individual case — [Adam Back](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/), [Wei Dai](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/), [Nick Szabo](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/), [Hal Finney](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/).
 
 *[Context: The "1.5-year coding" and "18 months development" self-statements analyzed here are the primary-source basis for the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/)'s 2007–2008 timeline — the 18 months in which the protagonist writes the system unseen.]*
+
+<!-- entry-closing -->
+The manifesto's first rule was that cypherpunks write code. The person who wrote the code that mattered most was, on every surviving record, outside the room where the rule was written. What this page leaves, and what I cannot close, is that gap: a set of principles and a system that embodies them, and no visible hand joining the two.

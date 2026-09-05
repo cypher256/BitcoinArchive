@@ -98,3 +98,6 @@ The [techno-orientalist signature analysis](/BitcoinArchive/entries/analysis/200
 - Full biographical detail — Nakamoto's life, career, the donation drive the Bitcoin community raised for him, and the geographic-coincidence reporting — is in the [Dorian Nakamoto biography](/BitcoinArchive/participants/dorian-nakamoto/).
 
 [The identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places Dorian Nakamoto in Group C of its necessary-but-not-sufficient evaluation.
+
+<!-- entry-closing -->
+The story had one fact, and the fact was a name. Bitcoin's founder signed a name that a real person was born with, and that coincidence tells me nothing about either of them, except that the record does not end where a magazine cover says it does.

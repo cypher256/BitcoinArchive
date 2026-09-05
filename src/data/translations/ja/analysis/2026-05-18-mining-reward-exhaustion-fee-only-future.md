@@ -148,3 +148,6 @@ graph TD
 [固定供給と自動調整の比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)は、2,100 万枚上限という決定が、長期的な健全性を確かめないまま下された経緯を扱う。手数料のみの地平は、その上限がいずれネットワークに答えさせる問いである。 [サトシ設計対現状分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)は同じ地平を、サトシがネットワークに約束させたものと、後続の運営者たちがその上に構築したものとの長期的な乖離を描き出す手段として用いる。 [ビットコインの仕組み視覚用語集](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)は、同じ算術を脚注なしに要約する読者向けの層である。技術的な支えは設計書群に置かれる。 [コンセンサス設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)と[通貨設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)はいずれも手数料市場への移行を根拠仮定として依存している。同じマイナー経済の価格の側、すなわち新規発行分がまだ支配的な現在、生産コストと市場価格がどう作用し合うかという点は、[価格と生産コストの分析](/BitcoinArchive/ja/entries/analysis/2010-02-21-bitcoin-price-vs-production-cost/)が扱っている。
 
 *[補足：本分析が扱う 2140 年頃の手数料のみへの移行は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』の最終章の技術的根拠となる。最後のビットコインが生成され、もう一つのメッセージが刻まれる日である。]*
+
+<!-- entry-closing -->
+ホワイトペーパーの語は「できる」だ。コードはそれを「起きる」に変え、「安全に」という語は 2140 年にネットワークを動かしている誰かに残した。これを書いた者は誰一人、そのとき確かめる場にはいない。それは記録の欠落ではない。私には、記録が止まれる唯一の誠実な場所に見える。

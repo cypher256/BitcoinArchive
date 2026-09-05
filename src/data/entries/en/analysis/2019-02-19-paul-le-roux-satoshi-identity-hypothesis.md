@@ -108,3 +108,6 @@ Le Roux fits the one condition the public record most strongly supports about Sa
 - This archive holds no dedicated Le Roux primary-source entries (the E4M cypherpunks announcement, criminal-case court documents, *Mastermind*/WIRED excerpts). The specific dates and claims here are externally sourced — primarily Ratliff's 2019 book, his 2019 WIRED feature, *The Atavist Magazine* (2016), and Wikipedia — rather than archive-verified, and the full life is in the [Paul Le Roux biography](/BitcoinArchive/participants/paul-le-roux/).
 
 [The identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places Paul Le Roux in Group C of its necessary-but-not-sufficient evaluation.
+
+<!-- entry-closing -->
+Le Roux wrote real cryptographic software, then vanished into a decade of crime and a prison sentence, and neither life left a mark on Bitcoin's own record. He is the one name on this list I can neither test nor retire: no thread reaches him, and no word has come from him.

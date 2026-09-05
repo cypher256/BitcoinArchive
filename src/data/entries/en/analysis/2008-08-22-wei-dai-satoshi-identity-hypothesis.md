@@ -210,3 +210,6 @@ For comparison with other named-candidate hypotheses, see the [Satoshi-identity 
 - If new evidence surfaces — direct documentary links beyond the three-email correspondence, technical fingerprints in Bitcoin v0.1 matching Wei Dai's other code beyond the standard Crypto++ inclusion, or comments by Wei Dai that contradict the 2014 retrospective — this entry should be updated.
 
 [The Wei Dai biography](/BitcoinArchive/participants/wei-dai/) holds the documentary basis — academic record, the b-money proposal, cypherpunk participation, and retrospective statements — that the evidence in §1 and the counter-evidence in §2 weigh.
+
+<!-- entry-closing -->
+A man who wrote b-money in 1998 and then, in 2008, learned of it from Adam Back is a story that only makes sense to me with two people in it. Everything since has kept it that way.

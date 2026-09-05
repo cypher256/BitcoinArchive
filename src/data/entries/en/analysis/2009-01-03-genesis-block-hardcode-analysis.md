@@ -457,17 +457,5 @@ Constants are identical between v0.1 and current mainline Core.
 - Whether a private test network ran during January 3–8, 2009 (the pre-net hypothesis), as distinct from the interpretation in §3 under which only code preparation occurred. Both remain compatible with the evidence.
 - Whether anyone holds the Block 0 coinbase private key, and if so who (§6.5). No valid signature has been demonstrated.
 
-## 9. Summary
-
-1. Block 0's parameters are hardcoded. Every node reconstructs them locally. No node received Block 0 from another.
-2. The five-day gap is consistent with the difference between the date the constants were fixed (Jan 3) and the date the live network started (Jan 9), not elapsed runtime.
-3. Block 0 authorship separates into two layers:
-   - **Epistemic**: who ran the nonce search cannot be determined from chain data; attribution to Satoshi rests on circumstantial evidence.
-   - **Ontological**: the structural conditions that make "miner = author" meaningful for every other block (PoW as construction event, peer as distribution source, UTXO as ownership mechanism) are absent by design. "Single author" is not a well-defined concept applied to Block 0.
-4. The hardcode decomposes into two independent mechanisms: hash verification (required for consensus) and auto-construction (not required). Un-attributability is a consequence of the second.
-5. Whether that choice was implementation convenience (Reading A) or un-ownership by design (Reading B) is not settled by the source code alone. Behavioral evidence — larger-than-necessary implementation, consistency with Satoshi's other de-personalizing choices, shared-constant coinbase address, the *Times* headline as sole personal element, and the same Occam's razor used in §6 — asymmetrically favors Reading B.
-6. Block 0 exhibits a secondary observation: the genesis hash sits numerically well below the difficulty-1 target, and the v0.1 consensus on Block 0 is equality-only, not a PoW comparison. Read as "deliberate weight-ascribing", this is compatible with Reading B's pattern; read as "conservative engineering so the PoW form check passes unambiguously for external observers", it is compatible with Reading A. The observation is less sharply diagnostic than mechanism B alone, more noticeable when paired with the *Times* headline than in isolation.
-7. The same bootstrap construction that produces un-attribution on the creative axis (§4) also produces un-attribution on the economic axis (§6): the coinbase output never enters the UTXO set because Block 0 is an initial-state artifact, not a transaction event. One design decision, two parallel absences.
-8. Private-key possession for the Block 0 coinbase address (`1A1zP1eP5...`) is a separable dimension from the above. It remains empirically open — no valid signature has been demonstrated, the Craig Wright / COPA case foreclosed one high-profile claim, and the structural un-ownership argument does not depend on any particular answer to this question.
-
+<!-- entry-closing -->
 Block 0 is the most symbolic artifact in Bitcoin, and structurally the one furthest from a well-defined owner on any axis. No distributor: no resolvable creator. No transaction event: no spendable output. Under Reading A the pairing is coincidence; under Reading B the pairing is the mechanism, and Block 0 was placed in the world as something that was not meant to belong to a specific party, singly or plurally, on either axis.

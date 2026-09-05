@@ -57,6 +57,7 @@ inlineLinkKeywords:
 [Bas van Dorst's April 2024 'Where is Satoshi?' open-source stylometric corpus](/BitcoinArchive/entries/aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus/) is the largest publicly-released numerical-data resource on Satoshi-Nakamoto authorship to date — 75,000+ mailing-list authors, 70,000+ Reddit commenters across 7.5M+ comments, full per-author Burrows' Delta and Jaccard similarity values released as 280 MB of CSV/XLSX. The author declines to publish a candidate ranking, citing both methodological limits and personal uncertainty: *"I have a short-list of suspects. No, I'm not going to drop names here because I'm not 100% sure."*
 
 The author's silence is editorially defensible, but it leaves an empirical question unanswered for archive readers: where do the most-cited identity-hypothesis named candidates actually fall in this 75,000-author corpus, and what does that placement imply for the named-candidate stylometric tradition (Skye Grey 2013, Aston 2014, Cafiero/Carreyrou 2026) that van Dorst is methodologically opposite to? This entry answers that question by extracting the relevant rows from van Dorst's published data and computing each named candidate's rank against the corpus.
+
 ## 1. Method
 
 ### 1.1 Source data
@@ -199,3 +200,6 @@ It *does not* show:
 For the analytical treatment of stylometric methods in Satoshi identification, see the relevant identity-hypothesis entries: [Nick Szabo](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/), [Adam Back](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/), [Len Sassaman](/BitcoinArchive/entries/analysis/2011-07-03-sassaman-satoshi-identity-hypothesis/), and the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/).
 
 These per-candidate findings are examined further in [the Wei Dai identity hypothesis](/BitcoinArchive/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/), [the Hal Finney identity hypothesis](/BitcoinArchive/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/), and [the identification-asymmetry analysis](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identification-asymmetry/).
+
+<!-- entry-closing -->
+A method that puts an Italian storefront closer to Satoshi than any human candidate has told me where its floor is, and the five names that have circulated for a decade all stand above that floor, close together, with no daylight between them.

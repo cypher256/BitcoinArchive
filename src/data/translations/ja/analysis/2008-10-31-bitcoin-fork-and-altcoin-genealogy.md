@@ -226,3 +226,6 @@ timeline
 - **社会政治的な枠組み**。上記のブロックサイズ戦争の語りは、参加者たち自身が残した文書 ([ハーンの 2016 年 1 月のエッセイ](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)、[ベルシェの 2017 年 11 月の中止投稿](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/)、GitHub PR スレッド等) に基づいている。技術的な是非についていずれの側が正しかったかを決着させるものではない。それは別個の規範的問いであり、本目録の対象外である。
 
 ブロックサイズ戦争とビットコインキャッシュ分裂の当事者である[ロジャー・ヴァー](/BitcoinArchive/ja/participants/roger-ver/)、[ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/)、[マイク・ベルシェ](/BitcoinArchive/ja/participants/mike-belshe/)、[アモリー・セシェ](/BitcoinArchive/ja/participants/amaury-sechet/)には、それぞれの記録がある。名称の争いが権威に何をしたかは [Core 再ブランディングの分析](/BitcoinArchive/ja/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/)、分裂が貨幣としての主張に何をしたかは[デジタルゴールドの構造的特徴の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)、そして各チェーン自身の発行規則が価格について何を決め、何を決めないかは[十二のチェーンを並べた比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)が、それぞれ扱う。
+
+<!-- entry-closing -->
+15 年分の分岐を描いても、私に描ける系譜図の中で太い線は一本しかない。この木は枝で広く、幹で細く、幹は一度も動いていない。この地図が記録しているのは、代替が不可能だったことではない。どの代替も、それが測られる基準だったチェーンを、まだ置き換えていないということだ。

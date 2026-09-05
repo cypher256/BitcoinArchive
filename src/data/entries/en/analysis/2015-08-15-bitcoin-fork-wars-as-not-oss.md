@@ -210,3 +210,6 @@ The reading in §1-§4 is offered as one reading. It claims only that the partic
 The two records this reading sits between are [the August 2015 Bitcoin XT launch](/BitcoinArchive/entries/aftermath/2015-08-15-bitcoin-xt-launch/) and [Mike Hearn's 2016 "Resolution" essay](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/).
 
 *[Editor: What is claimed here is structural, not psychological — no claim is made about any individual's motives. See [the Bitcoin Core rebrand authority-effects analysis](/BitcoinArchive/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/) for the naming axis, and [the fork and altcoin genealogy](/BitcoinArchive/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/) for the event sequence.]*
+
+<!-- entry-closing -->
+What the war settled was not which parameter was right. It settled who could still say "Bitcoin" and be believed, and it settled that without a vote, a court, or a maintainer's ruling: the name stayed with the chain the exchanges listed, the miners extended, and the holders kept calling by it. The forks did not lose an argument. As I read the record, they lost a word.

@@ -89,3 +89,6 @@ Musk's case is less a competing candidacy than a demonstration of the evidentiar
 - The originating claim is a single non-forensic blog post; the citable record is that claim, the press that covered it, and Musk's denial. Musk's broader Bitcoin-adjacent public role is in the [Elon Musk biography](/BitcoinArchive/participants/elon-musk/).
 
 [The identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) places Elon Musk in Group C of its necessary-but-not-sufficient evaluation.
+
+<!-- entry-closing -->
+The most famous engineer of the decade was also, in the two years when hiding was the whole job, the least hidden person I could name. That is the one sentence this case adds to the record, and the record adds nothing to the case.

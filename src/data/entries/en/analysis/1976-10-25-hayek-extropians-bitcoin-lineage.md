@@ -223,10 +223,5 @@ On the narrower open question of Satoshi's personal views, [Mike Hearn's 2025 re
 - **The "2008 crisis caused Bitcoin" reading is not refuted, only contextualised.** Satoshi's own [contemporaneous statements](/BitcoinArchive/entries/aftermath/2008-08-20-satoshi-to-adam-back/) place the start of Bitcoin's coding around mid-2007 — before the September 2008 Lehman event but during the unfolding 2007 subprime crisis. The crisis influence is real; the Hayekian lineage adds depth to it rather than replacing it.
 - **No identity claim follows from this entry.** As with the [cypherpunk-independent-arrival analysis](/BitcoinArchive/entries/analysis/2008-10-31-cypherpunk-independent-arrival/), structural mapping between ideological positions and Bitcoin's design does not narrow Satoshi's identity to any country, profession, or named individual.
 
-## 6. Summary
-
-- Hayek's 1976 *Denationalisation of Money* makes a sustained case against the state monopoly on currency issuance and for competing private currencies, on grounds that long predate the digital-cash design space.
-- The 1990s Extropian milieu — particularly the 1995 *Extropy* magazine "Virtual Bank of Extropolis" / "Hayeks" thought-experiment — is the earliest published locus where Hayek's framing was explicitly joined to the digital-cash discussion.
-- Bitcoin's 2009 design realises the rejection of state issuance monopoly (Hayek ❶) and cross-border concurrent operation (Hayek ❹) directly; it reframes Hayek's issuer-level competition (❷) as algorithmic commitment.
-- The ideological lineage from Hayek through the Extropian / cypherpunk channels to Bitcoin is documented in peer-reviewed and independent secondary sources. The stronger claim that early Bitcoin contributors were Extropian-network members is supported only for [Hal Finney](/BitcoinArchive/participants/hal-finney/); broader individual-membership claims are not supported by the primary record.
-- The genesis-block "Chancellor on brink of second bailout for banks" headline is consistent with both the proximate 2008-crisis reading and the longer Hayekian lineage; the two readings reinforce rather than exclude each other.
+<!-- entry-closing -->
+The crisis gave the design its date. The lineage gave it its reason. Whether the idea reached Satoshi through the milieu that carried it, or whether he reached it on his own, I cannot say from the record, and the block does not care.

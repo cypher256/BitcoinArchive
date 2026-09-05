@@ -165,3 +165,6 @@ For comparison with other named-candidate Satoshi-identity hypotheses, see the [
 The other named candidates sit alongside this one — [Adam Back](/BitcoinArchive/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/), [Nick Szabo](/BitcoinArchive/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/), [Isamu Kaneko](/BitcoinArchive/entries/analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis/) — and [the 2026 reanalysis of the van Dorst corpus](/BitcoinArchive/entries/analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates/) applies quantitative stylometric methods to the same named-candidate set.
 
 *[Editor: of the named-candidate hypotheses, this is the one that rests least on documentary evidence.]*
+
+<!-- entry-closing -->
+The whole of the Sassaman case is a distance of sixty-eight days, and that one distance is the thing I cannot check. What the record holds is a life that ended near a silence, and no line between them.

@@ -107,3 +107,5 @@ flowchart TD
 
 上に挙げたのは、最も頻繁に引用される象徴的事例。ビットコインの記録された損失全体はもっと広く、初期のフォーラム損失報告 (2010 年 8 月の [BitcoinTalk topic-782 スレッド「Lost large number of bitcoins」](/BitcoinArchive/ja/entries/forum/bitcointalk/topic-782/2010-08-11-re-lost-large-number-of-bitcoins/) は代表的な初期事例) や、メール往復レベルの損失報告 (Liberty Standard の [2009 年 11 月の失われたコイン群](/BitcoinArchive/ja/entries/correspondence/liberty-standard/2009-11-10-lost-six-sets-of-coins/)など) も含まれる。
 
+<!-- entry-closing -->
+このページのどの事例も、チェーンの上では同じ形で終わる。コインはまだそこにあり、誰にも動かせない。私はそれを、訴え出る相手のいないシステムの代価として読む。その代価は鍵を失った人々が全額を払い、鍵を守る人々が一度も払わずに済むようになっている。

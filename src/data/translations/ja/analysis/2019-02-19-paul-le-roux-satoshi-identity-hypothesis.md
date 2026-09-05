@@ -109,3 +109,6 @@ translationStatus: complete
 - 本アーカイブはルルーに関する一次資料のエントリー（E4M サイファーパンク告知、刑事訴訟関連文書、『The Mastermind』／WIRED からの抜粋）を保持していない。ここでの具体的な日付・主張は、主にラトリフの 2019 年の著書、同じくラトリフによる 2019 年の WIRED 記事、『The Atavist Magazine』（2016）、Wikipedia という外部ソースに基づくものでアーカイブ内検証済みではなく、生涯の全体は[ポール・ルルー伝記](/BitcoinArchive/ja/participants/paul-le-roux/)にある。
 
 [サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)は、必要だが十分ではないという評価枠組みの中で、ポール・ルルーを C 群に置いている。
+
+<!-- entry-closing -->
+ルルーは実在の暗号ソフトウェアを書き、そのあと 10 年の犯罪と服役の中へ消えた。そのどちらの人生も、ビットコイン自身の記録に一つの痕跡も残していない。彼は、私が検証することも退けることもできない、このリストで唯一の名前だ。彼に届く糸はなく、彼からの言葉もない。

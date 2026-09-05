@@ -207,3 +207,6 @@ For comparison with other named-candidate hypotheses, see the [Satoshi-identity 
 - If new evidence surfaces — direct documentary links beyond the August 2008 emails, technical fingerprints in Bitcoin v0.1 matching Back's other published code, or comments by Back contradicting his prior public position — this entry should be updated.
 
 [The February 2024 Adam Back retrospective testimony](/BitcoinArchive/entries/aftermath/2024-02-21-adam-back-retrospective-testimony/) is the sworn-testimony record on which §2.2 builds the load-bearing counter-evidence. [The April 2026 NYT Carreyrou investigation](/BitcoinArchive/entries/aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation/) is where the evidence in §1 starts, and §2.1 weighs it against the August 2008 email chain.
+
+<!-- entry-closing -->
+Back is the candidate I know best from the record and can fit to it worst. Everything that makes him plausible is real, and all of it reads more simply as proximity than as identity. A sworn record, an unread draft, and a public regret for not reading it are hard things to stage. What remains is a nearness so close it keeps being mistaken for the thing itself.

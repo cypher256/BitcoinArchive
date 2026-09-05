@@ -212,3 +212,6 @@ The reading offered in §2, that the name removed a vocabulary which had disting
 A counterfactual that would falsify the reading: if a 2015-2017 alternative implementation had succeeded in retaining the name "Bitcoin" in mainstream usage while running a different rule set, then the lexical asymmetry would not have been operative, and the name would have been only a label. None of the four alternative implementations cataloged in §4 achieved that. That fact is consistent with, though not proof of, the reading.
 
 The same naming axis recurs in [the fork-wars-as-not-OSS reading](/BitcoinArchive/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/), and in [Mike Hearn's 2016 "Resolution" essay](/BitcoinArchive/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/), which makes the rebrand one of the inflection points its governance-failure verdict turns on.
+
+<!-- entry-closing -->
+Hearn regretted the word; the counter-readings say the center it named was already there. Both can be true, and I do not need to choose between them, because whichever way the causation ran, every argument that followed was conducted in the vocabulary the rename left behind. Bitcoin-Qt was a program you could stop running. Bitcoin Core, by its name alone, was something you could only leave.

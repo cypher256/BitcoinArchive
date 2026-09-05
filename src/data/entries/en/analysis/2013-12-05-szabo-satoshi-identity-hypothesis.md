@@ -258,3 +258,6 @@ For comparison with other named-candidate Satoshi-identity hypotheses, see the [
 [The TechCrunch Skye Grey stylometric report](/BitcoinArchive/entries/aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric/) provides the first pillar of the evidence in §1 — the stylometric one. The Szabo case falls under Group B of the necessary-but-not-sufficient framework that the [Satoshi-identity hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) applies across all candidates.
 
 *[Editor: Skye Grey wrote pseudonymously, which bears on whether the analysis can be independently verified — not on whether its findings are right.]*
+
+<!-- entry-closing -->
+Szabo is the candidate the idea points to and the code points away from. Between a thinker who never shipped and an author who could not finish the paper until the code ran, the record keeps two people, and in everything I have read it has never passed a single message between them.
