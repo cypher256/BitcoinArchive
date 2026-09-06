@@ -8,6 +8,10 @@ import { mount as mountHashFingerprint } from './visuals/hash-fingerprint.js';
 import { mount as mountNonceSearch } from './visuals/nonce-search.js';
 import { mount as mountMempoolToBlock } from './visuals/mempool-to-block.js';
 import { mount as mountChainRace } from './visuals/chain-race.js';
+import { mount as mountDifficultyRetarget } from './visuals/difficulty-retarget.js';
+import { mount as mountBlockValidationGates } from './visuals/block-validation-gates.js';
+import { mount as mountBlockAnatomy } from './visuals/block-anatomy.js';
+import { mount as mountChainSelectionScale } from './visuals/chain-selection-scale.js';
 
 type Drawer = (host: HTMLElement, lang: string) => void;
 
@@ -23,6 +27,10 @@ const VISUAL_DRAWERS: Record<string, Drawer> = {
   'nonce-search': mountNonceSearch,
   'mempool-to-block': mountMempoolToBlock,
   'chain-race': mountChainRace,
+  'difficulty-retarget': mountDifficultyRetarget,
+  'block-validation-gates': mountBlockValidationGates,
+  'block-anatomy': mountBlockAnatomy,
+  'chain-selection-scale': mountChainSelectionScale,
 };
 
 (function () {

@@ -63,35 +63,9 @@ A block consists of two parts: a compact 80-byte **header** that summarizes the 
 
 ### Block anatomy
 
-```mermaid
-flowchart TB
-    subgraph BLOCK["Block N"]
-        direction TB
-        subgraph HEADER["Block header (80 bytes)"]
-            direction TB
-            VER["Version (4 bytes)"]
-            PREV["Previous block hash (32 bytes)"]
-            MERK["Merkle root (32 bytes)"]
-            TIME["Timestamp (4 bytes)"]
-            BITS["Difficulty target / nBits (4 bytes)"]
-            NONCE["Nonce (4 bytes)"]
-        end
+<!-- visual: block-anatomy -->
 
-        subgraph TXLIST["Transaction list"]
-            direction TB
-            CB["Coinbase transaction (tx₀)"]
-            TX1["Transaction 1"]
-            TX2["Transaction 2"]
-            TXN["..."]
-            TXK["Transaction k"]
-        end
-    end
-
-    MERK -. "Merkle root of\nall transactions" .-> CB
-    PREV -. "SHA-256d hash of\nprevious block header" .-> PREVBLOCK["Block N−1\nheader"]
-
-    VER ~~~ PREV ~~~ MERK ~~~ TIME ~~~ BITS ~~~ NONCE
-```
+In serialization terms, the header's six fields above are laid out back to back in the exact order shown (version, previous hash, Merkle root, timestamp, nBits, nonce), followed immediately by the transaction count and the transaction list itself.
 
 ### Header field breakdown
 
@@ -188,17 +162,9 @@ Bitcoin's chain selection rule is the **most-work chain rule**: among all valid 
 
 ### Chain selection decision process
 
-```mermaid
-flowchart TD
-    RECV["Receive new block"] --> VALID{"Block header\nand contents\nvalid?"}
-    VALID -- "No" --> REJECT["Reject block"]
-    VALID -- "Yes" --> EXTENDS{"Extends\ncurrent\nbest chain?"}
-    EXTENDS -- "Yes" --> TIP["Accept: update chain tip"]
-    EXTENDS -- "No" --> COMPARE{"New chain's total\nwork > current\nbest chain's\ntotal work?"}
-    COMPARE -- "No" --> STORE["Store as\nalternative branch"]
-    COMPARE -- "Yes" --> REORG["Reorganize:\ndisconnect old tip,\nconnect new branch"]
-    REORG --> TIP2["New chain tip established"]
-```
+<!-- visual: chain-selection-scale -->
+
+In code terms: `FindMostWorkChain()` always runs first, comparing `nChainWork` across the candidate set of chain tips known to be valid and fully downloaded (`setBlockIndexCandidates`) to pick the single best one. `ActivateBestChainStep()` then walks from the current tip to that candidate — calling `DisconnectTip()` only if a fork point short of the current tip must be unwound first, then `ConnectTip()` to attach the winning branch's blocks. A direct extension is just the case where the fork point is the current tip itself, so `DisconnectTip()` never runs.
 
 ### Chain selection vs fork resolution
 

@@ -67,14 +67,9 @@ Proof of work is the mechanism that makes block production computationally expen
 
 ### Mining loop
 
-```mermaid
-flowchart TD
-    START["Assemble block header\n(prev hash, Merkle root,\ntimestamp, difficulty bits)"] --> HASH["Compute SHA-256d\nof 80-byte header"]
-    HASH --> CMP{"Hash ≤ target?"}
-    CMP -- "Yes" --> FOUND["Valid block found.\nBroadcast to network."]
-    CMP -- "No" --> INC["Increment nonce\n(or mutate coinbase\nfor extra-nonce space)"]
-    INC --> HASH
-```
+<!-- visual: nonce-search -->
+
+The loop this illustrates in code terms: assemble the block header (prev hash, Merkle root, timestamp, difficulty bits), compute its SHA-256d, and check whether the result falls at or below the target. A pass broadcasts the block; a failure increments the nonce (or mutates the coinbase to refresh the extra-nonce space) and hashes again.
 
 The double-SHA-256 (SHA-256d) operation applies SHA-256 twice in sequence: `SHA-256(SHA-256(header))`. Satoshi chose this construction to mitigate length-extension attacks inherent to single-pass SHA-256.
 
@@ -96,18 +91,9 @@ Bitcoin targets a 10-minute average interval between blocks. Because total netwo
 
 ### Retarget cycle
 
-```mermaid
-flowchart LR
-    subgraph Window["Retarget window: 2,016 blocks"]
-        B1["Block N"] --> B2["Block\nN+1"] --> DOTS["···"] --> B2015["Block\nN+2015"]
-    end
+<!-- visual: difficulty-retarget -->
 
-    B2015 --> CALC["Calculate elapsed time:\ntimestamp(N+2015) − timestamp(N)"]
-    CALC --> RATIO["Ratio = elapsed / expected\nexpected = 2,016 × 600 s"]
-    RATIO --> CLAMP["Clamp ratio to\n[1/4, 4]"]
-    CLAMP --> NEW["New target =\nold target × clamped ratio"]
-    NEW --> NEXT["Apply to next\n2,016 blocks"]
-```
+In arithmetic terms: the elapsed time between the first and last block of the 2,016-block window is divided by the expected time (2,016 × 600 seconds) to get a ratio, that ratio is clamped to [1/4, 4], and the old target is multiplied by the clamped ratio to produce the new target applied to the next window.
 
 ### Adjustment parameters
 
@@ -136,22 +122,9 @@ When a node receives a new block, it applies a deterministic sequence of checks 
 
 ### Validation decision tree
 
-```mermaid
-flowchart TD
-    RECV["Receive block"] --> POW{"Header PoW valid?\nhash ≤ target"}
-    POW -- "fail" --> REJECT["Reject block"]
-    POW -- "pass" --> TS{"Timestamp within\nacceptable range?"}
-    TS -- "fail" --> REJECT
-    TS -- "pass" --> SIZE{"Block weight\n≤ 4 MWU?"}
-    SIZE -- "fail" --> REJECT
-    SIZE -- "pass" --> MERKLE{"Merkle root matches\nrecomputed value?"}
-    MERKLE -- "fail" --> REJECT
-    MERKLE -- "pass" --> CB{"Coinbase transaction\nvalid? (exactly one,\nreward ≤ subsidy + fees)"}
-    CB -- "fail" --> REJECT
-    CB -- "pass" --> TXS{"All transactions valid?\n(signatures, UTXO existence,\nno double-spends within block)"}
-    TXS -- "fail" --> REJECT
-    TXS -- "pass" --> ACCEPT["Accept block,\nupdate chain state"]
-```
+<!-- visual: block-validation-gates -->
+
+Each gate above corresponds to a specific check: proof of work (header hash ≤ target), timestamp (within the acceptable range), size (block weight ≤ 4 MWU), Merkle root (matches the recomputed value), coinbase (exactly one, reward ≤ subsidy + fees), and transactions (signatures valid, referenced UTXOs exist, no double-spends within the block). A block clears every gate before its chain state is updated.
 
 ### Validation checks
 
@@ -172,27 +145,17 @@ A fork occurs whenever two or more blocks share the same parent — the chain sp
 
 ### Fork comparison
 
-```mermaid
-flowchart TD
-    subgraph Natural["Natural fork\n(propagation delay)"]
-        NA["Two miners find blocks\nat nearly the same time"]
-        NA --> NB["Both blocks are valid\nand reference the same parent"]
-        NB --> NC["Resolved automatically:\nnext block extends one branch,\nmaking it the most-work chain"]
-    end
+The most common fork happens by accident, not by design: two miners find valid blocks at nearly the same time.
 
-    subgraph Soft["Soft fork\n(rule tightening)"]
-        SA["New rule makes some\npreviously valid blocks invalid"]
-        SA --> SB["Upgraded nodes enforce\nstricter rules"]
-        SB --> SC["Non-upgraded nodes still accept\nall new blocks (backward compatible)"]
-        SC --> SD["No permanent split if\nmajority of hash rate upgrades"]
-    end
+<!-- visual: chain-race -->
 
-    subgraph Hard["Hard fork\n(rule relaxation or change)"]
-        HA["New rule makes some\npreviously invalid blocks valid"]
-        HA --> HB["Upgraded nodes accept\nblocks that old nodes reject"]
-        HB --> HC["Permanent chain split\nunless all nodes upgrade"]
-    end
-```
+Once a natural fork resolves, the surviving rule set can still change in one of two directions:
+
+| | Soft fork (rule tightening) | Hard fork (rule relaxation or change) |
+|---|---|---|
+| **Effect on old rules** | New rule makes some previously *valid* blocks invalid | New rule makes some previously *invalid* blocks valid |
+| **Non-upgraded nodes** | Still accept all new blocks — backward compatible | Reject blocks that upgraded nodes accept |
+| **Split risk** | None, if a majority of hash rate upgrades | Permanent, unless every node upgrades |
 
 ### Notable forks
 

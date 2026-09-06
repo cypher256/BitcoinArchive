@@ -64,35 +64,9 @@ translationStatus: complete
 
 ### ブロックの構造
 
-```mermaid
-flowchart TB
-    subgraph BLOCK["ブロック N"]
-        direction TB
-        subgraph HEADER["ブロックヘッダー (80 バイト)"]
-            direction TB
-            VER["バージョン (4 バイト)"]
-            PREV["前ブロックハッシュ (32 バイト)"]
-            MERK["マークルルート (32 バイト)"]
-            TIME["タイムスタンプ (4 バイト)"]
-            BITS["難易度ターゲット / nBits (4 バイト)"]
-            NONCE["ナンス (4 バイト)"]
-        end
+<!-- visual: block-anatomy -->
 
-        subgraph TXLIST["トランザクション一覧"]
-            direction TB
-            CB["コインベース<br/>トランザクション (tx₀)"]
-            TX1["トランザクション 1"]
-            TX2["トランザクション 2"]
-            TXN["..."]
-            TXK["トランザクション k"]
-        end
-    end
-
-    MERK -. "全トランザクションの<br/>マークルルート" .-> CB
-    PREV -. "前ブロックヘッダーの<br/>SHA-256d ハッシュ" .-> PREVBLOCK["ブロック N−1\nヘッダー"]
-
-    VER ~~~ PREV ~~~ MERK ~~~ TIME ~~~ BITS ~~~ NONCE
-```
+直列化の観点では、上のヘッダー 6 フィールドは図の順番どおり（バージョン、前ハッシュ、マークルルート、タイムスタンプ、nBits、ナンス）に隙間なく並び、その直後にトランザクション件数とトランザクションリスト本体が続く。
 
 ### ヘッダーフィールドの詳細
 
@@ -189,17 +163,9 @@ flowchart LR
 
 ### チェーン選択の判定プロセス
 
-```mermaid
-flowchart TD
-    RECV["新ブロック受信"] --> VALID{"ブロックヘッダーと<br/>内容は有効?"}
-    VALID -- "いいえ" --> REJECT["ブロック拒否"]
-    VALID -- "はい" --> EXTENDS{"現在の最良チェーンを<br/>延長する?"}
-    EXTENDS -- "はい" --> TIP["受理: チェーン先端を更新"]
-    EXTENDS -- "いいえ" --> COMPARE{"新チェーンの累積ワーク<br/>> 現最良チェーンの<br/>累積ワーク?"}
-    COMPARE -- "いいえ" --> STORE["代替ブランチとして<br/>保存"]
-    COMPARE -- "はい" --> REORG["再編成:<br/>旧先端を切断、<br/>新ブランチを接続"]
-    REORG --> TIP2["新チェーン先端を確立"]
-```
+<!-- visual: chain-selection-scale -->
+
+コードで言えば、`FindMostWorkChain()` が常に最初に走り、有効性が確認済みで完全にダウンロード済みのチェーン先端の候補集合（`setBlockIndexCandidates`）の中から `nChainWork` を比較して唯一の最良候補を選ぶ。`ActivateBestChainStep()` はその候補まで現在の先端から辿り、現在の先端より手前に分岐点があればまず `DisconnectTip()` で巻き戻し、その後 `ConnectTip()` で勝った分岐のブロックを接続する。「先端を直接延長する」というのは、分岐点がちょうど現在の先端自身になる特殊ケースにすぎず、その場合 `DisconnectTip()` は一度も呼ばれない。
 
 ### チェーン選択とフォーク解決の比較
 

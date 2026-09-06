@@ -787,7 +787,8 @@ this treatment. A diagram whose subject is genuinely relational or
 chronological (a P2P network graph, a halving timeline, a simple
 linear sequence) stays a plain Mermaid block — `visual` is for the
 handful of concepts per page (commonly: keys and signatures, a hash
-"fingerprint," a receipt-like value model, a repeated-search process)
+"fingerprint," a receipt-like value model, a repeated-search process,
+a feedback-loop dial, a sequence of pass/fail checkpoints)
 where the reader cannot yet be assumed to read a flowchart's
 abstraction for *this specific mechanism* and a concrete metaphor
 does the actual teaching work. That assumption holds for nearly every
