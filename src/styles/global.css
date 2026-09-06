@@ -1443,10 +1443,17 @@ th {
    - chart (d3): SVG is sized by D3 to clientWidth, so the block
      must be width: 100% (not max-content) for the chart to use
      the available room. position: relative + overflow-y: hidden
-     supports the existing tooltip pattern. */
+     supports the existing tooltip pattern.
+   - visual (guide metaphor illustration): scalable SVG (viewBox only,
+     no fixed pixel intent), so width: 100% lets it fill the column on
+     desktop like chart does -- the whole point of a metaphor
+     illustration is legibility for a zero-prior-knowledge reader, so
+     bigger is the goal, not incidental. This also sidesteps the
+     max-content bug where a long <figcaption> (STYLE_GUIDE_JA prose is
+     usually longer than its EN counterpart) forced the block wider
+     than the SVG's own intended size on some guide pages. */
 .figure-block[data-kind="mermaid"],
-.figure-block[data-kind="table"],
-.figure-block[data-kind="visual"] {
+.figure-block[data-kind="table"] {
   width: max-content;
   max-width: 100%;
 }
@@ -1472,6 +1479,10 @@ th {
   max-width: 100%;
   position: relative;
   overflow-y: hidden;
+}
+.figure-block[data-kind="visual"] {
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Nodes wrapped in <a> by rehype-mermaid-link.mjs (`%% link: URL`

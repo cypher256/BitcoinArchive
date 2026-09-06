@@ -23,7 +23,7 @@ export function svgFigure({ width, height, title, desc, inner, caption }) {
   const descId = 'vd-' + Math.random().toString(36).slice(2, 9);
   return (
     `<svg viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="${titleId} ${descId}" ` +
-    `xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;max-width:${width}px;display:block;margin:0 auto;">` +
+    `xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:0 auto;">` +
     `<title id="${titleId}">${esc(title)}</title>` +
     `<desc id="${descId}">${esc(desc)}</desc>` +
     inner +

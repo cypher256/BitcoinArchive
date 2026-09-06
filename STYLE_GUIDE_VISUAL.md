@@ -825,6 +825,10 @@ The CSS (defined once in `src/styles/global.css`):
   position: relative;
   overflow-y: hidden;
 }
+.figure-block[data-kind="visual"] {
+  width: 100%;
+  max-width: 100%;
+}
 ```
 
 **Per-kind sizing**:
@@ -834,6 +838,7 @@ The CSS (defined once in `src/styles/global.css`):
 | `mermaid` | `max-content` + `max-width: 100%` | Mermaid renders SVG at a fixed natural size (`useMaxWidth: false`); the block sizes to content and never wider than wrapper. Small diagrams stay small (no wasted whitespace). |
 | `table` | same as mermaid | A table that fits the prose column keeps its exact in-column layout (left-aligned, natural width) at every viewport; only a table whose content overflows joins the breakout (see below), where it then sizes to `max-content` up to the viewport gutter and centers like a mermaid figure. |
 | `chart` (d3) | `width: 100%` | D3 sizes its SVG to the wrapper's `clientWidth`, so the block must be 100% width (not `max-content`) for the chart to use the available room. `position: relative` + `overflow-y: hidden` support the tooltip pattern. |
+| `visual` (guide metaphor illustration) | `width: 100%` | The SVG has no fixed-pixel intent (`svgFigure()` sets `width:100%;height:auto` with no `max-width` cap), so it scales up to fill the column — legibility for a zero-prior-knowledge `guide` reader is the goal, not a compact natural size. This also avoids a `max-content` sizing bug: a long `<figcaption>` (JA prose commonly runs longer than its EN counterpart) could force the block wider than the illustration's own intended size, when a fixed `width: 100%` isn't sensitive to caption length at all. Originally shipped in `mermaid`/`table`'s `max-content` group (2026-09-06, commit `de0545ebf`) by mirroring the CSS pattern without a stated width rationale; moved to this group the same day once the caption-length bug surfaced. |
 
 **Breakout gating — always overflow-only, never unconditional on
 viewport width**: a figure never breaks out just because the
