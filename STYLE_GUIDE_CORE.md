@@ -156,7 +156,7 @@ an editorial entry mistakenly placed under a primary-source directory
 does not appear in the thread view alongside the primary sources it
 references.
 
-## Editorial Entries (article / analysis / biography / design / currency)
+## Editorial Entries (article / analysis / biography / design / currency / guide)
 
 The archive's entry types split into two groups:
 
@@ -173,9 +173,62 @@ The archive's entry types split into two groups:
   participant's retrospective web document, reproduced verbatim, is
   still `web-document`; third-party coverage (journalist, encyclopedia)
   of a participant stays editorial.
-- **Editorial types** (5) — `article`, `analysis`, `biography`, `design`,
-  `currency`. The body is Bitcoin Institute's own writing about the subject.
+- **Editorial types** (6) — `article`, `analysis`, `biography`, `design`,
+  `currency`, `guide`. The body is Bitcoin Institute's own writing about the subject.
   This section governs them.
+
+### Guide entries: audience calibration and scope
+
+`guide` entries teach a technical area or concept to a reader with
+**zero prior knowledge** — not "a reader who knows a little," but
+someone whose only association with the subject, if any, is a vague
+one (for Bitcoin: "the price"). This is a narrower and stricter bar
+than `analysis`, and it is the entire reason `guide` exists as its
+own type rather than a tag on `analysis`: `analysis` develops an
+interpretive argument across sources, for a reader already inside the
+subject; `guide` instead builds the vocabulary and mental model a
+reader needs before any other entry in the archive makes sense.
+
+**Structural rules specific to `guide`:**
+
+- Multi-page series are the default for any subject broad enough to
+  need more than one sitting. A `guide` series has one index page
+  (the entry point, carrying a quick-reference lookup table and links
+  to every page in the series) and however many topic pages the
+  subject actually needs — there is no fixed page count, unlike the
+  design-document series' L0/L1/L2 tiers.
+- `guide` does not inherit `design`'s series apparatus: no
+  `DesignSeriesNav`-style tree navigation, no L0/L1/L2 numbering. A
+  `guide` series uses its own lightweight step indicator (the current
+  page's position in the sequence), because the two series answer
+  different questions for the reader — `design` says "where in the
+  specification am I," `guide` says "how far into learning this am
+  I." (`partOf` itself is a general, type-independent field — see
+  [§ Parent Link](STYLE_GUIDE_REFERENCE.md#parent-link-partof) — not
+  part of `design`'s own series machinery; a `guide` topic page may
+  still use it to point back to its series index the same way any
+  entry can point to a hub.)
+- No dense parameter tables, no protocol-version comparison tables, no
+  BIP numbers, hex values, or code identifiers in body prose. These
+  are exactly the signals of `design`'s register, and their presence
+  in a `guide` entry is itself evidence the entry has drifted back
+  toward a technical audience. A simple two-column term/definition
+  table (a lookup glossary) is fine; a multi-column specification or
+  comparison table is not.
+- Diagrams favor concrete real-world metaphor (a receipt, a lock and
+  key, a fingerprint) over the node-and-arrow vocabulary of Mermaid
+  flowcharts and sequence diagrams, which assumes a reader already
+  reads technical diagrams fluently. Mermaid remains the right tool
+  for genuinely relational or chronological content within a `guide`
+  entry (a simple network diagram, a timeline) — the constraint is on
+  register, not a ban on Mermaid. See
+  [§ d3 components](STYLE_GUIDE_VISUAL.md#d3-components-numerical-and-custom-visualizations)
+  for the metaphor-illustration marker.
+
+**Self-check before publishing a `guide` entry:** would this page or
+diagram look at home inside the design-document series? If yes, it
+has drifted out of scope for `guide` and belongs in `design` instead
+(or the depth should be cut).
 
 Tweets (`type: tweet`) are X / Twitter posts archived verbatim under
 `src/data/entries/en/tweets/<author-slug>/<date>-<short-slug>.md`.
@@ -273,6 +326,9 @@ reader-facing prose decisions, not fixed navigation components.
   design consequence.
 - **`currency`:** lead with the definition, issuance or use record, or a
   concrete difference from another currency.
+- **`guide`:** lead with a concrete, everyday question the reader
+  already understands (how a bank keeps track of money, what a
+  receipt proves) before naming any term the reader doesn't yet know.
 
 The lead must make the subject and the point of entry clear. The choice
 of a concrete record, result, contrast, or question is per page; do not
@@ -1051,7 +1107,7 @@ normalized.
 | **A** | Page-level editorial commentary | `editorNote:` field | `editorNote:` field | frontmatter; rendered as a labeled box at the top of the body |
 | **B** | Source attribution (primary material) | `frontmatter.sourceUrl` + `secondarySources[]` (with optional `note`) + `<SourceCitation />` (role split between the two fields: see [§ Source Citation](#source-citation-sourceurl-vs-secondarysources)) | same | rendered at the end of the entry by `<SourceCitation />` |
 | **C** | In-body editor interpretation | `*[Editor: ...]*` | `*[編者注：...]*` | italic + brackets, inline anywhere in the body |
-| **D** | In-body historical context (supplementary annotation around the body, **not** a substitute for body prose; see [§ Editorial Entries](#editorial-entries-article--analysis--biography--design--currency)). Also the home for novel-bridge context notes — see STYLE_GUIDE_REFERENCE.md § Technical-Review Robustness. | `*[Context: ...]*` | `*[補足：...]*` | italic + brackets, inline anywhere in the body |
+| **D** | In-body historical context (supplementary annotation around the body, **not** a substitute for body prose; see [§ Editorial Entries](#editorial-entries-article--analysis--biography--design--currency--guide)). Also the home for novel-bridge context notes — see STYLE_GUIDE_REFERENCE.md § Technical-Review Robustness. | `*[Context: ...]*` | `*[補足：...]*` | italic + brackets, inline anywhere in the body |
 | **E** | Quotation metadata | `<!-- speaker: ... -->` / `<!-- quote: ... -->` semantic markers, or a `**Author Name:**` label immediately before a blockquote | same | semantic markup; renders as a structural attribution, not as editor commentary |
 | **F** | Original-poster edit notes | `edit:` / `Edit:` / `[edit]` (preserved verbatim) | `編集:` / `[編集]` (preserved verbatim) | preserved as written by the original author; **not** rewritten by Archive editors |
 

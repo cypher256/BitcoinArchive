@@ -1,0 +1,12 @@
+---
+// In-body metaphor-illustration runtime for `guide` entries (see
+// remark-visual-embed.mjs and visual-embed-runtime.ts). Sibling of
+// ChartEmbedRuntime.astro, kept as a separate file/registry rather than a
+// shared one -- see remark-visual-embed.mjs's header comment for why.
+---
+<script>
+// Dynamic import (not static) -- guarded so pages without a visual-embed
+// placeholder fetch nothing extra. See chart-embed-runtime.ts's header
+// comment for why this stays a bare, single dynamic import.
+if (document.querySelector('.visual-embed[data-visual]')) import('../scripts/visual-embed-runtime.ts');
+</script>

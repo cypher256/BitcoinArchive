@@ -88,7 +88,7 @@ const OUTPUT = path.join(ROOT, 'src/data/keyword-index.json');
 // skip in the concept-claims loop) before this set is ever consulted for
 // that type. Anything else outside this set is primary-source and cannot
 // be a definition target.
-const CONCEPT_ELIGIBLE_TYPES = new Set(['analysis', 'article', 'design', 'currency']);
+const CONCEPT_ELIGIBLE_TYPES = new Set(['analysis', 'article', 'design', 'currency', 'guide']);
 
 // Verbatim file path fragments — entries whose path contains one of these
 // are whole-record primary source and excluded from auto-link (and from

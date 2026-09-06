@@ -271,7 +271,7 @@ function labelLines(body, meta) {
   // rule for all four editorial types; explicit <!-- speaker: NAME -->
   // blocks (e.g. quoted blockquotes attributed to the subject) still
   // get tone-checked normally.
-  const EDITORIAL_TYPES = new Set(['article', 'analysis', 'biography', 'design']);
+  const EDITORIAL_TYPES = new Set(['article', 'analysis', 'biography', 'design', 'guide']);
   let currentSpeaker = (
     normalizedAuthor &&
     !EDITORIAL_TYPES.has(meta.type) &&

@@ -2,7 +2,7 @@
 
 Entry-type-specific and situational editorial rules, split from `STYLE_GUIDE.md` on 2026-08-25 to keep the always-required core (`STYLE_GUIDE_CORE.md`) smaller. Read this file when a task actually touches one of the topics below; it assumes `STYLE_GUIDE_CORE.md` has already been read in full.
 
-Covers: Title Policy, Description Policy, Entry Dates, Related Entries, Participant Slug Convention, Participant Avatars, Biography Linking, Participant-Page Callout, Parent Link, Design-Document Series Navigation, Auto-Link Keywords, Scripted Edits Policy, Review Rule: Duplicate ID Warnings, Technical-Review Robustness.
+Covers: Title Policy, Description Policy, Entry Dates, Related Entries, Tag Policy, Participant Slug Convention, Participant Avatars, Biography Linking, Participant-Page Callout, Parent Link, Design-Document Series Navigation, Auto-Link Keywords, Scripted Edits Policy, Review Rule: Duplicate ID Warnings, Technical-Review Robustness.
 
 ## Title Policy
 
@@ -194,6 +194,30 @@ rules above.
   - `Who Is Satoshi Nakamoto: 10 Geniuses and the Mystery of the Century`
   - `Bitcoin's family tree: forks, altcoins, and the mainline Bitcoin
     that endured`
+
+#### Guide
+
+- Location: `src/data/entries/en/analysis/*` — `guide` entries are not
+  moved to their own directory; the archive does not require a
+  directory to match its entries' `type` (e.g. `aftermath/` already
+  holds `article`, `biography`, `mailing-list`, and `court-document`
+  entries side by side).
+- Descriptive register, not evocative. State plainly what the page
+  teaches; do not reach for `analysis`'s enumeration-and-stakes
+  archetype or any dramatized framing — a reader with no prior
+  exposure to the subject cannot yet appreciate a stake the title
+  claims, and a guide's job is to earn that appreciation across the
+  body, not assert it in the title.
+- A series' index page keeps a stable title across rewrites (its URL
+  is the series' front door and existing inbound links target it); a
+  topic page inside the series takes a short, literal title naming
+  the one thing it teaches.
+  - ✓ `How Bitcoin actually works: a visual glossary from coins to
+    consensus` (index)
+  - ✓ `What owning a bitcoin actually means`
+  - ✗ `Understanding UTXOs: A Deep Dive` — "deep dive" promises the
+    depth this type exists to avoid; see
+    [STYLE_GUIDE_CORE.md § Guide entries](STYLE_GUIDE_CORE.md#guide-entries-audience-calibration-and-scope).
 
 #### Biographies
 
@@ -591,6 +615,85 @@ relatedEntries:
 All three entries in the cluster declare each other, forming a closed
 bidirectional group. The site renders a "Related entries" section on
 each entry page automatically.
+
+## Tag Policy
+
+The `tags[]` frontmatter field names a **recurring, reusable theme** —
+an axis a reader would browse other entries by (a country or policy
+context, a cultural/genre lens, a technical concept, a role). It is
+not a per-entry descriptor of that one entry's own unique fact.
+
+### The reusability test
+
+Before adding a tag, ask: **could a different entry — a different
+date, person, or event — plausibly carry this same tag too?**
+
+- Pass: `japan` (any entry touching Japanese regulation, culture, or
+  people could carry it), `cyberpunk` (a genre/cultural lens usable
+  across many analyses), `monetary-policy`, `proof-of-work`.
+- Fail: `block-170`, `v0.3.10` — each names a fact intrinsic to one
+  specific historical event. No other entry will ever be "about
+  block-170" in the same sense a second entry can be "about Japan."
+  A fact like this belongs in the title and body prose, not a tag.
+
+A tag does not need a second entry to already exist before it's
+valid — the archive's first entry on a genuinely broad theme still
+passes this test on its own. What fails the test is a tag whose
+underlying thing (a version number, a single incident's own detail)
+could never recur under a second entry, by its own nature — count is
+never the test itself, only a signal to re-examine (see below).
+
+### Don't duplicate an existing axis
+
+Do not create a tag that only restates what `type`, `participants[]`,
+or `source` already encode. A tag matching a participant's own name
+on their own biography (`jonathan-thornburg` on
+`jonathan-thornburg-biography.md`) duplicates `participants[]`, which
+already aggregates "entries involving this person" — remove it,
+don't tag it.
+
+### Check the existing tag list before minting a new one
+
+`tags[]` is a shared, finite vocabulary, not a free-form per-entry
+field. Before adding a tag, check whether an existing tag already
+names the same theme, and reuse it rather than inventing a narrower
+or duplicate variant. This is also a coverage check in the other
+direction: when an entry is clearly *about* a theme an existing tag
+already covers, apply that tag — do not leave it untagged because the
+entry's primary subject is something else. A techno-orientalism
+analysis whose entire argument runs through AKIRA and Neo-Tokyo
+belongs under the `japan` tag alongside entries about Japanese
+regulation, even though its `type` is `analysis`, not a Japan-specific
+document.
+
+### What a low entry-count means
+
+A tag sitting at 1-2 entries is not automatically wrong — see the
+reusability test above — but it is the practical **signal to
+re-examine** it, individually, against three outcomes:
+
+1. **Merge** — an existing broader tag already covers this theme;
+   the entry is just missing it (the AKIRA/`japan` case above).
+2. **Keep and extend** — the theme is genuinely reusable and simply
+   hasn't been cross-applied yet; find the other qualifying entries
+   and tag them too.
+3. **Remove** — the tag fails the reusability test or duplicates an
+   existing axis (see the two sections above); the fact stays in the
+   title/body only.
+
+A tag that clears the reusability test and already has broad,
+consistent coverage across its qualifying entries needs no further
+action regardless of its count — `[§ Related Entries](#related-entries)`'s
+"20+ entries share a theme" description of when `tags` is the right
+tool illustrates the scale a mature theme tends to reach, not a
+minimum gate a new one must clear before it may exist.
+
+### Naming
+
+Lowercase, hyphen-separated, English canonical
+(e.g. `monetary-policy`, not `MonetaryPolicy` or `Monetary Policy`).
+JA is a display-layer translation of the same canonical tag (see
+`STYLE_GUIDE_JA.md`), not a second independent vocabulary.
 
 ## Participant Slug Convention
 
@@ -1035,7 +1138,7 @@ Auto-linking deliberately skips:
 - Inside an existing `<a>` (no double-linking).
 - Inside `<code>` or `<pre>` (don't auto-link identifiers).
 - Inside `<blockquote>` — primary-source quote in editorial entries
-  (see [Editorial Entries](STYLE_GUIDE_CORE.md#editorial-entries-article--analysis--biography--design--currency)).
+  (see [Editorial Entries](STYLE_GUIDE_CORE.md#editorial-entries-article--analysis--biography--design--currency--guide)).
   Same convention used by [`rehype-strip-archive-links`](STYLE_GUIDE_CORE.md#external-link-rot-handling).
 - Inside a heading (`<h1>`-`<h6>`) — headings are navigation landmarks;
   a partly-linked heading reads as visual noise and competes with the

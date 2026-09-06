@@ -60,7 +60,7 @@ export function hitCard(h, ctx) {
   // own <mark>) into one continuous highlight.
   var title = ((hr.title && hr.title.value) || esc(h.title)).replace(/<\/mark>\s*<mark>/g, '');
   var type = h.type || '';
-  var isEditorial = type === 'analysis' || type === 'design' || type === 'article' || type === 'currency';
+  var isEditorial = type === 'analysis' || type === 'design' || type === 'article' || type === 'currency' || type === 'guide';
   var dateValues = resolveDateValues({ dateIso: h.date, createdAtIso: h.createdTs, updatedAtIso: h.updatedTs });
   var typeLabel = typeLabels[type] || type;
   // Byline: server-built authorMeta already ran findAuthorParticipant (incl.

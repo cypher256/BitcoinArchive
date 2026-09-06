@@ -1445,7 +1445,8 @@ th {
      the available room. position: relative + overflow-y: hidden
      supports the existing tooltip pattern. */
 .figure-block[data-kind="mermaid"],
-.figure-block[data-kind="table"] {
+.figure-block[data-kind="table"],
+.figure-block[data-kind="visual"] {
   width: max-content;
   max-width: 100%;
 }

@@ -10,10 +10,12 @@ import GitHubMigrationTimeline from '../../components/GitHubMigrationTimeline.as
 import SatoshiHoldingsComparison from '../../components/SatoshiHoldingsComparison.astro';
 import WhaleAlertFortune from '../../components/WhaleAlertFortune.astro';
 import DesignSeriesNav from '../../components/DesignSeriesNav.astro';
+import GuideSeriesNav from '../../components/GuideSeriesNav.astro';
 import ParentLink from '../../components/ParentLink.astro';
 import PrevNextNav from '../../components/PrevNextNav.astro';
 import TocNav from '../../components/TocNav.astro';
 import { DESIGN_SERIES } from '../../data/design-series';
+import { GUIDE_SERIES } from '../../data/guide-series';
 import { getCollection, render } from 'astro:content';
 import { useTranslations, localePath, absoluteUrl, findAuthorParticipant } from '../../i18n/utils';
 import Avatar from '../../components/Avatar.astro';
@@ -23,6 +25,7 @@ import { renderEditorNote } from '../../lib/editor-note';
 import { LABELS as EDITORIAL_LABELS } from '../../lib/remark-editorial-marker.mjs';
 import gitDates from '../../data/git-dates.json';
 import ChartEmbedRuntime from '../../components/ChartEmbedRuntime.astro';
+import VisualEmbedRuntime from '../../components/VisualEmbedRuntime.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection('entries');
@@ -61,6 +64,16 @@ if (entry.data.type === 'design') {
   const nextSlug = seriesIndex >= 0 && seriesIndex < DESIGN_SERIES.length - 1 ? DESIGN_SERIES[seriesIndex + 1].slug : null;
   prev = prevSlug ? allEntries.find((e) => e.id === `design/${prevSlug}`) ?? null : null;
   next = nextSlug ? allEntries.find((e) => e.id === `design/${nextSlug}`) ?? null : null;
+} else if (entry.data.type === 'guide') {
+  // guide entries live under analysis/ (directory != type, same precedent
+  // as aftermath/ -- see STYLE_GUIDE_REFERENCE.md's Guide title-policy
+  // section) but follow their own L0->G5 reading order, not the date sort.
+  const bareSlug = entry.id.replace(/^analysis\//, '');
+  const seriesIndex = GUIDE_SERIES.findIndex((e) => e.slug === bareSlug);
+  const prevSlug = seriesIndex > 0 ? GUIDE_SERIES[seriesIndex - 1].slug : null;
+  const nextSlug = seriesIndex >= 0 && seriesIndex < GUIDE_SERIES.length - 1 ? GUIDE_SERIES[seriesIndex + 1].slug : null;
+  prev = prevSlug ? allEntries.find((e) => e.id === `analysis/${prevSlug}`) ?? null : null;
+  next = nextSlug ? allEntries.find((e) => e.id === `analysis/${nextSlug}`) ?? null : null;
 } else {
   prev = currentIndex > 0 ? sorted[currentIndex - 1] : null;
   next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
@@ -78,7 +91,7 @@ const entryById = new Map(allEntries.map((e) => [e.id, e]));
 // threads happen to have the same message count the two banners render
 // identically (satoshi-final-known-email quotes two 4-message threads).
 const commentaryThreadLinks = new Map<string, { id: string; messages: number; title: string }>();
-if (entry.data.type === 'article' || entry.data.type === 'analysis' || entry.data.type === 'design') {
+if (entry.data.type === 'article' || entry.data.type === 'analysis' || entry.data.type === 'design' || entry.data.type === 'guide') {
   for (const q of entry.data.quotes ?? []) {
     if (!q.sourceEntryId) continue;
     const sourceEntry = entryById.get(q.sourceEntryId);
@@ -123,7 +136,7 @@ const updatedAt = gitDateRecord?.updatedAt ? new Date(gitDateRecord.updatedAt) :
 // analysis writing). Other types keep frontmatter.date as the
 // published time. modifiedTime is the git-history updatedAt for all
 // types when available.
-const isAnalysis = entry.data.type === 'analysis' || entry.data.type === 'design';
+const isAnalysis = entry.data.type === 'analysis' || entry.data.type === 'design' || entry.data.type === 'guide';
 const ogPublishedTime = isAnalysis ? (createdAt ?? updatedAt ?? entry.data.date) : entry.data.date;
 const ogModifiedTime = updatedAt ?? entry.data.date;
 // OG / JSON-LD author. For editorial types the frontmatter `author`
@@ -132,7 +145,7 @@ const ogModifiedTime = updatedAt ?? entry.data.date;
 // The on-page byline in EntryMeta forces "Bitcoin Institute" for the
 // same reason; mirror that forcing here so structured-data and OGP
 // metadata cite the actual writer of the content, not the subject.
-const isEditorialType = entry.data.type === 'article' || entry.data.type === 'analysis' || entry.data.type === 'design' || entry.data.type === 'currency';
+const isEditorialType = entry.data.type === 'article' || entry.data.type === 'analysis' || entry.data.type === 'design' || entry.data.type === 'currency' || entry.data.type === 'guide';
 const ogAuthor = isEditorialType ? 'Bitcoin Institute' : entry.data.author;
 // The 8 primary-source types where the entire page body is one
 // person's own statement (same set CommentaryLinks.astro gates on).
@@ -181,7 +194,7 @@ const heroOgImage = heroOgMatch ? heroOgMatch[2] : null;
 // entry-content--hero-hoisted's `> p:first-child` rule while hoisting an
 // image from further down the body.
 const heroImageAlt = heroOgMatch ? heroOgMatch[1] : null;
-const heroIsFirstLine = Boolean(heroOgMatch) && (entry.body ?? '').slice(0, heroOgMatch.index).trim() === '';
+const heroIsFirstLine = heroOgMatch != null && (entry.body ?? '').slice(0, heroOgMatch.index).trim() === '';
 // design entries keep DesignSeriesNav before the hero image on purpose
 // (series navigation needs a fixed position across all 12 pages -- see
 // STYLE_GUIDE_CORE.md "Hero Images" x editorNote) -- hoisting here would
@@ -277,6 +290,10 @@ const hoistHero = entry.data.type !== 'design' && Boolean(entry.data.editorNote)
       <DesignSeriesNav lang={lang} slug={entry.id} />
     )}
 
+    {entry.data.type === 'guide' && (
+      <GuideSeriesNav lang={lang} slug={entry.id} />
+    )}
+
     {isMessageBlockType ? (
       <MessageBlock
         lang={lang}
@@ -350,6 +367,7 @@ const hoistHero = entry.data.type !== 'design' && Boolean(entry.data.editorNote)
   </article>
 
   {isEditorialType && <ChartEmbedRuntime />}
+  {entry.data.type === 'guide' && <VisualEmbedRuntime />}
 </BaseLayout>
 
 <style>

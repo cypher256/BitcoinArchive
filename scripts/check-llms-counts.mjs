@@ -43,6 +43,7 @@ const LABEL_TO_TYPE = {
   'Currencies': 'currency',
   'Tweets': 'tweet',
   'Web documents': 'web-document',
+  'Guides': 'guide',
 };
 
 // --- count actual entries per type ---

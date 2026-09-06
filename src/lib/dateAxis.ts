@@ -28,7 +28,12 @@
 // sometimes ambiguous, but both are still a documented fact, not an
 // editor's placement choice -- so biography joins the historical-fact
 // bucket below instead of staying a third, unresolved case.
-const EDITORIAL_PLACEMENT_TYPES = new Set(['analysis', 'design', 'currency']);
+//
+// `guide` (STYLE_GUIDE_CORE.md § Guide entries) joins this bucket too:
+// a guide teaches a mechanism that has not fundamentally changed since
+// launch, not a dated event, so its `date` is an editor's placement
+// choice the same way analysis/design/currency's are.
+const EDITORIAL_PLACEMENT_TYPES = new Set(['analysis', 'design', 'currency', 'guide']);
 
 export type SortAxis = 'date' | 'created';
 

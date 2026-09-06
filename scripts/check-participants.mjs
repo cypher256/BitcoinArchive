@@ -65,7 +65,7 @@ for (const file of walkMarkdownFiles(entriesDir)) {
   // Broad editorial entries owned by Bitcoin Institute may have no single
   // person subject. Their participants list is legitimately absent.
   if (author === '[deleted]') continue;
-  if (author === 'Bitcoin Institute' && ['article', 'analysis', 'design'].includes(fm.type)) continue;
+  if (author === 'Bitcoin Institute' && ['article', 'analysis', 'design', 'guide'].includes(fm.type)) continue;
 
   if (!hasParticipants) {
     const rel = path.relative(entriesDir, file);

@@ -74,7 +74,7 @@ const { date, author, entryType, source, lang, participants = [], tags = [], inl
 // destination either -- both a "definitely not useful" pair, decided
 // together rather than the row alone. See the 0-backlink handling in
 // src/pages/keywords/[keyword].astro and its JA mirror.
-const isDefinesEligibleType = entryType === 'analysis' || entryType === 'article' || entryType === 'design' || entryType === 'currency';
+const isDefinesEligibleType = entryType === 'analysis' || entryType === 'article' || entryType === 'design' || entryType === 'currency' || entryType === 'guide';
 const definedKeywords = isDefinesEligibleType
   ? inlineLinkKeywords
       .map((kw, originalIndex) => ({ kw, n: keywordCounts[lang]?.[kw] ?? 0, originalIndex }))
@@ -100,7 +100,7 @@ const authorParticipant = findAuthorParticipant(author, participants);
 // label per type; biography never reaches EntryMeta (it has no
 // /entries/{id}/ page and is mounted in the participant page
 // instead), so its author is not displayed at all.
-const isEditorialType = entryType === 'article' || entryType === 'analysis' || entryType === 'design' || entryType === 'currency';
+const isEditorialType = entryType === 'article' || entryType === 'analysis' || entryType === 'design' || entryType === 'currency' || entryType === 'guide';
 const displayAuthor = isEditorialType
   ? 'Bitcoin Institute'
   : translateParticipantName(authorParticipant?.name ?? author, authorParticipant?.slug, lang);

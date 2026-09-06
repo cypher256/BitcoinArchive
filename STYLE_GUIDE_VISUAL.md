@@ -183,7 +183,8 @@ diagram is small; the cost of losing a reader halfway through a
 `court-document`. These types reproduce the historical record and
 their body text is not editorially modifiable. The target applies to
 the remaining editorial types — currently `analysis`, `biography`,
-`article`, and `design`.
+`article`, and `design`. `guide` is also in scope but uses its own,
+higher target — see below — not this section's 30/20/15 thresholds.
 
 **Density target (markdown-line proxy).** Count the body lines that
 are inside Mermaid code blocks, Markdown table rows (`| ... |`), or
@@ -201,6 +202,47 @@ authoring decisions and script-checkable.
 The target is not a hard gate — a 500-word article with one clean
 table at 18% is fine; a 3,000-word analysis at 12% with no diagram
 is not. The numbers exist to trigger review, not to block commits.
+
+### `guide` density target — 50%, diagrams only
+
+`guide` entries (STYLE_GUIDE_CORE.md § Guide entries) target **50%**
+of body content conveyed visually — Mermaid diagrams, `<!-- visual:
+-->` metaphor illustrations, and d3 charts. **Markdown tables do not
+count toward this ratio**, unlike the general density target above: a
+table is a reference-lookup structure, not the kind of visual
+explanation a zero-knowledge reader needs, and counting it here would
+reward exactly the reference-table drift § Guide entries warns
+against. A `guide` page's simple two-column lookup glossary is fine
+to include, but it does not move this number.
+
+This 50% figure is this archive's own editorial target, calibrated
+for `guide`'s stricter audience bar — no published source specifies
+this percentage, or any percentage, as the correct text/visual split.
+What the research does support is the qualitative direction: the
+picture-superiority effect (Paivio & Csapo, 1973, "Picture superiority
+in free recall: imagery or dual coding?") is a well-replicated finding
+that pictures, and combined word-and-picture presentation, are
+recalled better than words alone. Specific recall percentages
+attributed to this effect circulate widely online but were not
+traceable to a verifiable primary source when checked for this rule —
+do not cite a number for this effect without confirming it against
+the actual paper first. The effect itself is real and supports leaning
+on visual explanation; it does not by itself dictate 50% specifically
+over some other number.
+
+**Kept as an explicit, fixed number anyway.** A soft instruction —
+"lean more heavily on visuals" — gives an editor nothing concrete to
+check a draft against and erodes across separate editing passes the
+same way the general 30/20/15 thresholds above exist precisely
+because "use visuals when it helps" wasn't enough to hold on its own.
+50% is therefore the number to hold `guide` entries to, checkable the
+same way as the general target, until a specific reason surfaces to
+move it.
+
+(Caution for future citation: the oft-repeated claim that images
+process "60,000 times faster" than text is a debunked internet myth
+with no traceable scientific source — actual measured differences in
+processing speed are far smaller and vary by study. Do not cite it.)
 
 ### ⛔ The ratio is not the goal — never add a figure to reach it
 
@@ -664,6 +706,60 @@ chart is laid out**. A line like "labels in the left margin" or
 "legend below" is a layout note for the developer, not the reader —
 the reader can see the layout. Keep the subtitle focused on the
 data and what to look for.
+
+### Metaphor illustrations: `<!-- visual: NAME -->` for `guide` entries
+
+`guide` entries (STYLE_GUIDE_CORE.md § Guide entries) need diagrams
+built from concrete real-world metaphor — a receipt, a lock and key,
+a fingerprint — rather than the node-and-arrow vocabulary of Mermaid
+or the numeric-axis vocabulary of a d3 `chart`. This is a distinct
+concern from both: not data (no `chart`), not a relational/sequence
+shape Mermaid already draws well. The marker, registry, and runtime
+mirror the d3 `chart` pipeline (§ d3 components above) exactly, kept
+under its own name (`visual`, not `chart`) because stretching `chart`
+to cover illustrative graphics would blur a name that otherwise always
+means "numeric data visualization" in this codebase:
+
+1. Place `<!-- visual: NAME -->` at the position in the markdown body
+   where the illustration belongs. A remark plugin converts it to a
+   mount point the same way `remark-chart-embed.mjs` does for `chart`.
+2. A runtime component dynamically imports the illustration modules on
+   any page containing one, the same way `ChartEmbedRuntime.astro`
+   does for charts. Each illustration is a small SVG/HTML module with
+   a `mount(host, lang)` export, keyed by `NAME` in its own registry —
+   parallel to `DRAWERS` in `chart-embed-runtime.ts`, not merged into
+   it.
+3. Labels come from an in-module `lang`-keyed map, exactly like a
+   `chart` drawer — this is what makes the mechanism solve the
+   guide's EN/JA problem for free: the same illustration renders
+   correctly labeled text in either locale without a second generated
+   image file.
+
+**Minimum requirements for a `visual` illustration module:**
+
+- An accessible name/description (`<title>` and `<desc>` inside the
+  SVG, or equivalent) for screen readers and for a reader whose
+  browser fails to render it.
+- No behavior gated on `:hover` alone — the archive has mobile
+  readers with no hover state.
+- Respect `prefers-reduced-motion` for anything animated.
+- Colors drawn from the site's design tokens, including the
+  [link-color confusion rule](#link-color-confusion-rule) above — a
+  metaphor illustration is exactly the kind of surface where an
+  accent color can accidentally read as a clickable link.
+- A one-to-two-sentence caption below the figure, in the same
+  `figure-outer` / `figure-block` wrapper pattern used by Mermaid,
+  tables, and charts (§ Layout width consideration below), so the
+  three figure kinds stay visually consistent on the page.
+
+Not every `guide` diagram needs this treatment. A diagram whose
+subject is genuinely relational or chronological (a P2P network graph,
+a halving timeline, a simple linear sequence) stays a plain Mermaid
+block — `visual` is for the handful of concepts per guide series
+(commonly: keys and signatures, a hash "fingerprint," a receipt-like
+value model, a repeated-search process) where a beginner cannot yet
+read a flowchart's abstraction and a concrete metaphor does the actual
+teaching work.
 
 #### Layout width consideration — unified figure-block + figure-outer
 

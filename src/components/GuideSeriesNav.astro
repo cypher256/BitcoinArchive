@@ -1,0 +1,139 @@
+---
+/**
+ * GuideSeriesNav.astro
+ *
+ * Lightweight step indicator for the 6-page beginner-guide series.
+ * Renders at the top of every `type: "guide"` entry.
+ *
+ * Deliberately NOT a copy of DesignSeriesNav.astro: that component's dense
+ * tree-style table of contents (L0/L1/L2 groups, per-item titles always
+ * visible) is exactly the "looks like a page for developers" presentation
+ * the guide series must avoid (STYLE_GUIDE_CORE.md's "Guide entries"
+ * section). This component shows only "Step N of 6" plus the current
+ * page's own title, with a prev/next pair -- nothing a first-time reader
+ * needs to parse as a hierarchy.
+ *
+ * Wired in via:
+ *   src/pages/entries/[...slug].astro
+ *   src/pages/ja/entries/[...slug].astro
+ * as `{entry.data.type === 'guide' && <GuideSeriesNav lang={lang}
+ * slug={entry.id} />}` immediately before `<Content />`.
+ *
+ * The series order itself lives in ../data/guide-series.ts (shared with
+ * the prev/next logic in both [...slug].astro pages) -- add new pages
+ * there, not here.
+ */
+import { localePath } from '../i18n/utils';
+import { GUIDE_SERIES } from '../data/guide-series';
+
+interface Props {
+  lang: 'en' | 'ja';
+  slug: string;
+}
+
+const { lang, slug } = Astro.props;
+
+const bareSlug = slug.replace(/^analysis\//, '');
+const currentIndex = GUIDE_SERIES.findIndex((e) => e.slug === bareSlug);
+const current = currentIndex >= 0 ? GUIDE_SERIES[currentIndex] : undefined;
+const prevEntry = currentIndex > 0 ? GUIDE_SERIES[currentIndex - 1] : null;
+const nextEntry = currentIndex >= 0 && currentIndex < GUIDE_SERIES.length - 1 ? GUIDE_SERIES[currentIndex + 1] : null;
+
+function titleOf(e: (typeof GUIDE_SERIES)[number]) {
+  return lang === 'ja' ? e.titleJa : e.titleEn;
+}
+
+function hrefFor(e: (typeof GUIDE_SERIES)[number]) {
+  return localePath(`/entries/analysis/${e.slug}/`, lang);
+}
+
+const stepLabel = lang === 'ja'
+  ? `ステップ ${current ? current.step : 0} / ${GUIDE_SERIES.length - 1}`
+  : `Step ${current ? current.step : 0} of ${GUIDE_SERIES.length - 1}`;
+const seriesLabel = lang === 'ja' ? '初心者ガイド' : 'Beginner guide';
+const prevLabel = lang === 'ja' ? '前へ' : 'Prev';
+const nextLabel = lang === 'ja' ? '次へ' : 'Next';
+---
+
+<nav class="guide-series-nav" aria-label={seriesLabel}>
+  <div class="guide-series-step">
+    <span class="guide-series-kicker">{seriesLabel}</span>
+    <span class="guide-series-count">{stepLabel}</span>
+  </div>
+  <div class="guide-series-links">
+    {prevEntry ? (
+      <a href={hrefFor(prevEntry)} class="guide-series-link guide-series-link--prev">
+        <span class="guide-series-arrow">&larr;</span> {prevLabel}: {titleOf(prevEntry)}
+      </a>
+    ) : <span />}
+    {nextEntry ? (
+      <a href={hrefFor(nextEntry)} class="guide-series-link guide-series-link--next">
+        {nextLabel}: {titleOf(nextEntry)} <span class="guide-series-arrow">&rarr;</span>
+      </a>
+    ) : <span />}
+  </div>
+</nav>
+
+<style>
+  .guide-series-nav {
+    margin: var(--gap-header-to-body) 0 var(--rhythm-cluster);
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background: var(--color-bg-alt);
+    font-family: var(--font-heading);
+  }
+  .guide-series-step {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+  .guide-series-kicker {
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+  }
+  .guide-series-count {
+    font-size: 0.85rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-text);
+  }
+  .guide-series-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.6rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--color-border);
+    font-size: 0.9rem;
+  }
+  .guide-series-link {
+    color: var(--color-link);
+    text-decoration: none;
+    max-width: 48%;
+  }
+  .guide-series-link:hover {
+    text-decoration: underline;
+  }
+  .guide-series-link--next {
+    text-align: right;
+    margin-left: auto;
+  }
+  .guide-series-arrow {
+    color: var(--color-text-muted);
+  }
+  @media (max-width: 640px) {
+    .guide-series-links {
+      flex-direction: column;
+    }
+    .guide-series-link,
+    .guide-series-link--next {
+      max-width: 100%;
+      text-align: left;
+      margin-left: 0;
+    }
+  }
+</style>

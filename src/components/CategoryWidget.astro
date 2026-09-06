@@ -43,7 +43,7 @@ interface Props {
 const { lang, currentType, currentCategory } = Astro.props;
 const t = useTranslations(lang);
 
-const EDITORIAL_TYPES = new Set(['article', 'analysis', 'design', 'currency']);
+const EDITORIAL_TYPES = new Set(['article', 'analysis', 'design', 'currency', 'guide']);
 
 const entries = await getDisplayEntries(lang);
 const typeCounts = new Map<string, number>();

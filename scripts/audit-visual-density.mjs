@@ -13,13 +13,24 @@
  * Primary-source types (forum-post, mailing-list, correspondence, whitepaper,
  * bip, tweet, court-document) are out of scope per the style guide.
  *
+ * `guide` entries use a separate formula and threshold (STYLE_GUIDE_VISUAL.md
+ * § `guide` density target): markdown tables do not count toward the ratio
+ * (a lookup glossary is not the kind of visual explanation a zero-knowledge
+ * reader needs), and `<!-- visual: NAME -->` metaphor-illustration markers
+ * count instead. A `visual` marker is a single source line whose rendered
+ * illustration occupies far more visual area than one line -- VISUAL_MARKER_WEIGHT
+ * below is a deliberate, documented calibration (not a measured value) standing
+ * in for that area, chosen against this corpus's existing Mermaid diagrams'
+ * typical line count.
+ *
  * Targets EN entries by default (visual elements are shared with the JA
  * mirror via structural symmetry, so the ratio is essentially identical).
  *
  * Thresholds (per style guide):
- *   ≥ 30%   design target for new editorial pages
- *   ≥ 20%   floor; below should be reviewed
- *   < 15%   flag; add at least one structural visual
+ *   ≥ 30%   design target for new editorial pages (non-`guide` types)
+ *   ≥ 20%   floor; below should be reviewed (non-`guide` types)
+ *   < 15%   flag; add at least one structural visual (non-`guide` types)
+ *   `guide` uses a single flat 50% target instead of these three tiers.
  *
  * Usage:
  *   npm run audit:visual-density                  # summary + < 15% flagged list (EN)
@@ -39,7 +50,10 @@ const REPO_ROOT = path.resolve(__dirname, '..');
 const EN_ROOT = path.join(REPO_ROOT, 'src/data/entries/en');
 const JA_ROOT = path.join(REPO_ROOT, 'src/data/translations/ja');
 
-const EDITORIAL_TYPES = new Set(['analysis', 'article', 'biography', 'design']);
+const EDITORIAL_TYPES = new Set(['analysis', 'article', 'biography', 'design', 'guide']);
+// See the file header comment for what this stands in for and why it is a
+// calibration choice, not a measured constant.
+const VISUAL_MARKER_WEIGHT = 12;
 
 const args = process.argv.slice(2);
 const arg = (prefix) => {
@@ -78,7 +92,7 @@ function parseFrontmatter(content) {
   return { fm, body: content.slice(m[0].length) };
 }
 
-function computeDensity(body) {
+function computeDensity(body, isGuide) {
   const lines = body.split('\n');
   let visualLines = 0;
   let bodyLines = 0;
@@ -110,6 +124,14 @@ function computeDensity(body) {
       continue;
     }
     bodyLines++;
+    if (isGuide) {
+      // guide: tables do not count (STYLE_GUIDE_VISUAL.md § `guide` density
+      // target -- a lookup glossary is not the visual explanation this
+      // ratio is meant to reward). `<!-- visual: NAME -->` markers count
+      // instead, weighted per VISUAL_MARKER_WEIGHT above.
+      if (/^<!--\s*visual:\s*\S+\s*-->/.test(trim)) { visualLines += VISUAL_MARKER_WEIGHT; continue; }
+      continue;
+    }
     if (/^\|.*\|\s*$/.test(trim)) { visualLines++; continue; }
     if (/^<[A-Z][\w]*/.test(trim)) { visualLines++; continue; }
   }
@@ -120,7 +142,12 @@ function computeDensity(body) {
   };
 }
 
-function classify(ratio) {
+function classify(ratio, isGuide) {
+  if (isGuide) {
+    return ratio >= 0.50
+      ? { mark: '✓', label: '目標達成 (>=50%)' }
+      : { mark: '✗', label: 'フラグ (<50%)' };
+  }
   if (ratio >= 0.30) return { mark: '✓', label: '目標達成 (>=30%)' };
   if (ratio >= 0.20) return { mark: '○', label: '床 (20-30%)' };
   if (ratio >= 0.15) return { mark: '△', label: '注意 (15-20%)' };
@@ -137,8 +164,9 @@ for (const file of allFiles) {
   const { fm, body } = parseFrontmatter(content);
   if (!fm || !EDITORIAL_TYPES.has(fm.type)) continue;
   if (kindFilter && fm.type !== kindFilter) continue;
-  const d = computeDensity(body);
-  const c = classify(d.ratio);
+  const isGuide = fm.type === 'guide';
+  const d = computeDensity(body, isGuide);
+  const c = classify(d.ratio, isGuide);
   results.push({
     file: path.relative(REPO_ROOT, file),
     type: fm.type,
@@ -161,6 +189,14 @@ const byType = {};
 for (const r of results) {
   byType[r.type] ??= { total: 0, target: 0, floor: 0, caution: 0, flag: 0, zero: 0 };
   byType[r.type].total++;
+  if (r.type === 'guide') {
+    // guide has one flat 50% target, not the three-tier scale below --
+    // bucket it into target/flag only, leaving floor/caution at 0.
+    if (r.ratio >= 0.50) byType[r.type].target++;
+    else if (r.ratio > 0) byType[r.type].flag++;
+    else byType[r.type].zero++;
+    continue;
+  }
   if (r.ratio >= 0.30) byType[r.type].target++;
   else if (r.ratio >= 0.20) byType[r.type].floor++;
   else if (r.ratio >= 0.15) byType[r.type].caution++;
@@ -201,6 +237,7 @@ for (const r of filtered) {
   );
 }
 
-// Exit code 1 if any flagged entries (< 15%) — surfaces as a violation in CI
-const flagged = results.filter((r) => r.ratio < 0.15).length;
+// Exit code 1 if any flagged entries -- guide's own 50% floor, everything
+// else the general 15% floor (surfaces as a violation when run in CI).
+const flagged = results.filter((r) => (r.type === 'guide' ? r.ratio < 0.50 : r.ratio < 0.15)).length;
 process.exit(flagged > 0 ? 1 : 0);

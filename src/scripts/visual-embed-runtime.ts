@@ -1,0 +1,44 @@
+// Body of VisualEmbedRuntime.astro's client runtime. Sibling of
+// chart-embed-runtime.ts, deliberately simpler: these are static (or
+// lightly-interactive) metaphor illustrations, not data-driven d3 charts, so
+// there is no d3 dependency and no chart-anim.js lazy-load step here.
+import { mount as mountUtxoReceipt } from './visuals/utxo-receipt.js';
+import { mount as mountKeySignature } from './visuals/key-signature.js';
+import { mount as mountHashFingerprint } from './visuals/hash-fingerprint.js';
+import { mount as mountNonceSearch } from './visuals/nonce-search.js';
+import { mount as mountMempoolToBlock } from './visuals/mempool-to-block.js';
+import { mount as mountChainRace } from './visuals/chain-race.js';
+
+type Drawer = (host: HTMLElement, lang: string) => void;
+
+// Keyed by the `NAME` in `<!-- visual: NAME -->`. Add a new illustration by
+// writing a `src/scripts/visuals/<name>.js` module with a `mount(host, lang)`
+// export and registering it here -- same pattern as chart-embed-runtime.ts's
+// DRAWERS, kept in this separate registry per remark-visual-embed.mjs's
+// header comment.
+const VISUAL_DRAWERS: Record<string, Drawer> = {
+  'utxo-receipt': mountUtxoReceipt,
+  'key-signature': mountKeySignature,
+  'hash-fingerprint': mountHashFingerprint,
+  'nonce-search': mountNonceSearch,
+  'mempool-to-block': mountMempoolToBlock,
+  'chain-race': mountChainRace,
+};
+
+(function () {
+  const embeds = document.querySelectorAll<HTMLElement>('.visual-embed[data-visual]');
+  if (embeds.length === 0) return;
+  const lang = document.documentElement.lang === 'ja' ? 'ja' : 'en';
+  embeds.forEach((el) => {
+    const name = el.getAttribute('data-visual');
+    const fn = name ? VISUAL_DRAWERS[name] : undefined;
+    if (fn) {
+      try {
+        fn(el, lang);
+      } catch (e) {
+        // Unknown/failed drawer: leave the placeholder empty rather than
+        // breaking the rest of the page.
+      }
+    }
+  });
+})();
