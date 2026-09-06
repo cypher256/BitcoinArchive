@@ -10,8 +10,7 @@ participants:
     slug: "bardiharborow"
 description: "bitcoin/bitcoin Issue #7 における bardiharborow の文脈投稿。サトシ言及の文脈。"
 isSatoshi: false
-tags:
-  - "github"
+tags: []
 translationStatus: complete
 ---
 

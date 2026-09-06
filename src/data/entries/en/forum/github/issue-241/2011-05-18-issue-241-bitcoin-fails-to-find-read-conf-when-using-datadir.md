@@ -11,7 +11,6 @@ participants:
 description: "Issue #241 thread starter by nanotube in bitcoin/bitcoin."
 isSatoshi: false
 tags:
-  - "github"
   - "issue"
 ---
 

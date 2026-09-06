@@ -11,7 +11,6 @@ participants:
 description: "gavinandresen が bitcoin/bitcoin Issue #108 でスレッドを開始。"
 isSatoshi: false
 tags:
-  - "github"
   - "issue"
 translationStatus: complete
 ---

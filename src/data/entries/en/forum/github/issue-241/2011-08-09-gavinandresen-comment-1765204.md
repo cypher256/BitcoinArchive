@@ -10,8 +10,7 @@ participants:
     slug: "gavin-andresen"
 description: "Comment by gavinandresen in bitcoin/bitcoin issue #241. mentions Satoshi."
 isSatoshi: false
-tags:
-  - "github"
+tags: []
 ---
 
 Won't fix-- it is what it is.

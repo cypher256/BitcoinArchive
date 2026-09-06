@@ -10,8 +10,7 @@ participants:
     slug: "gavin-andresen"
 description: "bitcoin/bitcoin PR #2161 における gavinandresen のコメント。サトシへの言及。"
 isSatoshi: false
-tags:
-  - "github"
+tags: []
 translationStatus: complete
 ---
 

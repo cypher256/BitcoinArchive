@@ -10,8 +10,7 @@ participants:
     slug: "gavin-andresen"
 description: "bitcoin/bitcoin Issue #241 における gavinandresen の文脈投稿。サトシ言及の文脈。"
 isSatoshi: false
-tags:
-  - "github"
+tags: []
 translationStatus: complete
 ---
 

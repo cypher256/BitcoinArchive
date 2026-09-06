@@ -11,7 +11,6 @@ participants:
 description: "PR #4641 thread starter by laanwj in bitcoin/bitcoin."
 isSatoshi: false
 tags:
-  - "github"
   - "pull-request"
 relatedEntries:
   - analysis/2009-01-09-satoshi-windows-development-environment

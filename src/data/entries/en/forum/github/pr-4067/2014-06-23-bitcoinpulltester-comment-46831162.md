@@ -10,8 +10,7 @@ participants:
     slug: "bitcoinpulltester"
 description: "Comment by BitcoinPullTester in bitcoin/bitcoin PR #4067. context for Satoshi mention."
 isSatoshi: false
-tags:
-  - "github"
+tags: []
 ---
 
 Automatic sanity-testing: FAILED MERGE, see http://jenkins.bluematt.me/pull-tester/p4067_fc1cd73d0ff73e26da2548193c630b3b8a4d630b/ for test log.

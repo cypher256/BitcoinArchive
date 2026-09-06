@@ -11,7 +11,6 @@ participants:
 description: "PR #4067 thread starter by maaku in bitcoin/bitcoin."
 isSatoshi: false
 tags:
-  - "github"
   - "pull-request"
 ---
 

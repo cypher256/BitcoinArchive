@@ -10,8 +10,7 @@ participants:
     slug: "gavin-andresen"
 description: "Comment by gavinandresen in bitcoin/bitcoin PR #2161. mentions Satoshi."
 isSatoshi: false
-tags:
-  - "github"
+tags: []
 ---
 
 @jgarzik : the fClient work is in the 'blockheaders' branch here. The only code snippet I got from Satoshi is now merged (the signature cache).

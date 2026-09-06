@@ -21,7 +21,6 @@ participants:
 description: "ビットコインの SourceForge SVN から GitHub への移行と、2011年に GitHub リポジトリへのコミットアクセスを付与された開発者の時系列記録。"
 isSatoshi: false
 tags:
-  - "github"
   - "repository"
   - "commit-access"
   - "migration"

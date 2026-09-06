@@ -10,8 +10,7 @@ participants:
     slug: "gavin-andresen"
 description: "Comment by gavinandresen in bitcoin/bitcoin PR #2161. context for Satoshi mention."
 isSatoshi: false
-tags:
-  - "github"
+tags: []
 ---
 
 ACK, but I think you should collapse the empty curly braces.

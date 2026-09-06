@@ -11,7 +11,6 @@ participants:
 description: "nanotube が bitcoin/bitcoin Issue #241 でスレッドを開始。"
 isSatoshi: false
 tags:
-  - "github"
   - "issue"
 translationStatus: complete
 ---

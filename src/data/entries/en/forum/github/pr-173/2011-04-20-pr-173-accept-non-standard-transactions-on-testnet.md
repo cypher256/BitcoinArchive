@@ -11,7 +11,6 @@ participants:
 description: "PR #173 thread starter by gavinandresen in bitcoin/bitcoin."
 isSatoshi: false
 tags:
-  - "github"
   - "pull-request"
 ---
 

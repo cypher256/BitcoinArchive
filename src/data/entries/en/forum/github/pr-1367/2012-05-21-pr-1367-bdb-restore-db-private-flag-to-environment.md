@@ -11,7 +11,6 @@ participants:
 description: "PR #1367 thread starter by jgarzik in bitcoin/bitcoin."
 isSatoshi: false
 tags:
-  - "github"
   - "pull-request"
 ---
 

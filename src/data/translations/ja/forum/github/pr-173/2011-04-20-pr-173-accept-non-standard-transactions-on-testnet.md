@@ -12,7 +12,6 @@ description: "gavinandresen が bitcoin/bitcoin PR #173 でスレッドを開始
 isSatoshi: false
 translationStatus: complete
 tags:
-  - "github"
   - "pull-request"
 ---
 

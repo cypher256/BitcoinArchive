@@ -11,7 +11,6 @@ participants:
 description: "maaku が bitcoin/bitcoin PR #4067 でスレッドを開始。"
 isSatoshi: false
 tags:
-  - "github"
   - "pull-request"
 translationStatus: complete
 ---

@@ -11,7 +11,6 @@ participants:
 description: "Issue #7512 thread starter by awemany in bitcoin/bitcoin."
 isSatoshi: false
 tags:
-  - "github"
   - "issue"
 ---
 

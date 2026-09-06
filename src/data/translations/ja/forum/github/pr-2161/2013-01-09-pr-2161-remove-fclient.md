@@ -11,7 +11,6 @@ participants:
 description: "sipa が bitcoin/bitcoin PR #2161 でスレッドを開始。"
 isSatoshi: false
 tags:
-  - "github"
   - "pull-request"
 translationStatus: complete
 ---

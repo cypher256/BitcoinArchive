@@ -11,7 +11,6 @@ participants:
 description: "jgarzik が bitcoin/bitcoin PR #91 でスレッドを開始。"
 isSatoshi: false
 tags:
-  - "github"
   - "pull-request"
 translationStatus: complete
 ---

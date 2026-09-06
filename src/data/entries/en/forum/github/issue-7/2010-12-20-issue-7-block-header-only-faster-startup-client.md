@@ -11,7 +11,6 @@ participants:
 description: "Issue #7 thread starter by gavinandresen in bitcoin/bitcoin."
 isSatoshi: false
 tags:
-  - "github"
   - "issue"
 ---
 

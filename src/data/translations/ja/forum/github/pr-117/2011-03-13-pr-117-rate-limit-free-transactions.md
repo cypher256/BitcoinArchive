@@ -11,7 +11,6 @@ participants:
 description: "gavinandresen が bitcoin/bitcoin PR #117 でスレッドを開始。"
 isSatoshi: false
 tags:
-  - "github"
   - "pull-request"
 translationStatus: complete
 ---

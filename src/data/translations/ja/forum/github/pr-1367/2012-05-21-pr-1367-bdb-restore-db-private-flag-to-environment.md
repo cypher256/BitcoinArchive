@@ -12,7 +12,6 @@ description: "jgarzik が bitcoin/bitcoin PR #1367 でスレッドを開始。"
 isSatoshi: false
 translationStatus: complete
 tags:
-  - "github"
   - "pull-request"
 ---
 

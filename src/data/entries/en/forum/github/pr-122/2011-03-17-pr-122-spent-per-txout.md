@@ -11,7 +11,6 @@ participants:
 description: "PR #122 thread starter by sipa in bitcoin/bitcoin."
 isSatoshi: false
 tags:
-  - "github"
   - "pull-request"
 ---
 

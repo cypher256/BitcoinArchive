@@ -10,8 +10,7 @@ participants:
     slug: "bitcoinpulltester"
 description: "Comment by BitcoinPullTester in bitcoin/bitcoin PR #2161. context for Satoshi mention."
 isSatoshi: false
-tags:
-  - "github"
+tags: []
 ---
 
 Automatic sanity-testing: PASSED, see http://jenkins.bluematt.me/pull-tester/c2b72ba27f0b41d15c70818cb974d4fe7188d17c for binaries and test log.

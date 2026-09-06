@@ -10,8 +10,7 @@ participants:
     slug: "gavin-andresen"
 description: "Comment by gavinandresen in bitcoin/bitcoin PR #1620. context for Satoshi mention."
 isSatoshi: false
-tags:
-  - "github"
+tags: []
 ---
 
 I agree with laanwj, it's fine the way it is.

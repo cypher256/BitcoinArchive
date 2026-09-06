@@ -10,8 +10,7 @@ participants:
     slug: "bitcoinpulltester"
 description: "bitcoin/bitcoin PR #4067 における BitcoinPullTester の文脈投稿。サトシ言及の文脈。"
 isSatoshi: false
-tags:
-  - "github"
+tags: []
 translationStatus: complete
 ---
 

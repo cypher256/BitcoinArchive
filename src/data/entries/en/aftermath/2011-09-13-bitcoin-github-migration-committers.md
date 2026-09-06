@@ -21,7 +21,6 @@ participants:
 description: "Bitcoin's migration from SourceForge SVN to GitHub, and the chronological record of developers who received commit access to the GitHub repository in 2011."
 isSatoshi: false
 tags:
-  - "github"
   - "repository"
   - "commit-access"
   - "migration"

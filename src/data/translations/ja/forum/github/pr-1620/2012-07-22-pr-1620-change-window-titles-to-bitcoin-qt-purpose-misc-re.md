@@ -11,7 +11,6 @@ participants:
 description: "ルーク・ダッシュジュニアが bitcoin/bitcoin PR #1620 でスレッドを開始。"
 isSatoshi: false
 tags:
-  - "github"
   - "pull-request"
 relatedEntries:
   - aftermath/2012-07-22-luke-dashjr-biography

@@ -10,8 +10,7 @@ participants:
     slug: "bardiharborow"
 description: "Comment by bardiharborow in bitcoin/bitcoin issue #7. context for Satoshi mention."
 isSatoshi: false
-tags:
-  - "github"
+tags: []
 ---
 
 @gavinandresen, we need to add another service category (NODE_SPV??) for SPV clients, so that they can operate without getting queried for blocks by other peers.

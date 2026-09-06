@@ -10,8 +10,7 @@ participants:
     slug: "gavin-andresen"
 description: "Comment by gavinandresen in bitcoin/bitcoin issue #241. context for Satoshi mention."
 isSatoshi: false
-tags:
-  - "github"
+tags: []
 ---
 
 I know it's weird, but -testnet reads bitcoin.conf from the datadir, NOT datadir/testnet.

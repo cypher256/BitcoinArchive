@@ -10,8 +10,7 @@ participants:
     slug: "gavin-andresen"
 description: "Comment by gavinandresen in bitcoin/bitcoin issue #7. mentions Satoshi."
 isSatoshi: false
-tags:
-  - "github"
+tags: []
 ---
 
 See the blockheaders feature branch here for initial work on this.  Notes from Satoshi:

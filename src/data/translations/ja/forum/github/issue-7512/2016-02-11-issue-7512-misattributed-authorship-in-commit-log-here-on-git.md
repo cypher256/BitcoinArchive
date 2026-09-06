@@ -11,7 +11,6 @@ participants:
 description: "awemany が bitcoin/bitcoin Issue #7512 でスレッドを開始。"
 isSatoshi: false
 tags:
-  - "github"
   - "issue"
 translationStatus: complete
 ---

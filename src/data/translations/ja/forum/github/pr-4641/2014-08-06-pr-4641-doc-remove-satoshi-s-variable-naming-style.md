@@ -11,7 +11,6 @@ participants:
 description: "laanwj が bitcoin/bitcoin PR #4641 でスレッドを開始。"
 isSatoshi: false
 tags:
-  - "github"
   - "pull-request"
 relatedEntries:
   - analysis/2009-01-09-satoshi-windows-development-environment
