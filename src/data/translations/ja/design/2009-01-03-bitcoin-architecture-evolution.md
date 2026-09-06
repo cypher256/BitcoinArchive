@@ -11,7 +11,6 @@ participants:
 description: "すべてのサブシステムを横断するアーキテクチャー比較: サトシの v0.1（2009 年 1 月）と現行 Bitcoin Core v27 以降を分割図と領域別表で並置する。"
 isSatoshi: false
 tags:
-  - "design"
   - "architecture"
   - "satoshi-tooling"
 relatedEntries:

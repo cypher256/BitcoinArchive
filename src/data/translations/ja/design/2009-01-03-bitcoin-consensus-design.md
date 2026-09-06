@@ -11,7 +11,6 @@ participants:
 description: "ビットコインのノードが単一のチェーンに合意する仕組み: SHA-256d PoW、難易度調整、ブロック検証規則、フォーク解決、確率的ファイナリティ。"
 isSatoshi: false
 tags:
-  - "design"
   - "consensus"
   - "proof-of-work"
   - "difficulty"

@@ -11,7 +11,6 @@ participants:
 description: "How Bitcoin's 21 million cap emerges from a geometric halving series, how block rewards transition from subsidy to fees, and how the incentive model sustains honest mining."
 isSatoshi: false
 tags:
-  - "design"
   - "monetary-policy"
   - "mining-incentive"
   - "fee-market"

@@ -11,7 +11,6 @@ participants:
 description: "How Bitcoin uses elliptic-curve keys, digital signatures, hash functions, and deterministic derivation to secure ownership without trusted third parties."
 isSatoshi: false
 tags:
-  - "design"
   - "cryptography"
   - "secp256k1"
   - "signatures"

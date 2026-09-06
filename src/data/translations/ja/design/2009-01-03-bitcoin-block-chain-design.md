@@ -11,7 +11,6 @@ participants:
 description: "ビットコインのブロック構造、マークルツリーによるトランザクションのヘッダーへのコミット、最大作業量チェーン選択規則によるフォーク解決の仕組み。"
 isSatoshi: false
 tags:
-  - "design"
   - "blocks"
   - "blockchain"
   - "merkle-tree"

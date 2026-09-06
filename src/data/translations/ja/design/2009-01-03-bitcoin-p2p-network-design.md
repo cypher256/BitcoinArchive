@@ -11,7 +11,6 @@ participants:
 description: "ビットコインのノードが互いを発見し、トランザクションとブロックを交換し、P2P ゴシップ層でネットワーク攻撃に抵抗する仕組み。"
 isSatoshi: false
 tags:
-  - "design"
   - "p2p"
   - "network"
   - "peer-to-peer"

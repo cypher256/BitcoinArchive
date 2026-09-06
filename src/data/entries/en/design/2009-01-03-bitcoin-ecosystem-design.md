@@ -11,7 +11,6 @@ participants:
 description: "How the Bitcoin ecosystem layers above and around the base chain: Lightning payment channels, federated sidechains, L1 envelope extensions, and mining pool architectures."
 isSatoshi: false
 tags:
-  - "design"
   - "lightning"
   - "sidechains"
   - "ordinals"

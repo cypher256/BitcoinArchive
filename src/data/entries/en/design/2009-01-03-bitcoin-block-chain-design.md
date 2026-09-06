@@ -11,7 +11,6 @@ participants:
 description: "How Bitcoin blocks are structured, how Merkle trees commit transactions to block headers, and how the most-work chain selection rule resolves forks."
 isSatoshi: false
 tags:
-  - "design"
   - "blocks"
   - "blockchain"
   - "merkle-tree"

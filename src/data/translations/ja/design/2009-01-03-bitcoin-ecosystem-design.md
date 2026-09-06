@@ -11,7 +11,6 @@ participants:
 description: "ビットコインの基盤チェーンの上層と周辺に成長したエコシステムの設計: Lightning 決済チャネル、連合型サイドチェーン、L1 エンベロープ拡張、マイニングプール構成。"
 isSatoshi: false
 tags:
-  - "design"
   - "lightning"
   - "sidechains"
   - "ordinals"

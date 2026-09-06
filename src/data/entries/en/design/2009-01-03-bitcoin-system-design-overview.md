@@ -11,7 +11,6 @@ participants:
 description: "High-level system overview of Bitcoin's architecture, layer model, and data flow. Entry point to a 12-page design-document series covering every major subsystem."
 isSatoshi: false
 tags:
-  - "design"
   - "architecture"
   - "system-overview"
   - "analysis"

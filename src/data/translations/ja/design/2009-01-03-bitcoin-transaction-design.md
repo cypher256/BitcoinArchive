@@ -11,7 +11,6 @@ participants:
 description: "ビットコインのトランザクション層を詳解: UTXO ライフサイクル、トランザクション構造、スクリプト評価、ECDSA・シュノア署名、SegWit、Taproot。"
 isSatoshi: false
 tags:
-  - "design"
   - "utxo"
   - "transactions"
   - "script"

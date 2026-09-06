@@ -11,7 +11,6 @@ participants:
 description: "How Bitcoin Core manages keys, constructs transactions, selects coins, estimates fees, and exposes functionality through RPC, REST, and ZMQ interfaces."
 isSatoshi: false
 tags:
-  - "design"
   - "wallet"
   - "rpc"
   - "psbt"

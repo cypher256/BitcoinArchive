@@ -11,7 +11,6 @@ participants:
 description: "ビットコインが楕円曲線鍵、電子署名、ハッシュ関数、決定性導出をどのように用いて、信頼できる第三者なしに所有権を保護するかを解説する。"
 isSatoshi: false
 tags:
-  - "design"
   - "cryptography"
   - "secp256k1"
   - "signatures"

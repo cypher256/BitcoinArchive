@@ -11,7 +11,6 @@ participants:
 description: "How Bitcoin nodes find each other, exchange transactions and blocks, and resist network-level attacks across the P2P gossip layer."
 isSatoshi: false
 tags:
-  - "design"
   - "p2p"
   - "network"
   - "peer-to-peer"

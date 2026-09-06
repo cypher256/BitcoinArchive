@@ -11,7 +11,6 @@ participants:
 description: "Bitcoin Core がブロックを永続化し、UTXO セットを維持し、チェーン状態をインデックス化し、メモリープールを管理し、履歴データを剪定し、assumeUTXO で起動する仕組みを解説する。"
 isSatoshi: false
 tags:
-  - "design"
   - "storage"
   - "utxo"
   - "database"

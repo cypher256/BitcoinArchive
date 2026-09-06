@@ -11,7 +11,6 @@ participants:
 description: "Cross-cutting architecture comparison across every subsystem: Satoshi's v0.1 (January 2009) side by side with modern Bitcoin Core v27+, with split diagrams and domain tables."
 isSatoshi: false
 tags:
-  - "design"
   - "architecture"
   - "satoshi-tooling"
 relatedEntries:

@@ -11,7 +11,6 @@ participants:
 description: "Deep-dive into Bitcoin's transaction layer: UTXO lifecycle, transaction structure, Script evaluation, ECDSA and Schnorr signatures, SegWit, and Taproot."
 isSatoshi: false
 tags:
-  - "design"
   - "utxo"
   - "transactions"
   - "script"

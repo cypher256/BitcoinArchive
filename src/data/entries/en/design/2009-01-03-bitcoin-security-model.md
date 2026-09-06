@@ -11,7 +11,6 @@ participants:
 description: "Bitcoin's threat model mapped end-to-end: what the protocol trusts, what it defends against, how each attack is countered, and where open risks remain."
 isSatoshi: false
 tags:
-  - "design"
   - "security-budget"
   - "consensus"
 relatedEntries:

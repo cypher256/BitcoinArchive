@@ -11,7 +11,6 @@ participants:
 description: "Bitcoin Core が鍵を管理し、トランザクションを構築し、コインを選択し、手数料を推定し、RPC・REST・ZMQ インターフェースで機能を外部に公開する仕組みを解説する。"
 isSatoshi: false
 tags:
-  - "design"
   - "wallet"
   - "rpc"
   - "psbt"

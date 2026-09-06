@@ -11,7 +11,6 @@ participants:
 description: "How Bitcoin Core persists blocks, maintains the UTXO set, indexes chain state, manages the mempool, prunes historical data, and bootstraps via assumeUTXO."
 isSatoshi: false
 tags:
-  - "design"
   - "storage"
   - "utxo"
   - "database"

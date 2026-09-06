@@ -11,7 +11,6 @@ participants:
 description: "ビットコインの 2,100 万枚上限が幾何級数の半減から導かれる仕組み、ブロック報酬が新規発行分から手数料へ移行する過程、インセンティブモデルが正直なマイニングを維持する構造を解説する。"
 isSatoshi: false
 tags:
-  - "design"
   - "monetary-policy"
   - "mining-incentive"
   - "fee-market"

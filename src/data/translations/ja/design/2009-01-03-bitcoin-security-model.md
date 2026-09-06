@@ -11,7 +11,6 @@ participants:
 description: "ビットコインの脅威モデルを端から端まで図解: プロトコルが信頼するもの、防御する対象、各攻撃への対策、残存するリスク。"
 isSatoshi: false
 tags:
-  - "design"
   - "security-budget"
   - "consensus"
 relatedEntries:

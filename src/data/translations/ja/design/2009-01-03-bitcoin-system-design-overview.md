@@ -11,7 +11,6 @@ participants:
 description: "ビットコインの全体構造、レイヤーモデル、データフローの俯瞰図。12 ページからなる設計文書シリーズへの入口。"
 isSatoshi: false
 tags:
-  - "design"
   - "architecture"
   - "system-overview"
   - "analysis"

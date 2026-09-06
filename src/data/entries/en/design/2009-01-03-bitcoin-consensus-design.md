@@ -11,7 +11,6 @@ participants:
 description: "How Bitcoin nodes agree on a single chain: SHA-256d proof of work, the difficulty adjustment algorithm, block validation rules, fork resolution, and probabilistic finality."
 isSatoshi: false
 tags:
-  - "design"
   - "consensus"
   - "proof-of-work"
   - "difficulty"
