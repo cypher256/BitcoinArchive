@@ -13,6 +13,10 @@ participants:
 description: "ジェフ・ガージックがスレッドを開始: 常にトランザクション手数料を支払う？"
 isSatoshi: false
 tags: []
+relatedEntries:
+  - forum/bitcointalk/topic-1314/2010-09-29-prioritized-transactions-and-tx-fees
+  - forum/bitcointalk/topic-1850/2010-11-19-transaction-spam-flood-attack-currently-under-way
+  - aftermath/2010-07-15-jeff-garzik-biography
 translationStatus: complete
 ---
 

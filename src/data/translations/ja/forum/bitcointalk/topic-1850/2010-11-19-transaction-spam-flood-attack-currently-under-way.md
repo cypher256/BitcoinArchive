@@ -13,6 +13,10 @@ participants:
 description: "ジェフ・ガージックがスレッドを開始: トランザクション/スパムフラッド攻撃が現在進行中"
 isSatoshi: false
 tags: []
+relatedEntries:
+  - forum/bitcointalk/topic-994/2010-09-06-always-pay-transaction-fee
+  - forum/bitcointalk/topic-1314/2010-09-29-prioritized-transactions-and-tx-fees
+  - aftermath/2010-07-15-jeff-garzik-biography
 translationStatus: complete
 ---
 

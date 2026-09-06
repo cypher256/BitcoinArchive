@@ -23,6 +23,7 @@ secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 relatedEntries:
+  - aftermath/2009-05-02-first-contact-satoshi-reply
   - aftermath/2009-01-15-satoshi-to-trammell-attack-types
   - aftermath/2009-05-01-martti-malmi-biography
 ---

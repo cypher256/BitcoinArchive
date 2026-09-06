@@ -22,6 +22,9 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - aftermath/2009-05-01-martti-malmi-biography
+  - aftermath/2009-05-03-malmi-agrees-to-help
 ---
 
 ![A faceless silhouette at a laptop desk exchanges a glowing reply envelope with a distant faceless silhouette, with two document cards below — one for web/FAQ copy, the other for source replies — linked by an arrow.](/BitcoinArchive/images/analysis/2009-05-02-first-contact-satoshi-reply-hero.png)

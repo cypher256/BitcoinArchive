@@ -32,6 +32,9 @@ secondarySources:
   - name: "Bitcoin Wiki — Jeff Garzik"
     url: "https://en.bitcoin.it/wiki/Jeff_Garzik"
 relatedEntries:
+  - forum/bitcointalk/topic-994/2010-09-06-always-pay-transaction-fee
+  - forum/bitcointalk/topic-1314/2010-09-29-prioritized-transactions-and-tx-fees
+  - forum/bitcointalk/topic-1850/2010-11-19-transaction-spam-flood-attack-currently-under-way
   - aftermath/2010-07-11-slashdot-bitcoin-article
   - aftermath/2018-10-29-jeff-garzik-retrospective
   - aftermath/2024-10-28-jeff-garzik-satoshi-lone-genius

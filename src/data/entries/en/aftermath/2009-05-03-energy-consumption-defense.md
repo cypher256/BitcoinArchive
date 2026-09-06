@@ -23,6 +23,8 @@ tags:
 secondarySources:
   - name: "CryptoSlate - Never-before-seen Satoshi Nakamoto emails"
     url: "https://cryptoslate.com/never-before-seen-satoshi-nakamoto-emails-add-several-details-to-bitcoins-origin-lore/"
+relatedEntries:
+  - aftermath/2009-05-01-martti-malmi-biography
 ---
 
 ![A balance scale weighing a small lightning-bolt icon against a tall stack of coin-like discs, flanked by a power-meter gauge on one side and a small bank-building icon on the other, with faint circuit-like lines in the background.](/BitcoinArchive/images/analysis/2009-05-03-energy-consumption-defense-hero.png)

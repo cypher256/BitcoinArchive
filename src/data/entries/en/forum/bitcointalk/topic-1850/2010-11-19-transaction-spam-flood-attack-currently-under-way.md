@@ -13,6 +13,10 @@ participants:
 description: "Jeff Garzik starts a discussion: Transaction / spam flood attack currently under way."
 isSatoshi: false
 tags: []
+relatedEntries:
+  - forum/bitcointalk/topic-994/2010-09-06-always-pay-transaction-fee
+  - forum/bitcointalk/topic-1314/2010-09-29-prioritized-transactions-and-tx-fees
+  - aftermath/2010-07-15-jeff-garzik-biography
 ---
 
 Someone is apparently "testing" the main bitcoin network by flooding it with 0.01 BTC transactions from A->A and B->B, where A and B are two random public keys.  You can watch at [http://theymos.ath.cx:64150/bbe](http://theymos.ath.cx:64150/bbe) 

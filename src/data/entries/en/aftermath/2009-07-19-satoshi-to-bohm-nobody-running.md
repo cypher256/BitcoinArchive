@@ -21,6 +21,9 @@ tags:
 secondarySources:
   - name: "Decashed - Node IP Analysis"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
+relatedEntries:
+  - aftermath/2009-01-25-nicholas-bohm-biography
+  - aftermath/2009-07-18-bohm-to-satoshi-no-connections
 inlineLinkKeywords:
   - "There may just not be anybody else running it right now"
 ---

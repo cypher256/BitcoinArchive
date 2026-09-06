@@ -13,6 +13,10 @@ participants:
 description: "Jeff Garzik starts a discussion: Always pay transaction fee?."
 isSatoshi: false
 tags: []
+relatedEntries:
+  - forum/bitcointalk/topic-1314/2010-09-29-prioritized-transactions-and-tx-fees
+  - forum/bitcointalk/topic-1850/2010-11-19-transaction-spam-flood-attack-currently-under-way
+  - aftermath/2010-07-15-jeff-garzik-biography
 ---
 
 To accurately reflect that processing a transaction has certain resource costs across the network, I propose that tx fee be required for *every* transaction after X datetime (where X is a few months in the future).

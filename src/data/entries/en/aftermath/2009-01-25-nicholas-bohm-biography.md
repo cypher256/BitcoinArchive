@@ -20,6 +20,9 @@ secondarySources:
     url: "https://warwick.ac.uk/fac/soc/law/elj/jilt/1997_3/bohm/"
 relatedEntries:
   - "aftermath/2024-05-20-nicholas-bohm-private-emails-revealed"
+  - aftermath/2009-06-04-bohm-to-satoshi-router-issue
+  - aftermath/2009-07-18-bohm-to-satoshi-no-connections
+  - aftermath/2009-07-19-satoshi-to-bohm-nobody-running
   - aftermath/2009-01-09-bitcoin-v01-released
 ---
 

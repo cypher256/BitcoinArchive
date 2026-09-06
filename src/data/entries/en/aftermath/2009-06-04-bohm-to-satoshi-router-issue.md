@@ -22,6 +22,8 @@ tags:
 secondarySources:
   - name: "Decashed - Node IP Analysis"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"
+relatedEntries:
+  - aftermath/2009-01-25-nicholas-bohm-biography
 ---
 
 ![Illustration of a home router severing its connection line to a small peer-to-peer network of nodes, next to an unopened envelope marked with a question mark, and an exhibit folder labeled C/10/1 in the corner.](/BitcoinArchive/images/analysis/2009-06-04-bohm-to-satoshi-router-issue-hero.png)

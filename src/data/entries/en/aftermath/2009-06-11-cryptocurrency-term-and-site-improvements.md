@@ -21,6 +21,8 @@ tags:
 secondarySources:
   - name: "Cointelegraph - Newly released Satoshi emails"
     url: "https://web.archive.org/web/20260219032610/https://cointelegraph.com/news/newly-released-satoshi-nakamoto-emails-treasure-trove-early-bitcoin-lore"
+relatedEntries:
+  - aftermath/2009-05-01-martti-malmi-biography
 inlineLinkKeywords:
   - "P2P Cryptocurrency"
 ---

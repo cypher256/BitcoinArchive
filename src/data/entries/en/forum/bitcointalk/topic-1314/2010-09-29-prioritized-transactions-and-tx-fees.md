@@ -13,6 +13,10 @@ participants:
 description: "Jeff Garzik starts a discussion: Prioritized transactions, and tx fees."
 isSatoshi: false
 tags: []
+relatedEntries:
+  - forum/bitcointalk/topic-994/2010-09-06-always-pay-transaction-fee
+  - forum/bitcointalk/topic-1850/2010-11-19-transaction-spam-flood-attack-currently-under-way
+  - aftermath/2010-07-15-jeff-garzik-biography
 ---
 
 As noted in [this wiki page](http://www.bitcoin.org/wiki/doku.php?id=transaction_fee) and in [this satoshi post](http://bitcointalk.org/index.php?topic=795.msg8960#msg8960), the -paytxfee switch may be employed give your sent transactions "priority."
