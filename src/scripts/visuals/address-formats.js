@@ -1,13 +1,15 @@
-// Address derivation as a shipping label printed in three formats: legacy
-// and SegWit scripts hash the key down to one payload (Hash160), Taproot
+// Address derivation as a shipping label printed in three formats: P2PKH
+// and P2WPKH hash the key down to one payload (Hash160), P2TR instead
 // tweaks it into a different payload (an x-only key) -- and whichever
-// payload results gets encoded onto one of three label styles.
+// payload results gets encoded onto one of three label styles. (P2SH and
+// P2WSH, which hash a redeem/witness script rather than a bare key, are
+// out of scope for this illustration.)
 import { svgFigure, esc, ARROWHEAD_DEFS, arrow } from './_shared.js';
 
 const LABELS = {
   en: {
     title: 'Two payloads, three label formats',
-    desc: 'A private key produces a public key. Legacy and SegWit addresses hash that key down to a 20-byte payload (Hash160); Taproot instead tweaks the key with the Merkle root of any committed scripts, producing a different 32-byte x-only payload. Whichever payload results is then printed onto one of three label formats -- Base58Check, Bech32, or Bech32m -- each adding its own error-detection code, producing the P2PKH, P2WPKH, or P2TR address a sender actually types.',
+    desc: 'A private key produces a public key. P2PKH and P2WPKH hash that key down to a 20-byte payload (Hash160); P2TR instead tweaks the key with the Merkle root of any committed scripts, producing a different 32-byte x-only payload. Whichever payload results is then printed onto one of three label formats -- Base58Check, Bech32, or Bech32m -- each adding its own error-detection code, producing the P2PKH, P2WPKH, or P2TR address a sender actually types.',
     priv: 'Private\nkey',
     pub: 'Public\nkey',
     hash: 'Hash160\n(20-byte\npayload)',
@@ -22,7 +24,7 @@ const LABELS = {
   },
   ja: {
     title: '中身は2種類、ラベル形式は3通り',
-    desc: '秘密鍵から公開鍵が作られる。レガシーとSegWitのアドレスはその鍵をハッシュ化して20バイトの中身(Hash160)にする。Taprootは代わりに、コミットされたスクリプトのマークルルートで鍵を調整し、別の32バイトx-onlyの中身を作る。どちらの中身になっても、それがBase58Check・Bech32・Bech32mという3種類のラベル形式のいずれかに印字され、それぞれ独自のエラー検出符号を加えて、送金者が実際に入力するP2PKH・P2WPKH・P2TRアドレスになる。',
+    desc: '秘密鍵から公開鍵が作られる。P2PKHとP2WPKHはその鍵をハッシュ化して20バイトの中身(Hash160)にする。P2TRは代わりに、コミットされたスクリプトのマークルルートで鍵を調整し、別の32バイトx-onlyの中身を作る。どちらの中身になっても、それがBase58Check・Bech32・Bech32mという3種類のラベル形式のいずれかに印字され、それぞれ独自のエラー検出符号を加えて、送金者が実際に入力するP2PKH・P2WPKH・P2TRアドレスになる。',
     priv: '秘密鍵',
     pub: '公開鍵',
     hash: 'Hash160\n(20バイトの\n中身)',

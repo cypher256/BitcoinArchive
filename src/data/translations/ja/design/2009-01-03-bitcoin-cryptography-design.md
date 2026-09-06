@@ -139,7 +139,7 @@ flowchart TB
 
 <!-- visual: sighash-seal -->
 
-コードで言えば、sighash は sighash フラグが選ぶフィールドだけのハッシュであり、トランザクション全体のハッシュではない。検証ノードは満たそうとしているロックスクリプトから公開鍵 K を抽出し、その上で Verify(K, sighash, σ) の呼び出しが厳密な true/false を返す。部分的・暫定的な有効性というものは存在しない。
+コードで言えば、sighash は sighash フラグが選ぶフィールドだけのハッシュであり、トランザクション全体のハッシュではない。公開鍵 K の出所はスクリプトタイプによって異なる — P2PKH/P2WPKH では witness または scriptSig、Taproot の key-path spend ではロックスクリプト自体だ。それでも検証ノードの Verify(K, sighash, σ) の呼び出しは、常に厳密な true/false を返す。部分的・暫定的な有効性というものは存在しない。
 
 ### ECDSA 対シュノア
 

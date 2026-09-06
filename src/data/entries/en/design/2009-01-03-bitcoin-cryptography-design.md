@@ -138,7 +138,7 @@ Signatures are the mechanism by which a spender proves control of the private ke
 
 <!-- visual: sighash-seal -->
 
-In code terms: the sighash is a hash of exactly the fields the sighash flag selects, not the whole transaction. The verifying node extracts the public key K from the locking script being satisfied, then its Verify(K, sighash, σ) call returns a strict true/false — there is no partial or provisional validity.
+In code terms: the sighash is a hash of exactly the fields the sighash flag selects, not the whole transaction. Where the public key K comes from depends on the script type — the witness or scriptSig for P2PKH/P2WPKH, the locking script itself for a Taproot key-path spend — but the verifying node's Verify(K, sighash, σ) call always returns a strict true/false, with no partial or provisional validity.
 
 ### ECDSA vs Schnorr
 
