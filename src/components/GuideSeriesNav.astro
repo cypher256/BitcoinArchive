@@ -2,23 +2,36 @@
 /**
  * GuideSeriesNav.astro
  *
- * Lightweight step list for the 6-page beginner-guide series. Renders at
- * the top of every `type: "guide"` entry.
+ * Step indicator for the 6-page beginner-guide series. Renders at the
+ * top of every `type: "guide"` entry.
  *
- * Deliberately NOT a copy of DesignSeriesNav.astro: that component's dense
- * tree-style table of contents (L0/L1/L2 groups, per-item parameter-level
- * detail) is exactly the "looks like a page for developers" presentation
- * the guide series must avoid (STYLE_GUIDE_CORE.md's "Guide entries"
- * section). This component is a flat, six-item ordered list -- no tiers,
- * no grouping -- with the current page's own title shown in place instead
- * of linked.
+ * The series is one index page (GUIDE_SERIES[0], the entry point with
+ * a lookup table and links to every topic) plus five numbered topic
+ * pages read in order -- not six flat peers. This split matters
+ * because the pages' own body text already commits to it: every topic
+ * page's frontmatter `description` says "Part 1 of 5" .. "Part 5 of 5"
+ * in EN/JA, and the index page's own intro prose numbers those same
+ * five topics 1..5 in its lookup list -- neither ever counts the index
+ * itself as a part. This component's step label and its `<ol>`
+ * numbering both follow that same 1..5 count -- labeling the index
+ * "1 of 6" (an earlier version of this component did) contradicts the
+ * page's own body text and confused a reader who saw both on the
+ * index page at once.
  *
- * No separate prev/next links here: the page's top-of-article PrevNextNav
- * already follows GUIDE_SERIES order for `type: "guide"` entries (see
- * [...slug].astro), so restating "next: <title>" a second time down here
- * would just repeat the same link in the same words twice on one page.
- * This list's job is the one PrevNextNav can't do: show the reader where
- * today's page sits among all six, so they can jump to any of them.
+ * Deliberately NOT a copy of DesignSeriesNav.astro: that component's
+ * dense tree-style table of contents (L0/L1/L2 groups, per-item
+ * parameter-level detail) is exactly the "looks like a page for
+ * developers" presentation the guide series must avoid
+ * (STYLE_GUIDE_CORE.md's "Guide entries" section).
+ *
+ * No ParentLink on guide entries even though topic pages declare
+ * `partOf` toward the index (STYLE_GUIDE_REFERENCE.md's Parent Link
+ * section; kept only for the visual-density audit's index-page
+ * detection, see audit-visual-density.mjs's `isGuideIndex`): this nav
+ * already shows the same index link in its own row below, and
+ * design-series pages set the same precedent by never declaring
+ * `partOf` and relying on DesignSeriesNav alone. Guarded in
+ * [...slug].astro / ja/entries/[...slug].astro, not here.
  *
  * Wired in via:
  *   src/pages/entries/[...slug].astro
@@ -26,9 +39,9 @@
  * as `{entry.data.type === 'guide' && <GuideSeriesNav lang={lang}
  * slug={entry.id} />}` immediately before `<Content />`.
  *
- * The series order itself lives in ../data/guide-series.ts (shared with
- * the prev/next logic in both [...slug].astro pages) -- add new pages
- * there, not here.
+ * The series order itself lives in ../data/guide-series.ts (shared
+ * with the prev/next logic in both [...slug].astro pages) -- add new
+ * pages there, not here.
  */
 import { localePath } from '../i18n/utils';
 import { GUIDE_SERIES } from '../data/guide-series';
@@ -41,8 +54,10 @@ interface Props {
 const { lang, slug } = Astro.props;
 
 const bareSlug = slug.replace(/^analysis\//, '');
-const currentIndex = GUIDE_SERIES.findIndex((e) => e.slug === bareSlug);
-const current = currentIndex >= 0 ? GUIDE_SERIES[currentIndex] : undefined;
+const indexEntry = GUIDE_SERIES[0];
+const topics = GUIDE_SERIES.slice(1);
+const isIndexPage = bareSlug === indexEntry.slug;
+const currentTopic = topics.find((e) => e.slug === bareSlug);
 
 function titleOf(e: (typeof GUIDE_SERIES)[number]) {
   return lang === 'ja' ? e.titleJa : e.titleEn;
@@ -52,11 +67,12 @@ function hrefFor(e: (typeof GUIDE_SERIES)[number]) {
   return localePath(`/entries/analysis/${e.slug}/`, lang);
 }
 
-const stepNumber = (current ? current.step : 0) + 1;
-const stepLabel = lang === 'ja'
-  ? `ステップ ${stepNumber} / ${GUIDE_SERIES.length}`
-  : `Step ${stepNumber} of ${GUIDE_SERIES.length}`;
 const seriesLabel = lang === 'ja' ? '初心者ガイド' : 'Beginner guide';
+const stepLabel = isIndexPage
+  ? (lang === 'ja' ? '目次' : 'Contents')
+  : lang === 'ja'
+    ? `ステップ ${currentTopic ? currentTopic.step : 0} / ${topics.length}`
+    : `Step ${currentTopic ? currentTopic.step : 0} of ${topics.length}`;
 ---
 
 <nav class="guide-series-nav" aria-label={seriesLabel}>
@@ -64,8 +80,15 @@ const seriesLabel = lang === 'ja' ? '初心者ガイド' : 'Beginner guide';
     <span class="guide-series-kicker">{seriesLabel}</span>
     <span class="guide-series-count">{stepLabel}</span>
   </div>
+  <div class="guide-series-index">
+    {isIndexPage ? (
+      <span class="guide-series-item" aria-current="step">{titleOf(indexEntry)}</span>
+    ) : (
+      <a href={hrefFor(indexEntry)} class="guide-series-item">{titleOf(indexEntry)}</a>
+    )}
+  </div>
   <ol class="guide-series-list">
-    {GUIDE_SERIES.map((e) => (
+    {topics.map((e) => (
       <li class:list={[{ 'is-current': e.slug === bareSlug }]}>
         {e.slug === bareSlug
           ? <span class="guide-series-item" aria-current="step">{titleOf(e)}</span>
@@ -102,23 +125,31 @@ const seriesLabel = lang === 'ja' ? '初心者ガイド' : 'Beginner guide';
     font-variant-numeric: tabular-nums;
     color: var(--color-text);
   }
-  .guide-series-list {
+  .guide-series-index {
     margin: 0.6rem 0 0;
-    padding: 0.6rem 0 0 1.4rem;
+    padding: 0.6rem 0 0;
     border-top: 1px solid var(--color-border);
+    font-size: 0.9rem;
+  }
+  .guide-series-list {
+    margin: 0.3rem 0 0;
+    padding: 0 0 0 1.4rem;
     font-size: 0.9rem;
   }
   .guide-series-list li {
     padding: 0.15rem 0;
   }
+  .guide-series-index .guide-series-item[aria-current],
   .guide-series-list li.is-current .guide-series-item {
     color: var(--color-text);
     font-weight: 600;
   }
+  .guide-series-index a.guide-series-item,
   .guide-series-list a.guide-series-item {
     color: var(--color-link);
     text-decoration: none;
   }
+  .guide-series-index a.guide-series-item:hover,
   .guide-series-list a.guide-series-item:hover {
     text-decoration: underline;
   }

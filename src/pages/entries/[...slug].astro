@@ -273,7 +273,9 @@ const hoistHero = entry.data.type !== 'design' && Boolean(entry.data.editorNote)
       </div>
     )}
 
-    <ParentLink lang={lang} partOf={entry.data.partOf} />
+    {entry.data.type !== 'guide' && (
+      <ParentLink lang={lang} partOf={entry.data.partOf} />
+    )}
 
     {isMessageBlockType && (
       <CommentaryLinks lang={lang} entryId={entry.id} entryType={entry.data.type} />

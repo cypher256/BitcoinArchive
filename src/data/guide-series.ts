@@ -3,7 +3,9 @@
  * (L0 index -> G1..G5).
  *
  * Consumed by:
- *   - GuideSeriesNav.astro (renders the lightweight "step N of 6" indicator)
+ *   - GuideSeriesNav.astro (renders the lightweight step indicator: the
+ *     index page reads "Contents", the five topic pages read "Step 1 of 5"
+ *     .. "Step 5 of 5" -- never counting the index as one of the parts)
  *   - src/pages/entries/[...slug].astro and src/pages/ja/entries/[...slug].astro
  *     (drive prev/next for guide entries along this same order, instead of
  *     the site-wide date sort used by every other entry type)

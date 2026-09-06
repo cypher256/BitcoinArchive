@@ -199,15 +199,22 @@ reader needs before any other entry in the archive makes sense.
   design-document series' L0/L1/L2 tiers.
 - `guide` does not inherit `design`'s series apparatus: no
   `DesignSeriesNav`-style tree navigation, no L0/L1/L2 numbering. A
-  `guide` series uses its own lightweight step indicator (the current
-  page's position in the sequence), because the two series answer
-  different questions for the reader — `design` says "where in the
+  `guide` series uses its own lightweight step indicator
+  (`GuideSeriesNav.astro`), which distinguishes the series' one index
+  page from its numbered topic pages — "Part 1 of 5" .. "Part 5 of 5"
+  in each topic page's own frontmatter `description`, never counting
+  the index itself as a part — because the two series answer
+  different questions for the reader: `design` says "where in the
   specification am I," `guide` says "how far into learning this am
-  I." (`partOf` itself is a general, type-independent field — see
-  [§ Parent Link](STYLE_GUIDE_REFERENCE.md#parent-link-partof) — not
-  part of `design`'s own series machinery; a `guide` topic page may
-  still use it to point back to its series index the same way any
-  entry can point to a hub.)
+  I." Topic pages still declare `partOf` toward the index (a general,
+  type-independent field — see [§ Parent
+  Link](STYLE_GUIDE_REFERENCE.md#parent-link-partof)) so the
+  visual-density audit can tell the index apart from the topic pages,
+  but `ParentLink.astro` itself does not render on `guide` entries:
+  `GuideSeriesNav` already shows the same index link in its own row,
+  and rendering both would repeat it twice in different words on one
+  page — the same reason `design` entries never declare `partOf` and
+  rely on `DesignSeriesNav` alone.
 - No dense parameter tables, no protocol-version comparison tables, no
   BIP numbers, hex values, or code identifiers in body prose. These
   are exactly the signals of `design`'s register, and their presence
