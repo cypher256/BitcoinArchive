@@ -2,7 +2,7 @@
 import type { Lang } from '../i18n/ui';
 import BtcPriceChart from './BtcPriceChart.astro';
 import SupplyScheduleChart from './SupplyScheduleChart.astro';
-import { useTranslations, localePath } from '../i18n/utils';
+import { useTranslations, localePath, formatUsdForLocale } from '../i18n/utils';
 
 interface Props {
   lang: Lang;
@@ -14,8 +14,32 @@ const t = useTranslations(lang);
 // Shared body for the EN + JA /chart/ pages. Both pages render this one
 // component (translations + per-card text resolve from `lang`), so the page
 // markup and CSS live in exactly one place.
-const predictions = await import('../data/btc-chart/predictions.json').then(m => m.default);
+const allPredictions = await import('../data/btc-chart/predictions.json').then(m => m.default);
 const halvings = await import('../data/btc-chart/halvings.json').then(m => m.default);
+
+// This table only lists still-outstanding predictions: a prediction whose
+// own target date has already passed reads as an error here even while its
+// `hit` field is still null (not yet manually marked resolved) -- so this
+// filters by the actual date, not by `hit`. Astro pages are static (built
+// once, not re-rendered per visitor), so "today" is the last build/deploy
+// date, not the live date a reader sees the page on -- a prediction whose
+// target date passes between deploys keeps showing until the next build.
+// Compared as plain ISO YYYY-MM-DD strings (which sort the same as
+// chronological order), not as parsed Date instants: `new Date(dateStr)`
+// parses to UTC midnight, so comparing it against `new Date()` (the exact
+// current instant) would start excluding a prediction targeting *today*
+// partway through the day once enough UTC hours have elapsed -- a
+// same-calendar-day prediction should stay listed for the entirety of its
+// own target day. This code comment itself never reaches the built HTML
+// (frontmatter is server-side script, stripped like any other code
+// comment at parse time).
+const today = new Date().toISOString().slice(0, 10);
+const predictions = allPredictions
+  .filter((p: any) => p.targetDate >= today)
+  // Default order: soonest target date first -- the natural reading order
+  // for "which of these might resolve next". Interactive re-sort (by
+  // predictor, date, or price) is added client-side below.
+  .sort((a: any, b: any) => a.targetDate.localeCompare(b.targetDate));
 ---
 
 <div class="container-wide chart-page">
@@ -60,23 +84,17 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
   <section class="detail-section predictions-section">
     <h2>{t('chart.predictionsTitle' as any)}</h2>
     <div class="predictions-table-wrap">
-      <table class="predictions-table">
+      <table class="predictions-table" id="predictions-table">
         <thead>
           <tr>
-            <th>{t('chart.predictedBy' as any)}</th>
-            <th class="pred-col-date">{t('chart.date' as any)}</th>
-            <th class="th-price">
-              <span class="th-price-line">{t('chart.target' as any)}</span>
-              <span class="th-price-line">{t('chart.actual' as any)}</span>
-            </th>
-            <th>{t('chart.hit' as any)}</th>
+            <th class="pred-sortable" data-sort="predictor" tabindex="0" aria-sort="none">{t('chart.predictedBy' as any)}</th>
+            <th class="pred-col-date pred-sortable pred-sort-active" data-sort="date" data-order="asc" tabindex="0" aria-sort="ascending">{t('chart.date' as any)}</th>
+            <th class="th-price pred-sortable" data-sort="price" tabindex="0" aria-sort="none">{t('chart.target' as any)}</th>
           </tr>
         </thead>
         <tbody>
-          {predictions.map((p: any) => {
-            const status = p.hit === null ? 'pending' : p.hit ? 'hit' : 'miss';
-            return (
-              <tr class={`pred-${status} ${p.bearish ? 'pred-bearish' : ''}`}>
+          {predictions.map((p: any) => (
+              <tr class={p.bearish ? 'pred-bearish' : ''} data-predictor={p.predictor} data-date={p.targetDate} data-price={p.targetPrice}>
                 <td>
                   <strong>{p.predictor}</strong>
                   <span class="pred-date-inline">
@@ -92,15 +110,10 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
                   <span>{p.targetDate.slice(0, 7)}</span>
                 </td>
                 <td class="pred-price-cell">
-                  <span class="pred-price-value">${p.targetPrice.toLocaleString()}</span>
-                  <span class="pred-price-actual">{p.actualPrice ? '$' + p.actualPrice.toLocaleString() : '—'}</span>
-                </td>
-                <td class={`pred-status pred-status-${status}`}>
-                  {status === 'pending' ? t('chart.hitPending' as any) : status === 'hit' ? t('chart.hitYes' as any) : t('chart.hitNo' as any)}
+                  <span class="pred-price-value">{formatUsdForLocale(p.targetPrice, lang)}</span>
                 </td>
               </tr>
-            );
-          })}
+          ))}
         </tbody>
       </table>
     </div>
@@ -108,6 +121,63 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
 
   <p class="chart-disclaimer">{t('chart.disclaimer' as any)}</p>
 </div>
+
+<script>
+  // Predictions table: click a sortable header to re-sort by that column,
+  // toggling ascending/descending on repeat clicks (same interaction as
+  // the .sort-btn pattern used elsewhere on the site, adapted to <th>
+  // clicks since this is a real <table> rather than a <li> list). date
+  // and predictor sort as strings (ISO dates sort correctly as strings);
+  // price sorts numerically. Default order (soonest target date first) is
+  // set server-side, so this only needs to run on a click. <th> isn't
+  // natively focusable/keyboard-activatable, so tabindex + a keydown
+  // handler (Enter/Space) are added alongside click, and aria-sort is
+  // kept in sync so the current sort state is exposed to assistive tech.
+  (function () {
+    var table = document.getElementById('predictions-table');
+    if (!table) return;
+    var tbody = table.querySelector('tbody');
+    var headers = Array.prototype.slice.call(table.querySelectorAll('.pred-sortable'));
+    if (!tbody || !headers.length) return;
+
+    function applySort(key: string, order: string) {
+      var rows = Array.prototype.slice.call(tbody!.querySelectorAll('tr'));
+      rows.sort(function (a: any, b: any) {
+        var av: string | number = a.dataset[key];
+        var bv: string | number = b.dataset[key];
+        if (key === 'price') { av = parseFloat(av as string); bv = parseFloat(bv as string); }
+        if (av < bv) return order === 'asc' ? -1 : 1;
+        if (av > bv) return order === 'asc' ? 1 : -1;
+        return 0;
+      });
+      rows.forEach(function (r: any) { tbody!.appendChild(r); });
+    }
+
+    function activate(th: any) {
+      var key = th.dataset.sort;
+      var order = th.classList.contains('pred-sort-active') && th.dataset.order === 'asc' ? 'desc' : 'asc';
+      headers.forEach(function (h: any) {
+        h.classList.remove('pred-sort-active');
+        h.removeAttribute('data-order');
+        h.setAttribute('aria-sort', 'none');
+      });
+      th.classList.add('pred-sort-active');
+      th.dataset.order = order;
+      th.setAttribute('aria-sort', order === 'asc' ? 'ascending' : 'descending');
+      applySort(key, order);
+    }
+
+    headers.forEach(function (th: any) {
+      th.addEventListener('click', function () { activate(th); });
+      th.addEventListener('keydown', function (event: KeyboardEvent) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          activate(th);
+        }
+      });
+    });
+  })();
+</script>
 
 <style>
   .chart-page h1 {
@@ -233,6 +303,25 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
     font-size: 0.8rem;
     color: var(--color-text-muted);
   }
+  .pred-sortable {
+    cursor: pointer;
+    user-select: none;
+  }
+  .pred-sortable:hover {
+    color: var(--color-text);
+  }
+  .pred-sortable::after {
+    content: '';
+    display: inline-block;
+    width: 0.6em;
+    margin-left: 0.2em;
+  }
+  .pred-sort-active[data-order="asc"]::after {
+    content: '↑';
+  }
+  .pred-sort-active[data-order="desc"]::after {
+    content: '↓';
+  }
   .predictions-table td {
     padding: 0.6rem 0.75rem;
     border-bottom: 1px solid var(--color-border);
@@ -259,24 +348,21 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
   .predictions-table .th-price {
     text-align: right;
   }
-  .th-price-line {
-    display: block;
-  }
   .pred-price-cell {
     text-align: right;
     white-space: nowrap;
   }
-  .pred-price-value,
-  .pred-price-actual {
+  .pred-price-value {
     display: block;
     font-weight: 600;
   }
-  .pred-price-actual {
-    color: var(--color-text-muted);
-  }
 
   @media (max-width: 768px) {
-    .pred-col-date {
+    /* Only the date *value* cell hides on mobile (redundant with the
+       date already shown inline under the predictor name, see
+       .pred-date-inline below) -- the header stays visible so the date
+       sort control it carries (see the sort script) remains reachable. */
+    td.pred-col-date {
       display: none;
     }
     .pred-date-inline {
@@ -286,13 +372,6 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
       margin-top: 0.15rem;
     }
   }
-  .pred-status {
-    font-weight: 600;
-    white-space: nowrap;
-  }
-  .pred-status-hit { color: #059669; }
-  .pred-status-miss { color: #9ca3af; }
-  .pred-status-pending { color: #6366f1; }
   .pred-bearish td:first-child strong::after {
     content: ' (bearish)';
     color: #dc2626;

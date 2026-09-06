@@ -1,6 +1,6 @@
 ---
 import type { Lang } from '../i18n/ui';
-import { useTranslations } from '../i18n/utils';
+import { useTranslations, formatUsdForLocale } from '../i18n/utils';
 
 interface Props {
   lang: Lang;
@@ -25,6 +25,12 @@ const chartData = {
   predictions: predictions.map((p: any) => ({
     ...p,
     quote: p.quote[lang],
+    // Resolved server-side (like `quote` above) so the client tooltip
+    // script never needs its own copy of the JA man-unit formatting rule
+    // -- see formatUsdForLocale's own comment for why JA reads "100万ドル"
+    // rather than "$1,000,000".
+    targetPriceLabel: formatUsdForLocale(p.targetPrice, lang),
+    actualPriceLabel: p.actualPrice != null ? formatUsdForLocale(p.actualPrice, lang) : null,
   })),
   supply,
   models: modelsData.models.map((m: any) => ({
@@ -83,9 +89,6 @@ const chartId = mini ? 'btc-mini-chart' : 'btc-price-chart';
         predictedBy: t('chart.predictedBy' as any),
         target: t('chart.target' as any),
         actual: t('chart.actual' as any),
-        hitYes: t('chart.hitYes' as any),
-        hitNo: t('chart.hitNo' as any),
-        hitPending: t('chart.hitPending' as any),
       },
     })}
   />
@@ -704,12 +707,10 @@ interface ChartJsonData {
             var pred = pm.pred;
             var html = '<strong>' + pred.predictor + '</strong><br>';
             html += '"' + pred.quote + '"<br>';
-            html += labels.target + ': $' + format(',.0f')(pred.targetPrice) + ' (' + pred.targetDate.slice(0, 7) + ')';
-            if (pred.actualPrice) {
-              html += '<br>' + labels.actual + ': $' + format(',.0f')(pred.actualPrice);
+            html += labels.target + ': ' + pred.targetPriceLabel + ' (' + pred.targetDate.slice(0, 7) + ')';
+            if (pred.actualPriceLabel) {
+              html += '<br>' + labels.actual + ': ' + pred.actualPriceLabel;
             }
-            var status = pred.hit === null ? labels.hitPending : pred.hit ? labels.hitYes : labels.hitNo;
-            html += '<br>' + status;
 
             tooltip.html(html).style('opacity', 1);
             positionTooltip(event);

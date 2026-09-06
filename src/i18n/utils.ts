@@ -18,6 +18,23 @@ export function useTranslations(lang: Lang) {
   };
 }
 
+// JA reads a large round dollar figure in man (10,000) units ("100万ドル"),
+// not grouped thousands ("$1,000,000") -- matches the existing convention
+// for large BTC counts elsewhere (e.g. src/scripts/bar-chart-race.js's
+// btcJa()), adapted here for a whole-dollar value: an exact multiple of
+// 10,000 prints as a clean integer man count with no decimal, since ".0"
+// on a round number reads as an error, not precision. Shared by the /chart/
+// predictions table (ChartPageContent.astro, server-rendered) and its price
+// chart's hover tooltip (BtcPriceChart.astro, resolved server-side into the
+// JSON payload the client script reads) so both surfaces format identically.
+export function formatUsdForLocale(usd: number, lang: Lang): string {
+  if (lang !== 'ja') return '$' + usd.toLocaleString('en-US');
+  if (usd === 0) return '0 ドル';
+  const man = usd / 10000;
+  const manStr = Number.isInteger(man) ? man.toLocaleString('ja-JP') : man.toFixed(1);
+  return manStr + '万ドル';
+}
+
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export function localePath(path: string, lang: Lang): string {
