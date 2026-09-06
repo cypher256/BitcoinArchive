@@ -75,23 +75,7 @@ The following attacks represent the known threat surface of the Bitcoin protocol
 
 An attacker who controls more than 50% of total network hash rate can mine a private chain faster than the honest network and release it to trigger a reorganization, reversing previously confirmed transactions.
 
-```mermaid
-sequenceDiagram
-    participant H as Honest network
-    participant A as Attacker (>50%)
-
-    Note over H,A: Attacker sends payment to merchant
-    H->>H: Confirm transaction in block N
-    H->>H: Extend to block N+1, N+2...
-
-    A->>A: Mine private chain from block N-1
-    A->>A: Private chain excludes the payment
-    A->>A: Private chain overtakes honest chain
-
-    A->>H: Release private chain
-    Note over H: Reorganization: honest blocks N, N+1, N+2 replaced
-    Note over H: Merchant's payment vanishes
-```
+<!-- visual: hidden-chain-attack -->
 
 **Cost model.** The attacker must sustain hash rate exceeding 50% of the network for the duration of the attack. At 2024-era difficulty levels, this requires capital expenditure measured in billions of dollars for hardware alone, plus ongoing energy costs of tens of millions of dollars per day. The attack also destroys the value of the attacker's own mining investment by undermining confidence in the network.
 
@@ -114,24 +98,7 @@ A double-spend is any attack that causes a recipient to accept a payment that is
 
 An Eclipse attack isolates a target node from the honest network by monopolizing all of its peer connections with attacker-controlled nodes. The isolated node sees only the attacker's view of the blockchain.
 
-```mermaid
-flowchart TD
-    subgraph NORMAL["Normal operation"]
-        NODE_N["Target node"] --- HONEST1["Honest peer"]
-        NODE_N --- HONEST2["Honest peer"]
-        NODE_N --- HONEST3["Honest peer"]
-        NODE_N --- ATK_N["Attacker peer"]
-    end
-
-    subgraph ECLIPSED["Eclipsed state"]
-        NODE_E["Target node\n(isolated)"] --- ATK1["Attacker"]
-        NODE_E --- ATK2["Attacker"]
-        NODE_E --- ATK3["Attacker"]
-        NODE_E --- ATK4["Attacker"]
-    end
-
-    NORMAL --> |"Attacker floods\naddr messages +\nfills all connection slots"| ECLIPSED
-```
+<!-- visual: eclipse-isolation -->
 
 **Impact.** The eclipsed node can be fed a lower-work chain, used to double-spend against that node specifically, or prevented from seeing newly mined blocks — causing it to fall behind the honest chain tip.
 
@@ -157,20 +124,7 @@ A timejacking attack manipulates the timestamps reported by an attacker's peers 
 
 A selfish miner withholds discovered blocks instead of broadcasting them immediately. By strategically timing the release of withheld blocks, the attacker can cause honest miners to waste work on blocks that will become stale, gaining a disproportionate share of block rewards relative to their hash-rate fraction.
 
-```mermaid
-flowchart LR
-    subgraph HONEST["Honest miner behavior"]
-        FIND_H["Find block"] --> BROADCAST["Broadcast\nimmediately"]
-    end
-
-    subgraph SELFISH["Selfish miner behavior"]
-        FIND_S["Find block"] --> WITHHOLD["Withhold block"]
-        WITHHOLD --> WAIT{"Honest network\nfinds a block?"}
-        WAIT -- "No\n(attacker extends lead)" --> FIND_NEXT["Continue mining\non private chain"]
-        WAIT -- "Yes\n(honest block found)" --> RELEASE["Release withheld\nblock(s) to trigger\nfork + orphan\nhonest work"]
-        FIND_NEXT --> WAIT
-    end
-```
+<!-- visual: selfish-mining-withhold -->
 
 **Threshold.** The theoretical analysis by Eyal and Sirer (2014) showed that selfish mining becomes profitable above approximately 25–33% of network hash rate, depending on the attacker's network connectivity (the ability to reach a large fraction of nodes before the competing honest block propagates). Below this threshold, the attacker loses revenue compared to honest mining.
 
@@ -180,36 +134,9 @@ flowchart LR
 
 Bitcoin's security is not a single wall but a series of concentric layers. An attacker must breach multiple independent defenses to achieve a meaningful outcome.
 
-```mermaid
-flowchart TB
-    subgraph L1["Layer 1: Cryptographic guarantees"]
-        HASH["SHA-256d proof of work\n(block production cost)"]
-        SIG["ECDSA / Schnorr signatures\n(spend authorization)"]
-        MERKLE["Merkle tree commitments\n(tamper detection)"]
-    end
+<!-- visual: defense-rings -->
 
-    subgraph L2["Layer 2: Consensus rules"]
-        VALID["Deterministic block\nvalidation"]
-        WORK["Most-work chain\nselection"]
-        DIFF["Difficulty adjustment\n(regulates block rate)"]
-    end
-
-    subgraph L3["Layer 3: Network architecture"]
-        GOSSIP["Gossip relay\n(no single point\nof failure)"]
-        DIVERSE["Peer diversity\n(Eclipse resistance)"]
-        ENCRYPT["BIP 324 encrypted\ntransport"]
-    end
-
-    subgraph L4["Layer 4: Economic incentives"]
-        REWARD["Block reward\n(honest mining pays)"]
-        COST["Hash-rate cost\n(attack is expensive)"]
-        ASSET["Attacker's own BTC\nloses value"]
-    end
-
-    L1 --> L2
-    L2 --> L3
-    L3 --> L4
-```
+Each layer is built from independent mechanisms: cryptographic guarantees (SHA-256d proof of work, ECDSA/Schnorr signatures, Merkle tree commitments), consensus rules (deterministic block validation, most-work chain selection, difficulty adjustment), network architecture (gossip relay, peer diversity, BIP 324 encrypted transport), and economic incentives (block reward, hash-rate cost, the attacker's own BTC losing value).
 
 | Layer | What it protects | What it cannot protect against |
 |---|---|---|
@@ -250,20 +177,11 @@ The security budget is the total economic cost an attacker must bear to compromi
 
 ### Hash-rate cost model
 
-```mermaid
-flowchart TD
-    SUBSIDY["Block subsidy\n(currently 3.125 BTC)"] --> REWARD["Block reward\n= subsidy + fees"]
-    FEES["Transaction fees"] --> REWARD
-    REWARD --> REVENUE["Miner daily revenue\n= 144 blocks × reward"]
-    REVENUE --> HARDWARE["Supports hardware\ninvestment"]
-    REVENUE --> ENERGY["Supports energy\nconsumption"]
-    HARDWARE --> HASHRATE["Network hash rate"]
-    ENERGY --> HASHRATE
-    HASHRATE --> COST["Attack cost\n= cost to acquire and\noperate >50% of\nthis hash rate"]
-```
+<!-- visual: hashrate-cost-chain -->
 
 | Parameter | Approximate value (2024) | Significance |
 |---|---|---|
+| **Block subsidy** | 3.125 BTC per block (post-2024 halving) | The larger component of block reward, which funds miner revenue and, in turn, the hash rate an attacker must out-buy |
 | **Network hash rate** | ~600 EH/s (as of mid-2024) | The total computational power that an attacker must exceed |
 | **Daily miner revenue** | ~$30–40 M (subsidy + fees at typical prices) | The economic flow that sustains the current hash rate |
 | **ASIC unit cost** | ~$15–30 per TH/s (latest generation) | Capital expenditure for the attacker's hardware |

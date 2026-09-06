@@ -22,6 +22,12 @@ import { mount as mountMiningPoolShares } from './visuals/mining-pool-shares.js'
 import { mount as mountCoinbaseConfluence } from './visuals/coinbase-confluence.js';
 import { mount as mountFeeQueue } from './visuals/fee-queue.js';
 import { mount as mountIncentiveLoop } from './visuals/incentive-loop.js';
+import { mount as mountPeerBootstrap } from './visuals/peer-bootstrap.js';
+import { mount as mountHiddenChainAttack } from './visuals/hidden-chain-attack.js';
+import { mount as mountEclipseIsolation } from './visuals/eclipse-isolation.js';
+import { mount as mountSelfishMiningWithhold } from './visuals/selfish-mining-withhold.js';
+import { mount as mountDefenseRings } from './visuals/defense-rings.js';
+import { mount as mountHashrateCostChain } from './visuals/hashrate-cost-chain.js';
 
 type Drawer = (host: HTMLElement, lang: string) => void;
 
@@ -51,6 +57,12 @@ const VISUAL_DRAWERS: Record<string, Drawer> = {
   'coinbase-confluence': mountCoinbaseConfluence,
   'fee-queue': mountFeeQueue,
   'incentive-loop': mountIncentiveLoop,
+  'peer-bootstrap': mountPeerBootstrap,
+  'hidden-chain-attack': mountHiddenChainAttack,
+  'eclipse-isolation': mountEclipseIsolation,
+  'selfish-mining-withhold': mountSelfishMiningWithhold,
+  'defense-rings': mountDefenseRings,
+  'hashrate-cost-chain': mountHashrateCostChain,
 };
 
 (function () {

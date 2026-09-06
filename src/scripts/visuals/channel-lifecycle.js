@@ -50,10 +50,10 @@ function safeIcon(cx, cy, r, colorVar) {
 }
 
 function box(x, y, w, h, label, opts = {}) {
-  const { fill = 'var(--color-bg-alt)', stroke = 'var(--color-border)', fontSize = 10 } = opts;
+  const { fill = 'var(--color-bg-alt)', stroke = 'var(--color-border)', fontSize = 10, fillOpacity = null } = opts;
   const lines = label.split('\n').length;
   return (
-    `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="6" fill="${fill}" stroke="${stroke}" stroke-width="1.5"/>` +
+    `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="6" fill="${fill}" ${fillOpacity !== null ? `fill-opacity="${fillOpacity}"` : ''} stroke="${stroke}" stroke-width="1.5"/>` +
     `<text x="${x + w / 2}" y="${y + h / 2 - (lines - 1) * 6}" text-anchor="middle" fill="var(--color-text)" font-size="${fontSize}" font-family="var(--font-body, sans-serif)">${multiline(x + w / 2, y + h / 2 - (lines - 1) * 6, label, 12)}</text>`
   );
 }
@@ -79,7 +79,7 @@ export function mount(host, lang) {
     safeIcon(safeX, safeCy, 36, 'var(--color-hero-subtitle)') +
     `<text x="${safeX}" y="${safeCy + 55}" text-anchor="middle" fill="var(--color-hero-subtitle)" font-size="10" font-family="var(--font-body, sans-serif)">${multiline(safeX, safeCy + 55, L.open, 12)}</text>` +
     arrow(safeX + 40, safeCy - 15, coopX, coopY + boxH / 2, {}) +
-    box(coopX, coopY, boxW, boxH, L.coop, { fill: 'var(--color-accent)', stroke: 'var(--color-accent)' }) +
+    box(coopX, coopY, boxW, boxH, L.coop, { fill: 'var(--color-accent)', fillOpacity: 0.12, stroke: 'var(--color-accent)' }) +
     arrow(coopX, coopY + boxH, returnedX + boxW, returnedY + 10, {}) +
     arrow(safeX + 40, safeCy, forcedX, forcedY + boxH / 2, {}) +
     box(forcedX, forcedY, boxW, boxH, L.forced) +

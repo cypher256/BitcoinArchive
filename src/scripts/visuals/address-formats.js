@@ -47,9 +47,9 @@ function multiline(x, y, text, lineHeight = 12) {
 }
 
 function box(x, y, w, h, label, opts = {}) {
-  const { fill = 'var(--color-bg-alt)', stroke = 'var(--color-border)', fontSize = 10.5 } = opts;
+  const { fill = 'var(--color-bg-alt)', stroke = 'var(--color-border)', fontSize = 10.5, fillOpacity = null } = opts;
   return (
-    `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="6" fill="${fill}" stroke="${stroke}" stroke-width="1.5"/>` +
+    `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="6" fill="${fill}" ${fillOpacity !== null ? `fill-opacity="${fillOpacity}"` : ''} stroke="${stroke}" stroke-width="1.5"/>` +
     `<text x="${x + w / 2}" y="${y + h / 2}" text-anchor="middle" dominant-baseline="middle" fill="var(--color-text)" font-size="${fontSize}" font-family="var(--font-body, sans-serif)">${multiline(x + w / 2, y + h / 2 - (label.split('\n').length - 1) * 6, label, 12)}</text>`
   );
 }
@@ -87,9 +87,9 @@ export function mount(host, lang) {
     arrow(labelX + boxW + 20, label1Y + boxH / 2, addrX, label1Y + boxH / 2, {}) +
     arrow(labelX + boxW + 20, label2Y + boxH / 2, addrX, label2Y + boxH / 2, {}) +
     arrow(labelX + boxW + 20, label3Y + boxH / 2, addrX, label3Y + boxH / 2, {}) +
-    box(addrX, label1Y, boxW + 60, boxH, L.addr1, { fill: 'var(--color-accent)', stroke: 'var(--color-accent)' }) +
-    box(addrX, label2Y, boxW + 60, boxH, L.addr2, { fill: 'var(--color-accent)', stroke: 'var(--color-accent)' }) +
-    box(addrX, label3Y, boxW + 60, boxH, L.addr3, { fill: 'var(--color-accent)', stroke: 'var(--color-accent)' });
+    box(addrX, label1Y, boxW + 60, boxH, L.addr1, { fill: 'var(--color-accent)', fillOpacity: 0.12, stroke: 'var(--color-accent)' }) +
+    box(addrX, label2Y, boxW + 60, boxH, L.addr2, { fill: 'var(--color-accent)', fillOpacity: 0.12, stroke: 'var(--color-accent)' }) +
+    box(addrX, label3Y, boxW + 60, boxH, L.addr3, { fill: 'var(--color-accent)', fillOpacity: 0.12, stroke: 'var(--color-accent)' });
 
   host.innerHTML = svgFigure({ width: W, height: H, title: L.title, desc: L.desc, inner, caption: L.caption });
 }

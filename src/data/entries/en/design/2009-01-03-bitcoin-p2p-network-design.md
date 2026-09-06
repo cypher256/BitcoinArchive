@@ -95,20 +95,9 @@ A new node joining the network faces a bootstrap problem: it needs to find at le
 
 ### Bootstrap sequence (v27+ baseline)
 
-```mermaid
-flowchart TD
-    START["Node starts"] --> CACHE{"peers.dat\nhas addresses?"}
-    CACHE -- "Yes" --> TRY["Try cached peers"]
-    CACHE -- "No" --> DNS["Query DNS seeds"]
-    TRY --> ENOUGH{"Connected to\n≥1 peer?"}
-    ENOUGH -- "Yes" --> RELAY["Request addr messages\nfrom connected peers"]
-    ENOUGH -- "No" --> DNS
-    DNS --> CONNECT["Connect to\nreturned addresses"]
-    CONNECT --> RELAY
-    RELAY --> STABLE["Stable peer set\nestablished"]
+<!-- visual: peer-bootstrap -->
 
-    DNS2["Hardcoded seeds\n(last resort)"] -.-> CONNECT
-```
+In sequence: the node tries `peers.dat` first, but if the resulting connections still leave it with too few peers it queries DNS seeds anyway to round out the set. Hardcoded seeds feed into that same connection step independently, as a last-resort backstop rather than a step tried only after the other two.
 
 **Satoshi era vs v27+ baseline.** The original v0.1 client relied on IRC as the primary discovery mechanism — a simple but centralized approach vulnerable to IRC server downtime and channel bans. Modern Bitcoin Core replaces IRC with DNS seeds operated by independent community members. The DNS seed operators run crawler software that continually probes the network, and their DNS records reflect only nodes that are currently reachable and running compatible protocol versions.
 
