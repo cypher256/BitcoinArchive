@@ -81,19 +81,9 @@ Bitcoin does not track balances. Instead, every transaction creates one or more 
 
 ### UTXO lifecycle
 
-```mermaid
-stateDiagram-v2
-    [*] --> Created: Coinbase reward or\ntransaction output
-    Created --> InUTXOSet: Block confirmed,\noutput added to UTXO set
-    InUTXOSet --> Spent: Referenced as input\nin a new transaction
-    Spent --> [*]: Removed from UTXO set,\nstored in undo data
+<!-- visual: utxo-lifecycle -->
 
-    note right of InUTXOSet
-        "Coin" = an entry in the UTXO set.
-        A wallet's "balance" is the sum
-        of all UTXOs it can unlock.
-    end note
-```
+A "coin" is simply an entry in the UTXO set; a wallet's "balance" is the sum of every UTXO it can unlock.
 
 ### UTXO model vs account model
 
@@ -172,15 +162,7 @@ Bitcoin transactions are not locked to public keys directly. Instead, each outpu
 
 ### Script evaluation flow
 
-```mermaid
-flowchart LR
-    SIG["Unlocking script\n(scriptSig / witness)"] --> STACK["Combine and\npush onto stack"]
-    LOCK["Locking script\n(scriptPubKey)"] --> STACK
-    STACK --> EVAL["Execute opcodes\nleft to right"]
-    EVAL --> CHECK{"Top of stack\n= true?"}
-    CHECK -- "Yes" --> VALID["Spend authorized"]
-    CHECK -- "No" --> INVALID["Spend rejected"]
-```
+<!-- visual: script-lock-fit -->
 
 The interpreter processes opcodes sequentially. It pushes data items onto the stack, then executes operations that consume and produce stack elements. If the stack's top element is nonzero (true) after all opcodes have been processed, the spend is valid.
 
@@ -222,24 +204,9 @@ Cryptographic signatures are the mechanism by which a spender proves they contro
 
 ### Signing and verification flow
 
-```mermaid
-sequenceDiagram
-    participant S as Spender
-    participant TX as Transaction
-    participant V as Verifier (node)
+<!-- visual: sighash-seal -->
 
-    S->>S: Hold private key (k)
-    S->>TX: Construct transaction
-    S->>S: Hash the transaction data (sighash)
-    S->>S: Sign sighash with private key → signature (σ)
-    S->>TX: Attach signature to input (scriptSig or witness)
-
-    TX->>V: Broadcast transaction
-    V->>V: Extract public key (K) from locking script
-    V->>V: Recompute sighash from transaction data
-    V->>V: Verify: does σ match K and sighash?
-    V-->>TX: Valid → accept into mempool
-```
+The spender constructs the transaction -- its inputs, outputs, and locktime -- before signing it; on the receiving side, a verifying node identifies the public key the spend must match -- from the previous output's locking script for Taproot's key-path spend, or from the input's own unlocking data for P2PKH and P2WPKH -- before recomputing the digest.
 
 ## 5. SegWit and Taproot
 

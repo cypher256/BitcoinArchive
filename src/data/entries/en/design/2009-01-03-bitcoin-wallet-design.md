@@ -133,23 +133,9 @@ flowchart TB
 
 ## 3. Address generation
 
-A Bitcoin address is a user-facing encoding of a locking-script payload. The wallet generates addresses from its active descriptors, cycling through the keypool as addresses are handed out.
+A Bitcoin address is a user-facing encoding of a locking-script payload. The wallet generates addresses from its active descriptors, cycling through the keypool as addresses are handed out: it derives a fresh key at the next unused index via BIP 32 child key derivation, and the resulting key material -- tweaked further for Taproot -- is then encoded as shown below.
 
-```mermaid
-flowchart LR
-    DESC["Active descriptor\ne.g. wpkh(xpub.../0/*)"] --> IDX["Next unused index\n(e.g. index 7)"]
-    IDX --> DERIVE["BIP 32 child key\nderivation at index 7"]
-    DERIVE --> PK["Public key\n(compressed, 33 bytes)"]
-
-    PK --> |P2PKH| HASH160_1["Hash160\n→ 20-byte hash"]
-    HASH160_1 --> BASE58["Base58Check\n→ 1..."]
-
-    PK --> |P2WPKH| HASH160_2["Hash160\n→ 20-byte hash"]
-    HASH160_2 --> BECH32["Bech32\n→ bc1q..."]
-
-    PK --> |P2TR| TWEAK["Taproot tweak\n(x-only key)"]
-    TWEAK --> BECH32M["Bech32m\n→ bc1p..."]
-```
+<!-- visual: address-formats -->
 
 The wallet maintains a **gap limit** — the number of consecutive unused addresses it derives ahead of the last used one. When a transaction is detected that uses address at index `n`, the wallet extends the keypool so that there are always unused addresses available. This ensures that restoring from a seed phrase can rediscover all funded addresses by scanning forward until the gap limit is reached without finding any transactions.
 
@@ -197,31 +183,9 @@ A lower waste score is better. The wallet evaluates all candidate selections fro
 
 Partially Signed Bitcoin Transactions (BIP 174 / BIP 370) separate transaction construction from signing. A PSBT carries all the metadata a signer needs — UTXO data, derivation paths, redeem scripts — so that signing can happen on a device that has no access to the blockchain.
 
-```mermaid
-sequenceDiagram
-    participant C as Creator
-    participant U as Updater
-    participant S1 as Signer 1<br/>(hot wallet)
-    participant S2 as Signer 2<br/>(hardware device)
-    participant F as Finalizer
-    participant N as Node
+<!-- visual: psbt-relay -->
 
-    C->>C: Create unsigned PSBT<br/>(inputs, outputs, no signatures)
-    C->>U: Pass PSBT
-
-    U->>U: Add UTXO data,<br/>derivation paths,<br/>sighash types
-    U->>S1: Pass updated PSBT
-
-    S1->>S1: Sign own inputs<br/>(add partial signatures)
-    S1->>S2: Pass partially signed PSBT
-
-    S2->>S2: Verify outputs on screen,<br/>sign remaining inputs
-    S2->>F: Pass fully signed PSBT
-
-    F->>F: Combine partial signatures,<br/>assemble final scriptSig/witness,<br/>produce network-ready transaction
-    F->>N: Broadcast raw transaction
-    N->>N: Validate and relay
-```
+The hardware device (Signer 2) verifies the outputs on its own screen before signing; once the Finalizer assembles the final scriptSig/witness, the Extractor pulls out the complete, network-ready transaction for the node to validate and relay.
 
 ### PSBT roles
 

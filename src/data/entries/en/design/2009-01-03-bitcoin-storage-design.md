@@ -135,14 +135,7 @@ The UTXO set is the most performance-critical data structure in Bitcoin Core. Ev
 
 ### UTXO lookup flow
 
-```mermaid
-flowchart TD
-    TX["Incoming transaction<br/>references input<br/>(txid + output index)"] --> CACHE{"In coins<br/>cache?"}
-    CACHE -- "hit" --> FOUND["UTXO found in memory<br/>(fast path)"]
-    CACHE -- "miss" --> DB["Query coins<br/>database<br/>(LevelDB on disk)"]
-    DB -- "found" --> LOAD["Load into cache,<br/>return UTXO"]
-    DB -- "not found" --> REJECT["Input does not exist:<br/>transaction invalid"]
-```
+<!-- visual: coins-cache-lookup -->
 
 ### Key-value structure
 
@@ -173,13 +166,7 @@ The block index is a separate LevelDB database (stored in `blocks/index/`) that 
 
 ### Block retrieval path
 
-```mermaid
-flowchart LR
-    HASH["Block hash"] --> IDX["Block index<br/>(LevelDB)"]
-    IDX --> POS["File: blk00042.dat<br/>Offset: 0x1A3F00"]
-    POS --> READ["Read block from<br/>flat file at offset"]
-    READ --> BLOCK["Deserialized block"]
-```
+<!-- visual: block-file-index -->
 
 The block index enables the node to locate any block by hash without scanning the flat files. It also provides the data needed for chain selection: the node can compare `nChainWork` values across branch tips to determine the most-work chain without loading full blocks from disk.
 
@@ -189,21 +176,9 @@ The mempool is an in-memory pool of unconfirmed transactions that have passed va
 
 ### Mempool lifecycle
 
-```mermaid
-stateDiagram-v2
-    [*] --> Received: Transaction arrives\nfrom network or wallet
-    Received --> Validated: Passes policy checks\n+ consensus validation
-    Validated --> InMempool: Accepted into mempool
-    InMempool --> Confirmed: Included in a\nvalidated block
-    InMempool --> Evicted: Mempool full,\nlowest fee-rate dropped
-    InMempool --> Expired: Exceeds max age\n(default 2 weeks)
-    Confirmed --> [*]: Removed from mempool
-    Evicted --> [*]
-    Expired --> [*]
+<!-- visual: mempool-lifecycle -->
 
-    InMempool --> Replaced: Higher fee-rate\nreplacement (RBF)
-    Replaced --> [*]
-```
+A transaction that arrives from the network or a wallet first passes policy checks and consensus validation before it is accepted into the mempool; anything that fails either check is dropped before it ever enters.
 
 | Property | Value (v27+ baseline) |
 |---|---|
@@ -236,30 +211,7 @@ Initial block download (IBD) — validating every block from the genesis block t
 
 ### assumeUTXO bootstrap process
 
-```mermaid
-sequenceDiagram
-    participant U as User
-    participant N as Node
-    participant S as Snapshot
-    participant BG as Background validation
-
-    U->>N: Start node with snapshot file
-    N->>S: Load UTXO snapshot
-    N->>N: Verify snapshot hash matches<br/>hardcoded assumeUTXO hash
-    N->>N: Activate snapshot as working UTXO set
-
-    Note over N: Node is now functional —<br/>can validate new blocks<br/>and relay transactions
-
-    N->>BG: Begin full IBD from genesis (background)
-    BG->>BG: Validate every historical block
-    BG->>BG: Build independent UTXO set<br/>from genesis
-
-    Note over BG: When background IBD reaches<br/>snapshot height:
-
-    BG->>N: Compare background UTXO set<br/>against snapshot UTXO set
-    N->>N: Hash match → snapshot verified
-    N->>N: Merge into single chain state
-```
+<!-- visual: assumeutxo-bootstrap -->
 
 ### Trust model
 

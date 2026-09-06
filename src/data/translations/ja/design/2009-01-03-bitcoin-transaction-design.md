@@ -82,19 +82,9 @@ v0.1 のソースコードを読むと、UTXO モデルが具体的な処理と�
 
 ### UTXO ライフサイクル
 
-```mermaid
-stateDiagram-v2
-    [*] --> Created: コインベース報酬または<br/>トランザクション出力
-    Created --> InUTXOSet: ブロック承認、\n出力が UTXO セットに追加
-    InUTXOSet --> Spent: 新しいトランザクションの<br/>入力として参照
-    Spent --> [*]: UTXO セットから削除、<br/>undo データに保存
+<!-- visual: utxo-lifecycle -->
 
-    note right of InUTXOSet
-        「コイン」とは UTXO セットの 1 エントリー。
-        ウォレットの「残高」は、
-        アンロック可能な全 UTXO の合計。
-    end note
-```
+「コイン」とは単に UTXO セットの 1 エントリーであり、ウォレットの「残高」はアンロック可能な全 UTXO の合計にすぎない。
 
 ### UTXO モデルとアカウントモデルの比較
 
@@ -173,15 +163,7 @@ flowchart TB
 
 ### スクリプト評価フロー
 
-```mermaid
-flowchart LR
-    SIG["アンロックスクリプト\n(scriptSig / witness)"] --> STACK["結合して<br/>スタックにプッシュ"]
-    LOCK["ロックスクリプト\n(scriptPubKey)"] --> STACK
-    STACK --> EVAL["オペコードを<br/>左から右に実行"]
-    EVAL --> CHECK{"スタックトップ\n= true?"}
-    CHECK -- "はい" --> VALID["支出を承認"]
-    CHECK -- "いいえ" --> INVALID["支出を拒否"]
-```
+<!-- visual: script-lock-fit -->
 
 インタープリターはオペコードを順次処理する。データ項目をスタックにプッシュし、スタック要素を消費・生成する操作を実行する。すべてのオペコード処理後にスタック最上位の要素がゼロでない（真）であれば、支払いは有効である。
 
@@ -223,24 +205,9 @@ flowchart LR
 
 ### 署名と検証のフロー
 
-```mermaid
-sequenceDiagram
-    participant S as 支出者
-    participant TX as トランザクション
-    participant V as 検証者（ノード）
+<!-- visual: sighash-seal -->
 
-    S->>S: 秘密鍵 (k) を保持
-    S->>TX: トランザクションを構築
-    S->>S: トランザクションデータをハッシュ化 (sighash)
-    S->>S: 秘密鍵で sighash に署名 → 署名 (σ)
-    S->>TX: 署名を入力に添付（scriptSig または witness）
-
-    TX->>V: トランザクションをブロードキャスト
-    V->>V: ロックスクリプトから公開鍵 (K) を抽出
-    V->>V: トランザクションデータから sighash を再計算
-    V->>V: 検証: σ は K と sighash に一致するか?
-    V-->>TX: 有効 → メモリープールに受理
-```
+支出者は署名する前にトランザクション(入力、出力、ロックタイム)を構築する。受信側では、検証ノードがダイジェストを再計算する前に、支出が一致すべき公開鍵を特定する。Taproot の鍵パス支払いでは前の出力のロックスクリプトから、P2PKH や P2WPKH では入力自身のアンロックデータから特定する。
 
 ## 5. SegWit と Taproot
 

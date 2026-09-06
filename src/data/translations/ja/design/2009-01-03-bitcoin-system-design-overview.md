@@ -107,19 +107,7 @@ graph TB
 
 ビットコインの設計は 5 つの層に積層される。各層はその下の層にのみ依存する。
 
-```mermaid
-flowchart TB
-    APP["アプリケーション層<br/>ウォレット、<br/>エクスプローラー、<br/>Lightning、<br/>取引所"]
-    TXN["トランザクション層<br/>UTXO モデル、<br/>Script、署名"]
-    CONS["合意層<br/>ブロック検証、<br/>最多ワークチェーン、<br/>難易度調整"]
-    NET["ネットワーク層<br/>P2P ゴシップ、ピア発見、<br/>メッセージ中継"]
-    STORE["ストレージ層<br/>ブロックファイル、<br/>UTXO データベース、<br/>チェーンインデックス"]
-
-    APP --> TXN
-    TXN --> CONS
-    CONS --> NET
-    CONS --> STORE
-```
+<!-- visual: layer-foundation -->
 
 | 層 | 決定する内容 | 主要データ構造 |
 |---|---|---|

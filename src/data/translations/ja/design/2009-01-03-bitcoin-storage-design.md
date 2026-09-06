@@ -136,14 +136,7 @@ UTXO セットは Bitcoin Core で最もパフォーマンスが重要なデー�
 
 ### UTXO 検索フロー
 
-```mermaid
-flowchart TD
-    TX["受信トランザクションが<br/>入力を参照<br/>(txid + 出力インデックス)"] --> CACHE{"coins<br/>キャッシュにあり?"}
-    CACHE -- "ヒット" --> FOUND["UTXO をメモリーで検出<br/>（高速パス）"]
-    CACHE -- "ミス" --> DB["coins データベースに<br/>問い合わせ<br/>（ディスク上 LevelDB）"]
-    DB -- "あり" --> LOAD["キャッシュに読込み、<br/>UTXO を返す"]
-    DB -- "なし" --> REJECT["入力が存在しない:<br/>トランザクション無効"]
-```
+<!-- visual: coins-cache-lookup -->
 
 ### キーバリュー構造
 
@@ -174,13 +167,7 @@ flowchart TD
 
 ### ブロック取得パス
 
-```mermaid
-flowchart LR
-    HASH["ブロックハッシュ"] --> IDX["ブロックインデックス<br/>(LevelDB)"]
-    IDX --> POS["ファイル: blk00042.dat<br/>オフセット: 0x1A3F00"]
-    POS --> READ["フラットファイルの<br/>オフセットから<br/>ブロックを読込み"]
-    READ --> BLOCK["デシリアライズ済み<br/>ブロック"]
-```
+<!-- visual: block-file-index -->
 
 ブロックインデックスにより、ノードはフラットファイルを走査することなくハッシュで任意のブロックを特定できる。また、チェーン選択に必要なデータも提供する: ノードはディスクからフルブロックを読み込まずに、ブランチ先端間で `nChainWork` 値を比較して最も仕事量の多いチェーンを判定できる。
 
@@ -190,21 +177,9 @@ flowchart LR
 
 ### メモリープールのライフサイクル
 
-```mermaid
-stateDiagram-v2
-    [*] --> Received: トランザクションが<br/>ネットワークまたは<br/>ウォレットから到着
-    Received --> Validated: ポリシー検査と<br/>合意検証を通過
-    Validated --> InMempool: メモリープールに受理
-    InMempool --> Confirmed: 検証済みブロックに<br/>含まれる
-    InMempool --> Evicted: メモリープール満杯、<br/>最低手数料率を除外
-    InMempool --> Expired: 最大保持時間超過<br/>（既定 2 週間）
-    Confirmed --> [*]: メモリープールから削除
-    Evicted --> [*]
-    Expired --> [*]
+<!-- visual: mempool-lifecycle -->
 
-    InMempool --> Replaced: より高い手数料率による<br/>置換 (RBF)
-    Replaced --> [*]
-```
+ネットワークまたはウォレットから到着したトランザクションは、まずポリシー検査と合意検証を通過してからメモリープールに受理される。どちらかの検査に失敗すれば、受理される前に破棄される。
 
 | 特性 | 値（v27 以降基準） |
 |---|---|
@@ -237,30 +212,7 @@ stateDiagram-v2
 
 ### assumeUTXO のブートストラッププロセス
 
-```mermaid
-sequenceDiagram
-    participant U as ユーザー
-    participant N as ノード
-    participant S as スナップショット
-    participant BG as バックグラウンド検証
-
-    U->>N: スナップショットファイルを指定してノード起動
-    N->>S: UTXO スナップショットを読込み
-    N->>N: スナップショットハッシュが<br/>ハードコード assumeUTXO ハッシュに一致するか確認
-    N->>N: スナップショットを稼働中 UTXO セットとして有効化
-
-    Note over N: ノードは稼働状態 —<br/>新ブロック検証および<br/>トランザクション中継が可能
-
-    N->>BG: ジェネシスから完全 IBD 開始（バックグラウンド）
-    BG->>BG: 全過去ブロックを検証
-    BG->>BG: ジェネシスから独立した<br/>UTXO セットを構築
-
-    Note over BG: バックグラウンド IBD が<br/>スナップショット高に到達:
-
-    BG->>N: バックグラウンド UTXO セットと<br/>スナップショット UTXO セットを比較
-    N->>N: ハッシュ一致 → スナップショット検証済み
-    N->>N: 単一のチェーン状態に統合
-```
+<!-- visual: assumeutxo-bootstrap -->
 
 ### 信頼モデル
 

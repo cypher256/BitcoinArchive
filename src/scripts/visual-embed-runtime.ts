@@ -28,6 +28,14 @@ import { mount as mountEclipseIsolation } from './visuals/eclipse-isolation.js';
 import { mount as mountSelfishMiningWithhold } from './visuals/selfish-mining-withhold.js';
 import { mount as mountDefenseRings } from './visuals/defense-rings.js';
 import { mount as mountHashrateCostChain } from './visuals/hashrate-cost-chain.js';
+import { mount as mountCoinsCacheLookup } from './visuals/coins-cache-lookup.js';
+import { mount as mountBlockFileIndex } from './visuals/block-file-index.js';
+import { mount as mountMempoolLifecycle } from './visuals/mempool-lifecycle.js';
+import { mount as mountAssumeutxoBootstrap } from './visuals/assumeutxo-bootstrap.js';
+import { mount as mountUtxoLifecycle } from './visuals/utxo-lifecycle.js';
+import { mount as mountScriptLockFit } from './visuals/script-lock-fit.js';
+import { mount as mountPsbtRelay } from './visuals/psbt-relay.js';
+import { mount as mountLayerFoundation } from './visuals/layer-foundation.js';
 
 type Drawer = (host: HTMLElement, lang: string) => void;
 
@@ -63,6 +71,14 @@ const VISUAL_DRAWERS: Record<string, Drawer> = {
   'selfish-mining-withhold': mountSelfishMiningWithhold,
   'defense-rings': mountDefenseRings,
   'hashrate-cost-chain': mountHashrateCostChain,
+  'coins-cache-lookup': mountCoinsCacheLookup,
+  'block-file-index': mountBlockFileIndex,
+  'mempool-lifecycle': mountMempoolLifecycle,
+  'assumeutxo-bootstrap': mountAssumeutxoBootstrap,
+  'utxo-lifecycle': mountUtxoLifecycle,
+  'script-lock-fit': mountScriptLockFit,
+  'psbt-relay': mountPsbtRelay,
+  'layer-foundation': mountLayerFoundation,
 };
 
 (function () {
