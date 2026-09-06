@@ -11,7 +11,6 @@ participants:
 description: "2018 年 11 月にビットコインキャッシュから分岐したビットコイン SV の、供給・合意形成・統治の設計をビットコインを基準に読み解く。"
 isSatoshi: false
 tags:
-  - "currency"
   - "bitcoin-sv"
   - "altcoin"
   - "fork"

@@ -15,7 +15,6 @@ participants:
 description: "創業者を持たず、供給と合意規則をビットコインからそのまま引き継いだビットコインキャッシュの、難易度調整・統治・分配の仕組みを、ビットコインを基準に読み解く。"
 isSatoshi: false
 tags:
-  - "currency"
   - "bitcoin-cash"
   - "altcoin"
   - "block-size-war"

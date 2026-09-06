@@ -12,7 +12,6 @@ participants:
 description: "A hundred billion units generated in a single stroke in June 2012, a validator list two organizations curate, and a five-year SEC lawsuit over who was allowed to sell them."
 isSatoshi: false
 tags:
-  - "currency"
   - "xrp"
   - "ripple"
   - "altcoin"

@@ -12,7 +12,6 @@ participants:
 description: "A 45 billion cap, Ouroboros proof-of-stake, and governance split across three organizations — Cardano's own design documents, read against the numbers that marked its launch."
 isSatoshi: false
 tags:
-  - "currency"
   - "cardano"
   - "altcoin"
   - "proof-of-stake"

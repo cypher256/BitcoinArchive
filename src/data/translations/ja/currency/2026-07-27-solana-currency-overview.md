@@ -12,7 +12,6 @@ participants:
 description: "合意形成に独自の時計を組み込み、上限を定めないまま発行率を先細らせ、財団と投資家への事前配分から始まった通貨設計。"
 isSatoshi: false
 tags:
-  - "currency"
   - "solana"
   - "altcoin"
   - "proof-of-stake"

@@ -12,7 +12,6 @@ participants:
 description: "A relay chain coordinating parachains, nominated proof-of-stake, and the 2025 vote that capped a decade of roughly-10-percent issuance -- Polkadot's design, read against Bitcoin's fixed 21 million."
 isSatoshi: false
 tags:
-  - "currency"
   - "polkadot"
   - "altcoin"
   - "proof-of-stake"

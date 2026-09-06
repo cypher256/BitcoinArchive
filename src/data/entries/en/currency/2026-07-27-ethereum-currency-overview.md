@@ -12,7 +12,6 @@ participants:
 description: "No supply cap, a fee burn that can push issuance negative, and a 2022 switch from mining to staking — Ethereum's own design documents, read against Bitcoin's fixed 21 million."
 isSatoshi: false
 tags:
-  - "currency"
   - "ethereum"
   - "altcoin"
   - "proof-of-stake"

@@ -18,7 +18,6 @@ participants:
 description: "Launched on Bitcoin's blockchain as Realcoin in 2014, USDT mints and freezes at one company's discretion, and its reserve reporting has stayed at quarterly attestations, not audits."
 isSatoshi: false
 tags:
-  - "currency"
   - "usdt"
   - "stablecoin"
   - "transparency"

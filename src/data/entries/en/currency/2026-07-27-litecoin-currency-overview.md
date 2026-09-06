@@ -12,7 +12,6 @@ participants:
 description: "Litecoin copied Bitcoin's code and rescaled four parameters by an identical factor of four, then its creator divested his entire holding, citing his own influence over the price."
 isSatoshi: false
 tags:
-  - "currency"
   - "litecoin"
   - "altcoin"
   - "scrypt"

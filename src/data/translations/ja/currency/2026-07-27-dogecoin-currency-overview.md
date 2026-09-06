@@ -14,7 +14,6 @@ participants:
 description: "ホワイトペーパーを持たず、供給に上限もないドージコインの合意形成・統治・分配の仕組みを、ビットコインを基準に読み解く。"
 isSatoshi: false
 tags:
-  - "currency"
   - "dogecoin"
   - "altcoin"
   - "merge-mining"

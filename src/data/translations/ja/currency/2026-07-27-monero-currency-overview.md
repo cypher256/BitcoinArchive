@@ -12,7 +12,6 @@ participants:
 description: "Bytecoin の 82% 事前採掘から分岐し、リング署名とステルスアドレスで台帳を秘匿し、上限ではなく恒久的な末尾発行を選んだモネロの通貨設計を、ビットコインを基準に読み解く。"
 isSatoshi: false
 tags:
-  - "currency"
   - "monero"
   - "altcoin"
   - "privacy"

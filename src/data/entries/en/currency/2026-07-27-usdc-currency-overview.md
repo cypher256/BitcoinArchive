@@ -12,7 +12,6 @@ participants:
 description: "A fiat-collateralized design CENTRE named as a trade-off in its own whitepaper, a reserve that broke the dollar peg for two days in 2023, and a governing consortium later folded into one company."
 isSatoshi: false
 tags:
-  - "currency"
   - "usdc"
   - "stablecoin"
   - "governance"

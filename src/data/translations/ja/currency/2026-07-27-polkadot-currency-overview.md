@@ -12,7 +12,6 @@ participants:
 description: "リレーチェーンで多数のパラチェーンを束ねる設計、指名式プルーフ・オブ・ステーク、そして保有者投票が年 10% の発行目標を覆した経緯を読む通貨設計。"
 isSatoshi: false
 tags:
-  - "currency"
   - "polkadot"
   - "altcoin"
   - "proof-of-stake"

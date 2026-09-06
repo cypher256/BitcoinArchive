@@ -12,7 +12,6 @@ participants:
 description: "Monero forked away from a currency whose founders had quietly mined 82 percent of its supply, then built a ledger that hides what Bitcoin's discloses and an emission with no final block."
 isSatoshi: false
 tags:
-  - "currency"
   - "monero"
   - "altcoin"
   - "privacy"

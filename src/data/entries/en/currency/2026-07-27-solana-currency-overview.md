@@ -12,7 +12,6 @@ participants:
 description: "A consensus mechanism built on its own clock, an issuance rate that keeps shrinking without a cap, and a supply that started with a premine to the foundation and its investors."
 isSatoshi: false
 tags:
-  - "currency"
   - "solana"
   - "altcoin"
   - "proof-of-stake"

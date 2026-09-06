@@ -12,7 +12,6 @@ participants:
 description: "2012 年に採掘なしで生まれ、1,000 億 XRP を一度に発行した台帳の設計と、その配分を証券だと訴えた SEC の提訴の経緯。"
 isSatoshi: false
 tags:
-  - "currency"
   - "xrp"
   - "altcoin"
   - "ripple"

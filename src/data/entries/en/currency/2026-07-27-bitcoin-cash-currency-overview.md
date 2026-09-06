@@ -15,7 +15,6 @@ participants:
 description: "Bitcoin Cash inherited Bitcoin's ledger and 21 million cap at the 2017 fork, then split twice more under implementation teams with no single founder to arbitrate."
 isSatoshi: false
 tags:
-  - "currency"
   - "bitcoin-cash"
   - "altcoin"
   - "block-size-war"

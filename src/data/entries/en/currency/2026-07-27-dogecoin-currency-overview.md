@@ -14,7 +14,6 @@ participants:
 description: "Dogecoin has no whitepaper, no company, and no cap on its supply — a decade-old test of whether Bitcoin's scarcity is what a market actually pays for."
 isSatoshi: false
 tags:
-  - "currency"
   - "dogecoin"
   - "altcoin"
   - "merge-mining"

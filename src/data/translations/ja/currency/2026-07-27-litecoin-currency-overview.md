@@ -12,7 +12,6 @@ participants:
 description: "ビットコインのコードをほぼそのまま複製し、四つの数値だけを変えたライトコインの、採掘・半減・統治の仕組みを、ビットコインを基準に読み解く。"
 isSatoshi: false
 tags:
-  - "currency"
   - "litecoin"
   - "altcoin"
   - "scrypt"

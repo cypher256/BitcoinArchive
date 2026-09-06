@@ -12,7 +12,6 @@ participants:
 description: "2013 年末の白書が退けた上限つき供給、2021 年の EIP-1559 バーン、2022 年のマージから、イーサリアムの通貨設計をビットコインの固定供給と読み合わせる。"
 isSatoshi: false
 tags:
-  - "currency"
   - "ethereum"
   - "altcoin"
   - "proof-of-stake"

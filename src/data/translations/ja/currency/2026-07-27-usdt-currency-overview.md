@@ -18,7 +18,6 @@ participants:
 description: "2014 年にビットコインの台帳上でリアルコインとして生まれたテザー（USDT）は、上限のない発行と残高凍結の権限を発行体が握る。その設計をビットコインを基準に読み解く。"
 isSatoshi: false
 tags:
-  - "currency"
   - "usdt"
   - "stablecoin"
   - "transparency"

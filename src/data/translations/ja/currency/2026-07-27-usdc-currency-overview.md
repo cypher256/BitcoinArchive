@@ -12,7 +12,6 @@ participants:
 description: "CENTRE が四つの設計から法定通貨担保を選んだ USDC の仕組みと、準備資産の変遷、シリコンバレー銀行への 33 億ドル滞留、CENTRE 解散という三つの試練を追う。"
 isSatoshi: false
 tags:
-  - "currency"
   - "usdc"
   - "stablecoin"
   - "governance"

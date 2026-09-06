@@ -12,7 +12,6 @@ participants:
 description: "No block-size limit, one company's reference client, and five 51%-attack reorgs in a single year — Bitcoin SV's design record, measured against the 'original protocol' it set out to restore."
 isSatoshi: false
 tags:
-  - "currency"
   - "bitcoin-sv"
   - "altcoin"
   - "fork"
