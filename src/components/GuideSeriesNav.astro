@@ -2,16 +2,23 @@
 /**
  * GuideSeriesNav.astro
  *
- * Lightweight step indicator for the 6-page beginner-guide series.
- * Renders at the top of every `type: "guide"` entry.
+ * Lightweight step list for the 6-page beginner-guide series. Renders at
+ * the top of every `type: "guide"` entry.
  *
  * Deliberately NOT a copy of DesignSeriesNav.astro: that component's dense
- * tree-style table of contents (L0/L1/L2 groups, per-item titles always
- * visible) is exactly the "looks like a page for developers" presentation
+ * tree-style table of contents (L0/L1/L2 groups, per-item parameter-level
+ * detail) is exactly the "looks like a page for developers" presentation
  * the guide series must avoid (STYLE_GUIDE_CORE.md's "Guide entries"
- * section). This component shows only "Step N of 6" plus the current
- * page's own title, with a prev/next pair -- nothing a first-time reader
- * needs to parse as a hierarchy.
+ * section). This component is a flat, six-item ordered list -- no tiers,
+ * no grouping -- with the current page's own title shown in place instead
+ * of linked.
+ *
+ * No separate prev/next links here: the page's top-of-article PrevNextNav
+ * already follows GUIDE_SERIES order for `type: "guide"` entries (see
+ * [...slug].astro), so restating "next: <title>" a second time down here
+ * would just repeat the same link in the same words twice on one page.
+ * This list's job is the one PrevNextNav can't do: show the reader where
+ * today's page sits among all six, so they can jump to any of them.
  *
  * Wired in via:
  *   src/pages/entries/[...slug].astro
@@ -36,8 +43,6 @@ const { lang, slug } = Astro.props;
 const bareSlug = slug.replace(/^analysis\//, '');
 const currentIndex = GUIDE_SERIES.findIndex((e) => e.slug === bareSlug);
 const current = currentIndex >= 0 ? GUIDE_SERIES[currentIndex] : undefined;
-const prevEntry = currentIndex > 0 ? GUIDE_SERIES[currentIndex - 1] : null;
-const nextEntry = currentIndex >= 0 && currentIndex < GUIDE_SERIES.length - 1 ? GUIDE_SERIES[currentIndex + 1] : null;
 
 function titleOf(e: (typeof GUIDE_SERIES)[number]) {
   return lang === 'ja' ? e.titleJa : e.titleEn;
@@ -52,8 +57,6 @@ const stepLabel = lang === 'ja'
   ? `ステップ ${stepNumber} / ${GUIDE_SERIES.length}`
   : `Step ${stepNumber} of ${GUIDE_SERIES.length}`;
 const seriesLabel = lang === 'ja' ? '初心者ガイド' : 'Beginner guide';
-const prevLabel = lang === 'ja' ? '前へ' : 'Prev';
-const nextLabel = lang === 'ja' ? '次へ' : 'Next';
 ---
 
 <nav class="guide-series-nav" aria-label={seriesLabel}>
@@ -61,18 +64,15 @@ const nextLabel = lang === 'ja' ? '次へ' : 'Next';
     <span class="guide-series-kicker">{seriesLabel}</span>
     <span class="guide-series-count">{stepLabel}</span>
   </div>
-  <div class="guide-series-links">
-    {prevEntry ? (
-      <a href={hrefFor(prevEntry)} class="guide-series-link guide-series-link--prev">
-        <span class="guide-series-arrow">&larr;</span> {prevLabel}: {titleOf(prevEntry)}
-      </a>
-    ) : <span />}
-    {nextEntry ? (
-      <a href={hrefFor(nextEntry)} class="guide-series-link guide-series-link--next">
-        {nextLabel}: {titleOf(nextEntry)} <span class="guide-series-arrow">&rarr;</span>
-      </a>
-    ) : <span />}
-  </div>
+  <ol class="guide-series-list">
+    {GUIDE_SERIES.map((e) => (
+      <li class:list={[{ 'is-current': e.slug === bareSlug }]}>
+        {e.slug === bareSlug
+          ? <span class="guide-series-item" aria-current="step">{titleOf(e)}</span>
+          : <a href={hrefFor(e)} class="guide-series-item">{titleOf(e)}</a>}
+      </li>
+    ))}
+  </ol>
 </nav>
 
 <style>
@@ -102,39 +102,24 @@ const nextLabel = lang === 'ja' ? '次へ' : 'Next';
     font-variant-numeric: tabular-nums;
     color: var(--color-text);
   }
-  .guide-series-links {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 0.6rem;
-    padding-top: 0.6rem;
+  .guide-series-list {
+    margin: 0.6rem 0 0;
+    padding: 0.6rem 0 0 1.4rem;
     border-top: 1px solid var(--color-border);
     font-size: 0.9rem;
   }
-  .guide-series-link {
+  .guide-series-list li {
+    padding: 0.15rem 0;
+  }
+  .guide-series-list li.is-current .guide-series-item {
+    color: var(--color-text);
+    font-weight: 600;
+  }
+  .guide-series-list a.guide-series-item {
     color: var(--color-link);
     text-decoration: none;
-    max-width: 48%;
   }
-  .guide-series-link:hover {
+  .guide-series-list a.guide-series-item:hover {
     text-decoration: underline;
-  }
-  .guide-series-link--next {
-    text-align: right;
-    margin-left: auto;
-  }
-  .guide-series-arrow {
-    color: var(--color-text-muted);
-  }
-  @media (max-width: 640px) {
-    .guide-series-links {
-      flex-direction: column;
-    }
-    .guide-series-link,
-    .guide-series-link--next {
-      max-width: 100%;
-      text-align: left;
-      margin-left: 0;
-    }
   }
 </style>
