@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/504/"
+relatedEntries:
+  - correspondence/mike-hearn/bitcoinj/2011-03-09-hearn-to-satoshi-contracts-followup
 ---
 
 We can't safely do OP_BLOCKNUMBER.  In the event of a block chain reorg after a segmentation, transactions need to be able to get into the chain in a later block.  The OP_BLOCKNUMBER transaction and all its dependants would become invalid.  This wouldn't be fair to later owners of the coins who weren't involved in the time limited transaction.

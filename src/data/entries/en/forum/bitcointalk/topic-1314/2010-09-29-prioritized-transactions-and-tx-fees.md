@@ -14,6 +14,7 @@ description: "Jeff Garzik starts a discussion: Prioritized transactions, and tx 
 isSatoshi: false
 tags: []
 relatedEntries:
+  - forum/bitcointalk/topic-795/2010-08-13-re-bugfixes-in-svn-rev-130
   - forum/bitcointalk/topic-994/2010-09-06-always-pay-transaction-fee
   - forum/bitcointalk/topic-1850/2010-11-19-transaction-spam-flood-attack-currently-under-way
   - aftermath/2010-07-15-jeff-garzik-biography

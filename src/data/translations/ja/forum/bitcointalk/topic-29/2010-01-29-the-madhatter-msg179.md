@@ -11,6 +11,8 @@ participants:
 description: "BitcoinTalk トピック 29 における The Madhatter の文脈投稿。after msg172, サトシを引用."
 isSatoshi: false
 tags: []
+relatedEntries:
+  - forum/bitcointalk/topic-25/2010-01-29-the-madhatter-msg178
 quotes:
   - id: "q1"
     person: "satoshi"

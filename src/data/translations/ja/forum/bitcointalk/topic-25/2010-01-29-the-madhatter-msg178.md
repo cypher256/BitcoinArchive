@@ -11,6 +11,8 @@ participants:
 description: "BitcoinTalk トピック 25 における The Madhatter の文脈投稿。msg173 の後。"
 isSatoshi: false
 tags: []
+relatedEntries:
+  - forum/bitcointalk/topic-29/2010-01-29-the-madhatter-msg179
 translationStatus: complete
 ---
 

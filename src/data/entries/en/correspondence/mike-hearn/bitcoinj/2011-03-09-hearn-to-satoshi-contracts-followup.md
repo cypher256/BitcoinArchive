@@ -21,6 +21,9 @@ tags:
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"
+relatedEntries:
+  - forum/bitcointalk/topic-1786/2010-11-15-re-need-op-blocknumber-to-allow-time-limited-transactions
+  - forum/bitcointalk/topic-2181/2010-12-09-re-fees-in-bitdns-confusion
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

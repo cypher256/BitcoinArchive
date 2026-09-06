@@ -11,6 +11,8 @@ participants:
 description: "Context post by The Madhatter in BitcoinTalk topic 25. after msg173."
 isSatoshi: false
 tags: []
+relatedEntries:
+  - forum/bitcointalk/topic-29/2010-01-29-the-madhatter-msg179
 ---
 
 The main issue is that the bitcoin application was designed as an end-user P2P program. (And a proof of concept?) I see it being highly successful in this arena.

@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/353/"
+relatedEntries:
+  - forum/bitcointalk/topic-1314/2010-09-29-prioritized-transactions-and-tx-fees
 ---
 
 No, that's not what it is.

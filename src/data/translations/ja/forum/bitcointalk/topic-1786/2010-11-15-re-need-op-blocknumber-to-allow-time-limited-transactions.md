@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/504/"
+relatedEntries:
+  - correspondence/mike-hearn/bitcoinj/2011-03-09-hearn-to-satoshi-contracts-followup
 translationStatus: complete
 ---
 

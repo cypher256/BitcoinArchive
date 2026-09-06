@@ -11,6 +11,8 @@ participants:
 description: "Context post by The Madhatter in BitcoinTalk topic 29. after msg172, quotes Satoshi."
 isSatoshi: false
 tags: []
+relatedEntries:
+  - forum/bitcointalk/topic-25/2010-01-29-the-madhatter-msg178
 quotes:
   - id: "q1"
     person: "satoshi"
