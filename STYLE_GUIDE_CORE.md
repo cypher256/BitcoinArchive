@@ -710,16 +710,7 @@ reach for the project's own name as a placeholder taxonomy value.
 `source` values naming this project (see the file's `SELF_SOURCE_SLUGS`
 list), alongside its `sourceUrl` / `secondarySources` checks below.
 
-**Incident (2026-08-02 / caught 2026-08-19):** five entries created the
-same night used `source: "bitcoinarchive"` or `source: "bitcoin-institute"`.
-Four were corrected the same night alongside a `sourceUrl` self-domain
-fix (e.g. reassigned to `trakx`, `bitcoin-wiki`, `bitcoin-pdf`). The
-fifth — an AI-model investment survey with no self-domain `sourceUrl`
-to trip the existing check — kept the self-referential `source` value
-undetected for over two weeks, because no check ever parsed the
-`source` field. Reassigned to `github`, the venue its central claim
-(the `MAX_MONEY` consensus constant) is fact-checked against, and
-`check-no-self-domain.mjs` extended to close the gap.
+(Incident history: `ai-investment-survey-self-domain-and-mechanics-leak.md`, incidents/)
 
 ## Source Citation: `sourceUrl` vs `secondarySources`
 
@@ -1168,10 +1159,9 @@ normalized.
     how the entry is built. A reader is not expected to view source
     and does not benefit from being told to. If a fact needs
     disclosing, disclose the fact itself in plain language, not the
-    mechanism that stores it. (Incident: 2026-08-02, a survey entry's
-    `sourceNote` explained a frontmatter decision to the reader
-    instead of the underlying provenance fact, and a body bullet
-    told readers to "see the HTML comment above §2.")
+    mechanism that stores it. (Incident history:
+    `ai-investment-survey-self-domain-and-mechanics-leak.md`,
+    incidents/)
 
 ### Every source quote must belong to an attribution chain
 
