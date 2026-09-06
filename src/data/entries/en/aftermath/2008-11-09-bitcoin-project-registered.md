@@ -11,7 +11,6 @@ participants:
 description: "Satoshi Nakamoto registered the 'bitcoin' project on SourceForge.net, establishing the first public repository and project page for Bitcoin's source code and releases."
 isSatoshi: true
 tags:
-  - "sourceforge"
   - "project-registration"
   - "historic"
 relatedEntries:

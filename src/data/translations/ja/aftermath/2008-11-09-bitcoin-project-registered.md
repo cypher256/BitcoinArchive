@@ -11,7 +11,6 @@ participants:
 description: "サトシ・ナカモトが SourceForge.net に「ビットコイン」プロジェクトを登録し、ビットコインのソースコードとリリースのための最初の公開リポジトリとプロジェクトページを確立した。"
 isSatoshi: true
 tags:
-  - "sourceforge"
   - "project-registration"
   - "historic"
 translationStatus: complete

@@ -11,7 +11,6 @@ participants:
 description: "最初のブロックに刻まれたタイムズ紙の見出しは、二度目の銀行救済を伝える一行。サトシが設計の中に残した唯一の個人の声。なぜその見出しを選んだのかを読む。"
 isSatoshi: true
 tags:
-  - "sourceforge"
   - "genesis-block"
   - "historic"
   - "blockchain"

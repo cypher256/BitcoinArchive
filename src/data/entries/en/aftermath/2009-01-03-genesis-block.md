@@ -11,7 +11,6 @@ participants:
 description: "Bitcoin's first block contains a Times bank-bailout headline — Satoshi's only personal voice inside the design, etched in the system's most permanent place. A reading of why he chose it."
 isSatoshi: true
 tags:
-  - "sourceforge"
   - "genesis-block"
   - "historic"
   - "blockchain"
