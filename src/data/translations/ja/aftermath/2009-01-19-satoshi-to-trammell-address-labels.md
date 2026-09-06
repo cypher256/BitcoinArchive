@@ -17,7 +17,6 @@ tags:
   - "correspondence"
   - "usability"
   - "address-book"
-  - "ux-design"
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"

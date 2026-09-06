@@ -13,7 +13,7 @@ participants:
 description: "Satoshi clarifies that the requirement is for 'the good guys collectively' to have more CPU power than any single attacker, and explains how smaller operations could profitably generate bitcoins."
 isSatoshi: true
 tags:
-  - "cpu-power"
+  - "51-percent-attack"
   - "incentives"
   - "mining"
 secondarySources:

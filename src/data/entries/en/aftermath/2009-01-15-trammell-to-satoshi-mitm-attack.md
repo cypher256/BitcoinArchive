@@ -19,7 +19,6 @@ tags:
   - "security"
   - "send-to-ip"
   - "man-in-the-middle"
-  - "packet-analysis"
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"

@@ -15,7 +15,7 @@ description: "Satoshi explains the 'Satoshi' label came from Trammell's own addr
 isSatoshi: true
 tags:
   - "address-book"
-  - "ux"
+  - "usability"
 relatedEntries:
   - "aftermath/2009-01-18-satoshi-to-trammell-address-book"
 quotes:

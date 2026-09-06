@@ -15,7 +15,7 @@ description: "サトシが、表示されるのは送金元ではなく受信ア
 isSatoshi: true
 tags:
   - "address-book"
-  - "ux"
+  - "usability"
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-18-satoshi-to-trammell-address-book"

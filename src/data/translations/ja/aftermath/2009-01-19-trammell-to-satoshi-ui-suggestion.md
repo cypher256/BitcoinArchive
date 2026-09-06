@@ -16,7 +16,6 @@ isSatoshi: false
 tags:
   - "correspondence"
   - "usability"
-  - "ux-design"
   - "address-book"
 secondarySources:
   - name: "Dustin Trammell's Blog"

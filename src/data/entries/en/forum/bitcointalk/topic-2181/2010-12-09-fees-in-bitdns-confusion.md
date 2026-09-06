@@ -13,7 +13,7 @@ isSatoshi: false
 tags:
   - "transaction-fees"
   - "bitdns"
-  - "user-experience"
+  - "usability"
 ---
 
 A bunch of the current debate about including BitDNS or BitX makes assumptions that miners will include transactions or not based on some rather fine-grained conditions, while none of the standard code includes any sort of implementation that allows non-programmers to make decisions like that. How will I, the user, figure out what sort of fees have to go into a transaction?

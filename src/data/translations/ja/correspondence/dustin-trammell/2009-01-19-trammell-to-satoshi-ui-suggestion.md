@@ -14,7 +14,7 @@ participants:
 description: "トランメルが誤ラベルは自分の操作ミスだったと認め、取引詳細の文言変更を提案し、PayPal の複数受信アドレスを最も近い実例として挙げる。"
 isSatoshi: false
 tags:
-  - "ux"
+  - "usability"
   - "address-book"
 translationStatus: complete
 relatedEntries:

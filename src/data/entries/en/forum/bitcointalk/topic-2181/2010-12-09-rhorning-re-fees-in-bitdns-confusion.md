@@ -14,7 +14,7 @@ inReplyTo: "forum/bitcointalk/2010-12-09-fees-in-bitdns-confusion"
 tags:
   - "transaction-fees"
   - "bitdns"
-  - "user-experience"
+  - "usability"
   - "mining"
 ---
 

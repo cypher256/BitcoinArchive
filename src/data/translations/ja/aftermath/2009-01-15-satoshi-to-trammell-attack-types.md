@@ -19,7 +19,6 @@ tags:
   - "send-to-ip"
   - "man-in-the-middle"
   - "wallet-encryption"
-  - "attack-classification"
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"

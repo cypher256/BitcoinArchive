@@ -14,7 +14,7 @@ inReplyTo: "forum/bitcointalk/2010-12-09-fees-in-bitdns-confusion"
 tags:
   - "transaction-fees"
   - "bitdns"
-  - "user-experience"
+  - "usability"
 ---
 
 For currency transactions, if you notice your transactions taking a long time to confirm, you increase the TX fee.

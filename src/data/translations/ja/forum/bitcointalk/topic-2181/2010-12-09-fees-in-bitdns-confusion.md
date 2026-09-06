@@ -13,7 +13,7 @@ isSatoshi: false
 tags:
   - "transaction-fees"
   - "bitdns"
-  - "user-experience"
+  - "usability"
 translationStatus: complete
 ---
 
