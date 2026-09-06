@@ -20,7 +20,7 @@ participants:
     slug: "wei-dai"
   - name: "Craig Wright"
     slug: "craig-wright"
-description: "サトシ・ナカモトとビットコインについての問いを、それぞれ本アーカイブが詳しく扱っている場所へつなぐ案内。"
+description: "サトシ・ナカモトとビットコインについての疑問を、それぞれ本アーカイブが詳しく扱っている場所へつなぐ案内。"
 isSatoshi: false
 tags:
   - "satoshi-identity"
