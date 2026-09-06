@@ -14,8 +14,6 @@ description: "アダム・バックが b-money に 7 つの貨幣設計上の論
 inReplyTo: "emails/cypherpunks/b-money-protocol/1998-12-05-adam-back-b-money-protocol-repost"
 isSatoshi: false
 tags:
-  - "adam-back"
-  - "wei-dai"
   - "b-money"
   - "hashcash"
   - "cypherpunks"

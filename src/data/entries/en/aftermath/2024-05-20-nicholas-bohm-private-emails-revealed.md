@@ -13,7 +13,6 @@ participants:
 description: "The COPA v Wright record revealed that Nicholas Bohm — previously known only for a January 2009 bitcoin-list bug report — also exchanged a private series of troubleshooting emails with Satoshi."
 isSatoshi: false
 tags:
-  - "nicholas-bohm"
   - "copa-trial"
   - "email-archive"
   - "bitcoin-list"

@@ -19,9 +19,6 @@ participants:
 description: "On November 20, 2011, Bitcoin v0.5 shipped with the Crypto++ SHA-256 subset removed and replaced by OpenSSL. Wei Dai's library, a direct codebase dependency since v0.1, was gone."
 isSatoshi: false
 tags:
-  - "nils-schneider"
-  - "gavin-andresen"
-  - "wei-dai"
   - "cryptopp"
   - "openssl"
   - "bitcoin-core"

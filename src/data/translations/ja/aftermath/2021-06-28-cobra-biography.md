@@ -13,12 +13,10 @@ participants:
 description: "Cobra（Cøbra）：サトシが 2008 年に登録した bitcoin.org の匿名運営者。身元を明かさないため著作権訴訟に欠席敗訴を選んだ。"
 isSatoshi: false
 tags:
-  - "cobra"
   - "bitcoin-org"
   - "whitepaper"
   - "anonymity"
   - "lawsuit"
-  - "craig-wright"
 secondarySources:
   - name: "CoinDesk — UK Court Orders Bitcoin.org to Remove White Paper"
     url: "https://www.coindesk.com/markets/2021/06/29/uk-court-orders-bitcoinorg-to-remove-white-paper-following-craig-wright-lawsuit"

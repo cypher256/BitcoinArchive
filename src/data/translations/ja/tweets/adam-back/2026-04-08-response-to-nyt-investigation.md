@@ -12,7 +12,6 @@ participants:
 description: "NYT 調査 (アダム・バックをサトシに最も近い文体一致候補として特定) への回答として、バック自身がビットコイン以前のサイファーパンク活動を振り返って投稿したツイート。"
 isSatoshi: false
 tags:
-  - "adam-back"
   - "cypherpunk"
   - "satoshi-identity"
 relatedEntries:

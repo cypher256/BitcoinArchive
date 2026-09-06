@@ -14,7 +14,6 @@ callout:
   entry: "analysis/2016-05-02-craig-wright-satoshi-identity-hypothesis"
   label: "サトシ正体仮説"
 tags:
-  - "craig-wright"
   - "identity-claim"
   - "debunked"
   - "copa"

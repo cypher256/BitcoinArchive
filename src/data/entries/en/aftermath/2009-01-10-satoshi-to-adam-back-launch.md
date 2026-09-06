@@ -14,7 +14,6 @@ description: "Satoshi writes Adam Back for the final time, thanking him for pape
 isSatoshi: true
 tags:
   - "hashcash"
-  - "adam-back"
   - "bitcoin-launch"
   - "hal-finney"
   - "v0.1"

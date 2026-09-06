@@ -14,7 +14,6 @@ description: "バックがサトシにロン・リベストの 1996年 MicroMint
 isSatoshi: false
 tags:
   - "hashcash"
-  - "adam-back"
   - "micromint"
   - "ron-rivest"
   - "origins"

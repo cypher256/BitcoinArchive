@@ -13,7 +13,6 @@ participants:
 description: "2014 年 4 月、アストン大学法言語学センターが「Project Bitcoin」を発表。グリーヴ博士指導下で学生がサトシ候補 11 名を文体計量比較し、ニック・サボを最有力候補とした。"
 isSatoshi: false
 tags:
-  - "nick-szabo"
   - "satoshi-identity"
   - "stylometric-analysis"
   - "forensic-linguistics"

@@ -16,7 +16,6 @@ tags:
   - "altcoin"
   - "fork"
   - "governance"
-  - "craig-wright"
   - "51-percent-attack"
 secondarySources:
   - name: "PR Newswire — nChain announces Bitcoin SV full-node client to restore the original Bitcoin protocol (August 16, 2018)"

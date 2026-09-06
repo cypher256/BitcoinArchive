@@ -25,7 +25,6 @@ isSatoshi: false
 tags:
   - "satoshi-identity"
   - "hal-finney"
-  - "len-sassaman"
   - "documentary"
   - "finding-satoshi"
   - "co-creators-theory"

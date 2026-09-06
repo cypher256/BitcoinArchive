@@ -15,7 +15,6 @@ participants:
 description: "HBO documentary Money Electric (Cullen Hoback) named Peter Todd as a Satoshi candidate, citing a 2010 BitcoinTalk reply about RBF and Todd's later BIP 125. Todd called the claim ludicrous."
 isSatoshi: false
 tags:
-  - "peter-todd"
   - "satoshi-identity"
   - "documentary"
   - "hbo"

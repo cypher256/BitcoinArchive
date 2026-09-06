@@ -15,7 +15,6 @@ participants:
 description: "2013 年 12 月 1 日、ブロガー Skye Grey が「サトシは（おそらく）ニック・サボ」を公開。サボ＝サトシ仮説の最初の公的文体計量研究で、TechCrunch が 5 日報道。"
 isSatoshi: false
 tags:
-  - "nick-szabo"
   - "satoshi-identity"
   - "stylometric-analysis"
   - "media"

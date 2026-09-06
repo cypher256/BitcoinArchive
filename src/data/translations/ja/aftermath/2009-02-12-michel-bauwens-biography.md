@@ -11,7 +11,6 @@ participants:
 description: "ベルギーの政治理論家（1958-）、P2P Foundation 創設者。2009年2月の P2P Research メーリングリストでサトシと対話し、稼働状況を尋ねた。"
 isSatoshi: false
 tags:
-  - "michel-bauwens"
   - "p2p-research-list"
   - "p2p-foundation"
 secondarySources:

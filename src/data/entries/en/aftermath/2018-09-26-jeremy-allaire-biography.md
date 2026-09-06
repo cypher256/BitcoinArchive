@@ -12,7 +12,6 @@ participants:
 description: "Internet entrepreneur who founded Circle and launched USDC in 2018. Built the largest regulated dollar stablecoin while publicly arguing that Bitcoin's value is its non-sovereignty."
 isSatoshi: false
 tags:
-  - "jeremy-allaire"
   - "stablecoin"
   - "usdc"
   - "altcoin"

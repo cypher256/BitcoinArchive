@@ -15,7 +15,6 @@ description: "アダム・バックの最初の返信。 Hashcash 引用は問�
 isSatoshi: false
 tags:
   - "hashcash"
-  - "adam-back"
   - "b-money"
   - "wei-dai"
   - "origins"

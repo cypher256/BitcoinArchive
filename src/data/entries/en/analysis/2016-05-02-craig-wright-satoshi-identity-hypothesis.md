@@ -14,7 +14,6 @@ description: "The only candidate who claimed the identity himself — declared i
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "craig-wright"
   - "identity-claim"
   - "debunked"
   - "copa"

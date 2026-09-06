@@ -13,7 +13,6 @@ participants:
 description: "Early Bitcoin developer Jeff Garzik released videos detailing his time working with Satoshi, describing the creator as a self-taught, solitary genius who never revealed any personal information."
 isSatoshi: false
 tags:
-  - "jeff-garzik"
   - "satoshi-identity"
   - "retrospective"
   - "coding-style"

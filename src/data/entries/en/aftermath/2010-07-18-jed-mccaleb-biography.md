@@ -12,7 +12,6 @@ participants:
 description: "Created Mt. Gox in 2010 and sold it in 2011, then co-created the XRP Ledger and Stellar. Says the whitepaper convinced him double-spend was solvable at all."
 isSatoshi: false
 tags:
-  - "jed-mccaleb"
   - "mt-gox"
   - "ripple"
   - "altcoin"

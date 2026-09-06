@@ -16,9 +16,7 @@ description: "ウェイ・ダイは 2013 年、固定供給を失敗と断じた
 isSatoshi: false
 tags:
   - "monetary-policy"
-  - "wei-dai"
   - "b-money"
-  - "adam-back"
   - "hard-money"
   - "elastic-supply"
 secondarySources:

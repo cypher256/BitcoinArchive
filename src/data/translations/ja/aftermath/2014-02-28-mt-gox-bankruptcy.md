@@ -12,7 +12,6 @@ description: "かつて世界最大、ビットコイン取引の約 70% を処�
 isSatoshi: false
 tags:
   - "mt-gox"
-  - "mark-karpeles"
   - "exchange-collapse"
   - "hack"
   - "bankruptcy"

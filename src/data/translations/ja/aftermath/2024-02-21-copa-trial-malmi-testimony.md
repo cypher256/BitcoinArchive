@@ -18,10 +18,7 @@ description: "COPA 対ライト裁判 13 日目、マルッティ・マルミが
 isSatoshi: false
 tags:
   - "copa-trial"
-  - "martti-malmi"
   - "email-archive"
-  - "craig-wright"
-  - "adam-back"
   - "court-testimony"
 secondarySources:
   - name: "Martti Malmi's Satoshi email archive (GitHub)"

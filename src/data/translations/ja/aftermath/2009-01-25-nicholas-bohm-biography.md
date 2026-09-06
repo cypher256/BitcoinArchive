@@ -11,7 +11,6 @@ participants:
 description: "2009年1月に bitcoin-list メーリングリストで Bitcoin の動作問題を報告し、サトシ・ナカモトから直接返信を受けた英国の商事弁護士・電子商取引政策アドバイザー。"
 isSatoshi: false
 tags:
-  - "nicholas-bohm"
   - "bitcoin-list"
   - "early-adopter"
 secondarySources:

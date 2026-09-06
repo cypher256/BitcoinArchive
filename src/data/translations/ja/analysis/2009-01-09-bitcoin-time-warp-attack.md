@@ -11,7 +11,6 @@ participants:
 description: "サトシ原典の難易度調整に 2,015/2,016 オフバイワン誤りが残る。過半数結託で悪用可能。 Great Consensus Cleanup が修正を目指す。"
 isSatoshi: false
 tags:
-  - "satoshi-nakamoto"
   - "source-code"
   - "off-by-one"
   - "difficulty-adjustment"

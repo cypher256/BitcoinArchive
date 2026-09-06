@@ -11,7 +11,6 @@ participants:
 description: "American developer (luke-jr), long-tenured Bitcoin Core contributor. Maintains Bitcoin Knots; co-founded Ocean mining pool (2023). Suffered a $3.5M+ wallet theft in late 2022 (compromised PGP key)."
 isSatoshi: false
 tags:
-  - "luke-dashjr"
   - "bitcoin-core"
   - "bitcoin-knots"
   - "ocean"

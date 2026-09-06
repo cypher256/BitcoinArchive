@@ -12,7 +12,6 @@ description: "世界第 2 位の暗号通貨取引所 FTX が連邦破産法第 
 isSatoshi: false
 tags:
   - "ftx"
-  - "sam-bankman-fried"
   - "exchange-collapse"
   - "fraud"
   - "bankruptcy"

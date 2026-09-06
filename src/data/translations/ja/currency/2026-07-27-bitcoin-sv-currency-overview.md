@@ -15,7 +15,6 @@ tags:
   - "altcoin"
   - "fork"
   - "governance"
-  - "craig-wright"
   - "51-percent-attack"
 secondarySources:
   - name: "PR Newswire — nChain がオリジナルプロトコルの復元を発表 (2018 年 8 月 16 日)"

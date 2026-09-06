@@ -14,7 +14,6 @@ description: "E4M を書き、のちに犯罪帝国を築いた男。『The Mast
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "paul-le-roux"
   - "e4m"
   - "disputed"
 secondarySources:

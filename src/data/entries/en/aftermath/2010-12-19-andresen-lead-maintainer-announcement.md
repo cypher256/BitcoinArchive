@@ -13,7 +13,6 @@ participants:
 description: "Gavin Andresen announces on BitcoinTalk topic 2367 he is taking over active project management of Bitcoin with Satoshi's blessing. Same day, he creates the bitcoin/bitcoin GitHub repo."
 isSatoshi: false
 tags:
-  - "gavin-andresen"
   - "leadership"
   - "transition"
   - "succession"

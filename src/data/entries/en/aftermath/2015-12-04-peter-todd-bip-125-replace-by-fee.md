@@ -13,7 +13,6 @@ participants:
 description: "BIP 125 formalized opt-in Replace-by-Fee (RBF), tracing directly to Satoshi's December 2010 BitcoinTalk replacement mechanism — the thread where Peter Todd made his second-ever forum post."
 isSatoshi: false
 tags:
-  - "peter-todd"
   - "bip"
   - "replace-by-fee"
   - "transaction-policy"

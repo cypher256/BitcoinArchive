@@ -11,7 +11,6 @@ participants:
 description: "Pseudonymous individual who published the first BTC-USD rate on October 5, 2009 ($1 = 1,309.03 BTC) based on electricity cost. Did the first BTC-fiat sale with Martti Malmi; proposed the BTC ticker."
 isSatoshi: false
 tags:
-  - "newlibertystandard"
   - "first-exchange-rate"
   - "btc-ticker"
   - "first-transaction"

@@ -19,7 +19,6 @@ participants:
 description: "2021 年 2 月 22 日、エヴァン・ハッチが Medium に「レン・サッサマンとサトシ：サイファーパンク史」を公開。サッサマン＝サトシ仮説の基礎となった公的定式化。"
 isSatoshi: false
 tags:
-  - "len-sassaman"
   - "satoshi-identity"
   - "cypherpunk"
   - "media"

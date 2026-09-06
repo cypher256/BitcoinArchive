@@ -13,7 +13,6 @@ participants:
 description: "In an April 2025 interview, P2P Foundation founder Michel Bauwens recalled receiving several emails from Satoshi (who offered him a few bitcoins) and gave a retrospective on Bitcoin's significance."
 isSatoshi: false
 tags:
-  - "michel-bauwens"
   - "p2p-foundation"
   - "interview"
   - "bitcoin-ideology"

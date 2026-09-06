@@ -11,7 +11,6 @@ participants:
 description: "Wei Dai announces Disperse/Collect 1.0 on the Cypherpunks list, built from his own Crypto++ library. Confirms he was an active coder, relevant to why he later chose not to implement b-money."
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "crypto-plus-plus"
   - "cypherpunks"
   - "coding"

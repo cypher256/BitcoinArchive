@@ -16,7 +16,6 @@ description: "戸籍名が文字通り「サトシ・ナカモト」だった男
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "dorian-nakamoto"
   - "name-match"
   - "newsweek"
   - "denied"

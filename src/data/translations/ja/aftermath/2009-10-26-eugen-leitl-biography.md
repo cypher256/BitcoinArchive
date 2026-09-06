@@ -11,7 +11,6 @@ participants:
 description: "ドイツの低温生物学者、トランスヒューマニスト、サイファーパンク。2009年10月の bitcoin-list でサトシに返信、Debian パッケージを尋ねた。"
 isSatoshi: false
 tags:
-  - "eugen-leitl"
   - "bitcoin-list"
   - "cypherpunk"
   - "early-adopter"

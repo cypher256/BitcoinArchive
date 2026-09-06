@@ -17,7 +17,6 @@ participants:
 description: "サボの 2011 年 5 月 Unenumerated 投稿。ビットゴールド (1998) からビットコイン (2009) までの 13 年を論じ、私的リストを `libtech` と特定。"
 isSatoshi: false
 tags:
-  - "nick-szabo"
   - "bit-gold"
   - "origins"
   - "proof-of-work"

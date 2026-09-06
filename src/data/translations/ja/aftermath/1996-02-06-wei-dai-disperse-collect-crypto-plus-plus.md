@@ -11,7 +11,6 @@ participants:
 description: "サイファーパンクメーリングリストでの Disperse/Collect 1.0 発表。自作の Crypto++ライブラリ使用と明記し、ダイが実際に手を動かす実装者でもあったことを示す。"
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "crypto-plus-plus"
   - "cypherpunks"
   - "coding"

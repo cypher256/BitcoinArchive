@@ -11,7 +11,6 @@ participants:
 description: "サトシの Bitcoin ソース（v0.1.0〜v0.3.19）の統計分析。コーディングスタイル指紋、EST/CST 示唆のコミット時間、19,901→31,909 行進化、最終コミットの特徴。"
 isSatoshi: true
 tags:
-  - "satoshi-nakamoto"
   - "source-code"
   - "coding-style"
   - "timeline"

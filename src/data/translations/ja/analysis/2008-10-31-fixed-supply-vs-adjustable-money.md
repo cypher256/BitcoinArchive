@@ -21,7 +21,6 @@ tags:
   - "supply-design"
   - "hard-money"
   - "elastic-supply"
-  - "wei-dai"
   - "fiat-comparison"
 secondarySources:
   - name: "Wei Dai — b-money proposal (1998)"

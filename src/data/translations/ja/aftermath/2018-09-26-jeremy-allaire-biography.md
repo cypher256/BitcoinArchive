@@ -12,7 +12,6 @@ participants:
 description: "Circle を創業し 2018 年に USDC を公開した起業家。規制下で最大のドル連動通貨を作りながら、ビットコインの価値は主権の外にあることだと語り続けている。"
 isSatoshi: false
 tags:
-  - "jeremy-allaire"
   - "stablecoin"
   - "usdc"
   - "altcoin"

@@ -15,7 +15,6 @@ description: "Adam Back's first reply: the Hashcash citation looks fine, and Sat
 isSatoshi: false
 tags:
   - "hashcash"
-  - "adam-back"
   - "b-money"
   - "wei-dai"
   - "origins"

@@ -11,7 +11,6 @@ participants:
 description: "Dutch agile coach and AardRock founder whose questions on the P2P Research list prompted Satoshi to reconfirm the 21,000,000-coin supply cap he had first stated publicly five weeks earlier."
 isSatoshi: false
 tags:
-  - "martien-van-steenbergen"
   - "p2p-research-list"
   - "supply-limit"
   - "historic"

@@ -15,7 +15,6 @@ description: "サトシが Bitcoin v0.1 リリースの翌日にアダム・バ�
 isSatoshi: true
 tags:
   - "hashcash"
-  - "adam-back"
   - "bitcoin-launch"
   - "hal-finney"
   - "v0.1"

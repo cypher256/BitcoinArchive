@@ -11,7 +11,6 @@ participants:
 description: "ピーター・トッドが OpenTimestamps を発表。ビットコインブロックチェーンを利用しマークルツリー集約で文書数無制限の暗号タイムスタンプを生成するインフラ。"
 isSatoshi: false
 tags:
-  - "peter-todd"
   - "opentimestamps"
   - "timestamping"
   - "merkle-tree"

@@ -16,8 +16,6 @@ description: "Satoshi's final known private messages: April 23, 2011 to Mike Hea
 isSatoshi: true
 tags:
   - "final-communication"
-  - "gavin-andresen"
-  - "mike-hearn"
   - "alert-key"
   - "transition"
   - "disappearance"

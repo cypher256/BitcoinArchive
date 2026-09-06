@@ -11,7 +11,6 @@ participants:
 description: "Statistical analysis of Satoshi's Bitcoin source (v0.1.0–v0.3.19): coding-style fingerprint, commit times suggesting EST/CST, growth from 19,901 to 31,909 lines over 23 months, final-commit traits."
 isSatoshi: true
 tags:
-  - "satoshi-nakamoto"
   - "source-code"
   - "coding-style"
   - "timeline"

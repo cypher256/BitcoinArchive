@@ -12,7 +12,6 @@ participants:
 description: "起業家 (1979–)。Memory Dealers 創業、初期ビットコインエンジェル投資家、bitcoin.com 運用、BCH 推進。2014 年米国籍放棄、2024 年スペインで逮捕。"
 isSatoshi: false
 tags:
-  - "roger-ver"
   - "bitcoin-cash"
   - "early-investor"
   - "memory-dealers"

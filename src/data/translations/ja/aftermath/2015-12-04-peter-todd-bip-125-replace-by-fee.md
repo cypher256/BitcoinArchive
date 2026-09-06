@@ -13,7 +13,6 @@ participants:
 description: "BIP 125 はオプトイン Replace-by-Fee（RBF）を正式化。サトシの 2010 年 12 月 BitcoinTalk 提案を起源とし、トッドのフォーラム 2 件目投稿のスレッド。"
 isSatoshi: false
 tags:
-  - "peter-todd"
   - "bip"
   - "replace-by-fee"
   - "transaction-policy"

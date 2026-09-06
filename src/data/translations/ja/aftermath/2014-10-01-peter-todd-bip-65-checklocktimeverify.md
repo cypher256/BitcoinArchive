@@ -11,7 +11,6 @@ participants:
 description: "ピーター・トッドが BIP 65（OP_CHECKLOCKTIMEVERIFY）を提案。出力を指定将来時点まで使用不能とする命令を導入し、エスクローやペイメントチャネルを実現。"
 isSatoshi: false
 tags:
-  - "peter-todd"
   - "bip"
   - "timelocks"
   - "bitcoin-core"

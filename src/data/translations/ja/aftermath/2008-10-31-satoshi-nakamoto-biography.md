@@ -14,7 +14,6 @@ callout:
   entry: "analysis/2008-10-31-satoshi-identity-hypotheses-overview"
   label: "サトシ正体仮説の総覧"
 tags:
-  - "satoshi-nakamoto"
   - "whitepaper"
   - "genesis-block"
   - "disappearance"

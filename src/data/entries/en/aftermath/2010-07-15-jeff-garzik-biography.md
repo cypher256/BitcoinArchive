@@ -11,7 +11,6 @@ participants:
 description: "Software engineer (born 1974), Linux kernel contributor, Red Hat employee. Discovered Bitcoin via Slashdot in July 2010. Top-3 Bitcoin Core contributor, built cpuminer, wrote BIPs, co-founded Bloq."
 isSatoshi: false
 tags:
-  - "jeff-garzik"
   - "bitcoin-core"
   - "linux-kernel"
   - "cpuminer"

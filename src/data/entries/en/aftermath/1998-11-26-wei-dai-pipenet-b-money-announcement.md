@@ -11,7 +11,6 @@ participants:
 description: "Wei Dai announces b-money on the Cypherpunks list as a secondary item alongside PipeNet 1.1, his primary focus. The proposal later cited in Bitcoin appears in a single sentence at the end of the post."
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "b-money"
   - "pipenet"
   - "cypherpunks"

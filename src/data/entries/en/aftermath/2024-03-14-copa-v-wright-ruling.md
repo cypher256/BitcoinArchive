@@ -15,7 +15,6 @@ participants:
 description: "The UK High Court rules definitively that Craig Steven Wright is not Satoshi Nakamoto, finding that he fabricated evidence on a grand scale to support his false claim."
 isSatoshi: false
 tags:
-  - "craig-wright"
   - "copa"
   - "court-ruling"
   - "identity"

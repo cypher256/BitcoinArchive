@@ -19,7 +19,6 @@ participants:
 description: "On February 22, 2021, Evan Hatch published Len Sassaman and Satoshi: a Cypherpunk history on Medium — the article that became the foundational case for the Sassaman = Satoshi Nakamoto hypothesis."
 isSatoshi: false
 tags:
-  - "len-sassaman"
   - "satoshi-identity"
   - "cypherpunk"
   - "media"

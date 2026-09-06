@@ -13,7 +13,6 @@ participants:
 description: "Astrophysicist at Indiana University who posted on the cryptography list (Jan 17, 2009), raising concerns about government regulation and botnet exploitation — an early substantive Bitcoin critique."
 isSatoshi: false
 tags:
-  - "jonathan-thornburg"
   - "regulation"
   - "botnet"
   - "skepticism"

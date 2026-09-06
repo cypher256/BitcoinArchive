@@ -16,7 +16,6 @@ tags:
   - "bitcointalk"
   - "forum"
   - "migration"
-  - "theymos"
   - "bitcoin-org"
   - "community"
   - "historic"

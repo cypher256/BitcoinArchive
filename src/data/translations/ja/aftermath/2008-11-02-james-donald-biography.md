@@ -14,7 +14,6 @@ callout:
   entry: "analysis/2008-11-02-james-donald-satoshi-identity-hypothesis"
   label: "サトシ正体仮説"
 tags:
-  - "james-donald"
   - "cryptography-mailing-list"
   - "whitepaper"
   - "first-response"

@@ -11,7 +11,6 @@ participants:
 description: "コンピューター科学者（ハンドル名 bear / cryddit）。ハル・フィニーとともにビットコインのソースコードを公開前にレビュー。1MB ブロックサイズ制限に関与。"
 isSatoshi: false
 tags:
-  - "ray-dillinger"
   - "code-review"
   - "pre-release"
   - "block-size"

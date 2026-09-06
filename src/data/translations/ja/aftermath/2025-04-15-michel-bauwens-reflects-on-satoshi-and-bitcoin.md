@@ -13,7 +13,6 @@ participants:
 description: "2025 年 4 月、P2P Foundation 創設者ミシェル・バウエンスがサトシから複数メールを受領し数ビットコインを提案された経験と、ビットコイン評価を回顧。"
 isSatoshi: false
 tags:
-  - "michel-bauwens"
   - "p2p-foundation"
   - "interview"
   - "bitcoin-ideology"

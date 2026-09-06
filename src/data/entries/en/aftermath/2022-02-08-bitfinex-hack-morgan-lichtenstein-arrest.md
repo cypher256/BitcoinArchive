@@ -17,8 +17,6 @@ tags:
   - "exchange-hack"
   - "doj"
   - "money-laundering"
-  - "heather-morgan"
-  - "ilya-lichtenstein"
   - "razzlekhan"
 secondarySources:
   - name: "U.S. Department of Justice — Two arrested for alleged conspiracy to launder $4.5 billion in stolen cryptocurrency (February 8, 2022)"

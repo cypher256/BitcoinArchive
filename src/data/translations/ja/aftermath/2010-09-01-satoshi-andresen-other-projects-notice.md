@@ -13,7 +13,6 @@ participants:
 description: "2010年9月、サトシがアンドレセンに「他のプロジェクトに取り組んでいる」と通知。第一線から退く意思を示した最も早いシグナル。数か月後にコードと警報鍵を譲渡。"
 isSatoshi: false
 tags:
-  - "gavin-andresen"
   - "transition"
   - "succession"
   - "leadership"

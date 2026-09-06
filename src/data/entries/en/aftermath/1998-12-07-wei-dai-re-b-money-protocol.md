@@ -13,9 +13,7 @@ participants:
 description: "Wei Dai replies to Adam Back on Cypherpunks, conceding b-money would be at most a niche mechanism and revealing his shift toward viewing the government monopoly of force as a net benefit."
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "b-money"
-  - "adam-back"
   - "cypherpunks"
   - "monetary-policy"
   - "crypto-anarchy"

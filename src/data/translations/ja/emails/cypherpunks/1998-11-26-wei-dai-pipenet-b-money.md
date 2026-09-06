@@ -11,7 +11,6 @@ participants:
 description: "ウェイ・ダイがサイファーパンクで b-money を PipeNet 1.1 の付随として告知。詳細は自身の eskimo.com に誘導。ビットコイン白書の参考文献 [1] となる提案。"
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "b-money"
   - "pipenet"
   - "cypherpunks"

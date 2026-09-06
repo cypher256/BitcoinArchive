@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンが「The Resolution of the Bitcoin Experiment」を公開。ガバナンス崩壊とブロックサイズ膠着を理由に失敗を宣言、全コインを売却し離脱。"
 isSatoshi: false
 tags:
-  - "mike-hearn"
   - "block-size"
   - "bitcoin-xt"
   - "scaling"

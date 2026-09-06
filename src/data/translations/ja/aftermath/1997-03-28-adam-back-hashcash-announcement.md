@@ -11,7 +11,6 @@ participants:
 description: "アダム・バックがサイファーパンクリストで Hashcash を公開。スパム対策のプルーフ・オブ・ワーク方式で、デジタルキャッシュ議論の中に位置づけられた。"
 isSatoshi: false
 tags:
-  - "adam-back"
   - "hashcash"
   - "cypherpunks"
   - "proof-of-work"

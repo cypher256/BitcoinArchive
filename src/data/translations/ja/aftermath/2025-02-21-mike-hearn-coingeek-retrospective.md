@@ -13,7 +13,6 @@ participants:
 description: "CoinGeek 取材でマイク・ハーンがサトシの人物像を語る。実験と議論を楽しむ人物だったが、福音主義的な人物がコミュニティに現れ姿を消したと述べた。"
 isSatoshi: false
 tags:
-  - "mike-hearn"
   - "retrospective"
   - "satoshi-personality"
   - "disappearance"

@@ -12,7 +12,6 @@ participants:
 description: "Twice-over fintech founder (E-Loan, Prosper) who co-founded the company that built the XRP Ledger in 2012. In 2021 he called Bitcoin's proof-of-work a technology the industry should retire."
 isSatoshi: false
 tags:
-  - "chris-larsen"
   - "ripple"
   - "xrp"
   - "altcoin"

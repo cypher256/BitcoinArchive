@@ -15,8 +15,6 @@ participants:
 description: "2016 年 1 月 15 日、Bitcoin Core v0.12 が ECDSA 署名検証で OpenSSL を libsecp256k1（ウィーユ・マクスウェル開発）に置換。"
 isSatoshi: false
 tags:
-  - "pieter-wuille"
-  - "gmaxwell"
   - "libsecp256k1"
   - "openssl"
   - "bitcoin-core"

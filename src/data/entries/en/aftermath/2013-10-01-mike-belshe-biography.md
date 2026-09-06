@@ -12,7 +12,6 @@ participants:
 description: "American engineer. Pre-Bitcoin HTTP/2 (SPDY) contributor. Co-founded BitGo (2013) for institutional Bitcoin custody. Signed and then cancelled the New York Agreement / SegWit2x (November 2017)."
 isSatoshi: false
 tags:
-  - "mike-belshe"
   - "bitgo"
   - "custody"
   - "multisig"

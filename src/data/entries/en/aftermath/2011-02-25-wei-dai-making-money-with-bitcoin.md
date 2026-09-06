@@ -11,7 +11,6 @@ participants:
 description: "On LessWrong, Wei Dai clarifies he did not create Bitcoin — \"only described a similar idea more than a decade ago\" — buys a Radeon 5870 to mine, and warns Bitcoin lacks cryptographer security review."
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "b-money"
   - "gpu-mining"
   - "security"

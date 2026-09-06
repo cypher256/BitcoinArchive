@@ -11,7 +11,6 @@ participants:
 description: "Bitcoin Core 貢献者（gmaxwell）、Blockstream 共同創業、libsecp256k1 共同開発、CoinJoin / CT 設計者。"
 isSatoshi: false
 tags:
-  - "gregory-maxwell"
   - "bitcoin-core"
   - "blockstream"
   - "coinjoin"

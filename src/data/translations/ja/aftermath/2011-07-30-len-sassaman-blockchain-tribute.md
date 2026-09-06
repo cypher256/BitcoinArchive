@@ -13,8 +13,6 @@ participants:
 description: "サッサマン死去後、ダン・カミンスキーがビットコインブロックチェーンに ASCII アート追悼を埋め込む。Black Hat USA 2011 で公表。"
 isSatoshi: false
 tags:
-  - "dan-kaminsky"
-  - "len-sassaman"
   - "blockchain"
   - "memorial"
   - "obituary"

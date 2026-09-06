@@ -14,7 +14,6 @@ participants:
 description: "On his Unenumerated blog, Nick Szabo asks for help implementing bit gold, his 1998 digital currency design. No one responds. Six and a half months later, Satoshi publishes the Bitcoin whitepaper."
 isSatoshi: false
 tags:
-  - "nick-szabo"
   - "bit-gold"
   - "implementation"
   - "pre-bitcoin"

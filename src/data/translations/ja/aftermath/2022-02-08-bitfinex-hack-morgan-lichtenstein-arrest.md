@@ -17,8 +17,6 @@ tags:
   - "exchange-hack"
   - "doj"
   - "money-laundering"
-  - "heather-morgan"
-  - "ilya-lichtenstein"
   - "razzlekhan"
 secondarySources:
   - name: "米司法省 — 45 億ドル相当の盗難暗号通貨を洗浄した容疑で 2 名を逮捕 (2022 年 2 月 8 日)"

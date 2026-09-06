@@ -13,8 +13,6 @@ participants:
 description: "Adam Back replies to Wei Dai on Cypherpunks, identifying seven monetary-design issues in b-money and proposing Hashcash as the minting mechanism — a substantive analysis ten years before Bitcoin."
 isSatoshi: false
 tags:
-  - "adam-back"
-  - "wei-dai"
   - "b-money"
   - "hashcash"
   - "cypherpunks"

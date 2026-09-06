@@ -13,7 +13,6 @@ participants:
 description: "サトシからビットコインのコミット権限を与えられリード開発者となったギャビン・アンドレセンが、サトシとの交流とリーダーシップの移行を回顧する。"
 isSatoshi: false
 tags:
-  - "gavin-andresen"
   - "leadership"
   - "transition"
   - "development"

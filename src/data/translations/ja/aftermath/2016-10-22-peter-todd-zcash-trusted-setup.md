@@ -11,7 +11,6 @@ participants:
 description: "ピーター・トッドが 2016 年 10 月の Zcash トラステッドセットアップセレモニーに 6 名中 1 名として参加し、その後プロセスの根本的欠陥を批判した記録を公開。"
 isSatoshi: false
 tags:
-  - "peter-todd"
   - "zcash"
   - "trusted-setup"
   - "cryptography"

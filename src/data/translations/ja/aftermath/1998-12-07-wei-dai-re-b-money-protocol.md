@@ -13,9 +13,7 @@ participants:
 description: "ウェイ・ダイがアダム・バックへ返信。b-money はニッチに留まると認め、政府の暴力独占を差し引きでプラスと見る政治的変化も明かした。"
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "b-money"
-  - "adam-back"
   - "cypherpunks"
   - "monetary-policy"
   - "crypto-anarchy"

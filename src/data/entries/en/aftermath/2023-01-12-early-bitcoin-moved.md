@@ -11,7 +11,6 @@ participants:
 description: "Bitcoins mined in the earliest weeks of Bitcoin's existence in January 2009 are moved for the first time, sparking intense speculation about whether Satoshi Nakamoto is spending coins."
 isSatoshi: false
 tags:
-  - "satoshi-nakamoto"
   - "early-bitcoin"
   - "blockchain-analysis"
   - "dormant-coins"

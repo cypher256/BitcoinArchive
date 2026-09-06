@@ -14,7 +14,6 @@ description: "WikiLeaks announces Bitcoin donations, bypassing the Bank of Ameri
 isSatoshi: false
 tags:
   - "wikileaks"
-  - "julian-assange"
   - "financial-blockade"
   - "donations"
   - "censorship-resistance"

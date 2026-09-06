@@ -14,7 +14,6 @@ description: "サトシからアダム・バックへの最後のメール。以
 isSatoshi: true
 tags:
   - "hashcash"
-  - "adam-back"
   - "bitcoin-launch"
   - "hal-finney"
   - "v0.1"

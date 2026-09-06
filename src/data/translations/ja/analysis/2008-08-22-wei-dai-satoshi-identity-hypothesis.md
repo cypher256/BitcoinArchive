@@ -14,7 +14,6 @@ isSatoshi: false
 description: "b-money はホワイトペーパー参考文献 [1]、Crypto++ は v0.1 に同梱、そしてサトシが 2 番目に接触した相手。ウェイ・ダイ＝サトシの証拠を秤にかける。"
 tags:
   - "satoshi-identity"
-  - "wei-dai"
   - "b-money"
   - "crypto-plus-plus"
   - "cypherpunk"

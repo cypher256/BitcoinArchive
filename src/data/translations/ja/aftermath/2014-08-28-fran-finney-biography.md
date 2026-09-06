@@ -13,11 +13,9 @@ participants:
 description: "フラン・フィニー：ハル・フィニー（サトシ以外で最初にビットコインを実行したとされる人物）の妻。最初期を目撃し、ALS の闘病を支え、2014 年以降は遺志の守護者となる。"
 isSatoshi: false
 tags:
-  - "fran-finney"
   - "hal-finney"
   - "cryonics"
   - "alcor"
-  - "caltech"
 secondarySources:
   - name: "Cryonics Magazine PDF — 2nd Quarter 2019"
     url: "https://cryonicsarchive.org/docs/cryonics-magazine-2019-02.pdf"

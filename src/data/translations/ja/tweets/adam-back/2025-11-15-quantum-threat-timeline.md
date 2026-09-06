@@ -12,7 +12,6 @@ participants:
 description: "量子コンピューターによる近い将来の脅威がビットコインにあるかという質問へのアダム・バックの返答。 NIST 標準化済みの SLH-DSA と 20〜40 年の猶予を挙げている。"
 isSatoshi: false
 tags:
-  - "adam-back"
   - "quantum-computing"
   - "cryptography"
   - "NIST"

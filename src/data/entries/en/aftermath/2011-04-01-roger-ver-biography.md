@@ -12,7 +12,6 @@ participants:
 description: "Entrepreneur (1979–). Memory Dealers founder, early Bitcoin angel investor, bitcoin.com operator, Bitcoin Cash advocate. Renounced US citizenship 2014; arrested in Spain April 2024."
 isSatoshi: false
 tags:
-  - "roger-ver"
   - "bitcoin-cash"
   - "early-investor"
   - "memory-dealers"

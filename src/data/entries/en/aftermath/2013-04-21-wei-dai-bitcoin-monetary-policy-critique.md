@@ -11,7 +11,6 @@ participants:
 description: "Wei Dai LessWrong comments: Bitcoin's monetary policy has failed due to volatility, and he never replied to Satoshi's 2008 review email — regretting he could have dissuaded the fixed-supply choice."
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "b-money"
   - "monetary-policy"
   - "lesswrong"

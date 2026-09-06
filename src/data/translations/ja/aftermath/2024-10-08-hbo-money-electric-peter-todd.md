@@ -15,7 +15,6 @@ participants:
 description: "HBO「Money Electric」（カレン・ホーバック監督）がピーター・トッドをサトシ候補と名指し。2010 年 BitcoinTalk 投稿と BIP 125 が根拠。トッドは否定。"
 isSatoshi: false
 tags:
-  - "peter-todd"
   - "satoshi-identity"
   - "documentary"
   - "hbo"

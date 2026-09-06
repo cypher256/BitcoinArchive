@@ -14,8 +14,6 @@ description: "ウェイ・ダイがバックのリソース借用・浪費の指
 inReplyTo: "emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique"
 isSatoshi: false
 tags:
-  - "wei-dai"
-  - "adam-back"
   - "b-money"
   - "cypherpunks"
   - "monetary-policy"

@@ -22,7 +22,6 @@ description: "The Mixmaster developer who died 68 days after Satoshi's last know
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "len-sassaman"
   - "cypherpunk"
   - "disputed"
 secondarySources:

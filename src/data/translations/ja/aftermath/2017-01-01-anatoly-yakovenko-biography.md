@@ -12,7 +12,6 @@ participants:
 description: "2017 年に Proof of History の論文を書きソラナを作った技術者。ビットコインのプルーフ・オブ・ワークを傑作と呼び、資産としては保険以上の価値がないとも述べている。"
 isSatoshi: false
 tags:
-  - "anatoly-yakovenko"
   - "solana"
   - "altcoin"
   - "proof-of-stake"

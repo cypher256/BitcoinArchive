@@ -17,7 +17,6 @@ tags:
   - "bitcoin-law"
   - "legal-tender"
   - "strategic-bitcoin-reserve"
-  - "nayib-bukele"
 secondarySources:
   - name: "Decrypt — IMF's new Bitcoin rules for El Salvador's loan"
     url: "https://decrypt.co/308603/imf-new-bitcoin-rules-el-salvador-loan"

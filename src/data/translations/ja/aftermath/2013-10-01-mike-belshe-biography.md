@@ -12,7 +12,6 @@ participants:
 description: "アメリカのエンジニア。HTTP/2 (SPDY) 寄稿後、2013 年 BitGo 共同創業 (機関向け保管)。NYA 署名後、2017 年 11 月 SegWit2x を中止。"
 isSatoshi: false
 tags:
-  - "mike-belshe"
   - "bitgo"
   - "custody"
   - "multisig"

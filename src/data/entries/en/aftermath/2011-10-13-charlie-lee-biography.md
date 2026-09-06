@@ -11,7 +11,6 @@ participants:
 description: "The Google engineer who shipped Litecoin in 2011, called Bitcoin the soundest money in the space for a decade after, and sold every coin he held in 2017."
 isSatoshi: false
 tags:
-  - "charlie-lee"
   - "litecoin"
   - "altcoin"
 secondarySources:

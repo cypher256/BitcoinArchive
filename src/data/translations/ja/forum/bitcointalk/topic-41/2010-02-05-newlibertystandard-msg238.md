@@ -11,7 +11,6 @@ participants:
 description: "NewLibertyStandard がタイバーツ通貨記号 ฿ を公式のビットコイン通貨記号、BTC を三文字通貨コードとして採用することを提案。標準となった表記法の起点。"
 isSatoshi: false
 tags:
-  - "newlibertystandard"
   - "btc-symbol"
   - "currency-code"
   - "historic"

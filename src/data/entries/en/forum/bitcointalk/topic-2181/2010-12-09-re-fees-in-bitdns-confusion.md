@@ -16,7 +16,6 @@ inReplyTo: "forum/bitcointalk/2010-12-09-jgarzik-2-re-fees-in-bitdns-confusion"
 tags:
   - "replace-by-fee"
   - "transaction-replacement"
-  - "peter-todd"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/534/"

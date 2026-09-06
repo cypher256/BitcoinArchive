@@ -15,8 +15,6 @@ participants:
 description: "クレイグ・ライトが bitcoin.org の匿名運営者 Cobra をホワイトペーパー著作権侵害で提訴。Cobra は身元を守るため出頭せず欠席判決。裁判所はホワイトペーパー削除を命じた。"
 isSatoshi: false
 tags:
-  - "craig-wright"
-  - "cobra"
   - "bitcoin-org"
   - "whitepaper"
   - "copyright"

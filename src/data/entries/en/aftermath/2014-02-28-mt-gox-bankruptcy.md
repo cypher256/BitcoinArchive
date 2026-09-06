@@ -12,7 +12,6 @@ description: "Mt. Gox — once the world's largest Bitcoin exchange handling ~70
 isSatoshi: false
 tags:
   - "mt-gox"
-  - "mark-karpeles"
   - "exchange-collapse"
   - "hack"
   - "bankruptcy"

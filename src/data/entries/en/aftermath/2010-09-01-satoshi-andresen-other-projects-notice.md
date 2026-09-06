@@ -13,7 +13,6 @@ participants:
 description: "In September 2010, Satoshi privately tells Andresen he is working on other projects — the earliest documented signal of his intent to step back. He soon handed Andresen the repository and alert key."
 isSatoshi: false
 tags:
-  - "gavin-andresen"
   - "transition"
   - "succession"
   - "leadership"

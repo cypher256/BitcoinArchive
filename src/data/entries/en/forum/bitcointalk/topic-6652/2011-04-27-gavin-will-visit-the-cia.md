@@ -14,7 +14,6 @@ description: "Gavin Andresen announces he has been invited to give a presentatio
 isSatoshi: false
 tags:
   - "cia"
-  - "gavin-andresen"
   - "government"
   - "presentation"
 ---

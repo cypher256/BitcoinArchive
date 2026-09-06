@@ -12,7 +12,6 @@ description: "FTX, the world's second-largest crypto exchange, filed for Chapter
 isSatoshi: false
 tags:
   - "ftx"
-  - "sam-bankman-fried"
   - "exchange-collapse"
   - "fraud"
   - "bankruptcy"

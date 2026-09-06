@@ -13,7 +13,6 @@ participants:
 description: "Multiple blockchain analyses estimate that Satoshi Nakamoto mined approximately 1.1 million bitcoins in Bitcoin's earliest days, with the vast majority of these coins never having been spent."
 isSatoshi: false
 tags:
-  - "satoshi-nakamoto"
   - "mining"
   - "bitcoin-holdings"
   - "blockchain-analysis"

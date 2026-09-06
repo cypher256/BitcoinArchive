@@ -19,8 +19,6 @@ description: "March 25, 2014 Forbes feature by Andy Greenberg visiting Hal and F
 tags:
   - "hal-finney"
   - "satoshi-identity"
-  - "fran-finney"
-  - "dorian-nakamoto"
   - "forbes"
   - "race-day-alibi"
   - "journalism"

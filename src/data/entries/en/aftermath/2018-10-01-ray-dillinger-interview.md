@@ -15,7 +15,6 @@ participants:
 description: "Tim Swanson's comprehensive interview with Ray Dillinger for the Bitcoin whitepaper's 10th anniversary. Dillinger reveals technical details of his code review, including the floating-point discovery."
 isSatoshi: false
 tags:
-  - "ray-dillinger"
   - "code-review"
   - "floating-point"
   - "hal-finney"

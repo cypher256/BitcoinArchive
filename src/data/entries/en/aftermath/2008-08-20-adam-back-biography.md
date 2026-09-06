@@ -14,7 +14,6 @@ callout:
   entry: "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   label: "Identity hypothesis"
 tags:
-  - "adam-back"
   - "hashcash"
   - "proof-of-work"
   - "blockstream"

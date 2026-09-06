@@ -14,7 +14,6 @@ isSatoshi: false
 tags:
   - "japan"
   - "payment-services-act"
-  - "fsa"
   - "mt-gox"
   - "regulation"
   - "exchange-registration"

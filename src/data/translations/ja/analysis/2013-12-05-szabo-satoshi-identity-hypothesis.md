@@ -16,7 +16,6 @@ description: "Bit Gold を構想した男を、最も引用される文体計量
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "nick-szabo"
   - "bit-gold"
   - "stylometric-analysis"
   - "cypherpunk"

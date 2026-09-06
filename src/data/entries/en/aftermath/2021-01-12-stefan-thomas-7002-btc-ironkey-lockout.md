@@ -14,7 +14,6 @@ tags:
   - "lost-bitcoin"
   - "forgotten-password"
   - "lost-keys"
-  - "stefan-thomas"
   - "ironkey"
   - "iconic-losses"
 secondarySources:

@@ -14,7 +14,6 @@ description: "アダム・バックが Hashcash 引用を確認し、ウェイ�
 isSatoshi: false
 tags:
   - "hashcash"
-  - "adam-back"
   - "b-money"
   - "wei-dai"
   - "origins"

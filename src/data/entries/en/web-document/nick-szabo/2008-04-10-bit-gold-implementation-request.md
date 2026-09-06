@@ -12,7 +12,6 @@ participants:
 description: "In a comment on his Unenumerated blog replying to a reader's criticism of bit gold's tranching design, Nick Szabo asks for help building a demo. No one responds publicly."
 isSatoshi: false
 tags:
-  - "nick-szabo"
   - "bit-gold"
   - "implementation"
   - "pre-bitcoin"

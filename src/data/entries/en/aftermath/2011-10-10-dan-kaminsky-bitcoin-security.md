@@ -13,7 +13,6 @@ participants:
 description: "Security researcher Dan Kaminsky tries to find vulnerabilities in Bitcoin and fails. \"I came up with beautiful bugs. But every time I went after the code there was a line that addressed the problem.\""
 isSatoshi: false
 tags:
-  - "dan-kaminsky"
   - "security"
   - "code-review"
   - "new-yorker"

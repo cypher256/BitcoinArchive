@@ -14,7 +14,6 @@ description: "元 SpaceX インターンが 2017 年のブログで名指しし�
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "elon-musk"
   - "denied"
   - "disputed"
 secondarySources:

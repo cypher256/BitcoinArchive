@@ -18,7 +18,6 @@ tags:
   - "satoshi-finney-emails"
   - "unpublished"
   - "hal-finney"
-  - "fran-finney"
   - "timezone-mystery"
   - "v0.1-release"
 secondarySources:

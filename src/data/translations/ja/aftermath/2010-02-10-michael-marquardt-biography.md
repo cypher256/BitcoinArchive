@@ -11,7 +11,6 @@ participants:
 description: "BitcoinTalk フォーラム管理人（theymos）、Bitcoin Wiki 管理人、後に r/Bitcoin モデレーター。サトシから管理権を継承、2011年の独立移行を主導。"
 isSatoshi: false
 tags:
-  - "theymos"
   - "bitcointalk"
   - "forum-administration"
   - "community"

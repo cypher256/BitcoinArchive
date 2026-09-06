@@ -15,7 +15,6 @@ isSatoshi: false
 tags:
   - "bitcoinj"
   - "open-source"
-  - "google"
   - "testnet"
 translationStatus: complete
 secondarySources:

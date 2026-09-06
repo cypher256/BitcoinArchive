@@ -16,9 +16,7 @@ description: "Wei Dai called Bitcoin's fixed supply a failure in 2013. His own 1
 isSatoshi: false
 tags:
   - "monetary-policy"
-  - "wei-dai"
   - "b-money"
-  - "adam-back"
   - "hard-money"
   - "elastic-supply"
 secondarySources:

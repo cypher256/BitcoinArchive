@@ -12,7 +12,6 @@ participants:
 description: "Adam Back's reply to a question about whether Bitcoin faces near-term risk from quantum computing, pointing at NIST-standardized SLH-DSA and a 20–40 year horizon."
 isSatoshi: false
 tags:
-  - "adam-back"
   - "quantum-computing"
   - "cryptography"
   - "NIST"

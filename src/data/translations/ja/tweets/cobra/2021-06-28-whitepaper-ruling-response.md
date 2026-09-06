@@ -12,7 +12,6 @@ participants:
 description: "ロンドン高等法院がクレイグ・ライトの欠席判決により bitcoin.org にホワイトペーパー削除を命じた数時間後、 Cobra が X に投稿した反論。"
 isSatoshi: false
 tags:
-  - "cobra"
   - "craig-wright"
   - "bitcoin-org"
   - "whitepaper"

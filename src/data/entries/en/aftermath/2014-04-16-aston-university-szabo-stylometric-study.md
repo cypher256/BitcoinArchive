@@ -13,7 +13,6 @@ participants:
 description: "Aston University Centre for Forensic Linguistics released Project Bitcoin (April 2014): a stylometric study under Jack Grieve naming Szabo as the most likely whitepaper author among 11 candidates."
 isSatoshi: false
 tags:
-  - "nick-szabo"
   - "satoshi-identity"
   - "stylometric-analysis"
   - "forensic-linguistics"

@@ -13,7 +13,6 @@ participants:
 description: "ハニエツがピザ 2枚を 10,000 BTC で購入。ビットコインによる初の物理商品購入として毎年「ビットコインピザデー」として祝われる。当時約 41 ドル。"
 isSatoshi: false
 tags:
-  - "laszlo-hanyecz"
   - "pizza-day"
   - "first-purchase"
   - "historic"

@@ -14,7 +14,6 @@ callout:
   entry: "analysis/2014-03-06-dorian-nakamoto-satoshi-identity-hypothesis"
   label: "Identity hypothesis"
 tags:
-  - "dorian-nakamoto"
   - "name-match"
   - "newsweek"
   - "denied"

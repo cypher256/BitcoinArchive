@@ -14,7 +14,6 @@ description: "サトシの思考の続きのような返信をした 2 日後、
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "peter-todd"
   - "disputed"
 secondarySources:
   - name: "Wikipedia — Money Electric: The Bitcoin Mystery"

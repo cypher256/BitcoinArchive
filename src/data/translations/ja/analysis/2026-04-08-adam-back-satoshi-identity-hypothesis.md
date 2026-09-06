@@ -14,7 +14,6 @@ description: "Hashcash を発明し、サトシが最初に連絡した相手。
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "adam-back"
   - "cypherpunk"
   - "hashcash"
   - "stylometric-analysis"

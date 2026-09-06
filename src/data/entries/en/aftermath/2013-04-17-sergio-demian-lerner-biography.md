@@ -13,7 +13,6 @@ participants:
 description: "Sergio Demian Lerner (1972–): Argentine cryptographer and blockchain researcher whose Patoshi analysis identified Satoshi as a single dominant early miner accumulating ~1.1M BTC, never spent."
 isSatoshi: false
 tags:
-  - "sergio-demian-lerner"
   - "patoshi"
   - "blockchain-forensics"
   - "mining"

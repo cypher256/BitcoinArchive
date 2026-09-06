@@ -12,7 +12,6 @@ participants:
 description: "Adam Back's retrospective framing of his pre-Bitcoin cypherpunk activity, posted in response to a NYT investigation naming him as a leading stylometric match to Satoshi."
 isSatoshi: false
 tags:
-  - "adam-back"
   - "cypherpunk"
   - "satoshi-identity"
 relatedEntries:

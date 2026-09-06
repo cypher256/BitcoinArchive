@@ -11,7 +11,6 @@ participants:
 description: "ヴィタリック・ブテリンによるイーサリアム公開告知（2014 年 1 月 23 日、BitcoinTalk のアルトコイン板）。イーサリアムホワイトペーパー公開のビットコインコミュニティ向け一次記録。"
 isSatoshi: false
 tags:
-  - "vitalik-buterin"
   - "ethereum"
   - "altcoin"
   - "announcement"

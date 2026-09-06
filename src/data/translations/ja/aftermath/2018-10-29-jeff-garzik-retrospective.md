@@ -15,7 +15,6 @@ participants:
 description: "ビットコイン最初期コア開発者のジェフ・ガージックがサトシとの交流を回顧。2010 年 7 月の Slashdot 投稿でビットコインを発見し、上位 3 貢献者となった。"
 isSatoshi: false
 tags:
-  - "jeff-garzik"
   - "core-developer"
   - "slashdot"
   - "retrospective"

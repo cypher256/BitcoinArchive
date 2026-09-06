@@ -12,7 +12,6 @@ participants:
 description: "Russian-Canadian programmer (1994–). Bitcoin community member from 2011, Bitcoin Magazine co-founder, pybitcointools author, Ethereum whitepaper author (late 2013)."
 isSatoshi: false
 tags:
-  - "vitalik-buterin"
   - "bitcoin-magazine"
   - "ethereum"
   - "altcoin"

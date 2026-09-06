@@ -11,7 +11,6 @@ participants:
 description: "中国の起業家 (1986–)。2011 年ビットコイン白書中国語訳、2013 年 Bitmain 共同創業、2017 年 BCH ハッシュ支援。"
 isSatoshi: false
 tags:
-  - "jihan-wu"
   - "bitmain"
   - "asic"
   - "mining"

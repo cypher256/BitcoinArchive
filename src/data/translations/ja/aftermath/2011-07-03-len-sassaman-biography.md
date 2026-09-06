@@ -14,7 +14,6 @@ callout:
   entry: "analysis/2011-07-03-sassaman-satoshi-identity-hypothesis"
   label: "サトシ正体仮説"
 tags:
-  - "len-sassaman"
   - "cypherpunk"
   - "cryptography"
   - "anonymity"

@@ -12,7 +12,6 @@ participants:
 description: "Yahoo・AOL を経て 2015 年にリップルへ COO として入社、2016 年に CEO 就任。ビットコインを中国支配下と評しつつ、価値の保存手段としては強気だと語る。"
 isSatoshi: false
 tags:
-  - "brad-garlinghouse"
   - "ripple"
   - "xrp"
   - "altcoin"

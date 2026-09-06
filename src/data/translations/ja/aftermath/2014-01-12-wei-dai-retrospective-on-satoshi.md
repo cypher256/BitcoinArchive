@@ -13,7 +13,6 @@ participants:
 description: "LessWrong Q&A でのウェイ・ダイのサトシと b-money に関する考察。サトシは b-money 論文を読まずに同案を再発明、ダイは執筆時にクリプトアナーキーへの幻滅を抱いていた。"
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "b-money"
   - "identity"
   - "motivation"

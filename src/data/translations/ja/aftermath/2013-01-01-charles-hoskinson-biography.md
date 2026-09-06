@@ -14,7 +14,6 @@ participants:
 description: "イーサリアム初代 CEO でカルダノ創設者。ビットコイン評は「チューリング賞に値する」から「宗教であって生態系ではない」まで動いた。"
 isSatoshi: false
 tags:
-  - "charles-hoskinson"
   - "cardano"
   - "altcoin"
   - "proof-of-stake"

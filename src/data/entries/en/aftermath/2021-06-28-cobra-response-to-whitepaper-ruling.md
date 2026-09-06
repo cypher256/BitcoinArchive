@@ -13,8 +13,6 @@ participants:
 description: "After the London High Court ordered bitcoin.org to remove the Bitcoin whitepaper, Cobra responded on Twitter with a critique declaring cryptographic rules superior to court-enforced ones."
 isSatoshi: false
 tags:
-  - "cobra"
-  - "craig-wright"
   - "bitcoin-org"
   - "whitepaper"
   - "copyright"

@@ -11,7 +11,6 @@ participants:
 description: "NewLibertyStandard publishes the first exchange rate for Bitcoin: $1 = 1,309.03 BTC ($0.000764 per BTC), calculated from the electricity cost of mining — a rudimentary but historic first valuation."
 isSatoshi: false
 tags:
-  - "newlibertystandard"
   - "exchange-rate"
   - "first-price"
   - "mining"

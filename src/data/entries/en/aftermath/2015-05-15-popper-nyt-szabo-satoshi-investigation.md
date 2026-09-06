@@ -19,7 +19,6 @@ participants:
 description: "On May 15, 2015, the New York Times published Nathaniel Popper's Decoding the Enigma of Satoshi Nakamoto — a Digital Gold excerpt naming Bit Gold designer Nick Szabo as Satoshi. Szabo denied it."
 isSatoshi: false
 tags:
-  - "nick-szabo"
   - "satoshi-identity"
   - "new-york-times"
   - "media"

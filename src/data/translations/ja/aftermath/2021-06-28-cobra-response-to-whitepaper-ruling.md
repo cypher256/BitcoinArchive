@@ -13,8 +13,6 @@ participants:
 description: "高等法院が bitcoin.org にホワイトペーパー削除を命じた後、Cobra は Twitter で法制度を批判、暗号学のルールが法廷のルールより優れていると宣言した。"
 isSatoshi: false
 tags:
-  - "cobra"
-  - "craig-wright"
   - "bitcoin-org"
   - "whitepaper"
   - "copyright"

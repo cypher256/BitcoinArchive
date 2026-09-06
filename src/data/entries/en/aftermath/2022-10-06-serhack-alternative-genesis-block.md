@@ -18,7 +18,6 @@ tags:
   - "genesis-block"
   - "pre-release"
   - "alternative-genesis"
-  - "ray-dillinger"
   - "lehman-brothers"
   - "source-code"
 secondarySources:

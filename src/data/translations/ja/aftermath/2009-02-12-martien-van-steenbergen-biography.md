@@ -11,7 +11,6 @@ participants:
 description: "オランダ人アジャイルコーチ、AardRock 創業者。P2P Research での質問に応じ、サトシは既に公表済みだった 2,100 万枚の発行上限を、直接の回答として改めて確認した。"
 isSatoshi: false
 tags:
-  - "martien-van-steenbergen"
   - "p2p-research-list"
   - "supply-limit"
   - "historic"

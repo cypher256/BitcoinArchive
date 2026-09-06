@@ -14,7 +14,6 @@ callout:
   entry: "analysis/2013-07-06-kaneko-isamu-satoshi-identity-hypothesis"
   label: "Identity hypothesis"
 tags:
-  - "isamu-kaneko"
   - "winny"
   - "p2p"
   - "tokyo-university"

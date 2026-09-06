@@ -28,7 +28,6 @@ tags:
   - "bitfinex"
   - "prince-group"
   - "spot-bitcoin-etf"
-  - "donald-trump"
 secondarySources:
   - name: "CryptoSlate — Executive Order 14233 Law Profile"
     url: "https://cryptoslate.com/crypto-laws/executive-order-14233-strategic-bitcoin-reserve-digital-asset-stockpile/"

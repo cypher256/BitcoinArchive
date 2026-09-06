@@ -14,7 +14,6 @@ description: "A reply that read like the continuation of Satoshi's thought — a
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "peter-todd"
   - "disputed"
 secondarySources:
   - name: "Wikipedia — Money Electric: The Bitcoin Mystery"

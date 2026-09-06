@@ -11,7 +11,6 @@ participants:
 description: "American software developer (bytemaster, born 1980) who joined BitcoinTalk in mid-2010 arguing on-chain settlement was too slow for micropayments — the thesis behind BitShares, Steem, and EOS."
 isSatoshi: false
 tags:
-  - "daniel-larimer"
   - "bitcointalk"
   - "bitshares"
   - "steem"

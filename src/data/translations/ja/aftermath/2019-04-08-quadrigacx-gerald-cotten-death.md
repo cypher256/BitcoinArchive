@@ -14,7 +14,6 @@ tags:
   - "lost-bitcoin"
   - "exchange-collapse"
   - "quadrigacx"
-  - "gerald-cotten"
   - "ceo-death"
   - "ponzi-scheme"
   - "bankruptcy"

@@ -15,7 +15,6 @@ participants:
 description: "英国高等法院がクレイグ・スティーヴン・ライトはサトシ・ナカモトではないと決定的に判決を下し、彼が虚偽の主張を裏付けるために大規模な証拠の捏造を行ったと認定した。"
 isSatoshi: false
 tags:
-  - "craig-wright"
   - "copa"
   - "court-ruling"
   - "identity"

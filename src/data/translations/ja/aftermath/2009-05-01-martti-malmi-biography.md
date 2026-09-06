@@ -11,7 +11,6 @@ participants:
 description: "フィンランドのソフトウェア開発者（1988-）。サトシと約 260 通のメールを交換、bitcoin.org 構築、Linux 移植、初の BTC-法定通貨取引。"
 isSatoshi: false
 tags:
-  - "martti-malmi"
   - "bitcoin-org"
   - "bitcointalk"
   - "linux-port"

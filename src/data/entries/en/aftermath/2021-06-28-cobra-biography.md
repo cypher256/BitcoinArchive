@@ -13,12 +13,10 @@ participants:
 description: "Cobra (also Cøbra): Pseudonymous operator and guardian of bitcoin.org, the website originally registered by Satoshi in 2008. Chose to lose a copyright suit by default rather than reveal his identity."
 isSatoshi: false
 tags:
-  - "cobra"
   - "bitcoin-org"
   - "whitepaper"
   - "anonymity"
   - "lawsuit"
-  - "craig-wright"
 secondarySources:
   - name: "CoinDesk — UK Court Orders Bitcoin.org to Remove White Paper"
     url: "https://www.coindesk.com/markets/2021/06/29/uk-court-orders-bitcoinorg-to-remove-white-paper-following-craig-wright-lawsuit"

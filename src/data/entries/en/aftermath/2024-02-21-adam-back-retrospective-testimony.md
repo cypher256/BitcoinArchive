@@ -15,11 +15,9 @@ participants:
 description: "Adam Back reflects on his August 2008 email exchange with Satoshi, his regret at not reading the whitepaper carefully, and his COPA v Wright testimony where the complete chain became public."
 isSatoshi: false
 tags:
-  - "adam-back"
   - "hashcash"
   - "copa-trial"
   - "regret"
-  - "wei-dai"
   - "retrospective"
 secondarySources:
   - name: "COPA trial witness testimony"

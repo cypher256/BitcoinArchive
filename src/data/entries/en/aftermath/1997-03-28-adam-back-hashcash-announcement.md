@@ -11,7 +11,6 @@ participants:
 description: "Adam Back announces Hashcash to the Cypherpunks list — a proof-of-work postage scheme against spam, framed within the digital-cash discourse as a stop-gap or fallback for digicash."
 isSatoshi: false
 tags:
-  - "adam-back"
   - "hashcash"
   - "cypherpunks"
   - "proof-of-work"

@@ -13,7 +13,6 @@ participants:
 description: "Security consultant at Periwinkle who joined the cryptography list discussion of Bitcoin in January 2009, ironically observing that botnet-controlled machines are among the most secure on the network."
 isSatoshi: false
 tags:
-  - "bill-frantz"
   - "security"
   - "botnet"
   - "cryptography-mailing-list"

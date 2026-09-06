@@ -11,7 +11,6 @@ participants:
 description: "ウェイ・ダイの LessWrong コメント。ビットコインの金融政策は失敗と論じ、2008 年のサトシのレビュー依頼に返信しなかったことを後悔。"
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "b-money"
   - "monetary-policy"
   - "lesswrong"

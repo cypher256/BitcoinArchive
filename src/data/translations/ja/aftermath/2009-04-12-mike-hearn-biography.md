@@ -11,8 +11,6 @@ participants:
 description: "Google エンジニア（Maps、Earth、Gmail スパム対策）。2009年4月にサトシへ連絡し、初期貢献者となる。BitcoinJ を開発、メールは 2017年に公開。"
 isSatoshi: false
 tags:
-  - "mike-hearn"
-  - "google"
   - "bitcoinj"
   - "email-archive"
   - "published-correspondence"

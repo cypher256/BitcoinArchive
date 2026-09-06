@@ -14,8 +14,6 @@ description: "Adam Back's reply enumerating seven monetary-design issues in b-mo
 inReplyTo: "emails/cypherpunks/b-money-protocol/1998-12-05-adam-back-b-money-protocol-repost"
 isSatoshi: false
 tags:
-  - "adam-back"
-  - "wei-dai"
   - "b-money"
   - "hashcash"
   - "cypherpunks"

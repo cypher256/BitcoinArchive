@@ -14,7 +14,6 @@ participants:
 description: "Newsweek のドリアン・ナカモト同定の約 24 時間後、サトシの休眠 P2P Foundation アカウントから一文の否定投稿。真正性は以来議論されている。"
 isSatoshi: false
 tags:
-  - "dorian-nakamoto"
   - "identity"
   - "newsweek"
   - "disputed"

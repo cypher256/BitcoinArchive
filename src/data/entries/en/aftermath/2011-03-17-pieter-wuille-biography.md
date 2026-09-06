@@ -11,7 +11,6 @@ participants:
 description: "Belgian software engineer (sipa), Bitcoin Core committer since 2011. Author/co-author of BIP-32, BIP-141 (SegWit), BIP-340/341 (Schnorr/Taproot). Initiator of libsecp256k1; Blockstream co-founder."
 isSatoshi: false
 tags:
-  - "pieter-wuille"
   - "bitcoin-core"
   - "libsecp256k1"
   - "segwit"

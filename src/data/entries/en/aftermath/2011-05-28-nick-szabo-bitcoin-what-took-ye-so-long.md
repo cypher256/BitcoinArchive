@@ -17,7 +17,6 @@ participants:
 description: "Nick Szabo's May 2011 blog post on why digital cash took thirteen years between bit gold (1998) and Bitcoin (2009). Names libtech as the private list where bit gold and b-money developed in parallel."
 isSatoshi: false
 tags:
-  - "nick-szabo"
   - "bit-gold"
   - "origins"
   - "proof-of-work"

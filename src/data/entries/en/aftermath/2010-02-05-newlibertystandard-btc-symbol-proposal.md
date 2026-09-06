@@ -13,7 +13,6 @@ participants:
 description: "NewLibertyStandard proposes adopting the Thai baht symbol (฿) as Bitcoin's symbol and BTC as the three-letter code on BitcoinTalk, establishing the notation still in use today."
 isSatoshi: false
 tags:
-  - "newlibertystandard"
   - "btc-symbol"
   - "currency-code"
   - "bitcointalk"

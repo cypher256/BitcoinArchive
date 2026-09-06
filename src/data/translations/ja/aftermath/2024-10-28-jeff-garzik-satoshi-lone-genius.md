@@ -13,7 +13,6 @@ participants:
 description: "初期のビットコイン開発者ジェフ・ガージックが、サトシ・ナカモトとの共同作業の経験を語る動画シリーズを公開。サトシを独学のプログラマー、孤独な天才と評し、個人情報を一切漏らさなかったと証言した。"
 isSatoshi: false
 tags:
-  - "jeff-garzik"
   - "satoshi-identity"
   - "retrospective"
   - "coding-style"

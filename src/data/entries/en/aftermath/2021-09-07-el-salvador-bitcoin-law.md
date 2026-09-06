@@ -17,7 +17,6 @@ tags:
   - "bitcoin-law"
   - "chivo-wallet"
   - "government-adoption"
-  - "nayib-bukele"
   - "regulation"
 secondarySources:
   - name: "Bitcoin en El Salvador (Wikipedia, Spanish)"

@@ -14,8 +14,6 @@ description: "Wei Dai answers Back's borrowing-resources and resource-waste poin
 inReplyTo: "emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique"
 isSatoshi: false
 tags:
-  - "wei-dai"
-  - "adam-back"
   - "b-money"
   - "cypherpunks"
   - "monetary-policy"

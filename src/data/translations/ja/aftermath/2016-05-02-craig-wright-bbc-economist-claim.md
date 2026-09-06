@@ -15,7 +15,6 @@ participants:
 description: "クレイグ・ライトが BBC・Economist・GQ の連携取材でサトシを名乗る。ブログの暗号証明は 2009 年取引署名の再利用だったため即座に論破された。"
 isSatoshi: false
 tags:
-  - "craig-wright"
   - "identity-claim"
   - "debunked"
   - "bbc"

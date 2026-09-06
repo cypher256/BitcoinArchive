@@ -14,7 +14,6 @@ participants:
 description: "ニック・サボが自身のブログで bit gold の実装協力を求めるが反応なし。6ヶ月半後、サトシ・ナカモトがビットコイン論文を公開した。"
 isSatoshi: false
 tags:
-  - "nick-szabo"
   - "bit-gold"
   - "implementation"
   - "pre-bitcoin"

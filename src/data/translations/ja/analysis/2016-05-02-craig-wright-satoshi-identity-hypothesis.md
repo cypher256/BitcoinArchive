@@ -14,7 +14,6 @@ description: "本人が自ら名乗り出た唯一の候補。2016 年 5 月、B
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "craig-wright"
   - "identity-claim"
   - "debunked"
   - "copa"

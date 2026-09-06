@@ -27,8 +27,6 @@ tags:
   - "methodology"
   - "dataset"
   - "investigation"
-  - "nick-szabo"
-  - "adam-back"
   - "hal-finney"
 relatedEntries:
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus

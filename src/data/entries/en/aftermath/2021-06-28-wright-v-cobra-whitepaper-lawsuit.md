@@ -15,8 +15,6 @@ participants:
 description: "Craig Wright sued bitcoin.org operator Cobra over Bitcoin whitepaper copyright. Cobra refused to reveal his identity, resulting in a default judgment ordering bitcoin.org to remove the whitepaper."
 isSatoshi: false
 tags:
-  - "craig-wright"
-  - "cobra"
   - "bitcoin-org"
   - "whitepaper"
   - "copyright"

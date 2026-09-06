@@ -16,7 +16,6 @@ tags:
   - "bitcoin-cash"
   - "block-size"
   - "hash-war"
-  - "craig-wright"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy
   - aftermath/2017-08-01-bitcoin-cash-fork

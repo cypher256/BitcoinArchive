@@ -15,7 +15,6 @@ participants:
 description: "レイ・ディリンジャーがビットコイン最初期の役割を回顧。ブロックチェーンコードのレビュー、ハル・フィニーとの分業、サトシの誠実さについて語る。"
 isSatoshi: false
 tags:
-  - "ray-dillinger"
   - "code-review"
   - "hal-finney"
   - "altcoins"

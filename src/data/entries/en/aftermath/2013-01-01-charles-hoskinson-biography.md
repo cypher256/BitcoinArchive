@@ -14,7 +14,6 @@ participants:
 description: "Ethereum's first CEO, removed in 2014, who built Cardano on the opposite design choices. His verdict on Bitcoin moved from \"worth a Turing prize\" to \"a religion, not an ecosystem\"."
 isSatoshi: false
 tags:
-  - "charles-hoskinson"
   - "cardano"
   - "altcoin"
   - "proof-of-stake"

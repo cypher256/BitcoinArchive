@@ -11,7 +11,6 @@ participants:
 description: "ソフトウェアエンジニア（1974-）、Linux カーネル貢献者。2010年7月に Slashdot で知る。Bitcoin Core 主要貢献者、cpuminer 作者、Bloq 共同設立。"
 isSatoshi: false
 tags:
-  - "jeff-garzik"
   - "bitcoin-core"
   - "linux-kernel"
   - "cpuminer"

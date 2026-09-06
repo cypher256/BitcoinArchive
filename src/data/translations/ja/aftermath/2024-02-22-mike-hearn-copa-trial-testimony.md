@@ -15,9 +15,7 @@ participants:
 description: "マイク・ハーンが COPA 対ライト裁判で証言。サトシとの直接やり取りを回顧し、2016 年の夕食でライトがチェック質問に不合格だったと述べた。"
 isSatoshi: false
 tags:
-  - "mike-hearn"
   - "copa-trial"
-  - "craig-wright"
   - "court-testimony"
   - "satoshi-identity"
   - "retrospective"

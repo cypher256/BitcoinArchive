@@ -13,7 +13,6 @@ participants:
 description: "Laszlo Hanyecz pays 10,000 BTC for two Papa John's pizzas — the first purchase of a physical good with Bitcoin. Completed May 22, 2010 and celebrated annually as Bitcoin Pizza Day. ~$41 at the time."
 isSatoshi: false
 tags:
-  - "laszlo-hanyecz"
   - "pizza-day"
   - "first-purchase"
   - "historic"

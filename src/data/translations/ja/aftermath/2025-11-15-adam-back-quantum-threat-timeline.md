@@ -11,7 +11,6 @@ participants:
 description: "Blockstream CEO アダム・バックが、ビットコインの量子コンピューティング脅威はおよそ 20〜40 年先で、NIST ポスト量子署名 SLH-DSA を事前に導入できると述べた。"
 isSatoshi: false
 tags:
-  - "adam-back"
   - "quantum-computing"
   - "cryptography"
   - "NIST"

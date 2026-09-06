@@ -14,7 +14,6 @@ description: "A former SpaceX intern named him in a viral 2017 blog post — the
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "elon-musk"
   - "denied"
   - "disputed"
 secondarySources:

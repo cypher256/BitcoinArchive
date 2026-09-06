@@ -11,7 +11,6 @@ participants:
 description: "オランダのソフトウェア開発者（laanwj）。bitcoin-qt GUI 開発、2014年4月から 2022年8月まで Bitcoin Core リードメンテナー、2023年2月にマージ権限を撤去。"
 isSatoshi: false
 tags:
-  - "wladimir-van-der-laan"
   - "bitcoin-core"
   - "lead-maintainer"
   - "bitcoin-qt"

@@ -14,7 +14,6 @@ callout:
   entry: "analysis/2024-10-08-todd-satoshi-identity-hypothesis"
   label: "サトシ正体仮説"
 tags:
-  - "peter-todd"
   - "replace-by-fee"
   - "opentimestamps"
   - "bitcoin-core"

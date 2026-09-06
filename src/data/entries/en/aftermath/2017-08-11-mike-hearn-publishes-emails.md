@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn publishes his private email correspondence with Satoshi Nakamoto, providing valuable insights into Satoshi's thinking about Bitcoin's technical future."
 isSatoshi: false
 tags:
-  - "mike-hearn"
   - "email-archive"
   - "published-correspondence"
 secondarySources:

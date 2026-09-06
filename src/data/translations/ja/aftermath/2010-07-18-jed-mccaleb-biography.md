@@ -12,7 +12,6 @@ participants:
 description: "2010 年にマウントゴックスを作り 2011 年に手放した後、XRP レジャーとステラを共同で作った人物。採掘なしで合意に至る設計を選び、二重支払いが解けると思わせたのは論文だったと語る。"
 isSatoshi: false
 tags:
-  - "jed-mccaleb"
   - "mt-gox"
   - "ripple"
   - "altcoin"

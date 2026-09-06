@@ -12,7 +12,6 @@ participants:
 description: "プログラマー (1994–)。2011 年にビットコイン参入、Bitcoin Magazine 共同創設、pybitcointools 著者、2013 年末イーサリアム白書執筆。"
 isSatoshi: false
 tags:
-  - "vitalik-buterin"
   - "bitcoin-magazine"
   - "ethereum"
   - "altcoin"

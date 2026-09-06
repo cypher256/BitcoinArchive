@@ -11,7 +11,6 @@ participants:
 description: "Vitalik Buterin's BitcoinTalk announcement of Ethereum on the Altcoins board, January 23, 2014. The principal Bitcoin-community-facing record of the Ethereum whitepaper publication."
 isSatoshi: false
 tags:
-  - "vitalik-buterin"
   - "ethereum"
   - "altcoin"
   - "announcement"

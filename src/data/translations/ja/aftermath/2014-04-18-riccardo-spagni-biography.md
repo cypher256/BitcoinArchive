@@ -12,7 +12,6 @@ participants:
 description: "モネロを長く率いた保守者。ビットコインの透明性こそモネロの用途を生んだと述べ、匿名性を後から足すことには懐疑的で、2010 年と 2018 年の増発バグを監査可能性の危険として挙げる。"
 isSatoshi: false
 tags:
-  - "riccardo-spagni"
   - "monero"
   - "privacy"
   - "altcoin"

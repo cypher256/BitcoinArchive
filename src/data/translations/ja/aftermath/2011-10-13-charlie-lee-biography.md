@@ -11,7 +11,6 @@ participants:
 description: "ライトコインを 2011 年に公開した元 Google 技術者。ビットコインを「もっとも健全な貨幣」と呼び続け、2017 年に自身の保有を全て手放したと公表した。"
 isSatoshi: false
 tags:
-  - "charlie-lee"
   - "litecoin"
   - "altcoin"
 secondarySources:

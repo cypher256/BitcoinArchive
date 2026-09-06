@@ -11,7 +11,6 @@ participants:
 description: "2010 年 8 月のオーバーフロー復旧は knightmb のスナップショットを起点とした。一方、二次情報は同じハンドル名に「10% 保有」説の誤伝とテネシーでの本人同定説を結び付けてきた。"
 isSatoshi: false
 tags:
-  - "knightmb"
   - "overflow-bug"
   - "blockchain-snapshot"
   - "node-operator"

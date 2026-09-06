@@ -13,8 +13,6 @@ participants:
 description: "アダム・バックが b-money 提案に対し 7 つの貨幣設計上の論点を指摘し、Hashcash を鋳造機構として提案。ビットコイン 10年前の分析。"
 isSatoshi: false
 tags:
-  - "adam-back"
-  - "wei-dai"
   - "b-money"
   - "hashcash"
   - "cypherpunks"

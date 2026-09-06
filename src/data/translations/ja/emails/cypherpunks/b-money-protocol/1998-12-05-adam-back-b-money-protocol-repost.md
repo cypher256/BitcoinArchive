@@ -13,8 +13,6 @@ participants:
 description: "アダム・バックがウェイ・ダイの b-money 提案の全文をサイファーパンクに再投稿し、論評は追ってと予告。1998 年 12 月の b-money 設計議論の発端となったメッセージ。"
 isSatoshi: false
 tags:
-  - "adam-back"
-  - "wei-dai"
   - "b-money"
   - "cypherpunks"
   - "crypto-anarchy"

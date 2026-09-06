@@ -15,7 +15,6 @@ isSatoshi: false
 tags:
   - "bitcoinj"
   - "open-source"
-  - "google"
   - "testnet"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"

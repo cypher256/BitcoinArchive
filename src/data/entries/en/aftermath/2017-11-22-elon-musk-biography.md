@@ -14,7 +14,6 @@ callout:
   entry: "analysis/2017-11-22-elon-musk-satoshi-identity-hypothesis"
   label: "Identity hypothesis"
 tags:
-  - "elon-musk"
   - "tesla"
   - "denied"
 secondarySources:

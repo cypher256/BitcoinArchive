@@ -14,7 +14,6 @@ description: "The first person to answer the Bitcoin whitepaper, and a rare lexi
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "james-donald"
   - "cypherpunk"
   - "stylometric"
   - "disputed"

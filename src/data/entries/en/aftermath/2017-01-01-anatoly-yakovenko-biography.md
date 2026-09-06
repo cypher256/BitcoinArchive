@@ -12,7 +12,6 @@ participants:
 description: "Qualcomm engineer who wrote the Proof of History paper and founded Solana. Calls Bitcoin's proof-of-work an unhackable masterpiece and says the asset has no value beyond insurance."
 isSatoshi: false
 tags:
-  - "anatoly-yakovenko"
   - "solana"
   - "altcoin"
   - "proof-of-stake"

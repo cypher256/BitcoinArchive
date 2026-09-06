@@ -12,7 +12,6 @@ participants:
 description: "A Silicon Valley executive (Yahoo, AOL) who joined Ripple in 2015 and became CEO in 2016. Has called Bitcoin both China-controlled and, separately, a legitimate store of value."
 isSatoshi: false
 tags:
-  - "brad-garlinghouse"
   - "ripple"
   - "xrp"
   - "altcoin"

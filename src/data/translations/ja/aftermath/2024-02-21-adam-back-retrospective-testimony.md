@@ -15,11 +15,9 @@ participants:
 description: "アダム・バックが 2008年8月のサトシとのメール交換、ホワイトペーパーを精読しなかった後悔、メールが公開された COPA 対ライト裁判での証言を振り返る。"
 isSatoshi: false
 tags:
-  - "adam-back"
   - "hashcash"
   - "copa-trial"
   - "regret"
-  - "wei-dai"
   - "retrospective"
 secondarySources:
   - name: "COPA trial witness testimony"

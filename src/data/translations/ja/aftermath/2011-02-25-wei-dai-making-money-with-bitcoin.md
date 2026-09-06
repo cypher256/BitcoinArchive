@@ -11,7 +11,6 @@ participants:
 description: "LessWrong スレッドでウェイ・ダイがビットコイン創造を否定：「10年以上前に類似アイデアを記述しただけ」。Radeon 5870 購入でマイニング開始、セキュリティ未分析を警告。"
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "b-money"
   - "gpu-mining"
   - "security"

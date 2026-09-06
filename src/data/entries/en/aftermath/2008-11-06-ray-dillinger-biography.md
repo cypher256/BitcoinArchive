@@ -11,7 +11,6 @@ participants:
 description: "Computer scientist (handle bear / cryddit) who, with Hal Finney, reviewed Satoshi's source code before public release. Focused on security auditing; credited with input on the 1 MB block size limit."
 isSatoshi: false
 tags:
-  - "ray-dillinger"
   - "code-review"
   - "pre-release"
   - "block-size"

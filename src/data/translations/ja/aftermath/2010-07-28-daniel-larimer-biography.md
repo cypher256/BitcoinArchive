@@ -11,7 +11,6 @@ participants:
 description: "アメリカのソフトウェア開発者（bytemaster、1980-）。2010年中頃 BitcoinTalk 参加、オンチェーン決済を遅すぎと主張。BitShares・Steem・EOS 設計の起点。"
 isSatoshi: false
 tags:
-  - "daniel-larimer"
   - "bitcointalk"
   - "bitshares"
   - "steem"

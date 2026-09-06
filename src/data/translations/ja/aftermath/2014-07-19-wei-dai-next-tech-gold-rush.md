@@ -11,7 +11,6 @@ participants:
 description: "ウェイ・ダイの LessWrong 投稿。サトシが 2009 年初頭にビットコイン v0.1 のメールを送ったが当時 LessWrong に関心が向き無視、2011 年にマイニング開始。"
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "early-bitcoin"
   - "mining"
   - "regret"

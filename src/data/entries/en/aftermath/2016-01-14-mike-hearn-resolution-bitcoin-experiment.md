@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn published The Resolution of the Bitcoin Experiment, declaring Bitcoin had failed due to governance breakdown and the block-size stalemate. He sold all his coins and left the project."
 isSatoshi: false
 tags:
-  - "mike-hearn"
   - "block-size"
   - "bitcoin-xt"
   - "scaling"

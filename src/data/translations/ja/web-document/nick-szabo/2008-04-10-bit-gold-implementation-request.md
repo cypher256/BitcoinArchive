@@ -12,7 +12,6 @@ participants:
 description: "自身の Unenumerated ブログで、ビットゴールドのトランチ設計への批判に返信する中で、ニック・サボがデモ実装への協力を募る。公に応じる者はいなかった。"
 isSatoshi: false
 tags:
-  - "nick-szabo"
   - "bit-gold"
   - "implementation"
   - "pre-bitcoin"

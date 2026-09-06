@@ -11,7 +11,6 @@ participants:
 description: "Satoshi's difficulty retarget has an off-by-one: it measures 2,015 blocks instead of 2,016. A hashrate majority can exploit it via timestamp manipulation. The Great Consensus Cleanup proposes a fix."
 isSatoshi: false
 tags:
-  - "satoshi-nakamoto"
   - "source-code"
   - "off-by-one"
   - "difficulty-adjustment"

@@ -11,7 +11,6 @@ participants:
 description: "ソフトウェア開発者（luke-jr）。Bitcoin Core 長期貢献者、Bitcoin Knots 維持、Ocean 共同創業（2023）。2022年末に 350 万ドル超のウォレット盗難。"
 isSatoshi: false
 tags:
-  - "luke-dashjr"
   - "bitcoin-core"
   - "bitcoin-knots"
   - "ocean"

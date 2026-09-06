@@ -11,7 +11,6 @@ participants:
 description: "Wei Dai announces b-money on the Cypherpunks list as a brief addendum to PipeNet 1.1, pointing readers to his eskimo.com page — the proposal later cited as reference [1] in the Bitcoin whitepaper."
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "b-money"
   - "pipenet"
   - "cypherpunks"

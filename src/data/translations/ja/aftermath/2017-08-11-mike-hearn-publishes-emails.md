@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンがサトシ・ナカモトとのメールのやり取りを公開し、サトシのビットコインの技術的な将来についての考えに関する貴重な洞察を提供した。"
 isSatoshi: false
 tags:
-  - "mike-hearn"
   - "email-archive"
   - "published-correspondence"
 secondarySources:

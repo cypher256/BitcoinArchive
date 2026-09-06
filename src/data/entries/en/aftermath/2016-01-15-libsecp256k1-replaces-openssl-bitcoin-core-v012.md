@@ -15,8 +15,6 @@ participants:
 description: "On January 15, 2016, Bitcoin Core v0.12 replaced OpenSSL with libsecp256k1 — Wuille and Maxwell's custom elliptic-curve library — for consensus-critical ECDSA verification."
 isSatoshi: false
 tags:
-  - "pieter-wuille"
-  - "gmaxwell"
   - "libsecp256k1"
   - "openssl"
   - "bitcoin-core"

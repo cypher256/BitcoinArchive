@@ -22,7 +22,6 @@ description: "サトシ最後のメールの 68 日後に世を去った Mixmast
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "len-sassaman"
   - "cypherpunk"
   - "disputed"
 secondarySources:

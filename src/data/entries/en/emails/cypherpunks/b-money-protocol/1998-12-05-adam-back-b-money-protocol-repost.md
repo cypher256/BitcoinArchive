@@ -13,8 +13,6 @@ participants:
 description: "Adam Back reposts the full text of Wei Dai's b-money proposal to the Cypherpunks list, with comments to follow — the message that opened the December 1998 b-money design discussion."
 isSatoshi: false
 tags:
-  - "adam-back"
-  - "wei-dai"
   - "b-money"
   - "cypherpunks"
   - "crypto-anarchy"

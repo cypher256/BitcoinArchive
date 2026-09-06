@@ -15,7 +15,6 @@ description: "Satoshi writes Adam Back the day after the Bitcoin v0.1 release, a
 isSatoshi: true
 tags:
   - "hashcash"
-  - "adam-back"
   - "bitcoin-launch"
   - "hal-finney"
   - "v0.1"

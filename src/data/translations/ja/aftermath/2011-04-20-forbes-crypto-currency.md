@@ -14,7 +14,6 @@ description: "ビットコイン関連で初の主要印刷雑誌特集（Forbes
 isSatoshi: false
 tags:
   - "forbes"
-  - "gavin-andresen"
   - "mainstream-media"
   - "disappearance"
   - "media"

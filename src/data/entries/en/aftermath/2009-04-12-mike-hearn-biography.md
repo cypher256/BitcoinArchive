@@ -11,8 +11,6 @@ participants:
 description: "Software engineer at Google (Maps, Earth, Gmail anti-spam) who contacted Satoshi in April 2009, became an early contributor, and built BitcoinJ. His Satoshi correspondence was made public in 2017."
 isSatoshi: false
 tags:
-  - "mike-hearn"
-  - "google"
   - "bitcoinj"
   - "email-archive"
   - "published-correspondence"

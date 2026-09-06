@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンとサトシ・ナカモトのメールのやり取り。サトシは「他のことに取り組むことにした」と述べ、「ギャビンたちに任せれば、安心だ」と語った。"
 isSatoshi: false
 tags:
-  - "mike-hearn"
   - "email-archive"
   - "final-communication"
   - "disappearance"

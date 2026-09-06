@@ -11,7 +11,6 @@ participants:
 description: "British commercial lawyer and electronic commerce policy adviser who reported problems running Bitcoin on the bitcoin-list mailing list in January 2009, prompting a direct response from Satoshi."
 isSatoshi: false
 tags:
-  - "nicholas-bohm"
   - "bitcoin-list"
   - "early-adopter"
 secondarySources:

@@ -14,7 +14,6 @@ description: "Adam Back suggests Satoshi look at Ron Rivest's 1996 MicroMint pap
 isSatoshi: false
 tags:
   - "hashcash"
-  - "adam-back"
   - "micromint"
   - "ron-rivest"
   - "origins"

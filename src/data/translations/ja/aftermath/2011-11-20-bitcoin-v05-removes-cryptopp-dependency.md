@@ -19,9 +19,6 @@ participants:
 description: "2011 年 11 月 20 日、ビットコイン v0.5 が Crypto++ SHA-256 サブセットを撤去し OpenSSL に置換。v0.1 以来のウェイ・ダイ依存が消滅した。"
 isSatoshi: false
 tags:
-  - "nils-schneider"
-  - "gavin-andresen"
-  - "wei-dai"
   - "cryptopp"
   - "openssl"
   - "bitcoin-core"

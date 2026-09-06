@@ -13,7 +13,6 @@ participants:
 description: "In a CoinGeek interview, Mike Hearn offers rare reflections on Satoshi's personality — observing he enjoyed experimenting but appeared to grow frustrated when evangelical personalities arrived."
 isSatoshi: false
 tags:
-  - "mike-hearn"
   - "retrospective"
   - "satoshi-personality"
   - "disappearance"

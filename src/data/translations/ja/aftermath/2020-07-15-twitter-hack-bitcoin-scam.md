@@ -11,7 +11,6 @@ participants:
 description: "ハッカーがオバマ、バイデン、マスク、Apple など著名 Twitter アカウントを乗っ取りビットコイン詐欺投稿を流した。プラットフォーム史上最大のセキュリティ侵害。"
 isSatoshi: false
 tags:
-  - "twitter"
   - "hack"
   - "scam"
   - "security-breach"

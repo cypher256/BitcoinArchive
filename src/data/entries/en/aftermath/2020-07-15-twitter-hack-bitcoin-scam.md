@@ -11,7 +11,6 @@ participants:
 description: "Hackers compromise high-profile Twitter accounts including Barack Obama, Joe Biden, Elon Musk, and Apple, posting Bitcoin scam messages in the largest security breach in the platform's history."
 isSatoshi: false
 tags:
-  - "twitter"
   - "hack"
   - "scam"
   - "security-breach"

@@ -14,7 +14,6 @@ participants:
 description: "アルトコインの氾濫への冗談として dogecoin.com を取得し、2015 年に界隈を去り、2018 年にビットコインを宗教的だと述べ、2021 年に業界全体を公に否定した人物。"
 isSatoshi: false
 tags:
-  - "jackson-palmer"
   - "dogecoin"
   - "altcoin"
   - "meme"

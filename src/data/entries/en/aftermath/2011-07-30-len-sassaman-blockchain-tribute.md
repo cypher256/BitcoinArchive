@@ -13,8 +13,6 @@ participants:
 description: "After Len Sassaman's death (July 3, 2011), security researcher Dan Kaminsky embedded an ASCII-art tribute into the Bitcoin blockchain, announced July 30 and revealed at Black Hat USA 2011."
 isSatoshi: false
 tags:
-  - "dan-kaminsky"
-  - "len-sassaman"
   - "blockchain"
   - "memorial"
   - "obituary"

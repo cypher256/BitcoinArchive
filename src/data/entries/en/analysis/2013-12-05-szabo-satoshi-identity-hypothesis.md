@@ -16,7 +16,6 @@ description: "He conceived Bit Gold, and three of the four most-cited stylometri
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "nick-szabo"
   - "bit-gold"
   - "stylometric-analysis"
   - "cypherpunk"

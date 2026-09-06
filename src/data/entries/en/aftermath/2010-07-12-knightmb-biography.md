@@ -14,7 +14,6 @@ callout:
   entry: "analysis/2010-08-15-knightmb-snapshot-and-legend"
   label: "Snapshot & legend"
 tags:
-  - "knightmb"
   - "bitcointalk"
   - "node-operator"
   - "blockchain-snapshot"

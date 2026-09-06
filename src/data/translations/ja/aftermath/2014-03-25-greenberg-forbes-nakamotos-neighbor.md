@@ -19,8 +19,6 @@ description: "2014 年 3 月 25 日 Forbes 特集。アンディ・グリーン�
 tags:
   - "hal-finney"
   - "satoshi-identity"
-  - "fran-finney"
-  - "dorian-nakamoto"
   - "forbes"
   - "race-day-alibi"
   - "journalism"

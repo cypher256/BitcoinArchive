@@ -14,7 +14,6 @@ description: "WikiLeaks がビットコイン寄付受付を開始、金融封�
 isSatoshi: false
 tags:
   - "wikileaks"
-  - "julian-assange"
   - "financial-blockade"
   - "donations"
   - "censorship-resistance"

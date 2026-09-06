@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn's private email correspondence with Satoshi Nakamoto, in which Satoshi stated he had 'moved on to other things' and that Bitcoin was 'in good hands with Gavin and everyone.'"
 isSatoshi: false
 tags:
-  - "mike-hearn"
   - "email-archive"
   - "final-communication"
   - "disappearance"

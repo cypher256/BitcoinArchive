@@ -11,7 +11,6 @@ participants:
 description: "NewLibertyStandard が初の為替レートを公開：1 ドル = 1,309.03 BTC。マイニング電気代から算出した原始的だが歴史的な初の価値付与。"
 isSatoshi: false
 tags:
-  - "newlibertystandard"
   - "exchange-rate"
   - "first-price"
   - "mining"

@@ -11,7 +11,6 @@ participants:
 description: "匿名人物。2009年10月5日に電力コストに基づく初の BTC-USD レート（$1 = 1,309.03 BTC）を公開。マルミとの初取引を実施、BTC ティッカーを提案。"
 isSatoshi: false
 tags:
-  - "newlibertystandard"
   - "first-exchange-rate"
   - "btc-ticker"
   - "first-transaction"

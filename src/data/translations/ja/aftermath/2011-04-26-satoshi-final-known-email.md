@@ -16,8 +16,6 @@ description: "サトシの最後の既知のメール：2011年4月23日ハー�
 isSatoshi: true
 tags:
   - "final-communication"
-  - "gavin-andresen"
-  - "mike-hearn"
   - "alert-key"
   - "transition"
   - "disappearance"

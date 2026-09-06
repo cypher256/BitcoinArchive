@@ -11,7 +11,6 @@ participants:
 description: "Dutch developer (handle laanwj). Built the original bitcoin-qt GUI; succeeded Gavin Andresen as Bitcoin Core lead maintainer (April 2014 - August 2022); withdrew merge privileges in February 2023."
 isSatoshi: false
 tags:
-  - "wladimir-van-der-laan"
   - "bitcoin-core"
   - "lead-maintainer"
   - "bitcoin-qt"

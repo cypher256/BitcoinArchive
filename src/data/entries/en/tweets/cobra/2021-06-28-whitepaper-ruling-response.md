@@ -12,7 +12,6 @@ participants:
 description: "Cobra's response on X, posted hours after the London High Court ordered bitcoin.org to remove the Bitcoin whitepaper following Craig Wright's default judgment."
 isSatoshi: false
 tags:
-  - "cobra"
   - "craig-wright"
   - "bitcoin-org"
   - "whitepaper"

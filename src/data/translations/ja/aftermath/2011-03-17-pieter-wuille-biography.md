@@ -11,7 +11,6 @@ participants:
 description: "ベルギーのソフトウェア技術者（sipa）。BIP-32、SegWit、Schnorr、Taproot の著者/共著者、libsecp256k1 発起人、Blockstream 共同創業。"
 isSatoshi: false
 tags:
-  - "pieter-wuille"
   - "bitcoin-core"
   - "libsecp256k1"
   - "segwit"

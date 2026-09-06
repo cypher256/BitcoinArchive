@@ -16,7 +16,6 @@ tags:
   - "abuse-prevention"
   - "collateral"
   - "time-lock"
-  - "google"
   - "contracts"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"

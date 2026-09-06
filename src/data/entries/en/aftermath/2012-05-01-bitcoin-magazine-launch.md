@@ -16,7 +16,6 @@ tags:
   - "bitcoin-magazine"
   - "media"
   - "journalism"
-  - "vitalik-buterin"
   - "publication"
 secondarySources:
   - name: "Bitcoin Magazine — official site"

@@ -12,7 +12,6 @@ participants:
 description: "E-Loan・Prosper を経て 2012 年に XRP レジャーを作った会社を共同創業。2021 年、ビットコインのプルーフ・オブ・ワークを業界が退けるべき技術だと語った。"
 isSatoshi: false
 tags:
-  - "chris-larsen"
   - "ripple"
   - "xrp"
   - "altcoin"

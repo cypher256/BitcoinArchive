@@ -11,7 +11,6 @@ participants:
 description: "Software developer (born 1966), founder of Wasabi Software, creator of the Bitcoin Faucet. Chosen by Satoshi to lead the project; served as Bitcoin lead maintainer from 2011 to 2014."
 isSatoshi: false
 tags:
-  - "gavin-andresen"
   - "lead-developer"
   - "bitcoin-faucet"
   - "wasabi-software"

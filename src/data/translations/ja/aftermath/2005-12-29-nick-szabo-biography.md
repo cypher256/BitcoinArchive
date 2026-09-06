@@ -14,7 +14,6 @@ callout:
   entry: "analysis/2013-12-05-szabo-satoshi-identity-hypothesis"
   label: "サトシ正体仮説"
 tags:
-  - "nick-szabo"
   - "bit-gold"
   - "smart-contracts"
   - "precursor"

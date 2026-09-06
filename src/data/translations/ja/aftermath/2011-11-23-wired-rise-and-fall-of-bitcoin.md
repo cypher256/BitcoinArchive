@@ -36,7 +36,6 @@ tags:
   - "mt-gox"
   - "bitcoin-pizza"
   - "mining"
-  - "jeff-garzik"
   - "silk-road"
 secondarySources:
   - name: "Wired Japan — ベンジャミン・ウォレス「サトシ・ナカモト」特集"

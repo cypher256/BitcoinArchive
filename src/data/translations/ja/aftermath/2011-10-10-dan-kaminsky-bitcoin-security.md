@@ -13,7 +13,6 @@ participants:
 description: "著名なセキュリティ研究者カミンスキーが脆弱性を探すも失敗。「美しいバグを見つけたが、攻撃するたびに対処する一行があった」"
 isSatoshi: false
 tags:
-  - "dan-kaminsky"
   - "security"
   - "code-review"
   - "new-yorker"

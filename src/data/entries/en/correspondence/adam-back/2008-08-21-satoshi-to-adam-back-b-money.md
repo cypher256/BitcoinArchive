@@ -15,7 +15,6 @@ description: "Satoshi thanks Adam Back for the b-money reference, admits he was 
 isSatoshi: true
 tags:
   - "hashcash"
-  - "adam-back"
   - "b-money"
   - "wei-dai"
   - "origins"

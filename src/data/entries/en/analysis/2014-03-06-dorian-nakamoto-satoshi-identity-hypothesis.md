@@ -16,7 +16,6 @@ description: "His legal name was, literally, Satoshi Nakamoto — and a 2014 New
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "dorian-nakamoto"
   - "name-match"
   - "newsweek"
   - "denied"

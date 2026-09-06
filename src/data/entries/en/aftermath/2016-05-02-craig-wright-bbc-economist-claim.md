@@ -15,7 +15,6 @@ participants:
 description: "Craig Wright publicly declared himself Satoshi in BBC, Economist and GQ interviews. His blog cryptographic proof was quickly debunked — he had reused a 2009 transaction signature."
 isSatoshi: false
 tags:
-  - "craig-wright"
   - "identity-claim"
   - "debunked"
   - "bbc"

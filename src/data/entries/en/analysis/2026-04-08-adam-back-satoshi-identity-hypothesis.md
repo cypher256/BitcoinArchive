@@ -14,7 +14,6 @@ description: "Hashcash's inventor and the first person Satoshi contacted. In Apr
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "adam-back"
   - "cypherpunk"
   - "hashcash"
   - "stylometric-analysis"

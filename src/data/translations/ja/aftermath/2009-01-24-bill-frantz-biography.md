@@ -13,7 +13,6 @@ participants:
 description: "Periwinkle のセキュリティコンサルタント。2009年1月の暗号学メーリングリストでビットコインを議論し、ボットネット支配のマシンは最もセキュアと皮肉った。"
 isSatoshi: false
 tags:
-  - "bill-frantz"
   - "security"
   - "botnet"
   - "cryptography-mailing-list"

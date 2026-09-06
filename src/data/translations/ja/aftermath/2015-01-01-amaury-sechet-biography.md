@@ -12,7 +12,6 @@ participants:
 description: "フランス人エンジニア。2015 年頃 Bitcoin Core 寄稿、Bitcoin ABC 立ち上げ、2017 年 BCH ハードフォーク主導、2020 年に eCash へ分裂。"
 isSatoshi: false
 tags:
-  - "amaury-sechet"
   - "bitcoin-cash"
   - "bitcoin-abc"
   - "ecash"

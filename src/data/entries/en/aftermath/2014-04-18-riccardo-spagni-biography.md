@@ -12,7 +12,6 @@ participants:
 description: "Monero's long-time lead maintainer. Argues Bitcoin's transparency is the use case for Monero, and cites Bitcoin's 2010 and 2018 inflation bugs as evidence of auditability risk."
 isSatoshi: false
 tags:
-  - "riccardo-spagni"
   - "monero"
   - "privacy"
   - "altcoin"

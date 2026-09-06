@@ -11,7 +11,6 @@ participants:
 description: "ウェイ・ダイが b-money をサイファーパンクリストで発表。本命の PipeNet 1.1 に付随する一文として末尾で紹介された。"
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "b-money"
   - "pipenet"
   - "cypherpunks"

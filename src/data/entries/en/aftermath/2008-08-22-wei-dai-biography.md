@@ -14,7 +14,6 @@ callout:
   entry: "analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis"
   label: "Identity hypothesis"
 tags:
-  - "wei-dai"
   - "b-money"
   - "crypto-plus-plus"
   - "whitepaper"

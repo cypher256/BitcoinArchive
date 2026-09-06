@@ -11,7 +11,6 @@ participants:
 description: "BitcoinTalk administrator (handle theymos) from 2010, Bitcoin Wiki admin, later r/Bitcoin moderator. Satoshi transferred forum control to him before departing; led the 2011 bitcointalk.org migration."
 isSatoshi: false
 tags:
-  - "theymos"
   - "bitcointalk"
   - "forum-administration"
   - "community"

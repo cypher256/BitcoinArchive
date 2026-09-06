@@ -15,7 +15,6 @@ participants:
 description: "Jeff Garzik, one of Bitcoin's earliest core developers, reflects on his work with Satoshi. He discovered Bitcoin via a July 2010 Slashdot post and became one of the top three contributors."
 isSatoshi: false
 tags:
-  - "jeff-garzik"
   - "core-developer"
   - "slashdot"
   - "retrospective"

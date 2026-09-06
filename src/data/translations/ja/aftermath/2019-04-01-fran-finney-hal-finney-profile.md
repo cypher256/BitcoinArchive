@@ -14,12 +14,10 @@ description: "Cryonics Magazine が妻フラン・フィニーへの取材に基
 isSatoshi: false
 tags:
   - "hal-finney"
-  - "fran-finney"
   - "biography"
   - "cryonics"
   - "alcor"
   - "als"
-  - "caltech"
 secondarySources:
   - name: "Cryonics Magazine PDF — 2nd Quarter 2019"
     url: "https://cryonicsarchive.org/docs/cryonics-magazine-2019-02.pdf"

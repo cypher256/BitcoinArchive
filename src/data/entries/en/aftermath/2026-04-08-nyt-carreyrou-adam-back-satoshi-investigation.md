@@ -19,7 +19,6 @@ participants:
 description: "On April 8, 2026, the New York Times published John Carreyrou's investigation naming Adam Back as the most likely Satoshi based on stylometric analysis. Back denied the identification."
 isSatoshi: false
 tags:
-  - "adam-back"
   - "satoshi-identity"
   - "new-york-times"
   - "stylometric-analysis"

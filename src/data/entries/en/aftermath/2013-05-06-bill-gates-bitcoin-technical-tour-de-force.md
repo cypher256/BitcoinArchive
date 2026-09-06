@@ -12,7 +12,6 @@ participants:
 description: "One 2013 sentence praised Bitcoin's engineering and predicted governments would keep the upper hand. Gates's criticism since — anonymity, speculation, energy — never touched the design."
 isSatoshi: false
 tags:
-  - "bill-gates"
   - "reception-history"
   - "mainstream-media"
   - "testimony"

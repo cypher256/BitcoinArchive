@@ -13,7 +13,6 @@ participants:
 description: "セルジオ・デミアン・ラーナー（1972–）：アルゼンチンの暗号学者・ブロックチェーン研究者。Patoshi 分析で約 110 万 BTC を単一マイナー（サトシ）に紐付けた。"
 isSatoshi: false
 tags:
-  - "sergio-demian-lerner"
   - "patoshi"
   - "blockchain-forensics"
   - "mining"

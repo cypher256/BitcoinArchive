@@ -14,7 +14,6 @@ description: "The only Japanese-named candidate, creator of the anonymous P2P sy
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "isamu-kaneko"
   - "winny"
   - "disputed"
 secondarySources:

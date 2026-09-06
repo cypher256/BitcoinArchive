@@ -14,12 +14,10 @@ description: "Cryonics Magazine published a profile of Hal Finney based on inter
 isSatoshi: false
 tags:
   - "hal-finney"
-  - "fran-finney"
   - "biography"
   - "cryonics"
   - "alcor"
   - "als"
-  - "caltech"
 secondarySources:
   - name: "Cryonics Magazine PDF — 2nd Quarter 2019"
     url: "https://cryonicsarchive.org/docs/cryonics-magazine-2019-02.pdf"

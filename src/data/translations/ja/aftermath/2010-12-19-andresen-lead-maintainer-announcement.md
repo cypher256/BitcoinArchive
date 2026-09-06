@@ -13,7 +13,6 @@ participants:
 description: "アンドレセンが BitcoinTalk topic 2367 でサトシの祝福を受けてプロジェクト管理引き継ぎを公式告知。同日 bitcoin/bitcoin GitHub 作成。"
 isSatoshi: false
 tags:
-  - "gavin-andresen"
   - "leadership"
   - "transition"
   - "succession"

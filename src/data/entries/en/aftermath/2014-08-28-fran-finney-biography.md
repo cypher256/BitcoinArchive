@@ -13,11 +13,9 @@ participants:
 description: "Fran Finney: wife of Hal Finney (the first known person other than Satoshi to run Bitcoin). She witnessed Bitcoin's earliest moments, cared for Hal through ALS, and became the keeper of his legacy."
 isSatoshi: false
 tags:
-  - "fran-finney"
   - "hal-finney"
   - "cryonics"
   - "alcor"
-  - "caltech"
 secondarySources:
   - name: "Cryonics Magazine PDF — 2nd Quarter 2019"
     url: "https://cryonicsarchive.org/docs/cryonics-magazine-2019-02.pdf"

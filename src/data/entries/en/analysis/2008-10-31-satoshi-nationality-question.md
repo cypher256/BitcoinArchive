@@ -19,8 +19,6 @@ tags:
   - "satoshi-nationality"
   - "timestamp"
   - "linguistic-analysis"
-  - "isamu-kaneko"
-  - "dorian-nakamoto"
 secondarySources:
   - name: "Chain Bulletin — Satoshi Nakamoto lived in London (November 23, 2020)"
     url: "https://chainbulletin.com/satoshi-nakamoto-lived-in-london-while-working-on-bitcoin-heres-how-we-know"

@@ -11,7 +11,6 @@ participants:
 description: "Wei Dai LessWrong post revealing Satoshi emailed him about Bitcoin v0.1 in early 2009, but Dai ignored it because he was more interested in Less Wrong than Cypherpunks at the time."
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "early-bitcoin"
   - "mining"
   - "regret"

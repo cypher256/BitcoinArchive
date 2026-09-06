@@ -12,7 +12,6 @@ participants:
 description: "2013 年、ゲイツは一文で技術を讃え、政府優位を予言した。以後 12 年の批判は匿名性・投機・電力に向かい、設計そのものには一度も向かわなかった。"
 isSatoshi: false
 tags:
-  - "bill-gates"
   - "reception-history"
   - "mainstream-media"
   - "testimony"

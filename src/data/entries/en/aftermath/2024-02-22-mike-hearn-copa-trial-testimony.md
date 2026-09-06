@@ -15,9 +15,7 @@ participants:
 description: "Mike Hearn testifies at the COPA v Wright trial, recounting his direct interactions with Satoshi and describing how Wright failed his technical check questions at a 2016 dinner."
 isSatoshi: false
 tags:
-  - "mike-hearn"
   - "copa-trial"
-  - "craig-wright"
   - "court-testimony"
   - "satoshi-identity"
   - "retrospective"

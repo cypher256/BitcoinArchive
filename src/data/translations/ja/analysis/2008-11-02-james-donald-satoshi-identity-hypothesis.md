@@ -14,7 +14,6 @@ description: "ビットコイン白書に最初に返信した男。稀な語彙
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "james-donald"
   - "cypherpunk"
   - "stylometric"
   - "disputed"

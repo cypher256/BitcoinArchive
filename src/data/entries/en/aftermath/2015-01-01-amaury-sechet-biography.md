@@ -12,7 +12,6 @@ participants:
 description: "French software engineer. Bitcoin Core contributor from ~2015, founded Bitcoin ABC, led the 2017 BCH hard fork, defended BCH in the 2018 BSV hash war, led the 2020 split into eCash."
 isSatoshi: false
 tags:
-  - "amaury-sechet"
   - "bitcoin-cash"
   - "bitcoin-abc"
   - "ecash"

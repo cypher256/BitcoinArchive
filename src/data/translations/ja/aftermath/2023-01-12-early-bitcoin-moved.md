@@ -11,7 +11,6 @@ participants:
 description: "ビットコインの存在の最初の数週間である 2009年1月にマイニングされたビットコインが初めて移動し、サトシ・ナカモトがコインを使い始めたのではないかという激しい憶測を引き起こした。"
 isSatoshi: false
 tags:
-  - "satoshi-nakamoto"
   - "early-bitcoin"
   - "blockchain-analysis"
   - "dormant-coins"

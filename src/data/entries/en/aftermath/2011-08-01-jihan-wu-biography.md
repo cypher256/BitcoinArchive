@@ -11,7 +11,6 @@ participants:
 description: "Chinese entrepreneur (1986–). Translated Bitcoin whitepaper into Chinese (2011), co-founded Bitmain (2013), backed Bitcoin Cash with hashpower (2017), later founded Matrixport and Bitdeer."
 isSatoshi: false
 tags:
-  - "jihan-wu"
   - "bitmain"
   - "asic"
   - "mining"

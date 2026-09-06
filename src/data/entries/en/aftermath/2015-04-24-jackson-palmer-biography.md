@@ -14,7 +14,6 @@ participants:
 description: "Registered dogecoin.com as a joke about altcoin proliferation, left the community in 2015, called Bitcoin cult-like in 2018, and in 2021 rejected the whole industry in public."
 isSatoshi: false
 tags:
-  - "jackson-palmer"
   - "dogecoin"
   - "altcoin"
   - "meme"

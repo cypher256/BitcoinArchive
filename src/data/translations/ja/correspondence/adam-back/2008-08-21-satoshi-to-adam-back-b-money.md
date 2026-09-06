@@ -15,7 +15,6 @@ description: "サトシが b-money の紹介に謝意を表し、ウェイ・ダ
 isSatoshi: true
 tags:
   - "hashcash"
-  - "adam-back"
   - "b-money"
   - "wei-dai"
   - "origins"

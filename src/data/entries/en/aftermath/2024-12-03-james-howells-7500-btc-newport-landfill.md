@@ -13,7 +13,6 @@ isSatoshi: false
 tags:
   - "lost-bitcoin"
   - "lost-keys"
-  - "james-howells"
   - "newport-landfill"
   - "iconic-losses"
 secondarySources:

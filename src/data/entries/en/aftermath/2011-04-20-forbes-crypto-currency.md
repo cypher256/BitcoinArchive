@@ -14,7 +14,6 @@ description: "One of the first major print magazine features on Bitcoin. Greenbe
 isSatoshi: false
 tags:
   - "forbes"
-  - "gavin-andresen"
   - "mainstream-media"
   - "disappearance"
   - "media"

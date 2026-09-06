@@ -13,7 +13,6 @@ participants:
 description: "Gavin Andresen publicly announces taking on active project management for Bitcoin with Satoshi's blessing, creating the bitcoin/bitcoin GitHub staging tree and proposing a development process."
 isSatoshi: false
 tags:
-  - "gavin-andresen"
   - "leadership"
   - "transition"
   - "succession"

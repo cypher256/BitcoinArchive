@@ -14,7 +14,6 @@ callout:
   entry: "analysis/2019-02-19-paul-le-roux-satoshi-identity-hypothesis"
   label: "サトシ正体仮説"
 tags:
-  - "paul-le-roux"
   - "e4m"
   - "truecrypt-precursor"
   - "criminal-enterprise"

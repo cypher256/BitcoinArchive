@@ -17,7 +17,6 @@ inReplyTo: "forum/bitcointalk/2010-12-09-re-fees-in-bitdns-confusion"
 tags:
   - "replace-by-fee"
   - "transaction-replacement"
-  - "peter-todd"
   - "hbo-documentary"
 secondarySources:
   - name: "Satoshi Nakamoto Institute — スレッド"

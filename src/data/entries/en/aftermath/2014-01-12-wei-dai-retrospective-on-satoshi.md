@@ -13,7 +13,6 @@ participants:
 description: "Wei Dai's LessWrong Q&A reflections: Satoshi did not read the b-money paper before reinventing the idea, and Dai had grown disillusioned with cryptoanarchy by the time he wrote it up."
 isSatoshi: false
 tags:
-  - "wei-dai"
   - "b-money"
   - "identity"
   - "motivation"

@@ -11,7 +11,6 @@ participants:
 description: "Peter Todd proposed BIP 65, introducing OP_CHECKLOCKTIMEVERIFY — an opcode locking transaction outputs until a future time. Deployed as a soft fork, enabling escrow and payment channels."
 isSatoshi: false
 tags:
-  - "peter-todd"
   - "bip"
   - "timelocks"
   - "bitcoin-core"

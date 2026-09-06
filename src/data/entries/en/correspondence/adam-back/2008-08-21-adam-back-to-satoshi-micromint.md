@@ -15,7 +15,6 @@ description: "Adam Back's second reply: he has not yet read the paper, but sugge
 isSatoshi: false
 tags:
   - "hashcash"
-  - "adam-back"
   - "micromint"
   - "ron-rivest"
   - "origins"

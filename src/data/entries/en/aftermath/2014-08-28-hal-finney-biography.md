@@ -16,7 +16,6 @@ callout:
 tags:
   - "hal-finney"
   - "pgp"
-  - "caltech"
   - "extropianism"
   - "cryonics"
   - "rpow"

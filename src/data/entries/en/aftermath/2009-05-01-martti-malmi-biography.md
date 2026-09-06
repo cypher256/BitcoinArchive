@@ -11,7 +11,6 @@ participants:
 description: "Finnish developer (born 1988); Bitcoin's most prolific early contributor after Satoshi. Exchanged ~260 emails with Satoshi, ran bitcoin.org, ported to Linux, did the first BTC-to-fiat sale."
 isSatoshi: false
 tags:
-  - "martti-malmi"
   - "bitcoin-org"
   - "bitcointalk"
   - "linux-port"

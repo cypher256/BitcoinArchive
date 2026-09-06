@@ -14,7 +14,6 @@ description: "He wrote E4M, then built a criminal empire. The evidence behind Th
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "paul-le-roux"
   - "e4m"
   - "disputed"
 secondarySources:

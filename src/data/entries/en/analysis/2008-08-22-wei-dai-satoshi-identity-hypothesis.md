@@ -14,7 +14,6 @@ isSatoshi: false
 description: "b-money is whitepaper reference [1], his Crypto++ shipped inside Bitcoin v0.1, and he was the second person Satoshi contacted. The evidence for Wei Dai as Satoshi, weighed."
 tags:
   - "satoshi-identity"
-  - "wei-dai"
   - "b-money"
   - "crypto-plus-plus"
   - "cypherpunk"

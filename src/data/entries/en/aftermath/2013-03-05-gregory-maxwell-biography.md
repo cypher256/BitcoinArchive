@@ -11,7 +11,6 @@ participants:
 description: "Long-time Bitcoin Core contributor (gmaxwell), Blockstream co-founder, co-developer of libsecp256k1. Authored CoinJoin, co-designed Confidential Transactions. Known for deep technical write-ups."
 isSatoshi: false
 tags:
-  - "gregory-maxwell"
   - "bitcoin-core"
   - "blockstream"
   - "coinjoin"

@@ -12,7 +12,6 @@ participants:
 description: "サトシの P2P Foundation プロフィールに 2016 年末ログイン活動が確認された。2014 年の「私はドリアンではない」投稿以来の動きで、アカウント乗っ取り憶測が再燃。"
 isSatoshi: false
 tags:
-  - "satoshi-nakamoto"
   - "p2p-foundation"
   - "identity"
   - "account-activity"

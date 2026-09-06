@@ -14,7 +14,6 @@ description: "唯一の日本名候補、匿名 P2P ソフト Winny を生んだ
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "isamu-kaneko"
   - "winny"
   - "disputed"
 secondarySources:

@@ -14,7 +14,6 @@ description: "サトシがアダム・バックに b-money の参照に感謝、
 isSatoshi: true
 tags:
   - "hashcash"
-  - "adam-back"
   - "b-money"
   - "wei-dai"
   - "origins"

@@ -14,7 +14,6 @@ description: "Adam Back confirms the Hashcash citation and suggests Satoshi look
 isSatoshi: false
 tags:
   - "hashcash"
-  - "adam-back"
   - "b-money"
   - "wei-dai"
   - "origins"

@@ -11,7 +11,6 @@ participants:
 description: "Peter Todd's first BitcoinTalk post, 41 seconds after registering as retep — offering $2 USD (not BTC, unlike others) for a Diaspora invite. His second post was a technical reply to Satoshi."
 isSatoshi: false
 tags:
-  - "peter-todd"
   - "first-post"
   - "diaspora"
   - "marketplace"

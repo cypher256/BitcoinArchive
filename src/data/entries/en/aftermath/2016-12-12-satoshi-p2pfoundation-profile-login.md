@@ -12,7 +12,6 @@ participants:
 description: "Satoshi Nakamoto's P2P Foundation profile shows login activity in late 2016, years after the 'I am not Dorian Nakamoto' post in 2014, sparking renewed speculation about the account's security."
 isSatoshi: false
 tags:
-  - "satoshi-nakamoto"
   - "p2p-foundation"
   - "identity"
   - "account-activity"

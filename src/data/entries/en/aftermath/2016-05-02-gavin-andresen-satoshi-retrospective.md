@@ -13,7 +13,6 @@ participants:
 description: "Gavin Andresen, who was given commit access to Bitcoin by Satoshi and became the lead developer, recalls his interactions with Satoshi and the transition of leadership."
 isSatoshi: false
 tags:
-  - "gavin-andresen"
   - "leadership"
   - "transition"
   - "development"

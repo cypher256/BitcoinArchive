@@ -13,7 +13,6 @@ participants:
 description: "NewLibertyStandard が BitcoinTalk でタイバーツ記号（฿）と「BTC」コードを提案。今日まで使われる通貨表記を確立した。"
 isSatoshi: false
 tags:
-  - "newlibertystandard"
   - "btc-symbol"
   - "currency-code"
   - "bitcointalk"
