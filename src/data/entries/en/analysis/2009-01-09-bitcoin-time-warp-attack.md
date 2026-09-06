@@ -42,20 +42,7 @@ Bitcoin's difficulty-adjustment algorithm contains a long-known off-by-one bug i
 
 When a majority of hashrate cooperates, miners can stamp the first block of a retarget window with a far-future timestamp, then stamp the remaining 2,015 blocks with realistic (or even slightly past) timestamps. Because the difficulty formula uses the timestamp of the **last** block in the previous window as its anchor — and the off-by-one excludes the first block of the new window — the elapsed time the algorithm "sees" can be made far shorter than the actual elapsed time. Difficulty drops on the next retarget; the colluding majority then mines blocks at faster-than-10-minute pace without adding any hashrate.
 
-```mermaid
-sequenceDiagram
-    autonumber
-    participant M as Attacker majority<br/>(>50% hashrate)
-    participant W as Retarget window N+1
-    participant D as Difficulty algorithm
-    Note over M,W: Window N+1 begins
-    M->>W: Block 0 — stamp with far-future time
-    M->>W: Block 1..2015 — realistic timestamps
-    W->>D: Compute elapsed from last(N) to block 2,015 (excludes block 0)
-    D-->>D: Sees a SHORT elapsed window<br/>(off-by-one drops block 0)
-    D-->>W: Lower difficulty for window N+2
-    Note over M: Same hashrate, faster blocks
-```
+<!-- visual: timewarp-clock-trick -->
 
 The attack is not free or instant. The published descriptions place the cost-effective minimum at roughly **four weeks of sustained majority operation** before meaningful exploitation. That is long enough that any real attempt would be visible to the rest of the network well before the difficulty distortion materialized — which is the main reason the bug has remained unfixed for so long: it is exploitable in principle but expensive in practice, and a coordinating majority that visible would face far easier and more profitable mischief than gaming the retarget window.
 

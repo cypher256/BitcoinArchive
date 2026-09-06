@@ -90,16 +90,7 @@ In Bitcoin v0.1 `src/main.cpp`, every field of Block 0 is a compile-time constan
 
 There is no `MineGenesisBlock()` function in v0.1. There is no code path that searches for the genesis nonce at runtime. `LoadBlockIndex()` detects an empty database, reconstructs the genesis block deterministically from those constants, verifies the hash with `assert()`, and writes the result to disk.
 
-```mermaid
-flowchart TD
-    A[Node starts] --> B[LoadBlockIndex]
-    B --> C{Block database empty?}
-    C -->|Yes| D["Reconstruct Block 0 locally from hardcoded constants (nTime, nBits, nNonce, pszTimestamp, expected Merkle root)"]
-    D --> E["assert(block.GetHash() == hashGenesisBlock)"]
-    E --> F[Write Block 0 to disk]
-    F --> G[Resume normal block processing]
-    C -->|No| G
-```
+<!-- visual: genesis-blueprint-rebuild -->
 
 The branch in the `Yes` path runs once per node lifetime — on first launch with an empty database. No peer contact is required, and no proof-of-work check is invoked: the consensus on Block 0 is hash equality only.
 

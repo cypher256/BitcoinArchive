@@ -91,16 +91,7 @@ Bitcoin v0.1 の `src/main.cpp` では、ブロック 0 の全フィールドが
 
 v0.1 には `MineGenesisBlock()` 関数は存在しない。ランタイムでジェネシスのナンスを探索するコードパスは存在しない。`LoadBlockIndex()` が空のデータベースを検出すると、上記定数からジェネシスブロックを決定論的に再構築し、ハッシュを `assert()` で検証してディスクに書き込むだけである。
 
-```mermaid
-flowchart TD
-    A["ノード起動"] --> B["LoadBlockIndex"]
-    B --> C{"ブロックDB が空?"}
-    C -->|Yes| D["定数からブロック 0 をローカル再構築 (nTime, nBits, nNonce, pszTimestamp, 期待マークルルート)"]
-    D --> E["assert(block.GetHash() == hashGenesisBlock)"]
-    E --> F["ブロック 0 をディスクに書き込み"]
-    F --> G["通常のブロック処理に 進む"]
-    C -->|No| G
-```
+<!-- visual: genesis-blueprint-rebuild -->
 
 `Yes` 経路の分岐は、ノードのライフタイムで一度だけ、すなわち空の DB での初回起動時にのみ実行される。ピアとの接続は不要、PoW 検証も呼ばれない。ブロック 0 のコンセンサスはハッシュ等価性のみ。
 

@@ -128,30 +128,7 @@ But the substance is structural, not accidental: Bitcoin's claim to "digital gol
 
 The discussion of "decentralization" in cryptocurrency frequently conflates two layers that operate on different planes and have different evidence:
 
-```mermaid
-flowchart TB
-    subgraph SYSTEM["Layer 1 — System decentralization"]
-        direction TB
-        S1["No central server"]
-        S2["No single point of failure"]
-        S3["Proof-of-work consensus"]
-        S4["Rules changed only by network agreement"]
-    end
-
-    subgraph PEOPLE["Layer 2 — People / organization decentralization"]
-        direction TB
-        P1["No founder with authority"]
-        P2["No foundation that ships protocol changes"]
-        P3["No CEO, no investors, no marketing arm"]
-        P4["No premine, no developer allocation"]
-        P5["No specific person whose departure stops the project"]
-    end
-
-    SYSTEM -.->|"often claimed,
-    sometimes verifiable"| CLAIM["'Decentralized
-    cryptocurrency'"]
-    PEOPLE -.->|"rarely audited"| CLAIM
-```
+<!-- visual: two-decentralization-audits -->
 
 Layer 1 is technical. It can be inspected: read the consensus code, count the independent full nodes, check that no entity controls the canonical client release. Most major cryptocurrencies satisfy Layer 1 in some form, and most of the public discussion of decentralization is about Layer 1.
 

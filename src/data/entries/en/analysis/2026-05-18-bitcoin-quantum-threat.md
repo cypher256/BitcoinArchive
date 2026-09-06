@@ -70,14 +70,7 @@ The asymmetry is the central technical fact of the topic. The signature side of 
 
 The route from a recovered private key to stolen coins:
 
-```mermaid
-graph TD
-  PK[Public key visible on-chain] --> S[Run Shor on a CRQC]
-  S --> SK[Private key recovered]
-  SK --> SIGN[Sign attacker-spending transaction]
-  SIGN --> NET[Broadcast to Bitcoin network]
-  NET --> DONE[Coins moved before owner notices]
-```
+<!-- visual: quantum-key-duplication -->
 
 The attack only works if the public key has been visible on-chain — a condition that does not hold for every Bitcoin output type.
 

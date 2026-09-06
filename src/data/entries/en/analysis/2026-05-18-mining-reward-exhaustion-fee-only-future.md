@@ -71,16 +71,9 @@ The fee-only regime is not a later interpretation — it is in [Satoshi Nakamoto
 
 The whitepaper passage describes a two-component block reward, with one component scheduled to vanish:
 
-```mermaid
-graph TD
-  CB[Coinbase transaction] --> S[Block subsidy<br/>new issuance]
-  CB --> F[Sum of transaction fees<br/>in the block]
-  S --> M[Miner revenue per block]
-  F --> M
-  S -.->|halves every<br/>210,000 blocks| Z[0 satoshi after<br/>33 halvings ≈ 2140]
-```
+<!-- visual: coinbase-confluence -->
 
-Two design choices fix this outcome:
+Of those two components, only the subsidy is scheduled to disappear -- it halves every 210,000 blocks until integer arithmetic rounds it to zero satoshis after the 33rd halving, around the year 2140. Two design choices fix this outcome:
 
 - **The halving schedule.** Subsidy starts at 50 BTC, halves every 210,000 blocks. This is enforced by `GetBlockSubsidy()` in Bitcoin Core's `validation.cpp` — the integer-arithmetic right-shift after 33 halvings produces a subsidy of zero satoshis. There is no separate "end of issuance" event; the schedule simply runs out of resolution at the satoshi level. The full per-halving cards, supply curve, and price history are on the archive's [Bitcoin chart page](/BitcoinArchive/chart/).
 

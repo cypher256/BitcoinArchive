@@ -38,6 +38,11 @@ import { mount as mountPsbtRelay } from './visuals/psbt-relay.js';
 import { mount as mountLayerFoundation } from './visuals/layer-foundation.js';
 import { mount as mountGossipNetwork } from './visuals/gossip-network.js';
 import { mount as mountHonestyCheckpoints } from './visuals/honesty-checkpoints.js';
+import { mount as mountTwoDecentralizationAudits } from './visuals/two-decentralization-audits.js';
+import { mount as mountSixShieldWall } from './visuals/six-shield-wall.js';
+import { mount as mountGenesisBlueprintRebuild } from './visuals/genesis-blueprint-rebuild.js';
+import { mount as mountTimewarpClockTrick } from './visuals/timewarp-clock-trick.js';
+import { mount as mountQuantumKeyDuplication } from './visuals/quantum-key-duplication.js';
 
 type Drawer = (host: HTMLElement, lang: string) => void;
 
@@ -83,6 +88,11 @@ const VISUAL_DRAWERS: Record<string, Drawer> = {
   'layer-foundation': mountLayerFoundation,
   'gossip-network': mountGossipNetwork,
   'honesty-checkpoints': mountHonestyCheckpoints,
+  'two-decentralization-audits': mountTwoDecentralizationAudits,
+  'six-shield-wall': mountSixShieldWall,
+  'genesis-blueprint-rebuild': mountGenesisBlueprintRebuild,
+  'timewarp-clock-trick': mountTimewarpClockTrick,
+  'quantum-key-duplication': mountQuantumKeyDuplication,
 };
 
 (function () {

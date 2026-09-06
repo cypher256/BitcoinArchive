@@ -70,14 +70,7 @@ translationStatus: complete
 
 復元された秘密鍵からコイン窃取に至る経路:
 
-```mermaid
-graph TD
-  PK[公開鍵が露出済み] --> S[CRQC でショア実行]
-  S --> SK[秘密鍵を復元]
-  SK --> SIGN[攻撃者宛の署名を生成]
-  SIGN --> NET[ネットワークへ送信]
-  NET --> DONE[コインが奪取される]
-```
+<!-- visual: quantum-key-duplication -->
 
 この攻撃が成立するのは、公開鍵がチェーン上に露出済みである場合に限る。そしてこの条件は、ビットコインのすべてのアウトプット形式について成り立つわけではない。
 
