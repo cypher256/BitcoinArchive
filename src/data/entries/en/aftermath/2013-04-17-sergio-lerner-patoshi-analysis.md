@@ -19,6 +19,7 @@ tags:
   - "extranonce"
   - "blockchain-forensics"
   - "historic"
+  - "visualization"
 secondarySources:
   - name: "Bitslog — Satoshi's Fortune: a more accurate figure (April 24, 2013)"
     url: "https://bitslog.com/2013/04/24/satoshi-s-fortune-a-more-accurate-figure/"

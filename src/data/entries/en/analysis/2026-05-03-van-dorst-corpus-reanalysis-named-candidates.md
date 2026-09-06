@@ -26,6 +26,7 @@ tags:
   - "methodology"
   - "dataset"
   - "hal-finney"
+  - "visualization"
 relatedEntries:
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus
   - aftermath/2013-12-05-techcrunch-skye-grey-szabo-stylometric

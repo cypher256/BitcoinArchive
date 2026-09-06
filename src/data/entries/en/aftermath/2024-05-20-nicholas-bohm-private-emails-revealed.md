@@ -18,6 +18,7 @@ tags:
   - "bitcoin-list"
   - "network"
   - "early-adopter"
+  - "lawsuit"
 relatedEntries:
   - "aftermath/2009-01-25-nicholas-bohm-biography"
 secondarySources:

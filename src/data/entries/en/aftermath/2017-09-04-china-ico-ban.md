@@ -16,6 +16,7 @@ tags:
   - "regulation"
   - "exchange-closure"
   - "mining-migration"
+  - "central-banking"
 secondarySources:
   - name: "Library of Congress — Regulation of Cryptocurrency: China"
     url: "https://maint.loc.gov/law/help/cryptocurrency/china.php"

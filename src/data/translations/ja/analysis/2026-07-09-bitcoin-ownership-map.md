@@ -15,6 +15,7 @@ tags:
   - "bitcoin-holdings"
   - "decentralization"
   - "digital-gold"
+  - "visualization"
 secondarySources:
   - name: "River Financial — Who Owns the Most Bitcoin?"
     url: "https://river.com/learn/who-owns-the-most-bitcoin/"

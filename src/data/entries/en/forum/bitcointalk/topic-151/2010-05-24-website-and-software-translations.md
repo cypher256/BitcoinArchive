@@ -12,7 +12,8 @@ participants:
     slug: "satoshi-nakamoto"
 description: "HostFat starts a discussion: Website and software translations."
 isSatoshi: false
-tags: []
+tags:
+  - "translation"
 ---
 
 Can I help to translate the official homepage ( and main others ) into italian language?

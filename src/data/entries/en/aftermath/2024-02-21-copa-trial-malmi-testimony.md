@@ -18,6 +18,7 @@ description: "During Day 13 of COPA v Wright, Martti Malmi testified via video l
 isSatoshi: false
 tags:
   - "copa-trial"
+  - "lawsuit"
   - "email-archive"
   - "court-testimony"
 secondarySources:

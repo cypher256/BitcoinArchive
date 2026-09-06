@@ -38,6 +38,7 @@ relatedEntries:
   - "analysis/2008-10-31-bitcoin-design-lineage"
   - "analysis/2026-05-18-mining-reward-exhaustion-fee-only-future"
   - "analysis/2026-05-23-how-bitcoin-works-visual-glossary"
+  - "analysis/2026-09-06-what-miners-are-actually-racing-to-do"
   - "tweets/adam-back/2026-04-08-response-to-nyt-investigation"
 inlineLinkKeywords:
   - "Hashcash"

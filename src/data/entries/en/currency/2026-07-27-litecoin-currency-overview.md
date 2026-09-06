@@ -16,6 +16,7 @@ tags:
   - "altcoin"
   - "scrypt"
   - "merge-mining"
+  - "visualization"
 secondarySources:
   - name: "Wikipedia — Litecoin"
     url: "https://en.wikipedia.org/wiki/Litecoin"

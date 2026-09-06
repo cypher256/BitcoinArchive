@@ -19,6 +19,7 @@ tags:
   - "altcoin"
   - "block-size-war"
   - "bitcoin-abc"
+  - "visualization"
 secondarySources:
   - name: "Bitcoin ABC — 難易度調整アルゴリズムの刷新を発表 (2017 年 11 月 1 日)"
     url: "https://www.bitcoinabc.org/2017-11-01-DAA/"

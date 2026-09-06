@@ -18,6 +18,7 @@ tags:
   - "copa-trial"
   - "court-testimony"
   - "satoshi-identity"
+  - "lawsuit"
   - "retrospective"
 secondarySources:
   - name: "Protos — Craig Wright trial reveals never-before-seen emails from Satoshi Nakamoto"

@@ -15,6 +15,7 @@ tags:
   - "xrp"
   - "ripple"
   - "altcoin"
+  - "visualization"
 secondarySources:
   - name: "BitcoinTalk — Jed McCaleb, \"Bitcoin without mining\" (May 27, 2011)"
     url: "https://bitcointalk.org/index.php?topic=10193.0"

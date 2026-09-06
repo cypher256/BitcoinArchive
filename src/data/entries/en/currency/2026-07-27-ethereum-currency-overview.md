@@ -17,6 +17,7 @@ tags:
   - "proof-of-stake"
   - "monetary-policy"
   - "governance"
+  - "visualization"
 secondarySources:
   - name: "Ethereum Foundation blog — Launching the Ether Sale (July 22, 2014)"
     url: "https://blog.ethereum.org/2014/07/22/launching-the-ether-sale"

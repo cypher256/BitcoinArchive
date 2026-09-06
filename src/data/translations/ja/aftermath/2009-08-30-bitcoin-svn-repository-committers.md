@@ -22,6 +22,7 @@ tags:
   - "commit-access"
   - "development"
   - "historic"
+  - "visualization"
 secondarySources:
   - name: "BitcoinTalk — List of people who have had commit access to Bitcoin Core"
     url: "https://bitcointalk.org/index.php?topic=1774750.0"

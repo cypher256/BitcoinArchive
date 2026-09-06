@@ -16,6 +16,7 @@ tags:
   - "altcoin"
   - "proof-of-stake"
   - "governance"
+  - "visualization"
 secondarySources:
   - name: "why.cardano.org — プルーフ・オブ・ステークについて"
     url: "https://why.cardano.org/en/introduction/proof-of-stake/"

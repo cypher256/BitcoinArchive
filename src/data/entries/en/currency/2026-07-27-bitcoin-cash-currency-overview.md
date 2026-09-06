@@ -19,6 +19,7 @@ tags:
   - "altcoin"
   - "block-size-war"
   - "bitcoin-abc"
+  - "visualization"
 secondarySources:
   - name: "Bitcoin ABC — announcing the new difficulty adjustment algorithm (November 1, 2017)"
     url: "https://www.bitcoinabc.org/2017-11-01-DAA/"

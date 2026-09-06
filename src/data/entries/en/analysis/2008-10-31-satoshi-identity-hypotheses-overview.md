@@ -37,6 +37,7 @@ isSatoshi: false
 homeOrder: 2
 tags:
   - "satoshi-identity"
+  - "visualization"
 relatedEntries:
   - analysis/2026-08-29-satoshi-bitcoin-reading-guide
   - analysis/2008-10-31-satoshi-nationality-question

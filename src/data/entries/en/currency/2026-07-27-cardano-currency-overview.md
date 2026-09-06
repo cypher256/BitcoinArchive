@@ -16,6 +16,7 @@ tags:
   - "altcoin"
   - "proof-of-stake"
   - "governance"
+  - "visualization"
 secondarySources:
   - name: "why.cardano.org — Proof of stake"
     url: "https://why.cardano.org/en/introduction/proof-of-stake/"

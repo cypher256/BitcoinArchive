@@ -18,6 +18,7 @@ tags:
   - "genesis-block"
   - "disappearance"
   - "historic"
+  - "visualization"
 secondarySources:
   - name: "Satoshi Nakamoto Institute — Complete Works"
     url: "https://satoshi.nakamotoinstitute.org/"

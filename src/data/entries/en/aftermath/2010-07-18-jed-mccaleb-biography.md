@@ -15,6 +15,7 @@ tags:
   - "mt-gox"
   - "ripple"
   - "altcoin"
+  - "exchange"
 secondarySources:
   - name: "Forbes — 'Ripple protocol developer Jed McCaleb on discovering Bitcoin, founding Mt. Gox and launching Stellar' (November 16, 2019)"
     url: "https://www.forbes.com/sites/justinoconnell/2019/11/16/ripple-protocol-developer-jed-mccaleb-on-discovering-bitcoin-founding-mt-gox-and-launching-stellar/"

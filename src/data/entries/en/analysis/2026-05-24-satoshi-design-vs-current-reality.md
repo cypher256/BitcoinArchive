@@ -20,6 +20,7 @@ tags:
   - "scaling"
   - "etf"
   - "explainer"
+  - "visualization"
 inlineLinkKeywords:
   - "design intent"
   - "design drift"

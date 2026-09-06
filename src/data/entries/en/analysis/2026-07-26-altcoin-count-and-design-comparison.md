@@ -29,6 +29,7 @@ tags:
   - "stablecoin"
   - "governance"
   - "memecoin"
+  - "visualization"
 secondarySources:
   - name: "Benzinga — Billy Markus on why supply parameters do not set price (April 2021)"
     url: "https://www.benzinga.com/markets/cryptocurrency/21/04/20675276/dogecoin-creator-defends-meme-cryptos-supply-dont-matter-for-price"

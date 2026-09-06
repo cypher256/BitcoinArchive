@@ -19,6 +19,7 @@ tags:
   - "hashrate"
   - "blockchain-analysis"
   - "51-percent-attack"
+  - "visualization"
 secondarySources:
   - name: "CoinDesk — Whale Alert Identifies 1.125 Million BTC as Satoshi's Stash"
     url: "https://www.coindesk.com/tech/2020/07/20/whale-alert-identifies-1125-million-btc-as-satoshis-stash/"

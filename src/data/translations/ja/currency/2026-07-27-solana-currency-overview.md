@@ -15,6 +15,7 @@ tags:
   - "solana"
   - "altcoin"
   - "proof-of-stake"
+  - "visualization"
 secondarySources:
   - name: "Helius — ソラナの発行率とステーキング利回りの解説"
     url: "https://www.helius.dev/blog/solana-issuance-inflation-schedule"

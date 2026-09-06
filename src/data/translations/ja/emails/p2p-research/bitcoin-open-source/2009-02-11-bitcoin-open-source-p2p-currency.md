@@ -15,6 +15,7 @@ tags:
   - "trust"
   - "double-spending"
   - "cryptographic-proof"
+  - "central-banking"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/p2p-research/threads/17/"

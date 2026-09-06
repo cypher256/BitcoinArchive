@@ -15,6 +15,7 @@ tags:
   - "mt-gox"
   - "ripple"
   - "altcoin"
+  - "exchange"
 secondarySources:
   - name: "Forbes — 「ビットコインとの出会い、マウントゴックス創設、ステラ立ち上げを語るジェド・マケーレブ」 (2019 年 11 月 16 日)"
     url: "https://www.forbes.com/sites/justinoconnell/2019/11/16/ripple-protocol-developer-jed-mccaleb-on-discovering-bitcoin-founding-mt-gox-and-launching-stellar/"

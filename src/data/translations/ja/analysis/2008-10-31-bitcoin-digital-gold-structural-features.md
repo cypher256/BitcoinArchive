@@ -16,6 +16,7 @@ tags:
   - "governance"
   - "decentralization"
   - "digital-gold"
+  - "visualization"
 relatedEntries:
   - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
   - analysis/2008-10-31-satoshi-anonymity-architecture

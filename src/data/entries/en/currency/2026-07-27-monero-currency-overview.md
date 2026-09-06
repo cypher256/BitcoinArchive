@@ -17,6 +17,7 @@ tags:
   - "privacy"
   - "proof-of-work"
   - "monetary-policy"
+  - "visualization"
 secondarySources:
   - name: "Blockonomi — the Bytecoin premine and Spagni's account of it"
     url: "https://blockonomi.com/mysterious-history-of-bytecoin/"

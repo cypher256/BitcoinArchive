@@ -17,6 +17,7 @@ tags:
   - "japan"
   - "european-union"
   - "strategic-bitcoin-reserve"
+  - "central-banking"
 secondarySources:
   - name: "ホワイトハウス — トランプ大統領が戦略ビットコイン準備を設立したことを伝えるファクトシート（2025 年 3 月 6 日）"
     url: "https://www.whitehouse.gov/fact-sheets/2025/03/fact-sheet-president-donald-j-trump-establishes-the-strategic-bitcoin-reserve-and-u-s-digital-asset-stockpile/"

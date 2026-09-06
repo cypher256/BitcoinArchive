@@ -18,6 +18,7 @@ description: "COPA 対ライト裁判 13 日目、マルッティ・マルミが
 isSatoshi: false
 tags:
   - "copa-trial"
+  - "lawsuit"
   - "email-archive"
   - "court-testimony"
 secondarySources:

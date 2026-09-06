@@ -17,6 +17,7 @@ tags:
   - "proof-of-stake"
   - "governance"
   - "monetary-policy"
+  - "visualization"
 secondarySources:
   - name: "Polkadot Wiki — FAQ (genesis under Sudo, the switch to NPoS, Sudo's removal)"
     url: "https://wiki.polkadot.com/general/faq/"

@@ -14,6 +14,7 @@ tags:
   - "exchange-rate"
   - "mining"
   - "electricity-cost"
+  - "visualization"
 secondarySources:
   - name: "Wayback Machine — New Liberty Standard 2009 為替レート（wikifoundry 移行後）"
     url: "https://web.archive.org/web/20131031064421/http://newlibertystandard.wikifoundry.com/page/2009+Exchange+Rate"

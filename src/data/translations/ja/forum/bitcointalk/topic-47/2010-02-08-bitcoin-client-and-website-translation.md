@@ -10,6 +10,8 @@ participants:
     slug: "satoshi-nakamoto"
 description: "サトシ・ナカモトの投稿：「Bitcoin クライアントとウェブサイトの翻訳」。"
 isSatoshi: true
+tags:
+  - "translation"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/48/"

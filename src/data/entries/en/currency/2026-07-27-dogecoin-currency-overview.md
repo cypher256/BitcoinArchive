@@ -18,6 +18,7 @@ tags:
   - "altcoin"
   - "merge-mining"
   - "monetary-policy"
+  - "visualization"
 secondarySources:
   - name: "Dogecoin — repository FAQ (block-reward history)"
     url: "https://github.com/dogecoin/dogecoin/blob/master/doc/FAQ.md"

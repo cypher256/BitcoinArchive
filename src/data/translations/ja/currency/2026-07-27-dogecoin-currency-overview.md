@@ -18,6 +18,7 @@ tags:
   - "altcoin"
   - "merge-mining"
   - "monetary-policy"
+  - "visualization"
 secondarySources:
   - name: "Dogecoin — 公式リポジトリの FAQ（ブロック報酬の推移）"
     url: "https://github.com/dogecoin/dogecoin/blob/master/doc/FAQ.md"

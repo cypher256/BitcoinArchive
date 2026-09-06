@@ -15,6 +15,7 @@ tags:
   - "solana"
   - "altcoin"
   - "proof-of-stake"
+  - "visualization"
 secondarySources:
   - name: "Helius — Solana's issuance rate and staking-yield schedule"
     url: "https://www.helius.dev/blog/solana-issuance-inflation-schedule"

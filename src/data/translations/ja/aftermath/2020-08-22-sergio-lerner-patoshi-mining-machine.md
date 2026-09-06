@@ -16,6 +16,7 @@ tags:
   - "patoshi"
   - "mining"
   - "blockchain-forensics"
+  - "visualization"
 secondarySources:
   - name: "Bitslog — The Well Deserved Fortune of Satoshi Nakamoto (2013)"
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"

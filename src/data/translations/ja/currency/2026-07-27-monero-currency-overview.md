@@ -17,6 +17,7 @@ tags:
   - "privacy"
   - "proof-of-work"
   - "monetary-policy"
+  - "visualization"
 secondarySources:
   - name: "Blockonomi — Bytecoin の事前採掘とスパーニによる説明"
     url: "https://blockonomi.com/mysterious-history-of-bytecoin/"

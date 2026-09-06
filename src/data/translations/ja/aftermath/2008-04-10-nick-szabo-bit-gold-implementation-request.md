@@ -16,6 +16,7 @@ isSatoshi: false
 tags:
   - "bit-gold"
   - "pre-bitcoin"
+  - "blog"
 secondarySources:
   - name: "Bitcoin Magazine — The Genesis Files: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin"
     url: "https://bitcoinmagazine.com/culture/genesis-files-bit-gold-szabo-was-inches-away-inventing-bitcoin"

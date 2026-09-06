@@ -20,6 +20,7 @@ tags:
   - "scaling"
   - "etf"
   - "explainer"
+  - "visualization"
 inlineLinkKeywords:
   - "設計意図"
   - "設計乖離"

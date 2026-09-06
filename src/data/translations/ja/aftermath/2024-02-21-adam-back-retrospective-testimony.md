@@ -18,6 +18,7 @@ tags:
   - "hashcash"
   - "copa-trial"
   - "regret"
+  - "lawsuit"
   - "retrospective"
 secondarySources:
   - name: "COPA trial witness testimony"

@@ -18,6 +18,7 @@ tags:
   - "cryonics"
   - "alcor"
   - "als"
+  - "interview"
 secondarySources:
   - name: "Cryonics Magazine PDF — 2nd Quarter 2019"
     url: "https://cryonicsarchive.org/docs/cryonics-magazine-2019-02.pdf"

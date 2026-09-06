@@ -18,6 +18,7 @@ tags:
   - "timestamp"
   - "mystery"
   - "bitcoin-launch"
+  - "visualization"
 secondarySources:
   - name: "CCN — Bitcoin Genesis Block 5-Day Mystery"
     url: "https://www.ccn.com/news/crypto/bitcoin-genesis-block-5-day-mystery-trillion-dollar-asset/"

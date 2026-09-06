@@ -19,6 +19,7 @@ tags:
   - "security"
   - "soft-fork"
   - "historic"
+  - "visualization"
 secondarySources:
   - name: "Bitcoin Wiki — Value overflow incident"
     url: "https://en.bitcoin.it/wiki/Value_overflow_incident"

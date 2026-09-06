@@ -17,6 +17,7 @@ tags:
   - "japan"
   - "european-union"
   - "strategic-bitcoin-reserve"
+  - "central-banking"
 secondarySources:
   - name: "The White House — Fact Sheet: President Trump establishes the Strategic Bitcoin Reserve (March 6, 2025)"
     url: "https://www.whitehouse.gov/fact-sheets/2025/03/fact-sheet-president-donald-j-trump-establishes-the-strategic-bitcoin-reserve-and-u-s-digital-asset-stockpile/"

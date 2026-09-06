@@ -18,6 +18,7 @@ tags:
   - "bitcoin-list"
   - "network"
   - "early-adopter"
+  - "lawsuit"
 secondarySources:
   - name: "Hugging Face — COPA v Wright raw trial documents"
     url: "https://huggingface.co/datasets/YL95/copa_v_wright_CPT_raw"

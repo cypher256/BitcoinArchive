@@ -17,6 +17,7 @@ tags:
   - "proof-of-stake"
   - "monetary-policy"
   - "governance"
+  - "visualization"
 secondarySources:
   - name: "Ethereum Foundation ブログ — クラウドセールの告知 (2014 年 7 月 22 日)"
     url: "https://blog.ethereum.org/2014/07/22/launching-the-ether-sale"

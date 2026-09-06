@@ -16,6 +16,7 @@ tags:
   - "fork"
   - "governance"
   - "51-percent-attack"
+  - "visualization"
 secondarySources:
   - name: "PR Newswire — nChain がオリジナルプロトコルの復元を発表 (2018 年 8 月 16 日)"
     url: "https://www.prnewswire.com/news-releases/bitcoin-sv-full-node-implementation-launched-to-fully-restore-original-bitcoin-protocol-300698140.html"

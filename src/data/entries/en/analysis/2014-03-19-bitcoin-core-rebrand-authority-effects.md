@@ -24,6 +24,7 @@ tags:
   - "naming"
   - "scaling"
   - "bitcoin-foundation"
+  - "bitcoin-qt"
 secondarySources:
   - name: "bitcoin.org — Bitcoin Core 0.9.0 release notes"
     url: "https://bitcoin.org/en/release/v0.9.0"

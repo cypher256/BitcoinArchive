@@ -30,6 +30,7 @@ tags:
   - "stablecoin"
   - "governance"
   - "memecoin"
+  - "visualization"
 secondarySources:
   - name: "Benzinga — 供給の設定値は価格を決めないとするビリー・マーカスの発言 (2021 年 4 月)"
     url: "https://www.benzinga.com/markets/cryptocurrency/21/04/20675276/dogecoin-creator-defends-meme-cryptos-supply-dont-matter-for-price"

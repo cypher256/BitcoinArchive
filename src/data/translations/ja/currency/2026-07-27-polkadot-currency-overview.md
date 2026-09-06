@@ -17,6 +17,7 @@ tags:
   - "proof-of-stake"
   - "governance"
   - "monetary-policy"
+  - "visualization"
 secondarySources:
   - name: "Polkadot 公式ウィキ — ジェネシスからガバナンス移行までの経緯 (プルーフ・オブ・オーソリティでの起動、NPoS への移行、Sudo 除去)"
     url: "https://wiki.polkadot.com/general/faq/"

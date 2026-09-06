@@ -17,6 +17,7 @@ tags:
   - "fork"
   - "governance"
   - "51-percent-attack"
+  - "visualization"
 secondarySources:
   - name: "PR Newswire — nChain announces Bitcoin SV full-node client to restore the original Bitcoin protocol (August 16, 2018)"
     url: "https://www.prnewswire.com/news-releases/bitcoin-sv-full-node-implementation-launched-to-fully-restore-original-bitcoin-protocol-300698140.html"

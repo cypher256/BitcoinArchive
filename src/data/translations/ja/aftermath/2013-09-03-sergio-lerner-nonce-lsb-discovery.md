@@ -17,6 +17,7 @@ tags:
   - "mining"
   - "blockchain-forensics"
   - "extranonce"
+  - "visualization"
 secondarySources:
   - name: "Bitslog — Satoshi's Machine (September 4, 2013)"
     url: "https://bitslog.com/2013/09/04/satoshi-machine-one-mystery-is-solved-and-another-opens/"
