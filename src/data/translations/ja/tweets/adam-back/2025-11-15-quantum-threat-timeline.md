@@ -17,7 +17,6 @@ tags:
   - "cryptography"
   - "NIST"
   - "SLH-DSA"
-  - "tweet"
 relatedEntries:
   - aftermath/2025-11-15-adam-back-quantum-threat-timeline
 translationStatus: complete

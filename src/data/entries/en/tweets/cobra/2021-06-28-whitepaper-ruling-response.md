@@ -16,7 +16,6 @@ tags:
   - "craig-wright"
   - "bitcoin-org"
   - "whitepaper"
-  - "tweet"
 relatedEntries:
   - aftermath/2021-06-28-cobra-response-to-whitepaper-ruling
   - aftermath/2021-06-28-wright-v-cobra-whitepaper-lawsuit

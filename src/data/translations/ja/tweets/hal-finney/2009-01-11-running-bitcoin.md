@@ -13,7 +13,6 @@ description: "Bitcoin v0.1 が公開された日にハル・フィニーが投�
 isSatoshi: false
 tags:
   - "running-bitcoin"
-  - "tweet"
   - "historic"
 relatedEntries:
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet

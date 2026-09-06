@@ -16,7 +16,6 @@ tags:
   - "financial-blockade"
   - "donations"
   - "censorship-resistance"
-  - "tweet"
 relatedEntries:
   - aftermath/2011-06-14-wikileaks-accepts-bitcoin
 ---

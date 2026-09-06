@@ -13,7 +13,6 @@ description: "Hal Finney's tweet, the first known reference to running Bitcoin f
 isSatoshi: false
 tags:
   - "running-bitcoin"
-  - "tweet"
   - "historic"
 relatedEntries:
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet

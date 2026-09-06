@@ -15,7 +15,6 @@ tags:
   - "adam-back"
   - "cypherpunk"
   - "satoshi-identity"
-  - "tweet"
 relatedEntries:
   - aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation
   - analysis/2026-04-08-adam-back-satoshi-identity-hypothesis
