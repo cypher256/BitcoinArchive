@@ -67,78 +67,9 @@ const structuredData = {
     </ul>
 </BaseLayout>
 
-<script is:inline>
-(function() {
-  var STORAGE_KEY = 'sources-sort';
-  var list = document.getElementById('sort-list');
-  var btns = document.querySelectorAll('.sort-btn');
-  if (!list || !btns.length) return;
-
-  function getLabel(btn) {
-    return btn.textContent.replace(/\s*[↑↓]$/, '');
-  }
-
-  function applySort(key, order) {
-    var items = Array.from(list.querySelectorAll('li'));
-    items.sort(function(a, b) {
-      if (key === 'name') {
-        var an = a.dataset.name || ''; var bn = b.dataset.name || '';
-        return order === 'asc' ? an.localeCompare(bn) : bn.localeCompare(an);
-      }
-      var ac = parseInt(a.dataset.count) || 0; var bc = parseInt(b.dataset.count) || 0;
-      return order === 'asc' ? ac - bc : bc - ac;
-    });
-    items.forEach(function(item) { list.appendChild(item); });
-  }
-
-  function activateBtn(key, order) {
-    btns.forEach(function(b) { b.classList.remove('active'); });
-    btns.forEach(function(b) {
-      if (b.dataset.sort === key) {
-        b.classList.add('active');
-        b.dataset.order = order;
-        b.textContent = getLabel(b) + (order === 'asc' ? ' ↑' : ' ↓');
-      }
-    });
-  }
-
-  try {
-    var saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY));
-    if (saved && saved.key) {
-      activateBtn(saved.key, saved.order);
-      applySort(saved.key, saved.order);
-    }
-  } catch(e) {}
-
-  btns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var key = btn.dataset.sort;
-      var order = btn.dataset.order;
-      if (btn.classList.contains('active')) {
-        order = order === 'asc' ? 'desc' : 'asc';
-        btn.dataset.order = order;
-      } else {
-        btns.forEach(function(b) { b.classList.remove('active'); });
-        btn.classList.add('active');
-      }
-      btn.textContent = getLabel(btn) + (order === 'asc' ? ' ↑' : ' ↓');
-      applySort(key, order);
-      try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify({key: key, order: order})); } catch(e) {}
-    });
-  });
-
-  var filterInput = document.getElementById('filter-input');
-  if (filterInput) {
-    filterInput.addEventListener('input', function() {
-      var q = filterInput.value.toLowerCase();
-      var items = list.querySelectorAll('li');
-      items.forEach(function(item) {
-        var haystack = item.dataset.filter || (item.dataset.name || '').toLowerCase();
-        item.style.display = haystack.indexOf(q) !== -1 ? '' : 'none';
-      });
-    });
-  }
-})();
+<script>
+  import { initCategoryList } from '../../scripts/list-sort';
+  initCategoryList('sort-list', 'sources-sort');
 </script>
 
 <style>

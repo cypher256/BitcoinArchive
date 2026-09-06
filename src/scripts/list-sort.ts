@@ -141,3 +141,94 @@ export function initListFilter(listId: string, inputId: string, onUpdate?: (visi
     if (onUpdate) onUpdate(visible);
   });
 }
+
+// Shared client sort + filter for a category-INDEX page (/tags, /types,
+// /sources, /participants, /keywords -- the page listing the categories
+// themselves with counts, as distinct from a category's own detail page
+// listing entries, which uses initListSort/initListFilter above and has
+// a different DOM shape, .entry-card).
+//
+// Operates on `<li data-name data-count [data-filter]>` rows: data-name
+// drives both the alphabetical sort and the filter's default haystack;
+// an optional data-filter overrides the filter haystack when a richer
+// search text is wanted (the /sources page also matches its
+// description). Every one of these five pages had this exact logic
+// pasted in as a per-page <script is:inline> block (identical except
+// for the sessionStorage key) until they were consolidated here.
+//
+// data-name must already be locale-correct: for JA pages whose visible
+// label is a translation of an English slug (tags, types, sources), this
+// must be the translated text a JA reader actually sees and would type
+// (e.g. "初心者ガイド", not "beginner-guide") -- this function only
+// sorts/matches whatever text the page hands it, so it can't fix a page
+// that passes the wrong one.
+export function initCategoryList(listId: string, storageKey: string) {
+  var list = document.getElementById(listId);
+  var btns = Array.prototype.slice.call(document.querySelectorAll('.sort-btn'));
+  if (!list || !btns.length) return;
+
+  function getLabel(btn: any) {
+    return btn.textContent.replace(/\s*[↑↓]$/, '');
+  }
+
+  function applySort(key: string, order: string) {
+    var items = Array.prototype.slice.call(list!.querySelectorAll('li'));
+    items.sort(function(a: any, b: any) {
+      if (key === 'name') {
+        var an = a.dataset.name || ''; var bn = b.dataset.name || '';
+        return order === 'asc' ? an.localeCompare(bn) : bn.localeCompare(an);
+      }
+      var ac = parseInt(a.dataset.count) || 0; var bc = parseInt(b.dataset.count) || 0;
+      return order === 'asc' ? ac - bc : bc - ac;
+    });
+    items.forEach(function(item: any) { list!.appendChild(item); });
+  }
+
+  function activateBtn(key: string, order: string) {
+    btns.forEach(function(b: any) { b.classList.remove('active'); });
+    btns.forEach(function(b: any) {
+      if (b.dataset.sort === key) {
+        b.classList.add('active');
+        b.dataset.order = order;
+        b.textContent = getLabel(b) + (order === 'asc' ? ' ↑' : ' ↓');
+      }
+    });
+  }
+
+  try {
+    var saved = JSON.parse(sessionStorage.getItem(storageKey) || 'null');
+    if (saved && saved.key) {
+      activateBtn(saved.key, saved.order);
+      applySort(saved.key, saved.order);
+    }
+  } catch (e) {}
+
+  btns.forEach(function(btn: any) {
+    btn.addEventListener('click', function() {
+      var key = btn.dataset.sort;
+      var order = btn.dataset.order;
+      if (btn.classList.contains('active')) {
+        order = order === 'asc' ? 'desc' : 'asc';
+        btn.dataset.order = order;
+      } else {
+        btns.forEach(function(b: any) { b.classList.remove('active'); });
+        btn.classList.add('active');
+      }
+      btn.textContent = getLabel(btn) + (order === 'asc' ? ' ↑' : ' ↓');
+      applySort(key, order);
+      try { sessionStorage.setItem(storageKey, JSON.stringify({ key: key, order: order })); } catch (e) {}
+    });
+  });
+
+  var filterInput = document.getElementById('filter-input') as HTMLInputElement | null;
+  if (filterInput) {
+    filterInput.addEventListener('input', function() {
+      var q = filterInput!.value.toLowerCase();
+      var items = list!.querySelectorAll('li');
+      items.forEach(function(item: any) {
+        var haystack = item.dataset.filter || (item.dataset.name || '').toLowerCase();
+        item.style.display = haystack.indexOf(q) !== -1 ? '' : 'none';
+      });
+    });
+  }
+}
