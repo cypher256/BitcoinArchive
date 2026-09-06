@@ -877,12 +877,22 @@ interface ChartJsonData {
   .chart-container {
     position: relative;
     width: 100%;
+    /* Matches draw()'s H constant below so the container never collapses
+       to 0 during the container.innerHTML = '' + rebuild each draw() call
+       does. Without this, every redraw (up to 60/sec during the reveal
+       animation, or on any resize -- including a mobile browser's address
+       bar hiding/showing mid-scroll) transiently shrinks the whole page's
+       scrollHeight by this chart's height, which the browser clamps the
+       scroll position against -- felt as the page snapping back / being
+       unable to reach the bottom while scrolling past this chart. */
+    min-height: 500px;
     border: 1px solid var(--color-border);
     border-radius: 4px;
     background: var(--color-bg);
     overflow: hidden;
   }
   .chart-container.mini {
+    min-height: 180px;
     border-radius: 6px;
   }
   .chart-container :global(svg) {
