@@ -474,7 +474,11 @@ function detectSpeakerWithoutQuoteMarker(body, quotes = []) {
     // no matching `quotes[]` entry, one nesting level down) went
     // undetected archive-wide until a 2026-07-13 manual audit found
     // them (see STYLE_GUIDE_CORE.md "Every source quote must belong to an
-    // attribution chain").
+    // attribution chain"). The audit found 3 correspondence/mailing-list
+    // entries carrying unattributed nested quotes this way -- one,
+    // `.../bitcoin-p2p-e-cash-paper-dillinger-2.md`, with 5 separate
+    // ungapped Ray Dillinger excerpts -- despite having gone through the
+    // archive-wide "nested chip" migration.
     let coveredByLocalChain = false;
     for (let j = i - 1; j >= 0; j--) {
       const r = lines[j];

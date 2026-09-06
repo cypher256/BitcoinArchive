@@ -1256,11 +1256,10 @@ marker is opening a NEW, deeper nested source that the shallower
 chain's own `<!-- quote: qN -->` never covered, and must still be
 flagged. Before this depth check existed (added 2026-07-13), any
 earlier quote marker at ANY shallower depth silently covered every
-deeper speaker shift that followed — the exact shape of the gap that
-let 3 correspondence/mailing-list entries carry unattributed nested
-quotes (one, `.../bitcoin-p2p-e-cash-paper-dillinger-2.md`, with 5
-separate ungapped Ray Dillinger excerpts) despite having gone through
-the archive-wide "nested chip" migration. The legacy-pattern list
+deeper speaker shift that followed, letting real gaps go undetected
+archive-wide — see the depth-check comment in
+`scripts/check-quotes.mjs` for the specific entries this let through.
+The legacy-pattern list
 (`NAME wrote:`, `NAME writes:`, `Quoting NAME:`, etc. — see
 `STYLE_GUIDE_JA.md` § "構造化された引用メタデータ" for the full
 table) is a helpful secondary signal but can never be exhaustive: it

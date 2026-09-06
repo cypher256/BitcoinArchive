@@ -397,15 +397,15 @@ hex value:
 | `--mermaid-emphasis-yellow-bg` | PoW / warning-style emphasis |
 | `--mermaid-note-bg` | `stateDiagram-v2` note background |
 
-Mermaid's `style` directive only accepts literal hex/color values, not
-CSS custom properties, so `src/lib/rehype-mermaid-themer.mjs`'s
-`COLOR_SUBSTITUTIONS` table rewrites specific hex codes (`#e8f4fd`,
-`#ff99ff`/`#f9f`, `#ffff99`/`#ff9`, `#fff5ad`) to the corresponding
-`var(--mermaid-*)` token in the build-time SVG output. A color chosen
-outside this table renders literally in both themes, including the
-pastel-background-plus-light-text combination that is unreadable in
-dark mode (`--mermaid-text` tracks the theme; a hardcoded `style fill`
-does not).
+A color chosen outside the `COLOR_SUBSTITUTIONS` table renders
+literally in both themes, including the pastel-background-plus-
+light-text combination that is unreadable in dark mode
+(`--mermaid-text` tracks the theme; a hardcoded `style fill` does
+not). Mermaid's `style` directive only accepts literal hex/color
+values, not CSS custom properties, so
+`src/lib/rehype-mermaid-themer.mjs`'s `COLOR_SUBSTITUTIONS` table is
+what maps a chosen color literal to the theme token at build time —
+see that table's own comments for the exact mapping.
 
 Introducing a genuinely new emphasis color requires adding both the
 CSS token (`src/styles/global.css`, all three `:root` /
@@ -464,11 +464,10 @@ flowchart LR
 The `<nodeId>` is the node's own identifier as written in the
 flowchart source (`A`, `B`, `C` above) — not any part of the
 rendered label text. The plugin matches it against the node ID
-Mermaid embeds in the rendered SVG element's `id` attribute
-(`mermaid-<diagramIdx>-flowchart-<nodeId>-<idx>`), recovered by
-greedily stripping only Mermaid's own trailing `-<index>` — a node ID
-that itself ends in `-<digits>` (e.g. `step-1`) is still recovered
-intact, confirmed against real Mermaid 11.14 output.
+Mermaid embeds in the rendered SVG element's `id` attribute; see
+`src/lib/rehype-mermaid-link.mjs`'s own JSDoc header for how it
+recovers that ID (including the edge case of a node ID that itself
+ends in `-<digits>`, e.g. `step-1`).
 
 **Supported diagram types**: `flowchart`, `graph`, `gantt`, and
 `timeline`. To support another type, add a `HANDLERS` entry in the
