@@ -47,7 +47,7 @@ inlineLinkKeywords:
 
 ![A dark navy illustration of a torn profile card reading "Japanese, Japan, 1975" beside three clock faces set to different hours, each ringed in a different color, with a faint silhouette map showing no fixed location.](/BitcoinArchive/images/analysis/2008-10-31-satoshi-nationality-question-hero.png)
 
-*New to the identity question? Start with [who Satoshi might be](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), then come back here for the narrower question of nationality alone.*
+*[Context: New to the identity question? Start with [who Satoshi might be](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/), then come back here for the narrower question of nationality alone.]*
 
 One line in one unverifiable profile is the entire documentary basis for calling Satoshi Nakamoto Japanese. Everything else in the record — the language, the clock, the one candidate who actually is Japanese — has to be checked against that single claim, and the three checks do not agree with each other either.
 

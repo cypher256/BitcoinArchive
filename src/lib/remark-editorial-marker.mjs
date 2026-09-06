@@ -2,10 +2,9 @@
  * remark-editorial-marker.mjs — Editor-note marker classifier
  *
  * Transforms paragraphs that consist of a single italic+brackets editorial
- * marker into a labeled <aside> with explicit attribution to Bitcoin
- * Institute. The bracket characters and the "Editor:" / "編者注：" prefix
- * are stripped from the visible body and replaced with a structured label
- * span.
+ * marker into a labeled <aside>. The bracket characters and the
+ * "Editor:" / "編者注：" prefix are stripped from the visible body and
+ * replaced with a structured label span.
  *
  * Recognizes (canonical forms only):
  *   *[Editor: ...]*    -> class editorial-note editorial-note--editor
@@ -15,9 +14,23 @@
  *
  * Output (per paragraph):
  *   <aside class="editorial-note editorial-note--editor">
- *     <span class="editorial-note-label">📝 Editor's note (Bitcoin Institute)</span>
+ *     <span class="editorial-note-label">📝 Editor's note</span>
  *     ...body text with inline links preserved...
  *   </aside>
+ *
+ * The "(Bitcoin Institute)" attribution suffix is included only on
+ * primary-source entries (correspondence / mailing-list / forum-post /
+ * whitepaper / bip / court-document / tweet / web-document), where the
+ * surrounding body
+ * is a verbatim archived record and the label must distinguish this note
+ * as the site's commentary rather than part of that record. Editorial
+ * entries (article / analysis / biography / design / currency / guide)
+ * are themselves Bitcoin Institute's own composed prose throughout, so
+ * re-attributing a single inline note inside them is redundant self-
+ * reference and the suffix is omitted there (git history: the suffix
+ * was introduced 2026-04-26 specifically to solve the primary-source
+ * disambiguation problem, before `guide`/`currency` or most `analysis`
+ * inline notes existed).
  *
  * Markers must occupy a paragraph by themselves. Inline links and other
  * inline nodes inside the marker body are preserved.
@@ -34,6 +47,11 @@ const PREFIXES = [
   { test: /^\[補足[：:]/,    strip: /^\[補足[：:]/,    kind: 'context', lang: 'ja' },
 ];
 
+export const PRIMARY_SOURCE_TYPES = new Set([
+  'correspondence', 'mailing-list', 'forum-post', 'whitepaper', 'bip',
+  'court-document', 'tweet', 'web-document',
+]);
+
 export const LABELS = {
   'editor:en':  "📝 Editor's note (Bitcoin Institute)",
   'editor:ja':  '📝 編者注（ビットコイン・インスティテュート）',
@@ -41,8 +59,17 @@ export const LABELS = {
   'context:ja': '📋 補足（ビットコイン・インスティテュート）',
 };
 
+export const LABELS_EDITORIAL = {
+  'editor:en':  '📝 Editor\'s note',
+  'editor:ja':  '📝 編者注',
+  'context:en': '📋 Context',
+  'context:ja': '📋 補足',
+};
+
 export function remarkEditorialMarker() {
-  return function transformer(tree) {
+  return function transformer(tree, file) {
+    const entryType = file?.data?.astro?.frontmatter?.type;
+    const labels = PRIMARY_SOURCE_TYPES.has(entryType) ? LABELS : LABELS_EDITORIAL;
     visit(tree, 'paragraph', (node) => {
       if (!node.children || node.children.length !== 1) return;
       const em = node.children[0];
@@ -63,7 +90,7 @@ export function remarkEditorialMarker() {
       last.value = last.value.replace(/\]\s*$/, '');
 
       const labelKey = `${matched.kind}:${matched.lang}`;
-      const labelText = LABELS[labelKey];
+      const labelText = labels[labelKey];
 
       // Convert the (now bracket-less) emphasis children directly to hast,
       // and prepend a structured <span class="editorial-note-label">. We use

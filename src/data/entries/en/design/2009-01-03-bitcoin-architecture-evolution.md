@@ -113,7 +113,7 @@ flowchart LR
 | **Initial sync** | Sequential: one block at a time | Headers-first: parallel block download | v0.10 |
 | **Eclipse resistance** | Minimal | Outbound rotation, diverse eviction, anchor peers, block-relay-only peers | v19+ |
 
-*Detailed treatment: [L1 #1 — P2P network design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-p2p-network-design/)*
+See [L1 #1 — P2P network design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-p2p-network-design/) for the full design-document treatment.
 
 ## 3. Transaction layer
 
@@ -150,7 +150,7 @@ flowchart LR
 | **Replace-by-Fee** | Not implemented; first-seen | Full RBF default | BIP 125 (v0.12 opt-in; v24 option added; v28 default) |
 | **Coin selection** | Simple largest-first | BnB + knapsack + single-random-draw; waste metric | v27+ |
 
-*Detailed treatment: [L1 #2 — Transaction design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/)*
+See [L1 #2 — Transaction design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/) for the full design-document treatment.
 
 ## 4. Block and chain layer
 
@@ -183,7 +183,7 @@ flowchart LR
 | **Coinbase data** | Arbitrary up to 100 bytes | BIP 34: block height prefix required | BIP 34 (2013) |
 | **Sigop limit** | No limit in v0.1; 20,000 added 2010 | 80,000 per block (weight-adjusted); tapscript counts differently | BIP 141, 342 |
 
-*Detailed treatment: [L1 #3 — Block and chain design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-block-chain-design/)*
+See [L1 #3 — Block and chain design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-block-chain-design/) for the full design-document treatment.
 
 ## 5. Consensus layer
 
@@ -218,7 +218,7 @@ flowchart LR
 | **Timestamp rule** | Must exceed the median of the previous 11 blocks (median-time-past, present since v0.1) | Same acceptance rule; BIP 113 extends MTP to lock-time evaluation | BIP 113 |
 | **Checkpoints** | None in v0.1; hardcoded checkpoints added July 2010 (v0.3.2) | `assumevalid` replaces most checkpoint functionality | v0.14+ |
 
-*Detailed treatment: [L1 #4 — Consensus design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/)*
+See [L1 #4 — Consensus design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/) for the full design-document treatment.
 
 ## 6. Monetary and incentive layer
 
@@ -250,7 +250,7 @@ flowchart LR
 | **Block template** | Internal miner; trivial ordering | `getblocktemplate` (BIP 22/23); fee-rate sorted | BIP 22, 23 |
 | **Witness discount** | Does not exist | Witness bytes at 1/4 weight | BIP 141 |
 
-*Detailed treatment: [L1 #5 — Monetary design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/)*
+See [L1 #5 — Monetary design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-monetary-design/) for the full design-document treatment.
 
 ## 7. Cryptography layer
 
@@ -289,7 +289,7 @@ flowchart LR
 | **Hash functions** | SHA-256d/RIPEMD-160 via OpenSSL; mining SHA-256 via bundled Crypto++ | Same algorithms; internal with hardware acceleration (SHA-NI, ARMv8-A) | — |
 | **Sighash algorithm** | Legacy sighash (quadratic in inputs) | BIP 143 (SegWit v0, linear) + BIP 341 (Taproot, epoch-tagged) | BIP 143, 341 |
 
-*Detailed treatment: [L1 #6 — Cryptography design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-cryptography-design/)*
+See [L1 #6 — Cryptography design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-cryptography-design/) for the full design-document treatment.
 
 ## 8. Storage layer
 
@@ -323,7 +323,7 @@ flowchart LR
 | **assumeUTXO** | Not available | Snapshot-based bootstrap with background verification | v27+ |
 | **Disk size** | Negligible (chain was tiny) | ~650+ GB archival; ~10 GB pruned; ~7 GB coins DB | — |
 
-*Detailed treatment: [L1 #7 — Storage design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-storage-design/)*
+See [L1 #7 — Storage design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-storage-design/) for the full design-document treatment.
 
 ## 9. Wallet and interface layer
 
@@ -360,7 +360,7 @@ flowchart LR
 | **Interfaces** | None at launch; basic JSON-RPC added shortly after | JSON-RPC (full), REST (read-only), ZMQ (push notifications) | — |
 | **Process model** | Monolithic (wallet + node + miner + GUI) | Modular binaries: `bitcoind`, `bitcoin-wallet`, `bitcoin-qt`; runtime process separation experimental | v27+ |
 
-*Detailed treatment: [L1 #8 — Wallet design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-wallet-design/)*
+See [L1 #8 — Wallet design](/BitcoinArchive/entries/design/2009-01-03-bitcoin-wallet-design/) for the full design-document treatment.
 
 ## 10. Structural migration timeline
 

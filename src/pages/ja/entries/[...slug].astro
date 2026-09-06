@@ -23,7 +23,7 @@ import MessageBlock from '../../../components/MessageBlock.astro';
 import { resolveThreadId, deriveThreadTitle } from '../../../data/threads';
 import { renderEditorNote } from '../../../lib/editor-note';
 import { loadDefaultJapaneseParser } from 'budoux';
-import { LABELS as EDITORIAL_LABELS } from '../../../lib/remark-editorial-marker.mjs';
+import { LABELS as EDITORIAL_LABELS, LABELS_EDITORIAL, PRIMARY_SOURCE_TYPES } from '../../../lib/remark-editorial-marker.mjs';
 import gitDates from '../../../data/git-dates.json';
 import ChartEmbedRuntime from '../../../components/ChartEmbedRuntime.astro';
 import VisualEmbedRuntime from '../../../components/VisualEmbedRuntime.astro';
@@ -226,7 +226,7 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
   sidebarCurrentType={entry.data.type}
 >
   <!-- Every entry type gets the sidebar TOC, not just editorial types:
-       TocNav self-hides when its target has fewer than two ## headings (all 7
+       TocNav self-hides when its target has fewer than two ## headings (all 6
        non-bip/whitepaper primary-source types), so there is no
        empty-box case -- the category widget BaseLayout always adds
        still carries its own value on those pages. -->
@@ -288,7 +288,7 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
 
     {entry.data.editorNote && (
       <aside class="editorial-note editorial-note--editor">
-        <span class="editorial-note-label">{EDITORIAL_LABELS['editor:ja']}</span>
+        <span class="editorial-note-label">{(PRIMARY_SOURCE_TYPES.has(entry.data.type) ? EDITORIAL_LABELS : LABELS_EDITORIAL)['editor:ja']}</span>
         <span class="editorial-note-body" set:html={renderEditorNote(entry.data.editorNote)}></span>
       </aside>
     )}

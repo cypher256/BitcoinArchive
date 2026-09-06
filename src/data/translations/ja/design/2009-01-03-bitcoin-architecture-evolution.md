@@ -114,7 +114,7 @@ flowchart LR
 | **初期同期** | 逐次: ブロックを 1 つずつ | ヘッダー優先: 並列ブロックダウンロード | v0.10 |
 | **日食攻撃耐性** | 最小限 | アウトバウンドローテーション、多様な追い出し、アンカーピア、ブロックリレー専用ピア | v19 以降 |
 
-*詳細: [L1 #1「P2P ネットワーク設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/)*
+詳細は [L1 #1「P2P ネットワーク設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-p2p-network-design/) を参照。
 
 ## 3. トランザクション層
 
@@ -151,7 +151,7 @@ flowchart LR
 | **手数料置換** | 未実装; 先着順 | 完全 RBF がデフォルト | BIP 125（v0.12 任意選択; v24 オプション追加; v28 デフォルト） |
 | **コイン選択** | 単純な最大額優先 | BnB + ナップサック + 単一ランダム抽選; 無駄指標 | v27 以降 |
 
-*詳細: [L1 #2「トランザクション設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)*
+詳細は [L1 #2「トランザクション設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/) を参照。
 
 ## 4. ブロックとチェーン層
 
@@ -184,7 +184,7 @@ flowchart LR
 | **コインベースデータ** | 最大 100 バイトの任意データ | BIP 34: ブロック高の接頭辞が必須 | BIP 34（2013） |
 | **署名操作制限** | v0.1 では制限なし; 2010 年に 20,000 追加 | ブロックあたり 80,000（ウェイト調整済み）; Tapscript のカウント方法は異なる | BIP 141、342 |
 
-*詳細: [L1 #3「ブロック・チェーン設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)*
+詳細は [L1 #3「ブロック・チェーン設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/) を参照。
 
 ## 5. コンセンサス層
 
@@ -219,7 +219,7 @@ flowchart LR
 | **タイムスタンプルール** | 直前 11 ブロックの中央値（median-time-past）より大きい（v0.1 から存在） | 同一の受理ルール; BIP 113 が MTP をロックタイム評価にも拡張 | BIP 113 |
 | **チェックポイント** | v0.1 にはなし; 2010 年 7 月（v0.3.2）にハードコードされたチェックポイントを追加 | `assumevalid` がチェックポイント機能の大部分を置換 | v0.14 以降 |
 
-*詳細: [L1 #4「コンセンサス設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)*
+詳細は [L1 #4「コンセンサス設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/) を参照。
 
 ## 6. 貨幣・インセンティブ層
 
@@ -251,7 +251,7 @@ flowchart LR
 | **ブロックテンプレート** | 内部マイナー; 素朴な順序 | `getblocktemplate`（BIP 22/23）; 手数料率順ソート | BIP 22、23 |
 | **Witness ディスカウント** | 存在しない | Witness バイトは 1/4 ウェイト | BIP 141 |
 
-*詳細: [L1 #5「貨幣設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)*
+詳細は [L1 #5「貨幣設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/) を参照。
 
 ## 7. 暗号層
 
@@ -290,7 +290,7 @@ flowchart LR
 | **ハッシュ関数** | SHA-256d、RIPEMD-160 は OpenSSL 経由; 採掘 SHA-256 は同梱 Crypto++ | 同一アルゴリズム; ハードウェアアクセラレーション付き内部実装（SHA-NI、ARMv8-A） | — |
 | **署名ハッシュアルゴリズム** | レガシー署名ハッシュ（入力数に対して二次的） | BIP 143（SegWit v0、線形）+ BIP 341（Taproot、エポックタグ付き） | BIP 143、341 |
 
-*詳細: [L1 #6「暗号設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/)*
+詳細は [L1 #6「暗号設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-cryptography-design/) を参照。
 
 ## 8. ストレージ層
 
@@ -324,7 +324,7 @@ flowchart LR
 | **assumeUTXO** | なし | スナップショットベースのブートストラップ、バックグラウンド検証付き | v27 以降 |
 | **ディスクサイズ** | 無視できる程度（チェーンが極めて小さかった） | アーカイブで約 650 GB 以上; 剪定で約 10 GB; コイン DB で約 7 GB | — |
 
-*詳細: [L1 #7「ストレージ設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/)*
+詳細は [L1 #7「ストレージ設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-storage-design/) を参照。
 
 ## 9. ウォレットとインターフェース層
 
@@ -361,7 +361,7 @@ flowchart LR
 | **インターフェース** | リリース時はなし; 直後に基本的な JSON-RPC を追加 | JSON-RPC（完全）、REST（読み取り専用）、ZMQ（プッシュ通知） | — |
 | **プロセスモデル** | モノリシック（ウォレット + ノード + マイナー + GUI） | モジュラー: `bitcoind`、`bitcoin-wallet`、`bitcoin-qt` | v27 以降 |
 
-*詳細: [L1 #8「ウォレット設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-wallet-design/)*
+詳細は [L1 #8「ウォレット設計」](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-wallet-design/) を参照。
 
 ## 10. 構造的移行タイムライン
 

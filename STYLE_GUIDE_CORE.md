@@ -109,7 +109,8 @@ for it.
 ### No editor narrator inside primary-source bodies
 
 A primary-source entry (type `correspondence`, `mailing-list`,
-`forum-post`, `bip`, `whitepaper`, `court-document`) must not carry
+`forum-post`, `bip`, `whitepaper`, `court-document`, `tweet`,
+`web-document`) must not carry
 editor narrator prose interleaved with the source content. This means
 **no `<!-- speaker: narrator -->` blocks, no editor-voice paragraphs
 between quoted lines, no editor framing of the email as if from
@@ -443,7 +444,7 @@ the editorial voice.
 
 | Type group | `author` holds | On-page byline (`EntryMeta`) | List card byline (`EntryCard`) | OG / JSON-LD `article:author` |
 |---|---|---|---|---|
-| Primary-source (7) | the actual writer (email sender, forum poster, BIP author, tweet author, etc.) | `author` verbatim | `author` verbatim | `author` verbatim |
+| Primary-source (8) | the actual writer (email sender, forum poster, BIP author, tweet author, etc.) | `author` verbatim | `author` verbatim | `author` verbatim |
 | `article` / `analysis` / `design` | the **subject** the entry is about (the person, document, or event the editorial reading covers) — falls back to `"Bitcoin Institute"` when no single subject exists (see exception below) | **Bitcoin Institute** (forced by type) | `author` verbatim (subject, or `"Bitcoin Institute"` for no-single-subject entries) | **Bitcoin Institute** (forced by type) |
 | `biography` | the **subject of the biography** (the person whose biography this is) | (no `/entries/{id}/` page; biography renders inside the participant page, where no byline is shown) | `author` verbatim (subject) | (no entry page; participant page handles its own metadata) |
 
@@ -1141,8 +1142,10 @@ normalized.
     Archive editors must not change or normalize them.** This rule is
     the [Primary-Source Entries](#primary-source-entries) preservation
     principle applied to inline edit markers.
-13. **(C)/(D) usage policy by entry type (0523 editorial-note plan):**
-    - In **editorial entries** (`article` / `analysis` / `biography` / `design`),
+13. **(C)/(D) usage policy by entry type (0523 editorial-note plan;
+    function-based test added 2026-09-06):**
+    - In **editorial entries** (`article` / `analysis` / `biography` /
+      `design` / `currency` / `guide`),
       facts that read as natural body prose (related events,
       aftermath, biography, follow-up reporting, contemporary-value
       conversions, section-introducing sentences) **belong in body
@@ -1150,9 +1153,43 @@ normalized.
       reserved for genuine editor interpretation (C) or for
       adjacent-but-distinct context that would derail the body
       narrative (D, e.g. a short pointer to a sibling entry).
+    - **The test is the sentence's function, not its position or
+      whether it repeats.** A cross-reference belongs in body prose
+      when it completes or advances the current section's argument —
+      including one that recurs at the end of each of several
+      parallel sections (e.g. a comparison entry that closes every
+      section with a pointer to that section's detailed treatment:
+      the pointer is structural to the entry, not a Role D aside).
+      Use (D) when the cross-reference is supplementary to the
+      entry's argument and redirects the reader away from it —
+      including a standalone, one-time reading instruction placed
+      before the entry's substantive opening, or a distinct pointer
+      inserted between otherwise continuous paragraphs. Repetition is
+      evidence of structural function, not a requirement: a single
+      pointer can still belong in body prose, and a repeated one can
+      still need (D). To test a candidate sentence, strip any marker
+      formatting and read it as ordinary prose — if it advances the
+      surrounding argument, it belongs in body prose; if it redirects
+      the reader elsewhere, use (D).
+    - **(C) is narrower than "anything the editor adds."** Reserve
+      (C) for the editor's interpretation, qualification, or caveat
+      about how to read the surrounding evidence or argument (e.g.
+      flagging unverified information, a reconstruction's limits, the
+      scope a finding does or doesn't cover) — not for stating a fact
+      that itself advances the argument, however significant.
+      Significance is not a reason to bracket a fact as (C); it
+      belongs in body prose like any other fact.
+    - **Detection is syntactic; classification stays manual.** The
+      `check-editorial-markers.mjs` script enforces only the
+      canonical bracket+label form (rule 4) and does not attempt to
+      classify plain, unlabeled `*text*` as body prose vs. (C)/(D) —
+      most such italics are ordinary emphasis (a title, a term)
+      unrelated to this rule, and auto-flagging every one would
+      misfire on that emphasis. Applying this rule to a specific
+      sentence is a human judgment call at edit time.
     - In **primary-source entries** (`correspondence` /
       `mailing-list` / `forum-post` / `whitepaper` / `bip` /
-      `court-document`), the
+      `court-document` / `tweet` / `web-document`), the
       [No editor narrator inside primary-source bodies](#primary-source-entries)
       rule still applies. Short editor notes that survive there
       should stay as (C)/(D) or, when they grow long enough to read
@@ -1169,6 +1206,23 @@ normalized.
     mechanism that stores it. (Incident history:
     `ai-investment-survey-self-domain-and-mechanics-leak.md`,
     incidents/)
+15. **The "(Bitcoin Institute)" attribution suffix on the (A)/(C)/(D)
+    label applies only to primary-source entries.** On
+    `correspondence` / `mailing-list` / `forum-post` / `whitepaper` /
+    `bip` / `court-document` / `tweet` / `web-document`, the
+    surrounding body is a verbatim archived record, so the label
+    needs the suffix to
+    disambiguate the note as the site's commentary rather than part
+    of that record ("📝 Editor's note (Bitcoin Institute)" /
+    "📝 編者注（ビットコイン・インスティテュート）"). On editorial
+    entries (`article` / `analysis` / `biography` / `design` /
+    `currency` / `guide`), the entire body is already Bitcoin
+    Institute's own composed prose, so re-attributing a single inline
+    note to the same institute is redundant self-reference — omit the
+    suffix there ("📝 Editor's note" / "📝 編者注"). Implemented in
+    `src/lib/remark-editorial-marker.mjs`'s `LABELS` (primary-source)
+    vs `LABELS_EDITORIAL` (editorial) and mirrored in
+    `[...slug].astro`'s frontmatter `editorNote` rendering.
 
 ### Every source quote must belong to an attribution chain
 

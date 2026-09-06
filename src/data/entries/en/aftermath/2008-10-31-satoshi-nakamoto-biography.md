@@ -64,7 +64,7 @@ On October 31, 2008, Satoshi Nakamoto [published the Bitcoin whitepaper](/Bitcoi
 
 "Satoshi Nakamoto" is a pseudonym. The individual or group behind it has never been identified — the question the [identity-hypotheses overview](/BitcoinArchive/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/) examines by weighing twelve named candidates against the documented record compiled here.
 
-*New to Bitcoin? Start with [the beginner guide](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) — five short pages with diagrams, no prior knowledge assumed.*
+*[Context: New to Bitcoin? Start with [the beginner guide](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) — five short pages with diagrams, no prior knowledge assumed.]*
 
 ```mermaid
 timeline
