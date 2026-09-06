@@ -14,6 +14,7 @@ tags:
   - "storage"
   - "utxo"
   - "database"
+  - "mempool"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-transaction-design

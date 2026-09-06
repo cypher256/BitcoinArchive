@@ -14,6 +14,7 @@ tags:
   - "p2p"
   - "network"
   - "peer-to-peer"
+  - "man-in-the-middle"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-transaction-design

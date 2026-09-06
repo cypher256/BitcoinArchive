@@ -14,6 +14,9 @@ tags:
   - "consensus"
   - "proof-of-work"
   - "difficulty"
+  - "sha-256"
+  - "confirmations"
+  - "longest-chain"
 secondarySources:
   - name: "Bitcoin BIP 54 — Great Consensus Cleanup"
     url: "https://github.com/bitcoin/bips/blob/master/bip-0054.md"

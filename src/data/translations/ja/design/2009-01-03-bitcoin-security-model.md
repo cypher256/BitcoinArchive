@@ -13,6 +13,11 @@ isSatoshi: false
 tags:
   - "security-budget"
   - "consensus"
+  - "double-spend"
+  - "sybil-attack"
+  - "zero-confirmation"
+  - "confirmations"
+  - "p2mr"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-consensus-design

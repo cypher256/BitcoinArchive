@@ -14,6 +14,10 @@ tags:
   - "wallet"
   - "rpc"
   - "psbt"
+  - "json-rpc"
+  - "hd-wallet"
+  - "backup"
+  - "irreversibility"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-transaction-design

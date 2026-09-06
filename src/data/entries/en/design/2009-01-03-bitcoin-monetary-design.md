@@ -14,6 +14,10 @@ tags:
   - "monetary-policy"
   - "mining-incentive"
   - "fee-market"
+  - "visualization"
+  - "halving"
+  - "coin-maturity"
+  - "mempool"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-transaction-design

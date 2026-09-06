@@ -14,6 +14,8 @@ tags:
   - "blocks"
   - "blockchain"
   - "merkle-tree"
+  - "longest-chain"
+  - "coin-maturity"
 relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - analysis/2009-01-09-bitcoin-v01-serialization-boundaries
