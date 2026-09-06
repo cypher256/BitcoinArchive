@@ -19,6 +19,8 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/martti-malmi/2009-11-12-linux-linux-016-test3-076
 ---
 
 My network connection is direct to my computer. My ISP requires that I run VPN to connect to the Internet. I then have a second NIC that shares my Internet with other devices. My IP address while using my computer is my actual IP address, but the devices connected through my second NIC use NAT. When I connect through a virtual machine, that also uses NAT. All this requires very little configuration. NetworkManager in Ubuntu has an option to share my Internet connection through the second NIC and VirtualBox has the option to use NAT.

@@ -17,6 +17,8 @@ tags:
   - "release"
   - "hal-finney"
   - "origins"
+relatedEntries:
+  - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney
 quotes:
   - id: "q1"
     person: "Hal Finney"

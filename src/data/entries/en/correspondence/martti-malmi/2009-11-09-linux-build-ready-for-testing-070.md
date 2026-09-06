@@ -20,6 +20,8 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/liberty-standard/2009-11-09-blocks-increasing-slowly
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

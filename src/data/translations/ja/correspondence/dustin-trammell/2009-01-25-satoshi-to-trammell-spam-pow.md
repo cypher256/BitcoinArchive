@@ -21,6 +21,7 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-25-satoshi-to-trammell-spam-pow"
+  - "emails/cryptography/bitcoin-v0-1-released/2009-01-24-re-bitcoin-v0-1-released-finney"
 quotes:
   - id: "q1"
     person: "Hal Finney"

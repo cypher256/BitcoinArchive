@@ -19,6 +19,8 @@ tags:
   - "leadership"
 relatedEntries:
   - aftermath/2011-04-26-andresen-to-satoshi-cia-visit
+  - aftermath/2011-04-26-satoshi-final-known-email
+  - aftermath/2011-04-26-satoshi-to-andresen-alert-key
 translationStatus: complete
 ---
 

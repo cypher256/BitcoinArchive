@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/160/"
+relatedEntries:
+  - forum/bitcointalk/topic-191/2010-06-17-re-bitcoin-generation
 translationStatus: complete
 quotes:
   - id: "q1"

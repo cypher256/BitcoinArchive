@@ -77,6 +77,7 @@ relatedEntries:
   - forum/bitcointalk/topic-241/2010-07-07-theymos-msg2025
   - analysis/2026-07-28-bitcoin-nation-state-policy-history
   - analysis/2026-08-23-did-bitcoin-overturn-money
+  - correspondence/martti-malmi/2010-07-06-anonymous-homepage-changes-201
 inlineLinkKeywords:
   - "map of the 21 million"
 translationStatus: complete

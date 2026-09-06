@@ -17,6 +17,9 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/threads/10/"
+relatedEntries:
+  - correspondence/martti-malmi/2009-10-23-does-bitcoin-crash-in-windows-041
+  - emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows
 translationStatus: complete
 ---
 

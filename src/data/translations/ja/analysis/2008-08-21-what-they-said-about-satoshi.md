@@ -75,6 +75,10 @@ relatedEntries:
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney
   - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-01-re-bitcoin-p2p-e-cash-paper-donald
   - correspondence/adam-back/2008-08-21-adam-back-to-satoshi-b-money-pointer
+  - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-03-re-bitcoin-p2p-e-cash-paper-levine
+  - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-06-ray-dillinger-bitcoin-p2p-e-cash-paper
+  - emails/cryptography/bitcoin-v0-1-released/2009-01-10-re-bitcoin-v0-1-released-finney
+  - correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions
 inlineLinkKeywords:
   - "グロマー回答"
 quotes:

@@ -34,6 +34,7 @@ relatedEntries:
   - bip/2015-11-03-bip-0125
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - design/2009-01-03-bitcoin-monetary-design
+  - forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion
 inlineLinkKeywords:
   - "BIP 125"
 quotes:

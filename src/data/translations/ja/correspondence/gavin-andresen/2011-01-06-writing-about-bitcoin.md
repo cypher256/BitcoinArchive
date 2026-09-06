@@ -23,6 +23,7 @@ secondarySources:
 translationStatus: complete
 relatedEntries:
   - analysis/2010-12-27-satoshi-non-technical-silence
+  - correspondence/martti-malmi/2011-01-06-writing-about-bitcoin-254
 ---
 
 Rainey とは喜んで話す。サトシ、報道・広報・取材対応はしたくないと理解しているが、そうだろうか ?

@@ -18,6 +18,9 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/liberty-standard/2009-10-26-bitcoin-website-is-down
+  - emails/bitcoin-list/2009-10-26-re-does-bitcoin-crash-in-windows-leitl
 quotes:
   - id: "q1"
     person: "Eugen Leitl"

@@ -24,6 +24,8 @@ secondarySources:
     note: "Published by CoinDesk, November 26, 2020. Original files provided by Fran Finney to Nathaniel Popper in March 2014, subsequently shared with CoinDesk journalist Michael Kapilkov"
   - name: "Eyerys - Tracking Satoshi Nakamoto"
     url: "https://www.eyerys.com/articles/timeline/tracking-satoshi-nakamoto-his-never-seen-emails-hal-finney"
+relatedEntries:
+  - correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability
 quotes:
   - id: "q1"
     person: "Hal Finney"

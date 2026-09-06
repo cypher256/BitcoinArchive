@@ -13,6 +13,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/428/"
+relatedEntries:
+  - analysis/2008-10-31-bitcoin-digital-gold-structural-features
+  - analysis/2008-10-31-bitcoin-electronic-cash-vs-digital-gold
 ---
 
 As a thought experiment, imagine there was a base metal as scarce as gold but with the following properties:

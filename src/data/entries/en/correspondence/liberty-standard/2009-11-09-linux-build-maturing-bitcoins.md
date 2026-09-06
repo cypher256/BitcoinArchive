@@ -19,6 +19,8 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-071
 ---
 
 Everyone that contributed to making this Linux build really did a great job! Thanks for the hard work. It has started maturing some bitcoins, so I'm going to continue to run the Linux client for the time being until I decide whether it's at least as good or better at generating coins than the Windows version running in Wine.

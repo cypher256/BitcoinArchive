@@ -19,6 +19,9 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-13-trammell-to-satoshi-ip-address"
+  - "aftermath/2009-01-13-satoshi-to-trammell-send-coins"
+  - "emails/bitcoin-list/2009-01-16-re-bitcoin-v0-1-released"
+  - "emails/cryptography/bitcoin-v0-1-released/2009-01-16-sni17-bitcoin-v0-1-released"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

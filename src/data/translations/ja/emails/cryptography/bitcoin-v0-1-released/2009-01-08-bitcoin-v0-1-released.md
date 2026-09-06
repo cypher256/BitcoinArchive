@@ -24,6 +24,7 @@ relatedEntries:
   - tweets/hal-finney/2009-01-11-running-bitcoin
   - aftermath/2009-01-12-first-bitcoin-transaction
   - "correspondence/hal-finney/2009-01-08-satoshi-to-finney-release"
+  - correspondence/dustin-trammell/2009-01-11-trammell-to-satoshi-first-email
 translationStatus: complete
 ---
 

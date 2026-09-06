@@ -17,6 +17,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/233/"
+relatedEntries:
+  - forum/bitcointalk/topic-723/2010-08-06-freemoney-msg7915
 translationStatus: complete
 ---
 

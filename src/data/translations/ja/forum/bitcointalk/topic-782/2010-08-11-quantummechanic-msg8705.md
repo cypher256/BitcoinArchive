@@ -11,6 +11,8 @@ participants:
 description: "BitcoinTalk トピック 782 における QuantumMechanic の文脈投稿。サトシを引用."
 isSatoshi: false
 tags: []
+relatedEntries:
+  - forum/bitcointalk/topic-434/2010-07-17-re-privacy-versus-safety-handling-change
 quotes:
   - id: "q1"
     person: "satoshi"

@@ -28,6 +28,7 @@ relatedEntries:
   - aftermath/2011-06-14-wikileaks-accepts-bitcoin
   - aftermath/2025-02-21-mike-hearn-coingeek-retrospective
   - forum/bitcointalk/topic-2228/2010-12-12-satoshi-final-post
+  - aftermath/2011-11-23-wired-rise-and-fall-of-bitcoin
 ---
 
 <!-- quote: q1 -->

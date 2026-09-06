@@ -23,6 +23,7 @@ relatedEntries:
   - aftermath/2009-10-05-newlibertystandard-biography
   - aftermath/2009-10-05-newlibertystandard-first-exchange-rate
   - aftermath/2009-10-12-martti-malmi-first-btc-sale
+  - forum/bitcointalk/topic-41/2010-02-05-newlibertystandard-msg238
 inlineLinkKeywords:
   - "XBT"
 quotes:

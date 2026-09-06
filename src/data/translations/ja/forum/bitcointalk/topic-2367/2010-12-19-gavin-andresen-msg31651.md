@@ -21,6 +21,7 @@ tags:
 relatedEntries:
   - aftermath/2010-12-12-satoshi-handover-to-andresen
   - aftermath/2010-12-19-andresen-lead-maintainer-announcement
+  - aftermath/2016-05-02-gavin-andresen-satoshi-retrospective
 translationStatus: complete
 ---
 

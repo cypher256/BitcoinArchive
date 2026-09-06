@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/13/"
+relatedEntries:
+  - forum/bitcointalk/topic-29/2010-01-27-giik-msg152
 ---
 
 The Linux version is on its way.  Martti's Linux port was merged into the main code branch and New Liberty Standard has been testing it.  It'll be in the next release, version 0.2.

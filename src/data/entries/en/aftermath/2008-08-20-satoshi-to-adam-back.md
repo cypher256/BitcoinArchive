@@ -32,6 +32,7 @@ relatedEntries:
   - "correspondence/wei-dai/2008-08-22-satoshi-to-wei-dai"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
+  - "correspondence/adam-back/2008-08-20-satoshi-to-adam-back-hashcash-citation"
 inlineLinkKeywords:
   - "Electronic Cash Without a Trusted Third Party"
 quotes:

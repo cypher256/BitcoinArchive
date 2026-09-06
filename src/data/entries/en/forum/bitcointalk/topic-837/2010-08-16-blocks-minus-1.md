@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/390/"
+relatedEntries:
+  - forum/bitcointalk/topic-823/2010-08-15-kencausey-msg9588
 quotes:
   - id: "q1"
     person: "kencausey"

@@ -23,6 +23,8 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/1/"
   - name: "Mail Archive mirror"
     url: "https://www.mail-archive.com/cryptography@metzdowd.com/msg09966.html"
+relatedEntries:
+  - analysis/2008-08-21-what-they-said-about-satoshi
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

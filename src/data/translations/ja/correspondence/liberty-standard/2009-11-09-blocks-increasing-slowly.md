@@ -19,6 +19,10 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-068
+  - correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-069
+  - correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-070
 translationStatus: complete
 ---
 

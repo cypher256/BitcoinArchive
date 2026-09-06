@@ -29,6 +29,7 @@ quotes:
 translationStatus: complete
 relatedEntries:
   - analysis/2010-12-27-satoshi-non-technical-silence
+  - analysis/2008-08-21-what-they-said-about-satoshi
 ---
 
 <!-- quote: q1 -->

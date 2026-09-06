@@ -21,6 +21,7 @@ tags:
   - "monetary-policy"
 relatedEntries:
   - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
+  - "analysis/2008-10-31-bitcoin-digital-gold-structural-features"
 translationStatus: complete
 quotes:
   - id: "q1"

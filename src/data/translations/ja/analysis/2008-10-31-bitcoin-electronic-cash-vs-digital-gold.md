@@ -40,6 +40,7 @@ relatedEntries:
   - analysis/2026-07-28-bitcoin-nation-state-policy-history
   - aftermath/2025-01-30-el-salvador-bitcoin-law-reform
   - currency/2026-07-27-usdc-currency-overview
+  - forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem
 inlineLinkKeywords:
   - "電子キャッシュ"
   - "電子キャッシュの夢"

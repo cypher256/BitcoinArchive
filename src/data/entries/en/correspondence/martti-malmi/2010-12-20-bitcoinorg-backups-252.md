@@ -19,6 +19,8 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/gavin-andresen/2010-12-20-bitcoinorg-backups
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

@@ -24,6 +24,7 @@ secondarySources:
     note: "Entered into evidence in COPA v. Craig Wright in London, February 2024. Adam Back filed the complete email chain as a witness statement."
 relatedEntries:
   - analysis/2008-08-18-anonymousspeech-bitcoin-org-intermediary
+  - aftermath/2008-08-20-satoshi-to-adam-back
 ---
 
 I'm getting ready to release a paper that references your Hashcash paper and I wanted to make sure I have the citation right.  Here's what I have:

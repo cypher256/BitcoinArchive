@@ -39,6 +39,8 @@ relatedEntries:
   - aftermath/2019-04-01-fran-finney-hal-finney-profile
   - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
   - analysis/2008-08-18-anonymousspeech-bitcoin-org-intermediary
+  - correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability
+  - correspondence/hal-finney/2009-01-08-satoshi-to-finney-release
 quotes:
   - id: "q1"
     person: "Hal Finney"

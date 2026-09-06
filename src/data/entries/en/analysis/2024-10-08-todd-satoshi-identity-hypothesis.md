@@ -40,6 +40,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2009-01-09-satoshi-windows-development-environment
   - analysis/2026-05-03-van-dorst-corpus-reanalysis-named-candidates
+  - forum/bitcointalk/topic-2181/2010-12-10-retep-re-fees-in-bitdns-confusion
 inlineLinkKeywords:
   - "Todd hypothesis"
   - "Todd = Satoshi"

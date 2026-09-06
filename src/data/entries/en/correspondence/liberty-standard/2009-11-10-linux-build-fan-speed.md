@@ -19,6 +19,8 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/martti-malmi/2009-11-10-linux-dead-sockets-problem-073
 ---
 
 The Linux build has generated a decent amount of bitcoins within the past 20 hours and I trust what you're telling me about database errors, so all signs point toward me running the Linux build from now on. The only half annoying thing about the Linux build is that my computer's fan has gone from 50% to 100%. :-P I know I can limit the CPU, so if it gets on my nerves too much and if I can live with less bitcoins being generated, perhaps I'll do that. Or maybe I just need to start listening to more music...

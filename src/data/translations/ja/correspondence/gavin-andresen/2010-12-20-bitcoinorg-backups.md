@@ -20,6 +20,10 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/martti-malmi/2010-12-20-bitcoinorg-backups-250
+  - correspondence/martti-malmi/2010-12-20-bitcoinorg-backups-251
+  - correspondence/martti-malmi/2010-12-20-bitcoinorg-backups-252
 quotes:
   - id: "q1"
     person: "Martti Malmi"

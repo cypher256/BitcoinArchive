@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/230/"
+relatedEntries:
+  - forum/bitcointalk/topic-782/2010-08-11-quantummechanic-msg8705
 translationStatus: complete
 ---
 

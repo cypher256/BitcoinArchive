@@ -27,6 +27,7 @@ quotes:
     sourceEntryId: "correspondence/gavin-andresen/2011-01-06-writing-about-bitcoin"
 relatedEntries:
   - analysis/2010-12-27-satoshi-non-technical-silence
+  - correspondence/gavin-andresen/2011-01-06-writing-about-bitcoin
 ---
 
 <!-- speaker: Gavin Andresen -->

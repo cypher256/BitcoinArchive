@@ -27,6 +27,7 @@ relatedEntries:
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request
   - aftermath/2008-11-02-james-donald-biography
+  - analysis/2026-08-23-did-bitcoin-overturn-money
 ---
 
 <!-- speaker: Satoshi Nakamoto -->

@@ -24,6 +24,8 @@ secondarySources:
     note: "CoinDesk、2020年11月26日公開。フラン・フィニーが 2014年3月にナサニエル・ポッパーに提供した原本ファイルから。その後、CoinDesk の記者マイケル・カピルコフに共有された"
   - name: "Eyerys - Tracking Satoshi Nakamoto"
     url: "https://www.eyerys.com/articles/timeline/tracking-satoshi-nakamoto-his-never-seen-emails-hal-finney"
+relatedEntries:
+  - correspondence/hal-finney/2008-11-19-finney-to-satoshi-scalability
 quotes:
   - id: "q1"
     person: "Hal Finney"

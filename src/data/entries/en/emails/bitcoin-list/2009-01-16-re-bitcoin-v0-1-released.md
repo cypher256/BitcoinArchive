@@ -13,6 +13,9 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/23/"
+relatedEntries:
+  - correspondence/dustin-trammell/2009-01-13-trammell-to-satoshi-ip-address
+  - emails/bitcoin-list/2009-01-12-bitcoin-v0-1-3
 quotes:
   - id: "q1"
     person: "Dustin D. Trammell"

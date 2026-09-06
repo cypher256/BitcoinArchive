@@ -15,6 +15,11 @@ description: "Eugen Leitl contradicts Satoshi's claim that bitcoin.sourceforge.n
 isSatoshi: false
 tags:
   - "linux"
+relatedEntries:
+  - correspondence/martti-malmi/2009-10-26-bitcoinsourceforgenet-042
+  - correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-043
+  - correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044
+  - emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

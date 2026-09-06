@@ -20,6 +20,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute (thread view)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/1/"
+relatedEntries:
+  - analysis/2008-08-21-what-they-said-about-satoshi
 quotes:
   - id: "q1"
     person: "James A. Donald"

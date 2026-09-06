@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/282/"
+relatedEntries:
+  - forum/bitcointalk/topic-453/2010-07-25-blackeye-msg5774
 quotes:
   - id: "q1"
     person: "BlackEye"

@@ -24,6 +24,7 @@ tags:
 relatedEntries:
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 ---
 
 Some discussion of the properties of Wei's b-money protocol.

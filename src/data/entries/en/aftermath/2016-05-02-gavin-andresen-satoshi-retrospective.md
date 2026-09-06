@@ -33,6 +33,7 @@ relatedEntries:
   - analysis/2008-10-31-satoshi-identification-asymmetry
   - analysis/2008-10-31-satoshi-anonymity-architecture
   - analysis/2008-08-20-satoshi-self-statements
+  - forum/bitcointalk/topic-2367/2010-12-19-gavin-andresen-msg31651
 inlineLinkKeywords:
   - "pulled a fast one"
 quotes:

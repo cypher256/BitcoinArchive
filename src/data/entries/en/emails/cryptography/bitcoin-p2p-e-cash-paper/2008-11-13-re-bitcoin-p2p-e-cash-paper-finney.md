@@ -21,6 +21,8 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/1/"
 relatedEntries:
   - analysis/2008-11-13-byzantine-generals-problem
+  - correspondence/adam-back/2009-01-10-satoshi-to-adam-back-launch
+  - correspondence/wei-dai/2009-01-10-satoshi-to-wei-dai
 quotes:
   - id: "q1"
     person: "James A. Donald"

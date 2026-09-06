@@ -22,6 +22,7 @@ secondarySources:
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
 relatedEntries:
   - analysis/2010-12-27-satoshi-non-technical-silence
+  - correspondence/martti-malmi/2011-01-06-writing-about-bitcoin-254
 ---
 
 I'd be happy to talk to Rainey; Satoshi, I assume you don't want to

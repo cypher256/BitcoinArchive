@@ -20,6 +20,7 @@ tags:
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-11-trammell-to-satoshi-first-email"
+  - "emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

@@ -29,6 +29,7 @@ relatedEntries:
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - aftermath/1998-11-26-wei-dai-pipenet-b-money-announcement
   - emails/cypherpunks/b-money-protocol/1998-12-05-adam-back-b-money-protocol-repost
+  - emails/cypherpunks/b-money-protocol/1998-12-06-adam-back-b-money-critique
   - aftermath/1998-12-06-adam-back-b-money-monetary-critique
   - aftermath/1998-12-07-wei-dai-re-b-money-protocol
   - emails/cypherpunks/b-money-protocol/1998-12-07-wei-dai-re-b-money-protocol

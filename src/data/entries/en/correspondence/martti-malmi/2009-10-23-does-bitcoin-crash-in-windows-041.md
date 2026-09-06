@@ -18,6 +18,8 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - emails/bitcoin-list/2009-10-23-does-bitcoin-crash-in-windows
 quotes:
   - id: "q1"
     person: "Liberty Standard"

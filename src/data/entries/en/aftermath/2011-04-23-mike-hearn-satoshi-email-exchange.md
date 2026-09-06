@@ -26,6 +26,7 @@ relatedEntries:
   - aftermath/2009-04-12-mike-hearn-biography
   - correspondence/mike-hearn/questions/2009-04-12-hearn-to-satoshi-questions
   - aftermath/2017-08-11-mike-hearn-publishes-emails
+  - correspondence/mike-hearn/holding-coins/2011-04-20-hearn-to-satoshi-contracts-wiki
 quotes:
   - id: "q1"
     person: "Mike Hearn"

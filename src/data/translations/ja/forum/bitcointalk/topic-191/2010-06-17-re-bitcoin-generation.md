@@ -17,6 +17,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/103/"
+relatedEntries:
+  - forum/bitcointalk/topic-202/2010-06-27-re-major-meltdown
 translationStatus: complete
 ---
 

@@ -23,6 +23,9 @@ secondarySources:
   - name: "COPA v Wright Trial Evidence"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "Adam Back's Second Witness Statement (document C/21) included the complete five-email chain."
+relatedEntries:
+  - aftermath/2008-08-21-satoshi-to-adam-back-b-money
+  - aftermath/2024-02-21-adam-back-retrospective-testimony
 quotes:
   - id: "q1"
     person: "Adam Back"

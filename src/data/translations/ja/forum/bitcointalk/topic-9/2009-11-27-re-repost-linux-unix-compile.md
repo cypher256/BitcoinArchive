@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/13/"
+relatedEntries:
+  - forum/bitcointalk/topic-29/2010-01-27-giik-msg152
 translationStatus: complete
 ---
 

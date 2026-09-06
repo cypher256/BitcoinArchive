@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/505/"
+relatedEntries:
+  - forum/bitcointalk/topic-1842/2010-11-19-freemoney-msg22844
 translationStatus: complete
 quotes:
   - id: "q1"

@@ -29,6 +29,7 @@ relatedEntries:
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
   - "analysis/2008-10-31-cypherpunk-independent-arrival"
   - "analysis/2008-08-20-satoshi-self-statements"
+  - "correspondence/adam-back/2008-08-21-adam-back-to-satoshi-b-money-pointer"
 quotes:
   - id: "q1"
     person: "Adam Back"

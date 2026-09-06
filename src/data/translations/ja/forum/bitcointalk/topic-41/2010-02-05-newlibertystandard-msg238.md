@@ -12,6 +12,8 @@ description: "NewLibertyStandard がタイバーツ通貨記号 ฿ を公式の
 isSatoshi: false
 tags:
   - "historic"
+relatedEntries:
+  - aftermath/2010-02-05-newlibertystandard-btc-symbol-proposal
 translationStatus: complete
 ---
 

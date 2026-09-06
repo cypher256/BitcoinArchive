@@ -23,6 +23,9 @@ secondarySources:
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/threads/255/"
 relatedEntries:
   - aftermath/2010-12-07-peter-todd-biography
+  - aftermath/2015-12-04-peter-todd-bip-125-replace-by-fee
+  - aftermath/2024-10-08-hbo-money-electric-peter-todd
+  - analysis/2024-10-08-todd-satoshi-identity-hypothesis
 ---
 
 Of course, to be specific, the inputs and outputs can't match *exactly* if the second transaction has a transaction fee.

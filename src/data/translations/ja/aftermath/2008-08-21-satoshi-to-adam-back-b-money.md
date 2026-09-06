@@ -29,6 +29,7 @@ relatedEntries:
   - "analysis/2026-04-08-adam-back-satoshi-identity-hypothesis"
   - "aftermath/2026-04-08-nyt-carreyrou-adam-back-satoshi-investigation"
   - "aftermath/2008-08-20-adam-back-biography"
+  - "correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money"
 inlineLinkKeywords:
   - "私のアイデアはまさにその出発点から始まっている"
 quotes:

@@ -21,6 +21,7 @@ tags:
   - "monetary-policy"
 relatedEntries:
   - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
+  - "analysis/2008-10-31-bitcoin-digital-gold-structural-features"
 quotes:
   - id: "q1"
     person: "Joerg Baach"

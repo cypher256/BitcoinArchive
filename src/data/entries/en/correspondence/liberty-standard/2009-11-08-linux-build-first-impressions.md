@@ -19,6 +19,8 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/martti-malmi/2009-11-08-linux-build-ready-for-testing-066
 ---
 
 I downloaded it and it runs. It and it is using plenty of CPU, so I think it's working properly. It has not downloaded previously generated blocks. Is that a bug or a new feature?

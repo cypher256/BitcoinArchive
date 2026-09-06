@@ -83,6 +83,7 @@ relatedEntries:
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - analysis/2008-10-31-fixed-supply-vs-adjustable-money
   - aftermath/2010-05-22-bitcoin-pizza-day
+  - forum/bitcointalk/topic-57/2010-02-20-xc-msg412
 inlineLinkKeywords:
   - "cost of production"
   - "production cost"

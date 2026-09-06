@@ -25,6 +25,7 @@ secondarySources:
     note: "Adam Back の第二証人陳述書 (文書 C/21) に完全な 5 通のメールチェーンが含まれている。"
 relatedEntries:
   - analysis/2008-08-21-what-they-said-about-satoshi
+  - aftermath/2008-08-21-adam-back-to-satoshi
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

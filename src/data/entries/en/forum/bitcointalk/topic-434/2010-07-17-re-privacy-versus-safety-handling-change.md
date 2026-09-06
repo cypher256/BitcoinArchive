@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/230/"
+relatedEntries:
+  - forum/bitcointalk/topic-782/2010-08-11-quantummechanic-msg8705
 ---
 
 We should queue up a supply of pre-made addresses in the wallet to use when a new address is needed.  They aren't very big, so it wouldn't hurt to have a lot of them.  This would more generally cover the case also where someone backs up, then requests a new address and receives a big payment with it.  Maybe there should be separate queues so one type of demand on addresses doesn't deplete it for the others.

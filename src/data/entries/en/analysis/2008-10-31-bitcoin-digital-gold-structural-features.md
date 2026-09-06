@@ -50,6 +50,9 @@ relatedEntries:
   - analysis/2008-11-13-byzantine-generals-problem
   - analysis/2026-08-23-did-bitcoin-overturn-money
   - analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered
+  - forum/bitcointalk/topic-583/2010-08-27-re-bitcoin-does-not-violate-mises-regression-theorem
+  - forum/p2pfoundation/bitcoin-open-source/2009-02-18-bitcoin-open-source-implementation-of-p2p-currency
+  - correspondence/martti-malmi/2009-05-03-bitcoin-003
 inlineLinkKeywords:
   - "digital gold"
   - "two-layer decentralization"

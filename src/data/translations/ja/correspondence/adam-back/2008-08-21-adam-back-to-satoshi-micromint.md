@@ -21,6 +21,8 @@ secondarySources:
   - name: "COPA 対 Wright 裁判証拠"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "Adam Back の第二証人陳述書 (文書 C/21) に完全な 5 通のメールチェーンが含まれている。"
+relatedEntries:
+  - aftermath/2008-08-21-adam-back-to-satoshi-micromint
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

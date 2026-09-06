@@ -19,6 +19,10 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-068
+  - correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-069
+  - correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-070
 ---
 
 Ok, blocks have now started to increase. It definitely takes longer for them to start increasing than with the Windows version. Also, I think they might be increasing at a slower rate than in with the Windows version. Is there perhaps debugging enabled in the Linux build that you sent me? Block are increasing at about 15 blocks per second (eyeball estimate while looking at a clock). I didn't time how fast they increased in the Windows version, but it seems like it was much faster.

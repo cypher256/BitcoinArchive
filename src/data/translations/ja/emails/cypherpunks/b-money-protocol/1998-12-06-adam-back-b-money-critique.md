@@ -25,6 +25,7 @@ translationStatus: complete
 relatedEntries:
   - "aftermath/1998-12-06-adam-back-b-money-monetary-critique"
   - "aftermath/1998-12-07-wei-dai-re-b-money-protocol"
+  - "analysis/2008-10-31-wei-dai-fixed-supply-critique-unanswered"
 ---
 
 ウェイの b-money プロトコルの性質について、いくらか論じる。

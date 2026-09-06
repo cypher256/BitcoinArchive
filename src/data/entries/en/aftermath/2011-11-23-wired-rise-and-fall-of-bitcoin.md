@@ -46,6 +46,7 @@ relatedEntries:
   - aftermath/2010-06-11-andresen-bitcoin-faucet
   - aftermath/2011-08-01-bitcointalk-org-migration
   - aftermath/2020-11-23-chain-bulletin-satoshi-london-hypothesis
+  - forum/bitcointalk/topic-1735/2010-12-05-re-wikileaks
 inlineLinkKeywords:
   - "The Rise and Fall of Bitcoin"
 quotes:

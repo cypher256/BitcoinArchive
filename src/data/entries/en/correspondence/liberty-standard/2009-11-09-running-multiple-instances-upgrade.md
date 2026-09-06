@@ -19,6 +19,8 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/martti-malmi/2009-11-09-linux-build-ready-for-testing-071
 ---
 
 Another instance when I would like to run multiple instances is when I upgrade bitcoin. I will uncheck the generate coin check box in the outdated bitcoin, launch and start generating coins in the new bitcoin using a separate data directory, then when the old application's coins have matured I will send them to the new application and then close the old application. I prefer do do clean installs rather than upgrading while maintaining old data.

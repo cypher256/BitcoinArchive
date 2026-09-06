@@ -40,6 +40,7 @@ relatedEntries:
   - aftermath/2008-08-21-adam-back-to-satoshi-micromint
   - aftermath/2009-01-10-satoshi-to-adam-back-launch
   - analysis/2008-08-21-what-they-said-about-satoshi
+  - "correspondence/adam-back/2008-08-21-satoshi-to-adam-back-b-money"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

@@ -19,6 +19,8 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/martti-malmi/2009-11-16-dbopendbclose-bad-file-descriptor-exception-086
 ---
 
 I moved the data directory back to my SSD card and started bitcoin test 6. It encountered a segmentation fault today with Db::open in the log. I had changed the settings to only use one processor/core while I watched a 720p mkv movie. I noticed the segmentation fault after the film had ended.

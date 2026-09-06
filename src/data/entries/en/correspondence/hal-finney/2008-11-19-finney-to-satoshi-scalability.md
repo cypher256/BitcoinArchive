@@ -21,6 +21,9 @@ tags:
 secondarySources:
   - name: "Bitcoin News - Researcher Publishes Never-Before-Seen Emails"
     url: "https://news.bitcoin.com/researcher-publishes-never-before-seen-emails-between-satoshi-nakamoto-and-hal-finney/"
+relatedEntries:
+  - aftermath/2008-11-19-finney-to-satoshi-scalability
+  - aftermath/2020-11-26-coindesk-unpublished-satoshi-finney-emails
 ---
 
 Ah, I see, thanks for the corrections.

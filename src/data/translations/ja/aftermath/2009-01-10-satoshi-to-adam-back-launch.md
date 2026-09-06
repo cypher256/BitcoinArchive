@@ -25,6 +25,8 @@ secondarySources:
     url: "https://www.bitstamp.net/learn/people-profiles/adam-back/"
 relatedEntries:
   - aftermath/2024-02-21-adam-back-retrospective-testimony
+  - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-07-re-bitcoin-p2p-e-cash-paper-finney
+  - correspondence/adam-back/2009-01-10-satoshi-to-adam-back-launch
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

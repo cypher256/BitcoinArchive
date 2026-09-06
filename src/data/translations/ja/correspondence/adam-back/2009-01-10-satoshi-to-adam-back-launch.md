@@ -23,6 +23,9 @@ secondarySources:
   - name: "COPA 対 Wright 裁判証拠"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
     note: "Adam Back の第二証人陳述書 (文書 C/21) に完全な 5 通のメールチェーンが含まれている。"
+relatedEntries:
+  - aftermath/2009-01-10-satoshi-to-adam-back-launch
+  - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-13-re-bitcoin-p2p-e-cash-paper-finney
 quotes:
   - id: "q1"
     person: "Hal Finney"

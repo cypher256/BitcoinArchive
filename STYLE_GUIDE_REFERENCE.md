@@ -527,10 +527,12 @@ Good candidates:
 
 | Situation | Use instead |
 |---|---|
-| Entries are in the same directory / thread | nothing — threads handle it automatically |
+| The relation *between two entries already in the same thread* (same directory) | nothing — the thread page shows it automatically |
 | Broad topical grouping (20+ entries share a theme) | `tags` |
 | Person-centric aggregation | `participants` |
 | A single reference at a specific position in body prose | inline markdown link |
+
+**⛔ The same-thread exemption covers only the relation between entries inside that thread — it says nothing about that entry's relations to anything outside the thread.** A forum post or email fully covered by its own thread page can still need `relatedEntries` pointing to a strong cross-thread or cross-type link (a later analysis page examining it, a causally-linked incident recorded in a different directory, etc. — see the "Good candidates" list above, several of which are exactly this: a primary-source entry linking out of its own thread). Do not read "this entry is in a thread" as "this entry needs no `relatedEntries` at all" — the thread only excuses the in-thread relation, not the entry's relations to the rest of the archive.
 
 ### Rules
 
@@ -584,7 +586,12 @@ Good candidates:
    inline-link reciprocity provided only on the editorial side.
 5. **No self-reference.** An entry cannot relate to itself.
 6. **No thread-internal relations.** If two entries are already in the
-   same thread (same directory), do not use `relatedEntries` for them.
+   same thread (same directory), do not use `relatedEntries` to record
+   *the relation between those two specific entries* — the thread
+   already shows it. This says nothing about either entry's
+   `relatedEntries` toward entries outside the thread; see the
+   "same-thread exemption" note under
+   [§ When NOT to use `relatedEntries`](#when-not-to-use-relatedentries).
 7. **Same `relatedEntries` in EN and JA mirrors.** Both language versions
    of an entry must declare the same set of related entries (and in the
    same priority order).

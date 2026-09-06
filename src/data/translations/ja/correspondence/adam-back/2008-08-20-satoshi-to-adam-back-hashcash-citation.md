@@ -25,6 +25,7 @@ secondarySources:
     note: "ロンドンの COPA 対 Craig Wright 裁判 (2024 年 2 月) に証拠として提出。 Adam Back が証人陳述として完全なメールチェーンを提出した。"
 relatedEntries:
   - analysis/2008-08-18-anonymousspeech-bitcoin-org-intermediary
+  - aftermath/2008-08-20-satoshi-to-adam-back
 ---
 
 あなたの Hashcash 論文を参考文献として引用する論文をリリースする準備をしているのだが、引用の表記が正しいか確認したい。現在の表記はこちら:

@@ -18,6 +18,10 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/martti-malmi/2009-10-26-bitcoinsourceforgenet-042
+  - correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-043
+  - correspondence/martti-malmi/2009-10-27-bitcoinsourceforgenet-044
 ---
 
 In case you weren't aware, the Bitcoin website is down.

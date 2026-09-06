@@ -11,6 +11,8 @@ participants:
 description: "BitcoinTalk トピック 141 における NewLibertyStandard の文脈投稿。サトシを引用."
 isSatoshi: false
 tags: []
+relatedEntries:
+  - forum/bitcointalk/topic-48/2010-02-14-re-whats-with-this-odd-generation
 quotes:
   - id: "q1"
     person: "satoshi"

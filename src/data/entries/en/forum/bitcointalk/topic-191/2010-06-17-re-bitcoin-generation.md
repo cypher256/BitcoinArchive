@@ -17,6 +17,8 @@ tags:
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/103/"
+relatedEntries:
+  - forum/bitcointalk/topic-202/2010-06-27-re-major-meltdown
 ---
 
 SHA-256 is very strong. It's not like the incremental step from MD5 to SHA1. It can last several decades unless there's some massive breakthrough.

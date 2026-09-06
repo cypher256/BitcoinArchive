@@ -36,6 +36,7 @@ relatedEntries:
   - aftermath/2008-10-31-bitcoin-whitepaper-publication
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-08-02-ai-crypto-investment-survey
+  - emails/cryptography/bitcoin-p2p-e-cash-paper/2008-10-31-bitcoin-p2p-e-cash-paper
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

@@ -34,6 +34,7 @@ relatedEntries:
   - analysis/2026-05-24-satoshi-design-vs-current-reality
   - analysis/2008-10-31-bitcoin-digital-gold-structural-features
   - aftermath/2025-04-15-michel-bauwens-reflects-on-satoshi-and-bitcoin
+  - correspondence/gavin-andresen/2011-04-26-satoshi-alert-key-email
 inlineLinkKeywords:
   - "別れの対"
 quotes:

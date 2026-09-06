@@ -19,6 +19,8 @@ tags:
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"
+relatedEntries:
+  - correspondence/martti-malmi/2009-11-08-linux-build-ready-for-testing-066
 ---
 
 That is what I meant. The blocks displayed in the status bar did not increase at all while i ran the program. I have attached my debug.log.

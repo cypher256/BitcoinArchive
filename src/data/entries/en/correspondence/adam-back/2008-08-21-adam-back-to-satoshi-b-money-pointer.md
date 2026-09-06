@@ -24,6 +24,7 @@ secondarySources:
     note: "Adam Back's Second Witness Statement (document C/21) included the complete five-email chain."
 relatedEntries:
   - analysis/2008-08-21-what-they-said-about-satoshi
+  - aftermath/2008-08-21-adam-back-to-satoshi
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

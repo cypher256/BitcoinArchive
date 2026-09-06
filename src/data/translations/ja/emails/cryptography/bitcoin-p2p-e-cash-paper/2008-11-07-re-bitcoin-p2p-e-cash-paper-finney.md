@@ -22,6 +22,7 @@ secondarySources:
 relatedEntries:
   - aftermath/2008-10-31-bitcoin-whitepaper-publication
   - analysis/2008-08-21-what-they-said-about-satoshi
+  - aftermath/2009-01-10-satoshi-to-adam-back-launch
 translationStatus: complete
 ---
 
