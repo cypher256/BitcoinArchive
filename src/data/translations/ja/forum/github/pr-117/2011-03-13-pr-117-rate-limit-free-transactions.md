@@ -12,6 +12,8 @@ description: "gavinandresen が bitcoin/bitcoin PR #117 でスレッドを開始
 isSatoshi: false
 tags:
   - "pull-request"
+relatedEntries:
+  - forum/bitcointalk/topic-1850/2010-11-19-transaction-spam-flood-attack-currently-under-way
 translationStatus: complete
 ---
 

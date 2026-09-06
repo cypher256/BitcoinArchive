@@ -12,6 +12,8 @@ description: "PR #117 thread starter by gavinandresen in bitcoin/bitcoin."
 isSatoshi: false
 tags:
   - "pull-request"
+relatedEntries:
+  - forum/bitcointalk/topic-1850/2010-11-19-transaction-spam-flood-attack-currently-under-way
 ---
 
 Reason for this change:  better mitigation of "penny-flooding."

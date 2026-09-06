@@ -14,6 +14,8 @@ description: "ギャビン・アンドレセンが CIA でのビットコイン�
 isSatoshi: false
 tags:
   - "cia"
+relatedEntries:
+  - aftermath/2011-04-26-andresen-to-satoshi-cia-visit
 translationStatus: complete
 ---
 

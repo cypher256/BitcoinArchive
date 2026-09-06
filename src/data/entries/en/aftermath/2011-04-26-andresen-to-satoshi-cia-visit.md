@@ -24,6 +24,7 @@ secondarySources:
   - name: "Blockworks - Satoshi Disappear Day"
     url: "https://blockworks.co/news/satoshi-disappear-day-cia-bitcoin"
 relatedEntries:
+  - forum/bitcointalk/topic-6652/2011-04-27-gavin-will-visit-the-cia
   - correspondence/gavin-andresen/2011-04-26-andresen-cia-visit-reply
   - correspondence/gavin-andresen/2011-04-26-satoshi-alert-key-email
   - aftermath/2011-04-26-satoshi-to-andresen-alert-key

@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/289/"
+relatedEntries:
+  - emails/bitcoin-list/2010-07-30-alert-upgrade-to-bitcoin-0-3-6
 translationStatus: complete
 ---
 

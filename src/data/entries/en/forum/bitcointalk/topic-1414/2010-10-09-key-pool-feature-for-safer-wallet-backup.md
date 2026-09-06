@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/490/"
+relatedEntries:
+  - design/2009-01-03-bitcoin-wallet-design
 ---
 
 SVN rev 163 (ver 0.3.13.3) has the key pool feature.  Pre-generated new keys are aged in a queue before use, so that backups of wallet.dat hold keys you'll use in the future.

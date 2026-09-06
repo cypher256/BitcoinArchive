@@ -19,6 +19,7 @@ tags:
   - "backup"
   - "irreversibility"
 relatedEntries:
+  - forum/bitcointalk/topic-1414/2010-10-09-key-pool-feature-for-safer-wallet-backup
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-transaction-design
   - design/2009-01-03-bitcoin-cryptography-design

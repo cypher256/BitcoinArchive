@@ -18,6 +18,7 @@ secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/16/"
 relatedEntries:
+  - emails/bitcoin-list/2009-01-12-bitcoin-v0-1-alpha-release-notes
   - aftermath/2009-01-08-satoshi-to-finney-release
   - aftermath/2009-01-09-bitcoin-v01-released
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet

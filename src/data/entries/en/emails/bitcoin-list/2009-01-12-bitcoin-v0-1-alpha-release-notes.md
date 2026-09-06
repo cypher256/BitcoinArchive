@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/21/"
+relatedEntries:
+  - emails/cryptography/bitcoin-v0-1-released/2009-01-08-bitcoin-v0-1-released
 ---
 
 Release notes for Bitcoin v0.1 Alpha

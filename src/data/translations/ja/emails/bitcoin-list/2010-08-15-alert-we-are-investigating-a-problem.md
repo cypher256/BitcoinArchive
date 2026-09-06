@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/32/"
+relatedEntries:
+  - aftermath/2010-08-15-value-overflow-incident
 translationStatus: complete
 ---
 

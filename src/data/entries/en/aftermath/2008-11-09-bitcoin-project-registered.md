@@ -14,6 +14,7 @@ tags:
   - "project-registration"
   - "historic"
 relatedEntries:
+  - emails/bitcoin-list/2008-12-10-welcome
   - aftermath/2009-08-30-bitcoin-svn-repository-committers
   - aftermath/2010-12-15-bitcoin-v0319-released
 ---

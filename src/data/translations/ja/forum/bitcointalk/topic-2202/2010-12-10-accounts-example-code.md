@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/536/"
+relatedEntries:
+  - aftermath/2010-12-08-bitcoin-v0318-released
 translationStatus: complete
 ---
 

@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/289/"
+relatedEntries:
+  - emails/bitcoin-list/2010-07-30-alert-upgrade-to-bitcoin-0-3-6
 ---
 
 Please upgrade to 0.3.6 ASAP!  We fixed an implementation bug where it was possible that bogus transactions could be displayed as accepted.  Do not accept Bitcoin transactions as payment until you upgrade to version 0.3.6!

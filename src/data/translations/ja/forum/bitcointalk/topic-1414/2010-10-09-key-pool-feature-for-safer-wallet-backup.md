@@ -13,6 +13,8 @@ isSatoshi: true
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/490/"
+relatedEntries:
+  - design/2009-01-03-bitcoin-wallet-design
 translationStatus: complete
 ---
 

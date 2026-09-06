@@ -28,6 +28,7 @@ secondarySources:
   - name: "Decrypt — The Day Someone Created 184 Billion Bitcoin"
     url: "https://decrypt.co/39750/184-billion-bitcoin-anonymous-creator"
 relatedEntries:
+  - emails/bitcoin-list/2010-08-15-alert-we-are-investigating-a-problem
   - analysis/2010-08-15-overflow-incident-structure-and-paradox
   - aftermath/2010-08-15-bitcoin-v0310-overflow-bug-fix
   - forum/bitcointalk/topic-822/2010-08-15-jgarzik-msg9474
