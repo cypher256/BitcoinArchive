@@ -14,6 +14,7 @@ The archive contains 3,300+ entries organized by type:
 - **Mailing List** (66): cryptography mailing list (33), Bitcoin-list (20), P2P Research (7), Cypherpunks (5), Linux Foundation (1)
 - **Biographies** (51): Biographical profiles of key participants compiled from public sources
 - **Analysis** (56): Editorial readings by Bitcoin Institute — Satoshi-identity hypotheses for the named candidates, the Bitcoin design lineage and cypherpunk independent-arrival, the 2008–2014 activity timeline, the genesis-block and v0.1 source-code analyses, and monetary-policy readings, each labeled as interpretation and individually sourced
+- **Guides** (6): A zero-prior-knowledge beginner series — what a bitcoin is, how the shared ledger works, mining, mempool/confirmation, and consensus, each with metaphor-based illustrations
 - **Design** (12): System-overview and architecture readings of Bitcoin's protocol (e.g. the v0.1 system-design overview)
 - **Currencies** (12): Single-currency protocol profiles — supply, consensus, governance, and initial distribution for each of 12 altcoins and stablecoins, read against Bitcoin as the baseline
 - **BIPs** (9): Bitcoin Improvement Proposals relevant to Satoshi's design

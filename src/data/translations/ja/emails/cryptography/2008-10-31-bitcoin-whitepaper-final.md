@@ -55,7 +55,7 @@ translationStatus: complete
 
 **関連:** [初期草稿（2008年10月3日）](/BitcoinArchive/ja/entries/emails/cryptography/2008-10-03-bitcoin-whitepaper-draft/)
 
-*[編者注：ビットコインがはじめての方は、8 章 30 用語を図で解説する[ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)を先に読むとよい。ホワイトペーパーは読者が UTXO・コインベーストランザクション・プルーフ・オブ・ワークを既知としている前提で書かれている。]*
+*[編者注：ビットコインがはじめての方は、図解付きの短い 5 本からなる[初心者ガイド](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)を先に読むとよい。ホワイトペーパーは読者が UTXO・コインベーストランザクション・プルーフ・オブ・ワークを既知としている前提で書かれている。]*
 
 <!-- speaker: Satoshi Nakamoto -->
 ## ビットコイン：ピアツーピア電子キャッシュシステム

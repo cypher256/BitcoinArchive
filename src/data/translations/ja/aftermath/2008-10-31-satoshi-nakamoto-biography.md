@@ -65,7 +65,7 @@ translationStatus: complete
 
 「サトシ・ナカモト」は仮名である。その背後にいる個人またはグループは、これまで特定されていない。この正体は、[サトシ正体仮説の横断比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)が 12 人の名指し候補をここにまとめた記録に照らして検証している問いである。
 
-*ビットコインがはじめての方は、[ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)から読むとよい。8 章 30 用語を図と一緒に、事前知識ゼロでも読める。*
+*ビットコインがはじめての方は、[初心者ガイド](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)から読むとよい。図解付きの短い 5 本で、事前知識ゼロでも読める。*
 
 ```mermaid
 timeline

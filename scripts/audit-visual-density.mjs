@@ -23,6 +23,12 @@
  * in for that area, chosen against this corpus's existing Mermaid diagrams'
  * typical line count.
  *
+ * A guide series' index page (the one entry in the series with no `partOf`
+ * -- every topic page's `partOf` points at it) is exempt from the 50%
+ * target: it is a navigation hub with a lookup table, not a teaching page,
+ * and forcing it to carry the same visual density as a topic page would
+ * mean padding it with a figure it has no genuine use for.
+ *
  * Targets EN entries by default (visual elements are shared with the JA
  * mirror via structural symmetry, so the ratio is essentially identical).
  *
@@ -142,7 +148,14 @@ function computeDensity(body, isGuide) {
   };
 }
 
-function classify(ratio, isGuide) {
+function classify(ratio, isGuide, isGuideIndex) {
+  if (isGuideIndex) {
+    // The series index page (no `partOf` -- every topic page points at it,
+    // it points at none) is a navigation hub with a lookup table, not a
+    // teaching page: it has no obligation to carry the 50% metaphor-visual
+    // density every topic page does. Informational only, never flagged.
+    return { mark: 'ℹ', label: '索引ページ (対象外)' };
+  }
   if (isGuide) {
     return ratio >= 0.50
       ? { mark: '✓', label: '目標達成 (>=50%)' }
@@ -165,11 +178,16 @@ for (const file of allFiles) {
   if (!fm || !EDITORIAL_TYPES.has(fm.type)) continue;
   if (kindFilter && fm.type !== kindFilter) continue;
   const isGuide = fm.type === 'guide';
+  // A guide series index page declares no `partOf` (every topic page in the
+  // series points its `partOf` at the index; the index points at none) --
+  // see classify()'s isGuideIndex branch for why it is scored separately.
+  const isGuideIndex = isGuide && !fm.partOf;
   const d = computeDensity(body, isGuide);
-  const c = classify(d.ratio, isGuide);
+  const c = classify(d.ratio, isGuide, isGuideIndex);
   results.push({
     file: path.relative(REPO_ROOT, file),
     type: fm.type,
+    isGuideIndex,
     bodyLines: d.bodyLines,
     visualLines: d.visualLines,
     ratio: d.ratio,
@@ -187,8 +205,13 @@ if (jsonOut) {
 
 const byType = {};
 for (const r of results) {
-  byType[r.type] ??= { total: 0, target: 0, floor: 0, caution: 0, flag: 0, zero: 0 };
+  byType[r.type] ??= { total: 0, target: 0, floor: 0, caution: 0, flag: 0, zero: 0, index: 0 };
   byType[r.type].total++;
+  if (r.isGuideIndex) {
+    // Series index -- not scored against the 50% target (see classify()).
+    byType[r.type].index++;
+    continue;
+  }
   if (r.type === 'guide') {
     // guide has one flat 50% target, not the three-tier scale below --
     // bucket it into target/flag only, leaving floor/caution at 0.
@@ -206,19 +229,19 @@ for (const r of results) {
 
 console.log(`=== 視覚密度監査結果 (言語: ${langFlag.toUpperCase()}) ===\n`);
 console.log('タイプ別分布:');
-console.log('  タイプ        | 全件 | 目標達成 | 床    | 注意  | フラグ | ゼロ');
-console.log('  -------------+------+----------+-------+-------+--------+------');
+console.log('  タイプ        | 全件 | 目標達成 | 床    | 注意  | フラグ | ゼロ | 索引');
+console.log('  -------------+------+----------+-------+-------+--------+------+------');
 for (const [type, c] of Object.entries(byType)) {
   const pad = (s, n) => String(s).padEnd(n);
   const padNum = (n, w) => String(n).padStart(w);
   console.log(
-    `  ${pad(type, 12)} | ${padNum(c.total, 4)} | ${padNum(c.target, 8)} | ${padNum(c.floor, 5)} | ${padNum(c.caution, 5)} | ${padNum(c.flag, 6)} | ${padNum(c.zero, 4)}`,
+    `  ${pad(type, 12)} | ${padNum(c.total, 4)} | ${padNum(c.target, 8)} | ${padNum(c.floor, 5)} | ${padNum(c.caution, 5)} | ${padNum(c.flag, 6)} | ${padNum(c.zero, 4)} | ${padNum(c.index, 4)}`,
   );
 }
 console.log();
 
 const threshold = thresholdPct / 100;
-const filtered = showAll ? results : results.filter((r) => r.ratio < threshold);
+const filtered = showAll ? results : results.filter((r) => !r.isGuideIndex && r.ratio < threshold);
 
 if (filtered.length === 0) {
   if (showAll) {
@@ -239,5 +262,5 @@ for (const r of filtered) {
 
 // Exit code 1 if any flagged entries -- guide's own 50% floor, everything
 // else the general 15% floor (surfaces as a violation when run in CI).
-const flagged = results.filter((r) => (r.type === 'guide' ? r.ratio < 0.50 : r.ratio < 0.15)).length;
+const flagged = results.filter((r) => !r.isGuideIndex && (r.type === 'guide' ? r.ratio < 0.50 : r.ratio < 0.15)).length;
 process.exit(flagged > 0 ? 1 : 0);

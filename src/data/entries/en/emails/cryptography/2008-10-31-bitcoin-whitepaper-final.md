@@ -53,7 +53,7 @@ relatedEntries:
 
 **See also:** [Early draft (October 3, 2008)](/BitcoinArchive/entries/emails/cryptography/2008-10-03-bitcoin-whitepaper-draft/)
 
-*[Editor: New to Bitcoin? Read the [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) first — 30 terms across 8 chapters with diagrams. The whitepaper assumes you already know what a UTXO, a coinbase transaction, and proof-of-work are.]*
+*[Editor: New to Bitcoin? Read [the beginner guide](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) first — five short pages with diagrams. The whitepaper assumes you already know what a UTXO, a coinbase transaction, and proof-of-work are.]*
 
 ## Bitcoin: A Peer-to-Peer Electronic Cash System
 

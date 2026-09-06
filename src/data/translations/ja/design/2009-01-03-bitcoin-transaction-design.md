@@ -34,6 +34,7 @@ relatedEntries:
   - analysis/2009-01-09-bitcoin-v01-serialization-boundaries
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
+  - analysis/2026-09-06-what-owning-a-bitcoin-actually-means
   - design/2009-01-03-bitcoin-block-chain-design
   - design/2009-01-03-bitcoin-p2p-network-design
   - design/2009-01-03-bitcoin-monetary-design
@@ -57,7 +58,7 @@ translationStatus: complete
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #2 — トランザクション設計** である。トランザクション層を端から端まで解説する。価値がどのように表現され、転送され、ロックされ、アンロックされるかを扱う。マイニングのインセンティブ、ブロック重量、手数料市場、ウォレットの使い勝手など、ビットコインのあらゆる要素は、ここで解説する構造の上に成り立っている。
 
-これらの概念がはじめての方は、[ビットコインの仕組み図解](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)が UTXO・Bitcoin Script・トランザクションを図と一緒に、事前知識ゼロで紹介している。本ページは同じトランザクション層を設計文書として扱う。
+これらの概念がはじめての方は、[ビットコインを持つとは、実際どういうことか](/BitcoinArchive/ja/entries/analysis/2026-09-06-what-owning-a-bitcoin-actually-means/)が UTXO・鍵・トランザクションを事前知識ゼロで紹介している。本ページは同じトランザクション層を、そちらでは扱わない Bitcoin Script の仕組みも含めて設計文書として扱う。
 
 トランザクション層は 3 つの問いに答える:
 

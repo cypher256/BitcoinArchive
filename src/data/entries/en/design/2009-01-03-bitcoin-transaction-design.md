@@ -34,6 +34,7 @@ relatedEntries:
   - analysis/2009-01-09-bitcoin-v01-serialization-boundaries
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
+  - analysis/2026-09-06-what-owning-a-bitcoin-actually-means
   - design/2009-01-03-bitcoin-block-chain-design
   - design/2009-01-03-bitcoin-p2p-network-design
   - design/2009-01-03-bitcoin-monetary-design
@@ -56,7 +57,7 @@ inlineLinkKeywords:
 
 This page is **L1 #2 — Transaction design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the transaction layer end-to-end: how value is represented, transferred, locked, and unlocked. Everything in Bitcoin — mining incentives, block weight, fee markets, wallet UX — rests on the structures described here.
 
-New to these concepts? The [visual glossary](/BitcoinArchive/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/) introduces UTXOs, Bitcoin Script, and transactions with diagrams and no prior knowledge assumed; this page is the design-document treatment of the same transaction layer.
+New to these concepts? [What owning a bitcoin actually means](/BitcoinArchive/entries/analysis/2026-09-06-what-owning-a-bitcoin-actually-means/) introduces UTXOs, keys, and transactions with no prior knowledge assumed; this page is the design-document treatment of the same transaction layer, including the Bitcoin Script mechanics that page does not cover.
 
 The transaction layer answers three questions:
 

@@ -93,6 +93,9 @@ These original Bitcoin Institute readings expose the source files and fixed revi
 - [Bitcoin cryptography design](https://bitcoin-institute.pages.dev/entries/design/2009-01-03-bitcoin-cryptography-design/): keys, signatures, hashes, and address derivation tied to the v0.1 source.
 - [Bitcoin transaction design](https://bitcoin-institute.pages.dev/entries/design/2009-01-03-bitcoin-transaction-design/): UTXO, Script, signature verification, and transaction structure from the launch implementation through later protocol changes.
 
+### Guides (6 entries)
+A zero-prior-knowledge beginner series: an index page plus five topic pages covering what a bitcoin is (the UTXO/receipt model, keys and signatures), how the shared ledger works (blocks, hashes, the peer-to-peer network), mining (proof-of-work, the nonce search, halving), the mempool and confirmations, and how the network resists tampering and double-spending (verification, the longest-chain rule). Uses custom metaphor illustrations rather than technical diagrams.
+
 ### Whitepapers (2 entries)
 Bitcoin whitepaper draft (October 3, 2008) and final version (October 31, 2008).
 

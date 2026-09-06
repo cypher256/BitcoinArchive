@@ -25,6 +25,8 @@ relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-block-chain-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - analysis/2026-09-06-what-miners-are-actually-racing-to-do
+  - analysis/2026-09-06-why-no-one-can-cheat-the-ledger
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - design/2009-01-03-bitcoin-p2p-network-design
   - design/2009-01-03-bitcoin-monetary-design

@@ -47,9 +47,10 @@ function hrefFor(e: (typeof GUIDE_SERIES)[number]) {
   return localePath(`/entries/analysis/${e.slug}/`, lang);
 }
 
+const stepNumber = (current ? current.step : 0) + 1;
 const stepLabel = lang === 'ja'
-  ? `ステップ ${current ? current.step : 0} / ${GUIDE_SERIES.length - 1}`
-  : `Step ${current ? current.step : 0} of ${GUIDE_SERIES.length - 1}`;
+  ? `ステップ ${stepNumber} / ${GUIDE_SERIES.length}`
+  : `Step ${stepNumber} of ${GUIDE_SERIES.length}`;
 const seriesLabel = lang === 'ja' ? '初心者ガイド' : 'Beginner guide';
 const prevLabel = lang === 'ja' ? '前へ' : 'Prev';
 const nextLabel = lang === 'ja' ? '次へ' : 'Next';

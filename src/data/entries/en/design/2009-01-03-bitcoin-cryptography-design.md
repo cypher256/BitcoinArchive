@@ -32,6 +32,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-system-design-overview
   - design/2009-01-03-bitcoin-transaction-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
+  - analysis/2026-09-06-what-owning-a-bitcoin-actually-means
   - analysis/2026-05-18-bitcoin-quantum-threat
   - design/2009-01-03-bitcoin-wallet-design
   - design/2009-01-03-bitcoin-security-model

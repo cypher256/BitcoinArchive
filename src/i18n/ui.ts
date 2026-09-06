@@ -62,6 +62,7 @@ export const ui = {
     'type.analysis': 'Analysis',
     'type.design': 'Design Document',
     'type.currency': 'Currency',
+    'type.guide': 'Guide',
     // Author byline labels — vary by entry type so e.g. a mailing-list
     // entry says "Posted by:" while a court document says "Filed by:".
     // Falls back to byline.default when an entry type is not listed.
@@ -405,6 +406,7 @@ export const ui = {
     'type.analysis': '分析',
     'type.design': '設計書',
     'type.currency': '通貨',
+    'type.guide': 'ガイド',
     'byline.article': '投稿',
     'byline.analysis': '著者',
     'byline.mailing-list': '投稿',

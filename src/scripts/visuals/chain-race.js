@@ -1,22 +1,25 @@
 // Two competing chains as a forked track: when two miners find a block at
 // nearly the same time the chain briefly splits, and everyone eventually
-// follows whichever branch grows longer.
+// follows whichever branch has more total mining effort behind it -- shown
+// here as extra blocks, since each additional block means more effort spent.
 import { svgFigure, esc, ARROWHEAD_DEFS } from './_shared.js';
 
 const LABELS = {
   en: {
-    title: 'Chains race, the longest wins',
-    desc: 'When two miners find a valid block at almost the same time, the network briefly splits into two competing chains. Everyone keeps mining on whichever chain they saw first, but as soon as one branch pulls ahead by one more block, the whole network switches to it and the shorter branch is abandoned.',
+    title: 'Chains race, the one with more work wins',
+    desc: 'When two miners find a valid block at almost the same time, the network briefly splits into two competing chains. Everyone keeps mining on whichever chain they saw first, but as soon as one branch has more total mining effort behind it -- usually just whichever one gets one more block first -- the whole network switches to it and the other branch is abandoned.',
     shared: 'shared history',
-    winner: 'longer chain -- everyone follows this one',
-    loser: 'shorter chain -- abandoned',
+    winner: 'more work behind it -- everyone follows this one',
+    loser: 'less work behind it -- abandoned',
+    caption: 'The branch with more total mining effort behind it wins; the other is dropped, and the work spent on it is wasted.',
   },
   ja: {
-    title: '鎖は競争し、長い方が勝つ',
-    desc: '2人のマイナーがほぼ同時に有効なブロックを見つけると、ネットワークは一時的に2本の鎖に分かれる。誰もが最初に見た鎖の上で採掘を続けるが、どちらか一方が1ブロックでも先に伸びると、ネットワーク全体がそちらへ乗り換え、短い方の鎖は捨てられる。',
+    title: '鎖は競争し、労力の多い方が勝つ',
+    desc: '2人のマイナーがほぼ同時に有効なブロックを見つけると、ネットワークは一時的に2本の鎖に分かれる。誰もが最初に見た鎖の上で採掘を続けるが、どちらか一方に注ぎ込まれた採掘労力の総量が上回ると(たいていは1ブロックでも先に伸びたほう)、ネットワーク全体がそちらへ乗り換え、もう一方の鎖は捨てられる。',
     shared: '共有の履歴',
-    winner: '長い方の鎖 -- 全員がこちらに従う',
-    loser: '短い方の鎖 -- 捨てられる',
+    winner: '労力がより多い -- 全員がこちらに従う',
+    loser: '労力がより少ない -- 捨てられる',
+    caption: '注ぎ込まれた採掘労力の総量がより多い枝が勝つ。もう一方は捨てられ、そこに費やされた労力は無駄になる。',
   },
 };
 
@@ -58,5 +61,5 @@ export function mount(host, lang) {
     botBlocks +
     botLine +
     `<text x="330" y="${botY + 66}" text-anchor="middle" fill="var(--color-text-muted)" font-size="12.5" font-family="var(--font-body, sans-serif)">${esc(L.loser)}</text>`;
-  host.innerHTML = svgFigure({ width: W, height: H, title: L.title, desc: L.desc, inner });
+  host.innerHTML = svgFigure({ width: W, height: H, title: L.title, desc: L.desc, inner, caption: L.caption });
 }

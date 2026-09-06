@@ -5,19 +5,21 @@ import { svgFigure, esc, ARROWHEAD_DEFS, arrow } from './_shared.js';
 const LABELS = {
   en: {
     title: 'From waiting room to block',
-    desc: 'Broadcast transactions sit loose in a shared waiting room until a miner picks a batch of them and seats them into the next block that departs. Transactions left behind simply wait for the next one.',
+    desc: 'Broadcast transactions sit loose in a waiting room each node keeps on its own until a miner assembles the next block, generally favoring whichever pay the most per byte. Transactions left behind simply wait for the next one.',
     waiting: 'Waiting room\n(the mempool)',
-    departing: 'Next block\n(departing now)',
+    departing: 'Next block\n(good payers board first)',
     left: 'still waiting\nfor next time',
     tx: 'tx',
+    caption: 'Each node keeps its own waiting room; a miner generally boards the best-paying transactions first, up to what fits in the next departing block.',
   },
   ja: {
     title: '待合室からブロックへ',
-    desc: '送信された取引は、いったん共有の待合室に集まる。マイナーがその中からいくつかを選び、次に出発するブロックに座らせる。選ばれなかった取引は、次の機会を待つだけ。',
+    desc: '送信された取引は、いったんノードごとの待合室に集まる。マイナーは次のブロックを組み立てるとき、たいていはサイズの割に多く支払っているものを優先的に選ぶ。選ばれなかった取引は、次の機会を待つだけ。',
     waiting: '待合室\n(メモリプール)',
-    departing: '次のブロック\n(まもなく出発)',
+    departing: '次のブロック\n(支払いの良いものから乗車)',
     left: '次を待つ',
     tx: 'tx',
+    caption: '待合室はノードごとに別々に持たれている。マイナーは、たいてい支払いの良い取引から優先的に、次に出発するブロックに乗る分だけを選んで乗せる。',
   },
 };
 
@@ -61,5 +63,5 @@ export function mount(host, lang) {
     `<text x="500" y="52" text-anchor="middle" fill="var(--color-text)" font-size="12.5" font-family="var(--font-body, sans-serif)">${L.departing.split('\n').map((l, i) => `<tspan x="500" y="${52 + i * 15}">${esc(l)}</tspan>`).join('')}</text>` +
     seats.join('') +
     `<text x="130" y="245" text-anchor="middle" fill="var(--color-text-muted)" font-size="11.5" font-family="var(--font-body, sans-serif)">${esc(L.left)}</text>`;
-  host.innerHTML = svgFigure({ width: W, height: H, title: L.title, desc: L.desc, inner });
+  host.innerHTML = svgFigure({ width: W, height: H, title: L.title, desc: L.desc, inner, caption: L.caption });
 }

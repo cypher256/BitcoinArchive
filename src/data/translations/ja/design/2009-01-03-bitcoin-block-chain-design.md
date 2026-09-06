@@ -22,6 +22,8 @@ relatedEntries:
   - design/2009-01-03-bitcoin-transaction-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-05-23-how-bitcoin-works-visual-glossary
+  - analysis/2026-09-06-how-transactions-become-a-shared-ledger
+  - analysis/2026-09-06-what-happens-while-a-payment-is-unconfirmed
   - design/2009-01-03-bitcoin-consensus-design
   - design/2009-01-03-bitcoin-p2p-network-design
   - design/2009-01-03-bitcoin-storage-design

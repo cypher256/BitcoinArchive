@@ -12,6 +12,7 @@ const LABELS = {
     reject: 'no match -- try another number',
     accept: 'match! this block is now valid',
     fp: [ '7a91...', 'e05c...', '2f88...', '0000c3...' ],
+    caption: 'There is no shortcut to a winning number -- only trying billions of them until one happens to work.',
   },
   ja: {
     title: 'マイニングは当たり番号探し',
@@ -20,6 +21,7 @@ const LABELS = {
     tryLabel: '試行',
     reject: '不一致 -- 別の数字を試す',
     accept: '一致! このブロックが有効になる',
+    caption: '当たり番号への近道はない。何十億通りも試し、たまたま当たるのを待つしかない。',
     fp: [ '7a91...', 'e05c...', '2f88...', '0000c3...' ],
   },
 };
@@ -57,5 +59,5 @@ export function mount(host, lang) {
     tries +
     cards +
     captions;
-  host.innerHTML = svgFigure({ width: W, height: H, title: L.title, desc: L.desc, inner });
+  host.innerHTML = svgFigure({ width: W, height: H, title: L.title, desc: L.desc, inner, caption: L.caption });
 }

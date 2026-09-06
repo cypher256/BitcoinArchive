@@ -518,8 +518,8 @@ participants:
 
 ### Hero Images
 
-Every editorial entry (`article`, `analysis`, `biography`, `design`)
-carries a hero illustration, embedded as a plain markdown image
+Every editorial entry (`article`, `analysis`, `biography`, `design`,
+`currency`, `guide`) carries a hero illustration, embedded as a plain markdown image
 immediately below the frontmatter's closing
 `---`, before the first body paragraph:
 
