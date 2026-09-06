@@ -34,10 +34,10 @@ const participantsTs = readFileSync(PARTICIPANTS_FILE, 'utf8');
 
 // `properNameTranslationsJa`: already-paired "Full EN Name" -> "JA katakana"
 // (see scripts/check-ja-names.mjs, which parses the same file the same way).
-function parseNameValueObject(source, exportName) {
+function parseNameValueObject(source, exportName, filePath) {
   const re = new RegExp(`${exportName}\\s*:\\s*Record<[^>]+>\\s*=\\s*\\{([\\s\\S]*?)\\n\\};`);
   const m = source.match(re);
-  if (!m) throw new Error(`Failed to parse ${exportName} from ${PARTICIPANTS_FILE}`);
+  if (!m) throw new Error(`Failed to parse ${exportName} from ${filePath}`);
   const map = new Map();
   for (const entry of m[1].matchAll(/'([^']+)'\s*:\s*'([^']+)'/g)) {
     map.set(entry[1], entry[2]);
@@ -45,8 +45,18 @@ function parseNameValueObject(source, exportName) {
   return map;
 }
 
-const properNameTranslationsJa = parseNameValueObject(participantsTs, 'properNameTranslationsJa');
-const participantDisplayNamesJaBySlug = parseNameValueObject(participantsTs, 'participantDisplayNamesJaBySlug');
+const properNameTranslationsJa = parseNameValueObject(participantsTs, 'properNameTranslationsJa', PARTICIPANTS_FILE);
+const participantDisplayNamesJaBySlug = parseNameValueObject(participantsTs, 'participantDisplayNamesJaBySlug', PARTICIPANTS_FILE);
+
+// JA display labels for entry `tags:` (e.g. "beginner-guide" -> "初心者ガイド").
+// Frontmatter `tags:` is always the canonical English slug in both EN and
+// JA entries -- src/i18n/utils.ts's translateTag() does this same lookup
+// client-side for rendering. Without also indexing the translated label,
+// a JA search for the label text (what a JA reader actually sees and would
+// type) never matches, even after tags are indexed at all.
+const TAGS_FILE = 'src/i18n/tags.ts';
+const tagsTs = readFileSync(TAGS_FILE, 'utf8');
+const tagTranslations = parseNameValueObject(tagsTs, 'tagTranslations', TAGS_FILE);
 
 // Currency entries have no per-currency i18n table (unlike people); their
 // canonical EN/JA name pair only exists in the entry titles themselves.
@@ -97,15 +107,21 @@ function buildJaSynonyms(slugToEnName) {
 // because the same index is shared between deployments with different
 // base paths. The search page prepends the runtime base at hit time.
 
+// --dry-run builds records and prints a sample without touching Algolia at
+// all -- no credentials required, no client created, no network calls.
+// Lets a change to record-building or indexSettings be checked locally
+// before a push (which, via deploy-cloudflare.yml, re-indexes production).
+const DRY_RUN = process.argv.includes('--dry-run');
+
 const APP_ID = process.env.ALGOLIA_APP_ID;
 const ADMIN_KEY = process.env.ALGOLIA_ADMIN_KEY;
 
-if (!APP_ID || !ADMIN_KEY) {
+if (!DRY_RUN && (!APP_ID || !ADMIN_KEY)) {
   console.log('Algolia index skipped (ALGOLIA_APP_ID / ALGOLIA_ADMIN_KEY not set)');
   process.exit(0);
 }
 
-const client = algoliasearch(APP_ID, ADMIN_KEY);
+const client = DRY_RUN ? null : algoliasearch(APP_ID, ADMIN_KEY);
 
 const EN_DIR = 'src/data/entries/en';
 const JA_DIR = 'src/data/translations/ja';
@@ -155,6 +171,29 @@ function parseParticipants(fm) {
   return out;
 }
 
+// Parses `tags:` in either of its two valid forms:
+//   - inline: `tags: []` or `tags: ["a", "b"]` -- a JSON array literal
+//   - block list: `tags:\n  - "a"\n  - "b"` (same dedent-terminated shape
+//     as parseParticipants above)
+// An inline form that isn't valid JSON throws rather than silently
+// returning an empty array -- schema (`z.array(z.string())`) permits this
+// form, so failing to parse it must not look like "no tags".
+function parseTags(fm) {
+  const lines = fm.split('\n');
+  const idx = lines.findIndex((l) => /^tags:/.test(l));
+  if (idx < 0) return [];
+  const rest = lines[idx].match(/^tags:\s*(.*)$/)[1].trim();
+  if (rest !== '') return JSON.parse(rest);
+  const out = [];
+  for (let i = idx + 1; i < lines.length; i++) {
+    const line = lines[i];
+    if (/^\S/.test(line)) break; // dedent to the next top-level key ends the block
+    const item = line.match(/^\s*-\s*"?([^"\n]*?)"?\s*$/);
+    if (item) out.push(item[1]);
+  }
+  return out;
+}
+
 function readEntries(baseDir, lang) {
   const entries = [];
 
@@ -171,16 +210,53 @@ function readEntries(baseDir, lang) {
         const fm = fmMatch[1];
         const body = fmMatch[2].trim();
 
+        const fmLines = fm.split('\n');
+
         // Parse frontmatter. Grabs the whole rest of the line rather than
         // stopping at the first `"`, then strips/unescapes a surrounding
         // quoted string -- the previous `"?([^"\n]*)"?` form stopped at the
         // first quote character it saw, silently truncating any title or
         // description containing an escaped internal quote (e.g. a quoted
         // phrase: `title: "X says \"Y\""` came back as just `X says \`).
+        // Also handles YAML block scalars (`key: |` / `key: >`, with `-`/`+`
+        // chomping suffixes): the block body is every following line up to
+        // the next dedent (same terminator rule as parseParticipants/
+        // parseTags), `|` keeping newlines and `>` folding them to spaces.
+        // Exact chomping-indicator fidelity isn't attempted -- trailing
+        // blank lines are simply dropped, which is enough for indexed
+        // search text.
         const get = (key) => {
-          const m = fm.match(new RegExp(`^${key}:\\s*(.*)$`, 'm'));
-          if (!m) return '';
-          let v = m[1].trim();
+          const idx = fmLines.findIndex((l) => new RegExp(`^${key}:`).test(l));
+          if (idx < 0) return '';
+          const rest = fmLines[idx].match(new RegExp(`^${key}:\\s*(.*)$`))[1].trim();
+          const block = rest.match(/^([|>])[+-]?$/);
+          if (block) {
+            const bodyLines = [];
+            for (let i = idx + 1; i < fmLines.length; i++) {
+              const line = fmLines[i];
+              if (/^\S/.test(line)) break;
+              bodyLines.push(line.replace(/^ {2}/, ''));
+            }
+            while (bodyLines.length && bodyLines[bodyLines.length - 1] === '') bodyLines.pop();
+            if (block[1] === '|') return bodyLines.join('\n');
+            // Folded (`>`): a single line break between two non-blank
+            // lines folds to a space, but a blank line is a paragraph
+            // break and must stay a newline -- joining every line with
+            // a plain space would silently merge separate paragraphs.
+            const paragraphs = [];
+            let para = [];
+            for (const line of bodyLines) {
+              if (line === '') {
+                if (para.length) paragraphs.push(para.join(' '));
+                para = [];
+              } else {
+                para.push(line);
+              }
+            }
+            if (para.length) paragraphs.push(para.join(' '));
+            return paragraphs.join('\n');
+          }
+          let v = rest;
           if (v.length >= 2 && v.startsWith('"') && v.endsWith('"')) {
             v = v.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');
           }
@@ -195,6 +271,12 @@ function readEntries(baseDir, lang) {
         const description = get('description');
         const isSatoshi = get('isSatoshi') === 'true';
         const participants = parseParticipants(fm);
+        const tags = parseTags(fm);
+        const tagLabels = lang === 'ja'
+          ? tags.map((tag) => participantDisplayNamesJaBySlug.get(tag) ?? tagTranslations.get(tag) ?? tag)
+          : tags;
+        const editorNote = get('editorNote');
+        const xHandle = get('xHandle');
 
         // Entry id keeps dots (matches git-dates.json keys); the URL slug
         // strips them (matches Astro's slug generation).
@@ -242,6 +324,10 @@ function readEntries(baseDir, lang) {
           body: truncatedBody,
           isSatoshi,
           participants,
+          tags,
+          tagLabels,
+          editorNote,
+          xHandle,
           createdTs: gd.createdAt || '',
           updatedTs: gd.updatedAt || '',
           url,
@@ -262,6 +348,37 @@ async function main() {
 
   console.log(`EN: ${enEntries.length}, JA: ${jaEntries.length}`);
 
+  // editorNote (like body) is searchable but never retrieved verbatim in a
+  // hit -- it's prose meant to improve match recall, not a compact field a
+  // result card would display (same reasoning check-link-color-confusion.mjs
+  // applies to CSS: a field can be a real, deliberate match signal without
+  // also being surfaced as UI content).
+  const EN_SETTINGS = {
+    searchableAttributes: ['title', 'description', 'body', 'author', 'tagLabels', 'editorNote', 'xHandle'],
+    attributesForFaceting: ['author', 'type', 'source', 'isSatoshi', 'tags'],
+    attributesToRetrieve: ['title', 'date', 'author', 'url', 'description', 'type', 'isSatoshi', 'participants', 'tagLabels', 'xHandle', 'createdTs', 'updatedTs'],
+    attributesToHighlight: ['title', 'body', 'description'],
+    attributesToSnippet: ['body:40'],
+    ranking: ['typo', 'geo', 'words', 'filters', 'proximity', 'attribute', 'exact', 'custom'],
+    customRanking: ['desc(isSatoshi)'],
+  };
+  const JA_SETTINGS = {
+    ...EN_SETTINGS,
+    // Japanese-specific: use kuromoji tokenizer
+    indexLanguages: ['ja'],
+    queryLanguages: ['ja'],
+  };
+
+  if (DRY_RUN) {
+    const sample = jaEntries.find((e) => e.tags.includes('beginner-guide')) || jaEntries[0];
+    console.log('Dry run -- sample JA record:');
+    console.log(JSON.stringify(sample, null, 2));
+    console.log('Dry run -- EN indexSettings:', JSON.stringify(EN_SETTINGS, null, 2));
+    console.log('Dry run -- JA indexSettings:', JSON.stringify(JA_SETTINGS, null, 2));
+    console.log('Dry run complete, no Algolia calls made.');
+    return;
+  }
+
   // Index EN
   console.log('Indexing EN...');
   const enIndex = 'bitcoin_archive_en';
@@ -273,15 +390,7 @@ async function main() {
   // Configure EN index
   await client.setSettings({
     indexName: enIndex,
-    indexSettings: {
-      searchableAttributes: ['title', 'description', 'body', 'author'],
-      attributesForFaceting: ['author', 'type', 'source', 'isSatoshi'],
-      attributesToRetrieve: ['title', 'date', 'author', 'url', 'description', 'type', 'isSatoshi', 'participants', 'createdTs', 'updatedTs'],
-      attributesToHighlight: ['title', 'body', 'description'],
-      attributesToSnippet: ['body:40'],
-      ranking: ['typo', 'geo', 'words', 'filters', 'proximity', 'attribute', 'exact', 'custom'],
-      customRanking: ['desc(isSatoshi)'],
-    },
+    indexSettings: EN_SETTINGS,
   });
   console.log(`EN indexed: ${enEntries.length} records`);
 
@@ -296,18 +405,7 @@ async function main() {
   // Configure JA index with Japanese settings
   await client.setSettings({
     indexName: jaIndex,
-    indexSettings: {
-      searchableAttributes: ['title', 'description', 'body', 'author'],
-      attributesForFaceting: ['author', 'type', 'source', 'isSatoshi'],
-      attributesToRetrieve: ['title', 'date', 'author', 'url', 'description', 'type', 'isSatoshi', 'participants', 'createdTs', 'updatedTs'],
-      attributesToHighlight: ['title', 'body', 'description'],
-      attributesToSnippet: ['body:40'],
-      ranking: ['typo', 'geo', 'words', 'filters', 'proximity', 'attribute', 'exact', 'custom'],
-      customRanking: ['desc(isSatoshi)'],
-      // Japanese-specific: use kuromoji tokenizer
-      indexLanguages: ['ja'],
-      queryLanguages: ['ja'],
-    },
+    indexSettings: JA_SETTINGS,
   });
   console.log(`JA indexed: ${jaEntries.length} records`);
 
