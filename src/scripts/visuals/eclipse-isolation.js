@@ -51,7 +51,7 @@ function peerNode(cx, cy, label, colorVar) {
 
 export function mount(host, lang) {
   const L = LABELS[lang] || LABELS.en;
-  const W = 780, H = 400;
+  const W = 780, H = 280;
 
   const normalCx = 190, normalCy = 130;
   const eclipsedCx = 590, eclipsedCy = 130;

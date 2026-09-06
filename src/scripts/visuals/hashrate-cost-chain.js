@@ -53,7 +53,7 @@ function box(x, y, w, h, label, opts = {}) {
 
 export function mount(host, lang) {
   const L = LABELS[lang] || LABELS.en;
-  const W = 900, H = 300;
+  const W = 900, H = 190;
   const boxW = 120, boxH = 50;
 
   const subsidyX = 20, subsidyY = 30;

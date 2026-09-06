@@ -55,7 +55,7 @@ function cardIcon(cx, cy, colorVar) {
 
 export function mount(host, lang) {
   const L = LABELS[lang] || LABELS.en;
-  const W = 860, H = 260;
+  const W = 860, H = 170;
   const boxW = 150, boxH = 56;
   const y = 90;
 

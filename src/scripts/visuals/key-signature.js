@@ -62,7 +62,7 @@ function mailboxIcon(cx, cy, label) {
 
 export function mount(host, lang) {
   const L = LABELS[lang] || LABELS.en;
-  const W = 640, H = 260;
+  const W = 640, H = 285;
   const inner =
     ARROWHEAD_DEFS +
     keyIcon(70, 60, L.priv) +
@@ -71,7 +71,7 @@ export function mount(host, lang) {
     arrow(320, 60, 400, 60, {}) +
     mailboxIcon(440, 60, L.addr) +
     arrow(70, 100, 70, 175, { dashed: true }) +
-    `<rect x="10" y="185" width="200" height="60" rx="8" fill="var(--color-bg-alt)" stroke="var(--color-border)" stroke-width="1.5"/>` +
+    `<rect x="10" y="185" width="200" height="80" rx="8" fill="var(--color-bg-alt)" stroke="var(--color-border)" stroke-width="1.5"/>` +
     `<text x="110" y="205" text-anchor="middle" fill="var(--color-text)" font-size="12.5" font-family="var(--font-body, sans-serif)">${L.sign.split('\n').map((l, i) => `<tspan x="110" y="${205 + i * 14}">${esc(l)}</tspan>`).join('')}</text>`;
   host.innerHTML = svgFigure({ width: W, height: H, title: L.title, desc: L.desc, inner, caption: L.caption });
 }

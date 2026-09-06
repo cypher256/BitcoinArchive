@@ -29,8 +29,8 @@ const LABELS = {
 function attemptCard(x, y, fp, ok) {
   const color = ok ? 'var(--color-satoshi)' : 'var(--color-text-muted)';
   const mark = ok
-    ? `<path d="M${x + 6},${y + 15} l6,7 l12,-16" fill="none" stroke="${color}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`
-    : `<path d="M${x + 6},${y + 6} l16,16 M${x + 22},${y + 6} l-16,16" stroke="${color}" stroke-width="3" stroke-linecap="round"/>`;
+    ? `<path d="M6,15 l6,7 l12,-16" fill="none" stroke="${color}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`
+    : `<path d="M6,6 l16,16 M22,6 l-16,16" stroke="${color}" stroke-width="3" stroke-linecap="round"/>`;
   return (
     `<rect x="${x}" y="${y}" width="90" height="50" rx="6" fill="var(--color-bg-alt)" stroke="${color}" stroke-width="${ok ? 2.5 : 1.5}"/>` +
     `<text x="${x + 45}" y="${y + 20}" text-anchor="middle" fill="var(--color-text)" font-size="11" font-family="var(--font-mono, monospace)">${esc(fp)}</text>` +
@@ -40,7 +40,7 @@ function attemptCard(x, y, fp, ok) {
 
 export function mount(host, lang) {
   const L = LABELS[lang] || LABELS.en;
-  const W = 640, H = 280;
+  const W = 640, H = 310;
   const rowY = [30, 95, 160, 225];
   const cards = L.fp.map((fp, i) => attemptCard(230, rowY[i], fp, i === L.fp.length - 1)).join('');
   const captions = L.fp

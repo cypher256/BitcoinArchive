@@ -34,7 +34,7 @@ function gate(cx, y, label) {
 
 export function mount(host, lang) {
   const L = LABELS[lang] || LABELS.en;
-  const W = 780, H = 260;
+  const W = 780, H = 235;
   const y = 90;
   const startX = 110;
   const step = 70;

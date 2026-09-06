@@ -49,7 +49,7 @@ function multiline(x, y, text, lineHeight = 12) {
 
 export function mount(host, lang) {
   const L = LABELS[lang] || LABELS.en;
-  const W = 780, H = 300;
+  const W = 780, H = 200;
   const y = 70;
 
   const dieX = 55;

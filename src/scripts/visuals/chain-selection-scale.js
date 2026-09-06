@@ -44,7 +44,7 @@ function multiline(x, y, text, lineHeight = 12) {
 
 export function mount(host, lang) {
   const L = LABELS[lang] || LABELS.en;
-  const W = 820, H = 400;
+  const W = 820, H = 335;
 
   const y = 40;
   const incomingX = 50;

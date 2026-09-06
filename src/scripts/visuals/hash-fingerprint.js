@@ -50,7 +50,7 @@ function fingerprint(cx, cy, r, colorVar) {
 
 export function mount(host, lang) {
   const L = LABELS[lang] || LABELS.en;
-  const W = 620, H = 260;
+  const W = 620, H = 225;
   const inner =
     ARROWHEAD_DEFS +
     doc(20, 20, L.doc1) +

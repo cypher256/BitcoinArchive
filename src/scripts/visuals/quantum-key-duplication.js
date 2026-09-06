@@ -56,7 +56,7 @@ function lockIcon(cx, cy, colorVar) {
 
 export function mount(host, lang) {
   const L = LABELS[lang] || LABELS.en;
-  const W = 1040, H = 220;
+  const W = 1040, H = 150;
   const boxW = 150, boxH = 70;
   const y = 60;
   const step = 172;

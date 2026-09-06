@@ -41,7 +41,7 @@ function blockNode(cx, cy, colorVar, dashed) {
 
 export function mount(host, lang) {
   const L = LABELS[lang] || LABELS.en;
-  const W = 820, H = 340;
+  const W = 820, H = 270;
 
   const honestY = 90, attackerY = 230;
   const startX = 180, step = 90;

@@ -60,8 +60,8 @@ export function mount(host, lang) {
   const W = 780, H = 420;
   const boxW = 160, boxH = 56;
 
-  const inputX = 30, inputY = 30;
-  const drawerX = 300, drawerY = 30;
+  const inputX = 30, inputY = 55;
+  const drawerX = 300, drawerY = 55;
   const basementX = 300, basementY = 220;
   const foundX = 560, foundY = 220;
   const notfoundX = 560, notfoundY = 340;
@@ -70,7 +70,7 @@ export function mount(host, lang) {
     ARROWHEAD_DEFS +
     box(inputX, inputY, boxW, boxH, L.input) +
     arrow(inputX + boxW, inputY + boxH / 2, drawerX, drawerY + boxH / 2, {}) +
-    drawerIcon(drawerX + boxW / 2, drawerY - 30, 'var(--color-hero-subtitle)') +
+    drawerIcon(drawerX + boxW / 2, drawerY - 25, 'var(--color-hero-subtitle)') +
     box(drawerX, drawerY, boxW, boxH, L.drawer, { stroke: 'var(--color-hero-subtitle)' }) +
     `<path d="M ${drawerX + boxW},${drawerY + boxH - 4} H ${foundX + boxW / 2 - 40} V ${foundY}" fill="none" stroke="var(--color-accent)" stroke-width="2" marker-end="url(#v-arrowhead)"/>` +
     `<text x="${drawerX + boxW + 12}" y="${drawerY + boxH - 34}" fill="var(--color-accent)" font-size="9.5" font-family="var(--font-body, sans-serif)">${multiline(drawerX + boxW + 12, drawerY + boxH - 34, L.hit, 12)}</text>` +
