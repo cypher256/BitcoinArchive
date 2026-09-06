@@ -562,7 +562,7 @@ Good candidates:
    body inline links handle the strong subset, also bidirectionally.
 
    **Scope: editorial types only** (`article`, `analysis`, `biography`,
-   `design`). Primary-source types (`correspondence`, `mailing-list`,
+   `design`, `currency`, `guide`). Primary-source types (`correspondence`, `mailing-list`,
    `forum-post`, `bip`, `whitepaper`, `court-document`, `tweet`) are
    **excluded** from this rule — their bodies are the verbatim source
    record and must not carry editor-inserted prose for any purpose,

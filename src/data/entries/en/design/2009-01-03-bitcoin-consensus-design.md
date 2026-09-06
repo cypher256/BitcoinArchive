@@ -26,6 +26,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-block-chain-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-09-06-what-miners-are-actually-racing-to-do
+  - analysis/2026-09-06-what-happens-while-a-payment-is-unconfirmed
   - analysis/2026-09-06-why-no-one-can-cheat-the-ledger
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - design/2009-01-03-bitcoin-p2p-network-design
@@ -55,6 +56,8 @@ This page is **L1 #4 — Consensus design** in the [design-document series](/Bit
 Consensus is Bitcoin's substitute for a central authority. Every full node independently evaluates every block against the same set of deterministic rules. No block is accepted on trust; no node defers to another node's judgment. The result is a system in which thousands of machines converge on a single transaction history without coordination, voting, or leadership election.
 
 The page covers five areas: the proof-of-work puzzle that makes block production costly, the difficulty adjustment that regulates block frequency, the validation rules that define a legal block, the fork-handling logic that resolves competing chains, and the finality model that quantifies confirmation security.
+
+New to these concepts? [What miners are actually racing to do](/BitcoinArchive/entries/analysis/2026-09-06-what-miners-are-actually-racing-to-do/) and [why no one can cheat the ledger](/BitcoinArchive/entries/analysis/2026-09-06-why-no-one-can-cheat-the-ledger/) introduce the mining race and the rules that keep it honest with no prior knowledge assumed; this page is the design-document treatment of the same mechanisms.
 
 Where behavior differs between the Satoshi-era implementation (v0.1, January 2009) and modern Bitcoin Core (v27+ baseline), both are noted.
 

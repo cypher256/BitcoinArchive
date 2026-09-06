@@ -44,6 +44,8 @@ translationStatus: complete
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #3「ブロック・チェーン設計」** である。ブロック・チェーン層を扱う。トランザクションがブロックにバッチされる方法、ブロックがチェーンにリンクされる方法、ノードが権威あるチェーン先端を選択する方法を解説する。
 
+これらの概念がはじめての方は、[取引はどうやって共有台帳になるのか](/BitcoinArchive/ja/entries/analysis/2026-09-06-how-transactions-become-a-shared-ledger/)がブロックとチェーンを事前知識ゼロで紹介している。本ページは同じ構造を設計文書として扱う。
+
 [トランザクション設計ページ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)は個々のトランザクション（入力、出力、スクリプト、署名）を扱った。本ページはそこから 1 段上がり、それらのトランザクションを永続的かつ全体的に順序付ける構造を扱う。
 
 3 つの問いで素材を整理する:

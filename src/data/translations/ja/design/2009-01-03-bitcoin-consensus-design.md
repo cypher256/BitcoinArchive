@@ -26,6 +26,7 @@ relatedEntries:
   - design/2009-01-03-bitcoin-block-chain-design
   - emails/cryptography/2008-10-31-bitcoin-whitepaper-final
   - analysis/2026-09-06-what-miners-are-actually-racing-to-do
+  - analysis/2026-09-06-what-happens-while-a-payment-is-unconfirmed
   - analysis/2026-09-06-why-no-one-can-cheat-the-ledger
   - analysis/2026-05-18-mining-reward-exhaustion-fee-only-future
   - design/2009-01-03-bitcoin-p2p-network-design
@@ -54,6 +55,8 @@ translationStatus: complete
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L1 #4「コンセンサス設計」** である。[ブロック・チェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)ページの直接の後続である。前ページがヘッダー、マークルツリー、ハッシュの連鎖といったデータ構造を記述したのに対し、本ページはどのチェーンが有効でどのチェーン先端が勝つかを決定する規則を記述する。
 
 合意形成は、ビットコインにおいて中央集権的な権威に代わるものである。すべてのフルノードがすべてのブロックを同一の決定論的規則集に対して独立に評価する。信頼に基づいてブロックを受理することはなく、他のノードの判断に委ねることもない。その結果、数千の機械が調整、投票、リーダー選出なしに単一の取引履歴に収束するシステムが実現する。
+
+これらの概念がはじめての方は、[マイナーたちは実際、何を競っているのか](/BitcoinArchive/ja/entries/analysis/2026-09-06-what-miners-are-actually-racing-to-do/)と[なぜ誰も台帳をごまかせないのか](/BitcoinArchive/ja/entries/analysis/2026-09-06-why-no-one-can-cheat-the-ledger/)が、採掘競争とそれを誠実に保つ規則を事前知識ゼロで紹介している。本ページは同じ仕組みを設計文書として扱う。
 
 本ページは 5 つの領域を扱う。ブロック生成を計算上高コストにするプルーフ・オブ・ワークパズル、ブロック頻度を調節する難易度調整、合法なブロックを定義する検証規則、競合するチェーンを解決するフォーク処理ロジック、承認の安全性を定量化するファイナリティモデル。
 

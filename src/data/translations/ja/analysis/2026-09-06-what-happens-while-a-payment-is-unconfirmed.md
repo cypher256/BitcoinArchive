@@ -17,6 +17,7 @@ translationStatus: complete
 partOf: "analysis/2026-05-23-how-bitcoin-works-visual-glossary"
 relatedEntries:
   - "design/2009-01-03-bitcoin-block-chain-design"
+  - "design/2009-01-03-bitcoin-consensus-design"
 ---
 
 ![保留中の取引カードで混み合う待合室パネルと、その傍らで数枚を乗せて出発していく列車のようなブロック](/BitcoinArchive/images/analysis/2026-09-06-what-happens-while-a-payment-is-unconfirmed-hero.png)

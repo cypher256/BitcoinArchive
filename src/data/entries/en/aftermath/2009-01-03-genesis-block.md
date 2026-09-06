@@ -61,7 +61,7 @@ The block hash:
 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
 ```
 
-For the structural reading — why the genesis is hardcoded, why the coinbase is unspendable, why the next block (Block 1) appears five days later despite the 10-minute target — see the [genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/), surveyed alongside the [2024 Bitcoin Magazine treatment of the same gap](/BitcoinArchive/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/).
+For the structural reading — why the genesis is hardcoded, why the coinbase is unspendable, why the next block (Block 1) appears five days later despite the 10-minute target — see the [genesis-block hardcode analysis](/BitcoinArchive/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/), surveyed alongside the [2024 Bitcoin Magazine treatment of the same gap](/BitcoinArchive/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/). For a plain-language walkthrough of how blocks like this one chain together at all, see [how transactions become a shared ledger](/BitcoinArchive/entries/analysis/2026-09-06-how-transactions-become-a-shared-ledger/).
 
 *[Context: The Times headline embedded in the genesis-block coinbase is treated, in the novel [*Genesis: The Disappearance of the Founder and the Promise*](/BitcoinArchive/novel/), as the protagonist's single recorded emotional gesture — the one exception in his otherwise consistent public silence.]*
 

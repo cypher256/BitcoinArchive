@@ -64,7 +64,7 @@ translationStatus: complete
 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
 ```
 
-なぜジェネシスがハードコードなのか、なぜコインベースが動かせないのか、なぜ次のブロック（ブロック 1）が 10 分目標にもかかわらず 5 日後に出現するのか。構造的な読みは[ジェネシスブロック・ハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)を参照。同じ 5 日のギャップを扱った [2024 年 Bitcoin Magazine の整理](/BitcoinArchive/ja/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/)と並べて読むとよい。
+なぜジェネシスがハードコードなのか、なぜコインベースが動かせないのか、なぜ次のブロック（ブロック 1）が 10 分目標にもかかわらず 5 日後に出現するのか。構造的な読みは[ジェネシスブロック・ハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)を参照。同じ 5 日のギャップを扱った [2024 年 Bitcoin Magazine の整理](/BitcoinArchive/ja/entries/aftermath/2024-10-01-bitcoin-magazine-genesis-block-5-day-mystery/)と並べて読むとよい。こうしたブロック同士がそもそもどうやって鎖状につながるのかを平易に知りたい場合は、[取引はどうやって共有台帳になるのか](/BitcoinArchive/ja/entries/analysis/2026-09-06-how-transactions-become-a-shared-ledger/)を参照。
 
 *[補足：ジェネシスブロックのコインベースに刻まれたタイムズの見出しは、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』で、公の場では一度も感情を見せなかった主人公が残した唯一の例外として読まれる。]*
 

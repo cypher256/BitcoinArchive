@@ -16,6 +16,7 @@ tags:
 partOf: "analysis/2026-05-23-how-bitcoin-works-visual-glossary"
 relatedEntries:
   - "design/2009-01-03-bitcoin-block-chain-design"
+  - "design/2009-01-03-bitcoin-consensus-design"
 ---
 
 ![A crowded waiting-room panel of pending transaction cards beside a departing train-like block carrying a seated few](/BitcoinArchive/images/analysis/2026-09-06-what-happens-while-a-payment-is-unconfirmed-hero.png)

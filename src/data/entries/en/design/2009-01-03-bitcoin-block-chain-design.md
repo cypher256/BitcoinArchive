@@ -43,6 +43,8 @@ inlineLinkKeywords:
 
 This page is **L1 #3 — Block & chain design** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the block and chain layer: how transactions are batched into blocks, how blocks are linked into a chain, and how nodes select the authoritative chain tip.
 
+New to these concepts? [How transactions become a shared ledger](/BitcoinArchive/entries/analysis/2026-09-06-how-transactions-become-a-shared-ledger/) introduces blocks and the chain with no prior knowledge assumed; this page is the design-document treatment of the same structures.
+
 The [transaction design page](/BitcoinArchive/entries/design/2009-01-03-bitcoin-transaction-design/) described individual transactions — inputs, outputs, scripts, and signatures. This page moves one level up: the structures that make those transactions permanent and globally ordered.
 
 Three questions organize the material:

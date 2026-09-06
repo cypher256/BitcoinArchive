@@ -116,4 +116,4 @@ NYT 調査への応答としてバック自身が 2026 年 4 月に X に投稿�
 
 バックのビットコイン以前の記録については[アダム・バック伝記](/BitcoinArchive/ja/participants/adam-back/)を、この告知を法医学的に読み解いた内容については[アダム・バック同定仮説](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)を参照。§1.2 は Hashcash 著者という指紋を v0.1 コードベースと突き合わせた法医学的証拠を検討し、§1.4 は Hashcash の貨幣カテゴリ位置付けが本 1997 年投稿からビットコインの 2009 年 1 月リリースまで描く 11 年間の弧を辿る。
 
-ビットコインの後の構成要素合成、すなわち最長チェーン合意形成規則、UTXO モデル、マイニング報酬による発行、2,100 万通貨上限、難易度調整アルゴリズムは、[ビットコイン設計系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)で扱われている。
+ビットコインの後の構成要素合成、すなわち最長チェーン合意形成規則、UTXO モデル、マイニング報酬による発行、2,100 万通貨上限、難易度調整アルゴリズムは、[ビットコイン設計系譜](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-design-lineage/)で扱われている。同じプルーフ・オブ・ワークの発想がビットコインの採掘競争になる過程を平易に知りたい場合は、[マイナーたちは実際、何を競っているのか](/BitcoinArchive/ja/entries/analysis/2026-09-06-what-miners-are-actually-racing-to-do/)を参照。
