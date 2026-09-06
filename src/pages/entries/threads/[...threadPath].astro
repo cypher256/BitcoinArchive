@@ -254,11 +254,11 @@ const breadcrumbs = [
   }
 </style>
 
-<script is:inline>
+<script>
 // Rewrite in-thread links to anchor links
 (function() {
   var msgIds = new Set();
-  var pathToAnchor = {};
+  var pathToAnchor: Record<string, string> = {};
   document.querySelectorAll('.message[id]').forEach(function(el) {
     if (!el.id) return;
     msgIds.add(el.id);

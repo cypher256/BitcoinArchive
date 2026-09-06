@@ -376,13 +376,14 @@ const t = useTranslations(lang);
   }
 </style>
 
-<script is:inline>
+<script>
 (function() {
   // 配色モード 3-way 切替: light → dark → system → light …
   // 状態は localStorage.mode に保存。null = system (OS 設定追従)
   var modeBtn = document.querySelector('[data-mode-toggle]');
   if (modeBtn) {
-    function modeLabel(state) {
+    var btn = modeBtn;
+    function modeLabel(state: string | null) {
       // state は次に遷移する状態を表す aria-label として読まれる
       if (state === 'light') return 'Switch to dark mode';
       if (state === 'dark') return 'Switch to system mode';
@@ -394,10 +395,10 @@ const t = useTranslations(lang);
     function refreshLabel() {
       var cur = readMode();
       var next = cur === 'light' ? 'dark' : cur === 'dark' ? null : 'light';
-      modeBtn.setAttribute('aria-label', modeLabel(next));
+      btn.setAttribute('aria-label', modeLabel(next));
     }
     refreshLabel();
-    modeBtn.addEventListener('click', function () {
+    btn.addEventListener('click', function () {
       var cur = readMode();
       var next = cur === 'light' ? 'dark' : cur === 'dark' ? null : 'light';
       try {
@@ -418,12 +419,14 @@ const t = useTranslations(lang);
   }
 
   // ハンバーガー: モバイルメニュー開閉
-  var toggle = document.querySelector('.mobile-menu-toggle');
+  var toggle = document.querySelector('.mobile-menu-toggle') as HTMLElement | null;
   var nav = document.getElementById('site-nav');
   if (toggle && nav) {
-    toggle.addEventListener('click', function() {
-      var isOpen = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    var toggleEl = toggle;
+    var navEl = nav;
+    toggleEl.addEventListener('click', function() {
+      var isOpen = navEl.classList.toggle('is-open');
+      toggleEl.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   }
 
@@ -453,7 +456,7 @@ const t = useTranslations(lang);
   // Browse ドロップダウン: クリック外で閉じる
   document.addEventListener('click', function(e) {
     document.querySelectorAll('details.nav-dropdown[open]').forEach(function(d) {
-      if (!d.contains(e.target)) d.removeAttribute('open');
+      if (!(e.target instanceof Node) || !d.contains(e.target)) d.removeAttribute('open');
     });
   });
 
@@ -463,7 +466,7 @@ const t = useTranslations(lang);
     var openDropdown = document.querySelector('details.nav-dropdown[open]');
     if (openDropdown) {
       openDropdown.removeAttribute('open');
-      var summary = openDropdown.querySelector('summary');
+      var summary = openDropdown.querySelector('summary') as HTMLElement | null;
       if (summary) summary.focus();
       return;
     }
