@@ -15,7 +15,6 @@ participants:
 description: "ビットコイン v0.1 は、Hashcash から PoW を再利用、汎用 CS 部品（マークルツリー、ECDSA 等）を借用、残り（UTXO、報酬発行、2,100 万上限、P2P）は独自合成。"
 isSatoshi: false
 tags:
-  - "bitcoin"
   - "whitepaper"
   - "design-lineage"
   - "proof-of-work"

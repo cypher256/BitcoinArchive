@@ -14,7 +14,6 @@ isSatoshi: false
 tags:
   - "bitcoin-cash"
   - "early-investor"
-  - "memory-dealers"
   - "block-size-war"
 secondarySources:
   - name: "U.S. Department of Justice — Roger Ver indictment (2024)"

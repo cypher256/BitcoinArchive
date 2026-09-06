@@ -17,9 +17,8 @@ tags:
   - "correspondence"
   - "early-contributor"
   - "development"
-  - "ui"
-  - "network-growth"
-  - "bitcoin-0.2"
+  - "usability"
+  - "adoption"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"

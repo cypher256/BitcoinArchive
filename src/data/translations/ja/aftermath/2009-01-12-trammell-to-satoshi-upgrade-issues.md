@@ -19,7 +19,6 @@ tags:
   - "mining"
   - "bug-report"
   - "orphan-blocks"
-  - "v0.1.3"
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"

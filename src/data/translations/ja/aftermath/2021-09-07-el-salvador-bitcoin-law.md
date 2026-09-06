@@ -16,7 +16,7 @@ tags:
   - "legal-tender"
   - "bitcoin-law"
   - "chivo-wallet"
-  - "government-adoption"
+  - "nation-state-adoption"
   - "regulation"
 secondarySources:
   - name: "Bitcoin en El Salvador (Wikipedia, Spanish)"

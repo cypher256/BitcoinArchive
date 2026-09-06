@@ -15,7 +15,6 @@ inReplyTo: "emails/cryptography/2009-01-08-bitcoin-v0-1-released"
 isSatoshi: false
 tags:
   - "valuation"
-  - "thought-experiment"
   - "early-adopter"
   - "mining"
 secondarySources:

@@ -34,7 +34,7 @@ tags:
   - "journalism"
   - "satoshi-identity"
   - "mt-gox"
-  - "bitcoin-pizza"
+  - "pizza-day"
   - "mining"
   - "silk-road"
 secondarySources:

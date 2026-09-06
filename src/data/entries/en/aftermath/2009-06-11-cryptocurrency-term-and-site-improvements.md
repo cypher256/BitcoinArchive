@@ -16,8 +16,7 @@ isSatoshi: true
 tags:
   - "correspondence"
   - "early-contributor"
-  - "cryptocurrency"
-  - "branding"
+  - "naming"
   - "bitcoin-org"
 secondarySources:
   - name: "Cointelegraph - Newly released Satoshi emails"

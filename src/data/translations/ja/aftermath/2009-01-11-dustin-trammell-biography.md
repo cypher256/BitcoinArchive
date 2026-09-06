@@ -12,9 +12,8 @@ description: "テキサス州オースティンの情報セキュリティ研究
 isSatoshi: false
 tags:
   - "dustin-trammell"
-  - "early-miner"
-  - "infosec"
-  - "first-nodes"
+  - "early-adopter"
+  - "security"
   - "historic"
 secondarySources:
   - name: "CoinDesk — Who Was Bitcoin's Second User?"

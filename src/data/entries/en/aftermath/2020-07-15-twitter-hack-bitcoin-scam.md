@@ -13,8 +13,6 @@ isSatoshi: false
 tags:
   - "hack"
   - "scam"
-  - "security-breach"
-  - "bitcoin-address"
 secondarySources:
   - name: "US Department of Justice press release"
     url: "https://www.justice.gov/usao-ndca/pr/three-individuals-charged-alleged-roles-twitter-hack"

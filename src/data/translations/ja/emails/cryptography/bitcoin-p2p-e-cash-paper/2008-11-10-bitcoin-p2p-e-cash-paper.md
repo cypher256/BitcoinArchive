@@ -14,7 +14,6 @@ description: "サトシがトランザクションの確定性、10分間のブ�
 isSatoshi: true
 tags:
   - "double-spending"
-  - "transaction-finality"
   - "block-timing"
   - "confirmation"
 secondarySources:

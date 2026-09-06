@@ -14,7 +14,6 @@ description: "ハル・フィニーによるビットコインとの初期の関
 isSatoshi: false
 tags:
   - "hal-finney"
-  - "first-transaction"
   - "retrospective"
   - "als"
   - "cypherpunks"

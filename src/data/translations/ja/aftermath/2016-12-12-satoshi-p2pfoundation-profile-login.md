@@ -13,7 +13,7 @@ description: "サトシの P2P Foundation プロフィールに 2016 年末ロ�
 isSatoshi: false
 tags:
   - "p2p-foundation"
-  - "identity"
+  - "satoshi-identity"
   - "account-activity"
 relatedEntries:
   - "analysis/2008-10-31-satoshi-identification-asymmetry"

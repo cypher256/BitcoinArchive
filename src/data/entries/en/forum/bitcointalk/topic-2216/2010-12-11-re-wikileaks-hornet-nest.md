@@ -12,9 +12,9 @@ description: "One of Satoshi's last posts. After WikiLeaks begins accepting Bitc
 isSatoshi: true
 tags:
   - "wikileaks"
-  - "media-attention"
+  - "media"
   - "caution"
-  - "near-final-post"
+  - "disappearance"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/542/"

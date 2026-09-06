@@ -12,7 +12,7 @@ description: "オランダ人アジャイルコーチ、AardRock 創業者。P2P
 isSatoshi: false
 tags:
   - "p2p-research-list"
-  - "supply-limit"
+  - "monetary-policy"
   - "historic"
 secondarySources:
   - name: "Satoshi Nakamoto Institute — P2P Research List Emails"

@@ -14,7 +14,6 @@ tags:
   - "mt-gox"
   - "exchange-collapse"
   - "hack"
-  - "bankruptcy"
 secondarySources:
   - name: "Bitcoin Wiki — Collapse of Mt. Gox"
     url: "https://en.bitcoin.it/wiki/Collapse_of_Mt._Gox"

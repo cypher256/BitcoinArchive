@@ -15,7 +15,6 @@ description: "Eugen Leitl contradicts Satoshi's claim that bitcoin.sourceforge.n
 isSatoshi: false
 tags:
   - "linux"
-  - "debian"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

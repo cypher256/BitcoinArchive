@@ -11,9 +11,9 @@ participants:
 description: "Software developer from Jacksonville, Florida who ported Bitcoin to macOS, pioneered GPU mining, and made the first known real-world purchase — two pizzas for 10,000 BTC on May 22, 2010 (Pizza Day)."
 isSatoshi: false
 tags:
-  - "bitcoin-pizza"
+  - "pizza-day"
   - "gpu-mining"
-  - "macos-port"
+  - "macos"
   - "historic"
 secondarySources:
   - name: "BitcoinTalk — Pizza for bitcoins? (May 18, 2010)"

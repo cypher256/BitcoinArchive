@@ -16,7 +16,7 @@ tags:
   - "cryptography"
   - "p2p"
   - "decentralization"
-  - "liberty"
+  - "libertarian"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/4/"

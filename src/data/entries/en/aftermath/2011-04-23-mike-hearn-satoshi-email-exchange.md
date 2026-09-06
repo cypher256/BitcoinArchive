@@ -14,7 +14,6 @@ description: "Mike Hearn's private email correspondence with Satoshi Nakamoto, i
 isSatoshi: false
 tags:
   - "email-archive"
-  - "final-communication"
   - "disappearance"
 secondarySources:
   - name: "Mike Hearn's published Satoshi emails"

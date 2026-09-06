@@ -14,8 +14,6 @@ description: "バックがサトシにロン・リベストの 1996年 MicroMint
 isSatoshi: false
 tags:
   - "hashcash"
-  - "micromint"
-  - "ron-rivest"
   - "origins"
 secondarySources:
   - name: "COPA v Wright Trial Evidence"

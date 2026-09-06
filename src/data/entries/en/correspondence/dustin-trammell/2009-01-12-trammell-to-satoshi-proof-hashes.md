@@ -15,7 +15,6 @@ description: "Trammell tells Satoshi about his proof-hashes Google Group, gives 
 isSatoshi: false
 tags:
   - "proof-hashes"
-  - "feedback"
 relatedEntries:
   - "aftermath/2009-01-12-trammell-to-satoshi-proof-hashes"
 quotes:

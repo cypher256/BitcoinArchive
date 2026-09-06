@@ -13,7 +13,6 @@ isSatoshi: false
 tags:
   - "bitcoinj"
   - "email-archive"
-  - "published-correspondence"
   - "historic"
 secondarySources:
   - name: "Mike Hearn's published Satoshi emails"

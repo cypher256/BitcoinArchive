@@ -15,9 +15,8 @@ participants:
 description: "サトシの最後の既知のメール：2011年4月23日ハーンへ「ギャビンたちに任せれば安心」、4月26日アンドレセンへアラートキーを移譲し「おそらく連絡が取れなくなる」と書く。"
 isSatoshi: true
 tags:
-  - "final-communication"
   - "alert-key"
-  - "transition"
+  - "leadership"
   - "disappearance"
 secondarySources:
   - name: "Mike Hearn's published Satoshi emails"

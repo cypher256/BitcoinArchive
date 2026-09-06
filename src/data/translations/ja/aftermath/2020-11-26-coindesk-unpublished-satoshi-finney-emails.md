@@ -19,7 +19,7 @@ tags:
   - "unpublished"
   - "hal-finney"
   - "timezone-mystery"
-  - "v0.1-release"
+  - "source-code"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Email to Hal Finney (Jan 8, 2009)"
     url: "https://web.archive.org/web/20260113115938/https://www.bitcoin.com/satoshi-archive/emails/hal-finney/1/"

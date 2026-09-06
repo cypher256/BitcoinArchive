@@ -13,7 +13,6 @@ description: "自身の Unenumerated ブログで、ビットゴールドのト�
 isSatoshi: false
 tags:
   - "bit-gold"
-  - "implementation"
   - "pre-bitcoin"
 translationStatus: complete
 relatedEntries:

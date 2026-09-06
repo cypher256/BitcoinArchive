@@ -21,7 +21,6 @@ isSatoshi: false
 description: "Hayek's 1976 competing-currencies case, the 1995 Extropian 'Hayeks' thought-experiment, and Bitcoin's 2009 non-state issuance — one ideological lineage with bounded direct-influence claims."
 tags:
   - "hayek"
-  - "denationalisation-of-money"
   - "extropians"
   - "libertarianism"
   - "monetary-policy"

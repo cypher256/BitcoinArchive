@@ -14,7 +14,6 @@ description: "Mike Hearn publishes his private email correspondence with Satoshi
 isSatoshi: false
 tags:
   - "email-archive"
-  - "published-correspondence"
 secondarySources:
   - name: "Vice/Motherboard — Former Bitcoin Developer Shares Early Satoshi Nakamoto Emails (August 2017)"
     url: "https://www.vice.com/en/article/former-bitcoin-developer-shares-early-satoshi-nakamoto-emails/"

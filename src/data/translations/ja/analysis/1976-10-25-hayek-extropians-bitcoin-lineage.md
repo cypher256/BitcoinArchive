@@ -21,7 +21,6 @@ isSatoshi: false
 description: "ハイエク 1976 年競合通貨論、 1995 年エクストロピアン架空通貨『Hayeks』、 2009 年ビットコインの非国家的発行を、一本の思想史的系譜として読み、直接影響の主張は慎重に区別する。"
 tags:
   - "hayek"
-  - "denationalisation-of-money"
   - "extropians"
   - "libertarianism"
   - "monetary-policy"

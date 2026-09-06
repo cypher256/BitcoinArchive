@@ -16,7 +16,6 @@ isSatoshi: true
 tags:
   - "correspondence"
   - "network"
-  - "connectivity"
   - "early-network"
   - "dustin-trammell"
 secondarySources:

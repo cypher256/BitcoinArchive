@@ -14,8 +14,6 @@ description: "E4M を書き、のちに犯罪帝国を築いた男。『The Mast
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "e4m"
-  - "disputed"
 secondarySources:
   - name: "Evan Ratliff — The Mastermind (Random House, February 19, 2019)"
     url: "https://www.penguinrandomhouse.com/books/238295/the-mastermind-by-evan-ratliff/"

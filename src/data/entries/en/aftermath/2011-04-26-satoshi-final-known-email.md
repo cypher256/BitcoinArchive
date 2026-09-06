@@ -15,9 +15,8 @@ participants:
 description: "Satoshi's final known private messages: April 23, 2011 to Mike Hearn — \"in good hands with Gavin.\" April 26 to Andresen, transferring the alert key and saying he would probably be unavailable."
 isSatoshi: true
 tags:
-  - "final-communication"
   - "alert-key"
-  - "transition"
+  - "leadership"
   - "disappearance"
 secondarySources:
   - name: "Mike Hearn's published Satoshi emails"

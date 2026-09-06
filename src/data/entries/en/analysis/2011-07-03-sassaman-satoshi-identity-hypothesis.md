@@ -23,7 +23,6 @@ isSatoshi: false
 tags:
   - "satoshi-identity"
   - "cypherpunk"
-  - "disputed"
 secondarySources:
   - name: "Evan Hatch — 'Len Sassaman and Satoshi: a Cypherpunk history' (Medium, February 22, 2021)"
     url: "https://evanhatch.medium.com/len-sassaman-and-satoshi-e483c85c2b10"

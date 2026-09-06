@@ -15,7 +15,7 @@ participants:
 description: "公開記録上、サトシはビットコインを Windows のみで開発した。設計+リリース+初期 27 か月は Linux 痕跡なし。Linux 関与はマルミ移植への対応として初めて現れる。"
 isSatoshi: false
 tags:
-  - "bitcoin-v0.1"
+  - "source-code"
   - "development-environment"
   - "windows"
   - "linux"

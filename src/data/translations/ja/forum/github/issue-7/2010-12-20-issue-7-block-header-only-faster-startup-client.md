@@ -10,8 +10,7 @@ participants:
     slug: "gavin-andresen"
 description: "gavinandresen が bitcoin/bitcoin Issue #7 でスレッドを開始。"
 isSatoshi: false
-tags:
-  - "issue"
+tags: []
 translationStatus: complete
 ---
 

@@ -17,7 +17,6 @@ tags:
   - "correspondence"
   - "early-contributor"
   - "exchange"
-  - "bitcoin-market"
   - "price-discovery"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

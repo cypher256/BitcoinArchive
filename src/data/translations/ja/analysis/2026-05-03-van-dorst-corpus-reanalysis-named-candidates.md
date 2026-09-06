@@ -23,10 +23,8 @@ isSatoshi: false
 description: "ヴァン・ドルストの『Where is Satoshi?』文体計量コーパスから候補 5 名を抽出した再分析。所見: サボが 12,739 名中 4.67% で首位、ただし 594 名の無名がより近接。"
 tags:
   - "satoshi-identity"
-  - "stylometric-analysis"
   - "methodology"
   - "dataset"
-  - "investigation"
   - "hal-finney"
 relatedEntries:
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus

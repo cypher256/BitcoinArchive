@@ -12,7 +12,6 @@ description: "最終版ホワイトペーパー『ビットコイン：ピアツ
 isSatoshi: true
 tags:
   - "whitepaper"
-  - "final"
   - "foundational"
   - "peer-to-peer"
 pdfMetadata:

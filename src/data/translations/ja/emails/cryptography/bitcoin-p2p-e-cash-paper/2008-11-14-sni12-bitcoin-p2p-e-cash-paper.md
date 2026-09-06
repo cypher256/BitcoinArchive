@@ -13,9 +13,8 @@ participants:
 description: "現在の最良ブランチの保留トランザクションプールのみ維持すればよいことをサトシが説明し、ブロック伝播における TCP の信頼性について議論し、システムがリバタリアンの原則に合致することに言及した。"
 isSatoshi: true
 tags:
-  - "pending-transactions"
+  - "mempool"
   - "networking"
-  - "tcp"
   - "libertarian"
   - "incentives"
 secondarySources:

@@ -15,7 +15,6 @@ description: "Fragment of Gavin's private message to Satoshi on the 0.3.20 relea
 isSatoshi: false
 tags:
   - "bitcoin-list"
-  - "fragment"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"

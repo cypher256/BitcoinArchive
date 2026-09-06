@@ -12,7 +12,6 @@ description: "決済処理会社が 10秒以内の十分な検証でビットコ
 isSatoshi: true
 tags:
   - "zero-confirmation"
-  - "payments"
   - "vending"
   - "double-spending"
 secondarySources:

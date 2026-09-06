@@ -22,7 +22,6 @@ tags:
   - "satoshi-identity"
   - "cypherpunk"
   - "media"
-  - "investigation"
 secondarySources:
   - name: "Wikipedia — Len Sassaman（ハッチによる定式化とパターソンの否定を記載）"
     url: "https://en.wikipedia.org/wiki/Len_Sassaman"

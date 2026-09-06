@@ -15,7 +15,7 @@ callout:
   label: "Identity hypothesis"
 tags:
   - "b-money"
-  - "crypto-plus-plus"
+  - "cryptopp"
   - "whitepaper"
   - "cypherpunk"
   - "historic"

@@ -14,7 +14,6 @@ description: "The first person-to-person Bitcoin transaction in history. Satoshi
 isSatoshi: true
 tags:
   - "hal-finney"
-  - "first-transaction"
   - "block-170"
   - "historic"
 secondarySources:

@@ -18,7 +18,6 @@ tags:
   - "scalability"
   - "micropayments"
   - "bandwidth"
-  - "bitcoin-bank"
 secondarySources:
   - name: "Satoshi Nakamoto Institute (スレッド表示)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/1/"

@@ -15,7 +15,7 @@ participants:
 description: "Wired と Gizmodo が同時に、流出した文書やメールに基づき、オーストラリアのコンピューター科学者クレイグ・スティーヴン・ライトをビットコインの創設者の可能性が高いと特定する記事を掲載した。"
 isSatoshi: false
 tags:
-  - "identity"
+  - "satoshi-identity"
   - "wired"
   - "gizmodo"
   - "media"

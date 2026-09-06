@@ -12,9 +12,8 @@ description: "Information security researcher from Austin, Texas, among the firs
 isSatoshi: false
 tags:
   - "dustin-trammell"
-  - "early-miner"
-  - "infosec"
-  - "first-nodes"
+  - "early-adopter"
+  - "security"
   - "historic"
 secondarySources:
   - name: "CoinDesk — Who Was Bitcoin's Second User?"

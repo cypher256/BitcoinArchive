@@ -17,7 +17,7 @@ tags:
   - "correspondence"
   - "bitcoin-faucet"
   - "early-developer"
-  - "code-contributions"
+  - "development"
   - "adoption"
 secondarySources:
   - name: "MIT Technology Review - The Man Who Really Built Bitcoin"

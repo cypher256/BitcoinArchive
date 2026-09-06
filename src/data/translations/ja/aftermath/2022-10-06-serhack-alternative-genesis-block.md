@@ -17,8 +17,6 @@ isSatoshi: false
 tags:
   - "genesis-block"
   - "pre-release"
-  - "alternative-genesis"
-  - "lehman-brothers"
   - "source-code"
 secondarySources:
   - name: "BitcoinTalk — 'Bitcoin source from November 2008' by Cryddit (December 23, 2013)"

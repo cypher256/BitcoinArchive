@@ -17,7 +17,6 @@ tags:
   - "correspondence"
   - "early-adopter"
   - "mining"
-  - "first-transaction"
   - "send-to-ip"
   - "proof-of-work"
 secondarySources:

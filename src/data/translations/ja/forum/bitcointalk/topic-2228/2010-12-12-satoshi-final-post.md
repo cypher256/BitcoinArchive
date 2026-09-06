@@ -11,9 +11,9 @@ participants:
 description: "BitcoinTalk におけるサトシの最後の公開投稿。ソフトウェアのアップデートについて議論した後、公の場から姿を消した。"
 isSatoshi: true
 tags:
-  - "final-post"
+  - "disappearance"
   - "dos-protection"
-  - "software-update"
+  - "release"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/543/"

@@ -16,8 +16,6 @@ description: "整数オーバーフローバグ（CVE-2010-5139）の悪用で�
 isSatoshi: false
 tags:
   - "overflow-bug"
-  - "block-74638"
-  - "CVE-2010-5139"
   - "security"
   - "soft-fork"
   - "historic"

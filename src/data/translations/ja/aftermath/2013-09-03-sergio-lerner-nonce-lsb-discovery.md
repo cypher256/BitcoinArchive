@@ -15,7 +15,6 @@ isSatoshi: false
 tags:
   - "patoshi"
   - "mining"
-  - "nonce-analysis"
   - "blockchain-forensics"
   - "extranonce"
 secondarySources:

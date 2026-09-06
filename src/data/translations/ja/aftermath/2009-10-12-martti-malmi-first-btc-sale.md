@@ -13,8 +13,7 @@ participants:
 description: "マルミが NewLibertyStandard に PayPal 経由で 5,050 BTC を 5.02 ドルで売却。初の BTC-法定通貨交換、約 0.001 ドル/BTC の実世界価格を確立。"
 isSatoshi: false
 tags:
-  - "first-sale"
-  - "fiat-exchange"
+  - "exchange"
   - "historic"
 secondarySources:
   - name: "CoinTelegraph — 5,050 Bitcoin for $5 in 2009"

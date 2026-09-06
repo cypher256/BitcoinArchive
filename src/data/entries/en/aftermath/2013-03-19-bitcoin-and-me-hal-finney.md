@@ -14,7 +14,6 @@ description: "Hal Finney's famous retrospective on his early involvement with Bi
 isSatoshi: false
 tags:
   - "hal-finney"
-  - "first-transaction"
   - "retrospective"
   - "als"
   - "cypherpunks"

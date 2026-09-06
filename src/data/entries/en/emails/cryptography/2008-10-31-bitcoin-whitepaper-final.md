@@ -12,7 +12,6 @@ description: "The final Bitcoin whitepaper, 'Bitcoin: A Peer-to-Peer Electronic 
 isSatoshi: true
 tags:
   - "whitepaper"
-  - "final"
   - "foundational"
   - "peer-to-peer"
 pdfMetadata:

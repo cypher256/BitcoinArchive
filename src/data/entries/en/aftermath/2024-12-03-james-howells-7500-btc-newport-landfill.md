@@ -13,8 +13,6 @@ isSatoshi: false
 tags:
   - "lost-bitcoin"
   - "lost-keys"
-  - "newport-landfill"
-  - "iconic-losses"
 secondarySources:
   - name: "The Guardian — Man who lost bitcoin fortune in Welsh tip explores purchase of entire landfill (February 10, 2025)"
     url: "https://www.theguardian.com/technology/2025/feb/10/man-who-lost-bitcoin-fortune-in-welsh-tip-explores-purchase-of-entire-landfill"

@@ -14,8 +14,6 @@ description: "He wrote E4M, then built a criminal empire. The evidence behind Th
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "e4m"
-  - "disputed"
 secondarySources:
   - name: "Evan Ratliff — The Mastermind (Random House, February 19, 2019)"
     url: "https://www.penguinrandomhouse.com/books/238295/the-mastermind-by-evan-ratliff/"

@@ -17,7 +17,6 @@ participants:
 description: "Sepp Hasslberger asks whether there is a formula to decide the total amount of tokens in Bitcoin, raising concerns about the fixed supply limit being adjustable as user adoption grows."
 isSatoshi: false
 tags:
-  - "supply-limit"
   - "monetary-policy"
 secondarySources:
   - name: "Wayback Machine (P2P Foundation forum snapshot)"

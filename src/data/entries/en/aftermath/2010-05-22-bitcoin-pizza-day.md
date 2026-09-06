@@ -14,7 +14,6 @@ description: "Laszlo Hanyecz pays 10,000 BTC for two Papa John's pizzas — the 
 isSatoshi: false
 tags:
   - "pizza-day"
-  - "first-purchase"
   - "historic"
   - "bitcointalk"
 secondarySources:

@@ -16,7 +16,6 @@ tags:
   - "patoshi"
   - "mining"
   - "satoshi-fortune"
-  - "nonce-analysis"
   - "timestamp"
   - "blockchain-forensics"
 secondarySources:

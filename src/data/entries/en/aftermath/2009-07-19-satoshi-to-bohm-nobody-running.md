@@ -16,9 +16,7 @@ isSatoshi: true
 tags:
   - "correspondence"
   - "network"
-  - "connectivity"
   - "early-network"
-  - "node-count"
   - "famous-quote"
 secondarySources:
   - name: "Decashed - Node IP Analysis"

@@ -10,8 +10,7 @@ participants:
     slug: "gavin-andresen"
 description: "Issue #108 thread starter by gavinandresen in bitcoin/bitcoin."
 isSatoshi: false
-tags:
-  - "issue"
+tags: []
 ---
 
 Idea from Satoshi to improve/automate the -rescan feature:

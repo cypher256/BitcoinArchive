@@ -11,8 +11,6 @@ participants:
 description: "NewLibertyStandard proposes adopting the Thai baht currency symbol ฿ as the official Bitcoin currency symbol and BTC as the three-letter currency code — the notation that became standard."
 isSatoshi: false
 tags:
-  - "btc-symbol"
-  - "currency-code"
   - "historic"
 ---
 

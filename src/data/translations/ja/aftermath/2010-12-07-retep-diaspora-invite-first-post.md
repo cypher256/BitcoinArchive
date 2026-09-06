@@ -11,10 +11,7 @@ participants:
 description: "ピーター・トッドの BitcoinTalk 初投稿。retep 登録 41秒後、Diaspora 招待状を 2 ドル（他者は 0.5〜2 BTC）で買いたいと一文のみ。3日後にサトシへ技術返信。"
 isSatoshi: false
 tags:
-  - "first-post"
-  - "diaspora"
   - "marketplace"
-  - "satoshi-connection"
 secondarySources:
   - name: "Peter Todd — BitcoinTalk プロフィール（2010年12月7日登録）"
     url: "https://bitcointalk.org/index.php?action=profile;u=2546"

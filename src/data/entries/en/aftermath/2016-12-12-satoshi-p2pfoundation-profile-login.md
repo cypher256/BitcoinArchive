@@ -13,7 +13,7 @@ description: "Satoshi Nakamoto's P2P Foundation profile shows login activity in 
 isSatoshi: false
 tags:
   - "p2p-foundation"
-  - "identity"
+  - "satoshi-identity"
   - "account-activity"
 relatedEntries:
   - "analysis/2008-10-31-satoshi-identification-asymmetry"

@@ -12,8 +12,7 @@ description: "Satoshi announces the release of Bitcoin v0.1, the first working i
 isSatoshi: true
 tags:
   - "release"
-  - "v0.1"
-  - "software"
+  - "bitcoin-launch"
   - "announcement"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

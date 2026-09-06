@@ -14,7 +14,6 @@ tags:
   - "ftx"
   - "exchange-collapse"
   - "fraud"
-  - "bankruptcy"
 secondarySources:
   - name: "CoinDesk — FTX Files for Bankruptcy Protections in US"
     url: "https://www.coindesk.com/policy/2022/11/11/ftx-files-for-bankruptcy-protections-in-us"

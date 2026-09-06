@@ -16,9 +16,7 @@ tags:
   - "dormant-coins"
   - "satoshi-coins"
   - "lost-property"
-  - "noah-doe"
   - "galaxy-digital"
-  - "alex-thorn"
   - "new-york"
 secondarySources:
   - name: "U.Today — Anonymous plaintiff sues to claim 3.8M BTC"

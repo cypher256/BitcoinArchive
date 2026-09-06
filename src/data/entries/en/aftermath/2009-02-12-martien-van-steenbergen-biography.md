@@ -12,7 +12,7 @@ description: "Dutch agile coach and AardRock founder whose questions on the P2P 
 isSatoshi: false
 tags:
   - "p2p-research-list"
-  - "supply-limit"
+  - "monetary-policy"
   - "historic"
 secondarySources:
   - name: "Satoshi Nakamoto Institute — P2P Research List Emails"

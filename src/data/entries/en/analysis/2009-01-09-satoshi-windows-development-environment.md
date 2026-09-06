@@ -15,7 +15,7 @@ participants:
 description: "On the public record, Satoshi developed Bitcoin on Windows exclusively for 27 months (design + release + early period); Linux engagement first appears as reactive support for Malmi's port."
 isSatoshi: false
 tags:
-  - "bitcoin-v0.1"
+  - "source-code"
   - "development-environment"
   - "windows"
   - "linux"

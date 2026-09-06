@@ -14,10 +14,9 @@ tags:
   - "satoshi-identity"
   - "foia"
   - "dhs"
-  - "litigation"
+  - "lawsuit"
   - "rana-saoud"
   - "james-murphy"
-  - "investigation"
 secondarySources:
   - name: "FinanceFeeds — Satoshi Nakamoto identity, 2026 suspects and the 85B question (2026 年 4 月)"
     url: "https://financefeeds.com/satoshi-nakamoto-identity-2026-suspects-and-the-85b-question/"

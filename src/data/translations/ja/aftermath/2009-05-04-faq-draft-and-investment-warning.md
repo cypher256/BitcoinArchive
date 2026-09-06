@@ -18,7 +18,7 @@ tags:
   - "early-contributor"
   - "faq"
   - "investment"
-  - "regulatory"
+  - "regulation"
   - "positioning"
 secondarySources:
   - name: "CryptoSlate - Never-before-seen Satoshi Nakamoto emails"

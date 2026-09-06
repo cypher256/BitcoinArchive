@@ -15,7 +15,6 @@ description: "Trammell reports two issues upgrading from v0.1.0 to v0.1.3: the o
 isSatoshi: false
 tags:
   - "bug-report"
-  - "v0-1-3"
 relatedEntries:
   - "aftermath/2009-01-12-trammell-to-satoshi-upgrade-issues"
 quotes:

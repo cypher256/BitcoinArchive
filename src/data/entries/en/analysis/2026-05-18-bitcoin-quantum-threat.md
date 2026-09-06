@@ -15,7 +15,6 @@ isSatoshi: false
 homeOrder: 9
 tags:
   - "quantum-computing"
-  - "quantum-resistance"
   - "cryptography"
   - "ecdsa"
   - "post-quantum"

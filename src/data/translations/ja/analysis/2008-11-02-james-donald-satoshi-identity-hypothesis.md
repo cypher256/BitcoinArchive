@@ -15,8 +15,6 @@ isSatoshi: false
 tags:
   - "satoshi-identity"
   - "cypherpunk"
-  - "stylometric"
-  - "disputed"
 secondarySources:
   - name: "Benjamin Wallace — The Mysterious Mr. Nakamoto (Crown, 2025)"
     url: "https://www.penguinrandomhouse.com/books/671311/the-mysterious-mr-nakamoto-by-benjamin-wallace/"

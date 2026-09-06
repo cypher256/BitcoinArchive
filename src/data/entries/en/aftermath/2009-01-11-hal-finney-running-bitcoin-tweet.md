@@ -14,7 +14,6 @@ description: "The first known tweet about Bitcoin. Hal Finney posted 'Running bi
 isSatoshi: false
 tags:
   - "hal-finney"
-  - "first-tweet"
   - "bitcoin-launch"
   - "mining"
   - "historic"

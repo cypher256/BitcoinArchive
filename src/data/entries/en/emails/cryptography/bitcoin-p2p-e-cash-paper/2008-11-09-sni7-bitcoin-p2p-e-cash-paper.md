@@ -13,7 +13,6 @@ participants:
 description: "Satoshi explains how the proof-of-work chain solves the synchronization problem and establishes a globally shared view without requiring trust."
 isSatoshi: true
 tags:
-  - "synchronization"
   - "consensus"
   - "proof-of-work"
 secondarySources:

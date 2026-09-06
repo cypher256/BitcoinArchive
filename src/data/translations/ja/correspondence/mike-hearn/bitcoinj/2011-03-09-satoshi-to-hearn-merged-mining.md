@@ -13,11 +13,11 @@ participants:
 description: "サトシが最も詳細なマージドマイニング提案を説明し、放棄された eBay スタイルのマーケットプレイス機能を明かし、代替チェーンはマイナーを共有する完全に独立したものであることを明確にする。"
 isSatoshi: true
 tags:
-  - "merged-mining"
+  - "merge-mining"
   - "bitdns"
   - "publish-subscribe"
   - "marketplace"
-  - "fees"
+  - "transaction-fees"
   - "json-rpc"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"

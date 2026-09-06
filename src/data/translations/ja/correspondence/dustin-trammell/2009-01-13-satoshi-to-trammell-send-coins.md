@@ -15,7 +15,6 @@ description: "サトシが孤立したブロックの原因を説明し、SHA-25
 isSatoshi: true
 tags:
   - "mining"
-  - "v0-1-3"
   - "send-to-ip"
 translationStatus: complete
 relatedEntries:

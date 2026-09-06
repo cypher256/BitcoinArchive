@@ -12,7 +12,7 @@ participants:
 description: "After years of silence, Satoshi Nakamoto briefly returns to the P2P Foundation forum to deny being Dorian Nakamoto, after Newsweek's cover story identifying a California man as Bitcoin's creator."
 isSatoshi: true
 tags:
-  - "identity"
+  - "satoshi-identity"
   - "dorian-nakamoto"
 relatedEntries:
   - "aftermath/2014-03-06-newsweek-dorian-nakamoto"

@@ -16,7 +16,7 @@ tags:
   - "mining-ban"
   - "regulation"
   - "plustoken"
-  - "asset-seizure"
+  - "asset-forfeiture"
 secondarySources:
   - name: "CryptoSlate — China PBOC Multi-Agency Notice on Virtual Currency Trading Speculation (2021)"
     url: "https://cryptoslate.com/crypto-laws/china-pboc-multi-agency-notice-virtual-currency-trading-speculation-2021/"

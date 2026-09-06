@@ -19,7 +19,6 @@ isSatoshi: false
 tags:
   - "patoshi"
   - "mining"
-  - "nonce-analysis"
   - "blockchain-forensics"
   - "academic"
   - "peer-review"

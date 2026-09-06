@@ -15,7 +15,7 @@ isSatoshi: false
 tags:
   - "wikileaks"
   - "financial-blockade"
-  - "donations"
+  - "bitcoin-org"
   - "censorship-resistance"
 secondarySources:
   - name: "CoinDesk — Assange: Bitcoin and WikiLeaks Helped Keep Each Other Alive"

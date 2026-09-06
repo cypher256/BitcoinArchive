@@ -11,9 +11,9 @@ participants:
 description: "Satoshi's last known public post on BitcoinTalk. He discusses software updates and then disappears from public communication."
 isSatoshi: true
 tags:
-  - "final-post"
+  - "disappearance"
   - "dos-protection"
-  - "software-update"
+  - "release"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/543/"

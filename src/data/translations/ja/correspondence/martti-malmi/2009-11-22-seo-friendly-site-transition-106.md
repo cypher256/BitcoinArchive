@@ -15,7 +15,7 @@ description: "サトシが検索エンジンの履歴とサイト開始日を保
 isSatoshi: true
 tags:
   - "early-contributor"
-  - "website"
+  - "bitcoin-org"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"

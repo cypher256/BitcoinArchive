@@ -14,7 +14,6 @@ isSatoshi: false
 tags:
   - "reception-history"
   - "mainstream-media"
-  - "testimony"
 secondarySources:
   - name: "YouTube — 現存する 56 秒のクリップ（2024 年に再アップロード）"
     url: "https://www.youtube.com/watch?v=zwn8X-rGpiw"

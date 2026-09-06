@@ -13,8 +13,7 @@ isSatoshi: false
 tags:
   - "bitcoin-org"
   - "bitcointalk"
-  - "linux-port"
-  - "first-transaction"
+  - "linux"
   - "historic"
 secondarySources:
   - name: "CoinTelegraph — 5,050 Bitcoin for $5 in 2009: Helsinki's Claim to Crypto Fame"

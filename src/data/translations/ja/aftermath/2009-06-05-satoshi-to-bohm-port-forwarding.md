@@ -17,7 +17,6 @@ tags:
   - "correspondence"
   - "network"
   - "port-forwarding"
-  - "connectivity"
   - "early-network"
 secondarySources:
   - name: "Decashed - Node IP Analysis"

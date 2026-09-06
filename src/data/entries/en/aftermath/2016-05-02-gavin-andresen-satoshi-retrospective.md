@@ -14,7 +14,6 @@ description: "Gavin Andresen, who was given commit access to Bitcoin by Satoshi 
 isSatoshi: false
 tags:
   - "leadership"
-  - "transition"
   - "development"
   - "cia"
   - "satoshi-identity"

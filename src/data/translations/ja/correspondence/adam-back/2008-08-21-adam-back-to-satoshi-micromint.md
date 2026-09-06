@@ -15,8 +15,6 @@ description: "アダム・バックの 2 通目の返信。論文はまだ読ん
 isSatoshi: false
 tags:
   - "hashcash"
-  - "micromint"
-  - "ron-rivest"
   - "origins"
 translationStatus: complete
 secondarySources:

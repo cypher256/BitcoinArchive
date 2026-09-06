@@ -12,7 +12,6 @@ description: "Satoshi describes how a payment processor could enable fast Bitcoi
 isSatoshi: true
 tags:
   - "zero-confirmation"
-  - "payments"
   - "vending"
   - "double-spending"
 secondarySources:

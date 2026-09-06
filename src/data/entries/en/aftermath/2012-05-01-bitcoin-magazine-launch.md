@@ -16,7 +16,6 @@ tags:
   - "bitcoin-magazine"
   - "media"
   - "journalism"
-  - "publication"
 secondarySources:
   - name: "Bitcoin Magazine — official site"
     url: "https://bitcoinmagazine.com/"

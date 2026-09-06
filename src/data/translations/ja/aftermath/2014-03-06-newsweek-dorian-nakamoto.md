@@ -15,7 +15,7 @@ participants:
 description: "Newsweek が「ビットコインの顔」と題した記事を掲載し、カリフォルニア州テンプルシティ在住の 64 歳の日系アメリカ人、ドリアン・プレンティス・サトシ・ナカモトをビットコインの創設者と特定した。"
 isSatoshi: false
 tags:
-  - "identity"
+  - "satoshi-identity"
   - "newsweek"
   - "media"
 relatedEntries:

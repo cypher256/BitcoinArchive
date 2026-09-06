@@ -10,8 +10,7 @@ participants:
     slug: "gavin-andresen"
 description: "Issue #7 thread starter by gavinandresen in bitcoin/bitcoin."
 isSatoshi: false
-tags:
-  - "issue"
+tags: []
 ---
 
 Bitcoin newbies have to endure an hour or two (or more) while bitcoin downloads and indexes all transactions and blocks.

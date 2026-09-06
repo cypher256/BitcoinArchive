@@ -10,8 +10,7 @@ participants:
     slug: "awemany"
 description: "awemany が bitcoin/bitcoin Issue #7512 でスレッドを開始。"
 isSatoshi: false
-tags:
-  - "issue"
+tags: []
 translationStatus: complete
 ---
 

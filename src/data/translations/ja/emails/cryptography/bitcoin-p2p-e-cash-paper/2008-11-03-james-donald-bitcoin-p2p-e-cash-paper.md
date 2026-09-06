@@ -16,7 +16,7 @@ isSatoshi: false
 tags:
   - "simplified-payment-verification"
   - "double-spending"
-  - "government-attack"
+  - "censorship-resistance"
 secondarySources:
   - name: "Satoshi Nakamoto Institute (スレッド表示)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/1/"

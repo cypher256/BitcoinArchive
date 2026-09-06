@@ -25,7 +25,7 @@ isSatoshi: false
 tags:
   - "satoshi-identity"
   - "satoshi-holdings"
-  - "bitcoin-supply"
+  - "monetary-policy"
 relatedEntries:
   - analysis/2008-10-31-satoshi-identity-hypotheses-overview
   - analysis/2008-10-31-satoshi-nationality-question

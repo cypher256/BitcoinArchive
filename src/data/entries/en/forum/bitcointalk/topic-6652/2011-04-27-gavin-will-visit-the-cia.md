@@ -14,8 +14,6 @@ description: "Gavin Andresen announces he has been invited to give a presentatio
 isSatoshi: false
 tags:
   - "cia"
-  - "government"
-  - "presentation"
 ---
 
 I'm going to give a presentation about Bitcoin at CIA headquarters in June at an emerging technologies conference for the US intelligence community.

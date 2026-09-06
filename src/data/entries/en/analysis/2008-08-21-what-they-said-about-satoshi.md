@@ -29,7 +29,6 @@ description: "Doubters called it unscalable in 2008. A famed hacker failed to br
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "testimony"
   - "reception-history"
 secondarySources:
   - name: "The New Yorker — The Crypto-Currency (Joshua Davis, full-text mirror)"

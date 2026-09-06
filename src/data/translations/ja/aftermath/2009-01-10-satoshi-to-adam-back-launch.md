@@ -16,7 +16,6 @@ tags:
   - "hashcash"
   - "bitcoin-launch"
   - "hal-finney"
-  - "v0.1"
   - "origins"
 secondarySources:
   - name: "COPA v Wright Trial Evidence"

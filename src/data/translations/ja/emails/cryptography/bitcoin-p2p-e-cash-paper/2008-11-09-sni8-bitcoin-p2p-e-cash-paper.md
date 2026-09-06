@@ -13,7 +13,7 @@ participants:
 description: "2 つのノードが異なるトランザクションセットを持つブロックを同時に作成した場合の競合解決方法をサトシが説明した。"
 isSatoshi: true
 tags:
-  - "fork-resolution"
+  - "longest-chain"
   - "block-propagation"
   - "consensus"
 secondarySources:

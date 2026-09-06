@@ -21,7 +21,6 @@ description: "Cross-cutting reading of iconic Bitcoin losses by mechanism: forgo
 isSatoshi: false
 tags:
   - "lost-bitcoin"
-  - "iconic-losses"
   - "irreversibility"
   - "lost-keys"
   - "exchange-collapse"

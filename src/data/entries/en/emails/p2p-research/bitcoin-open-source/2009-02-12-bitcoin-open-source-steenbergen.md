@@ -15,8 +15,8 @@ description: "Steenbergen asks whether Bitcoin resembles David Chaum's anonymous
 isSatoshi: false
 tags:
   - "privacy"
-  - "david-chaum"
-  - "supply-limit"
+  - "chaumian"
+  - "monetary-policy"
 ---
 
 Very interesting. Is this akin to David Chaum's anonymous digital money? His concept makes sure money is anonymous unless it is compromised, i.e. the same money spent more than once. As soon as it's compromised, the 'counterfeiter' is immediately publicly exposed.

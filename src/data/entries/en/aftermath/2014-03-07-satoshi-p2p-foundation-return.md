@@ -14,9 +14,8 @@ participants:
 description: "About 24 hours after Newsweek named Dorian Nakamoto as Bitcoin's creator, Satoshi's dormant P2P Foundation account posted a one-sentence denial. The post's authenticity has been debated since."
 isSatoshi: false
 tags:
-  - "identity"
+  - "satoshi-identity"
   - "newsweek"
-  - "disputed"
   - "p2p-foundation"
 secondarySources:
   - name: "Newsweek - The Face Behind Bitcoin"

@@ -11,9 +11,9 @@ participants:
 description: "フロリダ州のソフトウェア開発者。macOS 移植、GPU マイニング開拓、2010年5月22日に 10,000 BTC でピザ 2枚を購入（ビットコイン・ピザデー）。"
 isSatoshi: false
 tags:
-  - "bitcoin-pizza"
+  - "pizza-day"
   - "gpu-mining"
-  - "macos-port"
+  - "macos"
   - "historic"
 secondarySources:
   - name: "BitcoinTalk — Pizza for bitcoins? (May 18, 2010)"

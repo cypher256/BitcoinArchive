@@ -15,8 +15,8 @@ description: "サトシからギャビン・アンドレセン宛、最後の既
 isSatoshi: true
 tags:
   - "alert-key"
-  - "final-communication"
-  - "handover"
+  - "disappearance"
+  - "leadership"
 relatedEntries:
   - aftermath/2011-04-26-andresen-to-satoshi-cia-visit
 translationStatus: complete

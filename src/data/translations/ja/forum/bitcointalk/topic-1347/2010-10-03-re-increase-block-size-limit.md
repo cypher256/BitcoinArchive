@@ -13,7 +13,6 @@ isSatoshi: true
 tags:
   - "block-size"
   - "scalability"
-  - "future-planning"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/478/"

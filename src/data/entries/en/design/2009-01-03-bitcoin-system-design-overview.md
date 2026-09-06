@@ -12,7 +12,6 @@ description: "High-level system overview of Bitcoin's architecture, layer model,
 isSatoshi: false
 tags:
   - "architecture"
-  - "system-overview"
   - "analysis"
 relatedEntries:
   - "emails/cryptography/2008-10-31-bitcoin-whitepaper-final"

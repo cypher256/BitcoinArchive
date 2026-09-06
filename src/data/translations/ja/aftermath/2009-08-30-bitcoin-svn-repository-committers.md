@@ -17,7 +17,7 @@ participants:
 description: "ビットコインの SourceForge SVN リポジトリにコミット権を持っていた全 4名の開発者の完全な記録。2009年8月30日から 2011年9月13日までの 252 リビジョンを網羅。"
 isSatoshi: true
 tags:
-  - "svn"
+  - "sourceforge"
   - "repository"
   - "commit-access"
   - "development"

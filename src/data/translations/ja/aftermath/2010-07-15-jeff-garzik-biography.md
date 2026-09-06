@@ -12,7 +12,6 @@ description: "ソフトウェアエンジニア（1974-）、Linux カーネル�
 isSatoshi: false
 tags:
   - "bitcoin-core"
-  - "linux-kernel"
   - "cpuminer"
   - "bloq"
   - "historic"

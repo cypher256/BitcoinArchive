@@ -17,7 +17,7 @@ isSatoshi: false
 tags:
   - "code-review"
   - "hal-finney"
-  - "altcoins"
+  - "altcoin"
   - "retrospective"
 secondarySources:
   - name: "Ramon Quesada Mirror"

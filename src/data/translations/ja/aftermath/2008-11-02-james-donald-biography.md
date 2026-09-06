@@ -16,7 +16,6 @@ callout:
 tags:
   - "cryptography-mailing-list"
   - "whitepaper"
-  - "first-response"
   - "historic"
 secondarySources:
   - name: "Satoshi Nakamoto Institute — Cryptography Mailing List Emails"

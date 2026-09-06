@@ -16,10 +16,8 @@ description: "His legal name was, literally, Satoshi Nakamoto — and a 2014 New
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "name-match"
   - "newsweek"
   - "denied"
-  - "disputed"
 secondarySources:
   - name: "Greenberg (Forbes) — 'Nakamoto's Neighbor' (March 25, 2014)"
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"

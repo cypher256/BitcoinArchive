@@ -17,8 +17,6 @@ tags:
   - "hal-finney"
   - "cypherpunk"
   - "rpow"
-  - "stylometric-analysis"
-  - "disputed"
 secondarySources:
   - name: "Andy Greenberg — 'Nakamoto's Neighbor' (Forbes, March 25, 2014)"
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"

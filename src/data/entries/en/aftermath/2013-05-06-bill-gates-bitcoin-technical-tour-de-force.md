@@ -14,7 +14,6 @@ isSatoshi: false
 tags:
   - "reception-history"
   - "mainstream-media"
-  - "testimony"
 secondarySources:
   - name: "YouTube — surviving 56-second clip of the Fox Business exchange (reuploaded 2024)"
     url: "https://www.youtube.com/watch?v=zwn8X-rGpiw"

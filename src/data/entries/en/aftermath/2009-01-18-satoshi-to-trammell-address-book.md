@@ -18,7 +18,6 @@ tags:
   - "usability"
   - "address-book"
   - "privacy"
-  - "multiple-addresses"
 secondarySources:
   - name: "Dustin Trammell's Blog"
     url: "https://blog.dustintrammell.com/"

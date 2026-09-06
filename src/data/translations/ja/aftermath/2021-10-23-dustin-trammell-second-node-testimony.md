@@ -16,7 +16,6 @@ tags:
   - "early-adopter"
   - "mining"
   - "network"
-  - "first-node"
   - "dustin-trammell"
 secondarySources:
   - name: "Cointelegraph — The first days of Bitcoin and Dustin D. Trammell's emails with Satoshi Nakamoto (March 28, 2021)"

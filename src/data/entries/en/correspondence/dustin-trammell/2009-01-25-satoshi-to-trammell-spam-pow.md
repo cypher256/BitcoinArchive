@@ -15,7 +15,7 @@ description: "Satoshi responds to Hal Finney's botnet/pay-per-send point, propos
 isSatoshi: true
 tags:
   - "spam"
-  - "pow-tokens"
+  - "proof-of-work"
   - "hal-finney"
   - "e-gold"
 relatedEntries:

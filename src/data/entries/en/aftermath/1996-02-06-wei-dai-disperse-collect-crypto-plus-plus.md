@@ -11,9 +11,9 @@ participants:
 description: "Wei Dai announces Disperse/Collect 1.0 on the Cypherpunks list, built from his own Crypto++ library. Confirms he was an active coder, relevant to why he later chose not to implement b-money."
 isSatoshi: false
 tags:
-  - "crypto-plus-plus"
+  - "cryptopp"
   - "cypherpunks"
-  - "coding"
+  - "development"
   - "historic"
 editorNote: "This post is significant because it demonstrates that Wei Dai was a hands-on programmer who actively wrote, released, and maintained code. When he later chose not to implement b-money (1998), it was not because he lacked the technical ability — as confirmed by his own admission on LessWrong in 2014 that he had 'grown somewhat disillusioned with crypto-anarchy.' The distinction between 'couldn't implement' and 'chose not to implement' is crucial for understanding the intellectual history leading to Bitcoin."
 secondarySources:

@@ -12,7 +12,6 @@ participants:
 description: "Hal Finney's tweet, the first known reference to running Bitcoin from a machine other than Satoshi's, posted the day Bitcoin v0.1 was released."
 isSatoshi: false
 tags:
-  - "running-bitcoin"
   - "historic"
 relatedEntries:
   - aftermath/2009-01-11-hal-finney-running-bitcoin-tweet

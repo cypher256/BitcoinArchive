@@ -17,7 +17,6 @@ tags:
   - "soft-fork"
   - "consensus-cleanup"
   - "vulnerability"
-  - "great-consensus-cleanup"
 secondarySources:
   - name: "Bitcoin Optech newsletter — Time-warp attack overview (2018 年 10 月 9 日)"
     url: "https://bitcoinops.org/en/newsletters/2018/10/09/"

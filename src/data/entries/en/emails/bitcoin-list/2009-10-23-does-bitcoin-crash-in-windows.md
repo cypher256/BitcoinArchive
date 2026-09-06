@@ -12,7 +12,7 @@ description: "NewLibertyStandard reports occasional Bitcoin crashes while runnin
 isSatoshi: false
 tags:
   - "wine"
-  - "crash-report"
+  - "bug-report"
   - "linux"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

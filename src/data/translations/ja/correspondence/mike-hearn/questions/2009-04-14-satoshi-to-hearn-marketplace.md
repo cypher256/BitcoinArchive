@@ -14,7 +14,7 @@ description: "サトシが eBay のようなマーケットプレイス機能の
 isSatoshi: true
 tags:
   - "marketplace"
-  - "currency-exchange"
+  - "exchange"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"
     url: "https://web.archive.org/web/20240809162549/https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/"

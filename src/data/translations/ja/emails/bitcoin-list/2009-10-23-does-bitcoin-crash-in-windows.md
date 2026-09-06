@@ -12,7 +12,7 @@ description: "NewLibertyStandard が Wine 1.0.1 上でビットコインが断�
 isSatoshi: false
 tags:
   - "wine"
-  - "crash-report"
+  - "bug-report"
   - "linux"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

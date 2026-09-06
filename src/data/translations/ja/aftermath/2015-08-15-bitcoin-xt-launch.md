@@ -18,7 +18,6 @@ tags:
   - "block-size"
   - "block-size-war"
   - "scaling"
-  - "bip-101"
 secondarySources:
   - name: "BIP 101 — Increase maximum block size"
     url: "https://github.com/bitcoin/bips/blob/master/bip-0101.mediawiki"

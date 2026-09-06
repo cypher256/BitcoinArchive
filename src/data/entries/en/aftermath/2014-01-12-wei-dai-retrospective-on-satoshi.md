@@ -14,7 +14,7 @@ description: "Wei Dai's LessWrong Q&A reflections: Satoshi did not read the b-mo
 isSatoshi: false
 tags:
   - "b-money"
-  - "identity"
+  - "satoshi-identity"
   - "motivation"
   - "lesswrong"
   - "crypto-anarchy"

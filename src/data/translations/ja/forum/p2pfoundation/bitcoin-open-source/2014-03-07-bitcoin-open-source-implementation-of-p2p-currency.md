@@ -12,7 +12,7 @@ participants:
 description: "数年間の沈黙を破り、サトシ・ナカモトが P2P Foundation フォーラムに短い投稿を行い、Newsweek の報道で特定されたドリアン・ナカモトが自分ではないと否定しました。"
 isSatoshi: true
 tags:
-  - "identity"
+  - "satoshi-identity"
   - "dorian-nakamoto"
 relatedEntries:
   - "aftermath/2014-03-06-newsweek-dorian-nakamoto"

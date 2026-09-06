@@ -10,8 +10,7 @@ participants:
     slug: "awemany"
 description: "Issue #7512 thread starter by awemany in bitcoin/bitcoin."
 isSatoshi: false
-tags:
-  - "issue"
+tags: []
 ---
 
 If you look here (current page for earliest commits in Bitcoin),

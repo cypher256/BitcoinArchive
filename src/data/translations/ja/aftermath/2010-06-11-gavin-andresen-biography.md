@@ -11,12 +11,10 @@ participants:
 description: "ソフトウェア開発者（1966-）、Wasabi Software 創業者、Bitcoin Faucet 作成者。サトシから引き継ぎ、2011-2014年リードメンテナー。"
 isSatoshi: false
 tags:
-  - "lead-developer"
+  - "lead-maintainer"
   - "bitcoin-faucet"
-  - "wasabi-software"
   - "bitcoin-foundation"
   - "leadership"
-  - "transition"
   - "historic"
 secondarySources:
   - name: "Gavin Andresen — Bitcoin Wiki"

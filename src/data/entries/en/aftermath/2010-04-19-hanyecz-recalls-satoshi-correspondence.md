@@ -17,7 +17,7 @@ tags:
   - "early-developer"
   - "macos"
   - "development"
-  - "bug-fixes"
+  - "bug-fix"
   - "recollection"
 secondarySources:
   - name: "CoinDesk - What You Didn't Know About Laszlo Hanyecz"

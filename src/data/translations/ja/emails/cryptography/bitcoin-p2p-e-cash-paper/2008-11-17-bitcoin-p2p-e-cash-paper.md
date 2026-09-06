@@ -16,7 +16,6 @@ tags:
   - "networking"
   - "block-propagation"
   - "inventory"
-  - "implementation"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/15/"

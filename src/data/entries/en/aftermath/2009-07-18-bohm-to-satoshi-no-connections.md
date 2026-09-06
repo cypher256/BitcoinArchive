@@ -16,9 +16,7 @@ isSatoshi: false
 tags:
   - "correspondence"
   - "network"
-  - "connectivity"
   - "early-network"
-  - "node-count"
 secondarySources:
   - name: "Decashed - Node IP Analysis"
     url: "https://decashed.eth.loan/2025/03/node-ip-disclosed-in-copa-wright-case-likely-belonged-to-dustin-trammel/"

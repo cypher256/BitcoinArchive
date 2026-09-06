@@ -26,7 +26,6 @@ tags:
   - "satoshi-identity"
   - "satoshi-anonymity"
   - "communication-pattern"
-  - "studied-silence"
   - "information-control"
 secondarySources:
   - name: "Mike Hearn email archive (plan99.net)"

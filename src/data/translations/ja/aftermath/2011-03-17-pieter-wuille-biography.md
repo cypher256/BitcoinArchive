@@ -15,7 +15,7 @@ tags:
   - "libsecp256k1"
   - "segwit"
   - "taproot"
-  - "bip-32"
+  - "hd-wallet"
   - "historic"
 secondarySources:
   - name: "Who Controls Bitcoin Core? — Jameson Lopp"

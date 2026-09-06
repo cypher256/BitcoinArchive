@@ -16,8 +16,7 @@ isSatoshi: true
 tags:
   - "correspondence"
   - "alert-key"
-  - "final-communication"
-  - "handover"
+  - "leadership"
   - "disappearance"
   - "historic"
 secondarySources:

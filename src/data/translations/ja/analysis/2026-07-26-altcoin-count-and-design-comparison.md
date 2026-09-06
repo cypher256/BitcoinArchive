@@ -27,7 +27,6 @@ description: "12 チェーンを、その発行規則が 1 単位の価格につ
 isSatoshi: false
 tags:
   - "altcoin"
-  - "comparison"
   - "stablecoin"
   - "governance"
   - "memecoin"

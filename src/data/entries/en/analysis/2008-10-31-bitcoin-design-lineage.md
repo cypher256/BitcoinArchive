@@ -15,7 +15,6 @@ participants:
 description: "Bitcoin v0.1 reuses one cypherpunk primitive (PoW from Hashcash), borrows general CS components (Merkle trees, linked timestamping, ECDSA), and synthesizes the rest (UTXO, mining, 21M cap, P2P)."
 isSatoshi: false
 tags:
-  - "bitcoin"
   - "whitepaper"
   - "design-lineage"
   - "proof-of-work"

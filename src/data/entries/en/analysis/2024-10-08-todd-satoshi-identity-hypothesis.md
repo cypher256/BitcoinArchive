@@ -14,7 +14,6 @@ description: "A reply that read like the continuation of Satoshi's thought — a
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "disputed"
 secondarySources:
   - name: "Wikipedia — Money Electric: The Bitcoin Mystery"
     url: "https://en.wikipedia.org/wiki/Money_Electric:_The_Bitcoin_Mystery"

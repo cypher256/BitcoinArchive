@@ -14,7 +14,7 @@ tags:
   - "early-bitcoin"
   - "blockchain-analysis"
   - "dormant-coins"
-  - "patoshi-pattern"
+  - "patoshi"
 secondarySources:
   - name: "BTCparser Patoshi pattern tracker"
     url: "https://bitslog.com/2019/04/16/the-return-of-the-deniers-and-the-revenge-of-patoshi/"

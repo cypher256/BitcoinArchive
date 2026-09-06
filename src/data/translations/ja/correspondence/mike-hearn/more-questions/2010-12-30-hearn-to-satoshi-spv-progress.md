@@ -15,7 +15,7 @@ isSatoshi: false
 tags:
   - "spv"
   - "android"
-  - "block-chain"
+  - "blockchain"
   - "protocol-ossification"
 translationStatus: complete
 secondarySources:

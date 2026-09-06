@@ -14,7 +14,6 @@ description: "Satoshi explains transaction finality, the target of 10-minute blo
 isSatoshi: true
 tags:
   - "double-spending"
-  - "transaction-finality"
   - "block-timing"
   - "confirmation"
 secondarySources:

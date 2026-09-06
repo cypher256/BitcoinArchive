@@ -26,7 +26,6 @@ tags:
   - "satoshi-identity"
   - "satoshi-anonymity"
   - "communication-pattern"
-  - "studied-silence"
   - "information-control"
 secondarySources:
   - name: "マイク・ハーンのメール集 (`plan99.net`)"

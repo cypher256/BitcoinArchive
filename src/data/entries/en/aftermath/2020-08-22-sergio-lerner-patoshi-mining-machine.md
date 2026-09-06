@@ -15,8 +15,6 @@ isSatoshi: false
 tags:
   - "patoshi"
   - "mining"
-  - "nonce-analysis"
-  - "hardware"
   - "blockchain-forensics"
 secondarySources:
   - name: "Bitslog — The Well Deserved Fortune of Satoshi Nakamoto (2013)"

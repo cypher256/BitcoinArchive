@@ -14,7 +14,6 @@ description: "サトシが、トランザクションが「from: unknown」と�
 isSatoshi: true
 tags:
   - "transaction"
-  - "generated-not-accepted"
   - "p2p"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"

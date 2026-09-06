@@ -12,9 +12,7 @@ description: "ラズロ・ハニエツが 2枚のピザに 10,000 ビットコ�
 isSatoshi: false
 tags:
   - "pizza-day"
-  - "first-purchase"
   - "historic"
-  - "10000-btc"
 secondarySources:
   - name: "Bitcoin Wiki - Laszlo Hanyecz"
     url: "https://en.bitcoin.it/wiki/Laszlo_Hanyecz"

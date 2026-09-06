@@ -15,7 +15,6 @@ isSatoshi: true
 tags:
   - "hashcash"
   - "earliest-correspondence"
-  - "ecash-pdf"
   - "whitepaper"
   - "origins"
 secondarySources:

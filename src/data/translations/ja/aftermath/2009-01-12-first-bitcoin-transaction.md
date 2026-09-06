@@ -14,7 +14,6 @@ description: "史上初の個人間ビットコイン送金。サトシ・ナカ
 isSatoshi: true
 tags:
   - "hal-finney"
-  - "first-transaction"
   - "block-170"
   - "historic"
 secondarySources:

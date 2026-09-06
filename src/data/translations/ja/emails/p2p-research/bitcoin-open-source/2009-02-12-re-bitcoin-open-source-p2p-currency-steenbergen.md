@@ -13,9 +13,9 @@ participants:
 description: "P2P Research メーリングリストにおいて、マルティエン・ファン・ステーンベルゲンの質問に回答し、ビットコインの発行上限 2,100 万枚とデイビッド・チャウムのシステムとの違いを説明。"
 isSatoshi: true
 tags:
-  - "supply-limit"
+  - "monetary-policy"
   - "privacy"
-  - "david-chaum"
+  - "chaumian"
   - "double-spending"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

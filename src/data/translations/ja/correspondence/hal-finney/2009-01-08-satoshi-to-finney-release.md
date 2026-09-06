@@ -15,7 +15,6 @@ description: "サトシからハル・フィニー宛のメール。暗号学メ
 isSatoshi: true
 tags:
   - "bitcoin-launch"
-  - "v0.1"
   - "hal-finney"
 secondarySources:
   - name: "CoinDesk - Previously Unpublished Emails of Satoshi Nakamoto Present a New Puzzle"

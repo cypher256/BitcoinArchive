@@ -14,8 +14,6 @@ description: "Adam Back suggests Satoshi look at Ron Rivest's 1996 MicroMint pap
 isSatoshi: false
 tags:
   - "hashcash"
-  - "micromint"
-  - "ron-rivest"
   - "origins"
 secondarySources:
   - name: "COPA v Wright Trial Evidence"

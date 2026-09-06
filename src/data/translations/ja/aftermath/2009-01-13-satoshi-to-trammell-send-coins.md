@@ -16,9 +16,7 @@ isSatoshi: true
 tags:
   - "correspondence"
   - "early-adopter"
-  - "first-transaction"
   - "send-to-ip"
-  - "v0.1.3"
 secondarySources:
   - name: "Dustin Trammell's Blog - ブロック 286"
     url: "https://blog.dustintrammell.com/block-286-and-satoshis-coins/"

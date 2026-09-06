@@ -14,7 +14,6 @@ description: "Gavin Andresen announces on BitcoinTalk topic 2367 he is taking ov
 isSatoshi: false
 tags:
   - "leadership"
-  - "transition"
   - "succession"
   - "lead-maintainer"
   - "historic"

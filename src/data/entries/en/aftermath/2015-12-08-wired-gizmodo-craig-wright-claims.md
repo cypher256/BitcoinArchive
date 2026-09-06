@@ -15,7 +15,7 @@ participants:
 description: "Wired and Gizmodo simultaneously publish articles identifying Australian computer scientist Craig Steven Wright as the probable creator of Bitcoin, based on leaked documents and emails."
 isSatoshi: false
 tags:
-  - "identity"
+  - "satoshi-identity"
   - "wired"
   - "gizmodo"
   - "media"

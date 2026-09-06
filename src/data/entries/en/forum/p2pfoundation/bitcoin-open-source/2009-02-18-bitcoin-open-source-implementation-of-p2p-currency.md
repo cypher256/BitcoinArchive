@@ -17,7 +17,6 @@ description: "Satoshi explains Bitcoin's proof-of-work mining, halving schedule,
 isSatoshi: true
 tags:
   - "mining"
-  - "supply-limit"
   - "proof-of-work"
   - "monetary-policy"
 relatedEntries:

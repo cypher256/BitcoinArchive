@@ -16,9 +16,7 @@ tags:
   - "satoshi-identity"
   - "cypherpunk"
   - "hashcash"
-  - "stylometric-analysis"
   - "new-york-times"
-  - "disputed"
 secondarySources:
   - name: "Adam Back — Hashcash paper (1997, revised 2002)"
     url: "http://www.hashcash.org/papers/hashcash.pdf"

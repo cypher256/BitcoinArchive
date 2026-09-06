@@ -15,7 +15,6 @@ isSatoshi: false
 tags:
   - "genesis-block"
   - "source-code"
-  - "bitcoin-v0.1"
   - "attribution"
   - "hardcode"
   - "blockchain"

@@ -14,9 +14,8 @@ participants:
 description: "Newsweek のドリアン・ナカモト同定の約 24 時間後、サトシの休眠 P2P Foundation アカウントから一文の否定投稿。真正性は以来議論されている。"
 isSatoshi: false
 tags:
-  - "identity"
+  - "satoshi-identity"
   - "newsweek"
-  - "disputed"
   - "p2p-foundation"
 secondarySources:
   - name: "Newsweek - The Face Behind Bitcoin"

@@ -15,7 +15,7 @@ description: "サトシが、偽メールボックスで POW トークンを刈�
 isSatoshi: true
 tags:
   - "spam"
-  - "pow-tokens"
+  - "proof-of-work"
   - "hal-finney"
   - "e-gold"
 translationStatus: complete

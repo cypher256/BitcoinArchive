@@ -16,7 +16,7 @@ isSatoshi: false
 tags:
   - "timestamping"
   - "nat"
-  - "api"
+  - "json-rpc"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

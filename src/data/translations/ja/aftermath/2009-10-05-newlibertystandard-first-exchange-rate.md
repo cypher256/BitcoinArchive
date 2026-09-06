@@ -12,7 +12,6 @@ description: "NewLibertyStandard が初の為替レートを公開：1 ドル = 
 isSatoshi: false
 tags:
   - "exchange-rate"
-  - "first-price"
   - "mining"
   - "electricity-cost"
 secondarySources:

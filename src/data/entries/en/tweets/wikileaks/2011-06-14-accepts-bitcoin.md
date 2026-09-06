@@ -14,7 +14,7 @@ isSatoshi: false
 tags:
   - "wikileaks"
   - "financial-blockade"
-  - "donations"
+  - "bitcoin-org"
   - "censorship-resistance"
 relatedEntries:
   - aftermath/2011-06-14-wikileaks-accepts-bitcoin

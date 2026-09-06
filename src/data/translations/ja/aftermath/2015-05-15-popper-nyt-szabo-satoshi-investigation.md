@@ -22,7 +22,6 @@ tags:
   - "satoshi-identity"
   - "new-york-times"
   - "media"
-  - "investigation"
   - "bit-gold"
 secondarySources:
   - name: "Wikipedia — Nick Szabo（ポパーの特定とサボの否定を記載）"

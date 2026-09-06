@@ -20,7 +20,7 @@ tags:
   - "early-contributor"
   - "final-message"
   - "disappearance"
-  - "handover"
+  - "leadership"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"

@@ -15,7 +15,6 @@ description: "ギャビンからサトシへの個人メールの断片。0.3.20
 isSatoshi: false
 tags:
   - "bitcoin-list"
-  - "fragment"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"

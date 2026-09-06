@@ -26,10 +26,8 @@ tags:
   - "satoshi-identity"
   - "hal-finney"
   - "documentary"
-  - "finding-satoshi"
   - "co-creators-theory"
   - "media"
-  - "investigation"
 secondarySources:
   - name: "The Block — Finding Satoshi documentary makes case Hal Finney and Len Sassaman are Bitcoin's co-creators"
     url: "https://www.theblock.co/post/398423/finding-satoshi-documentary-makes-case-hal-finney-len-sassaman-bitcoins-co-creators"

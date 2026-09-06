@@ -14,8 +14,6 @@ description: "ギャビン・アンドレセンが CIA でのビットコイン�
 isSatoshi: false
 tags:
   - "cia"
-  - "government"
-  - "presentation"
 translationStatus: complete
 ---
 

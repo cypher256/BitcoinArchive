@@ -15,7 +15,7 @@ description: "I'll be afk 23.-25.11."
 isSatoshi: false
 tags:
   - "early-contributor"
-  - "website"
+  - "bitcoin-org"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"

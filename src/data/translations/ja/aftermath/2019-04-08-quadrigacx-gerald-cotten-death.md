@@ -16,8 +16,6 @@ tags:
   - "quadrigacx"
   - "ceo-death"
   - "ponzi-scheme"
-  - "bankruptcy"
-  - "iconic-losses"
 secondarySources:
   - name: "Netflix — Trust No One: The Hunt for the Crypto King (2022 年)"
     url: "https://www.netflix.com/title/81349029"

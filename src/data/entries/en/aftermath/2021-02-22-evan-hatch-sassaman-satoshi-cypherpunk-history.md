@@ -22,7 +22,6 @@ tags:
   - "satoshi-identity"
   - "cypherpunk"
   - "media"
-  - "investigation"
 secondarySources:
   - name: "Wikipedia — Len Sassaman (covers the Hatch articulation and Patterson's denial)"
     url: "https://en.wikipedia.org/wiki/Len_Sassaman"

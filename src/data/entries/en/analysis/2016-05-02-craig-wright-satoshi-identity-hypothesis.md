@@ -17,7 +17,6 @@ tags:
   - "identity-claim"
   - "debunked"
   - "copa"
-  - "disputed"
 secondarySources:
   - name: "COPA v Wright — UK High Court Judgment (March 14, 2024)"
     url: "https://www.judiciary.uk/judgments/copa-v-wright/"

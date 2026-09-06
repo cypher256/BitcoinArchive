@@ -17,7 +17,7 @@ isSatoshi: false
 tags:
   - "copa"
   - "court-ruling"
-  - "identity"
+  - "satoshi-identity"
   - "uk-high-court"
 relatedEntries:
   - "analysis/2026-08-29-satoshi-bitcoin-reading-guide"

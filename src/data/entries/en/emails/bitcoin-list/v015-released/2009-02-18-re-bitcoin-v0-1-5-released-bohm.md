@@ -13,9 +13,7 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Nicholas Bohm reports that v0.1.5 has been running trouble free with 201 transactions accumulated, and asks Satoshi: \"What's next?\""
 isSatoshi: false
-tags:
-  - "user-report"
-  - "next-steps"
+tags: []
 ---
 
 Version 0.1.5 seems to be running trouble free. I have a list of 201

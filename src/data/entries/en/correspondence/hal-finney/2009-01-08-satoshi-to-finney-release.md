@@ -15,7 +15,6 @@ description: "Satoshi's private email to Hal Finney announcing the Bitcoin v0.1 
 isSatoshi: true
 tags:
   - "bitcoin-launch"
-  - "v0.1"
   - "hal-finney"
 secondarySources:
   - name: "CoinDesk - Previously Unpublished Emails of Satoshi Nakamoto Present a New Puzzle"

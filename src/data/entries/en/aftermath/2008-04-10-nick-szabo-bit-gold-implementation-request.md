@@ -15,7 +15,6 @@ description: "On his Unenumerated blog, Nick Szabo asks for help implementing bi
 isSatoshi: false
 tags:
   - "bit-gold"
-  - "implementation"
   - "pre-bitcoin"
 secondarySources:
   - name: "Bitcoin Magazine — The Genesis Files: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin"

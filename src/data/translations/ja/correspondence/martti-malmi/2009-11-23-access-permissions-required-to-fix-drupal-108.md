@@ -15,7 +15,7 @@ description: "サトシが Drupal の Apache 設定を修正するためにマ�
 isSatoshi: true
 tags:
   - "early-contributor"
-  - "website"
+  - "bitcoin-org"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"

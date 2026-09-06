@@ -16,10 +16,8 @@ description: "戸籍名が文字通り「サトシ・ナカモト」だった男
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "name-match"
   - "newsweek"
   - "denied"
-  - "disputed"
 secondarySources:
   - name: "Greenberg (Forbes) — 'Nakamoto's Neighbor' (March 25, 2014)"
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"

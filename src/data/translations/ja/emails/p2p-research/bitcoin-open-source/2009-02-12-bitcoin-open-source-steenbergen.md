@@ -15,8 +15,8 @@ description: "Steenbergen がビットコインは David Chaum の匿名電子�
 isSatoshi: false
 tags:
   - "privacy"
-  - "david-chaum"
-  - "supply-limit"
+  - "chaumian"
+  - "monetary-policy"
 translationStatus: complete
 ---
 

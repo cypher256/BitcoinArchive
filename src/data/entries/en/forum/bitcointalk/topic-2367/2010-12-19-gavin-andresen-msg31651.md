@@ -14,7 +14,6 @@ description: "Gavin Andresen publicly announces taking on active project managem
 isSatoshi: false
 tags:
   - "leadership"
-  - "transition"
   - "succession"
   - "lead-maintainer"
   - "github"

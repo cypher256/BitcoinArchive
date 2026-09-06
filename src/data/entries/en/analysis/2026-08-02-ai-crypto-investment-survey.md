@@ -13,9 +13,7 @@ isSatoshi: false
 homeOrder: 5
 tags:
   - "ai"
-  - "bitcoin"
   - "altcoin"
-  - "investment-survey"
   - "fact-check"
 secondarySources:
   - name: "ChatGPT (OpenAI)"

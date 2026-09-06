@@ -12,11 +12,9 @@ description: "2024 年 4 月 13 日、バス・ヴァン・ドルスト「Where 
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "stylometric-analysis"
   - "methodology"
   - "dataset"
   - "open-source"
-  - "investigation"
 secondarySources:
   - name: "Michael Chon — 'Stylometric Analysis: Satoshi Nakamoto'（Towards Data Science / Medium）"
     url: "https://medium.com/data-science/stylometric-analysis-satoshi-nakamoto-294926cdf995"

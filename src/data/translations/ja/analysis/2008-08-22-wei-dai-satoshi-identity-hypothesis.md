@@ -15,9 +15,8 @@ description: "b-money はホワイトペーパー参考文献 [1]、Crypto++ は
 tags:
   - "satoshi-identity"
   - "b-money"
-  - "crypto-plus-plus"
+  - "cryptopp"
   - "cypherpunk"
-  - "disputed"
 secondarySources:
   - name: "ウェイ・ダイ — b-money 提案（1998 年 11 月）"
     url: "http://www.weidai.com/bmoney.txt"

@@ -10,8 +10,7 @@ participants:
     slug: "nanotube"
 description: "Issue #241 thread starter by nanotube in bitcoin/bitcoin."
 isSatoshi: false
-tags:
-  - "issue"
+tags: []
 ---
 
 When i try to run bitcoin with -testnet and -datadir=someotherdir

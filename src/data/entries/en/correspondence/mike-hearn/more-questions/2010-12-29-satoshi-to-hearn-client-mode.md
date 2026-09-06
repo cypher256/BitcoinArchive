@@ -17,7 +17,7 @@ tags:
   - "client-mode"
   - "scalability"
   - "block-size"
-  - "coin-supply"
+  - "monetary-policy"
   - "moores-law"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"

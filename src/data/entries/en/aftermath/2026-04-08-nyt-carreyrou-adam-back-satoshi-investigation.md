@@ -21,9 +21,7 @@ isSatoshi: false
 tags:
   - "satoshi-identity"
   - "new-york-times"
-  - "stylometric-analysis"
   - "media"
-  - "investigation"
 secondarySources:
   - name: "The New York Times — My Quest to Solve Bitcoin's Great Mystery (April 8, 2026)"
     url: "https://www.nytimes.com/2026/04/08/business/bitcoin-satoshi-nakamoto-identity-adam-back.html"

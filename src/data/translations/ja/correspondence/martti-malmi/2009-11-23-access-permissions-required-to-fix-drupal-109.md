@@ -15,7 +15,7 @@ description: "マルミが bitcoin.org サーバー上の必要な Apache 設定
 isSatoshi: false
 tags:
   - "early-contributor"
-  - "website"
+  - "bitcoin-org"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"

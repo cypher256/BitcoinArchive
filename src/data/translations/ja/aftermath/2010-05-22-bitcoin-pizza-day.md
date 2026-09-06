@@ -14,7 +14,6 @@ description: "ハニエツがピザ 2枚を 10,000 BTC で購入。ビットコ�
 isSatoshi: false
 tags:
   - "pizza-day"
-  - "first-purchase"
   - "historic"
   - "bitcointalk"
 secondarySources:

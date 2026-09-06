@@ -11,7 +11,6 @@ participants:
 description: "ビットコイン v0.1 のソースから、トランザクション・ブロック・署名ハッシュのバイト境界と、ネットワーク・ディスクで同じ直列化機構を再利用する経路を示す。"
 isSatoshi: false
 tags:
-  - "bitcoin-v0.1"
   - "source-code"
   - "code-analysis"
   - "transactions"

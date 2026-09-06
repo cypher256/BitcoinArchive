@@ -23,7 +23,6 @@ isSatoshi: false
 tags:
   - "satoshi-identity"
   - "cypherpunk"
-  - "disputed"
 secondarySources:
   - name: "エヴァン・ハッチ — 「レン・サッサマンとサトシ：サイファーパンク史」（Medium、2021 年 2 月 22 日）"
     url: "https://evanhatch.medium.com/len-sassaman-and-satoshi-e483c85c2b10"

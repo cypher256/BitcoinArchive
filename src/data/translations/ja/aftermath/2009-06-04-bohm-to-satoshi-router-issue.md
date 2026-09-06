@@ -17,7 +17,7 @@ tags:
   - "correspondence"
   - "early-adopter"
   - "network"
-  - "connectivity"
+  - "early-network"
   - "bug-report"
 secondarySources:
   - name: "Decashed - Node IP Analysis"

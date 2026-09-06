@@ -14,7 +14,6 @@ description: "アンドレセンが BitcoinTalk topic 2367 でサトシの祝福
 isSatoshi: false
 tags:
   - "leadership"
-  - "transition"
   - "succession"
   - "lead-maintainer"
   - "historic"

@@ -14,10 +14,7 @@ description: "Aston University Centre for Forensic Linguistics released Project 
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "stylometric-analysis"
-  - "forensic-linguistics"
   - "academic"
-  - "investigation"
 secondarySources:
   - name: "ScienceDaily — 'Likely author of original Bitcoin paper? Researchers uncover linguistic evidence' (April 17, 2014)"
     url: "https://www.sciencedaily.com/releases/2014/04/140417090547.htm"

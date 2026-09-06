@@ -12,11 +12,9 @@ description: "On April 13, 2024, Bas van Dorst published Where is Satoshi?, a la
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "stylometric-analysis"
   - "methodology"
   - "dataset"
   - "open-source"
-  - "investigation"
 secondarySources:
   - name: "Michael Chon — 'Stylometric Analysis: Satoshi Nakamoto' (Towards Data Science / Medium)"
     url: "https://medium.com/data-science/stylometric-analysis-satoshi-nakamoto-294926cdf995"

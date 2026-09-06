@@ -12,7 +12,6 @@ description: "NewLibertyStandard publishes the first exchange rate for Bitcoin: 
 isSatoshi: false
 tags:
   - "exchange-rate"
-  - "first-price"
   - "mining"
   - "electricity-cost"
 secondarySources:

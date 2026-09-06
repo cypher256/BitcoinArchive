@@ -12,10 +12,8 @@ description: "トーマスが 2011 年に 7,002 BTC を解説動画の制作料�
 isSatoshi: false
 tags:
   - "lost-bitcoin"
-  - "forgotten-password"
   - "lost-keys"
   - "ironkey"
-  - "iconic-losses"
 secondarySources:
   - name: "Trakx — Stefan Thomas locked out of 7,002 BTC"
     url: "https://trakx.io/resources/insights/stefan-thomas-locked-out-of-7002-btc/"

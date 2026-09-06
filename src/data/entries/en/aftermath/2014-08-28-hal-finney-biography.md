@@ -16,7 +16,7 @@ callout:
 tags:
   - "hal-finney"
   - "pgp"
-  - "extropianism"
+  - "extropians"
   - "cryonics"
   - "rpow"
   - "als"

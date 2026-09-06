@@ -13,7 +13,6 @@ description: "In a comment on his Unenumerated blog replying to a reader's criti
 isSatoshi: false
 tags:
   - "bit-gold"
-  - "implementation"
   - "pre-bitcoin"
 relatedEntries:
   - "aftermath/2008-04-10-nick-szabo-bit-gold-implementation-request"

@@ -15,8 +15,6 @@ description: "Adam Back's second reply: he has not yet read the paper, but sugge
 isSatoshi: false
 tags:
   - "hashcash"
-  - "micromint"
-  - "ron-rivest"
   - "origins"
 secondarySources:
   - name: "COPA v Wright Trial Evidence"

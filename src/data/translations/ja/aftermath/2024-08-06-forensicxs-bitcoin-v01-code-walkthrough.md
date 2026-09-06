@@ -11,11 +11,9 @@ participants:
 description: "Forensicxs がビットコイン v0.1 の 31,794 行を行単位でウォークスルー。全 31 ファイルを網羅。"
 isSatoshi: false
 tags:
-  - "bitcoin-v0.1"
   - "source-code"
   - "code-analysis"
   - "forensicxs"
-  - "technical"
 secondarySources:
   - name: "GitHub — Original Bitcoin v0.1 source, pinned commit 4184ab2 (trottier)"
     url: "https://github.com/trottier/original-bitcoin/tree/4184ab26345d19e87045ce7d9291e60e7d36e096"

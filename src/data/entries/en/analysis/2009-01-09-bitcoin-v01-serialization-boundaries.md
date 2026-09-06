@@ -11,7 +11,6 @@ participants:
 description: "A source-level map of Bitcoin v0.1: the byte boundaries for transaction, block, and signature hashes, and the reuse of one serializer across network and disk paths."
 isSatoshi: false
 tags:
-  - "bitcoin-v0.1"
   - "source-code"
   - "code-analysis"
   - "transactions"

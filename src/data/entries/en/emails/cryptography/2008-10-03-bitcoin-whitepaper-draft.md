@@ -12,8 +12,6 @@ description: "An early draft of the Bitcoin whitepaper dated October 3, 2008, pr
 isSatoshi: true
 tags:
   - "whitepaper"
-  - "draft"
-  - "pre-announcement"
 pdfMetadata:
   id: "BBD1C86BA0031ECDEFBD1FEDE45329B2"
   language: "en-GB"

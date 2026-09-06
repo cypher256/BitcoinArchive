@@ -21,7 +21,6 @@ isSatoshi: false
 tags:
   - "hal-finney"
   - "satoshi-identity"
-  - "identity"
   - "analysis"
 secondarySources:
   - name: "Andy Greenberg — 'Nakamoto's Neighbor' (Forbes, March 25, 2014)"

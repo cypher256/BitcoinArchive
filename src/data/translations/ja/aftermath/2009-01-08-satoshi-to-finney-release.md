@@ -15,7 +15,6 @@ isSatoshi: true
 tags:
   - "correspondence"
   - "bitcoin-launch"
-  - "v0.1"
   - "hal-finney"
   - "first-contact"
 secondarySources:

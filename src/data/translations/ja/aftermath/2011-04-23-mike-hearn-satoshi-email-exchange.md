@@ -14,7 +14,6 @@ description: "マイク・ハーンとサトシ・ナカモトのメールのや
 isSatoshi: false
 tags:
   - "email-archive"
-  - "final-communication"
   - "disappearance"
 secondarySources:
   - name: "Mike Hearn's published Satoshi emails"

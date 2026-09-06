@@ -12,7 +12,6 @@ description: "Software engineer (born 1974), Linux kernel contributor, Red Hat e
 isSatoshi: false
 tags:
   - "bitcoin-core"
-  - "linux-kernel"
   - "cpuminer"
   - "bloq"
   - "historic"

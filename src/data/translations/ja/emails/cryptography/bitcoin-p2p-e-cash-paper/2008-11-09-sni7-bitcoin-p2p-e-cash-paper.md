@@ -13,7 +13,6 @@ participants:
 description: "サトシがプルーフ・オブ・ワークチェーンが同期化問題をどのように解決し、信頼を必要とせずにグローバルな共有ビューを確立するかを説明した。"
 isSatoshi: true
 tags:
-  - "synchronization"
   - "consensus"
   - "proof-of-work"
 secondarySources:

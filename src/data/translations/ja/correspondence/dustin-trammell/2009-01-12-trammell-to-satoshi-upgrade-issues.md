@@ -15,7 +15,6 @@ description: "トランメルが v0.1.0 から v0.1.3 への更新後、旧プ�
 isSatoshi: false
 tags:
   - "bug-report"
-  - "v0-1-3"
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-12-trammell-to-satoshi-upgrade-issues"

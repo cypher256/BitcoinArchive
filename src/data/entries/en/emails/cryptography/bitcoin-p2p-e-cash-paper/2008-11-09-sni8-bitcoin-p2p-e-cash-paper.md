@@ -13,7 +13,7 @@ participants:
 description: "Satoshi explains how competing blocks are resolved when two nodes simultaneously create blocks with different transaction sets."
 isSatoshi: true
 tags:
-  - "fork-resolution"
+  - "longest-chain"
   - "block-propagation"
   - "consensus"
 secondarySources:

@@ -12,9 +12,7 @@ description: "初心者向けのビットコイン図解。 8 章 30 用語を�
 isSatoshi: false
 tags:
   - "beginner-guide"
-  - "terminology"
   - "explainer"
-  - "diagrams"
   - "utxo"
   - "blockchain"
   - "mining"

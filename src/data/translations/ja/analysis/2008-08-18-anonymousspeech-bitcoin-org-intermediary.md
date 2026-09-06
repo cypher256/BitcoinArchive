@@ -14,7 +14,6 @@ participants:
 description: "サトシが 2008 年に使った匿名登録業者 AnonymousSpeech の記録。日本法を売る宣伝、マレーシア割当の中継サーバー、WIPO でも開示を拒んだ運営者の沈黙、身元研究への含意。"
 isSatoshi: false
 tags:
-  - "anonymousspeech"
   - "bitcoin-org"
   - "satoshi-anonymity"
   - "satoshi-identity"

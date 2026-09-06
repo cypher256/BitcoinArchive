@@ -16,7 +16,7 @@ tags:
   - "spv"
   - "android"
   - "scalability"
-  - "coin-supply"
+  - "monetary-policy"
   - "block-size"
 translationStatus: complete
 secondarySources:

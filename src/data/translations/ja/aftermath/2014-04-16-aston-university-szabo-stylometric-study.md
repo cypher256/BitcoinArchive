@@ -14,10 +14,7 @@ description: "2014 年 4 月、アストン大学法言語学センターが「P
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "stylometric-analysis"
-  - "forensic-linguistics"
   - "academic"
-  - "investigation"
 secondarySources:
   - name: "ScienceDaily — 'Likely author of original Bitcoin paper? Researchers uncover linguistic evidence'（2014 年 4 月 17 日）"
     url: "https://www.sciencedaily.com/releases/2014/04/140417090547.htm"

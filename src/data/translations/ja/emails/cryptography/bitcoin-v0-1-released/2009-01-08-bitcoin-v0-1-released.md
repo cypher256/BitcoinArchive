@@ -12,8 +12,7 @@ description: "サトシがビットコイン v0.1 のリリースを発表。Win
 isSatoshi: true
 tags:
   - "release"
-  - "v0.1"
-  - "software"
+  - "bitcoin-launch"
   - "announcement"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"

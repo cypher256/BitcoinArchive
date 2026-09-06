@@ -17,7 +17,7 @@ tags:
   - "mining"
   - "satoshi-fortune"
   - "extranonce"
-  - "nonce-analysis"
+  - "blockchain-forensics"
   - "historic"
 secondarySources:
   - name: "Bitslog — Satoshi's Fortune: a more accurate figure (April 24, 2013)"

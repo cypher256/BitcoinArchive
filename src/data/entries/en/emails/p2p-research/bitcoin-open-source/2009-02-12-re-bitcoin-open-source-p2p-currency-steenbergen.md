@@ -13,9 +13,9 @@ participants:
 description: "Satoshi explains Bitcoin's fixed supply of 21,000,000 coins and how it differs from David Chaum's system, in response to Martien van Steenbergen's questions on the P2P Research mailing list."
 isSatoshi: true
 tags:
-  - "supply-limit"
+  - "monetary-policy"
   - "privacy"
-  - "david-chaum"
+  - "chaumian"
   - "double-spending"
 relatedEntries:
   - "aftermath/2009-02-12-martien-van-steenbergen-biography"

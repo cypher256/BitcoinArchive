@@ -15,7 +15,6 @@ description: "トランメルが proof-hashes という Google Group につい�
 isSatoshi: false
 tags:
   - "proof-hashes"
-  - "feedback"
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-12-trammell-to-satoshi-proof-hashes"

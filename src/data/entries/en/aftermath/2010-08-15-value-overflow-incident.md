@@ -16,8 +16,6 @@ description: "An integer overflow bug (CVE-2010-5139) was exploited to create 18
 isSatoshi: false
 tags:
   - "overflow-bug"
-  - "block-74638"
-  - "CVE-2010-5139"
   - "security"
   - "soft-fork"
   - "historic"

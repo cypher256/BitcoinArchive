@@ -32,7 +32,6 @@ tags:
   - "block-size-war"
   - "bitcoin-cash"
   - "segwit"
-  - "history"
 secondarySources:
   - name: "CoinMarketCap — historical snapshot, June 12, 2017"
     url: "https://coinmarketcap.com/historical/20170612/"

@@ -13,7 +13,7 @@ isSatoshi: false
 tags:
   - "cryptography"
   - "secp256k1"
-  - "signatures"
+  - "digital-signatures"
 secondarySources:
   - name: "Original Bitcoin v0.1.0 source — src/key.h"
     url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/key.h#L49-L136"

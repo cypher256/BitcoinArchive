@@ -14,7 +14,7 @@ description: "LessWrong Q&A でのウェイ・ダイのサトシと b-money に�
 isSatoshi: false
 tags:
   - "b-money"
-  - "identity"
+  - "satoshi-identity"
   - "motivation"
   - "lesswrong"
   - "crypto-anarchy"

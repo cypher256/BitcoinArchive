@@ -13,9 +13,8 @@ participants:
 description: "Satoshi explains only the current best branch's pending-transaction pool needs maintaining, discusses TCP reliability for block propagation, and notes the system aligns with libertarian principles."
 isSatoshi: true
 tags:
-  - "pending-transactions"
+  - "mempool"
   - "networking"
-  - "tcp"
   - "libertarian"
   - "incentives"
 secondarySources:

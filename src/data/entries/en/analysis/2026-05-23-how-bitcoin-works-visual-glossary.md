@@ -12,9 +12,7 @@ description: "Beginner's visual guide to Bitcoin — 30 terms across 8 chapters,
 isSatoshi: false
 tags:
   - "beginner-guide"
-  - "terminology"
   - "explainer"
-  - "diagrams"
   - "utxo"
   - "blockchain"
   - "mining"

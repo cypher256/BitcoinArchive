@@ -21,7 +21,6 @@ description: "ビットコイン象徴的損失を機構別に整理: パスワ�
 isSatoshi: false
 tags:
   - "lost-bitcoin"
-  - "iconic-losses"
   - "irreversibility"
   - "lost-keys"
   - "exchange-collapse"

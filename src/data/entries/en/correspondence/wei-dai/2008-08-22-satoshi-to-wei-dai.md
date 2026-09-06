@@ -17,7 +17,6 @@ tags:
   - "earliest-correspondence"
   - "adam-back"
   - "origins"
-  - "ecash-pdf"
   - "whitepaper"
 secondarySources:
   - name: "Pre-release draft — Electronic Cash Without a Trusted Third Party"

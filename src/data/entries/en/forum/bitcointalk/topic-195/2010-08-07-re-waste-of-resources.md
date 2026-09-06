@@ -11,7 +11,7 @@ participants:
 description: "Satoshi explains the nature of Bitcoin's script system, describing it as a predicate that evaluates to true or false, enabling various transaction types."
 isSatoshi: true
 tags:
-  - "script"
+  - "script-language"
   - "transactions"
   - "smart-contracts"
 secondarySources:

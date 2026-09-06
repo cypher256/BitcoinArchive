@@ -16,8 +16,6 @@ description: "Andresen replies to Satoshi's alert-key email, accepts the key, an
 tags:
   - "alert-key"
   - "cia"
-  - "iqt"
-  - "final-communication"
   - "disappearance"
 relatedEntries:
   - aftermath/2011-04-26-andresen-to-satoshi-cia-visit

@@ -16,7 +16,7 @@ tags:
   - "mining"
   - "bitcoin-holdings"
   - "blockchain-analysis"
-  - "patoshi-pattern"
+  - "patoshi"
 secondarySources:
   - name: "Sergio Demian Lerner - The Well Deserved Fortune of Satoshi Nakamoto"
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"

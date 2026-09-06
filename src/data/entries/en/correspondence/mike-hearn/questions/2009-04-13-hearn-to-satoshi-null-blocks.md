@@ -13,7 +13,7 @@ participants:
 description: "Mike Hearn asks whether the block chain needs to keep extending even when there are no transactions to process."
 isSatoshi: false
 tags:
-  - "block-chain"
+  - "blockchain"
   - "empty-blocks"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"

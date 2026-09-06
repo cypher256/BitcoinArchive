@@ -15,7 +15,6 @@ description: "オイゲン・ライトルが、 bitcoin.sourceforge.net は正�
 isSatoshi: false
 tags:
   - "linux"
-  - "debian"
 quotes:
   - id: "q1"
     person: "Satoshi Nakamoto"

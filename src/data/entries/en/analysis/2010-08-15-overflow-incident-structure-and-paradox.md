@@ -19,8 +19,6 @@ isSatoshi: false
 homeOrder: 7
 tags:
   - "overflow-bug"
-  - "block-74638"
-  - "CVE-2010-5139"
   - "soft-fork"
   - "incident-response"
   - "centralization-paradox"

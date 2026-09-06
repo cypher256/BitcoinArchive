@@ -15,7 +15,7 @@ description: "了解です。11月23日から 25日まで不在にします。"
 isSatoshi: false
 tags:
   - "early-contributor"
-  - "website"
+  - "bitcoin-org"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"

@@ -13,7 +13,7 @@ participants:
 description: "マイク・ハーンがサトシに感謝し、ハル・フィニーが Tx0 の scriptSig にマークルルートを格納するアプローチを正しく推測していたことを指摘する。"
 isSatoshi: false
 tags:
-  - "merged-mining"
+  - "merge-mining"
   - "hal-finney"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"

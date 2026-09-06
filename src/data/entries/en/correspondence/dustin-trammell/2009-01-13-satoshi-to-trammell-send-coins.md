@@ -15,7 +15,6 @@ description: "Satoshi explains the v0.1.0 thread bug that orphaned Trammell's bl
 isSatoshi: true
 tags:
   - "mining"
-  - "v0-1-3"
   - "send-to-ip"
 relatedEntries:
   - "aftermath/2009-01-13-satoshi-to-trammell-send-coins"

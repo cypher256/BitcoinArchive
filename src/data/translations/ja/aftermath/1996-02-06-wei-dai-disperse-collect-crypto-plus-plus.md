@@ -11,9 +11,9 @@ participants:
 description: "サイファーパンクメーリングリストでの Disperse/Collect 1.0 発表。自作の Crypto++ライブラリ使用と明記し、ダイが実際に手を動かす実装者でもあったことを示す。"
 isSatoshi: false
 tags:
-  - "crypto-plus-plus"
+  - "cryptopp"
   - "cypherpunks"
-  - "coding"
+  - "development"
   - "historic"
 editorNote: "この投稿は、ウェイ・ダイが実際にコードを書き、リリースし、保守していた実践的なプログラマーであったことを示す証拠だ。彼が後に b-money（1998年）を実装しなかったのは、技術的能力の不足ではなかった ― 2014年の LessWrong での本人の告白（「クリプト・アナーキーに幻滅を感じていた」）が裏付けるように、意図的な選択だった。「できなかった」と「しなかった」の区別は、ビットコインに至る知的歴史を理解する上で極めて重要だ。"
 secondarySources:

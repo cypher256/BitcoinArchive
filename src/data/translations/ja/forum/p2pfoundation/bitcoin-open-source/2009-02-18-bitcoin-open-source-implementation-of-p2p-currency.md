@@ -17,7 +17,6 @@ description: "ヨルク・バッハとゼップ・ハスルベルガーの質問
 isSatoshi: true
 tags:
   - "mining"
-  - "supply-limit"
   - "proof-of-work"
   - "monetary-policy"
 relatedEntries:

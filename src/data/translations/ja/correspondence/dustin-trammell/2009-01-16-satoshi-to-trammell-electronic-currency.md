@@ -15,7 +15,7 @@ description: "サトシが bitcoin-list と Cryptography を CC に加え、電�
 isSatoshi: true
 tags:
   - "vision"
-  - "catches-on"
+  - "adoption"
   - "bitcoin-list"
   - "cryptography-mailing-list"
 translationStatus: complete

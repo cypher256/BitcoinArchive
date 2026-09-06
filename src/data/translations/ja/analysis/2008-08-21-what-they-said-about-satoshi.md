@@ -29,7 +29,6 @@ description: "2008 年の懐疑、破れなかったコード検証、判決文�
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "testimony"
   - "reception-history"
 secondarySources:
   - name: "ニューヨーカー — The Crypto-Currency (ジョシュア・デイヴィス、全文ミラー)"

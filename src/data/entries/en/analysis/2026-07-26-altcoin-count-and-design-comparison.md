@@ -26,7 +26,6 @@ participants:
 description: "Twelve chains, sorted by what each one's issuance rule settles about the price of a single unit — and by how much of that price the rule never touches."
 tags:
   - "altcoin"
-  - "comparison"
   - "stablecoin"
   - "governance"
   - "memecoin"

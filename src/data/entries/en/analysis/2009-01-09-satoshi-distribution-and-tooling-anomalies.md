@@ -11,9 +11,9 @@ participants:
 description: "Editorial reading of Bitcoin v0.1's unusual distribution and tooling absences (.rar packaging, no version control, no tests), placed against Warez-scene conventions and Kaminsky's 2011 security audit."
 isSatoshi: false
 tags:
-  - "bitcoin-v0.1"
+  - "source-code"
   - "distribution"
-  - "tooling"
+  - "satoshi-tooling"
   - "warez-scene"
   - "code-quality"
   - "kaminsky-audit"

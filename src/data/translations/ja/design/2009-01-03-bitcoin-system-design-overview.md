@@ -12,7 +12,6 @@ description: "ビットコインの全体構造、レイヤーモデル、デー
 isSatoshi: false
 tags:
   - "architecture"
-  - "system-overview"
   - "analysis"
 relatedEntries:
   - "emails/cryptography/2008-10-31-bitcoin-whitepaper-final"

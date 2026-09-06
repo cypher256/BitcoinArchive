@@ -22,7 +22,7 @@ tags:
   - "bitcoin-core"
   - "governance"
   - "naming"
-  - "scaling-debate"
+  - "scaling"
   - "bitcoin-foundation"
 secondarySources:
   - name: "bitcoin.org — Bitcoin Core 0.9.0 release notes"

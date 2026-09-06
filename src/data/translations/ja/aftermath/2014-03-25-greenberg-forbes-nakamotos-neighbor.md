@@ -20,7 +20,6 @@ tags:
   - "hal-finney"
   - "satoshi-identity"
   - "forbes"
-  - "race-day-alibi"
   - "journalism"
   - "historic"
 relatedEntries:

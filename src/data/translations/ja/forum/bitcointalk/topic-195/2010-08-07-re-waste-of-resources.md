@@ -11,7 +11,7 @@ participants:
 description: "サトシ・ナカモトが Bitcoin のスクリプトシステムの本質を説明し、真または偽に評価される述語として様々なトランザクションタイプを可能にすることを解説。"
 isSatoshi: true
 tags:
-  - "script"
+  - "script-language"
   - "transactions"
   - "smart-contracts"
 secondarySources:

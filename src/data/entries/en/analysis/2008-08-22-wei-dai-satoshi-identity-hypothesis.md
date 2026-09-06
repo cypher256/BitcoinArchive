@@ -15,9 +15,8 @@ description: "b-money is whitepaper reference [1], his Crypto++ shipped inside B
 tags:
   - "satoshi-identity"
   - "b-money"
-  - "crypto-plus-plus"
+  - "cryptopp"
   - "cypherpunk"
-  - "disputed"
 secondarySources:
   - name: "Wei Dai — b-money proposal (November 1998)"
     url: "http://www.weidai.com/bmoney.txt"

@@ -15,7 +15,7 @@ isSatoshi: false
 tags:
   - "wine"
   - "macos"
-  - "block-chain"
+  - "blockchain"
   - "micropayments"
   - "confirmations"
 secondarySources:

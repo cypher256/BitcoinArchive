@@ -13,8 +13,7 @@ isSatoshi: false
 tags:
   - "slashdot"
   - "media"
-  - "bitcoin-v0.3"
-  - "growth"
+  - "adoption"
   - "historic"
 secondarySources:
   - name: "Bitcoin Magazine — Bitcoin Gets Slashdotted"

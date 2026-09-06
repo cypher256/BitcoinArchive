@@ -13,11 +13,11 @@ participants:
 description: "Satoshi explains his most detailed merged mining proposal, reveals the abandoned eBay-style marketplace feature, and clarifies that alternative chains are completely independent with shared miners."
 isSatoshi: true
 tags:
-  - "merged-mining"
+  - "merge-mining"
   - "bitdns"
   - "publish-subscribe"
   - "marketplace"
-  - "fees"
+  - "transaction-fees"
   - "json-rpc"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"

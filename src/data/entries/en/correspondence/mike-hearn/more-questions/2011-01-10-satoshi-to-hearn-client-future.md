@@ -16,7 +16,7 @@ tags:
   - "bitcoinj"
   - "client-mode"
   - "encryption"
-  - "coin-supply"
+  - "monetary-policy"
   - "gpu-mining"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"

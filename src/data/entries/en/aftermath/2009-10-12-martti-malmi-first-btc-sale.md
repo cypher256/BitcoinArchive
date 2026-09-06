@@ -13,8 +13,7 @@ participants:
 description: "Martti Malmi sells 5,050 BTC to NewLibertyStandard for $5.02 via PayPal — the first known Bitcoin-to-fiat exchange, establishing a real-world price of ~$0.001 per BTC."
 isSatoshi: false
 tags:
-  - "first-sale"
-  - "fiat-exchange"
+  - "exchange"
   - "historic"
 secondarySources:
   - name: "CoinTelegraph — 5,050 Bitcoin for $5 in 2009"

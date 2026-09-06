@@ -16,7 +16,7 @@ tags:
   - "scalability"
   - "transaction-fees"
   - "mining"
-  - "coin-supply"
+  - "monetary-policy"
   - "ripple"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"

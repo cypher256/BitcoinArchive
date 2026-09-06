@@ -22,7 +22,6 @@ tags:
   - "satoshi-identity"
   - "new-york-times"
   - "media"
-  - "investigation"
   - "bit-gold"
 secondarySources:
   - name: "Wikipedia — Nick Szabo (covers Popper identification and Szabo's denial)"

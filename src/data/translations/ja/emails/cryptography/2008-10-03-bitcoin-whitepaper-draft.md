@@ -12,8 +12,6 @@ description: "2008年10月3日付のビットコインホワイトペーパー�
 isSatoshi: true
 tags:
   - "whitepaper"
-  - "draft"
-  - "pre-announcement"
 pdfMetadata:
   id: "BBD1C86BA0031ECDEFBD1FEDE45329B2"
   language: "en-GB"

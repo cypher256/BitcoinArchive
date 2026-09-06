@@ -12,7 +12,7 @@ description: "ピーター・トッドが BIP 65（OP_CHECKLOCKTIMEVERIFY）を�
 isSatoshi: false
 tags:
   - "bip"
-  - "timelocks"
+  - "time-lock"
   - "bitcoin-core"
   - "soft-fork"
 secondarySources:

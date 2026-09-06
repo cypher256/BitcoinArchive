@@ -15,7 +15,7 @@ participants:
 description: "Newsweek publishes 'The Face Behind Bitcoin,' identifying Dorian Prentice Satoshi Nakamoto, a 64-year-old Japanese-American man living in Temple City, California, as Bitcoin's creator."
 isSatoshi: false
 tags:
-  - "identity"
+  - "satoshi-identity"
   - "newsweek"
   - "media"
 relatedEntries:

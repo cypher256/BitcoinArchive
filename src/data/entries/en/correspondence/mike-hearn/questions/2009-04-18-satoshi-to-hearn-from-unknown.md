@@ -14,7 +14,6 @@ description: "Satoshi explains why transactions show 'from: unknown' and that 'G
 isSatoshi: true
 tags:
   - "transaction"
-  - "generated-not-accepted"
   - "p2p"
 secondarySources:
   - name: "Bitcoin.com — Satoshi Archive: Mike Hearn Emails"

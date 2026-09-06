@@ -17,8 +17,6 @@ tags:
   - "correspondence"
   - "alert-key"
   - "cia"
-  - "iqt"
-  - "final-communication"
   - "disappearance"
 secondarySources:
   - name: "Wikipedia - Gavin Andresen"

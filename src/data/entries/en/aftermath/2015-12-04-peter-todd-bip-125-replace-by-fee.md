@@ -16,7 +16,6 @@ tags:
   - "bip"
   - "replace-by-fee"
   - "transaction-policy"
-  - "satoshi-connection"
 secondarySources:
   - name: "Bitcoin Wiki — Transaction replacement"
     url: "https://en.bitcoin.it/wiki/Transaction_replacement"

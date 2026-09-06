@@ -16,7 +16,6 @@ isSatoshi: true
 tags:
   - "coin-maturity"
   - "timestamp"
-  - "v0-1-3"
 translationStatus: complete
 relatedEntries:
   - "aftermath/2009-01-12-satoshi-to-trammell-coin-maturity"

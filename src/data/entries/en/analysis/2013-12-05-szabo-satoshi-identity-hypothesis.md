@@ -17,9 +17,7 @@ isSatoshi: false
 tags:
   - "satoshi-identity"
   - "bit-gold"
-  - "stylometric-analysis"
   - "cypherpunk"
-  - "disputed"
 secondarySources:
   - name: "Archived cypherpunks-list posts by Nick Szabo (1993–1996)"
     url: "https://mailing-list-archive.cryptoanarchy.wiki/authors/szabo_at_netcom_com_nick_szabo_/"

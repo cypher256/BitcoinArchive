@@ -13,8 +13,8 @@ isSatoshi: false
 tags:
   - "utxo"
   - "transactions"
-  - "script"
-  - "signatures"
+  - "script-language"
+  - "digital-signatures"
 secondarySources:
   - name: "Original Bitcoin v0.1.0 source — src/main.h"
     url: "https://github.com/trottier/original-bitcoin/blob/4184ab2/src/main.h#L193-L363"

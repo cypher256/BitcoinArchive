@@ -15,7 +15,6 @@ description: "ニック・サボが自身のブログで bit gold の実装協�
 isSatoshi: false
 tags:
   - "bit-gold"
-  - "implementation"
   - "pre-bitcoin"
 secondarySources:
   - name: "Bitcoin Magazine — The Genesis Files: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin"

@@ -14,7 +14,6 @@ description: "ビットコイン関連で最初に知られるツイート。ハ
 isSatoshi: false
 tags:
   - "hal-finney"
-  - "first-tweet"
   - "bitcoin-launch"
   - "mining"
   - "historic"

@@ -14,7 +14,7 @@ description: "サトシがウェイ・ダイに Bitcoin v0.1 のリリースを�
 isSatoshi: true
 tags:
   - "b-money"
-  - "bitcoin-release"
+  - "release"
   - "hal-finney"
   - "origins"
 quotes:

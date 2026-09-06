@@ -15,11 +15,9 @@ description: "サトシ・ナカモトがギャビン・アンドレセンにソ
 isSatoshi: false
 tags:
   - "correspondence"
-  - "handover"
   - "leadership"
   - "succession"
-  - "svn-access"
-  - "project-management"
+  - "commit-access"
 secondarySources:
   - name: "CoinMarketCap - Satoshi Files: Gavin Andresen"
     url: "https://coinmarketcap.com/academy/article/satoshi-files-gavin-andresen"

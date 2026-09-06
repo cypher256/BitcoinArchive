@@ -18,7 +18,7 @@ isSatoshi: false
 tags:
   - "regulation"
   - "decentralization"
-  - "resilience"
+  - "censorship-resistance"
   - "blockchain"
 secondarySources:
   - name: "Satoshi Nakamoto Institute (thread view)"

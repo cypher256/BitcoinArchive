@@ -14,7 +14,6 @@ participants:
 description: "Documented record of AnonymousSpeech.com, the anonymous intermediary behind bitcoin.org: the Japanese-law sales pitch, the Malaysia-allocated mail relay, and an operator trail that ends in silence."
 isSatoshi: false
 tags:
-  - "anonymousspeech"
   - "bitcoin-org"
   - "satoshi-anonymity"
   - "satoshi-identity"

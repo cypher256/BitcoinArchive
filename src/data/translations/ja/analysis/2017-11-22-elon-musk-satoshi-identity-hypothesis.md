@@ -15,7 +15,6 @@ isSatoshi: false
 tags:
   - "satoshi-identity"
   - "denied"
-  - "disputed"
 secondarySources:
   - name: "CNBC — 'Elon Musk denies he is bitcoin creator Satoshi Nakamoto' (November 28, 2017)"
     url: "https://www.cnbc.com/2017/11/28/elon-musk-denies-he-is-bitcoin-creator-satoshi-nakamoto.html"

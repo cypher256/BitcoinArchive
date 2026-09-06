@@ -11,11 +11,9 @@ participants:
 description: "Forensicxs published a line-by-line walkthrough of Bitcoin v0.1's 31,794 lines of source code, covering all 31 files."
 isSatoshi: false
 tags:
-  - "bitcoin-v0.1"
   - "source-code"
   - "code-analysis"
   - "forensicxs"
-  - "technical"
 secondarySources:
   - name: "GitHub — Original Bitcoin v0.1 source, pinned commit 4184ab2 (trottier)"
     url: "https://github.com/trottier/original-bitcoin/tree/4184ab26345d19e87045ce7d9291e60e7d36e096"

@@ -12,9 +12,9 @@ description: "サトシの最後の投稿の 1 つ。WikiLeaks がビットコ�
 isSatoshi: true
 tags:
   - "wikileaks"
-  - "media-attention"
+  - "media"
   - "caution"
-  - "near-final-post"
+  - "disappearance"
 secondarySources:
   - name: "Satoshi Nakamoto Institute"
     url: "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/542/"

@@ -23,10 +23,8 @@ isSatoshi: false
 description: "Bitcoin Institute reanalysis of van Dorst's stylometric corpus for the five most-cited candidates. Finding: Szabo top at 4.67th percentile of 12,739 authors; 594 unnamed rank closer; corpus is noisy."
 tags:
   - "satoshi-identity"
-  - "stylometric-analysis"
   - "methodology"
   - "dataset"
-  - "investigation"
   - "hal-finney"
 relatedEntries:
   - aftermath/2024-04-13-van-dorst-where-is-satoshi-stylometric-corpus

@@ -16,8 +16,6 @@ isSatoshi: false
 tags:
   - "botnet"
   - "security"
-  - "biology"
-  - "parasitism"
 secondarySources:
   - name: "Satoshi Nakamoto Institute (thread view)"
     url: "https://satoshi.nakamotoinstitute.org/emails/cryptography/threads/2/"

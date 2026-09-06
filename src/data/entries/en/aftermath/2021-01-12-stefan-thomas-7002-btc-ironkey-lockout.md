@@ -12,10 +12,8 @@ description: "Stefan Thomas was paid 7,002 BTC in 2011 for a Bitcoin explainer v
 isSatoshi: false
 tags:
   - "lost-bitcoin"
-  - "forgotten-password"
   - "lost-keys"
   - "ironkey"
-  - "iconic-losses"
 secondarySources:
   - name: "Trakx — Stefan Thomas locked out of 7,002 BTC"
     url: "https://trakx.io/resources/insights/stefan-thomas-locked-out-of-7002-btc/"

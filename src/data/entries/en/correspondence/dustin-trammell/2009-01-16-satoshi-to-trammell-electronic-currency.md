@@ -15,7 +15,7 @@ description: "Satoshi CCs the exchange to bitcoin-list and Cryptography, restati
 isSatoshi: true
 tags:
   - "vision"
-  - "catches-on"
+  - "adoption"
   - "bitcoin-list"
   - "cryptography-mailing-list"
 relatedEntries:

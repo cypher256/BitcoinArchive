@@ -14,7 +14,6 @@ description: "サトシからビットコインのコミット権限を与えら
 isSatoshi: false
 tags:
   - "leadership"
-  - "transition"
   - "development"
   - "cia"
   - "satoshi-identity"

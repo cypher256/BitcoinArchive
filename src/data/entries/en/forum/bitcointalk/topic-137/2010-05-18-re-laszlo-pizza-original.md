@@ -12,9 +12,7 @@ description: "Laszlo Hanyecz posts his famous offer to pay 10,000 bitcoins for t
 isSatoshi: false
 tags:
   - "pizza-day"
-  - "first-purchase"
   - "historic"
-  - "10000-btc"
 secondarySources:
   - name: "Bitcoin Wiki - Laszlo Hanyecz"
     url: "https://en.bitcoin.it/wiki/Laszlo_Hanyecz"

@@ -16,9 +16,7 @@ description: "On December 1, 2013, blogger Skye Grey published Satoshi Nakamoto 
 isSatoshi: false
 tags:
   - "satoshi-identity"
-  - "stylometric-analysis"
   - "media"
-  - "investigation"
   - "bit-gold"
 secondarySources:
   - name: "Skye Grey — 'Satoshi Nakamoto is (probably) Nick Szabo' (LikeInAMirror, December 1, 2013, original article)"

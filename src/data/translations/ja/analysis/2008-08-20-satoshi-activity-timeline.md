@@ -13,7 +13,6 @@ isSatoshi: false
 tags:
   - "satoshi-identity"
   - "timeline"
-  - "master-index"
   - "visualization"
 secondarySources:
   - name: "Satoshi Nakamoto Institute — Complete Works"

@@ -16,7 +16,7 @@ participants:
 description: "Gavin が Rainey からの取材に応じると申し出て、 Satoshi が報道対応をしたいかを確認。報道機関を無視しても消えはせず、熱心すぎる外部者が事実上の代弁者になるだけだと主張する。"
 isSatoshi: false
 tags:
-  - "press"
+  - "media"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"
     url: "https://www.opencrypto.org/2024-02-22-witnesses-satoshi-correspondence/"

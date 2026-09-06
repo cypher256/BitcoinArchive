@@ -12,7 +12,7 @@ description: "Peter Todd proposed BIP 65, introducing OP_CHECKLOCKTIMEVERIFY —
 isSatoshi: false
 tags:
   - "bip"
-  - "timelocks"
+  - "time-lock"
   - "bitcoin-core"
   - "soft-fork"
 secondarySources:

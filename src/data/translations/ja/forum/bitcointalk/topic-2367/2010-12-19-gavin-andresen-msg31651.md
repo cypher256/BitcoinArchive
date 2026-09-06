@@ -14,7 +14,6 @@ description: "ギャビン・アンドレセンがサトシの了承の下、ビ
 isSatoshi: false
 tags:
   - "leadership"
-  - "transition"
   - "succession"
   - "lead-maintainer"
   - "github"

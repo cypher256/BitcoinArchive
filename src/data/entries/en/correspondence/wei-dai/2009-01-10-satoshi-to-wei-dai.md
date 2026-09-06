@@ -14,7 +14,7 @@ description: "Satoshi announces the release of Bitcoin v0.1 to Wei Dai, stating 
 isSatoshi: true
 tags:
   - "b-money"
-  - "bitcoin-release"
+  - "release"
   - "hal-finney"
   - "origins"
 quotes:
