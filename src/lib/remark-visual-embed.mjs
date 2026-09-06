@@ -1,8 +1,9 @@
 /**
- * remark-visual-embed.mjs — in-body metaphor-illustration marker for `guide`
- * entries (STYLE_GUIDE_VISUAL.md § Metaphor illustrations)
+ * remark-visual-embed.mjs — in-body metaphor-illustration marker for any
+ * editorial entry (STYLE_GUIDE_VISUAL.md § Metaphor illustrations) — most
+ * common on `guide` entries, but not exclusive to them
  *
- * Converts a marker placed anywhere in a guide entry's markdown body:
+ * Converts a marker placed anywhere in an editorial entry's markdown body:
  *   <!-- visual: NAME -->
  * into the same figure-outer/figure-block wrapper Mermaid and tables use
  * (STYLE_GUIDE_VISUAL.md § Layout width consideration), with an empty

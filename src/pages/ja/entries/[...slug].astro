@@ -92,7 +92,7 @@ const entryById = new Map(allEntries.map((e) => [e.id, e]));
 // threads happen to have the same message count the two banners render
 // identically (satoshi-final-known-email quotes two 4-message threads).
 const commentaryThreadLinks = new Map<string, { id: string; messages: number; title: string }>();
-if (entry.data.type === 'article' || entry.data.type === 'analysis' || entry.data.type === 'design' || entry.data.type === 'guide') {
+if (entry.data.type === 'article' || entry.data.type === 'analysis' || entry.data.type === 'design' || entry.data.type === 'currency' || entry.data.type === 'guide') {
   for (const q of entry.data.quotes ?? []) {
     if (!q.sourceEntryId) continue;
     const sourceEntry = entryById.get(q.sourceEntryId);
@@ -374,7 +374,7 @@ const titleHtml = loadDefaultJapaneseParser().translateHTMLString(entry.data.tit
   </article>
 
   {isEditorialType && <ChartEmbedRuntime />}
-  {entry.data.type === 'guide' && <VisualEmbedRuntime />}
+  {isEditorialType && <VisualEmbedRuntime />}
 </BaseLayout>
 
 <style>

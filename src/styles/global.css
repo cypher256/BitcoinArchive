@@ -1337,17 +1337,18 @@ th {
 }
 
 /* ----------------------------------------------------------------
-   Figure block — unified wrapper for mermaid / table / d3 chart.
-   Replaces the prior .mermaid-scroll / .table-scroll / .chart-scroll
-   trio. data-kind distinguishes type for kind-specific selectors.
-   Applied by rehype-mermaid-wrapper.mjs, rehype-table-wrapper.mjs,
-   and per-drawer for d3 chart embeds (e.g. the fork-genealogy
-   drawer in ChartEmbedRuntime.astro).
+   Figure block — unified wrapper for mermaid / table / d3 chart /
+   visual metaphor illustration. Replaces the prior .mermaid-scroll /
+   .table-scroll / .chart-scroll trio. data-kind distinguishes type
+   for kind-specific selectors. Applied by rehype-mermaid-wrapper.mjs,
+   rehype-table-wrapper.mjs, per-drawer for d3 chart embeds (e.g. the
+   fork-genealogy drawer in ChartEmbedRuntime.astro), and
+   remark-visual-embed.mjs for `visual` illustrations.
    See STYLE_GUIDE_VISUAL.md § d3 components → Layout width consideration.
 
    Structure:
      <div class="figure-outer">
-       <figure class="figure-block" data-kind="mermaid|table|chart">
+       <figure class="figure-block" data-kind="mermaid|table|chart|visual">
          <svg|table|div>...</...>
        </figure>
      </div>
@@ -1444,14 +1445,15 @@ th {
      must be width: 100% (not max-content) for the chart to use
      the available room. position: relative + overflow-y: hidden
      supports the existing tooltip pattern.
-   - visual (guide metaphor illustration): scalable SVG (viewBox only,
-     no fixed pixel intent), so width: 100% lets it fill the column on
-     desktop like chart does -- the whole point of a metaphor
-     illustration is legibility for a zero-prior-knowledge reader, so
-     bigger is the goal, not incidental. This also sidesteps the
-     max-content bug where a long <figcaption> (STYLE_GUIDE_JA prose is
-     usually longer than its EN counterpart) forced the block wider
-     than the SVG's own intended size on some guide pages. */
+   - visual (concrete illustration, any editorial type): scalable SVG
+     (viewBox only, no fixed pixel intent), so width: 100% lets it fill
+     the column on desktop like chart does -- the whole point of this
+     kind is legibility for a reader meeting the illustrated mechanism
+     for the first time, so bigger is the goal, not incidental. This
+     also sidesteps the max-content bug where a long <figcaption>
+     (STYLE_GUIDE_JA prose is usually longer than its EN counterpart)
+     forced the block wider than the SVG's own intended size on some
+     pages. */
 .figure-block[data-kind="mermaid"],
 .figure-block[data-kind="table"] {
   width: max-content;
@@ -1573,6 +1575,7 @@ th {
 .figure-block[data-kind="mermaid"],
 .figure-block[data-kind="table"],
 .figure-block[data-kind="chart"],
+.figure-block[data-kind="visual"],
 pre,
 .minimap-scroll {
   --scroll-fade: 28px;

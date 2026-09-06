@@ -5,23 +5,28 @@
  * Computes the visual-density ratio defined in STYLE_GUIDE_VISUAL.md
  * § Visual Representation:
  *
- *   density = (mermaid-block lines + markdown-table lines + d3-component lines)
+ *   density = (mermaid-block lines + markdown-table lines + d3-component lines
+ *              + visual-marker weighted lines)
  *           / total body lines (excluding frontmatter and code blocks other
  *             than mermaid)
  *
- * Scope: editorial entry types only — analysis, article, biography, design.
- * Primary-source types (forum-post, mailing-list, correspondence, whitepaper,
- * bip, tweet, court-document) are out of scope per the style guide.
+ * Scope: editorial entry types only — analysis, article, biography, design,
+ * currency. Primary-source types (forum-post, mailing-list, correspondence,
+ * whitepaper, bip, tweet, court-document) are out of scope per the style guide.
  *
- * `guide` entries use a separate formula and threshold (STYLE_GUIDE_VISUAL.md
- * § `guide` density target): markdown tables do not count toward the ratio
- * (a lookup glossary is not the kind of visual explanation a zero-knowledge
- * reader needs), and `<!-- visual: NAME -->` metaphor-illustration markers
- * count instead. A `visual` marker is a single source line whose rendered
- * illustration occupies far more visual area than one line -- VISUAL_MARKER_WEIGHT
- * below is a deliberate, documented calibration (not a measured value) standing
- * in for that area, chosen against this corpus's existing Mermaid diagrams'
- * typical line count.
+ * `<!-- visual: NAME -->` metaphor-illustration markers count toward every
+ * entry type's ratio (STYLE_GUIDE_VISUAL.md § When to reach for non-text
+ * expression — not `guide`-exclusive). A `visual` marker is a single source
+ * line whose rendered illustration occupies far more visual area than one
+ * line -- VISUAL_MARKER_WEIGHT below is a deliberate, documented calibration
+ * (not a measured value) standing in for that area, chosen against this
+ * corpus's existing Mermaid diagrams' typical line count.
+ *
+ * `guide` entries additionally use a separate formula and threshold
+ * (STYLE_GUIDE_VISUAL.md § `guide` density target): markdown tables do not
+ * count toward the ratio there (a lookup glossary is not the kind of visual
+ * explanation a zero-knowledge reader needs) — this exclusion is `guide`-only,
+ * every other type counts tables as usual.
  *
  * A guide series' index page (the one entry in the series with no `partOf`
  * -- every topic page's `partOf` points at it) is exempt from the 50%
@@ -56,7 +61,7 @@ const REPO_ROOT = path.resolve(__dirname, '..');
 const EN_ROOT = path.join(REPO_ROOT, 'src/data/entries/en');
 const JA_ROOT = path.join(REPO_ROOT, 'src/data/translations/ja');
 
-const EDITORIAL_TYPES = new Set(['analysis', 'article', 'biography', 'design', 'guide']);
+const EDITORIAL_TYPES = new Set(['analysis', 'article', 'biography', 'design', 'currency', 'guide']);
 // See the file header comment for what this stands in for and why it is a
 // calibration choice, not a measured constant.
 const VISUAL_MARKER_WEIGHT = 12;
@@ -130,12 +135,14 @@ function computeDensity(body, isGuide) {
       continue;
     }
     bodyLines++;
+    // `<!-- visual: NAME -->` markers count on every entry type (STYLE_GUIDE_VISUAL.md
+    // § When to reach for non-text expression -- not `guide`-exclusive), weighted per
+    // VISUAL_MARKER_WEIGHT above.
+    if (/^<!--\s*visual:\s*\S+\s*-->/.test(trim)) { visualLines += VISUAL_MARKER_WEIGHT; continue; }
     if (isGuide) {
       // guide: tables do not count (STYLE_GUIDE_VISUAL.md § `guide` density
       // target -- a lookup glossary is not the visual explanation this
-      // ratio is meant to reward). `<!-- visual: NAME -->` markers count
-      // instead, weighted per VISUAL_MARKER_WEIGHT above.
-      if (/^<!--\s*visual:\s*\S+\s*-->/.test(trim)) { visualLines += VISUAL_MARKER_WEIGHT; continue; }
+      // ratio is meant to reward).
       continue;
     }
     if (/^\|.*\|\s*$/.test(trim)) { visualLines++; continue; }

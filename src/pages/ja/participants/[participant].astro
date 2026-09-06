@@ -9,6 +9,7 @@ import Avatar from '../../../components/Avatar.astro';
 import TypeIcon from '../../../components/TypeIcon.astro';
 import gitDates from '../../../data/git-dates.json';
 import ChartEmbedRuntime from '../../../components/ChartEmbedRuntime.astro';
+import VisualEmbedRuntime from '../../../components/VisualEmbedRuntime.astro';
 import { PARTICIPANT_NOTES } from '../../../data/participant-notes';
 import TocNav from '../../../components/TocNav.astro';
 
@@ -253,6 +254,7 @@ const heroOgImage = heroOgMatch ? heroOgMatch[1] : null;
     </nav>
 
   {biographyContent && <ChartEmbedRuntime />}
+  {biographyContent && <VisualEmbedRuntime />}
 </BaseLayout>
 
 <style>

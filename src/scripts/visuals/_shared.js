@@ -1,6 +1,7 @@
-// Shared helpers for guide-entry metaphor illustrations (visual-embed-runtime.ts
-// / <!-- visual: NAME --> ). Each illustration module builds a small static SVG
-// with lang-keyed labels and mounts it via `mount(host, lang)`.
+// Shared helpers for metaphor illustrations on any editorial entry, most
+// common on `guide` entries (visual-embed-runtime.ts / <!-- visual: NAME -->).
+// Each illustration module builds a small static SVG with lang-keyed labels
+// and mounts it via `mount(host, lang)`.
 //
 // Colors are referenced as CSS custom properties (var(--token)), never literal
 // hex values, so every illustration tracks the site's light/dark theme switch

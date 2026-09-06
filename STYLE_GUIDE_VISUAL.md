@@ -183,15 +183,18 @@ diagram is small; the cost of losing a reader halfway through a
 `court-document`. These types reproduce the historical record and
 their body text is not editorially modifiable. The target applies to
 the remaining editorial types — currently `analysis`, `biography`,
-`article`, and `design`. `guide` is also in scope but uses its own,
-higher target — see below — not this section's 30/20/15 thresholds.
+`article`, `design`, and `currency`. `guide` is also in scope but uses
+its own, higher target — see below — not this section's 30/20/15
+thresholds.
 
 **Density target (markdown-line proxy).** Count the body lines that
-are inside Mermaid code blocks, Markdown table rows (`| ... |`), or
-d3 component containers, and divide by total body lines (excluding
-frontmatter). This line-count ratio is a proxy for the rendered
-visual-area share — not pixel-exact, but stable enough to guide
-authoring decisions and script-checkable.
+are inside Mermaid code blocks, Markdown table rows (`| ... |`), d3
+component containers, or `<!-- visual: NAME -->` metaphor-illustration
+markers (weighted — see § `guide` density target below for the
+weighting rationale, which applies here too), and divide by total
+body lines (excluding frontmatter). This line-count ratio is a proxy
+for the rendered visual-area share — not pixel-exact, but stable
+enough to guide authoring decisions and script-checkable.
 
 | Threshold | Meaning |
 |---|---|
@@ -206,8 +209,8 @@ is not. The numbers exist to trigger review, not to block commits.
 ### `guide` density target — 50%, diagrams only
 
 `guide` entries (STYLE_GUIDE_CORE.md § Guide entries) target **50%**
-of body content conveyed visually — Mermaid diagrams, `<!-- visual:
--->` metaphor illustrations, and d3 charts. **Markdown tables do not
+of body content conveyed visually — Mermaid diagrams, `visual`
+illustrations, and d3 charts. **Markdown tables do not
 count toward this ratio**, unlike the general density target above: a
 table is a reference-lookup structure, not the kind of visual
 explanation a zero-knowledge reader needs, and counting it here would
@@ -299,6 +302,7 @@ Trigger a visual representation when the content has any of:
 | Relationships between entities | Mermaid `graph` / `classDiagram` |
 | State transitions, sequence of interactions | Mermaid `sequenceDiagram` / `stateDiagram` |
 | Tree / hierarchy | Mermaid `mindmap` |
+| An abstract mechanism explained through an everyday analogy, the first time a reader meets that concept on the page | `<!-- visual: NAME -->` (§ Concrete illustrations below) |
 
 Prose remains the right tool for argumentation, narrative, nuance, and
 contextual color. The signals that prose has stopped being the right
@@ -307,6 +311,24 @@ a table); narrating a chain of dated events in body sentences (that's a
 timeline); listing 5+ candidates with attributes (that's a table or
 chart). When you notice these shapes mid-draft, switch — do not finish
 the prose version "for now."
+
+**`visual` vs. Mermaid — same relational content, different
+abstraction level.** Both can show how a mechanism's parts relate. Reach
+for `visual` only at the moment a page first explains a mechanism the
+reader has not yet met — the concrete image (a receipt, a lock and key)
+carries the initial understanding a node-and-arrow diagram assumes
+already exists. Once that concept has been introduced, later diagrams
+involving it revert to Mermaid — re-explaining an already-introduced
+mechanism as a second `visual` is redundant, not
+reinforcing. A `guide` entry's zero-prior-knowledge reader meets most of
+its concepts for the first time, which is why `visual` shows up there
+most often — in fact, when in doubt on a `guide` page, default to
+`visual` over Mermaid or a chart (see § Concrete illustrations below
+for the boundary that still applies: genuine networks, chronologies,
+and numeric data stay with the tool built for that shape). The same
+first-introduction moment can also occur in an `analysis`, `article`,
+`biography`, or `design` page (§ Concrete illustrations below for the
+full scope), where the trigger is the moment, not the entry type.
 
 ### Link-color confusion rule
 
@@ -706,18 +728,27 @@ chart is laid out**. A line like "labels in the left margin" or
 the reader can see the layout. Keep the subtitle focused on the
 data and what to look for.
 
-### Metaphor illustrations: `<!-- visual: NAME -->` for `guide` entries
+### Concrete illustrations: `<!-- visual: NAME -->` for first-time concrete explanations
 
-`guide` entries (STYLE_GUIDE_CORE.md § Guide entries) need diagrams
-built from concrete real-world metaphor — a receipt, a lock and key,
-a fingerprint — rather than the node-and-arrow vocabulary of Mermaid
-or the numeric-axis vocabulary of a d3 `chart`. This is a distinct
-concern from both: not data (no `chart`), not a relational/sequence
-shape Mermaid already draws well. The marker, registry, and runtime
-mirror the d3 `chart` pipeline (§ d3 components above) exactly, kept
-under its own name (`visual`, not `chart`) because stretching `chart`
-to cover illustrative graphics would blur a name that otherwise always
-means "numeric data visualization" in this codebase:
+Any editorial entry (`analysis`, `article`, `biography`, `design`,
+`currency`, `guide`) can need a diagram built from concrete
+real-world metaphor — a receipt, a lock and key, a fingerprint —
+rather than the node-and-arrow vocabulary of Mermaid or the
+numeric-axis vocabulary of a d3 `chart`. This is a distinct concern
+from both: not data (no `chart`), not a relational/sequence shape
+Mermaid already draws well. The marker, registry, and runtime mirror
+the d3 `chart` pipeline (§ d3 components above) exactly, kept under
+its own name (`visual`, not `chart`) because stretching `chart` to
+cover illustrative graphics would blur a name that otherwise always
+means "numeric data visualization" in this codebase.
+
+`guide` entries (STYLE_GUIDE_CORE.md § Guide entries) reach for this
+tool most often, because a zero-prior-knowledge reader meets most of
+a `guide` page's concepts for the first time — but the same
+first-introduction moment happens on any entry type introducing a
+mechanism a general reader cannot be assumed to already know (see
+§ When to reach for non-text expression above for the trigger, and
+the Mermaid boundary discussed just below).
 
 1. Place `<!-- visual: NAME -->` at the position in the markdown body
    where the illustration belongs. A remark plugin converts it to a
@@ -730,9 +761,9 @@ means "numeric data visualization" in this codebase:
    it.
 3. Labels come from an in-module `lang`-keyed map, exactly like a
    `chart` drawer — this is what makes the mechanism solve the
-   guide's EN/JA problem for free: the same illustration renders
-   correctly labeled text in either locale without a second generated
-   image file.
+   EN/JA problem for free on any entry type: the same illustration
+   renders correctly labeled text in either locale without a second
+   generated image file.
 
 **Minimum requirements for a `visual` illustration module:**
 
@@ -744,34 +775,62 @@ means "numeric data visualization" in this codebase:
 - Respect `prefers-reduced-motion` for anything animated.
 - Colors drawn from the site's design tokens, including the
   [link-color confusion rule](#link-color-confusion-rule) above — a
-  metaphor illustration is exactly the kind of surface where an
-  accent color can accidentally read as a clickable link.
+  `visual` is exactly the kind of surface where an accent color can
+  accidentally read as a clickable link.
 - A one-to-two-sentence caption below the figure, in the same
   `figure-outer` / `figure-block` wrapper pattern used by Mermaid,
-  tables, and charts (§ Layout width consideration below), so the
-  three figure kinds stay visually consistent on the page.
+  tables, and charts (§ Layout width consideration below), so all
+  four figure kinds stay visually consistent on the page.
 
-Not every `guide` diagram needs this treatment. A diagram whose
-subject is genuinely relational or chronological (a P2P network graph,
-a halving timeline, a simple linear sequence) stays a plain Mermaid
-block — `visual` is for the handful of concepts per guide series
-(commonly: keys and signatures, a hash "fingerprint," a receipt-like
-value model, a repeated-search process) where a beginner cannot yet
-read a flowchart's abstraction and a concrete metaphor does the actual
-teaching work.
+Not every diagram whose subject *could* be drawn as a metaphor needs
+this treatment. A diagram whose subject is genuinely relational or
+chronological (a P2P network graph, a halving timeline, a simple
+linear sequence) stays a plain Mermaid block — `visual` is for the
+handful of concepts per page (commonly: keys and signatures, a hash
+"fingerprint," a receipt-like value model, a repeated-search process)
+where the reader cannot yet be assumed to read a flowchart's
+abstraction for *this specific mechanism* and a concrete metaphor
+does the actual teaching work. That assumption holds for nearly every
+concept on a `guide` page (hence `visual`'s heaviest use there); on
+other entry types it holds only at the specific point a mechanism is
+introduced for the first time — reuse Mermaid for that same mechanism
+in any later diagram once the metaphor has done its job.
+
+**On a `guide` page specifically, default to `visual` when in doubt.**
+`guide`'s zero-prior-knowledge bar means the "reader cannot yet read a
+flowchart's abstraction" assumption above holds by default, not as
+the exception — the burden is on Mermaid or a d3 chart to justify
+itself, not the other way around. Stay with Mermaid or a chart only
+when the content is inherently that shape and no concrete analogy
+would teach it better: a genuine multi-node network topology, an
+actual chronology of dated events, or (for a chart) real numeric data
+with axes and units — none of which `visual` can render, since it
+carries no numeric or many-node structure. For everything else on a
+`guide` page — a mechanism, a process, a comparison that could go
+either way — pick `visual`.
+
+"First time" is scoped to the single page being written, not the
+archive as a whole or a `guide` series: a reader can land on any page
+directly (search, a link from elsewhere) without having read another
+page first, so each page's own first mention of a mechanism is the
+one that needs the concrete metaphor, regardless of whether some
+other page already explained it. Within one page, once a `visual` has
+introduced a mechanism, a later diagram reusing that same mechanism
+switches to Mermaid — re-illustrating it with a second metaphor
+image does not teach anything new.
 
 #### Layout width consideration — unified figure-block + figure-outer
 
 Analysis pages use `.container` (1000px) so prose stays at a readable
-line length. When a figure (chart, mermaid diagram, or table) is wider
-than that, **break out at the element level** rather than widening
-the page tier. All three figure types share the same wrapper
-structure:
+line length. When a figure (chart, mermaid diagram, table, or visual
+illustration) is wider than that, **break out at the element level**
+rather than widening the page tier. All four figure types share the
+same wrapper structure:
 
 ```html
 <div class="figure-outer">
-  <figure class="figure-block" data-kind="chart|mermaid|table">
-    <!-- svg | table | chart-container -->
+  <figure class="figure-block" data-kind="chart|mermaid|table|visual">
+    <!-- svg | table | chart-container | svg -->
   </figure>
 </div>
 ```
@@ -838,7 +897,7 @@ The CSS (defined once in `src/styles/global.css`):
 | `mermaid` | `max-content` + `max-width: 100%` | Mermaid renders SVG at a fixed natural size (`useMaxWidth: false`); the block sizes to content and never wider than wrapper. Small diagrams stay small (no wasted whitespace). |
 | `table` | same as mermaid | A table that fits the prose column keeps its exact in-column layout (left-aligned, natural width) at every viewport; only a table whose content overflows joins the breakout (see below), where it then sizes to `max-content` up to the viewport gutter and centers like a mermaid figure. |
 | `chart` (d3) | `width: 100%` | D3 sizes its SVG to the wrapper's `clientWidth`, so the block must be 100% width (not `max-content`) for the chart to use the available room. `position: relative` + `overflow-y: hidden` support the tooltip pattern. |
-| `visual` (guide metaphor illustration) | `width: 100%` | The SVG has no fixed-pixel intent (`svgFigure()` sets `width:100%;height:auto` with no `max-width` cap), so it scales up to fill the column — legibility for a zero-prior-knowledge `guide` reader is the goal, not a compact natural size. This also avoids a `max-content` sizing bug: a long `<figcaption>` (JA prose commonly runs longer than its EN counterpart) could force the block wider than the illustration's own intended size, when a fixed `width: 100%` isn't sensitive to caption length at all. Originally shipped in `mermaid`/`table`'s `max-content` group (2026-09-06, commit `de0545ebf`) by mirroring the CSS pattern without a stated width rationale; moved to this group the same day once the caption-length bug surfaced. |
+| `visual` (concrete illustration) | `width: 100%` | The SVG has no fixed-pixel intent (`svgFigure()` sets `width:100%;height:auto` with no `max-width` cap), so it scales up to fill the column — legibility for a reader meeting the illustrated mechanism for the first time is the goal, not a compact natural size. This also avoids a `max-content` sizing bug: a long `<figcaption>` (JA prose commonly runs longer than its EN counterpart) could force the block wider than the illustration's own intended size, when a fixed `width: 100%` isn't sensitive to caption length at all. Originally shipped in `mermaid`/`table`'s `max-content` group (2026-09-06, commit `de0545ebf`) by mirroring the CSS pattern without a stated width rationale; moved to this group the same day once the caption-length bug surfaced. |
 
 **Breakout gating — always overflow-only, never unconditional on
 viewport width**: a figure never breaks out just because the
@@ -853,6 +912,7 @@ using a per-kind viewport **threshold** and required-width
 | `table` | 1500px | live `scrollWidth` | Table is natural width and never resizes itself, so `scrollWidth` is stable across the breakout toggle. The higher threshold avoids the "微妙にずれてる" gata zone (1100-1499px) where a small table breakout visually mis-aligns with prose. |
 | `mermaid` | 1200px | live `scrollWidth` | Fixed-size SVG (`useMaxWidth: false`, `width: max-content`) is likewise stable under `scrollWidth`. A diagram isn't expected to sit flush with the prose column the way a table is, so the tighter gata-zone concern doesn't apply. |
 | `chart` (d3) | 1200px | declared CSS `min-width` (e.g. `.ce-chart{min-width:1080px}` in `ChartEmbedRuntime.astro`) | D3 sizes its SVG to the wrapper's `clientWidth` (`width: 100%`), so `scrollWidth` read *after* breakout is applied always reads "fits" — comparing it against the column would flip `data-breakout` on, then off, then on again. Each chart's own static declared `min-width` is a stable "does this actually need more room" signal that doesn't change with the figure-block's current width. |
+| `visual` | not gated (no `data-breakout`) | n/a | Same `width: 100%` sizing as `chart`, but with no declared `min-width` anywhere — the illustration always fits whatever column it's given, so the overflow condition this mechanism exists to detect never occurs. |
 
 Pure CSS cannot branch on "content overflows" (grid `safe center`
 clamps in the wrong direction), hence the one-attribute script;
@@ -904,6 +964,25 @@ position — and sets `--breakout-left`/`--breakout-right` independently,
 right before adding `data-breakout`. This is unconditionally correct
 whether or not a sidebar is present, so it replaced the CSS-only
 formula everywhere.
+
+**`visual` moved from the `mermaid`/`table` group to the `chart` group
+(2026-09-06).** Originally shipped alongside `mermaid`/`table`'s
+`width: max-content` (commit `de0545ebf`, the same commit that
+introduced the `guide` type and this marker) by mirroring that CSS
+pattern without a stated width rationale of its own. Two problems
+surfaced the same day once guide pages went live: (1) `max-content`'s
+sizing depends on the widest child, and a page's `<figcaption>` — JA
+prose commonly runs longer than its EN counterpart — could force the
+figure-block wider than the SVG's own intended size on some pages
+while other pages with shorter captions stayed compact, an
+inconsistency invisible until compared side by side; (2) a
+zero-prior-knowledge `guide` reader benefits from a bigger
+illustration, so "stay compact" was the wrong goal for this kind
+regardless of the caption bug. Moved to `chart`'s `width: 100%` group
+and dropped the SVG's own inline `max-width` cap (`_shared.js`
+`svgFigure()`) so it scales to fill the block — this fixes both
+problems at once, since a fixed 100% width isn't sensitive to caption
+length. Verified via Playwright across all 6 illustration modules.
 
 ### Tables: the lowest-cost visual structure
 

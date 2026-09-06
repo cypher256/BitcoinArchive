@@ -229,7 +229,7 @@ const { title, description, lang, canonicalUrl, alternateJa, alternateEn, ogType
     <script>
       (() => {
         const sel =
-          '.figure-block[data-kind="mermaid"], .figure-block[data-kind="table"], .figure-block[data-kind="chart"], pre, .minimap-scroll';
+          '.figure-block[data-kind="mermaid"], .figure-block[data-kind="table"], .figure-block[data-kind="chart"], .figure-block[data-kind="visual"], pre, .minimap-scroll';
         const update = (el: HTMLElement) => {
           const max = el.scrollWidth - el.clientWidth;
           if (max <= 2) {
