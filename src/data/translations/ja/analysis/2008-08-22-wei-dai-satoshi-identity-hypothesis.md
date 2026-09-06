@@ -151,7 +151,7 @@ translationStatus: complete
 
 ### 2.3 ウェイ・ダイの 2014 年 AALWA 回顧
 
-2014 年 3 月 16 日、ウェイ・ダイは LessWrong の『Ask any LessWronger anything』スレッドに投稿し、「サトシではないか」という問いに[直接答えた](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/):
+2014 年 3 月 16 日、ウェイ・ダイは LessWrong の『Ask any LessWronger anything』スレッドに投稿し、「サトシではないか」という疑問に[直接答えた](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/):
 
 <!-- audit:quote-skip -->
 > 「私の推測では、彼は暗号学やサイファーパンクコミュニティで以前活動していた人物ではないと思います。そうでなければ、文体やコーディングスタイルで特定されているはずです」

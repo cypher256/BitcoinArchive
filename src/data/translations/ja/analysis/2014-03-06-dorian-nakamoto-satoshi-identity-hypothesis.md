@@ -64,7 +64,7 @@ Newsweek は、ナカモトがヒューズ・エアクラフト、RCA、米国�
 |---|---|---|
 | §2.1 繰り返しの本人否定 | ナカモトは即座に、AP 通信のインタビューで、弁護士を通じて、ビットコイン関与を否定した | 直接的・記録上・撤回なし — ただし本人否定単独では決定的でない（総覧の横断観察を参照） |
 | §2.2 「私はドリアンではない」投稿 | 長く休眠していたサトシ P2P Foundation アカウントが 5 年の沈黙を破って特定を否定 | 真正なら強い。2014 年時点のアカウントの真正性自体が争われている |
-| §2.3 文書上の適合の不在 | 技術・サイファーパンク・コーディング・貨幣設計のいずれの繋がりも皆無 | プロファイルの問いには決定的 — 候補性は名前一致のみ |
+| §2.3 文書上の適合の不在 | 技術・サイファーパンク・コーディング・貨幣設計のいずれの繋がりも皆無 | プロファイルの論点には決定的 — 候補性は名前一致のみ |
 | §2.4 誤読された発言 | 玄関先の発言は本人によれば機密業務のこと | 記事が持っていた唯一の傍証を取り除く |
 
 ### 2.1 繰り返しの本人否定
@@ -87,7 +87,7 @@ Newsweek 記事が持っていた唯一の傍証、玄関先の発言は、話�
 
 名前一致は候補ランドスケープの中で最も弱い識別子である。偶然によって満たされうる唯一の種類の証拠であり、総覧はプロファイル適合一般を *必要だが十分ではない* ものとして扱う。ドリアン・ナカモトの事例は、その理由を最も明瞭に示す。候補性は表層の基準を一つ（名前）満たし、他は何も満たさない。そしてその唯一の基準は、まったく無関係な人物が生まれによって満たしうるものだ。
 
-[テクノオリエンタリスト署名分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)は、仮名の日本的な形を特定の正体仮説とは独立に扱い、名前が実在の人物のものであれ、意図的な構築であれ、借りたものであれ、等しく適用される。[『Nakamoto's Neighbor』](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/)の読み替えはその独立した問いに属する。名前を、別の[ハル・フィニー仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)の中の一本の糸に変えるのであって、ドリアン・ナカモトの著者性を支持するものにはしない。候補全体の比較は[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)を参照。
+[テクノオリエンタリスト署名分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-name-techno-orientalism/)は、仮名の日本的な形を特定の正体仮説とは独立に扱い、名前が実在の人物のものであれ、意図的な構築であれ、借りたものであれ、等しく適用される。[『Nakamoto's Neighbor』](/BitcoinArchive/ja/entries/aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor/)の読み替えはその独立した論点に属する。名前を、別の[ハル・フィニー仮説](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)の中の一本の糸に変えるのであって、ドリアン・ナカモトの著者性を支持するものにはしない。候補全体の比較は[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)を参照。
 
 ## 4. 資料の範囲
 

@@ -31,7 +31,7 @@ relatedEntries:
 
 > 「まだ Bitcoin の .deb パッケージはないのですか？」
 
-トランスヒューマニスト宣言（1998 年）共著者であり、サイファーパンクとトランスヒューマニストのネットワーク経由でプロジェクトに辿り着いた人物からのこの問いは、ビットコイン最初期の配布上の摩擦の一つを浮き彫りにする。ライトルは、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が Wine 上でのクラッシュの診断を助けていた[「Bitcoin は Windows でクラッシュしますか？」スレッド](/BitcoinArchive/ja/entries/emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows/)に返信していた。
+トランスヒューマニスト宣言（1998 年）共著者であり、サイファーパンクとトランスヒューマニストのネットワーク経由でプロジェクトに辿り着いた人物からのこの問いかけは、ビットコイン最初期の配布上の摩擦の一つを浮き彫りにする。ライトルは、[サトシ・ナカモト](/BitcoinArchive/ja/participants/satoshi-nakamoto/)が Wine 上でのクラッシュの診断を助けていた[「Bitcoin は Windows でクラッシュしますか？」スレッド](/BitcoinArchive/ja/entries/emails/bitcoin-list/2009-10-23-re-does-bitcoin-crash-in-windows/)に返信していた。
 
 ライトルはコンピューター科学者で、匿名性、暗号技術、ナノテクノロジー、脳保存に関する議論に長年関わってきた。
 

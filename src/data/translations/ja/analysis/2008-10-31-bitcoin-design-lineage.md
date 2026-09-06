@@ -118,7 +118,7 @@ translationStatus: complete
 
 ### 3.3 マークルツリー・タイムスタンプ・確率論：汎用 CS 知識
 
-ホワイトペーパーはブロックヘッダーでマークルツリーを使用し（§7）、タイムスタンプサーバー型のチェーン構築を記述し（§3）、二重支払いの確率分析を行う（§11）。それぞれに引用文献がある。しかし、根底にある概念は当該時期の標準的な 1990〜2000 年代の計算機科学知識であり、相当の大学院レベルの教育を受けた者なら入手可能である。サトシのメール記録には「マークルツリーは知らなかった」や「連鎖タイムスタンプは知らなかった」に類する瞬間は含まれない。その不在は、開発中の使用を立証するわけでも、後付けの追加を立証するわけでもない。記録は問いを開いたままにする：サトシは具体的にこれらの論文を参照したかもしれないし、一般的な教養から概念に到達して最も関連する先行として引用を加えたかもしれない。
+ホワイトペーパーはブロックヘッダーでマークルツリーを使用し（§7）、タイムスタンプサーバー型のチェーン構築を記述し（§3）、二重支払いの確率分析を行う（§11）。それぞれに引用文献がある。しかし、根底にある概念は当該時期の標準的な 1990〜2000 年代の計算機科学知識であり、相当の大学院レベルの教育を受けた者なら入手可能である。サトシのメール記録には「マークルツリーは知らなかった」や「連鎖タイムスタンプは知らなかった」に類する瞬間は含まれない。その不在は、開発中の使用を立証するわけでも、後付けの追加を立証するわけでもない。記録はこの点を未決着のまま残す：サトシは具体的にこれらの論文を参照したかもしれないし、一般的な教養から概念に到達して最も関連する先行として引用を加えたかもしれない。
 
 ### 3.4 独自構成要素：引用不能
 
@@ -141,7 +141,7 @@ PoW で重み付けされた最長チェーン規則による分散型合意形�
 
 本エントリーの技術系譜の焦点は、ハイエク 1976 年『貨幣発行自由化論』から 1990 年代のエクストロピアン・サイファーパンク環境を経てビットコインに至る、より広い思想史的系譜の中に位置する。その一段早い思想枠組みは[ハイエク=エクストロピアン系譜エントリー](/BitcoinArchive/ja/entries/analysis/1976-10-25-hayek-extropians-bitcoin-lineage/)で扱う。
 
-「再利用か発明か」という問いは、後年のいくつもの読みを貫いている。[ウェイ・ダイ正体仮説](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)は本表の b-money 行に依拠し、[サイファーパンク独立到達の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)は Hashcash 行を引いて、サトシがその先駆を知りながらその界隈には属していなかったと論じる。[ニック・サボ正体仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)は同じ読みをビットゴールドに当てはめる（ホワイトペーパーが引いていない先駆であり、本表に行はない）。各行の一次資料は [Hashcash の告知](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/)と[アダム・バックの 1998 年 b-money 批評](/BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/)にある。
+「再利用か発明か」という論点は、後年のいくつもの読みを貫いている。[ウェイ・ダイ正体仮説](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)は本表の b-money 行に依拠し、[サイファーパンク独立到達の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-cypherpunk-independent-arrival/)は Hashcash 行を引いて、サトシがその先駆を知りながらその界隈には属していなかったと論じる。[ニック・サボ正体仮説](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)は同じ読みをビットゴールドに当てはめる（ホワイトペーパーが引いていない先駆であり、本表に行はない）。各行の一次資料は [Hashcash の告知](/BitcoinArchive/ja/entries/aftermath/1997-03-28-adam-back-hashcash-announcement/)と[アダム・バックの 1998 年 b-money 批評](/BitcoinArchive/ja/entries/aftermath/1998-12-06-adam-back-b-money-monetary-critique/)にある。
 
 <!-- entry-closing -->
 ビットコインの参考文献一覧は家系図のように見えるが、私には、事後に組み立てられた文献表として読める。著者はまずコードを書き、あとから祖先を探しに出て、最も重要な部品には祖先がいないことを見つけた。

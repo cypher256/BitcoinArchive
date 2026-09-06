@@ -54,7 +54,7 @@ translationStatus: complete
 
 「今いる場所からは」という、場所依存的でサトシのセットアップの恒久的特性ではないことを示唆する表現と、2009 年 1 月 8〜12 日のリリース週におけるサトシの異例に濃密な作業ペースが、本分析が読み取る、互いに符合する 2 つの手がかりである。読みは編者による推論である。
 
-本エントリは、ブロック 0 の構造的な問いと 1 月 3 日から 1 月 9 日までの空白を扱う[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)と時期的に重なる。2009 年 1 月 10 日のビットコインデバッグログに記録された、フィニーとサトシそれぞれのノードの IP アドレスの相違という別角度から同じ週を読み解くのが[ハル・フィニー同定仮説分析](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)である。
+本エントリは、ブロック 0 の構造的な論点と 1 月 3 日から 1 月 9 日までの空白を扱う[ジェネシスブロック分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)と時期的に重なる。2009 年 1 月 10 日のビットコインデバッグログに記録された、フィニーとサトシそれぞれのノードの IP アドレスの相違という別角度から同じ週を読み解くのが[ハル・フィニー同定仮説分析](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)である。
 
 ## 1. 二つの手がかり
 

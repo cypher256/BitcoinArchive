@@ -152,7 +152,7 @@ flowchart TD
 
 ビットコインSV は分岐の分岐であり、ビットコイン自体からの分岐ではない。これを生んだハッシュ戦争は、ビットコインキャッシュがビットコインから分裂してから 1 年以上を経て、そのビットコインキャッシュのチェーン内部で戦われたものだ。
 
-2015 ~ 2017 年の項目群は **ブロックサイズ戦争** の章である。表面上の争点はブロックサイズだったが、より深い問いはプロトコルガバナンスにあった。開発者・マイナー・事業者が合意できないとき、ビットコインのパラメーターを誰が決めるのか、という問いである。最終的な答えは、保守的な Bitcoin Core の開発文化が本体チェーンを保持し (ブロックサイズのハードフォークではなく SegWit を採用)、より大きなブロックを望んだ提案者たちがビットコインキャッシュとして分裂する、という形になった。SegWit2x はニューヨーク合意の妥協案で、SegWit から 3 ヶ月後に本体チェーンで 2 MB のハードフォークを行う計画だった。[マイク・ベルシェ](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/)による土壇場での中止が、本体チェーン側の論争を終わらせた。
+2015 ~ 2017 年の項目群は **ブロックサイズ戦争** の章である。表面上の争点はブロックサイズだったが、より深い論点はプロトコルガバナンスにあった。開発者・マイナー・事業者が合意できないとき、ビットコインのパラメーターを誰が決めるのか、という点である。最終的な答えは、保守的な Bitcoin Core の開発文化が本体チェーンを保持し (ブロックサイズのハードフォークではなく SegWit を採用)、より大きなブロックを望んだ提案者たちがビットコインキャッシュとして分裂する、という形になった。SegWit2x はニューヨーク合意の妥協案で、SegWit から 3 ヶ月後に本体チェーンで 2 MB のハードフォークを行う計画だった。[マイク・ベルシェ](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/)による土壇場での中止が、本体チェーン側の論争を終わらせた。
 
 2015 ~ 2017 年の論争が普通のオープンソース対立ではなくアイデンティティの争奪戦として展開した*構造的理由*には、2011 年以後の権威の真空、規則決定の上に積み上がった経済的重み、そして普通のオープンソースには対応物のないビットコインの三層分離 (プロトコル / ソフトウェア / 通貨) がある。これらについては[ビットコインのフォーク戦争はオープンソースの話ではない](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)を参照。
 
@@ -222,7 +222,7 @@ timeline
 
 - **取扱範囲**。記録するのは、生き残ったチェーンを残したプロトコル分岐と、ビットコイン本流の言説で繰り返し参照される隣接する暗号通貨である。出来高の薄いビットコインのコードベース由来のフォーク (Peercoin、Primecoin、Auroracoin 等) は数百あるが対象外。設計起源がビットコインに辿れない独立設計のチェーン (リップル、モネロ、IOTA、カルダノは本流言説でよく引き合いに出される代表例) は数千規模で存在し、それらも対象外。
 - **生存状態**。生存チェーンの状態は、本エントリーの最終編集時点のもの。ここで「生存中」と記録されたチェーンも任意の時点でブロック生成を停止する可能性がある。本系譜は史実であり、将来を保証する推奨ではない。
-- **社会政治的な枠組み**。上記のブロックサイズ戦争の語りは、参加者たち自身が残した文書 ([ハーンの 2016 年 1 月のエッセイ](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)、[ベルシェの 2017 年 11 月の中止投稿](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/)、GitHub PR スレッド等) に基づいている。技術的な是非についていずれの側が正しかったかを決着させるものではない。それは別個の規範的問いであり、本目録の対象外である。
+- **社会政治的な枠組み**。上記のブロックサイズ戦争の語りは、参加者たち自身が残した文書 ([ハーンの 2016 年 1 月のエッセイ](/BitcoinArchive/ja/entries/aftermath/2016-01-14-mike-hearn-resolution-bitcoin-experiment/)、[ベルシェの 2017 年 11 月の中止投稿](/BitcoinArchive/ja/entries/aftermath/2017-11-08-segwit2x-cancellation/)、GitHub PR スレッド等) に基づいている。技術的な是非についていずれの側が正しかったかを決着させるものではない。それは別個の規範的論点であり、本目録の対象外である。
 
 ブロックサイズ戦争とビットコインキャッシュ分裂の当事者である[ロジャー・ヴァー](/BitcoinArchive/ja/participants/roger-ver/)、[ヴィタリック・ブテリン](/BitcoinArchive/ja/participants/vitalik-buterin/)、[マイク・ベルシェ](/BitcoinArchive/ja/participants/mike-belshe/)、[アモリー・セシェ](/BitcoinArchive/ja/participants/amaury-sechet/)には、それぞれの記録がある。名称の争いが権威に何をしたかは [Core 再ブランディングの分析](/BitcoinArchive/ja/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/)、分裂が貨幣としての主張に何をしたかは[デジタルゴールドの構造的特徴の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-digital-gold-structural-features/)、そして各チェーン自身の発行規則が価格について何を決め、何を決めないかは[十二のチェーンを並べた比較](/BitcoinArchive/ja/entries/analysis/2026-07-26-altcoin-count-and-design-comparison/)が、それぞれ扱う。
 

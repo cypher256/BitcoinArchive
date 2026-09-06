@@ -71,7 +71,7 @@ translationStatus: complete
 
 ![「THE FORK WARS」と書かれた暗い背景の図。上部の空の玄関口が権威の空白を示し、中央に積み重なった帯にひび割れが走る。そこから 4 本の曲線が (XT, Classic, SegWit2X, ビットコインキャッシュ) と書かれた丸いバッジへ伸び、隅には分裂しない通常のオープンソースフォークを表す小さな図が添えられている。](/BitcoinArchive/images/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss-hero.png)
 
-ビットコインの 2015-2017 年フォーク戦争は、本流チェーンに対する 4 度のハードフォーク試行 (Bitcoin XT, Bitcoin Classic, Bitcoin Unlimited, SegWit2x) と、生き残った 1 件の分岐 ([ビットコインキャッシュ](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-cash-currency-overview/)、2017 年 8 月 1 日) を生んだ。隣接する 2 つの考察記事が、これらの出来事が何であり、改称がそれらに何をしたかを扱っている: [ビットコインの家系図](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)は出来事の連鎖を記録し、[Bitcoin Core 改称が権威構造に与えた影響の考察](/BitcoinArchive/ja/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/)は 2014 年の改称が導入した語彙の非対称を読む。その 2 つの奥には第三の問いが潜んでいる: なぜこれらの出来事は、それぞれが普通のオープンソースの意見対立としてではなく、政治的・経済的な争奪戦として展開したのか。
+ビットコインの 2015-2017 年フォーク戦争は、本流チェーンに対する 4 度のハードフォーク試行 (Bitcoin XT, Bitcoin Classic, Bitcoin Unlimited, SegWit2x) と、生き残った 1 件の分岐 ([ビットコインキャッシュ](/BitcoinArchive/ja/entries/currency/2026-07-27-bitcoin-cash-currency-overview/)、2017 年 8 月 1 日) を生んだ。隣接する 2 つの考察記事が、これらの出来事が何であり、改称がそれらに何をしたかを扱っている: [ビットコインの家系図](/BitcoinArchive/ja/entries/analysis/2008-10-31-bitcoin-fork-and-altcoin-genealogy/)は出来事の連鎖を記録し、[Bitcoin Core 改称が権威構造に与えた影響の考察](/BitcoinArchive/ja/entries/analysis/2014-03-19-bitcoin-core-rebrand-authority-effects/)は 2014 年の改称が導入した語彙の非対称を読む。その 2 つの奥には第三の謎が潜んでいる: なぜこれらの出来事は、それぞれが普通のオープンソースの意見対立としてではなく、政治的・経済的な争奪戦として展開したのか。
 
 ここで提示する読み筋は構造的なものである。2014-2017 年のビットコインには 3 つの条件が揃っていた。指名された権威の真空、規則決定の上に積み上がった経済的重み、そしてプロトコル・ソフトウェア・稼働中の通貨ネットワークという三層分離である。この 3 つが組み合わさって、鍵となるパラメーターをめぐる対立がソフトウェアの問題にとどまることを構造的に不可能にした。改称考察が記録する語彙の非対称は、これらの条件が表に現れるための語彙的な道具である。
 

@@ -38,7 +38,7 @@ translationStatus: complete
 
 [トランザクション設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-transaction-design/)ページでは UTXO とは何かを説明した。[ブロックとチェーン設計](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-block-chain-design/)ページではブロックがチェーンにどう連結されるかを説明した。本ページは一段階下に移る: これらの抽象概念を耐久的かつ検索可能にするディスク上およびメモリー内の構造。
 
-4 つの問いが内容を構成する:
+4 つの設問が内容を構成する:
 
 1. **ブロックはどこに保存されるか?** ディスク上のフラットファイル（`blk*.dat`）に保存され、再編成を可能にする付随の取り消しファイル（`rev*.dat`）を伴う。
 2. **UTXO セットはどこにあるか?** LevelDB データベース（コインデータベース）に置かれ、パフォーマンスのためにメモリー内にライトバックキャッシュを持つ。

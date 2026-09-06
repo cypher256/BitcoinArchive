@@ -123,7 +123,7 @@ translationStatus: complete
 <!-- audit:quote-skip -->
 > 「サトシは金融機関の小さなチームだと思う。直感的にそう感じる。クオンツが友人の何人かと組んでやったのだろう」
 
-その底に横たわる問いについて、ウォレスは内省的になった：
+その底に横たわる疑問について、ウォレスは内省的になった：
 
 <!-- speaker: narrator -->
 <!-- audit:quote-skip -->

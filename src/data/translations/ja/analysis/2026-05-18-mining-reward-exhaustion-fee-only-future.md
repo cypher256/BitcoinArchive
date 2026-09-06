@@ -133,7 +133,7 @@ graph TD
 
 ウェイ・ダイ自身は[ 2013 年のビットコイン金融政策に対する所見](/BitcoinArchive/ja/entries/aftermath/2013-04-21-wei-dai-bitcoin-monetary-policy-critique/)において、固定供給という選択は自分であれば採らなかった設計であると記録している。ホワイトペーパーが明示的に名指しした先行作品の設計者からのこの所見は、論争に対する判決ではなく、論争の文書記録の一部である。
 
-2015 〜 2017 年の[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)は、ブロックサイズの拡大がスループット (したがって手数料市場の総量) を分散性と引き換えに引き上げる選択である、という意味で、本節で対比した 2 つの立場が初めて具体的に衝突した場面と読むこともできる。当事者たちが公の議論で交わしたのはスループットと分散性の話であり、 2140 年そのものは語られていない。しかし、論点の底にある問い、「新規発行分がなくなった後、ネットワークのセキュリティを何が担保するのか」は、同じ問いである。
+2015 〜 2017 年の[ブロックサイズ戦争](/BitcoinArchive/ja/entries/analysis/2015-08-15-bitcoin-fork-wars-as-not-oss/)は、ブロックサイズの拡大がスループット (したがって手数料市場の総量) を分散性と引き換えに引き上げる選択である、という意味で、本節で対比した 2 つの立場が初めて具体的に衝突した場面と読むこともできる。当事者たちが公の議論で交わしたのはスループットと分散性の話であり、 2140 年そのものは語られていない。しかし、底にあるのは「新規発行分がなくなった後、ネットワークのセキュリティを何が担保するのか」という同じ一点である。
 
 ## 5. このエントリーの限界
 
@@ -145,7 +145,7 @@ graph TD
 
 *[編者注：「2140 年」という数字は、現行のコンセンサスルールの帰結であり、固定された予言ではない。仮にネットワークがブロック目標時刻や半減期スケジュールを変更すれば、この日付は移動する。2,100 万枚上限が現行設計の帰結であって別途強制された数値ではないのと同じ理屈である。]*
 
-[固定供給と自動調整の比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)は、2,100 万枚上限という決定が、長期的な健全性を確かめないまま下された経緯を扱う。手数料のみの地平は、その上限がいずれネットワークに答えさせる問いである。 [サトシ設計対現状分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)は同じ地平を、サトシがネットワークに約束させたものと、後続の運営者たちがその上に構築したものとの長期的な乖離を描き出す手段として用いる。 [初心者ガイドのマイニングの章](/BitcoinArchive/ja/entries/analysis/2026-09-06-what-miners-are-actually-racing-to-do/)は、同じ半減期の算術を脚注なしに要約する読者向けの層である。技術的な支えは設計書群に置かれる。 [コンセンサス設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)と[通貨設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)はいずれも手数料市場への移行を根拠仮定として依存している。同じマイナー経済の価格の側、すなわち新規発行分がまだ支配的な現在、生産コストと市場価格がどう作用し合うかという点は、[価格と生産コストの分析](/BitcoinArchive/ja/entries/analysis/2010-02-21-bitcoin-price-vs-production-cost/)が扱っている。
+[固定供給と自動調整の比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-fixed-supply-vs-adjustable-money/)は、2,100 万枚上限という決定が、長期的な健全性を確かめないまま下された経緯を扱う。手数料のみの地平は、その上限がいずれネットワークに答えさせる課題である。 [サトシ設計対現状分析](/BitcoinArchive/ja/entries/analysis/2026-05-24-satoshi-design-vs-current-reality/)は同じ地平を、サトシがネットワークに約束させたものと、後続の運営者たちがその上に構築したものとの長期的な乖離を描き出す手段として用いる。 [初心者ガイドのマイニングの章](/BitcoinArchive/ja/entries/analysis/2026-09-06-what-miners-are-actually-racing-to-do/)は、同じ半減期の算術を脚注なしに要約する読者向けの層である。技術的な支えは設計書群に置かれる。 [コンセンサス設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)と[通貨設計書](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-monetary-design/)はいずれも手数料市場への移行を根拠仮定として依存している。同じマイナー経済の価格の側、すなわち新規発行分がまだ支配的な現在、生産コストと市場価格がどう作用し合うかという点は、[価格と生産コストの分析](/BitcoinArchive/ja/entries/analysis/2010-02-21-bitcoin-price-vs-production-cost/)が扱っている。
 
 *[補足：本分析が扱う 2140 年頃の手数料のみへの移行は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』の最終章の技術的根拠となる。最後のビットコインが生成され、もう一つのメッセージが刻まれる日である。]*
 

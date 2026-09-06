@@ -237,7 +237,7 @@ D9 の「コーディングよりも設計の作業の方がはるかに多か�
 
 ## この読みの行き先
 
-どの候補仮説も独立到達の問いに答えねばならない。だからこの読みは[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)にも、個別の各件、すなわち[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[ウェイ・ダイ](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)、[ニック・サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[ハル・フィニー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)にも通っている。
+どの候補仮説も独立到達という論点に答えねばならない。だからこの読みは[サトシ正体仮説の総覧](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)にも、個別の各件、すなわち[アダム・バック](/BitcoinArchive/ja/entries/analysis/2026-04-08-adam-back-satoshi-identity-hypothesis/)、[ウェイ・ダイ](/BitcoinArchive/ja/entries/analysis/2008-08-22-wei-dai-satoshi-identity-hypothesis/)、[ニック・サボ](/BitcoinArchive/ja/entries/analysis/2013-12-05-szabo-satoshi-identity-hypothesis/)、[ハル・フィニー](/BitcoinArchive/ja/entries/analysis/2014-03-25-hal-finney-satoshi-identity-hypothesis/)にも通っている。
 
 *[補足：本分析が扱う「1.5 年のコーディング」「18 か月の開発」という自己発言は、小説『[ジェネシス ― 創設者の消失と約束](/BitcoinArchive/ja/novel/)』の 2007〜2008 年タイムライン（主人公が誰にも知られずシステムを書き続ける 18 か月）の一次資料的根拠となる。]*
 

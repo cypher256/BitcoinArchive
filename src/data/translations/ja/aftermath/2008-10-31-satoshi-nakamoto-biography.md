@@ -63,7 +63,7 @@ translationStatus: complete
 
 2008年10月31日、サトシ・ナカモトは[ビットコインホワイトペーパーを発表した](/BitcoinArchive/ja/entries/aftermath/2008-10-31-bitcoin-whitepaper-publication/)。2年半後、最後の既知のメールを送信して消えた。最初の数か月に単一の協調的なパターンでマイニングされた約 110 万 BTC は、その後一度も動いていない。
 
-「サトシ・ナカモト」は仮名である。その背後にいる個人またはグループは、これまで特定されていない。この正体は、[サトシ正体仮説の横断比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)が 12 人の名指し候補をここにまとめた記録に照らして検証している問いである。
+「サトシ・ナカモト」は仮名である。その背後にいる個人またはグループは、これまで特定されていない。この正体は、[サトシ正体仮説の横断比較](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-identity-hypotheses-overview/)が 12 人の名指し候補をここにまとめた記録に照らして検証している論点である。
 
 *ビットコインがはじめての方は、[初心者ガイド](/BitcoinArchive/ja/entries/analysis/2026-05-23-how-bitcoin-works-visual-glossary/)から読むとよい。図解付きの短い 5 本で、事前知識ゼロでも読める。*
 

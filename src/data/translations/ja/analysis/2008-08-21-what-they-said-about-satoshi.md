@@ -201,7 +201,7 @@ translationStatus: complete
 
 この通貨は保有に値しないと書いたレビュアーのレイ・ディリンジャーは、回顧の中で率直な賛嘆と率直な悔しさを同時に語り続けた。[2018 年のインタビュー](/BitcoinArchive/ja/entries/aftermath/2018-10-01-ray-dillinger-interview/)では、通貨コードに浮動小数点型を見つけた瞬間を「発見した時は、俺はパニックに陥った」と振り返る。検証すると丸め誤差はゼロだった。サトシが作ったものについての[後年の要約](/BitcoinArchive/ja/entries/aftermath/2017-09-20-ray-dillinger-if-id-known/)はこうだ。「サトシは料金所のない高速道路を作ったんだ。彼はコインを売っていたんじゃない。ハッシュを解いた者に与えていたんだよ。」
 
-ホワイトペーパー参考文献の筆頭に引用された[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)は、[2014 年に動機の問いへ答えた](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/):
+ホワイトペーパー参考文献の筆頭に引用された[ウェイ・ダイ](/BitcoinArchive/ja/participants/wei-dai/)は、[2014 年に動機について答えた](/BitcoinArchive/ja/entries/aftermath/2014-01-12-wei-dai-retrospective-on-satoshi/):
 
 <!-- audit:quote-skip -->
 > 「彼は主に個人的に金を稼ぐことに動機づけられているのではなく、世界を変え、興味深い技術的問題を解くことに動機づけられていると思います」
@@ -215,7 +215,7 @@ translationStatus: complete
 
 ## 4. 制度が語ったこと
 
-2010 年代に入ると、サトシへの問いはメーリングリストの外まで広がった。まず著名な個人が評価を口にし、続いて制度そのものが答えを返し始めた。
+2010 年代に入ると、サトシをめぐる議論はメーリングリストの外まで広がった。まず著名な個人が評価を口にし、続いて制度そのものが答えを返し始めた。
 
 UCLA の金融学教授バグワン・チョードリーは 2015 年、サトシをノーベル経済学賞に正式推薦し、その理由を「ここ数十年の経済・金融のイノベーションで、これほどの影響を持つものは他にほとんど思いつかない」と書いた。ビル・ゲイツは[ビットコインを「驚異的な技術的偉業（technical tour de force）」と呼んだ](/BitcoinArchive/ja/entries/aftermath/2013-05-06-bill-gates-bitcoin-technical-tour-de-force/)。設計への最も激しい批判者でさえ、同じ一句だけは譲っている。ビットコインの経済性を長年退け続けたノーベル賞経済学者ポール・クルーグマンは、これが「ある問題への技術的に甘美な解法」であることは認めた。オッペンハイマーが原爆に使ったのと同じ言い回しである。
 
@@ -267,4 +267,4 @@ timeline
 
 <!-- entry-closing -->
 
-他者がサトシについて語った記録は、いまここにある。本人は[自分についてほとんど語らず](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)、[個人的な問いには何も答えなかった](/BitcoinArchive/ja/entries/analysis/2010-12-27-satoshi-non-technical-silence/)。最初の反応は疑いを書き残し、後年の回顧は驚嘆や悔恨をその隣に置いた。検証した者たちは、攻撃をはね返し続けたコードと、一度も動かない資産を見つけた。法廷は誰でないかを確定した。そして、後世に残る公共の記念碑は鏡と輪郭だけだ。そこに顔を与えるのは、そのとき覗き込む者である。
+他者がサトシについて語った記録は、いまここにある。本人は[自分についてほとんど語らず](/BitcoinArchive/ja/entries/analysis/2008-08-20-satoshi-self-statements/)、[個人的な質問には何も答えなかった](/BitcoinArchive/ja/entries/analysis/2010-12-27-satoshi-non-technical-silence/)。最初の反応は疑いを書き残し、後年の回顧は驚嘆や悔恨をその隣に置いた。検証した者たちは、攻撃をはね返し続けたコードと、一度も動かない資産を見つけた。法廷は誰でないかを確定した。そして、後世に残る公共の記念碑は鏡と輪郭だけだ。そこに顔を与えるのは、そのとき覗き込む者である。

@@ -69,6 +69,6 @@ translationStatus: complete
 
 ## 結論
 
-単一の証拠だけでは決定的ではないが、タイムズの物理的新聞へのアクセス、GMT と一致する活動パターン、英国式の言語的特徴の収束が、ビットコイン開発中のサトシの活動拠点としてロンドンを支持する状況証拠を構築している。この GMT 読解はアーカイブ内で唯一のタイムスタンプ読解ではない。[このアーカイブ自身のコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)は、コミット時刻の空白を EST 圏または CST 圏とより整合すると読んでいる。サトシ自身のタイムスタンプに関する二つの直接分析のこの不一致は、[国籍の問いの分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-nationality-question/)が両論を切り離さずに読み合わせている。
+単一の証拠だけでは決定的ではないが、タイムズの物理的新聞へのアクセス、GMT と一致する活動パターン、英国式の言語的特徴の収束が、ビットコイン開発中のサトシの活動拠点としてロンドンを支持する状況証拠を構築している。この GMT 読解はアーカイブ内で唯一のタイムスタンプ読解ではない。[このアーカイブ自身のコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-09-satoshi-code-analysis/)は、コミット時刻の空白を EST 圏または CST 圏とより整合すると読んでいる。サトシ自身のタイムスタンプに関する二つの直接分析のこの不一致は、[国籍の分析](/BitcoinArchive/ja/entries/analysis/2008-10-31-satoshi-nationality-question/)が両論を切り離さずに読み合わせている。
 
 本 Chain Bulletin ロンドン仮説は[ジェネシスブロック・ハードコード分析](/BitcoinArchive/ja/entries/analysis/2009-01-03-genesis-block-hardcode-analysis/)と並行して読まれる。同分析はタイムズ見出しを著者の意図の証拠として用い、本 Chain Bulletin 読解を「同じ残存シグナルを意図ではなく地理的属性として読む」対応物として明示的に参照する。
