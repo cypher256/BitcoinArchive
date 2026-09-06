@@ -72,15 +72,9 @@ Bitcoin's ownership model rests on elliptic-curve cryptography (ECC). A private 
 
 ### Key generation flow
 
-```mermaid
-flowchart LR
-    RNG["Cryptographically secure\nrandom number generator"] --> SK["Private key\n(256-bit integer k,\n1 ≤ k < n)"]
-    SK --> MUL["Scalar multiplication\nK = k × G"]
-    G["Generator point G\n(defined by secp256k1)"] --> MUL
-    MUL --> PK["Public key K\n(point on curve)"]
-    PK --> COMP["Compressed form\n(33 bytes:\n02/03 prefix + x-coordinate)"]
-    PK --> UNCOMP["Uncompressed form\n(65 bytes:\n04 prefix + x + y)"]
-```
+<!-- visual: key-generation -->
+
+In precise terms, the private key is a 256-bit integer k in [1, n−1], the public key K = k × G is a scalar multiplication with the secp256k1 generator point, and the same point K is serialized as either a 33-byte compressed form (a parity-bit prefix plus the x-coordinate) or a 65-byte uncompressed form (a fixed prefix plus both coordinates).
 
 ### secp256k1 curve parameters
 
@@ -142,24 +136,9 @@ Signatures are the mechanism by which a spender proves control of the private ke
 
 ### Signing and verification flow
 
-```mermaid
-sequenceDiagram
-    participant Owner as Key holder
-    participant TX as Transaction
-    participant Node as Verifying node
+<!-- visual: sighash-seal -->
 
-    Owner->>Owner: Hold private key k
-    Owner->>TX: Construct transaction (inputs, outputs)
-    Owner->>Owner: Compute sighash (hash of transaction data per sighash flag)
-    Owner->>Owner: Sign: σ = Sign(k, sighash)
-    Owner->>TX: Attach σ to witness (or scriptSig)
-
-    TX->>Node: Broadcast
-    Node->>Node: Extract public key K from locking script
-    Node->>Node: Recompute sighash from transaction data
-    Node->>Node: Verify(K, sighash, σ) → true/false
-    Node-->>TX: Valid → accept into mempool
-```
+In code terms: the sighash is a hash of exactly the fields the sighash flag selects, not the whole transaction. The verifying node extracts the public key K from the locking script being satisfied, then its Verify(K, sighash, σ) call returns a strict true/false — there is no partial or provisional validity.
 
 ### ECDSA vs Schnorr
 
@@ -186,23 +165,9 @@ A Bitcoin address is a human-readable encoding of a locking-script payload. It i
 
 ### Address derivation pipeline
 
-```mermaid
-flowchart LR
-    SK["Private key\n(256-bit)"] --> PK["Public key\n(compressed,\n33 bytes)"]
-    PK --> HASH["Hash160\nRIPEMD-160(SHA-256(pubkey))"]
-    HASH --> PAYLOAD["20-byte hash\n(pubkey hash)"]
+<!-- visual: address-formats -->
 
-    PAYLOAD --> B58["Base58Check\n(version + payload + checksum)"]
-    B58 --> P2PKH["P2PKH address\n1A1zP1eP5QGefi2DM..."]
-
-    PAYLOAD --> BECH32["Bech32\n(witness version 0 +\n32/20-byte program)"]
-    BECH32 --> P2WPKH["P2WPKH address\nbc1qw508d6qejxtd..."]
-
-    PK --> TWEAK["Taproot tweak\n(internal key +\nMerkle root of scripts)"]
-    TWEAK --> XONLY["x-only public key\n(32 bytes)"]
-    XONLY --> BECH32M["Bech32m\n(witness version 1 +\n32-byte program)"]
-    BECH32M --> P2TR["P2TR address\nbc1p5cyxnuxmeuw..."]
-```
+In byte terms: the Hash160 payload is RIPEMD-160(SHA-256(pubkey)), 20 bytes; the Taproot path tweaks the internal key with the Merkle root of any committed scripts before dropping to a 32-byte x-only key; Base58Check prepends a version byte and appends a checksum, while Bech32/Bech32m instead prepend a witness version and append a BCH-code checksum.
 
 ### Address format comparison
 

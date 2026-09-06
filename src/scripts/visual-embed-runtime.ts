@@ -12,6 +12,9 @@ import { mount as mountDifficultyRetarget } from './visuals/difficulty-retarget.
 import { mount as mountBlockValidationGates } from './visuals/block-validation-gates.js';
 import { mount as mountBlockAnatomy } from './visuals/block-anatomy.js';
 import { mount as mountChainSelectionScale } from './visuals/chain-selection-scale.js';
+import { mount as mountKeyGeneration } from './visuals/key-generation.js';
+import { mount as mountSighashSeal } from './visuals/sighash-seal.js';
+import { mount as mountAddressFormats } from './visuals/address-formats.js';
 
 type Drawer = (host: HTMLElement, lang: string) => void;
 
@@ -31,6 +34,9 @@ const VISUAL_DRAWERS: Record<string, Drawer> = {
   'block-validation-gates': mountBlockValidationGates,
   'block-anatomy': mountBlockAnatomy,
   'chain-selection-scale': mountChainSelectionScale,
+  'key-generation': mountKeyGeneration,
+  'sighash-seal': mountSighashSeal,
+  'address-formats': mountAddressFormats,
 };
 
 (function () {

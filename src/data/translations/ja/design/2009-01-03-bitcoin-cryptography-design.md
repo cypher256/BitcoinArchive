@@ -73,15 +73,9 @@ translationStatus: complete
 
 ### 鍵生成フロー
 
-```mermaid
-flowchart LR
-    RNG["暗号学的に安全な<br/>乱数生成器"] --> SK["秘密鍵\n（256 ビット整数 k、\n1 ≤ k < n）"]
-    SK --> MUL["スカラー倍算\nK = k × G"]
-    G["生成元 G\n(secp256k1 で定義)"] --> MUL
-    MUL --> PK["公開鍵 K\n（曲線上の点）"]
-    PK --> COMP["圧縮形式\n(33 バイト:\n02/03 接頭辞 + x 座標)"]
-    PK --> UNCOMP["非圧縮形式\n(65 バイト:\n04 接頭辞 + x + y)"]
-```
+<!-- visual: key-generation -->
+
+正確に言えば、秘密鍵は [1, n−1] の範囲の 256 ビット整数 k であり、公開鍵 K = k × G は secp256k1 の生成点とのスカラー倍算である。同じ点 K は、33 バイトの圧縮形式(パリティビットの接頭辞 + x 座標)または 65 バイトの非圧縮形式(固定の接頭辞 + x 座標と y 座標の両方)のどちらかにシリアライズされる。
 
 ### secp256k1 曲線パラメーター
 
@@ -143,24 +137,9 @@ flowchart TB
 
 ### 署名と検証のフロー
 
-```mermaid
-sequenceDiagram
-    participant Owner as 鍵保有者
-    participant TX as トランザクション
-    participant Node as 検証ノード
+<!-- visual: sighash-seal -->
 
-    Owner->>Owner: 秘密鍵 k を保持
-    Owner->>TX: トランザクション構築（入力、出力）
-    Owner->>Owner: sighash を計算（sighash フラグに応じたデータのハッシュ）
-    Owner->>Owner: 署名: σ = Sign(k, sighash)
-    Owner->>TX: σ を witness（または scriptSig）に添付
-
-    TX->>Node: ブロードキャスト
-    Node->>Node: ロックスクリプトから公開鍵 K を抽出
-    Node->>Node: トランザクションデータから sighash を再計算
-    Node->>Node: Verify(K, sighash, σ) → true/false
-    Node-->>TX: 有効 → メモリープールに受理
-```
+コードで言えば、sighash は sighash フラグが選ぶフィールドだけのハッシュであり、トランザクション全体のハッシュではない。検証ノードは満たそうとしているロックスクリプトから公開鍵 K を抽出し、その上で Verify(K, sighash, σ) の呼び出しが厳密な true/false を返す。部分的・暫定的な有効性というものは存在しない。
 
 ### ECDSA 対シュノア
 
@@ -187,23 +166,9 @@ libsecp256k1 は、定時間演算によるサイドチャネル耐性、決定�
 
 ### アドレス導出パイプライン
 
-```mermaid
-flowchart LR
-    SK["秘密鍵\n(256 ビット)"] --> PK["公開鍵<br/>（圧縮、<br/>33 バイト）"]
-    PK --> HASH["Hash160\nRIPEMD-160(SHA-256(pubkey))"]
-    HASH --> PAYLOAD["20 バイトハッシュ<br/>（pubkey hash）"]
+<!-- visual: address-formats -->
 
-    PAYLOAD --> B58["Base58Check<br/>（バージョン + ペイロード + チェックサム）"]
-    B58 --> P2PKH["P2PKH アドレス<br/>1A1zP1eP5QGefi2DM..."]
-
-    PAYLOAD --> BECH32["Bech32\n（witness バージョン 0 +\n32/20 バイトプログラム）"]
-    BECH32 --> P2WPKH["P2WPKH アドレス<br/>bc1qw508d6qejxtd..."]
-
-    PK --> TWEAK["Taproot 鍵調整 (tweak)<br/>（内部鍵 +<br/>スクリプトの<br/>マークルルート）"]
-    TWEAK --> XONLY["x-only 公開鍵\n(32 バイト)"]
-    XONLY --> BECH32M["Bech32m\n（witness バージョン 1 +\n32 バイトプログラム）"]
-    BECH32M --> P2TR["P2TR アドレス<br/>bc1p5cyxnuxmeuw..."]
-```
+バイト単位で言えば、Hash160 の中身は RIPEMD-160(SHA-256(pubkey))で 20 バイト。Taproot 経路はコミットされたスクリプトのマークルルートで内部鍵を鍵調整してから 32 バイトの x-only キーに落とし込む。Base58Check はバージョンバイトを前置しチェックサムを追加するのに対し、Bech32/Bech32m は witness バージョンを前置し BCH コードのチェックサムを追加する。
 
 ### アドレス形式の比較
 
