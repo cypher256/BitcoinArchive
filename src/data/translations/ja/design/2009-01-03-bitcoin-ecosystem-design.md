@@ -35,7 +35,7 @@ translationStatus: complete
 
 本ページは[設計文書シリーズ](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-system-design-overview/)の **L2 #10 — エコシステム設計（Layer 2・サイドチェーン）** である。ビットコインの基盤チェーンの周囲に成長したエコシステムを扱う。決済チャネルネットワーク、連合型サイドチェーン、オンチェーンエンベロープ構造、協調的マイニングアーキテクチャー。これらのシステムが共有するのは、ビットコインの[コンセンサスルール](/BitcoinArchive/ja/entries/design/2009-01-03-bitcoin-consensus-design/)が維持する最多ワークチェーンという単一の依存関係のみである。実行場所、前提とする信頼モデル、L1 への決済方法は、システムによって根本的に異なる。
 
-**重要な分類上の注意。** Ordinals と Inscriptions は一般的な議論で「レイヤー 2」に分類されることがある。しかしそうではない。これらは L1 エンベロープ構造であり、オンチェーンの Witness 空間に直接埋め込まれ、すべてのフルノードによって検証・保存され、L1 コンセンサスルールに従うデータである。本ページではこの区別を全体を通して維持する。Inscription は決済出力と同じ方法でブロックウェイトを占有する。Lightning の支払いはそうではない。
+**重要な分類上の注意。** Ordinals と Inscriptions は一般的な議論で「レイヤー 2」に分類されることがある。しかしそうではない。これらは L1 エンベロープ構造であり、オンチェーンの Witness 空間に直接埋め込まれ、すべてのフルノードによって検証され(過去のブロックデータを剪定していないノードでは保存も続く)、L1 コンセンサスルールに従うデータである。本ページではこの区別を全体を通して維持する。Inscription は決済出力と同じ方法でブロックウェイトを占有する。Lightning の支払いはそうではない。
 
 サトシ時代の実装（v0.1、2009 年 1 月）と現行の Bitcoin Core（v27 以降基準）で挙動が異なる場合は、両方を記す。
 
@@ -102,40 +102,17 @@ Lightning Network はルーティング型決済チャネルネットワーク�
 
 ### チャネルライフサイクル
 
-```mermaid
-stateDiagram-v2
-    [*] --> Funding: チャネル開設<br/>（資金<br/>トランザクションを配信）
-    Funding --> Open: 資金 tx 承認\n（両当事者が commitment tx を保持）
-    Open --> Open: 残高更新<br/>（新しい commitment tx を交換、<br/>旧状態を失効）
-    Open --> ClosingCooperative: 協調クローズ<br/>（クローズ tx を配信、<br/>最終残高で資金分配）
-    Open --> ClosingForced: 一方的クローズ<br/>（最新 commitment tx を配信、<br/>争訟用タイムロック遅延）
-    ClosingCooperative --> [*]: 各ウォレットに<br/>資金返却
-    ClosingForced --> Dispute: 相手が失効状態を\n配信
-    ClosingForced --> [*]: タイムロック期限切れ、<br/>資金解放
-    Dispute --> [*]: ペナルティ tx が<br/>チャネル全資金を回収
-```
+<!-- visual: channel-lifecycle -->
+
+プロトコルの用語で言えば、ファンディングは 2-of-2 マルチシグトランザクションであり、残高を更新するたびに新しいコミットメントトランザクションを交換して直前のものを失効させ、強制クローズが紛争に至るのは相手方が失効済み(すでに置き換えられた)コミットメント状態をブロードキャストした場合だけだ。
 
 ### マルチホップ決済ルーティング (HTLC)
 
 アリスがボブを中継者としてキャロルに支払う場合、支払いは原子的にロックする HTLC の連鎖を使用する。すべてのホップが決済されるか、どれも決済されないかのいずれかである。
 
-```mermaid
-sequenceDiagram
-    participant A as アリス
-    participant B as ボブ（ルーティングノード）
-    participant C as キャロル（受取人）
+<!-- visual: htlc-relay -->
 
-    C->>C: ランダムな preimage R を生成、<br/>ハッシュ H = SHA-256(R) を計算
-    C->>A: H と金額を含むインボイス
-
-    A->>B: HTLC:「40 ブロック以内に<br/>H の preimage を明かせば<br/>ボブに 1,001 sat 支払う」
-    B->>C: HTLC:「20 ブロック以内に<br/>H の preimage を明かせば<br/>キャロルに 1,000 sat 支払う」
-
-    C->>B: R を明かす（1,000 sat を請求）
-    B->>A: R を明かす（1,001 sat を請求）
-
-    Note over A,C: 支払い完了。<br/>ボブはルーティング手数料 1 sat を獲得。<br/>キャロルが R を明かさなければ<br/>両 HTLC は期限切れで返金。
-```
+プロトコルの用語で言えば、インボイスには H = SHA-256(R) が含まれ、各 HTLC スクリプトは出力を R にハッシュロックしつつ、受取人へ向かうほどタイムロックを短くする(アリス→ボブは 40 ブロック、ボブ→キャロルは 20 ブロック)ため、外側の区間が内側より短い導火線になることはない。成功側の経路では、R をオンチェーン(または協調的にオフチェーン)で明かすことだけが、各区間の出力を請求する方法だ。R が最後まで明かされなければ、各区間はタイムロック満了後にそれぞれ自分自身の HTLC タイムアウト返金へと切り替わる。
 
 ### Lightning Network の特性
 
@@ -209,29 +186,13 @@ flowchart LR
 
 ## 4. L1 拡張: Ordinals と Inscriptions
 
-Ordinals と Inscriptions は**レイヤー 2 ではない**。ビットコインの L1 コンセンサスルール内で完全に動作し、既存の Witness 空間を使用して任意データを個々のサトシに埋め込む。すべてのフルノードがこのデータを正規ブロックの一部として処理・検証・保存する。
+Ordinals と Inscriptions は**レイヤー 2 ではない**。ビットコインの L1 コンセンサスルール内で完全に動作し、既存の Witness 空間を使用して任意データを個々のサトシに埋め込む。すべてのフルノードがこのデータを正規ブロックの一部として処理・検証し、剪定していないノードでは無期限に保存し続ける。
 
 ### Inscriptions が Witness 空間を使用する仕組み
 
-```mermaid
-flowchart TB
-    subgraph BLOCK["ビットコインブロック"]
-        subgraph TX["トランザクション"]
-            IN["入力<br/>(Taproot UTXO を消費)"]
-            subgraph WIT["Witness (Tapscript パス)"]
-                SIG["シュノア署名"]
-                ENVELOPE["エンベロープ:<br/>OP_FALSE OP_IF<br/>  content-type<br/>  data push<br/>OP_ENDIF"]
-            end
-            OUT["出力<br/>（受取人への P2TR）"]
-        end
-    end
+<!-- visual: witness-envelope -->
 
-    IN --> WIT
-    WIT --> OUT
-
-    NOTE["このデータは L1 witness 空間に存在する。<br/>コンセンサス上有効で、<br/>全フルノードに<br/>保存され、4 MWU のブロックウェイト<br/>上限に算入される。"]
-    BLOCK -.-> NOTE
-```
+スクリプトの用語で言えば、エンベロープは Tapscript の Witness 内にある、実行されない OP_FALSE OP_IF ... OP_ENDIF の分岐だ。コードとして実行されることは一度もないが、そのすべてのバイトはノードが直列化を解いて検証し、ブロックウェイトに算入する Witness の一部であり続ける。
 
 ### Ordinal 理論: サトシレベルの識別
 
@@ -260,33 +221,9 @@ Ordinal プロトコルは、マイニングされた順序に基づいてすべ
 
 ### プールアーキテクチャー
 
-```mermaid
-flowchart TB
-    subgraph POOL["マイニングプール"]
-        COORD["プールコーディネーター<br/>（ブロックテンプレート<br/>構築、<br/>作業配布）"]
-    end
+<!-- visual: mining-pool-shares -->
 
-    subgraph MINERS["個別マイナー"]
-        M1["マイナー A<br/>（share を提出）"]
-        M2["マイナー B<br/>（share を提出）"]
-        M3["マイナー C<br/>（share を提出）"]
-    end
-
-    subgraph CHAIN["ビットコインネットワーク"]
-        NODE["フルノード<br/>（メモリープール、<br/>ブロック中継）"]
-    end
-
-    NODE -- "未承認 tx" --> COORD
-    COORD -- "作業ユニット<br/>（ブロックヘッダー + target）" --> M1
-    COORD -- "作業ユニット" --> M2
-    COORD -- "作業ユニット" --> M3
-
-    M1 -- "share<br/>（部分的 PoW 解）" --> COORD
-    M2 -- "share" --> COORD
-    M3 -- "share" --> COORD
-
-    COORD -- "有効ブロック発見:<br/>ネットワークに配信" --> NODE
-```
+実際には、シェアの難易度ターゲットはネットワーク本来のターゲットよりずっと低く設定される。マイナーが 1 分間に何件も提出できるほど易しく、コーディネーターにハッシュレートを測るための安定した証拠の流れを与える。一方、本物のブロックを解くターゲットは、プール全体を通してもまれにしか満たされない。
 
 ### プールプロトコル: Stratum v1 と Stratum v2
 

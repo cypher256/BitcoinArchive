@@ -121,21 +121,9 @@ Every block contains exactly one **coinbase transaction** — the first transact
 
 ### Reward composition
 
-```mermaid
-flowchart LR
-    subgraph BlockReward["Block reward"]
-        direction TB
-        SUB["Subsidy\n(newly minted BTC,\nhalves every 210,000 blocks)"]
-        FEES["Transaction fees\n(sum of all\ninput − output\ndifferences)"]
-    end
+<!-- visual: coinbase-confluence -->
 
-    SUB --> CB["Coinbase\ntransaction"]
-    FEES --> CB
-    CB --> OUTPUTS["Miner's output\naddress(es)"]
-
-    RULE["Consensus rule:\ncoinbase outputs ≤\nsubsidy + fees"]
-    RULE -.- CB
-```
+In consensus terms: `ConnectBlock()` sums both sources into `blockReward = nFees + GetBlockSubsidy(...)` and rejects the block only if the coinbase's actual output value exceeds that combined total -- it never checks the subsidy and fee components as separate line items.
 
 ### Coinbase constraints
 
@@ -155,17 +143,9 @@ When block space demand exceeds supply, transactions compete for inclusion by of
 
 ### Fee-based transaction prioritization
 
-```mermaid
-flowchart TD
-    MEMPOOL["Mempool\n(unconfirmed transactions)"] --> SORT["Sort by fee rate\n(sat/vB)"]
-    SORT --> FILL["Fill block template\ntop-down until\nweight limit (4 MWU)"]
-    FILL --> HIGH["High fee-rate txs\n→ included in next block"]
-    FILL --> MED["Medium fee-rate txs\n→ wait 1-3 blocks"]
-    FILL --> LOW["Low fee-rate txs\n→ wait many blocks\nor drop from mempool"]
+<!-- visual: fee-queue -->
 
-    RBF["RBF: sender bumps\nfee rate to jump\nhigher in queue"] --> MEMPOOL
-    CPFP["CPFP: child tx pays\nhigh fee, pulling\nparent into block"] --> MEMPOOL
-```
+In practice: the block template fills top-down by fee rate until the 4 MWU weight limit is reached, so which bucket a transaction lands in depends entirely on how many higher-fee-rate transactions are also waiting at that moment -- there is no fixed fee-rate threshold for "next block" versus "waits."
 
 ### Fee mechanisms
 
@@ -198,18 +178,13 @@ Bitcoin's security rests on the assumption that mining honestly — extending th
 
 The incentive model creates a positive feedback cycle:
 
-```mermaid
-flowchart LR
-    HONEST["Miners follow\nprotocol rules"] --> VALID["Valid blocks\nproduced"]
-    VALID --> TRUST["Network remains\ntrustworthy"]
-    TRUST --> VALUE["BTC retains\nor gains value"]
-    VALUE --> REWARD["Block rewards\nworth more in\nreal terms"]
-    REWARD --> HONEST
-```
+<!-- visual: incentive-loop -->
+
+This is a feedback loop, not a one-time proof: each stage depends on the one before it, and it can be entered or reinforced at any point, but it can also be weakened at any point -- which is exactly the concern examined in [§ 6](#6-the-fee-only-future) as the subsidy link in the loop shrinks toward zero.
 
 As Satoshi wrote in the whitepaper: "If a greedy attacker is able to assemble more CPU power than all the honest nodes, he would have to choose between using it to defraud people by stealing back his payments, or using it to generate new coins. He ought to find it more profitable to play by the rules."
 
-This argument is strongest when the block subsidy dominates the reward. As the subsidy diminishes through halvings, the incentive model increasingly depends on transaction fees — a transition examined in [§ 7](#7-the-fee-only-future) and in the dedicated [mining reward exhaustion analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/).
+This argument is strongest when the block subsidy dominates the reward. As the subsidy diminishes through halvings, the incentive model increasingly depends on transaction fees — a transition examined in [§ 6](#6-the-fee-only-future) and in the dedicated [mining reward exhaustion analysis](/BitcoinArchive/entries/analysis/2026-05-18-mining-reward-exhaustion-fee-only-future/).
 
 ## 5. Halving events and economic transitions
 

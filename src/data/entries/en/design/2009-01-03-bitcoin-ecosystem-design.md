@@ -34,7 +34,7 @@ inlineLinkKeywords:
 
 This page is **L2 #10 — Ecosystem design (Layer 2, sidechains)** in the [design-document series](/BitcoinArchive/entries/design/2009-01-03-bitcoin-system-design-overview/). It covers the ecosystem that has grown around Bitcoin's base chain: payment-channel networks, federated sidechains, on-chain envelope structures, and collaborative mining architectures. These systems share a single dependency — the most-work chain maintained by Bitcoin's [consensus rules](/BitcoinArchive/entries/design/2009-01-03-bitcoin-consensus-design/) — but they differ fundamentally in where they execute, what trust model they assume, and how they settle back to L1.
 
-**A critical classification note.** Ordinals and Inscriptions are sometimes grouped with "Layer 2" in popular discussion. They are not. They are L1 envelope structures — data embedded directly in on-chain witness space, validated and stored by every full node, and subject to L1 consensus rules. This page maintains the distinction throughout. An Inscription occupies block weight in the same way a payment output does; a Lightning payment does not.
+**A critical classification note.** Ordinals and Inscriptions are sometimes grouped with "Layer 2" in popular discussion. They are not. They are L1 envelope structures — data embedded directly in on-chain witness space, validated by every full node (and retained by any node that has not pruned old block data), and subject to L1 consensus rules. This page maintains the distinction throughout. An Inscription occupies block weight in the same way a payment output does; a Lightning payment does not.
 
 Where behavior differs between the Satoshi-era implementation (v0.1, January 2009) and modern Bitcoin Core (v27+ baseline), both are noted.
 
@@ -101,40 +101,17 @@ The Lightning Network is a routed payment-channel network. Two parties lock fund
 
 ### Channel lifecycle
 
-```mermaid
-stateDiagram-v2
-    [*] --> Funding: Open channel\n(broadcast funding tx)
-    Funding --> Open: Funding tx confirmed\n(both parties hold commitment txs)
-    Open --> Open: Update balances\n(exchange new commitment txs,\nrevoke old states)
-    Open --> ClosingCooperative: Mutual close\n(broadcast closing tx,\nsplit funds by final balance)
-    Open --> ClosingForced: Unilateral close\n(broadcast latest commitment tx,\ntimelock delay for dispute)
-    ClosingCooperative --> [*]: Funds returned to\nindividual wallets
-    ClosingForced --> Dispute: Counterparty broadcasts\nrevoked state
-    ClosingForced --> [*]: Timelock expires,\nfunds released
-    Dispute --> [*]: Penalty tx claims\nall channel funds
-```
+<!-- visual: channel-lifecycle -->
+
+In protocol terms: funding is a 2-of-2 multisig transaction; every balance update exchanges a new commitment transaction and revokes the previous one; and the forced-close path only reaches dispute if the counterparty broadcasts a revoked (already-superseded) commitment state.
 
 ### Multi-hop payment routing (HTLC)
 
 When Alice pays Carol through an intermediary (Bob), the payment uses a chain of HTLCs that lock atomically: either every hop settles or none does.
 
-```mermaid
-sequenceDiagram
-    participant A as Alice
-    participant B as Bob (routing node)
-    participant C as Carol (payee)
+<!-- visual: htlc-relay -->
 
-    C->>C: Generate random preimage R,<br/>compute hash H = SHA-256(R)
-    C->>A: Invoice containing H and amount
-
-    A->>B: HTLC: "Pay Bob 1,001 sats<br/>if you reveal preimage of H<br/>within 40 blocks"
-    B->>C: HTLC: "Pay Carol 1,000 sats<br/>if you reveal preimage of H<br/>within 20 blocks"
-
-    C->>B: Reveal R (claim 1,000 sats)
-    B->>A: Reveal R (claim 1,001 sats)
-
-    Note over A,C: Payment complete.<br/>Bob earned 1 sat routing fee.<br/>If Carol never reveals R,<br/>both HTLCs expire and refund.
-```
+In protocol terms: the invoice carries H = SHA-256(R), each HTLC script hashlocks its output to R with a decreasing timelock toward the payee (40 blocks for Alice-to-Bob, 20 for Bob-to-Carol) so the outer hop can never be a shorter fuse than the inner one. Revealing R (on-chain or off-chain, cooperatively) is the only way to claim a hop's output on the success path; if R never surfaces, each hop instead falls back to its own HTLC-timeout refund once its timelock expires.
 
 ### Lightning Network properties
 
@@ -208,29 +185,13 @@ flowchart LR
 
 ## 4. L1 extensions: Ordinals and Inscriptions
 
-Ordinals and Inscriptions are **not Layer 2**. They operate entirely within Bitcoin's L1 consensus rules, using existing witness space to embed arbitrary data into individual satoshis. Every full node processes, validates, and stores this data as part of the canonical block.
+Ordinals and Inscriptions are **not Layer 2**. They operate entirely within Bitcoin's L1 consensus rules, using existing witness space to embed arbitrary data into individual satoshis. Every full node processes and validates this data as part of the canonical block; a non-pruning node also stores it indefinitely.
 
 ### How Inscriptions use witness space
 
-```mermaid
-flowchart TB
-    subgraph BLOCK["Bitcoin block"]
-        subgraph TX["Transaction"]
-            IN["Input<br/>(spends a Taproot UTXO)"]
-            subgraph WIT["Witness (Tapscript path)"]
-                SIG["Schnorr signature"]
-                ENVELOPE["Envelope:<br/>OP_FALSE OP_IF<br/>  content-type<br/>  data push(es)<br/>OP_ENDIF"]
-            end
-            OUT["Output<br/>(P2TR to recipient)"]
-        end
-    end
+<!-- visual: witness-envelope -->
 
-    IN --> WIT
-    WIT --> OUT
-
-    NOTE["This data lives in L1 witness space.<br/>It is consensus-valid, stored by all<br/>full nodes, and counts toward<br/>the 4 MWU block weight limit."]
-    BLOCK -.-> NOTE
-```
+In script terms: the envelope is an unexecuted OP_FALSE OP_IF ... OP_ENDIF branch inside the Tapscript witness, so it never runs as code, but every byte of it is still part of the witness the node deserializes, validates, and counts toward block weight.
 
 ### Ordinal theory: satoshi-level identity
 
@@ -259,33 +220,9 @@ Solo mining has been impractical for individual participants since approximately
 
 ### Pool architecture
 
-```mermaid
-flowchart TB
-    subgraph POOL["Mining pool"]
-        COORD["Pool coordinator<br/>(constructs block template,<br/>distributes work)"]
-    end
+<!-- visual: mining-pool-shares -->
 
-    subgraph MINERS["Individual miners"]
-        M1["Miner A<br/>(submits shares)"]
-        M2["Miner B<br/>(submits shares)"]
-        M3["Miner C<br/>(submits shares)"]
-    end
-
-    subgraph CHAIN["Bitcoin network"]
-        NODE["Full node<br/>(mempool, block relay)"]
-    end
-
-    NODE -- "Unconfirmed txs" --> COORD
-    COORD -- "Work unit<br/>(block header + target)" --> M1
-    COORD -- "Work unit" --> M2
-    COORD -- "Work unit" --> M3
-
-    M1 -- "Share<br/>(partial PoW solution)" --> COORD
-    M2 -- "Share" --> COORD
-    M3 -- "Share" --> COORD
-
-    COORD -- "Valid block found:<br/>broadcast to network" --> NODE
-```
+In practice, a share's difficulty target is set far below the network's real target -- easy enough that miners submit many per minute, giving the coordinator a steady stream of proof to measure hash rate by, while the real block-solving target is only cleared rarely across the whole pool.
 
 ### Pool protocols: Stratum v1 vs Stratum v2
 

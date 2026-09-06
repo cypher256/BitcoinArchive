@@ -15,6 +15,13 @@ import { mount as mountChainSelectionScale } from './visuals/chain-selection-sca
 import { mount as mountKeyGeneration } from './visuals/key-generation.js';
 import { mount as mountSighashSeal } from './visuals/sighash-seal.js';
 import { mount as mountAddressFormats } from './visuals/address-formats.js';
+import { mount as mountChannelLifecycle } from './visuals/channel-lifecycle.js';
+import { mount as mountHtlcRelay } from './visuals/htlc-relay.js';
+import { mount as mountWitnessEnvelope } from './visuals/witness-envelope.js';
+import { mount as mountMiningPoolShares } from './visuals/mining-pool-shares.js';
+import { mount as mountCoinbaseConfluence } from './visuals/coinbase-confluence.js';
+import { mount as mountFeeQueue } from './visuals/fee-queue.js';
+import { mount as mountIncentiveLoop } from './visuals/incentive-loop.js';
 
 type Drawer = (host: HTMLElement, lang: string) => void;
 
@@ -37,6 +44,13 @@ const VISUAL_DRAWERS: Record<string, Drawer> = {
   'key-generation': mountKeyGeneration,
   'sighash-seal': mountSighashSeal,
   'address-formats': mountAddressFormats,
+  'channel-lifecycle': mountChannelLifecycle,
+  'htlc-relay': mountHtlcRelay,
+  'witness-envelope': mountWitnessEnvelope,
+  'mining-pool-shares': mountMiningPoolShares,
+  'coinbase-confluence': mountCoinbaseConfluence,
+  'fee-queue': mountFeeQueue,
+  'incentive-loop': mountIncentiveLoop,
 };
 
 (function () {
