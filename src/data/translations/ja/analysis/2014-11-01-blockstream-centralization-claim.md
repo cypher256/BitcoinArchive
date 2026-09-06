@@ -31,7 +31,6 @@ tags:
   - "bitcoin-core"
   - "scaling"
   - "centralization-paradox"
-  - "analysis"
 secondarySources:
   - name: "Wikipedia — Lightning Network"
     url: "https://en.wikipedia.org/wiki/Lightning_Network"

@@ -18,7 +18,6 @@ tags:
   - "cypherpunk"
   - "rpow"
   - "stylometric-analysis"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "Andy Greenberg — 'Nakamoto's Neighbor' (Forbes, March 25, 2014)"

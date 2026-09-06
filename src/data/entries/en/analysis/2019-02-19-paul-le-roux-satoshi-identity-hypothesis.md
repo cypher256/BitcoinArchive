@@ -16,7 +16,6 @@ tags:
   - "satoshi-identity"
   - "paul-le-roux"
   - "e4m"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "Evan Ratliff — The Mastermind (Random House, February 19, 2019)"

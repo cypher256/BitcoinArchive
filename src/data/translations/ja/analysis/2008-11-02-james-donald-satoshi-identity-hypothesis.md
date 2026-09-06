@@ -17,7 +17,6 @@ tags:
   - "james-donald"
   - "cypherpunk"
   - "stylometric"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "Benjamin Wallace — The Mysterious Mr. Nakamoto (Crown, 2025)"

@@ -15,7 +15,6 @@ participants:
 description: "ウェイ・ダイは 2013 年、固定供給を失敗と断じた。だが彼自身の b-money 設計も、サトシが「知る方法はない」と答えた価値の数値を必要としていた。"
 isSatoshi: false
 tags:
-  - "analysis"
   - "monetary-policy"
   - "wei-dai"
   - "b-money"

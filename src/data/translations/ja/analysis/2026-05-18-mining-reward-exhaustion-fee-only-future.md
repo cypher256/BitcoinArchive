@@ -20,7 +20,6 @@ tags:
   - "mining-incentive"
   - "fee-market"
   - "halving"
-  - "analysis"
 secondarySources:
   - name: "Bitcoin Core — GetBlockSubsidy (validation.cpp), pinned commit 4f348c2"
     url: "https://github.com/bitcoin/bitcoin/blob/4f348c2d730ce167d2918727aa2fdb6849182ab1/src/validation.cpp#L1836-L1846"

@@ -20,7 +20,6 @@ tags:
   - "name-match"
   - "newsweek"
   - "denied"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "Greenberg (Forbes) — 'Nakamoto's Neighbor' (March 25, 2014)"

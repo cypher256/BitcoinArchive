@@ -24,7 +24,6 @@ tags:
   - "satoshi-identity"
   - "len-sassaman"
   - "cypherpunk"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "エヴァン・ハッチ — 「レン・サッサマンとサトシ：サイファーパンク史」（Medium、2021 年 2 月 22 日）"

@@ -15,7 +15,6 @@ tags:
   - "satoshi-anonymity"
   - "pseudonym-analysis"
   - "satoshi-identity"
-  - "analysis"
 secondarySources:
   - name: "Sergio Demian Lerner — The Patoshi mining pattern (April 2013)"
     url: "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"

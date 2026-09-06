@@ -26,7 +26,6 @@ tags:
   - "libertarianism"
   - "monetary-policy"
   - "ideological-lineage"
-  - "analysis"
 secondarySources:
   - name: "Modern American History (Cambridge UP、 2024 年) — F. A. ハイエク、リバタリアニズム、そして貨幣の脱国営化"
     url: "https://www.cambridge.org/core/journals/modern-american-history/article/f-a-hayek-libertarianism-and-the-denationalization-of-money/B17D6B3E276C1007194928373B431E3B"

@@ -16,7 +16,6 @@ tags:
   - "satoshi-identity"
   - "isamu-kaneko"
   - "winny"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "Winny opening announcement — 2channel thread archive (Mr. 47)"

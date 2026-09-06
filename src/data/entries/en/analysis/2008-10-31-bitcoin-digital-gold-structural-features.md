@@ -12,7 +12,6 @@ description: "Bitcoin's 'digital gold' status rests on two layers of decentraliz
 isSatoshi: false
 homeOrder: 1
 tags:
-  - "analysis"
   - "monetary-policy"
   - "governance"
   - "decentralization"

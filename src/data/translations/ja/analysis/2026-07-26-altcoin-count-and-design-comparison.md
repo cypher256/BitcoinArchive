@@ -26,7 +26,6 @@ participants:
 description: "12 チェーンを、その発行規則が 1 単位の価格について何を決め、何には手が届かないかで並べた。"
 isSatoshi: false
 tags:
-  - "analysis"
   - "altcoin"
   - "comparison"
   - "stablecoin"

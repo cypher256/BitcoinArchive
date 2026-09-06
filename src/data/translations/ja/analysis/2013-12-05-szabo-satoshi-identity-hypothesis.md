@@ -20,7 +20,6 @@ tags:
   - "bit-gold"
   - "stylometric-analysis"
   - "cypherpunk"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "ニック・サボのサイファーパンクリスト保存投稿（1993–1996 年）"

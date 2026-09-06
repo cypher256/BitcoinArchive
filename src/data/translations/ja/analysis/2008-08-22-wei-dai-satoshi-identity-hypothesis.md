@@ -18,7 +18,6 @@ tags:
   - "b-money"
   - "crypto-plus-plus"
   - "cypherpunk"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "ウェイ・ダイ — b-money 提案（1998 年 11 月）"

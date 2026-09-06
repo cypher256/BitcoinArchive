@@ -25,7 +25,6 @@ tags:
   - "incident-response"
   - "centralization-paradox"
   - "security"
-  - "analysis"
 inlineLinkKeywords:
   - "overflow incident analysis"
   - "centralization paradox"

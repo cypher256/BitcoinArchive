@@ -18,7 +18,6 @@ tags:
   - "b-money"
   - "crypto-plus-plus"
   - "cypherpunk"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "Wei Dai — b-money proposal (November 1998)"

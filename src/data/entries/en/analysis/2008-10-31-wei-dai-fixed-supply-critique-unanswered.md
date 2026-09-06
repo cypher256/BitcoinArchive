@@ -15,7 +15,6 @@ participants:
 description: "Wei Dai called Bitcoin's fixed supply a failure in 2013. His own 1998 b-money design needed the same real-world value figure Satoshi said software has no way to know."
 isSatoshi: false
 tags:
-  - "analysis"
   - "monetary-policy"
   - "wei-dai"
   - "b-money"

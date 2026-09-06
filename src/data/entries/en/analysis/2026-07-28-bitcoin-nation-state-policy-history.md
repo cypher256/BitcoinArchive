@@ -9,7 +9,6 @@ author: "Bitcoin Institute"
 description: "Governments that banned Bitcoin hardest ended up holding the most of it. A survey of policy reversals across thirty jurisdictions, and the two governments that never reversed at all."
 isSatoshi: false
 tags:
-  - "analysis"
   - "regulation"
   - "nation-state-adoption"
   - "legal-tender"

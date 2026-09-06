@@ -12,7 +12,6 @@ description: "ビットコインがデジタルゴールドと呼ばれる根拠
 isSatoshi: false
 homeOrder: 1
 tags:
-  - "analysis"
   - "monetary-policy"
   - "governance"
   - "decentralization"

@@ -18,7 +18,6 @@ tags:
   - "bitcoin-org"
   - "satoshi-anonymity"
   - "satoshi-identity"
-  - "analysis"
 secondarySources:
   - name: "WIPO Case No. D2009-1779 — St. Tropez Acquisition Co. Limited v. AnonymousSpeech LLC / Global House, Inc. (decided March 13, 2010)"
     url: "https://www.wipo.int/amc/en/domains/decisions/html/2009/d2009-1779.html"

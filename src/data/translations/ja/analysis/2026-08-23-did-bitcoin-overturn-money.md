@@ -12,7 +12,6 @@ participants:
 description: "機関投資家は 3000 億ドル規模の持ち分を築き、政府は押収したコインを準備金に変えた。著名な二人のノーベル経済学賞受賞者は、16 年、17 年経っても転向しなかった。記録で確かめる。"
 isSatoshi: false
 tags:
-  - "analysis"
   - "monetary-policy"
   - "institutional-adoption"
   - "nation-state-adoption"

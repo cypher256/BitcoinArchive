@@ -13,7 +13,6 @@ isSatoshi: true
 tags:
   - "satoshi-nakamoto"
   - "source-code"
-  - "analysis"
   - "coding-style"
   - "timeline"
   - "historic"

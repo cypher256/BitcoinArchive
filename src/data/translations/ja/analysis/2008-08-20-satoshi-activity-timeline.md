@@ -15,7 +15,6 @@ tags:
   - "timeline"
   - "master-index"
   - "visualization"
-  - "analysis"
 secondarySources:
   - name: "Satoshi Nakamoto Institute — Complete Works"
     url: "https://satoshi.nakamotoinstitute.org/"

@@ -14,7 +14,6 @@ description: "ホワイトペーパーのタイトル『電子キャッシュ』
 isSatoshi: false
 homeOrder: 4
 tags:
-  - "analysis"
   - "monetary-policy"
   - "design-intent"
   - "digital-gold"

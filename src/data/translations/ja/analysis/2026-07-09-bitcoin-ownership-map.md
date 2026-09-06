@@ -12,7 +12,6 @@ participants:
 description: "サトシの約 110 万 BTC は動かないまま、企業・ETF・国家が積み上げた。2100 万枚の地図を出典付きで描き、最大級のクジラに今も名前が付かない理由を確かめる。"
 isSatoshi: false
 tags:
-  - "analysis"
   - "bitcoin-holdings"
   - "decentralization"
   - "digital-gold"

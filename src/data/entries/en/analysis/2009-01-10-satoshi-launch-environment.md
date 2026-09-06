@@ -13,7 +13,6 @@ participants:
 description: "Editorial forensic reading of Satoshi's operational environment during Bitcoin v0.1 launch week (Jan 8-12, 2009): \"from where I am\" in the Jan 12 email to Finney, and dense activity cadence."
 isSatoshi: false
 tags:
-  - "analysis"
   - "satoshi-identity"
   - "early-network"
   - "launch"

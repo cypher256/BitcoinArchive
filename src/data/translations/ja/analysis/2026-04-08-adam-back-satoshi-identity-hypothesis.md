@@ -19,7 +19,6 @@ tags:
   - "hashcash"
   - "stylometric-analysis"
   - "new-york-times"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "Adam Back — Hashcash 論文（1997 年、2002 年改訂）"

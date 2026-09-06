@@ -12,7 +12,6 @@ participants:
 description: "Satoshi's ~1.1M BTC sit still while companies, ETFs, and nation-states build stacks of their own. A sourced map of who holds the 21 million — and why the biggest whales still have no names."
 isSatoshi: false
 tags:
-  - "analysis"
   - "bitcoin-holdings"
   - "decentralization"
   - "digital-gold"

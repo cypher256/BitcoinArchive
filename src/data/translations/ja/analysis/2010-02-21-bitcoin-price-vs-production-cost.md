@@ -21,7 +21,6 @@ tags:
   - "mining"
   - "exchange-rate"
   - "difficulty"
-  - "analysis"
 secondarySources:
   - name: "Adam Smith — The Wealth of Nations (1776), Book I, Chapter VII (Econlib 全文)"
     url: "https://www.econlib.org/book-chapters/chapter-b-i-ch-7-of-the-natural-and-market-price-of-commodities/"

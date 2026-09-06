@@ -27,7 +27,6 @@ tags:
   - "satoshi-identity"
   - "ideological-synchrony"
   - "independent-invention"
-  - "analysis"
 secondarySources:
   - name: "Eric Hughes (1993) — A Cypherpunk's Manifesto"
     url: "https://www.activism.net/cypherpunk/manifesto.html"

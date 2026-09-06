@@ -9,7 +9,6 @@ author: "Bitcoin Institute"
 description: "ビットコインを最も厳しく禁止した政府ほど、没収によって多くの BTC を保有する。30 か国近くの政策転換と、例外の日本・EU を追う。"
 isSatoshi: false
 tags:
-  - "analysis"
   - "regulation"
   - "nation-state-adoption"
   - "legal-tender"

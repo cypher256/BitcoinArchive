@@ -15,7 +15,6 @@ participants:
 description: "ドナルドは難題に 1982 年の名前を与え、サトシは「解決策だ」と言い切り、既知の将軍の世界を開かれた集合に描き直して答えた。王の Wi-Fi の答えは bitcoin.org の独立ページになった。"
 isSatoshi: false
 tags:
-  - "analysis"
   - "consensus"
   - "byzantine-generals-problem"
   - "proof-of-work"

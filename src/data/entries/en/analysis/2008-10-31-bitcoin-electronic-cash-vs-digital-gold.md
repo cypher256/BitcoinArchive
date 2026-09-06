@@ -14,7 +14,6 @@ description: "The whitepaper's title names a payment system; section 6's gold is
 isSatoshi: false
 homeOrder: 4
 tags:
-  - "analysis"
   - "monetary-policy"
   - "design-intent"
   - "digital-gold"

@@ -15,7 +15,6 @@ participants:
 description: "Donald gave the difficulty its 1982 name; Satoshi claimed a solution outright, swapping the fixed world of known generals for an open one. The King's wi-fi answer became a page on bitcoin.org."
 isSatoshi: false
 tags:
-  - "analysis"
   - "consensus"
   - "byzantine-generals-problem"
   - "proof-of-work"

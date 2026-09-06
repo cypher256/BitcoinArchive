@@ -12,7 +12,6 @@ description: "同じ日に同じ質問をされた 5 つの AI モデルが、�
 isSatoshi: false
 homeOrder: 5
 tags:
-  - "analysis"
   - "ai"
   - "bitcoin"
   - "altcoin"

@@ -28,7 +28,6 @@ tags:
   - "communication-pattern"
   - "studied-silence"
   - "information-control"
-  - "analysis"
 secondarySources:
   - name: "マイク・ハーンのメール集 (`plan99.net`)"
     url: "https://plan99.net/~mike/satoshi-emails/"

@@ -20,7 +20,6 @@ tags:
   - "windows"
   - "linux"
   - "satoshi-tooling"
-  - "analysis"
 secondarySources:
   - name: "Bitcoin v0.1.3 source — readme.txt (IC-Unicamp Stolfi archive mirror)"
     url: "https://www.ic.unicamp.br/~stolfi/EXPORT/projects/bitcoin/satoshi-code/bitcoin/src/readme.txt"

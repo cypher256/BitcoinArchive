@@ -26,7 +26,6 @@ tags:
   - "stylometric-analysis"
   - "methodology"
   - "dataset"
-  - "analysis"
   - "investigation"
   - "nick-szabo"
   - "adam-back"

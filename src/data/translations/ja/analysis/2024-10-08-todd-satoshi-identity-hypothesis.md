@@ -15,7 +15,6 @@ isSatoshi: false
 tags:
   - "satoshi-identity"
   - "peter-todd"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "Wikipedia — Money Electric: The Bitcoin Mystery"

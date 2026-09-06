@@ -12,7 +12,6 @@ description: "Five AI models were asked the same question and independently pick
 isSatoshi: false
 homeOrder: 5
 tags:
-  - "analysis"
   - "ai"
   - "bitcoin"
   - "altcoin"

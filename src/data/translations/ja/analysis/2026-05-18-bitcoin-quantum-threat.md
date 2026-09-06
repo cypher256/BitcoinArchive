@@ -20,7 +20,6 @@ tags:
   - "ecdsa"
   - "post-quantum"
   - "security"
-  - "analysis"
 secondarySources:
   - name: "Peter W. Shor — 「Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer」 (SIAM J. Comput., 1997)"
     url: "https://arxiv.org/abs/quant-ph/9508027"

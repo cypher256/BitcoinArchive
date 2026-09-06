@@ -16,7 +16,6 @@ tags:
   - "genesis-block"
   - "source-code"
   - "bitcoin-v0.1"
-  - "analysis"
   - "attribution"
   - "hardcode"
   - "blockchain"

@@ -14,7 +14,6 @@ tags:
   - "satoshi-identity"
   - "primary-source-inventory"
   - "self-statements"
-  - "analysis"
 secondarySources:
   - name: "P2P Foundation — Satoshi Nakamoto profile (Wayback Machine snapshot; original offline since the Ning network was taken down)"
     url: "https://web.archive.org/web/20151225125440/http://p2pfoundation.ning.com/profile/SatoshiNakamoto"

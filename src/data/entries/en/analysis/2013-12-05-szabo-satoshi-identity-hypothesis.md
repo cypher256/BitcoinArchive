@@ -20,7 +20,6 @@ tags:
   - "bit-gold"
   - "stylometric-analysis"
   - "cypherpunk"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "Archived cypherpunks-list posts by Nick Szabo (1993–1996)"

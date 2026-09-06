@@ -31,7 +31,6 @@ tags:
   - "satoshi-identity"
   - "testimony"
   - "reception-history"
-  - "analysis"
 secondarySources:
   - name: "The New Yorker — The Crypto-Currency (Joshua Davis, full-text mirror)"
     url: "https://gwern.net/doc/bitcoin/2011-davis"

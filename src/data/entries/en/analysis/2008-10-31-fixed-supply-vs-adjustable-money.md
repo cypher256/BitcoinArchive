@@ -23,7 +23,6 @@ tags:
   - "elastic-supply"
   - "wei-dai"
   - "fiat-comparison"
-  - "analysis"
 secondarySources:
   - name: "Wei Dai — b-money proposal (1998)"
     url: "http://www.weidai.com/bmoney.txt"

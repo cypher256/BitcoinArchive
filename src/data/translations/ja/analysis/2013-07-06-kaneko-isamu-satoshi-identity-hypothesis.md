@@ -16,7 +16,6 @@ tags:
   - "satoshi-identity"
   - "isamu-kaneko"
   - "winny"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "Winny 開発予告 — 2 ちゃんねるの 47 氏スレッドアーカイブ"

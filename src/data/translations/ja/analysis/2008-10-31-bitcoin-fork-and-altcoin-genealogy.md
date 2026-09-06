@@ -32,7 +32,6 @@ tags:
   - "block-size-war"
   - "bitcoin-cash"
   - "segwit"
-  - "analysis"
   - "history"
 secondarySources:
   - name: "CoinMarketCap — 2017 年 6 月 12 日時点の履歴スナップショット"

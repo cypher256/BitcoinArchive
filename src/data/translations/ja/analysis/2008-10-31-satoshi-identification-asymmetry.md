@@ -16,7 +16,6 @@ tags:
   - "satoshi-identity"
   - "satoshi-anonymity"
   - "asymmetry"
-  - "analysis"
 secondarySources:
   - name: "Andy Greenberg — Forbes investigation of Satoshi (2014)"
     url: "https://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/"

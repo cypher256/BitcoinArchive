@@ -24,7 +24,6 @@ tags:
   - "satoshi-identity"
   - "len-sassaman"
   - "cypherpunk"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "Evan Hatch — 'Len Sassaman and Satoshi: a Cypherpunk history' (Medium, February 22, 2021)"

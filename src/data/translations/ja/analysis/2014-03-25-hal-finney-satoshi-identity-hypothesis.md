@@ -18,7 +18,6 @@ tags:
   - "cypherpunk"
   - "rpow"
   - "stylometric-analysis"
-  - "analysis"
   - "disputed"
 secondarySources:
   - name: "アンディ・グリーンバーグ「Nakamoto's Neighbor」（Forbes、2014 年 3 月 25 日）"

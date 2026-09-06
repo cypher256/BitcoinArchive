@@ -12,7 +12,6 @@ participants:
 description: "Institutions built a $300B stake; governments turned seized coins into reserves. Two Nobel economists, asked years later, never signed on. What actually overturned, checked against the record."
 isSatoshi: false
 tags:
-  - "analysis"
   - "monetary-policy"
   - "institutional-adoption"
   - "nation-state-adoption"

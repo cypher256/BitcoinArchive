@@ -22,7 +22,6 @@ tags:
   - "hashcash"
   - "b-money"
   - "merkle-tree"
-  - "analysis"
   - "satoshi-identity"
 secondarySources:
   - name: "Bitcoin whitepaper — references list"

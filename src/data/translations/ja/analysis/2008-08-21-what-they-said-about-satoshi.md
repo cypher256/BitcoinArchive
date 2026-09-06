@@ -31,7 +31,6 @@ tags:
   - "satoshi-identity"
   - "testimony"
   - "reception-history"
-  - "analysis"
 secondarySources:
   - name: "ニューヨーカー — The Crypto-Currency (ジョシュア・デイヴィス、全文ミラー)"
     url: "https://gwern.net/doc/bitcoin/2011-davis"

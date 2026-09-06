@@ -16,7 +16,6 @@ tags:
   - "blockchain-snapshot"
   - "node-operator"
   - "pseudonym-analysis"
-  - "analysis"
 secondarySources:
   - name: "arXiv:2206.02871 — 同定を引用する学術論文"
     url: "https://arxiv.org/abs/2206.02871"

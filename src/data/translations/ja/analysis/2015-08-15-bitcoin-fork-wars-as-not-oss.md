@@ -38,7 +38,6 @@ tags:
   - "fork"
   - "scaling"
   - "bitcoin-core"
-  - "analysis"
 secondarySources:
   - name: "Wikipedia — Bitcoin Core"
     url: "https://en.wikipedia.org/wiki/Bitcoin_Core"

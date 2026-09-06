@@ -17,7 +17,6 @@ tags:
   - "warez-scene"
   - "code-quality"
   - "kaminsky-audit"
-  - "analysis"
 secondarySources:
   - name: "Bitcoin v0.1 release announcement (cryptography mailing list)"
     url: "https://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html"
