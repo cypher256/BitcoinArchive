@@ -36,10 +36,9 @@ const halvings = await import('../data/btc-chart/halvings.json').then(m => m.def
 const today = new Date().toISOString().slice(0, 10);
 const predictions = allPredictions
   .filter((p: any) => p.targetDate >= today)
-  // Default order: soonest target date first -- the natural reading order
-  // for "which of these might resolve next". Interactive re-sort (by
-  // predictor, date, or price) is added client-side below.
-  .sort((a: any, b: any) => a.targetDate.localeCompare(b.targetDate));
+  // Default order: furthest-out target date first. Interactive re-sort
+  // (by predictor, date, or price) is added client-side below.
+  .sort((a: any, b: any) => b.targetDate.localeCompare(a.targetDate));
 ---
 
 <div class="container-wide chart-page">
@@ -88,7 +87,7 @@ const predictions = allPredictions
         <thead>
           <tr>
             <th class="pred-sortable" data-sort="predictor" tabindex="0" aria-sort="none">{t('chart.predictedBy' as any)}</th>
-            <th class="pred-col-date pred-sortable pred-sort-active" data-sort="date" data-order="asc" tabindex="0" aria-sort="ascending">{t('chart.date' as any)}</th>
+            <th class="pred-col-date pred-sortable pred-sort-active" data-sort="date" data-order="desc" tabindex="0" aria-sort="descending">{t('chart.date' as any)}</th>
             <th class="th-price pred-sortable" data-sort="price" tabindex="0" aria-sort="none">{t('chart.target' as any)}</th>
           </tr>
         </thead>
@@ -128,8 +127,8 @@ const predictions = allPredictions
   // the .sort-btn pattern used elsewhere on the site, adapted to <th>
   // clicks since this is a real <table> rather than a <li> list). date
   // and predictor sort as strings (ISO dates sort correctly as strings);
-  // price sorts numerically. Default order (soonest target date first) is
-  // set server-side, so this only needs to run on a click. <th> isn't
+  // price sorts numerically. Default order (furthest-out target date
+  // first) is set server-side, so this only needs to run on a click. <th> isn't
   // natively focusable/keyboard-activatable, so tabindex + a keydown
   // handler (Enter/Space) are added alongside click, and aria-sort is
   // kept in sync so the current sort state is exposed to assistive tech.
