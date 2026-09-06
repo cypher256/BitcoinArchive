@@ -17,7 +17,6 @@ participants:
 description: "ゼップ・ハスルベルガーが、ビットコインの総供給量を決める算式は何かと問い、採用が進むに従って総量を調整できる仕組みが必要だと主張する。"
 isSatoshi: false
 tags:
-  - "forum-post"
   - "supply-limit"
   - "monetary-policy"
 secondarySources:

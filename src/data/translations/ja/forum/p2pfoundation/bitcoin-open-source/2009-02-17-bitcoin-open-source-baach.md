@@ -15,7 +15,6 @@ participants:
 description: "ヨルク・バッハは Chaum 流の中央造幣を擁護した上で、誰でもコインを作れる仕組みでは信頼できる供給量が成立しないと指摘し、中央発行体も信頼できないはずと問う。"
 isSatoshi: false
 tags:
-  - "forum-post"
   - "chaumian"
   - "currency"
 secondarySources:

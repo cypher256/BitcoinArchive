@@ -15,7 +15,6 @@ participants:
 description: "Joerg Baach defends Chaumian e-cash, then asks how Bitcoin can serve as currency if anyone can create coins, and why a central issuer would be trusted when a central double-spending database is not."
 isSatoshi: false
 tags:
-  - "forum-post"
   - "chaumian"
   - "currency"
 secondarySources:

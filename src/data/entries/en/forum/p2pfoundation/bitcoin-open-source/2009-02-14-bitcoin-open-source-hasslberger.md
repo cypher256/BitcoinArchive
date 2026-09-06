@@ -15,7 +15,6 @@ participants:
 description: "Sepp Hasslberger mentions Dante's email about the UK project Open Coin and asks whether there could be synergies between Bitcoin and Open Coin."
 isSatoshi: false
 tags:
-  - "forum-post"
   - "open-coin"
 secondarySources:
   - name: "Wayback Machine (P2P Foundation forum snapshot)"

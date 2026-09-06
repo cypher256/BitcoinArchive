@@ -15,7 +15,6 @@ participants:
 description: "ゼップ・ハスルベルガーが、 Dante からのメールで言及された英国の Open Coin 計画を紹介し、ビットコインとの相乗効果があり得るかと尋ねる。"
 isSatoshi: false
 tags:
-  - "forum-post"
   - "open-coin"
 secondarySources:
   - name: "Wayback Machine (P2P Foundation forum snapshot)"
