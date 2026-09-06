@@ -13,7 +13,6 @@ description: "Qualcomm engineer who wrote the Proof of History paper and founded
 isSatoshi: false
 tags:
   - "anatoly-yakovenko"
-  - "biography"
   - "solana"
   - "altcoin"
   - "proof-of-stake"

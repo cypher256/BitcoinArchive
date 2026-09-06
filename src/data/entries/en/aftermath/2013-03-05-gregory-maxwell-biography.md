@@ -12,7 +12,6 @@ description: "Long-time Bitcoin Core contributor (gmaxwell), Blockstream co-foun
 isSatoshi: false
 tags:
   - "gregory-maxwell"
-  - "biography"
   - "bitcoin-core"
   - "blockstream"
   - "coinjoin"

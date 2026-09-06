@@ -15,7 +15,6 @@ callout:
   label: "Identity hypothesis"
 tags:
   - "paul-le-roux"
-  - "biography"
   - "e4m"
   - "truecrypt-precursor"
   - "criminal-enterprise"

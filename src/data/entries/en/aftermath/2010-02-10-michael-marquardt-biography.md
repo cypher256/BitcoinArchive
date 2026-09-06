@@ -12,7 +12,6 @@ description: "BitcoinTalk administrator (handle theymos) from 2010, Bitcoin Wiki
 isSatoshi: false
 tags:
   - "theymos"
-  - "biography"
   - "bitcointalk"
   - "forum-administration"
   - "community"

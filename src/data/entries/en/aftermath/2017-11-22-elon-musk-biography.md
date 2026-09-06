@@ -15,7 +15,6 @@ callout:
   label: "Identity hypothesis"
 tags:
   - "elon-musk"
-  - "biography"
   - "tesla"
   - "denied"
 secondarySources:

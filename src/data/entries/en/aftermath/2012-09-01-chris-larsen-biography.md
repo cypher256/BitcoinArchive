@@ -13,7 +13,6 @@ description: "Twice-over fintech founder (E-Loan, Prosper) who co-founded the co
 isSatoshi: false
 tags:
   - "chris-larsen"
-  - "biography"
   - "ripple"
   - "xrp"
   - "altcoin"

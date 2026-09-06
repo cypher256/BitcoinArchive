@@ -15,7 +15,6 @@ callout:
   label: "サトシ正体仮説"
 tags:
   - "isamu-kaneko"
-  - "biography"
   - "winny"
   - "p2p"
   - "tokyo-university"

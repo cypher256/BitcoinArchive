@@ -14,7 +14,6 @@ description: "Cobra (also Cøbra): Pseudonymous operator and guardian of bitcoin
 isSatoshi: false
 tags:
   - "cobra"
-  - "biography"
   - "bitcoin-org"
   - "whitepaper"
   - "anonymity"

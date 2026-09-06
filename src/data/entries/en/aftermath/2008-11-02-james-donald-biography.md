@@ -15,7 +15,6 @@ callout:
   label: "Identity hypothesis"
 tags:
   - "james-donald"
-  - "biography"
   - "cryptography-mailing-list"
   - "whitepaper"
   - "first-response"

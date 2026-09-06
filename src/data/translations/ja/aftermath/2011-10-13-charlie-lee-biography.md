@@ -12,7 +12,6 @@ description: "ライトコインを 2011 年に公開した元 Google 技術者�
 isSatoshi: false
 tags:
   - "charlie-lee"
-  - "biography"
   - "litecoin"
   - "altcoin"
 secondarySources:

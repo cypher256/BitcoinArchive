@@ -13,7 +13,6 @@ description: "Yahoo・AOL を経て 2015 年にリップルへ COO として入�
 isSatoshi: false
 tags:
   - "brad-garlinghouse"
-  - "biography"
   - "ripple"
   - "xrp"
   - "altcoin"

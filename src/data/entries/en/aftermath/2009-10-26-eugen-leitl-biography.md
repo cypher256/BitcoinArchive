@@ -12,7 +12,6 @@ description: "German cryobiologist, transhumanist, and cypherpunk who joined the
 isSatoshi: false
 tags:
   - "eugen-leitl"
-  - "biography"
   - "bitcoin-list"
   - "cypherpunk"
   - "early-adopter"

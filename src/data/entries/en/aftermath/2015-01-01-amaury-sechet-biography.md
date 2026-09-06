@@ -13,7 +13,6 @@ description: "French software engineer. Bitcoin Core contributor from ~2015, fou
 isSatoshi: false
 tags:
   - "amaury-sechet"
-  - "biography"
   - "bitcoin-cash"
   - "bitcoin-abc"
   - "ecash"

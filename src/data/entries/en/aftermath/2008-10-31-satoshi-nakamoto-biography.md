@@ -15,7 +15,6 @@ callout:
   label: "Identity hypotheses overview"
 tags:
   - "satoshi-nakamoto"
-  - "biography"
   - "whitepaper"
   - "genesis-block"
   - "disappearance"

@@ -14,7 +14,6 @@ description: "Cobra（Cøbra）：サトシが 2008 年に登録した bitcoin.o
 isSatoshi: false
 tags:
   - "cobra"
-  - "biography"
   - "bitcoin-org"
   - "whitepaper"
   - "anonymity"

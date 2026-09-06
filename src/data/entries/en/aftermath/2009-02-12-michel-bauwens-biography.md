@@ -12,7 +12,6 @@ description: "Belgian political theorist (1958-) and founder of the P2P Foundati
 isSatoshi: false
 tags:
   - "michel-bauwens"
-  - "biography"
   - "p2p-research-list"
   - "p2p-foundation"
 secondarySources:

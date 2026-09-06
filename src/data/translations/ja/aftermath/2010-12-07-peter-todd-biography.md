@@ -15,7 +15,6 @@ callout:
   label: "サトシ正体仮説"
 tags:
   - "peter-todd"
-  - "biography"
   - "replace-by-fee"
   - "opentimestamps"
   - "bitcoin-core"

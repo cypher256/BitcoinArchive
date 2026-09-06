@@ -14,7 +14,6 @@ description: "Sergio Demian Lerner (1972–): Argentine cryptographer and blockc
 isSatoshi: false
 tags:
   - "sergio-demian-lerner"
-  - "biography"
   - "patoshi"
   - "blockchain-forensics"
   - "mining"

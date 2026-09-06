@@ -15,7 +15,6 @@ callout:
   label: "サトシ正体仮説"
 tags:
   - "nick-szabo"
-  - "biography"
   - "bit-gold"
   - "smart-contracts"
   - "precursor"

@@ -15,7 +15,6 @@ callout:
   label: "Identity hypothesis"
 tags:
   - "len-sassaman"
-  - "biography"
   - "cypherpunk"
   - "cryptography"
   - "anonymity"

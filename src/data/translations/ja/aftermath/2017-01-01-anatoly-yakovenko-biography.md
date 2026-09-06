@@ -13,7 +13,6 @@ description: "2017 年に Proof of History の論文を書きソラナを作っ�
 isSatoshi: false
 tags:
   - "anatoly-yakovenko"
-  - "biography"
   - "solana"
   - "altcoin"
   - "proof-of-stake"

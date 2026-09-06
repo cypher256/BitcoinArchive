@@ -15,7 +15,6 @@ description: "Registered dogecoin.com as a joke about altcoin proliferation, lef
 isSatoshi: false
 tags:
   - "jackson-palmer"
-  - "biography"
   - "dogecoin"
   - "altcoin"
   - "meme"

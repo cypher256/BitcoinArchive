@@ -12,7 +12,6 @@ description: "フィンランドのソフトウェア開発者（1988-）。サ�
 isSatoshi: false
 tags:
   - "martti-malmi"
-  - "biography"
   - "bitcoin-org"
   - "bitcointalk"
   - "linux-port"

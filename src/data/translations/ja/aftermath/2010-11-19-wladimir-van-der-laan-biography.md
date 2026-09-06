@@ -12,7 +12,6 @@ description: "オランダのソフトウェア開発者（laanwj）。bitcoin-q
 isSatoshi: false
 tags:
   - "wladimir-van-der-laan"
-  - "biography"
   - "bitcoin-core"
   - "lead-maintainer"
   - "bitcoin-qt"

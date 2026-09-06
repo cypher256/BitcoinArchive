@@ -12,7 +12,6 @@ description: "Chinese entrepreneur (1986–). Translated Bitcoin whitepaper into
 isSatoshi: false
 tags:
   - "jihan-wu"
-  - "biography"
   - "bitmain"
   - "asic"
   - "mining"

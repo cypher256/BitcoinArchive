@@ -15,7 +15,6 @@ callout:
   label: "サトシ正体仮説"
 tags:
   - "craig-wright"
-  - "biography"
   - "identity-claim"
   - "debunked"
   - "copa"

@@ -15,7 +15,6 @@ callout:
   label: "Identity hypothesis"
 tags:
   - "craig-wright"
-  - "biography"
   - "identity-claim"
   - "debunked"
   - "copa"

@@ -13,7 +13,6 @@ description: "Russian-Canadian programmer (1994–). Bitcoin community member fr
 isSatoshi: false
 tags:
   - "vitalik-buterin"
-  - "biography"
   - "bitcoin-magazine"
   - "ethereum"
   - "altcoin"

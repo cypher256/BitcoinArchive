@@ -13,7 +13,6 @@ description: "起業家 (1979–)。Memory Dealers 創業、初期ビットコ�
 isSatoshi: false
 tags:
   - "roger-ver"
-  - "biography"
   - "bitcoin-cash"
   - "early-investor"
   - "memory-dealers"

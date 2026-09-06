@@ -15,7 +15,6 @@ description: "Ethereum's first CEO, removed in 2014, who built Cardano on the op
 isSatoshi: false
 tags:
   - "charles-hoskinson"
-  - "biography"
   - "cardano"
   - "altcoin"
   - "proof-of-stake"

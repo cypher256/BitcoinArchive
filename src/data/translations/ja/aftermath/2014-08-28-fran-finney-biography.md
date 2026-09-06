@@ -15,7 +15,6 @@ isSatoshi: false
 tags:
   - "fran-finney"
   - "hal-finney"
-  - "biography"
   - "cryonics"
   - "alcor"
   - "caltech"

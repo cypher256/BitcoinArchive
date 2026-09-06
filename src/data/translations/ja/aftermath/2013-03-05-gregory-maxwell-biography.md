@@ -12,7 +12,6 @@ description: "Bitcoin Core 貢献者（gmaxwell）、Blockstream 共同創業、
 isSatoshi: false
 tags:
   - "gregory-maxwell"
-  - "biography"
   - "bitcoin-core"
   - "blockstream"
   - "coinjoin"

@@ -12,7 +12,6 @@ description: "Information security researcher from Austin, Texas, among the firs
 isSatoshi: false
 tags:
   - "dustin-trammell"
-  - "biography"
   - "early-miner"
   - "infosec"
   - "first-nodes"

@@ -13,7 +13,6 @@ description: "A Silicon Valley executive (Yahoo, AOL) who joined Ripple in 2015 
 isSatoshi: false
 tags:
   - "brad-garlinghouse"
-  - "biography"
   - "ripple"
   - "xrp"
   - "altcoin"

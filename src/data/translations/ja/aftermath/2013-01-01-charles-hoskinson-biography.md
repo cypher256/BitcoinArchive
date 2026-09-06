@@ -15,7 +15,6 @@ description: "イーサリアム初代 CEO でカルダノ創設者。ビット�
 isSatoshi: false
 tags:
   - "charles-hoskinson"
-  - "biography"
   - "cardano"
   - "altcoin"
   - "proof-of-stake"

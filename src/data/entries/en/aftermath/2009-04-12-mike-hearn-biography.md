@@ -12,7 +12,6 @@ description: "Software engineer at Google (Maps, Earth, Gmail anti-spam) who con
 isSatoshi: false
 tags:
   - "mike-hearn"
-  - "biography"
   - "google"
   - "bitcoinj"
   - "email-archive"

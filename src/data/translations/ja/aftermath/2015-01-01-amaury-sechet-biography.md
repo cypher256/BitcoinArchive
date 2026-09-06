@@ -13,7 +13,6 @@ description: "フランス人エンジニア。2015 年頃 Bitcoin Core 寄稿�
 isSatoshi: false
 tags:
   - "amaury-sechet"
-  - "biography"
   - "bitcoin-cash"
   - "bitcoin-abc"
   - "ecash"

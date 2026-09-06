@@ -12,7 +12,6 @@ description: "テキサス州オースティンの情報セキュリティ研究
 isSatoshi: false
 tags:
   - "dustin-trammell"
-  - "biography"
   - "early-miner"
   - "infosec"
   - "first-nodes"

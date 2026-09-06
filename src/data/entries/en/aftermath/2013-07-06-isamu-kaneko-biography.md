@@ -15,7 +15,6 @@ callout:
   label: "Identity hypothesis"
 tags:
   - "isamu-kaneko"
-  - "biography"
   - "winny"
   - "p2p"
   - "tokyo-university"

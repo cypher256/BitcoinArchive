@@ -13,7 +13,6 @@ description: "E-Loan・Prosper を経て 2012 年に XRP レジャーを作っ�
 isSatoshi: false
 tags:
   - "chris-larsen"
-  - "biography"
   - "ripple"
   - "xrp"
   - "altcoin"

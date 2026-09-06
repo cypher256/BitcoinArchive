@@ -15,7 +15,6 @@ callout:
   label: "Identity hypothesis"
 tags:
   - "adam-back"
-  - "biography"
   - "hashcash"
   - "proof-of-work"
   - "blockstream"

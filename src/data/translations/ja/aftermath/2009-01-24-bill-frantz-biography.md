@@ -14,7 +14,6 @@ description: "Periwinkle のセキュリティコンサルタント。2009年1�
 isSatoshi: false
 tags:
   - "bill-frantz"
-  - "biography"
   - "security"
   - "botnet"
   - "cryptography-mailing-list"

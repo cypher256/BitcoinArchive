@@ -15,7 +15,6 @@ callout:
   label: "サトシ正体仮説"
 tags:
   - "paul-le-roux"
-  - "biography"
   - "e4m"
   - "truecrypt-precursor"
   - "criminal-enterprise"

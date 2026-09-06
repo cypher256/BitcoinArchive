@@ -13,7 +13,6 @@ description: "Created Mt. Gox in 2010 and sold it in 2011, then co-created the X
 isSatoshi: false
 tags:
   - "jed-mccaleb"
-  - "biography"
   - "mt-gox"
   - "ripple"
   - "altcoin"

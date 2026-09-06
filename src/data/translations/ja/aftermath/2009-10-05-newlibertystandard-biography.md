@@ -12,7 +12,6 @@ description: "匿名人物。2009年10月5日に電力コストに基づく初�
 isSatoshi: false
 tags:
   - "newlibertystandard"
-  - "biography"
   - "first-exchange-rate"
   - "btc-ticker"
   - "first-transaction"

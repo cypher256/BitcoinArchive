@@ -15,7 +15,6 @@ description: "アルトコインの氾濫への冗談として dogecoin.com を�
 isSatoshi: false
 tags:
   - "jackson-palmer"
-  - "biography"
   - "dogecoin"
   - "altcoin"
   - "meme"

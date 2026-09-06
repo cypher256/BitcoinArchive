@@ -15,7 +15,6 @@ callout:
   label: "Identity hypothesis"
 tags:
   - "nick-szabo"
-  - "biography"
   - "bit-gold"
   - "smart-contracts"
   - "precursor"

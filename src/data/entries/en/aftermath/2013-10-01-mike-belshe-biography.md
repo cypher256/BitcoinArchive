@@ -13,7 +13,6 @@ description: "American engineer. Pre-Bitcoin HTTP/2 (SPDY) contributor. Co-found
 isSatoshi: false
 tags:
   - "mike-belshe"
-  - "biography"
   - "bitgo"
   - "custody"
   - "multisig"

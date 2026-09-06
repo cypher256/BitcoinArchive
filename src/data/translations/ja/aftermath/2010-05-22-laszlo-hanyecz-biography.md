@@ -12,7 +12,6 @@ description: "フロリダ州のソフトウェア開発者。macOS 移植、GPU
 isSatoshi: false
 tags:
   - "laszlo-hanyecz"
-  - "biography"
   - "bitcoin-pizza"
   - "gpu-mining"
   - "macos-port"

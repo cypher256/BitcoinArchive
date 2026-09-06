@@ -12,7 +12,6 @@ description: "Google エンジニア（Maps、Earth、Gmail スパム対策）�
 isSatoshi: false
 tags:
   - "mike-hearn"
-  - "biography"
   - "google"
   - "bitcoinj"
   - "email-archive"

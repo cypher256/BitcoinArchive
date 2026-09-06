@@ -15,7 +15,6 @@ callout:
   label: "Identity hypothesis"
 tags:
   - "dorian-nakamoto"
-  - "biography"
   - "name-match"
   - "newsweek"
   - "denied"

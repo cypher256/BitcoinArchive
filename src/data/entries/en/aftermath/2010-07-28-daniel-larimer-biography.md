@@ -12,7 +12,6 @@ description: "American software developer (bytemaster, born 1980) who joined Bit
 isSatoshi: false
 tags:
   - "daniel-larimer"
-  - "biography"
   - "bitcointalk"
   - "bitshares"
   - "steem"

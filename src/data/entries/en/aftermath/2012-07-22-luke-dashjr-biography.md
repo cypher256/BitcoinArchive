@@ -12,7 +12,6 @@ description: "American developer (luke-jr), long-tenured Bitcoin Core contributo
 isSatoshi: false
 tags:
   - "luke-dashjr"
-  - "biography"
   - "bitcoin-core"
   - "bitcoin-knots"
   - "ocean"

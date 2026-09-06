@@ -12,7 +12,6 @@ description: "アメリカのソフトウェア開発者（bytemaster、1980-）
 isSatoshi: false
 tags:
   - "daniel-larimer"
-  - "biography"
   - "bitcointalk"
   - "bitshares"
   - "steem"

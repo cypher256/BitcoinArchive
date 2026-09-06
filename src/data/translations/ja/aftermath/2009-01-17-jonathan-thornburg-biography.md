@@ -14,7 +14,6 @@ description: "インディアナ大学の天体物理学者。2009年1月17日�
 isSatoshi: false
 tags:
   - "jonathan-thornburg"
-  - "biography"
   - "regulation"
   - "botnet"
   - "skepticism"

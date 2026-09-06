@@ -12,7 +12,6 @@ description: "ドイツの低温生物学者、トランスヒューマニスト
 isSatoshi: false
 tags:
   - "eugen-leitl"
-  - "biography"
   - "bitcoin-list"
   - "cypherpunk"
   - "early-adopter"

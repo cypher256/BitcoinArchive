@@ -13,7 +13,6 @@ description: "Entrepreneur (1979–). Memory Dealers founder, early Bitcoin ange
 isSatoshi: false
 tags:
   - "roger-ver"
-  - "biography"
   - "bitcoin-cash"
   - "early-investor"
   - "memory-dealers"

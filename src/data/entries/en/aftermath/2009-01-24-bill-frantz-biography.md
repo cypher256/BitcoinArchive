@@ -14,7 +14,6 @@ description: "Security consultant at Periwinkle who joined the cryptography list
 isSatoshi: false
 tags:
   - "bill-frantz"
-  - "biography"
   - "security"
   - "botnet"
   - "cryptography-mailing-list"

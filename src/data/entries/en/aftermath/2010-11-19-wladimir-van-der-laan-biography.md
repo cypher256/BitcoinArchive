@@ -12,7 +12,6 @@ description: "Dutch developer (handle laanwj). Built the original bitcoin-qt GUI
 isSatoshi: false
 tags:
   - "wladimir-van-der-laan"
-  - "biography"
   - "bitcoin-core"
   - "lead-maintainer"
   - "bitcoin-qt"

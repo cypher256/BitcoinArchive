@@ -12,7 +12,6 @@ description: "コンピューター科学者（ハンドル名 bear / cryddit）
 isSatoshi: false
 tags:
   - "ray-dillinger"
-  - "biography"
   - "code-review"
   - "pre-release"
   - "block-size"

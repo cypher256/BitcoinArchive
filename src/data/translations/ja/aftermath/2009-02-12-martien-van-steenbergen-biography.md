@@ -12,7 +12,6 @@ description: "オランダ人アジャイルコーチ、AardRock 創業者。P2P
 isSatoshi: false
 tags:
   - "martien-van-steenbergen"
-  - "biography"
   - "p2p-research-list"
   - "supply-limit"
   - "historic"

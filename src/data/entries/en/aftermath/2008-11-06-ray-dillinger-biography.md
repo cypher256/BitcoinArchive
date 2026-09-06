@@ -12,7 +12,6 @@ description: "Computer scientist (handle bear / cryddit) who, with Hal Finney, r
 isSatoshi: false
 tags:
   - "ray-dillinger"
-  - "biography"
   - "code-review"
   - "pre-release"
   - "block-size"

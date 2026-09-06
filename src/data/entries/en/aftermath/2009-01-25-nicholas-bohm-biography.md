@@ -12,7 +12,6 @@ description: "British commercial lawyer and electronic commerce policy adviser w
 isSatoshi: false
 tags:
   - "nicholas-bohm"
-  - "biography"
   - "bitcoin-list"
   - "early-adopter"
 secondarySources:

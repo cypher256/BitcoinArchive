@@ -15,7 +15,6 @@ callout:
   label: "Identity hypothesis"
 tags:
   - "hal-finney"
-  - "biography"
   - "pgp"
   - "caltech"
   - "extropianism"

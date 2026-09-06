@@ -15,7 +15,6 @@ callout:
   label: "サトシ正体仮説"
 tags:
   - "hal-finney"
-  - "biography"
   - "pgp"
   - "caltech"
   - "extropianism"

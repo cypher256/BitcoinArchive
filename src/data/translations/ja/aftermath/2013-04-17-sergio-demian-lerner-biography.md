@@ -14,7 +14,6 @@ description: "セルジオ・デミアン・ラーナー（1972–）：アル�
 isSatoshi: false
 tags:
   - "sergio-demian-lerner"
-  - "biography"
   - "patoshi"
   - "blockchain-forensics"
   - "mining"

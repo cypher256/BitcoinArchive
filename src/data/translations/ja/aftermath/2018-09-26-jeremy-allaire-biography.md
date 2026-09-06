@@ -13,7 +13,6 @@ description: "Circle を創業し 2018 年に USDC を公開した起業家。�
 isSatoshi: false
 tags:
   - "jeremy-allaire"
-  - "biography"
   - "stablecoin"
   - "usdc"
   - "altcoin"

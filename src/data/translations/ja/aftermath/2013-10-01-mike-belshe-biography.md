@@ -13,7 +13,6 @@ description: "アメリカのエンジニア。HTTP/2 (SPDY) 寄稿後、2013 �
 isSatoshi: false
 tags:
   - "mike-belshe"
-  - "biography"
   - "bitgo"
   - "custody"
   - "multisig"

@@ -15,7 +15,6 @@ callout:
   label: "Identity hypothesis"
 tags:
   - "wei-dai"
-  - "biography"
   - "b-money"
   - "crypto-plus-plus"
   - "whitepaper"

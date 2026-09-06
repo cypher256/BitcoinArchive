@@ -12,7 +12,6 @@ description: "ソフトウェアエンジニア（1974-）、Linux カーネル�
 isSatoshi: false
 tags:
   - "jeff-garzik"
-  - "biography"
   - "bitcoin-core"
   - "linux-kernel"
   - "cpuminer"

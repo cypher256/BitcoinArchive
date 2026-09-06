@@ -15,7 +15,6 @@ callout:
   label: "Snapshot & legend"
 tags:
   - "knightmb"
-  - "biography"
   - "bitcointalk"
   - "node-operator"
   - "blockchain-snapshot"

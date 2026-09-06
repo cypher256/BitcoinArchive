@@ -12,7 +12,6 @@ description: "BitcoinTalk フォーラム管理人（theymos）、Bitcoin Wiki �
 isSatoshi: false
 tags:
   - "theymos"
-  - "biography"
   - "bitcointalk"
   - "forum-administration"
   - "community"

@@ -12,7 +12,6 @@ description: "Belgian software engineer (sipa), Bitcoin Core committer since 201
 isSatoshi: false
 tags:
   - "pieter-wuille"
-  - "biography"
   - "bitcoin-core"
   - "libsecp256k1"
   - "segwit"

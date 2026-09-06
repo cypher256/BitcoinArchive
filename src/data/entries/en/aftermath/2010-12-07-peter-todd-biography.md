@@ -15,7 +15,6 @@ callout:
   label: "Identity hypothesis"
 tags:
   - "peter-todd"
-  - "biography"
   - "replace-by-fee"
   - "opentimestamps"
   - "bitcoin-core"

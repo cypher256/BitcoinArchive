@@ -13,7 +13,6 @@ description: "Internet entrepreneur who founded Circle and launched USDC in 2018
 isSatoshi: false
 tags:
   - "jeremy-allaire"
-  - "biography"
   - "stablecoin"
   - "usdc"
   - "altcoin"

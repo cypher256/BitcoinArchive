@@ -12,7 +12,6 @@ description: "Software developer from Jacksonville, Florida who ported Bitcoin t
 isSatoshi: false
 tags:
   - "laszlo-hanyecz"
-  - "biography"
   - "bitcoin-pizza"
   - "gpu-mining"
   - "macos-port"

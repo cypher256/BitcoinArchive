@@ -15,7 +15,6 @@ callout:
   label: "サトシ正体仮説"
 tags:
   - "elon-musk"
-  - "biography"
   - "tesla"
   - "denied"
 secondarySources:

@@ -12,7 +12,6 @@ description: "ソフトウェア開発者（1966-）、Wasabi Software 創業者
 isSatoshi: false
 tags:
   - "gavin-andresen"
-  - "biography"
   - "lead-developer"
   - "bitcoin-faucet"
   - "wasabi-software"

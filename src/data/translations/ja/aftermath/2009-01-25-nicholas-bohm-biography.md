@@ -12,7 +12,6 @@ description: "2009年1月に bitcoin-list メーリングリストで Bitcoin �
 isSatoshi: false
 tags:
   - "nicholas-bohm"
-  - "biography"
   - "bitcoin-list"
   - "early-adopter"
 secondarySources:

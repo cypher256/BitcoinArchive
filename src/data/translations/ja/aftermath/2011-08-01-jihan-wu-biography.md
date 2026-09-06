@@ -12,7 +12,6 @@ description: "中国の起業家 (1986–)。2011 年ビットコイン白書中
 isSatoshi: false
 tags:
   - "jihan-wu"
-  - "biography"
   - "bitmain"
   - "asic"
   - "mining"

@@ -12,7 +12,6 @@ description: "Finnish developer (born 1988); Bitcoin's most prolific early contr
 isSatoshi: false
 tags:
   - "martti-malmi"
-  - "biography"
   - "bitcoin-org"
   - "bitcointalk"
   - "linux-port"

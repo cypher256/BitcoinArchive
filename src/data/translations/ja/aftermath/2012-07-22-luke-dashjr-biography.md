@@ -12,7 +12,6 @@ description: "ソフトウェア開発者（luke-jr）。Bitcoin Core 長期貢�
 isSatoshi: false
 tags:
   - "luke-dashjr"
-  - "biography"
   - "bitcoin-core"
   - "bitcoin-knots"
   - "ocean"

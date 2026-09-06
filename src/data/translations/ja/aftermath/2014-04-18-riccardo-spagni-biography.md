@@ -13,7 +13,6 @@ description: "モネロを長く率いた保守者。ビットコインの透明
 isSatoshi: false
 tags:
   - "riccardo-spagni"
-  - "biography"
   - "monero"
   - "privacy"
   - "altcoin"

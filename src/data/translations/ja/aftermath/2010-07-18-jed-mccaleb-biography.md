@@ -13,7 +13,6 @@ description: "2010 年にマウントゴックスを作り 2011 年に手放し�
 isSatoshi: false
 tags:
   - "jed-mccaleb"
-  - "biography"
   - "mt-gox"
   - "ripple"
   - "altcoin"

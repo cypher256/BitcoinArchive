@@ -13,7 +13,6 @@ description: "プログラマー (1994–)。2011 年にビットコイン参入
 isSatoshi: false
 tags:
   - "vitalik-buterin"
-  - "biography"
   - "bitcoin-magazine"
   - "ethereum"
   - "altcoin"

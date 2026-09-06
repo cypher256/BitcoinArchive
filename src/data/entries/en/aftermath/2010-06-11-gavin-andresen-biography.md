@@ -12,7 +12,6 @@ description: "Software developer (born 1966), founder of Wasabi Software, creato
 isSatoshi: false
 tags:
   - "gavin-andresen"
-  - "biography"
   - "lead-developer"
   - "bitcoin-faucet"
   - "wasabi-software"

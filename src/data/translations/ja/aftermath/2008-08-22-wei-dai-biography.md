@@ -15,7 +15,6 @@ callout:
   label: "サトシ正体仮説"
 tags:
   - "wei-dai"
-  - "biography"
   - "b-money"
   - "crypto-plus-plus"
   - "whitepaper"

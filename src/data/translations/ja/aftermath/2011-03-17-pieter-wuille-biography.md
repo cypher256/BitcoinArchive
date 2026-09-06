@@ -12,7 +12,6 @@ description: "ベルギーのソフトウェア技術者（sipa）。BIP-32、Se
 isSatoshi: false
 tags:
   - "pieter-wuille"
-  - "biography"
   - "bitcoin-core"
   - "libsecp256k1"
   - "segwit"

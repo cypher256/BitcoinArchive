@@ -15,7 +15,6 @@ callout:
   label: "サトシ正体仮説の総覧"
 tags:
   - "satoshi-nakamoto"
-  - "biography"
   - "whitepaper"
   - "genesis-block"
   - "disappearance"

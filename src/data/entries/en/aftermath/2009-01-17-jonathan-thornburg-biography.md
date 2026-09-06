@@ -14,7 +14,6 @@ description: "Astrophysicist at Indiana University who posted on the cryptograph
 isSatoshi: false
 tags:
   - "jonathan-thornburg"
-  - "biography"
   - "regulation"
   - "botnet"
   - "skepticism"

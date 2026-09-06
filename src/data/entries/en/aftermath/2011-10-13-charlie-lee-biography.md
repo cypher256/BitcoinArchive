@@ -12,7 +12,6 @@ description: "The Google engineer who shipped Litecoin in 2011, called Bitcoin t
 isSatoshi: false
 tags:
   - "charlie-lee"
-  - "biography"
   - "litecoin"
   - "altcoin"
 secondarySources:

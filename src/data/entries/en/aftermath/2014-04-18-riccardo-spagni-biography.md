@@ -13,7 +13,6 @@ description: "Monero's long-time lead maintainer. Argues Bitcoin's transparency 
 isSatoshi: false
 tags:
   - "riccardo-spagni"
-  - "biography"
   - "monero"
   - "privacy"
   - "altcoin"

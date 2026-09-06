@@ -12,7 +12,6 @@ description: "Pseudonymous individual who published the first BTC-USD rate on Oc
 isSatoshi: false
 tags:
   - "newlibertystandard"
-  - "biography"
   - "first-exchange-rate"
   - "btc-ticker"
   - "first-transaction"
