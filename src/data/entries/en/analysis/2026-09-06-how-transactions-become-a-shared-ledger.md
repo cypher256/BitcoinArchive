@@ -27,24 +27,7 @@ Picture a shared notebook that thousands of strangers each keep their own copy o
 
 Anyone can run Bitcoin's software on an ordinary computer; each computer that does is called a **node**. Nodes don't go through any central server — they talk directly to each other, passing along anything new they hear about, the way a piece of gossip spreads person to person rather than through an announcement board. This direct, no-middleman style of network has a name: **peer-to-peer**, usually shortened to **P2P**.
 
-```mermaid
-flowchart LR
-  subgraph P2P[Peer-to-peer Bitcoin network]
-    N1((Node))
-    N2((Node))
-    N3((Node))
-    N4((Node))
-    N5((Node))
-    N6((Node))
-    N1 --- N2
-    N1 --- N3
-    N2 --- N4
-    N3 --- N4
-    N3 --- N5
-    N4 --- N6
-    N5 --- N6
-  end
-```
+<!-- visual: gossip-network -->
 
 Every node independently checks every new page against the same set of rules before accepting it, using its own copy of the notebook to do so. Nobody has to trust any other single node — each one verifies for itself.
 

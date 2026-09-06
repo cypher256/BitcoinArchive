@@ -36,6 +36,8 @@ import { mount as mountUtxoLifecycle } from './visuals/utxo-lifecycle.js';
 import { mount as mountScriptLockFit } from './visuals/script-lock-fit.js';
 import { mount as mountPsbtRelay } from './visuals/psbt-relay.js';
 import { mount as mountLayerFoundation } from './visuals/layer-foundation.js';
+import { mount as mountGossipNetwork } from './visuals/gossip-network.js';
+import { mount as mountHonestyCheckpoints } from './visuals/honesty-checkpoints.js';
 
 type Drawer = (host: HTMLElement, lang: string) => void;
 
@@ -79,6 +81,8 @@ const VISUAL_DRAWERS: Record<string, Drawer> = {
   'script-lock-fit': mountScriptLockFit,
   'psbt-relay': mountPsbtRelay,
   'layer-foundation': mountLayerFoundation,
+  'gossip-network': mountGossipNetwork,
+  'honesty-checkpoints': mountHonestyCheckpoints,
 };
 
 (function () {

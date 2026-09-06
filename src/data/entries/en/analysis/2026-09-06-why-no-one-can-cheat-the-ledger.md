@@ -26,18 +26,7 @@ A referee-less game only stays fair if the rules enforce themselves — if break
 
 Every node — not just miners — independently checks every new block the moment it's announced. Is every signature genuine? Is every spent receipt one that genuinely hadn't been spent yet? Does the block's fingerprint actually satisfy [the lottery from the previous page](/BitcoinArchive/entries/analysis/2026-09-06-what-miners-are-actually-racing-to-do/)? Does the miner's self-payment match what the schedule allows?
 
-```mermaid
-flowchart TD
-  NB[New block announced] --> C1{Every signature genuine?}
-  C1 -->|no| REJECT[Every node rejects it]
-  C1 -->|yes| C2{Every spent receipt<br/>actually unspent until now?}
-  C2 -->|no| REJECT
-  C2 -->|yes| C3{Fingerprint wins<br/>the mining lottery?}
-  C3 -->|no| REJECT
-  C3 -->|yes| C4{Miner's self-payment<br/>matches the schedule?}
-  C4 -->|no| REJECT
-  C4 -->|yes| ACCEPT[Every node accepts it]
-```
+<!-- visual: honesty-checkpoints -->
 
 A miner who tries to slip in an invalid transaction, or pay themselves more than they're owed, doesn't get away with it quietly — they simply produce a block that every other node on the network refuses to add to its own copy. The dishonest block isn't hacked or blocked by some authority; it's just ignored, the way a forged ticket doesn't work at the door no matter how convincing it looks, because the door staff are checking against the real records themselves.
 
