@@ -14,7 +14,6 @@ participants:
 description: "コインが受信されたかどうかを確認したり、コインを送金したりするためのコマンドラインツールも少なくとも必要です。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

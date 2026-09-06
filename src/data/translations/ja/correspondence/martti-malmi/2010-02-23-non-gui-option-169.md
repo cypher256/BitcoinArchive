@@ -14,7 +14,6 @@ participants:
 description: "うまく動作している。あといくつか作業したらアップロードする。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

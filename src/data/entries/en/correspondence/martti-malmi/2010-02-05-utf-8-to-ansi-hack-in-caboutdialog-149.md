@@ -14,7 +14,6 @@ participants:
 description: "Malmi responds that the UTF-8 encoding change in the About dialog code was unintentional and likely caused by an encoding problem."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

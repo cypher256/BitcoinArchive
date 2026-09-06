@@ -14,7 +14,6 @@ participants:
 description: "マルミが自身の経験から Joomla よりも Drupal を推薦し、bitcoin.org の DNS エントリ変更と無料 SSL 証明書の取得を提案。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
 secondarySources:

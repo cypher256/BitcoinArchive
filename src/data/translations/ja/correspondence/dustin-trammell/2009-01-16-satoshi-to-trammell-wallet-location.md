@@ -14,7 +14,6 @@ participants:
 description: "サトシがウォレットの保存場所（%appdata%\\Bitcoin）を明かし、トランザクション対応 DBM がクラッシュ・停電に強いと説明、ソケット処理の修正コードを次回リリースへ追加済みと伝える。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "wallet-backup"
   - "bug-fix"
 translationStatus: complete

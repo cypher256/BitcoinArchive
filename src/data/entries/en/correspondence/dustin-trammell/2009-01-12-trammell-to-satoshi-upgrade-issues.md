@@ -14,7 +14,6 @@ participants:
 description: "Trammell reports two issues upgrading from v0.1.0 to v0.1.3: the old process wouldn't exit, and his four generated coins now show 'Generated (not accepted)'."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "bug-report"
   - "v0-1-3"
 relatedEntries:

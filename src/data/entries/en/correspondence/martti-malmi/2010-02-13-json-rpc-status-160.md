@@ -14,7 +14,6 @@ participants:
 description: "Satoshi announces uploading the JSON-RPC and command line implementation to SVN, shares example commands, and asks Malmi to test it with Python."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "json-rpc"
 secondarySources:

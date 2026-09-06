@@ -14,7 +14,6 @@ participants:
 description: "How are you doing? Haven't seen you around in a while."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

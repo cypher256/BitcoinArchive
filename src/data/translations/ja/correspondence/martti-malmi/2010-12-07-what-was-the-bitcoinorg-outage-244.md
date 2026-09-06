@@ -14,7 +14,6 @@ participants:
 description: "マルミが bitcoin.org サーバーの暗号化された root パスワードを送信し、BitcoinExchange のファイルとデータベースの新サーバーへの移行状況を報告。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

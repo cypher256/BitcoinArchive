@@ -14,7 +14,6 @@ participants:
 description: "Satoshi outlines an SEO-friendly plan for transitioning bitcoin.org to a new server, emphasizing the importance of preserving search engine history and site start date."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "website"
 secondarySources:

@@ -14,7 +14,6 @@ participants:
 description: "サトシがギャビンと共にフォーラムデータベースの外部共有に反対し、プライベートメッセージやパスワードの保護のため暗号化バックアップの保管を支持。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

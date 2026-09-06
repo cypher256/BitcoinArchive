@@ -13,7 +13,6 @@ participants:
 description: "Satoshi predicts the original software will become the industrial tool for GPU farms while client implementations drive UI innovation. He reveals the math reasoning behind the 21 million coin limit."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "bitcoinj"
   - "client-mode"
   - "encryption"

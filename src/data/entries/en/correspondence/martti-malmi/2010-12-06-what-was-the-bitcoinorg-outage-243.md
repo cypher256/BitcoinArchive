@@ -14,7 +14,6 @@ participants:
 description: "Satoshi shares his PGP public key with Malmi for secure password exchange and asks about the progress of migrating BitcoinExchange to another server."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

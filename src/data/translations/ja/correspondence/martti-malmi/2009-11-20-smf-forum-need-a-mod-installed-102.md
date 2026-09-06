@@ -14,7 +14,6 @@ participants:
 description: "bitcoin.org の情報をあなたのサイトのコンテンツと統合して、bitcoin.org ドメイン全体を切り替えることを考えています。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
 secondarySources:

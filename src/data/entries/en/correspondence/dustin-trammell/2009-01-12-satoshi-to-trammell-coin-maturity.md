@@ -14,7 +14,6 @@ participants:
 description: "Satoshi compares Bitcoin's timestamp chain to Usenet, explains the coin maturity rule (credit stays 0.00 until mature, then 50.00), and urges an upgrade to v0.1.3."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "coin-maturity"
   - "timestamp"
   - "v0-1-3"

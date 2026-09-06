@@ -14,7 +14,6 @@ participants:
 description: "トランメルが v0.1.0 から v0.1.3 への更新後、旧プロセスの残留と、コイン 4 件が「Generated (not accepted)」と表示される問題を報告する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "bug-report"
   - "v0-1-3"
 translationStatus: complete

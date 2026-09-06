@@ -14,7 +14,6 @@ participants:
 description: "Satoshi urges Malmi not to switch hosting providers during the Slashdot traffic surge, and offers to send Bitcoin donations to cover costs."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

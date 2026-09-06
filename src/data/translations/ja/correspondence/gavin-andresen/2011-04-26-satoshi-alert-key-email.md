@@ -14,7 +14,6 @@ participants:
 description: "サトシからギャビン・アンドレセン宛、最後の既知のメール。ビットコインネットワークのアラートキーを移譲し、他のことに移ったと宣言した。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "alert-key"
   - "final-communication"
   - "handover"

@@ -14,7 +14,6 @@ participants:
 description: "サトシが Drupal の Apache 設定を修正するためにマルミにサーバーのアクセス権限を要求し、mod_rewrite のクリーン URL 有効化の詳細な手順を提供。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "website"
 secondarySources:

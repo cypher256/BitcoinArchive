@@ -14,7 +14,6 @@ participants:
 description: "Satoshi explains the 'Satoshi' label came from Trammell's own address book, that transactions show the receiving address (not the sender), and recommends per-payer addresses to identify payers."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "address-book"
   - "ux"
 relatedEntries:

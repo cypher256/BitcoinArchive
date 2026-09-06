@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn suggests clearer wording for the block count display and asks about plans for a marketplace to give users something to do with mined bitcoins."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "user-interface"
   - "marketplace"
 secondarySources:

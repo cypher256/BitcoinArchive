@@ -14,7 +14,6 @@ participants:
 description: "マルミが About ダイアログの UTF-8 エンコーディング変更は意図的ではなく、エンコーディングの問題が原因だったと回答。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

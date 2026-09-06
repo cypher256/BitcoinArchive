@@ -14,7 +14,6 @@ participants:
 description: "Martti forwards to Satoshi an email exchange with US graduate student Constance J. Wells, who was referred to Bitcoin by Mark Herpel and is asking to cite Bitcoin in her thesis."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

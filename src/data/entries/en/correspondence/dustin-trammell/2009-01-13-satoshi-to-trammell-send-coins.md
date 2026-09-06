@@ -14,7 +14,6 @@ participants:
 description: "Satoshi explains the v0.1.0 thread bug that orphaned Trammell's blocks, answers the CPU-power question via SHA-256 linearity, and offers to send coins."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "mining"
   - "v0-1-3"
   - "send-to-ip"

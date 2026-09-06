@@ -14,7 +14,6 @@ participants:
 description: "サトシが bitcoin-list メーリングリストに重要なバグ修正のため Bitcoin 0.3.6 へのアップグレードを促すアラートを送信。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

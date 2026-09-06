@@ -14,7 +14,6 @@ participants:
 description: "マルミが Bitcoin を GUI なしで実行する方法について調査結果を共有し、GTK のヘッドレスサポートや wxAppConsole などのアプローチを提案する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

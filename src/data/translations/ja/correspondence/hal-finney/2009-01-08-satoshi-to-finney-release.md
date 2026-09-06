@@ -14,7 +14,6 @@ participants:
 description: "サトシからハル・フィニー宛のメール。暗号学メーリングリストへの公開発表からわずか数時間後、Bitcoin v0.1 のリリースを個人的に伝えた。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "bitcoin-launch"
   - "v0.1"
   - "hal-finney"

@@ -14,7 +14,6 @@ participants:
 description: "トランメルが「Satoshi」ラベルが自身の受信アドレスに付いていることに気づき、既定値かどうかを尋ねる。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "address-book"
   - "ux-confusion"
 translationStatus: complete

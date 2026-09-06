@@ -14,7 +14,6 @@ participants:
 description: "サトシが Berkeley DB の「Bad file descriptor」例外への回避策を持ち、エラーが発生する DB ファイルの特定を Liberty Standard に依頼。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

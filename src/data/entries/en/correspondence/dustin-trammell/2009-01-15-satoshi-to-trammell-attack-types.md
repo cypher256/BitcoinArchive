@@ -14,7 +14,6 @@ participants:
 description: "Satoshi classifies attacks as chain-of-communication vs. open-Internet, proposes a combined IP+address fix, and notes wallet encryption as a planned feature."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "security"
   - "send-to-ip"
   - "wallet-encryption"

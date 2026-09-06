@@ -14,7 +14,6 @@ participants:
 description: "マルミが新しい bitcoin.org の公開を祝福し、bitcoin.sourceforge.net を新サイトにリダイレクトしたことを確認。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "website"
 secondarySources:

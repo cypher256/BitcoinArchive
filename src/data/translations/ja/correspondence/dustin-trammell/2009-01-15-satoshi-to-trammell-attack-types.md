@@ -14,7 +14,6 @@ participants:
 description: "サトシが攻撃を二種類（通信経路 vs. オープン Internet）に分類し、IP+アドレス併用案とウォレット暗号化を示唆。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "security"
   - "send-to-ip"
   - "wallet-encryption"

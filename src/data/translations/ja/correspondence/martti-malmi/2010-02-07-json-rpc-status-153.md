@@ -14,7 +14,6 @@ participants:
 description: "サトシが boost::asio と JSON Spirit を使用した Bitcoin の JSON-RPC 実装の進捗を報告し、フォーラムの急成長にも言及。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "json-rpc"
 secondarySources:

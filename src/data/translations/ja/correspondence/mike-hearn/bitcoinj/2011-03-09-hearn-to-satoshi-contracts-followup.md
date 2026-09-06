@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンが二重支払い検証の問題を認め、publish/subscribe プロトコル機能について質問し、サトシのマージドマイニング提案の明確化を求める。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "contracts"
   - "transaction-replacement"
   - "fees"

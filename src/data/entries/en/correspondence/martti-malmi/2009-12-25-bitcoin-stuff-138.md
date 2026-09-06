@@ -14,7 +14,6 @@ participants:
 description: "Satoshi corrects his earlier memory usage estimate for Bitcoin, confirming normal usage is only 17MB after mistakenly referencing a 250,000 block test run."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

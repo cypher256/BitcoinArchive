@@ -13,7 +13,6 @@ participants:
 description: "サトシがビットコインコントラクト、シーケンス番号、nLockTime、高頻度取引チャネルについて最も詳細な説明を行う。マークルブランチ検証だけでは二重支払いを防止できない理由を説明する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "bitcoinj"
   - "spv"
   - "merkle-branch"

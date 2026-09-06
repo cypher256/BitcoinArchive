@@ -14,7 +14,6 @@ participants:
 description: "Satoshi returns after a month-long absence, congratulates Malmi on his first exchange transaction, and discusses plans for the 0.3 release and JSON API."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

@@ -14,7 +14,6 @@ participants:
 description: "トランメルがビットコイン初リリース実行後にサトシへ送った最初のメール。公開タイムスタンプサービスへのリンクを共有し、コイン成熟（生成コインのクレジットが 0.00 と表示される件）について質問した。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-adopter"
   - "mining"
   - "first-contact"

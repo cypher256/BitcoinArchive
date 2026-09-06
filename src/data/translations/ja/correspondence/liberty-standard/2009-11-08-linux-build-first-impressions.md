@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard が Linux ビルドの起動と CPU 使用を報告。既存ブロックの未取得と Gnome トレイの不安定さも指摘。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

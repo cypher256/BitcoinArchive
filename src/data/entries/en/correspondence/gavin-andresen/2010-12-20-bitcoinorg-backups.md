@@ -16,7 +16,6 @@ participants:
 description: "Gavin warns that distributing the forum database would betray registered users' trust, supports daily PGP-encrypted backups, and offers to pay for Amazon S3 storage if backups stay under a gigabyte."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "bitcoin-org"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

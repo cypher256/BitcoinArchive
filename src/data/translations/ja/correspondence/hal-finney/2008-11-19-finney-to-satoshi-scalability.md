@@ -14,7 +14,6 @@ participants:
 description: "ハル・フィニーがサトシにプレリリース版コードレビュー中に送ったメール。 P2P ノード網の将来規模と、クライアントが世界の金融取引の 100% をスケールできるかを問う。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "scalability"
   - "pre-release"
   - "code-review"

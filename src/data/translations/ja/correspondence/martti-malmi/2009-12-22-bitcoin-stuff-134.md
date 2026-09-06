@@ -14,7 +14,6 @@ participants:
 description: "サトシがマルミの取引所計画に回答し、プログラムによる Bitcoin アドレス生成、アドレスの使い回しの懸念、支払い受信の UI 改善を議論。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

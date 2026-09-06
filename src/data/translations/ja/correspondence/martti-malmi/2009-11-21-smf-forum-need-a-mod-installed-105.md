@@ -14,7 +14,6 @@ participants:
 description: "サトシが Drupal でのセットアップ続行を決定。サイトの HTTPS デフォルト化には反対し、プライバシーを重視するユーザー向けのオプション機能として SSL を提供する方針を提案。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
 secondarySources:

@@ -14,7 +14,6 @@ participants:
 description: "マルミが bitcoin.org の別サーバーへのバックアップ開始に同意し、PGP 鍵を共有。バックアップサイズは約 50MB と報告。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

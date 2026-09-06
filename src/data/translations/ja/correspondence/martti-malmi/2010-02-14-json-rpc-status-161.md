@@ -14,7 +14,6 @@ participants:
 description: "はい、Python を使っています。VPS でまだ Bitcoin を動かしていないので、JSON-RPC のテストはまだです。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "json-rpc"
 secondarySources:

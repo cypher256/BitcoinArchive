@@ -14,7 +14,6 @@ participants:
 description: "Satoshi's last known private email to Gavin Andresen. He transfers the Bitcoin network alert key and announces he has moved on to other things."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "alert-key"
   - "final-communication"
   - "handover"

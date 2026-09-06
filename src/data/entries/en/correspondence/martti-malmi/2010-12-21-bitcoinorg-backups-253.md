@@ -14,7 +14,6 @@ participants:
 description: "Malmi provides the wget command and credentials for fetching the daily GPG-encrypted bitcoin.org backup file."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

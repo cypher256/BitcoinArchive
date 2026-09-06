@@ -14,7 +14,6 @@ participants:
 description: "Satoshi asks Malmi about a code change in the About dialog's UTF-8 to ANSI conversion hack for the copyright symbol in wxWidgets."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard reports that test7 downloaded blocks much faster (about 15 seconds vs. a few minutes before), and that it crashed once with a wxMutex::TryLock assertion. No segfault yet."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

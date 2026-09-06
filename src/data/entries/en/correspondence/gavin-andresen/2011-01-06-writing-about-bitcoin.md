@@ -16,7 +16,6 @@ participants:
 description: "Gavin offers to handle press inquiries from Rainey, asks whether Satoshi wants to deal with media, and warns that ignoring journalists would let outsiders become Bitcoin's spokesperson."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "press"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

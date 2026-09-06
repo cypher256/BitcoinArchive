@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard reports the Linux build runs and uses plenty of CPU but has not downloaded prior blocks, and notes the Gnome tray sometimes loses icons."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

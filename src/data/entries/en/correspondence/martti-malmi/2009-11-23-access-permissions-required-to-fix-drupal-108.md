@@ -14,7 +14,6 @@ participants:
 description: "Satoshi requests server access permissions from Malmi to fix Drupal's Apache configuration, providing detailed instructions for enabling mod_rewrite clean URLs."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "website"
 secondarySources:

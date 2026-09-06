@@ -14,7 +14,6 @@ participants:
 description: "サトシがブロックダウンロードのボトルネックを診断し、未確認トランザクションがある状態のシャットダウンに危険はないと説明。バックグラウンド DB シャットダウンやデータディレクトリ指定法も解説。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

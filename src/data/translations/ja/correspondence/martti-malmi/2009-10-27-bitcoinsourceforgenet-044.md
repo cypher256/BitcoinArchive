@@ -14,7 +14,6 @@ participants:
 description: "サトシが SourceForge の遅さ、標準 C を使ったビットコインの移植性アプローチ、今後のプロトコル変更、Linux ポートへの関心の高まりについて議論する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

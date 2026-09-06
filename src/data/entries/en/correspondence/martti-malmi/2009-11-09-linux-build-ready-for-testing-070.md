@@ -14,7 +14,6 @@ participants:
 description: "Started very quickly when I got connected and downloaded quicker than"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

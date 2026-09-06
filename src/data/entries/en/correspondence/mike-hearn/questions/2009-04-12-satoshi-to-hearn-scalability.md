@@ -13,7 +13,6 @@ participants:
 description: "Satoshi explains Bitcoin's scalability, the transition to transaction fees, the choice of 21 million coins, and 64-bit integer values with 8 decimal places."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "scalability"
   - "transaction-fees"
   - "mining"

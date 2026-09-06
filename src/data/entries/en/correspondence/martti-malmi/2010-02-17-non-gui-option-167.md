@@ -14,7 +14,6 @@ participants:
 description: "Malmi shares research on running Bitcoin without a GUI, including GTK headless support, wxAppConsole, and IMPLEMENT_APP_NO_MAIN() approaches."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

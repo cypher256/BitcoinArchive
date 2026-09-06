@@ -14,7 +14,6 @@ participants:
 description: "トランメルが IP 送金における中間者攻撃の懸念を説明し、アドレス送金の利点を再度主張する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "security"
   - "send-to-ip"
   - "mitm"

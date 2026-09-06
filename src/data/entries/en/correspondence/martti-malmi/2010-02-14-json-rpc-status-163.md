@@ -14,7 +14,6 @@ participants:
 description: "Satoshi discusses creating separate GUI and non-GUI binaries for Bitcoin on Linux, and suggests Malmi use an Ubuntu laptop for testing instead of the VPS."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "json-rpc"
 secondarySources:

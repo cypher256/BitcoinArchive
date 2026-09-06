@@ -14,7 +14,6 @@ participants:
 description: "トランメルが、CPU 性能が最も高い 1 ノードがビットコインの大半を生成・保有してしまうことを何が妨げるのかを問う。マイニングの集中化に関する最初期の問いかけの 1 つ。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "mining"
   - "centralization"
 translationStatus: complete

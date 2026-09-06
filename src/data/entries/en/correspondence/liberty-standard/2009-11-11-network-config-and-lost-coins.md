@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard describes his network setup (VPN, secondary NIC, VirtualBox NAT), reports more lost coin packs in test2, and restarts Bitcoin as a workaround."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

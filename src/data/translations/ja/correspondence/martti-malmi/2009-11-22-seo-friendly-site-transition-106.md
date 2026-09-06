@@ -14,7 +14,6 @@ participants:
 description: "サトシが検索エンジンの履歴とサイト開始日を保持するための bitcoin.org の SEO フレンドリーなサーバー移行計画を説明。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "website"
 secondarySources:

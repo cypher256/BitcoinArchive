@@ -14,7 +14,6 @@ participants:
 description: "Satoshi CCs the exchange to bitcoin-list and Cryptography, restating his electronic-currency vision with the famous 'It might make sense just to get some in case it catches on.'"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "vision"
   - "catches-on"
   - "bitcoin-list"

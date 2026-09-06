@@ -14,7 +14,6 @@ participants:
 description: "サトシが linux-0.1.6-test3 ビルドをテスト用にメール添付で送付。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

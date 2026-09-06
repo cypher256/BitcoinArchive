@@ -14,7 +14,6 @@ participants:
 description: "Boost の mutex はここで役に立ちますか？"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

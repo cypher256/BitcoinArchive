@@ -14,7 +14,6 @@ participants:
 description: "サトシが Bitcoin ホワイトペーパーの公開は 2009年ではなく 2008年であると明確にし、Wikipedia の誤記修正を呼びかけ。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

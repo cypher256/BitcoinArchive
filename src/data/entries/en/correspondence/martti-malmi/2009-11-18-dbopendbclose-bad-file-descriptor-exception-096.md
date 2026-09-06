@@ -14,7 +14,6 @@ participants:
 description: "Satoshi confirms the DB error pattern from Malmi's logs and notices zombie socket activity, asking which test version Malmi was running."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

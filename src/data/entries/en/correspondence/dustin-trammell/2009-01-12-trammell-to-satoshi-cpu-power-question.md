@@ -14,7 +14,6 @@ participants:
 description: "Trammell asks what prevents the single node with the most CPU power from generating and retaining the majority of bitcoins — one of the earliest questions about mining centralization."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "mining"
   - "centralization"
 relatedEntries:

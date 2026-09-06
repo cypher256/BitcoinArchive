@@ -14,7 +14,6 @@ participants:
 description: "ブロックダウンロードは接続後すぐに開始し、Windows PC よりも速くダウンロードされたと報告。学校のプロジェクトのため、12月まで積極的な開発は難しいと連絡。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

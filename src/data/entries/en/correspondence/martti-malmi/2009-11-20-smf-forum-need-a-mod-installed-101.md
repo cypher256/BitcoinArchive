@@ -14,7 +14,6 @@ participants:
 description: "Malmi notes that the server's sendmail has not been configured yet, so PHP mail functionality is not available but is not needed at this point."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
 secondarySources:

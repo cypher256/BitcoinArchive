@@ -14,7 +14,6 @@ participants:
 description: "Satoshi diagnoses a zombie socket problem on Linux where dead connections caused generated blocks to be lost, and discusses potential improvements to block confirmation status display."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

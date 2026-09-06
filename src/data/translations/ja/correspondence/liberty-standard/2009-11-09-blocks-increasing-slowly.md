@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard が Linux のブロック開始まで約 30 分と報告。ポート切替の可否と ELFCLASS64 失敗も提示。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

@@ -14,7 +14,6 @@ participants:
 description: "Malmi agrees to be listed on the Project Developers page and gives permission to include his email address."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

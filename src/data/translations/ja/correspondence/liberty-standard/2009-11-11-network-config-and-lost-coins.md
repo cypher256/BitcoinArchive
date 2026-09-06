@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard が自宅ネットワーク構成 ( VPN、 NIC、 NAT ) を説明。 test2 でコインを再び失い、再起動運用を述べる。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

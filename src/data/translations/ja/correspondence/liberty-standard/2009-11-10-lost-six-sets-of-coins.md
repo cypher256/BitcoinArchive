@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard が再起動後に熟成中の 6 セット分のコインが消えたと報告。 Wine 版に戻る選択肢が魅力的に見え始めたと述べる。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

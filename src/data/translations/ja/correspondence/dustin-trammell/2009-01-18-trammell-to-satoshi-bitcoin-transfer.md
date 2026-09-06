@@ -14,7 +14,6 @@ participants:
 description: "トランメルが、会社から自宅へ自分宛に送った 100 BTC の取引詳細に「Satoshi」ラベルが表示されているのに気付き、サトシ自身が送ったのではと問い合わせる。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "address-book"
   - "ux-confusion"
 translationStatus: complete

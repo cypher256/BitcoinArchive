@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard が test7 でブロック取得が数分から約 15 秒に短縮と報告。 TryLock アサーションで 1 回クラッシュ、セグメンテーション違反は未発生。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

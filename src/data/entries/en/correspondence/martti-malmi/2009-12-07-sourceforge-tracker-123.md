@@ -14,7 +14,6 @@ participants:
 description: "Malmi copies the SourceForge logo to the local server to use as a graphic without triggering tracking, noting it complies with SF trademark policy."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

@@ -13,7 +13,6 @@ participants:
 description: "Satoshi explains why stateful script opcodes would enable chain-forking attacks, then presents a step-by-step multisig contract pattern using nLockTime for safe time-locked deposits without trust."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "contracts"
   - "multisig"
   - "nlocktime"

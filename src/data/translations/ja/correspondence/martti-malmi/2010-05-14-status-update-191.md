@@ -14,7 +14,6 @@ participants:
 description: "お元気ですか？しばらく姿を見かけませんでしたね。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

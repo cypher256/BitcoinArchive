@@ -14,7 +14,6 @@ participants:
 description: "マルミがフォーラム設定用にサトシに VPS への SSH アクセスを提供し、公開を承認。自身の Bitcoin 取引所の立ち上げへの期待も表明。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
 secondarySources:

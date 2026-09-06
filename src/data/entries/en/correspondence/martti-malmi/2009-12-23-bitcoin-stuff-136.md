@@ -14,7 +14,6 @@ participants:
 description: "Satoshi discusses the need for a headless Bitcoin daemon, command-line API design for receiving payments, and memory requirements for running on a VPS."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

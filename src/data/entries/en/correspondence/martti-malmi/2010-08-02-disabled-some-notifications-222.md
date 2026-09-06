@@ -14,7 +14,6 @@ participants:
 description: "For \"normal members\" I disabled \"Request notification on replies\" and"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

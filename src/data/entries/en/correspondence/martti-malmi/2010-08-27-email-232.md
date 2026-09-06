@@ -14,7 +14,6 @@ participants:
 description: "-------- Original Message --------"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

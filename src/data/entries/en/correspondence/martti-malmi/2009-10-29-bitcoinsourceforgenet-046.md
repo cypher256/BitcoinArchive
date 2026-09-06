@@ -14,7 +14,6 @@ participants:
 description: "Satoshi plans to convert CriticalSection code to wxCriticalSection for cross-platform compatibility and agrees it is time to start the Linux build."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

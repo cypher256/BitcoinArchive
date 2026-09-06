@@ -14,7 +14,6 @@ participants:
 description: "Wine 上のビットコイン実行は Berkeley DB 互換性問題でデータベース破損リスクがあると警告。Linux の GCC 4.3.3 が SHA-256 をより効率的に最適化する点にも言及。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

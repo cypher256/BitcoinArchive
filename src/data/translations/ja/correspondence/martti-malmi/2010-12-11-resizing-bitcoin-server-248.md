@@ -14,7 +14,6 @@ participants:
 description: "マルミが bitcoin.org のメモリー不足エラーによる mysqld の停止を報告し、サーバーの RAM を 512MB から 1024MB に増設した経緯を説明。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

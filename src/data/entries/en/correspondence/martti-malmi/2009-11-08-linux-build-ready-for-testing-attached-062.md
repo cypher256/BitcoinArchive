@@ -14,7 +14,6 @@ participants:
 description: "Satoshi sends the Bitcoin Linux 0.1.6-test1 build as an email attachment for Malmi to test."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

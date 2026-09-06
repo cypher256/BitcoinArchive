@@ -14,7 +14,6 @@ participants:
 description: "マルッティ・マルミからサトシへの最初のメッセージ。 anti-state.com フォーラムの Trickstern と自己紹介、ビットコインの開発を手伝いたいと申し出る。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "first-contact"
   - "early-contributor"
 secondarySources:

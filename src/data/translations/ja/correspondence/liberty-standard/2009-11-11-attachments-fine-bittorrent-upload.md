@@ -14,7 +14,6 @@ participants:
 description: "NewLibertyStandard が添付は届いていると確認。ブロック取得が遅かった原因は BitTorrent の上り帯域が上限まで使われていたためと判明。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

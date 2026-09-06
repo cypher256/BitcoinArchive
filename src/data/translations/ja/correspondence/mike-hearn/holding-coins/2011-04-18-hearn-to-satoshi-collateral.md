@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンが Google の不正利用対策チームでの業務について述べ、スパム防止のためにアカウントの担保としてビットコインを使用することを提案し、コインのタイムロックについて質問する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "abuse-prevention"
   - "collateral"
   - "time-lock"

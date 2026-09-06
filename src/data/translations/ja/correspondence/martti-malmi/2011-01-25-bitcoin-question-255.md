@@ -14,7 +14,6 @@ participants:
 description: "マルッティが、マーク・ハーペルの紹介で Bitcoin を知った米国大学院生コンスタンス・J・ウェルズとの、論文引用に関するやり取りをサトシに転送。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

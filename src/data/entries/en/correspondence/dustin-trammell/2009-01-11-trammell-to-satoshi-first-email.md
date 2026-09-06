@@ -14,7 +14,6 @@ participants:
 description: "Trammell's first email to Satoshi after running the Bitcoin alpha. Shares a public timestamp service link and asks about coin maturity (generated coins showing 0.00 credit)."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-adopter"
   - "mining"
   - "first-contact"

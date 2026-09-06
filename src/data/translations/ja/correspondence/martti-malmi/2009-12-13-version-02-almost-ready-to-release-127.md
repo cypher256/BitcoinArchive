@@ -14,7 +14,6 @@ participants:
 description: "今のところ問題なし。大丈夫そう"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "release"
 secondarySources:

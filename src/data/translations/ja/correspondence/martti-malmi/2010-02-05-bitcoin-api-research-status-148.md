@@ -14,7 +14,6 @@ participants:
 description: "サトシが API 調査結果を報告し、wxWidgets のスレッド制限を指摘。Bitcoin のコマンドラインインターフェースとして XML-RPC より JSON-RPC を推す方向に。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "api"
 secondarySources:

@@ -14,7 +14,6 @@ participants:
 description: "Satoshi reports that the bitcoin.org DNS change has propagated and outlines plans to update the forum link on SourceForge."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

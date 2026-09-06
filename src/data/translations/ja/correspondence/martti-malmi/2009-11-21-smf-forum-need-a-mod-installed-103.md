@@ -14,7 +14,6 @@ participants:
 description: "サトシが SSH で SMF File Manager インストール成功、Drupal テーマもアップロード。bitcoin.org の CMS に Drupal と Joomla を比較検討。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
 secondarySources:

@@ -13,7 +13,6 @@ participants:
 description: "サトシが初のクライアント専用実装への期待を表明し、オープンソースになるかどうかを尋ねる。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "bitcoinj"
   - "open-source"
 translationStatus: complete

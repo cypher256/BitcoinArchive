@@ -13,7 +13,6 @@ participants:
 description: "Satoshi gives his most detailed SPV client-mode explanation, discusses the origin of the 21 million coin limit and 10-minute block target, and confirms the block size limit is temporary."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "spv"
   - "client-mode"
   - "scalability"

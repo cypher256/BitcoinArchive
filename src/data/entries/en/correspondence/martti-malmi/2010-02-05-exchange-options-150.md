@@ -14,7 +14,6 @@ participants:
 description: "Malmi agrees to start with Liberty Reserve for the exchange and discusses European SEPA bank transfers as a longer-term payment option."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "exchange"
 secondarySources:

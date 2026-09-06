@@ -14,7 +14,6 @@ participants:
 description: "サトシが、表示されるのは送金元ではなく受信アドレスだと説明し、「Satoshi」ラベルはトランメル自身のアドレス帳の登録名だと明かして、送金者ごとにアドレスを使い分けるよう勧める。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "address-book"
   - "ux"
 translationStatus: complete

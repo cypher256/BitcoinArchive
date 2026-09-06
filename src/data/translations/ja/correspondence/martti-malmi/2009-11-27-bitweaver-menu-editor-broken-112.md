@@ -14,7 +14,6 @@ participants:
 description: "マルミがフォーラムのリンクをデータベースで直接編集し、Bitweaver メニューエディターの問題を修正したことを確認。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

@@ -14,7 +14,6 @@ participants:
 description: "ギャビンからサトシへの個人メールの断片。0.3.20 リリーススレッドで bitcoin-list 投稿権限か mailman パスワードを求める内容。#260 内の引用としてのみ現存。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "gavin-andresen"
   - "bitcoin-list"
   - "fragment"

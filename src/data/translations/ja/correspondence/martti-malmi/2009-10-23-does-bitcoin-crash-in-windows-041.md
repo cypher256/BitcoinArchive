@@ -14,7 +14,6 @@ participants:
 description: "サトシが Liberty Standard のクラッシュ報告に対し問題はビットコインではなく Wine に起因すると回答し、マルミと共に次期リリースに取り組んでいることに言及する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

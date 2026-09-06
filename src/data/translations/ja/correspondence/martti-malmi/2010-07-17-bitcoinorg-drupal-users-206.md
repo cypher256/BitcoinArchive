@@ -14,7 +14,6 @@ participants:
 description: "マルミがリビジョン追跡付きの権限で信頼できる翻訳者に Drupal アカウントを付与することに同意し、Xunie を最初の候補として提案する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
   - "website"

@@ -16,7 +16,6 @@ participants:
 description: "ギャビンは、フォーラムの DB 配布は登録者の信頼を裏切ると警告。 PGP 暗号化による日次バックアップを支持し、 1GB 未満なら Amazon S3 費用を負担すると申し出る。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "bitcoin-org"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

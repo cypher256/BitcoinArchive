@@ -13,7 +13,6 @@ participants:
 description: "Satoshi mentions implementing a marketplace feature like eBay and offers to send Mike coins for testing."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "marketplace"
   - "currency-exchange"
 secondarySources:

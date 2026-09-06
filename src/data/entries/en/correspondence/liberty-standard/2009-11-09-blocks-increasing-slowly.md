@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard reports the Linux block download took half an hour to ramp up, asks about port fallback, and shows ELFCLASS64 module load failures."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

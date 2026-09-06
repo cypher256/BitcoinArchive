@@ -14,7 +14,6 @@ participants:
 description: "マルミが Berkeley DB の「Bad file descriptor」例外の調査に役立てるため、デバッグログとデータベースログをサトシに送付。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

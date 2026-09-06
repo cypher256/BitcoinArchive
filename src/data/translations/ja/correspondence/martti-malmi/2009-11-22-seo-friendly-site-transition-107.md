@@ -14,7 +14,6 @@ participants:
 description: "了解です。11月23日から 25日まで不在にします。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "website"
 secondarySources:

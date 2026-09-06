@@ -14,7 +14,6 @@ participants:
 description: "サトシが Liberty Standard から報告された Linux ビルドのブロックダウンロード速度の遅さを調査し、マルミにも比較データを求める。代替ポートを使用できない理由も説明。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

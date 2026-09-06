@@ -14,7 +14,6 @@ participants:
 description: "サトシがビットコインの Tor 接続の課題、着信接続を受け入れるノードの不足、ウェブサイトでのポートフォワーディング手順掲載の必要性を議論する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "networking"

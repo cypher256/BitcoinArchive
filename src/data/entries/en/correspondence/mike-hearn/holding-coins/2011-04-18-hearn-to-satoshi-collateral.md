@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn describes his work on Google's abuse team and proposes using Bitcoin as collateral against accounts for spam prevention, asking about time-locking coins."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "abuse-prevention"
   - "collateral"
   - "time-lock"

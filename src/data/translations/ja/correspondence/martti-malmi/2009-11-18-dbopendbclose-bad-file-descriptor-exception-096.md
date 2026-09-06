@@ -14,7 +14,6 @@ participants:
 description: "サトシがマルミのログから DB エラーのパターンを確認し、ゾンビソケットの活動にも注目。実行していたテストバージョンを確認。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

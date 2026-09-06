@@ -14,7 +14,6 @@ participants:
 description: "Malmi reports he was likely running test version 5 and explains that he uses his laptop with hibernate between different locations, which may contribute to the socket issues."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

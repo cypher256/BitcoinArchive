@@ -14,7 +14,6 @@ participants:
 description: "サトシがクロスプラットフォーム互換性のため CriticalSection コードの wxCriticalSection への変換を計画し、Linux ビルドに着手する時期であることに同意する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

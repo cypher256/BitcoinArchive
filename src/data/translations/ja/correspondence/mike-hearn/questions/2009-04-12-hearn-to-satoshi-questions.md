@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンがサトシ・ナカモトに初めて連絡を取り、ビットコインのスケーラビリティ、マイニングハードウェア、インフレスケジュール、コインの額面について質問する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "first-contact"
   - "scalability"
   - "mining"

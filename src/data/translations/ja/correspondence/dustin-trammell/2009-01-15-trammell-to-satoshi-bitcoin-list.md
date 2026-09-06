@@ -14,7 +14,6 @@ participants:
 description: "トランメルが静的 IP を確認し、公開 CC に同意し、bitcoin-list 参加と投資目的での採掘開始を報告する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "bitcoin-list"
   - "investment"
   - "hal-finney"

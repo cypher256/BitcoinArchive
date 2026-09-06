@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンが 50 コインを返送し、「Generated (not accepted)」エラーとトランザクションにメタデータを添付するアイデアについて質問する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "transaction"
   - "mining"
   - "metadata"

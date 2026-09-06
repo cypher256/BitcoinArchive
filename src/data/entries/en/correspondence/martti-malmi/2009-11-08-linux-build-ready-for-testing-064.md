@@ -14,7 +14,6 @@ participants:
 description: "Malmi confirms that the Linux build works fine on his machine, celebrating the milestone of Bitcoin running on Linux."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

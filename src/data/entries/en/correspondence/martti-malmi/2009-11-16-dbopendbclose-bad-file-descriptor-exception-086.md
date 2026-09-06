@@ -14,7 +14,6 @@ participants:
 description: "Satoshi has an idea for a workaround for the Berkeley DB 'Bad file descriptor' exception and asks Liberty Standard which database files are triggering the errors."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

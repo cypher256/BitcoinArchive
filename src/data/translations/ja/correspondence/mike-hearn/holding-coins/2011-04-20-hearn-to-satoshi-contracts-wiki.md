@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンが Bitcoin コントラクトの Wiki ページ執筆を申し出、トランザクション置換の再有効化を質問、サトシの復帰予定を尋ね、マイニング手数料の共有地の悲劇への懸念を提起。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "contracts"
   - "time-lock"
   - "transaction-replacement"

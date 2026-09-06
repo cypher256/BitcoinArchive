@@ -14,7 +14,6 @@ participants:
 description: "Satoshi responds to Hal Finney's botnet/pay-per-send point, proposing that fake mailboxes could 'reverse-spam' spammers by harvesting their POW tokens. He also describes e-gold's 'dusting' problem."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "spam"
   - "pow-tokens"
   - "hal-finney"

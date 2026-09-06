@@ -14,7 +14,6 @@ participants:
 description: "Satoshi announces that the new Drupal-based bitcoin.org website is now live, calling it a huge improvement over the old page."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "website"
 secondarySources:

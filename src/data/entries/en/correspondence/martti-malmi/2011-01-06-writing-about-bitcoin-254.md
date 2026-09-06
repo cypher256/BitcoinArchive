@@ -14,7 +14,6 @@ participants:
 description: "Satoshi delegates press and media responsibilities to Gavin Andresen, emphasizing the importance of building a good relationship with the EFF."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

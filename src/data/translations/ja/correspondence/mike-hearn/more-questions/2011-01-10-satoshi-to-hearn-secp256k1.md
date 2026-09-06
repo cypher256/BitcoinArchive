@@ -13,7 +13,6 @@ participants:
 description: "サトシがハル・フィニーは初期の支援者であったことを確認し、ビットコインはリリース前に 2年間の開発を要したことを明かし、ECDSA 曲線と鍵サイズの選択理由を説明する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "secp256k1"
   - "ecdsa"
   - "hal-finney"

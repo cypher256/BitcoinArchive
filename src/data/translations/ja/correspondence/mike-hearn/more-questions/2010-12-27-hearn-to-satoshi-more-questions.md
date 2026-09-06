@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンが、Android 向け Java SPV 実装に取り組みながら、2100 万枚のコイン上限の由来、10分間のブロック目標、500KB のブロックサイズ制限について質問する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "spv"
   - "android"
   - "scalability"

@@ -14,7 +14,6 @@ participants:
 description: "サトシが SourceForge トラッカーを SourceForge ページに追加するが、SSL の混合コンテンツ警告とプライバシーの懸念から bitcoin.org からは削除。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

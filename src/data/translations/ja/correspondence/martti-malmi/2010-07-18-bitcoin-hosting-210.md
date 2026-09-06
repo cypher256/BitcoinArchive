@@ -14,7 +14,6 @@ participants:
 description: "サトシが Slashdot トラフィック急増中のホスティング切り替えをしないようマルミに求め、費用を賄うために Bitcoin での寄付を提案する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

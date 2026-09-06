@@ -14,7 +14,6 @@ participants:
 description: "Satoshi thanks Malmi for his contributions to the Linux build including autostart and tray features, and wishes him well on his upcoming school C++ project."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

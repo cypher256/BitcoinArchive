@@ -14,7 +14,6 @@ participants:
 description: "マルミが GPG 暗号化された bitcoin.org の日次バックアップファイルを取得するための wget コマンドと認証情報を提供。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

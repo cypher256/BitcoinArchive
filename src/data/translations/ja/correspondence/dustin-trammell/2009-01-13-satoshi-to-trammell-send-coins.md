@@ -14,7 +14,6 @@ participants:
 description: "サトシが孤立したブロックの原因を説明し、SHA-256 の線形性で CPU 性能差を解説、IP があればコインを送ると申し出る。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "mining"
   - "v0-1-3"
   - "send-to-ip"

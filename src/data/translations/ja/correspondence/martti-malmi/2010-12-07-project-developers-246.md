@@ -14,7 +14,6 @@ participants:
 description: "マルミがプロジェクト開発者ページへの掲載に同意し、メールアドレスの掲載も許可。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

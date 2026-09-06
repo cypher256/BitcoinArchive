@@ -14,7 +14,6 @@ participants:
 description: "Malmi announces he registered bitcoinexchange.com and outlines plans for a simple PayPal-based Bitcoin exchange service."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

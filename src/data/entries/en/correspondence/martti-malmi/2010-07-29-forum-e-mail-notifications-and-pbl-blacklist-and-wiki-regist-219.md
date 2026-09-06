@@ -14,7 +14,6 @@ participants:
 description: "Satoshi addresses bitcoin.org being listed on the PBL spam blacklist, enabling email verification for forum registration to prevent abuse."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
   - "wiki"

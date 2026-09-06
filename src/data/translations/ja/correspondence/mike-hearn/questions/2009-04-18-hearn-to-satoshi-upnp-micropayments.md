@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンが UPnP によるポートフォワーディングを提案し、バージョン通知について質問し、EV SSL 証明書を使用したウェブブラウザー向けマイクロペイメントシステムを提案する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "upnp"
   - "micropayments"
   - "ssl"

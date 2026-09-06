@@ -14,7 +14,6 @@ participants:
 description: "マルミが Thufir からの安価なホスティング提案を転送し、Rackspace との費用差を比較しつつ、予定されている寄付次第では Rackspace 継続も可能と述べる。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

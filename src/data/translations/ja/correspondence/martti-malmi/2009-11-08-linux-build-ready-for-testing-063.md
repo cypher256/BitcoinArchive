@@ -14,7 +14,6 @@ participants:
 description: "サトシがビットコイン Linux ビルド（バージョン 0.1.6-test1）のネットワークテスト準備完了を告知し、ダウンロードリンクを提供。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

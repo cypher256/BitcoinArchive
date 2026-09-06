@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンが Apache 2 ライセンスで BitcoinJ をオープンソース公開したと発表し、マークルブランチ検証、スクリプト言語案、トランザクション置換が無効化された理由について質問。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "bitcoinj"
   - "open-source"
   - "spv"

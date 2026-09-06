@@ -14,7 +14,6 @@ participants:
 description: "Malmi agrees with Satoshi's decision to de-emphasize anonymity on the bitcoin.org homepage and add Tor instructions instead."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

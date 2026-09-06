@@ -14,7 +14,6 @@ participants:
 description: "サトシが新しい Drupal ベースの bitcoin.org ウェブサイトの公開を発表し、以前のページからの大幅な改善と評価。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "website"
 secondarySources:

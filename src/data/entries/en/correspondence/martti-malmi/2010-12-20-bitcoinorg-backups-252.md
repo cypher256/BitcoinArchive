@@ -14,7 +14,6 @@ participants:
 description: "Malmi agrees to start backing up bitcoin.org to another server and shares his PGP key, noting the backup size is approximately 50MB."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

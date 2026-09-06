@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard describes another scenario where he wants to run two Bitcoin instances at once: upgrading by generating coins in a fresh install while letting the old install's coins mature."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

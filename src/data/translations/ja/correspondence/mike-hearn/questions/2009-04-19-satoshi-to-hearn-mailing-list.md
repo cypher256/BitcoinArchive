@@ -13,7 +13,6 @@ participants:
 description: "サトシが bitcoin-list メーリングリスト情報を提供し、マイクのマイクロペイメント方針に同意。protocol buffers ではなくカスタム形式を選んだセキュリティ上の理由を説明。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "mailing-list"
   - "micropayments"
   - "protocol-buffers"

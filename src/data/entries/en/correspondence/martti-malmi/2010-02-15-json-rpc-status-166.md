@@ -14,7 +14,6 @@ participants:
 description: "Just downloaded the python-json-rpc"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "json-rpc"
 secondarySources:

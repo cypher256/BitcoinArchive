@@ -14,7 +14,6 @@ participants:
 description: "サトシが現在の bitcoin.org ホスティングの選択を評価し、切り替えに反対するとともに、匿名の 2,000 ドル寄付の状況を確認する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

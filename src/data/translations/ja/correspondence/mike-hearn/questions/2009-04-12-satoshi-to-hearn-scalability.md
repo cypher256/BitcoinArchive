@@ -13,7 +13,6 @@ participants:
 description: "サトシがビットコインのスケーラビリティ、取引手数料への移行、2,100 万枚のコインの選択、8 桁の小数を持つ 64 ビット整数値について説明する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "scalability"
   - "transaction-fees"
   - "mining"

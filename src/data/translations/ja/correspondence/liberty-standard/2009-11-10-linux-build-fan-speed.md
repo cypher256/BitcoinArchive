@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard が Linux ビルドで順調に生成でき、データベースエラーの説明も信じていると報告。ファンが 50% から 100% に上がった点を冗談交じりにこぼす。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

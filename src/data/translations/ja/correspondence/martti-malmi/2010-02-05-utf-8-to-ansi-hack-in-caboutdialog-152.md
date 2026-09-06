@@ -14,7 +14,6 @@ participants:
 description: "サトシが About ダイアログの著作権記号の UTF-8 ハックを 16 進エスケープシーケンスに変更し、今後のエンコーディング破損を防止する修正を提案。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

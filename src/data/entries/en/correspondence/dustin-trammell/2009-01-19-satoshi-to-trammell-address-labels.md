@@ -14,7 +14,6 @@ participants:
 description: "Satoshi explains the default address label is 'Your Address', suggests the mislabeling was a UI-driven user error, and acknowledges per-payer receiving addresses have no real-world analogy."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "ux"
   - "address-book"
 relatedEntries:

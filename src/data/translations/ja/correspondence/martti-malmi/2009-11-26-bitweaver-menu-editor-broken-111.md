@@ -14,7 +14,6 @@ participants:
 description: "サトシが SourceForge の Bitweaver メニューエディターの不具合を報告し、フォーラムリンクを bitcoin.org に更新するようマルミに依頼。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

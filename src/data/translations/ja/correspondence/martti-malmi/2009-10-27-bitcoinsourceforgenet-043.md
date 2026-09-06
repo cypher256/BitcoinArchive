@@ -14,7 +14,6 @@ participants:
 description: "マルミが Bitweaver の IS_LIVE 設定と SourceForge ホスティングの遅さを説明し、Boost のクロスプラットフォーム対応スレッド・ソケットライブラリ使用をサトシに提案。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

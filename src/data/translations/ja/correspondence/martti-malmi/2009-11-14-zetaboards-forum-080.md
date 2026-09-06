@@ -14,7 +14,6 @@ participants:
 description: "サトシが Zetaboards 上に Bitcoin フォーラムを作成したことを報告。マルミに管理者アカウントを共有し、初期のサブフォーラム構成方針を説明。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
 secondarySources:

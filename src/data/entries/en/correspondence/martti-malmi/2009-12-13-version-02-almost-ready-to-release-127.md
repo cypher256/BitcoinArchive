@@ -14,7 +14,6 @@ participants:
 description: "No problems so far. Seems fine."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "release"
 secondarySources:

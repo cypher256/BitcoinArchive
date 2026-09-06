@@ -14,7 +14,6 @@ participants:
 description: "Satoshi sketches Bitcoin use cases — reward points, donation tokens, game currency, micropayments, pay-to-send email, trial subscriptions — and asks to CC the thread to bitcoin-list and Cryptography."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "use-cases"
   - "bitcoin-list"
   - "vision"

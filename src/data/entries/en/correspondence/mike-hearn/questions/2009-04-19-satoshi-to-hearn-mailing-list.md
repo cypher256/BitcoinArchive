@@ -13,7 +13,6 @@ participants:
 description: "Satoshi provides the bitcoin-list mailing list info, agrees with Mike's micropayment approach, and explains why he chose a custom serialization format over protocol buffers for security reasons."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "mailing-list"
   - "micropayments"
   - "protocol-buffers"

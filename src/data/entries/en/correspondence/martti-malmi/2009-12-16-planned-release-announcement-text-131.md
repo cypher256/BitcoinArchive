@@ -14,7 +14,6 @@ participants:
 description: "Satoshi shares the draft release announcement for Bitcoin v0.2, listing new features contributed by both himself and Malmi."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "release"
 secondarySources:

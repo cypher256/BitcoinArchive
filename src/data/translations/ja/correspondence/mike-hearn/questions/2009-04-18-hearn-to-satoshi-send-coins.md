@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンがサトシに 32.51 コインを送り、トランザクションのコメントを受信者の公開鍵で暗号化できるかどうかを質問する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "transaction"
   - "encryption"
 secondarySources:

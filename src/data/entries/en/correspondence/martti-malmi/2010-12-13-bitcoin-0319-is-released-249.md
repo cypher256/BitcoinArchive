@@ -14,7 +14,6 @@ participants:
 description: "Satoshi announces the Bitcoin 0.3.19 minor release to the mailing list, adding initial DoS protection limits and removing safe mode alerts."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "release"
 secondarySources:

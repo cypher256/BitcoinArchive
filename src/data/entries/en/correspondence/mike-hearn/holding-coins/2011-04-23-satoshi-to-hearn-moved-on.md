@@ -13,7 +13,6 @@ participants:
 description: "One of Satoshi's last known communications. He tells Mike Hearn he has moved on to other things and that Bitcoin is in good hands with Gavin and everyone."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "final-communication"
   - "transition"
   - "disappearance"

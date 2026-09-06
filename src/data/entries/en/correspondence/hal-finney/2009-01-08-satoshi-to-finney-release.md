@@ -14,7 +14,6 @@ participants:
 description: "Satoshi's private email to Hal Finney announcing the Bitcoin v0.1 release, sent hours after the public Cryptography Mailing List post."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "bitcoin-launch"
   - "v0.1"
   - "hal-finney"

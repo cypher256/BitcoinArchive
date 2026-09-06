@@ -14,7 +14,6 @@ participants:
 description: "Satoshi announces the creation of a Bitcoin forum on Zetaboards, shares admin credentials with Malmi, and outlines the initial subforum structure."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
 secondarySources:

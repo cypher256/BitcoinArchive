@@ -14,7 +14,6 @@ participants:
 description: "マルミがアムステルダムの EPCA カンファレンスからの招待に応じ、Bitcoin の代表としてギャビン・アンドレセンやブルース・ワグナーを推薦。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

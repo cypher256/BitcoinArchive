@@ -14,7 +14,6 @@ participants:
 description: "マルミがテストバージョン 5 だったと思われると報告し、ノートパソコンでハイバネート機能を使いながら異なる場所で使用している状況が、ソケット問題の一因かもしれないと説明。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

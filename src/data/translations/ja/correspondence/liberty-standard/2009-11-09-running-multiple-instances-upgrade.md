@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard が、ビットコインのアップグレード時に古い側で熟成中のコインを残しつつ新規インストールで採掘を始めたいので、多重起動が必要だと説明する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

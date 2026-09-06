@@ -14,7 +14,6 @@ participants:
 description: "I'll be afk 23.-25.11."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "website"
 secondarySources:

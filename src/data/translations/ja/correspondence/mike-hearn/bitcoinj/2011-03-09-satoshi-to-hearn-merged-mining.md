@@ -13,7 +13,6 @@ participants:
 description: "サトシが最も詳細なマージドマイニング提案を説明し、放棄された eBay スタイルのマーケットプレイス機能を明かし、代替チェーンはマイナーを共有する完全に独立したものであることを明確にする。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "merged-mining"
   - "bitdns"
   - "publish-subscribe"

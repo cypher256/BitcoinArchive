@@ -14,7 +14,6 @@ participants:
 description: "サトシが Bitcoin v0.2 のリリースアナウンス草案を共有し、自身とマルミの貢献した新機能を一覧化。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "release"
 secondarySources:

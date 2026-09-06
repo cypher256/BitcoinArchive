@@ -14,7 +14,6 @@ participants:
 description: "サトシがマルミの Python テスト成功を受けて JSON-RPC サーバーが一発で動作したことを喜び、テストに使った Python コードの共有を依頼する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "json-rpc"
 secondarySources:

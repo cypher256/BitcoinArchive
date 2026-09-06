@@ -14,7 +14,6 @@ participants:
 description: "Satoshi responds to Malmi's exchange plans, discussing programmatic Bitcoin address generation, address reuse concerns, and UI improvements for receiving payments."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンが BitcoinJ は Google のポリシーに従いオープンソースになることを確認し、testnet でのコイン送金に成功したことを報告する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "bitcoinj"
   - "open-source"
   - "google"

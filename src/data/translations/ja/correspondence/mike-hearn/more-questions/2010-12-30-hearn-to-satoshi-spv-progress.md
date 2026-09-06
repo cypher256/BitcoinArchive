@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンが Java SPV 実装の進捗を報告し、Android でのブロック保存アプローチを説明し、実装数の増加に伴うプロトコルの硬直化への懸念を提起する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "spv"
   - "android"
   - "block-chain"

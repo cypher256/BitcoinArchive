@@ -14,7 +14,6 @@ participants:
 description: "トランメルがアドレス送金は IP 送金より検証しやすいと主張し、アドレス公開切替案と TCP RST バグを報告。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "security"
   - "wallet-backup"
   - "bug-report"

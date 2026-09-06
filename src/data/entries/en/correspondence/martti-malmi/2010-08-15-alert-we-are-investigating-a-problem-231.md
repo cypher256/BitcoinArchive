@@ -14,7 +14,6 @@ participants:
 description: "Satoshi issues an urgent alert to the bitcoin-list mailing list warning users not to trust transactions after block 74638 while a critical problem is being investigated."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

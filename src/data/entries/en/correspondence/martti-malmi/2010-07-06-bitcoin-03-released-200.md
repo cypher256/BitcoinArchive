@@ -14,7 +14,6 @@ participants:
 description: "Satoshi sends the official Bitcoin 0.3 release announcement to the bitcoin-list mailing list, describing new features including daemon mode and JSON-RPC."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "release"
 secondarySources:

@@ -13,7 +13,6 @@ participants:
 description: "サトシが SPV クライアントモード実装の最も詳細な説明を提供し、2100 万枚のコイン上限と 10分間のブロック目標の由来を議論し、ブロックサイズ制限が一時的なものであることを確認する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "spv"
   - "client-mode"
   - "scalability"

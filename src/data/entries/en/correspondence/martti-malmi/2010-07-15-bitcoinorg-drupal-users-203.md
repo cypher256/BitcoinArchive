@@ -14,7 +14,6 @@ participants:
 description: "Satoshi proposes giving trusted translators Drupal user accounts on bitcoin.org so they can update translations directly, and discusses delegation of homepage maintenance."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
   - "website"

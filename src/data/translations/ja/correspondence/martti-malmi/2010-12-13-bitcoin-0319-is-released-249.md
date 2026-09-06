@@ -14,7 +14,6 @@ participants:
 description: "サトシが Bitcoin 0.3.19 マイナーリリースをメーリングリストに告知。初期的な DoS 対策の追加とセーフモードアラートの削除を実施。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "release"
 secondarySources:

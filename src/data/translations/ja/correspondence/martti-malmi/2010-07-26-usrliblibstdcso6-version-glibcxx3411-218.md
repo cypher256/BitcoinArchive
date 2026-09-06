@@ -14,7 +14,6 @@ participants:
 description: "GLIBCXX の問題の修正方法を模索し、Bitcoin 0.3.3 への早急なアップグレードを要請"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

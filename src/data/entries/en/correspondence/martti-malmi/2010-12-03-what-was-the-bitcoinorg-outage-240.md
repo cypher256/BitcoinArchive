@@ -14,7 +14,6 @@ participants:
 description: "I don't know what it was. It started working again when I rebooted it."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

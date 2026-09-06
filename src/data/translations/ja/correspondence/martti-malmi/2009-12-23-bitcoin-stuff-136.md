@@ -14,7 +14,6 @@ participants:
 description: "サトシがヘッドレス Bitcoin デーモンの必要性、支払い受信のためのコマンドライン API 設計、VPS 上での動作に必要なメモリー要件について議論。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

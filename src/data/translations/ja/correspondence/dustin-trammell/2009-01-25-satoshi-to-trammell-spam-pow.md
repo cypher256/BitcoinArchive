@@ -14,7 +14,6 @@ participants:
 description: "サトシが、偽メールボックスで POW トークンを刈り取りスパマーを「逆スパミング」する構想と、e-gold の「ダスティング」問題を語る。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "spam"
   - "pow-tokens"
   - "hal-finney"

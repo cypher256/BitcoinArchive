@@ -14,7 +14,6 @@ participants:
 description: "サトシがマルミの Bitcoin 取引所サービスに Liberty Reserve と paysafecard を交換手段として提案し、取消不可能な決済手段の利点を説明。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "exchange"
 secondarySources:

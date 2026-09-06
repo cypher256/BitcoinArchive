@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn sends 50 coins back and asks about 'Generated (not accepted)' errors and ideas for attaching metadata to transactions."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "transaction"
   - "mining"
   - "metadata"

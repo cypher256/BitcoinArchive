@@ -14,7 +14,6 @@ participants:
 description: "Trammell tells Satoshi about his proof-hashes Google Group, gives feedback on the credit field display, reports running v0.1.1 and offers to test new features."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "proof-hashes"
   - "feedback"
 relatedEntries:

@@ -14,7 +14,6 @@ participants:
 description: "MSG_DONTWAIT の追加とスレッド監視による万全の対策を含む test5 のリリース。pthread_cancel によるスレッド終了の実装とスレッドラッパーの作成について。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

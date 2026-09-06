@@ -14,7 +14,6 @@ participants:
 description: "Malmi confirms he has granted Satoshi access to all the necessary Apache configuration files on the bitcoin.org server."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "website"
 secondarySources:

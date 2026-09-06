@@ -13,7 +13,6 @@ participants:
 description: "サトシの最後の既知のコミュニケーションの一つ。マイク・ハーンに他のことに取り組むことにしたこと、ギャビンたちに任せれば安心だと伝える。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "final-communication"
   - "transition"
   - "disappearance"

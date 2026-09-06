@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard がブロック数が増えない件で debug.log を添付。 Gnome トレイ検査法と自身の運用も説明。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

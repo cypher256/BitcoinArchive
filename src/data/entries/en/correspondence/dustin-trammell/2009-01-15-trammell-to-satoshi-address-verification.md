@@ -14,7 +14,6 @@ participants:
 description: "Trammell argues Bitcoin addresses beat IP-based sending because they can be cross-verified across channels. Proposes an address-advertisement toggle and reports a TCP RST bug on close."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "security"
   - "wallet-backup"
   - "bug-report"

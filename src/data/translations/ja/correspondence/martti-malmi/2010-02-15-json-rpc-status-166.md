@@ -14,7 +14,6 @@ participants:
 description: "python-json-rpc をダウンロードして、Python インタプリタで直接テストしました。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "json-rpc"
 secondarySources:

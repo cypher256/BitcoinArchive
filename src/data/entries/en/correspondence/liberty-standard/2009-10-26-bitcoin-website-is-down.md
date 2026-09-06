@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard notifies Satoshi that the Bitcoin website is down, showing a bitweaver TEST mode warning instead of the normal page."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

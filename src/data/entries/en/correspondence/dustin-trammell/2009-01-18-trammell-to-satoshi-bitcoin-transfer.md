@@ -14,7 +14,6 @@ participants:
 description: "Trammell reports confusion about a 100 BTC transfer between his own two Bitcoin instances — the transaction details showed 'Satoshi' as a label, leading him to wonder if Satoshi had sent the coins."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "address-book"
   - "ux-confusion"
 relatedEntries:

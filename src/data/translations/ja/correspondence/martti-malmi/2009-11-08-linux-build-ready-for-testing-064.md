@@ -14,7 +14,6 @@ participants:
 description: "マルミが Linux ビルドの正常動作を確認し、ビットコインが Linux で動作するという重要なマイルストーンの達成を祝福。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

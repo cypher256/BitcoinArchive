@@ -14,7 +14,6 @@ participants:
 description: "サトシが wxWidgets の著作権記号に関する About ダイアログの UTF-8 から ANSI への変換ハックのコード変更についてマルミに質問。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

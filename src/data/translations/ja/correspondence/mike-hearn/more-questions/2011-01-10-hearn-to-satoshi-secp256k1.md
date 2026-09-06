@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンが secp256k1 曲線のセキュリティに関するフォーラムの議論をサトシに紹介し、ハル・フィニーのリスクプロファイルに関する懸念を指摘する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "secp256k1"
   - "ecdsa"
   - "hal-finney"

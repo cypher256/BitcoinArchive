@@ -14,7 +14,6 @@ participants:
 description: "I added MSG_DONTWAIT to the send and recv calls in case they forgot the socket is non-blocking."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

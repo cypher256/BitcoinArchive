@@ -14,7 +14,6 @@ participants:
 description: "Fragment of Gavin's private message to Satoshi on the 0.3.20 release thread, asking for bitcoin-list posting permission or the encrypted mailman password. Surviving text only — reply-quote in #260."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "gavin-andresen"
   - "bitcoin-list"
   - "fragment"

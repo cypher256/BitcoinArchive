@@ -14,7 +14,6 @@ participants:
 description: "Malmi agrees not to switch hosting and provides a Bitcoin address for donations to help cover bitcoin.org server costs."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

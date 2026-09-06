@@ -14,7 +14,6 @@ participants:
 description: "サトシが Bitcoin v0.2 の公式リリースアナウンスをマルミに転送。Linux サポート、マルチプロセッサーマイニング、TOR プロキシ対応を含む。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "release"
 secondarySources:

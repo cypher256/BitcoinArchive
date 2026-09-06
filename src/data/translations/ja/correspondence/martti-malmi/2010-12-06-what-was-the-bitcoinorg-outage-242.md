@@ -14,7 +14,6 @@ participants:
 description: "マルミが PGP 暗号化でサーバーパスワードを送る準備ができたことを伝え、ギャビン・アンドレセンへのサーバー管理の委任について同意。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

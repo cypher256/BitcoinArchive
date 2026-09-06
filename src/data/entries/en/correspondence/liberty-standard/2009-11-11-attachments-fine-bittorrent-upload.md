@@ -14,7 +14,6 @@ participants:
 description: "NewLibertyStandard confirms he has been receiving Satoshi's attachments fine and discovers his BitTorrent client was uploading at the limit he had set, which had been throttling the block download."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

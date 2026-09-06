@@ -14,7 +14,6 @@ participants:
 description: "I'd also need at least the command line tools to check if coins have"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

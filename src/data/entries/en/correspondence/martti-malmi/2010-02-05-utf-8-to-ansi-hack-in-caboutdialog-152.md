@@ -14,7 +14,6 @@ participants:
 description: "Satoshi proposes using a hex escape sequence to fix the UTF-8 copyright symbol hack in the About dialog, preventing future encoding breakage."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

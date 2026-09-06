@@ -14,7 +14,6 @@ participants:
 description: "Malmi agrees to give trusted translators Drupal accounts with revision-tracking permissions, suggesting Xunie as the first candidate."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
   - "website"

@@ -14,7 +14,6 @@ participants:
 description: "Satoshi forwards reports from Eugen Leitl and Liberty Standard about bitcoin.sourceforge.net being down, with Bitweaver showing a TEST mode error message."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

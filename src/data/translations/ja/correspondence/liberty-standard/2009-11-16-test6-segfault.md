@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard が SSD カードに戻して test 6 を起動した時にセグメンテーション違反が発生したと報告。動画視聴中は 1 コア設定だった。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

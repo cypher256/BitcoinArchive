@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンがサトシに、Electronic Funds Transfer Act がビットコインに適用される可能性があるか、またチャージバックができないことが違法となるリスクがあるかを質問する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "chargeback"
   - "legal"
   - "regulation"

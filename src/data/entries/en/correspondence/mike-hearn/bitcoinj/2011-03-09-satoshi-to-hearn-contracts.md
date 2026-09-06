@@ -13,7 +13,6 @@ participants:
 description: "Satoshi's most detailed explanation of Bitcoin contracts, sequence numbers, nLockTime, and high-frequency trading channels. He explains why merkle branch verification alone cannot stop double-spends."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "bitcoinj"
   - "spv"
   - "merkle-branch"

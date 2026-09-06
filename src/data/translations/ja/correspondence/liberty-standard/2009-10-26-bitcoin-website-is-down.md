@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard が Satoshi に対し、ビットコインの公式サイトが落ちており、通常ページの代わりに bitweaver の TEST モード警告が表示されていると通知する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

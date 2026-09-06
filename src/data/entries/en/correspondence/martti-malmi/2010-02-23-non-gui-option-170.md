@@ -14,7 +14,6 @@ participants:
 description: "That seems good, I don't know of any standards about it."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

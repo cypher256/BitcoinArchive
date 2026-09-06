@@ -14,7 +14,6 @@ participants:
 description: "Wish I could figure out how to fix that.  What version of GLIBCXX does"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

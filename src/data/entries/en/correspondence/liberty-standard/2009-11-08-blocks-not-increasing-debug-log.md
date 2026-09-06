@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard confirms blocks in the status bar are not increasing, attaches a debug.log, suggests a tray-icon test in Gnome, and explains his preferred minimize-to-tray and close-to-tray workflow."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

@@ -14,7 +14,6 @@ participants:
 description: "Satoshi reports progress on Bitcoin's JSON-RPC implementation using boost::asio and JSON Spirit, and notes the forum's rapid growth."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "json-rpc"
 secondarySources:

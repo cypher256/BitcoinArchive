@@ -14,7 +14,6 @@ participants:
 description: "The VPS has 320MB RAM, 50MB of which is currently free. There's also"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

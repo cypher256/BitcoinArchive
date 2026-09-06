@@ -14,7 +14,6 @@ participants:
 description: "Trammell realizes the 'Satoshi' label sits on his own receiving address, confirms multiple addresses at home, and asks whether 'Satoshi' is a default."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "address-book"
   - "ux-confusion"
 relatedEntries:

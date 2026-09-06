@@ -13,7 +13,6 @@ participants:
 description: "サトシがコインを返送し、EC-DSA は RSA のようにメッセージを暗号化できないため、トランザクションコメントが不可能であることを説明する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "transaction"
   - "ecdsa"
   - "encryption"

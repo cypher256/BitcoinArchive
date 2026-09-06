@@ -14,7 +14,6 @@ participants:
 description: "サトシがビットコイン Linux 0.1.6-test1 ビルドをメール添付でマルミに送付し、テストを依頼。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

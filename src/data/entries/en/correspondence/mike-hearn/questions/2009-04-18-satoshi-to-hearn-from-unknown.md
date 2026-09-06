@@ -13,7 +13,6 @@ participants:
 description: "Satoshi explains why transactions show 'from: unknown' and that 'Generated (not accepted)' happens when two nodes find a block simultaneously."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "transaction"
   - "generated-not-accepted"
   - "p2p"

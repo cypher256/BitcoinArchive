@@ -14,7 +14,6 @@ participants:
 description: "Martti Malmi's first message to Satoshi: introduces himself as Trickstern from the anti-state.com forum, offers to help with Bitcoin development."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "first-contact"
   - "early-contributor"
 secondarySources:

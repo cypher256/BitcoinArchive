@@ -14,7 +14,6 @@ participants:
 description: "Satoshi sends an alert to the bitcoin-list mailing list urging users to upgrade to Bitcoin 0.3.6 for an important bugfix."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

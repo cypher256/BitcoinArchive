@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンが Mac 上の Wine でビットコインをテストしたことを報告し、ブロック数、マイクロペイメントの承認時間、プルーフ・オブ・ワークの調整、難易度調整について質問する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "wine"
   - "macos"
   - "block-chain"

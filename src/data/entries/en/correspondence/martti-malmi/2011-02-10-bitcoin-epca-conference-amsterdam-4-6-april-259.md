@@ -14,7 +14,6 @@ participants:
 description: "Thanks for contacting and sorry for the late response. EPCA seems very"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

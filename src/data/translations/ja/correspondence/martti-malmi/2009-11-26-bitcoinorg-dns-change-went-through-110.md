@@ -14,7 +14,6 @@ participants:
 description: "サトシが bitcoin.org の DNS 変更が反映されたことを報告し、SourceForge のフォーラムリンク更新計画を説明。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

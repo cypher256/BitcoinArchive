@@ -14,7 +14,6 @@ participants:
 description: "サトシが Bitcoin 0.3.18 のリリースをメーリングリストに告知。wallet.dat の互換性修正とギャビンのアカウントベース JSON-RPC コマンドを搭載。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "release"
 secondarySources:

@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard reports a segmentation fault in Bitcoin test6 with Db::open in the log, after moving the data directory back to his SSD card and watching a 720p movie under single-core CPU setting."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

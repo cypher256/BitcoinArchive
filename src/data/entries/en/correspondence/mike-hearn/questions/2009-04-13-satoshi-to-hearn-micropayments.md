@@ -13,7 +13,6 @@ participants:
 description: "Satoshi explains micropayments can be safely accepted immediately, describes how merchants detect double-spends, and clarifies that proof-of-work difficulty is hardcoded rather than transmitted."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "micropayments"
   - "zero-conf"
   - "double-spend"

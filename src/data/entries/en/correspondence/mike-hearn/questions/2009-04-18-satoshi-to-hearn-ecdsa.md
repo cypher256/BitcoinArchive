@@ -13,7 +13,6 @@ participants:
 description: "Satoshi sends coins back and explains why EC-DSA cannot encrypt messages like RSA, preventing transaction comments."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "transaction"
   - "ecdsa"
   - "encryption"

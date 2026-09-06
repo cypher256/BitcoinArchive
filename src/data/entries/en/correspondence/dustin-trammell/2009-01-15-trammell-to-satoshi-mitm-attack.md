@@ -14,7 +14,6 @@ participants:
 description: "Trammell's detailed security analysis of Bitcoin's send-to-IP feature, identifying MITM vulnerabilities including ARP poisoning and ISP-level interception. Recommends always using Bitcoin addresses."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "security"
   - "send-to-ip"
   - "mitm"

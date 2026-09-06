@@ -14,7 +14,6 @@ participants:
 description: "マルミがサーバーの sendmail が未設定のため PHP メール機能が動作しないことを補足するが、現時点では不要と説明。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
 secondarySources:

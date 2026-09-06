@@ -14,7 +14,6 @@ participants:
 description: "オイゲン・ライトルと Liberty Standard からの bitcoin.sourceforge.net ダウン報告をサトシが転送、Bitweaver の TEST モードエラー問題も伝達。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

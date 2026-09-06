@@ -14,7 +14,6 @@ participants:
 description: "サトシが Linux ビルドの自動起動やトレイ機能などへのマルミの貢献に感謝し、今後の学校の C++プロジェクトの成功を祈る。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

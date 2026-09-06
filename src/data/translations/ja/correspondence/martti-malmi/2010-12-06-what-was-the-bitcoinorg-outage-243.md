@@ -14,7 +14,6 @@ participants:
 description: "サトシが安全なパスワード交換のため PGP 公開鍵をマルミと共有し、BitcoinExchange の別サーバーへの移行進捗を確認。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

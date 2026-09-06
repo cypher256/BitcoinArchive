@@ -14,7 +14,6 @@ participants:
 description: "マルミが bitcoinexchange.com ドメインを登録したことを報告し、PayPal ベースのシンプルな Bitcoin 取引所サービスの構想を説明。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

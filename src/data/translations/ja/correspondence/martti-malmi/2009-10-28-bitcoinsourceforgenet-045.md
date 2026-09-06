@@ -14,7 +14,6 @@ participants:
 description: "現在のバージョンの Bitweaver では不可能です。Bitweaver の wiki とフォーラムパッケージはそれほど高度ではありません。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

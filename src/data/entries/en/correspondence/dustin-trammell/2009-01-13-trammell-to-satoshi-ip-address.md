@@ -14,7 +14,6 @@ participants:
 description: "Trammell provides his IP address for Satoshi to send coins, suggests posting the block chain every 10k blocks as documentation, and grasps the mining lottery via a roulette-wheel analogy."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "send-to-ip"
   - "mining"
 relatedEntries:

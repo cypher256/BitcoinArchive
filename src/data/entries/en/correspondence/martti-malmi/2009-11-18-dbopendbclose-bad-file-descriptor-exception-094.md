@@ -14,7 +14,6 @@ participants:
 description: "Malmi sends his debug and database logs to Satoshi to help investigate the Berkeley DB 'Bad file descriptor' exception."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

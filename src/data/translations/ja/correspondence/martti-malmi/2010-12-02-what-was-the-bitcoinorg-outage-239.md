@@ -14,7 +14,6 @@ participants:
 description: "サトシが bitcoin.org の障害原因をマルミに尋ね、ミラーバックアップの導入を含むバックアップ体制について確認。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

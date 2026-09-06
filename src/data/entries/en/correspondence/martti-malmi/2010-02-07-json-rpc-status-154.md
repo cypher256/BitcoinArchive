@@ -14,7 +14,6 @@ participants:
 description: "Malmi responds positively to the JSON-RPC progress and announces he will begin studying the Liberty Reserve API for the exchange service."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "json-rpc"
 secondarySources:

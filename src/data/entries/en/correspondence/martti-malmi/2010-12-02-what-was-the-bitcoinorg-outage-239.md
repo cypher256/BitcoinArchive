@@ -14,7 +14,6 @@ participants:
 description: "Satoshi asks Malmi about the cause of a bitcoin.org outage and inquires about backup procedures, suggesting a mirror backup arrangement."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

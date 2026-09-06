@@ -14,7 +14,6 @@ participants:
 description: "サトシが Linux 上で Bitcoin の GUI 版と非 GUI 版のバイナリを分離する方針を議論し、マルミに VPS ではなく Ubuntu ノート PC でのテストを提案する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "json-rpc"
 secondarySources:

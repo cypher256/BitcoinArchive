@@ -14,7 +14,6 @@ participants:
 description: "Satoshi reveals the wallet directory (%appdata%\\Bitcoin), notes the underlying transactional DBM is safe from crash/power loss, and confirms socket cleanup code is already added for the next release."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "wallet-backup"
   - "bug-fix"
 relatedEntries:

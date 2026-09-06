@@ -14,7 +14,6 @@ participants:
 description: "Malmi provides Satoshi with SSH access to the VPS for forum configuration, approves going live, and expresses excitement about launching his own Bitcoin exchange."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
 secondarySources:

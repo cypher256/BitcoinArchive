@@ -14,7 +14,6 @@ participants:
 description: "マルミがコミュニティ提案の bitcoin.org ミラーリング方法を共有し、信頼できるメンバーへのデータベース共有か PGP 暗号化バックアップかを検討。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
 secondarySources:

@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard reports that, after restarting Bitcoin on Satoshi's reassurance, six sets of maturing coins vanished, and he is reconsidering the Wine version."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

@@ -14,7 +14,6 @@ participants:
 description: "サトシがビットコインの用途を列挙する。報奨ポイント、寄付トークン、ゲーム通貨、マイクロペイメント、受信課金メール、お試し購読。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "use-cases"
   - "bitcoin-list"
   - "vision"

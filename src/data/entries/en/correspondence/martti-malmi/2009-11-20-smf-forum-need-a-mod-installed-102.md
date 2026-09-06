@@ -14,7 +14,6 @@ participants:
 description: "I'm thinking of merging the bitcoin.org information with your site"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
 secondarySources:

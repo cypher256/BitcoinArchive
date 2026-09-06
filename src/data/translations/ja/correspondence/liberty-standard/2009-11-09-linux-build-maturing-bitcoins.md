@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard が Linux ビルド貢献者を称え、ビットコインの熟成開始を報告。当面 Linux クライアントを継続使用する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

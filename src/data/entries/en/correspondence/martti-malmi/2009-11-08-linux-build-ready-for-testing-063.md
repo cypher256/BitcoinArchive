@@ -14,7 +14,6 @@ participants:
 description: "Satoshi announces that the Bitcoin Linux build version 0.1.6-test1 is ready for network testing and provides a download link."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

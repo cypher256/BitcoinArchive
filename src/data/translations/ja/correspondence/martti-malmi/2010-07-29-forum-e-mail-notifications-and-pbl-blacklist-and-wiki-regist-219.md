@@ -14,7 +14,6 @@ participants:
 description: "サトシが bitcoin.org の PBL スパムブラックリスト登録問題に対処し、悪用防止のためフォーラム登録時のメール認証を有効化。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
   - "wiki"

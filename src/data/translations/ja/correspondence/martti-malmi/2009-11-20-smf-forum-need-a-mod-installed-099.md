@@ -14,7 +14,6 @@ participants:
 description: "サトシが SMF フォーラムの CSS 調整を進め、MOD インストールの協力を要請。Liberty Standard が初の Bitcoin 販売を行ったことも共有。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "forum"
 secondarySources:

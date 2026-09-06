@@ -14,7 +14,6 @@ participants:
     slug: "satoshi-nakamoto"
 description: "Andresen replies to Satoshi's alert-key email, accepts the key, and discloses that In-Q-Tel has invited him to present Bitcoin to US intelligence agencies. Satoshi never replied."
 tags:
-  - "correspondence"
   - "alert-key"
   - "cia"
   - "iqt"

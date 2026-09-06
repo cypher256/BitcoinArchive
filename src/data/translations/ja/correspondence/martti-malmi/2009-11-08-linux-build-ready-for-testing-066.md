@@ -14,7 +14,6 @@ participants:
 description: "サトシが Liberty Standard の Linux テストにおける debug.log を分析し、ブロックダウンロードの問題を調査。トレイ最小化と閉じるオプションの分離にも同意。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
   - "development"

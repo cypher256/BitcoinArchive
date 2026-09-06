@@ -14,7 +14,6 @@ participants:
 description: "Satoshi asks Malmi if he can add him to the Project Developers list on the bitcoin.org Contact page, noting his code contributions."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

@@ -13,7 +13,6 @@ participants:
 description: "マイク・ハーンがサトシに感謝し、ハル・フィニーが Tx0 の scriptSig にマークルルートを格納するアプローチを正しく推測していたことを指摘する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "merged-mining"
   - "hal-finney"
 secondarySources:

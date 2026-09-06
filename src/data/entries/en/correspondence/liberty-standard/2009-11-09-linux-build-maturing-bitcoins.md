@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard thanks everyone who contributed to the Linux build, reports it has started maturing bitcoins, and decides to keep running the Linux client for the time being."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

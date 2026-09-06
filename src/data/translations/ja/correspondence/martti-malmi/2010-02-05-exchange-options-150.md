@@ -14,7 +14,6 @@ participants:
 description: "マルミが取引所をまず Liberty Reserve で開始することに同意し、長期的な決済オプションとしてヨーロッパの SEPA 銀行振込について議論。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "exchange"
 secondarySources:

@@ -14,7 +14,6 @@ participants:
 description: "サトシが bitcoin-list メーリングリストに緊急アラートを発し、重大な問題の調査中ブロック 74638 以降のトランザクションを信用しないよう警告。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

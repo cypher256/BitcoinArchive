@@ -14,7 +14,6 @@ participants:
 description: "サトシがビットコインのタイムスタンプ連鎖を Usenet になぞらえ、コイン成熟ルール（0.00 → 50.00）を解説、v0.1.3 への更新を促す。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "coin-maturity"
   - "timestamp"
   - "v0-1-3"

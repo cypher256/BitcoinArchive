@@ -14,7 +14,6 @@ participants:
 description: "It's not possible with the current version of Bitweaver. Bitweaver's"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

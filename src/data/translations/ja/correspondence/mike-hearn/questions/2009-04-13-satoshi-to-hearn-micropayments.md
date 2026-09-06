@@ -13,7 +13,6 @@ participants:
 description: "サトシがマイクロペイメントは即座に安全に受け入れられると説明、マーチャントが二重支払い攻撃を検出する方法を解説、難易度は伝達ではなくハードコードされていると明確化。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "micropayments"
   - "zero-conf"
   - "double-spend"

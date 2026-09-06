@@ -14,7 +14,6 @@ participants:
 description: "Satoshi clarifies that the Bitcoin whitepaper was published in 2008, not 2009, and calls for someone to correct the error on Wikipedia."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

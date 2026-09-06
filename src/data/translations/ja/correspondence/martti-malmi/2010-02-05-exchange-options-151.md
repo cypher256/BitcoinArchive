@@ -14,7 +14,6 @@ participants:
 description: "サトシが Bitcoin の入手の容易さがマイクロペイメントのエコシステムを立ち上げる可能性を説明し、紙幣と金の歴史的関係になぞらえて議論。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "exchange"
 secondarySources:

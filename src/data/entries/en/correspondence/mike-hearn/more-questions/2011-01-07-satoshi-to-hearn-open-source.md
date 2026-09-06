@@ -13,7 +13,6 @@ participants:
 description: "Satoshi expresses excitement about the first client-only implementation and asks whether it will be open source."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "bitcoinj"
   - "open-source"
 secondarySources:

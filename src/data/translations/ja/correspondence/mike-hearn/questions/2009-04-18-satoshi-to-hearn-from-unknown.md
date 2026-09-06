@@ -13,7 +13,6 @@ participants:
 description: "サトシが、トランザクションが「from: unknown」と表示される理由と、「Generated (not accepted)」が 2 ノード同時のブロック発見時に発生することを説明。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "transaction"
   - "generated-not-accepted"
   - "p2p"

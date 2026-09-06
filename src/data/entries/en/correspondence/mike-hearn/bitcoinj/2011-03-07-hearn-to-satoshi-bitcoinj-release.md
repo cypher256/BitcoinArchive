@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn announces the open-source release of BitcoinJ under the Apache 2 license, and asks about merkle branch verification, scripting language ideas, and why transaction replacement was disabled."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "bitcoinj"
   - "open-source"
   - "spv"

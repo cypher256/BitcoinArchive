@@ -14,7 +14,6 @@ participants:
 description: "Yes, using Python. I didn't test the JSON-RPC yet as I don't have"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "json-rpc"
 secondarySources:

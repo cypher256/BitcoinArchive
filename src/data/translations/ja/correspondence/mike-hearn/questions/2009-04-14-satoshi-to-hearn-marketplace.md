@@ -13,7 +13,6 @@ participants:
 description: "サトシが eBay のようなマーケットプレイス機能の実装について言及し、テスト用にマイクにコインを送ることを申し出る。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "marketplace"
   - "currency-exchange"
 secondarySources:

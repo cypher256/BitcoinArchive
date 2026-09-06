@@ -14,7 +14,6 @@ participants:
 description: "Good, that gives them a little sense of ownership and responsibility."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

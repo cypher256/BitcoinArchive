@@ -14,7 +14,6 @@ participants:
 description: "サトシが wxApp::Initialize のサブクラス化でディスプレイなしでの実行に成功したことを報告し、-daemon と-server コマンドラインスイッチの命名について意見を求める。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

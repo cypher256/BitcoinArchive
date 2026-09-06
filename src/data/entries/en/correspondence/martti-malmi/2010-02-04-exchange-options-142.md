@@ -14,7 +14,6 @@ participants:
 description: "Satoshi advises Malmi to be cautious with payment processors for the exchange, suggesting creative positioning strategies and warning against credit card refunds."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "exchange"
 secondarySources:

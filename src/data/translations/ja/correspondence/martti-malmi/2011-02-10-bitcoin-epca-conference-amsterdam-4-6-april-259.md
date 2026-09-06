@@ -14,7 +14,6 @@ participants:
 description: "マルッティが EPCA カンファレンスの招待に返信し、担当者の手配を約束"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

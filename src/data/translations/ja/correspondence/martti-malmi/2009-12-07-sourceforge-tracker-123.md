@@ -14,7 +14,6 @@ participants:
 description: "マルミがトラッキングを回避するため SourceForge のロゴをローカルサーバーにコピーし、SF の商標ポリシーに準拠していることを確認。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

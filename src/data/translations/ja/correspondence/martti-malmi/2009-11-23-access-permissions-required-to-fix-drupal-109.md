@@ -14,7 +14,6 @@ participants:
 description: "マルミが bitcoin.org サーバー上の必要な Apache 設定ファイルへのアクセス権限をサトシに付与したことを確認。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "website"
 secondarySources:

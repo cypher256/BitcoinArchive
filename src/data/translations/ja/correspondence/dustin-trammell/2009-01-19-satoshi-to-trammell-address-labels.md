@@ -14,7 +14,6 @@ participants:
 description: "サトシが初期アドレスのラベルは「Your Address」だと説明し、誤ラベルは UI の分かりにくさによる操作ミスだと述べ、支払い元ごとの受取アドレスという発想には現実世界に類例がないと認める。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "ux"
   - "address-book"
 translationStatus: complete

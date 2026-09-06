@@ -14,7 +14,6 @@ participants:
 description: "マルミがホスティング切り替えをしないことに同意し、bitcoin.org サーバー費用を賄うための Bitcoin 寄付用アドレスを提供する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

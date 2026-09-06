@@ -13,7 +13,6 @@ participants:
 description: "Mike Hearn reports progress on his Java SPV implementation, describes his approach to block storage on Android, and raises concerns about protocol ossification as the number of implementations grows."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "spv"
   - "android"
   - "block-chain"

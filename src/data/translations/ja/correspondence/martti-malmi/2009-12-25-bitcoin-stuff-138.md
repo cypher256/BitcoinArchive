@@ -14,7 +14,6 @@ participants:
 description: "サトシが以前のメモリー使用量の見積もりを修正。25 万ブロックのテスト実行を誤って参照していたことを認め、通常使用量はわずか 17MB と確認。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

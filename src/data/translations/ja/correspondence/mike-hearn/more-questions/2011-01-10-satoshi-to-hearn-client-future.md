@@ -13,7 +13,6 @@ participants:
 description: "サトシは元のソフトウェアが GPU ファーム向けの産業用ツールとなる一方、クライアント実装が UI イノベーションを推進すると予測する。2100 万枚のコイン上限の背後にある数学的根拠を明かす。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "bitcoinj"
   - "client-mode"
   - "encryption"

@@ -14,7 +14,6 @@ participants:
 description: "Satoshi reports that the Bitweaver menu editor on SourceForge is broken and asks Malmi for help updating the forum link to point to bitcoin.org."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

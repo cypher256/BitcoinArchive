@@ -14,7 +14,6 @@ participants:
 description: "サトシが SourceForge を避けて Bitcoin 0.3.0 RC1 の一時ダウンロードリンクを共有し、マルミにプロジェクトの会計係を務めるよう依頼する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

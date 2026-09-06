@@ -14,7 +14,6 @@ participants:
 description: "サトシが bitcoin-list メーリングリストに Bitcoin 0.3 の公式リリースアナウンスを送付し、デーモンモードや JSON-RPC などの新機能を紹介する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "release"
 secondarySources:

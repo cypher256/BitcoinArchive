@@ -14,7 +14,6 @@ participants:
 description: "This is working.  A few more things and I'll upload it."
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

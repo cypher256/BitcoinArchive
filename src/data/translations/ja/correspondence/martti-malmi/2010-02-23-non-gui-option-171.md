@@ -14,7 +14,6 @@ participants:
 description: "おそらく apt-get install libgtk2.0-0 だったと思います。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

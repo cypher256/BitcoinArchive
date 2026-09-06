@@ -14,7 +14,6 @@ participants:
 description: "Trammell confirms his static IP, agrees to public CC, joins bitcoin-list, says he started mining as an investment after Finney's message, and discusses micropayment hurdles."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "bitcoin-list"
   - "investment"
   - "hal-finney"

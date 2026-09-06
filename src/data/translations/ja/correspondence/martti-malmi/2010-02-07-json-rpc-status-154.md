@@ -14,7 +14,6 @@ participants:
 description: "マルミが JSON-RPC の進捗に好意的に反応し、取引所サービスのために Liberty Reserve API の勉強を始めると発表。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "json-rpc"
 secondarySources:

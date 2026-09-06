@@ -14,7 +14,6 @@ participants:
 description: "トランメルがコイン送付のために自分の IP アドレスを伝え、1 万ブロックごとにブロックチェーン全体を投稿するアイデアを提案。マイニングが独立した試行の連続であることをルーレットの比喩で理解した。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "send-to-ip"
   - "mining"
 translationStatus: complete

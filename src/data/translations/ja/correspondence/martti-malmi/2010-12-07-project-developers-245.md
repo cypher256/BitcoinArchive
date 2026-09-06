@@ -14,7 +14,6 @@ participants:
 description: "サトシがマルミのコード貢献を認め、bitcoin.org の連絡先ページのプロジェクト開発者リストへの追加を提案。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

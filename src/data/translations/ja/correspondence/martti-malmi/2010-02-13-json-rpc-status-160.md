@@ -14,7 +14,6 @@ participants:
 description: "サトシが JSON-RPC とコマンドラインの実装を SVN にアップロードしたことを報告し、コマンド例を示してマルミに Python でのテストを依頼する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "json-rpc"
 secondarySources:

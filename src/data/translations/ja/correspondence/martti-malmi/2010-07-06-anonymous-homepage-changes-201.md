@@ -14,7 +14,6 @@ participants:
 description: "マルミが bitcoin.org ホームページでの匿名性の強調を控え、代わりに Tor 手順を追加するというサトシの判断に同意する。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

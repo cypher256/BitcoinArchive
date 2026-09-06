@@ -14,7 +14,6 @@ participants:
 description: "Liberty Standard reports the Linux build has generated a decent amount of bitcoins, says he trusts Satoshi about the Wine database errors, and notes his CPU fan has jumped from 50% to 100%."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
   - "linux"
 secondarySources:

@@ -14,7 +14,6 @@ participants:
 description: "了解です、監視しておきます。帯域幅は今のところ問題になっていません。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "early-contributor"
 secondarySources:
   - name: "COPA v. Wright Trial Exhibits"

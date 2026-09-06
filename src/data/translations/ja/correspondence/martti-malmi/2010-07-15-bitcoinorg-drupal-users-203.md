@@ -14,7 +14,6 @@ participants:
 description: "サトシが信頼できる翻訳者に bitcoin.org の Drupal アカウントを付与して翻訳を直接更新できるようにすることを提案し、ホームページ管理の委任について議論する。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "early-contributor"
   - "bitcoin-org"
   - "website"

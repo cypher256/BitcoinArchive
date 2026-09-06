@@ -13,7 +13,6 @@ participants:
 description: "サトシがステートフルなスクリプトオペコードがチェーンフォーク攻撃を可能にする理由を説明し、信頼なしに安全なタイムロック預金のため nLockTime を使うマルチシグコントラクトを段階的に提示。"
 isSatoshi: true
 tags:
-  - "correspondence"
   - "contracts"
   - "multisig"
   - "nlocktime"

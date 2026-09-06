@@ -14,7 +14,6 @@ participants:
 description: "Trammell admits the mislabeling was his error, suggests changing 'Received with' to 'Received payment to' for clarity, and draws a PayPal multi-address analogy as the closest real-world parallel."
 isSatoshi: false
 tags:
-  - "correspondence"
   - "ux"
   - "address-book"
 relatedEntries:

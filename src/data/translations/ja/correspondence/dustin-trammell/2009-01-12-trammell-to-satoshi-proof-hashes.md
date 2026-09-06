@@ -14,7 +14,6 @@ participants:
 description: "トランメルが proof-hashes という Google Group について伝え、Credit 欄の表示に意見し、v0.1.1 を稼働中と報告、新機能の検証を申し出る。"
 isSatoshi: false
 tags:
-  - "correspondence"
   - "proof-hashes"
   - "feedback"
 translationStatus: complete
