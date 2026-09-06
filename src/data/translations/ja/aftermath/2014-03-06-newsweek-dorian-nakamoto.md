@@ -18,6 +18,7 @@ tags:
   - "satoshi-identity"
   - "newsweek"
   - "media"
+  - "debunked"
 relatedEntries:
   - "analysis/2026-08-29-satoshi-bitcoin-reading-guide"
   - "aftermath/2014-03-25-greenberg-forbes-nakamotos-neighbor"

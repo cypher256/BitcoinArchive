@@ -18,6 +18,7 @@ tags:
   - "satoshi-identity"
   - "bit-gold"
   - "cypherpunk"
+  - "denied"
 secondarySources:
   - name: "ニック・サボのサイファーパンクリスト保存投稿（1993–1996 年）"
     url: "https://mailing-list-archive.cryptoanarchy.wiki/authors/szabo_at_netcom_com_nick_szabo_/"

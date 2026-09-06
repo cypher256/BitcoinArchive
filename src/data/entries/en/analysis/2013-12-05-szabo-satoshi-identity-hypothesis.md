@@ -18,6 +18,7 @@ tags:
   - "satoshi-identity"
   - "bit-gold"
   - "cypherpunk"
+  - "denied"
 secondarySources:
   - name: "Archived cypherpunks-list posts by Nick Szabo (1993–1996)"
     url: "https://mailing-list-archive.cryptoanarchy.wiki/authors/szabo_at_netcom_com_nick_szabo_/"

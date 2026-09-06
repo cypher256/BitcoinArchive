@@ -17,6 +17,9 @@ tags:
   - "regulation"
   - "plustoken"
   - "asset-forfeiture"
+  - "mining-migration"
+  - "ponzi-scheme"
+  - "exchange-closure"
 secondarySources:
   - name: "CryptoSlate — China PBOC Multi-Agency Notice on Virtual Currency Trading Speculation (2021)"
     url: "https://cryptoslate.com/crypto-laws/china-pboc-multi-agency-notice-virtual-currency-trading-speculation-2021/"
