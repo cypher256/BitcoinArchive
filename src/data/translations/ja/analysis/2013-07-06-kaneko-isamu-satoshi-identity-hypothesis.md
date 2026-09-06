@@ -15,6 +15,7 @@ isSatoshi: false
 tags:
   - "satoshi-identity"
   - "winny"
+  - "japan"
 secondarySources:
   - name: "Winny 開発予告 — 2 ちゃんねるの 47 氏スレッドアーカイブ"
     url: "https://winny.info/2ch/47.html"

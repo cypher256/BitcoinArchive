@@ -15,6 +15,7 @@ isSatoshi: false
 tags:
   - "satoshi-identity"
   - "winny"
+  - "japan"
 secondarySources:
   - name: "Winny opening announcement — 2channel thread archive (Mr. 47)"
     url: "https://winny.info/2ch/47.html"

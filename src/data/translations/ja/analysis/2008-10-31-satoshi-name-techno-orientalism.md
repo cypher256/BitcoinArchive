@@ -16,6 +16,7 @@ tags:
   - "techno-orientalism"
   - "satoshi-identity"
   - "pseudonym-analysis"
+  - "japan"
 secondarySources:
   - name: "David S. Roh, Betsy Huang, Greta A. Niu (eds.) — Techno-Orientalism: Imagining Asia in Speculative Fiction, History, and Media (Rutgers UP, 2015)"
     url: "https://www.rutgersuniversitypress.org/techno-orientalism/9780813570631"
