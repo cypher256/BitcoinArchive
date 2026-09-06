@@ -14,7 +14,6 @@ participants:
 description: "Nicholas Bohm reports that v0.1.5 has been running trouble free with 201 transactions accumulated, and asks Satoshi: \"What's next?\""
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "user-report"
   - "next-steps"
 ---

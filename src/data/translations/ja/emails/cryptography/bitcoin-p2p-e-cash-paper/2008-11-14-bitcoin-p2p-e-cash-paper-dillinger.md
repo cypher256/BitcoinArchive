@@ -14,7 +14,6 @@ participants:
 description: "Dillinger がビットコイン提案を要約し、上位 3-4 台の高速ノードが連鎖を独占する危険を指摘。伝播証明・可変作業係数・コイン集約を提案する。"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "proof-of-work"
   - "sybil-attack"
   - "coin-aggregation"

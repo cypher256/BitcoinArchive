@@ -14,7 +14,6 @@ participants:
 description: "オイゲン・ライトルが、 bitcoin.sourceforge.net は正常というサトシの発言に反論し、まだ落ちていると報告。 Debian (.deb) の有無も尋ねる。"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "linux"
   - "debian"
 quotes:

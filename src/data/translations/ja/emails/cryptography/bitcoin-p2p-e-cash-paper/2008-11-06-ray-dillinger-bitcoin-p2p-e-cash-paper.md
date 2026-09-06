@@ -14,7 +14,6 @@ participants:
 description: "レイ・ディリンジャーがビットコインの経済的成立性に疑問。プルーフ・オブ・ワークに本源的価値は無く、正の価格での需要も無く、技術が年約 35% のインフレを保証する。"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "economic-critique"
   - "inflation"
   - "intrinsic-value"

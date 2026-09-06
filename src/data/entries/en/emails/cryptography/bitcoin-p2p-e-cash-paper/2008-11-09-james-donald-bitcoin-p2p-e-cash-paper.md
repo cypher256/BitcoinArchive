@@ -15,7 +15,6 @@ description: "Replying to Satoshi on bandwidth, James A. Donald argues a new cur
 inReplyTo: "emails/cryptography/2008-11-02-re-bitcoin-p2p-e-cash-paper-satoshi-1"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "scalability"
   - "micropayments"
   - "bandwidth"

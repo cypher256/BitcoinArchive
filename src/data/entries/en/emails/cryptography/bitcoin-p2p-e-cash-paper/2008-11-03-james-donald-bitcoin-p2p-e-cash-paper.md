@@ -14,7 +14,6 @@ participants:
 description: "James A. Donald asks how Simplified Payment Verification handles double-spending under concurrent network conditions, raising concerns about government attacks on financial networks."
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "simplified-payment-verification"
   - "double-spending"
   - "government-attack"

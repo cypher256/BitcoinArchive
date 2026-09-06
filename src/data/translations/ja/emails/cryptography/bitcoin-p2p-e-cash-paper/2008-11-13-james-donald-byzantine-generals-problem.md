@@ -14,7 +14,6 @@ description: "ジェームズ・A・ドナルドが、善良な参加者だけ�
 inReplyTo: "emails/cryptography/bitcoin-p2p-e-cash-paper/2008-11-10-bitcoin-p2p-e-cash-paper"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "consensus"
   - "byzantine-generals-problem"
   - "trust"

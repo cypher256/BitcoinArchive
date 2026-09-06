@@ -15,7 +15,6 @@ description: "サトシの帯域論への返信。ドナルドは新しい通貨
 inReplyTo: "emails/cryptography/2008-11-02-re-bitcoin-p2p-e-cash-paper-satoshi-1"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "scalability"
   - "micropayments"
   - "bandwidth"

@@ -14,7 +14,6 @@ participants:
 description: "ミシェル・バウエンスがサトシに、ビットコイン計画はどの程度動作するか、現実に人々が使えるようになるのはどれくらい先か、と尋ねる。"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "adoption"
 translationStatus: complete
 ---

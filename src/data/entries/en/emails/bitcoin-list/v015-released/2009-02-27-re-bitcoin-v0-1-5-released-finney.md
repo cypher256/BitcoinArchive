@@ -14,7 +14,6 @@ participants:
 description: "Hal Finney asks for multiple block generators behind one NAT, suggests secure timestamping fits Bitcoin's chain, and requests a client-side library interface for scripting languages."
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "timestamping"
   - "nat"
   - "api"

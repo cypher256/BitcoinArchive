@@ -14,7 +14,6 @@ participants:
 description: "Steenbergen がビットコインは David Chaum の匿名電子マネーに似ているか質問し、通貨供給量に上限があるのか、取引の瞬間に作られるのかを問う。"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "privacy"
   - "david-chaum"
   - "supply-limit"

@@ -14,7 +14,6 @@ participants:
 description: "Dillinger summarizes Bitcoin's protocol, warns the fastest 3-4 nodes could dominate the chain, and suggests provable propagation, variable work factors, and coin aggregation against Sybil attacks."
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "proof-of-work"
   - "sybil-attack"
   - "coin-aggregation"

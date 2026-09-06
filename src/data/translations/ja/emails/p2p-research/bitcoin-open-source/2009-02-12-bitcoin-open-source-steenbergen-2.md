@@ -14,7 +14,6 @@ participants:
 description: "Steenbergen が自己組織化する通貨供給を望み、 AardRock の各計画に言及。リップルについて尋ね、ビットコインの仕様書の有無を問う。"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "ripple"
   - "programmable-currency"
   - "protocol-spec"

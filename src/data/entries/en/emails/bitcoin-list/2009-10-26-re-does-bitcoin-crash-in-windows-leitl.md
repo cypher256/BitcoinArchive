@@ -14,7 +14,6 @@ participants:
 description: "Eugen Leitl contradicts Satoshi's claim that bitcoin.sourceforge.net was working, reporting the site is still down, and asks whether Debian (.deb) packages for Bitcoin are available."
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "linux"
   - "debian"
 quotes:

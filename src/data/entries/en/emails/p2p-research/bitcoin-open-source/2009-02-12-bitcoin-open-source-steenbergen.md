@@ -14,7 +14,6 @@ participants:
 description: "Steenbergen asks whether Bitcoin resembles David Chaum's anonymous digital money and whether the system has a managed limited money supply or creates money at the moment of transaction."
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "privacy"
   - "david-chaum"
   - "supply-limit"

@@ -14,7 +14,6 @@ participants:
 description: "Dillinger が匿名性と仮名性を区別し、受領者が鍵対を生成する仕組みを提案。取引の連結可能性に警告し、取引手数料がどのように節点へ流れるかを問う。"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "anonymity"
   - "pseudonymity"
   - "transaction-fees"

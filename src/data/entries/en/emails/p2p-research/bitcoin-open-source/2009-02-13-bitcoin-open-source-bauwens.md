@@ -14,7 +14,6 @@ participants:
 description: "Michel Bauwens asks Satoshi how operational the Bitcoin project is and how soon people will be able to use it in real life."
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "adoption"
 ---
 

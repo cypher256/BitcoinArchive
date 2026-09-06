@@ -14,7 +14,6 @@ participants:
 description: "Steenbergen wishes for self-organizing money supply, references AardRock projects Wizard Rabbit Treasurer and Pekunio, asks about Ripple, and inquires whether Bitcoin has a protocol specification."
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "ripple"
   - "programmable-currency"
   - "protocol-spec"

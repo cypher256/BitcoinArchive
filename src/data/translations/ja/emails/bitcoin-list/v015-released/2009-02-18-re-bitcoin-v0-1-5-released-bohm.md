@@ -14,7 +14,6 @@ participants:
 description: "ニコラス・ボームが v0.1.5 をトラブル無く運用、 201 トランザクションを蓄積したと報告し、サトシに「次は何でしょうか？」と問う。"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "user-report"
   - "next-steps"
 translationStatus: complete

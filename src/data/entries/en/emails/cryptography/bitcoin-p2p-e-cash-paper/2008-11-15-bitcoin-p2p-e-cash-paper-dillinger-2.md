@@ -14,7 +14,6 @@ participants:
 description: "Dillinger distinguishes anonymity from pseudonymity, proposes recipient-generated key pairs, asks when a transaction becomes irrevocable, and questions how fees would flow to nodes."
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "anonymity"
   - "pseudonymity"
   - "transaction-fees"

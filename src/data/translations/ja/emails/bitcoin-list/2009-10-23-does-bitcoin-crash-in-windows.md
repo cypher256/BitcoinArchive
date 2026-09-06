@@ -11,7 +11,6 @@ participants:
 description: "NewLibertyStandard が Wine 1.0.1 上でビットコインが断続的にクラッシュすると報告し、ウォレット残高との相関を推測し、起動時にターミナルに出力される警告を共有する。"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "wine"
   - "crash-report"
   - "linux"

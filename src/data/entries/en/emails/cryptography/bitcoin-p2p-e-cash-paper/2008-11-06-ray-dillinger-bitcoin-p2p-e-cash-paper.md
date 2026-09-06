@@ -14,7 +14,6 @@ participants:
 description: "Ray Dillinger questions Bitcoin's economic viability: proof-of-work has no intrinsic value, no demand at a positive price, and the technology guarantees about 35% annual inflation."
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "economic-critique"
   - "inflation"
   - "intrinsic-value"

@@ -14,7 +14,6 @@ participants:
 description: "ハル・フィニーが単一 NAT 配下で複数のブロック生成を動かす要望、安全な時刻認証はブロック連鎖に適すると指摘、クライアント側のライブラリインターフェースも要望する。"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "timestamping"
   - "nat"
   - "api"

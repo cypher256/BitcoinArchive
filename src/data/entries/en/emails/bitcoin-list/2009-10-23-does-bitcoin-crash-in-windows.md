@@ -11,7 +11,6 @@ participants:
 description: "NewLibertyStandard reports occasional Bitcoin crashes while running under Wine 1.0.1, speculates a possible correlation with wallet balance, and shares the terminal output produced at startup."
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "wine"
   - "crash-report"
   - "linux"

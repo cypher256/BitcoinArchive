@@ -14,7 +14,6 @@ participants:
 description: "ジェームズ・A・ドナルドが Simplified Payment Verification の二重支払い処理を疑問視し、金融ネットワークに対する政府の攻撃について懸念を述べる。"
 isSatoshi: false
 tags:
-  - "mailing-list"
   - "simplified-payment-verification"
   - "double-spending"
   - "government-attack"
