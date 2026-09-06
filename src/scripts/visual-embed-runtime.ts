@@ -43,6 +43,7 @@ import { mount as mountSixShieldWall } from './visuals/six-shield-wall.js';
 import { mount as mountGenesisBlueprintRebuild } from './visuals/genesis-blueprint-rebuild.js';
 import { mount as mountTimewarpClockTrick } from './visuals/timewarp-clock-trick.js';
 import { mount as mountQuantumKeyDuplication } from './visuals/quantum-key-duplication.js';
+import { mount as mountMergeMiningDualClear } from './visuals/merge-mining-dual-clear.js';
 
 type Drawer = (host: HTMLElement, lang: string) => void;
 
@@ -93,6 +94,7 @@ const VISUAL_DRAWERS: Record<string, Drawer> = {
   'genesis-blueprint-rebuild': mountGenesisBlueprintRebuild,
   'timewarp-clock-trick': mountTimewarpClockTrick,
   'quantum-key-duplication': mountQuantumKeyDuplication,
+  'merge-mining-dual-clear': mountMergeMiningDualClear,
 };
 
 (function () {

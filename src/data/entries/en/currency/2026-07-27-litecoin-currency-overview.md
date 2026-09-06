@@ -85,14 +85,9 @@ Scrypt was not built for mining. Colin Percival, the FreeBSD developer who wrote
 
 Scrypt produced one further consequence nobody designed for. When Dogecoin forked Litecoin's codebase in December 2013, it inherited Scrypt along with everything else — and a hash rate too thin to make a 51% attack expensive. In April 2014, Lee proposed the fix: let Dogecoin accept Litecoin's own proof-of-work as its own. Dogecoin's team announced the plan that August, and auxiliary proof-of-work (AuxPoW) went live on the network that September.
 
-```mermaid
-flowchart LR
-    A["Miner searches for a\nnonce with Scrypt"] --> B{"Which difficulty\ntarget does the hash clear?"}
-    B -->|"Litecoin only"| C["Accepted as a\nLitecoin block"]
-    B -->|"Both Litecoin\nand Dogecoin"| D["Same proof submitted\nto Dogecoin too"]
-```
+<!-- visual: merge-mining-dual-clear -->
 
-The mechanism costs a miner nothing extra. A Litecoin miner is already hashing candidate blocks with Scrypt, hunting for a result under Litecoin's difficulty target. Merge-mining has that same miner commit a Dogecoin block header inside the coinbase transaction it was building anyway. If the resulting hash clears Litecoin's target, it becomes a Litecoin block, exactly as before. If the identical hash also clears Dogecoin's much lower difficulty target, that single proof of work is valid on both chains at once, and the miner is paid twice for one unit of computation. Dogecoin's resistance to a 51% attack has run on Litecoin's hash rate, not its own, ever since.
+The mechanism costs a miner nothing extra. A Litecoin miner is already hashing candidate blocks with Scrypt, hunting for a result under Litecoin's difficulty target. Merge-mining has that same miner commit a hash of a candidate Dogecoin block inside the coinbase transaction it was building anyway. If the resulting hash clears Litecoin's target, it becomes a Litecoin block, exactly as before. If the identical hash also clears Dogecoin's much lower difficulty target, that single proof of work is valid on both chains at once, and the miner is paid twice for one unit of computation. Dogecoin's resistance to a 51% attack has run on Litecoin's hash rate, not its own, ever since.
 
 ```mermaid
 timeline
